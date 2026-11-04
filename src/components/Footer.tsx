@@ -48,6 +48,8 @@ export function Footer({ semNovidades = false }: { semNovidades?: boolean }) {
         <span>{t.rodape.direitos}</span>
         <span className="lv-foot-legal"><Link to="/termos">{t.rodape.termos}</Link><Link to="/privacidade">{t.rodape.privacidade}</Link><Link to="/excluir-conta">{({'pt-BR':'Excluir conta',en:'Delete account',es:'Eliminar cuenta'} as const)[LOCALE.codigo]}</Link></span>
         <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>
+        {/* Identificação legal da empresa (nome registado e CNPJ): factual, não se traduz. */}
+        <span className="lv-foot-cnpj">Linvuu · Felipe Valeeva Rosa · CNPJ 38.800.654/0001-72 · São José dos Campos/SP</span>
       </div>
     </footer>
   );

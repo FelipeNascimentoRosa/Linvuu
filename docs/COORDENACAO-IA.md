@@ -45,11 +45,11 @@ Prioridade: instrução atual explícita do Felipe → instruções aplicáveis 
 
 ## Estado operacional auditado em 27/10/2026
 - O workflow de auditoria **legado** do repositório público principal está aposentado; nunca reativar a coleta IAM detalhada nesse repositório.
-- A validação OIDC **não sensível** no repositório separado [Linvuu-Auditoria-Firebase](https://github.com/FelipeVRosa/Linvuu-Auditoria-Firebase/actions/runs/40460208259) passou; somente o **número do projeto** foi conferido. Regras publicadas não foram lidas.
+- A validação OIDC **não sensível** no repositório separado [Linvuu-Auditoria-Firebase](https://github.com/FelipeNascimentoRosa/Linvuu-Auditoria-Firebase/actions/runs/40460208259) passou; somente o **número do projeto** foi conferido. Regras publicadas não foram lidas.
 - Ambos os repositórios estão **públicos** nesta verificação. Se houver coleta de IAM ou regras detalhadas, executar apenas em destino privado, com controle de acesso aos relatórios. Não confundir permissões temporárias de um runner com acesso administrativo da sessão de ChatGPT/Claude.
 - A CI e Segurança do produto passaram na main `3431e440`; o Render publicou esse SHA. A execução `success` de build/APK web não comprova testes em aparelho nem pagamento real.
 - PRs de protótipo #360 e #367 continuam `draft`. PR #347 de dependências ainda está aberto. Não fechar/mergear apenas para ocultar indicadores.
 - Monitoramento com execução passada `failure` e posterior `success` permanece como sinal diagnóstico; não apagar falhas nem desativar testes silenciosamente.
 
 ## Prompt comum de retomada
-“Leia AGENTS.md, docs/ESTADO-ATUAL.md e docs/COORDENACAO-IA.md em FelipeVRosa/Linvuu. Confira main, PRs e deploy atuais. Continue a primeira pendência reproduzível da auditoria, registre evidências e atualize o estado no PR. Não considere correção concluída antes da verificação correspondente.”
+“Leia AGENTS.md, docs/ESTADO-ATUAL.md e docs/COORDENACAO-IA.md em FelipeNascimentoRosa/Linvuu. Confira main, PRs e deploy atuais. Continue a primeira pendência reproduzível da auditoria, registre evidências e atualize o estado no PR. Não considere correção concluída antes da verificação correspondente.”

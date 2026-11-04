@@ -25,10 +25,10 @@ Mais scripts e versões em [package.json](package.json). Testes da `main` só co
 
 ## Operação comprovada (27/10/2026)
 
-- `main` **3431e440**: [CI](https://github.com/FelipeVRosa/Linvuu/actions/runs/40453761867) e [Segurança](https://github.com/FelipeVRosa/Linvuu/actions/runs/40453762120) aprovadas.
+- `main` **3431e440**: [CI](https://github.com/FelipeNascimentoRosa/Linvuu/actions/runs/40453761867) e [Segurança](https://github.com/FelipeNascimentoRosa/Linvuu/actions/runs/40453762120) aprovadas.
 - Render: deploy de **3431e440** confirmado `live` (serviço `linvuu`), não é aprovação automática de autenticação e pagamentos.
-- GitHub → Google Cloud: [teste OIDC público](https://github.com/FelipeVRosa/Linvuu-Auditoria-Firebase/actions/runs/40460208259) aprovado para **identidade temporária e número do projeto `linvuu`**. A equivalência de `firestore.rules` com as regras publicadas **ainda não está comprovada**.
-- O repositório separado [Linvuu-Auditoria-Firebase](https://github.com/FelipeVRosa/Linvuu-Auditoria-Firebase) está **público**. Seu job de coleta detalhada IAM/Firestore é intencionalmente bloqueado no modo público; não removê-lo para obter logs sensíveis.
+- GitHub → Google Cloud: [teste OIDC público](https://github.com/FelipeNascimentoRosa/Linvuu-Auditoria-Firebase/actions/runs/40460208259) aprovado para **identidade temporária e número do projeto `linvuu`**. A equivalência de `firestore.rules` com as regras publicadas **ainda não está comprovada**.
+- O repositório separado [Linvuu-Auditoria-Firebase](https://github.com/FelipeNascimentoRosa/Linvuu-Auditoria-Firebase) está **público**. Seu job de coleta detalhada IAM/Firestore é intencionalmente bloqueado no modo público; não removê-lo para obter logs sensíveis.
 - Livros futuros, novos níveis e gamificação permanecem fora do deploy atual (PRs em rascunho #360 e #367).
 
 ## Arquivos e instruções
