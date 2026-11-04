@@ -2,7 +2,7 @@
 
 # Contexto do projeto (leia primeiro)
 
-Para retomar numa conversa nova com o Claude, diga: "Leia docs/CONTEXTO.md e docs/ANALISE-E-PLANO.md do repositório FelipeVRosa/Linvuu e continue da próxima rodada." O repositório é privado (outubro de 2026). Claude e ChatGPT trabalham nele em parceria: regras em `docs/PARCERIA-IA.md`.
+Para retomar numa conversa nova com o Claude, diga: "Leia docs/CONTEXTO.md e docs/ANALISE-E-PLANO.md do repositório FelipeNascimentoRosa/Linvuu e continue da próxima rodada." O repositório é privado (outubro de 2026). Claude e ChatGPT trabalham nele em parceria: regras em `docs/PARCERIA-IA.md`.
 
 ## O que é
 Linvuu: idiomas em trilhas em sessões de ~30 min, para falantes de português. Dono: Felipe. Revisão de design e traduções: Luiza. E-mail oficial: hello.linvuu@gmail.com.
@@ -12,7 +12,7 @@ Atualização de 16/10/2026: foco somente em idiomas, website e Android. Arquite
 ## Onde cada coisa fica
 | O quê | Onde | Observação |
 |---|---|---|
-| Código do site e as aulas | GitHub `FelipeVRosa/Linvuu` | Fonte da verdade. Tudo que não estiver aqui pode se perder |
+| Código do site e as aulas | GitHub `FelipeNascimentoRosa/Linvuu` | Fonte da verdade. Tudo que não estiver aqui pode se perder |
 | Site no ar | Render, https://linvuu.com.br | Só publica o que está no GitHub; deploy a cada push na `main` |
 | Contas, XP, streak | Firebase (Auth + Firestore, coleção `users`) | Fora do GitHub: precisa de backup próprio |
 | Chaves e variáveis | Painel do Render e Console do Firebase | Guarde uma cópia num gerenciador de senhas, nunca no GitHub |
