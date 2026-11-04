@@ -19,9 +19,22 @@ const fonte = (id) => indice[id]?.fonte ?? 'pt';
 /** Caminhos (sem prefixo) e em quais idiomas cada um entra. */
 const grupos = [];
 const todos = (c) => LOCALES.map((l) => l.c);
+/** Cluster hreflang de um curso (espelha metaRota.ts): todos os públicos menos aquele cuja língua é o próprio curso. */
+const declarados = (id) => LOCALES.filter((l) => l.oculto !== id).map((l) => l.c);
+/** x-default de um grupo: PT se estiver no cluster; senão o idioma-fonte do curso; senão o primeiro do cluster. */
+const alvoPadrao = (g) => {
+  const anot = g.anot ?? g.em;
+  if (anot.includes('pt-BR')) return 'pt-BR';
+  const id = g.p.match(/^\/(?:curso|gramatica)\/([a-z]{2})/)?.[1];
+  const cod = id ? (fonte(id) === 'pt' ? 'pt-BR' : fonte(id)) : undefined;
+  return cod && anot.includes(cod) ? cod : anot[0];
+};
 // Sitemap enxuto (decisão de 15/10/2026): só as páginas com texto próprio e valor de busca. As páginas centrais
 // entram nos três idiomas; o resto é em português. O sitemap lista URLs canonicas desejadas; nao limita as URLs que o Google pode descobrir.
-grupos.push({ p: '/', em: todos() }, { p: '/cursos', em: todos() }, { p: '/assinatura', em: ['pt-BR'] });
+// `anot` = cluster hreflang declarado nas anotações (espelha o HTML de metaRota.ts); `em` é a lista de URLs
+// com entrada própria. A assinatura é indexável nos três idiomas (página localizada genuína nas três —
+// sem noindex desde a correção de integridade hreflang), por isso entra com <loc> próprio em todas.
+grupos.push({ p: '/', em: todos() }, { p: '/cursos', em: todos(), anot: todos() }, { p: '/assinatura', em: todos(), anot: todos() });
 // Livros e Sobre: só em português. Cada capítulo de amostra publicado (content/livros/<idioma>/cap-NN.json) entra no sitemap.
 grupos.push({ p: '/sobre', em: ['pt-BR'] }, { p: '/por-que-linvuu', em: ['pt-BR'] }, { p: '/contato', em: ['pt-BR'] }, { p: '/ex-alunos-udemy', em: ['pt-BR'] }, { p: '/livros', em: ['pt-BR'] });
 const dirLivros = path.join(raiz, 'content', 'livros');
@@ -45,7 +58,7 @@ const temAula = (id, loc, aula) => fonte(id) === EXPLICACAO[loc.c] || (tr[EXPLIC
 for (const c of cursos.filter((x) => x.status !== 'em-breve')) {
   const oferecidos = LOCALES.filter((l) => l.oculto !== c.id);
   const emHub = oferecidos.map((l) => l.c);
-  grupos.push({ p: `/curso/${c.id}`, em: emHub }, { p: `/gramatica/${c.id}`, em: emHub });
+  grupos.push({ p: `/curso/${c.id}`, em: emHub, anot: declarados(c.id) }, { p: `/gramatica/${c.id}`, em: emHub, anot: declarados(c.id) });
   for (let d = 1; d <= 8; d++) {
     const em = oferecidos.filter((l) => temAula(c.id, l, Math.ceil(d / 4))).map((l) => l.c);
     if (em.length) grupos.push({ p: `/curso/${c.id}/dia/${d}`, em });
@@ -59,7 +72,8 @@ const linhas = [];
 // faz o Google ignorar o sinal.
 const manifestoLastmod = (() => { const f = path.join(raiz, 'content', 'lastmod.json'); return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : {}; })();
 for (const g of grupos) for (const c of g.em) {
-  const alt = g.em.length > 1 ? g.em.map((x) => `\n    <xhtml:link rel="alternate" hreflang="${x}" href="${url(x, g.p)}"/>`).join('') + (g.em.includes('pt-BR') ? `\n    <xhtml:link rel="alternate" hreflang="x-default" href="${url('pt-BR', g.p)}"/>` : '') : '';
+  const anot = g.anot ?? g.em;
+  const alt = anot.length > 1 ? anot.map((x) => `\n    <xhtml:link rel="alternate" hreflang="${x}" href="${url(x, g.p)}"/>`).join('') + `\n    <xhtml:link rel="alternate" hreflang="x-default" href="${url(alvoPadrao(g), g.p)}"/>` : '';
   const lm = manifestoLastmod[url(c, g.p).slice(SITE.length)];
   const data = typeof lm === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(lm) ? `\n    <lastmod>${lm}</lastmod>` : '';
   linhas.push(`  <url><loc>${url(c, g.p)}</loc>${data}${alt}\n  </url>`);

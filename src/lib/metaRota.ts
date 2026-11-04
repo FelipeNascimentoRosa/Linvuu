@@ -61,28 +61,34 @@ const TX = {
     cursos: 'Cursos', entrar: 'Entrar', cadastro: 'Cadastre-se', assinatura: 'Assinatura', priv: 'Política de privacidade', privD: 'Quais dados a Linvuu coleta, para quê e quais são os seus direitos pela LGPD.', termos: 'Termos de uso', termosD: 'Regras de uso do site e dos cursos da Linvuu.',
     pt: 'Português para estrangeiros · Brazilian Portuguese', ptD: 'Curso de português do Brasil para estrangeiros, do A1 ao B1, com aulas explicadas em inglês ou espanhol. 62 aulas.',
     curso: (n: string) => `${n}: curso para quem fala português, do zero ao B1`, cursoJ: (n: string) => `${n} para quem fala português`, inicio: 'Início',
-    aula: (a: number, t: string, n: string) => `Aula ${a}: ${t} · ${n}`, aulaD: (n: string, a: number, t: string, s: number, tot: number) => `${n}, aula ${a} (${t}), sessão ${s} de ${tot}: explicação em português, áudio em cada frase e exercícios com correção.`,
-    sessao: (s: number, n: string) => `Sessão ${s} · ${n}`, gram: 'Gramática', gramC: (n: string) => `Gramática: ${n.toLowerCase()}`, gramD: (n: string) => `Gramática de ${n.toLowerCase()} explicada em português, tópico por tópico, com tabelas, exemplos e erros comuns.`, nao: 'Página não encontrada',
+    aula: (a: number, t: string, n: string) => `Aula ${a}: ${t} · ${n}`, aulaD: (n: string, a: number, t: string, s: number, tot: number, lingua: string) => `${n}, aula ${a} (${t}), sessão ${s} de ${tot}: explicação em ${lingua}, áudio em cada frase e exercícios com correção.`,
+    sessao: (s: number, n: string) => `Sessão ${s} · ${n}`, gram: 'Gramática', gramC: (n: string) => `Gramática: ${n.toLowerCase()}`, gramD: (n: string, lingua: string) => `Gramática de ${n.toLowerCase()} explicada em ${lingua}, tópico por tópico, com tabelas, exemplos e erros comuns.`, nao: 'Página não encontrada',
   },
   en: {
     cursos: 'Courses', entrar: 'Sign in', cadastro: 'Sign up', assinatura: 'Subscription', priv: 'Privacy policy', privD: 'What data Linvuu collects, why, and what your rights are.', termos: 'Terms of use', termosD: 'Rules for using the Linvuu site and courses.',
     pt: 'Brazilian Portuguese for English speakers, A1 to B1', ptD: 'Learn Brazilian Portuguese from zero to B1 in 62 lessons explained in English, with audio, dialogues, grammar and exercises.',
     curso: (n: string) => `Learn ${n} online, from zero to B1: course for English speakers`, cursoJ: (n: string) => `${n} for English speakers`, inicio: 'Home',
-    aula: (a: number, t: string, n: string) => `Lesson ${a}: ${t} · ${n}`, aulaD: (n: string, a: number, t: string, s: number, tot: number) => `${n}, lesson ${a} (${t}), session ${s} of ${tot}: explained in English, with audio for every sentence and exercises.`,
-    sessao: (s: number, n: string) => `Session ${s} · ${n}`, gram: 'Grammar', gramC: (n: string) => `${n} grammar for English speakers`, gramD: (n: string) => `${n} grammar explained in English, topic by topic, with tables, examples and common mistakes. Free topics included.`, nao: 'Page not found',
+    aula: (a: number, t: string, n: string) => `Lesson ${a}: ${t} · ${n}`, aulaD: (n: string, a: number, t: string, s: number, tot: number, lingua: string) => `${n}, lesson ${a} (${t}), session ${s} of ${tot}: explained in ${lingua}, with audio for every sentence and exercises.`,
+    sessao: (s: number, n: string) => `Session ${s} · ${n}`, gram: 'Grammar', gramC: (n: string) => `${n} grammar for English speakers`, gramD: (n: string, lingua: string) => `${n} grammar explained in ${lingua}, topic by topic, with tables, examples and common mistakes. Free topics included.`, nao: 'Page not found',
   },
   es: {
     cursos: 'Cursos', entrar: 'Entrar', cadastro: 'Regístrate', assinatura: 'Suscripción', priv: 'Política de privacidad', privD: 'Qué datos recoge Linvuu, para qué y cuáles son tus derechos.', termos: 'Términos de uso', termosD: 'Reglas de uso del sitio y de los cursos de Linvuu.',
-    pt: 'Portugués de Brasil para hispanohablantes, de A1 a B1', ptD: 'Aprende portugués de Brasil de cero a B1 en 62 lecciones explicadas en español, con audio, diálogos, gramática y ejercicios.',
+    pt: 'Portugués de Brasil para hispanohablantes, de A1 a B1', ptD: 'Portugués de Brasil de cero a B1 en 62 lecciones: las 2 primeras y la gramática, en español; el resto, explicado en inglés. Audio y ejercicios.',
     curso: (n: string) => `${n} para hispanohablantes, de cero a B1`, cursoJ: (n: string) => `${n} para hispanohablantes`, inicio: 'Inicio',
-    aula: (a: number, t: string, n: string) => `Lección ${a}: ${t} · ${n}`, aulaD: (n: string, a: number, t: string, s: number, tot: number) => `${n}, lección ${a} (${t}), sesión ${s} de ${tot}: explicado en español, con audio en cada frase y ejercicios.`,
-    sessao: (s: number, n: string) => `Sesión ${s} · ${n}`, gram: 'Gramática', gramC: (n: string) => `Gramática: ${n.toLowerCase()}`, gramD: (n: string) => `Gramática de ${n.toLowerCase()} explicada en español, tema por tema, con tablas, ejemplos y errores frecuentes.`, nao: 'Página no encontrada',
+    aula: (a: number, t: string, n: string) => `Lección ${a}: ${t} · ${n}`, aulaD: (n: string, a: number, t: string, s: number, tot: number, lingua: string) => `${n}, lección ${a} (${t}), sesión ${s} de ${tot}: explicado en ${lingua}, con audio en cada frase y ejercicios.`,
+    sessao: (s: number, n: string) => `Sesión ${s} · ${n}`, gram: 'Gramática', gramC: (n: string) => `Gramática: ${n.toLowerCase()}`, gramD: (n: string, lingua: string) => `Gramática de ${n.toLowerCase()} explicada en ${lingua}, tema por tema, con tablas, ejemplos y errores frecuentes.`, nao: 'Página no encontrada',
   },
 } as const;
+/** Nome de cada língua de explicação, escrito na língua da página (para as descrições dizerem a língua real de cada aula/gramática). */
+const LINGUAS: Record<string, Record<string, string>> = {
+  'pt-BR': { pt: 'português', en: 'inglês', es: 'espanhol' },
+  en: { pt: 'Portuguese', en: 'English', es: 'Spanish' },
+  es: { pt: 'portugués', en: 'inglés', es: 'español' },
+};
 const HOME = {
   'pt-BR': { titulo: HOME_BR.tituloSeo, descricao: HOME_BR.descricao },
-  en: { titulo: 'Language courses for English speakers', descricao: 'Brazilian Portuguese, Spanish, French, Italian, German and Russian courses for English speakers. Explanations in English, audio and exercises. Try 2 free lessons.' },
-  es: { titulo: 'Cursos de idiomas para hispanohablantes', descricao: 'Cursos de portugués de Brasil, inglés, francés, italiano, alemán y ruso para hispanohablantes. Explicaciones en español, audio y ejercicios. Prueba 2 clases gratis.' },
+  en: { titulo: 'Language courses for English speakers', descricao: 'Courses for English speakers: Brazilian Portuguese, French and Russian explained in English; German, Spanish and Italian in translation. Try 2 free lessons.' },
+  es: { titulo: 'Cursos de idiomas para hispanohablantes', descricao: 'Cursos para hispanohablantes: portugués de Brasil con 2 lecciones y gramática en español; los demás, en portugués (en traducción). 2 clases gratis.' },
 };
 
 export function metaDaRota(pathname: string, d: DadosMeta | null): MetaRota {
@@ -97,7 +103,7 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
   if (p === '/') return { status: 200, caminho: '/', ...HOME[loc.codigo], jsonld: [organizacao(), { '@context': 'https://schema.org', '@type': 'WebSite', name: 'Linvuu', url: SITE, inLanguage: loc.codigo }] };
   // Livros e página Sobre: só em português (nos outros idiomas a página existe, mas não entra na busca)
   const livroBase = { em: ['pt-BR'] as Locale['codigo'][], semIndice: loc.codigo !== 'pt-BR' ? true : undefined };
-  if (p === '/sobre') return { status: 200, caminho: p, titulo: 'Quem escreve a Linvuu', descricao: 'A Linvuu é feita por Felipe Nascimento Rosa e Luiza Nascimento Rosa, matemáticos com experiência em linguística e ensino de idiomas. Conheça a autoria, a origem e o método.', ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: 'Quem escreve a Linvuu', url: `${SITE}/sobre`, inLanguage: 'pt-BR', mainEntity: { '@id': ORG_ID } }, organizacao(), ...AUTORES.map(pessoa)] };
+  if (p === '/sobre') return { status: 200, caminho: p, titulo: 'Quem escreve a Linvuu', descricao: 'A Linvuu é feita por Felipe Nascimento Rosa e Luiza Nascimento Rosa, matemáticos com experiência em linguística e ensino de idiomas. Autoria, origem e método.', ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: 'Quem escreve a Linvuu', url: `${SITE}/sobre`, inLanguage: 'pt-BR', mainEntity: { '@id': ORG_ID } }, organizacao(), ...AUTORES.map(pessoa)] };
   if (p === '/por-que-linvuu') return { status: 200, caminho: p, titulo: POR_QUE.titulo, descricao: POR_QUE.descricao, ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'WebPage', name: POR_QUE.titulo, url: `${SITE}/por-que-linvuu`, inLanguage: 'pt-BR', about: { '@id': ORG_ID } }, organizacao()] };
   if (p === '/contato') return { status: 200, caminho: p, titulo: CONTATO.titulo, descricao: CONTATO.descricao, ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'ContactPage', name: CONTATO.titulo, url: `${SITE}/contato`, inLanguage: 'pt-BR', about: { '@id': ORG_ID } }, organizacao()] };
   if (p === '/ex-alunos-udemy') return { status: 200, caminho: p, titulo: EX_ALUNOS.titulo, descricao: EX_ALUNOS.descricao, ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'WebPage', name: EX_ALUNOS.titulo, url: `${SITE}/ex-alunos-udemy`, inLanguage: 'pt-BR', about: { '@id': ORG_ID } }, organizacao()] };
@@ -129,7 +135,9 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     '/entrar': { titulo: tx.entrar, semIndice: true },
     '/cadastro': { titulo: tx.cadastro, semIndice: true },
     '/livro/gramatica-ru': { titulo: 'Gramática russa A1–A2', semIndice: true },
-    '/assinatura': loc.codigo === 'pt-BR' ? { titulo: 'Planos e assinatura', descricao: 'Aprenda idiomas com a Linvuu: planos mensal, trimestral com 30% OFF no Pix e anual. Experimente duas aulas grátis, sem cartão.' } : { titulo: tx.assinatura, semIndice: true },
+    // A página de preços existe de verdade nos três idiomas (renderização localizada genuína, verificada ao vivo):
+    // indexável nas três, para os alternates hreflang da versão PT não apontarem para páginas noindex.
+    '/assinatura': loc.codigo === 'pt-BR' ? { titulo: 'Planos e assinatura', descricao: 'Aprenda idiomas com a Linvuu: planos mensal, trimestral com 30% OFF no Pix e anual. Experimente duas aulas grátis, sem cartão.' } : loc.codigo === 'en' ? { titulo: tx.assinatura, descricao: 'Learn languages with Linvuu: monthly, quarterly (30% off with Pix) and annual plans. Try two free lessons, no card required.' } : { titulo: tx.assinatura, descricao: 'Aprende idiomas con Linvuu: planes mensual, trimestral con 30 % de descuento con Pix y anual. Prueba dos clases gratis, sin tarjeta.' },
     '/privacidade': { titulo: tx.priv, descricao: tx.privD },
     '/termos': { titulo: tx.termos, descricao: tx.termosD },
     '/excluir-conta': { titulo: EXCLUSAO[loc.codigo].titulo, descricao: EXCLUSAO[loc.codigo].descricao },
@@ -183,11 +191,13 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     // A sessão só existe de verdade num idioma quando a explicação está nele: o original ou a tradução daquela aula.
     // Nos outros, a página mostra o texto original com um aviso e não entra na busca (seria conteúdo duplicado).
     const temNo = (l: Locale) => l.cursoOculto !== c.id && ((d.indice[c.id]?.fonte ?? 'pt') === l.explicacao || !!d.indice[c.id]?.tr?.[l.explicacao]?.aulas?.includes(g.aula));
+    // A descrição nomeia a língua em que a explicação desta sessão está de fato: a língua da página, quando a aula está traduzida nela; senão, a língua em que o curso foi escrito.
+    const descAula = tx.aulaD(c.nome, g.aula, t, n, total, LINGUAS[loc.codigo][temNo(loc) ? loc.explicacao : (d.indice[c.id]?.fonte ?? 'pt')] ?? '');
     // A apresentacao publica do curso continua indexavel. Sessoes sem amostra publica nao entram no indice.
-    return { status: 200, caminho: p, titulo: `${tx.aula(g.aula, t, c.nome)} · ${tx.sessao(n, c.nome).split(' · ')[0]}`, descricao: tx.aulaD(c.nome, g.aula, t, n, total), semIndice: n > SESSOES_GRATIS || !temNo(loc) || undefined, em: LOCALES.filter(temNo).map((l) => l.codigo),
+    return { status: 200, caminho: p, titulo: `${tx.aula(g.aula, t, c.nome)} · ${tx.sessao(n, c.nome).split(' · ')[0]}`, descricao: descAula, semIndice: n > SESSOES_GRATIS || !temNo(loc) || undefined, em: LOCALES.filter(temNo).map((l) => l.codigo),
       // Sessão grátis: dados de recurso educacional, sempre gratuito (as demais são por assinatura e não ganham marcação de gratuidade)
       jsonld: n <= SESSOES_GRATIS ? [{
-        '@context': 'https://schema.org', '@type': 'LearningResource', name: tx.aula(g.aula, t, c.nome), description: tx.aulaD(c.nome, g.aula, t, n, total), url: `${SITE}${caminhoEm(loc.codigo, p)}`,
+        '@context': 'https://schema.org', '@type': 'LearningResource', name: tx.aula(g.aula, t, c.nome), description: descAula, url: `${SITE}${caminhoEm(loc.codigo, p)}`,
         inLanguage: loc.codigo, learningResourceType: 'Lesson', educationalLevel: 'A1 (CEFR)', teaches: c.nome, timeRequired: 'PT30M', isAccessibleForFree: true,
         isPartOf: { '@type': 'Course', name: tx.cursoJ(c.nome), url: `${SITE}${caminhoEm(loc.codigo, `/curso/${c.id}`)}` }, provider: { '@id': ORG_ID },
       }, { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
@@ -197,7 +207,24 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
   if (m) {
     if (!m[1]) return { status: 200, caminho: p, titulo: tx.gram };
     const c = curso(m[1]);
-    return c ? { status: 200, caminho: p, titulo: tx.gramC(c.nome), descricao: tx.gramD(c.nome), semIndice: c.id === loc.cursoOculto || c.status === 'em-breve' || undefined } : naoEncontrada(p, loc);
+    if (!c) return naoEncontrada(p, loc);
+    const url = `${SITE}${caminhoEm(loc.codigo, p)}`;
+    const cursoUrl = `${SITE}${caminhoEm(loc.codigo, `/curso/${c.id}`)}`;
+    // A descrição nomeia a língua em que a gramática está de fato: a língua da página, quando existe o arquivo de gramática nela; senão, a língua em que o curso foi escrito.
+    const fonteGram = d.indice[c.id]?.fonte ?? 'pt';
+    const temGram = fonteGram === loc.explicacao || (!!d.raiz && fs.existsSync(path.join(d.raiz, 'content', 'gramatica', `${c.id}.${loc.explicacao}.json`)));
+    const descGram = tx.gramD(c.nome, LINGUAS[loc.codigo][temGram ? loc.explicacao : fonteGram] ?? '');
+    // Alternates só para os públicos a quem o curso é oferecido (mesma regra da página do curso):
+    // a gramática de uma língua explicada ao próprio público dela não é uma versão de idioma —
+    // declarar esse alternate apontava para a página gémea marcada noindex.
+    return {
+      status: 200, caminho: p, titulo: tx.gramC(c.nome), descricao: descGram, semIndice: c.id === loc.cursoOculto || c.status === 'em-breve' || undefined, em: LOCALES.filter((l) => l.cursoOculto !== c.id).map((l) => l.codigo),
+      jsonld: [
+        // A página de gramática é o recurso de referência do curso: tópicos e tabelas cuja descrição nomeia a língua real das explicações.
+        { '@context': 'https://schema.org', '@type': 'LearningResource', name: tx.gramC(c.nome), description: descGram, url, inLanguage: loc.codigo, learningResourceType: 'Grammar reference', teaches: c.nome, isPartOf: { '@type': 'Course', name: tx.cursoJ(c.nome), url: cursoUrl }, provider: { '@id': ORG_ID } },
+        { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: tx.inicio, item: `${SITE}${loc.prefixo || '/'}` }, { '@type': 'ListItem', position: 2, name: c.nome, item: cursoUrl }, { '@type': 'ListItem', position: 3, name: tx.gramC(c.nome), item: url }] },
+      ],
+    };
   }
   return naoEncontrada(p, loc);
 }
@@ -364,9 +391,14 @@ export function aplicarMeta(html: string, m: MetaRota, site: string, d: DadosMet
   troca(/(<meta property="og:locale" content=")[^"]*(")/, loc.og);
   troca(/(<meta property="og:url" content=")[^"]*(")/, url);
   troca(/(<link rel="canonical" href=")[^"]*(")/, url);
-  // uma versão por idioma + x-default (português)
+  // uma versão por idioma + x-default: a versão em português quando faz parte do cluster;
+  // sem ela (o curso de português para estrangeiros não existe em PT), a versão no idioma-fonte do conteúdo.
   const em = m.semIndice ? [] : LOCALES.filter((l) => !m.em || m.em.includes(l.codigo));
-  const alternativos = em.length > 1 ? [...em.map((l) => `<link rel="alternate" hreflang="${l.codigo}" href="${esc(site + caminhoEm(l.codigo, m.caminho))}" />`), ...(em.some((l) => l.codigo === 'pt-BR') ? [`<link rel="alternate" hreflang="x-default" href="${esc(site + caminhoEm('pt-BR', m.caminho))}" />`] : [])].join('\n    ') : '';
+  const idCurso = semPrefixo(m.caminho).match(/^\/(?:curso|gramatica)\/([a-z]{2})/)?.[1];
+  const fonte = idCurso ? d?.indice?.[idCurso]?.fonte : undefined;
+  const codigoFonte = fonte === 'pt' ? 'pt-BR' : fonte;
+  const padrao = em.find((l) => l.codigo === 'pt-BR') ?? em.find((l) => l.codigo === codigoFonte) ?? em[0];
+  const alternativos = em.length > 1 ? [...em.map((l) => `<link rel="alternate" hreflang="${l.codigo}" href="${esc(site + caminhoEm(l.codigo, m.caminho))}" />`), `<link rel="alternate" hreflang="x-default" href="${esc(site + caminhoEm(padrao.codigo, m.caminho))}" />`].join('\n    ') : '';
   out = out.replace(/<link rel="alternate" hreflang="pt-BR" href="[^"]*" \/>/, () => alternativos);
   troca(/(<meta name="twitter:card" content=")[^"]*(")/, 'summary_large_image');
   const twitterTitle = esc(`${m.titulo ?? 'Linvuu'} · Linvuu`);

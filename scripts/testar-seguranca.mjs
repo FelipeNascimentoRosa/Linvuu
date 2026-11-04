@@ -1,6 +1,7 @@
 // Teste de segurança do servidor em modo produção: cabeçalhos, API fechada, limite de requisições e erros sem detalhes.
 // Uso: npm run build && npm run testar:seguranca
 import { spawn } from 'node:child_process';
+import { createHash } from 'node:crypto';
 
 const PORT = 3900 + Math.floor(Math.random() * 90);
 const base = `http://127.0.0.1:${PORT}`;
@@ -41,6 +42,9 @@ try {
   ok(!/script-src[^;]*unsafe-(inline|eval)/.test(csp), 'CSP sem unsafe-inline/unsafe-eval em scripts');
   ok(!/style-src [^;]*unsafe-inline/.test(csp), 'CSP sem unsafe-inline em style-src (elementos de estilo)');
   ok(/style-src-elem[^;]*sha256-/.test(csp) && /style-src-attr[^;]*unsafe-inline/.test(csp), 'CSP isola estilos: hash em style-src-elem e atributos em style-src-attr');
+  const htmlServido = await (await fetch(base + '/')).text();
+  const blocosStyle = [...htmlServido.matchAll(/<style[^>]*>([\s\S]*?)<\/style>/g)].map((m) => m[1]);
+  ok(blocosStyle.length > 0 && blocosStyle.every((b) => csp.includes(`'sha256-${createHash('sha256').update(b).digest('base64')}'`)), 'hash da CSP cobre todos os blocos <style> servidos (anti-CLS, fonte e build)');
   ok(/script-src[^;]*https:\/\/connect\.facebook\.net/.test(csp) && /img-src[^;]*https:\/\/www\.facebook\.com/.test(csp) && /connect-src[^;]*https:\/\/www\.facebook\.com/.test(csp), 'CSP permite os domínios necessários ao pixel da Meta');
   ok(/script-src[^;]*https:\/\/analytics\.tiktok\.com/.test(csp) && /img-src[^;]*https:\/\/analytics\.tiktok\.com/.test(csp) && /connect-src[^;]*https:\/\/analytics\.tiktok\.com/.test(csp) && /connect-src[^;]*https:\/\/analytics-ipv6\.tiktokw\.us/.test(csp), 'CSP permite os domínios necessários ao pixel do TikTok');
   ok(!/<script(?![^>]*(type="module"|application\/ld\+json))[^>]*>[^<]/.test(await (await fetch(base + '/portugues')).text()), 'HTML sem script inline executável');

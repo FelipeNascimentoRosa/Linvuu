@@ -1,7 +1,7 @@
 # Linvuu — instruções para Claude (estado comprovado)
 
 ## Atualização para Claude — Vuu e próximo passo, 29/10/2026
-Felipe aprovou a arte sorridente e a versão 2D do Vuu para a home. A entrega do mascote 2D para o site está **concluída**: [PR #395](https://github.com/FelipeVRosa/Linvuu/pull/395), merge `ba7a76b`, publicado no Render e conferido no domínio. O arquivo atual é `public/assets/vuu/vuu-feliz-2d.svg`; aparece na amostra de áudio e na apresentação da home. Ele é uma interpretação vetorial da referência aprovada. O estudo e o arquivo editável também estão em `C:\site\Vuu-estudio\arte-mestre\recebidas`. Esta conclusão diz respeito ao site; não afirma que animação, outras expressões ou integração ao APK estejam concluídas. Leia [o registro do Vuu](docs/VUU-2D-2026-10-29.md).
+Felipe aprovou a arte sorridente e a versão 2D do Vuu para a home. A entrega do mascote 2D para o site está **concluída**: [PR #395](https://github.com/FelipeNascimentoRosa/Linvuu/pull/395), merge `ba7a76b`, publicado no Render e conferido no domínio. O arquivo atual é `public/assets/vuu/vuu-feliz-2d.svg`; aparece na amostra de áudio e na apresentação da home. Ele é uma interpretação vetorial da referência aprovada. O estudo e o arquivo editável também estão em `C:\site\Vuu-estudio\arte-mestre\recebidas`. Esta conclusão diz respeito ao site; não afirma que animação, outras expressões ou integração ao APK estejam concluídas. Leia [o registro do Vuu](docs/VUU-2D-2026-10-29.md).
 
 O próximo passo priorizado é [progresso compreensível e reforço positivo](docs/PROXIMO-PASSO-PROGRESSO-2026-10-29.md), aproveitando os dados reais já existentes. O PR #367 é um protótipo em rascunho a consultar, não uma funcionalidade já entregue. Não representar sessões marcadas pelo aluno como domínio comprovado.
 
@@ -14,12 +14,12 @@ Leia [**CONTINUIDADE-2026-10-27.md**](docs/CONTINUIDADE-2026-10-27.md) **por int
 **Fonte de regras:** leia `AGENTS.md` e `docs/COORDENACAO-IA.md`. Antes de qualquer edição, consulte a `main`, PRs abertos, checks e `docs/ESTADO-ATUAL.md`; esse último é um *snapshot* com data, não uma sincronização permanente.
 
 ## O que foi verificado em 27/10/2026
-- Repositório de produto `FelipeVRosa/Linvuu` **público**; `main` no SHA `3431e4409065e0f1bfed71c3d704b4079d41ef39` ao consultar.
-- CI e Segurança do SHA `3431e440`: **success**, [CI](https://github.com/FelipeVRosa/Linvuu/actions/runs/40453761867) e [Segurança](https://github.com/FelipeVRosa/Linvuu/actions/runs/40453762120).
+- Repositório de produto `FelipeNascimentoRosa/Linvuu` **público**; `main` no SHA `3431e4409065e0f1bfed71c3d704b4079d41ef39` ao consultar.
+- CI e Segurança do SHA `3431e440`: **success**, [CI](https://github.com/FelipeNascimentoRosa/Linvuu/actions/runs/40453761867) e [Segurança](https://github.com/FelipeNascimentoRosa/Linvuu/actions/runs/40453762120).
 - Render `linvuu`, deploy `dep-dbg34nrbc2fs739ptjk0`, SHA `3431e440`: **live**, confirmado por API. Não extrapolar a checkout, login de usuários, regras Firestore ou APK.
-- Repositório de auditoria `FelipeVRosa/Linvuu-Auditoria-Firebase` **público**. [Run #40460208259](https://github.com/FelipeVRosa/Linvuu-Auditoria-Firebase/actions/runs/40460208259): testes offline e autenticação federada Google OIDC **success**, conferido `projectNumber=982052790317` do projeto `linvuu`. Isto comprova **identidade e leitura do identificador do projeto**, não leitura administrativa completa.
+- Repositório de auditoria `FelipeNascimentoRosa/Linvuu-Auditoria-Firebase` **público**. [Run #40460208259](https://github.com/FelipeNascimentoRosa/Linvuu-Auditoria-Firebase/actions/runs/40460208259): testes offline e autenticação federada Google OIDC **success**, conferido `projectNumber=982052790317` do projeto `linvuu`. Isto comprova **identidade e leitura do identificador do projeto**, não leitura administrativa completa.
 - Cloud Shell sob as duas contas proprietárias reportou `CONFIGURACAO_GCP_VERIFICADA` após `--apply` e `--verify`; não foi obtida nesta sessão uma coleta administrativa independente de IAM ou das regras publicadas.
-- Workflow antigo de auditoria Firebase em `FelipeVRosa/Linvuu`: **aposentado**; o workflow válido é o do repositório separado e sua coleta detalhada **permanece bloqueada enquanto o repositório for público**.
+- Workflow antigo de auditoria Firebase em `FelipeNascimentoRosa/Linvuu`: **aposentado**; o workflow válido é o do repositório separado e sua coleta detalhada **permanece bloqueada enquanto o repositório for público**.
 - PRs #360 (editorial futuro) e #367 (gamificação) permanecem **draft**, não aprovados para publicação.
 
 ## Não afirmar que funciona sem comprovação
