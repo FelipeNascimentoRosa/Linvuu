@@ -423,6 +423,11 @@ a.livro:focus-visible{outline:2px solid var(--ocre);outline-offset:6px}
 .ex-feedback.ok{background:var(--ok-bg);color:var(--ok)}
 .ex-feedback.erro{background:var(--tijolo-claro);color:var(--tijolo)}
 .ex-feedback.livre{background:var(--surface);color:var(--text)}
+/* Retorno com o Vuu ancorado ao lado (erro gentil): o mascote fica fora do
+   texto, numa coluna própria; sem Vuu, a linha comporta-se como antes. */
+.ex-retorno{display:flex;gap:14px;align-items:flex-start}
+.ex-retorno .ex-feedback{flex:1 1 auto;min-width:0}
+.ex-resumo .vuu-estado{margin-bottom:10px}
 .ex-resumo ul{margin:12px 0;display:grid;gap:8px;font-size:15px}
 .sessao-nav{display:flex;justify-content:space-between;gap:12px}
 .concluida{padding:14px 20px;background:var(--ok-bg);color:var(--ok);border-radius:var(--r-sm);font-weight:600}
