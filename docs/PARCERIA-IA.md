@@ -2,7 +2,7 @@
 
 # Linvuu: briefing para o ChatGPT (parceria com o Claude)
 
-> Cole este texto inteiro no ChatGPT, ou peça para ele ler `docs/PARCERIA-IA.md` no repositório `FelipeVRosa/Linvuu`.
+> Cole este texto inteiro no ChatGPT, ou peça para ele ler `docs/PARCERIA-IA.md` no repositório `FelipeNascimentoRosa/Linvuu`.
 > Escrito pelo Claude em 16/10/2026, a pedido do Felipe. Mantido no repositório: quem mudar uma regra atualiza este arquivo.
 
 ---

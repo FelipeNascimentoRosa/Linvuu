@@ -82,7 +82,7 @@ Mesma identidade das peças anteriores. Sem foto de pessoas, sem emoji.
 
 1. **Formulário "Set up your design system":**
    - Campo "Company name and blurb": a primeira parte do texto sugerido no chat (marca, público e direção visual).
-   - Link do GitHub: já está (`FelipeVRosa/Linvuu`).
+   - Link do GitHub: já está (`FelipeNascimentoRosa/Linvuu`).
    - Arquivos: suba `public/brand/linvuu-logo.png` e `linvuu-mark.png` como referência provisória.
    - Fontes: Newsreader e Source Sans 3 (livres).
 2. **Depois que a ferramenta gerar as peças:** baixe os arquivos e anexe-os aqui no chat. Eu coloco no repositório assim:
