@@ -78,7 +78,7 @@ export const es: Dicionario = {
   },
   cursoPagina: {
     continuarBtn: 'Continuar', sessaoTitulo: (n: number, t: string) => `Sesión ${n}: ${t}`, continuar: (n: number, t: string) => `Continuar en la sesión ${n}: ${t}`, comecar: 'Empezar por la sesión 1 (gratis)', feitas: (a: number, b: number) => `${a} de ${b} sesiones completadas`, concluida: 'completada', aulasNivel: (n: number) => `${n} lecciones`, retomarKicker: (c: string) => `Continuar ${c}`,
-    tituloSeo: (nome: string) => `${nome} para hispanohablantes, de cero a B1`,
+    tituloSeo: (nome: string) => `${nome} para hispanohablantes (A1–B1)`,
     fatos: ['Sesiones de ~30 min', 'Empieza desde cero'], noAr: (a: number, b: number) => `${a} de ${b} sesiones disponibles`, gramatica: (nome: string) => `Gramática: ${nome.toLowerCase()} →`,
     partida: (n: number) => `Tu punto de partida: sesión ${n}`, sugerimos: (nivel: string, n: number, t: string) => `Para el nivel ${nivel}, te sugerimos empezar por la sesión ${n}: ${t}.`, irPara: (n: number) => `Ir a la sesión ${n}`,
     producao: 'Parte de las lecciones de este curso todavía está en producción. Puedes recorrer el curso entero y ver el tema de cada sesión.',
