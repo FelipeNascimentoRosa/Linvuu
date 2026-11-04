@@ -5,8 +5,8 @@ const sessaoDe = (n: number) => `Lección ${Math.ceil(n / 4)} · sesión ${(n - 
 
 export const es: Dicionario = {
   meta: {
-    titulo: 'Linvuu · Idiomas explicados en español',
-    descricao: 'Aprende portugués de Brasil, inglés, alemán, francés, italiano y ruso con lecciones explicadas en español. Sesiones de 30 minutos, audio en cada frase y ejercicios corregidos al instante. 2 lecciones gratis.',
+    titulo: 'Linvuu · Cursos de idiomas para hispanohablantes',
+    descricao: 'Cursos para hispanohablantes: portugués de Brasil con 2 lecciones y gramática en español; los demás, en portugués (en traducción). 2 clases gratis.',
   },
   geral: {
     pular: 'Ir al contenido', carregando: 'Cargando…', inicio: 'Inicio', cursos: 'Cursos', voltar: 'Volver', voceEstaEm: 'Estás en',
@@ -61,13 +61,13 @@ export const es: Dicionario = {
     { p: '¿Voy a hablar con fluidez?', r: 'Linvuu te da método, práctica y constancia; el nivel que alcances depende de tus horas de estudio y de usar el idioma de verdad. Los cursos están pensados para llevarte de cero a una base sólida, hasta el B1.' },
     { p: '¿Todas las lecciones están explicadas en español?', r: 'Las explicaciones se están traduciendo lección a lección. La página de cada curso muestra cuántas lecciones ya están en español, y una sesión sin traducir lo avisa antes de empezar.' },
     { p: '¿El audio es real?', r: 'Cada frase tiene audio creado con voces neuronales del idioma, revisado poco a poco. Donde todavía falta un archivo, el sitio usa la voz de tu navegador y te lo indica en pantalla.' },
-    { p: '¿El sitio está en otros idiomas?', r: 'Sí. Arriba puedes cambiar a portugués o inglés: el sitio y las explicaciones cambian de idioma; las frases, los diálogos y el audio del idioma que estudias son los mismos.' },
+    { p: '¿El sitio está en otros idiomas?', r: 'Sí. Arriba puedes cambiar a portugués o inglés: el sitio cambia de idioma, y también las explicaciones de los cursos ya traducidos a ese idioma; las frases, los diálogos y el audio del idioma que estudias son los mismos.' },
   ],
   cta: { titulo: 'Tu primera sesión dura 30 minutos.', texto: 'Empieza ahora: 2 lecciones gratis, sin tarjeta y sin instalar nada.', primario: 'Empezar gratis', secundario: 'Ver todos los cursos' },
   rodape: {
     eConj: 'y',
     criadaPor: 'Creada por',
-    frase: 'Idiomas enseñados paso a paso, explicados en español.', novidadesTitulo: 'Recibe novedades', novidadesTexto: 'Nuevas lecciones, idiomas y libros. Sin spam.',
+    frase: 'Idiomas enseñados paso a paso, para hispanohablantes.', novidadesTitulo: 'Recibe novedades', novidadesTexto: 'Nuevas lecciones, idiomas y libros. Sin spam.',
     termos: 'Términos de uso', privacidade: 'Política de privacidad', idiomas: 'Idiomas', portugues: 'Portugués de Brasil', contato: 'Contacto', direitos: '© 2026 Linvuu. Todos los derechos reservados.',
   },
   newsletter: { email: 'Tu correo electrónico', consentimento: 'Acepto recibir correos de Linvuu.', botao: 'Quiero recibirlos', ok: 'Listo. Recibirás las novedades de Linvuu.', erro: 'No pudimos registrarte ahora. Escribe a', invalido: 'Escribe un correo válido.', semAceite: 'Marca la casilla para recibir correos.', ocupado: 'Enviando…', assunto: 'Quiero recibir novedades' },
@@ -137,8 +137,8 @@ export const es: Dicionario = {
     voltarBtn: 'Volver', voceEstaEm: 'Estás en', moeda: ' (reales brasileños)',
   },
   gramaticaPagina: {
-    titulo: (nome: string) => `Gramática: ${nome.toLowerCase()}`, tituloGeral: 'Gramática', descricao: (nome: string) => `Gramática de ${nome.toLowerCase()} explicada en español, tema por tema, con tablas, ejemplos y errores frecuentes.`,
-    lead: 'Cada regla se explica primero en español claro, con tablas, ejemplos y errores frecuentes. Cada tema lleva a la sesión donde lo practicas.',
+    titulo: (nome: string) => `Gramática: ${nome.toLowerCase()}`, tituloGeral: 'Gramática', descricao: (nome: string) => `Gramática de ${nome.toLowerCase()}, tema por tema, con tablas, ejemplos y errores frecuentes.`,
+    lead: 'Cada regla en pasos cortos, con tablas, ejemplos y errores frecuentes. Cuando un tema aún no está traducido al español, se muestra en el idioma original del curso, y la página lo indica. Cada tema lleva a la sesión donde lo practicas.',
     idioma: 'Idioma', categoria: 'Categoría', todas: 'Todas', erro: 'No pudimos cargar la gramática ahora. Recarga la página.',
     topicos: (n: number) => (n === 1 ? '1 tema' : `${n} temas`), aula: (n: number) => `Lección ${n}`, praticar: (a: number, s: string) => `Practicar en la lección ${a}, sesión ${s} →`,
     bloqueados: (n: number) => `Mostramos los temas de las 2 primeras lecciones. Los otros ${n} temas son para suscriptores.`,
@@ -176,9 +176,9 @@ export const es: Dicionario = {
   naoEncontrada: { titulo: 'Página no encontrada', texto: 'Esta dirección no existe o ha cambiado de lugar.', inicio: 'Volver al inicio', cursos: 'Ver cursos' },
   legal: { privacidade: 'Política de privacidad', termos: 'Términos de uso', descPriv: 'Qué datos recoge Linvuu, para qué y cuáles son tus derechos.', descTermos: 'Reglas de uso del sitio y de los cursos de Linvuu.', aviso: 'Esta es una traducción de cortesía. Linvuu es un servicio brasileño y la versión en portugués de este texto es la que tiene validez legal.' },
   portugues: {
-    tituloSeo: 'Portugués de Brasil para hispanohablantes, de A1 a B1', descSeo: 'Aprende portugués de Brasil de cero a B1 en 62 lecciones explicadas en español, con audio, diálogos, gramática y ejercicios.',
-    kicker: 'Portugués de Brasil', h1: 'Portugués de Brasil, explicado en español',
-    lead: 'Aprende el portugués de Brasil de cero a B1, con las lecciones explicadas en español. 62 lecciones de cuatro sesiones, con audio, diálogos, gramática y ejercicios. El parecido con el español ayuda… y engaña: aquí aprendes también los falsos amigos.',
+    tituloSeo: 'Portugués de Brasil para hispanohablantes, de A1 a B1', descSeo: 'Portugués de Brasil de cero a B1 en 62 lecciones: las 2 primeras y la gramática, en español; el resto, en inglés. Audio, diálogos y ejercicios.',
+    kicker: 'Portugués de Brasil', h1: 'Portugués de Brasil, desde cero hasta el B1',
+    lead: 'Aprende el portugués de Brasil de cero a B1. Las dos primeras lecciones y la gramática completa ya están en español; el resto del curso está explicado en inglés, su idioma original. 62 lecciones de cuatro sesiones, con audio, diálogos, gramática y ejercicios. El parecido con el español ayuda… y engaña: aquí aprendes también los falsos amigos.',
     comecar: 'Empezar la lección 1 gratis', ver: 'Ver todas las lecciones',
     nota: (s: number, p: string) => `Las 2 primeras lecciones (${s} sesiones) son gratis. Después, ${p} al mes (reales brasileños; tu tarjeta hace la conversión), con todos los cursos de Linvuu.`,
     niveisT: 'Niveles', aulas: (a: string) => `Lecciones ${a}`, comoT: 'Cómo es el curso', honestoT: 'Con honestidad', planos: 'Planes',
@@ -188,7 +188,7 @@ export const es: Dicionario = {
       { cod: 'B1', aulas: '39–62', d: 'Usas el subjuntivo, las hipótesis y el estilo indirecto, escribes correos formales, sigues las noticias y resuelves banco, CPF, SUS y Pix.' },
     ],
     pontos: [
-      'Explicaciones pensadas para hispanohablantes: las vocales nasales, la «r», «lh» y «nh», ser × estar, las contracciones y los falsos amigos (exquisito, polvo, embarazada…).',
+      'Lo que ya está en español —las dos primeras lecciones y la gramática completa— está pensado para hispanohablantes: las vocales nasales, la «r», «lh» y «nh», ser × estar, las contracciones y los falsos amigos (exquisito, polvo, embarazada…).',
       'Portugués de Brasil real: «você», «a gente», «tá», «pra», con la forma escrita al lado y cuándo usar cada una.',
       'Situaciones de quien vive, estudia o trabaja en Brasil: cafetería, supermercado, autobús, hotel, médico, alquiler, banco.',
       'Sesiones de unos 30 minutos: palabras, gramática, diálogo, ejercicios con corrección inmediata y una tarea oral o escrita.',
@@ -200,7 +200,7 @@ export const es: Dicionario = {
     ],
   },
   cursoBr: {
-    tituloSeo: 'Portugués de Brasil para hispanohablantes: todas las lecciones', descSeo: 'Portugués de Brasil en 62 lecciones (A1 a B1), explicado en español. Sesiones de unos 30 minutos, con audio, diálogos, gramática y ejercicios.',
+    tituloSeo: 'Portugués de Brasil para hispanohablantes: todas las lecciones', descSeo: 'Portugués de Brasil en 62 lecciones (A1 a B1): inicio y gramática en español; el resto, en inglés. Sesiones de 30 minutos, con audio y ejercicios.',
     h1: 'Portugués de Brasil', h1b: 'Português do Brasil', migalha: 'Portugués de Brasil', lead: (n: number) => `Un curso completo de cero a B1. ${n} lecciones de cuatro sesiones (unos 30 minutos por sesión), con audio, diálogos, gramática, los errores típicos de los hispanohablantes y ejercicios con corrección inmediata.`,
     sessoes: (n: number) => `${n} sesiones`, doZero: 'Empieza desde cero', gratis: (n: number) => `Primeras ${n} sesiones gratis`, sobre: 'Sobre el curso →',
     niveis: [
