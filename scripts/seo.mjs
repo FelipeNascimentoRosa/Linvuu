@@ -15,9 +15,21 @@ const fonte = (id) => indice[id]?.fonte ?? 'pt';
 /** Caminhos (sem prefixo) e em quais idiomas cada um entra. */
 const grupos = [];
 const todos = (c) => LOCALES.map((l) => l.c);
+/** Cluster hreflang de um curso (espelha metaRota.ts): todos os públicos menos aquele cuja língua é o próprio curso. */
+const declarados = (id) => LOCALES.filter((l) => l.oculto !== id).map((l) => l.c);
+/** x-default de um grupo: PT se estiver no cluster; senão o idioma-fonte do curso; senão o primeiro do cluster. */
+const alvoPadrao = (g) => {
+  const anot = g.anot ?? g.em;
+  if (anot.includes('pt-BR')) return 'pt-BR';
+  const id = g.p.match(/^\/(?:curso|gramatica)\/([a-z]{2})/)?.[1];
+  const cod = id ? (fonte(id) === 'pt' ? 'pt-BR' : fonte(id)) : undefined;
+  return cod && anot.includes(cod) ? cod : anot[0];
+};
 // Sitemap enxuto (decisão de 15/10/2026): só as páginas com texto próprio e valor de busca. A página central entra nos três idiomas;
 // o resto é em português. O sitemap lista URLs canonicas desejadas; nao limita as URLs que o Google pode descobrir.
-grupos.push({ p: '/', em: todos() }, { p: '/cursos', em: ['pt-BR'] }, { p: '/assinatura', em: ['pt-BR'] });
+// `anot` = cluster hreflang declarado nas anotações (espelha o HTML de metaRota.ts); `em` continua a ser
+// a lista de URLs com entrada própria — um grupo pode anotar versões que ainda não têm <loc> próprio.
+grupos.push({ p: '/', em: todos() }, { p: '/cursos', em: ['pt-BR'], anot: todos() }, { p: '/assinatura', em: ['pt-BR'], anot: todos() });
 // Livros e Sobre: só em português. Cada capítulo de amostra publicado (content/livros/<idioma>/cap-NN.json) entra no sitemap.
 grupos.push({ p: '/sobre', em: ['pt-BR'] }, { p: '/por-que-linvuu', em: ['pt-BR'] }, { p: '/contato', em: ['pt-BR'] }, { p: '/ex-alunos-udemy', em: ['pt-BR'] }, { p: '/livros', em: ['pt-BR'] });
 const dirLivros = path.join(raiz, 'content', 'livros');
@@ -37,11 +49,11 @@ const gramaticaEn = (id) => fs.existsSync(path.join(raiz, 'content', 'gramatica'
 for (const c of cursos.filter((x) => x.status !== 'em-breve' && x.id !== 'br' && fonte(x.id) === 'pt')) {
   const dias = Array.from({ length: 8 }, (_, k) => k + 1);
   const comEn = dias.filter((d) => aulasEn(c.id).includes(Math.ceil(d / 4)));
-  grupos.push({ p: `/curso/${c.id}`, em: comEn.length ? ['pt-BR', 'en'] : ['pt-BR'] }, { p: `/gramatica/${c.id}`, em: gramaticaEn(c.id) ? ['pt-BR', 'en'] : ['pt-BR'] });
+  grupos.push({ p: `/curso/${c.id}`, em: comEn.length ? ['pt-BR', 'en'] : ['pt-BR'], anot: declarados(c.id) }, { p: `/gramatica/${c.id}`, em: gramaticaEn(c.id) ? ['pt-BR', 'en'] : ['pt-BR'], anot: declarados(c.id) });
   for (const d of dias) grupos.push({ p: `/curso/${c.id}/dia/${d}`, em: comEn.includes(d) ? ['pt-BR', 'en'] : ['pt-BR'] });
 }
-// Português para estrangeiros possui versão pública em inglês.
-grupos.push({ p: '/curso/br', em: ['en'] }, { p: '/gramatica/br', em: ['en'] });
+// Português para estrangeiros possui versão pública em inglês (e os hubs também em espanhol, como no HTML).
+grupos.push({ p: '/curso/br', em: ['en'], anot: ['en', 'es'] }, { p: '/gramatica/br', em: ['en'], anot: ['en', 'es'] });
 const url = (c, p) => { const l = LOCALES.find((x) => x.c === c); return `${SITE}${l.p ? (p === '/' ? l.p : l.p + p) : p}`; };
 const linhas = [];
 // lastmod só com data verificável: content/lastmod.json é gerado a partir do histórico git
@@ -50,7 +62,8 @@ const linhas = [];
 // faz o Google ignorar o sinal.
 const manifestoLastmod = (() => { const f = path.join(raiz, 'content', 'lastmod.json'); return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : {}; })();
 for (const g of grupos) for (const c of g.em) {
-  const alt = g.em.length > 1 ? g.em.map((x) => `\n    <xhtml:link rel="alternate" hreflang="${x}" href="${url(x, g.p)}"/>`).join('') + (g.em.includes('pt-BR') ? `\n    <xhtml:link rel="alternate" hreflang="x-default" href="${url('pt-BR', g.p)}"/>` : '') : '';
+  const anot = g.anot ?? g.em;
+  const alt = anot.length > 1 ? anot.map((x) => `\n    <xhtml:link rel="alternate" hreflang="${x}" href="${url(x, g.p)}"/>`).join('') + `\n    <xhtml:link rel="alternate" hreflang="x-default" href="${url(alvoPadrao(g), g.p)}"/>` : '';
   const lm = manifestoLastmod[url(c, g.p).slice(SITE.length)];
   const data = typeof lm === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(lm) ? `\n    <lastmod>${lm}</lastmod>` : '';
   linhas.push(`  <url><loc>${url(c, g.p)}</loc>${data}${alt}\n  </url>`);
