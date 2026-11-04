@@ -146,6 +146,7 @@ h1,h2,h3,h4{font-family:var(--font-display);font-variation-settings:var(--fraunc
 .lv-foot nav h2{font-family:var(--font-body);font-variation-settings:normal;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;opacity:.7;margin:0 0 6px;color:var(--papel)}
 .lv-foot-base{max-width:var(--max);margin:0 auto;padding:22px var(--pad) 32px;border-top:1px solid rgba(245,241,232,.2);display:flex;gap:24px;flex-wrap:wrap;justify-content:space-between;font-size:14px;opacity:.85}
 .lv-foot-legal{display:flex;gap:20px}
+.lv-foot-cnpj{flex-basis:100%;font-size:13px;opacity:.75}
 @media(max-width:800px){.lv-foot-news-in,.lv-foot-in{grid-template-columns:1fr}}
 .lv-foot .redes a{background:transparent;color:var(--papel);border:1px solid rgba(245,241,232,.5)}
 .lv-foot .redes a:hover{background:var(--papel);color:var(--verde-floresta);text-decoration:none}
