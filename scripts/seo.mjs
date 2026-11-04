@@ -1,6 +1,10 @@
 // Gera public/sitemap.xml e public/robots.txt nos três idiomas do site (/, /en, /es), com as versões alternativas (hreflang).
-// Fora do sitemap: o curso escrito para o próprio público de cada idioma (inglês em /en, espanhol em /es, português para
-// estrangeiros em /) e, em /en e /es, as sessões ainda não traduzidas (o servidor as marca com noindex).
+// O conjunto de URLs deriva do mesmo modelo de indexação do servidor (src/lib/metaRota.ts), para o sitemap não
+// divergir do site servido: hub de curso e gramática são indexáveis em todos os idiomas em que o curso é
+// oferecido (todos excepto o do próprio público de cada idioma — LOCALES.oculto — e os cursos 'em-breve');
+// as sessões grátis só são indexáveis no idioma em que a explicação da aula existe (o idioma-fonte do curso
+// ou uma tradução presente em content/indice.<idioma>.json). Fora do sitemap ficam, por decisão, as páginas
+// legais (/privacidade, /termos) e as versões que o servidor marca com noindex.
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -25,11 +29,12 @@ const alvoPadrao = (g) => {
   const cod = id ? (fonte(id) === 'pt' ? 'pt-BR' : fonte(id)) : undefined;
   return cod && anot.includes(cod) ? cod : anot[0];
 };
-// Sitemap enxuto (decisão de 15/10/2026): só as páginas com texto próprio e valor de busca. A página central entra nos três idiomas;
-// o resto é em português. O sitemap lista URLs canonicas desejadas; nao limita as URLs que o Google pode descobrir.
-// `anot` = cluster hreflang declarado nas anotações (espelha o HTML de metaRota.ts); `em` continua a ser
-// a lista de URLs com entrada própria — um grupo pode anotar versões que ainda não têm <loc> próprio.
-grupos.push({ p: '/', em: todos() }, { p: '/cursos', em: ['pt-BR'], anot: todos() }, { p: '/assinatura', em: ['pt-BR'], anot: todos() });
+// Sitemap enxuto (decisão de 15/10/2026): só as páginas com texto próprio e valor de busca. As páginas centrais
+// entram nos três idiomas; o resto é em português. O sitemap lista URLs canonicas desejadas; nao limita as URLs que o Google pode descobrir.
+// `anot` = cluster hreflang declarado nas anotações (espelha o HTML de metaRota.ts); `em` é a lista de URLs
+// com entrada própria. A assinatura é indexável nos três idiomas (página localizada genuína nas três —
+// sem noindex desde a correção de integridade hreflang), por isso entra com <loc> próprio em todas.
+grupos.push({ p: '/', em: todos() }, { p: '/cursos', em: todos(), anot: todos() }, { p: '/assinatura', em: todos(), anot: todos() });
 // Livros e Sobre: só em português. Cada capítulo de amostra publicado (content/livros/<idioma>/cap-NN.json) entra no sitemap.
 grupos.push({ p: '/sobre', em: ['pt-BR'] }, { p: '/por-que-linvuu', em: ['pt-BR'] }, { p: '/contato', em: ['pt-BR'] }, { p: '/ex-alunos-udemy', em: ['pt-BR'] }, { p: '/livros', em: ['pt-BR'] });
 const dirLivros = path.join(raiz, 'content', 'livros');
@@ -40,20 +45,25 @@ if (fs.existsSync(dirLivros)) for (const id of fs.readdirSync(dirLivros).sort())
   grupos.push({ p: `/livros/${id}`, em: ['pt-BR'] });
   for (const n of caps) grupos.push({ p: `/livros/${id}/capitulo/${n}`, em: ['pt-BR'] });
 }
-// Aulas grátis (dias 1 a 8 de cada curso, só em português): texto completo no HTML e dados de recurso educacional, então entram no sitemap.
-// Excluídos: o curso escrito para o próprio público (br, que não aparece em português) e cursos sem explicação em português.
-// Quando o curso também tem a versão em inglês (aulas em content/indice.en.json, gramática em content/gramatica/<id>.en.json),
-// a URL /en/... entra no mesmo grupo, com hreflang recíproco.
-const aulasEn = (id) => tr.en?.[id]?.aulas ?? [];
-const gramaticaEn = (id) => fs.existsSync(path.join(raiz, 'content', 'gramatica', `${id}.en.json`));
-for (const c of cursos.filter((x) => x.status !== 'em-breve' && x.id !== 'br' && fonte(x.id) === 'pt')) {
-  const dias = Array.from({ length: 8 }, (_, k) => k + 1);
-  const comEn = dias.filter((d) => aulasEn(c.id).includes(Math.ceil(d / 4)));
-  grupos.push({ p: `/curso/${c.id}`, em: comEn.length ? ['pt-BR', 'en'] : ['pt-BR'], anot: declarados(c.id) }, { p: `/gramatica/${c.id}`, em: gramaticaEn(c.id) ? ['pt-BR', 'en'] : ['pt-BR'], anot: declarados(c.id) });
-  for (const d of dias) grupos.push({ p: `/curso/${c.id}/dia/${d}`, em: comEn.includes(d) ? ['pt-BR', 'en'] : ['pt-BR'] });
+// Hub de curso, gramática e aulas grátis, derivados do modelo de indexação do servidor
+// (src/lib/metaRota.ts): hub e gramática são indexáveis em cada idioma em que o curso é
+// oferecido — todos excepto o do próprio público desse idioma (LOCALES.oculto) e os cursos
+// 'em-breve'. As sessões grátis (dias 1 a 8 = as duas primeiras aulas de cada curso) só são
+// indexáveis no idioma em que a explicação daquela aula existe: o idioma-fonte do curso ou
+// uma tradução com essa aula em content/indice.<idioma>.json. É a mesma regra que decide o
+// noindex em produção (temNo, em metaRota.ts), lida dos mesmos ficheiros de conteúdo — assim,
+// quando uma tradução for publicada, as URLs entram no sitemap sem nova lista manual.
+const EXPLICACAO = { 'pt-BR': 'pt', en: 'en', es: 'es' };
+const temAula = (id, loc, aula) => fonte(id) === EXPLICACAO[loc.c] || (tr[EXPLICACAO[loc.c]]?.[id]?.aulas ?? []).includes(aula);
+for (const c of cursos.filter((x) => x.status !== 'em-breve')) {
+  const oferecidos = LOCALES.filter((l) => l.oculto !== c.id);
+  const emHub = oferecidos.map((l) => l.c);
+  grupos.push({ p: `/curso/${c.id}`, em: emHub, anot: declarados(c.id) }, { p: `/gramatica/${c.id}`, em: emHub, anot: declarados(c.id) });
+  for (let d = 1; d <= 8; d++) {
+    const em = oferecidos.filter((l) => temAula(c.id, l, Math.ceil(d / 4))).map((l) => l.c);
+    if (em.length) grupos.push({ p: `/curso/${c.id}/dia/${d}`, em });
+  }
 }
-// Português para estrangeiros possui versão pública em inglês (e os hubs também em espanhol, como no HTML).
-grupos.push({ p: '/curso/br', em: ['en'], anot: ['en', 'es'] }, { p: '/gramatica/br', em: ['en'], anot: ['en', 'es'] });
 const url = (c, p) => { const l = LOCALES.find((x) => x.c === c); return `${SITE}${l.p ? (p === '/' ? l.p : l.p + p) : p}`; };
 const linhas = [];
 // lastmod só com data verificável: content/lastmod.json é gerado a partir do histórico git
