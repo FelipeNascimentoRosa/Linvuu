@@ -81,8 +81,8 @@ const TX = {
 } as const;
 const HOME = {
   'pt-BR': { titulo: HOME_BR.tituloSeo, descricao: HOME_BR.descricao },
-  en: { titulo: 'Language courses for English speakers', descricao: 'Brazilian Portuguese, Spanish, French, Italian, German and Russian courses for English speakers. Explanations in English, audio and exercises. Try 2 free lessons.' },
-  es: { titulo: 'Cursos de idiomas para hispanohablantes', descricao: 'Cursos de portugués de Brasil, inglés, francés, italiano, alemán y ruso para hispanohablantes. Explicaciones en español, audio y ejercicios. Prueba 2 clases gratis.' },
+  en: { titulo: 'Language courses for English speakers', descricao: 'Brazilian Portuguese, Spanish, French, Italian, German and Russian courses for English speakers. Explanations in English, audio and exercises. 2 free lessons.' },
+  es: { titulo: 'Cursos de idiomas para hispanohablantes', descricao: 'Cursos de portugués de Brasil, inglés, francés, italiano, alemán y ruso para hispanohablantes. Explicaciones en español, audio y ejercicios. 2 clases gratis.' },
 };
 
 export function metaDaRota(pathname: string, d: DadosMeta | null): MetaRota {
@@ -97,7 +97,7 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
   if (p === '/') return { status: 200, caminho: '/', ...HOME[loc.codigo], jsonld: [organizacao(), { '@context': 'https://schema.org', '@type': 'WebSite', name: 'Linvuu', url: SITE, inLanguage: loc.codigo }] };
   // Livros e página Sobre: só em português (nos outros idiomas a página existe, mas não entra na busca)
   const livroBase = { em: ['pt-BR'] as Locale['codigo'][], semIndice: loc.codigo !== 'pt-BR' ? true : undefined };
-  if (p === '/sobre') return { status: 200, caminho: p, titulo: 'Quem escreve a Linvuu', descricao: 'A Linvuu é feita por Felipe Nascimento Rosa e Luiza Nascimento Rosa, matemáticos com experiência em linguística e ensino de idiomas. Conheça a autoria, a origem e o método.', ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: 'Quem escreve a Linvuu', url: `${SITE}/sobre`, inLanguage: 'pt-BR', mainEntity: { '@id': ORG_ID } }, organizacao(), ...AUTORES.map(pessoa)] };
+  if (p === '/sobre') return { status: 200, caminho: p, titulo: 'Quem escreve a Linvuu', descricao: 'A Linvuu é feita por Felipe Nascimento Rosa e Luiza Nascimento Rosa, matemáticos com experiência em linguística e ensino de idiomas. Autoria, origem e método.', ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: 'Quem escreve a Linvuu', url: `${SITE}/sobre`, inLanguage: 'pt-BR', mainEntity: { '@id': ORG_ID } }, organizacao(), ...AUTORES.map(pessoa)] };
   if (p === '/por-que-linvuu') return { status: 200, caminho: p, titulo: POR_QUE.titulo, descricao: POR_QUE.descricao, ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'WebPage', name: POR_QUE.titulo, url: `${SITE}/por-que-linvuu`, inLanguage: 'pt-BR', about: { '@id': ORG_ID } }, organizacao()] };
   if (p === '/contato') return { status: 200, caminho: p, titulo: CONTATO.titulo, descricao: CONTATO.descricao, ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'ContactPage', name: CONTATO.titulo, url: `${SITE}/contato`, inLanguage: 'pt-BR', about: { '@id': ORG_ID } }, organizacao()] };
   if (p === '/ex-alunos-udemy') return { status: 200, caminho: p, titulo: EX_ALUNOS.titulo, descricao: EX_ALUNOS.descricao, ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'WebPage', name: EX_ALUNOS.titulo, url: `${SITE}/ex-alunos-udemy`, inLanguage: 'pt-BR', about: { '@id': ORG_ID } }, organizacao()] };
@@ -197,7 +197,17 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
   if (m) {
     if (!m[1]) return { status: 200, caminho: p, titulo: tx.gram };
     const c = curso(m[1]);
-    return c ? { status: 200, caminho: p, titulo: tx.gramC(c.nome), descricao: tx.gramD(c.nome), semIndice: c.id === loc.cursoOculto || c.status === 'em-breve' || undefined } : naoEncontrada(p, loc);
+    if (!c) return naoEncontrada(p, loc);
+    const url = `${SITE}${caminhoEm(loc.codigo, p)}`;
+    const cursoUrl = `${SITE}${caminhoEm(loc.codigo, `/curso/${c.id}`)}`;
+    return {
+      status: 200, caminho: p, titulo: tx.gramC(c.nome), descricao: tx.gramD(c.nome), semIndice: c.id === loc.cursoOculto || c.status === 'em-breve' || undefined,
+      jsonld: [
+        // A página de gramática é o recurso de referência do curso: tópicos e tabelas explicados no idioma da página.
+        { '@context': 'https://schema.org', '@type': 'LearningResource', name: tx.gramC(c.nome), description: tx.gramD(c.nome), url, inLanguage: loc.codigo, learningResourceType: 'Grammar reference', teaches: c.nome, isPartOf: { '@type': 'Course', name: tx.cursoJ(c.nome), url: cursoUrl }, provider: { '@id': ORG_ID } },
+        { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: tx.inicio, item: `${SITE}${loc.prefixo || '/'}` }, { '@type': 'ListItem', position: 2, name: c.nome, item: cursoUrl }, { '@type': 'ListItem', position: 3, name: tx.gramC(c.nome), item: url }] },
+      ],
+    };
   }
   return naoEncontrada(p, loc);
 }
