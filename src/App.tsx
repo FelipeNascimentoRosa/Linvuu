@@ -24,6 +24,7 @@ const ExAlunosUdemy = lazy(() => import('./pages/ExAlunosUdemy'));
 const ExcluirConta = lazy(() => import('./pages/ExcluirConta'));
 import { Header, BarraTopo, BarraInferior, Footer } from '@plataforma/Chrome';
 import NaoEncontrada from './pages/NaoEncontrada';
+import Carregando from './components/Carregando';
 import { useT } from './i18n';
 
 function RolarAoTopo() {
@@ -59,7 +60,7 @@ export default function App() {
       {!NATIVO && <BarraTopo semNovidades={AREA_ALUNO.test(pathname)} />}
       <Header />
       <main id="conteudo" className={!NATIVO ? 'site-camadas' : undefined} tabIndex={-1}>
-        <Suspense fallback={<p className="resultado pagina carga" role="status">{t.geral.carregando}</p>}>
+        <Suspense fallback={<Carregando />}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cursos" element={<Cursos />} />

@@ -19,7 +19,7 @@ window.addEventListener('vite:preloadError', (e) => {
   window.location.reload();
 });
 import { useAuth, AuthProvider } from './lib/AuthContext';
-import { LOCALE, localeLembrado, urlEm, useT } from './i18n';
+import { LOCALE, localeLembrado, urlEm } from './i18n';
 import { carregarTraducoes } from './lib/content';
 
 // Quem já escolheu outro idioma na barra do topo volta a ele ao abrir um endereço sem prefixo (ex.: um link compartilhado).
@@ -27,10 +27,14 @@ const lembrado = localeLembrado();
 if (lembrado && lembrado !== LOCALE.codigo && !LOCALE.prefixo) window.location.replace(urlEm(lembrado));
 document.documentElement.lang = LOCALE.codigo;
 
+// A app monta de imediato, sem esperar pela sessão do Firebase: as páginas públicas
+// pintam já e a sessão resolve em segundo plano. Onde o acesso depende da sessão, a
+// decisão continua bloqueada localmente no estado pendente — o useAssinatura mantém
+// `carregando` até o onAuthStateChanged responder, e Dia/Gramatica/LivroGramatica só
+// pedem conteúdo depois disso (o conteúdo pago nem vem no pacote: o servidor decide).
+// Quando a sessão resolve com utilizador, a key muda e a app remonta, como até aqui.
 function AplicacaoDaConta() {
-  const { usuario, carregando } = useAuth();
-  const t = useT();
-  if (carregando) return <div className="site-carregando" role="status"><img src="/brand/linvuu-wordmark-verde.svg" alt="Linvuu" width="156" height="50" /><p>{t.geral.carregando}</p></div>;
+  const { usuario } = useAuth();
   return <App key={usuario?.uid ?? 'visitante'} />;
 }
 

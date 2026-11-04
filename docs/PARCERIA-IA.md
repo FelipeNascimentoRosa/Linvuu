@@ -49,7 +49,7 @@ O repositório é **privado** e está no plano gratuito do GitHub, então **não
   - Mensal: R$ 139, cartão, renovação automática.
   - 3 meses: R$ 291,90 no Pix ou R$ 417 no cartão/boleto, pagamento único.
   - 12 meses: R$ 999, pagamento único.
-  - Ex-aluno: R$ 79/mês nos 6 primeiros meses, cupom LINVUU50.
+  - Ex-aluno: a oferta antiga (cupom LINVUU50) foi descontinuada; a condição atual de ex-alunos é o código FUNDADORES (ver `docs/PRECOS-DEFINIDOS.md`).
   - Reembolso em até 7 dias.
   - **Premium:** R$ 500/mês, com professor no WhatsApp e encontros ao vivo. **Ainda não é vendido.** O site diz "em preparação" e o botão leva a uma lista de interesse.
 - **Datas:** lançamento comercial em **5 de novembro de 2026**. Depois disso o Felipe quer fazer a versão internacional ("tudo em inglês").

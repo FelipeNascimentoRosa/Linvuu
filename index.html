@@ -21,6 +21,8 @@
     <meta name="theme-color" content="#F5F1E8" />
     <link rel="icon" type="image/png" href="/brand/favicon-64.png" />
     <link rel="apple-touch-icon" href="/brand/apple-touch-icon.png" />
+    <!-- Mascote do ecrã de carregamento (Vuu sonolento, sistema vetorial v2): pré-carregado para pintar ao mesmo tempo que o esqueleto CSS no arranque frio, sem esperar por um pedido separado depois do React montar. -->
+    <link rel="preload" as="image" type="image/svg+xml" href="/assets/vuu/vuu-sonolento.svg" />
   <!-- O texto de data-prerender é para buscadores e leitores sem JavaScript. Com JavaScript ativo o React o troca pela página, e mostrar os dois deslocava o layout (CLS). -->
   <style>@media (scripting: enabled){main[data-prerender]{display:none}}</style>
   </head>

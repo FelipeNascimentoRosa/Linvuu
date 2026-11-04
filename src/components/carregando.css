@@ -1,0 +1,29 @@
+/* Esqueleto de carregamento com o Vuu (components/Carregando.tsx).
+   Blocos em CSS puro sobre os tokens do site; a única animação é uma respiração
+   subtil dos blocos e do mascote, ativa só sem prefers-reduced-motion —
+   com reduced-motion o estado fica estático (regra do sistema de motion do Vuu). */
+.carga-vuu{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;min-height:70vh;padding:32px 20px;color:var(--fg-3)}
+.carga-vuu-marca{height:auto}
+.carga-vuu-esqueleto{display:flex;flex-direction:column;gap:12px;width:min(680px,100%)}
+.carga-vuu-bloco{display:block;background:var(--bg-recuado);border-radius:8px}
+.carga-vuu-titulo{width:min(400px,78%);height:34px;border-radius:10px}
+.carga-vuu-linha{width:92%;height:14px}
+.carga-vuu-linha-curta{width:56%}
+.carga-vuu-cartoes{display:flex;gap:14px;margin-top:10px}
+.carga-vuu-cartao{flex:1 1 0;height:118px;border-radius:12px}
+.carga-vuu-rodape{display:flex;flex-direction:column;align-items:center;gap:10px}
+.carga-vuu-mascote{height:96px;width:auto}
+/* Área do aluno em tema escuro: a arte padrão (sonolento verde) perderia
+   contraste sobre o fundo verde-escuro — troca pela variante papel do mesmo
+   estado, só quando a arte em uso é a padrão (data-padrao). Mesmo padrão
+   `content:url(...)` do wordmark do APK (plataforma/apk/app.css). */
+.area-aluno[data-tema="escuro"] .carga-vuu-mascote[data-padrao]{content:url(/assets/vuu/vuu-sonolento-papel.svg)}
+.carga-vuu-texto{margin:0;font-size:15px}
+@media (prefers-reduced-motion:no-preference){
+  .carga-vuu-bloco{animation:carga-vuu-respira 1.8s ease-in-out infinite alternate}
+  .carga-vuu-cartoes .carga-vuu-cartao:nth-child(2){animation-delay:.25s}
+  .carga-vuu-cartoes .carga-vuu-cartao:nth-child(3){animation-delay:.5s}
+  .carga-vuu-mascote{animation:carga-vuu-flutua 3.6s ease-in-out infinite alternate}
+  @keyframes carga-vuu-respira{from{opacity:.55}to{opacity:1}}
+  @keyframes carga-vuu-flutua{from{transform:translateY(0)}to{transform:translateY(-4px)}}
+}

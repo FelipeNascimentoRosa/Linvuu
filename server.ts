@@ -67,22 +67,77 @@ async function startServer() {
     };
     app.get('/sitemap.xml', arquivoEstatico('sitemap.xml', 'application/xml; charset=utf-8'));
     app.get('/robots.txt', arquivoEstatico('robots.txt', 'text/plain; charset=utf-8'));
+    const distDir = path.resolve(__dirname, 'dist');
+    // Regras de cache dos estáticos: as mesmas para o express.static e para o Brotli pré-comprimido abaixo,
+    // para o mesmo arquivo ter sempre a mesma política, comprimido ou não.
+    const cabecalhosCache = (res: Response, arquivo: string) => {
+      // Apenas arquivos com fingerprint de conteúdo, direto em dist/assets (saída do Vite), são imutáveis. Subpastas (assets/vuu/...) são arte pública
+      // com nome escolhido à mão: um nome como «vuu-feliz-2d.svg» casaria por acaso com o padrão de hash e ficaria um ano em cache.
+      if (path.dirname(arquivo).endsWith(`${path.sep}assets`) && /-[A-Za-z0-9_-]{8}\.[A-Za-z0-9]+$/.test(path.basename(arquivo))) res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+      else if (arquivo.includes(`${path.sep}assets${path.sep}`)) res.setHeader('Cache-Control', 'public, max-age=0, must-revalidate');
+      // O nome do MP3 deriva do texto, não do conteúdo: uma regravação pode reutilizar o nome.
+      else if (arquivo.endsWith('.mp3')) res.setHeader('Cache-Control', 'public, max-age=86400');
+      else if (arquivo.includes(`${path.sep}audio${path.sep}`) && arquivo.endsWith('index.json')) res.setHeader('Cache-Control', 'public, max-age=300');
+      else if (/\.(webp|png|jpe?g|svg|woff2?)$/.test(arquivo)) res.setHeader('Cache-Control', 'public, max-age=2592000');
+      // sitemap e robots: o Google relê com frequência; uma hora de cache basta
+      else if (/(sitemap\.xml|robots\.txt)$/.test(arquivo)) res.setHeader('Cache-Control', 'public, max-age=3600');
+    };
+    // Brotli pré-comprimido: o build gera «<arquivo>.br» ao lado dos estáticos de texto (scripts/comprimir.mjs).
+    // Quem aceita Brotli recebe o .br pronto, sem custo de CPU por pedido; quem não aceita segue para o
+    // express.static e para o gzip dinâmico do middleware compression. Como o Content-Encoding é definido
+    // aqui, o compression não volta a comprimir a resposta (ele salta respostas já codificadas).
+    // Só estáticos: pedidos parciais (Range), métodos que não GET/HEAD e URLs fora de dist/ passam adiante.
+    const tiposPreComprimidos: Record<string, string> = {
+      '.js': 'application/javascript; charset=utf-8',
+      '.css': 'text/css; charset=utf-8',
+      '.html': 'text/html; charset=utf-8',
+      '.svg': 'image/svg+xml',
+      '.json': 'application/json; charset=utf-8',
+      '.xml': 'application/xml; charset=utf-8',
+      '.txt': 'text/plain; charset=utf-8',
+    };
+    const aceitaBrotli = (req: Request): boolean => {
+      const bruto = req.headers['accept-encoding'];
+      if (!bruto) return false;
+      return bruto.split(',').some((parte) => {
+        const [cod, ...params] = parte.split(';').map((p) => p.trim());
+        if (cod.toLowerCase() !== 'br') return false;
+        const q = params.find((p) => p.startsWith('q='));
+        return !q || Number.parseFloat(q.slice(2)) > 0;
+      });
+    };
+    app.use((req: Request, res: Response, next) => {
+      if (req.method !== 'GET' && req.method !== 'HEAD') return next();
+      if (req.headers.range) return next();
+      const tipo = tiposPreComprimidos[path.extname(req.path).toLowerCase()];
+      if (!tipo || !aceitaBrotli(req)) return next();
+      let relativo = req.path;
+      try { relativo = decodeURIComponent(req.path); } catch { return next(); }
+      const arquivo = path.resolve(distDir, `.${relativo}`);
+      if (!arquivo.startsWith(distDir + path.sep)) return next();
+      const preComprimido = `${arquivo}.br`;
+      let tamanhoBr: number;
+      try {
+        if (!fs.statSync(arquivo).isFile()) return next();
+        tamanhoBr = fs.statSync(preComprimido).size;
+      } catch { return next(); }
+      res.setHeader('Content-Type', tipo);
+      res.setHeader('Content-Encoding', 'br');
+      const vary = res.getHeader('Vary');
+      if (!vary) res.setHeader('Vary', 'Accept-Encoding');
+      else if (!String(vary).split(',').map((v) => v.trim()).includes('Accept-Encoding')) res.setHeader('Vary', `${vary}, Accept-Encoding`);
+      cabecalhosCache(res, arquivo);
+      res.setHeader('Content-Length', tamanhoBr);
+      if (req.method === 'HEAD') { res.end(); return; }
+      fs.createReadStream(preComprimido)
+        .on('error', () => { if (!res.headersSent) next(); else res.destroy(); })
+        .pipe(res);
+    });
     // index: false — a página inicial também passa pelo catch-all abaixo, que coloca as metatags (sem isso, «/» saía sem hreflang).
-    app.use(express.static(path.resolve(__dirname, 'dist'), {
+    app.use(express.static(distDir, {
       redirect: false, // /livros é também uma pasta de capas em dist/: sem isto o express responderia 301 para /livros/
       index: false,
-      setHeaders: (res, arquivo) => {
-        // Apenas arquivos com fingerprint de conteúdo, direto em dist/assets (saída do Vite), são imutáveis. Subpastas (assets/vuu/...) são arte pública
-        // com nome escolhido à mão: um nome como «vuu-feliz-2d.svg» casaria por acaso com o padrão de hash e ficaria um ano em cache.
-        if (path.dirname(arquivo).endsWith(`${path.sep}assets`) && /-[A-Za-z0-9_-]{8}\.[A-Za-z0-9]+$/.test(path.basename(arquivo))) res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
-        else if (arquivo.includes(`${path.sep}assets${path.sep}`)) res.setHeader('Cache-Control', 'public, max-age=0, must-revalidate');
-        // O nome do MP3 deriva do texto, não do conteúdo: uma regravação pode reutilizar o nome.
-        else if (arquivo.endsWith('.mp3')) res.setHeader('Cache-Control', 'public, max-age=86400');
-        else if (arquivo.includes(`${path.sep}audio${path.sep}`) && arquivo.endsWith('index.json')) res.setHeader('Cache-Control', 'public, max-age=300');
-        // sitemap e robots: o Google relê com frequência; uma hora de cache basta
-        else if (/\.(webp|png|jpe?g|svg|woff2?)$/.test(arquivo)) res.setHeader('Cache-Control', 'public, max-age=2592000');
-        else if (/(sitemap\.xml|robots\.txt)$/.test(arquivo)) res.setHeader('Cache-Control', 'public, max-age=3600');
-      },
+      setHeaders: cabecalhosCache,
     }));
     // Cada rota recebe o HTML com título, descrição e endereço próprios (prévia de compartilhamento correta) e o status certo (404 de verdade).
     const dadosMeta = carregarDadosMeta(__dirname);

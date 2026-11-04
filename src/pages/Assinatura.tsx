@@ -4,7 +4,7 @@ import type { Plano } from '../lib/assinatura';
 import { Navegacao } from '../components/Navegacao';
 import { useAuth } from '../lib/AuthContext';
 import { abrir, useAssinatura } from '../lib/assinatura';
-import { AULAS_GRATIS, PRECO_ANUAL, PRECO_EX_ALUNO, PRECO_MENSAL, PRECO_TRIMESTRAL, PRECO_TRIMESTRAL_PIX } from '../config/planos';
+import { AULAS_GRATIS, PRECO_ANUAL, PRECO_ANUAL_MES, PRECO_MENSAL, PRECO_TRIMESTRAL, PRECO_TRIMESTRAL_PIX, PRECO_TRIMESTRAL_PIX_MES } from '../config/planos';
 import { EMAIL_OFICIAL } from '../config/site';
 import { usePageTitle } from '../lib/usePageTitle';
 import { data, LOCALE, useT } from '../i18n';
@@ -69,26 +69,28 @@ export default function Assinatura() {
               <p><Link className="btn btn-ghost" to="/cursos">{LOCALE.codigo === 'pt-BR' ? 'Testar 2 aulas grátis, sem cartão' : t.geral.inicio}</Link></p>
               {!usuario && <p className="nota lv-assinatura-conta">{s.semConta} <Link to="/entrar?proximo=/assinatura">{s.jaTemConta}</Link></p>}
               <div className="lv-planos">
-                <div className={`lv-plano lv-plano-dest ${escolhido === 'mensal' ? 'lv-plano-escolhido' : ''}`}>
+                <div className={`lv-plano ${escolhido === 'mensal' ? 'lv-plano-escolhido' : ''}`}>
                   <h3>{s.mensal}</h3>
                   <p className="lv-plano-preco">{PRECO_MENSAL}<span>{s.porMes}</span></p>
                   <p>{s.mensalTxt}</p>
                   <button type="button" className="btn btn-primary" onClick={() => ir('checkout', 'mensal')} disabled={ocupado}>{ocupado ? t.geral.abrindo : s.assinarBtn}</button>
-                  <p className="nota">{s.exAluno(PRECO_EX_ALUNO)}</p>
                 </div>
                 <div className={`lv-plano ${escolhido?.startsWith('trimestral') ? 'lv-plano-escolhido' : ''}`}>
                   <h3>{s.tresMeses}</h3>
                   <p className="lv-plano-preco">{PRECO_TRIMESTRAL_PIX}<span>{s.noPix}</span></p>
+                  <p className="lv-plano-equiv">{s.equivMes(PRECO_TRIMESTRAL_PIX_MES)}</p>
                   <p>{s.pixTxt}</p>
                   <button type="button" className="btn btn-primary" onClick={() => ir('checkout', 'trimestral-pix')} disabled={ocupado}>{ocupado ? t.geral.abrindo : s.pixBtn}</button>
                   <p className="lv-plano-preco">{PRECO_TRIMESTRAL}<span>{s.cartaoBoleto}</span></p>
                   <button type="button" className="btn btn-ghost" onClick={() => ir('checkout', 'trimestral')} disabled={ocupado}>{ocupado ? t.geral.abrindo : s.tresBtn}</button>
                 </div>
-                <div className={`lv-plano ${escolhido === 'anual' ? 'lv-plano-escolhido' : ''}`}>
+                <div className={`lv-plano lv-plano-dest ${escolhido === 'anual' ? 'lv-plano-escolhido' : ''}`}>
+                  <span className="lv-plano-selo">{s.menorPrecoMes}</span>
                   <h3>{s.dozeMeses}</h3>
                   <p className="lv-plano-preco">{PRECO_ANUAL}<span>{s.cartaoBoleto}</span></p>
+                  <p className="lv-plano-equiv">{s.equivMes(PRECO_ANUAL_MES)}</p>
                   <p>{s.anoTxt}</p>
-                  <button type="button" className="btn btn-ghost" onClick={() => ir('checkout', 'anual')} disabled={ocupado}>{ocupado ? t.geral.abrindo : s.anoBtn}</button>
+                  <button type="button" className="btn btn-primary" onClick={() => ir('checkout', 'anual')} disabled={ocupado}>{ocupado ? t.geral.abrindo : s.anoBtn}</button>
                 </div>
               </div>
             </>

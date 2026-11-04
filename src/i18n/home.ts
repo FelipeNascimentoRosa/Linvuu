@@ -29,6 +29,8 @@ const copy: Record<string, readonly [string, string]> = {
   'pagamento único · 30% de desconto': ['one-time payment · 30% off', 'pago único · 30% de descuento'],
   '12 meses · pagamento único': ['12 months · one-time payment', '12 meses · pago único'],
   'Ver condições do plano': ['View plan details', 'Ver condiciones del plan'],
+  'Menor preço por mês': ['Lowest price per month', 'Menor precio por mes'],
+  'por mês': ['per month', 'por mes'],
   'O plano de três meses também está disponível no cartão ou boleto. Consulte os valores e condições antes de contratar.': ['The three-month plan is also available by card or boleto. Review prices and terms before subscribing.', 'El plan de tres meses también está disponible con tarjeta o boleto. Consulta precios y condiciones antes de contratar.'],
   'Experimentar duas aulas grátis →': ['Try two free lessons →', 'Probar dos clases gratis →'],
   'Ver todos os detalhes da assinatura →': ['View subscription details →', 'Ver detalles de la suscripción →'],

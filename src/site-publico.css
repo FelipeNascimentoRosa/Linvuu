@@ -26,6 +26,5 @@
 #oferta-atual{scroll-margin-top:110px}
 @media(max-width:760px){.site-intro{grid-template-columns:1fr;gap:24px;margin-top:24px}.site-aside{transform:none}.site-publico .curso-topo{padding:24px 20px}.site-publico .fase-bloco summary{padding:18px 16px;flex-wrap:wrap}.site-publico .fase-dias{white-space:normal}.site-publico .curso-retomar{align-items:stretch;flex-direction:column}.site-publico .curso-retomar .btn{white-space:normal;line-height:1.4;text-align:left}.site-publico .lv-card{padding:24px}.site-assinatura .lv-planos{grid-template-columns:1fr}.site-plans-preview .br-section{padding:28px 18px}.site-plans-preview .br-plans{grid-template-columns:1fr}.site-lead{font-size:18px}}
 @media(prefers-reduced-motion:reduce){.site-publico .lv-card{transition:none}.site-publico .lv-card:hover{transform:none}}
-.site-carregando{min-height:70vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;color:var(--fg-3);font-size:16px}.site-carregando img{height:auto}
 
 .site-publico .curso-grid{gap:20px}.site-publico .lv-card{border:1px solid var(--site-borda-idioma)}

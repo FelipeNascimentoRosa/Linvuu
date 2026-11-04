@@ -5,13 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "tsx server.ts",
-    "build": "node scripts/conteudo.mjs --check && node scripts/seo.mjs && vite build",
+    "build": "node scripts/conteudo.mjs --check && node scripts/seo.mjs && vite build && node scripts/comprimir.mjs",
     "start": "tsx server.ts",
     "preview": "vite preview",
     "clean": "rm -rf dist server.js",
     "lint": "tsc --noEmit",
     "content": "node scripts/conteudo.mjs",
     "content:check": "node scripts/conteudo.mjs --check",
+    "seo:lastmod": "node scripts/gerar-lastmod.mjs",
     "aulas": "node scripts/compilar-aulas.mjs ru && node scripts/compilar-aulas.mjs de && node scripts/compilar-aulas.mjs en && node scripts/compilar-aulas.mjs fr && node scripts/compilar-aulas.mjs it && node scripts/compilar-aulas.mjs es && node scripts/compilar-aulas.mjs br && node scripts/aulas.mjs ru && node scripts/aulas.mjs de && node scripts/aulas.mjs en && node scripts/aulas.mjs fr && node scripts/aulas.mjs it && node scripts/aulas.mjs es && node scripts/aulas.mjs br && node scripts/gramatica.mjs ru && node scripts/gramatica.mjs de && node scripts/gramatica.mjs en && node scripts/gramatica.mjs fr && node scripts/gramatica.mjs it && node scripts/gramatica.mjs es && node scripts/gramatica.mjs br && node scripts/conteudo.mjs",
     "auditar": "node scripts/auditar-aulas.mjs ru --md",
     "complementos": "node scripts/aplicar-complementos.mjs",
@@ -66,6 +67,7 @@
   },
   "overrides": {
     "@grpc/grpc-js": "^1.14.0",
-    "uuid": "^11.1.1"
+    "uuid": "^11.1.1",
+    "glob": "^14.0.3"
   }
 }
