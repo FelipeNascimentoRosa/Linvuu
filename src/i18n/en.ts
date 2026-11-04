@@ -6,7 +6,7 @@ const sessaoDe = (n: number) => `Lesson ${Math.ceil(n / 4)} · session ${(n - 1)
 export const en: Dicionario = {
   meta: {
     titulo: 'Linvuu · Language courses for English speakers',
-    descricao: 'Brazilian Portuguese, Spanish, French, Italian, German and Russian courses for English speakers. Explanations in English, audio and exercises. Try 2 free lessons.',
+    descricao: 'Courses for English speakers: Brazilian Portuguese, French and Russian explained in English; German, Spanish and Italian in translation. Try 2 free lessons.',
   },
   geral: {
     pular: 'Skip to content', carregando: 'Loading…', inicio: 'Home', cursos: 'Courses', voltar: 'Back', voceEstaEm: 'You are here',
@@ -61,13 +61,13 @@ export const en: Dicionario = {
     { p: 'Will I become fluent?', r: 'Linvuu gives you a method, practice and consistency; the level you reach depends on your study hours and on using the language for real. The courses are designed to take you from zero to a solid B1 foundation.' },
     { p: 'Are all lessons explained in English?', r: 'The Brazilian Portuguese course is written in English from the first to the last lesson. In the other courses, the explanations are being translated lesson by lesson: each course page shows how many lessons are already in English, and an untranslated session says so before you start it.' },
     { p: 'Is the audio real?', r: 'Every sentence has audio made with neural voices of the language, reviewed step by step. Where a file is still missing, the site uses your browser\'s voice and tells you on screen.' },
-    { p: 'Is the site available in other languages?', r: 'Yes. At the top of the page you can switch to Portuguese or Spanish: the site and the lesson explanations change language; the sentences, dialogues and audio of the language you study stay the same.' },
+    { p: 'Is the site available in other languages?', r: 'Yes. At the top of the page you can switch to Portuguese or Spanish: the site changes language, and so do the explanations in the courses already translated into it; the sentences, dialogues and audio of the language you study stay the same.' },
   ],
   cta: { titulo: 'Your first session takes 30 minutes.', texto: 'Start now: 2 free lessons, no card, nothing to install.', primario: 'Start free', secundario: 'See all courses' },
   rodape: {
     eConj: 'and',
     criadaPor: 'Created by',
-    frase: 'Languages taught step by step, explained in English.', novidadesTitulo: 'Get updates', novidadesTexto: 'New lessons, languages and books. No spam.',
+    frase: 'Languages taught step by step, for English speakers.', novidadesTitulo: 'Get updates', novidadesTexto: 'New lessons, languages and books. No spam.',
     termos: 'Terms of use', privacidade: 'Privacy policy', idiomas: 'Languages', portugues: 'Brazilian Portuguese', contato: 'Contact', direitos: '© 2026 Linvuu. All rights reserved.',
   },
   newsletter: { email: 'Your e-mail', consentimento: 'I agree to receive e-mails from Linvuu.', botao: 'Sign me up', ok: 'Done. You will receive Linvuu updates.', erro: 'We could not sign you up right now. Write to', invalido: 'Enter a valid e-mail address.', semAceite: 'Tick the box to receive e-mails.', ocupado: 'Sending…', assunto: 'Updates, please' },
@@ -137,8 +137,8 @@ export const en: Dicionario = {
     voltarBtn: 'Back', voceEstaEm: 'You are here', moeda: ' (Brazilian reais)',
   },
   gramaticaPagina: {
-    titulo: (nome: string) => `${nome} grammar`, tituloGeral: 'Grammar', descricao: (nome: string) => `${nome} grammar explained in English, topic by topic, with tables, examples and common mistakes.`,
-    lead: 'Every rule is explained in plain English first, with tables, examples and common mistakes. Each topic links to the session where you practise it.',
+    titulo: (nome: string) => `${nome} grammar`, tituloGeral: 'Grammar', descricao: (nome: string) => `${nome} grammar, topic by topic, with tables, examples and common mistakes.`,
+    lead: 'Every rule in short steps, with tables, examples and common mistakes. Where a topic has not been translated into English yet, it is shown in the course’s original language — and the page says so. Each topic links to the session where you practise it.',
     idioma: 'Language', categoria: 'Category', todas: 'All', erro: 'We could not load the grammar right now. Reload the page.',
     topicos: (n: number) => (n === 1 ? '1 topic' : `${n} topics`), aula: (n: number) => `Lesson ${n}`, praticar: (a: number, s: string) => `Practise it in lesson ${a}, session ${s} →`,
     bloqueados: (n: number) => `These are the topics of the first 2 lessons. The other ${n} topics are for subscribers.`,

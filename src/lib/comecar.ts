@@ -29,7 +29,7 @@ export const COMECAR: Record<'pt-BR' | 'en' | 'es', Comecar> = {
   en: {
     kicker: 'Getting started', titulo: 'How to start on Linvuu', lead: 'Four steps, with no sign-up and no card.',
     passos: [
-      { n: '01', t: 'Choose your course', d: 'Pick the course you want. Every explanation is in English.' },
+      { n: '01', t: 'Choose your course', d: 'Pick the course you want. Brazilian Portuguese, French and Russian are explained in English from start to finish; the other courses are being translated, and each course page shows its real coverage.' },
       { n: '02', t: 'Open the first session', d: 'Each session takes about 30 minutes and comes in short blocks: read, tap Continue and go at your own pace. The first two lessons of each course are free.' },
       { n: '03', t: 'Listen and repeat out loud', d: 'Tap the speaker icon next to any word, sentence or dialogue. Listen first, then repeat: the language comes in through the ear.' },
       { n: '04', t: 'Practise and track your progress', d: 'Exercises are marked straight away, with the reason for each mistake. Mark the session as done; when you sign in, your progress is saved on any device.' },
@@ -45,7 +45,7 @@ export const COMECAR: Record<'pt-BR' | 'en' | 'es', Comecar> = {
   es: {
     kicker: 'Primeros pasos', titulo: 'Cómo empezar en Linvuu', lead: 'Cuatro pasos, sin registro y sin tarjeta.',
     passos: [
-      { n: '01', t: 'Elige tu curso', d: 'Elige el curso que quieres. Todas las explicaciones están en español.' },
+      { n: '01', t: 'Elige tu curso', d: 'Elige el curso que quieres. De momento, solo el portugués de Brasil tiene explicaciones en español (las dos primeras lecciones y la gramática completa); los demás cursos están en portugués, en proceso de traducción, y su página muestra el avance real.' },
       { n: '02', t: 'Abre la primera sesión', d: 'Cada sesión dura unos 30 minutos y viene en bloques cortos: lee, toca Continuar y sigue a tu ritmo. Las dos primeras lecciones de cada curso son gratis.' },
       { n: '03', t: 'Escucha y repite en voz alta', d: 'Toca el icono del altavoz junto a cualquier palabra, frase o diálogo. Primero escucha y luego repite: el idioma entra por el oído.' },
       { n: '04', t: 'Practica y sigue tu progreso', d: 'Los ejercicios se corrigen al instante, con la explicación del error. Marca la sesión como completada; al iniciar sesión, tu progreso se guarda en cualquier dispositivo.' },
