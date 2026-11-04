@@ -184,7 +184,10 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     // Nos outros, a página mostra o texto original com um aviso e não entra na busca (seria conteúdo duplicado).
     const temNo = (l: Locale) => l.cursoOculto !== c.id && ((d.indice[c.id]?.fonte ?? 'pt') === l.explicacao || !!d.indice[c.id]?.tr?.[l.explicacao]?.aulas?.includes(g.aula));
     // A apresentacao publica do curso continua indexavel. Sessoes sem amostra publica nao entram no indice.
-    return { status: 200, caminho: p, titulo: `${t} · ${c.nome} · ${tx.dia(n)}`, semMarca: true, descricao: tx.aulaD(c.nome, g.aula, t, n, total), semIndice: n > SESSOES_GRATIS || !temNo(loc) || undefined, em: LOCALES.filter(temNo).map((l) => l.codigo),
+    // Título da aula, EN do curso BR: forma curta «Portuguese» — com «Brazilian Portuguese» os dias 1–4 passavam de 60
+    // caracteres (decisão do Felipe, 2026-11-04: sem excepções ao limite). Hub, H1, descrições e JSON-LD mantêm o nome completo.
+    const nomeTitulo = loc.codigo === 'en' && c.id === 'br' ? 'Portuguese' : c.nome;
+    return { status: 200, caminho: p, titulo: `${t} · ${nomeTitulo} · ${tx.dia(n)}`, semMarca: true, descricao: tx.aulaD(c.nome, g.aula, t, n, total), semIndice: n > SESSOES_GRATIS || !temNo(loc) || undefined, em: LOCALES.filter(temNo).map((l) => l.codigo),
       // Sessão grátis: dados de recurso educacional, sempre gratuito (as demais são por assinatura e não ganham marcação de gratuidade)
       jsonld: n <= SESSOES_GRATIS ? [{
         '@context': 'https://schema.org', '@type': 'LearningResource', name: tx.aula(g.aula, t, c.nome), description: tx.aulaD(c.nome, g.aula, t, n, total), url: `${SITE}${caminhoEm(loc.codigo, p)}`,
