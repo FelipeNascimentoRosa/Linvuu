@@ -4,7 +4,7 @@ import { Botao, BotaoLink } from './Button';
 import { useAuth } from '../lib/AuthContext';
 import { abrir } from '../lib/assinatura';
 import { textos } from '../lib/textos';
-import { AULAS_GRATIS, PRECO_ANUAL, PRECO_EX_ALUNO, PRECO_MENSAL, PRECO_TRIMESTRAL, PRECO_TRIMESTRAL_PIX } from '../config/planos';
+import { AULAS_GRATIS, PRECO_ANUAL, PRECO_MENSAL, PRECO_TRIMESTRAL, PRECO_TRIMESTRAL_PIX } from '../config/planos';
 import type { Plano } from '../lib/assinatura';
 
 export function Paywall({ curso, indisponivel, idioma }: { curso: string; indisponivel?: boolean; idioma?: string }) {
@@ -28,7 +28,6 @@ export function Paywall({ curso, indisponivel, idioma }: { curso: string; indisp
             <Botao variante="primary" onClick={() => assinar('mensal')} disabled={ocupado}>{ocupado ? T.abrindo : T.assinar(PRECO_MENSAL)}</Botao>
             <Botao variante="primary" onClick={() => assinar('trimestral-pix')} disabled={ocupado}>{T.trimPix(PRECO_TRIMESTRAL_PIX)}</Botao>
           </div>
-          <p className="nota">{T.exAluno(PRECO_EX_ALUNO)}</p>
           <div className="lv-hero-botoes">
             <Botao variante="ghost" onClick={() => assinar('trimestral')} disabled={ocupado}>{T.tres(PRECO_TRIMESTRAL)}</Botao>
             <Botao variante="ghost" onClick={() => assinar('anual')} disabled={ocupado}>{T.anual(PRECO_ANUAL)}</Botao>

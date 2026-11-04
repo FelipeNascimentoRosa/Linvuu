@@ -69,6 +69,9 @@
 .br-live-plans .br-plans{grid-template-columns:repeat(3,minmax(0,1fr))}
 .br-plan{background:var(--site-plano);color:var(--br-ink);border:3px solid transparent;border-radius:12px;padding:24px 18px;display:flex;flex-direction:column}
 .br-plan.selected{border-color:var(--site-selecao-borda)}
+.br-plan-destaque{border-color:var(--site-selecao-borda)}
+.br-plan-selo{align-self:flex-start;background:var(--br-green);color:var(--br-paper);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:5px 10px;border-radius:999px;margin-bottom:14px}
+.br-plan .br-plan-equiv{min-height:0;font-weight:650;color:var(--br-green)}
 .br-plan-name{font-size:14px;font-weight:700;color:var(--site-texto-plano)}
 .br-plan h3{font-size:25px;margin:16px 0}
 .br-plan p{font-size:15px;line-height:1.5;min-height:45px}

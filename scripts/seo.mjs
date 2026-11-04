@@ -44,10 +44,16 @@ for (const c of cursos.filter((x) => x.status !== 'em-breve' && x.id !== 'br' &&
 grupos.push({ p: '/curso/br', em: ['en'] }, { p: '/gramatica/br', em: ['en'] });
 const url = (c, p) => { const l = LOCALES.find((x) => x.c === c); return `${SITE}${l.p ? (p === '/' ? l.p : l.p + p) : p}`; };
 const linhas = [];
-// Sem datas por página verificáveis, omitir lastmod evita anunciar alterações que não aconteceram.
+// lastmod só com data verificável: content/lastmod.json é gerado a partir do histórico git
+// (scripts/gerar-lastmod.mjs) com a última alteração dos ficheiros-fonte de cada página.
+// URL sem data no manifesto fica sem lastmod — anunciar alterações que não aconteceram
+// faz o Google ignorar o sinal.
+const manifestoLastmod = (() => { const f = path.join(raiz, 'content', 'lastmod.json'); return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : {}; })();
 for (const g of grupos) for (const c of g.em) {
   const alt = g.em.length > 1 ? g.em.map((x) => `\n    <xhtml:link rel="alternate" hreflang="${x}" href="${url(x, g.p)}"/>`).join('') + (g.em.includes('pt-BR') ? `\n    <xhtml:link rel="alternate" hreflang="x-default" href="${url('pt-BR', g.p)}"/>` : '') : '';
-  linhas.push(`  <url><loc>${url(c, g.p)}</loc>${alt}\n  </url>`);
+  const lm = manifestoLastmod[url(c, g.p).slice(SITE.length)];
+  const data = typeof lm === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(lm) ? `\n    <lastmod>${lm}</lastmod>` : '';
+  linhas.push(`  <url><loc>${url(c, g.p)}</loc>${data}${alt}\n  </url>`);
 }
 const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${linhas.join('\n')}\n</urlset>\n`;
 fs.writeFileSync(path.join(raiz, 'public', 'sitemap.xml'), xml);
