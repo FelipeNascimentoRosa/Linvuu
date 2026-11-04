@@ -25,7 +25,7 @@ const escrever = (f, o) => { fs.mkdirSync(path.dirname(f), { recursive: true });
 // Tipos de campo: «explicacao» (sempre na língua da explicação), «misto» (opções, erros, células de tabela: podem ser do idioma
 // estudado e só mudam se houver tradução), «pronuncia» (pronúncia aproximada, feita para quem fala a língua da explicação) e «personagem».
 /** Percorre a aula e chama f(texto, tipoDoCampo, definir) para cada texto que pode ser traduzido. */
-function percorrer(aula, f) {
+export function percorrer(aula, f) {
   const campo = (obj, k, tipo) => { if (typeof obj[k] === 'string' && obj[k].trim()) f(obj[k], tipo, (v) => { obj[k] = v; }, k); };
   for (const k of ['titulo', 'objetivo', 'notasParaOAluno']) campo(aula, k, 'explicacao');
   for (const s of aula.sessoes) {
