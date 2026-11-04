@@ -21,6 +21,8 @@ import { ReportarProblema } from '../components/ReportarProblema';
 import { GUIA_SESSAO } from '../lib/comecar';
 
 const CAMADAS = ['comeceAqui', 'imersao', 'pratica'] as const;
+/** Rótulo curto do dia no título da página — mesmo formato do título servido por metaRota.ts («tema · curso · Dia N», sem sufixo de marca). */
+const DIA_ROTULO: Record<string, string> = { 'pt-BR': 'Dia', en: 'Day', es: 'Día' };
 /** No celular, o objetivo e o guia ficam recolhidos para a aula começar logo na primeira tela. */
 const telaLarga = () => typeof window === 'undefined' || window.matchMedia('(min-width: 901px)').matches;
 
@@ -62,7 +64,7 @@ export default function Dia() {
     return () => { cancelado = true; };
   }, [valido, curso, dia, bloqueado, decidindo, explicacao]);
 
-  usePageTitle(aula ? `${T.rotuloDia(dia)}: ${aula.titulo} · ${curso!.nome}` : undefined, undefined, [], !valido || !gratis(dia) || curso?.id === LOCALE.cursoOculto || !aulaTraduzida(curso?.id ?? '', Math.ceil(dia / SESSOES_POR_AULA)));
+  usePageTitle(aula ? `${aula.titulo} · ${curso!.nome} · ${DIA_ROTULO[LOCALE.codigo] ?? 'Dia'} ${dia}` : undefined, undefined, [], !valido || !gratis(dia) || curso?.id === LOCALE.cursoOculto || !aulaTraduzida(curso?.id ?? '', Math.ceil(dia / SESSOES_POR_AULA)), true);
   if (!valido) return <NaoEncontrada />;
 
 

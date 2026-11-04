@@ -22,11 +22,11 @@ const link = (rel: string, href: string, hreflang?: string) => {
  * `idiomas`: em quais idiomas a página existe (padrão: os três). As sessões passam [] porque a versão traduzida depende da
  * aula; para elas, as alternativas ficam no sitemap.xml.
  */
-export function usePageTitle(titulo?: string, descricao?: string, idiomas: CodigoLocale[] = ['pt-BR', 'en', 'es'], semIndice = false) {
+export function usePageTitle(titulo?: string, descricao?: string, idiomas: CodigoLocale[] = ['pt-BR', 'en', 'es'], semIndice = false, semMarca = false) {
   const t = useT();
   const { pathname } = useLocation();
   useEffect(() => {
-    const tit = titulo ? `${titulo} · Linvuu` : t.meta.titulo;
+    const tit = titulo ? (semMarca ? titulo : `${titulo} · Linvuu`) : t.meta.titulo;
     const desc = descricao ?? t.meta.descricao;
     const caminho = window.location.pathname.replace(/\/+$/, '') || '/';
     // Navegar da página de login/aula paga para uma amostra não pode herdar seu noindex,
@@ -47,5 +47,5 @@ export function usePageTitle(titulo?: string, descricao?: string, idiomas: Codig
       for (const l of LOCALES.filter((x) => idiomas.includes(x.codigo))) link('alternate', SITE_URL + caminhoEm(l.codigo, caminho), l.codigo);
       if (idiomas.includes('pt-BR')) link('alternate', SITE_URL + caminhoEm('pt-BR', caminho), 'x-default');
     }
-  }, [titulo, descricao, t, idiomas.join(), semIndice, pathname]);
+  }, [titulo, descricao, t, idiomas.join(), semIndice, semMarca, pathname]);
 }
