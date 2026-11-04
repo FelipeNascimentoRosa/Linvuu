@@ -10,6 +10,7 @@ import { chaveSessao, lerSessao, salvarSessao } from '../lib/progresso';
 import { somErro } from '../lib/sons';
 import { useAuth } from '../lib/AuthContext';
 import { concluirDia } from './AreaAluno';
+import Vuu from './Vuu';
 import { LOCALE, dicionario } from '../i18n';
 import { explicacaoDoCurso } from '../lib/content';
 import colunasJson from '../../content/colunas.json';
@@ -144,6 +145,10 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
     const { acertos: certos, erros } = resumirExercicios(itens, acertos);
     return (
       <div className="ex-resumo">
+        {/* Celebração ancorada (MOTION-SPEC): só neste `fim`, que é o momento em
+            que `avancar()` já registou o resumo real ({t:'fim', acertos, total})
+            na medição — nenhum critério novo de progresso é inventado aqui. */}
+        <Vuu estado="celebracao" />
         <h3>{T.acertou(certos, corrigiveis.length)}</h3>
         {erros.length > 0 && <ul>{erros.map((x, indice) => <li key={`${x.id}:${indice}`}><strong>{x.enunciado}</strong> {T.resposta} <span lang={idioma}>{x.gabarito ?? x.respostaEsperada}</span>{x.explicacao && <small> {x.explicacao}</small>}</li>)}</ul>}
         <button type="button" className="btn btn-ghost" onClick={recomecar}>{T.refazer}</button>
@@ -191,12 +196,19 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
           : <button type="button" className="btn btn-primary" onClick={avancar}>{i + 1 >= itens.length ? T.verResultado : T.proximo}</button>}
       </div>
       {res && (
-        <div className={`ex-feedback ${res}${ex.tipo === 'repeat' ? ' repita' : ''}`} role="status">
-          {res === 'ok' && <strong>{T.certo}</strong>}
-          {res === 'erro' && <strong>{T.errou} <span lang={idioma}>{ex.gabarito ?? ex.respostaEsperada}</span></strong>}
-          {res === 'livre' && ex.tipo === 'repeat' && <><strong lang={idioma}>{ex.respostaEsperada}</strong>{ex.explicacao && <span> {ex.explicacao}</span>}</>}
-          {res === 'livre' && ex.tipo !== 'repeat' && <strong>{T.compare} <span lang={idioma}>{ex.respostaEsperada}</span></strong>}
-          {ex.explicacao && res !== 'livre' && <span> {ex.explicacao}</span>}
+        <div className="ex-retorno">
+          {/* Erro gentil ancorado (MOTION-SPEC): aparece ao lado da explicação a
+              partir do 2.º erro seguido (`errosSeguidos`, a mesma contagem que já
+              atenua o som de erro) — o primeiro erro não é "castigado" com um
+              rosto preocupado, e o estado sai assim que um acerto zera a contagem. */}
+          {res === 'erro' && errosSeguidos.current >= 2 && <Vuu estado="erro-gentil" />}
+          <div className={`ex-feedback ${res}${ex.tipo === 'repeat' ? ' repita' : ''}`} role="status">
+            {res === 'ok' && <strong>{T.certo}</strong>}
+            {res === 'erro' && <strong>{T.errou} <span lang={idioma}>{ex.gabarito ?? ex.respostaEsperada}</span></strong>}
+            {res === 'livre' && ex.tipo === 'repeat' && <><strong lang={idioma}>{ex.respostaEsperada}</strong>{ex.explicacao && <span> {ex.explicacao}</span>}</>}
+            {res === 'livre' && ex.tipo !== 'repeat' && <strong>{T.compare} <span lang={idioma}>{ex.respostaEsperada}</span></strong>}
+            {ex.explicacao && res !== 'livre' && <span> {ex.explicacao}</span>}
+          </div>
         </div>
       )}
       {i <= 1 && <AvisoMedicao idioma={idioma} />}
