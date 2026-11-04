@@ -12,6 +12,32 @@ const root = path.resolve(import.meta.dirname, '..', 'content');
 const trilha = JSON.parse(fs.readFileSync(path.join(root, 'trilha.json'), 'utf8'));
 const { cursos } = JSON.parse(fs.readFileSync(path.join(root, 'cursos.json'), 'utf8'));
 const check = process.argv.includes('--check');
+
+// GUARDA (2026-11-04): nunca esvaziar um índice quando há dias traduzidos em disco sem mapa i18n por aula.
+// Os dias de content/idiomas/<id>/<l>/ são a verdade servida; os mapas (i18n/<l>/aula-NNN.json) são a única
+// fonte de que o gerador sabe derivar a disponibilidade. Se existirem mais dias em disco do que os mapas
+// implicam, a regeneração apagaria essas aulas do índice — recusa ruidosa ANTES de escrever o que quer
+// que seja, nos dois modos (geração e --check). Para repor os mapas a partir dos dias servidos:
+// node scripts/restaurar-mapas-i18n.mjs <curso> <língua>.
+{
+  const violacoes = [];
+  for (const c of cursos.filter((x) => x.area === 'idiomas')) {
+    const dirAulas = path.join(root, 'idiomas', c.id, 'aulas');
+    const fontes = fs.existsSync(dirAulas) ? fs.readdirSync(dirAulas).filter((f) => /^aula-\d+\.json$/.test(f)).map((f) => JSON.parse(fs.readFileSync(path.join(dirAulas, f), 'utf8'))) : [];
+    for (const l of LINGUAS) {
+      if (fonteDe(c.id) === l) continue;
+      const dirL = path.join(root, 'idiomas', c.id, l);
+      const emDisco = fs.existsSync(dirL) ? fs.readdirSync(dirL).filter((f) => /^dia-\d+\.json$/.test(f)).length : 0;
+      if (!emDisco) continue;
+      const implicados = fontes.reduce((n, a) => n + (aulaTemTraducao(c.id, l, a.aula) ? a.sessoes.length : 0), 0);
+      if (emDisco > implicados) violacoes.push(`${c.id}/${l}: ${emDisco} dias traduzidos em disco, mas os mapas i18n só implicam ${implicados}`);
+    }
+  }
+  if (violacoes.length) {
+    console.error(`GUARDA conteudo.mjs — regeneração recusada para não esvaziar índices:\n${violacoes.join('\n')}\nHá traduções servidas sem mapa por aula em content/idiomas/<curso>/i18n/<língua>/. Reponha os mapas (scripts/restaurar-mapas-i18n.mjs) ou remova a pasta de dias deliberadamente. Nada foi escrito.`);
+    process.exit(1);
+  }
+}
 const STATUS = ['planejada', 'em-producao', 'publicada'];
 const pad = (n) => String(n).padStart(3, '0');
 const erros = [];
