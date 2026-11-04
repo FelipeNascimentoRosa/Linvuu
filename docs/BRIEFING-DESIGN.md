@@ -17,7 +17,7 @@ Tipografia: Newsreader (serifada, títulos, peso 600, tracking levemente negativ
 
 Elemento de assinatura: uma barra de progresso desenhada à mão, em traço riscado de caneta, que começa curta e cresce. Ela representa evolução e mudança de vida. Deve parecer feita por uma pessoa, com leve irregularidade, nunca perfeita nem vetorial fria.
 
-Regras: visual editorial, quiet luxury, grid rigoroso, muito espaço em branco. Proibido: gradiente roxo/azul, ilustração 3D ou Corporate Memphis, mascotes, bandeiras e símbolos turísticos (matrioska, castelo, torre), fontes de sistema, aparência de template de IA. Fotografia, se usada, deve ser real e de cultura ou cotidiano, nunca stock sorridente.
+Regras: visual editorial, quiet luxury, grid rigoroso, muito espaço em branco. Proibido: gradiente roxo/azul, ilustração 3D ou Corporate Memphis, bandeiras e símbolos turísticos (matrioska, castelo, torre), fontes de sistema, aparência de template de IA. O mascote (Vuu) pode protagonizar peças de marketing e de conteúdo e áreas de produto, sempre a 96 px ou mais; logotipo, avatar, favicon e identidade legal e de rodapé continuam a ser o símbolo L, sem mascote. Fotografia, se usada, deve ser real e de cultura ou cotidiano, nunca stock sorridente.
 
 Tom: confiante, culto e direto. Nada de texto de vendedor de curso. Não afirmar nada que o produto não entrega (sem "professores nativos", "oficial", "garantido").
 ```
