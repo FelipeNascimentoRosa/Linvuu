@@ -39,6 +39,8 @@ try {
   const csp = h('content-security-policy');
   ok(csp.includes("default-src 'self'") && csp.includes("object-src 'none'") && csp.includes("frame-ancestors 'none'"), 'CSP com default-src, object-src e frame-ancestors');
   ok(!/script-src[^;]*unsafe-(inline|eval)/.test(csp), 'CSP sem unsafe-inline/unsafe-eval em scripts');
+  ok(!/style-src [^;]*unsafe-inline/.test(csp), 'CSP sem unsafe-inline em style-src (elementos de estilo)');
+  ok(/style-src-elem[^;]*sha256-/.test(csp) && /style-src-attr[^;]*unsafe-inline/.test(csp), 'CSP isola estilos: hash em style-src-elem e atributos em style-src-attr');
   ok(/script-src[^;]*https:\/\/connect\.facebook\.net/.test(csp) && /img-src[^;]*https:\/\/www\.facebook\.com/.test(csp) && /connect-src[^;]*https:\/\/www\.facebook\.com/.test(csp), 'CSP permite os domínios necessários ao pixel da Meta');
   ok(/script-src[^;]*https:\/\/analytics\.tiktok\.com/.test(csp) && /img-src[^;]*https:\/\/analytics\.tiktok\.com/.test(csp) && /connect-src[^;]*https:\/\/analytics\.tiktok\.com/.test(csp) && /connect-src[^;]*https:\/\/analytics-ipv6\.tiktokw\.us/.test(csp), 'CSP permite os domínios necessários ao pixel do TikTok');
   ok(!/<script(?![^>]*(type="module"|application\/ld\+json))[^>]*>[^<]/.test(await (await fetch(base + '/portugues')).text()), 'HTML sem script inline executável');

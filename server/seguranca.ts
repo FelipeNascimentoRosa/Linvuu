@@ -8,7 +8,9 @@ export function politicaCSP(extraMidia = ''): string {
   const d: Record<string, string[]> = {
     'default-src': ["'self'"],
     'script-src': ["'self'", 'https://apis.google.com', 'https://connect.facebook.net', 'https://analytics.tiktok.com'],
-    'style-src': ["'self'", "'unsafe-inline'"], // React usa style="" em alguns componentes
+    'style-src': ["'self'", "'sha256-4kzgBy+zsz5Dss9Gwj059V7MYYUJ3GYIpRQcTylPB9k='"], // fallback sem unsafe-inline: so o bloco anti-CLS do index.html, por hash
+    'style-src-elem': ["'self'", "'sha256-4kzgBy+zsz5Dss9Gwj059V7MYYUJ3GYIpRQcTylPB9k='"], // elementos <style>: so o bloco anti-CLS do index.html
+    'style-src-attr': ["'unsafe-inline'"], // atributos style="" do React (21 usos); nao carregam recursos externos
     'img-src': ["'self'", 'data:', 'blob:', 'https://*.googleusercontent.com', 'https://www.facebook.com', 'https://analytics.tiktok.com'],
     'media-src': ["'self'", 'blob:', 'data:', ...(extraMidia ? [extraMidia] : [])],
     'font-src': ["'self'", 'data:'],
