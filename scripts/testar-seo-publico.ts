@@ -42,7 +42,10 @@ assert.ok(!html('/assinatura').includes(PLANOS_AVISO), 'planos em preparação n
 assert.ok(html('/assinatura').includes('Testar 2 aulas grátis, sem cartão'));
 assert.ok(html('/assinatura').includes('R$ 291,90'));
 assert.ok(!html('/assinatura').includes('Alguns áudios podem estar temporariamente indisponíveis'));
-for (const rota of ['/entrar', '/cadastro', '/en/assinatura', '/es/assinatura']) assert.ok(html(rota).includes('name="robots" content="noindex"'));
+for (const rota of ['/entrar', '/cadastro']) assert.ok(html(rota).includes('name="robots" content="noindex"'));
+// As versões EN/ES da assinatura são páginas localizadas genuínas e indexáveis — os alternates
+// hreflang da página de preços não podem apontar para páginas noindex (defeito S2 da auditoria).
+for (const rota of ['/en/assinatura', '/es/assinatura']) assert.ok(!html(rota).includes('name="robots" content="noindex"'), `${rota} indexável`);
 assert.equal(metaDaRota('/pagina-inexistente-auditoria', dados).status, 404);
 assert.ok(!html('/curso/en/dia/9').includes('\"isAccessibleForFree\":true'));
 assert.ok(!html('/curso/en/dia/9').includes('<h2>Vocabulário</h2>'));
