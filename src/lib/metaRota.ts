@@ -135,7 +135,9 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     '/entrar': { titulo: tx.entrar, semIndice: true },
     '/cadastro': { titulo: tx.cadastro, semIndice: true },
     '/livro/gramatica-ru': { titulo: 'Gramática russa A1–A2', semIndice: true },
-    '/assinatura': loc.codigo === 'pt-BR' ? { titulo: 'Planos e assinatura', descricao: 'Aprenda idiomas com a Linvuu: planos mensal, trimestral com 30% OFF no Pix e anual. Experimente duas aulas grátis, sem cartão.' } : { titulo: tx.assinatura, semIndice: true },
+    // A página de preços existe de verdade nos três idiomas (renderização localizada genuína, verificada ao vivo):
+    // indexável nas três, para os alternates hreflang da versão PT não apontarem para páginas noindex.
+    '/assinatura': loc.codigo === 'pt-BR' ? { titulo: 'Planos e assinatura', descricao: 'Aprenda idiomas com a Linvuu: planos mensal, trimestral com 30% OFF no Pix e anual. Experimente duas aulas grátis, sem cartão.' } : loc.codigo === 'en' ? { titulo: tx.assinatura, descricao: 'Learn languages with Linvuu: monthly, quarterly (30% off with Pix) and annual plans. Try two free lessons, no card required.' } : { titulo: tx.assinatura, descricao: 'Aprende idiomas con Linvuu: planes mensual, trimestral con 30 % de descuento con Pix y anual. Prueba dos clases gratis, sin tarjeta.' },
     '/privacidade': { titulo: tx.priv, descricao: tx.privD },
     '/termos': { titulo: tx.termos, descricao: tx.termosD },
     '/excluir-conta': { titulo: EXCLUSAO[loc.codigo].titulo, descricao: EXCLUSAO[loc.codigo].descricao },
@@ -212,8 +214,11 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     const fonteGram = d.indice[c.id]?.fonte ?? 'pt';
     const temGram = fonteGram === loc.explicacao || (!!d.raiz && fs.existsSync(path.join(d.raiz, 'content', 'gramatica', `${c.id}.${loc.explicacao}.json`)));
     const descGram = tx.gramD(c.nome, LINGUAS[loc.codigo][temGram ? loc.explicacao : fonteGram] ?? '');
+    // Alternates só para os públicos a quem o curso é oferecido (mesma regra da página do curso):
+    // a gramática de uma língua explicada ao próprio público dela não é uma versão de idioma —
+    // declarar esse alternate apontava para a página gémea marcada noindex.
     return {
-      status: 200, caminho: p, titulo: tx.gramC(c.nome), descricao: descGram, semIndice: c.id === loc.cursoOculto || c.status === 'em-breve' || undefined,
+      status: 200, caminho: p, titulo: tx.gramC(c.nome), descricao: descGram, semIndice: c.id === loc.cursoOculto || c.status === 'em-breve' || undefined, em: LOCALES.filter((l) => l.cursoOculto !== c.id).map((l) => l.codigo),
       jsonld: [
         // A página de gramática é o recurso de referência do curso: tópicos e tabelas cuja descrição nomeia a língua real das explicações.
         { '@context': 'https://schema.org', '@type': 'LearningResource', name: tx.gramC(c.nome), description: descGram, url, inLanguage: loc.codigo, learningResourceType: 'Grammar reference', teaches: c.nome, isPartOf: { '@type': 'Course', name: tx.cursoJ(c.nome), url: cursoUrl }, provider: { '@id': ORG_ID } },
@@ -386,9 +391,14 @@ export function aplicarMeta(html: string, m: MetaRota, site: string, d: DadosMet
   troca(/(<meta property="og:locale" content=")[^"]*(")/, loc.og);
   troca(/(<meta property="og:url" content=")[^"]*(")/, url);
   troca(/(<link rel="canonical" href=")[^"]*(")/, url);
-  // uma versão por idioma + x-default (português)
+  // uma versão por idioma + x-default: a versão em português quando faz parte do cluster;
+  // sem ela (o curso de português para estrangeiros não existe em PT), a versão no idioma-fonte do conteúdo.
   const em = m.semIndice ? [] : LOCALES.filter((l) => !m.em || m.em.includes(l.codigo));
-  const alternativos = em.length > 1 ? [...em.map((l) => `<link rel="alternate" hreflang="${l.codigo}" href="${esc(site + caminhoEm(l.codigo, m.caminho))}" />`), ...(em.some((l) => l.codigo === 'pt-BR') ? [`<link rel="alternate" hreflang="x-default" href="${esc(site + caminhoEm('pt-BR', m.caminho))}" />`] : [])].join('\n    ') : '';
+  const idCurso = semPrefixo(m.caminho).match(/^\/(?:curso|gramatica)\/([a-z]{2})/)?.[1];
+  const fonte = idCurso ? d?.indice?.[idCurso]?.fonte : undefined;
+  const codigoFonte = fonte === 'pt' ? 'pt-BR' : fonte;
+  const padrao = em.find((l) => l.codigo === 'pt-BR') ?? em.find((l) => l.codigo === codigoFonte) ?? em[0];
+  const alternativos = em.length > 1 ? [...em.map((l) => `<link rel="alternate" hreflang="${l.codigo}" href="${esc(site + caminhoEm(l.codigo, m.caminho))}" />`), `<link rel="alternate" hreflang="x-default" href="${esc(site + caminhoEm(padrao.codigo, m.caminho))}" />`].join('\n    ') : '';
   out = out.replace(/<link rel="alternate" hreflang="pt-BR" href="[^"]*" \/>/, () => alternativos);
   troca(/(<meta name="twitter:card" content=")[^"]*(")/, 'summary_large_image');
   const twitterTitle = esc(`${m.titulo ?? 'Linvuu'} · Linvuu`);
