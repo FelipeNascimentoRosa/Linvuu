@@ -77,6 +77,18 @@ export function traduzirAula(aula, id, l) {
     if (typeof v === 'string' && v.length) { definir(v); return; }
     if (tipo === 'explicacao') faltam.push(t);
   });
+  // Overrides por exercício permitem adaptar enunciados idênticos a contextos distintos.
+  for (const sessao of copia.sessoes) for (const bloco of sessao.blocos) {
+    if (bloco.tipo !== 'exercicios') continue;
+    for (const item of bloco.itens) {
+      const raw = mapa[`@exercicio:${item.id}`];
+      if (!raw) continue;
+      const override = JSON.parse(raw);
+      for (const campo of ['enunciado', 'explicacao', 'opcoes', 'gabarito']) {
+        if (Object.hasOwn(override, campo)) item[campo] = override[campo];
+      }
+    }
+  }
   // Palavras: o inglês já existe no dado (`en`) nos cursos de russo e alemão.
   if (l === 'en') for (const s of copia.sessoes) for (const b of s.blocos) if (b.tipo === 'palavras' || b.tipo === 'vocabulario') b.itens.forEach((i, k) => {
     const original = aula.sessoes[copia.sessoes.indexOf(s)].blocos[s.blocos.indexOf(b)].itens[k].pt;
