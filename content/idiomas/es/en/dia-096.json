@@ -1,0 +1,512 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 96,
+  "fase": 10,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Indirect object pronouns: Review and practice of lesson 24",
+  "objetivo": "Lesson 24, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 24,
+    "titulo": "Indirect object pronouns",
+    "objetivo": "Use indirect object pronouns (me, te, le, nos, os, les) with verbs like dar, decir, escribir, regalar, prestar, and preguntar, distinguish the direct object from the indirect object, and avoid false friends like «apellido», «pegar», «prestar», and «regalar».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 24",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Le di un regalo",
+            "opcoes": [
+              "[misto] Le di un regalo",
+              "[misto] Les di un regalo",
+              "[misto] Me di un regalo"
+            ],
+            "gabarito": "[misto] Le di un regalo",
+            "explicacao": "«Le» is singular; «les» would be plural.",
+            "id": "es-024-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Les escribimos ayer",
+            "opcoes": [
+              "[misto] Les escribimos ayer",
+              "[misto] Le escribimos ayer",
+              "[misto] Nos escribimos ayer"
+            ],
+            "gabarito": "[misto] Les escribimos ayer",
+            "explicacao": "Listen for the final «s» of «les», which marks the plural.",
+            "id": "es-024-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Te cuento una cosa",
+            "opcoes": [
+              "[misto] Te cuento una cosa",
+              "[misto] Me cuento una cosa",
+              "[misto] Se cuenta una cosa"
+            ],
+            "gabarito": "[misto] Te cuento una cosa",
+            "explicacao": "«Te» is the person being told something.",
+            "id": "es-024-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Le pregunté su apellido",
+            "respostaEsperada": "Le pregunté su apellido",
+            "explicacao": "Write: Le pregunté su apellido. «Preguntar» takes «le».",
+            "id": "es-024-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Nos mandaron una invitación",
+            "respostaEsperada": "Nos mandaron una invitación",
+            "explicacao": "Write: Nos mandaron una invitación. «Nos» comes before the verb.",
+            "id": "es-024-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «We could ask her brother. He knows her really well.»",
+            "opcoes": [
+              "Podemos",
+              "a",
+              "su",
+              "conoce",
+              "la",
+              "hermano.",
+              "bien.",
+              "muy",
+              "preguntarle",
+              "Él"
+            ],
+            "gabarito": "Podemos preguntarle a su hermano. Él la conoce muy bien.",
+            "explicacao": "Write: Podemos preguntarle a su hermano. Él la conoce muy bien.",
+            "id": "es-024-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "¿Me prestas tu cargador?",
+            "respostaEsperada": "¿Me prestas tu cargador?",
+            "explicacao": "Write: ¿Me prestas tu cargador? The «me» marks who's asking.",
+            "id": "es-024-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Mateo, ¿qué le regalamos a Marta para su cumpleaños?",
+            "respostaEsperada": "Mateo, ¿qué le regalamos a Marta para su cumpleaños?",
+            "explicacao": "Mateo, what should we give Marta for her birthday?",
+            "id": "es-024-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I told her»?",
+            "opcoes": [
+              "[misto] Le dije.",
+              "[misto] La dije.",
+              "[misto] Les dije."
+            ],
+            "gabarito": "[misto] Le dije.",
+            "explicacao": "Singular indirect object: «le».",
+            "id": "es-024-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I wrote to my parents»?",
+            "opcoes": [
+              "[misto] Les escribí a mis padres.",
+              "[misto] Le escribí a mis padres.",
+              "[misto] Los escribí a mis padres."
+            ],
+            "gabarito": "[misto] Les escribí a mis padres.",
+            "explicacao": "Plural: «les».",
+            "id": "es-024-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "[misto] Les di el libro a mis amigos.",
+              "[misto] Lo di el libro a mis amigos.",
+              "[misto] Di-les el libro a mis amigos."
+            ],
+            "gabarito": "[misto] Les di el libro a mis amigos.",
+            "explicacao": "Plural indirect object, before the verb, no hyphen.",
+            "id": "es-024-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Podemos preguntarle a su hermano. Él la conoce muy bien.",
+            "respostaEsperada": "Podemos preguntarle a su hermano. Él la conoce muy bien.",
+            "explicacao": "We could ask her brother. He knows her really well.",
+            "id": "es-024-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «apellido» mean?",
+            "opcoes": [
+              "[misto] last name",
+              "[misto] nickname",
+              "[misto] first name"
+            ],
+            "gabarito": "[misto] last name",
+            "explicacao": "The nickname is «apodo».",
+            "id": "es-024-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «nickname» (informal name)?",
+            "opcoes": [
+              "[misto] apodo",
+              "[misto] apellido",
+              "[misto] nombre"
+            ],
+            "gabarito": "[misto] apodo",
+            "explicacao": "«Apodo» is the nickname; «apellido» is the last name.",
+            "id": "es-024-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «prestar» mean?",
+            "opcoes": [
+              "to lend",
+              "to borrow",
+              "[misto] to render a service"
+            ],
+            "gabarito": "to lend",
+            "explicacao": "To borrow is «pedir prestado».",
+            "id": "es-024-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Buena idea. Voy a escribirle un mensaje ahora.",
+            "respostaEsperada": "Buena idea. Voy a escribirle un mensaje ahora.",
+            "explicacao": "Good idea. I'll write him a message right now.",
+            "id": "es-024-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «Le pegó a su hermano» mean?",
+            "opcoes": [
+              "[misto] He hit his brother.",
+              "[misto] He caught his brother.",
+              "[misto] He gave his brother a gift."
+            ],
+            "gabarito": "[misto] He hit his brother.",
+            "explicacao": "«Pegar» means to hit or to glue.",
+            "id": "es-024-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «el apellido» mean?",
+            "audio": "el apellido",
+            "opcoes": [
+              "the scarf",
+              "to offer",
+              "the last name, surname",
+              "to give back, to return"
+            ],
+            "gabarito": "the last name, surname",
+            "explicacao": "«el apellido» = the last name.",
+            "id": "es-024-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ escribo a mi madre cada semana. (her)",
+            "opcoes": [
+              "[misto] Le",
+              "[misto] La",
+              "[misto] Lo"
+            ],
+            "gabarito": "[misto] Le",
+            "explicacao": "Third-person singular indirect object.",
+            "id": "es-024-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "A mis padres ___ mando una carta.",
+            "opcoes": [
+              "[misto] les",
+              "[misto] los",
+              "[misto] le"
+            ],
+            "gabarito": "[misto] les",
+            "explicacao": "Plural indirect: «les».",
+            "id": "es-024-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "¿___ prestas tu paraguas? (me)",
+            "opcoes": [
+              "[misto] Me",
+              "[misto] Te",
+              "[misto] Se"
+            ],
+            "gabarito": "[misto] Me",
+            "explicacao": "The person asking is «me».",
+            "id": "es-024-e16"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ella ___ dijo la verdad. (us)",
+            "opcoes": [
+              "[misto] nos",
+              "[misto] nosotros",
+              "[misto] les"
+            ],
+            "gabarito": "[misto] nos",
+            "explicacao": "The unstressed pronoun for «nosotros» is «nos».",
+            "id": "es-024-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «explicar» mean?",
+            "audio": "explicar",
+            "opcoes": [
+              "the birthday",
+              "to give back, to return",
+              "to explain",
+              "the scarf"
+            ],
+            "gabarito": "to explain",
+            "explicacao": "«explicar» = to explain.",
+            "id": "es-024-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Quiero ___ un regalo a Ana.",
+            "opcoes": [
+              "[misto] darle",
+              "[misto] darla",
+              "[misto] dar la"
+            ],
+            "gabarito": "[misto] darle",
+            "explicacao": "The indirect pronoun attaches to the infinitive: «darle».",
+            "id": "es-024-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Y a sus padres, ¿les decimos algo?",
+            "respostaEsperada": "Y a sus padres, ¿les decimos algo?",
+            "explicacao": "And should we tell her parents something?",
+            "id": "es-024-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Le escribí una carta.»",
+            "opcoes": [
+              "Le",
+              "escribí",
+              "una",
+              "carta."
+            ],
+            "gabarito": "Le escribí una carta.",
+            "explicacao": "Pronoun, verb, and direct object.",
+            "id": "es-024-e19"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Les mandamos una invitación.»",
+            "opcoes": [
+              "Les",
+              "mandamos",
+              "una",
+              "invitación."
+            ],
+            "gabarito": "Les mandamos una invitación.",
+            "explicacao": "Plural pronoun before the verb.",
+            "id": "es-024-e20"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I told her the truth.",
+            "respostaEsperada": "[misto] Le dije la verdad.",
+            "id": "es-024-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «mostrar» mean?",
+            "audio": "mostrar",
+            "opcoes": [
+              "to borrow",
+              "the last name, surname",
+              "to explain",
+              "to show"
+            ],
+            "gabarito": "to show",
+            "explicacao": "«mostrar» = to show.",
+            "id": "es-024-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Le ___ un regalo a mi madre. (dar, yo)",
+            "opcoes": [
+              "[misto] doy",
+              "[misto] das",
+              "[misto] da"
+            ],
+            "gabarito": "[misto] doy",
+            "explicacao": "In «yo», «dar» becomes «doy».",
+            "id": "es-024-e22"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ mando una carta a mis abuelos. (them)",
+            "opcoes": [
+              "[misto] Le",
+              "[misto] Les",
+              "[misto] Los"
+            ],
+            "gabarito": "[misto] Les",
+            "explicacao": "For «a ellos», the indirect object is «les».",
+            "id": "es-024-e23"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "A Marta ___ explico la lección.",
+            "opcoes": [
+              "[misto] les",
+              "[misto] la",
+              "[misto] le"
+            ],
+            "gabarito": "[misto] le",
+            "explicacao": "For «a ella», the indirect object is «le».",
+            "id": "es-024-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Perfecto. Entonces mañana compramos el regalo juntos.",
+            "respostaEsperada": "Perfecto. Entonces mañana compramos el regalo juntos.",
+            "explicacao": "Perfect. Then tomorrow we'll buy the gift together.",
+            "id": "es-024-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ella ___ preguntó mi nombre. (me)",
+            "opcoes": [
+              "[misto] le",
+              "[misto] te",
+              "[misto] me"
+            ],
+            "gabarito": "[misto] me",
+            "explicacao": "For «a mí», the indirect object is «me».",
+            "id": "es-024-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «pedir prestado» mean?",
+            "audio": "pedir prestado",
+            "opcoes": [
+              "to borrow",
+              "to give back, to return",
+              "to show",
+              "the nickname (informal name)"
+            ],
+            "gabarito": "to borrow",
+            "explicacao": "«pedir prestado» = to borrow.",
+            "id": "es-024-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «He told me something»?",
+            "opcoes": [
+              "[misto] Me contó una cosa.",
+              "[misto] Lo contó una cosa.",
+              "[misto] Contó me una cosa."
+            ],
+            "gabarito": "[misto] Me contó una cosa.",
+            "explicacao": "The pronoun comes before the conjugated verb.",
+            "id": "es-024-e26"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which phrase means «to borrow»?",
+            "opcoes": [
+              "[misto] prestar",
+              "to give back, to return",
+              "[misto] pedir prestado"
+            ],
+            "gabarito": "[misto] pedir prestado",
+            "explicacao": "«Prestar» means to lend; to borrow is «pedir prestado».",
+            "id": "es-024-e27"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence uses the right pronoun for «a eles»?",
+            "opcoes": [
+              "[misto] Le escribo.",
+              "[misto] Les escribo.",
+              "[misto] Los escribo."
+            ],
+            "gabarito": "[misto] Les escribo.",
+            "explicacao": "Writing is something you do to someone: indirect object «les».",
+            "id": "es-024-e28"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Le regalé un libro a Marta.»",
+            "opcoes": [
+              "Le",
+              "regalé",
+              "un",
+              "libro",
+              "a",
+              "Marta."
+            ],
+            "gabarito": "Le regalé un libro a Marta.",
+            "explicacao": "The «le» echoes «a Marta».",
+            "id": "es-024-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I told him/her the truth.",
+            "respostaEsperada": "[misto] Le dije la verdad.",
+            "id": "es-024-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Tell a friend out loud what you asked for, said, and gave to different people this week, without repeating the names."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say out loud what you said and gave to three people yesterday, using «le» and «les» without repeating the name."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-024.json",
+  "responsavel": null
+}

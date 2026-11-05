@@ -1,0 +1,542 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 88,
+  "fase": 9,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Indefinido × imperfecto: Review and practice of lesson 22",
+  "objetivo": "Lesson 22, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 22,
+    "titulo": "Indefinido × imperfecto",
+    "objetivo": "Choose between the pretérito indefinido and the imperfecto when telling a story: the imperfecto sets the scene, the indefinido moves the story forward, and the same verb can shift meaning (sabía × supe, conocía × conocí, quería × quise). Learn «había» and «hubo», and the difference between «salir de» and «irse».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 22",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Dormía cuando sonó el teléfono",
+            "opcoes": [
+              "[misto] Dormía cuando sonó el teléfono",
+              "[misto] Dormí cuando sonaba el teléfono",
+              "[misto] Duermo cuando suena el teléfono"
+            ],
+            "gabarito": "[misto] Dormía cuando sonó el teléfono",
+            "explicacao": "The ongoing action (dormía) gets interrupted by the event (sonó).",
+            "id": "es-022-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Hacía frío y llovía",
+            "opcoes": [
+              "[misto] Hacía frío y llovía",
+              "[misto] Hizo frío y llovió",
+              "[misto] Hace frío y llueve"
+            ],
+            "gabarito": "[misto] Hacía frío y llovía",
+            "explicacao": "Weather as the backdrop goes in the imperfecto.",
+            "id": "es-022-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ayer conocí a tu hermana",
+            "opcoes": [
+              "[misto] Ayer conocí a tu hermana",
+              "[misto] Ayer conocía a tu hermana",
+              "[misto] Ayer conoce a tu hermana"
+            ],
+            "gabarito": "[misto] Ayer conocí a tu hermana",
+            "explicacao": "«Conocí» means I met someone for the first time.",
+            "id": "es-022-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «perder» mean?",
+            "audio": "perder",
+            "opcoes": [
+              "there was, there were (a specific event)",
+              "suddenly",
+              "that day",
+              "to lose, to miss"
+            ],
+            "gabarito": "to lose, to miss",
+            "explicacao": "«perder» = to lose, to miss.",
+            "id": "es-022-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "De repente sonó el teléfono",
+            "respostaEsperada": "De repente sonó el teléfono",
+            "explicacao": "Write: De repente sonó el teléfono. «Sonó» carries an accent.",
+            "id": "es-022-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Era tarde y llovía mucho",
+            "respostaEsperada": "Era tarde y llovía mucho",
+            "explicacao": "Write: Era tarde y llovía mucho. Two descriptions of the setting.",
+            "id": "es-022-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «sonar» mean?",
+            "audio": "sonar",
+            "opcoes": [
+              "to ring",
+              "the accident",
+              "to lose, to miss",
+              "suddenly"
+            ],
+            "gabarito": "to ring",
+            "explicacao": "«sonar» = to ring.",
+            "id": "es-022-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Hubo un accidente en la plaza",
+            "respostaEsperada": "Hubo un accidente en la plaza",
+            "explicacao": "Write: Hubo un accidente en la plaza. «Hubo» is invariable.",
+            "id": "es-022-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence tells a single, finished event?",
+            "opcoes": [
+              "[misto] Ayer fui al cine.",
+              "[misto] Antes iba al cine.",
+              "[misto] Siempre iba al cine."
+            ],
+            "gabarito": "[misto] Ayer fui al cine.",
+            "explicacao": "«Ayer» signals a closed moment: indefinido.",
+            "id": "es-022-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence describes a past habit?",
+            "opcoes": [
+              "[misto] De niño jugaba en la calle.",
+              "[misto] Ayer jugué en la calle.",
+              "[misto] De repente jugó en la calle."
+            ],
+            "gabarito": "[misto] De niño jugaba en la calle.",
+            "explicacao": "«De niño» calls for the imperfecto.",
+            "id": "es-022-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «el accidente» mean?",
+            "audio": "el accidente",
+            "opcoes": [
+              "to leave, to go away",
+              "that day",
+              "to rain",
+              "the accident"
+            ],
+            "gabarito": "the accident",
+            "explicacao": "«el accidente» = the accident.",
+            "id": "es-022-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «Supe la noticia» mean?",
+            "opcoes": [
+              "[misto] I found out the news.",
+              "[misto] I already knew the news.",
+              "[misto] I refused to know the news."
+            ],
+            "gabarito": "[misto] I found out the news.",
+            "explicacao": "In the indefinido, «saber» marks the moment something was found out.",
+            "id": "es-022-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «Había mucha gente» mean?",
+            "opcoes": [
+              "[misto] There were a lot of people (setting).",
+              "[misto] There was a crowd incident (event).",
+              "[misto] There are a lot of people right now."
+            ],
+            "gabarito": "[misto] There were a lot of people (setting).",
+            "explicacao": "«Había» describes; «hubo» reports an event.",
+            "id": "es-022-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «There was an accident»?",
+            "opcoes": [
+              "[misto] Hubo un accidente.",
+              "[misto] Había un accidente.",
+              "[misto] Hubieron un accidente."
+            ],
+            "gabarito": "[misto] Hubo un accidente.",
+            "explicacao": "«Hubo» is invariable and reports an event.",
+            "id": "es-022-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «aquel día» mean?",
+            "audio": "aquel día",
+            "opcoes": [
+              "that day",
+              "to lose, to miss",
+              "the accident",
+              "to rain"
+            ],
+            "gabarito": "that day",
+            "explicacao": "«aquel día» = that day.",
+            "id": "es-022-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «to go away, to leave»?",
+            "opcoes": [
+              "[misto] irse",
+              "[misto] salirse",
+              "[misto] ir fuera"
+            ],
+            "gabarito": "[misto] irse",
+            "explicacao": "«Irse» means to go away; «salir de» means to leave a place.",
+            "id": "es-022-e12"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «No quise ir» mean?",
+            "opcoes": [
+              "[misto] I refused to go.",
+              "[misto] I wasn't able to go.",
+              "[misto] I didn't know how to go."
+            ],
+            "gabarito": "[misto] I refused to go.",
+            "explicacao": "In the indefinido, «no quise» signals a refusal.",
+            "id": "es-022-e13"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Cuando llegué, mis amigos ___. (cenar)",
+            "opcoes": [
+              "[misto] cenaban",
+              "[misto] cenaron",
+              "[misto] cenan"
+            ],
+            "gabarito": "[misto] cenaban",
+            "explicacao": "They were already in progress when I arrived: imperfecto.",
+            "id": "es-022-e14"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «la parada» mean?",
+            "audio": "la parada",
+            "opcoes": [
+              "to ring",
+              "the (bus) stop",
+              "when",
+              "suddenly"
+            ],
+            "gabarito": "the (bus) stop",
+            "explicacao": "«la parada» = the (bus) stop.",
+            "id": "es-022-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ayer ___ al cine. (ir)",
+            "opcoes": [
+              "[misto] fui",
+              "[misto] iba",
+              "[misto] voy"
+            ],
+            "gabarito": "[misto] fui",
+            "explicacao": "«Ayer» calls for the indefinido.",
+            "id": "es-022-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "De niño ___ al pueblo cada verano. (ir)",
+            "opcoes": [
+              "[misto] iba",
+              "[misto] fui",
+              "[misto] fue"
+            ],
+            "gabarito": "[misto] iba",
+            "explicacao": "A past habit: imperfecto.",
+            "id": "es-022-e16"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «cuando» mean?",
+            "audio": "cuando",
+            "opcoes": [
+              "there was, there were (a specific event)",
+              "to leave, to go away",
+              "to wait",
+              "when"
+            ],
+            "gabarito": "when",
+            "explicacao": "«cuando» = when.",
+            "id": "es-022-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "De repente, ___ el teléfono. (sonar)",
+            "opcoes": [
+              "[misto] sonó",
+              "[misto] sonaba",
+              "[misto] suena"
+            ],
+            "gabarito": "[misto] sonó",
+            "explicacao": "«De repente» marks a single event.",
+            "id": "es-022-e17"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Eran las tres y ___ mucho. (llover)",
+            "opcoes": [
+              "[misto] llovía",
+              "[misto] llovió",
+              "[misto] llueve"
+            ],
+            "gabarito": "[misto] llovía",
+            "explicacao": "Weather as the setting goes in the imperfecto.",
+            "id": "es-022-e18"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Dormía cuando sonó el teléfono.»",
+            "opcoes": [
+              "Dormía",
+              "cuando",
+              "sonó",
+              "el",
+              "teléfono."
+            ],
+            "gabarito": "Dormía cuando sonó el teléfono.",
+            "explicacao": "The ongoing action, «cuando», and the interruption.",
+            "id": "es-022-e19"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Hacía frío y llovía",
+            "opcoes": [
+              "y",
+              "llovía",
+              "Hacía",
+              "frío"
+            ],
+            "gabarito": "Hacía frío y llovía",
+            "explicacao": "Write: Hacía frío y llovía",
+            "id": "es-022-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «De repente llegó Marta.»",
+            "opcoes": [
+              "De",
+              "repente",
+              "llegó",
+              "Marta."
+            ],
+            "gabarito": "De repente llegó Marta.",
+            "explicacao": "The single-event marker, then the verb in the indefinido.",
+            "id": "es-022-e20"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I was sleeping when the phone rang.",
+            "respostaEsperada": "[misto] Dormía cuando sonó el teléfono.",
+            "id": "es-022-e21"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Eran las ocho y ___ frío. (was)",
+            "opcoes": [
+              "[misto] hizo",
+              "[misto] hacía",
+              "[misto] hace"
+            ],
+            "gabarito": "[misto] hacía",
+            "explicacao": "The setting's weather stays in the imperfecto: «hacía frío».",
+            "id": "es-022-e22"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Ayer conocí a tu hermana",
+            "opcoes": [
+              "a",
+              "tu",
+              "hermana",
+              "Ayer",
+              "conocí"
+            ],
+            "gabarito": "Ayer conocí a tu hermana",
+            "explicacao": "Write: Ayer conocí a tu hermana",
+            "id": "es-022-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Esperaba el autobús cuando ___ mi amigo. (llegar)",
+            "opcoes": [
+              "[misto] llegaba",
+              "[misto] llegar",
+              "[misto] llegó"
+            ],
+            "gabarito": "[misto] llegó",
+            "explicacao": "The event that interrupts the scene goes in the indefinido: «llegó».",
+            "id": "es-022-e23"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Antes ___ muchas tiendas aquí. (there were)",
+            "opcoes": [
+              "[misto] hubo",
+              "[misto] había",
+              "[misto] habían"
+            ],
+            "gabarito": "[misto] había",
+            "explicacao": "Existence as a setting: «había»; «haber» stays singular.",
+            "id": "es-022-e24"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Aquel día yo ___ prisa. (I was in)",
+            "opcoes": [
+              "[misto] tuve",
+              "[misto] tenía",
+              "[misto] tengo"
+            ],
+            "gabarito": "[misto] tenía",
+            "explicacao": "A background state in the past: imperfecto.",
+            "id": "es-022-e25"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "De repente sonó el teléfono",
+            "opcoes": [
+              "De",
+              "el",
+              "repente",
+              "sonó",
+              "teléfono"
+            ],
+            "gabarito": "De repente sonó el teléfono",
+            "explicacao": "Write: De repente sonó el teléfono",
+            "id": "es-022-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which connector marks a consequence?",
+            "opcoes": [
+              "[pronuncia] al fee-NAL",
+              "suddenly",
+              "[misto] por eso"
+            ],
+            "gabarito": "[misto] por eso",
+            "explicacao": "«Por eso» links the cause to the consequence.",
+            "id": "es-022-e26"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence sets the scene (with no marked start or end)?",
+            "opcoes": [
+              "[misto] Llovía mucho.",
+              "[misto] Llovió mucho.",
+              "[misto] Va a llover mucho."
+            ],
+            "gabarito": "[misto] Llovía mucho.",
+            "explicacao": "The imperfecto describes the ongoing setting.",
+            "id": "es-022-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Era tarde y llovía mucho",
+            "opcoes": [
+              "llovía",
+              "y",
+              "tarde",
+              "Era",
+              "mucho"
+            ],
+            "gabarito": "Era tarde y llovía mucho",
+            "explicacao": "Write: Era tarde y llovía mucho",
+            "id": "es-022-x10",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you write «to leave work»?",
+            "opcoes": [
+              "[misto] salir de el trabajo",
+              "[misto] salir en el trabajo",
+              "[misto] salir del trabajo"
+            ],
+            "gabarito": "[misto] salir del trabajo",
+            "explicacao": "«De + el» forms the contraction «del».",
+            "id": "es-022-e28"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Al final llegué a casa muy cansado.»",
+            "opcoes": [
+              "Al",
+              "final",
+              "llegué",
+              "a",
+              "casa",
+              "muy",
+              "cansado."
+            ],
+            "gabarito": "Al final llegué a casa muy cansado.",
+            "explicacao": "«Al final» closes the story; the event stays in the indefinido.",
+            "id": "es-022-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: It was eight o'clock and it was cold.",
+            "respostaEsperada": "[misto] Eran las ocho y hacía frío.",
+            "id": "es-022-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Tell a friend out loud a short story (five sentences or more) that opens with the setting and continues with what happened."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Narrate, in two sentences, what happened this morning, and in two more sentences what the weather was like. Think about which tense each one needs."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-022.json",
+  "responsavel": null
+}
