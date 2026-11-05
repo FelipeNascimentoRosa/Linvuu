@@ -1,0 +1,1396 @@
+{
+  "idioma": "de",
+  "idiomaApoio": "en",
+  "aula": 1,
+  "nivel": "a1",
+  "status": "em-producao",
+  "titulo": "First Steps in German",
+  "objetivo": "By the end of this lesson, understand a short exchange, distinguish key German sounds from English, decode common spelling patterns and greet someone confidently.",
+  "duracaoTotalMin": 120,
+  "sessoes": [
+    {
+      "sessao": "S1",
+      "titulo": "Your First German Conversation",
+      "duracaoMin": 30,
+      "blocos": [
+        {
+          "tipo": "intro",
+          "min": 2,
+          "texto": "Your first mission: understand a conversation before memorizing rules. Listen once without translations. Two people meet. Who asks how the other person is? How do they say goodbye? You will answer those questions in German before this session ends."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 6,
+          "titulo": "A chance meeting — listen first",
+          "contexto": "Anna and Ben meet on the street. Play the dialogue with English hidden; reveal it only after guessing the purpose of the exchange.",
+          "linhas": [
+            {
+              "personagem": "Anna",
+              "ru": "— Hallo, Ben!",
+              "pt": "— Hi, Ben!",
+              "audio": "Hallo, Ben!"
+            },
+            {
+              "personagem": "Ben",
+              "ru": "— Hallo, Anna! Wie geht’s?",
+              "pt": "— Hi, Anna! How are you?",
+              "audio": "Hallo, Anna! Wie geht’s?"
+            },
+            {
+              "personagem": "Anna",
+              "ru": "— Gut, danke! Und dir?",
+              "pt": "— Fine, thanks! And you?",
+              "audio": "Gut, danke! Und dir?"
+            },
+            {
+              "personagem": "Ben",
+              "ru": "— Auch gut, danke.",
+              "pt": "— I'm good too, thanks.",
+              "audio": "Auch gut, danke."
+            },
+            {
+              "personagem": "Anna",
+              "ru": "— Tschüs, Ben!",
+              "pt": "— Bye, Ben!",
+              "audio": "Tschüs, Ben!"
+            },
+            {
+              "personagem": "Ben",
+              "ru": "— Tschüs, Anna!",
+              "pt": "— Bye, Anna!",
+              "audio": "Tschüs, Anna!"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 5,
+          "titulo": "Five useful moves in a conversation",
+          "explicacao": "STEP 1: Open with «Hallo!» (Hello!). STEP 2: Ask «Wie geht’s?» (How are you?). STEP 3: Answer «Gut, danke!» (Fine, thanks!). STEP 4: Ask back with «Und dir?» (And you?). STEP 5: Close with «Tschüs!» (Bye!). Learn the phrases as a natural exchange; detailed grammar can wait. «Und dir?» is informal; for a formal conversation use «Und Ihnen?».",
+          "comparacao": "English uses 'you' with almost everyone. German distinguishes informal dir and polite Ihnen; choose based on your relationship.",
+          "tabela": [
+            {
+              "step": "Greet",
+              "german": "Hallo!",
+              "meaning": "Hello!"
+            },
+            {
+              "step": "Ask",
+              "german": "Wie geht’s?",
+              "meaning": "How are you?"
+            },
+            {
+              "step": "Reply",
+              "german": "Gut, danke!",
+              "meaning": "Fine, thanks!"
+            },
+            {
+              "step": "Ask back",
+              "german": "Und dir?",
+              "meaning": "And you? (informal)"
+            },
+            {
+              "step": "Leave",
+              "german": "Tschüs!",
+              "meaning": "Bye!"
+            }
+          ],
+          "erros": [
+            {
+              "errado": "Gute Nacht! (as an answer to Wie geht’s?)",
+              "certo": "Gut, danke!",
+              "motivo": "Good night does not answer how someone is."
+            },
+            {
+              "errado": "Und dir? (formal setting)",
+              "certo": "Und Ihnen?",
+              "motivo": "Use Ihnen for a formal exchange; dir is informal."
+            }
+          ],
+          "tag": "Speak from minute one"
+        },
+        {
+          "tipo": "palavras",
+          "min": 4,
+          "itens": [
+            {
+              "ru": "Hallo",
+              "pt": "hello",
+              "en": "hello",
+              "audio": "Hallo",
+              "translit": "Listen, then repeat"
+            },
+            {
+              "ru": "Wie geht’s?",
+              "pt": "how are you?",
+              "en": "how are you?",
+              "audio": "Wie geht’s?",
+              "translit": "Listen, then repeat"
+            },
+            {
+              "ru": "Gut, danke!",
+              "pt": "fine, thanks!",
+              "en": "fine, thanks!",
+              "audio": "Gut, danke!",
+              "translit": "Listen, then repeat"
+            },
+            {
+              "ru": "Und dir?",
+              "pt": "and you? (informal)",
+              "en": "and you? (informal)",
+              "audio": "Und dir?",
+              "translit": "Listen, then repeat"
+            },
+            {
+              "ru": "Auch gut, danke.",
+              "pt": "good too, thanks",
+              "en": "good too, thanks",
+              "audio": "Auch gut, danke.",
+              "translit": "Listen, then repeat"
+            },
+            {
+              "ru": "Tschüs",
+              "pt": "bye",
+              "en": "bye",
+              "audio": "Tschüs",
+              "translit": "Listen, then repeat"
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 10,
+          "itens": [
+            {
+              "id": "de-001-e01",
+              "tipo": "audio-recognition",
+              "enunciado": "Which opening do you hear?",
+              "audio": "Hallo, Ben!",
+              "opcoes": [
+                "Hallo, Ben!",
+                "Tschüs, Ben!",
+                "Gut, danke!"
+              ],
+              "gabarito": "Hallo, Ben!",
+              "explicacao": "«Hallo» opens the encounter; «Tschüs» closes it."
+            },
+            {
+              "id": "de-001-e02",
+              "tipo": "audio-recognition",
+              "enunciado": "Which question do you hear?",
+              "audio": "Hallo, Anna! Wie geht’s?",
+              "opcoes": [
+                "Wie geht’s?",
+                "Und dir?",
+                "Guten Morgen"
+              ],
+              "gabarito": "Wie geht’s?",
+              "explicacao": "«Wie geht’s?» asks how someone is doing."
+            },
+            {
+              "id": "de-001-e03",
+              "tipo": "audio-recognition",
+              "enunciado": "What does Anna say?",
+              "audio": "Gut, danke! Und dir?",
+              "opcoes": [
+                "Gut, danke! Und dir?",
+                "Gute Nacht!",
+                "Hallo, Ben!"
+              ],
+              "gabarito": "Gut, danke! Und dir?",
+              "explicacao": "She answers and returns the question."
+            },
+            {
+              "id": "de-001-e04",
+              "tipo": "audio-recognition",
+              "enunciado": "Listen and write the word meaning 'thanks'.",
+              "audio": "Danke",
+              "respostaEsperada": "Danke",
+              "explicacao": "«Danke»: notice the short unstressed -e /ə/."
+            },
+            {
+              "id": "de-001-e05",
+              "tipo": "audio-recognition",
+              "enunciado": "Listen and write the informal goodbye using the spelling with one s after ü.",
+              "audio": "Tschüs",
+              "respostaEsperada": "Tschüs",
+              "explicacao": "«Tschüs» and «Tschüss» are both correct German spellings; this exercise practices «Tschüs»."
+            },
+            {
+              "id": "de-001-e06",
+              "tipo": "multiple-choice",
+              "enunciado": "A friend asks «Wie geht’s?». Which answer keeps the conversation going?",
+              "opcoes": [
+                "Gut, danke! Und dir?",
+                "Gute Nacht!",
+                "Guten Tag!"
+              ],
+              "gabarito": "Gut, danke! Und dir?",
+              "explicacao": "Answer first, then return the question."
+            },
+            {
+              "id": "de-001-e07",
+              "tipo": "multiple-choice",
+              "enunciado": "Which 'And you?' is appropriate for a friend?",
+              "opcoes": [
+                "Und dir?",
+                "Und Ihnen?",
+                "Guten Morgen?"
+              ],
+              "gabarito": "Und dir?",
+              "explicacao": "«dir» is informal. «Ihnen» is formal."
+            },
+            {
+              "id": "de-001-e08",
+              "tipo": "fill-gap",
+              "enunciado": "Gut, ___! Und dir? (Fine, thanks! And you?)",
+              "opcoes": [
+                "danke",
+                "Abend",
+                "Tschüs"
+              ],
+              "gabarito": "danke",
+              "explicacao": "«danke» expresses thanks."
+            },
+            {
+              "id": "de-001-e09",
+              "tipo": "fill-gap",
+              "enunciado": "___, Ben! Wie geht’s? (Hi, Ben!)",
+              "opcoes": [
+                "Hallo",
+                "Nacht",
+                "Danke"
+              ],
+              "gabarito": "Hallo",
+              "explicacao": "Use «Hallo» as a greeting."
+            }
+          ]
+        },
+        {
+          "tipo": "producao",
+          "min": 3,
+          "enunciado": "Now speak without the translation: greet Anna, ask how she is, answer when she asks you, and say goodbye. Repeat with the roles reversed. Record yourself if you can, compare with the dialogue and try again.",
+          "exemplo": "Hallo! — Wie geht’s? — Gut, danke! Und dir? — Auch gut, danke. — Tschüs!"
+        }
+      ]
+    },
+    {
+      "sessao": "S2",
+      "titulo": "German Sounds English Speakers Misread",
+      "duracaoMin": 30,
+      "blocos": [
+        {
+          "tipo": "intro",
+          "min": 2,
+          "texto": "English spelling is an unreliable guide to German pronunciation. Today you will stop reading German V, W, J and Z as if they were English. Your challenge: listen to two words, predict their first sounds, then correct yourself using the audio."
+        },
+        {
+          "tipo": "gramatica",
+          "min": 6,
+          "titulo": "Four letter traps — and two new mouth positions",
+          "explicacao": "STEP 1: German W usually sounds /v/, as in English very: Wasser. STEP 2: V often sounds /f/, as in father: Vater; loanwords such as Vase may use /v/. STEP 3: J sounds /j/, the first sound in English yes: Jahr. STEP 4: Z sounds /ts/, like the end of English cats: Zeit. STEP 5: German S often sounds /z/ before a vowel at the beginning of a syllable, as in Sonne; in other positions it can sound /s/. STEP 6: To make Ü, position your tongue as for English ee and round the lips; Ö combines a front e-like tongue position with rounded lips. Neither is simply an English oo. Listen rather than trusting approximations.",
+          "comparacao": "The most tempting mistake for an English speaker is to pronounce Wasser with an English /w/ and Vater with /v/. German often reverses those expectations.",
+          "tabela": [
+            {
+              "letter": "W",
+              "ipa": "/v/",
+              "example": "Wasser",
+              "english_hint": "v in very"
+            },
+            {
+              "letter": "V (common)",
+              "ipa": "/f/",
+              "example": "Vater",
+              "english_hint": "f in father"
+            },
+            {
+              "letter": "J",
+              "ipa": "/j/",
+              "example": "Jahr",
+              "english_hint": "y in yes"
+            },
+            {
+              "letter": "Z",
+              "ipa": "/ts/",
+              "example": "Zeit",
+              "english_hint": "ts in cats"
+            },
+            {
+              "letter": "Ü",
+              "ipa": "/yː/ or /ʏ/",
+              "example": "Tür",
+              "english_hint": "ee tongue + rounded lips"
+            },
+            {
+              "letter": "Ö",
+              "ipa": "/øː/ or /œ/",
+              "example": "Öl",
+              "english_hint": "front e-like tongue + rounded lips"
+            }
+          ],
+          "erros": [
+            {
+              "errado": "Wasser pronounced with English w",
+              "certo": "Wasser",
+              "motivo": "German w normally sounds like English v."
+            },
+            {
+              "errado": "Vater pronounced with English v",
+              "certo": "Vater",
+              "motivo": "Native German Vater begins with /f/."
+            },
+            {
+              "errado": "Zeit pronounced as English z-eye-t",
+              "certo": "Zeit",
+              "motivo": "German z begins with /ts/, not /z/."
+            }
+          ],
+          "tag": "Pronunciation workshop"
+        },
+        {
+          "tipo": "alfabeto",
+          "min": 8,
+          "grupos": [
+            {
+              "nome": "English traps",
+              "letras": [
+                {
+                  "maiuscula": "W",
+                  "minuscula": "w",
+                  "ipa": "[v]",
+                  "som": "Like v in English very",
+                  "exemplo": "Wasser",
+                  "exemploPt": "water"
+                },
+                {
+                  "maiuscula": "V",
+                  "minuscula": "v",
+                  "ipa": "[f] / [v]",
+                  "som": "Usually /f/ in native words; some loanwords have /v/",
+                  "exemplo": "Vater",
+                  "exemploPt": "father"
+                },
+                {
+                  "maiuscula": "J",
+                  "minuscula": "j",
+                  "ipa": "[j]",
+                  "som": "Like y in English yes, not j in jam",
+                  "exemplo": "Jahr",
+                  "exemploPt": "year"
+                },
+                {
+                  "maiuscula": "Z",
+                  "minuscula": "z",
+                  "ipa": "[ts]",
+                  "som": "Join t and s, as in English cats",
+                  "exemplo": "Zeit",
+                  "exemploPt": "time"
+                }
+              ]
+            },
+            {
+              "nome": "A new set of vowel movements",
+              "letras": [
+                {
+                  "maiuscula": "Ä",
+                  "minuscula": "ä",
+                  "ipa": "[ɛː / ɛ]",
+                  "som": "Similar to the vowel in bed, but long and short forms vary",
+                  "exemplo": "Käse",
+                  "exemploPt": "cheese"
+                },
+                {
+                  "maiuscula": "Ö",
+                  "minuscula": "ö",
+                  "ipa": "[øː / œ]",
+                  "som": "Keep a front e-like tongue position while rounding the lips",
+                  "exemplo": "Öl",
+                  "exemploPt": "oil"
+                },
+                {
+                  "maiuscula": "Ü",
+                  "minuscula": "ü",
+                  "ipa": "[yː / ʏ]",
+                  "som": "Keep an ee-like tongue position while rounding the lips",
+                  "exemplo": "Tür",
+                  "exemploPt": "door"
+                }
+              ]
+            },
+            {
+              "nome": "Listen for context",
+              "letras": [
+                {
+                  "maiuscula": "S",
+                  "minuscula": "s",
+                  "ipa": "[z / s]",
+                  "som": "Often /z/ before a vowel at syllable start; sometimes /s/",
+                  "exemplo": "Sonne",
+                  "exemploPt": "sun"
+                },
+                {
+                  "maiuscula": "H",
+                  "minuscula": "h",
+                  "ipa": "[h]",
+                  "som": "An audible h at the start of Haus",
+                  "exemplo": "Haus",
+                  "exemploPt": "house"
+                },
+                {
+                  "maiuscula": "ß",
+                  "minuscula": "ß",
+                  "ipa": "[s]",
+                  "som": "The sound /s/, called Eszett",
+                  "exemplo": "Straße",
+                  "exemploPt": "street"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "palavras",
+          "min": 4,
+          "itens": [
+            {
+              "ru": "Wasser",
+              "pt": "water",
+              "en": "water",
+              "translit": "/ˈvasɐ/",
+              "audio": "Wasser"
+            },
+            {
+              "ru": "Vater",
+              "pt": "father",
+              "en": "father",
+              "translit": "/ˈfaːtɐ/",
+              "audio": "Vater"
+            },
+            {
+              "ru": "Jahr",
+              "pt": "year",
+              "en": "year",
+              "translit": "/jaːɐ̯/",
+              "audio": "Jahr"
+            },
+            {
+              "ru": "Zeit",
+              "pt": "time",
+              "en": "time",
+              "translit": "/tsaɪ̯t/",
+              "audio": "Zeit"
+            },
+            {
+              "ru": "Sonne",
+              "pt": "sun",
+              "en": "sun",
+              "translit": "/ˈzɔnə/",
+              "audio": "Sonne"
+            },
+            {
+              "ru": "Straße",
+              "pt": "street",
+              "en": "street",
+              "translit": "/ˈʃtʁaːsə/",
+              "audio": "Straße"
+            },
+            {
+              "ru": "Tür",
+              "pt": "door",
+              "en": "door",
+              "translit": "/tyːɐ̯/",
+              "audio": "Tür"
+            },
+            {
+              "ru": "Käse",
+              "pt": "cheese",
+              "en": "cheese",
+              "translit": "/ˈkɛːzə/",
+              "audio": "Käse"
+            },
+            {
+              "ru": "Öl",
+              "pt": "oil",
+              "en": "oil",
+              "translit": "/øːl/",
+              "audio": "Öl"
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "id": "de-001-e10",
+              "tipo": "audio-recognition",
+              "enunciado": "Listen for the word beginning with /v/.",
+              "audio": "Wasser",
+              "opcoes": [
+                "Wasser",
+                "Vater",
+                "Sonne"
+              ],
+              "gabarito": "Wasser",
+              "explicacao": "Wasser begins with /v/, even though it is written W. Vater begins with /f/."
+            },
+            {
+              "id": "de-001-e11",
+              "tipo": "audio-recognition",
+              "enunciado": "Which word begins with /ts/?",
+              "audio": "Zeit",
+              "opcoes": [
+                "Zeit",
+                "Sonne",
+                "Straße"
+              ],
+              "gabarito": "Zeit",
+              "explicacao": "German Z represents /ts/, a small t followed by s."
+            },
+            {
+              "id": "de-001-e12",
+              "tipo": "audio-recognition",
+              "enunciado": "Which word begins with the sound y in yes?",
+              "audio": "Jahr",
+              "opcoes": [
+                "Jahr",
+                "Haus",
+                "rot"
+              ],
+              "gabarito": "Jahr",
+              "explicacao": "German J is /j/; it does not sound like the j in English jam."
+            },
+            {
+              "id": "de-001-e13",
+              "tipo": "audio-recognition",
+              "enunciado": "Listen and type the German word for water.",
+              "audio": "Wasser",
+              "respostaEsperada": "Wasser",
+              "explicacao": "Write W, not V: its /v/ sound is represented by W."
+            },
+            {
+              "id": "de-001-e14",
+              "tipo": "audio-recognition",
+              "enunciado": "Listen and write the German word for street using ß, the standard spelling in Germany and Austria.",
+              "audio": "Straße",
+              "respostaEsperada": "Straße",
+              "explicacao": "At the start of «Straße», st sounds /ʃt/. Swiss spelling uses «Strasse» instead of ß."
+            },
+            {
+              "id": "de-001-e15",
+              "tipo": "multiple-choice",
+              "enunciado": "German W in «Wasser» normally sounds like which English consonant?",
+              "opcoes": [
+                "v in very",
+                "w in water",
+                "f in fine"
+              ],
+              "gabarito": "v in very",
+              "explicacao": "You know the sound from English v; the letter is different."
+            },
+            {
+              "id": "de-001-e16",
+              "tipo": "multiple-choice",
+              "enunciado": "Which description fits the German Z in «Zeit»?",
+              "opcoes": [
+                "t and s together",
+                "z in zebra",
+                "s in sun"
+              ],
+              "gabarito": "t and s together",
+              "explicacao": "Z is /ts/. Feel the brief t release before s."
+            },
+            {
+              "id": "de-001-e17",
+              "tipo": "fill-gap",
+              "enunciado": "___asser (water; initial sound /v/).",
+              "opcoes": [
+                "W",
+                "V",
+                "F"
+              ],
+              "gabarito": "W",
+              "explicacao": "German W makes the /v/ sound in Wasser."
+            },
+            {
+              "id": "de-001-e18",
+              "tipo": "fill-gap",
+              "enunciado": "___eit (time; starts with /ts/).",
+              "opcoes": [
+                "Z",
+                "S",
+                "C"
+              ],
+              "gabarito": "Z",
+              "explicacao": "The letter Z represents /ts/ in Zeit."
+            }
+          ]
+        },
+        {
+          "tipo": "producao",
+          "min": 2,
+          "enunciado": "Two-round pronunciation challenge. Round 1: say «Wasser, Vater, Jahr, Zeit» without using English letter names. Round 2: listen and imitate «Käse, Öl, Tür». Compare your mouth position with the audio; do not replace ö or ü with plain English vowels.",
+          "exemplo": "Wasser /v/ · Vater /f/ · Jahr /j/ · Zeit /ts/"
+        }
+      ]
+    },
+    {
+      "sessao": "S3",
+      "titulo": "Read German with Confidence",
+      "duracaoMin": 30,
+      "blocos": [
+        {
+          "tipo": "intro",
+          "min": 2,
+          "texto": "Yesterday you learned that German letters do not always behave like English letters. Today you will become a word detective: look at a word, predict the sound of its letter combinations, then check your prediction against the audio. The win is decoding a new word without a phonetic crutch."
+        },
+        {
+          "tipo": "gramatica",
+          "min": 6,
+          "titulo": "The four patterns that unlock dozens of words",
+          "explicacao": "STEP 1: German «ei» sounds /aɪ/, like eye: «Wein» and «Eis». STEP 2: German «ie» usually represents long /iː/, as in English see: «Bier» and «Brief». STEP 3: German «eu» and «äu» are pronounced /ɔʏ/, roughly like oy in boy: «Euro» and «Häuser». STEP 4: German «au» sounds /aʊ/, like ow in cow: «Haus» and «Auto». Compare «Wein» (/vaɪn/, wine) with «Bier» (/biːɐ̯/, beer) to practice the two vowel patterns. The patterns are reliable guides for these common words, not a promise that every letter group has only one pronunciation in every context.",
+          "comparacao": "English speakers may see ei and say 'ee' or 'ay'. In German, start by trusting ei = eye and ie = ee. Train both directions: see the spelling and predict the sound; hear the sound and choose the spelling.",
+          "tabela": [
+            {
+              "pattern": "ei",
+              "sound": "/aɪ/ · eye",
+              "example": "Wein = wine"
+            },
+            {
+              "pattern": "ie",
+              "sound": "/iː/ · ee",
+              "example": "Bier = beer"
+            },
+            {
+              "pattern": "eu / äu",
+              "sound": "/ɔʏ/ · oy",
+              "example": "Euro / Häuser"
+            },
+            {
+              "pattern": "au",
+              "sound": "/aʊ/ · ow",
+              "example": "Haus / Auto"
+            }
+          ],
+          "erros": [
+            {
+              "errado": "Wein pronounced like 'ween'",
+              "certo": "Wein",
+              "motivo": "Wein has ei /aɪ/, not ie /iː/."
+            },
+            {
+              "errado": "Bier pronounced with the vowel in English 'eye'",
+              "certo": "Bier",
+              "motivo": "«Bier» has ie /iː/; it means beer."
+            }
+          ],
+          "tag": "Decode, don't guess"
+        },
+        {
+          "tipo": "gramatica",
+          "min": 6,
+          "titulo": "Consonant clusters you can read on sight",
+          "explicacao": "STEP 1: «sch» sounds /ʃ/ as in English ship: «Schule», «Fisch». STEP 2: «sp» and «st» at the beginning of a native German word or stressed stem normally start with /ʃp/ and /ʃt/: «Sport», «Stein». STEP 3: The two main sounds of «ch» are [ç] after front vowels (as in «ich») and [x] after back vowels (as in «Buch»). English has no exact everyday equivalent to [ç]; Scottish loch is a useful approximation for [x]. STEP 4: «tsch» sounds /tʃ/ as in English church: «Deutsch». STEP 5: «pf», «qu», «ck» and «ng» have their own patterns: «Apfel», «Quelle», «Jacke», «singen». Listen before trying to imitate unfamiliar sounds.",
+          "comparacao": "English 'ch' in church is /tʃ/. German «ch» is usually [ç] or [x]; German «tsch» gives you the English church sound. Do not pronounce «ich» as English 'itch'.",
+          "tabela": [
+            {
+              "pattern": "sch",
+              "sound": "/ʃ/ · sh in ship",
+              "example": "Schule"
+            },
+            {
+              "pattern": "sp / st (word-initial)",
+              "sound": "/ʃp/ · /ʃt/",
+              "example": "Sport / Stein"
+            },
+            {
+              "pattern": "ch after a front vowel",
+              "sound": "[ç] · ich sound",
+              "example": "ich / Milch"
+            },
+            {
+              "pattern": "ch after a back vowel",
+              "sound": "[x] · Scottish loch",
+              "example": "Buch / acht"
+            },
+            {
+              "pattern": "tsch",
+              "sound": "/tʃ/ · ch in church",
+              "example": "Deutsch"
+            },
+            {
+              "pattern": "pf",
+              "sound": "/pf/ together",
+              "example": "Apfel"
+            },
+            {
+              "pattern": "qu",
+              "sound": "/kv/",
+              "example": "Quelle"
+            },
+            {
+              "pattern": "ck",
+              "sound": "/k/ (often after short vowel)",
+              "example": "Jacke"
+            },
+            {
+              "pattern": "ng",
+              "sound": "/ŋ/ without separate g",
+              "example": "singen"
+            }
+          ],
+          "erros": [
+            {
+              "errado": "Schule beginning with sk",
+              "certo": "Schule",
+              "motivo": "sch is the sound sh /ʃ/."
+            },
+            {
+              "errado": "Sport beginning with plain sp",
+              "certo": "Sport",
+              "motivo": "Initial sp in this German word is /ʃp/."
+            },
+            {
+              "errado": "ich pronounced like English itch",
+              "certo": "ich",
+              "motivo": "In ich, ch is [ç], not /tʃ/."
+            }
+          ],
+          "tag": "Predict the next word"
+        },
+        {
+          "tipo": "palavras",
+          "min": 4,
+          "itens": [
+            {
+              "ru": "Wein",
+              "pt": "wine",
+              "en": "wine",
+              "translit": "/vaɪn/",
+              "audio": "Wein"
+            },
+            {
+              "ru": "Eis",
+              "pt": "ice; ice cream",
+              "en": "ice; ice cream",
+              "translit": "/aɪs/",
+              "audio": "Eis"
+            },
+            {
+              "ru": "Bier",
+              "pt": "beer",
+              "en": "beer",
+              "translit": "/biːɐ̯/",
+              "audio": "Bier"
+            },
+            {
+              "ru": "Euro",
+              "pt": "euro",
+              "en": "euro",
+              "translit": "/ˈɔʏʁo/",
+              "audio": "Euro"
+            },
+            {
+              "ru": "Haus",
+              "pt": "house",
+              "en": "house",
+              "translit": "/haʊs/",
+              "audio": "Haus"
+            },
+            {
+              "ru": "Schule",
+              "pt": "school",
+              "en": "school",
+              "translit": "/ˈʃuːlə/",
+              "audio": "Schule"
+            },
+            {
+              "ru": "Sport",
+              "pt": "sport",
+              "en": "sport",
+              "translit": "/ʃpɔʁt/",
+              "audio": "Sport"
+            },
+            {
+              "ru": "Buch",
+              "pt": "book",
+              "en": "book",
+              "translit": "/buːx/",
+              "audio": "Buch"
+            },
+            {
+              "ru": "ich",
+              "pt": "I",
+              "en": "I",
+              "translit": "/ɪç/",
+              "audio": "ich"
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "id": "de-001-e19",
+              "tipo": "multiple-choice",
+              "enunciado": "Predict the vowel sound of ei in «Eis».",
+              "opcoes": [
+                "eye /aɪ/",
+                "ee /iː/",
+                "oy /ɔʏ/"
+              ],
+              "gabarito": "eye /aɪ/",
+              "explicacao": "In common German words, ei is /aɪ/: Eis sounds similar to English ice."
+            },
+            {
+              "id": "de-001-e20",
+              "tipo": "multiple-choice",
+              "enunciado": "Predict the vowel sound of ie in «Bier».",
+              "opcoes": [
+                "ee /iː/",
+                "eye /aɪ/",
+                "ow /aʊ/"
+              ],
+              "gabarito": "ee /iː/",
+              "explicacao": "The ie spelling generally gives long /iː/ in Bier."
+            },
+            {
+              "id": "de-001-e21",
+              "tipo": "multiple-choice",
+              "enunciado": "How does sch start «Schule»?",
+              "opcoes": [
+                "sh /ʃ/",
+                "sk /sk/",
+                "ch /tʃ/"
+              ],
+              "gabarito": "sh /ʃ/",
+              "explicacao": "sch represents /ʃ/, the English sh sound."
+            },
+            {
+              "id": "de-001-e22",
+              "tipo": "audio-recognition",
+              "enunciado": "Listen: which German word do you hear?",
+              "audio": "Wein",
+              "opcoes": [
+                "Wein",
+                "Bier",
+                "Wasser"
+              ],
+              "gabarito": "Wein",
+              "explicacao": "«Wein» contains ei /aɪ/; «Bier» contains ie /iː/."
+            },
+            {
+              "id": "de-001-e23",
+              "tipo": "audio-recognition",
+              "enunciado": "Which word ends with sch /ʃ/?",
+              "audio": "Fisch",
+              "opcoes": [
+                "Fisch",
+                "Film",
+                "Eis"
+              ],
+              "gabarito": "Fisch",
+              "explicacao": "Fisch ends /ʃ/; Film ends /m/."
+            },
+            {
+              "id": "de-001-e24",
+              "tipo": "audio-recognition",
+              "enunciado": "Which word has a back-of-the-mouth ch [x]?",
+              "audio": "Buch",
+              "opcoes": [
+                "Buch",
+                "Bad",
+                "Bier"
+              ],
+              "gabarito": "Buch",
+              "explicacao": "The ch of Buch follows a back vowel and is pronounced [x]."
+            },
+            {
+              "id": "de-001-e25",
+              "tipo": "audio-recognition",
+              "enunciado": "Listen and type the German word meaning school.",
+              "audio": "Schule",
+              "respostaEsperada": "Schule",
+              "explicacao": "Write sch at the beginning. German does not use English sh here."
+            },
+            {
+              "id": "de-001-e26",
+              "tipo": "audio-recognition",
+              "enunciado": "Listen and type the German word meaning beer.",
+              "audio": "Bier",
+              "respostaEsperada": "Bier",
+              "explicacao": "The long /iː/ vowel is written ie."
+            },
+            {
+              "id": "de-001-e27",
+              "tipo": "fill-gap",
+              "enunciado": "B___r = beer. Which spelling gives /iː/?",
+              "opcoes": [
+                "ie",
+                "ei",
+                "eu"
+              ],
+              "gabarito": "ie",
+              "explicacao": "Bier uses ie, not ei."
+            },
+            {
+              "id": "de-001-e28",
+              "tipo": "fill-gap",
+              "enunciado": "W___n = wine. Which spelling gives /aɪ/?",
+              "opcoes": [
+                "ei",
+                "ie",
+                "eu"
+              ],
+              "gabarito": "ei",
+              "explicacao": "«Wein» means wine and has the vowel /aɪ/."
+            },
+            {
+              "id": "de-001-e29",
+              "tipo": "fill-gap",
+              "enunciado": "___ule = school. Which cluster gives /ʃ/?",
+              "opcoes": [
+                "Sch",
+                "Sp",
+                "St"
+              ],
+              "gabarito": "Sch",
+              "explicacao": "Schule begins with sch /ʃ/."
+            }
+          ]
+        },
+        {
+          "tipo": "producao",
+          "min": 4,
+          "enunciado": "Three-step decoding challenge. (1) Read «Wein» and «Bier» aloud and explain the meaning difference. (2) Read «Schule», «Sport», «Buch» and «ich» without transliteration; identify each consonant pattern. (3) Replay the audio and identify one sound you need to practise again. Say it three times, slowly then naturally.",
+          "exemplo": "Wein /vaɪn/ = wine; Bier /biːɐ̯/ = beer; Schule /ʃ/; Sport /ʃp/; Buch [x]; ich [ç]."
+        }
+      ]
+    },
+    {
+      "sessao": "S4",
+      "titulo": "Your First Real-World Interaction",
+      "duracaoMin": 30,
+      "blocos": [
+        {
+          "tipo": "intro",
+          "min": 2,
+          "texto": "Your final mission: navigate two real situations. First, you meet a friend in a café. Then you greet someone you do not know. You will choose a greeting, understand a short story, reply naturally and finish the conversation. At the end, you should be able to do this without English prompts."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "One conversation, two speakers",
+          "contexto": "First listen with English hidden. Anna and Ben know each other and speak informally. Notice how they ask a question back and how they end the exchange.",
+          "linhas": [
+            {
+              "personagem": "Anna",
+              "ru": "— Hallo, Ben!",
+              "pt": "— Hi, Ben!",
+              "audio": "Hallo, Ben!"
+            },
+            {
+              "personagem": "Ben",
+              "ru": "— Hallo, Anna! Wie geht’s?",
+              "pt": "— Hi, Anna! How are you?",
+              "audio": "Hallo, Anna! Wie geht’s?"
+            },
+            {
+              "personagem": "Anna",
+              "ru": "— Gut, danke! Und dir?",
+              "pt": "— Fine, thanks! And you?",
+              "audio": "Gut, danke! Und dir?"
+            },
+            {
+              "personagem": "Ben",
+              "ru": "— Auch gut, danke.",
+              "pt": "— I'm good too, thanks.",
+              "audio": "Auch gut, danke."
+            },
+            {
+              "personagem": "Anna",
+              "ru": "— Tschüs, Ben!",
+              "pt": "— Bye, Ben!",
+              "audio": "Tschüs, Ben!"
+            },
+            {
+              "personagem": "Ben",
+              "ru": "— Tschüs, Anna!",
+              "pt": "— Bye, Anna!",
+              "audio": "Tschüs, Anna!"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 4,
+          "titulo": "Choose the greeting and the register",
+          "explicacao": "STEP 1: For a friend, use «Hallo!» and «Wie geht’s?»; answer «Gut, danke! Und dir?». STEP 2: For a stranger or a formal setting, «Guten Tag!» and «Wie geht es Ihnen?» are useful polite options; you can ask back «Und Ihnen?». STEP 3: «Guten Morgen» is a morning greeting, «Guten Tag» a daytime greeting and «Guten Abend» an evening greeting. STEP 4: «Gute Nacht» is normally said when someone is going to bed, not as an evening arrival greeting. STEP 5: «Tschüs!» is an informal goodbye; «Auf Wiedersehen!» is a more formal farewell. German choices depend on the context, not simply the clock.",
+          "comparacao": "English 'you' does not distinguish du and Sie. German does: «dir» with a friend, «Ihnen» in polite speech. Learn the right phrase for the situation before studying the grammar behind the pronoun endings.",
+          "tabela": [
+            {
+              "situation": "Meeting a friend",
+              "german": "Hallo! Wie geht’s?",
+              "meaning": "Hi! How are you?"
+            },
+            {
+              "situation": "Meeting someone formally",
+              "german": "Guten Tag! Wie geht es Ihnen?",
+              "meaning": "Good day! How are you?"
+            },
+            {
+              "situation": "Answering a friend",
+              "german": "Gut, danke! Und dir?",
+              "meaning": "Fine, thanks! And you?"
+            },
+            {
+              "situation": "Answering formally",
+              "german": "Gut, danke! Und Ihnen?",
+              "meaning": "Fine, thanks! And you?"
+            },
+            {
+              "situation": "Arriving in the evening",
+              "german": "Guten Abend!",
+              "meaning": "Good evening!"
+            },
+            {
+              "situation": "Someone is going to bed",
+              "german": "Gute Nacht!",
+              "meaning": "Good night!"
+            },
+            {
+              "situation": "Leaving a friend",
+              "german": "Tschüs!",
+              "meaning": "Bye!"
+            },
+            {
+              "situation": "Formal farewell",
+              "german": "Auf Wiedersehen!",
+              "meaning": "Goodbye!"
+            }
+          ],
+          "erros": [
+            {
+              "errado": "Gute Nacht! (arriving at dinner)",
+              "certo": "Guten Abend!",
+              "motivo": "Use the evening greeting when arriving; good night is associated with going to sleep."
+            },
+            {
+              "errado": "Und dir? (in a formal exchange)",
+              "certo": "Und Ihnen?",
+              "motivo": "The polite form is Ihnen, not dir."
+            }
+          ],
+          "tag": "Situational German"
+        },
+        {
+          "tipo": "texto",
+          "min": 4,
+          "titulo": "At the café — a short story you can now understand",
+          "ru": "Guten Morgen! Anna ist im Café. Ben ist auch da. Anna sagt: Hallo, Ben! Wie geht’s? Ben sagt: Gut, danke! Und dir? Anna sagt: Auch gut, danke. Anna trinkt Tee. Ben trinkt Wasser. Das Café ist gut. Dann sagt Ben: Tschüs, Anna! Anna sagt: Tschüs, Ben!",
+          "pt": "Good morning! Anna is at the café. Ben is there too. Anna says: Hi, Ben! How are you? Ben says: Fine, thanks! And you? Anna says: Also fine, thanks. Anna drinks tea. Ben drinks water. The café is good. Then Ben says: Bye, Anna! Anna says: Bye, Ben!",
+          "perguntas": [
+            {
+              "pergunta": "Where are Anna and Ben?",
+              "resposta": "At a café. The clue is «im Café»."
+            },
+            {
+              "pergunta": "Who drinks tea, and who drinks water?",
+              "resposta": "Anna drinks tea («Tee»). Ben drinks water («Wasser»). You can infer both from the familiar words."
+            },
+            {
+              "pergunta": "What do they say when leaving?",
+              "resposta": "They say «Tschüs!» — an informal goodbye."
+            }
+          ]
+        },
+        {
+          "tipo": "palavras",
+          "min": 3,
+          "itens": [
+            {
+              "ru": "Hallo",
+              "pt": "hi",
+              "en": "hi",
+              "translit": "Listen and repeat",
+              "audio": "Hallo"
+            },
+            {
+              "ru": "Guten Morgen",
+              "pt": "good morning",
+              "en": "good morning",
+              "translit": "Listen and repeat",
+              "audio": "Guten Morgen"
+            },
+            {
+              "ru": "Guten Tag",
+              "pt": "good day / hello",
+              "en": "good day / hello",
+              "translit": "Listen and repeat",
+              "audio": "Guten Tag"
+            },
+            {
+              "ru": "Guten Abend",
+              "pt": "good evening",
+              "en": "good evening",
+              "translit": "Listen and repeat",
+              "audio": "Guten Abend"
+            },
+            {
+              "ru": "Gute Nacht",
+              "pt": "good night",
+              "en": "good night",
+              "translit": "Listen and repeat",
+              "audio": "Gute Nacht"
+            },
+            {
+              "ru": "Tschüs",
+              "pt": "bye (informal)",
+              "en": "bye (informal)",
+              "translit": "Listen and repeat",
+              "audio": "Tschüs"
+            },
+            {
+              "ru": "Danke",
+              "pt": "thanks",
+              "en": "thanks",
+              "translit": "Listen and repeat",
+              "audio": "Danke"
+            },
+            {
+              "ru": "Bitte",
+              "pt": "please / you're welcome",
+              "en": "please / you're welcome",
+              "translit": "Listen and repeat",
+              "audio": "Bitte"
+            },
+            {
+              "ru": "Wie geht’s?",
+              "pt": "how are you? (informal)",
+              "en": "how are you? (informal)",
+              "translit": "Listen and repeat",
+              "audio": "Wie geht’s?"
+            },
+            {
+              "ru": "Und dir?",
+              "pt": "and you? (informal)",
+              "en": "and you? (informal)",
+              "translit": "Listen and repeat",
+              "audio": "Und dir?"
+            },
+            {
+              "ru": "Auch gut",
+              "pt": "good too",
+              "en": "good too",
+              "translit": "Listen and repeat",
+              "audio": "Auch gut"
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 11,
+          "itens": [
+            {
+              "id": "de-001-e30",
+              "tipo": "audio-recognition",
+              "enunciado": "Listen: which daytime greeting do you hear?",
+              "audio": "Guten Tag",
+              "opcoes": [
+                "Guten Tag",
+                "Guten Abend",
+                "Gute Nacht"
+              ],
+              "gabarito": "Guten Tag",
+              "explicacao": "Tag means day. Abend means evening; Nacht means night."
+            },
+            {
+              "id": "de-001-e31",
+              "tipo": "audio-recognition",
+              "enunciado": "Which question do you hear?",
+              "audio": "Wie geht’s?",
+              "opcoes": [
+                "Wie geht’s?",
+                "Und dir?",
+                "Guten Morgen"
+              ],
+              "gabarito": "Wie geht’s?",
+              "explicacao": "«Wie geht’s?» asks how someone is."
+            },
+            {
+              "id": "de-001-e32",
+              "tipo": "audio-recognition",
+              "enunciado": "Listen and write the word for 'thanks'.",
+              "audio": "Danke",
+              "respostaEsperada": "Danke",
+              "explicacao": "Remember the final unstressed -e."
+            },
+            {
+              "id": "de-001-e33",
+              "tipo": "multiple-choice",
+              "enunciado": "It's 9 a.m. You enter a bakery. Which greeting fits?",
+              "opcoes": [
+                "Guten Morgen",
+                "Guten Abend",
+                "Gute Nacht"
+              ],
+              "gabarito": "Guten Morgen",
+              "explicacao": "Morgen = morning. The context determines the greeting."
+            },
+            {
+              "id": "de-001-r01",
+              "tipo": "repeat",
+              "enunciado": "Listen, imitate and reveal the German sentence.",
+              "audio": "Hallo, Anna! Wie geht’s?",
+              "respostaEsperada": "Hallo, Anna! Wie geht’s?",
+              "explicacao": "Hi, Anna! How are you?",
+              "complemento": true
+            },
+            {
+              "id": "de-001-e34",
+              "tipo": "multiple-choice",
+              "enunciado": "You are leaving a friend. What does «Tschüs» mean?",
+              "opcoes": [
+                "bye",
+                "thank you",
+                "please"
+              ],
+              "gabarito": "bye",
+              "explicacao": "«Tschüs» closes an informal conversation."
+            },
+            {
+              "id": "de-001-e35",
+              "tipo": "fill-gap",
+              "enunciado": "Gut, ___! Und dir?",
+              "opcoes": [
+                "danke",
+                "bitte",
+                "tschüs"
+              ],
+              "gabarito": "danke",
+              "explicacao": "Thank the person, then ask back."
+            },
+            {
+              "id": "de-001-e36",
+              "tipo": "fill-gap",
+              "enunciado": "Guten ___! (arriving for an evening event)",
+              "opcoes": [
+                "Abend",
+                "Morgen",
+                "Nacht"
+              ],
+              "gabarito": "Abend",
+              "explicacao": "Guten Abend is used in the evening, while Gute Nacht is associated with bedtime."
+            },
+            {
+              "id": "de-001-e37",
+              "tipo": "fill-gap",
+              "enunciado": "___, Ben! Wie geht’s? (greeting a friend)",
+              "opcoes": [
+                "Hallo",
+                "Tschüs",
+                "Danke"
+              ],
+              "gabarito": "Hallo",
+              "explicacao": "«Hallo» opens an informal exchange."
+            },
+            {
+              "id": "de-001-r02",
+              "tipo": "repeat",
+              "enunciado": "Repeat the answer and check your phrasing.",
+              "audio": "Gut, danke! Und dir?",
+              "respostaEsperada": "Gut, danke! Und dir?",
+              "explicacao": "Fine, thanks! And you?",
+              "complemento": true
+            },
+            {
+              "id": "de-001-e38",
+              "tipo": "sentence-ordering",
+              "enunciado": "Build the question: 'How are you?'",
+              "opcoes": [
+                "geht’s",
+                "Wie"
+              ],
+              "gabarito": "Wie geht’s?",
+              "explicacao": "The question word Wie comes before geht’s."
+            },
+            {
+              "id": "de-001-e39",
+              "tipo": "sentence-ordering",
+              "enunciado": "Build a polite response to a friend: 'Fine, thanks! And you?'",
+              "opcoes": [
+                "dir",
+                "Gut",
+                "Und",
+                "danke"
+              ],
+              "gabarito": "Gut, danke! Und dir?",
+              "explicacao": "Answer, thank, then hand back the question."
+            },
+            {
+              "id": "de-001-e40",
+              "tipo": "sentence-ordering",
+              "enunciado": "Build the morning greeting for Ben.",
+              "opcoes": [
+                "Ben",
+                "Guten",
+                "Morgen"
+              ],
+              "gabarito": "Guten Morgen, Ben!",
+              "explicacao": "Use the full greeting first, then the name."
+            },
+            {
+              "id": "de-001-r03",
+              "tipo": "repeat",
+              "enunciado": "Respond naturally before revealing the answer.",
+              "audio": "Auch gut, danke.",
+              "respostaEsperada": "Auch gut, danke.",
+              "explicacao": "I'm good too, thanks.",
+              "complemento": true
+            },
+            {
+              "id": "de-001-e41",
+              "tipo": "sentence-ordering",
+              "enunciado": "Build: 'I'm good too, thanks.'",
+              "opcoes": [
+                "danke",
+                "Auch",
+                "gut"
+              ],
+              "gabarito": "Auch gut, danke.",
+              "explicacao": "Auch = also, gut = well, danke = thanks."
+            },
+            {
+              "id": "de-001-e42",
+              "tipo": "producao",
+              "enunciado": "Write a greeting and goodbye you would use with a friend.",
+              "respostaEsperada": "Hallo! Tschüs!",
+              "explicacao": "Other natural informal greetings and farewells can also work."
+            },
+            {
+              "id": "de-001-e43",
+              "tipo": "producao",
+              "enunciado": "Write a two-turn exchange between friends: question, answer, question back.",
+              "respostaEsperada": "Wie geht’s? — Gut, danke! Und dir?",
+              "explicacao": "The goal is an appropriate natural response, not a single mandatory wording."
+            },
+            {
+              "id": "de-001-e44",
+              "tipo": "producao",
+              "enunciado": "Write the evening arrival greeting and what you say at bedtime.",
+              "respostaEsperada": "Guten Abend! — Gute Nacht!",
+              "explicacao": "These expressions serve different situations."
+            }
+          ]
+        },
+        {
+          "tipo": "producao",
+          "min": 2,
+          "enunciado": "Capstone: perform two conversations, first with a friend and then formally with a stranger. With the friend: «Hallo! Wie geht’s? — Gut, danke! Und dir? — Auch gut, danke. Tschüs!». Formally: «Guten Tag! Wie geht es Ihnen? — Gut, danke! Und Ihnen?». Check whether you adjusted the greeting, question and ending to the person.",
+          "exemplo": "Friend: Hallo! Wie geht’s? — Gut, danke! Und dir? — Auch gut, danke. Tschüs! / Formal: Guten Tag! Wie geht es Ihnen? — Gut, danke! Und Ihnen? — Auf Wiedersehen!"
+        }
+      ]
+    }
+  ]
+}
