@@ -10847,7 +10847,7 @@
       "dia": 229,
       "titulo": "Je voudrais signaler un problème",
       "explicacao": "STEP 1: start calm and polite: «Excusez-moi, je voudrais signaler un problème.» STEP 2: describe the fact without accusing: «La climatisation ne marche pas.» «Mes bagages ne sont pas arrivés.» STEP 3: say what you want, using the conditional: «Je voudrais être remboursé.» «Pourriez-vous changer ma chambre ?» STEP 4: ask for a solution: «Que pouvez-vous faire pour moi ?» STEP 5: formal formulas: «Je vous demande de bien vouloir…», «Je souhaiterais obtenir…» STEP 6: if necessary, insist without aggression: «Je comprends, mais ce n'est pas acceptable.»",
-      "comparacao": "in English «I want my money back» sounds firm but is acceptable. In French, the same request with «je veux» sounds aggressive; «je voudrais être remboursé» or «pourriez-vous me rembourser» work better and faster.",
+      "comparacao": "In both English and French, tone and context matter. «Je veux un remboursement» is grammatical but can sound blunt; «Je voudrais être remboursé» or «Pourriez-vous me rembourser ?» is often more tactful when requesting help.",
       "tabela": [
         {
           "situation": "to open",
@@ -10882,19 +10882,19 @@
       ],
       "erros": [
         {
-          "errado": "Je veux un remboursement.",
+          "errado": "Je voudrais être rembourser.",
           "certo": "Je voudrais être remboursé.",
-          "motivo": "Polite request: conditional."
+          "motivo": "After «être», use the past participle «remboursé». Use «remboursée» for a female speaker."
         },
         {
-          "errado": "Mes bagages sont perdus.",
+          "errado": "Mes bagages ne sont pas arrivé.",
           "certo": "Mes bagages ne sont pas arrivés.",
-          "motivo": "Fact, without blame."
+          "motivo": "The past participle agrees with the masculine plural subject «bagages»."
         },
         {
-          "errado": "Vous pouvez changer ma chambre ?",
+          "errado": "Pourriez-vous changer à ma chambre ?",
           "certo": "Pourriez-vous changer ma chambre ?",
-          "motivo": "Mais formal."
+          "motivo": "Here «changer» takes its direct object without «à». «Vous pouvez changer ma chambre ?» is also grammatical; «pourriez-vous» is more formal."
         },
         {
           "errado": "Je me plains de le service.",
@@ -10911,8 +10911,8 @@
       "sessao": "S2",
       "dia": 230,
       "titulo": "Le vol a été annulé",
-      "explicacao": "STEP 1: passive voice = «être» + past participle, which agrees with the subject: «Le vol est annulé.» «Les bagages sont perdus.» STEP 2: the tense comes from the verb «être»: «Le vol a été annulé» (passé composé), «Le vol sera annulé» (future), «Le vol était annulé» (imparfait). STEP 3: the agent of the action comes with «par»: «Le vol a été annulé par la compagnie.» STEP 4: with feeling or state, «de»: «Il est aimé de tous.» STEP 5: French prefers «on» and avoids the passive in speech: «On a annulé le vol.» STEP 6: «se faire» + infinitive is an informal passive: «Je me suis fait voler mon sac.»",
-      "comparacao": "in English «the flight was cancelled» works the same way. The difference is the participle, which agrees («les bagages sont perdus»), and French's preference for «on» in speech: «on a perdu mes bagages». «Je me suis fait voler mon sac» is very frequent and has no direct equivalent (English: “I had my bag stolen”).",
+      "explicacao": "STEP 1: the passive uses «être» + a past participle that agrees with the subject: «Le vol est annulé.» «Les bagages sont perdus.» STEP 2: the form of «être» locates the event or state in time: «Le vol a été annulé» (passé composé), «Le vol sera annulé» (future), «Le vol était annulé» (imparfait). STEP 3: an agent is often introduced with «par»: «Le vol a été annulé par la compagnie.» STEP 4: some verbs of feeling or state use «de»: «Il est aimé de tous.» STEP 5: in conversation, an active sentence with «on» is often an alternative: «On a annulé le vol.» STEP 6: «se faire» + infinitive can describe something that happens to someone: «Je me suis fait voler mon sac.» Its meaning depends on context; it is not a universal passive.",
+      "comparacao": "English also uses a passive in “the flight was canceled.” In French, the participle agrees with the subject: «les bagages sont perdus». You can also use active «on»: «on a perdu mes bagages». «Je me suis fait voler mon sac» means “I had my bag stolen”; the French participle «fait» remains unchanged before an infinitive.",
       "tabela": [
         {
           "mood": "present",
@@ -10971,7 +10971,7 @@
       "dia": 231,
       "titulo": "Talking to the airline",
       "explicacao": "STEP 1: ask for information: «Pouvez-vous me dire pourquoi mon vol a été retardé ?» STEP 2: ask for alternatives: «Y a-t-il un autre vol aujourd'hui ?» STEP 3: give the details: «Mon numéro de vol est AF 123.» STEP 4: declare the loss: «Je voudrais faire une déclaration de perte.» STEP 5: keep the record: «Pouvez-vous me donner un justificatif ?»",
-      "comparacao": "in English «could you tell me…?» is polite; in French, «pouvez-vous me dire» or «pourriez-vous me dire» both work. Watch out for «un justificatif», an essential word for claiming a refund later.",
+      "comparacao": "In English, “could you tell me…?” is polite; in French, «pouvez-vous me dire» and «pourriez-vous me dire» both work. A «justificatif» is supporting documentation; depending on the situation, it may be a receipt, confirmation or other proof.",
       "tabela": [
         {
           "step": "1",
@@ -11006,9 +11006,9 @@
       ],
       "erros": [
         {
-          "errado": "Je veux faire une déclaration.",
+          "errado": "Je voudrais faire une déclaration du perte.",
           "certo": "Je voudrais faire une déclaration de perte.",
-          "motivo": "Polite and specific."
+          "motivo": "Use «de perte» after «déclaration»; the polite conditional «je voudrais» is appropriate."
         },
         {
           "errado": "Mon vol est retard.",
@@ -11016,9 +11016,9 @@
           "motivo": "Participle."
         },
         {
-          "errado": "Il y a un autre vol ?",
+          "errado": "Y a-il un autre vol ?",
           "certo": "Y a-t-il un autre vol ?",
-          "motivo": "Formal form."
+          "motivo": "In formal inversion, add the linking «-t-»: «Y a-t-il… ?». «Il y a un autre vol ?» is also correct in conversational French."
         },
         {
           "errado": "Pouvez vous me donner.",

@@ -27,36 +27,36 @@
           {
             "ru": "un vol",
             "translit": "an VOL",
-            "pt": "",
-            "en": "",
+            "pt": "a flight",
+            "en": "a flight",
             "audio": "un vol"
           },
           {
             "ru": "l'embarquement",
             "translit": "lahn-bahr-kuh-MAHN",
-            "pt": "",
-            "en": "",
+            "pt": "boarding",
+            "en": "boarding",
             "audio": "l'embarquement"
           },
           {
             "ru": "une carte d'embarquement",
             "translit": "ewn kart dahn-bar-kuh-MAHN",
-            "pt": "",
-            "en": "",
+            "pt": "a boarding pass",
+            "en": "a boarding pass",
             "audio": "une carte d'embarquement"
           },
           {
             "ru": "le comptoir",
             "translit": "luh kohn-TWAR",
-            "pt": "",
-            "en": "",
+            "pt": "the counter; the desk",
+            "en": "the counter; the desk",
             "audio": "le comptoir"
           },
           {
             "ru": "une déclaration de perte",
             "translit": "ewn day-klah-rah-see-ohn duh PEHRT",
-            "pt": "",
-            "en": "",
+            "pt": "a loss report",
+            "en": "a loss report",
             "audio": "une déclaration de perte"
           }
         ]
@@ -66,7 +66,7 @@
         "min": 8,
         "titulo": "Talking to the airline",
         "explicacao": "STEP 1: ask for information: «Pouvez-vous me dire pourquoi mon vol a été retardé ?» STEP 2: ask for alternatives: «Y a-t-il un autre vol aujourd'hui ?» STEP 3: give the details: «Mon numéro de vol est AF 123.» STEP 4: declare the loss: «Je voudrais faire une déclaration de perte.» STEP 5: keep the record: «Pouvez-vous me donner un justificatif ?»",
-        "comparacao": "in English «could you tell me…?» is polite; in French, «pouvez-vous me dire» or «pourriez-vous me dire» both work. Watch out for «un justificatif», an essential word for claiming a refund later.",
+        "comparacao": "In English, “could you tell me…?” is polite; in French, «pouvez-vous me dire» and «pourriez-vous me dire» both work. A «justificatif» is supporting documentation; depending on the situation, it may be a receipt, confirmation or other proof.",
         "tabela": [
           {
             "step": "1",
@@ -101,9 +101,9 @@
         ],
         "erros": [
           {
-            "errado": "Je veux faire une déclaration.",
+            "errado": "Je voudrais faire une déclaration du perte.",
             "certo": "Je voudrais faire une déclaration de perte.",
-            "motivo": "Polite and specific."
+            "motivo": "Use «de perte» after «déclaration»; the polite conditional «je voudrais» is appropriate."
           },
           {
             "errado": "Mon vol est retard.",
@@ -111,9 +111,9 @@
             "motivo": "Participle."
           },
           {
-            "errado": "Il y a un autre vol ?",
+            "errado": "Y a-il un autre vol ?",
             "certo": "Y a-t-il un autre vol ?",
-            "motivo": "Formal form."
+            "motivo": "In formal inversion, add the linking «-t-»: «Y a-t-il… ?». «Il y a un autre vol ?» is also correct in conversational French."
           },
           {
             "errado": "Pouvez vous me donner.",
