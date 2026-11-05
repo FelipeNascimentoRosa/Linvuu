@@ -1,0 +1,529 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 64,
+  "fase": 7,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Gustar and preferences: Review and practice of lesson 16",
+  "objetivo": "Lesson 16, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 16,
+    "titulo": "Gustar and preferences",
+    "objetivo": "Talk about what you like and don't like with gustar and encantar, agree and disagree with «a mí también / tampoco / sí / no», give a simple opinion, ask «¿qué te gusta?», and talk about free time.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 16",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Me gustan los gatos",
+            "opcoes": [
+              "[misto] Me gustan los gatos",
+              "[misto] Me gusta el gato",
+              "[misto] Le gustan los gatos"
+            ],
+            "gabarito": "[misto] Me gustan los gatos",
+            "explicacao": "Listen for the plural «gustan» and «me».",
+            "id": "es-016-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "A Pablo le gusta cantar",
+            "opcoes": [
+              "[misto] A Pablo le gusta cantar",
+              "[misto] A Pablo le gustan cantar",
+              "[misto] A Pablo me gusta cantar"
+            ],
+            "gabarito": "[misto] A Pablo le gusta cantar",
+            "explicacao": "Listen for «le gusta»: singular with an infinitive.",
+            "id": "es-016-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "A mí tampoco",
+            "opcoes": [
+              "[misto] A mí tampoco",
+              "[misto] A mí también",
+              "[misto] A mí sí"
+            ],
+            "gabarito": "[misto] A mí tampoco",
+            "explicacao": "Listen for the «-poco» ending in «tampoco».",
+            "id": "es-016-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «divertido, divertida» mean?",
+            "audio": "divertido, divertida",
+            "opcoes": [
+              "to please, to like",
+              "fun, funny",
+              "to delight, to love (a thing)",
+              "to go for a walk"
+            ],
+            "gabarito": "fun, funny",
+            "explicacao": "«divertido, divertida» = fun, funny.",
+            "id": "es-016-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Me encanta bailar",
+            "respostaEsperada": "Me encanta bailar",
+            "explicacao": "Write: Me encanta bailar.",
+            "id": "es-016-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "No me gusta nada",
+            "respostaEsperada": "No me gusta nada",
+            "explicacao": "Write: No me gusta nada.",
+            "id": "es-016-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "¿Qué te gusta hacer?",
+            "respostaEsperada": "¿Qué te gusta hacer?",
+            "explicacao": "Write: ¿Qué te gusta hacer?",
+            "id": "es-016-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «el tiempo libre» mean?",
+            "audio": "el tiempo libre",
+            "opcoes": [
+              "to go for a walk",
+              "free time",
+              "to swim",
+              "to hate"
+            ],
+            "gabarito": "free time",
+            "explicacao": "«el tiempo libre» = free time.",
+            "id": "es-016-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "[misto] Me gusta el café.",
+              "[misto] Yo gusto el café.",
+              "[misto] Me gusto el café."
+            ],
+            "gabarito": "[misto] Me gusta el café.",
+            "explicacao": "The coffee is the subject: «gusta».",
+            "id": "es-016-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "[misto] Me gustan las series.",
+              "[misto] Me gusta las series.",
+              "[misto] Me gustas las series."
+            ],
+            "gabarito": "[misto] Me gustan las series.",
+            "explicacao": "The verb agrees with «las series».",
+            "id": "es-016-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I like to sing»?",
+            "opcoes": [
+              "[misto] Me gusta cantar.",
+              "[misto] Me gusto cantar.",
+              "[misto] Me gusta de cantar."
+            ],
+            "gabarito": "[misto] Me gusta cantar.",
+            "explicacao": "After «gustar» comes the infinitive, with no «de».",
+            "id": "es-016-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «correr» mean?",
+            "audio": "correr",
+            "opcoes": [
+              "to run",
+              "to go for a walk",
+              "boring",
+              "to delight, to love (a thing)"
+            ],
+            "gabarito": "to run",
+            "explicacao": "«correr» = to run.",
+            "id": "es-016-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "The other person says «No me gusta el frío». How do you agree?",
+            "opcoes": [
+              "[misto] A mí tampoco.",
+              "[misto] A mí también.",
+              "[misto] A mí sí."
+            ],
+            "gabarito": "[misto] A mí tampoco.",
+            "explicacao": "Agreeing with a negative calls for «tampoco».",
+            "id": "es-016-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "The other person says «Me gusta correr». How do you disagree?",
+            "opcoes": [
+              "[misto] A mí no.",
+              "[misto] A mí tampoco.",
+              "[misto] A mí también."
+            ],
+            "gabarito": "[misto] A mí no.",
+            "explicacao": "To disagree with something positive, say «a mí no».",
+            "id": "es-016-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I play guitar»?",
+            "opcoes": [
+              "[misto] Toco la guitarra.",
+              "[misto] Juego la guitarra.",
+              "[misto] Juego a la guitarra."
+            ],
+            "gabarito": "[misto] Toco la guitarra.",
+            "explicacao": "Instruments are «played» with «tocar».",
+            "id": "es-016-e12"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «odiar» mean?",
+            "audio": "odiar",
+            "opcoes": [
+              "to swim",
+              "free time",
+              "to hate",
+              "boring"
+            ],
+            "gabarito": "to hate",
+            "explicacao": "«odiar» = to hate.",
+            "id": "es-016-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "A mis padres ___ gustan los museos.",
+            "opcoes": [
+              "[misto] les",
+              "[misto] le",
+              "[misto] los"
+            ],
+            "gabarito": "[misto] les",
+            "explicacao": "The pronoun agrees with «mis padres»: «les».",
+            "id": "es-016-e13"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "A ella ___ gusta cocinar.",
+            "opcoes": [
+              "[misto] le",
+              "[misto] les",
+              "[misto] me"
+            ],
+            "gabarito": "[misto] le",
+            "explicacao": "With «ella», the pronoun is «le».",
+            "id": "es-016-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Prefiero el té ___ café.",
+            "opcoes": [
+              "[misto] al",
+              "[misto] que el",
+              "[misto] a el"
+            ],
+            "gabarito": "[misto] al",
+            "explicacao": "Preferir X «a» Y: a + el = al.",
+            "id": "es-016-e15"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "el tiempo libre",
+            "respostaEsperada": "el tiempo libre",
+            "explicacao": "free time",
+            "id": "es-016-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «pasear» mean?",
+            "audio": "pasear",
+            "opcoes": [
+              "free time",
+              "to hate",
+              "to go for a walk",
+              "to swim"
+            ],
+            "gabarito": "to go for a walk",
+            "explicacao": "«pasear» = to go for a walk.",
+            "id": "es-016-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Juego ___ fútbol los domingos.",
+            "opcoes": [
+              "[misto] al",
+              "[misto] el",
+              "[misto] en"
+            ],
+            "gabarito": "[misto] al",
+            "explicacao": "Jugar «a» + sport: a + el = al.",
+            "id": "es-016-e16"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Esta tarta está ___. (delicious)",
+            "opcoes": [
+              "[misto] exquisita",
+              "[misto] esquisita",
+              "[misto] rara"
+            ],
+            "gabarito": "[misto] exquisita",
+            "explicacao": "False friend: «exquisito» means delicious.",
+            "id": "es-016-e17"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «A mí me gusta bailar.»",
+            "opcoes": [
+              "A",
+              "mí",
+              "me",
+              "gusta",
+              "bailar."
+            ],
+            "gabarito": "A mí me gusta bailar.",
+            "explicacao": "«A mí» before the pronoun.",
+            "id": "es-016-e18"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «bastante» mean?",
+            "audio": "bastante",
+            "opcoes": [
+              "quite a bit",
+              "to read",
+              "boring",
+              "the series, the show"
+            ],
+            "gabarito": "quite a bit",
+            "explicacao": "«bastante» = quite a bit.",
+            "id": "es-016-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «No me gustan las series largas.»",
+            "opcoes": [
+              "No",
+              "me",
+              "gustan",
+              "las",
+              "series",
+              "largas."
+            ],
+            "gabarito": "No me gustan las series largas.",
+            "explicacao": "«No» before the pronoun.",
+            "id": "es-016-e19"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I like cooking, but I don't like washing dishes.",
+            "respostaEsperada": "[misto] Me gusta cocinar, pero no me gusta lavar los platos.",
+            "id": "es-016-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "A mí me ___ los gatos. (gustar)",
+            "opcoes": [
+              "[misto] gusta",
+              "[misto] gusto",
+              "[misto] gustan"
+            ],
+            "gabarito": "[misto] gustan",
+            "explicacao": "The verb agrees with what's liked: «los gatos» is plural.",
+            "id": "es-016-e21"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Me gustan los gatos",
+            "opcoes": [
+              "los",
+              "gustan",
+              "gatos",
+              "Me"
+            ],
+            "gabarito": "Me gustan los gatos",
+            "explicacao": "Write: Me gustan los gatos",
+            "id": "es-016-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "A nosotros ___ gusta el cine. (pronoun)",
+            "opcoes": [
+              "[misto] les",
+              "[misto] nos",
+              "[misto] os"
+            ],
+            "gabarito": "[misto] nos",
+            "explicacao": "The pronoun for «nosotros» is «nos».",
+            "id": "es-016-e22"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Toco ___ piano. (the)",
+            "opcoes": [
+              "[misto] el",
+              "[misto] la",
+              "[misto] al"
+            ],
+            "gabarito": "[misto] el",
+            "explicacao": "With «tocar» + an instrument, you use the article: «el piano».",
+            "id": "es-016-e23"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Juego ___ las cartas. (to)",
+            "opcoes": [
+              "[misto] en",
+              "[misto] con",
+              "[misto] a"
+            ],
+            "gabarito": "[misto] a",
+            "explicacao": "With «jugar», the game follows «a».",
+            "id": "es-016-e24"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "A Pablo le gusta cantar",
+            "opcoes": [
+              "cantar",
+              "le",
+              "A",
+              "gusta",
+              "Pablo"
+            ],
+            "gabarito": "A Pablo le gusta cantar",
+            "explicacao": "Write: A Pablo le gusta cantar",
+            "id": "es-016-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "The other person says «Me gusta el cine». How do you agree?",
+            "opcoes": [
+              "[misto] A mí también.",
+              "[misto] A mí tampoco.",
+              "[misto] A mí no."
+            ],
+            "gabarito": "[misto] A mí también.",
+            "explicacao": "Agreeing with something positive: «A mí también».",
+            "id": "es-016-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence uses the right pronoun?",
+            "opcoes": [
+              "[misto] A Pablo gusta el cine.",
+              "[misto] Le Pablo gusta el cine.",
+              "[misto] A Pablo le gusta el cine."
+            ],
+            "gabarito": "[misto] A Pablo le gusta el cine.",
+            "explicacao": "With «a + person», the pronoun «le» is required.",
+            "id": "es-016-e26"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you ask «What color do you prefer?»",
+            "opcoes": [
+              "[misto] ¿Cuál color prefieres?",
+              "[misto] ¿Qué color prefieres?",
+              "[misto] ¿Cuáles color prefieres?"
+            ],
+            "gabarito": "[misto] ¿Qué color prefieres?",
+            "explicacao": "Before a noun, you use «qué».",
+            "id": "es-016-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "A mí tampoco",
+            "opcoes": [
+              "tampoco",
+              "A",
+              "mí"
+            ],
+            "gabarito": "A mí tampoco",
+            "explicacao": "Write: A mí tampoco",
+            "id": "es-016-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Me gusta leer en mi tiempo libre.»",
+            "opcoes": [
+              "Me",
+              "gusta",
+              "leer",
+              "en",
+              "mi",
+              "tiempo",
+              "libre."
+            ],
+            "gabarito": "Me gusta leer en mi tiempo libre.",
+            "explicacao": "With an infinitive, «gustar» stays singular.",
+            "id": "es-016-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I love cooking, how about you? (informal)",
+            "respostaEsperada": "[misto] Me encanta cocinar, ¿y a ti?",
+            "id": "es-016-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: She plays piano and I play soccer.",
+            "respostaEsperada": "[misto] Ella toca el piano y yo juego al fútbol.",
+            "id": "es-016-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Introduce yourself out loud talking only about likes and preferences, in eight sentences: what you like, what you love, what you prefer, and what you don't like."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say five things you like and two you don't. Then ask an imaginary friend and answer with «a mí también» or «a mí tampoco»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-016.json",
+  "responsavel": null
+}

@@ -1,0 +1,226 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 77,
+  "fase": 8,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Irregular pretérito indefinido: Fui, di, vi, hice",
+  "objetivo": "Lesson 20, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 20,
+    "titulo": "Irregular pretérito indefinido",
+    "objetivo": "Use the most frequent irregular verbs in the pretérito indefinido: «ser» and «ir» (fui), «dar», «ver», «hacer», the new-stem verbs («tuve, estuve, pude, puse, supe, quise, vine»), «decir» and «traer» (dijeron, trajeron), and verbs like «pedir» and «dormir» (pidió, durmió).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Fui, di, vi, hice",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "ir",
+            "translit": "to go",
+            "pt": "to go",
+            "en": "",
+            "audio": "ir"
+          },
+          {
+            "ru": "ser",
+            "translit": "[pronuncia] ser",
+            "pt": "to be",
+            "en": "",
+            "audio": "ser"
+          },
+          {
+            "ru": "dar",
+            "translit": "to give",
+            "pt": "to give",
+            "en": "",
+            "audio": "dar"
+          },
+          {
+            "ru": "ver",
+            "translit": "[pronuncia] ber",
+            "pt": "to see",
+            "en": "",
+            "audio": "ver"
+          },
+          {
+            "ru": "hacer",
+            "translit": "[pronuncia] ah-THER",
+            "pt": "to do, to make",
+            "en": "",
+            "audio": "hacer"
+          },
+          {
+            "ru": "el regalo",
+            "translit": "[pronuncia] el reh-GAH-lo",
+            "pt": "the gift",
+            "en": "",
+            "audio": "el regalo"
+          },
+          {
+            "ru": "la película",
+            "translit": "[pronuncia] la peh-LEE-koo-lah",
+            "pt": "the movie",
+            "en": "",
+            "audio": "la película"
+          },
+          {
+            "ru": "el viaje",
+            "translit": "[pronuncia] el BYAH-heh",
+            "pt": "the trip",
+            "en": "",
+            "audio": "el viaje"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Ser, ir, dar, ver, and hacer in the indefinido",
+        "explicacao": "STEP 1: a few very common verbs don't follow lesson 19's pattern. They have their own forms, and it's worth memorizing them as whole words. STEP 2: «ser» and «ir» share exactly the same form in the indefinido: fui, fuiste, fue, fuimos, fuisteis, fueron. The meaning comes from the rest of the sentence: «Fui a Madrid» (I went to Madrid, verb «ir») and «Fue un día largo» (it was a long day, verb «ser»). STEP 3: with «ir», the place follows «a»: «Fuimos a la playa», «Fui al médico» (a + el = al). Never with «en». STEP 4: «dar» and «ver» use the same -er/-ir endings but carry no written accent, because they're one-syllable words: di, diste, dio, dimos, disteis, dieron; vi, viste, vio, vimos, visteis, vieron. STEP 5: «hacer» swaps its stem for «hic-»; in the third person singular, the «c» becomes «z» to keep the sound: hice, hiciste, hizo, hicimos, hicisteis, hicieron. STEP 6: none of these forms carries a written accent: «fui», «fue», «di», «vi», «dio», «vio». Writing «fuí» or «vió» is a common mistake. STEP 7: in Latin America, these forms are the same. What changes is frequency: there, «Hoy fui al médico» sounds natural, while Spain tends to prefer «Hoy he ido al médico».",
+        "comparacao": "English «went» covers both «ir» and, loosely, a sense of «was» in some idioms, but Spanish folding «ser» and «ir» into the exact same form (fui, fue, fuimos…) has no real English parallel — you have to rely entirely on context to tell them apart, the same way context (not form) tells «I was» from «I went» apart in English, just through different words rather than the same one. The spelling trap here is specific to Spanish: these one-syllable forms (fui, fue, di, vi, dio, vio) never carry a written accent, unlike the two-syllable-or-more regular endings from lesson 19 (hablé, habló) which do.",
+        "exemplos": [
+          {
+            "ru": "El domingo vi una película con mi primo.",
+            "pt": "On Sunday I watched a movie with my cousin."
+          },
+          {
+            "ru": "Mi madre me dio un regalo.",
+            "pt": "My mother gave me a gift."
+          },
+          {
+            "ru": "¿Qué hicisteis el viernes?",
+            "pt": "What did you all do on Friday?"
+          }
+        ],
+        "tabelas": [
+          {
+            "titulo": "ser and ir, indefinido",
+            "linhas": [
+              {
+                "pronome": "[misto] yo",
+                "forma": "[misto] fui",
+                "exemplo": "[misto] Ayer fui al cine."
+              },
+              {
+                "pronome": "[misto] tú",
+                "forma": "[misto] fuiste",
+                "exemplo": "[misto] ¿Adónde fuiste el sábado?"
+              },
+              {
+                "pronome": "[misto] él / ella / usted",
+                "forma": "[misto] fue",
+                "exemplo": "[misto] Fue una fiesta estupenda."
+              },
+              {
+                "pronome": "[misto] nosotros",
+                "forma": "[misto] fuimos",
+                "exemplo": "[misto] Fuimos a Granada en tren."
+              },
+              {
+                "pronome": "[misto] vosotros",
+                "forma": "[misto] fuisteis",
+                "exemplo": "[misto] ¿Fuisteis a la playa?"
+              },
+              {
+                "pronome": "[misto] ellos / ustedes",
+                "forma": "[misto] fueron",
+                "exemplo": "[misto] Fueron muy amables."
+              }
+            ]
+          },
+          {
+            "titulo": "dar, ver, hacer, indefinido",
+            "linhas": [
+              {
+                "pronome": "[misto] yo",
+                "dar": "[misto] di",
+                "ver": "[misto] vi",
+                "hacer": "[misto] hice"
+              },
+              {
+                "pronome": "[misto] tú",
+                "dar": "[misto] diste",
+                "ver": "[misto] viste",
+                "hacer": "[misto] hiciste"
+              },
+              {
+                "pronome": "[misto] él / ella / usted",
+                "dar": "[misto] dio",
+                "ver": "[misto] vio",
+                "hacer": "[misto] hizo"
+              },
+              {
+                "pronome": "[misto] nosotros",
+                "dar": "[misto] dimos",
+                "ver": "[misto] vimos",
+                "hacer": "[misto] hicimos"
+              },
+              {
+                "pronome": "[misto] vosotros",
+                "dar": "[misto] disteis",
+                "ver": "[misto] visteis",
+                "hacer": "[misto] hicisteis"
+              },
+              {
+                "pronome": "[misto] ellos / ustedes",
+                "dar": "[misto] dieron",
+                "ver": "[misto] vieron",
+                "hacer": "[misto] hicieron"
+              }
+            ]
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] Ayer fuí al médico.",
+            "certo": "[misto] Ayer fui al médico.",
+            "motivo": "«Fui» has one syllable and carries no written accent."
+          },
+          {
+            "errado": "[misto] Ayer fui en Madrid.",
+            "certo": "[misto] Ayer fui a Madrid.",
+            "motivo": "With «ir», the destination takes «a»."
+          },
+          {
+            "errado": "[misto] Ella hico la comida.",
+            "certo": "[misto] Ella hizo la comida.",
+            "motivo": "In the third person, the «c» becomes «z»: «hizo»."
+          },
+          {
+            "errado": "[misto] Yo hací un pastel.",
+            "certo": "[misto] Yo hice un pastel.",
+            "motivo": "The «yo» form is «hice»."
+          },
+          {
+            "errado": "[misto] Él vió la película.",
+            "certo": "[misto] Él vio la película.",
+            "motivo": "«Vio» has one syllable and carries no accent."
+          }
+        ],
+        "tag": "Pretérito indefinido"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say six sentences about a recent outing: where you went («Fui a…»), what you saw («Vi…»), what you did («Hice…»), what a friend gave you («Me dio…»), who you went with («Fui con…»), and how it went («Fue…»)."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Conjugate «comer» and «escribir» in the indefinido. Then say three sentences about yesterday: one with «ayer», one with «anoche», and one with «hace dos días»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-020.json",
+  "responsavel": null
+}

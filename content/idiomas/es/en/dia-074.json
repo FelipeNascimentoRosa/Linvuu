@@ -1,0 +1,235 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 74,
+  "fase": 8,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Regular pretérito indefinido: The indefinido in -er and -ir, and spelling changes",
+  "objetivo": "Lesson 19, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 19,
+    "titulo": "Regular pretérito indefinido",
+    "objetivo": "Narrate what happened and is already finished («ayer», «anoche», «el año pasado») with the regular -ar, -er and -ir forms of the pretérito indefinido, get the accent marks right («hablé», «habló»), handle the spelling changes («busqué», «llegué», «empecé», «leyó»), and tell the indefinido apart from the pretérito perfecto.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "The indefinido in -er and -ir, and spelling changes",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "comer",
+            "translit": "[pronuncia] ko-MER",
+            "pt": "to eat",
+            "en": "",
+            "audio": "comer"
+          },
+          {
+            "ru": "beber",
+            "translit": "[pronuncia] beh-BER",
+            "pt": "to drink",
+            "en": "",
+            "audio": "beber"
+          },
+          {
+            "ru": "vivir",
+            "translit": "[pronuncia] bee-BEER",
+            "pt": "to live",
+            "en": "",
+            "audio": "vivir"
+          },
+          {
+            "ru": "escribir",
+            "translit": "[pronuncia] es-kree-BEER",
+            "pt": "to write",
+            "en": "",
+            "audio": "escribir"
+          },
+          {
+            "ru": "salir",
+            "translit": "[pronuncia] sah-LEER",
+            "pt": "to leave, to go out",
+            "en": "",
+            "audio": "salir"
+          },
+          {
+            "ru": "recibir",
+            "translit": "[pronuncia] reh-thee-BEER",
+            "pt": "to receive",
+            "en": "",
+            "audio": "recibir"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Indefinido: -er, -ir, and spelling changes",
+        "explicacao": "STEP 1: -er and -ir verbs use the same endings in the indefinido: -í, -iste, -ió, -imos, -isteis, -ieron. «Comer» becomes «comí, comiste, comió, comimos, comisteis, comieron». «Vivir» becomes «viví, viviste, vivió, vivimos, vivisteis, vivieron». STEP 2: the first person «-í» and the third person «-ió» carry an accent: «comí», «comió». STEP 3: in «nosotros», -ir verbs look just like the present («vivimos»), but -er verbs change: present «comemos», indefinido «comimos». STEP 4: watch the third-person ending closely: it's «comió», «vivió» — never anything resembling an English-style reduction. And the plural is «comieron», never «comeron». STEP 5: to keep the sound the same, some -ar verbs change their spelling only in «yo». Verbs ending in «-car» become «-qué» («buscar → busqué»), those in «-gar» become «-gué» («llegar → llegué»), and those in «-zar» become «-cé» («empezar → empecé»). STEP 6: when the stem ends in a vowel, the «i» between two vowels becomes «y» in the third person: «leer → leyó, leyeron». The other forms carry an accent on the «í»: «leí, leíste, leímos, leísteis». «Creer» (creyó) and «oír» (oyó) do the same thing. STEP 7: «salir» is irregular only in the present («salgo»); in the indefinido it's regular: «salí, saliste, salió». STEP 8: a few very common verbs (ser, ir, hacer, tener, decir, ver) are irregular in the indefinido. Those are saved for lesson 20.",
+        "comparacao": "English past-tense verbs don't change their ending based on whether the root ends in a vowel or consonant, so the «i → y» spelling shift in «leyó», «creyó», «oyó» has no parallel to lean on — it's simply a Spanish spelling rule to learn on its own. The «-car/-gar/-zar» spelling changes (busqué, llegué, empecé) are the same kind of thing: a pattern that keeps the consonant sound stable in writing, with nothing in English's own spelling system to map it onto.",
+        "exemplos": [
+          {
+            "ru": "Anoche escribí un correo largo.",
+            "pt": "Last night I wrote a long email."
+          },
+          {
+            "ru": "Llegué a casa a las nueve.",
+            "pt": "I got home at nine."
+          },
+          {
+            "ru": "Ellos vivieron un año en Lima.",
+            "pt": "They lived in Lima for a year."
+          }
+        ],
+        "tabelas": [
+          {
+            "titulo": "comer and vivir, indefinido",
+            "linhas": [
+              {
+                "pronome": "[misto] yo",
+                "comer": "[misto] comí",
+                "vivir": "[misto] viví"
+              },
+              {
+                "pronome": "[misto] tú",
+                "comer": "[misto] comiste",
+                "vivir": "[misto] viviste"
+              },
+              {
+                "pronome": "[misto] él / ella / usted",
+                "comer": "[misto] comió",
+                "vivir": "[misto] vivió"
+              },
+              {
+                "pronome": "[misto] nosotros",
+                "comer": "[misto] comimos",
+                "vivir": "[misto] vivimos"
+              },
+              {
+                "pronome": "[misto] vosotros",
+                "comer": "[misto] comisteis",
+                "vivir": "[misto] vivisteis"
+              },
+              {
+                "pronome": "[misto] ellos / ustedes",
+                "comer": "[misto] comieron",
+                "vivir": "[misto] vivieron"
+              }
+            ]
+          },
+          {
+            "titulo": "Spelling changes in the «yo» form",
+            "linhas": [
+              {
+                "infinitivo": "[misto] buscar",
+                "yo": "[misto] busqué",
+                "motivo": "[misto] c + é would sound like «th»; «qu» keeps the «k» sound"
+              },
+              {
+                "infinitivo": "[misto] tocar",
+                "yo": "[misto] toqué",
+                "motivo": "[misto] same rule as «-car»"
+              },
+              {
+                "infinitivo": "[misto] llegar",
+                "yo": "[misto] llegué",
+                "motivo": "[misto] g + é would sound like «h»; «gu» keeps the «g» sound"
+              },
+              {
+                "infinitivo": "[misto] pagar",
+                "yo": "[misto] pagué",
+                "motivo": "[misto] same rule as «-gar»"
+              },
+              {
+                "infinitivo": "[misto] empezar",
+                "yo": "[misto] empecé",
+                "motivo": "[misto] z is never written before «e»; it becomes «c»"
+              },
+              {
+                "infinitivo": "[misto] cruzar",
+                "yo": "[misto] crucé",
+                "motivo": "[misto] same rule as «-zar»"
+              }
+            ]
+          },
+          {
+            "titulo": "leer, indefinido",
+            "linhas": [
+              {
+                "pronome": "[misto] yo",
+                "forma": "[misto] leí"
+              },
+              {
+                "pronome": "[misto] tú",
+                "forma": "[misto] leíste"
+              },
+              {
+                "pronome": "[misto] él / ella / usted",
+                "forma": "[misto] leyó"
+              },
+              {
+                "pronome": "[misto] nosotros",
+                "forma": "[misto] leímos"
+              },
+              {
+                "pronome": "[misto] vosotros",
+                "forma": "[misto] leísteis"
+              },
+              {
+                "pronome": "[misto] ellos / ustedes",
+                "forma": "[misto] leyeron"
+              }
+            ]
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] Él comeu en el bar.",
+            "certo": "[misto] Él comió en el bar.",
+            "motivo": "In the third person of -er and -ir verbs, the ending is «-ió»."
+          },
+          {
+            "errado": "[misto] Ellos viveron en Sevilla.",
+            "certo": "[misto] Ellos vivieron en Sevilla.",
+            "motivo": "The plural is «-ieron»."
+          },
+          {
+            "errado": "[misto] Ayer llegé tarde.",
+            "certo": "[misto] Ayer llegué tarde.",
+            "motivo": "To keep the «g» sound, you write «gu» before the «é»."
+          },
+          {
+            "errado": "[misto] El año pasado empezé a estudiar.",
+            "certo": "[misto] El año pasado empecé a estudiar.",
+            "motivo": "You never write «z» before «e»; use «c» instead."
+          },
+          {
+            "errado": "[misto] Ella leió el libro.",
+            "certo": "[misto] Ella leyó el libro.",
+            "motivo": "The «i» between two vowels becomes «y»: «leyó»."
+          }
+        ],
+        "tag": "Pretérito indefinido"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Narrate out loud, in at least eight sentences, how your last Sunday went: what you ate and drank, who you wrote to, what time you left and what time you got back. Use «el domingo pasado», «primero», «luego» and «después»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Conjugate «hablar» and «trabajar» in the indefinido, from «yo» to «ellos». Say one sentence with «ayer» and another with «anoche»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-019.json",
+  "responsavel": null
+}
