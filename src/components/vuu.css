@@ -1,0 +1,11 @@
+/* Vuu ancorado (components/Vuu.tsx): estados estáticos, sem animação.
+   Na área do aluno em tema escuro, troca a variante verde pela papel por
+   estado — mesmo padrão que o wordmark do APK já usa com `content:url(...)`
+   (plataforma/apk/app.css) e que Carregando.tsx usa para o sonolento. Sem
+   esta troca, o corpo verde (#1E3B2F) ficava praticamente invisível sobre
+   o fundo verde-escuro do tema. */
+.vuu-estado{display:block;flex:none}
+.area-aluno[data-tema="escuro"] .vuu-estado[data-estado="celebracao"]{content:url(/assets/vuu/vuu-celebracao-papel.svg)}
+.area-aluno[data-tema="escuro"] .vuu-estado[data-estado="erro-gentil"]{content:url(/assets/vuu/vuu-erro-gentil-papel.svg)}
+.area-aluno[data-tema="escuro"] .vuu-estado[data-estado="a-pensar"]{content:url(/assets/vuu/vuu-a-pensar-papel.svg)}
+.area-aluno[data-tema="escuro"] .vuu-estado[data-estado="curioso"]{content:url(/assets/vuu/vuu-curioso-papel.svg)}

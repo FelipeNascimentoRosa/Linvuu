@@ -25,7 +25,7 @@ const escrever = (f, o) => { fs.mkdirSync(path.dirname(f), { recursive: true });
 // Tipos de campo: «explicacao» (sempre na língua da explicação), «misto» (opções, erros, células de tabela: podem ser do idioma
 // estudado e só mudam se houver tradução), «pronuncia» (pronúncia aproximada, feita para quem fala a língua da explicação) e «personagem».
 /** Percorre a aula e chama f(texto, tipoDoCampo, definir) para cada texto que pode ser traduzido. */
-function percorrer(aula, f) {
+export function percorrer(aula, f) {
   const campo = (obj, k, tipo) => { if (typeof obj[k] === 'string' && obj[k].trim()) f(obj[k], tipo, (v) => { obj[k] = v; }, k); };
   for (const k of ['titulo', 'objetivo', 'notasParaOAluno']) campo(aula, k, 'explicacao');
   for (const s of aula.sessoes) {
@@ -77,6 +77,28 @@ export function traduzirAula(aula, id, l) {
     if (typeof v === 'string' && v.length) { definir(v); return; }
     if (tipo === 'explicacao') faltam.push(t);
   });
+  // Overrides por exercício permitem adaptar enunciados idênticos a contextos distintos.
+  for (const sessao of copia.sessoes) for (const bloco of sessao.blocos) {
+    if (bloco.tipo !== 'exercicios') continue;
+    for (const item of bloco.itens) {
+      const raw = mapa[`@exercicio:${item.id}`];
+      if (!raw) continue;
+      const override = JSON.parse(raw);
+      for (const campo of ['tipo', 'enunciado', 'explicacao', 'opcoes', 'gabarito', 'respostaEsperada', 'audio']) {
+        if (Object.hasOwn(override, campo)) { if (override[campo] === null) delete item[campo]; else item[campo] = override[campo]; }
+      }
+    }
+  }
+  // Ajustes contextuais em células específicas, sem alterar traduções iguais noutros contextos.
+  copia.sessoes.forEach((sessao, si) => sessao.blocos.forEach((bloco, bi) => {
+    const raw = mapa[`@bloco:${si}:${bi}`];
+    if (!raw) return;
+    for (const [caminho, valor] of Object.entries(JSON.parse(raw))) {
+      const partes = caminho.split('.'); let destino = bloco;
+      for (const parte of partes.slice(0, -1)) destino = destino[parte];
+      destino[partes.at(-1)] = valor;
+    }
+  }));
   // Palavras: o inglês já existe no dado (`en`) nos cursos de russo e alemão.
   if (l === 'en') for (const s of copia.sessoes) for (const b of s.blocos) if (b.tipo === 'palavras' || b.tipo === 'vocabulario') b.itens.forEach((i, k) => {
     const original = aula.sessoes[copia.sessoes.indexOf(s)].blocos[s.blocos.indexOf(b)].itens[k].pt;

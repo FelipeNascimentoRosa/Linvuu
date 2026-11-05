@@ -27,10 +27,12 @@ assert.ok(!home.includes('Escolha o idioma</strong>'));
 assert.ok(html('/cursos').includes('<h1>Cursos</h1>'));
 assert.ok(html('/en').includes('Language courses for English speakers'));
 assert.ok(!html('/en').includes('Brazilian learners'));
-assert.ok(html('/en').includes('Explanations in English'));
+assert.ok(html('/en').includes('Brazilian Portuguese, French and Russian explained in English'));
+assert.ok(!html('/en').includes('Every explanation is in English'), 'a home em inglês não promete explicação em inglês onde ela não existe');
 assert.ok(!html('/en').includes('lessons explained in English'));
 assert.ok(html('/es').includes('Cursos de idiomas para hispanohablantes'));
-assert.ok(html('/es').includes('Explicaciones en español'));
+assert.ok(html('/es').includes('portugués de Brasil con 2 lecciones y gramática en español'));
+assert.ok(!html('/es').includes('Todas las explicaciones están en español'), 'a home em espanhol não promete explicação em espanhol onde ela não existe');
 assert.ok(!html('/es').includes('lecciones explicadas en español'));
 assert.ok(!html('/assinatura').includes('name="robots" content="noindex"'));
 assert.ok(html('/assinatura').includes('<h1>Planos e assinatura</h1>'));
@@ -40,7 +42,10 @@ assert.ok(!html('/assinatura').includes(PLANOS_AVISO), 'planos em preparação n
 assert.ok(html('/assinatura').includes('Testar 2 aulas grátis, sem cartão'));
 assert.ok(html('/assinatura').includes('R$ 291,90'));
 assert.ok(!html('/assinatura').includes('Alguns áudios podem estar temporariamente indisponíveis'));
-for (const rota of ['/entrar', '/cadastro', '/en/assinatura', '/es/assinatura']) assert.ok(html(rota).includes('name="robots" content="noindex"'));
+for (const rota of ['/entrar', '/cadastro']) assert.ok(html(rota).includes('name="robots" content="noindex"'));
+// As versões EN/ES da assinatura são páginas localizadas genuínas e indexáveis — os alternates
+// hreflang da página de preços não podem apontar para páginas noindex (defeito S2 da auditoria).
+for (const rota of ['/en/assinatura', '/es/assinatura']) assert.ok(!html(rota).includes('name="robots" content="noindex"'), `${rota} indexável`);
 assert.equal(metaDaRota('/pagina-inexistente-auditoria', dados).status, 404);
 assert.ok(!html('/curso/en/dia/9').includes('\"isAccessibleForFree\":true'));
 assert.ok(!html('/curso/en/dia/9').includes('<h2>Vocabulário</h2>'));

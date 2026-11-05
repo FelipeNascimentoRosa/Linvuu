@@ -17,13 +17,13 @@ const copy: Record<string, readonly [string, string]> = {
   'CONHEÇA O VUU': ['MEET VUU', 'CONOCE A VUU'],
   'Uma língua fica mais próxima quando faz sentido.': ['A language feels closer when it makes sense.', 'Una lengua se siente más cercana cuando tiene sentido.'],
   'Vuu acompanha a curiosidade que move a Linvuu: entender o que as palavras fazem, ouvir como soam e usar o idioma em situações reais.': ['Vuu shares the curiosity behind Linvuu: understand what words do, hear how they sound and use the language in real situations.', 'Vuu comparte la curiosidad que mueve a Linvuu: entender qué hacen las palabras, escuchar cómo suenan y usar el idioma en situaciones reales.'],
-  'Comece com uma explicação em português e pratique no seu ritmo.': ['Start with an explanation in English and practise at your own pace.', 'Empieza con una explicación en español y practica a tu ritmo.'],
+  'Comece com uma explicação em português e pratique no seu ritmo.': ['Start with an explanation that makes sense and practise at your own pace.', 'Empieza con una explicación que se entiende y practica a tu ritmo.'],
   'Conhecer o curso de alemão →': ['Explore the German course →', 'Conocer el curso de alemán →'],
 
   'VUU · UM GOSTINHO DO SEU PRÓXIMO IDIOMA': ['VUU · A TASTE OF YOUR NEXT LANGUAGE', 'VUU · UNA MUESTRA DE TU PRÓXIMO IDIOMA'],
   'A OFERTA DE HOJE': ['AVAILABLE TODAY', 'DISPONIBLE HOY'],
   'Seu ritmo.': ['Your pace.', 'A tu ritmo.'], 'Seu próximo idioma.': ['Your next language.', 'Tu próximo idioma.'],
-  'Acesso aos cursos de idiomas, com explicações em português. Comece pelas duas primeiras aulas grátis, sem cartão.': ['Language courses with explanations in English. Start with two free lessons, no card required.', 'Cursos de idiomas con explicaciones en español. Empieza con dos clases gratis, sin tarjeta.'],
+  'Acesso aos cursos de idiomas, com explicações em português. Comece pelas duas primeiras aulas grátis, sem cartão.': ['All language courses included: Brazilian Portuguese, French and Russian fully in English; German, Spanish and Italian in translation. Start with two free lessons, no card required.', 'Todos los cursos incluidos: en español, las 2 primeras lecciones y la gramática de portugués de Brasil; los demás, en portugués y en traducción. Dos clases gratis, sin tarjeta.'],
   'Mensal': ['Monthly', 'Mensual'], 'Três meses no Pix': ['Three months with Pix', 'Tres meses con Pix'], 'Anual': ['Annual', 'Anual'],
   'por mês · renovação automática': ['per month · automatic renewal', 'por mes · renovación automática'],
   'pagamento único · 30% de desconto': ['one-time payment · 30% off', 'pago único · 30% de descuento'],
@@ -39,8 +39,8 @@ const copy: Record<string, readonly [string, string]> = {
 
   'Planos': ['Plans', 'Planes'],
   'Cursos de idiomas para brasileiros': ['Language courses for English speakers', 'Cursos de idiomas para hispanohablantes'],
-  'Cursos de inglês, espanhol, francês, italiano, alemão e russo feitos para brasileiros. Explicações em português, áudio e exercícios. Experimente 2 aulas grátis.': ['Brazilian Portuguese, Spanish, French, Italian, German and Russian courses for English speakers. Explanations in English, audio and exercises. Try 2 free lessons.', 'Cursos de inglés, español, francés, italiano, alemán y ruso para hispanohablantes. Explicaciones en español, audio y ejercicios. Prueba 2 clases gratis.'],
-  'Aprenda um novo idioma com explicações que fazem sentido para brasileiros. Ouça, entenda e pratique — um passo possível de cada vez.': ['Learn a new language with explanations that make sense to English speakers. Listen, understand and practise — one achievable step at a time.', 'Aprende un nuevo idioma con explicaciones pensadas para hispanohablantes. Escucha, comprende y practica, un paso a tu alcance cada vez.'],
+  'Cursos de inglês, espanhol, francês, italiano, alemão e russo feitos para brasileiros. Explicações em português, áudio e exercícios. Experimente 2 aulas grátis.': ['Courses for English speakers: Brazilian Portuguese, French and Russian explained in English; German, Spanish and Italian in translation. Try 2 free lessons.', 'Cursos para hispanohablantes: portugués de Brasil con 2 lecciones y gramática en español; los demás, en portugués (en traducción). 2 clases gratis.'],
+  'Aprenda um novo idioma com explicações que fazem sentido para brasileiros. Ouça, entenda e pratique — um passo possível de cada vez.': ['Learn a new language with explanations that truly make sense. Listen, understand and practise — one achievable step at a time.', 'Aprende un nuevo idioma con explicaciones que de verdad se entienden. Escucha, comprende y practica, un paso a tu alcance cada vez.'],
   'Português do Brasil': ['Brazilian Portuguese', 'Portugués de Brasil'], 'Do primeiro “oi” às suas próximas conversas no Brasil.': ['From your first “oi” to your next conversations in Brazil.', 'Del primer «oi» a tus próximas conversaciones en Brasil.'],
   'Inglês': ['English', 'Inglés'], 'Espanhol': ['Spanish', 'Español'], 'Francês': ['French', 'Francés'],
   'Italiano': ['Italian', 'Italiano'], 'Alemão': ['German', 'Alemán'], 'Russo': ['Russian', 'Ruso'],
@@ -51,7 +51,7 @@ const copy: Record<string, readonly [string, string]> = {
   'Descomplique os primeiros passos, uma regra de cada vez.': ['Make your first steps simpler, one rule at a time.', 'Simplifica tus primeros pasos, una regla cada vez.'],
   'Comece pelo cirílico. Construa o resto com orientação.': ['Start with Cyrillic. Build the rest with guidance.', 'Empieza por el cirílico. Avanza con orientación.'],
   'Preciso saber alguma coisa para começar?': ['Do I need any previous knowledge?', '¿Necesito conocimientos previos para empezar?'],
-  'Não. Você pode começar do zero. As explicações são em português e a trilha apresenta o idioma passo a passo.': ['No. You can start from scratch. Explanations are in English, and the learning path introduces the language step by step.', 'No. Puedes empezar desde cero. Las explicaciones están en español y el recorrido presenta el idioma paso a paso.'],
+  'Não. Você pode começar do zero. As explicações são em português e a trilha apresenta o idioma passo a passo.': ['No. You can start from scratch. The learning path introduces the language step by step, and each course page shows how much of it is already explained in English.', 'No. Puedes empezar desde cero. El recorrido presenta el idioma paso a paso, y la página de cada curso muestra qué parte ya está explicada en español.'],
   'Como posso conhecer as aulas?': ['How can I try the lessons?', '¿Cómo puedo probar las clases?'],
   'As duas primeiras aulas de cada curso são gratuitas. Você pode experimentar antes de decidir pela assinatura.': ['The first two lessons of each course are free. Try them before deciding on a subscription.', 'Las dos primeras clases de cada curso son gratuitas. Puedes probarlas antes de decidir si te suscribes.'],
   'Os novos planos já estão disponíveis?': ['Are the new plans available yet?', '¿Ya están disponibles los nuevos planes?'],
@@ -77,16 +77,16 @@ const copy: Record<string, readonly [string, string]> = {
   'Ouça. Repita.': ['Listen. Repeat.', 'Escucha. Repite.'],
   'Pequenas frases. Novas possibilidades.': ['Small phrases. New possibilities.', 'Frases pequeñas. Nuevas posibilidades.'],
   'Abrir aula grátis →': ['Open a free lesson →', 'Abrir una clase gratis →'],
-  'Em português.': ['In English.', 'En español.'], 'Desde a explicação.': ['Starting with the explanations.', 'Desde las explicaciones.'],
+  'Em português.': ['In English,', 'En español,'], 'Desde a explicação.': ['in Brazilian Portuguese, French and Russian.', 'en las primeras lecciones de portugués de Brasil.'],
   'Com áudio.': ['With audio.', 'Con audio.'], 'Para ouvir e repetir.': ['To listen and repeat.', 'Para escuchar y repetir.'],
   'No seu ritmo.': ['At your own pace.', 'A tu ritmo.'], 'Uma sessão por vez.': ['One session at a time.', 'Una sesión cada vez.'],
   'MENOS ADIVINHAÇÃO. MAIS COMPREENSÃO.': ['LESS GUESSWORK. MORE UNDERSTANDING.', 'MENOS ADIVINAR. MÁS COMPRENDER.'],
   'Entender muda': ['Understanding changes', 'Entender cambia'], 'o jeito de aprender.': ['the way you learn.', 'la forma de aprender.'],
-  'Você traz o português. A Linvuu usa essa base para explicar os sons, as estruturas e os erros comuns no novo idioma.': ['You bring your English. Linvuu builds on that foundation to explain sounds, structures and common mistakes in the new language.', 'Tú aportas el español. Linvuu utiliza esa base para explicar los sonidos, las estructuras y los errores habituales en el nuevo idioma.'],
+  'Você traz o português. A Linvuu usa essa base para explicar os sons, as estruturas e os erros comuns no novo idioma.': ['Linvuu explains the sounds, structures and common mistakes of the new language from a base you already know — and every course page shows how much of it is already in English.', 'Linvuu explica los sonidos, las estructuras y los errores habituales del nuevo idioma desde una base que ya conoces, y la página de cada curso muestra qué parte ya está en español.'],
   'Ouça o idioma acontecer.': ['Hear the language in action.', 'Escucha el idioma en acción.'],
   'Palavras e diálogos com áudio para ligar o que você lê ao que você escuta.': ['Words and dialogues with audio to connect what you read with what you hear.', 'Palabras y diálogos con audio para conectar lo que lees con lo que escuchas.'],
   'Entenda o porquê.': ['Understand why.', 'Entiende el porqué.'],
-  'Explicações em português, exemplos e comparações para construir uma base.': ['Explanations in English, examples and comparisons to build a foundation.', 'Explicaciones en español, ejemplos y comparaciones para construir una base.'],
+  'Explicações em português, exemplos e comparações para construir uma base.': ['Clear explanations, examples and comparisons to build a foundation.', 'Explicaciones claras, ejemplos y comparaciones para construir una base.'],
   'Coloque em prática.': ['Put it into practice.', 'Ponlo en práctica.'],
   'Exercícios com correção e atividades de fala e escrita para usar o que aprendeu.': ['Exercises with feedback, plus speaking and writing activities to use what you have learned.', 'Ejercicios con corrección y actividades de expresión oral y escrita para usar lo que has aprendido.'],
   'UMA VONTADE JÁ É UM COMEÇO': ['THE WISH TO LEARN IS A START', 'LAS GANAS YA SON UN COMIENZO'],
@@ -134,8 +134,8 @@ export const homeText = (text: string): string => {
 };
 
 export const homeNotice = LOCALE.codigo === 'en'
-  ? 'This page is in English. The course materials shown here currently have explanations in Portuguese; adapted materials in English are not available yet.'
-  : 'Esta página está en español. Los materiales de los cursos que se muestran aquí tienen explicaciones en portugués; los materiales adaptados al español aún no están disponibles.';
+  ? 'This page is in English. Brazilian Portuguese, French and Russian are fully explained in English; German, Spanish and Italian are being translated — until then, their explanations are in Portuguese, and every course page shows its real coverage.'
+  : 'Esta página está en español. Por ahora, en español están las dos primeras lecciones y la gramática completa del curso de portugués de Brasil; los demás cursos están explicados en portugués (el de portugués, en inglés) y se están traduciendo. Cada curso muestra su avance real.';
 
 export function selectionHelp(name: string, limit: number) {
   if (LOCALE.codigo === 'en') return `${name}: choose up to ${limit} ${limit === 1 ? 'language' : 'languages'} to explore. This is a preview, with no purchase.`;

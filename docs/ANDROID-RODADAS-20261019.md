@@ -42,7 +42,6 @@ Isso elimina tarifa de API de síntese, mas não energia, processamento, armazen
 Não contratar GPU/serviço pago. Disponibilidade e desempenho da máquina de geração ainda precisam ser medidos.
 
 Candidatos:
-- Kokoro: pesos Apache-2.0, candidato a inglês, espanhol, francês, italiano e pt-BR. Conferir versão, licença de código/dependências e atribuições dos ativos utilizados. O catálogo atual só lista voz feminina para francês: não prometer par masculino/feminino. Variantes e qualidade pedagógica precisam de audição, inclusive frases curtas.
 - Piper: candidato para alemão e russo e alternativa para outros idiomas. Motor e voz não têm automaticamente a mesma licença. Registrar MODEL_CARD e licença exata de cada modelo antes de aprovar uso comercial. Nenhuma voz Piper foi aprovada nesta rodada.
 - TTS do sistema Android pode ser recurso auxiliar opcional, sujeito à disponibilidade de idioma/voz/rede, não fonte única de ditados e avaliações.
 - Edge TTS existente: licença de pacote npm não comprova autorização comercial do serviço. Não declarar todos os arquivos ilegais nem continuar gerando com base nessa suposição. Auditar procedência e direitos; substituir gradualmente quando necessário.

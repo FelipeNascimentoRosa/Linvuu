@@ -2,6 +2,12 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 
+// Pré-condição: este teste lê os artefactos já construídos (dist/ e dist-apk/); não os constrói.
+// Num clone limpo, correr antes: npm run build && npm run build:apk (na CI, o passo build:apk corre imediatamente antes).
+if (!fs.existsSync('dist/index.html') || !fs.existsSync('dist-apk/index.html')) {
+  console.error('testar-plataformas: faltam artefactos de build (dist/ e/ou dist-apk/). Corre primeiro: npm run build && npm run build:apk');
+  process.exit(1);
+}
 assert.ok(fs.existsSync('dist/index.html'), 'build website existe');
 assert.ok(fs.existsSync('dist-apk/index.html'), 'build apk existe');
 assert.ok(fs.existsSync('dist/sitemap.xml'), 'website mantém sitemap');
