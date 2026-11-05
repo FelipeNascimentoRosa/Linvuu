@@ -67,7 +67,7 @@ jobs:
   paridade-head:
     # O <head> que o Google lê no HTML do servidor (título, canonical, robots, hreflang) tem de ser o mesmo depois
     # do JavaScript, em todas as URLs do sitemap e na navegação interna. Divergência aqui bloqueia o merge.
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04 # Playwright 1.56.1 não instala Chromium no ubuntu-latest (26.04); igual aos outros jobs de navegador
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
