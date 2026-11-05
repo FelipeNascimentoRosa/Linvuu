@@ -3,7 +3,6 @@ import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { DIAS, FASES, IDIOMAS_GRAMATICA, coberturaDoCurso, diaDoCurso, gruposDoCurso, inicioDoNivel, NIVEL_CURTO, NIVEL_LABEL, STATUS_AULA, getCurso, statusDoCurso } from '../lib/content';
 import { Navegacao } from '../components/Navegacao';
 import { usePageTitle } from '../lib/usePageTitle';
-import { JsonLd } from '../components/JsonLd';
 import { SITE_URL } from '../config/site';
 import { LOCALE, LOCALES, useT } from '../i18n';
 import { gratis } from '../config/planos';
@@ -59,7 +58,6 @@ export default function Curso() {
 
   return (
     <div className={LOCALE.codigo === 'pt-BR' ? 'pagina site-publico site-curso' : 'pagina'}>
-      <JsonLd dados={{ '@context': 'https://schema.org', '@type': 'Course', name: `${curso.nome} (${curso.nomeNativo})`, description: curso.descricao, inLanguage: LOCALE.codigo, educationalLevel: 'Beginner', provider: { '@type': 'Organization', name: 'Linvuu', url: SITE_URL } }} />
       <Navegacao pai="/cursos" trilha={[{ rotulo: t.geral.inicio, para: '/' }, { rotulo: t.geral.cursos, para: '/cursos' }, { rotulo: curso.nome }]} />
 
       <header className="curso-topo">

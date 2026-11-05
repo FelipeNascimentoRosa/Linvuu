@@ -15,7 +15,7 @@ import { credencialConfigurada } from './server/firebase-admin';
 import { fecharApi, registrarErros, registrarSeguranca } from './server/seguranca';
 import { registrarProntidao } from './server/prontidao';
 import { registrarAssetLinks } from './server/assetlinks';
-import { aplicarMeta, carregarDadosMeta, metaDaRota } from './src/lib/metaRota.ts';
+import { aplicarMeta, carregarDadosMeta, metaDaRota, metaParaNavegador } from './src/lib/metaRota.ts';
 import { SITE_URL } from './src/config/site.ts';
 
 dotenv.config();
@@ -52,6 +52,15 @@ async function startServer() {
   registrarMedicao(app);
   registrarNewsletter(app);
   registrarExclusao(app);
+  // Metadados de cada rota (título, descrição, hreflang, conteúdo pré-renderizado): a mesma fonte para o HTML e para /api/meta.
+  const dadosMeta = process.env.NODE_ENV === 'production' ? carregarDadosMeta(__dirname) : null;
+  // Navegação dentro do site: o navegador pede ao servidor o título, robots, canonical e hreflang da nova rota,
+  // em vez de calcular os seus — uma fonte só, igual ao HTML que o Google recebe nessa URL.
+  app.get('/api/meta', (req: Request, res: Response) => {
+    const p = String(req.query.p ?? '');
+    if (!p.startsWith('/') || p.length > 300 || p.startsWith('//')) { res.status(400).json({ error: 'Caminho inválido.' }); return; }
+    res.set('Cache-Control', 'public, max-age=300').set('X-Robots-Tag', 'noindex').json(metaParaNavegador(metaDaRota(p, dadosMeta), SITE_URL, dadosMeta));
+  });
   fecharApi(app);
 
   // -------------------------------------------------------------
@@ -140,7 +149,6 @@ async function startServer() {
       setHeaders: cabecalhosCache,
     }));
     // Cada rota recebe o HTML com título, descrição e endereço próprios (prévia de compartilhamento correta) e o status certo (404 de verdade).
-    const dadosMeta = carregarDadosMeta(__dirname);
     let htmlBase: string | null = null;
     // Arquivo de /assets que não existe mais (aba aberta antes de um deploy) deve dar 404 de verdade, não o HTML do site.
     app.get('/assets/*arquivo', (_req: Request, res: Response) => { res.status(404).type('text/plain').send('Not found'); });
@@ -151,6 +159,11 @@ async function startServer() {
     app.get('/preco', (_req: Request, res: Response) => { res.redirect(301, '/assinatura'); });
     // O curso de português para estrangeiros não existe no site em português: vai para a versão em inglês.
     app.get(/^\/curso\/br(\/.*)?$/, (req: Request, res: Response) => { res.redirect(301, `/en${req.path}`); });
+    // Variante com barra no fim (/cursos/): redireciona para o endereço canônico em vez de servir uma cópia.
+    app.get(/^\/.+\/$/, (req: Request, res: Response) => {
+      const q = req.originalUrl.indexOf('?');
+      res.redirect(301, req.path.replace(/\/+$/, '') + (q >= 0 ? req.originalUrl.slice(q) : ''));
+    });
     app.get('/{*pagina}', (req: Request, res: Response) => {
       res.setHeader('Cache-Control', 'no-cache');
       htmlBase ??= fs.readFileSync(path.resolve(__dirname, 'dist', 'index.html'), 'utf8');

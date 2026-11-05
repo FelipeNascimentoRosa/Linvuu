@@ -8,7 +8,6 @@ import { LIVROS_EM_PRODUCAO } from '../lib/livros';
 import { Link } from 'react-router-dom';
 import { falar } from '../lib/audio';
 import { usePageTitle } from '../lib/usePageTitle';
-import { JsonLd } from '../components/JsonLd';
 import { useRetomadaGeral } from '../lib/retomar';
 import { textoRetomada } from '../lib/mensagemRetomada';
 import { LIVROS } from '../config/livros';
@@ -88,6 +87,5 @@ export default function HomeBrasileiros() {
     <OfertaAtual />
     <section className="br-section br-faq" id="faq"><div><p className="br-eyebrow">{h("VAMOS COMEÇAR BEM")}</p><h2>{h("Uma dúvida")}<br />{h("antes do primeiro passo?")}</h2><Link to="/contato" className="br-text-link">{h("Fale com a Linvuu →")}</Link></div><div>{perguntas.map(([p,r]) => <details key={p}><summary>{h(p)}</summary><p>{h(r)}</p></details>)}</div></section>
     <section className="br-last"><p className="br-eyebrow">{h("SEU PRÓXIMO IDIOMA COMEÇA COM UM PASSO")}</p><h2>{h("Abra espaço para")}<br /><em>{h("novas conversas.")}</em></h2><a href="#idiomas" className="br-button">{h('Escolher meu idioma')} <span aria-hidden="true">↑</span></a><p>{h("Conheça a proposta. Explore os idiomas. Experimente uma aula.")}</p></section>
-    <JsonLd dados={{'@context':'https://schema.org','@type':'EducationalOrganization',name:'Linvuu',url:'https://linvuu.com.br',logo:'https://linvuu.com.br/brand/linvuu-logo.png'}} />
   </div>;
 }

@@ -15,6 +15,7 @@ on:
       - 'scripts/google-robots/**'
       - 'scripts/testar-robots-google.mjs'
       - 'scripts/iniciar-servidor-lhci.mjs'
+      - 'scripts/testar-paridade-meta.mjs'
       - 'lighthouserc.cjs'
       - 'package.json'
       - 'package-lock.json'
@@ -62,6 +63,34 @@ jobs:
           node scripts/seo.mjs
           git diff --exit-code -- public/robots.txt public/sitemap.xml
           node scripts/testar-robots-google.mjs
+
+  paridade-head:
+    # O <head> que o Google lê no HTML do servidor (título, canonical, robots, hreflang) tem de ser o mesmo depois
+    # do JavaScript, em todas as URLs do sitemap e na navegação interna. Divergência aqui bloqueia o merge.
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Construir website sem credenciais de produção
+        env:
+          DOTENV_PATH: ${{ runner.temp }}/linvuu-sem-credenciais.env
+        run: npm run build:website
+      - name: Instalar Chromium fixado
+        run: |
+          npm install --no-save --package-lock=false playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Comparar HTML do servidor com o DOM renderizado
+        run: |
+          node scripts/iniciar-servidor-lhci.mjs > "$RUNNER_TEMP/servidor.log" 2>&1 &
+          for i in $(seq 1 60); do grep -q LINVUU_LHCI_READY "$RUNNER_TEMP/servidor.log" && break; sleep 1; done
+          node scripts/testar-paridade-meta.mjs http://127.0.0.1:4398
 
   lighthouse:
     runs-on: ubuntu-latest
