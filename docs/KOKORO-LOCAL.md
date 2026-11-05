@@ -1,3 +1,5 @@
+> **REMOVIDO em 05/11/2026 por decisão do Felipe:** o Kokoro não será usado. Os scripts e o lock Python (`scripts/audio/`) e o bloco pip do Dependabot foram retirados do repositório (histórico git preserva tudo). Este documento fica só como registro histórico.
+
 # Kokoro local — Linvuu
 Preparação e testes em 19/10/2026. Instalado no ambiente de trabalho desta conversa, NÃO no Windows de Felipe nem no Render.
 A produção web não recebe Python, PyTorch ou modelos. Síntese em lote fora do servidor; MP3 final permanece independente do motor.
