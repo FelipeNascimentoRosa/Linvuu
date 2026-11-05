@@ -146,7 +146,7 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     const jsonld: object[] = [];
     if (p === '/cursos' && d) jsonld.push({ '@context': 'https://schema.org', '@type': 'ItemList', itemListElement: d.cursos.filter((c) => c.status !== 'em-breve' && c.id !== loc.cursoOculto).map((c, i) => ({ '@type': 'ListItem', position: i + 1, item: { '@type': 'Course', name: c.nome, description: c.descricao, url: `${SITE}${loc.prefixo}/curso/${c.id}`, provider: { '@id': ORG_ID, '@type': 'EducationalOrganization', name: 'Linvuu' } } })) });
     if (p === '/assinatura' && loc.codigo === 'pt-BR') jsonld.push(
-      { '@context': 'https://schema.org', '@type': 'Product', name: 'Assinatura Linvuu', description: fixas[p].descricao, image: `${SITE}/brand/linvuu-logo.png`, offers: [ ['Mensal', '139.00'], ['Trimestral Pix', '291.90'], ['Trimestral cartão ou boleto', '417.00'], ['Anual', '999.00'] ].map(([name, price]) => ({ '@type': 'Offer', name, price, priceCurrency: 'BRL', availability: 'https://schema.org/InStock', url: `${SITE}/assinatura` })) },
+      { '@context': 'https://schema.org', '@type': 'Product', name: 'Assinatura Linvuu', description: fixas[p].descricao, image: `${SITE}/brand/linvuu-logo.png`, brand: { '@type': 'Brand', name: 'Linvuu' }, offers: [ ['Mensal', '139.00'], ['Trimestral Pix', '291.90'], ['Trimestral cartão ou boleto', '417.00'], ['Anual', '999.00'] ].map(([name, price]) => ({ '@type': 'Offer', name, price, priceCurrency: 'BRL', availability: 'https://schema.org/InStock', url: `${SITE}/assinatura`, hasMerchantReturnPolicy: POLITICA_REEMBOLSO })) },
       { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'Posso experimentar sem cartão?', acceptedAnswer: { '@type': 'Answer', text: 'As duas primeiras aulas de cada curso são gratuitas, sem cartão.' } }, { '@type': 'Question', name: 'Qual é o desconto no Pix?', acceptedAnswer: { '@type': 'Answer', text: 'O plano trimestral custa R$ 291,90 no Pix, 30% de desconto sobre R$ 417.' } }] },
     );
     return { status: 200, caminho: p, ...fixas[p], jsonld };
@@ -366,6 +366,8 @@ function sessaoGratisParaHtml(d: DadosMeta | null, curso: string, dia: number): 
 }
 
 const SITE = 'https://linvuu.com.br';
+// Política real do site (paywall e termos): reembolso integral em até 7 dias.
+const POLITICA_REEMBOLSO = { '@type': 'MerchantReturnPolicy', applicableCountry: 'BR', returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow', merchantReturnDays: 7, returnFees: 'https://schema.org/FreeReturn' };
 const ORG_ID = `${SITE}/#organizacao`;
 const organizacao = () => ({ '@context': 'https://schema.org', '@type': 'EducationalOrganization', '@id': ORG_ID, name: 'Linvuu', url: SITE, logo: `${SITE}/brand/linvuu-logo.png`, email: EMAIL_OFICIAL, founder: AUTORES.map((a) => ({ '@type': 'Person', '@id': `${SITE}/sobre#${a.id}`, name: a.nome, sameAs: [...a.links] })) });
 const pessoa = (a: (typeof AUTORES)[number]) => ({ '@context': 'https://schema.org', '@type': 'Person', '@id': `${SITE}/sobre#${a.id}`, name: a.nome, url: `${SITE}/sobre#${a.id}`, worksFor: { '@id': ORG_ID }, sameAs: [...a.links], knowsAbout: ['Matemática', 'Linguística', 'Ensino de idiomas', 'Inteligência artificial', 'Teoria dos números', 'Álgebra linear'] });
