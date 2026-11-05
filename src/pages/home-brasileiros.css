@@ -22,7 +22,7 @@
 .br-scene{position:relative;padding:48px 12px 40px;background:radial-gradient(ellipse,var(--site-halo) 0,transparent 70%)}
 .br-demo{position:relative;border:1px solid var(--site-borda-cartao);background:var(--site-cartao);border-radius:20px;padding:28px;box-shadow:0 24px 65px var(--site-sombra-demo);transform:rotate(-2deg)}
 .br-demo-top{display:flex;align-items:center;gap:12px;font-size:9px;letter-spacing:.1em;margin-bottom:24px}
-.br-vuu{display:block;flex:none;width:48px;height:48px;border-radius:50%}
+.br-vuu{display:block;flex:none;width:48px;height:48px;border-radius:50%;object-fit:contain}
 .br-dot{width:7px;height:7px;border-radius:100%;background:var(--br-green)}
 .br-demo label{font-size:13px;margin-right:12px}
 .br-demo select{border:1px solid var(--site-borda-controle);border-radius:20px;padding:7px 12px;color:var(--br-green);background:var(--site-seletor);font-size:14px;max-width:100%}
