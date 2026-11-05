@@ -1,0 +1,199 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 6,
+  "fase": 1,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Ser, pronouns and adjectives: Adjectives: gender, number and negation",
+  "objetivo": "Lesson 2, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 2,
+    "titulo": "Ser, pronouns and adjectives",
+    "objetivo": "Use subject pronouns and the present tense of «ser», make the adjective agree in gender and number, negate with «no», say your profession and ask simple questions with «ser».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Adjectives: gender, number and negation",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "alto, alta",
+            "translit": "[pronuncia] AHL-to, AHL-tah",
+            "pt": "tall",
+            "en": "",
+            "audio": "alto, alta"
+          },
+          {
+            "ru": "simpático, simpática",
+            "translit": "[pronuncia] seem-PAH-tee-ko, seem-PAH-tee-kah",
+            "pt": "nice, friendly",
+            "en": "",
+            "audio": "simpático, simpática"
+          },
+          {
+            "ru": "joven",
+            "translit": "[pronuncia] HO-ven",
+            "pt": "young",
+            "en": "",
+            "audio": "joven"
+          },
+          {
+            "ru": "inteligente",
+            "translit": "[pronuncia] een-teh-lee-HEN-teh",
+            "pt": "intelligent",
+            "en": "",
+            "audio": "inteligente"
+          },
+          {
+            "ru": "largo, larga",
+            "translit": "[pronuncia] LAR-go, LAR-gah",
+            "pt": "long (false friend: wide is «ancho»)",
+            "en": "",
+            "audio": "largo, larga"
+          },
+          {
+            "ru": "exquisito, exquisita",
+            "translit": "[pronuncia] ess-kee-SEE-to, ess-kee-SEE-tah",
+            "pt": "delicious (false friend: it's not «weird»)",
+            "en": "",
+            "audio": "exquisito, exquisita"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Adjective agreement, «muy» and negation",
+        "explicacao": "Listen: «Pablo es alto. Lucía es alta. Ellos son altos.» The adjective changes along with the person. STEP 1: the adjective agrees in gender and number with the noun or subject: «Pablo es alto», «Lucía es alta», «Ellos son altos», «Ellas son altas». STEP 2: adjectives ending in «-o» change to «-a» in the feminine: «alto, alta». Adjectives ending in «-e» or a consonant don't change: «inteligente», «joven», «fácil». Adjectives ending in «-or», «-ol», «-án» and «-ín» add «-a»: «trabajador, trabajadora», «español, española». STEP 3: the plural adds «-s» after a vowel and «-es» after a consonant: «altos», «inteligentes», «jóvenes», «trabajadores». The word «joven» gains an accent mark in the plural to keep the stress on the same syllable. If it ends in «z», that becomes «c»: «feliz» → «felices». STEP 4: the adjective normally comes after the noun and after «ser»: «Ella es simpática.» STEP 5: «muy» (very) comes before the adjective and never changes form: «muy simpática», «muy jóvenes». STEP 6: negation is «no», always right before the verb: «No soy alto.» The pronoun, if used, goes before the «no»: «Yo no soy médico.» There's no «not» after the verb like in some languages. STEP 7: to answer a yes/no question, «no» is used twice: «¿Eres alta? — No, no soy alta.» The first is the short answer; the second negates the verb. STEP 8: watch two false friends: «largo» means long (wide is «ancho») and «exquisito» means delicious, not weird. The word for weird is «raro» or «extraño».",
+        "comparacao": "English adjectives don't change for gender or number at all («tall» stays «tall» whoever you're describing), so this agreement has no English equivalent to lean on — treat it as a new rule, not a translation of anything English does. «No» before the verb works like English «not», except it never splits into a contraction the way English does («I'm not» vs «No soy»).",
+        "exemplos": [
+          {
+            "ru": "Pablo es alto.",
+            "pt": "Pablo is tall."
+          },
+          {
+            "ru": "Lucía es alta.",
+            "pt": "Lucía is tall."
+          },
+          {
+            "ru": "Ellos son simpáticos.",
+            "pt": "They're nice."
+          },
+          {
+            "ru": "Ella es muy inteligente.",
+            "pt": "She's very intelligent."
+          },
+          {
+            "ru": "No soy alto.",
+            "pt": "I'm not tall."
+          },
+          {
+            "ru": "¿Eres alta? No, no soy alta.",
+            "pt": "Are you tall? No, I'm not tall."
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "[misto] -o, -a",
+            "masc_sg": "[misto] alto",
+            "fem_sg": "[misto] alta",
+            "masc_pl": "[misto] altos",
+            "fem_pl": "[misto] altas"
+          },
+          {
+            "tipo": "[misto] -e",
+            "masc_sg": "intelligent",
+            "fem_sg": "intelligent",
+            "masc_pl": "[misto] inteligentes",
+            "fem_pl": "[misto] inteligentes"
+          },
+          {
+            "tipo": "[misto] consonant, no gender change",
+            "masc_sg": "[misto] joven",
+            "fem_sg": "[misto] joven",
+            "masc_pl": "[misto] jóvenes",
+            "fem_pl": "[misto] jóvenes"
+          },
+          {
+            "tipo": "[misto] -or, -ol (feminine in -a)",
+            "masc_sg": "[misto] trabajador",
+            "fem_sg": "[misto] trabajadora",
+            "masc_pl": "[misto] trabajadores",
+            "fem_pl": "[misto] trabajadoras"
+          },
+          {
+            "tipo": "[misto] -ista",
+            "masc_sg": "[misto] optimista",
+            "fem_sg": "[misto] optimista",
+            "masc_pl": "[misto] optimistas",
+            "fem_pl": "[misto] optimistas"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] Ella es alto.",
+            "certo": "[misto] Ella es alta.",
+            "motivo": "The adjective agrees with the subject's gender."
+          },
+          {
+            "errado": "[misto] Ellos son simpático.",
+            "certo": "[misto] Ellos son simpáticos.",
+            "motivo": "The plural needs «-s»."
+          },
+          {
+            "errado": "[misto] Soy no alto.",
+            "certo": "[misto] No soy alto.",
+            "motivo": "«No» comes before the verb."
+          },
+          {
+            "errado": "[misto] Ella es inteligenta.",
+            "certo": "[misto] Ella es inteligente.",
+            "motivo": "Adjectives ending in «-e» don't change to «-a»."
+          }
+        ],
+        "tag": "Adjectives"
+      },
+      {
+        "tipo": "texto",
+        "min": 6,
+        "titulo": "Mis amigos / My friends",
+        "ru": "Rosa es mi amiga. Es alta y muy simpática. Luis es mi amigo. No es alto, pero es muy inteligente. Los dos son jóvenes y muy trabajadores. Yo soy Carmen. No soy alta, pero soy simpática. Nosotros somos buenos amigos. ¡Qué bien!",
+        "pt": "Rosa is my friend. She's tall and very nice. Luis is my friend. He's not tall, but he's very intelligent. They're both young and very hard-working. I'm Carmen. I'm not tall, but I'm nice. We're good friends. Great!",
+        "perguntas": [
+          {
+            "pergunta": "[misto] What's Rosa like?",
+            "resposta": "[misto] Rosa is tall and very nice."
+          },
+          {
+            "pergunta": "[misto] Is Luis tall?",
+            "resposta": "[misto] No: no es alto, pero es muy inteligente."
+          },
+          {
+            "pergunta": "[misto] How does Carmen describe herself?",
+            "resposta": "[misto] She says she's not tall, but she's nice."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 7,
+        "enunciado": "Describe three people you know out loud, using «muy» and «no»: «Pablo es muy simpático. No es alto. Ella es inteligente.» Use one adjective ending in «-o/-a», one in «-e» and one in «-or». Then count how many you got the gender right on."
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Conjugate «ser» from memory, from «yo» to «ellos», and say two sentences without the pronoun."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-002.json",
+  "responsavel": null
+}
