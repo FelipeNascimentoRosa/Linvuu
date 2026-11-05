@@ -25,7 +25,6 @@ MB neste documento é decimal. A estimativa parcial anterior foi substituída pe
 Áudios são aproximadamente 80,2% da árvore atual. Retirá-los de uma versão futura deixaria cerca de 75,42 MB de arquivos atuais, antes de outras otimizações. Isso não elimina automaticamente os blobs do histórico Git.
 As capas em public/livros somam 1,87 MB; os textos estruturados em content/livros e content/livros-privado somam 4,03 MB. Não confundir com todos os livros de referência guardados fora do site.
 A pasta content/idiomas tem 43,54 MB; design tem 11,03 MB; src tem 0,55 MB. Código-fonte não é o bundle final do navegador.
-O modelo Kokoro e seus pacotes de recuperação não estão nesta árvore nem precisam ir para o servidor web ou APK.
 
 ### MP3 por pasta de idioma
 | Pasta | Públicos | Privados | MB |
@@ -71,7 +70,7 @@ Planejar revisão no caminho/base ou parâmetro da URL, preservando o nome origi
 2. **Render:** aplicação, autenticação e autorização; sem síntese TTS pesada e sem usar disco efêmero como cópia única de mídia.
 3. **R2 Standard público:** somente material já autorizado como público, via domínio próprio proposto media.linvuu.com.br, ainda não criado. r2.dev é para desenvolvimento, não produção.
 4. **R2 privado:** material pago com acesso público desabilitado; sem domínio público direto nem r2.dev. O servidor valida conta e acesso antes de liberar URL assinada curta, ou um Worker autenticado realiza a entrega. Não expor todos os áudios pagos para simplificar a CDN.
-5. **Máquina de geração e backup independente:** modelo Kokoro, dependências, WAV mestre e saídas ainda não aprovadas; nenhuma dessas ferramentas dentro do APK.
+5. **Máquina de geração e backup independente:** modelos de voz, dependências, WAV mestre e saídas ainda não aprovadas; nenhuma dessas ferramentas dentro do APK.
 6. **Android:** conteúdo e áudio sob demanda; download por unidade, tamanho visível, quota, integridade, limpeza e isolamento de contas. Não baixar todos os 305 MB na instalação.
 
 Para áudio público, o cliente já aceita VITE_AUDIO_BASE_URL. Usar piloto com base alternativa, mantendo os endereços antigos funcionando durante a transição.

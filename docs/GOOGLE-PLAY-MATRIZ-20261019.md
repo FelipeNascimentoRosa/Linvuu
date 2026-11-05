@@ -37,7 +37,5 @@ Conferida em 19/10/2026. Políticas e documentação oficiais relevantes; não �
 - [Developer Program Policy](https://support.google.com/googleplay/android-developer/answer/18258653?hl=en)
 
 ## Fontes de TTS, separadas das regras Play
-- [Kokoro: modelo, licença e atribuições](https://huggingface.co/hexgrad/Kokoro-82M)
-- [Kokoro: catálogo de vozes e limitações](https://huggingface.co/hexgrad/Kokoro-82M/blob/main/VOICES.md)
 - [Piper: vozes e necessidade de consultar MODEL_CARD](https://github.com/OHF-Voice/piper1-gpl/blob/main/docs/VOICES.md)
 Motor, pesos, voz, dados, dependências e direitos de distribuição exigem verificação própria; licença de um componente não regulariza automaticamente os demais.
