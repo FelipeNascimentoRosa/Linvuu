@@ -16,8 +16,10 @@ try {
   await page.addInitScript(()=>localStorage.setItem('linvuu:marketing:v1','yes'));
   await page.goto(base+lang+'/livros/de?utm_source=facebook&utm_medium=organic_social');
   const box=page.locator('.analytics-consent-ads'); await box.waitFor();
+  // Depois da escolha o painel sai da página; reabre pelo botão «Preferências de cookies» do rodapé.
+  const abrir=async()=>{ await page.waitForLoadState('networkidle'); if(!await box.isVisible()) await page.locator('.lv-preferencias').first().click(); await box.waitFor(); };
   assert.equal(loads,0,'consentimento antigo apenas Meta não autoriza novos pixels'); assert.equal(tiktokLoads,0); assert.equal(requests,0);
-  await box.locator('button').last().click(); await page.reload(); await box.waitFor();
+  await box.locator('button').last().click(); await page.reload(); await abrir();
   assert.equal(loads,0,'recusa persiste após recarregar'); assert.equal(tiktokLoads,0);
   await box.locator('summary').click(); await box.locator('button').first().click();
   await page.waitForFunction(()=>window.fbq?.queue?.some(x=>x[0]==='track'&&x[1]==='PageView'));
@@ -29,7 +31,7 @@ try {
   await box.locator('button').last().click();
   assert.equal(await page.evaluate(()=>window.fbq.queue.at(-1)?.join(':')),'consent:revoke');
   assert.equal(await page.evaluate(()=>window.ttq.at(-1)?.join(':')),'revokeConsent');
-  await page.reload(); await box.waitFor(); assert.equal(loads,1,'revogação impede novo carregamento'); assert.equal(tiktokLoads,1);
+  await page.reload(); await abrir(); assert.equal(loads,1,'revogação impede novo carregamento'); assert.equal(tiktokLoads,1);
   console.log('ok:',lang||'pt-BR','recusa, autorização, uma visualização e revogação'); await context.close();
  }
 } finally { await browser?.close(); server.kill(); }

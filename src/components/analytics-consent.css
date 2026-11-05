@@ -6,5 +6,7 @@
 .analytics-consent a{color:var(--link);text-decoration:underline}
 html[data-plataforma="nativo"] .analytics-consent{margin-bottom:calc(6rem + env(safe-area-inset-bottom,0px))}
 
-.analytics-consent[data-pending="true"]{position:fixed;z-index:10000;left:50%;bottom:1rem;transform:translateX(-50%);width:min(42rem,calc(100% - 2rem));max-height:60vh;overflow:auto;margin:0;border:1px solid var(--linha);border-radius:1rem;box-shadow:0 .25rem 1rem var(--linha)}
+.analytics-consent[data-pending="true"],.analytics-consent[data-flutuante="true"]{position:fixed;z-index:10000;left:50%;bottom:1rem;transform:translateX(-50%);width:min(42rem,calc(100% - 2rem));max-height:60vh;overflow:auto;margin:0;border:1px solid var(--linha);border-radius:1rem;box-shadow:0 .25rem 1rem var(--linha)}
 html[data-plataforma="nativo"] .analytics-consent[data-pending="true"]{bottom:calc(5rem + env(safe-area-inset-bottom,0px));margin-bottom:0}
+.analytics-fechar{justify-content:flex-end;padding-top:.25rem}
+.lv-preferencias{font:inherit;color:inherit;text-decoration:underline;background:none;border:0;padding:0;cursor:pointer}
