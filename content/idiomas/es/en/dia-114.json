@@ -1,0 +1,160 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 114,
+  "fase": 12,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "The polite conditional: Advice and wishes",
+  "objetivo": "Lesson 29, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 29,
+    "titulo": "The polite conditional",
+    "objetivo": "Form the simple conditional (regular and the ten irregulars) and use it to ask for things politely («¿Podría…?», «Me gustaría…», «Querría…»), to give advice («Deberías…», «Yo que tú…»), and to express wishes, without mixing up «pedir» and «preguntar».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Advice and wishes",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "el consejo",
+            "translit": "[pronuncia] el kon-SEH-ho",
+            "pt": "the advice",
+            "en": "",
+            "audio": "el consejo"
+          },
+          {
+            "ru": "deberías",
+            "translit": "[pronuncia] deh-beh-REE-as",
+            "pt": "you should",
+            "en": "",
+            "audio": "deberías"
+          },
+          {
+            "ru": "yo que tú",
+            "translit": "[pronuncia] yo keh too",
+            "pt": "if I were you",
+            "en": "",
+            "audio": "yo que tú"
+          },
+          {
+            "ru": "en tu lugar",
+            "translit": "[pronuncia] en too loo-GAR",
+            "pt": "in your place",
+            "en": "",
+            "audio": "en tu lugar"
+          },
+          {
+            "ru": "me encantaría",
+            "translit": "[pronuncia] meh en-kan-tah-REE-a",
+            "pt": "I'd love to",
+            "en": "",
+            "audio": "me encantaría"
+          },
+          {
+            "ru": "sería mejor",
+            "translit": "[pronuncia] seh-REE-a meh-HOR",
+            "pt": "it would be better",
+            "en": "",
+            "audio": "sería mejor"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Advising, suggesting, and wishing",
+        "explicacao": "STEP 1: to give advice gently, use the conditional of «deber» and «poder»: «Deberías dormir más», «Podrías hablar con tu jefa». The conditional softens the advice; «Debes dormir más» sounds like an order. STEP 2: the formula «Yo que tú» + conditional is very common: «Yo que tú, hablaría con ella», meaning \"if I were you, I'd talk to her.\" There's also «En tu lugar» + conditional: «En tu lugar, no iría». STEP 3: with «usted», the formula changes: «Yo que usted, esperaría» or «En su lugar, esperaría». STEP 4: «sería mejor» + infinitive, or «sería mejor que» + subjunctive (coming later): «Sería mejor salir pronto». STEP 5: to express a wish, use «Me gustaría», «Me encantaría» (I'd love to), «Querría»: «Me encantaría conocer Sevilla.» STEP 6: the conditional also marks politeness when asking for information: «¿Sabría decirme dónde está la estación?» (Would you happen to know where the station is?). STEP 7: don't use the conditional to give an order. For a request among friends, the present is just as natural: «¿Me pasas la sal?» Use the conditional when you want to be more careful, or with people you don't know. STEP 8: don't mix up these two verbs: «pedir» means to request or order something («Te pido un favor», «Pido un café»), and «preguntar» means to ask a question («Te pregunto una cosa»). Someone requesting something doesn't use «por»: the object comes straight after, «pedir un café».",
+        "comparacao": "English runs on the exact same two formulas: \"You should rest more\" softens the same way «Deberías» does compared to the blunter \"You must rest,\" and \"If I were you, I'd talk to her\" matches «Yo que tú, hablaría con ella» almost word for word. This whole lesson's logic transfers cleanly — the harder part is just remembering that «pedir» and «preguntar» split what English's single verb \"to ask\" covers, so you have to pick the right one every time English wouldn't force you to.",
+        "exemplos": [
+          {
+            "ru": "Deberías descansar un poco.",
+            "pt": "You should rest a little."
+          },
+          {
+            "ru": "Yo en tu lugar, no compraría ese móvil.",
+            "pt": "In your place, I wouldn't buy that phone."
+          },
+          {
+            "ru": "Me encantaría ir a Granada contigo.",
+            "pt": "I'd love to go to Granada with you."
+          },
+          {
+            "ru": "Sería mejor llegar antes de las nueve.",
+            "pt": "It would be better to arrive before nine."
+          }
+        ],
+        "tabela": [
+          {
+            "uso": "[misto] advice",
+            "exemplo": "[misto] Deberías dormir más.",
+            "traducao": "[misto] Você deveria dormir mais."
+          },
+          {
+            "uso": "[misto] advice with a formula",
+            "exemplo": "[misto] Yo que tú, hablaría con ella.",
+            "traducao": "[misto] Se eu fosse você, falaria com ela."
+          },
+          {
+            "uso": "[misto] wish",
+            "exemplo": "[misto] Me encantaría conocer Sevilla.",
+            "traducao": "[misto] I'd love to see Seville."
+          },
+          {
+            "uso": "[misto] asking for information",
+            "exemplo": "[misto] ¿Sabría decirme dónde está la estación?",
+            "traducao": "[misto] Would you happen to know where the station is?"
+          },
+          {
+            "uso": "[misto] pedir × preguntar",
+            "exemplo": "[misto] Te pido un favor. / Te pregunto una cosa.",
+            "traducao": "[misto] I'm asking you for a favor. / I'm asking you something."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] Te pregunto un favor.",
+            "certo": "[misto] Te pido un favor.",
+            "motivo": "«Preguntar» means to ask a question; to request something, use «pedir»."
+          },
+          {
+            "errado": "[misto] Yo que tú, hablo con ella.",
+            "certo": "[misto] Yo que tú, hablaría con ella.",
+            "motivo": "After «yo que tú», use the conditional."
+          },
+          {
+            "errado": "[misto] Debes dormir más. (trying to be gentle)",
+            "certo": "[misto] Deberías dormir más.",
+            "motivo": "The conditional softens the advice."
+          },
+          {
+            "errado": "[misto] Me encantaría de ir contigo.",
+            "certo": "[misto] Me encantaría ir contigo.",
+            "motivo": "After «encantaría», the infinitive comes straight after, with no «de»."
+          }
+        ],
+        "tag": "Conditional"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Give a friend who's tired and short on money five pieces of advice, with «Deberías…», «Podrías…», «Yo que tú…», and «Sería mejor…». Then say two wishes of your own with «Me encantaría…»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Conjugate «poder» and «tener» in the conditional, from «yo» to «ellos». Make one request-sentence with each."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-029.json",
+  "responsavel": null
+}
