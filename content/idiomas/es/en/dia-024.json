@@ -1,0 +1,525 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 24,
+  "fase": 3,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Present tense in -er and -ir: Review and practice of lesson 6",
+  "objetivo": "Lesson 6, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 6,
+    "titulo": "Present tense in -er and -ir",
+    "objetivo": "Conjugate regular -er and -ir verbs in the present, compare all three groups (-ar, -er, -ir), use «y» and «o» with their variants «e» and «u», and avoid the false friend «asistir».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 6",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Vivimos en Valencia",
+            "opcoes": [
+              "[misto] Vivimos en Valencia",
+              "[misto] Vivís en Valencia",
+              "[misto] Viven en Valencia"
+            ],
+            "gabarito": "[misto] Vivimos en Valencia",
+            "explicacao": "Listen to the «-imos» of «vivimos».",
+            "id": "es-006-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ellos beben agua",
+            "opcoes": [
+              "[misto] Ellos beben agua",
+              "[misto] Ellos beben leche",
+              "[misto] Él bebe agua"
+            ],
+            "gabarito": "[misto] Ellos beben agua",
+            "explicacao": "Listen to the «-en» and the word «agua».",
+            "id": "es-006-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "¿Qué lees?",
+            "opcoes": [
+              "[misto] ¿Qué lees?",
+              "[misto] ¿Qué lee?",
+              "[misto] ¿Qué leéis?"
+            ],
+            "gabarito": "[misto] ¿Qué lees?",
+            "explicacao": "Listen to «lees» with its two vowels.",
+            "id": "es-006-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «el periódico» mean?",
+            "audio": "el periódico",
+            "opcoes": [
+              "to open",
+              "the newspaper",
+              "to write",
+              "to eat"
+            ],
+            "gabarito": "the newspaper",
+            "explicacao": "«el periódico» = the newspaper.",
+            "id": "es-006-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Como fruta",
+            "respostaEsperada": "Como fruta",
+            "explicacao": "Write: Como fruta.",
+            "id": "es-006-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Escribimos una carta",
+            "respostaEsperada": "Escribimos una carta",
+            "explicacao": "Write: Escribimos una carta.",
+            "id": "es-006-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «responder» mean?",
+            "audio": "responder",
+            "opcoes": [
+              "to learn",
+              "to go up",
+              "to answer",
+              "to sell"
+            ],
+            "gabarito": "to answer",
+            "explicacao": "«responder» = to answer.",
+            "id": "es-006-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Vosotros coméis juntos",
+            "respostaEsperada": "Vosotros coméis juntos",
+            "explicacao": "Write: Vosotros coméis juntos.",
+            "id": "es-006-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «tú» form of «aprender»?",
+            "opcoes": [
+              "[misto] aprendes",
+              "[misto] aprende",
+              "[misto] aprendéis"
+            ],
+            "gabarito": "[misto] aprendes",
+            "explicacao": "In -er verbs, «tú» ends in «-es».",
+            "id": "es-006-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «vosotros» form of «vivir»?",
+            "opcoes": [
+              "[misto] vivís",
+              "[misto] vivéis",
+              "[misto] viven"
+            ],
+            "gabarito": "[misto] vivís",
+            "explicacao": "In -ir verbs, «vosotros» ends in «-ís».",
+            "id": "es-006-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «correr» mean?",
+            "audio": "correr",
+            "opcoes": [
+              "to run",
+              "to sell",
+              "to go up",
+              "to drink"
+            ],
+            "gabarito": "to run",
+            "explicacao": "«correr» = to run.",
+            "id": "es-006-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «nosotros» form of «escribir»?",
+            "opcoes": [
+              "[misto] escribimos",
+              "[misto] escribemos",
+              "[misto] escribís"
+            ],
+            "gabarito": "[misto] escribimos",
+            "explicacao": "In -ir verbs, «nosotros» ends in «-imos».",
+            "id": "es-006-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I go to class» (I attend)?",
+            "opcoes": [
+              "[misto] Asisto a clase.",
+              "[misto] Asisto una clase.",
+              "[misto] Veo clase."
+            ],
+            "gabarito": "[misto] Asisto a clase.",
+            "explicacao": "«Asistir a» means to attend.",
+            "id": "es-006-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence uses «y/e» correctly?",
+            "opcoes": [
+              "[misto] Ana e Inés viven aquí.",
+              "[misto] Ana y Inés viven aquí.",
+              "[misto] Ana e Pablo viven aquí."
+            ],
+            "gabarito": "[misto] Ana e Inés viven aquí.",
+            "explicacao": "«Y» becomes «e» before the sound «i» in «Inés»; before «Pablo» it stays «y».",
+            "id": "es-006-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «subir» mean?",
+            "audio": "subir",
+            "opcoes": [
+              "to open",
+              "to drink",
+              "to go up",
+              "to eat"
+            ],
+            "gabarito": "to go up",
+            "explicacao": "«subir» = to go up.",
+            "id": "es-006-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which verb means «to understand»?",
+            "opcoes": [
+              "[misto] comprender",
+              "[misto] comprar",
+              "to eat"
+            ],
+            "gabarito": "[misto] comprender",
+            "explicacao": "«Comprar» means to buy.",
+            "id": "es-006-e12"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Yo ___ un libro. (leer)",
+            "opcoes": [
+              "[misto] leo",
+              "[misto] lees",
+              "[misto] lee"
+            ],
+            "gabarito": "[misto] leo",
+            "explicacao": "With «yo», the ending is «-o».",
+            "id": "es-006-e13"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ellos ___ en Sevilla. (vivir)",
+            "opcoes": [
+              "[misto] viven",
+              "[misto] vive",
+              "[misto] vivimos"
+            ],
+            "gabarito": "[misto] viven",
+            "explicacao": "With «ellos», the ending is «-en».",
+            "id": "es-006-e14"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «beber» mean?",
+            "audio": "beber",
+            "opcoes": [
+              "to run",
+              "to drink",
+              "to learn",
+              "to answer"
+            ],
+            "gabarito": "to drink",
+            "explicacao": "«beber» = to drink.",
+            "id": "es-006-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Aprendo ___ cocinar. (to)",
+            "opcoes": [
+              "[misto] a",
+              "[misto] de",
+              "[misto] en"
+            ],
+            "gabarito": "[misto] a",
+            "explicacao": "«Aprender a» + infinitive.",
+            "id": "es-006-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tengo siete ___ ocho libros. (or)",
+            "opcoes": [
+              "[misto] u",
+              "[misto] o",
+              "[misto] y"
+            ],
+            "gabarito": "[misto] u",
+            "explicacao": "«O» becomes «u» before «ocho».",
+            "id": "es-006-e16"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «escribir» mean?",
+            "audio": "escribir",
+            "opcoes": [
+              "to learn",
+              "the letter",
+              "to write",
+              "to eat"
+            ],
+            "gabarito": "to write",
+            "explicacao": "«escribir» = to write.",
+            "id": "es-006-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Nosotros ___ café. (beber)",
+            "opcoes": [
+              "[misto] bebemos",
+              "[misto] bebimos",
+              "[misto] bebéis"
+            ],
+            "gabarito": "[misto] bebemos",
+            "explicacao": "In -er verbs, «nosotros» ends in «-emos».",
+            "id": "es-006-e17"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Vivo en Valencia con un amigo.»",
+            "opcoes": [
+              "Vivo",
+              "en",
+              "Valencia",
+              "con",
+              "un",
+              "amigo."
+            ],
+            "gabarito": "Vivo en Valencia con un amigo.",
+            "explicacao": "Verb, place, and company.",
+            "id": "es-006-e18"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Hugo lee el periódico.»",
+            "opcoes": [
+              "Hugo",
+              "lee",
+              "el",
+              "periódico."
+            ],
+            "gabarito": "Hugo lee el periódico.",
+            "explicacao": "Subject, verb, object.",
+            "id": "es-006-e19"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Vivimos en Valencia",
+            "opcoes": [
+              "en",
+              "Vivimos",
+              "Valencia"
+            ],
+            "gabarito": "Vivimos en Valencia",
+            "explicacao": "Write: Vivimos en Valencia",
+            "id": "es-006-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I read the newspaper and write a letter.",
+            "respostaEsperada": "[misto] Leo el periódico y escribo una carta.",
+            "id": "es-006-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tú ___ en Valencia. (vivir)",
+            "opcoes": [
+              "[misto] vives",
+              "[misto] vive",
+              "[misto] vivo"
+            ],
+            "gabarito": "[misto] vives",
+            "explicacao": "With «tú», -ir verbs end in «-es».",
+            "id": "es-006-e21"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ella ___ una carta. (recibir)",
+            "opcoes": [
+              "[misto] recibes",
+              "[misto] recibe",
+              "[misto] recibo"
+            ],
+            "gabarito": "[misto] recibe",
+            "explicacao": "With «ella», the ending is «-e».",
+            "id": "es-006-e22"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Ellos beben agua",
+            "opcoes": [
+              "beben",
+              "agua",
+              "Ellos"
+            ],
+            "gabarito": "Ellos beben agua",
+            "explicacao": "Write: Ellos beben agua",
+            "id": "es-006-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Nosotros ___ la puerta. (abrir)",
+            "opcoes": [
+              "[misto] abrís",
+              "[misto] abrimos",
+              "[misto] abremos"
+            ],
+            "gabarito": "[misto] abrimos",
+            "explicacao": "-ir verbs form «nosotros» with «-imos».",
+            "id": "es-006-e23"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ellos ___ muy rápido. (correr)",
+            "opcoes": [
+              "[misto] corre",
+              "[misto] corren",
+              "[misto] corres"
+            ],
+            "gabarito": "[misto] corren",
+            "explicacao": "With «ellos», the present ends in «-en».",
+            "id": "es-006-e24"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «yo» form of «vender»?",
+            "opcoes": [
+              "[misto] vendo",
+              "[misto] vendes",
+              "[misto] vende"
+            ],
+            "gabarito": "[misto] vendo",
+            "explicacao": "In «yo», all three groups end in «-o».",
+            "id": "es-006-e25"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "¿Qué lees?",
+            "opcoes": [
+              "lees?",
+              "¿Qué"
+            ],
+            "gabarito": "¿Qué lees?",
+            "explicacao": "Write: ¿Qué lees?",
+            "id": "es-006-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "[misto] Creo de que sí.",
+              "[misto] Creo que sí.",
+              "[misto] Creo a que sí."
+            ],
+            "gabarito": "[misto] Creo que sí.",
+            "explicacao": "«Creer» takes «que» directly, with no preposition.",
+            "id": "es-006-e26"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «ustedes» form of «responder»?",
+            "opcoes": [
+              "[misto] respondéis",
+              "[misto] responde",
+              "[misto] responden"
+            ],
+            "gabarito": "[misto] responden",
+            "explicacao": "«Ustedes» takes the «ellos» form.",
+            "id": "es-006-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Como fruta",
+            "opcoes": [
+              "fruta",
+              "Como"
+            ],
+            "gabarito": "Como fruta",
+            "explicacao": "Write: Como fruta",
+            "id": "es-006-x10",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Nosotros aprendemos a cocinar.»",
+            "opcoes": [
+              "Nosotros",
+              "aprendemos",
+              "a",
+              "cocinar."
+            ],
+            "gabarito": "Nosotros aprendemos a cocinar.",
+            "explicacao": "«Aprender a» + infinitive.",
+            "id": "es-006-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I think so.",
+            "respostaEsperada": "[misto] Creo que sí.",
+            "id": "es-006-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: They open the door and receive a letter.",
+            "respostaEsperada": "[misto] Abren la puerta y reciben una carta.",
+            "id": "es-006-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Tell a friend, out loud, what you eat, drink, read and write during the day. Ask them two questions with «tú»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Give the «yo» and «nosotros» forms of six verbs: beber, leer, vender, escribir, abrir, recibir."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-006.json",
+  "responsavel": null
+}
