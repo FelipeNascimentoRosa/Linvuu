@@ -55,6 +55,10 @@ jobs:
         run: node --import tsx scripts/testar-cobranca-eventos.ts
       - name: Conversões de compra só com consentimento, dados em hash
         run: node --import tsx scripts/testar-conversoes.ts
+      - name: Registro de acesso (atalho só para «tem acesso»; Google Play não some)
+        run: node --import tsx scripts/testar-registro-acesso.ts
+      - name: Eventos exigidos do webhook do Stripe
+        run: node --import tsx scripts/testar-webhook-eventos.ts
       - name: Testar medição sem dados de produção
         run: npm run testar:medicao
       - name: Testar corretor e ditados reais

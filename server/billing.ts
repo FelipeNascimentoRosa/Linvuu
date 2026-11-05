@@ -12,7 +12,7 @@ import { registrarWebhookCobranca } from './billing-webhook';
 import { precoMensalObrigatorio, planoSiteValido } from './billing-contrato';
 import crypto from 'node:crypto';
 import { podeComprar, type Acesso } from './acesso-calculo';
-import { gravarRegistro, lerRegistro, liberarConversao, registroFresco, reservarConversao } from './acesso';
+import { acessoDoRegistro, gravarRegistro, lerRegistro, liberarConversao, reservarConversao } from './acesso';
 import { enviarCompra, validarMedicao } from './conversoes';
 import { criarProcessadorCobranca } from './cobranca-eventos';
 import { CENTAVOS } from '../src/config/planos.ts';
@@ -89,8 +89,9 @@ function acesso(u: { uid: string; email?: string }, renovar = false): Promise<Ac
   const pode = renovar && t - (renovou.get(u.uid) ?? 0) > 10_000;
   if (m && m.ate > t && !pode) return m.p;
   if (pode) renovou.set(u.uid, t);
-  // Registro gravado pelo webhook (vale para todas as instâncias); vencido ou «renovar», relê o Stripe.
-  const p = (pode ? Promise.resolve(null) : lerRegistro(u.uid)).then((r) => (registroFresco(r) ? r.acesso : consultarAcesso(u)));
+  // Registro gravado pelo webhook (vale para todas as instâncias) só como atalho para «tem acesso»; sem acesso, vencido ou «renovar»,
+  // relê as duas origens (Stripe e Google Play).
+  const p = (pode ? Promise.resolve(null) : lerRegistro(u.uid)).then((r) => acessoDoRegistro(r) ?? consultarAcesso(u));
   acessos.set(u.uid, { ate: t + ACESSO_MS, p });
   p.catch(() => acessos.delete(u.uid));
   return p;

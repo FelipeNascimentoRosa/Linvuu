@@ -14,17 +14,22 @@ uma vez à medição. Fecha a issue #380 quando todos os casos abaixo estiverem 
 | Duplo clique abria duas sessões | Mesma sessão por 10 min (chave de idempotência) | `server/billing.ts` |
 | Invalidação de acesso só na memória do processo (perdia após reinício) | Registro `acessos/{uid}` no Firestore, gravado pelo webhook; uid achado pelo cliente do Stripe | `server/acesso.ts` |
 | Valores em 4 lugares | Fonte única `CENTAVOS` em `src/config/planos.ts`; `/readyz` confere R$ 139/mês no Stripe | `testar-contrato-billing.ts` |
+| Registro «sem acesso» (só Stripe) escondia acesso do Google Play por até 10 min | Registro só vale como atalho para «tem acesso»; senão relê Stripe e Play | `acessoDoRegistro` em `server/acesso.ts` |
 | Compra não chegava a Meta/TikTok/PostHog | Evento do servidor com valor real, só com consentimento, uma vez por pagamento | `server/conversoes.ts` |
 | Termos citavam só mensal e R$ 417 | Os 4 planos, início na confirmação, soma, reembolso de 7 dias para qualquer plano | `src/pages/Legal.tsx` |
 
 Testes automáticos (CI, sem rede): `testar-acesso-calculo.ts` (17 casos), `testar-cobranca-eventos.ts` (11 etapas),
-`testar-conversoes.ts`, `testar-contrato-billing.ts`, `testar-billing-webhook.ts`.
+`testar-conversoes.ts`, `testar-registro-acesso.ts`, `testar-webhook-eventos.ts`, `testar-contrato-billing.ts`, `testar-billing-webhook.ts`.
 
 **Firestore:** a coleção nova `acessos` é escrita só pelo servidor (Admin SDK). As regras publicadas (conferidas iguais ao
 repositório em 05/11) já negam ao navegador tudo fora de `users/{uid}`. **Nenhuma mudança de regra é necessária.**
 
 ## O que o Felipe precisa fazer
 
+0. **Stripe → Developers → Webhooks → endpoint `https://linvuu.com.br/api/stripe/webhook` → eventos marcados.** Reembolso e disputa só chegam se
+   `charge.refunded`, `charge.dispute.created` e `charge.dispute.closed` estiverem marcados (a lista completa está em `EVENTOS_COBRANCA`,
+   `server/billing-webhook.ts`). Confira sem alterar nada: `STRIPE_SECRET_KEY=rk_live_… node --import tsx scripts/verificar-webhook-stripe.mjs`
+   (chave restrita com leitura de «Webhook Endpoints» basta). Diz exatamente quais faltam. Sem eles, devolver dinheiro não tira o acesso na hora.
 1. **Render → linvuu → Environment** (depois do merge; nenhuma é obrigatória para o site continuar funcionando):
    - `META_PIXEL_ID` e `META_CAPI_TOKEN` (Gerenciador de Eventos → fonte de dados → Configurações → API de Conversões → Gerar token). Para testar sem sujar dados: `META_TEST_EVENT_CODE` (aba «Testar eventos»), depois apagar.
    - `TIKTOK_PIXEL_ID` e `TIKTOK_ACCESS_TOKEN` (TikTok Ads Manager → Eventos → Web → o pixel → Configurações → Gerar token). Teste: `TIKTOK_TEST_EVENT_CODE`.

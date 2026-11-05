@@ -52,3 +52,8 @@ export const registroFresco = (r: Registro | null, agora = Date.now()): r is Reg
   !!r?.acesso && typeof r.atualizadoEm === 'number' && agora - r.atualizadoEm < VALIDADE_REGISTRO_MS
   // pacote que venceu depois da gravação não continua valendo
   && !(r.acesso.ativa && r.acesso.via === 'trimestral' && (r.acesso.ate ?? 0) * 1000 <= agora);
+
+/** O registro só serve de atalho quando CONFIRMA acesso. Ele guarda o resultado do Stripe; «sem acesso» no registro não prova
+ * que não há acesso por outra origem (Google Play via RevenueCat). Nesse caso a consulta completa é refeita. */
+export const acessoDoRegistro = (r: Registro | null, agora = Date.now()): Acesso | null =>
+  registroFresco(r, agora) && r.acesso.ativa ? r.acesso : null;
