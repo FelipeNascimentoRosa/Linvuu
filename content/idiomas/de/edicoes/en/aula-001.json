@@ -16,7 +16,7 @@
         {
           "tipo": "intro",
           "min": 2,
-          "texto": "Your first mission: understand a conversation before memorising rules. Listen once without translations. Two people meet. Who asks how the other person is? How do they say goodbye? You will answer those questions in German before this session ends."
+          "texto": "Your first mission: understand a conversation before memorizing rules. Listen once without translations. Two people meet. Who asks how the other person is? How do they say goodbye? You will answer those questions in German before this session ends."
         },
         {
           "tipo": "dialogo",
@@ -211,10 +211,10 @@
             {
               "id": "de-001-e05",
               "tipo": "audio-recognition",
-              "enunciado": "Listen and write the informal farewell.",
+              "enunciado": "Listen and write the informal goodbye using the spelling with one s after ü.",
               "audio": "Tschüs",
               "respostaEsperada": "Tschüs",
-              "explicacao": "«Tschüs» is a common informal goodbye; retain ü."
+              "explicacao": "«Tschüs» and «Tschüss» are both correct German spellings; this exercise practices «Tschüs»."
             },
             {
               "id": "de-001-e06",
@@ -571,10 +571,10 @@
             {
               "id": "de-001-e14",
               "tipo": "audio-recognition",
-              "enunciado": "Listen and write the German word for street.",
+              "enunciado": "Listen and write the German word for street using ß, the standard spelling in Germany and Austria.",
               "audio": "Straße",
               "respostaEsperada": "Straße",
-              "explicacao": "At the start of Straße, st sounds /ʃt/. The ß represents /s/."
+              "explicacao": "At the start of «Straße», st sounds /ʃt/. Swiss spelling uses «Strasse» instead of ß."
             },
             {
               "id": "de-001-e15",
@@ -648,7 +648,7 @@
           "tipo": "gramatica",
           "min": 6,
           "titulo": "The four patterns that unlock dozens of words",
-          "explicacao": "STEP 1: German «ei» sounds /aɪ/, like eye: «Wein» and «Eis». STEP 2: German «ie» usually represents long /iː/, as in English see: «Bier» and «Brief». STEP 3: German «eu» and «äu» are pronounced /ɔʏ/, roughly like oy in boy: «Euro» and «Häuser». STEP 4: German «au» sounds /aʊ/, like ow in cow: «Haus» and «Auto». Now compare «Wein» and «Wien»: the spelling difference changes both sound and meaning. The patterns are reliable guides for these common words, not a promise that every letter group has only one pronunciation in every context.",
+          "explicacao": "STEP 1: German «ei» sounds /aɪ/, like eye: «Wein» and «Eis». STEP 2: German «ie» usually represents long /iː/, as in English see: «Bier» and «Brief». STEP 3: German «eu» and «äu» are pronounced /ɔʏ/, roughly like oy in boy: «Euro» and «Häuser». STEP 4: German «au» sounds /aʊ/, like ow in cow: «Haus» and «Auto». Compare «Wein» (/vaɪn/, wine) with «Bier» (/biːɐ̯/, beer) to practice the two vowel patterns. The patterns are reliable guides for these common words, not a promise that every letter group has only one pronunciation in every context.",
           "comparacao": "English speakers may see ei and say 'ee' or 'ay'. In German, start by trusting ei = eye and ie = ee. Train both directions: see the spelling and predict the sound; hear the sound and choose the spelling.",
           "tabela": [
             {
@@ -679,9 +679,9 @@
               "motivo": "Wein has ei /aɪ/, not ie /iː/."
             },
             {
-              "errado": "Wien pronounced like 'wine'",
-              "certo": "Wien",
-              "motivo": "Wien has ie /iː/; it means Vienna."
+              "errado": "Bier pronounced with the vowel in English 'eye'",
+              "certo": "Bier",
+              "motivo": "«Bier» has ie /iː/; it means beer."
             }
           ],
           "tag": "Decode, don't guess"
@@ -768,13 +768,6 @@
               "en": "wine",
               "translit": "/vaɪn/",
               "audio": "Wein"
-            },
-            {
-              "ru": "Wien",
-              "pt": "Vienna",
-              "en": "Vienna",
-              "translit": "/viːn/",
-              "audio": "Wien"
             },
             {
               "ru": "Eis",
@@ -877,15 +870,15 @@
             {
               "id": "de-001-e22",
               "tipo": "audio-recognition",
-              "enunciado": "Listen: is the speaker saying wine, Vienna or water?",
+              "enunciado": "Listen: which German word do you hear?",
               "audio": "Wein",
               "opcoes": [
                 "Wein",
-                "Wien",
+                "Bier",
                 "Wasser"
               ],
               "gabarito": "Wein",
-              "explicacao": "Wein has ei /aɪ/; Wien has ie /iː/. Sound and spelling change the meaning."
+              "explicacao": "«Wein» contains ei /aɪ/; «Bier» contains ie /iː/."
             },
             {
               "id": "de-001-e23",
@@ -951,7 +944,7 @@
                 "eu"
               ],
               "gabarito": "ei",
-              "explicacao": "Wein means wine; Wien is Vienna."
+              "explicacao": "«Wein» means wine and has the vowel /aɪ/."
             },
             {
               "id": "de-001-e29",
@@ -970,8 +963,8 @@
         {
           "tipo": "producao",
           "min": 4,
-          "enunciado": "Three-step decoding challenge. (1) Read «Wein» and «Wien» aloud and explain the meaning difference. (2) Read «Schule», «Sport», «Buch» and «ich» without transliteration; identify each consonant pattern. (3) Replay the audio and identify one sound you need to practise again. Say it three times, slowly then naturally.",
-          "exemplo": "Wein /vaɪn/ = wine; Wien /viːn/ = Vienna; Schule /ʃ/; Sport /ʃp/; Buch [x]; ich [ç]."
+          "enunciado": "Three-step decoding challenge. (1) Read «Wein» and «Bier» aloud and explain the meaning difference. (2) Read «Schule», «Sport», «Buch» and «ich» without transliteration; identify each consonant pattern. (3) Replay the audio and identify one sound you need to practise again. Say it three times, slowly then naturally.",
+          "exemplo": "Wein /vaɪn/ = wine; Bier /biːɐ̯/ = beer; Schule /ʃ/; Sport /ʃp/; Buch [x]; ich [ç]."
         }
       ]
     },
