@@ -170,7 +170,7 @@ export const es: Dicionario = {
     'auth/popup-blocked': 'El navegador bloqueó la ventana de Google. Permite las ventanas emergentes y vuelve a intentarlo.', 'auth/network-request-failed': 'Sin conexión. Revisa internet y vuelve a intentarlo.',
     'auth/unauthorized-domain': 'Esta dirección todavía no está autorizada para iniciar sesión.', 'auth/operation-not-allowed': 'Este tipo de inicio de sesión todavía no está activado.', 'auth/admin-restricted-operation': 'El registro por correo está desactivado en este momento.',
     'auth/password-does-not-meet-requirements': 'La contraseña no cumple las reglas de seguridad. Usa mayúsculas y minúsculas, un número y un símbolo.', 'auth/configuration-not-found': 'El inicio de sesión por correo todavía no está configurado.',
-    entreConta: 'Entra en tu cuenta para continuar.', pagamentoIndisponivel: 'El pago no está disponible en este momento. Inténtalo de nuevo en unos instantes.',
+    entreConta: 'Entra en tu cuenta para continuar.', jaTemAcesso: 'Ya tienes acceso de pago activo. Para cambiar de plan, usa «Gestionar suscripción» o espera a que termine el período actual.', pagamentoIndisponivel: 'El pago no está disponible en este momento. Inténtalo de nuevo en unos instantes.',
     padrao: 'No pudimos completarlo. Inténtalo de nuevo.', compraApp: 'La compra todavía no está disponible en esta aplicación.',
   },
   naoEncontrada: { titulo: 'Página no encontrada', texto: 'Esta dirección no existe o ha cambiado de lugar.', inicio: 'Volver al inicio', cursos: 'Ver cursos' },

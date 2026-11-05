@@ -1,3 +1,4 @@
+import { CENTAVOS } from '../src/config/planos.ts';
 import type { Express } from 'express';
 import { firebaseAdmin, projetoFirebase } from './firebase-admin';
 
@@ -62,8 +63,10 @@ function verificacoesProducao(): Verificacao[] {
       // Somente GET: verifica a chave e o preço configurado, sem criar cliente ou cobrança.
       const r = await fetch(`https://api.stripe.com/v1/prices/${preco}`, { headers: { Authorization: `Bearer ${chave}` }, signal });
       if (!r.ok) { await r.body?.cancel(); throw new Error('stripe'); }
-      const p = await r.json() as { active?: boolean; livemode?: boolean; type?: string; currency?: string };
+      const p = await r.json() as { active?: boolean; livemode?: boolean; type?: string; currency?: string; unit_amount?: number | null; recurring?: { interval?: string; interval_count?: number } | null };
       if (!p.active || !p.livemode || p.type !== 'recurring' || p.currency !== 'brl') throw new Error('preco');
+      // O valor anunciado (src/config/planos.ts) tem de ser o cobrado: R$ 139 por mês, nem outro valor nem outro intervalo.
+      if (p.unit_amount !== CENTAVOS.mensal || p.recurring?.interval !== 'month' || (p.recurring?.interval_count ?? 1) !== 1) throw new Error('preco-divergente');
     } },
   ];
 }

@@ -169,7 +169,7 @@ export const ptBR = {
     'auth/popup-blocked': 'O navegador bloqueou a janela do Google. Libere pop-ups e tente de novo.', 'auth/network-request-failed': 'Sem conexão. Verifique a internet e tente de novo.',
     'auth/unauthorized-domain': 'Este endereço ainda não foi autorizado para login.', 'auth/operation-not-allowed': 'Este tipo de login ainda não foi ativado.', 'auth/admin-restricted-operation': 'O cadastro por e-mail está desativado neste momento.',
     'auth/password-does-not-meet-requirements': 'A senha não atende às regras de segurança. Use letras maiúsculas e minúsculas, número e símbolo.', 'auth/configuration-not-found': 'O login por e-mail ainda não foi configurado.',
-    entreConta: 'Entre na sua conta para continuar.', pagamentoIndisponivel: 'O pagamento está indisponível no momento. Tente de novo em instantes.',
+    entreConta: 'Entre na sua conta para continuar.', jaTemAcesso: 'Você já tem acesso pago ativo. Para mudar de plano, use «Gerenciar ou cancelar» ou espere o período atual terminar.', pagamentoIndisponivel: 'O pagamento está indisponível no momento. Tente de novo em instantes.',
     padrao: 'Não foi possível concluir. Tente de novo.', compraApp: 'A compra ainda não está disponível neste aplicativo.',
   } as Record<string, string>,
   naoEncontrada: { titulo: 'Página não encontrada', texto: 'O endereço não existe ou mudou de lugar.', inicio: 'Voltar ao início', cursos: 'Ver cursos' },
