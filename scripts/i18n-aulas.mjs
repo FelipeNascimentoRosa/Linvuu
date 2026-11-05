@@ -84,11 +84,21 @@ export function traduzirAula(aula, id, l) {
       const raw = mapa[`@exercicio:${item.id}`];
       if (!raw) continue;
       const override = JSON.parse(raw);
-      for (const campo of ['enunciado', 'explicacao', 'opcoes', 'gabarito']) {
-        if (Object.hasOwn(override, campo)) item[campo] = override[campo];
+      for (const campo of ['tipo', 'enunciado', 'explicacao', 'opcoes', 'gabarito', 'respostaEsperada', 'audio']) {
+        if (Object.hasOwn(override, campo)) { if (override[campo] === null) delete item[campo]; else item[campo] = override[campo]; }
       }
     }
   }
+  // Ajustes contextuais em células específicas, sem alterar traduções iguais noutros contextos.
+  copia.sessoes.forEach((sessao, si) => sessao.blocos.forEach((bloco, bi) => {
+    const raw = mapa[`@bloco:${si}:${bi}`];
+    if (!raw) return;
+    for (const [caminho, valor] of Object.entries(JSON.parse(raw))) {
+      const partes = caminho.split('.'); let destino = bloco;
+      for (const parte of partes.slice(0, -1)) destino = destino[parte];
+      destino[partes.at(-1)] = valor;
+    }
+  }));
   // Palavras: o inglês já existe no dado (`en`) nos cursos de russo e alemão.
   if (l === 'en') for (const s of copia.sessoes) for (const b of s.blocos) if (b.tipo === 'palavras' || b.tipo === 'vocabulario') b.itens.forEach((i, k) => {
     const original = aula.sessoes[copia.sessoes.indexOf(s)].blocos[s.blocos.indexOf(b)].itens[k].pt;
