@@ -11036,7 +11036,7 @@
       "dia": 233,
       "titulo": "To take the floor",
       "explicacao": "STEP 1: asking for the floor: «Puis-je intervenir ?» «Je voudrais ajouter quelque chose.» STEP 2: making a proposal: «Je propose que nous commencions par le budget.» (subjunctive after «proposer que») STEP 3: supporting: «Je suis d'accord avec Marie sur ce point.» STEP 4: objecting politely: «Je comprends votre point de vue, mais je crains que ce ne soit pas réaliste.» STEP 5: asking for clarification: «Pourriez-vous préciser ce que vous entendez par là ?» STEP 6: summarizing: «Pour résumer, nous avons décidé de…» STEP 7: closing: «Si personne n'a d'autres remarques, je propose de clore la réunion.»",
-      "comparacao": "in English «I don't think that will work» sounds direct. In French, an objection usually starts by acknowledging the other person: «je comprends, mais…». Without that opening, the sentence seems abrupt in a meeting.",
+      "comparacao": "In both English and French, the level of directness depends on the people and the setting. In a formal meeting, acknowledging a colleague’s point before objecting can soften your disagreement: «Je comprends votre point de vue, mais…».",
       "tabela": [
         {
           "situation": "to ask for the floor",
@@ -11059,7 +11059,7 @@
           "informal": "Je pense pas que ça marche."
         },
         {
-          "situation": "esclarecer",
+          "situation": "ask for clarification",
           "formal": "Pourriez-vous préciser ?",
           "informal": "Tu veux dire quoi ?"
         },
@@ -11086,9 +11086,9 @@
           "motivo": "«Craindre que» + subjunctive."
         },
         {
-          "errado": "Je peux intervenir ?",
+          "errado": "Puis-je à intervenir ?",
           "certo": "Puis-je intervenir ?",
-          "motivo": "Formal inversion with «puis»."
+          "motivo": "Use «puis-je» directly with the infinitive, without «à». «Je peux intervenir ?» is also correct, but less formal."
         }
       ]
     },
@@ -11143,12 +11143,12 @@
         {
           "errado": "Nous signons sauf si le prix augmentait.",
           "certo": "Nous signons sauf si le prix augmente.",
-          "motivo": "«Sauf si» + present."
+          "motivo": "For the present situation in this example, use the present indicative after «sauf si». Other indicative tenses are possible when the context calls for them."
         },
         {
           "errado": "Au cas où il refuse, appelez-moi.",
           "certo": "Au cas où il refuserait, appelez-moi.",
-          "motivo": "«Au cas où» + conditional."
+          "motivo": "In careful standard French, «au cas où» is normally followed by the conditional."
         },
         {
           "errado": "Je regrette mais nous pouvons pas.",
@@ -11165,8 +11165,8 @@
       "sessao": "S3",
       "dia": 235,
       "titulo": "Reporting verbs",
-      "explicacao": "STEP 1: in written reports, prefer more precise verbs than «dire»: «Il a annoncé que…», «Elle a confirmé que…», «Il a suggéré de…», «Elle a insisté sur…», «Il a reconnu que…» STEP 2: the tense shifts back after a past-tense verb: «Il a dit : \"Je viendrai\" → Il a dit qu'il viendrait.» STEP 3: questions: «Elle a demandé si nous étions prêts.» STEP 4: orders: «Il nous a demandé de partir.» STEP 5: minutes formulas: «Il a été décidé que…», «Il a été convenu de…»",
-      "comparacao": "in English «he said he would come» also shifts the tense back. What is new is the richness of verbs: in professional French, «dire» is little used in minutes; «annoncer», «confirmer» and «souligner» give precision.",
+      "explicacao": "STEP 1: in written reports, prefer more precise verbs than «dire»: «Il a annoncé que…», «Elle a confirmé que…», «Il a suggéré de…», «Elle a insisté sur…», «Il a reconnu que…» STEP 2: after a past reporting verb, the tense often shifts when describing a future event from that past perspective: «Il a dit : \"Je viendrai\" → Il a dit qu'il viendrait.» STEP 3: questions: «Elle a demandé si nous étions prêts.» STEP 4: orders: «Il nous a demandé de partir.» STEP 5: minutes formulas: «Il a été décidé que…», «Il a été convenu de…»",
+      "comparacao": "English also often shifts tenses in reported speech: “he said he would come.” In meeting minutes, specific reporting verbs such as «annoncer», «confirmer» and «souligner» make the speaker’s purpose clearer.",
       "tabela": [
         {
           "verb": "annoncer que",
@@ -11195,9 +11195,9 @@
       ],
       "erros": [
         {
-          "errado": "Il a dit qu'il viendra.",
+          "errado": "Il a dit qu'il viendrais.",
           "certo": "Il a dit qu'il viendrait.",
-          "motivo": "Backshift: conditional."
+          "motivo": "For «il», the conditional ending is «-ait». Here it expresses a future event viewed from the past."
         },
         {
           "errado": "Elle a demandé si étions-nous prêts.",
