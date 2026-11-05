@@ -1,0 +1,200 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 58,
+  "fase": 6,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Shopping, clothes, colours, este and ese: Prices, sizes and paying",
+  "objetivo": "Lesson 15, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 15,
+    "titulo": "Shopping, clothes, colours, este and ese",
+    "objetivo": "Name clothes and colors with the right agreement, ask about prices and sizes, pay, use the numbers 100 to 1000, point at objects with este, ese and aquel, and handle a short purchase in a store.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Prices, sizes and paying",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "la talla",
+            "translit": "[pronuncia] la TAH-lyah",
+            "pt": "the size (of clothing)",
+            "en": "",
+            "audio": "la talla"
+          },
+          {
+            "ru": "el precio",
+            "translit": "[pronuncia] el PREH-thyo",
+            "pt": "the price",
+            "en": "",
+            "audio": "el precio"
+          },
+          {
+            "ru": "las rebajas",
+            "translit": "[pronuncia] las reh-BAH-has",
+            "pt": "the sale, the price promotion",
+            "en": "",
+            "audio": "las rebajas"
+          },
+          {
+            "ru": "el probador",
+            "translit": "[pronuncia] el pro-bah-DOR",
+            "pt": "the fitting room",
+            "en": "",
+            "audio": "el probador"
+          },
+          {
+            "ru": "probarse",
+            "translit": "[pronuncia] pro-BAR-seh",
+            "pt": "to try on (clothes)",
+            "en": "",
+            "audio": "probarse"
+          },
+          {
+            "ru": "la caja",
+            "translit": "[pronuncia] la KAH-hah",
+            "pt": "the register (the payment counter)",
+            "en": "",
+            "audio": "la caja"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Asking the price, trying things on, and paying",
+        "explicacao": "STEP 1: to ask the price of one item, say «¿Cuánto cuesta?»; for several, «¿Cuánto cuestan?». «Costar» changes o → ue (cuesta, cuestan). For the total, «¿Cuánto es?». STEP 2: to ask for something, use «Quisiera…», «Busco…» or «¿Tiene…?»: «Busco una chaqueta negra» (I'm looking for a black jacket), «¿Tiene esto en una talla más grande?» (do you have this in a bigger size? — the word «más» is covered in lesson 26; for now just use the set phrase). With «tú», «¿Tienes…?». STEP 3: to try something on: «¿Puedo probarme esta camisa?» («probarse» changes o → ue: me pruebo). STEP 4: to say how it fits, use these set phrases: «Me queda bien» (it fits me well), «Me queda grande» (it's too big on me), «Me queda pequeño» (it's too small on me). STEP 5: to pay: «¿Puedo pagar con tarjeta?» (can I pay by card?), «Pago en efectivo» (I'll pay cash). Note: «con tarjeta» (by card) and «en efectivo» (in cash). STEP 6: numbers 100 to 1000: cien, ciento uno, ciento dos… doscientos, trescientos, cuatrocientos, quinientos, seiscientos, setecientos, ochocientos, novecientos, mil. Exact hundred: «cien euros». With one more unit: «ciento cinco». STEP 7: the hundreds agree with the noun: «doscientos euros», but «doscientas camisas». STEP 8: prices: «9,50 €» is read as «nueve euros con cincuenta». In writing, Spain uses a comma for the cents. In other countries the currency and the way prices are read change: pesos, dollars, soles. STEP 9: pronunciation: «quinientos» sounds like kee-NYEN-tos; «cien» sounds like thyen; «ciento» sounds like THYEN-to.",
+        "comparacao": "English «how much does it cost?» and «how much do they cost?» follow the same singular/plural logic Spanish does, so that part transfers directly. The round-hundred words are where the real difference shows up: English just says «five hundred, seven hundred, nine hundred» with no irregularity at all, while Spanish «quinientos» (not «cincocientos»), «setecientos» (not «sietecientos») and «novecientos» (not «nuevecientos») change shape in ways you simply have to memorize. And «cien» shifting to «ciento» the moment something follows it («ciento veinte») has no parallel in English «one hundred» at all.",
+        "exemplos": [
+          {
+            "ru": "¿Cuánto cuestan estos zapatos? — Cuestan sesenta y cinco euros.",
+            "pt": "How much do these shoes cost? They cost sixty-five euros."
+          },
+          {
+            "ru": "¿Puedo probarme esta chaqueta?",
+            "pt": "Can I try on this coat?"
+          },
+          {
+            "ru": "Me queda grande.",
+            "pt": "It's too big on me."
+          },
+          {
+            "ru": "¿Puedo pagar con tarjeta?",
+            "pt": "Can I pay by card?"
+          }
+        ],
+        "tabelas": [
+          {
+            "titulo": "Numbers 100 to 1000",
+            "linhas": [
+              {
+                "numero": "[misto] 100",
+                "escrita": "[misto] cien",
+                "exemplo": "[misto] Cuesta cien euros."
+              },
+              {
+                "numero": "[misto] 101",
+                "escrita": "[misto] ciento uno",
+                "exemplo": "[misto] Hay ciento uno."
+              },
+              {
+                "numero": "[misto] 200",
+                "escrita": "[misto] doscientos, doscientas",
+                "exemplo": "[misto] Doscientas camisas."
+              },
+              {
+                "numero": "[misto] 300",
+                "escrita": "[misto] trescientos",
+                "exemplo": "[misto] Trescientos euros."
+              },
+              {
+                "numero": "[misto] 400",
+                "escrita": "[misto] cuatrocientos",
+                "exemplo": "[misto] Cuatrocientos euros."
+              },
+              {
+                "numero": "[misto] 500",
+                "escrita": "[misto] quinientos",
+                "exemplo": "[misto] Quinientas personas."
+              },
+              {
+                "numero": "[misto] 600",
+                "escrita": "[misto] seiscientos",
+                "exemplo": "[misto] Seiscientos euros."
+              },
+              {
+                "numero": "[misto] 700",
+                "escrita": "[misto] setecientos",
+                "exemplo": "[misto] Setecientos euros."
+              },
+              {
+                "numero": "[misto] 800",
+                "escrita": "[misto] ochocientos",
+                "exemplo": "[misto] Ochocientos euros."
+              },
+              {
+                "numero": "[misto] 900",
+                "escrita": "[misto] novecientos",
+                "exemplo": "[misto] Novecientos euros."
+              },
+              {
+                "numero": "[misto] 1000",
+                "escrita": "[misto] mil",
+                "exemplo": "[misto] Mil euros."
+              }
+            ]
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] ¿Cuánto cuestan esta camisa?",
+            "certo": "[misto] ¿Cuánto cuesta esta camisa?",
+            "motivo": "One item: singular, «cuesta»."
+          },
+          {
+            "errado": "[misto] Quiero provar esta falda.",
+            "certo": "[misto] Quiero probarme esta falda.",
+            "motivo": "The verb is «probar(se)» and takes a «b»."
+          },
+          {
+            "errado": "[misto] Cien y cinco euros.",
+            "certo": "[misto] Ciento cinco euros.",
+            "motivo": "With a unit following, «cien» becomes «ciento»."
+          },
+          {
+            "errado": "[misto] Doscientos camisas.",
+            "certo": "[misto] Doscientas camisas.",
+            "motivo": "The hundreds agree in gender."
+          },
+          {
+            "errado": "[misto] Pago en tarjeta.",
+            "certo": "[misto] Pago con tarjeta.",
+            "motivo": "By card: «con»; cash: «en efectivo»."
+          }
+        ],
+        "tag": "Shopping"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Rehearse a purchase out loud: greet, ask for an item of clothing, ask the price, ask to try it on, and say how it fits. Then pay and say thanks."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say six items of clothing with their color, in the singular and plural: «una camisa blanca, unas camisas blancas…»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-015.json",
+  "responsavel": null
+}

@@ -1,0 +1,513 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 44,
+  "fase": 5,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Town and directions: Review and practice of lesson 11",
+  "objetivo": "Lesson 11, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 11,
+    "titulo": "Town and directions",
+    "objetivo": "Name places in the city, ask where something is, understand and give simple directions («todo recto, gire a la derecha, la segunda calle»), use means of transport with «en» and «a pie», and ask for a ticket.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 11",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Siga todo recto hasta el semáforo",
+            "opcoes": [
+              "[misto] Siga todo recto hasta el semáforo",
+              "[misto] Gire a la derecha en el semáforo",
+              "[misto] Siga todo recto hasta la esquina"
+            ],
+            "gabarito": "[misto] Siga todo recto hasta el semáforo",
+            "explicacao": "Listen to «todo recto» and «semáforo».",
+            "id": "es-011-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Está a diez minutos andando",
+            "opcoes": [
+              "[misto] Está a diez minutos andando",
+              "[misto] Está a dos minutos andando",
+              "[misto] Está a diez minutos en metro"
+            ],
+            "gabarito": "[misto] Está a diez minutos andando",
+            "explicacao": "Listen to «diez» and «andando».",
+            "id": "es-011-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Tome la segunda calle",
+            "opcoes": [
+              "[misto] Tome la segunda calle",
+              "[misto] Tome la primera calle",
+              "[misto] Tome la tercera calle"
+            ],
+            "gabarito": "[misto] Tome la segunda calle",
+            "explicacao": "Listen to «segunda».",
+            "id": "es-011-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "¿Dónde está la farmacia?",
+            "respostaEsperada": "¿Dónde está la farmacia?",
+            "explicacao": "Write: ¿Dónde está la farmacia?",
+            "id": "es-011-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Gire a la izquierda",
+            "respostaEsperada": "Gire a la izquierda",
+            "explicacao": "Write: Gire a la izquierda.",
+            "id": "es-011-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «el museo» mean?",
+            "audio": "el museo",
+            "opcoes": [
+              "the museum",
+              "on foot",
+              "the station",
+              "the subway"
+            ],
+            "gabarito": "the museum",
+            "explicacao": "«el museo» = the museum.",
+            "id": "es-011-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Un billete de ida y vuelta",
+            "respostaEsperada": "Un billete de ida y vuelta",
+            "explicacao": "Write: Un billete de ida y vuelta.",
+            "id": "es-011-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Perdone, ¿para ir a la estación?",
+            "respostaEsperada": "Perdone, ¿para ir a la estación?",
+            "explicacao": "Excuse me, how do I get to the station?",
+            "id": "es-011-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you ask where the station is?",
+            "opcoes": [
+              "[misto] ¿Dónde está la estación?",
+              "[misto] ¿Dónde es la estación?",
+              "[misto] ¿Dónde hay la estación?"
+            ],
+            "gabarito": "[misto] ¿Dónde está la estación?",
+            "explicacao": "Place: «estar».",
+            "id": "es-011-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which preposition goes with means of transport?",
+            "opcoes": [
+              "[misto] en",
+              "[misto] de",
+              "[misto] por"
+            ],
+            "gabarito": "[misto] en",
+            "explicacao": "En autobús, en metro, en tren.",
+            "id": "es-011-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «on foot»?",
+            "opcoes": [
+              "[misto] a pie",
+              "[misto] en pie",
+              "[misto] de pie"
+            ],
+            "gabarito": "[misto] a pie",
+            "explicacao": "«A pie» means on foot; «de pie» means standing.",
+            "id": "es-011-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «el cruce» mean?",
+            "audio": "el cruce",
+            "opcoes": [
+              "the supermarket",
+              "to the left",
+              "the crossing, the intersection",
+              "the ticket (Spain)"
+            ],
+            "gabarito": "the crossing, the intersection",
+            "explicacao": "«el cruce» = the crossing.",
+            "id": "es-011-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is «el ayuntamiento»?",
+            "opcoes": [
+              "the city hall",
+              "[misto] a gathering",
+              "[misto] a meeting"
+            ],
+            "gabarito": "the city hall",
+            "explicacao": "False friend: «ayuntamiento» means city hall.",
+            "id": "es-011-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "[misto] el primer semáforo",
+              "[misto] el primero semáforo",
+              "[misto] el primer semáforos"
+            ],
+            "gabarito": "[misto] el primer semáforo",
+            "explicacao": "«Primero» drops the «o» before a masculine singular noun.",
+            "id": "es-011-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «round trip»?",
+            "opcoes": [
+              "[misto] de ida y vuelta",
+              "[misto] ida volta",
+              "[misto] de idas y vueltas"
+            ],
+            "gabarito": "[misto] de ida y vuelta",
+            "explicacao": "The fixed phrase for the ticket.",
+            "id": "es-011-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Siga todo recto hasta el semáforo.",
+            "respostaEsperada": "Siga todo recto hasta el semáforo.",
+            "explicacao": "Go straight ahead to the traffic light.",
+            "id": "es-011-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Gire ___ la derecha.",
+            "opcoes": [
+              "[misto] a",
+              "[misto] en",
+              "[misto] por"
+            ],
+            "gabarito": "[misto] a",
+            "explicacao": "A direction takes «a».",
+            "id": "es-011-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «a la izquierda» mean?",
+            "audio": "a la izquierda",
+            "opcoes": [
+              "the street",
+              "the stop (bus)",
+              "to the left",
+              "the market"
+            ],
+            "gabarito": "to the left",
+            "explicacao": "«a la izquierda» = to the left.",
+            "id": "es-011-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Llego ___ metro.",
+            "opcoes": [
+              "[misto] en",
+              "[misto] de",
+              "[misto] a"
+            ],
+            "gabarito": "[misto] en",
+            "explicacao": "The means of transport takes «en».",
+            "id": "es-011-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tome la ___ calle. (second)",
+            "opcoes": [
+              "[misto] segunda",
+              "[misto] segundo",
+              "[misto] dos"
+            ],
+            "gabarito": "[misto] segunda",
+            "explicacao": "The ordinal agrees with «calle».",
+            "id": "es-011-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "La estación está ___ museo. (across from the)",
+            "opcoes": [
+              "[misto] enfrente del",
+              "[misto] enfrente de el",
+              "[misto] enfrente en el"
+            ],
+            "gabarito": "[misto] enfrente del",
+            "explicacao": "De + el = del.",
+            "id": "es-011-e16"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "¿Cómo ___ a la estación? (do I get)",
+            "opcoes": [
+              "[misto] llego",
+              "[misto] llega",
+              "[misto] llegas"
+            ],
+            "gabarito": "[misto] llego",
+            "explicacao": "With «yo», «llego».",
+            "id": "es-011-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «el mercado» mean?",
+            "audio": "el mercado",
+            "opcoes": [
+              "straight ahead",
+              "the ticket (Spain)",
+              "the market",
+              "to the left"
+            ],
+            "gabarito": "the market",
+            "explicacao": "«el mercado» = the market.",
+            "id": "es-011-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Siga todo recto y gire a la izquierda.»",
+            "opcoes": [
+              "Siga",
+              "todo",
+              "recto",
+              "y",
+              "gire",
+              "a",
+              "la",
+              "izquierda."
+            ],
+            "gabarito": "Siga todo recto y gire a la izquierda.",
+            "explicacao": "Two instructions joined with «y».",
+            "id": "es-011-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "¿A la izquierda y luego a la derecha?",
+            "respostaEsperada": "¿A la izquierda y luego a la derecha?",
+            "explicacao": "Left and then right?",
+            "id": "es-011-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «¿Hay una farmacia por aquí?»",
+            "opcoes": [
+              "¿Hay",
+              "una",
+              "farmacia",
+              "por",
+              "aquí?"
+            ],
+            "gabarito": "¿Hay una farmacia por aquí?",
+            "explicacao": "A question about existence.",
+            "id": "es-011-e19"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: Excuse me, where's the station? It's ten minutes on foot.",
+            "respostaEsperada": "[misto] Perdone, ¿dónde está la estación? Está a diez minutos andando.",
+            "id": "es-011-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Un billete de ___ y vuelta, por favor.",
+            "opcoes": [
+              "[misto] salida",
+              "[misto] entrada",
+              "[misto] ida"
+            ],
+            "gabarito": "[misto] ida",
+            "explicacao": "«Ida y vuelta» is the round-trip ticket.",
+            "id": "es-011-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «la esquina» mean?",
+            "audio": "la esquina",
+            "opcoes": [
+              "the corner",
+              "the museum",
+              "on foot",
+              "the subway"
+            ],
+            "gabarito": "the corner",
+            "explicacao": "«la esquina» = the corner.",
+            "id": "es-011-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tome la ___ calle. (third)",
+            "opcoes": [
+              "[misto] tercera",
+              "[misto] tercero",
+              "[misto] tres"
+            ],
+            "gabarito": "[misto] tercera",
+            "explicacao": "«Calle» is feminine, so «tercera».",
+            "id": "es-011-e22"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Perdone, ¿hay ___ farmacia por aquí? (a)",
+            "opcoes": [
+              "[misto] la",
+              "[misto] una",
+              "[misto] unas"
+            ],
+            "gabarito": "[misto] una",
+            "explicacao": "With «hay», an indefinite article is used: «una farmacia».",
+            "id": "es-011-e23"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Gire a la ___ en el semáforo. (left)",
+            "opcoes": [
+              "[misto] derecha",
+              "[misto] esquina",
+              "[misto] izquierda"
+            ],
+            "gabarito": "[misto] izquierda",
+            "explicacao": "«Izquierda» means left; «derecha» means right.",
+            "id": "es-011-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Eso es. La estación está enfrente del museo.",
+            "respostaEsperada": "Eso es. La estación está enfrente del museo.",
+            "explicacao": "That's right. The station is across from the museum.",
+            "id": "es-011-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «The bus stop is nearby»?",
+            "opcoes": [
+              "[misto] La parada es cerca.",
+              "[misto] La parada hay cerca.",
+              "[misto] La parada está cerca."
+            ],
+            "gabarito": "[misto] La parada está cerca.",
+            "explicacao": "Locating a specific, known thing needs «estar».",
+            "id": "es-011-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «el autobús» mean?",
+            "audio": "el autobús",
+            "opcoes": [
+              "on foot",
+              "the bus",
+              "to the right",
+              "the station"
+            ],
+            "gabarito": "the bus",
+            "explicacao": "«el autobús» = the bus.",
+            "id": "es-011-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «tú» form for «Siga todo recto»?",
+            "opcoes": [
+              "[misto] Sigue todo recto.",
+              "[misto] Siga todo recto.",
+              "[misto] Seguir todo recto."
+            ],
+            "gabarito": "[misto] Sigue todo recto.",
+            "explicacao": "With «tú», the form is «sigue».",
+            "id": "es-011-e26"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which form is correct?",
+            "opcoes": [
+              "[misto] el tercero semáforo",
+              "[misto] la tercer semáforo",
+              "[misto] el tercer semáforo"
+            ],
+            "gabarito": "[misto] el tercer semáforo",
+            "explicacao": "«Tercero» drops the «o» before a masculine noun.",
+            "id": "es-011-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Tome la segunda calle a la derecha.»",
+            "opcoes": [
+              "Tome",
+              "la",
+              "segunda",
+              "calle",
+              "a",
+              "la",
+              "derecha."
+            ],
+            "gabarito": "Tome la segunda calle a la derecha.",
+            "explicacao": "Feminine ordinal with «calle».",
+            "id": "es-011-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: Where's the museum?",
+            "respostaEsperada": "[misto] ¿Dónde está el museo?",
+            "id": "es-011-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: The station is ten minutes on foot.",
+            "respostaEsperada": "[misto] La estación está a diez minutos andando.",
+            "id": "es-011-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Act out a street conversation out loud with a friend: a tourist asks the way to the museum and the other person answers with three steps."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Give a four-step route to the pharmacy and ask the distance. Then say how you travel to work."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-011.json",
+  "responsavel": null
+}
