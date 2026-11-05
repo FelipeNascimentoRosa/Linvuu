@@ -75,6 +75,7 @@ export const en: Dicionario = {
   cursosPagina: {
     titulo: 'All courses', buscar: 'Search', exemplo: 'E.g. German, French', contagem: (n: number) => (n === 1 ? '1 course' : `${n} courses`),
     vazio: (q: string) => `No course found for "${q}". Try another word or`, limpar: 'clear the search', portugues: 'Brazilian Portuguese, explained in English →',
+    avisoObraTitulo: '', avisoObraTexto: '',
   },
   cursoPagina: {
     continuarBtn: 'Continue', sessaoTitulo: (n: number, t: string) => `Session ${n}: ${t}`, continuar: (n: number, t: string) => `Continue with session ${n}: ${t}`, comecar: 'Start with session 1 (free)', feitas: (a: number, b: number) => `${a} of ${b} sessions completed`, concluida: 'completed', aulasNivel: (n: number) => `${n} lessons`, retomarKicker: (c: string) => `Continue ${c}`,

@@ -74,6 +74,7 @@ export const ptBR = {
   cursosPagina: {
     titulo: 'Todos os cursos', buscar: 'Buscar', exemplo: 'Ex.: alemão, francês', contagem: (n: number) => (n === 1 ? '1 curso' : `${n} cursos`),
     vazio: (q: string) => `Nenhum curso encontrado para "${q}". Tente outra palavra ou`, limpar: 'limpe a busca', portugues: 'Português para estrangeiros (aulas em inglês ou espanhol) →',
+    avisoObraTitulo: '', avisoObraTexto: '',
   },
   cursoPagina: {
     continuarBtn: 'Continuar', sessaoTitulo: (n: number, t: string) => `Sessão ${n}: ${t}`, continuar: (n: number, t: string) => `Continuar na sessão ${n}: ${t}`, comecar: 'Começar pela sessão 1 (grátis)', feitas: (a: number, b: number) => `${a} de ${b} sessões concluídas`, concluida: 'concluída', aulasNivel: (n: number) => `${n} aulas`, retomarKicker: (c: string) => `Continuar ${c}`,
