@@ -1,7 +1,7 @@
 // Gera public/sitemap.xml e public/robots.txt nos três idiomas do site (/, /en, /es), com as versões alternativas (hreflang).
 // O conjunto de URLs deriva do mesmo modelo de indexação do servidor (src/lib/metaRota.ts), para o sitemap não
-// divergir do site servido: hub de curso e gramática são indexáveis em todos os idiomas em que o curso é
-// oferecido (todos excepto o do próprio público de cada idioma — LOCALES.oculto — e os cursos 'em-breve');
+// divergir do site servido: hub de curso só é indexável no idioma em que TODAS as aulas estão explicadas, e a
+// gramática só onde o arquivo dela existe nesse idioma (sem o curso do próprio público — LOCALES.oculto — nem 'em-breve');
 // as sessões grátis só são indexáveis no idioma em que a explicação da aula existe (o idioma-fonte do curso
 // ou uma tradução presente em content/indice.<idioma>.json). Fora do sitemap ficam, por decisão, as páginas
 // legais (/privacidade, /termos) e as versões que o servidor marca com noindex.
@@ -19,8 +19,6 @@ const fonte = (id) => indice[id]?.fonte ?? 'pt';
 /** Caminhos (sem prefixo) e em quais idiomas cada um entra. */
 const grupos = [];
 const todos = (c) => LOCALES.map((l) => l.c);
-/** Cluster hreflang de um curso (espelha metaRota.ts): todos os públicos menos aquele cuja língua é o próprio curso. */
-const declarados = (id) => LOCALES.filter((l) => l.oculto !== id).map((l) => l.c);
 /** x-default de um grupo: PT se estiver no cluster; senão o idioma-fonte do curso; senão o primeiro do cluster. */
 const alvoPadrao = (g) => {
   const anot = g.anot ?? g.em;
@@ -55,10 +53,15 @@ if (fs.existsSync(dirLivros)) for (const id of fs.readdirSync(dirLivros).sort())
 // quando uma tradução for publicada, as URLs entram no sitemap sem nova lista manual.
 const EXPLICACAO = { 'pt-BR': 'pt', en: 'en', es: 'es' };
 const temAula = (id, loc, aula) => fonte(id) === EXPLICACAO[loc.c] || (tr[EXPLICACAO[loc.c]]?.[id]?.aulas ?? []).includes(aula);
+// Mesma regra de metaRota.ts (explicacaoCompleta / gramaticaExisteEm); scripts/testar-inventario-seo.ts confere as duas nos dois sentidos.
+const completo = (id, loc) => fonte(id) === EXPLICACAO[loc.c] || ((indice[id]?.grupos ?? []).length > 0 && (indice[id].grupos).every((g) => (tr[EXPLICACAO[loc.c]]?.[id]?.aulas ?? []).includes(g.aula)));
+const temGramatica = (id, loc) => fonte(id) === EXPLICACAO[loc.c] || fs.existsSync(path.join(raiz, 'content', 'gramatica', `${id}.${EXPLICACAO[loc.c]}.json`));
 for (const c of cursos.filter((x) => x.status !== 'em-breve')) {
   const oferecidos = LOCALES.filter((l) => l.oculto !== c.id);
-  const emHub = oferecidos.map((l) => l.c);
-  grupos.push({ p: `/curso/${c.id}`, em: emHub, anot: declarados(c.id) }, { p: `/gramatica/${c.id}`, em: emHub, anot: declarados(c.id) });
+  const emHub = oferecidos.filter((l) => completo(c.id, l)).map((l) => l.c);
+  const emGram = oferecidos.filter((l) => temGramatica(c.id, l)).map((l) => l.c);
+  if (emHub.length) grupos.push({ p: `/curso/${c.id}`, em: emHub });
+  if (emGram.length) grupos.push({ p: `/gramatica/${c.id}`, em: emGram });
   for (let d = 1; d <= 8; d++) {
     const em = oferecidos.filter((l) => temAula(c.id, l, Math.ceil(d / 4))).map((l) => l.c);
     if (em.length) grupos.push({ p: `/curso/${c.id}/dia/${d}`, em });
