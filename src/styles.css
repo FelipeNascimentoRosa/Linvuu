@@ -377,7 +377,7 @@ a.livro:focus-visible{outline:2px solid var(--ocre);outline-offset:6px}
 .chips a.chip{display:inline-flex;align-items:center;padding:8px 16px;border-radius:var(--r-pill);border:1.5px solid var(--border-strong);background:var(--papel-claro);font-size:14px;font-weight:600;color:var(--muted)}
 .chips a.chip.on{background:var(--text);border-color:var(--text);color:var(--papel-claro)}
 
-.link-gramatica{font-weight:700;text-decoration:underline;color:var(--accent-dark)}
+.link-gramatica{font-weight:700;text-decoration:underline;color:var(--accent-dark);display:inline-flex;align-items:center;min-height:44px}
 
 .nota-audio{font-size:13px;padding:8px 14px}
 
@@ -433,3 +433,6 @@ a.livro:focus-visible{outline:2px solid var(--ocre);outline-offset:6px}
 /* Preferência pedagógica independente do idioma dos menus. */
 .idioma-explicacao{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin-block:1rem}
 .idioma-explicacao select{min-height:48px;max-width:100%;font:inherit;color:var(--fg-1);background:var(--bg);border:var(--borda-forte);border-radius:var(--raio-sm,6px);padding:.5rem .75rem}
+
+/* Caixas de seleção com alvo mínimo de 24px (WCAG 2.5.8). */
+.check input[type="checkbox"]{width:1.25rem;height:1.25rem;min-width:1.25rem;margin:0 .5rem 0 0;vertical-align:middle;accent-color:var(--accent-dark)}

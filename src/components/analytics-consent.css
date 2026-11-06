@@ -10,3 +10,12 @@ html[data-plataforma="nativo"] .analytics-consent{margin-bottom:calc(6rem + env(
 html[data-plataforma="nativo"] .analytics-consent[data-pending="true"]{bottom:calc(5rem + env(safe-area-inset-bottom,0px));margin-bottom:0}
 .analytics-fechar{justify-content:flex-end;padding-top:.25rem}
 .lv-preferencias{font:inherit;color:inherit;text-decoration:underline;background:none;border:0;padding:0;cursor:pointer}
+
+/* Site: aviso compacto; a altura dele vira margem de rolagem e de página, para nada (nem o foco do teclado) ficar escondido atrás. */
+html:not([data-plataforma="nativo"]){scroll-padding-bottom:var(--lv-consent-h,0px)}
+html:not([data-plataforma="nativo"]) body{padding-bottom:var(--lv-consent-h,0px)}
+.analytics-consent[data-flutuante="true"] summary{min-height:44px;padding-block:.5rem}
+.analytics-consent[data-flutuante="true"] p{margin:.25rem 0 .5rem}
+.analytics-consent[data-flutuante="true"] .analytics-actions{display:flex;gap:.5rem;flex-wrap:wrap}
+.analytics-consent[data-flutuante="true"] .analytics-actions .btn{flex:1 1 8rem;min-height:44px}
+@media (max-width:600px){.analytics-consent[data-pending="true"],.analytics-consent[data-flutuante="true"]{bottom:0;width:100%;border-radius:1rem 1rem 0 0;padding:.25rem 1rem .75rem;max-height:45vh;font-size:.8125rem;line-height:1.5}}

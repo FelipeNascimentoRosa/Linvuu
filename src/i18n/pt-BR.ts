@@ -58,7 +58,7 @@ export const ptBR = {
     { p: 'Quanto custa?', r: APK ? 'As compras dentro do aplicativo ainda não estão disponíveis.' : 'As 2 primeiras aulas de cada curso são grátis, sem cartão. Depois, a assinatura custa R$ 139 por mês, com todos os cursos. Você cancela quando quiser e pode pedir reembolso integral em até 7 dias.' },
     { p: 'Quanto tempo preciso por dia?', r: 'Cada aula tem 4 sessões de cerca de 30 minutos. O ideal é 1 hora por dia, mas uma sessão já conta. Com a conta criada, o progresso fica salvo e você continua em qualquer aparelho.' },
     { p: 'Vou ficar fluente?', r: 'A Linvuu entrega método, prática e constância; o nível que você alcança depende das suas horas de estudo e do uso real do idioma. As trilhas foram desenhadas para levar você do zero a uma base sólida, até o B1.' },
-    { p: 'Quem está por trás da Linvuu?', r: 'O método vem das aulas ao vivo do professor que criou a Linvuu. Cada curso é escrito por professores, com explicações pensadas para quem fala português, e passa por revisão antes de ser publicado.' },
+    { p: 'Quem está por trás da Linvuu?', r: 'O método vem das aulas ao vivo dos professores que criaram a Linvuu. Cada curso é escrito por professores, com explicações pensadas para quem fala português, e passa por revisão antes de ser publicado.' },
     { p: 'O áudio é de verdade?', r: 'Cada frase tem áudio gerado com vozes neurais do idioma, revisado aos poucos. Onde ainda não há arquivo, o site usa a voz do seu navegador e avisa na tela.' },
     { p: 'O site existe em outros idiomas?', r: 'Sim. No topo da página você troca para inglês ou espanhol: o site e as explicações das aulas mudam de idioma; as frases, os diálogos e o áudio do idioma estudado continuam os mesmos.' },
   ],

@@ -171,3 +171,14 @@
 @media (max-width: 600px){.br-vuu-section{grid-template-columns:1fr;gap:24px}.br-vuu-portrait img{max-width:150px}}
 
 .br-book-links{display:flex;flex-wrap:wrap;gap:14px 24px;margin-top:20px;font-size:15px}.br-book-links a{color:var(--br-green);text-decoration:underline;text-underline-offset:4px}
+
+.br-why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.br-why-grid article{border:1px solid var(--site-borda-cartao);border-radius:12px;padding:24px;background:var(--site-cartao);display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+.br-why-grid h3{margin:0;font-size:20px;color:var(--br-green)}
+.br-why-grid p{margin:0;font-size:16px;line-height:1.55}
+.br-why-grid .br-text-link{margin-top:auto}
+.br-hero-copy .br-pick{margin:24px 0 12px;font-size:17px;font-weight:700;color:var(--br-green)}
+.br-pick-list{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+.br-pick-btn{display:inline-flex;align-items:center;min-height:44px;padding:10px 18px;border:1px solid var(--br-green);border-radius:8px;color:var(--br-green);font-weight:650;font-size:16px;background:var(--site-cartao)}
+.br-pick-btn:hover{background:var(--br-green);color:var(--site-branco)}
+.br-current a{display:inline-flex;align-items:center;min-height:44px}

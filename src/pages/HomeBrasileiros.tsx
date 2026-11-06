@@ -49,11 +49,14 @@ export default function HomeBrasileiros() {
       <div className="br-resume-texto"><p className="br-resume-frase">{h(r.frase)}</p><p className="br-resume-prog">{retomada.nome} · {h(r.contagem)}</p><p className="br-resume-prox">{h('Próxima:')} {h('sessão')} {retomada.dia}{retomada.titulo ? ` · ${retomada.titulo}` : ''}</p></div>
       <HomeCourseLink to={`/curso/${retomada.idioma}/dia/${retomada.dia}`}>{h("Continuar minha sessão →")}</HomeCourseLink>{apoio.length > 0 && <p className="br-resume-apoio">{apoio.map((a) => <Link key={a.para} to={a.para}>{a.texto}</Link>)}</p>}</section>; })()}
     <section className="br-hero">
-      <div className="br-hero-copy"><p className="br-eyebrow">{h("CURSOS DE IDIOMAS FEITOS PARA BRASILEIROS")}</p>
-        <h1>{h("O mundo tem")}<br />{h("muito a dizer.")}<br /><em>{h("Entre na conversa.")}</em></h1>
+      <div className="br-hero-copy"><p className="br-eyebrow">{h("CURSOS DE IDIOMAS ONLINE")}</p>
+        <h1>{h("Aprenda idiomas online,")}<br /><em>{h("explicados em português.")}</em></h1>
         <p className="br-lead">{h(HOME_BR.lead)}</p>
-        <div className="br-actions"><a className="br-button" href="#idiomas">{h('Escolher meu idioma')}<span aria-hidden="true">↓</span></a><a className="br-text-link" href="#experimente">{h("Experimentar o método ↓")}</a></div>
+        <p className="br-pick" id="br-pick-title">{h("Que idioma você quer aprender?")}</p>
+        <nav className="br-pick-list" aria-labelledby="br-pick-title">{idiomas.map((i) => <HomeCourseLink key={i.id} to={`/curso/${i.id}`} className="br-pick-btn">{h(i.nome)}</HomeCourseLink>)}</nav>
+        <div className="br-actions"><a className="br-text-link" href="#experimente">{h("Experimentar o método ↓")}</a></div>
         <p className="br-fine">{h("2 primeiras aulas grátis · Sem cartão para experimentar")}</p>
+        {LOCALE.codigo === 'pt-BR' && <p className="br-fine"><a href="https://www.udemy.com/course/curso-de-russo-a1-ate-a2/" target="_blank" rel="noopener noreferrer">Curso de russo na Udemy: nota 4,7 de 5 em 72 avaliações · 285 alunos</a></p>}
       {LOCALE.codigo !== 'pt-BR' && <p className="br-fine">{homeNotice}</p>}
       </div>
       <div className="br-scene" id="experimente">
@@ -67,6 +70,15 @@ export default function HomeBrasileiros() {
       </div>
     </section>
     <div className="br-benefits"><span><strong>{h("Em português.")}</strong>{h(" Desde a explicação.")}</span><span><strong>{h("Com áudio.")}</strong>{h(" Para ouvir e repetir.")}</span><span><strong>{h("No seu ritmo.")}</strong>{h(" Uma sessão por vez.")}</span></div>
+    <section className="br-section br-why" id="por-que-online" aria-labelledby="br-why-title">
+      <div className="br-section-head"><div><p className="br-eyebrow">{h("CURSOS ONLINE, FEITOS POR PROFESSORES")}</p><h2 id="br-why-title">{h("Por que aprender com a Linvuu?")}</h2></div></div>
+      <div className="br-why-grid">
+        <article><h3>{h("Feito por professores.")}</h3><p>{h("Cada curso é escrito e revisado por professores de idiomas.")}</p></article>
+        <article><h3>{h("Baseado em livros de referência.")}</h3><p>{h("Livros didáticos e gramáticas de cada idioma, explicados em português.")}</p></article>
+        <article><h3>{h("Você ouve e pratica.")}</h3><p>{h("Áudio em cada frase e exercícios com correção.")}</p></article>
+        {LOCALE.codigo !== 'es' && <article><h3>{h("Aula ao vivo, se quiser.")}</h3><p>{h("Aulas de russo por videochamada com professores.")}</p><Link className="br-text-link" to="/russo-online">{h("Ver aulas ao vivo →")}</Link></article>}
+      </div>
+    </section>
     <section className="br-section br-vuu-section" aria-labelledby="br-vuu-title">
       <div className="br-vuu-portrait"><img src="/assets/vuu/vuu-feliz-2d.svg" alt="" width="220" height="249" loading="lazy" /><span>VUU / LINVUU</span></div>
       <div><p className="br-eyebrow">{h('CONHEÇA O VUU')}</p><h2 id="br-vuu-title">{h('Uma língua fica mais próxima quando faz sentido.')}</h2>
@@ -82,7 +94,7 @@ export default function HomeBrasileiros() {
         ['03', 'Coloque em prática.', 'Exercícios com correção e atividades de fala e escrita para usar o que aprendeu.', '↗', '/fotos/pratica.jpg'],
       ].map(([n, titulo, texto, icon, foto]) => <article key={n}><img className="br-method-foto" src={foto} alt="" width="1000" height="600" loading="lazy" decoding="async" /><div className="br-method-top"><span>{n}</span><b aria-hidden="true">{icon}</b></div><h3>{h(titulo)}</h3><p>{h(texto)}</p></article>)}</div>
     </section>
-    <section className="br-section" id="idiomas"><span id="cursos" /><div className="br-section-head"><div><p className="br-eyebrow">{h("UMA VONTADE JÁ É UM COMEÇO")}</p><h2>{h("Qual será o seu")}<br />{h("próximo “olá”?")}</h2></div><p>{h("Para viajar, se aproximar de outras culturas ou realizar um objetivo seu. Encontre um idioma para começar.")}</p></div><div className="br-languages">{idiomas.map((i, n) => <HomeCourseLink key={i.id} to={`/curso/${i.id}`} className={`br-language br-language-${n}`}><span className="br-greeting" lang={i.lang}>{i.oi}<span aria-hidden="true">.</span></span><div><h3>{h(i.nome)}</h3><span aria-hidden="true">↗</span></div><p>{h(i.detalhe)}</p></HomeCourseLink>)}</div></section>
+    <section className="br-section" id="idiomas"><span id="cursos" /><div className="br-section-head"><div><p className="br-eyebrow">{h("ESCOLHA UM CURSO ONLINE")}</p><h2>{h("Qual idioma você")}<br />{h("quer aprender hoje?")}</h2></div><p>{h("Para viajar, se aproximar de outras culturas ou realizar um objetivo seu. Encontre um idioma para começar.")}</p></div><div className="br-languages">{idiomas.map((i, n) => <HomeCourseLink key={i.id} to={`/curso/${i.id}`} className={`br-language br-language-${n}`}><span className="br-greeting" lang={i.lang}>{i.oi}<span aria-hidden="true">.</span></span><div><h3>{h(i.nome)}</h3><span aria-hidden="true">↗</span></div><p>{h(i.detalhe)}</p></HomeCourseLink>)}</div></section>
     <section className="br-book"><div className="br-book-covers" aria-hidden="true">{['en', 'de', 'ru'].filter(id => id !== LOCALE.cursoOculto).map(id => <img key={id} src={`/livros/${id}-a1-a2-v1-600.webp`} width="600" height="800" alt="" loading="lazy" decoding="async" />)}</div><div><p className="br-eyebrow">{h("PARA QUEM GOSTA DE IR ALÉM")}</p><h2>{h("Seu aprendizado")}<br />{h("também tem páginas.")}</h2><p>{h("Explore os livros da Linvuu, leia com calma e volte aos assuntos que merecem mais atenção.")}</p><p>{h('Livros A1–A2 em seis idiomas. Leia os dois primeiros capítulos grátis, com áudio.')}</p><p>{h(LIVROS_EM_PRODUCAO)}</p><Link className="br-text-link" to="/livros">{h("Conhecer a coleção →")}</Link><div className="br-book-links"><HomeCourseLink to="/livros/de">{h("Livro de alemão →")}</HomeCourseLink><HomeCourseLink to="/livros/es">{h("Livro de espanhol →")}</HomeCourseLink></div></div></section>
     <OfertaAtual />
     <section className="br-section br-faq" id="faq"><div><p className="br-eyebrow">{h("VAMOS COMEÇAR BEM")}</p><h2>{h("Uma dúvida")}<br />{h("antes do primeiro passo?")}</h2><Link to="/contato" className="br-text-link">{h("Fale com a Linvuu →")}</Link></div><div>{perguntas.map(([p,r]) => <details key={p}><summary>{h(p)}</summary><p>{h(r)}</p></details>)}</div></section>

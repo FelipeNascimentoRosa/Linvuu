@@ -18,9 +18,9 @@ export default function AulasRusso() {
         <h1 className="pagina-h1">{t.titulo}</h1>
         <p className="lead">{t.lead}</p>
       </header>
-      <section className="lvr-artigo" aria-labelledby="ar-quem">
-        <h2 id="ar-quem" className="lvr-h2" style={{ marginTop: 0 }}>{t.quemTitulo}</h2>
-        <ul>{t.credenciais.map((c) => <li key={c} className="lvr-p">{c}</li>)}</ul>
+      <section className="lvr-artigo" aria-label={t.comoTitulo}>
+        {t.credenciais.length > 0 && <><h2 id="ar-quem" className="lvr-h2" style={{ marginTop: 0 }}>{t.quemTitulo}</h2>
+        <ul>{t.credenciais.map((c) => <li key={c} className="lvr-p">{c}</li>)}</ul></>}
         <h2 className="lvr-h2">{t.comoTitulo}</h2>
         <ul>{t.como.map((c) => <li key={c} className="lvr-p">{c}</li>)}</ul>
         <h2 className="lvr-h2">{t.testeTitulo}</h2>
