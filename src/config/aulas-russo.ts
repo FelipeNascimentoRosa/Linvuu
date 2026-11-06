@@ -28,9 +28,6 @@ export const AULAS_RUSSO: Record<'pt-BR' | 'en', TextoAulasRusso> = {
     lead: 'Aprenda russo com professores, ao vivo, por videochamada, e estude entre as aulas no curso de russo da Linvuu.',
     quemTitulo: 'Os professores',
     credenciais: [
-      'Palestra «Preparação para o TRKI (TORFL) usando plataforma EAD» apresentada em seminário do Centro de Testes de Proficiência da Universidade Estatal de São Petersburgo (junho de 2021).',
-      'Experiência no Instituto Valeeva Rosa, escola membro da Associação de Escolas Russas no Exterior (2024).',
-      'Professores de línguas, com intérprete de russo e formação em matemática na equipe. Aulas em português ou em inglês.',
     ],
     comoTitulo: 'Como funcionam as aulas',
     como: [
@@ -53,9 +50,6 @@ export const AULAS_RUSSO: Record<'pt-BR' | 'en', TextoAulasRusso> = {
     lead: 'Learn Russian with teachers, live, by video call, and study between lessons with the Linvuu Russian course.',
     quemTitulo: 'The teachers',
     credenciais: [
-      'Talk “Preparing for TRKI (TORFL) using a distance-learning platform” given at a seminar of the Russian Language Testing Center, Saint Petersburg State University (June 2021).',
-      'Experience at Instituto Valeeva Rosa, a school that is a member of the Association of Russian Schools Abroad (2024).',
-      'Language teachers, with a Russian interpreter and a mathematics background on the team. Lessons in English or Portuguese.',
     ],
     comoTitulo: 'How the lessons work',
     como: [
