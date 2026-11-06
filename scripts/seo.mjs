@@ -9,8 +9,9 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const raiz = path.resolve(import.meta.dirname, '..');
-const SITE = 'https://linvuu.com.br';
-const LOCALES = [{ c: 'pt-BR', p: '', l: 'pt', oculto: 'br' }, { c: 'en', p: '/en', l: 'en', oculto: 'en' }, { c: 'es', p: '/es', l: 'es', oculto: 'es' }];
+// Dois domínios: português no .com.br; inglês (raiz) e espanhol (/es) no .com. `legado` = prefixo antigo, só para ler content/lastmod.json.
+const SITE_BR = 'https://linvuu.com.br', SITE_GLOBAL = 'https://linvuu.com';
+const LOCALES = [{ c: 'pt-BR', p: '', legado: '', site: SITE_BR, l: 'pt', oculto: 'br' }, { c: 'en', p: '', legado: '/en', site: SITE_GLOBAL, l: 'en', oculto: 'en' }, { c: 'es', p: '/es', legado: '/es', site: SITE_GLOBAL, l: 'es', oculto: 'es' }];
 const { cursos } = JSON.parse(fs.readFileSync(path.join(raiz, 'content', 'cursos.json'), 'utf8'));
 const indice = JSON.parse(fs.readFileSync(path.join(raiz, 'content', 'indice.json'), 'utf8')).cursos;
 const tr = Object.fromEntries(['en', 'es'].map((l) => { const f = path.join(raiz, 'content', `indice.${l}.json`); return [l, fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : {}]; }));
@@ -19,9 +20,10 @@ const fonte = (id) => indice[id]?.fonte ?? 'pt';
 /** Caminhos (sem prefixo) e em quais idiomas cada um entra. */
 const grupos = [];
 const todos = (c) => LOCALES.map((l) => l.c);
-/** x-default de um grupo: PT se estiver no cluster; senão o idioma-fonte do curso; senão o primeiro do cluster. */
+/** x-default de um grupo: inglês (o .com, internacional) se estiver no cluster; senão PT; senão o idioma-fonte do curso; senão o primeiro. Espelha alternativosDe (metaRota.ts). */
 const alvoPadrao = (g) => {
   const anot = g.anot ?? g.em;
+  if (anot.includes('en')) return 'en';
   if (anot.includes('pt-BR')) return 'pt-BR';
   const id = g.p.match(/^\/(?:curso|gramatica)\/([a-z]{2})/)?.[1];
   const cod = id ? (fonte(id) === 'pt' ? 'pt-BR' : fonte(id)) : undefined;
@@ -67,8 +69,10 @@ for (const c of cursos.filter((x) => x.status !== 'em-breve')) {
     if (em.length) grupos.push({ p: `/curso/${c.id}/dia/${d}`, em });
   }
 }
-const url = (c, p) => { const l = LOCALES.find((x) => x.c === c); return `${SITE}${l.p ? (p === '/' ? l.p : l.p + p) : p}`; };
-const linhas = [];
+const url = (c, p) => { const l = LOCALES.find((x) => x.c === c); return `${l.site}${l.p ? (p === '/' ? l.p : l.p + p) : p}`; };
+// chave do manifesto de lastmod: o caminho no esquema antigo (/, /en, /es), único por idioma
+const chaveLastmod = (c, p) => { const l = LOCALES.find((x) => x.c === c); return l.legado ? (p === '/' ? l.legado : l.legado + p) : p; };
+const linhasBr = [], linhasGlobal = [];
 // lastmod só com data verificável: content/lastmod.json é gerado a partir do histórico git
 // (scripts/gerar-lastmod.mjs) com a última alteração dos ficheiros-fonte de cada página.
 // URL sem data no manifesto fica sem lastmod — anunciar alterações que não aconteceram
@@ -77,12 +81,15 @@ const manifestoLastmod = (() => { const f = path.join(raiz, 'content', 'lastmod.
 for (const g of grupos) for (const c of g.em) {
   const anot = g.anot ?? g.em;
   const alt = anot.length > 1 ? anot.map((x) => `\n    <xhtml:link rel="alternate" hreflang="${x}" href="${url(x, g.p)}"/>`).join('') + `\n    <xhtml:link rel="alternate" hreflang="x-default" href="${url(alvoPadrao(g), g.p)}"/>` : '';
-  const lm = manifestoLastmod[url(c, g.p).slice(SITE.length)];
+  const lm = manifestoLastmod[chaveLastmod(c, g.p)];
   const data = typeof lm === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(lm) ? `\n    <lastmod>${lm}</lastmod>` : '';
-  linhas.push(`  <url><loc>${url(c, g.p)}</loc>${data}${alt}\n  </url>`);
+  (LOCALES.find((x) => x.c === c).site === SITE_BR ? linhasBr : linhasGlobal).push(`  <url><loc>${url(c, g.p)}</loc>${data}${alt}\n  </url>`);
 }
-const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${linhas.join('\n')}\n</urlset>\n`;
-fs.writeFileSync(path.join(raiz, 'public', 'sitemap.xml'), xml);
+const xml = (linhas) => `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${linhas.join('\n')}\n</urlset>\n`;
+fs.writeFileSync(path.join(raiz, 'public', 'sitemap.xml'), xml(linhasBr));
+fs.writeFileSync(path.join(raiz, 'public', 'sitemap-global.xml'), xml(linhasGlobal));
 // A página de gramática carrega suas amostras abertas desta API; o acesso pago continua protegido no servidor.
-fs.writeFileSync(path.join(raiz, 'public', 'robots.txt'), `User-agent: *\nAllow: /\nAllow: /api/gramatica/\nDisallow: /api/\nDisallow: /admin/\n\nSitemap: ${SITE}/sitemap.xml\n`);
-console.log(`sitemap: ${linhas.length} endereços em 3 idiomas`);
+const robots = (site) => `User-agent: *\nAllow: /\nAllow: /api/gramatica/\nDisallow: /api/\nDisallow: /admin/\n\nSitemap: ${site}/sitemap.xml\n`;
+fs.writeFileSync(path.join(raiz, 'public', 'robots.txt'), robots(SITE_BR));
+fs.writeFileSync(path.join(raiz, 'public', 'robots-global.txt'), robots(SITE_GLOBAL));
+console.log(`sitemap .com.br: ${linhasBr.length} endereços (pt-BR) · sitemap .com: ${linhasGlobal.length} endereços (en, es)`);

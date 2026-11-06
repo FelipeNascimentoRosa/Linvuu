@@ -16,6 +16,8 @@ import { acessoDoRegistro, gravarRegistro, lerRegistro, liberarConversao, reserv
 import { enviarCompra, validarMedicao } from './conversoes';
 import { criarProcessadorCobranca } from './cobranca-eventos';
 import { CENTAVOS } from '../src/config/planos.ts';
+import { caminhoNoPerfil } from '../src/i18n/locales.ts';
+import { perfilDaRequisicao } from './dominio';
 
 const chave = process.env.STRIPE_SECRET_KEY;
 const projeto = process.env.FIREBASE_PROJECT_ID || process.env.VITE_FIREBASE_PROJECT_ID;
@@ -123,7 +125,7 @@ async function consultarStripe(u: { uid: string; email?: string }): Promise<Aces
   return eventos.acessoDoCliente(u.uid, await cliente(u));
 }
 
-export function registrarCobranca(app: Express, urlBase: () => string) {
+export function registrarCobranca(app: Express, urlBase: (req: Request) => string) {
   const nao = (res: Response) => res.status(503).json({ error: 'Pagamento ainda não configurado.' });
   const guarda = async (req: Request, res: Response) => {
     if (!cobrancaConfigurada()) { nao(res); return null; }
@@ -205,7 +207,7 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
     const u = await guarda(req, res); if (!u) return;
     if (!stripe) { nao(res); return; }
     try {
-      const base = urlBase();
+      const base = urlBase(req);
       const plano = req.body?.plano;
       if (!planoSiteValido(plano)) { res.status(400).json({ error: 'Plano inválido.' }); return; }
       const pix = plano === 'trimestral-pix';
@@ -219,10 +221,12 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
       const c = await cliente(u);
       // idioma do site (pt, en, es): o checkout do Stripe e a volta para o site ficam no mesmo idioma
       const idioma = ['en', 'es'].includes(req.body?.idioma) ? (req.body.idioma as 'en' | 'es') : null;
-      const prefixo = idioma ? `/${idioma}` : '';
+      // volta para o idioma e para o domínio de onde veio (no .com o inglês não tem prefixo; no .com.br segue /en, /es)
+      const perfil = perfilDaRequisicao(req);
+      const rota = (cod: 'pt-BR' | 'en' | 'es') => caminhoNoPerfil(perfil, cod, '/assinatura');
       // Duplo clique (ou nova tentativa da rede) com o mesmo pedido em 10 minutos devolve a MESMA sessão, não abre outra.
       const opcoes = { idempotencyKey: 'checkout-' + crypto.createHash('sha256').update(JSON.stringify([u.uid, plano, idioma, medicao, Math.floor(Date.now() / 600_000)])).digest('hex').slice(0, 40) };
-      const comum = { customer: c, locale: (idioma ?? 'pt-BR') as 'pt-BR' | 'en' | 'es', success_url: `${base}${prefixo}/assinatura?ok=1`, cancel_url: `${base}${prefixo}/assinatura`, client_reference_id: u.uid, allow_promotion_codes: true };
+      const comum = { customer: c, locale: (idioma ?? 'pt-BR') as 'pt-BR' | 'en' | 'es', success_url: `${base}${rota(idioma ?? 'pt-BR')}?ok=1`, cancel_url: `${base}${rota(idioma ?? 'pt-BR')}`, client_reference_id: u.uid, allow_promotion_codes: true };
       const s = pix
         ? await stripe!.checkout.sessions.create({
             ...comum, mode: 'payment', allowed_payment_method_types: ['pix'],
@@ -254,7 +258,7 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
     if (!stripe) { nao(res); return; }
     try {
       const idioma = ['en', 'es'].includes(req.body?.idioma) ? (req.body.idioma as 'en' | 'es') : null;
-      const s = await stripe!.billingPortal.sessions.create({ customer: await cliente(u), locale: idioma ?? 'pt-BR', return_url: `${urlBase()}${idioma ? `/${idioma}` : ''}/assinatura` });
+      const s = await stripe!.billingPortal.sessions.create({ customer: await cliente(u), locale: idioma ?? 'pt-BR', return_url: `${urlBase(req)}${caminhoNoPerfil(perfilDaRequisicao(req), idioma ?? 'pt-BR', '/assinatura')}` });
       res.json({ url: s.url });
     } catch (e) { console.error('billing/portal', e); res.status(500).json({ error: 'Não foi possível abrir o portal.' }); }
   });

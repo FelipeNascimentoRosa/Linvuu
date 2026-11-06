@@ -6,7 +6,7 @@ import { HOME_BR } from '../config/oferta-publica.ts';
 import fs from 'node:fs';
 import path from 'node:path';
 import { SESSOES_GRATIS, SESSOES_POR_AULA, PRECO_MENSAL, PRECO_TRIMESTRAL, PRECO_TRIMESTRAL_PIX, PRECO_ANUAL, CENTAVOS, precoSchema } from '../config/planos.ts';
-import { LOCALES, Locale, caminhoEm, localeDoCaminho, semPrefixo } from '../i18n/locales.ts';
+import { LOCALES, Locale, caminhoEm, localeDoCaminho, localePadrao, semPrefixo, siteDoIdioma, urlAbsolutaEm } from '../i18n/locales.ts';
 import { EMAIL_OFICIAL } from '../config/site.ts';
 import { CONTATO, EX_ALUNOS, POR_QUE } from './institucional.ts';
 import { EXCLUSAO } from './exclusaoConta.ts';
@@ -121,15 +121,18 @@ export function metaDaRota(pathname: string, d: DadosMeta | null): MetaRota {
 }
 
 function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
+  // Cada idioma mora num domínio (PT no .com.br; EN/ES no .com): a identidade e as URLs absolutas seguem o domínio do idioma da página.
+  const SITE = siteDoIdioma(loc.codigo);
+  const ORG_ID = orgId(SITE);
   const tx = TX[loc.codigo];
   const ex = loc.explicacao;
-  if (p === '/') return { status: 200, caminho: '/', ...HOME[loc.codigo], jsonld: [organizacao(), { '@context': 'https://schema.org', '@type': 'WebSite', name: 'Linvuu', url: SITE, inLanguage: loc.codigo }] };
+  if (p === '/') return { status: 200, caminho: '/', ...HOME[loc.codigo], jsonld: [organizacao(SITE), { '@context': 'https://schema.org', '@type': 'WebSite', name: 'Linvuu', url: SITE, inLanguage: loc.codigo }] };
   // Livros e página Sobre: só em português (nos outros idiomas a página existe, mas não entra na busca)
   const livroBase = { em: ['pt-BR'] as Locale['codigo'][], semIndice: loc.codigo !== 'pt-BR' ? true : undefined };
-  if (p === '/sobre') return { status: 200, caminho: p, titulo: 'Quem escreve a Linvuu', descricao: 'A Linvuu é feita por Felipe Nascimento Rosa e Luiza Nascimento Rosa, matemáticos com experiência em linguística e ensino de idiomas. Autoria, origem e método.', ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: 'Quem escreve a Linvuu', url: `${SITE}/sobre`, inLanguage: 'pt-BR', mainEntity: { '@id': ORG_ID } }, organizacao(), ...AUTORES.map(pessoa)] };
-  if (p === '/por-que-linvuu') return { status: 200, caminho: p, titulo: POR_QUE.titulo, descricao: POR_QUE.descricao, ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'WebPage', name: POR_QUE.titulo, url: `${SITE}/por-que-linvuu`, inLanguage: 'pt-BR', about: { '@id': ORG_ID } }, organizacao()] };
-  if (p === '/contato') return { status: 200, caminho: p, titulo: CONTATO.titulo, descricao: CONTATO.descricao, ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'ContactPage', name: CONTATO.titulo, url: `${SITE}/contato`, inLanguage: 'pt-BR', about: { '@id': ORG_ID } }, organizacao()] };
-  if (p === '/ex-alunos-udemy') return { status: 200, caminho: p, titulo: EX_ALUNOS.titulo, descricao: EX_ALUNOS.descricao, ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'WebPage', name: EX_ALUNOS.titulo, url: `${SITE}/ex-alunos-udemy`, inLanguage: 'pt-BR', about: { '@id': ORG_ID } }, organizacao()] };
+  if (p === '/sobre') return { status: 200, caminho: p, titulo: 'Quem escreve a Linvuu', descricao: 'A Linvuu é feita por Felipe Nascimento Rosa e Luiza Nascimento Rosa, matemáticos com experiência em linguística e ensino de idiomas. Autoria, origem e método.', ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: 'Quem escreve a Linvuu', url: `${SITE}/sobre`, inLanguage: 'pt-BR', mainEntity: { '@id': ORG_ID } }, organizacao(SITE), ...AUTORES.map((a) => pessoa(a, SITE))] };
+  if (p === '/por-que-linvuu') return { status: 200, caminho: p, titulo: POR_QUE.titulo, descricao: POR_QUE.descricao, ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'WebPage', name: POR_QUE.titulo, url: `${SITE}/por-que-linvuu`, inLanguage: 'pt-BR', about: { '@id': ORG_ID } }, organizacao(SITE)] };
+  if (p === '/contato') return { status: 200, caminho: p, titulo: CONTATO.titulo, descricao: CONTATO.descricao, ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'ContactPage', name: CONTATO.titulo, url: `${SITE}/contato`, inLanguage: 'pt-BR', about: { '@id': ORG_ID } }, organizacao(SITE)] };
+  if (p === '/ex-alunos-udemy') return { status: 200, caminho: p, titulo: EX_ALUNOS.titulo, descricao: EX_ALUNOS.descricao, ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'WebPage', name: EX_ALUNOS.titulo, url: `${SITE}/ex-alunos-udemy`, inLanguage: 'pt-BR', about: { '@id': ORG_ID } }, organizacao(SITE)] };
   if (p === '/livros') return { status: 200, caminho: p, titulo: 'Coleção Linvuu: livros de gramática', descricao: LIVROS_DESCRICAO, ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'ItemList', name: 'Coleção Linvuu', itemListElement: LIVROS_META.map((l, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE}/livros/${l.id}`, name: tituloLivro(l) })) }] };
   let lm = p.match(/^\/livros\/([^/]+)$/);
   if (lm) {
@@ -169,12 +172,12 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
   };
   if (fixas[p]) {
     const jsonld: object[] = [];
-    if (p === '/cursos' && d) jsonld.push({ '@context': 'https://schema.org', '@type': 'ItemList', itemListElement: d.cursos.filter((c) => c.status !== 'em-breve' && c.id !== loc.cursoOculto && explicacaoCompleta(d, c.id, loc.explicacao)).map((c, i) => ({ '@type': 'ListItem', position: i + 1, item: { '@type': 'Course', name: c.nome, description: c.descricao, url: `${SITE}${loc.prefixo}/curso/${c.id}`, provider: { '@id': ORG_ID, '@type': 'EducationalOrganization', name: 'Linvuu' } } })) });
+    if (p === '/cursos' && d) jsonld.push({ '@context': 'https://schema.org', '@type': 'ItemList', itemListElement: d.cursos.filter((c) => c.status !== 'em-breve' && c.id !== loc.cursoOculto && explicacaoCompleta(d, c.id, loc.explicacao)).map((c, i) => ({ '@type': 'ListItem', position: i + 1, item: { '@type': 'Course', name: c.nome, description: c.descricao, url: `${urlAbsolutaEm(loc.codigo, `/curso/${c.id}`)}`, provider: { '@id': ORG_ID, '@type': 'EducationalOrganization', name: 'Linvuu' } } })) });
     if (p === '/assinatura' && loc.codigo === 'pt-BR') jsonld.push(
       { '@context': 'https://schema.org', '@type': 'Product', name: 'Assinatura Linvuu', description: fixas[p].descricao, image: `${SITE}/brand/linvuu-logo.png`, brand: { '@type': 'Brand', name: 'Linvuu' }, offers: [ ['Mensal', precoSchema(CENTAVOS.mensal)], ['Trimestral Pix', precoSchema(CENTAVOS['trimestral-pix'])], ['Trimestral cartão ou boleto', precoSchema(CENTAVOS.trimestral)], ['Anual', precoSchema(CENTAVOS.anual)] ].map(([name, price]) => ({ '@type': 'Offer', name, price, priceCurrency: 'BRL', availability: 'https://schema.org/InStock', url: `${SITE}/assinatura`, hasMerchantReturnPolicy: POLITICA_REEMBOLSO })) },
       { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'Posso experimentar sem cartão?', acceptedAnswer: { '@type': 'Answer', text: 'As duas primeiras aulas de cada curso são gratuitas, sem cartão.' } }, { '@type': 'Question', name: 'Qual é o desconto no Pix?', acceptedAnswer: { '@type': 'Answer', text: `O plano trimestral custa ${PRECO_TRIMESTRAL_PIX} no Pix, 30% de desconto sobre ${PRECO_TRIMESTRAL}.` } }] },
     );
-    if (p === '/russo-online' && loc.codigo !== 'es') jsonld.push({ '@context': 'https://schema.org', '@type': 'Service', name: fixas[p].titulo, description: fixas[p].descricao, serviceType: loc.codigo === 'en' ? 'Online Russian language lessons' : 'Aulas de russo online', inLanguage: loc.codigo, provider: { '@id': ORG_ID }, areaServed: 'Worldwide', url: `${SITE}${loc.prefixo}/russo-online` });
+    if (p === '/russo-online' && loc.codigo !== 'es') jsonld.push({ '@context': 'https://schema.org', '@type': 'Service', name: fixas[p].titulo, description: fixas[p].descricao, serviceType: loc.codigo === 'en' ? 'Online Russian language lessons' : 'Aulas de russo online', inLanguage: loc.codigo, provider: { '@id': ORG_ID }, areaServed: 'Worldwide', url: `${urlAbsolutaEm(loc.codigo, '/russo-online')}` });
     return { status: 200, caminho: p, ...fixas[p], jsonld };
   }
   if (!d) return { status: 503, caminho: p, semIndice: true }; // falha de conteúdo não vira página genérica indexável
@@ -184,7 +187,7 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
   if (m) {
     const c = curso(m[1]);
     if (!c) return naoEncontrada(p, loc);
-    const url = `${SITE}${caminhoEm(loc.codigo, p)}`;
+    const url = `${urlAbsolutaEm(loc.codigo, p)}`;
     const aulas = d.indice[c.id]?.grupos?.length ?? 0;
     // Indexável só onde o curso existe de verdade: oferecido a esse público e com todas as aulas explicadas na língua dele.
     const oferecidoEm = (l: Locale) => c.status !== 'em-breve' && l.cursoOculto !== c.id && explicacaoCompleta(d, c.id, l.explicacao);
@@ -201,10 +204,10 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
           teaches: c.id === 'br' ? 'Brazilian Portuguese' : c.nome, educationalLevel: 'A1–B1 (CEFR)', isAccessibleForFree: false,
           ...(aulas ? { coursePrerequisites: 'None', timeRequired: `PT${aulas * 2}H` } : {}),
           provider: { '@type': 'EducationalOrganization', '@id': ORG_ID, name: 'Linvuu', url: SITE, logo: `${SITE}/brand/linvuu-logo.png` },
-          offers: [{ '@type': 'Offer', category: 'Subscription', price: CENTAVOS.mensal / 100, priceCurrency: 'BRL', availability: 'https://schema.org/InStock', url: `${SITE}${loc.prefixo}/assinatura` }],
+          offers: [{ '@type': 'Offer', category: 'Subscription', price: CENTAVOS.mensal / 100, priceCurrency: 'BRL', availability: 'https://schema.org/InStock', url: `${urlAbsolutaEm(loc.codigo, '/assinatura')}` }],
           hasCourseInstance: [{ '@type': 'CourseInstance', courseMode: 'Online', courseWorkload: 'PT30M', courseSchedule: { '@type': 'Schedule', repeatFrequency: 'Daily', repeatCount: aulas * 4 } }],
         },
-        { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: tx.inicio, item: `${SITE}${loc.prefixo || '/'}` }, { '@type': 'ListItem', position: 2, name: tx.cursos, item: `${SITE}${loc.prefixo}/cursos` }, { '@type': 'ListItem', position: 3, name: c.nome, item: url }] },
+        { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: tx.inicio, item: `${urlAbsolutaEm(loc.codigo, '/')}` }, { '@type': 'ListItem', position: 2, name: tx.cursos, item: `${urlAbsolutaEm(loc.codigo, '/cursos')}` }, { '@type': 'ListItem', position: 3, name: c.nome, item: url }] },
       ],
     };
   }
@@ -226,19 +229,19 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     return { status: 200, caminho: p, titulo: `${tx.aula(g.aula, t, c.nome)} · ${tx.sessao(n, c.nome).split(' · ')[0]}`, descricao: descAula, semIndice: n > SESSOES_GRATIS || !temNo(loc) || undefined, em: LOCALES.filter(temNo).map((l) => l.codigo),
       // Sessão grátis: dados de recurso educacional, sempre gratuito (as demais são por assinatura e não ganham marcação de gratuidade)
       jsonld: n <= SESSOES_GRATIS ? [{
-        '@context': 'https://schema.org', '@type': 'LearningResource', name: tx.aula(g.aula, t, c.nome), description: descAula, url: `${SITE}${caminhoEm(loc.codigo, p)}`,
+        '@context': 'https://schema.org', '@type': 'LearningResource', name: tx.aula(g.aula, t, c.nome), description: descAula, url: `${urlAbsolutaEm(loc.codigo, p)}`,
         inLanguage: loc.codigo, learningResourceType: 'Lesson', educationalLevel: 'A1 (CEFR)', teaches: c.nome, timeRequired: 'PT30M', isAccessibleForFree: true,
-        isPartOf: { '@type': 'Course', name: tx.cursoJ(c.nome), url: `${SITE}${caminhoEm(loc.codigo, `/curso/${c.id}`)}` }, provider: { '@id': ORG_ID },
+        isPartOf: { '@type': 'Course', name: tx.cursoJ(c.nome), url: `${urlAbsolutaEm(loc.codigo, `/curso/${c.id}`)}` }, provider: { '@id': ORG_ID },
       }, { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
-        { '@type': 'ListItem', position: 1, name: tx.inicio, item: `${SITE}${loc.prefixo || '/'}` }, { '@type': 'ListItem', position: 2, name: c.nome, item: `${SITE}${caminhoEm(loc.codigo, `/curso/${c.id}`)}` }, { '@type': 'ListItem', position: 3, name: tx.sessao(n, c.nome), item: `${SITE}${caminhoEm(loc.codigo, p)}` }] }] : undefined };
+        { '@type': 'ListItem', position: 1, name: tx.inicio, item: `${urlAbsolutaEm(loc.codigo, '/')}` }, { '@type': 'ListItem', position: 2, name: c.nome, item: `${urlAbsolutaEm(loc.codigo, `/curso/${c.id}`)}` }, { '@type': 'ListItem', position: 3, name: tx.sessao(n, c.nome), item: `${urlAbsolutaEm(loc.codigo, p)}` }] }] : undefined };
   }
   m = p.match(/^\/gramatica(?:\/([^/]+))?$/);
   if (m) {
     if (!m[1]) return { status: 200, caminho: p, titulo: tx.gram };
     const c = curso(m[1]);
     if (!c) return naoEncontrada(p, loc);
-    const url = `${SITE}${caminhoEm(loc.codigo, p)}`;
-    const cursoUrl = `${SITE}${caminhoEm(loc.codigo, `/curso/${c.id}`)}`;
+    const url = `${urlAbsolutaEm(loc.codigo, p)}`;
+    const cursoUrl = `${urlAbsolutaEm(loc.codigo, `/curso/${c.id}`)}`;
     // A descrição nomeia a língua em que a gramática está de fato: a língua da página, quando existe o arquivo de gramática nela; senão, a língua em que o curso foi escrito.
     const fonteGram = d.indice[c.id]?.fonte ?? 'pt';
     const temGram = gramaticaExisteEm(d, c.id, loc.explicacao);
@@ -253,7 +256,7 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
       jsonld: [
         // A página de gramática é o recurso de referência do curso: tópicos e tabelas cuja descrição nomeia a língua real das explicações.
         { '@context': 'https://schema.org', '@type': 'LearningResource', name: tx.gramC(c.nome), description: descGram, url, inLanguage: loc.codigo, learningResourceType: 'Grammar reference', teaches: c.nome, isPartOf: { '@type': 'Course', name: tx.cursoJ(c.nome), url: cursoUrl }, provider: { '@id': ORG_ID } },
-        { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: tx.inicio, item: `${SITE}${loc.prefixo || '/'}` }, { '@type': 'ListItem', position: 2, name: c.nome, item: cursoUrl }, { '@type': 'ListItem', position: 3, name: tx.gramC(c.nome), item: url }] },
+        { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: tx.inicio, item: `${urlAbsolutaEm(loc.codigo, '/')}` }, { '@type': 'ListItem', position: 2, name: c.nome, item: cursoUrl }, { '@type': 'ListItem', position: 3, name: tx.gramC(c.nome), item: url }] },
       ],
     };
   }
@@ -439,17 +442,17 @@ function sessaoGratisParaHtml(d: DadosMeta | null, curso: string, dia: number): 
   return `<h2>${t(sessao.titulo)} (${t(sessao.duracaoMin)} min)</h2>${partes.join('')}`;
 }
 
-const SITE = 'https://linvuu.com.br';
+const SITE_BR = 'https://linvuu.com.br';
 // Política real do site (paywall e termos): reembolso integral em até 7 dias.
 const POLITICA_REEMBOLSO = { '@type': 'MerchantReturnPolicy', applicableCountry: 'BR', returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow', merchantReturnDays: 7, returnFees: 'https://schema.org/FreeReturn' };
-const ORG_ID = `${SITE}/#organizacao`;
-const organizacao = () => ({ '@context': 'https://schema.org', '@type': 'EducationalOrganization', '@id': ORG_ID, name: 'Linvuu', url: SITE, logo: `${SITE}/brand/linvuu-logo.png`, email: EMAIL_OFICIAL, founder: AUTORES.map((a) => ({ '@type': 'Person', '@id': `${SITE}/sobre#${a.id}`, name: a.nome, sameAs: [...a.links] })) });
-const pessoa = (a: (typeof AUTORES)[number]) => ({ '@context': 'https://schema.org', '@type': 'Person', '@id': `${SITE}/sobre#${a.id}`, name: a.nome, url: `${SITE}/sobre#${a.id}`, worksFor: { '@id': ORG_ID }, sameAs: [...a.links], knowsAbout: ['Matemática', 'Linguística', 'Ensino de idiomas', 'Inteligência artificial', 'Teoria dos números', 'Álgebra linear'] });
+const orgId = (site: string) => `${site}/#organizacao`;
+const organizacao = (SITE: string) => ({ '@context': 'https://schema.org', '@type': 'EducationalOrganization', '@id': orgId(SITE), name: 'Linvuu', url: SITE, logo: `${SITE}/brand/linvuu-logo.png`, email: EMAIL_OFICIAL, sameAs: [SITE_BR, siteDoIdioma('en')].filter((u) => u !== SITE), founder: AUTORES.map((a) => ({ '@type': 'Person', '@id': `${SITE}/sobre#${a.id}`, name: a.nome, sameAs: [...a.links] })) });
+const pessoa = (a: (typeof AUTORES)[number], SITE: string) => ({ '@context': 'https://schema.org', '@type': 'Person', '@id': `${SITE}/sobre#${a.id}`, name: a.nome, url: `${SITE}/sobre#${a.id}`, worksFor: { '@id': orgId(SITE) }, sameAs: [...a.links], knowsAbout: ['Matemática', 'Linguística', 'Ensino de idiomas', 'Inteligência artificial', 'Teoria dos números', 'Álgebra linear'] });
 const naoEncontrada = (p: string, loc: Locale): MetaRota => ({ status: 404, caminho: p, titulo: TX[loc.codigo].nao, semIndice: true });
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
 /** Versões por idioma + x-default exatamente como o HTML do servidor as publica (fonte única também para o navegador). */
-export function alternativosDe(m: MetaRota, site: string, d: DadosMeta | null = null): { hreflang: string; href: string }[] {
+export function alternativosDe(m: MetaRota, _site: string, d: DadosMeta | null = null): { hreflang: string; href: string }[] {
   // uma versão por idioma + x-default: a versão em português quando faz parte do cluster;
   // sem ela (o curso de português para estrangeiros não existe em PT), a versão no idioma-fonte do conteúdo.
   const em = m.semIndice ? [] : LOCALES.filter((l) => !m.em || m.em.includes(l.codigo));
@@ -457,19 +460,22 @@ export function alternativosDe(m: MetaRota, site: string, d: DadosMeta | null = 
   const idCurso = semPrefixo(m.caminho).match(/^\/(?:curso|gramatica)\/([a-z]{2})/)?.[1];
   const fonte = idCurso ? d?.indice?.[idCurso]?.fonte : undefined;
   const codigoFonte = fonte === 'pt' ? 'pt-BR' : fonte;
-  const padrao = em.find((l) => l.codigo === 'pt-BR') ?? em.find((l) => l.codigo === codigoFonte) ?? em[0];
-  return [...em.map((l) => ({ hreflang: l.codigo, href: site + caminhoEm(l.codigo, m.caminho) })), { hreflang: 'x-default', href: site + caminhoEm(padrao.codigo, m.caminho) }];
+  // x-default = a versão para quem não tem versão no seu idioma: inglês (o .com, internacional) quando existe; senão português; senão o idioma-fonte.
+  const padrao = em.find((l) => l.codigo === 'en') ?? em.find((l) => l.codigo === 'pt-BR') ?? em.find((l) => l.codigo === codigoFonte) ?? em[0];
+  // Cada versão vive no domínio do seu idioma (PT: .com.br; EN/ES: .com), então o cluster hreflang cruza domínios.
+  return [...em.map((l) => ({ hreflang: l.codigo, href: urlAbsolutaEm(l.codigo, m.caminho) })), { hreflang: 'x-default', href: urlAbsolutaEm(padrao.codigo, m.caminho) }];
 }
 
 /** O que o navegador aplica ao navegar dentro do site: os mesmos valores que o servidor colocaria no HTML desta rota. */
-export function metaParaNavegador(m: MetaRota, site: string, d: DadosMeta | null = null) {
-  return { status: m.status, caminho: m.caminho, titulo: m.titulo ? `${m.titulo} · Linvuu` : null, descricao: m.descricao ?? null, canonical: site + m.caminho, noindex: !!m.semIndice, alternativos: alternativosDe(m, site, d), lang: (m.locale ?? LOCALES[0]).codigo };
+export function metaParaNavegador(m: MetaRota, _site: string, d: DadosMeta | null = null) {
+  return { status: m.status, caminho: m.caminho, titulo: m.titulo ? `${m.titulo} · Linvuu` : null, descricao: m.descricao ?? null, canonical: urlAbsolutaEm((m.locale ?? localePadrao()).codigo, m.caminho), noindex: !!m.semIndice, alternativos: alternativosDe(m, _site, d), lang: (m.locale ?? localePadrao()).codigo };
 }
 
-export function aplicarMeta(html: string, m: MetaRota, site: string, d: DadosMeta | null = null): string {
+export function aplicarMeta(html: string, m: MetaRota, _site: string, d: DadosMeta | null = null): string {
   let out = html;
+  const loc = m.locale ?? localePadrao();
+  const site = siteDoIdioma(loc.codigo);
   const troca = (re: RegExp, valor: string) => { out = out.replace(re, (_t, a: string, b: string) => a + valor + b); };
-  const loc = m.locale ?? LOCALES[0];
   if (m.titulo) {
     const tit = esc(`${m.titulo} · Linvuu`);
     out = out.replace(/<title>[^<]*<\/title>/, () => `<title>${tit}</title>`);
@@ -480,12 +486,13 @@ export function aplicarMeta(html: string, m: MetaRota, site: string, d: DadosMet
     troca(/(<meta name="description" content=")[^"]*(")/, desc);
     troca(/(<meta property="og:description" content=")[^"]*(")/, desc);
   }
-  const url = esc(site + m.caminho);
+  const url = esc(urlAbsolutaEm(loc.codigo, m.caminho));
   troca(/(<html lang=")[^"]*(")/, loc.codigo);
   troca(/(<meta property="og:locale" content=")[^"]*(")/, loc.og);
   troca(/(<meta property="og:url" content=")[^"]*(")/, url);
+  troca(/(<meta property="og:image" content=")[^"]*(")/, esc(`${site}/brand/avatar-1080.png`));
   troca(/(<link rel="canonical" href=")[^"]*(")/, url);
-  const alternativos = alternativosDe(m, site, d).map((x) => `<link rel="alternate" hreflang="${x.hreflang}" href="${esc(x.href)}" />`).join('\n    ');
+  const alternativos = alternativosDe(m, _site, d).map((x) => `<link rel="alternate" hreflang="${x.hreflang}" href="${esc(x.href)}" />`).join('\n    ');
   out = out.replace(/<link rel="alternate" hreflang="pt-BR" href="[^"]*" \/>/, () => alternativos);
   troca(/(<meta name="twitter:card" content=")[^"]*(")/, 'summary_large_image');
   const twitterTitle = esc(`${m.titulo ?? 'Linvuu'} · Linvuu`);

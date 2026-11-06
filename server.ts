@@ -16,7 +16,8 @@ import { fecharApi, registrarErros, registrarSeguranca } from './server/seguranc
 import { registrarProntidao } from './server/prontidao';
 import { registrarAssetLinks } from './server/assetlinks';
 import { aplicarMeta, carregarDadosMeta, metaDaRota, metaParaNavegador } from './src/lib/metaRota.ts';
-import { SITE_URL } from './src/config/site.ts';
+import { SITE_URL, SITE_GLOBAL_URL } from './src/config/site.ts';
+import { baseDaRequisicao, noPerfilDe, perfilDaRequisicao, registrarDominio } from './server/dominio';
 
 dotenv.config();
 
@@ -36,6 +37,8 @@ async function startServer() {
   const producao = process.env.NODE_ENV === 'production';
   if (producao && !credencialConfigurada()) console.error('[Linvuu] ATENÇÃO: Firebase Admin sem credencial. Login no servidor, progresso e áreas pagas ficam indisponíveis até definir FIREBASE_SERVICE_ACCOUNT_JSON.');
   registrarSeguranca(app, producao);
+  // Domínios: www → apex, .com.br/en|es → .com, .com/en → raiz (antes de qualquer rota de página).
+  registrarDominio(app);
   // HTML, JS, CSS e JSON comprimidos (o pacote principal cai para cerca de um quarto). MP3 já vem comprimido e fica de fora.
   app.use(compression({ filter: (req, res) => !/\.mp3$/.test(req.path) && compression.filter(req, res) }));
   registrarNotificacoesCobranca(app);
@@ -46,7 +49,7 @@ async function startServer() {
   registrarProntidao(app);
   registrarAssetLinks(app);
 
-  registrarCobranca(app, () => process.env.APP_URL || (producao ? SITE_URL : `http://localhost:${PORT}`));
+  registrarCobranca(app, (req) => baseDaRequisicao(req, process.env.APP_URL || (producao ? SITE_URL : `http://localhost:${PORT}`)));
   registrarLivroProtegido(app);
   registrarProgresso(app);
   registrarMedicao(app);
@@ -59,7 +62,7 @@ async function startServer() {
   app.get('/api/meta', (req: Request, res: Response) => {
     const p = String(req.query.p ?? '');
     if (!p.startsWith('/') || p.length > 300 || p.startsWith('//')) { res.status(400).json({ error: 'Caminho inválido.' }); return; }
-    res.set('Cache-Control', 'public, max-age=300').set('X-Robots-Tag', 'noindex').json(metaParaNavegador(metaDaRota(p, dadosMeta), SITE_URL, dadosMeta));
+    res.set('Cache-Control', 'public, max-age=300').set('Vary', 'Host').set('X-Robots-Tag', 'noindex').json(noPerfilDe(req, () => metaParaNavegador(metaDaRota(p, dadosMeta), SITE_URL, dadosMeta)));
   });
   fecharApi(app);
 
@@ -74,8 +77,11 @@ async function startServer() {
       if (!fs.existsSync(arq)) { res.status(404).type('text/plain; charset=utf-8').send('Not found'); return; }
       res.set({ 'Content-Type': tipo, 'Cache-Control': 'public, max-age=3600', 'X-Content-Type-Options': 'nosniff' }).send(fs.readFileSync(arq));
     };
-    app.get('/sitemap.xml', arquivoEstatico('sitemap.xml', 'application/xml; charset=utf-8'));
-    app.get('/robots.txt', arquivoEstatico('robots.txt', 'text/plain; charset=utf-8'));
+    // Cada domínio tem o seu sitemap e o seu robots (o do .com lista só inglês e espanhol; o do .com.br só português).
+    const sitemapBr = arquivoEstatico('sitemap.xml', 'application/xml; charset=utf-8'), sitemapGlobal = arquivoEstatico('sitemap-global.xml', 'application/xml; charset=utf-8');
+    const robotsBr = arquivoEstatico('robots.txt', 'text/plain; charset=utf-8'), robotsGlobal = arquivoEstatico('robots-global.txt', 'text/plain; charset=utf-8');
+    app.get('/sitemap.xml', (req: Request, res: Response) => { res.vary('Host'); (perfilDaRequisicao(req) === 'global' ? sitemapGlobal : sitemapBr)(req, res); });
+    app.get('/robots.txt', (req: Request, res: Response) => { res.vary('Host'); (perfilDaRequisicao(req) === 'global' ? robotsGlobal : robotsBr)(req, res); });
     const distDir = path.resolve(__dirname, 'dist');
     // Regras de cache dos estáticos: as mesmas para o express.static e para o Brotli pré-comprimido abaixo,
     // para o mesmo arquivo ter sempre a mesma política, comprimido ou não.
@@ -181,12 +187,15 @@ async function startServer() {
     // Arquivo de /assets que não existe mais (aba aberta antes de um deploy) deve dar 404 de verdade, não o HTML do site.
     app.get('/assets/*arquivo', (_req: Request, res: Response) => { res.status(404).type('text/plain').send('Not found'); });
     // Endereços que mudaram de lugar: redirecionamento permanente (o Google transfere a relevância).
-    app.get(['/brazilian-portuguese', '/en/brazilian-portuguese', '/es/brazilian-portuguese'], (_req: Request, res: Response) => { res.redirect(301, '/en/portugues'); });
+    app.get(['/brazilian-portuguese', '/en/brazilian-portuguese', '/es/brazilian-portuguese'], (_req: Request, res: Response) => { res.redirect(301, `${SITE_GLOBAL_URL}/portugues`); });
     // Endereços antigos ou digitados à mão que davam 404.
     app.get('/metodo', (_req: Request, res: Response) => { res.redirect(301, '/#metodo'); });
     app.get('/preco', (_req: Request, res: Response) => { res.redirect(301, '/assinatura'); });
     // O curso de português para estrangeiros não existe no site em português: vai para a versão em inglês.
-    app.get(/^\/curso\/br(\/.*)?$/, (req: Request, res: Response) => { res.redirect(301, `/en${req.path}`); });
+    app.get(/^\/curso\/br(\/.*)?$/, (req: Request, res: Response, next) => {
+      if (perfilDaRequisicao(req) === 'global') { next(); return; } // no .com o curso de português para estrangeiros é uma página normal
+      res.redirect(301, `${SITE_GLOBAL_URL}${req.path}`);
+    });
     // Variante com barra no fim (/cursos/): redireciona para o endereço canônico em vez de servir uma cópia.
     app.get(/^\/.+\/$/, (req: Request, res: Response) => {
       const q = req.originalUrl.indexOf('?');
@@ -195,8 +204,11 @@ async function startServer() {
     app.get('/{*pagina}', (req: Request, res: Response) => {
       res.setHeader('Cache-Control', 'no-cache');
       htmlBase ??= fs.readFileSync(path.resolve(__dirname, 'dist', 'index.html'), 'utf8');
-      const m = metaDaRota(req.path, dadosMeta);
-      res.status(m.status).type('html').send(comPreloadDaRota(aplicarMeta(htmlBase, m, SITE_URL, dadosMeta), req.path));
+      res.vary('Host');
+      const base = htmlBase;
+      // Perfil do domínio da requisição durante a montagem síncrona do HTML (a estrutura de endereços difere entre .com e .com.br).
+      const { m, html } = noPerfilDe(req, () => { const m = metaDaRota(req.path, dadosMeta); return { m, html: comPreloadDaRota(aplicarMeta(base, m, SITE_URL, dadosMeta), req.path) }; });
+      res.status(m.status).type('html').send(html);
     });
   } else {
     const vite = await createViteServer({

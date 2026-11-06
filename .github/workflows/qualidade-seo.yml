@@ -9,7 +9,9 @@ on:
       - 'public/assets/**'
       - 'public/fotos/**'
       - 'public/robots.txt'
+      - 'public/robots-global.txt'
       - 'public/sitemap.xml'
+      - 'public/sitemap-global.xml'
       - 'scripts/seo.mjs'
       - 'scripts/seo-tools/**'
       - 'scripts/google-robots/**'
@@ -61,7 +63,7 @@ jobs:
           GOOGLE_ROBOTS_BIN: ${{ runner.temp }}/linvuu-robots/linvuu-google-robots
         run: |
           node scripts/seo.mjs
-          git diff --exit-code -- public/robots.txt public/sitemap.xml
+          git diff --exit-code -- public/robots.txt public/robots-global.txt public/sitemap.xml public/sitemap-global.xml
           node scripts/testar-robots-google.mjs
 
   paridade-head:
@@ -91,6 +93,8 @@ jobs:
           node scripts/iniciar-servidor-lhci.mjs > "$RUNNER_TEMP/servidor.log" 2>&1 &
           for i in $(seq 1 60); do grep -q LINVUU_LHCI_READY "$RUNNER_TEMP/servidor.log" && break; sleep 1; done
           node scripts/testar-paridade-meta.mjs http://127.0.0.1:4398
+          # o mesmo servidor visitado como linvuu.com (inglês na raiz, /es): sitemap, canonical, hreflang e navegação do domínio internacional
+          node scripts/testar-paridade-meta.mjs http://127.0.0.1:4398 global
 
   lighthouse:
     runs-on: ubuntu-latest

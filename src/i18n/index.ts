@@ -1,7 +1,7 @@
 import { ptBR, Dicionario } from './pt-BR';
 import { en } from './en';
 import { es } from './es';
-import { CodigoLocale, LOCALES, Locale, caminhoEm, localeDoCaminho } from './locales';
+import { CodigoLocale, LOCALES, Locale, caminhoEm, localeDoCaminho, perfilAtual, perfilDoIdioma, urlAbsolutaEm } from './locales';
 
 const DICIONARIOS: Record<CodigoLocale, Dicionario> = { 'pt-BR': ptBR, en, es };
 const CHAVE = 'linvuu:locale';
@@ -21,7 +21,14 @@ export const localeLembrado = (): CodigoLocale | null => {
   try { const v = localStorage.getItem(CHAVE); return LOCALES.some((l) => l.codigo === v) ? (v as CodigoLocale) : null; } catch { return null; }
 };
 /** Endereço desta mesma página em outro idioma. */
-export const urlEm = (codigo: CodigoLocale) => `${caminhoEm(codigo, window.location.pathname)}${window.location.search}${window.location.hash}`;
+const HOSTS_DO_SITE = /^(www\.)?linvuu\.com(\.br)?$/i;
+export const urlEm = (codigo: CodigoLocale) => {
+  const resto = `${window.location.search}${window.location.hash}`;
+  // Nos domínios do site, cada idioma mora num domínio (PT no .com.br; EN e ES no .com): trocar de domínio exige endereço absoluto.
+  // Fora deles (desenvolvimento, app Android, prévias), a estrutura antiga /, /en, /es continua valendo.
+  if (HOSTS_DO_SITE.test(window.location.hostname) && perfilDoIdioma(codigo) !== perfilAtual()) return `${urlAbsolutaEm(codigo, window.location.pathname)}${resto}`;
+  return `${caminhoEm(codigo, window.location.pathname)}${resto}`;
+};
 /** Caminho absoluto (fora do roteador) no idioma atual: para links <a> e window.location. */
 export const comPrefixo = (caminho: string) => caminhoEm(LOCALE.codigo, caminho);
 /** Formata data no idioma atual. */
