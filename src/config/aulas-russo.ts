@@ -1,4 +1,4 @@
-// Página «Aulas de russo online com professor» (/russo-online): uma só fonte para a tela, o <head> e o HTML do servidor.
+// Página «Aulas de russo online com professores» (/russo-online): uma só fonte para a tela, o <head> e o HTML do servidor.
 // Só entra aqui o que tem documento: diploma e certificados da Universidade Estatal de São Petersburgo, certificado do
 // Instituto Valeeva Rosa e perfil público do LinkedIn. Valores e horários não são anunciados: são combinados no contato.
 import { whatsappUrl } from './contato.ts';
@@ -23,9 +23,9 @@ export type TextoAulasRusso = {
 
 export const AULAS_RUSSO: Record<'pt-BR' | 'en', TextoAulasRusso> = {
   'pt-BR': {
-    titulo: 'Aulas de russo online com professor',
-    descricao: 'Aulas de russo ao vivo por videochamada com Felipe Nascimento Rosa, vencedor da Olimpíada Internacional Online de Russo da Universidade de São Petersburgo.',
-    lead: 'Quer aprender russo com um professor de verdade, e não só com um curso gravado? As aulas são ao vivo, por videochamada, com Felipe Nascimento Rosa, vencedor da Olimpíada Internacional Online de Russo como Língua Estrangeira da Universidade Estatal de São Petersburgo.',
+    titulo: 'Aulas de russo online com professores',
+    descricao: 'Aulas de russo ao vivo por videochamada, com professores como Felipe Nascimento Rosa, vencedor da Olimpíada Internacional Online de Russo da Universidade de São Petersburgo.',
+    lead: 'Aprenda russo com professores, ao vivo, por videochamada. Entre eles, Felipe Nascimento Rosa, vencedor da Olimpíada Internacional Online de Russo como Língua Estrangeira da Universidade Estatal de São Petersburgo.',
     quemTitulo: 'Quem dá as aulas',
     credenciais: [
       'Vencedor, com diploma de 1º grau, da III Olimpíada Internacional Online de Russo como Língua Estrangeira da Universidade Estatal de São Petersburgo (novembro de 2022). O diploma foi emitido em nome de Felipe Valeeva Rosa.',
@@ -49,9 +49,9 @@ export const AULAS_RUSSO: Record<'pt-BR' | 'en', TextoAulasRusso> = {
     ctaAlternativa: 'Prefere e-mail ou outro canal? Veja a página de contato.',
   },
   en: {
-    titulo: 'Online Russian lessons with a teacher',
-    descricao: 'Live online Russian lessons by video call with Felipe Nascimento Rosa, winner of the Saint Petersburg State University International Online Russian Olympiad.',
-    lead: 'Want to learn Russian with a real teacher, not just a recorded course? Lessons are live, by video call, with Felipe Nascimento Rosa, winner of the III International Online Olympiad in Russian as a Foreign Language at Saint Petersburg State University.',
+    titulo: 'Online Russian lessons with teachers',
+    descricao: 'Live online Russian lessons by video call, with teachers such as Felipe Nascimento Rosa, winner of the Saint Petersburg State University International Online Russian Olympiad.',
+    lead: 'Learn Russian with teachers, live, by video call. Among them, Felipe Nascimento Rosa, winner of the III International Online Olympiad in Russian as a Foreign Language at Saint Petersburg State University.',
     quemTitulo: 'Who teaches',
     credenciais: [
       'First-degree diploma winner of the III International Online Olympiad in Russian as a Foreign Language, Saint Petersburg State University (November 2022). The diploma was issued under the name Felipe Valeeva Rosa.',

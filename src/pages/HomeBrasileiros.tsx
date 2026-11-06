@@ -49,10 +49,12 @@ export default function HomeBrasileiros() {
       <div className="br-resume-texto"><p className="br-resume-frase">{h(r.frase)}</p><p className="br-resume-prog">{retomada.nome} · {h(r.contagem)}</p><p className="br-resume-prox">{h('Próxima:')} {h('sessão')} {retomada.dia}{retomada.titulo ? ` · ${retomada.titulo}` : ''}</p></div>
       <HomeCourseLink to={`/curso/${retomada.idioma}/dia/${retomada.dia}`}>{h("Continuar minha sessão →")}</HomeCourseLink>{apoio.length > 0 && <p className="br-resume-apoio">{apoio.map((a) => <Link key={a.para} to={a.para}>{a.texto}</Link>)}</p>}</section>; })()}
     <section className="br-hero">
-      <div className="br-hero-copy"><p className="br-eyebrow">{h("SITE PARA APRENDER IDIOMAS · CURSOS ONLINE")}</p>
+      <div className="br-hero-copy"><p className="br-eyebrow">{h("CURSOS DE IDIOMAS ONLINE")}</p>
         <h1>{h("Aprenda idiomas online,")}<br /><em>{h("explicados em português.")}</em></h1>
         <p className="br-lead">{h(HOME_BR.lead)}</p>
-        <div className="br-actions"><a className="br-button" href="#idiomas">{h('Escolher meu idioma')}<span aria-hidden="true">↓</span></a><a className="br-text-link" href="#experimente">{h("Experimentar o método ↓")}</a></div>
+        <p className="br-pick" id="br-pick-title">{h("Que idioma você quer aprender?")}</p>
+        <nav className="br-pick-list" aria-labelledby="br-pick-title">{idiomas.map((i) => <HomeCourseLink key={i.id} to={`/curso/${i.id}`} className="br-pick-btn">{h(i.nome)}</HomeCourseLink>)}</nav>
+        <div className="br-actions"><a className="br-text-link" href="#experimente">{h("Experimentar o método ↓")}</a></div>
         <p className="br-fine">{h("2 primeiras aulas grátis · Sem cartão para experimentar")}</p>
       {LOCALE.codigo !== 'pt-BR' && <p className="br-fine">{homeNotice}</p>}
       </div>
@@ -68,12 +70,12 @@ export default function HomeBrasileiros() {
     </section>
     <div className="br-benefits"><span><strong>{h("Em português.")}</strong>{h(" Desde a explicação.")}</span><span><strong>{h("Com áudio.")}</strong>{h(" Para ouvir e repetir.")}</span><span><strong>{h("No seu ritmo.")}</strong>{h(" Uma sessão por vez.")}</span></div>
     <section className="br-section br-why" id="por-que-online" aria-labelledby="br-why-title">
-      <div className="br-section-head"><div><p className="br-eyebrow">{h("POR QUE APRENDER ONLINE?")}</p><h2 id="br-why-title">{h("Um curso online pode ser bom.")}<br />{h("Veja como o nosso é feito.")}</h2></div></div>
+      <div className="br-section-head"><div><p className="br-eyebrow">{h("CURSOS ONLINE, FEITOS POR PROFESSORES")}</p><h2 id="br-why-title">{h("Por que aprender com a Linvuu?")}</h2></div></div>
       <div className="br-why-grid">
-        <article><h3>{h("Feito por professores.")}</h3><p>{h("Os cursos são feitos por professores de idiomas. Entre eles, Felipe Nascimento Rosa, que venceu a Olimpíada Internacional Online de Russo como Língua Estrangeira, da Universidade Estatal de São Petersburgo.")}</p><Link className="br-text-link" to="/sobre">{h("Conhecer os professores →")}</Link></article>
-        <article><h3>{h("Baseado em obras de referência.")}</h3><p>{h("Os cursos são montados a partir de livros didáticos e gramáticas de referência de cada idioma, com a explicação em português.")}</p></article>
-        <article><h3>{h("Você ouve, entende e pratica.")}</h3><p>{h("Áudio em cada frase, explicação do porquê e exercícios com correção. Comece pelas 2 primeiras aulas grátis, sem cartão.")}</p></article>
-        <article><h3>{h("Prefere um professor ao vivo?")}</h3><p>{h("O curso também funciona junto com aulas por videochamada. Veja as aulas de russo online com professor.")}</p><Link className="br-text-link" to="/russo-online">{h("Ver aulas ao vivo →")}</Link></article>
+        <article><h3>{h("Feito por professores.")}</h3><p>{h("Entre eles, Felipe Nascimento Rosa, vencedor da Olimpíada Internacional Online de Russo da Universidade de São Petersburgo.")}</p><Link className="br-text-link" to="/sobre">{h("Conhecer os professores →")}</Link></article>
+        <article><h3>{h("Baseado em livros de referência.")}</h3><p>{h("Livros didáticos e gramáticas de cada idioma, explicados em português.")}</p></article>
+        <article><h3>{h("Você ouve e pratica.")}</h3><p>{h("Áudio em cada frase e exercícios com correção.")}</p></article>
+        {LOCALE.codigo !== 'es' && <article><h3>{h("Aula ao vivo, se quiser.")}</h3><p>{h("Aulas de russo por videochamada com professores.")}</p><Link className="br-text-link" to="/russo-online">{h("Ver aulas ao vivo →")}</Link></article>}
       </div>
     </section>
     <section className="br-section br-vuu-section" aria-labelledby="br-vuu-title">
