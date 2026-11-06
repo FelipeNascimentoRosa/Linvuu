@@ -2,7 +2,7 @@
 
 # Contexto do projeto (leia primeiro)
 
-Para retomar numa conversa nova com o Claude, diga: "Leia docs/CONTEXTO.md e docs/ANALISE-E-PLANO.md do repositório FelipeNascimentoRosa/Linvuu e continue da próxima rodada." O repositório é privado (outubro de 2026). Claude e ChatGPT trabalham nele em parceria: regras em `docs/PARCERIA-IA.md`.
+Para retomar numa conversa nova com o Claude, diga: "Leia docs/historico/CONTEXTO.md e docs/ANALISE-E-PLANO.md do repositório FelipeNascimentoRosa/Linvuu e continue da próxima rodada." O repositório é privado (outubro de 2026). Claude e ChatGPT trabalham nele em parceria: regras em `docs/historico/PARCERIA-IA.md`.
 
 ## O que é
 Linvuu: idiomas em trilhas em sessões de ~30 min, para falantes de português. Dono: Felipe. Revisão de design e traduções: Luiza. E-mail oficial: hello.linvuu@gmail.com.
