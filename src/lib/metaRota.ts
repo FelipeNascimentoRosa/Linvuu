@@ -59,21 +59,24 @@ function carregarLivros(raiz: string): DadosMeta['livros'] {
 const TX = {
   'pt-BR': {
     cursos: 'Cursos', entrar: 'Entrar', cadastro: 'Cadastre-se', assinatura: 'Assinatura', priv: 'Política de privacidade', privD: 'Quais dados a Linvuu coleta, para quê e quais são os seus direitos pela LGPD.', termos: 'Termos de uso', termosD: 'Regras de uso do site e dos cursos da Linvuu.',
-    pt: 'Português para estrangeiros · Brazilian Portuguese', ptD: 'Curso de português do Brasil para estrangeiros, do A1 ao B1, com aulas explicadas em inglês ou espanhol. 62 aulas.',
+    pt: 'Português para estrangeiros · Brazilian Portuguese', ptNav: 'Português para estrangeiros', ptD: 'Curso de português do Brasil para estrangeiros, do A1 ao B1, com aulas explicadas em inglês ou espanhol. 62 aulas.',
+    ant: (n: number) => `← Sessão ${n}`, seg: (n: number) => `Sessão ${n} →`,
     curso: (n: string) => `${n}: curso para quem fala português, do zero ao B1`, cursoJ: (n: string) => `${n} para quem fala português`, inicio: 'Início',
     aula: (a: number, t: string, n: string) => `Aula ${a}: ${t} · ${n}`, aulaD: (n: string, a: number, t: string, s: number, tot: number, lingua: string) => `${n}, aula ${a} (${t}), sessão ${s} de ${tot}: explicação em ${lingua}, áudio em cada frase e exercícios com correção.`,
     sessao: (s: number, n: string) => `Sessão ${s} · ${n}`, gram: 'Gramática', gramC: (n: string) => `Gramática: ${n.toLowerCase()}`, gramD: (n: string, lingua: string) => `Gramática de ${n.toLowerCase()} explicada em ${lingua}, tópico por tópico, com tabelas, exemplos e erros comuns.`, nao: 'Página não encontrada',
   },
   en: {
     cursos: 'Courses', entrar: 'Sign in', cadastro: 'Sign up', assinatura: 'Subscription', priv: 'Privacy policy', privD: 'What data Linvuu collects, why, and what your rights are.', termos: 'Terms of use', termosD: 'Rules for using the Linvuu site and courses.',
-    pt: 'Brazilian Portuguese for English speakers, A1 to B1', ptD: 'Learn Brazilian Portuguese from zero to B1 in 62 lessons explained in English, with audio, dialogues, grammar and exercises.',
+    pt: 'Brazilian Portuguese for English speakers, A1 to B1', ptNav: 'Brazilian Portuguese', ptD: 'Learn Brazilian Portuguese from zero to B1 in 62 lessons explained in English, with audio, dialogues, grammar and exercises.',
+    ant: (n: number) => `← Session ${n}`, seg: (n: number) => `Session ${n} →`,
     curso: (n: string) => `Learn ${n} online, from zero to B1: course for English speakers`, cursoJ: (n: string) => `${n} for English speakers`, inicio: 'Home',
     aula: (a: number, t: string, n: string) => `Lesson ${a}: ${t} · ${n}`, aulaD: (n: string, a: number, t: string, s: number, tot: number, lingua: string) => `${n}, lesson ${a} (${t}), session ${s} of ${tot}: explained in ${lingua}, with audio for every sentence and exercises.`,
     sessao: (s: number, n: string) => `Session ${s} · ${n}`, gram: 'Grammar', gramC: (n: string) => `${n} grammar for English speakers`, gramD: (n: string, lingua: string) => `${n} grammar explained in ${lingua}, topic by topic, with tables, examples and common mistakes. Free topics included.`, nao: 'Page not found',
   },
   es: {
     cursos: 'Cursos', entrar: 'Entrar', cadastro: 'Regístrate', assinatura: 'Suscripción', priv: 'Política de privacidad', privD: 'Qué datos recoge Linvuu, para qué y cuáles son tus derechos.', termos: 'Términos de uso', termosD: 'Reglas de uso del sitio y de los cursos de Linvuu.',
-    pt: 'Portugués de Brasil para hispanohablantes, de A1 a B1', ptD: 'Portugués de Brasil de cero a B1 en 62 lecciones: las 2 primeras y la gramática, en español; el resto, explicado en inglés. Audio y ejercicios.',
+    pt: 'Portugués de Brasil para hispanohablantes, de A1 a B1', ptNav: 'Portugués de Brasil', ptD: 'Portugués de Brasil de cero a B1 en 62 lecciones: las 2 primeras y la gramática, en español; el resto, explicado en inglés. Audio y ejercicios.',
+    ant: (n: number) => `← Sesión ${n}`, seg: (n: number) => `Sesión ${n} →`,
     curso: (n: string) => `${n} para hispanohablantes, de cero a B1`, cursoJ: (n: string) => `${n} para hispanohablantes`, inicio: 'Inicio',
     aula: (a: number, t: string, n: string) => `Lección ${a}: ${t} · ${n}`, aulaD: (n: string, a: number, t: string, s: number, tot: number, lingua: string) => `${n}, lección ${a} (${t}), sesión ${s} de ${tot}: explicado en ${lingua}, con audio en cada frase y ejercicios.`,
     sessao: (s: number, n: string) => `Sesión ${s} · ${n}`, gram: 'Gramática', gramC: (n: string) => `Gramática: ${n.toLowerCase()}`, gramD: (n: string, lingua: string) => `Gramática de ${n.toLowerCase()} explicada en ${lingua}, tema por tema, con tablas, ejemplos y errores frecuentes.`, nao: 'Página no encontrada',
@@ -231,6 +234,22 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
 
 
 /**
+ * Navegação global do HTML pré-renderizado, na língua da página.
+ * Até 2026-11-04 só o português a tinha: sem menu, as aulas e gramáticas em inglês ficavam com
+ * 1 único link interno (o de regresso ao curso), contra 7 nas aulas em português (auditoria SEO).
+ * Nos outros idiomas os destinos são os que existem e são indexáveis nessa língua: Livros, Sobre,
+ * Por-que-Linvuu e Contato só existem em português (são noindex nas outras), por isso não entram —
+ * o rodapé do site segue a mesma regra (Footer.tsx só os mostra em pt-BR).
+ */
+function menuPreRender(loc: Locale): string {
+  if (loc.codigo === 'pt-BR') return '<nav aria-label="Principal"><a href="/cursos">Cursos</a> · <a href="/livros">Livros</a> · <a href="/sobre">Quem somos</a> · <a href="/por-que-linvuu">Por que estudar com a Linvuu?</a> · <a href="/contato">Contato</a> · <a href="/privacidade">Privacidade</a></nav>';
+  const tx = TX[loc.codigo];
+  const a = (href: string, texto: string) => `<a href="${esc(caminhoEm(loc.codigo, href))}">${esc(texto)}</a>`;
+  const itens = [a('/', tx.inicio), a('/cursos', tx.cursos), a('/gramatica', tx.gram), a('/portugues', tx.ptNav), a('/termos', tx.termos), a('/privacidade', tx.priv)];
+  return `<nav aria-label="${loc.codigo === 'en' ? 'Main' : 'Principal'}">${itens.join(' · ')}</nav>`;
+}
+
+/**
  * Conteúdo mínimo dentro de <div id="root"> para quem não executa JavaScript (ou ainda não renderizou):
  * título, descrição e links reais. O React substitui tudo isto ao carregar, então o visitante não vê diferença.
  */
@@ -246,7 +265,7 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
   let corpo = '';
   if (base === '/' || base === '/cursos') {
     const home = HOME[loc.codigo];
-    corpo = cabeca(base === '/' && loc.codigo === 'pt-BR' ? HOME_BR.titulo : (base === '/cursos' ? tx.cursos : home.titulo) ?? 'Linvuu · Idiomas para quem fala português', m.descricao ?? home.descricao ?? 'Cursos de inglês, espanhol, alemão, francês, italiano e russo para quem fala português.') + `<h2>${esc(tx.cursos)}</h2>` + li(visiveis.map((c) => `${a(`/curso/${c.id}`, c.nome)}: ${esc(c.descricao)}`)) + `<p>${loc.codigo === 'pt-BR' ? 'Criada por' : loc.codigo === 'es' ? 'Creada por' : 'Created by'} ${AUTORES.map((x) => esc(x.nome)).join(loc.codigo === 'pt-BR' ? ' e ' : loc.codigo === 'es' ? ' y ' : ' and ')}.</p>`
+    corpo = cabeca(base === '/' && loc.codigo === 'pt-BR' ? HOME_BR.titulo : (base === '/cursos' ? tx.cursos : home.titulo) ?? 'Linvuu · Idiomas para quem fala português', m.descricao ?? home.descricao ?? 'Cursos de inglês, espanhol, alemão, francês, italiano e russo para quem fala português.') + `<h2>${esc(tx.cursos)}</h2>` + li(visiveis.map((c) => `${a(`/curso/${c.id}`, c.nome)}: ${esc(c.descricao)} · ${a(`/gramatica/${c.id}`, tx.gramC(c.nome))}`)) + `<p>${loc.codigo === 'pt-BR' ? 'Criada por' : loc.codigo === 'es' ? 'Creada por' : 'Created by'} ${AUTORES.map((x) => esc(x.nome)).join(loc.codigo === 'pt-BR' ? ' e ' : loc.codigo === 'es' ? ' y ' : ' and ')}.</p>`
     if (base === '/' && loc.codigo === 'pt-BR') { corpo += `<p>${esc(HOME_BR.lead)}</p><h2>Conheça o Vuu</h2><p>Vuu acompanha a curiosidade que move a Linvuu: entender as palavras, ouvir como soam e praticar o idioma.</p><p>${a('/curso/de', 'Conhecer o curso de alemão')} · ${a('/curso/ru', 'Conhecer o curso de russo')} · ${a('/livros/de', 'Livro de alemão')} · ${a('/livros/es', 'Livro de espanhol')}</p><p>${esc(LIVROS_EM_PRODUCAO)}</p><h2>Ouça, entenda e pratique</h2><p>Explicações em português, áudio e exercícios. Experimente as duas primeiras aulas de cada curso sem cartão.</p><h2 id="planos">A oferta de hoje</h2><p>Acesso aos cursos de idiomas, com explicações em português.</p><ul><li>Mensal: ${esc(PRECO_MENSAL)}, com renovação automática.</li><li>Três meses no Pix: ${esc(PRECO_TRIMESTRAL_PIX)}, pagamento único e 30% de desconto.</li><li>Anual: ${esc(PRECO_ANUAL)}, pagamento único.</li></ul><p>${a('/assinatura', 'Ver todos os detalhes da assinatura')} · ${a('/cursos', 'Experimentar duas aulas grátis')}</p>`; }
     if (base === '/' && loc.codigo !== 'pt-BR') { const g = COMECAR[loc.codigo as 'pt-BR' | 'en' | 'es'] ?? COMECAR['pt-BR']; corpo += `<h2>${esc(g.titulo)}</h2><p>${esc(g.lead)}</p><ol>${g.passos.map((x) => `<li><strong>${esc(x.t)}.</strong> ${esc(x.d)}</li>`).join('')}</ol><p>${esc(g.dica)}</p>`; }
   } else {
@@ -278,7 +297,22 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
       }));
       if (c && d?.raiz && /^[a-z]{2}$/.test(mc[1]) && fs.existsSync(path.join(d.raiz, 'content', 'gramatica', `${mc[1]}.json`))) corpo += `<p>${a(`/gramatica/${mc[1]}`, tx.gramC(c.nome))}</p>`;
     } else if (md) {
-      corpo = cabeca(m.titulo ?? '', m.descricao) + (loc.codigo === 'pt-BR' ? sessaoGratisParaHtml(d, md[1], Number(md[2])) : loc.codigo === 'en' ? sessaoGratisEnParaHtml(d, md[1], Number(md[2])) : '') + `<p>${a(`/curso/${md[1]}`, visiveis.find((x) => x.id === md[1])?.nome ?? md[1])}</p>`;
+      // Navegação entre sessões da amostra pública + curso + gramática do curso, na língua da página.
+      // A vizinha só entra se também for indexável nesta língua (a aula dela traduzida), com o mesmo
+      // critério de metaSemLocale — nada de links do pré-render para páginas noindex.
+      const diaN = Number(md[2]);
+      const nomeCurso = visiveis.find((x) => x.id === md[1])?.nome ?? md[1];
+      const navegar: string[] = [];
+      const vizinhaIndexavel = (n: number) => {
+        const g = d?.indice[md[1]]?.grupos?.find((x) => n >= x.dias[0] && n <= x.dias[1]);
+        return !!g && ((d?.indice[md[1]]?.fonte ?? 'pt') === loc.explicacao || !!d?.indice[md[1]]?.tr?.[loc.explicacao]?.aulas?.includes(g.aula));
+      };
+      if (diaN > 1 && vizinhaIndexavel(diaN - 1)) navegar.push(a(`/curso/${md[1]}/dia/${diaN - 1}`, tx.ant(diaN - 1)));
+      navegar.push(a(`/curso/${md[1]}`, nomeCurso));
+      const arqGram = loc.codigo === 'pt-BR' ? `${md[1]}.json` : loc.codigo === 'en' ? (md[1] === 'br' ? 'br.json' : `${md[1]}.en.json`) : `${md[1]}.es.json`;
+      if (d?.raiz && fs.existsSync(path.join(d.raiz, 'content', 'gramatica', arqGram))) navegar.push(a(`/gramatica/${md[1]}`, tx.gramC(nomeCurso)));
+      if (diaN < SESSOES_GRATIS && vizinhaIndexavel(diaN + 1)) navegar.push(a(`/curso/${md[1]}/dia/${diaN + 1}`, tx.seg(diaN + 1)));
+      corpo = cabeca(m.titulo ?? '', m.descricao) + (loc.codigo === 'pt-BR' ? sessaoGratisParaHtml(d, md[1], diaN) : loc.codigo === 'en' ? sessaoGratisEnParaHtml(d, md[1], diaN) : '') + `<p>${navegar.join(' · ')}</p>`;
     } else if (mg && ((loc.codigo === 'pt-BR' && mg[1] !== 'br') || (loc.codigo === 'en' && (mg[1] === 'br' || (!!d?.raiz && /^[a-z]{2}$/.test(mg[1]) && fs.existsSync(path.join(d.raiz, 'content', 'gramatica', `${mg[1]}.en.json`))))))) {
       corpo = cabeca(m.titulo ?? '', m.descricao) + gramaticaGratisParaHtml(d, mg[1], loc.codigo === 'en' && mg[1] !== 'br' ? 'en' : 'pt') + `<p>${a(`/curso/${mg[1]}`, visiveis.find((x) => x.id === mg[1])?.nome ?? mg[1])}</p>`;
     } else if (m.titulo) {
@@ -295,7 +329,7 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
   if (base === '/por-que-linvuu') corpo = cabeca(POR_QUE.titulo, POR_QUE.descricao) + `<p>${esc(POR_QUE.lead)}</p>` + POR_QUE.motivos.map((x) => `<h2 id="${x.id}">${esc(x.titulo)}</h2><p>${esc(x.texto)}</p>`).join('') + `<h2>Para quem é</h2><p>${esc(POR_QUE.paraQuem)}</p><p><a href="/cursos">Veja os cursos</a> · <a href="/livros">Leia os livros</a> · <a href="/contato">Fale com a gente</a></p>`;
   if (base === '/contato') corpo = cabeca(CONTATO.titulo, CONTATO.descricao) + `<p>${esc(CONTATO.lead)}</p>` + li(contatos().filter((c) => c.id !== 'linkedin').map((c) => `<a href="${esc(c.href)}">${esc(c.nome)}: ${esc(c.rotulo)}</a>`)) + `<h2 id="linkedin">LinkedIn</h2>` + li(AUTORES.map((x) => `<a href="${esc(x.links[0])}" rel="me">${esc(x.nome)}</a>`));
   if (base === '/ex-alunos-udemy') corpo = cabeca(EX_ALUNOS.titulo, EX_ALUNOS.descricao) + `<p>${esc(EX_ALUNOS.lead)}</p><h2>O que você encontra na Linvuu</h2>` + li(EX_ALUNOS.beneficios.map((x) => esc(x))) + `<h2>Como pedir sua condição especial</h2><ol>${EX_ALUNOS.passos.map((x) => `<li>${esc(x)}</li>`).join('')}</ol><p>${esc(EX_ALUNOS.aviso)}</p>` + `<h2>Perguntas frequentes</h2>` + EX_ALUNOS.perguntas.map((q) => `<h3>${esc(q.p)}</h3><p>${esc(q.r)}</p>`).join('');
-  const menu = loc.codigo === 'pt-BR' ? '<nav aria-label="Principal"><a href="/cursos">Cursos</a> · <a href="/livros">Livros</a> · <a href="/sobre">Quem somos</a> · <a href="/por-que-linvuu">Por que estudar com a Linvuu?</a> · <a href="/contato">Contato</a> · <a href="/privacidade">Privacidade</a></nav>' : '';
+  const menu = menuPreRender(loc);
   return corpo ? `<main data-prerender>${menu}${corpo}</main>` : '';
 }
 
