@@ -13,6 +13,7 @@ import { EXCLUSAO } from './exclusaoConta.ts';
 import { contatos } from '../config/contato.ts';
 import { AUTORES, CAPITULOS_GRATIS, LIVROS_DESCRICAO, LIVROS_EM_PRODUCAO, LIVROS_META, capituloParaHtml, livroMeta, minutosDeLeitura, tituloLivro, type CapituloLivro, type ItemSumario } from './livros.ts';
 import { APRESENTACOES_CURSO, APRESENTACOES_LIVRO } from './apresentacoes.ts';
+import { AULAS_RUSSO } from '../config/aulas-russo';
 
 type CursoMeta = { id: string; nome: string; descricao: string; status?: string; i18n?: Record<string, { nome: string; descricao: string }> };
 export type DadosMeta = {
@@ -151,9 +152,11 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
       { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Livros', item: `${SITE}/livros` }, { '@type': 'ListItem', position: 2, name: l.nome, item: `${SITE}/livros/${l.id}` }, { '@type': 'ListItem', position: 3, name: `Capítulo ${c.n}`, item: url }] },
     ] };
   }
-  const fixas: Record<string, { titulo: string; descricao?: string; semIndice?: boolean }> = {
+  const fixas: Record<string, { titulo: string; descricao?: string; semIndice?: boolean; em?: Locale['codigo'][] }> = {
     '/cursos': { titulo: tx.cursos, descricao: loc.codigo === 'pt-BR' ? 'Cursos de idiomas Linvuu: sem medo de gramática, com sessões de 30 minutos. Experimente duas aulas gratuitas.' : loc.codigo === 'en' ? 'Linvuu language courses: grammar without fear, with 30-minute sessions. Try two lessons for free.' : 'Cursos de idiomas Linvuu: gramática sin miedo, con sesiones de 30 minutos. Prueba dos clases gratis.' },
     '/portugues': { titulo: tx.pt, descricao: tx.ptD },
+    // Aulas ao vivo de russo: existe em português e em inglês; em espanhol a página volta para a home (noindex).
+    '/russo-online': { titulo: AULAS_RUSSO[loc.codigo === 'en' ? 'en' : 'pt-BR'].titulo, descricao: AULAS_RUSSO[loc.codigo === 'en' ? 'en' : 'pt-BR'].descricao, em: ['pt-BR', 'en'], semIndice: loc.codigo === 'es' || undefined },
     '/entrar': { titulo: tx.entrar, semIndice: true },
     '/cadastro': { titulo: tx.cadastro, semIndice: true },
     '/livro/gramatica-ru': { titulo: 'Gramática russa A1–A2', semIndice: true },
@@ -171,6 +174,7 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
       { '@context': 'https://schema.org', '@type': 'Product', name: 'Assinatura Linvuu', description: fixas[p].descricao, image: `${SITE}/brand/linvuu-logo.png`, brand: { '@type': 'Brand', name: 'Linvuu' }, offers: [ ['Mensal', precoSchema(CENTAVOS.mensal)], ['Trimestral Pix', precoSchema(CENTAVOS['trimestral-pix'])], ['Trimestral cartão ou boleto', precoSchema(CENTAVOS.trimestral)], ['Anual', precoSchema(CENTAVOS.anual)] ].map(([name, price]) => ({ '@type': 'Offer', name, price, priceCurrency: 'BRL', availability: 'https://schema.org/InStock', url: `${SITE}/assinatura`, hasMerchantReturnPolicy: POLITICA_REEMBOLSO })) },
       { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'Posso experimentar sem cartão?', acceptedAnswer: { '@type': 'Answer', text: 'As duas primeiras aulas de cada curso são gratuitas, sem cartão.' } }, { '@type': 'Question', name: 'Qual é o desconto no Pix?', acceptedAnswer: { '@type': 'Answer', text: `O plano trimestral custa ${PRECO_TRIMESTRAL_PIX} no Pix, 30% de desconto sobre ${PRECO_TRIMESTRAL}.` } }] },
     );
+    if (p === '/russo-online' && loc.codigo !== 'es') jsonld.push({ '@context': 'https://schema.org', '@type': 'Service', name: fixas[p].titulo, description: fixas[p].descricao, serviceType: loc.codigo === 'en' ? 'Online Russian language lessons' : 'Aulas de russo online', inLanguage: loc.codigo, provider: { '@id': ORG_ID }, areaServed: 'Worldwide', url: `${SITE}${loc.prefixo}/russo-online` });
     return { status: 200, caminho: p, ...fixas[p], jsonld };
   }
   if (!d) return { status: 503, caminho: p, semIndice: true }; // falha de conteúdo não vira página genérica indexável
@@ -352,6 +356,7 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
     const x = EXCLUSAO[loc.codigo];
     corpo = cabeca(x.titulo, x.lead) + x.secoes.map((s, i) => `<h2>${esc(s.titulo)}</h2>${s.passos ? `<ol>${s.passos.map((p) => `<li>${esc(p)}</li>`).join('')}</ol>` : ''}${s.itens ? li(s.itens.map(esc)) : ''}${(s.paragrafos ?? []).map((p) => `<p>${esc(p)}</p>`).join('')}${i === 0 ? `<p>${esc(x.formulario.alternativa)} <a href="mailto:${EMAIL_OFICIAL}">${EMAIL_OFICIAL}</a>.</p>` : ''}`).join('');
   }
+  if (base === '/russo-online' && loc.codigo !== 'es') { const x = AULAS_RUSSO[loc.codigo === 'en' ? 'en' : 'pt-BR']; corpo = cabeca(x.titulo, x.lead) + `<h2>${esc(x.quemTitulo)}</h2>` + li(x.credenciais.map(esc)) + `<h2>${esc(x.comoTitulo)}</h2>` + li(x.como.map(esc)) + `<h2>${esc(x.testeTitulo)}</h2><p>${esc(x.teste)} ${a('/curso/ru', x.testeLink)}</p><h2>${esc(x.ctaTitulo)}</h2><p>${esc(x.cta)}</p>`; }
   if (base === '/sobre') corpo = cabeca(m.titulo ?? '', m.descricao) + AUTORES.map((x) => `<h2 id="${x.id}">${esc(x.nome)}</h2><p>Autoria, revisão e adaptação dos livros e das aulas da Linvuu. ${x.links.map((u) => `<a href="${esc(u)}" rel="me">${/linkedin/.test(u) ? 'LinkedIn' : 'Facebook'}</a>`).join(' · ')}</p>`).join('');
   if (base === '/por-que-linvuu') corpo = cabeca(POR_QUE.titulo, POR_QUE.descricao) + `<p>${esc(POR_QUE.lead)}</p>` + POR_QUE.motivos.map((x) => `<h2 id="${x.id}">${esc(x.titulo)}</h2><p>${esc(x.texto)}</p>`).join('') + `<h2>Para quem é</h2><p>${esc(POR_QUE.paraQuem)}</p><p><a href="/cursos">Veja os cursos</a> · <a href="/livros">Leia os livros</a> · <a href="/contato">Fale com a gente</a></p>`;
   if (base === '/contato') corpo = cabeca(CONTATO.titulo, CONTATO.descricao) + `<p>${esc(CONTATO.lead)}</p>` + li(contatos().filter((c) => c.id !== 'linkedin').map((c) => `<a href="${esc(c.href)}">${esc(c.nome)}: ${esc(c.rotulo)}</a>`)) + `<h2 id="linkedin">LinkedIn</h2>` + li(AUTORES.map((x) => `<a href="${esc(x.links[0])}" rel="me">${esc(x.nome)}</a>`));

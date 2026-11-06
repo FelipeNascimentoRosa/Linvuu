@@ -94,7 +94,7 @@ export default defineConfig(({ mode }) => {
       if (importer && source === './pages/Gramatica' && importer.split('?')[0] === path.resolve('src/App.tsx')) return path.resolve('src/plataforma/apk/Gramatica.tsx');
       if (importer && source.startsWith('.') && path.resolve(path.dirname(importer.split('?')[0]), source).replace(/\.ts$/, '') === path.resolve('src/lib/audio')) return path.resolve('src/plataforma/apk/audio.ts');
       // Páginas só do site: no APK viram um componente vazio (as rotas já redirecionam no app).
-      if (importer && ['./pages/Portugues', './pages/Sobre', './pages/PorQue', './pages/Contato', './pages/ExAlunosUdemy', './pages/ExcluirConta'].includes(source) && importer.split('?')[0] === path.resolve('src/App.tsx')) return path.resolve('src/plataforma/apk/sem-site/Vazia.tsx');
+      if (importer && ['./pages/Portugues', './pages/Sobre', './pages/AulasRusso', './pages/PorQue', './pages/Contato', './pages/ExAlunosUdemy', './pages/ExcluirConta'].includes(source) && importer.split('?')[0] === path.resolve('src/App.tsx')) return path.resolve('src/plataforma/apk/sem-site/Vazia.tsx');
       // v1 sem compras: troca os módulos de cobrança por versões vazias; paywall, preços e SDK de loja não entram no pacote.
       if (!cobrancaNoApk && importer && source.startsWith('.')) {
         const alvoImport = path.resolve(path.dirname(importer.split('?')[0]), source).replace(/\.tsx?$/, '');
