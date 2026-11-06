@@ -72,7 +72,7 @@ export default function HomeBrasileiros() {
     <section className="br-section br-why" id="por-que-online" aria-labelledby="br-why-title">
       <div className="br-section-head"><div><p className="br-eyebrow">{h("CURSOS ONLINE, FEITOS POR PROFESSORES")}</p><h2 id="br-why-title">{h("Por que aprender com a Linvuu?")}</h2></div></div>
       <div className="br-why-grid">
-        <article><h3>{h("Feito por professores.")}</h3><p>{h("Professores de idiomas, entre eles um vencedor da Olimpíada Internacional Online de Russo da Universidade de São Petersburgo.")}</p><Link className="br-text-link" to="/sobre">{h("Conhecer os professores →")}</Link></article>
+        <article><h3>{h("Feito por professores.")}</h3><p>{h("Cada curso é escrito e revisado por professores de idiomas.")}</p></article>
         <article><h3>{h("Baseado em livros de referência.")}</h3><p>{h("Livros didáticos e gramáticas de cada idioma, explicados em português.")}</p></article>
         <article><h3>{h("Você ouve e pratica.")}</h3><p>{h("Áudio em cada frase e exercícios com correção.")}</p></article>
         {LOCALE.codigo !== 'es' && <article><h3>{h("Aula ao vivo, se quiser.")}</h3><p>{h("Aulas de russo por videochamada com professores.")}</p><Link className="br-text-link" to="/russo-online">{h("Ver aulas ao vivo →")}</Link></article>}

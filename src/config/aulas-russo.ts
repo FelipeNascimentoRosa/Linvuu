@@ -24,11 +24,10 @@ export type TextoAulasRusso = {
 export const AULAS_RUSSO: Record<'pt-BR' | 'en', TextoAulasRusso> = {
   'pt-BR': {
     titulo: 'Aulas de russo online com professores',
-    descricao: 'Aulas de russo ao vivo por videochamada, com professores da Linvuu. Entre eles, um vencedor da Olimpíada Internacional Online de Russo da Universidade de São Petersburgo.',
-    lead: 'Aprenda russo com professores, ao vivo, por videochamada. Entre eles, um vencedor da Olimpíada Internacional Online de Russo como Língua Estrangeira da Universidade Estatal de São Petersburgo.',
+    descricao: 'Aulas de russo ao vivo por videochamada com professores da Linvuu, junto com o curso de russo online.',
+    lead: 'Aprenda russo com professores, ao vivo, por videochamada, e estude entre as aulas no curso de russo da Linvuu.',
     quemTitulo: 'Os professores',
     credenciais: [
-      'Um dos professores venceu, com diploma de 1º grau, a III Olimpíada Internacional Online de Russo como Língua Estrangeira da Universidade Estatal de São Petersburgo (novembro de 2022).',
       'Palestra «Preparação para o TRKI (TORFL) usando plataforma EAD» apresentada em seminário do Centro de Testes de Proficiência da Universidade Estatal de São Petersburgo (junho de 2021).',
       'Experiência no Instituto Valeeva Rosa, escola membro da Associação de Escolas Russas no Exterior (2024).',
       'Professores de línguas, com intérprete de russo e formação em matemática na equipe. Aulas em português ou em inglês.',
@@ -50,11 +49,10 @@ export const AULAS_RUSSO: Record<'pt-BR' | 'en', TextoAulasRusso> = {
   },
   en: {
     titulo: 'Online Russian lessons with teachers',
-    descricao: 'Live online Russian lessons by video call with Linvuu teachers, including a winner of the Saint Petersburg State University International Online Russian Olympiad.',
-    lead: 'Learn Russian with teachers, live, by video call. Among them, a winner of the III International Online Olympiad in Russian as a Foreign Language at Saint Petersburg State University.',
+    descricao: 'Live online Russian lessons by video call with Linvuu teachers, alongside the online Russian course.',
+    lead: 'Learn Russian with teachers, live, by video call, and study between lessons with the Linvuu Russian course.',
     quemTitulo: 'The teachers',
     credenciais: [
-      'One of the teachers won a first-degree diploma at the III International Online Olympiad in Russian as a Foreign Language, Saint Petersburg State University (November 2022).',
       'Talk “Preparing for TRKI (TORFL) using a distance-learning platform” given at a seminar of the Russian Language Testing Center, Saint Petersburg State University (June 2021).',
       'Experience at Instituto Valeeva Rosa, a school that is a member of the Association of Russian Schools Abroad (2024).',
       'Language teachers, with a Russian interpreter and a mathematics background on the team. Lessons in English or Portuguese.',
