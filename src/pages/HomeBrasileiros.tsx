@@ -56,6 +56,7 @@ export default function HomeBrasileiros() {
         <nav className="br-pick-list" aria-labelledby="br-pick-title">{idiomas.map((i) => <HomeCourseLink key={i.id} to={`/curso/${i.id}`} className="br-pick-btn">{h(i.nome)}</HomeCourseLink>)}</nav>
         <div className="br-actions"><a className="br-text-link" href="#experimente">{h("Experimentar o método ↓")}</a></div>
         <p className="br-fine">{h("2 primeiras aulas grátis · Sem cartão para experimentar")}</p>
+        {LOCALE.codigo === 'pt-BR' && <p className="br-fine"><a href="https://www.udemy.com/course/curso-de-russo-a1-ate-a2/" target="_blank" rel="noopener noreferrer">Curso de russo na Udemy: nota 4,7 de 5 em 72 avaliações · 285 alunos</a></p>}
       {LOCALE.codigo !== 'pt-BR' && <p className="br-fine">{homeNotice}</p>}
       </div>
       <div className="br-scene" id="experimente">
