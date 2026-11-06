@@ -4,12 +4,13 @@ import {LOCALE} from '../i18n';
 import {analytics,rotaAnalytics,type AnalyticsChoice} from '../lib/analytics';
 import {metaPixel} from '../lib/metaPixel';
 import {tiktokPixel} from '../lib/tiktokPixel';
+import {clarity} from '../lib/clarity';
 import {APK} from '../plataforma';
 import './analytics-consent.css';
 const texts={
- 'pt-BR':{title:'Preferências de análise',text:'Podemos usar o PostHog para entender a navegação e melhorar as aulas? Enviamos eventos com um identificador aleatório deste aparelho, sem nome, e-mail ou respostas. Não gravamos a tela. É opcional e você pode mudar sua escolha aqui.',yes:'Permitir análise',no:'Não permitir',privacy:'Privacidade',saved:'Preferência salva.'},
- en:{title:'Analytics preferences',text:'May we use PostHog to understand navigation and improve lessons? We send events with a random device identifier, without your name, email or answers. We do not record your screen. This is optional; you can change your choice here.',yes:'Allow analytics',no:'Decline analytics',privacy:'Privacy',saved:'Preference saved.'},
- es:{title:'Preferencias de análisis',text:'¿Podemos usar PostHog para entender la navegación y mejorar las clases? Enviamos eventos con un identificador aleatorio de este dispositivo, sin nombre, correo ni respuestas. No grabamos la pantalla. Es opcional y puedes cambiar tu elección aquí.',yes:'Permitir análisis',no:'No permitir',privacy:'Privacidad',saved:'Preferencia guardada.'}
+ 'pt-BR':{title:'Preferências de análise',text:'Podemos usar o PostHog e o Microsoft Clarity para entender a navegação e melhorar o site? O Clarity grava a sessão sem o texto digitado em formulários. Não enviamos nome, e-mail nem respostas. É opcional e você pode mudar sua escolha aqui.',yes:'Permitir análise',no:'Não permitir',privacy:'Privacidade',saved:'Preferência salva.'},
+ en:{title:'Analytics preferences',text:'May we use PostHog and Microsoft Clarity to understand navigation and improve the site? Clarity records the session without text typed into forms. We do not send your name, email or answers. This is optional; you can change your choice here.',yes:'Allow analytics',no:'Decline analytics',privacy:'Privacy',saved:'Preference saved.'},
+ es:{title:'Preferencias de análisis',text:'¿Podemos usar PostHog y Microsoft Clarity para entender la navegación y mejorar el sitio? Clarity graba la sesión sin el texto escrito en formularios. No enviamos nombre, correo ni respuestas. Es opcional y puedes cambiar tu elección aquí.',yes:'Permitir análisis',no:'No permitir',privacy:'Privacidad',saved:'Preferencia guardada.'}
 };
 const ads={
  'pt-BR':{title:'Preferências de publicidade',text:'Podemos usar os pixels da Meta e do TikTok para medir anúncios? Eles recebem dados de navegação e podem usar cookies.',yes:'Permitir',no:'Recusar'},
@@ -26,6 +27,7 @@ export function BotaoPreferencias({className}:{className?:string}){
 export function AnalyticsConsent(){
  const t=texts[LOCALE.codigo],ad=ads[LOCALE.codigo],x=extra[LOCALE.codigo],[aberto,setAberto]=useState(false),{pathname,search}=useLocation(),[choice,setChoice]=useState<AnalyticsChoice>(()=>analytics.choice()),[adChoice,setAdChoice]=useState<AnalyticsChoice>(()=>metaPixel.choice());
  useEffect(()=>{if(choice!=='yes')return;const props=rotaAnalytics(pathname);if(!props)return;void analytics.capture('page_viewed',props);if(props.page==='course')void analytics.capture('course_viewed',props);if(props.page==='lesson')void analytics.capture('lesson_started',props);},[pathname,choice]);
+ useEffect(()=>{if(APK)return;if(choice==='yes')clarity.permitir();else if(choice==='no')clarity.recusar();},[choice]);
  useEffect(()=>{if(!APK&&adChoice==='yes'){metaPixel.pageView();tiktokPixel.pageView();}},[pathname,search,adChoice]);
  const medir=useCallback((el:HTMLElement|null)=>{const raiz=document.documentElement;if(!el||APK){raiz.style.removeProperty('--lv-consent-h');return;}const ro=new ResizeObserver(()=>raiz.style.setProperty('--lv-consent-h',`${Math.ceil(el.getBoundingClientRect().height)+16}px`));ro.observe(el);},[]);
  useEffect(()=>()=>{document.documentElement.style.removeProperty('--lv-consent-h');},[]);
