@@ -24,14 +24,14 @@ export type TextoAulasRusso = {
 export const AULAS_RUSSO: Record<'pt-BR' | 'en', TextoAulasRusso> = {
   'pt-BR': {
     titulo: 'Aulas de russo online com professores',
-    descricao: 'Aulas de russo ao vivo por videochamada, com professores como Felipe Nascimento Rosa, vencedor da Olimpíada Internacional Online de Russo da Universidade de São Petersburgo.',
-    lead: 'Aprenda russo com professores, ao vivo, por videochamada. Entre eles, Felipe Nascimento Rosa, vencedor da Olimpíada Internacional Online de Russo como Língua Estrangeira da Universidade Estatal de São Petersburgo.',
-    quemTitulo: 'Quem dá as aulas',
+    descricao: 'Aulas de russo ao vivo por videochamada, com professores da Linvuu. Entre eles, um vencedor da Olimpíada Internacional Online de Russo da Universidade de São Petersburgo.',
+    lead: 'Aprenda russo com professores, ao vivo, por videochamada. Entre eles, um vencedor da Olimpíada Internacional Online de Russo como Língua Estrangeira da Universidade Estatal de São Petersburgo.',
+    quemTitulo: 'Os professores',
     credenciais: [
-      'Vencedor, com diploma de 1º grau, da III Olimpíada Internacional Online de Russo como Língua Estrangeira da Universidade Estatal de São Petersburgo (novembro de 2022). O diploma foi emitido em nome de Felipe Valeeva Rosa.',
-      'Apresentou a palestra «Preparação para o TRKI (TORFL) usando plataforma EAD» em seminário do Centro de Testes de Proficiência da Universidade Estatal de São Petersburgo (junho de 2021).',
-      'Professor no Instituto Valeeva Rosa, escola membro da Associação de Escolas Russas no Exterior (2024).',
-      'Professor de línguas e intérprete de russo, matemático de formação. Dá aulas em português ou em inglês.',
+      'Um dos professores venceu, com diploma de 1º grau, a III Olimpíada Internacional Online de Russo como Língua Estrangeira da Universidade Estatal de São Petersburgo (novembro de 2022).',
+      'Palestra «Preparação para o TRKI (TORFL) usando plataforma EAD» apresentada em seminário do Centro de Testes de Proficiência da Universidade Estatal de São Petersburgo (junho de 2021).',
+      'Experiência no Instituto Valeeva Rosa, escola membro da Associação de Escolas Russas no Exterior (2024).',
+      'Professores de línguas, com intérprete de russo e formação em matemática na equipe. Aulas em português ou em inglês.',
     ],
     comoTitulo: 'Como funcionam as aulas',
     como: [
@@ -50,14 +50,14 @@ export const AULAS_RUSSO: Record<'pt-BR' | 'en', TextoAulasRusso> = {
   },
   en: {
     titulo: 'Online Russian lessons with teachers',
-    descricao: 'Live online Russian lessons by video call, with teachers such as Felipe Nascimento Rosa, winner of the Saint Petersburg State University International Online Russian Olympiad.',
-    lead: 'Learn Russian with teachers, live, by video call. Among them, Felipe Nascimento Rosa, winner of the III International Online Olympiad in Russian as a Foreign Language at Saint Petersburg State University.',
-    quemTitulo: 'Who teaches',
+    descricao: 'Live online Russian lessons by video call with Linvuu teachers, including a winner of the Saint Petersburg State University International Online Russian Olympiad.',
+    lead: 'Learn Russian with teachers, live, by video call. Among them, a winner of the III International Online Olympiad in Russian as a Foreign Language at Saint Petersburg State University.',
+    quemTitulo: 'The teachers',
     credenciais: [
-      'First-degree diploma winner of the III International Online Olympiad in Russian as a Foreign Language, Saint Petersburg State University (November 2022). The diploma was issued under the name Felipe Valeeva Rosa.',
-      'Presented the talk “Preparing for TRKI (TORFL) using a distance-learning platform” at a seminar of the Russian Language Testing Center, Saint Petersburg State University (June 2021).',
-      'Teacher at Instituto Valeeva Rosa, a school that is a member of the Association of Russian Schools Abroad (2024).',
-      'Language teacher and Russian interpreter, trained as a mathematician. Lessons are taught in English or Portuguese.',
+      'One of the teachers won a first-degree diploma at the III International Online Olympiad in Russian as a Foreign Language, Saint Petersburg State University (November 2022).',
+      'Talk “Preparing for TRKI (TORFL) using a distance-learning platform” given at a seminar of the Russian Language Testing Center, Saint Petersburg State University (June 2021).',
+      'Experience at Instituto Valeeva Rosa, a school that is a member of the Association of Russian Schools Abroad (2024).',
+      'Language teachers, with a Russian interpreter and a mathematics background on the team. Lessons in English or Portuguese.',
     ],
     comoTitulo: 'How the lessons work',
     como: [

@@ -77,7 +77,7 @@ const copy: Record<string, readonly [string, string]> = {
   'Que idioma você quer aprender?': ['Which language do you want to learn?', '¿Qué idioma quieres aprender?'],
   'CURSOS ONLINE, FEITOS POR PROFESSORES': ['ONLINE COURSES, MADE BY TEACHERS', 'CURSOS EN LÍNEA, HECHOS POR PROFESORES'],
   'Por que aprender com a Linvuu?': ['Why learn with Linvuu?', '¿Por qué aprender con Linvuu?'],
-  'Entre eles, Felipe Nascimento Rosa, vencedor da Olimpíada Internacional Online de Russo da Universidade de São Petersburgo.': ['Among them, Felipe Nascimento Rosa, winner of the International Online Russian Olympiad at Saint Petersburg State University.', 'Entre ellos, Felipe Nascimento Rosa, ganador de la Olimpiada Internacional en Línea de Ruso de la Universidad de San Petersburgo.'],
+  'Professores de idiomas, entre eles um vencedor da Olimpíada Internacional Online de Russo da Universidade de São Petersburgo.': ['Language teachers, including a winner of the International Online Russian Olympiad at Saint Petersburg State University.', 'Profesores de idiomas, entre ellos un ganador de la Olimpiada Internacional en Línea de Ruso de la Universidad de San Petersburgo.'],
   'Baseado em livros de referência.': ['Based on reference books.', 'Basado en libros de referencia.'],
   'Livros didáticos e gramáticas de cada idioma, explicados em português.': ['Textbooks and grammars for each language, explained in English.', 'Libros de texto y gramáticas de cada idioma, explicados en español.'],
   'Você ouve e pratica.': ['You listen and practise.', 'Escuchas y practicas.'],
