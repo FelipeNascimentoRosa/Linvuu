@@ -155,3 +155,5 @@ html[data-tema-aluno="claro"]{color-scheme:light}
 .aa-reporte label { display: block; margin-block: var(--s-3) var(--s-2); }
 .aa-reporte textarea { width: 100%; box-sizing: border-box; font: inherit; color: var(--sem-texto); background: var(--sem-superficie); border: 1px solid var(--sem-borda); border-radius: var(--r-card); padding: var(--s-3); resize: vertical; }
 .aa-reporte small { overflow-wrap: anywhere; }
+/* CLS: o rodapé ficava na tela enquanto a rota lazy carregava e pulava quando o conteúdo chegava (0,17-0,25 no Lighthouse). Com o main ocupando ao menos a altura da janela, o rodapé nasce abaixo da dobra e não se mexe à vista. */
+main.site-camadas{min-height:100vh}
