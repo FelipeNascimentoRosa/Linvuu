@@ -1,4 +1,4 @@
-name: App Android (APK de teste)
+name: App Android (APK de pré-lançamento)
 on:
   workflow_dispatch:
   pull_request:
@@ -99,7 +99,7 @@ jobs:
           draft="$(gh release view "$tag" --json isDraft --jq .isDraft)"
           test "$draft" = true
           url="$(gh release view "$tag" --json url --jq .url)"
-          echo "### APK de teste verificado" >> "$GITHUB_STEP_SUMMARY"
+          echo "### APK de pré-lançamento verificado" >> "$GITHUB_STEP_SUMMARY"
           echo "Rascunho privado para revisão: $url" >> "$GITHUB_STEP_SUMMARY"
           echo "Commit: $LINVUU_SOURCE_SHA; versão: $ANDROID_VERSION_CODE; pacote: com.linvuu.app.teste" >> "$GITHUB_STEP_SUMMARY"
       - name: Remover material privado do runner
