@@ -2,7 +2,7 @@
 
 # Linvuu: briefing para o ChatGPT (parceria com o Claude)
 
-> Cole este texto inteiro no ChatGPT, ou peça para ele ler `docs/PARCERIA-IA.md` no repositório `FelipeNascimentoRosa/Linvuu`.
+> Cole este texto inteiro no ChatGPT, ou peça para ele ler `docs/historico/PARCERIA-IA.md` no repositório `FelipeNascimentoRosa/Linvuu`.
 > Escrito pelo Claude em 16/10/2026, a pedido do Felipe. Mantido no repositório: quem mudar uma regra atualiza este arquivo.
 
 ---
@@ -152,12 +152,12 @@ Se, depois de ler o código, você achar que duas pastas separadas são melhores
 - **Métricas:** falta definir `METRICAS_TOKEN` (24 caracteres ou mais) no Render para ler `GET /api/metricas`.
 - **Conteúdo:** alemão e russo ainda têm menos de 40 exercícios em várias aulas; 6 simulados de inglês têm de 33 a 39. As traduções de es/fr/it/de/ru precisam de revisão humana.
 - **Felipe (fora do código):** Search Console (sitemap), revogar a chave antiga do Firebase, compra de teste no Stripe, revisão jurídica dos termos e da privacidade, contador para os impostos das duas vendas.
-- **Desatualizado:** `docs/CONTEXTO.md` dizia que o repositório é público. Hoje ele é privado.
+- **Desatualizado:** `docs/historico/CONTEXTO.md` dizia que o repositório é público. Hoje ele é privado.
 
 ## 8. Sua primeira resposta
 
 Antes de escrever código:
-1. Leia `docs/CONTEXTO.md`, este arquivo, `docs/COBRANCA-APP.md`, `docs/APP.md`, `src/lib/assinatura.ts`, `src/lib/compras.ts` e `server/billing.ts`.
+1. Leia `docs/historico/CONTEXTO.md`, este arquivo, `docs/COBRANCA-APP.md`, `docs/APP.md`, `src/lib/assinatura.ts`, `src/lib/compras.ts` e `server/billing.ts`.
 2. Responda ao Felipe, em português e curto:
    - o que você entendeu;
    - onde discorda do plano WEBSITE/APK acima e por quê;

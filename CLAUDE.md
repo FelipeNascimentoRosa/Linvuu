@@ -36,7 +36,7 @@ Leia [**CONTINUIDADE-2026-10-27.md**](docs/CONTINUIDADE-2026-10-27.md) **por int
 4. Não publicar credenciais, policies IAM, artefatos com dados administrativos, chaves, tokens ou dados de alunos em repositório público.
 5. Não realizar deploy de `firestore.rules`, mudanças de cobrança, Render, credenciais ou APP/APK como efeito colateral de documentação.
 
-**Leia** [estado verificado](docs/ESTADO-ATUAL.md) e [Firebase — situação e verificação](docs/conexao-firebase-github.md). `docs/CONTEXTO.md` e `docs/PARCERIA-IA.md` são registros históricos, não fontes de verdade do presente.
+**Leia** [estado verificado](docs/ESTADO-ATUAL.md) e [Firebase — situação e verificação](docs/conexao-firebase-github.md). `docs/historico/CONTEXTO.md` e `docs/historico/PARCERIA-IA.md` são registros históricos, não fontes de verdade do presente.
 
 ## Verificação de encerramento — 27/10/2026
 - Render: commit `6bf7dd9` publicado `live`, build e deploy aprovados (dep-dbg4aeajnfac739kpjlg). O site atual não foi substituído por uma nova arquitetura.
