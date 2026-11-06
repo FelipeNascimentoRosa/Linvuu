@@ -81,7 +81,7 @@ const TX = {
     cursos: 'Cursos', entrar: 'Entrar', cadastro: 'Cadastre-se', assinatura: 'Assinatura', priv: 'Política de privacidade', privD: 'Quais dados a Linvuu coleta, para quê e quais são os seus direitos pela LGPD.', termos: 'Termos de uso', termosD: 'Regras de uso do site e dos cursos da Linvuu.',
     pt: 'Português para estrangeiros · Brazilian Portuguese', ptNav: 'Português para estrangeiros', ptD: 'Curso de português do Brasil para estrangeiros, do A1 ao B1, com aulas explicadas em inglês ou espanhol. 62 aulas.',
     ementa: (n: number) => `As ${n} aulas do curso`, ant: (n: number) => `← Sessão ${n}`, seg: (n: number) => `Sessão ${n} →`,
-    curso: (n: string) => `${n}: curso para quem fala português, do zero ao B1`, cursoPrep: (n: string) => `${n}: curso para quem fala português`, cursoJ: (n: string) => `${n} para quem fala português`, inicio: 'Início',
+    curso: (n: string) => `Curso de ${n.toLowerCase()} online, explicado em português`, cursoPrep: (n: string) => `${n}: curso para quem fala português`, cursoJ: (n: string) => `${n} para quem fala português`, inicio: 'Início',
     aula: (a: number, t: string, n: string) => `Aula ${a}: ${t} · ${n}`, aulaD: (n: string, a: number, t: string, s: number, tot: number, lingua: string) => `${n}, aula ${a} (${t}), sessão ${s} de ${tot}: explicação em ${lingua}, áudio em cada frase e exercícios com correção.`,
     sessao: (s: number, n: string) => `Sessão ${s} · ${n}`, gram: 'Gramática', gramC: (n: string) => `Gramática: ${n.toLowerCase()}`, gramD: (n: string, lingua: string) => `Gramática de ${n.toLowerCase()} explicada em ${lingua}, tópico por tópico, com tabelas, exemplos e erros comuns.`, nao: 'Página não encontrada',
   },

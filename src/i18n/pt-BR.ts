@@ -78,7 +78,7 @@ export const ptBR = {
   },
   cursoPagina: {
     continuarBtn: 'Continuar', sessaoTitulo: (n: number, t: string) => `Sessão ${n}: ${t}`, continuar: (n: number, t: string) => `Continuar na sessão ${n}: ${t}`, comecar: 'Começar pela sessão 1 (grátis)', feitas: (a: number, b: number) => `${a} de ${b} sessões concluídas`, concluida: 'concluída', aulasNivel: (n: number) => `${n} aulas`, retomarKicker: (c: string) => `Continuar ${c}`,
-    tituloSeo: (nome: string) => `${nome}: curso para quem fala português, do zero ao B1`,
+    tituloSeo: (nome: string) => `Curso de ${nome.toLowerCase()} online, explicado em português`,
     fatos: ['Sessões de ~30 min', 'Começa do zero'], noAr: (a: number, b: number) => `${a} de ${b} sessões no ar`, gramatica: (nome: string) => `Gramática: ${nome.toLowerCase()} →`,
     partida: (n: number) => `Seu ponto de partida: sessão ${n}`, sugerimos: (nivel: string, n: number, t: string) => `Para o nível ${nivel}, sugerimos começar pela sessão ${n}: ${t}.`, irPara: (n: number) => `Ir para a sessão ${n}`,
     producao: 'Parte das aulas deste curso ainda está sendo produzida. Você pode navegar pela trilha inteira e ver o tema de cada sessão.',
