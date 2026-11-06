@@ -4,7 +4,9 @@ import { Traco } from '../src/components/Traco.tsx';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { aplicarMeta, carregarDadosMeta, metaDaRota } from '../src/lib/metaRota.ts';
-import { HOME_BR, PLANOS_AVISO } from '../src/config/oferta-publica.ts';
+import { HOME_BR } from '../src/config/oferta-publica.ts';
+// Vitrine de planos não lançados (removida do código em 05/11/2026): o texto não pode voltar ao HTML.
+const PLANOS_AVISO = 'Novos planos em preparação';
 import { CAPITULOS_GRATIS } from '../src/lib/livros.ts';
 import { LIVROS } from '../src/config/livros.ts';
 const raiz = process.cwd();

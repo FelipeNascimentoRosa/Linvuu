@@ -40,11 +40,24 @@ type Traducao = { aulas: number[]; g: Record<string, string>; s: Record<string, 
 /** Traduções dos títulos e lista de aulas por idioma de explicação (content/indice.<en|es>.json), carregadas antes de abrir o site. */
 let TRADUCOES: Partial<Record<Explicacao, Record<string, Traducao>>> = {};
 const ARQUIVOS_TR = import.meta.glob('../../content/indice.{en,es}.json', { import: 'default' }) as Record<string, () => Promise<Record<string, Traducao>>>;
-export async function carregarTraducoes() {
-  await Promise.all((['en', 'es'] as const).map(async (l) => {
+const carregandoTr = new Map<Explicacao, Promise<void>>();
+/** Índice de traduções de uma língua de explicação; cada um é baixado uma vez, só quando alguém precisa dele. */
+export function carregarTraducao(l: Explicacao): Promise<void> {
+  if (l === 'pt') return Promise.resolve();
+  let p = carregandoTr.get(l);
+  if (!p) {
     const f = ARQUIVOS_TR[`../../content/indice.${l}.json`];
-    TRADUCOES[l] = f ? await f().catch(() => ({})) : {};
-  }));
+    p = (f ? f().catch(() => ({})) : Promise.resolve({})).then((v) => { TRADUCOES[l] = v; });
+    carregandoTr.set(l, p);
+  }
+  return p;
+}
+/** Antes de abrir o site: só o índice da língua de explicação desta versão (nenhum na versão em português, ~40 KB a menos
+ * no caminho crítico). Os outros vêm depois, sem pressa, para quem troca a língua da explicação numa aula. */
+export async function carregarTraducoes() {
+  await carregarTraducao(LOCALE.explicacao);
+  const depois = () => { void carregarTraducao('en'); void carregarTraducao('es'); };
+  if (typeof window !== 'undefined' && 'requestIdleCallback' in window) window.requestIdleCallback(depois, { timeout: 4000 }); else setTimeout(depois, 2000);
 }
 const INDICE = indiceJson.cursos as unknown as Record<string, { total: number; publicadas: number; emProducao: number; planejadas: number; status: StatusAula[]; sobrescritos: Record<string, { t: string; o: string }>; grupos?: { aula: number; titulo: string; nivel?: string; dias: [number, number] }[]; fonte?: Explicacao; amostra?: { min: number; blocos: [string, number][] } }>;
 
@@ -125,6 +138,7 @@ const comNovaTentativa = async <T,>(f: () => Promise<T>): Promise<T> => {
 
 /** Carrega a sessão com a explicação escolhida por curso; sem tradução, devolve a versão escrita (com `semTraducao`). */
 export const carregarAula = async (idioma: string, dia: number, explicacao = explicacaoDoCurso(idioma)): Promise<Aula & { semTraducao?: Explicacao; idiomas: IdiomasDaAula }> => {
+  await carregarTraducao(explicacao);
   const nnn = String(dia).padStart(3, '0');
   const pasta = fonteDoCurso(idioma) === explicacao ? '' : `${explicacao}/`;
   const grupo = INDICE[idioma]?.grupos?.find((g) => dia >= g.dias[0] && dia <= g.dias[1]);
