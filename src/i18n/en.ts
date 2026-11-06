@@ -79,7 +79,7 @@ export const en: Dicionario = {
   },
   cursoPagina: {
     continuarBtn: 'Continue', sessaoTitulo: (n: number, t: string) => `Session ${n}: ${t}`, continuar: (n: number, t: string) => `Continue with session ${n}: ${t}`, comecar: 'Start with session 1 (free)', feitas: (a: number, b: number) => `${a} of ${b} sessions completed`, concluida: 'completed', aulasNivel: (n: number) => `${n} lessons`, retomarKicker: (c: string) => `Continue ${c}`,
-    tituloSeo: (nome: string) => `${nome} for English speakers, from zero to B1`,
+    tituloSeo: (nome: string) => `Learn ${nome} online, explained in English`,
     fatos: ['~30-minute sessions', 'Starts from zero'], noAr: (a: number, b: number) => `${a} of ${b} sessions online`, gramatica: (nome: string) => `${nome} grammar →`,
     partida: (n: number) => `Your starting point: session ${n}`, sugerimos: (nivel: string, n: number, t: string) => `For level ${nivel}, we suggest starting at session ${n}: ${t}.`, irPara: (n: number) => `Go to session ${n}`,
     producao: 'Some lessons of this course are still in production. You can browse the whole course and see the topic of every session.',
