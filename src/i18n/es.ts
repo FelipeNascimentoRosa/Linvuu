@@ -75,6 +75,8 @@ export const es: Dicionario = {
   cursosPagina: {
     titulo: 'Todos los cursos', buscar: 'Buscar', exemplo: 'Ej.: alemán, francés', contagem: (n: number) => (n === 1 ? '1 curso' : `${n} cursos`),
     vazio: (q: string) => `No encontramos ningún curso para "${q}". Prueba otra palabra o`, limpar: 'borra la búsqueda', portugues: 'Portugués de Brasil para hispanohablantes →',
+    avisoObraTitulo: '🚧 En construcción',
+    avisoObraTexto: 'Los cursos de portugués, inglés, ruso, alemán, francés e italiano explicados en español todavía se están preparando. Serán lo último que Linvuu termine de construir, así que esta sección avanzará más despacio que las demás mientras el resto de la plataforma se completa primero.',
   },
   cursoPagina: {
     continuarBtn: 'Continuar', sessaoTitulo: (n: number, t: string) => `Sesión ${n}: ${t}`, continuar: (n: number, t: string) => `Continuar en la sesión ${n}: ${t}`, comecar: 'Empezar por la sesión 1 (gratis)', feitas: (a: number, b: number) => `${a} de ${b} sesiones completadas`, concluida: 'completada', aulasNivel: (n: number) => `${n} lecciones`, retomarKicker: (c: string) => `Continuar ${c}`,
