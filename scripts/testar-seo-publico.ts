@@ -25,6 +25,13 @@ assert.ok(home.includes('Experimentar duas aulas grátis'));
 assert.ok(!home.includes('R$ 500'));
 assert.ok(!home.includes('Escolha o idioma</strong>'));
 assert.ok(html('/cursos').includes('<h1>Cursos</h1>'));
+// Aulas ao vivo de russo: pt e en indexáveis, es fora do índice; sem preço ou horário inventado.
+const rpt = html('/russo-online'), ren = html('/en/russo-online'), res = html('/es/russo-online');
+assert.ok(rpt.includes('<h1>Aulas de russo online com professor</h1>') && rpt.includes('Olimpíada Internacional Online'));
+assert.ok(ren.includes('<h1>Online Russian lessons with a teacher</h1>') && ren.includes('"@type":"Service"'));
+assert.ok(!/noindex/.test(rpt) && !/noindex/.test(ren), 'pt e en indexáveis');
+assert.ok(/noindex/.test(res), 'es não indexa a página de aulas');
+assert.ok(fs.readFileSync('dist/sitemap.xml', 'utf8').includes('/russo-online'));
 assert.ok(html('/en').includes('Language courses for English speakers'));
 assert.ok(!html('/en').includes('Brazilian learners'));
 assert.ok(html('/en').includes('Brazilian Portuguese, French and Russian explained in English'));

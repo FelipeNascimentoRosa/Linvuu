@@ -36,7 +36,7 @@ const alvoPadrao = (g) => {
 // sem noindex desde a correção de integridade hreflang), por isso entra com <loc> próprio em todas.
 grupos.push({ p: '/', em: todos() }, { p: '/cursos', em: todos(), anot: todos() }, { p: '/assinatura', em: todos(), anot: todos() });
 // Livros e Sobre: só em português. Cada capítulo de amostra publicado (content/livros/<idioma>/cap-NN.json) entra no sitemap.
-grupos.push({ p: '/sobre', em: ['pt-BR'] }, { p: '/por-que-linvuu', em: ['pt-BR'] }, { p: '/contato', em: ['pt-BR'] }, { p: '/ex-alunos-udemy', em: ['pt-BR'] }, { p: '/livros', em: ['pt-BR'] });
+grupos.push({ p: '/russo-online', em: ['pt-BR', 'en'], anot: ['pt-BR', 'en'] }, { p: '/sobre', em: ['pt-BR'] }, { p: '/por-que-linvuu', em: ['pt-BR'] }, { p: '/contato', em: ['pt-BR'] }, { p: '/ex-alunos-udemy', em: ['pt-BR'] }, { p: '/livros', em: ['pt-BR'] });
 const dirLivros = path.join(raiz, 'content', 'livros');
 if (fs.existsSync(dirLivros)) for (const id of fs.readdirSync(dirLivros).sort()) {
   // Apenas os capítulos de amostra: a presença de outro arquivo não o torna público.
