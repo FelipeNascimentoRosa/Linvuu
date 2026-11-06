@@ -66,6 +66,26 @@ for (const u of urls) {
   assert.ok(!m.semIndice, u);
   assert.equal(u, 'https://linvuu.com.br' + m.caminho, u);
 }
+// Sentido inverso (regra única de indexação): toda página de curso, gramática ou sessão que o servidor declara
+// indexável está no sitemap, e o cluster hreflang do sitemap é exatamente o que o servidor publica no HTML.
+const blocos = [...sitemap.matchAll(/<url><loc>(.*?)<\/loc>([\s\S]*?)<\/url>/g)];
+const anotSitemap = new Map(blocos.map((b) => [b[1], [...b[2].matchAll(/hreflang="([^"]+)" href="([^"]+)"/g)].map((x) => `${x[1]}=${x[2]}`).sort().join(' ')]));
+let indexaveis = 0;
+for (const loc of LOCALES) for (const c of d.cursos) {
+  const rotas = [`/curso/${c.id}`, `/gramatica/${c.id}`, ...Array.from({ length: SESSOES_GRATIS }, (_, i) => `/curso/${c.id}/dia/${i + 1}`)];
+  for (const r of rotas) {
+    const p = caminhoEm(loc.codigo, r);
+    const m = metaDaRota(p, d);
+    const u = 'https://linvuu.com.br' + p;
+    if (m.status !== 200 || m.semIndice) { assert.ok(!anotSitemap.has(u), `noindex fora do sitemap: ${u}`); continue; }
+    indexaveis++;
+    assert.ok(anotSitemap.has(u), `indexável ausente do sitemap: ${u}`);
+    const h = aplicarMeta(base, m, 'https://linvuu.com.br', d);
+    const noHtml = [...h.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)"/g)].map((x) => `${x[1]}=${x[2]}`).sort().join(' ');
+    assert.equal(anotSitemap.get(u), noHtml, `hreflang igual no sitemap e no HTML: ${u}`);
+  }
+}
+assert.ok(indexaveis > 0);
 for (const p of ['/curso/en', '/curso/en/dia/1', '/gramatica/en', '/desconhecida']) {
   const m = metaDaRota(p, null);
   assert.equal(m.status, 503, 'falha dos metadados não vira soft 404/200');

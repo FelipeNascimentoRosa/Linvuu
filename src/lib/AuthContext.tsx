@@ -4,6 +4,7 @@ import { garantirPerfil } from './perfil';
 import { comPrefixo } from '../i18n';
 import { definirUsuarioProgresso } from './progresso';
 import { limparAudioPrivado } from './audio';
+import { analytics } from './analytics';
 
 export interface Usuario { uid: string; nome: string; email: string; foto: string | null }
 
@@ -57,7 +58,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     usuario, carregando, configurado: authConfigurado,
     entrarComGoogle: async () => {
       const { auth, m } = await carregarAuth();
-      await m.signInWithPopup(auth, new m.GoogleAuthProvider());
+      const r = await m.signInWithPopup(auth, new m.GoogleAuthProvider());
+      if (m.getAdditionalUserInfo(r)?.isNewUser) void analytics.capture('signup_completed', { page: 'signup' });
     },
     entrarComEmail: async (email, senha) => {
       const { auth, m } = await carregarAuth();
@@ -75,6 +77,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         throw e;
       }
       setUsuario(paraUsuario(cred.user));
+      void analytics.capture('signup_completed', { page: 'signup' });
       // Em segundo plano: se o Firestore demorar ou recusar, a conta já está criada e o perfil é refeito no próximo login.
       void garantirPerfil(cred.user.uid, paraUsuario(cred.user).nome, cred.user.email ?? email.trim())
         .finally(() => { criandoConta.current = false; });
