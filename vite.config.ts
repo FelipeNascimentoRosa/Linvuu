@@ -3,6 +3,37 @@ import {defineConfig, loadEnv} from 'vite';
 import path from 'node:path';
 import fs from 'node:fs';
 
+/**
+ * Fontes, no site e no app: o Linvuu só ensina idiomas em alfabeto latino e cirílico, então as fontes de grego e
+ * vietnamita saem do pacote. No site, as duas fontes latinas da primeira dobra (títulos e texto) ganham preload:
+ * o navegador as busca junto com o CSS, em vez de só depois de lê-lo (menos tempo com a fonte substituta).
+ */
+function fontesDoSite(preload: boolean) {
+  return {
+    name: 'linvuu-fontes',
+    generateBundle(_options: unknown, bundle: Record<string, { type: string; fileName: string; source?: unknown }>) {
+      const fontesFora: string[] = [];
+      for (const [nome, item] of Object.entries(bundle)) {
+        if (item.type === 'asset' && /\.woff2$/.test(nome) && /-(?:greek|greek-ext|vietnamese)-/.test(nome)) { fontesFora.push(path.basename(nome)); delete bundle[nome]; }
+      }
+      if (!fontesFora.length) return;
+      for (const item of Object.values(bundle)) {
+        if (item.type !== 'asset' || !/\.css$/.test(item.fileName) || typeof item.source !== 'string') continue;
+        item.source = item.source.replace(/@font-face\{[^{}]*\}/g, (bloco) => (fontesFora.some((f) => bloco.includes(f)) ? '' : bloco));
+      }
+    },
+    transformIndexHtml: {
+      order: 'post' as const,
+      handler(html: string, ctx: { bundle?: Record<string, { fileName: string }> }) {
+        if (!preload || !ctx.bundle) return html;
+        const arquivos = Object.values(ctx.bundle).map((x) => x.fileName).filter((f) => /assets\/(?:newsreader-latin-opsz-normal|source-sans-3-latin-wght-normal)-[\w-]+\.woff2$/.test(f));
+        const links = arquivos.map((f) => `<link rel="preload" href="/${f}" as="font" type="font/woff2" crossorigin>`).join('\n    ');
+        return links ? html.replace('</head>', `    ${links}\n  </head>`) : html;
+      },
+    },
+  };
+}
+
 export default defineConfig(({ mode }) => {
   const env = { ...loadEnv(mode, process.cwd(), ''), ...process.env };
   const alvo = env.VITE_ALVO || 'website';
@@ -35,8 +66,9 @@ export default defineConfig(({ mode }) => {
   return {
   define: { 'import.meta.env.VITE_ALVO': JSON.stringify(alvo) },
   resolve: { alias: { '@plataforma': path.resolve('src/plataforma', alvo) } },
-  build: { outDir: apk ? 'dist-apk' : 'dist', copyPublicDir: !apk },
-  plugins: [react(), ...(apk ? [{
+  // manifest (só no site): o servidor usa para pedir antecipadamente os módulos da página aberta (modulepreload por rota).
+  build: { outDir: apk ? 'dist-apk' : 'dist', copyPublicDir: !apk, manifest: !apk },
+  plugins: [react(), fontesDoSite(!apk), ...(apk ? [{
     name: 'publico-apk-sem-audio',
     enforce: 'pre' as const,
     // O APK não é indexado: tira metatags de SEO/compartilhamento e o texto pré-renderizado para buscadores.
@@ -52,7 +84,7 @@ export default defineConfig(({ mode }) => {
     transform(code, id) {
       const arq = id.split('?')[0];
       // O app só leva a capa de 600 px: tira a variante de 900 px do srcSet e do tamanho grande.
-      if (arq === path.resolve('src/components/Vitrine.tsx') || arq === path.resolve('src/pages/Livros.tsx')) {
+      if (arq === path.resolve('src/pages/Livros.tsx')) {
         return { code: code.replace(/, \$\{[^`]*?\.replace\('-600', '-900'\)\} 900w/g, '').replace('-${tamanho}', '-600'), map: null };
       }
       if(arq===path.resolve('src/main.tsx')) return { code: `import { prepararArmazenamento } from './plataforma/apk/armazenamento';\nawait prepararArmazenamento();\n${code}`, map:null };
@@ -72,17 +104,6 @@ export default defineConfig(({ mode }) => {
       }
     },
     generateBundle(_options, bundle) {
-      // O Linvuu só ensina idiomas em alfabeto latino e cirílico: fontes de grego e vietnamita não servem ao app.
-      const fontesFora: string[] = [];
-      for (const [nome, item] of Object.entries(bundle)) {
-        if (item.type === 'asset' && /\.woff2$/.test(nome) && /-(?:greek|greek-ext|vietnamese)-/.test(nome)) { fontesFora.push(path.basename(nome)); delete bundle[nome]; }
-      }
-      if (fontesFora.length) {
-        for (const item of Object.values(bundle)) {
-          if (item.type !== 'asset' || !/\.css$/.test(item.fileName) || typeof item.source !== 'string') continue;
-          item.source = item.source.replace(/@font-face\{[^{}]*\}/g, (bloco) => (fontesFora.some((f) => bloco.includes(f)) ? '' : bloco));
-        }
-      }
       for (const chunk of Object.values(bundle)) {
         if (chunk.type !== 'chunk') continue;
         for (const id of Object.keys(chunk.modules)) {

@@ -15,7 +15,7 @@ import { credencialConfigurada } from './server/firebase-admin';
 import { fecharApi, registrarErros, registrarSeguranca } from './server/seguranca';
 import { registrarProntidao } from './server/prontidao';
 import { registrarAssetLinks } from './server/assetlinks';
-import { aplicarMeta, carregarDadosMeta, metaDaRota } from './src/lib/metaRota.ts';
+import { aplicarMeta, carregarDadosMeta, metaDaRota, metaParaNavegador } from './src/lib/metaRota.ts';
 import { SITE_URL } from './src/config/site.ts';
 
 dotenv.config();
@@ -52,6 +52,15 @@ async function startServer() {
   registrarMedicao(app);
   registrarNewsletter(app);
   registrarExclusao(app);
+  // Metadados de cada rota (título, descrição, hreflang, conteúdo pré-renderizado): a mesma fonte para o HTML e para /api/meta.
+  const dadosMeta = process.env.NODE_ENV === 'production' ? carregarDadosMeta(__dirname) : null;
+  // Navegação dentro do site: o navegador pede ao servidor o título, robots, canonical e hreflang da nova rota,
+  // em vez de calcular os seus — uma fonte só, igual ao HTML que o Google recebe nessa URL.
+  app.get('/api/meta', (req: Request, res: Response) => {
+    const p = String(req.query.p ?? '');
+    if (!p.startsWith('/') || p.length > 300 || p.startsWith('//')) { res.status(400).json({ error: 'Caminho inválido.' }); return; }
+    res.set('Cache-Control', 'public, max-age=300').set('X-Robots-Tag', 'noindex').json(metaParaNavegador(metaDaRota(p, dadosMeta), SITE_URL, dadosMeta));
+  });
   fecharApi(app);
 
   // -------------------------------------------------------------
@@ -140,8 +149,35 @@ async function startServer() {
       setHeaders: cabecalhosCache,
     }));
     // Cada rota recebe o HTML com título, descrição e endereço próprios (prévia de compartilhamento correta) e o status certo (404 de verdade).
-    const dadosMeta = carregarDadosMeta(__dirname);
     let htmlBase: string | null = null;
+    // A página de cada rota é carregada sob demanda (React.lazy): sem aviso, o navegador só descobre o módulo dela depois
+    // de baixar e executar o JS principal. Aqui o HTML já pede esses módulos (modulepreload), em paralelo.
+    const manifesto = (() => { try { return JSON.parse(fs.readFileSync(path.resolve(__dirname, 'dist', '.vite', 'manifest.json'), 'utf8')) as Record<string, { file: string; imports?: string[]; isEntry?: boolean }>; } catch { return null; } })();
+    const PAGINAS: [RegExp, string][] = [
+      [/^\/curso\/[a-z]{2}$/, 'src/plataforma/website/Curso.tsx'],
+      [/^\/curso\/[a-z]{2}\/dia\/\d+$/, 'src/plataforma/website/Dia.tsx'],
+      [/^\/assinatura$/, 'src/plataforma/website/Assinatura.tsx'],
+      [/^\/gramatica(\/[a-z]{2})?$/, 'src/pages/Gramatica.tsx'],
+      [/^\/livros(\/.*)?$/, 'src/pages/Livros.tsx'],
+      [/^\/(termos|privacidade)$/, 'src/plataforma/website/Legal.tsx'],
+      [/^\/sobre$/, 'src/pages/Sobre.tsx'], [/^\/por-que-linvuu$/, 'src/pages/PorQue.tsx'], [/^\/contato$/, 'src/pages/Contato.tsx'], [/^\/portugues$/, 'src/pages/Portugues.tsx'],
+    ];
+    const preloadCache = new Map<string, string>();
+    const comPreloadDaRota = (html: string, caminho: string) => {
+      if (!manifesto) return html;
+      const semIdioma = caminho.replace(/^\/(en|es)(?=\/|$)/, '') || '/';
+      const chave = PAGINAS.find(([re]) => re.test(semIdioma))?.[1];
+      if (!chave || !manifesto[chave]) return html;
+      let links = preloadCache.get(chave);
+      if (links === undefined) {
+        const visto = new Set<string>(), arquivos: string[] = [];
+        const juntar = (k: string) => { const c = manifesto[k]; if (!c || visto.has(k) || c.isEntry) return; visto.add(k); arquivos.push(c.file); (c.imports ?? []).forEach(juntar); };
+        juntar(chave);
+        links = arquivos.filter((f) => !html.includes(`/${f}"`)).map((f) => `<link rel="modulepreload" crossorigin href="/${f}">`).join('');
+        preloadCache.set(chave, links);
+      }
+      return links ? html.replace('</head>', `${links}</head>`) : html;
+    };
     // Arquivo de /assets que não existe mais (aba aberta antes de um deploy) deve dar 404 de verdade, não o HTML do site.
     app.get('/assets/*arquivo', (_req: Request, res: Response) => { res.status(404).type('text/plain').send('Not found'); });
     // Endereços que mudaram de lugar: redirecionamento permanente (o Google transfere a relevância).
@@ -151,11 +187,16 @@ async function startServer() {
     app.get('/preco', (_req: Request, res: Response) => { res.redirect(301, '/assinatura'); });
     // O curso de português para estrangeiros não existe no site em português: vai para a versão em inglês.
     app.get(/^\/curso\/br(\/.*)?$/, (req: Request, res: Response) => { res.redirect(301, `/en${req.path}`); });
+    // Variante com barra no fim (/cursos/): redireciona para o endereço canônico em vez de servir uma cópia.
+    app.get(/^\/.+\/$/, (req: Request, res: Response) => {
+      const q = req.originalUrl.indexOf('?');
+      res.redirect(301, req.path.replace(/\/+$/, '') + (q >= 0 ? req.originalUrl.slice(q) : ''));
+    });
     app.get('/{*pagina}', (req: Request, res: Response) => {
       res.setHeader('Cache-Control', 'no-cache');
       htmlBase ??= fs.readFileSync(path.resolve(__dirname, 'dist', 'index.html'), 'utf8');
       const m = metaDaRota(req.path, dadosMeta);
-      res.status(m.status).type('html').send(aplicarMeta(htmlBase, m, SITE_URL, dadosMeta));
+      res.status(m.status).type('html').send(comPreloadDaRota(aplicarMeta(htmlBase, m, SITE_URL, dadosMeta), req.path));
     });
   } else {
     const vite = await createViteServer({

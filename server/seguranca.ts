@@ -44,7 +44,7 @@ export function cabecalhos(producao: boolean) {
     res.setHeader('Cross-Origin-Resource-Policy', 'same-site');
     res.setHeader('X-Permitted-Cross-Domain-Policies', 'none');
     if (producao) {
-      res.setHeader('Strict-Transport-Security', 'max-age=15552000'); // 180 dias; sem includeSubDomains nem preload
+      res.setHeader('Strict-Transport-Security', 'max-age=31536000; includeSubDomains'); // 1 ano; único subdomínio em uso é www (HTTPS, Cloudflare). Sem preload: difícil de reverter
       res.setHeader(nomeCSP, csp);
     }
     next();

@@ -5,7 +5,7 @@ import { COMECAR } from './comecar.ts';
 import { HOME_BR } from '../config/oferta-publica.ts';
 import fs from 'node:fs';
 import path from 'node:path';
-import { SESSOES_GRATIS, SESSOES_POR_AULA, PRECO_MENSAL, PRECO_TRIMESTRAL, PRECO_TRIMESTRAL_PIX, PRECO_ANUAL } from '../config/planos.ts';
+import { SESSOES_GRATIS, SESSOES_POR_AULA, PRECO_MENSAL, PRECO_TRIMESTRAL, PRECO_TRIMESTRAL_PIX, PRECO_ANUAL, CENTAVOS, precoSchema } from '../config/planos.ts';
 import { LOCALES, Locale, caminhoEm, localeDoCaminho, semPrefixo } from '../i18n/locales.ts';
 import { EMAIL_OFICIAL } from '../config/site.ts';
 import { CONTATO, EX_ALUNOS, POR_QUE } from './institucional.ts';
@@ -23,6 +23,25 @@ export type DadosMeta = {
   indice: Record<string, { total: number; grupos?: { aula: number; titulo: string; dias: [number, number] }[]; fonte?: string; tr?: Record<string, { g: Record<string, string>; aulas?: number[] }> }>;
 };
 export type MetaRota = { status: number; titulo?: string; descricao?: string; caminho: string; semIndice?: boolean; jsonld?: object[]; locale?: Locale; /** idiomas em que a página existe (hreflang); padrão: os três */ em?: Locale['codigo'][] };
+
+/**
+ * Regra única de indexação de cursos (usada pelo servidor, por scripts/seo.mjs e pelos testes):
+ * um curso só é página própria num idioma quando TODAS as aulas estão explicadas nesse idioma.
+ * Curso parcialmente traduzido continua acessível, com aviso, mas sem entrar na busca nem no hreflang.
+ */
+export function explicacaoCompleta(d: DadosMeta, id: string, explicacao: string): boolean {
+  const ind = d.indice[id];
+  if (!ind) return false;
+  if ((ind.fonte ?? 'pt') === explicacao) return true;
+  const feitas = new Set(ind.tr?.[explicacao]?.aulas ?? []);
+  const grupos = ind.grupos ?? [];
+  return grupos.length > 0 && grupos.every((g) => feitas.has(g.aula));
+}
+/** A gramática existe num idioma quando é o idioma-fonte do curso ou quando há o arquivo traduzido. */
+export function gramaticaExisteEm(d: DadosMeta, id: string, explicacao: string): boolean {
+  if ((d.indice[id]?.fonte ?? 'pt') === explicacao) return true;
+  return !!d.raiz && /^[a-z]{2}$/.test(id) && fs.existsSync(path.join(d.raiz, 'content', 'gramatica', `${id}.${explicacao}.json`));
+}
 
 export function carregarDadosMeta(raiz: string): DadosMeta | null {
   try {
@@ -60,22 +79,25 @@ function carregarLivros(raiz: string): DadosMeta['livros'] {
 const TX = {
   'pt-BR': {
     cursos: 'Cursos', entrar: 'Entrar', cadastro: 'Cadastre-se', assinatura: 'Assinatura', priv: 'Política de privacidade', privD: 'Quais dados a Linvuu coleta, para quê e quais são os seus direitos pela LGPD.', termos: 'Termos de uso', termosD: 'Regras de uso do site e dos cursos da Linvuu.',
-    pt: 'Português para estrangeiros · Brazilian Portuguese', ptD: 'Curso de português do Brasil para estrangeiros, do A1 ao B1, com aulas explicadas em inglês ou espanhol. 62 aulas.',
-    curso: (n: string) => `${n}: curso para quem fala português, do zero ao B1`, cursoJ: (n: string) => `${n} para quem fala português`, inicio: 'Início',
+    pt: 'Português para estrangeiros · Brazilian Portuguese', ptNav: 'Português para estrangeiros', ptD: 'Curso de português do Brasil para estrangeiros, do A1 ao B1, com aulas explicadas em inglês ou espanhol. 62 aulas.',
+    ementa: (n: number) => `As ${n} aulas do curso`, ant: (n: number) => `← Sessão ${n}`, seg: (n: number) => `Sessão ${n} →`,
+    curso: (n: string) => `${n}: curso para quem fala português, do zero ao B1`, cursoPrep: (n: string) => `${n}: curso para quem fala português`, cursoJ: (n: string) => `${n} para quem fala português`, inicio: 'Início',
     aula: (a: number, t: string, n: string) => `Aula ${a}: ${t} · ${n}`, aulaD: (n: string, a: number, t: string, s: number, tot: number, lingua: string) => `${n}, aula ${a} (${t}), sessão ${s} de ${tot}: explicação em ${lingua}, áudio em cada frase e exercícios com correção.`,
     sessao: (s: number, n: string) => `Sessão ${s} · ${n}`, gram: 'Gramática', gramC: (n: string) => `Gramática: ${n.toLowerCase()}`, gramD: (n: string, lingua: string) => `Gramática de ${n.toLowerCase()} explicada em ${lingua}, tópico por tópico, com tabelas, exemplos e erros comuns.`, nao: 'Página não encontrada',
   },
   en: {
     cursos: 'Courses', entrar: 'Sign in', cadastro: 'Sign up', assinatura: 'Subscription', priv: 'Privacy policy', privD: 'What data Linvuu collects, why, and what your rights are.', termos: 'Terms of use', termosD: 'Rules for using the Linvuu site and courses.',
-    pt: 'Brazilian Portuguese for English speakers, A1 to B1', ptD: 'Learn Brazilian Portuguese from zero to B1 in 62 lessons explained in English, with audio, dialogues, grammar and exercises.',
-    curso: (n: string) => `Learn ${n} online, from zero to B1: course for English speakers`, cursoJ: (n: string) => `${n} for English speakers`, inicio: 'Home',
+    pt: 'Brazilian Portuguese for English speakers, A1 to B1', ptNav: 'Brazilian Portuguese', ptD: 'Learn Brazilian Portuguese from zero to B1 in 62 lessons explained in English, with audio, dialogues, grammar and exercises.',
+    ementa: (n: number) => `All ${n} lessons in the course`, ant: (n: number) => `← Session ${n}`, seg: (n: number) => `Session ${n} →`,
+    curso: (n: string) => `Learn ${n} online, from zero to B1: course for English speakers`, cursoPrep: (n: string) => `${n} course: English edition in preparation`, cursoJ: (n: string) => `${n} for English speakers`, inicio: 'Home',
     aula: (a: number, t: string, n: string) => `Lesson ${a}: ${t} · ${n}`, aulaD: (n: string, a: number, t: string, s: number, tot: number, lingua: string) => `${n}, lesson ${a} (${t}), session ${s} of ${tot}: explained in ${lingua}, with audio for every sentence and exercises.`,
     sessao: (s: number, n: string) => `Session ${s} · ${n}`, gram: 'Grammar', gramC: (n: string) => `${n} grammar for English speakers`, gramD: (n: string, lingua: string) => `${n} grammar explained in ${lingua}, topic by topic, with tables, examples and common mistakes. Free topics included.`, nao: 'Page not found',
   },
   es: {
     cursos: 'Cursos', entrar: 'Entrar', cadastro: 'Regístrate', assinatura: 'Suscripción', priv: 'Política de privacidad', privD: 'Qué datos recoge Linvuu, para qué y cuáles son tus derechos.', termos: 'Términos de uso', termosD: 'Reglas de uso del sitio y de los cursos de Linvuu.',
-    pt: 'Portugués de Brasil para hispanohablantes, de A1 a B1', ptD: 'Portugués de Brasil de cero a B1 en 62 lecciones: las 2 primeras y la gramática, en español; el resto, explicado en inglés. Audio y ejercicios.',
-    curso: (n: string) => `${n} para hispanohablantes, de cero a B1`, cursoJ: (n: string) => `${n} para hispanohablantes`, inicio: 'Inicio',
+    pt: 'Portugués de Brasil para hispanohablantes, de A1 a B1', ptNav: 'Portugués de Brasil', ptD: 'Portugués de Brasil de cero a B1 en 62 lecciones: las 2 primeras y la gramática, en español; el resto, explicado en inglés. Audio y ejercicios.',
+    ementa: (n: number) => `Las ${n} lecciones del curso`, ant: (n: number) => `← Sesión ${n}`, seg: (n: number) => `Sesión ${n} →`,
+    curso: (n: string) => `${n} para hispanohablantes, de cero a B1`, cursoPrep: (n: string) => `${n}: edición en español en preparación`, cursoJ: (n: string) => `${n} para hispanohablantes`, inicio: 'Inicio',
     aula: (a: number, t: string, n: string) => `Lección ${a}: ${t} · ${n}`, aulaD: (n: string, a: number, t: string, s: number, tot: number, lingua: string) => `${n}, lección ${a} (${t}), sesión ${s} de ${tot}: explicado en ${lingua}, con audio en cada frase y ejercicios.`,
     sessao: (s: number, n: string) => `Sesión ${s} · ${n}`, gram: 'Gramática', gramC: (n: string) => `Gramática: ${n.toLowerCase()}`, gramD: (n: string, lingua: string) => `Gramática de ${n.toLowerCase()} explicada en ${lingua}, tema por tema, con tablas, ejemplos y errores frecuentes.`, nao: 'Página no encontrada',
   },
@@ -147,10 +169,10 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
   };
   if (fixas[p]) {
     const jsonld: object[] = [];
-    if (p === '/cursos' && d) jsonld.push({ '@context': 'https://schema.org', '@type': 'ItemList', itemListElement: d.cursos.filter((c) => c.status !== 'em-breve' && c.id !== loc.cursoOculto).map((c, i) => ({ '@type': 'ListItem', position: i + 1, item: { '@type': 'Course', name: c.nome, description: c.descricao, url: `${SITE}${loc.prefixo}/curso/${c.id}`, provider: { '@id': ORG_ID, '@type': 'EducationalOrganization', name: 'Linvuu' } } })) });
+    if (p === '/cursos' && d) jsonld.push({ '@context': 'https://schema.org', '@type': 'ItemList', itemListElement: d.cursos.filter((c) => c.status !== 'em-breve' && c.id !== loc.cursoOculto && explicacaoCompleta(d, c.id, loc.explicacao)).map((c, i) => ({ '@type': 'ListItem', position: i + 1, item: { '@type': 'Course', name: c.nome, description: c.descricao, url: `${SITE}${loc.prefixo}/curso/${c.id}`, provider: { '@id': ORG_ID, '@type': 'EducationalOrganization', name: 'Linvuu' } } })) });
     if (p === '/assinatura' && loc.codigo === 'pt-BR') jsonld.push(
-      { '@context': 'https://schema.org', '@type': 'Product', name: 'Assinatura Linvuu', description: fixas[p].descricao, image: `${SITE}/brand/linvuu-logo.png`, offers: [ ['Mensal', '139.00'], ['Trimestral Pix', '291.90'], ['Trimestral cartão ou boleto', '417.00'], ['Anual', '999.00'] ].map(([name, price]) => ({ '@type': 'Offer', name, price, priceCurrency: 'BRL', availability: 'https://schema.org/InStock', url: `${SITE}/assinatura` })) },
-      { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'Posso experimentar sem cartão?', acceptedAnswer: { '@type': 'Answer', text: 'As duas primeiras aulas de cada curso são gratuitas, sem cartão.' } }, { '@type': 'Question', name: 'Qual é o desconto no Pix?', acceptedAnswer: { '@type': 'Answer', text: 'O plano trimestral custa R$ 291,90 no Pix, 30% de desconto sobre R$ 417.' } }] },
+      { '@context': 'https://schema.org', '@type': 'Product', name: 'Assinatura Linvuu', description: fixas[p].descricao, image: `${SITE}/brand/linvuu-logo.png`, brand: { '@type': 'Brand', name: 'Linvuu' }, offers: [ ['Mensal', precoSchema(CENTAVOS.mensal)], ['Trimestral Pix', precoSchema(CENTAVOS['trimestral-pix'])], ['Trimestral cartão ou boleto', precoSchema(CENTAVOS.trimestral)], ['Anual', precoSchema(CENTAVOS.anual)] ].map(([name, price]) => ({ '@type': 'Offer', name, price, priceCurrency: 'BRL', availability: 'https://schema.org/InStock', url: `${SITE}/assinatura`, hasMerchantReturnPolicy: POLITICA_REEMBOLSO })) },
+      { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'Posso experimentar sem cartão?', acceptedAnswer: { '@type': 'Answer', text: 'As duas primeiras aulas de cada curso são gratuitas, sem cartão.' } }, { '@type': 'Question', name: 'Qual é o desconto no Pix?', acceptedAnswer: { '@type': 'Answer', text: `O plano trimestral custa ${PRECO_TRIMESTRAL_PIX} no Pix, 30% de desconto sobre ${PRECO_TRIMESTRAL}.` } }] },
     );
     if (p === '/russo-online' && loc.codigo !== 'es') jsonld.push({ '@context': 'https://schema.org', '@type': 'Service', name: fixas[p].titulo, description: fixas[p].descricao, serviceType: loc.codigo === 'en' ? 'Online Russian language lessons' : 'Aulas de russo online', inLanguage: loc.codigo, provider: { '@id': ORG_ID }, areaServed: 'Worldwide', url: `${SITE}${loc.prefixo}/russo-online` });
     return { status: 200, caminho: p, ...fixas[p], jsonld };
@@ -164,11 +186,14 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     if (!c) return naoEncontrada(p, loc);
     const url = `${SITE}${caminhoEm(loc.codigo, p)}`;
     const aulas = d.indice[c.id]?.grupos?.length ?? 0;
+    // Indexável só onde o curso existe de verdade: oferecido a esse público e com todas as aulas explicadas na língua dele.
+    const oferecidoEm = (l: Locale) => c.status !== 'em-breve' && l.cursoOculto !== c.id && explicacaoCompleta(d, c.id, l.explicacao);
     return {
-      status: 200, caminho: p, titulo: tx.curso(c.nome), descricao: c.descricao,
-      // o curso escrito para o próprio público deste idioma (ex.: inglês no site em inglês) não entra na busca
-      semIndice: c.status === 'em-breve' || c.id === loc.cursoOculto || undefined,
-      em: LOCALES.filter((l) => l.cursoOculto !== c.id).map((l) => l.codigo),
+      status: 200, caminho: p, titulo: oferecidoEm(loc) || c.id === loc.cursoOculto ? tx.curso(c.nome) : tx.cursoPrep(c.nome), descricao: c.descricao,
+      // o curso escrito para o próprio público deste idioma (ex.: inglês no site em inglês) não entra na busca;
+      // nem o curso cuja edição neste idioma ainda está incompleta (prometeria explicações que não existem).
+      semIndice: !oferecidoEm(loc) || undefined,
+      em: LOCALES.filter(oferecidoEm).map((l) => l.codigo),
       jsonld: [
         // Dados de curso do Google (Course info): provedor, oferta (2 aulas grátis, depois assinatura) e instância online no ritmo do aluno.
         {
@@ -176,7 +201,7 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
           teaches: c.id === 'br' ? 'Brazilian Portuguese' : c.nome, educationalLevel: 'A1–B1 (CEFR)', isAccessibleForFree: false,
           ...(aulas ? { coursePrerequisites: 'None', timeRequired: `PT${aulas * 2}H` } : {}),
           provider: { '@type': 'EducationalOrganization', '@id': ORG_ID, name: 'Linvuu', url: SITE, logo: `${SITE}/brand/linvuu-logo.png` },
-          offers: [{ '@type': 'Offer', category: 'Subscription', price: 139, priceCurrency: 'BRL', availability: 'https://schema.org/InStock', url: `${SITE}${loc.prefixo}/assinatura` }],
+          offers: [{ '@type': 'Offer', category: 'Subscription', price: CENTAVOS.mensal / 100, priceCurrency: 'BRL', availability: 'https://schema.org/InStock', url: `${SITE}${loc.prefixo}/assinatura` }],
           hasCourseInstance: [{ '@type': 'CourseInstance', courseMode: 'Online', courseWorkload: 'PT30M', courseSchedule: { '@type': 'Schedule', repeatFrequency: 'Daily', repeatCount: aulas * 4 } }],
         },
         { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: tx.inicio, item: `${SITE}${loc.prefixo || '/'}` }, { '@type': 'ListItem', position: 2, name: tx.cursos, item: `${SITE}${loc.prefixo}/cursos` }, { '@type': 'ListItem', position: 3, name: c.nome, item: url }] },
@@ -216,13 +241,15 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     const cursoUrl = `${SITE}${caminhoEm(loc.codigo, `/curso/${c.id}`)}`;
     // A descrição nomeia a língua em que a gramática está de fato: a língua da página, quando existe o arquivo de gramática nela; senão, a língua em que o curso foi escrito.
     const fonteGram = d.indice[c.id]?.fonte ?? 'pt';
-    const temGram = fonteGram === loc.explicacao || (!!d.raiz && fs.existsSync(path.join(d.raiz, 'content', 'gramatica', `${c.id}.${loc.explicacao}.json`)));
+    const temGram = gramaticaExisteEm(d, c.id, loc.explicacao);
+    const gramEm = (l: Locale) => l.cursoOculto !== c.id && c.status !== 'em-breve' && gramaticaExisteEm(d, c.id, l.explicacao);
     const descGram = tx.gramD(c.nome, LINGUAS[loc.codigo][temGram ? loc.explicacao : fonteGram] ?? '');
     // Alternates só para os públicos a quem o curso é oferecido (mesma regra da página do curso):
     // a gramática de uma língua explicada ao próprio público dela não é uma versão de idioma —
     // declarar esse alternate apontava para a página gémea marcada noindex.
     return {
-      status: 200, caminho: p, titulo: tx.gramC(c.nome), descricao: descGram, semIndice: c.id === loc.cursoOculto || c.status === 'em-breve' || undefined, em: LOCALES.filter((l) => l.cursoOculto !== c.id).map((l) => l.codigo),
+      // Gramática que ainda não existe neste idioma não é página própria (o conteúdo seria o original, em outra língua).
+      status: 200, caminho: p, titulo: tx.gramC(c.nome), descricao: descGram, semIndice: !gramEm(loc) || undefined, em: LOCALES.filter(gramEm).map((l) => l.codigo),
       jsonld: [
         // A página de gramática é o recurso de referência do curso: tópicos e tabelas cuja descrição nomeia a língua real das explicações.
         { '@context': 'https://schema.org', '@type': 'LearningResource', name: tx.gramC(c.nome), description: descGram, url, inLanguage: loc.codigo, learningResourceType: 'Grammar reference', teaches: c.nome, isPartOf: { '@type': 'Course', name: tx.cursoJ(c.nome), url: cursoUrl }, provider: { '@id': ORG_ID } },
@@ -233,6 +260,22 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
   return naoEncontrada(p, loc);
 }
 
+
+/**
+ * Navegação global do HTML pré-renderizado, na língua da página.
+ * Até 2026-11-04 só o português a tinha: sem menu, as aulas e gramáticas em inglês ficavam com
+ * 1 único link interno (o de regresso ao curso), contra 7 nas aulas em português (auditoria SEO).
+ * Nos outros idiomas os destinos são os que existem e são indexáveis nessa língua: Livros, Sobre,
+ * Por-que-Linvuu e Contato só existem em português (são noindex nas outras), por isso não entram —
+ * o rodapé do site segue a mesma regra (Footer.tsx só os mostra em pt-BR).
+ */
+function menuPreRender(loc: Locale): string {
+  if (loc.codigo === 'pt-BR') return '<nav aria-label="Principal"><a href="/cursos">Cursos</a> · <a href="/livros">Livros</a> · <a href="/sobre">Quem somos</a> · <a href="/por-que-linvuu">Por que estudar com a Linvuu?</a> · <a href="/contato">Contato</a> · <a href="/privacidade">Privacidade</a></nav>';
+  const tx = TX[loc.codigo];
+  const a = (href: string, texto: string) => `<a href="${esc(caminhoEm(loc.codigo, href))}">${esc(texto)}</a>`;
+  const itens = [a('/', tx.inicio), a('/cursos', tx.cursos), a('/gramatica', tx.gram), a('/portugues', tx.ptNav), a('/termos', tx.termos), a('/privacidade', tx.priv)];
+  return `<nav aria-label="${loc.codigo === 'en' ? 'Main' : 'Principal'}">${itens.join(' · ')}</nav>`;
+}
 
 /**
  * Conteúdo mínimo dentro de <div id="root"> para quem não executa JavaScript (ou ainda não renderizou):
@@ -250,7 +293,7 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
   let corpo = '';
   if (base === '/' || base === '/cursos') {
     const home = HOME[loc.codigo];
-    corpo = cabeca(base === '/' && loc.codigo === 'pt-BR' ? HOME_BR.titulo : (base === '/cursos' ? tx.cursos : home.titulo) ?? 'Linvuu · Idiomas para quem fala português', m.descricao ?? home.descricao ?? 'Cursos de inglês, espanhol, alemão, francês, italiano e russo para quem fala português.') + `<h2>${esc(tx.cursos)}</h2>` + li(visiveis.map((c) => `${a(`/curso/${c.id}`, c.nome)}: ${esc(c.descricao)}`)) + `<p>${loc.codigo === 'pt-BR' ? 'Criada por' : loc.codigo === 'es' ? 'Creada por' : 'Created by'} ${AUTORES.map((x) => esc(x.nome)).join(loc.codigo === 'pt-BR' ? ' e ' : loc.codigo === 'es' ? ' y ' : ' and ')}.</p>`
+    corpo = cabeca(base === '/' && loc.codigo === 'pt-BR' ? HOME_BR.titulo : (base === '/cursos' ? tx.cursos : home.titulo) ?? 'Linvuu · Idiomas para quem fala português', m.descricao ?? home.descricao ?? 'Cursos de inglês, espanhol, alemão, francês, italiano e russo para quem fala português.') + `<h2>${esc(tx.cursos)}</h2>` + li(visiveis.map((c) => `${a(`/curso/${c.id}`, c.nome)}: ${esc(c.descricao)} · ${a(`/gramatica/${c.id}`, tx.gramC(c.nome))}`)) + `<p>${loc.codigo === 'pt-BR' ? 'Criada por' : loc.codigo === 'es' ? 'Creada por' : 'Created by'} ${AUTORES.map((x) => esc(x.nome)).join(loc.codigo === 'pt-BR' ? ' e ' : loc.codigo === 'es' ? ' y ' : ' and ')}.</p>`
     if (base === '/' && loc.codigo === 'pt-BR') { corpo += `<p>${esc(HOME_BR.lead)}</p><h2>Conheça o Vuu</h2><p>Vuu acompanha a curiosidade que move a Linvuu: entender as palavras, ouvir como soam e praticar o idioma.</p><p>${a('/curso/de', 'Conhecer o curso de alemão')} · ${a('/curso/ru', 'Conhecer o curso de russo')} · ${a('/livros/de', 'Livro de alemão')} · ${a('/livros/es', 'Livro de espanhol')}</p><p>${esc(LIVROS_EM_PRODUCAO)}</p><h2>Ouça, entenda e pratique</h2><p>Explicações em português, áudio e exercícios. Experimente as duas primeiras aulas de cada curso sem cartão.</p><h2 id="planos">A oferta de hoje</h2><p>Acesso aos cursos de idiomas, com explicações em português.</p><ul><li>Mensal: ${esc(PRECO_MENSAL)}, com renovação automática.</li><li>Três meses no Pix: ${esc(PRECO_TRIMESTRAL_PIX)}, pagamento único e 30% de desconto.</li><li>Anual: ${esc(PRECO_ANUAL)}, pagamento único.</li></ul><p>${a('/assinatura', 'Ver todos os detalhes da assinatura')} · ${a('/cursos', 'Experimentar duas aulas grátis')}</p>`; }
     if (base === '/' && loc.codigo !== 'pt-BR') { const g = COMECAR[loc.codigo as 'pt-BR' | 'en' | 'es'] ?? COMECAR['pt-BR']; corpo += `<h2>${esc(g.titulo)}</h2><p>${esc(g.lead)}</p><ol>${g.passos.map((x) => `<li><strong>${esc(x.t)}.</strong> ${esc(x.d)}</li>`).join('')}</ol><p>${esc(g.dica)}</p>`; }
   } else {
@@ -280,16 +323,34 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
         return Array.from({ length: g.dias[1] - g.dias[0] + 1 }, (_, k) => g.dias[0] + k)
           .filter((n) => n <= SESSOES_GRATIS).map((n) => a(`/curso/${mc[1]}/dia/${n}`, `${rot} · ${tx.sessao(n, c?.nome ?? '').split(' · ')[0]}`));
       }));
-      if (c && d?.raiz && /^[a-z]{2}$/.test(mc[1]) && fs.existsSync(path.join(d.raiz, 'content', 'gramatica', `${mc[1]}.json`))) corpo += `<p>${a(`/gramatica/${mc[1]}`, tx.gramC(c.nome))}</p>`;
+      // Ementa completa como texto: o que o curso ensina de verdade, aula por aula (só as amostras grátis viram link).
+      if (grupos.length) corpo += `<h2>${esc(tx.ementa(grupos.length))}</h2><ol>${grupos.map((g) => `<li>${esc(mesmo ? g.titulo : tr?.[g.aula] ?? g.titulo)}</li>`).join('')}</ol>`;
+      if (c && d && gramaticaExisteEm(d, mc[1], loc.explicacao)) corpo += `<p>${a(`/gramatica/${mc[1]}`, tx.gramC(c.nome))}</p>`;
     } else if (md) {
-      corpo = cabeca(m.titulo ?? '', m.descricao) + (loc.codigo === 'pt-BR' ? sessaoGratisParaHtml(d, md[1], Number(md[2])) : loc.codigo === 'en' ? sessaoGratisEnParaHtml(d, md[1], Number(md[2])) : '') + `<p>${a(`/curso/${md[1]}`, visiveis.find((x) => x.id === md[1])?.nome ?? md[1])}</p>`;
-    } else if (mg && ((loc.codigo === 'pt-BR' && mg[1] !== 'br') || (loc.codigo === 'en' && (mg[1] === 'br' || (!!d?.raiz && /^[a-z]{2}$/.test(mg[1]) && fs.existsSync(path.join(d.raiz, 'content', 'gramatica', `${mg[1]}.en.json`))))))) {
-      corpo = cabeca(m.titulo ?? '', m.descricao) + gramaticaGratisParaHtml(d, mg[1], loc.codigo === 'en' && mg[1] !== 'br' ? 'en' : 'pt') + `<p>${a(`/curso/${mg[1]}`, visiveis.find((x) => x.id === mg[1])?.nome ?? mg[1])}</p>`;
+      // Navegação entre sessões da amostra pública + curso + gramática do curso, na língua da página.
+      // A vizinha só entra se também for indexável nesta língua (a aula dela traduzida), com o mesmo
+      // critério de metaSemLocale — nada de links do pré-render para páginas noindex.
+      const diaN = Number(md[2]);
+      const nomeCurso = visiveis.find((x) => x.id === md[1])?.nome ?? md[1];
+      const navegar: string[] = [];
+      const vizinhaIndexavel = (n: number) => {
+        const g = d?.indice[md[1]]?.grupos?.find((x) => n >= x.dias[0] && n <= x.dias[1]);
+        return !!g && ((d?.indice[md[1]]?.fonte ?? 'pt') === loc.explicacao || !!d?.indice[md[1]]?.tr?.[loc.explicacao]?.aulas?.includes(g.aula));
+      };
+      if (diaN > 1 && vizinhaIndexavel(diaN - 1)) navegar.push(a(`/curso/${md[1]}/dia/${diaN - 1}`, tx.ant(diaN - 1)));
+      navegar.push(a(`/curso/${md[1]}`, nomeCurso));
+      if (d && gramaticaExisteEm(d, md[1], loc.explicacao)) navegar.push(a(`/gramatica/${md[1]}`, tx.gramC(nomeCurso)));
+      if (diaN < SESSOES_GRATIS && vizinhaIndexavel(diaN + 1)) navegar.push(a(`/curso/${md[1]}/dia/${diaN + 1}`, tx.seg(diaN + 1)));
+      corpo = cabeca(m.titulo ?? '', m.descricao) + (loc.codigo === 'pt-BR' ? sessaoGratisParaHtml(d, md[1], diaN) : sessaoGratisEnParaHtml(d, md[1], diaN, loc.codigo === 'es' ? 'es' : 'en')) + `<p>${navegar.join(' · ')}</p>`;
+    } else if (mg && d) {
+      // Só chega aqui o que é indexável (o topo da função devolve '' para noindex): a gramática existe na língua da página.
+      const suf = (d.indice[mg[1]]?.fonte ?? 'pt') === loc.explicacao ? '' : loc.explicacao;
+      corpo = cabeca(m.titulo ?? '', m.descricao) + gramaticaGratisParaHtml(d, mg[1], suf) + `<p>${a(`/curso/${mg[1]}`, visiveis.find((x) => x.id === mg[1])?.nome ?? mg[1])}</p>`;
     } else if (m.titulo) {
       corpo = cabeca(m.titulo, m.descricao);
     }
   }
-  if (base === '/assinatura' && loc.codigo === 'pt-BR') corpo = cabeca(m.titulo ?? '', m.descricao) + `<h2 id="oferta-atual">Assinatura Linvuu</h2><p>Acesso a todos os cursos de idiomas.</p><ul><li>Mensal: ${esc(PRECO_MENSAL)}, com renovação automática.</li><li>3 meses: ${esc(PRECO_TRIMESTRAL_PIX)} no Pix (30% OFF) ou ${esc(PRECO_TRIMESTRAL)} no cartão ou boleto, pagamento único.</li><li>12 meses: ${esc(PRECO_ANUAL)}, pagamento único.</li></ul><h2>Posso experimentar sem cartão?</h2><p>As duas primeiras aulas de cada curso são gratuitas, sem cartão.</p><h2>Qual é o desconto no Pix?</h2><p>O plano trimestral custa R$ 291,90 no Pix, 30% de desconto sobre R$ 417.</p><p>${a('/cursos', 'Testar 2 aulas grátis, sem cartão')} · ${a('/cadastro', 'Criar conta')} · ${a('/termos', 'Consultar termos e condições')}</p>`;
+  if (base === '/assinatura' && loc.codigo === 'pt-BR') corpo = cabeca(m.titulo ?? '', m.descricao) + `<h2 id="oferta-atual">Assinatura Linvuu</h2><p>Acesso a todos os cursos de idiomas.</p><ul><li>Mensal: ${esc(PRECO_MENSAL)}, com renovação automática.</li><li>3 meses: ${esc(PRECO_TRIMESTRAL_PIX)} no Pix (30% OFF) ou ${esc(PRECO_TRIMESTRAL)} no cartão ou boleto, pagamento único.</li><li>12 meses: ${esc(PRECO_ANUAL)}, pagamento único.</li></ul><h2>Posso experimentar sem cartão?</h2><p>As duas primeiras aulas de cada curso são gratuitas, sem cartão.</p><h2>Qual é o desconto no Pix?</h2><p>O plano trimestral custa ${esc(PRECO_TRIMESTRAL_PIX)} no Pix, 30% de desconto sobre ${esc(PRECO_TRIMESTRAL)}.</p><p>${a('/cursos', 'Testar 2 aulas grátis, sem cartão')} · ${a('/cadastro', 'Criar conta')} · ${a('/termos', 'Consultar termos e condições')}</p>`;
   if (base === '/excluir-conta') {
     // Sem JavaScript a página continua útil: texto completo e o endereço para o pedido.
     const x = EXCLUSAO[loc.codigo];
@@ -300,7 +361,7 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
   if (base === '/por-que-linvuu') corpo = cabeca(POR_QUE.titulo, POR_QUE.descricao) + `<p>${esc(POR_QUE.lead)}</p>` + POR_QUE.motivos.map((x) => `<h2 id="${x.id}">${esc(x.titulo)}</h2><p>${esc(x.texto)}</p>`).join('') + `<h2>Para quem é</h2><p>${esc(POR_QUE.paraQuem)}</p><p><a href="/cursos">Veja os cursos</a> · <a href="/livros">Leia os livros</a> · <a href="/contato">Fale com a gente</a></p>`;
   if (base === '/contato') corpo = cabeca(CONTATO.titulo, CONTATO.descricao) + `<p>${esc(CONTATO.lead)}</p>` + li(contatos().filter((c) => c.id !== 'linkedin').map((c) => `<a href="${esc(c.href)}">${esc(c.nome)}: ${esc(c.rotulo)}</a>`)) + `<h2 id="linkedin">LinkedIn</h2>` + li(AUTORES.map((x) => `<a href="${esc(x.links[0])}" rel="me">${esc(x.nome)}</a>`));
   if (base === '/ex-alunos-udemy') corpo = cabeca(EX_ALUNOS.titulo, EX_ALUNOS.descricao) + `<p>${esc(EX_ALUNOS.lead)}</p><h2>O que você encontra na Linvuu</h2>` + li(EX_ALUNOS.beneficios.map((x) => esc(x))) + `<h2>Como pedir sua condição especial</h2><ol>${EX_ALUNOS.passos.map((x) => `<li>${esc(x)}</li>`).join('')}</ol><p>${esc(EX_ALUNOS.aviso)}</p>` + `<h2>Perguntas frequentes</h2>` + EX_ALUNOS.perguntas.map((q) => `<h3>${esc(q.p)}</h3><p>${esc(q.r)}</p>`).join('');
-  const menu = loc.codigo === 'pt-BR' ? '<nav aria-label="Principal"><a href="/cursos">Cursos</a> · <a href="/livros">Livros</a> · <a href="/sobre">Quem somos</a> · <a href="/por-que-linvuu">Por que estudar com a Linvuu?</a> · <a href="/contato">Contato</a> · <a href="/privacidade">Privacidade</a></nav>' : '';
+  const menu = menuPreRender(loc);
   return corpo ? `<main data-prerender>${menu}${corpo}</main>` : '';
 }
 
@@ -308,9 +369,9 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
 type Bloco = Record<string, any>;
 const cacheGramatica = new Map<string, string>();
 /** Apenas tópicos públicos que a página também mostra a visitantes após carregar a API. */
-function gramaticaGratisParaHtml(d: DadosMeta | null, idioma: string, explicacao: 'pt' | 'en' = 'pt'): string {
-  if (!d?.raiz || !/^[a-z]{2}$/.test(idioma)) return '';
-  const arquivo = path.join(d.raiz, 'content', 'gramatica', explicacao === 'en' ? `${idioma}.en.json` : `${idioma}.json`);
+function gramaticaGratisParaHtml(d: DadosMeta | null, idioma: string, sufixo: string = ''): string {
+  if (!d?.raiz || !/^[a-z]{2}$/.test(idioma) || !/^(|en|es)$/.test(sufixo)) return '';
+  const arquivo = path.join(d.raiz, 'content', 'gramatica', sufixo ? `${idioma}.${sufixo}.json` : `${idioma}.json`);
   if (cacheGramatica.has(arquivo)) return cacheGramatica.get(arquivo)!;
   try {
     const pacote = JSON.parse(fs.readFileSync(arquivo, 'utf8'));
@@ -321,27 +382,35 @@ function gramaticaGratisParaHtml(d: DadosMeta | null, idioma: string, explicacao
   } catch { return ''; }
 }
 const cacheSessoesEn = new Map<string, any>();
-/** Sessão gratuita (dias 1 a 8) explicada em inglês, lida de content/idiomas/<curso>/en/dia-NNN.json. Mesma regra de privacidade da versão em português. */
-function sessaoGratisEnParaHtml(d: DadosMeta | null, curso: string, dia: number): string {
+const ROTULOS_SESSAO = {
+  en: { voc: 'Vocabulary', pron: 'pronunciation', trad: 'english', alfa: 'Alphabet and sounds', letra: 'letter', som: 'sound', ex: 'example', lingua: 'In English:', pratica: 'Practise:' },
+  es: { voc: 'Vocabulario', pron: 'pronunciación', trad: 'español', alfa: 'Alfabeto y sonidos', letra: 'letra', som: 'sonido', ex: 'ejemplo', lingua: 'En español:', pratica: 'Practica:' },
+} as const;
+/** Sessão gratuita (dias 1 a 8) explicada em inglês ou espanhol: content/idiomas/<curso>/<lingua>/dia-NNN.json,
+ * ou o arquivo-base quando essa é a língua-fonte do curso (português para estrangeiros). Mesma regra de privacidade da versão em português. */
+function sessaoGratisEnParaHtml(d: DadosMeta | null, curso: string, dia: number, lingua: 'en' | 'es' = 'en'): string {
   if (!d?.raiz || dia < 1 || dia > SESSOES_GRATIS || !/^[a-z]{2}$/.test(curso)) return '';
-  const f = path.join(d.raiz, 'content', 'idiomas', curso, 'en', `dia-${String(dia).padStart(3, '0')}.json`);
+  const nomeArq = `dia-${String(dia).padStart(3, '0')}.json`;
+  const f = (d.indice[curso]?.fonte ?? 'pt') === lingua ? path.join(d.raiz, 'content', 'idiomas', curso, nomeArq) : path.join(d.raiz, 'content', 'idiomas', curso, lingua, nomeArq);
+  const R = ROTULOS_SESSAO[lingua];
   let arq = cacheSessoesEn.get(f);
   if (!arq) { try { arq = JSON.parse(fs.readFileSync(f, 'utf8')); cacheSessoesEn.set(f, arq); } catch { return ''; } }
   const sessao = arq.sessao;
   if (!sessao?.blocos) return '';
   const t = (x: unknown) => esc(String(x ?? ''));
-  const en = (x: Bloco) => x.en ?? x.pt;
+  // Nos arquivos traduzidos a tradução fica em «en» ou, nos de espanhol, em «pt»; campo vazio não conta.
+  const en = (x: Bloco) => x[lingua] || x.en || x.pt;
   const paras = (x: string) => String(x ?? '').split(/\s*(?:PASSO|STEP) \d+:\s*/).filter(Boolean).map((y) => `<p>${t(y)}</p>`).join('');
   const tab = (linhas: Bloco[]) => linhas?.length ? `<table><thead><tr>${Object.keys(linhas[0]).map((k) => `<th>${t(k)}</th>`).join('')}</tr></thead><tbody>${linhas.map((l) => `<tr>${Object.values(l).map((v) => `<td>${t(v)}</td>`).join('')}</tr>`).join('')}</tbody></table>` : '';
   const partes: string[] = [`<p>${t(arq.objetivo)}</p>`];
   for (const b of sessao.blocos as Bloco[]) {
     if (b.tipo === 'intro' || b.tipo === 'revisao') partes.push(`<p>${t(b.texto ?? b.enunciado)}</p>`);
-    else if (b.tipo === 'palavras') partes.push(`<h2>Vocabulary</h2>${tab((b.itens ?? []).map((i: Bloco) => ({ [curso]: i.ru, pronunciation: i.translit, english: en(i) })))}`);
-    else if (b.tipo === 'alfabeto') partes.push(`<h2>Alphabet and sounds</h2>` + (b.grupos ?? []).map((g: Bloco) => `<h3>${t(g.nome)}</h3>${tab((g.letras ?? []).map((l: Bloco) => ({ letter: `${l.maiuscula} ${l.minuscula}`, sound: l.som, example: l.exemplo, english: l.exemploPt })))}`).join(''));
-    else if (b.tipo === 'gramatica') partes.push(`<h2>${t(b.titulo)}</h2>${paras(b.explicacao)}${b.comparacao ? `<p><strong>In English:</strong> ${t(b.comparacao)}</p>` : ''}${b.exemplos ? `<ul>${b.exemplos.map((e: Bloco) => `<li>${t(e.ru)} — ${t(en(e))}</li>`).join('')}</ul>` : ''}${b.tabela ? tab(b.tabela) : ''}${(b.tabelas ?? []).map((x: Bloco) => `<h3>${t(x.titulo)}</h3>${tab(x.linhas)}`).join('')}`);
+    else if (b.tipo === 'palavras') partes.push(`<h2>${R.voc}</h2>${tab((b.itens ?? []).map((i: Bloco) => ({ [curso]: i.ru, [R.pron]: i.translit, [R.trad]: en(i) })))}`);
+    else if (b.tipo === 'alfabeto') partes.push(`<h2>${R.alfa}</h2>` + (b.grupos ?? []).map((g: Bloco) => `<h3>${t(g.nome)}</h3>${tab((g.letras ?? []).map((l: Bloco) => ({ [R.letra]: `${l.maiuscula} ${l.minuscula}`, [R.som]: l.som, [R.ex]: l.exemplo, [R.trad]: l.exemploPt })))}`).join(''));
+    else if (b.tipo === 'gramatica') partes.push(`<h2>${t(b.titulo)}</h2>${paras(b.explicacao)}${b.comparacao ? `<p><strong>${R.lingua}</strong> ${t(b.comparacao)}</p>` : ''}${b.exemplos ? `<ul>${b.exemplos.map((e: Bloco) => `<li>${t(e.ru)} — ${t(en(e))}</li>`).join('')}</ul>` : ''}${b.tabela ? tab(b.tabela) : ''}${(b.tabelas ?? []).map((x: Bloco) => `<h3>${t(x.titulo)}</h3>${tab(x.linhas)}`).join('')}`);
     else if (b.tipo === 'dialogo') partes.push(`<h2>${t(b.titulo)}</h2><p>${t(b.contexto)}</p><ul>${(b.linhas ?? []).map((l: Bloco) => `<li><strong>${t(l.personagem)}:</strong> ${t(l.ru)} <em>${t(en(l))}</em></li>`).join('')}</ul>`);
     else if (b.tipo === 'texto') partes.push(`<h2>${t(b.titulo)}</h2><p>${t(b.ru)}</p><p>${t(en(b))}</p>`);
-    else if (b.tipo === 'producao') partes.push(`<p><strong>Practise:</strong> ${t(b.enunciado)}</p>`);
+    else if (b.tipo === 'producao') partes.push(`<p><strong>${R.pratica}</strong> ${t(b.enunciado)}</p>`);
   }
   return `<h2>${t(sessao.titulo)} (${t(sessao.duracaoMin)} min)</h2>${partes.join('')}`;
 }
@@ -371,11 +440,31 @@ function sessaoGratisParaHtml(d: DadosMeta | null, curso: string, dia: number): 
 }
 
 const SITE = 'https://linvuu.com.br';
+// Política real do site (paywall e termos): reembolso integral em até 7 dias.
+const POLITICA_REEMBOLSO = { '@type': 'MerchantReturnPolicy', applicableCountry: 'BR', returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow', merchantReturnDays: 7, returnFees: 'https://schema.org/FreeReturn' };
 const ORG_ID = `${SITE}/#organizacao`;
 const organizacao = () => ({ '@context': 'https://schema.org', '@type': 'EducationalOrganization', '@id': ORG_ID, name: 'Linvuu', url: SITE, logo: `${SITE}/brand/linvuu-logo.png`, email: EMAIL_OFICIAL, founder: AUTORES.map((a) => ({ '@type': 'Person', '@id': `${SITE}/sobre#${a.id}`, name: a.nome, sameAs: [...a.links] })) });
 const pessoa = (a: (typeof AUTORES)[number]) => ({ '@context': 'https://schema.org', '@type': 'Person', '@id': `${SITE}/sobre#${a.id}`, name: a.nome, url: `${SITE}/sobre#${a.id}`, worksFor: { '@id': ORG_ID }, sameAs: [...a.links], knowsAbout: ['Matemática', 'Linguística', 'Ensino de idiomas', 'Inteligência artificial', 'Teoria dos números', 'Álgebra linear'] });
 const naoEncontrada = (p: string, loc: Locale): MetaRota => ({ status: 404, caminho: p, titulo: TX[loc.codigo].nao, semIndice: true });
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+/** Versões por idioma + x-default exatamente como o HTML do servidor as publica (fonte única também para o navegador). */
+export function alternativosDe(m: MetaRota, site: string, d: DadosMeta | null = null): { hreflang: string; href: string }[] {
+  // uma versão por idioma + x-default: a versão em português quando faz parte do cluster;
+  // sem ela (o curso de português para estrangeiros não existe em PT), a versão no idioma-fonte do conteúdo.
+  const em = m.semIndice ? [] : LOCALES.filter((l) => !m.em || m.em.includes(l.codigo));
+  if (em.length < 2) return [];
+  const idCurso = semPrefixo(m.caminho).match(/^\/(?:curso|gramatica)\/([a-z]{2})/)?.[1];
+  const fonte = idCurso ? d?.indice?.[idCurso]?.fonte : undefined;
+  const codigoFonte = fonte === 'pt' ? 'pt-BR' : fonte;
+  const padrao = em.find((l) => l.codigo === 'pt-BR') ?? em.find((l) => l.codigo === codigoFonte) ?? em[0];
+  return [...em.map((l) => ({ hreflang: l.codigo, href: site + caminhoEm(l.codigo, m.caminho) })), { hreflang: 'x-default', href: site + caminhoEm(padrao.codigo, m.caminho) }];
+}
+
+/** O que o navegador aplica ao navegar dentro do site: os mesmos valores que o servidor colocaria no HTML desta rota. */
+export function metaParaNavegador(m: MetaRota, site: string, d: DadosMeta | null = null) {
+  return { status: m.status, caminho: m.caminho, titulo: m.titulo ? `${m.titulo} · Linvuu` : null, descricao: m.descricao ?? null, canonical: site + m.caminho, noindex: !!m.semIndice, alternativos: alternativosDe(m, site, d), lang: (m.locale ?? LOCALES[0]).codigo };
+}
 
 export function aplicarMeta(html: string, m: MetaRota, site: string, d: DadosMeta | null = null): string {
   let out = html;
@@ -396,14 +485,7 @@ export function aplicarMeta(html: string, m: MetaRota, site: string, d: DadosMet
   troca(/(<meta property="og:locale" content=")[^"]*(")/, loc.og);
   troca(/(<meta property="og:url" content=")[^"]*(")/, url);
   troca(/(<link rel="canonical" href=")[^"]*(")/, url);
-  // uma versão por idioma + x-default: a versão em português quando faz parte do cluster;
-  // sem ela (o curso de português para estrangeiros não existe em PT), a versão no idioma-fonte do conteúdo.
-  const em = m.semIndice ? [] : LOCALES.filter((l) => !m.em || m.em.includes(l.codigo));
-  const idCurso = semPrefixo(m.caminho).match(/^\/(?:curso|gramatica)\/([a-z]{2})/)?.[1];
-  const fonte = idCurso ? d?.indice?.[idCurso]?.fonte : undefined;
-  const codigoFonte = fonte === 'pt' ? 'pt-BR' : fonte;
-  const padrao = em.find((l) => l.codigo === 'pt-BR') ?? em.find((l) => l.codigo === codigoFonte) ?? em[0];
-  const alternativos = em.length > 1 ? [...em.map((l) => `<link rel="alternate" hreflang="${l.codigo}" href="${esc(site + caminhoEm(l.codigo, m.caminho))}" />`), `<link rel="alternate" hreflang="x-default" href="${esc(site + caminhoEm(padrao.codigo, m.caminho))}" />`].join('\n    ') : '';
+  const alternativos = alternativosDe(m, site, d).map((x) => `<link rel="alternate" hreflang="${x.hreflang}" href="${esc(x.href)}" />`).join('\n    ');
   out = out.replace(/<link rel="alternate" hreflang="pt-BR" href="[^"]*" \/>/, () => alternativos);
   troca(/(<meta name="twitter:card" content=")[^"]*(")/, 'summary_large_image');
   const twitterTitle = esc(`${m.titulo ?? 'Linvuu'} · Linvuu`);
@@ -413,6 +495,8 @@ export function aplicarMeta(html: string, m: MetaRota, site: string, d: DadosMet
   const conteudo = conteudoRota(m, d, loc);
   if (conteudo) out = out.replace('<div id="root"></div>', () => `<div id="root">${conteudo}</div>`);
   if (m.semIndice) out = out.replace('</head>', () => '    <meta name="robots" content="noindex" />\n  </head>');
+  // Marca a rota cujo <head> veio pronto do servidor: o navegador não reescreve título, robots, canonical nem hreflang dela.
+  out = out.replace('</head>', () => `    <meta name="linvuu-rota" content="${esc(m.caminho)}" />\n  </head>`);
   return out;
 }
 

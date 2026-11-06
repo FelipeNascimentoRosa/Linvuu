@@ -75,6 +75,7 @@ export const en: Dicionario = {
   cursosPagina: {
     titulo: 'All courses', buscar: 'Search', exemplo: 'E.g. German, French', contagem: (n: number) => (n === 1 ? '1 course' : `${n} courses`),
     vazio: (q: string) => `No course found for "${q}". Try another word or`, limpar: 'clear the search', portugues: 'Brazilian Portuguese, explained in English →',
+    avisoObraTitulo: '', avisoObraTexto: '',
   },
   cursoPagina: {
     continuarBtn: 'Continue', sessaoTitulo: (n: number, t: string) => `Session ${n}: ${t}`, continuar: (n: number, t: string) => `Continue with session ${n}: ${t}`, comecar: 'Start with session 1 (free)', feitas: (a: number, b: number) => `${a} of ${b} sessions completed`, concluida: 'completed', aulasNivel: (n: number) => `${n} lessons`, retomarKicker: (c: string) => `Continue ${c}`,
@@ -170,7 +171,7 @@ export const en: Dicionario = {
     'auth/popup-blocked': 'Your browser blocked the Google window. Allow pop-ups and try again.', 'auth/network-request-failed': 'No connection. Check your internet and try again.',
     'auth/unauthorized-domain': 'This address has not been authorised for sign-in yet.', 'auth/operation-not-allowed': 'This sign-in method has not been enabled yet.', 'auth/admin-restricted-operation': 'Sign-up by e-mail is disabled right now.',
     'auth/password-does-not-meet-requirements': 'The password does not meet the security rules. Use upper and lower case letters, a number and a symbol.', 'auth/configuration-not-found': 'E-mail sign-in has not been configured yet.',
-    entreConta: 'Sign in to your account to continue.', pagamentoIndisponivel: 'Payments are unavailable right now. Try again in a moment.',
+    entreConta: 'Sign in to your account to continue.', jaTemAcesso: 'You already have active paid access. To change plans, use “Manage subscription” or wait for the current period to end.', pagamentoIndisponivel: 'Payments are unavailable right now. Try again in a moment.',
     padrao: 'We could not finish that. Try again.', compraApp: 'Purchases are not available in this app yet.',
   },
   naoEncontrada: { titulo: 'Page not found', texto: 'This address does not exist or has moved.', inicio: 'Back to the home page', cursos: 'See courses' },

@@ -1,7 +1,7 @@
 // Eventos explícitos via API pública de captura. Sem SDK, autocapture ou replay.
 export const ANALYTICS_CHOICE='linvuu:analytics:v1', ANALYTICS_ID='linvuu:analytics-id:v1';
 export type AnalyticsChoice='yes'|'no'|null;
-export type AnalyticsEvent='page_viewed'|'course_viewed'|'lesson_started'|'practice_completed'|'lesson_completed'|'checkout_started'|'checkout_returned'|'view_pricing'|'select_plan';
+export type AnalyticsEvent='page_viewed'|'course_viewed'|'lesson_started'|'practice_completed'|'lesson_completed'|'checkout_started'|'checkout_returned'|'view_pricing'|'select_plan'|'signup_completed';
 type Config={token:string;host:string;platform:'web'|'android';environment:'production'|'test';locale:string;version:string};
 type Store=Pick<Storage,'getItem'|'setItem'|'removeItem'>;
 export function criarAnalytics(config:Config,store:Store,pedir:typeof fetch=fetch){
@@ -11,7 +11,7 @@ export function criarAnalytics(config:Config,store:Store,pedir:typeof fetch=fetc
  const choose=(value:'yes'|'no')=>{try{store.setItem(ANALYTICS_CHOICE,value);if(value==='no'){store.removeItem(ANALYTICS_ID);for(const c of requests)c.abort();requests.clear();}}catch{/* sem persistência, não coletar */}};
  async function capture(event:AnalyticsEvent,props:Record<string,unknown>={}){
   if(!configured()||choice()!=='yes'||count>=120)return false;
-  if(!['page_viewed','course_viewed','lesson_started','practice_completed','lesson_completed','checkout_started','checkout_returned','view_pricing','select_plan'].includes(event))return false;
+  if(!['page_viewed','course_viewed','lesson_started','practice_completed','lesson_completed','checkout_started','checkout_returned','view_pricing','select_plan','signup_completed'].includes(event))return false;
   let id:string;try{id=store.getItem(ANALYTICS_ID)??'';if(!/^[a-f0-9-]{36}$/.test(id)){id=crypto.randomUUID();store.setItem(ANALYTICS_ID,id);}}catch{return false;}
   // Nunca aceitar URLs, texto livre, UIDs Firebase, respostas ou mensagens de erro.
   const properties:Record<string,unknown>={platform:config.platform,environment:config.environment,interface_language:typeof document==='undefined'?config.locale:document.documentElement.lang||config.locale,version:config.version,$process_person_profile:false,$geoip_disable:true};
