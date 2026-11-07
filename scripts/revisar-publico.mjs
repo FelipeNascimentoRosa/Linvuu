@@ -77,7 +77,7 @@ try {
     await page.getByRole('button',{name:'Reportar um problema',exact:true}).click();
     await page.getByLabel('O que aconteceu?',{exact:true}).fill('Teste de contexto da sessão, sem envio.');
     const relato = await page.getByRole('link',{name:'Abrir e-mail para enviar relato',exact:true}).getAttribute('href');
-    assert.ok(relato.startsWith('mailto:hello.linvuu@gmail.com?'));
+    assert.ok(relato.startsWith('mailto:contato@linvuu.com.br?'));
     assert.ok(decodeURIComponent(relato).includes('/curso/en/dia/1'));
     assert.ok(decodeURIComponent(relato).includes('Teste de contexto da sessão, sem envio.'));
     await page.screenshot({path:`revisao-publica/${nome}-reportar.png`,fullPage:false});
