@@ -5,7 +5,7 @@ import { COMECAR } from './comecar.ts';
 import { HOME_BR } from '../config/oferta-publica.ts';
 import fs from 'node:fs';
 import path from 'node:path';
-import { SESSOES_GRATIS, SESSOES_POR_AULA, PRECO_MENSAL, PRECO_TRIMESTRAL, PRECO_TRIMESTRAL_PIX, PRECO_ANUAL, CENTAVOS, precoSchema } from '../config/planos.ts';
+import { SESSOES_GRATIS, SESSOES_POR_AULA, PRECO_MENSAL, PRECO_TRIMESTRAL, PRECO_TRIMESTRAL_PIX, PRECO_ANUAL, CENTAVOS, CENTAVOS_USD, PRECOS, precoSchema } from '../config/planos.ts';
 import { LOCALES, Locale, caminhoEm, localeDoCaminho, localePadrao, semPrefixo, siteDoIdioma, urlAbsolutaEm } from '../i18n/locales.ts';
 import { EMAIL_OFICIAL } from '../config/site.ts';
 import { CONTATO, EX_ALUNOS, POR_QUE } from './institucional.ts';
@@ -156,7 +156,7 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     '/livro/gramatica-ru': { titulo: 'Gramática russa A1–A2', semIndice: true },
     // A página de preços existe de verdade nos dois idiomas (um por domínio): indexável nos dois,
     // para os alternates hreflang de uma versão não apontarem para a outra como noindex.
-    '/assinatura': loc.codigo === 'pt-BR' ? { titulo: 'Planos e assinatura', descricao: 'Aprenda idiomas com a Linvuu: planos mensal, trimestral com 30% OFF no Pix e anual. Experimente duas aulas grátis, sem cartão.' } : { titulo: tx.assinatura, descricao: 'Learn languages with Linvuu: monthly, quarterly (30% off with Pix) and annual plans. Try two free lessons, no card required.' },
+    '/assinatura': loc.codigo === 'pt-BR' ? { titulo: 'Planos e assinatura', descricao: 'Aprenda idiomas com a Linvuu: planos mensal, trimestral com 30% OFF no Pix e anual. Experimente duas aulas grátis, sem cartão.' } : { titulo: tx.assinatura, descricao: 'Learn languages with Linvuu: monthly or annual plans, priced in US dollars. Try two free lessons, no card required.' },
     '/privacidade': { titulo: tx.priv, descricao: tx.privD },
     '/termos': { titulo: tx.termos, descricao: tx.termosD },
     '/excluir-conta': { titulo: EXCLUSAO[loc.codigo].titulo, descricao: EXCLUSAO[loc.codigo].descricao },
@@ -167,9 +167,9 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     if (p === '/assinatura') {
       const en = loc.codigo === 'en';
       jsonld.push(
-        { '@context': 'https://schema.org', '@type': 'Product', name: en ? 'Linvuu Subscription' : 'Assinatura Linvuu', description: fixas[p].descricao, image: `${SITE}/brand/linvuu-logo.png`, brand: { '@type': 'Brand', name: 'Linvuu' }, offers: [ [en ? 'Monthly' : 'Mensal', precoSchema(CENTAVOS.mensal)], [en ? 'Quarterly Pix' : 'Trimestral Pix', precoSchema(CENTAVOS['trimestral-pix'])], [en ? 'Quarterly card or boleto' : 'Trimestral cartão ou boleto', precoSchema(CENTAVOS.trimestral)], [en ? 'Annual' : 'Anual', precoSchema(CENTAVOS.anual)] ].map(([name, price]) => ({ '@type': 'Offer', name, price, priceCurrency: 'BRL', availability: 'https://schema.org/InStock', url: `${SITE}/assinatura`, hasMerchantReturnPolicy: POLITICA_REEMBOLSO })) },
+        { '@context': 'https://schema.org', '@type': 'Product', name: en ? 'Linvuu Subscription' : 'Assinatura Linvuu', description: fixas[p].descricao, image: `${SITE}/brand/linvuu-logo.png`, brand: { '@type': 'Brand', name: 'Linvuu' }, offers: (en ? [['Monthly', precoSchema(CENTAVOS_USD.mensal)], ['Annual', precoSchema(CENTAVOS_USD.anual)]] : [['Mensal', precoSchema(CENTAVOS.mensal)], ['Trimestral Pix', precoSchema(CENTAVOS['trimestral-pix'])], ['Trimestral cartão ou boleto', precoSchema(CENTAVOS.trimestral)], ['Anual', precoSchema(CENTAVOS.anual)]]).map(([name, price]) => ({ '@type': 'Offer', name, price, priceCurrency: en ? 'USD' : 'BRL', availability: 'https://schema.org/InStock', url: `${SITE}/assinatura`, hasMerchantReturnPolicy: POLITICA_REEMBOLSO })) },
         { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: en
-          ? [{ '@type': 'Question', name: 'Can I try it without a card?', acceptedAnswer: { '@type': 'Answer', text: 'The first two lessons of every course are free, with no card required.' } }, { '@type': 'Question', name: 'What currency are the prices in?', acceptedAnswer: { '@type': 'Answer', text: 'Prices are in Brazilian reais (R$); your card issuer converts the currency. The first two lessons of every course are free.' } }]
+          ? [{ '@type': 'Question', name: 'Can I try it without a card?', acceptedAnswer: { '@type': 'Answer', text: 'The first two lessons of every course are free, with no card required.' } }, { '@type': 'Question', name: 'What currency are the prices in?', acceptedAnswer: { '@type': 'Answer', text: 'Prices are in US dollars (US$19.99 a month or US$149 for 12 months, paid by card). The first two lessons of every course are free.' } }]
           : [{ '@type': 'Question', name: 'Posso experimentar sem cartão?', acceptedAnswer: { '@type': 'Answer', text: 'As duas primeiras aulas de cada curso são gratuitas, sem cartão.' } }, { '@type': 'Question', name: 'Qual é o desconto no Pix?', acceptedAnswer: { '@type': 'Answer', text: `O plano trimestral custa ${PRECO_TRIMESTRAL_PIX} no Pix, 30% de desconto sobre ${PRECO_TRIMESTRAL}.` } }] },
       );
     }
@@ -200,7 +200,7 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
           teaches: c.id === 'br' ? 'Brazilian Portuguese' : c.nome, educationalLevel: 'A1–B1 (CEFR)', isAccessibleForFree: false,
           ...(aulas ? { coursePrerequisites: 'None', timeRequired: `PT${aulas * 2}H` } : {}),
           provider: { '@type': 'EducationalOrganization', '@id': ORG_ID, name: 'Linvuu', url: SITE, logo: `${SITE}/brand/linvuu-logo.png` },
-          offers: [{ '@type': 'Offer', category: 'Subscription', price: CENTAVOS.mensal / 100, priceCurrency: 'BRL', availability: 'https://schema.org/InStock', url: `${urlAbsolutaEm(loc.codigo, '/assinatura')}` }],
+          offers: [{ '@type': 'Offer', category: 'Subscription', price: (loc.codigo === 'en' ? CENTAVOS_USD.mensal : CENTAVOS.mensal) / 100, priceCurrency: loc.codigo === 'en' ? 'USD' : 'BRL', availability: 'https://schema.org/InStock', url: `${urlAbsolutaEm(loc.codigo, '/assinatura')}` }],
           hasCourseInstance: [{ '@type': 'CourseInstance', courseMode: 'Online', courseWorkload: 'PT30M', courseSchedule: { '@type': 'Schedule', repeatFrequency: 'Daily', repeatCount: aulas * 4 } }],
         },
         { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: tx.inicio, item: `${urlAbsolutaEm(loc.codigo, '/')}` }, { '@type': 'ListItem', position: 2, name: tx.cursos, item: `${urlAbsolutaEm(loc.codigo, '/cursos')}` }, { '@type': 'ListItem', position: 3, name: c.nome, item: url }] },
@@ -352,7 +352,7 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
     }
   }
   if (base === '/assinatura' && loc.codigo === 'pt-BR') corpo = cabeca(m.titulo ?? '', m.descricao) + `<h2 id="oferta-atual">Assinatura Linvuu</h2><p>Acesso a todos os cursos de idiomas.</p><ul><li>Mensal: ${esc(PRECO_MENSAL)}, com renovação automática.</li><li>3 meses: ${esc(PRECO_TRIMESTRAL_PIX)} no Pix (30% OFF) ou ${esc(PRECO_TRIMESTRAL)} no cartão ou boleto, pagamento único.</li><li>12 meses: ${esc(PRECO_ANUAL)}, pagamento único.</li></ul><h2>Posso experimentar sem cartão?</h2><p>As duas primeiras aulas de cada curso são gratuitas, sem cartão.</p><h2>Qual é o desconto no Pix?</h2><p>O plano trimestral custa ${esc(PRECO_TRIMESTRAL_PIX)} no Pix, 30% de desconto sobre ${esc(PRECO_TRIMESTRAL)}.</p><p>${a('/cursos', 'Testar 2 aulas grátis, sem cartão')} · ${a('/cadastro', 'Criar conta')} · ${a('/termos', 'Consultar termos e condições')}</p>`;
-  if (base === '/assinatura' && loc.codigo === 'en') corpo = cabeca(m.titulo ?? '', m.descricao) + `<h2 id="oferta-atual">Linvuu Subscription</h2><p>Access to every Linvuu course, with explanations in English.</p><ul><li>Monthly: ${esc(PRECO_MENSAL)}, with automatic renewal.</li><li>3 months: ${esc(PRECO_TRIMESTRAL_PIX)} with Pix (30% off) or ${esc(PRECO_TRIMESTRAL)} by card or boleto, one-time payment.</li><li>12 months: ${esc(PRECO_ANUAL)}, one-time payment.</li></ul><h2>Can I try it without a card?</h2><p>The first two lessons of every course are free, with no card required.</p><h2>What currency are the prices in?</h2><p>Prices are in Brazilian reais (R$); your card issuer converts the currency. Full refund within 7 days.</p><p>${a('/cursos', 'Try 2 free lessons, no card')} · ${a('/cadastro', 'Create account')} · ${a('/termos', 'Read the terms')}</p>`;
+  if (base === '/assinatura' && loc.codigo === 'en') corpo = cabeca(m.titulo ?? '', m.descricao) + `<h2 id="oferta-atual">Linvuu Subscription</h2><p>Access to every Linvuu course, with explanations in English.</p><ul><li>Monthly: ${esc(PRECOS.en.mensal)}, with automatic renewal.</li><li>12 months: ${esc(PRECOS.en.anual)}, one-time payment by card.</li></ul><h2>Can I try it without a card?</h2><p>The first two lessons of every course are free, with no card required.</p><h2>What currency are the prices in?</h2><p>Prices are in US dollars, paid by card (Apple Pay and Google Pay where your device supports them). Full refund within 7 days.</p><p>${a('/cursos', 'Try 2 free lessons, no card')} · ${a('/cadastro', 'Create account')} · ${a('/termos', 'Read the terms')}</p>`;
   if (base === '/excluir-conta') {
     // Sem JavaScript a página continua útil: texto completo e o endereço para o pedido.
     const x = EXCLUSAO[loc.codigo];

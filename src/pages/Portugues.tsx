@@ -3,7 +3,7 @@ import { usePageTitle } from '../lib/usePageTitle';
 import { JsonLd } from '../components/JsonLd';
 import { EMAIL_OFICIAL } from '../config/site';
 import { siteDoIdioma, urlAbsolutaEm } from '../i18n/locales';
-import { PRECO_MENSAL, SESSOES_GRATIS } from '../config/planos';
+import { precosDo, SESSOES_GRATIS } from '../config/planos';
 import { LOCALE, useT } from '../i18n';
 
 /** Página de entrada do curso de português do Brasil para estrangeiros, no idioma do site. Em português, serve para indicar o curso a estrangeiros. */
@@ -33,7 +33,7 @@ export default function Portugues() {
               </>
             )}
           </div>
-          <p className="nota">{c.nota(SESSOES_GRATIS, PRECO_MENSAL)}</p>
+          <p className="nota">{c.nota(SESSOES_GRATIS, precosDo(LOCALE.codigo).mensal)}</p>
         </div>
       </header>
 

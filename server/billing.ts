@@ -9,13 +9,13 @@ import { getAuth } from 'firebase-admin/auth';
 import { firebaseAdmin } from './firebase-admin';
 import { consultarPlay, playConfigurado } from './play';
 import { registrarWebhookCobranca } from './billing-webhook';
-import { precoMensalObrigatorio, planoSiteValido } from './billing-contrato';
+import { precoMensalObrigatorio, precoMensalUsdObrigatorio, planoSiteValido, planoUsdValido } from './billing-contrato';
 import crypto from 'node:crypto';
 import { podeComprar, type Acesso } from './acesso-calculo';
 import { acessoDoRegistro, gravarRegistro, lerRegistro, liberarConversao, reservarConversao } from './acesso';
 import { enviarCompra, validarMedicao } from './conversoes';
 import { criarProcessadorCobranca } from './cobranca-eventos';
-import { CENTAVOS } from '../src/config/planos.ts';
+import { CENTAVOS, CENTAVOS_USD } from '../src/config/planos.ts';
 import { caminhoNoPerfil } from '../src/i18n/locales.ts';
 import { perfilDaRequisicao } from './dominio';
 
@@ -210,6 +210,9 @@ export function registrarCobranca(app: Express, urlBase: (req: Request) => strin
       const base = urlBase(req);
       const plano = req.body?.plano;
       if (!planoSiteValido(plano)) { res.status(400).json({ error: 'Plano inválido.' }); return; }
+      // linvuu.com cobra em dólares (docs/PRECOS-DEFINIDOS.md): só mensal e anual, só cartão, sem código FUNDADORES.
+      const dolar = perfilDaRequisicao(req) === 'global';
+      if (dolar && !planoUsdValido(plano)) { res.status(400).json({ error: 'Plano indisponível neste site.' }); return; }
       const pix = plano === 'trimestral-pix';
       const anual = plano === 'anual';
       const pacote = plano === 'trimestral' || pix || anual;
@@ -220,14 +223,28 @@ export function registrarCobranca(app: Express, urlBase: (req: Request) => strin
       const medicao = validarMedicao(req.body?.medicao, req.ip, req.get('user-agent'));
       const c = await cliente(u);
       // idioma do site (pt, en): o checkout do Stripe e a volta para o site ficam no mesmo idioma
-      const idioma = req.body?.idioma === 'en' ? ('en' as const) : null;
+      const idioma = dolar || req.body?.idioma === 'en' ? ('en' as const) : null;
       // volta para o idioma e para o domínio de onde veio (no .com o inglês não tem prefixo; no .com.br segue /en)
       const perfil = perfilDaRequisicao(req);
       const rota = (cod: 'pt-BR' | 'en') => caminhoNoPerfil(perfil, cod, '/assinatura');
       // Duplo clique (ou nova tentativa da rede) com o mesmo pedido em 10 minutos devolve a MESMA sessão, não abre outra.
-      const opcoes = { idempotencyKey: 'checkout-' + crypto.createHash('sha256').update(JSON.stringify([u.uid, plano, idioma, medicao, Math.floor(Date.now() / 600_000)])).digest('hex').slice(0, 40) };
-      const comum = { customer: c, locale: (idioma ?? 'pt-BR') as 'pt-BR' | 'en', success_url: `${base}${rota(idioma ?? 'pt-BR')}?ok=1`, cancel_url: `${base}${rota(idioma ?? 'pt-BR')}`, client_reference_id: u.uid, allow_promotion_codes: true };
-      const s = pix
+      const opcoes = { idempotencyKey: 'checkout-' + crypto.createHash('sha256').update(JSON.stringify([u.uid, plano, idioma, dolar, medicao, Math.floor(Date.now() / 600_000)])).digest('hex').slice(0, 40) };
+      const comum = { customer: c, locale: (idioma ?? 'pt-BR') as 'pt-BR' | 'en', success_url: `${base}${rota(idioma ?? 'pt-BR')}?ok=1`, cancel_url: `${base}${rota(idioma ?? 'pt-BR')}`, client_reference_id: u.uid, allow_promotion_codes: !dolar };
+      const s = dolar
+        ? (anual
+          ? await stripe!.checkout.sessions.create({
+              ...comum, mode: 'payment', allowed_payment_method_types: ['card'],
+              line_items: [{ quantity: 1, price_data: { currency: 'usd', unit_amount: CENTAVOS_USD.anual, product_data: { name: 'Linvuu: 12 months of access' } } }],
+              metadata: { plano: 'anual', uid: u.uid, ...medicao },
+              custom_text: { submit: { message: 'One payment, no automatic renewal, with a full refund within 7 days.' } },
+            }, opcoes)
+          : await stripe!.checkout.sessions.create({
+              ...comum, mode: 'subscription', allowed_payment_method_types: ['card'],
+              custom_text: { submit: { message: 'Full refund within 7 days. Cancel any time, no penalty.' } },
+              line_items: [{ price: precoMensalUsdObrigatorio(process.env.STRIPE_PRICE_ID_USD), quantity: 1 }],
+              metadata: { plano: 'mensal', uid: u.uid, ...medicao },
+            }, opcoes))
+        : pix
         ? await stripe!.checkout.sessions.create({
             ...comum, mode: 'payment', allowed_payment_method_types: ['pix'],
             payment_method_options: { pix: { expires_after_seconds: 86400 } },
