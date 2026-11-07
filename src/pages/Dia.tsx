@@ -105,7 +105,7 @@ export default function Dia() {
             {aula.status !== 'publicada' && <span className={`pill pill-aula-${aula.status}`}>{STATUS_AULA[aula.status]}</span>}
           </header>
 
-          <IdiomaExplicacao valor={explicacao} disponiveis={(['pt', 'en'] as const).filter((l) => fonteDoCurso(curso!.id) === l || (!!aula.aula && aulaTraduzida(curso!.id, aula.aula.numero, l)))} mudar={(l) => { lembrarExplicacao(curso!.id, l); setExplicacao(l); }} />
+          {import.meta.env.VITE_ALVO === 'apk' && <IdiomaExplicacao valor={explicacao} disponiveis={(['pt', 'en'] as const).filter((l) => fonteDoCurso(curso!.id) === l || (!!aula.aula && aulaTraduzida(curso!.id, aula.aula.numero, l)))} mudar={(l) => { lembrarExplicacao(curso!.id, l); setExplicacao(l); }} />}
           {aula.semTraducao && <p className="nota nota-traducao" role="note">{LOCALE.codigo === 'en' ? 'Available explanations:' : 'Explicações disponíveis:'} {t.linguas[aula.semTraducao]}</p>}
           {aula.status !== 'publicada' && (
             <p className="nota">{aula.sessao ? T.emRevisao : T.naoPublicada(curso!.nome)}</p>

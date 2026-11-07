@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
 import { Navegacao } from '../components/Navegacao';
 import { Gramatica as BlocoGramatica } from '../components/Sessao';
-import { CURSOS_ATIVOS, IDIOMAS_GRAMATICA, fonteDoCurso, explicacaoDoCurso, getCurso } from '../lib/content';
+import { idiomasDeGramaticaNoSite, fonteDoCurso, explicacaoDoCurso, getCurso } from '../lib/content';
 import { LOCALE, useT } from '../i18n';
 import { usePageTitle } from '../lib/usePageTitle';
 import type { Bloco } from '../lib/aulas';
@@ -14,9 +14,9 @@ import { useAuth } from '../lib/AuthContext';
 type Topico = Omit<Extract<Bloco, { tipo: 'gramatica' }>, 'tipo' | 'min' | 'tag'> & { id: string; categoria: string; aula: number; aulaTitulo: string; sessao: string; dia: number; /** língua do texto quando o tópico ainda não foi traduzido */ explicacaoEm?: string };
 interface Pacote { idioma: string; categorias: string[]; topicos: Topico[]; completo: boolean; bloqueados: number; semTraducao?: number }
 // Abas na ordem da vitrine do idioma do site (o curso de português para estrangeiros só aparece em inglês e espanhol).
-const IDIOMAS = [...new Set([...CURSOS_ATIVOS.map((c) => c.id), ...IDIOMAS_GRAMATICA])];
 
 export default function Gramatica() {
+  const IDIOMAS = idiomasDeGramaticaNoSite();
   const { id } = useParams();
   const curso = getCurso(id);
   const { usuario, carregando: autenticando } = useAuth();

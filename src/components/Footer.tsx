@@ -1,6 +1,6 @@
 import { BotaoPreferencias } from './AnalyticsConsent';
 import { Link } from 'react-router-dom';
-import { CURSOS_ATIVOS, IDIOMAS_GRAMATICA, cursoComExplicacaoNoSite } from '../lib/content';
+import { CURSOS_ATIVOS, idiomasDeGramaticaNoSite, cursoComExplicacaoNoSite } from '../lib/content';
 import { EMAIL_OFICIAL } from '../config/site';
 import { LOCALE, useT } from '../i18n';
 import { Redes } from './Redes';
@@ -32,7 +32,7 @@ export function Footer({ semNovidades = false }: { semNovidades?: boolean }) {
         <nav aria-label="Linvuu">
           <h2>Linvuu</h2>
           <Link to="/cursos">{t.nav.todos}</Link>
-          <Link to={`/gramatica/${CURSOS_ATIVOS.find((c) => IDIOMAS_GRAMATICA.includes(c.id))?.id ?? 'de'}`}>{t.nav.gramatica}</Link>
+          <Link to={`/gramatica/${idiomasDeGramaticaNoSite()[0] ?? 'ru'}`}>{t.nav.gramatica}</Link>
           <Link to="/portugues">{t.rodape.portugues}</Link>
           {LOCALE.codigo === 'pt-BR' && <><Link to="/livros">Livros</Link><Link to="/sobre">Quem somos</Link><Link to="/por-que-linvuu">Por que estudar com a Linvuu?</Link></>}
           <Link to="/#metodo">{t.nav.metodo}</Link>

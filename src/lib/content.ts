@@ -65,7 +65,8 @@ const INDICE = indiceJson.cursos as unknown as Record<string, { total: number; p
 export const fonteDoCurso = (id: string): Explicacao => INDICE[id]?.fonte ?? 'pt';
 /** Sem escolha salva: a língua do site, se o curso já tem aulas traduzidas nela; senão a língua em que o curso foi escrito. Aula sem tradução cai na original (resolverExplicacao). */
 export const explicacaoDoCurso = (id: string): Explicacao => {
-  try { const v = localStorage.getItem(chaveExplicacao(id)); if (explicacaoValida(v)) return v; } catch { /* sem armazenamento */ }
+  // No site cada domínio tem um só idioma de explicação (.com.br português, .com inglês): a escolha por curso existe só no app.
+  if (import.meta.env.VITE_ALVO === 'apk') { try { const v = localStorage.getItem(chaveExplicacao(id)); if (explicacaoValida(v)) return v; } catch { /* sem armazenamento */ } }
   return (TRADUCOES[LOCALE.explicacao]?.[id]?.aulas.length ?? 0) > 0 ? LOCALE.explicacao : fonteDoCurso(id);
 };
 const traducao = (id: string, explicacao = explicacaoDoCurso(id)): Traducao | undefined => fonteDoCurso(id) === explicacao ? undefined : TRADUCOES[explicacao]?.[id];
@@ -166,6 +167,8 @@ export const carregarAula = async (idioma: string, dia: number, explicacao = exp
 export const CURSOS_ATIVOS = CURSOS.filter((c) => c.id !== LOCALE.cursoOculto).sort((a, b) => LOCALE.ordem.indexOf(a.id) - LOCALE.ordem.indexOf(b.id));
 /** O curso tem explicação no idioma do site? No .com.br tudo é em português; no .com só entra quem já tem aulas explicadas em inglês. */
 export const cursoComExplicacaoNoSite = (id: string) => LOCALE.codigo === 'pt-BR' || coberturaNoSite(id).traduzidas > 0;
+/** Cursos com aba de gramática que o site deste domínio oferece (no .com, só os explicados em inglês). */
+export const idiomasDeGramaticaNoSite = () => [...new Set([...CURSOS_ATIVOS.map((c) => c.id), ...IDIOMAS_GRAMATICA])].filter(cursoComExplicacaoNoSite);
 /** O curso é para outro público (ex.: o curso de inglês, escrito para quem fala português, visto por quem escolheu o site em inglês). */
 export const cursoDeOutroPublico = (id: string) => id === LOCALE.cursoOculto;
 /** Cursos com a aba Gramática (gerada das aulas por scripts/gramatica.mjs). */
