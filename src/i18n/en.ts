@@ -73,6 +73,7 @@ export const en: Dicionario = {
   newsletter: { email: 'Your e-mail', consentimento: 'I agree to receive e-mails from Linvuu.', botao: 'Sign me up', ok: 'Done. You will receive Linvuu updates.', erro: 'We could not sign you up right now. Write to', invalido: 'Enter a valid e-mail address.', semAceite: 'Tick the box to receive e-mails.', ocupado: 'Sending…', assunto: 'Updates, please' },
   card: { noAr: (n: number) => (n === 1 ? '1 lesson online' : `${n} lessons online`), preparo: 'In preparation', ate: 'zero to B1', cobertura: (a: number, b: number) => (a >= b ? 'All lessons in English' : `${a} of ${b} lessons in English`) },
   cursosPagina: {
+    emBreve: 'Coming soon, with explanations in English',
     titulo: 'All courses', buscar: 'Search', exemplo: 'E.g. German, French', contagem: (n: number) => (n === 1 ? '1 course' : `${n} courses`),
     vazio: (q: string) => `No course found for "${q}". Try another word or`, limpar: 'clear the search', portugues: 'Brazilian Portuguese, explained in English →',
     avisoObraTitulo: '', avisoObraTexto: '',

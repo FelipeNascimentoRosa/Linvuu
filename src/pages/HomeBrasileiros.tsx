@@ -11,7 +11,7 @@ import { usePageTitle } from '../lib/usePageTitle';
 import { useRetomadaGeral } from '../lib/retomar';
 import { textoRetomada } from '../lib/mensagemRetomada';
 import { LIVROS } from '../config/livros';
-import { IDIOMAS_GRAMATICA } from '../lib/content';
+import { IDIOMAS_GRAMATICA, cursoComExplicacaoNoSite } from '../lib/content';
 import './home-brasileiros.css';
 
 const TODOS = [
@@ -24,7 +24,7 @@ const TODOS = [
   { id: 'ru', nome: 'Russo', oi: 'Привет', frase: 'Здравствуйте. Мне кофе, пожалуйста.', lang: 'ru', detalhe: 'Comece pelo cirílico. Construa o resto com orientação.' },
 ];
 // Cada público vê os cursos que não são a sua própria língua (em /en some o inglês; em / some o português para estrangeiros).
-const idiomas = TODOS.filter((i) => i.id !== LOCALE.cursoOculto);
+const idiomasDoSite = TODOS.filter((i) => i.id !== LOCALE.cursoOculto);
 const perguntas = [
   ['Preciso saber alguma coisa para começar?', 'Não. Você pode começar do zero. As explicações são em português e a trilha apresenta o idioma passo a passo.'],
   ['Como posso conhecer as aulas?', 'As duas primeiras aulas de cada curso são gratuitas. Você pode experimentar antes de decidir pela assinatura.'],
@@ -32,6 +32,8 @@ const perguntas = [
   ['Quanto tempo preciso reservar?', 'As sessões são organizadas para cerca de 30 minutos. Você pode estudar no seu ritmo e voltar para continuar.'],
 ];
 export default function HomeBrasileiros() {
+  // No .com só entram os cursos com aulas explicadas em inglês; a cobertura vem do índice carregado antes de abrir o site.
+  const idiomas = idiomasDoSite.filter((i) => cursoComExplicacaoNoSite(i.id));
   usePageTitle(h(HOME_BR.tituloSeo), h(HOME_BR.descricao));
   const retomada = useRetomadaGeral();
   const [idioma, setIdioma] = useState(idiomas[0]);
@@ -84,7 +86,9 @@ export default function HomeBrasileiros() {
       <div><p className="br-eyebrow">{h('CONHEÇA O VUU')}</p><h2 id="br-vuu-title">{h('Uma língua fica mais próxima quando faz sentido.')}</h2>
         <p>{h('Vuu acompanha a curiosidade que move a Linvuu: entender o que as palavras fazem, ouvir como soam e usar o idioma em situações reais.')}</p>
         <p>{h('Comece com uma explicação em português e pratique no seu ritmo.')}</p>
-        <HomeCourseLink to="/curso/de" className="br-text-link">{h('Conhecer o curso de alemão →')}</HomeCourseLink>
+        {LOCALE.codigo === 'pt-BR'
+          ? <HomeCourseLink to="/curso/de" className="br-text-link">{h('Conhecer o curso de alemão →')}</HomeCourseLink>
+          : <HomeCourseLink to={`/curso/${idiomas[0]?.id ?? 'br'}`} className="br-text-link">See the courses explained in English →</HomeCourseLink>}
       </div>
     </section>
     <section className="br-section" id="metodo"><div className="br-section-head"><div><p className="br-eyebrow">{h("MENOS ADIVINHAÇÃO. MAIS COMPREENSÃO.")}</p><h2>{h("Entender muda")}<br />{h("o jeito de aprender.")}</h2></div><p>{h("Você traz o português. A Linvuu usa essa base para explicar os sons, as estruturas e os erros comuns no novo idioma.")}</p></div>
@@ -95,7 +99,7 @@ export default function HomeBrasileiros() {
       ].map(([n, titulo, texto, icon, foto]) => <article key={n}><img className="br-method-foto" src={foto} alt="" width="1000" height="600" loading="lazy" decoding="async" /><div className="br-method-top"><span>{n}</span><b aria-hidden="true">{icon}</b></div><h3>{h(titulo)}</h3><p>{h(texto)}</p></article>)}</div>
     </section>
     <section className="br-section" id="idiomas"><span id="cursos" /><div className="br-section-head"><div><p className="br-eyebrow">{h("ESCOLHA UM CURSO ONLINE")}</p><h2>{h("Qual idioma você")}<br />{h("quer aprender hoje?")}</h2></div><p>{h("Para viajar, se aproximar de outras culturas ou realizar um objetivo seu. Encontre um idioma para começar.")}</p></div><div className="br-languages">{idiomas.map((i, n) => <HomeCourseLink key={i.id} to={`/curso/${i.id}`} className={`br-language br-language-${n}`}><span className="br-greeting" lang={i.lang}>{i.oi}<span aria-hidden="true">.</span></span><div><h3>{h(i.nome)}</h3><span aria-hidden="true">↗</span></div><p>{h(i.detalhe)}</p></HomeCourseLink>)}</div></section>
-    <section className="br-book"><div className="br-book-covers" aria-hidden="true">{['en', 'de', 'ru'].filter(id => id !== LOCALE.cursoOculto).map(id => <img key={id} src={`/livros/${id}-a1-a2-v1-600.webp`} width="600" height="800" alt="" loading="lazy" decoding="async" />)}</div><div><p className="br-eyebrow">{h("PARA QUEM GOSTA DE IR ALÉM")}</p><h2>{h("Seu aprendizado")}<br />{h("também tem páginas.")}</h2><p>{h("Explore os livros da Linvuu, leia com calma e volte aos assuntos que merecem mais atenção.")}</p><p>{h('Livros A1–A2 em seis idiomas. Leia os dois primeiros capítulos grátis, com áudio.')}</p><p>{h(LIVROS_EM_PRODUCAO)}</p><Link className="br-text-link" to="/livros">{h("Conhecer a coleção →")}</Link><div className="br-book-links"><HomeCourseLink to="/livros/de">{h("Livro de alemão →")}</HomeCourseLink><HomeCourseLink to="/livros/es">{h("Livro de espanhol →")}</HomeCourseLink></div></div></section>
+    <section className="br-book"><div className="br-book-covers" aria-hidden="true">{['en', 'de', 'ru'].filter(id => id !== LOCALE.cursoOculto && cursoComExplicacaoNoSite(id)).map(id => <img key={id} src={`/livros/${id}-a1-a2-v1-600.webp`} width="600" height="800" alt="" loading="lazy" decoding="async" />)}</div><div><p className="br-eyebrow">{h("PARA QUEM GOSTA DE IR ALÉM")}</p><h2>{h("Seu aprendizado")}<br />{h("também tem páginas.")}</h2><p>{h("Explore os livros da Linvuu, leia com calma e volte aos assuntos que merecem mais atenção.")}</p><p>{h('Livros A1–A2 em seis idiomas. Leia os dois primeiros capítulos grátis, com áudio.')}</p><p>{h(LIVROS_EM_PRODUCAO)}</p><Link className="br-text-link" to="/livros">{h("Conhecer a coleção →")}</Link><div className="br-book-links"><HomeCourseLink to="/livros/de">{h("Livro de alemão →")}</HomeCourseLink><HomeCourseLink to="/livros/es">{h("Livro de espanhol →")}</HomeCourseLink></div></div></section>
     <OfertaAtual />
     <section className="br-section br-faq" id="faq"><div><p className="br-eyebrow">{h("VAMOS COMEÇAR BEM")}</p><h2>{h("Uma dúvida")}<br />{h("antes do primeiro passo?")}</h2><Link to="/contato" className="br-text-link">{h("Fale com a Linvuu →")}</Link></div><div>{perguntas.map(([p,r]) => <details key={p}><summary>{h(p)}</summary><p>{h(r)}</p></details>)}</div></section>
     <section className="br-last"><p className="br-eyebrow">{h("SEU PRÓXIMO IDIOMA COMEÇA COM UM PASSO")}</p><h2>{h("Abra espaço para")}<br /><em>{h("novas conversas.")}</em></h2><a href="#idiomas" className="br-button">{h('Escolher meu idioma')} <span aria-hidden="true">↑</span></a><p>{h("Conheça a proposta. Explore os idiomas. Experimente uma aula.")}</p></section>

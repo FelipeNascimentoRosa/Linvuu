@@ -1,6 +1,6 @@
 import { BotaoPreferencias } from './AnalyticsConsent';
 import { Link } from 'react-router-dom';
-import { CURSOS_ATIVOS, IDIOMAS_GRAMATICA } from '../lib/content';
+import { CURSOS_ATIVOS, IDIOMAS_GRAMATICA, cursoComExplicacaoNoSite } from '../lib/content';
 import { EMAIL_OFICIAL } from '../config/site';
 import { LOCALE, useT } from '../i18n';
 import { Redes } from './Redes';
@@ -41,7 +41,7 @@ export function Footer({ semNovidades = false }: { semNovidades?: boolean }) {
         </nav>
         <nav aria-label={t.rodape.idiomas}>
           <h2>{t.rodape.idiomas}</h2>
-          {CURSOS_ATIVOS.map((c) => <Link key={c.id} to={`/curso/${c.id}`}>{c.nome}</Link>)}
+          {CURSOS_ATIVOS.filter((c) => cursoComExplicacaoNoSite(c.id)).map((c) => <Link key={c.id} to={`/curso/${c.id}`}>{c.nome}</Link>)}
         </nav>
       </div>
       <div className="lv-foot-base">

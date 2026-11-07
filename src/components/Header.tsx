@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { CURSOS_ATIVOS, IDIOMAS_GRAMATICA } from '../lib/content';
+import { CURSOS_ATIVOS, IDIOMAS_GRAMATICA, cursoComExplicacaoNoSite } from '../lib/content';
 import { useAuth } from '../lib/AuthContext';
 import { LOCALE, useT } from '../i18n';
 import { homeText } from '../i18n/home';
@@ -79,7 +79,7 @@ export function Header() {
 
       {menu && (
         <div className="lv-mobile" id="menu-mobile">
-          {CURSOS_ATIVOS.map((c) => <Link key={c.id} to={`/curso/${c.id}`}>{c.nome}</Link>)}
+          {CURSOS_ATIVOS.filter((c) => cursoComExplicacaoNoSite(c.id)).map((c) => <Link key={c.id} to={`/curso/${c.id}`}>{c.nome}</Link>)}
           <Link to="/cursos">{t.nav.todos}</Link>
           <Link to={GRAMATICA}>{t.nav.gramatica}</Link>
           <Link to="/#metodo">{t.nav.metodo}</Link>

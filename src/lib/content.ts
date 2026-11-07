@@ -75,6 +75,12 @@ export const coberturaDoCurso = (id: string) => {
   if (fonteDoCurso(id) === explicacaoDoCurso(id)) return { traduzidas: total, total, reserva: explicacaoDoCurso(id) };
   return { traduzidas: traducao(id)?.aulas.length ?? 0, total, reserva: fonteDoCurso(id) };
 };
+/** Aulas explicadas NO IDIOMA DO SITE (independe da escolha do aluno): é o que decide se o curso entra na vitrine daquele domínio. */
+export const coberturaNoSite = (id: string) => {
+  const total = INDICE[id]?.grupos?.length ?? 0;
+  if (fonteDoCurso(id) === LOCALE.explicacao) return { traduzidas: total, total };
+  return { traduzidas: TRADUCOES[LOCALE.explicacao]?.[id]?.aulas.length ?? 0, total };
+};
 /** A aula tem explicação no idioma do site? */
 export const aulaTraduzida = (id: string, aula: number, explicacao = explicacaoDoCurso(id)) => fonteDoCurso(id) === explicacao || !!traducao(id, explicacao)?.aulas.includes(aula);
 
@@ -158,6 +164,8 @@ export const carregarAula = async (idioma: string, dia: number, explicacao = exp
 
 /** Cursos da vitrine no idioma do site: cada público vê os idiomas que não são o seu, na ordem pensada para ele. */
 export const CURSOS_ATIVOS = CURSOS.filter((c) => c.id !== LOCALE.cursoOculto).sort((a, b) => LOCALE.ordem.indexOf(a.id) - LOCALE.ordem.indexOf(b.id));
+/** O curso tem explicação no idioma do site? No .com.br tudo é em português; no .com só entra quem já tem aulas explicadas em inglês. */
+export const cursoComExplicacaoNoSite = (id: string) => LOCALE.codigo === 'pt-BR' || coberturaNoSite(id).traduzidas > 0;
 /** O curso é para outro público (ex.: o curso de inglês, escrito para quem fala português, visto por quem escolheu o site em inglês). */
 export const cursoDeOutroPublico = (id: string) => id === LOCALE.cursoOculto;
 /** Cursos com a aba Gramática (gerada das aulas por scripts/gramatica.mjs). */
