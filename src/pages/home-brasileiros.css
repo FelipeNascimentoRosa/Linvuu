@@ -43,10 +43,6 @@
 .br-benefits{display:flex;justify-content:center;gap:60px;flex-wrap:wrap;padding:24px;border-top:1px solid var(--site-divisor);border-bottom:1px solid var(--site-divisor);font-size:15px}
 .br-benefits strong{color:var(--br-green)}
 .br-section{max-width:1200px;margin:auto;padding:80px 32px}
-.br-vuu-section{display:block}
-.br-vuu-section h2{max-width:690px;margin:16px 0 20px}
-.br-vuu-section p:not(.br-eyebrow){max-width:620px;font-size:17px;line-height:1.65;margin:0 0 14px}
-.br-vuu-section .br-text-link{display:inline-flex;margin-top:10px}
 .br-section-head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:36px}
 .br-section-head h2,.br-faq h2,.br-book h2{margin:14px 0 18px}
 .br-section-head>p{max-width:370px;line-height:1.65;color:var(--site-texto-secundario)}
