@@ -48,7 +48,7 @@ export const ptBR = {
   portuguesHome: {
     kicker: 'Português para estrangeiros',
     titulo: 'Tem um amigo estrangeiro?',
-    texto: 'A Linvuu também ensina português do Brasil para quem não fala português, do A1 ao B1, com as aulas explicadas em inglês ou em espanhol.',
+    texto: 'A Linvuu também ensina português do Brasil para quem não fala português, do A1 ao B1, com as aulas explicadas em inglês.',
     botao: 'Conhecer o curso', botao2: 'Ver em inglês',
   },
   faq: { kicker: 'Dúvidas', titulo: 'Antes de começar' },
@@ -58,9 +58,9 @@ export const ptBR = {
     { p: 'Quanto custa?', r: APK ? 'As compras dentro do aplicativo ainda não estão disponíveis.' : 'As 2 primeiras aulas de cada curso são grátis, sem cartão. Depois, a assinatura custa R$ 139 por mês, com todos os cursos. Você cancela quando quiser e pode pedir reembolso integral em até 7 dias.' },
     { p: 'Quanto tempo preciso por dia?', r: 'Cada aula tem 4 sessões de cerca de 30 minutos. O ideal é 1 hora por dia, mas uma sessão já conta. Com a conta criada, o progresso fica salvo e você continua em qualquer aparelho.' },
     { p: 'Vou ficar fluente?', r: 'A Linvuu entrega método, prática e constância; o nível que você alcança depende das suas horas de estudo e do uso real do idioma. As trilhas foram desenhadas para levar você do zero a uma base sólida, até o B1.' },
-    { p: 'Quem está por trás da Linvuu?', r: 'O método vem das aulas ao vivo do professor que criou a Linvuu. Cada curso é escrito por professores, com explicações pensadas para quem fala português, e passa por revisão antes de ser publicado.' },
+    { p: 'Quem está por trás da Linvuu?', r: 'O método vem das aulas ao vivo dos professores que criaram a Linvuu. Cada curso é escrito por professores, com explicações pensadas para quem fala português, e passa por revisão antes de ser publicado.' },
     { p: 'O áudio é de verdade?', r: 'Cada frase tem áudio gerado com vozes neurais do idioma, revisado aos poucos. Onde ainda não há arquivo, o site usa a voz do seu navegador e avisa na tela.' },
-    { p: 'O site existe em outros idiomas?', r: 'Sim. No topo da página você troca para inglês ou espanhol: o site e as explicações das aulas mudam de idioma; as frases, os diálogos e o áudio do idioma estudado continuam os mesmos.' },
+    { p: 'O site existe em outros idiomas?', r: 'Sim, e cada idioma mora no seu domínio: o português está em linvuu.com.br e o inglês em linvuu.com. As frases, os diálogos e o áudio do idioma estudado continuam os mesmos nos dois.' },
   ],
   cta: { titulo: 'Sua primeira sessão leva 30 minutos.', texto: 'Comece agora: 2 aulas grátis, sem cartão e sem instalar nada.', primario: 'Começar grátis', secundario: 'Ver todos os cursos' },
   rodape: {
@@ -72,12 +72,14 @@ export const ptBR = {
   newsletter: { email: 'Seu e-mail', consentimento: 'Concordo em receber e-mails da Linvuu.', botao: 'Quero receber', ok: 'Pronto. Você vai receber as novidades da Linvuu.', erro: 'Não conseguimos registrar agora. Escreva para', invalido: 'Digite um e-mail válido.', semAceite: 'Marque a caixa para receber e-mails.', ocupado: 'Enviando…', assunto: 'Quero receber novidades' },
   card: { noAr: (n: number) => (n === 1 ? '1 aula no ar' : `${n} aulas no ar`), preparo: 'Em preparação', ate: 'do zero ao B1', cobertura: (_a: number, _b: number) => '' },
   cursosPagina: {
+    emBreve: 'Em breve',
     titulo: 'Todos os cursos', buscar: 'Buscar', exemplo: 'Ex.: alemão, francês', contagem: (n: number) => (n === 1 ? '1 curso' : `${n} cursos`),
-    vazio: (q: string) => `Nenhum curso encontrado para "${q}". Tente outra palavra ou`, limpar: 'limpe a busca', portugues: 'Português para estrangeiros (aulas em inglês ou espanhol) →',
+    vazio: (q: string) => `Nenhum curso encontrado para "${q}". Tente outra palavra ou`, limpar: 'limpe a busca', portugues: 'Português para estrangeiros (aulas em inglês) →',
+    avisoObraTitulo: '', avisoObraTexto: '',
   },
   cursoPagina: {
     continuarBtn: 'Continuar', sessaoTitulo: (n: number, t: string) => `Sessão ${n}: ${t}`, continuar: (n: number, t: string) => `Continuar na sessão ${n}: ${t}`, comecar: 'Começar pela sessão 1 (grátis)', feitas: (a: number, b: number) => `${a} de ${b} sessões concluídas`, concluida: 'concluída', aulasNivel: (n: number) => `${n} aulas`, retomarKicker: (c: string) => `Continuar ${c}`,
-    tituloSeo: (nome: string) => `${nome}: curso para quem fala português, do zero ao B1`,
+    tituloSeo: (nome: string) => `Curso de ${nome.toLowerCase()} online, explicado em português`,
     fatos: ['Sessões de ~30 min', 'Começa do zero'], noAr: (a: number, b: number) => `${a} de ${b} sessões no ar`, gramatica: (nome: string) => `Gramática: ${nome.toLowerCase()} →`,
     partida: (n: number) => `Seu ponto de partida: sessão ${n}`, sugerimos: (nivel: string, n: number, t: string) => `Para o nível ${nivel}, sugerimos começar pela sessão ${n}: ${t}.`, irPara: (n: number) => `Ir para a sessão ${n}`,
     producao: 'Parte das aulas deste curso ainda está sendo produzida. Você pode navegar pela trilha inteira e ver o tema de cada sessão.',
@@ -169,13 +171,13 @@ export const ptBR = {
     'auth/popup-blocked': 'O navegador bloqueou a janela do Google. Libere pop-ups e tente de novo.', 'auth/network-request-failed': 'Sem conexão. Verifique a internet e tente de novo.',
     'auth/unauthorized-domain': 'Este endereço ainda não foi autorizado para login.', 'auth/operation-not-allowed': 'Este tipo de login ainda não foi ativado.', 'auth/admin-restricted-operation': 'O cadastro por e-mail está desativado neste momento.',
     'auth/password-does-not-meet-requirements': 'A senha não atende às regras de segurança. Use letras maiúsculas e minúsculas, número e símbolo.', 'auth/configuration-not-found': 'O login por e-mail ainda não foi configurado.',
-    entreConta: 'Entre na sua conta para continuar.', pagamentoIndisponivel: 'O pagamento está indisponível no momento. Tente de novo em instantes.',
+    entreConta: 'Entre na sua conta para continuar.', jaTemAcesso: 'Você já tem acesso pago ativo. Para mudar de plano, use «Gerenciar ou cancelar» ou espere o período atual terminar.', pagamentoIndisponivel: 'O pagamento está indisponível no momento. Tente de novo em instantes.',
     padrao: 'Não foi possível concluir. Tente de novo.', compraApp: 'A compra ainda não está disponível neste aplicativo.',
   } as Record<string, string>,
   naoEncontrada: { titulo: 'Página não encontrada', texto: 'O endereço não existe ou mudou de lugar.', inicio: 'Voltar ao início', cursos: 'Ver cursos' },
   legal: { privacidade: 'Política de privacidade', termos: 'Termos de uso', descPriv: 'Quais dados a Linvuu coleta, para quê e quais são os seus direitos pela LGPD.', descTermos: 'Regras de uso do site e dos cursos da Linvuu.', aviso: '' },
   portugues: {
-    tituloSeo: 'Português para estrangeiros · Brazilian Portuguese', descSeo: 'Curso de português do Brasil para estrangeiros, do A1 ao B1, com aulas explicadas em inglês ou espanhol. 62 aulas.',
+    tituloSeo: 'Português para estrangeiros · Brazilian Portuguese', descSeo: 'Curso de português do Brasil para estrangeiros, do A1 ao B1, com aulas explicadas em inglês. 62 aulas.',
     kicker: 'Português para estrangeiros', h1: 'Português do Brasil para quem não fala português',
     lead: 'Um curso completo do zero ao B1, com cada aula explicada em inglês ou em espanhol. São 62 aulas de quatro sessões, com áudio, diálogos, gramática e exercícios. Indique a amigos, colegas e alunos estrangeiros.',
     comecar: 'Ver o curso em inglês', ver: 'Ver o curso em espanhol',
@@ -187,7 +189,7 @@ export const ptBR = {
       { cod: 'B1', aulas: '39–62', d: 'Usar o subjuntivo, hipóteses e discurso indireto, escrever e-mails formais, acompanhar notícias e resolver banco, CPF, SUS e Pix.' },
     ],
     pontos: [
-      'Explicações feitas para quem fala inglês ou espanhol: sons nasais, o «r», «lh» e «nh», ser × estar, contrações e falsos amigos.',
+      'Explicações feitas para quem fala inglês: sons nasais, o «r», «lh» e «nh», ser × estar, contrações e falsos amigos.',
       'Português do Brasil real: «você», «a gente», «tá», «pra», com a forma escrita ao lado e a indicação de quando usar cada uma.',
       'Situações de quem vive, estuda ou trabalha no Brasil: café, mercado, ônibus, hotel, médico, aluguel, banco.',
       'Sessões de cerca de 30 minutos: palavras, gramática, diálogo, exercícios com correção imediata e uma tarefa de fala ou escrita.',
@@ -206,7 +208,7 @@ export const ptBR = {
       { k: 'a1', titulo: 'A1 · Iniciante', resumo: '' }, { k: 'a2', titulo: 'A2 · Básico', resumo: '' }, { k: 'b1', titulo: 'B1 · Intermediário', resumo: '' },
     ],
   },
-  linguas: { pt: 'português', en: 'inglês', es: 'espanhol' } as Record<string, string>,
+  linguas: { pt: 'português', en: 'inglês'} as Record<string, string>,
   livro: { indisponivelIdioma: '' },
 };
 export type Dicionario = typeof ptBR;

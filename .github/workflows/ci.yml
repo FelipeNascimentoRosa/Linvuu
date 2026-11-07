@@ -49,6 +49,16 @@ jobs:
         run: node --import tsx scripts/testar-contrato-billing.ts
       - name: Testar notificações Stripe assinadas sem cobranças reais
         run: node --import tsx scripts/testar-billing-webhook.ts
+      - name: Política de acesso pago (início na confirmação, soma de pacotes, reembolso, disputa, compra duplicada)
+        run: node --import tsx scripts/testar-acesso-calculo.ts
+      - name: Do evento do Stripe ao acesso gravado e à conversão enviada uma vez
+        run: node --import tsx scripts/testar-cobranca-eventos.ts
+      - name: Conversões de compra só com consentimento, dados em hash
+        run: node --import tsx scripts/testar-conversoes.ts
+      - name: Registro de acesso (atalho só para «tem acesso»; Google Play não some)
+        run: node --import tsx scripts/testar-registro-acesso.ts
+      - name: Eventos exigidos do webhook do Stripe
+        run: node --import tsx scripts/testar-webhook-eventos.ts
       - name: Testar medição sem dados de produção
         run: npm run testar:medicao
       - name: Testar corretor e ditados reais

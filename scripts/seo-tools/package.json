@@ -4,11 +4,14 @@
   "private": true,
   "description": "Ferramentas isoladas de auditoria de SEO, não incluídas no site.",
   "devDependencies": {
-    "@lhci/cli": "0.15.1"
+    "@lhci/cli": "0.16.0"
   },
   "overrides": {
     "tmp": "^0.2.6",
     "uuid": "^11.1.1",
-    "basic-ftp": "^6.2.1"
+    "basic-ftp": "^6.2.1",
+    "@sentry/bundler-plugins": {
+      "glob": "^14.0.3"
+    }
   }
 }

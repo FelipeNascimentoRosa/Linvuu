@@ -30,7 +30,9 @@ Como usar em qualquer ferramenta: cole este arquivo inteiro, depois peça a peç
 
 **Visual em uma frase:** editorial, sóbrio, muito espaço em branco, tipografia serifada forte, uma única cor de destaque tipo caneta (ocre) usada só em traços.
 
-**Proibido:** gradiente roxo ou azul, ilustração 3D, estilo "Corporate Memphis", mascotes, bandeiras, símbolos turísticos (matrioska, castelo, torre, Cristo Redentor), emoji em peça da marca, fontes de sistema, fotos de estoque sorridente, cara de template gerado por IA, "tudo colorido" com 6 cores.
+**Proibido:** gradiente roxo ou azul, ilustração 3D, estilo "Corporate Memphis", bandeiras, símbolos turísticos (matrioska, castelo, torre, Cristo Redentor), emoji em peça da marca, fontes de sistema, fotos de estoque sorridente, cara de template gerado por IA, "tudo colorido" com 6 cores.
+
+**O mascote (Vuu).** O Vuu é a cara do marketing e do produto da Linvuu: pode protagonizar peças de marketing e de conteúdo — redes sociais (reels e carrosséis), campanhas, capas de conteúdo e áreas de produto do site e do app. O que o Vuu não faz é substituir o núcleo institucional da marca: logotipo, avatar, favicon e a identidade legal e de rodapé continuam a ser o símbolo L, sem mascote. E há um limite de legibilidade, que é fato medido e não gosto: os estados de expressão do Vuu só se distinguem a partir de 96 px, portanto ele nunca aparece menor do que isso.
 
 ---
 
@@ -232,7 +234,8 @@ Como imprimir ou salvar em PDF: abrir no navegador, `Ctrl+P` (Windows) ou `Cmd+P
 - [ ] Acento tônico em grafite, nunca em vermelho.
 - [ ] Nenhuma promessa sem prova ("melhor que", "oficial", "garantido", "nativo").
 - [ ] Nenhum nome de concorrente.
-- [ ] Nenhum emoji, nenhuma bandeira, nenhum mascote, nenhuma ilustração 3D.
+- [ ] Nenhum emoji, nenhuma bandeira, nenhuma ilustração 3D.
+- [ ] Vuu só em marketing, conteúdo e áreas de produto, sempre com 96 px ou mais; logotipo, avatar, favicon e rodapé legal sempre com o símbolo L, sem mascote.
 - [ ] Logotipo com área de proteção e tamanho mínimo.
 - [ ] Texto explicativo em português; idioma-alvo separado.
 - [ ] Exercícios com resposta e explicação.

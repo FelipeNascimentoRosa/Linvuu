@@ -10847,7 +10847,7 @@
       "dia": 229,
       "titulo": "Je voudrais signaler un problème",
       "explicacao": "STEP 1: start calm and polite: «Excusez-moi, je voudrais signaler un problème.» STEP 2: describe the fact without accusing: «La climatisation ne marche pas.» «Mes bagages ne sont pas arrivés.» STEP 3: say what you want, using the conditional: «Je voudrais être remboursé.» «Pourriez-vous changer ma chambre ?» STEP 4: ask for a solution: «Que pouvez-vous faire pour moi ?» STEP 5: formal formulas: «Je vous demande de bien vouloir…», «Je souhaiterais obtenir…» STEP 6: if necessary, insist without aggression: «Je comprends, mais ce n'est pas acceptable.»",
-      "comparacao": "in English «I want my money back» sounds firm but is acceptable. In French, the same request with «je veux» sounds aggressive; «je voudrais être remboursé» or «pourriez-vous me rembourser» work better and faster.",
+      "comparacao": "In both English and French, tone and context matter. «Je veux un remboursement» is grammatical but can sound blunt; «Je voudrais être remboursé» or «Pourriez-vous me rembourser ?» is often more tactful when requesting help.",
       "tabela": [
         {
           "situation": "to open",
@@ -10882,19 +10882,19 @@
       ],
       "erros": [
         {
-          "errado": "Je veux un remboursement.",
+          "errado": "Je voudrais être rembourser.",
           "certo": "Je voudrais être remboursé.",
-          "motivo": "Polite request: conditional."
+          "motivo": "After «être», use the past participle «remboursé». Use «remboursée» for a female speaker."
         },
         {
-          "errado": "Mes bagages sont perdus.",
+          "errado": "Mes bagages ne sont pas arrivé.",
           "certo": "Mes bagages ne sont pas arrivés.",
-          "motivo": "Fact, without blame."
+          "motivo": "The past participle agrees with the masculine plural subject «bagages»."
         },
         {
-          "errado": "Vous pouvez changer ma chambre ?",
+          "errado": "Pourriez-vous changer à ma chambre ?",
           "certo": "Pourriez-vous changer ma chambre ?",
-          "motivo": "Mais formal."
+          "motivo": "Here «changer» takes its direct object without «à». «Vous pouvez changer ma chambre ?» is also grammatical; «pourriez-vous» is more formal."
         },
         {
           "errado": "Je me plains de le service.",
@@ -10911,8 +10911,8 @@
       "sessao": "S2",
       "dia": 230,
       "titulo": "Le vol a été annulé",
-      "explicacao": "STEP 1: passive voice = «être» + past participle, which agrees with the subject: «Le vol est annulé.» «Les bagages sont perdus.» STEP 2: the tense comes from the verb «être»: «Le vol a été annulé» (passé composé), «Le vol sera annulé» (future), «Le vol était annulé» (imparfait). STEP 3: the agent of the action comes with «par»: «Le vol a été annulé par la compagnie.» STEP 4: with feeling or state, «de»: «Il est aimé de tous.» STEP 5: French prefers «on» and avoids the passive in speech: «On a annulé le vol.» STEP 6: «se faire» + infinitive is an informal passive: «Je me suis fait voler mon sac.»",
-      "comparacao": "in English «the flight was cancelled» works the same way. The difference is the participle, which agrees («les bagages sont perdus»), and French's preference for «on» in speech: «on a perdu mes bagages». «Je me suis fait voler mon sac» is very frequent and has no direct equivalent (English: “I had my bag stolen”).",
+      "explicacao": "STEP 1: the passive uses «être» + a past participle that agrees with the subject: «Le vol est annulé.» «Les bagages sont perdus.» STEP 2: the form of «être» locates the event or state in time: «Le vol a été annulé» (passé composé), «Le vol sera annulé» (future), «Le vol était annulé» (imparfait). STEP 3: an agent is often introduced with «par»: «Le vol a été annulé par la compagnie.» STEP 4: some verbs of feeling or state use «de»: «Il est aimé de tous.» STEP 5: in conversation, an active sentence with «on» is often an alternative: «On a annulé le vol.» STEP 6: «se faire» + infinitive can describe something that happens to someone: «Je me suis fait voler mon sac.» Its meaning depends on context; it is not a universal passive.",
+      "comparacao": "English also uses a passive in “the flight was canceled.” In French, the participle agrees with the subject: «les bagages sont perdus». You can also use active «on»: «on a perdu mes bagages». «Je me suis fait voler mon sac» means “I had my bag stolen”; the French participle «fait» remains unchanged before an infinitive.",
       "tabela": [
         {
           "mood": "present",
@@ -10971,7 +10971,7 @@
       "dia": 231,
       "titulo": "Talking to the airline",
       "explicacao": "STEP 1: ask for information: «Pouvez-vous me dire pourquoi mon vol a été retardé ?» STEP 2: ask for alternatives: «Y a-t-il un autre vol aujourd'hui ?» STEP 3: give the details: «Mon numéro de vol est AF 123.» STEP 4: declare the loss: «Je voudrais faire une déclaration de perte.» STEP 5: keep the record: «Pouvez-vous me donner un justificatif ?»",
-      "comparacao": "in English «could you tell me…?» is polite; in French, «pouvez-vous me dire» or «pourriez-vous me dire» both work. Watch out for «un justificatif», an essential word for claiming a refund later.",
+      "comparacao": "In English, “could you tell me…?” is polite; in French, «pouvez-vous me dire» and «pourriez-vous me dire» both work. A «justificatif» is supporting documentation; depending on the situation, it may be a receipt, confirmation or other proof.",
       "tabela": [
         {
           "step": "1",
@@ -11006,9 +11006,9 @@
       ],
       "erros": [
         {
-          "errado": "Je veux faire une déclaration.",
+          "errado": "Je voudrais faire une déclaration du perte.",
           "certo": "Je voudrais faire une déclaration de perte.",
-          "motivo": "Polite and specific."
+          "motivo": "Use «de perte» after «déclaration»; the polite conditional «je voudrais» is appropriate."
         },
         {
           "errado": "Mon vol est retard.",
@@ -11016,9 +11016,9 @@
           "motivo": "Participle."
         },
         {
-          "errado": "Il y a un autre vol ?",
+          "errado": "Y a-il un autre vol ?",
           "certo": "Y a-t-il un autre vol ?",
-          "motivo": "Formal form."
+          "motivo": "In formal inversion, add the linking «-t-»: «Y a-t-il… ?». «Il y a un autre vol ?» is also correct in conversational French."
         },
         {
           "errado": "Pouvez vous me donner.",
@@ -11036,7 +11036,7 @@
       "dia": 233,
       "titulo": "To take the floor",
       "explicacao": "STEP 1: asking for the floor: «Puis-je intervenir ?» «Je voudrais ajouter quelque chose.» STEP 2: making a proposal: «Je propose que nous commencions par le budget.» (subjunctive after «proposer que») STEP 3: supporting: «Je suis d'accord avec Marie sur ce point.» STEP 4: objecting politely: «Je comprends votre point de vue, mais je crains que ce ne soit pas réaliste.» STEP 5: asking for clarification: «Pourriez-vous préciser ce que vous entendez par là ?» STEP 6: summarizing: «Pour résumer, nous avons décidé de…» STEP 7: closing: «Si personne n'a d'autres remarques, je propose de clore la réunion.»",
-      "comparacao": "in English «I don't think that will work» sounds direct. In French, an objection usually starts by acknowledging the other person: «je comprends, mais…». Without that opening, the sentence seems abrupt in a meeting.",
+      "comparacao": "In both English and French, the level of directness depends on the people and the setting. In a formal meeting, acknowledging a colleague’s point before objecting can soften your disagreement: «Je comprends votre point de vue, mais…».",
       "tabela": [
         {
           "situation": "to ask for the floor",
@@ -11059,7 +11059,7 @@
           "informal": "Je pense pas que ça marche."
         },
         {
-          "situation": "esclarecer",
+          "situation": "ask for clarification",
           "formal": "Pourriez-vous préciser ?",
           "informal": "Tu veux dire quoi ?"
         },
@@ -11086,9 +11086,9 @@
           "motivo": "«Craindre que» + subjunctive."
         },
         {
-          "errado": "Je peux intervenir ?",
+          "errado": "Puis-je à intervenir ?",
           "certo": "Puis-je intervenir ?",
-          "motivo": "Formal inversion with «puis»."
+          "motivo": "Use «puis-je» directly with the infinitive, without «à». «Je peux intervenir ?» is also correct, but less formal."
         }
       ]
     },
@@ -11143,12 +11143,12 @@
         {
           "errado": "Nous signons sauf si le prix augmentait.",
           "certo": "Nous signons sauf si le prix augmente.",
-          "motivo": "«Sauf si» + present."
+          "motivo": "For the present situation in this example, use the present indicative after «sauf si». Other indicative tenses are possible when the context calls for them."
         },
         {
           "errado": "Au cas où il refuse, appelez-moi.",
           "certo": "Au cas où il refuserait, appelez-moi.",
-          "motivo": "«Au cas où» + conditional."
+          "motivo": "In careful standard French, «au cas où» is normally followed by the conditional."
         },
         {
           "errado": "Je regrette mais nous pouvons pas.",
@@ -11165,8 +11165,8 @@
       "sessao": "S3",
       "dia": 235,
       "titulo": "Reporting verbs",
-      "explicacao": "STEP 1: in written reports, prefer more precise verbs than «dire»: «Il a annoncé que…», «Elle a confirmé que…», «Il a suggéré de…», «Elle a insisté sur…», «Il a reconnu que…» STEP 2: the tense shifts back after a past-tense verb: «Il a dit : \"Je viendrai\" → Il a dit qu'il viendrait.» STEP 3: questions: «Elle a demandé si nous étions prêts.» STEP 4: orders: «Il nous a demandé de partir.» STEP 5: minutes formulas: «Il a été décidé que…», «Il a été convenu de…»",
-      "comparacao": "in English «he said he would come» also shifts the tense back. What is new is the richness of verbs: in professional French, «dire» is little used in minutes; «annoncer», «confirmer» and «souligner» give precision.",
+      "explicacao": "STEP 1: in written reports, prefer more precise verbs than «dire»: «Il a annoncé que…», «Elle a confirmé que…», «Il a suggéré de…», «Elle a insisté sur…», «Il a reconnu que…» STEP 2: after a past reporting verb, the tense often shifts when describing a future event from that past perspective: «Il a dit : \"Je viendrai\" → Il a dit qu'il viendrait.» STEP 3: questions: «Elle a demandé si nous étions prêts.» STEP 4: orders: «Il nous a demandé de partir.» STEP 5: minutes formulas: «Il a été décidé que…», «Il a été convenu de…»",
+      "comparacao": "English also often shifts tenses in reported speech: “he said he would come.” In meeting minutes, specific reporting verbs such as «annoncer», «confirmer» and «souligner» make the speaker’s purpose clearer.",
       "tabela": [
         {
           "verb": "annoncer que",
@@ -11195,9 +11195,9 @@
       ],
       "erros": [
         {
-          "errado": "Il a dit qu'il viendra.",
+          "errado": "Il a dit qu'il viendrais.",
           "certo": "Il a dit qu'il viendrait.",
-          "motivo": "Backshift: conditional."
+          "motivo": "For «il», the conditional ending is «-ait». Here it expresses a future event viewed from the past."
         },
         {
           "errado": "Elle a demandé si étions-nous prêts.",
@@ -11224,8 +11224,8 @@
       "sessao": "S1",
       "dia": 237,
       "titulo": "Four shortcuts for reading and listening",
-      "explicacao": "STEP 1: cognates: many French words look like English ones (-tion = -tion: «la décision», «l'information»; -ité = -ity: «la qualité», «la liberté»; -eur = -or: «le professeur», «l'acteur»). STEP 2: word families: «travailler, travail, travailleur, travaillé» share the same root. If you know one, you understand the others. STEP 3: prefixes: «re-» = again («refaire»), «in-/im-» = negation («impossible»), «dé-» = undoing («défaire»), «pré-» = before («prévoir»). STEP 4: context: read the whole sentence and ask yourself what kind of word is missing (person, action, place). STEP 5: when listening, look first for the words you know, the numerals and the proper names; the essentials are usually there. STEP 6: do not stop at an unknown word: keep going and come back to it later.",
-      "comparacao": "in English, the endings «-tion» and «-ity» have French counterparts («-tion», «-té»). That gives you a huge passive vocabulary for free. Only beware of the false friends, which we cover next.",
+      "explicacao": "STEP 1: cognates: many French words look like English ones (-tion = -tion: «la décision», «l'information»; -ité = -ity: «la qualité», «la liberté»; -eur = -or: «le professeur», «l'acteur»). STEP 2: word families: «travailler, travail, travailleur, travaillé» share the same root. Knowing one can help you infer another; verify its meaning in context. STEP 3: prefixes: «re-» = again («refaire»), «in-/im-» = negation («impossible»), «dé-» = undoing («défaire»), «pré-» = before («prévoir»). STEP 4: context: read the whole sentence and ask yourself what kind of word is missing (person, action, place). STEP 5: when listening, look first for the words you know, the numerals and the proper names; the essentials are usually there. STEP 6: do not stop at an unknown word: keep going and come back to it later.",
+      "comparacao": "in English, the endings «-tion» and «-ity» have French counterparts («-tion», «-té»). These patterns can help you recognize words, but spelling and meaning do not always match. Check the context and watch for false friends.",
       "tabela": [
         {
           "expression": "-tion = -tion (same ending in English)",
@@ -11233,7 +11233,7 @@
           "example": "la décision, l'information"
         },
         {
-          "expression": "-té = -dade",
+          "expression": "-té ≈ -ty (often)",
           "function": "cognates",
           "example": "la qualité, la liberté"
         },
@@ -11289,8 +11289,8 @@
       "sessao": "S2",
       "dia": 238,
       "titulo": "Watch out for the traps",
-      "explicacao": "STEP 1: «rester» = to stay: «Je reste à Paris.» (not «to rest») STEP 2: «demander» = to ask (not “to demand”): «Il demande un café.» «Elle demande l'heure.» STEP 3: «attendre» = to wait (not “to attend”): «J'attends le bus.» STEP 4: «exprès» = on purpose (not “express”): «Il l'a fait exprès.» STEP 5: «sale» = dirty (not “sale”): «Mes mains sont sales.» STEP 6: «ignorer» = not to know (not “to ignore”): «J'ignore la réponse.» STEP 7: «magasin» = shop (not «magazine»): «Il y a un magasin près d'ici.» STEP 8: «blesser» = to hurt, to wound (not “to bless”): «Il s'est blessé à la jambe.» STEP 9: «tirer» = to pull (not “to tire”): «Tirez la porte.»",
-      "comparacao": "in English, «to wait» and «to attend» are the ones that confuse most: French «attendre» means to wait, not to attend. And «ignorer» is not to deliberately overlook, but to not know: «j'ignore» = «I don't know».",
+      "explicacao": "STEP 1: «rester» = to stay: «Je reste à Paris.» (not «to rest») STEP 2: «demander» = to ask (not “to demand”): «Il demande un café.» «Elle demande l'heure.» STEP 3: «attendre» = to wait (not “to attend”): «J'attends le bus.» STEP 4: «exprès» = on purpose (not “express”): «Il l'a fait exprès.» STEP 5: «sale» = dirty (not “sale”): «Mes mains sont sales.» STEP 6: «ignorer» can mean not to know, and can also mean to ignore, depending on context: «J'ignore la réponse.» STEP 7: «magasin» = shop (not «magazine»): «Il y a un magasin près d'ici.» STEP 8: «blesser» = to hurt, to wound (not “to bless”): «Il s'est blessé à la jambe.» STEP 9: «tirer» = to pull (not “to tire”): «Tirez la porte.»",
+      "comparacao": "French «attendre» usually means to wait (for), not to attend an event: «assister à» means to attend. «Ignorer» can mean not to know, as in «j’ignore la réponse», or to ignore someone, depending on context.",
       "tabela": [
         {
           "expression": "rester",
@@ -11304,7 +11304,7 @@
         },
         {
           "expression": "attendre",
-          "function": "to hope",
+          "function": "to wait (for)",
           "example": "J'attends le bus."
         },
         {
@@ -11335,9 +11335,9 @@
           "motivo": "«Exprès» means on purpose."
         },
         {
-          "errado": "Je demande si tu as faim. (in place of «I demand»)",
-          "certo": "Je te demande si tu as faim.",
-          "motivo": "«Demander» means to ask, never to demand."
+          "errado": "Je demande si tu as faim. (intended meaning: “I demand that you eat”)",
+          "certo": "J’exige que tu manges.",
+          "motivo": "«Demander» commonly means to ask or ask for. For an emphatic demand, «exiger» is often appropriate; context matters."
         },
         {
           "errado": "Mon pull est sal.",
@@ -11355,10 +11355,10 @@
       "dia": 239,
       "titulo": "Working around gaps and asking for help",
       "explicacao": "STEP 1: ask for the word: «Comment dit-on \"tool\" en français ?» STEP 2: describe: «C'est un truc qui sert à couper.» «C'est quelque chose qu'on utilise pour…» STEP 3: use another, simpler word: «Je veux dire…», «c'est-à-dire…» STEP 4: ask for a repeat: «Pouvez-vous répéter, s'il vous plaît ?» «Pouvez-vous parler plus lentement ?» STEP 5: confirm: «Si j'ai bien compris, vous voulez dire que…» STEP 6: buy time: «Euh… comment dire…», «Attendez, je réfléchis.»",
-      "comparacao": "in English we say «that thing you use to…» without embarrassment. In French, «un truc qui sert à…» plays the same role and is completely natural; using it is a sign of strategy, not weakness.",
+      "comparacao": "In English, “that thing you use to…” can help when you forget a word. In everyday French, «un truc qui sert à…» works similarly; «un objet qui sert à…» is more suitable in formal contexts.",
       "tabela": [
         {
-          "situation": "to ask for the floor",
+          "situation": "ask for a word",
           "formal": "Comment dit-on… en français ?",
           "informal": "Ça se dit comment ?"
         },
@@ -11368,7 +11368,7 @@
           "informal": "C'est un truc pour…"
         },
         {
-          "situation": "to repeat",
+          "situation": "ask someone to repeat",
           "formal": "Pourriez-vous répéter ?",
           "informal": "Tu peux répéter ?"
         },
@@ -11383,16 +11383,16 @@
           "informal": "Donc tu veux dire que…"
         },
         {
-          "situation": "to save time",
+          "situation": "buy time",
           "formal": "Attendez, je réfléchis.",
           "informal": "Euh… comment dire…"
         }
       ],
       "erros": [
         {
-          "errado": "Comment dit-on en français \"tool\" ?",
-          "certo": "Comment dit-on \"tool\" en français ?",
-          "motivo": "Order."
+          "errado": "Comment dit-on «tool» à français ?",
+          "certo": "Comment dit-on «tool» en français ?",
+          "motivo": "Use «en français» to ask how to say something in French."
         },
         {
           "errado": "Pouvez-vous répéter plus slowly ?",
@@ -11428,12 +11428,12 @@
         },
         {
           "topic": "Indirect speech",
-          "rule": "the tense shifts back: present → imparfait, future → conditional; «si» for questions; «de» + infinitive for orders.",
+          "rule": "After a past reporting verb, tenses often shift: present → imparfait and future → conditional. Use «si» for yes/no questions and «de» + infinitive for reported commands.",
           "aula": "40"
         },
         {
           "topic": "Passive voice and «on»",
-          "rule": "«être» + participle (agrees); agent with «par»; in speech, «on» and «se faire».",
+          "rule": "Use «être» + a past participle that agrees with the subject; introduce an expressed agent with «par». In everyday speech, «on» often provides an active alternative. «Se faire» has its own meanings and is not always interchangeable with a passive.",
           "aula": "41"
         },
         {
@@ -11443,7 +11443,7 @@
         },
         {
           "topic": "Compound relatives and «ce»",
-          "rule": "«lequel, auquel, duquel» after a preposition; «ce qui, ce que, ce dont».",
+          "rule": "Use «lequel» and related forms after prepositions, with contractions such as «auquel» and «duquel»; use «ce qui», «ce que» and «ce dont» when the antecedent is unstated.",
           "aula": "43, 56"
         },
         {
@@ -11453,7 +11453,7 @@
         },
         {
           "topic": "Subjunctive: formation",
-          "rule": "stem of «ils» + «-e, -es, -e, -ions, -iez, -ent»; irregulars: être, avoir, aller, faire, pouvoir, savoir.",
+          "rule": "Often form the subjunctive from the present-tense «ils» stem: «-e, -es, -e, -ent». The «nous» and «vous» forms can use a different stem: «que nous prenions», «que vous preniez». Learn common irregulars such as être, avoir, aller, faire, pouvoir and savoir.",
           "aula": "45"
         },
         {
@@ -11510,7 +11510,7 @@
         },
         {
           "topic": "Pronoun order",
-          "rule": "me/te/se/nous/vous → le/la/les → lui/leur → y → en; imperative: «donne-le-moi»; «y» and «en» replace things.",
+          "rule": "Before a conjugated verb, the usual order is me/te/se/nous/vous → le/la/les → lui/leur → y → en. In an affirmative command, order changes: «donne-le-moi». «Y» can replace a place or an à-phrase; «en» can replace a de-phrase or an amount. People often require «à lui/elle» or «de lui/elle».",
           "aula": "54"
         },
         {
@@ -11540,7 +11540,7 @@
         },
         {
           "topic": "Strategies",
-          "rule": "cognates (-tion, -té); word families; false friends: rester, demander, attendre, exprès, sale, ignorer.",
+          "rule": "Use context and cognates such as -tion words, but check false friends: «rester» means to stay, «demander» to ask, «attendre» to wait, «exprès» on purpose, «sale» dirty, and «ignorer» not to know or to ignore, depending on context.",
           "aula": "60"
         }
       ]
@@ -11552,8 +11552,8 @@
       "aulaTitulo": "B1 review",
       "sessao": "S3",
       "dia": 243,
-      "titulo": "The 16 most common B1 mistakes",
-      "explicacao": "Read each pair aloud: first the wrong one, then the right one.",
+      "titulo": "Sixteen B1 contrasts and common mistakes",
+      "explicacao": "Read each pair aloud and explain the difference. Most pairs contrast an error with a correction; the refund request compares a direct form with a more polite one.",
       "erros": [
         {
           "errado": "Quand il est arrivé, j'ai déjà mangé.",
@@ -11563,7 +11563,7 @@
         {
           "errado": "Il a dit qu'il viendra.",
           "certo": "Il a dit qu'il viendrait.",
-          "motivo": "Reporting in the past: the future becomes the conditional."
+          "motivo": "When reporting a future event from a past perspective, French commonly uses the conditional; the future can remain if the event is still future at the time of speaking."
         },
         {
           "errado": "Je pense qu'il vienne.",
@@ -11588,7 +11588,7 @@
         {
           "errado": "Si j'aurais su, je serais venu.",
           "certo": "Si j'avais su, je serais venu.",
-          "motivo": "After «si», never the conditional."
+          "motivo": "In this unreal past condition, use si + plus-que-parfait, followed by the past conditional in the result."
         },
         {
           "errado": "Le livre dont je t'ai parlé de.",
@@ -11628,7 +11628,7 @@
         {
           "errado": "Je veux un remboursement.",
           "certo": "Je voudrais être remboursé.",
-          "motivo": "Polite request."
+          "motivo": "Both sentences are grammatical. The conditional «je voudrais» makes the request more polite."
         },
         {
           "errado": "Il l'a fait expresso.",

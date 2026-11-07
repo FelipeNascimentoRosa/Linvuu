@@ -23,8 +23,7 @@ const IDIOMAS = CURSOS_ATIVOS.map((c) => c.id).filter((k) => IDIOMAS_GRAMATICA.i
 const textos = {
   'pt-BR': { offline: 'Sem conexão com o servidor. Mostrando os tópicos das sessões gratuitas, que já vêm no app.', erro: 'Não foi possível carregar a gramática agora.', tentar: 'Tentar novamente', aula: (n: number) => `Aula ${n}` },
   en: { offline: 'No connection to the server. Showing the topics from the free sessions, which come with the app.', erro: 'Could not load grammar right now.', tentar: 'Try again', aula: (n: number) => `Lesson ${n}` },
-  es: { offline: 'Sin conexión con el servidor. Mostrando los temas de las sesiones gratuitas, que ya vienen en la app.', erro: 'No se pudo cargar la gramática ahora.', tentar: 'Intentar de nuevo', aula: (n: number) => `Lección ${n}` },
-};
+  };
 
 /** Tópicos das sessões gratuitas embutidas no APK (sem rede). */
 async function topicosLocais(id: string): Promise<Pacote> {

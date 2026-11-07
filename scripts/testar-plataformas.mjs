@@ -1,6 +1,22 @@
 import assert from 'node:assert/strict';
+import { spawnSync } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
+
+// Pré-condição: este teste verifica artefactos de build (dist/ e dist-apk/).
+// Num clone limpo eles ainda não existem e o teste falhava com um falso
+// negativo — na CI só passava porque os builds corriam imediatamente antes.
+// Se um artefacto faltar, o build correspondente corre aqui; as asserções
+// abaixo não mudam e continuam a falhar se o build não produzir o esperado.
+const npm = process.platform === 'win32' ? 'npm.cmd' : 'npm';
+function garantirBuild(artefacto, script) {
+  if (fs.existsSync(artefacto)) return;
+  console.log(`testar-plataformas: ${artefacto} em falta — a correr "npm run ${script}"…`);
+  const r = spawnSync(npm, ['run', script], { stdio: 'inherit' });
+  if (r.status !== 0) process.exit(r.status ?? 1);
+}
+garantirBuild('dist/index.html', 'build');
+garantirBuild('dist-apk/index.html', 'build:apk');
 
 assert.ok(fs.existsSync('dist/index.html'), 'build website existe');
 assert.ok(fs.existsSync('dist-apk/index.html'), 'build apk existe');

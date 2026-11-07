@@ -19,7 +19,7 @@ path='/conta'; pixel.pageView(); pixel.checkout(); assert.equal(queue().filter(q
 assert.deepEqual(queue().at(-1),['consent','revoke'],'rota de conta suspende SDK já carregado');
 assert.equal(rotaSeguraParaPixel('/livros/de/capitulo/1','?email=cliente@example.com'),false);
 assert.equal(rotaSeguraParaPixel('/entrar',''),false); assert.equal(rotaSeguraParaPixel('/en/curso/ru','?fbclid=abc-123'),true);
-assert.equal(rotaSeguraParaPixel('/en',''),true); assert.equal(rotaSeguraParaPixel('/es',''),true);
+assert.equal(rotaSeguraParaPixel('/en',''),true);
 pixel.choose('no'); assert.equal(saved.get(MARKETING_CHOICE),'no'); assert.deepEqual(queue().at(-1),['consent','revoke']);
 path='/'; search=''; const before=queue().length; pixel.pageView(); assert.equal(queue().length,before,'sem novos eventos após revogar');
 path='/conta'; pixel.choose('yes'); pixel.pageView(); assert.equal(queue().length,before,'não reativar o pixel em rota de conta');

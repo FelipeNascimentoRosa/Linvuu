@@ -30,5 +30,5 @@ Grave, exporte em MP3 e salve com o **mesmo nome** (`<hash>.mp3`) em `public/aud
 - **O Edge TTS não é uma API oficial da Microsoft.** Ele usa o recurso «ler em voz alta» do navegador Edge: a Microsoft pode mudá-lo ou limitá-lo sem aviso, e o uso comercial não tem contrato. Por isso os MP3 são **salvos no repositório**: se o serviço mudar, os áudios já gerados continuam funcionando.
 - Para um serviço oficial, com as mesmas vozes e controle de pronúncia, use o **Azure AI Speech** (o Felipe planeja usá-lo para o russo). O ponto de troca é a função `sintetizar` em `scripts/gerar-audios.mjs`.
 - **Tamanho:** cada MP3 tem ~11 KB (uma palavra) a ~30 KB (uma frase longa). Os dois idiomas completos devem somar de 15 a 30 MB, muito abaixo do limite do GitHub (recomendação: repositório abaixo de 1 GB).
-- **Backup:** `git clone --mirror https://github.com/FelipeVRosa/Linvuu.git` guarda tudo (código, aulas e MP3) numa pasta que você copia para um HD externo.
+- **Backup:** `git clone --mirror https://github.com/FelipeNascimentoRosa/Linvuu.git` guarda tudo (código, aulas e MP3) numa pasta que você copia para um HD externo.
 - **Migrar para Firebase Storage (se o tamanho crescer):** envie `public/audio/<idioma>/` para um bucket e aponte `VITE_AUDIO_BASE_URL` para ele no Render. Os nomes dos arquivos não mudam.

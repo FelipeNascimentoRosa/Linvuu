@@ -84,8 +84,7 @@ function AvisoMedicao({ idioma }: { idioma: string }) {
 const textosEspacado={
   'pt-BR':{titulo:'Reforço espaçado',abrir:'Fazer o reforço de hoje',nota:(p:number)=>`Volta ${p+1} de 3. Você já corrigiu estes erros; relembrar depois de um intervalo fixa mais do que rever na hora.`},
   en:{titulo:'Spaced review',abrir:'Do today’s review',nota:(p:number)=>`Round ${p+1} of 3. You already fixed these mistakes; recalling them after a gap makes them stick better than reviewing right away.`},
-  es:{titulo:'Refuerzo espaciado',abrir:'Hacer el refuerzo de hoy',nota:(p:number)=>`Vuelta ${p+1} de 3. Ya corregiste estos errores; recordarlos después de un intervalo fija más que repasarlos enseguida.`},
-};
+  };
 
 function Exercicios({ itens, idioma, praticaChave, aoFinalizar }: { itens: Exercicio[]; idioma: string; praticaChave: string; aoFinalizar?: (acertos:number,total:number)=>void }) {
   const T = textos(idioma);
@@ -204,7 +203,7 @@ function Exercicios({ itens, idioma, praticaChave, aoFinalizar }: { itens: Exerc
       {comOpcoes && (
         <div className="ex-opcoes" role="radiogroup" aria-label={T.opcoes}>
           {ex.opcoes!.map((o) => (
-            <button key={o} type="button" role="radio" aria-checked={escolha === o} disabled={res !== null} className={`ex-op ${escolha === o ? 'on' : ''} ${res && o === ex.gabarito ? 'certa' : ''} ${res === 'erro' && escolha === o ? 'errada' : ''}`} onClick={() => setEscolha(o)} lang={idioma}>{o}{res && o === ex.gabarito && <span lang={LOCALE.codigo}> · {T.certo}</span>}{res === 'erro' && escolha === o && <span lang={LOCALE.codigo}> · {({'pt-BR':'Incorreta',en:'Incorrect',es:'Incorrecta'}[LOCALE.codigo])}</span>}</button>
+            <button key={o} type="button" role="radio" aria-checked={escolha === o} disabled={res !== null} className={`ex-op ${escolha === o ? 'on' : ''} ${res && o === ex.gabarito ? 'certa' : ''} ${res === 'erro' && escolha === o ? 'errada' : ''}`} onClick={() => setEscolha(o)} lang={idioma}>{o}{res && o === ex.gabarito && <span lang={LOCALE.codigo}> · {T.certo}</span>}{res === 'erro' && escolha === o && <span lang={LOCALE.codigo}> · {({'pt-BR':'Incorreta',en:'Incorrect'}[LOCALE.codigo])}</span>}</button>
           ))}
           <small className="ex-dica">{T.teclado(ex.opcoes!.length)}</small>
         </div>
@@ -275,7 +274,7 @@ function Narrar({ itens, idioma, explicacao }: { itens: string[]; idioma: string
 /** `explicacao`: língua em que o bloco está escrito (quando a sessão ainda não foi traduzida, o rótulo acompanha o texto). */
 export function Gramatica({ b, idioma, explicacao }: { b: Extract<Bloco, { tipo: 'gramatica' }>; idioma: string; explicacao?: string }) {
   const T = textos(idioma);
-  const rotuloComparacao = explicacao && explicacao !== LOCALE.explicacao ? dicionario(explicacao === 'pt' ? 'pt-BR' : explicacao as 'en' | 'es').player.emPortugues : T.emPortugues;
+  const rotuloComparacao = explicacao && explicacao !== LOCALE.explicacao ? dicionario(explicacao === 'pt' ? 'pt-BR' : explicacao as 'en').player.emPortugues : T.emPortugues;
   return (
     <section className="gramatica">
       <h3 className="bloco-sub">{b.titulo}</h3>
@@ -288,7 +287,7 @@ export function Gramatica({ b, idioma, explicacao }: { b: Extract<Bloco, { tipo:
       {b.erros && (
         <div className="erros">
           <h4 className="bloco-sub">{T.erros}</h4>
-          <ul>{b.erros.map((e) => <li key={e.errado}><span className="errado" lang={idioma}><span aria-hidden="true">✗ </span><span className="sr-only" lang={LOCALE.codigo}>{({'pt-BR':'Errado:',en:'Wrong:',es:'Incorrecto:'})[LOCALE.codigo]} </span>{e.errado}</span><span className="certo" lang={idioma}><span aria-hidden="true">✓ </span><span className="sr-only" lang={LOCALE.codigo}>{({'pt-BR':'Certo:',en:'Right:',es:'Correcto:'})[LOCALE.codigo]} </span>{e.certo} <Audio texto={e.certo} idioma={idioma} /></span><small>{e.motivo}</small></li>)}</ul>
+          <ul>{b.erros.map((e) => <li key={e.errado}><span className="errado" lang={idioma}><span aria-hidden="true">✗ </span><span className="sr-only" lang={LOCALE.codigo}>{({'pt-BR':'Errado:',en:'Wrong:'})[LOCALE.codigo]} </span>{e.errado}</span><span className="certo" lang={idioma}><span aria-hidden="true">✓ </span><span className="sr-only" lang={LOCALE.codigo}>{({'pt-BR':'Certo:',en:'Right:'})[LOCALE.codigo]} </span>{e.certo} <Audio texto={e.certo} idioma={idioma} /></span><small>{e.motivo}</small></li>)}</ul>
         </div>
       )}
     </section>
@@ -381,7 +380,7 @@ function SessaoConteudo({ sessao, idioma, aula, dia, proximo, nomeIdioma, explic
   const blocosCorrigidos=sessao.blocos.map((b,i)=>b.tipo==='exercicios'&&b.itens.some(e=>e.tipo!=='repeat'&&e.tipo!=='producao')?i:-1).filter(i=>i>=0);
   const [praticas,setPraticas]=useState<Record<number,Pratica>>(()=>Object.fromEntries(blocosCorrigidos.flatMap(i=>{const bloco=sessao.blocos[i];const p=lerPratica(`${chave}:bloco:${i}`,bloco.tipo==='exercicios'?assinaturaExercicios(bloco.itens):undefined);return p&&bloco.tipo==='exercicios'&&p.total===bloco.itens.filter(e=>e.tipo!=='repeat'&&e.tipo!=='producao').length?[[i,p]]:[];})));
   const pratica=blocosCorrigidos.length>0&&blocosCorrigidos.every(i=>praticas[i])?{acertos:blocosCorrigidos.reduce((n,i)=>n+praticas[i].acertos,0),total:blocosCorrigidos.reduce((n,i)=>n+praticas[i].total,0)}:null;
-  const estudoTexto={ 'pt-BR':{leitura:'Sessão de leitura e escuta, sem teste corrigido.',pendente:'Conclua a prática corrigida antes de finalizar esta sessão.',resultado:'Prática corrigida',concluir:'Concluir leitura',local:'O progresso do visitante fica neste aparelho. Limpar os dados pode apagá-lo.'},en:{leitura:'Reading and listening session, without a marked test.',pendente:'Complete the marked practice before finishing this session.',resultado:'Marked practice',concluir:'Finish reading',local:'Guest progress is stored on this device. Clearing app data may erase it.'},es:{leitura:'Sesión de lectura y escucha, sin prueba corregida.',pendente:'Completa la práctica corregida antes de finalizar esta sesión.',resultado:'Práctica corregida',concluir:'Finalizar lectura',local:'El progreso de visitante se guarda en este dispositivo. Borrar los datos puede eliminarlo.'}}[LOCALE.codigo];
+  const estudoTexto={ 'pt-BR':{leitura:'Sessão de leitura e escuta, sem exercício corrigido.',pendente:'Conclua a prática corrigida antes de finalizar esta sessão.',resultado:'Prática corrigida',concluir:'Concluir leitura',local:'O progresso do visitante fica neste aparelho. Limpar os dados pode apagá-lo.'},en:{leitura:'Reading and listening session, without a marked test.',pendente:'Complete the marked practice before finishing this session.',resultado:'Marked practice',concluir:'Finish reading',local:'Guest progress is stored on this device. Clearing app data may erase it.'}}[LOCALE.codigo];
   // ?bloco=N abre direto num bloco (atalho de reforço do início); só vale se existir nesta sessão.
   const [idx, setIdx] = useState(() => {
     const pedido = typeof window !== 'undefined' ? Number(new URLSearchParams(window.location.search).get('bloco')) : NaN;
@@ -424,9 +423,9 @@ function SessaoConteudo({ sessao, idioma, aula, dia, proximo, nomeIdioma, explic
        {idx===total-1&&corrigiveis>0&&!pratica&&!completa&&<p role="status">{estudoTexto.pendente}</p>}
        {!usuario&&<p>{estudoTexto.local}</p>}
       </div>
-      {erroConclusao&&!completa&&<p role="alert">{({'pt-BR':'Não foi possível confirmar a conclusão neste aparelho. Tente novamente.',en:'Completion could not be confirmed on this device. Try again.',es:'No se pudo confirmar la finalización en este dispositivo. Inténtalo de nuevo.'}[LOCALE.codigo])}</p>}
+      {erroConclusao&&!completa&&<p role="alert">{({'pt-BR':'Não foi possível confirmar a conclusão neste aparelho. Tente novamente.',en:'Completion could not be confirmed on this device. Try again.'}[LOCALE.codigo])}</p>}
       <div className="sessao-nav">
-        <button type="button" className="btn btn-ghost" disabled={idx === 0} onClick={() => setIdx(idx - 1)}>{APK ? ({'pt-BR':'Bloco anterior',en:'Previous block',es:'Bloque anterior'}[LOCALE.codigo]) : T.voltar}</button>
+        <button type="button" className="btn btn-ghost" disabled={idx === 0} onClick={() => setIdx(idx - 1)}>{APK ? ({'pt-BR':'Bloco anterior',en:'Previous block'}[LOCALE.codigo]) : T.voltar}</button>
         {idx < total - 1
           ? <button type="button" className="btn btn-primary" onClick={() => setIdx(idx + 1)}>{T.continuar}</button>
           : <button type="button" className="btn btn-primary" disabled={corrigiveis>0&&!pratica&&!completa} onClick={concluir}>{completa ? T.concluida : corrigiveis ? T.concluir : estudoTexto.concluir}</button>}

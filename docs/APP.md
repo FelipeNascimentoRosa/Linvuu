@@ -10,7 +10,7 @@
 ## Como gerar o app
 | O que | Como |
 |---|---|
-| Android (APK de teste) | GitHub → Actions → **App Android (APK de teste)** → Run workflow. Baixe o APK da Release em rascunho indicada no resumo da execução (alternativa ao artifact quando há limite de armazenamento) e instale no aparelho (ative "instalar apps desconhecidos"). |
+| Android (APK de pré-lançamento) | GitHub → Actions → **App Android (APK de pré-lançamento)** → Run workflow. Baixe o APK da Release em rascunho indicada no resumo da execução (alternativa ao artifact quando há limite de armazenamento) e instale no aparelho (ative "instalar apps desconhecidos"). |
 | Android (no seu computador) | `npm install` e depois `npm run app:android`. Abra a pasta `android/` no Android Studio e rode em um emulador ou aparelho. Requer JDK 21 e Android SDK. |
 | iOS | Ainda não criado. Exige macOS e Xcode, e uma conta de desenvolvedor Apple. |
 

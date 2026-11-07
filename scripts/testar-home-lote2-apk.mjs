@@ -11,7 +11,7 @@ try{
  browser=await chromium.launch({executablePath:process.env.CHROME_EXECUTABLE_PATH,args:['--no-sandbox']});
  const context=await browser.newContext({viewport:{width:320,height:720},reducedMotion:'reduce'}),page=await context.newPage();
  await page.route('https://linvuu.com.br/**',r=>r.abort());
- for(const locale of ['', '/en','/es']){
+ for(const locale of ['', '/en']){
   await page.goto(base+locale+'/');await page.locator('.app-missao').waitFor();
   assert.equal(await page.locator('.app-home-identidade').getAttribute('open'),null);
   await page.locator('.app-home-identidade summary').click();

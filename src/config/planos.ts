@@ -11,3 +11,11 @@ export const PRECO_ANUAL = import.meta.env?.VITE_ALVO === 'apk' ? '' : 'R$ 999';
 export const PRECO_ANUAL_MES = import.meta.env?.VITE_ALVO === 'apk' ? '' : 'R$ 83,25'; // equivalência mensal do anual (999 / 12); só apresentação, o total continua em destaque
 export const PRECO_TRIMESTRAL_PIX_MES = import.meta.env?.VITE_ALVO === 'apk' ? '' : 'R$ 97,30'; // equivalência mensal do trimestral no Pix (291,90 / 3); só apresentação
 
+
+/** Fonte única dos valores cobrados (centavos de real) e da duração de cada plano. O servidor cobra por aqui, o JSON-LD e as
+ * páginas mostram a partir daqui, e scripts/testar-contrato-billing.ts confere que os textos acima batem com estes números. */
+export const CENTAVOS = { mensal: 13900, trimestral: 41700, 'trimestral-pix': 29190, anual: 99900 } as const;
+export const MESES_DO_PACOTE = { trimestral: 3, 'trimestral-pix': 3, anual: 12 } as const;
+export type PlanoPacote = keyof typeof MESES_DO_PACOTE;
+/** 13900 → "139.00" (formato schema.org). */
+export const precoSchema = (centavos: number) => (centavos / 100).toFixed(2);

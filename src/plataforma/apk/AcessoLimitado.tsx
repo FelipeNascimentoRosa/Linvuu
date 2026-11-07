@@ -13,8 +13,7 @@ export function AcessoLimitado({ curso, indisponivel, idioma }: { curso: string;
   const x = {
     'pt-BR': {titulo:'Continue estudando com as sessões gratuitas',descricao:`As primeiras ${SESSOES_GRATIS} sessões deste curso são gratuitas. Você pode voltar a elas para estudar ou revisar.`,revisar:'Ver sessões gratuitas',conta:'Entrar permite consultar o acesso desta conta; não desbloqueia conteúdo pago por si só.'},
     en: {titulo:'Keep studying with the free sessions',descricao:`The first ${SESSOES_GRATIS} sessions of this course are free. Return to them to study or review.`,revisar:'View free sessions',conta:'Signing in checks your account access; it does not unlock paid content by itself.'},
-    es: {titulo:'Sigue estudiando con las sesiones gratuitas',descricao:`Las primeras ${SESSOES_GRATIS} sesiones de este curso son gratuitas. Puedes volver a ellas para estudiar o repasar.`,revisar:'Ver sesiones gratuitas',conta:'Iniciar sesión permite consultar el acceso de tu cuenta; no desbloquea contenido de pago por sí solo.'},
-  }[LOCALE.codigo];
+      }[LOCALE.codigo];
   return <section className="acesso-limitado" aria-label={curso}>
     <h1>{x.titulo}</h1>
     <p>{x.descricao}</p>

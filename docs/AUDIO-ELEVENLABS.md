@@ -35,9 +35,7 @@ Gasto total ~126,4 mil créditos. Reserva estimada ~4,5 mil (a chave não lê o 
 Promo: `marketing/promo/linvuu-promo-{pt,en,es}.mp3` (slogan, 68 créditos).
 
 ## Plano para o que falta (decidido com o dono em 23/10)
-- **Alemão:** os créditos restantes do ElevenLabs vão para cá, em ordem de aula (`--ordem=aula`). Kokoro é ruim em alemão.
-- **Alternativa Kokoro (offline, sem custo):** bom em inglês, francês, espanhol e italiano; **ruim em russo, português e alemão** (avaliação do dono). Usar para completar en e fr depois da aula 46 e, se aprovado, trocar a voz Azure/Edge de es e it. Plano e lotes do Kokoro: PR #307 (`docs/` do Android internacional).
-- Atenção ao misturar: en e fr teriam ElevenLabs até a aula 46 e Kokoro depois. Decidir antes de gerar.
+- **Alemão:** os créditos restantes do ElevenLabs vão para cá, em ordem de aula (`--ordem=aula`).
 - es e it continuam em Azure/Edge até lá.
 
 ## Pendente

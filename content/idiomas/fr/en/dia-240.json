@@ -26,7 +26,7 @@
         "itens": [
           {
             "tipo": "audio-recognition",
-            "enunciado": "Listen and choose.",
+            "enunciado": "Listen and choose the correctly written sentence.",
             "audio": "Il l'a fait exprès",
             "opcoes": [
               "Il l'a fait exprès",
@@ -39,7 +39,7 @@
           },
           {
             "tipo": "audio-recognition",
-            "enunciado": "Listen and choose.",
+            "enunciado": "Listen and choose the correctly written sentence.",
             "audio": "J'attends le bus",
             "opcoes": [
               "J'attends le bus",
@@ -52,7 +52,7 @@
           },
           {
             "tipo": "audio-recognition",
-            "enunciado": "Listen and choose.",
+            "enunciado": "Listen and choose the correctly written sentence.",
             "audio": "J'ignore la réponse",
             "opcoes": [
               "J'ignore la réponse",
@@ -64,11 +64,10 @@
             "id": "fr-060-e03"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Listen and write.",
-            "audio": "Comment dit-on ferramenta en français",
-            "respostaEsperada": "Comment dit-on tool en français",
-            "explicacao": "Write: Comment dit-on tool en français.",
+            "tipo": "producao",
+            "enunciado": "Write in French: How do you say “tool” in French?",
+            "respostaEsperada": "Comment dit-on « tool » en français ?",
+            "explicacao": "Use «Comment dit-on … en français ?» to ask for a French word.",
             "id": "fr-060-e04"
           },
           {
@@ -115,12 +114,12 @@
             "tipo": "multiple-choice",
             "enunciado": "«Attendre» means:",
             "opcoes": [
-              "to hope",
+              "to wait",
               "to answer",
               "to attend"
             ],
-            "gabarito": "to hope",
-            "explicacao": "False friend.",
+            "gabarito": "to wait",
+            "explicacao": "«Attendre» means “to wait”; “to attend” is usually «assister à».",
             "id": "fr-060-e07"
           },
           {
@@ -137,14 +136,14 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "«Ignorer» means:",
+            "enunciado": "In «J’ignore la réponse», what does «ignorer» mean?",
             "opcoes": [
               "not to know",
               "to disregard",
               "to forget"
             ],
             "gabarito": "not to know",
-            "explicacao": "False friend.",
+            "explicacao": "Here «ignorer» means not to know; in other contexts it can mean to ignore or disregard.",
             "id": "fr-060-e09"
           },
           {
@@ -176,7 +175,7 @@
           },
           {
             "tipo": "fill-gap",
-            "enunciado": "La ___ est une qualité. (-dade)",
+            "enunciado": "La ___ est importante. (freedom)",
             "opcoes": [
               "liberté",
               "libertad",
@@ -225,12 +224,12 @@
             "audio": "demander",
             "opcoes": [
               "understand the gist",
-              "to ask (not «to demand»)",
+              "to ask or ask for",
               "a cognate",
-              "not to know (not «to ignore»)"
+              "not to know"
             ],
-            "gabarito": "to ask (not «to demand»)",
-            "explicacao": "«demander» = to ask (not «to demand»).",
+            "gabarito": "to ask or ask for",
+            "explicacao": "«Demander» usually means to ask or ask for; it can mean demand in some contexts.",
             "id": "fr-060-x03",
             "complemento": true
           },
@@ -281,7 +280,7 @@
           {
             "tipo": "producao",
             "enunciado": "Write in French: How do you say «scissors» in French? Can you repeat, please? He did it on purpose.",
-            "respostaEsperada": "Comment dit-on « tesoura » en français ? Pouvez-vous répéter, s'il vous plaît ? Il l'a fait exprès.",
+            "respostaEsperada": "Comment dit-on « scissors » en français ? Pouvez-vous répéter, s'il vous plaît ? Il l'a fait exprès.",
             "id": "fr-060-e17"
           },
           {
@@ -305,7 +304,7 @@
             "opcoes": [
               "information",
               "informacion",
-              "information"
+              "informations"
             ],
             "gabarito": "information",
             "explicacao": "Ending «-tion» is the same in English and French.",
@@ -334,7 +333,7 @@
           },
           {
             "tipo": "fill-gap",
-            "enunciado": "Mes chaussures sont ___ . (sujas)",
+            "enunciado": "Mes chaussures sont ___ . (dirty)",
             "opcoes": [
               "sels",
               "salt",
@@ -380,15 +379,15 @@
               "ignores"
             ],
             "gabarito": "ignore",
-            "explicacao": "«Ignorer» = not to know (it does not mean to ignore).",
+            "explicacao": "Here «ignorer» means not to know; it can also mean to ignore or disregard, depending on context.",
             "id": "fr-060-e22"
           },
           {
             "tipo": "multiple-choice",
             "enunciado": "What does «rester» mean?",
             "opcoes": [
-              "restar",
-              "descansar",
+              "to leave",
+              "to rest",
               "to stay"
             ],
             "gabarito": "to stay",
@@ -420,11 +419,11 @@
             "tipo": "multiple-choice",
             "enunciado": "What does «magasin» mean?",
             "opcoes": [
-              "revista",
-              "shop",
-              "magazine de TV"
+              "a magazine",
+              "a shop",
+              "a television program"
             ],
-            "gabarito": "shop",
+            "gabarito": "a shop",
             "explicacao": "«Magasin» = shop.",
             "id": "fr-060-e25"
           },
