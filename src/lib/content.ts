@@ -15,7 +15,7 @@ export type Nivel = 'zero' | 'a1' | 'a2' | 'b1';
 
 export interface Curso {
   id: string; area: 'idiomas'; nome: string; nomeNativo: string;
-  mascote: string; status: StatusCurso; descricao: string; dias: number | null;
+  status: StatusCurso; descricao: string; dias: number | null;
 }
 export interface Fase { id: number; titulo: string; nivel: Nivel; resumo: string; dias: [number, number] }
 export interface DiaMestre { dia: number; fase: number; nivel: Nivel; titulo: string; objetivo: string }
