@@ -1,4 +1,4 @@
-import { Link, Navigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../livros.css';
 import { LOCALE } from '../i18n';
 import { usePageTitle } from '../lib/usePageTitle';
@@ -8,8 +8,7 @@ import { AULAS_RUSSO, whatsappAulasRusso } from '../config/aulas-russo';
 export default function AulasRusso() {
   const cod = LOCALE.codigo === 'en' ? 'en' : 'pt-BR';
   const t = AULAS_RUSSO[cod];
-  usePageTitle(t.titulo, t.descricao, ['pt-BR', 'en'], LOCALE.codigo === 'es');
-  if (LOCALE.codigo === 'es') return <Navigate to="/" replace />;
+  usePageTitle(t.titulo, t.descricao, ['pt-BR', 'en']);
   const wa = whatsappAulasRusso(cod);
   return (
     <div className="pagina lvr">

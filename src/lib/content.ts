@@ -37,9 +37,9 @@ export const CURSOS: Curso[] = CURSOS_BASE.map(({ i18n, ...c }) => ({ ...c, ...(
 export const FASES = trilhaJson.fases as Fase[];
 export const DIAS = trilhaJson.dias as DiaMestre[];
 type Traducao = { aulas: number[]; g: Record<string, string>; s: Record<string, string> };
-/** Traduções dos títulos e lista de aulas por idioma de explicação (content/indice.<en|es>.json), carregadas antes de abrir o site. */
+/** Traduções dos títulos e lista de aulas por idioma de explicação (content/indice.en.json), carregadas antes de abrir o site. */
 let TRADUCOES: Partial<Record<Explicacao, Record<string, Traducao>>> = {};
-const ARQUIVOS_TR = import.meta.glob('../../content/indice.{en,es}.json', { import: 'default' }) as Record<string, () => Promise<Record<string, Traducao>>>;
+const ARQUIVOS_TR = import.meta.glob('../../content/indice.en.json', { import: 'default' }) as Record<string, () => Promise<Record<string, Traducao>>>;
 const carregandoTr = new Map<Explicacao, Promise<void>>();
 /** Índice de traduções de uma língua de explicação; cada um é baixado uma vez, só quando alguém precisa dele. */
 export function carregarTraducao(l: Explicacao): Promise<void> {
@@ -56,7 +56,7 @@ export function carregarTraducao(l: Explicacao): Promise<void> {
  * no caminho crítico). Os outros vêm depois, sem pressa, para quem troca a língua da explicação numa aula. */
 export async function carregarTraducoes() {
   await carregarTraducao(LOCALE.explicacao);
-  const depois = () => { void carregarTraducao('en'); void carregarTraducao('es'); };
+  const depois = () => { void carregarTraducao('en'); };
   if (typeof window !== 'undefined' && 'requestIdleCallback' in window) window.requestIdleCallback(depois, { timeout: 4000 }); else setTimeout(depois, 2000);
 }
 const INDICE = indiceJson.cursos as unknown as Record<string, { total: number; publicadas: number; emProducao: number; planejadas: number; status: StatusAula[]; sobrescritos: Record<string, { t: string; o: string }>; grupos?: { aula: number; titulo: string; nivel?: string; dias: [number, number] }[]; fonte?: Explicacao; amostra?: { min: number; blocos: [string, number][] } }>;
@@ -65,7 +65,8 @@ const INDICE = indiceJson.cursos as unknown as Record<string, { total: number; p
 export const fonteDoCurso = (id: string): Explicacao => INDICE[id]?.fonte ?? 'pt';
 /** Sem escolha salva: a língua do site, se o curso já tem aulas traduzidas nela; senão a língua em que o curso foi escrito. Aula sem tradução cai na original (resolverExplicacao). */
 export const explicacaoDoCurso = (id: string): Explicacao => {
-  try { const v = localStorage.getItem(chaveExplicacao(id)); if (explicacaoValida(v)) return v; } catch { /* sem armazenamento */ }
+  // No site cada domínio tem um só idioma de explicação (.com.br português, .com inglês): a escolha por curso existe só no app.
+  if (import.meta.env.VITE_ALVO === 'apk') { try { const v = localStorage.getItem(chaveExplicacao(id)); if (explicacaoValida(v)) return v; } catch { /* sem armazenamento */ } }
   return (TRADUCOES[LOCALE.explicacao]?.[id]?.aulas.length ?? 0) > 0 ? LOCALE.explicacao : fonteDoCurso(id);
 };
 const traducao = (id: string, explicacao = explicacaoDoCurso(id)): Traducao | undefined => fonteDoCurso(id) === explicacao ? undefined : TRADUCOES[explicacao]?.[id];
@@ -74,6 +75,12 @@ export const coberturaDoCurso = (id: string) => {
   const total = INDICE[id]?.grupos?.length ?? 0;
   if (fonteDoCurso(id) === explicacaoDoCurso(id)) return { traduzidas: total, total, reserva: explicacaoDoCurso(id) };
   return { traduzidas: traducao(id)?.aulas.length ?? 0, total, reserva: fonteDoCurso(id) };
+};
+/** Aulas explicadas NO IDIOMA DO SITE (independe da escolha do aluno): é o que decide se o curso entra na vitrine daquele domínio. */
+export const coberturaNoSite = (id: string) => {
+  const total = INDICE[id]?.grupos?.length ?? 0;
+  if (fonteDoCurso(id) === LOCALE.explicacao) return { traduzidas: total, total };
+  return { traduzidas: TRADUCOES[LOCALE.explicacao]?.[id]?.aulas.length ?? 0, total };
 };
 /** A aula tem explicação no idioma do site? */
 export const aulaTraduzida = (id: string, aula: number, explicacao = explicacaoDoCurso(id)) => fonteDoCurso(id) === explicacao || !!traducao(id, explicacao)?.aulas.includes(aula);
@@ -158,6 +165,11 @@ export const carregarAula = async (idioma: string, dia: number, explicacao = exp
 
 /** Cursos da vitrine no idioma do site: cada público vê os idiomas que não são o seu, na ordem pensada para ele. */
 export const CURSOS_ATIVOS = CURSOS.filter((c) => c.id !== LOCALE.cursoOculto).sort((a, b) => LOCALE.ordem.indexOf(a.id) - LOCALE.ordem.indexOf(b.id));
+/** O curso tem explicação no idioma do site? No .com.br tudo é em português; no .com só entra quem já tem aulas explicadas em inglês. */
+export const cursoComExplicacaoNoSite = (id: string) => LOCALE.codigo === 'pt-BR' || coberturaNoSite(id).traduzidas > 0;
+/** Cursos com aba de gramática que o site deste domínio oferece (no .com, só os explicados em inglês). */
+export const todosIdiomasDeGramatica = () => [...new Set([...CURSOS_ATIVOS.map((c) => c.id), ...IDIOMAS_GRAMATICA])];
+export const idiomasDeGramaticaNoSite = () => todosIdiomasDeGramatica().filter(cursoComExplicacaoNoSite);
 /** O curso é para outro público (ex.: o curso de inglês, escrito para quem fala português, visto por quem escolheu o site em inglês). */
 export const cursoDeOutroPublico = (id: string) => id === LOCALE.cursoOculto;
 /** Cursos com a aba Gramática (gerada das aulas por scripts/gramatica.mjs). */

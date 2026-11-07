@@ -72,6 +72,7 @@ export const ptBR = {
   newsletter: { email: 'Seu e-mail', consentimento: 'Concordo em receber e-mails da Linvuu.', botao: 'Quero receber', ok: 'Pronto. Você vai receber as novidades da Linvuu.', erro: 'Não conseguimos registrar agora. Escreva para', invalido: 'Digite um e-mail válido.', semAceite: 'Marque a caixa para receber e-mails.', ocupado: 'Enviando…', assunto: 'Quero receber novidades' },
   card: { noAr: (n: number) => (n === 1 ? '1 aula no ar' : `${n} aulas no ar`), preparo: 'Em preparação', ate: 'do zero ao B1', cobertura: (_a: number, _b: number) => '' },
   cursosPagina: {
+    emBreve: 'Em breve',
     titulo: 'Todos os cursos', buscar: 'Buscar', exemplo: 'Ex.: alemão, francês', contagem: (n: number) => (n === 1 ? '1 curso' : `${n} cursos`),
     vazio: (q: string) => `Nenhum curso encontrado para "${q}". Tente outra palavra ou`, limpar: 'limpe a busca', portugues: 'Português para estrangeiros (aulas em inglês ou espanhol) →',
     avisoObraTitulo: '', avisoObraTexto: '',
@@ -207,7 +208,7 @@ export const ptBR = {
       { k: 'a1', titulo: 'A1 · Iniciante', resumo: '' }, { k: 'a2', titulo: 'A2 · Básico', resumo: '' }, { k: 'b1', titulo: 'B1 · Intermediário', resumo: '' },
     ],
   },
-  linguas: { pt: 'português', en: 'inglês', es: 'espanhol' } as Record<string, string>,
+  linguas: { pt: 'português', en: 'inglês'} as Record<string, string>,
   livro: { indisponivelIdioma: '' },
 };
 export type Dicionario = typeof ptBR;

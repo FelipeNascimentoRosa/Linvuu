@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
 import { Navegacao } from '../components/Navegacao';
 import { Gramatica as BlocoGramatica } from '../components/Sessao';
-import { CURSOS_ATIVOS, IDIOMAS_GRAMATICA, fonteDoCurso, explicacaoDoCurso, getCurso } from '../lib/content';
+import { idiomasDeGramaticaNoSite, todosIdiomasDeGramatica, fonteDoCurso, explicacaoDoCurso, getCurso } from '../lib/content';
 import { LOCALE, useT } from '../i18n';
 import { usePageTitle } from '../lib/usePageTitle';
 import type { Bloco } from '../lib/aulas';
@@ -14,9 +14,10 @@ import { useAuth } from '../lib/AuthContext';
 type Topico = Omit<Extract<Bloco, { tipo: 'gramatica' }>, 'tipo' | 'min' | 'tag'> & { id: string; categoria: string; aula: number; aulaTitulo: string; sessao: string; dia: number; /** língua do texto quando o tópico ainda não foi traduzido */ explicacaoEm?: string };
 interface Pacote { idioma: string; categorias: string[]; topicos: Topico[]; completo: boolean; bloqueados: number; semTraducao?: number }
 // Abas na ordem da vitrine do idioma do site (o curso de português para estrangeiros só aparece em inglês e espanhol).
-const IDIOMAS = [...new Set([...CURSOS_ATIVOS.map((c) => c.id), ...IDIOMAS_GRAMATICA])];
 
 export default function Gramatica() {
+  const IDIOMAS = idiomasDeGramaticaNoSite(); // só os que a vitrine deste domínio oferece (chips)
+  const VALIDOS = todosIdiomasDeGramatica(); // endereço direto continua abrindo (o servidor marca noindex onde não há explicação)
   const { id } = useParams();
   const curso = getCurso(id);
   const { usuario, carregando: autenticando } = useAuth();
@@ -26,7 +27,7 @@ export default function Gramatica() {
   useEffect(() => setCat('todas'), [id]);
   // Só os tópicos das 2 primeiras aulas vêm para todos; o resto, só com assinatura (o servidor decide).
   useEffect(() => {
-    if (!id || !IDIOMAS.includes(id) || autenticando) return;
+    if (!id || !VALIDOS.includes(id) || autenticando) return;
     let vivo = true;
     setPacote(undefined); setFalhou(false);
     (async () => {
@@ -44,7 +45,7 @@ export default function Gramatica() {
   const t = useT();
   const g = t.gramaticaPagina;
   usePageTitle(curso ? g.titulo(curso.nome) : g.tituloGeral, curso ? g.descricao(curso.nome) : undefined, undefined, curso?.id === LOCALE.cursoOculto || curso?.status === 'em-breve');
-  if (!id || !curso || !IDIOMAS.includes(curso.id)) return <Navigate to={`/gramatica/${IDIOMAS[0]}`} replace />;
+  if (!id || !curso || !VALIDOS.includes(curso.id)) return <Navigate to={`/gramatica/${IDIOMAS[0]}`} replace />;
 
   return (
     <div className="pagina">

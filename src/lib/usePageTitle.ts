@@ -60,9 +60,9 @@ function aplicar(m: { titulo: string; descricao: string; canonical: string; noin
  * Fonte única: o servidor (src/lib/metaRota.ts). No carregamento, o <head> que o servidor entregou fica intocado
  * (é o mesmo que o Google lê); ao navegar dentro do site, o navegador pede os valores da nova rota a /api/meta.
  * Os argumentos só valem onde não há servidor de metadados: o APK (sem SEO) e o desenvolvimento local.
- * `idiomas`: em quais idiomas a página existe (padrão: os três). As sessões passam [].
+ * `idiomas`: em quais idiomas a página existe (padrão: os dois). As sessões passam [].
  */
-export function usePageTitle(titulo?: string, descricao?: string, idiomas: CodigoLocale[] = ['pt-BR', 'en', 'es'], semIndice = false) {
+export function usePageTitle(titulo?: string, descricao?: string, idiomas: CodigoLocale[] = ['pt-BR', 'en'], semIndice = false) {
   const t = useT();
   const { pathname } = useLocation();
   useEffect(() => {

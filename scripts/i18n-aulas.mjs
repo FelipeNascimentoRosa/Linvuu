@@ -1,20 +1,20 @@
 // Explicação das aulas em outros idiomas (inglês e espanhol), sem tocar no idioma estudado nem nos áudios.
 //
 // Cada curso foi escrito numa língua de explicação (português; o curso `br` foi escrito em inglês). A tradução de uma aula é um
-// mapa «texto original → texto traduzido», em content/idiomas/<id>/i18n/<en|es>/aula-NNN.json. Só os campos de explicação passam
+// mapa «texto original → texto traduzido», em content/idiomas/<id>/i18n/<en>/aula-NNN.json. Só os campos de explicação passam
 // pelo mapa (títulos, explicações, traduções, instruções, motivos de erro, pronúncia aproximada…). O texto do idioma estudado
 // (`ru`, `audio`, exemplos de letra) nunca muda. `titulos.json` traduz os títulos de todas as aulas e sessões, para a trilha.
 //
 // Uso:
-//   node scripts/i18n-aulas.mjs extrair <id> <en|es> <aula> [pasta]   lista os textos ainda sem tradução (gera <pasta>/<id>-<l>-NNN.src.json)
-//   node scripts/i18n-aulas.mjs juntar <id> <en|es> <aula> [pasta]    junta <id>-<l>-NNN.tr.json (mesma ordem; null = manter) ao mapa
-//   node scripts/i18n-aulas.mjs titulos <id> <en|es> [pasta]          o mesmo para os títulos de todas as aulas e sessões
+//   node scripts/i18n-aulas.mjs extrair <id> <en> <aula> [pasta]   lista os textos ainda sem tradução (gera <pasta>/<id>-<l>-NNN.src.json)
+//   node scripts/i18n-aulas.mjs juntar <id> <en> <aula> [pasta]    junta <id>-<l>-NNN.tr.json (mesma ordem; null = manter) ao mapa
+//   node scripts/i18n-aulas.mjs titulos <id> <en> [pasta]          o mesmo para os títulos de todas as aulas e sessões
 //   node scripts/i18n-aulas.mjs estado                                quantas aulas cada curso tem traduzidas
 import fs from 'node:fs';
 import path from 'node:path';
 
 export const raiz = path.resolve(import.meta.dirname, '..');
-export const LINGUAS = ['en', 'es'];
+export const LINGUAS = ['en'];
 /** Língua em que cada curso foi escrito. */
 export const fonteDe = (id) => (id === 'br' ? 'en' : 'pt');
 const pad = (n) => String(n).padStart(3, '0');
@@ -124,7 +124,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     }
     process.exit(0);
   }
-  if (!id || !LINGUAS.includes(l)) { console.error('uso: extrair|juntar <id> <en|es> <aula> [pasta] · titulos <id> <en|es> [pasta] · estado'); process.exit(1); }
+  if (!id || !LINGUAS.includes(l)) { console.error('uso: extrair|juntar <id> <en> <aula> [pasta] · titulos <id> <en> [pasta] · estado'); process.exit(1); }
   if (cmd === 'titulos') {
     const pasta = a3 ?? '.';
     const fonte = path.join(pasta, `${id}-${l}-titulos.src.json`), trad = path.join(pasta, `${id}-${l}-titulos.tr.json`);

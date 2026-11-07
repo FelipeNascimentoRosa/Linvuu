@@ -12,7 +12,7 @@ export default function CursoBr() {
   const destino = useDestinoSessao();
   const t = useT();
   const c = t.cursoBr;
-  usePageTitle(c.tituloSeo, c.descSeo, ['en', 'es']);
+  usePageTitle(c.tituloSeo, c.descSeo, ['en']);
   const grupos = gruposDoCurso('br');
   const stats = statusDoCurso('br');
   const cob = coberturaDoCurso('br');

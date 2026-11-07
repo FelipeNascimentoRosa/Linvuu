@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import { CURSOS_ATIVOS as CURSOS } from '../lib/content';
+import { CURSOS_ATIVOS as CURSOS, cursoComExplicacaoNoSite } from '../lib/content';
 import { CursoCard } from '../components/CursoCard';
 import { Navegacao } from '../components/Navegacao';
 import { usePageTitle } from '../lib/usePageTitle';
@@ -17,7 +17,9 @@ export default function Cursos() {
   const [params, setParams] = useSearchParams();
   const q = params.get('q') ?? '';
 
+  const emBreve = CURSOS.filter((c) => !cursoComExplicacaoNoSite(c.id));
   const lista = useMemo(() => CURSOS.filter((c) => {
+    if (!cursoComExplicacaoNoSite(c.id)) return false;
     if (!q) return true;
     return norm(`${c.nome} ${c.nomeNativo} ${c.descricao}`).includes(norm(q));
   }), [q]);
@@ -32,12 +34,6 @@ export default function Cursos() {
     <div className={LOCALE.codigo === 'pt-BR' ? 'pagina site-publico site-catalogo' : 'pagina'}>
       <Navegacao pai="/" trilha={[{ rotulo: t.geral.inicio, para: '/' }, { rotulo: t.geral.cursos }]} />
       {LOCALE.codigo === 'pt-BR' ? <header className="site-intro"><div><p className="site-eyebrow">UM NOVO IDIOMA. UM NOVO CAMINHO.</p><h1 className="pagina-h1">Seu próximo “olá”<br />começa aqui.</h1><p className="site-lead">Escolha uma língua que combina com seus planos. As explicações são em português; a próxima descoberta é sua.</p></div><aside className="site-aside"><strong>Conheça antes de decidir.</strong><p>Experimente as duas primeiras aulas de cada curso, sem cartão.</p><Link to="/#planos">Comparar os novos planos →</Link></aside></header> : <h1 className="pagina-h1">{t.cursosPagina.titulo}</h1>}
-      {LOCALE.codigo === 'es' && (
-        <section className="aviso aviso-inicio aviso-obra" role="status">
-          <h2>{t.cursosPagina.avisoObraTitulo}</h2>
-          <p>{t.cursosPagina.avisoObraTexto}</p>
-        </section>
-      )}
       <div className="filtros">
         <div className="search-field filtro-busca">
           <label htmlFor="q">{t.cursosPagina.buscar}</label>
@@ -55,6 +51,7 @@ export default function Cursos() {
           </div> : <CursoCard key={c.id} curso={c} nivel={2} />;
         })}</div>
         : <p className="vazio">{t.cursosPagina.vazio(q)} <button type="button" className="link" onClick={() => setParams({}, { replace: true })}>{t.cursosPagina.limpar}</button>.</p>}
+      {emBreve.length > 0 && !q && <p className="nota" data-em-breve>{t.cursosPagina.emBreve}: {emBreve.map((c) => c.nome).join(', ')}.</p>}
     </div>
   );
 }

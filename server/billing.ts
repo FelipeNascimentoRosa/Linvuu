@@ -16,6 +16,8 @@ import { acessoDoRegistro, gravarRegistro, lerRegistro, liberarConversao, reserv
 import { enviarCompra, validarMedicao } from './conversoes';
 import { criarProcessadorCobranca } from './cobranca-eventos';
 import { CENTAVOS } from '../src/config/planos.ts';
+import { caminhoNoPerfil } from '../src/i18n/locales.ts';
+import { perfilDaRequisicao } from './dominio';
 
 const chave = process.env.STRIPE_SECRET_KEY;
 const projeto = process.env.FIREBASE_PROJECT_ID || process.env.VITE_FIREBASE_PROJECT_ID;
@@ -123,7 +125,7 @@ async function consultarStripe(u: { uid: string; email?: string }): Promise<Aces
   return eventos.acessoDoCliente(u.uid, await cliente(u));
 }
 
-export function registrarCobranca(app: Express, urlBase: () => string) {
+export function registrarCobranca(app: Express, urlBase: (req: Request) => string) {
   const nao = (res: Response) => res.status(503).json({ error: 'Pagamento ainda não configurado.' });
   const guarda = async (req: Request, res: Response) => {
     if (!cobrancaConfigurada()) { nao(res); return null; }
@@ -136,10 +138,10 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
   app.get('/api/aula/:idioma/:n', async (req: Request, res: Response) => {
     const idioma = String(req.params.idioma), n = Number(req.params.n);
     if (!/^[a-z]{2}$/.test(idioma) || !Number.isInteger(n) || n < 1 || n > 999) { res.status(404).json({ error: 'Aula não encontrada.' }); return; }
-    // ?l=en|es: a mesma sessão com a explicação traduzida (content/idiomas/<id>/<l>/dia-NNN.json), quando existir.
+    // ?l=en: a mesma sessão com a explicação traduzida (content/idiomas/<id>/<l>/dia-NNN.json), quando existir.
     const l = String(req.query.l ?? '');
     const nome = `dia-${String(n).padStart(3, '0')}.json`;
-    const traduzido = /^(en|es)$/.test(l) ? path.join(process.cwd(), 'content', 'idiomas', idioma, l, nome) : '';
+    const traduzido = /^en$/.test(l) ? path.join(process.cwd(), 'content', 'idiomas', idioma, l, nome) : '';
     const arq = traduzido && fs.existsSync(traduzido) ? traduzido : path.join(process.cwd(), 'content', 'idiomas', idioma, nome);
     if (!fs.existsSync(arq)) { res.status(404).json({ error: 'Aula não encontrada.' }); return; }
     const livre = n <= 8 || (process.env.NODE_ENV !== 'production' && !cobrancaConfigurada());
@@ -157,7 +159,7 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
     const idioma = String(req.params.idioma);
     if (!/^[a-z]{2}$/.test(idioma)) { res.status(404).json({ error: 'Não encontrado.' }); return; }
     const l = String(req.query.l ?? '');
-    const traduzida = /^(en|es)$/.test(l) ? path.join(process.cwd(), 'content', 'gramatica', `${idioma}.${l}.json`) : '';
+    const traduzida = /^en$/.test(l) ? path.join(process.cwd(), 'content', 'gramatica', `${idioma}.${l}.json`) : '';
     const arq = traduzida && fs.existsSync(traduzida) ? traduzida : path.join(process.cwd(), 'content', 'gramatica', `${idioma}.json`);
     if (!fs.existsSync(arq)) { res.status(404).json({ error: 'Não encontrado.' }); return; }
     let pacote: { categorias: string[]; topicos: { dia: number; categoria: string }[] };
@@ -205,7 +207,7 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
     const u = await guarda(req, res); if (!u) return;
     if (!stripe) { nao(res); return; }
     try {
-      const base = urlBase();
+      const base = urlBase(req);
       const plano = req.body?.plano;
       if (!planoSiteValido(plano)) { res.status(400).json({ error: 'Plano inválido.' }); return; }
       const pix = plano === 'trimestral-pix';
@@ -217,12 +219,14 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
       if (!pode.ok) { res.status(409).json({ error: pode.motivo === 'ja-assinante' ? 'Você já tem uma assinatura ativa.' : 'Você já tem acesso pago ativo.', motivo: pode.motivo }); return; }
       const medicao = validarMedicao(req.body?.medicao, req.ip, req.get('user-agent'));
       const c = await cliente(u);
-      // idioma do site (pt, en, es): o checkout do Stripe e a volta para o site ficam no mesmo idioma
-      const idioma = ['en', 'es'].includes(req.body?.idioma) ? (req.body.idioma as 'en' | 'es') : null;
-      const prefixo = idioma ? `/${idioma}` : '';
+      // idioma do site (pt, en): o checkout do Stripe e a volta para o site ficam no mesmo idioma
+      const idioma = req.body?.idioma === 'en' ? ('en' as const) : null;
+      // volta para o idioma e para o domínio de onde veio (no .com o inglês não tem prefixo; no .com.br segue /en)
+      const perfil = perfilDaRequisicao(req);
+      const rota = (cod: 'pt-BR' | 'en') => caminhoNoPerfil(perfil, cod, '/assinatura');
       // Duplo clique (ou nova tentativa da rede) com o mesmo pedido em 10 minutos devolve a MESMA sessão, não abre outra.
       const opcoes = { idempotencyKey: 'checkout-' + crypto.createHash('sha256').update(JSON.stringify([u.uid, plano, idioma, medicao, Math.floor(Date.now() / 600_000)])).digest('hex').slice(0, 40) };
-      const comum = { customer: c, locale: (idioma ?? 'pt-BR') as 'pt-BR' | 'en' | 'es', success_url: `${base}${prefixo}/assinatura?ok=1`, cancel_url: `${base}${prefixo}/assinatura`, client_reference_id: u.uid, allow_promotion_codes: true };
+      const comum = { customer: c, locale: (idioma ?? 'pt-BR') as 'pt-BR' | 'en', success_url: `${base}${rota(idioma ?? 'pt-BR')}?ok=1`, cancel_url: `${base}${rota(idioma ?? 'pt-BR')}`, client_reference_id: u.uid, allow_promotion_codes: true };
       const s = pix
         ? await stripe!.checkout.sessions.create({
             ...comum, mode: 'payment', allowed_payment_method_types: ['pix'],
@@ -253,8 +257,8 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
     const u = await guarda(req, res); if (!u) return;
     if (!stripe) { nao(res); return; }
     try {
-      const idioma = ['en', 'es'].includes(req.body?.idioma) ? (req.body.idioma as 'en' | 'es') : null;
-      const s = await stripe!.billingPortal.sessions.create({ customer: await cliente(u), locale: idioma ?? 'pt-BR', return_url: `${urlBase()}${idioma ? `/${idioma}` : ''}/assinatura` });
+      const idioma = req.body?.idioma === 'en' ? ('en' as const) : null;
+      const s = await stripe!.billingPortal.sessions.create({ customer: await cliente(u), locale: idioma ?? 'pt-BR', return_url: `${urlBase(req)}${caminhoNoPerfil(perfilDaRequisicao(req), idioma ?? 'pt-BR', '/assinatura')}` });
       res.json({ url: s.url });
     } catch (e) { console.error('billing/portal', e); res.status(500).json({ error: 'Não foi possível abrir o portal.' }); }
   });

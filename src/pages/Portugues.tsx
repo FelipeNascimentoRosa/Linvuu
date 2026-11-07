@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import { usePageTitle } from '../lib/usePageTitle';
 import { JsonLd } from '../components/JsonLd';
-import { SITE_URL, EMAIL_OFICIAL } from '../config/site';
+import { EMAIL_OFICIAL } from '../config/site';
+import { siteDoIdioma, urlAbsolutaEm } from '../i18n/locales';
 import { PRECO_MENSAL, SESSOES_GRATIS } from '../config/planos';
 import { LOCALE, useT } from '../i18n';
 
@@ -13,7 +14,7 @@ export default function Portugues() {
   const emPortugues = LOCALE.codigo === 'pt-BR';
   return (
     <div className="pagina pt-estrangeiros">
-      <JsonLd dados={{ '@context': 'https://schema.org', '@type': 'Course', name: c.tituloSeo, description: c.descSeo, inLanguage: LOCALE.codigo, teaches: 'Brazilian Portuguese', url: `${SITE_URL}${LOCALE.prefixo}/portugues`, provider: { '@type': 'Organization', name: 'Linvuu', url: SITE_URL } }} />
+      <JsonLd dados={{ '@context': 'https://schema.org', '@type': 'Course', name: c.tituloSeo, description: c.descSeo, inLanguage: LOCALE.codigo, teaches: 'Brazilian Portuguese', url: urlAbsolutaEm(LOCALE.codigo, '/portugues'), provider: { '@type': 'Organization', name: 'Linvuu', url: siteDoIdioma(LOCALE.codigo) } }} />
 
       <header className="curso-topo">
         <div>
@@ -23,8 +24,7 @@ export default function Portugues() {
           <div className="lv-hero-botoes">
             {emPortugues ? (
               <>
-                <a href="/en/portugues" hrefLang="en" className="btn btn-primary">{c.comecar}</a>
-                <a href="/es/portugues" hrefLang="es" className="btn btn-ghost">{c.ver}</a>
+                <a href={urlAbsolutaEm('en', '/portugues')} hrefLang="en" className="btn btn-primary">{c.comecar}</a>
               </>
             ) : (
               <>

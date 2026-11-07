@@ -1,5 +1,8 @@
 # Linvuu — instruções para Claude (estado comprovado)
 
+## Atualização — domínio internacional, 06/11/2026
+Em andamento: `linvuu.com` (inglês na raiz; o site em espanhol foi retirado em 06/11, o curso de espanhol permanece) e `linvuu.com.br` (português). Leia [docs/DOMINIO-COM-2026-11-06.md](docs/DOMINIO-COM-2026-11-06.md). Nada disso está no ar até o merge, o deploy e o domínio respondendo no Render serem conferidos.
+
 ## Atualização para Claude — Vuu e próximo passo, 29/10/2026
 Felipe aprovou a arte sorridente e a versão 2D do Vuu para a home. A entrega do mascote 2D para o site está **concluída**: [PR #395](https://github.com/FelipeNascimentoRosa/Linvuu/pull/395), merge `ba7a76b`, publicado no Render e conferido no domínio. O arquivo atual é `public/assets/vuu/vuu-feliz-2d.svg`; aparece na amostra de áudio e na apresentação da home. Ele é uma interpretação vetorial da referência aprovada. O estudo e o arquivo editável também estão em `C:\site\Vuu-estudio\arte-mestre\recebidas`. Esta conclusão diz respeito ao site; não afirma que animação, outras expressões ou integração ao APK estejam concluídas. Leia [o registro do Vuu](docs/VUU-2D-2026-10-29.md).
 
