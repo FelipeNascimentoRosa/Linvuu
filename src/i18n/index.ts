@@ -1,12 +1,11 @@
 import { ptBR, Dicionario } from './pt-BR';
 import { en } from './en';
-import { es } from './es';
 import { CodigoLocale, LOCALES, Locale, caminhoEm, localeDoCaminho, perfilAtual, perfilDoIdioma, urlAbsolutaEm } from './locales';
 
-const DICIONARIOS: Record<CodigoLocale, Dicionario> = { 'pt-BR': ptBR, en, es };
+const DICIONARIOS: Record<CodigoLocale, Dicionario> = { 'pt-BR': ptBR, en };
 const CHAVE = 'linvuu:locale';
 
-/** Idioma desta visita, decidido pelo endereço (/en, /es ou sem prefixo). Trocar de idioma recarrega a página. */
+/** Idioma desta visita, decidido pelo endereço (/en ou sem prefixo). Trocar de idioma recarrega a página. */
 export const LOCALE: Locale = typeof window === 'undefined' ? LOCALES[0] : localeDoCaminho(window.location.pathname);
 export const T: Dicionario = DICIONARIOS[LOCALE.codigo];
 /** Textos do idioma atual do site. */

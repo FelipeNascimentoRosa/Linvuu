@@ -10,7 +10,7 @@ try{
   const server=spawn(process.execPath,['node_modules/vite/bin/vite.js','preview','--outDir',outDir,'--host','127.0.0.1','--port','4388','--strictPort'],{stdio:'ignore'});
   try{
    for(let n=0;n<60;n++){try{if((await fetch(base)).ok)break;}catch{}await new Promise(r=>setTimeout(r,250));}
-   for(const locale of ['','/en','/es']){
+   for(const locale of ['', '/en']){
     const ctx=await browser.newContext({viewport:{width:320,height:720}}),page=await ctx.newPage(),events=[];
     await page.route('https://linvuu.com.br/**',r=>r.abort());
     await page.route('https://us.i.posthog.com/**',async r=>{events.push(JSON.parse(r.request().postData()));await r.fulfill({status:200,contentType:'application/json',body:'{"status":1}'});});

@@ -105,15 +105,15 @@ export default function Dia() {
             {aula.status !== 'publicada' && <span className={`pill pill-aula-${aula.status}`}>{STATUS_AULA[aula.status]}</span>}
           </header>
 
-          <IdiomaExplicacao valor={explicacao} disponiveis={(['pt', 'en', 'es'] as const).filter((l) => fonteDoCurso(curso!.id) === l || (!!aula.aula && aulaTraduzida(curso!.id, aula.aula.numero, l)))} mudar={(l) => { lembrarExplicacao(curso!.id, l); setExplicacao(l); }} />
-          {aula.semTraducao && <p className="nota nota-traducao" role="note">{LOCALE.codigo === 'en' ? 'Available explanations:' : LOCALE.codigo === 'es' ? 'Explicaciones disponibles:' : 'Explicações disponíveis:'} {t.linguas[aula.semTraducao]}</p>}
+          <IdiomaExplicacao valor={explicacao} disponiveis={(['pt', 'en'] as const).filter((l) => fonteDoCurso(curso!.id) === l || (!!aula.aula && aulaTraduzida(curso!.id, aula.aula.numero, l)))} mudar={(l) => { lembrarExplicacao(curso!.id, l); setExplicacao(l); }} />
+          {aula.semTraducao && <p className="nota nota-traducao" role="note">{LOCALE.codigo === 'en' ? 'Available explanations:' : 'Explicações disponíveis:'} {t.linguas[aula.semTraducao]}</p>}
           {aula.status !== 'publicada' && (
             <p className="nota">{aula.sessao ? T.emRevisao : T.naoPublicada(curso!.nome)}</p>
           )}
 
           {aula.sessao ? (
             <>
-            {dia === 1 && (() => { const g = GUIA_SESSAO[LOCALE.codigo as 'pt-BR' | 'en' | 'es'] ?? GUIA_SESSAO['pt-BR']; return (
+            {dia === 1 && (() => { const g = GUIA_SESSAO[LOCALE.codigo] ?? GUIA_SESSAO['pt-BR']; return (
               <details className="guia-sessao" open={(import.meta.env.VITE_ALVO === 'apk' || Capacitor.isNativePlatform()) && telaLarga()}><summary>{g.titulo}</summary><ol>{g.passos.map((x) => <li key={x}>{x}</li>)}</ol></details>
             ); })()}
             <Sessao key={`${curso!.id}:${dia}`} nomeIdioma={LOCALE.codigo === 'en' ? curso!.nome : curso!.nome.toLowerCase()} explicacao={aula.idiomas.explicacaoEfetiva} sessao={aula.sessao} idioma={curso!.id} aula={aula.aula?.numero ?? dia} dia={dia} proximo={dia < total ? destino(curso!.id, dia + 1) : undefined} />

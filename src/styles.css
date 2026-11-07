@@ -316,18 +316,13 @@ a.livro:focus-visible{outline:2px solid var(--ocre);outline-offset:6px}
 
 .ainda{display:inline-block;margin-left:8px;padding:2px 8px;border-radius:var(--r-pill);background:var(--warn-bg);color:var(--warn);font-size:12px;font-weight:700}
 
-/* ===== Barra do topo (estilo sites de idiomas europeus) ===== */
+/* ===== Barra do topo (novidades e contato; sem seletor de idioma: cada domínio tem um só idioma) ===== */
 .barra-topo{background:var(--papel-claro);border-bottom:1px solid var(--border);font-size:13px}
 .barra-topo-in{max-width:1320px;margin:0 auto;padding:6px var(--pad);display:flex;justify-content:flex-end;align-items:center;gap:22px}
 .barra-topo a{display:inline-flex;align-items:center;gap:7px;font-weight:600;color:var(--text)}
 .barra-topo a:hover{text-decoration:underline}
-.barra-idiomas{display:flex;align-items:center;gap:2px;margin-right:auto}
-.barra-idiomas>svg{margin-right:6px;color:var(--text-muted,currentColor);flex:none}
-.barra-topo .barra-idioma{padding:11px 12px;border-radius:999px;font-weight:600;color:var(--text);text-decoration:none;line-height:1.2}
-.barra-topo a.barra-idioma:hover{background:var(--surface);text-decoration:none}
-.barra-idioma.on{background:var(--text);color:var(--papel-claro);font-weight:700}
 .barra-links{display:flex;align-items:center;gap:22px}
-@media(max-width:760px){.barra-links{display:none}.barra-topo-in{justify-content:center;padding:6px 12px}.barra-idiomas{margin:0}.barra-topo .barra-idioma{padding:5px 9px}}
+@media(max-width:760px){.barra-topo{display:none}}
 
 /* ===== Hero: nota e faixa de provas ===== */
 .prova{background:var(--papel-claro);border-bottom:1px solid var(--border)}

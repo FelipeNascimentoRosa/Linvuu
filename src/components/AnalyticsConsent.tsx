@@ -9,15 +9,11 @@ import {APK} from '../plataforma';
 import './analytics-consent.css';
 const texts={
  'pt-BR':{title:'Preferências de análise',text:'Podemos usar o PostHog e o Microsoft Clarity para entender a navegação e melhorar o site? O Clarity grava a sessão sem o texto digitado em formulários. Não enviamos nome, e-mail nem respostas. É opcional e você pode mudar sua escolha aqui.',yes:'Permitir análise',no:'Não permitir',privacy:'Privacidade',saved:'Preferência salva.'},
- en:{title:'Analytics preferences',text:'May we use PostHog and Microsoft Clarity to understand navigation and improve the site? Clarity records the session without text typed into forms. We do not send your name, email or answers. This is optional; you can change your choice here.',yes:'Allow analytics',no:'Decline analytics',privacy:'Privacy',saved:'Preference saved.'},
- es:{title:'Preferencias de análisis',text:'¿Podemos usar PostHog y Microsoft Clarity para entender la navegación y mejorar el sitio? Clarity graba la sesión sin el texto escrito en formularios. No enviamos nombre, correo ni respuestas. Es opcional y puedes cambiar tu elección aquí.',yes:'Permitir análisis',no:'No permitir',privacy:'Privacidad',saved:'Preferencia guardada.'}
-};
+ en:{title:'Analytics preferences',text:'May we use PostHog and Microsoft Clarity to understand navigation and improve the site? Clarity records the session without text typed into forms. We do not send your name, email or answers. This is optional; you can change your choice here.',yes:'Allow analytics',no:'Decline analytics',privacy:'Privacy',saved:'Preference saved.'}};
 const ads={
  'pt-BR':{title:'Preferências de publicidade',text:'Podemos usar os pixels da Meta e do TikTok para medir anúncios? Eles recebem dados de navegação e podem usar cookies.',yes:'Permitir',no:'Recusar'},
- en:{title:'Advertising preferences',text:'May we use the Meta and TikTok pixels to measure ads? They receive browsing data and may use cookies.',yes:'Allow',no:'Decline'},
- es:{title:'Preferencias de publicidad',text:'¿Podemos usar los píxeles de Meta y TikTok para medir anuncios? Reciben datos de navegación y pueden usar cookies.',yes:'Permitir',no:'Rechazar'}
-};
-const extra={'pt-BR':{fechar:'Fechar',reabrir:'Preferências de cookies'},en:{fechar:'Close',reabrir:'Cookie preferences'},es:{fechar:'Cerrar',reabrir:'Preferencias de cookies'}};
+ en:{title:'Advertising preferences',text:'May we use the Meta and TikTok pixels to measure ads? They receive browsing data and may use cookies.',yes:'Allow',no:'Decline'}};
+const extra={'pt-BR':{fechar:'Fechar',reabrir:'Preferências de cookies'},en:{fechar:'Close',reabrir:'Cookie preferences'}};
 const EVENTO_PREFERENCIAS='linvuu:preferencias-privacidade';
 /** No site, o painel só aparece enquanto falta uma escolha; depois, reabre por este botão (rodapé e página de privacidade). */
 export function BotaoPreferencias({className}:{className?:string}){

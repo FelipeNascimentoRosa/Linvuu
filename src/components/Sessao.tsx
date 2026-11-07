@@ -250,7 +250,7 @@ function Narrar({ itens, idioma, explicacao }: { itens: string[]; idioma: string
 export function Gramatica({ b, idioma, explicacao }: { b: Extract<Bloco, { tipo: 'gramatica' }>; idioma: string; explicacao?: string }) {
   const T = textos(idioma);
   const lingua = explicacao ?? explicacaoDoCurso(idioma);
-  const rotuloComparacao = dicionario(lingua === 'pt' ? 'pt-BR' : lingua as 'en' | 'es').player.emPortugues;
+  const rotuloComparacao = dicionario(lingua === 'pt' ? 'pt-BR' : lingua as 'en').player.emPortugues;
   return (
     <section className="gramatica">
       <h3 className="bloco-sub">{b.titulo}</h3>

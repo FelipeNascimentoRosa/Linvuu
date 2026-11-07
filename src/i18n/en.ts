@@ -210,7 +210,7 @@ export const en: Dicionario = {
       { k: 'b1', titulo: 'B1 · Intermediate', resumo: 'Use the subjunctive, hypotheses, indirect speech and the passive; write formal e-mails; follow the news; handle a job interview, a bank and everyday life in Brazil.' },
     ],
   },
-  linguas: { pt: 'Portuguese', en: 'English', es: 'Spanish' } as Record<string, string>,
+  linguas: { pt: 'Portuguese', en: 'English'} as Record<string, string>,
   livro: { indisponivelIdioma: 'This book is written in Portuguese, for Portuguese speakers.' },
 };
 

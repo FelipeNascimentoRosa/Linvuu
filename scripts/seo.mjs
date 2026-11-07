@@ -1,4 +1,4 @@
-// Gera public/sitemap.xml e public/robots.txt nos três idiomas do site (/, /en, /es), com as versões alternativas (hreflang).
+// Gera public/sitemap.xml e public/robots.txt nos dois domínios (.com.br em português, .com em inglês), com as versões alternativas (hreflang).
 // O conjunto de URLs deriva do mesmo modelo de indexação do servidor (src/lib/metaRota.ts), para o sitemap não
 // divergir do site servido: hub de curso só é indexável no idioma em que TODAS as aulas estão explicadas, e a
 // gramática só onde o arquivo dela existe nesse idioma (sem o curso do próprio público — LOCALES.oculto — nem 'em-breve');
@@ -9,12 +9,12 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const raiz = path.resolve(import.meta.dirname, '..');
-// Dois domínios: português no .com.br; inglês (raiz) e espanhol (/es) no .com. `legado` = prefixo antigo, só para ler content/lastmod.json.
+// Dois domínios: português no .com.br; inglês (raiz) no .com. `legado` = prefixo antigo, só para ler content/lastmod.json.
 const SITE_BR = 'https://linvuu.com.br', SITE_GLOBAL = 'https://linvuu.com';
-const LOCALES = [{ c: 'pt-BR', p: '', legado: '', site: SITE_BR, l: 'pt', oculto: 'br' }, { c: 'en', p: '', legado: '/en', site: SITE_GLOBAL, l: 'en', oculto: 'en' }, { c: 'es', p: '/es', legado: '/es', site: SITE_GLOBAL, l: 'es', oculto: 'es' }];
+const LOCALES = [{ c: 'pt-BR', p: '', legado: '', site: SITE_BR, l: 'pt', oculto: 'br' }, { c: 'en', p: '', legado: '/en', site: SITE_GLOBAL, l: 'en', oculto: 'en' }];
 const { cursos } = JSON.parse(fs.readFileSync(path.join(raiz, 'content', 'cursos.json'), 'utf8'));
 const indice = JSON.parse(fs.readFileSync(path.join(raiz, 'content', 'indice.json'), 'utf8')).cursos;
-const tr = Object.fromEntries(['en', 'es'].map((l) => { const f = path.join(raiz, 'content', `indice.${l}.json`); return [l, fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : {}]; }));
+const tr = Object.fromEntries(['en'].map((l) => { const f = path.join(raiz, 'content', `indice.${l}.json`); return [l, fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : {}]; }));
 const fonte = (id) => indice[id]?.fonte ?? 'pt';
 
 /** Caminhos (sem prefixo) e em quais idiomas cada um entra. */
@@ -53,7 +53,7 @@ if (fs.existsSync(dirLivros)) for (const id of fs.readdirSync(dirLivros).sort())
 // uma tradução com essa aula em content/indice.<idioma>.json. É a mesma regra que decide o
 // noindex em produção (temNo, em metaRota.ts), lida dos mesmos ficheiros de conteúdo — assim,
 // quando uma tradução for publicada, as URLs entram no sitemap sem nova lista manual.
-const EXPLICACAO = { 'pt-BR': 'pt', en: 'en', es: 'es' };
+const EXPLICACAO = { 'pt-BR': 'pt', en: 'en' };
 const temAula = (id, loc, aula) => fonte(id) === EXPLICACAO[loc.c] || (tr[EXPLICACAO[loc.c]]?.[id]?.aulas ?? []).includes(aula);
 // Mesma regra de metaRota.ts (explicacaoCompleta / gramaticaExisteEm); scripts/testar-inventario-seo.ts confere as duas nos dois sentidos.
 const completo = (id, loc) => fonte(id) === EXPLICACAO[loc.c] || ((indice[id]?.grupos ?? []).length > 0 && (indice[id].grupos).every((g) => (tr[EXPLICACAO[loc.c]]?.[id]?.aulas ?? []).includes(g.aula)));
@@ -92,4 +92,4 @@ fs.writeFileSync(path.join(raiz, 'public', 'sitemap-global.xml'), xml(linhasGlob
 const robots = (site) => `User-agent: *\nAllow: /\nAllow: /api/gramatica/\nDisallow: /api/\nDisallow: /admin/\n\nSitemap: ${site}/sitemap.xml\n`;
 fs.writeFileSync(path.join(raiz, 'public', 'robots.txt'), robots(SITE_BR));
 fs.writeFileSync(path.join(raiz, 'public', 'robots-global.txt'), robots(SITE_GLOBAL));
-console.log(`sitemap .com.br: ${linhasBr.length} endereços (pt-BR) · sitemap .com: ${linhasGlobal.length} endereços (en, es)`);
+console.log(`sitemap .com.br: ${linhasBr.length} endereços (pt-BR) · sitemap .com: ${linhasGlobal.length} endereços (en)`);

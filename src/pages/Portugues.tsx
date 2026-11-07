@@ -25,7 +25,6 @@ export default function Portugues() {
             {emPortugues ? (
               <>
                 <a href={urlAbsolutaEm('en', '/portugues')} hrefLang="en" className="btn btn-primary">{c.comecar}</a>
-                <a href={urlAbsolutaEm('es', '/portugues')} hrefLang="es" className="btn btn-ghost">{c.ver}</a>
               </>
             ) : (
               <>

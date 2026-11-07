@@ -150,80 +150,9 @@ function TermsEn() {
   );
 }
 
-function PrivacidadEs() {
-  return (
-    <>
-      <h1 className="pagina-h1">Política de privacidad</h1>
-      <p className="resultado">Última actualización: 8 de octubre de 2026</p>
-      <div className="texto-legal">
-        <p>Esta política explica qué datos recoge Linvuu, para qué y cuáles son tus derechos según la Ley General de Protección de Datos de Brasil (LGPD, Ley 13.709/2018). Contacto: <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>.</p>
-        <h2>Qué datos recogemos</h2>
-        <ul>
-          <li><strong>Cuenta:</strong> nombre, correo electrónico y contraseña. La contraseña la guarda el servicio de autenticación de Google (Firebase Authentication); Linvuu nunca la ve en texto.</li>
-          <li><strong>Progreso:</strong> sesiones completadas, guardadas en tu cuenta. Parte del progreso también se guarda en tu navegador.</li>
-          <li><strong>Boletín:</strong> el correo que nos des, solo si marcas la casilla de consentimiento.</li>
-          <li><strong>Pago:</strong> si te suscribes, escribes los datos de la tarjeta directamente en Stripe, que procesa el pago. Linvuu no ve ni guarda el número de tu tarjeta; solo guardamos el vínculo entre tu cuenta y tu suscripción (el identificador de cliente en Stripe) y su estado.</li>
-          <li><strong>Datos técnicos:</strong> registros del servidor (como la dirección IP y el tipo de navegador), necesarios para que el sitio funcione y sea seguro.</li>
-        </ul>
-        <p>Con autorización separada en Preferencias de análisis, usamos PostHog para medir navegación, inicios y finalizaciones de clases con un identificador aleatorio del dispositivo. No se vincula a tu cuenta ni enviamos nombres, correos, respuestas, URLs completas o datos de pago. No grabamos la pantalla. PostHog Cloud procesa estos eventos y puede haber transferencias internacionales. Puedes rechazar o retirar el permiso en Preferencias de análisis; esto detiene nuevos envíos y elimina el identificador local, pero no borra automáticamente eventos ya recibidos. Para solicitar eliminación, contacta antes de retirar el permiso para poder localizar el identificador. Con la misma autorización, Microsoft Clarity graba sesiones de navegación y mapas de clics para encontrar partes del sitio difíciles de usar; el texto escrito en formularios se enmascara.</p>
-        <p><BotaoPreferencias /></p>
-        <p><strong>Publicidad opcional:</strong> con tu autorización específica en Preferencias de publicidad, usamos los píxeles de Meta y TikTok para medir visitas a páginas seleccionadas, interacciones de sesión e inicios de pago y crear públicos publicitarios. Las empresas pueden recibir direcciones de páginas, datos técnicos y cookies; Meta también puede recibir detalles de páginas o productos según sus políticas, incluso mediante transferencias internacionales. Puedes rechazar o retirar tu autorización en las preferencias del sitio; esto detiene nuevos eventos, pero no elimina automáticamente los datos que recibieron las plataformas.</p>
-        <p><strong>Medición del aprendizaje (opcional):</strong> si aceptas el aviso que aparece en los ejercicios, guardamos un identificador aleatorio en este navegador y registramos en nuestros servidores qué ejercicios aciertas o fallas y cuándo terminas una sesión. No registramos tu nombre, correo ni tus respuestas, y el identificador no se vincula a tu cuenta. Lo usamos solo para mejorar las clases y saber si los alumnos progresan. Si lo rechazas, no se registra nada y el identificador se borra del navegador.</p>
-        <h2>Para qué los usamos</h2>
-        <ul>
-          <li>Crear y mantener tu cuenta, guardar tu progreso y procesar tu suscripción (prestar el servicio que pediste).</li>
-          <li>Enviarte novedades de Linvuu (consentimiento; puedes darte de baja cuando quieras).</li>
-          <li>Proteger el sitio contra abusos y corregir fallos (interés legítimo).</li>
-        </ul>
-        <h2>Con quién los compartimos</h2>
-        <p>Usamos proveedores para operar el sitio: Google (Firebase: autenticación y base de datos), Stripe (pagos) y nuestro proveedor de alojamiento (Render). Tratan los datos en nuestro nombre. No vendemos tus datos.</p>
-        <h2>Cuánto tiempo los guardamos</h2>
-        <p>Mientras exista tu cuenta o hasta que pidas eliminarla. Los datos del boletín se guardan hasta que te des de baja.</p>
-        <h2>Tus derechos</h2>
-        <p>Puedes pedir la confirmación de que tratamos tus datos, el acceso, la corrección, la eliminación y la portabilidad, saber con quién los compartimos y retirar tu consentimiento. Escribe a <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>. También puedes reclamar ante la autoridad brasileña de protección de datos (ANPD) o ante la de tu país.</p>
-        <h2>Menores de edad</h2>
-        <p>Si tienes menos de 18 años, usa el sitio con el conocimiento de tu madre, padre o tutor.</p>
-        <h2>Cambios</h2>
-        <p>Podemos actualizar esta política. La fecha de arriba indica la versión más reciente.</p>
-      </div>
-    </>
-  );
-}
-
-function TerminosEs() {
-  return (
-    <>
-      <h1 className="pagina-h1">Términos de uso</h1>
-      <p className="resultado">Última actualización: 5 de noviembre de 2026</p>
-      <div className="texto-legal">
-        <p>Al usar el sitio de Linvuu o crear una cuenta, aceptas estos términos. Dudas: <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>.</p>
-        <h2>Qué ofrece Linvuu</h2>
-        <p>Cursos de idiomas en texto, audio y ejercicios. Algunas lecciones están en producción o en revisión y pueden cambiar; cada lección muestra su estado.</p>
-        <h2>Resultados</h2>
-        <p>Linvuu te da un método y un contenido para estudiar. Tu avance depende del tiempo que dediques y de la práctica fuera del sitio.</p>
-        <h2>Tu cuenta</h2>
-        <p>Eres responsable de mantener segura tu contraseña y de usar datos verdaderos al registrarte. Podemos suspender cuentas usadas para fraude o abuso.</p>
-        <h2>Uso del contenido</h2>
-        <p>Los textos, audios, ejercicios, el diseño y la marca Linvuu pertenecen a Linvuu. <strong>Todos los derechos reservados.</strong> Puedes estudiar para uso personal. No está permitido copiar, revender ni redistribuir el contenido sin autorización por escrito.</p>
-        <h2>Plan de pago y reembolso</h2>
-        {!APK && (<p>Las dos primeras lecciones de cada curso son gratis. Para continuar hay una suscripción mensual de {PRECO_MENSAL} (reales brasileños), cobrada cada mes hasta que canceles. El precio y la forma de pago aparecen antes de la compra; el emisor de tu tarjeta hace la conversión y puede cobrar sus propias comisiones.</p>)}
-        {!APK && (<p><strong>Paquetes de pago único:</strong> 3 meses por {PRECO_TRIMESTRAL} con tarjeta o boleto ({PRECO_TRIMESTRAL_PIX} con Pix, solo en Brasil); 12 meses por {PRECO_ANUAL}. Los paquetes no se renuevan automáticamente. El periodo empieza cuando se confirma el pago y, si compras un paquete nuevo antes de que termine el actual, el nuevo periodo empieza cuando termina el actual. Con una suscripción mensual activa no puedes comprar un paquete encima; primero cancela la suscripción.</p>)}
-        <p><strong>Reembolso en 7 días:</strong> puedes pedir el reembolso completo en los 7 días siguientes al pago de cualquier plan (mensual o paquete), sin dar explicaciones, escribiendo a <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>.</p>
-        <p><strong>Cancelación de la suscripción mensual:</strong> cancelas cuando quieras, sin penalización. El acceso continúa hasta el final del periodo ya pagado y no hay nuevos cobros.</p>
-        <h2>Disponibilidad</h2>
-        <p>Trabajamos para mantener el sitio en línea, pero puede no estar disponible por mantenimiento o por fallos ajenos a nosotros.</p>
-        <h2>Cambios y jurisdicción</h2>
-        <p>Podemos actualizar estos términos; la fecha de arriba indica la versión más reciente. Se aplica la ley brasileña, sin perjuicio de los derechos del consumidor de tu país de residencia.</p>
-        <p>Consulta también la <Link to="/privacidade">Política de privacidad</Link>.</p>
-      </div>
-    </>
-  );
-}
-
 const TEXTOS = {
   'pt-BR': { privacidade: PrivacidadePt, termos: TermosPt },
   en: { privacidade: PrivacyEn, termos: TermsEn },
-  es: { privacidade: PrivacidadEs, termos: TerminosEs },
 };
 
 export function Legal({ tipo }: { tipo: 'privacidade' | 'termos' }) {

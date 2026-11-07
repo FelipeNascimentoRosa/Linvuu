@@ -14,8 +14,7 @@ import { useReforco } from './useReforco';
 const detalhes = {
  'pt-BR': { selecao: 'Escolha seu idioma de estudo', passo: 'Próximo passo', marca: 'Boas-vindas à Linvuu', titulo: 'O mundo tem muito a dizer.', texto: 'Entre na conversa.', progresso: 'do percurso concluído', completa: 'Percurso concluído. Continue praticando.', rever: 'Rever o percurso', reverGratis: 'Revisar as sessões gratuitas', fimGratis: 'Você concluiu as sessões gratuitas deste idioma. Reforce o que aprendeu.' },
  en: { selecao: 'Choose your learning language', passo: 'Next step', marca: 'Welcome to Linvuu', titulo: 'The world has so much to say.', texto: 'Join the conversation.', progresso: 'of your path completed', completa: 'Path completed. Keep practising.', rever: 'Review your path', reverGratis: 'Review the free sessions', fimGratis: 'You completed the free sessions in this language. Practise what you learned.' },
- es: { selecao: 'Elige tu idioma de estudio', passo: 'Próximo paso', marca: 'Te damos la bienvenida a Linvuu', titulo: 'El mundo tiene mucho que decir.', texto: 'Entra en la conversación.', progresso: 'de tu recorrido completado', completa: 'Recorrido completado. Sigue practicando.', rever: 'Repasar el recorrido', reverGratis: 'Repasar las sesiones gratuitas', fimGratis: 'Completaste las sesiones gratuitas de este idioma. Refuerza lo aprendido.' },
-};
+ };
 
 export default function Home() {
  const x=experiencia(), a=appTextos(), anterior=useRetomadaGeral(), d=detalhes[LOCALE.codigo];
@@ -32,12 +31,12 @@ export default function Home() {
  return <div className="pagina app-home app-dashboard">
   <header className="app-boasvindas"><p className="app-kicker"><span className="app-ponto" aria-hidden="true" />{x.rotina}</p><h1>{x.hoje}<span className="app-ponto-titulo" aria-hidden="true">.</span></h1><p>{x.saudacao}</p></header>
   <p className="app-home-selecao" id="app-home-selecao">{d.selecao}</p>
-  <p className="app-idiomas-ajuda" id="app-idiomas-ajuda">{{'pt-BR':'Deslize para ver mais idiomas →',en:'Swipe to see more languages →',es:'Desliza para ver más idiomas →'}[LOCALE.codigo]}</p>
+  <p className="app-idiomas-ajuda" id="app-idiomas-ajuda">{{'pt-BR':'Deslize para ver mais idiomas →',en:'Swipe to see more languages →'}[LOCALE.codigo]}</p>
   <div className="app-idiomas" role="group" aria-labelledby="app-home-selecao" aria-describedby="app-idiomas-ajuda">{cursos.map(c=><button type="button" key={c.id} aria-pressed={c.id===curso.id} onClick={()=>setEscolha(c.id)}><span aria-hidden="true">{c.id==='br'?'PT':c.id.toUpperCase()}</span>{c.nome}</button>)}</div>
   <section className="app-missao" aria-labelledby="app-missao-titulo">
    <div className="app-missao-meta"><span className="app-missao-etiqueta">{x.foco}</span><span>{curso.nome}</span></div>
    <OndaDeVoz /><p className="app-saudacao" lang={curso.id==='br'?'pt-BR':curso.id}>{saudacoes[curso.id]}</p>
-   <p className="app-missao-sessao">{revisaoGratuita ? x.revisar : ({'pt-BR':'Sessão',en:'Session',es:'Sesión'} as const)[LOCALE.codigo]} {revisaoGratuita ? 1 : ret.dia} <span aria-hidden="true">/</span> {ret.total}</p><h2 id="app-missao-titulo">{revisaoGratuita ? d.reverGratis : ret.titulo}</h2>
+   <p className="app-missao-sessao">{revisaoGratuita ? x.revisar : ({'pt-BR':'Sessão',en:'Session'} as const)[LOCALE.codigo]} {revisaoGratuita ? 1 : ret.dia} <span aria-hidden="true">/</span> {ret.total}</p><h2 id="app-missao-titulo">{revisaoGratuita ? d.reverGratis : ret.titulo}</h2>
    {(revisaoGratuita || ret.feitos>=ret.total) && <p className="app-missao-detalhe">{revisaoGratuita ? d.fimGratis : d.completa}</p>}
    <Link className="app-acao-principal" to={revisaoGratuita ? `/curso/${curso.id}/dia/1` : ret.feitos>=ret.total ? `/curso/${curso.id}` : `/curso/${curso.id}/dia/${ret.dia}`}><span aria-hidden="true">▶</span>{revisaoGratuita ? d.reverGratis : ret.feitos>=ret.total ? d.rever : anterior?.idioma===curso.id||feitos.size?x.continuar:x.comecar}<span aria-hidden="true">→</span></Link>
   </section>

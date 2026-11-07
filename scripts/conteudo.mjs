@@ -55,9 +55,9 @@ const traducoes = {};
 //   · dias-fonte (dia-NNN.json): conjunto exacto 1..máx(120 da trilha, 4A) sem
 //     buracos nem extras, campos derivados da aula-fonte (título, objectivo,
 //     origem, sequência de blocos após as transformações do gerador);
-//   · dias traduzidos (<curso>/<en|es>/dia-NNN.json): prefixo contínuo 1..M do
+//   · dias traduzidos (<curso>/<en>/dia-NNN.json): prefixo contínuo 1..M do
 //     curso, mesma estrutura e mesmos campos não traduzíveis do dia-fonte;
-//   · mapas i18n (i18n/<en|es>/*.json): JSON-objecto válido, aulas dentro de 1..A;
+//   · mapas i18n (i18n/<en>/*.json): JSON-objecto válido, aulas dentro de 1..A;
 //   · content/indice.json: total/publicadas conferem com os ficheiros.
 // Corre antes do ciclo legado: se houver JSON corrompido, o erro sai com o nome
 // do ficheiro em vez de uma excepção sem contexto.

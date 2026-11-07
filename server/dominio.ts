@@ -1,4 +1,4 @@
-// Dois domínios, um serviço. linvuu.com.br é o site em português (Brasil); linvuu.com é o site internacional (inglês na raiz, /es em espanhol).
+// Dois domínios, um serviço. linvuu.com.br é o site em português (Brasil); linvuu.com é o site internacional (inglês na raiz).
 // Aqui ficam as regras que impedem conteúdo duplicado entre eles e escolhem sitemap, robots e URL base de cada requisição.
 import type { Express, Request, Response, NextFunction } from 'express';
 import { SITE_URL, SITE_GLOBAL_URL } from '../src/config/site.ts';
@@ -25,10 +25,11 @@ export function redirecionamentoDeDominio(host: string, caminho: string, consult
   if (h === `www.${HOST_GLOBAL}`) return `${SITE_GLOBAL_URL}${caminho}${q}`;
   if (h === `www.${HOST_BR}`) return `${SITE_URL}${caminho}${q}`;
   const prefixo = caminho.match(/^\/(en|es)(?=\/|$)/)?.[1];
-  // .com.br: inglês e espanhol agora vivem no .com. 301 permanente: o Google transfere a relevância.
-  if (h === HOST_BR && prefixo) return `${SITE_GLOBAL_URL}${prefixo === 'en' ? caminho.slice(3) || '/' : caminho}${q}`;
-  // .com: o inglês é a raiz; /en/... era o endereço antigo (e o de quem digita por hábito).
-  if (h === HOST_GLOBAL && prefixo === 'en') return `${SITE_GLOBAL_URL}${caminho.slice(3) || '/'}${q}`;
+  // .com.br: inglês e o antigo espanhol do site vivem (ou viveram) no .com. 301 permanente: o Google transfere a relevância.
+  // O site em espanhol foi retirado (2026-11-06); /es/... leva ao mesmo caminho em inglês. O curso de espanhol (/curso/es) não tem prefixo e segue igual.
+  if (h === HOST_BR && prefixo) return `${SITE_GLOBAL_URL}${caminho.slice(3) || '/'}${q}`;
+  // .com: o inglês é a raiz; /en/... era o endereço antigo (e o de quem digita por hábito); /es/... também.
+  if (h === HOST_GLOBAL && prefixo) return `${SITE_GLOBAL_URL}${caminho.slice(3) || '/'}${q}`;
   // .com: o curso de português só existe com explicação em inglês (/curso/br); o resto em português mora no .com.br
   return null;
 }

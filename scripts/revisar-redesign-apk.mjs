@@ -9,7 +9,7 @@ let browser;
 try{
  for(let i=0;i<60;i++){try{if((await fetch(base)).ok)break;}catch{}await new Promise(r=>setTimeout(r,250));}
  browser=await chromium.launch({args:['--no-sandbox'], executablePath:process.env.CHROME_EXECUTABLE_PATH});
- for(const locale of ['', '/en', '/es'])for(const width of [320,360,390,393,412]){
+ for(const locale of ['', '/en'])for(const width of [320,360,390,393,412]){
   const context=await browser.newContext({viewport:{width,height:844},reducedMotion:'reduce'});const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
   const course=locale?'br':'en';
   for(const [name,path,ready]of [['inicio','/','.app-missao'],['catalogo','/cursos','.app-grade'],['percurso',`/curso/${course}`,'.app-unidade'],['aula',`/curso/${course}/dia/1`,'.app-sessao'],['conta','/assinatura','.app-conta-mobile'],['acesso',`/curso/${course}/dia/9`,'.acesso-limitado']]){

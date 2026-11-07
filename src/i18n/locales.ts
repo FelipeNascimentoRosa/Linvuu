@@ -1,11 +1,11 @@
 // Idiomas da INTERFACE. O idioma das explicações é uma preferência separada por curso. O endereço diz o idioma: / (português), /en (inglês), /es (espanhol).
 // A base de cada curso (o idioma estudado: palavras, frases, diálogos e áudio) é a mesma; muda só a explicação.
 import { SITE_URL, SITE_GLOBAL_URL } from '../config/site';
-export type CodigoLocale = 'pt-BR' | 'en' | 'es';
+export type CodigoLocale = 'pt-BR' | 'en';
 /** Língua do material pedagógico, independente da interface e do idioma estudado. */
-export type Explicacao = 'pt' | 'en' | 'es';
+export type Explicacao = 'pt' | 'en';
 export interface Locale {
-  codigo: CodigoLocale; rotulo: string; nome: string; prefixo: '' | '/en' | '/es';
+  codigo: CodigoLocale; rotulo: string; nome: string; prefixo: '' | '/en';
   /** Público editorial das páginas públicas/SEO; não determina a língua carregada nas aulas. */
   explicacao: Explicacao; og: string; dataLocale: string;
   /** Curso que não aparece para este público (é a língua dele). */
@@ -16,14 +16,14 @@ export interface Locale {
 
 /**
  * Perfil de domínio. Cada domínio tem a sua própria estrutura de endereços:
- *  - br (linvuu.com.br, o app/APK e o desenvolvimento): / português, /en inglês, /es espanhol (como sempre foi).
- *  - global (linvuu.com): / inglês, /es espanhol. Português vive só no .com.br.
+ *  - br (linvuu.com.br, o app/APK e o desenvolvimento): / português; /en inglês só no app e no desenvolvimento (no site, 301 para o .com).
+ *  - global (linvuu.com): / inglês. Português vive só no .com.br.
  * O perfil vem do host no navegador; o servidor o define por requisição (síncrona) com comPerfil().
  */
 export type Perfil = 'br' | 'global';
 const PREFIXOS: Record<Perfil, Record<CodigoLocale, string>> = {
-  br: { 'pt-BR': '', en: '/en', es: '/es' },
-  global: { 'pt-BR': '', en: '', es: '/es' },
+  br: { 'pt-BR': '', en: '/en' },
+  global: { 'pt-BR': '', en: '' },
 };
 export const perfilDoHost = (host: string): Perfil => (/(^|\.)linvuu\.com$/i.test((host || '').split(':')[0]) ? 'global' : 'br');
 let perfil: Perfil = typeof window === 'undefined' ? 'br' : perfilDoHost(window.location.hostname);
@@ -45,13 +45,12 @@ export const LOCALES: Locale[] = [
   def('pt-BR', 'PT', 'Português', 'pt', 'pt_BR', 'pt-BR', 'br', ['en', 'es', 'de', 'fr', 'it', 'ru']),
   // inglês: primeiro o que já está inteiro explicado em inglês (português do Brasil, russo, francês), depois o que está em tradução
   def('en', 'EN', 'English', 'en', 'en_US', 'en-US', 'en', ['br', 'ru', 'fr', 'es', 'de', 'it']),
-  def('es', 'ES', 'Español', 'es', 'es_ES', 'es-ES', 'es', ['br', 'en', 'de', 'fr', 'it', 'ru']),
 ];
 export const LOCALE_PADRAO: CodigoLocale = 'pt-BR';
 /** Idioma de um endereço sem prefixo neste domínio: português no .com.br, inglês no .com. */
 export const localePadrao = (): Locale => (perfil === 'global' ? LOCALES[1] : LOCALES[0]);
 
-/** Locale de um caminho (/en/cursos → en; no .com, /cursos → en e /es/cursos → es). */
+/** Locale de um caminho (/en/cursos → en no perfil br; no .com, /cursos → en). */
 export const localeDoCaminho = (caminho: string): Locale => {
   const achado = LOCALES.find((l) => l.prefixo && (caminho === l.prefixo || caminho.startsWith(`${l.prefixo}/`)));
   return achado ?? localePadrao();
@@ -79,4 +78,4 @@ export const caminhoNoPerfil = (p: Perfil, codigo: CodigoLocale, base: string): 
   return pre ? (base === '/' ? pre : pre + base) : base;
 };
 /** Cada idioma no perfil do domínio onde ele realmente mora (para testes e geradores que percorrem o site inteiro). */
-export const LOCALES_POR_PERFIL: [Perfil, Locale][] = [['br', LOCALES[0]], ['global', LOCALES[1]], ['global', LOCALES[2]]];
+export const LOCALES_POR_PERFIL: [Perfil, Locale][] = [['br', LOCALES[0]], ['global', LOCALES[1]]];

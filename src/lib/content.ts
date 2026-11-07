@@ -37,9 +37,9 @@ export const CURSOS: Curso[] = CURSOS_BASE.map(({ i18n, ...c }) => ({ ...c, ...(
 export const FASES = trilhaJson.fases as Fase[];
 export const DIAS = trilhaJson.dias as DiaMestre[];
 type Traducao = { aulas: number[]; g: Record<string, string>; s: Record<string, string> };
-/** Traduções dos títulos e lista de aulas por idioma de explicação (content/indice.<en|es>.json), carregadas antes de abrir o site. */
+/** Traduções dos títulos e lista de aulas por idioma de explicação (content/indice.en.json), carregadas antes de abrir o site. */
 let TRADUCOES: Partial<Record<Explicacao, Record<string, Traducao>>> = {};
-const ARQUIVOS_TR = import.meta.glob('../../content/indice.{en,es}.json', { import: 'default' }) as Record<string, () => Promise<Record<string, Traducao>>>;
+const ARQUIVOS_TR = import.meta.glob('../../content/indice.en.json', { import: 'default' }) as Record<string, () => Promise<Record<string, Traducao>>>;
 const carregandoTr = new Map<Explicacao, Promise<void>>();
 /** Índice de traduções de uma língua de explicação; cada um é baixado uma vez, só quando alguém precisa dele. */
 export function carregarTraducao(l: Explicacao): Promise<void> {
@@ -56,7 +56,7 @@ export function carregarTraducao(l: Explicacao): Promise<void> {
  * no caminho crítico). Os outros vêm depois, sem pressa, para quem troca a língua da explicação numa aula. */
 export async function carregarTraducoes() {
   await carregarTraducao(LOCALE.explicacao);
-  const depois = () => { void carregarTraducao('en'); void carregarTraducao('es'); };
+  const depois = () => { void carregarTraducao('en'); };
   if (typeof window !== 'undefined' && 'requestIdleCallback' in window) window.requestIdleCallback(depois, { timeout: 4000 }); else setTimeout(depois, 2000);
 }
 const INDICE = indiceJson.cursos as unknown as Record<string, { total: number; publicadas: number; emProducao: number; planejadas: number; status: StatusAula[]; sobrescritos: Record<string, { t: string; o: string }>; grupos?: { aula: number; titulo: string; nivel?: string; dias: [number, number] }[]; fonte?: Explicacao; amostra?: { min: number; blocos: [string, number][] } }>;

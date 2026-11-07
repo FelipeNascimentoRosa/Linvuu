@@ -207,7 +207,7 @@ export const ptBR = {
       { k: 'a1', titulo: 'A1 · Iniciante', resumo: '' }, { k: 'a2', titulo: 'A2 · Básico', resumo: '' }, { k: 'b1', titulo: 'B1 · Intermediário', resumo: '' },
     ],
   },
-  linguas: { pt: 'português', en: 'inglês', es: 'espanhol' } as Record<string, string>,
+  linguas: { pt: 'português', en: 'inglês'} as Record<string, string>,
   livro: { indisponivelIdioma: '' },
 };
 export type Dicionario = typeof ptBR;

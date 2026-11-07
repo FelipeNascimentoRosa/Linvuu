@@ -76,7 +76,7 @@ export default function HomeBrasileiros() {
         <article><h3>{h("Feito por professores.")}</h3><p>{h("Cada curso é escrito e revisado por professores de idiomas.")}</p></article>
         <article><h3>{h("Baseado em livros de referência.")}</h3><p>{h("Livros didáticos e gramáticas de cada idioma, explicados em português.")}</p></article>
         <article><h3>{h("Você ouve e pratica.")}</h3><p>{h("Áudio em cada frase e exercícios com correção.")}</p></article>
-        {LOCALE.codigo !== 'es' && <article><h3>{h("Aula ao vivo, se quiser.")}</h3><p>{h("Aulas de russo por videochamada com professores.")}</p><Link className="br-text-link" to="/russo-online">{h("Ver aulas ao vivo →")}</Link></article>}
+        <article><h3>{h("Aula ao vivo, se quiser.")}</h3><p>{h("Aulas de russo por videochamada com professores.")}</p><Link className="br-text-link" to="/russo-online">{h("Ver aulas ao vivo →")}</Link></article>
       </div>
     </section>
     <section className="br-section br-vuu-section" aria-labelledby="br-vuu-title">

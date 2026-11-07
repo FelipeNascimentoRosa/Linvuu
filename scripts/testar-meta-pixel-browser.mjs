@@ -8,7 +8,7 @@ let browser;
 try {
  for(let i=0;i<60;i++){try{if((await fetch(base)).ok)break;}catch{} await new Promise(r=>setTimeout(r,250));}
  browser=await chromium.launch({executablePath:process.env.CHROME_EXECUTABLE_PATH,args:['--no-sandbox']});
- for(const lang of ['', '/en', '/es']) {
+ for(const lang of ['', '/en']) {
   const context=await browser.newContext({viewport:{width:390,height:844}}),page=await context.newPage(); let loads=0,requests=0,tiktokLoads=0;
   await page.route('https://connect.facebook.net/**',async route=>{loads++;await route.fulfill({status:200,contentType:'text/javascript',body:'/* Meta SDK bloqueado no teste local */'});});
   await page.route('https://www.facebook.com/**',async route=>{requests++;await route.abort();});

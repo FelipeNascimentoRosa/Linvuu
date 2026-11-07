@@ -74,8 +74,8 @@ try {
   }));
   // Estrutura antiga e variantes de host: redirecionamento permanente e sem cadeia
   const regras: [string, string, string][] = [
-    ['linvuu.com.br', '/en', 'https://linvuu.com/'], ['linvuu.com.br', '/en/curso/ru', 'https://linvuu.com/curso/ru'], ['linvuu.com.br', '/es/cursos', 'https://linvuu.com/es/cursos'],
-    ['linvuu.com.br', '/es', 'https://linvuu.com/es'], ['linvuu.com', '/en', 'https://linvuu.com/'], ['linvuu.com', '/en/cursos', 'https://linvuu.com/cursos'],
+    ['linvuu.com.br', '/en', 'https://linvuu.com/'], ['linvuu.com.br', '/en/curso/ru', 'https://linvuu.com/curso/ru'], ['linvuu.com.br', '/es/cursos', 'https://linvuu.com/cursos'],
+    ['linvuu.com.br', '/es', 'https://linvuu.com/'], ['linvuu.com', '/es/cursos', 'https://linvuu.com/cursos'], ['linvuu.com', '/en', 'https://linvuu.com/'], ['linvuu.com', '/en/cursos', 'https://linvuu.com/cursos'],
     ['www.linvuu.com', '/curso/ru', 'https://linvuu.com/curso/ru'], ['www.linvuu.com.br', '/cursos', 'https://linvuu.com.br/cursos'],
   ];
   for (const [host, p, destino] of regras) {

@@ -18,8 +18,8 @@ const porta = new URL(origem).port;
 const base = global ? `http://${HOST}:${porta}` : origem;
 const SITE = global ? 'https://linvuu.com' : 'https://linvuu.com.br';
 const extras = global
-  ? ['/curso/de', '/curso/de/dia/1', '/es/gramatica/de', '/portugues', '/entrar', '/pagina-que-nao-existe', '/es/pagina-que-nao-existe']
-  : ['/en/curso/de', '/en/curso/de/dia/1', '/es/gramatica/de', '/curso/ru/dia/9', '/entrar', '/pagina-que-nao-existe', '/en/pagina-que-nao-existe'];
+  ? ['/curso/de', '/curso/de/dia/1', '/gramatica/de', '/portugues', '/entrar', '/pagina-que-nao-existe']
+  : ['/en/curso/de', '/en/curso/de/dia/1', '/gramatica/de', '/curso/ru/dia/9', '/entrar', '/pagina-que-nao-existe', '/en/pagina-que-nao-existe'];
 // fetch() ignora o cabeçalho Host; http.get o envia de verdade.
 const buscar = (p) => (!global ? fetch(origem + p).then((r) => r.text()) : new Promise((ok, erro) => {
   http.get({ host: '127.0.0.1', port: Number(porta), path: p, headers: { host: HOST } }, (res) => { const b = []; res.on('data', (x) => b.push(x)); res.on('end', () => ok(Buffer.concat(b).toString('utf8'))); }).on('error', erro);
@@ -43,7 +43,7 @@ const lerDom = (page) => page.evaluate(() => ({
 
 const sitemap = global ? fs.readFileSync('public/sitemap-global.xml', 'utf8') : await (await fetch(`${base}/sitemap.xml`)).text();
 const urls = [...new Set([...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => new URL(m[1]).pathname).concat(extras))];
-assert.ok(urls.length > 50, 'sitemap carregado');
+assert.ok(urls.length > (global ? 25 : 50), 'sitemap carregado');
 
 const browser = await chromium.launch(global ? { args: [`--unsafely-treat-insecure-origin-as-secure=${base}`, `--host-resolver-rules=MAP ${HOST} 127.0.0.1`] } : {});
 const ctx = await browser.newContext({ viewport: { width: 390, height: 844 } });
@@ -76,7 +76,7 @@ await Promise.all(Array.from({ length: 4 }, async () => { for (let p; (p = fila.
 
 // Navegação SPA: abre uma página e segue um link interno real; o <head> resultante deve ser o do servidor para o destino.
 const percursos = global
-  ? [['/', '/cursos'], ['/cursos', '/curso/ru'], ['/curso/ru', '/curso/ru/dia/1'], ['/es', '/es/cursos'], ['/es/cursos', '/es/curso/de'], ['/curso/br', '/curso/br/dia/1']]
+  ? [['/', '/cursos'], ['/cursos', '/curso/ru'], ['/curso/ru', '/curso/ru/dia/1'], ['/cursos', '/curso/de'], ['/curso/br', '/curso/br/dia/1']]
   : [['/', '/cursos'], ['/cursos', '/curso/ru'], ['/curso/ru', '/curso/ru/dia/1'], ['/en', '/en/cursos'], ['/en/cursos', '/en/curso/de'], ['/en/curso/ru', '/en/curso/ru/dia/1']];
 for (const [de, para] of percursos) {
   const page = await ctx.newPage();

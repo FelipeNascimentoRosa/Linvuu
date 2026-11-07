@@ -13,7 +13,7 @@ try {
   }
   assert.ok(pronto,'prévia APK iniciou');
   browser=await chromium.launch();
-  for (const width of [320,390]) for (const locale of ['', '/en', '/es']) {
+  for (const width of [320,390]) for (const locale of ['', '/en']) {
     const context=await browser.newContext({viewport:{width,height:844},reducedMotion:'reduce'});
     const page=await context.newPage(), erros=[];
     page.on('pageerror',e=>erros.push(e.message));
