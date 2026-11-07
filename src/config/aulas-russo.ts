@@ -9,6 +9,10 @@ export type TextoAulasRusso = {
   lead: string;
   quemTitulo: string;
   credenciais: string[];
+  /** Relatos reais de alunos, textos exatamente como publicados na Udemy. Só em português (idioma original). */
+  relatosTitulo?: string;
+  relatosFonte?: string;
+  relatos?: { nome: string; texto: string }[];
   comoTitulo: string;
   como: string[];
   testeTitulo: string;
@@ -28,6 +32,20 @@ export const AULAS_RUSSO: Record<'pt-BR' | 'en', TextoAulasRusso> = {
     lead: 'Aprenda russo com professores, ao vivo, por videochamada, e estude entre as aulas no curso de russo da Linvuu.',
     quemTitulo: 'Os professores',
     credenciais: [
+      'Felipe Rosa: vencedor (diploma de 1º grau) da III Olimpíada Internacional Online de Russo como Língua Estrangeira da Universidade Estatal de São Petersburgo (SPbGU), em 25/11/2022.',
+      'Felipe Rosa: participou da série de master classes «Preparação para o TRKI, de B2 a C2» (24 horas) do Centro de Testes de Língua da SPbGU, em junho de 2021.',
+      'Felipe Rosa: apresentou a palestra «Preparação para o TRKI (TORFL) usando plataforma EAD» no seminário on-line da SPbGU, em 26/06/2021.',
+    ],
+    relatosTitulo: 'O que alunos dizem',
+    relatosFonte: 'Avaliações de 5 estrelas do curso «Russo para Brasileiros: do Zero ao A2» na Udemy (nota média 4,74, 72 avaliações, em 07/11/2026). Textos exatamente como publicados; nomes abreviados.',
+    relatos: [
+      { nome: 'Lucas L.', texto: 'Os professores são extremamente didáticos e os vídeos apresentam uma ótima qualidade de imagem e áudio' },
+      { nome: 'Paulo Henrique S.', texto: 'O curso tem sido sensacional, eu estou gostando muito das explicações. Vocês estão de parabéns!' },
+      { nome: 'Ana Maria L.', texto: 'O curso é bem completo, os professores são bem atenciosos e me enviaram o material das aulas por whatsapp.' },
+      { nome: 'Naelson P.', texto: 'Bem completo e professores simpáticos!' },
+      { nome: 'Herica M.', texto: 'Curso excelente e com valor acessível. Recomendo!' },
+      { nome: 'Priscila Z.', texto: 'Melhores professores, didática e método que realmente funcionam! Indico demais.' },
+      { nome: 'Paola Renata O.', texto: 'excelente material, com professores capacitados que realmente te ensinam russo. muito obrigada!' },
     ],
     comoTitulo: 'Como funcionam as aulas',
     como: [
@@ -50,6 +68,9 @@ export const AULAS_RUSSO: Record<'pt-BR' | 'en', TextoAulasRusso> = {
     lead: 'Learn Russian with teachers, live, by video call, and study between lessons with the Linvuu Russian course.',
     quemTitulo: 'The teachers',
     credenciais: [
+      'Felipe Rosa: winner (1st-degree diploma) of the 3rd SPbU International Online Olympiad in Russian as a Foreign Language, St Petersburg State University, 25 November 2022.',
+      'Felipe Rosa: took part in the SPbU workshop series «Preparing for TORFL, B2 to C2» (24 hours), St Petersburg University Language Testing Centre, June 2021.',
+      'Felipe Rosa: gave the talk «Preparing for TORFL using a distance-learning platform» at the SPbU online seminar, 26 June 2021.',
     ],
     comoTitulo: 'How the lessons work',
     como: [

@@ -29,7 +29,7 @@ assert.ok(!home.includes('Escolha o idioma</strong>'));
 assert.ok(html('/cursos').includes('<h1>Cursos</h1>'));
 // Aulas ao vivo de russo: pt e en indexáveis; sem preço ou horário inventado.
 const rpt = html('/russo-online'), ren = html('/en/russo-online');
-assert.ok(rpt.includes('<h1>Aulas de russo online com professores</h1>') && !rpt.includes('Olimpíada'));
+assert.ok(rpt.includes('<h1>Aulas de russo online com professores</h1>') && rpt.includes('Olimpíada') && rpt.includes('O que alunos dizem') && !/Valeeva|Instituto|IVR/.test(rpt + html('/en/russo-online')) && !html('/en/russo-online').includes('O que alunos dizem'));
 assert.ok(ren.includes('<h1>Online Russian lessons with teachers</h1>') && ren.includes('"@type":"Service"'));
 assert.ok(!/noindex/.test(rpt) && !/noindex/.test(ren), 'pt e en indexáveis');
 assert.ok(fs.readFileSync('dist/sitemap.xml', 'utf8').includes('/russo-online'));
