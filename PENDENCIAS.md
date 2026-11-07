@@ -8,9 +8,9 @@
 - server/audio-privado (90 MB, voz antiga): fallback do áudio pago — manter até regravar tudo na v2 (audio-privado-v2, 142 MB, em uso). Áudio pago em repositório público: risco aberto.
 - content/legado/: Felipe decide — fonte histórica ou quarentena junto de `_PARA-APAGAR-FELIPE`.
 - docs/infra/*20261019*: métricas antigas; candidatas à próxima quarentena.
-- /russo-online: credenciais dos professores aguardando material do Felipe (diploma/certificados São Petersburgo, Instituto Valeeva Rosa, LinkedIn).
+- /russo-online: credenciais dos professores aguardando o LinkedIn do Felipe: entram só diploma/certificados de russo (São Petersburgo) e o perfil público. Regra do Felipe: nunca citar o instituto/escola anterior dele em lugar nenhum do site ou dos textos.
 - Redes sociais: URLs reais aguardando o Felipe (enquanto isso, rodapé sem ícones mortos).
-- Prova social: lista das avaliações (Google Business e Udemy do Instituto Valeeva Rosa) aguardando o Felipe; sem AggregateRating.
+- Prova social: lista das avaliações (Google Business e Udemy, exibidas como avaliações do instrutor/curso, sem nomear escola anterior) aguardando o Felipe; sem AggregateRating.
 - DNS (Felipe/Cloudflare): SPF `v=spf1 -all`, DMARC `v=DMARC1; p=reject; rua=mailto:hello.linvuu@gmail.com` e MX nulo `0 .` nos dois domínios; manter o TXT google-site-verification existente.
 - Firebase: conferir Authorized domains (linvuu.com) e referrer da chave de API; Search Console: propriedade sc-domain:linvuu.com e sitemaps dos dois domínios.
 - HSTS preload: irreversível — decisão adiada.
