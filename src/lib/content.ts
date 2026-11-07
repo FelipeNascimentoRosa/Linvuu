@@ -168,7 +168,8 @@ export const CURSOS_ATIVOS = CURSOS.filter((c) => c.id !== LOCALE.cursoOculto).s
 /** O curso tem explicação no idioma do site? No .com.br tudo é em português; no .com só entra quem já tem aulas explicadas em inglês. */
 export const cursoComExplicacaoNoSite = (id: string) => LOCALE.codigo === 'pt-BR' || coberturaNoSite(id).traduzidas > 0;
 /** Cursos com aba de gramática que o site deste domínio oferece (no .com, só os explicados em inglês). */
-export const idiomasDeGramaticaNoSite = () => [...new Set([...CURSOS_ATIVOS.map((c) => c.id), ...IDIOMAS_GRAMATICA])].filter(cursoComExplicacaoNoSite);
+export const todosIdiomasDeGramatica = () => [...new Set([...CURSOS_ATIVOS.map((c) => c.id), ...IDIOMAS_GRAMATICA])];
+export const idiomasDeGramaticaNoSite = () => todosIdiomasDeGramatica().filter(cursoComExplicacaoNoSite);
 /** O curso é para outro público (ex.: o curso de inglês, escrito para quem fala português, visto por quem escolheu o site em inglês). */
 export const cursoDeOutroPublico = (id: string) => id === LOCALE.cursoOculto;
 /** Cursos com a aba Gramática (gerada das aulas por scripts/gramatica.mjs). */
