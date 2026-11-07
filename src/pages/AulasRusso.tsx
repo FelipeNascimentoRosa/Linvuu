@@ -25,6 +25,9 @@ export default function AulasRusso() {
         {t.relatos && t.relatos.length > 0 && <><h2 className="lvr-h2">{t.relatosTitulo}</h2>
         {t.relatos.map((r) => <blockquote key={r.nome} className="lvr-p">“{r.texto}” <cite>— {r.nome}</cite></blockquote>)}
         <p className="lvr-p"><small>{t.relatosFonte}</small></p></>}
+        <h2 className="lvr-h2">{t.playlistTitulo}</h2>
+        <p className="lvr-p">{t.playlist}</p>
+        <p><a className="btn btn-primary" href={t.playlistUrl} target="_blank" rel="noopener noreferrer">{t.playlistBotao}</a></p>
         <h2 className="lvr-h2">{t.testeTitulo}</h2>
         <p className="lvr-p">{t.teste} <Link to="/curso/ru">{t.testeLink}</Link></p>
         <h2 className="lvr-h2">{t.ctaTitulo}</h2>
