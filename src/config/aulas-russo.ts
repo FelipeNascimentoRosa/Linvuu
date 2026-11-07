@@ -2,6 +2,7 @@
 // Só entra aqui o que tem documento: diploma e certificados de russo da Universidade Estatal de São Petersburgo e o perfil
 // público do LinkedIn (só o que diz respeito ao russo; nunca citar outra escola ou instituto). Valores e horários não são anunciados: são combinados no contato.
 import { whatsappUrl } from './contato.ts';
+import { SPOTIFY_PLAYLIST_RU } from './social.ts';
 
 export type TextoAulasRusso = {
   titulo: string;
@@ -13,6 +14,10 @@ export type TextoAulasRusso = {
   relatosTitulo?: string;
   relatosFonte?: string;
   relatos?: { nome: string; texto: string }[];
+  playlistTitulo: string;
+  playlist: string;
+  playlistBotao: string;
+  playlistUrl: string;
   comoTitulo: string;
   como: string[];
   testeTitulo: string;
@@ -47,6 +52,10 @@ export const AULAS_RUSSO: Record<'pt-BR' | 'en', TextoAulasRusso> = {
       { nome: 'Priscila Z.', texto: 'Melhores professores, didática e método que realmente funcionam! Indico demais.' },
       { nome: 'Paola Renata O.', texto: 'excelente material, com professores capacitados que realmente te ensinam russo. muito obrigada!' },
     ],
+    playlistTitulo: 'Ouça russo enquanto estuda',
+    playlist: 'A Linvuu montou uma playlist no Spotify com músicas em russo separadas por nível. Hoje há a seleção avançada, e novas faixas e níveis entram aos poucos.',
+    playlistBotao: 'Abrir a playlist no Spotify',
+    playlistUrl: SPOTIFY_PLAYLIST_RU,
     comoTitulo: 'Como funcionam as aulas',
     como: [
       'Aulas ao vivo por videochamada, em horários combinados com você.',
@@ -72,6 +81,10 @@ export const AULAS_RUSSO: Record<'pt-BR' | 'en', TextoAulasRusso> = {
       'Felipe Rosa: took part in the SPbU workshop series «Preparing for TORFL, B2 to C2» (24 hours), St Petersburg University Language Testing Centre, June 2021.',
       'Felipe Rosa: gave the talk «Preparing for TORFL using a distance-learning platform» at the SPbU online seminar, 26 June 2021.',
     ],
+    playlistTitulo: 'Listen to Russian while you study',
+    playlist: 'Linvuu has a Spotify playlist of Russian songs sorted by level. The advanced selection is up now, and more tracks and levels are added over time.',
+    playlistBotao: 'Open the playlist on Spotify',
+    playlistUrl: SPOTIFY_PLAYLIST_RU,
     comoTitulo: 'How the lessons work',
     como: [
       'Live lessons by video call, at times we agree on together.',
