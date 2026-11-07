@@ -1,6 +1,6 @@
 // Página «Aulas de russo online com professores» (/russo-online): uma só fonte para a tela, o <head> e o HTML do servidor.
-// Só entra aqui o que tem documento: diploma e certificados da Universidade Estatal de São Petersburgo, certificado do
-// Instituto Valeeva Rosa e perfil público do LinkedIn. Valores e horários não são anunciados: são combinados no contato.
+// Só entra aqui o que tem documento: diploma e certificados de russo da Universidade Estatal de São Petersburgo e o perfil
+// público do LinkedIn (só o que diz respeito ao russo; nunca citar outra escola ou instituto). Valores e horários não são anunciados: são combinados no contato.
 import { whatsappUrl } from './contato.ts';
 
 export type TextoAulasRusso = {
