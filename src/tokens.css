@@ -56,7 +56,7 @@
 --ok-bg:var(--verde-100);
 --erro:var(--tijolo);
 --erro-bg:var(--tijolo-claro);
---foco:var(--ocre);
+--foco:#94611A; /* ocre escuro: 4,17:1 sobre verde-100 (o ocre puro dava 2,88:1 e falhava WCAG 1.4.11) */
 }
 :root{
 /* Newsreader não tem cirílico: o navegador usa Literata glifo a glifo para Привет, Здравствуйте etc. */
@@ -136,6 +136,7 @@
 /* Website: tons da composição aprovada. Mantidos aqui para reutilização entre páginas. */
 :root{
 --site-ocre-texto:#956015;
+--tinta:#2D4A63; /* só confiança e pagamento (garantia, Stripe). Nunca em botão, título, link ou área do aluno. */
 --site-branco:#fff;
 --site-cartao:#fffdf8;
 --site-acao-hover:#2d5140;

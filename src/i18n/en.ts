@@ -148,7 +148,7 @@ export const en: Dicionario = {
   },
   assinatura: {
     titulo: 'Subscription', entreOu: ['To subscribe,', 'sign in', 'or', 'create your account'], gratis: (n: number) => `The first ${n} lessons of every course are free.`,
-    recebido: 'Payment received. If your subscription does not show up within a minute,', atualize: 'refresh', indisponivel: 'We could not check your subscription right now. Try again in a moment.',
+    recebido: 'You are back from checkout. Access usually unlocks within minutes. If your subscription does not show up within a minute,', garantiaMensal: 'Payment processed by Stripe. Linvuu never sees or stores your card number. Full refund within 7 days. Cancel any time.', garantiaUnico: 'Payment processed by Stripe. Linvuu never sees or stores your card number. Full refund within 7 days. One-time payment, no automatic renewal.', atualize: 'refresh', indisponivel: 'We could not check your subscription right now. Try again in a moment.',
     tresAtivo: 'Your 3-month access is active', ate: (d: string) => ` until ${d}`, semRenovacao: 'It does not renew automatically. Every course is unlocked.',
     ativa: 'Your subscription is active.', termina: (d: string) => ` It ends on ${d}.`, liberados: 'Every course is unlocked.', gerenciar: 'Manage or cancel',
     reembolso: '7-day refund: write to', intro: (n: number) => `The first ${n} lessons of every course remain free. Every course included, with a full refund within 7 days. Prices are in Brazilian reais (R$); your card converts the currency. Choose how to pay:`,

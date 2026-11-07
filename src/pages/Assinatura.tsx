@@ -74,6 +74,7 @@ export default function Assinatura() {
                   <p className="lv-plano-preco">{PRECO_MENSAL}<span>{s.porMes}</span></p>
                   <p>{s.mensalTxt}</p>
                   <button type="button" className="btn btn-primary" onClick={() => ir('checkout', 'mensal')} disabled={ocupado}>{ocupado ? t.geral.abrindo : s.assinarBtn}</button>
+                  <p className="lv-garantia"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 11V8a5 5 0 0 1 10 0v3M6 11h12v9H6z" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg><span>{s.garantiaMensal}</span></p>
                 </div>
                 <div className={`lv-plano ${escolhido?.startsWith('trimestral') ? 'lv-plano-escolhido' : ''}`}>
                   <h3>{s.tresMeses}</h3>
@@ -83,6 +84,7 @@ export default function Assinatura() {
                   <button type="button" className="btn btn-primary" onClick={() => ir('checkout', 'trimestral-pix')} disabled={ocupado}>{ocupado ? t.geral.abrindo : s.pixBtn}</button>
                   <p className="lv-plano-preco">{PRECO_TRIMESTRAL}<span>{s.cartaoBoleto}</span></p>
                   <button type="button" className="btn btn-ghost" onClick={() => ir('checkout', 'trimestral')} disabled={ocupado}>{ocupado ? t.geral.abrindo : s.tresBtn}</button>
+                  <p className="lv-garantia"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 11V8a5 5 0 0 1 10 0v3M6 11h12v9H6z" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg><span>{s.garantiaUnico}</span></p>
                 </div>
                 <div className={`lv-plano lv-plano-dest ${escolhido === 'anual' ? 'lv-plano-escolhido' : ''}`}>
                   <span className="lv-plano-selo">{s.menorPrecoMes}</span>
@@ -91,11 +93,12 @@ export default function Assinatura() {
                   <p className="lv-plano-equiv">{s.equivMes(PRECO_ANUAL_MES)}</p>
                   <p>{s.anoTxt}</p>
                   <button type="button" className="btn btn-primary" onClick={() => ir('checkout', 'anual')} disabled={ocupado}>{ocupado ? t.geral.abrindo : s.anoBtn}</button>
+                  <p className="lv-garantia"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 11V8a5 5 0 0 1 10 0v3M6 11h12v9H6z" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg><span>{s.garantiaUnico}</span></p>
                 </div>
               </div>
             </>
           )}
-          {LOCALE.codigo === 'pt-BR' && !a.ativa && <section aria-label="Dúvidas sobre a assinatura"><h2>Posso experimentar sem cartão?</h2><p>As duas primeiras aulas de cada curso são gratuitas, sem cartão.</p><h2>Qual é o desconto no Pix?</h2><p>O plano trimestral custa R$ 291,90 no Pix, 30% de desconto sobre R$ 417.</p></section>}
+          {LOCALE.codigo === 'pt-BR' && !a.ativa && <section aria-label="Dúvidas sobre a assinatura"><h2>É seguro pagar?</h2><p>O pagamento é processado pela Stripe, que também cuida do cartão. A Linvuu não vê nem guarda o número do seu cartão.</p><h2>E se eu não gostar?</h2><p>Você tem reembolso integral em até 7 dias. É só escrever para o e-mail de contato da página.</p><h2>Como cancelo?</h2><p>Na assinatura mensal, pelo botão de gerenciar nesta página, quando quiser. Os pacotes de 3 e 12 meses são pagamento único: não renovam sozinhos.</p><h2>Posso experimentar sem cartão?</h2><p>As duas primeiras aulas de cada curso são gratuitas, sem cartão.</p><h2>Qual é o desconto no Pix?</h2><p>O plano trimestral custa R$ 291,90 no Pix, 30% de desconto sobre R$ 417.</p></section>}
           {erro && <p className="erro" role="alert">{erro}</p>}
           <p><Link to="/termos">{s.termos}</Link></p>
         </div>

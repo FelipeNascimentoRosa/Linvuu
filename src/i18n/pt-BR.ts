@@ -147,7 +147,7 @@ export const ptBR = {
   },
   assinatura: {
     titulo: 'Assinatura', entreOu: ['Para assinar,', 'entre', 'ou', 'crie sua conta'], gratis: (n: number) => `As ${n} primeiras aulas de cada curso são grátis.`,
-    recebido: 'Pagamento recebido. Se a assinatura não aparecer em um minuto,', atualize: 'atualize', indisponivel: 'Não foi possível consultar sua assinatura agora. Tente de novo em instantes.',
+    recebido: 'Voltou do pagamento. Cartão e Pix liberam o acesso em minutos; no boleto, até 3 dias úteis depois de pagar. Se a assinatura não aparecer em um minuto,', garantiaMensal: 'Pagamento processado pela Stripe. A Linvuu não vê nem guarda o número do seu cartão. Reembolso integral em até 7 dias. Cancele quando quiser.', garantiaUnico: 'Pagamento processado pela Stripe. A Linvuu não vê nem guarda o número do seu cartão. Reembolso integral em até 7 dias. Pagamento único, sem renovação automática.', atualize: 'atualize', indisponivel: 'Não foi possível consultar sua assinatura agora. Tente de novo em instantes.',
     tresAtivo: 'Seu acesso de 3 meses está ativo', ate: (d: string) => ` até ${d}`, semRenovacao: 'Não há renovação automática. Todos os cursos estão liberados.',
     ativa: 'Sua assinatura está ativa.', termina: (d: string) => ` Ela termina em ${d}.`, liberados: 'Todos os cursos estão liberados.', gerenciar: 'Gerenciar ou cancelar',
     reembolso: 'Reembolso de 7 dias: escreva para', intro: (n: number) => `As ${n} primeiras aulas de cada curso continuam grátis. Todos os cursos, com reembolso integral em até 7 dias. Escolha como pagar:`,
