@@ -90,7 +90,7 @@ async function startServer() {
     // para o mesmo arquivo ter sempre a mesma política, comprimido ou não.
     const cabecalhosCache = (res: Response, arquivo: string) => {
       // Apenas arquivos com fingerprint de conteúdo, direto em dist/assets (saída do Vite), são imutáveis. Subpastas (assets/vuu/...) são arte pública
-      // com nome escolhido à mão: um nome como «vuu-curioso.svg» casaria por acaso com o padrão de hash e ficaria um ano em cache.
+      // com nome escolhido à mão: um nome como «vuu.svg» casaria por acaso com o padrão de hash e ficaria um ano em cache.
       if (path.dirname(arquivo).endsWith(`${path.sep}assets`) && /-[A-Za-z0-9_-]{8}\.[A-Za-z0-9]+$/.test(path.basename(arquivo))) res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
       else if (arquivo.includes(`${path.sep}assets${path.sep}`)) res.setHeader('Cache-Control', 'public, max-age=0, must-revalidate');
       // O nome do MP3 deriva do texto, não do conteúdo: uma regravação pode reutilizar o nome.

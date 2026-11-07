@@ -14,7 +14,7 @@ import './carregando.css';
 // puro, sem bibliotecas; a animação é uma respiração subtil, desligada com
 // prefers-reduced-motion.
 // `marca`: só no arranque, onde o wordmark é hoje a presença da marca na primeira tela.
-const ARTE_PADRAO = '/assets/vuu/vuu-sonolento.svg';
+const ARTE_PADRAO = '/assets/vuu/vuu.svg';
 
 export default function Carregando({ arte = ARTE_PADRAO, marca = false }: { arte?: string; marca?: boolean }) {
   const t = useT();

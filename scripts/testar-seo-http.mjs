@@ -51,11 +51,11 @@ try {
   assert(js, 'asset Vite com fingerprint no HTML');
   const versionado = await fetch(base + js);
   assert.match(versionado.headers.get('cache-control'), /max-age=31536000.*immutable/);
-  const vuu = await fetch(`${base}/assets/vuu/vuu-neutro.svg`);
+  const vuu = await fetch(`${base}/assets/vuu/vuu.svg`);
   assert.equal(vuu.status, 200);
   assert.match(vuu.headers.get('cache-control'), /must-revalidate/);
   assert(!vuu.headers.get('cache-control')?.includes('immutable'));
-  for (const arte of ['vuu-curioso.svg']) {
+  for (const arte of ['vuu.svg']) {
     const r = await fetch(`${base}/assets/vuu/${arte}`);
     assert.equal(r.status, 200, arte);
     assert.match(r.headers.get('cache-control'), /must-revalidate/, `${arte} precisa revalidar`);
@@ -66,7 +66,7 @@ try {
   assert(etag, 'SVG possui ETag para revalidação');
   // fetch acrescenta Cache-Control: no-cache aos pedidos condicionais; usar HTTP direto como um cache comum.
   const statusCondicional = await new Promise((resolve, reject) => {
-    const req = http.get(`${base}/assets/vuu/vuu-neutro.svg`, { headers: { 'If-None-Match': etag } }, res => { res.resume(); resolve(res.statusCode); });
+    const req = http.get(`${base}/assets/vuu/vuu.svg`, { headers: { 'If-None-Match': etag } }, res => { res.resume(); resolve(res.statusCode); });
     req.on('error', reject);
   });
   assert.equal(statusCondicional, 304);
