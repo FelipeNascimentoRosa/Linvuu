@@ -53,4 +53,9 @@ Só se vende um curso onde as explicações em inglês estiverem completas (ver 
 | Montra de preços do site | `src/config/planos.ts` (constantes apresentadas nas páginas) |
 | Preços do Android | Play Console / RevenueCat (a loja é a fonte do preço no app) |
 
+### Implementação em dólares no site (07/11/2026)
+- `linvuu.com` cobra em USD: **mensal** = preço já existente no Stripe, informado pela variável de ambiente `STRIPE_PRICE_ID_USD` (no Render; a rota nunca cria preço); **anual** = pagamento único de `CENTAVOS_USD.anual` (US$ 149,00) via `price_data`, sem criar objeto de preço no Stripe. Só cartão (Apple Pay e Google Pay vêm com o cartão no Checkout hospedado). Sem trimestral, Pix, boleto nem código FUNDADORES fora do Brasil.
+- `linvuu.com.br` não muda: tudo em reais, como acima.
+- Sem `STRIPE_PRICE_ID_USD` configurada, a mensal do .com falha de modo controlado (o anual funciona); `/readyz` confere o preço USD quando a variável existe.
+
 Se um valor nesta tabela divergir do que está num destes sítios, o sítio está errado — corrige-se o sítio e regista-se a divergência neste documento.

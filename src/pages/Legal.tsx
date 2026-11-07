@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Navegacao } from '../components/Navegacao';
 import { usePageTitle } from '../lib/usePageTitle';
 import { EMAIL_OFICIAL } from '../config/site';
-import { PRECO_ANUAL, PRECO_MENSAL, PRECO_TRIMESTRAL, PRECO_TRIMESTRAL_PIX } from '../config/planos';
+import { PRECO_ANUAL, PRECO_MENSAL, PRECO_TRIMESTRAL, PRECO_TRIMESTRAL_PIX, PRECOS } from '../config/planos';
 import { LOCALE, urlEm, useT } from '../i18n';
 
 const ATUALIZADO = '21 de outubro de 2026';
@@ -136,8 +136,8 @@ function TermsEn() {
         <h2>Use of the content</h2>
         <p>The texts, audio, exercises, design and the Linvuu brand belong to Linvuu. <strong>All rights reserved.</strong> You may study for personal use. You may not copy, resell or redistribute the content without written permission.</p>
         <h2>Paid plan and refunds</h2>
-        {!APK && (<p>The first two lessons of every course are free. To continue there is a monthly subscription of {PRECO_MENSAL} (Brazilian reais), charged every month until you cancel. The price and payment method are shown before you buy; your card issuer converts the currency and may charge its own fees.</p>)}
-        {!APK && (<p><strong>One-time packages:</strong> 3 months for {PRECO_TRIMESTRAL} by card or boleto ({PRECO_TRIMESTRAL_PIX} with Pix, Brazil only); 12 months for {PRECO_ANUAL}. Packages do not renew automatically. The period starts when the payment is confirmed and, if you buy a new package before the current one ends, the new period starts when the current one ends. While a monthly subscription is active you cannot buy a package on top of it; cancel the subscription first.</p>)}
+        {!APK && (<p>The first two lessons of every course are free. To continue there is a monthly subscription of {PRECOS.en.mensal} (US dollars), charged every month until you cancel. The price and payment method are shown before you buy; your card issuer may charge its own fees.</p>)}
+        {!APK && (<p><strong>One-time package:</strong> 12 months for {PRECOS.en.anual}, paid once by card. The package does not renew automatically. The period starts when the payment is confirmed and, if you buy a new package before the current one ends, the new period starts when the current one ends. While a monthly subscription is active you cannot buy a package on top of it; cancel the subscription first.</p>)}
         <p><strong>7-day refund:</strong> you can ask for a full refund within 7 days of paying for any plan (monthly or package), without giving a reason, by writing to <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>.</p>
         <p><strong>Cancelling the monthly subscription:</strong> cancel whenever you like, with no fee. Access continues until the end of the period already paid and there are no further charges.</p>
         <h2>Availability</h2>

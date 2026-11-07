@@ -4,7 +4,7 @@ import type { Plano } from '../lib/assinatura';
 import { Navegacao } from '../components/Navegacao';
 import { useAuth } from '../lib/AuthContext';
 import { abrir, useAssinatura } from '../lib/assinatura';
-import { AULAS_GRATIS, PRECO_ANUAL, PRECO_ANUAL_MES, PRECO_MENSAL, PRECO_TRIMESTRAL, PRECO_TRIMESTRAL_PIX, PRECO_TRIMESTRAL_PIX_MES } from '../config/planos';
+import { AULAS_GRATIS, precosDo } from '../config/planos';
 import { EMAIL_OFICIAL } from '../config/site';
 import { usePageTitle } from '../lib/usePageTitle';
 import { data, LOCALE, useT } from '../i18n';
@@ -14,6 +14,7 @@ import '../site-publico.css';
 export default function Assinatura() {
   const t = useT();
   const s = t.assinatura;
+  const P = precosDo(LOCALE.codigo); // reais no .com.br; dólares no .com (só mensal e anual)
   usePageTitle(LOCALE.codigo === 'pt-BR' ? 'Planos e assinatura' : s.titulo, LOCALE.codigo === 'pt-BR' ? 'Aprenda idiomas com a Linvuu: planos mensal, trimestral com 30% OFF no Pix e anual. Experimente duas aulas grátis, sem cartão.' : undefined, ['pt-BR'], LOCALE.codigo !== 'pt-BR');
   const { usuario, carregando } = useAuth();
   const a = useAssinatura();
@@ -26,7 +27,7 @@ export default function Assinatura() {
   const nav = useNavigate();
   const PLANOS: Plano[] = ['mensal', 'trimestral-pix', 'trimestral', 'anual'];
   const pedido = params.get('plano') as Plano | null;
-  const escolhido = pedido && PLANOS.includes(pedido) ? pedido : null;
+  const escolhido = pedido && PLANOS.includes(pedido) && (P.moeda === 'BRL' || pedido === 'mensal' || pedido === 'anual') ? pedido : null; // no .com (dólares) só existem mensal e anual
   const nomePlano: Record<Plano, string> = { mensal: s.mensal, 'trimestral-pix': s.pixBtn, trimestral: s.tresBtn, anual: s.anoBtn };
   const ir = async (t: 'checkout' | 'portal', plano?: Plano) => {
     if (t === 'checkout') void analytics.capture('select_plan', { page: 'plans', billing_plan: plano });
@@ -71,24 +72,26 @@ export default function Assinatura() {
               <div className="lv-planos">
                 <div className={`lv-plano ${escolhido === 'mensal' ? 'lv-plano-escolhido' : ''}`}>
                   <h3>{s.mensal}</h3>
-                  <p className="lv-plano-preco">{PRECO_MENSAL}<span>{s.porMes}</span></p>
+                  <p className="lv-plano-preco">{P.mensal}<span>{s.porMes}</span></p>
                   <p>{s.mensalTxt}</p>
                   <button type="button" className="btn btn-primary" onClick={() => ir('checkout', 'mensal')} disabled={ocupado}>{ocupado ? t.geral.abrindo : s.assinarBtn}</button>
                 </div>
+                {P.moeda === 'BRL' && (
                 <div className={`lv-plano ${escolhido?.startsWith('trimestral') ? 'lv-plano-escolhido' : ''}`}>
                   <h3>{s.tresMeses}</h3>
-                  <p className="lv-plano-preco">{PRECO_TRIMESTRAL_PIX}<span>{s.noPix}</span></p>
-                  <p className="lv-plano-equiv">{s.equivMes(PRECO_TRIMESTRAL_PIX_MES)}</p>
+                  <p className="lv-plano-preco">{P.trimestralPix}<span>{s.noPix}</span></p>
+                  <p className="lv-plano-equiv">{s.equivMes(P.trimestralPixMes)}</p>
                   <p>{s.pixTxt}</p>
                   <button type="button" className="btn btn-primary" onClick={() => ir('checkout', 'trimestral-pix')} disabled={ocupado}>{ocupado ? t.geral.abrindo : s.pixBtn}</button>
-                  <p className="lv-plano-preco">{PRECO_TRIMESTRAL}<span>{s.cartaoBoleto}</span></p>
+                  <p className="lv-plano-preco">{P.trimestral}<span>{s.cartaoBoleto}</span></p>
                   <button type="button" className="btn btn-ghost" onClick={() => ir('checkout', 'trimestral')} disabled={ocupado}>{ocupado ? t.geral.abrindo : s.tresBtn}</button>
                 </div>
+                )}
                 <div className={`lv-plano lv-plano-dest ${escolhido === 'anual' ? 'lv-plano-escolhido' : ''}`}>
                   <span className="lv-plano-selo">{s.menorPrecoMes}</span>
                   <h3>{s.dozeMeses}</h3>
-                  <p className="lv-plano-preco">{PRECO_ANUAL}<span>{s.cartaoBoleto}</span></p>
-                  <p className="lv-plano-equiv">{s.equivMes(PRECO_ANUAL_MES)}</p>
+                  <p className="lv-plano-preco">{P.anual}<span>{s.cartaoBoleto}</span></p>
+                  <p className="lv-plano-equiv">{s.equivMes(P.anualMes)}</p>
                   <p>{s.anoTxt}</p>
                   <button type="button" className="btn btn-primary" onClick={() => ir('checkout', 'anual')} disabled={ocupado}>{ocupado ? t.geral.abrindo : s.anoBtn}</button>
                 </div>

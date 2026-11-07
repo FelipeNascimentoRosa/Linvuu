@@ -1,4 +1,4 @@
-import { CENTAVOS } from '../src/config/planos.ts';
+import { CENTAVOS, CENTAVOS_USD } from '../src/config/planos.ts';
 import type { Express } from 'express';
 import { firebaseAdmin, projetoFirebase } from './firebase-admin';
 
@@ -67,6 +67,16 @@ function verificacoesProducao(): Verificacao[] {
       if (!p.active || !p.livemode || p.type !== 'recurring' || p.currency !== 'brl') throw new Error('preco');
       // O valor anunciado (src/config/planos.ts) tem de ser o cobrado: R$ 139 por mês, nem outro valor nem outro intervalo.
       if (p.unit_amount !== CENTAVOS.mensal || p.recurring?.interval !== 'month' || (p.recurring?.interval_count ?? 1) !== 1) throw new Error('preco-divergente');
+      // Preço mensal em dólares (linvuu.com): só confere se estiver configurado; sem ele o .com não vende a mensal (o checkout recusa).
+      const usd = process.env.STRIPE_PRICE_ID_USD;
+      if (usd) {
+        if (!/^price_[a-zA-Z0-9]+$/.test(usd)) throw new Error('configuracao');
+        const ru = await fetch(`https://api.stripe.com/v1/prices/${usd}`, { headers: { Authorization: `Bearer ${chave}` }, signal });
+        if (!ru.ok) { await ru.body?.cancel(); throw new Error('stripe'); }
+        const pu = await ru.json() as { active?: boolean; livemode?: boolean; type?: string; currency?: string; unit_amount?: number | null; recurring?: { interval?: string; interval_count?: number } | null };
+        if (!pu.active || !pu.livemode || pu.type !== 'recurring' || pu.currency !== 'usd') throw new Error('preco-usd');
+        if (pu.unit_amount !== CENTAVOS_USD.mensal || pu.recurring?.interval !== 'month' || (pu.recurring?.interval_count ?? 1) !== 1) throw new Error('preco-usd-divergente');
+      }
     } },
   ];
 }
