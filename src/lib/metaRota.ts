@@ -146,16 +146,17 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     ] };
   }
   const fixas: Record<string, { titulo: string; descricao?: string; semIndice?: boolean; em?: Locale['codigo'][] }> = {
-    '/cursos': { titulo: tx.cursos, descricao: loc.codigo === 'pt-BR' ? 'Cursos de idiomas Linvuu: sem medo de gramática, com sessões de 30 minutos. Experimente duas aulas gratuitas.' : loc.codigo === 'en' ? 'Linvuu language courses: grammar without fear, with 30-minute sessions. Try two lessons for free.' : 'Cursos de idiomas Linvuu: gramática sin miedo, con sesiones de 30 minutos. Prueba dos clases gratis.' },
-    '/portugues': { titulo: tx.pt, descricao: tx.ptD },
+    '/cursos': { titulo: tx.cursos, descricao: loc.codigo === 'pt-BR' ? 'Cursos de idiomas Linvuu: sem medo de gramática, com sessões de 30 minutos. Experimente duas aulas gratuitas.' : 'Linvuu language courses: grammar without fear, with 30-minute sessions. Try two lessons for free.' },
+    // Curso de português para estrangeiros: explicado em inglês, existe só no .com (no .com.br, 301 para cá).
+    '/portugues': { titulo: tx.pt, descricao: tx.ptD, em: ['en'] },
     // Aulas ao vivo de russo: existe em português e em inglês; em espanhol a página volta para a home (noindex).
     '/russo-online': { titulo: AULAS_RUSSO[loc.codigo === 'en' ? 'en' : 'pt-BR'].titulo, descricao: AULAS_RUSSO[loc.codigo === 'en' ? 'en' : 'pt-BR'].descricao, em: ['pt-BR', 'en'] },
     '/entrar': { titulo: tx.entrar, semIndice: true },
     '/cadastro': { titulo: tx.cadastro, semIndice: true },
     '/livro/gramatica-ru': { titulo: 'Gramática russa A1–A2', semIndice: true },
-    // A página de preços existe de verdade nos três idiomas (renderização localizada genuína, verificada ao vivo):
-    // indexável nas três, para os alternates hreflang da versão PT não apontarem para páginas noindex.
-    '/assinatura': loc.codigo === 'pt-BR' ? { titulo: 'Planos e assinatura', descricao: 'Aprenda idiomas com a Linvuu: planos mensal, trimestral com 30% OFF no Pix e anual. Experimente duas aulas grátis, sem cartão.' } : loc.codigo === 'en' ? { titulo: tx.assinatura, descricao: 'Learn languages with Linvuu: monthly, quarterly (30% off with Pix) and annual plans. Try two free lessons, no card required.' } : { titulo: tx.assinatura, descricao: 'Aprende idiomas con Linvuu: planes mensual, trimestral con 30 % de descuento con Pix y anual. Prueba dos clases gratis, sin tarjeta.' },
+    // A página de preços existe de verdade nos dois idiomas (um por domínio): indexável nos dois,
+    // para os alternates hreflang de uma versão não apontarem para a outra como noindex.
+    '/assinatura': loc.codigo === 'pt-BR' ? { titulo: 'Planos e assinatura', descricao: 'Aprenda idiomas com a Linvuu: planos mensal, trimestral com 30% OFF no Pix e anual. Experimente duas aulas grátis, sem cartão.' } : { titulo: tx.assinatura, descricao: 'Learn languages with Linvuu: monthly, quarterly (30% off with Pix) and annual plans. Try two free lessons, no card required.' },
     '/privacidade': { titulo: tx.priv, descricao: tx.privD },
     '/termos': { titulo: tx.termos, descricao: tx.termosD },
     '/excluir-conta': { titulo: EXCLUSAO[loc.codigo].titulo, descricao: EXCLUSAO[loc.codigo].descricao },
@@ -163,10 +164,15 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
   if (fixas[p]) {
     const jsonld: object[] = [];
     if (p === '/cursos' && d) jsonld.push({ '@context': 'https://schema.org', '@type': 'ItemList', itemListElement: d.cursos.filter((c) => c.status !== 'em-breve' && c.id !== loc.cursoOculto && explicacaoCompleta(d, c.id, loc.explicacao)).map((c, i) => ({ '@type': 'ListItem', position: i + 1, item: { '@type': 'Course', name: c.nome, description: c.descricao, url: `${urlAbsolutaEm(loc.codigo, `/curso/${c.id}`)}`, provider: { '@id': ORG_ID, '@type': 'EducationalOrganization', name: 'Linvuu' } } })) });
-    if (p === '/assinatura' && loc.codigo === 'pt-BR') jsonld.push(
-      { '@context': 'https://schema.org', '@type': 'Product', name: 'Assinatura Linvuu', description: fixas[p].descricao, image: `${SITE}/brand/linvuu-logo.png`, brand: { '@type': 'Brand', name: 'Linvuu' }, offers: [ ['Mensal', precoSchema(CENTAVOS.mensal)], ['Trimestral Pix', precoSchema(CENTAVOS['trimestral-pix'])], ['Trimestral cartão ou boleto', precoSchema(CENTAVOS.trimestral)], ['Anual', precoSchema(CENTAVOS.anual)] ].map(([name, price]) => ({ '@type': 'Offer', name, price, priceCurrency: 'BRL', availability: 'https://schema.org/InStock', url: `${SITE}/assinatura`, hasMerchantReturnPolicy: POLITICA_REEMBOLSO })) },
-      { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'Posso experimentar sem cartão?', acceptedAnswer: { '@type': 'Answer', text: 'As duas primeiras aulas de cada curso são gratuitas, sem cartão.' } }, { '@type': 'Question', name: 'Qual é o desconto no Pix?', acceptedAnswer: { '@type': 'Answer', text: `O plano trimestral custa ${PRECO_TRIMESTRAL_PIX} no Pix, 30% de desconto sobre ${PRECO_TRIMESTRAL}.` } }] },
-    );
+    if (p === '/assinatura') {
+      const en = loc.codigo === 'en';
+      jsonld.push(
+        { '@context': 'https://schema.org', '@type': 'Product', name: en ? 'Linvuu Subscription' : 'Assinatura Linvuu', description: fixas[p].descricao, image: `${SITE}/brand/linvuu-logo.png`, brand: { '@type': 'Brand', name: 'Linvuu' }, offers: [ [en ? 'Monthly' : 'Mensal', precoSchema(CENTAVOS.mensal)], [en ? 'Quarterly Pix' : 'Trimestral Pix', precoSchema(CENTAVOS['trimestral-pix'])], [en ? 'Quarterly card or boleto' : 'Trimestral cartão ou boleto', precoSchema(CENTAVOS.trimestral)], [en ? 'Annual' : 'Anual', precoSchema(CENTAVOS.anual)] ].map(([name, price]) => ({ '@type': 'Offer', name, price, priceCurrency: 'BRL', availability: 'https://schema.org/InStock', url: `${SITE}/assinatura`, hasMerchantReturnPolicy: POLITICA_REEMBOLSO })) },
+        { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: en
+          ? [{ '@type': 'Question', name: 'Can I try it without a card?', acceptedAnswer: { '@type': 'Answer', text: 'The first two lessons of every course are free, with no card required.' } }, { '@type': 'Question', name: 'What currency are the prices in?', acceptedAnswer: { '@type': 'Answer', text: 'Prices are in Brazilian reais (R$); your card issuer converts the currency. The first two lessons of every course are free.' } }]
+          : [{ '@type': 'Question', name: 'Posso experimentar sem cartão?', acceptedAnswer: { '@type': 'Answer', text: 'As duas primeiras aulas de cada curso são gratuitas, sem cartão.' } }, { '@type': 'Question', name: 'Qual é o desconto no Pix?', acceptedAnswer: { '@type': 'Answer', text: `O plano trimestral custa ${PRECO_TRIMESTRAL_PIX} no Pix, 30% de desconto sobre ${PRECO_TRIMESTRAL}.` } }] },
+      );
+    }
     if (p === '/russo-online') jsonld.push({ '@context': 'https://schema.org', '@type': 'Service', name: fixas[p].titulo, description: fixas[p].descricao, serviceType: loc.codigo === 'en' ? 'Online Russian language lessons' : 'Aulas de russo online', inLanguage: loc.codigo, provider: { '@id': ORG_ID }, areaServed: 'Worldwide', url: `${urlAbsolutaEm(loc.codigo, '/russo-online')}` });
     return { status: 200, caminho: p, ...fixas[p], jsonld };
   }
@@ -266,7 +272,7 @@ function menuPreRender(loc: Locale): string {
   if (loc.codigo === 'pt-BR') return '<nav aria-label="Principal"><a href="/cursos">Cursos</a> · <a href="/livros">Livros</a> · <a href="/sobre">Quem somos</a> · <a href="/por-que-linvuu">Por que estudar com a Linvuu?</a> · <a href="/contato">Contato</a> · <a href="/privacidade">Privacidade</a></nav>';
   const tx = TX[loc.codigo];
   const a = (href: string, texto: string) => `<a href="${esc(caminhoEm(loc.codigo, href))}">${esc(texto)}</a>`;
-  const itens = [a('/', tx.inicio), a('/cursos', tx.cursos), a('/gramatica', tx.gram), a('/portugues', tx.ptNav), a('/termos', tx.termos), a('/privacidade', tx.priv)];
+  const itens = [a('/', tx.inicio), a('/cursos', tx.cursos), a('/gramatica', tx.gram), ...(loc.codigo === 'en' ? [a('/portugues', tx.ptNav)] : []), a('/termos', tx.termos), a('/privacidade', tx.priv)];
   return `<nav aria-label="${loc.codigo === 'en' ? 'Main' : 'Principal'}">${itens.join(' · ')}</nav>`;
 }
 
@@ -346,6 +352,7 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
     }
   }
   if (base === '/assinatura' && loc.codigo === 'pt-BR') corpo = cabeca(m.titulo ?? '', m.descricao) + `<h2 id="oferta-atual">Assinatura Linvuu</h2><p>Acesso a todos os cursos de idiomas.</p><ul><li>Mensal: ${esc(PRECO_MENSAL)}, com renovação automática.</li><li>3 meses: ${esc(PRECO_TRIMESTRAL_PIX)} no Pix (30% OFF) ou ${esc(PRECO_TRIMESTRAL)} no cartão ou boleto, pagamento único.</li><li>12 meses: ${esc(PRECO_ANUAL)}, pagamento único.</li></ul><h2>Posso experimentar sem cartão?</h2><p>As duas primeiras aulas de cada curso são gratuitas, sem cartão.</p><h2>Qual é o desconto no Pix?</h2><p>O plano trimestral custa ${esc(PRECO_TRIMESTRAL_PIX)} no Pix, 30% de desconto sobre ${esc(PRECO_TRIMESTRAL)}.</p><p>${a('/cursos', 'Testar 2 aulas grátis, sem cartão')} · ${a('/cadastro', 'Criar conta')} · ${a('/termos', 'Consultar termos e condições')}</p>`;
+  if (base === '/assinatura' && loc.codigo === 'en') corpo = cabeca(m.titulo ?? '', m.descricao) + `<h2 id="oferta-atual">Linvuu Subscription</h2><p>Access to every Linvuu course, with explanations in English.</p><ul><li>Monthly: ${esc(PRECO_MENSAL)}, with automatic renewal.</li><li>3 months: ${esc(PRECO_TRIMESTRAL_PIX)} with Pix (30% off) or ${esc(PRECO_TRIMESTRAL)} by card or boleto, one-time payment.</li><li>12 months: ${esc(PRECO_ANUAL)}, one-time payment.</li></ul><h2>Can I try it without a card?</h2><p>The first two lessons of every course are free, with no card required.</p><h2>What currency are the prices in?</h2><p>Prices are in Brazilian reais (R$); your card issuer converts the currency. Full refund within 7 days.</p><p>${a('/cursos', 'Try 2 free lessons, no card')} · ${a('/cadastro', 'Create account')} · ${a('/termos', 'Read the terms')}</p>`;
   if (base === '/excluir-conta') {
     // Sem JavaScript a página continua útil: texto completo e o endereço para o pedido.
     const x = EXCLUSAO[loc.codigo];

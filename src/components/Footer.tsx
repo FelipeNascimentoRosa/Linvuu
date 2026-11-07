@@ -33,7 +33,7 @@ export function Footer({ semNovidades = false }: { semNovidades?: boolean }) {
           <h2>Linvuu</h2>
           <Link to="/cursos">{t.nav.todos}</Link>
           <Link to={`/gramatica/${idiomasDeGramaticaNoSite()[0] ?? 'ru'}`}>{t.nav.gramatica}</Link>
-          <Link to="/portugues">{t.rodape.portugues}</Link>
+          {LOCALE.codigo !== 'pt-BR' && <Link to="/portugues">{t.rodape.portugues}</Link>}
           {LOCALE.codigo === 'pt-BR' && <><Link to="/livros">Livros</Link><Link to="/sobre">Quem somos</Link><Link to="/por-que-linvuu">Por que estudar com a Linvuu?</Link></>}
           <Link to="/#metodo">{t.nav.metodo}</Link>
           <Link to="/#faq">{t.nav.duvidas}</Link>

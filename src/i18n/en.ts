@@ -61,7 +61,7 @@ export const en: Dicionario = {
     { p: 'Will I become fluent?', r: 'Linvuu gives you a method, practice and consistency; the level you reach depends on your study hours and on using the language for real. The courses are designed to take you from zero to a solid B1 foundation.' },
     { p: 'Are all lessons explained in English?', r: 'The Brazilian Portuguese course is written in English from the first to the last lesson. In the other courses, the explanations are being translated lesson by lesson: each course page shows how many lessons are already in English, and an untranslated session says so before you start it.' },
     { p: 'Is the audio real?', r: 'Every sentence has audio made with neural voices of the language, reviewed step by step. Where a file is still missing, the site uses your browser\'s voice and tells you on screen.' },
-    { p: 'Is the site available in other languages?', r: 'Yes. At the top of the page you can switch to Portuguese or Spanish: the site changes language, and so do the explanations in the courses already translated into it; the sentences, dialogues and audio of the language you study stay the same.' },
+    { p: 'Is the site available in other languages?', r: 'Yes, and each language lives on its own domain: English is at linvuu.com and Portuguese at linvuu.com.br. The sentences, dialogues and audio of the language you study stay the same on both.' },
   ],
   cta: { titulo: 'Your first session takes 30 minutes.', texto: 'Start now: 2 free lessons, no card, nothing to install.', primario: 'Start free', secundario: 'See all courses' },
   rodape: {
