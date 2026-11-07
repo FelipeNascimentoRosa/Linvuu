@@ -52,8 +52,8 @@ try {
     while (cursor < alvos.length) {
       const { host, p, perfil, codigo } = alvos[cursor++];
       const r = await get(host, p);
-      if (perfil === 'br' && /^\/curso\/br(?:\/|$)/.test(p)) {
-        // no .com.br o curso de português para estrangeiros não existe: vai para o .com
+      if (perfil === 'br' && /^\/(?:curso\/br|portugues|gramatica\/br)(?:\/|$)/.test(p)) {
+        // no .com.br o português para estrangeiros (explicado em inglês) não existe: vai para o .com
         assert.equal(r.status, 301, p);
         assert.equal(r.headers.get('location'), 'https://linvuu.com' + p, p);
         await r.arrayBuffer();
@@ -75,7 +75,7 @@ try {
   // Estrutura antiga e variantes de host: redirecionamento permanente e sem cadeia
   const regras: [string, string, string][] = [
     ['linvuu.com.br', '/en', 'https://linvuu.com/'], ['linvuu.com.br', '/en/curso/ru', 'https://linvuu.com/curso/ru'], ['linvuu.com.br', '/es/cursos', 'https://linvuu.com/cursos'],
-    ['linvuu.com.br', '/es', 'https://linvuu.com/'], ['linvuu.com', '/es/cursos', 'https://linvuu.com/cursos'], ['linvuu.com', '/en', 'https://linvuu.com/'], ['linvuu.com', '/en/cursos', 'https://linvuu.com/cursos'],
+    ['linvuu.com.br', '/es', 'https://linvuu.com/'], ['linvuu.com.br', '/portugues', 'https://linvuu.com/portugues'], ['linvuu.com.br', '/gramatica/br', 'https://linvuu.com/gramatica/br'], ['linvuu.com', '/es/cursos', 'https://linvuu.com/cursos'], ['linvuu.com', '/en', 'https://linvuu.com/'], ['linvuu.com', '/en/cursos', 'https://linvuu.com/cursos'],
     ['www.linvuu.com', '/curso/ru', 'https://linvuu.com/curso/ru'], ['www.linvuu.com.br', '/cursos', 'https://linvuu.com.br/cursos'],
   ];
   for (const [host, p, destino] of regras) {
@@ -92,6 +92,16 @@ try {
     assert.ok(sm.includes(`href="https://${outro}`), `${host}: alternates apontam para o outro domínio`);
     const rb = await (await get(host, '/robots.txt')).text();
     assert.ok(rb.includes(`Sitemap: https://${host}/sitemap.xml`), `${host}: robots aponta para o próprio sitemap`);
+  }
+  // llms.txt: cada domínio entrega o seu e só lista URLs do próprio domínio
+  for (const [host, outro] of [['linvuu.com', 'linvuu.com.br'], ['linvuu.com.br', 'linvuu.com']]) {
+    const r = await get(host, '/llms.txt');
+    assert.equal(r.status, 200, `${host}/llms.txt`);
+    const t = await r.text();
+    assert.ok(t.includes(`https://${host}/`), `${host}: llms.txt cita o próprio domínio`);
+    const proprias = [...t.matchAll(/https:\/\/(linvuu\.com(?:\.br)?)\//g)].filter((x) => x[1] === host).length;
+    assert.ok(proprias >= 5, `${host}: llms.txt com links próprios`);
+    if (host === 'linvuu.com') assert.ok(!/\/curso\/(es|de|it)\b/.test(t), 'linvuu.com/llms.txt não lista cursos que não existem em inglês');
   }
   for (const [p, target] of [['/brazilian-portuguese', 'https://linvuu.com/portugues'], ['/preco', '/assinatura'], ['/metodo', '/#metodo']]) {
     const r = await get('linvuu.com.br', p);

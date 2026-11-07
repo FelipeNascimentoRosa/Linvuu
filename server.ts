@@ -82,6 +82,9 @@ async function startServer() {
     const robotsBr = arquivoEstatico('robots.txt', 'text/plain; charset=utf-8'), robotsGlobal = arquivoEstatico('robots-global.txt', 'text/plain; charset=utf-8');
     app.get('/sitemap.xml', (req: Request, res: Response) => { res.vary('Host'); (perfilDaRequisicao(req) === 'global' ? sitemapGlobal : sitemapBr)(req, res); });
     app.get('/robots.txt', (req: Request, res: Response) => { res.vary('Host'); (perfilDaRequisicao(req) === 'global' ? robotsGlobal : robotsBr)(req, res); });
+    // llms.txt: mapa curto do site para buscadores de IA; cada domínio entrega o seu (a versão do .com lista só o que existe em inglês).
+    const llmsBr = arquivoEstatico('llms.txt', 'text/plain; charset=utf-8'), llmsGlobal = arquivoEstatico('llms-global.txt', 'text/plain; charset=utf-8');
+    app.get('/llms.txt', (req: Request, res: Response) => { res.vary('Host'); (perfilDaRequisicao(req) === 'global' ? llmsGlobal : llmsBr)(req, res); });
     const distDir = path.resolve(__dirname, 'dist');
     // Regras de cache dos estáticos: as mesmas para o express.static e para o Brotli pré-comprimido abaixo,
     // para o mesmo arquivo ter sempre a mesma política, comprimido ou não.
@@ -95,7 +98,7 @@ async function startServer() {
       else if (arquivo.includes(`${path.sep}audio${path.sep}`) && arquivo.endsWith('index.json')) res.setHeader('Cache-Control', 'public, max-age=300');
       else if (/\.(webp|png|jpe?g|svg|woff2?)$/.test(arquivo)) res.setHeader('Cache-Control', 'public, max-age=2592000');
       // sitemap e robots: o Google relê com frequência; uma hora de cache basta
-      else if (/(sitemap\.xml|robots\.txt)$/.test(arquivo)) res.setHeader('Cache-Control', 'public, max-age=3600');
+      else if (/(sitemap\.xml|robots\.txt|llms(-global)?\.txt)$/.test(arquivo)) res.setHeader('Cache-Control', 'public, max-age=3600');
     };
     // Brotli pré-comprimido: o build gera «<arquivo>.br» ao lado dos estáticos de texto (scripts/comprimir.mjs).
     // Quem aceita Brotli recebe o .br pronto, sem custo de CPU por pedido; quem não aceita segue para o

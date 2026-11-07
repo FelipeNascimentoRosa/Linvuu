@@ -40,7 +40,7 @@ export default function Cursos() {
           <input id="q" type="search" value={q} placeholder={t.cursosPagina.exemplo} onChange={(e) => set('q', e.target.value)} />
         </div>
       </div>
-      <p className="nota"><Link to="/portugues">{t.cursosPagina.portugues}</Link></p>
+      {LOCALE.codigo !== 'pt-BR' && <p className="nota"><Link to="/portugues">{t.cursosPagina.portugues}</Link></p>}
       <p className="resultado" aria-live="polite">{t.cursosPagina.contagem(lista.length)}</p>
       {lista.length > 0
         ? <div className="curso-grid">{lista.map((c) => {

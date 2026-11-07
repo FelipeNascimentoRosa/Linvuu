@@ -1,8 +1,7 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { SITE_URL } from '../config/site';
 import { LOCALE, LOCALES, useT } from '../i18n';
-import { caminhoEm, type CodigoLocale } from '../i18n/locales';
+import { siteDoIdioma, urlAbsolutaEm, type CodigoLocale } from '../i18n/locales';
 import { sincronizarRobots } from './robotsPagina';
 
 const meta = (sel: string, attr: string, valor: string) => {
@@ -48,7 +47,8 @@ function aplicar(m: { titulo: string; descricao: string; canonical: string; noin
   meta('meta[property="og:locale"]', 'property=og:locale', LOCALE.og);
   meta('meta[name="twitter:title"]', 'name=twitter:title', m.titulo);
   meta('meta[name="twitter:description"]', 'name=twitter:description', m.descricao);
-  meta('meta[name="twitter:image"]', 'name=twitter:image', SITE_URL + '/brand/avatar-1080.png');
+  meta('meta[property="og:image"]', 'property=og:image', siteDoIdioma(LOCALE.codigo) + '/brand/avatar-1080.png');
+  meta('meta[name="twitter:image"]', 'name=twitter:image', siteDoIdioma(LOCALE.codigo) + '/brand/avatar-1080.png');
   link('canonical', m.canonical);
   document.head.querySelectorAll('link[rel="alternate"][hreflang]').forEach((el) => el.remove());
   for (const a of m.alternativos) link('alternate', a.href, a.hreflang);
@@ -70,10 +70,10 @@ export function usePageTitle(titulo?: string, descricao?: string, idiomas: Codig
     const local = () => {
       const tit = titulo ? `${titulo} · Linvuu` : t.meta.titulo;
       const alternativos = !semIndice && idiomas.length > 1
-        ? [...LOCALES.filter((x) => idiomas.includes(x.codigo)).map((l) => ({ hreflang: l.codigo, href: SITE_URL + caminhoEm(l.codigo, caminho) })),
-          ...(idiomas.includes('pt-BR') ? [{ hreflang: 'x-default', href: SITE_URL + caminhoEm('pt-BR', caminho) }] : [])]
+        ? [...LOCALES.filter((x) => idiomas.includes(x.codigo)).map((l) => ({ hreflang: l.codigo, href: urlAbsolutaEm(l.codigo, caminho) })),
+          { hreflang: 'x-default', href: urlAbsolutaEm(idiomas.includes('en') ? 'en' : 'pt-BR', caminho) }]
         : [];
-      aplicar({ titulo: tit, descricao: descricao ?? t.meta.descricao, canonical: SITE_URL + caminho, noindex: semIndice, alternativos });
+      aplicar({ titulo: tit, descricao: descricao ?? t.meta.descricao, canonical: urlAbsolutaEm(LOCALE.codigo, caminho), noindex: semIndice, alternativos });
     };
     if (import.meta.env.VITE_ALVO === 'apk') { local(); return; }
     const marca = document.head.querySelector<HTMLMetaElement>(MARCA);
