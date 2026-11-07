@@ -1,0 +1,189 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 25,
+  "fase": 3,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Family and possessives: Family members",
+  "objetivo": "Lesson 7, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 7,
+    "titulo": "Family and possessives",
+    "objetivo": "Name family members in the masculine and feminine, form the mixed plural («los hermanos»), use the possessives «mi, tu, su, nuestro, vuestro» with the right agreement, show possession with «de», and say how many people are in your household.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Family members",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "el padre",
+            "translit": "[pronuncia] el PAH-dreh",
+            "pt": "the father",
+            "en": "",
+            "audio": "el padre"
+          },
+          {
+            "ru": "la madre",
+            "translit": "[pronuncia] la MAH-dreh",
+            "pt": "the mother",
+            "en": "",
+            "audio": "la madre"
+          },
+          {
+            "ru": "el hermano",
+            "translit": "[pronuncia] el er-MAH-no",
+            "pt": "the brother",
+            "en": "",
+            "audio": "el hermano"
+          },
+          {
+            "ru": "la hermana",
+            "translit": "[pronuncia] la er-MAH-nah",
+            "pt": "the sister",
+            "en": "",
+            "audio": "la hermana"
+          },
+          {
+            "ru": "el hijo",
+            "translit": "[pronuncia] el EE-ho",
+            "pt": "the son",
+            "en": "",
+            "audio": "el hijo"
+          },
+          {
+            "ru": "la hija",
+            "translit": "[pronuncia] la EE-hah",
+            "pt": "the daughter",
+            "en": "",
+            "audio": "la hija"
+          },
+          {
+            "ru": "el abuelo",
+            "translit": "[pronuncia] el ah-BWEH-lo",
+            "pt": "the grandfather",
+            "en": "",
+            "audio": "el abuelo"
+          },
+          {
+            "ru": "la abuela",
+            "translit": "[pronuncia] la ah-BWEH-lah",
+            "pt": "the grandmother",
+            "en": "",
+            "audio": "la abuela"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Family: masculine, feminine and the mixed plural",
+        "explicacao": "STEP 1: learn the pairs: «padre / madre», «hermano / hermana», «hijo / hija», «abuelo / abuela», «tío / tía», «primo / prima», «sobrino / sobrina», «marido / mujer». Almost all follow the «-o» (masculine) / «-a» (feminine) rule you already know. STEP 2: the masculine plural also covers a mixed group: «los padres» means mom and dad (also just «the parents»); «los hermanos» means brothers and sisters together; «los abuelos» means the grandparents; «los hijos» means the children (sons and daughters); «los tíos» means aunts and uncles together. To say only the women, use the feminine: «las hermanas». STEP 3: to say how many siblings, use «tener»: «Tengo dos hermanos», «Tengo una hermana». If you say «Tengo dos hermanos», that could mean a brother and a sister, or two brothers. To be clear: «Tengo un hermano y una hermana». STEP 4: the question is «¿Cuántos hermanos tienes?» (tú) or «¿Cuántos hermanos tiene usted?» (usted). With no siblings: «No tengo hermanos» or «Soy hijo único / hija única». STEP 5: to state the relationship, use «ser»: «Ana es mi hermana», «Ellos son mis abuelos». STEP 6: in-laws have their own names: «el suegro, la suegra» (father/mother-in-law), «el cuñado, la cuñada» (brother/sister-in-law), «el yerno» (son-in-law) and «la nuera» (daughter-in-law). STEP 7: «mujer» means woman and also wife: «mi mujer» means «my wife»; «esposo» and «esposa» are the more neutral terms. STEP 8: in Spain, in casual speech, «tío» and «tía» can also mean «guy» or «dude», with no family relation at all («ese tío»); use that sense only with friends. STEP 9: «papá» and «mamá» are the affectionate forms, used in Spain and Latin America; «mi padre» and «mi madre» are the neutral forms. For both together, «mis padres».",
+        "comparacao": "English «parents» is already a plural that covers both mom and dad, so the mixed-group idea itself isn't new — Spanish just extends it further, to «hermanos» (siblings of both sexes), «abuelos» (grandparents), «hijos» (children) and «tíos» (aunts and uncles together). Worth flagging: «mujer» does double duty for «woman» and «wife».",
+        "exemplos": [
+          {
+            "ru": "Tengo dos hermanos y una hermana.",
+            "pt": "I have two brothers and a sister."
+          },
+          {
+            "ru": "Mis abuelos viven en Sevilla.",
+            "pt": "My grandparents live in Seville."
+          },
+          {
+            "ru": "Ana es hija única.",
+            "pt": "Ana is an only child."
+          },
+          {
+            "ru": "¿Cuántos hermanos tienes?",
+            "pt": "How many siblings do you have?"
+          }
+        ],
+        "tabela": [
+          {
+            "masculino": "[misto] el padre",
+            "feminino": "[misto] la madre",
+            "plural_misto": "[misto] los padres"
+          },
+          {
+            "masculino": "[misto] el hermano",
+            "feminino": "[misto] la hermana",
+            "plural_misto": "[misto] los hermanos"
+          },
+          {
+            "masculino": "[misto] el hijo",
+            "feminino": "[misto] la hija",
+            "plural_misto": "[misto] los hijos"
+          },
+          {
+            "masculino": "[misto] el abuelo",
+            "feminino": "[misto] la abuela",
+            "plural_misto": "[misto] los abuelos"
+          },
+          {
+            "masculino": "[misto] el tío",
+            "feminino": "[misto] la tía",
+            "plural_misto": "[misto] los tíos"
+          },
+          {
+            "masculino": "[misto] el primo",
+            "feminino": "[misto] la prima",
+            "plural_misto": "[misto] los primos"
+          },
+          {
+            "masculino": "[misto] el sobrino",
+            "feminino": "[misto] la sobrina",
+            "plural_misto": "[misto] los sobrinos"
+          },
+          {
+            "masculino": "[misto] el marido, el esposo",
+            "feminino": "[misto] la mujer, la esposa",
+            "plural_misto": "[misto] los esposos"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] Tengo dos irmanos.",
+            "certo": "[misto] Tengo dos hermanos.",
+            "motivo": "«Hermano» has a silent «h» and is spelled with «e»."
+          },
+          {
+            "errado": "[misto] Mi madre es el hermana de Ana.",
+            "certo": "[misto] Mi madre es la hermana de Ana.",
+            "motivo": "Use the feminine article «la» for «hermana»."
+          },
+          {
+            "errado": "[misto] Soy único hijo.",
+            "certo": "[misto] Soy hijo único.",
+            "motivo": "The adjective «único» comes after «hijo»."
+          },
+          {
+            "errado": "[misto] Mis padre viven en Madrid.",
+            "certo": "[misto] Mis padres viven en Madrid.",
+            "motivo": "The plural needs the «-s» on both the noun and the possessive."
+          }
+        ],
+        "tag": "Family"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say out loud how many siblings, cousins and aunts/uncles you have: «Tengo… hermanos. Tengo… primos. Mis abuelos viven en…»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Conjugate «comer» and «vivir» from memory. Say three sentences with «vivo», «como» and «escribo». Then give the plural of «hijo», «ciudad» and «lápiz»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-007.json",
+  "responsavel": null
+}

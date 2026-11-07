@@ -1,0 +1,512 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 76,
+  "fase": 8,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Regular pretérito indefinido: Review and practice of lesson 19",
+  "objetivo": "Lesson 19, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 19,
+    "titulo": "Regular pretérito indefinido",
+    "objetivo": "Narrate what happened and is already finished («ayer», «anoche», «el año pasado») with the regular -ar, -er and -ir forms of the pretérito indefinido, get the accent marks right («hablé», «habló»), handle the spelling changes («busqué», «llegué», «empecé», «leyó»), and tell the indefinido apart from the pretérito perfecto.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 19",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ayer comí paella",
+            "opcoes": [
+              "[misto] Ayer comí paella",
+              "[misto] Ayer comió paella",
+              "[misto] Ayer como paella"
+            ],
+            "gabarito": "[misto] Ayer comí paella",
+            "explicacao": "The final «í» with an accent marks «yo»; «comió» would be «él, ella».",
+            "id": "es-019-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Hablaron toda la tarde",
+            "opcoes": [
+              "[misto] Hablaron toda la tarde",
+              "[misto] Habló toda la tarde",
+              "[misto] Hablamos toda la tarde"
+            ],
+            "gabarito": "[misto] Hablaron toda la tarde",
+            "explicacao": "The ending «-aron» belongs to «ellos» or «ustedes».",
+            "id": "es-019-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Llegué a las nueve",
+            "opcoes": [
+              "[misto] Llegué a las nueve",
+              "[misto] Llegó a las nueve",
+              "[misto] Llego a las nueve"
+            ],
+            "gabarito": "[misto] Llegué a las nueve",
+            "explicacao": "Listen for the stress on the last syllable: «lle-GUÉ».",
+            "id": "es-019-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Anoche cené en casa",
+            "respostaEsperada": "Anoche cené en casa",
+            "explicacao": "Write: Anoche cené en casa. The final «é» carries an accent.",
+            "id": "es-019-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Mi hermana vivió en Sevilla",
+            "respostaEsperada": "Mi hermana vivió en Sevilla",
+            "explicacao": "Write: Mi hermana vivió en Sevilla. The third person of -ir verbs ends in «-ió».",
+            "id": "es-019-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «el año pasado» mean?",
+            "audio": "el año pasado",
+            "opcoes": [
+              "to live",
+              "to write",
+              "last year",
+              "to eat"
+            ],
+            "gabarito": "last year",
+            "explicacao": "«el año pasado» = last year.",
+            "id": "es-019-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "¿Qué compraste ayer?",
+            "respostaEsperada": "¿Qué compraste ayer?",
+            "explicacao": "Write: ¿Qué compraste ayer? The «tú» form ends in «-aste».",
+            "id": "es-019-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "la semana pasada",
+            "respostaEsperada": "la semana pasada",
+            "explicacao": "last week",
+            "id": "es-019-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «yo» form of «trabajar» in the indefinido?",
+            "opcoes": [
+              "[misto] trabajé",
+              "[misto] trabajo",
+              "[misto] trabajó"
+            ],
+            "gabarito": "[misto] trabajé",
+            "explicacao": "In «yo», the indefinido of -ar verbs ends in «-é».",
+            "id": "es-019-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «She talked to the boss»?",
+            "opcoes": [
+              "[misto] Habló con el jefe.",
+              "[misto] Hablo con el jefe.",
+              "[misto] Hablé con el jefe."
+            ],
+            "gabarito": "[misto] Habló con el jefe.",
+            "explicacao": "«Él, ella» ends in «-ó» with an accent.",
+            "id": "es-019-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «ellos» form of «comer» in the indefinido?",
+            "opcoes": [
+              "[misto] comieron",
+              "[misto] comeron",
+              "[misto] comían"
+            ],
+            "gabarito": "[misto] comieron",
+            "explicacao": "-er and -ir verbs use «-ieron».",
+            "id": "es-019-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «después» mean?",
+            "audio": "después",
+            "opcoes": [
+              "afterward",
+              "finally, lastly",
+              "to live",
+              "to eat"
+            ],
+            "gabarito": "afterward",
+            "explicacao": "«después» = afterward.",
+            "id": "es-019-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «yo» form of «llegar» in the indefinido?",
+            "opcoes": [
+              "[misto] llegué",
+              "[misto] llegé",
+              "[misto] llego"
+            ],
+            "gabarito": "[misto] llegué",
+            "explicacao": "You write «gu» before the «é» to keep the «g» sound.",
+            "id": "es-019-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "[misto] Ayer compré pan.",
+              "[misto] Ayer compro pan.",
+              "[misto] Ayer comprá pan."
+            ],
+            "gabarito": "[misto] Ayer compré pan.",
+            "explicacao": "With «ayer», use the indefinido, and «yo» ends in «-é».",
+            "id": "es-019-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «un rato» mean in Spanish?",
+            "opcoes": [
+              "[misto] a little while",
+              "[misto] a rodent",
+              "[misto] a mousetrap"
+            ],
+            "gabarito": "[misto] a little while",
+            "explicacao": "The rodent is «ratón»; «rato» is a short while.",
+            "id": "es-019-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "el año pasado",
+            "respostaEsperada": "el año pasado",
+            "explicacao": "last year",
+            "id": "es-019-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the Spanish verb for «to have dinner»?",
+            "opcoes": [
+              "[misto] cenar",
+              "[misto] cenir",
+              "[misto] almorzar"
+            ],
+            "gabarito": "[misto] cenar",
+            "explicacao": "«Cenar» means to have dinner; «almorzar» means to have lunch.",
+            "id": "es-019-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «beber» mean?",
+            "audio": "beber",
+            "opcoes": [
+              "the day before yesterday",
+              "to leave, to go out",
+              "to drink",
+              "once"
+            ],
+            "gabarito": "to drink",
+            "explicacao": "«beber» = to drink.",
+            "id": "es-019-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ayer yo ___ con Ana. (hablar)",
+            "opcoes": [
+              "[misto] hablé",
+              "[misto] hablo",
+              "[misto] habló"
+            ],
+            "gabarito": "[misto] hablé",
+            "explicacao": "With «yo» in the indefinido, the ending is «-é».",
+            "id": "es-019-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ellos ___ en un bar. (cenar)",
+            "opcoes": [
+              "[misto] cenaron",
+              "[misto] cenan",
+              "[misto] cenamos"
+            ],
+            "gabarito": "[misto] cenaron",
+            "explicacao": "With «ellos», the ending is «-aron».",
+            "id": "es-019-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Nosotros ___ el domingo. (salir)",
+            "opcoes": [
+              "[misto] salimos",
+              "[misto] salemos",
+              "[misto] salieron"
+            ],
+            "gabarito": "[misto] salimos",
+            "explicacao": "-ir verbs use «-imos» with «nosotros».",
+            "id": "es-019-e16"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tú ___ una carta. (escribir)",
+            "opcoes": [
+              "[misto] escribiste",
+              "[misto] escribistes",
+              "[misto] escribió"
+            ],
+            "gabarito": "[misto] escribiste",
+            "explicacao": "With «tú», the ending is «-iste», with no extra «s».",
+            "id": "es-019-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «primero» mean?",
+            "audio": "primero",
+            "opcoes": [
+              "last week",
+              "first, firstly",
+              "two days ago",
+              "then, next"
+            ],
+            "gabarito": "first, firstly",
+            "explicacao": "«primero» = first, firstly.",
+            "id": "es-019-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ella ___ un libro. (leer)",
+            "opcoes": [
+              "[misto] leyó",
+              "[misto] leió",
+              "[misto] leó"
+            ],
+            "gabarito": "[misto] leyó",
+            "explicacao": "The «i» between two vowels becomes «y»: «leyó».",
+            "id": "es-019-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "hace dos días",
+            "respostaEsperada": "hace dos días",
+            "explicacao": "two days ago",
+            "id": "es-019-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Ayer compré pan.»",
+            "opcoes": [
+              "Ayer",
+              "compré",
+              "pan."
+            ],
+            "gabarito": "Ayer compré pan.",
+            "explicacao": "The time marker opens the sentence, and the verb follows.",
+            "id": "es-019-e19"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Anoche cenamos en casa.»",
+            "opcoes": [
+              "Anoche",
+              "cenamos",
+              "en",
+              "casa."
+            ],
+            "gabarito": "Anoche cenamos en casa.",
+            "explicacao": "Marker, verb, and place.",
+            "id": "es-019-e20"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: Yesterday I worked and had dinner at home.",
+            "respostaEsperada": "[misto] Ayer trabajé y cené en casa.",
+            "id": "es-019-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «la semana pasada» mean?",
+            "audio": "la semana pasada",
+            "opcoes": [
+              "afterward",
+              "last week",
+              "to write",
+              "to leave, to go out"
+            ],
+            "gabarito": "last week",
+            "explicacao": "«la semana pasada» = last week.",
+            "id": "es-019-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ayer yo ___ una carta. (escribir)",
+            "opcoes": [
+              "[misto] escribió",
+              "[misto] escribí",
+              "[misto] escribo"
+            ],
+            "gabarito": "[misto] escribí",
+            "explicacao": "In «yo», -ir verbs end in «-í».",
+            "id": "es-019-e22"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ellos ___ en Sevilla el año pasado. (vivir)",
+            "opcoes": [
+              "[misto] viveron",
+              "[misto] vivían",
+              "[misto] vivieron"
+            ],
+            "gabarito": "[misto] vivieron",
+            "explicacao": "The plural is «-ieron», never «-eron».",
+            "id": "es-019-e23"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Anoche ella ___ tarde. (llegar)",
+            "opcoes": [
+              "[misto] llegó",
+              "[misto] llegé",
+              "[misto] llego"
+            ],
+            "gabarito": "[misto] llegó",
+            "explicacao": "With «ella», the ending is «-ó», with an accent.",
+            "id": "es-019-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "el lunes pasado",
+            "respostaEsperada": "el lunes pasado",
+            "explicacao": "last Monday",
+            "id": "es-019-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ayer ___ a estudiar a las ocho. (empezar, yo)",
+            "opcoes": [
+              "[misto] empezé",
+              "[misto] empiezo",
+              "[misto] empecé"
+            ],
+            "gabarito": "[misto] empecé",
+            "explicacao": "Before «-é», the «z» becomes «c»: «empecé».",
+            "id": "es-019-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «el lunes pasado» mean?",
+            "audio": "el lunes pasado",
+            "opcoes": [
+              "last Monday",
+              "first, firstly",
+              "last night",
+              "last year"
+            ],
+            "gabarito": "last Monday",
+            "explicacao": "«el lunes pasado» = last Monday.",
+            "id": "es-019-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «tú» form of «beber» in the indefinido?",
+            "opcoes": [
+              "[misto] bebiste",
+              "[misto] bebistes",
+              "[misto] bebaste"
+            ],
+            "gabarito": "[misto] bebiste",
+            "explicacao": "The «tú» ending is «-iste», with no extra final «s».",
+            "id": "es-019-e26"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «two days ago»?",
+            "opcoes": [
+              "[misto] hace dos días atrás",
+              "[misto] hace dos días",
+              "[misto] hay dos días"
+            ],
+            "gabarito": "[misto] hace dos días",
+            "explicacao": "Use «hace» + time, with no «atrás».",
+            "id": "es-019-e27"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «ella» form of «leer» in the indefinido?",
+            "opcoes": [
+              "[misto] leió",
+              "[misto] leó",
+              "[misto] leyó"
+            ],
+            "gabarito": "[misto] leyó",
+            "explicacao": "Between vowels, «i» becomes «y»: «leyó».",
+            "id": "es-019-e28"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «El año pasado vivimos en Madrid.»",
+            "opcoes": [
+              "El",
+              "año",
+              "pasado",
+              "vivimos",
+              "en",
+              "Madrid."
+            ],
+            "gabarito": "El año pasado vivimos en Madrid.",
+            "explicacao": "«El año pasado» marks a finished time.",
+            "id": "es-019-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: Yesterday I talked to Ana and had dinner at home.",
+            "respostaEsperada": "[misto] Ayer hablé con Ana y cené en casa.",
+            "id": "es-019-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Tell a friend out loud what you did last Saturday, from morning to night, and ask what they did: «¿Y tú, qué tal tu sábado?»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say what you did yesterday, using six verbs in the indefinido (-ar, -er and -ir). Then say one sentence with «hace» and another with «el año pasado»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-019.json",
+  "responsavel": null
+}

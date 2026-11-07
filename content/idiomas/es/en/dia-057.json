@@ -1,0 +1,190 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 57,
+  "fase": 6,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Shopping, clothes, colours, este and ese: Clothes and colours",
+  "objetivo": "Lesson 15, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 15,
+    "titulo": "Shopping, clothes, colours, este and ese",
+    "objetivo": "Name clothes and colors with the right agreement, ask about prices and sizes, pay, use the numbers 100 to 1000, point at objects with este, ese and aquel, and handle a short purchase in a store.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Clothes and colours",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "la camisa",
+            "translit": "[pronuncia] la kah-MEE-sah",
+            "pt": "the shirt",
+            "en": "",
+            "audio": "la camisa"
+          },
+          {
+            "ru": "los pantalones",
+            "translit": "[pronuncia] los pan-tah-LO-nes",
+            "pt": "the pants",
+            "en": "",
+            "audio": "los pantalones"
+          },
+          {
+            "ru": "el vestido",
+            "translit": "[pronuncia] el bes-TEE-do",
+            "pt": "the dress",
+            "en": "",
+            "audio": "el vestido"
+          },
+          {
+            "ru": "la falda",
+            "translit": "[pronuncia] la FAL-dah",
+            "pt": "the skirt (false friend: not «fault»)",
+            "en": "",
+            "audio": "la falda"
+          },
+          {
+            "ru": "los zapatos",
+            "translit": "[pronuncia] los thah-PAH-tos",
+            "pt": "the shoes",
+            "en": "",
+            "audio": "los zapatos"
+          },
+          {
+            "ru": "la chaqueta",
+            "translit": "[pronuncia] la cha-KEH-tah",
+            "pt": "the short jacket, the blazer",
+            "en": "",
+            "audio": "la chaqueta"
+          },
+          {
+            "ru": "el abrigo",
+            "translit": "[pronuncia] el ah-BREE-go",
+            "pt": "the coat, the overcoat",
+            "en": "",
+            "audio": "el abrigo"
+          },
+          {
+            "ru": "las zapatillas",
+            "translit": "[pronuncia] las thah-pee-LYAS",
+            "pt": "the sneakers (Spain); also house slippers",
+            "en": "",
+            "audio": "las zapatillas"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Colors and adjective agreement",
+        "explicacao": "STEP 1: the main colors are: rojo, azul, verde, amarillo, negro, blanco, gris, marrón, naranja and rosa. Say each one out loud, minding the sounds: «amarillo» sounds like «ah-mah-REE-lyo», and «azul» starts with the Castilian «th» sound (ah-THOOL). STEP 2: a color is an adjective and goes AFTER the noun: «una camisa blanca», «unos zapatos negros». You can't say «una blanca camisa». STEP 3: colors ending in «-o» have four forms: «rojo, roja, rojos, rojas». STEP 4: colors ending in «-e» or a consonant have only two: singular and plural. «Verde / verdes», «azul / azules» (the «z» becomes «c» before «-es»), «gris / grises», «marrón / marrones». STEP 5: «naranja» and «rosa» use the same form for masculine and feminine: «un abrigo naranja», «una falda rosa». STEP 6: to lighten or darken a color, add «claro» or «oscuro» to it, without changing the color word itself: «una camisa azul claro» (light blue), «un abrigo verde oscuro» (dark green). STEP 7: «pantalones» is plural: «unos pantalones», and the adjective agrees: «unos pantalones negros». You say «un pantalón» for a single piece. In Spain, «los vaqueros» are jeans; in Latin America you'll hear «los jeans». STEP 8: pronunciation: the «ll» in «amarillo» and «zapatillas» sounds like an English «y» in Spain; the «ch» in «chaqueta» sounds like English «ch»; the «z» in «zapatos» sounds like the Castilian «th».",
+        "comparacao": "English colors also come after the noun when functioning as a true predicate, but as a modifier they normally come BEFORE it: «a white shirt», «black shoes» — exactly the mirror image of Spanish word order, where the color always trails the noun. English colors also never change their ending for gender or number («white shirt», «white shirts», whether the noun is masculine or feminine in another language), so the four-way or two-way agreement pattern here (rojo/roja/rojos/rojas) is new ground to learn.",
+        "tabela": [
+          {
+            "cor": "[misto] rojo",
+            "fem": "[misto] roja",
+            "plural": "[misto] rojos, rojas",
+            "exemplo": "[misto] una camisa roja"
+          },
+          {
+            "cor": "[misto] negro",
+            "fem": "[misto] negra",
+            "plural": "[misto] negros, negras",
+            "exemplo": "[misto] unos zapatos negros"
+          },
+          {
+            "cor": "[misto] blanco",
+            "fem": "[misto] blanca",
+            "plural": "[misto] blancos, blancas",
+            "exemplo": "[misto] una falda blanca"
+          },
+          {
+            "cor": "[misto] amarillo",
+            "fem": "[misto] amarilla",
+            "plural": "[misto] amarillos, amarillas",
+            "exemplo": "[misto] un vestido amarillo"
+          },
+          {
+            "cor": "[misto] azul",
+            "fem": "[misto] azul",
+            "plural": "[misto] azules",
+            "exemplo": "[misto] unos pantalones azules"
+          },
+          {
+            "cor": "[misto] verde",
+            "fem": "[misto] verde",
+            "plural": "[misto] verdes",
+            "exemplo": "[misto] una chaqueta verde"
+          },
+          {
+            "cor": "[misto] gris",
+            "fem": "[misto] gris",
+            "plural": "[misto] grises",
+            "exemplo": "[misto] unas zapatillas grises"
+          },
+          {
+            "cor": "[misto] marrón",
+            "fem": "[misto] marrón",
+            "plural": "[misto] marrones",
+            "exemplo": "[misto] un abrigo marrón"
+          },
+          {
+            "cor": "[misto] naranja, rosa",
+            "fem": "[misto] naranja, rosa",
+            "plural": "[misto] naranjas, rosas",
+            "exemplo": "[misto] una falda rosa"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] una camisa blanco",
+            "certo": "[misto] una camisa blanca",
+            "motivo": "The color agrees in gender with «camisa»."
+          },
+          {
+            "errado": "[misto] unos zapatos negro",
+            "certo": "[misto] unos zapatos negros",
+            "motivo": "The color agrees in number with «zapatos»."
+          },
+          {
+            "errado": "[misto] una azul camisa",
+            "certo": "[misto] una camisa azul",
+            "motivo": "The color comes after the noun."
+          },
+          {
+            "errado": "[misto] unos pantalones azul",
+            "certo": "[misto] unos pantalones azules",
+            "motivo": "The plural of «azul» is «azules»."
+          },
+          {
+            "errado": "[misto] una falda azules",
+            "certo": "[misto] una falda azul",
+            "motivo": "Singular: «azul». The plural is only for more than one item."
+          }
+        ],
+        "tag": "Shopping"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe out loud what you're wearing right now, with the color of each item, and then the clothes you'd like to buy."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say the numbers 0 to 100 by tens, and answer: «¿Qué haces los sábados? ¿Adónde vas? ¿A qué hora vuelves?»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-015.json",
+  "responsavel": null
+}

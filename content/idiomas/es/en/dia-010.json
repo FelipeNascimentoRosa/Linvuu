@@ -1,0 +1,157 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 10,
+  "fase": 1,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Introductions, countries, numbers 0 to 20 and age (tener): Countries and nationalities",
+  "objetivo": "Lesson 3, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 3,
+    "titulo": "Introductions, countries, numbers 0 to 20 and age (tener)",
+    "objetivo": "Introduce yourself and introduce someone else, say where you're from and where you live, use nationalities in the masculine and feminine, and count from 0 to 20, including saying your age with the verb «tener».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Countries and nationalities",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "Brasil, brasileño",
+            "translit": "[pronuncia] brah-SEEL, brah-see-LEH-nyo",
+            "pt": "Brazil, Brazilian",
+            "en": "",
+            "audio": "Brasil, brasileño"
+          },
+          {
+            "ru": "España, español",
+            "translit": "[pronuncia] es-PAH-nyah, es-pah-NYOL",
+            "pt": "Spain, Spanish",
+            "en": "",
+            "audio": "España, español"
+          },
+          {
+            "ru": "Portugal, portugués",
+            "translit": "[pronuncia] por-too-GAL, por-too-GESS",
+            "pt": "Portugal, Portuguese",
+            "en": "",
+            "audio": "Portugal, portugués"
+          },
+          {
+            "ru": "México, mexicano",
+            "translit": "[pronuncia] MEH-hee-ko, meh-hee-KAH-no",
+            "pt": "Mexico, Mexican",
+            "en": "",
+            "audio": "México, mexicano"
+          },
+          {
+            "ru": "Argentina, argentino",
+            "translit": "[pronuncia] ar-hen-TEE-nah, ar-hen-TEE-no",
+            "pt": "Argentina, Argentinian",
+            "en": "",
+            "audio": "Argentina, argentino"
+          },
+          {
+            "ru": "Estados Unidos, estadounidense",
+            "translit": "[pronuncia] es-TAH-dos oo-NEE-dos, es-tah-do-oo-nee-DEN-seh",
+            "pt": "United States, American (from the US)",
+            "en": "",
+            "audio": "Estados Unidos, estadounidense"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Origin, nationality and where you live",
+        "explicacao": "STEP 1: to ask where someone's from: «¿De dónde eres?» (tú) or «¿De dónde es usted?» (usted). To answer, use «ser de» + city or country: «Soy de Madrid», «Soy de Brasil». STEP 2: nationality takes «ser» and an adjective that agrees: «Soy brasileño / brasileña.» Adjectives ending in «-o» change to «-a»; the ones ending in a consonant (español, francés, alemán, inglés) add «-a» and lose their accent mark once the vowel is no longer the last one: «francés → francesa», «alemán → alemana». Ones ending in «-e» and «-ense» don't change: «estadounidense». STEP 3: nationalities and languages are written lowercase: «Soy brasileño», «hablo español». STEP 4: most countries are used with no article: «España», «Brasil», «México», «Francia». A few have an optional article («los Estados Unidos»). STEP 5: to say where you live, use the verb «vivir» and the preposition «en», for both city and country: «Vivo en Madrid», «Vivo en Brasil». Spanish doesn't have separate forms like English «in» vs. «at» for this. STEP 6: «vivo» is «I live» and «vive» is «he/she/usted lives»; the full conjugation of -ir verbs comes in lesson 6. STEP 7: to ask where someone lives: «¿Dónde vives?» (tú) or «¿Dónde vive usted?» (usted). STEP 8: to contrast, use «pero»: «Soy de São Paulo, pero vivo en Madrid.» STEP 9: in Latin America you'll also hear «brasilero»; both forms exist, and «brasileño» is the one from Spain.",
+        "comparacao": "English uses «in» for both cities and countries («in Madrid», «in Brazil»), so «en» without an article is actually simpler than Spanish's own rules for «el, la» elsewhere — the real novelty is the feminine of «español», «francés» and «alemán»: you add «-a» and the accent mark disappears («francesa», «alemana»), which has no equivalent in English adjectives at all.",
+        "tabela": [
+          {
+            "pais": "[misto] España",
+            "masculino": "[misto] español",
+            "feminino": "[misto] española"
+          },
+          {
+            "pais": "[misto] Brasil",
+            "masculino": "[misto] brasileño",
+            "feminino": "[misto] brasileña"
+          },
+          {
+            "pais": "[misto] Portugal",
+            "masculino": "[misto] portugués",
+            "feminino": "[misto] portuguesa"
+          },
+          {
+            "pais": "[misto] Francia",
+            "masculino": "[misto] francés",
+            "feminino": "[misto] francesa"
+          },
+          {
+            "pais": "[misto] Alemania",
+            "masculino": "[misto] alemán",
+            "feminino": "[misto] alemana"
+          },
+          {
+            "pais": "[misto] Italia",
+            "masculino": "[misto] italiano",
+            "feminino": "[misto] italiana"
+          },
+          {
+            "pais": "[misto] México",
+            "masculino": "[misto] mexicano",
+            "feminino": "[misto] mexicana"
+          },
+          {
+            "pais": "[misto] Estados Unidos",
+            "masculino": "[misto] estadounidense",
+            "feminino": "[misto] estadounidense"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] Vivo no Brasil.",
+            "certo": "[misto] Vivo en Brasil.",
+            "motivo": "Spanish has no separate word for «in»; it just uses «en» with no article."
+          },
+          {
+            "errado": "[misto] Ella es español.",
+            "certo": "[misto] Ella es española.",
+            "motivo": "The nationality agrees with gender."
+          },
+          {
+            "errado": "[misto] Soy Brasileño.",
+            "certo": "[misto] Soy brasileño.",
+            "motivo": "Nationalities are written lowercase."
+          },
+          {
+            "errado": "[misto] Soy de Brasil y vivo de Madrid.",
+            "certo": "[misto] Soy de Brasil y vivo en Madrid.",
+            "motivo": "«De» shows origin; for where you live, use «en»."
+          }
+        ],
+        "tag": "Prepositions"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Say: «Soy… (nationality). Soy de… Vivo en… Ana es… Vive en…» with three different countries. Then ask, using «usted»: «¿De dónde es? ¿Dónde vive?»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say out loud: «Me llamo… Soy… Mucho gusto. ¿Y usted?» and answer as if you were the other person."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-003.json",
+  "responsavel": null
+}

@@ -1,0 +1,230 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 21,
+  "fase": 3,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Present tense in -er and -ir: Regular -er verbs",
+  "objetivo": "Lesson 6, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 6,
+    "titulo": "Present tense in -er and -ir",
+    "objetivo": "Conjugate regular -er and -ir verbs in the present, compare all three groups (-ar, -er, -ir), use «y» and «o» with their variants «e» and «u», and avoid the false friend «asistir».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Regular -er verbs",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "comer",
+            "translit": "[pronuncia] ko-MEHR",
+            "pt": "to eat",
+            "en": "",
+            "audio": "comer"
+          },
+          {
+            "ru": "beber",
+            "translit": "[pronuncia] beh-BEHR",
+            "pt": "to drink",
+            "en": "",
+            "audio": "beber"
+          },
+          {
+            "ru": "leer",
+            "translit": "[pronuncia] leh-EHR",
+            "pt": "to read",
+            "en": "",
+            "audio": "leer"
+          },
+          {
+            "ru": "aprender",
+            "translit": "[pronuncia] ah-prehn-DEHR",
+            "pt": "to learn",
+            "en": "",
+            "audio": "aprender"
+          },
+          {
+            "ru": "correr",
+            "translit": "[pronuncia] ko-RREHR",
+            "pt": "to run",
+            "en": "",
+            "audio": "correr"
+          },
+          {
+            "ru": "vender",
+            "translit": "[pronuncia] behn-DEHR",
+            "pt": "to sell",
+            "en": "",
+            "audio": "vender"
+          },
+          {
+            "ru": "responder",
+            "translit": "[pronuncia] res-pon-DEHR",
+            "pt": "to answer",
+            "en": "",
+            "audio": "responder"
+          },
+          {
+            "ru": "comprender",
+            "translit": "[pronuncia] kom-prehn-DEHR",
+            "pt": "to understand",
+            "en": "",
+            "audio": "comprender"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "The present of -er verbs",
+        "explicacao": "STEP 1: verbs in this group end in «-er» in the infinitive: «comer», «beber», «aprender». Drop the «-er» and you get the stem: «com-», «beb-», «aprend-». STEP 2: add the present-tense endings to the stem: -o, -es, -e, -emos, -éis, -en. «Como, comes, come, comemos, coméis, comen.» STEP 3: compare with the -ar verbs from lesson 4: the vowel changes («habl-a» becomes «com-e»), but the logic is the same. STEP 4: the stress falls on the stem (CO-mo, CO-mes, CO-me, CO-men), except in «nosotros» and «vosotros», where it falls on the ending: «co-ME-mos», «co-MÉ-is». STEP 5: «usted» takes the «él» form («Usted bebe»), and «ustedes» the «ellos» form («Ustedes comen»). «Vosotros» (Spain) carries an accent: «coméis». STEP 6: «leer» has two vowels in a row, and that's regular for this verb: «leo, lees, lee, leemos, leéis, leen». Pronounce every «e» in «lees» and «leemos» separately. STEP 7: in Spain, «comer» can mean to have lunch, and «la comida» can also mean lunch; «cenar» is to have dinner. STEP 8: «aprender a» + infinitive means «to learn to do something»: «Aprendo a cocinar.» STEP 9: «comprender» means to understand; don't confuse it with «comprar» (to buy).",
+        "comparacao": "English present tense doesn't change by person the way Spanish does, so the full six-ending set («-o, -es, -e, -emos, -éis, -en») is new material to learn rather than something to map from English. The pronunciation habit worth building: always pronounce the final «e» of «come» as a full, open vowel, not clipped the way an unstressed English ending might be.",
+        "exemplos": [
+          {
+            "ru": "Bebo agua con el almuerzo.",
+            "pt": "I drink water at lunch."
+          },
+          {
+            "ru": "Marta lee un libro.",
+            "pt": "Marta reads a book."
+          },
+          {
+            "ru": "Aprendemos español.",
+            "pt": "We're learning Spanish."
+          },
+          {
+            "ru": "Ellos venden fruta.",
+            "pt": "They sell fruit."
+          }
+        ],
+        "tabelas": [
+          {
+            "titulo": "comer (to eat)",
+            "linhas": [
+              {
+                "pronome": "[misto] yo",
+                "forma": "[misto] como",
+                "exemplo": "[misto] Como fruta."
+              },
+              {
+                "pronome": "[misto] tú",
+                "forma": "[misto] comes",
+                "exemplo": "[misto] ¿Comes carne?"
+              },
+              {
+                "pronome": "[misto] él / ella / usted",
+                "forma": "[misto] come",
+                "exemplo": "[misto] Ella come en casa."
+              },
+              {
+                "pronome": "[misto] nosotros, nosotras",
+                "forma": "[misto] comemos",
+                "exemplo": "[misto] Comemos tarde."
+              },
+              {
+                "pronome": "[misto] vosotros, vosotras",
+                "forma": "[misto] coméis",
+                "exemplo": "[misto] ¿Coméis juntos?"
+              },
+              {
+                "pronome": "[misto] ellos, ellas, ustedes",
+                "forma": "[misto] comen",
+                "exemplo": "[misto] Ellos comen poco."
+              }
+            ]
+          },
+          {
+            "titulo": "Other regular -er verbs",
+            "linhas": [
+              {
+                "infinitivo": "to drink",
+                "yo": "[misto] bebo",
+                "tu": "[misto] bebes",
+                "el_ella_usted": "[misto] bebe",
+                "nosotros": "[misto] bebemos",
+                "vosotros": "[misto] bebéis",
+                "ellos_ustedes": "[misto] beben"
+              },
+              {
+                "infinitivo": "[misto] leer",
+                "yo": "[misto] leo",
+                "tu": "[misto] lees",
+                "el_ella_usted": "[misto] lee",
+                "nosotros": "[misto] leemos",
+                "vosotros": "[misto] leéis",
+                "ellos_ustedes": "[misto] leen"
+              },
+              {
+                "infinitivo": "to learn",
+                "yo": "[misto] aprendo",
+                "tu": "[misto] aprendes",
+                "el_ella_usted": "[misto] aprende",
+                "nosotros": "[misto] aprendemos",
+                "vosotros": "[misto] aprendéis",
+                "ellos_ustedes": "[misto] aprenden"
+              },
+              {
+                "infinitivo": "to sell",
+                "yo": "[misto] vendo",
+                "tu": "[misto] vendes",
+                "el_ella_usted": "[misto] vende",
+                "nosotros": "[misto] vendemos",
+                "vosotros": "[misto] vendéis",
+                "ellos_ustedes": "[misto] venden"
+              }
+            ]
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] Tú come mucho.",
+            "certo": "[misto] Tú comes mucho.",
+            "motivo": "With «tú», the ending is «-es»."
+          },
+          {
+            "errado": "[misto] Nosotros comís.",
+            "certo": "[misto] Nosotros comemos.",
+            "motivo": "In -er verbs, «nosotros» ends in «-emos»; «-ís» is an -ir ending, and only for «vosotros»."
+          },
+          {
+            "errado": "[misto] Ellos bebe agua.",
+            "certo": "[misto] Ellos beben agua.",
+            "motivo": "With «ellos», the ending is «-en»."
+          },
+          {
+            "errado": "[misto] Yo leo un libro y tú lés otro.",
+            "certo": "[misto] Yo leo un libro y tú lees otro.",
+            "motivo": "«Lees» has two «e»s, and it never takes an accent mark."
+          },
+          {
+            "errado": "[misto] Vosotros comeis.",
+            "certo": "[misto] Vosotros coméis.",
+            "motivo": "The «vosotros» form carries an accent mark."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say six sentences about what you eat, drink, read and learn: «Como… Bebo… Leo… Aprendo…» Then say what a friend does, using the «él, ella» form."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Conjugate «hablar» and «trabajar» from memory. Say three sentences with «hay» and two plural nouns, each with its article."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-006.json",
+  "responsavel": null
+}

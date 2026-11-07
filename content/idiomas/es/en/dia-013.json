@@ -1,0 +1,207 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 13,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Present tense in -ar, negation and questions: Regular -ar verbs",
+  "objetivo": "Lesson 4, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 4,
+    "titulo": "Present tense in -ar, negation and questions",
+    "objetivo": "Conjugate regular -ar verbs in the present, negate with «no», ask yes/no questions and questions with «qué, dónde, cuándo, por qué, cómo, cuánto», and tell «muy» apart from «mucho» and «por qué» from «porque».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Regular -ar verbs",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "hablar",
+            "translit": "[pronuncia] ah-BLAR",
+            "pt": "to speak",
+            "en": "",
+            "audio": "hablar"
+          },
+          {
+            "ru": "trabajar",
+            "translit": "[pronuncia] trah-bah-HAR",
+            "pt": "to work",
+            "en": "",
+            "audio": "trabajar"
+          },
+          {
+            "ru": "estudiar",
+            "translit": "[pronuncia] es-too-DYAR",
+            "pt": "to study",
+            "en": "",
+            "audio": "estudiar"
+          },
+          {
+            "ru": "comprar",
+            "translit": "[pronuncia] kom-PRAR",
+            "pt": "to buy",
+            "en": "",
+            "audio": "comprar"
+          },
+          {
+            "ru": "cocinar",
+            "translit": "[pronuncia] ko-thee-NAR",
+            "pt": "to cook",
+            "en": "",
+            "audio": "cocinar"
+          },
+          {
+            "ru": "escuchar",
+            "translit": "[pronuncia] es-koo-CHAR",
+            "pt": "to listen",
+            "en": "",
+            "audio": "escuchar"
+          },
+          {
+            "ru": "viajar",
+            "translit": "[pronuncia] bee-ah-HAR",
+            "pt": "to travel",
+            "en": "",
+            "audio": "viajar"
+          },
+          {
+            "ru": "bailar",
+            "translit": "[pronuncia] bai-LAR",
+            "pt": "to dance",
+            "en": "",
+            "audio": "bailar"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "The present of -ar verbs",
+        "explicacao": "STEP 1: the infinitive of this verb group ends in «-ar»: «hablar», «trabajar». Drop the «-ar» and you get the stem: «habl-», «trabaj-». STEP 2: add the present-tense endings to the stem: -o, -as, -a, -amos, -áis, -an. «Hablo, hablas, habla, hablamos, habláis, hablan.» STEP 3: the stress falls on the stem, except in «nosotros» and «vosotros», where it falls on the ending: «HAblo», but «ha-BLA-mos», «ha-BLÁ-is». STEP 4: the subject pronoun is almost always left out: «Hablo español», not «Yo hablo español», except for contrast. STEP 5: «usted» takes the same form as «él», and «ustedes» the same as «ellos»: «Usted trabaja», «Ustedes trabajan». «Vosotros» (Spain) carries an accent: «habláis». STEP 6: the present tense covers habits, what's happening right now, and also the near future: «Trabajo en Madrid», «Mañana viajo a Sevilla». STEP 7: watch the pronunciation: the «n» of «hablan» is fully pronounced, with no nasal vowel the way some languages do it; the «j» of «trabajo» is a rough, throaty h (trah-BAH-ho). STEP 8: some -ar verbs change the stem vowel (pensar → pienso, contar → cuento). They come up in later lessons; the ones in this lesson are all regular.",
+        "comparacao": "English present tense doesn't change by person the way Spanish does (you say «I speak», «you speak», «they speak» — only «he/she speaks» gets an «-s»), so this full set of six endings has no direct English match. Learn «-amos» (we) and «-áis» (you all, Spain) as new endings rather than translating from English.",
+        "tabelas": [
+          {
+            "titulo": "hablar (to speak)",
+            "linhas": [
+              {
+                "pronome": "[misto] yo",
+                "forma": "[misto] hablo",
+                "exemplo": "[misto] Hablo español."
+              },
+              {
+                "pronome": "[misto] tú",
+                "forma": "[misto] hablas",
+                "exemplo": "[misto] ¿Hablas portugués?"
+              },
+              {
+                "pronome": "[misto] él / ella / usted",
+                "forma": "[misto] habla",
+                "exemplo": "[misto] Usted habla muy bien."
+              },
+              {
+                "pronome": "[misto] nosotros, nosotras",
+                "forma": "[misto] hablamos",
+                "exemplo": "[misto] Hablamos mucho."
+              },
+              {
+                "pronome": "[misto] vosotros, vosotras",
+                "forma": "[misto] habláis",
+                "exemplo": "[misto] ¿Habláis inglés?"
+              },
+              {
+                "pronome": "[misto] ellos, ellas, ustedes",
+                "forma": "[misto] hablan",
+                "exemplo": "[misto] Ellos hablan francés."
+              }
+            ]
+          },
+          {
+            "titulo": "Other regular -ar verbs",
+            "linhas": [
+              {
+                "infinitivo": "[misto] trabajar",
+                "yo": "[misto] trabajo",
+                "tu": "[misto] trabajas",
+                "el_ella_usted": "[misto] trabaja",
+                "nosotros": "[misto] trabajamos",
+                "vosotros": "[misto] trabajáis",
+                "ellos_ustedes": "[misto] trabajan"
+              },
+              {
+                "infinitivo": "[misto] estudiar",
+                "yo": "[misto] estudio",
+                "tu": "[misto] estudias",
+                "el_ella_usted": "[misto] estudia",
+                "nosotros": "[misto] estudiamos",
+                "vosotros": "[misto] estudiáis",
+                "ellos_ustedes": "[misto] estudian"
+              },
+              {
+                "infinitivo": "to buy",
+                "yo": "[misto] compro",
+                "tu": "[misto] compras",
+                "el_ella_usted": "[misto] compra",
+                "nosotros": "[misto] compramos",
+                "vosotros": "[misto] compráis",
+                "ellos_ustedes": "[misto] compran"
+              },
+              {
+                "infinitivo": "[misto] cocinar",
+                "yo": "[misto] cocino",
+                "tu": "[misto] cocinas",
+                "el_ella_usted": "[misto] cocina",
+                "nosotros": "[misto] cocinamos",
+                "vosotros": "[misto] cocináis",
+                "ellos_ustedes": "[misto] cocinan"
+              }
+            ]
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] Tú habla español.",
+            "certo": "[misto] Tú hablas español.",
+            "motivo": "With «tú», the ending is «-as»."
+          },
+          {
+            "errado": "[misto] Nosotros trabajan en Madrid.",
+            "certo": "[misto] Nosotros trabajamos en Madrid.",
+            "motivo": "With «nosotros», the ending is «-amos»."
+          },
+          {
+            "errado": "[misto] Ellos estudia.",
+            "certo": "[misto] Ellos estudian.",
+            "motivo": "With «ellos», the ending is «-an»."
+          },
+          {
+            "errado": "[misto] Vosotros hablais.",
+            "certo": "[misto] Vosotros habláis.",
+            "motivo": "The «vosotros» form carries an accent on the ending."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say five sentences about yourself with verbs from this lesson: «Hablo… Trabajo… Estudio… Cocino… Viajo…» Then say what a friend does, using the «él, ella» form."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say your age with «tener» and conjugate «ser» from memory. Then introduce a friend: name, country and profession."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-004.json",
+  "responsavel": null
+}

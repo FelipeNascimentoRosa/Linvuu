@@ -1,0 +1,200 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 106,
+  "fase": 11,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "The simple future: Irregular futures",
+  "objetivo": "Lesson 27, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 27,
+    "titulo": "The simple future",
+    "objetivo": "Form the simple future of regular verbs (infinitive + endings) and of the ten most common irregular ones (tendré, haré, diré, podré, pondré, saldré, vendré, sabré, querré, habré), use it for plans, predictions, and promises, and recognize the time markers that go with it.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Irregular futures",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "tendré",
+            "translit": "[pronuncia] ten-DREH",
+            "pt": "I will have",
+            "en": "",
+            "audio": "tendré"
+          },
+          {
+            "ru": "haré",
+            "translit": "[pronuncia] ah-REH",
+            "pt": "I will do, I will make",
+            "en": "",
+            "audio": "haré"
+          },
+          {
+            "ru": "diré",
+            "translit": "[pronuncia] dee-REH",
+            "pt": "I will say, I will tell",
+            "en": "",
+            "audio": "diré"
+          },
+          {
+            "ru": "podré",
+            "translit": "[pronuncia] po-DREH",
+            "pt": "I will be able to",
+            "en": "",
+            "audio": "podré"
+          },
+          {
+            "ru": "saldré",
+            "translit": "[pronuncia] sal-DREH",
+            "pt": "I will leave",
+            "en": "",
+            "audio": "saldré"
+          },
+          {
+            "ru": "vendré",
+            "translit": "[pronuncia] ben-DREH",
+            "pt": "I will come",
+            "en": "",
+            "audio": "vendré"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Ten verbs that change the stem in the future",
+        "explicacao": "STEP 1: some common verbs don't use the whole infinitive. But the endings are the usual ones: -é, -ás, -á, -emos, -éis, -án. STEP 2: the first group drops the infinitive's vowel: «poder → podré», «saber → sabré», «querer → querré», «haber → habré». STEP 3: the second group swaps the vowel for a «d»: «tener → tendré», «venir → vendré», «poner → pondré», «salir → saldré». STEP 4: the third group is the most irregular, since it drops letters: «decir → diré», «hacer → haré». STEP 5: the verbs built from these follow the base verb: «contener → contendré», «mantener → mantendré», «deshacer → desharé». STEP 6: «haber» in the future shows up almost only as «habrá» (there will be), an impersonal form that's always singular: «Mañana habrá una fiesta», «Habrá muchas personas». STEP 7: the future gets used a lot with «querer» and «poder» in careful speech: «¿Podrás venir?», «No querrá hablar». STEP 8: every other verb is regular in the future, including the ones that are irregular in the present: «ir → iré», «ser → seré», «estar → estaré», «dar → daré», «ver → veré». Memorize the ten: tendré, haré, diré, podré, pondré, saldré, vendré, sabré, querré, habré.",
+        "comparacao": "English has nothing resembling a sound change here, since \"will\" never touches the verb at all — \"will have,\" \"will do,\" \"will come\" stay exactly as regular as any other verb after \"will.\" So these ten changed stems aren't a pattern you can borrow from English; they're ten forms to simply memorize as a set, the same way you'd memorize an irregular past tense, just in a different slot.",
+        "exemplos": [
+          {
+            "ru": "Mañana tendré una reunión importante.",
+            "pt": "Tomorrow I'll have an important meeting."
+          },
+          {
+            "ru": "El sábado saldremos con unos amigos.",
+            "pt": "On Saturday we'll go out with some friends."
+          },
+          {
+            "ru": "Te diré la verdad cuando vengas.",
+            "pt": "I'll tell you the truth when you get here."
+          },
+          {
+            "ru": "El viernes habrá una fiesta en el barrio.",
+            "pt": "On Friday there will be a party in the neighborhood."
+          }
+        ],
+        "tabelas": [
+          {
+            "titulo": "Ten irregular futures",
+            "linhas": [
+              {
+                "infinitivo": "[misto] tener",
+                "radical": "[misto] tendr-",
+                "yo": "[pronuncia] ten-DREH",
+                "exemplo": "[misto] Mañana tendré tiempo."
+              },
+              {
+                "infinitivo": "[misto] hacer",
+                "radical": "[misto] har-",
+                "yo": "[misto] haré",
+                "exemplo": "[misto] Haré la cena."
+              },
+              {
+                "infinitivo": "[misto] decir",
+                "radical": "[misto] dir-",
+                "yo": "[pronuncia] dee-REH",
+                "exemplo": "[misto] Te lo diré mañana."
+              },
+              {
+                "infinitivo": "[misto] poder",
+                "radical": "[misto] podr-",
+                "yo": "[pronuncia] po-DREH",
+                "exemplo": "[misto] No podré venir."
+              },
+              {
+                "infinitivo": "[misto] poner",
+                "radical": "[misto] pondr-",
+                "yo": "[misto] pondré",
+                "exemplo": "[misto] Pondré la mesa."
+              },
+              {
+                "infinitivo": "[misto] salir",
+                "radical": "[misto] saldr-",
+                "yo": "[pronuncia] sal-DREH",
+                "exemplo": "[misto] Saldré a las ocho."
+              },
+              {
+                "infinitivo": "[misto] venir",
+                "radical": "[misto] vendr-",
+                "yo": "[misto] vendré",
+                "exemplo": "[misto] Vendré con mi hermana."
+              },
+              {
+                "infinitivo": "[misto] saber",
+                "radical": "[misto] sabr-",
+                "yo": "[misto] sabré",
+                "exemplo": "[misto] Lo sabré mañana."
+              },
+              {
+                "infinitivo": "[misto] querer",
+                "radical": "[misto] querr-",
+                "yo": "[misto] querré",
+                "exemplo": "[misto] Querrá un café."
+              },
+              {
+                "infinitivo": "[misto] haber",
+                "radical": "[misto] habr-",
+                "yo": "[misto] habré",
+                "exemplo": "[misto] Habrá más gente."
+              }
+            ]
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] Mañana tenerá tiempo.",
+            "certo": "[misto] Mañana tendrá tiempo.",
+            "motivo": "The stem of «tener» in the future is «tendr-»."
+          },
+          {
+            "errado": "[misto] Haceré la cena.",
+            "certo": "[misto] Haré la cena.",
+            "motivo": "«Hacer» drops the «ce»: haré, harás…"
+          },
+          {
+            "errado": "[misto] Yo podré vendré mañana.",
+            "certo": "[misto] Yo vendré mañana.",
+            "motivo": "Use just one verb; «venir» in the future is «vendr-»."
+          },
+          {
+            "errado": "[misto] Saliré a las ocho.",
+            "certo": "[misto] Saldré a las ocho.",
+            "motivo": "The future of «salir» is «saldr-»."
+          }
+        ],
+        "tag": "Future"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Say what you will and won't do on your next vacation, using at least six of the ten irregulars: «Tendré… Saldré… Podré… No haré… Vendré… Diré…»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Conjugate «hablar» and «vivir» in the future, from «yo» to «ellos». Say one sentence with each."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-027.json",
+  "responsavel": null
+}

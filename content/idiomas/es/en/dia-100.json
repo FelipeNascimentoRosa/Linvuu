@@ -1,0 +1,523 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 100,
+  "fase": 10,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Two pronouns together (se lo): Review and practice of lesson 25",
+  "objetivo": "Lesson 25, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 25,
+    "titulo": "Two pronouns together (se lo)",
+    "objetivo": "Combine the indirect object pronoun with the direct object pronoun in the right order (me lo, te la, nos los), use «se lo, se la, se los, se las» instead of «le lo» and «les lo», write the accent correctly on the infinitive («dárselo», «decírtelo»), join the reflexive with a direct object («me la pongo»), and recognize words that differ between Spain and Latin America.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 25",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Te lo doy mañana",
+            "opcoes": [
+              "[misto] Te lo doy mañana",
+              "[misto] Me lo doy mañana",
+              "[misto] Se lo doy mañana"
+            ],
+            "gabarito": "[misto] Te lo doy mañana",
+            "explicacao": "«Te» is the person receiving it; «lo» is the thing given.",
+            "id": "es-025-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Se lo dije a Pablo",
+            "opcoes": [
+              "[misto] Se lo dije a Pablo",
+              "[misto] Se la dije a Pablo",
+              "[misto] Te lo dije a Pablo"
+            ],
+            "gabarito": "[misto] Se lo dije a Pablo",
+            "explicacao": "«Se» comes from «le»; «lo» stands for the thing said.",
+            "id": "es-025-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Me las trajo ayer",
+            "opcoes": [
+              "[misto] Me las trajo ayer",
+              "[misto] Me los trajo ayer",
+              "[misto] Nos las trajo ayer"
+            ],
+            "gabarito": "[misto] Me las trajo ayer",
+            "explicacao": "«Las» agrees with a feminine plural thing.",
+            "id": "es-025-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Se lo mandé ayer",
+            "respostaEsperada": "Se lo mandé ayer",
+            "explicacao": "Write: Se lo mandé ayer. The final «é» takes an accent.",
+            "id": "es-025-e04"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Sure, I'll lend it to you. But you'll give it back to me tonight, right?»",
+            "opcoes": [
+              "Pero",
+              "esta",
+              "me",
+              "lo",
+              "¿vale?",
+              "devuelves",
+              "noche,",
+              "Claro,",
+              "presto.",
+              "te",
+              "lo"
+            ],
+            "gabarito": "Claro, te lo presto. Pero me lo devuelves esta noche, ¿vale?",
+            "explicacao": "Write: Claro, te lo presto. Pero me lo devuelves esta noche, ¿vale?",
+            "id": "es-025-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Voy a dárselo mañana",
+            "respostaEsperada": "Voy a dárselo mañana",
+            "explicacao": "Write: Voy a dárselo mañana. Two pronouns attached to the infinitive require the accent on «dár».",
+            "id": "es-025-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "¿Me lo puedes explicar?",
+            "respostaEsperada": "¿Me lo puedes explicar?",
+            "explicacao": "Write: ¿Me lo puedes explicar? Both pronouns go before the conjugated verb.",
+            "id": "es-025-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the correct order for the pronouns?",
+            "opcoes": [
+              "[misto] Me lo da.",
+              "[misto] Lo me da.",
+              "[misto] Me da lo."
+            ],
+            "gabarito": "[misto] Me lo da.",
+            "explicacao": "The person pronoun comes before the thing pronoun.",
+            "id": "es-025-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I gave it to him»?",
+            "opcoes": [
+              "[misto] Se lo di.",
+              "[misto] Le lo di.",
+              "[misto] Lo le di."
+            ],
+            "gabarito": "[misto] Se lo di.",
+            "explicacao": "«Le lo» becomes «se lo».",
+            "id": "es-025-e08"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Claro, te lo presto. Pero me lo devuelves esta noche, ¿vale?",
+            "respostaEsperada": "Claro, te lo presto. Pero me lo devuelves esta noche, ¿vale?",
+            "explicacao": "Sure, I'll lend it to you. But you'll give it back to me tonight, right?",
+            "id": "es-025-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Daniel, ¿me prestas tu cargador? El mío está roto.",
+            "respostaEsperada": "Daniel, ¿me prestas tu cargador? El mío está roto.",
+            "explicacao": "Daniel, will you lend me your charger? Mine is broken.",
+            "id": "es-025-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "In «Se las di», what is «las»?",
+            "opcoes": [
+              "[misto] The things given, feminine plural",
+              "[misto] The people who received them",
+              "[misto] A reflexive pronoun"
+            ],
+            "gabarito": "[misto] The things given, feminine plural",
+            "explicacao": "«Las» agrees with the thing, and «se» is the indirect part.",
+            "id": "es-025-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you write «dar + se + lo» in the infinitive?",
+            "opcoes": [
+              "[misto] dárselo",
+              "[misto] darselo",
+              "[misto] darsélo"
+            ],
+            "gabarito": "[misto] dárselo",
+            "explicacao": "With two pronouns, the written accent is required.",
+            "id": "es-025-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Where do the two pronouns go in the perfecto?",
+            "opcoes": [
+              "[misto] Before «he»: Se lo he dicho.",
+              "[misto] After the participle: He dicho selo.",
+              "[misto] Between «he» and «dicho»: He se lo dicho."
+            ],
+            "gabarito": "[misto] Before «he»: Se lo he dicho.",
+            "explicacao": "The pronouns come before «haber».",
+            "id": "es-025-e11"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «You gave them to Pablo? Why did you give them to him?»",
+            "opcoes": [
+              "se",
+              "las",
+              "¿Por",
+              "¿Se",
+              "las",
+              "a",
+              "diste?",
+              "Pablo?",
+              "qué",
+              "diste"
+            ],
+            "gabarito": "¿Se las diste a Pablo? ¿Por qué se las diste?",
+            "explicacao": "Write: ¿Se las diste a Pablo? ¿Por qué se las diste?",
+            "id": "es-025-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «dirección» mean?",
+            "opcoes": [
+              "[misto] address",
+              "[misto] board of directors",
+              "[misto] route"
+            ],
+            "gabarito": "[misto] address",
+            "explicacao": "«Dirección» means address (and also direction).",
+            "id": "es-025-e12"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «cell phone» in Spain?",
+            "opcoes": [
+              "[misto] el móvil",
+              "[misto] el celular",
+              "[misto] el portátil"
+            ],
+            "gabarito": "[misto] el móvil",
+            "explicacao": "In Latin America you say «el celular».",
+            "id": "es-025-e13"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "¿Me prestas el cargador? — Sí, ___ presto.",
+            "opcoes": [
+              "[misto] te lo",
+              "[misto] se lo",
+              "[misto] me lo"
+            ],
+            "gabarito": "[misto] te lo",
+            "explicacao": "«Te» is the person receiving it and «lo» is the charger.",
+            "id": "es-025-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "¿Les diste las llaves a tus padres? — Sí, ___ di.",
+            "opcoes": [
+              "[misto] se las",
+              "[misto] les las",
+              "[misto] las les"
+            ],
+            "gabarito": "[misto] se las",
+            "explicacao": "«Les las» becomes «se las».",
+            "id": "es-025-e15"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Se las di ayer a Pablo. Él las tiene.",
+            "respostaEsperada": "Se las di ayer a Pablo. Él las tiene.",
+            "explicacao": "I gave them to Pablo yesterday. He has them.",
+            "id": "es-025-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "¿Se las diste a Pablo? ¿Por qué se las diste?",
+            "respostaEsperada": "¿Se las diste a Pablo? ¿Por qué se las diste?",
+            "explicacao": "You gave them to Pablo? Why did you give them to him?",
+            "id": "es-025-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "¿Le escribiste la carta a Ana? — Sí, ___ escribí.",
+            "opcoes": [
+              "[misto] se la",
+              "[misto] le la",
+              "[misto] la le"
+            ],
+            "gabarito": "[misto] se la",
+            "explicacao": "«Le la» becomes «se la».",
+            "id": "es-025-e16"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Voy a ___ a Pablo. (dar + el regalo)",
+            "opcoes": [
+              "[misto] dárselo",
+              "[misto] darle lo",
+              "[misto] dárlelo"
+            ],
+            "gabarito": "[misto] dárselo",
+            "explicacao": "Two pronouns attached to the infinitive: «dárselo».",
+            "id": "es-025-e17"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ya ___ dije a mis padres. (la noticia)",
+            "opcoes": [
+              "[misto] se la",
+              "[misto] les la",
+              "[misto] la les"
+            ],
+            "gabarito": "[misto] se la",
+            "explicacao": "«Se» replaces «les» and «la» replaces «la noticia».",
+            "id": "es-025-e18"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Te lo doy mañana.»",
+            "opcoes": [
+              "Te",
+              "lo",
+              "doy",
+              "mañana."
+            ],
+            "gabarito": "Te lo doy mañana.",
+            "explicacao": "Person pronoun, thing pronoun, verb.",
+            "id": "es-025-e19"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «It's better if you send him a message. If you want, I'll give you his number.»",
+            "opcoes": [
+              "un",
+              "su",
+              "doy",
+              "mensaje.",
+              "Si",
+              "te",
+              "mandas",
+              "le",
+              "número.",
+              "Mejor",
+              "quieres,"
+            ],
+            "gabarito": "Mejor le mandas un mensaje. Si quieres, te doy su número.",
+            "explicacao": "Write: Mejor le mandas un mensaje. Si quieres, te doy su número.",
+            "id": "es-025-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Se las di ayer.»",
+            "opcoes": [
+              "Se",
+              "las",
+              "di",
+              "ayer."
+            ],
+            "gabarito": "Se las di ayer.",
+            "explicacao": "«Se las» before the verb.",
+            "id": "es-025-e20"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I gave it to him yesterday.",
+            "respostaEsperada": "[misto] Se lo di ayer.",
+            "id": "es-025-e21"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "¿Le mandas el correo a Ana? — Sí, ___ mando.",
+            "opcoes": [
+              "[misto] le lo",
+              "[misto] se lo",
+              "[misto] se la"
+            ],
+            "gabarito": "[misto] se lo",
+            "explicacao": "«Le lo» becomes «se lo»; «correo» is masculine.",
+            "id": "es-025-e22"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "¿Me prestas el móvil? — Sí, ___ presto.",
+            "opcoes": [
+              "[misto] me lo",
+              "[misto] se lo",
+              "[misto] te lo"
+            ],
+            "gabarito": "[misto] te lo",
+            "explicacao": "The indirect «te» comes first, then the direct «lo».",
+            "id": "es-025-e23"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Mejor le mandas un mensaje. Si quieres, te doy su número.",
+            "respostaEsperada": "Mejor le mandas un mensaje. Si quieres, te doy su número.",
+            "explicacao": "It's better if you send him a message. If you want, I'll give you his number.",
+            "id": "es-025-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Vale. Entonces se lo pido yo esta noche.",
+            "respostaEsperada": "Vale. Entonces se lo pido yo esta noche.",
+            "explicacao": "Okay. Then I'll ask him for it tonight.",
+            "id": "es-025-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Me pongo la chaqueta. → ___ pongo.",
+            "opcoes": [
+              "[misto] Me lo",
+              "[misto] Se la",
+              "[misto] Me la"
+            ],
+            "gabarito": "[misto] Me la",
+            "explicacao": "The reflexive «me» comes before the direct «la».",
+            "id": "es-025-e24"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Les mando las entradas. → ___ mando.",
+            "opcoes": [
+              "[misto] Se las",
+              "[misto] Les las",
+              "[misto] Se los"
+            ],
+            "gabarito": "[misto] Se las",
+            "explicacao": "«Les las» becomes «se las»; «entradas» is feminine plural.",
+            "id": "es-025-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I'm going to tell it to you»?",
+            "opcoes": [
+              "[misto] Voy a te lo decir.",
+              "[misto] Voy a decirtelo.",
+              "[misto] Voy a decírtelo."
+            ],
+            "gabarito": "[misto] Voy a decírtelo.",
+            "explicacao": "With two pronouns attached to the infinitive, the accent is added.",
+            "id": "es-025-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Yes, give it to me later. And thanks for the charger.»",
+            "opcoes": [
+              "Sí,",
+              "me",
+              "lo",
+              "Y",
+              "cargador.",
+              "gracias",
+              "luego.",
+              "por",
+              "das",
+              "el"
+            ],
+            "gabarito": "Sí, me lo das luego. Y gracias por el cargador.",
+            "explicacao": "Write: Sí, me lo das luego. Y gracias por el cargador.",
+            "id": "es-025-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which word does Latin America use for «computer»?",
+            "opcoes": [
+              "[misto] la computadora",
+              "[misto] el ordenador",
+              "[misto] el móvil"
+            ],
+            "gabarito": "[misto] la computadora",
+            "explicacao": "In Spain you say «ordenador».",
+            "id": "es-025-e27"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «contraseña» mean?",
+            "opcoes": [
+              "[misto] password",
+              "[misto] address",
+              "[misto] receipt"
+            ],
+            "gabarito": "[misto] password",
+            "explicacao": "«Contraseña» is the password.",
+            "id": "es-025-e28"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Te lo devuelvo antes de cenar.»",
+            "opcoes": [
+              "Te",
+              "lo",
+              "devuelvo",
+              "antes",
+              "de",
+              "cenar."
+            ],
+            "gabarito": "Te lo devuelvo antes de cenar.",
+            "explicacao": "The indirect «te» comes before the direct «lo».",
+            "id": "es-025-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I gave them to them yesterday. (the keys, with two pronouns)",
+            "respostaEsperada": "[misto] Se las di ayer.",
+            "id": "es-025-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Tell out loud a story about friends trading favors, with at least six sentences and two pronouns in each, like «Me lo prestó», «Se lo devolví», «Te la mando»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Answer out loud with two pronouns: «¿Me prestas el móvil?», «¿Le mandaste el correo a Marta?», «¿Les diste las llaves a tus padres?»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-025.json",
+  "responsavel": null
+}

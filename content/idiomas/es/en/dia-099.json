@@ -1,0 +1,192 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 99,
+  "fase": 10,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Two pronouns together (se lo): Reflexives, requests and vocabulary that changes",
+  "objetivo": "Lesson 25, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 25,
+    "titulo": "Two pronouns together (se lo)",
+    "objetivo": "Combine the indirect object pronoun with the direct object pronoun in the right order (me lo, te la, nos los), use «se lo, se la, se los, se las» instead of «le lo» and «les lo», write the accent correctly on the infinitive («dárselo», «decírtelo»), join the reflexive with a direct object («me la pongo»), and recognize words that differ between Spain and Latin America.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Reflexives, requests and vocabulary that changes",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "el celular",
+            "translit": "[pronuncia] el seh-loo-LAR",
+            "pt": "the cell phone (Latin America)",
+            "en": "",
+            "audio": "el celular"
+          },
+          {
+            "ru": "la computadora",
+            "translit": "[pronuncia] la kom-poo-tah-DOH-ra",
+            "pt": "the computer (Latin America)",
+            "en": "",
+            "audio": "la computadora"
+          },
+          {
+            "ru": "el boleto",
+            "translit": "[pronuncia] el bo-LEH-to",
+            "pt": "the ticket (many Latin American countries)",
+            "en": "",
+            "audio": "el boleto"
+          },
+          {
+            "ru": "el pasaje",
+            "translit": "[pronuncia] el pah-SAH-heh",
+            "pt": "the ticket, the fare (many Latin American countries)",
+            "en": "",
+            "audio": "el pasaje"
+          },
+          {
+            "ru": "el carro",
+            "translit": "[pronuncia] el KAH-rro",
+            "pt": "the car (Latin America)",
+            "en": "",
+            "audio": "el carro"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Reflexive + direct object, and vocabulary from Spain and Latin America",
+        "explicacao": "STEP 1: the reflexive verbs from lesson 14 can also take a direct object: «Me pongo la chaqueta», «Me lavo las manos». When the direct object becomes a pronoun, the reflexive comes first: «Me la pongo», «Me las lavo». STEP 2: with the third person, the reflexive «se» comes before «lo»: «Se puso el abrigo» becomes «Se lo puso». STEP 3: asking for something with two pronouns feels natural: «¿Me lo puedes explicar?», «¿Puedes explicármelo?». STEP 4: vocabulary differs between Spain and Latin America. «Móvil», «ordenador», «coche», and «billete» (Spain) correspond to «celular», «computadora», «carro», and «boleto» or «pasaje» (many Latin American countries). Both are understood everywhere; hearing the other one shouldn't come as a surprise. STEP 5: use the variant from your target region and stay consistent. In this course, the audio is from Spain, and the Latin American words are given as a note.",
+        "comparacao": "English also lets a reflexive and a direct object show up together (\"he put on his coat\" → \"he put it on\"), and the pronoun order mirrors Spanish's: the thing-pronoun slots in where the noun was. What's new isn't the order so much as the habit — Spanish keeps doing this constantly in everyday speech («se lo puso»), where English just as often skips the pronoun and repeats the noun or rephrases instead.",
+        "tabela": [
+          {
+            "frase": "[misto] Me pongo la chaqueta.",
+            "com_pronome": "[misto] Me la pongo."
+          },
+          {
+            "frase": "[misto] Me lavo las manos.",
+            "com_pronome": "[misto] Me las lavo."
+          },
+          {
+            "frase": "[misto] Se puso el abrigo.",
+            "com_pronome": "[misto] Se lo puso."
+          },
+          {
+            "frase": "[misto] Me voy a poner el abrigo.",
+            "com_pronome": "[misto] Me lo voy a poner. / Voy a ponérmelo."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] Me lavo-las.",
+            "certo": "[misto] Me las lavo.",
+            "motivo": "The pronoun comes before the verb, with no hyphen."
+          },
+          {
+            "errado": "[misto] Voy a ponermelo.",
+            "certo": "[misto] Voy a ponérmelo.",
+            "motivo": "With two pronouns attached to the infinitive, the accent is required."
+          },
+          {
+            "errado": "[misto] Se pone-lo.",
+            "certo": "[misto] Se lo pone.",
+            "motivo": "The reflexive comes first, then the direct object."
+          }
+        ],
+        "tag": "Pronouns"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "Prestar y devolver / Lending and returning",
+        "contexto": "Valeria and Daniel live together and talk about a charger and the car keys.",
+        "linhas": [
+          {
+            "personagem": "Valeria",
+            "ru": "— Daniel, ¿me prestas tu cargador? El mío está roto.",
+            "pt": "— Daniel, will you lend me your charger? Mine is broken.",
+            "audio": "Daniel, ¿me prestas tu cargador? El mío está roto.",
+            "rotulo": "[personagem] Valeria"
+          },
+          {
+            "personagem": "Daniel",
+            "ru": "— Claro, te lo presto. Pero me lo devuelves esta noche, ¿vale?",
+            "pt": "— Sure, I'll lend it to you. But you'll give it back to me tonight, right?",
+            "audio": "Claro, te lo presto. Pero me lo devuelves esta noche, ¿vale?",
+            "rotulo": "[personagem] Daniel"
+          },
+          {
+            "personagem": "Valeria",
+            "ru": "— Te lo devuelvo antes de cenar. ¿Y tienes las llaves del coche?",
+            "pt": "— I'll give it back before dinner. And do you have the car keys?",
+            "audio": "Te lo devuelvo antes de cenar. ¿Y tienes las llaves del coche?",
+            "rotulo": "[personagem] Valeria"
+          },
+          {
+            "personagem": "Daniel",
+            "ru": "— Se las di ayer a Pablo. Él las tiene.",
+            "pt": "— I gave them to Pablo yesterday. He has them.",
+            "audio": "Se las di ayer a Pablo. Él las tiene.",
+            "rotulo": "[personagem] Daniel"
+          },
+          {
+            "personagem": "Valeria",
+            "ru": "— ¿Se las diste a Pablo? ¿Por qué se las diste?",
+            "pt": "— You gave them to Pablo? Why did you give them to him?",
+            "audio": "¿Se las diste a Pablo? ¿Por qué se las diste?",
+            "rotulo": "[personagem] Valeria"
+          },
+          {
+            "personagem": "Daniel",
+            "ru": "— Porque necesitaba el coche para llevar a su madre al médico. Me lo pidió por la mañana.",
+            "pt": "— Because he needed the car to take his mom to the doctor. He asked this morning.",
+            "audio": "Porque necesitaba el coche para llevar a su madre al médico. Me lo pidió por la mañana.",
+            "rotulo": "[personagem] Daniel"
+          },
+          {
+            "personagem": "Valeria",
+            "ru": "— Vale. Entonces se lo pido yo esta noche.",
+            "pt": "— Okay. Then I'll ask him for it tonight.",
+            "audio": "Vale. Entonces se lo pido yo esta noche.",
+            "rotulo": "[personagem] Valeria"
+          },
+          {
+            "personagem": "Daniel",
+            "ru": "— Mejor le mandas un mensaje. Si quieres, te doy su número.",
+            "pt": "— It's better if you send him a message. If you want, I'll give you his number.",
+            "audio": "Mejor le mandas un mensaje. Si quieres, te doy su número.",
+            "rotulo": "[personagem] Daniel"
+          },
+          {
+            "personagem": "Valeria",
+            "ru": "— Sí, me lo das luego. Y gracias por el cargador.",
+            "pt": "— Yes, give it to me later. And thanks for the charger.",
+            "audio": "Sí, me lo das luego. Y gracias por el cargador.",
+            "rotulo": "[personagem] Valeria"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Write out, and say out loud, five sentences with two pronouns: what you lend, what you ask for, and what you've already said, for example «Se lo pedí a mi hermano» and «Me lo mandó ayer»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Turn into pronouns: «Doy la contraseña a Marta», «Mando las fotos a mis padres», «Voy a explicar la regla a Pablo»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-025.json",
+  "responsavel": null
+}

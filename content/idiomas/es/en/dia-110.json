@@ -1,0 +1,219 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 110,
+  "fase": 11,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "The imperative: Negative imperative and vosotros",
+  "objetivo": "Lesson 28, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 28,
+    "titulo": "The imperative",
+    "objetivo": "Give instructions, ask for things, and invite people with the affirmative imperative of «tú», «usted», «vosotros», and «ustedes», learn the eight irregular «tú» forms (ven, di, haz, ve, pon, sal, sé, ten), form the negative imperative with «no» + subjunctive, and place pronouns correctly.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Negative imperative and vosotros",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "no hables",
+            "translit": "",
+            "pt": "don't speak",
+            "en": "",
+            "audio": "no hables"
+          },
+          {
+            "ru": "no comas",
+            "translit": "",
+            "pt": "don't eat",
+            "en": "",
+            "audio": "no comas"
+          },
+          {
+            "ru": "no vayas",
+            "translit": "",
+            "pt": "don't go",
+            "en": "",
+            "audio": "no vayas"
+          },
+          {
+            "ru": "no digas",
+            "translit": "",
+            "pt": "don't say",
+            "en": "",
+            "audio": "no digas"
+          },
+          {
+            "ru": "despacio",
+            "translit": "[pronuncia] des-PAH-thyo",
+            "pt": "slowly",
+            "en": "",
+            "audio": "despacio"
+          },
+          {
+            "ru": "cuidado",
+            "translit": "[pronuncia] kwee-DAH-do",
+            "pt": "careful",
+            "en": "",
+            "audio": "cuidado"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "The negative imperative: «no» + subjunctive",
+        "explicacao": "STEP 1: to negate a command, the «tú» form changes: you don't use the affirmative imperative. You write «no» + the present subjunctive form: «no hables», «no comas», «no escribas». STEP 2: how it's formed: -ar verbs swap «-as» for «-es», and -er and -ir verbs swap «-es» for «-as». Start from the «tú» present form: hablas → hables; comes → comas; escribes → escribas. This is new ground for an English speaker: English's negative imperative is just \"don't\" + the exact same bare infinitive you'd use affirmatively — \"don't talk,\" \"don't eat\" — with no vowel swap and no subjunctive at all. STEP 3: with «usted» and «ustedes», the negative form is the same as the affirmative, with «no» in front: «no hable», «no coma», «no hablen». STEP 4: with «vosotros» (Spain), the affirmative is formed by swapping the infinitive's final «-r» for «-d»: «hablad», «comed», «escribid». The negative is «no» + subjunctive: «no habléis», «no comáis», «no escribáis». STEP 5: «ir» is the only exception to the «vosotros» affirmative: «id». STEP 6: in reflexive verbs, «vosotros» drops the «-d» before «-os»: «sentaos», «levantaos». STEP 7: the «tú» negative irregulars follow the «yo» present: «no digas», «no hagas», «no vayas», «no pongas», «no salgas», «no seas», «no tengas», «no vengas». STEP 8: in the negative, pronouns go before the verb, as separate words: «no me llames», «no te levantes», «no lo hagas». In the affirmative, they go after and attach: «llámame», «levántate», «hazlo».",
+        "comparacao": "English pronoun position never flips between affirmative and negative — \"call me\" and \"don't call me\" both keep the pronoun as its own word right after the verb. Spanish's switch — attached after the verb in the affirmative («llámame»), a separate word before the verb in the negative («no me llames») — is a genuinely new rule to track, on top of the subjunctive switch itself.",
+        "exemplos": [
+          {
+            "ru": "No hables tan rápido, por favor.",
+            "pt": "Don't talk so fast, please."
+          },
+          {
+            "ru": "No me llames después de las diez.",
+            "pt": "Don't call me after ten."
+          },
+          {
+            "ru": "No vayas solo por esa calle.",
+            "pt": "Don't go alone down that street."
+          },
+          {
+            "ru": "Venid pronto y no lleguéis tarde.",
+            "pt": "Come soon and don't arrive late. (Spain)"
+          }
+        ],
+        "tabelas": [
+          {
+            "titulo": "Regular negative",
+            "linhas": [
+              {
+                "verbo": "[misto] hablar",
+                "tu": "[misto] no hables",
+                "usted": "[misto] no hable",
+                "vosotros": "[misto] no habléis"
+              },
+              {
+                "verbo": "[misto] comer",
+                "tu": "[misto] no comas",
+                "usted": "[misto] no coma",
+                "vosotros": "[misto] no comáis"
+              },
+              {
+                "verbo": "[misto] escribir",
+                "tu": "[misto] no escribas",
+                "usted": "[misto] no escriba",
+                "vosotros": "[misto] no escribáis"
+              },
+              {
+                "verbo": "[misto] ir",
+                "tu": "[misto] no vayas",
+                "usted": "[misto] no vaya",
+                "vosotros": "[misto] no vayáis"
+              }
+            ]
+          },
+          {
+            "titulo": "Affirmative and negative tú, side by side",
+            "linhas": [
+              {
+                "verbo": "[misto] hacer",
+                "afirmativo": "[misto] haz",
+                "negativo": "[misto] no hagas"
+              },
+              {
+                "verbo": "[misto] decir",
+                "afirmativo": "[misto] di",
+                "negativo": "[misto] no digas"
+              },
+              {
+                "verbo": "[misto] poner",
+                "afirmativo": "[misto] pon",
+                "negativo": "[misto] no pongas"
+              },
+              {
+                "verbo": "[misto] ser",
+                "afirmativo": "[misto] sé",
+                "negativo": "[misto] no seas"
+              },
+              {
+                "verbo": "[misto] tener",
+                "afirmativo": "[misto] ten",
+                "negativo": "[misto] no tengas"
+              }
+            ]
+          },
+          {
+            "titulo": "Affirmative vosotros (Spain)",
+            "linhas": [
+              {
+                "infinitivo": "[misto] hablar",
+                "vosotros": "[misto] hablad",
+                "observacao": "[misto] drop the -r and add -d"
+              },
+              {
+                "infinitivo": "[misto] comer",
+                "vosotros": "[misto] comed",
+                "observacao": "[misto] drop the -r and add -d"
+              },
+              {
+                "infinitivo": "[misto] escribir",
+                "vosotros": "[misto] escribid",
+                "observacao": "[misto] drop the -r and add -d"
+              },
+              {
+                "infinitivo": "[misto] sentarse",
+                "vosotros": "[misto] sentaos",
+                "observacao": "[misto] reflexive, without the -d"
+              }
+            ]
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] No habla tan rápido. (order to a friend)",
+            "certo": "[misto] No hables tan rápido.",
+            "motivo": "In a negative order to «tú», use the subjunctive, not the affirmative form."
+          },
+          {
+            "errado": "[misto] No dices eso.",
+            "certo": "[misto] No digas eso.",
+            "motivo": "Negative order: «no» + subjunctive."
+          },
+          {
+            "errado": "[misto] Te levanta ahora.",
+            "certo": "[misto] Levántate ahora.",
+            "motivo": "In the affirmative, the pronoun comes after the verb and attaches to it."
+          },
+          {
+            "errado": "[misto] Me llama más tarde. (as a command)",
+            "certo": "[misto] Llámame más tarde.",
+            "motivo": "In the affirmative, the pronoun goes after and attaches: «llámame»."
+          }
+        ],
+        "tag": "The imperative"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Give a houseguest four affirmative and four negative orders, out loud: «Pasa… No toques… Siéntate… No hables…» Then repeat three of them with «usted»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say the eight irregular «tú» imperatives without looking: ven, di, haz, ve, pon, sal, sé, ten. Make a sentence with each of the first four."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-028.json",
+  "responsavel": null
+}

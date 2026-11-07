@@ -1,0 +1,199 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 91,
+  "fase": 10,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Direct object pronouns: Pronouns with the infinitive and the perfecto, and the lost object",
+  "objetivo": "Lesson 23, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 23,
+    "titulo": "Direct object pronouns",
+    "objetivo": "Use direct object pronouns (me, te, lo, la, nos, os, los, las) to avoid repeating the object, place them before the verb or attached to the infinitive, use the neuter «lo» («lo sé», «lo siento»), and avoid dropping the pronoun, since Spanish never lets you leave it out the way casual spoken Portuguese sometimes does.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Pronouns with the infinitive and the perfecto, and the lost object",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "dejar",
+            "translit": "[pronuncia] deh-HAR",
+            "pt": "to leave (behind)",
+            "en": "",
+            "audio": "dejar"
+          },
+          {
+            "ru": "guardar",
+            "translit": "[pronuncia] gwar-DAR",
+            "pt": "to keep, to put away",
+            "en": "",
+            "audio": "guardar"
+          },
+          {
+            "ru": "roto, rota",
+            "translit": "[pronuncia] RO-to",
+            "pt": "broken, torn",
+            "en": "",
+            "audio": "roto, rota"
+          },
+          {
+            "ru": "el asiento",
+            "translit": "[pronuncia] el ah-SYEN-to",
+            "pt": "the seat",
+            "en": "",
+            "audio": "el asiento"
+          },
+          {
+            "ru": "la caja",
+            "translit": "[pronuncia] la KAH-hah",
+            "pt": "the box",
+            "en": "",
+            "audio": "la caja"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Pronoun position and false friends",
+        "explicacao": "STEP 1: with «ir a + infinitive», «querer + infinitive», «poder + infinitive», there are two positions: «Voy a comprarlo» or «Lo voy a comprar»; «Puedo verla» or «La puedo ver». STEP 2: picking one position over the other is just a matter of style; both are correct. What you never do is put the pronoun in the middle: «Voy lo a comprar». STEP 3: with the pretérito perfecto, the pronoun never attaches to the participle: «Lo he visto», never «He visto-lo». STEP 4: for emphasis, the object gets repeated at the start of the sentence: «A Ana la vi ayer» (Ana, I saw her yesterday) and «Ese libro lo compré en Madrid» (that book, I bought it in Madrid). This is completely natural in both speech and writing. STEP 5: useful false friends for this lesson. «Cola» means a line of people (at a bank or a checkout): «Vi a Marta en la cola». It's also the word for glue and for an animal's tail. In several Latin American countries, like Mexico, «fila» is more common for a line of people; both are understood everywhere. «Oficina» means «office», not an auto repair shop (which is «taller»). «Pegar» means to hit or to glue, not «to catch» — for catching the bus, use «tomar».",
+        "comparacao": "English keeps its object pronoun fixed after the verb no matter what else is going on in the sentence, so the idea that Spanish gives you two equally correct spots — before the whole verb phrase, or stuck onto the infinitive — is new territory, not a choice English makes you face. What never changes, in either language, is that the pronoun can't float in the middle of a verb phrase: English would never say «I'm going it to buy» any more than Spanish allows «Voy lo a comprar», so that instinct does transfer directly.",
+        "tabela": [
+          {
+            "frase": "[misto] Quiero comprarlo.",
+            "posicao": "[misto] attached to the infinitive"
+          },
+          {
+            "frase": "[misto] Lo quiero comprar.",
+            "posicao": "[misto] before the conjugated verb"
+          },
+          {
+            "frase": "[misto] Lo he comprado.",
+            "posicao": "[misto] before «haber»"
+          },
+          {
+            "frase": "[misto] No lo he comprado.",
+            "posicao": "[misto] «no» + pronoun + verb"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] Voy lo a comprar.",
+            "certo": "[misto] Voy a comprarlo. / Lo voy a comprar.",
+            "motivo": "The pronoun never sits in the middle of the verb group."
+          },
+          {
+            "errado": "[misto] He visto-lo.",
+            "certo": "[misto] Lo he visto.",
+            "motivo": "With the perfecto, the pronoun goes before «haber»."
+          },
+          {
+            "errado": "[misto] Trabajo en una oficina mecánica.",
+            "certo": "[misto] Trabajo en un taller mecánico.",
+            "motivo": "«Oficina» means office; an auto repair shop is «taller»."
+          }
+        ],
+        "tag": "Pronouns"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "Objetos perdidos / Lost and found",
+        "contexto": "A customer looks for lost items at a station counter.",
+        "linhas": [
+          {
+            "personagem": "El cliente",
+            "ru": "— Buenos días. Perdí mi paraguas ayer en el tren. ¿Lo tienen aquí?",
+            "pt": "— Good morning. I lost my umbrella yesterday on the train. Do you have it here?",
+            "audio": "Buenos días. Perdí mi paraguas ayer en el tren. ¿Lo tienen aquí?",
+            "rotulo": "[personagem] El cliente"
+          },
+          {
+            "personagem": "La empleada",
+            "ru": "— ¿Cómo es? ¿Es grande?",
+            "pt": "— What does it look like? Is it big?",
+            "audio": "¿Cómo es? ¿Es grande?",
+            "rotulo": "[personagem] La empleada"
+          },
+          {
+            "personagem": "El cliente",
+            "ru": "— Es negro y bastante grande. Lo dejé en el asiento.",
+            "pt": "— It's black and fairly big. I left it on the seat.",
+            "audio": "Es negro y bastante grande. Lo dejé en el asiento.",
+            "rotulo": "[personagem] El cliente"
+          },
+          {
+            "personagem": "La empleada",
+            "ru": "— Un momento, por favor. Aquí hay uno negro, pero está roto. ¿Es este?",
+            "pt": "— One moment, please. There's a black one here, but it's broken. Is this it?",
+            "audio": "Un momento, por favor. Aquí hay uno negro, pero está roto. ¿Es este?",
+            "rotulo": "[personagem] La empleada"
+          },
+          {
+            "personagem": "El cliente",
+            "ru": "— No, el mío no está roto. También perdí unas gafas. ¿Las ha visto?",
+            "pt": "— No, mine isn't broken. I also lost some glasses. Have you seen them?",
+            "audio": "No, el mío no está roto. También perdí unas gafas. ¿Las ha visto?",
+            "rotulo": "[personagem] El cliente"
+          },
+          {
+            "personagem": "La empleada",
+            "ru": "— Sí, las encontró un revisor esta mañana. Las guardamos en esa caja.",
+            "pt": "— Yes, an inspector found them this morning. We put them away in that box.",
+            "audio": "Sí, las encontró un revisor esta mañana. Las guardamos en esa caja.",
+            "rotulo": "[personagem] La empleada"
+          },
+          {
+            "personagem": "El cliente",
+            "ru": "— Son rojas y tienen el cristal izquierdo un poco rayado.",
+            "pt": "— They're red and the left lens is a bit scratched.",
+            "audio": "Son rojas y tienen el cristal izquierdo un poco rayado.",
+            "rotulo": "[personagem] El cliente"
+          },
+          {
+            "personagem": "La empleada",
+            "ru": "— Aquí están. ¿Las reconoce?",
+            "pt": "— Here they are. Do you recognize them?",
+            "audio": "Aquí están. ¿Las reconoce?",
+            "rotulo": "[personagem] La empleada"
+          },
+          {
+            "personagem": "El cliente",
+            "ru": "— Sí, son mías. Muchas gracias. ¿Y el paraguas?",
+            "pt": "— Yes, they're mine. Thank you very much. And the umbrella?",
+            "audio": "Sí, son mías. Muchas gracias. ¿Y el paraguas?",
+            "rotulo": "[personagem] El cliente"
+          },
+          {
+            "personagem": "La empleada",
+            "ru": "— Si aparece, lo guardamos y lo llamamos por teléfono.",
+            "pt": "— If it turns up, we'll keep it and call you.",
+            "audio": "Si aparece, lo guardamos y lo llamamos por teléfono.",
+            "rotulo": "[personagem] La empleada"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Imagine you've lost something. Explain out loud, in five sentences, what you lost, where you left it, and what it looks like. Use «lo» or «la» at least twice."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Replace the object with a pronoun and say it both ways: «Quiero ver la película» and «Voy a comprar los billetes»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-023.json",
+  "responsavel": null
+}

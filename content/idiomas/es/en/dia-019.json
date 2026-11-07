@@ -1,0 +1,224 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 19,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Articles, gender and plural, hay: Hay: what there is in a place",
+  "objetivo": "Lesson 5, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 5,
+    "titulo": "Articles, gender and plural, hay",
+    "objetivo": "Use «el, la, los, las, un, una, unos, unas», recognize noun gender (including nouns whose gender differs from English logic), form the plural, make the adjective agree, and say what's in a place with «hay».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Hay: what there is in a place",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "hay",
+            "translit": "[pronuncia] eye",
+            "pt": "there is, there are",
+            "en": "",
+            "audio": "hay"
+          },
+          {
+            "ru": "no hay",
+            "translit": "[pronuncia] no eye",
+            "pt": "there isn't, there aren't",
+            "en": "",
+            "audio": "no hay"
+          },
+          {
+            "ru": "¿Hay…?",
+            "translit": "[pronuncia] eye",
+            "pt": "is there…? are there…?",
+            "en": "",
+            "audio": "¿Hay…?"
+          },
+          {
+            "ru": "el parque",
+            "translit": "[pronuncia] el PAR-keh",
+            "pt": "the park",
+            "en": "",
+            "audio": "el parque"
+          },
+          {
+            "ru": "la plaza",
+            "translit": "[pronuncia] la PLAH-thah",
+            "pt": "the square",
+            "en": "",
+            "audio": "la plaza"
+          },
+          {
+            "ru": "la tienda",
+            "translit": "[pronuncia] la tee-EN-dah",
+            "pt": "the shop",
+            "en": "",
+            "audio": "la tienda"
+          },
+          {
+            "ru": "el banco",
+            "translit": "[pronuncia] el BAHN-ko",
+            "pt": "the bank",
+            "en": "",
+            "audio": "el banco"
+          },
+          {
+            "ru": "la oficina",
+            "translit": "[pronuncia] la o-fee-THEE-nah",
+            "pt": "the office (not «oficina» for cars — that's a repair shop)",
+            "en": "",
+            "audio": "la oficina"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Hay: there is, there are",
+        "explicacao": "STEP 1: «hay» says that something exists or is present somewhere. It covers English «there is» and «there are»: «Hay un parque», «Hay dos bancos». STEP 2: «hay» never changes — it works for singular and plural alike. There's never a form like «hayn». «Hay un libro» and «Hay tres libros» both use the same word. STEP 3: after «hay», the thing takes an indefinite article, a number, «mucho/poco», or no article at all: «Hay unas tiendas», «Hay mucha gente». Don't put «el, la, los, las» right after «hay». STEP 4: to negate, use «no hay»: «No hay problema.» To ask, «¿Hay un banco aquí?», and the short answer is «Sí, hay» or «No, no hay». STEP 5: for something specific and already known, the verb is «estar» (lesson 10): «El banco está en la plaza.» STEP 6: «hay que + infinitive» means «it's necessary to…»: «Hay que estudiar». STEP 7: false friend alert: «oficina» means an office where people work, not a car repair shop (which is «taller»). STEP 8: pronounce «hay» as «eye» — the «h» is silent and the final «y» sounds like «ee».",
+        "comparacao": "English keeps a single word, «there is/are», for existence, and a separate verb, «to have», for possession — Spanish makes the same split, just with different words: «hay» (existence) versus «tener» (possession, «to have»). The typical mistake is reaching for «tiene» to say a place «has» a park — in Spanish that's still «hay un parque», not «tiene un parque».",
+        "exemplos": [
+          {
+            "ru": "En mi calle hay una plaza y dos tiendas.",
+            "pt": "On my street there's a square and two shops."
+          },
+          {
+            "ru": "¿Hay un banco cerca?",
+            "pt": "Is there a bank nearby?"
+          },
+          {
+            "ru": "No hay oficinas en este edificio.",
+            "pt": "There are no offices in this building."
+          },
+          {
+            "ru": "Hay muchos coches en la ciudad.",
+            "pt": "There are lots of cars in the city."
+          }
+        ],
+        "tabela": [
+          {
+            "frase": "[misto] Hay un parque.",
+            "quando": "[misto] statement, singular",
+            "traducao": "[misto] There's a park."
+          },
+          {
+            "frase": "[misto] Hay dos bancos.",
+            "quando": "[misto] statement, plural",
+            "traducao": "[misto] There are two banks."
+          },
+          {
+            "frase": "[misto] No hay problema.",
+            "quando": "[misto] negation",
+            "traducao": "[misto] There's no problem."
+          },
+          {
+            "frase": "[misto] ¿Hay una tienda aquí?",
+            "quando": "[misto] question",
+            "traducao": "[misto] Is there a shop here?"
+          },
+          {
+            "frase": "[misto] Hay que estudiar.",
+            "quando": "[misto] general obligation",
+            "traducao": "[misto] You have to study."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] Tiene un banco cerca.",
+            "certo": "[misto] Hay un banco cerca.",
+            "motivo": "For existence, use «hay», not «tiene»."
+          },
+          {
+            "errado": "[misto] Hayn dos tiendas.",
+            "certo": "[misto] Hay dos tiendas.",
+            "motivo": "«Hay» never changes form."
+          },
+          {
+            "errado": "[misto] Hay el banco en la plaza.",
+            "certo": "[misto] El banco está en la plaza.",
+            "motivo": "A specific, known thing calls for «estar», and «hay» calls for an indefinite one."
+          },
+          {
+            "errado": "[misto] Trabajo en una oficina de coches.",
+            "certo": "[misto] Trabajo en un taller de coches.",
+            "motivo": "«Oficina» means office; a car repair shop is «taller»."
+          }
+        ],
+        "tag": "Hay"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "¿Qué hay en tu barrio? / What's in your neighborhood?",
+        "contexto": "Lucía and Pablo are talking about the neighborhood where Pablo lives.",
+        "linhas": [
+          {
+            "personagem": "Lucía",
+            "ru": "— Pablo, ¿hay tiendas en tu barrio?",
+            "pt": "— Pablo, are there shops in your neighborhood?",
+            "audio": "Pablo, ¿hay tiendas en tu barrio?",
+            "rotulo": "[personagem] Lucía"
+          },
+          {
+            "personagem": "Pablo",
+            "ru": "— Sí, hay muchas tiendas y un parque grande.",
+            "pt": "— Yes, there are lots of shops and a big park.",
+            "audio": "Sí, hay muchas tiendas y un parque grande.",
+            "rotulo": "[personagem] Pablo"
+          },
+          {
+            "personagem": "Lucía",
+            "ru": "— ¿Y hay un banco?",
+            "pt": "— And is there a bank?",
+            "audio": "¿Y hay un banco?",
+            "rotulo": "[personagem] Lucía"
+          },
+          {
+            "personagem": "Pablo",
+            "ru": "— Sí, hay dos bancos en la plaza.",
+            "pt": "— Yes, there are two banks on the square.",
+            "audio": "Sí, hay dos bancos en la plaza.",
+            "rotulo": "[personagem] Pablo"
+          },
+          {
+            "personagem": "Lucía",
+            "ru": "— ¿Hay una oficina de correos?",
+            "pt": "— Is there a post office?",
+            "audio": "¿Hay una oficina de correos?",
+            "rotulo": "[personagem] Lucía"
+          },
+          {
+            "personagem": "Pablo",
+            "ru": "— No, no hay. Hay una en el centro.",
+            "pt": "— No, there isn't. There's one downtown.",
+            "audio": "No, no hay. Hay una en el centro.",
+            "rotulo": "[personagem] Pablo"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe your neighborhood out loud with «hay»: two things it has and two it doesn't. Then ask a friend: «¿Hay un parque en tu barrio?»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Give the plural of five words along with the article: «___ ciudades grandes, ___ lápices nuevos, ___ canciones bonitas»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-005.json",
+  "responsavel": null
+}

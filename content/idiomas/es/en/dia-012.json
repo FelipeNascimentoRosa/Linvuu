@@ -1,0 +1,494 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 12,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Introductions, countries, numbers 0 to 20 and age (tener): Review and practice of lesson 3",
+  "objetivo": "Lesson 3, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 3,
+    "titulo": "Introductions, countries, numbers 0 to 20 and age (tener)",
+    "objetivo": "Introduce yourself and introduce someone else, say where you're from and where you live, use nationalities in the masculine and feminine, and count from 0 to 20, including saying your age with the verb «tener».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 3",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Tengo veinte años",
+            "opcoes": [
+              "[misto] Tengo veinte años",
+              "[misto] Tengo quince años",
+              "[misto] Tiene veinte años"
+            ],
+            "gabarito": "[misto] Tengo veinte años",
+            "explicacao": "Listen to «veinte» and the difference between «tengo» and «tiene».",
+            "id": "es-003-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Vivo en Madrid",
+            "opcoes": [
+              "[misto] Vivo en Madrid",
+              "[misto] Vivo en Brasil",
+              "[misto] Vive en Madrid"
+            ],
+            "gabarito": "[misto] Vivo en Madrid",
+            "explicacao": "Listen to «Madrid» and «vivo».",
+            "id": "es-003-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "¿Cómo te llamas?",
+            "opcoes": [
+              "[misto] ¿Cómo te llamas?",
+              "[misto] ¿Cómo se llama usted?",
+              "[misto] ¿Cómo estás?"
+            ],
+            "gabarito": "[misto] ¿Cómo te llamas?",
+            "explicacao": "Listen to «te llamas».",
+            "id": "es-003-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Me llamo Ana",
+            "respostaEsperada": "Me llamo Ana",
+            "explicacao": "Write: Me llamo Ana.",
+            "id": "es-003-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Soy de Brasil",
+            "respostaEsperada": "Soy de Brasil",
+            "explicacao": "Write: Soy de Brasil.",
+            "id": "es-003-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put together the sentence: «I'm nineteen. And Carlos?»",
+            "opcoes": [
+              "¿Y",
+              "tengo",
+              "diecinueve.",
+              "Carlos?",
+              "Yo"
+            ],
+            "gabarito": "Yo tengo diecinueve. ¿Y Carlos?",
+            "explicacao": "Write: Yo tengo diecinueve. ¿Y Carlos?",
+            "id": "es-003-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Tiene dieciocho años",
+            "respostaEsperada": "Tiene dieciocho años",
+            "explicacao": "Write: Tiene dieciocho años.",
+            "id": "es-003-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "Diego, ¿cuántos años tienes?",
+            "respostaEsperada": "Diego, ¿cuántos años tienes?",
+            "explicacao": "Diego, how old are you?",
+            "id": "es-003-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I'm 20 years old»?",
+            "opcoes": [
+              "[misto] Tengo veinte años.",
+              "[misto] Soy veinte años.",
+              "[misto] Tengo veinte anos."
+            ],
+            "gabarito": "[misto] Tengo veinte años.",
+            "explicacao": "Age with «tener», and «años» with «ñ».",
+            "id": "es-003-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which preposition is used with «vivir» for both city and country?",
+            "opcoes": [
+              "[misto] en",
+              "[misto] a",
+              "[misto] de"
+            ],
+            "gabarito": "[misto] en",
+            "explicacao": "Vivo en Madrid, vivo en Brasil.",
+            "id": "es-003-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you introduce a woman named Julia?",
+            "opcoes": [
+              "[misto] Esta es Julia.",
+              "[misto] Este es Julia.",
+              "[misto] Esto es Julia."
+            ],
+            "gabarito": "[misto] Esta es Julia.",
+            "explicacao": "«Esta» is feminine.",
+            "id": "es-003-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Yo tengo diecinueve. ¿Y Carlos?",
+            "respostaEsperada": "Yo tengo diecinueve. ¿Y Carlos?",
+            "explicacao": "I'm nineteen. And Carlos?",
+            "id": "es-003-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the feminine of «francés»?",
+            "opcoes": [
+              "[misto] francesa",
+              "[misto] francés",
+              "[misto] franceza"
+            ],
+            "gabarito": "[misto] francesa",
+            "explicacao": "You add «-a» and the accent mark is dropped.",
+            "id": "es-003-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which of these words is the number 16?",
+            "opcoes": [
+              "[misto] dieciséis",
+              "[misto] doce",
+              "[misto] diecisiete"
+            ],
+            "gabarito": "[misto] dieciséis",
+            "explicacao": "Dieciséis, with an accent mark.",
+            "id": "es-003-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Lucía ___ trece años. (has)",
+            "opcoes": [
+              "[misto] tiene",
+              "[misto] tienes",
+              "[misto] tengo"
+            ],
+            "gabarito": "[misto] tiene",
+            "explicacao": "«Ella tiene».",
+            "id": "es-003-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "Tengo veinte años. ¿Y tú?",
+            "respostaEsperada": "Tengo veinte años. ¿Y tú?",
+            "explicacao": "I'm twenty. And you?",
+            "id": "es-003-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Nosotros ___ dieciséis años. (have)",
+            "opcoes": [
+              "[misto] tenemos",
+              "[misto] tenéis",
+              "[misto] tienen"
+            ],
+            "gabarito": "[misto] tenemos",
+            "explicacao": "«Nosotros tenemos».",
+            "id": "es-003-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put together the sentence: «Yes, that's true!»",
+            "opcoes": [
+              "es",
+              "¡Sí,",
+              "verdad!"
+            ],
+            "gabarito": "¡Sí, es verdad!",
+            "explicacao": "Write: ¡Sí, es verdad!",
+            "id": "es-003-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Soy ___ Brasil. (from)",
+            "opcoes": [
+              "[misto] de",
+              "[misto] en",
+              "[misto] a"
+            ],
+            "gabarito": "[misto] de",
+            "explicacao": "Origin needs «de».",
+            "id": "es-003-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ella es ___ . (Portuguese)",
+            "opcoes": [
+              "[misto] portuguesa",
+              "[misto] portugués",
+              "[misto] portugueza"
+            ],
+            "gabarito": "[misto] portuguesa",
+            "explicacao": "Feminine of «portugués».",
+            "id": "es-003-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ Ana. (my name is)",
+            "opcoes": [
+              "[misto] Me llamo",
+              "[misto] Soy llamo",
+              "[misto] Tengo"
+            ],
+            "gabarito": "[misto] Me llamo",
+            "explicacao": "Reflexive verb «llamarse».",
+            "id": "es-003-e16"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Me llamo Ana y tengo veinte años.»",
+            "opcoes": [
+              "Me",
+              "llamo",
+              "Ana",
+              "y",
+              "tengo",
+              "veinte",
+              "años."
+            ],
+            "gabarito": "Me llamo Ana y tengo veinte años.",
+            "explicacao": "Name and age.",
+            "id": "es-003-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "¡Sí, es verdad!",
+            "respostaEsperada": "¡Sí, es verdad!",
+            "explicacao": "Yes, that's true!",
+            "id": "es-003-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Ella es brasileña.»",
+            "opcoes": [
+              "Ella",
+              "es",
+              "brasileña."
+            ],
+            "gabarito": "Ella es brasileña.",
+            "explicacao": "The nationality agrees in the feminine.",
+            "id": "es-003-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "Carlos tiene diecinueve también.",
+            "respostaEsperada": "Carlos tiene diecinueve también.",
+            "explicacao": "Carlos is nineteen too.",
+            "id": "es-003-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: My name is Carlos. I'm twenty. I live in Brazil.",
+            "respostaEsperada": "[misto] Me llamo Carlos. Tengo veinte años. Vivo en Brasil.",
+            "id": "es-003-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "¿___ años tienes? (how many)",
+            "opcoes": [
+              "[misto] Cuánto",
+              "[misto] Cuántos",
+              "[misto] Cuántas"
+            ],
+            "gabarito": "[misto] Cuántos",
+            "explicacao": "«Años» is masculine plural: «¿Cuántos años tienes?».",
+            "id": "es-003-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tú ___ quince años. (have)",
+            "opcoes": [
+              "[misto] tienes",
+              "[misto] tengo",
+              "[misto] tienen"
+            ],
+            "gabarito": "[misto] tienes",
+            "explicacao": "With «tú», «tener» becomes «tienes».",
+            "id": "es-003-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «siete» mean?",
+            "audio": "siete",
+            "opcoes": [
+              "my name is…",
+              "nice to meet you",
+              "two",
+              "seven"
+            ],
+            "gabarito": "seven",
+            "explicacao": "«siete» = seven.",
+            "id": "es-003-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ella es ___ . (German)",
+            "opcoes": [
+              "[misto] alemán",
+              "[misto] alemane",
+              "[misto] alemana"
+            ],
+            "gabarito": "[misto] alemana",
+            "explicacao": "A nationality ending in a consonant adds «-a» in the feminine and loses the accent mark.",
+            "id": "es-003-e22"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Siete y cuatro son ___ . (11)",
+            "opcoes": [
+              "[misto] doce",
+              "[misto] once",
+              "[misto] diez"
+            ],
+            "gabarito": "[misto] once",
+            "explicacao": "7 + 4 = 11, «once».",
+            "id": "es-003-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «apellido» mean?",
+            "opcoes": [
+              "[misto] surname",
+              "[misto] nickname",
+              "[misto] first name"
+            ],
+            "gabarito": "[misto] surname",
+            "explicacao": "False friend: «apellido» means surname; a nickname is «apodo».",
+            "id": "es-003-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "Entonces somos todos jóvenes.",
+            "respostaEsperada": "Entonces somos todos jóvenes.",
+            "explicacao": "So we're all young.",
+            "id": "es-003-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you write the number 18?",
+            "opcoes": [
+              "[misto] dieciséis",
+              "[misto] diecinueve",
+              "[misto] dieciocho"
+            ],
+            "gabarito": "[misto] dieciocho",
+            "explicacao": "16 to 19 are a single word: «dieciocho».",
+            "id": "es-003-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «Encantado, encantada.» mean?",
+            "audio": "Encantado, encantada.",
+            "opcoes": [
+              "pleased to meet you (said by a man), (said by a woman)",
+              "this is… (introducing a man)",
+              "United States, American (from the US)",
+              "this is… (introducing a woman)"
+            ],
+            "gabarito": "pleased to meet you (said by a man), (said by a woman)",
+            "explicacao": "«Encantado, encantada.» = pleased to meet you (said by a man, by a woman).",
+            "id": "es-003-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you ask a male stranger where he's from?",
+            "opcoes": [
+              "[misto] ¿De dónde es usted?",
+              "[misto] ¿De dónde eres usted?",
+              "[misto] ¿Dónde es usted?"
+            ],
+            "gabarito": "[misto] ¿De dónde es usted?",
+            "explicacao": "With «usted», the verb is «es»; origin is asked with «de dónde».",
+            "id": "es-003-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «¿Cómo se llama usted?»",
+            "opcoes": [
+              "¿Cómo",
+              "se",
+              "llama",
+              "usted?"
+            ],
+            "gabarito": "¿Cómo se llama usted?",
+            "explicacao": "Formal form: «se llama» with «usted».",
+            "id": "es-003-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Ana tiene catorce años.»",
+            "opcoes": [
+              "Ana",
+              "tiene",
+              "catorce",
+              "años."
+            ],
+            "gabarito": "Ana tiene catorce años.",
+            "explicacao": "Age is said with «tener», not «ser».",
+            "id": "es-003-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: Nice to meet you. I'm from Portugal.",
+            "respostaEsperada": "[misto] Mucho gusto. Soy de Portugal.",
+            "id": "es-003-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: He's seventeen and he's Mexican.",
+            "respostaEsperada": "[misto] Tiene diecisiete años y es mexicano.",
+            "id": "es-003-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Introduce, out loud, an imaginary friend from another country: name, age, nationality and where they live."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Introduce yourself in Spanish: name, nationality, city, country and age, in six sentences."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-003.json",
+  "responsavel": null
+}

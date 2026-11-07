@@ -1,0 +1,169 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 42,
+  "fase": 5,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Town and directions: Giving and understanding directions",
+  "objetivo": "Lesson 11, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 11,
+    "titulo": "Town and directions",
+    "objetivo": "Name places in the city, ask where something is, understand and give simple directions («todo recto, gire a la derecha, la segunda calle»), use means of transport with «en» and «a pie», and ask for a ticket.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Giving and understanding directions",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "todo recto",
+            "translit": "[pronuncia] TO-do RREK-to",
+            "pt": "straight ahead",
+            "en": "",
+            "audio": "todo recto"
+          },
+          {
+            "ru": "a la derecha",
+            "translit": "[pronuncia] ah lah deh-REH-chah",
+            "pt": "to the right",
+            "en": "",
+            "audio": "a la derecha"
+          },
+          {
+            "ru": "a la izquierda",
+            "translit": "[pronuncia] ah lah eeth-KYER-dah",
+            "pt": "to the left",
+            "en": "",
+            "audio": "a la izquierda"
+          },
+          {
+            "ru": "la esquina",
+            "translit": "[pronuncia] la es-KEE-nah",
+            "pt": "the corner",
+            "en": "",
+            "audio": "la esquina"
+          },
+          {
+            "ru": "el semáforo",
+            "translit": "[pronuncia] el seh-MAH-fo-ro",
+            "pt": "the traffic light",
+            "en": "",
+            "audio": "el semáforo"
+          },
+          {
+            "ru": "el cruce",
+            "translit": "[pronuncia] el KROO-theh",
+            "pt": "the crossing, the intersection",
+            "en": "",
+            "audio": "el cruce"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Directions: siga, gire, cruce",
+        "explicacao": "STEP 1: directions use imperative verb forms, which you'll study properly in lesson 28. For now, learn them as ready-made phrases. STEP 2: with «usted»: «Siga todo recto», «Gire a la derecha», «Cruce la plaza», «Tome la segunda calle». With «tú»: «Sigue todo recto», «Gira a la derecha», «Cruza la plaza», «Toma la segunda calle». STEP 3: another verb that shows up a lot is «doblar»: «Doble a la izquierda» (usted), «Dobla a la izquierda» (tú). It means to turn. STEP 4: «todo recto» means «straight ahead» in Spain; in parts of Latin America you'll hear «todo derecho». «Derecha» means the right side — don't confuse the two. STEP 5: ordinal numbers help count streets: «la primera calle, la segunda, la tercera». Before a masculine singular noun, «primero» and «tercero» drop the «o»: «el primer semáforo», «el tercer cruce». STEP 6: useful landmarks: «al final de la calle», «en la esquina», «enfrente de», «al lado de», «después de», «antes de». STEP 7: to say the distance: «a dos calles», «a cinco minutos andando», «a diez minutos en autobús». STEP 8: use the fixed form «andando» (on foot, walking): it's common to say either «andando» or «a pie». STEP 9: confirm what you understood: «¿A la izquierda y luego a la derecha?» and, if you don't understand, ask: «¿Puede repetir, por favor?» or «Más despacio, por favor».",
+        "comparacao": "English «turn right» and «go straight ahead» map onto «gire a la derecha» and «siga todo recto» — but watch the verb «seguir» (whose «e» becomes «i»: «siga»), and the preposition «a» before «la derecha». Also note that the ordinals «primero» and «tercero» shorten before a masculine singular noun, to «primer» and «tercer».",
+        "exemplos": [
+          {
+            "ru": "Siga todo recto hasta el semáforo.",
+            "pt": "Go straight ahead to the traffic light."
+          },
+          {
+            "ru": "Gire a la izquierda en la esquina.",
+            "pt": "Turn left at the corner."
+          },
+          {
+            "ru": "Tome la segunda calle a la derecha.",
+            "pt": "Take the second street on the right."
+          },
+          {
+            "ru": "La estación está al final de la calle.",
+            "pt": "The station is at the end of the street."
+          },
+          {
+            "ru": "Está a diez minutos andando.",
+            "pt": "It's ten minutes on foot."
+          }
+        ],
+        "tabela": [
+          {
+            "funcao": "[misto] going straight ahead",
+            "usted": "[misto] Siga todo recto.",
+            "tu": "[misto] Sigue todo recto."
+          },
+          {
+            "funcao": "[misto] turning",
+            "usted": "[misto] Gire / Doble a la derecha.",
+            "tu": "[misto] Gira / Dobla a la derecha."
+          },
+          {
+            "funcao": "[misto] crossing",
+            "usted": "[misto] Cruce la plaza.",
+            "tu": "[misto] Cruza la plaza."
+          },
+          {
+            "funcao": "[misto] taking the street",
+            "usted": "[misto] Tome la segunda calle.",
+            "tu": "[misto] Toma la segunda calle."
+          },
+          {
+            "funcao": "[misto] distance",
+            "usted": "[misto] Está a cinco minutos andando.",
+            "tu": "[misto] Está a cinco minutos andando."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] Gire en la derecha.",
+            "certo": "[misto] Gire a la derecha.",
+            "motivo": "A direction takes «a», not «en»."
+          },
+          {
+            "errado": "[misto] Siga todo derecha.",
+            "certo": "[misto] Siga todo recto.",
+            "motivo": "«Recto» is masculine; «derecha» is the side."
+          },
+          {
+            "errado": "[misto] Tome la primero calle.",
+            "certo": "[misto] Tome la primera calle.",
+            "motivo": "The ordinal agrees with «calle»."
+          },
+          {
+            "errado": "[misto] Tome el primero semáforo.",
+            "certo": "[misto] Tome el primer semáforo.",
+            "motivo": "Before a masculine singular noun, «primero» becomes «primer»."
+          },
+          {
+            "errado": "[misto] Está a cinco minutos a pie andando.",
+            "certo": "[misto] Está a cinco minutos andando.",
+            "motivo": "Pick either «andando» or «a pie»."
+          }
+        ],
+        "tag": "Directions"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Give a three-step route out loud from the bus stop to the pharmacy, using «siga, gire, tome» and «a la derecha / a la izquierda». Then give the same route with «tú»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Ask four questions about directions with «dónde está», «hay», «cómo llego a» and «para ir a»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-011.json",
+  "responsavel": null
+}

@@ -1,0 +1,499 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 48,
+  "fase": 5,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Essential irregular verbs: Review and practice of lesson 12",
+  "objetivo": "Lesson 12, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 12,
+    "titulo": "Essential irregular verbs",
+    "objetivo": "Use the most frequent irregular verbs in the present: ir, hacer, poner, salir, venir, decir, dar, ver and saber, and tell «ver» apart from «mirar», «decir» from «hablar», and «saber» + infinitive.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 12",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Voy al cine con Ana",
+            "opcoes": [
+              "[misto] Voy al cine con Ana",
+              "[misto] Vas al cine con Ana",
+              "[misto] Van al cine con Ana"
+            ],
+            "gabarito": "[misto] Voy al cine con Ana",
+            "explicacao": "Listen to «voy» at the start: it's the first person.",
+            "id": "es-012-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Salgo de casa a las ocho",
+            "opcoes": [
+              "[misto] Salgo de casa a las ocho",
+              "[misto] Sale de casa a las ocho",
+              "[misto] Salimos de casa a las ocho"
+            ],
+            "gabarito": "[misto] Salgo de casa a las ocho",
+            "explicacao": "Listen to the «g» in «salgo».",
+            "id": "es-012-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "¿Vienes con nosotros?",
+            "opcoes": [
+              "[misto] ¿Vienes con nosotros?",
+              "[misto] ¿Vienen con nosotros?",
+              "[misto] ¿Venís con nosotros?"
+            ],
+            "gabarito": "[misto] ¿Vienes con nosotros?",
+            "explicacao": "Listen to the final «s» of «vienes».",
+            "id": "es-012-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Hago la compra los sábados",
+            "respostaEsperada": "Hago la compra los sábados",
+            "explicacao": "Write: Hago la compra los sábados.",
+            "id": "es-012-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "No sé nadar",
+            "respostaEsperada": "No sé nadar",
+            "explicacao": "Write: No sé nadar. «Sé» carries an accent mark.",
+            "id": "es-012-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «I get off work at six. Are you coming to the movies with us?»",
+            "opcoes": [
+              "del",
+              "las",
+              "con",
+              "¿Vienes",
+              "seis.",
+              "al",
+              "cine",
+              "a",
+              "Salgo",
+              "nosotros?",
+              "trabajo"
+            ],
+            "gabarito": "Salgo del trabajo a las seis. ¿Vienes al cine con nosotros?",
+            "explicacao": "Write: Salgo del trabajo a las seis. ¿Vienes al cine con nosotros?",
+            "id": "es-012-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Digo la verdad",
+            "respostaEsperada": "Digo la verdad",
+            "explicacao": "Write: Digo la verdad.",
+            "id": "es-012-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Hola, Pablo. ¿Qué haces hoy?",
+            "respostaEsperada": "Hola, Pablo. ¿Qué haces hoy?",
+            "explicacao": "Hi, Pablo. What are you doing today?",
+            "id": "es-012-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «yo» form of «poner»?",
+            "opcoes": [
+              "[misto] pongo",
+              "[misto] pono",
+              "[misto] pone"
+            ],
+            "gabarito": "[misto] pongo",
+            "explicacao": "In «yo», it gains a «g»: pongo.",
+            "id": "es-012-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «nosotros» form of «ir»?",
+            "opcoes": [
+              "[misto] vamos",
+              "[misto] vais",
+              "[misto] van"
+            ],
+            "gabarito": "[misto] vamos",
+            "explicacao": "With «nosotros», the form is «vamos».",
+            "id": "es-012-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I know how to cook»?",
+            "opcoes": [
+              "[misto] Sé cocinar.",
+              "[misto] Sabo cocinar.",
+              "[misto] Se cocinar."
+            ],
+            "gabarito": "[misto] Sé cocinar.",
+            "explicacao": "«Sé» is the «yo» form of «saber» and carries an accent mark.",
+            "id": "es-012-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Salgo del trabajo a las seis. ¿Vienes al cine con nosotros?",
+            "respostaEsperada": "Salgo del trabajo a las seis. ¿Vienes al cine con nosotros?",
+            "explicacao": "I get off work at six. Are you coming to the movies with us?",
+            "id": "es-012-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "[misto] Voy al cine.",
+              "[misto] Voy a el cine.",
+              "[misto] Voy en el cine."
+            ],
+            "gabarito": "[misto] Voy al cine.",
+            "explicacao": "a + el = al.",
+            "id": "es-012-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I'm watching a movie»?",
+            "opcoes": [
+              "[misto] Veo una película.",
+              "[misto] Asisto una película.",
+              "[misto] Miro a una película."
+            ],
+            "gabarito": "[misto] Veo una película.",
+            "explicacao": "A movie is something you «ver»; «asistir a» means to be present at an event.",
+            "id": "es-012-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which verb is used in «___ la verdad»?",
+            "opcoes": [
+              "[misto] Digo",
+              "[misto] Hablo",
+              "[misto] Veo"
+            ],
+            "gabarito": "[misto] Digo",
+            "explicacao": "To state a fact, use «decir».",
+            "id": "es-012-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "¿Qué película ponen?",
+            "respostaEsperada": "¿Qué película ponen?",
+            "explicacao": "What movie is playing?",
+            "id": "es-012-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Yo ___ un regalo a mi hermana. (dar)",
+            "opcoes": [
+              "[misto] doy",
+              "[misto] da",
+              "[misto] das"
+            ],
+            "gabarito": "[misto] doy",
+            "explicacao": "The «yo» form of «dar» is «doy».",
+            "id": "es-012-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «A Spanish film. Carmen says it's really good.»",
+            "opcoes": [
+              "Carmen",
+              "película",
+              "española.",
+              "Una",
+              "dice",
+              "es",
+              "buena.",
+              "muy",
+              "que"
+            ],
+            "gabarito": "Una película española. Carmen dice que es muy buena.",
+            "explicacao": "Write: Una película española. Carmen dice que es muy buena.",
+            "id": "es-012-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "¿Tú ___ a mi casa? (venir)",
+            "opcoes": [
+              "[misto] vienes",
+              "[misto] viene",
+              "[misto] vengo"
+            ],
+            "gabarito": "[misto] vienes",
+            "explicacao": "With «tú», the form is «vienes».",
+            "id": "es-012-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ellos ___ la mesa. (poner)",
+            "opcoes": [
+              "[misto] ponen",
+              "[misto] pone",
+              "[misto] pongo"
+            ],
+            "gabarito": "[misto] ponen",
+            "explicacao": "With «ellos», the ending is «-en».",
+            "id": "es-012-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Nosotros ___ de casa a las siete. (salir)",
+            "opcoes": [
+              "[misto] salimos",
+              "[misto] salgo",
+              "[misto] salen"
+            ],
+            "gabarito": "[misto] salimos",
+            "explicacao": "With «nosotros», the form is «salimos».",
+            "id": "es-012-e16"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "¿___ vas? (where to)",
+            "opcoes": [
+              "[misto] Adónde",
+              "[misto] Dónde",
+              "[misto] Cuándo"
+            ],
+            "gabarito": "[misto] Adónde",
+            "explicacao": "«Adónde» asks the destination.",
+            "id": "es-012-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Una película española. Carmen dice que es muy buena.",
+            "respostaEsperada": "Una película española. Carmen dice que es muy buena.",
+            "explicacao": "A Spanish film. Carmen says it's really good.",
+            "id": "es-012-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Hago la compra los sábados.»",
+            "opcoes": [
+              "Hago",
+              "la",
+              "compra",
+              "los",
+              "sábados."
+            ],
+            "gabarito": "Hago la compra los sábados.",
+            "explicacao": "Verb, object and time, same order as in English.",
+            "id": "es-012-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "¿A qué hora es?",
+            "respostaEsperada": "¿A qué hora es?",
+            "explicacao": "What time is it?",
+            "id": "es-012-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «¿Adónde vas hoy?»",
+            "opcoes": [
+              "¿Adónde",
+              "vas",
+              "hoy?"
+            ],
+            "gabarito": "¿Adónde vas hoy?",
+            "explicacao": "The question word opens the sentence.",
+            "id": "es-012-e19"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I'm going to the movies and then I'm going out with Ana.",
+            "respostaEsperada": "[misto] Voy al cine y después salgo con Ana.",
+            "id": "es-012-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Yo ___ deporte los lunes. (hacer)",
+            "opcoes": [
+              "[misto] hago",
+              "[misto] hazo",
+              "[misto] hace"
+            ],
+            "gabarito": "[misto] hago",
+            "explicacao": "In «yo», «hacer» becomes «hago».",
+            "id": "es-012-e21"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Okay, I'll come too. See you soon.»",
+            "opcoes": [
+              "voy",
+              "luego.",
+              "Hasta",
+              "también.",
+              "Vale,"
+            ],
+            "gabarito": "Vale, voy también. Hasta luego.",
+            "explicacao": "Write: Vale, voy también. Hasta luego.",
+            "id": "es-012-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tú ___ la verdad. (decir)",
+            "opcoes": [
+              "[misto] dice",
+              "[misto] dices",
+              "[misto] digo"
+            ],
+            "gabarito": "[misto] dices",
+            "explicacao": "With «tú», «decir» becomes «dices».",
+            "id": "es-012-e22"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ellos no ___ la respuesta. (saber)",
+            "opcoes": [
+              "[misto] sabe",
+              "[misto] sabemos",
+              "[misto] saben"
+            ],
+            "gabarito": "[misto] saben",
+            "explicacao": "With «ellos», «saber» becomes «saben».",
+            "id": "es-012-e23"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ellos ___ al cine. (ir)",
+            "opcoes": [
+              "[misto] van",
+              "[misto] va",
+              "[misto] vais"
+            ],
+            "gabarito": "[misto] van",
+            "explicacao": "With «ellos», «ir» becomes «van».",
+            "id": "es-012-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "A las ocho. Yo voy en metro.",
+            "respostaEsperada": "A las ocho. Yo voy en metro.",
+            "explicacao": "At eight. I'm going by subway.",
+            "id": "es-012-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «yo» form of «salir»?",
+            "opcoes": [
+              "[misto] salo",
+              "[misto] salgo",
+              "[misto] sale"
+            ],
+            "gabarito": "[misto] salgo",
+            "explicacao": "In «yo», «salir» gains a «g»: «salgo».",
+            "id": "es-012-e25"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Vale, voy también. Hasta luego.",
+            "respostaEsperada": "Vale, voy también. Hasta luego.",
+            "explicacao": "Okay, I'll come too. See you soon.",
+            "id": "es-012-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which verb means to look attentively?",
+            "opcoes": [
+              "to see",
+              "[misto] decir",
+              "[misto] mirar"
+            ],
+            "gabarito": "[misto] mirar",
+            "explicacao": "«Mirar» means to direct your eyes toward something; «ver» means to perceive or watch.",
+            "id": "es-012-e26"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «nosotros» form of «hacer»?",
+            "opcoes": [
+              "[misto] hacemos",
+              "[misto] hazemos",
+              "[misto] hagemos"
+            ],
+            "gabarito": "[misto] hacemos",
+            "explicacao": "Only «yo» is irregular; the other forms follow the regular -er pattern.",
+            "id": "es-012-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Salgo del trabajo a las seis.»",
+            "opcoes": [
+              "Salgo",
+              "del",
+              "trabajo",
+              "a",
+              "las",
+              "seis."
+            ],
+            "gabarito": "Salgo del trabajo a las seis.",
+            "explicacao": "«Salir de» + place; «de + el = del».",
+            "id": "es-012-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I do the shopping and then I go to the gym.",
+            "respostaEsperada": "[misto] Hago la compra y después voy al gimnasio.",
+            "id": "es-012-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I tell the truth and he knows how to cook.",
+            "respostaEsperada": "[misto] Digo la verdad y él sabe cocinar.",
+            "id": "es-012-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Tell a friend out loud what you do, where you go and what you see on an ordinary day, using five verbs from this lesson."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say the «yo» form of nine irregular verbs without looking at the table. Then say the «nosotros» form of three of them."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-012.json",
+  "responsavel": null
+}

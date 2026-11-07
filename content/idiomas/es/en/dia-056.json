@@ -1,0 +1,512 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 56,
+  "fase": 6,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Daily routine and reflexive verbs: Review and practice of lesson 14",
+  "objetivo": "Lesson 14, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 14,
+    "titulo": "Daily routine and reflexive verbs",
+    "objetivo": "Describe your daily routine with reflexive verbs (levantarse, ducharse, acostarse…), place the pronouns me, te, se, nos, os, se in the right spot, and use mealtimes, clock times, and sequence and frequency markers.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 14",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Me levanto a las siete",
+            "opcoes": [
+              "[misto] Me levanto a las siete",
+              "[misto] Se levanta a las siete",
+              "[misto] Nos levantamos a las siete"
+            ],
+            "gabarito": "[misto] Me levanto a las siete",
+            "explicacao": "Listen for the pronoun «me» and the «-o» ending.",
+            "id": "es-014-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Mi hermano se acuesta tarde",
+            "opcoes": [
+              "[misto] Mi hermano se acuesta tarde",
+              "[misto] Mi hermano me acuesta tarde",
+              "[misto] Mis hermanos se acuestan tarde"
+            ],
+            "gabarito": "[misto] Mi hermano se acuesta tarde",
+            "explicacao": "Listen for «se» and the singular form «acuesta».",
+            "id": "es-014-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Después de cenar, veo la tele",
+            "opcoes": [
+              "[misto] Después de cenar, veo la tele",
+              "[misto] Después de cenamos, veo la tele",
+              "[misto] Antes de cenar, veo la tele"
+            ],
+            "gabarito": "[misto] Después de cenar, veo la tele",
+            "explicacao": "Listen for «después de» and the infinitive «cenar».",
+            "id": "es-014-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Me ducho por la mañana",
+            "respostaEsperada": "Me ducho por la mañana",
+            "explicacao": "Write: Me ducho por la mañana.",
+            "id": "es-014-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Nos acostamos a las once",
+            "respostaEsperada": "Nos acostamos a las once",
+            "explicacao": "Write: Nos acostamos a las once.",
+            "id": "es-014-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Good morning, Javier. What time do you get up on Mondays?»",
+            "opcoes": [
+              "levantas",
+              "hora",
+              "te",
+              "lunes?",
+              "qué",
+              "Buenos",
+              "los",
+              "¿A",
+              "Javier.",
+              "días,"
+            ],
+            "gabarito": "Buenos días, Javier. ¿A qué hora te levantas los lunes?",
+            "explicacao": "Write: Buenos días, Javier. ¿A qué hora te levantas los lunes?",
+            "id": "es-014-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Mañana tengo clase",
+            "respostaEsperada": "Mañana tengo clase",
+            "explicacao": "Write: Mañana tengo clase. With no article, it means «tomorrow».",
+            "id": "es-014-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "¿Y a qué hora sales de casa?",
+            "respostaEsperada": "¿Y a qué hora sales de casa?",
+            "explicacao": "And what time do you leave the house?",
+            "id": "es-014-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the right pronoun? «Nosotros ___ levantamos temprano.»",
+            "opcoes": [
+              "[misto] nos",
+              "[misto] me",
+              "[misto] se"
+            ],
+            "gabarito": "[misto] nos",
+            "explicacao": "The pronoun agrees with «nosotros».",
+            "id": "es-014-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "[misto] Me lavo las manos.",
+              "[misto] Me lavo mis manos.",
+              "[misto] Lavo me las manos."
+            ],
+            "gabarito": "[misto] Me lavo las manos.",
+            "explicacao": "With body parts, you use the article.",
+            "id": "es-014-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «yo» form of «acostarse»?",
+            "opcoes": [
+              "[misto] me acuesto",
+              "[misto] me acosto",
+              "[misto] se acuesta"
+            ],
+            "gabarito": "[misto] me acuesto",
+            "explicacao": "«Acostarse» changes o → ue in «yo».",
+            "id": "es-014-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Buenos días, Javier. ¿A qué hora te levantas los lunes?",
+            "respostaEsperada": "Buenos días, Javier. ¿A qué hora te levantas los lunes?",
+            "explicacao": "Good morning, Javier. What time do you get up on Mondays?",
+            "id": "es-014-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «yo» form of «vestirse»?",
+            "opcoes": [
+              "[misto] me visto",
+              "[misto] me vestio",
+              "[misto] me vieste"
+            ],
+            "gabarito": "[misto] me visto",
+            "explicacao": "«Vestirse» changes e → i in «yo».",
+            "id": "es-014-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «Mañana por la mañana» mean?",
+            "opcoes": [
+              "[misto] Tomorrow morning",
+              "[misto] This afternoon",
+              "[misto] Yesterday morning"
+            ],
+            "gabarito": "[misto] Tomorrow morning",
+            "explicacao": "«Mañana» with no article means tomorrow; «la mañana» is the morning.",
+            "id": "es-014-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «After dinner, I watch TV»?",
+            "opcoes": [
+              "[misto] Después de cenar, veo la tele.",
+              "[misto] Después de ceno, veo la tele.",
+              "[misto] Después cenar, veo la tele."
+            ],
+            "gabarito": "[misto] Después de cenar, veo la tele.",
+            "explicacao": "After «después de», the verb goes in the infinitive.",
+            "id": "es-014-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Yo tomo el metro a las ocho y cuarto.",
+            "respostaEsperada": "Yo tomo el metro a las ocho y cuarto.",
+            "explicacao": "I catch the subway at eight fifteen.",
+            "id": "es-014-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Yo ___ levanto a las siete. (pronoun)",
+            "opcoes": [
+              "[misto] me",
+              "[misto] te",
+              "[misto] se"
+            ],
+            "gabarito": "[misto] me",
+            "explicacao": "With «yo», the pronoun is «me».",
+            "id": "es-014-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «I get up at seven, shower, and have breakfast. What about you?»",
+            "opcoes": [
+              "¿Y",
+              "siete,",
+              "Me",
+              "y",
+              "me",
+              "ducho",
+              "a",
+              "las",
+              "levanto",
+              "tú?",
+              "desayuno."
+            ],
+            "gabarito": "Me levanto a las siete, me ducho y desayuno. ¿Y tú?",
+            "explicacao": "Write: Me levanto a las siete, me ducho y desayuno. ¿Y tú?",
+            "id": "es-014-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ellos ___ acuestan tarde. (pronoun)",
+            "opcoes": [
+              "[misto] se",
+              "[misto] me",
+              "[misto] nos"
+            ],
+            "gabarito": "[misto] se",
+            "explicacao": "With «ellos», the pronoun is «se».",
+            "id": "es-014-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ella ___ a las seis y media. (despertarse)",
+            "opcoes": [
+              "[misto] se despierta",
+              "[misto] se despiertan",
+              "[misto] despierta se"
+            ],
+            "gabarito": "[misto] se despierta",
+            "explicacao": "Third-person singular, with the e → ie change.",
+            "id": "es-014-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Voy a casa. ___ voy a las seis. (leaving)",
+            "opcoes": [
+              "[misto] Me",
+              "[misto] Se",
+              "[misto] Os"
+            ],
+            "gabarito": "[misto] Me",
+            "explicacao": "«Me voy» means leaving; the pronoun agrees with «yo».",
+            "id": "es-014-e16"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Siempre me ___ ocho horas. (dormir)",
+            "opcoes": [
+              "[misto] duermo",
+              "[misto] dormo",
+              "[misto] duerme"
+            ],
+            "gabarito": "[misto] duermo",
+            "explicacao": "«Dormir» changes o → ue in «yo».",
+            "id": "es-014-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Me levanto a las siete, me ducho y desayuno. ¿Y tú?",
+            "respostaEsperada": "Me levanto a las siete, me ducho y desayuno. ¿Y tú?",
+            "explicacao": "I get up at seven, shower, and have breakfast. What about you?",
+            "id": "es-014-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Me levanto a las siete y media.»",
+            "opcoes": [
+              "Me",
+              "levanto",
+              "a",
+              "las",
+              "siete",
+              "y",
+              "media."
+            ],
+            "gabarito": "Me levanto a las siete y media.",
+            "explicacao": "The pronoun comes before the conjugated verb.",
+            "id": "es-014-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Entonces nos vemos en la oficina a las nueve.",
+            "respostaEsperada": "Entonces nos vemos en la oficina a las nueve.",
+            "explicacao": "So we'll see each other at the office at nine.",
+            "id": "es-014-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Primero me ducho y luego desayuno.»",
+            "opcoes": [
+              "Primero",
+              "me",
+              "ducho",
+              "y",
+              "luego",
+              "desayuno."
+            ],
+            "gabarito": "Primero me ducho y luego desayuno.",
+            "explicacao": "«Primero… luego…» put the actions in order.",
+            "id": "es-014-e19"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I get up at seven, shower, and have breakfast.",
+            "respostaEsperada": "[misto] Me levanto a las siete, me ducho y desayuno.",
+            "id": "es-014-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tú ___ levantas a las siete. (pronoun)",
+            "opcoes": [
+              "[misto] me",
+              "[misto] se",
+              "[misto] te"
+            ],
+            "gabarito": "[misto] te",
+            "explicacao": "The pronoun for «tú» is «te».",
+            "id": "es-014-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «cenar» mean?",
+            "audio": "cenar",
+            "opcoes": [
+              "to get dressed",
+              "to wake up",
+              "to have dinner",
+              "to get up"
+            ],
+            "gabarito": "to have dinner",
+            "explicacao": "«cenar» = to have dinner.",
+            "id": "es-014-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Nosotros ___ a las dos. (almorzar)",
+            "opcoes": [
+              "[misto] almorzamos",
+              "[misto] almuerzamos",
+              "[misto] almorzan"
+            ],
+            "gabarito": "[misto] almorzamos",
+            "explicacao": "In «nosotros», the stem doesn't change.",
+            "id": "es-014-e22"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Antes ___ salir, cierro la puerta.",
+            "opcoes": [
+              "[misto] a",
+              "[misto] de",
+              "[misto] que"
+            ],
+            "gabarito": "[misto] de",
+            "explicacao": "After «antes de», the verb stays in the infinitive.",
+            "id": "es-014-e23"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Yo ___ en casa los domingos. (to stay)",
+            "opcoes": [
+              "[misto] me quedo",
+              "[misto] quedo",
+              "[misto] se quedo"
+            ],
+            "gabarito": "[misto] me quedo",
+            "explicacao": "«Quedarse» is reflexive: «me quedo».",
+            "id": "es-014-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Vale, hasta luego.",
+            "respostaEsperada": "Vale, hasta luego.",
+            "explicacao": "Deal, see you soon.",
+            "id": "es-014-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I take my shoes off»?",
+            "opcoes": [
+              "[misto] Me quito mis zapatos.",
+              "[misto] Quito me los zapatos.",
+              "[misto] Me quito los zapatos."
+            ],
+            "gabarito": "[misto] Me quito los zapatos.",
+            "explicacao": "Body parts and clothes take the article, not the possessive.",
+            "id": "es-014-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «levantarse» mean?",
+            "audio": "levantarse",
+            "opcoes": [
+              "to get up",
+              "to have breakfast",
+              "to have lunch",
+              "to wake up"
+            ],
+            "gabarito": "to get up",
+            "explicacao": "«levantarse» = to get up.",
+            "id": "es-014-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «ellos» form of «sentirse»?",
+            "opcoes": [
+              "[misto] se sienten",
+              "[misto] se sentan",
+              "[misto] se sientan"
+            ],
+            "gabarito": "[misto] se sienten",
+            "explicacao": "The «e» becomes «ie» in «ellos».",
+            "id": "es-014-e26"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «Me voy» mean?",
+            "opcoes": [
+              "[misto] I'm staying.",
+              "[misto] I'm leaving.",
+              "[misto] I'm going to bed."
+            ],
+            "gabarito": "[misto] I'm leaving.",
+            "explicacao": "«Irse» means to leave.",
+            "id": "es-014-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Antes de comer, me lavo las manos.»",
+            "opcoes": [
+              "Antes",
+              "de",
+              "comer,",
+              "me",
+              "lavo",
+              "las",
+              "manos."
+            ],
+            "gabarito": "Antes de comer, me lavo las manos.",
+            "explicacao": "After «antes de», the infinitive; the pronoun comes before the conjugated verb.",
+            "id": "es-014-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I get up at seven and have breakfast at eight.",
+            "respostaEsperada": "[misto] Me levanto a las siete y desayuno a las ocho.",
+            "id": "es-014-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: She feels tired and stays home.",
+            "respostaEsperada": "[misto] Se siente cansada y se queda en casa.",
+            "id": "es-014-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe out loud a weekend morning and a weekday morning, using at least four reflexive verbs."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Narrate your morning in five sentences with reflexive pronouns. Then narrate a friend's morning using «se»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-014.json",
+  "responsavel": null
+}

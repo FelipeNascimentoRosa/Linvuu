@@ -1,0 +1,180 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 39,
+  "fase": 4,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Estar, location and prepositions: Ser or estar? Adjectives that change meaning",
+  "objetivo": "Lesson 10, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 10,
+    "titulo": "Estar, location and prepositions",
+    "objetivo": "Conjugate «estar» in the present, use it to say where something is and how someone feels, tell «ser» apart from «estar» in the most common cases, use prepositions of place («encima de, debajo de, al lado de…»), and don't confuse «hay» with «está».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Ser or estar? Adjectives that change meaning",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "listo, lista",
+            "translit": "[pronuncia] LEES-to, LEES-tah",
+            "pt": "clever; ready (with estar)",
+            "en": "",
+            "audio": "listo, lista"
+          },
+          {
+            "ru": "aburrido, aburrida",
+            "translit": "[pronuncia] ah-boo-RREE-do, ah-boo-RREE-dah",
+            "pt": "boring; bored (with estar)",
+            "en": "",
+            "audio": "aburrido, aburrida"
+          },
+          {
+            "ru": "de acuerdo",
+            "translit": "[pronuncia] deh ah-KWER-do",
+            "pt": "in agreement",
+            "en": "",
+            "audio": "de acuerdo"
+          },
+          {
+            "ru": "¿Dónde está?",
+            "translit": "[pronuncia] DON-deh es-TAH",
+            "pt": "where is it?",
+            "en": "",
+            "audio": "¿Dónde está?"
+          },
+          {
+            "ru": "aquí, ahí, allí",
+            "translit": "[pronuncia] ah-KEE, ah-EE, ah-LYEE",
+            "pt": "here, there, over there",
+            "en": "",
+            "audio": "aquí, ahí, allí"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Ser × estar: when the meaning changes",
+        "explicacao": "STEP 1: with certain adjectives, the verb changes the meaning. «Ser» talks about a lasting quality of the person or thing; «estar» talks about how it is right now, or a result. STEP 2: «Es listo» means «he's clever»; «Está listo» means «he's ready». STEP 3: «Es aburrido» means «it's/he's boring»; «Está aburrido» means «he's bored». STEP 4: «Es guapo» means «he's good-looking»; «Está guapo» means «he looks good today» (dressed up, groomed). STEP 5: «Es rico» means «he's wealthy» (or rich in something); «Está rico» means «it tastes delicious». STEP 6: «Es verde» means «it's green» (the color); «Está verde» means «it's unripe» (fruit that hasn't ripened yet). STEP 7: the rule of thumb: if you could swap in «today, right now, this time», prefer «estar»; if it's always or almost always that way, use «ser». STEP 8: «estar» can pair with «bien, mal, así». «Está bien» means «it's okay / that's fine»; «es bueno» means «it's good» (as a lasting quality). STEP 9: with past participles that describe a result, use «estar»: «La tienda está cerrada», «La puerta está abierta». STEP 10: when in doubt, ask: does the sentence describe what the thing IS (ser), or where and how it currently IS (estar)?",
+        "comparacao": "English runs into the exact same ambiguity with a few of its own adjectives, even with a single verb «to be»: compare «he's boring» (a trait) with a sense closer to «he's bored» (a state) — English just uses two different adjectives to split that meaning, where Spanish uses the same adjective with two different verbs. These pairs are worth memorizing as a set, since they come up constantly.",
+        "tabela": [
+          {
+            "adjetivo": "[misto] listo",
+            "com_ser": "[misto] Es listo. (clever)",
+            "com_estar": "[misto] Está listo. (ready)"
+          },
+          {
+            "adjetivo": "[misto] aburrido",
+            "com_ser": "[misto] Es aburrido. (boring)",
+            "com_estar": "[misto] Está aburrido. (bored)"
+          },
+          {
+            "adjetivo": "[misto] guapo",
+            "com_ser": "[misto] Es guapo. (good-looking)",
+            "com_estar": "[misto] Está guapo. (looks good today)"
+          },
+          {
+            "adjetivo": "[misto] rico",
+            "com_ser": "[misto] Es rico. (wealthy)",
+            "com_estar": "[misto] Está rico. (tastes delicious)"
+          },
+          {
+            "adjetivo": "[misto] verde",
+            "com_ser": "[misto] Es verde. (the color)",
+            "com_estar": "[misto] Está verde. (unripe)"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] El plátano es verde todavía.",
+            "certo": "[misto] El plátano está verde todavía.",
+            "motivo": "Fruit that hasn't ripened yet: «estar verde»."
+          },
+          {
+            "errado": "[misto] Mi hermano está listo, siempre gana.",
+            "certo": "[misto] Mi hermano es listo, siempre gana.",
+            "motivo": "A lasting trait needs «ser»."
+          },
+          {
+            "errado": "[misto] El libro está aburrido.",
+            "certo": "[misto] El libro es aburrido.",
+            "motivo": "To say the book is boring, use «ser»; «estar aburrido» is what a person feels."
+          }
+        ],
+        "tag": "Ser and estar"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "¿Dónde estás? / Where are you?",
+        "contexto": "Inés calls Tomás to find out where he is.",
+        "linhas": [
+          {
+            "personagem": "Inés",
+            "ru": "— Hola, Tomás. ¿Dónde estás?",
+            "pt": "— Hi, Tomás. Where are you?",
+            "audio": "Hola, Tomás. ¿Dónde estás?",
+            "rotulo": "[personagem] Inés"
+          },
+          {
+            "personagem": "Tomás",
+            "ru": "— Estoy en la biblioteca, cerca de la plaza.",
+            "pt": "— I'm at the library, near the square.",
+            "audio": "Estoy en la biblioteca, cerca de la plaza.",
+            "rotulo": "[personagem] Tomás"
+          },
+          {
+            "personagem": "Inés",
+            "ru": "— ¿Estás ocupado?",
+            "pt": "— Are you busy?",
+            "audio": "¿Estás ocupado?",
+            "rotulo": "[personagem] Inés"
+          },
+          {
+            "personagem": "Tomás",
+            "ru": "— Un poco. Estoy cansado, pero estoy contento: mi trabajo ya está listo.",
+            "pt": "— A little. I'm tired, but happy: my work is already done.",
+            "audio": "Un poco. Estoy cansado, pero estoy contento: mi trabajo ya está listo.",
+            "rotulo": "[personagem] Tomás"
+          },
+          {
+            "personagem": "Inés",
+            "ru": "— Entonces la fiesta es a las ocho, en casa de Clara.",
+            "pt": "— So the party is at eight, at Clara's place.",
+            "audio": "Entonces la fiesta es a las ocho, en casa de Clara.",
+            "rotulo": "[personagem] Inés"
+          },
+          {
+            "personagem": "Tomás",
+            "ru": "— Perfecto, estoy de acuerdo. Hasta luego.",
+            "pt": "— Perfect, I agree. See you soon.",
+            "audio": "Perfecto, estoy de acuerdo. Hasta luego.",
+            "rotulo": "[personagem] Tomás"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Write and say five sentences using «ser»/«estar» pairs, for example «Es listo / Está listo», about people or things around you."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say six prepositions of place, each with one example. Then explain the difference between «Hay un libro» and «El libro está encima de la mesa»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-010.json",
+  "responsavel": null
+}

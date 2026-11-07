@@ -1,0 +1,432 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 1,
+  "fase": 1,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Sounds, alphabet and first words: The alphabet and first greetings",
+  "objetivo": "Lesson 1, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 1,
+    "titulo": "Sounds, alphabet and first words",
+    "objetivo": "Spell in Spanish, read the letters that sound different from what you expect (j, g, c, z, qu, ll, ñ, rr, h), keep vowels full and clear, mark the stressed syllable, and say your first greetings, with «tú» and with «usted».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "The alphabet and first greetings",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "intro",
+        "min": 3,
+        "texto": "Let's start with your ears: first you'll listen to a café scene, then learn the letters. You already know a lot of Spanish: hola, gracias, fiesta, siesta, plaza, paella, amigo, adiós. The spelling is regular and many words look like English or Portuguese ones, and that's exactly where the risk is: reading Spanish with English sounds. This lesson teaches the sounds that differ. Next to each word there's an approximate respelling in plain English letters: «h» is a rough, throaty sound (a bit like clearing your throat, or the Scottish «ch» in «loch»); «th» is the «th» sound in «think»; «ny» is the sound in «canyon»; «y» here is the sound in «yes»; «ch» is the «ch» in «chair». ALL CAPS marks the stressed syllable. The audio uses Spanish from Spain. In Latin America, the «th» sound becomes «s»; we'll flag it when it matters. The respelling helps, but it doesn't replace the audio: always listen before you repeat."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 5,
+        "titulo": "En el café / At the café",
+        "contexto": "Clara orders a coffee from Mateo, the waiter. Just listen and follow along: you'll already recognize «hola», «buenos días», «por favor», «gracias», «de nada» and «adiós».",
+        "linhas": [
+          {
+            "personagem": "Mateo",
+            "ru": "— ¡Hola! Buenos días.",
+            "pt": "— Hi! Good morning.",
+            "audio": "¡Hola! Buenos días.",
+            "rotulo": "[personagem] Mateo"
+          },
+          {
+            "personagem": "Clara",
+            "ru": "— Buenos días. Un café, por favor.",
+            "pt": "— Good morning. A coffee, please.",
+            "audio": "Buenos días. Un café, por favor.",
+            "rotulo": "[personagem] Clara"
+          },
+          {
+            "personagem": "Mateo",
+            "ru": "— ¿Y un jamón?",
+            "pt": "— And some ham?",
+            "audio": "¿Y un jamón?",
+            "rotulo": "[personagem] Mateo"
+          },
+          {
+            "personagem": "Clara",
+            "ru": "— No, gracias. Solo un café.",
+            "pt": "— No, thank you. Just a coffee.",
+            "audio": "No, gracias. Solo un café.",
+            "rotulo": "[personagem] Clara"
+          },
+          {
+            "personagem": "Mateo",
+            "ru": "— Aquí tiene.",
+            "pt": "— Here you go.",
+            "audio": "Aquí tiene.",
+            "rotulo": "[personagem] Mateo"
+          },
+          {
+            "personagem": "Clara",
+            "ru": "— Gracias.",
+            "pt": "— Thank you.",
+            "audio": "Gracias.",
+            "rotulo": "[personagem] Clara"
+          },
+          {
+            "personagem": "Mateo",
+            "ru": "— De nada.",
+            "pt": "— You're welcome.",
+            "audio": "De nada.",
+            "rotulo": "[personagem] Mateo"
+          },
+          {
+            "personagem": "Clara",
+            "ru": "— Adiós, hasta luego.",
+            "pt": "— Bye, see you soon.",
+            "audio": "Adiós, hasta luego.",
+            "rotulo": "[personagem] Clara"
+          }
+        ]
+      },
+      {
+        "tipo": "alfabeto",
+        "min": 10,
+        "grupos": [
+          {
+            "nome": "Part 1 — A to G",
+            "letras": [
+              {
+                "maiuscula": "A",
+                "minuscula": "a",
+                "som": "letter name: «a»",
+                "ipa": "/a/",
+                "exemplo": "amigo",
+                "exemploPt": "friend",
+                "nome": "a"
+              },
+              {
+                "maiuscula": "B",
+                "minuscula": "b",
+                "som": "letter name: «beh»",
+                "ipa": "/be/",
+                "exemplo": "bien",
+                "exemploPt": "well, fine",
+                "nome": "bé"
+              },
+              {
+                "maiuscula": "C",
+                "minuscula": "c",
+                "som": "letter name: «theh» (th as in «think»)",
+                "ipa": "/θe/",
+                "exemplo": "casa",
+                "exemploPt": "house",
+                "nome": "thé"
+              },
+              {
+                "maiuscula": "D",
+                "minuscula": "d",
+                "som": "letter name: «deh»",
+                "ipa": "/de/",
+                "exemplo": "día",
+                "exemploPt": "day",
+                "nome": "dé"
+              },
+              {
+                "maiuscula": "E",
+                "minuscula": "e",
+                "som": "letter name: «eh»",
+                "ipa": "/e/",
+                "exemplo": "escuela",
+                "exemploPt": "school",
+                "nome": "é"
+              },
+              {
+                "maiuscula": "F",
+                "minuscula": "f",
+                "som": "letter name: «EH-feh»",
+                "ipa": "/ˈefe/",
+                "exemplo": "familia",
+                "exemploPt": "family",
+                "nome": "éfe"
+              },
+              {
+                "maiuscula": "G",
+                "minuscula": "g",
+                "som": "letter name: «heh» (rough h)",
+                "ipa": "/xe/",
+                "exemplo": "gato",
+                "exemploPt": "cat",
+                "nome": "hé"
+              }
+            ]
+          },
+          {
+            "nome": "Part 2 — H to Ñ",
+            "letras": [
+              {
+                "maiuscula": "H",
+                "minuscula": "h",
+                "som": "letter name: «AH-cheh» (the letter h is always silent)",
+                "ipa": "/ˈatʃe/",
+                "exemplo": "hotel",
+                "exemploPt": "hotel",
+                "nome": "átche"
+              },
+              {
+                "maiuscula": "I",
+                "minuscula": "i",
+                "som": "letter name: «ee»",
+                "ipa": "/i/",
+                "exemplo": "isla",
+                "exemploPt": "island",
+                "nome": "i"
+              },
+              {
+                "maiuscula": "J",
+                "minuscula": "j",
+                "som": "letter name: «HO-tah» (rough h)",
+                "ipa": "/ˈxota/",
+                "exemplo": "jamón",
+                "exemploPt": "ham",
+                "nome": "hóta"
+              },
+              {
+                "maiuscula": "K",
+                "minuscula": "k",
+                "som": "letter name: «kah»",
+                "ipa": "/ka/",
+                "exemplo": "kilo",
+                "exemploPt": "kilo",
+                "nome": "ká"
+              },
+              {
+                "maiuscula": "L",
+                "minuscula": "l",
+                "som": "letter name: «EH-leh»",
+                "ipa": "/ˈele/",
+                "exemplo": "luz",
+                "exemploPt": "light",
+                "nome": "éle"
+              },
+              {
+                "maiuscula": "M",
+                "minuscula": "m",
+                "som": "letter name: «EH-meh»",
+                "ipa": "/ˈeme/",
+                "exemplo": "mesa",
+                "exemploPt": "table",
+                "nome": "éme"
+              },
+              {
+                "maiuscula": "N",
+                "minuscula": "n",
+                "som": "letter name: «EH-neh»",
+                "ipa": "/ˈene/",
+                "exemplo": "noche",
+                "exemploPt": "night",
+                "nome": "éne"
+              },
+              {
+                "maiuscula": "Ñ",
+                "minuscula": "ñ",
+                "som": "letter name: «EH-nyeh» (ny sound, as in canyon)",
+                "ipa": "/ˈeɲe/",
+                "exemplo": "niño",
+                "exemploPt": "boy, child",
+                "nome": "ênhe"
+              }
+            ]
+          },
+          {
+            "nome": "Part 3 — O to V",
+            "letras": [
+              {
+                "maiuscula": "O",
+                "minuscula": "o",
+                "som": "letter name: «oh»",
+                "ipa": "/o/",
+                "exemplo": "ojo",
+                "exemploPt": "eye",
+                "nome": "ó"
+              },
+              {
+                "maiuscula": "P",
+                "minuscula": "p",
+                "som": "letter name: «peh»",
+                "ipa": "/pe/",
+                "exemplo": "pan",
+                "exemploPt": "bread",
+                "nome": "pé"
+              },
+              {
+                "maiuscula": "Q",
+                "minuscula": "q",
+                "som": "letter name: «koo» (always with a silent «u»: que, qui)",
+                "ipa": "/ku/",
+                "exemplo": "queso",
+                "exemploPt": "cheese",
+                "nome": "kú"
+              },
+              {
+                "maiuscula": "R",
+                "minuscula": "r",
+                "som": "letter name: «EH-rreh» (rolled)",
+                "ipa": "/ˈere/",
+                "exemplo": "rojo",
+                "exemploPt": "red",
+                "nome": "érre"
+              },
+              {
+                "maiuscula": "S",
+                "minuscula": "s",
+                "som": "letter name: «EH-seh»",
+                "ipa": "/ˈese/",
+                "exemplo": "sol",
+                "exemploPt": "sun",
+                "nome": "ése"
+              },
+              {
+                "maiuscula": "T",
+                "minuscula": "t",
+                "som": "letter name: «teh»",
+                "ipa": "/te/",
+                "exemplo": "tres",
+                "exemploPt": "three",
+                "nome": "té"
+              },
+              {
+                "maiuscula": "U",
+                "minuscula": "u",
+                "som": "letter name: «oo»",
+                "ipa": "/u/",
+                "exemplo": "uno",
+                "exemploPt": "one",
+                "nome": "ú"
+              },
+              {
+                "maiuscula": "V",
+                "minuscula": "v",
+                "som": "letter name: «OO-beh» (sounds like b)",
+                "ipa": "/ˈuβe/",
+                "exemplo": "vino",
+                "exemploPt": "wine",
+                "nome": "úbe"
+              }
+            ]
+          },
+          {
+            "nome": "Part 4 — W, X, Y, Z",
+            "letras": [
+              {
+                "maiuscula": "W",
+                "minuscula": "w",
+                "som": "letter name: «OO-beh DOH-bleh» (only in foreign words)",
+                "ipa": "/ˈuβe ˈðoβle/",
+                "exemplo": "whisky",
+                "exemploPt": "whisky",
+                "nome": "úbe dóble"
+              },
+              {
+                "maiuscula": "X",
+                "minuscula": "x",
+                "som": "letter name: «EH-kees»",
+                "ipa": "/ˈekis/",
+                "exemplo": "taxi",
+                "exemploPt": "taxi",
+                "nome": "ékis"
+              },
+              {
+                "maiuscula": "Y",
+                "minuscula": "y",
+                "som": "letter name: «ee gree-EH-gah»",
+                "ipa": "/i ˈɡrjeɣa/",
+                "exemplo": "yo",
+                "exemploPt": "I",
+                "nome": "i griéga"
+              },
+              {
+                "maiuscula": "Z",
+                "minuscula": "z",
+                "som": "letter name: «THEH-tah» (th as in «think»)",
+                "ipa": "/ˈθeta/",
+                "exemplo": "zapato",
+                "exemploPt": "shoe",
+                "nome": "théta"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "hola",
+            "translit": "[pronuncia] OH-lah",
+            "pt": "hi, hello",
+            "en": "",
+            "audio": "hola"
+          },
+          {
+            "ru": "buenos días",
+            "translit": "[pronuncia] BWEH-nohs DEE-ahs",
+            "pt": "good morning",
+            "en": "",
+            "audio": "buenos días"
+          },
+          {
+            "ru": "buenas tardes",
+            "translit": "[pronuncia] BWEH-nahs TAR-dess",
+            "pt": "good afternoon",
+            "en": "",
+            "audio": "buenas tardes"
+          },
+          {
+            "ru": "buenas noches",
+            "translit": "[pronuncia] BWEH-nahs NOH-chess",
+            "pt": "good evening, good night (arriving or leaving)",
+            "en": "",
+            "audio": "buenas noches"
+          },
+          {
+            "ru": "adiós",
+            "translit": "[pronuncia] ah-dee-OHS",
+            "pt": "bye, goodbye",
+            "en": "",
+            "audio": "adiós"
+          },
+          {
+            "ru": "gracias",
+            "translit": "[pronuncia] GRAH-thyahs",
+            "pt": "thank you",
+            "en": "",
+            "audio": "gracias"
+          },
+          {
+            "ru": "por favor",
+            "translit": "[pronuncia] por fah-BOR",
+            "pt": "please",
+            "en": "",
+            "audio": "por favor"
+          },
+          {
+            "ru": "de nada",
+            "translit": "[pronuncia] deh NAH-dah",
+            "pt": "you're welcome",
+            "en": "",
+            "audio": "de nada"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 6,
+        "enunciado": "Out loud, in three steps. First, spell your name (for example: J-O-H-N: HOH-tah, oh, EH-reh, EH-neh). Then spell the name of your city. Finally, play Clara's part in the dialogue and say: «Buenos días. Un café, por favor. Gracias. Adiós.» Listen to the audio before each line and repeat."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-001.json",
+  "responsavel": null
+}
