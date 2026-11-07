@@ -28,6 +28,9 @@ export const AULAS_RUSSO: Record<'pt-BR' | 'en', TextoAulasRusso> = {
     lead: 'Aprenda russo com professores, ao vivo, por videochamada, e estude entre as aulas no curso de russo da Linvuu.',
     quemTitulo: 'Os professores',
     credenciais: [
+      'Felipe Rosa: vencedor (diploma de 1º grau) da III Olimpíada Internacional Online de Russo como Língua Estrangeira da Universidade Estatal de São Petersburgo (SPbGU), em 25/11/2022.',
+      'Felipe Rosa: participou da série de master classes «Preparação para o TRKI, de B2 a C2» (24 horas) do Centro de Testes de Língua da SPbGU, em junho de 2021.',
+      'Felipe Rosa: apresentou a palestra «Preparação para o TRKI (TORFL) usando plataforma EAD» no seminário on-line da SPbGU, em 26/06/2021.',
     ],
     comoTitulo: 'Como funcionam as aulas',
     como: [
@@ -50,6 +53,9 @@ export const AULAS_RUSSO: Record<'pt-BR' | 'en', TextoAulasRusso> = {
     lead: 'Learn Russian with teachers, live, by video call, and study between lessons with the Linvuu Russian course.',
     quemTitulo: 'The teachers',
     credenciais: [
+      'Felipe Rosa: winner (1st-degree diploma) of the 3rd SPbU International Online Olympiad in Russian as a Foreign Language, St Petersburg State University, 25 November 2022.',
+      'Felipe Rosa: took part in the SPbU workshop series «Preparing for TORFL, B2 to C2» (24 hours), St Petersburg University Language Testing Centre, June 2021.',
+      'Felipe Rosa: gave the talk «Preparing for TORFL using a distance-learning platform» at the SPbU online seminar, 26 June 2021.',
     ],
     comoTitulo: 'How the lessons work',
     como: [
