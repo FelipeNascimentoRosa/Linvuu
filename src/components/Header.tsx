@@ -1,15 +1,15 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { CURSOS_ATIVOS, IDIOMAS_GRAMATICA } from '../lib/content';
+import { CURSOS_ATIVOS, idiomasDeGramaticaNoSite, cursoComExplicacaoNoSite } from '../lib/content';
 import { useAuth } from '../lib/AuthContext';
 import { LOCALE, useT } from '../i18n';
 import { homeText } from '../i18n/home';
 import '../site-publico.css';
 
 // Gramática: o primeiro curso da vitrine que tem a aba de gramática.
-const GRAMATICA = `/gramatica/${CURSOS_ATIVOS.find((c) => IDIOMAS_GRAMATICA.includes(c.id))?.id ?? 'de'}`;
 
 export function Header() {
+  const GRAMATICA = `/gramatica/${idiomasDeGramaticaNoSite()[0] ?? 'ru'}`;
   const [menu, setMenu] = useState(false);
   const [conta, setConta] = useState(false);
   const nav = useNavigate();
@@ -79,7 +79,7 @@ export function Header() {
 
       {menu && (
         <div className="lv-mobile" id="menu-mobile">
-          {CURSOS_ATIVOS.map((c) => <Link key={c.id} to={`/curso/${c.id}`}>{c.nome}</Link>)}
+          {CURSOS_ATIVOS.filter((c) => cursoComExplicacaoNoSite(c.id)).map((c) => <Link key={c.id} to={`/curso/${c.id}`}>{c.nome}</Link>)}
           <Link to="/cursos">{t.nav.todos}</Link>
           <Link to={GRAMATICA}>{t.nav.gramatica}</Link>
           <Link to="/#metodo">{t.nav.metodo}</Link>

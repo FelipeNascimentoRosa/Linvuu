@@ -36,7 +36,7 @@ Legenda: **[observado]** visto no console ou na produção em 22/10/2026; **[tes
 - Assinatura e cobrança vivem no Stripe, nunca no Firestore.
 
 ## 5. Regras do Firestore
-- Arquivo: `firestore.rules`. Publicada em 22/10/2026, 11:35 (Brasília), no projeto `linvuu`. Cópia anterior (17/10) para reversão: `docs/firestore.rules.publicada-2026-10-17.txt`.
+- Arquivo: `firestore.rules`. Publicada em 22/10/2026, 11:35 (Brasília), no projeto `linvuu`. Cópia anterior (17/10) para reversão: `docs/historico/firestore.rules.publicada-2026-10-17.txt`.
 - **O arquivo não é publicado automaticamente.** Processo: rodar `npm run testar:regras`, publicar no Console (Firestore → Regras) ou com `firebase deploy --only firestore:rules --project linvuu`, e conferir em seguida com leituras anônimas (esperado: 403).
 - `users/{uid}`: só o dono lê; criação com campos fixos e zerados; o dono só pode alterar `nome`; sem exclusão. Todo o resto (`usuarios`, `lessons`, `newsletter`, `eventos`) é negado ao navegador.
 

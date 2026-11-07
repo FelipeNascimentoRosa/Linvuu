@@ -3,12 +3,12 @@ import type { Explicacao } from './locales';
 /** O idioma estudado identifica conteúdo, áudio e progresso; nunca vem do idioma da interface. */
 export type IdiomaEstudado = 'en' | 'es' | 'fr' | 'it' | 'de' | 'ru' | 'br';
 export interface IdiomasDaAula {
-  interface: 'pt-BR' | 'en' | 'es';
+  interface: 'pt-BR' | 'en';
   estudado: string;
   explicacaoSolicitada: Explicacao;
   explicacaoEfetiva: Explicacao;
 }
-export const explicacaoValida = (v: unknown): v is Explicacao => v === 'pt' || v === 'en' || v === 'es';
+export const explicacaoValida = (v: unknown): v is Explicacao => v === 'pt' || v === 'en';
 export const chaveExplicacao = (curso: string) => `linvuu:explicacao:${curso}`;
 /** Sem preferência, usa o idioma original do material, independentemente dos menus. */
 export function escolherExplicacao(fonte: Explicacao, valor: unknown): Explicacao {

@@ -6,7 +6,7 @@ const raiz = path.resolve(import.meta.dirname, '..');
 const idiomasDir = path.join(raiz, 'content', 'idiomas');
 const gramDir = path.join(raiz, 'content', 'gramatica');
 const FONTE = { br: 'en' }; // todos os outros cursos foram escritos em português
-const EXPL = ['pt', 'en', 'es'];
+const EXPL = ['pt', 'en'];
 const conta = (d) => (fs.existsSync(d) ? fs.readdirSync(d).filter((f) => /^dia-\d+\.json$/.test(f)).length : 0);
 const linhas = [];
 const cursos = fs.readdirSync(idiomasDir).filter((c) => fs.statSync(path.join(idiomasDir, c)).isDirectory()).sort();

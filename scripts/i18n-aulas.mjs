@@ -1,20 +1,20 @@
 // Explicação das aulas em outros idiomas (inglês e espanhol), sem tocar no idioma estudado nem nos áudios.
 //
 // Cada curso foi escrito numa língua de explicação (português; o curso `br` foi escrito em inglês). A tradução de uma aula é um
-// mapa «texto original → texto traduzido», em content/idiomas/<id>/i18n/<en|es>/aula-NNN.json. Só os campos de explicação passam
+// mapa «texto original → texto traduzido», em content/idiomas/<id>/i18n/<en>/aula-NNN.json. Só os campos de explicação passam
 // pelo mapa (títulos, explicações, traduções, instruções, motivos de erro, pronúncia aproximada…). O texto do idioma estudado
 // (`ru`, `audio`, exemplos de letra) nunca muda. `titulos.json` traduz os títulos de todas as aulas e sessões, para a trilha.
 //
 // Uso:
-//   node scripts/i18n-aulas.mjs extrair <id> <en|es> <aula> [pasta]   lista os textos ainda sem tradução (gera <pasta>/<id>-<l>-NNN.src.json)
-//   node scripts/i18n-aulas.mjs juntar <id> <en|es> <aula> [pasta]    junta <id>-<l>-NNN.tr.json (mesma ordem; null = manter) ao mapa
-//   node scripts/i18n-aulas.mjs titulos <id> <en|es> [pasta]          o mesmo para os títulos de todas as aulas e sessões
+//   node scripts/i18n-aulas.mjs extrair <id> <en> <aula> [pasta]   lista os textos ainda sem tradução (gera <pasta>/<id>-<l>-NNN.src.json)
+//   node scripts/i18n-aulas.mjs juntar <id> <en> <aula> [pasta]    junta <id>-<l>-NNN.tr.json (mesma ordem; null = manter) ao mapa
+//   node scripts/i18n-aulas.mjs titulos <id> <en> [pasta]          o mesmo para os títulos de todas as aulas e sessões
 //   node scripts/i18n-aulas.mjs estado                                quantas aulas cada curso tem traduzidas
 import fs from 'node:fs';
 import path from 'node:path';
 
 export const raiz = path.resolve(import.meta.dirname, '..');
-export const LINGUAS = ['en', 'es'];
+export const LINGUAS = ['en'];
 /** Língua em que cada curso foi escrito. */
 export const fonteDe = (id) => (id === 'br' ? 'en' : 'pt');
 const pad = (n) => String(n).padStart(3, '0');
@@ -77,6 +77,28 @@ export function traduzirAula(aula, id, l) {
     if (typeof v === 'string' && v.length) { definir(v); return; }
     if (tipo === 'explicacao') faltam.push(t);
   });
+  // Overrides por exercício permitem adaptar enunciados idênticos a contextos distintos.
+  for (const sessao of copia.sessoes) for (const bloco of sessao.blocos) {
+    if (bloco.tipo !== 'exercicios') continue;
+    for (const item of bloco.itens) {
+      const raw = mapa[`@exercicio:${item.id}`];
+      if (!raw) continue;
+      const override = JSON.parse(raw);
+      for (const campo of ['tipo', 'enunciado', 'explicacao', 'opcoes', 'gabarito', 'respostaEsperada', 'audio']) {
+        if (Object.hasOwn(override, campo)) { if (override[campo] === null) delete item[campo]; else item[campo] = override[campo]; }
+      }
+    }
+  }
+  // Ajustes contextuais em células específicas, sem alterar traduções iguais noutros contextos.
+  copia.sessoes.forEach((sessao, si) => sessao.blocos.forEach((bloco, bi) => {
+    const raw = mapa[`@bloco:${si}:${bi}`];
+    if (!raw) return;
+    for (const [caminho, valor] of Object.entries(JSON.parse(raw))) {
+      const partes = caminho.split('.'); let destino = bloco;
+      for (const parte of partes.slice(0, -1)) destino = destino[parte];
+      destino[partes.at(-1)] = valor;
+    }
+  }));
   // Palavras: o inglês já existe no dado (`en`) nos cursos de russo e alemão.
   if (l === 'en') for (const s of copia.sessoes) for (const b of s.blocos) if (b.tipo === 'palavras' || b.tipo === 'vocabulario') b.itens.forEach((i, k) => {
     const original = aula.sessoes[copia.sessoes.indexOf(s)].blocos[s.blocos.indexOf(b)].itens[k].pt;
@@ -102,7 +124,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     }
     process.exit(0);
   }
-  if (!id || !LINGUAS.includes(l)) { console.error('uso: extrair|juntar <id> <en|es> <aula> [pasta] · titulos <id> <en|es> [pasta] · estado'); process.exit(1); }
+  if (!id || !LINGUAS.includes(l)) { console.error('uso: extrair|juntar <id> <en> <aula> [pasta] · titulos <id> <en> [pasta] · estado'); process.exit(1); }
   if (cmd === 'titulos') {
     const pasta = a3 ?? '.';
     const fonte = path.join(pasta, `${id}-${l}-titulos.src.json`), trad = path.join(pasta, `${id}-${l}-titulos.tr.json`);

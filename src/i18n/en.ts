@@ -61,7 +61,7 @@ export const en: Dicionario = {
     { p: 'Will I become fluent?', r: 'Linvuu gives you a method, practice and consistency; the level you reach depends on your study hours and on using the language for real. The courses are designed to take you from zero to a solid B1 foundation.' },
     { p: 'Are all lessons explained in English?', r: 'The Brazilian Portuguese course is written in English from the first to the last lesson. In the other courses, the explanations are being translated lesson by lesson: each course page shows how many lessons are already in English, and an untranslated session says so before you start it.' },
     { p: 'Is the audio real?', r: 'Every sentence has audio made with neural voices of the language, reviewed step by step. Where a file is still missing, the site uses your browser\'s voice and tells you on screen.' },
-    { p: 'Is the site available in other languages?', r: 'Yes. At the top of the page you can switch to Portuguese or Spanish: the site changes language, and so do the explanations in the courses already translated into it; the sentences, dialogues and audio of the language you study stay the same.' },
+    { p: 'Is the site available in other languages?', r: 'Yes, and each language lives on its own domain: English is at linvuu.com and Portuguese at linvuu.com.br. The sentences, dialogues and audio of the language you study stay the same on both.' },
   ],
   cta: { titulo: 'Your first session takes 30 minutes.', texto: 'Start now: 2 free lessons, no card, nothing to install.', primario: 'Start free', secundario: 'See all courses' },
   rodape: {
@@ -73,12 +73,14 @@ export const en: Dicionario = {
   newsletter: { email: 'Your e-mail', consentimento: 'I agree to receive e-mails from Linvuu.', botao: 'Sign me up', ok: 'Done. You will receive Linvuu updates.', erro: 'We could not sign you up right now. Write to', invalido: 'Enter a valid e-mail address.', semAceite: 'Tick the box to receive e-mails.', ocupado: 'Sending…', assunto: 'Updates, please' },
   card: { noAr: (n: number) => (n === 1 ? '1 lesson online' : `${n} lessons online`), preparo: 'In preparation', ate: 'zero to B1', cobertura: (a: number, b: number) => (a >= b ? 'All lessons in English' : `${a} of ${b} lessons in English`) },
   cursosPagina: {
+    emBreve: 'Coming soon, with explanations in English',
     titulo: 'All courses', buscar: 'Search', exemplo: 'E.g. German, French', contagem: (n: number) => (n === 1 ? '1 course' : `${n} courses`),
     vazio: (q: string) => `No course found for "${q}". Try another word or`, limpar: 'clear the search', portugues: 'Brazilian Portuguese, explained in English →',
+    avisoObraTitulo: '', avisoObraTexto: '',
   },
   cursoPagina: {
     continuarBtn: 'Continue', sessaoTitulo: (n: number, t: string) => `Session ${n}: ${t}`, continuar: (n: number, t: string) => `Continue with session ${n}: ${t}`, comecar: 'Start with session 1 (free)', feitas: (a: number, b: number) => `${a} of ${b} sessions completed`, concluida: 'completed', aulasNivel: (n: number) => `${n} lessons`, retomarKicker: (c: string) => `Continue ${c}`,
-    tituloSeo: (nome: string) => `${nome} for English speakers, from zero to B1`,
+    tituloSeo: (nome: string) => `Learn ${nome} online, explained in English`,
     fatos: ['~30-minute sessions', 'Starts from zero'], noAr: (a: number, b: number) => `${a} of ${b} sessions online`, gramatica: (nome: string) => `${nome} grammar →`,
     partida: (n: number) => `Your starting point: session ${n}`, sugerimos: (nivel: string, n: number, t: string) => `For level ${nivel}, we suggest starting at session ${n}: ${t}.`, irPara: (n: number) => `Go to session ${n}`,
     producao: 'Some lessons of this course are still in production. You can browse the whole course and see the topic of every session.',
@@ -170,7 +172,7 @@ export const en: Dicionario = {
     'auth/popup-blocked': 'Your browser blocked the Google window. Allow pop-ups and try again.', 'auth/network-request-failed': 'No connection. Check your internet and try again.',
     'auth/unauthorized-domain': 'This address has not been authorised for sign-in yet.', 'auth/operation-not-allowed': 'This sign-in method has not been enabled yet.', 'auth/admin-restricted-operation': 'Sign-up by e-mail is disabled right now.',
     'auth/password-does-not-meet-requirements': 'The password does not meet the security rules. Use upper and lower case letters, a number and a symbol.', 'auth/configuration-not-found': 'E-mail sign-in has not been configured yet.',
-    entreConta: 'Sign in to your account to continue.', pagamentoIndisponivel: 'Payments are unavailable right now. Try again in a moment.',
+    entreConta: 'Sign in to your account to continue.', jaTemAcesso: 'You already have active paid access. To change plans, use “Manage subscription” or wait for the current period to end.', pagamentoIndisponivel: 'Payments are unavailable right now. Try again in a moment.',
     padrao: 'We could not finish that. Try again.', compraApp: 'Purchases are not available in this app yet.',
   },
   naoEncontrada: { titulo: 'Page not found', texto: 'This address does not exist or has moved.', inicio: 'Back to the home page', cursos: 'See courses' },
@@ -209,7 +211,7 @@ export const en: Dicionario = {
       { k: 'b1', titulo: 'B1 · Intermediate', resumo: 'Use the subjunctive, hypotheses, indirect speech and the passive; write formal e-mails; follow the news; handle a job interview, a bank and everyday life in Brazil.' },
     ],
   },
-  linguas: { pt: 'Portuguese', en: 'English', es: 'Spanish' } as Record<string, string>,
+  linguas: { pt: 'Portuguese', en: 'English'} as Record<string, string>,
   livro: { indisponivelIdioma: 'This book is written in Portuguese, for Portuguese speakers.' },
 };
 

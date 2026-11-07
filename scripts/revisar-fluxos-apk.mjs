@@ -8,7 +8,7 @@ let browser;
 try {
  for(let i=0;i<60;i++){try{if((await fetch(base)).ok)break;}catch{}await new Promise(r=>setTimeout(r,500));}
  browser=await chromium.launch();
- for(const locale of ['', '/en','/es']) {
+ for(const locale of ['', '/en']) {
   const ctx=await browser.newContext({viewport:{width:390,height:844},reducedMotion:'reduce'});
   const page=await ctx.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto(base+locale+'/cursos');await page.locator('.app-catalogo').waitFor();

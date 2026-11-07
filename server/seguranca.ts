@@ -7,14 +7,14 @@ export function politicaCSP(extraMidia = ''): string {
   const firebase = ['https://*.googleapis.com', 'https://*.firebaseio.com', 'wss://*.firebaseio.com', 'https://*.firebaseapp.com', 'https://*.google.com'];
   const d: Record<string, string[]> = {
     'default-src': ["'self'"],
-    'script-src': ["'self'", 'https://apis.google.com', 'https://connect.facebook.net', 'https://analytics.tiktok.com'],
+    'script-src': ["'self'", 'https://apis.google.com', 'https://connect.facebook.net', 'https://analytics.tiktok.com', 'https://www.clarity.ms', 'https://scripts.clarity.ms'],
     'style-src': ["'self'", "'sha256-4kzgBy+zsz5Dss9Gwj059V7MYYUJ3GYIpRQcTylPB9k='", "'sha256-7h6i3aENJQ7IjIdGXixt17Ys0XBUdeIdzxZyteT906w='"], // fallback sem unsafe-inline: so o bloco anti-CLS do index.html, por hash (fonte com espaco apos ':' + build minificado sem espaco)
     'style-src-elem': ["'self'", "'sha256-4kzgBy+zsz5Dss9Gwj059V7MYYUJ3GYIpRQcTylPB9k='", "'sha256-7h6i3aENJQ7IjIdGXixt17Ys0XBUdeIdzxZyteT906w='"], // elementos <style>: so o bloco anti-CLS do index.html (os dois hashes da linha acima)
     'style-src-attr': ["'unsafe-inline'"], // atributos style="" do React (21 usos); nao carregam recursos externos
-    'img-src': ["'self'", 'data:', 'blob:', 'https://*.googleusercontent.com', 'https://www.facebook.com', 'https://analytics.tiktok.com'],
+    'img-src': ["'self'", 'data:', 'blob:', 'https://*.googleusercontent.com', 'https://www.facebook.com', 'https://analytics.tiktok.com', 'https://*.clarity.ms', 'https://c.bing.com'],
     'media-src': ["'self'", 'blob:', 'data:', ...(extraMidia ? [extraMidia] : [])],
     'font-src': ["'self'", 'data:'],
-    'connect-src': ["'self'", 'https://us.i.posthog.com', 'https://eu.i.posthog.com', 'https://www.facebook.com', 'https://analytics.tiktok.com', 'https://analytics-ipv6.tiktokw.us', ...firebase, ...(extraMidia ? [extraMidia] : [])],
+    'connect-src': ["'self'", 'https://us.i.posthog.com', 'https://eu.i.posthog.com', 'https://www.facebook.com', 'https://analytics.tiktok.com', 'https://analytics-ipv6.tiktokw.us', 'https://*.clarity.ms', ...firebase, ...(extraMidia ? [extraMidia] : [])],
     'frame-src': ['https://*.firebaseapp.com', 'https://accounts.google.com', 'https://*.google.com'],
     'object-src': ["'none'"],
     'base-uri': ["'self'"],
@@ -44,7 +44,7 @@ export function cabecalhos(producao: boolean) {
     res.setHeader('Cross-Origin-Resource-Policy', 'same-site');
     res.setHeader('X-Permitted-Cross-Domain-Policies', 'none');
     if (producao) {
-      res.setHeader('Strict-Transport-Security', 'max-age=15552000'); // 180 dias; sem includeSubDomains nem preload
+      res.setHeader('Strict-Transport-Security', 'max-age=31536000; includeSubDomains'); // 1 ano; único subdomínio em uso é www (HTTPS, Cloudflare). Sem preload: difícil de reverter
       res.setHeader(nomeCSP, csp);
     }
     next();
