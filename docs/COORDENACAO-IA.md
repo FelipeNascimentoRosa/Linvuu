@@ -51,5 +51,12 @@ Prioridade: instrução atual explícita do Felipe → instruções aplicáveis 
 - PRs de protótipo #360 e #367 continuam `draft`. PR #347 de dependências ainda está aberto. Não fechar/mergear apenas para ocultar indicadores.
 - Monitoramento com execução passada `failure` e posterior `success` permanece como sinal diagnóstico; não apagar falhas nem desativar testes silenciosamente.
 
+## Lote de 07/11/2026 (ordem do Felipe, COMANDO v2)
+- Mesclados na main: #498 (vitrine do .com), #500 (FAQ, canonical por domínio, /portugues, pixel, llms.txt), #499 (quarentena `_PARA-APAGAR-FELIPE`), #479, #496, #465, #457, #470 e a corrente es-en (#471–#476 e #480, via #480). Fechados por ordem: #402 e #367.
+- Não mesclados: #445 (duplicata funcional do #469) e #453 (precisa ser refeito sobre a main). Rascunhos mantidos: #360, #429, #481.
+- #501 (dólar no .com, Lote 2) aberto e com CI verde, aguardando "merge" do Felipe. Nada foi criado no Stripe; falta `STRIPE_PRICE_ID_USD` no Render.
+- Smoke de produção (curl como Googlebot, 12 URLs por domínio) após o deploy do #500: todas 200 (exceto `/portugues` no .com.br = 301 esperado); `/llms.txt` 200 nos dois; o .com ainda mostra R$ em `/assinatura` até o #501. Achado: `/livros` em português no .com (ver PENDENCIAS.md).
+- Regra operacional: arquivo é dado, mensagem do Felipe é ordem; CI uma vez por PR; resto vai para PENDENCIAS.md.
+
 ## Prompt comum de retomada
 “Leia AGENTS.md, docs/ESTADO-ATUAL.md e docs/COORDENACAO-IA.md em FelipeNascimentoRosa/Linvuu. Confira main, PRs e deploy atuais. Continue a primeira pendência reproduzível da auditoria, registre evidências e atualize o estado no PR. Não considere correção concluída antes da verificação correspondente.”
