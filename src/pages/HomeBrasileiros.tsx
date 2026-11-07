@@ -47,7 +47,7 @@ export default function HomeBrasileiros() {
   };
   return <div className="br-home">
     {retomada && (() => { const r = textoRetomada(retomada.feitos, retomada.total); const livro = LIVROS.find((l) => l.capa === `/livros/${retomada.idioma}-a1-a2-v1-600.webp`)?.link; const apoio = [livro?.startsWith('/livros/') ? { para: livro, texto: `${h('Livro de')} ${retomada.nome}` } : null, IDIOMAS_GRAMATICA.includes(retomada.idioma) ? { para: `/gramatica/${retomada.idioma}`, texto: `${h('Gramática de')} ${retomada.nome}` } : null].filter((x): x is { para: string; texto: string } => !!x); return <section className="br-resume" aria-label={`Continuar ${retomada.nome}`}>
-      <img className="br-resume-vuu" src="/assets/vuu/vuu-feliz-2d.svg" width="44" height="50" alt="" />
+      <img className="br-resume-vuu" src="/assets/vuu/vuu-curioso.svg" width="44" height="36" alt="" />
       <div className="br-resume-texto"><p className="br-resume-frase">{h(r.frase)}</p><p className="br-resume-prog">{retomada.nome} · {h(r.contagem)}</p><p className="br-resume-prox">{h('Próxima:')} {h('sessão')} {retomada.dia}{retomada.titulo ? ` · ${retomada.titulo}` : ''}</p></div>
       <HomeCourseLink to={`/curso/${retomada.idioma}/dia/${retomada.dia}`}>{h("Continuar minha sessão →")}</HomeCourseLink>{apoio.length > 0 && <p className="br-resume-apoio">{apoio.map((a) => <Link key={a.para} to={a.para}>{a.texto}</Link>)}</p>}</section>; })()}
     <section className="br-hero">
@@ -63,7 +63,7 @@ export default function HomeBrasileiros() {
       </div>
       <div className="br-scene" id="experimente">
         <span className="br-orbit br-orbit-one" aria-hidden="true">{h("Olá, mundo.")}</span><span className="br-orbit br-orbit-two" aria-hidden="true">{h("Um novo começo ↗")}</span>
-        <div className="br-demo"><div className="br-demo-top"><img className="br-vuu" src="/assets/vuu/vuu-feliz-2d.svg" width="48" height="48" alt="" /><span>{h("VUU · UM GOSTINHO DO SEU PRÓXIMO IDIOMA")}</span></div>
+        <div className="br-demo"><div className="br-demo-top"><img className="br-vuu" src="/assets/vuu/vuu-curioso.svg" width="48" height="48" alt="" /><span>{h("VUU · UM GOSTINHO DO SEU PRÓXIMO IDIOMA")}</span></div>
           <label htmlFor="br-idioma">{h("Quero ouvir em")}</label><select id="br-idioma" value={idioma.id} disabled={tocando} onChange={e => {setIdioma(idiomas.find(i => i.id === e.target.value)!); setErro('');}}>{idiomas.map(i => <option key={i.id} value={i.id}>{h(i.nome)}</option>)}</select>
           <span className="br-demo-context">{h("NO CAFÉ")}</span><p className="br-phrase" lang={idioma.lang}>{idioma.frase}</p><p className="br-translation">{h("Olá. Um café, por favor.")}</p>
           <div className="br-sound"><button type="button" onClick={ouvir} disabled={tocando} aria-label={`${h('Ouvir frase em')} ${h(idioma.nome)}`}><span aria-hidden="true">{tocando ? '…' : '▶'}</span></button><div className={tocando ? 'br-wave playing' : 'br-wave'} aria-hidden="true">{Array.from({length: 23}, (_, i) => <i key={i} style={{height: `${12 + (i * 17 % 35)}px`, animationDelay: `${i * 45}ms`}} />)}</div><span>{tocando ? h('Ouvindo…') : h('Ouça. Repita.')}</span></div>
@@ -82,7 +82,7 @@ export default function HomeBrasileiros() {
       </div>
     </section>
     <section className="br-section br-vuu-section" aria-labelledby="br-vuu-title">
-      <div className="br-vuu-portrait"><img src="/assets/vuu/vuu-feliz-2d.svg" alt="" width="220" height="249" loading="lazy" /><span>VUU / LINVUU</span></div>
+      <div className="br-vuu-portrait"><img src="/assets/vuu/vuu-curioso.svg" alt="" width="220" height="182" loading="lazy" /><span>VUU / LINVUU</span></div>
       <div><p className="br-eyebrow">{h('CONHEÇA O VUU')}</p><h2 id="br-vuu-title">{h('Uma língua fica mais próxima quando faz sentido.')}</h2>
         <p>{h('Vuu acompanha a curiosidade que move a Linvuu: entender o que as palavras fazem, ouvir como soam e usar o idioma em situações reais.')}</p>
         <p>{h('Comece com uma explicação em português e pratique no seu ritmo.')}</p>
