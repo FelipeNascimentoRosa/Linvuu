@@ -76,8 +76,8 @@ await Promise.all(Array.from({ length: 4 }, async () => { for (let p; (p = fila.
 
 // Navegação SPA: abre uma página e segue um link interno real; o <head> resultante deve ser o do servidor para o destino.
 const percursos = global
-  ? [['/', '/cursos'], ['/cursos', '/curso/ru'], ['/curso/ru', '/curso/ru/dia/1'], ['/cursos', '/curso/de'], ['/curso/br', '/curso/br/dia/1']]
-  : [['/', '/cursos'], ['/cursos', '/curso/ru'], ['/curso/ru', '/curso/ru/dia/1'], ['/en', '/en/cursos'], ['/en/cursos', '/en/curso/de'], ['/en/curso/ru', '/en/curso/ru/dia/1']];
+  ? [['/', '/cursos'], ['/cursos', '/curso/ru'], ['/curso/ru', '/curso/ru/dia/1'], ['/cursos', '/curso/fr'], ['/curso/br', '/curso/br/dia/1']]
+  : [['/', '/cursos'], ['/cursos', '/curso/ru'], ['/curso/ru', '/curso/ru/dia/1'], ['/en', '/en/cursos'], ['/en/cursos', '/en/curso/fr'], ['/en/curso/ru', '/en/curso/ru/dia/1']];
 for (const [de, para] of percursos) {
   const page = await ctx.newPage();
   await page.goto(base + de, { waitUntil: 'load' });
