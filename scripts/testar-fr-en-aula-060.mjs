@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import { traduzirAula } from './i18n-aulas.mjs';
+const a=JSON.parse(fs.readFileSync('content/idiomas/fr/aulas/aula-060.json','utf8'));
+const t=traduzirAula(a,'fr','en').aula;
+const all=t.sessoes.flatMap(s=>s.blocos).filter(b=>b.tipo==='exercicios').flatMap(b=>b.itens);
+const item=id=>all.find(x=>x.id===id);
+assert.equal(item('fr-060-e04').tipo,'producao'); assert.equal(item('fr-060-e04').audio,undefined);
+assert.equal(item('fr-060-e07').gabarito,'to wait'); assert.ok(item('fr-060-e25').opcoes.includes(item('fr-060-e25').gabarito));
+assert.equal(t.sessoes[1].blocos[2].erros[2].certo,'J’exige que tu manges.');
+assert.equal(t.sessoes[2].blocos[2].tabela[2].situacao,'ask someone to repeat');
+console.log('ok: aula 60 em inglês');

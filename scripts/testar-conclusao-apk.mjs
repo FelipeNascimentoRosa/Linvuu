@@ -10,7 +10,7 @@ const server=spawn(process.execPath,['node_modules/vite/bin/vite.js','preview','
 try{
  for(let i=0;i<60;i++){try{if((await fetch(base)).ok)break;}catch{}await new Promise(r=>setTimeout(r,250));}
  browser=await chromium.launch({executablePath:process.env.CHROME_EXECUTABLE_PATH,args:['--no-sandbox']});
- for(const locale of ['', '/en','/es'])for(const motion of ['reduce','no-preference']){
+ for(const locale of ['', '/en'])for(const motion of ['reduce','no-preference']){
   const context=await browser.newContext({viewport:{width:320,height:720},reducedMotion:motion}),page=await context.newPage();await page.route('https://linvuu.com.br/**',r=>r.abort());
   console.log('CONCLUSAO_CTX',locale||'pt',motion);
   await page.goto(base+locale+`/curso/${locale?'br':'en'}/dia/1`);await page.locator('.app-sessao').waitFor();

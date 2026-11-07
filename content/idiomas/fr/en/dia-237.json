@@ -27,57 +27,57 @@
           {
             "ru": "deviner",
             "translit": "duh-vee-NAY",
-            "pt": "",
-            "en": "",
+            "pt": "to guess",
+            "en": "to guess",
             "audio": "deviner"
           },
           {
             "ru": "le contexte",
             "translit": "luh kohn-TEKST",
-            "pt": "",
-            "en": "",
+            "pt": "the context",
+            "en": "the context",
             "audio": "le contexte"
           },
           {
             "ru": "la racine",
             "translit": "lah rah-SEEN",
-            "pt": "",
-            "en": "",
+            "pt": "the root",
+            "en": "the root",
             "audio": "la racine"
           },
           {
             "ru": "le préfixe",
             "translit": "luh pray-FEEKS",
-            "pt": "",
-            "en": "",
+            "pt": "the prefix",
+            "en": "the prefix",
             "audio": "le préfixe"
           },
           {
             "ru": "le suffixe",
             "translit": "luh sew-FEEKS",
-            "pt": "",
-            "en": "",
+            "pt": "the suffix",
+            "en": "the suffix",
             "audio": "le suffixe"
           },
           {
             "ru": "un mot apparenté",
             "translit": "an moh-tah-pah-rahn-TAY",
-            "pt": "",
-            "en": "",
+            "pt": "a cognate; a related word",
+            "en": "a cognate; a related word",
             "audio": "un mot apparenté"
           },
           {
             "ru": "un faux ami",
             "translit": "an foh-zah-MEE",
-            "pt": "",
-            "en": "",
+            "pt": "a false friend",
+            "en": "a false friend",
             "audio": "un faux ami"
           },
           {
             "ru": "comprendre l'essentiel",
             "translit": "kohn-prahn-druh leh-sahn-see-EHL",
-            "pt": "",
-            "en": "",
+            "pt": "to understand the main points",
+            "en": "to understand the main points",
             "audio": "comprendre l'essentiel"
           }
         ]
@@ -86,8 +86,8 @@
         "tipo": "gramatica",
         "min": 12,
         "titulo": "Four shortcuts for reading and listening",
-        "explicacao": "STEP 1: cognates: many French words look like English ones (-tion = -tion: «la décision», «l'information»; -ité = -ity: «la qualité», «la liberté»; -eur = -or: «le professeur», «l'acteur»). STEP 2: word families: «travailler, travail, travailleur, travaillé» share the same root. If you know one, you understand the others. STEP 3: prefixes: «re-» = again («refaire»), «in-/im-» = negation («impossible»), «dé-» = undoing («défaire»), «pré-» = before («prévoir»). STEP 4: context: read the whole sentence and ask yourself what kind of word is missing (person, action, place). STEP 5: when listening, look first for the words you know, the numerals and the proper names; the essentials are usually there. STEP 6: do not stop at an unknown word: keep going and come back to it later.",
-        "comparacao": "in English, the endings «-tion» and «-ity» have French counterparts («-tion», «-té»). That gives you a huge passive vocabulary for free. Only beware of the false friends, which we cover next.",
+        "explicacao": "STEP 1: cognates: many French words look like English ones (-tion = -tion: «la décision», «l'information»; -ité = -ity: «la qualité», «la liberté»; -eur = -or: «le professeur», «l'acteur»). STEP 2: word families: «travailler, travail, travailleur, travaillé» share the same root. Knowing one can help you infer another; verify its meaning in context. STEP 3: prefixes: «re-» = again («refaire»), «in-/im-» = negation («impossible»), «dé-» = undoing («défaire»), «pré-» = before («prévoir»). STEP 4: context: read the whole sentence and ask yourself what kind of word is missing (person, action, place). STEP 5: when listening, look first for the words you know, the numerals and the proper names; the essentials are usually there. STEP 6: do not stop at an unknown word: keep going and come back to it later.",
+        "comparacao": "in English, the endings «-tion» and «-ity» have French counterparts («-tion», «-té»). These patterns can help you recognize words, but spelling and meaning do not always match. Check the context and watch for false friends.",
         "tabela": [
           {
             "expression": "-tion = -tion (same ending in English)",
@@ -95,7 +95,7 @@
             "example": "la décision, l'information"
           },
           {
-            "expression": "-té = -dade",
+            "expression": "-té ≈ -ty (often)",
             "function": "cognates",
             "example": "la qualité, la liberté"
           },
@@ -147,7 +147,7 @@
       {
         "tipo": "producao",
         "min": 5,
-        "enunciado": "Read the text «Un message de l'hôtel» below aloud and give only the gist in English."
+        "enunciado": "Find a short French message, identify familiar words and use context to explain its main point in English."
       },
       {
         "tipo": "revisao",

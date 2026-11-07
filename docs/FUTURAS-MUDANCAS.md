@@ -28,7 +28,7 @@ Lista viva. Cada item diz o que falta, por quê e de quem depende. Marque como f
 - [ ] Ativar App Check (reCAPTCHA na web; App Attest / Play Integrity no app).
 
 ## 5. App (iOS e Android)
-- [ ] Android: APK de teste pelo GitHub Actions (`.github/workflows/app-android.yml`) — **feito nesta etapa**.
+- [ ] Android: APK de pré-lançamento pelo GitHub Actions (`.github/workflows/app-android.yml`) — **feito nesta etapa**.
 - [ ] Android: ícone, splash screen, nome e cores do app (ícone com a marca, sem emoji); assinatura de release (keystore guardada em Secrets do GitHub, nunca no repositório).
 - [ ] Android: AAB para a Play Store, ficha da loja, política de privacidade publicada, classificação de conteúdo.
 - [ ] iOS: exige um Mac (ou um workflow `macos-latest` no GitHub Actions) e conta de desenvolvedor Apple.

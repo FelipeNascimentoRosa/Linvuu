@@ -9,7 +9,7 @@ let browser;const results=[];
 try{
  for(let i=0;i<60;i++){try{if((await fetch(base)).ok)break;}catch{}await new Promise(r=>setTimeout(r,250));}
  browser=await chromium.launch({headless:true,args:['--no-sandbox']});
- for(const locale of ['', '/en','/es']){
+ for(const locale of ['', '/en']){
   const context=await browser.newContext({viewport:{width:390,height:844},reducedMotion:'reduce'});const page=await context.newPage();
   await page.goto(base+locale+'/');await page.locator('.app-missao').waitFor();
   await page.locator('[aria-controls="app-ajustes"]').click();

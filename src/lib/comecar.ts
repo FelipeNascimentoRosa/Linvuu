@@ -8,7 +8,7 @@ export interface Comecar {
   dica: string;
 }
 
-export const COMECAR: Record<'pt-BR' | 'en' | 'es', Comecar> = {
+export const COMECAR: Record<'pt-BR' | 'en', Comecar> = {
   'pt-BR': {
     kicker: 'Primeiros passos', titulo: 'Como começar na Linvuu', lead: 'Quatro passos, sem cadastro e sem cartão.',
     passos: [
@@ -29,7 +29,7 @@ export const COMECAR: Record<'pt-BR' | 'en' | 'es', Comecar> = {
   en: {
     kicker: 'Getting started', titulo: 'How to start on Linvuu', lead: 'Four steps, with no sign-up and no card.',
     passos: [
-      { n: '01', t: 'Choose your course', d: 'Pick the course you want. Every explanation is in English.' },
+      { n: '01', t: 'Choose your course', d: 'Pick the course you want. Brazilian Portuguese, French and Russian are explained in English from start to finish; the other courses are being translated, and each course page shows its real coverage.' },
       { n: '02', t: 'Open the first session', d: 'Each session takes about 30 minutes and comes in short blocks: read, tap Continue and go at your own pace. The first two lessons of each course are free.' },
       { n: '03', t: 'Listen and repeat out loud', d: 'Tap the speaker icon next to any word, sentence or dialogue. Listen first, then repeat: the language comes in through the ear.' },
       { n: '04', t: 'Practise and track your progress', d: 'Exercises are marked straight away, with the reason for each mistake. Mark the session as done; when you sign in, your progress is saved on any device.' },
@@ -42,27 +42,10 @@ export const COMECAR: Record<'pt-BR' | 'en' | 'es', Comecar> = {
     ],
     dica: 'New to the language? Start with lesson 1. Already studied and stuck on something? Find the topic in Grammar, then practise the session it points to.',
   },
-  es: {
-    kicker: 'Primeros pasos', titulo: 'Cómo empezar en Linvuu', lead: 'Cuatro pasos, sin registro y sin tarjeta.',
-    passos: [
-      { n: '01', t: 'Elige tu curso', d: 'Elige el curso que quieres. Todas las explicaciones están en español.' },
-      { n: '02', t: 'Abre la primera sesión', d: 'Cada sesión dura unos 30 minutos y viene en bloques cortos: lee, toca Continuar y sigue a tu ritmo. Las dos primeras lecciones de cada curso son gratis.' },
-      { n: '03', t: 'Escucha y repite en voz alta', d: 'Toca el icono del altavoz junto a cualquier palabra, frase o diálogo. Primero escucha y luego repite: el idioma entra por el oído.' },
-      { n: '04', t: 'Practica y sigue tu progreso', d: 'Los ejercicios se corrigen al instante, con la explicación del error. Marca la sesión como completada; al iniciar sesión, tu progreso se guarda en cualquier dispositivo.' },
-    ],
-    mapaTitulo: 'Dónde está cada cosa',
-    mapa: [
-      { id: 'cursos', t: 'Cursos', d: 'El camino de lecciones, de la primera a la última, en sesiones de 30 minutos.' },
-      { id: 'gramatica', t: 'Gramática', d: 'Consulta por tema, con tablas, ejemplos y audio, para encontrar una regla concreta.' },
-      { id: 'duvidas', t: 'Preguntas', d: 'Precio, cancelación, reembolso y cómo se guarda tu progreso.' },
-    ],
-    dica: '¿Nunca has estudiado el idioma? Empieza por la lección 1. ¿Ya estudiaste y te atascas en algo? Busca el tema en Gramática y luego practica la sesión que indica.',
-  },
 };
 
 /** Guia curto no topo da primeira sessão de cada curso. */
-export const GUIA_SESSAO: Record<'pt-BR' | 'en' | 'es', { titulo: string; passos: string[] }> = {
+export const GUIA_SESSAO: Record<'pt-BR' | 'en', { titulo: string; passos: string[] }> = {
   'pt-BR': { titulo: 'Como usar esta sessão', passos: ['Ouça: toque no ícone de alto-falante ao lado de cada palavra, frase ou diálogo.', 'Entenda: o botão «Ouvir explicação» lê a regra em voz alta. Você pode ler e ouvir ao mesmo tempo.', 'Repita em voz alta, imitando o áudio. Falar é parte do exercício.', 'Pratique: os exercícios são corrigidos na hora, com a explicação do porquê.'] },
   en: { titulo: 'How to use this session', passos: ['Listen: tap the speaker icon next to each word, sentence or dialogue.', 'Understand: read the explanation at your own pace.', 'Repeat out loud, copying the audio. Speaking is part of the exercise.', 'Practise: exercises are marked straight away, with the reason.'] },
-  es: { titulo: 'Cómo usar esta sesión', passos: ['Escucha: toca el icono del altavoz junto a cada palabra, frase o diálogo.', 'Entiende: lee la explicación a tu ritmo.', 'Repite en voz alta, imitando el audio. Hablar es parte del ejercicio.', 'Practica: los ejercicios se corrigen al instante, con el porqué.'] },
 };

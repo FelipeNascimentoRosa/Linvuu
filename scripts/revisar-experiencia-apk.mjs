@@ -9,7 +9,7 @@ const largura=async page=>{const v=await page.evaluate(()=>[document.documentEle
 try{
  for(let i=0;i<60;i++){try{if((await fetch(base)).ok)break;}catch{}await new Promise(r=>setTimeout(r,300));}
  browser=await chromium.launch();
- for(const width of [320,390])for(const locale of ['', '/en','/es']){
+ for(const width of [320,390])for(const locale of ['', '/en']){
   const ctx=await browser.newContext({viewport:{width,height:844},reducedMotion:'reduce'}),page=await ctx.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto(base+locale+'/');await page.locator('.app-missao').waitFor();await largura(page);
   assert.equal(await page.locator('.app-idiomas [aria-pressed=true]').count(),1);

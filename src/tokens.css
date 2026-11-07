@@ -1,3 +1,9 @@
+/* Fontes substitutas com as métricas das fontes do site (Capsize): enquanto Newsreader e Source Sans 3 carregam,
+   o texto ocupa o mesmo espaço — a troca de fonte não empurra a página (CLS). Georgia/Arial (Windows, macOS) e Noto Serif/Roboto (Android). */
+@font-face{font-family:'Newsreader Fallback';src:local('Georgia');ascent-override:76.4676%;descent-override:27.5699%;size-adjust:96.1192%}
+@font-face{font-family:'Newsreader Fallback Android';src:local('Noto Serif Regular'),local('NotoSerif-Regular');ascent-override:82.5053%;descent-override:29.7468%;size-adjust:89.0852%}
+@font-face{font-family:'Source Sans 3 Fallback';src:local('Arial'),local('ArialMT');ascent-override:109.2105%;descent-override:42.6604%;line-gap-override:0%;size-adjust:93.7639%}
+@font-face{font-family:'Source Sans 3 Fallback Android';src:local('Roboto Regular'),local('Roboto-Regular');ascent-override:108.9713%;descent-override:42.5669%;line-gap-override:0%;size-adjust:93.9697%}
 /* Tokens da identidade Linvuu (sistema de design aprovado em 2026-10-07). */
 :root{
 /* Paleta de marca: só estas quatro. */
@@ -54,13 +60,13 @@
 }
 :root{
 /* Newsreader não tem cirílico: o navegador usa Literata glifo a glifo para Привет, Здравствуйте etc. */
---font-display:'Newsreader Variable','Literata Variable',Georgia,serif;
+--font-display:'Newsreader Variable','Literata Variable','Newsreader Fallback','Newsreader Fallback Android',Georgia,serif;
 --font-display-cirilico:'Literata Variable','Newsreader Variable',Georgia,serif;
---font-body:'Source Sans 3 Variable','Source Sans 3',ui-sans-serif,system-ui,sans-serif;
+--font-body:'Source Sans 3 Variable','Source Sans 3','Source Sans 3 Fallback','Source Sans 3 Fallback Android',ui-sans-serif,system-ui,sans-serif;
 /* Newsreader: tamanho óptico fixo por uso */
 --fraunces-display:"opsz" 72; /* @kind font */
 --fraunces-texto:"opsz" 24; /* @kind font */
---font-hand:'Caveat','Bradley Hand',cursive;
+
 
 /* Escala (px). Forte e hierárquica: display em Newsreader 600, tracking negativo. */
 --t-display-xl:96px;

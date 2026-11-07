@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import { CURSOS_ATIVOS as CURSOS } from '../lib/content';
+import { CURSOS_ATIVOS as CURSOS, cursoComExplicacaoNoSite } from '../lib/content';
 import { CursoCard } from '../components/CursoCard';
 import { Navegacao } from '../components/Navegacao';
 import { usePageTitle } from '../lib/usePageTitle';
@@ -17,7 +17,9 @@ export default function Cursos() {
   const [params, setParams] = useSearchParams();
   const q = params.get('q') ?? '';
 
+  const emBreve = CURSOS.filter((c) => !cursoComExplicacaoNoSite(c.id));
   const lista = useMemo(() => CURSOS.filter((c) => {
+    if (!cursoComExplicacaoNoSite(c.id)) return false;
     if (!q) return true;
     return norm(`${c.nome} ${c.nomeNativo} ${c.descricao}`).includes(norm(q));
   }), [q]);
@@ -38,7 +40,7 @@ export default function Cursos() {
           <input id="q" type="search" value={q} placeholder={t.cursosPagina.exemplo} onChange={(e) => set('q', e.target.value)} />
         </div>
       </div>
-      <p className="nota"><Link to="/portugues">{t.cursosPagina.portugues}</Link></p>
+      {LOCALE.codigo !== 'pt-BR' && <p className="nota"><Link to="/portugues">{t.cursosPagina.portugues}</Link></p>}
       <p className="resultado" aria-live="polite">{t.cursosPagina.contagem(lista.length)}</p>
       {lista.length > 0
         ? <div className="curso-grid">{lista.map((c) => {
@@ -49,6 +51,7 @@ export default function Cursos() {
           </div> : <CursoCard key={c.id} curso={c} nivel={2} />;
         })}</div>
         : <p className="vazio">{t.cursosPagina.vazio(q)} <button type="button" className="link" onClick={() => setParams({}, { replace: true })}>{t.cursosPagina.limpar}</button>.</p>}
+      {emBreve.length > 0 && !q && <p className="nota" data-em-breve>{t.cursosPagina.emBreve}: {emBreve.map((c) => c.nome).join(', ')}.</p>}
     </div>
   );
 }

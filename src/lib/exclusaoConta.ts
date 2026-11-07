@@ -7,7 +7,7 @@ export interface TextoExclusao {
   formulario: { rotulo: string; botao: string; aviso: string; alternativa: string; assunto: string; corpo: string };
 }
 
-export const EXCLUSAO: Record<'pt-BR' | 'en' | 'es', TextoExclusao> = {
+export const EXCLUSAO: Record<'pt-BR' | 'en', TextoExclusao> = {
   'pt-BR': {
     titulo: 'Excluir conta e dados da Linvuu',
     descricao: 'Como pedir a exclusão da sua conta Linvuu e dos dados associados, no site e no aplicativo Linvuu para Android.',
@@ -67,35 +67,5 @@ export const EXCLUSAO: Record<'pt-BR' | 'en' | 'es', TextoExclusao> = {
       ] },
     ],
     formulario: { rotulo: 'Account email', botao: 'Prepare deletion email', aviso: 'The button opens a ready-made message in your email app. You must send it; tapping here does not delete your account.', alternativa: 'If your email app does not open, send your request to', assunto: 'Linvuu — account and data deletion request', corpo: 'Please delete my Linvuu account and associated data. Account email: ' },
-  },
-  es: {
-    titulo: 'Eliminar tu cuenta y datos de Linvuu',
-    descricao: 'Cómo solicitar la eliminación de tu cuenta Linvuu y de los datos asociados, en el sitio y en la app Linvuu para Android.',
-    lead: 'Esta página vale para el sitio linvuu.com.br y para la app Linvuu en Google Play. Puedes solicitar la eliminación desde aquí, sin entrar en la app y sin volver a instalarla.',
-    secoes: [
-      { titulo: 'Cómo solicitarla', passos: [
-        'Si tienes una suscripción, cancélala antes (ver abajo). Eliminar la cuenta no detiene los cobros de la tienda ni de la tarjeta.',
-        'Envía la solicitud desde el correo de la cuenta, con el botón de abajo o escribiendo directamente a nuestra dirección.',
-        'Confirmaremos que la solicitud es del titular de la cuenta y responderemos confirmando la eliminación. No envíes contraseñas ni documentos.',
-      ] },
-      { titulo: 'Qué se elimina', itens: [
-        'Cuenta: nombre, correo y acceso de inicio de sesión.',
-        'Progreso guardado en la cuenta: sesiones completadas y práctica.',
-        'El vínculo entre la cuenta y la suscripción (en el sitio o en Google Play).',
-        'Suscripción al boletín, si la hay.',
-      ] },
-      { titulo: 'Qué puede conservarse', paragrafos: [
-        'Los registros de pago y de acceso, y el mensaje de tu solicitud, se guardan durante 6 meses después de la eliminación y luego se borran. Stripe y Google conservan sus propios registros de pago según sus políticas.',
-        'Los datos de análisis y de medición del aprendizaje usan un identificador aleatorio que no está vinculado a tu cuenta. Para borrarlos, limpia los datos del navegador o, en la app, usa "Borrar progreso de este dispositivo" en la pantalla Cuenta.',
-      ] },
-      { titulo: 'Cancela la suscripción antes', itens: [
-        'Suscripción de Google Play: en el teléfono, abre Google Play › Pagos y suscripciones › Suscripciones › Linvuu › Cancelar.',
-        'Suscripción del sitio: entra en tu cuenta en linvuu.com.br/es/assinatura y usa "Gestionar o cancelar".',
-      ] },
-      { titulo: 'Solo limpiar este dispositivo', paragrafos: [
-        'Si solo quieres borrar el progreso guardado en el teléfono, sin eliminar la cuenta, usa "Borrar progreso de este dispositivo" en la pantalla Cuenta de la app.',
-      ] },
-    ],
-    formulario: { rotulo: 'Correo de la cuenta', botao: 'Preparar correo de eliminación', aviso: 'El botón abre un mensaje listo en tu aplicación de correo. Debes enviarlo; tocar aquí no elimina tu cuenta.', alternativa: 'Si el correo no se abre, envía tu solicitud a', assunto: 'Linvuu — solicitud de eliminación de cuenta y datos', corpo: 'Solicito eliminar mi cuenta Linvuu y los datos asociados. Correo de la cuenta: ' },
   },
 };

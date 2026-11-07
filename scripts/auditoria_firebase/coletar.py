@@ -121,8 +121,8 @@ def collect(reader, rules_path):
 
 
 def validate_github_context(environ, event):
-    if environ.get("GITHUB_REPOSITORY") != "FelipeVRosa/Linvuu" or environ.get("GITHUB_REF") != "refs/heads/main":
-        raise SystemExit("Auditoria autenticada permitida apenas na main de FelipeVRosa/Linvuu.")
+    if environ.get("GITHUB_REPOSITORY") != "FelipeNascimentoRosa/Linvuu" or environ.get("GITHUB_REF") != "refs/heads/main":
+        raise SystemExit("Auditoria autenticada permitida apenas na main de FelipeNascimentoRosa/Linvuu.")
     if event.get("repository", {}).get("private") is not True:
         raise SystemExit("Coleta detalhada bloqueada: repositório privado não confirmado.")
 

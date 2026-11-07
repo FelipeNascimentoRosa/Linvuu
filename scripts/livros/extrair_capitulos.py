@@ -283,6 +283,25 @@ def montar(paginas):
         if b['t'] == 'tabela':
             b['cabecalho'] = [normalizar(c) for c in b['cabecalho']]
             b['linhas'] = [[normalizar(c) for c in r] for r in b['linhas']]
+    return corrigir_niveis(blocos)
+
+def corrigir_niveis(blocos):
+    """Sem saltos de nível nos títulos: cada título desce no máximo um nível em
+    relação ao título-pai (o anterior de nível estritamente menor; a raiz é o h1
+    do capítulo). A classificação por tamanho de fonte marcava as subsecções da
+    secção "5. Por dentro" dos livros ES/FR como h4 sob um h2 — aqui nascem já
+    como h3. Títulos irmãos mantêm o nível entre si e um h4 sob um h3 legítimo
+    (os passos numerados do livro EN) não muda. Mesma regra de
+    normalizarNiveis em src/lib/livros.ts."""
+    pilha = []  # (nível original, nível efetivo)
+    for b in blocos:
+        if b['t'] not in ('h2', 'h3', 'h4'): continue
+        orig = int(b['t'][1])
+        while pilha and pilha[-1][0] >= orig: pilha.pop()
+        pai = pilha[-1][1] if pilha else 1
+        efetivo = min(orig, pai + 1)
+        pilha.append((orig, efetivo))
+        if efetivo != orig: b['t'] = f'h{efetivo}'
     return blocos
 
 def capitulos_do_pdf(pdf, limite=90):

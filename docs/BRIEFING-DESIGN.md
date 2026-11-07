@@ -17,7 +17,7 @@ Tipografia: Newsreader (serifada, títulos, peso 600, tracking levemente negativ
 
 Elemento de assinatura: uma barra de progresso desenhada à mão, em traço riscado de caneta, que começa curta e cresce. Ela representa evolução e mudança de vida. Deve parecer feita por uma pessoa, com leve irregularidade, nunca perfeita nem vetorial fria.
 
-Regras: visual editorial, quiet luxury, grid rigoroso, muito espaço em branco. Proibido: gradiente roxo/azul, ilustração 3D ou Corporate Memphis, mascotes, bandeiras e símbolos turísticos (matrioska, castelo, torre), fontes de sistema, aparência de template de IA. Fotografia, se usada, deve ser real e de cultura ou cotidiano, nunca stock sorridente.
+Regras: visual editorial, quiet luxury, grid rigoroso, muito espaço em branco. Proibido: gradiente roxo/azul, ilustração 3D ou Corporate Memphis, bandeiras e símbolos turísticos (matrioska, castelo, torre), fontes de sistema, aparência de template de IA. O mascote (Vuu) pode protagonizar peças de marketing e de conteúdo e áreas de produto, sempre a 96 px ou mais; logotipo, avatar, favicon e identidade legal e de rodapé continuam a ser o símbolo L, sem mascote. Fotografia, se usada, deve ser real e de cultura ou cotidiano, nunca stock sorridente.
 
 Tom: confiante, culto e direto. Nada de texto de vendedor de curso. Não afirmar nada que o produto não entrega (sem "professores nativos", "oficial", "garantido").
 ```
@@ -82,7 +82,7 @@ Mesma identidade das peças anteriores. Sem foto de pessoas, sem emoji.
 
 1. **Formulário "Set up your design system":**
    - Campo "Company name and blurb": a primeira parte do texto sugerido no chat (marca, público e direção visual).
-   - Link do GitHub: já está (`FelipeVRosa/Linvuu`).
+   - Link do GitHub: já está (`FelipeNascimentoRosa/Linvuu`).
    - Arquivos: suba `public/brand/linvuu-logo.png` e `linvuu-mark.png` como referência provisória.
    - Fontes: Newsreader e Source Sans 3 (livres).
 2. **Depois que a ferramenta gerar as peças:** baixe os arquivos e anexe-os aqui no chat. Eu coloco no repositório assim:
