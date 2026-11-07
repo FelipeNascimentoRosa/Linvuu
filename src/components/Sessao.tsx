@@ -148,7 +148,7 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
         {/* Celebração ancorada (MOTION-SPEC): só neste `fim`, que é o momento em
             que `avancar()` já registou o resumo real ({t:'fim', acertos, total})
             na medição — nenhum critério novo de progresso é inventado aqui. */}
-        <Vuu estado="celebracao" />
+        <Vuu />
         <h3>{T.acertou(certos, corrigiveis.length)}</h3>
         {erros.length > 0 && <ul>{erros.map((x, indice) => <li key={`${x.id}:${indice}`}><strong>{x.enunciado}</strong> {T.resposta} <span lang={idioma}>{x.gabarito ?? x.respostaEsperada}</span>{x.explicacao && <small> {x.explicacao}</small>}</li>)}</ul>}
         <button type="button" className="btn btn-ghost" onClick={recomecar}>{T.refazer}</button>
@@ -201,7 +201,7 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
               partir do 2.º erro seguido (`errosSeguidos`, a mesma contagem que já
               atenua o som de erro) — o primeiro erro não é "castigado" com um
               rosto preocupado, e o estado sai assim que um acerto zera a contagem. */}
-          {res === 'erro' && errosSeguidos.current >= 2 && <Vuu estado="erro-gentil" />}
+          {res === 'erro' && errosSeguidos.current >= 2 && <Vuu />}
           <div className={`ex-feedback ${res}${ex.tipo === 'repeat' ? ' repita' : ''}`} role="status">
             {res === 'ok' && <strong>{T.certo}</strong>}
             {res === 'erro' && <strong>{T.errou} <span lang={idioma}>{ex.gabarito ?? ex.respostaEsperada}</span></strong>}
