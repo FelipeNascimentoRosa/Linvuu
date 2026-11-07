@@ -10,7 +10,6 @@ module.exports = {
         'http://127.0.0.1:4398/curso/de',
         'http://127.0.0.1:4398/gramatica/ru',
         'http://127.0.0.1:4398/en',
-        'http://127.0.0.1:4398/es',
         'http://127.0.0.1:4398/en/curso/ru',
       ],
       numberOfRuns: 3,

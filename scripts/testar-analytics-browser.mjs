@@ -19,7 +19,7 @@ try{
     await page.locator('.analytics-consent-analytics .analytics-actions button').last().click();await page.reload();await page.locator('.analytics-consent').waitFor();assert.equal(events.length,0,'recusa persiste');
     await page.locator('.analytics-consent-analytics summary').click();await page.locator('.analytics-consent-analytics .analytics-actions button').first().click();
     for(let n=0;n<30&&!events.length;n++)await page.waitForTimeout(50);
-    assert.equal(events[0]?.event,'page_viewed');assert.equal(events[0]?.properties.platform,target==='apk'?'android':'web');assert.equal(events[0]?.properties.environment,'test');assert.equal(events[0]?.properties.interface_language,locale==='/en'?'en':locale==='/es'?'es':'pt-BR');
+    assert.equal(events[0]?.event,'page_viewed');assert.equal(events[0]?.properties.platform,target==='apk'?'android':'web');assert.equal(events[0]?.properties.environment,'test');assert.equal(events[0]?.properties.interface_language,locale==='/en'?'en':'pt-BR');
     await page.goto(base+locale+'/cursos?token=do-not-capture');await page.locator('.analytics-consent').waitFor();await page.waitForTimeout(200);
     assert.ok(!JSON.stringify(events).includes('do-not-capture'));
     await page.evaluate(()=>document.documentElement.style.setProperty('--app-text-scale','2'));

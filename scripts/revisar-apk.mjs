@@ -23,7 +23,7 @@ try {
     assert.equal(await page.locator('html').getAttribute('data-plataforma'),'nativo');
     assert.equal(await page.locator('.lv-head').count(),0,'sem cabeçalho marketing web');
     // Desde 19/10/2026 (400e45d3) o idioma do curso não depende do idioma da interface: sem preferência salva vale o idioma original do material,
-    // então os 6 cursos aparecem em PT, EN e ES. Se um dia a vitrine voltar a filtrar por tradução, atualizar este número.
+    // então os 6 cursos aparecem em PT e EN. Se um dia a vitrine voltar a filtrar por tradução, atualizar este número.
     assert.equal(await page.locator('.app-home .app-idiomas button').count(),6,'vitrine mostra os 6 cursos em qualquer idioma da interface');
     const largura=await page.evaluate(()=>({pagina:document.documentElement.scrollWidth,tela:innerWidth}));
     assert.ok(largura.pagina<=largura.tela+1,'sem rolagem horizontal '+JSON.stringify(largura));
@@ -34,7 +34,7 @@ try {
     console.log('LINVUU_APK_SCREEN '+width+'-'+(locale||'pt')+' '+shot.toString('base64'));
     await page.locator('button[aria-controls="app-ajustes"]').click();
     await page.locator('#app-idioma').waitFor();
-    assert.equal(await page.locator('#app-idioma option').count(),3);
+    assert.equal(await page.locator('#app-idioma option').count(),2);
     await context.setOffline(true);
     await page.locator('.app-rede').waitFor();
     await context.setOffline(false);
