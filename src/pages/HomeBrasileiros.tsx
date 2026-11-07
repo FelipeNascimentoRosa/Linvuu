@@ -81,15 +81,6 @@ export default function HomeBrasileiros() {
         <article><h3>{h("Aula ao vivo, se quiser.")}</h3><p>{h("Aulas de russo por videochamada com professores.")}</p><Link className="br-text-link" to="/russo-online">{h("Ver aulas ao vivo →")}</Link></article>
       </div>
     </section>
-    <section className="br-section br-vuu-section" aria-labelledby="br-vuu-title">
-      <div><p className="br-eyebrow">{h('CONHEÇA O VUU')}</p><h2 id="br-vuu-title">{h('Uma língua fica mais próxima quando faz sentido.')}</h2>
-        <p>{h('Vuu acompanha a curiosidade que move a Linvuu: entender o que as palavras fazem, ouvir como soam e usar o idioma em situações reais.')}</p>
-        <p>{h('Comece com uma explicação em português e pratique no seu ritmo.')}</p>
-        {LOCALE.codigo === 'pt-BR'
-          ? <HomeCourseLink to="/curso/de" className="br-text-link">{h('Conhecer o curso de alemão →')}</HomeCourseLink>
-          : <HomeCourseLink to={`/curso/${idiomas[0]?.id ?? 'br'}`} className="br-text-link">See the courses explained in English →</HomeCourseLink>}
-      </div>
-    </section>
     <section className="br-section" id="metodo"><div className="br-section-head"><div><p className="br-eyebrow">{h("MENOS ADIVINHAÇÃO. MAIS COMPREENSÃO.")}</p><h2>{h("Entender muda")}<br />{h("o jeito de aprender.")}</h2></div><p>{h("Você traz o português. A Linvuu usa essa base para explicar os sons, as estruturas e os erros comuns no novo idioma.")}</p></div>
       <div className="br-method">{[
         ['01', 'Ouça o idioma acontecer.', 'Palavras e diálogos com áudio para ligar o que você lê ao que você escuta.', '◉', '/fotos/comece.jpg'],

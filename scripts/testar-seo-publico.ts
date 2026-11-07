@@ -18,7 +18,7 @@ const home = html('/');
 assert.ok(home.includes(`<h1>${HOME_BR.titulo}</h1>`));
 assert.ok(home.includes(HOME_BR.descricao));
 for (const rota of ['/curso/de', '/curso/ru', '/livros/de', '/livros/es']) assert.ok(home.includes(`href="${rota}"`), `link público ${rota}`);
-assert.ok(home.includes('Conheça o Vuu'));
+assert.ok(!home.includes('Conheça o Vuu'));
 assert.ok(home.includes('Estamos produzindo livros para os níveis B1–B2. Eles ainda não estão disponíveis.'));
 assert.ok(html('/livros').includes('Estamos produzindo livros para os níveis B1–B2. Eles ainda não estão disponíveis.'));
 assert.ok(!home.includes(PLANOS_AVISO), 'a home apresenta a oferta ativa, sem planos não lançados');
