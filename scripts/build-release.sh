@@ -3,7 +3,7 @@
 #   1) build web do app (VITE_ALVO=apk) -> 2) cap sync -> 3) ./gradlew bundleRelease -> 4) verificação da assinatura.
 # Pré-requisito: android/keystore.properties (modelo em android/keystore.properties.example; fica fora do Git).
 # A upload keystore é gerada e guardada por você; este script nunca a cria, a envia ou a imprime.
-# Variáveis opcionais: ANDROID_VERSION_CODE (padrão 1), ANDROID_VERSION_NAME (padrão 1.0.0), ANDROID_HOME, GRADLE_BIN.
+# Obrigatória: ANDROID_VERSION_CODE (sem padrão). Opcionais: ANDROID_VERSION_NAME (padrão 1.0.0), ANDROID_HOME, GRADLE_BIN.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
@@ -15,7 +15,9 @@ ks="$(lido storeFile)"; alias_="$(lido keyAlias)"; senha="$(lido storePassword)"
 case "$ks" in /*) ksabs="$ks" ;; *) ksabs="android/$ks" ;; esac
 [ -f "$ksabs" ] || { echo "Keystore não encontrada em $ksabs." >&2; exit 1; }
 
-export ANDROID_VERSION_CODE="${ANDROID_VERSION_CODE:-1}" ANDROID_VERSION_NAME="${ANDROID_VERSION_NAME:-1.0.0}"
+# O versionCode é sempre explícito: a Play recusa um AAB cujo versionCode não seja maior que o último publicado.
+[ -n "${ANDROID_VERSION_CODE:-}" ] || { echo "Defina ANDROID_VERSION_CODE (inteiro maior que o último publicado na Play). Primeira publicação: 1." >&2; exit 1; }
+export ANDROID_VERSION_CODE ANDROID_VERSION_NAME="${ANDROID_VERSION_NAME:-1.0.0}"
 [[ "$ANDROID_VERSION_CODE" =~ ^[0-9]+$ ]] || { echo "ANDROID_VERSION_CODE deve ser inteiro." >&2; exit 1; }
 export LINVUU_SOURCE_SHA="$(git rev-parse HEAD 2>/dev/null || echo)" VITE_APK_BUILD_ID="release $(git rev-parse --short HEAD 2>/dev/null || echo local)"
 
