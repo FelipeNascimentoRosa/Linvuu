@@ -1,0 +1,32 @@
+.avaliacoes{margin:48px 0;padding-top:24px;border-top:1px solid var(--papel-borda)}
+.av-kicker{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--verde-floresta);font-weight:600;margin:0 0 4px}
+.av-resumo{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:8px 0 16px}
+.av-estrelas{color:var(--ocre);letter-spacing:2px;font-size:1.05rem}
+.av-vazio{color:var(--grafite-65)}
+.avaliacoes ul.av-lista{list-style:none;margin:16px 0;padding:0;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.avaliacoes li.av-card{list-style:none;margin:0;background:var(--papel-claro);border:1px solid var(--papel-borda);border-radius:10px;padding:16px}
+.av-texto{margin:8px 0;line-height:1.55}
+.av-autor{margin:0;font-size:.9rem;color:var(--grafite-65)}
+.av-selo{display:inline-block;white-space:nowrap;margin:4px 0 0 8px;padding:2px 8px;border-radius:999px;background:var(--ocre-claro);color:var(--grafite);font-size:.78rem}
+.av-form-caixa{margin-top:28px;padding:20px;background:var(--papel-claro);border:1px solid var(--papel-borda);border-radius:10px;max-width:640px}
+.av-intro{color:var(--grafite-65);font-size:.92rem}
+.av-form{display:grid;gap:14px}
+.av-form label{display:grid;gap:6px;font-weight:600;font-size:.95rem}
+.av-form textarea,.av-form input[type=text]{font:inherit;padding:10px;border:1px solid var(--papel-borda);border-radius:8px;background:#fff;color:var(--grafite)}
+.av-form fieldset{border:0;padding:0;margin:0;display:grid;gap:8px}
+.av-form legend{font-weight:600;font-size:.95rem;margin-bottom:4px}
+.av-relacao label,.av-aceite{display:flex!important;grid-template-columns:none;gap:8px;font-weight:400!important;align-items:flex-start}
+.av-nota{display:flex!important;gap:4px}
+.av-nota label{display:block;cursor:pointer;font-size:1.9rem;color:var(--papel-borda);line-height:1}
+.av-nota label.on{color:var(--ocre)}
+.av-nota input{position:absolute;opacity:0;width:1px;height:1px}
+.av-nota label:focus-within{outline:2px solid var(--verde-floresta);outline-offset:2px;border-radius:4px}
+.av-isca{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.br-avaliacoes .avaliacoes{border-top:0;margin:0;padding-top:0}
+.av-topo{display:flex;gap:12px;align-items:center;margin-bottom:10px}
+.av-topo .av-autor{margin:0;color:var(--grafite);font-size:1rem}
+.av-meta{margin:2px 0 0;font-size:.85rem;color:var(--grafite-65)}
+.av-foto{width:48px;height:48px;border-radius:50%;object-fit:cover;flex-shrink:0;background:var(--verde-100)}
+.av-iniciais{display:grid;place-items:center;background:var(--verde-floresta);color:var(--papel);font-weight:700;letter-spacing:.02em}
+.av-com-foto .av-foto{width:32px;height:32px}

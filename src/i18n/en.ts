@@ -46,7 +46,17 @@ export const en: Dicionario = {
   },
   carta: { kicker: 'Who makes Linvuu', titulo: 'Letter' },
   livros: { kicker: 'Books', titulo: 'The Linvuu collection', rotulo: 'Linvuu books', capa: (t: string) => `Cover of the ${t} book, Linvuu collection` },
-  avaliacoes: { kicker: 'Reviews', titulo: 'What our students say', vazio: 'The first reviews from real students are coming soon.', rotulo: 'Student reviews' },
+  avaliacoes: {
+    kicker: 'Reviews', titulo: 'What our students say', vazio: 'The first reviews from real students are coming soon.', rotulo: 'Student reviews',
+    media: (m: string, n: number) => `${m} out of 5 · ${n} ${n === 1 ? 'review' : 'reviews'}`, aulas: (n: number) => `${n} ${n === 1 ? 'session completed' : 'sessions completed'}`,
+    conhece: 'Knows the teacher', nota: 'Rating', estrelas: (n: number) => `${n} out of 5 stars`,
+    avalie: 'Review Linvuu', avalieIntro: (n: number) => `To leave a review, sign in and complete at least ${n} sessions of the free lessons. Each review is checked before it appears, and we show every approved one, critical ones included.`,
+    campoNota: 'Your rating', campoTexto: 'Your experience (20 to 600 characters, no links)', campoNome: 'Name shown on the site', campoRelacao: 'Your relationship with the teacher',
+    relNenhuma: 'I am a student with no personal relationship with the teacher', relConhece: 'I know the teacher personally',
+    aceite: 'I agree to show my name and text on the Linvuu site.', foto: 'Show my Google profile photo', enviar: 'Send review', enviando: 'Sending…',
+    entrar: 'Sign in to leave a review.', fazerAulas: (n: number) => `Complete at least ${n} sessions of the free lessons, signed in, to leave a review.`,
+    obrigado: 'We received your review. It will appear on the site after it is checked.', jaEnviou: 'You have already sent a review.', invalido: 'Check the rating, the text (no links) and the name.', erro: 'We could not send it right now. Please try again.',
+  },
   portuguesHome: {
     kicker: 'Brazilian Portuguese',
     titulo: 'Learn the Portuguese of Brazil',

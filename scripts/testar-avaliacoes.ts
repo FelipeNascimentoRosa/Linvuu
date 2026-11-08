@@ -1,0 +1,34 @@
+import assert from 'node:assert/strict';
+import { aprovadasPorDominio, fotoPermitida, MIN_PARA_NOTA_AGREGADA, resumo, trechoSchema, validarAvaliacao, type AvaliacaoPublica } from '../src/config/avaliacoes';
+
+const base = { nota: 5, texto: 'Aulas claras, expliquei o alfabeto russo em uma tarde.', nome: ' Maria  S. ', relacao: 'nenhuma', aceite: true };
+assert.deepEqual(validarAvaliacao(base), { nota: 5, texto: 'Aulas claras, expliquei o alfabeto russo em uma tarde.', nome: 'Maria S.', relacao: 'nenhuma', mostrarFoto: false }, 'válida: normaliza espaços');
+assert.equal(validarAvaliacao({ ...base, foto: true })?.mostrarFoto, true, 'com foto');
+assert.equal(validarAvaliacao({ ...base, foto: 'https://exemplo.invalid/x.jpg' }), null, 'foto não pode ser um endereço vindo do navegador');
+assert.equal(fotoPermitida('https://lh3.googleusercontent.com/a/abc'), true);
+for (const u of ['http://lh3.googleusercontent.com/a', 'https://googleusercontent.com.evil.invalid/a', 'https://exemplo.invalid/a.jpg', 'javascript:alert(1)', 1]) assert.equal(fotoPermitida(u), false, `foto recusada: ${String(u)}`);
+assert.equal(validarAvaliacao({ ...base, aceite: false }), null, 'sem aceite');
+for (const nota of [0, 6, 4.5, '5', null, NaN]) assert.equal(validarAvaliacao({ ...base, nota }), null, `nota inválida: ${String(nota)}`);
+assert.equal(validarAvaliacao({ ...base, texto: 'curto' }), null, 'texto curto');
+assert.equal(validarAvaliacao({ ...base, texto: 'x'.repeat(601) }), null, 'texto longo');
+assert.equal(validarAvaliacao({ ...base, texto: 'Veja https://exemplo.invalid agora, muito bom mesmo' }), null, 'link no texto');
+assert.equal(validarAvaliacao({ ...base, texto: 'Escreva para fulano@exemplo.invalid que é muito bom' }), null, 'e-mail no texto');
+assert.equal(validarAvaliacao({ ...base, nome: 'A' }), null, 'nome curto');
+assert.equal(validarAvaliacao({ ...base, relacao: 'amigo' }), null, 'relação desconhecida');
+assert.equal(validarAvaliacao({ ...base, status: 'aprovada' }), null, 'campo extra (status) é recusado: o aluno não aprova a própria avaliação');
+assert.equal(validarAvaliacao({ ...base, ref_extra_av: '' })?.nota, 5, 'isca vazia é aceita');
+for (const corpo of [null, undefined, 'x', 7, [], [base]]) assert.equal(validarAvaliacao(corpo), null, 'corpo não-objeto');
+
+const av = (nota: number, relacao: 'nenhuma' | 'conhece-professor' = 'nenhuma', nome = `Aluno ${nota}`): AvaliacaoPublica => ({ nome, nota, texto: 'Texto real da avaliação do aluno.', relacao, aulas: 3, em: '2026-11-08' });
+assert.deepEqual(trechoSchema([]), {}, 'sem avaliações: nada no schema');
+assert.deepEqual(trechoSchema([av(5, 'conhece-professor')]), {}, 'só avaliação de conhecido: nada no schema');
+const poucas = trechoSchema([av(5), av(4)]);
+assert.equal((poucas.review as unknown[]).length, 2); assert.equal(poucas.aggregateRating, undefined, `sem nota agregada abaixo de ${MIN_PARA_NOTA_AGREGADA}`);
+const muitas = trechoSchema([av(5), av(4), av(5), av(3), av(5), av(5, 'conhece-professor', 'Amigo')]);
+const ag = muitas.aggregateRating as { ratingValue: number; reviewCount: number };
+assert.equal(ag.reviewCount, 5, 'a avaliação de conhecido não conta'); assert.equal(ag.ratingValue, 4.4);
+assert.equal((muitas.review as { author: { name: string } }[]).some((r) => r.author.name === 'Amigo'), false, 'conhecido fora do schema');
+assert.deepEqual(resumo([av(5), av(3), av(4, 'conhece-professor')]), { total: 3, contadas: 2, media: 4 });
+assert.equal(resumo([]).media, null);
+assert.deepEqual(aprovadasPorDominio, { br: [], global: [] }, 'cache começa vazio (build estático sem avaliações)');
+console.log('ok: avaliações (validação, conhecido fora da nota, mínimo para nota agregada, schema)');

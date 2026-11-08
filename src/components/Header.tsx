@@ -44,6 +44,7 @@ export function Header() {
           <Link to={GRAMATICA}>{t.nav.gramatica}</Link>
           <Link to="/#metodo">{t.nav.metodo}</Link>
           <Link to="/#planos">{homeText('Planos')}</Link>
+          <Link to="/#avaliacoes">{t.nav.avaliacoes}</Link>
           <Link to="/#faq">{t.nav.duvidas}</Link>
         </nav>
 
@@ -84,6 +85,7 @@ export function Header() {
           <Link to={GRAMATICA}>{t.nav.gramatica}</Link>
           <Link to="/#metodo">{t.nav.metodo}</Link>
           <Link to="/#planos">{homeText('Planos')}</Link>
+          <Link to="/#avaliacoes">{t.nav.avaliacoes}</Link>
           <Link to="/#faq">{t.nav.duvidas}</Link>
           {usuario ? <button type="button" className="menu-mobile-sair" onClick={deslogar}>{t.nav.sair} ({usuario.nome})</button> : (
             <div className="menu-mobile-conta">
