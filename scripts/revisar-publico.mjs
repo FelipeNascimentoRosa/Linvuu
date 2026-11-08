@@ -3,6 +3,7 @@ import { chromium } from 'playwright';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import { spawn } from 'node:child_process';
+const semSugestaoIdioma=async(b,o)=>{const c=await b.newContext(o);await c.addInitScript(()=>{try{localStorage.setItem('linvuu:sugestao-idioma-dispensada','1');}catch{}});return c;}; // a faixa de sugestão de idioma tem teste próprio
 const base = 'http://127.0.0.1:4328';
 const server = spawn(process.execPath, ['--import','tsx','server.ts'], {env:{...process.env,NODE_ENV:'production',PORT:'4328'},stdio:'inherit'});
 let browser;
@@ -13,7 +14,7 @@ try {
   await fs.mkdir('revisao-publica',{recursive:true});
   browser=await chromium.launch({executablePath:process.env.CHROME_EXECUTABLE_PATH});
   for (const [nome,viewport] of [['desktop',{width:1440,height:1000}],['celular',{width:390,height:844}],['estreito',{width:320,height:740}]]) {
-    const context=await browser.newContext({viewport,reducedMotion:'reduce'});
+    const context=await semSugestaoIdioma(browser,{viewport,reducedMotion:'reduce'});
     const page=await context.newPage();
     const errors=[];page.on('pageerror',e=>errors.push(e.message));
     const rotas = [['/','home'],['/en','home-en'],['/es','home-es'],['/cursos','cursos'],...['en','es','fr','it','de','ru'].map(id=>[`/curso/${id}`,`curso-${id}`]),['/curso/en/dia/1','sessao-en'],['/curso/fr/dia/1','sessao-fr'],['/curso/ru/dia/1','sessao-ru'],['/curso/es/dia/1','sessao-es'],['/curso/it/dia/1','sessao-it'],['/curso/de/dia/1','sessao-de'],['/gramatica/en','gramatica'],['/livros','livros'],['/livros/en','livro-en'],['/livros/en/capitulo/1','capitulo'],['/sobre','sobre'],['/contato','contato'],['/por-que-linvuu','metodo'],['/privacidade','privacidade'],['/termos','termos'],['/entrar','entrar'],['/cadastro','cadastro'],['/assinatura','assinatura']];

@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+const { idiomaSugerido } = await import('../src/lib/sugestaoIdioma');
+assert.equal(idiomaSugerido(['en-US', 'en'], 'pt-BR'), 'en', 'inglês no .com.br → sugere .com');
+assert.equal(idiomaSugerido(['de-DE'], 'pt-BR'), 'en', 'alemão no .com.br → sugere inglês');
+assert.equal(idiomaSugerido(['en-US', 'pt-BR'], 'pt-BR'), null, 'quem também fala português fica');
+assert.equal(idiomaSugerido(['pt-BR'], 'pt-BR'), null);
+assert.equal(idiomaSugerido(['pt-PT'], 'en'), 'pt-BR', 'português no .com → sugere .com.br');
+assert.equal(idiomaSugerido(['en-GB', 'pt-BR'], 'en'), null, 'primeira língua inglês fica no .com');
+assert.equal(idiomaSugerido([], 'pt-BR'), null);
+console.log('ok: sugestão de idioma por navegador');

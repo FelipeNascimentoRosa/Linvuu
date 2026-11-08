@@ -36,6 +36,7 @@ export function Footer({ semNovidades = false }: { semNovidades?: boolean }) {
           {LOCALE.codigo !== 'pt-BR' && <Link to="/portugues">{t.rodape.portugues}</Link>}
           {LOCALE.codigo === 'pt-BR' && <><Link to="/livros">Livros</Link><Link to="/sobre">Quem somos</Link><Link to="/por-que-linvuu">Por que estudar com a Linvuu?</Link></>}
           <Link to="/#metodo">{t.nav.metodo}</Link>
+          <Link to="/#avaliacoes">{t.nav.avaliacoes}</Link>
           <Link to="/#faq">{t.nav.duvidas}</Link>
           {LOCALE.codigo === 'pt-BR' ? <Link to="/contato">{t.rodape.contato}</Link> : <a href={`mailto:${EMAIL_OFICIAL}`}>{t.rodape.contato}</a>}
         </nav>

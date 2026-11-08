@@ -33,6 +33,11 @@ const d = carregarDadosMeta(process.cwd());
 const ld = JSON.stringify(metaDaRota('/assinatura', d).jsonld);
 for (const c of Object.values(CENTAVOS)) assert.ok(ld.includes(`"price":"${(c / 100).toFixed(2)}"`), `JSON-LD com ${c}`);
 assert.ok(fs.readFileSync('server/prontidao.ts', 'utf8').includes('p.unit_amount !== CENTAVOS.mensal'), '/readyz confere o valor da mensal');
+// A home é a mesma nos dois domínios: os preços vêm de precosDo(LOCALE) e nunca das constantes em reais (senão o .com mostra R$ e Pix).
+const oferta = fs.readFileSync('src/components/OfertaAtual.tsx', 'utf8');
+assert.ok(oferta.includes('precosDo(LOCALE.codigo)'), 'OfertaAtual usa os preços do domínio');
+assert.ok(!/\bPRECO_[A-Z_]+\b/.test(oferta), 'OfertaAtual não importa as constantes em reais');
+assert.ok(/emReais && /.test(oferta), 'OfertaAtual só mostra Pix e boleto em reais');
 // ── linvuu.com cobra em dólares (docs/PRECOS-DEFINIDOS.md): só mensal e anual, só cartão, sem FUNDADORES ──
 assert.deepEqual(PLANOS_USD, ['mensal', 'anual']);
 assert.equal(planoUsdValido('mensal'), true); assert.equal(planoUsdValido('anual'), true);

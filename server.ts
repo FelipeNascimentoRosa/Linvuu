@@ -10,6 +10,7 @@ import { registrarCobranca, registrarLivroProtegido, registrarNotificacoesCobran
 import { registrarProgresso } from './server/progresso';
 import { registrarMedicao } from './server/medicao';
 import { registrarNewsletter } from './server/newsletter';
+import { registrarAvaliacoes } from './server/avaliacoes';
 import { registrarExclusao } from './server/exclusao';
 import { credencialConfigurada } from './server/firebase-admin';
 import { fecharApi, registrarErros, registrarSeguranca } from './server/seguranca';
@@ -54,6 +55,7 @@ async function startServer() {
   registrarProgresso(app);
   registrarMedicao(app);
   registrarNewsletter(app);
+  registrarAvaliacoes(app);
   registrarExclusao(app);
   // Metadados de cada rota (título, descrição, hreflang, conteúdo pré-renderizado): a mesma fonte para o HTML e para /api/meta.
   const dadosMeta = process.env.NODE_ENV === 'production' ? carregarDadosMeta(__dirname) : null;

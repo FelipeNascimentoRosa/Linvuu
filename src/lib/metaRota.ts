@@ -1,6 +1,7 @@
 // Título, descrição e endereço de cada rota, para o servidor entregar o HTML já com as metatags certas
 // (o WhatsApp, o Facebook e outros robôs não executam JavaScript; sem isto, todo link mostraria o texto da página inicial).
 // Vale para os dois idiomas do site: português (.com.br) e inglês (.com).
+import { aprovadasPorDominio, trechoSchema } from '../config/avaliacoes.ts';
 import { REDES } from '../config/social.ts';
 import { COMECAR } from './comecar.ts';
 import { HOME_BR } from '../config/oferta-publica.ts';
@@ -168,7 +169,7 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     if (p === '/assinatura') {
       const en = loc.codigo === 'en';
       jsonld.push(
-        { '@context': 'https://schema.org', '@type': 'Product', name: en ? 'Linvuu Subscription' : 'Assinatura Linvuu', description: fixas[p].descricao, image: `${SITE}/brand/linvuu-logo.png`, brand: { '@type': 'Brand', name: 'Linvuu' }, offers: (en ? [['Monthly', precoSchema(CENTAVOS_USD.mensal)], ['Annual', precoSchema(CENTAVOS_USD.anual)]] : [['Mensal', precoSchema(CENTAVOS.mensal)], ['Trimestral Pix', precoSchema(CENTAVOS['trimestral-pix'])], ['Trimestral cartão ou boleto', precoSchema(CENTAVOS.trimestral)], ['Anual', precoSchema(CENTAVOS.anual)]]).map(([name, price]) => ({ '@type': 'Offer', name, price, priceCurrency: en ? 'USD' : 'BRL', availability: 'https://schema.org/InStock', url: `${SITE}/assinatura`, hasMerchantReturnPolicy: POLITICA_REEMBOLSO })) },
+        { '@context': 'https://schema.org', '@type': 'Product', name: en ? 'Linvuu Subscription' : 'Assinatura Linvuu', description: fixas[p].descricao, image: `${SITE}/brand/linvuu-logo.png`, brand: { '@type': 'Brand', name: 'Linvuu' }, ...trechoSchema(aprovadasPorDominio[en ? 'global' : 'br']), offers: (en ? [['Monthly', precoSchema(CENTAVOS_USD.mensal)], ['Annual', precoSchema(CENTAVOS_USD.anual)]] : [['Mensal', precoSchema(CENTAVOS.mensal)], ['Trimestral Pix', precoSchema(CENTAVOS['trimestral-pix'])], ['Trimestral cartão ou boleto', precoSchema(CENTAVOS.trimestral)], ['Anual', precoSchema(CENTAVOS.anual)]]).map(([name, price]) => ({ '@type': 'Offer', name, price, priceCurrency: en ? 'USD' : 'BRL', availability: 'https://schema.org/InStock', url: `${SITE}/assinatura`, hasMerchantReturnPolicy: POLITICA_REEMBOLSO })) },
         { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: en
           ? [{ '@type': 'Question', name: 'Can I try it without a card?', acceptedAnswer: { '@type': 'Answer', text: 'The first two lessons of every course are free, with no card required.' } }, { '@type': 'Question', name: 'What currency are the prices in?', acceptedAnswer: { '@type': 'Answer', text: 'Prices are in US dollars (US$19.99 a month or US$149 for 12 months, paid by card). The first two lessons of every course are free.' } }]
           : [{ '@type': 'Question', name: 'Posso experimentar sem cartão?', acceptedAnswer: { '@type': 'Answer', text: 'As duas primeiras aulas de cada curso são gratuitas, sem cartão.' } }, { '@type': 'Question', name: 'Qual é o desconto no Pix?', acceptedAnswer: { '@type': 'Answer', text: `O plano trimestral custa ${PRECO_TRIMESTRAL_PIX} no Pix, 30% de desconto sobre ${PRECO_TRIMESTRAL}.` } }] },

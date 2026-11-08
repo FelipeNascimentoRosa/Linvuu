@@ -4,13 +4,14 @@
 import {chromium} from 'playwright';
 import AxeBuilder from '@axe-core/playwright';
 import assert from 'node:assert/strict';
+const semSugestaoIdioma=async(b,o)=>{const c=await b.newContext(o);await c.addInitScript(()=>{try{localStorage.setItem('linvuu:sugestao-idioma-dispensada','1');}catch{}});return c;}; // a faixa de sugestão de idioma tem teste próprio
 const BASE=process.env.BASE||'http://127.0.0.1:4370';
 const browser=await chromium.launch({headless:true,executablePath:process.env.CHROME_EXECUTABLE_PATH,args:['--no-sandbox']});
 const passou=[];
 try{
  for(const [pref,h1,botao,assunto] of [['','Excluir conta e dados da Linvuu','Preparar e-mail de exclusão','solicitação de exclusão'],['/en','Delete your Linvuu account and data','Prepare deletion email','deletion request']]){
   for(const tema of ['light','dark']){
-   const ctx=await browser.newContext({viewport:{width:360,height:780},colorScheme:tema});await ctx.route(/posthog|googletagmanager/,r=>r.abort());
+   const ctx=await semSugestaoIdioma(browser,{viewport:{width:360,height:780},colorScheme:tema});await ctx.route(/posthog|googletagmanager/,r=>r.abort());
    const p=await ctx.newPage();const erros=[];p.on('pageerror',e=>erros.push(e.message));
    const r=await p.goto(`${BASE}${pref}/excluir-conta`);assert.equal(r.status(),200);
    await p.getByRole('heading',{level:1,name:h1}).waitFor();

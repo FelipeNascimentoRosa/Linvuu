@@ -54,7 +54,7 @@ export function PrimeiraAbertura() {
     if (!visivel) return;
     const antes = document.body.style.overflow; document.body.style.overflow = 'hidden';
     // O resto do app fica inerte (fora do foco e do leitor de tela) enquanto as telas iniciais estão abertas.
-    const fundo = [...document.querySelectorAll<HTMLElement>('#conteudo, .lv-tabbar, .app-header, .skip-link')];
+    const fundo = [...document.querySelectorAll<HTMLElement>('#conteudo, .lv-tabbar, .app-header, .skip-link, .analytics-consent')];
     fundo.forEach((e) => { e.inert = true; });
     return () => { document.body.style.overflow = antes; fundo.forEach((e) => { e.inert = false; }); };
   }, [visivel]);

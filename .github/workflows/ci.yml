@@ -43,6 +43,8 @@ jobs:
         run: node --import tsx scripts/testar-tiktok-pixel.ts
       - name: Testar prontidao sem dependencias de producao
         run: node --import tsx scripts/testar-prontidao.ts
+      - name: Testar a origem do áudio pago (repositório privado, v2 primeiro, nomes validados)
+        run: node --import tsx scripts/testar-audio-privado.ts
       - name: Testar rota assetlinks (nunca publica fingerprint inventado)
         run: node --import tsx scripts/testar-assetlinks.ts
       - name: Garantir que o checkout valida preços sem criar produtos no Stripe real
@@ -74,6 +76,10 @@ jobs:
           node --import tsx scripts/testar-tentativas-apk.ts
           node --import tsx scripts/testar-revisao-erros-apk.ts
           node --import tsx scripts/testar-primeira-abertura-apk.ts
+      - name: Testes das avaliações de alunos
+        run: npm run testar:avaliacoes
+      - name: Testar a sugestão de idioma pelo navegador
+        run: node --import tsx scripts/testar-sugestao-idioma.ts
       - name: Testar validação da newsletter (tipos, tamanhos, aceite, campos extras)
         run: npm run testar:newsletter
       - name: Testar a rota da newsletter no emulador do Firestore (consentimento, repetição, limite por IP)

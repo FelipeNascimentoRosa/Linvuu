@@ -3,7 +3,8 @@ apply plugin: 'com.android.application'
 // A assinatura abaixo é exclusiva do aplicativo de testes, nunca da produção.
 def testKeystore = System.getenv('LINVUU_TEST_KEYSTORE')
 def testPassword = System.getenv('LINVUU_TEST_PASSWORD')
-def suppliedCode = System.getenv('ANDROID_VERSION_CODE')
+// versionCode vem da execução: variável de ambiente ou -PANDROID_VERSION_CODE=<n>. Nunca há valor padrão em release (ver o guard no fim).
+def suppliedCode = System.getenv('ANDROID_VERSION_CODE') ?: project.findProperty('ANDROID_VERSION_CODE')?.toString()
 def suppliedName = System.getenv('ANDROID_VERSION_NAME') ?: '1.0.0'
 
 // Assinatura de produção: arquivo local fora do Git (ver keystore.properties.example). A chave nunca entra no repositório.
@@ -121,7 +122,12 @@ try {
 
 // Release de loja só compila com a chave de upload configurada em keystore.properties (nunca com a chave de testes).
 gradle.taskGraph.whenReady { graph ->
-    if (graph.allTasks.any { it.project == project && it.name ==~ /(?i).*(assemble|bundle|package).*release.*/ } && !producaoConfigurada) {
+    def tarefaRelease = graph.allTasks.any { it.project == project && it.name ==~ /(?i).*(assemble|bundle|package).*release.*/ }
+    if (tarefaRelease && !producaoConfigurada) {
         throw new GradleException('Release de loja bloqueada: crie android/keystore.properties a partir de keystore.properties.example (chave de upload do dono)')
+    }
+    // Sem versionCode explícito o AAB sairia com 1 e a Play recusaria qualquer atualização depois da primeira publicação.
+    if (tarefaRelease && !suppliedCode) {
+        throw new GradleException('Release de loja bloqueada: informe ANDROID_VERSION_CODE (inteiro maior que o último publicado na Play), por exemplo -PANDROID_VERSION_CODE=2')
     }
 }

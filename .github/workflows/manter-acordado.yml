@@ -1,11 +1,11 @@
 name: Monitorar site e dependencias
 
-# No plano gratuito do Render o serviço hiberna depois de 15 minutos sem visita, e a primeira visita espera ~50 s.
-# Este workflow verifica processo, sitemap e dependencias. Agendamentos do GitHub podem atrasar;
-# nao substitui instancia sem hibernacao ou monitoramento externo de disponibilidade.
+# Desde 08/11/2026 o serviço do Render está no plano pago (sem hibernação): este workflow não precisa mais "acordar" o site.
+# Ele só monitora processo, sitemap e dependências, uma vez por hora. Agendamentos do GitHub podem atrasar;
+# não substitui monitoramento externo de disponibilidade.
 on:
   schedule:
-    - cron: '7,17,27,37,47,57 * * * *'
+    - cron: '17 * * * *'
   workflow_dispatch:
 permissions: {}
 jobs:
