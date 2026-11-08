@@ -4,6 +4,23 @@ Plataforma **internacional** de ensino de idiomas (português, inglês e espanho
 
 **O estado verificável fica em [docs/ESTADO-ATUAL.md](docs/ESTADO-ATUAL.md)**. Registros antigos, como `docs/historico/CONTEXTO.md`, não substituem o código, CI e as consultas de produção. Não tratar recursos em rascunho como lançados.
 
+## Onde fica cada coisa (site × app)
+
+Um repositório só, como manda a convenção do Capacitor: o site e o app Android compartilham aulas, livros, idiomas, login e servidor; o que muda é a interface.
+
+| Pasta | O que é | Quem usa |
+|---|---|---|
+| `src/plataforma/website/` | Interface do **site** (linvuu.com.br e linvuu.com) | site |
+| `src/plataforma/apk/` | Interface do **app Android** (primeira abertura, abas, sessões, ajustes) | app |
+| `src/lib/`, `src/i18n/`, `src/config/`, `src/components/` | Código compartilhado: aulas, progresso, login, textos, preços | site e app |
+| `android/` | Casca nativa do app (Gradle, manifesto, ícones). `npm run build:apk` gera `dist-apk/`, que o Capacitor copia para cá | app |
+| `server/`, `server.ts` | Servidor (Render): API, cobrança, áudio privado, avaliações | site e app |
+| `content/` | Aulas, gramática e livros | site e app |
+| `public/` | Arquivos do site (o app leva só imagens e fontes; áudio vem do servidor) | site |
+| `docs/` | Decisões e registros. App: `docs/APP.md`, `docs/COBRANCA-APP.md`, `docs/RELEASE-PLAY-20261024.md`, `docs/APP-PRIMEIRA-ABERTURA-2026-11-08.md` | — |
+
+Gerado e nunca versionado: `dist/`, `dist-apk/`, `android/app/build/`, `android/app/src/main/assets/public/`, `revisao-publica/`.
+
 ## Executar e validar
 
 ```bash

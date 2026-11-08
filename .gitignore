@@ -33,3 +33,6 @@ dist-apk/
 *.pfx
 keystore.properties
 dist-builds/
+
+# Capturas da revisão pública: geradas pelo workflow e enviadas como artefato, nunca versionadas.
+revisao-publica/
