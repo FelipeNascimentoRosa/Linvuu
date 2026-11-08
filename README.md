@@ -19,6 +19,8 @@ Um repositório só, como manda a convenção do Capacitor: o site e o app Andro
 | `public/` | Arquivos do site (o app leva só imagens e fontes; áudio vem do servidor) | site |
 | `docs/` | Decisões e registros. App: `docs/APP.md`, `docs/COBRANCA-APP.md`, `docs/RELEASE-PLAY-20261024.md`, `docs/APP-PRIMEIRA-ABERTURA-2026-11-08.md` | — |
 
+**Livros (e-books):** os livros A1–A2 da Coleção Linvuu (texto-fonte, diagramação e PDFs) ficam no repositório privado `FelipeNascimentoRosa/linvuu-livros-em-pdf`; o catálogo está no README de lá. Aqui ficam só os capítulos usados pelo site (`content/`).
+
 Gerado e nunca versionado: `dist/`, `dist-apk/`, `android/app/build/`, `android/app/src/main/assets/public/`, `revisao-publica/`.
 
 ## Executar e validar
