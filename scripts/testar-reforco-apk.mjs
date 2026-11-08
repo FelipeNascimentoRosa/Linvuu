@@ -3,13 +3,14 @@ import {chromium} from 'playwright';
 import AxeBuilder from '@axe-core/playwright';
 import {spawn} from 'node:child_process';
 import assert from 'node:assert/strict';
+const semAbertura=async(b,o)=>{const c=await b.newContext(o);await c.addInitScript(()=>{try{localStorage.setItem('linvuu:primeira-abertura:v1','1');}catch{}});return c;}; // estes testes começam depois das telas da primeira abertura
 const base='http://127.0.0.1:4361';
 const server=spawn(process.execPath,['node_modules/vite/bin/vite.js','preview','--outDir','dist-apk','--host','127.0.0.1','--port','4361','--strictPort'],{stdio:'ignore'});
 let browser;
 try{
  for(let i=0;i<60;i++){try{if((await fetch(base)).ok)break;}catch{}await new Promise(r=>setTimeout(r,250));}
  browser=await chromium.launch({headless:true,executablePath:process.env.CHROME_EXECUTABLE_PATH,args:['--no-sandbox']});
- const ctx=await browser.newContext({viewport:{width:360,height:780},reducedMotion:'reduce'});
+ const ctx=await semAbertura(browser,{viewport:{width:360,height:780},reducedMotion:'reduce'});
  await ctx.route('https://linvuu.com.br/**',r=>r.abort());
  const p=await ctx.newPage();
  await p.goto(base+'/');await p.locator('#conteudo h1').waitFor();

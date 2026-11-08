@@ -6,6 +6,7 @@ import path from 'node:path';
 import {chromium} from 'playwright';
 import AxeBuilder from '@axe-core/playwright';
 import assert from 'node:assert/strict';
+const semAbertura=async(b,o)=>{const c=await b.newContext(o);await c.addInitScript(()=>{try{localStorage.setItem('linvuu:primeira-abertura:v1','1');}catch{}});return c;}; // estes testes começam depois das telas da primeira abertura
 const raiz=path.resolve('scripts/harness-play'),saida=path.resolve('node_modules/.cache/harness-play');
 const mock={name:'mock-play',enforce:'pre',resolveId(src,imp){if(src==='./comprasPlay'&&imp?.endsWith('AssinaturaPlay.tsx'))return path.join(raiz,'comprasPlay.mock.ts');}};
 await build({root:raiz,logLevel:'error',configFile:false,plugins:[mock,react()],define:{'import.meta.env.VITE_ALVO':'"apk"'},build:{outDir:saida,emptyOutDir:true}});
@@ -13,7 +14,7 @@ const srv=await preview({root:raiz,configFile:false,logLevel:'error',build:{outD
 const browser=await chromium.launch({headless:true,executablePath:process.env.CHROME_EXECUTABLE_PATH,args:['--no-sandbox']});
 const mensal=(extra={})=>({identifier:'$rc_monthly',product:{title:'Linvuu Mensal (Linvuu)',priceString:'R$ 139,00',subscriptionPeriod:'P1M',defaultOption:{freePhase:null,introPhase:null},...extra}});
 async function abrir(cenario,acesso={ativa:false,via:null,cancelaEm:null,ate:null}){
- const ctx=await browser.newContext({viewport:{width:360,height:780}});const p=await ctx.newPage();
+ const ctx=await semAbertura(browser,{viewport:{width:360,height:780}});const p=await ctx.newPage();
  await p.addInitScript(([c,a])=>{const pacote=c.pacotes;window.__acesso=a;window.__recargas=0;window.__play={chamadas:[],ofertas:()=>c.erroOfertas?Promise.reject(new Error('x')):Promise.resolve(pacote),comprar:()=>c.compra==='ok'?Promise.resolve({}):Promise.reject(c.compra),restaurar:()=>Promise.resolve({})};},[cenario,acesso]);
  await p.goto('http://127.0.0.1:4363/');await p.locator('#play-titulo').waitFor();return p;
 }
