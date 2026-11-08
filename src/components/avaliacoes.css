@@ -24,3 +24,9 @@
 .av-isca{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .br-avaliacoes .avaliacoes{border-top:0;margin:0;padding-top:0}
+.av-topo{display:flex;gap:12px;align-items:center;margin-bottom:10px}
+.av-topo .av-autor{margin:0;color:var(--grafite);font-size:1rem}
+.av-meta{margin:2px 0 0;font-size:.85rem;color:var(--grafite-65)}
+.av-foto{width:48px;height:48px;border-radius:50%;object-fit:cover;flex-shrink:0;background:var(--verde-100)}
+.av-iniciais{display:grid;place-items:center;background:var(--verde-floresta);color:var(--papel);font-weight:700;letter-spacing:.02em}
+.av-com-foto .av-foto{width:32px;height:32px}

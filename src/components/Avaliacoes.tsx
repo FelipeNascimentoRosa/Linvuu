@@ -9,6 +9,8 @@ import './avaliacoes.css';
 
 interface Resposta { itens: AvaliacaoPublica[]; total: number; media: number | null; contadas: number }
 
+const iniciais = (nome: string) => nome.split(' ').filter(Boolean).slice(0, 2).map((p) => p[0]!.toUpperCase()).join('');
+
 const Estrelas = ({ n, rotulo }: { n: number; rotulo: string }) => (
   <span className="av-estrelas" role="img" aria-label={rotulo}>{'★'.repeat(n)}<span aria-hidden="true">{'☆'.repeat(NOTA_MAX - n)}</span></span>
 );
@@ -24,6 +26,7 @@ export function Avaliacoes() {
   const [nome, setNome] = useState('');
   const [relacao, setRelacao] = useState<Relacao>('nenhuma');
   const [aceite, setAceite] = useState(false);
+  const [comFoto, setComFoto] = useState(true);
   const [isca, setIsca] = useState('');
   const [estado, setEstado] = useState<'livre' | 'enviando' | 'ok' | 'duplicada' | 'poucas' | 'invalido' | 'erro'>('livre');
 
@@ -40,7 +43,7 @@ export function Avaliacoes() {
     try {
       const { auth } = await carregarAuth();
       const token = await auth.currentUser?.getIdToken();
-      const r = await fetch(api('/api/avaliacoes'), { method: 'POST', headers: { 'Content-Type': 'application/json', ...(token ? { Authorization: `Bearer ${token}` } : {}) }, body: JSON.stringify({ nota, texto, nome, relacao, aceite, ref_extra_av: isca }) });
+      const r = await fetch(api('/api/avaliacoes'), { method: 'POST', headers: { 'Content-Type': 'application/json', ...(token ? { Authorization: `Bearer ${token}` } : {}) }, body: JSON.stringify({ nota, texto, nome, relacao, aceite, foto: !!usuario?.foto && comFoto, ref_extra_av: isca }) });
       if (r.status === 204) { setEstado('ok'); return; }
       const j = await r.json().catch(() => ({} as { codigo?: string }));
       setEstado(j.codigo === 'duplicada' ? 'duplicada' : j.codigo === 'poucas-aulas' ? 'poucas' : r.status === 400 ? 'invalido' : 'erro');
@@ -58,9 +61,12 @@ export function Avaliacoes() {
         <ul className="av-lista">
           {itens.map((i, k) => (
             <li key={`${i.nome}-${i.em}-${k}`} className="av-card">
+              <div className="av-topo">
+                {i.foto ? <img className="av-foto" src={i.foto} alt="" width="48" height="48" loading="lazy" referrerPolicy="no-referrer" /> : <span className="av-foto av-iniciais" aria-hidden="true">{iniciais(i.nome)}</span>}
+                <div><p className="av-autor"><strong>{i.nome}</strong></p><p className="av-meta">{a.aulas(i.aulas)}{i.relacao === 'conhece-professor' && <span className="av-selo">{a.conhece}</span>}</p></div>
+              </div>
               <Estrelas n={i.nota} rotulo={a.estrelas(i.nota)} />
               <p className="av-texto">{i.texto}</p>
-              <p className="av-autor"><strong>{i.nome}</strong> · {a.aulas(i.aulas)}{i.relacao === 'conhece-professor' && <span className="av-selo">{a.conhece}</span>}</p>
             </li>
           ))}
         </ul>
@@ -82,6 +88,7 @@ export function Avaliacoes() {
               <label><input type="radio" name="relacao" checked={relacao === 'nenhuma'} onChange={() => setRelacao('nenhuma')} /> {a.relNenhuma}</label>
               <label><input type="radio" name="relacao" checked={relacao === 'conhece-professor'} onChange={() => setRelacao('conhece-professor')} /> {a.relConhece}</label>
             </fieldset>
+            {usuario?.foto && <label className="av-aceite av-com-foto"><input type="checkbox" checked={comFoto} onChange={(e) => setComFoto(e.target.checked)} /> <img className="av-foto" src={usuario.foto} alt="" width="32" height="32" referrerPolicy="no-referrer" /> {a.foto}</label>}
             <label className="av-aceite"><input type="checkbox" checked={aceite} onChange={(e) => setAceite(e.target.checked)} required /> {a.aceite}</label>
             <input type="text" name="ref_extra_av" value={isca} onChange={(e) => setIsca(e.target.value)} tabIndex={-1} autoComplete="off" aria-hidden="true" className="av-isca" />
             {estado !== 'livre' && estado !== 'enviando' && <p className="erro" role="alert">{msg[estado]}</p>}

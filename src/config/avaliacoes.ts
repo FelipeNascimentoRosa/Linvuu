@@ -15,10 +15,10 @@ export const AULAS_MIN = 2;
 export const MIN_PARA_NOTA_AGREGADA = 5;
 export const MAX_REVIEWS_NO_SCHEMA = 10;
 
-export interface NovaAvaliacao { nota: number; texto: string; nome: string; relacao: Relacao }
-export interface AvaliacaoPublica { nome: string; nota: number; texto: string; relacao: Relacao; aulas: number; em: string }
+export interface NovaAvaliacao { nota: number; texto: string; nome: string; relacao: Relacao; mostrarFoto: boolean }
+export interface AvaliacaoPublica { nome: string; nota: number; texto: string; relacao: Relacao; aulas: number; em: string; foto?: string }
 
-const CAMPOS = ['nota', 'texto', 'nome', 'relacao', 'aceite', 'ref_extra_av'];
+const CAMPOS = ['nota', 'texto', 'nome', 'relacao', 'aceite', 'foto', 'ref_extra_av'];
 
 /** Valida o corpo do formulário. Devolve null se algo estiver fora do contrato (tipo, tamanho, campo extra, sem aceite). */
 export function validarAvaliacao(corpo: unknown): NovaAvaliacao | null {
@@ -34,7 +34,8 @@ export function validarAvaliacao(corpo: unknown): NovaAvaliacao | null {
   if (/https?:\/\/|www\.|@/i.test(texto) || /https?:\/\/|www\.|@/i.test(nome)) return null; // sem links nem e-mails (spam)
   if (b.relacao !== 'nenhuma' && b.relacao !== 'conhece-professor') return null;
   if (b.aceite !== true) return null; // consentimento explícito para mostrar nome e texto
-  return { nota: b.nota, texto, nome, relacao: b.relacao };
+  if (b.foto !== undefined && typeof b.foto !== 'boolean') return null;
+  return { nota: b.nota, texto, nome, relacao: b.relacao, mostrarFoto: b.foto === true };
 }
 
 /** Média e contagem só das avaliações de quem NÃO tem relação com o professor (as demais aparecem, mas não entram na nota). */
@@ -61,6 +62,9 @@ export function trechoSchema(lista: AvaliacaoPublica[]): Record<string, unknown>
   if (r.contadas >= MIN_PARA_NOTA_AGREGADA && r.media !== null) out.aggregateRating = { '@type': 'AggregateRating', ratingValue: r.media, reviewCount: r.contadas, bestRating: NOTA_MAX, worstRating: NOTA_MIN };
   return out;
 }
+
+/** Só fotos de perfil do Google (o servidor pega do login, nunca do formulário). */
+export const fotoPermitida = (url: unknown): url is string => typeof url === 'string' && url.length <= 500 && /^https:\/\/[a-z0-9-]+\.googleusercontent\.com\//.test(url);
 
 /** Avaliações aprovadas por domínio. O servidor preenche (server/avaliacoes.ts); vazio no build estático. */
 export const aprovadasPorDominio: Record<DominioAvaliacao, AvaliacaoPublica[]> = { br: [], global: [] };

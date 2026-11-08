@@ -5,7 +5,8 @@
 //  - A aprovação é manual (status → "aprovada" ou "recusada"); nada aparece no site sem ela.
 import type { Express, Request, Response } from 'express';
 import { FieldValue, getFirestore } from 'firebase-admin/firestore';
-import { aprovadasPorDominio, AULAS_MIN, resumo, validarAvaliacao, type AvaliacaoPublica, type DominioAvaliacao } from '../src/config/avaliacoes';
+import { getAuth } from 'firebase-admin/auth';
+import { aprovadasPorDominio, AULAS_MIN, fotoPermitida, resumo, validarAvaliacao, type AvaliacaoPublica, type DominioAvaliacao } from '../src/config/avaliacoes';
 import { usuario } from './billing';
 import { perfilDaRequisicao } from './dominio';
 import { firebaseAdmin, projetoFirebase } from './firebase-admin';
@@ -21,7 +22,7 @@ export async function lerAprovadas(dominio: DominioAvaliacao): Promise<Avaliacao
     .map((d) => d.data())
     .map((d) => ({
       nome: String(d.nome ?? ''), nota: Number(d.nota), texto: String(d.texto ?? ''), relacao: d.relacao === 'conhece-professor' ? 'conhece-professor' as const : 'nenhuma' as const,
-      aulas: Number(d.aulasFeitas ?? 0), em: (d.criadoEm?.toDate?.() as Date | undefined)?.toISOString().slice(0, 10) ?? '',
+      ...(fotoPermitida(d.foto) ? { foto: d.foto } : {}), aulas: Number(d.aulasFeitas ?? 0), em: (d.criadoEm?.toDate?.() as Date | undefined)?.toISOString().slice(0, 10) ?? '',
     }))
     .filter((a) => a.nome && a.texto && a.nota >= 1 && a.nota <= 5)
     .sort((a, b) => b.em.localeCompare(a.em));
@@ -62,8 +63,11 @@ export function registrarAvaliacoes(app: Express) {
       const aulasFeitas = Array.isArray(lista) ? lista.length : 0;
       if (aulasFeitas < AULAS_MIN) { res.status(403).json({ error: 'Conclua as aulas gratuitas para avaliar.', codigo: 'poucas-aulas' }); return; }
       const dominio = dominioDe(req);
+      // Foto: só com o consentimento marcado, e sempre a do perfil do login (Google), lida no servidor; nunca um endereço enviado pelo navegador.
+      let foto: string | null = null;
+      if (v.mostrarFoto) { try { const p = (await getAuth(firebaseAdmin()).getUser(u.uid)).photoURL; if (fotoPermitida(p)) foto = p; } catch { /* sem foto */ } }
       await db().collection(COLECAO).doc(`${dominio}_${u.uid}`).create({
-        uid: u.uid, dominio, nota: v.nota, texto: v.texto, nome: v.nome, relacao: v.relacao, aulasFeitas,
+        uid: u.uid, dominio, nota: v.nota, texto: v.texto, nome: v.nome, relacao: v.relacao, aulasFeitas, ...(foto ? { foto } : {}),
         status: 'pendente', criadoEm: FieldValue.serverTimestamp(), consentimento: true,
       });
       res.status(204).end();

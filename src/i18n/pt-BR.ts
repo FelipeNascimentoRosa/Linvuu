@@ -51,7 +51,7 @@ export const ptBR = {
     avalie: 'Avalie a Linvuu', avalieIntro: (n: number) => `Para avaliar, entre na sua conta e conclua pelo menos ${n} sessões das aulas grátis. Sua avaliação passa por uma conferência antes de aparecer e mostramos todas as aprovadas, inclusive as críticas.`,
     campoNota: 'Sua nota', campoTexto: 'Sua experiência (20 a 600 caracteres, sem links)', campoNome: 'Nome que aparece no site', campoRelacao: 'Sua relação com o professor',
     relNenhuma: 'Sou aluno, sem relação pessoal com o professor', relConhece: 'Conheço o professor pessoalmente',
-    aceite: 'Autorizo mostrar meu nome e meu texto no site da Linvuu.', enviar: 'Enviar avaliação', enviando: 'Enviando…',
+    aceite: 'Autorizo mostrar meu nome e meu texto no site da Linvuu.', foto: 'Mostrar a foto do meu perfil do Google', enviar: 'Enviar avaliação', enviando: 'Enviando…',
     entrar: 'Entre na sua conta para avaliar.', fazerAulas: (n: number) => `Conclua pelo menos ${n} sessões das aulas grátis, com a conta aberta, para poder avaliar.`,
     obrigado: 'Recebemos sua avaliação. Ela aparece no site depois da conferência.', jaEnviou: 'Você já enviou uma avaliação.', invalido: 'Confira nota, texto (sem links) e nome.', erro: 'Não foi possível enviar agora. Tente de novo.',
   },

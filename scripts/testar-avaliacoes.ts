@@ -1,8 +1,12 @@
 import assert from 'node:assert/strict';
-import { aprovadasPorDominio, MIN_PARA_NOTA_AGREGADA, resumo, trechoSchema, validarAvaliacao, type AvaliacaoPublica } from '../src/config/avaliacoes';
+import { aprovadasPorDominio, fotoPermitida, MIN_PARA_NOTA_AGREGADA, resumo, trechoSchema, validarAvaliacao, type AvaliacaoPublica } from '../src/config/avaliacoes';
 
 const base = { nota: 5, texto: 'Aulas claras, expliquei o alfabeto russo em uma tarde.', nome: ' Maria  S. ', relacao: 'nenhuma', aceite: true };
-assert.deepEqual(validarAvaliacao(base), { nota: 5, texto: 'Aulas claras, expliquei o alfabeto russo em uma tarde.', nome: 'Maria S.', relacao: 'nenhuma' }, 'válida: normaliza espaços');
+assert.deepEqual(validarAvaliacao(base), { nota: 5, texto: 'Aulas claras, expliquei o alfabeto russo em uma tarde.', nome: 'Maria S.', relacao: 'nenhuma', mostrarFoto: false }, 'válida: normaliza espaços');
+assert.equal(validarAvaliacao({ ...base, foto: true })?.mostrarFoto, true, 'com foto');
+assert.equal(validarAvaliacao({ ...base, foto: 'https://exemplo.invalid/x.jpg' }), null, 'foto não pode ser um endereço vindo do navegador');
+assert.equal(fotoPermitida('https://lh3.googleusercontent.com/a/abc'), true);
+for (const u of ['http://lh3.googleusercontent.com/a', 'https://googleusercontent.com.evil.invalid/a', 'https://exemplo.invalid/a.jpg', 'javascript:alert(1)', 1]) assert.equal(fotoPermitida(u), false, `foto recusada: ${String(u)}`);
 assert.equal(validarAvaliacao({ ...base, aceite: false }), null, 'sem aceite');
 for (const nota of [0, 6, 4.5, '5', null, NaN]) assert.equal(validarAvaliacao({ ...base, nota }), null, `nota inválida: ${String(nota)}`);
 assert.equal(validarAvaliacao({ ...base, texto: 'curto' }), null, 'texto curto');
