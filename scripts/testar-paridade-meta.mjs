@@ -7,6 +7,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import http from 'node:http';
 import { chromium } from 'playwright';
+const semSugestaoIdioma=async(b,o)=>{const c=await b.newContext(o);await c.addInitScript(()=>{try{localStorage.setItem('linvuu:sugestao-idioma-dispensada','1');}catch{}});return c;}; // a faixa de sugestão de idioma tem teste próprio
 
 // Uso: node scripts/testar-paridade-meta.mjs [base] [global]
 // Sem o 2º argumento: o site brasileiro (127.0.0.1 → estrutura /, /en, /es). Com «global»: o servidor é visitado como linvuu.com
@@ -46,7 +47,7 @@ const urls = [...new Set([...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) =
 assert.ok(urls.length > (global ? 25 : 50), 'sitemap carregado');
 
 const browser = await chromium.launch(global ? { args: [`--unsafely-treat-insecure-origin-as-secure=${base}`, `--host-resolver-rules=MAP ${HOST} 127.0.0.1`] } : {});
-const ctx = await browser.newContext({ viewport: { width: 390, height: 844 } });
+const ctx = await semSugestaoIdioma(browser,{ viewport: { width: 390, height: 844 } });
 // Sem terceiros: o teste mede o site, não PostHog/pixels.
 await ctx.route('**/*', async (r) => {
   const url = r.request().url();
