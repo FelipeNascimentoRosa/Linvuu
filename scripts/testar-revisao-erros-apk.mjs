@@ -4,6 +4,7 @@ import {spawn} from 'node:child_process';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {normalizarResposta} from '../src/lib/correcaoExercicios.ts';
+const semAbertura=async(b,o)=>{const c=await b.newContext(o);await c.addInitScript(()=>{try{localStorage.setItem('linvuu:primeira-abertura:v1','1');}catch{}});return c;}; // estes testes começam depois das telas da primeira abertura
 const base='http://127.0.0.1:4363',passed=[];
 const aula=JSON.parse(fs.readFileSync('content/idiomas/en/dia-004.json','utf8'));
 const itens=aula.sessao.blocos.find(b=>b.tipo==='exercicios').itens;
@@ -11,7 +12,7 @@ const server=spawn(process.execPath,['node_modules/vite/bin/vite.js','preview','
 try{
  for(let i=0;i<60;i++){try{if((await fetch(base)).ok)break;}catch{}await new Promise(r=>setTimeout(r,250));}
  browser=await chromium.launch({executablePath:process.env.CHROME_EXECUTABLE_PATH,args:['--no-sandbox']});
- const context=await browser.newContext({viewport:{width:320,height:720},reducedMotion:'reduce'}),page=await context.newPage();await page.route('https://linvuu.com.br/**',r=>r.abort());
+ const context=await semAbertura(browser,{viewport:{width:320,height:720},reducedMotion:'reduce'}),page=await context.newPage();await page.route('https://linvuu.com.br/**',r=>r.abort());
  await page.goto(base+'/curso/en/dia/4');await page.locator('.app-sessao').waitFor();await page.locator('.app-navegador-etapas summary').click();await page.locator('.passo').filter({hasText:'Exercícios'}).first().click();
  let n=0;
  while(!await page.locator('.ex-resumo').count()){

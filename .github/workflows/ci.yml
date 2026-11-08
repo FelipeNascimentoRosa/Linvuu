@@ -73,6 +73,7 @@ jobs:
           node --import tsx scripts/testar-falha-inicial-armazenamento-apk.ts
           node --import tsx scripts/testar-tentativas-apk.ts
           node --import tsx scripts/testar-revisao-erros-apk.ts
+          node --import tsx scripts/testar-primeira-abertura-apk.ts
       - name: Testes das avaliações de alunos
         run: npm run testar:avaliacoes
       - name: Testar validação da newsletter (tipos, tamanhos, aceite, campos extras)
