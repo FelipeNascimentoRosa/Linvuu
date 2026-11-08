@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+const mem = new Map<string, string>();
+(globalThis as { localStorage?: unknown }).localStorage = { getItem: (k: string) => mem.get(k) ?? null, setItem: (k: string, v: string) => void mem.set(k, String(v)), removeItem: (k: string) => void mem.delete(k), key: (i: number) => [...mem.keys()][i] ?? null, get length() { return mem.size; }, clear: () => mem.clear() };
+const m = await import('../src/plataforma/apk/primeiraAberturaModelo');
+assert.equal(m.primeiraAberturaFeita(), false, 'aparelho novo vê a primeira abertura');
+mem.set('linvuu:pratica-apk:v1:visitante:ru:1', JSON.stringify({ acertos: 3, total: 4, em: new Date().toISOString() }));
+assert.equal(m.primeiraAberturaFeita(), true, 'quem já estudou neste aparelho não vê de novo');
+mem.clear();
+m.concluirPrimeiraAbertura({ curso: 'ru', meta: 2 });
+assert.equal(m.primeiraAberturaFeita(), true); assert.equal(m.cursoPreferido(), 'ru'); assert.equal(m.metaDiaria(), 2);
+mem.set(m.CHAVE_META, '9'); assert.equal(m.metaDiaria(), 1, 'meta inválida volta para 1');
+const agora = new Date('2026-11-08T15:00:00');
+const ontem = new Date('2026-11-07T15:00:00');
+assert.equal(m.sessoesHoje([{ em: agora.toISOString() }, { em: ontem.toISOString() }, { em: 'x' }, {}], agora), 1, 'só conta prática de hoje');
+assert.equal(m.inicioDoIdioma('en'), '/en'); assert.equal(m.inicioDoIdioma('pt-BR'), '/');
+console.log('ok: primeira abertura do app (estado novo, legado, escolhas, meta inválida, prática de hoje)');
