@@ -54,12 +54,12 @@ async function preco(): Promise<string> {
 // por uid (e o pedido em andamento é compartilhado), e a busca só acontece uma vez por processo.
 const clientes = new Map<string, Promise<string>>();
 const usuarioPorCliente = new Map<string, string>();
-function cliente(u: { uid: string; email?: string }): Promise<string> {
+function cliente(u: { uid: string; email?: string }, idiomaEmails?: 'pt-BR' | 'en'): Promise<string> {
   const guardado = clientes.get(u.uid);
   if (guardado) return guardado;
   const p = (async () => {
     const r = await stripe!.customers.search({ query: `metadata['uid']:'${u.uid}'` });
-    const id = r.data[0]?.id ?? (await stripe!.customers.create({ email: u.email, metadata: { uid: u.uid } }, { idempotencyKey: `linvuu-cliente-${u.uid}` })).id;
+    const id = r.data[0]?.id ?? (await stripe!.customers.create({ email: u.email, metadata: { uid: u.uid }, ...(idiomaEmails ? { preferred_locales: [idiomaEmails] } : {}) }, { idempotencyKey: `linvuu-cliente-${u.uid}` })).id;
     usuarioPorCliente.set(id, u.uid);
     return id;
   })();
@@ -221,7 +221,7 @@ export function registrarCobranca(app: Express, urlBase: (req: Request) => strin
       const pode = podeComprar(atual, plano);
       if (!pode.ok) { res.status(409).json({ error: pode.motivo === 'ja-assinante' ? 'Você já tem uma assinatura ativa.' : 'Você já tem acesso pago ativo.', motivo: pode.motivo }); return; }
       const medicao = validarMedicao(req.body?.medicao, req.ip, req.get('user-agent'));
-      const c = await cliente(u);
+      const c = await cliente(u, perfilDaRequisicao(req) === 'global' ? 'en' : 'pt-BR');
       // idioma do site (pt, en): o checkout do Stripe e a volta para o site ficam no mesmo idioma
       const idioma = dolar || req.body?.idioma === 'en' ? ('en' as const) : null;
       // volta para o idioma e para o domínio de onde veio (no .com o inglês não tem prefixo; no .com.br segue /en)
@@ -233,13 +233,13 @@ export function registrarCobranca(app: Express, urlBase: (req: Request) => strin
       const s = dolar
         ? (anual
           ? await stripe!.checkout.sessions.create({
-              ...comum, mode: 'payment', allowed_payment_method_types: ['card'],
+              ...comum, mode: 'payment', // sem lista fixa: o Stripe oferece, em USD, os meios que a conta tem ativos (cartão, Apple/Google Pay, Link, PayPal...)
               line_items: [{ quantity: 1, price_data: { currency: 'usd', unit_amount: CENTAVOS_USD.anual, product_data: { name: 'Linvuu: 12 months of access' } } }],
               metadata: { plano: 'anual', uid: u.uid, ...medicao },
               custom_text: { submit: { message: 'One payment, no automatic renewal, with a full refund within 7 days.' } },
             }, opcoes)
           : await stripe!.checkout.sessions.create({
-              ...comum, mode: 'subscription', allowed_payment_method_types: ['card'],
+              ...comum, mode: 'subscription',
               custom_text: { submit: { message: 'Full refund within 7 days. Cancel any time, no penalty.' } },
               line_items: [{ price: precoMensalUsdObrigatorio(process.env.STRIPE_PRICE_ID_USD), quantity: 1 }],
               metadata: { plano: 'mensal', uid: u.uid, ...medicao },
@@ -275,7 +275,7 @@ export function registrarCobranca(app: Express, urlBase: (req: Request) => strin
     if (!stripe) { nao(res); return; }
     try {
       const idioma = req.body?.idioma === 'en' ? ('en' as const) : null;
-      const s = await stripe!.billingPortal.sessions.create({ customer: await cliente(u), locale: idioma ?? 'pt-BR', return_url: `${urlBase(req)}${caminhoNoPerfil(perfilDaRequisicao(req), idioma ?? 'pt-BR', '/assinatura')}` });
+      const s = await stripe!.billingPortal.sessions.create({ customer: await cliente(u, perfilDaRequisicao(req) === 'global' ? 'en' : 'pt-BR'), locale: idioma ?? 'pt-BR', return_url: `${urlBase(req)}${caminhoNoPerfil(perfilDaRequisicao(req), idioma ?? 'pt-BR', '/assinatura')}` });
       res.json({ url: s.url });
     } catch (e) { console.error('billing/portal', e); res.status(500).json({ error: 'Não foi possível abrir o portal.' }); }
   });
