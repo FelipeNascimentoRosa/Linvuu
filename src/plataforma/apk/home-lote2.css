@@ -30,3 +30,11 @@
 }
 @media(max-width:360px){.app-dashboard .app-avanco-topo{flex-wrap:wrap}.app-home-percentual{font-size:1.5rem}}
 @media(prefers-reduced-motion:reduce){.app-home-identidade *{animation:none!important;transition:none!important}}
+/* Meta diária e "feito por professores" (primeira abertura, 2026-11-08). */
+.app-meta-dia{display:flex;gap:18px;align-items:center;margin:20px 0;padding:18px;border-radius:22px;background:var(--bg-elevado);border:1px solid var(--linha)}
+.app-meta-dia h2{margin:2px 0 4px;font-size:1.125rem}.app-meta-dia p:last-child{margin:0;color:var(--fg-2);font-size:.875rem;line-height:1.45}
+.app-meta-anel{--p:0%;flex-shrink:0;display:grid;place-items:center;width:72px;height:72px;border-radius:50%;background:conic-gradient(var(--ocre) var(--p),var(--bg-recuado) 0)}
+.app-meta-anel span{display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:var(--bg-elevado);font-weight:700;font-size:1.25rem}
+.app-meta-anel small{font-size:.75rem;color:var(--fg-2);font-weight:600;margin-top:-6px}
+.app-professores{margin:20px 0;padding:20px;border-radius:22px;background:var(--bg-recuado);border-left:4px solid var(--ocre)}
+.app-professores h2{margin:4px 0 8px}.app-professores p:last-child{margin:0;color:var(--fg-2);line-height:1.55}

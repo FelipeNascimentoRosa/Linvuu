@@ -1,11 +1,12 @@
 import {chromium} from 'playwright';
 import {spawn} from 'node:child_process';
 import assert from 'node:assert/strict';
+const semAbertura=async(b,o)=>{const c=await b.newContext(o);await c.addInitScript(()=>{try{localStorage.setItem('linvuu:primeira-abertura:v1','1');}catch{}});return c;}; // estes testes começam depois das telas da primeira abertura
 const base='http://127.0.0.1:4356';let browser;
 const server=spawn(process.execPath,['node_modules/vite/bin/vite.js','preview','--outDir','dist-apk','--host','127.0.0.1','--port','4356','--strictPort'],{stdio:'ignore'});
 try{
  for(let i=0;i<60;i++){try{if((await fetch(base)).ok)break;}catch{}await new Promise(r=>setTimeout(r,250));}
- browser=await chromium.launch({executablePath:process.env.CHROME_EXECUTABLE_PATH,args:['--no-sandbox']});const context=await browser.newContext();const page=await context.newPage();await page.route('https://linvuu.com.br/**',r=>r.abort());
+ browser=await chromium.launch({executablePath:process.env.CHROME_EXECUTABLE_PATH,args:['--no-sandbox']});const context=await semAbertura(browser,);const page=await context.newPage();await page.route('https://linvuu.com.br/**',r=>r.abort());
  await page.goto(base+'/curso/en/dia/4');await page.locator('.app-sessao').waitFor();await page.locator('.app-navegador-etapas summary').click();await page.locator('.passo').filter({hasText:'Exercícios'}).first().click();
  const pergunta=await page.locator('.ex-enunciado').innerText();
  if(await page.locator('.ex-op[role=radio]').count()){

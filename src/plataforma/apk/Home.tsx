@@ -10,19 +10,27 @@ import { useAssinatura } from '../../lib/acesso';
 import { SESSOES_GRATIS } from '../../config/planos';
 import './home-lote2.css';
 import { useReforco } from './useReforco';
+import { cursoPreferido, metaDiaria, praticasLocais, sessoesHoje } from './primeiraAberturaModelo';
 
 const detalhes = {
  'pt-BR': { selecao: 'Escolha seu idioma de estudo', passo: 'Próximo passo', marca: 'Boas-vindas à Linvuu', titulo: 'O mundo tem muito a dizer.', texto: 'Entre na conversa.', progresso: 'do percurso concluído', completa: 'Percurso concluído. Continue praticando.', rever: 'Rever o percurso', reverGratis: 'Revisar as sessões gratuitas', fimGratis: 'Você concluiu as sessões gratuitas deste idioma. Reforce o que aprendeu.' },
  en: { selecao: 'Choose your learning language', passo: 'Next step', marca: 'Welcome to Linvuu', titulo: 'The world has so much to say.', texto: 'Join the conversation.', progresso: 'of your path completed', completa: 'Path completed. Keep practising.', rever: 'Review your path', reverGratis: 'Review the free sessions', fimGratis: 'You completed the free sessions in this language. Practise what you learned.' },
  };
 
+const META_TX = {
+ 'pt-BR': { kicker: 'Meta de hoje', anel: (h: number, t: number) => `${h} de ${t} sessões praticadas hoje`, feita: 'Meta de hoje cumprida.', falta: (n: number) => n === 1 ? 'Falta 1 sessão para a meta de hoje.' : `Faltam ${n} sessões para a meta de hoje.`, ajuda: 'Conta as sessões com exercícios corrigidos hoje neste aparelho.', profKicker: 'Quem faz a Linvuu', profTitulo: 'Feito por professores de idiomas.', profTexto: 'Cada curso nasce de um livro escrito por professores, com base em referências bibliográficas, e explica a gramática no seu idioma.' },
+ en: { kicker: "Today's goal", anel: (h: number, t: number) => `${h} of ${t} sessions practised today`, feita: "Today's goal is done.", falta: (n: number) => n === 1 ? "1 session left for today's goal." : `${n} sessions left for today's goal.`, ajuda: 'Counts sessions with corrected exercises today on this device.', profKicker: 'Who makes Linvuu', profTitulo: 'Made by language teachers.', profTexto: 'Every course comes from a book written by teachers, grounded in the academic literature, and explains grammar in your language.' },
+} as const;
+
 export default function Home() {
  const x=experiencia(), a=appTextos(), anterior=useRetomadaGeral(), d=detalhes[LOCALE.codigo];
- const assinatura=useAssinatura();
+ const assinatura=useAssinatura(), m=META_TX[LOCALE.codigo];
  const cursos=CURSOS_ATIVOS.filter(c=>coberturaDoCurso(c.id).traduzidas>0);
- const [escolha,setEscolha]=useState(cursos[0]?.id);
+ const [escolha,setEscolha]=useState(()=>{const p=cursoPreferido();return cursos.some(c=>c.id===p)?p!:cursos[0]?.id;});
+ const meta=metaDiaria(), hoje=Math.min(sessoesHoje(praticasLocais()),meta);
  useEffect(()=>{if(anterior && cursos.some(c=>c.id===anterior.idioma))setEscolha(anterior.idioma);},[anterior?.idioma]);
  const curso=cursos.find(c=>c.id===escolha)??cursos[0];
+ useEffect(()=>{document.querySelector('.app-idiomas [aria-pressed=true]')?.scrollIntoView({inline:'center',block:'nearest'});},[curso?.id]);
  const feitos=useDiasFeitos(curso?.id);
  const ret=curso?pontoDeRetomada(curso.id):undefined;
  const revisaoGratuita=!!ret && !assinatura.ativa && ret.dia>SESSOES_GRATIS;
@@ -40,6 +48,10 @@ export default function Home() {
    {(revisaoGratuita || ret.feitos>=ret.total) && <p className="app-missao-detalhe">{revisaoGratuita ? d.fimGratis : d.completa}</p>}
    <Link className="app-acao-principal" to={revisaoGratuita ? `/curso/${curso.id}/dia/1` : ret.feitos>=ret.total ? `/curso/${curso.id}` : `/curso/${curso.id}/dia/${ret.dia}`}><span aria-hidden="true">▶</span>{revisaoGratuita ? d.reverGratis : ret.feitos>=ret.total ? d.rever : anterior?.idioma===curso.id||feitos.size?x.continuar:x.comecar}<span aria-hidden="true">→</span></Link>
   </section>
+  <section className="app-meta-dia" aria-labelledby="app-meta-titulo">
+   <div className="app-meta-anel" role="img" aria-label={m.anel(hoje,meta)} style={{'--p':`${(hoje/meta)*100}%`} as React.CSSProperties}><span>{hoje}<small>/{meta}</small></span></div>
+   <div><p className="app-kicker">{m.kicker}</p><h2 id="app-meta-titulo">{hoje>=meta?m.feita:m.falta(meta-hoje)}</h2><p>{m.ajuda}</p></div>
+  </section>
   {reforco.itens.length>0&&<section className="app-reforco" aria-labelledby="app-reforco-titulo">
    <p className="app-kicker">{reforco.t.rotulo}</p>
    <h2 id="app-reforco-titulo">{reforco.t.titulo(reforco.total)}</h2>
@@ -51,6 +63,9 @@ export default function Home() {
    <Link className="app-atalho app-atalho-percurso" to={`/curso/${curso.id}`}><span className="app-atalho-icone"><IconeEstudo tipo="percurso" /></span><span><strong>{x.percurso}</strong><small>{curso.nome} · {ret.total} {x.sessoes}</small></span><span className="app-seta" aria-hidden="true">↗</span></Link>
    {IDIOMAS_GRAMATICA.includes(curso.id) && <Link className="app-atalho" to={`/gramatica/${curso.id}`}><span className="app-atalho-icone"><IconeEstudo tipo="livro" /></span><span><strong>{x.consultar}</strong><small>{x.apoio}</small></span><span className="app-seta" aria-hidden="true">↗</span></Link>}
   </div>
+  <section className="app-professores" aria-labelledby="app-professores-titulo">
+   <p className="app-kicker">{m.profKicker}</p><h2 id="app-professores-titulo">{m.profTitulo}</h2><p>{m.profTexto}</p>
+  </section>
   <details className="app-home-identidade">
    <summary>{d.marca}<span aria-hidden="true">＋</span></summary>
    <div className="app-home-universo">

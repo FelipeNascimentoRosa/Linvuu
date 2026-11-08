@@ -118,7 +118,7 @@ export default defineConfig(({ mode }) => {
       if (env.VITE_APK_BUILD_ID) fs.writeFileSync(path.join('dist-apk','linvuu-build.json'),JSON.stringify({build:env.VITE_APK_BUILD_ID,source:env.LINVUU_SOURCE_SHA || null,versionCode:env.ANDROID_VERSION_CODE || null,versionName:env.ANDROID_VERSION_NAME || null}));
       // Mantém imagens e fontes locais; áudios são carregados sob demanda pelo servidor.
       for (const nome of fs.readdirSync('public')) {
-        if (['audio', 'mascots', 'fotos', 'sitemap.xml', 'robots.txt'].includes(nome)) continue;
+        if (['audio', 'mascots', 'fotos', 'sitemap.xml', 'robots.txt'].includes(nome) || /^(llms.*\.txt|robots-.*\.txt|sitemap-.*\.xml)$/.test(nome)) continue; // arquivos de busca do site não servem dentro do app
         fs.cpSync(path.join('public', nome), path.join('dist-apk', nome), { recursive: true });
       }
       // Capas: o app usa só a de 600 px; a de 900 px fica apenas no site.
