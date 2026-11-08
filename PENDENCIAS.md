@@ -5,7 +5,7 @@
 - linvuu.com/livros responde 200 com página em português («Coleção Linvuu: livros de gramática») no domínio em inglês — decidir: redirecionar ao .com.br, 404 ou noindex.
 - #453 (títulos pt ≤ 60 caracteres) ficou desatualizado após a reestruturação do metaRota: refazer sobre a main (medir primeiro quais títulos passam de 60).
 - #445 (Vuu celebração/erro gentil) é duplicata funcional do #469 já mesclado: fechar ou descartar.
-- server/audio-privado (90 MB, voz antiga): fallback do áudio pago — manter até regravar tudo na v2 (audio-privado-v2, 142 MB, em uso). Áudio pago em repositório público: risco aberto.
+- Áudio pago: movido para o repositório privado `Linvuu-Audio` (docs/AUDIO-PRIVADO.md). Falta o token no Render e, depois de confirmado em produção, limpar o histórico do repositório público.
 - content/legado/: Felipe decide — fonte histórica ou quarentena junto de `_PARA-APAGAR-FELIPE`.
 - docs/infra/*20261019*: métricas antigas; candidatas à próxima quarentena.
 - /russo-online: credenciais dos professores aguardando o LinkedIn do Felipe: entram só diploma/certificados de russo (São Petersburgo) e o perfil público. Regra do Felipe: nunca citar o instituto/escola anterior dele em lugar nenhum do site ou dos textos.

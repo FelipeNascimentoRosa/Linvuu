@@ -18,6 +18,7 @@ import { criarProcessadorCobranca } from './cobranca-eventos';
 import { CENTAVOS, CENTAVOS_USD } from '../src/config/planos.ts';
 import { caminhoNoPerfil } from '../src/i18n/locales.ts';
 import { perfilDaRequisicao } from './dominio';
+import { arquivoDoAudioPrivado, avisarSeSemAudioPrivado } from './audio-privado';
 
 const chave = process.env.STRIPE_SECRET_KEY;
 const projeto = process.env.FIREBASE_PROJECT_ID || process.env.VITE_FIREBASE_PROJECT_ID;
@@ -126,6 +127,7 @@ async function consultarStripe(u: { uid: string; email?: string }): Promise<Aces
 }
 
 export function registrarCobranca(app: Express, urlBase: (req: Request) => string) {
+  avisarSeSemAudioPrivado();
   const nao = (res: Response) => res.status(503).json({ error: 'Pagamento ainda não configurado.' });
   const guarda = async (req: Request, res: Response) => {
     if (!cobrancaConfigurada()) { nao(res); return null; }
@@ -183,9 +185,9 @@ export function registrarCobranca(app: Express, urlBase: (req: Request) => strin
     const idioma = String(req.params.idioma), arquivo = String(req.params.arquivo);
     if (!/^[a-z]{2}$/.test(idioma) || !/^[0-9a-f]{8}\.mp3$/.test(arquivo)) { res.status(404).end(); return; }
     // Voz nova (ElevenLabs) em audio-privado-v2; o que ainda não foi regravado cai no áudio antigo (Edge).
-    const novo = path.resolve(process.cwd(), 'server', 'audio-privado-v2', idioma, arquivo);
-    const arq = fs.existsSync(novo) ? novo : path.resolve(process.cwd(), 'server', 'audio-privado', idioma, arquivo);
-    if (!fs.existsSync(arq)) { res.status(404).end(); return; }
+    // Os arquivos vêm do repositório privado Linvuu-Audio (server/audio-privado.ts).
+    const arq = arquivoDoAudioPrivado(idioma, arquivo);
+    if (!arq) { res.status(404).end(); return; }
     const livre = process.env.NODE_ENV !== 'production' && !cobrancaConfigurada();
     if (!livre) {
       const u = await guarda(req, res); if (!u) return;

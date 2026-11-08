@@ -36,3 +36,9 @@ dist-builds/
 
 # Capturas da revisão pública: geradas pelo workflow e enviadas como artefato, nunca versionadas.
 revisao-publica/
+
+# Áudio pago: vive no repositório PRIVADO Linvuu-Audio e é baixado no build para .audio-privado/ (docs/AUDIO-PRIVADO.md).
+# Nunca commitar MP3 pagos aqui (este repositório é público).
+.audio-privado/
+server/audio-privado/
+server/audio-privado-v2/

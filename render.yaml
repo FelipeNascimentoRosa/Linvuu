@@ -20,6 +20,8 @@ services:
         sync: false
       - key: STRIPE_PRICE_ID
         sync: false
+      - key: AUDIO_REPO_TOKEN   # token só de leitura do repositório privado Linvuu-Audio (docs/AUDIO-PRIVADO.md)
+        sync: false
       - key: STRIPE_WEBHOOK_SECRET
         sync: false
       - key: FIREBASE_SERVICE_ACCOUNT_JSON
