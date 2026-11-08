@@ -9,7 +9,7 @@ export const TEXTO_MIN = 20;
 export const TEXTO_MAX = 600;
 export const NOME_MIN = 2;
 export const NOME_MAX = 60;
-/** Quantas aulas o aluno precisa ter concluído (as gratuitas) para avaliar. */
+/** Quantas sessões (dias de aula) o aluno precisa ter concluído com a conta aberta para avaliar. */
 export const AULAS_MIN = 2;
 /** Só com este número de avaliações aprovadas de pessoas sem relação com o professor o Google recebe `aggregateRating`. */
 export const MIN_PARA_NOTA_AGREGADA = 5;

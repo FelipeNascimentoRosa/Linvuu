@@ -1,5 +1,5 @@
 import { useEffect, useState, type FormEvent } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../lib/AuthContext';
 import { carregarAuth } from '../lib/firebase';
 import { api } from '../lib/api';
@@ -17,6 +17,7 @@ const Estrelas = ({ n, rotulo }: { n: number; rotulo: string }) => (
 export function Avaliacoes() {
   const a = useT().avaliacoes;
   const { usuario } = useAuth();
+  const { pathname } = useLocation();
   const [dados, setDados] = useState<Resposta | null>(null);
   const [nota, setNota] = useState(0);
   const [texto, setTexto] = useState('');
@@ -68,7 +69,7 @@ export function Avaliacoes() {
       <div className="av-form-caixa">
         <h3>{a.avalie}</h3>
         <p className="av-intro">{a.avalieIntro(AULAS_MIN)}</p>
-        {!usuario ? <p><Link to={comPrefixo(`/cadastro?proximo=${encodeURIComponent('/assinatura#avaliacoes')}`)}>{a.entrar}</Link></p> : estado === 'ok' || estado === 'duplicada' ? <p role="status">{msg[estado]}</p> : (
+        {!usuario ? <p><Link className="btn btn-primary" to={comPrefixo(`/entrar?proximo=${encodeURIComponent(`${pathname}#avaliacoes`)}`)}>{a.entrar}</Link></p> : estado === 'ok' || estado === 'duplicada' ? <p role="status">{msg[estado]}</p> : (
           <form onSubmit={enviar} className="av-form">
             <fieldset className="av-nota"><legend>{a.campoNota}</legend>
               {Array.from({ length: NOTA_MAX }, (_, k) => k + 1).map((n) => (
