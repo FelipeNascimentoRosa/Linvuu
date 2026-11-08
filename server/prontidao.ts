@@ -82,6 +82,9 @@ function verificacoesProducao(): Verificacao[] {
 }
 
 export function registrarProntidao(app: Express) {
+  // O /readyz não revela configuração (testar-seguranca.mjs exige só {ok, checkedAt}). Mas sem a mensal em dólares o linvuu.com
+  // não vende e o /readyz continua verde: o aviso fica no log do servidor, sem expor nada ao público.
+  if (!process.env.STRIPE_PRICE_ID_USD) console.warn('[Linvuu] STRIPE_PRICE_ID_USD ausente: a mensal em dólares (linvuu.com) não será vendida');
   const verificar = criarVerificadorProntidao(verificacoesProducao(), {
     falhou: (nome) => console.error(`[Linvuu] prontidao indisponivel: ${nome}`),
   });

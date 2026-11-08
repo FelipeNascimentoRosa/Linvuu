@@ -25,6 +25,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
+            <!-- App Links verificados: só os caminhos que o app sabe abrir. A verificação depende de /.well-known/assetlinks.json
+                 (server/assetlinks.ts), que só responde 200 com ANDROID_PLAY_SHA256 configurado no Render. Sem isso o Android
+                 simplesmente abre o link no navegador. -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https" />
+                <data android:host="linvuu.com.br" />
+                <data android:host="linvuu.com" />
+                <data android:pathPrefix="/curso" />
+                <data android:pathPrefix="/assinatura" />
+            </intent-filter>
+
         </activity>
 
     </application>
