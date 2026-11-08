@@ -9,6 +9,7 @@ import { EMAIL_OFICIAL } from '../config/site';
 import { usePageTitle } from '../lib/usePageTitle';
 import { data, LOCALE, useT } from '../i18n';
 import { analytics } from '../lib/analytics';
+import { Avaliacoes } from '../components/Avaliacoes';
 import '../site-publico.css';
 
 export default function Assinatura() {
@@ -103,6 +104,7 @@ export default function Assinatura() {
           )}
           {LOCALE.codigo === 'pt-BR' && !a.ativa && <section aria-label="Dúvidas sobre a assinatura"><h2>É seguro pagar?</h2><p>O pagamento é processado pela Stripe, que também cuida do cartão. A Linvuu não vê nem guarda o número do seu cartão.</p><h2>E se eu não gostar?</h2><p>Você tem reembolso integral em até 7 dias. É só escrever para o e-mail de contato da página.</p><h2>Como cancelo?</h2><p>Na assinatura mensal, pelo botão de gerenciar nesta página, quando quiser. Os pacotes de 3 e 12 meses são pagamento único: não renovam sozinhos.</p><h2>Posso experimentar sem cartão?</h2><p>As duas primeiras aulas de cada curso são gratuitas, sem cartão.</p><h2>Qual é o desconto no Pix?</h2><p>O plano trimestral custa R$ 291,90 no Pix, 30% de desconto sobre R$ 417.</p></section>}
           {erro && <p className="erro" role="alert">{erro}</p>}
+          <Avaliacoes />
           <p><Link to="/termos">{s.termos}</Link></p>
         </div>
       )}

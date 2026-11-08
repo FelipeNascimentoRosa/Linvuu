@@ -120,6 +120,7 @@ export function registrarSeguranca(app: Express, producao: boolean) {
   app.use('/api/aula', limitar('aula', 120, 60_000));
   app.use('/api/evento', limitar('evento', 40, 60_000));
   app.use('/api/newsletter', limitar('newsletter', 5, 60_000));
+  app.post('/api/avaliacoes', limitar('avaliacoes', 5, 60_000));
   app.use('/api/conta', limitar('conta', 5, 60_000));
   app.use('/api/audio', limitar('audio', 600, 60_000));
   app.use('/api', limitar('api', 300, 60_000));
