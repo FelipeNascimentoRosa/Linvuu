@@ -54,6 +54,12 @@ jobs:
           with open(os.environ['GITHUB_ENV'], 'a') as f:
               f.write('LINVUU_TEST_KEYSTORE=' + str(target) + '\n')
           PY
+      - name: Publicar impressões digitais públicas do certificado de testes (SHA-1 e SHA-256, para o login com Google)
+        env:
+          LINVUU_TEST_PASSWORD: ${{ secrets.ANDROID_TEST_STORE_PASSWORD }}
+        run: |
+          # Impressões digitais são públicas (vão em qualquer APK assinado); a senha e a chave não são impressas.
+          keytool -list -v -storetype PKCS12 -keystore "$LINVUU_TEST_KEYSTORE" -storepass "$LINVUU_TEST_PASSWORD" -alias linvuu-test 2>/dev/null | grep -E '^\s*SHA(1|256):' | sed 's/^\s*/certificado de testes /' | tee -a "$GITHUB_STEP_SUMMARY" || echo "impressões digitais indisponíveis"
       - name: Verificar guardas da loja e recuperação
         run: node scripts/testar-firebase-apk.mjs && node --import tsx scripts/testar-loja-apk.ts && node --import tsx scripts/testar-armazenamento-apk.ts && node --import tsx scripts/testar-falha-inicial-armazenamento-apk.ts && node scripts/testar-distribuicao-apk.mjs
       - name: Gerar frontend identificado e sincronizar Android
@@ -66,6 +72,7 @@ jobs:
           VITE_FIREBASE_MESSAGING_SENDER_ID: ${{ secrets.VITE_FIREBASE_MESSAGING_SENDER_ID || vars.VITE_FIREBASE_MESSAGING_SENDER_ID }}
           VITE_POSTHOG_TOKEN: ${{ vars.VITE_POSTHOG_TOKEN }}
           VITE_POSTHOG_HOST: ${{ vars.VITE_POSTHOG_HOST }}
+          VITE_AUTH_GOOGLE: 'true'
         run: npm run app:android
       - name: Compilar APK e AAB de testes com assinatura estável
         working-directory: android
