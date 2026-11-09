@@ -170,6 +170,26 @@ Um playbook externo (recebido 09/11) pediu reescrever o i18n para `/pt/` + `/en/
 
 Meta registrada em `docs/META-1M-2027.md`: **R$ 1,1 milhão até 31/12/2027**, derivada dos preços de `docs/PRECOS-DEFINIDOS.md` → ~1.100 alunos pagantes (80/mês em média), 870–1.000 ativos no fim. Limitação declarada: nenhuma premissa de conversão, churn ou CAC foi medida ainda; o primeiro mês de venda substitui a tabela. O documento conclui que SEO sozinho não fecha a meta e nomeia a maior fatia: turmas B2B (~R$ 420 mil), com o anual antecipado como alavanca de caixa. Estado: documentos de auditoria e de meta implementados nesta branch; sem merge.
 
+## Linha de base medida: Fase 1 do protocolo REA (2026-11-09)
+
+Um segundo playbook externo chegou em 09/11 pedindo auditoria medida antes de qualquer mudança visual. A exigência é boa e passou a valer: `METRICS.md` (raiz) guarda os números e `scripts/medir-baseline.mjs` repete a medição com as mesmas ferramentas antes e depois de cada mudança (`npm run medir:baseline`).
+
+O que foi medido, em `main` = `f364b7dc`, build local + HTTP real nos dois domínios:
+
+- **Lighthouse 13.6.0, celular e computador, 6 páginas locais × 2 rodadas + 7 páginas de produção.** Computador: 99–100 em todas as categorias. Celular: SEO 100, acessibilidade 100, boas práticas 100, desempenho 83,5–100.
+- **axe-core 4.14.0 (WCAG 2.0/2.1/2.2 A e AA): 0 violações em 13 páginas** (6 locais + 7 publicadas). Zero. O trabalho de acessibilidade que o playbook pede não está pendente — está coberto e vigiado.
+- **CLS 0,000 em 26 de 26 medições**; o portão do CI (`cumulative-layout-shift ≤ 0,1`) tem folga total.
+- **LCP no celular acima de 2,5 s em três tipos de página**: `/por-que-linvuu` 4,6 s, `/curso/de` 4,0 s, `/gramatica/ru` 3,8 s local, e 4,1 s em `/gramatica/ru` na produção. Repetiu entre rodadas. **A causa não foi diagnosticada** e está registrada como hipótese, não como conclusão: imagem não é (nenhuma acima de 5 KiB), fontes não são (carregam em 36 ms), TBT está entre 19 e 94 ms, e o `lcp-breakdown-insight` do Lighthouse 13 atribui só 316 ms de atraso de renderização.
+- **Inventário por HTTP**: 3.784 páginas com meta coerente, 281 redirecionamentos, 3 aliases (`scripts/testar-http-seo.ts`); sitemaps com 87 (`.com.br`) e 46 (`.com`) URLs; 460 aulas · 1.840 dias-fonte · 680 traduzidos.
+
+Duas decisões que este lugar registra para não serem reabertas por engano:
+
+- **As rotas não ganharam prefixo `/pt/` e `/en/`**, como o playbook pediu. A decisão de 29/10 (`docs/DECISAO-SITE-INTERNACIONAL.md`, `NOTES.md` §1) é um idioma de interface por domínio, com 301 entre domínios provado por `scripts/testar-dominio.ts`. Prefixar moveria 3.784 URLs e 133 entradas de sitemap sem ganho de SEO. O §4 do `docs/SEO_AUDIT.md` já recusava isso item por item; agora o §7 traz o mapa de rotas que sustenta a recusa com nomes e códigos de status.
+- **Nenhum dos 25 repositórios foi clonado.** `AGENTS.md` proíbe executar código externo sem necessidade e manda reusar só licença permissiva; o que a Fase 1 precisava era medir este site, e as cinco ferramentas usadas (Lighthouse, axe-core, Playwright, curl, Node) já estavam no repositório.
+
+Limitações registradas, não escondidas: **INP real não foi medido** (exige campo — CrUX ou Search Console, sem credenciais aqui); **o funil não foi medido** (PostHog é opt-in e o acesso ao projeto é do Felipe); **não existe evento de clique em CTA** (`src/lib/analytics.ts:4`), então qualquer experimento de hero na Fase 4 precisa desse evento antes, senão não há como atribuir o efeito. E o Lighthouse roda no celular simulado e no computador sem limitação de rede: são números de laboratório, não de aluno.
+
+
 ## Pendências por prioridade
 1. PRs #368 e #369 mergeados e deploy live confirmado. Verificação HTTP pós-deploy registrada no PR #369: APIs 401/404 com private/no-store e noindex; /healthz e /readyz 200 com os mesmos cabeçalhos; home e páginas públicas 200 com no-cache. Isso não substitui teste autenticado ou regras publicadas.
 2. Obter as URLs individuais de redirecionamento/robots no Search Console e testar cadeias e política de indexação de cada uma.

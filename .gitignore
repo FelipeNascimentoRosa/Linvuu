@@ -24,6 +24,7 @@ dist-apk/
 
 # Relatórios e ferramentas externas locais, nunca incluídos no produto.
 .lighthouseci/
+.baseline/
 .ci-seo-deps/
 
 # Material privado de assinatura nunca entra no Git
