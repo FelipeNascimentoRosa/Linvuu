@@ -282,6 +282,25 @@ for (const c of cursos.filter((x) => x.area === 'idiomas')) {
     grupos: Object.values(grupos),
   };
 }
+// GUARDA (2026-11-09): content/indice.<língua>.json decide o que a vitrine de cada domínio oferece
+// (src/lib/content.ts → cursoComExplicacaoNoSite) e quantas aulas o hub declara explicadas. Se ficar atrás
+// dos mapas i18n, aulas com tradução pronta desaparecem do domínio sem aviso — foi assim que 30 aulas de
+// espanhol (120 sessões já escritas em inglês) ficaram fora do linvuu.com. O --check compara o índice
+// gravado com o que os mapas implicam; o build falha em vez de publicar a vitrine incompleta.
+if (check) {
+  for (const l of LINGUAS) {
+    const arquivo = path.join(root, `indice.${l}.json`);
+    let gravado = {};
+    if (fs.existsSync(arquivo)) {
+      try { gravado = JSON.parse(fs.readFileSync(arquivo, 'utf8')); } catch (e) { erros.push(`content/indice.${l}.json: JSON inválido (${e.message})`); continue; }
+    }
+    for (const id of new Set([...Object.keys(gravado), ...Object.keys(traducoes[l] ?? {})])) {
+      const disco = (gravado[id]?.aulas ?? []).length;
+      const mapas = (traducoes[l]?.[id]?.aulas ?? []).length;
+      if (disco !== mapas) erros.push(`content/indice.${l}.json: ${id} lista ${disco} aulas traduzidas, mas os mapas i18n implicam ${mapas} (correr "npm run content")`);
+    }
+  }
+}
 if (!check) {
   fs.writeFileSync(path.join(root, 'indice.json'), JSON.stringify(indice) + '\n');
   for (const l of LINGUAS) fs.writeFileSync(path.join(root, `indice.${l}.json`), JSON.stringify(traducoes[l] ?? {}) + '\n');
