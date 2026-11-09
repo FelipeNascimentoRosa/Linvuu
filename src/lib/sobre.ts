@@ -8,6 +8,11 @@
 export type TextoSobre = {
   titulo: string;
   descricao: string;
+  /** Título e descrição só do <title> e da <meta name="description">.
+   *  O h1 e o lead da página continuam em `titulo` e `descricao`: o Google mostra de 30 a 60 caracteres
+   *  no título e até 160 na descrição, e o texto visível não precisa caber nisso. */
+  seoTitulo?: string;
+  seoDescricao?: string;
   kicker: string;
   h1: string;
   lead: string;
@@ -54,6 +59,8 @@ export const SOBRE: Record<'pt-BR' | 'en', TextoSobre> = {
   },
   en: {
     titulo: 'Who writes Linvuu',
+    seoTitulo: 'Who writes Linvuu: the authors and the method',
+    seoDescricao: 'Linvuu is written by Felipe Nascimento Rosa and Luiza Nascimento Rosa: mathematicians with linguistics and teaching experience. Authorship, origin and method.',
     descricao: 'Linvuu is written by Felipe Nascimento Rosa and Luiza Nascimento Rosa, mathematicians with experience in linguistics and language teaching. Authorship, origin and method.',
     kicker: 'About Linvuu',
     h1: 'Who writes Linvuu',

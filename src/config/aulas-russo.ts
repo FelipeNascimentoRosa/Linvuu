@@ -73,7 +73,7 @@ export const AULAS_RUSSO: Record<'pt-BR' | 'en', TextoAulasRusso> = {
   },
   en: {
     titulo: 'Online Russian lessons with teachers',
-    descricao: 'Live online Russian lessons by video call with Linvuu teachers, alongside the online Russian course.',
+    descricao: 'Live online Russian lessons by video call, at times arranged with you, plus the Linvuu Russian course to study between lessons: alphabet, grammar and audio.',
     lead: 'Learn Russian with teachers, live, by video call, and study between lessons with the Linvuu Russian course.',
     quemTitulo: 'The teachers',
     credenciais: [
