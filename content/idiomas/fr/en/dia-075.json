@@ -1,0 +1,151 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 75,
+  "fase": 8,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "The imparfait: how things used to be: A childhood in a text",
+  "objetivo": "Lesson 19, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 19,
+    "titulo": "The imparfait: how things used to be",
+    "objetivo": "Form the imparfait and use it for past habits, descriptions and settings («quand j'étais petit, j'habitais à la campagne»).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "A childhood in a text",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "le village",
+            "translit": "luh vee-LAHZH",
+            "pt": "",
+            "en": "",
+            "audio": "le village"
+          },
+          {
+            "ru": "la ferme",
+            "translit": "lah FEHRM",
+            "pt": "",
+            "en": "",
+            "audio": "la ferme"
+          },
+          {
+            "ru": "les vacances",
+            "translit": "lay vah-KAHNS",
+            "pt": "",
+            "en": "",
+            "audio": "les vacances"
+          },
+          {
+            "ru": "le marché",
+            "translit": "luh mahr-SHAY",
+            "pt": "",
+            "en": "",
+            "audio": "le marché"
+          },
+          {
+            "ru": "se baigner",
+            "translit": "suh beh-NYAY",
+            "pt": "",
+            "en": "",
+            "audio": "se baigner"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Comparing before and now",
+        "explicacao": "STEP 1: use the imparfait for the 'before' and the present for the 'now': «Avant, j'habitais à la campagne. Maintenant, j'habite en ville.» STEP 2: connectors: «avant… maintenant», «autrefois… aujourd'hui», «à l'époque… maintenant». STEP 3: «ne… plus» marks what has ended: «Je ne joue plus au football.» «Il n'y a plus de ferme ici.» STEP 4: «toujours» or «encore» marks what continues: «J'habite toujours ici.» STEP 5: «avant» on its own opens a sentence about the past: «Avant, je prenais le bus.»",
+        "comparacao": "In English we say «I used to live here, now I live there». French does the same: «avant» + imparfait, «maintenant» + présent. The new ingredient is «ne… plus» («no longer / not any more»).",
+        "tabela": [
+          {
+            "past": "Avant, j'habitais à la campagne.",
+            "present": "Maintenant, j'habite en ville."
+          },
+          {
+            "past": "Je jouais au football.",
+            "present": "Je ne joue plus au football."
+          },
+          {
+            "past": "Il y avait une ferme.",
+            "present": "Il n'y a plus de ferme."
+          },
+          {
+            "past": "Nous allions à la plage.",
+            "present": "Nous allons à la montagne."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je ne joue pas plus au football.",
+            "certo": "Je ne joue plus au football.",
+            "motivo": "«Ne… plus» means «no longer / not any more»."
+          },
+          {
+            "errado": "Avant, j'habite à la campagne.",
+            "certo": "Avant, j'habitais à la campagne.",
+            "motivo": "Before: imparfait."
+          },
+          {
+            "errado": "Il n'y a plus des fermes.",
+            "certo": "Il n'y a plus de fermes.",
+            "motivo": "Negative: «de»."
+          },
+          {
+            "errado": "Maintenant, j'habitais en ville.",
+            "certo": "Maintenant, j'habite en ville.",
+            "motivo": "Now: présent."
+          }
+        ],
+        "tag": "Imparfait"
+      },
+      {
+        "tipo": "texto",
+        "min": 8,
+        "titulo": "Mon enfance à la campagne / My childhood in the countryside",
+        "ru": "Quand j'étais petit, j'habitais dans un petit village avec mes grands-parents. Nous avions une grande maison avec un jardin. Tous les matins, je me levais à sept heures et je donnais à manger aux poules. L'après-midi, je jouais avec mes amis près de la rivière. En été, nous nous baignions presque tous les jours. Maintenant, j'habite en ville et je ne vois plus mes amis du village, mais je pense souvent à cette époque.",
+        "pt": "When I was little, I lived in a small village with my grandparents. We had a big house with a garden. Every morning, I got up at seven o'clock and fed the chickens. In the afternoon, I played with my friends near the river. In summer, we swam almost every day. Now I live in the city and I no longer see my friends from the village, but I often think about that time.",
+        "perguntas": [
+          {
+            "pergunta": "Avec qui l'auteur habitait-il ?",
+            "resposta": "Avec ses grands-parents."
+          },
+          {
+            "pergunta": "À quelle heure se levait-il ?",
+            "resposta": "À sept heures."
+          },
+          {
+            "pergunta": "Que faisait-il l'après-midi ?",
+            "resposta": "Il jouait avec ses amis près de la rivière."
+          },
+          {
+            "pergunta": "Où habite-t-il maintenant ?",
+            "resposta": "En ville."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Tell aloud what your life was like five years ago and what it is like now."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Complete: «Avant, je ___ (habiter) à la campagne. Nous ___ (jouer) dehors.»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-019.json",
+  "responsavel": null
+}

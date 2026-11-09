@@ -1,0 +1,142 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 126,
+  "fase": 13,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Leisure, invitations and culture: Sports, movies and music",
+  "objetivo": "Lesson 32, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 32,
+    "titulo": "Leisure, invitations and culture",
+    "objetivo": "Invite, accept and decline, talk about sports, movies, music and reading, and give a short opinion about a movie or a book.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Sports, movies and music",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "faire du sport",
+            "translit": "fehr dew SPOR",
+            "pt": "",
+            "en": "",
+            "audio": "faire du sport"
+          },
+          {
+            "ru": "jouer au football",
+            "translit": "zhoo-ay oh foot-BOL",
+            "pt": "",
+            "en": "",
+            "audio": "jouer au football"
+          },
+          {
+            "ru": "jouer de la guitare",
+            "translit": "zhoo-ay duh lah gee-TAR",
+            "pt": "",
+            "en": "",
+            "audio": "jouer de la guitare"
+          },
+          {
+            "ru": "regarder un film",
+            "translit": "ruh-gar-day an FEELM",
+            "pt": "",
+            "en": "",
+            "audio": "regarder un film"
+          },
+          {
+            "ru": "écouter de la musique",
+            "translit": "ay-koo-tay duh lah mew-ZEEK",
+            "pt": "",
+            "en": "",
+            "audio": "écouter de la musique"
+          },
+          {
+            "ru": "lire un livre",
+            "translit": "leer an lee-VRUH",
+            "pt": "",
+            "en": "",
+            "audio": "lire un livre"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Faire, jouer, regarder",
+        "explicacao": "STEP 1: «faire du» + individual sport: «faire du sport, faire du vélo, faire de la natation, faire de la danse». STEP 2: «jouer au» + team sport or game: «jouer au football, jouer au tennis, jouer aux cartes». STEP 3: «jouer du / de la» + instrument: «jouer de la guitare, jouer du piano». STEP 4: «regarder» + image: «regarder un film, regarder la télé». STEP 5: «écouter» + sound: «écouter de la musique, écouter la radio». STEP 6: opinion about a movie: «J'ai aimé ce film.» «Il m'a plu.» «C'est un film intéressant.» STEP 7: asking: «Quel genre de films tu aimes ?» «Quel est ton livre préféré ?» STEP 8: genres: «un film d'action, une comédie, un drame, un roman, un policier, un documentaire».",
+        "comparacao": "In English we use the same verb for «play football» and «play the guitar». French splits it: «jouer au» for games and sports (jouer AU football) and «jouer de» for instruments (jouer DE la guitare). «Faire du» is for activities, as in «faire du vélo».",
+        "tabela": [
+          {
+            "verb": "faire du / de la",
+            "tipo": "atividade",
+            "example": "Je fais du vélo."
+          },
+          {
+            "verb": "jouer au / aux",
+            "tipo": "jogo ou esporte",
+            "example": "Il joue au football."
+          },
+          {
+            "verb": "jouer du / de la",
+            "tipo": "instrumento",
+            "example": "Elle joue de la guitare."
+          },
+          {
+            "verb": "regarder",
+            "tipo": "imagem",
+            "example": "Je regarde un film."
+          },
+          {
+            "verb": "écouter",
+            "tipo": "som",
+            "example": "J'écoute de la musique."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je joue le football.",
+            "certo": "Je joue au football.",
+            "motivo": "«Jouer à» + game."
+          },
+          {
+            "errado": "Elle joue la guitare.",
+            "certo": "Elle joue de la guitare.",
+            "motivo": "«Jouer de» + instrument."
+          },
+          {
+            "errado": "Je fais le vélo.",
+            "certo": "Je fais du vélo.",
+            "motivo": "«Faire du»."
+          },
+          {
+            "errado": "Je regarde de la musique.",
+            "certo": "J'écoute de la musique.",
+            "motivo": "«Écouter» is for sound."
+          }
+        ],
+        "tag": "Leisure"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Say eight sentences out loud about what you do in your free time: sports, music, movies and reading."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Make an invitation and arrange the time out loud."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-032.json",
+  "responsavel": null
+}

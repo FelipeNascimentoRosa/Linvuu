@@ -1,0 +1,174 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 95,
+  "fase": 10,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "The conditional: requests, advice and hypotheses: Asking and advising in real situations",
+  "objetivo": "Lesson 24, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 24,
+    "titulo": "The conditional: requests, advice and hypotheses",
+    "objetivo": "Form the conditional, make polite requests, give advice and talk about hypotheses with «si» + imparfait.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Asking and advising in real situations",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "la réunion",
+            "translit": "lah ray-ew-NYOHN",
+            "pt": "",
+            "en": "",
+            "audio": "la réunion"
+          },
+          {
+            "ru": "le conseil",
+            "translit": "luh kohn-SEHY",
+            "pt": "",
+            "en": "",
+            "audio": "le conseil"
+          },
+          {
+            "ru": "le médecin",
+            "translit": "luh mayd-SAN",
+            "pt": "",
+            "en": "",
+            "audio": "le médecin"
+          },
+          {
+            "ru": "la fatigue",
+            "translit": "lah fah-TEEG",
+            "pt": "",
+            "en": "",
+            "audio": "la fatigue"
+          },
+          {
+            "ru": "se reposer",
+            "translit": "suh ruh-poh-ZAY",
+            "pt": "",
+            "en": "",
+            "audio": "se reposer"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Advising politely",
+        "explicacao": "STEP 1: for friendly advice: «À ta place, je me reposerais.» STEP 2: for formal advice: «Vous devriez consulter un médecin.» STEP 3: for a light suggestion: «Tu pourrais essayer.» STEP 4: for a polite opinion: «Je pense que ce serait mieux.» STEP 5: to refuse kindly: «Je voudrais bien, mais je ne peux pas.» STEP 6: to accept: «Avec plaisir.» «Ce serait super.»",
+        "comparacao": "In English we soften a request with «could» and «would like». French softens it the same way, with the conditional. Without it, the sentence sounds like an order.",
+        "tabela": [
+          {
+            "situation": "request",
+            "sentence": "Pourriez-vous m'aider, s'il vous plaît ?"
+          },
+          {
+            "situation": "friendly advice",
+            "sentence": "À ta place, je me reposerais."
+          },
+          {
+            "situation": "formal advice",
+            "sentence": "Vous devriez consulter un médecin."
+          },
+          {
+            "situation": "suggestion",
+            "sentence": "Tu pourrais essayer."
+          },
+          {
+            "situation": "polite refusal",
+            "sentence": "Je voudrais bien, mais je ne peux pas."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Aidez-moi !",
+            "certo": "Pourriez-vous m'aider, s'il vous plaît ?",
+            "motivo": "The conditional softens the request."
+          },
+          {
+            "errado": "Tu devais dormir. (advice)",
+            "certo": "Tu devrais dormir.",
+            "motivo": "«Devais» is imparfait; advice takes «devrais»."
+          },
+          {
+            "errado": "Je pourrai venir si je pouvais.",
+            "certo": "Je pourrais venir si je pouvais.",
+            "motivo": "Hypothesis."
+          },
+          {
+            "errado": "Vous devriez de consulter.",
+            "certo": "Vous devriez consulter.",
+            "motivo": "No preposition."
+          }
+        ],
+        "tag": "Conditional"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "Chez le médecin / At the doctor's",
+        "contexto": "Sophie talks to the doctor about her tiredness.",
+        "linhas": [
+          {
+            "personagem": "Sophie",
+            "ru": "— Bonjour, docteur. Je suis très fatiguée en ce moment.",
+            "en": "— Good morning, doctor. I have been very tired lately.",
+            "audio": "Bonjour, docteur. Je suis très fatiguée en ce moment."
+          },
+          {
+            "personagem": "Le médecin",
+            "ru": "— Vous dormez combien d'heures par nuit ?",
+            "en": "— How many hours do you sleep per night, madam?",
+            "audio": "Vous dormez combien d'heures par nuit ?"
+          },
+          {
+            "personagem": "Sophie",
+            "ru": "— Je dors environ cinq heures. Je travaille beaucoup.",
+            "en": "— I sleep about five hours. I work a lot.",
+            "audio": "Je dors environ cinq heures. Je travaille beaucoup."
+          },
+          {
+            "personagem": "Le médecin",
+            "ru": "— Vous devriez dormir plus. À votre place, je me coucherais plus tôt.",
+            "en": "— You should sleep more, madam. In your place, I would go to bed earlier.",
+            "audio": "Vous devriez dormir plus. À votre place, je me coucherais plus tôt."
+          },
+          {
+            "personagem": "Sophie",
+            "ru": "— Vous pensez que je pourrais prendre des vitamines ?",
+            "en": "— Do you think I could take vitamins, doctor?",
+            "audio": "Vous pensez que je pourrais prendre des vitamines ?"
+          },
+          {
+            "personagem": "Le médecin",
+            "ru": "— Oui, ce serait une bonne idée. Revenez me voir dans deux semaines.",
+            "en": "— Yes, that would be a good idea. Come back to see me in two weeks.",
+            "audio": "Oui, ce serait une bonne idée. Revenez me voir dans deux semaines."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Give advice aloud to a friend who is tired, stressed and short of money."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Complete: «Si j'avais du temps, je ___ (voyager). À ta place, je ___ (partir).»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-024.json",
+  "responsavel": null
+}

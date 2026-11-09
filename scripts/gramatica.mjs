@@ -15,7 +15,7 @@ const CATEGORIAS = [
 const ORDEM = ['Pronúncia', 'Frase básica', 'Substantivos', 'Adjetivos e possessivos', 'Pronomes', 'Verbos', 'Preposições', 'Advérbios', 'Perguntas', 'Números', 'Tempo', 'Aspecto e futuro', 'Verbos de movimento', 'Casos', 'Quadro dos casos', 'Comparação', 'Revisão'];
 const categoria = (b) => b.tag ?? CATEGORIAS.find(([re]) => re.test(b.titulo))?.[1] ?? 'Outros';
 
-// Uma versão por língua de explicação: a escrita (<id>.json) e as traduzidas (<id>.en.json, <id>.es.json).
+// Uma versão por língua de explicação: a escrita (<id>.json) e as traduzidas (<id>.en.json).
 // Tópicos de aulas ainda sem tradução entram na língua original, marcados com `explicacaoEm`.
 if (!fs.existsSync(dirAulas)) fs.mkdirSync(dirAulas, { recursive: true });
 const aulas = fs.readdirSync(dirAulas).filter((x) => /^aula-\d+\.json$/.test(x)).sort().map((f) => JSON.parse(fs.readFileSync(path.join(dirAulas, f), 'utf8')));

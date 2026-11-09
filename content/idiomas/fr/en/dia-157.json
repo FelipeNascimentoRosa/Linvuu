@@ -1,0 +1,151 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 157,
+  "fase": 16,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Indirect speech: reporting what someone said: Reporting in the present",
+  "objetivo": "Lesson 40, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 40,
+    "titulo": "Indirect speech: reporting what someone said",
+    "objetivo": "Report what someone said, asked or requested, in the present and the past, with the changes of tense and pronouns.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Reporting in the present",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "dire que",
+            "translit": "deer KUH",
+            "pt": "",
+            "en": "",
+            "audio": "dire que"
+          },
+          {
+            "ru": "demander si",
+            "translit": "duh-mahn-day SEE",
+            "pt": "",
+            "en": "",
+            "audio": "demander si"
+          },
+          {
+            "ru": "demander de",
+            "translit": "duh-mahn-day DUH",
+            "pt": "",
+            "en": "",
+            "audio": "demander de"
+          },
+          {
+            "ru": "répondre que",
+            "translit": "ray-pohn-druh KUH",
+            "pt": "",
+            "en": "",
+            "audio": "répondre que"
+          },
+          {
+            "ru": "expliquer",
+            "translit": "ek-splee-KAY",
+            "pt": "",
+            "en": "",
+            "audio": "expliquer"
+          },
+          {
+            "ru": "annoncer",
+            "translit": "ah-nohn-SAY",
+            "pt": "",
+            "en": "",
+            "audio": "annoncer"
+          },
+          {
+            "ru": "affirmer",
+            "translit": "ah-feer-MAY",
+            "pt": "",
+            "en": "",
+            "audio": "affirmer"
+          },
+          {
+            "ru": "prétendre",
+            "translit": "pray-tahn-DRUH",
+            "pt": "",
+            "en": "",
+            "audio": "prétendre"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Il dit qu'il vient",
+        "explicacao": "STEP 1: direct speech repeats the exact words: «Il dit : « Je viens. »» Indirect speech reports them: «Il dit qu'il vient.» STEP 2: with the introductory verb in the PRESENT, the tenses do not change, but the pronouns do: «Je viens » → «Il dit qu'il vient.» STEP 3: statement: «dire que». «Elle dit qu'elle est fatiguée.» STEP 4: yes/no question: «demander si». «Il demande si tu viens.» STEP 5: open question: «demander + question word». «Il demande où tu habites.» «Elle demande ce que tu fais.» STEP 6: order or request: «demander de» + infinitive. «Elle me demande de venir.» «Il nous dit de partir.» STEP 7: changes of place and time, when the context changes: «ici → là», «maintenant → à ce moment-là», «demain → le lendemain». STEP 8: the indirect question has no inversion and no «est-ce que»: «Il demande si tu viens.» (not «si viens-tu»).",
+        "comparacao": "in English we say «he says he's coming» and «he asked if you were coming». French does the same, but «si» only works for yes/no questions, and the indirect question does not invert the subject: «il demande où tu habites» (not «où habites-tu»).",
+        "tabela": [
+          {
+            "direct": "Il dit : « Je viens. »",
+            "indirect": "Il dit qu'il vient."
+          },
+          {
+            "direct": "Il demande : « Tu viens ? »",
+            "indirect": "Il demande si tu viens."
+          },
+          {
+            "direct": "Il demande : « Où habites-tu ? »",
+            "indirect": "Il demande où tu habites."
+          },
+          {
+            "direct": "Il demande : « Que fais-tu ? »",
+            "indirect": "Il demande ce que tu fais."
+          },
+          {
+            "direct": "Elle dit : « Viens ! »",
+            "indirect": "Elle me dit de venir."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Il demande si viens-tu.",
+            "certo": "Il demande si tu viens.",
+            "motivo": "No inversion in indirect speech."
+          },
+          {
+            "errado": "Il dit : qu'il vient.",
+            "certo": "Il dit qu'il vient.",
+            "motivo": "No colon in indirect speech."
+          },
+          {
+            "errado": "Il demande qu'est-ce que tu fais.",
+            "certo": "Il demande ce que tu fais.",
+            "motivo": "«Ce que» in indirect speech."
+          },
+          {
+            "errado": "Elle me dit venir.",
+            "certo": "Elle me dit de venir.",
+            "motivo": "«Dire de» + infinitive."
+          }
+        ],
+        "tag": "Speech"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Report out loud five sentences someone said to you today, in indirect speech."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Tell out loud about a difficult day using the plus-que-parfait."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-040.json",
+  "responsavel": null
+}

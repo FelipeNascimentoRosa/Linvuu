@@ -1,0 +1,179 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 67,
+  "fase": 7,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Weather, seasons and comparisons: Meilleur, mieux and the superlative",
+  "objetivo": "Lesson 17, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 17,
+    "titulo": "Weather, seasons and comparisons",
+    "objetivo": "Talk about the weather and the seasons, compare people and things with «plus… que», «moins… que», «aussi… que», and use «meilleur» and «mieux».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Meilleur, mieux and the superlative",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "bon",
+            "translit": "BOHN",
+            "pt": "",
+            "en": "",
+            "audio": "bon"
+          },
+          {
+            "ru": "meilleur",
+            "translit": "meh-YUHR",
+            "pt": "",
+            "en": "",
+            "audio": "meilleur"
+          },
+          {
+            "ru": "bien",
+            "translit": "BYAN",
+            "pt": "",
+            "en": "",
+            "audio": "bien"
+          },
+          {
+            "ru": "mieux",
+            "translit": "MYUH",
+            "pt": "",
+            "en": "",
+            "audio": "mieux"
+          },
+          {
+            "ru": "le plus",
+            "translit": "luh PLEW",
+            "pt": "",
+            "en": "",
+            "audio": "le plus"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Meilleur, mieux e «le plus»",
+        "explicacao": "STEP 1: «bon» → «meilleur»; there is no «plus bon»: «Ce gâteau est meilleur que l'autre.» STEP 2: «bien» → «mieux»: «Il parle mieux que moi.» STEP 3: «meilleur» agrees: «meilleure, meilleurs, meilleures». STEP 4: superlative: «le/la/les plus» + adjective: «Paris est la plus grande ville de France.» STEP 5: «le meilleur»: «C'est le meilleur restaurant de la ville.» STEP 6: «le mieux»: «C'est elle qui chante le mieux.» STEP 7: after a superlative, French uses «de» (not «in»): «le plus grand de la classe».",
+        "comparacao": "In English «better» does the job for everything. French separates them: «meilleur» (adjective, describes a noun) and «mieux» (adverb, describes a verb). «Good» → «meilleur», «well» → «mieux».",
+        "tabela": [
+          {
+            "base": "bon (adj.)",
+            "comparative": "meilleur",
+            "example": "Ce café est meilleur."
+          },
+          {
+            "base": "bien (adv.)",
+            "comparative": "mieux",
+            "example": "Elle chante mieux."
+          },
+          {
+            "base": "superlative adj.",
+            "comparative": "le/la plus + adj.",
+            "example": "La plus grande ville."
+          },
+          {
+            "base": "superlative of bon",
+            "comparative": "le meilleur",
+            "example": "Le meilleur gâteau."
+          },
+          {
+            "base": "superlative of bien",
+            "comparative": "le mieux",
+            "example": "Il joue le mieux."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ce gâteau est plus bon.",
+            "certo": "Ce gâteau est meilleur.",
+            "motivo": "«Meilleur» is the comparative of «bon»."
+          },
+          {
+            "errado": "Il parle meilleur.",
+            "certo": "Il parle mieux.",
+            "motivo": "A verb takes an adverb."
+          },
+          {
+            "errado": "La plus grande ville du France.",
+            "certo": "La plus grande ville de France.",
+            "motivo": "No article before France."
+          },
+          {
+            "errado": "C'est le plus bon restaurant.",
+            "certo": "C'est le meilleur restaurant.",
+            "motivo": "Superlative of «bon»."
+          }
+        ],
+        "tag": "Comparatives"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "Quel temps fait-il ? / What is the weather like?",
+        "contexto": "Lucas and Camille talk about the weather and the seasons.",
+        "linhas": [
+          {
+            "personagem": "Lucas",
+            "ru": "— Quel temps fait-il chez toi en ce moment ?",
+            "en": "— What is the weather like at your place right now?",
+            "audio": "Quel temps fait-il chez toi en ce moment ?"
+          },
+          {
+            "personagem": "Camille",
+            "ru": "— Il fait froid et il pleut. L'hiver est plus long qu'au Brésil.",
+            "en": "— It's cold and it's raining. Winter is longer than in Brazil.",
+            "audio": "Il fait froid et il pleut. L'hiver est plus long qu'au Brésil."
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Chez moi, il fait chaud toute l'année. Mais j'aime mieux l'automne.",
+            "en": "— At my place, it's hot all year round. But I prefer autumn.",
+            "audio": "Chez moi, il fait chaud toute l'année. Mais j'aime mieux l'automne."
+          },
+          {
+            "personagem": "Camille",
+            "ru": "— Moi aussi ! C'est la meilleure saison pour se promener.",
+            "en": "— Me too! It's the best season for going for walks.",
+            "audio": "Moi aussi ! C'est la meilleure saison pour se promener."
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Tu veux visiter Paris en automne ?",
+            "en": "— Would you like to visit Paris in autumn?",
+            "audio": "Tu veux visiter Paris en automne ?"
+          },
+          {
+            "personagem": "Camille",
+            "ru": "— Oui, avec plaisir. Il y a moins de touristes qu'en été.",
+            "en": "— Yes, gladly. There are fewer tourists than in summer.",
+            "audio": "Oui, avec plaisir. Il y a moins de touristes qu'en été."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say which is the best season and the best city for you, and why."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Compare two things with «plus… que», «moins… que», «aussi… que»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-017.json",
+  "responsavel": null
+}

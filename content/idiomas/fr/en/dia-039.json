@@ -1,0 +1,174 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 39,
+  "fase": 4,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Aller, the near future, transport and directions: The imperative and directions",
+  "objetivo": "Lesson 10, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 10,
+    "titulo": "Aller, the near future, transport and directions",
+    "objetivo": "Use «aller» to go to places and talk about plans with the near future, choose a means of transport, and give and ask for directions with the imperative.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "The imperative and directions",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "Tournez à gauche",
+            "translit": "toor-nay ah GOHSH",
+            "pt": "",
+            "en": "",
+            "audio": "Tournez à gauche"
+          },
+          {
+            "ru": "Allez tout droit",
+            "translit": "ah-lay too DRWAH",
+            "pt": "",
+            "en": "",
+            "audio": "Allez tout droit"
+          },
+          {
+            "ru": "Prenez la deuxième rue",
+            "translit": "pruh-nay lah duh-zyehm REW",
+            "pt": "",
+            "en": "",
+            "audio": "Prenez la deuxième rue"
+          },
+          {
+            "ru": "Traversez la place",
+            "translit": "trah-vehr-say lah PLAHS",
+            "pt": "",
+            "en": "",
+            "audio": "Traversez la place"
+          },
+          {
+            "ru": "C'est à cinq minutes",
+            "translit": "seh tah sank mee-NEWT",
+            "pt": "",
+            "en": "",
+            "audio": "C'est à cinq minutes"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "The imperative and directions",
+        "explicacao": "STEP 1: the imperative has three forms: «tu», «nous» and «vous», without the pronoun: «Parle !», «Parlons !», «Parlez !». STEP 2: in «-er» verbs, the «tu» form loses its «-s»: «Tu parles → Parle !» STEP 3: to make it negative, put the negation around the verb: «Ne parle pas !», «Ne tournez pas à gauche.» STEP 4: ordinals for streets: «la première», «la deuxième», «la troisième». STEP 5: useful directions: «Allez tout droit», «Tournez à droite/gauche», «Prenez la première rue», «Traversez le pont», «C'est à cinq minutes à pied». STEP 6: three irregular imperatives: «être» → «sois, soyons, soyez»; «avoir» → «aie, ayons, ayez»; «aller» → «va, allons, allez».",
+        "comparacao": "in English the imperative has forms like «speak!», «let's speak!» and «please speak!». French has three forms, and the «tu» form loses its «s» in -er verbs: «parle», not «parles».",
+        "tabela": [
+          {
+            "pronoun": "tu",
+            "form": "Parle !",
+            "negative": "Ne parle pas !"
+          },
+          {
+            "pronoun": "nous",
+            "form": "Parlons !",
+            "negative": "Ne parlons pas !"
+          },
+          {
+            "pronoun": "vous",
+            "form": "Parlez !",
+            "negative": "Ne parlez pas !"
+          },
+          {
+            "pronoun": "direction",
+            "form": "Tournez à gauche.",
+            "negative": "Ne tournez pas à droite."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Parles !",
+            "certo": "Parle !",
+            "motivo": "In -er verbs, the «tu» imperative loses its «s»."
+          },
+          {
+            "errado": "Allez tout droite.",
+            "certo": "Allez tout droit.",
+            "motivo": "«Tout droit» never changes."
+          },
+          {
+            "errado": "Tourne à la gauche.",
+            "certo": "Tourne à gauche.",
+            "motivo": "No article."
+          },
+          {
+            "errado": "Ne tournez à gauche pas.",
+            "certo": "Ne tournez pas à gauche.",
+            "motivo": "The negation goes around the verb."
+          }
+        ],
+        "tag": "Imperative"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "Pour aller à la gare / How to get to the station",
+        "contexto": "Inès asks Pierre how to get to the station.",
+        "linhas": [
+          {
+            "personagem": "Inès",
+            "ru": "— Excusez-moi, monsieur. Pour aller à la gare, s'il vous plaît ?",
+            "en": "— Excuse me, sir. How do I get to the station, please?",
+            "audio": "Excusez-moi, monsieur. Pour aller à la gare, s'il vous plaît ?"
+          },
+          {
+            "personagem": "Pierre",
+            "ru": "— C'est facile. Allez tout droit, puis tournez à gauche.",
+            "en": "— It's easy. Go straight ahead, then turn left.",
+            "audio": "C'est facile. Allez tout droit, puis tournez à gauche."
+          },
+          {
+            "personagem": "Inès",
+            "ru": "— Et après ?",
+            "en": "— E depois?",
+            "audio": "Et après ?"
+          },
+          {
+            "personagem": "Pierre",
+            "ru": "— Prenez la deuxième rue à droite. La gare est en face de la poste.",
+            "en": "— Take the second street on the right. The station is opposite the post office.",
+            "audio": "Prenez la deuxième rue à droite. La gare est en face de la poste."
+          },
+          {
+            "personagem": "Inès",
+            "ru": "— C'est loin ?",
+            "en": "— Is it far?",
+            "audio": "C'est loin ?"
+          },
+          {
+            "personagem": "Pierre",
+            "ru": "— Non, c'est à cinq minutes à pied. Bon voyage !",
+            "en": "— No, it's a five-minute walk. Have a good trip!",
+            "audio": "Non, c'est à cinq minutes à pied. Bon voyage !"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Give out loud directions from your home to a place you know, using five imperatives."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say three plans for the weekend and one thing you are not going to do."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-010.json",
+  "responsavel": null
+}

@@ -1,0 +1,142 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 170,
+  "fase": 17,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Compound relatives and the pronoun «ce»: Dont e ce dont",
+  "objetivo": "Lesson 43, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 43,
+    "titulo": "Compound relatives and the pronoun «ce»",
+    "objetivo": "Use «lequel», «auquel», «duquel», «ce que», «ce dont», «ce à quoi» and «dont» precisely to link complex ideas.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Dont e ce dont",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "ce que",
+            "translit": "suh KUH",
+            "pt": "",
+            "en": "",
+            "audio": "ce que"
+          },
+          {
+            "ru": "ce qui",
+            "translit": "suh KEE",
+            "pt": "",
+            "en": "",
+            "audio": "ce qui"
+          },
+          {
+            "ru": "ce dont",
+            "translit": "suh DOHN",
+            "pt": "",
+            "en": "",
+            "audio": "ce dont"
+          },
+          {
+            "ru": "ce à quoi",
+            "translit": "suh ah KWAH",
+            "pt": "",
+            "en": "",
+            "audio": "ce à quoi"
+          },
+          {
+            "ru": "tout ce que",
+            "translit": "too suh KUH",
+            "pt": "",
+            "en": "",
+            "audio": "tout ce que"
+          },
+          {
+            "ru": "rien de ce que",
+            "translit": "ree-an duh suh KUH",
+            "pt": "",
+            "en": "",
+            "audio": "rien de ce que"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Ce que, ce qui, ce dont, ce à quoi",
+        "explicacao": "STEP 1: «ce» + relative = «what» (with no noun before it). «Ce qui» is the subject: «Ce qui me plaît, c'est le calme.» STEP 2: «ce que» is the direct object: «Ce que je veux, c'est du calme.» STEP 3: «ce dont» is «de» + object: «Ce dont j'ai besoin, c'est du repos.» «Je ne sais pas ce dont tu parles.» STEP 4: «ce à quoi» is «à» + object: «Ce à quoi je pense, c'est mon voyage.» STEP 5: «tout ce qui», «tout ce que», «tout ce dont»: «Tout ce que tu dis est vrai.» STEP 6: «dont» also expresses possession: «La femme dont le fils est médecin.» «L'entreprise dont le directeur est brésilien.» STEP 7: with verbs that take «de»: «se souvenir de», «avoir besoin de», «avoir envie de», «parler de», «s'occuper de», «avoir peur de», «se servir de», «rêver de». STEP 8: with verbs that take «à»: «penser à», «s'intéresser à», «tenir à», «faire attention à».",
+        "comparacao": "in English we say «what pleases me is the quiet» and «what I need is rest». French requires «ce» before the relative when there is no noun: «ce qui me plaît», «ce dont j'ai besoin». And «dont» is not separated from the verb: «ce dont je parle», never «ce de quoi je parle» in ordinary language.",
+        "tabela": [
+          {
+            "form": "ce qui",
+            "function": "what (subject)",
+            "example": "Ce qui me plaît, c'est le calme."
+          },
+          {
+            "form": "ce que",
+            "function": "what (object)",
+            "example": "Ce que je veux, c'est du calme."
+          },
+          {
+            "form": "ce dont",
+            "function": "de que",
+            "example": "Ce dont j'ai besoin, c'est du repos."
+          },
+          {
+            "form": "ce à quoi",
+            "function": "a que",
+            "example": "Ce à quoi je pense, c'est mon voyage."
+          },
+          {
+            "form": "dont (possession)",
+            "function": "whose",
+            "example": "La femme dont le fils est médecin."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ce que me plaît, c'est le calme.",
+            "certo": "Ce qui me plaît, c'est le calme.",
+            "motivo": "Subject: «ce qui»."
+          },
+          {
+            "errado": "Ce que j'ai besoin, c'est du repos.",
+            "certo": "Ce dont j'ai besoin, c'est du repos.",
+            "motivo": "«Avoir besoin de»."
+          },
+          {
+            "errado": "Je ne sais pas ce que tu parles.",
+            "certo": "Je ne sais pas ce dont tu parles.",
+            "motivo": "«Parler de»."
+          },
+          {
+            "errado": "La femme que le fils est médecin.",
+            "certo": "La femme dont le fils est médecin.",
+            "motivo": "«Dont» for possession."
+          }
+        ],
+        "tag": "Relatives"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Say out loud eight sentences: «Ce qui me plaît… Ce que je veux… Ce dont j'ai besoin… Ce à quoi je pense…»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Join out loud: «C'est le livre. J'ai besoin de ce livre.»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-043.json",
+  "responsavel": null
+}

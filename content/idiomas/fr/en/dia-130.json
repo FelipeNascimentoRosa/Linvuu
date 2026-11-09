@@ -1,0 +1,147 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 130,
+  "fase": 13,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Negation and indefinite words: The indefinites",
+  "objetivo": "Lesson 33, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 33,
+    "titulo": "Negation and indefinite words",
+    "objetivo": "Use «ne… jamais», «ne… rien», «ne… personne», «ne… plus», «ne… aucun», «ni… ni…» and the indefinites «tout», «chaque», «plusieurs», «quelqu'un», «quelque chose».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "The indefinites",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "tout",
+            "translit": "TOO",
+            "pt": "",
+            "en": "",
+            "audio": "tout"
+          },
+          {
+            "ru": "chaque",
+            "translit": "SHAK",
+            "pt": "",
+            "en": "",
+            "audio": "chaque"
+          },
+          {
+            "ru": "plusieurs",
+            "translit": "plew-ZYUHR",
+            "pt": "",
+            "en": "",
+            "audio": "plusieurs"
+          },
+          {
+            "ru": "quelqu'un",
+            "translit": "kehl-KAN",
+            "pt": "",
+            "en": "",
+            "audio": "quelqu'un"
+          },
+          {
+            "ru": "quelque chose",
+            "translit": "kehlk SHOHZ",
+            "pt": "",
+            "en": "",
+            "audio": "quelque chose"
+          },
+          {
+            "ru": "quelques",
+            "translit": "KEHLK",
+            "pt": "",
+            "en": "",
+            "audio": "quelques"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Tout, chaque, plusieurs, quelqu'un",
+        "explicacao": "STEP 1: «tout» (all, everything): masculine «tout», feminine «toute», plurals «tous» and «toutes»: «tout le monde» (everyone), «toute la journée» (all day), «tous les jours» (every day), «toutes les semaines» (every week). STEP 2: «tout» as a pronoun: «Je comprends tout.» «Tout va bien.» «Tous sont venus.» STEP 3: «chaque» + singular noun (each, every): «chaque jour, chaque matin, chaque personne». STEP 4: «plusieurs» + plural (several): «plusieurs amis, plusieurs fois». STEP 5: «quelques» + plural (some, a few): «quelques minutes, quelques livres». STEP 6: «quelqu'un» (someone) and «quelque chose» (something), with an adjective, use «de»: «quelqu'un de gentil», «quelque chose de bon». STEP 7: «tout le monde» takes a singular verb: «Tout le monde est là.» STEP 8: «n'importe» (any, no matter): «n'importe qui, n'importe quoi, n'importe où, n'importe quand».",
+        "comparacao": "In English «everyone» and «every day» take no article. French needs the article after «tout»: «tout LE monde», «tous LES jours», «toute LA journée». Without the article, the sentence sounds strange.",
+        "tabela": [
+          {
+            "word": "tout le monde",
+            "sense": "everyone",
+            "example": "Tout le monde est là."
+          },
+          {
+            "word": "tous les jours",
+            "sense": "every day",
+            "example": "Je travaille tous les jours."
+          },
+          {
+            "word": "toute la journée",
+            "sense": "all day",
+            "example": "Il pleut toute la journée."
+          },
+          {
+            "word": "chaque + singular",
+            "sense": "each, every",
+            "example": "Chaque matin, je cours."
+          },
+          {
+            "word": "plusieurs + plural",
+            "sense": "several",
+            "example": "J'ai plusieurs amis."
+          },
+          {
+            "word": "quelqu'un de + adj.",
+            "sense": "someone + adjective",
+            "example": "C'est quelqu'un de gentil."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Tous jours, je travaille.",
+            "certo": "Tous les jours, je travaille.",
+            "motivo": "The article is missing."
+          },
+          {
+            "errado": "Chaque jours.",
+            "certo": "Chaque jour.",
+            "motivo": "«Chaque» + singular."
+          },
+          {
+            "errado": "Tout le monde sont là.",
+            "certo": "Tout le monde est là.",
+            "motivo": "Singular."
+          },
+          {
+            "errado": "Quelqu'un gentil.",
+            "certo": "Quelqu'un de gentil.",
+            "motivo": "«De» before the adjective."
+          }
+        ],
+        "tag": "Indefinites"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Describe your week out loud: «Tous les jours… Chaque matin… Plusieurs fois par semaine… Quelqu'un de… »"
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say five sentences with «ne… rien», «ne… personne», «ne… jamais», «ne… plus» and «ne… aucun»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-033.json",
+  "responsavel": null
+}

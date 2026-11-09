@@ -1,0 +1,137 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 166,
+  "fase": 17,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Gérondif and present participle: Means, condition and cause",
+  "objetivo": "Lesson 42, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 42,
+    "titulo": "Gérondif and present participle",
+    "objetivo": "Use the gérondif («en parlant») for simultaneous actions, means and condition, and recognize the present participle («un homme parlant») and the infinitive after prepositions.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Means, condition and cause",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "en pratiquant",
+            "translit": "ahn prah-tee-KAHN",
+            "pt": "",
+            "en": "",
+            "audio": "en pratiquant"
+          },
+          {
+            "ru": "en étudiant",
+            "translit": "ah-nay-tew-dee-AHN",
+            "pt": "",
+            "en": "",
+            "audio": "en étudiant"
+          },
+          {
+            "ru": "en voyageant",
+            "translit": "ahn vwah-yah-ZHAHN",
+            "pt": "",
+            "en": "",
+            "audio": "en voyageant"
+          },
+          {
+            "ru": "en arrivant",
+            "translit": "ah-nah-ree-VAHN",
+            "pt": "",
+            "en": "",
+            "audio": "en arrivant"
+          },
+          {
+            "ru": "en sortant",
+            "translit": "ahn sor-TAHN",
+            "pt": "",
+            "en": "",
+            "audio": "en sortant"
+          },
+          {
+            "ru": "en rentrant",
+            "translit": "ahn rahn-TRAHN",
+            "pt": "",
+            "en": "",
+            "audio": "en rentrant"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "What the gérondif expresses",
+        "explicacao": "STEP 1: means or manner (how?): «Je progresse en lisant.» «On apprend en faisant.» STEP 2: time (when?): «En arrivant à la maison, j'ai vu une lettre.» «En sortant du bureau, il a pris un taxi.» STEP 3: condition (if): «En partant tôt, tu éviteras les bouchons.» (if you leave early…) STEP 4: cause: «En perdant mes clés, j'ai dû appeler un serrurier.» STEP 5: opposition with «tout en»: «Tout en étant fatigué, il a continué.» STEP 6: do not use the gérondif when the subjects are different: «Je l'ai vu qui sortait» (not «en sortant»). STEP 7: with pronominal verbs: «En se levant, il a vu la neige.» STEP 8: with «aller» the gérondif marks progression: «La situation va en s'améliorant.» (is gradually improving)",
+        "comparacao": "in English the -ing form does all this, and sometimes more («talking like that, nobody understands»). In French, the logic is the same, but it only works when the subject of the gérondif is the same as the subject of the main clause. «Je l'ai vu en sortant» means that I was leaving, not he.",
+        "tabela": [
+          {
+            "value": "means",
+            "example": "On apprend en faisant."
+          },
+          {
+            "value": "time",
+            "example": "En arrivant, j'ai vu une lettre."
+          },
+          {
+            "value": "condition",
+            "example": "En partant tôt, tu éviteras les bouchons."
+          },
+          {
+            "value": "cause",
+            "example": "En perdant mes clés, j'ai dû appeler un serrurier."
+          },
+          {
+            "value": "opposition",
+            "example": "Tout en étant fatigué, il a continué."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "En arrivant, la lettre était sur la table.",
+            "certo": "En arrivant, j'ai vu la lettre sur la table.",
+            "motivo": "Subject of the gérondif = main subject."
+          },
+          {
+            "errado": "En partir tôt, tu éviteras les bouchons.",
+            "certo": "En partant tôt, tu éviteras les bouchons.",
+            "motivo": "Present participle."
+          },
+          {
+            "errado": "Je l'ai vu en sortant. (he was leaving)",
+            "certo": "Je l'ai vu qui sortait.",
+            "motivo": "Different subjects."
+          },
+          {
+            "errado": "Je progresse en lisent.",
+            "certo": "Je progresse en lisant.",
+            "motivo": "Invariable."
+          }
+        ],
+        "tag": "Gérondif"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Say out loud eight sentences with the gérondif: means, time, condition and cause."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Form the gérondif of these aloud: «écouter, finir, boire, faire, voir, venir»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-042.json",
+  "responsavel": null
+}

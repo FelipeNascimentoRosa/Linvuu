@@ -1,0 +1,137 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 114,
+  "fase": 12,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "The imperative with pronouns and instructions: Instructions and recipes",
+  "objetivo": "Lesson 29, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 29,
+    "titulo": "The imperative with pronouns and instructions",
+    "objetivo": "Use the affirmative and negative imperative with pronouns («donne-le-moi», «ne le fais pas»), and give instructions, recipes and rules.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Instructions and recipes",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "couper",
+            "translit": "koo-PAY",
+            "pt": "",
+            "en": "",
+            "audio": "couper"
+          },
+          {
+            "ru": "mélanger",
+            "translit": "may-lahn-ZHAY",
+            "pt": "",
+            "en": "",
+            "audio": "mélanger"
+          },
+          {
+            "ru": "ajouter",
+            "translit": "ah-zhoo-TAY",
+            "pt": "",
+            "en": "",
+            "audio": "ajouter"
+          },
+          {
+            "ru": "faire cuire",
+            "translit": "fehr KWEER",
+            "pt": "",
+            "en": "",
+            "audio": "faire cuire"
+          },
+          {
+            "ru": "laisser reposer",
+            "translit": "leh-say ruh-poh-ZAY",
+            "pt": "",
+            "en": "",
+            "audio": "laisser reposer"
+          },
+          {
+            "ru": "servir",
+            "translit": "sehr-VEER",
+            "pt": "",
+            "en": "",
+            "audio": "servir"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Instructions, rules and recipes",
+        "explicacao": "STEP 1: in recipes and instructions, use the imperative (vous) or the infinitive: «Coupez les oignons.» «Mélanger les ingrédients.» STEP 2: use the connectors «d'abord, ensuite, puis, enfin, après»: «D'abord, coupez les légumes. Ensuite, ajoutez le sel.» STEP 3: cooking times: «faites cuire pendant vingt minutes», «laissez reposer une heure». STEP 4: rules: «Il est interdit de fumer.» «Il ne faut pas parler fort.» «Défense de stationner.» STEP 5: warnings: «Attention !», «Prudence !», «Ne touchez pas !» STEP 6: «il faut» + infinitive for obligation: «Il faut mélanger pendant cinq minutes.» STEP 7: in spoken French, use the «tu» imperative with friends: «Coupe les oignons, ajoute le sel, mélange bien.» STEP 8: the most common signs and notices: «Sortie», «Entrée libre», «Ne pas déranger».",
+        "comparacao": "In English, recipes use the imperative («mix», «cook», «stir»). French does both, but the infinitive (mélanger, cuire) is more common in books and on packaging. With friends, use the «tu» imperative.",
+        "tabela": [
+          {
+            "usage": "recipe (vous)",
+            "example": "Coupez les oignons, puis ajoutez le sel."
+          },
+          {
+            "usage": "recipe (infinitive)",
+            "example": "Mélanger les ingrédients."
+          },
+          {
+            "usage": "rule",
+            "example": "Il est interdit de fumer."
+          },
+          {
+            "usage": "obligation",
+            "example": "Il faut mélanger pendant cinq minutes."
+          },
+          {
+            "usage": "warning",
+            "example": "Ne touchez pas !"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Il est interdit fumer.",
+            "certo": "Il est interdit de fumer.",
+            "motivo": "«Interdit de» + infinitive."
+          },
+          {
+            "errado": "Il faut de mélanger.",
+            "certo": "Il faut mélanger.",
+            "motivo": "No preposition."
+          },
+          {
+            "errado": "Coupez-les oignons.",
+            "certo": "Coupez les oignons.",
+            "motivo": "A hyphen only goes with a pronoun; here it is an article."
+          },
+          {
+            "errado": "Ne touchez-pas !",
+            "certo": "Ne touchez pas !",
+            "motivo": "No hyphen in the negative."
+          }
+        ],
+        "tag": "Imperative"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Explain a simple recipe out loud (omelette, salad, coffee) in eight steps using the imperative."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Turn this into a command: «Tu donnes le livre à moi. Tu ne le regardes pas.»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-029.json",
+  "responsavel": null
+}

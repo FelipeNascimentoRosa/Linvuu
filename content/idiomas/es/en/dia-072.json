@@ -1,0 +1,505 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 72,
+  "fase": 8,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "A1 review and mock test: A1 mock test",
+  "objetivo": "Lesson 18, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 18,
+    "titulo": "A1 review and mock test",
+    "objetivo": "Review the whole of A1 in one map, practice reading, listening, writing and speaking, fix the most common mistakes English speakers make, and take an original practice test with a commented answer key, covering lessons 1 through 17.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "A1 mock test",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Son las tres y media",
+            "opcoes": [
+              "[misto] Son las tres y media",
+              "[misto] Son las tres y cuarto",
+              "[misto] Son las cuatro y media"
+            ],
+            "gabarito": "[misto] Son las tres y media",
+            "explicacao": "Listening and clock times: «tres y media» = 3:30 (lesson 9).",
+            "id": "es-018-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Quisiera un café con leche, por favor",
+            "opcoes": [
+              "[misto] Quisiera un café con leche, por favor",
+              "[misto] Quiero un té con leche, por favor",
+              "[misto] Quisiera un café solo, por favor"
+            ],
+            "gabarito": "[misto] Quisiera un café con leche, por favor",
+            "explicacao": "Listening and a polite order at a café (lesson 8).",
+            "id": "es-018-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "El museo está cerca de la estación",
+            "opcoes": [
+              "[misto] El museo está cerca de la estación",
+              "[misto] El museo está lejos de la estación",
+              "[misto] El museo es cerca de la estación"
+            ],
+            "gabarito": "[misto] El museo está cerca de la estación",
+            "explicacao": "Listening and location: «cerca de» (lesson 10).",
+            "id": "es-018-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Hoy me he levantado a las seis",
+            "opcoes": [
+              "[misto] Hoy me he levantado a las seis",
+              "[misto] Hoy me levanto a las seis",
+              "[misto] Hoy se ha levantado a las seis"
+            ],
+            "gabarito": "[misto] Hoy me he levantado a las seis",
+            "explicacao": "Listening: reflexive in the pretérito perfecto, «me he levantado» (lessons 14 and 17).",
+            "id": "es-018-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Read: «Mi hermano es médico y trabaja en un hospital. Vive cerca de mi casa.» Where does the brother live?",
+            "opcoes": [
+              "[misto] Near the speaker's house",
+              "[misto] Far from the hospital",
+              "[misto] At the hospital"
+            ],
+            "gabarito": "[misto] Near the speaker's house",
+            "explicacao": "Reading: «cerca de mi casa» (lessons 7 and 10).",
+            "id": "es-018-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «I'd like a coffee with milk and a piece of toast, please.»",
+            "opcoes": [
+              "leche",
+              "por",
+              "y",
+              "con",
+              "tostada,",
+              "favor.",
+              "Quisiera",
+              "un",
+              "una",
+              "café"
+            ],
+            "gabarito": "Quisiera un café con leche y una tostada, por favor.",
+            "explicacao": "Write: Quisiera un café con leche y una tostada, por favor.",
+            "id": "es-018-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Read: «Los sábados me levanto tarde, hago la compra y salgo con mis amigos. Esta semana he visto dos películas.» What did this person do this week?",
+            "opcoes": [
+              "[misto] Watched two movies",
+              "[misto] Went shopping twice",
+              "[misto] Went out twice"
+            ],
+            "gabarito": "[misto] Watched two movies",
+            "explicacao": "Reading: «he visto dos películas» is the pretérito perfecto of «ver» (lesson 17).",
+            "id": "es-018-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Buenos días. ¿Qué desea tomar?",
+            "respostaEsperada": "Buenos días. ¿Qué desea tomar?",
+            "explicacao": "Good morning. What would you like to drink?",
+            "id": "es-018-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "[misto] Tengo veinte años.",
+              "[misto] Soy veinte años.",
+              "[misto] Estoy veinte años."
+            ],
+            "gabarito": "[misto] Tengo veinte años.",
+            "explicacao": "Age is said with «tener» (lesson 3).",
+            "id": "es-018-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "[misto] Hay un café en la esquina.",
+              "[misto] Hay el café en la esquina.",
+              "[misto] Es un café en la esquina."
+            ],
+            "gabarito": "[misto] Hay un café en la esquina.",
+            "explicacao": "«Hay» introduces something, with an indefinite article (lesson 5).",
+            "id": "es-018-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «My sister and my parents»?",
+            "opcoes": [
+              "[misto] Mi hermana y mis padres.",
+              "[misto] Mi hermana y mi padres.",
+              "[misto] Mis hermana y mis padres."
+            ],
+            "gabarito": "[misto] Mi hermana y mis padres.",
+            "explicacao": "The possessive agrees with what's possessed (lesson 7).",
+            "id": "es-018-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Quisiera un café con leche y una tostada, por favor.",
+            "respostaEsperada": "Quisiera un café con leche y una tostada, por favor.",
+            "explicacao": "I'd like a coffee with milk and a piece of toast, please.",
+            "id": "es-018-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «It's two thirty»?",
+            "opcoes": [
+              "[misto] Son las dos y media.",
+              "[misto] Es las dos y media.",
+              "[misto] Son dos y media."
+            ],
+            "gabarito": "[misto] Son las dos y media.",
+            "explicacao": "Clock times: «son las» in the plural (lesson 9).",
+            "id": "es-018-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "[misto] El libro está en la mesa.",
+              "[misto] El libro es en la mesa.",
+              "[misto] El libro hay en la mesa."
+            ],
+            "gabarito": "[misto] El libro está en la mesa.",
+            "explicacao": "Location is expressed with «estar» (lesson 10).",
+            "id": "es-018-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «Go straight ahead and turn right»?",
+            "opcoes": [
+              "[misto] Siga todo recto y gire a la derecha.",
+              "[misto] Siga todo recto y gire a la izquierda.",
+              "[misto] Gire a la derecha y siga la izquierda."
+            ],
+            "gabarito": "[misto] Siga todo recto y gire a la derecha.",
+            "explicacao": "Directions: «derecha» means right (lesson 11).",
+            "id": "es-018-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Sí, un zumo de naranja pequeño. ¿Cuánto es?",
+            "respostaEsperada": "Sí, un zumo de naranja pequeño. ¿Cuánto es?",
+            "explicacao": "Yes, a small orange juice. How much is it?",
+            "id": "es-018-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you ask the price of a shirt?",
+            "opcoes": [
+              "[misto] ¿Cuánto cuesta esta camisa?",
+              "[misto] ¿Cuánto cuestan esta camisa?",
+              "[misto] ¿Cuánto costa esta camisa?"
+            ],
+            "gabarito": "[misto] ¿Cuánto cuesta esta camisa?",
+            "explicacao": "One item: singular, «cuesta» (lesson 15).",
+            "id": "es-018-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «That's four euros fifty.»",
+            "opcoes": [
+              "euros",
+              "Son",
+              "cuatro",
+              "con",
+              "cincuenta."
+            ],
+            "gabarito": "Son cuatro euros con cincuenta.",
+            "explicacao": "Write: Son cuatro euros con cincuenta.",
+            "id": "es-018-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Nosotros ___ en Madrid. (vivir)",
+            "opcoes": [
+              "[misto] vivimos",
+              "[misto] vive",
+              "[misto] vivís"
+            ],
+            "gabarito": "[misto] vivimos",
+            "explicacao": "Present tense of -ir verbs with «nosotros»: «-imos» (lesson 6).",
+            "id": "es-018-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Mis padres ___ en la cocina. (estar)",
+            "opcoes": [
+              "[misto] están",
+              "[misto] son",
+              "[misto] está"
+            ],
+            "gabarito": "[misto] están",
+            "explicacao": "Location with «estar»; plural «están» (lesson 10).",
+            "id": "es-018-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Yo ___ la compra los sábados. (hacer)",
+            "opcoes": [
+              "[misto] hago",
+              "[misto] hazo",
+              "[misto] hace"
+            ],
+            "gabarito": "[misto] hago",
+            "explicacao": "Irregular first person: «hago» (lesson 12).",
+            "id": "es-018-e16"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ella ___ a las siete. (levantarse)",
+            "opcoes": [
+              "[misto] se levanta",
+              "[misto] levanta se",
+              "[misto] me levanta"
+            ],
+            "gabarito": "[misto] se levanta",
+            "explicacao": "The pronoun «se» comes before the verb (lesson 14).",
+            "id": "es-018-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Son cuatro euros con cincuenta.",
+            "respostaEsperada": "Son cuatro euros con cincuenta.",
+            "explicacao": "That's four euros fifty.",
+            "id": "es-018-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "A mí ___ gustan los idiomas.",
+            "opcoes": [
+              "[misto] me",
+              "[misto] yo",
+              "[misto] mi"
+            ],
+            "gabarito": "[misto] me",
+            "explicacao": "With «gustar», the pronoun is «me» (lesson 16).",
+            "id": "es-018-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Aquí tiene. ¿Puedo pagar con tarjeta?",
+            "respostaEsperada": "Aquí tiene. ¿Puedo pagar con tarjeta?",
+            "explicacao": "Here you go. Can I pay by card?",
+            "id": "es-018-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Hoy nosotros ___ visto una película.",
+            "opcoes": [
+              "[misto] hemos",
+              "[misto] han",
+              "[misto] habéis"
+            ],
+            "gabarito": "[misto] hemos",
+            "explicacao": "«Haber» with «nosotros» is «hemos» (lesson 17).",
+            "id": "es-018-e19"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Tengo que estudiar esta tarde.»",
+            "opcoes": [
+              "Tengo",
+              "que",
+              "estudiar",
+              "esta",
+              "tarde."
+            ],
+            "gabarito": "Tengo que estudiar esta tarde.",
+            "explicacao": "«Tener que» followed by the infinitive (lesson 13).",
+            "id": "es-018-e20"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «No me gustan las series largas.»",
+            "opcoes": [
+              "No",
+              "me",
+              "gustan",
+              "las",
+              "series",
+              "largas."
+            ],
+            "gabarito": "No me gustan las series largas.",
+            "explicacao": "«No» before the pronoun (lesson 16).",
+            "id": "es-018-e21"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Of course, no problem.»",
+            "opcoes": [
+              "problema.",
+              "sin",
+              "Claro,"
+            ],
+            "gabarito": "Claro, sin problema.",
+            "explicacao": "Write: Claro, sin problema.",
+            "id": "es-018-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "¿Dónde está la estación?",
+            "respostaEsperada": "¿Dónde está la estación?",
+            "explicacao": "Write: ¿Dónde está la estación? With both punctuation marks and the accents (lessons 1 and 10).",
+            "id": "es-018-e22"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Me gustan las películas españolas",
+            "respostaEsperada": "Me gustan las películas españolas",
+            "explicacao": "Write: Me gustan las películas españolas. With «ñ» and the accent on «películas» (lessons 1 and 16).",
+            "id": "es-018-e23"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: My name is Ana, I live in Madrid, and today I worked a lot.",
+            "respostaEsperada": "[misto] Me llamo Ana, vivo en Madrid y hoy he trabajado mucho.",
+            "id": "es-018-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Perdone, ¿dónde está la estación de tren?",
+            "respostaEsperada": "Perdone, ¿dónde está la estación de tren?",
+            "explicacao": "Excuse me, where's the train station?",
+            "id": "es-018-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Mi hermana ___ en casa. (estar)",
+            "opcoes": [
+              "[misto] es",
+              "[misto] está",
+              "[misto] hay"
+            ],
+            "gabarito": "[misto] está",
+            "explicacao": "Location calls for «estar».",
+            "id": "es-018-e25"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Claro, sin problema.",
+            "respostaEsperada": "Claro, sin problema.",
+            "explicacao": "Of course, no problem.",
+            "id": "es-018-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "A mis amigos ___ gustan las series.",
+            "opcoes": [
+              "[misto] le",
+              "[misto] les",
+              "[misto] los"
+            ],
+            "gabarito": "[misto] les",
+            "explicacao": "For «a ellos», the pronoun is «les».",
+            "id": "es-018-e26"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I get up at seven»?",
+            "opcoes": [
+              "[misto] Yo levanto a las siete.",
+              "[misto] Levanto me a las siete.",
+              "[misto] Me levanto a las siete."
+            ],
+            "gabarito": "[misto] Me levanto a las siete.",
+            "explicacao": "Reflexive verb: the pronoun comes before the verb.",
+            "id": "es-018-e27"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I have to work today»?",
+            "opcoes": [
+              "[misto] Tengo que trabajar hoy.",
+              "[misto] Tengo de trabajar hoy.",
+              "[misto] Tengo a trabajar hoy."
+            ],
+            "gabarito": "[misto] Tengo que trabajar hoy.",
+            "explicacao": "Obligation is «tener que» + infinitive.",
+            "id": "es-018-e28"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Esta semana he trabajado mucho.»",
+            "opcoes": [
+              "Esta",
+              "semana",
+              "he",
+              "trabajado",
+              "mucho."
+            ],
+            "gabarito": "Esta semana he trabajado mucho.",
+            "explicacao": "«Esta semana» calls for the pretérito perfecto in Spain.",
+            "id": "es-018-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: My name is Ana, I'm twenty years old, and I live in Madrid.",
+            "respostaEsperada": "[misto] Me llamo Ana, tengo veinte años y vivo en Madrid.",
+            "id": "es-018-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Reread the items you got wrong, say the rule for each out loud, and name the lesson it's in. Mark what's worth repeating."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Reread the map and pick three points you still get wrong. Then take the practice test without checking the table, and go over the explanations."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-018.json",
+  "responsavel": null
+}

@@ -1,0 +1,198 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 33,
+  "fase": 4,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Time, days and months: What time is it?",
+  "objetivo": "Lesson 9, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 9,
+    "titulo": "Time, days and months",
+    "objetivo": "Ask and tell the time, set a time with «a las», say the days of the week, the months and the date, and talk about opening hours and routine with «de… a…» and «todos los días».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "What time is it?",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "la hora",
+            "translit": "[pronuncia] la O-rah",
+            "pt": "the hour",
+            "en": "",
+            "audio": "la hora"
+          },
+          {
+            "ru": "el minuto",
+            "translit": "[pronuncia] el mee-NOO-to",
+            "pt": "the minute",
+            "en": "",
+            "audio": "el minuto"
+          },
+          {
+            "ru": "el reloj",
+            "translit": "[pronuncia] el reh-LOH",
+            "pt": "the clock, the watch",
+            "en": "",
+            "audio": "el reloj"
+          },
+          {
+            "ru": "en punto",
+            "translit": "[pronuncia] en POON-to",
+            "pt": "on the dot, sharp",
+            "en": "",
+            "audio": "en punto"
+          },
+          {
+            "ru": "y cuarto",
+            "translit": "[pronuncia] ee KWAR-to",
+            "pt": "quarter past",
+            "en": "",
+            "audio": "y cuarto"
+          },
+          {
+            "ru": "y media",
+            "translit": "[pronuncia] ee meh-DYAH",
+            "pt": "half past",
+            "en": "",
+            "audio": "y media"
+          },
+          {
+            "ru": "menos cuarto",
+            "translit": "[pronuncia] MEH-nos KWAR-to",
+            "pt": "quarter to",
+            "en": "",
+            "audio": "menos cuarto"
+          },
+          {
+            "ru": "a las…",
+            "translit": "[pronuncia] ah lahs",
+            "pt": "at… (to set a time)",
+            "en": "",
+            "audio": "a las…"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Telling the time",
+        "explicacao": "STEP 1: to ask the time: «¿Qué hora es?» (the answer uses «ser»). To ask what time something happens: «¿A qué hora…?». STEP 2: it's «one o'clock» in the singular: «Es la una.» For every other hour, plural: «Son las dos», «Son las tres», «Son las doce». The article «la / las» agrees with «hora», which stays implied. STEP 3: up to the half hour, add the minutes with «y»: «las tres y diez», «las cinco y veinte». Fifteen minutes is «y cuarto», and thirty is «y media»: «las ocho y cuarto», «las ocho y media». STEP 4: past the half hour, Spanish counts the minutes still needed to reach the next hour, with «menos»: «las cuatro menos veinte» (3:40), «las diez menos cuarto» (9:45). You'll also hear «las nueve y cuarenta y cinco», especially with digital clocks. STEP 5: «en punto» means «on the dot»: «Son las dos en punto.» STEP 6: at noon, «Es mediodía»; at midnight, «Es medianoche». Both are singular. STEP 7: to set the time something happens, use «a las» (or «a la» for 1:00): «La clase es a las nueve», «Como a la una». STEP 8: morning, afternoon and night are said with «de la»: «las ocho de la mañana», «las tres de la tarde», «las diez de la noche». When there's no specific hour, say «por la mañana, por la tarde, por la noche». STEP 9: greetings follow the time of day: «buenos días» until lunchtime, «buenas tardes» from lunchtime until dark, and «buenas noches» at night, for both hello and goodbye. STEP 10: in Spain, lunch tends to be later than in many English-speaking countries, and dinner too; this varies by region and country. On train and bus schedules, Spain uses the 24-hour clock: «las quince treinta» (15:30).",
+        "comparacao": "English says «it's one o'clock» and «it's two o'clock», and Spanish does the same but drops the word for «o'clock»: «Es la una», «Son las dos». The big difference is the second half of the hour: English says «quarter to four», counting down to the next hour — and Spanish does exactly that too, with «menos»: «las cuatro menos cuarto» (four minus a quarter). The preposition for a clock time is «a las» (English «at»): «a las nueve» = «at nine».",
+        "exemplos": [
+          {
+            "ru": "¿Qué hora es? — Son las nueve y media.",
+            "pt": "What time is it? — It's half past nine."
+          },
+          {
+            "ru": "Es la una y cuarto.",
+            "pt": "It's a quarter past one."
+          },
+          {
+            "ru": "La clase es a las diez menos cuarto.",
+            "pt": "Class is at a quarter to ten."
+          },
+          {
+            "ru": "Son las ocho de la tarde.",
+            "pt": "It's eight at night (in the evening)."
+          },
+          {
+            "ru": "¿A qué hora comes?",
+            "pt": "What time do you have lunch?"
+          }
+        ],
+        "tabela": [
+          {
+            "hora": "[misto] 1:00",
+            "espanhol": "[misto] Es la una.",
+            "observacao": "[misto] singular"
+          },
+          {
+            "hora": "[misto] 2:00",
+            "espanhol": "[misto] Son las dos.",
+            "observacao": "[misto] plural"
+          },
+          {
+            "hora": "[misto] 3:10",
+            "espanhol": "[misto] Son las tres y diez.",
+            "observacao": "[misto] minutes with y"
+          },
+          {
+            "hora": "[misto] 4:15",
+            "espanhol": "[misto] Son las cuatro y cuarto.",
+            "observacao": "[misto] fifteen minutes"
+          },
+          {
+            "hora": "[misto] 5:30",
+            "espanhol": "[misto] Son las cinco y media.",
+            "observacao": "[misto] half hour"
+          },
+          {
+            "hora": "[misto] 6:40",
+            "espanhol": "[misto] Son las siete menos veinte.",
+            "observacao": "[misto] minutes still needed"
+          },
+          {
+            "hora": "[misto] 7:45",
+            "espanhol": "[misto] Son las ocho menos cuarto.",
+            "observacao": "[misto] menos cuarto"
+          },
+          {
+            "hora": "[misto] 12:00",
+            "espanhol": "[misto] Es mediodía. / Son las doce.",
+            "observacao": "[misto] noon"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] Son la una.",
+            "certo": "[misto] Es la una.",
+            "motivo": "One o'clock is singular."
+          },
+          {
+            "errado": "[misto] Es las dos.",
+            "certo": "[misto] Son las dos.",
+            "motivo": "From two onward, the verb goes plural."
+          },
+          {
+            "errado": "[misto] Son las dos horas.",
+            "certo": "[misto] Son las dos.",
+            "motivo": "The word «horas» stays implied."
+          },
+          {
+            "errado": "[misto] Son las siete y cuarenta y cinco.",
+            "certo": "[misto] Son las ocho menos cuarto.",
+            "motivo": "The digital form exists, but in speech «menos cuarto» is the natural choice."
+          },
+          {
+            "errado": "[misto] Son las ocho en la mañana.",
+            "certo": "[misto] Son las ocho de la mañana.",
+            "motivo": "With an exact time, use «de la mañana»."
+          }
+        ],
+        "tag": "Hours"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say the time on your clock out loud, five different ways: an exact hour, a «y cuarto», a «y media», a «menos cuarto» and a «menos veinte»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Order two things at a café with «quisiera» and give the total: «Son… euros con…». Then read out loud: 34, 47, 68, 91, 100."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-009.json",
+  "responsavel": null
+}

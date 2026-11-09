@@ -1,0 +1,161 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 61,
+  "fase": 7,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "The past with «être» and reflexive verbs: Verbs that use «être»",
+  "objetivo": "Lesson 16, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 16,
+    "titulo": "The past with «être» and reflexive verbs",
+    "objetivo": "Use the passé composé with «être» (verbs of movement and reflexive verbs), make the participle agree, and tell about a trip.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Verbs that use «être»",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "aller",
+            "translit": "ah-LAY",
+            "pt": "",
+            "en": "",
+            "audio": "aller"
+          },
+          {
+            "ru": "venir",
+            "translit": "vuh-NEER",
+            "pt": "",
+            "en": "",
+            "audio": "venir"
+          },
+          {
+            "ru": "arriver",
+            "translit": "ah-ree-VAY",
+            "pt": "",
+            "en": "",
+            "audio": "arriver"
+          },
+          {
+            "ru": "partir",
+            "translit": "pahr-TEER",
+            "pt": "",
+            "en": "",
+            "audio": "partir"
+          },
+          {
+            "ru": "entrer",
+            "translit": "ahn-TRAY",
+            "pt": "",
+            "en": "",
+            "audio": "entrer"
+          },
+          {
+            "ru": "sortir",
+            "translit": "sohr-TEER",
+            "pt": "",
+            "en": "",
+            "audio": "sortir"
+          },
+          {
+            "ru": "rester",
+            "translit": "rehs-TAY",
+            "pt": "",
+            "en": "",
+            "audio": "rester"
+          },
+          {
+            "ru": "rentrer",
+            "translit": "rahn-TRAY",
+            "pt": "",
+            "en": "",
+            "audio": "rentrer"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Je suis allé: être + participle",
+        "explicacao": "STEP 1: some verbs, mainly verbs of movement and change, use «être» in the passé composé: «Je suis allé à Paris.» STEP 2: basic list: «aller (allé), venir (venu), arriver (arrivé), partir (parti), entrer (entré), sortir (sorti), rester (resté), rentrer (rentré), monter (monté), descendre (descendu), tomber (tombé), naître (né), mourir (mort)». STEP 3: the conjugation of «être»: je suis, tu es, il est, nous sommes, vous êtes, ils sont. So: «Je suis arrivé.» «Nous sommes partis.» STEP 4: the participle agrees with the subject: feminine «+e», plural «+s»: «Elle est allée.» «Ils sont allés.» «Elles sont allées.» STEP 5: «je» and «tu» agree with the person speaking: a man says «Je suis allé», a woman says «Je suis allée». STEP 6: «vous» can be «allé» (one man), «allée» (one woman), «allés» (several people): «Vous êtes allés.» STEP 7: the negation goes around the auxiliary: «Je ne suis pas allé.» «Elle n'est pas arrivée.» STEP 8: memory trick: the verbs of movement are «go and come, go up and go down, enter and leave, arrive and depart, stay, be born and die, fall».",
+        "comparacao": "in English the auxiliary is always «have» («I have gone»). French chooses between «avoir» and «être», and with «être» the participle changes like an adjective: «elle est allée».",
+        "tabela": [
+          {
+            "infinitive": "aller",
+            "participle": "allé",
+            "example": "Je suis allé à Paris."
+          },
+          {
+            "infinitive": "venir",
+            "participle": "venu",
+            "example": "Elle est venue hier."
+          },
+          {
+            "infinitive": "arriver",
+            "participle": "arrivé",
+            "example": "Nous sommes arrivés tard."
+          },
+          {
+            "infinitive": "partir",
+            "participle": "parti",
+            "example": "Ils sont partis."
+          },
+          {
+            "infinitive": "rester",
+            "participle": "resté",
+            "example": "Je suis resté chez moi."
+          },
+          {
+            "infinitive": "naître",
+            "participle": "né",
+            "example": "Elle est née en 1990."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "J'ai allé à Paris.",
+            "certo": "Je suis allé à Paris.",
+            "motivo": "«Aller» uses «être»."
+          },
+          {
+            "errado": "Elle est allé.",
+            "certo": "Elle est allée.",
+            "motivo": "Feminine agreement."
+          },
+          {
+            "errado": "Ils sont arrivé.",
+            "certo": "Ils sont arrivés.",
+            "motivo": "Plural agreement."
+          },
+          {
+            "errado": "Je suis parti pas.",
+            "certo": "Je ne suis pas parti.",
+            "motivo": "The negation goes around the auxiliary."
+          }
+        ],
+        "tag": "Past"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say out loud: «Hier, je suis allé… Je suis resté… Je suis rentré…» with your day."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Tell out loud what you did yesterday with «j'ai» + participle."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-016.json",
+  "responsavel": null
+}

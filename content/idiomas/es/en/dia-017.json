@@ -1,0 +1,186 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 17,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Articles, gender and plural, hay: Articles and gender",
+  "objetivo": "Lesson 5, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 5,
+    "titulo": "Articles, gender and plural, hay",
+    "objetivo": "Use «el, la, los, las, un, una, unos, unas», recognize noun gender (including nouns whose gender differs from English logic), form the plural, make the adjective agree, and say what's in a place with «hay».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Articles and gender",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "el libro",
+            "translit": "[pronuncia] el LEE-bro",
+            "pt": "the book",
+            "en": "",
+            "audio": "el libro"
+          },
+          {
+            "ru": "la casa",
+            "translit": "[pronuncia] la KAH-sah",
+            "pt": "the house",
+            "en": "",
+            "audio": "la casa"
+          },
+          {
+            "ru": "el coche",
+            "translit": "[pronuncia] el KO-cheh",
+            "pt": "the car",
+            "en": "",
+            "audio": "el coche"
+          },
+          {
+            "ru": "la mesa",
+            "translit": "[pronuncia] la MEH-sah",
+            "pt": "the table",
+            "en": "",
+            "audio": "la mesa"
+          },
+          {
+            "ru": "el día",
+            "translit": "[pronuncia] el DEE-ah",
+            "pt": "the day",
+            "en": "",
+            "audio": "el día"
+          },
+          {
+            "ru": "la mano",
+            "translit": "[pronuncia] la MAH-no",
+            "pt": "the hand",
+            "en": "",
+            "audio": "la mano"
+          },
+          {
+            "ru": "el problema",
+            "translit": "[pronuncia] el pro-BLEH-mah",
+            "pt": "the problem",
+            "en": "",
+            "audio": "el problema"
+          },
+          {
+            "ru": "la ciudad",
+            "translit": "[pronuncia] la thyoo-DAHD",
+            "pt": "the city",
+            "en": "",
+            "audio": "la ciudad"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "El, la, un, una and noun gender",
+        "explicacao": "STEP 1: every Spanish noun is masculine or feminine, and the article shows which. The definite article (the) is «el» for masculine and «la» for feminine: «el libro», «la casa». STEP 2: the indefinite article (a/an) is «un» and «una»: «un libro», «una casa». STEP 3: rule of thumb: words ending in «-o» tend to be masculine, and in «-a», feminine. Also feminine: endings «-ción», «-sión», «-dad», «-tud»: «la canción», «la ciudad», «la actitud». Almost always masculine: endings «-aje» («el viaje») and «-or» («el color»). STEP 4: very common exceptions worth memorizing right away: «el día», «el mapa», «el idioma», «el tema», «el problema» (masculine despite ending in «-a»); «la mano», «la foto», «la moto» (feminine despite ending in «-o»; «foto» and «moto» are short for «fotografía» and «motocicleta»). STEP 5: many words for people ending in «-ista» or «-e» (like «estudiante») have one single form for both genders, and only the article changes: «el estudiante, la estudiante», «el turista, la turista». But there are pairs like «el jefe, la jefa» and «el dependiente, la dependienta». STEP 6: watch out — several words switch gender compared to what an English speaker might expect from a Romance-language cognate: «la leche» (milk), «la sal» (salt), «la sangre» (blood), «la nariz» (nose), «la sonrisa» (smile), «la miel» (honey), but «el puente» (bridge) is masculine. STEP 7: before a feminine noun that starts with a stressed «a», Spanish uses «el» for the sound, and the noun stays feminine: «el agua», «el águila». The adjective stays feminine: «el agua fría». In the plural, «las» comes back: «las aguas». STEP 8: use the definite article when the listener already knows which thing you mean («el libro de Ana»), and the indefinite article when the thing is new information or one among several («Tengo un libro»). STEP 9: with a profession, nationality or religion after «ser», the indefinite article drops: «Soy profesora», «Es español». It only comes back with an adjective: «Es una profesora excelente».",
+        "comparacao": "English articles («the», «a/an») don't change for gender, so the real new skill here is simply learning which gender each Spanish noun takes — there's no shortcut from English itself. Watch especially for nouns that feel like they should be one gender (by their English translation or a Romance cognate) but aren't: «milk», «salt», «blood» and «nose» are all feminine in Spanish («la leche, la sal, la sangre, la nariz»), while «bridge» is masculine («el puente»). Always learn the noun together with its article.",
+        "exemplos": [
+          {
+            "ru": "La leche es blanca.",
+            "pt": "Milk is white."
+          },
+          {
+            "ru": "El problema es difícil.",
+            "pt": "The problem is hard."
+          },
+          {
+            "ru": "Tengo un coche y una moto.",
+            "pt": "I have a car and a motorbike."
+          },
+          {
+            "ru": "La ciudad es grande.",
+            "pt": "The city is big."
+          },
+          {
+            "ru": "Marta es la estudiante de Madrid.",
+            "pt": "Marta is the student from Madrid."
+          },
+          {
+            "ru": "El agua fría es buena.",
+            "pt": "Cold water is good."
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "[misto] definite masculine",
+            "singular": "[misto] el",
+            "plural": "[misto] los",
+            "exemplo": "[misto] el libro, los libros"
+          },
+          {
+            "tipo": "[misto] definite feminine",
+            "singular": "[misto] la",
+            "plural": "[misto] las",
+            "exemplo": "[misto] la casa, las casas"
+          },
+          {
+            "tipo": "[misto] indefinite masculine",
+            "singular": "[misto] un",
+            "plural": "[misto] unos",
+            "exemplo": "[misto] un coche, unos coches"
+          },
+          {
+            "tipo": "[misto] indefinite feminine",
+            "singular": "[misto] una",
+            "plural": "[misto] unas",
+            "exemplo": "[misto] una mesa, unas mesas"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] La problema es difícil.",
+            "certo": "[misto] El problema es difícil.",
+            "motivo": "«Problema» ends in «-a», but it's masculine."
+          },
+          {
+            "errado": "[misto] El leche es blanca.",
+            "certo": "[misto] La leche es blanca.",
+            "motivo": "«Leche» is feminine in Spanish."
+          },
+          {
+            "errado": "[misto] El mano",
+            "certo": "[misto] La mano",
+            "motivo": "«Mano» ends in «-o», but it's feminine."
+          },
+          {
+            "errado": "[misto] Un mesa grande",
+            "certo": "[misto] Una mesa grande",
+            "motivo": "The article agrees with the noun's gender."
+          },
+          {
+            "errado": "[misto] Soy una profesora.",
+            "certo": "[misto] Soy profesora.",
+            "motivo": "With a profession after «ser», and no adjective, no article is used."
+          }
+        ],
+        "tag": "Articles"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say out loud six sentences like «Tengo un libro / una casa…» and then repeat them with the definite article: «El libro es nuevo. La casa es grande.» Include «la leche» and «el problema»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say your age with «tener», conjugate «hablar» from memory, and answer: «¿Dónde vives? ¿Qué estudias? ¿Por qué estudias español?»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-005.json",
+  "responsavel": null
+}

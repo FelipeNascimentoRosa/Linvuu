@@ -1,0 +1,525 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 104,
+  "fase": 11,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Body, health and the pharmacy: Review and practice for lesson 26",
+  "objetivo": "Lesson 26, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 26,
+    "titulo": "Body, health and the pharmacy",
+    "objetivo": "Name parts of the body, say where it hurts, describe symptoms, talk to the doctor and at the pharmacy, and use «avoir mal à» and «il faut».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 26",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "J'ai mal à la tête",
+            "opcoes": [
+              "J'ai mal à la tête",
+              "J'ai mal au ventre",
+              "J'ai mal au dos"
+            ],
+            "gabarito": "J'ai mal à la tête",
+            "explicacao": "Listen to «la tête».",
+            "id": "fr-026-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Prenez ce médicament deux fois par jour",
+            "opcoes": [
+              "Prenez ce médicament deux fois par jour",
+              "Prenez ce médicament trois fois par jour",
+              "Prenez ce médicament une fois par jour"
+            ],
+            "gabarito": "Prenez ce médicament deux fois par jour",
+            "explicacao": "Listen to «deux».",
+            "id": "fr-026-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Où avez-vous mal ?",
+            "opcoes": [
+              "Où avez-vous mal ?",
+              "Où êtes-vous mal ?",
+              "Où allez-vous ?"
+            ],
+            "gabarito": "Où avez-vous mal ?",
+            "explicacao": "Listen to «avez-vous».",
+            "id": "fr-026-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "J'ai mal au dos depuis hier",
+            "respostaEsperada": "J'ai mal au dos depuis hier",
+            "explicacao": "Write: J'ai mal au dos depuis hier.",
+            "id": "fr-026-e04"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Good morning. I'd like something for a cough, please.»",
+            "opcoes": [
+              "toux,",
+              "chose",
+              "voudrais",
+              "vous",
+              "plaît.",
+              "la",
+              "s'il",
+              "Bonjour.",
+              "Je",
+              "quelque",
+              "contre"
+            ],
+            "gabarito": "Bonjour. Je voudrais quelque chose contre la toux, s'il vous plaît.",
+            "explicacao": "Write: Bonjour. Je voudrais quelque chose contre la toux, s'il vous plaît.",
+            "id": "fr-026-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je me sens très fatigué",
+            "respostaEsperada": "Je me sens très fatigué",
+            "explicacao": "Write: Je me sens très fatigué.",
+            "id": "fr-026-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Il faut boire beaucoup d'eau",
+            "respostaEsperada": "Il faut boire beaucoup d'eau",
+            "explicacao": "Write: Il faut boire beaucoup d'eau.",
+            "id": "fr-026-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "J'ai mal au dos.",
+              "J'ai mal à le dos.",
+              "Je suis mal au dos."
+            ],
+            "gabarito": "J'ai mal au dos.",
+            "explicacao": "à + le = au.",
+            "id": "fr-026-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "J'ai mal aux pieds.",
+              "J'ai mal à les pieds.",
+              "J'ai mal au pieds."
+            ],
+            "gabarito": "J'ai mal aux pieds.",
+            "explicacao": "à + les = aux.",
+            "id": "fr-026-e08"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Bonjour. Je voudrais quelque chose contre la toux, s'il vous plaît.",
+            "respostaEsperada": "Bonjour. Je voudrais quelque chose contre la toux, s'il vous plaît.",
+            "explicacao": "Good morning. I'd like something for a cough, please.",
+            "id": "fr-026-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Depuis quand toussez-vous ?",
+            "respostaEsperada": "Depuis quand toussez-vous ?",
+            "explicacao": "How long have you been coughing, madam?",
+            "id": "fr-026-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Medicine for a cough:",
+            "opcoes": [
+              "un médicament contre la toux",
+              "un médicament pour la toux",
+              "un médicament de la toux"
+            ],
+            "gabarito": "un médicament contre la toux",
+            "explicacao": "«Contre» + problem.",
+            "id": "fr-026-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "J'ai mal depuis hier.",
+              "J'ai mal il y a hier.",
+              "J'ai mal dans hier."
+            ],
+            "gabarito": "J'ai mal depuis hier.",
+            "explicacao": "Continues: «depuis».",
+            "id": "fr-026-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il a mal ___ ventre.",
+            "opcoes": [
+              "au",
+              "à la",
+              "aux"
+            ],
+            "gabarito": "au",
+            "explicacao": "Ventre is masculine.",
+            "id": "fr-026-e11"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «No, I don't have a fever, but I'm very tired.»",
+            "opcoes": [
+              "je",
+              "Non,",
+              "de",
+              "mais",
+              "fièvre,",
+              "fatiguée.",
+              "très",
+              "je",
+              "suis",
+              "pas",
+              "n'ai"
+            ],
+            "gabarito": "Non, je n'ai pas de fièvre, mais je suis très fatiguée.",
+            "explicacao": "Write: Non, je n'ai pas de fièvre, mais je suis très fatiguée.",
+            "id": "fr-026-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle a mal ___ gorge.",
+            "opcoes": [
+              "à la",
+              "au",
+              "aux"
+            ],
+            "gabarito": "à la",
+            "explicacao": "Gorge is feminine.",
+            "id": "fr-026-e12"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "J'ai de la ___ . (fever)",
+            "opcoes": [
+              "fièvre",
+              "toux",
+              "mal"
+            ],
+            "gabarito": "fièvre",
+            "explicacao": "Vocabulary.",
+            "id": "fr-026-e13"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Reposez-___ et buvez de l'eau.",
+            "opcoes": [
+              "vous",
+              "te",
+              "se"
+            ],
+            "gabarito": "vous",
+            "explicacao": "Reflexive imperative.",
+            "id": "fr-026-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «J'ai mal à la gorge depuis hier.»",
+            "opcoes": [
+              "J'ai",
+              "mal",
+              "à",
+              "la",
+              "gorge",
+              "depuis",
+              "hier"
+            ],
+            "gabarito": "J'ai mal à la gorge depuis hier.",
+            "explicacao": "avoir mal à.",
+            "id": "fr-026-e15"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Depuis trois jours. J'ai aussi mal à la gorge.",
+            "respostaEsperada": "Depuis trois jours. J'ai aussi mal à la gorge.",
+            "explicacao": "For three days. I also have a sore throat.",
+            "id": "fr-026-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Non, je n'ai pas de fièvre, mais je suis très fatiguée.",
+            "respostaEsperada": "Non, je n'ai pas de fièvre, mais je suis très fatiguée.",
+            "explicacao": "No, I don't have a fever, but I'm very tired.",
+            "id": "fr-026-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Prenez ce sirop trois fois par jour.»",
+            "opcoes": [
+              "Prenez",
+              "ce",
+              "sirop",
+              "trois",
+              "fois",
+              "par",
+              "jour"
+            ],
+            "gabarito": "Prenez ce sirop trois fois par jour.",
+            "explicacao": "Imperative.",
+            "id": "fr-026-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: My head has hurt since yesterday. I feel tired. I would like a medicine for a cough.",
+            "respostaEsperada": "J'ai mal à la tête depuis hier. Je me sens fatigué. Je voudrais un médicament contre la toux.",
+            "id": "fr-026-e17"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle a mal ___ mains. (às)",
+            "opcoes": [
+              "au",
+              "à la",
+              "aux"
+            ],
+            "gabarito": "aux",
+            "explicacao": "Plural: «à + les» becomes «aux».",
+            "id": "fr-026-e18"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il a mal ___ estomac. (ao)",
+            "opcoes": [
+              "à l'",
+              "au",
+              "à la"
+            ],
+            "gabarito": "à l'",
+            "explicacao": "Before a vowel, use «à l'».",
+            "id": "fr-026-e19"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «le pied» mean?",
+            "audio": "le pied",
+            "opcoes": [
+              "the arm",
+              "the cold",
+              "the syrup",
+              "the foot"
+            ],
+            "gabarito": "the foot",
+            "explicacao": "«le pied» = o pé.",
+            "id": "fr-026-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je me ___ mal depuis ce matin. (feel)",
+            "opcoes": [
+              "sent",
+              "sens",
+              "sentons"
+            ],
+            "gabarito": "sens",
+            "explicacao": "With «je», «se sentir» becomes «je me sens».",
+            "id": "fr-026-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ça a commencé ___ trois jours. (ago)",
+            "opcoes": [
+              "depuis",
+              "dans",
+              "il y a"
+            ],
+            "gabarito": "il y a",
+            "explicacao": "«Il y a» + passé composé: the start, time ago.",
+            "id": "fr-026-e21"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il faut ___ beaucoup d'eau. (drink)",
+            "opcoes": [
+              "boire",
+              "bu",
+              "bois"
+            ],
+            "gabarito": "boire",
+            "explicacao": "After «il faut», use the infinitive.",
+            "id": "fr-026-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je lave mes mains.",
+              "Je me lave les mains.",
+              "Je me lave mes mains."
+            ],
+            "gabarito": "Je me lave les mains.",
+            "explicacao": "Body parts take the definite article: «les mains».",
+            "id": "fr-026-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «malade» mean?",
+            "audio": "malade",
+            "opcoes": [
+              "the syrup",
+              "sick",
+              "appointment",
+              "the tablet"
+            ],
+            "gabarito": "sick",
+            "explicacao": "«malade» = sick.",
+            "id": "fr-026-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Vous avez de la fièvre ?",
+            "respostaEsperada": "Vous avez de la fièvre ?",
+            "explicacao": "Do you have a fever, madam?",
+            "id": "fr-026-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I have a cold»?",
+            "opcoes": [
+              "J'ai enrhumé.",
+              "Je suis un rhume.",
+              "Je suis enrhumé."
+            ],
+            "gabarito": "Je suis enrhumé.",
+            "explicacao": "«Être enrhumé» = to have a cold.",
+            "id": "fr-026-e24"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How does the doctor ask where it hurts?",
+            "opcoes": [
+              "Où avez-vous mal ?",
+              "Qui avez-vous mal ?",
+              "Où êtes-vous mal ?"
+            ],
+            "gabarito": "Où avez-vous mal ?",
+            "explicacao": "«Où» asks about place; pain uses «avoir mal».",
+            "id": "fr-026-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «sans ordonnance» mean?",
+            "opcoes": [
+              "with a prescription",
+              "without a prescription",
+              "without pain"
+            ],
+            "gabarito": "without a prescription",
+            "explicacao": "«Ordonnance» is a medical prescription.",
+            "id": "fr-026-e26"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «le dos» mean?",
+            "audio": "le dos",
+            "opcoes": [
+              "as costas",
+              "the foot",
+              "the syrup",
+              "the cough"
+            ],
+            "gabarito": "as costas",
+            "explicacao": "«le dos» = as costas.",
+            "id": "fr-026-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «He has had a stomachache since this morning.»",
+            "opcoes": [
+              "Il",
+              "a",
+              "mal",
+              "au",
+              "ventre",
+              "depuis",
+              "ce",
+              "matin"
+            ],
+            "gabarito": "Il a mal au ventre depuis ce matin.",
+            "explicacao": "«Avoir mal à» + «depuis».",
+            "id": "fr-026-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «I would like a syrup for a cold.»",
+            "opcoes": [
+              "Je",
+              "voudrais",
+              "un",
+              "sirop",
+              "contre",
+              "le",
+              "rhume"
+            ],
+            "gabarito": "Je voudrais un sirop contre le rhume.",
+            "explicacao": "«Contre» + problem.",
+            "id": "fr-026-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: My legs hurt. She has had a fever since yesterday.",
+            "respostaEsperada": "J'ai mal aux jambes. Elle a de la fièvre depuis hier.",
+            "id": "fr-026-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: You have to drink water. Take (vous) one tablet twice a day.",
+            "respostaEsperada": "Il faut boire de l'eau. Prenez un comprimé deux fois par jour.",
+            "id": "fr-026-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Speak for 1 minute about an illness or pain you once had and how you took care of it."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Role-play a short consultation: state the pain and how long you have had it, and ask for advice."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-026.json",
+  "responsavel": null
+}

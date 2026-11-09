@@ -1,0 +1,141 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 34,
+  "fase": 4,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Food: partitives, quantities and the restaurant: Quantities and shopping",
+  "objetivo": "Lesson 9, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 9,
+    "titulo": "Food: partitives, quantities and the restaurant",
+    "objetivo": "Talk about what you eat and drink with the partitive articles («du», «de la», «de l'», «des»), express quantities, and order in a café or restaurant with «je voudrais» and «prendre».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Quantities and shopping",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "beaucoup de",
+            "translit": "boh-koo DUH",
+            "pt": "",
+            "en": "",
+            "audio": "beaucoup de"
+          },
+          {
+            "ru": "un peu de",
+            "translit": "an puh DUH",
+            "pt": "",
+            "en": "",
+            "audio": "un peu de"
+          },
+          {
+            "ru": "assez de",
+            "translit": "ah-say DUH",
+            "pt": "",
+            "en": "",
+            "audio": "assez de"
+          },
+          {
+            "ru": "trop de",
+            "translit": "troh DUH",
+            "pt": "",
+            "en": "",
+            "audio": "trop de"
+          },
+          {
+            "ru": "un kilo de",
+            "translit": "an kee-loh DUH",
+            "pt": "",
+            "en": "",
+            "audio": "un kilo de"
+          },
+          {
+            "ru": "une bouteille de",
+            "translit": "ewn boo-tehy DUH",
+            "pt": "",
+            "en": "",
+            "audio": "une bouteille de"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Quantities and shopping phrases",
+        "explicacao": "STEP 1: after a quantity, use «de» without an article: «un kilo de pommes», «une bouteille d'eau», «un verre de lait», «un morceau de fromage», «un paquet de sucre». STEP 2: adverbs of quantity also take «de»: «beaucoup de légumes», «peu de viande», «assez de pain», «trop de sucre». STEP 3: to order in a shop: «Je voudrais un kilo de pommes, s'il vous plaît.» («Je voudrais» is a polite form of «je veux».) STEP 4: the shop assistant asks: «Vous désirez ?» or «Qu'est-ce que je vous sers ?» and then «Et avec ça ?» or «C'est tout ?». STEP 5: for the price, «Ça fait cinq euros.» or «C'est cinq euros.» Ask: «C'est combien ?» or «Ça coûte combien ?». STEP 6: do not use the partitive after a quantity: «un kilo de pommes», never «un kilo des pommes».",
+        "comparacao": "in English, «a kilo of apples» and «a bottle of water» have the same structure. In French, after the quantity there is always «de» (or «d'») and the article disappears.",
+        "tabela": [
+          {
+            "quantity": "beaucoup de",
+            "example": "beaucoup de légumes"
+          },
+          {
+            "quantity": "un peu de",
+            "example": "un peu de sel"
+          },
+          {
+            "quantity": "un kilo de",
+            "example": "un kilo de pommes"
+          },
+          {
+            "quantity": "une bouteille de",
+            "example": "une bouteille d'eau"
+          },
+          {
+            "quantity": "un verre de",
+            "example": "un verre de lait"
+          },
+          {
+            "quantity": "un paquet de",
+            "example": "un paquet de pâtes"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "un kilo des pommes",
+            "certo": "un kilo de pommes",
+            "motivo": "After the quantity, «de» with no article."
+          },
+          {
+            "errado": "beaucoup du pain",
+            "certo": "beaucoup de pain",
+            "motivo": "After «beaucoup», use «de»."
+          },
+          {
+            "errado": "Je veux un kilo de pommes. (when ordering)",
+            "certo": "Je voudrais un kilo de pommes.",
+            "motivo": "«Je voudrais» is more polite."
+          },
+          {
+            "errado": "Ça coûtent cinq euros.",
+            "certo": "Ça coûte cinq euros.",
+            "motivo": "«Ça» takes a singular verb."
+          }
+        ],
+        "tag": "Quantity"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Make a shopping order out loud, with eight items and quantities: «Je voudrais un kilo de… une bouteille de… un peu de…»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Complete: «Je mange ___ pain. Je bois ___ eau. Je ne mange pas ___ viande.»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-009.json",
+  "responsavel": null
+}

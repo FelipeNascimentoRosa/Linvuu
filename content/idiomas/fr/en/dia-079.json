@@ -1,0 +1,155 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 79,
+  "fase": 8,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Passé composé or imparfait?: A complete story",
+  "objetivo": "Lesson 20, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 20,
+    "titulo": "Passé composé or imparfait?",
+    "objetivo": "Choose between the passé composé (what happened) and the imparfait (the setting and the habit) and tell a short story with both tenses.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "A complete story",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "la clé",
+            "translit": "lah KLAY",
+            "pt": "",
+            "en": "",
+            "audio": "la clé"
+          },
+          {
+            "ru": "la porte",
+            "translit": "lah POHRT",
+            "pt": "",
+            "en": "",
+            "audio": "la porte"
+          },
+          {
+            "ru": "le bruit",
+            "translit": "luh BRWEE",
+            "pt": "",
+            "en": "",
+            "audio": "le bruit"
+          },
+          {
+            "ru": "la rue",
+            "translit": "lah REW",
+            "pt": "",
+            "en": "",
+            "audio": "la rue"
+          },
+          {
+            "ru": "la peur",
+            "translit": "lah PUHR",
+            "pt": "",
+            "en": "",
+            "audio": "la peur"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Verbs that change meaning",
+        "explicacao": "STEP 1: some verbs change meaning between the two tenses. STEP 2: «savoir»: «Je savais la réponse» (I knew) × «J'ai su la nouvelle» (I found out). STEP 3: «pouvoir»: «Je pouvais venir» (I could) × «J'ai pu venir» (I managed to come). STEP 4: «vouloir»: «Je voulais partir» (I wanted to) × «J'ai voulu partir» (I tried, I decided to leave). STEP 5: «connaître»: «Je connaissais Paul» × «J'ai connu Paul en 2010» (I met him). STEP 6: when in doubt, the imparfait describes the state and the passé composé marks the moment.",
+        "comparacao": "English varies too: «I knew» and «I found out», «I could» and «I managed to». French makes the same distinction with the two past tenses.",
+        "tabela": [
+          {
+            "verb": "savoir",
+            "imparfait": "Je savais la réponse.",
+            "pc": "J'ai su la nouvelle."
+          },
+          {
+            "verb": "pouvoir",
+            "imparfait": "Je pouvais venir.",
+            "pc": "J'ai pu venir."
+          },
+          {
+            "verb": "vouloir",
+            "imparfait": "Je voulais partir.",
+            "pc": "J'ai voulu partir."
+          },
+          {
+            "verb": "connaître",
+            "imparfait": "Je connaissais Paul.",
+            "pc": "J'ai connu Paul en 2010."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "J'ai su la réponse depuis toujours.",
+            "certo": "Je savais la réponse depuis toujours.",
+            "motivo": "Long state: imparfait."
+          },
+          {
+            "errado": "Hier, je pouvais venir enfin.",
+            "certo": "Hier, j'ai pu venir enfin.",
+            "motivo": "Managed to: passé composé."
+          },
+          {
+            "errado": "J'ai connaissais Paul.",
+            "certo": "Je connaissais Paul.",
+            "motivo": "No auxiliary in the imparfait."
+          },
+          {
+            "errado": "Je connaissais Paul en 2010.",
+            "certo": "J'ai connu Paul en 2010.",
+            "motivo": "A specific moment: passé composé."
+          }
+        ],
+        "tag": "Past"
+      },
+      {
+        "tipo": "texto",
+        "min": 8,
+        "titulo": "Un soir à la maison / An evening at home",
+        "ru": "C'était un vendredi soir. Il pleuvait et j'étais seul à la maison. Je regardais un film quand j'ai entendu un grand bruit dans la rue. J'ai ouvert la porte et j'ai vu un petit chat sous la pluie. Il avait froid et il avait peur. Je l'ai pris dans mes bras, je lui ai donné du lait et il s'est endormi. Depuis ce jour, il habite chez moi.",
+        "pt": "It was a Friday evening. It was raining and I was alone at home. I was watching a film when I heard a loud noise in the street. I opened the door and saw a kitten in the rain. It was cold and frightened. I picked it up in my arms, gave it milk and it fell asleep. Since that day, it has lived with me.",
+        "perguntas": [
+          {
+            "pergunta": "Quel temps faisait-il ?",
+            "resposta": "Il pleuvait."
+          },
+          {
+            "pergunta": "Que faisait l'auteur quand il a entendu un bruit ?",
+            "resposta": "Il regardait un film."
+          },
+          {
+            "pergunta": "Qu'est-ce qu'il a vu devant la porte ?",
+            "resposta": "Un petit chat sous la pluie."
+          },
+          {
+            "pergunta": "Où habite le chat maintenant ?",
+            "resposta": "Chez l'auteur."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Tell a little story of your own, with a setting and events."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say three sentences with the imparfait as setting and three with the passé composé as events."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-020.json",
+  "responsavel": null
+}

@@ -1,0 +1,137 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 178,
+  "fase": 18,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "The subjunctive: formation and first uses: Irregulars and basic uses",
+  "objetivo": "Lesson 45, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 45,
+    "titulo": "The subjunctive: formation and first uses",
+    "objetivo": "Form the subjonctif présent of regular verbs and the main irregular verbs, and use it after «il faut que», «vouloir que» and «pour que».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Irregulars and basic uses",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "que j'aille",
+            "translit": "kuh ZHAH-y",
+            "pt": "",
+            "en": "",
+            "audio": "que j'aille"
+          },
+          {
+            "ru": "que je fasse",
+            "translit": "kuh zhuh FAS",
+            "pt": "",
+            "en": "",
+            "audio": "que je fasse"
+          },
+          {
+            "ru": "que je puisse",
+            "translit": "kuh zhuh PWEES",
+            "pt": "",
+            "en": "",
+            "audio": "que je puisse"
+          },
+          {
+            "ru": "que je sache",
+            "translit": "kuh zhuh SAHSH",
+            "pt": "",
+            "en": "",
+            "audio": "que je sache"
+          },
+          {
+            "ru": "que je veuille",
+            "translit": "kuh zhuh VUH-y",
+            "pt": "",
+            "en": "",
+            "audio": "que je veuille"
+          },
+          {
+            "ru": "que je vienne",
+            "translit": "kuh zhuh vee-EHN",
+            "pt": "",
+            "en": "",
+            "audio": "que je vienne"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "When the subjunctive is required",
+        "explicacao": "STEP 1: obligation or necessity: «Il faut que…» «Il est nécessaire que…» «Il vaut mieux que…»: «Il vaut mieux que tu partes.» STEP 2: wishes and requests: «vouloir que», «demander que», «souhaiter que», «préférer que»: «Je préfère que tu viennes.» STEP 3: purpose: «pour que», «afin que»: «Je répète pour que tu comprennes.» STEP 4: different subjects: the subjunctive only appears if the subject of «que» is different from the main subject. STEP 5: same subject → infinitive: «Je veux partir.» (I want, I leave) × «Je veux que tu partes.» (I want, you leave). STEP 6: «il faut» + infinitive = general obligation: «Il faut manger.» × «Il faut que tu manges.» STEP 7: with «aller»: «que j'aille, que tu ailles, qu'il aille, que nous allions, que vous alliez, qu'ils aillent». STEP 8: with «faire»: «que je fasse, que tu fasses, qu'il fasse, que nous fassions, que vous fassiez, qu'ils fassent».",
+        "comparacao": "English says “I want you to leave” with an infinitive, but French needs a full clause: «je veux que tu partes», never «je veux toi partir». With the same subject, French uses the infinitive just as English does: «je veux partir». This avoids the mistake of «je veux que je parte».",
+        "tabela": [
+          {
+            "situation": "obligation",
+            "sentence": "Il faut que tu viennes."
+          },
+          {
+            "situation": "wish (different subjects)",
+            "sentence": "Je veux que tu viennes."
+          },
+          {
+            "situation": "wish (same subject)",
+            "sentence": "Je veux venir."
+          },
+          {
+            "situation": "purpose",
+            "sentence": "Je parle lentement pour que tu comprennes."
+          },
+          {
+            "situation": "preference",
+            "sentence": "Je préfère que tu partes."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je veux que je parte.",
+            "certo": "Je veux partir.",
+            "motivo": "Same subject: infinitive."
+          },
+          {
+            "errado": "Il faut que manger.",
+            "certo": "Il faut manger. / Il faut que tu manges.",
+            "motivo": "No subject: infinitive."
+          },
+          {
+            "errado": "Je veux que tu viennes pas.",
+            "certo": "Je veux que tu ne viennes pas.",
+            "motivo": "Complete negation."
+          },
+          {
+            "errado": "Je parle pour que tu comprends.",
+            "certo": "Je parle pour que tu comprennes.",
+            "motivo": "Subjunctive."
+          }
+        ],
+        "tag": "Subjunctive"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Say aloud eight sentences: «Je veux que… Il faut que… Je préfère que… Pour que… »"
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say aloud the subjonctif of «aller, faire, pouvoir, savoir, venir» with «que je»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-045.json",
+  "responsavel": null
+}

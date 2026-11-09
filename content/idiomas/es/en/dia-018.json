@@ -1,0 +1,178 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 18,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Articles, gender and plural, hay: The plural and agreement",
+  "objetivo": "Lesson 5, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 5,
+    "titulo": "Articles, gender and plural, hay",
+    "objetivo": "Use «el, la, los, las, un, una, unos, unas», recognize noun gender (including nouns whose gender differs from English logic), form the plural, make the adjective agree, and say what's in a place with «hay».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "The plural and agreement",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "los libros",
+            "translit": "[pronuncia] los LEE-bros",
+            "pt": "the books",
+            "en": "",
+            "audio": "los libros"
+          },
+          {
+            "ru": "las casas",
+            "translit": "[pronuncia] las KAH-sahs",
+            "pt": "the houses",
+            "en": "",
+            "audio": "las casas"
+          },
+          {
+            "ru": "los lápices",
+            "translit": "[pronuncia] los LAH-pee-thess",
+            "pt": "the pencils",
+            "en": "",
+            "audio": "los lápices"
+          },
+          {
+            "ru": "los países",
+            "translit": "[pronuncia] los pah-EE-sess",
+            "pt": "the countries",
+            "en": "",
+            "audio": "los países"
+          },
+          {
+            "ru": "las canciones",
+            "translit": "[pronuncia] las kan-thee-OH-ness",
+            "pt": "the songs",
+            "en": "",
+            "audio": "las canciones"
+          },
+          {
+            "ru": "los jóvenes",
+            "translit": "[pronuncia] los HO-beh-ness",
+            "pt": "the young people",
+            "en": "",
+            "audio": "los jóvenes"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Forming the plural and agreeing the adjective",
+        "explicacao": "STEP 1: if the word ends in a vowel, add «-s»: «casa → casas», «libro → libros», «madre → madres», «café → cafés». STEP 2: if it ends in a consonant, add «-es»: «ciudad → ciudades», «papel → papeles», «flor → flores», «reloj → relojes». STEP 3: if it ends in «-z», change the «z» to «c» and add «-es»: «lápiz → lápices», «vez → veces», «luz → luces». STEP 4: the accent mark follows the stressed syllable, which cannot move: «canción → canciones» (the accent disappears, because the stress is now naturally on that syllable), «joven → jóvenes» (the accent appears, to keep the stress on the same syllable now that the word is longer), «examen → exámenes». STEP 5: one-syllable words, or words ending in a stressed vowel followed by «s», take «-es»: «el país → los países», «el mes → los meses», «el autobús → los autobuses». If the last syllable isn't stressed, the word doesn't change: «el lunes → los lunes», «la crisis → las crisis». STEP 6: the masculine plural can also cover a mixed group: «los hermanos» means brothers and sisters together, «los padres» means mom and dad, «los niños» means children in general. STEP 7: the adjective agrees in gender and number with the noun and usually comes after it: «una casa blanca», «unos libros nuevos», «las ciudades grandes». Adjectives ending in «-e» or a consonant have one single form for both genders: «un coche grande», «una casa grande», «unas casas grandes». STEP 8: two mandatory contractions: «a + el = al» and «de + el = del»: «Hablo del libro», «Escucho al profesor». There's no contraction with «él» (the pronoun): «Hablo de él». STEP 9: false friends among adjectives: «largo» means long, not «large»; «ancho» means wide. «Una calle larga y ancha» is a long, wide street.",
+        "comparacao": "Spanish plurals work much like English ones, but watch the endings «-l», «-n» and words ending in a nasal vowel: «papel → papeles», «joven → jóvenes», «canción → canciones» — none of these add a plain «-s» the way English would. And «-z» becomes «-ces»: «luz → luces», with a «c», not a «z». The adjective agrees and comes after the noun, unlike English, where it comes before: «una casa blanca» = «a white house», word for word «a house white».",
+        "exemplos": [
+          {
+            "ru": "Los libros nuevos están aquí.",
+            "pt": "The new books are here."
+          },
+          {
+            "ru": "Las canciones españolas son bonitas.",
+            "pt": "The Spanish songs are beautiful."
+          },
+          {
+            "ru": "Mis amigos son jóvenes.",
+            "pt": "My friends are young."
+          },
+          {
+            "ru": "Hablo del problema.",
+            "pt": "I'm talking about the problem."
+          },
+          {
+            "ru": "Escucho al profesor.",
+            "pt": "I'm listening to the teacher."
+          },
+          {
+            "ru": "Es una calle larga y ancha.",
+            "pt": "It's a long, wide street."
+          }
+        ],
+        "tabela": [
+          {
+            "termina_em": "[misto] vowel",
+            "regra": "[misto] + s",
+            "exemplo": "[misto] casa → casas"
+          },
+          {
+            "termina_em": "[misto] consonant",
+            "regra": "[misto] + es",
+            "exemplo": "[misto] ciudad → ciudades"
+          },
+          {
+            "termina_em": "[misto] -z",
+            "regra": "[misto] z becomes c + es",
+            "exemplo": "[misto] lápiz → lápices"
+          },
+          {
+            "termina_em": "[misto] -ción, -sión",
+            "regra": "[misto] loses the accent mark + es",
+            "exemplo": "[misto] canción → canciones"
+          },
+          {
+            "termina_em": "[misto] -n with the stress on the syllable before it",
+            "regra": "[misto] gains an accent mark + es",
+            "exemplo": "[misto] joven → jóvenes"
+          },
+          {
+            "termina_em": "[misto] -s with no stress at the end",
+            "regra": "[misto] doesn't change",
+            "exemplo": "[misto] el lunes → los lunes"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] los lápizes",
+            "certo": "[misto] los lápices",
+            "motivo": "The «z» becomes «c» before «-es»."
+          },
+          {
+            "errado": "[misto] las canciónes",
+            "certo": "[misto] las canciones",
+            "motivo": "The accent mark disappears: the stressed syllable stays the same."
+          },
+          {
+            "errado": "[misto] los jovenes",
+            "certo": "[misto] los jóvenes",
+            "motivo": "An extra syllable appears, and the stressed syllable now needs an accent mark."
+          },
+          {
+            "errado": "[misto] Hablo de el problema.",
+            "certo": "[misto] Hablo del problema.",
+            "motivo": "«De + el» always contracts to «del»."
+          },
+          {
+            "errado": "[misto] una calle largo",
+            "certo": "[misto] una calle larga",
+            "motivo": "The adjective agrees with the feminine noun."
+          }
+        ],
+        "tag": "Plural"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Write and say the plural of ten words: casa, libro, ciudad, canción, lápiz, país, joven, papel, mano, flor. Then build four sentences with an adjective: «Las casas son…» «Los libros son…»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Give the definite and the indefinite article for six words: libro, casa, mano, día, ciudad, leche."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-005.json",
+  "responsavel": null
+}

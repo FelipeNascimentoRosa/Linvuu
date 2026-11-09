@@ -1,0 +1,498 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 116,
+  "fase": 12,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "The imperative with pronouns and instructions: Review and practice for lesson 29",
+  "objetivo": "Lesson 29, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 29,
+    "titulo": "The imperative with pronouns and instructions",
+    "objetivo": "Use the affirmative and negative imperative with pronouns («donne-le-moi», «ne le fais pas»), and give instructions, recipes and rules.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 29",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Donne-le-moi",
+            "opcoes": [
+              "Donne-le-moi",
+              "Me le donne",
+              "Donne-moi-le"
+            ],
+            "gabarito": "Donne-le-moi",
+            "explicacao": "Listen to the order.",
+            "id": "fr-029-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ne le regarde pas",
+            "opcoes": [
+              "Ne le regarde pas",
+              "Regarde-le",
+              "Ne regarde-le pas"
+            ],
+            "gabarito": "Ne le regarde pas",
+            "explicacao": "Listen to «ne le».",
+            "id": "fr-029-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Il est interdit de fumer",
+            "opcoes": [
+              "Il est interdit de fumer",
+              "Il est conseillé de fumer",
+              "Il est interdit fumer"
+            ],
+            "gabarito": "Il est interdit de fumer",
+            "explicacao": "Listen to «interdit».",
+            "id": "fr-029-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Regarde-le",
+            "respostaEsperada": "Regarde-le",
+            "explicacao": "Write: Regarde-le.",
+            "id": "fr-029-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ne me dis pas ça",
+            "respostaEsperada": "Ne me dis pas ça",
+            "explicacao": "Write: Ne me dis pas ça.",
+            "id": "fr-029-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «No, don't put in too much. Then heat the pan.»",
+            "opcoes": [
+              "chauffer",
+              "n'en",
+              "la",
+              "Non,",
+              "mets",
+              "fais",
+              "pas",
+              "poêle.",
+              "Puis",
+              "trop."
+            ],
+            "gabarito": "Non, n'en mets pas trop. Puis fais chauffer la poêle.",
+            "explicacao": "Write: Non, n'en mets pas trop. Puis fais chauffer la poêle.",
+            "id": "fr-029-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Faites comme chez vous",
+            "respostaEsperada": "Faites comme chez vous",
+            "explicacao": "Write: Faites comme chez vous.",
+            "id": "fr-029-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "D'abord, casse quatre œufs dans un bol.",
+            "respostaEsperada": "D'abord, casse quatre œufs dans un bol.",
+            "explicacao": "First, break four eggs into a bowl.",
+            "id": "fr-029-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Affirmative imperative with a pronoun:",
+            "opcoes": [
+              "Regarde-le !",
+              "Le regarde !",
+              "Regarde le !"
+            ],
+            "gabarito": "Regarde-le !",
+            "explicacao": "Pronoun after, hyphen.",
+            "id": "fr-029-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Negative imperative with a pronoun:",
+            "opcoes": [
+              "Ne le regarde pas !",
+              "Ne regarde-le pas !",
+              "Ne regarde pas le !"
+            ],
+            "gabarito": "Ne le regarde pas !",
+            "explicacao": "Pronoun before.",
+            "id": "fr-029-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Me» in the affirmative imperative:",
+            "opcoes": [
+              "moi",
+              "me",
+              "je"
+            ],
+            "gabarito": "moi",
+            "explicacao": "«Écoute-moi».",
+            "id": "fr-029-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Non, n'en mets pas trop. Puis fais chauffer la poêle.",
+            "respostaEsperada": "Non, n'en mets pas trop. Puis fais chauffer la poêle.",
+            "explicacao": "No, don't put in too much. Then heat the pan.",
+            "id": "fr-029-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Vas-y !",
+              "Va-y !",
+              "Vas y !"
+            ],
+            "gabarito": "Vas-y !",
+            "explicacao": "The «s» comes back.",
+            "id": "fr-029-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Écoute-___ ! (me)",
+            "opcoes": [
+              "moi",
+              "me",
+              "je"
+            ],
+            "gabarito": "moi",
+            "explicacao": "«Me» → «moi».",
+            "id": "fr-029-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il est interdit ___ fumer.",
+            "opcoes": [
+              "de",
+              "à",
+              "d'"
+            ],
+            "gabarito": "de",
+            "explicacao": "«Interdit de».",
+            "id": "fr-029-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Je les bats avec une fourchette ?",
+            "respostaEsperada": "Je les bats avec une fourchette ?",
+            "explicacao": "Do I beat them with a fork?",
+            "id": "fr-029-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il est ___ de fumer. (forbidden)",
+            "opcoes": [
+              "interdit",
+              "interdite",
+              "interdire"
+            ],
+            "gabarito": "interdit",
+            "explicacao": "Masculine participle.",
+            "id": "fr-029-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «And then?»",
+            "opcoes": [
+              "ensuite",
+              "Et",
+              "?"
+            ],
+            "gabarito": "Et ensuite ?",
+            "explicacao": "Write: Et ensuite ?",
+            "id": "fr-029-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ne ___ touchez pas ! (it)",
+            "opcoes": [
+              "le",
+              "lui",
+              "moi"
+            ],
+            "gabarito": "le",
+            "explicacao": "Pronoun before the verb.",
+            "id": "fr-029-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Dis-moi la vérité.»",
+            "opcoes": [
+              "Dis-moi",
+              "la",
+              "vérité"
+            ],
+            "gabarito": "Dis-moi la vérité.",
+            "explicacao": "Imperative + pronoun.",
+            "id": "fr-029-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Ne le fais pas !»",
+            "opcoes": [
+              "Ne",
+              "le",
+              "fais",
+              "pas"
+            ],
+            "gabarito": "Ne le fais pas !",
+            "explicacao": "Negative.",
+            "id": "fr-029-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: Look at him! Don't look at him! Give it to me!",
+            "respostaEsperada": "Regarde-le ! Ne le regarde pas ! Donne-le-moi !",
+            "id": "fr-029-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Et ensuite ?",
+            "respostaEsperada": "Et ensuite ?",
+            "explicacao": "And then?",
+            "id": "fr-029-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Dis-___ la vérité. (to him)",
+            "opcoes": [
+              "le",
+              "leur",
+              "lui"
+            ],
+            "gabarito": "lui",
+            "explicacao": "Singular indirect object: «lui», after the verb.",
+            "id": "fr-029-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Oui, bats-les bien. Ensuite, ajoute un peu de sel.",
+            "respostaEsperada": "Oui, bats-les bien. Ensuite, ajoute un peu de sel.",
+            "explicacao": "Yes, beat them well. Then add a little salt.",
+            "id": "fr-029-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Lève-___ ! (te)",
+            "opcoes": [
+              "toi",
+              "te",
+              "tu"
+            ],
+            "gabarito": "toi",
+            "explicacao": "In the affirmative imperative, «te» becomes «toi».",
+            "id": "fr-029-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ne ___ dis pas ça ! (to me)",
+            "opcoes": [
+              "moi",
+              "me",
+              "te"
+            ],
+            "gabarito": "me",
+            "explicacao": "In the negative imperative, the pronoun goes back before the verb: «me».",
+            "id": "fr-029-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Prends-___ ! (some of it)",
+            "opcoes": [
+              "y",
+              "le",
+              "en"
+            ],
+            "gabarito": "en",
+            "explicacao": "«En» replaces the partitive and goes after the verb.",
+            "id": "fr-029-e21"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Pour in the eggs and let them cook for three minutes. It's ready!»",
+            "opcoes": [
+              "C'est",
+              "trois",
+              "prêt",
+              "!",
+              "Verse",
+              "et",
+              "minutes.",
+              "cuire",
+              "œufs",
+              "les",
+              "laisse"
+            ],
+            "gabarito": "Verse les œufs et laisse cuire trois minutes. C'est prêt !",
+            "explicacao": "Write: Verse les œufs et laisse cuire trois minutes. C'est prêt !",
+            "id": "fr-029-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Faites ___ chez vous ! (like)",
+            "opcoes": [
+              "comme",
+              "comment",
+              "que"
+            ],
+            "gabarito": "comme",
+            "explicacao": "«Faites comme chez vous» is the fixed expression.",
+            "id": "fr-029-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «Give it to him»?",
+            "opcoes": [
+              "Donne-lui-le !",
+              "Donne-le-lui !",
+              "Le lui donne !"
+            ],
+            "gabarito": "Donne-le-lui !",
+            "explicacao": "With two pronouns, the direct one comes first.",
+            "id": "fr-029-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which negative imperative is correct?",
+            "opcoes": [
+              "Ne dis-le-lui pas !",
+              "Ne lui le dis pas !",
+              "Ne le lui dis pas !"
+            ],
+            "gabarito": "Ne le lui dis pas !",
+            "explicacao": "In the negative, the pronouns go before the verb.",
+            "id": "fr-029-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "J'en mets beaucoup ?",
+            "respostaEsperada": "J'en mets beaucoup ?",
+            "explicacao": "Do I put in a lot?",
+            "id": "fr-029-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you invite someone to sit down (vous)?",
+            "opcoes": [
+              "Asseyez-vous !",
+              "Asseyez vous-!",
+              "Vous asseyez !"
+            ],
+            "gabarito": "Asseyez-vous !",
+            "explicacao": "Pronoun after the verb, with a hyphen.",
+            "id": "fr-029-e25"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Verse les œufs et laisse cuire trois minutes. C'est prêt !",
+            "respostaEsperada": "Verse les œufs et laisse cuire trois minutes. C'est prêt !",
+            "explicacao": "Pour in the eggs and let them cook for three minutes. It's ready!",
+            "id": "fr-029-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «Défense de stationner» mean?",
+            "opcoes": [
+              "Estacionamento livre",
+              "No parking",
+              "Park here"
+            ],
+            "gabarito": "No parking",
+            "explicacao": "«Défense de» = forbidden.",
+            "id": "fr-029-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Mix the eggs with the sugar.»",
+            "opcoes": [
+              "Mélangez",
+              "les",
+              "œufs",
+              "avec",
+              "le",
+              "sucre"
+            ],
+            "gabarito": "Mélangez les œufs avec le sucre.",
+            "explicacao": "Imperative of «vous».",
+            "id": "fr-029-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Don't rush (vous).»",
+            "opcoes": [
+              "Ne",
+              "vous",
+              "dépêchez",
+              "pas"
+            ],
+            "gabarito": "Ne vous dépêchez pas.",
+            "explicacao": "In the negative, the pronoun stays before the verb.",
+            "id": "fr-029-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French (vous): First, cut the onions. Then add the salt.",
+            "respostaEsperada": "D'abord, coupez les oignons. Ensuite, ajoutez le sel.",
+            "id": "fr-029-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French (tu): Wait for me! Give me the book.",
+            "respostaEsperada": "Attends-moi ! Donne-moi le livre.",
+            "id": "fr-029-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Speak for 1 minute giving advice to a friend, using the imperative and pronouns."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Give instructions out loud: how to make a coffee and how to get to a place."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-029.json",
+  "responsavel": null
+}

@@ -1,0 +1,161 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 207,
+  "fase": 21,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Environment and society: Reading about the climate",
+  "objetivo": "Lesson 52, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 52,
+    "titulo": "Environment and society",
+    "objetivo": "Talk about ecology, climate and social problems, offer solutions and use the imperative and the subjunctive to propose actions.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Reading about the climate",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "la température",
+            "translit": "lah tahn-pay-rah-TEWR",
+            "pt": "",
+            "en": "",
+            "audio": "la température"
+          },
+          {
+            "ru": "une catastrophe",
+            "translit": "ewn kah-tah-STROF",
+            "pt": "",
+            "en": "",
+            "audio": "une catastrophe"
+          },
+          {
+            "ru": "les énergies renouvelables",
+            "translit": "lay-zay-nehr-zhee ruh-noo-vuh-lah-BLUH",
+            "pt": "",
+            "en": "",
+            "audio": "les énergies renouvelables"
+          },
+          {
+            "ru": "le covoiturage",
+            "translit": "luh koh-vwah-tew-RAZH",
+            "pt": "",
+            "en": "",
+            "audio": "le covoiturage"
+          },
+          {
+            "ru": "l'avenir",
+            "translit": "lav-NEER",
+            "pt": "",
+            "en": "",
+            "audio": "l'avenir"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "The future of the planet",
+        "explicacao": "STEP 1: hypotheses (lesson 44): «Si nous avions agi plus tôt, la situation serait meilleure.» STEP 2: predictions: «La température augmentera de deux degrés.» STEP 3: expressing worry: «Je m'inquiète pour l'avenir.» STEP 4: individual action: «Chacun doit faire un effort.» STEP 5: pronouns «chacun» and «tout le monde»: «Tout le monde peut agir.»",
+        "comparacao": "in French, «chacun» (each one) and «tout le monde» (everyone) always take a singular verb: «Chacun doit», «Tout le monde peut». English behaves the same way (“everyone is”).",
+        "tabela": [
+          {
+            "expression": "chacun doit",
+            "usage": "responsabilidade",
+            "example": "Chacun doit faire un effort."
+          },
+          {
+            "expression": "tout le monde peut",
+            "usage": "inclusion",
+            "example": "Tout le monde peut agir."
+          },
+          {
+            "expression": "je m'inquiète pour",
+            "usage": "worry",
+            "example": "Je m'inquiète pour l'avenir."
+          },
+          {
+            "expression": "augmenter",
+            "usage": "to rise",
+            "example": "La température augmente."
+          },
+          {
+            "expression": "diminuer",
+            "usage": "descer",
+            "example": "Les déchets diminuent."
+          },
+          {
+            "expression": "si + plus-que-parfait",
+            "usage": "regret",
+            "example": "Si nous avions agi…"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Tout le monde peuvent agir.",
+            "certo": "Tout le monde peut agir.",
+            "motivo": "Singular."
+          },
+          {
+            "errado": "Chacun doivent faire un effort.",
+            "certo": "Chacun doit faire un effort.",
+            "motivo": "Singular."
+          },
+          {
+            "errado": "Je m'inquiète l'avenir.",
+            "certo": "Je m'inquiète pour l'avenir.",
+            "motivo": "Pronominal verb takes «pour» or «de»."
+          },
+          {
+            "errado": "La température va augmenter à deux degrés.",
+            "certo": "La température va augmenter de deux degrés.",
+            "motivo": "Aumento: «de»."
+          }
+        ],
+        "tag": "Environment"
+      },
+      {
+        "tipo": "texto",
+        "min": 8,
+        "titulo": "Agir pour le climat",
+        "ru": "Chaque année, la planète se réchauffe un peu plus. À cause de la pollution, les glaciers fondent et les océans montent. Pourtant, de plus en plus de gens agissent : ils trient leurs déchets, utilisent le vélo et pratiquent le covoiturage. Il faudrait aussi que les gouvernements investissent dans les énergies renouvelables. Si chacun fait un petit effort, l'avenir sera meilleur.",
+        "pt": "Every year, the planet gets a little warmer. Because of pollution, glaciers melt and the oceans rise. However, more and more people are taking action: they sort their waste, use bicycles and carpool. Governments would also need to invest in renewable energy. If everyone makes a small effort, the future will be better.",
+        "perguntas": [
+          {
+            "pergunta": "What is happening to the glaciers?",
+            "resposta": "They melt."
+          },
+          {
+            "pergunta": "What are people doing?",
+            "resposta": "They sort their waste, use bicycles and carpool."
+          },
+          {
+            "pergunta": "What should governments do?",
+            "resposta": "Invest in renewable energy."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Name aloud two actions you take and two you would like to take for the planet."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Give one piece of ecological advice with «on pourrait» and another with «il faut que»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-052.json",
+  "responsavel": null
+}

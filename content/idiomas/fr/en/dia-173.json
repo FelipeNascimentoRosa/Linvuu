@@ -1,0 +1,161 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 173,
+  "fase": 18,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Past conditional: regrets and hypotheses: Forming the past conditional",
+  "objetivo": "Lesson 44, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 44,
+    "titulo": "Past conditional: regrets and hypotheses",
+    "objetivo": "Form the conditionnel passé and use «si» + plus-que-parfait to talk about what could have been, express regret and make polite reproaches.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Forming the past conditional",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "j'aurais voulu",
+            "translit": "zhoh-reh voo-LEW",
+            "pt": "",
+            "en": "",
+            "audio": "j'aurais voulu"
+          },
+          {
+            "ru": "j'aurais pu",
+            "translit": "zhoh-reh PEW",
+            "pt": "",
+            "en": "",
+            "audio": "j'aurais pu"
+          },
+          {
+            "ru": "j'aurais dû",
+            "translit": "zhoh-reh DEW",
+            "pt": "",
+            "en": "",
+            "audio": "j'aurais dû"
+          },
+          {
+            "ru": "je serais allé",
+            "translit": "zhuh suh-reh-zah-LAY",
+            "pt": "",
+            "en": "",
+            "audio": "je serais allé"
+          },
+          {
+            "ru": "il aurait fallu",
+            "translit": "eel oh-reh fah-LEW",
+            "pt": "",
+            "en": "",
+            "audio": "il aurait fallu"
+          },
+          {
+            "ru": "regretter",
+            "translit": "ruh-gruh-TAY",
+            "pt": "",
+            "en": "",
+            "audio": "regretter"
+          },
+          {
+            "ru": "dommage",
+            "translit": "doh-MAZH",
+            "pt": "",
+            "en": "",
+            "audio": "dommage"
+          },
+          {
+            "ru": "si seulement",
+            "translit": "see suhl-MAHN",
+            "pt": "",
+            "en": "",
+            "audio": "si seulement"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "J'aurais dû, il aurait pu",
+        "explicacao": "STEP 1: the conditionnel passé is formed with the CONDITIONAL of «avoir» or «être» + past participle: «j'aurais mangé», «tu serais parti», «nous aurions fini». STEP 2: the auxiliary follows the same rule as the passé composé: «aller, venir, arriver, partir, rester, naître, mourir» and pronominal verbs take «être». STEP 3: the participle agrees as in the passé composé: «Elle serait venue.» «Ils seraient partis.» STEP 4: uses: regret («J'aurais dû étudier.»), reproach («Tu aurais pu m'appeler.»), unfulfilled wish («J'aurais voulu voyager.»), unconfirmed information («Il y aurait eu un accident.»). STEP 5: «j'aurais dû» + infinitive = I should have; «j'aurais pu» = I could have; «j'aurais voulu» = I would have liked to. STEP 6: polite question about the past: «Auriez-vous pu m'aider ?» STEP 7: «si seulement» + plus-que-parfait expresses a lament: «Si seulement j'avais su !» STEP 8: negation: «Je n'aurais pas dû.» «Il n'aurait pas pu venir.»",
+        "comparacao": "in English we say «I should have studied» and «I could have gone». French uses the same mechanism: «j'aurais dû étudier», «j'aurais pu aller». The following verb stays in the infinitive, with no preposition.",
+        "tabela": [
+          {
+            "person": "je",
+            "avoir": "j'aurais mangé",
+            "etre": "je serais parti(e)"
+          },
+          {
+            "person": "tu",
+            "avoir": "tu aurais mangé",
+            "etre": "tu serais parti(e)"
+          },
+          {
+            "person": "il / elle",
+            "avoir": "il aurait mangé",
+            "etre": "il serait parti / elle serait partie"
+          },
+          {
+            "person": "nous",
+            "avoir": "nous aurions mangé",
+            "etre": "nous serions partis"
+          },
+          {
+            "person": "vous",
+            "avoir": "vous auriez mangé",
+            "etre": "vous seriez parti(s)"
+          },
+          {
+            "person": "ils / elles",
+            "avoir": "ils auraient mangé",
+            "etre": "ils seraient partis / elles seraient parties"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "J'aurais dû de étudier.",
+            "certo": "J'aurais dû étudier.",
+            "motivo": "No preposition."
+          },
+          {
+            "errado": "Je serais mangé.",
+            "certo": "J'aurais mangé.",
+            "motivo": "«Manger» takes «avoir»."
+          },
+          {
+            "errado": "Elle serait venu.",
+            "certo": "Elle serait venue.",
+            "motivo": "Agreement."
+          },
+          {
+            "errado": "J'avais dû étudier.",
+            "certo": "J'aurais dû étudier.",
+            "motivo": "Reproach: past conditional."
+          }
+        ],
+        "tag": "Conditional"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say five regrets out loud: «J'aurais dû… J'aurais pu… J'aurais voulu…»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Join sentences out loud with «ce qui», «ce que» and «ce dont»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-044.json",
+  "responsavel": null
+}

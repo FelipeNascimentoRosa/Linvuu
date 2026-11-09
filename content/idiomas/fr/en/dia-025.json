@@ -1,0 +1,176 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 25,
+  "fase": 3,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Numbers to 100, time, days and months: Numbers from 21 to 100",
+  "objetivo": "Lesson 7, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 7,
+    "titulo": "Numbers to 100, time, days and months",
+    "objetivo": "Count to 100, tell the time, and talk about days, months, dates and seasons.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Numbers from 21 to 100",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "vingt et un",
+            "translit": "van-tay-AN",
+            "pt": "",
+            "en": "",
+            "audio": "vingt et un"
+          },
+          {
+            "ru": "trente",
+            "translit": "TRAHNT",
+            "pt": "",
+            "en": "",
+            "audio": "trente"
+          },
+          {
+            "ru": "quarante",
+            "translit": "kah-RAHNT",
+            "pt": "",
+            "en": "",
+            "audio": "quarante"
+          },
+          {
+            "ru": "cinquante",
+            "translit": "san-KAHNT",
+            "pt": "",
+            "en": "",
+            "audio": "cinquante"
+          },
+          {
+            "ru": "soixante",
+            "translit": "swah-SAHNT",
+            "pt": "",
+            "en": "",
+            "audio": "soixante"
+          },
+          {
+            "ru": "soixante-dix",
+            "translit": "swah-sahnt-DEES",
+            "pt": "",
+            "en": "",
+            "audio": "soixante-dix"
+          },
+          {
+            "ru": "quatre-vingts",
+            "translit": "kahtr-VAN",
+            "pt": "",
+            "en": "",
+            "audio": "quatre-vingts"
+          },
+          {
+            "ru": "cent",
+            "translit": "SAHN",
+            "pt": "",
+            "en": "",
+            "audio": "cent"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "De 21 a 100: the French logic",
+        "explicacao": "STEP 1: the tens up to 60 are regular: vingt (20), trente (30), quarante (40), cinquante (50), soixante (60). Add the unit with a hyphen: «vingt-deux», «trente-cinq», «quarante-huit». STEP 2: the «un» takes «et», without a hyphen, in 21, 31, 41, 51 and 61: «vingt et un», «trente et un», «soixante et un». In the others, only a hyphen: «vingt-deux». STEP 3: from 70 to 79 you add to the ten of 60: «soixante-dix» (60 + 10), «soixante et onze» (60 + 11), «soixante-douze», … «soixante-dix-neuf». STEP 4: 80 is «quatre-vingts» (4 × 20): with an «s» when it stands alone; without an «s» when it is followed by another number: «quatre-vingt-un» (81, no «et»). From 90 to 99 you add to «quatre-vingt»: «quatre-vingt-dix» (90), «quatre-vingt-onze» (91), … «quatre-vingt-dix-neuf» (99). STEP 5: 100 is «cent». STEP 6: in Belgium and parts of Switzerland they say «septante» (70) and «nonante» (90); in France they do not. STEP 7: pronunciation: «vingt» sounds like «van» in the isolated number; in «vingt et un», the «t» is heard in the liaison (van-tay-AN).",
+        "comparacao": "English has its own words for the tens («seventy», «eighty», «ninety»). French builds them with arithmetic: 70 is «sixty-ten» and 90 is «four-twenties-ten». Practice until the sums become a habit.",
+        "tabela": [
+          {
+            "numero": "21",
+            "spelling": "vingt et un",
+            "bill": "20 + 1"
+          },
+          {
+            "numero": "35",
+            "spelling": "trente-cinq",
+            "bill": "30 + 5"
+          },
+          {
+            "numero": "60",
+            "spelling": "soixante",
+            "bill": "60"
+          },
+          {
+            "numero": "71",
+            "spelling": "soixante et onze",
+            "bill": "60 + 11"
+          },
+          {
+            "numero": "80",
+            "spelling": "quatre-vingts",
+            "bill": "4 × 20"
+          },
+          {
+            "numero": "81",
+            "spelling": "quatre-vingt-un",
+            "bill": "4 × 20 + 1"
+          },
+          {
+            "numero": "90",
+            "spelling": "quatre-vingt-dix",
+            "bill": "4 × 20 + 10"
+          },
+          {
+            "numero": "99",
+            "spelling": "quatre-vingt-dix-neuf",
+            "bill": "4 × 20 + 19"
+          },
+          {
+            "numero": "100",
+            "spelling": "cent",
+            "bill": "100"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "vingt-un",
+            "certo": "vingt et un",
+            "motivo": "21, 31, 41, 51, 61 and 71 take «et»."
+          },
+          {
+            "errado": "quatre-vingt-et-un",
+            "certo": "quatre-vingt-un",
+            "motivo": "81 and 91 do not take «et»."
+          },
+          {
+            "errado": "quatre-vingt (80)",
+            "certo": "quatre-vingts",
+            "motivo": "80 on its own takes «s»."
+          },
+          {
+            "errado": "septante-cinq (in France)",
+            "certo": "soixante-quinze",
+            "motivo": "«Septante» is Belgian and Swiss."
+          }
+        ],
+        "tag": "Numbers"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Count by twenties up to 100, and say aloud: 21, 35, 48, 62, 71, 80, 91, 99."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Count from 0 to 20 aloud and say your age and the age of two people."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-007.json",
+  "responsavel": null
+}

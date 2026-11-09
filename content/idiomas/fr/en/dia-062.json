@@ -1,0 +1,141 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 62,
+  "fase": 7,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "The past with «être» and reflexive verbs: Reflexive verbs in the past",
+  "objetivo": "Lesson 16, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 16,
+    "titulo": "The past with «être» and reflexive verbs",
+    "objetivo": "Use the passé composé with «être» (verbs of movement and reflexive verbs), make the participle agree, and tell about a trip.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Reflexive verbs in the past",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "se lever",
+            "translit": "suh luh-VAY",
+            "pt": "",
+            "en": "",
+            "audio": "se lever"
+          },
+          {
+            "ru": "se coucher",
+            "translit": "suh koo-SHAY",
+            "pt": "",
+            "en": "",
+            "audio": "se coucher"
+          },
+          {
+            "ru": "se réveiller",
+            "translit": "suh ray-veh-YAY",
+            "pt": "",
+            "en": "",
+            "audio": "se réveiller"
+          },
+          {
+            "ru": "se promener",
+            "translit": "suh proh-muh-NAY",
+            "pt": "",
+            "en": "",
+            "audio": "se promener"
+          },
+          {
+            "ru": "s'habiller",
+            "translit": "sah-bee-YAY",
+            "pt": "",
+            "en": "",
+            "audio": "s'habiller"
+          },
+          {
+            "ru": "se dépêcher",
+            "translit": "suh day-peh-SHAY",
+            "pt": "",
+            "en": "",
+            "audio": "se dépêcher"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Je me suis levé: reflexive verbs in the past",
+        "explicacao": "STEP 1: all reflexive verbs use «être»: «Je me suis levé.» «Tu t'es couché.» STEP 2: the pronoun («me, te, se, nous, vous, se») goes before the auxiliary: «Il s'est réveillé.» STEP 3: the participle agrees with the subject (when the pronoun is the direct object): «Elle s'est levée.» «Nous nous sommes promenés.» «Elles se sont dépêchées.» STEP 4: the negation goes around pronoun + auxiliary: «Je ne me suis pas levé.» «Elle ne s'est pas couchée.» STEP 5: question: «Est-ce que tu t'es levé tôt ?» STEP 6: «se laver les mains» and other body parts: the participle does NOT agree (the object is the body part): «Elle s'est lavé les mains.» STEP 7: when in doubt, in practice, use the normal agreement with the subject. STEP 8: complete order: «Ce matin, je me suis réveillé à sept heures, je me suis levé et je me suis habillé.»",
+        "comparacao": "in English we say «I got up», with no reflexive pronoun and with 'have' behind it. French says «je me suis levé», with the auxiliary «être» between the pronoun and the participle, and the participle agrees. That is one more reason why «être» is the key to reflexive verbs.",
+        "tabela": [
+          {
+            "person": "je",
+            "sentence": "Je me suis levé(e)."
+          },
+          {
+            "person": "tu",
+            "sentence": "Tu t'es couché(e)."
+          },
+          {
+            "person": "il / elle",
+            "sentence": "Il s'est réveillé. / Elle s'est réveillée."
+          },
+          {
+            "person": "nous",
+            "sentence": "Nous nous sommes promenés."
+          },
+          {
+            "person": "vous",
+            "sentence": "Vous vous êtes dépêchés."
+          },
+          {
+            "person": "ils / elles",
+            "sentence": "Ils se sont habillés. / Elles se sont habillées."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je me ai levé.",
+            "certo": "Je me suis levé.",
+            "motivo": "Reflexive verbs use «être»."
+          },
+          {
+            "errado": "Elle s'est levé.",
+            "certo": "Elle s'est levée.",
+            "motivo": "Feminine agreement."
+          },
+          {
+            "errado": "Je me suis pas levé.",
+            "certo": "Je ne me suis pas levé.",
+            "motivo": "Complete negation."
+          },
+          {
+            "errado": "Je suis me levé.",
+            "certo": "Je me suis levé.",
+            "motivo": "Pronoun before the auxiliary."
+          }
+        ],
+        "tag": "Past"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Tell about your morning yesterday in eight sentences: «Je me suis réveillé… Je me suis levé… Je me suis habillé…»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Make the agreements: «Elle est (allé). Ils sont (arrivé). Elles sont (parti).»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-016.json",
+  "responsavel": null
+}

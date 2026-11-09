@@ -1,0 +1,515 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 100,
+  "fase": 10,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Relative pronouns: qui, que, où, dont: Review and practice for lesson 25",
+  "objetivo": "Lesson 25, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 25,
+    "titulo": "Relative pronouns: qui, que, où, dont",
+    "objetivo": "Link sentences with «qui», «que», «où» and «dont» to describe people, things and places without repeating words.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 25",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "L'homme qui parle est mon père",
+            "opcoes": [
+              "L'homme qui parle est mon père",
+              "L'homme que parle est mon père",
+              "L'homme où parle est mon père"
+            ],
+            "gabarito": "L'homme qui parle est mon père",
+            "explicacao": "Listen to «qui».",
+            "id": "fr-025-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Le livre que je lis",
+            "opcoes": [
+              "Le livre que je lis",
+              "Le livre qui je lis",
+              "Le livre dont je lis"
+            ],
+            "gabarito": "Le livre que je lis",
+            "explicacao": "Listen to «que».",
+            "id": "fr-025-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "La ville où j'habite",
+            "opcoes": [
+              "La ville où j'habite",
+              "La ville que j'habite",
+              "La ville dont j'habite"
+            ],
+            "gabarito": "La ville où j'habite",
+            "explicacao": "Listen to «où».",
+            "id": "fr-025-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Le livre dont je parle est cher",
+            "respostaEsperada": "Le livre dont je parle est cher",
+            "explicacao": "Write: Le livre dont je parle est cher.",
+            "id": "fr-025-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "J'ai un ami qui habite à Paris",
+            "respostaEsperada": "J'ai un ami qui habite à Paris",
+            "explicacao": "Write: J'ai un ami qui habite à Paris.",
+            "id": "fr-025-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «qui» mean?",
+            "audio": "qui",
+            "opcoes": [
+              "who, that (subject)",
+              "someone who",
+              "what (subject)",
+              "to need"
+            ],
+            "gabarito": "who, that (subject)",
+            "explicacao": "«qui» = who, that (subject).",
+            "id": "fr-025-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Dis-moi ce que tu veux",
+            "respostaEsperada": "Dis-moi ce que tu veux",
+            "explicacao": "Write: Dis-moi ce que tu veux.",
+            "id": "fr-025-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "une personne qui",
+            "respostaEsperada": "une personne qui",
+            "explicacao": "a person who",
+            "id": "fr-025-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Subject: which one is correct?",
+            "opcoes": [
+              "L'ami qui arrive",
+              "L'ami que arrive",
+              "L'ami où arrive"
+            ],
+            "gabarito": "L'ami qui arrive",
+            "explicacao": "Subject: «qui».",
+            "id": "fr-025-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Object: which one is correct?",
+            "opcoes": [
+              "Le film que je regarde",
+              "Le film qui je regarde",
+              "Le film dont je regarde"
+            ],
+            "gabarito": "Le film que je regarde",
+            "explicacao": "Object: «que».",
+            "id": "fr-025-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Parler de»: which one is correct?",
+            "opcoes": [
+              "Le livre dont je parle",
+              "Le livre que je parle",
+              "Le livre où je parle"
+            ],
+            "gabarito": "Le livre dont je parle",
+            "explicacao": "«De» → «dont».",
+            "id": "fr-025-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «dont» mean?",
+            "audio": "dont",
+            "opcoes": [
+              "of which, whose",
+              "the restaurant where",
+              "that, whom (object)",
+              "the day when"
+            ],
+            "gabarito": "of which, whose",
+            "explicacao": "«dont» = of which, whose.",
+            "id": "fr-025-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Place: which one is correct?",
+            "opcoes": [
+              "La ville où j'habite",
+              "La ville que j'habite",
+              "La ville qui j'habite"
+            ],
+            "gabarito": "La ville où j'habite",
+            "explicacao": "Place: «où».",
+            "id": "fr-025-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Le garçon ___ joue est mon fils.",
+            "opcoes": [
+              "qui",
+              "que",
+              "dont"
+            ],
+            "gabarito": "qui",
+            "explicacao": "Subject.",
+            "id": "fr-025-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "La robe ___ j'ai achetée est belle.",
+            "opcoes": [
+              "que",
+              "qui",
+              "où"
+            ],
+            "gabarito": "que",
+            "explicacao": "Object.",
+            "id": "fr-025-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "le jour où",
+            "respostaEsperada": "le jour où",
+            "explicacao": "the day when",
+            "id": "fr-025-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Le jour ___ je suis arrivé, il pleuvait.",
+            "opcoes": [
+              "où",
+              "que",
+              "dont"
+            ],
+            "gabarito": "où",
+            "explicacao": "Time: «où».",
+            "id": "fr-025-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «quelqu'un qui» mean?",
+            "audio": "quelqu'un qui",
+            "opcoes": [
+              "someone who",
+              "what (subject)",
+              "the way in which",
+              "to be afraid of"
+            ],
+            "gabarito": "someone who",
+            "explicacao": "«quelqu'un qui» = someone who.",
+            "id": "fr-025-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "L'outil ___ j'ai besoin est ici.",
+            "opcoes": [
+              "dont",
+              "que",
+              "où"
+            ],
+            "gabarito": "dont",
+            "explicacao": "«Avoir besoin de».",
+            "id": "fr-025-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Le livre que je lis est intéressant.»",
+            "opcoes": [
+              "Le",
+              "livre",
+              "que",
+              "je",
+              "lis",
+              "est",
+              "intéressant"
+            ],
+            "gabarito": "Le livre que je lis est intéressant.",
+            "explicacao": "que + subject + verb.",
+            "id": "fr-025-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «La ville où j'habite est petite.»",
+            "opcoes": [
+              "La",
+              "ville",
+              "où",
+              "j'habite",
+              "est",
+              "petite"
+            ],
+            "gabarito": "La ville où j'habite est petite.",
+            "explicacao": "où + subject + verb.",
+            "id": "fr-025-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I have a friend who lives in Paris. The book I am reading is good. The city where I live is small.",
+            "respostaEsperada": "J'ai un ami qui habite à Paris. Le livre que je lis est bon. La ville où j'habite est petite.",
+            "id": "fr-025-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «où» mean?",
+            "audio": "où",
+            "opcoes": [
+              "where",
+              "the one who",
+              "the city where",
+              "that, whom (object)"
+            ],
+            "gabarito": "where",
+            "explicacao": "«où» = where.",
+            "id": "fr-025-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "La femme ___ habite ici est médecin. (subject)",
+            "opcoes": [
+              "que",
+              "qui",
+              "dont"
+            ],
+            "gabarito": "qui",
+            "explicacao": "Subject of the verb: «qui».",
+            "id": "fr-025-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "avoir besoin de",
+            "respostaEsperada": "avoir besoin de",
+            "explicacao": "to need",
+            "id": "fr-025-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Le film ___ nous regardons est drôle. (object)",
+            "opcoes": [
+              "qui",
+              "où",
+              "que"
+            ],
+            "gabarito": "que",
+            "explicacao": "Direct object: «que».",
+            "id": "fr-025-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Le restaurant ___ nous mangeons est près d'ici. (where)",
+            "opcoes": [
+              "où",
+              "que",
+              "dont"
+            ],
+            "gabarito": "où",
+            "explicacao": "Place: «où».",
+            "id": "fr-025-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Le médecin ___ je parle est gentil. (of whom)",
+            "opcoes": [
+              "que",
+              "dont",
+              "qui"
+            ],
+            "gabarito": "dont",
+            "explicacao": "«Parler de» takes «dont».",
+            "id": "fr-025-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «avoir besoin de» mean?",
+            "audio": "avoir besoin de",
+            "opcoes": [
+              "the restaurant where",
+              "to need",
+              "that, whom (object)",
+              "what (object)"
+            ],
+            "gabarito": "to need",
+            "explicacao": "«avoir besoin de» = to need.",
+            "id": "fr-025-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Les livres que j'ai ___ sont bons. (to read)",
+            "opcoes": [
+              "lu",
+              "lue",
+              "lus"
+            ],
+            "gabarito": "lus",
+            "explicacao": "The participle agrees with the direct object that comes before it.",
+            "id": "fr-025-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Le film qu'il regarde est long.",
+              "Le film que il regarde est long.",
+              "Le film qui il regarde est long."
+            ],
+            "gabarito": "Le film qu'il regarde est long.",
+            "explicacao": "«Que» becomes «qu'» before a vowel.",
+            "id": "fr-025-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which relative replaces «de + something» in «parler de»?",
+            "opcoes": [
+              "que",
+              "dont",
+              "où"
+            ],
+            "gabarito": "dont",
+            "explicacao": "«Dont» = de que.",
+            "id": "fr-025-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "quelque chose que",
+            "respostaEsperada": "quelque chose que",
+            "explicacao": "something that",
+            "id": "fr-025-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "C'est un endroit que on mange bien.",
+              "C'est un endroit dont on mange bien.",
+              "C'est un endroit où on mange bien."
+            ],
+            "gabarito": "C'est un endroit où on mange bien.",
+            "explicacao": "Place: «où».",
+            "id": "fr-025-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «la façon dont» mean?",
+            "audio": "la façon dont",
+            "opcoes": [
+              "the day when",
+              "to need",
+              "the way in which",
+              "what (subject)"
+            ],
+            "gabarito": "the way in which",
+            "explicacao": "«la façon dont» = the way in which.",
+            "id": "fr-025-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Les fleurs que j'ai achetées sont rouges.",
+              "Les fleurs que j'ai acheté sont rouges.",
+              "Les fleurs qui j'ai achetées sont rouges."
+            ],
+            "gabarito": "Les fleurs que j'ai achetées sont rouges.",
+            "explicacao": "The participle agrees with «fleurs», the preceding direct object.",
+            "id": "fr-025-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «I am looking for someone who speaks French.»",
+            "opcoes": [
+              "Je",
+              "cherche",
+              "quelqu'un",
+              "qui",
+              "parle",
+              "français"
+            ],
+            "gabarito": "Je cherche quelqu'un qui parle français.",
+            "explicacao": "«Qui» + verb.",
+            "id": "fr-025-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «It is the house where I grew up.»",
+            "opcoes": [
+              "C'est",
+              "la",
+              "maison",
+              "où",
+              "j'ai",
+              "grandi"
+            ],
+            "gabarito": "C'est la maison où j'ai grandi.",
+            "explicacao": "«Où» is for place.",
+            "id": "fr-025-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: The woman who lives here is a doctor. The film I am talking about is long.",
+            "respostaEsperada": "La femme qui habite ici est médecin. Le film dont je parle est long.",
+            "id": "fr-025-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: This is the city where I was born. Here is the book you gave me.",
+            "respostaEsperada": "C'est la ville où je suis né. Voici le livre que tu m'as donné.",
+            "id": "fr-025-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Speak for 1 minute describing a person, a place and something you like, using relative pronouns."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Join two sentences into one, three times, with «qui», «que» and «où»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-025.json",
+  "responsavel": null
+}

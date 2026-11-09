@@ -1,0 +1,510 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 36,
+  "fase": 4,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Food: partitives, quantities and the restaurant: Review and practice for lesson 9",
+  "objetivo": "Lesson 9, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 9,
+    "titulo": "Food: partitives, quantities and the restaurant",
+    "objetivo": "Talk about what you eat and drink with the partitive articles («du», «de la», «de l'», «des»), express quantities, and order in a café or restaurant with «je voudrais» and «prendre».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 9",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je mange du pain",
+            "opcoes": [
+              "Je mange du pain",
+              "Je mange de la viande",
+              "Je mange des légumes"
+            ],
+            "gabarito": "Je mange du pain",
+            "explicacao": "Listen to «du».",
+            "id": "fr-009-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je bois de l'eau",
+            "opcoes": [
+              "Je bois de l'eau",
+              "Je bois du lait",
+              "Je bois de la limonade"
+            ],
+            "gabarito": "Je bois de l'eau",
+            "explicacao": "Listen to «de l'».",
+            "id": "fr-009-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je voudrais un kilo de pommes",
+            "opcoes": [
+              "Je voudrais un kilo de pommes",
+              "Je veux un kilo de pommes",
+              "J'ai un kilo de pommes"
+            ],
+            "gabarito": "Je voudrais un kilo de pommes",
+            "explicacao": "Listen to «voudrais».",
+            "id": "fr-009-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je ne mange pas de viande",
+            "respostaEsperada": "Je ne mange pas de viande",
+            "explicacao": "Write: Je ne mange pas de viande.",
+            "id": "fr-009-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Une bouteille d'eau",
+            "respostaEsperada": "Une bouteille d'eau",
+            "explicacao": "Write: Une bouteille d'eau.",
+            "id": "fr-009-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «I'd like fish, please. And water.»",
+            "opcoes": [
+              "de",
+              "l'eau.",
+              "voudrais",
+              "Je",
+              "plaît.",
+              "Et",
+              "s'il",
+              "vous",
+              "du",
+              "poisson,"
+            ],
+            "gabarito": "Je voudrais du poisson, s'il vous plaît. Et de l'eau.",
+            "explicacao": "Write: Je voudrais du poisson, s'il vous plaît. Et de l'eau.",
+            "id": "fr-009-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "L'addition, s'il vous plaît",
+            "respostaEsperada": "L'addition, s'il vous plaît",
+            "explicacao": "Write: L'addition, s'il vous plaît.",
+            "id": "fr-009-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Bonjour. Vous désirez ?",
+            "respostaEsperada": "Bonjour. Vous désirez ?",
+            "explicacao": "Good morning. What can I get you?",
+            "id": "fr-009-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je mange du pain.",
+              "Je mange pain.",
+              "Je mange le pain."
+            ],
+            "gabarito": "Je mange du pain.",
+            "explicacao": "Partitive.",
+            "id": "fr-009-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct in the negative?",
+            "opcoes": [
+              "Je ne mange pas de viande.",
+              "Je ne mange pas de la viande.",
+              "Je ne mange pas viande."
+            ],
+            "gabarito": "Je ne mange pas de viande.",
+            "explicacao": "Negative: «de».",
+            "id": "fr-009-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "un kilo de pommes",
+              "un kilo des pommes",
+              "un kilo les pommes"
+            ],
+            "gabarito": "un kilo de pommes",
+            "explicacao": "Quantity + «de».",
+            "id": "fr-009-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je voudrais du poisson, s'il vous plaît. Et de l'eau.",
+            "respostaEsperada": "Je voudrais du poisson, s'il vous plaît. Et de l'eau.",
+            "explicacao": "I'd like fish, please. And water.",
+            "id": "fr-009-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the form of «prendre» for «nous»?",
+            "opcoes": [
+              "prenons",
+              "prendons",
+              "prennent"
+            ],
+            "gabarito": "prenons",
+            "explicacao": "«nous prenons».",
+            "id": "fr-009-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je bois ___ café. (partitive)",
+            "opcoes": [
+              "du",
+              "de la",
+              "des"
+            ],
+            "gabarito": "du",
+            "explicacao": "«Café» is masculine.",
+            "id": "fr-009-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il y a ___ eau. (partitive)",
+            "opcoes": [
+              "de l'",
+              "du",
+              "des"
+            ],
+            "gabarito": "de l'",
+            "explicacao": "Before a vowel: «de l'».",
+            "id": "fr-009-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Moi, je prends de la viande avec des légumes.",
+            "respostaEsperada": "Moi, je prends de la viande avec des légumes.",
+            "explicacao": "I'll have meat with vegetables.",
+            "id": "fr-009-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle prend ___ café. (um)",
+            "opcoes": [
+              "un",
+              "une",
+              "des"
+            ],
+            "gabarito": "un",
+            "explicacao": "«Café» is masculine.",
+            "id": "fr-009-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «The bill, please. Enjoy your meal, Sophie!»",
+            "opcoes": [
+              "Bon",
+              "L'addition,",
+              "appétit,",
+              "!",
+              "plaît.",
+              "s'il",
+              "vous",
+              "Sophie"
+            ],
+            "gabarito": "L'addition, s'il vous plaît. Bon appétit, Sophie !",
+            "explicacao": "Write: L'addition, s'il vous plaît. Bon appétit, Sophie !",
+            "id": "fr-009-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Nous ___ un dessert. (we are having)",
+            "opcoes": [
+              "prenons",
+              "prends",
+              "prennent"
+            ],
+            "gabarito": "prenons",
+            "explicacao": "«nous prenons».",
+            "id": "fr-009-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Je voudrais un café, s'il vous plaît.»",
+            "opcoes": [
+              "Je",
+              "voudrais",
+              "un",
+              "café,",
+              "s'il",
+              "vous",
+              "plaît"
+            ],
+            "gabarito": "Je voudrais un café, s'il vous plaît.",
+            "explicacao": "Polite request.",
+            "id": "fr-009-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Elle mange beaucoup de légumes.»",
+            "opcoes": [
+              "Elle",
+              "mange",
+              "beaucoup",
+              "de",
+              "légumes"
+            ],
+            "gabarito": "Elle mange beaucoup de légumes.",
+            "explicacao": "beaucoup de + noun.",
+            "id": "fr-009-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I eat bread. I don't drink milk. I would like a water.",
+            "respostaEsperada": "Je mange du pain. Je ne bois pas de lait. Je voudrais de l'eau.",
+            "id": "fr-009-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "L'addition, s'il vous plaît. Bon appétit, Sophie !",
+            "respostaEsperada": "L'addition, s'il vous plaît. Bon appétit, Sophie !",
+            "explicacao": "The bill, please. Enjoy your meal, Sophie!",
+            "id": "fr-009-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je mange ___ viande. (partitive)",
+            "opcoes": [
+              "de la",
+              "du",
+              "des"
+            ],
+            "gabarito": "de la",
+            "explicacao": "«Viande» is feminine: «de la viande».",
+            "id": "fr-009-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Très bien. Et comme dessert ?",
+            "respostaEsperada": "Très bien. Et comme dessert ?",
+            "explicacao": "Very good. And for dessert?",
+            "id": "fr-009-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il boit ___ lait. (partitive)",
+            "opcoes": [
+              "de la",
+              "du",
+              "de l'"
+            ],
+            "gabarito": "du",
+            "explicacao": "«Lait» is masculine: «du lait».",
+            "id": "fr-009-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je voudrais une bouteille ___ eau, s'il vous plaît. (de)",
+            "opcoes": [
+              "de l'",
+              "de la",
+              "d'"
+            ],
+            "gabarito": "d'",
+            "explicacao": "After a quantity, you use only «de» (d' before a vowel).",
+            "id": "fr-009-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je ne bois pas ___ café. (partitive)",
+            "opcoes": [
+              "de",
+              "du",
+              "des"
+            ],
+            "gabarito": "de",
+            "explicacao": "In the negative, the partitive becomes «de».",
+            "id": "fr-009-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «un peu de» mean?",
+            "audio": "un peu de",
+            "opcoes": [
+              "the meat",
+              "a fruta",
+              "a little (of), some",
+              "the bread"
+            ],
+            "gabarito": "a little (of), some",
+            "explicacao": "«un peu de» = a little (of), some.",
+            "id": "fr-009-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Vous ___ un café ? (tomam)",
+            "opcoes": [
+              "prenons",
+              "prenez",
+              "prennent"
+            ],
+            "gabarito": "prenez",
+            "explicacao": "With «vous», «prendre» becomes «prenez».",
+            "id": "fr-009-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Il y a beaucoup du pain.",
+              "Il y a beaucoup des pain.",
+              "Il y a beaucoup de pain."
+            ],
+            "gabarito": "Il y a beaucoup de pain.",
+            "explicacao": "After «beaucoup», use «de» with no article.",
+            "id": "fr-009-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the form of «prendre» for «ils»?",
+            "opcoes": [
+              "prennent",
+              "prenent",
+              "prendent"
+            ],
+            "gabarito": "prennent",
+            "explicacao": "«Ils prennent», with two «n».",
+            "id": "fr-009-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Nous prenons un peu de fromage, merci.",
+            "respostaEsperada": "Nous prenons un peu de fromage, merci.",
+            "explicacao": "We'll have a little cheese, thank you.",
+            "id": "fr-009-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you politely ask for a coffee?",
+            "opcoes": [
+              "Je veux un café.",
+              "Je voudrais un café, s'il vous plaît.",
+              "Donne-moi un café."
+            ],
+            "gabarito": "Je voudrais un café, s'il vous plaît.",
+            "explicacao": "«Je voudrais» is the polite way to order.",
+            "id": "fr-009-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «l'eau» mean?",
+            "audio": "l'eau",
+            "opcoes": [
+              "too much",
+              "a table",
+              "the water",
+              "the cheese"
+            ],
+            "gabarito": "the water",
+            "explicacao": "«l'eau» = the water.",
+            "id": "fr-009-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the form of «boire» for «nous»?",
+            "opcoes": [
+              "boivons",
+              "buvent",
+              "buvons"
+            ],
+            "gabarito": "buvons",
+            "explicacao": "«Boire» becomes «nous buvons».",
+            "id": "fr-009-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «She drinks a little milk.»",
+            "opcoes": [
+              "Elle",
+              "boit",
+              "un",
+              "peu",
+              "de",
+              "lait"
+            ],
+            "gabarito": "Elle boit un peu de lait.",
+            "explicacao": "After «un peu», use «de» with no article.",
+            "id": "fr-009-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «I don't eat cheese.»",
+            "opcoes": [
+              "Je",
+              "ne",
+              "mange",
+              "pas",
+              "de",
+              "fromage"
+            ],
+            "gabarito": "Je ne mange pas de fromage.",
+            "explicacao": "In the negative, the partitive becomes «de».",
+            "id": "fr-009-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I'd like a bottle of water, please.",
+            "respostaEsperada": "Je voudrais une bouteille d'eau, s'il vous plaît.",
+            "id": "fr-009-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: We drink water. They eat a lot of bread.",
+            "respostaEsperada": "Nous buvons de l'eau. Ils mangent beaucoup de pain.",
+            "id": "fr-009-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe out loud a meal in a restaurant: what you order, what you drink and what you pay."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Describe what you eat in a day: breakfast, lunch and dinner."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-009.json",
+  "responsavel": null
+}

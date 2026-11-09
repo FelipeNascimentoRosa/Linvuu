@@ -1,0 +1,155 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 117,
+  "fase": 12,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Home, renting and city life: The house and its rooms",
+  "objetivo": "Lesson 30, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 30,
+    "titulo": "Home, renting and city life",
+    "objetivo": "Describe a house, look for and rent an apartment, talk about the neighborhood and services, and use «il y a», «chez» and prepositions of place more precisely.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "The house and its rooms",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "l'appartement",
+            "translit": "lah-par-tuh-MAHN",
+            "pt": "",
+            "en": "",
+            "audio": "l'appartement"
+          },
+          {
+            "ru": "la pièce",
+            "translit": "lah pee-EHS",
+            "pt": "",
+            "en": "",
+            "audio": "la pièce"
+          },
+          {
+            "ru": "le salon",
+            "translit": "luh sah-LOHN",
+            "pt": "",
+            "en": "",
+            "audio": "le salon"
+          },
+          {
+            "ru": "la cuisine",
+            "translit": "lah kwee-ZEEN",
+            "pt": "",
+            "en": "",
+            "audio": "la cuisine"
+          },
+          {
+            "ru": "la chambre",
+            "translit": "lah shahn-BRUH",
+            "pt": "",
+            "en": "",
+            "audio": "la chambre"
+          },
+          {
+            "ru": "la salle de bains",
+            "translit": "lah sal duh BAN",
+            "pt": "",
+            "en": "",
+            "audio": "la salle de bains"
+          },
+          {
+            "ru": "le balcon",
+            "translit": "luh bal-KOHN",
+            "pt": "",
+            "en": "",
+            "audio": "le balcon"
+          },
+          {
+            "ru": "le loyer",
+            "translit": "luh lwah-YAY",
+            "pt": "",
+            "en": "",
+            "audio": "le loyer"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Décrire un logement",
+        "explicacao": "STEP 1: describing the size: «C'est un appartement de deux pièces.» «Il fait cinquante mètres carrés.» STEP 2: describing what there is: «Il y a un salon, une cuisine, deux chambres et une salle de bains.» STEP 3: the floor: «Il est au deuxième étage.» «Il y a un ascenseur.» «C'est au rez-de-chaussée.» STEP 4: saying what it has: «Il a un balcon.» «Il est très lumineux.» «Il est calme.» STEP 5: saying the price: «Le loyer est de mille euros par mois.» «Les charges sont comprises.» STEP 6: asking: «Quelle est la surface ?» «Il y a combien de pièces ?» «Il est meublé ?» STEP 7: adjectives for a home: «grand, petit, clair, sombre, moderne, ancien, neuf, bruyant, calme». STEP 8: «chez» + person: «Je suis chez moi.» «Elle habite chez ses parents.»",
+        "comparacao": "In English we say «the apartment has two bedrooms». In French you count the rooms («deux pièces»), not just the bedrooms: an «F2» has a living room and one bedroom. «Au rez-de-chaussée» is the ground floor; the «premier étage» is the first floor above the ground floor (the 'second floor' in American English).",
+        "tabela": [
+          {
+            "term": "rez-de-chaussée",
+            "sense": "ground floor"
+          },
+          {
+            "term": "premier étage",
+            "sense": "first floor above the ground floor"
+          },
+          {
+            "term": "deux pièces",
+            "sense": "living room + 1 bedroom"
+          },
+          {
+            "term": "meublé",
+            "sense": "furnished"
+          },
+          {
+            "term": "charges comprises",
+            "sense": "utilities included"
+          },
+          {
+            "term": "loyer",
+            "sense": "rent"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Il a trois salles.",
+            "certo": "Il a trois chambres.",
+            "motivo": "«Salle» means a room (as in a hall); a bedroom is «chambre»."
+          },
+          {
+            "errado": "J'habite en un appartement.",
+            "certo": "J'habite dans un appartement.",
+            "motivo": "«Dans»."
+          },
+          {
+            "errado": "Il est à le deuxième étage.",
+            "certo": "Il est au deuxième étage.",
+            "motivo": "à + le = au."
+          },
+          {
+            "errado": "Je suis à chez moi.",
+            "certo": "Je suis chez moi.",
+            "motivo": "«Chez» takes no «à»."
+          }
+        ],
+        "tag": "Housing"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe your home out loud: rooms, floor, size and what you like most about it."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Give a command, an instruction and a warning out loud."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-030.json",
+  "responsavel": null
+}

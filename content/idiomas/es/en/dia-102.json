@@ -1,0 +1,170 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 102,
+  "fase": 11,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Comparatives and superlatives: Irregular comparatives",
+  "objetivo": "Lesson 26, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 26,
+    "titulo": "Comparatives and superlatives",
+    "objetivo": "Compare people, things, and places with «más… que», «menos… que», «tan… como», and «tanto… como», use the irregular comparatives («mejor, peor, mayor, menor»), form the superlative («el más… de», «-ísimo»), and avoid the «más de» × «más que» mistake.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Irregular comparatives",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "mejor",
+            "translit": "[pronuncia] meh-HOR",
+            "pt": "better",
+            "en": "",
+            "audio": "mejor"
+          },
+          {
+            "ru": "peor",
+            "translit": "[pronuncia] peh-OR",
+            "pt": "worse",
+            "en": "",
+            "audio": "peor"
+          },
+          {
+            "ru": "mayor",
+            "translit": "[pronuncia] my-OR",
+            "pt": "older, bigger",
+            "en": "",
+            "audio": "mayor"
+          },
+          {
+            "ru": "menor",
+            "translit": "[pronuncia] meh-NOR",
+            "pt": "younger, smaller",
+            "en": "",
+            "audio": "menor"
+          },
+          {
+            "ru": "igual",
+            "translit": "[pronuncia] ee-GWAHL",
+            "pt": "equal",
+            "en": "",
+            "audio": "igual"
+          },
+          {
+            "ru": "el mismo, la misma",
+            "translit": "[pronuncia] el MEES-mo, la MEES-ma",
+            "pt": "the same",
+            "en": "",
+            "audio": "el mismo, la misma"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Mejor, peor, mayor, and menor",
+        "explicacao": "STEP 1: four adjectives have their own comparative and skip «más» entirely: «bueno» becomes «mejor» (better), «malo» becomes «peor» (worse), «grande» can become «mayor», and «pequeño» can become «menor». STEP 2: «mejor» and «peor» are the ones you'll use most. You say «Este restaurante es mejor que ese», never «más bueno que ese». Same with «malo»: «Hoy el tiempo es peor que ayer». STEP 3: «mejor» and «peor» also work as adverbs, meaning \"better\" and \"worse\" with a verb: «Hablas mejor que yo», «Hoy canto peor». STEP 4: «mayor» and «menor» talk about age or importance: «mi hermano mayor» is the older brother, «mi hermana menor» is the younger sister, «un problema mayor» is a bigger problem. For physical size, use «más grande» and «más pequeño»: «Mi casa es más grande que la tuya.» English's own irregular comparatives — good→better, bad→worse — line up neatly with «mejor» and «peor», but English \"older\" and \"younger\" are perfectly regular, so «mayor» and «menor» being irregular here is new, not something you can lean on from English. STEP 5: the plurals are «mejores, peores, mayores, menores» — no accent mark, no gender change: «Estas fotos son mejores que aquellas.» STEP 6: for quantity, use «más» and «menos», which are already comparatives and don't change: «Tengo más tiempo que tú», «Come menos que yo». STEP 7: with «mayor», the phrase «una persona mayor» is a polite way to say an elderly person. STEP 8: you can strengthen a comparative with «mucho» or «bastante»: «mucho mejor», «bastante más caro». Never say «muy más» or «muy mejor».",
+        "comparacao": "English also has its own irregular comparatives for \"good\" and \"bad\" — better, worse — so «mejor» and «peor» feel familiar right away. What doesn't carry over is «mayor» and «menor»: English \"older\" and \"younger\" are built the regular way, with no irregular form at all, so there's nothing in English to anchor these two to — and the fact that Spanish «mayor»/«menor» lean toward age and importance rather than physical size (which still takes «más grande»/«más pequeño») is a split English doesn't make either.",
+        "exemplos": [
+          {
+            "ru": "Tu español es mejor que el mío.",
+            "pt": "Your Spanish is better than mine."
+          },
+          {
+            "ru": "Esta película es mucho peor que la otra.",
+            "pt": "This movie is a lot worse than the other one."
+          },
+          {
+            "ru": "Mi hermano mayor tiene treinta años.",
+            "pt": "My older brother is thirty."
+          },
+          {
+            "ru": "Tu casa es más grande que la mía.",
+            "pt": "Your house is bigger than mine."
+          }
+        ],
+        "tabelas": [
+          {
+            "titulo": "Irregular comparatives",
+            "linhas": [
+              {
+                "adjetivo": "[misto] bueno, buena",
+                "comparativo": "[misto] mejor",
+                "exemplo": "[misto] El pan de aquí es mejor."
+              },
+              {
+                "adjetivo": "[misto] malo, mala",
+                "comparativo": "[misto] peor",
+                "exemplo": "[misto] Hoy hace peor tiempo."
+              },
+              {
+                "adjetivo": "[misto] grande (age, importance)",
+                "comparativo": "[misto] mayor",
+                "exemplo": "[misto] Mi hermano mayor vive en Bilbao."
+              },
+              {
+                "adjetivo": "[misto] pequeño (age, importance)",
+                "comparativo": "[misto] menor",
+                "exemplo": "[misto] Mi hermana menor estudia música."
+              },
+              {
+                "adjetivo": "[misto] mucho",
+                "comparativo": "[misto] más",
+                "exemplo": "[misto] Hoy trabajo más."
+              },
+              {
+                "adjetivo": "[misto] poco",
+                "comparativo": "[misto] less",
+                "exemplo": "[misto] Ahora duermo menos."
+              }
+            ]
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] Este café es más bueno que ese.",
+            "certo": "[misto] Este café es mejor que ese.",
+            "motivo": "«Bueno» has its own comparative: «mejor»."
+          },
+          {
+            "errado": "[misto] Hoy estoy más malo que ayer.",
+            "certo": "[misto] Hoy estoy peor que ayer.",
+            "motivo": "«Malo» becomes «peor»."
+          },
+          {
+            "errado": "[misto] Mi casa es mayor que la tuya. (size)",
+            "certo": "[misto] Mi casa es más grande que la tuya.",
+            "motivo": "For physical size use «más grande»; «mayor» is about age or importance."
+          },
+          {
+            "errado": "[misto] Es muy mejor.",
+            "certo": "[misto] Es mucho mejor.",
+            "motivo": "Before a comparative, use «mucho», never «muy»."
+          }
+        ],
+        "tag": "Comparatives"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Talk about two people in your family: who is mayor and who is menor, who cocina mejor, who habla más. Make at least five sentences with the irregular comparatives."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Make four comparisons with «más… que» and «tan… como». Say one sentence with «más de» and a number."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-026.json",
+  "responsavel": null
+}

@@ -1,0 +1,261 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 22,
+  "fase": 3,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Present tense in -er and -ir: Regular -ir verbs",
+  "objetivo": "Lesson 6, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 6,
+    "titulo": "Present tense in -er and -ir",
+    "objetivo": "Conjugate regular -er and -ir verbs in the present, compare all three groups (-ar, -er, -ir), use «y» and «o» with their variants «e» and «u», and avoid the false friend «asistir».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Regular -ir verbs",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "vivir",
+            "translit": "[pronuncia] bee-BEER",
+            "pt": "to live",
+            "en": "",
+            "audio": "vivir"
+          },
+          {
+            "ru": "escribir",
+            "translit": "[pronuncia] es-kree-BEER",
+            "pt": "to write",
+            "en": "",
+            "audio": "escribir"
+          },
+          {
+            "ru": "abrir",
+            "translit": "[pronuncia] ah-BREER",
+            "pt": "to open",
+            "en": "",
+            "audio": "abrir"
+          },
+          {
+            "ru": "recibir",
+            "translit": "[pronuncia] reh-thee-BEER",
+            "pt": "to receive",
+            "en": "",
+            "audio": "recibir"
+          },
+          {
+            "ru": "decidir",
+            "translit": "[pronuncia] deh-thee-DEER",
+            "pt": "to decide",
+            "en": "",
+            "audio": "decidir"
+          },
+          {
+            "ru": "subir",
+            "translit": "[pronuncia] soo-BEER",
+            "pt": "to go up",
+            "en": "",
+            "audio": "subir"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "The present of -ir verbs",
+        "explicacao": "STEP 1: verbs in this group end in «-ir»: «vivir», «escribir», «abrir». The stem is what's left without the «-ir»: «viv-», «escrib-», «abr-». STEP 2: the present-tense endings are: -o, -es, -e, -imos, -ís, -en. «Vivo, vives, vive, vivimos, vivís, viven.» STEP 3: notice these are the same as the -er group except for two: «nosotros» is «-imos» (not «-emos») and «vosotros» is «-ís» (not «-éis»). The other four forms are identical. STEP 4: the accent mark on «vivís», «escribís» and «abrís» marks the stressed syllable: vi-VÍS. It's never written «viivís» with two «i»s — the accent is the only mark needed. STEP 5: since -er and -ir verbs are so close, learn all three groups side by side: in «yo», the ending is «-o» in all three; in «tú», it's «-as» or «-es»; in «él», it's «-a» or «-e». STEP 6: «vivir» also means to live/reside somewhere: «Vivo en Madrid» means «I live in Madrid». STEP 7: important false friend: «asistir» does NOT mean «to watch/attend as a spectator» the way it might look — it means to attend, to be present. «Asisto a clase» means «I go to class / I attend class». To watch a movie, say «ver una película». STEP 8: «recibir» means to receive; to say someone receives guests at home, use «recibir a» with the personal «a»: «Recibo a mis amigos». STEP 9: «abrir» and «subir» are regular in the present; their irregular past participles («abierto», «escrito») come up in lesson 17.",
+        "comparacao": "English «to live» and «to write» map directly onto «vivir» and «escribir» in meaning, and the conjugation pattern itself needs to be learned as a set of six new endings rather than mapped from English grammar. The one real trap: «asistir» looks like it should mean «to assist» or «to watch», but it means «to attend, to be present» — for watching something, Spanish uses «ver».",
+        "exemplos": [
+          {
+            "ru": "Escribo una carta.",
+            "pt": "I write a letter."
+          },
+          {
+            "ru": "Abrimos la tienda.",
+            "pt": "We open the shop."
+          },
+          {
+            "ru": "Recibo a mis amigos.",
+            "pt": "I receive my friends."
+          },
+          {
+            "ru": "Asistimos a clase.",
+            "pt": "We're going to class (attending)."
+          },
+          {
+            "ru": "Vosotros vivís cerca.",
+            "pt": "You all (in Spain) live nearby."
+          }
+        ],
+        "tabelas": [
+          {
+            "titulo": "vivir (to live)",
+            "linhas": [
+              {
+                "pronome": "[misto] yo",
+                "forma": "[misto] vivo",
+                "exemplo": "[misto] Vivo en Valencia."
+              },
+              {
+                "pronome": "[misto] tú",
+                "forma": "[misto] vives",
+                "exemplo": "[misto] ¿Vives con un amigo?"
+              },
+              {
+                "pronome": "[misto] él / ella / usted",
+                "forma": "[misto] vive",
+                "exemplo": "[misto] Usted vive cerca."
+              },
+              {
+                "pronome": "[misto] nosotros, nosotras",
+                "forma": "[misto] vivimos",
+                "exemplo": "[misto] Vivimos en una ciudad grande."
+              },
+              {
+                "pronome": "[misto] vosotros, vosotras",
+                "forma": "[misto] vivís",
+                "exemplo": "[misto] ¿Dónde vivís?"
+              },
+              {
+                "pronome": "[misto] ellos, ellas, ustedes",
+                "forma": "[misto] viven",
+                "exemplo": "[misto] Ellos viven en Sevilla."
+              }
+            ]
+          },
+          {
+            "titulo": "Other regular -ir verbs",
+            "linhas": [
+              {
+                "infinitivo": "[misto] escribir",
+                "yo": "[misto] escribo",
+                "tu": "[misto] escribes",
+                "el_ella_usted": "[misto] escribe",
+                "nosotros": "[misto] escribimos",
+                "vosotros": "[misto] escribís",
+                "ellos_ustedes": "[misto] escriben"
+              },
+              {
+                "infinitivo": "to open",
+                "yo": "[misto] abro",
+                "tu": "[misto] abres",
+                "el_ella_usted": "[misto] abre",
+                "nosotros": "[misto] abrimos",
+                "vosotros": "[misto] abrís",
+                "ellos_ustedes": "[misto] abren"
+              },
+              {
+                "infinitivo": "[misto] recibir",
+                "yo": "[misto] recibo",
+                "tu": "[misto] recibes",
+                "el_ella_usted": "[misto] recibe",
+                "nosotros": "[misto] recibimos",
+                "vosotros": "[misto] recibís",
+                "ellos_ustedes": "[misto] reciben"
+              },
+              {
+                "infinitivo": "to decide",
+                "yo": "[misto] decido",
+                "tu": "[misto] decides",
+                "el_ella_usted": "[misto] decide",
+                "nosotros": "[misto] decidimos",
+                "vosotros": "[misto] decidís",
+                "ellos_ustedes": "[misto] deciden"
+              }
+            ]
+          },
+          {
+            "titulo": "The three groups side by side",
+            "linhas": [
+              {
+                "pronome": "[misto] yo",
+                "ar": "[misto] hablo",
+                "er": "[misto] como",
+                "ir": "[misto] vivo"
+              },
+              {
+                "pronome": "[misto] tú",
+                "ar": "[misto] hablas",
+                "er": "[misto] comes",
+                "ir": "[misto] vives"
+              },
+              {
+                "pronome": "[misto] él, ella, usted",
+                "ar": "[misto] habla",
+                "er": "[misto] come",
+                "ir": "[misto] vive"
+              },
+              {
+                "pronome": "[misto] nosotros",
+                "ar": "[misto] hablamos",
+                "er": "[misto] comemos",
+                "ir": "[misto] vivimos"
+              },
+              {
+                "pronome": "[misto] vosotros",
+                "ar": "[misto] habláis",
+                "er": "[misto] coméis",
+                "ir": "[misto] vivís"
+              },
+              {
+                "pronome": "[misto] ellos, ustedes",
+                "ar": "[misto] hablan",
+                "er": "[misto] comen",
+                "ir": "[misto] viven"
+              }
+            ]
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] Vosotros vivéis.",
+            "certo": "[misto] Vosotros vivís.",
+            "motivo": "In -ir verbs, «vosotros» ends in «-ís», not «-éis»."
+          },
+          {
+            "errado": "[misto] Nosotros vivemos.",
+            "certo": "[misto] Nosotros vivimos.",
+            "motivo": "In -ir verbs, «nosotros» ends in «-imos»."
+          },
+          {
+            "errado": "[misto] Asisto una película.",
+            "certo": "[misto] Veo una película.",
+            "motivo": "«Asistir» means to attend, not to watch; and when there's an object, it takes «a»: «asisto a clase»."
+          },
+          {
+            "errado": "[misto] Ellas escribe.",
+            "certo": "[misto] Ellas escriben.",
+            "motivo": "With «ellas», the ending is «-en»."
+          },
+          {
+            "errado": "[misto] Yo vivo no Madrid.",
+            "certo": "[misto] Yo vivo en Madrid.",
+            "motivo": "Spanish has no word «no» as a preposition — for where you live, use «en»."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Answer out loud: «¿Dónde vives? ¿Con quién vives? ¿Qué escribes? ¿Qué abres por la mañana? ¿A qué clase asistes?» Then ask the same questions to a stranger, using «usted»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Conjugate «comer» and «beber» from memory, from «yo» to «ellos». Say one sentence with each form."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-006.json",
+  "responsavel": null
+}

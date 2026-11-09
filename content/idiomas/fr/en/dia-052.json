@@ -1,0 +1,521 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 52,
+  "fase": 6,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Likes, stressed pronouns and direct object pronouns: Review and practice for lesson 13",
+  "objetivo": "Lesson 13, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 13,
+    "titulo": "Likes, stressed pronouns and direct object pronouns",
+    "objetivo": "Talk about likes and opinions, use the stressed pronouns («moi», «toi», «lui»…) and replace a direct object with «le», «la», «l'» and «les».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 13",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je le regarde",
+            "opcoes": [
+              "Je le regarde",
+              "Je la regarde",
+              "Je les regarde"
+            ],
+            "gabarito": "Je le regarde",
+            "explicacao": "Listen to «le».",
+            "id": "fr-013-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Moi, j'aime le café",
+            "opcoes": [
+              "Moi, j'aime le café",
+              "Toi, tu aimes le café",
+              "Lui, il aime le café"
+            ],
+            "gabarito": "Moi, j'aime le café",
+            "explicacao": "Listen to «moi».",
+            "id": "fr-013-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je trouve que c'est intéressant",
+            "opcoes": [
+              "Je trouve que c'est intéressant",
+              "Je trouve que c'est difficile",
+              "Je pense que c'est drôle"
+            ],
+            "gabarito": "Je trouve que c'est intéressant",
+            "explicacao": "Listen to «intéressant».",
+            "id": "fr-013-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je ne le regarde pas",
+            "respostaEsperada": "Je ne le regarde pas",
+            "explicacao": "Write: Je ne le regarde pas.",
+            "id": "fr-013-e04"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Shall we watch another film this weekend? With me?»",
+            "opcoes": [
+              "?",
+              "regarde",
+              "ce",
+              "autre",
+              "week-end",
+              "un",
+              "?",
+              "moi",
+              "On",
+              "Avec",
+              "film"
+            ],
+            "gabarito": "On regarde un autre film ce week-end ? Avec moi ?",
+            "explicacao": "Write: On regarde un autre film ce week-end ? Avec moi ?",
+            "id": "fr-013-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je vais avec toi",
+            "respostaEsperada": "Je vais avec toi",
+            "explicacao": "Write: Je vais avec toi.",
+            "id": "fr-013-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "À mon avis, c'est facile",
+            "respostaEsperada": "À mon avis, c'est facile",
+            "explicacao": "Write: À mon avis, c'est facile.",
+            "id": "fr-013-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je le regarde.",
+              "Je regarde le.",
+              "Je regarde il."
+            ],
+            "gabarito": "Je le regarde.",
+            "explicacao": "Pronoun before the verb.",
+            "id": "fr-013-e07"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "On regarde un autre film ce week-end ? Avec moi ?",
+            "respostaEsperada": "On regarde un autre film ce week-end ? Avec moi ?",
+            "explicacao": "Shall we watch another film this weekend? With me?",
+            "id": "fr-013-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you answer «C'est qui ?»",
+            "opcoes": [
+              "C'est moi.",
+              "C'est je.",
+              "C'est mon."
+            ],
+            "gabarito": "C'est moi.",
+            "explicacao": "After «c'est», use the stressed pronoun.",
+            "id": "fr-013-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct in the negative?",
+            "opcoes": [
+              "Je ne la regarde pas.",
+              "Je ne regarde pas la.",
+              "Je la ne regarde pas."
+            ],
+            "gabarito": "Je ne la regarde pas.",
+            "explicacao": "Between «ne» and the verb.",
+            "id": "fr-013-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je pense que c'est difficile.",
+              "Je pense c'est difficile.",
+              "Je pense de c'est difficile."
+            ],
+            "gabarito": "Je pense que c'est difficile.",
+            "explicacao": "«Que» is required.",
+            "id": "fr-013-e10"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Tu as aimé le film ?",
+            "respostaEsperada": "Tu as aimé le film ?",
+            "explicacao": "Did you like the film?",
+            "id": "fr-013-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «le» mean?",
+            "audio": "le",
+            "opcoes": [
+              "adorar",
+              "him, it",
+              "me",
+              "the (before a vowel)"
+            ],
+            "gabarito": "him, it",
+            "explicacao": "«le» = him, it.",
+            "id": "fr-013-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je vais chez ___ . (him)",
+            "opcoes": [
+              "lui",
+              "il",
+              "son"
+            ],
+            "gabarito": "lui",
+            "explicacao": "After a preposition, the stressed pronoun.",
+            "id": "fr-013-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tu aimes le fromage ? — Oui, je ___ aime.",
+            "opcoes": [
+              "l'",
+              "le",
+              "la"
+            ],
+            "gabarito": "l'",
+            "explicacao": "Elision: «je l'aime».",
+            "id": "fr-013-e12"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je vais ___ regarder. (the film)",
+            "opcoes": [
+              "le",
+              "la",
+              "les"
+            ],
+            "gabarito": "le",
+            "explicacao": "Before the infinitive.",
+            "id": "fr-013-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «facile» mean?",
+            "audio": "facile",
+            "opcoes": [
+              "easy",
+              "preferir",
+              "him, to him",
+              "you, to you"
+            ],
+            "gabarito": "easy",
+            "explicacao": "«facile» = easy.",
+            "id": "fr-013-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je ne suis pas ___ . (in agreement)",
+            "opcoes": [
+              "d'accord",
+              "accord",
+              "d'accorde"
+            ],
+            "gabarito": "d'accord",
+            "explicacao": "Fixed expression.",
+            "id": "fr-013-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Je ne le regarde pas.»",
+            "opcoes": [
+              "Je",
+              "ne",
+              "le",
+              "regarde",
+              "pas"
+            ],
+            "gabarito": "Je ne le regarde pas.",
+            "explicacao": "ne + pronoun + verb + pas.",
+            "id": "fr-013-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Moi aussi, j'aime ça.»",
+            "opcoes": [
+              "Moi",
+              "aussi,",
+              "j'aime",
+              "ça"
+            ],
+            "gabarito": "Moi aussi, j'aime ça.",
+            "explicacao": "Emphasis + verb.",
+            "id": "fr-013-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I watch the film. I watch it. I don't watch it. I'm going to watch it.",
+            "respostaEsperada": "Je regarde le film. Je le regarde. Je ne le regarde pas. Je vais le regarder.",
+            "id": "fr-013-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «moi» mean?",
+            "audio": "moi",
+            "opcoes": [
+              "me, I (stressed)",
+              "the (plural)",
+              "her",
+              "you, to you"
+            ],
+            "gabarito": "me, I (stressed)",
+            "explicacao": "«moi» = me, I (stressed).",
+            "id": "fr-013-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il travaille avec ___ . (them)",
+            "opcoes": [
+              "lui",
+              "eux",
+              "elles"
+            ],
+            "gabarito": "eux",
+            "explicacao": "After a preposition, you use the stressed pronoun: «eux».",
+            "id": "fr-013-e18"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tu aimes la musique ? — Oui, je ___ aime.",
+            "opcoes": [
+              "la",
+              "le",
+              "l'"
+            ],
+            "gabarito": "l'",
+            "explicacao": "Before a vowel, «la» becomes «l'».",
+            "id": "fr-013-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Les films ? Je ne ___ regarde pas.",
+            "opcoes": [
+              "les",
+              "le",
+              "l'"
+            ],
+            "gabarito": "les",
+            "explicacao": "The plural object is «les», between «ne» and the verb.",
+            "id": "fr-013-e20"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «détester» mean?",
+            "audio": "détester",
+            "opcoes": [
+              "chato",
+              "detestar",
+              "preferir",
+              "her"
+            ],
+            "gabarito": "detestar",
+            "explicacao": "«détester» = detestar.",
+            "id": "fr-013-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Tu as peut-être raison.",
+            "respostaEsperada": "Tu as peut-être raison.",
+            "explicacao": "Maybe you're right.",
+            "id": "fr-013-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je ___ que c'est facile. (I think)",
+            "opcoes": [
+              "trouves",
+              "trouve",
+              "trouvons"
+            ],
+            "gabarito": "trouve",
+            "explicacao": "With «je», it ends in «-e».",
+            "id": "fr-013-e21"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ , je préfère le thé. (eu)",
+            "opcoes": [
+              "Je",
+              "Me",
+              "Moi"
+            ],
+            "gabarito": "Moi",
+            "explicacao": "The stressed pronoun gives emphasis to the subject.",
+            "id": "fr-013-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «with her»?",
+            "opcoes": [
+              "avec elle",
+              "avec la",
+              "avec lui"
+            ],
+            "gabarito": "avec elle",
+            "explicacao": "After a preposition, use «elle».",
+            "id": "fr-013-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «les» mean?",
+            "audio": "les",
+            "opcoes": [
+              "me, I (stressed)",
+              "him, to him",
+              "the (plural)",
+              "you, to you"
+            ],
+            "gabarito": "the (plural)",
+            "explicacao": "«les» = os, as.",
+            "id": "fr-013-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I'm going to see him»?",
+            "opcoes": [
+              "Je le vais voir.",
+              "Je vais le voir.",
+              "Je vais voir le."
+            ],
+            "gabarito": "Je vais le voir.",
+            "explicacao": "The pronoun goes before the infinitive.",
+            "id": "fr-013-e24"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you disagree?",
+            "opcoes": [
+              "Je suis pas d'accord de.",
+              "Je n'accord pas.",
+              "Je ne suis pas d'accord."
+            ],
+            "gabarito": "Je ne suis pas d'accord.",
+            "explicacao": "Use «être d'accord» in the negative.",
+            "id": "fr-013-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the form of «préférer» for «nous»?",
+            "opcoes": [
+              "préférons",
+              "préfèrons",
+              "préférez"
+            ],
+            "gabarito": "préférons",
+            "explicacao": "With «nous», the «é» stays.",
+            "id": "fr-013-e26"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «te» mean?",
+            "audio": "te",
+            "opcoes": [
+              "you, to you",
+              "easy",
+              "detestar",
+              "difficult"
+            ],
+            "gabarito": "you, to you",
+            "explicacao": "«te» = you, to you.",
+            "id": "fr-013-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «I listen to them every day.»",
+            "opcoes": [
+              "Je",
+              "les",
+              "écoute",
+              "tous",
+              "les",
+              "jours"
+            ],
+            "gabarito": "Je les écoute tous les jours.",
+            "explicacao": "The pronoun «les» goes before the verb.",
+            "id": "fr-013-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «She hates the noise.»",
+            "opcoes": [
+              "Elle",
+              "déteste",
+              "le",
+              "bruit"
+            ],
+            "gabarito": "Elle déteste le bruit.",
+            "explicacao": "After «détester», a definite article.",
+            "id": "fr-013-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I love music. I listen to it every day.",
+            "respostaEsperada": "J'adore la musique. Je l'écoute tous les jours.",
+            "id": "fr-013-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I don't see him. I'm going with him.",
+            "respostaEsperada": "Je ne le vois pas. Je vais avec lui.",
+            "id": "fr-013-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Speak for 1 minute about the things you like and don't like, using pronouns so you don't repeat the words."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Give an opinion, then agree and disagree with an opinion, out loud."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-013.json",
+  "responsavel": null
+}

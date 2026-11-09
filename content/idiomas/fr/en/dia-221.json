@@ -1,0 +1,161 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 221,
+  "fase": 23,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Emphasis and discourse markers: Highlighting",
+  "objetivo": "Lesson 56, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 56,
+    "titulo": "Emphasis and discourse markers",
+    "objetivo": "Put emphasis on what matters (c'est… qui/que, ce qui/ce que) and organize a talk or a text with connectors of sequence, opposition and conclusion.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Highlighting",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "c'est… qui",
+            "translit": "seh… KEE",
+            "pt": "",
+            "en": "",
+            "audio": "c'est… qui"
+          },
+          {
+            "ru": "c'est… que",
+            "translit": "seh… KUH",
+            "pt": "",
+            "en": "",
+            "audio": "c'est… que"
+          },
+          {
+            "ru": "ce qui",
+            "translit": "suh KEE",
+            "pt": "",
+            "en": "",
+            "audio": "ce qui"
+          },
+          {
+            "ru": "ce que",
+            "translit": "suh KUH",
+            "pt": "",
+            "en": "",
+            "audio": "ce que"
+          },
+          {
+            "ru": "ce dont",
+            "translit": "suh DOHN",
+            "pt": "",
+            "en": "",
+            "audio": "ce dont"
+          },
+          {
+            "ru": "ce à quoi",
+            "translit": "suh ah KWAH",
+            "pt": "",
+            "en": "",
+            "audio": "ce à quoi"
+          },
+          {
+            "ru": "voilà",
+            "translit": "vwah-LAH",
+            "pt": "",
+            "en": "",
+            "audio": "voilà"
+          },
+          {
+            "ru": "justement",
+            "translit": "zhews-tuh-MAHN",
+            "pt": "",
+            "en": "",
+            "audio": "justement"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "C'est moi qui… / Ce qui m'intéresse…",
+        "explicacao": "STEP 1: «c'est… qui» highlights the subject: «C'est Paul qui a gagné.» (and not someone else) STEP 2: «c'est… que» highlights any other element: «C'est demain que je pars.» «C'est ce livre que je veux.» STEP 3: with a stressed pronoun: «C'est moi qui ai fait ça.» (the verb agrees with «moi»: «ai») STEP 4: «ce qui» (subject) and «ce que» (object) mean «what» and open the sentence: «Ce qui m'intéresse, c'est la musique.» «Ce que je veux, c'est du calme.» STEP 5: «ce dont» with verbs that take «de»: «Ce dont j'ai besoin, c'est de repos.» STEP 6: the second part starts with «c'est» + noun or «c'est de» + infinitive: «Ce que j'aime, c'est de voyager.»",
+        "comparacao": "«It was Paul who won» and «what interests me is music» work the same way in English. Careful: after «c'est… qui» the verb agrees with the highlighted person: «C'est moi qui suis arrivé», never «qui est arrivé».",
+        "tabela": [
+          {
+            "expression": "c'est… qui",
+            "function": "highlights the subject",
+            "example": "C'est Paul qui a gagné."
+          },
+          {
+            "expression": "c'est… que",
+            "function": "highlights object, place, time",
+            "example": "C'est demain que je pars."
+          },
+          {
+            "expression": "ce qui",
+            "function": "what (subject)",
+            "example": "Ce qui m'intéresse, c'est la musique."
+          },
+          {
+            "expression": "ce que",
+            "function": "what (object)",
+            "example": "Ce que je veux, c'est du calme."
+          },
+          {
+            "expression": "ce dont",
+            "function": "what, with «de»",
+            "example": "Ce dont j'ai besoin, c'est de repos."
+          },
+          {
+            "expression": "c'est moi qui",
+            "function": "verb agrees with moi",
+            "example": "C'est moi qui ai fait ça."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "C'est moi qui est arrivé.",
+            "certo": "C'est moi qui suis arrivé.",
+            "motivo": "The verb agrees with «moi»."
+          },
+          {
+            "errado": "Ce que m'intéresse, c'est la musique.",
+            "certo": "Ce qui m'intéresse, c'est la musique.",
+            "motivo": "Subject: «ce qui»."
+          },
+          {
+            "errado": "Ce qui je veux, c'est du calme.",
+            "certo": "Ce que je veux, c'est du calme.",
+            "motivo": "Object: «ce que»."
+          },
+          {
+            "errado": "Ce que j'ai besoin, c'est de repos.",
+            "certo": "Ce dont j'ai besoin, c'est de repos.",
+            "motivo": "«Avoir besoin de»: «ce dont»."
+          }
+        ],
+        "tag": "Emphasis"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Answer aloud: «Qu'est-ce qui t'intéresse ? Qu'est-ce que tu veux ?» with «ce qui» and «ce que»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Explain aloud why you study French, with «parce que», «grâce à» and «pour»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-056.json",
+  "responsavel": null
+}

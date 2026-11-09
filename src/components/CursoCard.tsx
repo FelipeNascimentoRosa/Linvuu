@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Curso, coberturaDoCurso, statusDoCurso } from '../lib/content';
+import { Curso, coberturaNoSite, statusDoCurso } from '../lib/content';
 import { LOCALE, useT } from '../i18n';
 import { Capacitor } from '@capacitor/core';
 
@@ -10,7 +10,7 @@ export function CursoCard({ curso, nivel = 3 }: { curso: Curso; nivel?: 2 | 3 })
   const Titulo = nivel === 2 ? 'h2' : 'h3';
   const t = useT();
   const aulas = Math.floor((statusDoCurso(curso.id)?.publicadas ?? 0) / 4);
-  const cob = coberturaDoCurso(curso.id);
+  const cob = coberturaNoSite(curso.id);
   const cobertura = t.card.cobertura(cob.traduzidas, cob.total);
   return (
     <Link to={`/curso/${curso.id}`} className="lv-card">

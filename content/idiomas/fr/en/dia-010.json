@@ -1,0 +1,165 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 10,
+  "fase": 1,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Introductions, countries and numbers: Countries and nationalities",
+  "objetivo": "Lesson 3, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 3,
+    "titulo": "Introductions, countries and numbers",
+    "objetivo": "Introduce yourself and someone else, say where you are from and where you live, use «en», «au» and «aux» with countries, and count from 0 to 20, including age with «avoir».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Countries and nationalities",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 10,
+        "itens": [
+          {
+            "ru": "le Brésil, brésilien",
+            "translit": "luh bray-ZEEL, bray-zee-LYAN",
+            "pt": "",
+            "en": "",
+            "audio": "le Brésil, brésilien"
+          },
+          {
+            "ru": "la France, français",
+            "translit": "lah FRAHNS, frahn-SEH",
+            "pt": "",
+            "en": "",
+            "audio": "la France, français"
+          },
+          {
+            "ru": "le Portugal, portugais",
+            "translit": "luh pohr-tew-GAHL, pohr-tew-GEH",
+            "pt": "",
+            "en": "",
+            "audio": "le Portugal, portugais"
+          },
+          {
+            "ru": "l'Espagne, espagnol",
+            "translit": "lehs-PAH-ny, ehs-pah-NYOHL",
+            "pt": "",
+            "en": "",
+            "audio": "l'Espagne, espagnol"
+          },
+          {
+            "ru": "l'Italie, italien",
+            "translit": "lee-tah-LEE, ee-tah-LYAN",
+            "pt": "",
+            "en": "",
+            "audio": "l'Italie, italien"
+          },
+          {
+            "ru": "l'Allemagne, allemand",
+            "translit": "lahl-MAH-ny, ahl-MAHN",
+            "pt": "",
+            "en": "",
+            "audio": "l'Allemagne, allemand"
+          },
+          {
+            "ru": "les États-Unis, américain",
+            "translit": "lay-zay-tah-zew-NEE, ah-may-ree-KAN",
+            "pt": "",
+            "en": "",
+            "audio": "les États-Unis, américain"
+          },
+          {
+            "ru": "le Canada, canadien",
+            "translit": "luh kah-nah-DAH, kah-nah-DYAN",
+            "pt": "",
+            "en": "",
+            "audio": "le Canada, canadien"
+          },
+          {
+            "ru": "la Suisse, suisse",
+            "translit": "lah SWEES, SWEES",
+            "pt": "",
+            "en": "",
+            "audio": "la Suisse, suisse"
+          },
+          {
+            "ru": "la Belgique, belge",
+            "translit": "lah behl-ZHEEK, BEHLZH",
+            "pt": "",
+            "en": "",
+            "audio": "la Belgique, belge"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Origin, nationality and where you live",
+        "explicacao": "STEP 1: to say where you are from, use «être de» + city or country: «Je suis de Paris.» «Je suis du Brésil.» STEP 2: for nationality, use «être» + adjective, which agrees in gender: «Je suis brésilien / brésilienne.» Nationality adjectives are written in lowercase (unlike English, where «Brazilian» has a capital). STEP 3: every country has a gender. Those ending in «-e» are almost always feminine: «la France, l'Italie, l'Espagne». The others are masculine: «le Brésil, le Canada, le Portugal». Plurals: «les États-Unis». STEP 4: to say where you live, use «habiter» with the right preposition: «à» + city («à Paris»); «en» + feminine country or masculine country that starts with a vowel («en France», «en Italie»); «au» + masculine country («au Brésil», «au Canada»); «aux» + plural country («aux États-Unis»). STEP 5: the same rule works for \"to go\": «Je vais à Paris, en France, au Canada, aux États-Unis».",
+        "comparacao": "In English we say «I live in Paris», «in France», «in Brazil», «in the United States», always with the same word, \"in\". French splits this into four: «à», «en», «au» and «aux». Choose by the gender of the country and not by the sound.",
+        "tabela": [
+          {
+            "tipo": "cidade",
+            "preposition": "à",
+            "example": "J'habite à Paris."
+          },
+          {
+            "tipo": "país feminino (e masculino com vogal)",
+            "preposition": "en",
+            "example": "J'habite en France."
+          },
+          {
+            "tipo": "país masculino",
+            "preposition": "au",
+            "example": "J'habite au Brésil."
+          },
+          {
+            "tipo": "país plural",
+            "preposition": "aux",
+            "example": "J'habite aux États-Unis."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "J'habite à Brésil.",
+            "certo": "J'habite au Brésil.",
+            "motivo": "Masculine country: «au»."
+          },
+          {
+            "errado": "J'habite au France.",
+            "certo": "J'habite en France.",
+            "motivo": "Feminine country: «en»."
+          },
+          {
+            "errado": "Elle est français.",
+            "certo": "Elle est française.",
+            "motivo": "The adjective agrees with the gender."
+          },
+          {
+            "errado": "Je suis Brésilien.",
+            "certo": "Je suis brésilien.",
+            "motivo": "Nationality (adjective) in lowercase."
+          }
+        ],
+        "tag": "Prepositions"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say: «Je suis… (nationality). J'habite à/en/au… Mon ami est… Il/Elle habite…» Use three different countries."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say aloud: «Je m'appelle… Je suis… Et vous ?» and answer as if you were the other person."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-003.json",
+  "responsavel": null
+}

@@ -1,0 +1,147 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 238,
+  "fase": 24,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Strategies for understanding and being understood: False friends",
+  "objetivo": "Lesson 60, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 60,
+    "titulo": "Strategies for understanding and being understood",
+    "objetivo": "Understand more than you know (similar words, word families, false friends), work around missing words and ask for help without stalling the conversation.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "False friends",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "rester",
+            "translit": "reh-STAY",
+            "pt": "to stay; to remain",
+            "en": "to stay; to remain",
+            "audio": "rester"
+          },
+          {
+            "ru": "demander",
+            "translit": "duh-mahn-DAY",
+            "pt": "to ask; to ask for",
+            "en": "to ask; to ask for",
+            "audio": "demander"
+          },
+          {
+            "ru": "attendre",
+            "translit": "ah-tahn-DRUH",
+            "pt": "to wait (for)",
+            "en": "to wait (for)",
+            "audio": "attendre"
+          },
+          {
+            "ru": "exprès",
+            "translit": "ek-SPREH",
+            "pt": "on purpose",
+            "en": "on purpose",
+            "audio": "exprès"
+          },
+          {
+            "ru": "sale",
+            "translit": "SAL",
+            "pt": "dirty",
+            "en": "dirty",
+            "audio": "sale"
+          },
+          {
+            "ru": "ignorer",
+            "translit": "ee-nyoh-RAY",
+            "pt": "not to know; to ignore (depending on context)",
+            "en": "not to know; to ignore (depending on context)",
+            "audio": "ignorer"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Watch out for the traps",
+        "explicacao": "STEP 1: «rester» = to stay: «Je reste à Paris.» (not «to rest») STEP 2: «demander» = to ask (not “to demand”): «Il demande un café.» «Elle demande l'heure.» STEP 3: «attendre» = to wait (not “to attend”): «J'attends le bus.» STEP 4: «exprès» = on purpose (not “express”): «Il l'a fait exprès.» STEP 5: «sale» = dirty (not “sale”): «Mes mains sont sales.» STEP 6: «ignorer» can mean not to know, and can also mean to ignore, depending on context: «J'ignore la réponse.» STEP 7: «magasin» = shop (not «magazine»): «Il y a un magasin près d'ici.» STEP 8: «blesser» = to hurt, to wound (not “to bless”): «Il s'est blessé à la jambe.» STEP 9: «tirer» = to pull (not “to tire”): «Tirez la porte.»",
+        "comparacao": "French «attendre» usually means to wait (for), not to attend an event: «assister à» means to attend. «Ignorer» can mean not to know, as in «j’ignore la réponse», or to ignore someone, depending on context.",
+        "tabela": [
+          {
+            "expression": "rester",
+            "function": "to stay",
+            "example": "Je reste à Paris."
+          },
+          {
+            "expression": "demander",
+            "function": "to ask for, to ask",
+            "example": "Elle demande l'heure."
+          },
+          {
+            "expression": "attendre",
+            "function": "to wait (for)",
+            "example": "J'attends le bus."
+          },
+          {
+            "expression": "exprès",
+            "function": "on purpose",
+            "example": "Il l'a fait exprès."
+          },
+          {
+            "expression": "sale",
+            "function": "dirty",
+            "example": "Mes mains sont sales."
+          },
+          {
+            "expression": "ignorer",
+            "function": "not to know",
+            "example": "J'ignore la réponse."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "J'attends le client. (in place of «I serve»)",
+            "certo": "Je reçois le client. / Je sers le client.",
+            "motivo": "«Attendre» means to wait."
+          },
+          {
+            "errado": "Il a fait ça expresso.",
+            "certo": "Il a fait ça exprès.",
+            "motivo": "«Exprès» means on purpose."
+          },
+          {
+            "errado": "Je demande si tu as faim. (intended meaning: “I demand that you eat”)",
+            "certo": "J’exige que tu manges.",
+            "motivo": "«Demander» commonly means to ask or ask for. For an emphatic demand, «exiger» is often appropriate; context matters."
+          },
+          {
+            "errado": "Mon pull est sal.",
+            "certo": "Mon pull est sale.",
+            "motivo": "Adjective «sale»."
+          }
+        ],
+        "tag": "False friends"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Say aloud six sentences, one with each false friend: rester, demander, attendre, exprès, sale, ignorer."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Give one example of each shortcut: cognate, word family, prefix."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-060.json",
+  "responsavel": null
+}

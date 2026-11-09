@@ -1,0 +1,110 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 70,
+  "fase": 7,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "A1 review and mock exam: Reading and listening (A1 format, original)",
+  "objetivo": "Lesson 18, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 18,
+    "titulo": "A1 review and mock exam",
+    "objetivo": "Review all of A1 on one map, practice reading, listening, writing and speaking, correct the most common mistakes of English speakers, and take an original mock exam.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Reading and listening (A1 format, original)",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "texto",
+        "min": 10,
+        "titulo": "Une nouvelle ville / A new city",
+        "ru": "Je m'appelle Carlos. J'ai trente ans et je suis brésilien. J'habite dans un petit appartement à Lyon. Il y a deux pièces et une cuisine. Je travaille dans un restaurant tous les jours, de neuf heures à dix-sept heures. D'habitude, je déjeune à midi. Le week-end, j'aime me promener dans le parc et cuisiner pour mes amis. Hier, il a plu, alors je suis resté à la maison. Aujourd'hui, il fait beau : je vais jouer au football avec mes amis.",
+        "pt": "My name is Carlos. I am thirty years old and I am Brazilian. I live in a small apartment in Lyon. There are two rooms and a kitchen. I work in a restaurant every day, from nine in the morning to five in the afternoon. I usually have lunch at noon. At the weekend, I like to go for walks in the park and cook for friends. Yesterday it rained, so I stayed at home. Today the weather is nice: I am going to play football (soccer) with my friends.",
+        "perguntas": [
+          {
+            "pergunta": "D'où est Carlos ?",
+            "resposta": "Du Brésil."
+          },
+          {
+            "pergunta": "Où travaille-t-il ?",
+            "resposta": "Dans un restaurant."
+          },
+          {
+            "pergunta": "À quelle heure déjeune-t-il d'habitude ?",
+            "resposta": "À midi."
+          },
+          {
+            "pergunta": "Qu'est-ce qu'il a fait hier ?",
+            "resposta": "Il est resté à la maison parce qu'il a plu."
+          },
+          {
+            "pergunta": "Qu'est-ce qu'il va faire aujourd'hui ?",
+            "resposta": "Il va jouer au football avec ses amis."
+          }
+        ]
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "Un nouveau voisin / A new neighbor",
+        "contexto": "Carlos talks to his neighbor, Julie.",
+        "linhas": [
+          {
+            "personagem": "Carlos",
+            "ru": "— Bonjour ! Je suis Carlos. J'habite à côté de chez vous.",
+            "en": "— Hello! I'm Carlos. I live next door to you.",
+            "audio": "Bonjour ! Je suis Carlos. J'habite à côté de chez vous."
+          },
+          {
+            "personagem": "Julie",
+            "ru": "— Enchantée, Carlos. Je m'appelle Julie. Vous êtes d'où ?",
+            "en": "— Nice to meet you, Carlos. My name is Julie. Where are you from, sir?",
+            "audio": "Enchantée, Carlos. Je m'appelle Julie. Vous êtes d'où ?"
+          },
+          {
+            "personagem": "Carlos",
+            "ru": "— Je suis du Brésil. Et vous ?",
+            "en": "— I'm from Brazil. And you, madam?",
+            "audio": "Je suis du Brésil. Et vous ?"
+          },
+          {
+            "personagem": "Julie",
+            "ru": "— Moi, je suis de Lyon. Vous travaillez ici ?",
+            "en": "— I'm from Lyon. Do you work here, sir?",
+            "audio": "Moi, je suis de Lyon. Vous travaillez ici ?"
+          },
+          {
+            "personagem": "Carlos",
+            "ru": "— Oui, je travaille dans un restaurant près de la gare. Vous voulez venir manger un jour ?",
+            "en": "— Yes, I work in a restaurant near the station. Would you like to come and eat one day?",
+            "audio": "Oui, je travaille dans un restaurant près de la gare. Vous voulez venir manger un jour ?"
+          },
+          {
+            "personagem": "Julie",
+            "ru": "— Avec plaisir ! Je peux venir samedi soir ?",
+            "en": "— With pleasure! Can I come on Saturday evening?",
+            "audio": "Avec plaisir ! Je peux venir samedi soir ?"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 7,
+        "enunciado": "Answer aloud: who Carlos is, what he does and what he likes. Then say what you would do in his place on a weekend."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Reread the text and the dialogue below aloud before you start."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-018.json",
+  "responsavel": null
+}

@@ -1,0 +1,531 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 80,
+  "fase": 8,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Passé composé or imparfait?: Review and practice for lesson 20",
+  "objetivo": "Lesson 20, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 20,
+    "titulo": "Passé composé or imparfait?",
+    "objetivo": "Choose between the passé composé (what happened) and the imparfait (the setting and the habit) and tell a short story with both tenses.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 20",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Il pleuvait quand je suis sorti",
+            "opcoes": [
+              "Il pleuvait quand je suis sorti",
+              "Il a plu quand je suis sorti",
+              "Il pleut quand je sors"
+            ],
+            "gabarito": "Il pleuvait quand je suis sorti",
+            "explicacao": "Listen to the two tenses.",
+            "id": "fr-020-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Soudain, j'ai entendu un bruit",
+            "opcoes": [
+              "Soudain, j'ai entendu un bruit",
+              "Soudain, j'entendais un bruit",
+              "Soudain, j'entends un bruit"
+            ],
+            "gabarito": "Soudain, j'ai entendu un bruit",
+            "explicacao": "Listen to «ai entendu».",
+            "id": "fr-020-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je mangeais quand tu as appelé",
+            "opcoes": [
+              "Je mangeais quand tu as appelé",
+              "J'ai mangé quand tu appelais",
+              "Je mange quand tu appelles"
+            ],
+            "gabarito": "Je mangeais quand tu as appelé",
+            "explicacao": "Listen to the order.",
+            "id": "fr-020-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "C'était un samedi, il faisait beau",
+            "respostaEsperada": "C'était un samedi, il faisait beau",
+            "explicacao": "Write: C'était un samedi, il faisait beau.",
+            "id": "fr-020-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «soudain» mean?",
+            "audio": "soudain",
+            "opcoes": [
+              "suddenly",
+              "the door",
+              "to fall",
+              "then"
+            ],
+            "gabarito": "suddenly",
+            "explicacao": "«soudain» = suddenly.",
+            "id": "fr-020-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Un jour, j'ai rencontré Paul",
+            "respostaEsperada": "Un jour, j'ai rencontré Paul",
+            "explicacao": "Write: Un jour, j'ai rencontré Paul.",
+            "id": "fr-020-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je savais la réponse",
+            "respostaEsperada": "Je savais la réponse",
+            "explicacao": "Write: Je savais la réponse.",
+            "id": "fr-020-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Setting (background): which one is correct?",
+            "opcoes": [
+              "Il faisait froid.",
+              "Il a fait froid.",
+              "Il fera froid."
+            ],
+            "gabarito": "Il faisait froid.",
+            "explicacao": "Setting: imparfait.",
+            "id": "fr-020-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «pendant que» mean?",
+            "audio": "pendant que",
+            "opcoes": [
+              "the noise",
+              "while",
+              "when",
+              "fear"
+            ],
+            "gabarito": "while",
+            "explicacao": "«pendant que» = while.",
+            "id": "fr-020-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Event: which one is correct?",
+            "opcoes": [
+              "Soudain, la porte s'est ouverte.",
+              "Soudain, la porte s'ouvrait.",
+              "Soudain, la porte s'ouvre."
+            ],
+            "gabarito": "Soudain, la porte s'est ouverte.",
+            "explicacao": "Event: passé composé.",
+            "id": "fr-020-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je lisais quand tu es entré.",
+              "Je lis quand tu es entré.",
+              "J'ai lu quand tu entrais."
+            ],
+            "gabarito": "Je lisais quand tu es entré.",
+            "explicacao": "Action in progress + interruption.",
+            "id": "fr-020-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«I met Paul in 2010» in French:",
+            "opcoes": [
+              "J'ai connu Paul en 2010.",
+              "Je connaissais Paul en 2010.",
+              "Je connais Paul en 2010."
+            ],
+            "gabarito": "J'ai connu Paul en 2010.",
+            "explicacao": "A specific moment: passé composé.",
+            "id": "fr-020-e10"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "tout à coup",
+            "respostaEsperada": "tout à coup",
+            "explicacao": "suddenly",
+            "id": "fr-020-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «tomber» mean?",
+            "audio": "tomber",
+            "opcoes": [
+              "then",
+              "the door",
+              "to fall",
+              "gritar"
+            ],
+            "gabarito": "to fall",
+            "explicacao": "«tomber» = to fall.",
+            "id": "fr-020-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il ___ quand je suis sorti. (pleuvoir)",
+            "opcoes": [
+              "pleuvait",
+              "a plu",
+              "pleut"
+            ],
+            "gabarito": "pleuvait",
+            "explicacao": "Setting.",
+            "id": "fr-020-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Hier, je ___ au cinéma. (aller)",
+            "opcoes": [
+              "suis allé",
+              "allais",
+              "ai allé"
+            ],
+            "gabarito": "suis allé",
+            "explicacao": "Event.",
+            "id": "fr-020-e12"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle ___ peur parce qu'il faisait nuit. (avoir)",
+            "opcoes": [
+              "avait",
+              "a eu",
+              "aura"
+            ],
+            "gabarito": "avait",
+            "explicacao": "State: imparfait.",
+            "id": "fr-020-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «rencontrer» mean?",
+            "audio": "rencontrer",
+            "opcoes": [
+              "encontrar, achar",
+              "that day",
+              "encontrar",
+              "gritar"
+            ],
+            "gabarito": "encontrar",
+            "explicacao": "«rencontrer» = encontrar.",
+            "id": "fr-020-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Pendant que je cuisinais, il ___. (lire)",
+            "opcoes": [
+              "lisait",
+              "a lu",
+              "lit"
+            ],
+            "gabarito": "lisait",
+            "explicacao": "Parallel actions.",
+            "id": "fr-020-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Je mangeais quand tu as appelé.»",
+            "opcoes": [
+              "Je",
+              "mangeais",
+              "quand",
+              "tu",
+              "as",
+              "appelé"
+            ],
+            "gabarito": "Je mangeais quand tu as appelé.",
+            "explicacao": "Imparfait + passé composé.",
+            "id": "fr-020-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Il faisait beau, alors je suis sorti.»",
+            "opcoes": [
+              "Il",
+              "faisait",
+              "beau,",
+              "alors",
+              "je",
+              "suis",
+              "sorti"
+            ],
+            "gabarito": "Il faisait beau, alors je suis sorti.",
+            "explicacao": "Setting + action.",
+            "id": "fr-020-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: It was Saturday and it was raining. Suddenly, I heard a noise. I opened the door.",
+            "respostaEsperada": "C'était samedi et il pleuvait. Soudain, j'ai entendu un bruit. J'ai ouvert la porte.",
+            "id": "fr-020-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «quand» mean?",
+            "audio": "quand",
+            "opcoes": [
+              "when",
+              "descobrir",
+              "to fall",
+              "the key"
+            ],
+            "gabarito": "when",
+            "explicacao": "«quand» = when.",
+            "id": "fr-020-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Soudain, nous ___ un bruit. (entendre)",
+            "opcoes": [
+              "entendions",
+              "avons entendons",
+              "avons entendu"
+            ],
+            "gabarito": "avons entendu",
+            "explicacao": "«Soudain» introduces an event: passé composé.",
+            "id": "fr-020-e18"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Quand tu as téléphoné, je ___ . (cuisiner)",
+            "opcoes": [
+              "cuisinais",
+              "ai cuisiné",
+              "cuisinait"
+            ],
+            "gabarito": "cuisinais",
+            "explicacao": "The action in progress, which gets interrupted, goes in the imparfait.",
+            "id": "fr-020-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Chaque hiver, il ___ très froid. (faire)",
+            "opcoes": [
+              "a fait",
+              "faisait",
+              "fait"
+            ],
+            "gabarito": "faisait",
+            "explicacao": "«Chaque hiver» marks a habit: imparfait.",
+            "id": "fr-020-e20"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «le bruit» mean?",
+            "audio": "le bruit",
+            "opcoes": [
+              "the noise",
+              "then",
+              "descobrir",
+              "the street"
+            ],
+            "gabarito": "the noise",
+            "explicacao": "«le bruit» = the noise.",
+            "id": "fr-020-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "à ce moment-là",
+            "respostaEsperada": "à ce moment-là",
+            "explicacao": "at that moment",
+            "id": "fr-020-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Un jour, je ___ Paul dans la rue. (rencontrer)",
+            "opcoes": [
+              "rencontrais",
+              "avais rencontré",
+              "ai rencontré"
+            ],
+            "gabarito": "ai rencontré",
+            "explicacao": "«Un jour» introduces an event: passé composé.",
+            "id": "fr-020-e21"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je ___ la réponse, mais je n'ai rien dit. (I already knew)",
+            "opcoes": [
+              "savais",
+              "ai su",
+              "sais"
+            ],
+            "gabarito": "savais",
+            "explicacao": "The state of knowing, with no marked moment, goes in the imparfait.",
+            "id": "fr-020-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence combines the two tenses correctly?",
+            "opcoes": [
+              "J'ai dormi quand le téléphone sonnait.",
+              "Je dormais quand le téléphone a sonné.",
+              "Je dormis quand le téléphone sonnait."
+            ],
+            "gabarito": "Je dormais quand le téléphone a sonné.",
+            "explicacao": "Action in progress (imparfait) interrupted by an event (passé composé).",
+            "id": "fr-020-e23"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Il pleuvait quand je suis sorti",
+            "opcoes": [
+              "je",
+              "Il",
+              "quand",
+              "suis",
+              "pleuvait",
+              "sorti"
+            ],
+            "gabarito": "Il pleuvait quand je suis sorti",
+            "explicacao": "Write: Il pleuvait quand je suis sorti",
+            "id": "fr-020-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which word introduces an event?",
+            "opcoes": [
+              "d'habitude",
+              "pendant que",
+              "soudain"
+            ],
+            "gabarito": "soudain",
+            "explicacao": "«Soudain» takes the passé composé.",
+            "id": "fr-020-e24"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «J'ai pu venir» mean?",
+            "opcoes": [
+              "I managed to come",
+              "I used to be able to come",
+              "I could come"
+            ],
+            "gabarito": "I managed to come",
+            "explicacao": "In the passé composé, «pouvoir» indicates that the action did happen.",
+            "id": "fr-020-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence describes a habit in the past?",
+            "opcoes": [
+              "Chaque jour, j'ai pris le bus.",
+              "Chaque jour, je prenais le bus.",
+              "Hier, je prenais le bus."
+            ],
+            "gabarito": "Chaque jour, je prenais le bus.",
+            "explicacao": "«Chaque jour» marks a habit: imparfait.",
+            "id": "fr-020-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Soudain, j'ai entendu un bruit",
+            "opcoes": [
+              "entendu",
+              "Soudain,",
+              "bruit",
+              "un",
+              "j'ai"
+            ],
+            "gabarito": "Soudain, j'ai entendu un bruit",
+            "explicacao": "Write: Soudain, j'ai entendu un bruit",
+            "id": "fr-020-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Suddenly, he opened the door.»",
+            "opcoes": [
+              "Soudain,",
+              "il",
+              "a",
+              "ouvert",
+              "la",
+              "porte"
+            ],
+            "gabarito": "Soudain, il a ouvert la porte.",
+            "explicacao": "Event: passé composé.",
+            "id": "fr-020-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «He was afraid because he was alone.»",
+            "opcoes": [
+              "Il",
+              "avait",
+              "peur",
+              "parce",
+              "qu'il",
+              "était",
+              "seul"
+            ],
+            "gabarito": "Il avait peur parce qu'il était seul.",
+            "explicacao": "Cause and feeling: imparfait.",
+            "id": "fr-020-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: It was raining and I was alone. Suddenly, the phone rang.",
+            "respostaEsperada": "Il pleuvait et j'étais seul. Soudain, le téléphone a sonné.",
+            "id": "fr-020-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: One day, I met Paul. He was tired.",
+            "respostaEsperada": "Un jour, j'ai rencontré Paul. Il était fatigué.",
+            "id": "fr-020-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Tell in 1 minute a short story (real or invented) with a setting and an event."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Tell aloud what happened the last time you left the house."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-020.json",
+  "responsavel": null
+}

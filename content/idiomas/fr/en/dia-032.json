@@ -1,0 +1,519 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 32,
+  "fase": 4,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "The city: il y a, places and demonstratives: Review and practice for lesson 8",
+  "objetivo": "Lesson 8, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 8,
+    "titulo": "The city: il y a, places and demonstratives",
+    "objetivo": "Say what there is in the city with «il y a», locate places with prepositions, and use the demonstratives «ce», «cet», «cette» and «ces».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 8",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Il y a une pharmacie ici",
+            "opcoes": [
+              "Il y a une pharmacie ici",
+              "Il n'y a pas de pharmacie ici",
+              "C'est une pharmacie"
+            ],
+            "gabarito": "Il y a une pharmacie ici",
+            "explicacao": "Listen to «il y a».",
+            "id": "fr-008-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "La banque est à côté du café",
+            "opcoes": [
+              "La banque est à côté du café",
+              "La banque est devant le café",
+              "La banque est derrière le café"
+            ],
+            "gabarito": "La banque est à côté du café",
+            "explicacao": "Listen to «à côté du».",
+            "id": "fr-008-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Cet hôtel est grand",
+            "opcoes": [
+              "Cet hôtel est grand",
+              "Cette gare est grande",
+              "Ces hôtels sont grands"
+            ],
+            "gabarito": "Cet hôtel est grand",
+            "explicacao": "Listen to «cet».",
+            "id": "fr-008-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Il n'y a pas de banque",
+            "respostaEsperada": "Il n'y a pas de banque",
+            "explicacao": "Write: Il n'y a pas de banque.",
+            "id": "fr-008-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "La gare est en face de la poste",
+            "respostaEsperada": "La gare est en face de la poste",
+            "explicacao": "Write: La gare est en face de la poste.",
+            "id": "fr-008-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Excuse me, madam. Is there a pharmacy near here?»",
+            "opcoes": [
+              "près",
+              "a",
+              "madame.",
+              "d'ici",
+              "Excusez-moi,",
+              "?",
+              "une",
+              "y",
+              "Il",
+              "pharmacie"
+            ],
+            "gabarito": "Excusez-moi, madame. Il y a une pharmacie près d'ici ?",
+            "explicacao": "Write: Excusez-moi, madame. Il y a une pharmacie près d'ici ?",
+            "id": "fr-008-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Excusez-moi, où est la gare",
+            "respostaEsperada": "Excusez-moi, où est la gare",
+            "explicacao": "Write: Excusez-moi, où est la gare.",
+            "id": "fr-008-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Oui. Vous voyez cette rue, à droite ?",
+            "respostaEsperada": "Oui. Vous voyez cette rue, à droite ?",
+            "explicacao": "Yes, there is. Do you see that street, on the right?",
+            "id": "fr-008-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Il y a deux banques.",
+              "Ils y ont deux banques.",
+              "Il y a deux banque."
+            ],
+            "gabarito": "Il y a deux banques.",
+            "explicacao": "«Il y a» never changes.",
+            "id": "fr-008-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «next to the café»?",
+            "opcoes": [
+              "à côté du café",
+              "à côté le café",
+              "à côté de le café"
+            ],
+            "gabarito": "à côté du café",
+            "explicacao": "de + le = du.",
+            "id": "fr-008-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which demonstrative goes with «hôtel»?",
+            "opcoes": [
+              "cet",
+              "ce",
+              "cette"
+            ],
+            "gabarito": "cet",
+            "explicacao": "Masculine + vowel or silent «h».",
+            "id": "fr-008-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Excusez-moi, madame. Il y a une pharmacie près d'ici ?",
+            "respostaEsperada": "Excusez-moi, madame. Il y a une pharmacie près d'ici ?",
+            "explicacao": "Excuse me, madam. Is there a pharmacy near here?",
+            "id": "fr-008-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct in the negative?",
+            "opcoes": [
+              "Il n'y a pas de pharmacie.",
+              "Il n'y a pas une pharmacie.",
+              "Il y a pas pharmacie."
+            ],
+            "gabarito": "Il n'y a pas de pharmacie.",
+            "explicacao": "After a negative, «de».",
+            "id": "fr-008-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "La gare est ___ de la poste. (near)",
+            "opcoes": [
+              "près",
+              "devant",
+              "entre"
+            ],
+            "gabarito": "près",
+            "explicacao": "«Près de».",
+            "id": "fr-008-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il y a un café ___ la banque et la poste. (entre)",
+            "opcoes": [
+              "entre",
+              "derrière",
+              "devant"
+            ],
+            "gabarito": "entre",
+            "explicacao": "«Entre… et…».",
+            "id": "fr-008-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Oui, je vois.",
+            "respostaEsperada": "Oui, je vois.",
+            "explicacao": "Yes, I see it.",
+            "id": "fr-008-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ maison est grande. (this)",
+            "opcoes": [
+              "Cette",
+              "Ce",
+              "Cet"
+            ],
+            "gabarito": "Cette",
+            "explicacao": "Maison is feminine.",
+            "id": "fr-008-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «The pharmacy is on that street, opposite the bakery.»",
+            "opcoes": [
+              "cette",
+              "la",
+              "en",
+              "face",
+              "dans",
+              "de",
+              "est",
+              "boulangerie.",
+              "rue,",
+              "pharmacie",
+              "La"
+            ],
+            "gabarito": "La pharmacie est dans cette rue, en face de la boulangerie.",
+            "explicacao": "Write: La pharmacie est dans cette rue, en face de la boulangerie.",
+            "id": "fr-008-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tournez à ___ . (left)",
+            "opcoes": [
+              "gauche",
+              "droite",
+              "droit"
+            ],
+            "gabarito": "gauche",
+            "explicacao": "«À gauche».",
+            "id": "fr-008-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «La pharmacie est en face de la boulangerie.»",
+            "opcoes": [
+              "La",
+              "pharmacie",
+              "est",
+              "en",
+              "face",
+              "de",
+              "la",
+              "boulangerie"
+            ],
+            "gabarito": "La pharmacie est en face de la boulangerie.",
+            "explicacao": "En face de + article.",
+            "id": "fr-008-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Il y a un café près d'ici.»",
+            "opcoes": [
+              "Il",
+              "y",
+              "a",
+              "un",
+              "café",
+              "près",
+              "d'ici"
+            ],
+            "gabarito": "Il y a un café près d'ici.",
+            "explicacao": "Il y a + indefinite article.",
+            "id": "fr-008-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: Is there a pharmacy near here? The pharmacy is opposite the bank.",
+            "respostaEsperada": "Il y a une pharmacie près d'ici ? La pharmacie est en face de la banque.",
+            "id": "fr-008-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "La pharmacie est dans cette rue, en face de la boulangerie.",
+            "respostaEsperada": "La pharmacie est dans cette rue, en face de la boulangerie.",
+            "explicacao": "The pharmacy is on that street, opposite the bakery.",
+            "id": "fr-008-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il y a ___ café ici. (um)",
+            "opcoes": [
+              "le",
+              "du",
+              "un"
+            ],
+            "gabarito": "un",
+            "explicacao": "After «il y a» you use the indefinite article.",
+            "id": "fr-008-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Merci beaucoup, madame. C'est loin ?",
+            "respostaEsperada": "Merci beaucoup, madame. C'est loin ?",
+            "explicacao": "Thank you very much, madam. Is it far?",
+            "id": "fr-008-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "La banque est ___ l'école. (behind)",
+            "opcoes": [
+              "derrière",
+              "devant",
+              "entre"
+            ],
+            "gabarito": "derrière",
+            "explicacao": "«Derrière» = behind.",
+            "id": "fr-008-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ hôtel est grand. (this)",
+            "opcoes": [
+              "Ce",
+              "Cet",
+              "Cette"
+            ],
+            "gabarito": "Cet",
+            "explicacao": "Masculine before a vowel: «cet».",
+            "id": "fr-008-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Le café est à côté ___ supermarché. (do)",
+            "opcoes": [
+              "de",
+              "au",
+              "du"
+            ],
+            "gabarito": "du",
+            "explicacao": "«À côté de» + «le» becomes «à côté du».",
+            "id": "fr-008-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «entre» mean?",
+            "audio": "entre",
+            "opcoes": [
+              "this (feminine), that (feminine)",
+              "the hospital",
+              "the station",
+              "entre"
+            ],
+            "gabarito": "entre",
+            "explicacao": "«entre» = entre.",
+            "id": "fr-008-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il n'y a pas ___ supermarché ici. (de)",
+            "opcoes": [
+              "de",
+              "un",
+              "du"
+            ],
+            "gabarito": "de",
+            "explicacao": "In the negative, the article becomes «de».",
+            "id": "fr-008-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which demonstrative goes with «amis» in the plural?",
+            "opcoes": [
+              "ce",
+              "ces",
+              "cet"
+            ],
+            "gabarito": "ces",
+            "explicacao": "In the plural, «ces».",
+            "id": "fr-008-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which opening is more polite for asking for information?",
+            "opcoes": [
+              "Eh, la gare, où ?",
+              "Où la gare est ?",
+              "Excusez-moi, où est la gare ?"
+            ],
+            "gabarito": "Excusez-moi, où est la gare ?",
+            "explicacao": "«Excusez-moi» opens the request politely.",
+            "id": "fr-008-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Non, c'est tout près. Bonne journée !",
+            "respostaEsperada": "Non, c'est tout près. Bonne journée !",
+            "explicacao": "No, it's very close. Have a good day!",
+            "id": "fr-008-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «en face de» mean?",
+            "opcoes": [
+              "opposite",
+              "behind",
+              "next to"
+            ],
+            "gabarito": "opposite",
+            "explicacao": "«En face de» = opposite.",
+            "id": "fr-008-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «la boulangerie» mean?",
+            "audio": "la boulangerie",
+            "opcoes": [
+              "the pharmacy",
+              "the school",
+              "the bakery",
+              "in front of"
+            ],
+            "gabarito": "the bakery",
+            "explicacao": "«la boulangerie» = the bakery.",
+            "id": "fr-008-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence uses «il y a» correctly?",
+            "opcoes": [
+              "Ils y ont trois banques.",
+              "Il y a trois banques.",
+              "Il y ont trois banques."
+            ],
+            "gabarito": "Il y a trois banques.",
+            "explicacao": "«Il y a» does not change in the plural.",
+            "id": "fr-008-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «This bakery is near the station.»",
+            "opcoes": [
+              "Cette",
+              "boulangerie",
+              "est",
+              "près",
+              "de",
+              "la",
+              "gare"
+            ],
+            "gabarito": "Cette boulangerie est près de la gare.",
+            "explicacao": "«Cette» + feminine noun; «près de la».",
+            "id": "fr-008-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «There is a school behind the post office.»",
+            "opcoes": [
+              "Il",
+              "y",
+              "a",
+              "une",
+              "école",
+              "derrière",
+              "la",
+              "poste"
+            ],
+            "gabarito": "Il y a une école derrière la poste.",
+            "explicacao": "«Il y a» + indefinite article; «derrière» without «de».",
+            "id": "fr-008-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: There is no pharmacy here. The bank is next to the post office.",
+            "respostaEsperada": "Il n'y a pas de pharmacie ici. La banque est à côté de la poste.",
+            "id": "fr-008-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: This hotel is big. These houses are near the school.",
+            "respostaEsperada": "Cet hôtel est grand. Ces maisons sont près de l'école.",
+            "id": "fr-008-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Give out loud the route from your home to a pharmacy, using prepositions of place and directions."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Describe the street where you live out loud: what there is, what there isn't, and where everything is."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-008.json",
+  "responsavel": null
+}

@@ -10,7 +10,7 @@ import { firebaseAdmin, projetoFirebase } from './firebase-admin';
 const COLECAO = 'newsletter';
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 const ORIGEM = /^[a-z0-9-]{1,40}$/;
-const IDIOMAS = new Set(['pt', 'en', 'es']);
+const IDIOMAS = new Set(['pt', 'en']);
 /** Versão do texto de consentimento exibido no formulário (src/i18n: newsletter.consentimento). Mude ao alterar o texto. */
 export const VERSAO_CONSENTIMENTO = 'v1-2026-10-22';
 

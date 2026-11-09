@@ -1,0 +1,169 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 23,
+  "fase": 3,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Present tense in -er and -ir: The three groups in context",
+  "objetivo": "Lesson 6, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 6,
+    "titulo": "Present tense in -er and -ir",
+    "objetivo": "Conjugate regular -er and -ir verbs in the present, compare all three groups (-ar, -er, -ir), use «y» and «o» with their variants «e» and «u», and avoid the false friend «asistir».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "The three groups in context",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "asistir a",
+            "translit": "[pronuncia] ah-sees-TEER ah",
+            "pt": "to attend (class, a meeting)",
+            "en": "",
+            "audio": "asistir a"
+          },
+          {
+            "ru": "aprender a",
+            "translit": "[pronuncia] ah-prehn-DEHR ah",
+            "pt": "to learn to (do something)",
+            "en": "",
+            "audio": "aprender a"
+          },
+          {
+            "ru": "creer que",
+            "translit": "[pronuncia] kreh-EHR keh",
+            "pt": "to think that, to believe that",
+            "en": "",
+            "audio": "creer que"
+          },
+          {
+            "ru": "el periódico",
+            "translit": "[pronuncia] el peh-ree-OH-dee-ko",
+            "pt": "the newspaper",
+            "en": "",
+            "audio": "el periódico"
+          },
+          {
+            "ru": "la carta",
+            "translit": "[pronuncia] la KAR-tah",
+            "pt": "the letter",
+            "en": "",
+            "audio": "la carta"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Y/e, o/u and verbs with a preposition",
+        "explicacao": "STEP 1: «y» (and) becomes «e» before a word that starts with the sound «i»: «Ana e Inés», «padres e hijos», «Lee e investiga». This only happens before the sound «i»; before «hie-», it stays «y»: «agua y hielo». STEP 2: «o» (or) becomes «u» before a word that starts with the sound «o»: «siete u ocho», «mujer u hombre», «uno u otro». This only changes the sound, so two «o» sounds don't run together. STEP 3: with «aprender», use «a» + infinitive: «Aprendo a leer en español.» STEP 4: «asistir a» needs «a» before the place or event: «Asisto a clase», «Asistimos a una reunión». STEP 5: «creer que» + clause: «Creo que vive en Valencia.» To say «I think so», use «Creo que sí»; «Creo que no» for the opposite. STEP 6: remember the «personal a» also applies with -er and -ir verbs: «Recibo a Ana», «Escucho a Pablo». STEP 7: the verb agrees with the subject even when there are two of them: «Ana y Pablo viven aquí» (vivir, ellos form).",
+        "comparacao": "English «and» and «or» never change form, so this sound-based swap («y»→«e», «o»→«u») has no English equivalent to lean on — it's a genuinely new habit to build. It's brief but constant, and skipping it is one of the things that makes learner Spanish sound less fluent.",
+        "tabela": [
+          {
+            "regra": "[misto] y becomes e before i-, hi- (except hie-)",
+            "exemplo": "[misto] Ana e Inés viven aquí.",
+            "traducao": "[misto] Ana and Inés live here."
+          },
+          {
+            "regra": "[misto] o becomes u before o-, ho-",
+            "exemplo": "[misto] Tengo siete u ocho libros.",
+            "traducao": "[misto] I have seven or eight books."
+          },
+          {
+            "regra": "[misto] aprender a + infinitive",
+            "exemplo": "[misto] Aprendo a cocinar.",
+            "traducao": "[misto] Aprendo a cozinhar."
+          },
+          {
+            "regra": "[misto] asistir a + place, event",
+            "exemplo": "[misto] Asisto a una clase.",
+            "traducao": "[misto] I'm going to a class."
+          },
+          {
+            "regra": "[misto] creer que + clause",
+            "exemplo": "[misto] Creo que sí.",
+            "traducao": "[misto] I think so."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] Padres y hijos viven aquí.",
+            "certo": "[misto] Padres e hijos viven aquí.",
+            "motivo": "«Y» becomes «e» before the sound «i»."
+          },
+          {
+            "errado": "[misto] Siete o ocho libros",
+            "certo": "[misto] Siete u ocho libros",
+            "motivo": "«O» becomes «u» before a word starting with «o»."
+          },
+          {
+            "errado": "[misto] Aprendo cocinar.",
+            "certo": "[misto] Aprendo a cocinar.",
+            "motivo": "After «aprender», the infinitive needs «a»."
+          },
+          {
+            "errado": "[misto] Asisto la clase.",
+            "certo": "[misto] Asisto a clase.",
+            "motivo": "«Asistir» needs «a»."
+          },
+          {
+            "errado": "[misto] Creo de que sí.",
+            "certo": "[misto] Creo que sí.",
+            "motivo": "There's no «de» after «creer»."
+          }
+        ],
+        "tag": "Conjunctions"
+      },
+      {
+        "tipo": "texto",
+        "min": 8,
+        "titulo": "Un día tranquilo / A quiet day",
+        "ru": "Hoy es un día tranquilo. Vivo en Valencia con un amigo, Hugo. Hugo lee el periódico y bebe café. Yo aprendo palabras nuevas y escribo una carta. Después comemos juntos: Hugo cocina arroz y yo corto pan. Recibimos a una amiga, Clara, y abrimos la ventana. Clara no come carne, pero come mucha fruta.",
+        "pt": "Today is a quiet day. I live in Valencia with a friend, Hugo. Hugo reads the newspaper and has coffee. I'm learning new words and I write a letter. Then we eat together: Hugo cooks rice and I cut bread. We have a friend over, Clara, and we open the window. Clara doesn't eat meat, but she eats a lot of fruit.",
+        "perguntas": [
+          {
+            "pergunta": "[misto] ¿Dónde vive el narrador?",
+            "resposta": "[misto] En Valencia, con un amigo."
+          },
+          {
+            "pergunta": "[misto] ¿Qué lee Hugo?",
+            "resposta": "[misto] El periódico."
+          },
+          {
+            "pergunta": "[misto] ¿Qué escribe el narrador?",
+            "resposta": "[misto] Una carta."
+          },
+          {
+            "pergunta": "[misto] ¿A quién reciben?",
+            "resposta": "[misto] A Clara, una amiga."
+          },
+          {
+            "pergunta": "[misto] ¿Qué no come Clara?",
+            "resposta": "[misto] Carne."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Write and say five sentences about your day with verbs from each group (-ar, -er, -ir) and one sentence with «y» or «o»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Fill in the three-group table from memory: for each person, give the form of «hablar», «comer» and «vivir»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-006.json",
+  "responsavel": null
+}

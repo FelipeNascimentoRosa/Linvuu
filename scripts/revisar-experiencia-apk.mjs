@@ -2,6 +2,7 @@
 import { chromium } from 'playwright';
 import assert from 'node:assert/strict';
 import { spawn } from 'node:child_process';
+const semAbertura=async(b,o)=>{const c=await b.newContext(o);await c.addInitScript(()=>{try{localStorage.setItem('linvuu:primeira-abertura:v1','1');}catch{}});return c;}; // estes testes começam depois das telas da primeira abertura
 const base='http://127.0.0.1:4336';
 const server=spawn(process.execPath,['node_modules/vite/bin/vite.js','preview','--outDir','dist-apk','--port','4336','--host','127.0.0.1','--strictPort'],{stdio:'ignore'});
 let browser;
@@ -9,8 +10,8 @@ const largura=async page=>{const v=await page.evaluate(()=>[document.documentEle
 try{
  for(let i=0;i<60;i++){try{if((await fetch(base)).ok)break;}catch{}await new Promise(r=>setTimeout(r,300));}
  browser=await chromium.launch();
- for(const width of [320,390])for(const locale of ['', '/en','/es']){
-  const ctx=await browser.newContext({viewport:{width,height:844},reducedMotion:'reduce'}),page=await ctx.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
+ for(const width of [320,390])for(const locale of ['', '/en']){
+  const ctx=await semAbertura(browser,{viewport:{width,height:844},reducedMotion:'reduce'}),page=await ctx.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto(base+locale+'/');await page.locator('.app-missao').waitFor();await largura(page);
   assert.equal(await page.locator('.app-idiomas [aria-pressed=true]').count(),1);
   await page.locator('[aria-controls=app-ajustes]').click();await page.locator('#app-tema').selectOption('escuro');assert.equal(await page.locator('html').getAttribute('data-tema-aluno'),'escuro');await page.keyboard.press('Escape');

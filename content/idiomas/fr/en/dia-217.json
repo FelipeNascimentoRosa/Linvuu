@@ -1,0 +1,161 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 217,
+  "fase": 22,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Cause, consequence, purpose and nominalization: Cause",
+  "objetivo": "Lesson 55, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 55,
+    "titulo": "Cause, consequence, purpose and nominalization",
+    "objetivo": "Explain why something happens, what the result is and what it is for, and turn verbs into nouns to write more formally.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Cause",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "parce que",
+            "translit": "pars-KUH",
+            "pt": "",
+            "en": "",
+            "audio": "parce que"
+          },
+          {
+            "ru": "car",
+            "translit": "KAR",
+            "pt": "",
+            "en": "",
+            "audio": "car"
+          },
+          {
+            "ru": "puisque",
+            "translit": "pwees-KUH",
+            "pt": "",
+            "en": "",
+            "audio": "puisque"
+          },
+          {
+            "ru": "comme",
+            "translit": "KOM",
+            "pt": "",
+            "en": "",
+            "audio": "comme"
+          },
+          {
+            "ru": "grâce à",
+            "translit": "grahs AH",
+            "pt": "",
+            "en": "",
+            "audio": "grâce à"
+          },
+          {
+            "ru": "à cause de",
+            "translit": "ah kohz DUH",
+            "pt": "",
+            "en": "",
+            "audio": "à cause de"
+          },
+          {
+            "ru": "en raison de",
+            "translit": "ahn reh-zohn DUH",
+            "pt": "",
+            "en": "",
+            "audio": "en raison de"
+          },
+          {
+            "ru": "étant donné que",
+            "translit": "ay-tahn doh-nay KUH",
+            "pt": "",
+            "en": "",
+            "audio": "étant donné que"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Saying why",
+        "explicacao": "STEP 1: «parce que» answers «pourquoi» and brings a new cause: «Je reste à la maison parce que je suis malade.» STEP 2: «puisque» and «comme» bring a cause the other person already knows; «comme» comes at the start: «Comme il pleut, je reste.» STEP 3: «car» is written and goes in the middle of the sentence, never at the start: «Il est parti, car il était fatigué.» STEP 4: with a noun, use «à cause de» (negative or neutral cause) and «grâce à» (positive cause): «À cause du trafic, je suis en retard.» «Grâce à toi, j'ai réussi.» STEP 5: «en raison de» is formal: «Le vol est annulé en raison de la grève.» STEP 6: after «parce que», «puisque», «comme» comes a verb; after «à cause de», «grâce à», «en raison de» comes a noun.",
+        "comparacao": "English «because» does everything. In French, the choice depends on whether the cause is new («parce que»), already known (puisque, comme) or formal written style (car, étant donné que). And mind the spelling: «parce que» is two words, never “parceque”.",
+        "tabela": [
+          {
+            "connector": "parce que",
+            "function": "new cause, with a verb",
+            "example": "Je reste parce que je suis malade."
+          },
+          {
+            "connector": "puisque",
+            "function": "already-known cause",
+            "example": "Puisque tu es là, aide-moi."
+          },
+          {
+            "connector": "comme",
+            "function": "cause at the start",
+            "example": "Comme il pleut, je reste."
+          },
+          {
+            "connector": "car",
+            "function": "written, in the middle",
+            "example": "Il est parti, car il était fatigué."
+          },
+          {
+            "connector": "à cause de",
+            "function": "noun, negative",
+            "example": "À cause du trafic, je suis en retard."
+          },
+          {
+            "connector": "grâce à",
+            "function": "noun, positive",
+            "example": "Grâce à toi, j'ai réussi."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Car il pleut, je reste.",
+            "certo": "Comme il pleut, je reste.",
+            "motivo": "«Car» does not open the sentence."
+          },
+          {
+            "errado": "À cause de tu, j'ai perdu.",
+            "certo": "À cause de toi, j'ai perdu.",
+            "motivo": "Stressed pronoun after a preposition."
+          },
+          {
+            "errado": "Grâce à la grève, je suis en retard.",
+            "certo": "À cause de la grève, je suis en retard.",
+            "motivo": "Negative cause: «à cause de»."
+          },
+          {
+            "errado": "Je reste à cause que je suis malade.",
+            "certo": "Je reste parce que je suis malade.",
+            "motivo": "«À cause que» does not exist."
+          }
+        ],
+        "tag": "Cause"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Answer aloud: «Pourquoi tu apprends le français ?» with «parce que», «grâce à» and «comme», three different answers."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Answer aloud: «Tu me le donnes ? Je te le donne.» Swap the pronouns for other nouns and repeat three times."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-055.json",
+  "responsavel": null
+}

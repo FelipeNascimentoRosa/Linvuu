@@ -1,0 +1,156 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 169,
+  "fase": 17,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Compound relatives and the pronoun «ce»: Preposition + lequel",
+  "objetivo": "Lesson 43, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 43,
+    "titulo": "Compound relatives and the pronoun «ce»",
+    "objetivo": "Use «lequel», «auquel», «duquel», «ce que», «ce dont», «ce à quoi» and «dont» precisely to link complex ideas.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Preposition + lequel",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "avec lequel",
+            "translit": "ah-vek luh-KEHL",
+            "pt": "",
+            "en": "",
+            "audio": "avec lequel"
+          },
+          {
+            "ru": "pour laquelle",
+            "translit": "poor lah-KEHL",
+            "pt": "",
+            "en": "",
+            "audio": "pour laquelle"
+          },
+          {
+            "ru": "dans lesquels",
+            "translit": "dahn lay-KEHL",
+            "pt": "",
+            "en": "",
+            "audio": "dans lesquels"
+          },
+          {
+            "ru": "auquel",
+            "translit": "oh-KEHL",
+            "pt": "",
+            "en": "",
+            "audio": "auquel"
+          },
+          {
+            "ru": "à laquelle",
+            "translit": "ah lah-KEHL",
+            "pt": "",
+            "en": "",
+            "audio": "à laquelle"
+          },
+          {
+            "ru": "auxquels",
+            "translit": "oh-KEHL",
+            "pt": "",
+            "en": "",
+            "audio": "auxquels"
+          },
+          {
+            "ru": "duquel",
+            "translit": "dew-KEHL",
+            "pt": "",
+            "en": "",
+            "audio": "duquel"
+          },
+          {
+            "ru": "sur lequel",
+            "translit": "sewr luh-KEHL",
+            "pt": "",
+            "en": "",
+            "audio": "sur lequel"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Le livre auquel je pense",
+        "explicacao": "STEP 1: after a preposition (avec, pour, dans, sur, sans, chez…), the relative for THINGS is «lequel»: «Le stylo avec lequel j'écris.» «La table sur laquelle je travaille.» STEP 2: «lequel» agrees: «lequel» (m. sing.), «laquelle» (f. sing.), «lesquels» (m. pl.), «lesquelles» (f. pl.). STEP 3: with «à» there are contractions: «auquel» (à + lequel), «à laquelle», «auxquels» (à + lesquels), «auxquelles». STEP 4: with «de» they contract: «duquel» (de + lequel), «de laquelle», «desquels», «desquelles»; but if the verb takes «de», prefer «dont». STEP 5: for PEOPLE, after a preposition, use «qui»: «L'ami avec qui je voyage.» «La personne à qui je parle.» STEP 6: with «parmi, entre» and people, use «lesquels»: «Les amis parmi lesquels il y a Paul.» STEP 7: with verbs that take «à» + thing: «Le projet auquel je pense.» (penser à) «La réunion à laquelle j'assiste.» STEP 8: with verbs that take «de»: «Le projet dont je parle.» (parler de)",
+        "comparacao": "in English we say «the pen with which I write» or, more naturally, «the pen I write with». French only accepts the first pattern after a preposition: «le stylo avec lequel j'écris». The rule: things take «lequel», people take «qui».",
+        "tabela": [
+          {
+            "form": "lequel / laquelle",
+            "usage": "things after a preposition",
+            "example": "La table sur laquelle je travaille."
+          },
+          {
+            "form": "lesquels / lesquelles",
+            "usage": "plural",
+            "example": "Les raisons pour lesquelles je pars."
+          },
+          {
+            "form": "auquel, à laquelle",
+            "usage": "à + thing",
+            "example": "Le projet auquel je pense."
+          },
+          {
+            "form": "qui",
+            "usage": "people after a preposition",
+            "example": "L'ami avec qui je voyage."
+          },
+          {
+            "form": "dont",
+            "usage": "de + thing/person",
+            "example": "Le livre dont je parle."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Le stylo avec que j'écris.",
+            "certo": "Le stylo avec lequel j'écris.",
+            "motivo": "«Que» is not valid after a preposition."
+          },
+          {
+            "errado": "La table sur lequel je travaille.",
+            "certo": "La table sur laquelle je travaille.",
+            "motivo": "Feminine."
+          },
+          {
+            "errado": "L'ami avec lequel je voyage.",
+            "certo": "L'ami avec qui je voyage.",
+            "motivo": "Person: «qui»."
+          },
+          {
+            "errado": "Le projet à quel je pense.",
+            "certo": "Le projet auquel je pense.",
+            "motivo": "Contraction: «auquel»."
+          }
+        ],
+        "tag": "Relatives"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe out loud five things from your daily life with «avec lequel», «sur laquelle» and «dans lequel»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Give a piece of advice with the gérondif out loud."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-043.json",
+  "responsavel": null
+}

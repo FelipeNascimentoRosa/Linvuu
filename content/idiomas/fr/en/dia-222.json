@@ -1,0 +1,147 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 222,
+  "fase": 23,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Emphasis and discourse markers: Organizing a talk",
+  "objetivo": "Lesson 56, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 56,
+    "titulo": "Emphasis and discourse markers",
+    "objetivo": "Put emphasis on what matters (c'est… qui/que, ce qui/ce que) and organize a talk or a text with connectors of sequence, opposition and conclusion.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Organizing a talk",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "d'abord",
+            "translit": "dah-BOR",
+            "pt": "",
+            "en": "",
+            "audio": "d'abord"
+          },
+          {
+            "ru": "ensuite",
+            "translit": "ahn-SWEET",
+            "pt": "",
+            "en": "",
+            "audio": "ensuite"
+          },
+          {
+            "ru": "enfin",
+            "translit": "ahn-FAN",
+            "pt": "",
+            "en": "",
+            "audio": "enfin"
+          },
+          {
+            "ru": "en revanche",
+            "translit": "ahn ruh-VAHNSH",
+            "pt": "",
+            "en": "",
+            "audio": "en revanche"
+          },
+          {
+            "ru": "cependant",
+            "translit": "suh-pahn-DAHN",
+            "pt": "",
+            "en": "",
+            "audio": "cependant"
+          },
+          {
+            "ru": "en effet",
+            "translit": "ah-neh-FEH",
+            "pt": "",
+            "en": "",
+            "audio": "en effet"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "From start to finish",
+        "explicacao": "STEP 1: sequence: «d'abord, ensuite (puis), enfin»: «D'abord, je lis. Ensuite, j'écris. Enfin, je relis.» STEP 2: two sides: «d'une part… d'autre part»: «D'une part, c'est cher; d'autre part, c'est loin.» STEP 3: opposition: «mais» (neutral), «cependant, pourtant, néanmoins» (formal), «en revanche» (compensation): «Le prix est élevé; en revanche, la qualité est excellente.» STEP 4: confirming and explaining: «en effet» (indeed), «c'est-à-dire» (that is), «par exemple» (for example): «En effet, les prix ont augmenté.» STEP 5: concluding: «en conclusion», «pour conclure», «bref»: «Bref, c'est une bonne idée.» STEP 6: punctuation: the connector at the start takes a comma after it: «Cependant, je ne suis pas d'accord.»",
+        "comparacao": "in English «however» and «on the other hand» get mixed up; in French, «cependant» only opposes, while «en revanche» offsets a negative point with a positive one. «Enfin» at the start of a list = «finally», but on its own, at the end of a spoken sentence, it can mean «well, anyway».",
+        "tabela": [
+          {
+            "connector": "d'abord / ensuite / enfin",
+            "function": "sequence",
+            "example": "D'abord je lis, ensuite j'écris."
+          },
+          {
+            "connector": "d'une part… d'autre part",
+            "function": "two aspects",
+            "example": "D'une part c'est cher, d'autre part c'est loin."
+          },
+          {
+            "connector": "cependant, pourtant",
+            "function": "opposition",
+            "example": "Cependant, je ne suis pas d'accord."
+          },
+          {
+            "connector": "en revanche",
+            "function": "compensation",
+            "example": "C'est cher; en revanche, c'est excellent."
+          },
+          {
+            "connector": "en effet",
+            "function": "confirms",
+            "example": "En effet, les prix ont augmenté."
+          },
+          {
+            "connector": "en conclusion, bref",
+            "function": "conclui",
+            "example": "Bref, c'est une bonne idée."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "D'une part, c'est cher. D'autre part, c'est cher aussi.",
+            "certo": "D'une part, c'est cher. D'autre part, c'est loin.",
+            "motivo": "The two aspects must be different."
+          },
+          {
+            "errado": "Cependant je ne suis pas d'accord, mais bien.",
+            "certo": "Cependant, je ne suis pas d'accord.",
+            "motivo": "One opposition connector is enough."
+          },
+          {
+            "errado": "En revanche, c'est cher et c'est cher aussi.",
+            "certo": "C'est cher; en revanche, c'est excellent.",
+            "motivo": "«En revanche» brings a positive point."
+          },
+          {
+            "errado": "Premièrement, ensuite, après.",
+            "certo": "D'abord, ensuite, enfin.",
+            "motivo": "Natural sequence."
+          }
+        ],
+        "tag": "Discourse markers"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Speak for 1 minute about the pros and cons of living in a big city, with «d'une part… d'autre part», «cependant» and «en revanche»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Make two sentences with «c'est… qui» and «c'est… que»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-056.json",
+  "responsavel": null
+}

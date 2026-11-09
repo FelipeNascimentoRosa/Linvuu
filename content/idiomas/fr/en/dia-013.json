@@ -1,0 +1,201 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 13,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Present tense of -er verbs, negation and questions: -er verbs",
+  "objetivo": "Lesson 4, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 4,
+    "titulo": "Present tense of -er verbs, negation and questions",
+    "objetivo": "Conjugate -er verbs in the present tense, make negatives with «ne… pas», use the adverbs «bien», «beaucoup» and «très», and ask questions with «où», «qui», «quand», «comment» and «pourquoi».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "-er verbs",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "parler",
+            "translit": "pahr-LAY",
+            "pt": "",
+            "en": "",
+            "audio": "parler"
+          },
+          {
+            "ru": "habiter",
+            "translit": "ah-bee-TAY",
+            "pt": "",
+            "en": "",
+            "audio": "habiter"
+          },
+          {
+            "ru": "travailler",
+            "translit": "trah-vah-YAY",
+            "pt": "",
+            "en": "",
+            "audio": "travailler"
+          },
+          {
+            "ru": "étudier",
+            "translit": "ay-tew-DYAY",
+            "pt": "",
+            "en": "",
+            "audio": "étudier"
+          },
+          {
+            "ru": "aimer",
+            "translit": "eh-MAY",
+            "pt": "",
+            "en": "",
+            "audio": "aimer"
+          },
+          {
+            "ru": "regarder",
+            "translit": "ruh-gahr-DAY",
+            "pt": "",
+            "en": "",
+            "audio": "regarder"
+          },
+          {
+            "ru": "écouter",
+            "translit": "ay-koo-TAY",
+            "pt": "",
+            "en": "",
+            "audio": "écouter"
+          },
+          {
+            "ru": "danser",
+            "translit": "dahn-SAY",
+            "pt": "",
+            "en": "",
+            "audio": "danser"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "-er verbs in the present tense",
+        "explicacao": "STEP 1: almost all verbs that end in «-er» follow the same pattern. Remove «-er» from the infinitive and add: «-e, -es, -e, -ons, -ez, -ent». Example: «parler → je parle, tu parles, il parle, nous parlons, vous parlez, ils parlent». STEP 2: in speech, «je parle», «tu parles», «il parle» and «ils parlent» sound the same («parl»). Only «nous parlons» (par-LOHN) and «vous parlez» (par-LAY) sound different. That is why spelling matters. STEP 3: before a vowel or a silent «h», «je» becomes «j'»: «j'habite», «j'aime», «j'étudie», «j'écoute». STEP 4: «on» uses the form of «il»: «On parle français». STEP 5: «parler» + language takes no article: «Je parle français.» STEP 6: after «aimer», use the verb in the infinitive: «J'aime danser.» Articles come in lesson 5. STEP 7: this pattern covers about 90% of French verbs. A few have small spelling changes («nous mangeons»), which we will see later.",
+        "comparacao": "English verbs barely change (I speak, you speak, she speaks), while French writes six forms and pronounces four of them almost the same. The written endings are «-e, -es, -e, -ons, -ez, -ent».",
+        "tabelas": [
+          {
+            "title": "parler (to speak)",
+            "linhas": [
+              {
+                "pronoun": "je",
+                "form": "parle",
+                "example": "Je parle français."
+              },
+              {
+                "pronoun": "tu",
+                "form": "parles",
+                "example": "Tu parles anglais."
+              },
+              {
+                "pronoun": "il / elle / on",
+                "form": "parle",
+                "example": "Elle parle portugais."
+              },
+              {
+                "pronoun": "nous",
+                "form": "parlons",
+                "example": "Nous parlons français."
+              },
+              {
+                "pronoun": "vous",
+                "form": "parlez",
+                "example": "Vous parlez bien."
+              },
+              {
+                "pronoun": "ils / elles",
+                "form": "parlent",
+                "example": "Ils parlent espagnol."
+              }
+            ]
+          },
+          {
+            "title": "habiter (to live): j'habite",
+            "linhas": [
+              {
+                "pronoun": "j'",
+                "form": "habite",
+                "example": "J'habite à Paris."
+              },
+              {
+                "pronoun": "tu",
+                "form": "habites",
+                "example": "Tu habites en France."
+              },
+              {
+                "pronoun": "il / elle / on",
+                "form": "habite",
+                "example": "On habite au Brésil."
+              },
+              {
+                "pronoun": "nous",
+                "form": "habitons",
+                "example": "Nous habitons ici."
+              },
+              {
+                "pronoun": "vous",
+                "form": "habitez",
+                "example": "Vous habitez où ?"
+              },
+              {
+                "pronoun": "ils / elles",
+                "form": "habitent",
+                "example": "Elles habitent à Lyon."
+              }
+            ]
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je parles français.",
+            "certo": "Je parle français.",
+            "motivo": "«je» takes «-e»."
+          },
+          {
+            "errado": "Nous parlez français.",
+            "certo": "Nous parlons français.",
+            "motivo": "«nous» takes «-ons»."
+          },
+          {
+            "errado": "Il parlent.",
+            "certo": "Il parle. / Ils parlent.",
+            "motivo": "«-ent» only with «ils» and «elles»."
+          },
+          {
+            "errado": "Je aime le café.",
+            "certo": "J'aime le café.",
+            "motivo": "Elision: «je» becomes «j'» before a vowel."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say six sentences with verbs from the lesson, in different persons: «Je parle…», «Tu habites…», «Elle travaille…», «Nous aimons…»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Introduce yourself aloud: name, country, age and where you live."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-004.json",
+  "responsavel": null
+}

@@ -1,0 +1,488 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 244,
+  "fase": 25,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "B1 review: B1 review practice",
+  "objetivo": "Lesson 61, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 61,
+    "titulo": "B1 review",
+    "objetivo": "Review all of B1 in two maps, correct the most common mistakes made by English speakers at this level and practice with exercises on every topic.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "B1 review practice",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "J'avais déjà mangé quand il est arrivé",
+            "opcoes": [
+              "J'avais déjà mangé quand il est arrivé",
+              "J'ai déjà mangé quand il arrivait",
+              "Je mangeais déjà quand il arrive"
+            ],
+            "gabarito": "J'avais déjà mangé quand il est arrivé",
+            "explicacao": "Listening: plus-que-parfait.",
+            "id": "fr-061-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Si j'avais su, je serais venu",
+            "opcoes": [
+              "Si j'avais su, je serais venu",
+              "Si j'aurais su, je serais venu",
+              "Si je savais, je viendrais"
+            ],
+            "gabarito": "Si j'avais su, je serais venu",
+            "explicacao": "Listening: past conditional.",
+            "id": "fr-061-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ce qui m'intéresse, c'est la musique",
+            "opcoes": [
+              "Ce qui m'intéresse, c'est la musique",
+              "Ce que m'intéresse, c'est la musique",
+              "Ce dont m'intéresse, c'est la musique"
+            ],
+            "gabarito": "Ce qui m'intéresse, c'est la musique",
+            "explicacao": "Listening: emphasis.",
+            "id": "fr-061-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Bien qu'il soit fatigué, il travaille",
+            "respostaEsperada": "Bien qu'il soit fatigué, il travaille",
+            "explicacao": "Write: Bien qu'il soit fatigué, il travaille.",
+            "id": "fr-061-e04"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "J'avais déjà mangé quand il est arrivé",
+            "opcoes": [
+              "arrivé",
+              "déjà",
+              "mangé",
+              "est",
+              "quand",
+              "il",
+              "J'avais"
+            ],
+            "gabarito": "J'avais déjà mangé quand il est arrivé",
+            "explicacao": "Write: J'avais déjà mangé quand il est arrivé",
+            "id": "fr-061-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je le lui ai donné hier",
+            "respostaEsperada": "Je le lui ai donné hier",
+            "explicacao": "Write: Je le lui ai donné hier.",
+            "id": "fr-061-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "After «bien que», use:",
+            "opcoes": [
+              "subjunctive",
+              "indicative",
+              "conditional"
+            ],
+            "gabarito": "subjunctive",
+            "explicacao": "Concession.",
+            "id": "fr-061-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Il a dit : Je viendrai» in past reporting:",
+            "opcoes": [
+              "Il a dit qu'il viendrait.",
+              "Il a dit qu'il viendra.",
+              "Il a dit qu'il vient."
+            ],
+            "gabarito": "Il a dit qu'il viendrait.",
+            "explicacao": "Tense backshift.",
+            "id": "fr-061-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Complete: «Je parle à Paul» → «Je ___ parle». Which pronoun replaces «à Paul»?",
+            "opcoes": [
+              "lui",
+              "y",
+              "en"
+            ],
+            "gabarito": "lui",
+            "explicacao": "With «parler à» a person, «lui» is the indirect object pronoun: «Je lui parle».",
+            "id": "fr-061-e08"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Ce qui m'intéresse, c'est la musique",
+            "opcoes": [
+              "Ce",
+              "musique",
+              "la",
+              "c'est",
+              "m'intéresse,",
+              "qui"
+            ],
+            "gabarito": "Ce qui m'intéresse, c'est la musique",
+            "explicacao": "Write: Ce qui m'intéresse, c'est la musique",
+            "id": "fr-061-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Passive voice in the past:",
+            "opcoes": [
+              "Le vol a été annulé.",
+              "Le vol a annulé.",
+              "Le vol est annulé par."
+            ],
+            "gabarito": "Le vol a été annulé.",
+            "explicacao": "être + participle.",
+            "id": "fr-061-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Attendre» means:",
+            "opcoes": [
+              "to wait",
+              "to answer",
+              "to attend"
+            ],
+            "gabarito": "to wait",
+            "explicacao": "«Attendre» means “to wait”; “to attend” is usually «assister à».",
+            "id": "fr-061-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il faut que tu ___ . (venir)",
+            "opcoes": [
+              "viennes",
+              "viens",
+              "venir"
+            ],
+            "gabarito": "viennes",
+            "explicacao": "Subjunctive.",
+            "id": "fr-061-e11"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Bien qu'il soit fatigué, il travaille",
+            "opcoes": [
+              "fatigué,",
+              "soit",
+              "il",
+              "qu'il",
+              "Bien",
+              "travaille"
+            ],
+            "gabarito": "Bien qu'il soit fatigué, il travaille",
+            "explicacao": "Write: Bien qu'il soit fatigué, il travaille",
+            "id": "fr-061-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Si j'___ de l'argent, je voyagerais.",
+            "opcoes": [
+              "avais",
+              "aurais",
+              "aurai"
+            ],
+            "gabarito": "avais",
+            "explicacao": "Si + imparfait.",
+            "id": "fr-061-e12"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "C'est Paul ___ a gagné.",
+            "opcoes": [
+              "qui",
+              "que",
+              "dont"
+            ],
+            "gabarito": "qui",
+            "explicacao": "Subject.",
+            "id": "fr-061-e13"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "J'accepte à condition que vous ___ avant. (payer)",
+            "opcoes": [
+              "payiez",
+              "payez",
+              "payer"
+            ],
+            "gabarito": "payiez",
+            "explicacao": "Subjunctive.",
+            "id": "fr-061-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Si j'avais su, je serais venu.»",
+            "opcoes": [
+              "Si",
+              "j'avais",
+              "su,",
+              "je",
+              "serais",
+              "venu"
+            ],
+            "gabarito": "Si j'avais su, je serais venu.",
+            "explicacao": "Past conditional.",
+            "id": "fr-061-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Je le lui ai donné hier",
+            "opcoes": [
+              "Je",
+              "donné",
+              "le",
+              "hier",
+              "ai",
+              "lui"
+            ],
+            "gabarito": "Je le lui ai donné hier",
+            "explicacao": "Write: Je le lui ai donné hier",
+            "id": "fr-061-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Il y en a trois.»",
+            "opcoes": [
+              "Il",
+              "y",
+              "en",
+              "a",
+              "trois"
+            ],
+            "gabarito": "Il y en a trois.",
+            "explicacao": "Y before en.",
+            "id": "fr-061-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: Although he is tired, he works. The flight was cancelled. I sent it to her yesterday.",
+            "respostaEsperada": "Bien qu'il soit fatigué, il travaille. Le vol a été annulé. Je le lui ai envoyé hier.",
+            "id": "fr-061-e17"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il a demandé si j'___ prêt. (was)",
+            "opcoes": [
+              "suis",
+              "étais",
+              "serai"
+            ],
+            "gabarito": "étais",
+            "explicacao": "Indirect speech in the past: present → imparfait.",
+            "id": "fr-061-e18"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je ne pense pas qu'il ___ malade. (être)",
+            "opcoes": [
+              "est",
+              "sera",
+              "soit"
+            ],
+            "gabarito": "soit",
+            "explicacao": "Negative opinion takes the subjunctive.",
+            "id": "fr-061-e19"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "J'avais déjà mangé quand il est arrivé",
+            "respostaEsperada": "J'avais déjà mangé quand il est arrivé",
+            "explicacao": "Write: J'avais déjà mangé quand il est arrivé",
+            "id": "fr-061-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "La table sur ___ je travaille est grande. (which)",
+            "opcoes": [
+              "laquelle",
+              "lequel",
+              "que"
+            ],
+            "gabarito": "laquelle",
+            "explicacao": "«Table» is feminine: «sur laquelle».",
+            "id": "fr-061-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Le vol ___ annulé hier. (was)",
+            "opcoes": [
+              "est été",
+              "a été",
+              "a"
+            ],
+            "gabarito": "a été",
+            "explicacao": "Passive in the passé composé: «a été» + participle.",
+            "id": "fr-061-e21"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il faut que tu ___ à l'heure. (arriver)",
+            "opcoes": [
+              "arriveras",
+              "arrivais",
+              "arrives"
+            ],
+            "gabarito": "arrives",
+            "explicacao": "«Il faut que» + subjunctive.",
+            "id": "fr-061-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Si j'avais étudié, j'aurais réussi.",
+              "Si j'aurais étudié, j'aurais réussi.",
+              "Si j'avais étudié, j'avais réussi."
+            ],
+            "gabarito": "Si j'avais étudié, j'aurais réussi.",
+            "explicacao": "After «si», plus-que-parfait; result in the past conditional.",
+            "id": "fr-061-e23"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Si j'avais su, je serais venu",
+            "respostaEsperada": "Si j'avais su, je serais venu",
+            "explicacao": "Write: Si j'avais su, je serais venu",
+            "id": "fr-061-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Report «Il a dit : Je suis fatigué» from a past perspective:",
+            "opcoes": [
+              "Il a dit qu'il est fatigué.",
+              "Il a dit qu'il était fatigué.",
+              "Il a dit qu'il serait fatigué."
+            ],
+            "gabarito": "Il a dit qu'il était fatigué.",
+            "explicacao": "When reporting his state at the time of speaking from a past perspective, use the imparfait: «il était fatigué».",
+            "id": "fr-061-e24"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence uses the gérondif correctly?",
+            "opcoes": [
+              "Je mange en lire.",
+              "Je mange lisant.",
+              "Je mange en lisant."
+            ],
+            "gabarito": "Je mange en lisant.",
+            "explicacao": "«En» + present participle.",
+            "id": "fr-061-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence means “His phone was stolen”?",
+            "opcoes": [
+              "Il s'est fait voler son portable.",
+              "Il a fait voler son portable.",
+              "Il s'est volé son portable."
+            ],
+            "gabarito": "Il s'est fait voler son portable.",
+            "explicacao": "«Se faire» + infinitive expresses undergoing the action.",
+            "id": "fr-061-e26"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ce qui m'intéresse, c'est la musique",
+            "respostaEsperada": "Ce qui m'intéresse, c'est la musique",
+            "explicacao": "Write: Ce qui m'intéresse, c'est la musique",
+            "id": "fr-061-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «You would need to come tomorrow.»",
+            "opcoes": [
+              "Il",
+              "faudrait",
+              "que",
+              "tu",
+              "viennes",
+              "demain"
+            ],
+            "gabarito": "Il faudrait que tu viennes demain.",
+            "explicacao": "Conditional + subjunctive.",
+            "id": "fr-061-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «The city where I grew up is small.»",
+            "opcoes": [
+              "La",
+              "ville",
+              "où",
+              "j'ai",
+              "grandi",
+              "est",
+              "petite"
+            ],
+            "gabarito": "La ville où j'ai grandi est petite.",
+            "explicacao": "«Où» is for place.",
+            "id": "fr-061-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: What interests me is the cinema. It was he who won.",
+            "respostaEsperada": "Ce qui m'intéresse, c'est le cinéma. C'est lui qui a gagné.",
+            "id": "fr-061-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: After eating, I went out. Although it is raining, I am staying home.",
+            "respostaEsperada": "Après avoir mangé, je suis sorti. Bien qu'il pleuve, je reste à la maison.",
+            "id": "fr-061-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Reread the items you got wrong and say the rule for each one aloud."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Read the most common B1 mistakes aloud again."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-061.json",
+  "responsavel": null
+}

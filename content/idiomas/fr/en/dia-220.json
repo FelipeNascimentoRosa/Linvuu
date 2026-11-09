@@ -1,0 +1,514 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 220,
+  "fase": 22,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Cause, consequence, purpose and nominalization: Review and practice for lesson 55",
+  "objetivo": "Lesson 55, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 55,
+    "titulo": "Cause, consequence, purpose and nominalization",
+    "objetivo": "Explain why something happens, what the result is and what it is for, and turn verbs into nouns to write more formally.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 55",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Comme il pleut, je reste",
+            "opcoes": [
+              "Comme il pleut, je reste",
+              "Car il pleut, je reste",
+              "Parce qu'il pleut, je reste pas"
+            ],
+            "gabarito": "Comme il pleut, je reste",
+            "explicacao": "Listening: «comme» at the start.",
+            "id": "fr-055-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Il est tellement fatigué qu'il dort",
+            "opcoes": [
+              "Il est tellement fatigué qu'il dort",
+              "Il est tellement fatigué qu'il dormir",
+              "Il est tellement fatigué il dort"
+            ],
+            "gabarito": "Il est tellement fatigué qu'il dort",
+            "explicacao": "Listening: «tellement… que».",
+            "id": "fr-055-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je t'explique pour que tu comprennes",
+            "opcoes": [
+              "Je t'explique pour que tu comprennes",
+              "Je t'explique pour comprendre",
+              "Je t'explique pour que tu comprends"
+            ],
+            "gabarito": "Je t'explique pour que tu comprennes",
+            "explicacao": "Subjunctive.",
+            "id": "fr-055-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Grâce à toi, j'ai réussi",
+            "respostaEsperada": "Grâce à toi, j'ai réussi",
+            "explicacao": "Write: Grâce à toi, j'ai réussi.",
+            "id": "fr-055-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Par conséquent, nous refusons",
+            "respostaEsperada": "Par conséquent, nous refusons",
+            "explicacao": "Write: Par conséquent, nous refusons.",
+            "id": "fr-055-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Is that why the delivery was postponed?»",
+            "opcoes": [
+              "la",
+              "?",
+              "est",
+              "C'est",
+              "livraison",
+              "pourquoi",
+              "repoussée"
+            ],
+            "gabarito": "C'est pourquoi la livraison est repoussée ?",
+            "explicacao": "Write: C'est pourquoi la livraison est repoussée ?",
+            "id": "fr-055-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Son arrivée est prévue lundi",
+            "respostaEsperada": "Son arrivée est prévue lundi",
+            "explicacao": "Write: Son arrivée est prévue lundi.",
+            "id": "fr-055-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Nicolas, pourquoi le projet a-t-il du retard ?",
+            "respostaEsperada": "Nicolas, pourquoi le projet a-t-il du retard ?",
+            "explicacao": "Nicolas, why is the project late?",
+            "id": "fr-055-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Positive cause with a noun:",
+            "opcoes": [
+              "grâce à",
+              "à cause de",
+              "puisque"
+            ],
+            "gabarito": "grâce à",
+            "explicacao": "Positive.",
+            "id": "fr-055-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which connector does NOT open the sentence?",
+            "opcoes": [
+              "car",
+              "comme",
+              "puisque"
+            ],
+            "gabarito": "car",
+            "explicacao": "Written, in the middle.",
+            "id": "fr-055-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Same subject, purpose:",
+            "opcoes": [
+              "Je travaille pour gagner de l'argent.",
+              "Je travaille pour que je gagne de l'argent.",
+              "Je travaille pour gagné."
+            ],
+            "gabarito": "Je travaille pour gagner de l'argent.",
+            "explicacao": "Infinitive.",
+            "id": "fr-055-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "C'est pourquoi la livraison est repoussée ?",
+            "respostaEsperada": "C'est pourquoi la livraison est repoussée ?",
+            "explicacao": "Is that why the delivery was postponed?",
+            "id": "fr-055-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Nominalization of «décider»:",
+            "opcoes": [
+              "la décision",
+              "le décidé",
+              "la décidance"
+            ],
+            "gabarito": "la décision",
+            "explicacao": "Noun.",
+            "id": "fr-055-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je reste ___ je suis malade.",
+            "opcoes": [
+              "parce que",
+              "à cause de",
+              "grâce à"
+            ],
+            "gabarito": "parce que",
+            "explicacao": "A verb follows.",
+            "id": "fr-055-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ du trafic, je suis en retard.",
+            "opcoes": [
+              "À cause",
+              "Parce",
+              "Donc"
+            ],
+            "gabarito": "À cause",
+            "explicacao": "«À cause de» + noun.",
+            "id": "fr-055-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Je lui écris aujourd'hui afin de tout expliquer.",
+            "respostaEsperada": "Je lui écris aujourd'hui afin de tout expliquer.",
+            "explicacao": "I am writing to him today in order to explain everything.",
+            "id": "fr-055-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il y avait ___ de monde que nous sommes partis.",
+            "opcoes": [
+              "tant",
+              "si",
+              "aussi"
+            ],
+            "gabarito": "tant",
+            "explicacao": "«Tant de».",
+            "id": "fr-055-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «What can we do so that the client does not worry?»",
+            "opcoes": [
+              "client",
+              "pour",
+              "pas",
+              "ne",
+              "que",
+              "s'inquiète",
+              "le",
+              "faire",
+              "Que",
+              "?"
+            ],
+            "gabarito": "Que faire pour que le client ne s'inquiète pas ?",
+            "explicacao": "Write: Que faire pour que le client ne s'inquiète pas ?",
+            "id": "fr-055-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je t'explique pour que tu ___ . (comprendre)",
+            "opcoes": [
+              "comprennes",
+              "comprends",
+              "comprendre"
+            ],
+            "gabarito": "comprennes",
+            "explicacao": "Subjunctive.",
+            "id": "fr-055-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Il pleut, donc je reste.»",
+            "opcoes": [
+              "Il",
+              "pleut,",
+              "donc",
+              "je",
+              "reste"
+            ],
+            "gabarito": "Il pleut, donc je reste.",
+            "explicacao": "Cause, result.",
+            "id": "fr-055-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Afin de réussir, il étudie.»",
+            "opcoes": [
+              "Afin",
+              "de",
+              "réussir,",
+              "il",
+              "étudie"
+            ],
+            "gabarito": "Afin de réussir, il étudie.",
+            "explicacao": "Purpose.",
+            "id": "fr-055-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: Since it rained, we stayed home. He worked so hard that he succeeded. I am explaining so that you understand.",
+            "respostaEsperada": "Comme il a plu, nous sommes restés à la maison. Il a tellement travaillé qu'il a réussi. Je t'explique pour que tu comprennes.",
+            "id": "fr-055-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Que faire pour que le client ne s'inquiète pas ?",
+            "respostaEsperada": "Que faire pour que le client ne s'inquiète pas ?",
+            "explicacao": "What can we do so that the client does not worry?",
+            "id": "fr-055-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ il pleut, je reste. (Since)",
+            "opcoes": [
+              "Car",
+              "Comme",
+              "Parce"
+            ],
+            "gabarito": "Comme",
+            "explicacao": "«Comme» opens the sentence with the cause.",
+            "id": "fr-055-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "en raison de",
+            "respostaEsperada": "en raison de",
+            "explicacao": "on account of",
+            "id": "fr-055-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Le vol est annulé ___ de la grève. (on account of)",
+            "opcoes": [
+              "grâce",
+              "parce que",
+              "en raison"
+            ],
+            "gabarito": "en raison",
+            "explicacao": "«En raison de» + noun, formal.",
+            "id": "fr-055-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il a beaucoup travaillé, si bien ___ il a réussi. (que)",
+            "opcoes": [
+              "qu'",
+              "que",
+              "de"
+            ],
+            "gabarito": "qu'",
+            "explicacao": "«Si bien que», with elision before a vowel.",
+            "id": "fr-055-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je travaille ___ gagner de l'argent. (in order to)",
+            "opcoes": [
+              "pour que",
+              "pour",
+              "afin que"
+            ],
+            "gabarito": "pour",
+            "explicacao": "Same subject: «pour» + infinitive.",
+            "id": "fr-055-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «puisque» mean?",
+            "audio": "puisque",
+            "opcoes": [
+              "because of",
+              "so that",
+              "so that",
+              "since"
+            ],
+            "gabarito": "since",
+            "explicacao": "«puisque» = since.",
+            "id": "fr-055-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "L'___ du train est prévue à midi. (arrival)",
+            "opcoes": [
+              "arriver",
+              "arrivé",
+              "arrivée"
+            ],
+            "gabarito": "arrivée",
+            "explicacao": "Nominalization of «arriver»: «l'arrivée».",
+            "id": "fr-055-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Il est parti, car il était fatigué.",
+              "Car il était fatigué, il est parti.",
+              "Il est parti car que fatigué."
+            ],
+            "gabarito": "Il est parti, car il était fatigué.",
+            "explicacao": "«Car» goes in the middle of the sentence.",
+            "id": "fr-055-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the nominalization of «augmenter»?",
+            "opcoes": [
+              "l'augmenter",
+              "l'augmentation",
+              "l'augmentant"
+            ],
+            "gabarito": "l'augmentation",
+            "explicacao": "«Augmenter» → «l'augmentation».",
+            "id": "fr-055-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "si bien que",
+            "respostaEsperada": "si bien que",
+            "explicacao": "so that",
+            "id": "fr-055-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "With different subjects, which sentence is correct?",
+            "opcoes": [
+              "Je parle lentement pour tu comprendre.",
+              "Je parle lentement afin de tu comprennes.",
+              "Je parle lentement pour que tu comprennes."
+            ],
+            "gabarito": "Je parle lentement pour que tu comprennes.",
+            "explicacao": "«Pour que» + subjunctive.",
+            "id": "fr-055-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «grâce à» mean?",
+            "audio": "grâce à",
+            "opcoes": [
+              "then",
+              "thanks to",
+              "therefore",
+              "the decision"
+            ],
+            "gabarito": "thanks to",
+            "explicacao": "«grâce à» = thanks to.",
+            "id": "fr-055-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which connector is the most formal?",
+            "opcoes": [
+              "par conséquent",
+              "alors",
+              "donc"
+            ],
+            "gabarito": "par conséquent",
+            "explicacao": "«Par conséquent» é o mais formal.",
+            "id": "fr-055-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Since he is sick, he stays home.»",
+            "opcoes": [
+              "Comme",
+              "il",
+              "est",
+              "malade,",
+              "il",
+              "reste",
+              "à",
+              "la",
+              "maison"
+            ],
+            "gabarito": "Comme il est malade, il reste à la maison.",
+            "explicacao": "«Comme» opens the sentence.",
+            "id": "fr-055-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «There was so much noise that I left.»",
+            "opcoes": [
+              "Il",
+              "y",
+              "avait",
+              "tant",
+              "de",
+              "bruit",
+              "que",
+              "je",
+              "suis",
+              "parti"
+            ],
+            "gabarito": "Il y avait tant de bruit que je suis parti.",
+            "explicacao": "«Tant de» + noun + «que».",
+            "id": "fr-055-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: Because of the strike, the flight was cancelled. I work to earn money.",
+            "respostaEsperada": "À cause de la grève, le vol a été annulé. Je travaille pour gagner de l'argent.",
+            "id": "fr-055-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French (use «tellement»): He was so tired that he slept. I am explaining to you so that everything is clear.",
+            "respostaEsperada": "Il était tellement fatigué qu'il a dormi. Je t'explique afin que tout soit clair.",
+            "id": "fr-055-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Speak for 1 minute about why you study French and what you will use it for."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Explain aloud a decision of yours, using cause and purpose."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-055.json",
+  "responsavel": null
+}

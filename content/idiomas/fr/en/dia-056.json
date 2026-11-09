@@ -1,0 +1,506 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 56,
+  "fase": 6,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Wanting, being able to, having to, and the pronouns «y» and «en»: Review and practice for lesson 14",
+  "objetivo": "Lesson 14, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 14,
+    "titulo": "Wanting, being able to, having to, and the pronouns «y» and «en»",
+    "objetivo": "Use «vouloir», «pouvoir», «devoir» and «savoir», and replace places with «y» and quantities with «en».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 14",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "J'y vais",
+            "opcoes": [
+              "J'y vais",
+              "J'en veux",
+              "Je le vois"
+            ],
+            "gabarito": "J'y vais",
+            "explicacao": "Listen to «y».",
+            "id": "fr-014-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "J'en ai deux",
+            "opcoes": [
+              "J'en ai deux",
+              "J'y ai deux",
+              "J'ai deux"
+            ],
+            "gabarito": "J'en ai deux",
+            "explicacao": "Listen to «en».",
+            "id": "fr-014-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je ne peux pas venir",
+            "opcoes": [
+              "Je ne peux pas venir",
+              "Je ne veux pas venir",
+              "Je ne dois pas venir"
+            ],
+            "gabarito": "Je ne peux pas venir",
+            "explicacao": "Listen to «peux».",
+            "id": "fr-014-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je voudrais un café",
+            "respostaEsperada": "Je voudrais un café",
+            "explicacao": "Write: Je voudrais un café.",
+            "id": "fr-014-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Tu y vas ?",
+            "respostaEsperada": "Tu y vas ?",
+            "explicacao": "Write: Tu y vas ?",
+            "id": "fr-014-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «I'd like a kilo. And do you have any strawberries?»",
+            "opcoes": [
+              "fraises",
+              "?",
+              "un",
+              "kilo.",
+              "J'en",
+              "des",
+              "avez",
+              "Et",
+              "veux",
+              "vous"
+            ],
+            "gabarito": "J'en veux un kilo. Et vous avez des fraises ?",
+            "explicacao": "Write: J'en veux un kilo. Et vous avez des fraises ?",
+            "id": "fr-014-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je n'en veux pas",
+            "respostaEsperada": "Je n'en veux pas",
+            "explicacao": "Write: Je n'en veux pas.",
+            "id": "fr-014-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Bonjour. Je voudrais des pommes, s'il vous plaît.",
+            "respostaEsperada": "Bonjour. Je voudrais des pommes, s'il vous plaît.",
+            "explicacao": "Good morning. I'd like some apples, please.",
+            "id": "fr-014-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je veux manger.",
+              "Je veux à manger.",
+              "Je veux de manger."
+            ],
+            "gabarito": "Je veux manger.",
+            "explicacao": "No preposition.",
+            "id": "fr-014-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Tu vas à Paris ?» Answer with «y»:",
+            "opcoes": [
+              "Oui, j'y vais.",
+              "Oui, je vais y.",
+              "Oui, je y vais."
+            ],
+            "gabarito": "Oui, j'y vais.",
+            "explicacao": "Elision, and before the verb.",
+            "id": "fr-014-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Tu as des frères ?» Answer with «en»:",
+            "opcoes": [
+              "Oui, j'en ai deux.",
+              "Oui, j'ai deux.",
+              "Oui, je en ai deux."
+            ],
+            "gabarito": "Oui, j'en ai deux.",
+            "explicacao": "The «en» is required.",
+            "id": "fr-014-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "J'en veux un kilo. Et vous avez des fraises ?",
+            "respostaEsperada": "J'en veux un kilo. Et vous avez des fraises ?",
+            "explicacao": "I'd like a kilo. And do you have any strawberries?",
+            "id": "fr-014-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I know how to swim»?",
+            "opcoes": [
+              "Je sais nager.",
+              "Je peux nager.",
+              "Je veux nager."
+            ],
+            "gabarito": "Je sais nager.",
+            "explicacao": "«Savoir» = ability.",
+            "id": "fr-014-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Nous ___ partir. (devemos)",
+            "opcoes": [
+              "devons",
+              "devez",
+              "doit"
+            ],
+            "gabarito": "devons",
+            "explicacao": "Nous + -ons.",
+            "id": "fr-014-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Vous ___ venir ? (can)",
+            "opcoes": [
+              "pouvez",
+              "peux",
+              "peut"
+            ],
+            "gabarito": "pouvez",
+            "explicacao": "Vous + -ez.",
+            "id": "fr-014-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Combien en voulez-vous ?",
+            "respostaEsperada": "Combien en voulez-vous ?",
+            "explicacao": "How many would you like, madam?",
+            "id": "fr-014-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il ___ un café. (wants)",
+            "opcoes": [
+              "veut",
+              "veux",
+              "veulent"
+            ],
+            "gabarito": "veut",
+            "explicacao": "Il + -t.",
+            "id": "fr-014-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «I'll take two hundred grams. Can I pay by card?»",
+            "opcoes": [
+              "Je",
+              "peux",
+              "deux",
+              "par",
+              "grammes.",
+              "carte",
+              "prends",
+              "?",
+              "cents",
+              "payer",
+              "J'en"
+            ],
+            "gabarito": "J'en prends deux cents grammes. Je peux payer par carte ?",
+            "explicacao": "Write: J'en prends deux cents grammes. Je peux payer par carte ?",
+            "id": "fr-014-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tu vas au cinéma ? — Oui, j'___ vais.",
+            "opcoes": [
+              "y",
+              "en",
+              "le"
+            ],
+            "gabarito": "y",
+            "explicacao": "Place → y.",
+            "id": "fr-014-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Je n'y vais pas.»",
+            "opcoes": [
+              "Je",
+              "n'y",
+              "vais",
+              "pas"
+            ],
+            "gabarito": "Je n'y vais pas.",
+            "explicacao": "ne + y + verb + pas.",
+            "id": "fr-014-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «J'en veux beaucoup.»",
+            "opcoes": [
+              "J'en",
+              "veux",
+              "beaucoup"
+            ],
+            "gabarito": "J'en veux beaucoup.",
+            "explicacao": "en + verb + quantity.",
+            "id": "fr-014-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I want coffee. Can I go there? I have two.",
+            "respostaEsperada": "Je veux du café. Je peux y aller ? J'en ai deux.",
+            "id": "fr-014-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "J'en prends deux cents grammes. Je peux payer par carte ?",
+            "respostaEsperada": "J'en prends deux cents grammes. Je peux payer par carte ?",
+            "explicacao": "I'll take two hundred grams. Can I pay by card?",
+            "id": "fr-014-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tu ___ venir demain ? (podes)",
+            "opcoes": [
+              "peut",
+              "peuvent",
+              "peux"
+            ],
+            "gabarito": "peux",
+            "explicacao": "With «tu», «pouvoir» becomes «peux».",
+            "id": "fr-014-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Oui, nous en avons. Vous en voulez combien ?",
+            "respostaEsperada": "Oui, nous en avons. Vous en voulez combien ?",
+            "explicacao": "Yes, we do. How much would you like, madam?",
+            "id": "fr-014-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ils ___ partir. (must)",
+            "opcoes": [
+              "doivent",
+              "doit",
+              "devons"
+            ],
+            "gabarito": "doivent",
+            "explicacao": "With «ils», «devoir» becomes «doivent».",
+            "id": "fr-014-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je ___ nager. (know how to)",
+            "opcoes": [
+              "sait",
+              "sais",
+              "savons"
+            ],
+            "gabarito": "sais",
+            "explicacao": "With «je», «savoir» becomes «sais».",
+            "id": "fr-014-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tu veux du pain ? — Oui, j'___ veux.",
+            "opcoes": [
+              "y",
+              "le",
+              "en"
+            ],
+            "gabarito": "en",
+            "explicacao": "«En» replaces the partitive «du pain».",
+            "id": "fr-014-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «plusieurs» mean?",
+            "audio": "plusieurs",
+            "opcoes": [
+              "a lot",
+              "to stay",
+              "several",
+              "none"
+            ],
+            "gabarito": "several",
+            "explicacao": "«plusieurs» = several.",
+            "id": "fr-014-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle ne ___ pas venir. (can)",
+            "opcoes": [
+              "peut",
+              "peux",
+              "pouvoir"
+            ],
+            "gabarito": "peut",
+            "explicacao": "With «elle», «pouvoir» becomes «peut».",
+            "id": "fr-014-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say you have none (answer to «Tu as des frères ?»)?",
+            "opcoes": [
+              "Non, je n'y ai pas.",
+              "Non, je n'en ai pas.",
+              "Non, je ne en ai pas."
+            ],
+            "gabarito": "Non, je n'en ai pas.",
+            "explicacao": "«En» goes between «ne» and the verb; «ne» becomes «n'».",
+            "id": "fr-014-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «Let's go!»?",
+            "opcoes": [
+              "Allons-en !",
+              "Y allons !",
+              "Allons-y !"
+            ],
+            "gabarito": "Allons-y !",
+            "explicacao": "In the affirmative imperative, the «y» comes after the verb, with a hyphen.",
+            "id": "fr-014-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Oui, vous pouvez. Voilà, madame.",
+            "respostaEsperada": "Oui, vous pouvez. Voilà, madame.",
+            "explicacao": "Yes, you can. Here you are.",
+            "id": "fr-014-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je ne peux pas venir.",
+              "Je ne peux pas à venir.",
+              "Je ne pas peux venir."
+            ],
+            "gabarito": "Je ne peux pas venir.",
+            "explicacao": "«Ne… pas» goes around «peux», and the infinitive comes right after.",
+            "id": "fr-014-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «en» mean?",
+            "audio": "en",
+            "opcoes": [
+              "I know how to",
+              "of it, of them",
+              "a little",
+              "I must"
+            ],
+            "gabarito": "of it, of them",
+            "explicacao": "«en» = of it, of them.",
+            "id": "fr-014-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the form of «vouloir» for «nous»?",
+            "opcoes": [
+              "voulez",
+              "voulons",
+              "veulent"
+            ],
+            "gabarito": "voulons",
+            "explicacao": "«Nous voulons».",
+            "id": "fr-014-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «We must leave tomorrow.»",
+            "opcoes": [
+              "Nous",
+              "devons",
+              "partir",
+              "demain"
+            ],
+            "gabarito": "Nous devons partir demain.",
+            "explicacao": "«Devoir» + infinitive.",
+            "id": "fr-014-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «He goes there every day.»",
+            "opcoes": [
+              "Il",
+              "y",
+              "va",
+              "tous",
+              "les",
+              "jours"
+            ],
+            "gabarito": "Il y va tous les jours.",
+            "explicacao": "«y» comes before the verb.",
+            "id": "fr-014-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I can't come. I must stay here.",
+            "respostaEsperada": "Je ne peux pas venir. Je dois rester ici.",
+            "id": "fr-014-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French (use «tu»): Do you want coffee? Yes, I do.",
+            "respostaEsperada": "Tu veux du café ? Oui, j'en veux.",
+            "id": "fr-014-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Speak for 1 minute about what you want, can and must do this week."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Answer: «Tu peux venir ? Tu dois travailler ? Tu veux du thé ?»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-014.json",
+  "responsavel": null
+}

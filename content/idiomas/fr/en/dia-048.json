@@ -1,0 +1,505 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 48,
+  "fase": 5,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Describing: adjectives, colors, clothes and shopping: Review and practice for lesson 12",
+  "objetivo": "Lesson 12, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 12,
+    "titulo": "Describing: adjectives, colors, clothes and shopping",
+    "objetivo": "Describe people and things with adjectives in the right position, talk about colors and clothes, and shop with prices and numbers above 100.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 12",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Elle a les yeux bleus",
+            "opcoes": [
+              "Elle a les yeux bleus",
+              "Elle a les cheveux longs",
+              "Il a les yeux bleus"
+            ],
+            "gabarito": "Elle a les yeux bleus",
+            "explicacao": "Listen to «yeux».",
+            "id": "fr-012-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Une belle maison",
+            "opcoes": [
+              "Une belle maison",
+              "Une maison belle",
+              "Un bel hôtel"
+            ],
+            "gabarito": "Une belle maison",
+            "explicacao": "Listen to «belle» before the noun.",
+            "id": "fr-012-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ça coûte deux cents euros",
+            "opcoes": [
+              "Ça coûte deux cents euros",
+              "Ça coûte cent euros",
+              "Ça coûte deux mille euros"
+            ],
+            "gabarito": "Ça coûte deux cents euros",
+            "explicacao": "Listen to «deux cents».",
+            "id": "fr-012-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Il porte un pantalon noir",
+            "respostaEsperada": "Il porte un pantalon noir",
+            "explicacao": "Write: Il porte un pantalon noir.",
+            "id": "fr-012-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Combien ça coûte",
+            "respostaEsperada": "Combien ça coûte",
+            "explicacao": "Write: Combien ça coûte.",
+            "id": "fr-012-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «It costs forty-five euros.»",
+            "opcoes": [
+              "Elle",
+              "euros.",
+              "coûte",
+              "quarante-cinq"
+            ],
+            "gabarito": "Elle coûte quarante-cinq euros.",
+            "explicacao": "Write: Elle coûte quarante-cinq euros.",
+            "id": "fr-012-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je la prends",
+            "respostaEsperada": "Je la prends",
+            "explicacao": "Write: Je la prends.",
+            "id": "fr-012-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Bonjour, vous désirez ?",
+            "respostaEsperada": "Bonjour, vous désirez ?",
+            "explicacao": "Good morning, how can I help you?",
+            "id": "fr-012-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "une voiture rouge",
+              "une rouge voiture",
+              "un voiture rouge"
+            ],
+            "gabarito": "une voiture rouge",
+            "explicacao": "Colors after the noun.",
+            "id": "fr-012-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "un bel hôtel",
+              "un beau hôtel",
+              "un belle hôtel"
+            ],
+            "gabarito": "un bel hôtel",
+            "explicacao": "«Bel» before a vowel.",
+            "id": "fr-012-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you write 200 euros?",
+            "opcoes": [
+              "deux cents euros",
+              "deux cent euros",
+              "deux centes euros"
+            ],
+            "gabarito": "deux cents euros",
+            "explicacao": "«Cents» with an «s» when it stands alone.",
+            "id": "fr-012-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Elle coûte quarante-cinq euros.",
+            "respostaEsperada": "Elle coûte quarante-cinq euros.",
+            "explicacao": "It costs forty-five euros.",
+            "id": "fr-012-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which verb describes what someone is wearing?",
+            "opcoes": [
+              "porter",
+              "avoir",
+              "être"
+            ],
+            "gabarito": "porter",
+            "explicacao": "«Porter» = to wear.",
+            "id": "fr-012-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle a ___ yeux bleus. (os)",
+            "opcoes": [
+              "les",
+              "des",
+              "ses"
+            ],
+            "gabarito": "les",
+            "explicacao": "Body parts: definite.",
+            "id": "fr-012-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il porte ___ pantalon noir. (um)",
+            "opcoes": [
+              "un",
+              "une",
+              "des"
+            ],
+            "gabarito": "un",
+            "explicacao": "«Pantalon» is masculine.",
+            "id": "fr-012-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Bonjour. Je cherche une chemise blanche.",
+            "respostaEsperada": "Bonjour. Je cherche une chemise blanche.",
+            "explicacao": "Good morning. I'm looking for a white shirt.",
+            "id": "fr-012-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Cette chemise est ___. (too expensive)",
+            "opcoes": [
+              "trop chère",
+              "trop cher",
+              "très cher"
+            ],
+            "gabarito": "trop chère",
+            "explicacao": "«Chemise» is feminine.",
+            "id": "fr-012-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «All right, I'll take it. Can I pay by card?»",
+            "opcoes": [
+              "carte",
+              "Je",
+              "je",
+              "par",
+              "?",
+              "la",
+              "peux",
+              "prends.",
+              "D'accord,",
+              "payer"
+            ],
+            "gabarito": "D'accord, je la prends. Je peux payer par carte ?",
+            "explicacao": "Write: D'accord, je la prends. Je peux payer par carte ?",
+            "id": "fr-012-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je ___ prends. (the shirt)",
+            "opcoes": [
+              "la",
+              "le",
+              "les"
+            ],
+            "gabarito": "la",
+            "explicacao": "«Chemise» is feminine.",
+            "id": "fr-012-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Elle porte une robe verte.»",
+            "opcoes": [
+              "Elle",
+              "porte",
+              "une",
+              "robe",
+              "verte"
+            ],
+            "gabarito": "Elle porte une robe verte.",
+            "explicacao": "Color after the noun.",
+            "id": "fr-012-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Je cherche une belle chemise blanche.»",
+            "opcoes": [
+              "Je",
+              "cherche",
+              "une",
+              "belle",
+              "chemise",
+              "blanche"
+            ],
+            "gabarito": "Je cherche une belle chemise blanche.",
+            "explicacao": "Beauty before, color after.",
+            "id": "fr-012-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: She has blue eyes. He is wearing black trousers. How much is it?",
+            "respostaEsperada": "Elle a les yeux bleus. Il porte un pantalon noir. Combien ça coûte ?",
+            "id": "fr-012-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "D'accord, je la prends. Je peux payer par carte ?",
+            "respostaEsperada": "D'accord, je la prends. Je peux payer par carte ?",
+            "explicacao": "All right, I'll take it. Can I pay by card?",
+            "id": "fr-012-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle porte une robe ___ . (verde)",
+            "opcoes": [
+              "verte",
+              "vert",
+              "verts"
+            ],
+            "gabarito": "verte",
+            "explicacao": "The color agrees with «robe»: feminine singular.",
+            "id": "fr-012-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Quelle taille faites-vous ?",
+            "respostaEsperada": "Quelle taille faites-vous ?",
+            "explicacao": "What size are you?",
+            "id": "fr-012-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il a les cheveux ___ . (longos)",
+            "opcoes": [
+              "long",
+              "longs",
+              "longues"
+            ],
+            "gabarito": "longs",
+            "explicacao": "«Cheveux» is masculine plural: «longs».",
+            "id": "fr-012-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "C'est un ___ hôtel. (beautiful)",
+            "opcoes": [
+              "beau",
+              "belle",
+              "bel"
+            ],
+            "gabarito": "bel",
+            "explicacao": "Before a vowel, «beau» becomes «bel».",
+            "id": "fr-012-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ça fait deux ___ euros. (2000)",
+            "opcoes": [
+              "mille",
+              "milles",
+              "cents"
+            ],
+            "gabarito": "mille",
+            "explicacao": "«Mille» never takes an «s».",
+            "id": "fr-012-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «Je cherche» mean?",
+            "audio": "Je cherche",
+            "opcoes": [
+              "rosa",
+              "too expensive",
+              "preto",
+              "I'm looking for"
+            ],
+            "gabarito": "I'm looking for",
+            "explicacao": "«Je cherche» = I'm looking for.",
+            "id": "fr-012-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je ___ une chemise blanche. (procuro)",
+            "opcoes": [
+              "cherches",
+              "cherche",
+              "cherchent"
+            ],
+            "gabarito": "cherche",
+            "explicacao": "With «je», «-er» verbs end in «-e».",
+            "id": "fr-012-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «a good coffee»?",
+            "opcoes": [
+              "un café bonne",
+              "une bon café",
+              "un bon café"
+            ],
+            "gabarito": "un bon café",
+            "explicacao": "«Bon» comes before the noun and agrees with it.",
+            "id": "fr-012-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I'll take it» about a shirt (feminine)?",
+            "opcoes": [
+              "Je la prends.",
+              "Je le prends.",
+              "Je prends la."
+            ],
+            "gabarito": "Je la prends.",
+            "explicacao": "«Chemise» is feminine: pronoun «la» before the verb.",
+            "id": "fr-012-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Du trente-huit. Combien ça coûte ?",
+            "respostaEsperada": "Du trente-huit. Combien ça coûte ?",
+            "explicacao": "Thirty-eight. How much is it?",
+            "id": "fr-012-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you describe the color of someone's eyes?",
+            "opcoes": [
+              "Elle est les yeux verts.",
+              "Elle a les yeux verts.",
+              "Elle porte les yeux verts."
+            ],
+            "gabarito": "Elle a les yeux verts.",
+            "explicacao": "Body parts use «avoir» + definite article.",
+            "id": "fr-012-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «vert» mean?",
+            "audio": "vert",
+            "opcoes": [
+              "verde",
+              "vermelho",
+              "what size?",
+              "the trousers"
+            ],
+            "gabarito": "verde",
+            "explicacao": "«vert» = verde.",
+            "id": "fr-012-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the plural of «une robe orange»?",
+            "opcoes": [
+              "des robes oranges",
+              "des robes orangées",
+              "des robes orange"
+            ],
+            "gabarito": "des robes orange",
+            "explicacao": "Colors that come from an object do not change.",
+            "id": "fr-012-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «She has long black hair.»",
+            "opcoes": [
+              "Elle",
+              "a",
+              "les",
+              "cheveux",
+              "longs",
+              "et",
+              "noirs"
+            ],
+            "gabarito": "Elle a les cheveux longs et noirs.",
+            "explicacao": "«Avoir» + definite article for the body.",
+            "id": "fr-012-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «This shirt is too expensive.»",
+            "opcoes": [
+              "Cette",
+              "chemise",
+              "est",
+              "trop",
+              "chère"
+            ],
+            "gabarito": "Cette chemise est trop chère.",
+            "explicacao": "«Chère» agrees with «chemise».",
+            "id": "fr-012-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: He is tall and wears black trousers.",
+            "respostaEsperada": "Il est grand et il porte un pantalon noir.",
+            "id": "fr-012-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: She has green eyes and wears a white shirt.",
+            "respostaEsperada": "Elle a les yeux verts et elle porte une chemise blanche.",
+            "id": "fr-012-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe out loud the clothes you would like to buy and how much you would pay."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Describe out loud the clothes you are wearing today and those of someone close to you."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-012.json",
+  "responsavel": null
+}

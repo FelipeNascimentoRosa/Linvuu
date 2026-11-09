@@ -1,0 +1,137 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 154,
+  "fase": 16,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "The plus-que-parfait: the past of the past: Putting the events of a story in order",
+  "objetivo": "Lesson 39, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 39,
+    "titulo": "The plus-que-parfait: the past of the past",
+    "objetivo": "Form and use the plus-que-parfait to tell what had already happened before another past event, and to put the events of a story in order.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Putting the events of a story in order",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "au début",
+            "translit": "oh day-BEW",
+            "pt": "",
+            "en": "",
+            "audio": "au début"
+          },
+          {
+            "ru": "ensuite",
+            "translit": "ahn-SWEET",
+            "pt": "",
+            "en": "",
+            "audio": "ensuite"
+          },
+          {
+            "ru": "finalement",
+            "translit": "fee-nal-MAHN",
+            "pt": "",
+            "en": "",
+            "audio": "finalement"
+          },
+          {
+            "ru": "la veille",
+            "translit": "lah VEH-y",
+            "pt": "",
+            "en": "",
+            "audio": "la veille"
+          },
+          {
+            "ru": "le lendemain",
+            "translit": "luh lahnd-MAN",
+            "pt": "",
+            "en": "",
+            "audio": "le lendemain"
+          },
+          {
+            "ru": "l'année précédente",
+            "translit": "lah-nay pray-say-DAHNT",
+            "pt": "",
+            "en": "",
+            "audio": "l'année précédente"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Three tenses in one story",
+        "explicacao": "STEP 1: a story in the past uses three layers: plus-que-parfait (what had already happened), passé composé (the events) and imparfait (the setting and habits). STEP 2: example: «La veille, j'avais perdu mes clés (plus-que-parfait). Le lendemain, je suis arrivé en retard (passé composé). Il pleuvait (imparfait) et j'étais fatigué.» STEP 3: time references in the past: «la veille» (the day before), «le lendemain» (the next day), «l'année précédente» (the year before), «deux jours avant» (two days earlier), «une semaine plus tard» (a week later). STEP 4: «dès que» and «après que» with the plus-que-parfait: «Dès qu'il avait fini, il partait.» STEP 5: «avant de» + infinitive: «Avant de partir, j'avais fermé la porte.» STEP 6: «après» + past infinitive: «Après avoir mangé, je suis sorti.» «Après être arrivé, il a appelé.» STEP 7: the past infinitive is formed with «avoir» or «être» in the infinitive + participle: «avoir mangé», «être parti». STEP 8: «après avoir» + participle is only possible if the subject is the same for both verbs: «Après avoir mangé, je suis sorti.»",
+        "comparacao": "in English we say «after eating, I went out». French says «après avoir mangé, je suis sorti», with the past infinitive. You cannot say «après manger». The subject must be the same in both parts of the sentence.",
+        "tabela": [
+          {
+            "tense": "plus-que-parfait",
+            "usage": "what had already happened",
+            "example": "La veille, j'avais perdu mes clés."
+          },
+          {
+            "tense": "passé composé",
+            "usage": "the event",
+            "example": "Le lendemain, je suis arrivé en retard."
+          },
+          {
+            "tense": "imparfait",
+            "usage": "the setting",
+            "example": "Il pleuvait."
+          },
+          {
+            "tense": "past infinitive",
+            "usage": "after doing",
+            "example": "Après avoir mangé, je suis sorti."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Après manger, je suis sorti.",
+            "certo": "Après avoir mangé, je suis sorti.",
+            "motivo": "Past infinitive."
+          },
+          {
+            "errado": "Après être arrivé, elle a appelé.",
+            "certo": "Après être arrivée, elle a appelé.",
+            "motivo": "The participle agrees with «elle»."
+          },
+          {
+            "errado": "La veille, j'ai perdu mes clés. (had already lost)",
+            "certo": "La veille, j'avais perdu mes clés.",
+            "motivo": "Earlier: plus-que-parfait."
+          },
+          {
+            "errado": "Avant de je partir, j'avais fermé la porte.",
+            "certo": "Avant de partir, j'avais fermé la porte.",
+            "motivo": "Infinitive after «avant de»."
+          }
+        ],
+        "tag": "Past"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Tell out loud a story of eight sentences using the plus-que-parfait, passé composé and imparfait."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Conjugate «finir, partir, voir, se lever» aloud in the plus-que-parfait with «je»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-039.json",
+  "responsavel": null
+}

@@ -1,0 +1,174 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 15,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Present tense of -er verbs, negation and questions: Questions with question words",
+  "objetivo": "Lesson 4, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 4,
+    "titulo": "Present tense of -er verbs, negation and questions",
+    "objetivo": "Conjugate -er verbs in the present tense, make negatives with «ne… pas», use the adverbs «bien», «beaucoup» and «très», and ask questions with «où», «qui», «quand», «comment» and «pourquoi».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Questions with question words",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "où",
+            "translit": "OO",
+            "pt": "",
+            "en": "",
+            "audio": "où"
+          },
+          {
+            "ru": "qui",
+            "translit": "KEE",
+            "pt": "",
+            "en": "",
+            "audio": "qui"
+          },
+          {
+            "ru": "quand",
+            "translit": "KAHN",
+            "pt": "",
+            "en": "",
+            "audio": "quand"
+          },
+          {
+            "ru": "comment",
+            "translit": "koh-MAHN",
+            "pt": "",
+            "en": "",
+            "audio": "comment"
+          },
+          {
+            "ru": "pourquoi",
+            "translit": "poor-KWAH",
+            "pt": "",
+            "en": "",
+            "audio": "pourquoi"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Where, who, when, how, why",
+        "explicacao": "STEP 1: the question word can go at the beginning of the sentence, in three forms. Informal: «Où tu habites ?» Neutral: «Où est-ce que tu habites ?» Formal, with inversion: «Où habitez-vous ?» STEP 2: in informal speech, the question word can also go at the end: «Tu habites où ?» STEP 3: with inversion, the verb comes before the pronoun and takes a hyphen: «Où habites-tu ?», «Que fais-tu ?». STEP 4: «pourquoi» (why) is answered with «parce que» (because): «Pourquoi tu étudies le français ? — Parce que j'aime ça.» STEP 5: «qui» (who) can be the subject: «Qui parle ?» STEP 6: «comment» also asks about manner: «Comment tu vas ?»",
+        "comparacao": "In English the question word almost always goes first: «Where do you live?». French does this too, and in informal speech it can leave the word at the end: «tu habites où ?». The inversion with a hyphen is formal and written.",
+        "tabela": [
+          {
+            "form": "informal (question word at the end)",
+            "example": "Tu habites où ?"
+          },
+          {
+            "form": "informal (question word at the start)",
+            "example": "Où tu habites ?"
+          },
+          {
+            "form": "neutral (est-ce que)",
+            "example": "Où est-ce que tu habites ?"
+          },
+          {
+            "form": "formal (inversion)",
+            "example": "Où habitez-vous ?"
+          },
+          {
+            "form": "answer to «pourquoi»",
+            "example": "Parce que j'aime ça."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Où habites tu ?",
+            "certo": "Où habites-tu ?",
+            "motivo": "In inversion there is a hyphen between the verb and the pronoun."
+          },
+          {
+            "errado": "Où est-ce que tu habites-tu ?",
+            "certo": "Où est-ce que tu habites ?",
+            "motivo": "Choose one question form, not two."
+          },
+          {
+            "errado": "Pourquoi tu étudies ? — Pour que j'aime.",
+            "certo": "Parce que j'aime ça.",
+            "motivo": "The answer to «pourquoi» begins with «parce que»."
+          },
+          {
+            "errado": "Comment est-ce que tu t'appelles-tu ?",
+            "certo": "Comment tu t'appelles ?",
+            "motivo": "Don't repeat the pronoun."
+          }
+        ],
+        "tag": "Negation and questions"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "Nouveaux voisins / New neighbors",
+        "contexto": "Hugo meets the new neighbor, Chloé.",
+        "linhas": [
+          {
+            "personagem": "Hugo",
+            "ru": "— Bonjour ! Je m'appelle Hugo. Comment tu t'appelles ?",
+            "en": "— Hello! My name is Hugo. What's your name?",
+            "audio": "Bonjour ! Je m'appelle Hugo. Comment tu t'appelles ?"
+          },
+          {
+            "personagem": "Chloé",
+            "ru": "— Salut, Hugo. Je m'appelle Chloé.",
+            "en": "— Hi, Hugo. My name is Chloé.",
+            "audio": "Salut, Hugo. Je m'appelle Chloé."
+          },
+          {
+            "personagem": "Hugo",
+            "ru": "— Où est-ce que tu habites ?",
+            "en": "— Where do you live?",
+            "audio": "Où est-ce que tu habites ?"
+          },
+          {
+            "personagem": "Chloé",
+            "ru": "— J'habite ici, rue Victor Hugo. Et toi ?",
+            "en": "— I live here, on Rue Victor Hugo. And you?",
+            "audio": "J'habite ici, rue Victor Hugo. Et toi ?"
+          },
+          {
+            "personagem": "Hugo",
+            "ru": "— Moi aussi ! Tu travailles à Lyon ?",
+            "en": "— Me too! Do you work in Lyon?",
+            "audio": "Moi aussi ! Tu travailles à Lyon ?"
+          },
+          {
+            "personagem": "Chloé",
+            "ru": "— Oui, mais je n'aime pas beaucoup la ville. Je préfère habiter ici.",
+            "en": "— Yes, but I don't like the city much. I prefer living here.",
+            "audio": "Oui, mais je n'aime pas beaucoup la ville. Je préfère habiter ici."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Ask an imaginary classmate five questions using «où», «qui», «quand», «comment» and «pourquoi». Answer each one."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Make these negative: «Je travaille à Paris. J'habite en France. J'aime danser.»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-004.json",
+  "responsavel": null
+}

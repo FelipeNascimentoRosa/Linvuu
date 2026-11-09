@@ -1,0 +1,151 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 29,
+  "fase": 3,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "The city: il y a, places and demonstratives: Places in the city and il y a",
+  "objetivo": "Lesson 8, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 8,
+    "titulo": "The city: il y a, places and demonstratives",
+    "objetivo": "Say what there is in the city with «il y a», locate places with prepositions, and use the demonstratives «ce», «cet», «cette» and «ces».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Places in the city and il y a",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "la banque",
+            "translit": "lah BAHNK",
+            "pt": "",
+            "en": "",
+            "audio": "la banque"
+          },
+          {
+            "ru": "la poste",
+            "translit": "lah POHST",
+            "pt": "",
+            "en": "",
+            "audio": "la poste"
+          },
+          {
+            "ru": "la gare",
+            "translit": "lah GAHR",
+            "pt": "",
+            "en": "",
+            "audio": "la gare"
+          },
+          {
+            "ru": "la pharmacie",
+            "translit": "lah fahr-mah-SEE",
+            "pt": "",
+            "en": "",
+            "audio": "la pharmacie"
+          },
+          {
+            "ru": "le supermarché",
+            "translit": "luh sew-pehr-mahr-SHAY",
+            "pt": "",
+            "en": "",
+            "audio": "le supermarché"
+          },
+          {
+            "ru": "la boulangerie",
+            "translit": "lah boo-lahn-zhuh-REE",
+            "pt": "",
+            "en": "",
+            "audio": "la boulangerie"
+          },
+          {
+            "ru": "l'hôpital",
+            "translit": "loh-pee-TAHL",
+            "pt": "",
+            "en": "",
+            "audio": "l'hôpital"
+          },
+          {
+            "ru": "l'école",
+            "translit": "lay-KOHL",
+            "pt": "",
+            "en": "",
+            "audio": "l'école"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Il y a: there is and there are",
+        "explicacao": "STEP 1: «il y a» means «there is» or «there are» and is used to say that something exists: «Il y a une banque ici.» STEP 2: the verb does not change with the number: «Il y a une banque», «Il y a deux banques.» Always «il y a». STEP 3: ask with «Est-ce qu'il y a… ?» or by raising your voice: «Il y a une pharmacie près d'ici ?» STEP 4: in the negative, «il n'y a pas de»: «Il n'y a pas de pharmacie.» The article becomes «de». STEP 5: use the indefinite article after «il y a»: «Il y a un café», «Il y a des magasins.» STEP 6: do not confuse «il y a» (exists) with «c'est» (identifies): «Il y a un homme.» «C'est Paul.» STEP 7: to point something out, use «voici» (here is) and «voilà» (there is): «Voilà la gare !» STEP 8: «il y a» also talks about the past («two years ago»), but that comes later.",
+        "comparacao": "English uses «there is» and «there are» for this job («there is a bank here»), but French has only «il y a», a fixed expression that never changes with the number.",
+        "tabela": [
+          {
+            "function": "existence",
+            "sentence": "Il y a une banque ici."
+          },
+          {
+            "function": "plural",
+            "sentence": "Il y a deux banques."
+          },
+          {
+            "function": "question",
+            "sentence": "Est-ce qu'il y a une pharmacie ?"
+          },
+          {
+            "function": "negation",
+            "sentence": "Il n'y a pas de pharmacie."
+          },
+          {
+            "function": "pointing out",
+            "sentence": "Voilà la gare !"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Il y a des banque.",
+            "certo": "Il y a des banques.",
+            "motivo": "Plural with «des» and «-s»."
+          },
+          {
+            "errado": "Il n'y a pas une pharmacie.",
+            "certo": "Il n'y a pas de pharmacie.",
+            "motivo": "After a negative, «de»."
+          },
+          {
+            "errado": "Ils y ont deux banques.",
+            "certo": "Il y a deux banques.",
+            "motivo": "«Il y a» never changes."
+          },
+          {
+            "errado": "C'est un café ici. (existence)",
+            "certo": "Il y a un café ici.",
+            "motivo": "To say something exists = «il y a»; to identify = «c'est»."
+          }
+        ],
+        "tag": "Il y a"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Name five things there are on your street and two that there are not, with «il y a» and «il n'y a pas de»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say today's date and the time out loud, and what you do every Monday."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-008.json",
+  "responsavel": null
+}

@@ -1,0 +1,510 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 84,
+  "fase": 9,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Indirect object pronouns and two pronouns: Review and practice for lesson 21",
+  "objetivo": "Lesson 21, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 21,
+    "titulo": "Indirect object pronouns and two pronouns",
+    "objetivo": "Use «lui» and «leur» for «to him/to her» and «to them», recognize the verbs that take «à», and combine two pronouns in simple sentences.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 21",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je lui donne un livre",
+            "opcoes": [
+              "Je lui donne un livre",
+              "Je leur donne un livre",
+              "Je le donne un livre"
+            ],
+            "gabarito": "Je lui donne un livre",
+            "explicacao": "Listen to «lui».",
+            "id": "fr-021-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je le lui donne",
+            "opcoes": [
+              "Je le lui donne",
+              "Je lui le donne",
+              "Je la lui donne"
+            ],
+            "gabarito": "Je le lui donne",
+            "explicacao": "Listen to the order.",
+            "id": "fr-021-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je l'attends",
+            "opcoes": [
+              "Je l'attends",
+              "Je lui attends",
+              "Je leur attends"
+            ],
+            "gabarito": "Je l'attends",
+            "explicacao": "Listen to «l'attends».",
+            "id": "fr-021-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je lui téléphone",
+            "respostaEsperada": "Je lui téléphone",
+            "explicacao": "Write: Je lui téléphone.",
+            "id": "fr-021-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Il me le donne",
+            "respostaEsperada": "Il me le donne",
+            "explicacao": "Write: Il me le donne.",
+            "id": "fr-021-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «I'm making a cake for her. Can you help me?»",
+            "opcoes": [
+              "gâteau.",
+              "Moi,",
+              "lui",
+              "prépare",
+              "m'aider",
+              "?",
+              "Tu",
+              "peux",
+              "un",
+              "je"
+            ],
+            "gabarito": "Moi, je lui prépare un gâteau. Tu peux m'aider ?",
+            "explicacao": "Write: Moi, je lui prépare un gâteau. Tu peux m'aider ?",
+            "id": "fr-021-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je leur parle",
+            "respostaEsperada": "Je leur parle",
+            "explicacao": "Write: Je leur parle.",
+            "id": "fr-021-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Tu as acheté un cadeau pour maman ?",
+            "respostaEsperada": "Tu as acheté un cadeau pour maman ?",
+            "explicacao": "Did you buy a present for Mom?",
+            "id": "fr-021-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je lui parle.",
+              "Je parle lui.",
+              "Je parle à lui."
+            ],
+            "gabarito": "Je lui parle.",
+            "explicacao": "Pronoun before the verb.",
+            "id": "fr-021-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je l'écoute.",
+              "Je lui écoute.",
+              "Je leur écoute."
+            ],
+            "gabarito": "Je l'écoute.",
+            "explicacao": "«Écouter» = direct.",
+            "id": "fr-021-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je leur ai téléphoné.",
+              "Je leurs ai téléphoné.",
+              "Je les ai téléphoné."
+            ],
+            "gabarito": "Je leur ai téléphoné.",
+            "explicacao": "«Leur» has no «s».",
+            "id": "fr-021-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Moi, je lui prépare un gâteau. Tu peux m'aider ?",
+            "respostaEsperada": "Moi, je lui prépare un gâteau. Tu peux m'aider ?",
+            "explicacao": "I'm making a cake for her. Can you help me?",
+            "id": "fr-021-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je le lui donne.",
+              "Je lui le donne.",
+              "Je donne le lui."
+            ],
+            "gabarito": "Je le lui donne.",
+            "explicacao": "Direct before «lui».",
+            "id": "fr-021-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je ___ donne un cadeau. (to her)",
+            "opcoes": [
+              "lui",
+              "leur",
+              "la"
+            ],
+            "gabarito": "lui",
+            "explicacao": "Indirect.",
+            "id": "fr-021-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je ___ téléphone. (to them)",
+            "opcoes": [
+              "leur",
+              "lui",
+              "les"
+            ],
+            "gabarito": "leur",
+            "explicacao": "Plural indirect.",
+            "id": "fr-021-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Bien sûr. Je t'apporte les œufs ?",
+            "respostaEsperada": "Bien sûr. Je t'apporte les œufs ?",
+            "explicacao": "Of course. Shall I bring you the eggs?",
+            "id": "fr-021-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il ___ le donne. (to me)",
+            "opcoes": [
+              "me",
+              "moi",
+              "je"
+            ],
+            "gabarito": "me",
+            "explicacao": "Before «le».",
+            "id": "fr-021-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «le» mean?",
+            "audio": "le",
+            "opcoes": [
+              "to give",
+              "it (masculine thing)",
+              "to give back",
+              "sorrir"
+            ],
+            "gabarito": "it (masculine thing)",
+            "explicacao": "«le» = it (masculine thing).",
+            "id": "fr-021-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je ___ attends. (her)",
+            "opcoes": [
+              "l'",
+              "lui",
+              "leur"
+            ],
+            "gabarito": "l'",
+            "explicacao": "Direct object.",
+            "id": "fr-021-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Je ne lui parle pas.»",
+            "opcoes": [
+              "Je",
+              "ne",
+              "lui",
+              "parle",
+              "pas"
+            ],
+            "gabarito": "Je ne lui parle pas.",
+            "explicacao": "ne + pronoun + verb + pas.",
+            "id": "fr-021-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Je le lui ai donné.»",
+            "opcoes": [
+              "Je",
+              "le",
+              "lui",
+              "ai",
+              "donné"
+            ],
+            "gabarito": "Je le lui ai donné.",
+            "explicacao": "Pronouns before the auxiliary.",
+            "id": "fr-021-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I give a book to Marie. I give her a book. I give it to her.",
+            "respostaEsperada": "Je donne un livre à Marie. Je lui donne un livre. Je le lui donne.",
+            "id": "fr-021-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «prêter» mean?",
+            "audio": "prêter",
+            "opcoes": [
+              "telefonar",
+              "it (feminine thing)",
+              "sorrir",
+              "emprestar"
+            ],
+            "gabarito": "emprestar",
+            "explicacao": "«prêter» = emprestar.",
+            "id": "fr-021-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je ___ écris une lettre. (to him)",
+            "opcoes": [
+              "lui",
+              "leur",
+              "l'"
+            ],
+            "gabarito": "lui",
+            "explicacao": "Singular indirect object: «lui».",
+            "id": "fr-021-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Oui, apporte-les-moi demain, s'il te plaît.",
+            "respostaEsperada": "Oui, apporte-les-moi demain, s'il te plaît.",
+            "explicacao": "Yes, bring them to me tomorrow, please.",
+            "id": "fr-021-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il ___ répond. (to us)",
+            "opcoes": [
+              "leur",
+              "nous",
+              "lui"
+            ],
+            "gabarito": "nous",
+            "explicacao": "«Nous» works for both direct and indirect objects.",
+            "id": "fr-021-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je ___ ai prêté mon livre. (to them)",
+            "opcoes": [
+              "leurs",
+              "les",
+              "leur"
+            ],
+            "gabarito": "leur",
+            "explicacao": "Plural indirect object: «leur», with no «s».",
+            "id": "fr-021-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Le livre ? Je le ___ montre. (to her)",
+            "opcoes": [
+              "lui",
+              "leur",
+              "la"
+            ],
+            "gabarito": "lui",
+            "explicacao": "With «le» and «lui», the direct comes first: «le lui».",
+            "id": "fr-021-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «rendre» mean?",
+            "audio": "rendre",
+            "opcoes": [
+              "to give back",
+              "oferecer, presentear",
+              "there",
+              "of it"
+            ],
+            "gabarito": "to give back",
+            "explicacao": "«rendre» = to give back.",
+            "id": "fr-021-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il ne ___ téléphone pas. (to you — tu)",
+            "opcoes": [
+              "toi",
+              "te",
+              "lui"
+            ],
+            "gabarito": "te",
+            "explicacao": "«Te» is the unstressed pronoun for «tu».",
+            "id": "fr-021-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which verb takes an indirect object (à + person)?",
+            "opcoes": [
+              "attendre",
+              "chercher",
+              "téléphoner"
+            ],
+            "gabarito": "téléphoner",
+            "explicacao": "«Téléphoner à»; the others are direct.",
+            "id": "fr-021-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the correct order of the pronouns?",
+            "opcoes": [
+              "Il me le donne.",
+              "Il le me donne.",
+              "Il me lui donne."
+            ],
+            "gabarito": "Il me le donne.",
+            "explicacao": "With «me», the indirect comes before the direct.",
+            "id": "fr-021-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "D'accord. Je te les apporte demain matin.",
+            "respostaEsperada": "D'accord. Je te les apporte demain matin.",
+            "explicacao": "Agreed. I'll bring them to you tomorrow morning.",
+            "id": "fr-021-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «Give him the book!»?",
+            "opcoes": [
+              "Donne le lui livre !",
+              "Donne-lui le livre !",
+              "Lui donne le livre !"
+            ],
+            "gabarito": "Donne-lui le livre !",
+            "explicacao": "In the affirmative imperative, the pronoun goes after the verb, with a hyphen.",
+            "id": "fr-021-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «demander» mean?",
+            "audio": "demander",
+            "opcoes": [
+              "emprestar",
+              "to give",
+              "to ask for, to ask",
+              "oferecer, presentear"
+            ],
+            "gabarito": "to ask for, to ask",
+            "explicacao": "«demander» = to ask for, to ask.",
+            "id": "fr-021-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «She answered them»?",
+            "opcoes": [
+              "Elle leur a répondue.",
+              "Elle les a répondu.",
+              "Elle leur a répondu."
+            ],
+            "gabarito": "Elle leur a répondu.",
+            "explicacao": "Indirect object: «leur», and the participle does not agree.",
+            "id": "fr-021-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «I am sending them a message.»",
+            "opcoes": [
+              "Je",
+              "leur",
+              "envoie",
+              "un",
+              "message"
+            ],
+            "gabarito": "Je leur envoie un message.",
+            "explicacao": "«Leur» goes before the verb.",
+            "id": "fr-021-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «He sent it to them yesterday.»",
+            "opcoes": [
+              "Il",
+              "le",
+              "leur",
+              "a",
+              "envoyé",
+              "hier"
+            ],
+            "gabarito": "Il le leur a envoyé hier.",
+            "explicacao": "Direct before indirect: «le leur».",
+            "id": "fr-021-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I speak to him. I do not phone them.",
+            "respostaEsperada": "Je lui parle. Je ne leur téléphone pas.",
+            "id": "fr-021-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I am waiting for him. I gave him the book.",
+            "respostaEsperada": "Je l'attends. Je lui ai donné le livre.",
+            "id": "fr-021-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Speak for 1 minute about gifts you have given and received, using «lui», «leur» and «me»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Answer: «Tu parles à ta mère ? Tu écoutes la radio ? Tu donnes le livre à Paul ?»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-021.json",
+  "responsavel": null
+}

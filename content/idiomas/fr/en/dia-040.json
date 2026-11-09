@@ -1,0 +1,507 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 40,
+  "fase": 4,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Aller, the near future, transport and directions: Review and practice for lesson 10",
+  "objetivo": "Lesson 10, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 10,
+    "titulo": "Aller, the near future, transport and directions",
+    "objetivo": "Use «aller» to go to places and talk about plans with the near future, choose a means of transport, and give and ask for directions with the imperative.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 10",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Nous allons en France",
+            "opcoes": [
+              "Nous allons en France",
+              "Je vais en France",
+              "Ils vont en France"
+            ],
+            "gabarito": "Nous allons en France",
+            "explicacao": "Listen to «allons».",
+            "id": "fr-010-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je vais manger",
+            "opcoes": [
+              "Je vais manger",
+              "Je mange",
+              "Je vais mangé"
+            ],
+            "gabarito": "Je vais manger",
+            "explicacao": "Listen to «vais» and the infinitive.",
+            "id": "fr-010-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Tournez à gauche",
+            "opcoes": [
+              "Tournez à gauche",
+              "Tournez à droite",
+              "Allez tout droit"
+            ],
+            "gabarito": "Tournez à gauche",
+            "explicacao": "Listen to «gauche».",
+            "id": "fr-010-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je vais au travail en métro",
+            "respostaEsperada": "Je vais au travail en métro",
+            "explicacao": "Write: Je vais au travail en métro.",
+            "id": "fr-010-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ne tournez pas à droite",
+            "respostaEsperada": "Ne tournez pas à droite",
+            "explicacao": "Write: Ne tournez pas à droite.",
+            "id": "fr-010-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Excuse me, sir. How do I get to the station, please?»",
+            "opcoes": [
+              "gare,",
+              "s'il",
+              "Pour",
+              "la",
+              "vous",
+              "monsieur.",
+              "à",
+              "Excusez-moi,",
+              "aller",
+              "?",
+              "plaît"
+            ],
+            "gabarito": "Excusez-moi, monsieur. Pour aller à la gare, s'il vous plaît ?",
+            "explicacao": "Write: Excusez-moi, monsieur. Pour aller à la gare, s'il vous plaît ?",
+            "id": "fr-010-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Elle va chez le médecin",
+            "respostaEsperada": "Elle va chez le médecin",
+            "explicacao": "Write: Elle va chez le médecin.",
+            "id": "fr-010-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "C'est facile. Allez tout droit, puis tournez à gauche.",
+            "respostaEsperada": "C'est facile. Allez tout droit, puis tournez à gauche.",
+            "explicacao": "It's easy. Go straight ahead, then turn left.",
+            "id": "fr-010-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the form of «aller» for «nous»?",
+            "opcoes": [
+              "allons",
+              "allez",
+              "vont"
+            ],
+            "gabarito": "allons",
+            "explicacao": "«nous allons».",
+            "id": "fr-010-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I go by train»?",
+            "opcoes": [
+              "Je vais en train.",
+              "Je vais à train.",
+              "Je vais par train."
+            ],
+            "gabarito": "Je vais en train.",
+            "explicacao": "«En» + enclosed vehicle.",
+            "id": "fr-010-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the imperative of «tu parles»?",
+            "opcoes": [
+              "Parle !",
+              "Parles !",
+              "Parlez !"
+            ],
+            "gabarito": "Parle !",
+            "explicacao": "It loses the «s».",
+            "id": "fr-010-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Excusez-moi, monsieur. Pour aller à la gare, s'il vous plaît ?",
+            "respostaEsperada": "Excusez-moi, monsieur. Pour aller à la gare, s'il vous plaît ?",
+            "explicacao": "Excuse me, sir. How do I get to the station, please?",
+            "id": "fr-010-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I'm going to Paul's house»?",
+            "opcoes": [
+              "Je vais chez Paul.",
+              "Je vais à Paul.",
+              "Je vais au Paul."
+            ],
+            "gabarito": "Je vais chez Paul.",
+            "explicacao": "«Chez» + person.",
+            "id": "fr-010-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je vais ___ vélo. (de)",
+            "opcoes": [
+              "à",
+              "en",
+              "par"
+            ],
+            "gabarito": "à",
+            "explicacao": "«À vélo».",
+            "id": "fr-010-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Nous ___ partir demain. (we are going to)",
+            "opcoes": [
+              "allons",
+              "allez",
+              "vais"
+            ],
+            "gabarito": "allons",
+            "explicacao": "«nous allons».",
+            "id": "fr-010-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "C'est loin ?",
+            "respostaEsperada": "C'est loin ?",
+            "explicacao": "Is it far?",
+            "id": "fr-010-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Prenez ___ deuxième rue. (a)",
+            "opcoes": [
+              "la",
+              "le",
+              "les"
+            ],
+            "gabarito": "la",
+            "explicacao": "«Rue» is feminine.",
+            "id": "fr-010-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «And then?»",
+            "opcoes": [
+              "?",
+              "Et",
+              "après"
+            ],
+            "gabarito": "Et après ?",
+            "explicacao": "Write: Et après ?",
+            "id": "fr-010-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tu ___ au café. (vais)",
+            "opcoes": [
+              "vas",
+              "va",
+              "vais"
+            ],
+            "gabarito": "vas",
+            "explicacao": "«tu vas».",
+            "id": "fr-010-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Nous allons manger au restaurant demain.»",
+            "opcoes": [
+              "Nous",
+              "allons",
+              "manger",
+              "au",
+              "restaurant",
+              "demain"
+            ],
+            "gabarito": "Nous allons manger au restaurant demain.",
+            "explicacao": "Near future.",
+            "id": "fr-010-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Allez tout droit, puis tournez à gauche.»",
+            "opcoes": [
+              "Allez",
+              "tout",
+              "droit,",
+              "puis",
+              "tournez",
+              "à",
+              "gauche"
+            ],
+            "gabarito": "Allez tout droit, puis tournez à gauche.",
+            "explicacao": "Directions with the imperative.",
+            "id": "fr-010-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: Tomorrow I'm going to Brazil by plane. Turn right.",
+            "respostaEsperada": "Demain, je vais au Brésil en avion. Tournez à droite.",
+            "id": "fr-010-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Et après ?",
+            "respostaEsperada": "Et après ?",
+            "explicacao": "And then?",
+            "id": "fr-010-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle ___ à la gare. (goes)",
+            "opcoes": [
+              "vas",
+              "va",
+              "vont"
+            ],
+            "gabarito": "va",
+            "explicacao": "With «elle», «aller» becomes «va».",
+            "id": "fr-010-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Tournez à gauche",
+            "respostaEsperada": "Tournez à gauche",
+            "explicacao": "turn left",
+            "id": "fr-010-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ils ___ en France. (go)",
+            "opcoes": [
+              "vais",
+              "allez",
+              "vont"
+            ],
+            "gabarito": "vont",
+            "explicacao": "With «ils», «aller» becomes «vont».",
+            "id": "fr-010-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je vais ___ le médecin. (ao)",
+            "opcoes": [
+              "chez",
+              "à",
+              "au"
+            ],
+            "gabarito": "chez",
+            "explicacao": "To go to someone's home or office, use «chez».",
+            "id": "fr-010-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Nous allons ___ voiture. (de)",
+            "opcoes": [
+              "à",
+              "en",
+              "par"
+            ],
+            "gabarito": "en",
+            "explicacao": "An enclosed vehicle takes «en»: «en voiture».",
+            "id": "fr-010-e21"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «No, it's a five-minute walk. Have a good trip!»",
+            "opcoes": [
+              "Non,",
+              "cinq",
+              "pied.",
+              "Bon",
+              "à",
+              "c'est",
+              "voyage",
+              "à",
+              "!",
+              "minutes"
+            ],
+            "gabarito": "Non, c'est à cinq minutes à pied. Bon voyage !",
+            "explicacao": "Write: Non, c'est à cinq minutes à pied. Bon voyage !",
+            "id": "fr-010-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ à gauche ! (Turn — vous)",
+            "opcoes": [
+              "Tournes",
+              "Tourne",
+              "Tournez"
+            ],
+            "gabarito": "Tournez",
+            "explicacao": "The «vous» imperative ends in «-ez».",
+            "id": "fr-010-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which means of transport uses «à»?",
+            "opcoes": [
+              "à vélo",
+              "en train",
+              "en avion"
+            ],
+            "gabarito": "à vélo",
+            "explicacao": "What you ride on uses «à»: «à vélo».",
+            "id": "fr-010-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I'm going to France»?",
+            "opcoes": [
+              "Je vais à France.",
+              "Je vais en France.",
+              "Je vais au France."
+            ],
+            "gabarito": "Je vais en France.",
+            "explicacao": "A feminine country takes «en».",
+            "id": "fr-010-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Prenez la deuxième rue",
+            "respostaEsperada": "Prenez la deuxième rue",
+            "explicacao": "take the second street",
+            "id": "fr-010-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the correct negative of «Je vais partir»?",
+            "opcoes": [
+              "Je ne pas vais partir.",
+              "Je vais ne pas partir.",
+              "Je ne vais pas partir."
+            ],
+            "gabarito": "Je ne vais pas partir.",
+            "explicacao": "«Ne» and «pas» go around «vais».",
+            "id": "fr-010-e25"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Non, c'est à cinq minutes à pied. Bon voyage !",
+            "respostaEsperada": "Non, c'est à cinq minutes à pied. Bon voyage !",
+            "explicacao": "No, it's a five-minute walk. Have a good trip!",
+            "id": "fr-010-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the imperative of «aller» for «tu»?",
+            "opcoes": [
+              "va",
+              "vas",
+              "aille"
+            ],
+            "gabarito": "va",
+            "explicacao": "«Va !», without the final «s».",
+            "id": "fr-010-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «They are going to the bus station.»",
+            "opcoes": [
+              "Ils",
+              "vont",
+              "à",
+              "la",
+              "gare",
+              "en",
+              "bus"
+            ],
+            "gabarito": "Ils vont à la gare en bus.",
+            "explicacao": "«Aller à» + place; «en» + vehicle.",
+            "id": "fr-010-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Take the first street on the left.»",
+            "opcoes": [
+              "Prenez",
+              "la",
+              "première",
+              "rue",
+              "à",
+              "gauche"
+            ],
+            "gabarito": "Prenez la première rue à gauche.",
+            "explicacao": "«Vous» imperative with the street in the feminine.",
+            "id": "fr-010-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I walk to the post office. Tomorrow we are going to France.",
+            "respostaEsperada": "Je vais à la poste à pied. Demain, nous allons en France.",
+            "id": "fr-010-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French (use «vous»): Turn left, then go straight ahead. We are not going by car.",
+            "respostaEsperada": "Tournez à gauche, puis allez tout droit. Nous n'allons pas en voiture.",
+            "id": "fr-010-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Plan out loud a weekend trip: where you are going, how you are getting there and what you are going to do."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say out loud what you are going to do tomorrow, with «aller» + infinitive."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-010.json",
+  "responsavel": null
+}

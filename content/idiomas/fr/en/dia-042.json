@@ -1,0 +1,137 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 42,
+  "fase": 5,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "The routine: reflexive verbs, frequency and -ir verbs: Frequency and parts of the day",
+  "objetivo": "Lesson 11, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 11,
+    "titulo": "The routine: reflexive verbs, frequency and -ir verbs",
+    "objetivo": "Talk about your daily routine with reflexive verbs, say how often you do things, and conjugate regular -ir verbs.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Frequency and parts of the day",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "toujours",
+            "translit": "too-ZHOOR",
+            "pt": "",
+            "en": "",
+            "audio": "toujours"
+          },
+          {
+            "ru": "souvent",
+            "translit": "soo-VAHN",
+            "pt": "",
+            "en": "",
+            "audio": "souvent"
+          },
+          {
+            "ru": "quelquefois, parfois",
+            "translit": "kehl-kuh-FWAH, pahr-FWAH",
+            "pt": "",
+            "en": "",
+            "audio": "quelquefois, parfois"
+          },
+          {
+            "ru": "rarement",
+            "translit": "rahr-MAHN",
+            "pt": "",
+            "en": "",
+            "audio": "rarement"
+          },
+          {
+            "ru": "ne… jamais",
+            "translit": "nuh zhah-MEH",
+            "pt": "",
+            "en": "",
+            "audio": "ne… jamais"
+          },
+          {
+            "ru": "tous les jours",
+            "translit": "too lay ZHOOR",
+            "pt": "",
+            "en": "",
+            "audio": "tous les jours"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Saying how often",
+        "explicacao": "STEP 1: adverbs of frequency go after the conjugated verb: «Je me lève toujours à sept heures.» «Elle mange souvent du pain.» STEP 2: «ne… jamais» is a negation: «Je ne me lève jamais tôt.» Do not use «pas» with it: «Je ne… jamais», never «Je ne… jamais pas». STEP 3: for a short answer, «Jamais !» on its own already means no: «Tu manges de la viande ? — Jamais.» STEP 4: time expressions: «tous les jours» (every day), «tous les matins», «toutes les semaines», «une fois par semaine», «deux fois par mois». STEP 5: parts of the day: «le matin», «l'après-midi», «le soir», «la nuit». For a habit, use the definite article: «Le matin, je prends un café.» For something specific, use «ce»: «Ce matin, j'ai un rendez-vous.» STEP 6: meals: «le petit-déjeuner» (breakfast), «le déjeuner» (lunch), «le dîner» (dinner). The verbs are «déjeuner» and «dîner». «Prendre le petit-déjeuner» is also used.",
+        "comparacao": "English says «never» or «not… ever» («I never get up», or «I don't ever get up»). In French, «ne… jamais» goes around the verb: «je ne me lève jamais». There is no «je jamais me lève».",
+        "tabela": [
+          {
+            "frequency": "toujours",
+            "example": "Je me lève toujours à sept heures."
+          },
+          {
+            "frequency": "souvent",
+            "example": "Elle mange souvent du pain."
+          },
+          {
+            "frequency": "quelquefois / parfois",
+            "example": "Nous allons parfois au cinéma."
+          },
+          {
+            "frequency": "rarement",
+            "example": "Ils voyagent rarement."
+          },
+          {
+            "frequency": "ne… jamais",
+            "example": "Je ne me couche jamais tôt."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je jamais me lève tôt.",
+            "certo": "Je ne me lève jamais tôt.",
+            "motivo": "«Ne… jamais» goes around the verb."
+          },
+          {
+            "errado": "Je ne me lève jamais pas.",
+            "certo": "Je ne me lève jamais.",
+            "motivo": "Don't use «pas» with «jamais»."
+          },
+          {
+            "errado": "Je toujours me lève à sept heures.",
+            "certo": "Je me lève toujours à sept heures.",
+            "motivo": "The adverb comes after the conjugated verb."
+          },
+          {
+            "errado": "Je prends le petit-déjeuner ce matin tous les jours.",
+            "certo": "Le matin, je prends le petit-déjeuner.",
+            "motivo": "Habit: «le matin»."
+          }
+        ],
+        "tag": "Frequency"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Describe eight of your habits out loud, with «toujours», «souvent», «parfois», «rarement» and «ne… jamais»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Conjugate «se lever» from memory, with all six pronouns."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-011.json",
+  "responsavel": null
+}

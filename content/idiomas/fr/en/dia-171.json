@@ -1,0 +1,155 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 171,
+  "fase": 18,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Compound relatives and the pronoun «ce»: Long, precise sentences",
+  "objetivo": "Lesson 43, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 43,
+    "titulo": "Compound relatives and the pronoun «ce»",
+    "objetivo": "Use «lequel», «auquel», «duquel», «ce que», «ce dont», «ce à quoi» and «dont» precisely to link complex ideas.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Long, precise sentences",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "la raison",
+            "translit": "lah reh-ZOHN",
+            "pt": "",
+            "en": "",
+            "audio": "la raison"
+          },
+          {
+            "ru": "la façon",
+            "translit": "lah fah-SOHN",
+            "pt": "",
+            "en": "",
+            "audio": "la façon"
+          },
+          {
+            "ru": "le moment",
+            "translit": "luh moh-MAHN",
+            "pt": "",
+            "en": "",
+            "audio": "le moment"
+          },
+          {
+            "ru": "l'endroit",
+            "translit": "lahn-DRWAH",
+            "pt": "",
+            "en": "",
+            "audio": "l'endroit"
+          },
+          {
+            "ru": "la personne",
+            "translit": "lah pehr-SON",
+            "pt": "",
+            "en": "",
+            "audio": "la personne"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Combining several relatives",
+        "explicacao": "STEP 1: one relative can sit inside another: «Voici le livre que tu m'as offert et dont je t'ai parlé.» STEP 2: «la raison pour laquelle», «la façon dont», «le moment où», «l'endroit où»: «La façon dont il parle m'agace.» STEP 3: «celui qui / celle qui / ceux qui / celles qui» (the one who): «Celui qui travaille réussit.» «Ceux dont je parle sont partis.» STEP 4: «celui-ci» (this one), «celui-là» (that one): «Je prends celui-ci.» STEP 5: «ce qui» + «c'est»: «Ce qui compte, c'est de participer.»",
+        "comparacao": "in English we say «the way he speaks». French says «la façon dont il parle» (with «dont»). And «the one who» is «celui qui», with agreement in gender and number.",
+        "tabela": [
+          {
+            "expression": "la raison pour laquelle",
+            "example": "La raison pour laquelle je pars."
+          },
+          {
+            "expression": "la façon dont",
+            "example": "La façon dont il parle m'agace."
+          },
+          {
+            "expression": "celui qui",
+            "example": "Celui qui travaille réussit."
+          },
+          {
+            "expression": "celle dont",
+            "example": "Celle dont je parle est partie."
+          },
+          {
+            "expression": "ce qui compte",
+            "example": "Ce qui compte, c'est de participer."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "La façon comme il parle m'agace.",
+            "certo": "La façon dont il parle m'agace.",
+            "motivo": "«Dont»."
+          },
+          {
+            "errado": "Celui que travaille réussit.",
+            "certo": "Celui qui travaille réussit.",
+            "motivo": "Subject: «qui»."
+          },
+          {
+            "errado": "La raison que je pars.",
+            "certo": "La raison pour laquelle je pars.",
+            "motivo": "Preposition + lequel."
+          },
+          {
+            "errado": "Ce qui compte, c'est participer.",
+            "certo": "Ce qui compte, c'est de participer.",
+            "motivo": "«C'est de» + infinitive."
+          }
+        ],
+        "tag": "Relatives"
+      },
+      {
+        "tipo": "texto",
+        "min": 8,
+        "titulo": "Une lettre de motivation / A cover letter",
+        "ru": "Madame, Monsieur, Je vous écris au sujet du poste que vous avez publié. Ce qui m'intéresse dans votre entreprise, c'est la façon dont elle forme ses équipes. J'ai travaillé trois ans dans une société pour laquelle j'ai développé un projet auquel je suis très attaché. Ce dont je suis le plus fier, c'est d'avoir réussi à travailler avec des personnes avec lesquelles je ne partageais pas la même culture. Je reste à votre disposition pour tout entretien.",
+        "pt": "Dear Madam or Sir, I am writing to you about the position you advertised. What interests me about your company is the way it builds its teams. I worked for three years at a company for which I developed a project to which I am very attached. What I am most proud of is having managed to work with people with whom I did not share the same culture. I am available for any interview.",
+        "perguntas": [
+          {
+            "pergunta": "Quel poste intéresse l'auteur ?",
+            "resposta": "Celui que l'entreprise a publié."
+          },
+          {
+            "pergunta": "Qu'est-ce qui l'intéresse dans l'entreprise ?",
+            "resposta": "La façon dont elle forme ses équipes."
+          },
+          {
+            "pergunta": "Combien de temps a-t-il travaillé dans sa société précédente ?",
+            "resposta": "Trois ans."
+          },
+          {
+            "pergunta": "De quoi est-il le plus fier ?",
+            "resposta": "D'avoir travaillé avec des personnes d'une autre culture."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Explain out loud what interests you most in a job, with «ce qui», «ce que» and «ce dont»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Complete: «Voici la raison pour ___ je pars. Ce ___ je veux, c'est du calme.»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-043.json",
+  "responsavel": null
+}

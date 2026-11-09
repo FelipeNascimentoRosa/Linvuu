@@ -1,0 +1,170 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 89,
+  "fase": 9,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Direct object pronouns: Lo, la, los, las",
+  "objetivo": "Lesson 23, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 23,
+    "titulo": "Direct object pronouns",
+    "objetivo": "Use direct object pronouns (me, te, lo, la, nos, os, los, las) to avoid repeating the object, place them before the verb or attached to the infinitive, use the neuter «lo» («lo sé», «lo siento»), and avoid dropping the pronoun, since Spanish never lets you leave it out the way casual spoken Portuguese sometimes does.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Lo, la, los, las",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "la llave",
+            "translit": "[pronuncia] la LYAH-beh",
+            "pt": "the key",
+            "en": "",
+            "audio": "la llave"
+          },
+          {
+            "ru": "el cargador",
+            "translit": "[pronuncia] el kar-gah-DOR",
+            "pt": "the charger",
+            "en": "",
+            "audio": "el cargador"
+          },
+          {
+            "ru": "el paraguas",
+            "translit": "[pronuncia] el pah-RAH-gwas",
+            "pt": "the umbrella",
+            "en": "",
+            "audio": "el paraguas"
+          },
+          {
+            "ru": "las gafas",
+            "translit": "[pronuncia] las GAH-fas",
+            "pt": "the glasses",
+            "en": "",
+            "audio": "las gafas"
+          },
+          {
+            "ru": "buscar",
+            "translit": "[pronuncia] boos-KAR",
+            "pt": "to look for",
+            "en": "",
+            "audio": "buscar"
+          },
+          {
+            "ru": "encontrar",
+            "translit": "[pronuncia] en-kon-TRAR",
+            "pt": "to find",
+            "en": "",
+            "audio": "encontrar"
+          },
+          {
+            "ru": "perder",
+            "translit": "[pronuncia] per-DER",
+            "pt": "to lose, to miss",
+            "en": "",
+            "audio": "perder"
+          },
+          {
+            "ru": "llevar",
+            "translit": "[pronuncia] lyeh-BAR",
+            "pt": "to carry, to wear",
+            "en": "",
+            "audio": "llevar"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Lo, la, los, las: not repeating the object",
+        "explicacao": "STEP 1: the direct object is the thing or person that receives the verb's action. To find it, ask «what?» or «who?» right after the verb: in «Compré el libro», I bought what? El libro. STEP 2: to avoid repeating it, swap the object for a pronoun that agrees with it in gender and number: «lo» (masculine, singular), «la» (feminine, singular), «los» (masculine, plural), and «las» (feminine, plural). «¿Compraste el libro? — Sí, lo compré.» STEP 3: the pronoun comes before the conjugated verb, as its own separate word with no hyphen: «Lo compré», «La veo», «Las busco». STEP 4: in the negative, «no» comes before the pronoun: «No lo tengo», «No la encuentro». STEP 5: with an infinitive, there are two equally correct positions: before the conjugated verb («Lo quiero comprar») or attached to the end of the infinitive («Quiero comprarlo»), with no hyphen. STEP 6: with the pretérito perfecto, the pronoun comes before «haber»: «Lo he visto», «No la he encontrado». STEP 7: when the object is a person, the personal «a» disappears along with the name: «Veo a Ana» becomes «La veo». STEP 8: Spanish never lets you drop this pronoun once the object has already been mentioned: «¿Viste la película? — Sí, la vi».",
+        "comparacao": "English object pronouns (it, him, her, them) are required too, just like Spanish, so the underlying habit of never dropping the object isn't new ground — English speakers already do this instinctively. What genuinely is new is word order: English object pronouns always sit after the verb («I bought it», «I saw her»), while Spanish puts the pronoun before the conjugated verb («Lo compré», «La vi») or attaches it directly onto an infinitive with no space and no hyphen («comprarlo») — a position English has no equivalent for at all.",
+        "exemplos": [
+          {
+            "ru": "Busco el paraguas, pero no lo encuentro.",
+            "pt": "I'm looking for the umbrella, but I can't find it."
+          },
+          {
+            "ru": "Quiero comprarlas hoy.",
+            "pt": "I want to buy them today."
+          },
+          {
+            "ru": "¿Has visto a Marta? — Sí, la he visto esta mañana.",
+            "pt": "Did you see Marta? Yes, I saw her this morning."
+          }
+        ],
+        "tabela": [
+          {
+            "objeto": "[misto] el libro, el cargador",
+            "pronome": "[misto] lo",
+            "exemplo": "[misto] ¿El libro? Lo compré ayer."
+          },
+          {
+            "objeto": "[misto] la llave, la película",
+            "pronome": "[misto] la",
+            "exemplo": "[misto] ¿La llave? No la encuentro."
+          },
+          {
+            "objeto": "[misto] los billetes, los amigos",
+            "pronome": "[misto] los",
+            "exemplo": "[misto] ¿Los billetes? Los tengo aquí."
+          },
+          {
+            "objeto": "[misto] las gafas, las flores",
+            "pronome": "[misto] las",
+            "exemplo": "[misto] ¿Las gafas? Las perdí."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] ¿Compraste el pan? — Sí, compré.",
+            "certo": "[misto] Sí, lo compré.",
+            "motivo": "The direct object pronoun is required in Spanish."
+          },
+          {
+            "errado": "[misto] Yo vi ele ayer.",
+            "certo": "[misto] Lo vi ayer.",
+            "motivo": "Spanish never uses a subject-style word like «él» as the object; it uses «lo»."
+          },
+          {
+            "errado": "[misto] Quiero comprar-lo.",
+            "certo": "[misto] Quiero comprarlo.",
+            "motivo": "The pronoun attaches to the infinitive with no hyphen."
+          },
+          {
+            "errado": "[misto] Veo la todos los días.",
+            "certo": "[misto] La veo todos los días.",
+            "motivo": "The pronoun comes before the conjugated verb."
+          },
+          {
+            "errado": "[misto] No veo lo.",
+            "certo": "[misto] No lo veo.",
+            "motivo": "In the negative, «no» comes before the pronoun, which sits before the verb."
+          }
+        ],
+        "tag": "Pronouns"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Answer out loud using a pronoun: «¿Tienes las llaves?», «¿Compraste el pan?», «¿Ves a Marta?», «¿Has perdido el paraguas?» Example: «Sí, las tengo.»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say the difference between «sabía» and «supe». Then narrate, in two sentences with a setting and an event, something that happened this week."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-023.json",
+  "responsavel": null
+}

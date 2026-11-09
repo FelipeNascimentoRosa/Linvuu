@@ -1,0 +1,137 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 122,
+  "fase": 13,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Bank, post office and services: At the post office and other services",
+  "objetivo": "Lesson 31, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 31,
+    "titulo": "Bank, post office and services",
+    "objetivo": "Handle practical tasks in French: open an account, exchange money, send a parcel, ask for information and complain politely.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "At the post office and other services",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "le colis",
+            "translit": "luh koh-LEE",
+            "pt": "",
+            "en": "",
+            "audio": "le colis"
+          },
+          {
+            "ru": "la lettre",
+            "translit": "lah leh-TRUH",
+            "pt": "",
+            "en": "",
+            "audio": "la lettre"
+          },
+          {
+            "ru": "le timbre",
+            "translit": "luh tan-BRUH",
+            "pt": "",
+            "en": "",
+            "audio": "le timbre"
+          },
+          {
+            "ru": "envoyer",
+            "translit": "ahn-vwah-YAY",
+            "pt": "",
+            "en": "",
+            "audio": "envoyer"
+          },
+          {
+            "ru": "recommandé",
+            "translit": "ruh-koh-mahn-DAY",
+            "pt": "",
+            "en": "",
+            "audio": "recommandé"
+          },
+          {
+            "ru": "la boîte aux lettres",
+            "translit": "lah bwat oh leh-TRUH",
+            "pt": "",
+            "en": "",
+            "audio": "la boîte aux lettres"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Sending a letter or a parcel",
+        "explicacao": "STEP 1: asking for the service: «Je voudrais envoyer ce colis au Brésil.» «Combien coûte l'envoi ?» STEP 2: types of mailing: «en recommandé» (registered), «en urgence» (urgent), «en lettre normale» (regular letter). STEP 3: delivery time: «Il arrivera dans combien de jours ?» «Il arrivera dans une semaine.» STEP 4: filling in forms: «Écrivez l'adresse ici.» «Votre nom et votre signature, s'il vous plaît.» STEP 5: problems: «Mon colis n'est pas arrivé.» «Il est perdu ?» «Je voudrais faire une réclamation.» STEP 6: pronouns: «Je l'envoie.» «Je le lui envoie.» STEP 7: «combien de temps» and «combien de jours»: «Ça prend combien de temps ?» STEP 8: courtesy phrases: «Merci, bonne journée.» «Vous pouvez signer ici ?»",
+        "comparacao": "In English we say «send a letter by registered mail». French says «en recommandé» (with «en»). «Un colis» is a parcel; «un paquet» is a packet or pack of anything.",
+        "tabela": [
+          {
+            "request": "to send a parcel",
+            "sentence": "Je voudrais envoyer ce colis au Brésil."
+          },
+          {
+            "request": "registered letter",
+            "sentence": "Je voudrais l'envoyer en recommandé."
+          },
+          {
+            "request": "deadline",
+            "sentence": "Il arrivera dans combien de jours ?"
+          },
+          {
+            "request": "to complain",
+            "sentence": "Mon colis n'est pas arrivé."
+          },
+          {
+            "request": "to sign",
+            "sentence": "Vous pouvez signer ici ?"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je voudrais envoyer ce colis à le Brésil.",
+            "certo": "Je voudrais envoyer ce colis au Brésil.",
+            "motivo": "à + le = au."
+          },
+          {
+            "errado": "Il arrivera en trois jours.",
+            "certo": "Il arrivera dans trois jours.",
+            "motivo": "Future time: «dans»."
+          },
+          {
+            "errado": "Mon colis n'a pas arrivé.",
+            "certo": "Mon colis n'est pas arrivé.",
+            "motivo": "«Arriver» takes «être»."
+          },
+          {
+            "errado": "Je veux faire une réclamation.",
+            "certo": "Je voudrais faire une réclamation.",
+            "motivo": "Polite request."
+          }
+        ],
+        "tag": "Services"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Role-play a trip to the post office out loud: send a registered letter and a parcel, and complain about one that did not arrive."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Ask the bank for three different things politely."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-031.json",
+  "responsavel": null
+}

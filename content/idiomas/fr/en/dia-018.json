@@ -1,0 +1,141 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 18,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Nouns, articles and professions: Definite, indefinite and contracted articles",
+  "objetivo": "Lesson 5, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 5,
+    "titulo": "Nouns, articles and professions",
+    "objetivo": "Recognize the gender and number of nouns, use definite, indefinite and contracted articles, and talk about professions with «il est» and «c'est».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Definite, indefinite and contracted articles",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "le, la, l', les",
+            "translit": "LUH, LAH, l', LAY",
+            "pt": "",
+            "en": "",
+            "audio": "le, la, l', les"
+          },
+          {
+            "ru": "un, une, des",
+            "translit": "AN, EWN, DAY",
+            "pt": "",
+            "en": "",
+            "audio": "un, une, des"
+          },
+          {
+            "ru": "au, à la, à l', aux",
+            "translit": "OH, ah LAH, ah l', OH",
+            "pt": "",
+            "en": "",
+            "audio": "au, à la, à l', aux"
+          },
+          {
+            "ru": "du, de la, de l', des",
+            "translit": "DEW, duh LAH, duh l', DAY",
+            "pt": "",
+            "en": "",
+            "audio": "du, de la, de l', des"
+          },
+          {
+            "ru": "le café",
+            "translit": "luh kah-FAY",
+            "pt": "",
+            "en": "",
+            "audio": "le café"
+          },
+          {
+            "ru": "des amis",
+            "translit": "day zah-MEE",
+            "pt": "",
+            "en": "",
+            "audio": "des amis"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Le, un, au, du: the articles",
+        "explicacao": "STEP 1: definite articles: «le» (masculine), «la» (feminine), «l'» (before a vowel or a silent «h»), «les» (plural). They are used for known things or things in general: «Le café est chaud.» «J'aime le café.» In English, «I like coffee» takes no article; in French, after «aimer», «adorer» and «détester» the article is required. STEP 2: indefinite articles: «un» (masculine), «une» (feminine), «des» (plural). They are used for something unidentified: «J'ai un frère.» «J'ai des amis.» The «des» has no equivalent in English: «des amis» = «friends» (or \"some friends\"). STEP 3: contractions: «à + le = au», «à + les = aux», «de + le = du», «de + les = des». With «la» and «l'» there is no contraction: «à la gare», «de l'hôtel». Examples: «Je vais au café.» «Je parle du film.» «Je parle de la ville.» STEP 4: in the negative, «un», «une» and «des» become «de» (or «d'»): «J'ai un frère» → «Je n'ai pas de frère.» Exception: with «être» it does not change: «Ce n'est pas un livre.» STEP 5: «du», «de la» and «de l'» also work as partitive articles (meaning «some»): that is the subject of lesson 9.",
+        "comparacao": "English says «to the» and «of the» as separate words; French fuses them into one: «au», «aux», «du», «des» (a bit like «don't» for \"do not\", except that the French fusion is mandatory and written). The big difference is the required article before general nouns: «J'aime le café» (and not «J'aime café»).",
+        "tabela": [
+          {
+            "article": "definite",
+            "masculine": "le livre",
+            "feminine": "la table",
+            "plural": "les livres"
+          },
+          {
+            "article": "indefinite",
+            "masculine": "un livre",
+            "feminine": "une table",
+            "plural": "des livres"
+          },
+          {
+            "article": "à + definite article",
+            "masculine": "au café",
+            "feminine": "à la gare",
+            "plural": "aux États-Unis"
+          },
+          {
+            "article": "de + definite article",
+            "masculine": "du film",
+            "feminine": "de la ville",
+            "plural": "des amis (de les)"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "J'aime café.",
+            "certo": "J'aime le café.",
+            "motivo": "The article is required."
+          },
+          {
+            "errado": "Je vais à le café.",
+            "certo": "Je vais au café.",
+            "motivo": "«à + le = au»."
+          },
+          {
+            "errado": "Je n'ai pas une voiture.",
+            "certo": "Je n'ai pas de voiture.",
+            "motivo": "After a negative, «un/une/des» become «de»."
+          },
+          {
+            "errado": "J'ai amis.",
+            "certo": "J'ai des amis.",
+            "motivo": "«Des» is required."
+          }
+        ],
+        "tag": "Articles"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Say eight sentences with articles: «J'aime le/la/les…», «J'ai un/une/des…», «Je vais au/à la/aux…», «Je n'ai pas de…»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Make these plural: «le livre, la table, l'ami, le bateau, le journal»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-005.json",
+  "responsavel": null
+}

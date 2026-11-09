@@ -1,0 +1,518 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 60,
+  "fase": 6,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "The past with «avoir»: passé composé: Review and practice for lesson 15",
+  "objetivo": "Lesson 15, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 15,
+    "titulo": "The past with «avoir»: passé composé",
+    "objetivo": "Tell what happened using the passé composé with «avoir», the past participle and the negative in the past.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 15",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "J'ai mangé",
+            "opcoes": [
+              "J'ai mangé",
+              "Je mange",
+              "J'ai mangée"
+            ],
+            "gabarito": "J'ai mangé",
+            "explicacao": "Listen to the final «é».",
+            "id": "fr-015-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je n'ai pas fini",
+            "opcoes": [
+              "Je n'ai pas fini",
+              "Je ne finis pas",
+              "Je n'ai pas fait"
+            ],
+            "gabarito": "Je n'ai pas fini",
+            "explicacao": "Listen to «fini».",
+            "id": "fr-015-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Il y a deux jours",
+            "opcoes": [
+              "Il y a deux jours",
+              "Il a deux jours",
+              "Il y a trois jours"
+            ],
+            "gabarito": "Il y a deux jours",
+            "explicacao": "Listen to «il y a».",
+            "id": "fr-015-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "J'ai pris le bus",
+            "respostaEsperada": "J'ai pris le bus",
+            "explicacao": "Write: J'ai pris le bus.",
+            "id": "fr-015-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «avant-hier» mean?",
+            "audio": "avant-hier",
+            "opcoes": [
+              "after",
+              "still, again",
+              "first",
+              "anteontem"
+            ],
+            "gabarito": "anteontem",
+            "explicacao": "«avant-hier» = anteontem.",
+            "id": "fr-015-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je ne l'ai pas vu",
+            "respostaEsperada": "Je ne l'ai pas vu",
+            "explicacao": "Write: Je ne l'ai pas vu.",
+            "id": "fr-015-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Tu as déjà mangé ?",
+            "respostaEsperada": "Tu as déjà mangé ?",
+            "explicacao": "Write: Tu as déjà mangé ?",
+            "id": "fr-015-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Participle of «parler»:",
+            "opcoes": [
+              "parlé",
+              "parler",
+              "parlu"
+            ],
+            "gabarito": "parlé",
+            "explicacao": "-er → -é.",
+            "id": "fr-015-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «hier» mean?",
+            "audio": "hier",
+            "opcoes": [
+              "last week",
+              "never",
+              "nobody",
+              "yesterday"
+            ],
+            "gabarito": "yesterday",
+            "explicacao": "«hier» = yesterday.",
+            "id": "fr-015-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Participle of «prendre»:",
+            "opcoes": [
+              "pris",
+              "prendu",
+              "pri"
+            ],
+            "gabarito": "pris",
+            "explicacao": "Irregular.",
+            "id": "fr-015-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je n'ai pas mangé.",
+              "Je ne mangé pas.",
+              "Je n'ai mangé pas."
+            ],
+            "gabarito": "Je n'ai pas mangé.",
+            "explicacao": "The negation goes around the auxiliary.",
+            "id": "fr-015-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je l'ai vu.",
+              "J'ai le vu.",
+              "J'ai vu le."
+            ],
+            "gabarito": "Je l'ai vu.",
+            "explicacao": "Pronoun before the auxiliary.",
+            "id": "fr-015-e10"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "la semaine dernière",
+            "respostaEsperada": "la semaine dernière",
+            "explicacao": "last week",
+            "id": "fr-015-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «la semaine dernière» mean?",
+            "audio": "la semaine dernière",
+            "opcoes": [
+              "first",
+              "finally",
+              "always",
+              "last week"
+            ],
+            "gabarito": "last week",
+            "explicacao": "«la semaine dernière» = last week.",
+            "id": "fr-015-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Nous ___ mangé. (avoir)",
+            "opcoes": [
+              "avons",
+              "sommes",
+              "a"
+            ],
+            "gabarito": "avons",
+            "explicacao": "Nous avons.",
+            "id": "fr-015-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ils ___ fini. (avoir)",
+            "opcoes": [
+              "ont",
+              "sont",
+              "a"
+            ],
+            "gabarito": "ont",
+            "explicacao": "Ils ont.",
+            "id": "fr-015-e12"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle a ___ un livre. (lire)",
+            "opcoes": [
+              "lu",
+              "lit",
+              "lisé"
+            ],
+            "gabarito": "lu",
+            "explicacao": "Irregular.",
+            "id": "fr-015-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «ce matin» mean?",
+            "audio": "ce matin",
+            "opcoes": [
+              "nothing",
+              "this morning",
+              "after",
+              "anteontem"
+            ],
+            "gabarito": "this morning",
+            "explicacao": "«ce matin» = this morning.",
+            "id": "fr-015-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je n'ai ___ vu. (nobody)",
+            "opcoes": [
+              "personne",
+              "rien",
+              "jamais"
+            ],
+            "gabarito": "personne",
+            "explicacao": "«Personne» = nobody.",
+            "id": "fr-015-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Hier, j'ai travaillé.»",
+            "opcoes": [
+              "Hier,",
+              "j'ai",
+              "travaillé"
+            ],
+            "gabarito": "Hier, j'ai travaillé.",
+            "explicacao": "Time + auxiliary + participle.",
+            "id": "fr-015-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Je n'ai rien mangé.»",
+            "opcoes": [
+              "Je",
+              "n'ai",
+              "rien",
+              "mangé"
+            ],
+            "gabarito": "Je n'ai rien mangé.",
+            "explicacao": "ne + auxiliary + rien + participle.",
+            "id": "fr-015-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: Yesterday I ate with Marie. Then I didn't see anyone.",
+            "respostaEsperada": "Hier, j'ai mangé avec Marie. Puis, je n'ai vu personne.",
+            "id": "fr-015-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «personne» mean?",
+            "audio": "personne",
+            "opcoes": [
+              "nothing",
+              "last week",
+              "never",
+              "nobody"
+            ],
+            "gabarito": "nobody",
+            "explicacao": "«personne» = nobody.",
+            "id": "fr-015-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tu as ___ le bus ? (taken)",
+            "opcoes": [
+              "pris",
+              "prendu",
+              "pri"
+            ],
+            "gabarito": "pris",
+            "explicacao": "The participle of «prendre» is «pris».",
+            "id": "fr-015-e18"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle a ___ un message. (written)",
+            "opcoes": [
+              "écrité",
+              "écrit",
+              "écrivé"
+            ],
+            "gabarito": "écrit",
+            "explicacao": "The participle of «écrire» is «écrit».",
+            "id": "fr-015-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Vous avez ___ ? (terminaram)",
+            "opcoes": [
+              "finit",
+              "finis",
+              "fini"
+            ],
+            "gabarito": "fini",
+            "explicacao": "Regular «-ir» verbs form the participle in «-i».",
+            "id": "fr-015-e20"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «l'année dernière» mean?",
+            "audio": "l'année dernière",
+            "opcoes": [
+              "last year",
+              "already",
+              "during",
+              "after"
+            ],
+            "gabarito": "last year",
+            "explicacao": "«l'année dernière» = last year.",
+            "id": "fr-015-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "il y a deux jours",
+            "respostaEsperada": "il y a deux jours",
+            "explicacao": "two days ago",
+            "id": "fr-015-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je n'ai ___ mangé. (nothing)",
+            "opcoes": [
+              "rien",
+              "personne",
+              "déjà"
+            ],
+            "gabarito": "rien",
+            "explicacao": "«Ne… rien» goes around the auxiliary.",
+            "id": "fr-015-e21"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ils ont ___ leur voiture. (venderam)",
+            "opcoes": [
+              "vendé",
+              "vendu",
+              "vendit"
+            ],
+            "gabarito": "vendu",
+            "explicacao": "Regular «-re» verbs form the participle in «-u».",
+            "id": "fr-015-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the participle of «voir»?",
+            "opcoes": [
+              "voyé",
+              "voit",
+              "vu"
+            ],
+            "gabarito": "vu",
+            "explicacao": "«Voir» → «vu».",
+            "id": "fr-015-e23"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "J'ai mangé",
+            "opcoes": [
+              "mangé",
+              "J'ai"
+            ],
+            "gabarito": "J'ai mangé",
+            "explicacao": "Write: J'ai mangé",
+            "id": "fr-015-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Il y a deux jours, j'ai vu Marc.",
+              "Il a deux jours, j'ai vu Marc.",
+              "Il y a deux jours, je vois Marc."
+            ],
+            "gabarito": "Il y a deux jours, j'ai vu Marc.",
+            "explicacao": "«Il y a» + time = ago; the passé composé tells the action.",
+            "id": "fr-015-e24"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the participle of «faire»?",
+            "opcoes": [
+              "fé",
+              "fait",
+              "fais"
+            ],
+            "gabarito": "fait",
+            "explicacao": "«Faire» → «fait».",
+            "id": "fr-015-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I saw him»?",
+            "opcoes": [
+              "Je ai le vu.",
+              "J'ai le vu.",
+              "Je l'ai vu."
+            ],
+            "gabarito": "Je l'ai vu.",
+            "explicacao": "The pronoun goes before the auxiliary.",
+            "id": "fr-015-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Je n'ai pas fini",
+            "opcoes": [
+              "n'ai",
+              "Je",
+              "fini",
+              "pas"
+            ],
+            "gabarito": "Je n'ai pas fini",
+            "explicacao": "Write: Je n'ai pas fini",
+            "id": "fr-015-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «We visited a museum yesterday.»",
+            "opcoes": [
+              "Nous",
+              "avons",
+              "visité",
+              "un",
+              "musée",
+              "hier"
+            ],
+            "gabarito": "Nous avons visité un musée hier.",
+            "explicacao": "«Avoir» + participle in «-é».",
+            "id": "fr-015-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «She hasn't finished yet.»",
+            "opcoes": [
+              "Elle",
+              "n'a",
+              "pas",
+              "encore",
+              "fini"
+            ],
+            "gabarito": "Elle n'a pas encore fini.",
+            "explicacao": "«Encore» goes between «pas» and the participle.",
+            "id": "fr-015-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: Yesterday I worked for six hours. Then I ate.",
+            "respostaEsperada": "Hier, j'ai travaillé pendant six heures. Puis, j'ai mangé.",
+            "id": "fr-015-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I didn't see anything. I've already read this book.",
+            "respostaEsperada": "Je n'ai rien vu. J'ai déjà lu ce livre.",
+            "id": "fr-015-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Speak for 1 minute about what you did over the last three days."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Tell what you did last weekend."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-015.json",
+  "responsavel": null
+}

@@ -1,0 +1,184 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 231,
+  "fase": 24,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Advanced travel: unexpected problems, complaints and the passive voice: At the airport",
+  "objetivo": "Lesson 58, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 58,
+    "titulo": "Advanced travel: unexpected problems, complaints and the passive voice",
+    "objetivo": "Handle unexpected problems while traveling (cancelled flight, lost luggage, a problem with your room), make a polite complaint and use the passive voice to talk about facts.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "At the airport",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "un vol",
+            "translit": "an VOL",
+            "pt": "a flight",
+            "en": "a flight",
+            "audio": "un vol"
+          },
+          {
+            "ru": "l'embarquement",
+            "translit": "lahn-bahr-kuh-MAHN",
+            "pt": "boarding",
+            "en": "boarding",
+            "audio": "l'embarquement"
+          },
+          {
+            "ru": "une carte d'embarquement",
+            "translit": "ewn kart dahn-bar-kuh-MAHN",
+            "pt": "a boarding pass",
+            "en": "a boarding pass",
+            "audio": "une carte d'embarquement"
+          },
+          {
+            "ru": "le comptoir",
+            "translit": "luh kohn-TWAR",
+            "pt": "the counter; the desk",
+            "en": "the counter; the desk",
+            "audio": "le comptoir"
+          },
+          {
+            "ru": "une déclaration de perte",
+            "translit": "ewn day-klah-rah-see-ohn duh PEHRT",
+            "pt": "a loss report",
+            "en": "a loss report",
+            "audio": "une déclaration de perte"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Talking to the airline",
+        "explicacao": "STEP 1: ask for information: «Pouvez-vous me dire pourquoi mon vol a été retardé ?» STEP 2: ask for alternatives: «Y a-t-il un autre vol aujourd'hui ?» STEP 3: give the details: «Mon numéro de vol est AF 123.» STEP 4: declare the loss: «Je voudrais faire une déclaration de perte.» STEP 5: keep the record: «Pouvez-vous me donner un justificatif ?»",
+        "comparacao": "In English, “could you tell me…?” is polite; in French, «pouvez-vous me dire» and «pourriez-vous me dire» both work. A «justificatif» is supporting documentation; depending on the situation, it may be a receipt, confirmation or other proof.",
+        "tabela": [
+          {
+            "step": "1",
+            "question": "Pourquoi mon vol est-il retardé ?",
+            "answer": "À cause d'un problème technique."
+          },
+          {
+            "step": "2",
+            "question": "Y a-t-il un autre vol ?",
+            "answer": "Oui, à 18 h."
+          },
+          {
+            "step": "3",
+            "question": "Où sont mes bagages ?",
+            "answer": "Ils ont été envoyés à Lyon."
+          },
+          {
+            "step": "4",
+            "question": "Je voudrais faire une déclaration de perte.",
+            "answer": "Remplissez ce formulaire."
+          },
+          {
+            "step": "5",
+            "question": "Pouvez-vous me donner un justificatif ?",
+            "answer": "Bien sûr."
+          },
+          {
+            "step": "6",
+            "question": "Serai-je remboursé ?",
+            "answer": "Oui, sous 30 jours."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je voudrais faire une déclaration du perte.",
+            "certo": "Je voudrais faire une déclaration de perte.",
+            "motivo": "Use «de perte» after «déclaration»; the polite conditional «je voudrais» is appropriate."
+          },
+          {
+            "errado": "Mon vol est retard.",
+            "certo": "Mon vol est retardé.",
+            "motivo": "Participle."
+          },
+          {
+            "errado": "Y a-il un autre vol ?",
+            "certo": "Y a-t-il un autre vol ?",
+            "motivo": "In formal inversion, add the linking «-t-»: «Y a-t-il… ?». «Il y a un autre vol ?» is also correct in conversational French."
+          },
+          {
+            "errado": "Pouvez vous me donner.",
+            "certo": "Pouvez-vous me donner.",
+            "motivo": "Hyphen in inversion."
+          }
+        ],
+        "tag": "Airport"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "À l'aéroport / At the airport",
+        "contexto": "Marie talks to the airline agent.",
+        "linhas": [
+          {
+            "personagem": "Marie",
+            "ru": "— Bonjour, mon vol pour Lyon a été annulé. Que puis-je faire ?",
+            "en": "— Good morning, my flight to Lyon was cancelled. What can I do?",
+            "audio": "Bonjour, mon vol pour Lyon a été annulé. Que puis-je faire ?"
+          },
+          {
+            "personagem": "La réceptionniste",
+            "ru": "— Je suis désolée. Il y a un autre vol à dix-huit heures.",
+            "en": "— I'm very sorry. There is another flight at six p.m.",
+            "audio": "Je suis désolée. Il y a un autre vol à dix-huit heures."
+          },
+          {
+            "personagem": "Marie",
+            "ru": "— Très bien. Mais mes bagages ont été enregistrés pour le premier vol.",
+            "en": "— Fine. But my luggage was checked onto the first flight.",
+            "audio": "Très bien. Mais mes bagages ont été enregistrés pour le premier vol."
+          },
+          {
+            "personagem": "La réceptionniste",
+            "ru": "— Ne vous inquiétez pas, ils seront transférés automatiquement.",
+            "en": "— Don't worry, it will be transferred automatically.",
+            "audio": "Ne vous inquiétez pas, ils seront transférés automatiquement."
+          },
+          {
+            "personagem": "Marie",
+            "ru": "— Pourriez-vous me donner un justificatif pour le remboursement du taxi ?",
+            "en": "— Could you give me a receipt for the taxi refund?",
+            "audio": "Pourriez-vous me donner un justificatif pour le remboursement du taxi ?"
+          },
+          {
+            "personagem": "La réceptionniste",
+            "ru": "— Bien sûr, voici votre justificatif.",
+            "en": "— Of course, here is your receipt.",
+            "audio": "Bien sûr, voici votre justificatif."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Answer aloud: «Que s'est-il passé ?» telling about a travel mishap in four sentences."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Turn into the passive: «La compagnie a annulé le vol.»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-058.json",
+  "responsavel": null
+}

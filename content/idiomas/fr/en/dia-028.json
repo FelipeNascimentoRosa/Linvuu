@@ -1,0 +1,507 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 28,
+  "fase": 3,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Numbers to 100, time, days and months: Review and practice for lesson 7",
+  "objetivo": "Lesson 7, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 7,
+    "titulo": "Numbers to 100, time, days and months",
+    "objetivo": "Count to 100, tell the time, and talk about days, months, dates and seasons.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 7",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "quatre-vingts",
+            "opcoes": [
+              "quatre-vingts",
+              "soixante-dix",
+              "quatre-vingt-dix"
+            ],
+            "gabarito": "quatre-vingts",
+            "explicacao": "Listen to the 4 × 20 sum.",
+            "id": "fr-007-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Il est trois heures et demie",
+            "opcoes": [
+              "Il est trois heures et demie",
+              "Il est trois heures et quart",
+              "Il est quatre heures moins le quart"
+            ],
+            "gabarito": "Il est trois heures et demie",
+            "explicacao": "Listen to «et demie».",
+            "id": "fr-007-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Nous sommes le douze mars",
+            "opcoes": [
+              "Nous sommes le douze mars",
+              "Nous sommes le premier mai",
+              "Nous sommes le vingt mars"
+            ],
+            "gabarito": "Nous sommes le douze mars",
+            "explicacao": "Listen to the number.",
+            "id": "fr-007-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "soixante et onze",
+            "respostaEsperada": "soixante et onze",
+            "explicacao": "Write: soixante et onze.",
+            "id": "fr-007-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Il est midi",
+            "respostaEsperada": "Il est midi",
+            "explicacao": "Write: Il est midi.",
+            "id": "fr-007-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Ah! My birthday is on March 20th.»",
+            "opcoes": [
+              "vingt",
+              "anniversaire",
+              "est",
+              "le",
+              "!",
+              "Ah",
+              "mars.",
+              "Mon"
+            ],
+            "gabarito": "Ah ! Mon anniversaire est le vingt mars.",
+            "explicacao": "Write: Ah ! Mon anniversaire est le vingt mars.",
+            "id": "fr-007-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Le lundi, je travaille",
+            "respostaEsperada": "Le lundi, je travaille",
+            "explicacao": "Write: Le lundi, je travaille.",
+            "id": "fr-007-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Louis, quel jour sommes-nous ?",
+            "respostaEsperada": "Louis, quel jour sommes-nous ?",
+            "explicacao": "Louis, what day is it today?",
+            "id": "fr-007-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you write 21?",
+            "opcoes": [
+              "vingt et un",
+              "vingt-un",
+              "vingt un"
+            ],
+            "gabarito": "vingt et un",
+            "explicacao": "21 takes «et».",
+            "id": "fr-007-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How much is «quatre-vingt-dix»?",
+            "opcoes": [
+              "90",
+              "80",
+              "99"
+            ],
+            "gabarito": "90",
+            "explicacao": "4 × 20 + 10.",
+            "id": "fr-007-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say 3:45?",
+            "opcoes": [
+              "quatre heures moins le quart",
+              "trois heures et quart",
+              "trois heures moins le quart"
+            ],
+            "gabarito": "quatre heures moins le quart",
+            "explicacao": "15 minutes to 4.",
+            "id": "fr-007-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ah ! Mon anniversaire est le vingt mars.",
+            "respostaEsperada": "Ah ! Mon anniversaire est le vingt mars.",
+            "explicacao": "Ah! My birthday is on March 20th.",
+            "id": "fr-007-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Le lundi, je travaille» means…",
+            "opcoes": [
+              "I work every Monday",
+              "this Monday I work",
+              "last Monday I worked"
+            ],
+            "gabarito": "I work every Monday",
+            "explicacao": "Article = habit.",
+            "id": "fr-007-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il est ___ heure. (one)",
+            "opcoes": [
+              "une",
+              "un",
+              "le"
+            ],
+            "gabarito": "une",
+            "explicacao": "«Heure» is feminine.",
+            "id": "fr-007-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il est trois heures et ___ . (half)",
+            "opcoes": [
+              "demie",
+              "demi",
+              "moitié"
+            ],
+            "gabarito": "demie",
+            "explicacao": "«Heure» is feminine, and «demie» agrees.",
+            "id": "fr-007-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Nous sommes jeudi, le douze mars.",
+            "respostaEsperada": "Nous sommes jeudi, le douze mars.",
+            "explicacao": "Today is Thursday, March 12th.",
+            "id": "fr-007-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Nous sommes le ___ mai. (1º)",
+            "opcoes": [
+              "premier",
+              "un",
+              "première"
+            ],
+            "gabarito": "premier",
+            "explicacao": "The 1st of the month is «premier».",
+            "id": "fr-007-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Agreed, at eight o'clock, at your place.»",
+            "opcoes": [
+              "toi.",
+              "vingt",
+              "à",
+              "heures,",
+              "D'accord,",
+              "chez"
+            ],
+            "gabarito": "D'accord, à vingt heures, chez toi.",
+            "explicacao": "Write: D'accord, à vingt heures, chez toi.",
+            "id": "fr-007-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Mon anniversaire est ___ mars.",
+            "opcoes": [
+              "en",
+              "à",
+              "dans"
+            ],
+            "gabarito": "en",
+            "explicacao": "«En» + month.",
+            "id": "fr-007-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Il est quatre heures moins le quart.»",
+            "opcoes": [
+              "Il",
+              "est",
+              "quatre",
+              "heures",
+              "moins",
+              "le",
+              "quart"
+            ],
+            "gabarito": "Il est quatre heures moins le quart.",
+            "explicacao": "Subtraction with «moins».",
+            "id": "fr-007-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Le film commence à huit heures.»",
+            "opcoes": [
+              "Le",
+              "film",
+              "commence",
+              "à",
+              "huit",
+              "heures"
+            ],
+            "gabarito": "Le film commence à huit heures.",
+            "explicacao": "«À» + time.",
+            "id": "fr-007-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: Today is Thursday, March 12th. It's half past two.",
+            "respostaEsperada": "Nous sommes jeudi, le douze mars. Il est deux heures et demie.",
+            "id": "fr-007-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "D'accord, à vingt heures, chez toi.",
+            "respostaEsperada": "D'accord, à vingt heures, chez toi.",
+            "explicacao": "Agreed, at eight o'clock, at your place.",
+            "id": "fr-007-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il est ___ . (noon)",
+            "opcoes": [
+              "minuit",
+              "midi",
+              "demie"
+            ],
+            "gabarito": "midi",
+            "explicacao": "«Midi» is noon and takes no «heures».",
+            "id": "fr-007-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "C'est vendredi, non ?",
+            "respostaEsperada": "C'est vendredi, non ?",
+            "explicacao": "That's a Friday, isn't it?",
+            "id": "fr-007-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Setenta e dois: ___-douze.",
+            "opcoes": [
+              "soixante-dix",
+              "septante",
+              "soixante"
+            ],
+            "gabarito": "soixante",
+            "explicacao": "70 to 79 are added to the ten of 60: «soixante-douze».",
+            "id": "fr-007-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Noventa: quatre-vingt-___ .",
+            "opcoes": [
+              "dix",
+              "neuf",
+              "onze"
+            ],
+            "gabarito": "dix",
+            "explicacao": "90 é «quatre-vingt-dix».",
+            "id": "fr-007-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Every Friday I work: Le ___ , je travaille.",
+            "opcoes": [
+              "Vendredi",
+              "vendredi",
+              "vendredis"
+            ],
+            "gabarito": "vendredi",
+            "explicacao": "Days are written in lowercase and have no plural here.",
+            "id": "fr-007-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «et quart» mean?",
+            "audio": "et quart",
+            "opcoes": [
+              "one hundred",
+              "e quinze",
+              "noon, midnight",
+              "Wednesday, Thursday"
+            ],
+            "gabarito": "e quinze",
+            "explicacao": "«et quart» = e quinze.",
+            "id": "fr-007-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il est quatre heures ___ cinq. (3h55)",
+            "opcoes": [
+              "et",
+              "à",
+              "moins"
+            ],
+            "gabarito": "moins",
+            "explicacao": "The last minutes are subtracted with «moins».",
+            "id": "fr-007-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «It's two fifteen»?",
+            "opcoes": [
+              "Il est deux heures et quart.",
+              "Il est deux heures moins le quart.",
+              "Il est deux heures et demie."
+            ],
+            "gabarito": "Il est deux heures et quart.",
+            "explicacao": "«Et quart» = e quinze.",
+            "id": "fr-007-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which of these is the month of August?",
+            "opcoes": [
+              "avril",
+              "août",
+              "juillet"
+            ],
+            "gabarito": "août",
+            "explicacao": "«Août» = August.",
+            "id": "fr-007-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Oui ! On dîne ensemble à vingt heures ?",
+            "respostaEsperada": "Oui ! On dîne ensemble à vingt heures ?",
+            "explicacao": "Yes! Shall we have dinner together at eight in the evening?",
+            "id": "fr-007-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is «soixante et onze»?",
+            "opcoes": [
+              "61",
+              "81",
+              "71"
+            ],
+            "gabarito": "71",
+            "explicacao": "60 + 11 = 71.",
+            "id": "fr-007-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «vingt et un» mean?",
+            "audio": "vingt et un",
+            "opcoes": [
+              "Wednesday, Thursday",
+              "twenty-one",
+              "noon, midnight",
+              "sessenta"
+            ],
+            "gabarito": "twenty-one",
+            "explicacao": "«vingt et un» = twenty-one.",
+            "id": "fr-007-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «in March»?",
+            "opcoes": [
+              "en mars",
+              "à mars",
+              "dans mars"
+            ],
+            "gabarito": "en mars",
+            "explicacao": "Use «en» with the months.",
+            "id": "fr-007-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «It's half past six.»",
+            "opcoes": [
+              "Il",
+              "est",
+              "six",
+              "heures",
+              "et",
+              "demie"
+            ],
+            "gabarito": "Il est six heures et demie.",
+            "explicacao": "«Et demie» = half past.",
+            "id": "fr-007-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «My birthday is on the fifteenth of May.»",
+            "opcoes": [
+              "Mon",
+              "anniversaire",
+              "est",
+              "le",
+              "quinze",
+              "mai"
+            ],
+            "gabarito": "Mon anniversaire est le quinze mai.",
+            "explicacao": "Date: «le» + number + month.",
+            "id": "fr-007-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write the number 99 out in full, in French.",
+            "respostaEsperada": "quatre-vingt-dix-neuf",
+            "id": "fr-007-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: It's seven fifteen. I work at nine o'clock.",
+            "respostaEsperada": "Il est sept heures et quart. Je travaille à neuf heures.",
+            "id": "fr-007-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe your schedule for tomorrow out loud, with times: getting up, working, having lunch, having dinner."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Count from 60 to 100 out loud and tell the time on five imaginary clocks."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-007.json",
+  "responsavel": null
+}

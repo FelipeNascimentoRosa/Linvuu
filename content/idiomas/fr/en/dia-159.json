@@ -1,0 +1,174 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 159,
+  "fase": 16,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Indirect speech: reporting what someone said: Telling a conversation",
+  "objetivo": "Lesson 40, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 40,
+    "titulo": "Indirect speech: reporting what someone said",
+    "objetivo": "Report what someone said, asked or requested, in the present and the past, with the changes of tense and pronouns.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Telling a conversation",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "raconter",
+            "translit": "rah-kohn-TAY",
+            "pt": "",
+            "en": "",
+            "audio": "raconter"
+          },
+          {
+            "ru": "rapporter",
+            "translit": "rah-por-TAY",
+            "pt": "",
+            "en": "",
+            "audio": "rapporter"
+          },
+          {
+            "ru": "avouer",
+            "translit": "ah-voo-AY",
+            "pt": "",
+            "en": "",
+            "audio": "avouer"
+          },
+          {
+            "ru": "promettre",
+            "translit": "proh-meh-TRUH",
+            "pt": "",
+            "en": "",
+            "audio": "promettre"
+          },
+          {
+            "ru": "conseiller",
+            "translit": "kohn-seh-YAY",
+            "pt": "",
+            "en": "",
+            "audio": "conseiller"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Verbs that introduce speech",
+        "explicacao": "STEP 1: richer verbs than «dire»: «raconter que» (to tell that), «avouer que» (to admit that), «promettre de» + infinitive: «Il a promis de venir.» STEP 2: «conseiller de» + infinitive: «Elle m'a conseillé de partir.» STEP 3: «interdire de» + infinitive: «Il m'a interdit de fumer.» STEP 4: «proposer de» + infinitive: «Il nous a proposé de sortir.» STEP 5: «avoir peur que» and «espérer que» need their own structures: advanced B1.",
+        "comparacao": "in English we say «he advised me to leave» and «he forbade me to smoke». French uses «de» with most of them: «conseiller de», «interdire de», «proposer de», «promettre de». The verb «dire» also uses «de»: «dire de».",
+        "tabela": [
+          {
+            "verb": "promettre de",
+            "example": "Il a promis de venir."
+          },
+          {
+            "verb": "conseiller de",
+            "example": "Elle m'a conseillé de partir."
+          },
+          {
+            "verb": "interdire de",
+            "example": "Il m'a interdit de fumer."
+          },
+          {
+            "verb": "proposer de",
+            "example": "Il nous a proposé de sortir."
+          },
+          {
+            "verb": "avouer que",
+            "example": "Il a avoué qu'il avait menti."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Il a promis venir.",
+            "certo": "Il a promis de venir.",
+            "motivo": "«Promettre de»."
+          },
+          {
+            "errado": "Elle m'a conseillé à partir.",
+            "certo": "Elle m'a conseillé de partir.",
+            "motivo": "«Conseiller de»."
+          },
+          {
+            "errado": "Il a avoué qu'il a menti.",
+            "certo": "Il a avoué qu'il avait menti.",
+            "motivo": "Plus-que-parfait."
+          },
+          {
+            "errado": "Il m'a interdit fumer.",
+            "certo": "Il m'a interdit de fumer.",
+            "motivo": "«Interdire de»."
+          }
+        ],
+        "tag": "Speech"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "Au bureau / At the office",
+        "contexto": "Marie tells Pierre what the boss said at the meeting.",
+        "linhas": [
+          {
+            "personagem": "Pierre",
+            "ru": "— Alors, qu'est-ce que le patron a dit à la réunion ?",
+            "en": "— So, what did the boss say at the meeting?",
+            "audio": "Alors, qu'est-ce que le patron a dit à la réunion ?"
+          },
+          {
+            "personagem": "Marie",
+            "ru": "— Il a dit qu'il était content de nos résultats.",
+            "en": "— He said he was pleased with our results.",
+            "audio": "Il a dit qu'il était content de nos résultats."
+          },
+          {
+            "personagem": "Pierre",
+            "ru": "— Et pour la prime ? Il en a parlé ?",
+            "en": "— And the bonus? Did he mention it?",
+            "audio": "Et pour la prime ? Il en a parlé ?"
+          },
+          {
+            "personagem": "Marie",
+            "ru": "— Il a promis de nous donner une réponse la semaine prochaine.",
+            "en": "— He promised to give us an answer next week.",
+            "audio": "Il a promis de nous donner une réponse la semaine prochaine."
+          },
+          {
+            "personagem": "Pierre",
+            "ru": "— Il a demandé si quelqu'un avait des questions ?",
+            "en": "— Did he ask if anyone had questions?",
+            "audio": "Il a demandé si quelqu'un avait des questions ?"
+          },
+          {
+            "personagem": "Marie",
+            "ru": "— Oui, et il m'a conseillé de lui écrire un e-mail pour ma demande de congé.",
+            "en": "— Yes, and he advised me to write him an email about my time-off request.",
+            "audio": "Oui, et il m'a conseillé de lui écrire un e-mail pour ma demande de congé."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Tell out loud about a recent conversation, reporting what each person said."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Turn into indirect speech in the past: «Il dit : « Je viendrai. »» «Elle dit : « J'ai mangé. »»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-040.json",
+  "responsavel": null
+}

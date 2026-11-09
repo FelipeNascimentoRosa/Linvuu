@@ -1,0 +1,178 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 27,
+  "fase": 3,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Numbers to 100, time, days and months: Days, months, dates and seasons",
+  "objetivo": "Lesson 7, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 7,
+    "titulo": "Numbers to 100, time, days and months",
+    "objetivo": "Count to 100, tell the time, and talk about days, months, dates and seasons.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Days, months, dates and seasons",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "lundi, mardi",
+            "translit": "lan-DEE, mahr-DEE",
+            "pt": "",
+            "en": "",
+            "audio": "lundi, mardi"
+          },
+          {
+            "ru": "mercredi, jeudi",
+            "translit": "mehr-kruh-DEE, zhuh-DEE",
+            "pt": "",
+            "en": "",
+            "audio": "mercredi, jeudi"
+          },
+          {
+            "ru": "vendredi",
+            "translit": "vahn-druh-DEE",
+            "pt": "",
+            "en": "",
+            "audio": "vendredi"
+          },
+          {
+            "ru": "samedi, dimanche",
+            "translit": "sahm-DEE, dee-MAHNSH",
+            "pt": "",
+            "en": "",
+            "audio": "samedi, dimanche"
+          },
+          {
+            "ru": "aujourd'hui, demain",
+            "translit": "oh-zhoor-DWEE, duh-MAN",
+            "pt": "",
+            "en": "",
+            "audio": "aujourd'hui, demain"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Days, months and dates",
+        "explicacao": "STEP 1: days and months are written in lowercase: «lundi», «mardi», «janvier», «février». STEP 2: months: janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. STEP 3: «lundi» without an article = this coming Monday; «le lundi» = every Monday: «Le lundi, je travaille.» «Lundi, je vais à Paris.» STEP 4: date: «Nous sommes le 12 mars» or «C'est le 12 mars». Ask: «Quelle est la date ?» or «Quel jour sommes-nous ?» STEP 5: the first day of the month is «le premier» (1er); the others use the number: «le deux mai». STEP 6: for months, use «en» or «au mois de»: «en mars», «au mois de mars». For seasons, «au printemps», «en été», «en automne», «en hiver».",
+        "comparacao": "Unlike English, French writes days and months in lowercase. And for dates, English says «March 12th» or «the 12th of March»; French says «le 12 mars», with the day first, and no «of».",
+        "tabela": [
+          {
+            "usage": "a single day",
+            "sentence": "Lundi, je vais à Paris."
+          },
+          {
+            "usage": "every such day",
+            "sentence": "Le lundi, je travaille."
+          },
+          {
+            "usage": "date",
+            "sentence": "Nous sommes le douze mars."
+          },
+          {
+            "usage": "first of the month",
+            "sentence": "C'est le premier mai."
+          },
+          {
+            "usage": "month",
+            "sentence": "Mon anniversaire est en mars."
+          },
+          {
+            "usage": "station",
+            "sentence": "J'aime l'été, mais pas l'hiver."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Lundi, je travaille (every Monday)",
+            "certo": "Le lundi, je travaille.",
+            "motivo": "A weekly habit takes «le»."
+          },
+          {
+            "errado": "le un mai",
+            "certo": "le premier mai",
+            "motivo": "The 1st of the month is «premier»."
+          },
+          {
+            "errado": "Je suis né en le mars",
+            "certo": "Je suis né en mars.",
+            "motivo": "«En» + month, with no article."
+          },
+          {
+            "errado": "Lundi 12 Mars (capital letter)",
+            "certo": "lundi 12 mars",
+            "motivo": "Days and months in lowercase."
+          }
+        ],
+        "tag": "Time"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "Un rendez-vous / An appointment",
+        "contexto": "Manon and Louis arrange a dinner.",
+        "linhas": [
+          {
+            "personagem": "Manon",
+            "ru": "— Louis, quel jour sommes-nous ?",
+            "en": "— Louis, what day is it today?",
+            "audio": "Louis, quel jour sommes-nous ?"
+          },
+          {
+            "personagem": "Louis",
+            "ru": "— Nous sommes jeudi, le douze mars.",
+            "en": "— Today is Thursday, March 12th.",
+            "audio": "Nous sommes jeudi, le douze mars."
+          },
+          {
+            "personagem": "Manon",
+            "ru": "— Ah ! Mon anniversaire est le vingt mars.",
+            "en": "— Ah! My birthday is on March 20th.",
+            "audio": "Ah ! Mon anniversaire est le vingt mars."
+          },
+          {
+            "personagem": "Louis",
+            "ru": "— C'est vendredi, non ?",
+            "en": "— That's a Friday, isn't it?",
+            "audio": "C'est vendredi, non ?"
+          },
+          {
+            "personagem": "Manon",
+            "ru": "— Oui ! On dîne ensemble à vingt heures ?",
+            "en": "— Yes! Shall we have dinner together at eight o'clock?",
+            "audio": "Oui ! On dîne ensemble à vingt heures ?"
+          },
+          {
+            "personagem": "Louis",
+            "ru": "— D'accord, à vingt heures, chez toi.",
+            "en": "— Agreed, at eight o'clock, at your place.",
+            "audio": "D'accord, à vingt heures, chez toi."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say today's date, the day of your birthday, and what you do every Monday and every Friday."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Tell the time: 2:30, 4:15, 6:45, 12:00."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-007.json",
+  "responsavel": null
+}

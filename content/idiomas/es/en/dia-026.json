@@ -1,0 +1,184 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 26,
+  "fase": 3,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Family and possessives: Possessives",
+  "objetivo": "Lesson 7, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 7,
+    "titulo": "Family and possessives",
+    "objetivo": "Name family members in the masculine and feminine, form the mixed plural («los hermanos»), use the possessives «mi, tu, su, nuestro, vuestro» with the right agreement, show possession with «de», and say how many people are in your household.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Possessives",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "el tío",
+            "translit": "[misto] el tío",
+            "pt": "the uncle",
+            "en": "",
+            "audio": "el tío"
+          },
+          {
+            "ru": "la tía",
+            "translit": "[misto] la tía",
+            "pt": "the aunt",
+            "en": "",
+            "audio": "la tía"
+          },
+          {
+            "ru": "el primo",
+            "translit": "[pronuncia] el PREE-mo",
+            "pt": "the cousin (male)",
+            "en": "",
+            "audio": "el primo"
+          },
+          {
+            "ru": "la prima",
+            "translit": "[pronuncia] la PREE-mah",
+            "pt": "the cousin (female)",
+            "en": "",
+            "audio": "la prima"
+          },
+          {
+            "ru": "el marido",
+            "translit": "[pronuncia] el mah-REE-do",
+            "pt": "the husband",
+            "en": "",
+            "audio": "el marido"
+          },
+          {
+            "ru": "la mujer",
+            "translit": "[pronuncia] la moo-HEHR",
+            "pt": "the wife; the woman",
+            "en": "",
+            "audio": "la mujer"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Mi, tu, su, nuestro, vuestro",
+        "explicacao": "STEP 1: possessives show who a thing or person belongs to: «mi» (my), «tu» (your, informal), «su» (his, her, your formal, their), «nuestro» (our), «vuestro» (your-all, in Spain, vosotros). STEP 2: they come before the noun, with no article: «mi libro», never «el mi libro». STEP 3: they agree with the thing possessed, not with the owner. «Mi hermano» and «mi hermana» have the same form, because «mi» has no gender. But «mis hermanos» (plural) takes an «-s». STEP 4: «mi, tu, su» only change for the plural: «mi / mis», «tu / tus», «su / sus». STEP 5: «nuestro» and «vuestro» have four forms: «nuestro, nuestra, nuestros, nuestras». «Nuestra casa» (casa is feminine), «nuestros libros». STEP 6: «su» and «sus» cover him, her, usted, them (masculine and feminine) and ustedes all at once. To be clear, add «de él, de ella, de usted, de ellos»: «la casa de ella». STEP 7: «tu» (no accent mark) is the possessive; «tú» (with an accent mark) is the pronoun. «Tu casa» is «your house», and «tú vives aquí» is «you live here». The same split applies to «mi» (my) and «mí» (for me, after a preposition). STEP 8: with «usted», the possessive is «su»: «¿Cuál es su apellido?». With «tú», it's «tu»: «¿Cuál es tu apellido?». STEP 9: in Latin America, «your-all's» uses «su» (with «ustedes»); «vuestro» belongs to Spain.",
+        "comparacao": "English «your» covers both «tú» and «usted», where Spanish splits it into «tu» (with «tú») and «su» (with «usted», and also «él/ella/ellos»). That makes «su» genuinely ambiguous in a way «your» never is — if it matters, say «la casa de él».",
+        "exemplos": [
+          {
+            "ru": "Mi madre se llama Rosa.",
+            "pt": "My mother's name is Rosa."
+          },
+          {
+            "ru": "¿Cuál es tu apellido?",
+            "pt": "What's your last name? (tú)"
+          },
+          {
+            "ru": "¿Cuál es su apellido, señora García?",
+            "pt": "What's your last name, Mrs. García?"
+          },
+          {
+            "ru": "Nuestra casa es pequeña.",
+            "pt": "Our house is small."
+          },
+          {
+            "ru": "Vuestros amigos son simpáticos.",
+            "pt": "Your friends are nice. (Spain, you-all)"
+          },
+          {
+            "ru": "La casa de ella está en Madrid.",
+            "pt": "Her house is in Madrid."
+          }
+        ],
+        "tabela": [
+          {
+            "pessoa": "[misto] yo",
+            "singular": "[misto] mi",
+            "plural": "[misto] mis",
+            "exemplo": "[misto] mi hermano, mis hermanos"
+          },
+          {
+            "pessoa": "[misto] tú",
+            "singular": "[misto] tu",
+            "plural": "[misto] tus",
+            "exemplo": "[misto] tu casa, tus casas"
+          },
+          {
+            "pessoa": "[misto] él, ella, usted",
+            "singular": "[misto] su",
+            "plural": "[misto] sus",
+            "exemplo": "[misto] su padre, sus padres"
+          },
+          {
+            "pessoa": "[misto] nosotros",
+            "singular": "[misto] nuestro, nuestra",
+            "plural": "[misto] nuestros, nuestras",
+            "exemplo": "[misto] nuestra casa, nuestros libros"
+          },
+          {
+            "pessoa": "[misto] vosotros (Spain)",
+            "singular": "[misto] vuestro, vuestra",
+            "plural": "[misto] vuestros, vuestras",
+            "exemplo": "[misto] vuestro coche, vuestras amigas"
+          },
+          {
+            "pessoa": "[misto] ellos, ellas, ustedes",
+            "singular": "[misto] su",
+            "plural": "[misto] sus",
+            "exemplo": "[misto] su casa, sus casas"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] El mi libro",
+            "certo": "[misto] Mi libro",
+            "motivo": "A possessive before the noun doesn't take an article."
+          },
+          {
+            "errado": "[misto] Mi hermanas",
+            "certo": "[misto] Mis hermanas",
+            "motivo": "The possessive agrees in number with the thing possessed."
+          },
+          {
+            "errado": "[misto] Nuestro casa",
+            "certo": "[misto] Nuestra casa",
+            "motivo": "«Nuestro» agrees in gender with «casa»."
+          },
+          {
+            "errado": "[misto] Tú casa es grande.",
+            "certo": "[misto] Tu casa es grande.",
+            "motivo": "The possessive carries no accent mark."
+          },
+          {
+            "errado": "[misto] Ella vive con sus madre.",
+            "certo": "[misto] Ella vive con su madre.",
+            "motivo": "Just one mother: singular."
+          }
+        ],
+        "tag": "Possessives"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Introduce your family out loud, with «mi, mis, nuestro»: «Mi madre se llama… Mis hermanos tienen… años. Nuestra casa está en…» Then ask a friend: «¿Cómo se llama tu madre? ¿Dónde viven tus abuelos?»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Name eight family members with their article and give the mixed plural for four of them."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-007.json",
+  "responsavel": null
+}

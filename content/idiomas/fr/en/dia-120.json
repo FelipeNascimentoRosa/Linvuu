@@ -1,0 +1,543 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 120,
+  "fase": 12,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Home, renting and city life: Review and practice for lesson 30",
+  "objetivo": "Lesson 30, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 30,
+    "titulo": "Home, renting and city life",
+    "objetivo": "Describe a house, look for and rent an apartment, talk about the neighborhood and services, and use «il y a», «chez» and prepositions of place more precisely.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 30",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Il y a deux pièces et un balcon",
+            "opcoes": [
+              "Il y a deux pièces et un balcon",
+              "Il y a deux chambres et un balcon",
+              "Il y a trois pièces et un balcon"
+            ],
+            "gabarito": "Il y a deux pièces et un balcon",
+            "explicacao": "Listen to «pièces».",
+            "id": "fr-030-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Le loyer est de neuf cents euros",
+            "opcoes": [
+              "Le loyer est de neuf cents euros",
+              "Le loyer est de neuf euros",
+              "Le loyer est de cinq cents euros"
+            ],
+            "gabarito": "Le loyer est de neuf cents euros",
+            "explicacao": "Listen to «neuf cents».",
+            "id": "fr-030-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Le métro est à cinq minutes à pied",
+            "opcoes": [
+              "Le métro est à cinq minutes à pied",
+              "Le métro est à cinq minutes en voiture",
+              "Le métro est à dix minutes à pied"
+            ],
+            "gabarito": "Le métro est à cinq minutes à pied",
+            "explicacao": "Listen to «à pied».",
+            "id": "fr-030-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «le locataire» mean?",
+            "audio": "le locataire",
+            "opcoes": [
+              "o inquilino",
+              "the neighborhood",
+              "the metro (subway)",
+              "the neighbor"
+            ],
+            "gabarito": "o inquilino",
+            "explicacao": "«le locataire» = o inquilino.",
+            "id": "fr-030-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "J'habite 12, rue de la Paix",
+            "respostaEsperada": "J'habite 12, rue de la Paix",
+            "explicacao": "Write: J'habite 12, rue de la Paix.",
+            "id": "fr-030-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Il est au troisième étage",
+            "respostaEsperada": "Il est au troisième étage",
+            "explicacao": "Write: Il est au troisième étage.",
+            "id": "fr-030-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je voudrais louer un appartement",
+            "respostaEsperada": "Je voudrais louer un appartement",
+            "explicacao": "Write: Je voudrais louer un appartement.",
+            "id": "fr-030-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «le supermarché» mean?",
+            "audio": "le supermarché",
+            "opcoes": [
+              "the supermarket",
+              "the bedroom",
+              "the park",
+              "the kitchen"
+            ],
+            "gabarito": "the supermarket",
+            "explicacao": "«le supermarché» = the supermarket.",
+            "id": "fr-030-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Il est au deuxième étage.",
+              "Il est à le deuxième étage.",
+              "Il est en deuxième étage."
+            ],
+            "gabarito": "Il est au deuxième étage.",
+            "explicacao": "à + le = au.",
+            "id": "fr-030-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "J'habite dans un appartement.",
+              "J'habite en un appartement.",
+              "J'habite au un appartement."
+            ],
+            "gabarito": "J'habite dans un appartement.",
+            "explicacao": "«Dans».",
+            "id": "fr-030-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je suis chez moi.",
+              "Je suis à chez moi.",
+              "Je suis chez à moi."
+            ],
+            "gabarito": "Je suis chez moi.",
+            "explicacao": "«Chez» without «à».",
+            "id": "fr-030-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «l'annonce» mean?",
+            "audio": "l'annonce",
+            "opcoes": [
+              "the balcony",
+              "the ad",
+              "o inquilino",
+              "the apartment"
+            ],
+            "gabarito": "the ad",
+            "explicacao": "«l'annonce» = the ad.",
+            "id": "fr-030-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Address in French:",
+            "opcoes": [
+              "J'habite 12, rue de la Paix.",
+              "J'habite rue de la Paix, 12.",
+              "J'habite en 12 rue la Paix."
+            ],
+            "gabarito": "J'habite 12, rue de la Paix.",
+            "explicacao": "Number first.",
+            "id": "fr-030-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Le loyer est ___ mille euros. (de)",
+            "opcoes": [
+              "de",
+              "à",
+              "en"
+            ],
+            "gabarito": "de",
+            "explicacao": "Amount.",
+            "id": "fr-030-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "C'est à cinq minutes ___ pied.",
+            "opcoes": [
+              "à",
+              "en",
+              "de"
+            ],
+            "gabarito": "à",
+            "explicacao": "«À pied».",
+            "id": "fr-030-e12"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «l'appartement» mean?",
+            "audio": "l'appartement",
+            "opcoes": [
+              "the apartment",
+              "the neighborhood",
+              "the rent",
+              "the neighbor"
+            ],
+            "gabarito": "the apartment",
+            "explicacao": "«l'appartement» = the apartment.",
+            "id": "fr-030-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il y a ___ boulangerie près d'ici.",
+            "opcoes": [
+              "une",
+              "un",
+              "des"
+            ],
+            "gabarito": "une",
+            "explicacao": "Feminine.",
+            "id": "fr-030-e13"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il est ___ au rez-de-chaussée. (ground floor)",
+            "opcoes": [
+              "situé",
+              "situer",
+              "situe"
+            ],
+            "gabarito": "situé",
+            "explicacao": "Participle.",
+            "id": "fr-030-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Il y a deux chambres et un salon.»",
+            "opcoes": [
+              "Il",
+              "y",
+              "a",
+              "deux",
+              "chambres",
+              "et",
+              "un",
+              "salon"
+            ],
+            "gabarito": "Il y a deux chambres et un salon.",
+            "explicacao": "Description.",
+            "id": "fr-030-e15"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "la salle de bains",
+            "respostaEsperada": "la salle de bains",
+            "explicacao": "the bathroom",
+            "id": "fr-030-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «le quartier» mean?",
+            "audio": "le quartier",
+            "opcoes": [
+              "to rent",
+              "the bedroom",
+              "the neighborhood",
+              "o cômodo"
+            ],
+            "gabarito": "the neighborhood",
+            "explicacao": "«le quartier» = the neighborhood.",
+            "id": "fr-030-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Je voudrais visiter cet appartement.»",
+            "opcoes": [
+              "Je",
+              "voudrais",
+              "visiter",
+              "cet",
+              "appartement"
+            ],
+            "gabarito": "Je voudrais visiter cet appartement.",
+            "explicacao": "Polite request.",
+            "id": "fr-030-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I live in a two-room apartment. The rent is eight hundred euros. The metro is five minutes away on foot.",
+            "respostaEsperada": "J'habite dans un appartement de deux pièces. Le loyer est de huit cents euros. Le métro est à cinq minutes à pied.",
+            "id": "fr-030-e17"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il y a ___ ascenseur dans l'immeuble. (um)",
+            "opcoes": [
+              "un",
+              "une",
+              "du"
+            ],
+            "gabarito": "un",
+            "explicacao": "«Ascenseur» is masculine: «un ascenseur».",
+            "id": "fr-030-e18"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «la pièce» mean?",
+            "audio": "la pièce",
+            "opcoes": [
+              "o cômodo",
+              "the neighborhood",
+              "o inquilino",
+              "the metro (subway)"
+            ],
+            "gabarito": "o cômodo",
+            "explicacao": "«la pièce» = o cômodo.",
+            "id": "fr-030-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il est au deuxième ___ . (floor)",
+            "opcoes": [
+              "pièce",
+              "étage",
+              "salon"
+            ],
+            "gabarito": "étage",
+            "explicacao": "«Étage» = floor.",
+            "id": "fr-030-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Les charges sont ___ . (included)",
+            "opcoes": [
+              "compris",
+              "comprise",
+              "comprises"
+            ],
+            "gabarito": "comprises",
+            "explicacao": "Agrees with «charges»: feminine plural.",
+            "id": "fr-030-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle habite ___ ses parents. (at the home of)",
+            "opcoes": [
+              "chez",
+              "à",
+              "dans"
+            ],
+            "gabarito": "chez",
+            "explicacao": "«Chez» + person.",
+            "id": "fr-030-e21"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Il y a deux pièces et un balcon",
+            "opcoes": [
+              "pièces",
+              "deux",
+              "y",
+              "balcon",
+              "Il",
+              "un",
+              "a",
+              "et"
+            ],
+            "gabarito": "Il y a deux pièces et un balcon",
+            "explicacao": "Write: Il y a deux pièces et un balcon",
+            "id": "fr-030-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Quand puis-je ___ l'appartement ? (visit)",
+            "opcoes": [
+              "visité",
+              "visiter",
+              "visites"
+            ],
+            "gabarito": "visiter",
+            "explicacao": "After «pouvoir», use the infinitive.",
+            "id": "fr-030-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «ground floor»?",
+            "opcoes": [
+              "le premier étage",
+              "le balcon",
+              "le rez-de-chaussée"
+            ],
+            "gabarito": "le rez-de-chaussée",
+            "explicacao": "«Rez-de-chaussée» is the ground floor.",
+            "id": "fr-030-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «meublé» mean?",
+            "opcoes": [
+              "furnished",
+              "noisy",
+              "luminoso"
+            ],
+            "gabarito": "furnished",
+            "explicacao": "«Meublé» = furnished.",
+            "id": "fr-030-e24"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Le loyer est de neuf cents euros",
+            "opcoes": [
+              "Le",
+              "euros",
+              "neuf",
+              "est",
+              "de",
+              "loyer",
+              "cents"
+            ],
+            "gabarito": "Le loyer est de neuf cents euros",
+            "explicacao": "Write: Le loyer est de neuf cents euros",
+            "id": "fr-030-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is the politest way to say you want to rent?",
+            "opcoes": [
+              "Je veux louer cet appartement.",
+              "Je voudrais louer cet appartement.",
+              "Je loue cet appartement maintenant."
+            ],
+            "gabarito": "Je voudrais louer cet appartement.",
+            "explicacao": "«Je voudrais» is the polite request.",
+            "id": "fr-030-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Le supermarché plus proche est à dix minutes.",
+              "Le supermarché la plus proche est à dix minutes.",
+              "Le supermarché le plus proche est à dix minutes."
+            ],
+            "gabarito": "Le supermarché le plus proche est à dix minutes.",
+            "explicacao": "Superlative: «le plus proche», agreeing with «supermarché».",
+            "id": "fr-030-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «My neighborhood is quiet and pleasant.»",
+            "opcoes": [
+              "Mon",
+              "quartier",
+              "est",
+              "calme",
+              "et",
+              "agréable"
+            ],
+            "gabarito": "Mon quartier est calme et agréable.",
+            "explicacao": "Possessive + adjectives.",
+            "id": "fr-030-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Le métro est à cinq minutes à pied",
+            "opcoes": [
+              "à",
+              "cinq",
+              "pied",
+              "Le",
+              "est",
+              "métro",
+              "minutes",
+              "à"
+            ],
+            "gabarito": "Le métro est à cinq minutes à pied",
+            "explicacao": "Write: Le métro est à cinq minutes à pied",
+            "id": "fr-030-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «She lives at her parents' house.»",
+            "opcoes": [
+              "Elle",
+              "habite",
+              "chez",
+              "ses",
+              "parents"
+            ],
+            "gabarito": "Elle habite chez ses parents.",
+            "explicacao": "«Chez» + person.",
+            "id": "fr-030-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: The apartment has a balcony. It is on the second floor.",
+            "respostaEsperada": "L'appartement a un balcon. Il est au deuxième étage.",
+            "id": "fr-030-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: The utilities are included. Is it furnished?",
+            "respostaEsperada": "Les charges sont comprises. Il est meublé ?",
+            "id": "fr-030-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Speak for 1 minute about the house and neighborhood where you would like to live."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Describe a house and call about a rental ad."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-030.json",
+  "responsavel": null
+}

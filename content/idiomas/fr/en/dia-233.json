@@ -1,0 +1,161 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 233,
+  "fase": 24,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Meetings, negotiation and oral reporting: Taking part in a meeting",
+  "objetivo": "Lesson 59, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 59,
+    "titulo": "Meetings, negotiation and oral reporting",
+    "objetivo": "Take part in a meeting, negotiate with concessions and conditions, and report accurately what was said or decided.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Taking part in a meeting",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "une réunion",
+            "translit": "ewn ray-ew-nee-OHN",
+            "pt": "a meeting",
+            "en": "a meeting",
+            "audio": "une réunion"
+          },
+          {
+            "ru": "l'ordre du jour",
+            "translit": "lor-druh dew ZHOOR",
+            "pt": "the agenda",
+            "en": "the agenda",
+            "audio": "l'ordre du jour"
+          },
+          {
+            "ru": "un compte rendu",
+            "translit": "an kohnt rahn-DEW",
+            "pt": "minutes; a report",
+            "en": "minutes; a report",
+            "audio": "un compte rendu"
+          },
+          {
+            "ru": "proposer",
+            "translit": "proh-poh-ZAY",
+            "pt": "to propose; to suggest",
+            "en": "to propose; to suggest",
+            "audio": "proposer"
+          },
+          {
+            "ru": "soutenir",
+            "translit": "soo-tuh-NEER",
+            "pt": "to support",
+            "en": "to support",
+            "audio": "soutenir"
+          },
+          {
+            "ru": "objecter",
+            "translit": "ob-zhek-TAY",
+            "pt": "to object",
+            "en": "to object",
+            "audio": "objecter"
+          },
+          {
+            "ru": "trancher",
+            "translit": "trahn-SHAY",
+            "pt": "to make a decision; to settle an issue",
+            "en": "to make a decision; to settle an issue",
+            "audio": "trancher"
+          },
+          {
+            "ru": "un échéancier",
+            "translit": "a-nay-shay-ahn-see-AY",
+            "pt": "a schedule; a timeline",
+            "en": "a schedule; a timeline",
+            "audio": "un échéancier"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "To take the floor",
+        "explicacao": "STEP 1: asking for the floor: «Puis-je intervenir ?» «Je voudrais ajouter quelque chose.» STEP 2: making a proposal: «Je propose que nous commencions par le budget.» (subjunctive after «proposer que») STEP 3: supporting: «Je suis d'accord avec Marie sur ce point.» STEP 4: objecting politely: «Je comprends votre point de vue, mais je crains que ce ne soit pas réaliste.» STEP 5: asking for clarification: «Pourriez-vous préciser ce que vous entendez par là ?» STEP 6: summarizing: «Pour résumer, nous avons décidé de…» STEP 7: closing: «Si personne n'a d'autres remarques, je propose de clore la réunion.»",
+        "comparacao": "In both English and French, the level of directness depends on the people and the setting. In a formal meeting, acknowledging a colleague’s point before objecting can soften your disagreement: «Je comprends votre point de vue, mais…».",
+        "tabela": [
+          {
+            "situation": "to ask for the floor",
+            "formal": "Puis-je intervenir ?",
+            "informal": "Je peux dire un truc ?"
+          },
+          {
+            "situation": "propose",
+            "formal": "Je propose que nous commencions.",
+            "informal": "On commence ?"
+          },
+          {
+            "situation": "supporting",
+            "formal": "Je suis d'accord avec vous sur ce point.",
+            "informal": "Ouais, d'accord."
+          },
+          {
+            "situation": "objecting",
+            "formal": "Je crains que ce ne soit pas réaliste.",
+            "informal": "Je pense pas que ça marche."
+          },
+          {
+            "situation": "ask for clarification",
+            "formal": "Pourriez-vous préciser ?",
+            "informal": "Tu veux dire quoi ?"
+          },
+          {
+            "situation": "to summarize",
+            "formal": "Pour résumer, nous avons décidé…",
+            "informal": "Bon, on a décidé…"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je propose que nous commençons.",
+            "certo": "Je propose que nous commencions.",
+            "motivo": "«Proposer que» + subjunctive."
+          },
+          {
+            "errado": "Je suis d'accord de vous.",
+            "certo": "Je suis d'accord avec vous.",
+            "motivo": "«D'accord avec»."
+          },
+          {
+            "errado": "Je crains que ce n'est pas réaliste.",
+            "certo": "Je crains que ce ne soit pas réaliste.",
+            "motivo": "«Craindre que» + subjunctive."
+          },
+          {
+            "errado": "Puis-je à intervenir ?",
+            "certo": "Puis-je intervenir ?",
+            "motivo": "Use «puis-je» directly with the infinitive, without «à». «Je peux intervenir ?» is also correct, but less formal."
+          }
+        ],
+        "tag": "Meeting"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Role-play aloud: you ask for the floor, support a colleague and politely object to a proposal."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Tell aloud about a travel mishap using the passive voice and «on»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-059.json",
+  "responsavel": null
+}

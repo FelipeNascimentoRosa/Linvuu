@@ -5,13 +5,14 @@ import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {assinaturaExercicios} from '../src/plataforma/apk/estudoModelo.ts';
 import {iniciarRevisao} from '../src/plataforma/apk/revisaoModelo.ts';
+const semAbertura=async(b,o)=>{const c=await b.newContext(o);await c.addInitScript(()=>{try{localStorage.setItem('linvuu:primeira-abertura:v1','1');}catch{}});return c;}; // estes testes começam depois das telas da primeira abertura
 const base='http://127.0.0.1:4366',passed=[],measurements=[];
 const server=spawn(process.execPath,['node_modules/vite/bin/vite.js','preview','--outDir','dist-apk','--host','127.0.0.1','--port','4366','--strictPort'],{stdio:'ignore'});let browser;
 try{
  for(let i=0;i<60;i++){try{if((await fetch(base)).ok)break;}catch{}await new Promise(r=>setTimeout(r,250));}
  browser=await chromium.launch({executablePath:process.env.CHROME_EXECUTABLE_PATH,args:['--no-sandbox']});
- for(const locale of ['', '/en','/es'])for(const motion of ['reduce','no-preference']){
-  const context=await browser.newContext({viewport:{width:320,height:720},reducedMotion:motion}),page=await context.newPage();await page.route('https://linvuu.com.br/**',r=>r.abort());
+ for(const locale of ['', '/en'])for(const motion of ['reduce','no-preference']){
+  const context=await semAbertura(browser,{viewport:{width:320,height:720},reducedMotion:motion}),page=await context.newPage();await page.route('https://linvuu.com.br/**',r=>r.abort());
   console.log('CONCLUSAO_CTX',locale||'pt',motion);
   await page.goto(base+locale+`/curso/${locale?'br':'en'}/dia/1`);await page.locator('.app-sessao').waitFor();
   await page.locator('.app-navegador-etapas summary').click();await page.locator('.passo').last().click();
@@ -34,7 +35,7 @@ try{
   await page.locator('.sessao-nav .btn-primary').click();assert.equal(await page.locator('.app-conclusao').getAttribute('data-nova'),'nao');
   passed.push(`${locale||'pt'} ${motion}: leitura sem nota fictícia, foco, dois temas/200%, movimento limitado, sem replay`);await context.close();
  }
- const context=await browser.newContext({viewport:{width:320,height:720},reducedMotion:'reduce'}),page=await context.newPage();await page.route('https://linvuu.com.br/**',r=>r.abort());
+ const context=await semAbertura(browser,{viewport:{width:320,height:720},reducedMotion:'reduce'}),page=await context.newPage();await page.route('https://linvuu.com.br/**',r=>r.abort());
  await page.goto(base+'/curso/en/dia/1');await page.locator('.app-sessao').waitFor();await page.locator('.app-navegador-etapas summary').click();await page.locator('.passo').last().click();
  await page.evaluate(()=>{window.__storageSet=Storage.prototype.setItem;Storage.prototype.setItem=function(k,v){if(k.startsWith('linvuu:progresso:v1'))throw Error('quota-test');return window.__storageSet.call(this,k,v);};});
  await page.locator('.sessao-nav .btn-primary').click();assert.equal(await page.locator('.app-conclusao').count(),0);assert.match(await page.locator('.app-sessao [role=alert]').innerText(),/Não foi possível confirmar/);

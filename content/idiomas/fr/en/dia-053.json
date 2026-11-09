@@ -1,0 +1,173 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 53,
+  "fase": 6,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Wanting, being able to, having to, and the pronouns «y» and «en»: Vouloir, pouvoir, devoir, savoir",
+  "objetivo": "Lesson 14, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 14,
+    "titulo": "Wanting, being able to, having to, and the pronouns «y» and «en»",
+    "objetivo": "Use «vouloir», «pouvoir», «devoir» and «savoir», and replace places with «y» and quantities with «en».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Vouloir, pouvoir, devoir, savoir",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "vouloir",
+            "translit": "voo-LWAHR",
+            "pt": "",
+            "en": "",
+            "audio": "vouloir"
+          },
+          {
+            "ru": "pouvoir",
+            "translit": "poo-VWAHR",
+            "pt": "",
+            "en": "",
+            "audio": "pouvoir"
+          },
+          {
+            "ru": "devoir",
+            "translit": "duh-VWAHR",
+            "pt": "",
+            "en": "",
+            "audio": "devoir"
+          },
+          {
+            "ru": "savoir",
+            "translit": "sah-VWAHR",
+            "pt": "",
+            "en": "",
+            "audio": "savoir"
+          },
+          {
+            "ru": "je veux",
+            "translit": "zhuh VUH",
+            "pt": "",
+            "en": "",
+            "audio": "je veux"
+          },
+          {
+            "ru": "je peux",
+            "translit": "zhuh PUH",
+            "pt": "",
+            "en": "",
+            "audio": "je peux"
+          },
+          {
+            "ru": "je dois",
+            "translit": "zhuh DWAH",
+            "pt": "",
+            "en": "",
+            "audio": "je dois"
+          },
+          {
+            "ru": "je sais",
+            "translit": "zhuh SEH",
+            "pt": "",
+            "en": "",
+            "audio": "je sais"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Four very useful irregular verbs",
+        "explicacao": "STEP 1: «vouloir» (to want): je veux, tu veux, il veut, nous voulons, vous voulez, ils veulent. STEP 2: «pouvoir» (can): je peux, tu peux, il peut, nous pouvons, vous pouvez, ils peuvent. STEP 3: «devoir» (must): je dois, tu dois, il doit, nous devons, vous devez, ils doivent. STEP 4: «savoir» (to know how to): je sais, tu sais, il sait, nous savons, vous savez, ils savent. STEP 5: the first three take another verb in the infinitive: «Je veux manger.» «Tu peux venir ?» «Nous devons partir.» STEP 6: «savoir» + infinitive means «to know how to do something» (a skill): «Je sais nager.» STEP 7: polite request: «Je voudrais un café, s'il vous plaît.» («voudrais» is gentler than «veux»). «Pouvez-vous m'aider ?» STEP 8: in the negative, the infinitive stays after the «pas»: «Je ne peux pas venir.»",
+        "comparacao": "in English we say «I want», «I can», «I must», with a single form for every person. French verbs are conjugated, and the spelling changes inside the verb (veux/voulons, peux/pouvons, dois/devons). The final «x» of «veux» and «peux» is not pronounced.",
+        "tabela": [
+          {
+            "person": "je",
+            "vouloir": "veux",
+            "pouvoir": "peux",
+            "devoir": "dois",
+            "savoir": "sais"
+          },
+          {
+            "person": "tu",
+            "vouloir": "veux",
+            "pouvoir": "peux",
+            "devoir": "dois",
+            "savoir": "sais"
+          },
+          {
+            "person": "il / elle",
+            "vouloir": "veut",
+            "pouvoir": "peut",
+            "devoir": "doit",
+            "savoir": "sait"
+          },
+          {
+            "person": "nous",
+            "vouloir": "voulons",
+            "pouvoir": "pouvons",
+            "devoir": "devons",
+            "savoir": "savons"
+          },
+          {
+            "person": "vous",
+            "vouloir": "voulez",
+            "pouvoir": "pouvez",
+            "devoir": "devez",
+            "savoir": "savez"
+          },
+          {
+            "person": "ils / elles",
+            "vouloir": "veulent",
+            "pouvoir": "peuvent",
+            "devoir": "doivent",
+            "savoir": "savent"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je veux à manger.",
+            "certo": "Je veux manger.",
+            "motivo": "No preposition before the infinitive."
+          },
+          {
+            "errado": "Je ne peux pas à venir.",
+            "certo": "Je ne peux pas venir.",
+            "motivo": "No preposition."
+          },
+          {
+            "errado": "Je peut venir.",
+            "certo": "Je peux venir.",
+            "motivo": "«Je» takes «peux»."
+          },
+          {
+            "errado": "Je sais à nager.",
+            "certo": "Je sais nager.",
+            "motivo": "No preposition."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say out loud what you want, can, must and know how to do, one sentence for each verb."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say five sentences with «le, la, les» replacing objects."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-014.json",
+  "responsavel": null
+}

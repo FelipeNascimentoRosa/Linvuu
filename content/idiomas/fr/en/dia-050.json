@@ -1,0 +1,147 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 50,
+  "fase": 5,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Likes, stressed pronouns and direct object pronouns: Direct object pronouns",
+  "objetivo": "Lesson 13, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 13,
+    "titulo": "Likes, stressed pronouns and direct object pronouns",
+    "objetivo": "Talk about likes and opinions, use the stressed pronouns («moi», «toi», «lui»…) and replace a direct object with «le», «la», «l'» and «les».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Direct object pronouns",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "le",
+            "translit": "LUH",
+            "pt": "",
+            "en": "",
+            "audio": "le"
+          },
+          {
+            "ru": "la",
+            "translit": "LAH",
+            "pt": "",
+            "en": "",
+            "audio": "la"
+          },
+          {
+            "ru": "l'",
+            "translit": "L",
+            "pt": "",
+            "en": "",
+            "audio": "l'"
+          },
+          {
+            "ru": "les",
+            "translit": "LAY",
+            "pt": "",
+            "en": "",
+            "audio": "les"
+          },
+          {
+            "ru": "me",
+            "translit": "MUH",
+            "pt": "",
+            "en": "",
+            "audio": "me"
+          },
+          {
+            "ru": "te",
+            "translit": "TUH",
+            "pt": "",
+            "en": "",
+            "audio": "te"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Je le regarde: direct object pronouns",
+        "explicacao": "STEP 1: to avoid repeating the object, replace it with a pronoun: «Je regarde le film» → «Je le regarde.» STEP 2: «le» (masculine), «la» (feminine), «l'» (vowel), «les» (plural). There are also «me, te, nous, vous»: «Il me regarde.» «Je vous écoute.» STEP 3: the pronoun comes BEFORE the conjugated verb, unlike English («I see him», not «I him see»): «Je le vois.» STEP 4: in the negative, the pronoun goes between «ne» and the verb: «Je ne le regarde pas.» STEP 5: in the near future, the pronoun goes before the infinitive: «Je vais le regarder.» STEP 6: answers: «Tu aimes le fromage ? — Oui, je l'aime.» «Tu regardes la télé ? — Non, je ne la regarde pas.» STEP 7: in the affirmative imperative, the pronoun goes after the verb, with a hyphen: «Regarde-le !»; in the negative, before: «Ne le regarde pas !» STEP 8: for people, the direct object can be «me, te, le, la, nous, vous, les»; the indirect object («à lui», «lui») is the topic of lesson 17.",
+        "comparacao": "English puts the object pronoun after the verb («I see him», «I see it»). French puts it before the conjugated verb: «je le vois». The French direct object pronoun replaces the noun that answers «what?» or «whom?».",
+        "tabela": [
+          {
+            "object": "le film (m.)",
+            "pronoun": "le",
+            "example": "Je le regarde."
+          },
+          {
+            "object": "la télé (f.)",
+            "pronoun": "la",
+            "example": "Je la regarde."
+          },
+          {
+            "object": "l'ami (vowel)",
+            "pronoun": "l'",
+            "example": "Je l'écoute."
+          },
+          {
+            "object": "les amis (pl.)",
+            "pronoun": "les",
+            "example": "Je les écoute."
+          },
+          {
+            "object": "negative",
+            "pronoun": "ne… le… pas",
+            "example": "Je ne le regarde pas."
+          },
+          {
+            "object": "near future",
+            "pronoun": "aller + le + infinitive",
+            "example": "Je vais le regarder."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je regarde le.",
+            "certo": "Je le regarde.",
+            "motivo": "The pronoun comes before the verb."
+          },
+          {
+            "errado": "Je ne regarde pas le.",
+            "certo": "Je ne le regarde pas.",
+            "motivo": "The pronoun goes between «ne» and the verb."
+          },
+          {
+            "errado": "Je vais regarder le.",
+            "certo": "Je vais le regarder.",
+            "motivo": "In the near future, before the infinitive."
+          },
+          {
+            "errado": "Je la aime. (the film)",
+            "certo": "Je l'aime.",
+            "motivo": "Elision before a vowel."
+          }
+        ],
+        "tag": "Pronouns"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Answer eight questions with pronouns: «Tu regardes la télé ? Tu écoutes la radio ? Tu manges le pain ? Tu aimes les enfants ?» etc."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say five sentences with «moi», «toi», «lui», «elle» and «eux»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-013.json",
+  "responsavel": null
+}

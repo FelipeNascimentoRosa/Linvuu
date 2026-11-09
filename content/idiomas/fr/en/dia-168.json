@@ -1,0 +1,514 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 168,
+  "fase": 17,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Gérondif and present participle: Review and practice for lesson 42",
+  "objetivo": "Lesson 42, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 42,
+    "titulo": "Gérondif and present participle",
+    "objetivo": "Use the gérondif («en parlant») for simultaneous actions, means and condition, and recognize the present participle («un homme parlant») and the infinitive after prepositions.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 42",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je marche en écoutant de la musique",
+            "opcoes": [
+              "Je marche en écoutant de la musique",
+              "Je marche et j'écoute de la musique",
+              "Je marchais en écoutant de la musique"
+            ],
+            "gabarito": "Je marche en écoutant de la musique",
+            "explicacao": "Listen to «en écoutant».",
+            "id": "fr-042-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "En arrivant, j'ai vu une lettre",
+            "opcoes": [
+              "En arrivant, j'ai vu une lettre",
+              "En arrivant, une lettre était là",
+              "Quand j'arrive, je vois une lettre"
+            ],
+            "gabarito": "En arrivant, j'ai vu une lettre",
+            "explicacao": "Listen to «en arrivant».",
+            "id": "fr-042-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Il est parti sans dire au revoir",
+            "opcoes": [
+              "Il est parti sans dire au revoir",
+              "Il est parti en disant au revoir",
+              "Il est parti avant de dire au revoir"
+            ],
+            "gabarito": "Il est parti sans dire au revoir",
+            "explicacao": "Listen to «sans dire».",
+            "id": "fr-042-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "On apprend en pratiquant",
+            "respostaEsperada": "On apprend en pratiquant",
+            "explicacao": "Write: On apprend en pratiquant.",
+            "id": "fr-042-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Avant de partir, il a fermé la porte",
+            "respostaEsperada": "Avant de partir, il a fermé la porte",
+            "explicacao": "Write: Avant de partir, il a fermé la porte.",
+            "id": "fr-042-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «I can't make progress in French. What do you advise me to do?»",
+            "opcoes": [
+              "à",
+              "pas",
+              "en",
+              "me",
+              "progresser",
+              "Je",
+              "n'arrive",
+              "?",
+              "français.",
+              "Que",
+              "conseilles-tu"
+            ],
+            "gabarito": "Je n'arrive pas à progresser en français. Que me conseilles-tu ?",
+            "explicacao": "Write: Je n'arrive pas à progresser en français. Que me conseilles-tu ?",
+            "id": "fr-042-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Après avoir mangé, il est sorti",
+            "respostaEsperada": "Après avoir mangé, il est sorti",
+            "explicacao": "Write: Après avoir mangé, il est sorti.",
+            "id": "fr-042-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Je lis déjà, mais je ne comprends pas tout.",
+            "respostaEsperada": "Je lis déjà, mais je ne comprends pas tout.",
+            "explicacao": "I already read, but I don't understand everything.",
+            "id": "fr-042-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Gérondif of «parler»:",
+            "opcoes": [
+              "en parlant",
+              "parlant",
+              "en parlent"
+            ],
+            "gabarito": "en parlant",
+            "explicacao": "«En» + «-ant».",
+            "id": "fr-042-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Gérondif of «avoir»:",
+            "opcoes": [
+              "en ayant",
+              "en avant",
+              "en aillant"
+            ],
+            "gabarito": "en ayant",
+            "explicacao": "Irregular.",
+            "id": "fr-042-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je mange en lisant.",
+              "Je mange lisant.",
+              "Je mange en lis."
+            ],
+            "gabarito": "Je mange en lisant.",
+            "explicacao": "«En» is required.",
+            "id": "fr-042-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je n'arrive pas à progresser en français. Que me conseilles-tu ?",
+            "respostaEsperada": "Je n'arrive pas à progresser en français. Que me conseilles-tu ?",
+            "explicacao": "I can't make progress in French. What do you advise me to do?",
+            "id": "fr-042-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Il est parti sans dire au revoir.",
+              "Il est parti sans disant au revoir.",
+              "Il est parti sans de dire au revoir."
+            ],
+            "gabarito": "Il est parti sans dire au revoir.",
+            "explicacao": "«Sans» + infinitive.",
+            "id": "fr-042-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je progresse ___ lisant.",
+            "opcoes": [
+              "en",
+              "à",
+              "de"
+            ],
+            "gabarito": "en",
+            "explicacao": "Gérondif.",
+            "id": "fr-042-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Avant ___ partir, il a mangé.",
+            "opcoes": [
+              "de",
+              "à",
+              "d'"
+            ],
+            "gabarito": "de",
+            "explicacao": "«Avant de».",
+            "id": "fr-042-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Et pour parler ?",
+            "respostaEsperada": "Et pour parler ?",
+            "explicacao": "And for speaking?",
+            "id": "fr-042-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Au lieu ___ rester, il est parti.",
+            "opcoes": [
+              "de",
+              "à",
+              "du"
+            ],
+            "gabarito": "de",
+            "explicacao": "«Au lieu de».",
+            "id": "fr-042-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «By reading a little every day, you will make quick progress.»",
+            "opcoes": [
+              "En",
+              "peu",
+              "lisant",
+              "tu",
+              "progresser.",
+              "un",
+              "vas",
+              "chaque",
+              "jour,",
+              "vite"
+            ],
+            "gabarito": "En lisant un peu chaque jour, tu vas vite progresser.",
+            "explicacao": "Write: En lisant un peu chaque jour, tu vas vite progresser.",
+            "id": "fr-042-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tu progresseras en ___ . (to practise)",
+            "opcoes": [
+              "pratiquant",
+              "pratiquer",
+              "pratiqué"
+            ],
+            "gabarito": "pratiquant",
+            "explicacao": "Gérondif.",
+            "id": "fr-042-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «En arrivant, j'ai vu une lettre.»",
+            "opcoes": [
+              "En",
+              "arrivant,",
+              "j'ai",
+              "vu",
+              "une",
+              "lettre"
+            ],
+            "gabarito": "En arrivant, j'ai vu une lettre.",
+            "explicacao": "Gérondif at the start.",
+            "id": "fr-042-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Il travaille tout en écoutant la radio.»",
+            "opcoes": [
+              "Il",
+              "travaille",
+              "tout",
+              "en",
+              "écoutant",
+              "la",
+              "radio"
+            ],
+            "gabarito": "Il travaille tout en écoutant la radio.",
+            "explicacao": "Simultaneity.",
+            "id": "fr-042-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I walk while listening to music. By practising, you will progress. He left without saying goodbye.",
+            "respostaEsperada": "Je marche en écoutant de la musique. En pratiquant, tu vas progresser. Il est parti sans dire au revoir.",
+            "id": "fr-042-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "En lisant un peu chaque jour, tu vas vite progresser.",
+            "respostaEsperada": "En lisant un peu chaque jour, tu vas vite progresser.",
+            "explicacao": "By reading a little every day, you will make quick progress.",
+            "id": "fr-042-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je mange en ___ la radio. (listen)",
+            "opcoes": [
+              "écoutant",
+              "écoutons",
+              "écouté"
+            ],
+            "gabarito": "écoutant",
+            "explicacao": "Gérondif: «en» + stem of «nous» + «-ant».",
+            "id": "fr-042-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "en même temps",
+            "respostaEsperada": "en même temps",
+            "explicacao": "at the same time",
+            "id": "fr-042-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "En ___ tôt, tu éviteras les bouchons. (partir)",
+            "opcoes": [
+              "partir",
+              "partant",
+              "parti"
+            ],
+            "gabarito": "partant",
+            "explicacao": "Condition: «en partant» = if you leave.",
+            "id": "fr-042-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ils apprennent en ___ . (playing)",
+            "opcoes": [
+              "jouent",
+              "jouer",
+              "jouant"
+            ],
+            "gabarito": "jouant",
+            "explicacao": "After «en», the present participle is used.",
+            "id": "fr-042-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il a quitté la salle ___ parler à personne. (without)",
+            "opcoes": [
+              "sans",
+              "avant",
+              "pour"
+            ],
+            "gabarito": "sans",
+            "explicacao": "«Sans» + infinitive.",
+            "id": "fr-042-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «en lisant» mean?",
+            "audio": "en lisant",
+            "opcoes": [
+              "viajando",
+              "before",
+              "without",
+              "reading"
+            ],
+            "gabarito": "reading",
+            "explicacao": "«en lisant» = by reading.",
+            "id": "fr-042-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "En ___ du bureau, il a pris un taxi. (leaving)",
+            "opcoes": [
+              "sortir",
+              "sortant",
+              "sorti"
+            ],
+            "gabarito": "sortant",
+            "explicacao": "Time: «en sortant» = on leaving.",
+            "id": "fr-042-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the gérondif of «finir»?",
+            "opcoes": [
+              "en finisant",
+              "en finissent",
+              "en finissant"
+            ],
+            "gabarito": "en finissant",
+            "explicacao": "Stem of «nous finissons»: «finiss-» + «-ant».",
+            "id": "fr-042-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Avant de manger, je me lave les mains.",
+              "Avant manger, je me lave les mains.",
+              "Avant de mangeant, je me lave les mains."
+            ],
+            "gabarito": "Avant de manger, je me lave les mains.",
+            "explicacao": "«Avant de» + infinitive.",
+            "id": "fr-042-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "une personne parlant français",
+            "respostaEsperada": "une personne parlant français",
+            "explicacao": "a person who speaks French",
+            "id": "fr-042-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence uses the gérondif to express condition?",
+            "opcoes": [
+              "Je mange en lisant.",
+              "En travaillant plus, tu réussiras.",
+              "Il est parti sans parler."
+            ],
+            "gabarito": "En travaillant plus, tu réussiras.",
+            "explicacao": "«En travaillant plus» = if you work more.",
+            "id": "fr-042-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «en voyageant» mean?",
+            "audio": "en voyageant",
+            "opcoes": [
+              "viajando",
+              "on returning",
+              "studying",
+              "reading"
+            ],
+            "gabarito": "viajando",
+            "explicacao": "«en voyageant» = viajando.",
+            "id": "fr-042-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the present participle of «savoir»?",
+            "opcoes": [
+              "savant",
+              "sayant",
+              "sachant"
+            ],
+            "gabarito": "sachant",
+            "explicacao": "«Savoir» has an irregular form: «sachant».",
+            "id": "fr-042-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «He reads the newspaper while eating.»",
+            "opcoes": [
+              "Il",
+              "lit",
+              "le",
+              "journal",
+              "en",
+              "mangeant"
+            ],
+            "gabarito": "Il lit le journal en mangeant.",
+            "explicacao": "Simultaneity: «en» + present participle.",
+            "id": "fr-042-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «She smiled when she saw me.»",
+            "opcoes": [
+              "Elle",
+              "a",
+              "souri",
+              "en",
+              "me",
+              "voyant"
+            ],
+            "gabarito": "Elle a souri en me voyant.",
+            "explicacao": "The pronoun goes before the participle.",
+            "id": "fr-042-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: By studying every day, you will progress. She left without speaking.",
+            "respostaEsperada": "En étudiant tous les jours, tu vas progresser. Elle est partie sans parler.",
+            "id": "fr-042-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: Before leaving, I close the door. Instead of staying, he left.",
+            "respostaEsperada": "Avant de sortir, je ferme la porte. Au lieu de rester, il est parti.",
+            "id": "fr-042-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Speak for 1 minute about how you learn best, using the gérondif."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Give three pieces of advice out loud using the gérondif."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-042.json",
+  "responsavel": null
+}

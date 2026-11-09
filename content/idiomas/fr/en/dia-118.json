@@ -1,0 +1,141 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 118,
+  "fase": 12,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Home, renting and city life: Searching for and renting a home",
+  "objetivo": "Lesson 30, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 30,
+    "titulo": "Home, renting and city life",
+    "objetivo": "Describe a house, look for and rent an apartment, talk about the neighborhood and services, and use «il y a», «chez» and prepositions of place more precisely.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Searching for and renting a home",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "louer",
+            "translit": "loo-AY",
+            "pt": "",
+            "en": "",
+            "audio": "louer"
+          },
+          {
+            "ru": "visiter",
+            "translit": "vee-zee-TAY",
+            "pt": "",
+            "en": "",
+            "audio": "visiter"
+          },
+          {
+            "ru": "le propriétaire",
+            "translit": "luh proh-pree-ay-TEHR",
+            "pt": "",
+            "en": "",
+            "audio": "le propriétaire"
+          },
+          {
+            "ru": "le locataire",
+            "translit": "luh loh-kah-TEHR",
+            "pt": "",
+            "en": "",
+            "audio": "le locataire"
+          },
+          {
+            "ru": "la caution",
+            "translit": "lah koh-see-OHN",
+            "pt": "",
+            "en": "",
+            "audio": "la caution"
+          },
+          {
+            "ru": "l'annonce",
+            "translit": "lah-NOHNS",
+            "pt": "",
+            "en": "",
+            "audio": "l'annonce"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Parler d'un appartement à louer",
+        "explicacao": "STEP 1: when calling about an ad: «Bonjour, je vous appelle au sujet de l'annonce pour l'appartement.» STEP 2: asking: «Il est encore disponible ?» «Quand puis-je le visiter ?» «Le loyer est de combien ?» STEP 3: visiting: «Il y a combien de chambres ?» «Il est meublé ?» «Quels sont les transports à proximité ?» STEP 4: negotiating: «Pourriez-vous baisser le loyer ?» «Est-ce que les animaux sont acceptés ?» STEP 5: the contract: «Je voudrais louer cet appartement.» «Combien de mois de caution ?» STEP 6: when moving: «Je déménage le premier du mois.» «Je dois changer d'adresse.» STEP 7: pronouns: «Je le visite demain.» «Je le loue pour un an.» STEP 8: «à proximité de» (near): «L'appartement est à proximité du métro.»",
+        "comparacao": "In English we say «rent an apartment» both for the person renting it out and the person renting it. French also uses «louer» for both sides: «louer à quelqu'un» can mean to rent out to someone, or to rent from someone, and «louer un appartement» can describe either side. Context decides.",
+        "tabela": [
+          {
+            "situation": "to call",
+            "sentence": "Je vous appelle au sujet de l'annonce."
+          },
+          {
+            "situation": "availability",
+            "sentence": "Il est encore disponible ?"
+          },
+          {
+            "situation": "viewing",
+            "sentence": "Quand puis-je le visiter ?"
+          },
+          {
+            "situation": "price",
+            "sentence": "Le loyer est de combien ?"
+          },
+          {
+            "situation": "deposit",
+            "sentence": "Combien de mois de caution ?"
+          },
+          {
+            "situation": "the move",
+            "sentence": "Je déménage le premier du mois."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je veux louer un appartement.",
+            "certo": "Je voudrais louer un appartement.",
+            "motivo": "Polite request."
+          },
+          {
+            "errado": "Il est encore libre le appartement ?",
+            "certo": "Il est encore disponible ?",
+            "motivo": "A simple, natural question."
+          },
+          {
+            "errado": "Je déménage à premier du mois.",
+            "certo": "Je déménage le premier du mois.",
+            "motivo": "No preposition."
+          },
+          {
+            "errado": "Quand je peux visiter ?",
+            "certo": "Quand puis-je visiter ?",
+            "motivo": "A question in French."
+          }
+        ],
+        "tag": "Housing"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Role-play a call to a landlord out loud: ask about the price, size and deposit, and arrange a viewing."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Describe out loud a house you think is ideal."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-030.json",
+  "responsavel": null
+}

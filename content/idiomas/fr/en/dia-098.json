@@ -1,0 +1,137 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 98,
+  "fase": 10,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Relative pronouns: qui, que, où, dont: Où e dont",
+  "objetivo": "Lesson 25, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 25,
+    "titulo": "Relative pronouns: qui, que, où, dont",
+    "objetivo": "Link sentences with «qui», «que», «où» and «dont» to describe people, things and places without repeating words.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Où e dont",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "la ville où",
+            "translit": "lah veel OO",
+            "pt": "",
+            "en": "",
+            "audio": "la ville où"
+          },
+          {
+            "ru": "le jour où",
+            "translit": "luh zhoor OO",
+            "pt": "",
+            "en": "",
+            "audio": "le jour où"
+          },
+          {
+            "ru": "le restaurant où",
+            "translit": "luh rehs-toh-rahn OO",
+            "pt": "",
+            "en": "",
+            "audio": "le restaurant où"
+          },
+          {
+            "ru": "parler de",
+            "translit": "pahr-lay DUH",
+            "pt": "",
+            "en": "",
+            "audio": "parler de"
+          },
+          {
+            "ru": "avoir besoin de",
+            "translit": "ah-vwahr buh-zwan DUH",
+            "pt": "",
+            "en": "",
+            "audio": "avoir besoin de"
+          },
+          {
+            "ru": "avoir peur de",
+            "translit": "ah-vwahr puhr DUH",
+            "pt": "",
+            "en": "",
+            "audio": "avoir peur de"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "La ville où j'habite, le livre dont je parle",
+        "explicacao": "STEP 1: «où» replaces place and time: «La ville où j'habite est petite.» «Le jour où je suis arrivé, il pleuvait.» STEP 2: «où» can come after a preposition: «La ville d'où je viens.» «Le pays où je vais.» STEP 3: «dont» replaces «de + something», when the verb or adjective takes «de»: «Le livre dont je parle» (parler de), «L'ami dont j'ai besoin» (avoir besoin de), «Le chien dont j'ai peur» (avoir peur de). STEP 4: «dont» also means «whose» (of whom): «La femme dont le fils est médecin» (whose son). STEP 5: after «dont» comes subject + verb, without repeating the «de»: «Le livre dont je parle», never «dont je parle de». STEP 6: to choose between «que» and «dont», look at the verb: if it takes «de», use «dont»: «Le film que j'aime» (aimer, without «de»), «Le film dont je parle» (parler de). STEP 7: «où» has the same meaning for time: «Le moment où il est arrivé.» STEP 8: with people, «à qui» and «de qui» also exist, but they are rare at A2.",
+        "comparacao": "In English we say «the book I'm talking about» or, more formally, «the book about which I'm talking», and the preposition can be left at the end of the sentence. French does not allow either shortcut: «dont» is mandatory when the verb takes «de». Learners often drop the pronoun or repeat the «de».",
+        "tabela": [
+          {
+            "verb": "parler de",
+            "sentence": "Le livre dont je parle est cher."
+          },
+          {
+            "verb": "avoir besoin de",
+            "sentence": "L'outil dont j'ai besoin est ici."
+          },
+          {
+            "verb": "avoir peur de",
+            "sentence": "L'animal dont j'ai peur est ici."
+          },
+          {
+            "verb": "se souvenir de",
+            "sentence": "Le jour dont je me souviens."
+          },
+          {
+            "verb": "lieu",
+            "sentence": "La ville où j'habite est petite."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Le livre que je parle est cher.",
+            "certo": "Le livre dont je parle est cher.",
+            "motivo": "«Parler de» → «dont»."
+          },
+          {
+            "errado": "Le livre dont je parle de.",
+            "certo": "Le livre dont je parle.",
+            "motivo": "Do not repeat the «de»."
+          },
+          {
+            "errado": "La ville que j'habite.",
+            "certo": "La ville où j'habite.",
+            "motivo": "Place: «où»."
+          },
+          {
+            "errado": "Le jour que je suis arrivé.",
+            "certo": "Le jour où je suis arrivé.",
+            "motivo": "Time: «où»."
+          }
+        ],
+        "tag": "Relatives"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Describe aloud eight places and things with «où» and «dont»: «La ville où… Le livre dont…»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Join aloud: «J'ai un frère. Il habite à Paris.» «Voici le livre. Je lis ce livre.»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-025.json",
+  "responsavel": null
+}

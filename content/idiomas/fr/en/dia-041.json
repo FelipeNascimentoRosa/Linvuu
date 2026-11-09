@@ -1,0 +1,166 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 41,
+  "fase": 5,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "The routine: reflexive verbs, frequency and -ir verbs: Reflexive verbs",
+  "objetivo": "Lesson 11, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 11,
+    "titulo": "The routine: reflexive verbs, frequency and -ir verbs",
+    "objetivo": "Talk about your daily routine with reflexive verbs, say how often you do things, and conjugate regular -ir verbs.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Reflexive verbs",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "se réveiller",
+            "translit": "suh ray-veh-YAY",
+            "pt": "",
+            "en": "",
+            "audio": "se réveiller"
+          },
+          {
+            "ru": "se lever",
+            "translit": "suh luh-VAY",
+            "pt": "",
+            "en": "",
+            "audio": "se lever"
+          },
+          {
+            "ru": "se laver",
+            "translit": "suh lah-VAY",
+            "pt": "",
+            "en": "",
+            "audio": "se laver"
+          },
+          {
+            "ru": "s'habiller",
+            "translit": "sah-bee-YAY",
+            "pt": "",
+            "en": "",
+            "audio": "s'habiller"
+          },
+          {
+            "ru": "se coucher",
+            "translit": "suh koo-SHAY",
+            "pt": "",
+            "en": "",
+            "audio": "se coucher"
+          },
+          {
+            "ru": "se reposer",
+            "translit": "suh ruh-poh-ZAY",
+            "pt": "",
+            "en": "",
+            "audio": "se reposer"
+          },
+          {
+            "ru": "se promener",
+            "translit": "suh proh-muh-NAY",
+            "pt": "",
+            "en": "",
+            "audio": "se promener"
+          },
+          {
+            "ru": "s'appeler",
+            "translit": "sah-puh-LAY",
+            "pt": "",
+            "en": "",
+            "audio": "s'appeler"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Se lever, se coucher: reflexive verbs",
+        "explicacao": "STEP 1: reflexive verbs take a pronoun that repeats the subject: «je me lève», «tu te lèves», «il/elle/on se lève», «nous nous levons», «vous vous levez», «ils/elles se lèvent». STEP 2: before a vowel or silent «h», «me», «te» and «se» become «m'», «t'» and «s'»: «je m'habille», «il s'appelle». STEP 3: «se lever» changes its spelling: «je lève, tu lèves, il lève, ils lèvent», but «nous levons, vous levez» (the «è» disappears). «Se promener» does the same: «je me promène». STEP 4: in the negative, the pronoun comes after «ne»: «Je ne me lève pas tôt.» STEP 5: in an informal question: «Tu te lèves à quelle heure ?» STEP 6: in the near future, the pronoun goes before the infinitive: «Je vais me coucher.» STEP 7: many reflexive verbs are actions done to your own body (se laver, s'habiller) or changes of state (se lever, se coucher). English rarely uses the pronoun («myself»): «I get up», but also «I wash my hands».",
+        "comparacao": "English has few reflexive verbs, like «to wash oneself» or «to enjoy oneself», and uses the pronoun less. In French, many everyday verbs always need the pronoun («se lever»), even when English has none: «to wake up» = «se réveiller».",
+        "tabelas": [
+          {
+            "title": "se lever (to get up)",
+            "linhas": [
+              {
+                "pronoun": "je",
+                "form": "me lève",
+                "example": "Je me lève à sept heures."
+              },
+              {
+                "pronoun": "tu",
+                "form": "te lèves",
+                "example": "Tu te lèves tôt."
+              },
+              {
+                "pronoun": "il / elle / on",
+                "form": "se lève",
+                "example": "Elle se lève tard."
+              },
+              {
+                "pronoun": "nous",
+                "form": "nous levons",
+                "example": "Nous nous levons ensemble."
+              },
+              {
+                "pronoun": "vous",
+                "form": "vous levez",
+                "example": "Vous vous levez à huit heures."
+              },
+              {
+                "pronoun": "ils / elles",
+                "form": "se lèvent",
+                "example": "Ils se lèvent à six heures."
+              }
+            ]
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je lève à sept heures.",
+            "certo": "Je me lève à sept heures.",
+            "motivo": "The pronoun «me» is missing."
+          },
+          {
+            "errado": "Je me habille.",
+            "certo": "Je m'habille.",
+            "motivo": "Elision before a silent «h»."
+          },
+          {
+            "errado": "Je ne lève pas me tôt.",
+            "certo": "Je ne me lève pas tôt.",
+            "motivo": "The pronoun comes after «ne»."
+          },
+          {
+            "errado": "Nous nous lèvons.",
+            "certo": "Nous nous levons.",
+            "motivo": "No «è» in «nous» and «vous»."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe your morning routine with six reflexive verbs: «Je me réveille à… Je me lève à… Je me lave… Je m'habille…»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say out loud what you are going to do tomorrow and how you will get to work or school."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-011.json",
+  "responsavel": null
+}

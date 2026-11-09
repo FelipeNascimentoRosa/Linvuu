@@ -1,0 +1,161 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 195,
+  "fase": 20,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Formal letters and emails: Reading and understanding an email",
+  "objetivo": "Lesson 49, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 49,
+    "titulo": "Formal letters and emails",
+    "objetivo": "Write formal emails and letters in French: greeting, request, complaint, thanks and sign-off in the right register.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Reading and understanding an email",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "un rendez-vous",
+            "translit": "an rahn-day-VOO",
+            "pt": "",
+            "en": "",
+            "audio": "un rendez-vous"
+          },
+          {
+            "ru": "confirmer",
+            "translit": "kohn-feer-MAY",
+            "pt": "",
+            "en": "",
+            "audio": "confirmer"
+          },
+          {
+            "ru": "annuler",
+            "translit": "ah-new-LAY",
+            "pt": "",
+            "en": "",
+            "audio": "annuler"
+          },
+          {
+            "ru": "reporter",
+            "translit": "ruh-por-TAY",
+            "pt": "",
+            "en": "",
+            "audio": "reporter"
+          },
+          {
+            "ru": "disponible",
+            "translit": "dees-poh-nee-BLUH",
+            "pt": "",
+            "en": "",
+            "audio": "disponible"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Arranging, confirming and postponing",
+        "explicacao": "STEP 1: propose: «Seriez-vous disponible mardi à 10 h ?» STEP 2: confirm: «Je vous confirme notre rendez-vous.» STEP 3: postpone: «Je suis dans l'obligation de reporter…» STEP 4: cancel: «Je me vois contraint d'annuler…» STEP 5: apologize: «Je vous prie de m'excuser pour la gêne occasionnée.»",
+        "comparacao": "the conditional is your best friend in French emails, just as “could you” and “would you” are in English: «seriez-vous», «pourriez-vous», «je souhaiterais». It softens every request and is expected in professional contexts.",
+        "tabela": [
+          {
+            "situation": "propose",
+            "formal": "Seriez-vous disponible mardi ?",
+            "informal": "T'es libre mardi ?"
+          },
+          {
+            "situation": "confirm",
+            "formal": "Je vous confirme notre rendez-vous.",
+            "informal": "C'est bon pour mardi."
+          },
+          {
+            "situation": "postpone",
+            "formal": "Je dois reporter notre rendez-vous.",
+            "informal": "On décale ?"
+          },
+          {
+            "situation": "to cancel",
+            "formal": "Je me vois contraint d'annuler.",
+            "informal": "J'annule."
+          },
+          {
+            "situation": "desculpar-se",
+            "formal": "Je vous prie de m'excuser.",
+            "informal": "Désolé."
+          },
+          {
+            "situation": "to request a reply",
+            "formal": "Pourriez-vous me confirmer ?",
+            "informal": "Dis-moi si ça va."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Êtes-vous disponible mardi ?",
+            "certo": "Seriez-vous disponible mardi ?",
+            "motivo": "Conditional: more polite."
+          },
+          {
+            "errado": "Je vous prie d'excuser moi.",
+            "certo": "Je vous prie de m'excuser.",
+            "motivo": "Pronoun before the verb."
+          },
+          {
+            "errado": "Je reporte le rendez-vous à demain, désolé.",
+            "certo": "Je dois reporter notre rendez-vous. Je vous prie de m'excuser.",
+            "motivo": "Formal tone."
+          },
+          {
+            "errado": "Merci pour votre compréhension, salut.",
+            "certo": "Je vous remercie pour votre compréhension. Cordialement.",
+            "motivo": "Formal closing."
+          }
+        ],
+        "tag": "Formal register"
+      },
+      {
+        "tipo": "texto",
+        "min": 8,
+        "titulo": "Un e-mail à lire",
+        "ru": "Madame, Monsieur, Je vous écris au sujet de ma commande n° 4521, passée le 5 mars. À ce jour, je n'ai pas reçu mon colis, alors que la livraison était prévue le 12 mars. Pourriez-vous m'indiquer où il se trouve ? Si le colis est perdu, je vous demande de bien vouloir me rembourser dans un délai de huit jours. Je vous remercie par avance. Cordialement, Julien Moreau.",
+        "pt": "Dear Sir or Madam, I am writing about my order no. 4521, placed on March 5. To this day I have not received my order, although delivery was scheduled for March 12. Could you tell me where it is? If the order is lost, I ask that you refund me within eight days. Thank you in advance. Yours faithfully, Julien Moreau.",
+        "perguntas": [
+          {
+            "pergunta": "When did Julien place the order?",
+            "resposta": "On March 5."
+          },
+          {
+            "pergunta": "What does he ask for if the parcel is lost?",
+            "resposta": "A refund within eight days."
+          },
+          {
+            "pergunta": "What is the tone of the email?",
+            "resposta": "Formal and polite."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Reply aloud to this email, as if you were the company, apologizing."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Ask formally for information about a course."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-049.json",
+  "responsavel": null
+}

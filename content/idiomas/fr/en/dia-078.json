@@ -1,0 +1,142 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 78,
+  "fase": 8,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Passé composé or imparfait?: Telling a story",
+  "objetivo": "Lesson 20, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 20,
+    "titulo": "Passé composé or imparfait?",
+    "objetivo": "Choose between the passé composé (what happened) and the imparfait (the setting and the habit) and tell a short story with both tenses.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Telling a story",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "rencontrer",
+            "translit": "rahn-kohn-TRAY",
+            "pt": "",
+            "en": "",
+            "audio": "rencontrer"
+          },
+          {
+            "ru": "découvrir",
+            "translit": "day-koo-VREER",
+            "pt": "",
+            "en": "",
+            "audio": "découvrir"
+          },
+          {
+            "ru": "perdre",
+            "translit": "PEHRDR",
+            "pt": "",
+            "en": "",
+            "audio": "perdre"
+          },
+          {
+            "ru": "trouver",
+            "translit": "troo-VAY",
+            "pt": "",
+            "en": "",
+            "audio": "trouver"
+          },
+          {
+            "ru": "tomber",
+            "translit": "tohn-BAY",
+            "pt": "",
+            "en": "",
+            "audio": "tomber"
+          },
+          {
+            "ru": "crier",
+            "translit": "kree-AY",
+            "pt": "",
+            "en": "",
+            "audio": "crier"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "The structure of a story",
+        "explicacao": "STEP 1: begin with the setting (imparfait): «C'était un samedi. Il faisait beau.» STEP 2: introduce the event with «un jour» or «soudain»: «Soudain, j'ai entendu un bruit.» STEP 3: tell the sequence (passé composé): «J'ai ouvert la porte, j'ai vu un chat.» STEP 4: go back to the imparfait for the reaction, the feeling: «J'avais peur, mais le chat était gentil.» STEP 5: finish with the result (passé composé) or with a conclusion (présent): «Depuis ce jour, il habite chez moi.» STEP 6: «alors» and «puis» link events; «parce que» links the cause (imparfait): «Je suis rentré parce que j'étais fatigué.» STEP 7: the pronoun goes before the auxiliary: «Je l'ai vu.» STEP 8: the negation goes around the auxiliary: «Je n'ai rien entendu.»",
+        "comparacao": "In English we tell stories with «once upon a time… suddenly…», alternating the past continuous and the simple past. French does the same and the logic is identical: setting in the imparfait, event in the passé composé, reaction back in the imparfait.",
+        "tabela": [
+          {
+            "part": "setting",
+            "tense": "imparfait",
+            "example": "C'était un samedi, il faisait beau."
+          },
+          {
+            "part": "event",
+            "tense": "passé composé",
+            "example": "Soudain, j'ai entendu un bruit."
+          },
+          {
+            "part": "sequence",
+            "tense": "passé composé",
+            "example": "J'ai ouvert la porte et j'ai vu un chat."
+          },
+          {
+            "part": "reaction",
+            "tense": "imparfait",
+            "example": "J'avais peur."
+          },
+          {
+            "part": "conclusion",
+            "tense": "passé composé / présent",
+            "example": "Depuis, il habite chez moi."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "C'a été un samedi.",
+            "certo": "C'était un samedi.",
+            "motivo": "Setting: «c'était»."
+          },
+          {
+            "errado": "Soudain, j'entendais un bruit.",
+            "certo": "Soudain, j'ai entendu un bruit.",
+            "motivo": "A single-point event."
+          },
+          {
+            "errado": "J'ai eu peur parce que j'ai été seul.",
+            "certo": "J'ai eu peur parce que j'étais seul.",
+            "motivo": "Cause/state: imparfait."
+          },
+          {
+            "errado": "J'ai vu le.",
+            "certo": "Je l'ai vu.",
+            "motivo": "Pronoun before the auxiliary."
+          }
+        ],
+        "tag": "Past"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Tell aloud a story of eight sentences, starting with «C'était…» and including «soudain»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Choose: «Il (pleuvoir) quand je (sortir).» «Je (dormir) quand tu (appeler).»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-020.json",
+  "responsavel": null
+}

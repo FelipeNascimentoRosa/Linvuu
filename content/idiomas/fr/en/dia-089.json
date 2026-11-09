@@ -1,0 +1,156 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 89,
+  "fase": 9,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Duration and timing: depuis, il y a, pendant, venir de: Depuis, il y a, pendant, dans",
+  "objetivo": "Lesson 23, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 23,
+    "titulo": "Duration and timing: depuis, il y a, pendant, venir de",
+    "objetivo": "Talk about duration and time with «depuis», «il y a», «pendant», «dans», and use «venir de» and «être en train de».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Depuis, il y a, pendant, dans",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "depuis",
+            "translit": "duh-PWEE",
+            "pt": "",
+            "en": "",
+            "audio": "depuis"
+          },
+          {
+            "ru": "il y a",
+            "translit": "eel ee AH",
+            "pt": "",
+            "en": "",
+            "audio": "il y a"
+          },
+          {
+            "ru": "pendant",
+            "translit": "pahn-DAHN",
+            "pt": "",
+            "en": "",
+            "audio": "pendant"
+          },
+          {
+            "ru": "dans",
+            "translit": "DAHN",
+            "pt": "",
+            "en": "",
+            "audio": "dans"
+          },
+          {
+            "ru": "en",
+            "translit": "AHN",
+            "pt": "",
+            "en": "",
+            "audio": "en"
+          },
+          {
+            "ru": "jusqu'à",
+            "translit": "zhews-KAH",
+            "pt": "",
+            "en": "",
+            "audio": "jusqu'à"
+          },
+          {
+            "ru": "à partir de",
+            "translit": "ah pahr-teer DUH",
+            "pt": "",
+            "en": "",
+            "audio": "à partir de"
+          },
+          {
+            "ru": "il y a longtemps",
+            "translit": "eel ee ah lohn-TAHN",
+            "pt": "",
+            "en": "",
+            "audio": "il y a longtemps"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Four time words",
+        "explicacao": "STEP 1: «depuis» + present: something started in the past and CONTINUES: «J'habite à Paris depuis deux ans.» (I have lived in Paris for two years, and I still do) STEP 2: «il y a» + passé composé: something happened a certain time ago and is over: «Je suis arrivé il y a deux ans.» STEP 3: «pendant» + period: the duration of an action: «J'ai travaillé pendant trois heures.» STEP 4: «dans» + period: a certain time from now: «Je pars dans deux jours.» STEP 5: «en» + period: the time it takes to do something: «Je fais le trajet en vingt minutes.» STEP 6: «depuis quand» and «depuis combien de temps» ask about a duration that continues: «Tu habites ici depuis combien de temps ?» STEP 7: the question «il y a combien de temps que» talks about the past: «Il y a combien de temps que tu es arrivé ?» STEP 8: for the starting point, use «depuis» + date: «Depuis 2020, j'habite à Lyon.»",
+        "comparacao": "In English 'for' and 'ago' are different words: «I have lived here for two years» (it continues) and «I arrived two years ago» (it is over). French also separates the two ideas: «depuis» + present for what continues and «il y a» + passé composé for what is over. The trap: English uses the present perfect ('have lived'), but French uses the PRESENT after «depuis».",
+        "tabela": [
+          {
+            "word": "depuis",
+            "tense": "present",
+            "example": "J'habite ici depuis deux ans."
+          },
+          {
+            "word": "il y a",
+            "tense": "passé composé",
+            "example": "Je suis arrivé il y a deux ans."
+          },
+          {
+            "word": "pendant",
+            "tense": "any",
+            "example": "J'ai dormi pendant huit heures."
+          },
+          {
+            "word": "dans",
+            "tense": "future",
+            "example": "Je pars dans deux jours."
+          },
+          {
+            "word": "en",
+            "tense": "deadline",
+            "example": "Je lis ce livre en deux jours."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "J'habite ici il y a deux ans.",
+            "certo": "J'habite ici depuis deux ans.",
+            "motivo": "Continues: «depuis» + present."
+          },
+          {
+            "errado": "J'ai arrivé depuis deux ans.",
+            "certo": "Je suis arrivé il y a deux ans.",
+            "motivo": "Over: «il y a»."
+          },
+          {
+            "errado": "J'ai habité ici depuis deux ans.",
+            "certo": "J'habite ici depuis deux ans.",
+            "motivo": "«Depuis» takes the present."
+          },
+          {
+            "errado": "Je pars en deux jours.",
+            "certo": "Je pars dans deux jours.",
+            "motivo": "Future: «dans»."
+          }
+        ],
+        "tag": "Time"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Answer aloud: «Tu habites ici depuis combien de temps ? Tu es arrivé il y a combien de temps ? Tu apprends le français depuis quand ?»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Talk about your holiday plans with the futur simple."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-023.json",
+  "responsavel": null
+}

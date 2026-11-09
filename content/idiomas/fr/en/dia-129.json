@@ -1,0 +1,166 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 129,
+  "fase": 13,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Negation and indefinite words: Negations beyond «pas»",
+  "objetivo": "Lesson 33, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 33,
+    "titulo": "Negation and indefinite words",
+    "objetivo": "Use «ne… jamais», «ne… rien», «ne… personne», «ne… plus», «ne… aucun», «ni… ni…» and the indefinites «tout», «chaque», «plusieurs», «quelqu'un», «quelque chose».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Negations beyond «pas»",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "jamais",
+            "translit": "zhah-MEH",
+            "pt": "",
+            "en": "",
+            "audio": "jamais"
+          },
+          {
+            "ru": "rien",
+            "translit": "RYAN",
+            "pt": "",
+            "en": "",
+            "audio": "rien"
+          },
+          {
+            "ru": "personne",
+            "translit": "pehr-SOHN",
+            "pt": "",
+            "en": "",
+            "audio": "personne"
+          },
+          {
+            "ru": "plus",
+            "translit": "PLEW",
+            "pt": "",
+            "en": "",
+            "audio": "plus"
+          },
+          {
+            "ru": "aucun",
+            "translit": "oh-KAN",
+            "pt": "",
+            "en": "",
+            "audio": "aucun"
+          },
+          {
+            "ru": "pas encore",
+            "translit": "pah zahn-KOR",
+            "pt": "",
+            "en": "",
+            "audio": "pas encore"
+          },
+          {
+            "ru": "ni… ni…",
+            "translit": "NEE… NEE…",
+            "pt": "",
+            "en": "",
+            "audio": "ni… ni…"
+          },
+          {
+            "ru": "seulement",
+            "translit": "suhl-MAHN",
+            "pt": "",
+            "en": "",
+            "audio": "seulement"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Je ne vois rien, je ne vois personne",
+        "explicacao": "STEP 1: French negation has two parts: «ne» before the verb and a word after it: «pas, jamais, rien, personne, plus, aucun, pas encore». STEP 2: «ne… jamais»: «Je ne mange jamais de viande.» STEP 3: «ne… rien»: «Je ne vois rien.» «Il n'y a rien.» STEP 4: «ne… personne»: «Je ne connais personne ici.» STEP 5: «ne… plus» (no more, no longer): «Je ne fume plus.» STEP 6: «ne… aucun(e)» (none, not any): «Je n'ai aucune idée.» STEP 7: «ne… pas encore» (not yet): «Je n'ai pas encore mangé.» STEP 8: in the passé composé, «pas, jamais, rien, plus» go between the auxiliary and the participle: «Je n'ai rien vu.» «Je n'ai jamais mangé.» But «personne» and «aucun» go AFTER the participle: «Je n'ai vu personne.» «Je n'ai lu aucun livre.» STEP 9: in speech, the «ne» often drops: «Je sais pas.» «Je vois rien.» In writing and formal contexts, keep the «ne». STEP 10: «personne», «rien» and «jamais» also work alone as answers: «Qui est là ? — Personne.»",
+        "comparacao": "In English we say «I don't see anything», «I don't know anyone» and «I never eat meat», avoiding a double negative. French needs two parts: «ne… rien», «ne… personne», «ne… jamais». English speakers often forget the «ne» in writing or add an extra «pas»: «je ne vois pas rien» is an error.",
+        "tabela": [
+          {
+            "negation": "ne… pas",
+            "sense": "no",
+            "example": "Je ne parle pas."
+          },
+          {
+            "negation": "ne… jamais",
+            "sense": "never",
+            "example": "Je ne mange jamais de viande."
+          },
+          {
+            "negation": "ne… rien",
+            "sense": "nothing",
+            "example": "Je ne vois rien."
+          },
+          {
+            "negation": "ne… personne",
+            "sense": "nobody",
+            "example": "Je ne connais personne."
+          },
+          {
+            "negation": "ne… plus",
+            "sense": "no longer",
+            "example": "Je ne fume plus."
+          },
+          {
+            "negation": "ne… aucun",
+            "sense": "none",
+            "example": "Je n'ai aucune idée."
+          },
+          {
+            "negation": "ne… pas encore",
+            "sense": "not yet",
+            "example": "Je n'ai pas encore mangé."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je ne vois pas rien.",
+            "certo": "Je ne vois rien.",
+            "motivo": "No «pas» with «rien»."
+          },
+          {
+            "errado": "Je n'ai vu rien.",
+            "certo": "Je n'ai rien vu.",
+            "motivo": "«Rien» goes between the auxiliary and the participle."
+          },
+          {
+            "errado": "Je n'ai personne vu.",
+            "certo": "Je n'ai vu personne.",
+            "motivo": "«Personne» goes after the participle."
+          },
+          {
+            "errado": "Je ne jamais mange de viande.",
+            "certo": "Je ne mange jamais de viande.",
+            "motivo": "«Jamais» goes after the verb."
+          }
+        ],
+        "tag": "Negation"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Answer out loud with a negation: «Tu manges de la viande ? Tu connais quelqu'un ici ? Tu vois quelque chose ?»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Invite someone and reply to an invitation with a reason."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-033.json",
+  "responsavel": null
+}

@@ -1,0 +1,517 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 232,
+  "fase": 24,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Advanced travel: unexpected problems, complaints and the passive voice: Review and practice for lesson 58",
+  "objetivo": "Lesson 58, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 58,
+    "titulo": "Advanced travel: unexpected problems, complaints and the passive voice",
+    "objetivo": "Handle unexpected problems while traveling (cancelled flight, lost luggage, a problem with your room), make a polite complaint and use the passive voice to talk about facts.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 58",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Le vol a été annulé",
+            "opcoes": [
+              "Le vol a été annulé",
+              "Le vol a annulé",
+              "Le vol est annulé par"
+            ],
+            "gabarito": "Le vol a été annulé",
+            "explicacao": "Passive in the past.",
+            "id": "fr-058-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je voudrais être remboursé",
+            "opcoes": [
+              "Je voudrais être remboursé",
+              "Je veux être remboursé",
+              "Je voudrais rembourser"
+            ],
+            "gabarito": "Je voudrais être remboursé",
+            "explicacao": "Conditional.",
+            "id": "fr-058-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je me suis fait voler mon sac",
+            "opcoes": [
+              "Je me suis fait voler mon sac",
+              "J'ai fait voler mon sac",
+              "Je suis volé mon sac"
+            ],
+            "gabarito": "Je me suis fait voler mon sac",
+            "explicacao": "«Se faire».",
+            "id": "fr-058-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Pourriez-vous changer ma chambre",
+            "respostaEsperada": "Pourriez-vous changer ma chambre",
+            "explicacao": "Write: Pourriez-vous changer ma chambre.",
+            "id": "fr-058-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Mes bagages ne sont pas arrivés",
+            "respostaEsperada": "Mes bagages ne sont pas arrivés",
+            "explicacao": "Write: Mes bagages ne sont pas arrivés.",
+            "id": "fr-058-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Could you give me a receipt for the taxi refund?»",
+            "opcoes": [
+              "Pourriez-vous",
+              "justificatif",
+              "pour",
+              "le",
+              "remboursement",
+              "me",
+              "?",
+              "un",
+              "taxi",
+              "donner",
+              "du"
+            ],
+            "gabarito": "Pourriez-vous me donner un justificatif pour le remboursement du taxi ?",
+            "explicacao": "Write: Pourriez-vous me donner un justificatif pour le remboursement du taxi ?",
+            "id": "fr-058-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je souhaiterais être remboursé",
+            "respostaEsperada": "Je souhaiterais être remboursé",
+            "explicacao": "Write: Je souhaiterais être remboursé.",
+            "id": "fr-058-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Ne vous inquiétez pas, ils seront transférés automatiquement.",
+            "respostaEsperada": "Ne vous inquiétez pas, ils seront transférés automatiquement.",
+            "explicacao": "Don't worry, it will be transferred automatically.",
+            "id": "fr-058-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Passive in the present:",
+            "opcoes": [
+              "Le vol est annulé.",
+              "Le vol a annulé.",
+              "Le vol annule."
+            ],
+            "gabarito": "Le vol est annulé.",
+            "explicacao": "être + participle.",
+            "id": "fr-058-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Agent of the passive:",
+            "opcoes": [
+              "par",
+              "pour",
+              "avec"
+            ],
+            "gabarito": "par",
+            "explicacao": "Agent.",
+            "id": "fr-058-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Polite request:",
+            "opcoes": [
+              "Pourriez-vous m'aider ?",
+              "Vous devez m'aider.",
+              "Aidez-moi maintenant."
+            ],
+            "gabarito": "Pourriez-vous m'aider ?",
+            "explicacao": "Conditional.",
+            "id": "fr-058-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Pourriez-vous me donner un justificatif pour le remboursement du taxi ?",
+            "respostaEsperada": "Pourriez-vous me donner un justificatif pour le remboursement du taxi ?",
+            "explicacao": "Could you give me a receipt for the taxi refund?",
+            "id": "fr-058-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which word can mean supporting documentation, such as a receipt?",
+            "opcoes": [
+              "un justificatif",
+              "une réclamation",
+              "un retard"
+            ],
+            "gabarito": "un justificatif",
+            "explicacao": "«Un justificatif» is evidence or supporting documentation; it can be a receipt depending on the context.",
+            "id": "fr-058-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Les bagages sont ___ . (perdre)",
+            "opcoes": [
+              "perdus",
+              "perdu",
+              "perdre"
+            ],
+            "gabarito": "perdus",
+            "explicacao": "Agreement.",
+            "id": "fr-058-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Le vol a été annulé ___ la compagnie.",
+            "opcoes": [
+              "par",
+              "de",
+              "à"
+            ],
+            "gabarito": "par",
+            "explicacao": "Agent.",
+            "id": "fr-058-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Bien sûr, voici votre justificatif.",
+            "respostaEsperada": "Bien sûr, voici votre justificatif.",
+            "explicacao": "Of course, here is your receipt.",
+            "id": "fr-058-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je me plains ___ service.",
+            "opcoes": [
+              "du",
+              "de le",
+              "au"
+            ],
+            "gabarito": "du",
+            "explicacao": "de + le.",
+            "id": "fr-058-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «le comptoir» mean?",
+            "audio": "le comptoir",
+            "opcoes": [
+              "the counter",
+              "by (with feelings)",
+              "a refund",
+              "to be lost"
+            ],
+            "gabarito": "the counter",
+            "explicacao": "«le comptoir» = the counter.",
+            "id": "fr-058-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ -vous me donner un justificatif ?",
+            "opcoes": [
+              "Pouvez",
+              "Peuvent",
+              "Pouvons"
+            ],
+            "gabarito": "Pouvez",
+            "explicacao": "Vous.",
+            "id": "fr-058-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Le vol a été annulé par la compagnie.»",
+            "opcoes": [
+              "Le",
+              "vol",
+              "a",
+              "été",
+              "annulé",
+              "par",
+              "la",
+              "compagnie"
+            ],
+            "gabarito": "Le vol a été annulé par la compagnie.",
+            "explicacao": "Passive.",
+            "id": "fr-058-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Je voudrais signaler un problème.»",
+            "opcoes": [
+              "Je",
+              "voudrais",
+              "signaler",
+              "un",
+              "problème"
+            ],
+            "gabarito": "Je voudrais signaler un problème.",
+            "explicacao": "Opening.",
+            "id": "fr-058-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: My flight was cancelled. I would like to be refunded. Could you give me a receipt?",
+            "respostaEsperada": "Mon vol a été annulé. Je voudrais être remboursé. Pourriez-vous me donner un justificatif ?",
+            "id": "fr-058-e17",
+            "explicacao": "The model uses «remboursé» for a male speaker; a female speaker can write «remboursée»."
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «une réclamation» mean?",
+            "audio": "une réclamation",
+            "opcoes": [
+              "a connecting flight",
+              "by (with feelings)",
+              "a complaint",
+              "by (agent)"
+            ],
+            "gabarito": "a complaint",
+            "explicacao": "«une réclamation» = a complaint.",
+            "id": "fr-058-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Les vols ont été ___ . (cancel)",
+            "opcoes": [
+              "annulé",
+              "annulés",
+              "annulées"
+            ],
+            "gabarito": "annulés",
+            "explicacao": "The participle agrees with «vols»: masculine plural.",
+            "id": "fr-058-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "une carte d'embarquement",
+            "respostaEsperada": "une carte d'embarquement",
+            "explicacao": "a boarding pass",
+            "id": "fr-058-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Que ___-vous faire pour moi ? (can)",
+            "opcoes": [
+              "pouvons",
+              "peuvent",
+              "pouvez"
+            ],
+            "gabarito": "pouvez",
+            "explicacao": "With «vous», «pouvoir» gives «pouvez».",
+            "id": "fr-058-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Le vol sera ___ demain. (delay)",
+            "opcoes": [
+              "retardé",
+              "retarder",
+              "retardant"
+            ],
+            "gabarito": "retardé",
+            "explicacao": "Passive in the future: «sera» + participle.",
+            "id": "fr-058-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "La carte d'embarquement a été ___ . (lose)",
+            "opcoes": [
+              "perdu",
+              "perdue",
+              "perdues"
+            ],
+            "gabarito": "perdue",
+            "explicacao": "The participle agrees with «carte»: feminine singular.",
+            "id": "fr-058-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «une carte d'embarquement» mean?",
+            "audio": "une carte d'embarquement",
+            "opcoes": [
+              "by (agent)",
+              "a boarding pass",
+              "to be delayed",
+              "the counter"
+            ],
+            "gabarito": "a boarding pass",
+            "explicacao": "«une carte d'embarquement» = a boarding pass.",
+            "id": "fr-058-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je me suis fait ___ mon sac. (steal)",
+            "opcoes": [
+              "volé",
+              "vole",
+              "voler"
+            ],
+            "gabarito": "voler",
+            "explicacao": "«Se faire» + infinitive.",
+            "id": "fr-058-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Les bagages ont été retrouvés.",
+              "Les bagages ont été retrouvé.",
+              "Les bagages sont été retrouvés."
+            ],
+            "gabarito": "Les bagages ont été retrouvés.",
+            "explicacao": "«Ont été» + participle agreeing with «bagages».",
+            "id": "fr-058-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which polite request specifically reports the loss of an item?",
+            "opcoes": [
+              "Je veux faire une déclaration.",
+              "Je voudrais faire une déclaration de perte.",
+              "Je perds ma déclaration."
+            ],
+            "gabarito": "Je voudrais faire une déclaration de perte.",
+            "explicacao": "«Déclaration de perte» + polite request.",
+            "id": "fr-058-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "une déclaration de perte",
+            "respostaEsperada": "une déclaration de perte",
+            "explicacao": "a declaration of loss",
+            "id": "fr-058-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which question uses formal inversion?",
+            "opcoes": [
+              "Il y a un autre vol aujourd'hui ?",
+              "Est-ce que y a un autre vol ?",
+              "Y a-t-il un autre vol aujourd'hui ?"
+            ],
+            "gabarito": "Y a-t-il un autre vol aujourd'hui ?",
+            "explicacao": "Inversion: «y a-t-il».",
+            "id": "fr-058-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «être annulé» mean?",
+            "audio": "être annulé",
+            "opcoes": [
+              "to be delayed",
+              "to be refunded",
+              "a complaint",
+              "to be cancelled"
+            ],
+            "gabarito": "to be cancelled",
+            "explicacao": "«être annulé» = to be cancelled.",
+            "id": "fr-058-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «The flight will be cancelled»?",
+            "opcoes": [
+              "Le vol sera annulé.",
+              "Le vol est sera annulé.",
+              "Le vol va annulé."
+            ],
+            "gabarito": "Le vol sera annulé.",
+            "explicacao": "Passive in the future: «sera» + participle.",
+            "id": "fr-058-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «My luggage was lost by the airline.»",
+            "opcoes": [
+              "Mes",
+              "bagages",
+              "ont",
+              "été",
+              "perdus",
+              "par",
+              "la",
+              "compagnie"
+            ],
+            "gabarito": "Mes bagages ont été perdus par la compagnie.",
+            "explicacao": "Passive with agent: «par».",
+            "id": "fr-058-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «I would like to speak to the person in charge.»",
+            "opcoes": [
+              "Je",
+              "voudrais",
+              "parler",
+              "au",
+              "responsable"
+            ],
+            "gabarito": "Je voudrais parler au responsable.",
+            "explicacao": "«À + le» becomes «au».",
+            "id": "fr-058-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: My luggage did not arrive. Could you change my room?",
+            "respostaEsperada": "Mes bagages ne sont pas arrivés. Pourriez-vous changer ma chambre ?",
+            "id": "fr-058-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French (use «se faire»): I had my phone stolen. The flight was delayed.",
+            "respostaEsperada": "Je me suis fait voler mon portable. Le vol a été retardé.",
+            "id": "fr-058-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Do a 1-minute role play: you are at the airline counter and your flight has been cancelled."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Tell aloud about a problem you had while traveling and how it was resolved."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-058.json",
+  "responsavel": null
+}

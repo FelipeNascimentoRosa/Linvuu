@@ -1,0 +1,512 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 92,
+  "fase": 10,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Duration and timing: depuis, il y a, pendant, venir de: Review and practice for lesson 23",
+  "objetivo": "Lesson 23, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 23,
+    "titulo": "Duration and timing: depuis, il y a, pendant, venir de",
+    "objetivo": "Talk about duration and time with «depuis», «il y a», «pendant», «dans», and use «venir de» and «être en train de».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 23",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "J'habite ici depuis deux ans",
+            "opcoes": [
+              "J'habite ici depuis deux ans",
+              "J'ai habité ici il y a deux ans",
+              "J'habite ici dans deux ans"
+            ],
+            "gabarito": "J'habite ici depuis deux ans",
+            "explicacao": "Listen to «depuis».",
+            "id": "fr-023-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je viens de manger",
+            "opcoes": [
+              "Je viens de manger",
+              "Je vais manger",
+              "Je suis en train de manger"
+            ],
+            "gabarito": "Je viens de manger",
+            "explicacao": "Listen to «viens de».",
+            "id": "fr-023-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je suis arrivé il y a deux ans",
+            "opcoes": [
+              "Je suis arrivé il y a deux ans",
+              "Je suis arrivé depuis deux ans",
+              "Je suis arrivé dans deux ans"
+            ],
+            "gabarito": "Je suis arrivé il y a deux ans",
+            "explicacao": "Listen to «il y a».",
+            "id": "fr-023-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je pars dans deux jours",
+            "respostaEsperada": "Je pars dans deux jours",
+            "explicacao": "Write: Je pars dans deux jours.",
+            "id": "fr-023-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Elle est en train de travailler",
+            "respostaEsperada": "Elle est en train de travailler",
+            "explicacao": "Write: Elle est en train de travailler.",
+            "id": "fr-023-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «se marier» mean?",
+            "audio": "se marier",
+            "opcoes": [
+              "until",
+              "a partir de",
+              "casar-se",
+              "at this moment"
+            ],
+            "gabarito": "casar-se",
+            "explicacao": "«se marier» = casar-se.",
+            "id": "fr-023-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Il vient d'arriver",
+            "respostaEsperada": "Il vient d'arriver",
+            "explicacao": "Write: Il vient d'arriver.",
+            "id": "fr-023-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "il y a",
+            "respostaEsperada": "il y a",
+            "explicacao": "ago",
+            "id": "fr-023-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Continues until today:",
+            "opcoes": [
+              "J'habite ici depuis deux ans.",
+              "J'habite ici il y a deux ans.",
+              "J'habite ici dans deux ans."
+            ],
+            "gabarito": "J'habite ici depuis deux ans.",
+            "explicacao": "«Depuis» + present.",
+            "id": "fr-023-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Already over:",
+            "opcoes": [
+              "Je suis arrivé il y a deux ans.",
+              "Je suis arrivé depuis deux ans.",
+              "J'arrive il y a deux ans."
+            ],
+            "gabarito": "Je suis arrivé il y a deux ans.",
+            "explicacao": "«Il y a» + passé composé.",
+            "id": "fr-023-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«I have just eaten» in French:",
+            "opcoes": [
+              "Je viens de manger.",
+              "Je viens manger.",
+              "J'ai de manger."
+            ],
+            "gabarito": "Je viens de manger.",
+            "explicacao": "Recent past.",
+            "id": "fr-023-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «jusqu'à» mean?",
+            "audio": "jusqu'à",
+            "opcoes": [
+              "at this moment",
+              "to go, to be going to do",
+              "during",
+              "until"
+            ],
+            "gabarito": "until",
+            "explicacao": "«jusqu'à» = until.",
+            "id": "fr-023-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«I am eating now» in French:",
+            "opcoes": [
+              "Je suis en train de manger.",
+              "Je mange en train.",
+              "Je suis manger."
+            ],
+            "gabarito": "Je suis en train de manger.",
+            "explicacao": "Action in progress.",
+            "id": "fr-023-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je pars ___ trois jours. (in)",
+            "opcoes": [
+              "dans",
+              "il y a",
+              "depuis"
+            ],
+            "gabarito": "dans",
+            "explicacao": "Future: «dans».",
+            "id": "fr-023-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "J'ai dormi ___ huit heures.",
+            "opcoes": [
+              "pendant",
+              "dans",
+              "depuis"
+            ],
+            "gabarito": "pendant",
+            "explicacao": "Duration.",
+            "id": "fr-023-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "à partir de",
+            "respostaEsperada": "à partir de",
+            "explicacao": "a partir de",
+            "id": "fr-023-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle vient ___ téléphoner.",
+            "opcoes": [
+              "de",
+              "à",
+              "d'"
+            ],
+            "gabarito": "de",
+            "explicacao": "«Venir de».",
+            "id": "fr-023-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «dans» mean?",
+            "audio": "dans",
+            "opcoes": [
+              "already",
+              "aposentar-se",
+              "ago",
+              "in (from now)"
+            ],
+            "gabarito": "in (from now)",
+            "explicacao": "«dans» = in (from now).",
+            "id": "fr-023-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je suis en train ___ lire.",
+            "opcoes": [
+              "de",
+              "à",
+              "d'"
+            ],
+            "gabarito": "de",
+            "explicacao": "«Être en train de».",
+            "id": "fr-023-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Je travaille ici depuis cinq ans.»",
+            "opcoes": [
+              "Je",
+              "travaille",
+              "ici",
+              "depuis",
+              "cinq",
+              "ans"
+            ],
+            "gabarito": "Je travaille ici depuis cinq ans.",
+            "explicacao": "Present + depuis.",
+            "id": "fr-023-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Elle vient de partir.»",
+            "opcoes": [
+              "Elle",
+              "vient",
+              "de",
+              "partir"
+            ],
+            "gabarito": "Elle vient de partir.",
+            "explicacao": "Venir de + infinitive.",
+            "id": "fr-023-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I have lived here for three years. I arrived three years ago. I am working now.",
+            "respostaEsperada": "J'habite ici depuis trois ans. Je suis arrivé il y a trois ans. Je suis en train de travailler.",
+            "id": "fr-023-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «aller» mean?",
+            "audio": "aller",
+            "opcoes": [
+              "nascer",
+              "to go, to be going to do",
+              "to move house",
+              "during"
+            ],
+            "gabarito": "to go, to be going to do",
+            "explicacao": "«aller» = to go, to be going to do.",
+            "id": "fr-023-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je travaille ici ___ cinq ans. (for, and it continues)",
+            "opcoes": [
+              "il y a",
+              "pendant",
+              "depuis"
+            ],
+            "gabarito": "depuis",
+            "explicacao": "«Depuis» + present: it started and continues.",
+            "id": "fr-023-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "être en train de",
+            "respostaEsperada": "être en train de",
+            "explicacao": "to be (doing)",
+            "id": "fr-023-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle est arrivée ___ trois jours. (ago)",
+            "opcoes": [
+              "il y a",
+              "depuis",
+              "dans"
+            ],
+            "gabarito": "il y a",
+            "explicacao": "«Il y a» + passé composé: it happened and is over.",
+            "id": "fr-023-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Nous ___ de finir. (acabamos)",
+            "opcoes": [
+              "venez",
+              "venons",
+              "viennent"
+            ],
+            "gabarito": "venons",
+            "explicacao": "«Venir de» with «nous»: «venons de».",
+            "id": "fr-023-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il est en ___ de dormir. (to be doing)",
+            "opcoes": [
+              "cours",
+              "temps",
+              "train"
+            ],
+            "gabarito": "train",
+            "explicacao": "«Être en train de» + infinitive = to be doing.",
+            "id": "fr-023-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «tout de suite» mean?",
+            "audio": "tout de suite",
+            "opcoes": [
+              "at this moment",
+              "in (deadline)",
+              "in (from now)",
+              "right away"
+            ],
+            "gabarito": "right away",
+            "explicacao": "«tout de suite» = right away.",
+            "id": "fr-023-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je fais le trajet ___ vingt minutes. (in)",
+            "opcoes": [
+              "en",
+              "dans",
+              "pendant"
+            ],
+            "gabarito": "en",
+            "explicacao": "«En» + period = the time it takes to do something.",
+            "id": "fr-023-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Il vient partir.",
+              "Il vient de partir.",
+              "Il vient de parti."
+            ],
+            "gabarito": "Il vient de partir.",
+            "explicacao": "«Venir de» + infinitive.",
+            "id": "fr-023-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you ask how long someone has lived here?",
+            "opcoes": [
+              "Tu habites ici il y a combien de temps ?",
+              "Combien de temps tu habites pendant ici ?",
+              "Tu habites ici depuis combien de temps ?"
+            ],
+            "gabarito": "Tu habites ici depuis combien de temps ?",
+            "explicacao": "An action that continues: «depuis combien de temps».",
+            "id": "fr-023-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "tout de suite",
+            "respostaEsperada": "tout de suite",
+            "explicacao": "right away",
+            "id": "fr-023-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct for something that ended some time ago?",
+            "opcoes": [
+              "J'ai déménagé il y a cinq ans.",
+              "J'ai déménagé depuis cinq ans.",
+              "Je déménage depuis cinq ans."
+            ],
+            "gabarito": "J'ai déménagé il y a cinq ans.",
+            "explicacao": "A completed fact: «il y a» + passé composé.",
+            "id": "fr-023-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «venir de» mean?",
+            "audio": "venir de",
+            "opcoes": [
+              "at this moment",
+              "ago",
+              "in (deadline)",
+              "acabar de"
+            ],
+            "gabarito": "acabar de",
+            "explicacao": "«venir de» = acabar de.",
+            "id": "fr-023-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which construction indicates an action in progress?",
+            "opcoes": [
+              "Je viens de lire.",
+              "Je suis en train de lire.",
+              "Je vais lire."
+            ],
+            "gabarito": "Je suis en train de lire.",
+            "explicacao": "«Être en train de» = to be doing.",
+            "id": "fr-023-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «They have lived in Lyon for ten years.»",
+            "opcoes": [
+              "Ils",
+              "habitent",
+              "à",
+              "Lyon",
+              "depuis",
+              "dix",
+              "ans"
+            ],
+            "gabarito": "Ils habitent à Lyon depuis dix ans.",
+            "explicacao": "«Depuis» + present.",
+            "id": "fr-023-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «I have just seen Marie.»",
+            "opcoes": [
+              "Je",
+              "viens",
+              "de",
+              "voir",
+              "Marie"
+            ],
+            "gabarito": "Je viens de voir Marie.",
+            "explicacao": "«Venir de» + infinitive.",
+            "id": "fr-023-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I have been studying French for two years. I leave in a week.",
+            "respostaEsperada": "J'étudie le français depuis deux ans. Je pars dans une semaine.",
+            "id": "fr-023-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: He has just left. I am cooking.",
+            "respostaEsperada": "Il vient de sortir. Je suis en train de cuisiner.",
+            "id": "fr-023-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Speak for 1 minute about your life: where you live, since when, and what you do now."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say aloud what you have just done, what you are doing now and what you will do."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-023.json",
+  "responsavel": null
+}

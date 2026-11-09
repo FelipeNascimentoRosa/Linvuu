@@ -45,7 +45,7 @@ Quem marca: você. Atualize o estado e a data quando verificar.
 ## 4. App Android
 | # | Item | Estado | Como verificar / evidência |
 |---|---|---|---|
-| 4.1 | APK gera pelo GitHub Actions | ✅ | Workflow "App Android (APK de teste)" concluído com sucesso no PR 186 |
+| 4.1 | APK gera pelo GitHub Actions | ✅ | Workflow "App Android (APK de pré-lançamento)" concluído com sucesso no PR 186 |
 | 4.2 | APK instala em aparelho real | ❓ | Baixe o artefato `linvuu-debug-apk` (Actions) e instale |
 | 4.3 | App abre sem tela em branco | ❓ | Teste no aparelho |
 | 4.4 | Áudios tocam sem internet | ⚠️ | Estão no pacote (`public/audio`), mas não testado. O pacote é grande: ver 4.16 |

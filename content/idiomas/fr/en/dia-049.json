@@ -1,0 +1,171 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 49,
+  "fase": 5,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Likes, stressed pronouns and direct object pronouns: Likes and the stressed pronouns",
+  "objetivo": "Lesson 13, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 13,
+    "titulo": "Likes, stressed pronouns and direct object pronouns",
+    "objetivo": "Talk about likes and opinions, use the stressed pronouns («moi», «toi», «lui»…) and replace a direct object with «le», «la», «l'» and «les».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Likes and the stressed pronouns",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "adorer",
+            "translit": "ah-doh-RAY",
+            "pt": "",
+            "en": "",
+            "audio": "adorer"
+          },
+          {
+            "ru": "détester",
+            "translit": "day-teh-STAY",
+            "pt": "",
+            "en": "",
+            "audio": "détester"
+          },
+          {
+            "ru": "préférer",
+            "translit": "pray-fay-RAY",
+            "pt": "",
+            "en": "",
+            "audio": "préférer"
+          },
+          {
+            "ru": "moi",
+            "translit": "MWAH",
+            "pt": "",
+            "en": "",
+            "audio": "moi"
+          },
+          {
+            "ru": "toi",
+            "translit": "TWAH",
+            "pt": "",
+            "en": "",
+            "audio": "toi"
+          },
+          {
+            "ru": "lui",
+            "translit": "LWEE",
+            "pt": "",
+            "en": "",
+            "audio": "lui"
+          },
+          {
+            "ru": "elle",
+            "translit": "EHL",
+            "pt": "",
+            "en": "",
+            "audio": "elle"
+          },
+          {
+            "ru": "eux",
+            "translit": "UH",
+            "pt": "",
+            "en": "",
+            "audio": "eux"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Moi, toi, lui: stressed pronouns",
+        "explicacao": "STEP 1: the stressed pronouns are «moi, toi, lui, elle, nous, vous, eux, elles». They are used when the pronoun stands alone or outside the verb. STEP 2: after a preposition: «avec moi», «chez lui», «pour toi», «sans elles». STEP 3: on their own, in short answers: «Qui parle ? — Moi.» STEP 4: to emphasize the subject: «Moi, j'aime le fromage. Et toi, tu aimes ça ?» STEP 5: after «c'est»: «C'est moi.» «C'est lui.» STEP 6: in comparisons and with «aussi»: «Moi aussi.» «Moi non plus.» STEP 7: «aimer», «adorer», «détester» + definite article: «J'adore la musique. Je déteste le bruit.» «Préférer» changes its spelling: «je préfère, tu préfères, nous préférons, vous préférez, ils préfèrent». STEP 8: after «préférer», the infinitive: «Je préfère rester ici.»",
+        "comparacao": "English uses «I, you, he» as subjects and «me, him, them» after a preposition («with me», «for him»). French has its own series, used for emphasis and after a preposition: «avec moi», «chez lui».",
+        "tabela": [
+          {
+            "subject": "je",
+            "stressed": "moi",
+            "example": "Moi, j'aime le café."
+          },
+          {
+            "subject": "tu",
+            "stressed": "toi",
+            "example": "Et toi ?"
+          },
+          {
+            "subject": "il",
+            "stressed": "lui",
+            "example": "Je vais chez lui."
+          },
+          {
+            "subject": "elle",
+            "stressed": "elle",
+            "example": "Je parle avec elle."
+          },
+          {
+            "subject": "nous",
+            "stressed": "nous",
+            "example": "Nous, on aime ça."
+          },
+          {
+            "subject": "vous",
+            "stressed": "vous",
+            "example": "Et vous ?"
+          },
+          {
+            "subject": "ils",
+            "stressed": "eux",
+            "example": "Je pars avec eux."
+          },
+          {
+            "subject": "elles",
+            "stressed": "elles",
+            "example": "C'est pour elles."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je vais avec je.",
+            "certo": "Je vais avec moi.",
+            "motivo": "After a preposition, use the stressed pronoun."
+          },
+          {
+            "errado": "C'est je.",
+            "certo": "C'est moi.",
+            "motivo": "After «c'est», use the stressed pronoun."
+          },
+          {
+            "errado": "Je aime la musique.",
+            "certo": "J'aime la musique.",
+            "motivo": "Elision before a vowel."
+          },
+          {
+            "errado": "J'aime musique.",
+            "certo": "J'aime la musique.",
+            "motivo": "The definite article is required after «aimer»."
+          }
+        ],
+        "tag": "Pronouns"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Answer out loud: «Qui aime le café ? Qui déteste la pluie ? Avec qui tu habites ?» using «moi», «lui», «elle», «eux»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Describe out loud a piece of clothing and say how much you would pay for it."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-013.json",
+  "responsavel": null
+}

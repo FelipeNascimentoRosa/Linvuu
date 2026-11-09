@@ -1,0 +1,174 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 103,
+  "fase": 11,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Body, health and the pharmacy: At the pharmacy",
+  "objetivo": "Lesson 26, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 26,
+    "titulo": "Body, health and the pharmacy",
+    "objetivo": "Name parts of the body, say where it hurts, describe symptoms, talk to the doctor and at the pharmacy, and use «avoir mal à» and «il faut».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "At the pharmacy",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "la pharmacie",
+            "translit": "lah fahr-mah-SEE",
+            "pt": "",
+            "en": "",
+            "audio": "la pharmacie"
+          },
+          {
+            "ru": "le médicament",
+            "translit": "luh may-dee-kah-MAHN",
+            "pt": "",
+            "en": "",
+            "audio": "le médicament"
+          },
+          {
+            "ru": "l'ordonnance",
+            "translit": "lohr-doh-NAHNS",
+            "pt": "",
+            "en": "",
+            "audio": "l'ordonnance"
+          },
+          {
+            "ru": "le comprimé",
+            "translit": "luh kohn-pree-MAY",
+            "pt": "",
+            "en": "",
+            "audio": "le comprimé"
+          },
+          {
+            "ru": "le sirop",
+            "translit": "luh see-ROH",
+            "pt": "",
+            "en": "",
+            "audio": "le sirop"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Asking for medicine",
+        "explicacao": "STEP 1: polite request: «Je voudrais quelque chose contre le mal de tête, s'il vous plaît.» STEP 2: the pharmacist's phrases: «Vous avez une ordonnance ?» «Prenez un comprimé trois fois par jour.» STEP 3: «contre» + problem: «un médicament contre la toux», «un sirop contre le rhume». STEP 4: «sans ordonnance» (without a prescription): «Ce médicament est disponible sans ordonnance.» STEP 5: asking about price: «Ça coûte combien ?» «C'est remboursé ?» STEP 6: saying goodbye: «Merci, bonne journée.» «Bon rétablissement !» (get well soon)",
+        "comparacao": "In English we say «a medicine for a cough». French uses «contre»: «un médicament contre la toux». And «get well soon» becomes «bon rétablissement».",
+        "tabela": [
+          {
+            "request": "a medicine for a cough",
+            "sentence": "un médicament contre la toux"
+          },
+          {
+            "request": "a syrup for a cold",
+            "sentence": "un sirop contre le rhume"
+          },
+          {
+            "request": "without a prescription",
+            "sentence": "sans ordonnance"
+          },
+          {
+            "request": "with a prescription",
+            "sentence": "avec une ordonnance"
+          },
+          {
+            "request": "get well soon",
+            "sentence": "Bon rétablissement !"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Un médicament pour la toux.",
+            "certo": "Un médicament contre la toux.",
+            "motivo": "Medicine to treat something: «contre»."
+          },
+          {
+            "errado": "Je veux un médicament.",
+            "certo": "Je voudrais un médicament.",
+            "motivo": "Polite request."
+          },
+          {
+            "errado": "Sans de ordonnance.",
+            "certo": "Sans ordonnance.",
+            "motivo": "No article."
+          },
+          {
+            "errado": "Prenez trois fois par jour de comprimés.",
+            "certo": "Prenez des comprimés trois fois par jour.",
+            "motivo": "Sentence order."
+          }
+        ],
+        "tag": "Health"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "À la pharmacie / At the pharmacy",
+        "contexto": "Marie talks to the pharmacist about a cough.",
+        "linhas": [
+          {
+            "personagem": "Marie",
+            "ru": "— Bonjour. Je voudrais quelque chose contre la toux, s'il vous plaît.",
+            "en": "— Good morning. I'd like something for a cough, please.",
+            "audio": "Bonjour. Je voudrais quelque chose contre la toux, s'il vous plaît."
+          },
+          {
+            "personagem": "Le pharmacien",
+            "ru": "— Depuis quand toussez-vous ?",
+            "en": "— How long have you been coughing, madam?",
+            "audio": "Depuis quand toussez-vous ?"
+          },
+          {
+            "personagem": "Marie",
+            "ru": "— Depuis trois jours. J'ai aussi mal à la gorge.",
+            "en": "— For three days. I also have a sore throat.",
+            "audio": "Depuis trois jours. J'ai aussi mal à la gorge."
+          },
+          {
+            "personagem": "Le pharmacien",
+            "ru": "— Vous avez de la fièvre ?",
+            "en": "— Do you have a fever, madam?",
+            "audio": "Vous avez de la fièvre ?"
+          },
+          {
+            "personagem": "Marie",
+            "ru": "— Non, je n'ai pas de fièvre, mais je suis très fatiguée.",
+            "en": "— No, I don't have a fever, but I'm very tired.",
+            "audio": "Non, je n'ai pas de fièvre, mais je suis très fatiguée."
+          },
+          {
+            "personagem": "Le pharmacien",
+            "ru": "— Prenez ce sirop trois fois par jour et reposez-vous. Si ça ne va pas mieux dans quatre jours, consultez un médecin.",
+            "en": "— Take this syrup three times a day and rest. If you don't feel better in four days, see a doctor.",
+            "audio": "Prenez ce sirop trois fois par jour et reposez-vous. Si ça ne va pas mieux dans quatre jours, consultez un médecin."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Ask out loud for a medicine for a headache, a cough and a fever."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Tell the doctor three symptoms and how long you have had them."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-026.json",
+  "responsavel": null
+}

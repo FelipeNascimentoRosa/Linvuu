@@ -1,0 +1,156 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 33,
+  "fase": 4,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Food: partitives, quantities and the restaurant: Food and the partitives",
+  "objetivo": "Lesson 9, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 9,
+    "titulo": "Food: partitives, quantities and the restaurant",
+    "objetivo": "Talk about what you eat and drink with the partitive articles («du», «de la», «de l'», «des»), express quantities, and order in a café or restaurant with «je voudrais» and «prendre».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Food and the partitives",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "le pain",
+            "translit": "luh PAN",
+            "pt": "",
+            "en": "",
+            "audio": "le pain"
+          },
+          {
+            "ru": "le fromage",
+            "translit": "luh froh-MAHZH",
+            "pt": "",
+            "en": "",
+            "audio": "le fromage"
+          },
+          {
+            "ru": "la viande",
+            "translit": "lah VYAHND",
+            "pt": "",
+            "en": "",
+            "audio": "la viande"
+          },
+          {
+            "ru": "le poisson",
+            "translit": "luh pwah-SOHN",
+            "pt": "",
+            "en": "",
+            "audio": "le poisson"
+          },
+          {
+            "ru": "les légumes",
+            "translit": "lay lay-GEWM",
+            "pt": "",
+            "en": "",
+            "audio": "les légumes"
+          },
+          {
+            "ru": "le fruit",
+            "translit": "luh FRWEE",
+            "pt": "",
+            "en": "",
+            "audio": "le fruit"
+          },
+          {
+            "ru": "l'eau",
+            "translit": "LOH",
+            "pt": "",
+            "en": "",
+            "audio": "l'eau"
+          },
+          {
+            "ru": "le lait",
+            "translit": "luh LEH",
+            "pt": "",
+            "en": "",
+            "audio": "le lait"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Du, de la, de l', des: a part of something",
+        "explicacao": "STEP 1: to talk about an unspecified amount of something you eat or drink, use the partitive article: «du» (masculine), «de la» (feminine), «de l'» (vowel), «des» (plural). «Je mange du pain.» «Je bois de la limonade.» «Je bois de l'eau.» «Je mange des légumes.» STEP 2: the partitive is like «some» or «a bit of», which English often leaves out: «I eat bread». STEP 3: with «aimer», «adorer» and «détester», use the definite article: «J'aime le pain.» (I like it in general) vs. «Je mange du pain.» (I'm eating some bread). STEP 4: in the negative, the partitive becomes «de» (or «d'»): «Je ne mange pas de viande.» «Il n'y a pas d'eau.» STEP 5: after an expression of quantity, you also use «de» without an article: «beaucoup de pain», «un peu d'eau», «trop de sel». STEP 6: the verb «manger» changes its spelling with «nous»: «nous mangeons». The verb «boire» is irregular: «je bois, tu bois, il boit, nous buvons, vous buvez, ils boivent».",
+        "comparacao": "in English we say «I eat bread» and «I drink water», with no article. In French the article is required: «je mange du pain», «je bois de l'eau». This is the biggest difference between the two languages at the table.",
+        "tabela": [
+          {
+            "tipo": "masculino",
+            "partitive": "du",
+            "example": "Je mange du pain."
+          },
+          {
+            "tipo": "feminino",
+            "partitive": "de la",
+            "example": "Je mange de la viande."
+          },
+          {
+            "tipo": "vogal (m. ou f.)",
+            "partitive": "de l'",
+            "example": "Je bois de l'eau."
+          },
+          {
+            "tipo": "plural",
+            "partitive": "des",
+            "example": "Je mange des légumes."
+          },
+          {
+            "tipo": "negação",
+            "partitive": "de / d'",
+            "example": "Je ne mange pas de viande."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je mange pain.",
+            "certo": "Je mange du pain.",
+            "motivo": "The partitive is required."
+          },
+          {
+            "errado": "Je ne mange pas du pain.",
+            "certo": "Je ne mange pas de pain.",
+            "motivo": "In the negative, the partitive becomes «de»."
+          },
+          {
+            "errado": "J'aime du fromage.",
+            "certo": "J'aime le fromage.",
+            "motivo": "After «aimer», the definite article."
+          },
+          {
+            "errado": "Je bois la eau.",
+            "certo": "Je bois de l'eau.",
+            "motivo": "Partitive, not definite."
+          }
+        ],
+        "tag": "Articles"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say what you eat and drink for breakfast and lunch, and what you don't eat: «Je mange du… Je bois de l'… Je ne mange pas de…»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Give directions from one place to another in your city, with prepositions and directions."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-009.json",
+  "responsavel": null
+}

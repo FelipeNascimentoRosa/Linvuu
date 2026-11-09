@@ -1,0 +1,179 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 47,
+  "fase": 5,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Describing: adjectives, colors, clothes and shopping: Shopping and prices",
+  "objetivo": "Lesson 12, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 12,
+    "titulo": "Describing: adjectives, colors, clothes and shopping",
+    "objetivo": "Describe people and things with adjectives in the right position, talk about colors and clothes, and shop with prices and numbers above 100.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Shopping and prices",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "Combien ça coûte ?",
+            "translit": "kohn-byan sah KOOT",
+            "pt": "",
+            "en": "",
+            "audio": "Combien ça coûte ?"
+          },
+          {
+            "ru": "Je cherche",
+            "translit": "zhuh SHEHRSH",
+            "pt": "",
+            "en": "",
+            "audio": "Je cherche"
+          },
+          {
+            "ru": "Quelle taille ?",
+            "translit": "kehl TAHY",
+            "pt": "",
+            "en": "",
+            "audio": "Quelle taille ?"
+          },
+          {
+            "ru": "trop cher",
+            "translit": "troh SHEHR",
+            "pt": "",
+            "en": "",
+            "audio": "trop cher"
+          },
+          {
+            "ru": "Je le prends",
+            "translit": "zhuh luh PRAHN",
+            "pt": "",
+            "en": "",
+            "audio": "Je le prends"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Asking, asking the price and deciding",
+        "explicacao": "STEP 1: when you go into a shop: «Bonjour, je cherche une chemise.» or «Je voudrais essayer ce pantalon.» STEP 2: ask the price: «Combien ça coûte ?» or «C'est combien ?». STEP 3: above 100: «cent» (100), «deux cents» (200), «mille» (1000), «deux mille» (2000). The «s» of «cents» disappears when another number follows: «deux cent trois». «Mille» never takes an «s». STEP 4: «C'est cher» (it's expensive), «C'est bon marché» (it's cheap), «C'est trop cher» (too expensive). STEP 5: to decide: «Je le prends» (masculine), «Je la prends» (feminine), «Je les prends» (plural). The pronouns «le/la/les» are the topic of lesson 13. STEP 6: to pay: «Je peux payer par carte ?» STEP 7: size: «Quelle taille faites-vous ?» «Je fais du 38.»",
+        "comparacao": "in English, hundreds are regular too («two hundred», «three hundred»), and 'hundred' never takes an -s. French is regular as well: «deux cents», «trois cents». The only catch is the «s» of «cents», which disappears if another number follows.",
+        "tabela": [
+          {
+            "numero": "100",
+            "spelling": "cent",
+            "example": "C'est cent euros."
+          },
+          {
+            "numero": "200",
+            "spelling": "deux cents",
+            "example": "Ça coûte deux cents euros."
+          },
+          {
+            "numero": "203",
+            "spelling": "deux cent trois",
+            "example": "Ça fait deux cent trois euros."
+          },
+          {
+            "numero": "1 000",
+            "spelling": "mille",
+            "example": "C'est mille euros."
+          },
+          {
+            "numero": "2 500",
+            "spelling": "deux mille cinq cents",
+            "example": "Ça fait deux mille cinq cents euros."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "deux cent euros",
+            "certo": "deux cents euros",
+            "motivo": "«Cents» takes an «s» when it stands alone."
+          },
+          {
+            "errado": "deux cents trois",
+            "certo": "deux cent trois",
+            "motivo": "No «s» when another number follows."
+          },
+          {
+            "errado": "deux milles euros",
+            "certo": "deux mille euros",
+            "motivo": "«Mille» never takes an «s»."
+          },
+          {
+            "errado": "Je veux cette chemise.",
+            "certo": "Je voudrais cette chemise. / Je la prends.",
+            "motivo": "More polite and natural in a shop."
+          }
+        ],
+        "tag": "Shopping"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "Dans une boutique / In a shop",
+        "contexto": "Chloé buys a shirt.",
+        "linhas": [
+          {
+            "personagem": "La vendeuse",
+            "ru": "— Bonjour, vous désirez ?",
+            "en": "— Good morning, how can I help you?",
+            "audio": "Bonjour, vous désirez ?"
+          },
+          {
+            "personagem": "Chloé",
+            "ru": "— Bonjour. Je cherche une chemise blanche.",
+            "en": "— Good morning. I'm looking for a white shirt.",
+            "audio": "Bonjour. Je cherche une chemise blanche."
+          },
+          {
+            "personagem": "La vendeuse",
+            "ru": "— Quelle taille faites-vous ?",
+            "en": "— What size are you?",
+            "audio": "Quelle taille faites-vous ?"
+          },
+          {
+            "personagem": "Chloé",
+            "ru": "— Du trente-huit. Combien ça coûte ?",
+            "en": "— Thirty-eight. How much is it?",
+            "audio": "Du trente-huit. Combien ça coûte ?"
+          },
+          {
+            "personagem": "La vendeuse",
+            "ru": "— Elle coûte quarante-cinq euros.",
+            "en": "— It costs forty-five euros.",
+            "audio": "Elle coûte quarante-cinq euros."
+          },
+          {
+            "personagem": "Chloé",
+            "ru": "— D'accord, je la prends. Je peux payer par carte ?",
+            "en": "— All right, I'll take it. Can I pay by card?",
+            "audio": "D'accord, je la prends. Je peux payer par carte ?"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Act out a purchase with an imaginary shop assistant: ask for a piece of clothing, find out the price and decide to buy it."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Describe a friend in four sentences: height, hair, eyes and clothes."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-012.json",
+  "responsavel": null
+}

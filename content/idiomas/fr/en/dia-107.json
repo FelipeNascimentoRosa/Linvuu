@@ -1,0 +1,174 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 107,
+  "fase": 11,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Travel: hotel, airport and bookings: At the airport",
+  "objetivo": "Lesson 27, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 27,
+    "titulo": "Travel: hotel, airport and bookings",
+    "objetivo": "Book a room, check in, solve problems at the hotel and get by at the airport, with polite questions and requests.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "At the airport",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "le vol",
+            "translit": "luh VOHL",
+            "pt": "",
+            "en": "",
+            "audio": "le vol"
+          },
+          {
+            "ru": "l'embarquement",
+            "translit": "lahn-bahr-kuh-MAHN",
+            "pt": "",
+            "en": "",
+            "audio": "l'embarquement"
+          },
+          {
+            "ru": "la porte",
+            "translit": "lah POHRT",
+            "pt": "",
+            "en": "",
+            "audio": "la porte"
+          },
+          {
+            "ru": "les bagages",
+            "translit": "lay bah-GAHZH",
+            "pt": "",
+            "en": "",
+            "audio": "les bagages"
+          },
+          {
+            "ru": "en retard",
+            "translit": "ahn ruh-TAHR",
+            "pt": "",
+            "en": "",
+            "audio": "en retard"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Useful airport phrases",
+        "explicacao": "STEP 1: at the counter: «Je voudrais enregistrer mes bagages.» «Voici mon billet et mon passeport.» STEP 2: asking: «À quelle heure est l'embarquement ?» «Quelle est la porte d'embarquement ?» STEP 3: delays: «Le vol est en retard.» «Il est retardé de deux heures.» STEP 4: lost luggage: «Mes bagages sont perdus.» «Je n'ai pas retrouvé ma valise.» STEP 5: asking for directions: «Où est la sortie ?» «Où puis-je trouver un taxi ?» STEP 6: customs: «Rien à déclarer.» «Je suis ici pour le tourisme.»",
+        "comparacao": "In English we say «my flight is delayed». French says «mon vol est en retard» (it uses the preposition «en»). «Les bagages» is plural and masculine, and it means all your luggage (English 'luggage' is singular).",
+        "tabela": [
+          {
+            "situation": "counter",
+            "sentence": "Je voudrais enregistrer mes bagages."
+          },
+          {
+            "situation": "boarding",
+            "sentence": "À quelle heure est l'embarquement ?"
+          },
+          {
+            "situation": "delay",
+            "sentence": "Le vol est en retard."
+          },
+          {
+            "situation": "lost luggage",
+            "sentence": "Ma valise est perdue."
+          },
+          {
+            "situation": "customs",
+            "sentence": "Rien à déclarer."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Le vol est atrasé.",
+            "certo": "Le vol est en retard.",
+            "motivo": "French word."
+          },
+          {
+            "errado": "Où est la porte d'embarquement ?",
+            "certo": "Quelle est la porte d'embarquement ?",
+            "motivo": "To identify something, use «quelle»."
+          },
+          {
+            "errado": "Mes bagages est perdu.",
+            "certo": "Mes bagages sont perdus.",
+            "motivo": "Plural."
+          },
+          {
+            "errado": "Je voudrais enregistrer mon bagages.",
+            "certo": "Je voudrais enregistrer mes bagages.",
+            "motivo": "Plural."
+          }
+        ],
+        "tag": "Travel"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "À l'hôtel / At the hotel",
+        "contexto": "Carlos checks in at a hotel in Lyon.",
+        "linhas": [
+          {
+            "personagem": "Carlos",
+            "ru": "— Bonjour. J'ai une réservation au nom de Silva.",
+            "en": "— Good morning. I have a reservation under the name Silva.",
+            "audio": "Bonjour. J'ai une réservation au nom de Silva."
+          },
+          {
+            "personagem": "La réceptionniste",
+            "ru": "— Bonjour, monsieur. Oui, une chambre double pour trois nuits. Pouvez-vous me donner votre passeport ?",
+            "en": "— Good morning, sir. Yes, a double room for three nights. May I have your passport?",
+            "audio": "Bonjour, monsieur. Oui, une chambre double pour trois nuits. Pouvez-vous me donner votre passeport ?"
+          },
+          {
+            "personagem": "Carlos",
+            "ru": "— Voilà. Le petit-déjeuner est compris ?",
+            "en": "— Here you are. Is breakfast included?",
+            "audio": "Voilà. Le petit-déjeuner est compris ?"
+          },
+          {
+            "personagem": "La réceptionniste",
+            "ru": "— Oui, de sept heures à dix heures, au rez-de-chaussée.",
+            "en": "— Yes, from seven to ten, on the ground floor.",
+            "audio": "Oui, de sept heures à dix heures, au rez-de-chaussée."
+          },
+          {
+            "personagem": "Carlos",
+            "ru": "— Parfait. Pourriez-vous m'appeler un taxi demain matin à huit heures ?",
+            "en": "— Perfect. Could you call a taxi for tomorrow morning at eight?",
+            "audio": "Parfait. Pourriez-vous m'appeler un taxi demain matin à huit heures ?"
+          },
+          {
+            "personagem": "La réceptionniste",
+            "ru": "— Bien sûr, monsieur. Voici votre clé, chambre trois cent douze. Bon séjour !",
+            "en": "— Of course, sir. Here is your key, room three hundred and twelve. Enjoy your stay!",
+            "audio": "Bien sûr, monsieur. Voici votre clé, chambre trois cent douze. Bon séjour !"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Check in out loud: name, reservation, passport, breakfast and one request."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Name three hotel problems with «ne… pas» and «ne… plus»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-027.json",
+  "responsavel": null
+}

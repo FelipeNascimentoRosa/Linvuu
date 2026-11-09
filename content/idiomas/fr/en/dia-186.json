@@ -1,0 +1,147 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 186,
+  "fase": 19,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Logical connectors: cause, consequence, opposition: Opposition and concession",
+  "objetivo": "Lesson 47, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 47,
+    "titulo": "Logical connectors: cause, consequence, opposition",
+    "objetivo": "Link ideas with connectors of cause, consequence, opposition and concession, choosing the mood (indicative or subjunctive) that each one requires.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Opposition and concession",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "mais",
+            "translit": "MEH",
+            "pt": "",
+            "en": "",
+            "audio": "mais"
+          },
+          {
+            "ru": "pourtant",
+            "translit": "poor-TAHN",
+            "pt": "",
+            "en": "",
+            "audio": "pourtant"
+          },
+          {
+            "ru": "cependant",
+            "translit": "suh-pahn-DAHN",
+            "pt": "",
+            "en": "",
+            "audio": "cependant"
+          },
+          {
+            "ru": "en revanche",
+            "translit": "ahn ruh-VAHNSH",
+            "pt": "",
+            "en": "",
+            "audio": "en revanche"
+          },
+          {
+            "ru": "au contraire",
+            "translit": "oh kohn-TREHR",
+            "pt": "",
+            "en": "",
+            "audio": "au contraire"
+          },
+          {
+            "ru": "alors que",
+            "translit": "ah-lor KUH",
+            "pt": "",
+            "en": "",
+            "audio": "alors que"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Mais, pourtant, en revanche, bien que",
+        "explicacao": "STEP 1: simple opposition: «mais»: «Il est petit, mais fort.» STEP 2: strong opposition: «pourtant», «cependant», «néanmoins» (formal): «Il a étudié, pourtant il a échoué.» STEP 3: compensation: «en revanche»: «La ville est chère, en revanche elle est belle.» STEP 4: contrast: «alors que» and «tandis que» (indicative): «Il aime le café, alors que sa femme préfère le thé.» STEP 5: «au contraire» denies and reverses: «Il n'est pas triste, au contraire, il est heureux.» STEP 6: concession with the subjunctive: «bien que», «quoique»; with the indicative: «même si»: «Même s'il pleut, je sors.» STEP 7: concession with a noun: «malgré» and «en dépit de»: «Malgré la pluie, je sors.» STEP 8: «malgré que» is common in speech, but avoid it in writing.",
+        "comparacao": "English «although» and «even if» behave much alike, but French splits them by mood: «bien que» + subjunctive, «même si» + indicative. «Même si» never takes the future or the conditional in the «si» clause.",
+        "tabela": [
+          {
+            "connector": "mais",
+            "function": "simple opposition",
+            "example": "Il est petit, mais fort."
+          },
+          {
+            "connector": "pourtant",
+            "function": "strong opposition",
+            "example": "Il a étudié, pourtant il a échoué."
+          },
+          {
+            "connector": "en revanche",
+            "function": "compensation",
+            "example": "Cher, mais en revanche très beau."
+          },
+          {
+            "connector": "alors que",
+            "function": "contrast",
+            "example": "Il aime le thé, alors que je préfère le café."
+          },
+          {
+            "connector": "même si",
+            "function": "concession + indicative",
+            "example": "Même s'il pleut, je sors."
+          },
+          {
+            "connector": "malgré",
+            "function": "concession + noun",
+            "example": "Malgré la pluie, je sors."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Même s'il pleuve, je sors.",
+            "certo": "Même s'il pleut, je sors.",
+            "motivo": "«Même si» + indicative."
+          },
+          {
+            "errado": "Bien qu'il pleut, je sors.",
+            "certo": "Bien qu'il pleuve, je sors.",
+            "motivo": "«Bien que» + subjunctive."
+          },
+          {
+            "errado": "Malgré il pleut, je sors.",
+            "certo": "Malgré la pluie, je sors.",
+            "motivo": "«Malgré» + noun."
+          },
+          {
+            "errado": "Même s'il pleuvrait, je sors.",
+            "certo": "Même s'il pleut, je sors.",
+            "motivo": "No future after «si»."
+          }
+        ],
+        "tag": "Connectors"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Describe a city aloud with its advantages and disadvantages, using eight connectors of opposition."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Give three causes and three consequences in linked sentences."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-047.json",
+  "responsavel": null
+}

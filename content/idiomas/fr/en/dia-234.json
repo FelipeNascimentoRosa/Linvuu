@@ -1,0 +1,147 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 234,
+  "fase": 24,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Meetings, negotiation and oral reporting: Negotiating",
+  "objetivo": "Lesson 59, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 59,
+    "titulo": "Meetings, negotiation and oral reporting",
+    "objetivo": "Take part in a meeting, negotiate with concessions and conditions, and report accurately what was said or decided.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Negotiating",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "à condition que",
+            "translit": "ah kohn-dee-see-ohn KUH",
+            "pt": "provided that",
+            "en": "provided that",
+            "audio": "à condition que"
+          },
+          {
+            "ru": "à moins que",
+            "translit": "ah mwan KUH",
+            "pt": "unless",
+            "en": "unless",
+            "audio": "à moins que"
+          },
+          {
+            "ru": "sauf si",
+            "translit": "sohf SEE",
+            "pt": "unless; except if",
+            "en": "unless; except if",
+            "audio": "sauf si"
+          },
+          {
+            "ru": "un compromis",
+            "translit": "an kohn-proh-MEE",
+            "pt": "a compromise",
+            "en": "a compromise",
+            "audio": "un compromis"
+          },
+          {
+            "ru": "accepter",
+            "translit": "ak-sep-TAY",
+            "pt": "to accept",
+            "en": "to accept",
+            "audio": "accepter"
+          },
+          {
+            "ru": "refuser",
+            "translit": "ruh-few-ZAY",
+            "pt": "to refuse; to decline",
+            "en": "to refuse; to decline",
+            "audio": "refuser"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Give way without losing",
+        "explicacao": "STEP 1: condition: «à condition que» + subjunctive: «J'accepte à condition que vous payiez avant.» STEP 2: exception: «à moins que» + subjunctive (with optional expletive «ne»): «Nous signons, à moins que le prix n'augmente.» STEP 3: «sauf si» + indicative is simpler and more spoken: «Nous signons, sauf si le prix augmente.» STEP 4: concession: «Je veux bien…, mais…», «D'accord, mais seulement si…» STEP 5: counter-proposal in the conditional: «Nous pourrions vous proposer un rabais de dix pour cent.» STEP 6: closing the deal: «Marché conclu !» «Nous sommes parvenus à un accord.» STEP 7: refusing firmly and courteously: «Je regrette, mais nous ne pouvons pas accepter ces conditions.»",
+        "comparacao": "English «provided that» and «unless» take an ordinary verb, but their French equivalents «à condition que» and «à moins que» require the subjunctive. The easy way out is «sauf si» + indicative, which avoids the subjunctive and is perfectly natural.",
+        "tabela": [
+          {
+            "conjunction": "à condition que",
+            "mood": "subjunctive",
+            "example": "J'accepte à condition que vous payiez avant."
+          },
+          {
+            "conjunction": "à moins que",
+            "mood": "subjunctive",
+            "example": "Nous signons, à moins que le prix n'augmente."
+          },
+          {
+            "conjunction": "sauf si",
+            "mood": "indicative",
+            "example": "Nous signons, sauf si le prix augmente."
+          },
+          {
+            "conjunction": "pourvu que",
+            "mood": "subjunctive",
+            "example": "Pourvu que tout soit prêt à temps."
+          },
+          {
+            "conjunction": "bien que",
+            "mood": "subjunctive",
+            "example": "Bien que ce soit cher, j'accepte."
+          },
+          {
+            "conjunction": "au cas où",
+            "mood": "conditional",
+            "example": "Au cas où il refuserait, appelez-moi."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "J'accepte à condition que vous payez.",
+            "certo": "J'accepte à condition que vous payiez.",
+            "motivo": "Subjunctive."
+          },
+          {
+            "errado": "Nous signons sauf si le prix augmentait.",
+            "certo": "Nous signons sauf si le prix augmente.",
+            "motivo": "For the present situation in this example, use the present indicative after «sauf si». Other indicative tenses are possible when the context calls for them."
+          },
+          {
+            "errado": "Au cas où il refuse, appelez-moi.",
+            "certo": "Au cas où il refuserait, appelez-moi.",
+            "motivo": "In careful standard French, «au cas où» is normally followed by the conditional."
+          },
+          {
+            "errado": "Je regrette mais nous pouvons pas.",
+            "certo": "Je regrette, mais nous ne pouvons pas.",
+            "motivo": "Complete negation."
+          }
+        ],
+        "tag": "Negotiation"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Role-play aloud a price negotiation for a service, with «à condition que», «sauf si» and a counter-proposal."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say two sentences with «je propose que» and «je crains que»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-059.json",
+  "responsavel": null
+}

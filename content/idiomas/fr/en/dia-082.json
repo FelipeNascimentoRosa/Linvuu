@@ -1,0 +1,147 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 82,
+  "fase": 9,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Indirect object pronouns and two pronouns: Direct or indirect?",
+  "objetivo": "Lesson 21, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 21,
+    "titulo": "Indirect object pronouns and two pronouns",
+    "objetivo": "Use «lui» and «leur» for «to him/to her» and «to them», recognize the verbs that take «à», and combine two pronouns in simple sentences.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Direct or indirect?",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "écrire",
+            "translit": "ay-KREER",
+            "pt": "",
+            "en": "",
+            "audio": "écrire"
+          },
+          {
+            "ru": "sourire",
+            "translit": "soo-REER",
+            "pt": "",
+            "en": "",
+            "audio": "sourire"
+          },
+          {
+            "ru": "plaire",
+            "translit": "PLEHR",
+            "pt": "",
+            "en": "",
+            "audio": "plaire"
+          },
+          {
+            "ru": "rendre",
+            "translit": "RAHNDR",
+            "pt": "",
+            "en": "",
+            "audio": "rendre"
+          },
+          {
+            "ru": "prêter",
+            "translit": "preh-TAY",
+            "pt": "",
+            "en": "",
+            "audio": "prêter"
+          },
+          {
+            "ru": "montrer",
+            "translit": "mohn-TRAY",
+            "pt": "",
+            "en": "",
+            "audio": "montrer"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Choosing the right pronoun",
+        "explicacao": "STEP 1: ask «what?» or «whom?» without a preposition: direct object (le, la, les). Ask «to whom?»: indirect object (lui, leur). STEP 2: «Je vois Paul» (I see whom?) → «Je le vois.» «Je parle à Paul» (I speak to whom?) → «Je lui parle.» STEP 3: verbs that take a preposition in English: «écouter» (listen to someone → direct: «Je l'écoute»), «attendre» (wait for someone → direct: «Je l'attends»), «regarder» (look at someone → direct), «chercher» (look for → direct). STEP 4: verbs that take «à» in French: «téléphoner à», «répondre à», «obéir à», «ressembler à», «plaire à». STEP 5: «plaire»: «Ça me plaît.» «Ça lui plaît.» «Ce film leur plaît.» STEP 6: for gifts and loans: «Je lui prête mon livre.» «Je leur montre la ville.» STEP 7: in the affirmative imperative, the pronoun goes after the verb with a hyphen: «Donne-lui le livre !» «Dis-lui bonjour !» STEP 8: in the negative imperative, before: «Ne lui donne pas ça.»",
+        "comparacao": "In English «listen to someone», «wait for someone» and «look at someone» take a preposition, but in French «écouter», «attendre» and «regarder» take a direct object, with no «à»; while 'call someone' and 'answer someone' are «téléphoner à» and «répondre à», with «à». Many English speakers get this wrong, for example writing «je lui attends».",
+        "tabela": [
+          {
+            "verb": "écouter qqn",
+            "object": "direct",
+            "example": "Je l'écoute."
+          },
+          {
+            "verb": "attendre qqn",
+            "object": "direct",
+            "example": "Je l'attends."
+          },
+          {
+            "verb": "regarder qqn",
+            "object": "direct",
+            "example": "Je la regarde."
+          },
+          {
+            "verb": "téléphoner à qqn",
+            "object": "indirect",
+            "example": "Je lui téléphone."
+          },
+          {
+            "verb": "répondre à qqn",
+            "object": "indirect",
+            "example": "Je lui réponds."
+          },
+          {
+            "verb": "plaire à qqn",
+            "object": "indirect",
+            "example": "Ça lui plaît."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je lui attends.",
+            "certo": "Je l'attends.",
+            "motivo": "«Attendre» = direct object."
+          },
+          {
+            "errado": "Je lui écoute.",
+            "certo": "Je l'écoute.",
+            "motivo": "«Écouter» = direct object."
+          },
+          {
+            "errado": "Je l'ai téléphoné.",
+            "certo": "Je lui ai téléphoné.",
+            "motivo": "«Téléphoner à»."
+          },
+          {
+            "errado": "Donne le lui le livre.",
+            "certo": "Donne-lui le livre.",
+            "motivo": "Imperative with a hyphen."
+          }
+        ],
+        "tag": "Pronouns"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Answer aloud with pronouns: «Tu écoutes ta mère ? Tu lui téléphones ? Tu attends tes amis ? Tu leur réponds ?»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Replace: «Je donne le livre à Paul. Je parle à Marie et à Julie.»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-021.json",
+  "responsavel": null
+}

@@ -1,0 +1,541 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 112,
+  "fase": 12,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Work, phone and email: Review and practice for lesson 28",
+  "objetivo": "Lesson 28, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 28,
+    "titulo": "Work, phone and email",
+    "objetivo": "Talk about work and your professional routine, answer and make phone calls, schedule meetings and write short emails in French.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 28",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je voudrais parler à Monsieur Martin",
+            "opcoes": [
+              "Je voudrais parler à Monsieur Martin",
+              "Je voudrais parler de Monsieur Martin",
+              "Je voudrais parler avec Monsieur Martin"
+            ],
+            "gabarito": "Je voudrais parler à Monsieur Martin",
+            "explicacao": "Listen to «à».",
+            "id": "fr-028-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ne quittez pas",
+            "opcoes": [
+              "Ne quittez pas",
+              "Ne partez pas",
+              "Ne parlez pas"
+            ],
+            "gabarito": "Ne quittez pas",
+            "explicacao": "Listen to «quittez».",
+            "id": "fr-028-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je travaille dans une banque depuis trois ans",
+            "opcoes": [
+              "Je travaille dans une banque depuis trois ans",
+              "J'ai travaillé dans une banque il y a trois ans",
+              "Je travaillerai dans une banque dans trois ans"
+            ],
+            "gabarito": "Je travaille dans une banque depuis trois ans",
+            "explicacao": "Listen to «depuis».",
+            "id": "fr-028-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «le contrat» mean?",
+            "audio": "le contrat",
+            "opcoes": [
+              "the boss",
+              "ocupado",
+              "to answer (the phone)",
+              "the contract"
+            ],
+            "gabarito": "the contract",
+            "explicacao": "«le contrat» = the contract.",
+            "id": "fr-028-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je suis ingénieur",
+            "respostaEsperada": "Je suis ingénieur",
+            "explicacao": "Write: Je suis ingénieur.",
+            "id": "fr-028-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Pourriez-vous m'envoyer le contrat",
+            "respostaEsperada": "Pourriez-vous m'envoyer le contrat",
+            "explicacao": "Write: Pourriez-vous m'envoyer le contrat.",
+            "id": "fr-028-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «le patron» mean?",
+            "audio": "le patron",
+            "opcoes": [
+              "to call back",
+              "the subject line",
+              "the boss",
+              "the message"
+            ],
+            "gabarito": "the boss",
+            "explicacao": "«le patron» = the boss.",
+            "id": "fr-028-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Cordialement",
+            "respostaEsperada": "Cordialement",
+            "explicacao": "Write: Cordialement.",
+            "id": "fr-028-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Profession: which is correct?",
+            "opcoes": [
+              "Je suis ingénieur.",
+              "Je suis un ingénieur.",
+              "Je suis ingénieur un."
+            ],
+            "gabarito": "Je suis ingénieur.",
+            "explicacao": "No article.",
+            "id": "fr-028-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Attached» in French:",
+            "opcoes": [
+              "ci-joint",
+              "en annexe",
+              "dans-joint"
+            ],
+            "gabarito": "ci-joint",
+            "explicacao": "Email expression.",
+            "id": "fr-028-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «la réunion» mean?",
+            "audio": "la réunion",
+            "opcoes": [
+              "attached",
+              "anexar",
+              "ocupado",
+              "the meeting"
+            ],
+            "gabarito": "the meeting",
+            "explicacao": "«la réunion» = the meeting.",
+            "id": "fr-028-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Neutral email closing:",
+            "opcoes": [
+              "Cordialement,",
+              "Bisous,",
+              "Salut,"
+            ],
+            "gabarito": "Cordialement,",
+            "explicacao": "Neutral formal register.",
+            "id": "fr-028-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Asking for someone on the phone:",
+            "opcoes": [
+              "Je voudrais parler à Monsieur Martin.",
+              "Je veux Monsieur Martin.",
+              "Où est Monsieur Martin ?"
+            ],
+            "gabarito": "Je voudrais parler à Monsieur Martin.",
+            "explicacao": "Polite request.",
+            "id": "fr-028-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je travaille ___ une banque. (em)",
+            "opcoes": [
+              "dans",
+              "pour",
+              "en"
+            ],
+            "gabarito": "dans",
+            "explicacao": "Workplace.",
+            "id": "fr-028-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «décrocher» mean?",
+            "audio": "décrocher",
+            "opcoes": [
+              "the message",
+              "to call back",
+              "to answer (the phone)",
+              "the contract"
+            ],
+            "gabarito": "to answer (the phone)",
+            "explicacao": "«décrocher» = to answer (the phone).",
+            "id": "fr-028-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je travaille ___ une grande entreprise. (for)",
+            "opcoes": [
+              "pour",
+              "dans",
+              "à"
+            ],
+            "gabarito": "pour",
+            "explicacao": "Employer.",
+            "id": "fr-028-e12"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il est ___ réunion. (em)",
+            "opcoes": [
+              "en",
+              "dans",
+              "à"
+            ],
+            "gabarito": "en",
+            "explicacao": "«Être en réunion».",
+            "id": "fr-028-e13"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je vous écris ___ confirmer le rendez-vous.",
+            "opcoes": [
+              "pour",
+              "à",
+              "de"
+            ],
+            "gabarito": "pour",
+            "explicacao": "Purpose.",
+            "id": "fr-028-e14"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «occupé» mean?",
+            "audio": "occupé",
+            "opcoes": [
+              "to hang up",
+              "the office",
+              "kind regards",
+              "ocupado"
+            ],
+            "gabarito": "ocupado",
+            "explicacao": "«occupé» = ocupado.",
+            "id": "fr-028-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Je voudrais laisser un message.»",
+            "opcoes": [
+              "Je",
+              "voudrais",
+              "laisser",
+              "un",
+              "message"
+            ],
+            "gabarito": "Je voudrais laisser un message.",
+            "explicacao": "Polite request.",
+            "id": "fr-028-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Il n'est pas là.»",
+            "opcoes": [
+              "Il",
+              "n'est",
+              "pas",
+              "là"
+            ],
+            "gabarito": "Il n'est pas là.",
+            "explicacao": "Negation.",
+            "id": "fr-028-e16"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «le salaire» mean?",
+            "audio": "le salaire",
+            "opcoes": [
+              "the meeting",
+              "kind regards",
+              "the salary",
+              "to call back"
+            ],
+            "gabarito": "the salary",
+            "explicacao": "«le salaire» = the salary.",
+            "id": "fr-028-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I have worked at a bank for three years. I would like to speak to Mr. Martin. I will send you the contract.",
+            "respostaEsperada": "Je travaille dans une banque depuis trois ans. Je voudrais parler à Monsieur Martin. Je vais lui envoyer le contrat.",
+            "id": "fr-028-e17"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je commence ___ neuf heures. (às)",
+            "opcoes": [
+              "en",
+              "à",
+              "dans"
+            ],
+            "gabarito": "à",
+            "explicacao": "The set time uses «à».",
+            "id": "fr-028-e18"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je ___ aux clients. (respondo)",
+            "opcoes": [
+              "répond",
+              "répondons",
+              "réponds"
+            ],
+            "gabarito": "réponds",
+            "explicacao": "With «je», «répondre» becomes «réponds».",
+            "id": "fr-028-e19"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Je voudrais parler à Monsieur Martin",
+            "opcoes": [
+              "à",
+              "Martin",
+              "parler",
+              "voudrais",
+              "Monsieur",
+              "Je"
+            ],
+            "gabarito": "Je voudrais parler à Monsieur Martin",
+            "explicacao": "Write: Je voudrais parler à Monsieur Martin",
+            "id": "fr-028-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Pouvez-vous lui dire ___ me rappeler ? (de)",
+            "opcoes": [
+              "de",
+              "à",
+              "que"
+            ],
+            "gabarito": "de",
+            "explicacao": "«Dire de» + infinitive.",
+            "id": "fr-028-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Vous trouverez ___ le document. (attached)",
+            "opcoes": [
+              "en plus",
+              "ci-joint",
+              "ci-dessus"
+            ],
+            "gabarito": "ci-joint",
+            "explicacao": "«Ci-joint» = attached.",
+            "id": "fr-028-e21"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je travaille ___ l'informatique. (in the field)",
+            "opcoes": [
+              "pour",
+              "à",
+              "dans"
+            ],
+            "gabarito": "dans",
+            "explicacao": "The sector uses «dans»; the company uses «pour».",
+            "id": "fr-028-e22"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Ne quittez pas",
+            "opcoes": [
+              "pas",
+              "quittez",
+              "Ne"
+            ],
+            "gabarito": "Ne quittez pas",
+            "explicacao": "Write: Ne quittez pas",
+            "id": "fr-028-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which professional email closing is correct?",
+            "opcoes": [
+              "Cordialement,",
+              "Bisous,",
+              "Salut,"
+            ],
+            "gabarito": "Cordialement,",
+            "explicacao": "«Cordialement» is neutral and professional.",
+            "id": "fr-028-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you ask who is on the phone?",
+            "opcoes": [
+              "Qui es-tu ?",
+              "C'est de la part de qui ?",
+              "Comment tu es ?"
+            ],
+            "gabarito": "C'est de la part de qui ?",
+            "explicacao": "It is the polite phrase on the phone.",
+            "id": "fr-028-e24"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «Ne quittez pas» mean?",
+            "opcoes": [
+              "Don't go out",
+              "Do not speak",
+              "Do not hang up"
+            ],
+            "gabarito": "Do not hang up",
+            "explicacao": "On the phone, it asks you to stay on the line.",
+            "id": "fr-028-e25"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Je travaille dans une banque depuis trois ans",
+            "opcoes": [
+              "travaille",
+              "dans",
+              "Je",
+              "ans",
+              "une",
+              "banque",
+              "depuis",
+              "trois"
+            ],
+            "gabarito": "Je travaille dans une banque depuis trois ans",
+            "explicacao": "Write: Je travaille dans une banque depuis trois ans",
+            "id": "fr-028-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which formal email greeting is correct?",
+            "opcoes": [
+              "Bonjour Madame,",
+              "Salut Madame,",
+              "Hé Madame,"
+            ],
+            "gabarito": "Bonjour Madame,",
+            "explicacao": "«Bonjour» + title is the formal opening.",
+            "id": "fr-028-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «My colleague works for a big company.»",
+            "opcoes": [
+              "Mon",
+              "collègue",
+              "travaille",
+              "pour",
+              "une",
+              "grande",
+              "entreprise"
+            ],
+            "gabarito": "Mon collègue travaille pour une grande entreprise.",
+            "explicacao": "«Pour» + company.",
+            "id": "fr-028-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Je suis ingénieur",
+            "opcoes": [
+              "suis",
+              "Je",
+              "ingénieur"
+            ],
+            "gabarito": "Je suis ingénieur",
+            "explicacao": "Write: Je suis ingénieur",
+            "id": "fr-028-x10",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «I am writing to confirm the meeting.»",
+            "opcoes": [
+              "Je",
+              "vous",
+              "écris",
+              "pour",
+              "confirmer",
+              "la",
+              "réunion"
+            ],
+            "gabarito": "Je vous écris pour confirmer la réunion.",
+            "explicacao": "«Pour» + infinitive indicates purpose.",
+            "id": "fr-028-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: My boss is in a meeting. He is not here.",
+            "respostaEsperada": "Mon patron est en réunion. Il n'est pas là.",
+            "id": "fr-028-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: Good morning, madam. I am writing to confirm our meeting.",
+            "respostaEsperada": "Bonjour Madame, je vous écris pour confirmer notre réunion.",
+            "id": "fr-028-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Speak for 1 minute about your ideal job, with schedule, place and tasks."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Present your job and answer a phone call."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-028.json",
+  "responsavel": null
+}

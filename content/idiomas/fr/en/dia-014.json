@@ -1,0 +1,137 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 14,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Present tense of -er verbs, negation and questions: Negation and adverbs",
+  "objetivo": "Lesson 4, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 4,
+    "titulo": "Present tense of -er verbs, negation and questions",
+    "objetivo": "Conjugate -er verbs in the present tense, make negatives with «ne… pas», use the adverbs «bien», «beaucoup» and «très», and ask questions with «où», «qui», «quand», «comment» and «pourquoi».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Negation and adverbs",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "bien",
+            "translit": "BYAN",
+            "pt": "",
+            "en": "",
+            "audio": "bien"
+          },
+          {
+            "ru": "mal",
+            "translit": "MAHL",
+            "pt": "",
+            "en": "",
+            "audio": "mal"
+          },
+          {
+            "ru": "beaucoup",
+            "translit": "boh-KOO",
+            "pt": "",
+            "en": "",
+            "audio": "beaucoup"
+          },
+          {
+            "ru": "un peu",
+            "translit": "an PUH",
+            "pt": "",
+            "en": "",
+            "audio": "un peu"
+          },
+          {
+            "ru": "très",
+            "translit": "TREH",
+            "pt": "",
+            "en": "",
+            "audio": "très"
+          },
+          {
+            "ru": "aussi",
+            "translit": "oh-SEE",
+            "pt": "",
+            "en": "",
+            "audio": "aussi"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Making negatives and adding intensity",
+        "explicacao": "STEP 1: negation wraps around the verb: «ne» before and «pas» after. «Je parle anglais» → «Je ne parle pas anglais.» STEP 2: before a vowel or a silent «h», «ne» becomes «n'»: «Je n'habite pas à Paris.» «Il n'aime pas danser.» STEP 3: in informal speech, the «ne» disappears: «Je parle pas anglais.» In writing, use both parts. STEP 4: the adverb comes after the conjugated verb: «Je parle bien français.» «Elle travaille beaucoup.» STEP 5: «très» comes before an adjective or adverb: «très fatigué», «très bien». With a verb, use «beaucoup»: «J'aime beaucoup le café», never «J'aime très». STEP 6: «un peu» = «a little»: «Je parle un peu français.» STEP 7: to say «me too» use «Moi aussi»; to say «me neither» use «Moi non plus». «J'aime danser. — Moi aussi.» «Je n'aime pas danser. — Moi non plus.»",
+        "comparacao": "In English, «not» goes after the helping verb («I do not speak English»). In French, the negation has two parts, and the second («pas») is the one you hear most. For «me neither», English says «me neither»; French uses «moi non plus», not «moi aussi».",
+        "tabela": [
+          {
+            "rule": "ne… pas",
+            "affirmative": "Je parle anglais.",
+            "negative": "Je ne parle pas anglais."
+          },
+          {
+            "rule": "n' + vowel",
+            "affirmative": "J'habite à Paris.",
+            "negative": "Je n'habite pas à Paris."
+          },
+          {
+            "rule": "adverb after the verb",
+            "affirmative": "Je parle bien.",
+            "negative": "Je ne parle pas bien."
+          },
+          {
+            "rule": "très + adjective",
+            "affirmative": "Elle est très contente.",
+            "negative": "Elle n'est pas très contente."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je ne parle anglais.",
+            "certo": "Je ne parle pas anglais.",
+            "motivo": "The «pas» is missing."
+          },
+          {
+            "errado": "Je parle pas bien français. (in writing)",
+            "certo": "Je ne parle pas bien français.",
+            "motivo": "In writing, use «ne… pas»."
+          },
+          {
+            "errado": "J'aime très le café.",
+            "certo": "J'aime beaucoup le café.",
+            "motivo": "«Très» only with an adjective or adverb."
+          },
+          {
+            "errado": "Je n'aime pas danser. — Moi aussi.",
+            "certo": "— Moi non plus.",
+            "motivo": "A negative answer uses «moi non plus»."
+          }
+        ],
+        "tag": "Negation and questions"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Say what you do and what you don't do: «Je parle…», «Je ne parle pas…», «J'aime beaucoup…», «Je n'aime pas…». Use at least eight sentences."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Conjugate «parler» and «habiter» from memory, with the six pronouns."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-004.json",
+  "responsavel": null
+}

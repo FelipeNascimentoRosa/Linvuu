@@ -1,0 +1,142 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 30,
+  "fase": 3,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "The city: il y a, places and demonstratives: Prepositions of place",
+  "objetivo": "Lesson 8, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 8,
+    "titulo": "The city: il y a, places and demonstratives",
+    "objetivo": "Say what there is in the city with «il y a», locate places with prepositions, and use the demonstratives «ce», «cet», «cette» and «ces».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Prepositions of place",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "devant",
+            "translit": "duh-VAHN",
+            "pt": "",
+            "en": "",
+            "audio": "devant"
+          },
+          {
+            "ru": "derrière",
+            "translit": "deh-RYEHR",
+            "pt": "",
+            "en": "",
+            "audio": "derrière"
+          },
+          {
+            "ru": "à côté de",
+            "translit": "ah koh-tay DUH",
+            "pt": "",
+            "en": "",
+            "audio": "à côté de"
+          },
+          {
+            "ru": "en face de",
+            "translit": "ahn fahs DUH",
+            "pt": "",
+            "en": "",
+            "audio": "en face de"
+          },
+          {
+            "ru": "entre",
+            "translit": "AHNTR",
+            "pt": "",
+            "en": "",
+            "audio": "entre"
+          },
+          {
+            "ru": "près de",
+            "translit": "preh DUH",
+            "pt": "",
+            "en": "",
+            "audio": "près de"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Where is it? Prepositions of place",
+        "explicacao": "STEP 1: the prepositions that end in «de» contract with the article: «à côté du café» (de + le), «en face de la gare», «près de l'hôpital», «loin des magasins» (de + les). STEP 2: the prepositions without «de» are followed directly by the noun: «devant la banque», «derrière l'école», «entre la banque et la poste», «dans la rue», «sur la table», «sous la table». STEP 3: to ask where something is: «Où est la gare ?» or «Où se trouve la gare ?». STEP 4: to answer: «La gare est près de la poste.» STEP 5: simple directions: «à gauche», «à droite», «tout droit». «Tournez à gauche» (turn left). STEP 6: «ici» (here), «là» (there), «là-bas» (over there). STEP 7: «dans» means «inside»; «en» does not replace «dans» with enclosed places: «dans la maison», «en France».",
+        "comparacao": "English «next to», «in front of» and «near» never change shape, but in French the prepositions ending in de merge with the article: «à côté du», «en face de la», «près de l'». Watch out for the missing de.",
+        "tabela": [
+          {
+            "preposition": "devant",
+            "example": "devant la banque",
+            "sense": "in front of"
+          },
+          {
+            "preposition": "derrière",
+            "example": "derrière l'école",
+            "sense": "behind"
+          },
+          {
+            "preposition": "à côté de",
+            "example": "à côté du café",
+            "sense": "next to"
+          },
+          {
+            "preposition": "en face de",
+            "example": "en face de la gare",
+            "sense": "opposite"
+          },
+          {
+            "preposition": "près de / loin de",
+            "example": "près de la poste",
+            "sense": "near / far"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "à côté le café",
+            "certo": "à côté du café",
+            "motivo": "À côté de + le = du."
+          },
+          {
+            "errado": "en face la gare",
+            "certo": "en face de la gare",
+            "motivo": "«de» is missing."
+          },
+          {
+            "errado": "près la poste",
+            "certo": "près de la poste",
+            "motivo": "«de» is missing."
+          },
+          {
+            "errado": "Je tourne à la gauche.",
+            "certo": "Je tourne à gauche.",
+            "motivo": "«À gauche» takes no article."
+          }
+        ],
+        "tag": "Prepositions"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Describe out loud eight places in your neighborhood and where they are: «La banque est à côté de… La gare est en face de…»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Answer: «Qu'est-ce qu'il y a dans votre ville ? Il y a… Il n'y a pas de…»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-008.json",
+  "responsavel": null
+}

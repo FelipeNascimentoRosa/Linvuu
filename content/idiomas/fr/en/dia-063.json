@@ -1,0 +1,165 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 63,
+  "fase": 7,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "The past with «être» and reflexive verbs: Telling about a trip",
+  "objetivo": "Lesson 16, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 16,
+    "titulo": "The past with «être» and reflexive verbs",
+    "objetivo": "Use the passé composé with «être» (verbs of movement and reflexive verbs), make the participle agree, and tell about a trip.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Telling about a trip",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "le voyage",
+            "translit": "luh vwah-YAHZH",
+            "pt": "",
+            "en": "",
+            "audio": "le voyage"
+          },
+          {
+            "ru": "la gare",
+            "translit": "lah GAHR",
+            "pt": "",
+            "en": "",
+            "audio": "la gare"
+          },
+          {
+            "ru": "l'aéroport",
+            "translit": "lah-ay-roh-POHR",
+            "pt": "",
+            "en": "",
+            "audio": "l'aéroport"
+          },
+          {
+            "ru": "le train",
+            "translit": "luh TRAN",
+            "pt": "",
+            "en": "",
+            "audio": "le train"
+          },
+          {
+            "ru": "la valise",
+            "translit": "lah vah-LEEZ",
+            "pt": "",
+            "en": "",
+            "audio": "la valise"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Avoir or être? A practical rule",
+        "explicacao": "STEP 1: use «être» with the verbs of movement and change on the list and with all reflexive verbs. STEP 2: use «avoir» with all the others, and with verbs that have a direct object: «J'ai pris le train.» «J'ai visité Paris.» STEP 3: some verbs change auxiliary when they have an object: «Je suis sorti» (no object) but «J'ai sorti la voiture» (with an object). STEP 4: «descendre», «monter», «rentrer», «sortir»: with an object, they use «avoir». STEP 5: when in doubt, ask: «is there a direct object?» If so, «avoir».",
+        "comparacao": "in English one auxiliary, «have», does everything. French makes you choose: «être» for movement and for reflexive verbs, «avoir» for the rest. Most verbs use «avoir».",
+        "tabela": [
+          {
+            "sentence": "Je suis allé à Lyon.",
+            "auxiliary": "être",
+            "reason": "movement"
+          },
+          {
+            "sentence": "J'ai pris le train.",
+            "auxiliary": "avoir",
+            "reason": "has an object"
+          },
+          {
+            "sentence": "Je me suis levé.",
+            "auxiliary": "être",
+            "reason": "reflexive"
+          },
+          {
+            "sentence": "J'ai visité Paris.",
+            "auxiliary": "avoir",
+            "reason": "has an object"
+          },
+          {
+            "sentence": "Elle est sortie.",
+            "auxiliary": "être",
+            "reason": "no object"
+          },
+          {
+            "sentence": "Elle a sorti son téléphone.",
+            "auxiliary": "avoir",
+            "reason": "has an object"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "J'ai sorti hier soir.",
+            "certo": "Je suis sorti hier soir.",
+            "motivo": "No object: «être»."
+          },
+          {
+            "errado": "Je suis visité Paris.",
+            "certo": "J'ai visité Paris.",
+            "motivo": "With an object: «avoir»."
+          },
+          {
+            "errado": "Je suis pris le train.",
+            "certo": "J'ai pris le train.",
+            "motivo": "With an object: «avoir»."
+          },
+          {
+            "errado": "Nous avons restés.",
+            "certo": "Nous sommes restés.",
+            "motivo": "«Rester» uses «être»."
+          }
+        ],
+        "tag": "Past"
+      },
+      {
+        "tipo": "texto",
+        "min": 8,
+        "titulo": "Un voyage à Lyon / A trip to Lyon",
+        "ru": "Samedi dernier, je suis allé à Lyon avec ma sœur. Nous sommes partis à sept heures et nous sommes arrivés à neuf heures. Nous avons pris un café à la gare. Puis nous avons visité la ville. Le soir, nous sommes rentrés fatigués mais très contents.",
+        "pt": "Last Saturday, I went to Lyon with my sister. We left at seven o'clock and arrived at nine. We had a coffee at the station. Then we visited the city. In the evening, we came back tired but very happy.",
+        "perguntas": [
+          {
+            "pergunta": "Où est allé l'auteur ?",
+            "resposta": "À Lyon."
+          },
+          {
+            "pergunta": "Avec qui est-il allé ?",
+            "resposta": "Avec sa sœur."
+          },
+          {
+            "pergunta": "À quelle heure sont-ils arrivés ?",
+            "resposta": "À neuf heures."
+          },
+          {
+            "pergunta": "Comment sont-ils rentrés ?",
+            "resposta": "Fatigués mais très contents."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Tell about a real or imaginary trip, using «être» and «avoir» in the past."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say: «Elle s'est levée à sept heures. Nous nous sommes couchés tard.»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-016.json",
+  "responsavel": null
+}

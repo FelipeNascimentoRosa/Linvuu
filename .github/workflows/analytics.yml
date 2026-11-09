@@ -29,9 +29,9 @@ jobs:
         run: |
           npm install --no-save --package-lock=false playwright@1.56.1 @axe-core/playwright@4.14.0
           npx playwright install --with-deps chromium
-      - name: Consentimento, recusa, revogação e acessibilidade nos três idiomas
+      - name: Consentimento, recusa, revogação e acessibilidade nos dois idiomas
         run: node scripts/testar-analytics-browser.mjs
-      - name: Consentimento dos pixels Meta e TikTok nos três idiomas sem enviar dados
+      - name: Consentimento dos pixels Meta e TikTok nos dois idiomas sem enviar dados
         run: node scripts/testar-meta-pixel-browser.mjs
       - name: Confirmar ingestão com um único evento técnico identificado como teste
         if: github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.head.ref == 'gpt/website-apk'

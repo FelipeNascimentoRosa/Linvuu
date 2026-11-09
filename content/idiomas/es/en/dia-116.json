@@ -1,0 +1,503 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 116,
+  "fase": 12,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "The polite conditional: Review and practice of lesson 29",
+  "objetivo": "Lesson 29, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 29,
+    "titulo": "The polite conditional",
+    "objetivo": "Form the simple conditional (regular and the ten irregulars) and use it to ask for things politely («¿Podría…?», «Me gustaría…», «Querría…»), to give advice («Deberías…», «Yo que tú…»), and to express wishes, without mixing up «pedir» and «preguntar».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 29",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "¿Podría ayudarme, por favor?",
+            "opcoes": [
+              "[misto] ¿Podría ayudarme, por favor?",
+              "[misto] ¿Podrías ayudarme, por favor?",
+              "[misto] ¿Puede ayudarme, por favor?"
+            ],
+            "gabarito": "[misto] ¿Podría ayudarme, por favor?",
+            "explicacao": "Listen for «podría»: the conditional of «poder», with «usted».",
+            "id": "es-029-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Me gustaría un café con leche",
+            "opcoes": [
+              "[misto] Me gustaría un café con leche",
+              "[misto] Me gusta un café con leche",
+              "[misto] Me gustó un café con leche"
+            ],
+            "gabarito": "[misto] Me gustaría un café con leche",
+            "explicacao": "Listen for the «-ría» of «gustaría».",
+            "id": "es-029-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Yo que tú, hablaría con ella",
+            "opcoes": [
+              "[misto] Yo que tú, hablaría con ella",
+              "[misto] Yo que tú, hablo con ella",
+              "[misto] Yo que tú, hablé con ella"
+            ],
+            "gabarito": "[misto] Yo que tú, hablaría con ella",
+            "explicacao": "Listen for the conditional «hablaría».",
+            "id": "es-029-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Tendría una habitación tranquila",
+            "respostaEsperada": "Tendría una habitación tranquila",
+            "explicacao": "Write: Tendría una habitación tranquila. The stem is «tendr-» and the accent is on the «í».",
+            "id": "es-029-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "¿Te importaría cerrar la ventana?",
+            "respostaEsperada": "¿Te importaría cerrar la ventana?",
+            "explicacao": "Write: ¿Te importaría cerrar la ventana?",
+            "id": "es-029-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Of course. Is there a problem?»",
+            "opcoes": [
+              "supuesto.",
+              "problema?",
+              "Por",
+              "algún",
+              "¿Hay"
+            ],
+            "gabarito": "Por supuesto. ¿Hay algún problema?",
+            "explicacao": "Write: Por supuesto. ¿Hay algún problema?",
+            "id": "es-029-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Te pido un favor",
+            "respostaEsperada": "Te pido un favor",
+            "explicacao": "Write: Te pido un favor. With «favor», the verb is «pedir».",
+            "id": "es-029-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Buenas tardes, señor Ruiz. ¿En qué puedo ayudarle?",
+            "respostaEsperada": "Buenas tardes, señor Ruiz. ¿En qué puedo ayudarle?",
+            "explicacao": "Good afternoon, Mr. Ruiz. How can I help you?",
+            "id": "es-029-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «yo» conditional of «hacer»?",
+            "opcoes": [
+              "[misto] haría",
+              "[misto] haceria",
+              "[misto] haré"
+            ],
+            "gabarito": "[misto] haría",
+            "explicacao": "The stem is «har-», with the ending «-ía».",
+            "id": "es-029-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «tú» conditional of «poder»?",
+            "opcoes": [
+              "[misto] podrías",
+              "[misto] podrás",
+              "[misto] podías"
+            ],
+            "gabarito": "[misto] podrías",
+            "explicacao": "The stem is «podr-», with the ending «-ías».",
+            "id": "es-029-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which verb is used to request a favor?",
+            "opcoes": [
+              "[misto] pedir",
+              "[misto] preguntar",
+              "[misto] pedir por"
+            ],
+            "gabarito": "[misto] pedir",
+            "explicacao": "«Preguntar» means to ask a question; «pedir» means to request.",
+            "id": "es-029-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Por supuesto. ¿Hay algún problema?",
+            "respostaEsperada": "Por supuesto. ¿Hay algún problema?",
+            "explicacao": "Of course. Is there a problem?",
+            "id": "es-029-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the most polite way to ask a stranger for the key?",
+            "opcoes": [
+              "[misto] ¿Podría darme la llave, por favor?",
+              "[misto] Dame la llave.",
+              "[misto] ¿Me das la llave?"
+            ],
+            "gabarito": "[misto] ¿Podría darme la llave, por favor?",
+            "explicacao": "The conditional and «por favor» mark the courtesy.",
+            "id": "es-029-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «If I were you, I'd wait»?",
+            "opcoes": [
+              "[misto] Yo que tú, esperaría.",
+              "[misto] Yo que tú, espero.",
+              "[misto] Yo que tú, esperaré."
+            ],
+            "gabarito": "[misto] Yo que tú, esperaría.",
+            "explicacao": "After «yo que tú», use the conditional.",
+            "id": "es-029-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's an auto repair shop called in Spanish?",
+            "opcoes": [
+              "[misto] el taller",
+              "[misto] la oficina",
+              "[misto] el trabajo"
+            ],
+            "gabarito": "[misto] el taller",
+            "explicacao": "«Oficina» means office.",
+            "id": "es-029-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Buenas tardes. Me gustaría hablar de la habitación.",
+            "respostaEsperada": "Buenas tardes. Me gustaría hablar de la habitación.",
+            "explicacao": "Good afternoon. I'd like to talk about the room.",
+            "id": "es-029-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ ayudarme, por favor? (usted, poder, conditional)",
+            "opcoes": [
+              "[misto] ¿Podría",
+              "[misto] ¿Puedo",
+              "[misto] ¿Podrá"
+            ],
+            "gabarito": "[misto] ¿Podría",
+            "explicacao": "The conditional is the most polite.",
+            "id": "es-029-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «There's quite a bit of noise at night. Would it be possible to switch rooms?»",
+            "opcoes": [
+              "por",
+              "cambiar",
+              "habitación?",
+              "de",
+              "bastante",
+              "noche.",
+              "la",
+              "Hay",
+              "ruido",
+              "posible",
+              "¿Sería"
+            ],
+            "gabarito": "Hay bastante ruido por la noche. ¿Sería posible cambiar de habitación?",
+            "explicacao": "Write: Hay bastante ruido por la noche. ¿Sería posible cambiar de habitación?",
+            "id": "es-029-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Me ___ conocer Sevilla. (encantar, conditional)",
+            "opcoes": [
+              "[misto] encantaría",
+              "[misto] encantará",
+              "[misto] encantó"
+            ],
+            "gabarito": "[misto] encantaría",
+            "explicacao": "For a wish, use the conditional.",
+            "id": "es-029-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ dormir más. (tú, deber, conditional)",
+            "opcoes": [
+              "[misto] Deberías",
+              "[misto] Debes",
+              "[misto] Deberás"
+            ],
+            "gabarito": "[misto] Deberías",
+            "explicacao": "The conditional softens the advice.",
+            "id": "es-029-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Te ___ un favor. (pedir)",
+            "opcoes": [
+              "[misto] pido",
+              "[misto] pregunto",
+              "[misto] digo"
+            ],
+            "gabarito": "[misto] pido",
+            "explicacao": "«Pedir» means to request.",
+            "id": "es-029-e16"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «¿Podría darme la llave, por favor?»",
+            "opcoes": [
+              "¿Podría",
+              "darme",
+              "la",
+              "llave,",
+              "por",
+              "favor?"
+            ],
+            "gabarito": "¿Podría darme la llave, por favor?",
+            "explicacao": "The pronoun attaches to the infinitive.",
+            "id": "es-029-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Hay bastante ruido por la noche. ¿Sería posible cambiar de habitación?",
+            "respostaEsperada": "Hay bastante ruido por la noche. ¿Sería posible cambiar de habitación?",
+            "explicacao": "There's quite a bit of noise at night. Would it be possible to switch rooms?",
+            "id": "es-029-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Yo que tú, hablaría con ella.»",
+            "opcoes": [
+              "Yo",
+              "que",
+              "tú,",
+              "hablaría",
+              "con",
+              "ella."
+            ],
+            "gabarito": "Yo que tú, hablaría con ella.",
+            "explicacao": "The formula comes before the conditional.",
+            "id": "es-029-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Perfecto. ¿Podría darme la llave ahora?",
+            "respostaEsperada": "Perfecto. ¿Podría darme la llave ahora?",
+            "explicacao": "Perfect. Could you give me the key now?",
+            "id": "es-029-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I'd like to speak with the director, please.",
+            "respostaEsperada": "[misto] Querría hablar con la directora, por favor.",
+            "id": "es-029-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tú ___ dormir más. (deber, gentle advice)",
+            "opcoes": [
+              "[misto] debes",
+              "[misto] deberás",
+              "[pronuncia] deh-beh-REE-as"
+            ],
+            "gabarito": "[pronuncia] deh-beh-REE-as",
+            "explicacao": "The conditional softens the advice: «deberías».",
+            "id": "es-029-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Me ___ ir contigo. (encantar)",
+            "opcoes": [
+              "[misto] encantó",
+              "[misto] encantaría",
+              "[misto] encantará"
+            ],
+            "gabarito": "[misto] encantaría",
+            "explicacao": "«Me encantaría» expresses a polite wish.",
+            "id": "es-029-e21"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Let me check. I'd have a quiet room on the second floor.»",
+            "opcoes": [
+              "Déjeme",
+              "ver.",
+              "en",
+              "tranquila",
+              "una",
+              "piso.",
+              "habitación",
+              "Tendría",
+              "el",
+              "segundo"
+            ],
+            "gabarito": "Déjeme ver. Tendría una habitación tranquila en el segundo piso.",
+            "explicacao": "Write: Déjeme ver. Tendría una habitación tranquila en el segundo piso.",
+            "id": "es-029-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Nosotros ___ más tiempo. (querer)",
+            "opcoes": [
+              "[misto] querríamos",
+              "[misto] querraríamos",
+              "[misto] queríamos"
+            ],
+            "gabarito": "[misto] querríamos",
+            "explicacao": "«Querer» drops the vowel: «querr-» + «-íamos».",
+            "id": "es-029-e22"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Pedro, ¿___ cerrar la ventana?",
+            "opcoes": [
+              "[misto] te importa",
+              "[misto] te importaría",
+              "[misto] te importó"
+            ],
+            "gabarito": "[misto] te importaría",
+            "explicacao": "«¿Te importaría…?» is a polite request.",
+            "id": "es-029-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which verb is used to ask for information?",
+            "opcoes": [
+              "[misto] pedir",
+              "[misto] rogar",
+              "[misto] preguntar"
+            ],
+            "gabarito": "[misto] preguntar",
+            "explicacao": "«Preguntar» is for asking a question; «pedir» is for requesting something.",
+            "id": "es-029-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Claro. Aquí tiene. Muchas gracias por su paciencia.",
+            "respostaEsperada": "Claro. Aquí tiene. Muchas gracias por su paciencia.",
+            "explicacao": "Of course. Here you go. Thank you very much for your patience.",
+            "id": "es-029-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I'd like a coffee»?",
+            "opcoes": [
+              "[misto] Gustaría me un café.",
+              "[misto] Me gustaría un café.",
+              "[misto] Me gusto un café."
+            ],
+            "gabarito": "[misto] Me gustaría un café.",
+            "explicacao": "«Me gustaría» + what you want.",
+            "id": "es-029-e25"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Déjeme ver. Tendría una habitación tranquila en el segundo piso.",
+            "respostaEsperada": "Déjeme ver. Tendría una habitación tranquila en el segundo piso.",
+            "explicacao": "Let me check. I'd have a quiet room on the second floor.",
+            "id": "es-029-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «nosotros» conditional of «hablar»?",
+            "opcoes": [
+              "[misto] hablaremos",
+              "[misto] hablariamos",
+              "[misto] hablaríamos"
+            ],
+            "gabarito": "[misto] hablaríamos",
+            "explicacao": "Infinitive + «-íamos», with an accent on the «í».",
+            "id": "es-029-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «¿Le importaría hablar más bajo?»",
+            "opcoes": [
+              "¿Le",
+              "importaría",
+              "hablar",
+              "más",
+              "bajo?"
+            ],
+            "gabarito": "¿Le importaría hablar más bajo?",
+            "explicacao": "After «importaría» comes the infinitive.",
+            "id": "es-029-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Deberías dormir más.»",
+            "opcoes": [
+              "Deberías",
+              "dormir",
+              "más."
+            ],
+            "gabarito": "Deberías dormir más.",
+            "explicacao": "Gentle advice with the conditional of «deber».",
+            "id": "es-029-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I'd like a quiet room, please. (with «me gustaría»)",
+            "respostaEsperada": "[misto] Me gustaría una habitación tranquila, por favor.",
+            "id": "es-029-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: In your place, I would wait a bit. (with «En tu lugar»)",
+            "respostaEsperada": "[misto] En tu lugar, esperaría un poco.",
+            "id": "es-029-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Write out, and say, five sentences asking politely for something from a receptionist, a teacher, and a neighbor. Use the conditional in all of them."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Ask politely for a piece of information, a favor, and a key. Then give two pieces of advice with «Deberías» and «Yo que tú»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-029.json",
+  "responsavel": null
+}

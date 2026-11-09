@@ -1,0 +1,161 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 153,
+  "fase": 16,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "The plus-que-parfait: the past of the past: Forming the plus-que-parfait",
+  "objetivo": "Lesson 39, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 39,
+    "titulo": "The plus-que-parfait: the past of the past",
+    "objetivo": "Form and use the plus-que-parfait to tell what had already happened before another past event, and to put the events of a story in order.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Forming the plus-que-parfait",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "déjà",
+            "translit": "day-ZHAH",
+            "pt": "",
+            "en": "",
+            "audio": "déjà"
+          },
+          {
+            "ru": "avant",
+            "translit": "ah-VAHN",
+            "pt": "",
+            "en": "",
+            "audio": "avant"
+          },
+          {
+            "ru": "déjà parti",
+            "translit": "day-zhah par-TEE",
+            "pt": "",
+            "en": "",
+            "audio": "déjà parti"
+          },
+          {
+            "ru": "pas encore",
+            "translit": "pah zahn-KOR",
+            "pt": "",
+            "en": "",
+            "audio": "pas encore"
+          },
+          {
+            "ru": "quand",
+            "translit": "KAHN",
+            "pt": "",
+            "en": "",
+            "audio": "quand"
+          },
+          {
+            "ru": "lorsque",
+            "translit": "lors-KUH",
+            "pt": "",
+            "en": "",
+            "audio": "lorsque"
+          },
+          {
+            "ru": "dès que",
+            "translit": "deh KUH",
+            "pt": "",
+            "en": "",
+            "audio": "dès que"
+          },
+          {
+            "ru": "après que",
+            "translit": "ah-preh KUH",
+            "pt": "",
+            "en": "",
+            "audio": "après que"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "J'avais mangé, j'étais parti",
+        "explicacao": "STEP 1: the plus-que-parfait is formed with the IMPARFAIT of «avoir» or «être» + past participle: «j'avais mangé», «tu avais fini», «il était parti», «nous étions arrivés». STEP 2: the choice of auxiliary is the same as in the passé composé: «aller, venir, arriver, partir, entrer, sortir, rester, naître, mourir» and pronominal verbs take «être». STEP 3: with «être», the participle agrees: «elle était partie», «ils étaient arrivés». STEP 4: the plus-que-parfait marks what happened BEFORE another past event: «Quand je suis arrivé, il était déjà parti.» STEP 5: helpful adverbs: «déjà, pas encore, enfin, finalement». STEP 6: negation: «Je n'avais pas mangé.» «Il n'était pas encore arrivé.» STEP 7: pronouns go before the auxiliary: «Je l'avais vu.» «Je ne l'avais jamais vu.» STEP 8: question: «Avais-tu déjà mangé ?» «Est-ce qu'il était déjà parti ?»",
+        "comparacao": "in English the past perfect is «I had eaten». French builds it the same way, with the imparfait of «avoir»: «j'avais mangé». It is the direct equivalent of «I had eaten», and it is used very often.",
+        "tabela": [
+          {
+            "person": "je",
+            "avoir": "j'avais mangé",
+            "etre": "j'étais parti(e)"
+          },
+          {
+            "person": "tu",
+            "avoir": "tu avais mangé",
+            "etre": "tu étais parti(e)"
+          },
+          {
+            "person": "il / elle",
+            "avoir": "il avait mangé",
+            "etre": "il était parti / elle était partie"
+          },
+          {
+            "person": "nous",
+            "avoir": "nous avions mangé",
+            "etre": "nous étions partis"
+          },
+          {
+            "person": "vous",
+            "avoir": "vous aviez mangé",
+            "etre": "vous étiez parti(s)"
+          },
+          {
+            "person": "ils / elles",
+            "avoir": "ils avaient mangé",
+            "etre": "ils étaient partis / elles étaient parties"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Quand je suis arrivé, il est déjà parti.",
+            "certo": "Quand je suis arrivé, il était déjà parti.",
+            "motivo": "Before another past event: plus-que-parfait."
+          },
+          {
+            "errado": "J'avais allé à Paris.",
+            "certo": "J'étais allé à Paris.",
+            "motivo": "«Aller» uses «être»."
+          },
+          {
+            "errado": "Elle était parti.",
+            "certo": "Elle était partie.",
+            "motivo": "Agreement."
+          },
+          {
+            "errado": "J'ai avais mangé.",
+            "certo": "J'avais mangé.",
+            "motivo": "One auxiliary only."
+          }
+        ],
+        "tag": "Past"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say out loud five things you had already done before starting your day today."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Tell out loud a past event with setting and action."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-039.json",
+  "responsavel": null
+}

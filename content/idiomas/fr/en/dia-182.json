@@ -1,0 +1,147 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 182,
+  "fase": 19,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Subjunctive: emotions, doubts and conjunctions: Conjunctions with the subjunctive",
+  "objetivo": "Lesson 46, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 46,
+    "titulo": "Subjunctive: emotions, doubts and conjunctions",
+    "objetivo": "Use the subjonctif after verbs of emotion, doubt and negative opinion, and after conjunctions such as «bien que», «avant que», «à moins que» and «sans que»; tell the subjunctive from the indicative.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Conjunctions with the subjunctive",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "bien que",
+            "translit": "bee-an KUH",
+            "pt": "",
+            "en": "",
+            "audio": "bien que"
+          },
+          {
+            "ru": "avant que",
+            "translit": "ah-vahn KUH",
+            "pt": "",
+            "en": "",
+            "audio": "avant que"
+          },
+          {
+            "ru": "à moins que",
+            "translit": "ah mwan KUH",
+            "pt": "",
+            "en": "",
+            "audio": "à moins que"
+          },
+          {
+            "ru": "sans que",
+            "translit": "sahn KUH",
+            "pt": "",
+            "en": "",
+            "audio": "sans que"
+          },
+          {
+            "ru": "pourvu que",
+            "translit": "poor-vew KUH",
+            "pt": "",
+            "en": "",
+            "audio": "pourvu que"
+          },
+          {
+            "ru": "jusqu'à ce que",
+            "translit": "zhews-kah suh KUH",
+            "pt": "",
+            "en": "",
+            "audio": "jusqu'à ce que"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Bien que, avant que, sans que",
+        "explicacao": "STEP 1: some conjunctions ALWAYS take the subjunctive: «bien que» (although), «quoique» (although), «avant que» (before), «jusqu'à ce que» (until), «pour que / afin que» (so that), «sans que» (without), «à moins que» (unless), «à condition que» (provided that), «pourvu que» (as long as), «de peur que» (for fear that). STEP 2: «Bien qu'il pleuve, je sors.» «Avant qu'il parte, je lui parle.» «Je reste jusqu'à ce que tu viennes.» STEP 3: «sans que» requires different subjects; with the same subject, use «sans» + infinitive: «Il part sans dire au revoir.» × «Il part sans que je le sache.» STEP 4: «avant que» with the same subject: «avant de» + infinitive: «Avant de partir, je ferme.» × «Avant qu'il parte, je ferme.» STEP 5: the conjunction «après que» takes the INDICATIVE: «Après qu'il est parti, je suis sorti.» STEP 6: «parce que», «puisque», «alors que» take the indicative. STEP 7: the (formal) expletive «ne» may appear after «avant que», «à moins que» and «de peur que»: «Avant qu'il ne parte.» STEP 8: an example with nuance: «Bien qu'il soit riche, il est malheureux.»",
+        "comparacao": "since English hardly shows the subjunctive, you have to learn which French conjunctions trigger it: «bien que» (although) and «avant que» (before) always do, as in «bien qu'il pleuve» and «avant qu'il arrive». The trap is «après que», which takes the indicative, as logic suggests («after he arrived»), although many native speakers mistakenly use the subjunctive.",
+        "tabela": [
+          {
+            "conjunction": "bien que / quoique",
+            "sense": "although",
+            "example": "Bien qu'il pleuve, je sors."
+          },
+          {
+            "conjunction": "avant que",
+            "sense": "before",
+            "example": "Avant qu'il parte, je lui parle."
+          },
+          {
+            "conjunction": "jusqu'à ce que",
+            "sense": "until",
+            "example": "Je reste jusqu'à ce que tu viennes."
+          },
+          {
+            "conjunction": "sans que",
+            "sense": "without",
+            "example": "Il part sans que je le sache."
+          },
+          {
+            "conjunction": "à moins que",
+            "sense": "unless",
+            "example": "Je viens, à moins qu'il pleuve."
+          },
+          {
+            "conjunction": "après que",
+            "sense": "after (indicative)",
+            "example": "Après qu'il est parti, je suis sorti."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Bien qu'il pleut, je sors.",
+            "certo": "Bien qu'il pleuve, je sors.",
+            "motivo": "«Bien que» + subjunctive."
+          },
+          {
+            "errado": "Avant qu'il part, je lui parle.",
+            "certo": "Avant qu'il parte, je lui parle.",
+            "motivo": "«Avant que» + subjunctive."
+          },
+          {
+            "errado": "Il part sans que dire au revoir.",
+            "certo": "Il part sans dire au revoir.",
+            "motivo": "Same subject: infinitive."
+          },
+          {
+            "errado": "Après qu'il soit parti, je suis sorti.",
+            "certo": "Après qu'il est parti, je suis sorti.",
+            "motivo": "«Après que» + indicative."
+          }
+        ],
+        "tag": "Subjunctive"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Say aloud eight sentences: «Bien que… Avant que… Jusqu'à ce que… À moins que… Sans que… »"
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Give three opinions with «je pense que» and three with «je ne pense pas que»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-046.json",
+  "responsavel": null
+}

@@ -1,0 +1,161 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 205,
+  "fase": 21,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Environment and society: The environment",
+  "objetivo": "Lesson 52, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 52,
+    "titulo": "Environment and society",
+    "objetivo": "Talk about ecology, climate and social problems, offer solutions and use the imperative and the subjunctive to propose actions.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "The environment",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "l'environnement",
+            "translit": "lahn-vee-roh-nuh-MAHN",
+            "pt": "",
+            "en": "",
+            "audio": "l'environnement"
+          },
+          {
+            "ru": "le réchauffement",
+            "translit": "luh ray-shoh-fuh-MAHN",
+            "pt": "",
+            "en": "",
+            "audio": "le réchauffement"
+          },
+          {
+            "ru": "la pollution",
+            "translit": "lah poh-lew-see-OHN",
+            "pt": "",
+            "en": "",
+            "audio": "la pollution"
+          },
+          {
+            "ru": "les déchets",
+            "translit": "lay day-SHEH",
+            "pt": "",
+            "en": "",
+            "audio": "les déchets"
+          },
+          {
+            "ru": "recycler",
+            "translit": "ruh-see-KLAY",
+            "pt": "",
+            "en": "",
+            "audio": "recycler"
+          },
+          {
+            "ru": "économiser",
+            "translit": "ay-koh-noh-mee-ZAY",
+            "pt": "",
+            "en": "",
+            "audio": "économiser"
+          },
+          {
+            "ru": "gaspiller",
+            "translit": "gas-pee-YAY",
+            "pt": "",
+            "en": "",
+            "audio": "gaspiller"
+          },
+          {
+            "ru": "durable",
+            "translit": "dew-rah-BLUH",
+            "pt": "",
+            "en": "",
+            "audio": "durable"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Il faut protéger la planète",
+        "explicacao": "STEP 1: obligation: «Il faut que nous recyclions.», «On doit économiser l'eau.», «Il est nécessaire que…» STEP 2: prohibition: «Il ne faut pas gaspiller.», «Il est interdit de jeter…» STEP 3: suggestion: «On pourrait prendre le vélo.», «Pourquoi ne pas utiliser les transports en commun ?» STEP 4: cause and consequence (lesson 47): «À cause de la pollution, la santé se dégrade.» STEP 5: hypothetical future: «Si nous ne faisons rien, la température augmentera.» STEP 6: «de plus en plus de» and «de moins en moins de»: «De plus en plus de gens trient leurs déchets.» STEP 7: «ne… que» (only): «Il ne reste que dix ans.» STEP 8: quantity: «beaucoup de», «trop de», «assez de», «peu de».",
+        "comparacao": "English has several words for «trash» (rubbish, garbage, waste). In French, «déchets» is waste in general, «ordures» is household rubbish and «poubelle» is the bin. «Durable» means «sustainable» in ecological contexts, but also «lasting».",
+        "tabela": [
+          {
+            "expression": "il faut que + subj.",
+            "usage": "obligation",
+            "example": "Il faut que nous recyclions."
+          },
+          {
+            "expression": "on pourrait",
+            "usage": "suggestion",
+            "example": "On pourrait prendre le vélo."
+          },
+          {
+            "expression": "si + présent, futur",
+            "usage": "real hypothesis",
+            "example": "Si on ne fait rien, ça empirera."
+          },
+          {
+            "expression": "de plus en plus de",
+            "usage": "aumento",
+            "example": "De plus en plus de gens trient."
+          },
+          {
+            "expression": "de moins en moins de",
+            "usage": "decrease",
+            "example": "De moins en moins de forêts."
+          },
+          {
+            "expression": "ne… que",
+            "usage": "only",
+            "example": "Il ne reste que dix ans."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Il faut que nous recyclons.",
+            "certo": "Il faut que nous recyclions.",
+            "motivo": "Subjunctive."
+          },
+          {
+            "errado": "De plus en plus des gens trient.",
+            "certo": "De plus en plus de gens trient.",
+            "motivo": "«De» without an article."
+          },
+          {
+            "errado": "Si nous ne ferons rien, ça empirera.",
+            "certo": "Si nous ne faisons rien, ça empirera.",
+            "motivo": "No future after «si»."
+          },
+          {
+            "errado": "Il reste seulement que dix ans.",
+            "certo": "Il ne reste que dix ans.",
+            "motivo": "«Ne… que»."
+          }
+        ],
+        "tag": "Environment"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say aloud five things everyone should do for the planet, with «il faut que…»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Give your opinion on an ad, with one argument."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-052.json",
+  "responsavel": null
+}

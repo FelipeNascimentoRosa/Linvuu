@@ -1,0 +1,161 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 193,
+  "fase": 20,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Formal letters and emails: Opening and closing",
+  "objetivo": "Lesson 49, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 49,
+    "titulo": "Formal letters and emails",
+    "objetivo": "Write formal emails and letters in French: greeting, request, complaint, thanks and sign-off in the right register.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Opening and closing",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "Madame, Monsieur",
+            "translit": "mah-DAM, muh-SYUH",
+            "pt": "",
+            "en": "",
+            "audio": "Madame, Monsieur"
+          },
+          {
+            "ru": "Cher Monsieur",
+            "translit": "shehr muh-SYUH",
+            "pt": "",
+            "en": "",
+            "audio": "Cher Monsieur"
+          },
+          {
+            "ru": "je vous écris pour",
+            "translit": "zhuh voo zay-kree POOR",
+            "pt": "",
+            "en": "",
+            "audio": "je vous écris pour"
+          },
+          {
+            "ru": "suite à",
+            "translit": "sweet AH",
+            "pt": "",
+            "en": "",
+            "audio": "suite à"
+          },
+          {
+            "ru": "veuillez",
+            "translit": "vuh-YAY",
+            "pt": "",
+            "en": "",
+            "audio": "veuillez"
+          },
+          {
+            "ru": "cordialement",
+            "translit": "kohr-dyahl-MAHN",
+            "pt": "",
+            "en": "",
+            "audio": "cordialement"
+          },
+          {
+            "ru": "sincères salutations",
+            "translit": "san-sehr sah-lew-tah-see-OHN",
+            "pt": "",
+            "en": "",
+            "audio": "sincères salutations"
+          },
+          {
+            "ru": "pièce jointe",
+            "translit": "pee-ehs ZHWANT",
+            "pt": "",
+            "en": "",
+            "audio": "pièce jointe"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Je me permets de vous écrire",
+        "explicacao": "STEP 1: opening without a name: «Madame, Monsieur,». With a name: «Madame Dupont,» or «Cher Monsieur Martin,». Do not use «Bonjour» in a very formal letter. STEP 2: reason: «Je vous écris pour…», «Je me permets de vous contacter au sujet de…», «Suite à notre conversation téléphonique…» STEP 3: request: «Pourriez-vous m'envoyer…», «Je voudrais savoir si…», «Auriez-vous l'amabilité de…» (conditional = polite). STEP 4: attachment: «Veuillez trouver ci-joint…», «Vous trouverez en pièce jointe…» STEP 5: expecting a reply: «Dans l'attente de votre réponse», «Je reste à votre disposition». STEP 6: formal closing: «Veuillez agréer, Madame, Monsieur, l'expression de mes salutations distinguées.» STEP 7: less rigid closing: «Cordialement», «Bien cordialement», «Sincères salutations». STEP 8: always use «vous» and avoid informal contractions («j'sais pas»).",
+        "comparacao": "in English a formal email ends with «Yours sincerely» or Kind regards. In French, the formula «Veuillez agréer…» is traditional in letters; in everyday work emails, «Cordialement» is the standard. Never use «Bisous» or «À+» in a formal context.",
+        "tabela": [
+          {
+            "situation": "opening (no name)",
+            "formal": "Madame, Monsieur,",
+            "informal": "Salut,"
+          },
+          {
+            "situation": "reason",
+            "formal": "Je vous écris pour…",
+            "informal": "Je t'écris pour…"
+          },
+          {
+            "situation": "request",
+            "formal": "Pourriez-vous m'envoyer…",
+            "informal": "Tu peux m'envoyer…"
+          },
+          {
+            "situation": "attachment",
+            "formal": "Veuillez trouver ci-joint…",
+            "informal": "Voilà le fichier."
+          },
+          {
+            "situation": "to await a reply",
+            "formal": "Dans l'attente de votre réponse",
+            "informal": "Réponds-moi vite."
+          },
+          {
+            "situation": "to close",
+            "formal": "Cordialement",
+            "informal": "Bises"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Salut Madame,",
+            "certo": "Madame,",
+            "motivo": "Formal: no «salut»."
+          },
+          {
+            "errado": "Tu peux m'envoyer le document ?",
+            "certo": "Pourriez-vous m'envoyer le document ?",
+            "motivo": "Formal: conditional and «vous»."
+          },
+          {
+            "errado": "Bisous, Pierre",
+            "certo": "Cordialement, Pierre",
+            "motivo": "Formal: «cordialement»."
+          },
+          {
+            "errado": "Je vous écris à propos de le dossier.",
+            "certo": "Je vous écris à propos du dossier.",
+            "motivo": "«À propos du»."
+          }
+        ],
+        "tag": "Formal register"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say aloud how you would open and close an email to a company."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Give your opinion on a topic, with one argument and one concession."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-049.json",
+  "responsavel": null
+}

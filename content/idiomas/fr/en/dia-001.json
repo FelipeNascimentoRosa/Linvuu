@@ -1,0 +1,505 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 1,
+  "fase": 1,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Sounds, alphabet and first words: The alphabet and first greetings",
+  "objetivo": "Lesson 1, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 1,
+    "titulo": "Sounds, alphabet and first words",
+    "objetivo": "Spell in French, recognize the sounds that English does not have (u, eu, nasal vowels, r), understand silent letters, liaison and elision, and say your first greetings.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "The alphabet and first greetings",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "intro",
+        "min": 3,
+        "texto": "Imagine that you arrive on a street in Paris on a sunny morning. Two people meet and greet each other. Before any rule, you will listen to this scene. Then you will repeat it. This is how a language is learned: first the ear, then the explanation. You already know a lot of French: «restaurant», «menu», «hôtel», «café», «croissant», «boutique», «bonjour». Next to each new word there is an approximate pronunciation in English-style respelling. The «ew» is the French «u»: lips rounded as for «oo», tongue as for «ee». The «uh» is the sound of «eu». The «ahn», the «ohn» and the «an» are nasal vowels. This help does not replace the audio: always listen before you repeat."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Bonjour, Lucas ! / Good morning, Lucas!",
+        "contexto": "Morning, on the street. Camille and Lucas meet and then pass their neighbor, Madame Martin. Just listen and follow the translation: you will learn each word next.",
+        "linhas": [
+          {
+            "personagem": "Camille",
+            "ru": "— Bonjour, Lucas !",
+            "en": "— Good morning, Lucas!",
+            "audio": "Bonjour, Lucas !"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Salut, Camille ! Ça va ?",
+            "en": "— Hi, Camille! How are you?",
+            "audio": "Salut, Camille ! Ça va ?"
+          },
+          {
+            "personagem": "Camille",
+            "ru": "— Ça va bien, merci. Et toi ?",
+            "en": "— Fine, thank you. And you?",
+            "audio": "Ça va bien, merci. Et toi ?"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Ça va bien, merci.",
+            "en": "— Fine, thank you.",
+            "audio": "Ça va bien, merci."
+          },
+          {
+            "personagem": "Madame Martin",
+            "ru": "— Bonjour, Camille ! Bonjour, Lucas !",
+            "en": "— Good morning, Camille! Good morning, Lucas!",
+            "audio": "Bonjour, Camille ! Bonjour, Lucas !"
+          },
+          {
+            "personagem": "Camille",
+            "ru": "— Bonjour, madame !",
+            "en": "— Good morning, madam!",
+            "audio": "Bonjour, madame !"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Bonjour, madame ! Ça va ?",
+            "en": "— Good morning, madam! How are you?",
+            "audio": "Bonjour, madame ! Ça va ?"
+          },
+          {
+            "personagem": "Madame Martin",
+            "ru": "— Ça va bien, merci.",
+            "en": "— Fine, thank you.",
+            "audio": "Ça va bien, merci."
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Au revoir, madame !",
+            "en": "— Goodbye, madam!",
+            "audio": "Au revoir, madame !"
+          },
+          {
+            "personagem": "Madame Martin",
+            "ru": "— Au revoir !",
+            "en": "— Bye!",
+            "audio": "Au revoir !"
+          }
+        ]
+      },
+      {
+        "tipo": "palavras",
+        "min": 7,
+        "itens": [
+          {
+            "ru": "bonjour",
+            "translit": "bohn-ZHOOR",
+            "pt": "",
+            "en": "",
+            "audio": "bonjour"
+          },
+          {
+            "ru": "bonsoir",
+            "translit": "bohn-SWAHR",
+            "pt": "",
+            "en": "",
+            "audio": "bonsoir"
+          },
+          {
+            "ru": "salut",
+            "translit": "sah-LEW",
+            "pt": "",
+            "en": "",
+            "audio": "salut"
+          },
+          {
+            "ru": "au revoir",
+            "translit": "oh ruh-VWAHR",
+            "pt": "",
+            "en": "",
+            "audio": "au revoir"
+          },
+          {
+            "ru": "merci",
+            "translit": "mehr-SEE",
+            "pt": "",
+            "en": "",
+            "audio": "merci"
+          },
+          {
+            "ru": "s'il vous plaît",
+            "translit": "seel voo PLEH",
+            "pt": "",
+            "en": "",
+            "audio": "s'il vous plaît"
+          },
+          {
+            "ru": "de rien",
+            "translit": "duh RYAN",
+            "pt": "",
+            "en": "",
+            "audio": "de rien"
+          },
+          {
+            "ru": "pardon",
+            "translit": "pahr-DOHN",
+            "pt": "",
+            "en": "",
+            "audio": "pardon"
+          },
+          {
+            "ru": "Ça va ?",
+            "translit": "sah VAH",
+            "pt": "",
+            "en": "",
+            "audio": "Ça va ?"
+          },
+          {
+            "ru": "Ça va bien.",
+            "translit": "sah vah BYAN",
+            "pt": "",
+            "en": "",
+            "audio": "Ça va bien."
+          },
+          {
+            "ru": "Et toi ?",
+            "translit": "ay TWAH",
+            "pt": "",
+            "en": "",
+            "audio": "Et toi ?"
+          },
+          {
+            "ru": "madame",
+            "translit": "mah-DAHM",
+            "pt": "",
+            "en": "",
+            "audio": "madame"
+          },
+          {
+            "ru": "monsieur",
+            "translit": "muh-SYUH",
+            "pt": "",
+            "en": "",
+            "audio": "monsieur"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Greeting people: which greeting to use",
+        "explicacao": "STEP 1: «bonjour» (bohn-ZHOOR) works in the morning and during the day. It is polite with everybody: friends, neighbors, shopkeepers. STEP 2: «bonsoir» (bohn-SWAHR) works from late afternoon onward. You only say it when you arrive. STEP 3: «salut» (sa-LEW) is informal. It works for «hi» and also for «bye», but only with friends and family. STEP 4: «au revoir» (oh ruh-VWAHR) is the polite «goodbye» for anyone. STEP 5: to ask how someone is, say «Ça va ?» (sa va). The most common answer is «Ça va bien, merci.» (sa va byan, mehr-SEE). And to return the question, say «Et toi ?» (ay TWAH). STEP 6: when you walk into a shop in France, always say «bonjour». When you leave, say «au revoir» or «merci, au revoir».",
+        "comparacao": "In English, «hi» and «bye» are casual too. In French, «salut» does both jobs, but «bonjour» and «au revoir» are more polite. Saying «bonjour» when you walk into a shop is practically mandatory in French culture.",
+        "exemplos": [
+          {
+            "ru": "Bonjour, madame !",
+            "pt": "Good morning, madam!"
+          },
+          {
+            "ru": "Bonsoir, monsieur !",
+            "pt": "Good evening, sir!"
+          },
+          {
+            "ru": "Salut ! Ça va ?",
+            "pt": "Hi! How are you?"
+          },
+          {
+            "ru": "Ça va bien, merci. Et toi ?",
+            "pt": "Fine, thank you. And you?"
+          },
+          {
+            "ru": "Merci, au revoir !",
+            "pt": "Thank you, bye!"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Salut, madame !",
+            "certo": "Bonjour, madame !",
+            "motivo": "«Salut» is only for friends; with a lady, use «bonjour»."
+          },
+          {
+            "errado": "Bonsoir ! (when leaving)",
+            "certo": "Au revoir !",
+            "motivo": "«Bonsoir» is for arriving. To leave, say «au revoir»."
+          },
+          {
+            "errado": "Bonjour ! (and leaving the shop without saying anything)",
+            "certo": "Merci, au revoir !",
+            "motivo": "In France, saying goodbye when you leave is part of good manners."
+          }
+        ],
+        "tag": "Greetings"
+      },
+      {
+        "tipo": "alfabeto",
+        "min": 8,
+        "grupos": [
+          {
+            "nome": "Parte 1 — A a I",
+            "letras": [
+              {
+                "maiuscula": "A",
+                "minuscula": "a",
+                "som": "name of the letter: «ah»",
+                "ipa": "/a/",
+                "exemplo": "ami",
+                "exemploPt": "friend",
+                "nome": "a"
+              },
+              {
+                "maiuscula": "B",
+                "minuscula": "b",
+                "som": "name of the letter: «bay»",
+                "ipa": "/be/",
+                "exemplo": "bonjour",
+                "exemploPt": "good morning",
+                "nome": "bé"
+              },
+              {
+                "maiuscula": "C",
+                "minuscula": "c",
+                "som": "name of the letter: «say»",
+                "ipa": "/se/",
+                "exemplo": "café",
+                "exemploPt": "café",
+                "nome": "cé"
+              },
+              {
+                "maiuscula": "D",
+                "minuscula": "d",
+                "som": "name of the letter: «day»",
+                "ipa": "/de/",
+                "exemplo": "dix",
+                "exemploPt": "ten",
+                "nome": "dé"
+              },
+              {
+                "maiuscula": "E",
+                "minuscula": "e",
+                "som": "name of the letter: «uh» (rounded lips)",
+                "ipa": "/ə/",
+                "exemplo": "elle",
+                "exemploPt": "she",
+                "nome": "eu"
+              },
+              {
+                "maiuscula": "F",
+                "minuscula": "f",
+                "som": "name of the letter: «eff»",
+                "ipa": "/ɛf/",
+                "exemplo": "fille",
+                "exemploPt": "menina, filha",
+                "nome": "effe"
+              },
+              {
+                "maiuscula": "G",
+                "minuscula": "g",
+                "som": "name of the letter: «zhay»",
+                "ipa": "/ʒe/",
+                "exemplo": "gare",
+                "exemploPt": "station",
+                "nome": "gé"
+              },
+              {
+                "maiuscula": "H",
+                "minuscula": "h",
+                "som": "name of the letter: «ahsh» (the h is never pronounced in words)",
+                "ipa": "/aʃ/",
+                "exemplo": "hôtel",
+                "exemploPt": "hotel",
+                "nome": "ache"
+              },
+              {
+                "maiuscula": "I",
+                "minuscula": "i",
+                "som": "name of the letter: «ee»",
+                "ipa": "/i/",
+                "exemplo": "ici",
+                "exemploPt": "here",
+                "nome": "i"
+              }
+            ]
+          },
+          {
+            "nome": "Parte 2 — J a R",
+            "letras": [
+              {
+                "maiuscula": "J",
+                "minuscula": "j",
+                "som": "name of the letter: «zhee»",
+                "ipa": "/ʒi/",
+                "exemplo": "jour",
+                "exemploPt": "day",
+                "nome": "ji"
+              },
+              {
+                "maiuscula": "K",
+                "minuscula": "k",
+                "som": "name of the letter: «kah»",
+                "ipa": "/ka/",
+                "exemplo": "kilo",
+                "exemploPt": "kilo",
+                "nome": "ka"
+              },
+              {
+                "maiuscula": "L",
+                "minuscula": "l",
+                "som": "name of the letter: «ell»",
+                "ipa": "/ɛl/",
+                "exemplo": "lune",
+                "exemploPt": "lua",
+                "nome": "elle"
+              },
+              {
+                "maiuscula": "M",
+                "minuscula": "m",
+                "som": "name of the letter: «emm»",
+                "ipa": "/ɛm/",
+                "exemplo": "merci",
+                "exemploPt": "thank you",
+                "nome": "emme"
+              },
+              {
+                "maiuscula": "N",
+                "minuscula": "n",
+                "som": "name of the letter: «enn»",
+                "ipa": "/ɛn/",
+                "exemplo": "nom",
+                "exemploPt": "name, surname",
+                "nome": "enne"
+              },
+              {
+                "maiuscula": "O",
+                "minuscula": "o",
+                "som": "name of the letter: «oh»",
+                "ipa": "/o/",
+                "exemplo": "oui",
+                "exemploPt": "yes",
+                "nome": "o"
+              },
+              {
+                "maiuscula": "P",
+                "minuscula": "p",
+                "som": "name of the letter: «pay»",
+                "ipa": "/pe/",
+                "exemplo": "pain",
+                "exemploPt": "bread",
+                "nome": "pé"
+              },
+              {
+                "maiuscula": "Q",
+                "minuscula": "q",
+                "som": "name of the letter: «kew»",
+                "ipa": "/ky/",
+                "exemplo": "quatre",
+                "exemploPt": "four",
+                "nome": "ku"
+              },
+              {
+                "maiuscula": "R",
+                "minuscula": "r",
+                "som": "name of the letter: «ehr» (throaty r)",
+                "ipa": "/ɛʁ/",
+                "exemplo": "rue",
+                "exemploPt": "street",
+                "nome": "erre"
+              }
+            ]
+          },
+          {
+            "nome": "Parte 3 — S a Z",
+            "letras": [
+              {
+                "maiuscula": "S",
+                "minuscula": "s",
+                "som": "name of the letter: «ess»",
+                "ipa": "/ɛs/",
+                "exemplo": "sac",
+                "exemploPt": "bolsa, sacola",
+                "nome": "esse"
+              },
+              {
+                "maiuscula": "T",
+                "minuscula": "t",
+                "som": "name of the letter: «tay»",
+                "ipa": "/te/",
+                "exemplo": "table",
+                "exemploPt": "table",
+                "nome": "té"
+              },
+              {
+                "maiuscula": "U",
+                "minuscula": "u",
+                "som": "name of the letter: «ew» (the French u)",
+                "ipa": "/y/",
+                "exemplo": "une",
+                "exemploPt": "a / one (feminine)",
+                "nome": "u"
+              },
+              {
+                "maiuscula": "V",
+                "minuscula": "v",
+                "som": "name of the letter: «vay»",
+                "ipa": "/ve/",
+                "exemplo": "ville",
+                "exemploPt": "city",
+                "nome": "vé"
+              },
+              {
+                "maiuscula": "W",
+                "minuscula": "w",
+                "som": "name of the letter: «doo-bluh-VAY»",
+                "ipa": "/dubləve/",
+                "exemplo": "wagon",
+                "exemploPt": "wagon",
+                "nome": "double vé"
+              },
+              {
+                "maiuscula": "X",
+                "minuscula": "x",
+                "som": "name of the letter: «eeks»",
+                "ipa": "/iks/",
+                "exemplo": "taxi",
+                "exemploPt": "taxi",
+                "nome": "iks"
+              },
+              {
+                "maiuscula": "Y",
+                "minuscula": "y",
+                "som": "name of the letter: «ee-GREK»",
+                "ipa": "/igʁɛk/",
+                "exemplo": "yaourt",
+                "exemploPt": "yogurt",
+                "nome": "i grec"
+              },
+              {
+                "maiuscula": "Z",
+                "minuscula": "z",
+                "som": "name of the letter: «zehd»",
+                "ipa": "/zɛd/",
+                "exemplo": "zéro",
+                "exemploPt": "zero",
+                "nome": "zède"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Spell your first name and your last name aloud (for example: F-E-L-I-P-E: effe, eu, elle, i, pé, eu). Then say: «Bonjour ! Ça va ? Merci. Au revoir.»",
+        "exemplo": "Bonjour ! Ça va ? Merci. Au revoir."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-001.json",
+  "responsavel": null
+}

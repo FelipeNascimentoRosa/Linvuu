@@ -1,0 +1,186 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 37,
+  "fase": 4,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Aller, the near future, transport and directions: Aller and means of transport",
+  "objetivo": "Lesson 10, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 10,
+    "titulo": "Aller, the near future, transport and directions",
+    "objetivo": "Use «aller» to go to places and talk about plans with the near future, choose a means of transport, and give and ask for directions with the imperative.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Aller and means of transport",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "aller",
+            "translit": "ah-LAY",
+            "pt": "",
+            "en": "",
+            "audio": "aller"
+          },
+          {
+            "ru": "le train",
+            "translit": "luh TRAN",
+            "pt": "",
+            "en": "",
+            "audio": "le train"
+          },
+          {
+            "ru": "le bus",
+            "translit": "luh BEWS",
+            "pt": "",
+            "en": "",
+            "audio": "le bus"
+          },
+          {
+            "ru": "le métro",
+            "translit": "luh may-TROH",
+            "pt": "",
+            "en": "",
+            "audio": "le métro"
+          },
+          {
+            "ru": "la voiture",
+            "translit": "lah vwah-TEWR",
+            "pt": "",
+            "en": "",
+            "audio": "la voiture"
+          },
+          {
+            "ru": "le vélo",
+            "translit": "luh vay-LOH",
+            "pt": "",
+            "en": "",
+            "audio": "le vélo"
+          },
+          {
+            "ru": "à pied",
+            "translit": "ah PYAY",
+            "pt": "",
+            "en": "",
+            "audio": "à pied"
+          },
+          {
+            "ru": "l'avion",
+            "translit": "lah-VYOHN",
+            "pt": "",
+            "en": "",
+            "audio": "l'avion"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Le verbe aller",
+        "explicacao": "STEP 1: «aller» (to go) is irregular: «je vais, tu vas, il/elle/on va, nous allons, vous allez, ils/elles vont». STEP 2: to say where you are going, use «aller à» + place: «Je vais à Paris.» «Je vais au café.» «Je vais à la gare.» «Je vais aux États-Unis.» STEP 3: with feminine countries and with masculine countries that begin with a vowel, use «en»: «Je vais en France.» STEP 4: to go to someone's home or place, use «chez»: «Je vais chez Paul.» «Je vais chez le médecin.» «Je vais chez moi.» STEP 5: for transport, use «en» + enclosed vehicle: «en train», «en voiture», «en avion», «en bus», «en métro»; use «à» with those you ride on: «à vélo», «à moto»; and «à pied» for walking. STEP 6: «Comment est-ce que tu vas au travail ?» → «J'y vais en métro.» (the «y» comes in lesson 14). STEP 7: do not confuse «aller» (to go) with «être» (to be): «Je vais bien» = I'm fine.",
+        "comparacao": "English says «by train», «by car», «on foot». French distinguishes «en» (enclosed vehicles) from «à» (those you ride on): «en train», but «à vélo».",
+        "tabelas": [
+          {
+            "title": "aller",
+            "linhas": [
+              {
+                "pronoun": "je",
+                "form": "vais",
+                "example": "Je vais à Paris."
+              },
+              {
+                "pronoun": "tu",
+                "form": "vas",
+                "example": "Tu vas au café."
+              },
+              {
+                "pronoun": "il / elle / on",
+                "form": "va",
+                "example": "Elle va chez Paul."
+              },
+              {
+                "pronoun": "nous",
+                "form": "allons",
+                "example": "Nous allons en France."
+              },
+              {
+                "pronoun": "vous",
+                "form": "allez",
+                "example": "Vous allez à la gare."
+              },
+              {
+                "pronoun": "ils / elles",
+                "form": "vont",
+                "example": "Ils vont au travail."
+              }
+            ]
+          },
+          {
+            "title": "Getting there",
+            "linhas": [
+              {
+                "middle": "en train, en bus, en métro, en voiture, en avion",
+                "rule": "en + enclosed vehicle",
+                "example": "Je vais en train."
+              },
+              {
+                "middle": "à vélo, à moto",
+                "rule": "à + what you ride",
+                "example": "Je vais à vélo."
+              },
+              {
+                "middle": "à pied",
+                "rule": "a pé",
+                "example": "Nous allons à pied."
+              }
+            ]
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je vais à le café.",
+            "certo": "Je vais au café.",
+            "motivo": "«à + le = au»."
+          },
+          {
+            "errado": "Je vais à la France.",
+            "certo": "Je vais en France.",
+            "motivo": "Feminine countries: «en»."
+          },
+          {
+            "errado": "Je vais à Paul.",
+            "certo": "Je vais chez Paul.",
+            "motivo": "For people, use «chez»."
+          },
+          {
+            "errado": "Je vais par train.",
+            "certo": "Je vais en train.",
+            "motivo": "«En» + vehicle."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say where you are going today, tomorrow and at the weekend, and how you are getting there: «Je vais… en/à…»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "In an imaginary restaurant, order two dishes and a drink out loud, and ask for the bill."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-010.json",
+  "responsavel": null
+}

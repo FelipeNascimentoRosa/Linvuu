@@ -1,0 +1,173 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 97,
+  "fase": 10,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Two pronouns together (se lo): Me lo, te la, nos los",
+  "objetivo": "Lesson 25, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 25,
+    "titulo": "Two pronouns together (se lo)",
+    "objetivo": "Combine the indirect object pronoun with the direct object pronoun in the right order (me lo, te la, nos los), use «se lo, se la, se los, se las» instead of «le lo» and «les lo», write the accent correctly on the infinitive («dárselo», «decírtelo»), join the reflexive with a direct object («me la pongo»), and recognize words that differ between Spain and Latin America.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Me lo, te la, nos los",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "la entrada",
+            "translit": "[pronuncia] la en-TRAH-da",
+            "pt": "the ticket, the entry",
+            "en": "",
+            "audio": "la entrada"
+          },
+          {
+            "ru": "el billete",
+            "translit": "[pronuncia] el bee-LYEH-teh",
+            "pt": "the ticket (Spain); the bill (money)",
+            "en": "",
+            "audio": "el billete"
+          },
+          {
+            "ru": "el móvil",
+            "translit": "[pronuncia] el MOH-beel",
+            "pt": "the cell phone (Spain)",
+            "en": "",
+            "audio": "el móvil"
+          },
+          {
+            "ru": "el ordenador",
+            "translit": "[pronuncia] el or-deh-nah-DOR",
+            "pt": "the computer (Spain)",
+            "en": "",
+            "audio": "el ordenador"
+          },
+          {
+            "ru": "el sobre",
+            "translit": "[pronuncia] el SOH-breh",
+            "pt": "the envelope",
+            "en": "",
+            "audio": "el sobre"
+          },
+          {
+            "ru": "la factura",
+            "translit": "[pronuncia] la fak-TOO-ra",
+            "pt": "the receipt, the invoice",
+            "en": "",
+            "audio": "la factura"
+          },
+          {
+            "ru": "traer",
+            "translit": "[pronuncia] trah-EHR",
+            "pt": "to bring",
+            "en": "",
+            "audio": "traer"
+          },
+          {
+            "ru": "entregar",
+            "translit": "[pronuncia] en-treh-GAR",
+            "pt": "to hand over, to deliver",
+            "en": "",
+            "audio": "entregar"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Indirect object + direct object: pronoun order",
+        "explicacao": "STEP 1: a sentence can have both complements: «Doy el libro a Ana». The book is the direct object (what?) and Ana is the indirect object (to whom?). If you swap both for pronouns, the sentence becomes «Se lo doy». STEP 2: there's just one rule: the person pronoun (the indirect one) comes first, then the thing pronoun (the direct one). In other words, «me, te, nos, os» come before «lo, la, los, las». STEP 3: «¿Me das el libro? — Sí, te lo doy». Here «te» is the person I'm giving it to (you) and «lo» is «el libro». STEP 4: nothing goes between the two pronouns, and they never flip order: «me lo», never «lo me». STEP 5: «lo, la, los, las» agree with the thing, not the person. A feminine plural thing is always «las», whoever the person is: «Me las das», «Te las doy». STEP 6: the position is the usual one, before the conjugated verb: «Me lo dices», «No te lo digo», «Nos las trae». STEP 7: in the compound tenses, both pronouns go before «haber»: «Te lo he dicho». In the indefinido: «Me lo dio», «Te la mandé». STEP 8: English doesn't have a contracted double-pronoun form either, but it solves the same two-pronoun problem differently: when both the person and the thing are pronouns, English usually needs \"to\" — \"I'll give it to you\" — rather than stacking two bare pronouns the way Spanish does.",
+        "comparacao": "Some English speakers do say \"give me it\" or \"give it me\" in certain dialects, but it's regional and never the safe default; the standard form keeps the preposition. Spanish's «me lo», «te la» pattern — person-pronoun immediately before thing-pronoun, with no preposition at all — has no everyday English equivalent, so it takes real practice before it feels automatic. This combination, used constantly in everyday Spanish, is one of the biggest new habits at this level.",
+        "exemplos": [
+          {
+            "ru": "¿Me prestas el cargador? — Sí, te lo presto.",
+            "pt": "Will you lend me the charger? Yes, I'll lend it to you."
+          },
+          {
+            "ru": "Quiero ver las entradas. — Ahora te las traigo.",
+            "pt": "I want to see the tickets. I'll bring them to you now."
+          },
+          {
+            "ru": "Nos explican la regla y nos la repiten.",
+            "pt": "They explain the rule to us and repeat it for us."
+          }
+        ],
+        "tabela": [
+          {
+            "pessoa": "[misto] a mí",
+            "com_lo": "[misto] me lo",
+            "com_la": "[misto] me la",
+            "com_los": "[misto] me los",
+            "com_las": "[misto] me las"
+          },
+          {
+            "pessoa": "[misto] a ti",
+            "com_lo": "[misto] te lo",
+            "com_la": "[misto] te la",
+            "com_los": "[misto] te los",
+            "com_las": "[misto] te las"
+          },
+          {
+            "pessoa": "[misto] a nosotros",
+            "com_lo": "[misto] nos lo",
+            "com_la": "[misto] nos la",
+            "com_los": "[misto] nos los",
+            "com_las": "[misto] nos las"
+          },
+          {
+            "pessoa": "[misto] a vosotros (Spain)",
+            "com_lo": "[misto] os lo",
+            "com_la": "[misto] os la",
+            "com_los": "[misto] os los",
+            "com_las": "[misto] os las"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] ¿Me das lo?",
+            "certo": "[misto] ¿Me lo das?",
+            "motivo": "The pronoun comes before the verb, and the indirect one comes first."
+          },
+          {
+            "errado": "[misto] Lo me dio ayer.",
+            "certo": "[misto] Me lo dio ayer.",
+            "motivo": "The order is always indirect first (me, te, nos, os), then direct (lo, la, los, las)."
+          },
+          {
+            "errado": "[misto] Te los doy. (meaning to say: the key)",
+            "certo": "[misto] Te la doy.",
+            "motivo": "The direct pronoun agrees with the thing: «la llave» is feminine singular."
+          },
+          {
+            "errado": "[misto] He lo dicho.",
+            "certo": "[misto] Lo he dicho.",
+            "motivo": "The pronoun never sits between the auxiliary and the participle."
+          }
+        ],
+        "tag": "Pronouns"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Answer out loud with both pronouns: «¿Me prestas tu móvil?» (Sí, te lo presto), «¿Me traes la factura?», «¿Me explicas la regla?», «¿Me mandas las entradas?»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Answer using the right pronoun: «¿Le escribiste a Ana?», «¿Les mandaste la invitación a tus padres?», «¿Me llamas esta noche?»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-025.json",
+  "responsavel": null
+}

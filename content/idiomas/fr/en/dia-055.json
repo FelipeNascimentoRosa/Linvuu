@@ -1,0 +1,170 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 55,
+  "fase": 6,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Wanting, being able to, having to, and the pronouns «y» and «en»: The pronoun «en»: quantities",
+  "objetivo": "Lesson 14, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 14,
+    "titulo": "Wanting, being able to, having to, and the pronouns «y» and «en»",
+    "objetivo": "Use «vouloir», «pouvoir», «devoir» and «savoir», and replace places with «y» and quantities with «en».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "The pronoun «en»: quantities",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "en",
+            "translit": "AHN",
+            "pt": "",
+            "en": "",
+            "audio": "en"
+          },
+          {
+            "ru": "beaucoup",
+            "translit": "boh-KOO",
+            "pt": "",
+            "en": "",
+            "audio": "beaucoup"
+          },
+          {
+            "ru": "un peu",
+            "translit": "an PUH",
+            "pt": "",
+            "en": "",
+            "audio": "un peu"
+          },
+          {
+            "ru": "plusieurs",
+            "translit": "plew-ZYUHR",
+            "pt": "",
+            "en": "",
+            "audio": "plusieurs"
+          },
+          {
+            "ru": "aucun",
+            "translit": "oh-KAN",
+            "pt": "",
+            "en": "",
+            "audio": "aucun"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Replacing quantities with «en»",
+        "explicacao": "STEP 1: «en» replaces «de + noun», partitives and quantities: «Tu veux du pain ? — Oui, j'en veux.» STEP 2: with a number, the number stays: «Tu as deux enfants ? — Oui, j'en ai deux.» STEP 3: with «un/une», the pronoun repeats the number: «Tu as un frère ? — Oui, j'en ai un.» STEP 4: with no quantity, «en» on its own means «of it»: «Tu veux du café ? — Non, je n'en veux pas.» STEP 5: the order is the same as for «y»: before the verb, and between «ne» and the verb in the negative: «Je n'en veux pas.» STEP 6: with «beaucoup» or «un peu», they go at the end: «J'en veux beaucoup.»",
+        "comparacao": "in English you can say «I want some» or «I have two», leaving out 'of them'. French needs «en» whenever there is an understood quantity: «j'en veux», «j'en ai deux». Without «en», the sentence is incomplete.",
+        "tabela": [
+          {
+            "question": "Tu veux du pain ?",
+            "answer": "Oui, j'en veux."
+          },
+          {
+            "question": "Tu as des frères ?",
+            "answer": "Oui, j'en ai deux."
+          },
+          {
+            "question": "Tu prends du sucre ?",
+            "answer": "Non, je n'en prends pas."
+          },
+          {
+            "question": "Vous avez des enfants ?",
+            "answer": "Oui, nous en avons trois."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "J'ai deux.",
+            "certo": "J'en ai deux.",
+            "motivo": "The «en» is required."
+          },
+          {
+            "errado": "Je veux en.",
+            "certo": "J'en veux.",
+            "motivo": "Before the verb."
+          },
+          {
+            "errado": "Je ne veux pas en.",
+            "certo": "Je n'en veux pas.",
+            "motivo": "Between «ne» and the verb."
+          },
+          {
+            "errado": "J'en ai un frère.",
+            "certo": "J'en ai un.",
+            "motivo": "Or «J'ai un frère.» Don't repeat the object."
+          }
+        ],
+        "tag": "Pronouns"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "Au marché / At the market",
+        "contexto": "Chloé buys fruit and chats with the seller.",
+        "linhas": [
+          {
+            "personagem": "Chloé",
+            "ru": "— Bonjour. Je voudrais des pommes, s'il vous plaît.",
+            "en": "— Good morning. I'd like some apples, please.",
+            "audio": "Bonjour. Je voudrais des pommes, s'il vous plaît."
+          },
+          {
+            "personagem": "La vendeuse",
+            "ru": "— Combien en voulez-vous ?",
+            "en": "— How many would you like, madam?",
+            "audio": "Combien en voulez-vous ?"
+          },
+          {
+            "personagem": "Chloé",
+            "ru": "— J'en veux un kilo. Et vous avez des fraises ?",
+            "en": "— I'd like a kilo. And do you have any strawberries?",
+            "audio": "J'en veux un kilo. Et vous avez des fraises ?"
+          },
+          {
+            "personagem": "La vendeuse",
+            "ru": "— Oui, nous en avons. Vous en voulez combien ?",
+            "en": "— Yes, we do. How much would you like, madam?",
+            "audio": "Oui, nous en avons. Vous en voulez combien ?"
+          },
+          {
+            "personagem": "Chloé",
+            "ru": "— J'en prends deux cents grammes. Je peux payer par carte ?",
+            "en": "— I'll take two hundred grams. Can I pay by card?",
+            "audio": "J'en prends deux cents grammes. Je peux payer par carte ?"
+          },
+          {
+            "personagem": "La vendeuse",
+            "ru": "— Oui, vous pouvez. Voilà, madame.",
+            "en": "— Yes, you can. Here you are.",
+            "audio": "Oui, vous pouvez. Voilà, madame."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Answer: «Tu as des frères ? Tu veux du café ? Tu manges des fruits ?» using «en»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Answer with «y»: «Tu vas à la boulangerie ? Tu arrives à l'école ?»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-014.json",
+  "responsavel": null
+}

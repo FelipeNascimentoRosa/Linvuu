@@ -1,0 +1,137 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 90,
+  "fase": 9,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Duration and timing: depuis, il y a, pendant, venir de: Venir de e être en train de",
+  "objetivo": "Lesson 23, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 23,
+    "titulo": "Duration and timing: depuis, il y a, pendant, venir de",
+    "objetivo": "Talk about duration and time with «depuis», «il y a», «pendant», «dans», and use «venir de» and «être en train de».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Venir de e être en train de",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "venir de",
+            "translit": "vuh-neer DUH",
+            "pt": "",
+            "en": "",
+            "audio": "venir de"
+          },
+          {
+            "ru": "être en train de",
+            "translit": "ehtr ahn tran DUH",
+            "pt": "",
+            "en": "",
+            "audio": "être en train de"
+          },
+          {
+            "ru": "aller",
+            "translit": "ah-LAY",
+            "pt": "",
+            "en": "",
+            "audio": "aller"
+          },
+          {
+            "ru": "en ce moment",
+            "translit": "ahn suh moh-MAHN",
+            "pt": "",
+            "en": "",
+            "audio": "en ce moment"
+          },
+          {
+            "ru": "tout de suite",
+            "translit": "toot-SWEET",
+            "pt": "",
+            "en": "",
+            "audio": "tout de suite"
+          },
+          {
+            "ru": "déjà",
+            "translit": "day-ZHAH",
+            "pt": "",
+            "en": "",
+            "audio": "déjà"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "The recent past, the present in progress and the near future",
+        "explicacao": "STEP 1: «venir de» + infinitive = has just done (very recent past): «Je viens de manger.» «Il vient d'arriver.» STEP 2: conjugation of «venir»: je viens, tu viens, il vient, nous venons, vous venez, ils viennent. STEP 3: «être en train de» + infinitive = to be doing (action in progress): «Je suis en train de manger.» «Elle est en train de travailler.» STEP 4: «aller» + infinitive = is going to do (near future): «Je vais manger.» STEP 5: the three form a line: «Je viens de manger» (past) → «Je suis en train de manger» (now) → «Je vais manger» (next). STEP 6: in the imparfait: «Je venais de manger quand il a téléphoné.» «J'étais en train de manger quand il est arrivé.» STEP 7: pronouns go before the conjugated verb: «Je viens de le voir.» «Je suis en train de le faire.» STEP 8: negation: «Je ne viens pas de manger.» (rare) «Je ne suis pas en train de dormir.»",
+        "comparacao": "In English we say «I have just eaten», «I am eating», «I am going to eat». French has the same trio: «je viens de manger», «je suis en train de manger», «je vais manger». «Venir de» is the one that confuses, because «venir» on its own means «to come».",
+        "tabela": [
+          {
+            "tense": "recent past",
+            "formula": "venir de + infinitive",
+            "example": "Je viens de manger."
+          },
+          {
+            "tense": "present in progress",
+            "formula": "être en train de + infinitive",
+            "example": "Je suis en train de manger."
+          },
+          {
+            "tense": "near future",
+            "formula": "aller + infinitive",
+            "example": "Je vais manger."
+          },
+          {
+            "tense": "recent past (imparfait)",
+            "formula": "venir de in the imparfait",
+            "example": "Je venais de manger."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je viens manger. (I have just eaten)",
+            "certo": "Je viens de manger.",
+            "motivo": "The «de» is missing."
+          },
+          {
+            "errado": "Je suis en train manger.",
+            "certo": "Je suis en train de manger.",
+            "motivo": "The «de» is missing."
+          },
+          {
+            "errado": "Je viens de mangé.",
+            "certo": "Je viens de manger.",
+            "motivo": "Infinitive, not participle."
+          },
+          {
+            "errado": "Je suis en train de mangé.",
+            "certo": "Je suis en train de manger.",
+            "motivo": "Infinitive."
+          }
+        ],
+        "tag": "Time"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Say aloud what you have just done, what you are doing now and what you are going to do next."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say three sentences with «depuis» and three with «il y a»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-023.json",
+  "responsavel": null
+}

@@ -1,0 +1,153 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 22,
+  "fase": 3,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Family, avoir and possessives: Possessives",
+  "objetivo": "Lesson 6, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 6,
+    "titulo": "Family, avoir and possessives",
+    "objetivo": "Talk about your family, use «avoir» for possession and for physical feelings («avoir faim», «avoir froid»), show possession with «de» and use possessive adjectives.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Possessives",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "mon, ma, mes",
+            "translit": "MOHN, MAH, MAY",
+            "pt": "",
+            "en": "",
+            "audio": "mon, ma, mes"
+          },
+          {
+            "ru": "ton, ta, tes",
+            "translit": "TOHN, TAH, TAY",
+            "pt": "",
+            "en": "",
+            "audio": "ton, ta, tes"
+          },
+          {
+            "ru": "son, sa, ses",
+            "translit": "SOHN, SAH, SAY",
+            "pt": "",
+            "en": "",
+            "audio": "son, sa, ses"
+          },
+          {
+            "ru": "notre, nos",
+            "translit": "NOHTR, NOH",
+            "pt": "",
+            "en": "",
+            "audio": "notre, nos"
+          },
+          {
+            "ru": "votre, vos",
+            "translit": "VOHTR, VOH",
+            "pt": "",
+            "en": "",
+            "audio": "votre, vos"
+          },
+          {
+            "ru": "leur, leurs",
+            "translit": "LUHR, LUHR",
+            "pt": "",
+            "en": "",
+            "audio": "leur, leurs"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Possessive adjectives",
+        "explicacao": "STEP 1: the possessive agrees with the THING possessed (gender and number), not with the owner. That is why «son père» can mean «his father» or «her father»: context decides. STEP 2: for one owner, use «mon/ma/mes», «ton/ta/tes», «son/sa/ses». STEP 3: before a feminine noun that starts with a vowel or a silent «h», use the masculine form: «mon amie», «ton école», «son histoire». STEP 4: for several owners, use «notre/nos», «votre/vos», «leur/leurs». There is no gender distinction: «notre père, notre mère». STEP 5: the possessive replaces the article: «mon livre», never «le mon livre». STEP 6: to say «whose» something is, use «de» + name: «le frère de Paul», «la mère de Marie». French has no «'s» like English. STEP 7: for «it's mine», use «à moi» or «c'est mon…»: «C'est mon livre.»",
+        "comparacao": "English possessives agree with the owner (his or her). French agrees with the thing possessed: «son/sa/ses» can mean «his» or «her». «Sa mère» can be «his mother» or «her mother», and the «sa» comes from the feminine noun mère.",
+        "tabela": [
+          {
+            "possessor": "eu",
+            "masculine": "mon père",
+            "feminine": "ma mère",
+            "plural": "mes parents"
+          },
+          {
+            "possessor": "tu",
+            "masculine": "ton père",
+            "feminine": "ta mère",
+            "plural": "tes parents"
+          },
+          {
+            "possessor": "he / she",
+            "masculine": "son père",
+            "feminine": "sa mère",
+            "plural": "ses parents"
+          },
+          {
+            "possessor": "we",
+            "masculine": "notre père",
+            "feminine": "notre mère",
+            "plural": "nos parents"
+          },
+          {
+            "possessor": "vous",
+            "masculine": "votre père",
+            "feminine": "votre mère",
+            "plural": "vos parents"
+          },
+          {
+            "possessor": "their",
+            "masculine": "leur père",
+            "feminine": "leur mère",
+            "plural": "leurs parents"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Il aime sa père.",
+            "certo": "Il aime son père.",
+            "motivo": "The possessive agrees with «père» (masculine), not with the owner."
+          },
+          {
+            "errado": "ma amie",
+            "certo": "mon amie",
+            "motivo": "Before a vowel, use «mon/ton/son»."
+          },
+          {
+            "errado": "le mon livre",
+            "certo": "mon livre",
+            "motivo": "The possessive replaces the article."
+          },
+          {
+            "errado": "le frère à Paul",
+            "certo": "le frère de Paul",
+            "motivo": "Possession: «de» + name."
+          }
+        ],
+        "tag": "Adjectives and possessives"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Describe your family with possessives: «Mon père s'appelle… Ma mère… Mes frères… Notre maison…» Use at least eight sentences."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Conjugate «avoir» from memory and say the six expressions with «avoir»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-006.json",
+  "responsavel": null
+}

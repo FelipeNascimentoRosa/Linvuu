@@ -1,0 +1,256 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 79,
+  "fase": 8,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Irregular pretérito indefinido: Dijeron, trajeron, pidió, durmió",
+  "objetivo": "Lesson 20, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 20,
+    "titulo": "Irregular pretérito indefinido",
+    "objetivo": "Use the most frequent irregular verbs in the pretérito indefinido: «ser» and «ir» (fui), «dar», «ver», «hacer», the new-stem verbs («tuve, estuve, pude, puse, supe, quise, vine»), «decir» and «traer» (dijeron, trajeron), and verbs like «pedir» and «dormir» (pidió, durmió).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Dijeron, trajeron, pidió, durmió",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "largo",
+            "translit": "[pronuncia] LAR-go",
+            "pt": "long",
+            "en": "",
+            "audio": "largo"
+          },
+          {
+            "ru": "ancho",
+            "translit": "[pronuncia] AN-cho",
+            "pt": "wide (measured side to side)",
+            "en": "",
+            "audio": "ancho"
+          },
+          {
+            "ru": "el vaso",
+            "translit": "[pronuncia] el BAH-so",
+            "pt": "the glass",
+            "en": "",
+            "audio": "el vaso"
+          },
+          {
+            "ru": "pedir",
+            "translit": "[pronuncia] peh-DEER",
+            "pt": "to ask for, to order",
+            "en": "",
+            "audio": "pedir"
+          },
+          {
+            "ru": "dormir",
+            "translit": "[pronuncia] dor-MEER",
+            "pt": "to sleep",
+            "en": "",
+            "audio": "dormir"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Decir, traer, and verbs like pedir and dormir",
+        "explicacao": "STEP 1: «decir» and «traer» have a stem with «j»: dij- and traj-. The endings are the usual ones, but the «i» drops after the «j»: the third-person plural ends in «-eron», not «-ieron». «Dijeron», «trajeron». STEP 2: decir: dije, dijiste, dijo, dijimos, dijisteis, dijeron. Traer: traje, trajiste, trajo, trajimos, trajisteis, trajeron. STEP 3: -ir verbs that change their stem vowel in the present (pedir → pido, dormir → duermo) also change in the indefinido, but only in the third person, singular and plural: «e» becomes «i» and «o» becomes «u». Pedir: pedí, pediste, pidió, pedimos, pedisteis, pidieron. Dormir: dormí, dormiste, durmió, dormimos, dormisteis, durmieron. STEP 4: the same thing happens with «seguir» (siguió), «servir» (sirvió), «repetir» (repitió), «preferir» (prefirió), «sentir» (sintió), «morir» (murió), and «divertirse» (se divirtió). STEP 5: two meaning traps. «Largo» means «long», not «large» — the word for «large» is «grande», and the word for «wide» is «ancho»: «Una calle ancha» (a wide street), «un viaje largo» (a long trip). And «vaso» means «glass» (the drinking kind), not a flower vase (which is «jarrón» or «maceta»): «Pedí un vaso de agua» (I asked for a glass of water).",
+        "comparacao": "English past-tense verbs don't change shape between «he asked» and «they asked» — the whole stem-vowel-flip pattern here (e → i, o → u, only in the third person) is new ground with nothing to transfer from English. The real trap, though, is the false-friend pair «largo»/«large»: they look almost identical, but «largo» means «long» and has nothing to do with size or largeness, which is exactly the word an English speaker would reach for by mistake.",
+        "tabelas": [
+          {
+            "titulo": "decir and traer, indefinido",
+            "linhas": [
+              {
+                "pronome": "[misto] yo",
+                "decir": "[misto] dije",
+                "traer": "[misto] traje"
+              },
+              {
+                "pronome": "[misto] tú",
+                "decir": "[misto] dijiste",
+                "traer": "[misto] trajiste"
+              },
+              {
+                "pronome": "[misto] él / ella / usted",
+                "decir": "[misto] dijo",
+                "traer": "[misto] trajo"
+              },
+              {
+                "pronome": "[misto] nosotros",
+                "decir": "[misto] dijimos",
+                "traer": "[misto] trajimos"
+              },
+              {
+                "pronome": "[misto] vosotros",
+                "decir": "[misto] dijisteis",
+                "traer": "[misto] trajisteis"
+              },
+              {
+                "pronome": "[misto] ellos / ustedes",
+                "decir": "[misto] dijeron",
+                "traer": "[misto] trajeron"
+              }
+            ]
+          },
+          {
+            "titulo": "pedir and dormir, indefinido",
+            "linhas": [
+              {
+                "pronome": "[misto] yo",
+                "pedir": "[misto] pedí",
+                "dormir": "[misto] dormí"
+              },
+              {
+                "pronome": "[misto] tú",
+                "pedir": "[misto] pediste",
+                "dormir": "[misto] dormiste"
+              },
+              {
+                "pronome": "[misto] él / ella / usted",
+                "pedir": "[misto] pidió",
+                "dormir": "[misto] durmió"
+              },
+              {
+                "pronome": "[misto] nosotros",
+                "pedir": "[misto] pedimos",
+                "dormir": "[misto] dormimos"
+              },
+              {
+                "pronome": "[misto] vosotros",
+                "pedir": "[misto] pedisteis",
+                "dormir": "[misto] dormisteis"
+              },
+              {
+                "pronome": "[misto] ellos / ustedes",
+                "pedir": "[misto] pidieron",
+                "dormir": "[misto] durmieron"
+              }
+            ]
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] Ellos dijieron que sí.",
+            "certo": "[misto] Ellos dijeron que sí.",
+            "motivo": "After the «j», the ending is «-eron»."
+          },
+          {
+            "errado": "[misto] Yo traí el libro.",
+            "certo": "[misto] Yo traje el libro.",
+            "motivo": "The stem of «traer» is «traj-»."
+          },
+          {
+            "errado": "[misto] Él pedió un café.",
+            "certo": "[misto] Él pidió un café.",
+            "motivo": "In the third person, the «e» of «pedir» becomes «i»."
+          },
+          {
+            "errado": "[misto] Ella dormió mucho.",
+            "certo": "[misto] Ella durmió mucho.",
+            "motivo": "In the third person, the «o» of «dormir» becomes «u»."
+          },
+          {
+            "errado": "[misto] Fue un viaje ancho.",
+            "certo": "[misto] Fue un viaje largo.",
+            "motivo": "«Largo» means long; width is «ancho»."
+          }
+        ],
+        "tag": "Pretérito indefinido"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "Un fin de semana largo / A long weekend",
+        "contexto": "Sofía and Pablo talk on Monday about their weekend.",
+        "linhas": [
+          {
+            "personagem": "Sofía",
+            "ru": "— Hola, Pablo. ¿Qué tal tu fin de semana?",
+            "pt": "— Hi, Pablo. How was your weekend?",
+            "audio": "Hola, Pablo. ¿Qué tal tu fin de semana?",
+            "rotulo": "[personagem] Sofía"
+          },
+          {
+            "personagem": "Pablo",
+            "ru": "— Fue largo, pero estupendo. El sábado fui a Toledo con mi primo.",
+            "pt": "— It was long, but great. On Saturday I went to Toledo with my cousin.",
+            "audio": "Fue largo, pero estupendo. El sábado fui a Toledo con mi primo.",
+            "rotulo": "[personagem] Pablo"
+          },
+          {
+            "personagem": "Sofía",
+            "ru": "— ¿Y qué hicisteis allí?",
+            "pt": "— And what did you two do there?",
+            "audio": "¿Y qué hicisteis allí?",
+            "rotulo": "[personagem] Sofía"
+          },
+          {
+            "personagem": "Pablo",
+            "ru": "— Vimos la catedral y comimos en un restaurante pequeño. Mi primo pidió vino y yo pedí un vaso de agua.",
+            "pt": "— We saw the cathedral and ate at a small restaurant. My cousin ordered wine and I ordered a glass of water.",
+            "audio": "Vimos la catedral y comimos en un restaurante pequeño. Mi primo pidió vino y yo pedí un vaso de agua.",
+            "rotulo": "[personagem] Pablo"
+          },
+          {
+            "personagem": "Sofía",
+            "ru": "— Qué bien. Yo me quedé en casa. Tuve que estudiar y no pude salir.",
+            "pt": "— Nice. I stayed home. I had to study and couldn't go out.",
+            "audio": "Qué bien. Yo me quedé en casa. Tuve que estudiar y no pude salir.",
+            "rotulo": "[personagem] Sofía"
+          },
+          {
+            "personagem": "Pablo",
+            "ru": "— ¿Estudiaste todo el domingo?",
+            "pt": "— Did you study the whole of Sunday?",
+            "audio": "¿Estudiaste todo el domingo?",
+            "rotulo": "[personagem] Pablo"
+          },
+          {
+            "personagem": "Sofía",
+            "ru": "— No. El domingo vino mi hermana y nos trajo unos dulces. Después vimos una película y dormí diez horas.",
+            "pt": "— No. On Sunday my sister came over and brought us some sweets. Then we watched a movie and I slept ten hours.",
+            "audio": "No. El domingo vino mi hermana y nos trajo unos dulces. Después vimos una película y dormí diez horas.",
+            "rotulo": "[personagem] Sofía"
+          },
+          {
+            "personagem": "Pablo",
+            "ru": "— Entonces tuviste un fin de semana perfecto.",
+            "pt": "— So you had a perfect weekend.",
+            "audio": "Entonces tuviste un fin de semana perfecto.",
+            "rotulo": "[personagem] Pablo"
+          },
+          {
+            "personagem": "Sofía",
+            "ru": "— Sí, pero ahora tengo un examen y no puse el despertador.",
+            "pt": "— Yes, but now I have an exam and I didn't set my alarm.",
+            "audio": "Sí, pero ahora tengo un examen y no puse el despertador.",
+            "rotulo": "[personagem] Sofía"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Tell a friend out loud what you did last weekend, using at least three of these verbs: «fui», «vi», «hice», «dije», «pedí», «dormí», «tuve»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say the «yo» form and the «ellos» form of tener, estar, poder, poner, saber, querer, and venir. Then say one sentence with «no pude»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-020.json",
+  "responsavel": null
+}

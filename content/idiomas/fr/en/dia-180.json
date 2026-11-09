@@ -1,0 +1,515 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 180,
+  "fase": 18,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "The subjunctive: formation and first uses: Review and practice for lesson 45",
+  "objetivo": "Lesson 45, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 45,
+    "titulo": "The subjunctive: formation and first uses",
+    "objetivo": "Form the subjonctif présent of regular verbs and the main irregular verbs, and use it after «il faut que», «vouloir que» and «pour que».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 45",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Il faut que tu viennes",
+            "opcoes": [
+              "Il faut que tu viennes",
+              "Il faut que tu viens",
+              "Il faut venir"
+            ],
+            "gabarito": "Il faut que tu viennes",
+            "explicacao": "Listen to «viennes».",
+            "id": "fr-045-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je veux que tu sois heureux",
+            "opcoes": [
+              "Je veux que tu sois heureux",
+              "Je veux que tu es heureux",
+              "Je veux être heureux"
+            ],
+            "gabarito": "Je veux que tu sois heureux",
+            "explicacao": "Listen to «sois».",
+            "id": "fr-045-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je parle lentement pour que tu comprennes",
+            "opcoes": [
+              "Je parle lentement pour que tu comprennes",
+              "Je parle lentement pour que tu comprends",
+              "Je parle lentement pour comprendre"
+            ],
+            "gabarito": "Je parle lentement pour que tu comprennes",
+            "explicacao": "Listen to «comprennes».",
+            "id": "fr-045-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Il faut que je parte",
+            "respostaEsperada": "Il faut que je parte",
+            "explicacao": "Write: Il faut que je parte.",
+            "id": "fr-045-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Il vaut mieux que tu dormes",
+            "respostaEsperada": "Il vaut mieux que tu dormes",
+            "explicacao": "Write: Il vaut mieux que tu dormes.",
+            "id": "fr-045-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «il suffit que» mean?",
+            "audio": "il suffit que",
+            "opcoes": [
+              "it is enough that",
+              "that I can",
+              "that they have",
+              "that we are"
+            ],
+            "gabarito": "it is enough that",
+            "explicacao": "«il suffit que» = it is enough that.",
+            "id": "fr-045-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je préfère que tu viennes",
+            "respostaEsperada": "Je préfère que tu viennes",
+            "explicacao": "Write: Je préfère que tu viennes.",
+            "id": "fr-045-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "il faut que",
+            "respostaEsperada": "il faut que",
+            "explicacao": "it is necessary that",
+            "id": "fr-045-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Subjunctive of «être» (que je):",
+            "opcoes": [
+              "sois",
+              "suis",
+              "soie"
+            ],
+            "gabarito": "sois",
+            "explicacao": "Irregular.",
+            "id": "fr-045-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Subjunctive of «avoir» (que j'):",
+            "opcoes": [
+              "aie",
+              "ai",
+              "ait"
+            ],
+            "gabarito": "aie",
+            "explicacao": "Irregular.",
+            "id": "fr-045-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je veux partir.",
+              "Je veux que je parte.",
+              "Je veux de partir."
+            ],
+            "gabarito": "Je veux partir.",
+            "explicacao": "Same subject: infinitive.",
+            "id": "fr-045-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «que j'aille» mean?",
+            "audio": "que j'aille",
+            "opcoes": [
+              "that I can",
+              "that I go",
+              "that they have",
+              "que eu queira"
+            ],
+            "gabarito": "that I go",
+            "explicacao": "«que j'aille» = that I go.",
+            "id": "fr-045-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Il faut que tu dormes.",
+              "Il faut que tu dors.",
+              "Il faut que tu dormir."
+            ],
+            "gabarito": "Il faut que tu dormes.",
+            "explicacao": "Subjunctive.",
+            "id": "fr-045-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il faut que nous ___ . (partir)",
+            "opcoes": [
+              "partions",
+              "partons",
+              "partez"
+            ],
+            "gabarito": "partions",
+            "explicacao": "Nous: «-ions».",
+            "id": "fr-045-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je veux que tu ___ à l'heure. (être)",
+            "opcoes": [
+              "sois",
+              "es",
+              "seras"
+            ],
+            "gabarito": "sois",
+            "explicacao": "Subjunctive.",
+            "id": "fr-045-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "que nous soyons",
+            "respostaEsperada": "que nous soyons",
+            "explicacao": "that we are",
+            "id": "fr-045-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Pour que vous ___ , je répète. (comprendre)",
+            "opcoes": [
+              "compreniez",
+              "comprenez",
+              "comprendriez"
+            ],
+            "gabarito": "compreniez",
+            "explicacao": "Subjunctive.",
+            "id": "fr-045-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «il faut que» mean?",
+            "audio": "il faut que",
+            "opcoes": [
+              "to want (someone) to",
+              "provided that",
+              "it is necessary that",
+              "that I go"
+            ],
+            "gabarito": "it is necessary that",
+            "explicacao": "«il faut que» = it is necessary that.",
+            "id": "fr-045-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il faut que j'___ du temps. (avoir)",
+            "opcoes": [
+              "aie",
+              "ai",
+              "avais"
+            ],
+            "gabarito": "aie",
+            "explicacao": "«Avoir» is irregular.",
+            "id": "fr-045-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Il faut que tu viennes demain.»",
+            "opcoes": [
+              "Il",
+              "faut",
+              "que",
+              "tu",
+              "viennes",
+              "demain"
+            ],
+            "gabarito": "Il faut que tu viennes demain.",
+            "explicacao": "Il faut que + subjunctive.",
+            "id": "fr-045-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Je préfère que tu partes.»",
+            "opcoes": [
+              "Je",
+              "préfère",
+              "que",
+              "tu",
+              "partes"
+            ],
+            "gabarito": "Je préfère que tu partes.",
+            "explicacao": "Preference.",
+            "id": "fr-045-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: You need to come. I want her to be happy. It is better that we leave now.",
+            "respostaEsperada": "Il faut que tu viennes. Je veux qu'elle soit heureuse. Il vaut mieux que nous partions maintenant.",
+            "id": "fr-045-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «que je fasse» mean?",
+            "audio": "que je fasse",
+            "opcoes": [
+              "that I go",
+              "that I do/make",
+              "to want (someone) to",
+              "that I know"
+            ],
+            "gabarito": "that I do/make",
+            "explicacao": "«que je fasse» = that I do/make.",
+            "id": "fr-045-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il faut que vous ___ à l'heure. (arriver)",
+            "opcoes": [
+              "arriviez",
+              "arrivez",
+              "arriverez"
+            ],
+            "gabarito": "arriviez",
+            "explicacao": "Subjunctive of «vous»: «-iez».",
+            "id": "fr-045-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "que je veuille",
+            "respostaEsperada": "que je veuille",
+            "explicacao": "que eu queira",
+            "id": "fr-045-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je veux qu'il ___ avec nous. (venir)",
+            "opcoes": [
+              "vient",
+              "vienne",
+              "viendra"
+            ],
+            "gabarito": "vienne",
+            "explicacao": "Subjunctive of «venir»: «vienne».",
+            "id": "fr-045-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il faut que je ___ mes devoirs. (faire)",
+            "opcoes": [
+              "fais",
+              "ferai",
+              "fasse"
+            ],
+            "gabarito": "fasse",
+            "explicacao": "Irregular subjunctive of «faire»: «fasse».",
+            "id": "fr-045-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il vaut mieux que nous ___ maintenant. (aller)",
+            "opcoes": [
+              "allions",
+              "allons",
+              "irons"
+            ],
+            "gabarito": "allions",
+            "explicacao": "Subjunctive of «aller» with «nous»: «allions».",
+            "id": "fr-045-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «que je parle» mean?",
+            "audio": "que je parle",
+            "opcoes": [
+              "so that",
+              "that he come",
+              "that I come",
+              "that I speak"
+            ],
+            "gabarito": "that I speak",
+            "explicacao": "«que je parle» = that I speak.",
+            "id": "fr-045-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il faut qu'elle ___ patiente. (être)",
+            "opcoes": [
+              "est",
+              "soit",
+              "sera"
+            ],
+            "gabarito": "soit",
+            "explicacao": "Subjunctive of «être»: «soit».",
+            "id": "fr-045-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je veux que tu viens.",
+              "Je veux que tu viendras.",
+              "Je veux que tu viennes."
+            ],
+            "gabarito": "Je veux que tu viennes.",
+            "explicacao": "After «vouloir que», the subjunctive is used.",
+            "id": "fr-045-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "When is the infinitive used instead of the subjunctive?",
+            "opcoes": [
+              "When the subject is the same",
+              "When the subject is different",
+              "Always"
+            ],
+            "gabarito": "When the subject is the same",
+            "explicacao": "Same subject: «Je veux partir».",
+            "id": "fr-045-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "il est important que",
+            "respostaEsperada": "il est important que",
+            "explicacao": "it is important that",
+            "id": "fr-045-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the subjunctive of «pouvoir» (que je)?",
+            "opcoes": [
+              "peux",
+              "puisse",
+              "pourrais"
+            ],
+            "gabarito": "puisse",
+            "explicacao": "«Que je puisse».",
+            "id": "fr-045-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «que tu finisses» mean?",
+            "audio": "que tu finisses",
+            "opcoes": [
+              "that you finish",
+              "that I know",
+              "that they have",
+              "to want (someone) to"
+            ],
+            "gabarito": "that you finish",
+            "explicacao": "«que tu finisses» = that you finish.",
+            "id": "fr-045-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je parle lentement pour que tu comprends.",
+              "Je parle lentement pour tu comprennes.",
+              "Je parle lentement pour que tu comprennes."
+            ],
+            "gabarito": "Je parle lentement pour que tu comprennes.",
+            "explicacao": "«Pour que» takes the subjunctive.",
+            "id": "fr-045-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «We have to finish this work.»",
+            "opcoes": [
+              "Il",
+              "faut",
+              "que",
+              "nous",
+              "finissions",
+              "ce",
+              "travail"
+            ],
+            "gabarito": "Il faut que nous finissions ce travail.",
+            "explicacao": "«Il faut que» + subjunctive.",
+            "id": "fr-045-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «It is important that you sleep well.»",
+            "opcoes": [
+              "Il",
+              "est",
+              "important",
+              "que",
+              "tu",
+              "dormes",
+              "bien"
+            ],
+            "gabarito": "Il est important que tu dormes bien.",
+            "explicacao": "«Il est important que» + subjunctive.",
+            "id": "fr-045-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I have to do my work. I prefer that you speak slowly.",
+            "respostaEsperada": "Il faut que je fasse mon travail. Je préfère que tu parles lentement.",
+            "id": "fr-045-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I want to leave. I want you to leave.",
+            "respostaEsperada": "Je veux partir. Je veux que tu partes.",
+            "id": "fr-045-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Speak for 1 minute about what you expect from your friends and your family, using the subjunctive."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Give advice with «il faut que» and «il vaut mieux que»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-045.json",
+  "responsavel": null
+}

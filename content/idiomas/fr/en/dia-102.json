@@ -1,0 +1,137 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 102,
+  "fase": 11,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Body, health and the pharmacy: Symptoms and the doctor's visit",
+  "objetivo": "Lesson 26, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 26,
+    "titulo": "Body, health and the pharmacy",
+    "objetivo": "Name parts of the body, say where it hurts, describe symptoms, talk to the doctor and at the pharmacy, and use «avoir mal à» and «il faut».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Symptoms and the doctor's visit",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "malade",
+            "translit": "mah-LAHD",
+            "pt": "",
+            "en": "",
+            "audio": "malade"
+          },
+          {
+            "ru": "la fièvre",
+            "translit": "lah FYEHVR",
+            "pt": "",
+            "en": "",
+            "audio": "la fièvre"
+          },
+          {
+            "ru": "la toux",
+            "translit": "lah TOO",
+            "pt": "",
+            "en": "",
+            "audio": "la toux"
+          },
+          {
+            "ru": "le rhume",
+            "translit": "luh REWM",
+            "pt": "",
+            "en": "",
+            "audio": "le rhume"
+          },
+          {
+            "ru": "guérir",
+            "translit": "gay-REER",
+            "pt": "",
+            "en": "",
+            "audio": "guérir"
+          },
+          {
+            "ru": "rendez-vous",
+            "translit": "rahn-day-VOO",
+            "pt": "",
+            "en": "",
+            "audio": "rendez-vous"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Describing symptoms and answering the doctor",
+        "explicacao": "STEP 1: to say how long: «J'ai mal à la tête depuis hier.» (depuis + present tense) STEP 2: to say when it began: «Ça a commencé il y a trois jours.» (il y a + passé composé) STEP 3: useful patient phrases: «Je me sens mal.» «J'ai de la fièvre.» «Je tousse beaucoup.» «Je suis allergique à la pénicilline.» STEP 4: useful doctor phrases: «Où avez-vous mal ?» «Depuis quand ?» «Respirez profondément.» «Ouvrez la bouche.» «Je vais vous donner une ordonnance.» STEP 5: the doctor's advice (imperative and «il faut»): «Reposez-vous.» «Il faut boire beaucoup d'eau.» «Prenez ce médicament deux fois par jour.» STEP 6: frequency: «une fois par jour, deux fois par jour, trois fois par jour, le matin, le soir, avant le repas, après le repas». STEP 7: questions to the doctor: «Est-ce que c'est grave ?» «Je dois rester au lit ?» «Quand est-ce que je pourrai travailler ?» STEP 8: the pronoun «me» with reflexive verbs: «Je me sens mal.» «Il se sent mieux.»",
+        "comparacao": "In English we say «I have a fever» and «I have a cold». French uses «avoir» for the fever (j'ai de la fièvre) and «être» for the state (je suis enrhumé). «Je me sens» means «I feel».",
+        "tabela": [
+          {
+            "who": "patient",
+            "sentence": "J'ai mal à la gorge depuis hier."
+          },
+          {
+            "who": "patient",
+            "sentence": "Je me sens très fatigué."
+          },
+          {
+            "who": "doctor",
+            "sentence": "Où avez-vous mal ?"
+          },
+          {
+            "who": "doctor",
+            "sentence": "Reposez-vous et buvez beaucoup d'eau."
+          },
+          {
+            "who": "doctor",
+            "sentence": "Prenez ce médicament deux fois par jour."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "J'ai mal à la tête il y a hier.",
+            "certo": "J'ai mal à la tête depuis hier.",
+            "motivo": "Continues: «depuis»."
+          },
+          {
+            "errado": "Je suis de la fièvre.",
+            "certo": "J'ai de la fièvre.",
+            "motivo": "«Avoir de la fièvre»."
+          },
+          {
+            "errado": "Je sens mal.",
+            "certo": "Je me sens mal.",
+            "motivo": "Reflexive verb."
+          },
+          {
+            "errado": "Il faut que boire de l'eau.",
+            "certo": "Il faut boire de l'eau.",
+            "motivo": "No «que» with an infinitive."
+          }
+        ],
+        "tag": "Health"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Role-play a consultation out loud: the patient describes the symptoms, the doctor asks questions and gives advice."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Name three different pains with «avoir mal à»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-026.json",
+  "responsavel": null
+}

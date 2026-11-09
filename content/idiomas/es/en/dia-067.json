@@ -1,0 +1,211 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 67,
+  "fase": 7,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Pretérito perfecto: saying what you did today: Alguna vez, nunca and todavía no",
+  "objetivo": "Lesson 17, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 17,
+    "titulo": "Pretérito perfecto: saying what you did today",
+    "objetivo": "Form the pretérito perfecto with haber + past participle (regular and irregular), use it with hoy, esta mañana, esta semana, ya, todavía no, alguna vez and nunca, and see where it overlaps with — and differs from — the English present perfect.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Alguna vez, nunca and todavía no",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "una vez",
+            "translit": "[pronuncia] OO-nah beth",
+            "pt": "once",
+            "en": "",
+            "audio": "una vez"
+          },
+          {
+            "ru": "muchas veces",
+            "translit": "[pronuncia] MOO-chas BEH-theh-ses",
+            "pt": "many times",
+            "en": "",
+            "audio": "muchas veces"
+          },
+          {
+            "ru": "asistir a",
+            "translit": "[pronuncia] ah-sees-TEER ah",
+            "pt": "to attend (a class, a meeting)",
+            "en": "",
+            "audio": "asistir a"
+          },
+          {
+            "ru": "perder",
+            "translit": "[pronuncia] per-DER",
+            "pt": "to lose, to miss",
+            "en": "",
+            "audio": "perder"
+          },
+          {
+            "ru": "la sierra",
+            "translit": "[pronuncia] la SYEH-rrah",
+            "pt": "the mountains",
+            "en": "",
+            "audio": "la sierra"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Asking and answering about experiences",
+        "explicacao": "STEP 1: to ask about a life experience, use «alguna vez»: «¿Has estado alguna vez en Madrid?» (have you ever been to Madrid?). STEP 2: possible answers: «Sí, he estado una vez / dos veces / muchas veces» (yes, I've been once / twice / many times) and «No, nunca he estado» or «No he estado nunca» (no, I've never been). STEP 3: to ask whether something has already happened: «¿Has comido ya?» (have you eaten yet?). Answers: «Sí, ya he comido» or «Todavía no he comido». STEP 4: to ask about today: «¿Qué has hecho hoy?» (what have you done today?). Answers with «he + participle». STEP 5: with «usted»: «¿Ha estado alguna vez en Brasil?»; with «vosotros» (Spain): «¿Habéis estado alguna vez en Brasil?». STEP 6: false friend: «asistir a» means to attend an event (a class, a concert, a meeting) — it has nothing to do with watching a movie: a movie is something you «ve» (see/watch). STEP 7: «perder» means to lose (something, the train, your keys) and follows the same pattern: «He perdido el tren» (I missed the train). Watch out: «perder» changes e → ie in the present (pierdo).",
+        "comparacao": "Spanish «asistir a» looks like it should mean «to assist» or even «to watch», but it actually means «to attend» an event — a class, a concert, a meeting. The verb for watching a movie is simply «ver», the same verb used for seeing anything. The resemblance between «asistir» and English «assist» is the trap here, since the two words don't share that meaning at all.",
+        "tabela": [
+          {
+            "situacao": "[misto] a life experience",
+            "pergunta": "[misto] ¿Has estado alguna vez en Brasil?",
+            "resposta": "[misto] Sí, he estado dos veces. / No, nunca he estado."
+          },
+          {
+            "situacao": "[misto] already or not yet",
+            "pergunta": "[misto] ¿Has comido ya?",
+            "resposta": "[misto] Sí, ya he comido. / Todavía no."
+          },
+          {
+            "situacao": "[misto] today",
+            "pergunta": "[misto] ¿Qué has hecho hoy?",
+            "resposta": "[misto] He trabajado y he ido al mercado."
+          },
+          {
+            "situacao": "[misto] with usted",
+            "pergunta": "[misto] ¿Ha estado alguna vez en Brasil?",
+            "resposta": "[misto] Sí, he estado una vez."
+          },
+          {
+            "situacao": "[misto] with vosotros (Spain)",
+            "pergunta": "[misto] ¿Habéis estado alguna vez en Brasil?",
+            "resposta": "[misto] No, nunca hemos estado."
+          },
+          {
+            "situacao": "[misto] watching a movie",
+            "pergunta": "[misto] ¿Has visto esta película?",
+            "resposta": "[misto] No, todavía no he visto esta película."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] He asistido una película.",
+            "certo": "[misto] He visto una película.",
+            "motivo": "Movies are «watched» with «ver»; «asistir a» means to attend an event."
+          },
+          {
+            "errado": "[misto] ¿Has estado alguna vez a Brasil?",
+            "certo": "[misto] ¿Has estado alguna vez en Brasil?",
+            "motivo": "With «estar», the place takes «en»."
+          },
+          {
+            "errado": "[misto] Nunca no he estado en Madrid.",
+            "certo": "[misto] Nunca he estado en Madrid.",
+            "motivo": "With «nunca» before the verb, you don't use «no»; after the verb, you do: «No he estado nunca en Madrid»."
+          },
+          {
+            "errado": "[misto] Todavía no he comida.",
+            "certo": "[misto] Todavía no he comido.",
+            "motivo": "The participle doesn't agree with the object."
+          }
+        ],
+        "tag": "Pretérito perfecto"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "Un día largo / A long day",
+        "contexto": "Marcos and Elena talk about what they've done today.",
+        "linhas": [
+          {
+            "personagem": "Marcos",
+            "ru": "— Hola, Elena. ¿Qué has hecho hoy?",
+            "pt": "— Hi, Elena. What have you done today?",
+            "audio": "Hola, Elena. ¿Qué has hecho hoy?",
+            "rotulo": "[personagem] Marcos"
+          },
+          {
+            "personagem": "Elena",
+            "ru": "— Esta mañana he trabajado en casa y he escrito varios correos. ¿Y tú?",
+            "pt": "— This morning I worked from home and wrote several emails. What about you?",
+            "audio": "Esta mañana he trabajado en casa y he escrito varios correos. ¿Y tú?",
+            "rotulo": "[personagem] Elena"
+          },
+          {
+            "personagem": "Marcos",
+            "ru": "— Yo he ido al mercado y he comprado fruta. He visto a Carmen allí.",
+            "pt": "— I went to the market and bought some fruit. I saw Carmen there.",
+            "audio": "Yo he ido al mercado y he comprado fruta. He visto a Carmen allí.",
+            "rotulo": "[personagem] Marcos"
+          },
+          {
+            "personagem": "Elena",
+            "ru": "— ¿Has comido ya?",
+            "pt": "— Have you eaten yet?",
+            "audio": "¿Has comido ya?",
+            "rotulo": "[personagem] Elena"
+          },
+          {
+            "personagem": "Marcos",
+            "ru": "— Todavía no. He preparado la comida, pero no he comido. ¿Y tú?",
+            "pt": "— Not yet. I made the food, but I haven't eaten. What about you?",
+            "audio": "Todavía no. He preparado la comida, pero no he comido. ¿Y tú?",
+            "rotulo": "[personagem] Marcos"
+          },
+          {
+            "personagem": "Elena",
+            "ru": "— Yo sí. ¿Has estado alguna vez en la sierra?",
+            "pt": "— I have. Have you ever been to the mountains?",
+            "audio": "Yo sí. ¿Has estado alguna vez en la sierra?",
+            "rotulo": "[personagem] Elena"
+          },
+          {
+            "personagem": "Marcos",
+            "ru": "— Sí, he estado dos veces. Me encanta. ¿Y tú?",
+            "pt": "— Yes, I've been twice. I love it. What about you?",
+            "audio": "Sí, he estado dos veces. Me encanta. ¿Y tú?",
+            "rotulo": "[personagem] Marcos"
+          },
+          {
+            "personagem": "Elena",
+            "ru": "— Yo nunca he estado. ¿Vamos este fin de semana?",
+            "pt": "— I've never been. Shall we go this weekend?",
+            "audio": "Yo nunca he estado. ¿Vamos este fin de semana?",
+            "rotulo": "[personagem] Elena"
+          },
+          {
+            "personagem": "Marcos",
+            "ru": "— Vale, de acuerdo.",
+            "pt": "— Deal, agreed.",
+            "audio": "Vale, de acuerdo.",
+            "rotulo": "[personagem] Marcos"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Answer out loud five questions: «¿Qué has hecho hoy? ¿Has comido ya? ¿Has estado alguna vez en España? ¿Has visto alguna serie esta semana? ¿Qué no has hecho todavía?»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say the participle of ten verbs, out loud: hacer, decir, ver, poner, escribir, abrir, volver, ir, leer, ser."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-017.json",
+  "responsavel": null
+}

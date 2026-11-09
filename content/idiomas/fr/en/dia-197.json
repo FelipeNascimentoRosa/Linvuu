@@ -1,0 +1,155 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 197,
+  "fase": 20,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Jobs, résumé and interview: The résumé",
+  "objetivo": "Lesson 50, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 50,
+    "titulo": "Jobs, résumé and interview",
+    "objetivo": "Talk about your education and experience, understand a job ad, write a cover letter and answer job interview questions.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "The résumé",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "un CV",
+            "translit": "an say-VAY",
+            "pt": "",
+            "en": "",
+            "audio": "un CV"
+          },
+          {
+            "ru": "une offre d'emploi",
+            "translit": "ew-noh-fruh dahn-PLWAH",
+            "pt": "",
+            "en": "",
+            "audio": "une offre d'emploi"
+          },
+          {
+            "ru": "un diplôme",
+            "translit": "an dee-PLOHM",
+            "pt": "",
+            "en": "",
+            "audio": "un diplôme"
+          },
+          {
+            "ru": "l'expérience",
+            "translit": "lek-spay-ree-AHNS",
+            "pt": "",
+            "en": "",
+            "audio": "l'expérience"
+          },
+          {
+            "ru": "les compétences",
+            "translit": "lay kohn-pay-TAHNS",
+            "pt": "",
+            "en": "",
+            "audio": "les compétences"
+          },
+          {
+            "ru": "un stage",
+            "translit": "an STAZH",
+            "pt": "",
+            "en": "",
+            "audio": "un stage"
+          },
+          {
+            "ru": "un poste",
+            "translit": "an POST",
+            "pt": "",
+            "en": "",
+            "audio": "un poste"
+          },
+          {
+            "ru": "postuler",
+            "translit": "pos-tew-LAY",
+            "pt": "",
+            "en": "",
+            "audio": "postuler"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "J'ai travaillé, je suis diplômé",
+        "explicacao": "STEP 1: education: «J'ai un diplôme en gestion.», «Je suis diplômé de l'université de São Paulo.», «J'ai fait des études de droit.» STEP 2: past experience: passé composé + duration: «J'ai travaillé trois ans chez X.» STEP 3: current experience: present + «depuis»: «Je travaille chez Y depuis 2022.» STEP 4: skills: «Je sais utiliser Excel.», «Je suis capable de…», «Je maîtrise…» STEP 5: languages: «Je parle couramment le portugais et l'anglais, et j'ai un niveau intermédiaire en français.» STEP 6: qualities: «sérieux», «motivé», «autonome», «organisé». STEP 7: «responsable de» and «chargé de»: «J'étais chargé de la comptabilité.» STEP 8: in a French CV, the headings are short: «Expérience», «Formation», «Compétences», «Langues».",
+        "comparacao": "watch out for false friends: «un stage» is an internship, not a theatre «stage»; «une formation» is a training course or a qualification, not a “formation”; and «une expérience» can also mean a scientific experiment. In the job sense, «de l'expérience» is uncountable and takes the partitive: «J'ai de l'expérience.»",
+        "tabela": [
+          {
+            "section": "Formation",
+            "example": "Licence en gestion, USP, 2020"
+          },
+          {
+            "section": "Expérience",
+            "example": "Assistant administratif, 2021–2024"
+          },
+          {
+            "section": "Compétences",
+            "example": "Excel, comptabilité, gestion de projet"
+          },
+          {
+            "section": "Langues",
+            "example": "Portugais : langue maternelle ; Français : B1"
+          },
+          {
+            "section": "Centres d'intérêt",
+            "example": "Lecture, football, voyages"
+          },
+          {
+            "section": "Contact",
+            "example": "prenom.nom@email.com"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "J'ai travaillé chez X depuis trois ans (and I still work there).",
+            "certo": "Je travaille chez X depuis trois ans.",
+            "motivo": "Continues: present + depuis."
+          },
+          {
+            "errado": "J'ai travaillé chez X depuis 2022.",
+            "certo": "Je travaille chez X depuis 2022.",
+            "motivo": "Continues: present."
+          },
+          {
+            "errado": "Je suis formé en gestion.",
+            "certo": "Je suis diplômé en gestion.",
+            "motivo": "«Diplômé»."
+          },
+          {
+            "errado": "J'ai des expériences.",
+            "certo": "J'ai de l'expérience.",
+            "motivo": "Singular."
+          }
+        ],
+        "tag": "Job"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Present your education and experience aloud, in four sentences."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say aloud an opening and a closing for a formal email."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-050.json",
+  "responsavel": null
+}

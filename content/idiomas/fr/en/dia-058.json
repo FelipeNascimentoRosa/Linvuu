@@ -1,0 +1,141 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 58,
+  "fase": 6,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "The past with «avoir»: passé composé: The negative and questions in the past",
+  "objetivo": "Lesson 15, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 15,
+    "titulo": "The past with «avoir»: passé composé",
+    "objetivo": "Tell what happened using the passé composé with «avoir», the past participle and the negative in the past.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "The negative and questions in the past",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "jamais",
+            "translit": "zhah-MEH",
+            "pt": "",
+            "en": "",
+            "audio": "jamais"
+          },
+          {
+            "ru": "rien",
+            "translit": "RYAN",
+            "pt": "",
+            "en": "",
+            "audio": "rien"
+          },
+          {
+            "ru": "personne",
+            "translit": "pehr-SOHN",
+            "pt": "",
+            "en": "",
+            "audio": "personne"
+          },
+          {
+            "ru": "déjà",
+            "translit": "day-ZHAH",
+            "pt": "",
+            "en": "",
+            "audio": "déjà"
+          },
+          {
+            "ru": "encore",
+            "translit": "ahn-KOHR",
+            "pt": "",
+            "en": "",
+            "audio": "encore"
+          },
+          {
+            "ru": "toujours",
+            "translit": "too-ZHOOR",
+            "pt": "",
+            "en": "",
+            "audio": "toujours"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Je n'ai pas mangé: the negative in the past",
+        "explicacao": "STEP 1: the negation goes around the auxiliary «avoir»: «Je n'ai pas mangé.» «Tu n'as pas fini.» «Elle n'a pas parlé.» STEP 2: «ne… jamais», «ne… rien», «ne… personne» work the same way: «Je n'ai jamais vu ça.» «Je n'ai rien mangé.» STEP 3: «personne» goes AFTER the participle: «Je n'ai vu personne.» STEP 4: question with «est-ce que»: «Est-ce que tu as mangé ?» or with intonation: «Tu as mangé ?» STEP 5: question with inversion: «As-tu mangé ?» «Avez-vous fini ?» STEP 6: pronoun before the auxiliary: «Je l'ai vu.» «Je ne l'ai pas vu.» «Tu l'as pris ?» STEP 7: «déjà» and «encore» go between the auxiliary and the participle: «Tu as déjà mangé ?» «Je n'ai pas encore mangé.» STEP 8: with the pronoun «en»: «J'en ai pris deux.»",
+        "comparacao": "in English we say «I didn't eat», using 'did' to make the negative. French negates the auxiliary and leaves the participle untouched: «je n'ai pas mangé». The pronoun goes before the auxiliary, not before the participle: «je l'ai mangé».",
+        "tabela": [
+          {
+            "sentence": "Je n'ai pas mangé.",
+            "note": "ne + auxiliary + pas + participle"
+          },
+          {
+            "sentence": "Je n'ai jamais vu ça.",
+            "note": "jamais after the auxiliary"
+          },
+          {
+            "sentence": "Je n'ai rien pris.",
+            "note": "rien after the auxiliary"
+          },
+          {
+            "sentence": "Je n'ai vu personne.",
+            "note": "personne after the participle"
+          },
+          {
+            "sentence": "Je l'ai vu.",
+            "note": "pronoun before the auxiliary"
+          },
+          {
+            "sentence": "Tu as déjà mangé ?",
+            "note": "déjà between auxiliary and participle"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je ne mangé pas.",
+            "certo": "Je n'ai pas mangé.",
+            "motivo": "The auxiliary is missing."
+          },
+          {
+            "errado": "Je n'ai mangé pas.",
+            "certo": "Je n'ai pas mangé.",
+            "motivo": "«Pas» comes before the participle."
+          },
+          {
+            "errado": "J'ai vu le.",
+            "certo": "Je l'ai vu.",
+            "motivo": "Pronoun before the auxiliary."
+          },
+          {
+            "errado": "Je n'ai pas vu personne.",
+            "certo": "Je n'ai vu personne.",
+            "motivo": "Don't use «pas» with «personne»."
+          }
+        ],
+        "tag": "Past"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Answer out loud in the negative: «Tu as mangé ? Tu as vu Marie ? Tu as pris le bus ? Tu as déjà fini ?»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say the participle of: «parler, finir, vendre, faire, prendre, voir, boire»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-015.json",
+  "responsavel": null
+}

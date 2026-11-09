@@ -1,0 +1,174 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 31,
+  "fase": 4,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "The city: il y a, places and demonstratives: Demonstratives and asking for information",
+  "objetivo": "Lesson 8, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 8,
+    "titulo": "The city: il y a, places and demonstratives",
+    "objetivo": "Say what there is in the city with «il y a», locate places with prepositions, and use the demonstratives «ce», «cet», «cette» and «ces».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Demonstratives and asking for information",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "ce",
+            "translit": "SUH",
+            "pt": "",
+            "en": "",
+            "audio": "ce"
+          },
+          {
+            "ru": "cet",
+            "translit": "SEHT",
+            "pt": "",
+            "en": "",
+            "audio": "cet"
+          },
+          {
+            "ru": "cette",
+            "translit": "SEHT",
+            "pt": "",
+            "en": "",
+            "audio": "cette"
+          },
+          {
+            "ru": "ces",
+            "translit": "SAY",
+            "pt": "",
+            "en": "",
+            "audio": "ces"
+          },
+          {
+            "ru": "Excusez-moi",
+            "translit": "ehk-skew-zay-MWAH",
+            "pt": "",
+            "en": "",
+            "audio": "Excusez-moi"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Ce, cet, cette, ces",
+        "explicacao": "STEP 1: demonstratives agree with the noun: «ce livre» (masculine), «cette table» (feminine), «ces livres / ces tables» (plural). STEP 2: before a vowel or silent «h», the masculine is «cet»: «cet hôtel», «cet ami». «Cet» and «cette» sound the same. STEP 3: to tell near from far, add «-ci» (here) or «-là» (there): «ce livre-ci», «cette maison-là». STEP 4: the demonstrative replaces the article: «ce café», never «le ce café». STEP 5: to ask for information politely: «Excusez-moi, où est la gare ?» / «Pardon, il y a une pharmacie près d'ici ?» STEP 6: to thank and close: «Merci beaucoup, madame.»",
+        "comparacao": "English has «this / that / these / those»; French has a single series, «ce / cet / cette / ces», and uses «-ci» and «-là» when it needs to tell near from far. Without a suffix, the context tells you which one is meant.",
+        "tabela": [
+          {
+            "gender": "masculine",
+            "singular": "ce café",
+            "plural": "ces cafés"
+          },
+          {
+            "gender": "masculine + vowel",
+            "singular": "cet hôtel",
+            "plural": "ces hôtels"
+          },
+          {
+            "gender": "feminine",
+            "singular": "cette gare",
+            "plural": "ces gares"
+          },
+          {
+            "gender": "near / far",
+            "singular": "ce livre-ci / ce livre-là",
+            "plural": "ces livres-ci / ces livres-là"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "ce hôtel",
+            "certo": "cet hôtel",
+            "motivo": "Masculine before a vowel or silent «h»: «cet»."
+          },
+          {
+            "errado": "cette livre",
+            "certo": "ce livre",
+            "motivo": "«Livre» is masculine."
+          },
+          {
+            "errado": "le ce café",
+            "certo": "ce café",
+            "motivo": "The demonstrative replaces the article."
+          },
+          {
+            "errado": "ces cafe",
+            "certo": "ces cafés",
+            "motivo": "The plural takes «-s»."
+          }
+        ],
+        "tag": "Demonstratives"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "Dans la rue / In the street",
+        "contexto": "Paul asks Claire for directions.",
+        "linhas": [
+          {
+            "personagem": "Paul",
+            "ru": "— Excusez-moi, madame. Il y a une pharmacie près d'ici ?",
+            "en": "— Excuse me, madam. Is there a pharmacy near here?",
+            "audio": "Excusez-moi, madame. Il y a une pharmacie près d'ici ?"
+          },
+          {
+            "personagem": "Claire",
+            "ru": "— Oui. Vous voyez cette rue, à droite ?",
+            "en": "— Yes, there is. Do you see that street, on the right?",
+            "audio": "Oui. Vous voyez cette rue, à droite ?"
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Oui, je vois.",
+            "en": "— Yes, I see it.",
+            "audio": "Oui, je vois."
+          },
+          {
+            "personagem": "Claire",
+            "ru": "— La pharmacie est dans cette rue, en face de la boulangerie.",
+            "en": "— The pharmacy is on that street, opposite the bakery.",
+            "audio": "La pharmacie est dans cette rue, en face de la boulangerie."
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Merci beaucoup, madame. C'est loin ?",
+            "en": "— Thank you very much, madam. Is it far?",
+            "audio": "Merci beaucoup, madame. C'est loin ?"
+          },
+          {
+            "personagem": "Claire",
+            "ru": "— Non, c'est tout près. Bonne journée !",
+            "en": "— No, it's very close. Have a good day!",
+            "audio": "Non, c'est tout près. Bonne journée !"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Ask an imaginary friend where a place is and give directions, using «ce», «cette», «à droite», «à gauche», «tout droit»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Complete: «La poste est ___ la banque. Il y a une pharmacie ___ la gare.»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-008.json",
+  "responsavel": null
+}

@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { Aula, FASES, NIVEL_LABEL, STATUS_AULA, carregarAula, getCurso, statusDoCurso, aulaTraduzida, fonteDoCurso, explicacaoDoCurso } from '../lib/content';
 import { Navegacao } from '../components/Navegacao';
+import Carregando from '../components/Carregando';
 import { Sessao } from '../components/Sessao';
 import { AreaAluno, MarcarDia } from '../components/AreaAluno';
 import { usePageTitle } from '../lib/usePageTitle';
@@ -73,7 +74,9 @@ export default function Dia() {
     <div className="aa-leitura">
       <Navegacao pai={`/curso/${curso!.id}`} idioma={curso!.id} trilha={[{ rotulo: t.geral.inicio, para: '/' }, { rotulo: t.geral.cursos, para: curso!.id === 'br' ? '/portugues' : '/cursos' }, { rotulo: curso!.nome, para: `/curso/${curso!.id}` }, { rotulo: T.rotuloDia(dia) }]} />
 
-      {decidindo && <p className="resultado" role="status">{T.carregando}</p>}
+      {/* Espera da decisão de acesso: mesmo componente dos fallbacks globais
+          (esqueleto + Vuu sonolento), nunca o texto solto. */}
+      {decidindo && <Carregando />}
       {bloqueado && !decidindo && <Paywall idioma={curso!.id} curso={curso!.nome} indisponivel={ass.indisponivel} />}
       <ReportarProblema key={`${curso!.id}:${dia}`} idioma={curso!.id} dia={dia} />
       {erro && (
@@ -82,7 +85,11 @@ export default function Dia() {
           <button type="button" className="btn btn-ghost" onClick={() => window.location.reload()}>{T.tentarDeNovo}</button>
         </div>
       )}
-      {!aula && !erro && !bloqueado && <p className="resultado" role="status">{T.carregando}</p>}
+      {/* Espera do fetch dos dados da aula (carregarAula): era este <p> solto —
+          e o gémeo `decidindo` acima — que mostravam «Carregando...» sem
+          esqueleto nem mascote na navegação interna curso → dia, porque a
+          página já montou e este estado é local, fora do Suspense de App.tsx. */}
+      {!aula && !erro && !bloqueado && <Carregando />}
 
       {aula && (
         <>
@@ -98,15 +105,15 @@ export default function Dia() {
             {aula.status !== 'publicada' && <span className={`pill pill-aula-${aula.status}`}>{STATUS_AULA[aula.status]}</span>}
           </header>
 
-          <IdiomaExplicacao valor={explicacao} disponiveis={(['pt', 'en', 'es'] as const).filter((l) => fonteDoCurso(curso!.id) === l || (!!aula.aula && aulaTraduzida(curso!.id, aula.aula.numero, l)))} mudar={(l) => { lembrarExplicacao(curso!.id, l); setExplicacao(l); }} />
-          {aula.semTraducao && <p className="nota nota-traducao" role="note">{LOCALE.codigo === 'en' ? 'Available explanations:' : LOCALE.codigo === 'es' ? 'Explicaciones disponibles:' : 'Explicações disponíveis:'} {t.linguas[aula.semTraducao]}</p>}
+          {import.meta.env.VITE_ALVO === 'apk' && <IdiomaExplicacao valor={explicacao} disponiveis={(['pt', 'en'] as const).filter((l) => fonteDoCurso(curso!.id) === l || (!!aula.aula && aulaTraduzida(curso!.id, aula.aula.numero, l)))} mudar={(l) => { lembrarExplicacao(curso!.id, l); setExplicacao(l); }} />}
+          {aula.semTraducao && <p className="nota nota-traducao" role="note">{LOCALE.codigo === 'en' ? 'Available explanations:' : 'Explicações disponíveis:'} {t.linguas[aula.semTraducao]}</p>}
           {aula.status !== 'publicada' && (
             <p className="nota">{aula.sessao ? T.emRevisao : T.naoPublicada(curso!.nome)}</p>
           )}
 
           {aula.sessao ? (
             <>
-            {dia === 1 && (() => { const g = GUIA_SESSAO[LOCALE.codigo as 'pt-BR' | 'en' | 'es'] ?? GUIA_SESSAO['pt-BR']; return (
+            {dia === 1 && (() => { const g = GUIA_SESSAO[LOCALE.codigo] ?? GUIA_SESSAO['pt-BR']; return (
               <details className="guia-sessao" open={(import.meta.env.VITE_ALVO === 'apk' || Capacitor.isNativePlatform()) && telaLarga()}><summary>{g.titulo}</summary><ol>{g.passos.map((x) => <li key={x}>{x}</li>)}</ol></details>
             ); })()}
             <Sessao key={`${curso!.id}:${dia}`} nomeIdioma={LOCALE.codigo === 'en' ? curso!.nome : curso!.nome.toLowerCase()} explicacao={aula.idiomas.explicacaoEfetiva} sessao={aula.sessao} idioma={curso!.id} aula={aula.aula?.numero ?? dia} dia={dia} proximo={dia < total ? destino(curso!.id, dia + 1) : undefined} />

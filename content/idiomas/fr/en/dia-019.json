@@ -1,0 +1,179 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 19,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Nouns, articles and professions: C'est, il est and professions",
+  "objetivo": "Lesson 5, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 5,
+    "titulo": "Nouns, articles and professions",
+    "objetivo": "Recognize the gender and number of nouns, use definite, indefinite and contracted articles, and talk about professions with «il est» and «c'est».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "C'est, il est and professions",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "professeur",
+            "translit": "proh-feh-SUHR",
+            "pt": "",
+            "en": "",
+            "audio": "professeur"
+          },
+          {
+            "ru": "médecin",
+            "translit": "mayd-SAN",
+            "pt": "",
+            "en": "",
+            "audio": "médecin"
+          },
+          {
+            "ru": "étudiant",
+            "translit": "ay-tew-DYAHN",
+            "pt": "",
+            "en": "",
+            "audio": "étudiant"
+          },
+          {
+            "ru": "ingénieur",
+            "translit": "an-zhay-NYUHR",
+            "pt": "",
+            "en": "",
+            "audio": "ingénieur"
+          },
+          {
+            "ru": "avocat",
+            "translit": "ah-voh-KAH",
+            "pt": "",
+            "en": "",
+            "audio": "avocat"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Saying your profession: il est ou c'est?",
+        "explicacao": "STEP 1: to say your profession, use «il est» or «elle est» without an article: «Il est médecin.» «Elle est professeure.» STEP 2: with an article, use «c'est»: «C'est un médecin.» «C'est une amie.» STEP 3: «c'est» is for identifying and introducing: «C'est Paul.» «C'est mon professeur.» STEP 4: «il est» and «elle est» are for describing someone we already know: «Il est grand.» «Elle est contente.» STEP 5: if there is an adjective with the profession, go back to «c'est»: «C'est un bon médecin.» STEP 6: many professions change in the feminine: «-eur → -euse» (vendeur, vendeuse), «-ien → -ienne» (technicien, technicienne), «-teur → -trice» (acteur, actrice). Words in «-e» do not change: «un / une dentiste». STEP 7: ask: «Qu'est-ce que vous faites dans la vie ?» or «Vous travaillez dans quoi ?»",
+        "comparacao": "In English we say «he is a doctor» and «he is a good doctor», with the article both times. In French the article makes the difference: without an article, «il est médecin»; with an article, «c'est un médecin».",
+        "tabela": [
+          {
+            "situation": "profession (without an article)",
+            "structure": "il / elle est + profession",
+            "example": "Elle est professeure."
+          },
+          {
+            "situation": "with an article",
+            "structure": "c'est + un / une + noun",
+            "example": "C'est un médecin."
+          },
+          {
+            "situation": "with an adjective",
+            "structure": "c'est un bon…",
+            "example": "C'est un bon avocat."
+          },
+          {
+            "situation": "introducing someone",
+            "structure": "c'est + name",
+            "example": "C'est Paul."
+          },
+          {
+            "situation": "describing someone we already know",
+            "structure": "il / elle est + adjective",
+            "example": "Il est grand."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Il est un médecin.",
+            "certo": "Il est médecin. / C'est un médecin.",
+            "motivo": "No article with «il est»; with an article, use «c'est»."
+          },
+          {
+            "errado": "C'est médecin.",
+            "certo": "Il est médecin.",
+            "motivo": "Without an article, the structure is «il est»."
+          },
+          {
+            "errado": "Elle est une professeure.",
+            "certo": "Elle est professeure.",
+            "motivo": "No article after «elle est»."
+          },
+          {
+            "errado": "Il est mon professeur.",
+            "certo": "C'est mon professeur.",
+            "motivo": "With a possessive, use «c'est»."
+          }
+        ],
+        "tag": "C'est et il est"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "Que faites-vous ? / What do you do?",
+        "contexto": "Camille and Antoine talk about work.",
+        "linhas": [
+          {
+            "personagem": "Camille",
+            "ru": "— Antoine, tu travailles où ?",
+            "en": "— Antoine, where do you work?",
+            "audio": "Antoine, tu travailles où ?"
+          },
+          {
+            "personagem": "Antoine",
+            "ru": "— Je suis médecin à l'hôpital. Et toi ?",
+            "en": "— I'm a doctor at the hospital. And you?",
+            "audio": "Je suis médecin à l'hôpital. Et toi ?"
+          },
+          {
+            "personagem": "Camille",
+            "ru": "— Moi, je suis professeure. Mon ami Paul est ingénieur.",
+            "en": "— I'm a teacher. My friend Paul is an engineer.",
+            "audio": "Moi, je suis professeure. Mon ami Paul est ingénieur."
+          },
+          {
+            "personagem": "Antoine",
+            "ru": "— C'est un bon travail ?",
+            "en": "— Is it a good job?",
+            "audio": "C'est un bon travail ?"
+          },
+          {
+            "personagem": "Camille",
+            "ru": "— Oui, j'aime beaucoup mon travail. C'est difficile, mais c'est intéressant.",
+            "en": "— Yes, I really like my job. It's hard, but it's interesting.",
+            "audio": "Oui, j'aime beaucoup mon travail. C'est difficile, mais c'est intéressant."
+          },
+          {
+            "personagem": "Antoine",
+            "ru": "— Moi aussi, j'aime mon travail. C'est une belle vie !",
+            "en": "— I like my job too. It's a wonderful life!",
+            "audio": "Moi aussi, j'aime mon travail. C'est une belle vie !"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say your profession (or the one you want to have) and the profession of three people, using «il est», «elle est» and «c'est un/une»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say what you like and don't like, with «aimer» and the definite article: «J'aime… Je n'aime pas…»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-005.json",
+  "responsavel": null
+}

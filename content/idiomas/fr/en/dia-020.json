@@ -1,0 +1,510 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 20,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Nouns, articles and professions: Review and practice for lesson 5",
+  "objetivo": "Lesson 5, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 5,
+    "titulo": "Nouns, articles and professions",
+    "objetivo": "Recognize the gender and number of nouns, use definite, indefinite and contracted articles, and talk about professions with «il est» and «c'est».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 5",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je vais au café",
+            "opcoes": [
+              "Je vais au café",
+              "Je vais à la gare",
+              "Je vais aux États-Unis"
+            ],
+            "gabarito": "Je vais au café",
+            "explicacao": "Listen to «au».",
+            "id": "fr-005-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Elle est professeure",
+            "opcoes": [
+              "Elle est professeure",
+              "C'est une professeure",
+              "Il est professeur"
+            ],
+            "gabarito": "Elle est professeure",
+            "explicacao": "Listen to «elle est».",
+            "id": "fr-005-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je n'ai pas de voiture",
+            "opcoes": [
+              "Je n'ai pas de voiture",
+              "J'ai une voiture",
+              "Je n'ai pas la voiture"
+            ],
+            "gabarito": "Je n'ai pas de voiture",
+            "explicacao": "Listen to «pas de».",
+            "id": "fr-005-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "J'aime le café",
+            "respostaEsperada": "J'aime le café",
+            "explicacao": "Write: J'aime le café.",
+            "id": "fr-005-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Il est médecin",
+            "respostaEsperada": "Il est médecin",
+            "explicacao": "Write: Il est médecin.",
+            "id": "fr-005-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Yes, I really like my job. It's hard, but it's interesting.»",
+            "opcoes": [
+              "j'aime",
+              "c'est",
+              "travail.",
+              "C'est",
+              "beaucoup",
+              "intéressant.",
+              "mais",
+              "difficile,",
+              "mon",
+              "Oui,"
+            ],
+            "gabarito": "Oui, j'aime beaucoup mon travail. C'est difficile, mais c'est intéressant.",
+            "explicacao": "Write: Oui, j'aime beaucoup mon travail. C'est difficile, mais c'est intéressant.",
+            "id": "fr-005-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "C'est un bon avocat",
+            "respostaEsperada": "C'est un bon avocat",
+            "explicacao": "Write: C'est un bon avocat.",
+            "id": "fr-005-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Antoine, tu travailles où ?",
+            "respostaEsperada": "Antoine, tu travailles où ?",
+            "explicacao": "Antoine, where do you work?",
+            "id": "fr-005-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the plural of «le journal»?",
+            "opcoes": [
+              "les journaux",
+              "les journals",
+              "les journales"
+            ],
+            "gabarito": "les journaux",
+            "explicacao": "«-al» becomes «-aux».",
+            "id": "fr-005-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "J'aime le café.",
+              "J'aime café.",
+              "J'aime du café."
+            ],
+            "gabarito": "J'aime le café.",
+            "explicacao": "After «aimer», the definite article.",
+            "id": "fr-005-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«à + le» forms…",
+            "opcoes": [
+              "au",
+              "à le",
+              "du"
+            ],
+            "gabarito": "au",
+            "explicacao": "The contraction is mandatory.",
+            "id": "fr-005-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Oui, j'aime beaucoup mon travail. C'est difficile, mais c'est intéressant.",
+            "respostaEsperada": "Oui, j'aime beaucoup mon travail. C'est difficile, mais c'est intéressant.",
+            "explicacao": "Yes, I really like my job. It's hard, but it's interesting.",
+            "id": "fr-005-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «He is a doctor»?",
+            "opcoes": [
+              "Il est médecin.",
+              "Il est un médecin.",
+              "C'est médecin."
+            ],
+            "gabarito": "Il est médecin.",
+            "explicacao": "No article with «il est».",
+            "id": "fr-005-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je n'ai pas ___ frère. (um)",
+            "opcoes": [
+              "de",
+              "un",
+              "le"
+            ],
+            "gabarito": "de",
+            "explicacao": "After a negative, «un» becomes «de».",
+            "id": "fr-005-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je parle ___ film. (do)",
+            "opcoes": [
+              "du",
+              "de le",
+              "des"
+            ],
+            "gabarito": "du",
+            "explicacao": "«de + le = du».",
+            "id": "fr-005-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Je suis médecin à l'hôpital. Et toi ?",
+            "respostaEsperada": "Je suis médecin à l'hôpital. Et toi ?",
+            "explicacao": "I'm a doctor at the hospital. And you?",
+            "id": "fr-005-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ est un bon médecin. (É)",
+            "opcoes": [
+              "C'",
+              "Il",
+              "Elle"
+            ],
+            "gabarito": "C'",
+            "explicacao": "With an article, «c'est».",
+            "id": "fr-005-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «I like my job too. It's a wonderful life!»",
+            "opcoes": [
+              "!",
+              "belle",
+              "aussi,",
+              "une",
+              "travail.",
+              "Moi",
+              "C'est",
+              "j'aime",
+              "mon",
+              "vie"
+            ],
+            "gabarito": "Moi aussi, j'aime mon travail. C'est une belle vie !",
+            "explicacao": "Write: Moi aussi, j'aime mon travail. C'est une belle vie !",
+            "id": "fr-005-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "J'ai ___ amis. (friends)",
+            "opcoes": [
+              "des",
+              "les",
+              "de"
+            ],
+            "gabarito": "des",
+            "explicacao": "«Des» is required.",
+            "id": "fr-005-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Elle est professeure à l'école.»",
+            "opcoes": [
+              "Elle",
+              "est",
+              "professeure",
+              "à",
+              "l'école"
+            ],
+            "gabarito": "Elle est professeure à l'école.",
+            "explicacao": "Profession without an article.",
+            "id": "fr-005-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Je ne parle pas du film.»",
+            "opcoes": [
+              "Je",
+              "ne",
+              "parle",
+              "pas",
+              "du",
+              "film"
+            ],
+            "gabarito": "Je ne parle pas du film.",
+            "explicacao": "ne… pas, du = de + le.",
+            "id": "fr-005-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I'm a student. I like coffee. I don't have a car.",
+            "respostaEsperada": "Je suis étudiant. J'aime le café. Je n'ai pas de voiture.",
+            "id": "fr-005-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Moi aussi, j'aime mon travail. C'est une belle vie !",
+            "respostaEsperada": "Moi aussi, j'aime mon travail. C'est une belle vie !",
+            "explicacao": "I like my job too. It's a wonderful life!",
+            "id": "fr-005-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "J'ai ___ ami brésilien. (um)",
+            "opcoes": [
+              "une",
+              "des",
+              "un"
+            ],
+            "gabarito": "un",
+            "explicacao": "«Ami» is masculine: «un ami».",
+            "id": "fr-005-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Moi, je suis professeure. Mon ami Paul est ingénieur.",
+            "respostaEsperada": "Moi, je suis professeure. Mon ami Paul est ingénieur.",
+            "explicacao": "I'm a teacher. My friend Paul is an engineer.",
+            "id": "fr-005-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle parle ___ professeur. (do)",
+            "opcoes": [
+              "du",
+              "de la",
+              "des"
+            ],
+            "gabarito": "du",
+            "explicacao": "«De + le» becomes «du».",
+            "id": "fr-005-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Les ___ sont sur la table. (the newspapers)",
+            "opcoes": [
+              "journals",
+              "journaux",
+              "journales"
+            ],
+            "gabarito": "journaux",
+            "explicacao": "Words in «-al» form the plural in «-aux».",
+            "id": "fr-005-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle n'a pas ___ maison. (a)",
+            "opcoes": [
+              "une",
+              "des",
+              "de"
+            ],
+            "gabarito": "de",
+            "explicacao": "In the negative, «un/une/des» become «de».",
+            "id": "fr-005-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «la voiture» mean?",
+            "audio": "la voiture",
+            "opcoes": [
+              "advogado",
+              "the car",
+              "a, an, some",
+              "the boy, the waiter"
+            ],
+            "gabarito": "the car",
+            "explicacao": "«la voiture» = the car.",
+            "id": "fr-005-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "J'aime ___ maison de Paul. (a)",
+            "opcoes": [
+              "la",
+              "le",
+              "les"
+            ],
+            "gabarito": "la",
+            "explicacao": "«Maison» is feminine, and after «aimer» the article is required.",
+            "id": "fr-005-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the plural of «le bateau»?",
+            "opcoes": [
+              "les bateaus",
+              "les bateaux",
+              "les bateau"
+            ],
+            "gabarito": "les bateaux",
+            "explicacao": "Words in «-eau» take «-x».",
+            "id": "fr-005-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which ending usually indicates a feminine noun?",
+            "opcoes": [
+              "-ment",
+              "-age",
+              "-tion"
+            ],
+            "gabarito": "-tion",
+            "explicacao": "«-tion» is feminine: «la nation»; «-ment» and «-age» are masculine.",
+            "id": "fr-005-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "C'est un bon travail ?",
+            "respostaEsperada": "C'est un bon travail ?",
+            "explicacao": "Is it a good job?",
+            "id": "fr-005-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "C'est un médecin.",
+              "Il est un médecin.",
+              "C'est médecin."
+            ],
+            "gabarito": "C'est un médecin.",
+            "explicacao": "With an article, use «c'est»; without one, «il est».",
+            "id": "fr-005-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «médecin» mean?",
+            "audio": "médecin",
+            "opcoes": [
+              "the friend (male or female)",
+              "the book",
+              "o café",
+              "doctor (male or female)"
+            ],
+            "gabarito": "doctor (male or female)",
+            "explicacao": "«médecin» = doctor (male or female).",
+            "id": "fr-005-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the correct negative of «J'ai des amis»?",
+            "opcoes": [
+              "Je n'ai pas des amis.",
+              "Je n'ai pas d'amis.",
+              "Je n'ai pas amis."
+            ],
+            "gabarito": "Je n'ai pas d'amis.",
+            "explicacao": "In the negative, «des» becomes «de» (d' before a vowel).",
+            "id": "fr-005-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «We're talking about Paul's friends.»",
+            "opcoes": [
+              "Nous",
+              "parlons",
+              "des",
+              "amis",
+              "de",
+              "Paul"
+            ],
+            "gabarito": "Nous parlons des amis de Paul.",
+            "explicacao": "«De + les» becomes «des».",
+            "id": "fr-005-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «This is not a book.»",
+            "opcoes": [
+              "Ce",
+              "n'est",
+              "pas",
+              "un",
+              "livre"
+            ],
+            "gabarito": "Ce n'est pas un livre.",
+            "explicacao": "With «être», the article does not change in the negative.",
+            "id": "fr-005-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: The books are the teacher's. He's a good doctor.",
+            "respostaEsperada": "Les livres sont du professeur. C'est un bon médecin.",
+            "id": "fr-005-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: She is a doctor. I have friends. I don't have a house.",
+            "respostaEsperada": "Elle est médecin. J'ai des amis. Je n'ai pas de maison.",
+            "id": "fr-005-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Introduce four imaginary people aloud and say each one's profession."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say five nouns with an article, in the singular and plural."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-005.json",
+  "responsavel": null
+}

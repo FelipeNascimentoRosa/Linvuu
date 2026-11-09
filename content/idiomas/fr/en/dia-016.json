@@ -1,0 +1,507 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 16,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Present tense of -er verbs, negation and questions: Review and practice for lesson 4",
+  "objetivo": "Lesson 4, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 4,
+    "titulo": "Present tense of -er verbs, negation and questions",
+    "objetivo": "Conjugate -er verbs in the present tense, make negatives with «ne… pas», use the adverbs «bien», «beaucoup» and «très», and ask questions with «où», «qui», «quand», «comment» and «pourquoi».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 4",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je parle français",
+            "opcoes": [
+              "Je parle français",
+              "Nous parlons français",
+              "Ils parlent français"
+            ],
+            "gabarito": "Je parle français",
+            "explicacao": "Listen: «je parle» and «ils parlent» sound alike; here it is «je».",
+            "id": "fr-004-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je n'aime pas danser",
+            "opcoes": [
+              "Je n'aime pas danser",
+              "J'aime danser",
+              "Je ne danse pas"
+            ],
+            "gabarito": "Je n'aime pas danser",
+            "explicacao": "Listen to the «n'aime pas».",
+            "id": "fr-004-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Où est-ce que tu habites",
+            "opcoes": [
+              "Où est-ce que tu habites",
+              "Où habitez-vous",
+              "Comment tu habites"
+            ],
+            "gabarito": "Où est-ce que tu habites",
+            "explicacao": "Listen to «est-ce que».",
+            "id": "fr-004-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je parle un peu français",
+            "respostaEsperada": "Je parle un peu français",
+            "explicacao": "Write: Je parle un peu français.",
+            "id": "fr-004-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Elle n'habite pas à Paris",
+            "respostaEsperada": "Elle n'habite pas à Paris",
+            "explicacao": "Write: Elle n'habite pas à Paris.",
+            "id": "fr-004-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Me too! Do you work in Lyon?»",
+            "opcoes": [
+              "Moi",
+              "Lyon",
+              "Tu",
+              "?",
+              "travailles",
+              "!",
+              "à",
+              "aussi"
+            ],
+            "gabarito": "Moi aussi ! Tu travailles à Lyon ?",
+            "explicacao": "Write: Moi aussi ! Tu travailles à Lyon ?",
+            "id": "fr-004-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Pourquoi tu étudies le français",
+            "respostaEsperada": "Pourquoi tu étudies le français",
+            "explicacao": "Write: Pourquoi tu étudies le français.",
+            "id": "fr-004-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Bonjour ! Je m'appelle Hugo. Comment tu t'appelles ?",
+            "respostaEsperada": "Bonjour ! Je m'appelle Hugo. Comment tu t'appelles ?",
+            "explicacao": "Good morning! My name is Hugo. What's your name?",
+            "id": "fr-004-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the ending for «nous» in the present tense of an -er verb?",
+            "opcoes": [
+              "-ons",
+              "-ez",
+              "-ent"
+            ],
+            "gabarito": "-ons",
+            "explicacao": "«nous parlons».",
+            "id": "fr-004-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je n'habite pas ici.",
+              "Je ne habite pas ici.",
+              "Je n'habite ici pas."
+            ],
+            "gabarito": "Je n'habite pas ici.",
+            "explicacao": "Elision: «ne» becomes «n'» before a vowel or «h».",
+            "id": "fr-004-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «me neither»?",
+            "opcoes": [
+              "Moi non plus.",
+              "Moi aussi.",
+              "Moi pas."
+            ],
+            "gabarito": "Moi non plus.",
+            "explicacao": "«Moi non plus» answers a negative statement.",
+            "id": "fr-004-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Moi aussi ! Tu travailles à Lyon ?",
+            "respostaEsperada": "Moi aussi ! Tu travailles à Lyon ?",
+            "explicacao": "Me too! Do you work in Lyon?",
+            "id": "fr-004-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which adverb comes before an adjective?",
+            "opcoes": [
+              "très",
+              "beaucoup",
+              "peu"
+            ],
+            "gabarito": "très",
+            "explicacao": "«Très» before an adjective.",
+            "id": "fr-004-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Nous ___ français. (speak)",
+            "opcoes": [
+              "parlons",
+              "parlez",
+              "parlent"
+            ],
+            "gabarito": "parlons",
+            "explicacao": "«nous parlons».",
+            "id": "fr-004-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle ne ___ pas à Paris. (works)",
+            "opcoes": [
+              "travaille",
+              "travailles",
+              "travaillent"
+            ],
+            "gabarito": "travaille",
+            "explicacao": "«elle travaille».",
+            "id": "fr-004-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Salut, Hugo. Je m'appelle Chloé.",
+            "respostaEsperada": "Salut, Hugo. Je m'appelle Chloé.",
+            "explicacao": "Hi, Hugo. My name is Chloé.",
+            "id": "fr-004-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "J'aime ___ le café. (a lot)",
+            "opcoes": [
+              "beaucoup",
+              "très",
+              "bien"
+            ],
+            "gabarito": "beaucoup",
+            "explicacao": "«beaucoup» with a verb.",
+            "id": "fr-004-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «parler» mean?",
+            "audio": "parler",
+            "opcoes": [
+              "to like, to love",
+              "why",
+              "to speak",
+              "where"
+            ],
+            "gabarito": "to speak",
+            "explicacao": "«parler» = to speak.",
+            "id": "fr-004-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ habites-tu ? (where)",
+            "opcoes": [
+              "Où",
+              "Qui",
+              "Quand"
+            ],
+            "gabarito": "Où",
+            "explicacao": "«Où» asks about a place.",
+            "id": "fr-004-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Je ne parle pas anglais.»",
+            "opcoes": [
+              "Je",
+              "ne",
+              "parle",
+              "pas",
+              "anglais"
+            ],
+            "gabarito": "Je ne parle pas anglais.",
+            "explicacao": "ne… pas wraps around the verb.",
+            "id": "fr-004-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Où est-ce que tu habites ?»",
+            "opcoes": [
+              "Où",
+              "est-ce",
+              "que",
+              "tu",
+              "habites"
+            ],
+            "gabarito": "Où est-ce que tu habites",
+            "explicacao": "question word + est-ce que + sentence.",
+            "id": "fr-004-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I live in Paris. I don't work in Lyon. Why are you studying French?",
+            "respostaEsperada": "J'habite à Paris. Je ne travaille pas à Lyon. Pourquoi tu étudies le français ?",
+            "id": "fr-004-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «mal» mean?",
+            "audio": "mal",
+            "opcoes": [
+              "mal",
+              "a little",
+              "to study",
+              "to like, to love"
+            ],
+            "gabarito": "mal",
+            "explicacao": "«mal» = mal.",
+            "id": "fr-004-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Vous ___ le français. (study)",
+            "opcoes": [
+              "étudions",
+              "étudiez",
+              "étudient"
+            ],
+            "gabarito": "étudiez",
+            "explicacao": "With «vous», the «-er» verb ends in «-ez».",
+            "id": "fr-004-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Où est-ce que tu habites ?",
+            "respostaEsperada": "Où est-ce que tu habites ?",
+            "explicacao": "Where do you live?",
+            "id": "fr-004-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ils ___ la musique. (ouvem)",
+            "opcoes": [
+              "écoute",
+              "écoutez",
+              "écoutent"
+            ],
+            "gabarito": "écoutent",
+            "explicacao": "With «ils», it ends in «-ent».",
+            "id": "fr-004-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je parle ___ français. (a little)",
+            "opcoes": [
+              "un peu",
+              "très",
+              "beaucoup"
+            ],
+            "gabarito": "un peu",
+            "explicacao": "«Un peu» = a little.",
+            "id": "fr-004-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle travaille ___ . (a lot)",
+            "opcoes": [
+              "très",
+              "beaucoup",
+              "un peu"
+            ],
+            "gabarito": "beaucoup",
+            "explicacao": "With a verb, use «beaucoup», not «très».",
+            "id": "fr-004-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «danser» mean?",
+            "audio": "danser",
+            "opcoes": [
+              "to study",
+              "mal",
+              "dançar",
+              "where"
+            ],
+            "gabarito": "dançar",
+            "explicacao": "«danser» = dançar.",
+            "id": "fr-004-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "J'aime le café. — Moi ___ . (me too)",
+            "opcoes": [
+              "non plus",
+              "très",
+              "aussi"
+            ],
+            "gabarito": "aussi",
+            "explicacao": "Agreeing with an affirmative: «moi aussi».",
+            "id": "fr-004-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which is the correct form?",
+            "opcoes": [
+              "J'habite à Paris.",
+              "Je habite à Paris.",
+              "Jhabite à Paris."
+            ],
+            "gabarito": "J'habite à Paris.",
+            "explicacao": "Before a silent «h», «je» becomes «j'».",
+            "id": "fr-004-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you answer «Pourquoi tu étudies le français ?»",
+            "opcoes": [
+              "Pour que j'aime.",
+              "Parce que j'aime ça.",
+              "Pourquoi j'aime."
+            ],
+            "gabarito": "Parce que j'aime ça.",
+            "explicacao": "«Pourquoi» asks; the answer begins with «parce que».",
+            "id": "fr-004-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "J'habite ici, rue Victor Hugo. Et toi ?",
+            "respostaEsperada": "J'habite ici, rue Victor Hugo. Et toi ?",
+            "explicacao": "I live here, on Rue Victor Hugo. And you?",
+            "id": "fr-004-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which question uses the formal inversion?",
+            "opcoes": [
+              "Où vous habitez ?",
+              "Où est-ce que vous habitez-vous ?",
+              "Où habitez-vous ?"
+            ],
+            "gabarito": "Où habitez-vous ?",
+            "explicacao": "In inversion, the verb comes before the pronoun, with a hyphen.",
+            "id": "fr-004-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «aimer» mean?",
+            "audio": "aimer",
+            "opcoes": [
+              "to like, to love",
+              "how",
+              "where",
+              "dançar"
+            ],
+            "gabarito": "to like, to love",
+            "explicacao": "«aimer» = to like, to love.",
+            "id": "fr-004-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which question word asks «when»?",
+            "opcoes": [
+              "quand",
+              "comment",
+              "où"
+            ],
+            "gabarito": "quand",
+            "explicacao": "«Quand» = when.",
+            "id": "fr-004-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «We speak a little French.»",
+            "opcoes": [
+              "Nous",
+              "parlons",
+              "un",
+              "peu",
+              "français"
+            ],
+            "gabarito": "Nous parlons un peu français.",
+            "explicacao": "«Nous» + «-ons»; «un peu» after the verb.",
+            "id": "fr-004-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «She doesn't listen to the music.»",
+            "opcoes": [
+              "Elle",
+              "n'écoute",
+              "pas",
+              "la",
+              "musique"
+            ],
+            "gabarito": "Elle n'écoute pas la musique.",
+            "explicacao": "«Ne» becomes «n'» before a vowel.",
+            "id": "fr-004-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: We study French. They don't speak English.",
+            "respostaEsperada": "Nous étudions le français. Ils ne parlent pas anglais.",
+            "id": "fr-004-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French, with «où» at the end: Where do you work? I work a lot.",
+            "respostaEsperada": "Tu travailles où ? Je travaille beaucoup.",
+            "id": "fr-004-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Tell, aloud, in five sentences, where you live, what you do and what you don't do."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Conjugate «parler» and say five sentences, two of them negative."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-004.json",
+  "responsavel": null
+}

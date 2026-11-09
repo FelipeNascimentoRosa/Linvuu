@@ -1,0 +1,167 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 73,
+  "fase": 8,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "The imparfait: how things used to be: Forming the imparfait",
+  "objetivo": "Lesson 19, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 19,
+    "titulo": "The imparfait: how things used to be",
+    "objetivo": "Form the imparfait and use it for past habits, descriptions and settings («quand j'étais petit, j'habitais à la campagne»).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Forming the imparfait",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "autrefois",
+            "translit": "oh-truh-FWAH",
+            "pt": "",
+            "en": "",
+            "audio": "autrefois"
+          },
+          {
+            "ru": "avant",
+            "translit": "ah-VAHN",
+            "pt": "",
+            "en": "",
+            "audio": "avant"
+          },
+          {
+            "ru": "quand j'étais petit",
+            "translit": "kahn zhay-teh puh-TEE",
+            "pt": "",
+            "en": "",
+            "audio": "quand j'étais petit"
+          },
+          {
+            "ru": "d'habitude",
+            "translit": "dah-bee-TEWD",
+            "pt": "",
+            "en": "",
+            "audio": "d'habitude"
+          },
+          {
+            "ru": "tous les jours",
+            "translit": "too lay ZHOOR",
+            "pt": "",
+            "en": "",
+            "audio": "tous les jours"
+          },
+          {
+            "ru": "souvent",
+            "translit": "soo-VAHN",
+            "pt": "",
+            "en": "",
+            "audio": "souvent"
+          },
+          {
+            "ru": "la campagne",
+            "translit": "lah kahn-PAH-ny",
+            "pt": "",
+            "en": "",
+            "audio": "la campagne"
+          },
+          {
+            "ru": "l'enfance",
+            "translit": "lahn-FAHNS",
+            "pt": "",
+            "en": "",
+            "audio": "l'enfance"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Je parlais, nous mangions: formation",
+        "explicacao": "STEP 1: the imparfait describes a past that lasted, repeated or formed the setting. STEP 2: to form it, take the present-tense «nous» form and drop the «-ons»: «nous parlons → parl-», «nous finissons → finiss-», «nous prenons → pren-». STEP 3: add the endings: «-ais, -ais, -ait, -ions, -iez, -aient». So: «je parlais, tu parlais, il parlait, nous parlions, vous parliez, ils parlaient». STEP 4: the only irregular verb is «être»: stem «ét-»: «j'étais, tu étais, il était, nous étions, vous étiez, ils étaient». STEP 5: verbs in «-ger» and «-cer» keep the sound: «je mangeais, nous mangions» and «je commençais, nous commencions». STEP 6: «faire» → «je faisais» (from «nous faisons»); «avoir» → «j'avais»; «aller» → «j'allais». STEP 7: the endings «-ais, -ait, -aient» all sound the same: like the 'ay' in 'say'. The difference is only in the spelling. STEP 8: question and negation are the same as in the present: «Tu habitais où ?» «Je ne mangeais pas de viande.»",
+        "comparacao": "The English equivalent is «I used to speak» or «I was speaking». French is very similar in use («je parlais», «nous mangions»), and the form comes from the present-tense «nous» form, with no exception except «être».",
+        "tabela": [
+          {
+            "person": "je",
+            "parler": "parlais",
+            "finir": "finissais",
+            "etre": "étais"
+          },
+          {
+            "person": "tu",
+            "parler": "parlais",
+            "finir": "finissais",
+            "etre": "étais"
+          },
+          {
+            "person": "il / elle",
+            "parler": "parlait",
+            "finir": "finissait",
+            "etre": "était"
+          },
+          {
+            "person": "nous",
+            "parler": "parlions",
+            "finir": "finissions",
+            "etre": "étions"
+          },
+          {
+            "person": "vous",
+            "parler": "parliez",
+            "finir": "finissiez",
+            "etre": "étiez"
+          },
+          {
+            "person": "ils / elles",
+            "parler": "parlaient",
+            "finir": "finissaient",
+            "etre": "étaient"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je parlé quand j'étais petit.",
+            "certo": "Je parlais quand j'étais petit.",
+            "motivo": "Old habit: imparfait."
+          },
+          {
+            "errado": "Nous mangons.",
+            "certo": "Nous mangions.",
+            "motivo": "Stem of «nous» + «-ions»."
+          },
+          {
+            "errado": "J'étaisais petit.",
+            "certo": "J'étais petit.",
+            "motivo": "«Être» does not take an extra «-ais»."
+          },
+          {
+            "errado": "Nous mangeions.",
+            "certo": "Nous mangions.",
+            "motivo": "With «nous», the «e» disappears: «mangions»."
+          }
+        ],
+        "tag": "Imparfait"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say aloud five things you used to do as a child, with «je» and «nous»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Tell aloud what you did yesterday with the passé composé."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-019.json",
+  "responsavel": null
+}

@@ -1,0 +1,247 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 59,
+  "fase": 6,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Shopping, clothes, colours, este and ese: Este, ese and aquel",
+  "objetivo": "Lesson 15, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 15,
+    "titulo": "Shopping, clothes, colours, este and ese",
+    "objetivo": "Name clothes and colors with the right agreement, ask about prices and sizes, pay, use the numbers 100 to 1000, point at objects with este, ese and aquel, and handle a short purchase in a store.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Este, ese and aquel",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "barato, barata",
+            "translit": "[pronuncia] bah-RAH-to, bah-RAH-tah",
+            "pt": "cheap",
+            "en": "",
+            "audio": "barato, barata"
+          },
+          {
+            "ru": "caro, cara",
+            "translit": "[pronuncia] KAH-ro, KAH-rah",
+            "pt": "expensive",
+            "en": "",
+            "audio": "caro, cara"
+          },
+          {
+            "ru": "grande",
+            "translit": "big",
+            "pt": "big",
+            "en": "",
+            "audio": "grande"
+          },
+          {
+            "ru": "pequeño, pequeña",
+            "translit": "[pronuncia] peh-KEH-nyo, peh-KEH-nyah",
+            "pt": "small",
+            "en": "",
+            "audio": "pequeño, pequeña"
+          },
+          {
+            "ru": "nuevo, nueva",
+            "translit": "[pronuncia] NWEH-bo, NWEH-bah",
+            "pt": "new",
+            "en": "",
+            "audio": "nuevo, nueva"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "The demonstratives: este, ese, and aquel",
+        "explicacao": "STEP 1: demonstratives point at something and signal distance. «Este» is for what's near the speaker; «ese» is for what's near the listener or a bit further away; «aquel» is for what's far from both. They pair with «aquí, ahí, allí». STEP 2: the forms of «este»: este, esta, estos, estas. Of «ese»: ese, esa, esos, esas. Of «aquel»: aquel, aquella, aquellos, aquellas. STEP 3: the demonstrative agrees with the noun in gender and number and comes before it: «esta camisa», «ese abrigo», «aquellos zapatos». STEP 4: without the noun, the demonstrative works as a pronoun: «Quiero este» (I want this one), «¿Cuánto cuesta esa?» (how much does that one cost?). Today it's written with no accent mark. STEP 5: «esto», «eso» and «aquello» are neuter: they're for an unidentified thing or an idea, and they never change form: «¿Qué es esto?» (what's this?), «Eso es caro» (that's expensive). STEP 6: there's no fusion with a preposition: «in this» is «en este», «of/from this» is «de esta», «in that» is «en ese». STEP 7: to choose between two things: «¿Cuál prefieres: este o ese?» (which do you prefer, this one or that one?) — lesson 16 covers more of this.",
+        "comparacao": "English also has this near/far distinction, but collapses it into just two words, «this» and «that», where Spanish keeps three levels of distance (este/ese/aquel) tied to speaker, listener, and neither. And where English happily fuses a preposition straight onto the demonstrative-adjacent phrase («in this store»), Spanish never fuses the preposition onto the demonstrative itself: it's always «en esta tienda», never a contracted form, and «of that coat» is «de ese abrigo», word for word, with no shortcut.",
+        "exemplos": [
+          {
+            "ru": "Esta camisa es muy bonita.",
+            "pt": "This shirt is very pretty."
+          },
+          {
+            "ru": "Ese abrigo es caro.",
+            "pt": "That coat is expensive."
+          },
+          {
+            "ru": "Aquellos zapatos son baratos.",
+            "pt": "Those shoes over there are cheap."
+          },
+          {
+            "ru": "¿Qué es esto?",
+            "pt": "What is this?"
+          },
+          {
+            "ru": "Estoy en esta tienda.",
+            "pt": "I'm in this store."
+          }
+        ],
+        "tabela": [
+          {
+            "distancia": "[misto] near me (aquí)",
+            "singular": "[misto] este, esta",
+            "plural": "[misto] estos, estas",
+            "neutro": "[misto] esto"
+          },
+          {
+            "distancia": "[misto] near you, or a bit further (ahí)",
+            "singular": "[misto] ese, esa",
+            "plural": "[misto] esos, esas",
+            "neutro": "[misto] eso"
+          },
+          {
+            "distancia": "[misto] far from both (allí)",
+            "singular": "[misto] aquel, aquella",
+            "plural": "[misto] aquellos, aquellas",
+            "neutro": "[misto] aquello"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] Este camisa es azul.",
+            "certo": "[misto] Esta camisa es azul.",
+            "motivo": "«Camisa» is feminine: «esta»."
+          },
+          {
+            "errado": "[misto] Esta pantalón es negro.",
+            "certo": "[misto] Estos pantalones son negros.",
+            "motivo": "«Pantalones» is plural, and so is the verb."
+          },
+          {
+            "errado": "[misto] ¿Qué es este?",
+            "certo": "[misto] ¿Qué es esto?",
+            "motivo": "For something you don't know the identity of, use the neuter «esto»."
+          },
+          {
+            "errado": "[misto] Estoy nesta tienda.",
+            "certo": "[misto] Estoy en esta tienda.",
+            "motivo": "There's no fusion: «en» + «esta»."
+          },
+          {
+            "errado": "[misto] Quiero de ese abrigo.",
+            "certo": "[misto] Quiero ese abrigo.",
+            "motivo": "With no preposition, the demonstrative just points at the object."
+          }
+        ],
+        "tag": "Demonstratives"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "En la tienda / At the store",
+        "contexto": "Lucía is buying a jacket; the sales assistant helps her.",
+        "linhas": [
+          {
+            "personagem": "La dependienta",
+            "ru": "— Buenas tardes. ¿Qué desea?",
+            "pt": "— Good afternoon. What would you like?",
+            "audio": "Buenas tardes. ¿Qué desea?",
+            "rotulo": "[personagem] La dependienta"
+          },
+          {
+            "personagem": "Lucía",
+            "ru": "— Buenas tardes. Busco una chaqueta negra.",
+            "pt": "— Good afternoon. I'm looking for a black jacket.",
+            "audio": "Buenas tardes. Busco una chaqueta negra.",
+            "rotulo": "[personagem] Lucía"
+          },
+          {
+            "personagem": "La dependienta",
+            "ru": "— Tenemos estas dos. Esta es de algodón y esa es de lana.",
+            "pt": "— We have these two. This one is cotton and that one is wool.",
+            "audio": "Tenemos estas dos. Esta es de algodón y esa es de lana.",
+            "rotulo": "[personagem] La dependienta"
+          },
+          {
+            "personagem": "Lucía",
+            "ru": "— ¿Cuánto cuesta esta?",
+            "pt": "— How much is this one?",
+            "audio": "¿Cuánto cuesta esta?",
+            "rotulo": "[personagem] Lucía"
+          },
+          {
+            "personagem": "La dependienta",
+            "ru": "— Cuesta sesenta y cinco euros.",
+            "pt": "— It costs sixty-five euros.",
+            "audio": "Cuesta sesenta y cinco euros.",
+            "rotulo": "[personagem] La dependienta"
+          },
+          {
+            "personagem": "Lucía",
+            "ru": "— Es un poco cara. ¿Y esa?",
+            "pt": "— That's a bit pricey. And that one?",
+            "audio": "Es un poco cara. ¿Y esa?",
+            "rotulo": "[personagem] Lucía"
+          },
+          {
+            "personagem": "La dependienta",
+            "ru": "— Esa cuesta cuarenta euros y está en rebajas.",
+            "pt": "— That one costs forty euros and it's on sale.",
+            "audio": "Esa cuesta cuarenta euros y está en rebajas.",
+            "rotulo": "[personagem] La dependienta"
+          },
+          {
+            "personagem": "Lucía",
+            "ru": "— Perfecto. ¿Puedo probarme esta chaqueta?",
+            "pt": "— Perfect. Can I try on this jacket?",
+            "audio": "Perfecto. ¿Puedo probarme esta chaqueta?",
+            "rotulo": "[personagem] Lucía"
+          },
+          {
+            "personagem": "La dependienta",
+            "ru": "— Claro. El probador está al fondo.",
+            "pt": "— Of course. The fitting room is at the back.",
+            "audio": "Claro. El probador está al fondo.",
+            "rotulo": "[personagem] La dependienta"
+          },
+          {
+            "personagem": "Lucía",
+            "ru": "— Me queda bien. Quiero esta chaqueta.",
+            "pt": "— It fit me well. I'll take this jacket.",
+            "audio": "Me queda bien. Quiero esta chaqueta.",
+            "rotulo": "[personagem] Lucía"
+          },
+          {
+            "personagem": "La dependienta",
+            "ru": "— ¿Paga con tarjeta o en efectivo?",
+            "pt": "— Are you paying by card or in cash?",
+            "audio": "¿Paga con tarjeta o en efectivo?",
+            "rotulo": "[personagem] La dependienta"
+          },
+          {
+            "personagem": "Lucía",
+            "ru": "— Con tarjeta, por favor.",
+            "pt": "— By card, please.",
+            "audio": "Con tarjeta, por favor.",
+            "rotulo": "[personagem] Lucía"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Pick two objects in your house, one near and one far, and say: «Este… es… Aquel… es… ¿Cuánto cuesta ese?». Use a color in each sentence."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say the prices of three items in euros: «Cuesta treinta y cinco euros… ciento veinte euros…»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-015.json",
+  "responsavel": null
+}

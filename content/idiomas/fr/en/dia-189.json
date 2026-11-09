@@ -1,0 +1,161 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 189,
+  "fase": 19,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Giving opinions, agreeing and debating: Expressing an opinion",
+  "objetivo": "Lesson 48, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 48,
+    "titulo": "Giving opinions, agreeing and debating",
+    "objetivo": "Express an opinion, agree, disagree and argue politely in a conversation or debate.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Expressing an opinion",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "à mon avis",
+            "translit": "ah moh-nah-VEE",
+            "pt": "",
+            "en": "",
+            "audio": "à mon avis"
+          },
+          {
+            "ru": "selon moi",
+            "translit": "suh-lohn MWAH",
+            "pt": "",
+            "en": "",
+            "audio": "selon moi"
+          },
+          {
+            "ru": "je pense que",
+            "translit": "zhuh pahns KUH",
+            "pt": "",
+            "en": "",
+            "audio": "je pense que"
+          },
+          {
+            "ru": "je trouve que",
+            "translit": "zhuh troov KUH",
+            "pt": "",
+            "en": "",
+            "audio": "je trouve que"
+          },
+          {
+            "ru": "il me semble que",
+            "translit": "eel muh sahn-bluh KUH",
+            "pt": "",
+            "en": "",
+            "audio": "il me semble que"
+          },
+          {
+            "ru": "en ce qui me concerne",
+            "translit": "ahn suh kee muh kohn-SEHRN",
+            "pt": "",
+            "en": "",
+            "audio": "en ce qui me concerne"
+          },
+          {
+            "ru": "d'après",
+            "translit": "dah-PREH",
+            "pt": "",
+            "en": "",
+            "audio": "d'après"
+          },
+          {
+            "ru": "pour moi",
+            "translit": "poor MWAH",
+            "pt": "",
+            "en": "",
+            "audio": "pour moi"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "À mon avis, je trouve que",
+        "explicacao": "STEP 1: direct opinion: «à mon avis», «selon moi», «pour moi», «d'après moi». STEP 2: with a verb: «je pense que», «je crois que», «je trouve que» + indicative: «Je trouve que c'est une bonne idée.» STEP 3: with caution: «il me semble que», «j'ai l'impression que» + indicative: «J'ai l'impression qu'il est fatigué.» STEP 4: negative opinion takes the subjunctive: «Je ne pense pas que ce soit possible.» STEP 5: asking for an opinion: «Qu'en penses-tu ?», «Que penses-tu de… ?», «Tu es d'accord ?», «Quel est ton avis ?» STEP 6: «penser à» (to think about, to reflect on) × «penser de» (opinion): «À quoi penses-tu ?» × «Que penses-tu de ce film ?» STEP 7: «en ce qui me concerne» is more formal: «En ce qui me concerne, c'est trop cher.» STEP 8: «d'après» + person or source: «D'après le journal, il va pleuvoir.»",
+        "comparacao": "in English «I think» does everything. In French choose: «je pense que» (reflection), «je trouve que» (feeling or taste), «il me semble que» (caution). After the negative form («je ne pense pas que»), the mood changes to the subjunctive.",
+        "tabela": [
+          {
+            "expression": "à mon avis",
+            "usage": "direct opinion",
+            "example": "À mon avis, c'est une bonne idée."
+          },
+          {
+            "expression": "je trouve que",
+            "usage": "personal impression",
+            "example": "Je trouve que c'est trop cher."
+          },
+          {
+            "expression": "il me semble que",
+            "usage": "with caution",
+            "example": "Il me semble qu'il a raison."
+          },
+          {
+            "expression": "selon moi",
+            "usage": "formal",
+            "example": "Selon moi, c'est faux."
+          },
+          {
+            "expression": "qu'en penses-tu ?",
+            "usage": "asking for an opinion",
+            "example": "Qu'en penses-tu ?"
+          },
+          {
+            "expression": "d'après",
+            "usage": "citing a source",
+            "example": "D'après le journal…"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je pense à ce film que c'est bon.",
+            "certo": "Je pense que ce film est bon.",
+            "motivo": "«Penser que» takes no preposition."
+          },
+          {
+            "errado": "Je ne pense pas qu'il a raison.",
+            "certo": "Je ne pense pas qu'il ait raison.",
+            "motivo": "Negation: subjunctive."
+          },
+          {
+            "errado": "À mon avis que c'est faux.",
+            "certo": "À mon avis, c'est faux.",
+            "motivo": "No «que»."
+          },
+          {
+            "errado": "Que penses-tu à ce film ?",
+            "certo": "Que penses-tu de ce film ?",
+            "motivo": "Opinion: «penser de»."
+          }
+        ],
+        "tag": "Opinion"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Give five opinions aloud about films, food or cities, using different expressions."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write a short text with «d'abord, ensuite, enfin» and two connectors of opposition."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-048.json",
+  "responsavel": null
+}

@@ -1,0 +1,137 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 54,
+  "fase": 6,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Wanting, being able to, having to, and the pronouns «y» and «en»: The pronoun «y»: places",
+  "objetivo": "Lesson 14, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 14,
+    "titulo": "Wanting, being able to, having to, and the pronouns «y» and «en»",
+    "objetivo": "Use «vouloir», «pouvoir», «devoir» and «savoir», and replace places with «y» and quantities with «en».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "The pronoun «y»: places",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "y",
+            "translit": "EE",
+            "pt": "",
+            "en": "",
+            "audio": "y"
+          },
+          {
+            "ru": "là",
+            "translit": "LAH",
+            "pt": "",
+            "en": "",
+            "audio": "là"
+          },
+          {
+            "ru": "ici",
+            "translit": "ee-SEE",
+            "pt": "",
+            "en": "",
+            "audio": "ici"
+          },
+          {
+            "ru": "aller",
+            "translit": "ah-LAY",
+            "pt": "",
+            "en": "",
+            "audio": "aller"
+          },
+          {
+            "ru": "rester",
+            "translit": "rehs-TAY",
+            "pt": "",
+            "en": "",
+            "audio": "rester"
+          },
+          {
+            "ru": "arriver",
+            "translit": "ah-ree-VAY",
+            "pt": "",
+            "en": "",
+            "audio": "arriver"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Replacing a place with «y»",
+        "explicacao": "STEP 1: «y» replaces «à + place», «chez + person» and other prepositions of place: «Tu vas à Paris ? — Oui, j'y vais.» STEP 2: the «y» goes before the verb, like the other pronouns: «J'y vais.» «Je n'y vais pas.» «Je vais y aller.» STEP 3: with «il y a» the «y» is already inside: «Il y a un café ? — Oui, il y en a un.» (see «en» in the next part). STEP 4: the affirmative imperative puts «y» after the verb, with a hyphen: «Vas-y !» (with an extra «s») and «Allons-y !». STEP 5: «y» also replaces «à» + thing: «Je pense à ça. → J'y pense.» STEP 6: do not use «y» for people after «à»: «Je pense à Marie → Je pense à elle.» STEP 7: «y» is a tiny word meaning «there»: always attached to the verb: «J'y vais», «On y va».",
+        "comparacao": "English says «I'm going there», with a separate word at the end. French has «y», its word for 'there', and always uses it, before the verb: «j'y vais» is «I'm going there». Without «y», the place has to be repeated.",
+        "tabela": [
+          {
+            "question": "Tu vas à Paris ?",
+            "answer": "Oui, j'y vais."
+          },
+          {
+            "question": "Tu restes à la maison ?",
+            "answer": "Non, je n'y reste pas."
+          },
+          {
+            "question": "Vous allez au cinéma ?",
+            "answer": "Oui, nous y allons."
+          },
+          {
+            "question": "Tu vas chez Paul ?",
+            "answer": "Oui, j'y vais."
+          },
+          {
+            "question": "Allons à la plage !",
+            "answer": "Allons-y !"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je vais à Paris, j'y vais à Paris.",
+            "certo": "J'y vais.",
+            "motivo": "The «y» replaces the place; don't repeat it."
+          },
+          {
+            "errado": "Je vais y.",
+            "certo": "J'y vais.",
+            "motivo": "Before the verb."
+          },
+          {
+            "errado": "Je ne vais pas y.",
+            "certo": "Je n'y vais pas.",
+            "motivo": "«Ne» + «y» + verb + «pas»."
+          },
+          {
+            "errado": "Va-y !",
+            "certo": "Vas-y !",
+            "motivo": "The imperative with «y» takes the «s»."
+          }
+        ],
+        "tag": "Pronouns"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Answer out loud: «Tu vas à la banque ? Tu restes à la maison ? Tu vas au travail ?» with «y»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Make polite requests with «je voudrais» and «pouvez-vous»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-014.json",
+  "responsavel": null
+}

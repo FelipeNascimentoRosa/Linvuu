@@ -1,0 +1,186 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 9,
+  "fase": 1,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Introductions, countries and numbers: Greetings and introductions",
+  "objetivo": "Lesson 3, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 3,
+    "titulo": "Introductions, countries and numbers",
+    "objetivo": "Introduce yourself and someone else, say where you are from and where you live, use «en», «au» and «aux» with countries, and count from 0 to 20, including age with «avoir».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Greetings and introductions",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "Je m'appelle",
+            "translit": "zhuh mah-PEHL",
+            "pt": "",
+            "en": "",
+            "audio": "Je m'appelle"
+          },
+          {
+            "ru": "Comment tu t'appelles ?",
+            "translit": "koh-mahn tew tah-PEHL",
+            "pt": "",
+            "en": "",
+            "audio": "Comment tu t'appelles ?"
+          },
+          {
+            "ru": "Enchanté, enchantée",
+            "translit": "ahn-shahn-TAY, ahn-shahn-TAY",
+            "pt": "",
+            "en": "",
+            "audio": "Enchanté, enchantée"
+          },
+          {
+            "ru": "Comment allez-vous ?",
+            "translit": "koh-mahn-tah-lay-VOO",
+            "pt": "",
+            "en": "",
+            "audio": "Comment allez-vous ?"
+          },
+          {
+            "ru": "Je vais bien",
+            "translit": "zhuh vay BYAN",
+            "pt": "",
+            "en": "",
+            "audio": "Je vais bien"
+          },
+          {
+            "ru": "Et vous ?",
+            "translit": "ay VOO",
+            "pt": "",
+            "en": "",
+            "audio": "Et vous ?"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Introducing yourself and someone else",
+        "explicacao": "STEP 1: to say your name, use «Je m'appelle Ana.» Literally, «I call myself». STEP 2: to ask someone's name: informal, «Comment tu t'appelles ?»; formal, «Comment vous appelez-vous ?» or «Vous vous appelez comment ?». STEP 3: to ask how someone is: informal, «Ça va ?» or «Comment tu vas ?»; formal, «Comment allez-vous ?». STEP 4: when you meet someone, a man says «Enchanté» and a woman says «Enchantée» (the sound is the same; only the spelling changes). STEP 5: to introduce another person: «Voici Lucas.» or «C'est Léa.» To say «this is my friend», use «Voici mon ami Lucas» (possessives come in lesson 6). STEP 6: the choice between «tu» and «vous» changes the verb and the tone: when in doubt, use «vous» and let the other person suggest «tu».",
+        "comparacao": "English says «my name is» or I'm called, and for the same idea French uses the verb «appeler» with «m'», «t'», «s'»: «je m'appelle», «tu t'appelles», «il s'appelle». And while English says «nice to meet you» to everybody, French agrees with the speaker: «enchanté» or «enchantée».",
+        "tabela": [
+          {
+            "situation": "saying your name",
+            "informal": "Je m'appelle Ana.",
+            "formal": "Je m'appelle Ana Silva."
+          },
+          {
+            "situation": "asking someone's name",
+            "informal": "Comment tu t'appelles ?",
+            "formal": "Comment vous appelez-vous ?"
+          },
+          {
+            "situation": "asking how someone is",
+            "informal": "Ça va ?",
+            "formal": "Comment allez-vous ?"
+          },
+          {
+            "situation": "answering",
+            "informal": "Ça va bien, merci.",
+            "formal": "Je vais bien, merci. Et vous ?"
+          },
+          {
+            "situation": "introducing someone",
+            "informal": "C'est Léa.",
+            "formal": "Voici madame Martin."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je suis appelle Ana.",
+            "certo": "Je m'appelle Ana.",
+            "motivo": "Reflexive verb: «I call myself»."
+          },
+          {
+            "errado": "Comment tu appelles ?",
+            "certo": "Comment tu t'appelles ?",
+            "motivo": "The «t'» (you) is missing."
+          },
+          {
+            "errado": "A woman says «Enchanté».",
+            "certo": "Enchantée.",
+            "motivo": "The spelling agrees with the speaker."
+          },
+          {
+            "errado": "Je vais bien. Et tu ? (with a stranger)",
+            "certo": "Et vous ?",
+            "motivo": "With strangers, use «vous»."
+          }
+        ],
+        "tag": "Basic phrases"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 5,
+        "titulo": "Premier contact / First contact",
+        "contexto": "Madame Martin and Ana introduce themselves at a course.",
+        "linhas": [
+          {
+            "personagem": "Madame Martin",
+            "ru": "— Bonjour, je m'appelle Claire Martin. Comment vous appelez-vous ?",
+            "en": "— Good morning, my name is Claire Martin. What is your name?",
+            "audio": "Bonjour, je m'appelle Claire Martin. Comment vous appelez-vous ?"
+          },
+          {
+            "personagem": "Ana",
+            "ru": "— Bonjour, madame. Je m'appelle Ana. Enchantée.",
+            "en": "— Good morning, madam. My name is Ana. Nice to meet you.",
+            "audio": "Bonjour, madame. Je m'appelle Ana. Enchantée."
+          },
+          {
+            "personagem": "Madame Martin",
+            "ru": "— Enchantée, Ana. Comment allez-vous ?",
+            "en": "— Nice to meet you, Ana. How are you?",
+            "audio": "Enchantée, Ana. Comment allez-vous ?"
+          },
+          {
+            "personagem": "Ana",
+            "ru": "— Je vais bien, merci. Et vous ?",
+            "en": "— I'm well, thank you. And you, madam?",
+            "audio": "Je vais bien, merci. Et vous ?"
+          },
+          {
+            "personagem": "Madame Martin",
+            "ru": "— Très bien, merci. Voici mon ami Paul.",
+            "en": "— Very well, thank you. This is my friend Paul.",
+            "audio": "Très bien, merci. Voici mon ami Paul."
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Bonjour, Ana. Enchanté.",
+            "en": "— Good morning, Ana. Nice to meet you.",
+            "audio": "Bonjour, Ana. Enchanté."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 4,
+        "enunciado": "Introduce yourself aloud: «Bonjour, je m'appelle… Enchanté(e).» Then introduce a friend: «Voici mon ami…»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Answer aloud: «Tu es fatigué ? Tu es français ? Est-ce que tu es à Paris ?»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-003.json",
+  "responsavel": null
+}

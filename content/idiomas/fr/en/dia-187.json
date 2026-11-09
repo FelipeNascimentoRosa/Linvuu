@@ -1,0 +1,161 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 187,
+  "fase": 19,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Logical connectors: cause, consequence, opposition: Organizing a text",
+  "objetivo": "Lesson 47, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 47,
+    "titulo": "Logical connectors: cause, consequence, opposition",
+    "objetivo": "Link ideas with connectors of cause, consequence, opposition and concession, choosing the mood (indicative or subjunctive) that each one requires.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Organizing a text",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "d'abord",
+            "translit": "dah-BOR",
+            "pt": "",
+            "en": "",
+            "audio": "d'abord"
+          },
+          {
+            "ru": "ensuite",
+            "translit": "ahn-SWEET",
+            "pt": "",
+            "en": "",
+            "audio": "ensuite"
+          },
+          {
+            "ru": "enfin",
+            "translit": "ahn-FAN",
+            "pt": "",
+            "en": "",
+            "audio": "enfin"
+          },
+          {
+            "ru": "en conclusion",
+            "translit": "ahn kohn-klew-zee-OHN",
+            "pt": "",
+            "en": "",
+            "audio": "en conclusion"
+          },
+          {
+            "ru": "de plus",
+            "translit": "duh PLEWS",
+            "pt": "",
+            "en": "",
+            "audio": "de plus"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Organizing connectors",
+        "explicacao": "STEP 1: to open: «d'abord», «tout d'abord», «premièrement». STEP 2: to continue: «ensuite», «puis», «de plus», «en outre», «par ailleurs». STEP 3: to conclude: «enfin», «en conclusion», «pour conclure». STEP 4: to give examples: «par exemple», «c'est-à-dire». STEP 5: put a comma after each connector: «D'abord, je prépare. Ensuite, je cuisine. Enfin, je mange.»",
+        "comparacao": "French connectors follow the same logic as English «first, then, finally». Punctuation is similar too: put a comma after the connector at the start of the sentence.",
+        "tabela": [
+          {
+            "connector": "d'abord",
+            "function": "to open",
+            "example": "D'abord, je prépare."
+          },
+          {
+            "connector": "ensuite",
+            "function": "to continue",
+            "example": "Ensuite, je cuisine."
+          },
+          {
+            "connector": "de plus",
+            "function": "to add",
+            "example": "De plus, c'est bon marché."
+          },
+          {
+            "connector": "enfin",
+            "function": "to conclude",
+            "example": "Enfin, je mange."
+          },
+          {
+            "connector": "par exemple",
+            "function": "to give an example",
+            "example": "Par exemple, une salade."
+          },
+          {
+            "connector": "en conclusion",
+            "function": "to close",
+            "example": "En conclusion, c'est facile."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "D'abord je prépare.",
+            "certo": "D'abord, je prépare.",
+            "motivo": "Comma after the connector."
+          },
+          {
+            "errado": "Enfin de plus, je mange.",
+            "certo": "Enfin, je mange.",
+            "motivo": "One connector per sentence."
+          },
+          {
+            "errado": "En conclusion que c'est facile.",
+            "certo": "En conclusion, c'est facile.",
+            "motivo": "No «que»."
+          },
+          {
+            "errado": "Par example, une salade.",
+            "certo": "Par exemple, une salade.",
+            "motivo": "Spelling: exemple."
+          }
+        ],
+        "tag": "Connectors"
+      },
+      {
+        "tipo": "texto",
+        "min": 8,
+        "titulo": "Pourquoi apprendre le français ?",
+        "ru": "D'abord, le français est parlé sur cinq continents, donc il ouvre beaucoup de portes. Ensuite, c'est une langue de culture : la cuisine, le cinéma, la littérature. De plus, parce que beaucoup de mots sont proches du portugais, un Brésilien apprend vite. Pourtant, la prononciation est difficile, mais avec de la pratique, on progresse. En conclusion, malgré les difficultés, apprendre le français est un excellent choix.",
+        "pt": "First, French is spoken on five continents, so it opens many doors. Next, it is a language of culture: cuisine, cinema, literature. In addition, since many words are close to English, an English speaker learns quickly. However, the pronunciation is hard, but with practice you make progress. In conclusion, despite the difficulties, learning French is an excellent choice.",
+        "perguntas": [
+          {
+            "pergunta": "On how many continents is French spoken?",
+            "resposta": "On five."
+          },
+          {
+            "pergunta": "Why do English speakers pick up French vocabulary quickly?",
+            "resposta": "Many words are close to English."
+          },
+          {
+            "pergunta": "What is difficult?",
+            "resposta": "The pronunciation."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Explain aloud why someone should learn English, using four organizing connectors."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Link two opposing ideas with «pourtant» and «en revanche»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-047.json",
+  "responsavel": null
+}

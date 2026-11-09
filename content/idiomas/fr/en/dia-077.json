@@ -1,0 +1,156 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 77,
+  "fase": 8,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Passé composé or imparfait?: Setting and event",
+  "objetivo": "Lesson 20, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 20,
+    "titulo": "Passé composé or imparfait?",
+    "objetivo": "Choose between the passé composé (what happened) and the imparfait (the setting and the habit) and tell a short story with both tenses.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Setting and event",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "soudain",
+            "translit": "soo-DAN",
+            "pt": "",
+            "en": "",
+            "audio": "soudain"
+          },
+          {
+            "ru": "tout à coup",
+            "translit": "too tah KOO",
+            "pt": "",
+            "en": "",
+            "audio": "tout à coup"
+          },
+          {
+            "ru": "pendant que",
+            "translit": "pahn-dahn KUH",
+            "pt": "",
+            "en": "",
+            "audio": "pendant que"
+          },
+          {
+            "ru": "quand",
+            "translit": "KAHN",
+            "pt": "",
+            "en": "",
+            "audio": "quand"
+          },
+          {
+            "ru": "alors",
+            "translit": "ah-LOHR",
+            "pt": "",
+            "en": "",
+            "audio": "alors"
+          },
+          {
+            "ru": "ce jour-là",
+            "translit": "suh zhoor LAH",
+            "pt": "",
+            "en": "",
+            "audio": "ce jour-là"
+          },
+          {
+            "ru": "un jour",
+            "translit": "an ZHOOR",
+            "pt": "",
+            "en": "",
+            "audio": "un jour"
+          },
+          {
+            "ru": "à ce moment-là",
+            "translit": "ah suh moh-mahn LAH",
+            "pt": "",
+            "en": "",
+            "audio": "à ce moment-là"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Passé composé × imparfait",
+        "explicacao": "STEP 1: the imparfait is the setting, the background of the picture: the time, the weather, feelings, habits. The passé composé is the event, the action that moves the story forward. STEP 2: «Il pleuvait (setting) quand je suis sorti (event).» STEP 3: actions that happen one after another: passé composé: «Je me suis levé, j'ai pris mon café et je suis parti.» STEP 4: an action in progress interrupted by another: imparfait + passé composé: «Je mangeais quand le téléphone a sonné.» STEP 5: two long simultaneous actions: imparfait + imparfait, with «pendant que»: «Il cuisinait pendant que je lisais.» STEP 6: event words: «soudain, tout à coup, un jour, ce jour-là, alors». Setting words: «toujours, souvent, d'habitude, pendant que, chaque jour». STEP 7: a limited action with a fixed duration: passé composé: «J'ai habité deux ans à Paris.» STEP 8: a prolonged state with no marked end: imparfait: «J'habitais à Paris.» STEP 9: the same verb changes meaning: «Je savais» (I knew) × «J'ai su» (I found out).",
+        "comparacao": "In English the same difference exists between «I spoke» (simple past) and «I was speaking / I used to speak» (imperfect). In French, the completed past is the «passé composé», a compound tense, not a simple one: «j'ai parlé». The trick is to ask: «is this setting or event?»",
+        "tabela": [
+          {
+            "tense": "imparfait",
+            "function": "setting, habit, description",
+            "example": "Il faisait froid."
+          },
+          {
+            "tense": "passé composé",
+            "function": "event, completed action",
+            "example": "Je suis sorti."
+          },
+          {
+            "tense": "os dois",
+            "function": "interrupted action",
+            "example": "Je mangeais quand tu as appelé."
+          },
+          {
+            "tense": "imparfait + imparfait",
+            "function": "parallel actions",
+            "example": "Il lisait pendant que je cuisinais."
+          },
+          {
+            "tense": "passé composé in sequence",
+            "function": "chained actions",
+            "example": "Je me suis levé, j'ai mangé, je suis parti."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Il a plu quand je suis sorti.",
+            "certo": "Il pleuvait quand je suis sorti.",
+            "motivo": "Background setting: imparfait."
+          },
+          {
+            "errado": "Je mangeais quand le téléphone sonnait.",
+            "certo": "Je mangeais quand le téléphone a sonné.",
+            "motivo": "The interrupting action is a single point in time: passé composé."
+          },
+          {
+            "errado": "Hier, j'étais allé au cinéma.",
+            "certo": "Hier, je suis allé au cinéma.",
+            "motivo": "Event: passé composé."
+          },
+          {
+            "errado": "Chaque jour, j'ai pris le bus.",
+            "certo": "Chaque jour, je prenais le bus.",
+            "motivo": "Habit: imparfait."
+          }
+        ],
+        "tag": "Past"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say aloud a situation: «Il pleuvait quand… Je lisais quand… Il faisait chaud quand…»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Describe aloud your childhood with the imparfait."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-020.json",
+  "responsavel": null
+}

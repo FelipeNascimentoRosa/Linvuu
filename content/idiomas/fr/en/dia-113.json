@@ -1,0 +1,156 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 113,
+  "fase": 12,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "The imperative with pronouns and instructions: The imperative with one pronoun",
+  "objetivo": "Lesson 29, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 29,
+    "titulo": "The imperative with pronouns and instructions",
+    "objetivo": "Use the affirmative and negative imperative with pronouns («donne-le-moi», «ne le fais pas»), and give instructions, recipes and rules.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "The imperative with one pronoun",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "donne-moi",
+            "translit": "dohn-MWAH",
+            "pt": "",
+            "en": "",
+            "audio": "donne-moi"
+          },
+          {
+            "ru": "dis-lui",
+            "translit": "dee-LWEE",
+            "pt": "",
+            "en": "",
+            "audio": "dis-lui"
+          },
+          {
+            "ru": "regarde-le",
+            "translit": "ruh-gahrd-LUH",
+            "pt": "",
+            "en": "",
+            "audio": "regarde-le"
+          },
+          {
+            "ru": "écoute-la",
+            "translit": "ay-koot-LAH",
+            "pt": "",
+            "en": "",
+            "audio": "écoute-la"
+          },
+          {
+            "ru": "attends-moi",
+            "translit": "ah-tahn-MWAH",
+            "pt": "",
+            "en": "",
+            "audio": "attends-moi"
+          },
+          {
+            "ru": "vas-y",
+            "translit": "vah-ZEE",
+            "pt": "",
+            "en": "",
+            "audio": "vas-y"
+          },
+          {
+            "ru": "prends-en",
+            "translit": "prahn-ZAHN",
+            "pt": "",
+            "en": "",
+            "audio": "prends-en"
+          },
+          {
+            "ru": "ne le fais pas",
+            "translit": "nuh luh feh PAH",
+            "pt": "",
+            "en": "",
+            "audio": "ne le fais pas"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Donne-le-moi ! Ne le fais pas !",
+        "explicacao": "STEP 1: in the AFFIRMATIVE imperative, the pronoun comes AFTER the verb, joined by a hyphen: «Regarde-le !» «Écoute-moi !» «Donne-lui le livre.» STEP 2: «me» and «te» become «moi» and «toi» at the end: «Écoute-moi.» «Lève-toi.» STEP 3: with two pronouns, the direct one comes first: «Donne-le-moi.» «Dis-le-lui.» «Envoie-les-nous.» STEP 4: in the NEGATIVE imperative, the pronoun goes back BEFORE the verb, as in the present tense: «Ne le regarde pas !» «Ne me dis pas ça !» «Ne le lui donne pas !» STEP 5: «y» and «en» also come after the verb in the affirmative, and the verb takes an «s» when it ends in «e»: «Vas-y !» «Prends-en !» «Manges-en !» STEP 6: with reflexive verbs: «Lève-toi !» «Assieds-toi !» «Dépêchez-vous !» STEP 7: negative reflexive: «Ne te lève pas !» «Ne vous dépêchez pas !» STEP 8: the imperative is formed from «tu», «nous» and «vous»: «Mange !» «Mangeons !» «Mangez !» (the «s» of «tu» drops from «-er» verbs, except before «y» and «en»).",
+        "comparacao": "In English the pronoun always comes after the verb («give me», «give him», «don't give me»). French does that only in the affirmative («donne-moi»); in the negative the pronoun goes before the verb («ne me donne pas»). Also note the hyphen and the change «me → moi».",
+        "tabela": [
+          {
+            "tipo": "afirmativo",
+            "example": "Regarde-le !",
+            "note": "pronoun after, with a hyphen"
+          },
+          {
+            "tipo": "afirmativo com «moi»",
+            "example": "Écoute-moi !",
+            "note": "«me» becomes «moi»"
+          },
+          {
+            "tipo": "dois pronomes",
+            "example": "Donne-le-moi !",
+            "note": "direct + indirect"
+          },
+          {
+            "tipo": "negativo",
+            "example": "Ne le regarde pas !",
+            "note": "pronoun before the verb"
+          },
+          {
+            "tipo": "com y/en",
+            "example": "Vas-y ! Prends-en !",
+            "note": "the «s» comes back"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Le regarde !",
+            "certo": "Regarde-le !",
+            "motivo": "In the affirmative, the pronoun comes after."
+          },
+          {
+            "errado": "Ne regarde-le pas !",
+            "certo": "Ne le regarde pas !",
+            "motivo": "In the negative, it comes before the verb."
+          },
+          {
+            "errado": "Écoute-me !",
+            "certo": "Écoute-moi !",
+            "motivo": "«Me» becomes «moi»."
+          },
+          {
+            "errado": "Va-y !",
+            "certo": "Vas-y !",
+            "motivo": "The «s» comes back before «y»."
+          }
+        ],
+        "tag": "Imperative"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Give ten commands out loud: five affirmative and five negative, with pronouns."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write and say out loud a short email confirming a meeting."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-029.json",
+  "responsavel": null
+}

@@ -1,0 +1,178 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 215,
+  "fase": 22,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Pronouns: full order and review: Pronouns in practice",
+  "objetivo": "Lesson 54, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 54,
+    "titulo": "Pronouns: full order and review",
+    "objetivo": "Master the order of pronouns (me, te, le, lui, y, en), use them in the imperative and in the passé composé, and avoid the most common mistakes.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Pronouns in practice",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "prêter",
+            "translit": "preh-TAY",
+            "pt": "",
+            "en": "",
+            "audio": "prêter"
+          },
+          {
+            "ru": "rendre",
+            "translit": "RAHNDR",
+            "pt": "",
+            "en": "",
+            "audio": "rendre"
+          },
+          {
+            "ru": "offrir",
+            "translit": "oh-FREER",
+            "pt": "",
+            "en": "",
+            "audio": "offrir"
+          },
+          {
+            "ru": "envoyer",
+            "translit": "ahn-vwah-YAY",
+            "pt": "",
+            "en": "",
+            "audio": "envoyer"
+          },
+          {
+            "ru": "montrer",
+            "translit": "mohn-TRAY",
+            "pt": "",
+            "en": "",
+            "audio": "montrer"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Verbs of giving",
+        "explicacao": "STEP 1: «donner, prêter, rendre, offrir, envoyer, montrer, dire» take «à + person» (lui/leur): «Je lui prête mon livre.» STEP 2: with two pronouns: «Je le lui prête.» STEP 3: in the passé composé: «Je le lui ai prêté.» STEP 4: in the negative: «Je ne le lui ai pas prêté.» STEP 5: in the imperative: «Prête-le-lui !»",
+        "comparacao": "in English we say «I lend it to him» or “I lend him it”, but French stacks two pronouns before the verb: «je le lui prête» is completely normal in everyday speech. Practise until it sounds natural.",
+        "tabela": [
+          {
+            "verb": "donner",
+            "example": "Je le lui donne."
+          },
+          {
+            "verb": "prêter",
+            "example": "Je le lui prête."
+          },
+          {
+            "verb": "rendre",
+            "example": "Je le lui rends."
+          },
+          {
+            "verb": "offrir",
+            "example": "Je le lui offre."
+          },
+          {
+            "verb": "envoyer",
+            "example": "Je le lui envoie."
+          },
+          {
+            "verb": "montrer",
+            "example": "Je le lui montre."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je lui l'ai prêté.",
+            "certo": "Je le lui ai prêté.",
+            "motivo": "Order."
+          },
+          {
+            "errado": "Je ne l'ai lui pas prêté.",
+            "certo": "Je ne le lui ai pas prêté.",
+            "motivo": "Block before the auxiliary."
+          },
+          {
+            "errado": "Prête-lui-le !",
+            "certo": "Prête-le-lui !",
+            "motivo": "Imperative."
+          },
+          {
+            "errado": "Je vais lui le prêter.",
+            "certo": "Je vais le lui prêter.",
+            "motivo": "Block before the infinitive."
+          }
+        ],
+        "tag": "Pronouns"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "Au bureau / At the office",
+        "contexto": "Léa and Marc are exchanging documents.",
+        "linhas": [
+          {
+            "personagem": "Léa",
+            "ru": "— Marc, tu as envoyé le dossier à la directrice ?",
+            "en": "— Marc, did you send the file to the director?",
+            "audio": "Marc, tu as envoyé le dossier à la directrice ?"
+          },
+          {
+            "personagem": "Marc",
+            "ru": "— Oui, je le lui ai envoyé hier soir.",
+            "en": "— Yes, I sent it to her last night.",
+            "audio": "Oui, je le lui ai envoyé hier soir."
+          },
+          {
+            "personagem": "Léa",
+            "ru": "— Et les photos ? Tu les as montrées au client ?",
+            "en": "— And the photos? Did you show them to the client?",
+            "audio": "Et les photos ? Tu les as montrées au client ?"
+          },
+          {
+            "personagem": "Marc",
+            "ru": "— Pas encore. Je vais les lui montrer demain.",
+            "en": "— Not yet. I will show them to him tomorrow.",
+            "audio": "Pas encore. Je vais les lui montrer demain."
+          },
+          {
+            "personagem": "Léa",
+            "ru": "— D'accord. Et du café, tu en veux ?",
+            "en": "— Great. And coffee, do you want some?",
+            "audio": "D'accord. Et du café, tu en veux ?"
+          },
+          {
+            "personagem": "Marc",
+            "ru": "— Oui, apporte-m'en un, s'il te plaît !",
+            "en": "— Yes, bring me one, please!",
+            "audio": "Oui, apporte-m'en un, s'il te plaît !"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Answer aloud: «Tu as donné le cadeau à ta mère ?» in four ways, with pronouns."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Make two sentences with «y» and two with «en»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-054.json",
+  "responsavel": null
+}

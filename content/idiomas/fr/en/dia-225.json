@@ -1,0 +1,161 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 225,
+  "fase": 23,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Culture and art: talking about books, films and music: Presenting a work",
+  "objetivo": "Lesson 57, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 57,
+    "titulo": "Culture and art: talking about books, films and music",
+    "objetivo": "Present and review a work (book, film, exhibition, music) and recognize the passé simple, the tense of literary narrative.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Presenting a work",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "un roman",
+            "translit": "an roh-MAHN",
+            "pt": "",
+            "en": "",
+            "audio": "un roman"
+          },
+          {
+            "ru": "un auteur",
+            "translit": "a-noh-TUHR",
+            "pt": "",
+            "en": "",
+            "audio": "un auteur"
+          },
+          {
+            "ru": "un réalisateur",
+            "translit": "an ray-ah-lee-zah-TUHR",
+            "pt": "",
+            "en": "",
+            "audio": "un réalisateur"
+          },
+          {
+            "ru": "une exposition",
+            "translit": "ew-nek-spoh-zee-see-OHN",
+            "pt": "",
+            "en": "",
+            "audio": "une exposition"
+          },
+          {
+            "ru": "un tableau",
+            "translit": "an tah-BLOH",
+            "pt": "",
+            "en": "",
+            "audio": "un tableau"
+          },
+          {
+            "ru": "une chanson",
+            "translit": "ewn shahn-SOHN",
+            "pt": "",
+            "en": "",
+            "audio": "une chanson"
+          },
+          {
+            "ru": "l'intrigue",
+            "translit": "lan-TREEG",
+            "pt": "",
+            "en": "",
+            "audio": "l'intrigue"
+          },
+          {
+            "ru": "un personnage",
+            "translit": "an pehr-soh-NAZH",
+            "pt": "",
+            "en": "",
+            "audio": "un personnage"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Saying what something is about",
+        "explicacao": "STEP 1: title and author: «C'est un roman de Camus.» «C'est un film de Truffaut.» STEP 2: the subject: «Il s'agit de…» + noun: «Il s'agit d'un jeune homme qui cherche son père.» STEP 3: «raconter» and «mettre en scène» describe the plot: «Le film raconte l'histoire d'une famille.» «Le roman met en scène un détective.» STEP 4: time and place: «L'action se déroule à Paris en 1940.» STEP 5: relatives link the pieces of information: «C'est un livre qui parle d'amour.» «C'est un film que j'ai vu hier.» STEP 6: «Il s'agit de» is impersonal and always stays in «il»: «Dans ce livre, il s'agit de la guerre.» (not «it deals»)",
+        "comparacao": "«it is about» and «the film is set in» have direct equivalents: «il s'agit de» and «l'action se déroule». Careful: «il s'agit de» never has a personal subject: «Le livre s'agit de…» does not exist, even though English says “the book is about”.",
+        "tabela": [
+          {
+            "expression": "C'est un roman de…",
+            "function": "presents",
+            "example": "C'est un roman de Camus."
+          },
+          {
+            "expression": "Il s'agit de…",
+            "function": "subject",
+            "example": "Il s'agit d'un jeune homme."
+          },
+          {
+            "expression": "raconter",
+            "function": "plot",
+            "example": "Le film raconte l'histoire d'une famille."
+          },
+          {
+            "expression": "mettre en scène",
+            "function": "personagens",
+            "example": "Le roman met en scène un détective."
+          },
+          {
+            "expression": "se dérouler",
+            "function": "place and time",
+            "example": "L'action se déroule à Paris."
+          },
+          {
+            "expression": "parler de",
+            "function": "topic",
+            "example": "C'est un livre qui parle d'amour."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Le livre s'agit de la guerre.",
+            "certo": "Dans ce livre, il s'agit de la guerre.",
+            "motivo": "«Il s'agit de» is impersonal."
+          },
+          {
+            "errado": "Le film raconte de l'histoire.",
+            "certo": "Le film raconte l'histoire d'une famille.",
+            "motivo": "«Raconter» + direct object."
+          },
+          {
+            "errado": "L'action déroule à Paris.",
+            "certo": "L'action se déroule à Paris.",
+            "motivo": "Reflexive verb."
+          },
+          {
+            "errado": "C'est un film qui j'ai vu.",
+            "certo": "C'est un film que j'ai vu.",
+            "motivo": "Object: «que»."
+          }
+        ],
+        "tag": "Obras"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Present aloud a book or film you know: title, subject and setting."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Give your opinion aloud about a film using «ce qui m'a plu», «en revanche» and «bref»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-057.json",
+  "responsavel": null
+}

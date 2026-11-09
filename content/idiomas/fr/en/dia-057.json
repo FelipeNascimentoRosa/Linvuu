@@ -1,0 +1,166 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 57,
+  "fase": 6,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "The past with «avoir»: passé composé: Forming the passé composé",
+  "objetivo": "Lesson 15, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 15,
+    "titulo": "The past with «avoir»: passé composé",
+    "objetivo": "Tell what happened using the passé composé with «avoir», the past participle and the negative in the past.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Forming the passé composé",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "hier",
+            "translit": "YEHR",
+            "pt": "",
+            "en": "",
+            "audio": "hier"
+          },
+          {
+            "ru": "avant-hier",
+            "translit": "ah-vahn-TYEHR",
+            "pt": "",
+            "en": "",
+            "audio": "avant-hier"
+          },
+          {
+            "ru": "la semaine dernière",
+            "translit": "lah suh-mehn dehr-NYEHR",
+            "pt": "",
+            "en": "",
+            "audio": "la semaine dernière"
+          },
+          {
+            "ru": "l'année dernière",
+            "translit": "lah-nay dehr-NYEHR",
+            "pt": "",
+            "en": "",
+            "audio": "l'année dernière"
+          },
+          {
+            "ru": "il y a deux jours",
+            "translit": "eel ee ah duh ZHOOR",
+            "pt": "",
+            "en": "",
+            "audio": "il y a deux jours"
+          },
+          {
+            "ru": "déjà",
+            "translit": "day-ZHAH",
+            "pt": "",
+            "en": "",
+            "audio": "déjà"
+          },
+          {
+            "ru": "pas encore",
+            "translit": "pah zahn-KOHR",
+            "pt": "",
+            "en": "",
+            "audio": "pas encore"
+          },
+          {
+            "ru": "ce matin",
+            "translit": "suh mah-TAN",
+            "pt": "",
+            "en": "",
+            "audio": "ce matin"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "J'ai mangé: avoir + participle",
+        "explicacao": "STEP 1: the passé composé tells about a completed action. It is formed with «avoir» in the present + past participle: «J'ai mangé.» «Tu as parlé ?» STEP 2: participle of -er verbs: replace «-er» with «-é»: «parler → parlé, manger → mangé, regarder → regardé, travailler → travaillé». STEP 3: regular -ir verbs: «-i»: «finir → fini, choisir → choisi». STEP 4: regular -re verbs: «-u»: «vendre → vendu, attendre → attendu». STEP 5: very common irregulars: «avoir → eu, être → été, faire → fait, prendre → pris, voir → vu, boire → bu, lire → lu, écrire → écrit, dire → dit, mettre → mis». STEP 6: the conjugation of «avoir»: j'ai, tu as, il a, nous avons, vous avez, ils ont. So: «Nous avons mangé.» «Ils ont fini.» STEP 7: the participle does NOT change with the subject: «Elle a mangé», «Nous avons mangé». STEP 8: use «hier», «la semaine dernière», «il y a deux jours» with the passé composé.",
+        "comparacao": "English has the simple past («I ate», «I spoke»). French says «j'ai mangé», «j'ai parlé». The passé composé is the everyday past, in speech and in writing.",
+        "tabela": [
+          {
+            "infinitive": "parler",
+            "participle": "parlé",
+            "example": "J'ai parlé avec Marie."
+          },
+          {
+            "infinitive": "finir",
+            "participle": "fini",
+            "example": "Tu as fini ?"
+          },
+          {
+            "infinitive": "vendre",
+            "participle": "vendu",
+            "example": "Il a vendu sa voiture."
+          },
+          {
+            "infinitive": "faire",
+            "participle": "fait",
+            "example": "Nous avons fait un gâteau."
+          },
+          {
+            "infinitive": "prendre",
+            "participle": "pris",
+            "example": "Elle a pris le bus."
+          },
+          {
+            "infinitive": "voir",
+            "participle": "vu",
+            "example": "J'ai vu un film."
+          },
+          {
+            "infinitive": "boire",
+            "participle": "bu",
+            "example": "Ils ont bu du café."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "J'ai mange.",
+            "certo": "J'ai mangé.",
+            "motivo": "The participle of -er verbs ends in «-é»."
+          },
+          {
+            "errado": "Je mangé hier.",
+            "certo": "J'ai mangé hier.",
+            "motivo": "The «avoir» is missing."
+          },
+          {
+            "errado": "J'ai prendu le bus.",
+            "certo": "J'ai pris le bus.",
+            "motivo": "«Prendre» is irregular: «pris»."
+          },
+          {
+            "errado": "Elle a mangée.",
+            "certo": "Elle a mangé.",
+            "motivo": "With «avoir», the participle does not change (basic rule)."
+          }
+        ],
+        "tag": "Past"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Tell out loud what you did yesterday, in five sentences with «j'ai» + participle."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say what you want, can and must do today."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-015.json",
+  "responsavel": null
+}

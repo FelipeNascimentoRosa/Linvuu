@@ -1,0 +1,494 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 12,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Introductions, countries and numbers: Review and practice for lesson 3",
+  "objetivo": "Lesson 3, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 3,
+    "titulo": "Introductions, countries and numbers",
+    "objetivo": "Introduce yourself and someone else, say where you are from and where you live, use «en», «au» and «aux» with countries, and count from 0 to 20, including age with «avoir».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 3",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "J'ai vingt ans",
+            "opcoes": [
+              "J'ai vingt ans",
+              "J'ai quinze ans",
+              "Il a vingt ans"
+            ],
+            "gabarito": "J'ai vingt ans",
+            "explicacao": "Listen to «vingt», pronounced «van».",
+            "id": "fr-003-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "J'habite au Brésil",
+            "opcoes": [
+              "J'habite au Brésil",
+              "J'habite en France",
+              "J'habite aux États-Unis"
+            ],
+            "gabarito": "J'habite au Brésil",
+            "explicacao": "Listen to «au», «en», «aux».",
+            "id": "fr-003-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Comment tu t'appelles",
+            "opcoes": [
+              "Comment tu t'appelles",
+              "Comment vous appelez-vous",
+              "Comment ça va"
+            ],
+            "gabarito": "Comment tu t'appelles",
+            "explicacao": "Listen to the «t'appelles».",
+            "id": "fr-003-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je m'appelle Ana",
+            "respostaEsperada": "Je m'appelle Ana",
+            "explicacao": "Write: Je m'appelle Ana.",
+            "id": "fr-003-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "J'habite en France",
+            "respostaEsperada": "J'habite en France",
+            "explicacao": "Write: J'habite en France.",
+            "id": "fr-003-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Nice to meet you, Ana. How are you?»",
+            "opcoes": [
+              "Enchantée,",
+              "Ana.",
+              "allez-vous",
+              "Comment",
+              "?"
+            ],
+            "gabarito": "Enchantée, Ana. Comment allez-vous ?",
+            "explicacao": "Write: Enchantée, Ana. Comment allez-vous ?",
+            "id": "fr-003-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Il a dix-huit ans",
+            "respostaEsperada": "Il a dix-huit ans",
+            "explicacao": "Write: Il a dix-huit ans.",
+            "id": "fr-003-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Bonjour, je m'appelle Claire Martin. Comment vous appelez-vous ?",
+            "respostaEsperada": "Bonjour, je m'appelle Claire Martin. Comment vous appelez-vous ?",
+            "explicacao": "Good morning, my name is Claire Martin. What is your name?",
+            "id": "fr-003-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I am 20 years old»?",
+            "opcoes": [
+              "J'ai vingt ans.",
+              "Je suis vingt ans.",
+              "Je vingt ans."
+            ],
+            "gabarito": "J'ai vingt ans.",
+            "explicacao": "Age with «avoir».",
+            "id": "fr-003-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which preposition goes with «le Brésil»?",
+            "opcoes": [
+              "au",
+              "en",
+              "à"
+            ],
+            "gabarito": "au",
+            "explicacao": "Masculine country: «au».",
+            "id": "fr-003-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which preposition goes with «la France»?",
+            "opcoes": [
+              "en",
+              "au",
+              "aux"
+            ],
+            "gabarito": "en",
+            "explicacao": "Feminine country: «en».",
+            "id": "fr-003-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Enchantée, Ana. Comment allez-vous ?",
+            "respostaEsperada": "Enchantée, Ana. Comment allez-vous ?",
+            "explicacao": "Nice to meet you, Ana. How are you?",
+            "id": "fr-003-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How does a woman say «nice to meet you»?",
+            "opcoes": [
+              "Enchantée",
+              "Enchanté",
+              "Enchantez"
+            ],
+            "gabarito": "Enchantée",
+            "explicacao": "It agrees with the speaker.",
+            "id": "fr-003-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle ___ treize ans. (has)",
+            "opcoes": [
+              "a",
+              "est",
+              "ont"
+            ],
+            "gabarito": "a",
+            "explicacao": "«elle a».",
+            "id": "fr-003-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Nous ___ seize ans. (have)",
+            "opcoes": [
+              "avons",
+              "sommes",
+              "avez"
+            ],
+            "gabarito": "avons",
+            "explicacao": "«nous avons».",
+            "id": "fr-003-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Bonjour, madame. Je m'appelle Ana. Enchantée.",
+            "respostaEsperada": "Bonjour, madame. Je m'appelle Ana. Enchantée.",
+            "explicacao": "Good morning, madam. My name is Ana. Nice to meet you.",
+            "id": "fr-003-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "J'habite ___ États-Unis.",
+            "opcoes": [
+              "aux",
+              "au",
+              "en"
+            ],
+            "gabarito": "aux",
+            "explicacao": "Plural country: «aux».",
+            "id": "fr-003-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Good morning, Ana. Nice to meet you.»",
+            "opcoes": [
+              "Ana.",
+              "Bonjour,",
+              "Enchanté."
+            ],
+            "gabarito": "Bonjour, Ana. Enchanté.",
+            "explicacao": "Write: Bonjour, Ana. Enchanté.",
+            "id": "fr-003-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je ___ Ana. (my name is)",
+            "opcoes": [
+              "m'appelle",
+              "suis",
+              "ai"
+            ],
+            "gabarito": "m'appelle",
+            "explicacao": "«je m'appelle».",
+            "id": "fr-003-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Je m'appelle Ana et j'ai vingt ans.»",
+            "opcoes": [
+              "Je",
+              "m'appelle",
+              "Ana",
+              "et",
+              "j'ai",
+              "vingt",
+              "ans"
+            ],
+            "gabarito": "Je m'appelle Ana et j'ai vingt ans.",
+            "explicacao": "Name and age.",
+            "id": "fr-003-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Elle est brésilienne.»",
+            "opcoes": [
+              "Elle",
+              "est",
+              "brésilienne"
+            ],
+            "gabarito": "Elle est brésilienne.",
+            "explicacao": "Nationality agrees in the feminine.",
+            "id": "fr-003-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: My name is Carlos. I am twenty years old. I live in Brazil.",
+            "respostaEsperada": "Je m'appelle Carlos. J'ai vingt ans. J'habite au Brésil.",
+            "id": "fr-003-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Bonjour, Ana. Enchanté.",
+            "respostaEsperada": "Bonjour, Ana. Enchanté.",
+            "explicacao": "Good morning, Ana. Nice to meet you.",
+            "id": "fr-003-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il habite ___ Portugal. (em)",
+            "opcoes": [
+              "au",
+              "en",
+              "à"
+            ],
+            "gabarito": "au",
+            "explicacao": "«Le Portugal» is masculine: «au Portugal».",
+            "id": "fr-003-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Je vais bien, merci. Et vous ?",
+            "respostaEsperada": "Je vais bien, merci. Et vous ?",
+            "explicacao": "I'm well, thank you. And you, madam?",
+            "id": "fr-003-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Nous habitons ___ Espagne. (em)",
+            "opcoes": [
+              "au",
+              "en",
+              "aux"
+            ],
+            "gabarito": "en",
+            "explicacao": "«L'Espagne» is feminine: «en Espagne».",
+            "id": "fr-003-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle a ___ ans. (14)",
+            "opcoes": [
+              "quatre",
+              "seize",
+              "quatorze"
+            ],
+            "gabarito": "quatorze",
+            "explicacao": "14 is «quatorze»; age uses «avoir».",
+            "id": "fr-003-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle ___ Sofia. (is called)",
+            "opcoes": [
+              "s'appelle",
+              "m'appelle",
+              "t'appelles"
+            ],
+            "gabarito": "s'appelle",
+            "explicacao": "With «elle», use «s'appelle».",
+            "id": "fr-003-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «deux» mean?",
+            "audio": "deux",
+            "opcoes": [
+              "Italy, Italian",
+              "France, French",
+              "dois",
+              "seven"
+            ],
+            "gabarito": "dois",
+            "explicacao": "«deux» = dois.",
+            "id": "fr-003-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Julie est ___ . (italiana)",
+            "opcoes": [
+              "italien",
+              "italienne",
+              "italiens"
+            ],
+            "gabarito": "italienne",
+            "explicacao": "The feminine of «-ien» is «-ienne».",
+            "id": "fr-003-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «eighteen»?",
+            "opcoes": [
+              "dix-sept",
+              "dix-neuf",
+              "dix-huit"
+            ],
+            "gabarito": "dix-huit",
+            "explicacao": "18 é «dix-huit».",
+            "id": "fr-003-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you ask a stranger's age, formally?",
+            "opcoes": [
+              "Quel âge avez-vous ?",
+              "Quel âge êtes-vous ?",
+              "Combien d'ans êtes-vous ?"
+            ],
+            "gabarito": "Quel âge avez-vous ?",
+            "explicacao": "Age uses «avoir»: «Quel âge avez-vous ?».",
+            "id": "fr-003-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Très bien, merci. Voici mon ami Paul.",
+            "respostaEsperada": "Très bien, merci. Voici mon ami Paul.",
+            "explicacao": "Very well, thank you. This is my friend Paul.",
+            "id": "fr-003-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je suis de le Brésil.",
+              "Je suis du Brésil.",
+              "Je suis à Brésil."
+            ],
+            "gabarito": "Je suis du Brésil.",
+            "explicacao": "«De + le» becomes «du»: «du Brésil».",
+            "id": "fr-003-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «l'Allemagne, allemand» mean?",
+            "audio": "l'Allemagne, allemand",
+            "opcoes": [
+              "Spain, Spanish",
+              "four",
+              "Germany, German",
+              "my name is"
+            ],
+            "gabarito": "Germany, German",
+            "explicacao": "«l'Allemagne, allemand» = Germany, German.",
+            "id": "fr-003-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which of these countries is feminine?",
+            "opcoes": [
+              "le Canada",
+              "le Portugal",
+              "l'Allemagne"
+            ],
+            "gabarito": "l'Allemagne",
+            "explicacao": "Countries ending in «-e» are almost always feminine.",
+            "id": "fr-003-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «He lives in Italy.»",
+            "opcoes": [
+              "Il",
+              "habite",
+              "en",
+              "Italie"
+            ],
+            "gabarito": "Il habite en Italie.",
+            "explicacao": "A feminine country takes «en».",
+            "id": "fr-003-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «This is my friend Paul.»",
+            "opcoes": [
+              "Voici",
+              "mon",
+              "ami",
+              "Paul"
+            ],
+            "gabarito": "Voici mon ami Paul.",
+            "explicacao": "«Voici» introduces someone.",
+            "id": "fr-003-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I'm from Canada. I live in Paris.",
+            "respostaEsperada": "Je suis du Canada. J'habite à Paris.",
+            "id": "fr-003-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: He is sixteen years old. He is Belgian.",
+            "respostaEsperada": "Il a seize ans. Il est belge.",
+            "id": "fr-003-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Introduce an imaginary friend from another country aloud: name, age, nationality and where he or she lives."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Introduce yourself in French: name, country, age and where you live, in 6 sentences."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-003.json",
+  "responsavel": null
+}

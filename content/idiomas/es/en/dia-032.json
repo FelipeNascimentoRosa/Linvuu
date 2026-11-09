@@ -1,0 +1,507 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 32,
+  "fase": 4,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Café and food: querer, quisiera, numbers to 100: Review and practice of lesson 8",
+  "objetivo": "Lesson 8, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 8,
+    "titulo": "Café and food: querer, quisiera, numbers to 100",
+    "objetivo": "Order food and drink at a café or restaurant with «querer» and «quisiera», count from 20 to 100, say prices in euros, ask for the check, and avoid the false friends «exquisito», «vaso», «cena» and «cola».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 8",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Quisiera un café con leche",
+            "opcoes": [
+              "[misto] Quisiera un café con leche",
+              "[misto] Quiero un café solo",
+              "[misto] Quisiera un té con leche"
+            ],
+            "gabarito": "[misto] Quisiera un café con leche",
+            "explicacao": "Listen to «quisiera» and «con leche».",
+            "id": "es-008-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Son treinta y cinco euros",
+            "opcoes": [
+              "[misto] Son treinta y cinco euros",
+              "[misto] Son cuarenta y cinco euros",
+              "[misto] Son treinta y un euros"
+            ],
+            "gabarito": "[misto] Son treinta y cinco euros",
+            "explicacao": "Listen to the ten «treinta» and the unit «cinco».",
+            "id": "es-008-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "La cena está exquisita",
+            "opcoes": [
+              "[misto] La cena está exquisita",
+              "[misto] La cola está exquisita",
+              "[misto] La cuenta está exquisita"
+            ],
+            "gabarito": "[misto] La cena está exquisita",
+            "explicacao": "Listen to «cena» and «exquisita».",
+            "id": "es-008-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Quisiera la cuenta",
+            "respostaEsperada": "Quisiera la cuenta",
+            "explicacao": "Write: Quisiera la cuenta.",
+            "id": "es-008-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Queremos dos zumos",
+            "respostaEsperada": "Queremos dos zumos",
+            "explicacao": "Write: Queremos dos zumos.",
+            "id": "es-008-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «I'd like a coffee with milk and a toast, please.»",
+            "opcoes": [
+              "leche",
+              "por",
+              "y",
+              "con",
+              "tostada,",
+              "favor.",
+              "Quisiera",
+              "un",
+              "una",
+              "café"
+            ],
+            "gabarito": "Quisiera un café con leche y una tostada, por favor.",
+            "explicacao": "Write: Quisiera un café con leche y una tostada, por favor.",
+            "id": "es-008-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Veintiún euros",
+            "respostaEsperada": "Veintiún euros",
+            "explicacao": "Write: Veintiún euros.",
+            "id": "es-008-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Buenos días. ¿Qué desean?",
+            "respostaEsperada": "Buenos días. ¿Qué desean?",
+            "explicacao": "Good morning. What would you like?",
+            "id": "es-008-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which form of «querer» goes with «tú»?",
+            "opcoes": [
+              "[misto] quieres",
+              "[misto] quiere",
+              "[misto] queréis"
+            ],
+            "gabarito": "[misto] quieres",
+            "explicacao": "With «tú», the ending is «-es» and the «e» becomes «ie».",
+            "id": "es-008-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which form is correct with «nosotros»?",
+            "opcoes": [
+              "[misto] queremos",
+              "[misto] quieremos",
+              "[misto] quiremos"
+            ],
+            "gabarito": "[misto] queremos",
+            "explicacao": "In «nosotros» and «vosotros», the stem's «e» doesn't become «ie».",
+            "id": "es-008-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which is the more polite way to order?",
+            "opcoes": [
+              "[misto] Quisiera un té.",
+              "[misto] Quiero un té.",
+              "[misto] Dame un té."
+            ],
+            "gabarito": "[misto] Quisiera un té.",
+            "explicacao": "«Quisiera» is more polite than «quiero».",
+            "id": "es-008-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Quisiera un café con leche y una tostada, por favor.",
+            "respostaEsperada": "Quisiera un café con leche y una tostada, por favor.",
+            "explicacao": "I'd like a coffee with milk and a toast, please.",
+            "id": "es-008-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you write 45?",
+            "opcoes": [
+              "[misto] cuarenta y cinco",
+              "[misto] cuarenta cinco",
+              "[misto] cuarentaycinco"
+            ],
+            "gabarito": "[misto] cuarenta y cinco",
+            "explicacao": "From 31 to 99: ten + y + unit.",
+            "id": "es-008-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «exquisito» mean?",
+            "opcoes": [
+              "[misto] delicious",
+              "[misto] exquisito",
+              "[misto] weird"
+            ],
+            "gabarito": "[misto] delicious",
+            "explicacao": "«Exquisito» means tasty; weird is «raro».",
+            "id": "es-008-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you ask for water in a glass?",
+            "opcoes": [
+              "[misto] un vaso de agua",
+              "[misto] un taza de agua",
+              "[misto] una copa de agua"
+            ],
+            "gabarito": "[misto] un vaso de agua",
+            "explicacao": "«Vaso» means glass.",
+            "id": "es-008-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Muy bien. ¿Algo más?",
+            "respostaEsperada": "Muy bien. ¿Algo más?",
+            "explicacao": "Very good. Anything else?",
+            "id": "es-008-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Yo ___ un café. (querer)",
+            "opcoes": [
+              "[misto] quiero",
+              "[misto] queremos",
+              "[misto] quieren"
+            ],
+            "gabarito": "[misto] quiero",
+            "explicacao": "With «yo», it's «quiero».",
+            "id": "es-008-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «For me, a tea with no sugar and an orange juice.»",
+            "opcoes": [
+              "un",
+              "y",
+              "zumo",
+              "un",
+              "té",
+              "de",
+              "mí,",
+              "sin",
+              "naranja.",
+              "Para",
+              "azúcar"
+            ],
+            "gabarito": "Para mí, un té sin azúcar y un zumo de naranja.",
+            "explicacao": "Write: Para mí, un té sin azúcar y un zumo de naranja.",
+            "id": "es-008-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ellos ___ la cuenta. (querer)",
+            "opcoes": [
+              "[misto] quieren",
+              "[misto] quiere",
+              "[misto] queremos"
+            ],
+            "gabarito": "[misto] quieren",
+            "explicacao": "With «ellos», it's «quieren».",
+            "id": "es-008-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tengo ___ años. (twenty-one)",
+            "opcoes": [
+              "[misto] veintiún",
+              "[misto] veintiuno",
+              "[misto] veinte uno"
+            ],
+            "gabarito": "[misto] veintiún",
+            "explicacao": "Before a masculine noun: «veintiún».",
+            "id": "es-008-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "La ___ es a las nueve. (dinner)",
+            "opcoes": [
+              "[misto] cena",
+              "[misto] cola",
+              "[misto] escena"
+            ],
+            "gabarito": "[misto] cena",
+            "explicacao": "«Cena» means dinner.",
+            "id": "es-008-e16"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Hay mucha ___ en el bar. (line, in Spain)",
+            "opcoes": [
+              "[misto] cola",
+              "[misto] cena",
+              "[misto] cuenta"
+            ],
+            "gabarito": "[misto] cola",
+            "explicacao": "In Spain, a line of people is «cola».",
+            "id": "es-008-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Para mí, un té sin azúcar y un zumo de naranja.",
+            "respostaEsperada": "Para mí, un té sin azúcar y un zumo de naranja.",
+            "explicacao": "For me, a tea with no sugar and an orange juice.",
+            "id": "es-008-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Quisiera un café con leche, por favor.»",
+            "opcoes": [
+              "Quisiera",
+              "un",
+              "café",
+              "con",
+              "leche,",
+              "por",
+              "favor."
+            ],
+            "gabarito": "Quisiera un café con leche, por favor.",
+            "explicacao": "A complete polite order.",
+            "id": "es-008-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "No, nada más, gracias. ¿Nos trae la cuenta?",
+            "respostaEsperada": "No, nada más, gracias. ¿Nos trae la cuenta?",
+            "explicacao": "No, that's all, thank you. Could you bring us the check?",
+            "id": "es-008-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Son siete euros con cuarenta.»",
+            "opcoes": [
+              "Son",
+              "siete",
+              "euros",
+              "con",
+              "cuarenta."
+            ],
+            "gabarito": "Son siete euros con cuarenta.",
+            "explicacao": "The decimal point is said as «con».",
+            "id": "es-008-e19"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I'd like an orange juice and the check, please.",
+            "respostaEsperada": "[misto] Quisiera un zumo de naranja y la cuenta, por favor.",
+            "id": "es-008-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Quisiera un café ___ azúcar, por favor. (with no)",
+            "opcoes": [
+              "[misto] con",
+              "[misto] sin",
+              "[misto] de"
+            ],
+            "gabarito": "[misto] sin",
+            "explicacao": "«Sin» means «without»; it never takes «de».",
+            "id": "es-008-e21"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Here's ten euros. Keep the change.»",
+            "opcoes": [
+              "tiene",
+              "el",
+              "cambio.",
+              "euros.",
+              "con",
+              "diez",
+              "Quédese",
+              "Aquí"
+            ],
+            "gabarito": "Aquí tiene diez euros. Quédese con el cambio.",
+            "explicacao": "Write: Aquí tiene diez euros. Quédese con el cambio.",
+            "id": "es-008-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Treinta y ___ euros. (one)",
+            "opcoes": [
+              "[misto] uno",
+              "[misto] una",
+              "[misto] un"
+            ],
+            "gabarito": "[misto] un",
+            "explicacao": "«Uno» becomes «un» before a masculine noun.",
+            "id": "es-008-e22"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Quisiera una ___ de café. (cup)",
+            "opcoes": [
+              "[misto] taza",
+              "[misto] vaso",
+              "[misto] copa"
+            ],
+            "gabarito": "[misto] taza",
+            "explicacao": "«Taza» is the cup; «vaso» is the glass.",
+            "id": "es-008-e23"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Quisiera la ___ , por favor. (check)",
+            "opcoes": [
+              "[misto] cena",
+              "[misto] cola",
+              "[misto] cuenta"
+            ],
+            "gabarito": "[misto] cuenta",
+            "explicacao": "«Cuenta» is the check; «cena» is dinner.",
+            "id": "es-008-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Son siete euros con cuarenta.",
+            "respostaEsperada": "Son siete euros con cuarenta.",
+            "explicacao": "That's seven euros forty.",
+            "id": "es-008-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you write 22?",
+            "opcoes": [
+              "[misto] veinte y dos",
+              "[misto] veintidós",
+              "[misto] veintidos"
+            ],
+            "gabarito": "[misto] veintidós",
+            "explicacao": "From 21 to 29 it's one word, and «veintidós» carries an accent.",
+            "id": "es-008-e25"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Aquí tiene diez euros. Quédese con el cambio.",
+            "respostaEsperada": "Aquí tiene diez euros. Quédese con el cambio.",
+            "explicacao": "Here's ten euros. Keep the change.",
+            "id": "es-008-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «propina» mean?",
+            "opcoes": [
+              "[misto] check",
+              "[misto] tip",
+              "[misto] change"
+            ],
+            "gabarito": "[misto] tip",
+            "explicacao": "«Propina» means tip.",
+            "id": "es-008-e26"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «yo» form of «querer»?",
+            "opcoes": [
+              "[misto] quiero",
+              "[misto] quero",
+              "[misto] quiro"
+            ],
+            "gabarito": "[misto] quiero",
+            "explicacao": "The stem's «e» becomes «ie»: «quiero».",
+            "id": "es-008-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Quisiera una cerveza y un bocadillo.»",
+            "opcoes": [
+              "Quisiera",
+              "una",
+              "cerveza",
+              "y",
+              "un",
+              "bocadillo."
+            ],
+            "gabarito": "Quisiera una cerveza y un bocadillo.",
+            "explicacao": "«Quisiera» + the thing ordered.",
+            "id": "es-008-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: We'd like two coffees and the check, please.",
+            "respostaEsperada": "[misto] Queremos dos cafés y la cuenta, por favor.",
+            "id": "es-008-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: It's twelve euros fifty.",
+            "respostaEsperada": "[misto] Son doce euros con cincuenta.",
+            "id": "es-008-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Put together, out loud, a complete order for two friends: two drinks, one food item, the price and the check. Use «quisiera», «queremos» and «son… euros»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Conjugate «querer» from memory and make three polite requests. Say four prices in euros and céntimos."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-008.json",
+  "responsavel": null
+}

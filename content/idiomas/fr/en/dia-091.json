@@ -1,0 +1,151 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 91,
+  "fase": 10,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Duration and timing: depuis, il y a, pendant, venir de: Telling the story of a life",
+  "objetivo": "Lesson 23, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 23,
+    "titulo": "Duration and timing: depuis, il y a, pendant, venir de",
+    "objetivo": "Talk about duration and time with «depuis», «il y a», «pendant», «dans», and use «venir de» and «être en train de».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Telling the story of a life",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "naître",
+            "translit": "NEHTR",
+            "pt": "",
+            "en": "",
+            "audio": "naître"
+          },
+          {
+            "ru": "grandir",
+            "translit": "grahn-DEER",
+            "pt": "",
+            "en": "",
+            "audio": "grandir"
+          },
+          {
+            "ru": "déménager",
+            "translit": "day-may-nah-ZHAY",
+            "pt": "",
+            "en": "",
+            "audio": "déménager"
+          },
+          {
+            "ru": "se marier",
+            "translit": "suh mah-ree-AY",
+            "pt": "",
+            "en": "",
+            "audio": "se marier"
+          },
+          {
+            "ru": "prendre sa retraite",
+            "translit": "prahndr sah ruh-TREHT",
+            "pt": "",
+            "en": "",
+            "audio": "prendre sa retraite"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Telling your own story",
+        "explicacao": "STEP 1: use the passé composé for facts and «en» + year for the date: «Je suis né en 1990.» STEP 2: «à l'âge de» + age: «J'ai commencé à travailler à l'âge de vingt ans.» STEP 3: «il y a» + time to say how long ago: «Je suis arrivé il y a cinq ans.» STEP 4: «depuis» + present to say what continues: «Je travaille ici depuis cinq ans.» STEP 5: «d'abord, puis, ensuite, enfin» still work to organize the story.",
+        "comparacao": "In English we tell a life story with «I was born in 1990», «I moved five years ago», «I have worked here for five years». French requires a choice between «il y a» and «depuis», and between past and present.",
+        "tabela": [
+          {
+            "fact": "nascimento",
+            "sentence": "Je suis né en 1990."
+          },
+          {
+            "fact": "the move",
+            "sentence": "J'ai déménagé il y a cinq ans."
+          },
+          {
+            "fact": "current job",
+            "sentence": "Je travaille ici depuis cinq ans."
+          },
+          {
+            "fact": "age",
+            "sentence": "J'ai commencé à l'âge de vingt ans."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je suis né il y a 1990.",
+            "certo": "Je suis né en 1990.",
+            "motivo": "Year: «en»."
+          },
+          {
+            "errado": "Je travaille ici il y a cinq ans.",
+            "certo": "Je travaille ici depuis cinq ans.",
+            "motivo": "Continues: «depuis»."
+          },
+          {
+            "errado": "J'ai déménagé depuis cinq ans.",
+            "certo": "J'ai déménagé il y a cinq ans.",
+            "motivo": "Over: «il y a»."
+          },
+          {
+            "errado": "À l'âge vingt ans, j'ai commencé.",
+            "certo": "À l'âge de vingt ans, j'ai commencé.",
+            "motivo": "«De» is required."
+          }
+        ],
+        "tag": "Time"
+      },
+      {
+        "tipo": "texto",
+        "min": 8,
+        "titulo": "La vie de Sophie / Sophie's life",
+        "ru": "Sophie est née en 1995 à Marseille. Elle a grandi dans un petit appartement avec ses parents. À l'âge de dix-huit ans, elle a déménagé à Paris pour étudier. Elle a fini ses études il y a cinq ans. Elle travaille dans une banque depuis quatre ans. En ce moment, elle est en train de chercher un nouvel appartement. Elle vient de signer un contrat de travail et elle va déménager dans deux mois.",
+        "pt": "Sophie was born in 1995 in Marseille. She grew up in a small apartment with her parents. At eighteen, she moved to Paris to study. She finished her studies five years ago. She has worked in a bank for four years. At the moment, she is looking for a new apartment. She has just signed a work contract and is going to move in two months.",
+        "perguntas": [
+          {
+            "pergunta": "Où Sophie est-elle née ?",
+            "resposta": "À Marseille."
+          },
+          {
+            "pergunta": "Depuis combien de temps travaille-t-elle dans une banque ?",
+            "resposta": "Depuis quatre ans."
+          },
+          {
+            "pergunta": "Que fait-elle en ce moment ?",
+            "resposta": "Elle est en train de chercher un nouvel appartement."
+          },
+          {
+            "pergunta": "Quand va-t-elle déménager ?",
+            "resposta": "Dans deux mois."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Tell your life story in six sentences, with «en», «il y a», «depuis» and «dans»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Complete: «Je ___ de manger. Je suis en ___ de travailler. Je ___ partir.»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-023.json",
+  "responsavel": null
+}

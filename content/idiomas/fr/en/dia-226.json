@@ -1,0 +1,141 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 226,
+  "fase": 23,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Culture and art: talking about books, films and music: The passé simple in reading",
+  "objetivo": "Lesson 57, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 57,
+    "titulo": "Culture and art: talking about books, films and music",
+    "objetivo": "Present and review a work (book, film, exhibition, music) and recognize the passé simple, the tense of literary narrative.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "The passé simple in reading",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "il fut",
+            "translit": "eel FEW",
+            "pt": "",
+            "en": "",
+            "audio": "il fut"
+          },
+          {
+            "ru": "il eut",
+            "translit": "eel EW",
+            "pt": "",
+            "en": "",
+            "audio": "il eut"
+          },
+          {
+            "ru": "il fit",
+            "translit": "eel FEE",
+            "pt": "",
+            "en": "",
+            "audio": "il fit"
+          },
+          {
+            "ru": "il dit",
+            "translit": "eel DEE",
+            "pt": "",
+            "en": "",
+            "audio": "il dit"
+          },
+          {
+            "ru": "il vint",
+            "translit": "eel VAN",
+            "pt": "",
+            "en": "",
+            "audio": "il vint"
+          },
+          {
+            "ru": "il naquit",
+            "translit": "eel nah-KEE",
+            "pt": "",
+            "en": "",
+            "audio": "il naquit"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Recognize it, don't speak it",
+        "explicacao": "STEP 1: the passé simple is a tense of books, historical newspapers and biographies. In speech, the passé composé is used. You only need to recognize it. STEP 2: -er verbs: endings -a (he/she) and -èrent (they): «il parla, ils parlèrent». STEP 3: -ir and -re verbs: -it and -irent: «il finit, ils finirent», «il répondit». STEP 4: common irregulars: «être → il fut», «avoir → il eut», «faire → il fit», «dire → il dit», «venir → il vint», «voir → il vit», «pouvoir → il put», «vouloir → il voulut», «naître → il naquit», «mourir → il mourut». STEP 5: it narrates completed actions in sequence: «Il ouvrit la porte, entra et s'assit.» STEP 6: to read it, mentally swap it for the passé composé: «il fit» = «il a fait».",
+        "comparacao": "in English «he did» (the simple past) serves for speech and writing alike. French splits the job: «il a fait» in conversation and «il fit» in books and biographies. So when reading a novel, «il fut» is just «he was».",
+        "tabela": [
+          {
+            "verb": "parler",
+            "example": "il parla · ils parlèrent"
+          },
+          {
+            "verb": "finir",
+            "example": "il finit · ils finirent"
+          },
+          {
+            "verb": "être",
+            "example": "il fut · ils furent"
+          },
+          {
+            "verb": "avoir",
+            "example": "il eut · ils eurent"
+          },
+          {
+            "verb": "faire",
+            "example": "il fit · ils firent"
+          },
+          {
+            "verb": "naître",
+            "example": "il naquit · ils naquirent"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Hier, il fit un gâteau. (conversation)",
+            "certo": "Hier, il a fait un gâteau.",
+            "motivo": "In speech: passé composé."
+          },
+          {
+            "errado": "Il parlit.",
+            "certo": "Il parla.",
+            "motivo": "-er: ending -a."
+          },
+          {
+            "errado": "Il finissa.",
+            "certo": "Il finit.",
+            "motivo": "-ir: ending -it."
+          },
+          {
+            "errado": "Il naîtit en 1900.",
+            "certo": "Il naquit en 1900.",
+            "motivo": "Irregular."
+          }
+        ],
+        "tag": "Passé simple"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Read aloud: «Il naquit à Lyon, fit des études de droit, puis vint à Paris.» Then rewrite it in the passé composé and say it again."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say three sentences about a work with «il s'agit de», «raconter» and «se dérouler»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-057.json",
+  "responsavel": null
+}

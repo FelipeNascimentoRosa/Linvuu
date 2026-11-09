@@ -16,7 +16,7 @@ export default function Assinatura() {
   const a = appTextos();
   const x = experiencia();
   return <div className="pagina app-conta-mobile">
-<header className="app-conta-topo"><span className="app-conta-icone"><IconeEstudo tipo="livro" /></span><p className="app-kicker">Linvuu</p><h1 className="pagina-h1">{{'pt-BR':'Sua conta',en:'Your account',es:'Tu cuenta'}[LOCALE.codigo]}</h1><p>{x.rotina}</p></header>
+<header className="app-conta-topo"><span className="app-conta-icone"><IconeEstudo tipo="livro" /></span><p className="app-kicker">Linvuu</p><h1 className="pagina-h1">{{'pt-BR':'Sua conta',en:'Your account'}[LOCALE.codigo]}</h1><p>{x.rotina}</p></header>
     <section className="app-conta-status">
     {!usuario ? <Link className="btn btn-primary" to="/entrar?proximo=/conta">{t.nav.entrar}</Link>
       : <p role="status">{acesso.carregando ? t.geral.carregando : acesso.indisponivel ? t.assinatura.indisponivel : acesso.ativa ? t.assinatura.ativa : comprasPlayDisponiveis() ? a.comprasPlay : a.compras}</p>}

@@ -1,0 +1,156 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 9,
+  "fase": 1,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Introductions, countries, numbers 0 to 20 and age (tener): Greetings and introductions",
+  "objetivo": "Lesson 3, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 3,
+    "titulo": "Introductions, countries, numbers 0 to 20 and age (tener)",
+    "objetivo": "Introduce yourself and introduce someone else, say where you're from and where you live, use nationalities in the masculine and feminine, and count from 0 to 20, including saying your age with the verb «tener».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Greetings and introductions",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "Me llamo…",
+            "translit": "[pronuncia] meh YAH-mo",
+            "pt": "my name is…",
+            "en": "",
+            "audio": "Me llamo…"
+          },
+          {
+            "ru": "¿Cómo te llamas?",
+            "translit": "[pronuncia] KOH-mo teh YAH-mas",
+            "pt": "what's your name? (tú)",
+            "en": "",
+            "audio": "¿Cómo te llamas?"
+          },
+          {
+            "ru": "¿Cómo se llama usted?",
+            "translit": "[pronuncia] KOH-mo seh YAH-mah oos-TEHD",
+            "pt": "what's your name, sir/ma'am? (usted)",
+            "en": "",
+            "audio": "¿Cómo se llama usted?"
+          },
+          {
+            "ru": "Mucho gusto.",
+            "translit": "[pronuncia] MOO-cho GOOS-to",
+            "pt": "nice to meet you",
+            "en": "",
+            "audio": "Mucho gusto."
+          },
+          {
+            "ru": "Encantado, encantada.",
+            "translit": "[pronuncia] en-kan-TAH-do, en-kan-TAH-dah",
+            "pt": "pleased to meet you (said by a man), (said by a woman)",
+            "en": "",
+            "audio": "Encantado, encantada."
+          },
+          {
+            "ru": "Igualmente.",
+            "translit": "[pronuncia] ee-gwal-MEN-teh",
+            "pt": "likewise",
+            "en": "",
+            "audio": "Igualmente."
+          },
+          {
+            "ru": "Este es…",
+            "translit": "[pronuncia] ES-teh es",
+            "pt": "this is… (introducing a man)",
+            "en": "",
+            "audio": "Este es…"
+          },
+          {
+            "ru": "Esta es…",
+            "translit": "[pronuncia] ES-tah es",
+            "pt": "this is… (introducing a woman)",
+            "en": "",
+            "audio": "Esta es…"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Introducing yourself and introducing someone else",
+        "explicacao": "STEP 1: to say your name, use «Me llamo Ana.» Literally, «I call myself Ana». The verb is «llamarse», with the pronoun «me, te, se» before the verb: «me llamo», «te llamas», «se llama». You can also say «Soy Ana.» STEP 2: to ask someone's name: informal, «¿Cómo te llamas?»; formal, «¿Cómo se llama usted?». STEP 3: when you meet someone, say «Mucho gusto» or, shorter, «Encantado» (a man speaking) and «Encantada» (a woman speaking). The reply is «Igualmente» or «Mucho gusto». STEP 4: to introduce someone else: «Este es Luis.» (a man) or «Esta es Marta.» (a woman). STEP 5: «apellido» means surname, not «a nickname» (a nickname is «apodo»). In Spain and much of Latin America, people have two surnames: the father's and the mother's, as in «Ana García López». STEP 6: with strangers, use «señor» or «señora» with the surname: «Buenos días, señora García.» STEP 7: to move from «usted» to «tú», it's usually the older or higher-status person who suggests it.",
+        "comparacao": "English says «my name is» rather than «I call myself», so the literal construction («me llamo») has no direct English match — treat it as a set phrase to learn, not a translation of English. What does carry over: «encantado» and «encantada» change with the speaker's own gender (something English «pleased to meet you» doesn't do), and «apellido» is a false friend for «a nickname» — it actually means «surname».",
+        "tabela": [
+          {
+            "situacao": "[misto] say your name",
+            "informal": "[misto] Me llamo Ana.",
+            "formal": "[misto] Me llamo Ana García."
+          },
+          {
+            "situacao": "[misto] ask someone's name",
+            "informal": "[misto] ¿Cómo te llamas?",
+            "formal": "[misto] ¿Cómo se llama usted?"
+          },
+          {
+            "situacao": "[misto] ask how someone is",
+            "informal": "[misto] ¿Cómo estás?",
+            "formal": "[misto] ¿Cómo está usted?"
+          },
+          {
+            "situacao": "[misto] reply",
+            "informal": "[misto] Bien, gracias. ¿Y tú?",
+            "formal": "[misto] Bien, gracias. ¿Y usted?"
+          },
+          {
+            "situacao": "[misto] introduce someone",
+            "informal": "[misto] Este es Luis.",
+            "formal": "[misto] Esta es la señora García."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] Yo llamo Ana.",
+            "certo": "[misto] Me llamo Ana.",
+            "motivo": "It's a reflexive verb: «me llamo», with «me»."
+          },
+          {
+            "errado": "[misto] ¿Cómo llamas?",
+            "certo": "[misto] ¿Cómo te llamas?",
+            "motivo": "It's missing the pronoun «te»."
+          },
+          {
+            "errado": "[misto] ¿Cómo te llamas? (to a female stranger)",
+            "certo": "[misto] ¿Cómo se llama usted?",
+            "motivo": "With strangers, use the «usted» form."
+          },
+          {
+            "errado": "[misto] Este es Ana.",
+            "certo": "[misto] Esta es Ana.",
+            "motivo": "«Este» is masculine; for a woman, use «esta»."
+          }
+        ],
+        "tag": "Basic phrases"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Introduce yourself out loud: «Hola, me llamo… Mucho gusto.» Then introduce a male friend and a female friend: «Este es… Esta es…»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Answer out loud: «¿Eres estudiante? ¿Es usted médica? ¿Cómo es Pablo?» Then conjugate «ser» from memory."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-003.json",
+  "responsavel": null
+}

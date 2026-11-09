@@ -1,0 +1,156 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 165,
+  "fase": 17,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Gérondif and present participle: The gérondif",
+  "objetivo": "Lesson 42, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 42,
+    "titulo": "Gérondif and present participle",
+    "objetivo": "Use the gérondif («en parlant») for simultaneous actions, means and condition, and recognize the present participle («un homme parlant») and the infinitive after prepositions.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "The gérondif",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "en marchant",
+            "translit": "ahn mar-SHAHN",
+            "pt": "",
+            "en": "",
+            "audio": "en marchant"
+          },
+          {
+            "ru": "en mangeant",
+            "translit": "ahn mahn-ZHAHN",
+            "pt": "",
+            "en": "",
+            "audio": "en mangeant"
+          },
+          {
+            "ru": "en parlant",
+            "translit": "ahn par-LAHN",
+            "pt": "",
+            "en": "",
+            "audio": "en parlant"
+          },
+          {
+            "ru": "en lisant",
+            "translit": "ahn lee-ZAHN",
+            "pt": "",
+            "en": "",
+            "audio": "en lisant"
+          },
+          {
+            "ru": "en travaillant",
+            "translit": "ahn trah-vah-YAHN",
+            "pt": "",
+            "en": "",
+            "audio": "en travaillant"
+          },
+          {
+            "ru": "en conduisant",
+            "translit": "ahn kohn-dwee-ZAHN",
+            "pt": "",
+            "en": "",
+            "audio": "en conduisant"
+          },
+          {
+            "ru": "tout en",
+            "translit": "too-TAHN",
+            "pt": "",
+            "en": "",
+            "audio": "tout en"
+          },
+          {
+            "ru": "en même temps",
+            "translit": "ahn mehm TAHN",
+            "pt": "",
+            "en": "",
+            "audio": "en même temps"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "En marchant, en mangeant",
+        "explicacao": "STEP 1: the gérondif is formed with «en» + present participle. The present participle: stem of «nous» in the present + «-ant»: «nous parlons → parlant», «nous finissons → finissant», «nous prenons → prenant». STEP 2: exceptions: «être → étant», «avoir → ayant», «savoir → sachant». STEP 3: the gérondif refers to the SUBJECT of the sentence: «Je marche en écoutant de la musique.» (I walk and I listen) STEP 4: uses: simultaneity («Je mange en lisant.»), means («On apprend en pratiquant.»), condition («En travaillant plus, tu réussiras.»), cause («En arrivant tard, il a raté le début.»). STEP 5: «tout en» reinforces simultaneity or contrast: «Il travaille tout en écoutant la radio.» STEP 6: the pronoun goes before the participle: «En le voyant, j'ai souri.» STEP 7: negation: «En ne parlant pas, il évite les problèmes.» STEP 8: difference from English: English uses the -ing form freely («walking»), but French only uses it with «en».",
+        "comparacao": "in English the -ing form is free: «he arrived running», «she spoke smiling». French requires «en»: «il est arrivé en courant», «elle a parlé en souriant». Without «en», the present participle in French is almost only written.",
+        "tabela": [
+          {
+            "infinitive": "parler",
+            "gerund": "en parlant",
+            "example": "Il marche en parlant."
+          },
+          {
+            "infinitive": "finir",
+            "gerund": "en finissant",
+            "example": "Elle sourit en finissant."
+          },
+          {
+            "infinitive": "prendre",
+            "gerund": "en prenant",
+            "example": "En prenant le bus, tu arrives plus vite."
+          },
+          {
+            "infinitive": "être",
+            "gerund": "en étant",
+            "example": "En étant malade, il reste chez lui."
+          },
+          {
+            "infinitive": "avoir",
+            "gerund": "en ayant",
+            "example": "En ayant faim, je mange."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je marche écoutant de la musique.",
+            "certo": "Je marche en écoutant de la musique.",
+            "motivo": "Without «en» it is not correct."
+          },
+          {
+            "errado": "Il mange en ils parlent.",
+            "certo": "Il mange en parlant.",
+            "motivo": "Same subject."
+          },
+          {
+            "errado": "Je mange en lis.",
+            "certo": "Je mange en lisant.",
+            "motivo": "Present participle."
+          },
+          {
+            "errado": "En mangeons, on parle.",
+            "certo": "En mangeant, on parle.",
+            "motivo": "Gérondif: «-ant» is invariable."
+          }
+        ],
+        "tag": "Gérondif"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say out loud five things you do at the same time using «en» + gérondif."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Turn an active sentence into the passive and a passive one into the active, out loud."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-042.json",
+  "responsavel": null
+}

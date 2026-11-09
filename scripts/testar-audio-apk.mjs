@@ -2,13 +2,14 @@ import {chromium} from 'playwright';
 import {spawn} from 'node:child_process';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+const semAbertura=async(b,o)=>{const c=await b.newContext(o);await c.addInitScript(()=>{try{localStorage.setItem('linvuu:primeira-abertura:v1','1');}catch{}});return c;}; // estes testes começam depois das telas da primeira abertura
 const base='http://127.0.0.1:4351';
 const server=spawn(process.execPath,['node_modules/vite/bin/vite.js','--host','127.0.0.1','--port','4351','--strictPort'],{env:{...process.env,VITE_ALVO:'apk'},stdio:'ignore'});
 let browser;
 try{
  for(let i=0;i<60;i++){try{if((await fetch(base)).ok)break;}catch{}await new Promise(r=>setTimeout(r,250));}
  browser=await chromium.launch({executablePath:process.env.CHROME_EXECUTABLE_PATH,args:['--no-sandbox']});
- const context=await browser.newContext();const page=await context.newPage();
+ const context=await semAbertura(browser,);const page=await context.newPage();
  await page.goto(base);await page.locator('h1').first().waitFor();
  const results=await page.evaluate(async()=>{
   const m=await import('/src/plataforma/apk/audio.ts');m.limparAudioPrivado();

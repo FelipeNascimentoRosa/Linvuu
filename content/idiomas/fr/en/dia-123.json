@@ -1,0 +1,174 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 123,
+  "fase": 13,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Bank, post office and services: Information and complaints",
+  "objetivo": "Lesson 31, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 31,
+    "titulo": "Bank, post office and services",
+    "objetivo": "Handle practical tasks in French: open an account, exchange money, send a parcel, ask for information and complain politely.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Information and complaints",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "la réclamation",
+            "translit": "lah ray-klah-mah-see-OHN",
+            "pt": "",
+            "en": "",
+            "audio": "la réclamation"
+          },
+          {
+            "ru": "le remboursement",
+            "translit": "luh rahn-boor-suh-MAHN",
+            "pt": "",
+            "en": "",
+            "audio": "le remboursement"
+          },
+          {
+            "ru": "le reçu",
+            "translit": "luh ruh-SEW",
+            "pt": "",
+            "en": "",
+            "audio": "le reçu"
+          },
+          {
+            "ru": "le formulaire",
+            "translit": "luh for-mew-LEHR",
+            "pt": "",
+            "en": "",
+            "audio": "le formulaire"
+          },
+          {
+            "ru": "le guichet",
+            "translit": "luh gee-SHAY",
+            "pt": "",
+            "en": "",
+            "audio": "le guichet"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Complaining politely",
+        "explicacao": "STEP 1: start with courtesy: «Excusez-moi, j'ai un problème.» STEP 2: describe what happened: «J'ai acheté ce produit hier et il ne marche pas.» STEP 3: say what you want: «Je voudrais un remboursement.» «Pourriez-vous l'échanger ?» STEP 4: ask for the person in charge: «Pourrais-je parler au responsable ?» STEP 5: asking for documents: «Avez-vous votre reçu ?» «Il faut remplir ce formulaire.» STEP 6: close well: «Je vous remercie de votre aide.»",
+        "comparacao": "In English we might say «I want to speak to the manager». French softens it: «pourrais-je parler au responsable ?». A polite complaint is more likely to be heard.",
+        "tabela": [
+          {
+            "fase": "abertura",
+            "sentence": "Excusez-moi, j'ai un problème."
+          },
+          {
+            "fase": "fato",
+            "sentence": "J'ai acheté ce produit hier et il ne marche pas."
+          },
+          {
+            "fase": "pedido",
+            "sentence": "Je voudrais un remboursement."
+          },
+          {
+            "fase": "responsável",
+            "sentence": "Pourrais-je parler au responsable ?"
+          },
+          {
+            "fase": "fecho",
+            "sentence": "Je vous remercie de votre aide."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je veux le gérant.",
+            "certo": "Pourrais-je parler au responsable ?",
+            "motivo": "Polite request."
+          },
+          {
+            "errado": "J'ai acheté hier ce produit qui ne marche pas depuis.",
+            "certo": "J'ai acheté ce produit hier et il ne marche pas.",
+            "motivo": "A clear sentence, in two parts."
+          },
+          {
+            "errado": "Je veux un remboursement tout de suite !",
+            "certo": "Je voudrais un remboursement, s'il vous plaît.",
+            "motivo": "Politeness."
+          },
+          {
+            "errado": "Je vous remercie à votre aide.",
+            "certo": "Je vous remercie de votre aide.",
+            "motivo": "«Remercier de»."
+          }
+        ],
+        "tag": "Services"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "À la banque / At the bank",
+        "contexto": "Pedro opens a bank account.",
+        "linhas": [
+          {
+            "personagem": "Pedro",
+            "ru": "— Bonjour. Je voudrais ouvrir un compte, s'il vous plaît.",
+            "en": "— Good morning. I'd like to open an account, please.",
+            "audio": "Bonjour. Je voudrais ouvrir un compte, s'il vous plaît."
+          },
+          {
+            "personagem": "Le conseiller",
+            "ru": "— Bien sûr. Vous avez un justificatif de domicile et une pièce d'identité ?",
+            "en": "— Certainly. Do you have proof of address and an ID, sir?",
+            "audio": "Bien sûr. Vous avez un justificatif de domicile et une pièce d'identité ?"
+          },
+          {
+            "personagem": "Pedro",
+            "ru": "— Oui, voici mon passeport et un contrat de location.",
+            "en": "— Yes, here are my passport and a rental contract.",
+            "audio": "Oui, voici mon passeport et un contrat de location."
+          },
+          {
+            "personagem": "Le conseiller",
+            "ru": "— Parfait. Vous voulez aussi une carte bancaire ?",
+            "en": "— Perfect. Would you also like a bank card?",
+            "audio": "Parfait. Vous voulez aussi une carte bancaire ?"
+          },
+          {
+            "personagem": "Pedro",
+            "ru": "— Oui. Est-ce qu'il y a des frais mensuels ?",
+            "en": "— Yes. Are there monthly fees?",
+            "audio": "Oui. Est-ce qu'il y a des frais mensuels ?"
+          },
+          {
+            "personagem": "Le conseiller",
+            "ru": "— Deux euros par mois. Vous recevrez votre carte dans cinq jours.",
+            "en": "— Two euros a month. You will receive the card within five days.",
+            "audio": "Deux euros par mois. Vous recevrez votre carte dans cinq jours."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Complain out loud about a faulty product and politely ask for a refund."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Ask for a service at the post office and for information at the bank."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-031.json",
+  "responsavel": null
+}

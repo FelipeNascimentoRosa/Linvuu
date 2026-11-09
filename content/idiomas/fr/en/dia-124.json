@@ -1,0 +1,510 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 124,
+  "fase": 13,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Bank, post office and services: Review and practice for lesson 31",
+  "objetivo": "Lesson 31, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 31,
+    "titulo": "Bank, post office and services",
+    "objetivo": "Handle practical tasks in French: open an account, exchange money, send a parcel, ask for information and complain politely.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 31",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je voudrais retirer cinq cents euros",
+            "opcoes": [
+              "Je voudrais retirer cinq cents euros",
+              "Je voudrais déposer cinq cents euros",
+              "Je voudrais retirer cinquante euros"
+            ],
+            "gabarito": "Je voudrais retirer cinq cents euros",
+            "explicacao": "Listen to «retirer».",
+            "id": "fr-031-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Mon colis n'est pas arrivé",
+            "opcoes": [
+              "Mon colis n'est pas arrivé",
+              "Mon colis est arrivé",
+              "Ma lettre n'est pas arrivée"
+            ],
+            "gabarito": "Mon colis n'est pas arrivé",
+            "explicacao": "Listen to «colis».",
+            "id": "fr-031-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Pourrais-je parler au responsable ?",
+            "opcoes": [
+              "Pourrais-je parler au responsable ?",
+              "Je veux parler au responsable",
+              "Où est le responsable ?"
+            ],
+            "gabarito": "Pourrais-je parler au responsable ?",
+            "explicacao": "Listen to «pourrais-je».",
+            "id": "fr-031-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je voudrais ouvrir un compte",
+            "respostaEsperada": "Je voudrais ouvrir un compte",
+            "explicacao": "Write: Je voudrais ouvrir un compte.",
+            "id": "fr-031-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "J'ai perdu ma carte bancaire",
+            "respostaEsperada": "J'ai perdu ma carte bancaire",
+            "explicacao": "Write: J'ai perdu ma carte bancaire.",
+            "id": "fr-031-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Two euros a month. You will receive the card within five days.»",
+            "opcoes": [
+              "Vous",
+              "recevrez",
+              "carte",
+              "cinq",
+              "par",
+              "dans",
+              "jours.",
+              "votre",
+              "Deux",
+              "mois.",
+              "euros"
+            ],
+            "gabarito": "Deux euros par mois. Vous recevrez votre carte dans cinq jours.",
+            "explicacao": "Write: Deux euros par mois. Vous recevrez votre carte dans cinq jours.",
+            "id": "fr-031-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je voudrais un remboursement",
+            "respostaEsperada": "Je voudrais un remboursement",
+            "explicacao": "Write: Je voudrais un remboursement.",
+            "id": "fr-031-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Bonjour. Je voudrais ouvrir un compte, s'il vous plaît.",
+            "respostaEsperada": "Bonjour. Je voudrais ouvrir un compte, s'il vous plaît.",
+            "explicacao": "Good morning. I'd like to open an account, please.",
+            "id": "fr-031-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«To withdraw money» in French:",
+            "opcoes": [
+              "retirer de l'argent",
+              "withdraw de l'argent",
+              "prendre l'argent"
+            ],
+            "gabarito": "retirer de l'argent",
+            "explicacao": "Bank vocabulary.",
+            "id": "fr-031-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Transfer» in French:",
+            "opcoes": [
+              "un virement",
+              "une transférence",
+              "un transfert bancaire"
+            ],
+            "gabarito": "un virement",
+            "explicacao": "Masculine.",
+            "id": "fr-031-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Il arrivera dans trois jours.",
+              "Il arrivera en trois jours.",
+              "Il arrivera depuis trois jours."
+            ],
+            "gabarito": "Il arrivera dans trois jours.",
+            "explicacao": "Future: «dans».",
+            "id": "fr-031-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Deux euros par mois. Vous recevrez votre carte dans cinq jours.",
+            "respostaEsperada": "Deux euros par mois. Vous recevrez votre carte dans cinq jours.",
+            "explicacao": "Two euros a month. You will receive the card within five days.",
+            "id": "fr-031-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Mon colis n'est pas arrivé.",
+              "Mon colis n'a pas arrivé.",
+              "Mon colis ne arrive pas."
+            ],
+            "gabarito": "Mon colis n'est pas arrivé.",
+            "explicacao": "Arriver takes «être».",
+            "id": "fr-031-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "J'ai perdu ___ carte. (my)",
+            "opcoes": [
+              "ma",
+              "mon",
+              "mes"
+            ],
+            "gabarito": "ma",
+            "explicacao": "Carte is feminine.",
+            "id": "fr-031-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Quels ___ les frais ? (are)",
+            "opcoes": [
+              "sont",
+              "est",
+              "sommes"
+            ],
+            "gabarito": "sont",
+            "explicacao": "Plural.",
+            "id": "fr-031-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Oui, voici mon passeport et un contrat de location.",
+            "respostaEsperada": "Oui, voici mon passeport et un contrat de location.",
+            "explicacao": "Yes, here are my passport and a rental contract.",
+            "id": "fr-031-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je voudrais l'envoyer ___ recommandé.",
+            "opcoes": [
+              "en",
+              "à",
+              "dans"
+            ],
+            "gabarito": "en",
+            "explicacao": "«En recommandé».",
+            "id": "fr-031-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «le compte» mean?",
+            "audio": "le compte",
+            "opcoes": [
+              "the receipt",
+              "the bank card",
+              "the counter",
+              "the account"
+            ],
+            "gabarito": "the account",
+            "explicacao": "«le compte» = the account.",
+            "id": "fr-031-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Pourrais-___ parler au responsable ?",
+            "opcoes": [
+              "je",
+              "tu",
+              "il"
+            ],
+            "gabarito": "je",
+            "explicacao": "Inversion.",
+            "id": "fr-031-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Je voudrais faire un virement.»",
+            "opcoes": [
+              "Je",
+              "voudrais",
+              "faire",
+              "un",
+              "virement"
+            ],
+            "gabarito": "Je voudrais faire un virement.",
+            "explicacao": "Polite request.",
+            "id": "fr-031-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Mon colis n'est pas arrivé.»",
+            "opcoes": [
+              "Mon",
+              "colis",
+              "n'est",
+              "pas",
+              "arrivé"
+            ],
+            "gabarito": "Mon colis n'est pas arrivé.",
+            "explicacao": "Negation.",
+            "id": "fr-031-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I would like to open an account. I want to send this parcel to Brazil. My package did not arrive.",
+            "respostaEsperada": "Je voudrais ouvrir un compte. Je voudrais envoyer ce colis au Brésil. Mon colis n'est pas arrivé.",
+            "id": "fr-031-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «la lettre» mean?",
+            "audio": "la lettre",
+            "opcoes": [
+              "the complaint",
+              "the letter",
+              "the refund",
+              "the parcel"
+            ],
+            "gabarito": "the letter",
+            "explicacao": "«la lettre» = the letter.",
+            "id": "fr-031-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je voudrais ___ un chèque. (depositar)",
+            "opcoes": [
+              "retirer",
+              "déposer",
+              "envoyer"
+            ],
+            "gabarito": "déposer",
+            "explicacao": "«Déposer» = depositar.",
+            "id": "fr-031-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Parfait. Vous voulez aussi une carte bancaire ?",
+            "respostaEsperada": "Parfait. Vous voulez aussi une carte bancaire ?",
+            "explicacao": "Perfect. Would you also like a bank card?",
+            "id": "fr-031-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il y a une erreur ___ mon relevé. (on)",
+            "opcoes": [
+              "dans",
+              "à",
+              "sur"
+            ],
+            "gabarito": "sur",
+            "explicacao": "«Sur le relevé» = on the statement.",
+            "id": "fr-031-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il arrivera ___ cinq jours. (in)",
+            "opcoes": [
+              "dans",
+              "en",
+              "pendant"
+            ],
+            "gabarito": "dans",
+            "explicacao": "«Dans» + a period looks to the future.",
+            "id": "fr-031-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je voudrais faire une ___ . (complaint)",
+            "opcoes": [
+              "remboursement",
+              "réclamation",
+              "signature"
+            ],
+            "gabarito": "réclamation",
+            "explicacao": "«Réclamation» = complaint.",
+            "id": "fr-031-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «le virement» mean?",
+            "audio": "le virement",
+            "opcoes": [
+              "the complaint",
+              "the account",
+              "a transferência",
+              "to send"
+            ],
+            "gabarito": "a transferência",
+            "explicacao": "«le virement» = a transferência.",
+            "id": "fr-031-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je ___ remercie de votre aide. (thank you)",
+            "opcoes": [
+              "te",
+              "nous",
+              "vous"
+            ],
+            "gabarito": "vous",
+            "explicacao": "Formal register: «Je vous remercie».",
+            "id": "fr-031-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which refund request is the politest?",
+            "opcoes": [
+              "Je voudrais un remboursement, s'il vous plaît.",
+              "Je veux un remboursement tout de suite !",
+              "Donnez-moi mon argent."
+            ],
+            "gabarito": "Je voudrais un remboursement, s'il vous plaît.",
+            "explicacao": "«Je voudrais» and «s'il vous plaît» add courtesy.",
+            "id": "fr-031-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «en recommandé» mean?",
+            "opcoes": [
+              "urgent",
+              "registered",
+              "free"
+            ],
+            "gabarito": "registered",
+            "explicacao": "«Recommandé» = registered.",
+            "id": "fr-031-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Oui. Est-ce qu'il y a des frais mensuels ?",
+            "respostaEsperada": "Oui. Est-ce qu'il y a des frais mensuels ?",
+            "explicacao": "Yes. Are there monthly fees?",
+            "id": "fr-031-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «the balance»?",
+            "opcoes": [
+              "le reçu",
+              "le guichet",
+              "le solde"
+            ],
+            "gabarito": "le solde",
+            "explicacao": "«Solde» = balance.",
+            "id": "fr-031-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «le timbre» mean?",
+            "audio": "le timbre",
+            "opcoes": [
+              "o selo",
+              "the account",
+              "the letter",
+              "depositar"
+            ],
+            "gabarito": "o selo",
+            "explicacao": "«le timbre» = o selo.",
+            "id": "fr-031-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Quels sont les frais mensuels ?",
+              "Quel sont les frais mensuels ?",
+              "Quelles sont le frais mensuels ?"
+            ],
+            "gabarito": "Quels sont les frais mensuels ?",
+            "explicacao": "«Frais» is masculine plural: «quels».",
+            "id": "fr-031-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «I would like to deposit a check.»",
+            "opcoes": [
+              "Je",
+              "voudrais",
+              "déposer",
+              "un",
+              "chèque"
+            ],
+            "gabarito": "Je voudrais déposer un chèque.",
+            "explicacao": "«Je voudrais» + infinitive.",
+            "id": "fr-031-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «It will arrive in a week.»",
+            "opcoes": [
+              "Il",
+              "arrivera",
+              "dans",
+              "une",
+              "semaine"
+            ],
+            "gabarito": "Il arrivera dans une semaine.",
+            "explicacao": "«Dans» + period of time.",
+            "id": "fr-031-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I would like to withdraw two hundred euros. My card does not work.",
+            "respostaEsperada": "Je voudrais retirer deux cents euros. Ma carte ne marche pas.",
+            "id": "fr-031-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I bought this product yesterday and it doesn't work. I would like a refund.",
+            "respostaEsperada": "J'ai acheté ce produit hier et il ne marche pas. Je voudrais un remboursement.",
+            "id": "fr-031-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Speak for 1 minute about a practical task you recently had to deal with."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Open an account and send a parcel, out loud."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-031.json",
+  "responsavel": null
+}

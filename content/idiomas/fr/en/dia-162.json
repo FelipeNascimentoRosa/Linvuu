@@ -1,0 +1,141 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 162,
+  "fase": 17,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "The passive voice and «on»: When to use it, and alternatives",
+  "objetivo": "Lesson 41, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 41,
+    "titulo": "The passive voice and «on»",
+    "objetivo": "Form the passive voice with «être» + participle and «par», know when it is preferred, and use natural alternatives such as «on» and the pronominal form.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "When to use it, and alternatives",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "on",
+            "translit": "OHN",
+            "pt": "",
+            "en": "",
+            "audio": "on"
+          },
+          {
+            "ru": "se vendre",
+            "translit": "suh vahn-DRUH",
+            "pt": "",
+            "en": "",
+            "audio": "se vendre"
+          },
+          {
+            "ru": "se faire",
+            "translit": "suh FEHR",
+            "pt": "",
+            "en": "",
+            "audio": "se faire"
+          },
+          {
+            "ru": "se dire",
+            "translit": "suh DEER",
+            "pt": "",
+            "en": "",
+            "audio": "se dire"
+          },
+          {
+            "ru": "se parler",
+            "translit": "suh par-LAY",
+            "pt": "",
+            "en": "",
+            "audio": "se parler"
+          },
+          {
+            "ru": "se trouver",
+            "translit": "suh troo-VAY",
+            "pt": "",
+            "en": "",
+            "audio": "se trouver"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "How to avoid the passive",
+        "explicacao": "STEP 1: in speech, use «on» when the agent is unspecified: «On parle français ici.» (instead of «Le français est parlé ici») STEP 2: use the pronominal form for things and habits: «Ça se dit.» «Le vin se vend ici.» «Ça ne se fait pas.» STEP 3: «se faire» + infinitive expresses that someone undergoes something: «Il s'est fait voler son portable.» (his phone got stolen) «Je me suis fait couper les cheveux.» (I had my hair cut) STEP 4: «se faire» is informal and very common; it avoids the passive in unlucky situations. STEP 5: «il paraît que» and «on dit que» attribute without giving a source: «On dit que ce film est excellent.» STEP 6: in the press, the passive highlights the fact: «Le président a été élu hier.» STEP 7: with «par», the agent appears; without «par», the focus is on the result: «Le magasin est fermé.» STEP 8: tenses: «est fermé» = state; «a été fermé» = action.",
+        "comparacao": "in English we say «houses for sale» and «French is spoken here». French does the same with «on» and the pronominal form: «on parle français», «ça se vend». «Se faire» + infinitive (to have something happen to you) is very natural and has no direct equivalent: «se faire voler» is «to get robbed».",
+        "tabela": [
+          {
+            "idea": "unspecified agent",
+            "example": "On parle français ici."
+          },
+          {
+            "idea": "habit or rule",
+            "example": "Ça ne se fait pas."
+          },
+          {
+            "idea": "to undergo an action",
+            "example": "Il s'est fait voler son portable."
+          },
+          {
+            "idea": "to have something done by someone",
+            "example": "Je me suis fait couper les cheveux."
+          },
+          {
+            "idea": "the press",
+            "example": "Le président a été élu hier."
+          },
+          {
+            "idea": "state",
+            "example": "Le magasin est fermé."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Il a été volé son portable.",
+            "certo": "Il s'est fait voler son portable.",
+            "motivo": "«Se faire voler»."
+          },
+          {
+            "errado": "Le vin est se vend ici.",
+            "certo": "Le vin se vend ici.",
+            "motivo": "Pronominal form."
+          },
+          {
+            "errado": "On parlent français.",
+            "certo": "On parle français.",
+            "motivo": "«On» + 3rd person."
+          },
+          {
+            "errado": "Ça ne fait pas.",
+            "certo": "Ça ne se fait pas.",
+            "motivo": "Pronominal form."
+          }
+        ],
+        "tag": "Passive"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Explain out loud eight things that «ça ne se fait pas» in your culture and in French culture."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say five sentences out loud in the passive voice, in different tenses."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-041.json",
+  "responsavel": null
+}

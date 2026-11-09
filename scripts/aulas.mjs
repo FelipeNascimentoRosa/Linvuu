@@ -57,6 +57,13 @@ const OBJETIVO = { en: (a, i, t, m) => `Lesson ${a}, session ${i} of ${t} · ${m
 for (const l of LINGUAS) {
   if (fonteDe(id) === l) continue;
   const dirL = path.join(dirIdioma, l);
+  // GUARDA (2026-11-04): o passo seguinte apaga a pasta inteira e regenera só as aulas com mapa i18n.
+  // Se houver mais dias em disco do que os mapas conseguem regenerar, são traduções servidas sem mapa —
+  // apagar seria destruição de conteúdo publicado. Recusa ANTES do rmSync; nada é apagado.
+  // Para repor os mapas a partir dos dias servidos: node scripts/restaurar-mapas-i18n.mjs <curso> <língua>.
+  const emDisco = fs.existsSync(dirL) ? fs.readdirSync(dirL).filter((f) => /^dia-\d+\.json$/.test(f)).length : 0;
+  const regeraveis = aulas.reduce((n, a) => n + (aulaTemTraducao(id, l, a.aula) ? a.sessoes.length : 0), 0);
+  if (emDisco > regeraveis) throw new Error(`GUARDA aulas.mjs — ${id}/${l}: ${emDisco} dias traduzidos em disco, mas os mapas i18n só regeneram ${regeraveis}. Há traduções servidas sem mapa por aula em content/idiomas/${id}/i18n/${l}/. Reponha os mapas (scripts/restaurar-mapas-i18n.mjs ${id} ${l}) ou remova a pasta deliberadamente. Nada foi apagado.`);
   fs.rmSync(dirL, { recursive: true, force: true });
   const titulos = titulosDe(id, l);
   let n = 0;

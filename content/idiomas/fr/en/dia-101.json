@@ -1,0 +1,155 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 101,
+  "fase": 11,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Body, health and the pharmacy: The body and pain",
+  "objetivo": "Lesson 26, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 26,
+    "titulo": "Body, health and the pharmacy",
+    "objetivo": "Name parts of the body, say where it hurts, describe symptoms, talk to the doctor and at the pharmacy, and use «avoir mal à» and «il faut».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "The body and pain",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "la tête",
+            "translit": "lah TEHT",
+            "pt": "",
+            "en": "",
+            "audio": "la tête"
+          },
+          {
+            "ru": "le ventre",
+            "translit": "luh VAHNTR",
+            "pt": "",
+            "en": "",
+            "audio": "le ventre"
+          },
+          {
+            "ru": "le dos",
+            "translit": "luh DOH",
+            "pt": "",
+            "en": "",
+            "audio": "le dos"
+          },
+          {
+            "ru": "la gorge",
+            "translit": "lah GOHRZH",
+            "pt": "",
+            "en": "",
+            "audio": "la gorge"
+          },
+          {
+            "ru": "la main",
+            "translit": "lah MAN",
+            "pt": "",
+            "en": "",
+            "audio": "la main"
+          },
+          {
+            "ru": "le pied",
+            "translit": "luh PYAY",
+            "pt": "",
+            "en": "",
+            "audio": "le pied"
+          },
+          {
+            "ru": "la jambe",
+            "translit": "lah ZHAHMB",
+            "pt": "",
+            "en": "",
+            "audio": "la jambe"
+          },
+          {
+            "ru": "le bras",
+            "translit": "luh BRAH",
+            "pt": "",
+            "en": "",
+            "audio": "le bras"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "J'ai mal à la tête",
+        "explicacao": "STEP 1: to say where it hurts, use «avoir mal à» + body part: «J'ai mal à la tête.» «Il a mal au dos.» «Elle a mal aux pieds.» STEP 2: «à + le = au», «à + les = aux», while «à la» and «à l'» stay the same: «mal au ventre», «mal aux mains», «mal à la gorge», «mal à l'estomac». STEP 3: «avoir mal» with no place: «J'ai mal.» (it hurts) STEP 4: for 'it hurts here': «Ça fait mal ici.» STEP 5: other expressions: «avoir de la fièvre» (to have a fever), «avoir de la toux» or «tousser» (to cough), «être enrhumé» (to have a cold), «être fatigué», «avoir froid», «avoir chaud» (French uses «avoir», literally 'to have cold/hot', not 'to be'). STEP 6: questions: «Où avez-vous mal ?» «Qu'est-ce qui ne va pas ?» STEP 7: in the past: «J'avais mal à la tête.» «J'ai eu mal au ventre toute la nuit.» STEP 8: in French, body parts take the definite article, not a possessive: «Je me lave les mains.» «Il a levé la main.» (not «ses mains»).",
+        "comparacao": "In English we say «my head hurts» or «I have a headache». French uses «avoir mal à» + body part, with the verb «avoir» («to have»), never «to be»: «j'ai mal à la tête». English uses a possessive («my hand»); French uses the article («la main»).",
+        "tabela": [
+          {
+            "expression": "J'ai mal à la tête.",
+            "part": "the head"
+          },
+          {
+            "expression": "J'ai mal au dos.",
+            "part": "as costas (à + le = au)"
+          },
+          {
+            "expression": "J'ai mal aux pieds.",
+            "part": "the feet (à + les = aux)"
+          },
+          {
+            "expression": "J'ai mal à la gorge.",
+            "part": "the throat"
+          },
+          {
+            "expression": "J'ai mal à l'estomac.",
+            "part": "the stomach (vowel)"
+          },
+          {
+            "expression": "J'ai de la fièvre.",
+            "part": "fever"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je suis mal à la tête.",
+            "certo": "J'ai mal à la tête.",
+            "motivo": "«Avoir mal à»."
+          },
+          {
+            "errado": "J'ai mal à le dos.",
+            "certo": "J'ai mal au dos.",
+            "motivo": "à + le = au."
+          },
+          {
+            "errado": "J'ai mal ma tête.",
+            "certo": "J'ai mal à la tête.",
+            "motivo": "What is missing is the «à» and the article, not a possessive."
+          },
+          {
+            "errado": "Je lave mes mains.",
+            "certo": "Je me lave les mains.",
+            "motivo": "Body parts: article."
+          }
+        ],
+        "tag": "Health"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say out loud where you feel pain or tiredness, and how you feel today."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Describe out loud a place and a person with «qui», «que» and «où»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-026.json",
+  "responsavel": null
+}

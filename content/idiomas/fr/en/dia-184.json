@@ -1,0 +1,510 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 184,
+  "fase": 19,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Subjunctive: emotions, doubts and conjunctions: Review and practice for lesson 46",
+  "objetivo": "Lesson 46, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 46,
+    "titulo": "Subjunctive: emotions, doubts and conjunctions",
+    "objetivo": "Use the subjonctif after verbs of emotion, doubt and negative opinion, and after conjunctions such as «bien que», «avant que», «à moins que» and «sans que»; tell the subjunctive from the indicative.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 46",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je suis content que tu viennes",
+            "opcoes": [
+              "Je suis content que tu viennes",
+              "Je suis content que tu viens",
+              "Je suis content de venir"
+            ],
+            "gabarito": "Je suis content que tu viennes",
+            "explicacao": "Listen to «viennes».",
+            "id": "fr-046-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "J'espère qu'il viendra",
+            "opcoes": [
+              "J'espère qu'il viendra",
+              "J'espère qu'il vienne",
+              "Je souhaite qu'il vienne"
+            ],
+            "gabarito": "J'espère qu'il viendra",
+            "explicacao": "Listen to «viendra».",
+            "id": "fr-046-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Bien qu'il pleuve, je sors",
+            "opcoes": [
+              "Bien qu'il pleuve, je sors",
+              "Bien qu'il pleut, je sors",
+              "Parce qu'il pleut, je sors"
+            ],
+            "gabarito": "Bien qu'il pleuve, je sors",
+            "explicacao": "Listen to «pleuve».",
+            "id": "fr-046-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je ne pense pas qu'il soit malade",
+            "respostaEsperada": "Je ne pense pas qu'il soit malade",
+            "explicacao": "Write: Je ne pense pas qu'il soit malade.",
+            "id": "fr-046-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Avant qu'il parte, je lui parle",
+            "respostaEsperada": "Avant qu'il parte, je lui parle",
+            "explicacao": "Write: Avant qu'il parte, je lui parle.",
+            "id": "fr-046-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «I hope you will have finished before the end of the month.»",
+            "opcoes": [
+              "mois.",
+              "la",
+              "que",
+              "fin",
+              "avant",
+              "fini",
+              "auras",
+              "du",
+              "tu",
+              "J'espère"
+            ],
+            "gabarito": "J'espère que tu auras fini avant la fin du mois.",
+            "explicacao": "Write: J'espère que tu auras fini avant la fin du mois.",
+            "id": "fr-046-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je reste jusqu'à ce que tu viennes",
+            "respostaEsperada": "Je reste jusqu'à ce que tu viennes",
+            "explicacao": "Write: Je reste jusqu'à ce que tu viennes.",
+            "id": "fr-046-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "être content que",
+            "respostaEsperada": "être content que",
+            "explicacao": "to be glad that",
+            "id": "fr-046-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Espérer que» takes:",
+            "opcoes": [
+              "indicative",
+              "subjunctive",
+              "infinitive"
+            ],
+            "gabarito": "indicative",
+            "explicacao": "J'espère qu'il viendra.",
+            "id": "fr-046-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Bien que» takes:",
+            "opcoes": [
+              "subjunctive",
+              "indicative",
+              "conditional"
+            ],
+            "gabarito": "subjunctive",
+            "explicacao": "Concession.",
+            "id": "fr-046-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je ne pense pas qu'il soit malade.",
+              "Je ne pense pas qu'il est malade.",
+              "Je ne pense pas qu'il sera malade."
+            ],
+            "gabarito": "Je ne pense pas qu'il soit malade.",
+            "explicacao": "Negation: subjunctive.",
+            "id": "fr-046-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "J'espère que tu auras fini avant la fin du mois.",
+            "respostaEsperada": "J'espère que tu auras fini avant la fin du mois.",
+            "explicacao": "I hope you will have finished before the end of the month.",
+            "id": "fr-046-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Après qu'il est parti, je suis sorti.",
+              "Après qu'il soit parti, je suis sorti.",
+              "Après qu'il sera parti, je suis sorti."
+            ],
+            "gabarito": "Après qu'il est parti, je suis sorti.",
+            "explicacao": "«Après que» + indicative.",
+            "id": "fr-046-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il est possible qu'il ___ . (pleuvoir)",
+            "opcoes": [
+              "pleuve",
+              "pleut",
+              "pleuvra"
+            ],
+            "gabarito": "pleuve",
+            "explicacao": "Possibility.",
+            "id": "fr-046-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je suis sûr qu'il ___ . (venir)",
+            "opcoes": [
+              "viendra",
+              "vienne",
+              "viennent"
+            ],
+            "gabarito": "viendra",
+            "explicacao": "Certainty.",
+            "id": "fr-046-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "avoir peur que",
+            "respostaEsperada": "avoir peur que",
+            "explicacao": "to be afraid that",
+            "id": "fr-046-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il part ___ dire au revoir. (without)",
+            "opcoes": [
+              "sans",
+              "sans que",
+              "avant"
+            ],
+            "gabarito": "sans",
+            "explicacao": "Same subject.",
+            "id": "fr-046-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «certain» mean?",
+            "audio": "certain",
+            "opcoes": [
+              "probable",
+              "unless",
+              "to be afraid that",
+              "certain"
+            ],
+            "gabarito": "certain",
+            "explicacao": "«certain» = certain.",
+            "id": "fr-046-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je viens, à moins qu'il ___ un problème.",
+            "opcoes": [
+              "y ait",
+              "y a",
+              "y aura"
+            ],
+            "gabarito": "y ait",
+            "explicacao": "«À moins que» + subjunctive.",
+            "id": "fr-046-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Je suis content que tu viennes.»",
+            "opcoes": [
+              "Je",
+              "suis",
+              "content",
+              "que",
+              "tu",
+              "viennes"
+            ],
+            "gabarito": "Je suis content que tu viennes.",
+            "explicacao": "Emotion + subjunctive.",
+            "id": "fr-046-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Bien qu'il pleuve, je sors.»",
+            "opcoes": [
+              "Bien",
+              "qu'il",
+              "pleuve,",
+              "je",
+              "sors"
+            ],
+            "gabarito": "Bien qu'il pleuve, je sors.",
+            "explicacao": "Concession.",
+            "id": "fr-046-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I hope you come. I don't think he is sick. Although it is raining, I am going out.",
+            "respostaEsperada": "J'espère que tu viendras. Je ne pense pas qu'il soit malade. Bien qu'il pleuve, je sors.",
+            "id": "fr-046-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «regretter que» mean?",
+            "audio": "regretter que",
+            "opcoes": [
+              "to be sad that",
+              "until",
+              "probable",
+              "to regret that"
+            ],
+            "gabarito": "to regret that",
+            "explicacao": "«regretter que» = to regret that.",
+            "id": "fr-046-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je suis triste que tu ___ . (partir)",
+            "opcoes": [
+              "pars",
+              "partes",
+              "partiras"
+            ],
+            "gabarito": "partes",
+            "explicacao": "Emotion takes the subjunctive: «que tu partes».",
+            "id": "fr-046-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "je ne pense pas que",
+            "respostaEsperada": "je ne pense pas que",
+            "explicacao": "I don't think that",
+            "id": "fr-046-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je doute qu'il ___ la vérité. (savoir)",
+            "opcoes": [
+              "sait",
+              "saura",
+              "sache"
+            ],
+            "gabarito": "sache",
+            "explicacao": "«Douter que» + subjunctive; «savoir» → «sache».",
+            "id": "fr-046-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "J'espère que tu ___ bientôt. (venir)",
+            "opcoes": [
+              "viendras",
+              "viennes",
+              "viens"
+            ],
+            "gabarito": "viendras",
+            "explicacao": "«Espérer que» takes the indicative.",
+            "id": "fr-046-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Avant qu'elle ___ , je lui parle. (partir)",
+            "opcoes": [
+              "part",
+              "parte",
+              "partira"
+            ],
+            "gabarito": "parte",
+            "explicacao": "«Avant que» takes the subjunctive.",
+            "id": "fr-046-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «sans que» mean?",
+            "audio": "sans que",
+            "opcoes": [
+              "duvidoso",
+              "before",
+              "probable",
+              "without"
+            ],
+            "gabarito": "without",
+            "explicacao": "«sans que» = without.",
+            "id": "fr-046-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Après qu'il ___ arrivé, nous avons mangé. (être)",
+            "opcoes": [
+              "soit",
+              "sera",
+              "est"
+            ],
+            "gabarito": "est",
+            "explicacao": "«Après que» takes the indicative.",
+            "id": "fr-046-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je suis sûr qu'il viendra.",
+              "Je suis sûr qu'il vienne.",
+              "Je suis sûr qu'il viendrait."
+            ],
+            "gabarito": "Je suis sûr qu'il viendra.",
+            "explicacao": "Certainty takes the indicative.",
+            "id": "fr-046-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je ne suis pas sûr qu'il vient.",
+              "Je ne suis pas sûr qu'il vienne.",
+              "Je ne suis pas sûr qu'il venait."
+            ],
+            "gabarito": "Je ne suis pas sûr qu'il vienne.",
+            "explicacao": "Negated certainty becomes doubt: subjunctive.",
+            "id": "fr-046-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "à moins que",
+            "respostaEsperada": "à moins que",
+            "explicacao": "unless",
+            "id": "fr-046-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "With the same subject, which sentence is correct?",
+            "opcoes": [
+              "Je suis content que je viens.",
+              "Je suis content que je vienne.",
+              "Je suis content de venir."
+            ],
+            "gabarito": "Je suis content de venir.",
+            "explicacao": "Same subject takes the infinitive.",
+            "id": "fr-046-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «avant que» mean?",
+            "audio": "avant que",
+            "opcoes": [
+              "seguro",
+              "probable",
+              "although",
+              "before"
+            ],
+            "gabarito": "before",
+            "explicacao": "«avant que» = before.",
+            "id": "fr-046-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which conjunction takes the indicative?",
+            "opcoes": [
+              "après que",
+              "avant que",
+              "bien que"
+            ],
+            "gabarito": "après que",
+            "explicacao": "«Après que» takes the indicative; the others take the subjunctive.",
+            "id": "fr-046-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «I regret that he is leaving.»",
+            "opcoes": [
+              "Je",
+              "regrette",
+              "qu'il",
+              "parte"
+            ],
+            "gabarito": "Je regrette qu'il parte.",
+            "explicacao": "«Regretter que» + subjunctive.",
+            "id": "fr-046-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «I go out, unless it rains.»",
+            "opcoes": [
+              "Je",
+              "sors",
+              "à",
+              "moins",
+              "qu'il",
+              "pleuve"
+            ],
+            "gabarito": "Je sors à moins qu'il pleuve.",
+            "explicacao": "«À moins que» + subjunctive.",
+            "id": "fr-046-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I am glad that you are coming. I doubt that he knows.",
+            "respostaEsperada": "Je suis content que tu viennes. Je doute qu'il sache.",
+            "id": "fr-046-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I hope he comes. Although I am tired, I stay.",
+            "respostaEsperada": "J'espère qu'il viendra. Bien que je sois fatigué, je reste.",
+            "id": "fr-046-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Speak for 1 minute about a doubt or a wish of yours, using the subjunctive."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Talk about plans and doubts using the subjunctive and the indicative."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-046.json",
+  "responsavel": null
+}

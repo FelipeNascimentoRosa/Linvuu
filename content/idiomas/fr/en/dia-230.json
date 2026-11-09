@@ -1,0 +1,141 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 230,
+  "fase": 23,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Advanced travel: unexpected problems, complaints and the passive voice: The passive voice",
+  "objetivo": "Lesson 58, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 58,
+    "titulo": "Advanced travel: unexpected problems, complaints and the passive voice",
+    "objetivo": "Handle unexpected problems while traveling (cancelled flight, lost luggage, a problem with your room), make a polite complaint and use the passive voice to talk about facts.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "The passive voice",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "être annulé",
+            "translit": "eh-truh ah-new-LAY",
+            "pt": "to be canceled",
+            "en": "to be canceled",
+            "audio": "être annulé"
+          },
+          {
+            "ru": "être retardé",
+            "translit": "eh-truh ruh-tar-DAY",
+            "pt": "to be delayed",
+            "en": "to be delayed",
+            "audio": "être retardé"
+          },
+          {
+            "ru": "être perdu",
+            "translit": "eh-truh pehr-DEW",
+            "pt": "to be lost",
+            "en": "to be lost",
+            "audio": "être perdu"
+          },
+          {
+            "ru": "être remboursé",
+            "translit": "eh-truh rahn-boor-SAY",
+            "pt": "to be reimbursed",
+            "en": "to be reimbursed",
+            "audio": "être remboursé"
+          },
+          {
+            "ru": "par",
+            "translit": "PAR",
+            "pt": "by (agent)",
+            "en": "by (agent)",
+            "audio": "par"
+          },
+          {
+            "ru": "de",
+            "translit": "DUH",
+            "pt": "by; with (in certain expressions)",
+            "en": "by; with (in certain expressions)",
+            "audio": "de"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Le vol a été annulé",
+        "explicacao": "STEP 1: the passive uses «être» + a past participle that agrees with the subject: «Le vol est annulé.» «Les bagages sont perdus.» STEP 2: the form of «être» locates the event or state in time: «Le vol a été annulé» (passé composé), «Le vol sera annulé» (future), «Le vol était annulé» (imparfait). STEP 3: an agent is often introduced with «par»: «Le vol a été annulé par la compagnie.» STEP 4: some verbs of feeling or state use «de»: «Il est aimé de tous.» STEP 5: in conversation, an active sentence with «on» is often an alternative: «On a annulé le vol.» STEP 6: «se faire» + infinitive can describe something that happens to someone: «Je me suis fait voler mon sac.» Its meaning depends on context; it is not a universal passive.",
+        "comparacao": "English also uses a passive in “the flight was canceled.” In French, the participle agrees with the subject: «les bagages sont perdus». You can also use active «on»: «on a perdu mes bagages». «Je me suis fait voler mon sac» means “I had my bag stolen”; the French participle «fait» remains unchanged before an infinitive.",
+        "tabela": [
+          {
+            "mood": "present",
+            "example": "Le vol est annulé."
+          },
+          {
+            "mood": "passé composé",
+            "example": "Le vol a été annulé."
+          },
+          {
+            "mood": "imparfait",
+            "example": "Le vol était annulé."
+          },
+          {
+            "mood": "future",
+            "example": "Le vol sera annulé."
+          },
+          {
+            "mood": "with an agent",
+            "example": "Le vol a été annulé par la compagnie."
+          },
+          {
+            "mood": "informal",
+            "example": "Je me suis fait voler mon sac."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Les bagages sont perdu.",
+            "certo": "Les bagages sont perdus.",
+            "motivo": "Agreement."
+          },
+          {
+            "errado": "Le vol a été annulé de la compagnie.",
+            "certo": "Le vol a été annulé par la compagnie.",
+            "motivo": "Agent: «par»."
+          },
+          {
+            "errado": "Le vol a annulé.",
+            "certo": "Le vol a été annulé.",
+            "motivo": "«Été» is missing."
+          },
+          {
+            "errado": "J'ai fait voler mon sac.",
+            "certo": "Je me suis fait voler mon sac.",
+            "motivo": "«Se faire» structure."
+          }
+        ],
+        "tag": "Passive"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Describe aloud a trip where everything went wrong, using at least four sentences in the passive voice or with «on»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say two sentences asking a hotel for something with «pourriez-vous»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-058.json",
+  "responsavel": null
+}

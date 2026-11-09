@@ -8,14 +8,14 @@
 - Público inicial: Brasil. Manter português brasileiro claro. O posicionamento visual é premium e não infantilizado; conservar a marca e o curso tal como publicados.
 - A1/A2 atuais e website em produção não devem ser alterados acidentalmente por PRs de livros B1–C2, gamificação, protótipos ou artes.
 - **Mascote Vuu:** o proprietário explicitamente pediu em 27/10 registrar Vuu como frente de identidade/produto. O arquivo `AGENTS.md` existente o trata como **frente futura**, e a árvore de arquivos da `main` inspecionada hoje não mostrou asset/implementação identificável como Vuu. Logo, **não declarar Vuu integrado ao site, aprovado visualmente ou distribuído no APK** sem localizar o asset, PR e testes. Se continuar Vuu, preservar estética premium, não infantilizar e pedir evidência do arquivo/arte aprovada. Não remover mascotes legados sem escopo e autorização específica.
-- PRs futuros mantidos em **draft**: [#360, editorial B1–C2](https://github.com/FelipeVRosa/Linvuu/pull/360) e [#367, gamificação](https://github.com/FelipeVRosa/Linvuu/pull/367). Não fazer merge/release involuntário.
+- PRs futuros mantidos em **draft**: [#360, editorial B1–C2](https://github.com/FelipeNascimentoRosa/Linvuu/pull/360) e [#367, gamificação](https://github.com/FelipeNascimentoRosa/Linvuu/pull/367). Não fazer merge/release involuntário.
 
 ## 1. Três repositórios e privacidade
 | Repositório | Papel | Estado verificado antes do encerramento | Alvo autorizado |
 | --- | --- | --- | --- |
-| `FelipeVRosa/Linvuu` (ID `1400441159`) | produto web/APK, CI, código de regras e docs dos agentes | público | **privado** |
-| `FelipeVRosa/Linvuu-Livros-em-PDF` (ID `1416459328`) | livros próprios, templates, fontes e PDFs | **já privado** | permanecer privado |
-| `FelipeVRosa/Linvuu-Auditoria-Firebase` (ID `1435293296`) | OIDC e auditoria de metadados IAM/Firestore | público | **privado** |
+| `FelipeNascimentoRosa/Linvuu` (ID `1400441159`) | produto web/APK, CI, código de regras e docs dos agentes | público | **privado** |
+| `FelipeNascimentoRosa/Linvuu-Livros-em-PDF` (ID `1416459328`) | livros próprios, templates, fontes e PDFs | **já privado** | permanecer privado |
+| `FelipeNascimentoRosa/Linvuu-Auditoria-Firebase` (ID `1435293296`) | OIDC e auditoria de metadados IAM/Firestore | público | **privado** |
 As mudanças de visibilidade são operações separadas, a serem **confirmadas por API após aplicação**. Não reportar três repositórios privados antes dessa confirmação.
 - GitHub repo privado **não torna o domínio https://linvuu.com.br privado**; Render publica a aplicação independentemente do código-fonte.
 - **Atenção:** minutos GitHub Actions deixam de ser ilimitados quando o repo fica privado; plano/cota/faturamento podem impedir novos jobs. Verificar Render GitHub integration, PR checks, e acesso dos agentes após converter; se falhar, não expor o código publicamente para fazer o runner voltar.
@@ -49,7 +49,7 @@ A **main anterior à preparação deste relatório** está em `a71a2eec52ec5cad5
 - Proprietários humanos confirmados pelo `gcloud projects get-iam-policy linvuu`: `hello.linvuu@gmail.com` e `felipevaleevarosa@gmail.com` com `roles/owner`. Ambos executaram no Cloud Shell `configurar-auditoria-privada.py --apply` e `--verify` e receberam `CONFIGURACAO_GCP_VERIFICADA`; **nenhuma chave JSON permanente criada**.
 - O instalador antigo `~/configurar.py` exigia uma conta e um pool obsoletos; usar somente o instalador atualizado da auditoria, nunca o legado.
 - Workload Identity Federation somente leitura: pool `linvuu-audit-private`, provider `github-private`, SA `auditoria-privada@linvuu.iam.gserviceaccount.com`; condição restrita a GitHub repository ID `1435293296`, owner ID `204771338`, branch `main` e caminho exato `.github/workflows/auditoria-firebase.yml`.
-- [Run #40460208259](https://github.com/FelipeVRosa/Linvuu-Auditoria-Firebase/actions/runs/40460208259): **OIDC temporário e leitura do número do projeto testados com sucesso**; não autoriza concluir que todos os recursos Firebase foram auditados, nem dá acesso admin ao ChatGPT/Claude.
+- [Run #40460208259](https://github.com/FelipeNascimentoRosa/Linvuu-Auditoria-Firebase/actions/runs/40460208259): **OIDC temporário e leitura do número do projeto testados com sucesso**; não autoriza concluir que todos os recursos Firebase foram auditados, nem dá acesso admin ao ChatGPT/Claude.
 - `firestore.rules` do produto e as regras mostradas na aba Rules do Firebase em imagens de 22/10 **coincidiram visualmente**, restritivas para `users/{uid}`; **não** houve comparação byte a byte com a regra publicada nem teste real com dois usuários. Nenhum `firebase deploy` foi executado. Endpoint e controles do Admin SDK operam fora das regras de clientes, exigem testes separados.
 - Auditoria no repo privado passa a poder coletar somente metadados pelo workflow manual (se Actions privado executar). A **comparação SHA do arquivo versionado com regras publicadas fica pendente**, porque o main se tornará privado; não interpretar sucesso da coleta como aprovação das regras. Qualquer inventário IAM pode conter metadados administrativos e deve continuar privado.
 
@@ -63,18 +63,18 @@ A **main anterior à preparação deste relatório** está em `a71a2eec52ec5cad5
 - GSC Wizard Indexing Tracker: **81 URLs cadastradas, 7 indexadas, 17 não indexadas, 57 sem inspeção** na fotografia inicial; a nota automatizada 27/100 é influenciada pela falta de inspeção, não é porcentagem verdadeira de URLs Google indexadas. Score SEO técnico interno ~84/100 e desempenho orgânico ~35/100, avaliações qualitativas.
 - Search Analytics até 24/10: **14 cliques, 66 impressões** em 28 dias; cliques podem ser acessos do proprietário. Exibição da home em busca confirmada (56 impressões, 11 cliques).
 - A conexão GSC consegue inspecionar URLs, auditar on-page, reenviar sitemap e registrar anotações, **mas não aciona “Solicitar indexação” individual**. Interface: Inspeção de URL → Testar URL publicada → Solicitar indexação (uma vez) nas cinco páginas prioritárias. Não usar a Google Indexing API para páginas de cursos comuns. 
-- [Diagnóstico completo](SEO-INDEXACAO-GSC-2026-10-27.md), [issue #381](https://github.com/FelipeVRosa/Linvuu/issues/381). Google decide a indexação; **não prometer que um agente consegue impor indexação no próximo rastreio**.
+- [Diagnóstico completo](SEO-INDEXACAO-GSC-2026-10-27.md), [issue #381](https://github.com/FelipeNascimentoRosa/Linvuu/issues/381). Google decide a indexação; **não prometer que um agente consegue impor indexação no próximo rastreio**.
 
 ## 6. Stripe, vendas web e consentimento analítico
 - Stripe Linvuu em **livemode** conectado; auditoria encontrou **1 preço mensal ativo R$ 139,00**, webhook habilitado `/api/stripe/webhook` para checkout/assinaturas/faturas e eventos relevantes. **18 Checkout Sessions reais observadas expiradas/sem pagamento**; isso não comprova defeito, mas também não prova compra concluída.
 - PR #377 removeu criação de produtos/preços `live` quando uma requisição não achava preço. O backend usa `STRIPE_PRICE_ID` configurado; nenhuma alteração comercial deliberada.
 - PR #378 adicionou `checkout_started` e `checkout_returned` no PostHog **com consentimento**, sem PII. `checkout_returned` não é confirmação de pagamento, especialmente Pix/boleto.
-- **Bloqueador para prontidão web >=80/100:** homologar cadastro com usuário teste → sessão Stripe test mode → webhook validado e idempotente → concessão de acesso → cancelamento/reembolso/revogação. Nenhuma transação real foi iniciada por IA nesta sessão; [issue #380](https://github.com/FelipeVRosa/Linvuu/issues/380).
+- **Bloqueador para prontidão web >=80/100:** homologar cadastro com usuário teste → sessão Stripe test mode → webhook validado e idempotente → concessão de acesso → cancelamento/reembolso/revogação. Nenhuma transação real foi iniciada por IA nesta sessão; [issue #380](https://github.com/FelipeNascimentoRosa/Linvuu/issues/380).
 - Não aumentar prontidão comercial com base apenas em /readyz ou teste unitário.
 
 ## 7. Android e Google Play
 - Separação web/APK existe no código e em scripts/CI; a prévia Chromium da interface Android **não** é AAB assinada nem validação Play Console ou dispositivo real. Google Play é prioridade separada.
-- Falha `color-contrast` intermitente em botões de conclusão/sessão em 320px com texto 200% registrada na [issue #376](https://github.com/FelipeVRosa/Linvuu/issues/376); rerun de prévia passou sem mudar código. PR #379 alterou transições cromáticas no contexto nativo e obteve checks verdes; **não fechar #376 até três repetições + aparelho real**.
+- Falha `color-contrast` intermitente em botões de conclusão/sessão em 320px com texto 200% registrada na [issue #376](https://github.com/FelipeNascimentoRosa/Linvuu/issues/376); rerun de prévia passou sem mudar código. PR #379 alterou transições cromáticas no contexto nativo e obteve checks verdes; **não fechar #376 até três repetições + aparelho real**.
 - Arquitetura planejada para compras nativas deve obedecer às regras da Google Play; RevenueCat SDK ainda não estava integrado ao binário examinado. Não declarar Google Play pronta nem reutilizar checkout web no APK inadvertidamente.
 - Conteúdo avançado e livros futuros permanecem em rascunho. Áudios ElevenLabs existem em aulas mas ainda há pendências conhecidas; nunca declarar direitos comerciais de TTS por mera existência de MP3.
 

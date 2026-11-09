@@ -1,0 +1,163 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 65,
+  "fase": 7,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Weather, seasons and comparisons: The weather and the seasons",
+  "objetivo": "Lesson 17, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 17,
+    "titulo": "Weather, seasons and comparisons",
+    "objetivo": "Talk about the weather and the seasons, compare people and things with «plus… que», «moins… que», «aussi… que», and use «meilleur» and «mieux».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "The weather and the seasons",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "il fait beau",
+            "translit": "eel feh BOH",
+            "pt": "",
+            "en": "",
+            "audio": "il fait beau"
+          },
+          {
+            "ru": "il fait chaud",
+            "translit": "eel feh SHOH",
+            "pt": "",
+            "en": "",
+            "audio": "il fait chaud"
+          },
+          {
+            "ru": "il fait froid",
+            "translit": "eel feh FRWAH",
+            "pt": "",
+            "en": "",
+            "audio": "il fait froid"
+          },
+          {
+            "ru": "il pleut",
+            "translit": "eel PLUH",
+            "pt": "",
+            "en": "",
+            "audio": "il pleut"
+          },
+          {
+            "ru": "il neige",
+            "translit": "eel NEHZH",
+            "pt": "",
+            "en": "",
+            "audio": "il neige"
+          },
+          {
+            "ru": "le soleil",
+            "translit": "luh soh-LEHY",
+            "pt": "",
+            "en": "",
+            "audio": "le soleil"
+          },
+          {
+            "ru": "le vent",
+            "translit": "luh VAHN",
+            "pt": "",
+            "en": "",
+            "audio": "le vent"
+          },
+          {
+            "ru": "le nuage",
+            "translit": "luh NWAHZH",
+            "pt": "",
+            "en": "",
+            "audio": "le nuage"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Il fait chaud: talking about the weather in French",
+        "explicacao": "STEP 1: for the weather, French uses the impersonal «il», like English «it»: «Il pleut.» «Il neige.» STEP 2: with «faire»: «Il fait beau.» «Il fait chaud.» «Il fait froid.» «Il fait du vent.» «Il fait du soleil.» STEP 3: question: «Quel temps fait-il ?» or «Il fait quel temps ?» STEP 4: the seasons: «le printemps, l'été, l'automne, l'hiver». STEP 5: «au printemps» but «en été, en automne, en hiver»: «Je voyage en été.» «Il pleut au printemps.» STEP 6: temperature: «Il fait vingt degrés.» «Il fait moins cinq.» STEP 7: to say that it is cloudy: «Le ciel est couvert.» «Il y a des nuages.» STEP 8: in the past: «Hier, il a plu.» «Il a fait chaud.»",
+        "comparacao": "In English we say «it's hot», «it's raining», «it's cold». French uses «il fait» + a noun or a fixed adjective, and «il» does not mean a person. Do not use «est» for the weather: «il est chaud» talks about a hot object.",
+        "tabela": [
+          {
+            "sentence": "Il fait beau.",
+            "sense": "it's nice weather"
+          },
+          {
+            "sentence": "Il fait chaud.",
+            "sense": "it's hot"
+          },
+          {
+            "sentence": "Il fait froid.",
+            "sense": "it's cold"
+          },
+          {
+            "sentence": "Il pleut.",
+            "sense": "it's raining"
+          },
+          {
+            "sentence": "Il neige.",
+            "sense": "it's snowing"
+          },
+          {
+            "sentence": "Il fait du vent.",
+            "sense": "ventando"
+          },
+          {
+            "sentence": "au printemps",
+            "sense": "in spring"
+          },
+          {
+            "sentence": "en été / en hiver",
+            "sense": "in summer / in winter"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Il est chaud aujourd'hui.",
+            "certo": "Il fait chaud aujourd'hui.",
+            "motivo": "Weather: «faire»."
+          },
+          {
+            "errado": "Il a pluie.",
+            "certo": "Il pleut.",
+            "motivo": "The verb «pleuvoir»."
+          },
+          {
+            "errado": "Je voyage au été.",
+            "certo": "Je voyage en été.",
+            "motivo": "Summer: «en»."
+          },
+          {
+            "errado": "Il fait un froid.",
+            "certo": "Il fait froid.",
+            "motivo": "No article."
+          }
+        ],
+        "tag": "Weather"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say what the weather is like today and what each season is like where you live."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Tell aloud about a trip, with «être» and «avoir» in the past."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-017.json",
+  "responsavel": null
+}

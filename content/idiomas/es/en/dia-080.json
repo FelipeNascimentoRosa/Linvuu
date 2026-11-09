@@ -1,0 +1,514 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 80,
+  "fase": 8,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Irregular pretérito indefinido: Review and practice of lesson 20",
+  "objetivo": "Lesson 20, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 20,
+    "titulo": "Irregular pretérito indefinido",
+    "objetivo": "Use the most frequent irregular verbs in the pretérito indefinido: «ser» and «ir» (fui), «dar», «ver», «hacer», the new-stem verbs («tuve, estuve, pude, puse, supe, quise, vine»), «decir» and «traer» (dijeron, trajeron), and verbs like «pedir» and «dormir» (pidió, durmió).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 20",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Fui a Madrid el lunes",
+            "opcoes": [
+              "[misto] Fui a Madrid el lunes",
+              "[misto] Fue a Madrid el lunes",
+              "[misto] Voy a Madrid el lunes"
+            ],
+            "gabarito": "[misto] Fui a Madrid el lunes",
+            "explicacao": "Listen for the final «i»: «fui» is «yo»; «fue» is «él, ella».",
+            "id": "es-020-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Hicimos una tarta",
+            "opcoes": [
+              "[misto] Hicimos una tarta",
+              "[misto] Hicieron una tarta",
+              "[misto] Hacemos una tarta"
+            ],
+            "gabarito": "[misto] Hicimos una tarta",
+            "explicacao": "Listen for the ending «-mos» and the stem «hic-».",
+            "id": "es-020-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "No pude venir",
+            "opcoes": [
+              "[misto] No pude venir",
+              "[misto] No pudo venir",
+              "[misto] No puede venir"
+            ],
+            "gabarito": "[misto] No pude venir",
+            "explicacao": "The ending «-e» marks «yo» in the indefinido.",
+            "id": "es-020-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ayer vi a Marta",
+            "respostaEsperada": "Ayer vi a Marta",
+            "explicacao": "Write: Ayer vi a Marta. «Vi» carries no accent; «a Marta» takes the personal «a».",
+            "id": "es-020-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Estuvimos en Granada",
+            "respostaEsperada": "Estuvimos en Granada",
+            "explicacao": "Write: Estuvimos en Granada. «Estuvimos» is spelled with a «v».",
+            "id": "es-020-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Yes, but now I have an exam and I didn't set my alarm.»",
+            "opcoes": [
+              "tengo",
+              "puse",
+              "examen",
+              "no",
+              "despertador.",
+              "pero",
+              "y",
+              "un",
+              "el",
+              "ahora",
+              "Sí,"
+            ],
+            "gabarito": "Sí, pero ahora tengo un examen y no puse el despertador.",
+            "explicacao": "Write: Sí, pero ahora tengo un examen y no puse el despertador.",
+            "id": "es-020-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Mis padres dijeron que sí",
+            "respostaEsperada": "Mis padres dijeron que sí",
+            "explicacao": "Write: Mis padres dijeron que sí. After the «j», the ending is «-eron».",
+            "id": "es-020-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Hola, Pablo. ¿Qué tal tu fin de semana?",
+            "respostaEsperada": "Hola, Pablo. ¿Qué tal tu fin de semana?",
+            "explicacao": "Hi, Pablo. How was your weekend?",
+            "id": "es-020-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «yo» form of «hacer» in the indefinido?",
+            "opcoes": [
+              "[misto] hice",
+              "[misto] hací",
+              "[misto] hizo"
+            ],
+            "gabarito": "[misto] hice",
+            "explicacao": "The stem is «hic-» and the «yo» ending is «-e».",
+            "id": "es-020-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence means «I went to Madrid»?",
+            "opcoes": [
+              "[misto] Fui a Madrid.",
+              "[misto] Fui en Madrid.",
+              "[misto] Fue a Madrid."
+            ],
+            "gabarito": "[misto] Fui a Madrid.",
+            "explicacao": "With «ir», the destination takes «a»; «yo» is «fui».",
+            "id": "es-020-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «ellos» form of «decir» in the indefinido?",
+            "opcoes": [
+              "[misto] dijeron",
+              "[misto] dijieron",
+              "[misto] decieron"
+            ],
+            "gabarito": "[misto] dijeron",
+            "explicacao": "After the «j», the ending is «-eron».",
+            "id": "es-020-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Sí, pero ahora tengo un examen y no puse el despertador.",
+            "respostaEsperada": "Sí, pero ahora tengo un examen y no puse el despertador.",
+            "explicacao": "Yes, but now I have an exam and I didn't set my alarm.",
+            "id": "es-020-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I had a meeting»?",
+            "opcoes": [
+              "[misto] Tuve una reunión.",
+              "[misto] Tuvo una reunión.",
+              "[misto] Tené una reunión."
+            ],
+            "gabarito": "[misto] Tuve una reunión.",
+            "explicacao": "«Tener» becomes «tuv-» and «yo» ends in «-e».",
+            "id": "es-020-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «No quise venir» mean?",
+            "opcoes": [
+              "[misto] I refused to come.",
+              "[misto] I wasn't able to come.",
+              "[misto] I didn't know how to come."
+            ],
+            "gabarito": "[misto] I refused to come.",
+            "explicacao": "In the indefinido, «no quise» signals an outright refusal.",
+            "id": "es-020-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «largo» mean in Spanish?",
+            "opcoes": [
+              "long",
+              "[misto] long",
+              "[misto] short"
+            ],
+            "gabarito": "long",
+            "explicacao": "Width is «ancho»; «largo» means long.",
+            "id": "es-020-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "¿Y qué hicisteis allí?",
+            "respostaEsperada": "¿Y qué hicisteis allí?",
+            "explicacao": "And what did you two do there?",
+            "id": "es-020-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «glass» (the drinking kind) in Spanish?",
+            "opcoes": [
+              "[misto] vaso",
+              "[misto] copa",
+              "[misto] taza"
+            ],
+            "gabarito": "[misto] vaso",
+            "explicacao": "«Vaso» means glass; the cup is «taza».",
+            "id": "es-020-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «la película» mean?",
+            "audio": "la película",
+            "opcoes": [
+              "the meeting",
+              "the movie",
+              "the party",
+              "the gift"
+            ],
+            "gabarito": "the movie",
+            "explicacao": "«la película» = the movie.",
+            "id": "es-020-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ayer yo ___ a la playa. (ir)",
+            "opcoes": [
+              "[misto] fui",
+              "[misto] fue",
+              "[misto] voy"
+            ],
+            "gabarito": "[misto] fui",
+            "explicacao": "With «yo» in the indefinido, «ir» becomes «fui».",
+            "id": "es-020-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ella ___ una película. (ver)",
+            "opcoes": [
+              "[misto] vio",
+              "[misto] vi",
+              "[misto] vió"
+            ],
+            "gabarito": "[misto] vio",
+            "explicacao": "«Vio» carries no written accent.",
+            "id": "es-020-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Nosotros ___ en Roma el año pasado. (estar)",
+            "opcoes": [
+              "[misto] estuvimos",
+              "[misto] estamos",
+              "[misto] estuvieron"
+            ],
+            "gabarito": "[misto] estuvimos",
+            "explicacao": "The stem is «estuv-» and «nosotros» ends in «-imos».",
+            "id": "es-020-e16"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "¿Qué ___ tú ayer? (hacer)",
+            "opcoes": [
+              "[misto] hiciste",
+              "[misto] hice",
+              "[misto] hizo"
+            ],
+            "gabarito": "[misto] hiciste",
+            "explicacao": "With «tú», the form is «hiciste».",
+            "id": "es-020-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «ser» mean?",
+            "audio": "ser",
+            "opcoes": [
+              "to be",
+              "long",
+              "the party",
+              "to see"
+            ],
+            "gabarito": "to be",
+            "explicacao": "«ser» = to be.",
+            "id": "es-020-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ellos ___ la verdad. (decir)",
+            "opcoes": [
+              "[misto] dijeron",
+              "[misto] dijo",
+              "[misto] dijimos"
+            ],
+            "gabarito": "[misto] dijeron",
+            "explicacao": "The plural of «decir» is «dijeron».",
+            "id": "es-020-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "¿Estudiaste todo el domingo?",
+            "respostaEsperada": "¿Estudiaste todo el domingo?",
+            "explicacao": "Did you study the whole of Sunday?",
+            "id": "es-020-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Él ___ un café. (pedir)",
+            "opcoes": [
+              "[misto] pidió",
+              "[misto] pedió",
+              "[misto] pidieron"
+            ],
+            "gabarito": "[misto] pidió",
+            "explicacao": "In the third person, the «e» becomes «i».",
+            "id": "es-020-e19"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Fuimos al cine el sábado.»",
+            "opcoes": [
+              "Fuimos",
+              "al",
+              "cine",
+              "el",
+              "sábado."
+            ],
+            "gabarito": "Fuimos al cine el sábado.",
+            "explicacao": "«Ir» calls for «a»; «a + el» becomes «al».",
+            "id": "es-020-e20"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «No pude venir ayer.»",
+            "opcoes": [
+              "No",
+              "pude",
+              "venir",
+              "ayer."
+            ],
+            "gabarito": "No pude venir ayer.",
+            "explicacao": "«No» comes before the conjugated verb.",
+            "id": "es-020-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «ver» mean?",
+            "audio": "ver",
+            "opcoes": [
+              "the meeting",
+              "to see",
+              "the glass",
+              "the party"
+            ],
+            "gabarito": "to see",
+            "explicacao": "«ver» = to see.",
+            "id": "es-020-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: Yesterday I went to the doctor and then stayed home.",
+            "respostaEsperada": "[misto] Ayer fui al médico y luego estuve en casa.",
+            "id": "es-020-e22"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Anoche yo ___ que estudiar. (tener)",
+            "opcoes": [
+              "[misto] tuvo",
+              "[misto] tuve",
+              "[misto] tené"
+            ],
+            "gabarito": "[misto] tuve",
+            "explicacao": "The stem is «tuv-» and the «yo» ending is «-e», with no accent.",
+            "id": "es-020-e23"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ellos ___ una cerveza. (pedir)",
+            "opcoes": [
+              "[misto] pedieron",
+              "[misto] pidieron",
+              "[misto] pidió"
+            ],
+            "gabarito": "[misto] pidieron",
+            "explicacao": "In «ellos», the «e» becomes «i»: «pidieron».",
+            "id": "es-020-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Entonces tuviste un fin de semana perfecto.",
+            "respostaEsperada": "Entonces tuviste un fin de semana perfecto.",
+            "explicacao": "So you had a perfect weekend.",
+            "id": "es-020-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Mi hermano ___ diez horas. (dormir)",
+            "opcoes": [
+              "[misto] durmió",
+              "[misto] dormió",
+              "[misto] durmieron"
+            ],
+            "gabarito": "[misto] durmió",
+            "explicacao": "In «él», the «o» becomes «u»: «durmió».",
+            "id": "es-020-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «largo» mean?",
+            "audio": "largo",
+            "opcoes": [
+              "long",
+              "to sleep",
+              "the movie",
+              "the party"
+            ],
+            "gabarito": "long",
+            "explicacao": "«largo» = long.",
+            "id": "es-020-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «ellos» form of «traer» in the indefinido?",
+            "opcoes": [
+              "[misto] traeron",
+              "[misto] trajieron",
+              "[misto] trajeron"
+            ],
+            "gabarito": "[misto] trajeron",
+            "explicacao": "After the «j», the ending is «-eron».",
+            "id": "es-020-e26"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «yo» form of «venir» in the indefinido?",
+            "opcoes": [
+              "[misto] vine",
+              "[misto] viní",
+              "[misto] veni"
+            ],
+            "gabarito": "[misto] vine",
+            "explicacao": "The stem is «vin-» and the ending is «-e».",
+            "id": "es-020-e27"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «ella» form of «poner» in the indefinido?",
+            "opcoes": [
+              "[misto] pusó",
+              "[misto] ponió",
+              "[misto] puso"
+            ],
+            "gabarito": "[misto] puso",
+            "explicacao": "The stem is «pus-» and the ending is «-o», with no accent.",
+            "id": "es-020-e28"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Ayer no pude salir de casa.»",
+            "opcoes": [
+              "Ayer",
+              "no",
+              "pude",
+              "salir",
+              "de",
+              "casa."
+            ],
+            "gabarito": "Ayer no pude salir de casa.",
+            "explicacao": "«Pude» is the indefinido of «poder»; «no» comes before it.",
+            "id": "es-020-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: Yesterday we went to the beach and I saw Marta.",
+            "respostaEsperada": "[misto] Ayer fuimos a la playa y vi a Marta.",
+            "id": "es-020-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Narrate out loud a trip or an outing you took, in at least six sentences in the indefinido, using irregular verbs from this lesson."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say the «yo» form and the «él» form of ir, hacer, ver, dar, tener, estar, decir, and pedir. Then use four of them in sentences about last weekend."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-020.json",
+  "responsavel": null
+}

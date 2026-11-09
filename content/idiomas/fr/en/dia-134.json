@@ -1,0 +1,147 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 134,
+  "fase": 14,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Complete questions and connectors: Connectors",
+  "objetivo": "Lesson 34, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 34,
+    "titulo": "Complete questions and connectors",
+    "objetivo": "Ask questions in three ways, use «quel», «lequel» and «qu'est-ce que», and link ideas with «mais», «parce que», «donc», «pourtant», «alors» and «d'abord… ensuite».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Connectors",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "mais",
+            "translit": "MEH",
+            "pt": "",
+            "en": "",
+            "audio": "mais"
+          },
+          {
+            "ru": "parce que",
+            "translit": "pars-KUH",
+            "pt": "",
+            "en": "",
+            "audio": "parce que"
+          },
+          {
+            "ru": "donc",
+            "translit": "DOHNK",
+            "pt": "",
+            "en": "",
+            "audio": "donc"
+          },
+          {
+            "ru": "pourtant",
+            "translit": "poor-TAHN",
+            "pt": "",
+            "en": "",
+            "audio": "pourtant"
+          },
+          {
+            "ru": "alors",
+            "translit": "ah-LOHR",
+            "pt": "",
+            "en": "",
+            "audio": "alors"
+          },
+          {
+            "ru": "cependant",
+            "translit": "suh-pahn-DAHN",
+            "pt": "",
+            "en": "",
+            "audio": "cependant"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Linking ideas",
+        "explicacao": "STEP 1: to give a cause: «parce que» (the answer to «pourquoi»): «Pourquoi tu pars ? — Parce que je suis fatigué.» STEP 2: «car» (for, since; formal): «Je reste, car il pleut.» STEP 3: to give a consequence: «donc» (so, therefore) and «alors» (so, then): «Il pleut, donc je reste.» «Il pleut, alors je reste.» STEP 4: to contrast: «mais» (but): «Je veux sortir, mais il pleut.» «pourtant» (yet, however): «Il pleut ; pourtant, je sors.» STEP 5: to add: «et» (and), «aussi» (also), «en plus» (besides): «J'aime le cinéma, et en plus j'aime la musique.» STEP 6: to put in order: «d'abord, ensuite, puis, enfin, finalement». STEP 7: to conclude: «en conclusion, pour finir». STEP 8: to give an example: «par exemple», «comme».",
+        "comparacao": "English keeps «why» (question) and «because» (answer) apart, and so does French: «pourquoi» asks and «parce que» answers. Never use «pourquoi» to answer, and after parce que you need a full sentence: for a noun, use «à cause de».",
+        "tabela": [
+          {
+            "function": "cause",
+            "connector": "parce que",
+            "example": "Je reste parce qu'il pleut."
+          },
+          {
+            "function": "consequence",
+            "connector": "donc / alors",
+            "example": "Il pleut, donc je reste."
+          },
+          {
+            "function": "opposition",
+            "connector": "mais / pourtant",
+            "example": "Il pleut ; pourtant, je sors."
+          },
+          {
+            "function": "addition",
+            "connector": "en plus",
+            "example": "J'aime le cinéma, et en plus la musique."
+          },
+          {
+            "function": "order",
+            "connector": "d'abord, ensuite, enfin",
+            "example": "D'abord, je mange ; ensuite, je sors."
+          },
+          {
+            "function": "example",
+            "connector": "par exemple",
+            "example": "Par exemple, le football."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Pourquoi tu pars ? — Pourquoi je suis fatigué.",
+            "certo": "Pourquoi tu pars ? — Parce que je suis fatigué.",
+            "motivo": "Answer: «parce que»."
+          },
+          {
+            "errado": "Je reste mais il pleut.",
+            "certo": "Je reste parce qu'il pleut.",
+            "motivo": "«Mais» does not give a cause."
+          },
+          {
+            "errado": "Parce de la pluie, je reste.",
+            "certo": "À cause de la pluie, je reste.",
+            "motivo": "With a noun: «à cause de»."
+          },
+          {
+            "errado": "Il pleut, donc je reste donc.",
+            "certo": "Il pleut, donc je reste.",
+            "motivo": "Um «donc»."
+          }
+        ],
+        "tag": "Connectors"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Give eight opinions out loud with «parce que», «donc», «mais», «pourtant» and «en plus»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Ask a colleague five different questions out loud."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-034.json",
+  "responsavel": null
+}

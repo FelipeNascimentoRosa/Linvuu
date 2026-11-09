@@ -40,7 +40,7 @@ export function RevisaoErros({itens,origem,idioma,bloco,aoSair,titulo,aoTerminar
  return <section className="app-revisao" aria-labelledby="app-revisao-titulo">
   <header><p className="app-kicker">{R.rodada} {v.rodada}</p><h3 id="app-revisao-titulo" ref={foco} tabIndex={-1}>{v.fim?R.final:titulo??R.titulo}</h3><p>{R.separada}</p></header>
   <button type="button" className="btn btn-ghost app-revisao-voltar" onClick={()=>{parar();aoSair();}}>← {R.voltar}</button>
-  {falha&&<p role="alert">{({'pt-BR':'Não foi possível salvar esta revisão. Ela continua aberta; evite fechar o aplicativo.',en:'This review could not be saved. It remains open; avoid closing the app.',es:'No se pudo guardar este repaso. Sigue abierto; evita cerrar la aplicación.'}[LOCALE.codigo])}</p>}
+  {falha&&<p role="alert">{({'pt-BR':'Não foi possível salvar esta revisão. Ela continua aberta; evite fechar o aplicativo.',en:'This review could not be saved. It remains open; avoid closing the app.'}[LOCALE.codigo])}</p>}
   <p className="app-revisao-contagem">{certas}/{v.origem.length} {R.concluidas}</p>
   {!v.fim?<div className="exercicio" key={`${v.rodada}:${v.indice}`}>
    <p className="ex-n">{R.questao} {v.indice+1} {R.de} {v.fila.length}</p>

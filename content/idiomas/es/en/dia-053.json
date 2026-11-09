@@ -1,0 +1,230 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 53,
+  "fase": 6,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Daily routine and reflexive verbs: Reflexive verbs",
+  "objetivo": "Lesson 14, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 14,
+    "titulo": "Daily routine and reflexive verbs",
+    "objetivo": "Describe your daily routine with reflexive verbs (levantarse, ducharse, acostarse…), place the pronouns me, te, se, nos, os, se in the right spot, and use mealtimes, clock times, and sequence and frequency markers.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Reflexive verbs",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "despertarse",
+            "translit": "[pronuncia] des-per-TAR-seh",
+            "pt": "to wake up",
+            "en": "",
+            "audio": "despertarse"
+          },
+          {
+            "ru": "levantarse",
+            "translit": "[pronuncia] leh-ban-TAR-seh",
+            "pt": "to get up",
+            "en": "",
+            "audio": "levantarse"
+          },
+          {
+            "ru": "ducharse",
+            "translit": "[pronuncia] doo-CHAR-seh",
+            "pt": "to shower",
+            "en": "",
+            "audio": "ducharse"
+          },
+          {
+            "ru": "vestirse",
+            "translit": "[pronuncia] bes-TEER-seh",
+            "pt": "to get dressed",
+            "en": "",
+            "audio": "vestirse"
+          },
+          {
+            "ru": "lavarse",
+            "translit": "[pronuncia] lah-BAR-seh",
+            "pt": "to wash (oneself)",
+            "en": "",
+            "audio": "lavarse"
+          },
+          {
+            "ru": "peinarse",
+            "translit": "[pronuncia] pay-NAR-seh",
+            "pt": "to comb one's hair",
+            "en": "",
+            "audio": "peinarse"
+          },
+          {
+            "ru": "acostarse",
+            "translit": "[pronuncia] ah-kos-TAR-seh",
+            "pt": "to go to bed",
+            "en": "",
+            "audio": "acostarse"
+          },
+          {
+            "ru": "dormirse",
+            "translit": "[pronuncia] dor-MEER-seh",
+            "pt": "to fall asleep",
+            "en": "",
+            "audio": "dormirse"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Reflexive verbs and the pronouns me, te, se, nos, os, se",
+        "explicacao": "STEP 1: a reflexive verb is one where the action comes back onto the person doing it: I wash myself, I get myself up. In the infinitive it ends in «-se»: «levantarse», «ducharse». STEP 2: in a sentence, each person has its own pronoun, placed BEFORE the conjugated verb: me levanto, te levantas, se levanta, nos levantamos, os levantáis, se levantan. STEP 3: the pronoun agrees with the subject: «Yo me levanto», «Nosotros nos levantamos». You can't say «yo se levanta». STEP 4: «ducharse» and «lavarse» are regular. But some reflexives change their stem vowel, as you saw in lesson 13: acostarse (me acuesto), despertarse (me despierto), dormirse (me duermo) and, with e → i, vestirse (me visto, te vistes, se viste, nos vestimos, os vestís, se visten). STEP 5: with a second verb, the pronoun can go either before the conjugated verb or stuck onto the infinitive, with no hyphen: «Me quiero levantar» or «Quiero levantarme»; «Tengo que ducharme» or «Me tengo que duchar». Pick whichever sounds more natural to you. STEP 6: with a negative, «no» comes before the pronoun: «No me levanto temprano». STEP 7: body parts and clothes take the article, not the possessive: «Me lavo las manos», «Me peino el pelo». STEP 8: many verbs change meaning with the pronoun: «lavar» (to wash something) versus «lavarse» (to wash oneself); «acostar» (to put someone else to bed) versus «acostarse» (to go to bed oneself); «dormir» (to sleep) versus «dormirse» (to fall asleep).",
+        "comparacao": "English also marks reflexive action with a pronoun, but it comes AFTER the verb and is often dropped or replaced by context («I get up», not «I get myself up»; «I wake up», not «I wake myself up»). In Spanish the pronoun is required and always comes BEFORE the conjugated verb: «me levanto», never «levanto» alone. Without it, the sentence is wrong or changes its meaning entirely.",
+        "exemplos": [
+          {
+            "ru": "Me despierto a las siete y media.",
+            "pt": "I wake up at seven thirty."
+          },
+          {
+            "ru": "Me ducho antes de desayunar.",
+            "pt": "I shower before having breakfast."
+          },
+          {
+            "ru": "Mi hermano se acuesta muy tarde.",
+            "pt": "My brother goes to sleep very late."
+          },
+          {
+            "ru": "No me levanto temprano los domingos.",
+            "pt": "I don't get up early on Sundays."
+          }
+        ],
+        "tabelas": [
+          {
+            "titulo": "levantarse (regular)",
+            "linhas": [
+              {
+                "pronome": "[misto] yo",
+                "forma": "[misto] me levanto",
+                "exemplo": "[misto] Me levanto a las siete."
+              },
+              {
+                "pronome": "[misto] tú",
+                "forma": "[misto] te levantas",
+                "exemplo": "[misto] ¿A qué hora te levantas?"
+              },
+              {
+                "pronome": "[misto] él / ella / usted",
+                "forma": "[misto] se levanta",
+                "exemplo": "[misto] Ella se levanta pronto."
+              },
+              {
+                "pronome": "[misto] nosotros",
+                "forma": "[misto] nos levantamos",
+                "exemplo": "[misto] Nos levantamos tarde."
+              },
+              {
+                "pronome": "[misto] vosotros",
+                "forma": "[misto] os levantáis",
+                "exemplo": "[misto] ¿Os levantáis temprano?"
+              },
+              {
+                "pronome": "[misto] ellos, ustedes",
+                "forma": "[misto] se levantan",
+                "exemplo": "[misto] Se levantan a las ocho."
+              }
+            ]
+          },
+          {
+            "titulo": "Three reflexives with a stem-vowel change",
+            "linhas": [
+              {
+                "pronome": "[misto] yo",
+                "acostarse": "[misto] me acuesto",
+                "vestirse": "[misto] me visto",
+                "despertarse": "[misto] me despierto"
+              },
+              {
+                "pronome": "[misto] tú",
+                "acostarse": "[misto] te acuestas",
+                "vestirse": "[misto] te vistes",
+                "despertarse": "[misto] te despiertas"
+              },
+              {
+                "pronome": "[misto] él / ella",
+                "acostarse": "[misto] se acuesta",
+                "vestirse": "[misto] se viste",
+                "despertarse": "[misto] se despierta"
+              },
+              {
+                "pronome": "[misto] nosotros",
+                "acostarse": "[misto] nos acostamos",
+                "vestirse": "[misto] nos vestimos",
+                "despertarse": "[misto] nos despertamos"
+              },
+              {
+                "pronome": "[misto] vosotros",
+                "acostarse": "[misto] os acostáis",
+                "vestirse": "[misto] os vestís",
+                "despertarse": "[misto] os despertáis"
+              },
+              {
+                "pronome": "[misto] ellos",
+                "acostarse": "[misto] se acuestan",
+                "vestirse": "[misto] se visten",
+                "despertarse": "[misto] se despiertan"
+              }
+            ]
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] Yo levanto a las siete.",
+            "certo": "[misto] Yo me levanto a las siete.",
+            "motivo": "The pronoun «me» is required in Spanish."
+          },
+          {
+            "errado": "[misto] Levanto me a las siete.",
+            "certo": "[misto] Me levanto a las siete.",
+            "motivo": "The pronoun comes before the conjugated verb."
+          },
+          {
+            "errado": "[misto] Nosotros me acostamos tarde.",
+            "certo": "[misto] Nosotros nos acostamos tarde.",
+            "motivo": "The pronoun agrees with the subject: «nosotros» calls for «nos»."
+          },
+          {
+            "errado": "[misto] Me lavo mis manos.",
+            "certo": "[misto] Me lavo las manos.",
+            "motivo": "With body parts, you use the article."
+          },
+          {
+            "errado": "[misto] Nosotros nos acuestamos.",
+            "certo": "[misto] Nosotros nos acostamos.",
+            "motivo": "In «nosotros», the stem doesn't change."
+          }
+        ],
+        "tag": "Reflexives"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say out loud, in order, six actions from your morning: «Me despierto a las… Me levanto… Me ducho… Me visto… Desayuno… Salgo de casa…»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say the time for five moments of your day («a las siete», «a las ocho y media») and conjugate «poder» and «querer» from memory."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-014.json",
+  "responsavel": null
+}

@@ -1,0 +1,156 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 17,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Nouns, articles and professions: Gender and number of nouns",
+  "objetivo": "Lesson 5, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 5,
+    "titulo": "Nouns, articles and professions",
+    "objetivo": "Recognize the gender and number of nouns, use definite, indefinite and contracted articles, and talk about professions with «il est» and «c'est».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Gender and number of nouns",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "le livre",
+            "translit": "luh LEEVR",
+            "pt": "",
+            "en": "",
+            "audio": "le livre"
+          },
+          {
+            "ru": "la table",
+            "translit": "lah TAHBL",
+            "pt": "",
+            "en": "",
+            "audio": "la table"
+          },
+          {
+            "ru": "le garçon",
+            "translit": "luh gahr-SOHN",
+            "pt": "",
+            "en": "",
+            "audio": "le garçon"
+          },
+          {
+            "ru": "la fille",
+            "translit": "lah FEEY",
+            "pt": "",
+            "en": "",
+            "audio": "la fille"
+          },
+          {
+            "ru": "l'ami, l'amie",
+            "translit": "lah-MEE",
+            "pt": "",
+            "en": "",
+            "audio": "l'ami, l'amie"
+          },
+          {
+            "ru": "le professeur",
+            "translit": "luh proh-feh-SUHR",
+            "pt": "",
+            "en": "",
+            "audio": "le professeur"
+          },
+          {
+            "ru": "la maison",
+            "translit": "lah meh-ZOHN",
+            "pt": "",
+            "en": "",
+            "audio": "la maison"
+          },
+          {
+            "ru": "la voiture",
+            "translit": "lah vwah-TEWR",
+            "pt": "",
+            "en": "",
+            "audio": "la voiture"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Every noun has a gender",
+        "explicacao": "STEP 1: in French, every noun is masculine or feminine. Always learn each word with its article: «le livre», «la table». STEP 2: for people, gender follows sex: «un ami / une amie». Many professions and nationalities change in the ending: «étudiant / étudiante», «vendeur / vendeuse», «boulanger / boulangère». STEP 3: for things, gender is arbitrary, but endings help. These are usually feminine: «-tion» (la nation), «-té» (la liberté), «-ure» (la voiture), «-ette» (la chaussette). These are usually masculine: «-ment» (le moment), «-age» (le voyage), «-eau» (le bateau), «-isme» (le tourisme). STEP 4: English has no grammatical gender, so nothing in the meaning tells you: «la dent» (tooth), «la mer» (sea), «le pont» (bridge). STEP 5: for the plural, add «-s», which is not pronounced: «le livre → les livres». The article is what marks the plural to the ear («le» → «les»). Words in «-s», «-x», «-z» do not change: «le bras → les bras». Words in «-eau» and «-eu» take «-x»: «le bateau → les bateaux». Words in «-al» become «-aux»: «le journal → les journaux».",
+        "comparacao": "English has no grammatical gender (only \"he\", \"she\" and \"it\" for pronouns), so this is a new idea for you. Many words look like English ones («la fleur» is «the flower»), but you cannot guess the gender from the meaning, and French requires an article in front of almost every noun.",
+        "tabela": [
+          {
+            "rule": "masculine / feminine for people",
+            "singular": "un ami / une amie",
+            "plural": "des amis / des amies"
+          },
+          {
+            "rule": "plural in -s (silent)",
+            "singular": "le livre",
+            "plural": "les livres"
+          },
+          {
+            "rule": "does not change (-s, -x, -z)",
+            "singular": "le bras",
+            "plural": "les bras"
+          },
+          {
+            "rule": "-eau → -eaux",
+            "singular": "le bateau",
+            "plural": "les bateaux"
+          },
+          {
+            "rule": "-al → -aux",
+            "singular": "le journal",
+            "plural": "les journaux"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "la livre",
+            "certo": "le livre",
+            "motivo": "Learn each word with its article."
+          },
+          {
+            "errado": "une voiture → un voiture",
+            "certo": "une voiture",
+            "motivo": "«voiture» is feminine."
+          },
+          {
+            "errado": "les journals",
+            "certo": "les journaux",
+            "motivo": "«-al» becomes «-aux» in the plural."
+          },
+          {
+            "errado": "les bateaus",
+            "certo": "les bateaux",
+            "motivo": "«-eau» takes «-x»."
+          }
+        ],
+        "tag": "Nouns"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Name ten nouns you can see around you, always with the article: «le… la… un… une…»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say your age, your country and where you live, in three sentences, aloud."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-005.json",
+  "responsavel": null
+}

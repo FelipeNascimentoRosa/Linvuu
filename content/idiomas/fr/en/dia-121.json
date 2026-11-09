@@ -1,0 +1,155 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 121,
+  "fase": 13,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Bank, post office and services: At the bank",
+  "objetivo": "Lesson 31, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 31,
+    "titulo": "Bank, post office and services",
+    "objetivo": "Handle practical tasks in French: open an account, exchange money, send a parcel, ask for information and complain politely.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "At the bank",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "le compte",
+            "translit": "luh KOHNT",
+            "pt": "",
+            "en": "",
+            "audio": "le compte"
+          },
+          {
+            "ru": "la carte bancaire",
+            "translit": "lah kart bahn-KEHR",
+            "pt": "",
+            "en": "",
+            "audio": "la carte bancaire"
+          },
+          {
+            "ru": "retirer",
+            "translit": "ruh-tee-RAY",
+            "pt": "",
+            "en": "",
+            "audio": "retirer"
+          },
+          {
+            "ru": "déposer",
+            "translit": "day-poh-ZAY",
+            "pt": "",
+            "en": "",
+            "audio": "déposer"
+          },
+          {
+            "ru": "le virement",
+            "translit": "luh veer-MAHN",
+            "pt": "",
+            "en": "",
+            "audio": "le virement"
+          },
+          {
+            "ru": "le distributeur",
+            "translit": "luh dees-tree-bew-TUHR",
+            "pt": "",
+            "en": "",
+            "audio": "le distributeur"
+          },
+          {
+            "ru": "le solde",
+            "translit": "luh SOLD",
+            "pt": "",
+            "en": "",
+            "audio": "le solde"
+          },
+          {
+            "ru": "les frais",
+            "translit": "lay FREH",
+            "pt": "",
+            "en": "",
+            "audio": "les frais"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Parler à son banquier",
+        "explicacao": "STEP 1: opening an account: «Je voudrais ouvrir un compte, s'il vous plaît.» «Quels documents faut-il ?» STEP 2: transactions: «Je voudrais retirer cinq cents euros.» «Je voudrais faire un virement.» «Je voudrais déposer un chèque.» STEP 3: problems: «Ma carte ne marche pas.» «J'ai perdu ma carte bancaire.» «Il y a une erreur sur mon relevé.» STEP 4: asking about costs: «Quels sont les frais ?» «Est-ce qu'il y a des frais mensuels ?» STEP 5: «pouvoir» + «me» in the conditional: «Pourriez-vous me donner mon solde ?» STEP 6: personal details: «Mon numéro de compte est…», «Mon adresse est…», «Je suis étudiant / salarié.» STEP 7: large numbers: «mille cinq cents euros», «deux mille», «dix mille». STEP 8: pronouns: «Je la bloque.» «Je le dépose demain.»",
+        "comparacao": "In English we say «withdraw money» and «make a transfer». French uses «retirer de l'argent» and «faire un virement», never a word-for-word «transférer» or «withdraw» in this banking sense. «Les frais» means the fees, and it is always plural.",
+        "tabela": [
+          {
+            "operation": "to open an account",
+            "sentence": "Je voudrais ouvrir un compte."
+          },
+          {
+            "operation": "to withdraw",
+            "sentence": "Je voudrais retirer cinq cents euros."
+          },
+          {
+            "operation": "to transfer",
+            "sentence": "Je voudrais faire un virement."
+          },
+          {
+            "operation": "lost card",
+            "sentence": "J'ai perdu ma carte bancaire."
+          },
+          {
+            "operation": "fees",
+            "sentence": "Quels sont les frais ?"
+          },
+          {
+            "operation": "balance",
+            "sentence": "Pourriez-vous me donner mon solde ?"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je veux withdraw de l'argent.",
+            "certo": "Je voudrais retirer de l'argent.",
+            "motivo": "Vocabulary and politeness."
+          },
+          {
+            "errado": "Je voudrais faire une transferência.",
+            "certo": "Je voudrais faire un virement.",
+            "motivo": "«Virement» is masculine."
+          },
+          {
+            "errado": "Quel sont les frais ?",
+            "certo": "Quels sont les frais ?",
+            "motivo": "«Quels» agrees with the plural."
+          },
+          {
+            "errado": "J'ai perdu mon carte.",
+            "certo": "J'ai perdu ma carte.",
+            "motivo": "«Carte» is feminine."
+          }
+        ],
+        "tag": "Services"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Do three bank transactions out loud: open an account, withdraw money and make a transfer."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Describe your home and your neighborhood out loud."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-031.json",
+  "responsavel": null
+}

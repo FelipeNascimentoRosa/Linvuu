@@ -22,16 +22,5 @@ const textos = {
     cobertura: (n: number, total: number) => n >= total ? `${n} lessons with adapted explanations.` : `${n} of ${total} lessons have adapted explanations.`,
     concluidas: (n: number, total: number) => `${n} of ${total} sessions completed`,
   },
-  es: {
-    preparacao: 'En preparación en este idioma', semAcesso: 'Esta cuenta aún no tiene acceso a este contenido.', tentarNovamente: 'Intentar de nuevo',
-    compras: 'Este contenido forma parte del módulo avanzado y no está habilitado para tu perfil actual.', comprasPlay: 'Para liberar todas las sesiones, suscríbete con Google Play en la pantalla Cuenta.', gratis: 'Las dos primeras lecciones (8 sesiones) de cada curso son gratuitas.', inicio: '¿Qué vamos a estudiar hoy?', bloqueado: 'Inicia sesión para consultar tu acceso.',
-    ajustes: 'Ajustes', voltar: 'Volver', estudo: 'Tu espacio de estudio', catalogo: 'Cursos con explicaciones en este idioma', progresso: 'Sesiones completadas',
-    avisoIdiomas: 'El idioma de la interfaz no significa que todas las lecciones estén adaptadas. Cada curso muestra la cobertura disponible.',
-    semRede: 'Sin conexión. Las sesiones gratuitas (1 a 8) siguen funcionando en este dispositivo, con ejercicios y corrección. El audio, la cuenta y las sesiones de suscriptor necesitan internet.',
-    semCursos: 'Aún no hay lecciones adaptadas a este idioma de explicación.', erroSair: 'No se pudo cerrar la sesión. Inténtalo de nuevo.',
-    trocarIdioma: 'Cambiar el idioma recarga la pantalla. Las respuestas sin terminar pueden perderse. ¿Continuar?',
-    cobertura: (n: number, total: number) => n >= total ? `${n} lecciones con explicaciones adaptadas.` : `${n} de ${total} lecciones tienen explicaciones adaptadas.`,
-    concluidas: (n: number, total: number) => `${n} de ${total} sesiones completadas`,
-  },
 };
 export const appTextos = () => textos[LOCALE.codigo];

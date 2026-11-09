@@ -1,5 +1,6 @@
-// Stripe é a fonte persistente da verdade. O webhook só invalida a memória de acesso;
-// a próxima consulta relê o pagamento/assinatura no Stripe, inclusive após reinício.
+// Stripe é a fonte da verdade. A cada evento de cobrança o webhook entrega o cliente e o evento a `invalidar`, que relê o
+// Stripe, grava o acesso recalculado (server/acesso.ts) e trata reembolso, disputa e conversão (server/billing.ts).
+// Falha em `invalidar` responde 500: o Stripe repete a entrega.
 import express, { type Express } from 'express';
 import Stripe from 'stripe';
 
@@ -16,7 +17,7 @@ type Objeto = { customer?: string | { id: string } | null; charge?: string | { i
 type Dependencias = {
   stripe: Stripe | null;
   segredo: () => string | undefined;
-  invalidar: (clienteId: string) => void;
+  invalidar: (clienteId: string, evento: Stripe.Event) => void | Promise<void>;
   // Injetável nos testes; em produção usa o relógio real para expirar recibos.
   agora?: () => number;
 };
@@ -54,7 +55,7 @@ export function registrarWebhookCobranca(app: Express, deps: Dependencias) {
         const charge = await deps.stripe.charges.retrieve(id);
         cliente = typeof charge.customer === 'string' ? charge.customer : charge.customer?.id;
       }
-      if (cliente) deps.invalidar(cliente);
+      if (cliente) await deps.invalidar(cliente, evento);
       // Guarda só após processar; falhas transitórias voltam 500 para o Stripe tentar novamente.
       if (recebidos.size >= 10_000) recebidos.delete(recebidos.keys().next().value!);
       recebidos.set(evento.id, t + prazo);

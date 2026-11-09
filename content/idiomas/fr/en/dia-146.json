@@ -1,0 +1,147 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 146,
+  "fase": 15,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Irregular A2 verbs and participle agreement: These verbs in the passé composé",
+  "objetivo": "Lesson 37, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 37,
+    "titulo": "Irregular A2 verbs and participle agreement",
+    "objetivo": "Master «voir», «croire», «connaître», «mettre», «écrire», «lire» and «dire» in the present and the passé composé, and apply participle agreement with the direct object.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "These verbs in the passé composé",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "j'ai vu",
+            "translit": "zhay VEW",
+            "pt": "",
+            "en": "",
+            "audio": "j'ai vu"
+          },
+          {
+            "ru": "j'ai cru",
+            "translit": "zhay KREW",
+            "pt": "",
+            "en": "",
+            "audio": "j'ai cru"
+          },
+          {
+            "ru": "j'ai connu",
+            "translit": "zhay koh-NEW",
+            "pt": "",
+            "en": "",
+            "audio": "j'ai connu"
+          },
+          {
+            "ru": "j'ai mis",
+            "translit": "zhay MEE",
+            "pt": "",
+            "en": "",
+            "audio": "j'ai mis"
+          },
+          {
+            "ru": "j'ai écrit",
+            "translit": "zhay ay-KREE",
+            "pt": "",
+            "en": "",
+            "audio": "j'ai écrit"
+          },
+          {
+            "ru": "j'ai lu",
+            "translit": "zhay LEW",
+            "pt": "",
+            "en": "",
+            "audio": "j'ai lu"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Irregular participles",
+        "explicacao": "STEP 1: the irregular A2 participles: «voir → vu», «croire → cru», «connaître → connu», «mettre → mis», «écrire → écrit», «lire → lu», «dire → dit», «prendre → pris», «faire → fait», «avoir → eu», «être → été», «boire → bu», «pouvoir → pu», «vouloir → voulu». STEP 2: with «avoir», the participle does not agree with the subject: «Elle a vu un film.» STEP 3: but it agrees with the direct object WHEN it comes BEFORE the verb: «La robe que j'ai achetée.» «Les livres que j'ai lus.» «Je l'ai vue.» (her, feminine) «Je les ai vus.» STEP 4: with the relative «que», the object comes before: «Les films que j'ai vus étaient bons.» STEP 5: with the pronouns «le, la, les»: «Je l'ai vu» (him/it, masculine), «Je l'ai vue» (her/it, feminine), «Je les ai vus» (them, masculine), «Je les ai vues» (them, feminine). STEP 6: in speech you hardly hear the agreement, but you write it. STEP 7: with «en», the participle does not agree: «J'en ai vu trois.» STEP 8: with «être», the participle agrees with the subject: «Elle est partie.» «Ils sont arrivés.»",
+        "comparacao": "in English the past participle never changes («I have seen her, I have seen them»). French agrees the participle with a direct object that comes before the verb. It is a written rule, hardly audible, but it matters in exams and formal emails.",
+        "tabela": [
+          {
+            "infinitive": "voir",
+            "participle": "vu",
+            "example": "J'ai vu un film."
+          },
+          {
+            "infinitive": "croire",
+            "participle": "cru",
+            "example": "Il a cru cette histoire."
+          },
+          {
+            "infinitive": "connaître",
+            "participle": "connu",
+            "example": "Nous avons connu Paul en 2010."
+          },
+          {
+            "infinitive": "mettre",
+            "participle": "mis",
+            "example": "J'ai mis mon manteau."
+          },
+          {
+            "infinitive": "écrire",
+            "participle": "écrit",
+            "example": "Elle a écrit une lettre."
+          },
+          {
+            "infinitive": "lire",
+            "participle": "lu",
+            "example": "J'ai lu ce livre."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "J'ai voit un film.",
+            "certo": "J'ai vu un film.",
+            "motivo": "Participle: «vu»."
+          },
+          {
+            "errado": "La robe que j'ai acheté.",
+            "certo": "La robe que j'ai achetée.",
+            "motivo": "Object before: agrees."
+          },
+          {
+            "errado": "Je les ai vu.",
+            "certo": "Je les ai vus.",
+            "motivo": "Plural: agrees."
+          },
+          {
+            "errado": "Elle a vue le film.",
+            "certo": "Elle a vu le film.",
+            "motivo": "Object after: no agreement."
+          }
+        ],
+        "tag": "Past"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Say out loud what you saw, read and wrote this week, using the passé composé."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Conjugate «voir, croire, connaître, mettre» aloud with «nous» and «ils»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-037.json",
+  "responsavel": null
+}

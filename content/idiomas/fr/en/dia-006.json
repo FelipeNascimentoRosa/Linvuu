@@ -1,0 +1,277 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 6,
+  "fase": 1,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Who I am: the verb être and adjectives: Adjectives: masculine and feminine",
+  "objetivo": "Lesson 2, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 2,
+    "titulo": "Who I am: the verb être and adjectives",
+    "objetivo": "Say who you are and how you are with «être» (to be), choose between «tu» and «vous», use adjectives in the masculine and feminine, make negatives and ask questions.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Adjectives: masculine and feminine",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "content / contente",
+            "translit": "kohn-TAHN / kohn-TAHNT",
+            "pt": "",
+            "en": "",
+            "audio": "content / contente"
+          },
+          {
+            "ru": "fatigué / fatiguée",
+            "translit": "fah-tee-GAY / fah-tee-GAY",
+            "pt": "",
+            "en": "",
+            "audio": "fatigué / fatiguée"
+          },
+          {
+            "ru": "grand / grande",
+            "translit": "GRAHN / GRAHND",
+            "pt": "",
+            "en": "",
+            "audio": "grand / grande"
+          },
+          {
+            "ru": "petit / petite",
+            "translit": "puh-TEE / puh-TEET",
+            "pt": "",
+            "en": "",
+            "audio": "petit / petite"
+          },
+          {
+            "ru": "français / française",
+            "translit": "frahn-SEH / frahn-SEHZ",
+            "pt": "",
+            "en": "",
+            "audio": "français / française"
+          },
+          {
+            "ru": "brésilien / brésilienne",
+            "translit": "bray-zee-LYAN / bray-zee-LYEHN",
+            "pt": "",
+            "en": "",
+            "audio": "brésilien / brésilienne"
+          },
+          {
+            "ru": "triste",
+            "translit": "TREEST",
+            "pt": "",
+            "en": "",
+            "audio": "triste"
+          },
+          {
+            "ru": "heureux / heureuse",
+            "translit": "uh-RUH / uh-RUHZ",
+            "pt": "",
+            "en": "",
+            "audio": "heureux / heureuse"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 11,
+        "titulo": "The adjective agrees in gender and number",
+        "explicacao": "Listen first: «petit» and «petite». The difference is the last letter. STEP 1: in French the adjective agrees with the subject. If the person is a woman, the adjective goes into the feminine. In general, you add «e». «Content» becomes «contente». «Petit» becomes «petite». STEP 2: the «e» changes the sound. When it appears, the final consonant is pronounced. «Petit» sounds like «puh-TEE». «Petite» sounds like «puh-TEET». This is the sound that shows the feminine in speech. STEP 3: adjectives that already end in «e» do not change: «triste», «jeune», «rouge». STEP 4: some endings change more. «Brésilien» becomes «brésilienne». «Heureux» becomes «heureuse». STEP 5: in the plural, you add «s», which is not pronounced. «Petit» becomes «petits», but both sound like «puh-TEE». If it already ends in «s», it stays the same: «français», «français». STEP 6: with «on», the adjective can go into the plural: «On est contents».",
+        "comparacao": "English adjectives never change (\"tired\" is always \"tired\"), so this is new: in French the adjective changes with the noun, «fatigué» and «fatiguée». And the ending changes the sound in a way English does not: the feminine «e» makes the final consonant audible, and the plural «s» stays silent.",
+        "exemplos": [
+          {
+            "ru": "Il est petit.",
+            "pt": "He is small."
+          },
+          {
+            "ru": "Elle est petite.",
+            "pt": "She is small."
+          },
+          {
+            "ru": "Il est français.",
+            "pt": "He is French."
+          },
+          {
+            "ru": "Elle est française.",
+            "pt": "She is French."
+          },
+          {
+            "ru": "Elle est heureuse.",
+            "pt": "She is happy."
+          },
+          {
+            "ru": "Elles sont contentes.",
+            "pt": "They (f.) are pleased."
+          }
+        ],
+        "tabela": [
+          {
+            "rule": "add -e",
+            "masculine": "petit",
+            "feminine": "petite",
+            "example": "Elle est petite."
+          },
+          {
+            "rule": "already ends in -e",
+            "masculine": "triste",
+            "feminine": "triste",
+            "example": "Il est triste. Elle est triste."
+          },
+          {
+            "rule": "-ien → -ienne",
+            "masculine": "brésilien",
+            "feminine": "brésilienne",
+            "example": "Elle est brésilienne."
+          },
+          {
+            "rule": "-eux → -euse",
+            "masculine": "heureux",
+            "feminine": "heureuse",
+            "example": "Elle est heureuse."
+          },
+          {
+            "rule": "plural: add -s",
+            "masculine": "petits",
+            "feminine": "petites",
+            "example": "Ils sont petits."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Elle est content.",
+            "certo": "Elle est contente.",
+            "motivo": "Feminine: add «e»."
+          },
+          {
+            "errado": "Il est brésilienne.",
+            "certo": "Il est brésilien.",
+            "motivo": "«-ienne» is feminine only."
+          },
+          {
+            "errado": "Elle est heureux.",
+            "certo": "Elle est heureuse.",
+            "motivo": "«-eux» becomes «-euse» in the feminine."
+          },
+          {
+            "errado": "say the final «s» of «petits»",
+            "certo": "puh-TEE (the plural «s» is silent)",
+            "motivo": "The plural «s» is not pronounced."
+          }
+        ],
+        "tag": "Adjectives and possessives"
+      },
+      {
+        "tipo": "texto",
+        "min": 5,
+        "titulo": "Deux amis / Two friends",
+        "ru": "Voici Léa et Hugo. Léa est brésilienne. Elle est grande et très contente. Hugo est français. Il est petit et un peu fatigué. Léa et Hugo sont amis. Ils sont à Paris. Léa n'est pas fatiguée. Elle est heureuse ! Hugo n'est pas triste. Il est content aussi.",
+        "pt": "Here are Léa and Hugo. Léa is Brazilian. She is tall and very happy. Hugo is French. He is short and a little tired. Léa and Hugo are friends. They are in Paris. Léa is not tired. She is happy! Hugo is not sad. He is happy too.",
+        "perguntas": [
+          {
+            "pergunta": "Where is Léa from?",
+            "resposta": "She is Brazilian («brésilienne»)."
+          },
+          {
+            "pergunta": "How is Hugo?",
+            "resposta": "A little tired («un peu fatigué»), but happy."
+          },
+          {
+            "pergunta": "Is Léa tired?",
+            "resposta": "No: «Léa n'est pas fatiguée. Elle est heureuse.»"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 3,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Elle est petite",
+            "opcoes": [
+              "Elle est petite",
+              "Il est petit",
+              "Ils sont petits"
+            ],
+            "gabarito": "Elle est petite",
+            "explicacao": "Listen to the ending: «petite» has an audible «t»; «petit» does not.",
+            "id": "fr-002-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Il est français",
+            "opcoes": [
+              "Il est français",
+              "Elle est française",
+              "Ils sont français"
+            ],
+            "gabarito": "Il est français",
+            "explicacao": "In «française», the final «z» sound is heard. In «français», it is not.",
+            "id": "fr-002-e02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle est ___ . (tired)",
+            "opcoes": [
+              "fatiguée",
+              "fatigué",
+              "fatigués"
+            ],
+            "gabarito": "fatiguée",
+            "explicacao": "Feminine singular subject: add «e».",
+            "id": "fr-002-e03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il est ___ . (Brazilian)",
+            "opcoes": [
+              "brésilien",
+              "brésilienne",
+              "brésiliens"
+            ],
+            "gabarito": "brésilien",
+            "explicacao": "Masculine singular subject: base form.",
+            "id": "fr-002-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which adjective does not change in the feminine?",
+            "opcoes": [
+              "triste",
+              "petit",
+              "content"
+            ],
+            "gabarito": "triste",
+            "explicacao": "Adjectives that already end in «e» do not change.",
+            "id": "fr-002-e05"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Say six sentences describing yourself, a male friend and a female friend: «Je suis…», «Il est…», «Elle est…», with the adjectives from the lesson.",
+        "exemplo": "Je suis brésilien. Il est petit. Elle est contente."
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Conjugate «être» from memory, aloud, with the six pronouns: je, tu, il/elle, nous, vous, ils/elles."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-002.json",
+  "responsavel": null
+}

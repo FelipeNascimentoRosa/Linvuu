@@ -1,0 +1,137 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 174,
+  "fase": 18,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Past conditional: regrets and hypotheses: Si + plus-que-parfait",
+  "objetivo": "Lesson 44, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 44,
+    "titulo": "Past conditional: regrets and hypotheses",
+    "objetivo": "Form the conditionnel passé and use «si» + plus-que-parfait to talk about what could have been, express regret and make polite reproaches.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Si + plus-que-parfait",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "si j'avais su",
+            "translit": "see zhah-veh SEW",
+            "pt": "",
+            "en": "",
+            "audio": "si j'avais su"
+          },
+          {
+            "ru": "si j'avais étudié",
+            "translit": "see zhah-veh ay-tew-dee-AY",
+            "pt": "",
+            "en": "",
+            "audio": "si j'avais étudié"
+          },
+          {
+            "ru": "j'aurais réussi",
+            "translit": "zhoh-reh ray-ew-SEE",
+            "pt": "",
+            "en": "",
+            "audio": "j'aurais réussi"
+          },
+          {
+            "ru": "ça aurait pu",
+            "translit": "sah oh-reh PEW",
+            "pt": "",
+            "en": "",
+            "audio": "ça aurait pu"
+          },
+          {
+            "ru": "heureusement que",
+            "translit": "uh-ruhz-mahn KUH",
+            "pt": "",
+            "en": "",
+            "audio": "heureusement que"
+          },
+          {
+            "ru": "malheureusement",
+            "translit": "mal-uh-ruhz-MAHN",
+            "pt": "",
+            "en": "",
+            "audio": "malheureusement"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Si j'avais su, je serais venu",
+        "explicacao": "STEP 1: the hypothesis about a past that did not happen: «si» + plus-que-parfait, result in the conditionnel passé. STEP 2: «Si j'avais étudié, j'aurais réussi.» (If I had studied, I would have passed.) STEP 3: «Si tu m'avais appelé, je serais venu.» STEP 4: the order can be reversed: «J'aurais réussi si j'avais étudié.» STEP 5: NEVER use the conditional after «si»: «Si j'aurais su» is a frequent mistake. STEP 6: the three hypotheses together: present («Si tu viens, nous irons.»), unlikely («Si tu venais, nous irions.»), past («Si tu étais venu, nous serions allés.»). STEP 7: mixed: «Si j'avais étudié (past), je serais médecin (today).» STEP 8: expressions of regret: «Dommage !» «Quel dommage que…» «Malheureusement…»",
+        "comparacao": "in English: «if I had studied, I would have passed». French is the same: «si j'avais étudié, j'aurais réussi». The typical mistake is copying the conditional after «si»: «si j'aurais étudié» is incorrect in French, just as \"if I would have studied\" is in careful English.",
+        "tabela": [
+          {
+            "tipo": "provável",
+            "structure": "si + present, future",
+            "example": "Si tu viens, nous irons."
+          },
+          {
+            "tipo": "improvável",
+            "structure": "si + imparfait, conditional",
+            "example": "Si tu venais, nous irions."
+          },
+          {
+            "tipo": "passada",
+            "structure": "si + plus-que-parfait, past conditional",
+            "example": "Si tu étais venu, nous serions allés."
+          },
+          {
+            "tipo": "mista",
+            "structure": "si + plus-que-parfait, conditional",
+            "example": "Si j'avais étudié, je serais médecin."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Si j'aurais su, je serais venu.",
+            "certo": "Si j'avais su, je serais venu.",
+            "motivo": "After «si», plus-que-parfait."
+          },
+          {
+            "errado": "Si j'avais étudié, j'ai réussi.",
+            "certo": "Si j'avais étudié, j'aurais réussi.",
+            "motivo": "Result: past conditional."
+          },
+          {
+            "errado": "Si tu venais, nous serions allés.",
+            "certo": "Si tu étais venu, nous serions allés.",
+            "motivo": "Past: plus-que-parfait."
+          },
+          {
+            "errado": "Si j'étais su, je viendrais.",
+            "certo": "Si j'avais su, je serais venu.",
+            "motivo": "«Savoir» takes «avoir»."
+          }
+        ],
+        "tag": "Conditional"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Say eight past hypotheses out loud: «Si j'avais… , j'aurais… »"
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Conjugate «aller, faire, dire, pouvoir» aloud in the past conditional with «je»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-044.json",
+  "responsavel": null
+}

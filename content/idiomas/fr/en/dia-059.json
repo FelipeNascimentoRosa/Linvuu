@@ -1,0 +1,155 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 59,
+  "fase": 6,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "The past with «avoir»: passé composé: Telling a short story",
+  "objetivo": "Lesson 15, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 15,
+    "titulo": "The past with «avoir»: passé composé",
+    "objetivo": "Tell what happened using the passé composé with «avoir», the past participle and the negative in the past.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Telling a short story",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "d'abord",
+            "translit": "dah-BOHR",
+            "pt": "",
+            "en": "",
+            "audio": "d'abord"
+          },
+          {
+            "ru": "puis",
+            "translit": "PWEE",
+            "pt": "",
+            "en": "",
+            "audio": "puis"
+          },
+          {
+            "ru": "ensuite",
+            "translit": "ahn-SWEET",
+            "pt": "",
+            "en": "",
+            "audio": "ensuite"
+          },
+          {
+            "ru": "enfin",
+            "translit": "ahn-FAN",
+            "pt": "",
+            "en": "",
+            "audio": "enfin"
+          },
+          {
+            "ru": "pendant",
+            "translit": "pahn-DAHN",
+            "pt": "",
+            "en": "",
+            "audio": "pendant"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Organizing what happened",
+        "explicacao": "STEP 1: to organize the story: «d'abord», «puis», «ensuite», «enfin». STEP 2: the passé composé answers «what happened?»: «D'abord, j'ai pris le bus. Puis, j'ai marché. Enfin, j'ai mangé.» STEP 3: time markers go at the beginning or at the end: «Hier, j'ai travaillé.» / «J'ai travaillé hier.» STEP 4: «pendant» + period: «J'ai travaillé pendant trois heures.» STEP 5: «il y a» + time = «ago»: «Il y a deux jours, j'ai vu Marc.»",
+        "comparacao": "in English we say «two days ago». French says «il y a deux jours» and puts the verb in the passé composé. Careful: here «il y a» means «ago» (time), not «there is».",
+        "tabela": [
+          {
+            "word": "d'abord",
+            "function": "first"
+          },
+          {
+            "word": "puis / ensuite",
+            "function": "after"
+          },
+          {
+            "word": "enfin",
+            "function": "finally"
+          },
+          {
+            "word": "pendant",
+            "function": "during"
+          },
+          {
+            "word": "il y a",
+            "function": "ago"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Il a deux jours, j'ai vu Marc.",
+            "certo": "Il y a deux jours, j'ai vu Marc.",
+            "motivo": "Expression with «y»."
+          },
+          {
+            "errado": "J'ai travaillé pendant de trois heures.",
+            "certo": "J'ai travaillé pendant trois heures.",
+            "motivo": "No «de»."
+          },
+          {
+            "errado": "Hier je travaille.",
+            "certo": "Hier, j'ai travaillé.",
+            "motivo": "Yesterday calls for the past."
+          },
+          {
+            "errado": "Enfin, je mange.",
+            "certo": "Enfin, j'ai mangé.",
+            "motivo": "The past takes «avoir»."
+          }
+        ],
+        "tag": "Past"
+      },
+      {
+        "tipo": "texto",
+        "min": 8,
+        "titulo": "Ma journée d'hier / My day yesterday",
+        "ru": "Hier, j'ai pris le bus à huit heures. J'ai travaillé pendant six heures. Puis, j'ai mangé avec Marie. Ensuite, nous avons visité un musée. Enfin, j'ai regardé un film et j'ai dormi.",
+        "pt": "Yesterday, I took the bus at eight. I worked for six hours. Then I ate with Marie. After that, we visited a museum. Finally, I watched a film and went to sleep.",
+        "perguntas": [
+          {
+            "pergunta": "Quand l'auteur a-t-il pris le bus ?",
+            "resposta": "Hier, à huit heures."
+          },
+          {
+            "pergunta": "Pendant combien de temps a-t-il travaillé ?",
+            "resposta": "Pendant six heures."
+          },
+          {
+            "pergunta": "Avec qui a-t-il mangé ?",
+            "resposta": "Avec Marie."
+          },
+          {
+            "pergunta": "Qu'est-ce que l'auteur a fait à la fin ?",
+            "resposta": "Il a regardé un film et il a dormi."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Tell about your day yesterday with «d'abord, puis, ensuite, enfin»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Replace with pronouns: «J'ai vu le film. J'ai pris la voiture. J'ai écouté les amis.»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-015.json",
+  "responsavel": null
+}

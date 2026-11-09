@@ -1,0 +1,147 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 218,
+  "fase": 22,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Cause, consequence, purpose and nominalization: The consequence",
+  "objetivo": "Lesson 55, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 55,
+    "titulo": "Cause, consequence, purpose and nominalization",
+    "objetivo": "Explain why something happens, what the result is and what it is for, and turn verbs into nouns to write more formally.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "The consequence",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "donc",
+            "translit": "DOHNK",
+            "pt": "",
+            "en": "",
+            "audio": "donc"
+          },
+          {
+            "ru": "alors",
+            "translit": "ah-LOR",
+            "pt": "",
+            "en": "",
+            "audio": "alors"
+          },
+          {
+            "ru": "c'est pourquoi",
+            "translit": "seh poor-KWAH",
+            "pt": "",
+            "en": "",
+            "audio": "c'est pourquoi"
+          },
+          {
+            "ru": "par conséquent",
+            "translit": "par kohn-say-KAHN",
+            "pt": "",
+            "en": "",
+            "audio": "par conséquent"
+          },
+          {
+            "ru": "si bien que",
+            "translit": "see bee-an KUH",
+            "pt": "",
+            "en": "",
+            "audio": "si bien que"
+          },
+          {
+            "ru": "tellement… que",
+            "translit": "tehl-mahn… KUH",
+            "pt": "",
+            "en": "",
+            "audio": "tellement… que"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Giving the result",
+        "explicacao": "STEP 1: «donc» and «alors» link cause and result in short sentences: «Il pleut, donc je reste.» STEP 2: «c'est pourquoi» and «par conséquent» are more formal and open the next sentence: «Le prix a augmenté. C'est pourquoi les ventes baissent.» STEP 3: «si bien que» links two clauses: «Il a beaucoup travaillé, si bien qu'il a réussi.» STEP 4: intensity + result: «tellement / si + adjective + que»: «Il est tellement fatigué qu'il dort.» STEP 5: «tant de / tellement de + noun + que»: «Il y avait tant de monde que nous sommes partis.» STEP 6: «de sorte que» and «si bien que» with a real fact take the indicative: «Il a parlé fort, de sorte que tout le monde a entendu.» STEP 7: after «aussi» at the start, the sentence inverts the subject (very formal): «Aussi a-t-il refusé.»",
+        "comparacao": "in English «so… that» and «so much… that» have exact parallels: «tellement… que», «tant de… que». The trap is using «donc» at the start of a formal paragraph; prefer «par conséquent» or «c'est pourquoi».",
+        "tabela": [
+          {
+            "connector": "donc",
+            "function": "simple result",
+            "example": "Il pleut, donc je reste."
+          },
+          {
+            "connector": "alors",
+            "function": "result, spoken",
+            "example": "Il est tard, alors on part."
+          },
+          {
+            "connector": "c'est pourquoi",
+            "function": "formal result",
+            "example": "C'est pourquoi les ventes baissent."
+          },
+          {
+            "connector": "par conséquent",
+            "function": "formal result",
+            "example": "Par conséquent, nous refusons."
+          },
+          {
+            "connector": "si bien que",
+            "function": "result of a fact",
+            "example": "Il a travaillé, si bien qu'il a réussi."
+          },
+          {
+            "connector": "tellement… que",
+            "function": "intensity + result",
+            "example": "Il est tellement fatigué qu'il dort."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Il est tellement fatigué qu'il dormir.",
+            "certo": "Il est tellement fatigué qu'il dort.",
+            "motivo": "After «que», a conjugated verb."
+          },
+          {
+            "errado": "Il y avait tellement monde que nous sommes partis.",
+            "certo": "Il y avait tellement de monde que nous sommes partis.",
+            "motivo": "«Tellement de» + noun."
+          },
+          {
+            "errado": "Il a travaillé donc il a réussi, c'est pourquoi donc.",
+            "certo": "Il a travaillé, donc il a réussi.",
+            "motivo": "One connector is enough."
+          },
+          {
+            "errado": "Il était si fatigué de sorte qu'il dormait.",
+            "certo": "Il était si fatigué qu'il dormait.",
+            "motivo": "«Si… que», without «de sorte»."
+          }
+        ],
+        "tag": "Consequence"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Speak for 1 minute: tell about a bad day using «à cause de», «tellement… que», «donc» and «c'est pourquoi»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Give two causes: one with «parce que» and another with «à cause de»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-055.json",
+  "responsavel": null
+}

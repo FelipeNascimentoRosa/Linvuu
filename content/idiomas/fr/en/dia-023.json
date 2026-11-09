@@ -1,0 +1,145 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 23,
+  "fase": 3,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Family, avoir and possessives: Talking about family",
+  "objetivo": "Lesson 6, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 6,
+    "titulo": "Family, avoir and possessives",
+    "objetivo": "Talk about your family, use «avoir» for possession and for physical feelings («avoir faim», «avoir froid»), show possession with «de» and use possessive adjectives.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Talking about family",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "le grand-père",
+            "translit": "luh grahn-PEHR",
+            "pt": "",
+            "en": "",
+            "audio": "le grand-père"
+          },
+          {
+            "ru": "la grand-mère",
+            "translit": "lah grahn-MEHR",
+            "pt": "",
+            "en": "",
+            "audio": "la grand-mère"
+          },
+          {
+            "ru": "l'oncle",
+            "translit": "LOHNKL",
+            "pt": "",
+            "en": "",
+            "audio": "l'oncle"
+          },
+          {
+            "ru": "la tante",
+            "translit": "lah TAHNT",
+            "pt": "",
+            "en": "",
+            "audio": "la tante"
+          },
+          {
+            "ru": "l'enfant",
+            "translit": "lahn-FAHN",
+            "pt": "",
+            "en": "",
+            "audio": "l'enfant"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Describing a family member",
+        "explicacao": "STEP 1: name and age: «Il s'appelle Pedro et il a vingt ans.» STEP 2: «s'appeler» has a double l in the singular and in the third person plural: «il s'appelle», «ils s'appellent» (two «l»s). STEP 3: profession and place: «Il est ingénieur. Il habite à Lyon.» STEP 4: owner + thing: «La maison de mes grands-parents est grande.» STEP 5: use «mon, ma, mes» before the noun, and «de» to give the name of the owner.",
+        "comparacao": "In English we say «his name is Pedro». French uses a reflexive verb, «il s'appelle» (he calls himself). The double «l» also appears in the third person plural: «ils s'appellent».",
+        "tabela": [
+          {
+            "function": "name",
+            "sentence": "Mon frère s'appelle Pedro."
+          },
+          {
+            "function": "age",
+            "sentence": "Il a vingt ans."
+          },
+          {
+            "function": "profession",
+            "sentence": "Il est ingénieur."
+          },
+          {
+            "function": "place",
+            "sentence": "Il habite à Lyon."
+          },
+          {
+            "function": "possession",
+            "sentence": "C'est la maison de mes grands-parents."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Il appelle Pedro.",
+            "certo": "Il s'appelle Pedro.",
+            "motivo": "Reflexive verb."
+          },
+          {
+            "errado": "Ils s'appelent Pedro et Julia.",
+            "certo": "Ils s'appellent Pedro et Julia.",
+            "motivo": "Two «l»s in the spelling."
+          }
+        ],
+        "tag": "Adjectives and possessives"
+      },
+      {
+        "tipo": "texto",
+        "min": 8,
+        "titulo": "Ma famille / My family",
+        "ru": "Je m'appelle Ana. J'ai une grande famille. Mon père s'appelle Paulo et ma mère s'appelle Rita. J'ai un frère, Pedro, et une sœur, Julia. Mon frère a vingt ans et ma sœur a quinze ans. Mes grands-parents habitent au Brésil, mais mon oncle habite en France. Sa femme est française. Ils ont deux enfants. Nous aimons beaucoup notre famille.",
+        "pt": "My name is Ana. I have a big family. My father's name is Paulo and my mother's name is Rita. I have a brother, Pedro, and a sister, Julia. My brother is twenty and my sister is fifteen. My grandparents live in Brazil, but my uncle lives in France. His wife is French. They have two children. We love our family very much.",
+        "perguntas": [
+          {
+            "pergunta": "Comment s'appelle le père d'Ana ?",
+            "resposta": "Il s'appelle Paulo."
+          },
+          {
+            "pergunta": "Quel âge a le frère d'Ana ?",
+            "resposta": "Il a vingt ans."
+          },
+          {
+            "pergunta": "Où habite l'oncle d'Ana ?",
+            "resposta": "Il habite en France."
+          },
+          {
+            "pergunta": "Est-ce que la femme de l'oncle est brésilienne ?",
+            "resposta": "Non, elle est française."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Write and read aloud six sentences about your family, using possessives and «avoir»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Complete aloud: «___ frère, ___ sœur, ___ parents, ___ amie.» (mon, ma, mes)"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-006.json",
+  "responsavel": null
+}

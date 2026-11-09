@@ -1,0 +1,512 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 128,
+  "fase": 13,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Leisure, invitations and culture: Review and practice for lesson 32",
+  "objetivo": "Lesson 32, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 32,
+    "titulo": "Leisure, invitations and culture",
+    "objetivo": "Invite, accept and decline, talk about sports, movies, music and reading, and give a short opinion about a movie or a book.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 32",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ça te dirait d'aller au cinéma ?",
+            "opcoes": [
+              "Ça te dirait d'aller au cinéma ?",
+              "Tu veux aller au cinéma ?",
+              "Tu es libre au cinéma ?"
+            ],
+            "gabarito": "Ça te dirait d'aller au cinéma ?",
+            "explicacao": "Listen to «ça te dirait».",
+            "id": "fr-032-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je joue de la guitare",
+            "opcoes": [
+              "Je joue de la guitare",
+              "Je joue à la guitare",
+              "Je fais de la guitare"
+            ],
+            "gabarito": "Je joue de la guitare",
+            "explicacao": "Listen to «joue de».",
+            "id": "fr-032-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je l'ai trouvé trop long",
+            "opcoes": [
+              "Je l'ai trouvé trop long",
+              "Je l'ai trouvé très long",
+              "Je l'ai trouvée trop longue"
+            ],
+            "gabarito": "Je l'ai trouvé trop long",
+            "explicacao": "Listen to «trop».",
+            "id": "fr-032-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Tu es libre samedi soir",
+            "respostaEsperada": "Tu es libre samedi soir",
+            "explicacao": "Write: Tu es libre samedi soir.",
+            "id": "fr-032-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je joue au football",
+            "respostaEsperada": "Je joue au football",
+            "explicacao": "Write: Je joue au football.",
+            "id": "fr-032-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «jouer au football» mean?",
+            "audio": "jouer au football",
+            "opcoes": [
+              "the film",
+              "to decline",
+              "o final",
+              "to play football"
+            ],
+            "gabarito": "to play football",
+            "explicacao": "«jouer au football» = to play football.",
+            "id": "fr-032-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ça vaut la peine",
+            "respostaEsperada": "Ça vaut la peine",
+            "explicacao": "Write: Ça vaut la peine.",
+            "id": "fr-032-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "faire du sport",
+            "respostaEsperada": "faire du sport",
+            "explicacao": "to play sports",
+            "id": "fr-032-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je joue au football.",
+              "Je joue le football.",
+              "Je joue du football."
+            ],
+            "gabarito": "Je joue au football.",
+            "explicacao": "«Jouer à».",
+            "id": "fr-032-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Elle joue du piano.",
+              "Elle joue au piano.",
+              "Elle fait du piano."
+            ],
+            "gabarito": "Elle joue du piano.",
+            "explicacao": "«Jouer de» + instrument.",
+            "id": "fr-032-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je fais du vélo.",
+              "Je fais le vélo.",
+              "Je joue du vélo."
+            ],
+            "gabarito": "Je fais du vélo.",
+            "explicacao": "«Faire du».",
+            "id": "fr-032-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «l'acteur» mean?",
+            "audio": "l'acteur",
+            "opcoes": [
+              "o final",
+              "o ator",
+              "the show",
+              "livre"
+            ],
+            "gabarito": "o ator",
+            "explicacao": "«l'acteur» = o ator.",
+            "id": "fr-032-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Declining kindly:",
+            "opcoes": [
+              "Désolé, je ne peux pas.",
+              "Non, je veux pas.",
+              "Pas question."
+            ],
+            "gabarito": "Désolé, je ne peux pas.",
+            "explicacao": "Politeness.",
+            "id": "fr-032-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tu veux venir ___ cinéma ? (ao)",
+            "opcoes": [
+              "au",
+              "à le",
+              "en"
+            ],
+            "gabarito": "au",
+            "explicacao": "à + le = au.",
+            "id": "fr-032-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "On ___ retrouve à huit heures. (se)",
+            "opcoes": [
+              "se",
+              "me",
+              "te"
+            ],
+            "gabarito": "se",
+            "explicacao": "Reflexive with «on».",
+            "id": "fr-032-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "jouer au football",
+            "respostaEsperada": "jouer au football",
+            "explicacao": "to play football",
+            "id": "fr-032-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il joue ___ guitare. (plays)",
+            "opcoes": [
+              "de la",
+              "à la",
+              "la"
+            ],
+            "gabarito": "de la",
+            "explicacao": "Instrument.",
+            "id": "fr-032-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «le spectacle» mean?",
+            "audio": "le spectacle",
+            "opcoes": [
+              "o ator",
+              "the show",
+              "the show",
+              "to decline"
+            ],
+            "gabarito": "the show",
+            "explicacao": "«le spectacle» = the show.",
+            "id": "fr-032-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Le livre est ___ que le film. (better)",
+            "opcoes": [
+              "meilleur",
+              "mieux",
+              "plus bon"
+            ],
+            "gabarito": "meilleur",
+            "explicacao": "Adjective.",
+            "id": "fr-032-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Tu es libre samedi soir ?»",
+            "opcoes": [
+              "Tu",
+              "es",
+              "libre",
+              "samedi",
+              "soir"
+            ],
+            "gabarito": "Tu es libre samedi soir ?",
+            "explicacao": "Simple question.",
+            "id": "fr-032-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Je te le recommande.»",
+            "opcoes": [
+              "Je",
+              "te",
+              "le",
+              "recommande"
+            ],
+            "gabarito": "Je te le recommande.",
+            "explicacao": "Two pronouns.",
+            "id": "fr-032-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: Do you want to go to the movies with me? I play the guitar. I thought the movie was very good.",
+            "respostaEsperada": "Tu veux aller au cinéma avec moi ? Je joue de la guitare. J'ai trouvé le film très bon.",
+            "id": "fr-032-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «regarder un film» mean?",
+            "audio": "regarder un film",
+            "opcoes": [
+              "moving",
+              "to invite",
+              "the story",
+              "to watch a film"
+            ],
+            "gabarito": "to watch a film",
+            "explicacao": "«regarder un film» = to watch a film.",
+            "id": "fr-032-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle fait ___ natation. (to practise)",
+            "opcoes": [
+              "du",
+              "de l'",
+              "de la"
+            ],
+            "gabarito": "de la",
+            "explicacao": "Individual sports: «faire de la natation».",
+            "id": "fr-032-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "regarder un film",
+            "respostaEsperada": "regarder un film",
+            "explicacao": "to watch a film",
+            "id": "fr-032-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Nous jouons ___ tennis. (à + le)",
+            "opcoes": [
+              "au",
+              "du",
+              "à la"
+            ],
+            "gabarito": "au",
+            "explicacao": "Team sport: «jouer au».",
+            "id": "fr-032-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tu ___ libre samedi ? (és)",
+            "opcoes": [
+              "as",
+              "es",
+              "est"
+            ],
+            "gabarito": "es",
+            "explicacao": "With «tu», «être» becomes «es».",
+            "id": "fr-032-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ça te ___ d'aller au concert ? (would sound good)",
+            "opcoes": [
+              "dit",
+              "dira",
+              "dirait"
+            ],
+            "gabarito": "dirait",
+            "explicacao": "The invitation formula is «Ça te dirait de…».",
+            "id": "fr-032-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «accepter» mean?",
+            "audio": "accepter",
+            "opcoes": [
+              "livre",
+              "moving",
+              "to accept",
+              "to watch a film"
+            ],
+            "gabarito": "to accept",
+            "explicacao": "«accepter» = to accept.",
+            "id": "fr-032-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Désolé, je ___ pas venir. (I can't)",
+            "opcoes": [
+              "ne peux",
+              "ne peut",
+              "n'ai"
+            ],
+            "gabarito": "ne peux",
+            "explicacao": "«Ne… pas» wraps around «peux».",
+            "id": "fr-032-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Il joue des cartes.",
+              "Il joue aux cartes.",
+              "Il joue à les cartes."
+            ],
+            "gabarito": "Il joue aux cartes.",
+            "explicacao": "«À + les» becomes «aux»: «jouer aux cartes».",
+            "id": "fr-032-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you accept an invitation?",
+            "opcoes": [
+              "Ce sera pour une autre fois.",
+              "Désolé, je suis pris.",
+              "Avec plaisir !"
+            ],
+            "gabarito": "Avec plaisir !",
+            "explicacao": "«Avec plaisir» accepts; the others decline.",
+            "id": "fr-032-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "écouter de la musique",
+            "respostaEsperada": "écouter de la musique",
+            "explicacao": "to listen to music",
+            "id": "fr-032-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «Ça vaut la peine» mean?",
+            "opcoes": [
+              "It's worth it",
+              "It's expensive",
+              "It's a pity"
+            ],
+            "gabarito": "It's worth it",
+            "explicacao": "«Valoir la peine» = to be worth the effort.",
+            "id": "fr-032-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «faire du sport» mean?",
+            "audio": "faire du sport",
+            "opcoes": [
+              "to play sports",
+              "the story",
+              "moving",
+              "to go out"
+            ],
+            "gabarito": "to play sports",
+            "explicacao": "«faire du sport» = to play sports.",
+            "id": "fr-032-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «detective story» (the genre)?",
+            "opcoes": [
+              "un drame",
+              "un policier",
+              "une comédie"
+            ],
+            "gabarito": "un policier",
+            "explicacao": "«Un policier» is the detective-story genre.",
+            "id": "fr-032-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «He plays the piano every evening.»",
+            "opcoes": [
+              "Il",
+              "joue",
+              "du",
+              "piano",
+              "tous",
+              "les",
+              "soirs"
+            ],
+            "gabarito": "Il joue du piano tous les soirs.",
+            "explicacao": "Instrument: «jouer du».",
+            "id": "fr-032-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «We'll meet in front of the cinema.»",
+            "opcoes": [
+              "On",
+              "se",
+              "retrouve",
+              "devant",
+              "le",
+              "cinéma"
+            ],
+            "gabarito": "On se retrouve devant le cinéma.",
+            "explicacao": "«On» = we, people.",
+            "id": "fr-032-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I swim. She plays tennis.",
+            "respostaEsperada": "Je fais de la natation. Elle joue au tennis.",
+            "id": "fr-032-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: Sorry, I can't. I have an appointment.",
+            "respostaEsperada": "Désolé, je ne peux pas. J'ai un rendez-vous.",
+            "id": "fr-032-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Speak for 1 minute about what you do in your free time and what you would like to do."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Invite someone to an outing and give your opinion about a movie."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-032.json",
+  "responsavel": null
+}

@@ -1,0 +1,159 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 45,
+  "fase": 5,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Describing: adjectives, colors, clothes and shopping: Adjectives: position and colors",
+  "objetivo": "Lesson 12, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 12,
+    "titulo": "Describing: adjectives, colors, clothes and shopping",
+    "objetivo": "Describe people and things with adjectives in the right position, talk about colors and clothes, and shop with prices and numbers above 100.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Adjectives: position and colors",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "rouge",
+            "translit": "ROOZH",
+            "pt": "",
+            "en": "",
+            "audio": "rouge"
+          },
+          {
+            "ru": "bleu",
+            "translit": "BLUH",
+            "pt": "",
+            "en": "",
+            "audio": "bleu"
+          },
+          {
+            "ru": "vert",
+            "translit": "VEHR",
+            "pt": "",
+            "en": "",
+            "audio": "vert"
+          },
+          {
+            "ru": "jaune",
+            "translit": "ZHOHN",
+            "pt": "",
+            "en": "",
+            "audio": "jaune"
+          },
+          {
+            "ru": "noir",
+            "translit": "NWAHR",
+            "pt": "",
+            "en": "",
+            "audio": "noir"
+          },
+          {
+            "ru": "blanc",
+            "translit": "BLAHN",
+            "pt": "",
+            "en": "",
+            "audio": "blanc"
+          },
+          {
+            "ru": "gris",
+            "translit": "GREE",
+            "pt": "",
+            "en": "",
+            "audio": "gris"
+          },
+          {
+            "ru": "rose",
+            "translit": "ROHZ",
+            "pt": "",
+            "en": "",
+            "audio": "rose"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Where to put the adjective",
+        "explicacao": "STEP 1: in general, the adjective comes after the noun: «une voiture rouge», «un homme français», «une table ronde». This applies to colors, nationalities and shapes. STEP 2: a group of short, common adjectives comes before the noun. Remember the acronym BAGS: Beauty (beau, joli), Age (jeune, vieux, nouveau), Goodness (bon, mauvais), Size (grand, petit, gros, long): «une belle maison», «un petit garçon», «un bon café». STEP 3: colors agree with the noun: «une robe verte», «des robes vertes». But colors that come from an object (orange, marron) do not change: «des chaussures marron». STEP 4: «beau», «nouveau» and «vieux» have a special form before a vowel: «un bel hôtel», «un nouvel ami», «un vieil homme». The feminine is «belle», «nouvelle», «vieille». STEP 5: the plural takes «-s» (or «-x» in «beaux», «nouveaux»): «de beaux jardins». STEP 6: before a plural adjective, «des» often becomes «de»: «de beaux jardins», «de grandes maisons». STEP 7: with some adjectives the meaning changes with the position: «un grand homme» (a great man) vs. «un homme grand» (a tall man).",
+        "comparacao": "in English the adjective always comes before the noun ('a red car'). In French it usually comes after («une voiture rouge»), except for the short, common BAGS adjectives, which come before, just as in English («une belle maison»).",
+        "tabela": [
+          {
+            "rule": "after: color",
+            "example": "une voiture rouge"
+          },
+          {
+            "rule": "after: nationality",
+            "example": "un homme français"
+          },
+          {
+            "rule": "before: beauty",
+            "example": "une belle maison"
+          },
+          {
+            "rule": "before: age",
+            "example": "un vieil ami"
+          },
+          {
+            "rule": "before: goodness",
+            "example": "un bon café"
+          },
+          {
+            "rule": "before: size",
+            "example": "un petit garçon"
+          },
+          {
+            "rule": "invariable color",
+            "example": "des chaussures marron"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "une rouge voiture",
+            "certo": "une voiture rouge",
+            "motivo": "Colors come after the noun."
+          },
+          {
+            "errado": "une maison belle",
+            "certo": "une belle maison",
+            "motivo": "Beauty comes before."
+          },
+          {
+            "errado": "un beau hôtel",
+            "certo": "un bel hôtel",
+            "motivo": "«Bel» before a vowel."
+          },
+          {
+            "errado": "des robes oranges",
+            "certo": "des robes orange",
+            "motivo": "«Orange» doesn't change."
+          }
+        ],
+        "tag": "Adjectives"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe, out loud, five things around you with a color and another adjective, in the right order."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Tell out loud about your routine for a day, with «se lever», «toujours» and «finir»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-012.json",
+  "responsavel": null
+}

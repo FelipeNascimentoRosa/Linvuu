@@ -1,0 +1,151 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 163,
+  "fase": 17,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "The passive voice and «on»: News and settings",
+  "objetivo": "Lesson 41, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 41,
+    "titulo": "The passive voice and «on»",
+    "objetivo": "Form the passive voice with «être» + participle and «par», know when it is preferred, and use natural alternatives such as «on» and the pronominal form.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "News and settings",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "élire",
+            "translit": "ay-LEER",
+            "pt": "",
+            "en": "",
+            "audio": "élire"
+          },
+          {
+            "ru": "publier",
+            "translit": "pew-blee-AY",
+            "pt": "",
+            "en": "",
+            "audio": "publier"
+          },
+          {
+            "ru": "découvrir",
+            "translit": "day-koo-VREER",
+            "pt": "",
+            "en": "",
+            "audio": "découvrir"
+          },
+          {
+            "ru": "détruire",
+            "translit": "day-TRWEER",
+            "pt": "",
+            "en": "",
+            "audio": "détruire"
+          },
+          {
+            "ru": "inaugurer",
+            "translit": "ee-noh-gew-RAY",
+            "pt": "",
+            "en": "",
+            "audio": "inaugurer"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "The language of the news",
+        "explicacao": "STEP 1: newspaper headlines use the participle without «être»: «Nouveau musée inauguré à Paris.» STEP 2: report with the passive: «Un tableau a été volé hier soir au musée.» STEP 3: source: «selon la police» (according to the police), «d'après les experts» (according to the experts). STEP 4: result: «Le suspect a été arrêté ce matin.» STEP 5: official information: «Le musée sera ouvert au public lundi.»",
+        "comparacao": "in English we write «the museum will be opened on Monday». French does the same: «sera inauguré lundi». The passive dominates newspaper style. In speech, the same fact becomes «ils ont volé un tableau» (active with an impersonal «ils»).",
+        "tabela": [
+          {
+            "formula": "headline",
+            "example": "Nouveau musée inauguré à Paris"
+          },
+          {
+            "formula": "passive of the fact",
+            "example": "Un tableau a été volé hier soir."
+          },
+          {
+            "formula": "source",
+            "example": "Selon la police, le suspect a été arrêté."
+          },
+          {
+            "formula": "official future",
+            "example": "Le musée sera ouvert lundi."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Selon de la police, il est arrêté.",
+            "certo": "Selon la police, il a été arrêté.",
+            "motivo": "No «de» and passive in the past."
+          },
+          {
+            "errado": "Un tableau a été volée.",
+            "certo": "Un tableau a été volé.",
+            "motivo": "Agreement: masculine."
+          },
+          {
+            "errado": "Le musée sera ouvre lundi.",
+            "certo": "Le musée sera ouvert lundi.",
+            "motivo": "Past participle of «ouvrir»: «ouvert»."
+          },
+          {
+            "errado": "Un tableau a été volé de un voleur.",
+            "certo": "Un tableau a été volé par un voleur.",
+            "motivo": "Agent: «par»."
+          }
+        ],
+        "tag": "Passive"
+      },
+      {
+        "tipo": "texto",
+        "min": 8,
+        "titulo": "Une nouvelle surprenante / A surprising piece of news",
+        "ru": "Hier soir, un célèbre tableau a été volé au musée de la ville. Selon la police, le vol a été commis entre minuit et deux heures du matin. Le gardien a été retrouvé sain et sauf. Le tableau, qui avait été peint il y a trois cents ans, est évalué à plusieurs millions d'euros. Deux suspects ont été arrêtés ce matin et le musée sera fermé jusqu'à nouvel ordre. On espère que l'œuvre sera retrouvée rapidement.",
+        "pt": "Last night, a famous painting was stolen from the city museum. According to the police, the theft was committed between midnight and two in the morning. The guard was found safe and sound. The painting, which was painted three hundred years ago, is valued at several million euros. Two suspects were arrested this morning and the museum will stay closed until further notice. It is hoped that the work will be found quickly.",
+        "perguntas": [
+          {
+            "pergunta": "Qu'est-ce qui a été volé ?",
+            "resposta": "Un célèbre tableau."
+          },
+          {
+            "pergunta": "Quand le vol a-t-il été commis ?",
+            "resposta": "Entre minuit et deux heures du matin."
+          },
+          {
+            "pergunta": "Qu'est-il arrivé au gardien ?",
+            "resposta": "Il a été retrouvé sain et sauf."
+          },
+          {
+            "pergunta": "Combien de suspects ont été arrêtés ?",
+            "resposta": "Deux."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Tell out loud a recent piece of news as if you were a journalist, using the passive."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Turn into the active voice: «Le pont a été construit par une entreprise.»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-041.json",
+  "responsavel": null
+}

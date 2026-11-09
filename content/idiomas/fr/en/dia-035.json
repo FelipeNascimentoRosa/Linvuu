@@ -1,0 +1,184 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 35,
+  "fase": 4,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Food: partitives, quantities and the restaurant: Au café et au restaurant",
+  "objetivo": "Lesson 9, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 9,
+    "titulo": "Food: partitives, quantities and the restaurant",
+    "objetivo": "Talk about what you eat and drink with the partitive articles («du», «de la», «de l'», «des»), express quantities, and order in a café or restaurant with «je voudrais» and «prendre».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Au café et au restaurant",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "la carte",
+            "translit": "lah KAHRT",
+            "pt": "",
+            "en": "",
+            "audio": "la carte"
+          },
+          {
+            "ru": "l'addition",
+            "translit": "lah-dee-SYOHN",
+            "pt": "",
+            "en": "",
+            "audio": "l'addition"
+          },
+          {
+            "ru": "un café",
+            "translit": "an kah-FAY",
+            "pt": "",
+            "en": "",
+            "audio": "un café"
+          },
+          {
+            "ru": "une table",
+            "translit": "ewn TAHBL",
+            "pt": "",
+            "en": "",
+            "audio": "une table"
+          },
+          {
+            "ru": "Vous désirez ?",
+            "translit": "voo day-zee-RAY",
+            "pt": "",
+            "en": "",
+            "audio": "Vous désirez ?"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Ordering and paying",
+        "explicacao": "STEP 1: when you come in: «Bonjour, une table pour deux, s'il vous plaît.» STEP 2: the waiter asks: «Qu'est-ce que vous prenez ?» or «Vous désirez ?». STEP 3: you answer: «Je voudrais un café.» or «Je prends un café.» STEP 4: the verb «prendre» is irregular: «je prends, tu prends, il prend, nous prenons, vous prenez, ils prennent». It is used for eating, drinking and taking transport. STEP 5: to ask for the bill: «L'addition, s'il vous plaît.» To pay: «Je peux payer par carte ?» STEP 6: «Bon appétit !» is said before eating, and the reply is «Merci, vous aussi.»",
+        "comparacao": "in English we say «I'll have a coffee». French uses «prendre» with the same meaning: «je prends un café». «Prendre» is one of the most useful verbs: «prendre le métro», «prendre une douche».",
+        "tabelas": [
+          {
+            "title": "prendre (to take, to have)",
+            "linhas": [
+              {
+                "pronoun": "je",
+                "form": "prends",
+                "example": "Je prends un café."
+              },
+              {
+                "pronoun": "tu",
+                "form": "prends",
+                "example": "Tu prends du thé."
+              },
+              {
+                "pronoun": "il / elle / on",
+                "form": "prend",
+                "example": "Elle prend le menu."
+              },
+              {
+                "pronoun": "nous",
+                "form": "prenons",
+                "example": "Nous prenons une table."
+              },
+              {
+                "pronoun": "vous",
+                "form": "prenez",
+                "example": "Vous prenez quoi ?"
+              },
+              {
+                "pronoun": "ils / elles",
+                "form": "prennent",
+                "example": "Ils prennent un dessert."
+              }
+            ]
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je prend un café.",
+            "certo": "Je prends un café.",
+            "motivo": "«Je» and «tu» take «prends»."
+          },
+          {
+            "errado": "Nous prendons un café.",
+            "certo": "Nous prenons un café.",
+            "motivo": "Only one «n» in «prenons»."
+          },
+          {
+            "errado": "Je veux un café, donne-moi l'addition.",
+            "certo": "Je voudrais un café. L'addition, s'il vous plaît.",
+            "motivo": "More polite."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "Au restaurant / At the restaurant",
+        "contexto": "Sophie and Julien order their meal.",
+        "linhas": [
+          {
+            "personagem": "Le serveur",
+            "ru": "— Bonjour. Vous désirez ?",
+            "en": "— Good morning. What can I get you?",
+            "audio": "Bonjour. Vous désirez ?"
+          },
+          {
+            "personagem": "Sophie",
+            "ru": "— Je voudrais du poisson, s'il vous plaît. Et de l'eau.",
+            "en": "— I'd like fish, please. And water.",
+            "audio": "Je voudrais du poisson, s'il vous plaît. Et de l'eau."
+          },
+          {
+            "personagem": "Julien",
+            "ru": "— Moi, je prends de la viande avec des légumes.",
+            "en": "— I'll have meat with vegetables.",
+            "audio": "Moi, je prends de la viande avec des légumes."
+          },
+          {
+            "personagem": "Le serveur",
+            "ru": "— Très bien. Et comme dessert ?",
+            "en": "— Very good. And for dessert?",
+            "audio": "Très bien. Et comme dessert ?"
+          },
+          {
+            "personagem": "Sophie",
+            "ru": "— Nous prenons un peu de fromage, merci.",
+            "en": "— We'll have a little cheese, thank you.",
+            "audio": "Nous prenons un peu de fromage, merci."
+          },
+          {
+            "personagem": "Julien",
+            "ru": "— L'addition, s'il vous plaît. Bon appétit, Sophie !",
+            "en": "— The bill, please. Enjoy your meal, Sophie!",
+            "audio": "L'addition, s'il vous plaît. Bon appétit, Sophie !"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Act out an order at a café with an imaginary friend: greet, order two things, ask for the bill."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say four different quantities with «de»: «un verre de…, une bouteille de…, un kilo de…, beaucoup de…»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-009.json",
+  "responsavel": null
+}

@@ -1,0 +1,184 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 223,
+  "fase": 23,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Emphasis and discourse markers: Dislocation and natural speech",
+  "objetivo": "Lesson 56, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 56,
+    "titulo": "Emphasis and discourse markers",
+    "objetivo": "Put emphasis on what matters (c'est… qui/que, ce qui/ce que) and organize a talk or a text with connectors of sequence, opposition and conclusion.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Dislocation and natural speech",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "moi, je",
+            "translit": "mwah, ZHUH",
+            "pt": "",
+            "en": "",
+            "audio": "moi, je"
+          },
+          {
+            "ru": "quant à",
+            "translit": "kahn-TAH",
+            "pt": "",
+            "en": "",
+            "audio": "quant à"
+          },
+          {
+            "ru": "en ce qui concerne",
+            "translit": "ahn suh kee kohn-SEHRN",
+            "pt": "",
+            "en": "",
+            "audio": "en ce qui concerne"
+          },
+          {
+            "ru": "à mon avis",
+            "translit": "ah moh-nah-VEE",
+            "pt": "",
+            "en": "",
+            "audio": "à mon avis"
+          },
+          {
+            "ru": "d'ailleurs",
+            "translit": "dah-YUHR",
+            "pt": "",
+            "en": "",
+            "audio": "d'ailleurs"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Emphasis in speech",
+        "explicacao": "STEP 1: left dislocation: the topic comes first and a pronoun picks it up: «Ce film, je l'ai vu trois fois.» STEP 2: right dislocation: «Je l'ai vu trois fois, ce film.» STEP 3: «moi, je…» and «toi, tu…» mark contrast: «Moi, je préfère le thé.» STEP 4: «quant à» and «en ce qui concerne» change the subject: «Quant au prix, il est correct.» STEP 5: «à mon avis» and «d'ailleurs» link opinion and addition.",
+        "comparacao": "English speakers also say «that movie, I've already seen it», but rarely. French does it all the time, repeating the object with a pronoun: «Ce film, je l'ai vu». Without the pronoun, the sentence sounds odd.",
+        "tabela": [
+          {
+            "expression": "Ce film, je l'ai vu.",
+            "function": "topic on the left",
+            "example": "Ce film, je l'ai vu trois fois."
+          },
+          {
+            "expression": "Je l'ai vu, ce film.",
+            "function": "topic on the right",
+            "example": "Je l'ai vu trois fois, ce film."
+          },
+          {
+            "expression": "Moi, je…",
+            "function": "contrast",
+            "example": "Moi, je préfère le thé."
+          },
+          {
+            "expression": "quant à",
+            "function": "changes the subject",
+            "example": "Quant au prix, il est correct."
+          },
+          {
+            "expression": "en ce qui concerne",
+            "function": "subject, formal",
+            "example": "En ce qui concerne le prix…"
+          },
+          {
+            "expression": "d'ailleurs",
+            "function": "addition",
+            "example": "D'ailleurs, il est parti."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ce film, j'ai vu trois fois.",
+            "certo": "Ce film, je l'ai vu trois fois.",
+            "motivo": "The resumptive pronoun is missing."
+          },
+          {
+            "errado": "Moi je préfère moi le thé.",
+            "certo": "Moi, je préfère le thé.",
+            "motivo": "One «moi» is enough."
+          },
+          {
+            "errado": "Quant le prix, il est correct.",
+            "certo": "Quant au prix, il est correct.",
+            "motivo": "«Quant à» + contracted article."
+          },
+          {
+            "errado": "A mon avis que c'est bien.",
+            "certo": "À mon avis, c'est bien.",
+            "motivo": "«À mon avis», without «que»."
+          }
+        ],
+        "tag": "Emphasis"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "Au café / No café",
+        "contexto": "Sophie and Julien debate a film.",
+        "linhas": [
+          {
+            "personagem": "Sophie",
+            "ru": "— Ce film, tu l'as vu ? Moi, je l'ai adoré.",
+            "en": "— That film, have you seen it? I loved it.",
+            "audio": "Ce film, tu l'as vu ? Moi, je l'ai adoré."
+          },
+          {
+            "personagem": "Julien",
+            "ru": "— Oui. Ce qui m'a plu, c'est la musique. En revanche, l'histoire est un peu lente.",
+            "en": "— I have. What I liked was the music. On the other hand, the story is a bit slow.",
+            "audio": "Oui. Ce qui m'a plu, c'est la musique. En revanche, l'histoire est un peu lente."
+          },
+          {
+            "personagem": "Sophie",
+            "ru": "— D'abord, il faut dire que c'est un premier film. Ensuite, les acteurs sont excellents.",
+            "en": "— First, I have to say it's a first film. Then, the actors are excellent.",
+            "audio": "D'abord, il faut dire que c'est un premier film. Ensuite, les acteurs sont excellents."
+          },
+          {
+            "personagem": "Julien",
+            "ru": "— C'est vrai. Cependant, quant à la fin, je suis déçu.",
+            "en": "— True. However, as for the ending, I was disappointed.",
+            "audio": "C'est vrai. Cependant, quant à la fin, je suis déçu."
+          },
+          {
+            "personagem": "Sophie",
+            "ru": "— À mon avis, c'est justement ce qui la rend intéressante.",
+            "en": "— In my opinion, that is precisely what makes it interesting.",
+            "audio": "À mon avis, c'est justement ce qui la rend intéressante."
+          },
+          {
+            "personagem": "Julien",
+            "ru": "— Bref, on n'est pas d'accord, mais c'est un bon film.",
+            "en": "— Anyway, we don't agree, but it's a good film.",
+            "audio": "Bref, on n'est pas d'accord, mais c'est un bon film."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Give your opinion aloud about a film or book, with «ce qui m'a plu», «en revanche» and «bref»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say the steps of a recipe with «d'abord, ensuite, enfin»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-056.json",
+  "responsavel": null
+}

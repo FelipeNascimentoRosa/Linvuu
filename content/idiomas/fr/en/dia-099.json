@@ -1,0 +1,151 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 99,
+  "fase": 10,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Relative pronouns: qui, que, où, dont: Describing with relatives",
+  "objetivo": "Lesson 25, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 25,
+    "titulo": "Relative pronouns: qui, que, où, dont",
+    "objetivo": "Link sentences with «qui», «que», «où» and «dont» to describe people, things and places without repeating words.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Describing with relatives",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "une personne qui",
+            "translit": "ewn pehr-sohn KEE",
+            "pt": "",
+            "en": "",
+            "audio": "une personne qui"
+          },
+          {
+            "ru": "quelqu'un qui",
+            "translit": "kehl-kan KEE",
+            "pt": "",
+            "en": "",
+            "audio": "quelqu'un qui"
+          },
+          {
+            "ru": "quelque chose que",
+            "translit": "kehlk-shohz KUH",
+            "pt": "",
+            "en": "",
+            "audio": "quelque chose que"
+          },
+          {
+            "ru": "l'endroit où",
+            "translit": "lahn-drwah OO",
+            "pt": "",
+            "en": "",
+            "audio": "l'endroit où"
+          },
+          {
+            "ru": "la façon dont",
+            "translit": "lah fah-sohn DOHN",
+            "pt": "",
+            "en": "",
+            "audio": "la façon dont"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Defining people, things and places",
+        "explicacao": "STEP 1: to define: «C'est une personne qui aime voyager.» «C'est un endroit où on peut manger.» STEP 2: to describe in more detail: «Voici la maison où j'ai grandi.» STEP 3: «quelqu'un qui» and «quelque chose que»: «Je cherche quelqu'un qui parle français.» «J'ai trouvé quelque chose que j'aime.» STEP 4: after «qui» as a subject, the verb agrees with the antecedent: «Les gens qui parlent», «L'homme qui parle». STEP 5: do not put «il» or «elle» after «qui»: «Le garçon qui il joue» is a mistake.",
+        "comparacao": "In English a definition uses «who / that» («a person who likes to travel»). French uses «qui». And «where» becomes «où», which also works for time.",
+        "tabela": [
+          {
+            "definition": "a person",
+            "sentence": "C'est une personne qui aime voyager."
+          },
+          {
+            "definition": "a place",
+            "sentence": "C'est un endroit où on peut manger."
+          },
+          {
+            "definition": "a thing",
+            "sentence": "C'est une chose que j'adore."
+          },
+          {
+            "definition": "to look for",
+            "sentence": "Je cherche quelqu'un qui parle français."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Le garçon qui il joue est mon fils.",
+            "certo": "Le garçon qui joue est mon fils.",
+            "motivo": "Do not repeat the subject."
+          },
+          {
+            "errado": "C'est un endroit que on mange.",
+            "certo": "C'est un endroit où on mange.",
+            "motivo": "Place: «où»."
+          },
+          {
+            "errado": "Je cherche quelqu'un que parle français.",
+            "certo": "Je cherche quelqu'un qui parle français.",
+            "motivo": "Subject: «qui»."
+          },
+          {
+            "errado": "C'est la chose dont j'adore.",
+            "certo": "C'est la chose que j'adore.",
+            "motivo": "«Adorer» does not take «de»."
+          }
+        ],
+        "tag": "Relatives"
+      },
+      {
+        "tipo": "texto",
+        "min": 8,
+        "titulo": "La maison où j'ai grandi / The house where I grew up",
+        "ru": "La maison où j'ai grandi est dans un petit village. C'est une grande maison qui a un jardin avec beaucoup de fleurs. Mes grands-parents, qui vivaient là, m'ont appris à cuisiner. Le gâteau que ma grand-mère préparait était le meilleur du monde. Le jour où j'ai quitté le village, j'ai pleuré. C'est un endroit dont je me souviens toujours avec plaisir.",
+        "pt": "The house where I grew up is in a small village. It is a big house that has a garden with many flowers. My grandparents, who lived there, taught me to cook. The cake that my grandmother used to make was the best in the world. On the day I left the village, I cried. It is a place that I always remember with pleasure.",
+        "perguntas": [
+          {
+            "pergunta": "Où est la maison de l'auteur ?",
+            "resposta": "Dans un petit village."
+          },
+          {
+            "pergunta": "Qui a appris à cuisiner à l'auteur ?",
+            "resposta": "Ses grands-parents."
+          },
+          {
+            "pergunta": "Quel gâteau était le meilleur du monde ?",
+            "resposta": "Le gâteau que sa grand-mère préparait."
+          },
+          {
+            "pergunta": "Comment se souvient-il de cet endroit ?",
+            "resposta": "Avec plaisir."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe aloud the house where you grew up, with «où», «qui», «que» and «dont»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Join: «C'est un restaurant. J'ai mangé dans ce restaurant. Il est cher.»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-025.json",
+  "responsavel": null
+}

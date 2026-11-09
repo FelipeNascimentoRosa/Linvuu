@@ -1,4 +1,5 @@
 import { APK } from '../plataforma';
+import { CENTAVOS_USD, dolar } from '../config/planos';
 import type { Dicionario } from './pt-BR';
 
 const sessaoDe = (n: number) => `Lesson ${Math.ceil(n / 4)} · session ${(n - 1) % 4 + 1}`;
@@ -6,7 +7,7 @@ const sessaoDe = (n: number) => `Lesson ${Math.ceil(n / 4)} · session ${(n - 1)
 export const en: Dicionario = {
   meta: {
     titulo: 'Linvuu · Language courses for English speakers',
-    descricao: 'Brazilian Portuguese, Spanish, French, Italian, German and Russian courses for English speakers. Explanations in English, audio and exercises. Try 2 free lessons.',
+    descricao: 'Courses for English speakers: Brazilian Portuguese, French and Russian explained in English; German, Spanish and Italian in translation. Try 2 free lessons.',
   },
   geral: {
     pular: 'Skip to content', carregando: 'Loading…', inicio: 'Home', cursos: 'Courses', voltar: 'Back', voceEstaEm: 'You are here',
@@ -21,7 +22,7 @@ export const en: Dicionario = {
     sub: 'Get into the language from the very first session: dialogues, audio and speaking. Grammar and vocabulary come in when you need them, explained in plain English.',
     botao: 'Take the first 2 lessons free',
     verCursos: 'See the courses →',
-    nota: (aulas: string) => APK ? 'The first two lessons of every course are free.' : `No card needed to start. After lesson 2, R$ 139 a month (Brazilian reais; your bank converts). Courses: ${aulas}.`,
+    nota: (aulas: string) => APK ? 'The first two lessons of every course are free.' : `No card needed to start. After lesson 2, ${dolar(CENTAVOS_USD.mensal)} a month. Courses: ${aulas}.`,
     amostraRotulo: 'Sample session', amostraAbas: 'Language of the sample', amostraFrase: 'Hello. A coffee, please.', ouvir: 'Listen', inicioCaminho: 'Start of the path',
     amostraMeta: (min: number) => `Lesson 1 · session 1 of 4 · ${min} minutes`,
   },
@@ -45,7 +46,17 @@ export const en: Dicionario = {
   },
   carta: { kicker: 'Who makes Linvuu', titulo: 'Letter' },
   livros: { kicker: 'Books', titulo: 'The Linvuu collection', rotulo: 'Linvuu books', capa: (t: string) => `Cover of the ${t} book, Linvuu collection` },
-  avaliacoes: { kicker: 'Reviews', titulo: 'What our students say', vazio: 'The first reviews from real students are coming soon.', rotulo: 'Student reviews' },
+  avaliacoes: {
+    kicker: 'Reviews', titulo: 'What our students say', vazio: 'The first reviews from real students are coming soon.', rotulo: 'Student reviews',
+    media: (m: string, n: number) => `${m} out of 5 · ${n} ${n === 1 ? 'review' : 'reviews'}`, aulas: (n: number) => `${n} ${n === 1 ? 'session completed' : 'sessions completed'}`,
+    conhece: 'Knows the teacher', nota: 'Rating', estrelas: (n: number) => `${n} out of 5 stars`,
+    avalie: 'Review Linvuu', avalieIntro: (n: number) => `To leave a review, sign in and complete at least ${n} sessions of the free lessons. Each review is checked before it appears, and we show every approved one, critical ones included.`,
+    campoNota: 'Your rating', campoTexto: 'Your experience (20 to 600 characters, no links)', campoNome: 'Name shown on the site', campoRelacao: 'Your relationship with the teacher',
+    relNenhuma: 'I am a student with no personal relationship with the teacher', relConhece: 'I know the teacher personally',
+    aceite: 'I agree to show my name and text on the Linvuu site.', foto: 'Show my Google profile photo', enviar: 'Send review', enviando: 'Sending…',
+    entrar: 'Sign in to leave a review.', fazerAulas: (n: number) => `Complete at least ${n} sessions of the free lessons, signed in, to leave a review.`,
+    obrigado: 'We received your review. It will appear on the site after it is checked.', jaEnviou: 'You have already sent a review.', invalido: 'Check the rating, the text (no links) and the name.', erro: 'We could not send it right now. Please try again.',
+  },
   portuguesHome: {
     kicker: 'Brazilian Portuguese',
     titulo: 'Learn the Portuguese of Brazil',
@@ -56,29 +67,31 @@ export const en: Dicionario = {
   faqItens: [
     { p: 'Does it work if I have never studied the language?', r: 'Yes. Every course starts from zero, with the sounds and the writing system. If you already know some, open the course and pick a lesson by its title: the list shows the topic of every session.' },
     { p: 'What can I do at each level?', r: 'A1, from zero: introduce yourself, ask for what you need and understand everyday sentences. A2, daily life: talk about routines, shopping, the past and plans in simple sentences. B1, independent: get by when travelling, studying or working; tell stories and give your opinion. The levels follow the Common European Framework of Reference for Languages (CEFR). Linvuu issues its own certificate for each completed level; it does not replace official exams.' },
-    { p: 'How much does it cost?', r: APK ? 'In-app purchases are not available yet.' : 'The first 2 lessons of every course are free, with no card. After that the subscription costs R$ 139 a month (Brazilian reais; your card converts the currency), with every course included. Cancel any time and ask for a full refund within 7 days.' },
+    { p: 'How much does it cost?', r: APK ? 'In-app purchases are not available yet.' : 'The first 2 lessons of every course are free, with no card. After that the subscription costs ' + dolar(CENTAVOS_USD.mensal) + ' a month (US dollars), with every course included, or ' + dolar(CENTAVOS_USD.anual) + ' for a full year paid once. Cancel any time and ask for a full refund within 7 days.' },
     { p: 'How much time do I need each day?', r: 'Each lesson has 4 sessions of about 30 minutes. One hour a day is ideal, but a single session already counts. With an account your progress is saved and you can continue on any device.' },
     { p: 'Will I become fluent?', r: 'Linvuu gives you a method, practice and consistency; the level you reach depends on your study hours and on using the language for real. The courses are designed to take you from zero to a solid B1 foundation.' },
     { p: 'Are all lessons explained in English?', r: 'The Brazilian Portuguese course is written in English from the first to the last lesson. In the other courses, the explanations are being translated lesson by lesson: each course page shows how many lessons are already in English, and an untranslated session says so before you start it.' },
     { p: 'Is the audio real?', r: 'Every sentence has audio made with neural voices of the language, reviewed step by step. Where a file is still missing, the site uses your browser\'s voice and tells you on screen.' },
-    { p: 'Is the site available in other languages?', r: 'Yes. At the top of the page you can switch to Portuguese or Spanish: the site and the lesson explanations change language; the sentences, dialogues and audio of the language you study stay the same.' },
+    { p: 'Is the site available in other languages?', r: 'Yes, and each language lives on its own domain: English is at linvuu.com and Portuguese at linvuu.com.br. The sentences, dialogues and audio of the language you study stay the same on both.' },
   ],
   cta: { titulo: 'Your first session takes 30 minutes.', texto: 'Start now: 2 free lessons, no card, nothing to install.', primario: 'Start free', secundario: 'See all courses' },
   rodape: {
     eConj: 'and',
     criadaPor: 'Created by',
-    frase: 'Languages taught step by step, explained in English.', novidadesTitulo: 'Get updates', novidadesTexto: 'New lessons, languages and books. No spam.',
+    frase: 'Languages taught step by step, for English speakers.', novidadesTitulo: 'Get updates', novidadesTexto: 'New lessons, languages and books. No spam.',
     termos: 'Terms of use', privacidade: 'Privacy policy', idiomas: 'Languages', portugues: 'Brazilian Portuguese', contato: 'Contact', direitos: '© 2026 Linvuu. All rights reserved.',
   },
   newsletter: { email: 'Your e-mail', consentimento: 'I agree to receive e-mails from Linvuu.', botao: 'Sign me up', ok: 'Done. You will receive Linvuu updates.', erro: 'We could not sign you up right now. Write to', invalido: 'Enter a valid e-mail address.', semAceite: 'Tick the box to receive e-mails.', ocupado: 'Sending…', assunto: 'Updates, please' },
   card: { noAr: (n: number) => (n === 1 ? '1 lesson online' : `${n} lessons online`), preparo: 'In preparation', ate: 'zero to B1', cobertura: (a: number, b: number) => (a >= b ? 'All lessons in English' : `${a} of ${b} lessons in English`) },
   cursosPagina: {
+    emBreve: 'Coming soon, with explanations in English',
     titulo: 'All courses', buscar: 'Search', exemplo: 'E.g. German, French', contagem: (n: number) => (n === 1 ? '1 course' : `${n} courses`),
     vazio: (q: string) => `No course found for "${q}". Try another word or`, limpar: 'clear the search', portugues: 'Brazilian Portuguese, explained in English →',
+    avisoObraTitulo: '', avisoObraTexto: '',
   },
   cursoPagina: {
     continuarBtn: 'Continue', sessaoTitulo: (n: number, t: string) => `Session ${n}: ${t}`, continuar: (n: number, t: string) => `Continue with session ${n}: ${t}`, comecar: 'Start with session 1 (free)', feitas: (a: number, b: number) => `${a} of ${b} sessions completed`, concluida: 'completed', aulasNivel: (n: number) => `${n} lessons`, retomarKicker: (c: string) => `Continue ${c}`,
-    tituloSeo: (nome: string) => `${nome} for English speakers, from zero to B1`,
+    tituloSeo: (nome: string) => `Learn ${nome} online, explained in English`,
     fatos: ['~30-minute sessions', 'Starts from zero'], noAr: (a: number, b: number) => `${a} of ${b} sessions online`, gramatica: (nome: string) => `${nome} grammar →`,
     partida: (n: number) => `Your starting point: session ${n}`, sugerimos: (nivel: string, n: number, t: string) => `For level ${nivel}, we suggest starting at session ${n}: ${t}.`, irPara: (n: number) => `Go to session ${n}`,
     producao: 'Some lessons of this course are still in production. You can browse the whole course and see the topic of every session.',
@@ -131,14 +144,14 @@ export const en: Dicionario = {
     ],
     emMigracao: 'Written, being migrated', emBreve: 'Coming soon',
     paywallT: (n: number, c: string) => `You have finished the ${n} free lessons of ${c}.`,
-    paywallP: (p: string) => `To continue, subscribe to Linvuu: ${p} a month (Brazilian reais), every course included, cancel any time. If it is not for you, we refund you within 7 days.`,
+    paywallP: (p: string) => `To continue, subscribe to Linvuu: ${p} a month, every course included, cancel any time. If it is not for you, we refund you within 7 days.`,
     paywallErro: 'We could not confirm your subscription right now. Reload the page in a moment.', abrindo: 'Opening…', assinar: (p: string) => `Subscribe for ${p}/month`,
-    tres: (p: string) => `3 months for ${p} (card)`, trimPix: (p: string) => `3 months for ${p} by Pix (Brazilian bank account)`, anual: (p: string) => `Prefer a year? 12 months for ${p}`, exAluno: (p: string) => `Former student? ${p} a month for the first 6 months. The first 50 use code LINVUU50 at checkout.`, criar: 'Create an account to subscribe', jaTenho: 'I already have an account', termos: 'Terms and refunds',
+    tres: (p: string) => `3 months for ${p} (card)`, trimPix: (p: string) => `3 months for ${p} by Pix (Brazilian bank account)`, anual: (p: string) => `Prefer a year? 12 months for ${p}`, criar: 'Create an account to subscribe', jaTenho: 'I already have an account', termos: 'Terms and refunds',
     voltarBtn: 'Back', voceEstaEm: 'You are here', moeda: ' (Brazilian reais)',
   },
   gramaticaPagina: {
-    titulo: (nome: string) => `${nome} grammar`, tituloGeral: 'Grammar', descricao: (nome: string) => `${nome} grammar explained in English, topic by topic, with tables, examples and common mistakes.`,
-    lead: 'Every rule is explained in plain English first, with tables, examples and common mistakes. Each topic links to the session where you practise it.',
+    titulo: (nome: string) => `${nome} grammar`, tituloGeral: 'Grammar', descricao: (nome: string) => `${nome} grammar, topic by topic, with tables, examples and common mistakes.`,
+    lead: 'Every rule in short steps, with tables, examples and common mistakes. Where a topic has not been translated into English yet, it is shown in the course’s original language — and the page says so. Each topic links to the session where you practise it.',
     idioma: 'Language', categoria: 'Category', todas: 'All', erro: 'We could not load the grammar right now. Reload the page.',
     topicos: (n: number) => (n === 1 ? '1 topic' : `${n} topics`), aula: (n: number) => `Lesson ${n}`, praticar: (a: number, s: string) => `Practise it in lesson ${a}, session ${s} →`,
     bloqueados: (n: number) => `These are the topics of the first 2 lessons. The other ${n} topics are for subscribers.`,
@@ -146,14 +159,14 @@ export const en: Dicionario = {
   },
   assinatura: {
     titulo: 'Subscription', entreOu: ['To subscribe,', 'sign in', 'or', 'create your account'], gratis: (n: number) => `The first ${n} lessons of every course are free.`,
-    recebido: 'Payment received. If your subscription does not show up within a minute,', atualize: 'refresh', indisponivel: 'We could not check your subscription right now. Try again in a moment.',
+    recebido: 'You are back from checkout. Access usually unlocks within minutes. If your subscription does not show up within a minute,', garantiaMensal: 'Payment processed by Stripe. Linvuu never sees or stores your card number. Full refund within 7 days. Cancel any time.', garantiaUnico: 'Payment processed by Stripe. Linvuu never sees or stores your card number. Full refund within 7 days. One-time payment, no automatic renewal.', atualize: 'refresh', indisponivel: 'We could not check your subscription right now. Try again in a moment.',
     tresAtivo: 'Your 3-month access is active', ate: (d: string) => ` until ${d}`, semRenovacao: 'It does not renew automatically. Every course is unlocked.',
     ativa: 'Your subscription is active.', termina: (d: string) => ` It ends on ${d}.`, liberados: 'Every course is unlocked.', gerenciar: 'Manage or cancel',
-    reembolso: '7-day refund: write to', intro: (n: number) => `The first ${n} lessons of every course remain free. Every course included, with a full refund within 7 days. Prices are in Brazilian reais (R$); your card converts the currency. Choose how to pay:`,
+    reembolso: '7-day refund: write to', intro: (n: number) => `The first ${n} lessons of every course remain free. Every course included, with a full refund within 7 days. Prices are in US dollars. Choose how to pay:`,
     mensal: 'Monthly', porMes: ' a month', mensalTxt: 'Card, renews automatically. Cancel any time.', assinarBtn: 'Subscribe',
-    exAluno: (p: string) => `Former student? ${p} a month for the first 6 months. The first 50 use code LINVUU50 at checkout.`,
     tresMeses: '3 months', noPix: ' by Pix, one payment', pixTxt: '30% off when you pay by Pix (requires a Brazilian bank account). No automatic renewal. The QR code appears on the next screen.', pixBtn: 'Pay 3 months by Pix',
     cartaoBoleto: ' by card, one payment', tresBtn: 'Pay 3 months by card', dozeMeses: '12 months', anoTxt: 'A year of access to every course. No automatic renewal.', anoBtn: 'Pay 12 months',
+    menorPrecoMes: 'Lowest price per month', equivMes: (p: string) => `≈ ${p} per month`,
     escolhido: (p: string) => `Selected plan: ${p}.`, continuarPagamento: 'Continue to payment', semConta: 'To pay, you create a free account in the next step. The prices below are final.', jaTemConta: 'I already have an account: sign in',
     termos: 'Terms of use and refunds', moeda: ' (Brazilian reais)',
   },
@@ -170,7 +183,7 @@ export const en: Dicionario = {
     'auth/popup-blocked': 'Your browser blocked the Google window. Allow pop-ups and try again.', 'auth/network-request-failed': 'No connection. Check your internet and try again.',
     'auth/unauthorized-domain': 'This address has not been authorised for sign-in yet.', 'auth/operation-not-allowed': 'This sign-in method has not been enabled yet.', 'auth/admin-restricted-operation': 'Sign-up by e-mail is disabled right now.',
     'auth/password-does-not-meet-requirements': 'The password does not meet the security rules. Use upper and lower case letters, a number and a symbol.', 'auth/configuration-not-found': 'E-mail sign-in has not been configured yet.',
-    entreConta: 'Sign in to your account to continue.', pagamentoIndisponivel: 'Payments are unavailable right now. Try again in a moment.',
+    entreConta: 'Sign in to your account to continue.', jaTemAcesso: 'You already have active paid access. To change plans, use “Manage subscription” or wait for the current period to end.', pagamentoIndisponivel: 'Payments are unavailable right now. Try again in a moment.',
     padrao: 'We could not finish that. Try again.', compraApp: 'Purchases are not available in this app yet.',
   },
   naoEncontrada: { titulo: 'Page not found', texto: 'This address does not exist or has moved.', inicio: 'Back to the home page', cursos: 'See courses' },
@@ -180,7 +193,7 @@ export const en: Dicionario = {
     kicker: 'Brazilian Portuguese', h1: 'Brazilian Portuguese, explained in English',
     lead: 'Learn the Portuguese of Brazil from zero to B1, with every lesson explained in English. 62 lessons of four sessions each, with audio, dialogues, grammar and exercises.',
     comecar: 'Start lesson 1 free', ver: 'See all lessons',
-    nota: (s: number, p: string) => `The first 2 lessons (${s} sessions) are free. After that, ${p} a month (Brazilian reais; your card converts), every Linvuu course included.`,
+    nota: (s: number, p: string) => `The first 2 lessons (${s} sessions) are free. After that, ${p} a month, every Linvuu course included.`,
     niveisT: 'Levels', aulas: (a: string) => `Lessons ${a}`, comoT: 'How the course works', honestoT: 'Straight answers', planos: 'Plans',
     niveis: [
       { cod: 'A1', aulas: '1–18', d: 'You introduce yourself, order food, ask the way, talk about family, routine and plans, and read and say the sounds of Portuguese.' },
@@ -196,7 +209,7 @@ export const en: Dicionario = {
     honesto: [
       'A1, A2 and B1 describe what you can do. We do not promise fluency, a deadline or equivalence with Celpe-Bras or any other exam. Each completed level gives a certificate issued by Linvuu.',
       'The audio uses neural Brazilian Portuguese voices and is reviewed by teachers. If anything sounds wrong, tell us:',
-      'Prices are in Brazilian reais and your card converts the currency; Pix only works with a Brazilian bank account.',
+      'Prices are in US dollars, paid by card (Apple Pay and Google Pay where your device supports them).',
     ],
   },
   cursoBr: {
@@ -209,7 +222,7 @@ export const en: Dicionario = {
       { k: 'b1', titulo: 'B1 · Intermediate', resumo: 'Use the subjunctive, hypotheses, indirect speech and the passive; write formal e-mails; follow the news; handle a job interview, a bank and everyday life in Brazil.' },
     ],
   },
-  linguas: { pt: 'Portuguese', en: 'English', es: 'Spanish' } as Record<string, string>,
+  linguas: { pt: 'Portuguese', en: 'English'} as Record<string, string>,
   livro: { indisponivelIdioma: 'This book is written in Portuguese, for Portuguese speakers.' },
 };
 

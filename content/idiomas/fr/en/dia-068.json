@@ -1,0 +1,511 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 68,
+  "fase": 7,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Weather, seasons and comparisons: Review and practice for lesson 17",
+  "objetivo": "Lesson 17, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 17,
+    "titulo": "Weather, seasons and comparisons",
+    "objetivo": "Talk about the weather and the seasons, compare people and things with «plus… que», «moins… que», «aussi… que», and use «meilleur» and «mieux».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 17",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Il fait froid",
+            "opcoes": [
+              "Il fait froid",
+              "Il fait chaud",
+              "Il pleut"
+            ],
+            "gabarito": "Il fait froid",
+            "explicacao": "Listen to «froid».",
+            "id": "fr-017-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Il est plus grand que moi",
+            "opcoes": [
+              "Il est plus grand que moi",
+              "Il est moins grand que moi",
+              "Il est aussi grand que moi"
+            ],
+            "gabarito": "Il est plus grand que moi",
+            "explicacao": "Listen to «plus».",
+            "id": "fr-017-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "C'est le meilleur restaurant",
+            "opcoes": [
+              "C'est le meilleur restaurant",
+              "C'est le moins cher restaurant",
+              "C'est un bon restaurant"
+            ],
+            "gabarito": "C'est le meilleur restaurant",
+            "explicacao": "Listen to «meilleur».",
+            "id": "fr-017-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Il pleut en automne",
+            "respostaEsperada": "Il pleut en automne",
+            "explicacao": "Write: Il pleut en automne.",
+            "id": "fr-017-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Elle est plus grande que lui",
+            "respostaEsperada": "Elle est plus grande que lui",
+            "explicacao": "Write: Elle est plus grande que lui.",
+            "id": "fr-017-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «At my place, it's hot all year round. But I prefer autumn.»",
+            "opcoes": [
+              "moi,",
+              "fait",
+              "Chez",
+              "l'automne.",
+              "Mais",
+              "j'aime",
+              "mieux",
+              "toute",
+              "l'année.",
+              "chaud",
+              "il"
+            ],
+            "gabarito": "Chez moi, il fait chaud toute l'année. Mais j'aime mieux l'automne.",
+            "explicacao": "Write: Chez moi, il fait chaud toute l'année. Mais j'aime mieux l'automne.",
+            "id": "fr-017-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Il parle mieux que moi",
+            "respostaEsperada": "Il parle mieux que moi",
+            "explicacao": "Write: Il parle mieux que moi.",
+            "id": "fr-017-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Quel temps fait-il chez toi en ce moment ?",
+            "respostaEsperada": "Quel temps fait-il chez toi en ce moment ?",
+            "explicacao": "What is the weather like at your place right now?",
+            "id": "fr-017-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«It's hot» in French:",
+            "opcoes": [
+              "Il fait chaud.",
+              "Il est chaud.",
+              "Il a chaud."
+            ],
+            "gabarito": "Il fait chaud.",
+            "explicacao": "Weather: «faire».",
+            "id": "fr-017-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je voyage en été.",
+              "Je voyage au été.",
+              "Je voyage à l'été."
+            ],
+            "gabarito": "Je voyage en été.",
+            "explicacao": "Summer: «en».",
+            "id": "fr-017-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Il est plus grand que moi.",
+              "Il est plus grand de moi.",
+              "Il est plus grand que je."
+            ],
+            "gabarito": "Il est plus grand que moi.",
+            "explicacao": "Stressed pronoun after «que».",
+            "id": "fr-017-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Chez moi, il fait chaud toute l'année. Mais j'aime mieux l'automne.",
+            "respostaEsperada": "Chez moi, il fait chaud toute l'année. Mais j'aime mieux l'automne.",
+            "explicacao": "At my place, it's hot all year round. But I prefer autumn.",
+            "id": "fr-017-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Il parle mieux.",
+              "Il parle meilleur.",
+              "Il parle plus bien."
+            ],
+            "gabarito": "Il parle mieux.",
+            "explicacao": "Adverb: «mieux».",
+            "id": "fr-017-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ce gâteau est ___ que l'autre. (better)",
+            "opcoes": [
+              "meilleur",
+              "mieux",
+              "plus bon"
+            ],
+            "gabarito": "meilleur",
+            "explicacao": "Adjective.",
+            "id": "fr-017-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle est ___ grande que lui. (mais)",
+            "opcoes": [
+              "plus",
+              "moins",
+              "aussi"
+            ],
+            "gabarito": "plus",
+            "explicacao": "Superiority.",
+            "id": "fr-017-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Tu veux visiter Paris en automne ?",
+            "respostaEsperada": "Tu veux visiter Paris en automne ?",
+            "explicacao": "Would you like to visit Paris in autumn?",
+            "id": "fr-017-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il a ___ livres que moi. (mais)",
+            "opcoes": [
+              "plus de",
+              "plus",
+              "plus des"
+            ],
+            "gabarito": "plus de",
+            "explicacao": "«De» before the noun.",
+            "id": "fr-017-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Me too! It's the best season for going for walks.»",
+            "opcoes": [
+              "saison",
+              "meilleure",
+              "C'est",
+              "la",
+              "se",
+              "!",
+              "aussi",
+              "pour",
+              "promener.",
+              "Moi"
+            ],
+            "gabarito": "Moi aussi ! C'est la meilleure saison pour se promener.",
+            "explicacao": "Write: Moi aussi ! C'est la meilleure saison pour se promener.",
+            "id": "fr-017-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il ___ en hiver. (it snows)",
+            "opcoes": [
+              "neige",
+              "neiger",
+              "neigé"
+            ],
+            "gabarito": "neige",
+            "explicacao": "Present tense.",
+            "id": "fr-017-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Il fait beau aujourd'hui.»",
+            "opcoes": [
+              "Il",
+              "fait",
+              "beau",
+              "aujourd'hui"
+            ],
+            "gabarito": "Il fait beau aujourd'hui.",
+            "explicacao": "Weather.",
+            "id": "fr-017-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Je suis aussi fatigué que toi.»",
+            "opcoes": [
+              "Je",
+              "suis",
+              "aussi",
+              "fatigué",
+              "que",
+              "toi"
+            ],
+            "gabarito": "Je suis aussi fatigué que toi.",
+            "explicacao": "aussi… que.",
+            "id": "fr-017-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: It is cold and raining today. He is taller than me. This is the best restaurant.",
+            "respostaEsperada": "Aujourd'hui, il fait froid et il pleut. Il est plus grand que moi. C'est le meilleur restaurant.",
+            "id": "fr-017-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Moi aussi ! C'est la meilleure saison pour se promener.",
+            "respostaEsperada": "Moi aussi ! C'est la meilleure saison pour se promener.",
+            "explicacao": "Me too! It's the best season for going for walks.",
+            "id": "fr-017-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il ___ beau aujourd'hui. (it is)",
+            "opcoes": [
+              "est",
+              "a",
+              "fait"
+            ],
+            "gabarito": "fait",
+            "explicacao": "The weather uses «faire»: «il fait beau».",
+            "id": "fr-017-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "il fait beau",
+            "respostaEsperada": "il fait beau",
+            "explicacao": "it's nice weather",
+            "id": "fr-017-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il fait plus chaud ___ en France. (do que)",
+            "opcoes": [
+              "qu'",
+              "de",
+              "du"
+            ],
+            "gabarito": "qu'",
+            "explicacao": "Comparison uses «que» (qu' before a vowel).",
+            "id": "fr-017-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle est aussi gentille ___ lui. (as)",
+            "opcoes": [
+              "comme",
+              "que",
+              "de"
+            ],
+            "gabarito": "que",
+            "explicacao": "«Aussi… que» = as… as.",
+            "id": "fr-017-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "C'est elle qui chante le ___ . (best)",
+            "opcoes": [
+              "meilleur",
+              "bien",
+              "mieux"
+            ],
+            "gabarito": "mieux",
+            "explicacao": "«Bien» → «mieux» (adverb).",
+            "id": "fr-017-e21"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Yes, gladly. There are fewer tourists than in summer.»",
+            "opcoes": [
+              "qu'en",
+              "de",
+              "touristes",
+              "y",
+              "a",
+              "avec",
+              "Il",
+              "été.",
+              "plaisir.",
+              "moins",
+              "Oui,"
+            ],
+            "gabarito": "Oui, avec plaisir. Il y a moins de touristes qu'en été.",
+            "explicacao": "Write: Oui, avec plaisir. Il y a moins de touristes qu'en été.",
+            "id": "fr-017-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Paris est la ___ grande ville de France. (mais)",
+            "opcoes": [
+              "plus",
+              "très",
+              "mieux"
+            ],
+            "gabarito": "plus",
+            "explicacao": "Superlative: «la plus grande».",
+            "id": "fr-017-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «It is raining»?",
+            "opcoes": [
+              "Il est pluie.",
+              "Il pleut.",
+              "Il fait pleut."
+            ],
+            "gabarito": "Il pleut.",
+            "explicacao": "«Pleuvoir» is impersonal: «il pleut».",
+            "id": "fr-017-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which expression is correct?",
+            "opcoes": [
+              "au hiver",
+              "dans hiver",
+              "en hiver"
+            ],
+            "gabarito": "en hiver",
+            "explicacao": "«Hiver» takes «en»; only «printemps» uses «au».",
+            "id": "fr-017-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "il fait chaud",
+            "respostaEsperada": "il fait chaud",
+            "explicacao": "it's hot",
+            "id": "fr-017-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the feminine of «meilleur»?",
+            "opcoes": [
+              "meilleure",
+              "mieux",
+              "meilleur"
+            ],
+            "gabarito": "meilleure",
+            "explicacao": "«Meilleur» agrees: «meilleure».",
+            "id": "fr-017-e25"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Oui, avec plaisir. Il y a moins de touristes qu'en été.",
+            "respostaEsperada": "Oui, avec plaisir. Il y a moins de touristes qu'en été.",
+            "explicacao": "Yes, gladly. There are fewer tourists than in summer.",
+            "id": "fr-017-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Il mange moins de moi.",
+              "Il mange moins que moi.",
+              "Il mange moins que je."
+            ],
+            "gabarito": "Il mange moins que moi.",
+            "explicacao": "After «que», the stressed pronoun is used.",
+            "id": "fr-017-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «It is hot in summer.»",
+            "opcoes": [
+              "Il",
+              "fait",
+              "chaud",
+              "en",
+              "été"
+            ],
+            "gabarito": "Il fait chaud en été.",
+            "explicacao": "«En été», with no article.",
+            "id": "fr-017-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «This city is bigger than Lyon.»",
+            "opcoes": [
+              "Cette",
+              "ville",
+              "est",
+              "plus",
+              "grande",
+              "que",
+              "Lyon"
+            ],
+            "gabarito": "Cette ville est plus grande que Lyon.",
+            "explicacao": "Adjective in the feminine: «grande».",
+            "id": "fr-017-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: In summer it is hot. In winter it snows.",
+            "respostaEsperada": "En été, il fait chaud. En hiver, il neige.",
+            "id": "fr-017-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French (use «tu»): Marie is taller than me. He speaks better than you.",
+            "respostaEsperada": "Marie est plus grande que moi. Il parle mieux que toi.",
+            "id": "fr-017-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Speak for 1 minute about your favorite season and compare it with another."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Describe the weather and compare two seasons."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-017.json",
+  "responsavel": null
+}

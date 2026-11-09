@@ -1,0 +1,511 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 216,
+  "fase": 22,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Pronouns: full order and review: Review and practice for lesson 54",
+  "objetivo": "Lesson 54, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 54,
+    "titulo": "Pronouns: full order and review",
+    "objetivo": "Master the order of pronouns (me, te, le, lui, y, en), use them in the imperative and in the passé composé, and avoid the most common mistakes.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 54",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je le lui ai donné",
+            "opcoes": [
+              "Je le lui ai donné",
+              "Je lui le ai donné",
+              "Je lui ai donné le"
+            ],
+            "gabarito": "Je le lui ai donné",
+            "explicacao": "Listen to «le lui».",
+            "id": "fr-054-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Donne-le-moi",
+            "opcoes": [
+              "Donne-le-moi",
+              "Donne-moi-le",
+              "Donne-me-le"
+            ],
+            "gabarito": "Donne-le-moi",
+            "explicacao": "Imperative.",
+            "id": "fr-054-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Il y en a trois",
+            "opcoes": [
+              "Il y en a trois",
+              "Il en y a trois",
+              "Il y a trois"
+            ],
+            "gabarito": "Il y en a trois",
+            "explicacao": "Listen to «y en».",
+            "id": "fr-054-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je ne te le donne pas",
+            "respostaEsperada": "Je ne te le donne pas",
+            "explicacao": "Write: Je ne te le donne pas.",
+            "id": "fr-054-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je vais te le dire",
+            "respostaEsperada": "Je vais te le dire",
+            "explicacao": "Write: Je vais te le dire.",
+            "id": "fr-054-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Marc, did you send the file to the director?»",
+            "opcoes": [
+              "Marc,",
+              "as",
+              "directrice",
+              "dossier",
+              "à",
+              "le",
+              "la",
+              "?",
+              "envoyé",
+              "tu"
+            ],
+            "gabarito": "Marc, tu as envoyé le dossier à la directrice ?",
+            "explicacao": "Write: Marc, tu as envoyé le dossier à la directrice ?",
+            "id": "fr-054-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je pense à lui",
+            "respostaEsperada": "Je pense à lui",
+            "explicacao": "Write: Je pense à lui.",
+            "id": "fr-054-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Oui, je le lui ai envoyé hier soir.",
+            "respostaEsperada": "Oui, je le lui ai envoyé hier soir.",
+            "explicacao": "Yes, I sent it to her last night.",
+            "id": "fr-054-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "To replace «à Paul»:",
+            "opcoes": [
+              "lui",
+              "y",
+              "en"
+            ],
+            "gabarito": "lui",
+            "explicacao": "Person with à.",
+            "id": "fr-054-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "To replace «de mon voyage»:",
+            "opcoes": [
+              "en",
+              "y",
+              "lui"
+            ],
+            "gabarito": "en",
+            "explicacao": "De + thing.",
+            "id": "fr-054-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je le lui donne.",
+              "Je lui le donne.",
+              "Je le donne lui."
+            ],
+            "gabarito": "Je le lui donne.",
+            "explicacao": "Order.",
+            "id": "fr-054-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Marc, tu as envoyé le dossier à la directrice ?",
+            "respostaEsperada": "Marc, tu as envoyé le dossier à la directrice ?",
+            "explicacao": "Marc, did you send the file to the director?",
+            "id": "fr-054-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Correct negative imperative:",
+            "opcoes": [
+              "Ne me le donne pas !",
+              "Ne le me donne pas !",
+              "Ne donne-me-le pas !"
+            ],
+            "gabarito": "Ne me le donne pas !",
+            "explicacao": "Normal order.",
+            "id": "fr-054-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je pense à Paul → Je pense à ___ .",
+            "opcoes": [
+              "lui",
+              "y",
+              "en"
+            ],
+            "gabarito": "lui",
+            "explicacao": "Person.",
+            "id": "fr-054-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je vais à Paris → J' ___ vais.",
+            "opcoes": [
+              "y",
+              "en",
+              "lui"
+            ],
+            "gabarito": "y",
+            "explicacao": "Place.",
+            "id": "fr-054-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Pas encore. Je vais les lui montrer demain.",
+            "respostaEsperada": "Pas encore. Je vais les lui montrer demain.",
+            "explicacao": "Not yet. I will show them to him tomorrow.",
+            "id": "fr-054-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Du café ? J' ___ veux.",
+            "opcoes": [
+              "en",
+              "y",
+              "le"
+            ],
+            "gabarito": "en",
+            "explicacao": "Partitive.",
+            "id": "fr-054-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «And the photos? Did you show them to the client?»",
+            "opcoes": [
+              "?",
+              "?",
+              "Tu",
+              "au",
+              "les",
+              "Et",
+              "les",
+              "as",
+              "client",
+              "montrées",
+              "photos"
+            ],
+            "gabarito": "Et les photos ? Tu les as montrées au client ?",
+            "explicacao": "Write: Et les photos ? Tu les as montrées au client ?",
+            "id": "fr-054-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je ___ ai prêté mon livre. (to him)",
+            "opcoes": [
+              "lui",
+              "leur",
+              "y"
+            ],
+            "gabarito": "lui",
+            "explicacao": "Singular.",
+            "id": "fr-054-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Je le lui ai donné.»",
+            "opcoes": [
+              "Je",
+              "le",
+              "lui",
+              "ai",
+              "donné"
+            ],
+            "gabarito": "Je le lui ai donné.",
+            "explicacao": "Pronoun block.",
+            "id": "fr-054-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Il y en a trois.»",
+            "opcoes": [
+              "Il",
+              "y",
+              "en",
+              "a",
+              "trois"
+            ],
+            "gabarito": "Il y en a trois.",
+            "explicacao": "Y before en.",
+            "id": "fr-054-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I sent it to her yesterday. Bring me one, please. I think about him.",
+            "respostaEsperada": "Je le lui ai envoyé hier. Apporte-m'en un, s'il te plaît. Je pense à lui.",
+            "id": "fr-054-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Et les photos ? Tu les as montrées au client ?",
+            "respostaEsperada": "Et les photos ? Tu les as montrées au client ?",
+            "explicacao": "And the photos? Did you show them to the client?",
+            "id": "fr-054-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je ___ envoie le dossier. (to them)",
+            "opcoes": [
+              "leur",
+              "lui",
+              "les"
+            ],
+            "gabarito": "leur",
+            "explicacao": "Plural indirect object: «leur».",
+            "id": "fr-054-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "D'accord. Et du café, tu en veux ?",
+            "respostaEsperada": "D'accord. Et du café, tu en veux ?",
+            "explicacao": "Great. And coffee, do you want some?",
+            "id": "fr-054-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Des pommes ? Il y ___ a trois.",
+            "opcoes": [
+              "y",
+              "en",
+              "le"
+            ],
+            "gabarito": "en",
+            "explicacao": "«En» replaces the quantified noun.",
+            "id": "fr-054-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Donne-___-moi ! (the book)",
+            "opcoes": [
+              "lui",
+              "y",
+              "le"
+            ],
+            "gabarito": "le",
+            "explicacao": "In the affirmative imperative, the direct object comes first: «donne-le-moi».",
+            "id": "fr-054-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je me ___ souviens. (of it)",
+            "opcoes": [
+              "en",
+              "y",
+              "le"
+            ],
+            "gabarito": "en",
+            "explicacao": "«Se souvenir de» takes «en».",
+            "id": "fr-054-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «moi» mean?",
+            "audio": "moi",
+            "opcoes": [
+              "we",
+              "me",
+              "mostrar",
+              "me (stressed)"
+            ],
+            "gabarito": "me (stressed)",
+            "explicacao": "«moi» = me (stressed).",
+            "id": "fr-054-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je m'___ intéresse. (in it)",
+            "opcoes": [
+              "en",
+              "y",
+              "le"
+            ],
+            "gabarito": "y",
+            "explicacao": "«S'intéresser à» takes «y».",
+            "id": "fr-054-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Il les me envoie.",
+              "Il m'les envoie.",
+              "Il me les envoie."
+            ],
+            "gabarito": "Il me les envoie.",
+            "explicacao": "With «me», the indirect comes before the direct.",
+            "id": "fr-054-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct in the passé composé?",
+            "opcoes": [
+              "Je le lui ai prêté.",
+              "Je lui le ai prêté.",
+              "Je ai le lui prêté."
+            ],
+            "gabarito": "Je le lui ai prêté.",
+            "explicacao": "The pronoun block comes before the auxiliary.",
+            "id": "fr-054-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Oui, apporte-m'en un, s'il te plaît !",
+            "respostaEsperada": "Oui, apporte-m'en un, s'il te plaît !",
+            "explicacao": "Yes, bring me one, please!",
+            "id": "fr-054-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the order in the affirmative imperative?",
+            "opcoes": [
+              "Donnez-leur-les !",
+              "Donnez-les-leur !",
+              "Leur donnez-les !"
+            ],
+            "gabarito": "Donnez-les-leur !",
+            "explicacao": "Verb + direct + indirect.",
+            "id": "fr-054-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «nous» mean?",
+            "audio": "nous",
+            "opcoes": [
+              "we",
+              "to give back",
+              "me",
+              "you (stressed pronoun)"
+            ],
+            "gabarito": "we",
+            "explicacao": "«nous» = we, us.",
+            "id": "fr-054-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "To replace «de Paul» (a person), which form?",
+            "opcoes": [
+              "Je parle y.",
+              "Je lui parle.",
+              "Je parle de lui."
+            ],
+            "gabarito": "Je parle de lui.",
+            "explicacao": "Person with «de»: stressed pronoun.",
+            "id": "fr-054-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «I am going to tell you that tomorrow.»",
+            "opcoes": [
+              "Je",
+              "vais",
+              "te",
+              "le",
+              "dire",
+              "demain"
+            ],
+            "gabarito": "Je vais te le dire demain.",
+            "explicacao": "The block comes before the infinitive.",
+            "id": "fr-054-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «He sent them to me yesterday.»",
+            "opcoes": [
+              "Il",
+              "me",
+              "les",
+              "a",
+              "envoyés",
+              "hier"
+            ],
+            "gabarito": "Il me les a envoyés hier.",
+            "explicacao": "The participle agrees with the direct object «les».",
+            "id": "fr-054-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I give it to you. I do not lend it to her.",
+            "respostaEsperada": "Je te le donne. Je ne le lui prête pas.",
+            "id": "fr-054-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I am going there tomorrow. I am talking about it (my project).",
+            "respostaEsperada": "J'y vais demain. J'en parle.",
+            "id": "fr-054-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Speak for 1 minute about an object, using at least six pronouns."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Replace with pronouns: «J'ai prêté le livre à Marc.»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-054.json",
+  "responsavel": null
+}

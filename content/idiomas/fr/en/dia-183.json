@@ -1,0 +1,184 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 183,
+  "fase": 19,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Subjunctive: emotions, doubts and conjunctions: Subjunctive or indicative?",
+  "objetivo": "Lesson 46, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 46,
+    "titulo": "Subjunctive: emotions, doubts and conjunctions",
+    "objetivo": "Use the subjonctif after verbs of emotion, doubt and negative opinion, and after conjunctions such as «bien que», «avant que», «à moins que» and «sans que»; tell the subjunctive from the indicative.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Subjunctive or indicative?",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "certain",
+            "translit": "sehr-TAN",
+            "pt": "",
+            "en": "",
+            "audio": "certain"
+          },
+          {
+            "ru": "sûr",
+            "translit": "SEWR",
+            "pt": "",
+            "en": "",
+            "audio": "sûr"
+          },
+          {
+            "ru": "probable",
+            "translit": "proh-bah-BLUH",
+            "pt": "",
+            "en": "",
+            "audio": "probable"
+          },
+          {
+            "ru": "évident",
+            "translit": "ay-vee-DAHN",
+            "pt": "",
+            "en": "",
+            "audio": "évident"
+          },
+          {
+            "ru": "douteux",
+            "translit": "doo-TUH",
+            "pt": "",
+            "en": "",
+            "audio": "douteux"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "A practical rule for choosing",
+        "explicacao": "STEP 1: certainty and fact → indicative: «Je suis sûr que», «Il est évident que», «Il est certain que», «Je sais que», «Il est probable que», «J'espère que». STEP 2: doubt, wish, emotion, obligation, possibility → subjunctive: «Je doute que», «Je veux que», «Je suis content que», «Il faut que», «Il est possible que». STEP 3: negating certainty turns it into doubt: «Je suis sûr qu'il vient» (ind.) × «Je ne suis pas sûr qu'il vienne» (subj.). STEP 4: test: if you state it as a fact, indicative; if you doubt, wish or feel, subjunctive. STEP 5: practical tip: learn by blocks: «il faut que, vouloir que, pour que, bien que, avant que, jusqu'à ce que, je doute que» → subjunctive.",
+        "comparacao": "do not be guided by the English wording: «it is probable that» and “it is possible that” look alike, but in French «il est probable que» takes the indicative, while «il est possible que» takes the subjunctive. Learn these two blocks by heart.",
+        "tabela": [
+          {
+            "trigger": "je suis sûr que",
+            "mood": "indicative",
+            "example": "Je suis sûr qu'il viendra."
+          },
+          {
+            "trigger": "je ne suis pas sûr que",
+            "mood": "subjunctive",
+            "example": "Je ne suis pas sûr qu'il vienne."
+          },
+          {
+            "trigger": "il est probable que",
+            "mood": "indicative",
+            "example": "Il est probable qu'il viendra."
+          },
+          {
+            "trigger": "il est possible que",
+            "mood": "subjunctive",
+            "example": "Il est possible qu'il vienne."
+          },
+          {
+            "trigger": "j'espère que",
+            "mood": "indicative",
+            "example": "J'espère qu'il viendra."
+          },
+          {
+            "trigger": "je souhaite que",
+            "mood": "subjunctive",
+            "example": "Je souhaite qu'il vienne."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Il est probable qu'il vienne.",
+            "certo": "Il est probable qu'il viendra.",
+            "motivo": "Probability: indicative."
+          },
+          {
+            "errado": "Je ne suis pas sûr qu'il viendra.",
+            "certo": "Je ne suis pas sûr qu'il vienne.",
+            "motivo": "Doubt: subjunctive."
+          },
+          {
+            "errado": "J'espère qu'il vienne.",
+            "certo": "J'espère qu'il viendra.",
+            "motivo": "«Espérer que» + indicative."
+          },
+          {
+            "errado": "Je souhaite qu'il viendra.",
+            "certo": "Je souhaite qu'il vienne.",
+            "motivo": "Wish: subjunctive."
+          }
+        ],
+        "tag": "Subjunctive"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "Un projet de voyage / A travel plan",
+        "contexto": "Manon and Antoine talk about a trip.",
+        "linhas": [
+          {
+            "personagem": "Manon",
+            "ru": "— Je suis ravie que tu puisses venir avec nous en Espagne !",
+            "en": "— I'm delighted that you can come with us to Spain!",
+            "audio": "Je suis ravie que tu puisses venir avec nous en Espagne !"
+          },
+          {
+            "personagem": "Antoine",
+            "ru": "— Moi aussi, bien que je doive finir mon travail avant de partir.",
+            "en": "— Me too, although I have to finish my work before leaving.",
+            "audio": "Moi aussi, bien que je doive finir mon travail avant de partir."
+          },
+          {
+            "personagem": "Manon",
+            "ru": "— J'espère que tu auras fini avant la fin du mois.",
+            "en": "— I hope you will have finished before the end of the month.",
+            "audio": "J'espère que tu auras fini avant la fin du mois."
+          },
+          {
+            "personagem": "Antoine",
+            "ru": "— Je pense que oui, à moins qu'il y ait un problème imprévu.",
+            "en": "— I think so, unless something unexpected comes up.",
+            "audio": "Je pense que oui, à moins qu'il y ait un problème imprévu."
+          },
+          {
+            "personagem": "Manon",
+            "ru": "— Il est possible qu'on parte une semaine plus tôt, si les billets sont moins chers.",
+            "en": "— It's possible that we will leave a week earlier, if the tickets are cheaper.",
+            "audio": "Il est possible qu'on parte une semaine plus tôt, si les billets sont moins chers."
+          },
+          {
+            "personagem": "Antoine",
+            "ru": "— Parfait ! Je ne pense pas que ce soit un problème pour moi.",
+            "en": "— Perfect! I don't think that's a problem for me.",
+            "audio": "Parfait ! Je ne pense pas que ce soit un problème pour moi."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Plan a trip with a friend aloud, using the subjunctive and the indicative correctly."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Choose: «J'espère que tu ___ (venir). Je doute qu'il ___ (venir).»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-046.json",
+  "responsavel": null
+}

@@ -1,0 +1,137 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 94,
+  "fase": 10,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "The conditional: requests, advice and hypotheses: Advice and hypotheses",
+  "objetivo": "Lesson 24, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 24,
+    "titulo": "The conditional: requests, advice and hypotheses",
+    "objetivo": "Form the conditional, make polite requests, give advice and talk about hypotheses with «si» + imparfait.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Advice and hypotheses",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "conseiller",
+            "translit": "kohn-seh-YAY",
+            "pt": "",
+            "en": "",
+            "audio": "conseiller"
+          },
+          {
+            "ru": "essayer",
+            "translit": "eh-seh-YAY",
+            "pt": "",
+            "en": "",
+            "audio": "essayer"
+          },
+          {
+            "ru": "gagner",
+            "translit": "gah-NYAY",
+            "pt": "",
+            "en": "",
+            "audio": "gagner"
+          },
+          {
+            "ru": "changer",
+            "translit": "shahn-ZHAY",
+            "pt": "",
+            "en": "",
+            "audio": "changer"
+          },
+          {
+            "ru": "si j'étais riche",
+            "translit": "see zhay-teh REESH",
+            "pt": "",
+            "en": "",
+            "audio": "si j'étais riche"
+          },
+          {
+            "ru": "à ta place",
+            "translit": "ah tah PLAHS",
+            "pt": "",
+            "en": "",
+            "audio": "à ta place"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Si + imparfait, conditional",
+        "explicacao": "STEP 1: to imagine an unreal or unlikely situation: «si» + imparfait, result in the conditional: «Si j'avais de l'argent, je voyagerais.» (If I had money, I would travel.) STEP 2: the order can be reversed: «Je voyagerais si j'avais de l'argent.» STEP 3: NEVER use the conditional after «si»: «Si j'aurais» is a mistake. STEP 4: «si» + imparfait, in the sense of a suggestion: «Si on allait au cinéma ?» (what if we went?) STEP 5: to give advice, «à ta place, je + conditional»: «À ta place, je dormirais plus.» STEP 6: to talk about a dream: «Je voudrais habiter à la mer.» «J'aimerais parler français.» STEP 7: three types of «si»: «Si tu viens, nous irons» (likely: present + future). «Si tu venais, nous irions» (unlikely: imparfait + conditional). «Si tu étais venu, nous serions allés» (past: B1). STEP 8: question: «Que ferais-tu si tu gagnais au loto ?»",
+        "comparacao": "In English: «if I had, I would do». French does exactly the same with «si» + imparfait + conditional. The typical mistake is to put the conditional after «si» as well, as some English speakers do in speech ('if I would have').",
+        "tabela": [
+          {
+            "tipo": "provável",
+            "structure": "si + present, future",
+            "example": "Si tu viens, nous irons au cinéma."
+          },
+          {
+            "tipo": "improvável",
+            "structure": "si + imparfait, conditional",
+            "example": "Si j'avais de l'argent, je voyagerais."
+          },
+          {
+            "tipo": "conselho",
+            "structure": "if I were you, conditional",
+            "example": "À ta place, je dormirais."
+          },
+          {
+            "tipo": "sugestão",
+            "structure": "si + imparfait ?",
+            "example": "Si on allait au cinéma ?"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Si j'aurais de l'argent, je voyagerais.",
+            "certo": "Si j'avais de l'argent, je voyagerais.",
+            "motivo": "After «si», imparfait."
+          },
+          {
+            "errado": "Si j'avais de l'argent, je voyagerai.",
+            "certo": "Si j'avais de l'argent, je voyagerais.",
+            "motivo": "Result: conditional."
+          },
+          {
+            "errado": "À ta place, je dors plus.",
+            "certo": "À ta place, je dormirais plus.",
+            "motivo": "Advice: conditional."
+          },
+          {
+            "errado": "Si tu viennes, nous irions.",
+            "certo": "Si tu venais, nous irions.",
+            "motivo": "Imparfait after «si»."
+          }
+        ],
+        "tag": "Conditional"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Say aloud eight sentences: «Si j'avais… , je… » about what you would do if you won the lottery."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Conjugate aloud «aller, faire, pouvoir, vouloir» in the conditional with «je»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-024.json",
+  "responsavel": null
+}

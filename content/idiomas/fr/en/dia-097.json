@@ -1,0 +1,161 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 97,
+  "fase": 10,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Relative pronouns: qui, que, où, dont: Qui e que",
+  "objetivo": "Lesson 25, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 25,
+    "titulo": "Relative pronouns: qui, que, où, dont",
+    "objetivo": "Link sentences with «qui», «que», «où» and «dont» to describe people, things and places without repeating words.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Qui e que",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "qui",
+            "translit": "KEE",
+            "pt": "",
+            "en": "",
+            "audio": "qui"
+          },
+          {
+            "ru": "que",
+            "translit": "KUH",
+            "pt": "",
+            "en": "",
+            "audio": "que"
+          },
+          {
+            "ru": "où",
+            "translit": "OO",
+            "pt": "",
+            "en": "",
+            "audio": "où"
+          },
+          {
+            "ru": "dont",
+            "translit": "DOHN",
+            "pt": "",
+            "en": "",
+            "audio": "dont"
+          },
+          {
+            "ru": "celui qui",
+            "translit": "suh-lwee KEE",
+            "pt": "",
+            "en": "",
+            "audio": "celui qui"
+          },
+          {
+            "ru": "ce qui",
+            "translit": "suh KEE",
+            "pt": "",
+            "en": "",
+            "audio": "ce qui"
+          },
+          {
+            "ru": "ce que",
+            "translit": "suh KUH",
+            "pt": "",
+            "en": "",
+            "audio": "ce que"
+          },
+          {
+            "ru": "une personne qui",
+            "translit": "ewn pehr-sohn KEE",
+            "pt": "",
+            "en": "",
+            "audio": "une personne qui"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "L'homme qui parle, le livre que je lis",
+        "explicacao": "STEP 1: the relative pronoun links two sentences: «J'ai un ami. Il habite à Paris.» → «J'ai un ami qui habite à Paris.» STEP 2: «qui» replaces the SUBJECT and comes before the verb: «L'homme qui parle est mon père.» STEP 3: «que» replaces the DIRECT OBJECT and comes before a subject: «Le livre que je lis est intéressant.» STEP 4: «que» becomes «qu'» before a vowel; «qui» never elides: «Le film qu'il regarde.» «L'ami qui arrive.» STEP 5: in the passé composé, the participle agrees with the direct object that comes before: «La robe que j'ai achetée.» «Les livres que j'ai lus.» STEP 6: practical test: after «qui» comes a verb; after «que» comes a subject (pronoun or noun). STEP 7: «ce qui» and «ce que» mean «what» when there is no word before them: «Je ne sais pas ce qui se passe.» «Dis-moi ce que tu veux.» STEP 8: people and things use the same relatives: «Le garçon qui joue», «Le jeu qui est cassé».",
+        "comparacao": "In English «who», «which» and «that» cover both subject and object ('the man who speaks', 'the book that I read'), and we often drop the pronoun for objects ('the book I read'). French separates them: «qui» (subject) and «que» (object), and never drops them. The trick: after «qui» comes a verb; after «que» comes a subject.",
+        "tabela": [
+          {
+            "pronoun": "qui",
+            "function": "subject",
+            "example": "L'homme qui parle est mon père."
+          },
+          {
+            "pronoun": "que / qu'",
+            "function": "direct object",
+            "example": "Le livre que je lis est bon."
+          },
+          {
+            "pronoun": "où",
+            "function": "place or time",
+            "example": "La ville où j'habite est petite."
+          },
+          {
+            "pronoun": "dont",
+            "function": "with «de»",
+            "example": "Le livre dont je parle est cher."
+          },
+          {
+            "pronoun": "ce qui",
+            "function": "what (subject)",
+            "example": "Je sais ce qui se passe."
+          },
+          {
+            "pronoun": "ce que",
+            "function": "what (object)",
+            "example": "Dis-moi ce que tu veux."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "L'homme que parle est mon père.",
+            "certo": "L'homme qui parle est mon père.",
+            "motivo": "Subject: «qui»."
+          },
+          {
+            "errado": "Le livre qui je lis.",
+            "certo": "Le livre que je lis.",
+            "motivo": "Object: «que»."
+          },
+          {
+            "errado": "Le film que il regarde.",
+            "certo": "Le film qu'il regarde.",
+            "motivo": "Elision: «qu'il»."
+          },
+          {
+            "errado": "La robe que j'ai acheté.",
+            "certo": "La robe que j'ai achetée.",
+            "motivo": "Agreement with the object when it comes before the verb."
+          }
+        ],
+        "tag": "Relatives"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe aloud five people or things with «qui» and «que»: «L'ami qui… Le livre que…»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Give advice and make a polite request aloud."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-025.json",
+  "responsavel": null
+}

@@ -1,0 +1,512 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 132,
+  "fase": 14,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Negation and indefinite words: Review and practice for lesson 33",
+  "objetivo": "Lesson 33, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 33,
+    "titulo": "Negation and indefinite words",
+    "objetivo": "Use «ne… jamais», «ne… rien», «ne… personne», «ne… plus», «ne… aucun», «ni… ni…» and the indefinites «tout», «chaque», «plusieurs», «quelqu'un», «quelque chose».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 33",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je ne vois rien",
+            "opcoes": [
+              "Je ne vois rien",
+              "Je ne vois personne",
+              "Je ne vois pas"
+            ],
+            "gabarito": "Je ne vois rien",
+            "explicacao": "Listen to «rien».",
+            "id": "fr-033-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je n'ai vu personne",
+            "opcoes": [
+              "Je n'ai vu personne",
+              "Je n'ai rien vu",
+              "Je n'ai pas vu"
+            ],
+            "gabarito": "Je n'ai vu personne",
+            "explicacao": "Listen to «personne».",
+            "id": "fr-033-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Tu ne viens pas ? Si !",
+            "opcoes": [
+              "Tu ne viens pas ? Si !",
+              "Tu viens ? Oui !",
+              "Tu ne viens pas ? Non !"
+            ],
+            "gabarito": "Tu ne viens pas ? Si !",
+            "explicacao": "Listen to «si».",
+            "id": "fr-033-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je ne mange jamais de viande",
+            "respostaEsperada": "Je ne mange jamais de viande",
+            "explicacao": "Write: Je ne mange jamais de viande.",
+            "id": "fr-033-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Tout le monde est là",
+            "respostaEsperada": "Tout le monde est là",
+            "explicacao": "Write: Tout le monde est là.",
+            "id": "fr-033-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «I do, but never at night. And you?»",
+            "opcoes": [
+              "mais",
+              "Si,",
+              "?",
+              "je",
+              "le",
+              "mange",
+              "Et",
+              "soir.",
+              "jamais",
+              "toi",
+              "n'en"
+            ],
+            "gabarito": "Si, mais je n'en mange jamais le soir. Et toi ?",
+            "explicacao": "Write: Si, mais je n'en mange jamais le soir. Et toi ?",
+            "id": "fr-033-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je n'ai rien vu",
+            "respostaEsperada": "Je n'ai rien vu",
+            "explicacao": "Write: Je n'ai rien vu.",
+            "id": "fr-033-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Tu ne manges pas de viande ?",
+            "respostaEsperada": "Tu ne manges pas de viande ?",
+            "explicacao": "Don't you eat meat?",
+            "id": "fr-033-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je ne vois rien.",
+              "Je ne vois pas rien.",
+              "Je vois ne rien."
+            ],
+            "gabarito": "Je ne vois rien.",
+            "explicacao": "No «pas».",
+            "id": "fr-033-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je n'ai vu personne.",
+              "Je n'ai personne vu.",
+              "Je n'ai pas vu personne."
+            ],
+            "gabarito": "Je n'ai vu personne.",
+            "explicacao": "After the participle.",
+            "id": "fr-033-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Me neither» in French:",
+            "opcoes": [
+              "Moi non plus.",
+              "Moi aussi pas.",
+              "Moi pas aussi."
+            ],
+            "gabarito": "Moi non plus.",
+            "explicacao": "Fixed expression.",
+            "id": "fr-033-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Si, mais je n'en mange jamais le soir. Et toi ?",
+            "respostaEsperada": "Si, mais je n'en mange jamais le soir. Et toi ?",
+            "explicacao": "I do, but never at night. And you?",
+            "id": "fr-033-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Tu ne viens pas ?» Contradict:",
+            "opcoes": [
+              "Si, je viens.",
+              "Oui, je viens.",
+              "Si, je viens pas."
+            ],
+            "gabarito": "Si, je viens.",
+            "explicacao": "«Si» contradicts the negative.",
+            "id": "fr-033-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je travaille ___ les jours. (every)",
+            "opcoes": [
+              "tous",
+              "tout",
+              "toute"
+            ],
+            "gabarito": "tous",
+            "explicacao": "Masculine plural.",
+            "id": "fr-033-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il pleut ___ la journée.",
+            "opcoes": [
+              "toute",
+              "tout",
+              "tous"
+            ],
+            "gabarito": "toute",
+            "explicacao": "Feminine singular.",
+            "id": "fr-033-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Si, il y a plusieurs plats avec des légumes.",
+            "respostaEsperada": "Si, il y a plusieurs plats avec des légumes.",
+            "explicacao": "Yes there is, there are several dishes with vegetables.",
+            "id": "fr-033-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "C'est quelqu'un ___ gentil.",
+            "opcoes": [
+              "de",
+              "à",
+              "d'"
+            ],
+            "gabarito": "de",
+            "explicacao": "«Quelqu'un de».",
+            "id": "fr-033-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «jamais» mean?",
+            "audio": "jamais",
+            "opcoes": [
+              "neither",
+              "not yet",
+              "neither… nor…",
+              "never"
+            ],
+            "gabarito": "never",
+            "explicacao": "«jamais» = never.",
+            "id": "fr-033-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je n'ai ___ dix euros. (only)",
+            "opcoes": [
+              "que",
+              "seulement",
+              "rien"
+            ],
+            "gabarito": "que",
+            "explicacao": "«Ne… que».",
+            "id": "fr-033-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Je ne connais personne ici.»",
+            "opcoes": [
+              "Je",
+              "ne",
+              "connais",
+              "personne",
+              "ici"
+            ],
+            "gabarito": "Je ne connais personne ici.",
+            "explicacao": "ne + verb + personne.",
+            "id": "fr-033-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Je n'ai rien mangé.»",
+            "opcoes": [
+              "Je",
+              "n'ai",
+              "rien",
+              "mangé"
+            ],
+            "gabarito": "Je n'ai rien mangé.",
+            "explicacao": "ne + auxiliary + rien + participle.",
+            "id": "fr-033-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I never eat meat. I don't see anyone. Every day I work. I have no idea.",
+            "respostaEsperada": "Je ne mange jamais de viande. Je ne vois personne. Tous les jours, je travaille. Je n'ai aucune idée.",
+            "id": "fr-033-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «ni… ni…» mean?",
+            "audio": "ni… ni…",
+            "opcoes": [
+              "neither… nor…",
+              "something",
+              "me neither",
+              "some"
+            ],
+            "gabarito": "neither… nor…",
+            "explicacao": "«ni… ni…» = neither… nor….",
+            "id": "fr-033-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il ne mange ___ de viande. (never)",
+            "opcoes": [
+              "jamais",
+              "rien",
+              "personne"
+            ],
+            "gabarito": "jamais",
+            "explicacao": "«Ne… jamais» = never.",
+            "id": "fr-033-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "moi non plus",
+            "respostaEsperada": "moi non plus",
+            "explicacao": "me neither",
+            "id": "fr-033-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle n'a lu ___ livre. (no)",
+            "opcoes": [
+              "aucune",
+              "aucun",
+              "rien"
+            ],
+            "gabarito": "aucun",
+            "explicacao": "«Livre» is masculine: «aucun».",
+            "id": "fr-033-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je ne fume ___ . (no longer)",
+            "opcoes": [
+              "rien",
+              "personne",
+              "plus"
+            ],
+            "gabarito": "plus",
+            "explicacao": "«Ne… plus» = no longer.",
+            "id": "fr-033-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je ne bois ni café ___ thé. (nor)",
+            "opcoes": [
+              "ni",
+              "et",
+              "ou"
+            ],
+            "gabarito": "ni",
+            "explicacao": "The structure is «ni… ni…».",
+            "id": "fr-033-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «ne… que» mean?",
+            "audio": "ne… que",
+            "opcoes": [
+              "several",
+              "none",
+              "only",
+              "some"
+            ],
+            "gabarito": "only",
+            "explicacao": "«ne… que» = only.",
+            "id": "fr-033-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tu n'aimes pas le café ? — ___ , j'aime ça ! (yes)",
+            "opcoes": [
+              "Oui",
+              "Si",
+              "Non"
+            ],
+            "gabarito": "Si",
+            "explicacao": "«Si» contradicts a negative question.",
+            "id": "fr-033-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je n'ai mangé jamais ça.",
+              "Je ne jamais ai mangé ça.",
+              "Je n'ai jamais mangé ça."
+            ],
+            "gabarito": "Je n'ai jamais mangé ça.",
+            "explicacao": "«Jamais» goes between the auxiliary and the participle.",
+            "id": "fr-033-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Chaque jour, je travaille.",
+              "Chaque jours, je travaille.",
+              "Chaque le jour, je travaille."
+            ],
+            "gabarito": "Chaque jour, je travaille.",
+            "explicacao": "«Chaque» + singular noun, no article.",
+            "id": "fr-033-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "pas du tout",
+            "respostaEsperada": "pas du tout",
+            "explicacao": "not at all",
+            "id": "fr-033-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «something good»?",
+            "opcoes": [
+              "quelque chose bon",
+              "quelque chose de bon",
+              "quelque chose du bon"
+            ],
+            "gabarito": "quelque chose de bon",
+            "explicacao": "With an adjective, use «de».",
+            "id": "fr-033-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «aucun» mean?",
+            "audio": "aucun",
+            "opcoes": [
+              "some",
+              "nothing",
+              "none",
+              "someone"
+            ],
+            "gabarito": "none",
+            "explicacao": "«aucun» = no, none.",
+            "id": "fr-033-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «Je n'ai que dix euros» mean?",
+            "opcoes": [
+              "I don't have ten euros",
+              "I have more than ten euros",
+              "I have only ten euros"
+            ],
+            "gabarito": "I have only ten euros",
+            "explicacao": "«Ne… que» = only.",
+            "id": "fr-033-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «I drink neither coffee nor tea.»",
+            "opcoes": [
+              "Je",
+              "ne",
+              "bois",
+              "ni",
+              "café",
+              "ni",
+              "thé"
+            ],
+            "gabarito": "Je ne bois ni café ni thé.",
+            "explicacao": "«Ni… ni…» = neither… nor…",
+            "id": "fr-033-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «There is no problem here.»",
+            "opcoes": [
+              "Il",
+              "n'y",
+              "a",
+              "aucun",
+              "problème",
+              "ici"
+            ],
+            "gabarito": "Il n'y a aucun problème ici.",
+            "explicacao": "«Aucun» agrees with «problème».",
+            "id": "fr-033-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I see nothing. He never comes.",
+            "respostaEsperada": "Je ne vois rien. Il ne vient jamais.",
+            "id": "fr-033-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I only have five euros. Several friends are here.",
+            "respostaEsperada": "Je n'ai que cinq euros. Plusieurs amis sont ici.",
+            "id": "fr-033-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Speak for 1 minute about things you never, hardly ever or always do, using negations and indefinites."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say what you never do, who you don't know and what you don't see."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-033.json",
+  "responsavel": null
+}

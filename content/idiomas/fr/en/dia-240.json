@@ -1,0 +1,512 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 240,
+  "fase": 24,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Strategies for understanding and being understood: Review and practice for lesson 60",
+  "objetivo": "Lesson 60, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 60,
+    "titulo": "Strategies for understanding and being understood",
+    "objetivo": "Understand more than you know (similar words, word families, false friends), work around missing words and ask for help without stalling the conversation.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 60",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose the correctly written sentence.",
+            "audio": "Il l'a fait exprès",
+            "opcoes": [
+              "Il l'a fait exprès",
+              "Il l'a fait expresso",
+              "Il l'a fait express"
+            ],
+            "gabarito": "Il l'a fait exprès",
+            "explicacao": "On purpose.",
+            "id": "fr-060-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose the correctly written sentence.",
+            "audio": "J'attends le bus",
+            "opcoes": [
+              "J'attends le bus",
+              "J'atends le bus",
+              "J'attend le bus"
+            ],
+            "gabarito": "J'attends le bus",
+            "explicacao": "To wait.",
+            "id": "fr-060-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose the correctly written sentence.",
+            "audio": "J'ignore la réponse",
+            "opcoes": [
+              "J'ignore la réponse",
+              "J'ignore à la réponse",
+              "Je ignore la réponse"
+            ],
+            "gabarito": "J'ignore la réponse",
+            "explicacao": "Not to know.",
+            "id": "fr-060-e03"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: How do you say “tool” in French?",
+            "respostaEsperada": "Comment dit-on « tool » en français ?",
+            "explicacao": "Use «Comment dit-on … en français ?» to ask for a French word.",
+            "id": "fr-060-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Pouvez-vous répéter, s'il vous plaît",
+            "respostaEsperada": "Pouvez-vous répéter, s'il vous plaît",
+            "explicacao": "Write: Pouvez-vous répéter, s'il vous plaît.",
+            "id": "fr-060-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «un faux ami» mean?",
+            "audio": "un faux ami",
+            "opcoes": [
+              "the suffix",
+              "a false friend",
+              "to wait for (not «to attend»)",
+              "the prefix"
+            ],
+            "gabarito": "a false friend",
+            "explicacao": "«un faux ami» = a false friend.",
+            "id": "fr-060-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Mes mains sont sales",
+            "respostaEsperada": "Mes mains sont sales",
+            "explicacao": "Write: Mes mains sont sales.",
+            "id": "fr-060-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "un mot apparenté",
+            "respostaEsperada": "un mot apparenté",
+            "explicacao": "a cognate",
+            "id": "fr-060-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Attendre» means:",
+            "opcoes": [
+              "to wait",
+              "to answer",
+              "to attend"
+            ],
+            "gabarito": "to wait",
+            "explicacao": "«Attendre» means “to wait”; “to attend” is usually «assister à».",
+            "id": "fr-060-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Sale» means:",
+            "opcoes": [
+              "dirty",
+              "salt",
+              "a sale"
+            ],
+            "gabarito": "dirty",
+            "explicacao": "False friend.",
+            "id": "fr-060-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "In «J’ignore la réponse», what does «ignorer» mean?",
+            "opcoes": [
+              "not to know",
+              "to disregard",
+              "to forget"
+            ],
+            "gabarito": "not to know",
+            "explicacao": "Here «ignorer» means not to know; in other contexts it can mean to ignore or disregard.",
+            "id": "fr-060-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «un mot apparenté» mean?",
+            "audio": "un mot apparenté",
+            "opcoes": [
+              "dirty (not «a sale»)",
+              "the prefix",
+              "to stay (not «to rest»)",
+              "a cognate"
+            ],
+            "gabarito": "a cognate",
+            "explicacao": "«un mot apparenté» = a cognate.",
+            "id": "fr-060-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "To ask someone to repeat:",
+            "opcoes": [
+              "Pourriez-vous répéter ?",
+              "Vous répétez !",
+              "Répétez-vous ?"
+            ],
+            "gabarito": "Pourriez-vous répéter ?",
+            "explicacao": "Polite.",
+            "id": "fr-060-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "La ___ est importante. (freedom)",
+            "opcoes": [
+              "liberté",
+              "libertad",
+              "libertade"
+            ],
+            "gabarito": "liberté",
+            "explicacao": "Ending «-té».",
+            "id": "fr-060-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "C'est un truc ___ sert à couper.",
+            "opcoes": [
+              "qui",
+              "que",
+              "dont"
+            ],
+            "gabarito": "qui",
+            "explicacao": "Subject.",
+            "id": "fr-060-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "un faux ami",
+            "respostaEsperada": "un faux ami",
+            "explicacao": "a false friend",
+            "id": "fr-060-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle ___ l'heure. (ask)",
+            "opcoes": [
+              "demande",
+              "attend",
+              "reste"
+            ],
+            "gabarito": "demande",
+            "explicacao": "«Demander».",
+            "id": "fr-060-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «demander» mean?",
+            "audio": "demander",
+            "opcoes": [
+              "understand the gist",
+              "to ask or ask for",
+              "a cognate",
+              "not to know"
+            ],
+            "gabarito": "to ask or ask for",
+            "explicacao": "«Demander» usually means to ask or ask for; it can mean demand in some contexts.",
+            "id": "fr-060-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je ___ à Paris. (stay)",
+            "opcoes": [
+              "reste",
+              "rest",
+              "restar"
+            ],
+            "gabarito": "reste",
+            "explicacao": "«Rester».",
+            "id": "fr-060-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Si j'ai bien compris, vous voulez dire non.»",
+            "opcoes": [
+              "Si",
+              "j'ai",
+              "bien",
+              "compris,",
+              "vous",
+              "voulez",
+              "dire",
+              "non"
+            ],
+            "gabarito": "Si j'ai bien compris, vous voulez dire non.",
+            "explicacao": "Confirming.",
+            "id": "fr-060-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Parlez plus lentement, s'il vous plaît.»",
+            "opcoes": [
+              "Parlez",
+              "plus",
+              "lentement,",
+              "s'il",
+              "vous",
+              "plaît"
+            ],
+            "gabarito": "Parlez plus lentement, s'il vous plaît.",
+            "explicacao": "Request.",
+            "id": "fr-060-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: How do you say «scissors» in French? Can you repeat, please? He did it on purpose.",
+            "respostaEsperada": "Comment dit-on « scissors » en français ? Pouvez-vous répéter, s'il vous plaît ? Il l'a fait exprès.",
+            "id": "fr-060-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «exprès» mean?",
+            "audio": "exprès",
+            "opcoes": [
+              "understand the gist",
+              "to ask (not «to demand»)",
+              "on purpose (not «express»)",
+              "dirty (not «a sale»)"
+            ],
+            "gabarito": "on purpose (not «express»)",
+            "explicacao": "«exprès» = on purpose (not «express»).",
+            "id": "fr-060-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "«Information» in French is «l'___ ».",
+            "opcoes": [
+              "information",
+              "informacion",
+              "informations"
+            ],
+            "gabarito": "information",
+            "explicacao": "Ending «-tion» is the same in English and French.",
+            "id": "fr-060-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "un truc qui sert à",
+            "respostaEsperada": "un truc qui sert à",
+            "explicacao": "a thing used for",
+            "id": "fr-060-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il a quitté la pièce ___ . (on purpose)",
+            "opcoes": [
+              "expresso",
+              "exprès",
+              "express"
+            ],
+            "gabarito": "exprès",
+            "explicacao": "«Exprès» = on purpose.",
+            "id": "fr-060-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Mes chaussures sont ___ . (dirty)",
+            "opcoes": [
+              "sels",
+              "salt",
+              "sales"
+            ],
+            "gabarito": "sales",
+            "explicacao": "«Sale» = dirty; the plural takes an «s».",
+            "id": "fr-060-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Pouvez-vous parler plus ___ ? (slowly)",
+            "opcoes": [
+              "lentement",
+              "lent",
+              "lente"
+            ],
+            "gabarito": "lentement",
+            "explicacao": "Adverb of manner: «lentement».",
+            "id": "fr-060-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «répéter» mean?",
+            "audio": "répéter",
+            "opcoes": [
+              "dirty (not «a sale»)",
+              "a false friend",
+              "how do you say…",
+              "to repeat"
+            ],
+            "gabarito": "to repeat",
+            "explicacao": "«répéter» = to repeat.",
+            "id": "fr-060-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "J'___ la réponse. (I don't know)",
+            "opcoes": [
+              "ignorer",
+              "ignore",
+              "ignores"
+            ],
+            "gabarito": "ignore",
+            "explicacao": "Here «ignorer» means not to know; it can also mean to ignore or disregard, depending on context.",
+            "id": "fr-060-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «rester» mean?",
+            "opcoes": [
+              "to leave",
+              "to rest",
+              "to stay"
+            ],
+            "gabarito": "to stay",
+            "explicacao": "«Rester» = to stay.",
+            "id": "fr-060-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «demander» mean?",
+            "opcoes": [
+              "to ask for or to ask",
+              "to answer",
+              "to hope"
+            ],
+            "gabarito": "to ask for or to ask",
+            "explicacao": "«Demander» = to ask for, to ask.",
+            "id": "fr-060-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "je veux dire",
+            "respostaEsperada": "je veux dire",
+            "explicacao": "I mean",
+            "id": "fr-060-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «magasin» mean?",
+            "opcoes": [
+              "a magazine",
+              "a shop",
+              "a television program"
+            ],
+            "gabarito": "a shop",
+            "explicacao": "«Magasin» = shop.",
+            "id": "fr-060-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «je veux dire» mean?",
+            "audio": "je veux dire",
+            "opcoes": [
+              "a cognate",
+              "I mean",
+              "the root",
+              "understand the gist"
+            ],
+            "gabarito": "I mean",
+            "explicacao": "«je veux dire» = I mean.",
+            "id": "fr-060-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence confirms understanding?",
+            "opcoes": [
+              "Je comprends rien du tout, merci.",
+              "Répétez !",
+              "Si j'ai bien compris, vous voulez dire que…"
+            ],
+            "gabarito": "Si j'ai bien compris, vous voulez dire que…",
+            "explicacao": "It is the formula for checking what you understood.",
+            "id": "fr-060-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «I mean that it is difficult.»",
+            "opcoes": [
+              "Je",
+              "veux",
+              "dire",
+              "que",
+              "c'est",
+              "difficile"
+            ],
+            "gabarito": "Je veux dire que c'est difficile.",
+            "explicacao": "«Je veux dire que» rephrases.",
+            "id": "fr-060-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Wait, I'm thinking.»",
+            "opcoes": [
+              "Attendez,",
+              "je",
+              "réfléchis"
+            ],
+            "gabarito": "Attendez, je réfléchis.",
+            "explicacao": "Buying time while speaking.",
+            "id": "fr-060-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I am waiting for my friend. She asks the time.",
+            "respostaEsperada": "J'attends mon ami. Elle demande l'heure.",
+            "id": "fr-060-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: Can you speak more slowly, please? I mean that I did not understand.",
+            "respostaEsperada": "Pouvez-vous parler plus lentement, s'il vous plaît ? Je veux dire que je n'ai pas compris.",
+            "id": "fr-060-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Speak for 1 minute describing an object without saying its name, until someone guesses it."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say aloud five French words you understood just because they look like English."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-060.json",
+  "responsavel": null
+}

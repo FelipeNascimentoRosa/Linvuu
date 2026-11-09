@@ -1,0 +1,531 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 72,
+  "fase": 8,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "A1 review and mock exam: A1 mock exam",
+  "objetivo": "Lesson 18, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 18,
+    "titulo": "A1 review and mock exam",
+    "objetivo": "Review all of A1 on one map, practice reading, listening, writing and speaking, correct the most common mistakes of English speakers, and take an original mock exam.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "A1 mock exam",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Elle n'est pas contente aujourd'hui",
+            "opcoes": [
+              "Elle n'est pas contente aujourd'hui",
+              "Elle est contente aujourd'hui",
+              "Il n'est pas content aujourd'hui"
+            ],
+            "gabarito": "Elle n'est pas contente aujourd'hui",
+            "explicacao": "Listening: the negative of «être».",
+            "id": "fr-018-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je voudrais un café, s'il vous plaît",
+            "opcoes": [
+              "Je voudrais un café, s'il vous plaît",
+              "J'aime le café, s'il vous plaît",
+              "Je voudrais un thé, s'il vous plaît"
+            ],
+            "gabarito": "Je voudrais un café, s'il vous plaît",
+            "explicacao": "Listening: polite request.",
+            "id": "fr-018-e02"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Read: «Elle a les cheveux longs et les yeux bleus.» What does the sentence describe?",
+            "opcoes": [
+              "a aparência",
+              "the routine",
+              "the weather"
+            ],
+            "gabarito": "a aparência",
+            "explicacao": "Reading: hair and eyes.",
+            "id": "fr-018-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Est-ce qu'elle a une voiture ?",
+              "Est-ce qu'elle est une voiture ?",
+              "Est-ce elle a une voiture ?"
+            ],
+            "gabarito": "Est-ce qu'elle a une voiture ?",
+            "explicacao": "«Est-ce que» + subject + verb.",
+            "id": "fr-018-e04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Combien ___ ces chaussures ?",
+            "opcoes": [
+              "coûtent",
+              "coûte",
+              "coûtez"
+            ],
+            "gabarito": "coûtent",
+            "explicacao": "Plural: «-ent».",
+            "id": "fr-018-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Hello! I'm Carlos. I live next door to you.»",
+            "opcoes": [
+              "côté",
+              "de",
+              "Je",
+              "suis",
+              "vous.",
+              "Carlos.",
+              "!",
+              "J'habite",
+              "à",
+              "chez",
+              "Bonjour"
+            ],
+            "gabarito": "Bonjour ! Je suis Carlos. J'habite à côté de chez vous.",
+            "explicacao": "Write: Bonjour ! Je suis Carlos. J'habite à côté de chez vous.",
+            "id": "fr-018-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle ___ à six heures chaque jour. (to get up)",
+            "opcoes": [
+              "se lève",
+              "se lever",
+              "se levé"
+            ],
+            "gabarito": "se lève",
+            "explicacao": "Reflexive verb in the present.",
+            "id": "fr-018-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Enchantée, Carlos. Je m'appelle Julie. Vous êtes d'où ?",
+            "respostaEsperada": "Enchantée, Carlos. Je m'appelle Julie. Vous êtes d'où ?",
+            "explicacao": "Nice to meet you, Carlos. My name is Julie. Where are you from, sir?",
+            "id": "fr-018-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je n'ai pas ___ argent.",
+            "opcoes": [
+              "d'",
+              "de l'",
+              "du"
+            ],
+            "gabarito": "d'",
+            "explicacao": "Negative: «de».",
+            "id": "fr-018-e07"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Nous ___ allés au cinéma hier.",
+            "opcoes": [
+              "sommes",
+              "avons",
+              "sont"
+            ],
+            "gabarito": "sommes",
+            "explicacao": "«Aller» uses «être».",
+            "id": "fr-018-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you ask the time?",
+            "opcoes": [
+              "Quelle heure est-il ?",
+              "Quel âge as-tu ?",
+              "Comment ça va ?"
+            ],
+            "gabarito": "Quelle heure est-il ?",
+            "explicacao": "Question about the time.",
+            "id": "fr-018-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Bonjour ! Je suis Carlos. J'habite à côté de chez vous.",
+            "respostaEsperada": "Bonjour ! Je suis Carlos. J'habite à côté de chez vous.",
+            "explicacao": "Hello! I'm Carlos. I live next door to you.",
+            "id": "fr-018-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je vais au marché.",
+              "Je vais à le marché.",
+              "Je vais en marché."
+            ],
+            "gabarito": "Je vais au marché.",
+            "explicacao": "à + le = au.",
+            "id": "fr-018-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je l'ai vu hier.",
+              "J'ai le vu hier.",
+              "Je ai vu lui hier."
+            ],
+            "gabarito": "Je l'ai vu hier.",
+            "explicacao": "Pronoun before the auxiliary.",
+            "id": "fr-018-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Elle est plus grande que moi.",
+              "Elle est plus grande de moi.",
+              "Elle est plus grand que je."
+            ],
+            "gabarito": "Elle est plus grande que moi.",
+            "explicacao": "Comparing with «que» + stressed pronoun.",
+            "id": "fr-018-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Je suis du Brésil. Et vous ?",
+            "respostaEsperada": "Je suis du Brésil. Et vous ?",
+            "explicacao": "I'm from Brazil. And you, madam?",
+            "id": "fr-018-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Je ne vais pas au travail aujourd'hui.»",
+            "opcoes": [
+              "Je",
+              "ne",
+              "vais",
+              "pas",
+              "au",
+              "travail",
+              "aujourd'hui"
+            ],
+            "gabarito": "Je ne vais pas au travail aujourd'hui.",
+            "explicacao": "ne + verb + pas.",
+            "id": "fr-018-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Elle n'est pas contente aujourd'hui",
+            "opcoes": [
+              "Elle",
+              "contente",
+              "n'est",
+              "aujourd'hui",
+              "pas"
+            ],
+            "gabarito": "Elle n'est pas contente aujourd'hui",
+            "explicacao": "Write: Elle n'est pas contente aujourd'hui",
+            "id": "fr-018-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Hier, je me suis levé à sept heures.»",
+            "opcoes": [
+              "Hier,",
+              "je",
+              "me",
+              "suis",
+              "levé",
+              "à",
+              "sept",
+              "heures"
+            ],
+            "gabarito": "Hier, je me suis levé à sept heures.",
+            "explicacao": "Pronoun + auxiliary + participle.",
+            "id": "fr-018-e14"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "J'habite à Lyon avec ma sœur",
+            "respostaEsperada": "J'habite à Lyon avec ma sœur",
+            "explicacao": "Write: J'habite à Lyon avec ma sœur.",
+            "id": "fr-018-e15"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Il fait froid et il pleut",
+            "respostaEsperada": "Il fait froid et il pleut",
+            "explicacao": "Write: Il fait froid et il pleut.",
+            "id": "fr-018-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I live in Brazil. Yesterday I went to the market. Tomorrow I am going to work.",
+            "respostaEsperada": "J'habite au Brésil. Hier, je suis allé au marché. Demain, je vais travailler.",
+            "id": "fr-018-e17"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Je voudrais un café, s'il vous plaît",
+            "opcoes": [
+              "voudrais",
+              "café,",
+              "Je",
+              "s'il",
+              "vous",
+              "un",
+              "plaît"
+            ],
+            "gabarito": "Je voudrais un café, s'il vous plaît",
+            "explicacao": "Write: Je voudrais un café, s'il vous plaît",
+            "id": "fr-018-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Nous ___ au restaurant ce soir. (we are going)",
+            "opcoes": [
+              "allons",
+              "allez",
+              "vont"
+            ],
+            "gabarito": "allons",
+            "explicacao": "With «nous», «aller» becomes «allons».",
+            "id": "fr-018-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Moi, je suis de Lyon. Vous travaillez ici ?",
+            "respostaEsperada": "Moi, je suis de Lyon. Vous travaillez ici ?",
+            "explicacao": "I'm from Lyon. Do you work here, sir?",
+            "id": "fr-018-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tu ___ quel âge ? (you have)",
+            "opcoes": [
+              "es",
+              "as",
+              "a"
+            ],
+            "gabarito": "as",
+            "explicacao": "Age uses «avoir»: «tu as».",
+            "id": "fr-018-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je voudrais ___ eau, s'il vous plaît. (some)",
+            "opcoes": [
+              "du",
+              "des",
+              "de l'"
+            ],
+            "gabarito": "de l'",
+            "explicacao": "Partitive before a vowel: «de l'».",
+            "id": "fr-018-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Nous ___ pas fatigués. (we are not)",
+            "opcoes": [
+              "ne sommes",
+              "sommes ne",
+              "ne êtes"
+            ],
+            "gabarito": "ne sommes",
+            "explicacao": "«Ne… pas» goes around «sommes».",
+            "id": "fr-018-e21"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "J'habite à Lyon avec ma sœur",
+            "opcoes": [
+              "à",
+              "J'habite",
+              "ma",
+              "avec",
+              "Lyon",
+              "sœur"
+            ],
+            "gabarito": "J'habite à Lyon avec ma sœur",
+            "explicacao": "Write: J'habite à Lyon avec ma sœur",
+            "id": "fr-018-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Hier, ils ont ___ le bus. (prendre)",
+            "opcoes": [
+              "prendu",
+              "pris",
+              "prenu"
+            ],
+            "gabarito": "pris",
+            "explicacao": "The participle of «prendre» is «pris».",
+            "id": "fr-018-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je n'ai pas une voiture.",
+              "Je ne pas ai de voiture.",
+              "Je n'ai pas de voiture."
+            ],
+            "gabarito": "Je n'ai pas de voiture.",
+            "explicacao": "In the negative, the indefinite article becomes «de».",
+            "id": "fr-018-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I live in the United States»?",
+            "opcoes": [
+              "J'habite aux États-Unis.",
+              "J'habite en États-Unis.",
+              "J'habite au États-Unis."
+            ],
+            "gabarito": "J'habite aux États-Unis.",
+            "explicacao": "A plural country takes «aux».",
+            "id": "fr-018-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Avec plaisir ! Je peux venir samedi soir ?",
+            "respostaEsperada": "Avec plaisir ! Je peux venir samedi soir ?",
+            "explicacao": "With pleasure! Can I come on Saturday evening?",
+            "id": "fr-018-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «It is half past nine»?",
+            "opcoes": [
+              "Il est neuf heures moins le quart.",
+              "Il est neuf heures et demie.",
+              "Il est neuf et demie heures."
+            ],
+            "gabarito": "Il est neuf heures et demie.",
+            "explicacao": "«Et demie» = half past.",
+            "id": "fr-018-e25"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Il fait froid et il pleut",
+            "opcoes": [
+              "Il",
+              "froid",
+              "pleut",
+              "il",
+              "fait",
+              "et"
+            ],
+            "gabarito": "Il fait froid et il pleut",
+            "explicacao": "Write: Il fait froid et il pleut",
+            "id": "fr-018-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you answer «Tu veux du pain ?» with «en»?",
+            "opcoes": [
+              "Oui, je veux en.",
+              "Oui, j'y veux.",
+              "Oui, j'en veux."
+            ],
+            "gabarito": "Oui, j'en veux.",
+            "explicacao": "«En» replaces the partitive and goes before the verb.",
+            "id": "fr-018-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «My sister is called Julia and she is fifteen years old.»",
+            "opcoes": [
+              "Ma",
+              "sœur",
+              "s'appelle",
+              "Julia",
+              "et",
+              "elle",
+              "a",
+              "quinze",
+              "ans"
+            ],
+            "gabarito": "Ma sœur s'appelle Julia et elle a quinze ans.",
+            "explicacao": "«S'appeler» and «avoir» for age.",
+            "id": "fr-018-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «We are going to the cinema by car.»",
+            "opcoes": [
+              "Nous",
+              "allons",
+              "au",
+              "cinéma",
+              "en",
+              "voiture"
+            ],
+            "gabarito": "Nous allons au cinéma en voiture.",
+            "explicacao": "«Au» = à + le; «en voiture».",
+            "id": "fr-018-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I am hungry. I want a coffee. I have no money.",
+            "respostaEsperada": "J'ai faim. Je veux un café. Je n'ai pas d'argent.",
+            "id": "fr-018-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: My brother lives in Paris. He is twenty years old and is a student.",
+            "respostaEsperada": "Mon frère habite à Paris. Il a vingt ans et il est étudiant.",
+            "id": "fr-018-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Reread the items you got wrong and say the rule for each one aloud."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Reread the map and choose the 3 points where you still make mistakes."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-018.json",
+  "responsavel": null
+}

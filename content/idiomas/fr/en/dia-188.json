@@ -1,0 +1,536 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 188,
+  "fase": 19,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Logical connectors: cause, consequence, opposition: Review and practice for lesson 47",
+  "objetivo": "Lesson 47, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 47,
+    "titulo": "Logical connectors: cause, consequence, opposition",
+    "objetivo": "Link ideas with connectors of cause, consequence, opposition and concession, choosing the mood (indicative or subjunctive) that each one requires.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 47",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Il pleut, donc je reste",
+            "opcoes": [
+              "Il pleut, donc je reste",
+              "Il pleut, pourtant je reste",
+              "Il pleut, alors que je reste"
+            ],
+            "gabarito": "Il pleut, donc je reste",
+            "explicacao": "Listen to «donc».",
+            "id": "fr-047-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Grâce à toi, j'ai réussi",
+            "opcoes": [
+              "Grâce à toi, j'ai réussi",
+              "À cause de toi, j'ai réussi",
+              "Puisque tu es là, j'ai réussi"
+            ],
+            "gabarito": "Grâce à toi, j'ai réussi",
+            "explicacao": "Listen to «grâce».",
+            "id": "fr-047-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Même s'il pleut, je sors",
+            "opcoes": [
+              "Même s'il pleut, je sors",
+              "Bien qu'il pleuve, je sors",
+              "Malgré la pluie, je sors"
+            ],
+            "gabarito": "Même s'il pleut, je sors",
+            "explicacao": "Listen to «même si».",
+            "id": "fr-047-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «pourtant» mean?",
+            "audio": "pourtant",
+            "opcoes": [
+              "however",
+              "in conclusion",
+              "finally",
+              "contudo"
+            ],
+            "gabarito": "however",
+            "explicacao": "«pourtant» = however.",
+            "id": "fr-047-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Il a étudié, pourtant il a échoué",
+            "respostaEsperada": "Il a étudié, pourtant il a échoué",
+            "explicacao": "Write: Il a étudié, pourtant il a échoué.",
+            "id": "fr-047-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "La ville est chère, en revanche elle est belle",
+            "respostaEsperada": "La ville est chère, en revanche elle est belle",
+            "explicacao": "Write: La ville est chère, en revanche elle est belle.",
+            "id": "fr-047-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "D'abord, je prépare, ensuite je mange",
+            "respostaEsperada": "D'abord, je prépare, ensuite je mange",
+            "explicacao": "Write: D'abord, je prépare, ensuite je mange.",
+            "id": "fr-047-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «puisque» mean?",
+            "audio": "puisque",
+            "opcoes": [
+              "therefore",
+              "in conclusion",
+              "on the contrary",
+              "since"
+            ],
+            "gabarito": "since",
+            "explicacao": "«puisque» = since.",
+            "id": "fr-047-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Positive cause with a noun:",
+            "opcoes": [
+              "grâce à",
+              "à cause de",
+              "parce que"
+            ],
+            "gabarito": "grâce à",
+            "explicacao": "Grâce à toi.",
+            "id": "fr-047-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Même si» takes:",
+            "opcoes": [
+              "indicative",
+              "subjunctive",
+              "conditional"
+            ],
+            "gabarito": "indicative",
+            "explicacao": "Même s'il pleut.",
+            "id": "fr-047-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Malgré la pluie, je sors.",
+              "Malgré il pleut, je sors.",
+              "Malgré qu'il pleut, je sors."
+            ],
+            "gabarito": "Malgré la pluie, je sors.",
+            "explicacao": "«Malgré» + noun.",
+            "id": "fr-047-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «à cause de» mean?",
+            "audio": "à cause de",
+            "opcoes": [
+              "that is why",
+              "moreover",
+              "because of",
+              "however"
+            ],
+            "gabarito": "because of",
+            "explicacao": "«à cause de» = because of.",
+            "id": "fr-047-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which connector expresses compensation?",
+            "opcoes": [
+              "en revanche",
+              "donc",
+              "car"
+            ],
+            "gabarito": "en revanche",
+            "explicacao": "Cher, mais en revanche beau.",
+            "id": "fr-047-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il est fatigué, ___ il dort. (therefore)",
+            "opcoes": [
+              "donc",
+              "pourtant",
+              "malgré"
+            ],
+            "gabarito": "donc",
+            "explicacao": "Consequence.",
+            "id": "fr-047-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ la pluie, le match est annulé. (because of)",
+            "opcoes": [
+              "À cause de",
+              "Grâce à",
+              "Parce que"
+            ],
+            "gabarito": "À cause de",
+            "explicacao": "Negative cause.",
+            "id": "fr-047-e12"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «c'est pourquoi» mean?",
+            "audio": "c'est pourquoi",
+            "opcoes": [
+              "contudo",
+              "because of",
+              "that is why",
+              "thanks to"
+            ],
+            "gabarito": "that is why",
+            "explicacao": "«c'est pourquoi» = that is why.",
+            "id": "fr-047-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il aime le thé, ___ je préfère le café.",
+            "opcoes": [
+              "alors que",
+              "donc",
+              "car"
+            ],
+            "gabarito": "alors que",
+            "explicacao": "Contrast.",
+            "id": "fr-047-e13"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ tu es là, aide-moi. (since)",
+            "opcoes": [
+              "Puisque",
+              "Parce que",
+              "Malgré"
+            ],
+            "gabarito": "Puisque",
+            "explicacao": "Known cause.",
+            "id": "fr-047-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Il pleut, donc je reste.»",
+            "opcoes": [
+              "Il",
+              "pleut,",
+              "donc",
+              "je",
+              "reste"
+            ],
+            "gabarito": "Il pleut, donc je reste.",
+            "explicacao": "Consequence.",
+            "id": "fr-047-e15"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "à cause de",
+            "respostaEsperada": "à cause de",
+            "explicacao": "because of",
+            "id": "fr-047-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «mais» mean?",
+            "audio": "mais",
+            "opcoes": [
+              "but",
+              "thanks to",
+              "that is why",
+              "because"
+            ],
+            "gabarito": "but",
+            "explicacao": "«mais» = but.",
+            "id": "fr-047-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Malgré la pluie, je sors.»",
+            "opcoes": [
+              "Malgré",
+              "la",
+              "pluie,",
+              "je",
+              "sors"
+            ],
+            "gabarito": "Malgré la pluie, je sors.",
+            "explicacao": "Concession.",
+            "id": "fr-047-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: First, I study. Then I rest. Finally, I eat. Although I am tired, I keep going.",
+            "respostaEsperada": "D'abord, j'étudie. Ensuite, je me repose. Enfin, je mange. Bien que je sois fatigué, je continue.",
+            "id": "fr-047-e17"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il est absent, ___ il est malade. (for)",
+            "opcoes": [
+              "donc",
+              "mais",
+              "car"
+            ],
+            "gabarito": "car",
+            "explicacao": "«Car» gives the cause, in a formal register.",
+            "id": "fr-047-e18"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «d'abord» mean?",
+            "audio": "d'abord",
+            "opcoes": [
+              "but",
+              "first",
+              "since",
+              "because"
+            ],
+            "gabarito": "first",
+            "explicacao": "«d'abord» = first.",
+            "id": "fr-047-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il travaille beaucoup ; ___ , il a échoué. (however)",
+            "opcoes": [
+              "pourtant",
+              "donc",
+              "car"
+            ],
+            "gabarito": "pourtant",
+            "explicacao": "«Pourtant» marks strong opposition.",
+            "id": "fr-047-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Même ___ il pleut, je sors. (se)",
+            "opcoes": [
+              "que",
+              "si",
+              "qu'"
+            ],
+            "gabarito": "si",
+            "explicacao": "«Même si» + indicative.",
+            "id": "fr-047-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Bien qu'il ___ riche, il est triste. (être)",
+            "opcoes": [
+              "est",
+              "sera",
+              "soit"
+            ],
+            "gabarito": "soit",
+            "explicacao": "«Bien que» takes the subjunctive.",
+            "id": "fr-047-e21"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Grâce à toi, j'ai réussi",
+            "opcoes": [
+              "à",
+              "Grâce",
+              "j'ai",
+              "toi,",
+              "réussi"
+            ],
+            "gabarito": "Grâce à toi, j'ai réussi",
+            "explicacao": "Write: Grâce à toi, j'ai réussi",
+            "id": "fr-047-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "La ville est chère ; ___ , elle est belle. (on the other hand)",
+            "opcoes": [
+              "en revanche",
+              "c'est pourquoi",
+              "par exemple"
+            ],
+            "gabarito": "en revanche",
+            "explicacao": "«En revanche» marks compensation.",
+            "id": "fr-047-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which connector introduces an example?",
+            "opcoes": [
+              "donc",
+              "par exemple",
+              "pourtant"
+            ],
+            "gabarito": "par exemple",
+            "explicacao": "«Par exemple» = for example.",
+            "id": "fr-047-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which connector expresses consequence?",
+            "opcoes": [
+              "malgré",
+              "en revanche",
+              "c'est pourquoi"
+            ],
+            "gabarito": "c'est pourquoi",
+            "explicacao": "«C'est pourquoi» = that is why.",
+            "id": "fr-047-e24"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Même s'il pleut, je sors",
+            "opcoes": [
+              "sors",
+              "Même",
+              "pleut,",
+              "je",
+              "s'il"
+            ],
+            "gabarito": "Même s'il pleut, je sors",
+            "explicacao": "Write: Même s'il pleut, je sors",
+            "id": "fr-047-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Il pleut ; c'est pourquoi je reste.",
+              "Il pleut ; c'est pourquoi que je reste.",
+              "Il pleut ; c'est pourquoi pour je reste."
+            ],
+            "gabarito": "Il pleut ; c'est pourquoi je reste.",
+            "explicacao": "«C'est pourquoi» is followed directly by the clause.",
+            "id": "fr-047-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which connector marks the conclusion?",
+            "opcoes": [
+              "d'abord",
+              "en conclusion",
+              "de plus"
+            ],
+            "gabarito": "en conclusion",
+            "explicacao": "«En conclusion» closes the text.",
+            "id": "fr-047-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «He is small, but he is strong.»",
+            "opcoes": [
+              "Il",
+              "est",
+              "petit,",
+              "mais",
+              "il",
+              "est",
+              "fort"
+            ],
+            "gabarito": "Il est petit, mais il est fort.",
+            "explicacao": "«Mais» marks simple opposition.",
+            "id": "fr-047-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Il a étudié, pourtant il a échoué",
+            "opcoes": [
+              "Il",
+              "il",
+              "échoué",
+              "a",
+              "étudié,",
+              "pourtant",
+              "a"
+            ],
+            "gabarito": "Il a étudié, pourtant il a échoué",
+            "explicacao": "Write: Il a étudié, pourtant il a échoué",
+            "id": "fr-047-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Even if I am afraid, I keep going.»",
+            "opcoes": [
+              "Même",
+              "si",
+              "j'ai",
+              "peur,",
+              "je",
+              "continue"
+            ],
+            "gabarito": "Même si j'ai peur, je continue.",
+            "explicacao": "«Même si» + indicative.",
+            "id": "fr-047-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: He is small but strong. Even if it rains, we go out.",
+            "respostaEsperada": "Il est petit, mais fort. Même s'il pleut, nous sortons.",
+            "id": "fr-047-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French (use «alors que» and «de plus»): He loves tea, whereas she prefers coffee. In addition, he studies a lot.",
+            "respostaEsperada": "Il aime le thé, alors qu'elle préfère le café. De plus, il étudie beaucoup.",
+            "id": "fr-047-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Speak for 1 minute about the pros and cons of a big city, using connectors."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Argue aloud in favor of learning a language, using a variety of connectors."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-047.json",
+  "responsavel": null
+}

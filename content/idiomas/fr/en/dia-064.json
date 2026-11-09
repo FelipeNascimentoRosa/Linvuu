@@ -1,0 +1,537 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 64,
+  "fase": 7,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "The past with «être» and reflexive verbs: Review and practice for lesson 16",
+  "objetivo": "Lesson 16, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 16,
+    "titulo": "The past with «être» and reflexive verbs",
+    "objetivo": "Use the passé composé with «être» (verbs of movement and reflexive verbs), make the participle agree, and tell about a trip.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 16",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je suis allé à Paris",
+            "opcoes": [
+              "Je suis allé à Paris",
+              "J'ai allé à Paris",
+              "Je vais à Paris"
+            ],
+            "gabarito": "Je suis allé à Paris",
+            "explicacao": "Listen to «suis allé».",
+            "id": "fr-016-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Elle s'est levée",
+            "opcoes": [
+              "Elle s'est levée",
+              "Elle se lève",
+              "Elle est levé"
+            ],
+            "gabarito": "Elle s'est levée",
+            "explicacao": "Listen to «s'est».",
+            "id": "fr-016-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Nous sommes arrivés",
+            "opcoes": [
+              "Nous sommes arrivés",
+              "Nous avons arrivé",
+              "Nous arrivons"
+            ],
+            "gabarito": "Nous sommes arrivés",
+            "explicacao": "Listen to «sommes».",
+            "id": "fr-016-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «se réveiller» mean?",
+            "audio": "se réveiller",
+            "opcoes": [
+              "to wake up",
+              "to come back home",
+              "to get up",
+              "to go to bed"
+            ],
+            "gabarito": "to wake up",
+            "explicacao": "«se réveiller» = to wake up.",
+            "id": "fr-016-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je suis resté chez moi",
+            "respostaEsperada": "Je suis resté chez moi",
+            "explicacao": "Write: Je suis resté chez moi.",
+            "id": "fr-016-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Elle est partie hier",
+            "respostaEsperada": "Elle est partie hier",
+            "explicacao": "Write: Elle est partie hier.",
+            "id": "fr-016-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «sortir» mean?",
+            "audio": "sortir",
+            "opcoes": [
+              "to go for a walk",
+              "the airport",
+              "to go out",
+              "to enter"
+            ],
+            "gabarito": "to go out",
+            "explicacao": "«sortir» = to go out.",
+            "id": "fr-016-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je ne me suis pas levé",
+            "respostaEsperada": "Je ne me suis pas levé",
+            "explicacao": "Write: Je ne me suis pas levé.",
+            "id": "fr-016-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je suis allé à Paris.",
+              "J'ai allé à Paris.",
+              "Je ai allé à Paris."
+            ],
+            "gabarito": "Je suis allé à Paris.",
+            "explicacao": "«Aller» uses «être».",
+            "id": "fr-016-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct (woman)?",
+            "opcoes": [
+              "Elle est allée.",
+              "Elle est allé.",
+              "Elle a allée."
+            ],
+            "gabarito": "Elle est allée.",
+            "explicacao": "Agreement.",
+            "id": "fr-016-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «arriver» mean?",
+            "audio": "arriver",
+            "opcoes": [
+              "apressar-se",
+              "the trip",
+              "to arrive",
+              "to enter"
+            ],
+            "gabarito": "to arrive",
+            "explicacao": "«arriver» = to arrive.",
+            "id": "fr-016-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "J'ai pris le train.",
+              "Je suis pris le train.",
+              "J'ai pris le train, parti."
+            ],
+            "gabarito": "J'ai pris le train.",
+            "explicacao": "With an object: «avoir».",
+            "id": "fr-016-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Nous nous sommes levés.",
+              "Nous avons levé.",
+              "Nous sommes levé."
+            ],
+            "gabarito": "Nous nous sommes levés.",
+            "explicacao": "Reflexive verbs use «être».",
+            "id": "fr-016-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle est ___ à Lyon. (allée)",
+            "opcoes": [
+              "allée",
+              "allé",
+              "allés"
+            ],
+            "gabarito": "allée",
+            "explicacao": "Feminine singular.",
+            "id": "fr-016-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «l'aéroport» mean?",
+            "audio": "l'aéroport",
+            "opcoes": [
+              "the airport",
+              "to stay",
+              "to enter",
+              "to go for a walk"
+            ],
+            "gabarito": "the airport",
+            "explicacao": "«l'aéroport» = the airport.",
+            "id": "fr-016-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ils sont ___ . (partis)",
+            "opcoes": [
+              "partis",
+              "parti",
+              "parties"
+            ],
+            "gabarito": "partis",
+            "explicacao": "Masculine plural.",
+            "id": "fr-016-e12"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "J'___ visité Paris.",
+            "opcoes": [
+              "ai",
+              "suis",
+              "a"
+            ],
+            "gabarito": "ai",
+            "explicacao": "With an object: «avoir».",
+            "id": "fr-016-e13"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Nous ___ rentrés tard.",
+            "opcoes": [
+              "sommes",
+              "avons",
+              "sont"
+            ],
+            "gabarito": "sommes",
+            "explicacao": "«Rentrer» uses «être».",
+            "id": "fr-016-e14"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «entrer» mean?",
+            "audio": "entrer",
+            "opcoes": [
+              "to come (venu = come)",
+              "to get dressed",
+              "apressar-se",
+              "to enter"
+            ],
+            "gabarito": "to enter",
+            "explicacao": "«entrer» = to enter.",
+            "id": "fr-016-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Elle s'est levée à sept heures.»",
+            "opcoes": [
+              "Elle",
+              "s'est",
+              "levée",
+              "à",
+              "sept",
+              "heures"
+            ],
+            "gabarito": "Elle s'est levée à sept heures.",
+            "explicacao": "Pronoun + auxiliary + participle.",
+            "id": "fr-016-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Je ne suis pas allé.»",
+            "opcoes": [
+              "Je",
+              "ne",
+              "suis",
+              "pas",
+              "allé"
+            ],
+            "gabarito": "Je ne suis pas allé.",
+            "explicacao": "ne + auxiliary + pas + participle.",
+            "id": "fr-016-e16"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «le voyage» mean?",
+            "audio": "le voyage",
+            "opcoes": [
+              "to go to bed",
+              "to come back home",
+              "to leave, to depart (parti)",
+              "the trip"
+            ],
+            "gabarito": "the trip",
+            "explicacao": "«le voyage» = the trip.",
+            "id": "fr-016-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: Yesterday I woke up at seven. I went to work. I didn't come back late.",
+            "respostaEsperada": "Hier, je me suis réveillé à sept heures. Je suis allé au travail. Je ne suis pas rentré tard.",
+            "id": "fr-016-e17"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Nous ___ allés à Lyon. (we are)",
+            "opcoes": [
+              "avons",
+              "sommes",
+              "êtes"
+            ],
+            "gabarito": "sommes",
+            "explicacao": "«Aller» uses «être»: «nous sommes allés».",
+            "id": "fr-016-e18"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle est ___ à neuf heures. (arrived)",
+            "opcoes": [
+              "arrivé",
+              "arrivés",
+              "arrivée"
+            ],
+            "gabarito": "arrivée",
+            "explicacao": "The participle agrees with the feminine subject.",
+            "id": "fr-016-e19"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Je suis allé à Paris",
+            "opcoes": [
+              "à",
+              "Paris",
+              "Je",
+              "suis",
+              "allé"
+            ],
+            "gabarito": "Je suis allé à Paris",
+            "explicacao": "Write: Je suis allé à Paris",
+            "id": "fr-016-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ils ont ___ le train. (pegaram)",
+            "opcoes": [
+              "pris",
+              "pri",
+              "prise"
+            ],
+            "gabarito": "pris",
+            "explicacao": "«Prendre» has a direct object: it uses «avoir», participle «pris».",
+            "id": "fr-016-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tu t'___ levée tôt, Marie ? (you are)",
+            "opcoes": [
+              "as",
+              "es",
+              "est"
+            ],
+            "gabarito": "es",
+            "explicacao": "Reflexive verbs use «être»: «tu t'es levée».",
+            "id": "fr-016-e21"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elles se sont ___ . (apressaram)",
+            "opcoes": [
+              "dépêché",
+              "dépêchés",
+              "dépêchées"
+            ],
+            "gabarito": "dépêchées",
+            "explicacao": "The participle agrees with the feminine plural subject.",
+            "id": "fr-016-e22"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Elle s'est levée",
+            "opcoes": [
+              "s'est",
+              "levée",
+              "Elle"
+            ],
+            "gabarito": "Elle s'est levée",
+            "explicacao": "Write: Elle s'est levée",
+            "id": "fr-016-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Elles sont parties.",
+              "Elles ont parties.",
+              "Elles sont parti."
+            ],
+            "gabarito": "Elles sont parties.",
+            "explicacao": "«Partir» uses «être» and the participle agrees.",
+            "id": "fr-016-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "With a direct object, which sentence is correct?",
+            "opcoes": [
+              "Je suis sorti la voiture.",
+              "J'ai sorti la voiture.",
+              "J'ai sortie la voiture."
+            ],
+            "gabarito": "J'ai sorti la voiture.",
+            "explicacao": "With a direct object, «sortir» uses «avoir».",
+            "id": "fr-016-e24"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the participle of «naître»?",
+            "opcoes": [
+              "naîtu",
+              "naissé",
+              "né"
+            ],
+            "gabarito": "né",
+            "explicacao": "«Naître» → «né».",
+            "id": "fr-016-e25"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Nous sommes arrivés",
+            "opcoes": [
+              "arrivés",
+              "sommes",
+              "Nous"
+            ],
+            "gabarito": "Nous sommes arrivés",
+            "explicacao": "Write: Nous sommes arrivés",
+            "id": "fr-016-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the correct negation?",
+            "opcoes": [
+              "Elle ne s'est pas couchée.",
+              "Elle s'est ne pas couchée.",
+              "Elle n'a pas couché se."
+            ],
+            "gabarito": "Elle ne s'est pas couchée.",
+            "explicacao": "The negation goes around the pronoun and the auxiliary.",
+            "id": "fr-016-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «We stayed at home.»",
+            "opcoes": [
+              "Nous",
+              "sommes",
+              "restés",
+              "à",
+              "la",
+              "maison"
+            ],
+            "gabarito": "Nous sommes restés à la maison.",
+            "explicacao": "«Rester» uses «être».",
+            "id": "fr-016-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Je suis resté chez moi",
+            "opcoes": [
+              "moi",
+              "suis",
+              "chez",
+              "resté",
+              "Je"
+            ],
+            "gabarito": "Je suis resté chez moi",
+            "explicacao": "Write: Je suis resté chez moi",
+            "id": "fr-016-x10",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «They (f.) went for a walk with Marie.»",
+            "opcoes": [
+              "Elles",
+              "se",
+              "sont",
+              "promenées",
+              "avec",
+              "Marie"
+            ],
+            "gabarito": "Elles se sont promenées avec Marie.",
+            "explicacao": "Reflexive verb: «être» and agreement.",
+            "id": "fr-016-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French (she): She arrived at the airport at ten o'clock. She did not stay there.",
+            "respostaEsperada": "Elle est arrivée à l'aéroport à dix heures. Elle n'est pas restée là.",
+            "id": "fr-016-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French (you are a woman): I got up at seven and got dressed.",
+            "respostaEsperada": "Je me suis levée à sept heures et je me suis habillée.",
+            "id": "fr-016-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Speak for 1 minute about your last trip or outing."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Tell about your day yesterday using both auxiliaries."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-016.json",
+  "responsavel": null
+}

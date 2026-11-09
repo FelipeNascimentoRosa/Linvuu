@@ -1,0 +1,513 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 192,
+  "fase": 20,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Giving opinions, agreeing and debating: Review and practice for lesson 48",
+  "objetivo": "Lesson 48, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 48,
+    "titulo": "Giving opinions, agreeing and debating",
+    "objetivo": "Express an opinion, agree, disagree and argue politely in a conversation or debate.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 48",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "À mon avis, c'est une bonne idée",
+            "opcoes": [
+              "À mon avis, c'est une bonne idée",
+              "À mon avis, c'est une mauvaise idée",
+              "À ton avis, c'est une bonne idée"
+            ],
+            "gabarito": "À mon avis, c'est une bonne idée",
+            "explicacao": "Listen to «mon avis».",
+            "id": "fr-048-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Tu as raison",
+            "opcoes": [
+              "Tu as raison",
+              "Tu as tort",
+              "Tu es raison"
+            ],
+            "gabarito": "Tu as raison",
+            "explicacao": "Listen to «raison».",
+            "id": "fr-048-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Je ne suis pas tout à fait d'accord",
+            "opcoes": [
+              "Je ne suis pas tout à fait d'accord",
+              "Je suis tout à fait d'accord",
+              "Je ne suis pas du tout d'accord"
+            ],
+            "gabarito": "Je ne suis pas tout à fait d'accord",
+            "explicacao": "Listen to «tout à fait».",
+            "id": "fr-048-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je trouve que c'est trop cher",
+            "respostaEsperada": "Je trouve que c'est trop cher",
+            "explicacao": "Write: Je trouve que c'est trop cher.",
+            "id": "fr-048-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Que penses-tu de ce film",
+            "respostaEsperada": "Que penses-tu de ce film",
+            "explicacao": "Write: Que penses-tu de ce film ?",
+            "id": "fr-048-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «You're right, but you can organize online meetings.»",
+            "opcoes": [
+              "on",
+              "cependant",
+              "réunions",
+              "raison,",
+              "as",
+              "peut",
+              "des",
+              "en",
+              "ligne.",
+              "Tu",
+              "organiser"
+            ],
+            "gabarito": "Tu as raison, cependant on peut organiser des réunions en ligne.",
+            "explicacao": "Write: Tu as raison, cependant on peut organiser des réunions en ligne.",
+            "id": "fr-048-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Oui, mais ce n'est pas la même chose",
+            "respostaEsperada": "Oui, mais ce n'est pas la même chose",
+            "explicacao": "Write: Oui, mais ce n'est pas la même chose.",
+            "id": "fr-048-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "à mon avis",
+            "respostaEsperada": "à mon avis",
+            "explicacao": "in my opinion",
+            "id": "fr-048-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "To contradict a negative:",
+            "opcoes": [
+              "si",
+              "oui",
+              "non"
+            ],
+            "gabarito": "si",
+            "explicacao": "— Tu n'es pas d'accord ? — Si !",
+            "id": "fr-048-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Je ne pense pas que» takes:",
+            "opcoes": [
+              "subjunctive",
+              "indicative",
+              "conditional"
+            ],
+            "gabarito": "subjunctive",
+            "explicacao": "Negation.",
+            "id": "fr-048-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "J'ai raison.",
+              "Je suis raison.",
+              "Je fais raison."
+            ],
+            "gabarito": "J'ai raison.",
+            "explicacao": "«Avoir raison».",
+            "id": "fr-048-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Tu as raison, cependant on peut organiser des réunions en ligne.",
+            "respostaEsperada": "Tu as raison, cependant on peut organiser des réunions en ligne.",
+            "explicacao": "You're right, but you can organize online meetings.",
+            "id": "fr-048-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Que penses-tu ___ ce film ?",
+            "opcoes": [
+              "de",
+              "à",
+              "sur"
+            ],
+            "gabarito": "de",
+            "explicacao": "Opinion: penser de.",
+            "id": "fr-048-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je suis d'accord ___ toi.",
+            "opcoes": [
+              "avec",
+              "de",
+              "à"
+            ],
+            "gabarito": "avec",
+            "explicacao": "Agreeing with someone.",
+            "id": "fr-048-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ moi, c'est trop cher. (for)",
+            "opcoes": [
+              "Pour",
+              "Par",
+              "En"
+            ],
+            "gabarito": "Pour",
+            "explicacao": "Opinion.",
+            "id": "fr-048-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "je trouve que",
+            "respostaEsperada": "je trouve que",
+            "explicacao": "I find that (feeling)",
+            "id": "fr-048-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il ___ tort. (avoir)",
+            "opcoes": [
+              "a",
+              "est",
+              "fait"
+            ],
+            "gabarito": "a",
+            "explicacao": "Avoir tort.",
+            "id": "fr-048-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Yes, but it's not the same as a coffee together.»",
+            "opcoes": [
+              "la",
+              "Oui,",
+              "ce",
+              "mais",
+              "même",
+              "qu'un",
+              "ensemble.",
+              "n'est",
+              "pas",
+              "chose",
+              "café"
+            ],
+            "gabarito": "Oui, mais ce n'est pas la même chose qu'un café ensemble.",
+            "explicacao": "Write: Oui, mais ce n'est pas la même chose qu'un café ensemble.",
+            "id": "fr-048-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je ne pense pas qu'il ___ raison. (avoir)",
+            "opcoes": [
+              "ait",
+              "a",
+              "aura"
+            ],
+            "gabarito": "ait",
+            "explicacao": "Subjunctive.",
+            "id": "fr-048-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Je trouve que c'est trop cher.»",
+            "opcoes": [
+              "Je",
+              "trouve",
+              "que",
+              "c'est",
+              "trop",
+              "cher"
+            ],
+            "gabarito": "Je trouve que c'est trop cher.",
+            "explicacao": "Opinion.",
+            "id": "fr-048-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Tu as raison, mais c'est cher.»",
+            "opcoes": [
+              "Tu",
+              "as",
+              "raison,",
+              "mais",
+              "c'est",
+              "cher"
+            ],
+            "gabarito": "Tu as raison, mais c'est cher.",
+            "explicacao": "Concession.",
+            "id": "fr-048-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: In my opinion, remote work is a good idea, but I think you lose contact. You are right.",
+            "respostaEsperada": "À mon avis, le télétravail est une bonne idée, mais je trouve qu'on perd le contact. Tu as raison.",
+            "id": "fr-048-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Oui, mais ce n'est pas la même chose qu'un café ensemble.",
+            "respostaEsperada": "Oui, mais ce n'est pas la même chose qu'un café ensemble.",
+            "explicacao": "Yes, but it's not the same as a coffee together.",
+            "id": "fr-048-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ penses-tu de ce film ? (O que)",
+            "opcoes": [
+              "Que",
+              "Quoi",
+              "Quel"
+            ],
+            "gabarito": "Que",
+            "explicacao": "«Que penses-tu de…» asks for an opinion.",
+            "id": "fr-048-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "en ce qui me concerne",
+            "respostaEsperada": "en ce qui me concerne",
+            "explicacao": "as far as I am concerned",
+            "id": "fr-048-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je suis ___ le télétravail. (in favor of)",
+            "opcoes": [
+              "contre",
+              "pour",
+              "par"
+            ],
+            "gabarito": "pour",
+            "explicacao": "«Pour» = in favor of.",
+            "id": "fr-048-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tu n'es pas d'accord ? — ___ , je suis d'accord ! (yes)",
+            "opcoes": [
+              "Oui",
+              "Non",
+              "Si"
+            ],
+            "gabarito": "Si",
+            "explicacao": "«Si» contradicts a negative question.",
+            "id": "fr-048-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "J'ai l'___ qu'il est fatigué. (impression)",
+            "opcoes": [
+              "impression",
+              "avis",
+              "raison"
+            ],
+            "gabarito": "impression",
+            "explicacao": "«Avoir l'impression que» + indicative.",
+            "id": "fr-048-e21"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Absolutely, I think it's a good compromise.»",
+            "opcoes": [
+              "c'est",
+              "compromis.",
+              "que",
+              "à",
+              "un",
+              "bon",
+              "trouve",
+              "fait,",
+              "je",
+              "Tout"
+            ],
+            "gabarito": "Tout à fait, je trouve que c'est un bon compromis.",
+            "explicacao": "Write: Tout à fait, je trouve que c'est un bon compromis.",
+            "id": "fr-048-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je ne suis pas ___ d'accord. (completely)",
+            "opcoes": [
+              "tout de suite",
+              "tout à fait",
+              "pas du tout"
+            ],
+            "gabarito": "tout à fait",
+            "explicacao": "«Pas tout à fait» softens the disagreement.",
+            "id": "fr-048-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you ask for clarification?",
+            "opcoes": [
+              "Qui tu veux dire ?",
+              "Quoi est-ce tu dire ?",
+              "Qu'est-ce que tu veux dire ?"
+            ],
+            "gabarito": "Qu'est-ce que tu veux dire ?",
+            "explicacao": "It is the natural formula.",
+            "id": "fr-048-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Je suis contre cette idée.",
+              "Je suis contre à cette idée.",
+              "Je suis contre de cette idée."
+            ],
+            "gabarito": "Je suis contre cette idée.",
+            "explicacao": "«Contre» needs no extra preposition.",
+            "id": "fr-048-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "pas du tout",
+            "respostaEsperada": "pas du tout",
+            "explicacao": "not at all",
+            "id": "fr-048-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which expression introduces a counter-argument?",
+            "opcoes": [
+              "C'est pourquoi…",
+              "On pourrait dire que… mais…",
+              "Premièrement…"
+            ],
+            "gabarito": "On pourrait dire que… mais…",
+            "explicacao": "It acknowledges the other side, then counter-argues.",
+            "id": "fr-048-e25"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Tout à fait, je trouve que c'est un bon compromis.",
+            "respostaEsperada": "Tout à fait, je trouve que c'est un bon compromis.",
+            "explicacao": "Absolutely, I think it's a good compromise.",
+            "id": "fr-048-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Il est tort.",
+              "Il a mauvais.",
+              "Il a tort."
+            ],
+            "gabarito": "Il a tort.",
+            "explicacao": "«Avoir tort» = to be wrong.",
+            "id": "fr-048-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «In my opinion, he is right.»",
+            "opcoes": [
+              "À",
+              "mon",
+              "avis,",
+              "il",
+              "a",
+              "raison"
+            ],
+            "gabarito": "À mon avis, il a raison.",
+            "explicacao": "«Avoir raison», not «être».",
+            "id": "fr-048-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «In a way, you are right.»",
+            "opcoes": [
+              "Dans",
+              "un",
+              "sens,",
+              "tu",
+              "as",
+              "raison"
+            ],
+            "gabarito": "Dans un sens, tu as raison.",
+            "explicacao": "Partial agreement.",
+            "id": "fr-048-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I agree with you. He is wrong.",
+            "respostaEsperada": "Je suis d'accord avec toi. Il a tort.",
+            "id": "fr-048-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I am against the idea. What do you think about it?",
+            "respostaEsperada": "Je suis contre l'idée. Qu'en penses-tu ?",
+            "id": "fr-048-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Speak for 1 minute defending or criticizing an idea, with thesis, argument and conclusion."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Debate a simple topic aloud: thesis, argument, concession and conclusion."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-048.json",
+  "responsavel": null
+}

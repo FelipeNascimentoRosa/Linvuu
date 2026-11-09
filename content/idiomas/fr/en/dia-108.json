@@ -1,0 +1,516 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 108,
+  "fase": 11,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Travel: hotel, airport and bookings: Review and practice for lesson 27",
+  "objetivo": "Lesson 27, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 27,
+    "titulo": "Travel: hotel, airport and bookings",
+    "objetivo": "Book a room, check in, solve problems at the hotel and get by at the airport, with polite questions and requests.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 27",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "J'ai une réservation au nom de Silva",
+            "opcoes": [
+              "J'ai une réservation au nom de Silva",
+              "Je voudrais une réservation au nom de Silva",
+              "J'ai une chambre au nom de Silva"
+            ],
+            "gabarito": "J'ai une réservation au nom de Silva",
+            "explicacao": "Listen to «réservation».",
+            "id": "fr-027-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Le wifi ne marche pas",
+            "opcoes": [
+              "Le wifi ne marche pas",
+              "Le wifi marche bien",
+              "Le wifi est cher"
+            ],
+            "gabarito": "Le wifi ne marche pas",
+            "explicacao": "Listen to «ne marche pas».",
+            "id": "fr-027-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "À quelle heure est l'embarquement ?",
+            "opcoes": [
+              "À quelle heure est l'embarquement ?",
+              "À quelle heure est le petit-déjeuner ?",
+              "Quelle est la porte ?"
+            ],
+            "gabarito": "À quelle heure est l'embarquement ?",
+            "explicacao": "Listen to «embarquement».",
+            "id": "fr-027-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Je voudrais réserver une chambre",
+            "respostaEsperada": "Je voudrais réserver une chambre",
+            "explicacao": "Write: Je voudrais réserver une chambre.",
+            "id": "fr-027-e04"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Perfect. Could you call a taxi for tomorrow morning at eight?»",
+            "opcoes": [
+              "demain",
+              "huit",
+              "un",
+              "heures",
+              "Parfait.",
+              "?",
+              "à",
+              "taxi",
+              "matin",
+              "m'appeler",
+              "Pourriez-vous"
+            ],
+            "gabarito": "Parfait. Pourriez-vous m'appeler un taxi demain matin à huit heures ?",
+            "explicacao": "Write: Parfait. Pourriez-vous m'appeler un taxi demain matin à huit heures ?",
+            "id": "fr-027-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Il n'y a plus de serviettes",
+            "respostaEsperada": "Il n'y a plus de serviettes",
+            "explicacao": "Write: Il n'y a plus de serviettes.",
+            "id": "fr-027-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Le vol est en retard",
+            "respostaEsperada": "Le vol est en retard",
+            "explicacao": "Write: Le vol est en retard.",
+            "id": "fr-027-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Polite request for a room:",
+            "opcoes": [
+              "Je voudrais réserver une chambre.",
+              "Je veux une chambre.",
+              "Donnez-moi une chambre."
+            ],
+            "gabarito": "Je voudrais réserver une chambre.",
+            "explicacao": "Conditional.",
+            "id": "fr-027-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Compris» in a hotel means:",
+            "opcoes": [
+              "included",
+              "entendido",
+              "lotado"
+            ],
+            "gabarito": "included",
+            "explicacao": "Breakfast included.",
+            "id": "fr-027-e08"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Parfait. Pourriez-vous m'appeler un taxi demain matin à huit heures ?",
+            "respostaEsperada": "Parfait. Pourriez-vous m'appeler un taxi demain matin à huit heures ?",
+            "explicacao": "Perfect. Could you call a taxi for tomorrow morning at eight?",
+            "id": "fr-027-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Bonjour. J'ai une réservation au nom de Silva.",
+            "respostaEsperada": "Bonjour. J'ai une réservation au nom de Silva.",
+            "explicacao": "Good morning. I have a reservation under the name Silva.",
+            "id": "fr-027-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "L'ascenseur est en panne.",
+              "L'ascenseur est panne.",
+              "L'ascenseur a panne."
+            ],
+            "gabarito": "L'ascenseur est en panne.",
+            "explicacao": "«En panne».",
+            "id": "fr-027-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "À quelle heure est le petit-déjeuner ?",
+              "Quel heure est le petit-déjeuner ?",
+              "À quel heure est le petit-déjeuner ?"
+            ],
+            "gabarito": "À quelle heure est le petit-déjeuner ?",
+            "explicacao": "«Heure» is feminine.",
+            "id": "fr-027-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il n'y a plus ___ serviettes.",
+            "opcoes": [
+              "de",
+              "des",
+              "les"
+            ],
+            "gabarito": "de",
+            "explicacao": "Negative: «de».",
+            "id": "fr-027-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «le petit-déjeuner» mean?",
+            "audio": "le petit-déjeuner",
+            "opcoes": [
+              "the reception desk",
+              "the night (as in per night)",
+              "breakfast",
+              "limpo"
+            ],
+            "gabarito": "breakfast",
+            "explicacao": "«le petit-déjeuner» = breakfast.",
+            "id": "fr-027-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Mes bagages ___ perdus.",
+            "opcoes": [
+              "sont",
+              "est",
+              "ont"
+            ],
+            "gabarito": "sont",
+            "explicacao": "Plural.",
+            "id": "fr-027-e12"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Je voudrais ___ mes bagages. (despachar)",
+            "opcoes": [
+              "enregistrer",
+              "enregistré",
+              "enregistre"
+            ],
+            "gabarito": "enregistrer",
+            "explicacao": "Infinitive.",
+            "id": "fr-027-e13"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Pour trois ___ . (nights)",
+            "opcoes": [
+              "nuits",
+              "nuit",
+              "nuites"
+            ],
+            "gabarito": "nuits",
+            "explicacao": "Plural.",
+            "id": "fr-027-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Pourriez-vous appeler un taxi ?»",
+            "opcoes": [
+              "Pourriez-vous",
+              "appeler",
+              "un",
+              "taxi"
+            ],
+            "gabarito": "Pourriez-vous appeler un taxi ?",
+            "explicacao": "Polite request.",
+            "id": "fr-027-e15"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Voilà. Le petit-déjeuner est compris ?",
+            "respostaEsperada": "Voilà. Le petit-déjeuner est compris ?",
+            "explicacao": "Here you are. Is breakfast included?",
+            "id": "fr-027-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «complet» mean?",
+            "audio": "complet",
+            "opcoes": [
+              "the luggage",
+              "a room",
+              "lotado",
+              "breakfast"
+            ],
+            "gabarito": "lotado",
+            "explicacao": "«complet» = lotado.",
+            "id": "fr-027-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Le wifi ne marche pas.»",
+            "opcoes": [
+              "Le",
+              "wifi",
+              "ne",
+              "marche",
+              "pas"
+            ],
+            "gabarito": "Le wifi ne marche pas.",
+            "explicacao": "ne + verb + pas.",
+            "id": "fr-027-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I would like to book a room for two people. Is breakfast included? The elevator is broken.",
+            "respostaEsperada": "Je voudrais réserver une chambre pour deux personnes. Le petit-déjeuner est compris ? L'ascenseur est en panne.",
+            "id": "fr-027-e17"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Avez-vous une chambre ___ ? (livre)",
+            "opcoes": [
+              "libre",
+              "complet",
+              "propre"
+            ],
+            "gabarito": "libre",
+            "explicacao": "«Libre» = available.",
+            "id": "fr-027-e18"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Le petit-déjeuner est ___ . (included)",
+            "opcoes": [
+              "complet",
+              "compris",
+              "pris"
+            ],
+            "gabarito": "compris",
+            "explicacao": "«Compris» = included.",
+            "id": "fr-027-e19"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «la douche» mean?",
+            "audio": "la douche",
+            "opcoes": [
+              "the shower",
+              "the key",
+              "delayed",
+              "a towel"
+            ],
+            "gabarito": "the shower",
+            "explicacao": "«la douche» = the shower.",
+            "id": "fr-027-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il n'y a plus ___ eau chaude. (de)",
+            "opcoes": [
+              "de l'",
+              "des",
+              "d'"
+            ],
+            "gabarito": "d'",
+            "explicacao": "After «ne… plus», the article becomes «de» (d' before a vowel).",
+            "id": "fr-027-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "La chambre est ___ bruyante. (too)",
+            "opcoes": [
+              "trop",
+              "aussi",
+              "jamais"
+            ],
+            "gabarito": "trop",
+            "explicacao": "«Trop» + adjective = too.",
+            "id": "fr-027-e21"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Quelle est la ___ d'embarquement ? (gate)",
+            "opcoes": [
+              "clé",
+              "porte",
+              "sortie"
+            ],
+            "gabarito": "porte",
+            "explicacao": "«Porte d'embarquement» = boarding gate.",
+            "id": "fr-027-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you politely ask someone to call a taxi?",
+            "opcoes": [
+              "Appelle un taxi !",
+              "Je veux un taxi.",
+              "Pourriez-vous appeler un taxi ?"
+            ],
+            "gabarito": "Pourriez-vous appeler un taxi ?",
+            "explicacao": "The conditional makes the request polite.",
+            "id": "fr-027-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «l'embarquement» mean?",
+            "audio": "l'embarquement",
+            "opcoes": [
+              "the boarding",
+              "the key",
+              "lotado",
+              "a room"
+            ],
+            "gabarito": "the boarding",
+            "explicacao": "«l'embarquement» = boarding.",
+            "id": "fr-027-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Oui, de sept heures à dix heures, au rez-de-chaussée.",
+            "respostaEsperada": "Oui, de sept heures à dix heures, au rez-de-chaussée.",
+            "explicacao": "Yes, from seven to ten, on the ground floor.",
+            "id": "fr-027-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Mes bagages sont perdus.",
+              "Mes bagages est perdu.",
+              "Mon bagages sont perdus."
+            ],
+            "gabarito": "Mes bagages sont perdus.",
+            "explicacao": "«Bagages» is plural: «mes… sont perdus».",
+            "id": "fr-027-e24"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «complet» mean in a hotel?",
+            "opcoes": [
+              "limpo",
+              "lotado",
+              "cheap"
+            ],
+            "gabarito": "lotado",
+            "explicacao": "«Complet» = no vacancies.",
+            "id": "fr-027-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you ask what time check-out is?",
+            "opcoes": [
+              "Le check-out est quel heure ?",
+              "Quelle heure le check-out est ?",
+              "Le check-out est à quelle heure ?"
+            ],
+            "gabarito": "Le check-out est à quelle heure ?",
+            "explicacao": "«À quelle heure» asks for the time.",
+            "id": "fr-027-e26"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «en panne» mean?",
+            "audio": "en panne",
+            "opcoes": [
+              "out of order",
+              "the key",
+              "the luggage",
+              "a room"
+            ],
+            "gabarito": "out of order",
+            "explicacao": "«en panne» = out of order.",
+            "id": "fr-027-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «I would like a room with a view.»",
+            "opcoes": [
+              "Je",
+              "voudrais",
+              "une",
+              "chambre",
+              "avec",
+              "vue"
+            ],
+            "gabarito": "Je voudrais une chambre avec vue.",
+            "explicacao": "«Je voudrais» + noun.",
+            "id": "fr-027-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «The air conditioning doesn't work.»",
+            "opcoes": [
+              "La",
+              "climatisation",
+              "ne",
+              "marche",
+              "pas"
+            ],
+            "gabarito": "La climatisation ne marche pas.",
+            "explicacao": "«Ne… pas» wraps around «marche».",
+            "id": "fr-027-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I have a reservation for three nights. The key, please.",
+            "respostaEsperada": "J'ai une réservation pour trois nuits. La clé, s'il vous plaît.",
+            "id": "fr-027-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: The shower is faulty. Can you send someone?",
+            "respostaEsperada": "La douche est en panne. Pourriez-vous envoyer quelqu'un ?",
+            "id": "fr-027-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Speak for 1 minute about a trip you would like to take, with hotel and airport."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Book a room and ask for a taxi, out loud."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-027.json",
+  "responsavel": null
+}

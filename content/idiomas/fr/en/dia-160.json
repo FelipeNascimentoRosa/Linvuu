@@ -1,0 +1,523 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 160,
+  "fase": 16,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Indirect speech: reporting what someone said: Review and practice for lesson 40",
+  "objetivo": "Lesson 40, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 40,
+    "titulo": "Indirect speech: reporting what someone said",
+    "objetivo": "Report what someone said, asked or requested, in the present and the past, with the changes of tense and pronouns.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 40",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Il a dit qu'il viendrait",
+            "opcoes": [
+              "Il a dit qu'il viendrait",
+              "Il a dit qu'il viendra",
+              "Il dit qu'il vient"
+            ],
+            "gabarito": "Il a dit qu'il viendrait",
+            "explicacao": "Listen to «viendrait».",
+            "id": "fr-040-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Il demande si tu viens",
+            "opcoes": [
+              "Il demande si tu viens",
+              "Il demande si viens-tu",
+              "Il dit que tu viens"
+            ],
+            "gabarito": "Il demande si tu viens",
+            "explicacao": "Listen to «si tu viens».",
+            "id": "fr-040-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Elle m'a conseillé de partir",
+            "opcoes": [
+              "Elle m'a conseillé de partir",
+              "Elle m'a conseillé partir",
+              "Elle m'a dit de partir"
+            ],
+            "gabarito": "Elle m'a conseillé de partir",
+            "explicacao": "Listen to «conseillé de».",
+            "id": "fr-040-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Il a dit qu'il était fatigué",
+            "respostaEsperada": "Il a dit qu'il était fatigué",
+            "explicacao": "Write: Il a dit qu'il était fatigué.",
+            "id": "fr-040-e04"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «So, what did the boss say at the meeting?»",
+            "opcoes": [
+              "patron",
+              "le",
+              "à",
+              "la",
+              "a",
+              "Alors,",
+              "qu'est-ce",
+              "que",
+              "?",
+              "réunion",
+              "dit"
+            ],
+            "gabarito": "Alors, qu'est-ce que le patron a dit à la réunion ?",
+            "explicacao": "Write: Alors, qu'est-ce que le patron a dit à la réunion ?",
+            "id": "fr-040-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Elle a demandé si j'avais mangé",
+            "respostaEsperada": "Elle a demandé si j'avais mangé",
+            "explicacao": "Write: Elle a demandé si j'avais mangé.",
+            "id": "fr-040-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Il a promis de venir",
+            "respostaEsperada": "Il a promis de venir",
+            "explicacao": "Write: Il a promis de venir.",
+            "id": "fr-040-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Il a dit: «Je suis fatigué.» → indirect speech:",
+            "opcoes": [
+              "Il a dit qu'il était fatigué.",
+              "Il a dit qu'il est fatigué.",
+              "Il a dit qu'il serait fatigué."
+            ],
+            "gabarito": "Il a dit qu'il était fatigué.",
+            "explicacao": "Present → imparfait.",
+            "id": "fr-040-e07"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Alors, qu'est-ce que le patron a dit à la réunion ?",
+            "respostaEsperada": "Alors, qu'est-ce que le patron a dit à la réunion ?",
+            "explicacao": "So, what did the boss say at the meeting?",
+            "id": "fr-040-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Il a dit: «Je viendrai.» → indirect speech:",
+            "opcoes": [
+              "Il a dit qu'il viendrait.",
+              "Il a dit qu'il viendra.",
+              "Il a dit qu'il venait."
+            ],
+            "gabarito": "Il a dit qu'il viendrait.",
+            "explicacao": "Future → conditional.",
+            "id": "fr-040-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Il a demandé: «Tu viens ?» → indirect speech:",
+            "opcoes": [
+              "Il a demandé si je venais.",
+              "Il a demandé si venais-je.",
+              "Il a demandé que je venais."
+            ],
+            "gabarito": "Il a demandé si je venais.",
+            "explicacao": "No inversion.",
+            "id": "fr-040-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Prometeu vir»:",
+            "opcoes": [
+              "Il a promis de venir.",
+              "Il a promis venir.",
+              "Il a promis à venir."
+            ],
+            "gabarito": "Il a promis de venir.",
+            "explicacao": "«Promettre de».",
+            "id": "fr-040-e10"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Il a dit qu'il était content de nos résultats.",
+            "respostaEsperada": "Il a dit qu'il était content de nos résultats.",
+            "explicacao": "He said he was pleased with our results.",
+            "id": "fr-040-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «And the bonus? Did he mention it?»",
+            "opcoes": [
+              "la",
+              "parlé",
+              "?",
+              "en",
+              "prime",
+              "Il",
+              "pour",
+              "a",
+              "?",
+              "Et"
+            ],
+            "gabarito": "Et pour la prime ? Il en a parlé ?",
+            "explicacao": "Write: Et pour la prime ? Il en a parlé ?",
+            "id": "fr-040-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il a dit qu'il ___ fini. (he had)",
+            "opcoes": [
+              "avait",
+              "a",
+              "aurait"
+            ],
+            "gabarito": "avait",
+            "explicacao": "Plus-que-parfait.",
+            "id": "fr-040-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle m'a dit ___ venir.",
+            "opcoes": [
+              "de",
+              "à",
+              "que"
+            ],
+            "gabarito": "de",
+            "explicacao": "«Dire de».",
+            "id": "fr-040-e12"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il demande ___ tu habites. (where)",
+            "opcoes": [
+              "où",
+              "quoi",
+              "ce"
+            ],
+            "gabarito": "où",
+            "explicacao": "Indirect question.",
+            "id": "fr-040-e13"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Et pour la prime ? Il en a parlé ?",
+            "respostaEsperada": "Et pour la prime ? Il en a parlé ?",
+            "explicacao": "And the bonus? Did he mention it?",
+            "id": "fr-040-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle a demandé ___ je voulais. (what)",
+            "opcoes": [
+              "ce que",
+              "qu'est-ce que",
+              "que"
+            ],
+            "gabarito": "ce que",
+            "explicacao": "Indirect question.",
+            "id": "fr-040-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Il m'a dit qu'il était fatigué.»",
+            "opcoes": [
+              "Il",
+              "m'a",
+              "dit",
+              "qu'il",
+              "était",
+              "fatigué"
+            ],
+            "gabarito": "Il m'a dit qu'il était fatigué.",
+            "explicacao": "Imparfait in indirect speech.",
+            "id": "fr-040-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Elle m'a demandé si j'avais mangé.»",
+            "opcoes": [
+              "Elle",
+              "m'a",
+              "demandé",
+              "si",
+              "j'avais",
+              "mangé"
+            ],
+            "gabarito": "Elle m'a demandé si j'avais mangé.",
+            "explicacao": "Plus-que-parfait.",
+            "id": "fr-040-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: He said he was tired. She asked if I was coming. He promised to call me.",
+            "respostaEsperada": "Il a dit qu'il était fatigué. Elle a demandé si je venais. Il a promis de m'appeler.",
+            "id": "fr-040-e17"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «He promised to give us an answer next week.»",
+            "opcoes": [
+              "Il",
+              "de",
+              "a",
+              "réponse",
+              "une",
+              "donner",
+              "la",
+              "prochaine.",
+              "semaine",
+              "promis",
+              "nous"
+            ],
+            "gabarito": "Il a promis de nous donner une réponse la semaine prochaine.",
+            "explicacao": "Write: Il a promis de nous donner une réponse la semaine prochaine.",
+            "id": "fr-040-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle dit qu'elle ___ fatiguée. (é)",
+            "opcoes": [
+              "était",
+              "est",
+              "serait"
+            ],
+            "gabarito": "est",
+            "explicacao": "Introductory verb in the present: the tense does not change.",
+            "id": "fr-040-e18"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il a dit qu'il ___ le lendemain. (would come)",
+            "opcoes": [
+              "viendra",
+              "vient",
+              "viendrait"
+            ],
+            "gabarito": "viendrait",
+            "explicacao": "Future in the past: conditional.",
+            "id": "fr-040-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle demande ___ tu viens. (se)",
+            "opcoes": [
+              "si",
+              "que",
+              "de"
+            ],
+            "gabarito": "si",
+            "explicacao": "Indirect yes/no question: «si».",
+            "id": "fr-040-e20"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Il a promis de nous donner une réponse la semaine prochaine.",
+            "respostaEsperada": "Il a promis de nous donner une réponse la semaine prochaine.",
+            "explicacao": "He promised to give us an answer next week.",
+            "id": "fr-040-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Il a demandé si quelqu'un avait des questions ?",
+            "respostaEsperada": "Il a demandé si quelqu'un avait des questions ?",
+            "explicacao": "Did he ask if anyone had questions?",
+            "id": "fr-040-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il m'a interdit ___ fumer. (de)",
+            "opcoes": [
+              "à",
+              "de",
+              "que"
+            ],
+            "gabarito": "de",
+            "explicacao": "«Interdire de» + infinitive.",
+            "id": "fr-040-e21"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il a dit qu'il ___ aller au cinéma. (ia)",
+            "opcoes": [
+              "va",
+              "ira",
+              "allait"
+            ],
+            "gabarito": "allait",
+            "explicacao": "Near future in the past: «aller» in the imparfait.",
+            "id": "fr-040-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Il a dit : « J'ai fini. »» in indirect speech:",
+            "opcoes": [
+              "Il a dit qu'il avait fini.",
+              "Il a dit qu'il a fini.",
+              "Il a dit qu'il finissait."
+            ],
+            "gabarito": "Il a dit qu'il avait fini.",
+            "explicacao": "Passé composé → plus-que-parfait.",
+            "id": "fr-040-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «dire que» mean?",
+            "audio": "dire que",
+            "opcoes": [
+              "to advise",
+              "to ask to",
+              "was",
+              "to say that"
+            ],
+            "gabarito": "to say that",
+            "explicacao": "«dire que» = to say that.",
+            "id": "fr-040-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Elle a demandé : « Où habites-tu ? »» in indirect speech:",
+            "opcoes": [
+              "Elle a demandé où habitais-je.",
+              "Elle a demandé où j'habitais.",
+              "Elle a demandé où est-ce que j'habitais."
+            ],
+            "gabarito": "Elle a demandé où j'habitais.",
+            "explicacao": "The indirect question has no inversion.",
+            "id": "fr-040-e24"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Il m'a conseillé partir.",
+              "Il m'a conseillé à partir.",
+              "Il m'a conseillé de partir."
+            ],
+            "gabarito": "Il m'a conseillé de partir.",
+            "explicacao": "«Conseiller de» + infinitive.",
+            "id": "fr-040-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "In indirect speech in the past, «demain» becomes:",
+            "opcoes": [
+              "le lendemain",
+              "hier",
+              "maintenant"
+            ],
+            "gabarito": "le lendemain",
+            "explicacao": "«Demain» → «le lendemain».",
+            "id": "fr-040-e26"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «rapporter» mean?",
+            "audio": "rapporter",
+            "opcoes": [
+              "to report",
+              "had finished",
+              "to ask to",
+              "prometer"
+            ],
+            "gabarito": "to report",
+            "explicacao": "«rapporter» = to report.",
+            "id": "fr-040-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «She answered that she would come.»",
+            "opcoes": [
+              "Elle",
+              "a",
+              "répondu",
+              "qu'elle",
+              "viendrait"
+            ],
+            "gabarito": "Elle a répondu qu'elle viendrait.",
+            "explicacao": "Future → conditional.",
+            "id": "fr-040-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «He asks where you live.»",
+            "opcoes": [
+              "Il",
+              "demande",
+              "où",
+              "tu",
+              "habites"
+            ],
+            "gabarito": "Il demande où tu habites.",
+            "explicacao": "No inversion in the indirect question.",
+            "id": "fr-040-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: She said she was pleased. He asked me where I lived.",
+            "respostaEsperada": "Elle a dit qu'elle était contente. Il m'a demandé où j'habitais.",
+            "id": "fr-040-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: He promised to come tomorrow. She advised me to sleep.",
+            "respostaEsperada": "Il a promis de venir demain. Elle m'a conseillé de dormir.",
+            "id": "fr-040-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Speak for 1 minute telling about a conversation you had, using indirect speech."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Report a recent conversation out loud, with indirect speech."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-040.json",
+  "responsavel": null
+}

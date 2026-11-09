@@ -1,0 +1,170 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 43,
+  "fase": 5,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "The routine: reflexive verbs, frequency and -ir verbs: -ir verbs and a day's routine",
+  "objetivo": "Lesson 11, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 11,
+    "titulo": "The routine: reflexive verbs, frequency and -ir verbs",
+    "objetivo": "Talk about your daily routine with reflexive verbs, say how often you do things, and conjugate regular -ir verbs.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "-ir verbs and a day's routine",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "finir",
+            "translit": "fee-NEER",
+            "pt": "",
+            "en": "",
+            "audio": "finir"
+          },
+          {
+            "ru": "choisir",
+            "translit": "shwah-ZEER",
+            "pt": "",
+            "en": "",
+            "audio": "choisir"
+          },
+          {
+            "ru": "réussir",
+            "translit": "ray-ew-SEER",
+            "pt": "",
+            "en": "",
+            "audio": "réussir"
+          },
+          {
+            "ru": "grandir",
+            "translit": "grahn-DEER",
+            "pt": "",
+            "en": "",
+            "audio": "grandir"
+          },
+          {
+            "ru": "obéir",
+            "translit": "oh-bay-EER",
+            "pt": "",
+            "en": "",
+            "audio": "obéir"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Regular -ir verbs",
+        "explicacao": "STEP 1: regular «-ir» verbs drop the «-ir» and take «-is, -is, -it, -issons, -issez, -issent»: «finir → je finis, tu finis, il finit, nous finissons, vous finissez, ils finissent». STEP 2: notice the «-iss-» in the plural? It sets this group apart from the irregular ones. STEP 3: pronunciation: «je finis», «tu finis» and «il finit» sound the same: «fee-NEE». Only in the plural does the sound «fee-nee-SOHN» appear (the final n is not pronounced). STEP 4: use them for actions with a result: «Je finis à six heures.» «Elle choisit un livre.» STEP 5: careful: «partir», «dormir» and «sortir» end in «-ir», but they are irregular and have no «-iss-»; they come later.",
+        "comparacao": "English verbs have no groups like this («I finish», «he finishes»). French regular «-ir» verbs take «-iss-» in the plural, a feature that identifies the group.",
+        "tabelas": [
+          {
+            "title": "finir (to finish)",
+            "linhas": [
+              {
+                "pronoun": "je",
+                "form": "finis",
+                "example": "Je finis à six heures."
+              },
+              {
+                "pronoun": "tu",
+                "form": "finis",
+                "example": "Tu finis le travail."
+              },
+              {
+                "pronoun": "il / elle / on",
+                "form": "finit",
+                "example": "Elle finit tard."
+              },
+              {
+                "pronoun": "nous",
+                "form": "finissons",
+                "example": "Nous finissons ensemble."
+              },
+              {
+                "pronoun": "vous",
+                "form": "finissez",
+                "example": "Vous finissez à midi."
+              },
+              {
+                "pronoun": "ils / elles",
+                "form": "finissent",
+                "example": "Ils finissent le repas."
+              }
+            ]
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je finit à six heures.",
+            "certo": "Je finis à six heures.",
+            "motivo": "«Je» takes «-is»."
+          },
+          {
+            "errado": "Nous finions.",
+            "certo": "Nous finissons.",
+            "motivo": "The plural takes «-iss-»."
+          },
+          {
+            "errado": "Il finis.",
+            "certo": "Il finit.",
+            "motivo": "«Il» takes «-it»."
+          },
+          {
+            "errado": "Ils finent.",
+            "certo": "Ils finissent.",
+            "motivo": "The plural takes «-iss-» and «-ent»."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "texto",
+        "min": 8,
+        "titulo": "Ma journée / My day",
+        "ru": "Je m'appelle Julien et je suis ingénieur. Je me réveille à six heures et demie et je me lève à sept heures. Je me lave, je m'habille et je prends le petit-déjeuner. Je prends toujours un café avec du pain. Je vais au travail en métro. Je finis à six heures. Le soir, je dîne avec ma famille et je ne me couche jamais très tard. Le week-end, je me promène souvent avec mes amis.",
+        "pt": "My name is Julien and I'm an engineer. I wake up at half past six and get up at seven. I wash, get dressed and have breakfast. I always have a coffee with bread. I go to work by metro. I finish at six. In the evening, I have dinner with my family and I never go to bed very late. At the weekend, I often go for a walk with my friends.",
+        "perguntas": [
+          {
+            "pergunta": "À quelle heure se lève Julien ?",
+            "resposta": "À sept heures."
+          },
+          {
+            "pergunta": "Qu'est-ce qu'il prend au petit-déjeuner ?",
+            "resposta": "Un café avec du pain."
+          },
+          {
+            "pergunta": "Comment va-t-il au travail ?",
+            "resposta": "En métro."
+          },
+          {
+            "pergunta": "Que fait-il le week-end ?",
+            "resposta": "Il se promène avec ses amis."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Write and read aloud a text of six sentences about your day, using reflexive verbs, «toujours» and «finir»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say four of your habits with adverbs of frequency."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-011.json",
+  "responsavel": null
+}

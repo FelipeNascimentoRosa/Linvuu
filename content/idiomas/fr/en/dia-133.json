@@ -1,0 +1,159 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 133,
+  "fase": 14,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Complete questions and connectors: Three ways to ask",
+  "objetivo": "Lesson 34, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 34,
+    "titulo": "Complete questions and connectors",
+    "objetivo": "Ask questions in three ways, use «quel», «lequel» and «qu'est-ce que», and link ideas with «mais», «parce que», «donc», «pourtant», «alors» and «d'abord… ensuite».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Three ways to ask",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "quel",
+            "translit": "KEHL",
+            "pt": "",
+            "en": "",
+            "audio": "quel"
+          },
+          {
+            "ru": "lequel",
+            "translit": "luh-KEHL",
+            "pt": "",
+            "en": "",
+            "audio": "lequel"
+          },
+          {
+            "ru": "qu'est-ce que",
+            "translit": "ehs-KUH",
+            "pt": "",
+            "en": "",
+            "audio": "qu'est-ce que"
+          },
+          {
+            "ru": "qu'est-ce qui",
+            "translit": "ehs-KEE",
+            "pt": "",
+            "en": "",
+            "audio": "qu'est-ce qui"
+          },
+          {
+            "ru": "pourquoi",
+            "translit": "poor-KWAH",
+            "pt": "",
+            "en": "",
+            "audio": "pourquoi"
+          },
+          {
+            "ru": "comment",
+            "translit": "koh-MAHN",
+            "pt": "",
+            "en": "",
+            "audio": "comment"
+          },
+          {
+            "ru": "combien",
+            "translit": "kohn-bee-AN",
+            "pt": "",
+            "en": "",
+            "audio": "combien"
+          },
+          {
+            "ru": "où",
+            "translit": "OO",
+            "pt": "",
+            "en": "",
+            "audio": "où"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "How to ask a question in French",
+        "explicacao": "STEP 1: there are three ways to ask a question. FORM 1 (informal): intonation: «Tu viens ?» FORM 2 (neutral): «est-ce que»: «Est-ce que tu viens ?» FORM 3 (formal): inversion: «Viens-tu ?» «Venez-vous ?» STEP 2: with a question word (informal): «Tu vas où ?» «Tu travailles comment ?» (neutral): «Où est-ce que tu vas ?» (formal): «Où vas-tu ?» STEP 3: «qu'est-ce que» + subject + verb (what): «Qu'est-ce que tu fais ?» (short form: «Que fais-tu ?») STEP 4: «qu'est-ce qui» + verb (what, as the subject): «Qu'est-ce qui se passe ?» STEP 5: «quel/quelle/quels/quelles» agree with the noun: «Quel âge as-tu ?» «Quelle heure est-il ?» «Quels films aimes-tu ?» STEP 6: «lequel / laquelle / lesquels / lesquelles» (which one of several): «J'ai deux livres. Lequel veux-tu ?» STEP 7: inversion with a «t» between vowels: «Parle-t-il français ?» «A-t-elle faim ?» STEP 8: «yes/no» questions in the past: «Est-ce que tu as mangé ?» «As-tu mangé ?»",
+        "comparacao": "In English we form questions with 'do' or by swapping the order («Are you coming?»). French can also ask with intonation alone («tu viens ?»), and it offers «est-ce que» and inversion. In informal speech, intonation is enough; in writing and formal situations, prefer «est-ce que» or inversion.",
+        "tabela": [
+          {
+            "register": "informal",
+            "sentence": "Tu vas où ?"
+          },
+          {
+            "register": "neutral",
+            "sentence": "Où est-ce que tu vas ?"
+          },
+          {
+            "register": "formal",
+            "sentence": "Où vas-tu ?"
+          },
+          {
+            "register": "what (object)",
+            "sentence": "Qu'est-ce que tu fais ?"
+          },
+          {
+            "register": "what (subject)",
+            "sentence": "Qu'est-ce qui se passe ?"
+          },
+          {
+            "register": "which",
+            "sentence": "Quelle heure est-il ?"
+          },
+          {
+            "register": "which one (of several)",
+            "sentence": "Lequel veux-tu ?"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Qu'est-ce que se passe ?",
+            "certo": "Qu'est-ce qui se passe ?",
+            "motivo": "Subject: «qui»."
+          },
+          {
+            "errado": "Quel heure est-il ?",
+            "certo": "Quelle heure est-il ?",
+            "motivo": "«Heure» is feminine."
+          },
+          {
+            "errado": "Où est-ce que vas-tu ?",
+            "certo": "Où vas-tu ? / Où est-ce que tu vas ?",
+            "motivo": "Choose a form."
+          },
+          {
+            "errado": "Parle il français ?",
+            "certo": "Parle-t-il français ?",
+            "motivo": "Hyphen and «t»."
+          }
+        ],
+        "tag": "Questions"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say the same question out loud in the three forms: «Tu viens ? Est-ce que tu viens ? Viens-tu ?»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Answer negative questions with «si» and «moi non plus»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-034.json",
+  "responsavel": null
+}

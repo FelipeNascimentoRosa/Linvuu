@@ -1,0 +1,155 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 105,
+  "fase": 11,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Travel: hotel, airport and bookings: Booking and checking in",
+  "objetivo": "Lesson 27, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 27,
+    "titulo": "Travel: hotel, airport and bookings",
+    "objetivo": "Book a room, check in, solve problems at the hotel and get by at the airport, with polite questions and requests.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Booking and checking in",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "une chambre",
+            "translit": "ewn SHAHNBR",
+            "pt": "",
+            "en": "",
+            "audio": "une chambre"
+          },
+          {
+            "ru": "une réservation",
+            "translit": "ewn ray-zehr-vah-SYOHN",
+            "pt": "",
+            "en": "",
+            "audio": "une réservation"
+          },
+          {
+            "ru": "la clé",
+            "translit": "lah KLAY",
+            "pt": "",
+            "en": "",
+            "audio": "la clé"
+          },
+          {
+            "ru": "le petit-déjeuner",
+            "translit": "luh puh-tee-day-zhuh-NAY",
+            "pt": "",
+            "en": "",
+            "audio": "le petit-déjeuner"
+          },
+          {
+            "ru": "la nuit",
+            "translit": "lah NWEE",
+            "pt": "",
+            "en": "",
+            "audio": "la nuit"
+          },
+          {
+            "ru": "la réception",
+            "translit": "lah ray-sehp-SYOHN",
+            "pt": "",
+            "en": "",
+            "audio": "la réception"
+          },
+          {
+            "ru": "libre",
+            "translit": "LEEBR",
+            "pt": "",
+            "en": "",
+            "audio": "libre"
+          },
+          {
+            "ru": "complet",
+            "translit": "kohn-PLEH",
+            "pt": "",
+            "en": "",
+            "audio": "complet"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Je voudrais réserver une chambre",
+        "explicacao": "STEP 1: asking for a reservation: «Je voudrais réserver une chambre pour deux personnes.» «Avez-vous une chambre libre ?» STEP 2: giving dates: «du 12 au 15 juillet», «pour trois nuits», «à partir de vendredi». STEP 3: types of room: «une chambre simple, une chambre double, une chambre avec salle de bains, une chambre avec vue». STEP 4: asking the price: «C'est combien la nuit ?» «Le petit-déjeuner est compris ?» STEP 5: at check-in: «J'ai une réservation au nom de Silva.» «Voici mon passeport.» STEP 6: asking about times: «À quelle heure est le petit-déjeuner ?» «Le check-out est à quelle heure ?» STEP 7: asking for something: «Pourriez-vous me réveiller à sept heures ?» «Pourriez-vous appeler un taxi ?» STEP 8: «compris» (included) and «en plus» (extra): «Le petit-déjeuner est compris.» «La climatisation est en plus.»",
+        "comparacao": "In English we say «I want to book a room» or «I'd like a room». French sounds more natural with «je voudrais réserver» and ends with «s'il vous plaît». «Compris» means «included»; don't confuse it with «understood».",
+        "tabela": [
+          {
+            "situation": "to book",
+            "sentence": "Je voudrais réserver une chambre double."
+          },
+          {
+            "situation": "dates",
+            "sentence": "Pour trois nuits, du 12 au 15 juillet."
+          },
+          {
+            "situation": "price",
+            "sentence": "C'est combien la nuit ?"
+          },
+          {
+            "situation": "breakfast",
+            "sentence": "Le petit-déjeuner est compris ?"
+          },
+          {
+            "situation": "check-in",
+            "sentence": "J'ai une réservation au nom de Silva."
+          },
+          {
+            "situation": "request",
+            "sentence": "Pourriez-vous appeler un taxi ?"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je veux reserver un chambre.",
+            "certo": "Je voudrais réserver une chambre.",
+            "motivo": "«Chambre» is feminine; polite request."
+          },
+          {
+            "errado": "Quel heure est le petit-déjeuner ?",
+            "certo": "À quelle heure est le petit-déjeuner ?",
+            "motivo": "«Heure» is feminine: «quelle»."
+          },
+          {
+            "errado": "Pour trois nuit.",
+            "certo": "Pour trois nuits.",
+            "motivo": "Plural."
+          },
+          {
+            "errado": "J'ai une réservation à le nom de Silva.",
+            "certo": "J'ai une réservation au nom de Silva.",
+            "motivo": "à + le = au."
+          }
+        ],
+        "tag": "Travel"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Book a room for two people for three nights out loud, asking about the price and breakfast."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Role-play a short consultation with the doctor: pain, duration and advice."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-027.json",
+  "responsavel": null
+}

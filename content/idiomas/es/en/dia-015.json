@@ -1,0 +1,171 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 15,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Present tense in -ar, negation and questions: Verbs in context",
+  "objetivo": "Lesson 4, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 4,
+    "titulo": "Present tense in -ar, negation and questions",
+    "objetivo": "Conjugate regular -ar verbs in the present, negate with «no», ask yes/no questions and questions with «qué, dónde, cuándo, por qué, cómo, cuánto», and tell «muy» apart from «mucho» and «por qué» from «porque».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Verbs in context",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "siempre",
+            "translit": "[pronuncia] SYEM-preh",
+            "pt": "always",
+            "en": "",
+            "audio": "siempre"
+          },
+          {
+            "ru": "a veces",
+            "translit": "[pronuncia] ah BEH-thess",
+            "pt": "sometimes",
+            "en": "",
+            "audio": "a veces"
+          },
+          {
+            "ru": "nunca",
+            "translit": "[pronuncia] NOON-kah",
+            "pt": "never",
+            "en": "",
+            "audio": "nunca"
+          },
+          {
+            "ru": "mucho",
+            "translit": "[pronuncia] MOO-cho",
+            "pt": "a lot (with a verb)",
+            "en": "",
+            "audio": "mucho"
+          },
+          {
+            "ru": "poco",
+            "translit": "[pronuncia] PO-ko",
+            "pt": "a little",
+            "en": "",
+            "audio": "poco"
+          },
+          {
+            "ru": "muy",
+            "translit": "[pronuncia] mwee",
+            "pt": "very (before an adjective or adverb)",
+            "en": "",
+            "audio": "muy"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Adverbs, muy × mucho and the personal a",
+        "explicacao": "STEP 1: frequency adverbs sit close to the verb: «Siempre trabajo aquí», «A veces cocino», «No viajo nunca». STEP 2: «mucho» and «poco» after a verb never change form: «Hablo mucho», «Estudio poco». STEP 3: «muy» only comes before an adjective or adverb: «muy simpático», «muy bien». With a verb, use «mucho»: «Trabajo mucho», never «trabajo muy». STEP 4: the «personal a»: before an object that's a specific, known person, you add «a»: «Escucho a Ana», but «Escucho música» (no «a» for things). STEP 5: false friends among -ar verbs: «pegar» means to hit or to glue, not «to catch/get»; to catch a bus you say «tomar el autobús» (in Spain also «coger», which in much of Latin America is offensive and should be avoided). «Llamar» means to call, including to phone someone.",
+        "comparacao": "English «a lot» and «very» already split the same way Spanish splits «mucho» and «muy» (a lot of/very), so that part isn't new — the real novelty is the «personal a»: English never marks a direct object before a person's name, but Spanish requires it («Escucho a Ana», literally «I listen to Ana», can't drop the «a»).",
+        "tabela": [
+          {
+            "palavra": "[misto] muy",
+            "usa_se": "[misto] before an adjective or adverb",
+            "exemplo": "[misto] Es muy simpática."
+          },
+          {
+            "palavra": "[misto] mucho",
+            "usa_se": "[misto] after the verb",
+            "exemplo": "[misto] Trabajo mucho."
+          },
+          {
+            "palavra": "[misto] siempre, a veces, nunca",
+            "usa_se": "[misto] close to the verb",
+            "exemplo": "[misto] Siempre estudio."
+          },
+          {
+            "palavra": "[misto] a (personal)",
+            "usa_se": "[misto] before a person as the object",
+            "exemplo": "[misto] Escucho a Ana."
+          },
+          {
+            "palavra": "[misto] pegar",
+            "usa_se": "[misto] means to hit, to glue; not «to get/catch»",
+            "exemplo": "[misto] Tomo el autobús."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] Hablo muy.",
+            "certo": "[misto] Hablo mucho.",
+            "motivo": "«Muy» only comes before an adjective or adverb."
+          },
+          {
+            "errado": "[misto] Ella es mucho simpática.",
+            "certo": "[misto] Ella es muy simpática.",
+            "motivo": "Before an adjective, use «muy»."
+          },
+          {
+            "errado": "[misto] Escucho Ana.",
+            "certo": "[misto] Escucho a Ana.",
+            "motivo": "A person as the object needs «a»."
+          },
+          {
+            "errado": "[misto] Pego el autobús.",
+            "certo": "[misto] Tomo el autobús.",
+            "motivo": "«Pegar» means to hit or to glue; for the bus, use «tomar»."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "texto",
+        "min": 8,
+        "titulo": "Un día normal / An ordinary day",
+        "ru": "Me llamo Clara y soy de Sevilla, pero vivo en Madrid. Trabajo en un hotel y estudio inglés. Mi amigo Pablo no trabaja en el hotel: canta y baila en un bar. Siempre escuchamos música y a veces cocinamos juntos. Los dos hablamos mucho, pero no hablamos de trabajo.",
+        "pt": "My name's Clara and I'm from Seville, but I live in Madrid. I work at a hotel and I study English. My friend Pablo doesn't work at the hotel: he sings and dances at a bar. We always listen to music and sometimes we cook together. The two of us talk a lot, but we don't talk about work.",
+        "perguntas": [
+          {
+            "pergunta": "[misto] ¿De dónde es Clara?",
+            "resposta": "[misto] De Sevilla."
+          },
+          {
+            "pergunta": "[misto] ¿Dónde vive?",
+            "resposta": "[misto] En Madrid."
+          },
+          {
+            "pergunta": "[misto] ¿Dónde trabaja Clara?",
+            "resposta": "[misto] En un hotel."
+          },
+          {
+            "pergunta": "[misto] ¿Quién canta y baila?",
+            "resposta": "[misto] Pablo."
+          },
+          {
+            "pergunta": "[misto] ¿Qué escuchan siempre?",
+            "resposta": "[misto] Música."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Write and say out loud five sentences about your routine, using «siempre», «a veces», «nunca», «mucho» and «muy»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Make three questions with question words and three negative answers with «no»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-004.json",
+  "responsavel": null
+}

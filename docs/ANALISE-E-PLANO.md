@@ -113,7 +113,7 @@ Regra: uma rodada = um pull request com uma entrega verificável. Se o limite do
 - **Não cole aulas no chat.** Salve o JSON direto na pasta `content/idiomas/ru/aulas/` no VS Code, rode `npm run aulas && npm run auditar` e só me mande o relatório. Nesta rodada eu reescrevi 6 aulas à mão: foi a maior parte do gasto. Com o fluxo novo, isso deixa de existir.
 - **Scripts em JavaScript fazem o trabalho repetitivo** (gerar dias, listas de áudio, auditoria). Já existem `scripts/aulas.mjs`, `scripts/auditar-aulas.mjs` e `scripts/conteudo.mjs`.
 - **Uma entrega por conversa.** Conversa curta e focada custa menos do que uma que mistura análise, código e conteúdo.
-- **Comece cada conversa com** "Leia docs/CONTEXTO.md e continue da rodada X". Evita reexplicar o projeto.
+- **Comece cada conversa com** "Leia docs/historico/CONTEXTO.md e continue da rodada X". Evita reexplicar o projeto.
 - **Você pode usar o Claude Code no VS Code** para mexer direto na sua pasta (sem zip, sem patch). Ele também gasta o limite do plano; veja na documentação da Anthropic como ele conta.
 - Não sei qual é o limite exato do seu plano. Se a conversa cortar, a regra é: tudo que já foi enviado ao GitHub está salvo.
 

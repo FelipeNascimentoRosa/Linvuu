@@ -1,0 +1,151 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 161,
+  "fase": 17,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "The passive voice and «on»: Forming the passive",
+  "objetivo": "Lesson 41, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 41,
+    "titulo": "The passive voice and «on»",
+    "objetivo": "Form the passive voice with «être» + participle and «par», know when it is preferred, and use natural alternatives such as «on» and the pronominal form.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Forming the passive",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "être construit",
+            "translit": "eh-truh kohn-STRWEE",
+            "pt": "",
+            "en": "",
+            "audio": "être construit"
+          },
+          {
+            "ru": "être écrit",
+            "translit": "eh-truh ay-KREE",
+            "pt": "",
+            "en": "",
+            "audio": "être écrit"
+          },
+          {
+            "ru": "être fait",
+            "translit": "eh-truh FEH",
+            "pt": "",
+            "en": "",
+            "audio": "être fait"
+          },
+          {
+            "ru": "être vendu",
+            "translit": "eh-truh vahn-DEW",
+            "pt": "",
+            "en": "",
+            "audio": "être vendu"
+          },
+          {
+            "ru": "être invité",
+            "translit": "eh-truh an-vee-TAY",
+            "pt": "",
+            "en": "",
+            "audio": "être invité"
+          },
+          {
+            "ru": "par",
+            "translit": "PAR",
+            "pt": "",
+            "en": "",
+            "audio": "par"
+          },
+          {
+            "ru": "de",
+            "translit": "DUH",
+            "pt": "",
+            "en": "",
+            "audio": "de"
+          },
+          {
+            "ru": "l'auteur",
+            "translit": "loh-TUHR",
+            "pt": "",
+            "en": "",
+            "audio": "l'auteur"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Le livre est écrit par un auteur",
+        "explicacao": "STEP 1: the active voice focuses on the subject that acts: «Un auteur écrit un livre.» The passive focuses on the object that undergoes the action: «Un livre est écrit par un auteur.» STEP 2: form: «être» (in the tense of the active verb) + past participle + «par» + agent. STEP 3: the participle agrees with the subject of the passive: «La maison est construite.» «Les livres sont vendus.» STEP 4: the tense of «être» is the tense of the active verb: present «est écrit», passé composé «a été écrit», imparfait «était écrit», future «sera écrit». STEP 5: «par» introduces the active agent: «Le livre a été écrit par Marie.» «De» is used with feelings or state: «Il est aimé de tous.» «Elle est connue de tous.» STEP 6: the agent can be left out: «Le magasin est fermé.» «Le repas est servi.» STEP 7: in the active, the direct object becomes the subject of the passive: «Marie ouvre la porte.» → «La porte est ouverte par Marie.» STEP 8: only verbs with a direct object have a passive: «dormir», «aller» and verbs with «à» (téléphoner à) do not.",
+        "comparacao": "in English the passive is «the book was written by Marie» and is more common in writing than in speech. French uses the passive mostly in writing and journalism. In speech it prefers the active voice with «on»: «on a écrit ce livre», «on vend des fleurs ici».",
+        "tabela": [
+          {
+            "tense": "présent",
+            "active": "Marie écrit un livre.",
+            "passive": "Un livre est écrit par Marie."
+          },
+          {
+            "tense": "passé composé",
+            "active": "Marie a écrit un livre.",
+            "passive": "Un livre a été écrit par Marie."
+          },
+          {
+            "tense": "imparfait",
+            "active": "Marie écrivait un livre.",
+            "passive": "Un livre était écrit par Marie."
+          },
+          {
+            "tense": "futur",
+            "active": "Marie écrira un livre.",
+            "passive": "Un livre sera écrit par Marie."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Le livre est écrit de Marie.",
+            "certo": "Le livre est écrit par Marie.",
+            "motivo": "Agent introduced by «par»."
+          },
+          {
+            "errado": "La maison est construit.",
+            "certo": "La maison est construite.",
+            "motivo": "Agreement."
+          },
+          {
+            "errado": "Le livre a écrit par Marie.",
+            "certo": "Le livre a été écrit par Marie.",
+            "motivo": "«Été» is missing."
+          },
+          {
+            "errado": "Il est téléphoné par Marie.",
+            "certo": "Marie lui téléphone.",
+            "motivo": "«Téléphoner à» has no passive."
+          }
+        ],
+        "tag": "Passive"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Turn five active sentences into the passive out loud: «Marie ouvre la porte. Paul écrit une lettre.»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Report a recent conversation with indirect speech."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-041.json",
+  "responsavel": null
+}

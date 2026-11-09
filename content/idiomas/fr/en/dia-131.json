@@ -1,0 +1,174 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 131,
+  "fase": 14,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Negation and indefinite words: Ni… ni… and short answers",
+  "objetivo": "Lesson 33, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 33,
+    "titulo": "Negation and indefinite words",
+    "objetivo": "Use «ne… jamais», «ne… rien», «ne… personne», «ne… plus», «ne… aucun», «ni… ni…» and the indefinites «tout», «chaque», «plusieurs», «quelqu'un», «quelque chose».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Ni… ni… and short answers",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "ni… ni…",
+            "translit": "NEE… NEE…",
+            "pt": "",
+            "en": "",
+            "audio": "ni… ni…"
+          },
+          {
+            "ru": "ne… que",
+            "translit": "nuh… KUH",
+            "pt": "",
+            "en": "",
+            "audio": "ne… que"
+          },
+          {
+            "ru": "non plus",
+            "translit": "nohn PLEW",
+            "pt": "",
+            "en": "",
+            "audio": "non plus"
+          },
+          {
+            "ru": "moi non plus",
+            "translit": "mwah nohn PLEW",
+            "pt": "",
+            "en": "",
+            "audio": "moi non plus"
+          },
+          {
+            "ru": "pas du tout",
+            "translit": "pah dew TOO",
+            "pt": "",
+            "en": "",
+            "audio": "pas du tout"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Short answers and restriction",
+        "explicacao": "STEP 1: «ni… ni…» (neither… nor…): «Je ne bois ni café ni thé.» STEP 2: «ne… que» (only): «Je n'ai que dix euros.» (I have only ten euros) STEP 3: short answers: «Moi non plus.» (me neither) «Moi si !» (I do, contradicting a negative) «Pas du tout.» (not at all) STEP 4: «si» contradicts a negative sentence: «Tu n'aimes pas le café ? — Si, j'aime ça !» STEP 5: «oui» answers an affirmative question; «si» answers a negative one: «Tu viens ? — Oui.» «Tu ne viens pas ? — Si, je viens.»",
+        "comparacao": "In English, answering «yes» to «Aren't you coming?» is confusing because it can mean either thing. French solves it with «si», used only to contradict a negation: «Tu ne viens pas ? — Si !» (yes, I am coming). Saying «oui» there would sound like «no, I'm not coming».",
+        "tabela": [
+          {
+            "sentence": "Je ne bois ni café ni thé.",
+            "sense": "neither… nor…"
+          },
+          {
+            "sentence": "Je n'ai que dix euros.",
+            "sense": "I only have ten euros"
+          },
+          {
+            "sentence": "Moi non plus.",
+            "sense": "me neither"
+          },
+          {
+            "sentence": "Tu ne viens pas ? — Si !",
+            "sense": "yes, I am coming"
+          },
+          {
+            "sentence": "Pas du tout.",
+            "sense": "not at all"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Tu ne viens pas ? — Oui.",
+            "certo": "Tu ne viens pas ? — Si.",
+            "motivo": "Contradicting: «si»."
+          },
+          {
+            "errado": "Je ne bois ni café et thé.",
+            "certo": "Je ne bois ni café ni thé.",
+            "motivo": "«Ni… ni…»."
+          },
+          {
+            "errado": "Je n'ai seulement dix euros.",
+            "certo": "Je n'ai que dix euros.",
+            "motivo": "«Ne… que»."
+          },
+          {
+            "errado": "Moi aussi pas.",
+            "certo": "Moi non plus.",
+            "motivo": "«Non plus»."
+          }
+        ],
+        "tag": "Negation"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "Au restaurant / At the restaurant",
+        "contexto": "Julien and Marie talk at the table about what they don't like.",
+        "linhas": [
+          {
+            "personagem": "Julien",
+            "ru": "— Tu ne manges pas de viande ?",
+            "en": "— Don't you eat meat?",
+            "audio": "Tu ne manges pas de viande ?"
+          },
+          {
+            "personagem": "Marie",
+            "ru": "— Si, mais je n'en mange jamais le soir. Et toi ?",
+            "en": "— I do, but never at night. And you?",
+            "audio": "Si, mais je n'en mange jamais le soir. Et toi ?"
+          },
+          {
+            "personagem": "Julien",
+            "ru": "— Moi, je n'aime ni la viande ni le poisson. Je suis végétarien.",
+            "en": "— I like neither meat nor fish. I'm a vegetarian.",
+            "audio": "Moi, je n'aime ni la viande ni le poisson. Je suis végétarien."
+          },
+          {
+            "personagem": "Marie",
+            "ru": "— Ah bon ? Alors il n'y a rien pour toi sur ce menu !",
+            "en": "— Oh, really? Then there is nothing for you on this menu!",
+            "audio": "Ah bon ? Alors il n'y a rien pour toi sur ce menu !"
+          },
+          {
+            "personagem": "Julien",
+            "ru": "— Si, il y a plusieurs plats avec des légumes.",
+            "en": "— Yes there is, there are several dishes with vegetables.",
+            "audio": "Si, il y a plusieurs plats avec des légumes."
+          },
+          {
+            "personagem": "Marie",
+            "ru": "— Tant mieux ! Je n'ai plus faim pour la viande, de toute façon.",
+            "en": "— Great! I'm not hungry for meat anyway.",
+            "audio": "Tant mieux ! Je n'ai plus faim pour la viande, de toute façon."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Answer negative questions out loud with «si» and «moi non plus»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say three sentences with «tout», «chaque» and «plusieurs»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-033.json",
+  "responsavel": null
+}

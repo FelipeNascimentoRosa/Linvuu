@@ -1,0 +1,137 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 106,
+  "fase": 11,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Travel: hotel, airport and bookings: Problems and requests at the hotel",
+  "objetivo": "Lesson 27, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 27,
+    "titulo": "Travel: hotel, airport and bookings",
+    "objetivo": "Book a room, check in, solve problems at the hotel and get by at the airport, with polite questions and requests.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Problems and requests at the hotel",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "la douche",
+            "translit": "lah DOOSH",
+            "pt": "",
+            "en": "",
+            "audio": "la douche"
+          },
+          {
+            "ru": "la climatisation",
+            "translit": "lah klee-mah-tee-zah-SYOHN",
+            "pt": "",
+            "en": "",
+            "audio": "la climatisation"
+          },
+          {
+            "ru": "le wifi",
+            "translit": "luh wee-FEE",
+            "pt": "",
+            "en": "",
+            "audio": "le wifi"
+          },
+          {
+            "ru": "une serviette",
+            "translit": "ewn sehr-VYEHT",
+            "pt": "",
+            "en": "",
+            "audio": "une serviette"
+          },
+          {
+            "ru": "propre",
+            "translit": "PROHPR",
+            "pt": "",
+            "en": "",
+            "audio": "propre"
+          },
+          {
+            "ru": "en panne",
+            "translit": "ahn PAHN",
+            "pt": "",
+            "en": "",
+            "audio": "en panne"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "There is a problem in my room",
+        "explicacao": "STEP 1: reporting a problem: «Il y a un problème avec la douche.» «La climatisation ne marche pas.» «Il n'y a plus de serviettes.» STEP 2: asking for a solution: «Pourriez-vous envoyer quelqu'un ?» «Pourriez-vous changer ma chambre ?» STEP 3: «ne… pas» with «marcher» (to work): «Le wifi ne marche pas.» STEP 4: «ne… plus» (there is no more): «Il n'y a plus d'eau chaude.» STEP 5: «être en panne» (to be broken down): «L'ascenseur est en panne.» STEP 6: «trop» + adjective to complain: «La chambre est trop bruyante.» «C'est trop chaud.» STEP 7: apologizing politely: «Excusez-moi de vous déranger, mais…» STEP 8: saying thank you: «Merci beaucoup, c'est très gentil.»",
+        "comparacao": "In English we say «the shower doesn't work». French uses «marcher» for appliances («ne marche pas») and «fonctionner» in a more formal register. «Il n'y a plus de» means «there is no more». The polite request with the conditional («pourriez-vous») is as important as the complaint.",
+        "tabela": [
+          {
+            "problem": "the internet isn't working",
+            "sentence": "Le wifi ne marche pas."
+          },
+          {
+            "problem": "the elevator is broken",
+            "sentence": "L'ascenseur est en panne."
+          },
+          {
+            "problem": "there are no more towels",
+            "sentence": "Il n'y a plus de serviettes."
+          },
+          {
+            "problem": "noisy room",
+            "sentence": "La chambre est trop bruyante."
+          },
+          {
+            "problem": "to change rooms",
+            "sentence": "Pourriez-vous changer ma chambre ?"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Le wifi no marche pas.",
+            "certo": "Le wifi ne marche pas.",
+            "motivo": "Negation in French."
+          },
+          {
+            "errado": "Il n'y a plus des serviettes.",
+            "certo": "Il n'y a plus de serviettes.",
+            "motivo": "In a negative sentence: «de»."
+          },
+          {
+            "errado": "L'ascenseur est panne.",
+            "certo": "L'ascenseur est en panne.",
+            "motivo": "«En panne»."
+          },
+          {
+            "errado": "Je veux changer la chambre maintenant !",
+            "certo": "Pourriez-vous changer ma chambre, s'il vous plaît ?",
+            "motivo": "Polite request."
+          }
+        ],
+        "tag": "Travel"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Complain out loud about three problems at the hotel and ask for a polite solution to each."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Make a hotel reservation out loud with dates, price and breakfast."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-027.json",
+  "responsavel": null
+}

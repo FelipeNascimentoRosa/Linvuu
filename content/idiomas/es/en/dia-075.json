@@ -1,0 +1,168 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 75,
+  "fase": 8,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Regular pretérito indefinido: Telling about a day and choosing the right tense",
+  "objetivo": "Lesson 19, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 19,
+    "titulo": "Regular pretérito indefinido",
+    "objetivo": "Narrate what happened and is already finished («ayer», «anoche», «el año pasado») with the regular -ar, -er and -ir forms of the pretérito indefinido, get the accent marks right («hablé», «habló»), handle the spelling changes («busqué», «llegué», «empecé», «leyó»), and tell the indefinido apart from the pretérito perfecto.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Telling about a day and choosing the right tense",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "primero",
+            "translit": "[pronuncia] pree-MEH-ro",
+            "pt": "first, firstly",
+            "en": "",
+            "audio": "primero"
+          },
+          {
+            "ru": "luego",
+            "translit": "[pronuncia] LWEH-go",
+            "pt": "then, next",
+            "en": "",
+            "audio": "luego"
+          },
+          {
+            "ru": "después",
+            "translit": "[pronuncia] des-PWES",
+            "pt": "afterward",
+            "en": "",
+            "audio": "después"
+          },
+          {
+            "ru": "más tarde",
+            "translit": "[pronuncia] mas TAR-deh",
+            "pt": "later",
+            "en": "",
+            "audio": "más tarde"
+          },
+          {
+            "ru": "por fin",
+            "translit": "[pronuncia] por feen",
+            "pt": "finally, lastly",
+            "en": "",
+            "audio": "por fin"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Indefinido or perfecto, and three false friends",
+        "explicacao": "STEP 1: think of the clock. If the period has already ended («ayer», «el lunes», «en 2019», «la semana pasada», «hace dos días»), use the indefinido: «Ayer compré pan» (yesterday I bought bread). STEP 2: if the period hasn't ended yet («hoy», «esta mañana», «esta semana», «este año»), Spain uses the pretérito perfecto: «Esta semana he trabajado mucho». STEP 3: in Latin America, the indefinido often takes the perfecto's place: «Esta semana trabajé mucho». Both versions are correct, each in its own region; pick one and stay consistent. STEP 4: to say «two days ago» about a past fact, put «hace» before the amount of time and nothing else: «Llegué hace dos días». You never say «hace dos días atrás». STEP 5: three false friends for talking about the past. «Cenar» and «la cena» mean «to have dinner» and «dinner» (the meal): «Cené a las ocho». «Un rato» means «a little while», not the rodent; the rodent is «ratón» (and «rata» is the bigger rat): «Esperé un rato» (I waited a little while). «Oficina» means «office» (the workplace): «Trabajé en la oficina».",
+        "comparacao": "English makes no distinction at all between «I ate yesterday» and «I've eaten today» in terms of which past tense to reach for — the simple past covers the first and the present perfect the second, but nothing about English grammar maps directly onto the Spain/Latin-America split here. Spain keeps «Ayer comí» (indefinido) and «Hoy he comido» (perfecto) strictly separate by whether the time period is closed or still open; in Latin America that line is looser, and the indefinido covers both cases.",
+        "tabela": [
+          {
+            "marcador": "[misto] ayer, anoche, anteayer",
+            "tempo": "[misto] finished",
+            "exemplo": "[misto] Anoche llegué tarde."
+          },
+          {
+            "marcador": "[misto] el lunes, el domingo pasado",
+            "tempo": "[misto] finished",
+            "exemplo": "[misto] El lunes pasado compré un libro."
+          },
+          {
+            "marcador": "[misto] la semana pasada, el año pasado, en 2019",
+            "tempo": "[misto] finished",
+            "exemplo": "[misto] En 2019 viajé a Perú."
+          },
+          {
+            "marcador": "[misto] hace + time",
+            "tempo": "[misto] finished",
+            "exemplo": "[misto] Salí hace una hora."
+          },
+          {
+            "marcador": "[misto] hoy, esta semana, este año",
+            "tempo": "[misto] not finished (Spain: perfecto)",
+            "exemplo": "[misto] Hoy he comido temprano."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] Ayer he llegado tarde.",
+            "certo": "[misto] Ayer llegué tarde.",
+            "motivo": "«Ayer» is a finished time: use the indefinido."
+          },
+          {
+            "errado": "[misto] Llegué hace dos días atrás.",
+            "certo": "[misto] Llegué hace dos días.",
+            "motivo": "«Hace» already marks the past; «atrás» is redundant."
+          },
+          {
+            "errado": "[misto] Hay un rato en la cocina.",
+            "certo": "[misto] Hay un ratón en la cocina.",
+            "motivo": "«Rato» means a little while; the rodent is «ratón»."
+          },
+          {
+            "errado": "[misto] Ayer trabajé en el escritorio de mi empresa.",
+            "certo": "[misto] Ayer trabajé en la oficina de mi empresa.",
+            "motivo": "«Escritorio» is the desk itself; the office as a place is «oficina»."
+          }
+        ],
+        "tag": "Pretérito indefinido"
+      },
+      {
+        "tipo": "texto",
+        "min": 8,
+        "titulo": "El sábado de Inés / Inés's Saturday",
+        "ru": "El sábado por la mañana desayuné con mi hermana. Después salimos de casa y caminamos hasta el mercado. Compré fruta y mi hermana compró pan. A las dos comimos en un bar pequeño y bebimos agua con gas. Por la tarde llamé a mi madre y escribí un mensaje a Carlos. Cené en casa y miré una película hasta las once.",
+        "pt": "On Saturday morning I had breakfast with my sister. Then we left the house and walked to the market. I bought some fruit and my sister bought bread. At two we had lunch at a small bar and drank sparkling water. In the afternoon I called my mother and wrote Carlos a message. I had dinner at home and watched a movie until eleven.",
+        "perguntas": [
+          {
+            "pergunta": "[misto] ¿Con quién desayunó Inés?",
+            "resposta": "[misto] Con su hermana."
+          },
+          {
+            "pergunta": "[misto] ¿Adónde caminaron?",
+            "resposta": "[misto] Al mercado."
+          },
+          {
+            "pergunta": "[misto] ¿Quién compró pan?",
+            "resposta": "[misto] La hermana de Inés."
+          },
+          {
+            "pergunta": "[misto] ¿Qué bebieron en el bar?",
+            "resposta": "[misto] Agua con gas."
+          },
+          {
+            "pergunta": "[misto] ¿A quién llamó Inés por la tarde?",
+            "resposta": "[misto] A su madre."
+          },
+          {
+            "pergunta": "[misto] ¿Dónde cenó?",
+            "resposta": "[misto] En casa."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Write five sentences about your last weekend using «el sábado», «el domingo», «primero», «luego» and «por fin». Then read them out loud."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Conjugate «comer» and «vivir» in the indefinido. Then write the «yo» form of buscar, llegar and empezar."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-019.json",
+  "responsavel": null
+}

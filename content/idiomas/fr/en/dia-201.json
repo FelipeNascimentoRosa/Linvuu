@@ -1,0 +1,161 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 201,
+  "fase": 21,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Media, news and advertising: Press and news",
+  "objetivo": "Lesson 51, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 51,
+    "titulo": "Media, news and advertising",
+    "objetivo": "Understand and tell news stories, report what the media say and analyze an ad using press vocabulary.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Press and news",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "un journal",
+            "translit": "an zhoor-NAL",
+            "pt": "",
+            "en": "",
+            "audio": "un journal"
+          },
+          {
+            "ru": "un article",
+            "translit": "a-nar-tee-KLUH",
+            "pt": "",
+            "en": "",
+            "audio": "un article"
+          },
+          {
+            "ru": "un titre",
+            "translit": "an tee-TRUH",
+            "pt": "",
+            "en": "",
+            "audio": "un titre"
+          },
+          {
+            "ru": "un journaliste",
+            "translit": "an zhoor-nah-LEEST",
+            "pt": "",
+            "en": "",
+            "audio": "un journaliste"
+          },
+          {
+            "ru": "l'actualité",
+            "translit": "lak-tew-ah-lee-TAY",
+            "pt": "",
+            "en": "",
+            "audio": "l'actualité"
+          },
+          {
+            "ru": "les informations",
+            "translit": "lay zan-for-mah-see-OHN",
+            "pt": "",
+            "en": "",
+            "audio": "les informations"
+          },
+          {
+            "ru": "une chaîne",
+            "translit": "ewn SHEHN",
+            "pt": "",
+            "en": "",
+            "audio": "une chaîne"
+          },
+          {
+            "ru": "un reportage",
+            "translit": "an ruh-por-TAZH",
+            "pt": "",
+            "en": "",
+            "audio": "un reportage"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Selon le journal, on dit que",
+        "explicacao": "STEP 1: citing the source: «selon le journal», «d'après les experts», «à en croire la presse». STEP 2: impersonal voice: «On dit que», «Il paraît que», «Il semble que» + indicative: «Il paraît qu'il va neiger.» STEP 3: «Il semble que» + subjunctive when there is doubt: «Il semble qu'il soit malade.» STEP 4: journalistic conditional (unconfirmed fact): «Le ministre aurait démissionné.» «Il y aurait trois blessés.» STEP 5: reporting verbs: «annoncer», «affirmer», «déclarer», «expliquer», «révéler»: «Le ministre a annoncé que…» STEP 6: sequence of tenses in reported speech (lesson 40): «a déclaré qu'il viendrait». STEP 7: passive voice common in headlines: «Un homme a été retrouvé.», «Le pont sera réparé.» STEP 8: headlines use the historical present: «Le président démissionne.»",
+        "comparacao": "English usually says «is reported to have resigned» or “allegedly”; French simply uses the conditional, and it is the hallmark of news that is not yet confirmed: «aurait démissionné». A headline in the present («démissionne») is just a style device.",
+        "tabela": [
+          {
+            "expression": "selon…",
+            "usage": "citing the source",
+            "example": "Selon le journal, il va pleuvoir."
+          },
+          {
+            "expression": "il paraît que",
+            "usage": "boato",
+            "example": "Il paraît qu'il va neiger."
+          },
+          {
+            "expression": "conditional",
+            "usage": "unconfirmed",
+            "example": "Le ministre aurait démissionné."
+          },
+          {
+            "expression": "annoncer que",
+            "usage": "anunciar",
+            "example": "Il a annoncé qu'il partait."
+          },
+          {
+            "expression": "présent",
+            "usage": "headline",
+            "example": "Le président démissionne."
+          },
+          {
+            "expression": "passif",
+            "usage": "fact with no agent",
+            "example": "Un homme a été retrouvé."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Il semble qu'il est malade (doubt).",
+            "certo": "Il semble qu'il soit malade.",
+            "motivo": "Doubt: subjunctive."
+          },
+          {
+            "errado": "Le ministre démissionnerait confirmé.",
+            "certo": "Le ministre aurait démissionné.",
+            "motivo": "Past conditional."
+          },
+          {
+            "errado": "D'après de le journal…",
+            "certo": "D'après le journal…",
+            "motivo": "No «de»."
+          },
+          {
+            "errado": "Il a annoncé qu'il part demain.",
+            "certo": "Il a annoncé qu'il partait le lendemain.",
+            "motivo": "Sequence of tenses."
+          }
+        ],
+        "tag": "Media"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Tell aloud a news story you read today, citing the source."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Answer aloud: «Parlez-moi de vous.» and «Pourquoi ce poste ?»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-051.json",
+  "responsavel": null
+}

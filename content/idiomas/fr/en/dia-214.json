@@ -1,0 +1,147 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 214,
+  "fase": 22,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Pronouns: full order and review: Y, en and stressed pronouns",
+  "objetivo": "Lesson 54, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 54,
+    "titulo": "Pronouns: full order and review",
+    "objetivo": "Master the order of pronouns (me, te, le, lui, y, en), use them in the imperative and in the passé composé, and avoid the most common mistakes.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Y, en and stressed pronouns",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "moi",
+            "translit": "MWAH",
+            "pt": "",
+            "en": "",
+            "audio": "moi"
+          },
+          {
+            "ru": "toi",
+            "translit": "TWAH",
+            "pt": "",
+            "en": "",
+            "audio": "toi"
+          },
+          {
+            "ru": "lui",
+            "translit": "LWEE",
+            "pt": "",
+            "en": "",
+            "audio": "lui"
+          },
+          {
+            "ru": "elle",
+            "translit": "EHL",
+            "pt": "",
+            "en": "",
+            "audio": "elle"
+          },
+          {
+            "ru": "nous",
+            "translit": "NOO",
+            "pt": "",
+            "en": "",
+            "audio": "nous"
+          },
+          {
+            "ru": "eux",
+            "translit": "UH",
+            "pt": "",
+            "en": "",
+            "audio": "eux"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "When to use each pronoun",
+        "explicacao": "STEP 1: «y» replaces «à + thing» or a place: «Je pense à mon projet → J'y pense.» «Je vais à Paris → J'y vais.» STEP 2: «en» replaces «de + thing», a quantity or a partitive: «Je parle de mon voyage → J'en parle.» «Je veux du café → J'en veux.» STEP 3: a person with «à» → lui/leur: «Je parle à Paul → Je lui parle.» STEP 4: a person with «de» → stressed pronoun: «Je parle de Paul → Je parle de lui.» STEP 5: «penser à» + person → «penser à lui»: «Je pense à toi.» STEP 6: verbs such as «s'intéresser à», «faire attention à», «se souvenir de»: «Je m'y intéresse.» «Je m'en souviens.» STEP 7: stressed pronoun after a preposition: «avec moi», «chez eux», «pour elle». STEP 8: emphasis: «Moi, je pense que…», «Toi, tu veux quoi ?»",
+        "comparacao": "in English «I think about it» = «j'y pense». But «I think about him» = «je pense à lui» (never «j'y pense» for people). This is the difference most tested in exams: person → stressed pronoun; thing → y/en.",
+        "tabela": [
+          {
+            "pronoun": "y",
+            "function": "à + thing / place",
+            "example": "J'y pense. J'y vais."
+          },
+          {
+            "pronoun": "en",
+            "function": "de + thing / quantity",
+            "example": "J'en parle. J'en veux deux."
+          },
+          {
+            "pronoun": "lui / leur",
+            "function": "à + person",
+            "example": "Je lui parle."
+          },
+          {
+            "pronoun": "moi, toi, lui…",
+            "function": "de + person / preposition",
+            "example": "Je parle de lui."
+          },
+          {
+            "pronoun": "moi, toi, lui…",
+            "function": "emphasis",
+            "example": "Moi, je pense que…"
+          },
+          {
+            "pronoun": "se souvenir de",
+            "function": "en (thing)",
+            "example": "Je m'en souviens."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je pense à Paul → J'y pense.",
+            "certo": "Je pense à Paul → Je pense à lui.",
+            "motivo": "Person: stressed pronoun."
+          },
+          {
+            "errado": "Je parle de mon voyage → J'y parle.",
+            "certo": "Je parle de mon voyage → J'en parle.",
+            "motivo": "«De» + thing: en."
+          },
+          {
+            "errado": "Je lui parle de il.",
+            "certo": "Je parle de lui.",
+            "motivo": "Stressed pronoun after «de»."
+          },
+          {
+            "errado": "Je vais à Paris → Je vais y.",
+            "certo": "Je vais à Paris → J'y vais.",
+            "motivo": "«Y» before the verb."
+          }
+        ],
+        "tag": "Pronouns"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Answer eight questions aloud, replacing the words with pronouns."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Replace with pronouns: «Je donne le livre à Paul.»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-054.json",
+  "responsavel": null
+}

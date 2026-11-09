@@ -1,0 +1,513 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 24,
+  "fase": 3,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Family, avoir and possessives: Review and practice for lesson 6",
+  "objetivo": "Lesson 6, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 6,
+    "titulo": "Family, avoir and possessives",
+    "objetivo": "Talk about your family, use «avoir» for possession and for physical feelings («avoir faim», «avoir froid»), show possession with «de» and use possessive adjectives.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 6",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "J'ai faim",
+            "opcoes": [
+              "J'ai faim",
+              "J'ai froid",
+              "J'ai soif"
+            ],
+            "gabarito": "J'ai faim",
+            "explicacao": "Listen to «faim», with its nasal vowel.",
+            "id": "fr-006-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Mon frère s'appelle Pedro",
+            "opcoes": [
+              "Mon frère s'appelle Pedro",
+              "Ma sœur s'appelle Julia",
+              "Son frère s'appelle Pedro"
+            ],
+            "gabarito": "Mon frère s'appelle Pedro",
+            "explicacao": "Listen to «mon».",
+            "id": "fr-006-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Nous avons un chien",
+            "opcoes": [
+              "Nous avons un chien",
+              "Vous avez un chien",
+              "Ils ont un chien"
+            ],
+            "gabarito": "Nous avons un chien",
+            "explicacao": "Listen to «avons».",
+            "id": "fr-006-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "J'ai besoin d'un café",
+            "respostaEsperada": "J'ai besoin d'un café",
+            "explicacao": "Write: J'ai besoin d'un café.",
+            "id": "fr-006-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «le père» mean?",
+            "audio": "le père",
+            "opcoes": [
+              "their",
+              "the father",
+              "the son",
+              "the aunt"
+            ],
+            "gabarito": "the father",
+            "explicacao": "«le père» = the father.",
+            "id": "fr-006-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ma mère s'appelle Rita",
+            "respostaEsperada": "Ma mère s'appelle Rita",
+            "explicacao": "Write: Ma mère s'appelle Rita.",
+            "id": "fr-006-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ils ont deux enfants",
+            "respostaEsperada": "Ils ont deux enfants",
+            "explicacao": "Write: Ils ont deux enfants.",
+            "id": "fr-006-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I'm cold»?",
+            "opcoes": [
+              "J'ai froid.",
+              "Je suis froid.",
+              "Je fais froid."
+            ],
+            "gabarito": "J'ai froid.",
+            "explicacao": "Feeling: «avoir».",
+            "id": "fr-006-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which possessive is correct for «my friend» (amie)?",
+            "opcoes": [
+              "mon amie",
+              "ma amie",
+              "mes amie"
+            ],
+            "gabarito": "mon amie",
+            "explicacao": "Before a vowel, «mon».",
+            "id": "fr-006-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «ton, ta, tes» mean?",
+            "audio": "ton, ta, tes",
+            "opcoes": [
+              "the child, the son",
+              "your (informal)",
+              "a filha",
+              "his, her, its"
+            ],
+            "gabarito": "your (informal)",
+            "explicacao": "«ton, ta, tes» = your (informal).",
+            "id": "fr-006-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "mon, ma, mes",
+            "respostaEsperada": "mon, ma, mes",
+            "explicacao": "my",
+            "id": "fr-006-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Son père» can mean…",
+            "opcoes": [
+              "his father or her father",
+              "only his father",
+              "only her father"
+            ],
+            "gabarito": "his father or her father",
+            "explicacao": "It agrees with the thing possessed.",
+            "id": "fr-006-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «Paul's brother»?",
+            "opcoes": [
+              "le frère de Paul",
+              "le frère à Paul",
+              "le frère Paul's"
+            ],
+            "gabarito": "le frère de Paul",
+            "explicacao": "Possession with «de».",
+            "id": "fr-006-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Nous ___ une grande famille. (have)",
+            "opcoes": [
+              "avons",
+              "sommes",
+              "avez"
+            ],
+            "gabarito": "avons",
+            "explicacao": "«nous avons».",
+            "id": "fr-006-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «la fille» mean?",
+            "audio": "la fille",
+            "opcoes": [
+              "a filha",
+              "his, her, its",
+              "your (informal)",
+              "their"
+            ],
+            "gabarito": "a filha",
+            "explicacao": "«la fille» = a filha.",
+            "id": "fr-006-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ sœur s'appelle Julia. (my)",
+            "opcoes": [
+              "Ma",
+              "Mon",
+              "Mes"
+            ],
+            "gabarito": "Ma",
+            "explicacao": "Sœur is feminine.",
+            "id": "fr-006-e12"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle ___ soif. (has)",
+            "opcoes": [
+              "a",
+              "est",
+              "as"
+            ],
+            "gabarito": "a",
+            "explicacao": "«elle a soif».",
+            "id": "fr-006-e13"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ils ___ deux enfants. (have)",
+            "opcoes": [
+              "ont",
+              "sont",
+              "a"
+            ],
+            "gabarito": "ont",
+            "explicacao": "«ils ont».",
+            "id": "fr-006-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «My parents live in Brazil.»",
+            "opcoes": [
+              "Mes",
+              "parents",
+              "habitent",
+              "au",
+              "Brésil"
+            ],
+            "gabarito": "Mes parents habitent au Brésil.",
+            "explicacao": "Plural possessive.",
+            "id": "fr-006-e15"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "ton, ta, tes",
+            "respostaEsperada": "ton, ta, tes",
+            "explicacao": "your (informal)",
+            "id": "fr-006-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «son, sa, ses» mean?",
+            "audio": "son, sa, ses",
+            "opcoes": [
+              "the husband",
+              "the family",
+              "the parents",
+              "his, her, its"
+            ],
+            "gabarito": "his, her, its",
+            "explicacao": "«son, sa, ses» = his, her, its.",
+            "id": "fr-006-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «I don't have a brother.»",
+            "opcoes": [
+              "Je",
+              "n'ai",
+              "pas",
+              "de",
+              "frère"
+            ],
+            "gabarito": "Je n'ai pas de frère.",
+            "explicacao": "Negative with «de».",
+            "id": "fr-006-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I have a brother. My mother's name is Rita. I'm hungry.",
+            "respostaEsperada": "J'ai un frère. Ma mère s'appelle Rita. J'ai faim.",
+            "id": "fr-006-e17"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tu ___ une sœur. (have)",
+            "opcoes": [
+              "as",
+              "a",
+              "ai"
+            ],
+            "gabarito": "as",
+            "explicacao": "With «tu», «avoir» becomes «as».",
+            "id": "fr-006-e18"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ parents habitent à Lyon. (my)",
+            "opcoes": [
+              "Mon",
+              "Mes",
+              "Ma"
+            ],
+            "gabarito": "Mes",
+            "explicacao": "«Parents» is plural: «mes».",
+            "id": "fr-006-e19"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «le grand-père» mean?",
+            "audio": "le grand-père",
+            "opcoes": [
+              "the wife",
+              "the parents",
+              "o avô",
+              "their"
+            ],
+            "gabarito": "o avô",
+            "explicacao": "«le grand-père» = o avô.",
+            "id": "fr-006-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il a ___ . (sleepy)",
+            "opcoes": [
+              "soif",
+              "peur",
+              "sommeil"
+            ],
+            "gabarito": "sommeil",
+            "explicacao": "«Avoir sommeil» = to be sleepy.",
+            "id": "fr-006-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Le frère ___ Paul s'appelle Luc. (de)",
+            "opcoes": [
+              "de",
+              "du",
+              "à"
+            ],
+            "gabarito": "de",
+            "explicacao": "The owner is shown with «de», with no «'s» and no «à».",
+            "id": "fr-006-e21"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Nous aimons ___ famille. (our)",
+            "opcoes": [
+              "nos",
+              "notre",
+              "leur"
+            ],
+            "gabarito": "notre",
+            "explicacao": "Owner «nous», one thing in the singular: «notre».",
+            "id": "fr-006-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which possessive is correct for «my school» (école)?",
+            "opcoes": [
+              "ma école",
+              "mes école",
+              "mon école"
+            ],
+            "gabarito": "mon école",
+            "explicacao": "A feminine noun that starts with a vowel uses the masculine form: «mon école».",
+            "id": "fr-006-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «la famille» mean?",
+            "audio": "la famille",
+            "opcoes": [
+              "the family",
+              "their",
+              "a filha",
+              "the husband"
+            ],
+            "gabarito": "the family",
+            "explicacao": "«la famille» = the family.",
+            "id": "fr-006-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "son, sa, ses",
+            "respostaEsperada": "son, sa, ses",
+            "explicacao": "his, her, its",
+            "id": "fr-006-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I'm thirsty»?",
+            "opcoes": [
+              "J'ai soif.",
+              "Je suis soif.",
+              "Il a soif."
+            ],
+            "gabarito": "J'ai soif.",
+            "explicacao": "The feeling uses «avoir», never «être».",
+            "id": "fr-006-e24"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «their house»?",
+            "opcoes": [
+              "leurs maison",
+              "leur maison",
+              "sa maison"
+            ],
+            "gabarito": "leur maison",
+            "explicacao": "Several owners, one thing: «leur».",
+            "id": "fr-006-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «the aunt»?",
+            "opcoes": [
+              "l'oncle",
+              "la sœur",
+              "la tante"
+            ],
+            "gabarito": "la tante",
+            "explicacao": "«Tante» is the aunt.",
+            "id": "fr-006-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "J'ai faim",
+            "opcoes": [
+              "faim",
+              "J'ai"
+            ],
+            "gabarito": "J'ai faim",
+            "explicacao": "Write: J'ai faim",
+            "id": "fr-006-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «My uncle lives in France.»",
+            "opcoes": [
+              "Mon",
+              "oncle",
+              "habite",
+              "en",
+              "France"
+            ],
+            "gabarito": "Mon oncle habite en France.",
+            "explicacao": "Possessive before the noun.",
+            "id": "fr-006-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «My grandmother's name is Rita.»",
+            "opcoes": [
+              "Ma",
+              "grand-mère",
+              "s'appelle",
+              "Rita"
+            ],
+            "gabarito": "Ma grand-mère s'appelle Rita.",
+            "explicacao": "«S'appeler» has two «l»s in the third person.",
+            "id": "fr-006-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: My father is thirsty. We have two sisters.",
+            "respostaEsperada": "Mon père a soif. Nous avons deux sœurs.",
+            "id": "fr-006-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: I need a coffee. My grandparents' house is big.",
+            "respostaEsperada": "J'ai besoin d'un café. La maison de mes grands-parents est grande.",
+            "id": "fr-006-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Tell aloud, in five sentences, who the people in your family are and how old they are."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Describe an imaginary friend's family in five sentences."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-006.json",
+  "responsavel": null
+}

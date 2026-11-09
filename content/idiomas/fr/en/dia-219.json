@@ -1,0 +1,184 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 219,
+  "fase": 22,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Cause, consequence, purpose and nominalization: Purpose and nominalization",
+  "objetivo": "Lesson 55, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 55,
+    "titulo": "Cause, consequence, purpose and nominalization",
+    "objetivo": "Explain why something happens, what the result is and what it is for, and turn verbs into nouns to write more formally.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Purpose and nominalization",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "pour",
+            "translit": "POOR",
+            "pt": "",
+            "en": "",
+            "audio": "pour"
+          },
+          {
+            "ru": "afin de",
+            "translit": "ah-fan DUH",
+            "pt": "",
+            "en": "",
+            "audio": "afin de"
+          },
+          {
+            "ru": "afin que",
+            "translit": "ah-fan KUH",
+            "pt": "",
+            "en": "",
+            "audio": "afin que"
+          },
+          {
+            "ru": "dans le but de",
+            "translit": "dahn luh bew DUH",
+            "pt": "",
+            "en": "",
+            "audio": "dans le but de"
+          },
+          {
+            "ru": "la décision",
+            "translit": "lah day-see-zee-OHN",
+            "pt": "",
+            "en": "",
+            "audio": "la décision"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "So that and nouns",
+        "explicacao": "STEP 1: same subject: «pour» or «afin de» + infinitive: «Je travaille pour gagner de l'argent.» STEP 2: different subjects: «pour que» or «afin que» + subjunctive: «Je t'explique pour que tu comprennes.» STEP 3: «dans le but de» + infinitive is formal: «Dans le but de réduire les coûts, l'entreprise ferme.» STEP 4: nominalization turns a verb into a noun and makes the text formal: «décider → la décision», «arriver → l'arrivée», «augmenter → l'augmentation», «réussir → la réussite». STEP 5: «Il a décidé de partir» becomes «Sa décision de partir» or «Son départ».",
+        "comparacao": "English “so that” takes a plain verb («so that you understand»). In French, «pour que» takes the subjunctive, and when the subject is the same, French requires the infinitive: «pour comprendre», never «pour que je comprenne».",
+        "tabela": [
+          {
+            "connector": "pour + infinitive",
+            "function": "same subject",
+            "example": "Je travaille pour gagner de l'argent."
+          },
+          {
+            "connector": "afin de + infinitive",
+            "function": "same subject, formal",
+            "example": "Afin de réussir, il étudie."
+          },
+          {
+            "connector": "pour que + subjunctive",
+            "function": "different subjects",
+            "example": "Je t'explique pour que tu comprennes."
+          },
+          {
+            "connector": "afin que + subjunctive",
+            "function": "different subjects, formal",
+            "example": "Afin que tout soit clair…"
+          },
+          {
+            "connector": "décider → décision",
+            "function": "nominalization",
+            "example": "Sa décision est claire."
+          },
+          {
+            "connector": "arriver → arrivée",
+            "function": "nominalization",
+            "example": "Son arrivée est prévue lundi."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je travaille pour que je gagne de l'argent.",
+            "certo": "Je travaille pour gagner de l'argent.",
+            "motivo": "Same subject: infinitive."
+          },
+          {
+            "errado": "Je t'explique pour que tu comprends.",
+            "certo": "Je t'explique pour que tu comprennes.",
+            "motivo": "Subjunctive."
+          },
+          {
+            "errado": "Afin de que tout soit clair.",
+            "certo": "Afin que tout soit clair.",
+            "motivo": "«Afin que», without «de»."
+          },
+          {
+            "errado": "L'arriver du train est prévu.",
+            "certo": "L'arrivée du train est prévue.",
+            "motivo": "Noun: «arrivée»."
+          }
+        ],
+        "tag": "Purpose"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "À la réunion / At the meeting",
+        "contexto": "Claire and Nicolas discuss a delay.",
+        "linhas": [
+          {
+            "personagem": "Claire",
+            "ru": "— Nicolas, pourquoi le projet a-t-il du retard ?",
+            "en": "— Nicolas, por que o projeto está atrasado?",
+            "audio": "Nicolas, pourquoi le projet a-t-il du retard ?"
+          },
+          {
+            "personagem": "Nicolas",
+            "ru": "— À cause d'un problème technique. Comme le serveur est tombé, nous avons perdu deux jours.",
+            "en": "— Because of a technical problem. Since the server went down, we lost two days.",
+            "audio": "À cause d'un problème technique. Comme le serveur est tombé, nous avons perdu deux jours."
+          },
+          {
+            "personagem": "Claire",
+            "ru": "— C'est pourquoi la livraison est repoussée ?",
+            "en": "— Is that why the delivery was postponed?",
+            "audio": "C'est pourquoi la livraison est repoussée ?"
+          },
+          {
+            "personagem": "Nicolas",
+            "ru": "— Oui. Nous avons tellement de travail que nous ne pouvons pas finir à temps.",
+            "en": "— Yes. We have so much work that we cannot finish on time.",
+            "audio": "Oui. Nous avons tellement de travail que nous ne pouvons pas finir à temps."
+          },
+          {
+            "personagem": "Claire",
+            "ru": "— Que faire pour que le client ne s'inquiète pas ?",
+            "en": "— What can we do so that the client does not worry?",
+            "audio": "Que faire pour que le client ne s'inquiète pas ?"
+          },
+          {
+            "personagem": "Nicolas",
+            "ru": "— Je lui écris aujourd'hui afin de tout expliquer.",
+            "en": "— I am writing to him today in order to explain everything.",
+            "audio": "Je lui écris aujourd'hui afin de tout expliquer."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Answer aloud: «Pourquoi est-ce que tu étudies ?» using «pour», «afin de» and «pour que»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say two sentences with «tellement… que»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-055.json",
+  "responsavel": null
+}

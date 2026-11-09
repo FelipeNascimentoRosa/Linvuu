@@ -1,0 +1,376 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 3,
+  "fase": 1,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Sounds, alphabet and first words: Reading French: accents, silent letters and liaison",
+  "objetivo": "Lesson 1, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 1,
+    "titulo": "Sounds, alphabet and first words",
+    "objetivo": "Spell in French, recognize the sounds that English does not have (u, eu, nasal vowels, r), understand silent letters, liaison and elision, and say your first greetings.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Reading French: accents, silent letters and liaison",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Au café / No café",
+        "contexto": "Emma goes into a café and orders a coffee from the waiter. Listen carefully for the letters that are not pronounced and for the liaisons.",
+        "linhas": [
+          {
+            "personagem": "Le serveur",
+            "ru": "— Bonjour, madame ! Ça va ?",
+            "en": "— Good morning, madam! How are you?",
+            "audio": "Bonjour, madame ! Ça va ?"
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— Ça va bien, merci. Un café, s'il vous plaît.",
+            "en": "— Fine, thank you. A coffee, please.",
+            "audio": "Ça va bien, merci. Un café, s'il vous plaît."
+          },
+          {
+            "personagem": "Le serveur",
+            "ru": "— Voilà, madame.",
+            "en": "— Here you are, madam.",
+            "audio": "Voilà, madame."
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— Merci !",
+            "en": "— Thank you!",
+            "audio": "Merci !"
+          },
+          {
+            "personagem": "Le serveur",
+            "ru": "— De rien. Bonne journée !",
+            "en": "— You're welcome. Have a good day, madam!",
+            "audio": "De rien. Bonne journée !"
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— Pardon, monsieur... Un café, c'est bon ?",
+            "en": "— Excuse me, sir... Is the coffee good?",
+            "audio": "Pardon, monsieur... Un café, c'est bon ?"
+          },
+          {
+            "personagem": "Le serveur",
+            "ru": "— Oui, madame, c'est très bon !",
+            "en": "— Yes, madam, it is very good!",
+            "audio": "Oui, madame, c'est très bon !"
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— Merci, monsieur. Au revoir !",
+            "en": "— Thank you, sir. Goodbye!",
+            "audio": "Merci, monsieur. Au revoir !"
+          }
+        ]
+      },
+      {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "un café",
+            "translit": "an kah-FAY",
+            "pt": "",
+            "en": "",
+            "audio": "un café"
+          },
+          {
+            "ru": "voilà",
+            "translit": "vwah-LAH",
+            "pt": "",
+            "en": "",
+            "audio": "voilà"
+          },
+          {
+            "ru": "bonne journée",
+            "translit": "bun zhoor-NAY",
+            "pt": "",
+            "en": "",
+            "audio": "bonne journée"
+          },
+          {
+            "ru": "garçon",
+            "translit": "gahr-SOHN",
+            "pt": "",
+            "en": "",
+            "audio": "garçon"
+          },
+          {
+            "ru": "c'est bon",
+            "translit": "seh BOHN",
+            "pt": "",
+            "en": "",
+            "audio": "c'est bon"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 6,
+        "titulo": "Accents and silent letters",
+        "explicacao": "Listen first: «café», «père», «garçon», «petit», «bonjour». STEP 1: the acute accent, «é», gives a closed «ay» sound: «café», «été». STEP 2: the grave accent, «è», and the circumflex, «ê», give an open «eh» sound: «père», «mère», «fête». STEP 3: the circumflex on «â», «î», «ô» and «û» almost always just shows that an old letter has disappeared. It does not change the sound much: «hôtel», «bientôt». STEP 4: the cedilla, «ç», always sounds like «s»: «garçon», «français», «ça». STEP 5: most consonants at the end of a word are silent: «petit», «grand», «vous», «trop», «bon». STEP 6: the consonants «c», «r», «f» and «l» are often pronounced at the end. Remember the English word «careful»: «sac», «bonjour», «chef», «animal».",
+        "comparacao": "English spelling is famously irregular, but French has its own system: many letters at the end of words are silent. The first question when you see a French word is: what do I hear? Not: what do I read?",
+        "exemplos": [
+          {
+            "ru": "un café",
+            "pt": "um café"
+          },
+          {
+            "ru": "le père",
+            "pt": "the father"
+          },
+          {
+            "ru": "un garçon",
+            "pt": "a boy"
+          },
+          {
+            "ru": "petit",
+            "pt": "small"
+          },
+          {
+            "ru": "bonjour",
+            "pt": "good morning"
+          }
+        ],
+        "tabela": [
+          {
+            "pattern": "é",
+            "sound": "a closed «ê» sound",
+            "examples": "café, été, écouter"
+          },
+          {
+            "pattern": "è, ê",
+            "sound": "open «eh»",
+            "examples": "père, mère, fête"
+          },
+          {
+            "pattern": "ç",
+            "sound": "«s»",
+            "examples": "garçon, français, ça"
+          },
+          {
+            "pattern": "final consonant",
+            "sound": "almost always silent",
+            "examples": "petit, grand, vous, trop"
+          },
+          {
+            "pattern": "final c, r, f, l",
+            "sound": "are often pronounced",
+            "examples": "sac, bonjour, chef, animal"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "say the «t» of «petit»",
+            "certo": "puh-TEE (no final «t»)",
+            "motivo": "A final consonant is usually silent."
+          },
+          {
+            "errado": "«garcon» (no cedilla)",
+            "certo": "garçon",
+            "motivo": "The «ç» sounds like «s»; without the cedilla, the «c» would sound like «k»."
+          },
+          {
+            "errado": "saying «café» with an open last syllable",
+            "certo": "ka-FAY (closed ay)",
+            "motivo": "The acute accent gives a closed «ay» sound."
+          }
+        ],
+        "tag": "Pronunciation"
+      },
+      {
+        "tipo": "gramatica",
+        "min": 6,
+        "titulo": "Liaison and elision: words join together",
+        "explicacao": "Listen first: «les amis», «vous avez», «j'aime», «l'ami». STEP 1: «liaison» (linking) happens when the next word begins with a vowel. The final consonant, which was silent, is now pronounced, linked to the vowel. STEP 2: the liaison «s» sounds like «z». «Les amis» sounds like «lay-zah-MEE». «Vous avez» sounds like «voo-zah-VAY». STEP 3: elision cuts the final vowel of short words before a vowel. In its place we write an apostrophe. «Je» plus «aime» becomes «j'aime». «Le» plus «ami» becomes «l'ami». «Ce» plus «est» becomes «c'est». STEP 4: say the sentence like a continuous wave, with no pauses between words. «J'aime le café» sounds almost like one word.",
+        "comparacao": "English also runs words together: «give it up» sounds like «gi-vi-TUP». In French this is a mandatory rule: elision even shows up in writing, with the apostrophe.",
+        "exemplos": [
+          {
+            "ru": "les amis",
+            "pt": "the friends"
+          },
+          {
+            "ru": "vous avez",
+            "pt": "you have"
+          },
+          {
+            "ru": "J'aime le café.",
+            "pt": "I like coffee."
+          },
+          {
+            "ru": "C'est bon !",
+            "pt": "It's good!"
+          }
+        ],
+        "tabela": [
+          {
+            "pattern": "liaison",
+            "sound": "«s» sounds like «z»",
+            "examples": "les amis, vous avez, ils ont"
+          },
+          {
+            "pattern": "elision of je",
+            "sound": "je + vowel = j'",
+            "examples": "j'aime, j'ai"
+          },
+          {
+            "pattern": "elision of le",
+            "sound": "le + vowel = l'",
+            "examples": "l'ami, l'hôtel"
+          },
+          {
+            "pattern": "elision of ce",
+            "sound": "ce + est = c'est",
+            "examples": "c'est bon, c'est un café"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "«les amis» with no liaison (lay-ah-mee)",
+            "certo": "lay-zah-MEE",
+            "motivo": "The «s» links to the vowel and sounds like «z»."
+          },
+          {
+            "errado": "«je aime»",
+            "certo": "j'aime",
+            "motivo": "Before a vowel, «je» becomes «j'»."
+          },
+          {
+            "errado": "«le ami»",
+            "certo": "l'ami",
+            "motivo": "Before a vowel, «le» becomes «l'»."
+          }
+        ],
+        "tag": "Pronunciation"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 5,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "un café",
+            "opcoes": [
+              "un café",
+              "du café",
+              "le café"
+            ],
+            "gabarito": "un café",
+            "explicacao": "Listen to the beginning: «un» has the nasal «an». «Du» has the «ew» and «le» has the weak «e».",
+            "id": "fr-001-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "garçon",
+            "opcoes": [
+              "garçon",
+              "bonjour",
+              "café"
+            ],
+            "gabarito": "garçon",
+            "explicacao": "Listen to the «s» of «ç» and the final nasal «ohn».",
+            "id": "fr-001-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Bonne journée",
+            "opcoes": [
+              "Bonne journée",
+              "Bonjour",
+              "Bonsoir"
+            ],
+            "gabarito": "Bonne journée",
+            "explicacao": "The expression has two parts: «bonne» and «journée».",
+            "id": "fr-001-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "un café",
+            "respostaEsperada": "un café",
+            "explicacao": "Write: un café. The acute accent is on the final «e».",
+            "id": "fr-001-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which letter has the sound of a closed «ay»?",
+            "opcoes": [
+              "é",
+              "è",
+              "ê"
+            ],
+            "gabarito": "é",
+            "explicacao": "The acute accent gives the closed «ay», as in «café».",
+            "id": "fr-001-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "In «petit», what happens to the final «t»?",
+            "opcoes": [
+              "Not pronounced",
+              "Pronounced strongly",
+              "Sounds like «z»"
+            ],
+            "gabarito": "Not pronounced",
+            "explicacao": "Most final consonants are silent: «petit» is said without the final t.",
+            "id": "fr-001-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ café, s'il vous plaît. (um)",
+            "opcoes": [
+              "Un",
+              "Au",
+              "Ça"
+            ],
+            "gabarito": "Un",
+            "explicacao": "«Un café» é «um café».",
+            "id": "fr-001-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «A coffee, please.»",
+            "opcoes": [
+              "Un",
+              "café,",
+              "s'il",
+              "vous",
+              "plaît"
+            ],
+            "gabarito": "Un café, s'il vous plaît.",
+            "explicacao": "It is the standard order in any café in France.",
+            "id": "fr-001-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Act out the dialogue «Au café» aloud, playing both voices. Watch out: «un café» (an ka-FAY), «s'il vous plaît» and «c'est très bon» linked, with no pauses."
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Say aloud: tu, rue, bon, deux, pain. What is the sound of each one? Which of them has the nasal vowel «an»?"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-001.json",
+  "responsavel": null
+}

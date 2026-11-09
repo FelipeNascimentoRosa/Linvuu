@@ -1,0 +1,152 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 26,
+  "fase": 3,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Numbers to 100, time, days and months: Telling the time",
+  "objetivo": "Lesson 7, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 7,
+    "titulo": "Numbers to 100, time, days and months",
+    "objetivo": "Count to 100, tell the time, and talk about days, months, dates and seasons.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Telling the time",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "Quelle heure est-il ?",
+            "translit": "kehl uhr eh-TEEL",
+            "pt": "",
+            "en": "",
+            "audio": "Quelle heure est-il ?"
+          },
+          {
+            "ru": "Il est trois heures",
+            "translit": "eel eh trwah-ZUHR",
+            "pt": "",
+            "en": "",
+            "audio": "Il est trois heures"
+          },
+          {
+            "ru": "et quart",
+            "translit": "ay KAHR",
+            "pt": "",
+            "en": "",
+            "audio": "et quart"
+          },
+          {
+            "ru": "et demie",
+            "translit": "ay duh-MEE",
+            "pt": "",
+            "en": "",
+            "audio": "et demie"
+          },
+          {
+            "ru": "moins le quart",
+            "translit": "mwan luh KAHR",
+            "pt": "",
+            "en": "",
+            "audio": "moins le quart"
+          },
+          {
+            "ru": "midi, minuit",
+            "translit": "mee-DEE, mee-NWEE",
+            "pt": "",
+            "en": "",
+            "audio": "midi, minuit"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Saying the time",
+        "explicacao": "STEP 1: to ask, «Quelle heure est-il ?» or, more informally, «Il est quelle heure ?» or «Vous avez l'heure ?». STEP 2: to answer, use «Il est» + hour + «heure(s)»: «Il est trois heures.» «Il est une heure» (singular). STEP 3: to add minutes: «Il est trois heures dix.» STEP 4: «et quart» (15), «et demie» (30): «Il est trois heures et quart.» «Il est trois heures et demie.» STEP 5: for the last minutes of the hour, subtract: «moins cinq», «moins dix», «moins le quart»: «Il est quatre heures moins le quart» (3:45). STEP 6: noon is «midi» and midnight is «minuit», without «heures». «Midi et demi» and «minuit et demi» (masculine). STEP 7: to set an appointment, use «à + time»: «Le film commence à huit heures.» STEP 8: in daily life, use the 12-hour clock with «du matin», «de l'après-midi», «du soir». In official schedules, 0 to 23 is used: «dix-sept heures trente».",
+        "comparacao": "In English we say «half past three» and «quarter to four». French also subtracts: «quatre heures moins le quart». The difference is that «heure» always appears, except in «midi» and «minuit».",
+        "tabela": [
+          {
+            "hour": "3h00",
+            "speech": "Il est trois heures.",
+            "example": "3 o'clock"
+          },
+          {
+            "hour": "1h00",
+            "speech": "Il est une heure.",
+            "example": "singular"
+          },
+          {
+            "hour": "3h15",
+            "speech": "Il est trois heures et quart.",
+            "example": "e quinze"
+          },
+          {
+            "hour": "3h30",
+            "speech": "Il est trois heures et demie.",
+            "example": "half past"
+          },
+          {
+            "hour": "3h45",
+            "speech": "Il est quatre heures moins le quart.",
+            "example": "quarter to"
+          },
+          {
+            "hour": "12h00",
+            "speech": "Il est midi.",
+            "example": "no «heures»"
+          },
+          {
+            "hour": "17h30",
+            "speech": "Il est dix-sept heures trente.",
+            "example": "official (24-hour) time"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Il est une heures.",
+            "certo": "Il est une heure.",
+            "motivo": "One o'clock is singular."
+          },
+          {
+            "errado": "Il est midi heures.",
+            "certo": "Il est midi.",
+            "motivo": "No «heures» with midi."
+          },
+          {
+            "errado": "Il est trois et demi.",
+            "certo": "Il est trois heures et demie.",
+            "motivo": "«Heures» always appears."
+          },
+          {
+            "errado": "à les huit heures",
+            "certo": "à huit heures",
+            "motivo": "The preposition «à» + time, with no article."
+          }
+        ],
+        "tag": "Time"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Say eight different times aloud: 7:00, 8:15, 9:30, 11:45, 12:00, 2:30 p.m., 6:10 p.m., 9:50 p.m."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say aloud: 31, 52, 77, 84, 96."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-007.json",
+  "responsavel": null
+}

@@ -1,0 +1,571 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 4,
+  "fase": 1,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Sounds, alphabet and first words: Review and practice for lesson 1",
+  "objetivo": "Lesson 1, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 1,
+    "titulo": "Sounds, alphabet and first words",
+    "objetivo": "Spell in French, recognize the sounds that English does not have (u, eu, nasal vowels, r), understand silent letters, liaison and elision, and say your first greetings.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice for lesson 1",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 24,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "bonjour",
+            "opcoes": [
+              "bonjour",
+              "bonsoir",
+              "au revoir"
+            ],
+            "gabarito": "bonjour",
+            "explicacao": "Listen to the difference between «bonjour» and «bonsoir».",
+            "id": "fr-001-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "merci",
+            "opcoes": [
+              "merci",
+              "pardon",
+              "salut"
+            ],
+            "gabarito": "merci",
+            "explicacao": "Listen to the throaty «r» and the «ci».",
+            "id": "fr-001-e10"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ça va bien",
+            "opcoes": [
+              "Ça va bien",
+              "Ça va mal",
+              "Ça va ?"
+            ],
+            "gabarito": "Ça va bien",
+            "explicacao": "Listen to «bien», with the nasal «an» at the end.",
+            "id": "fr-001-e11"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Bonsoir",
+            "opcoes": [
+              "Bonsoir",
+              "Bonjour",
+              "Au revoir"
+            ],
+            "gabarito": "Bonsoir",
+            "explicacao": "The ending of the word changes it: «soir» (swahr) and «jour» (zhoor).",
+            "id": "fr-001-e12"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "rue",
+            "opcoes": [
+              "rue",
+              "roue",
+              "tu"
+            ],
+            "gabarito": "rue",
+            "explicacao": "«Rue» has the «ew». In «roue» you hear the «oo» of «food».",
+            "id": "fr-001-e13"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "deux",
+            "opcoes": [
+              "deux",
+              "du",
+              "dont"
+            ],
+            "gabarito": "deux",
+            "explicacao": "Listen to the «eu» sound (duh), different from the «ew» of «du» and from the nasal of «dont».",
+            "id": "fr-001-e14"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "pardon",
+            "opcoes": [
+              "pardon",
+              "merci",
+              "de rien"
+            ],
+            "gabarito": "pardon",
+            "explicacao": "Listen to the final nasal «ohn» of «pardon».",
+            "id": "fr-001-e15"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "S'il vous plaît",
+            "opcoes": [
+              "S'il vous plaît",
+              "Salut",
+              "Au revoir"
+            ],
+            "gabarito": "S'il vous plaît",
+            "explicacao": "A three-word expression, said in one go.",
+            "id": "fr-001-e16"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "pain",
+            "opcoes": [
+              "pain",
+              "bon",
+              "vin"
+            ],
+            "gabarito": "pain",
+            "explicacao": "Listen to the initial «p» and the nasal «an».",
+            "id": "fr-001-e17"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Bonjour, Lucas !",
+            "respostaEsperada": "Bonjour, Lucas !",
+            "explicacao": "Good morning, Lucas!",
+            "id": "fr-001-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "bonjour",
+            "respostaEsperada": "bonjour",
+            "explicacao": "Write: bonjour.",
+            "id": "fr-001-e18"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "au revoir",
+            "respostaEsperada": "au revoir",
+            "explicacao": "Write: au revoir.",
+            "id": "fr-001-e19"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "s'il vous plaît",
+            "respostaEsperada": "s'il vous plaît",
+            "explicacao": "Write: s'il vous plaît.",
+            "id": "fr-001-e20"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "merci",
+            "respostaEsperada": "merci",
+            "explicacao": "Write: merci.",
+            "id": "fr-001-e21"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ça va bien",
+            "respostaEsperada": "Ça va bien",
+            "explicacao": "Write: Ça va bien. Don't forget the cedilla on the «ç».",
+            "id": "fr-001-e22"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "bonsoir",
+            "respostaEsperada": "bonsoir",
+            "explicacao": "Write: bonsoir. The spelling «oi» sounds like «wah».",
+            "id": "fr-001-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which of these words has the French «u» (ew)?",
+            "opcoes": [
+              "rue",
+              "roue",
+              "route"
+            ],
+            "gabarito": "rue",
+            "explicacao": "In «rue», lips as for «oo» and tongue as for «ee».",
+            "id": "fr-001-e24"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How does the «n» of «bon» sound?",
+            "opcoes": [
+              "It nasalises the vowel; it is not a consonant sound",
+              "It is a hard «n», as in «banana»",
+              "It becomes an «m»"
+            ],
+            "gabarito": "It nasalises the vowel; it is not a consonant sound",
+            "explicacao": "The vowel is nasal and the «n» is not pronounced.",
+            "id": "fr-001-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «de rien» mean?",
+            "opcoes": [
+              "you're welcome",
+              "please",
+              "sorry"
+            ],
+            "gabarito": "you're welcome",
+            "explicacao": "It is the reply to «merci».",
+            "id": "fr-001-e26"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Ça va bien, merci.",
+            "respostaEsperada": "Ça va bien, merci.",
+            "explicacao": "Fine, thank you.",
+            "id": "fr-001-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the correct form of «je» + «aime»?",
+            "opcoes": [
+              "j'aime",
+              "je aime",
+              "jaime"
+            ],
+            "gabarito": "j'aime",
+            "explicacao": "Elision: «je» becomes «j'» before a vowel.",
+            "id": "fr-001-e27"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which word has the «eu» sound (uh)?",
+            "opcoes": [
+              "rue",
+              "deux",
+              "pain"
+            ],
+            "gabarito": "deux",
+            "explicacao": "«Deux» sounds like «duh»; «rue» has the «ew» and «pain» is nasal.",
+            "id": "fr-001-e28"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which nasal vowel appears in «pain»?",
+            "opcoes": [
+              "an",
+              "on",
+              "in"
+            ],
+            "gabarito": "in",
+            "explicacao": "The spelling «ain» is the nasal vowel «in» (as in «pain», «main»).",
+            "id": "fr-001-e29"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which of these words ends in a consonant that IS pronounced?",
+            "opcoes": [
+              "bonjour",
+              "petit",
+              "vous"
+            ],
+            "gabarito": "bonjour",
+            "explicacao": "The final «r» is usually pronounced (c, r, f, l); the «t» of «petit» and the «s» of «vous» are silent.",
+            "id": "fr-001-e30"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How is the «h» of «hôtel» pronounced?",
+            "opcoes": [
+              "Like the English «r» in «red»",
+              "Not pronounced",
+              "Like the aspirated English «h»"
+            ],
+            "gabarito": "Not pronounced",
+            "explicacao": "The French «h» is always silent: «hôtel» sounds like «oh-TEHL».",
+            "id": "fr-001-e31"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the correct form of «le» + «ami»?",
+            "opcoes": [
+              "le ami",
+              "l'amis",
+              "l'ami"
+            ],
+            "gabarito": "l'ami",
+            "explicacao": "Before a vowel, «le» loses the «e» and takes an apostrophe: «l'ami».",
+            "id": "fr-001-e32"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "You walk into a bakery at ten in the morning. What do you say?",
+            "opcoes": [
+              "Bonjour, madame !",
+              "Bonsoir, madame !",
+              "Au revoir, madame !"
+            ],
+            "gabarito": "Bonjour, madame !",
+            "explicacao": "«Bonjour» is the daytime greeting; «bonsoir» is for late afternoon; «au revoir» is for leaving.",
+            "id": "fr-001-e33"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ revoir ! (goodbye)",
+            "opcoes": [
+              "Au",
+              "A",
+              "Le"
+            ],
+            "gabarito": "Au",
+            "explicacao": "«Au revoir» is the standard goodbye.",
+            "id": "fr-001-e34"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "Au revoir, madame !",
+            "respostaEsperada": "Au revoir, madame !",
+            "explicacao": "Goodbye, madam!",
+            "id": "fr-001-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ça ___ ? (how's it going?)",
+            "opcoes": [
+              "va",
+              "vais",
+              "est"
+            ],
+            "gabarito": "va",
+            "explicacao": "«Ça va ?» is a fixed expression.",
+            "id": "fr-001-e35"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Merci ! — De ___ . (you're welcome)",
+            "opcoes": [
+              "rien",
+              "pardon",
+              "bonjour"
+            ],
+            "gabarito": "rien",
+            "explicacao": "The reply to «merci» is «de rien».",
+            "id": "fr-001-e36"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Informal: «___ !» (hi, bye)",
+            "opcoes": [
+              "De rien",
+              "Salut",
+              "Pardon"
+            ],
+            "gabarito": "Salut",
+            "explicacao": "«Salut» is the informal greeting.",
+            "id": "fr-001-e37"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ ! (sorry, excuse me)",
+            "opcoes": [
+              "Merci",
+              "Bonsoir",
+              "Pardon"
+            ],
+            "gabarito": "Pardon",
+            "explicacao": "«Pardon» is used to apologize or to ask someone to let you pass.",
+            "id": "fr-001-e38"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "S'il vous ___ . (please)",
+            "opcoes": [
+              "plaît",
+              "plaie",
+              "pluit"
+            ],
+            "gabarito": "plaît",
+            "explicacao": "It is spelled «plaît», with a circumflex accent.",
+            "id": "fr-001-e39"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elision: ___ aime le café. (I)",
+            "opcoes": [
+              "Je",
+              "J'",
+              "Jé"
+            ],
+            "gabarito": "J'",
+            "explicacao": "Before a vowel, «je» becomes «j'»: «j'aime».",
+            "id": "fr-001-e40"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "The «ç» of «garçon» sounds like «___».",
+            "opcoes": [
+              "k",
+              "ch",
+              "s"
+            ],
+            "gabarito": "s",
+            "explicacao": "The «ç» (cedilla) always sounds like «s».",
+            "id": "fr-001-e41"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "In «les amis», the liaison makes the «s» sound like «___».",
+            "opcoes": [
+              "z",
+              "s",
+              "ch"
+            ],
+            "gabarito": "z",
+            "explicacao": "In liaison, the «s» sounds like «z»: «lay-zah-MEE».",
+            "id": "fr-001-e42"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Bon___ , monsieur ! (good evening, on arriving)",
+            "opcoes": [
+              "soir",
+              "jour",
+              "voir"
+            ],
+            "gabarito": "soir",
+            "explicacao": "«Bonsoir» is the greeting for late afternoon and evening.",
+            "id": "fr-001-e43"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat aloud and then show the answer.",
+            "audio": "De rien. Bonne journée !",
+            "respostaEsperada": "De rien. Bonne journée !",
+            "explicacao": "You're welcome. Have a good day, madam!",
+            "id": "fr-001-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ça va bien, merci. ___ toi ? (and you?)",
+            "opcoes": [
+              "Et",
+              "En",
+              "Au"
+            ],
+            "gabarito": "Et",
+            "explicacao": "«Et toi ?» returns the question to a friend.",
+            "id": "fr-001-e44"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Ça va bien, merci.»",
+            "opcoes": [
+              "Ça",
+              "va",
+              "bien,",
+              "merci"
+            ],
+            "gabarito": "Ça va bien, merci.",
+            "explicacao": "It is the usual answer to «Ça va ?».",
+            "id": "fr-001-e45"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Good morning, I'm fine.»",
+            "opcoes": [
+              "Bonjour,",
+              "ça",
+              "va",
+              "bien"
+            ],
+            "gabarito": "Bonjour, ça va bien.",
+            "explicacao": "A greeting followed by «ça va bien».",
+            "id": "fr-001-e46"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Thank you, bye.»",
+            "opcoes": [
+              "Merci,",
+              "au",
+              "revoir"
+            ],
+            "gabarito": "Merci, au revoir.",
+            "explicacao": "Thanks and goodbye.",
+            "id": "fr-001-e47"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Hi, Lucas! How are you?»",
+            "opcoes": [
+              "Salut,",
+              "Lucas !",
+              "Ça",
+              "va ?"
+            ],
+            "gabarito": "Salut, Lucas ! Ça va ?",
+            "explicacao": "An informal greeting followed by the question.",
+            "id": "fr-001-e48"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: good morning, thank you and goodbye.",
+            "respostaEsperada": "Bonjour. Merci. Au revoir.",
+            "id": "fr-001-e49"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: Good evening (on arriving). Sorry. Please.",
+            "respostaEsperada": "Bonsoir. Pardon. S'il vous plaît.",
+            "id": "fr-001-e50"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French, with elision: I like the coffee.",
+            "respostaEsperada": "J'aime le café.",
+            "id": "fr-001-e51"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in French: Hi! How are you? Fine, thank you.",
+            "respostaEsperada": "Salut ! Ça va ? Ça va bien, merci.",
+            "id": "fr-001-e52"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Greet an imaginary friend aloud (salut, ça va, et toi) and then a lady in a shop (bonjour, madame, s'il vous plaît, merci, au revoir). Listen to yourself: are the «ew» and the nasals right?"
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Spell three words from memory using the alphabet and say the greetings from the lesson. Then listen to the dialogue «Bonjour, Lucas !» again and repeat Camille's lines."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-001.json",
+  "responsavel": null
+}

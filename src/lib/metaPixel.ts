@@ -9,7 +9,7 @@ type MetaWindow = Window & { fbq?: Queue; _fbq?: Queue };
 
 // O SDK pode enviar a URL atual: não o chamamos em áreas de conta ou em URLs com parâmetros inesperados.
 export function rotaSeguraParaPixel(path: string, search: string): boolean {
-  if (!/^\/(?:en|es)\/?$/.test(path) && !/^\/(?:en\/|es\/)?(?:|cursos|assinatura|curso\/(?:en|es|de|fr|it|ru|br)|livros(?:\/(?:en|es|de|fr|it|ru)(?:\/capitulo\/[12])?)?)\/?$/.test(path)) return false;
+  if (!/^\/(?:en|es)\/?$/.test(path) && !/^\/(?:en\/|es\/)?(?:|cursos|assinatura|portugues|russo-online|sobre|por-que-linvuu|contato|gramatica(?:\/(?:en|es|de|fr|it|ru|br))?|curso\/(?:en|es|de|fr|it|ru|br)|livros(?:\/(?:en|es|de|fr|it|ru)(?:\/capitulo\/[12])?)?)\/?$/.test(path)) return false;
   const allowed = new Set(['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid','ttclid','tt_test_id','plano']);
   for (const [key, value] of new URLSearchParams(search)) if (!allowed.has(key) || value.length > 200 || !/^[A-Za-z0-9_.~-]*$/.test(value)) return false;
   return true;

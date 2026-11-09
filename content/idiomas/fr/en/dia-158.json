@@ -1,0 +1,142 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 158,
+  "fase": 16,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Indirect speech: reporting what someone said: Reporting in the past",
+  "objetivo": "Lesson 40, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 40,
+    "titulo": "Indirect speech: reporting what someone said",
+    "objetivo": "Report what someone said, asked or requested, in the present and the past, with the changes of tense and pronouns.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Reporting in the past",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "avait dit",
+            "translit": "ah-veh DEE",
+            "pt": "",
+            "en": "",
+            "audio": "avait dit"
+          },
+          {
+            "ru": "a demandé",
+            "translit": "ah duh-mahn-DAY",
+            "pt": "",
+            "en": "",
+            "audio": "a demandé"
+          },
+          {
+            "ru": "a répondu",
+            "translit": "ah ray-pohn-DEW",
+            "pt": "",
+            "en": "",
+            "audio": "a répondu"
+          },
+          {
+            "ru": "était",
+            "translit": "ay-teh",
+            "pt": "",
+            "en": "",
+            "audio": "était"
+          },
+          {
+            "ru": "viendrait",
+            "translit": "vee-an-DREH",
+            "pt": "",
+            "en": "",
+            "audio": "viendrait"
+          },
+          {
+            "ru": "avait fini",
+            "translit": "ah-veh fee-NEE",
+            "pt": "",
+            "en": "",
+            "audio": "avait fini"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Il a dit qu'il viendrait",
+        "explicacao": "STEP 1: when the introductory verb is in the PAST (a dit, a demandé, a répondu), the tenses in the speech shift back. STEP 2: present → imparfait: «Il a dit : « Je suis fatigué. »» → «Il a dit qu'il était fatigué.» STEP 3: passé composé → plus-que-parfait: «Il a dit : « J'ai fini. »» → «Il a dit qu'il avait fini.» STEP 4: futur simple → conditionnel: «Il a dit : « Je viendrai. »» → «Il a dit qu'il viendrait.» STEP 5: futur proche → «aller» in the imparfait: «Il a dit : « Je vais partir. »» → «Il a dit qu'il allait partir.» STEP 6: imparfait and plus-que-parfait do not change. STEP 7: the imperative becomes «de» + infinitive: «Il m'a dit : « Viens ! »» → «Il m'a dit de venir.» STEP 8: questions follow the same pattern: «Elle a demandé si j'avais mangé.» «Il m'a demandé où j'habitais.»",
+        "comparacao": "in English the same shift happens («he said: I'm coming» → «he said he was coming»), but less regularly. French is systematic: present → imparfait; passé composé → plus-que-parfait; future → conditionnel. This correspondence is the rule of sequence of tenses.",
+        "tabela": [
+          {
+            "direct": "présent",
+            "indirect": "imparfait",
+            "example": "Il a dit qu'il était fatigué."
+          },
+          {
+            "direct": "passé composé",
+            "indirect": "plus-que-parfait",
+            "example": "Il a dit qu'il avait fini."
+          },
+          {
+            "direct": "futur simple",
+            "indirect": "conditionnel",
+            "example": "Il a dit qu'il viendrait."
+          },
+          {
+            "direct": "futur proche",
+            "indirect": "aller in the imparfait",
+            "example": "Il a dit qu'il allait partir."
+          },
+          {
+            "direct": "impératif",
+            "indirect": "de + infinitive",
+            "example": "Il m'a dit de venir."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Il a dit qu'il est fatigué.",
+            "certo": "Il a dit qu'il était fatigué.",
+            "motivo": "Go back one tense."
+          },
+          {
+            "errado": "Il a dit qu'il viendra.",
+            "certo": "Il a dit qu'il viendrait.",
+            "motivo": "Future → conditional."
+          },
+          {
+            "errado": "Il a demandé si j'ai mangé.",
+            "certo": "Il a demandé si j'avais mangé.",
+            "motivo": "Passé composé → plus-que-parfait."
+          },
+          {
+            "errado": "Il m'a dit viens.",
+            "certo": "Il m'a dit de venir.",
+            "motivo": "Imperative → «de» + infinitive."
+          }
+        ],
+        "tag": "Speech"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Report out loud eight sentences someone said to you yesterday, with the change of tenses."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Turn into indirect speech: «Marie dit : « Je suis fatiguée. »» «Paul demande : « Tu viens ? »»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-040.json",
+  "responsavel": null
+}

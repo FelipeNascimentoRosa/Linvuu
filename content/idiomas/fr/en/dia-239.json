@@ -1,0 +1,161 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 239,
+  "fase": 24,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Strategies for understanding and being understood: When words are missing",
+  "objetivo": "Lesson 60, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 60,
+    "titulo": "Strategies for understanding and being understood",
+    "objetivo": "Understand more than you know (similar words, word families, false friends), work around missing words and ask for help without stalling the conversation.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "When words are missing",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "comment dit-on…",
+            "translit": "koh-mahn dee-TOHN",
+            "pt": "how do you say…",
+            "en": "how do you say…",
+            "audio": "comment dit-on…"
+          },
+          {
+            "ru": "c'est-à-dire",
+            "translit": "seh-tah-DEER",
+            "pt": "that is to say; in other words",
+            "en": "that is to say; in other words",
+            "audio": "c'est-à-dire"
+          },
+          {
+            "ru": "un truc qui sert à",
+            "translit": "an trewk kee sehr AH",
+            "pt": "a thing used for",
+            "en": "a thing used for",
+            "audio": "un truc qui sert à"
+          },
+          {
+            "ru": "je veux dire",
+            "translit": "zhuh vuh DEER",
+            "pt": "I mean",
+            "en": "I mean",
+            "audio": "je veux dire"
+          },
+          {
+            "ru": "répéter",
+            "translit": "ray-pay-TAY",
+            "pt": "to repeat",
+            "en": "to repeat",
+            "audio": "répéter"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Working around gaps and asking for help",
+        "explicacao": "STEP 1: ask for the word: «Comment dit-on \"tool\" en français ?» STEP 2: describe: «C'est un truc qui sert à couper.» «C'est quelque chose qu'on utilise pour…» STEP 3: use another, simpler word: «Je veux dire…», «c'est-à-dire…» STEP 4: ask for a repeat: «Pouvez-vous répéter, s'il vous plaît ?» «Pouvez-vous parler plus lentement ?» STEP 5: confirm: «Si j'ai bien compris, vous voulez dire que…» STEP 6: buy time: «Euh… comment dire…», «Attendez, je réfléchis.»",
+        "comparacao": "In English, “that thing you use to…” can help when you forget a word. In everyday French, «un truc qui sert à…» works similarly; «un objet qui sert à…» is more suitable in formal contexts.",
+        "tabela": [
+          {
+            "situation": "ask for a word",
+            "formal": "Comment dit-on… en français ?",
+            "informal": "Ça se dit comment ?"
+          },
+          {
+            "situation": "describing",
+            "formal": "C'est un objet qui sert à…",
+            "informal": "C'est un truc pour…"
+          },
+          {
+            "situation": "ask someone to repeat",
+            "formal": "Pourriez-vous répéter ?",
+            "informal": "Tu peux répéter ?"
+          },
+          {
+            "situation": "slowly",
+            "formal": "Pourriez-vous parler plus lentement ?",
+            "informal": "Plus doucement, s'il te plaît."
+          },
+          {
+            "situation": "confirm",
+            "formal": "Si j'ai bien compris, vous voulez dire…",
+            "informal": "Donc tu veux dire que…"
+          },
+          {
+            "situation": "buy time",
+            "formal": "Attendez, je réfléchis.",
+            "informal": "Euh… comment dire…"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Comment dit-on «tool» à français ?",
+            "certo": "Comment dit-on «tool» en français ?",
+            "motivo": "Use «en français» to ask how to say something in French."
+          },
+          {
+            "errado": "Pouvez-vous répéter plus slowly ?",
+            "certo": "Pouvez-vous parler plus lentement ?",
+            "motivo": "No mixing languages."
+          },
+          {
+            "errado": "J'ai pas compris rien.",
+            "certo": "Je n'ai rien compris.",
+            "motivo": "Negation."
+          },
+          {
+            "errado": "Parlez plus lent.",
+            "certo": "Parlez plus lentement.",
+            "motivo": "Adverb."
+          }
+        ],
+        "tag": "Compensation"
+      },
+      {
+        "tipo": "texto",
+        "min": 8,
+        "titulo": "Un message de l'hôtel / A message from the hotel",
+        "ru": "Madame, Monsieur, nous vous informons que la piscine sera fermée demain pour des raisons de sécurité. Le petit déjeuner sera servi à partir de huit heures dans la salle principale. Si vous avez des questions, vous pouvez demander à la réception. Nous vous remercions de votre compréhension et vous souhaitons un agréable séjour.",
+        "pt": "Dear Madam, dear Sir, we inform you that the swimming pool will be closed tomorrow for safety reasons. Breakfast will be served from eight o'clock in the main hall. If you have any questions, you may ask at reception. We thank you for your understanding and wish you a pleasant stay.",
+        "perguntas": [
+          {
+            "pergunta": "What will be closed tomorrow?",
+            "resposta": "The pool."
+          },
+          {
+            "pergunta": "Where will breakfast be served?",
+            "resposta": "In the main hall."
+          },
+          {
+            "pergunta": "Where can guests ask questions?",
+            "resposta": "At reception."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Role-play aloud: you do not know a word and need to explain it to a French person without saying the English equivalent."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Explain a word in French without saying it: «un truc qui sert à…»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-060.json",
+  "responsavel": null
+}

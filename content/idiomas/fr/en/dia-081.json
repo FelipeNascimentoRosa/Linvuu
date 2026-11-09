@@ -1,0 +1,161 @@
+{
+  "idioma": "fr",
+  "explicacao": "en",
+  "dia": 81,
+  "fase": 9,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Indirect object pronouns and two pronouns: Lui e leur",
+  "objetivo": "Lesson 21, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 21,
+    "titulo": "Indirect object pronouns and two pronouns",
+    "objetivo": "Use «lui» and «leur» for «to him/to her» and «to them», recognize the verbs that take «à», and combine two pronouns in simple sentences.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Lui e leur",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "donner",
+            "translit": "doh-NAY",
+            "pt": "",
+            "en": "",
+            "audio": "donner"
+          },
+          {
+            "ru": "dire",
+            "translit": "DEER",
+            "pt": "",
+            "en": "",
+            "audio": "dire"
+          },
+          {
+            "ru": "demander",
+            "translit": "duh-mahn-DAY",
+            "pt": "",
+            "en": "",
+            "audio": "demander"
+          },
+          {
+            "ru": "répondre",
+            "translit": "ray-POHNDR",
+            "pt": "",
+            "en": "",
+            "audio": "répondre"
+          },
+          {
+            "ru": "téléphoner",
+            "translit": "tay-lay-foh-NAY",
+            "pt": "",
+            "en": "",
+            "audio": "téléphoner"
+          },
+          {
+            "ru": "offrir",
+            "translit": "oh-FREER",
+            "pt": "",
+            "en": "",
+            "audio": "offrir"
+          },
+          {
+            "ru": "envoyer",
+            "translit": "ahn-vwah-YAY",
+            "pt": "",
+            "en": "",
+            "audio": "envoyer"
+          },
+          {
+            "ru": "apporter",
+            "translit": "ah-pohr-TAY",
+            "pt": "",
+            "en": "",
+            "audio": "apporter"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Je lui donne un livre",
+        "explicacao": "STEP 1: the indirect object answers «to whom?»: «Je donne un livre à Marie.» STEP 2: to avoid repeating the person, use «lui» (to him, to her) and «leur» (to them): «Je lui donne un livre.» «Je leur donne un livre.» STEP 3: «me, te, nous, vous» work for both direct and indirect objects: «Il me donne un livre.» «Je te téléphone.» «Elle nous répond.» STEP 4: the position is the same as for the other pronouns: before the verb: «Je lui parle.» «Je ne lui parle pas.» «Je vais lui parler.» STEP 5: in the passé composé, before the auxiliary: «Je lui ai donné un livre.» STEP 6: the participle does NOT agree with the indirect object: «Je lui ai parlé.» (no added «e») STEP 7: verbs that take «à» + person: «donner, dire, demander, répondre, téléphoner, offrir, envoyer, parler, écrire, sourire». STEP 8: with «penser à» and «s'intéresser à», use «à» + stressed pronoun: «Je pense à lui.» «Je m'intéresse à elle.»",
+        "comparacao": "In English we say «I give her a book» or «I give a book to her». French uses «lui» before the verb: «je lui donne». For more than one person, «leur», with no «s»: «je leur donne».",
+        "tabela": [
+          {
+            "pronoun": "me",
+            "function": "to me",
+            "example": "Il me donne un livre."
+          },
+          {
+            "pronoun": "te",
+            "function": "to you",
+            "example": "Je te téléphone."
+          },
+          {
+            "pronoun": "lui",
+            "function": "to him / to her",
+            "example": "Je lui parle."
+          },
+          {
+            "pronoun": "nous",
+            "function": "to us",
+            "example": "Elle nous répond."
+          },
+          {
+            "pronoun": "vous",
+            "function": "to you (plural)",
+            "example": "Je vous écris."
+          },
+          {
+            "pronoun": "leur",
+            "function": "to them (masc.) / to them (fem.)",
+            "example": "Je leur donne un cadeau."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je parle à lui.",
+            "certo": "Je lui parle.",
+            "motivo": "Pronoun before the verb."
+          },
+          {
+            "errado": "Je donne leur un livre.",
+            "certo": "Je leur donne un livre.",
+            "motivo": "Before the verb."
+          },
+          {
+            "errado": "Je leurs parle.",
+            "certo": "Je leur parle.",
+            "motivo": "«Leur» does not take an «s»."
+          },
+          {
+            "errado": "Je lui ai parlée.",
+            "certo": "Je lui ai parlé.",
+            "motivo": "Indirect object: no agreement."
+          }
+        ],
+        "tag": "Pronouns"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Answer aloud with «lui» or «leur»: «Tu parles à ta mère ? Tu donnes un cadeau à tes amis ? Tu téléphones à ton frère ?»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Tell aloud a little story with a setting and an event."
+      }
+    ]
+  },
+  "origem": "content/idiomas/fr/aulas/aula-021.json",
+  "responsavel": null
+}
