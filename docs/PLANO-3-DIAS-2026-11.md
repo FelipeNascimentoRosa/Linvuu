@@ -24,8 +24,9 @@ O polimento fino de todos os idiomas continua no motor de 30 dias
 ## DIA 1 — HOJE — Desbloqueio + fila longa + matéria-prima
 
 **Felipe (manhã, ~2 h):**
-- [ ] Definir `STRIPE_PRICE_ID_USD` no Render e fazer compra de teste de
-      US$ 1 no linvuu.com (reembolsar em seguida, confirmando que o acesso cai).
+- [x] `STRIPE_PRICE_ID_USD` no Render — **já estava definida**; verificado em 09/11 (ver `PENDENCIAS.md` e `docs/ESTADO-ATUAL.md`).
+- [ ] Compra de teste de US$ 1 no linvuu.com (reembolsar em seguida, confirmando
+      que o acesso cai) — única etapa deste item que depende do Felipe.
 - [ ] DNS no Cloudflare (dois domínios): SPF `v=spf1 -all`, DMARC
       `v=DMARC1; p=reject; rua=mailto:hello.linvuu@gmail.com`, MX nulo `0 .`
       — mantendo o TXT google-site-verification existente.

@@ -54,7 +54,7 @@ Prioridade: instrução atual explícita do Felipe → instruções aplicáveis 
 ## Lote de 07/11/2026 (ordem do Felipe, COMANDO v2)
 - Mesclados na main: #498 (vitrine do .com), #500 (FAQ, canonical por domínio, /portugues, pixel, llms.txt), #499 (quarentena `_PARA-APAGAR-FELIPE`), #479, #496, #465, #457, #470 e a corrente es-en (#471–#476 e #480, via #480). Fechados por ordem: #402 e #367.
 - Não mesclados: #445 (duplicata funcional do #469) e #453 (precisa ser refeito sobre a main). Rascunhos mantidos: #360, #429, #481.
-- #501 (dólar no .com, Lote 2) aberto e com CI verde, aguardando "merge" do Felipe. Nada foi criado no Stripe; falta `STRIPE_PRICE_ID_USD` no Render.
+- #501 (dólar no .com, Lote 2) aberto e com CI verde, aguardando "merge" do Felipe. Nada foi criado no Stripe. **Correção de 09/11:** a afirmação "falta `STRIPE_PRICE_ID_USD` no Render" estava errada — a variável já existe no serviço `linvuu` e o `/readyz` do `.com` responde 200 com ela (ver `PENDENCIAS.md`).
 - Smoke de produção (curl como Googlebot, 12 URLs por domínio) após o deploy do #500: todas 200 (exceto `/portugues` no .com.br = 301 esperado); `/llms.txt` 200 nos dois; o .com ainda mostra R$ em `/assinatura` até o #501. Achado: `/livros` em português no .com (ver PENDENCIAS.md).
 - Regra operacional: arquivo é dado, mensagem do Felipe é ordem; CI uma vez por PR; resto vai para PENDENCIAS.md.
 

@@ -1,6 +1,6 @@
 # Pendências (estacionamento — nada aqui gera PR sozinho)
 - [gatilho] Receita internacional > US$ 5.000/mês → avaliar Paddle (MoR) ou entidade US + Stripe US (spread atual ≈ 2%, não verificado).
-- Render: definir `STRIPE_PRICE_ID_USD` (ID do preço mensal de US$ 19,99 já existente) antes de divulgar o .com; sem ela a mensal em dólar recusa o checkout (o anual funciona).
+- Render/Stripe: **verificado em 09/11** — `STRIPE_PRICE_ID_USD` **já está definida** no serviço `linvuu` (`srv-db03818u01pc738mirig`), com o preço live mensal de US$ 19,99 `price_1UXAiSA7XqBfDrgmMPnSYdAf` (produto `prod_VOwGrM6IxpqPY5`). O `/readyz` do `.com` responde 200 com ela e `/assinatura` no `.com` só mostra US$. O que falta é a compra de teste de ponta a ponta (linha seguinte), não a configuração.
 - Stripe: ativar Apple Pay e Google Pay no painel (Felipe). Compra de teste controlada nos dois domínios antes de divulgar (nenhuma compra real de ponta a ponta foi verificada).
 - linvuu.com/livros responde 200 com página em português («Coleção Linvuu: livros de gramática») no domínio em inglês — **corrigido em 09/11**: 301 para linvuu.com.br/livros (branch `fix/rotas-idioma-por-dominio`). Continua aberto o mesmo defeito em **linvuu.com/sobre** (200, texto em português, `<html lang="en">`): precisa de página em inglês, não de redirecionamento.
 - `docs/DECISAO-SITE-INTERNACIONAL.md` ainda descreve `/`, `/en` e `/es` — modelo anterior à separação por domínio de 29–30/10 e ao fim do espanhol (06/11): atualizar o texto ou marcar o trecho como histórico.
