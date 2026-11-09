@@ -132,7 +132,7 @@ Inventário levantado por leitura do código e por HTTP real, não por suposiç�
 | `/brazilian-portuguese`, `/en/brazilian-portuguese`, `/es/brazilian-portuguese` | `.com/portugues` | o curso tem uma casa só |
 | `/en/*` no `.com.br` | `.com/*` | inglês mora no `.com` |
 | `/es/*` em qualquer domínio | caminho sem prefixo, no domínio do idioma | o espanhol deixou de ter prefixo em 06/11/2026 |
-| `/curso/br/*` no `.com` | `.com.br/curso/br/*` | curso de português para estrangeiros só existe em pt no `.com.br`; `/curso/br` e as aulas já traduzidas ficam no `.com` |
+| `/curso/br/*` no `.com.br` | `.com/curso/br/*` | o curso de português para estrangeiros mora no domínio inglês (`server.ts:199-202`); no `.com` é página normal |
 | rota com barra final | mesma rota sem barra | endereço único (`server.ts:204`) |
 
 ### 7.4 O que está quebrado, faltando ou frágil (medido hoje)
