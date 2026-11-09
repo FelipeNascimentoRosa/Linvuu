@@ -66,7 +66,7 @@ O `PENDENCIAS.md` e o `docs/PLANO-3-DIAS-2026-11.md` traziam "definir `STRIPE_PR
 Prova: `https://linvuu.com/readyz` responde 200. Isso só acontece porque `server/prontidao.ts` valida o preço em dólar **quando a variável existe** e devolve 503 em `preco-usd` ou `preco-usd-divergente`; o 200 atesta variável presente, formato válido, preço ativo, live, em dólar, mensal e com `unit_amount` igual ao anunciado. `https://linvuu.com/assinatura` mostra US$ 19.99 e US$ 149.00 e **nenhum** valor em reais; `https://linvuu.com.br/assinatura` mostra R$ 139, R$ 291,90, R$ 417 e R$ 999 e nenhum em dólar. Ou seja: a moeda segue o domínio, como a decisão de 07/11 (`docs/PRECOS-DEFINIDOS.md`) descreve.
 Limitações: nenhuma sessão de Checkout foi aberta e nenhuma cobrança foi feita — a compra de teste de US$ 1 com reembolso continua pendente e é o único passo que depende do Felipe; Apple Pay e Google Pay não foram verificados no painel. Observação de método: o subdomínio `linvuu.onrender.com` responde 404 em `/readyz`, coincidindo com `renderSubdomainPolicy: disabled` na configuração do serviço; por isso a prova usa os dois domínios públicos. Estado: documental — corrige o registro, não altera código nem configuração.
 
-## /por-que-linvuu em inglês: a página que vende deixou de ser invisível no `.com` (2026-11-09, branch `feat/por-que-em-ingles`)
+## /por-que-linvuu em inglês: a página que vende deixou de ser invisível no `.com` (2026-11-09)
 
 `https://linvuu.com/por-que-linvuu` respondia 200 com `<html lang="en">`, título em português («Por que estudar com a Linvuu? · Linvuu»), `<meta name="robots" content="noindex">` e **nenhum corpo pré-renderizado**: o HTML saía só com a casca do React, sem um parágrafo sequer. É a mesma classe de defeito do `/sobre` (item 1 de `docs/SEO_AUDIT.md`), mas na rota que vende — quem chega ao `.com` para decidir comprar não tinha nada para ler, nem no navegador sem JavaScript nem na busca.
 
@@ -78,7 +78,21 @@ Limitações: nenhuma sessão de Checkout foi aberta e nenhuma cobrança foi fei
 
 Verificado: `tsc --noEmit` limpo; `testar-inventario-seo` conforme (3.680 sessões, sitemap 124); `testar-http-seo` **3.784 páginas** conformes (281 redirecionamentos); `testar-titulos` 87 títulos com no máximo 60 caracteres; `testar-dominio` 20/20; `testar-seo-publico`, `testar-robots-navegacao`, `testar-links-publicos` e `testar-idiomas-ensino` conformes; `npm run build:website` OK. Paridade servidor × navegador no servidor de produção local, com `Host` real: **`.com.br` 93 URLs + 6 navegações** e **`.com` 42 URLs + 5 navegações** com `<head>` idêntico depois do JavaScript. Sonda do React como `linvuu.com`: `<h1>` «Why study with Linvuu?», os oito motivos, «Who it is for», «Start now», link «Why study with Linvuu?» no rodapé e `robots` ausente; a página em português continua com os mesmos títulos e a mesma frase final.
 
-Estado: implementado e testado em branch; **sem merge e sem deploy** (a Render entra ~25 min depois do merge — `NOTES.md` §7). Limitações: nada conferido em produção ainda; `/contato` e `/ex-alunos-udemy` continuam só em português (`noindex` no `.com`), por decisão registrada; `/contato` é o próximo candidato natural, porque contato é confiança para quem compra.
+Estado: **mesclado** (PR #535, `be7ac4caf`; 9/9 checks verdes — `build`, `paridade-head`, `visual`, `lighthouse`, `apk`, `previa-apk`, `robots-google`, gitleaks e dependências) e **verificado em produção em 09/11/2026**, depois de o deploy do Render entrar:
+
+| Sondagem (produção, com query única para furar o cache de borda) | Resultado |
+|---|---|
+| `https://linvuu.com/por-que-linvuu` | 200, `<html lang="en"`, título «Why study with Linvuu? · Linvuu», **sem `<meta name="robots">`** |
+| canonical e alternates do `.com/por-que-linvuu` | `canonical` https://linvuu.com/por-que-linvuu; `hreflang` pt-BR → .com.br, en → .com, x-default → .com |
+| corpo pré-renderizado do `.com/por-que-linvuu` | texto em inglês presente no HTML entregue, sem executar JavaScript |
+| `https://linvuu.com.br/por-que-linvuu` | 200, título «Por que estudar com a Linvuu? · Linvuu», sem `noindex`, texto em português |
+| `https://linvuu.com/sitemap.xml` | **37** `<loc>` (eram 36); `/por-que-linvuu` presente |
+| `https://linvuu.com.br/sitemap.xml` | 87 `<loc>` |
+| não regrediu | `https://linvuu.com/livros` → 301 para `https://linvuu.com.br/livros`, query preservada |
+
+O deploy levou **menos de 40 minutos** para aparecer: às 11:11 local (4 minutos depois do merge das 14:07:18Z) o `.com/sitemap.xml` ainda tinha 36 URLs e o `/por-que-linvuu` ainda tinha título em português. A hora exata da virada não foi medida — as sondas no terminal ficaram tamponadas — mas confirma a regra do `NOTES.md` §7: o push não publica, a Render publica no ritmo dela.
+
+Limitações: o texto inglês pede revisão humana antes de divulgação (fatos verificáveis, redação por revisar); `/contato` e `/ex-alunos-udemy` continuam só em português (`noindex` no `.com`), por decisão registrada — `/contato` é o próximo candidato natural, porque contato é confiança para quem compra.
 
 
 ## /sobre em inglês: página escrita, não tradução automática (2026-11-09)
