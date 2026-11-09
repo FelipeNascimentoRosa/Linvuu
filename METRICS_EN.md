@@ -166,7 +166,7 @@ Medição: `https://linvuu.com` (HTML do servidor) + Chromium em produção para
 3. **A nota de SEO é de uma biblioteca, não do Google.** Ela não vê links, imagens, dados estruturados nem concorrência; os avisos `links`/`images` são artefato da conversão para markdown.
 4. **Texto de página montada no navegador vem de produção** (o navegador local veria o perfil português, porque `window.location.hostname` seria `127.0.0.1`). Isso significa que o antes/depois de uma mudança só é comparável **depois do deploy** — ou rodando o modo local, que compara o build, não o ar.
 5. **Pré-renderizado ≠ renderizado.** O HTML traz `<main data-prerender>` oculto quando há JavaScript; as duas versões podem divergir em quantidade de texto (`/gramatica/ru`: 1098 palavras no HTML, 358 no DOM). A medição escolhe o HTML quando ele tem texto; a divergência em si é um achado de `EN_AUDIT.md` F11.
-6. **Sem dados de campo.** INP, LCP real, taxa de conversão e receita continuam fora: dependem de CrUX/Search Console (sem credenciais) e do PostHog do Felipe — ver `METRICS.md` §6 e `PENDENCIAS.md`.
+6. **Sem dados de campo.** INP, LCP real, taxa de conversão e receita continuam fora: dependem de CrUX/Search Console (sem credenciais) e do PostHog do Felipe — ver `METRICS.md` §4 e `PENDENCIAS.md`.
 7. **Sem julgamento humano ainda.** Nenhum falante nativo revisou estas páginas neste ciclo. Toda nota aqui é de máquina.
 
 ## 7. Como provar que uma mudança melhorou (Fases 2 a 4)

@@ -161,7 +161,7 @@ Cada rota é servida com um `<main data-prerender>` que fica **oculto quando o J
 
 - **O inglês é nativo, não tradução automática.** Mediana de **0 lints de gramática/uso por 100 palavras** em 37 páginas; o pior caso é `/gramatica/fr` com 2,8 (exemplos em francês). Não há cara de texto passado por tradutor: as frases são curtas e concretas ("German, Spanish and Italian coming soon in English"; "Rules stated precisely, examples that test the rule, and attention to the mistake a learner actually makes").
 - **Clareza dentro da faixa:** Flesch mediano 52,7 (alvo do mandato: 50–70); 18 das 33 páginas medidas como prosa caem na faixa, 11 ficam abaixo de 50 e 4 acima de 70.
-- **Uma única `h1` por página** em todas as 37; nenhuma página com título duplicado entre `title` e `h1` (exceto F9).
+- **Uma única `h1` por página** em todas as 37; onde a migalha de navegação repete o `h1`, o texto aparece duplicado na leitura (F9).
 - **Promessas honestas:** `/portugues` diz explicitamente que não promete fluência, prazo nem equivalência com Celpe-Bras; `/assinatura` informa reembolso de 7 dias e que a Stripe processa o pagamento. Isso é raro num site de cursos e é ativo de confiança — a reescrita das outras páginas deve copiar esse tom, não suavizá-lo.
 - **Acessibilidade e desempenho não são o problema:** axe-core 4.14.0 com **0 violações** em 13 páginas e SEO/boas práticas 100 no Lighthouse (`METRICS.md`). O problema de inglês é de conteúdo, não de marcação.
 
@@ -176,7 +176,7 @@ Cada rota é servida com um `<main data-prerender>` que fica **oculto quando o J
 | APK (`perfil br`) | o app é o produto em português | fora |
 | COMET/XCOMET (qualidade neural de tradução) | exige Python + PyTorch; não há ambiente preparado para isso neste repositório, e nenhuma página é tradução automática hoje | Fases 2–3, se alguma página passar a ser traduzida por máquina |
 | MQM | framework aplicado à mão por página, na Fase 2/3, quando houver texto reescrito para comparar | Fases 2–3 |
-| INP e dados de campo | sem credenciais de CrUX/Search Console | ver `METRICS.md` §6 |
+| INP e dados de campo | sem credenciais de CrUX/Search Console | ver `METRICS.md` §4 |
 
 ## 7. Prioridade para a Fase 2 e a Fase 3
 
@@ -194,7 +194,7 @@ A ordem segue a receita: primeiro o que já recebe tráfego e vende, depois o qu
 | 8 | `/livro/gramatica-ru` | **F1**: produto pago, 232 palavras em português, `noindex` | F1, F4 |
 | 9 | `/portugues`, `/russo-online` | vitrines de idioma; conteúdo bom, falta "quick answer" e palavras | F6, F7 |
 | 10 | `/termos`, `/privacidade` | jurídico: Flesch 50 e 60, descrições de 44 e 57 caracteres | F3, F4 |
-| 11 | gates (`/curso/de|it|en`, `/gramatica/de|it|en`) | tradução em curso; só entram quando o curso fechar | F10 |
+| 11 | gates (`/curso/de|it|en`, `/gramatica/de|it|en`) | tradução em curso; só entram quando o curso fechar | F5, F10 |
 
 O que **não** entra na Fase 2: `/curso/*` e `/gramatica/*` de conteúdo (já nativos e bem avaliados), `/gramatica/{ru,br,fr,es}` (1098–1257 palavras, Flesch 70–80) e as aulas `dia/1` (0,2–1,2 lint/100).
 
