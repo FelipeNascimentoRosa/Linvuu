@@ -7,10 +7,14 @@ Fonte única dos números usados para aceitar ou reverter qualquer mudança de d
 ```powershell
 npm ci
 npm ci --ignore-scripts --prefix scripts/seo-tools   # @lhci/cli 0.16.0 + lighthouse, isolados
+npm install --no-save --package-lock=false playwright@1.64.1   # só para o passo do axe; mesmo comando do CI
+npx playwright install chromium
 npm run build:website
 node scripts/medir-baseline.mjs --runs=2 --rotulo=baseline-local   # .com.br, servidor local sem credenciais
 node scripts/medir-baseline.mjs --so-producao --runs=1 --rotulo=producao   # os dois domínios publicados
 ```
+
+O Playwright **não** é dependência do site: fica de fora do `package.json` de propósito (é ferramenta de medição, não de produto) e é instalado com `--no-save`, igual ao workflow de CI. Sem ele, o passo do axe responde `playwright não instalado` e a medição continua sem a parte de acessibilidade — não falha, mas também não mede.
 
 Versões usadas nas medições abaixo: Lighthouse 13.6.0 (dentro de `@lhci/cli` 0.16.0), Chromium 142 (Playwright 1.64.1), axe-core 4.14.0, Node 24.21.0, Windows 11. Os relatórios brutos ficam em `.baseline/<rótulo>-<carimbo>/` (ignorado pelo Git); o resumo em `resumo.json` e `resumo.md`.
 
