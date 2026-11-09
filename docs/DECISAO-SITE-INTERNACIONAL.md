@@ -2,6 +2,21 @@
 
 **Decisão do Felipe (fundador), 29/10/2026.** O site é internacional a partir de hoje. Isto vale para todos os agentes e para todo o código e documentação.
 
+> ## Emenda de 09/11/2026 — o idioma passou de caminho para domínio
+>
+> O texto abaixo é histórico e continua registrando a decisão de 29/10, mas os itens que falam em `/`, `/en` e `/es` **não descrevem mais o site**. O modelo em vigor:
+>
+> | Antes (29–30/10) | Agora (desde 30/10; espanhol removido em 06/11) |
+> |---|---|
+> | `/` em português, `/en` em inglês, `/es` em espanhol | `linvuu.com.br` em português, `linvuu.com` em inglês — **um idioma de interface por domínio**, sem prefixo de caminho |
+> | moeda única | reais no `.com.br`, dólares no `.com` (`docs/PRECOS-DEFINIDOS.md`) |
+> | separação por caminho | `server/dominio.ts` devolve **301** quando a rota só existe no outro domínio; `scripts/testar-dominio.ts` cobre a regra (20 casos puros + 8 requisições HTTP reais no CI) |
+>
+> Ficam **superados** os itens 4 e 8 (que citam `/`, `/en`, `/es`) e a linha "Render" da seção Infraestrutura (o mesmo serviço serve os dois domínios, não os caminhos `/en` e `/es`). O espanhol deixou de existir em 06/11. O resto da decisão — não prometer o que não existe, ocultar o curso da própria língua, língua do site ≠ língua da explicação — continua valendo integralmente.
+>
+> Estado medido em 09/11 (`main` = `b71ce2405`): `.com.br` responde `lang="pt-BR"` e `.com` responde `lang="en"`; `/livros` no `.com` → 301 para o `.com.br` (PR #530). **Uma exceção continua aberta**: `https://linvuu.com/sobre` responde `<html lang="en">` com `<title>Quem escreve a Linvuu</title>` — título e texto em português dentro do domínio em inglês. O conserto é uma página em inglês, não um redirecionamento; está em `PENDENCIAS.md` e é o item 1 de `docs/SEO_AUDIT.md` §6.
+
+
 ## O que isso significa
 1. **Público.** Falantes de português, inglês e espanhol estudam qualquer idioma que não seja o seu. Um americano ou um indiano estuda russo ou alemão com explicações em inglês; um falante de espanhol, com explicações em espanhol.
 2. **Uma só home, um só marketing.** A home e a comunicação são as mesmas para todas as línguas (modelo dos concorrentes, como o Babbel). Só o texto muda de língua. Não se cria home separada por público. A home em português (`src/pages/HomeBrasileiros.tsx`) é a base; `src/i18n/home.ts` traduz.
