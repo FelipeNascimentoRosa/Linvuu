@@ -24,7 +24,7 @@ export type DadosMeta = {
   cursos: CursoMeta[];
   indice: Record<string, { total: number; grupos?: { aula: number; titulo: string; dias: [number, number] }[]; fonte?: string; tr?: Record<string, { g: Record<string, string>; aulas?: number[] }> }>;
 };
-export type MetaRota = { status: number; titulo?: string; descricao?: string; caminho: string; semIndice?: boolean; jsonld?: object[]; locale?: Locale; /** idiomas em que a página existe (hreflang); padrão: os três */ em?: Locale['codigo'][] };
+export type MetaRota = { status: number; titulo?: string; descricao?: string; caminho: string; semIndice?: boolean; /** página-folha (aula/capítulo): o título não leva o sufixo « · Linvuu» */ semMarca?: boolean; jsonld?: object[]; locale?: Locale; /** idiomas em que a página existe (hreflang); padrão: os três */ em?: Locale['codigo'][] };
 
 /**
  * Regra única de indexação de cursos (usada pelo servidor, por scripts/seo.mjs e pelos testes):
@@ -85,7 +85,7 @@ const TX = {
     ementa: (n: number) => `As ${n} aulas do curso`, ant: (n: number) => `← Sessão ${n}`, seg: (n: number) => `Sessão ${n} →`,
     curso: (n: string) => `Curso de ${n.toLowerCase()} online, explicado em português`, cursoPrep: (n: string) => `${n}: curso para quem fala português`, cursoJ: (n: string) => `${n} para quem fala português`, inicio: 'Início',
     aula: (a: number, t: string, n: string) => `Aula ${a}: ${t} · ${n}`, aulaD: (n: string, a: number, t: string, s: number, tot: number, lingua: string) => `${n}, aula ${a} (${t}), sessão ${s} de ${tot}: explicação em ${lingua}, áudio em cada frase e exercícios com correção.`,
-    sessao: (s: number, n: string) => `Sessão ${s} · ${n}`, gram: 'Gramática', gramC: (n: string) => `Gramática: ${n.toLowerCase()}`, gramD: (n: string, lingua: string) => `Gramática de ${n.toLowerCase()} explicada em ${lingua}, tópico por tópico, com tabelas, exemplos e erros comuns.`, nao: 'Página não encontrada',
+    sessao: (s: number, n: string) => `Sessão ${s} · ${n}`, dia: (n: number) => `Dia ${n}`, gram: 'Gramática', gramC: (n: string) => `Gramática: ${n.toLowerCase()}`, gramD: (n: string, lingua: string) => `Gramática de ${n.toLowerCase()} explicada em ${lingua}, tópico por tópico, com tabelas, exemplos e erros comuns.`, nao: 'Página não encontrada',
   },
   en: {
     cursos: 'Courses', entrar: 'Sign in', cadastro: 'Sign up', assinatura: 'Subscription', priv: 'Privacy policy', privD: 'What data Linvuu collects, why, and what your rights are.', termos: 'Terms of use', termosD: 'Rules for using the Linvuu site and courses.',
@@ -93,7 +93,7 @@ const TX = {
     ementa: (n: number) => `All ${n} lessons in the course`, ant: (n: number) => `← Session ${n}`, seg: (n: number) => `Session ${n} →`,
     curso: (n: string) => `Learn ${n} online, explained in English`, cursoPrep: (n: string) => `${n} course: English edition in preparation`, cursoJ: (n: string) => `${n} for English speakers`, inicio: 'Home',
     aula: (a: number, t: string, n: string) => `Lesson ${a}: ${t} · ${n}`, aulaD: (n: string, a: number, t: string, s: number, tot: number, lingua: string) => `${n}, lesson ${a} (${t}), session ${s} of ${tot}: explained in ${lingua}, with audio for every sentence and exercises.`,
-    sessao: (s: number, n: string) => `Session ${s} · ${n}`, gram: 'Grammar', gramC: (n: string) => `${n} grammar for English speakers`, gramD: (n: string, lingua: string) => `${n} grammar explained in ${lingua}, topic by topic, with tables, examples and common mistakes. Free topics included.`, nao: 'Page not found',
+    sessao: (s: number, n: string) => `Session ${s} · ${n}`, dia: (n: number) => `Day ${n}`, gram: 'Grammar', gramC: (n: string) => `${n} grammar for English speakers`, gramD: (n: string, lingua: string) => `${n} grammar explained in ${lingua}, topic by topic, with tables, examples and common mistakes. Free topics included.`, nao: 'Page not found',
   },
 } as const;
 /** Nome de cada língua de explicação, escrito na língua da página (para as descrições dizerem a língua real de cada aula/gramática). */
@@ -142,7 +142,7 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     const l = livroMeta(lm[1]); const c = d?.livros[lm[1]]?.caps[Number(lm[2])];
     if (!l || !c) return naoEncontrada(p, loc);
     const url = `${SITE}/livros/${l.id}/capitulo/${c.n}`;
-    return { status: 200, caminho: p, titulo: `${l.nome}, cap. ${c.n}: ${c.titulo.split(':')[0]}`, descricao: `${l.nome}, capítulo ${c.n} do livro de gramática prática da Coleção Linvuu: ${c.titulo}. Leitura grátis, com áudio.`, ...livroBase, jsonld: [
+    return { status: 200, caminho: p, titulo: `${l.nome}, cap. ${c.n}: ${c.titulo.split(':')[0]}`, semMarca: true, descricao: `${l.nome}, capítulo ${c.n} do livro de gramática prática da Coleção Linvuu: ${c.titulo}. Leitura grátis, com áudio.`, ...livroBase, jsonld: [
       { '@context': 'https://schema.org', '@type': 'Chapter', name: `Capítulo ${c.n}: ${c.titulo}`, position: c.n, url, inLanguage: 'pt-BR', isAccessibleForFree: true, educationalLevel: c.nivel || undefined, timeRequired: `PT${minutosDeLeitura(c)}M`, isPartOf: { '@type': 'Book', name: tituloLivro(l), url: `${SITE}/livros/${l.id}` }, author: AUTORES.map((a) => ({ '@type': 'Person', name: a.nome, url: `${SITE}/sobre#${a.id}` })), publisher: { '@id': ORG_ID } },
       { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Livros', item: `${SITE}/livros` }, { '@type': 'ListItem', position: 2, name: l.nome, item: `${SITE}/livros/${l.id}` }, { '@type': 'ListItem', position: 3, name: `Capítulo ${c.n}`, item: url }] },
     ] };
@@ -190,7 +190,7 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     // Indexável só onde o curso existe de verdade: oferecido a esse público e com todas as aulas explicadas na língua dele.
     const oferecidoEm = (l: Locale) => c.status !== 'em-breve' && l.cursoOculto !== c.id && explicacaoCompleta(d, c.id, l.explicacao);
     return {
-      status: 200, caminho: p, titulo: oferecidoEm(loc) || c.id === loc.cursoOculto ? tx.curso(c.nome) : tx.cursoPrep(c.nome), descricao: c.descricao,
+      status: 200, caminho: p, titulo: oferecidoEm(loc) || c.id === loc.cursoOculto ? (c.id === 'br' ? (loc.codigo === 'en' ? 'Learn Brazilian Portuguese online (A1–B1)' : 'Português para estrangeiros: curso online (A1–B1)') : tx.curso(c.nome)) : tx.cursoPrep(c.nome), descricao: c.descricao,
       // o curso escrito para o próprio público deste idioma (ex.: inglês no site em inglês) não entra na busca;
       // nem o curso cuja edição neste idioma ainda está incompleta (prometeria explicações que não existem).
       semIndice: !oferecidoEm(loc) || undefined,
@@ -224,7 +224,10 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     // A descrição nomeia a língua em que a explicação desta sessão está de fato: a língua da página, quando a aula está traduzida nela; senão, a língua em que o curso foi escrito.
     const descAula = tx.aulaD(c.nome, g.aula, t, n, total, LINGUAS[loc.codigo][temNo(loc) ? loc.explicacao : (d.indice[c.id]?.fonte ?? 'pt')] ?? '');
     // A apresentacao publica do curso continua indexavel. Sessoes sem amostra publica nao entram no indice.
-    return { status: 200, caminho: p, titulo: `${tx.aula(g.aula, t, c.nome)} · ${tx.sessao(n, c.nome).split(' · ')[0]}`, descricao: descAula, semIndice: n > SESSOES_GRATIS || !temNo(loc) || undefined, em: LOCALES.filter(temNo).map((l) => l.codigo),
+    // Curso BR (português para estrangeiros): forma curta no título («Portuguese» / «Português»); com o nome completo os dias 1–4
+    // passavam de 60 caracteres (decisão do Felipe, 2026-11-04: sem excepções ao limite). H1, descrições e JSON-LD mantêm o nome completo.
+    const nomeTitulo = c.id === 'br' ? (loc.codigo === 'en' ? 'Portuguese' : 'Português') : c.nome;
+    return { status: 200, caminho: p, titulo: `${t} · ${nomeTitulo} · ${tx.dia(n)}`, semMarca: true, descricao: descAula, semIndice: n > SESSOES_GRATIS || !temNo(loc) || undefined, em: LOCALES.filter(temNo).map((l) => l.codigo),
       // Sessão grátis: dados de recurso educacional, sempre gratuito (as demais são por assinatura e não ganham marcação de gratuidade)
       jsonld: n <= SESSOES_GRATIS ? [{
         '@context': 'https://schema.org', '@type': 'LearningResource', name: tx.aula(g.aula, t, c.nome), description: descAula, url: `${urlAbsolutaEm(loc.codigo, p)}`,
@@ -468,7 +471,7 @@ export function alternativosDe(m: MetaRota, _site: string, d: DadosMeta | null =
 
 /** O que o navegador aplica ao navegar dentro do site: os mesmos valores que o servidor colocaria no HTML desta rota. */
 export function metaParaNavegador(m: MetaRota, _site: string, d: DadosMeta | null = null) {
-  return { status: m.status, caminho: m.caminho, titulo: m.titulo ? `${m.titulo} · Linvuu` : null, descricao: m.descricao ?? null, canonical: urlAbsolutaEm((m.locale ?? localePadrao()).codigo, m.caminho), noindex: !!m.semIndice, alternativos: alternativosDe(m, _site, d), lang: (m.locale ?? localePadrao()).codigo };
+  return { status: m.status, caminho: m.caminho, titulo: m.titulo ? (m.semMarca ? m.titulo : `${m.titulo} · Linvuu`) : null, descricao: m.descricao ?? null, canonical: urlAbsolutaEm((m.locale ?? localePadrao()).codigo, m.caminho), noindex: !!m.semIndice, alternativos: alternativosDe(m, _site, d), lang: (m.locale ?? localePadrao()).codigo };
 }
 
 export function aplicarMeta(html: string, m: MetaRota, _site: string, d: DadosMeta | null = null): string {
@@ -477,7 +480,7 @@ export function aplicarMeta(html: string, m: MetaRota, _site: string, d: DadosMe
   const site = siteDoIdioma(loc.codigo);
   const troca = (re: RegExp, valor: string) => { out = out.replace(re, (_t, a: string, b: string) => a + valor + b); };
   if (m.titulo) {
-    const tit = esc(`${m.titulo} · Linvuu`);
+    const tit = esc(m.semMarca ? m.titulo : `${m.titulo} · Linvuu`);
     out = out.replace(/<title>[^<]*<\/title>/, () => `<title>${tit}</title>`);
     troca(/(<meta property="og:title" content=")[^"]*(")/, tit);
   }
@@ -495,7 +498,7 @@ export function aplicarMeta(html: string, m: MetaRota, _site: string, d: DadosMe
   const alternativos = alternativosDe(m, _site, d).map((x) => `<link rel="alternate" hreflang="${x.hreflang}" href="${esc(x.href)}" />`).join('\n    ');
   out = out.replace(/<link rel="alternate" hreflang="pt-BR" href="[^"]*" \/>/, () => alternativos);
   troca(/(<meta name="twitter:card" content=")[^"]*(")/, 'summary_large_image');
-  const twitterTitle = esc(`${m.titulo ?? 'Linvuu'} · Linvuu`);
+  const twitterTitle = esc(m.semMarca && m.titulo ? m.titulo : `${m.titulo ?? 'Linvuu'} · Linvuu`);
   const twitterDescription = esc(m.descricao ?? 'Cursos de idiomas Linvuu.');
   out = out.replace('</head>', () => `<meta name="twitter:title" content="${twitterTitle}" /><meta name="twitter:description" content="${twitterDescription}" /><meta name="twitter:image" content="${esc(site)}/brand/avatar-1080.png" />\n</head>`);
   if (m.jsonld?.length) out = out.replace('</head>', () => m.jsonld!.map((j) => `    <script type="application/ld+json">${JSON.stringify(j).replace(/</g, '\\u003c')}</script>\n`).join('') + '  </head>');

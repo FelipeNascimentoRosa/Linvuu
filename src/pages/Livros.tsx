@@ -205,7 +205,7 @@ export function LivroCapitulo() {
   const num = Number(n);
   const [cap, setCap] = useState<CapituloLivro | null | undefined>(undefined);
   const [total, setTotal] = useState(0);
-  usePageTitle(m && cap ? `Capítulo ${cap.n}: ${cap.titulo} · ${m.nome}` : undefined, m && cap ? `${m.nome}, capítulo ${cap.n} do livro de gramática prática da Coleção Linvuu: ${cap.titulo}. Leitura grátis, com áudio.` : undefined, ['pt-BR'], !m || !CAPITULOS_GRATIS.includes(num as 1 | 2) || cap === null || LOCALE.codigo !== 'pt-BR');
+  usePageTitle(m && cap ? `Capítulo ${cap.n}: ${cap.titulo} · ${m.nome}` : undefined, m && cap ? `${m.nome}, capítulo ${cap.n} do livro de gramática prática da Coleção Linvuu: ${cap.titulo}. Leitura grátis, com áudio.` : undefined, ['pt-BR'], !m || !CAPITULOS_GRATIS.includes(num as 1 | 2) || cap === null || LOCALE.codigo !== 'pt-BR', true);
   useEffect(() => { parar(); setCap(undefined); if (m) { carregarCapitulo(m.id, num).then(setCap); carregarSumario(m.id).then((x) => setTotal(x.length)); } return () => parar(); }, [m, num]);
   if (!m || !CAPITULOS_GRATIS.includes(num as 1 | 2)) return <NaoEncontrada />;
   if (cap === null) return <NaoEncontrada />;
