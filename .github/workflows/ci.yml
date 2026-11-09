@@ -35,6 +35,8 @@ jobs:
         run: npm run lint && npm run lint:apk
       - name: Verificar política de cache e indexação das APIs
         run: node --import tsx scripts/testar-cache-api.ts
+      - name: Testar redirecionamentos entre domínios (uma página, um endereço)
+        run: node --import tsx scripts/testar-dominio.ts
       - name: Testar consentimento e minimização PostHog sem enviar dados
         run: node --import tsx scripts/testar-analytics.ts
       - name: Testar consentimento e eventos do pixel Meta sem enviar dados

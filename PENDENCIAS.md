@@ -2,7 +2,8 @@
 - [gatilho] Receita internacional > US$ 5.000/mês → avaliar Paddle (MoR) ou entidade US + Stripe US (spread atual ≈ 2%, não verificado).
 - Render: definir `STRIPE_PRICE_ID_USD` (ID do preço mensal de US$ 19,99 já existente) antes de divulgar o .com; sem ela a mensal em dólar recusa o checkout (o anual funciona).
 - Stripe: ativar Apple Pay e Google Pay no painel (Felipe). Compra de teste controlada nos dois domínios antes de divulgar (nenhuma compra real de ponta a ponta foi verificada).
-- linvuu.com/livros responde 200 com página em português («Coleção Linvuu: livros de gramática») no domínio em inglês — decidir: redirecionar ao .com.br, 404 ou noindex.
+- linvuu.com/livros responde 200 com página em português («Coleção Linvuu: livros de gramática») no domínio em inglês — **corrigido em 09/11**: 301 para linvuu.com.br/livros (branch `fix/rotas-idioma-por-dominio`). Continua aberto o mesmo defeito em **linvuu.com/sobre** (200, texto em português, `<html lang="en">`): precisa de página em inglês, não de redirecionamento.
+- `docs/DECISAO-SITE-INTERNACIONAL.md` ainda descreve `/`, `/en` e `/es` — modelo anterior à separação por domínio de 29–30/10 e ao fim do espanhol (06/11): atualizar o texto ou marcar o trecho como histórico.
 - #453 (títulos pt ≤ 60 caracteres) ficou desatualizado após a reestruturação do metaRota: refazer sobre a main (medir primeiro quais títulos passam de 60).
 - #445 (Vuu celebração/erro gentil) é duplicata funcional do #469 já mesclado: fechar ou descartar.
 - Áudio pago: movido para o repositório privado `Linvuu-Audio` (docs/AUDIO-PRIVADO.md). Falta o token no Render e, depois de confirmado em produção, limpar o histórico do repositório público.
