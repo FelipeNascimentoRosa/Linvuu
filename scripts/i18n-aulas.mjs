@@ -12,6 +12,7 @@
 //   node scripts/i18n-aulas.mjs estado                                quantas aulas cada curso tem traduzidas
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 export const raiz = path.resolve(import.meta.dirname, '..');
 export const LINGUAS = ['en'];
@@ -112,7 +113,7 @@ const aulasDo = (id) => {
   return fs.readdirSync(dir).filter((f) => /^aula-\d+\.json$/.test(f)).sort().map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')));
 };
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const [cmd, id, l, a3, a4] = process.argv.slice(2);
   if (cmd === 'estado') {
     for (const c of fs.readdirSync(path.join(raiz, 'content', 'idiomas'))) for (const ll of LINGUAS) {

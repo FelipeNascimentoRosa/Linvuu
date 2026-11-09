@@ -94,6 +94,35 @@ O deploy levou **menos de 40 minutos** para aparecer: às 11:11 local (4 minutos
 
 Limitações: o texto inglês pede revisão humana antes de divulgação (fatos verificáveis, redação por revisar); `/contato` e `/ex-alunos-udemy` continuam só em português (`noindex` no `.com`), por decisão registrada — `/contato` é o próximo candidato natural, porque contato é confiança para quem compra.
 
+## Espanhol de volta ao `.com`: o índice inglês estava escondendo 30 aulas prontas (2026-11-09)
+
+O `.com` oferecia três idiomas — português para estrangeiros, russo e francês — enquanto o espanhol tinha **120 sessões já escritas em inglês** (aulas 1–30, `content/idiomas/es/en/dia-001..120.json` e os mapas `content/idiomas/es/i18n/en/aula-001..030.json`). Nada foi traduzido nesta rodada: o conteúdo existia e o site não o mostrava.
+
+- Causa: `content/indice.en.json` listava `es.aulas: []`. É esse arquivo que decide a língua de explicação do curso (`src/lib/content.ts` → `explicacaoDoCurso`) e o que a vitrine de cada domínio oferece (`cursoComExplicacaoNoSite`, usado por `/cursos`, pela home e pelo `CursoCard`). Índice atrasado em relação aos mapas i18n = aula traduzida invisível — e, pior, aula em português servida com `lang="en"` no domínio inglês, porque sem tradução listada o curso cai na língua-fonte.
+- Correção de conteúdo: `node scripts/conteudo.mjs` regerou o índice (`es` 0 → **30 aulas**; ru 78 e fr 62 intactos; `content/indice.json`, o português, não mudou). A guarda de 2026-11-04 do próprio script não barrou nada: 120 dias em disco = 120 implicados pelos mapas.
+- Correção de gramática: `node scripts/gramatica.mjs es` criou `content/gramatica/es.en.json` (183 tópicos; 30 aulas traduzidas, 32 ainda em português marcadas com `explicacaoEm`), que é o que a API usa em `/api/gramatica/es?l=en`. Sem esse arquivo, `/gramatica/es` no `.com` caía no `es.json` em português.
+- Guarda nova (a causa raiz não volta em silêncio): `scripts/conteudo.mjs --check` passa a comparar cada `content/indice.<língua>.json` com o que os mapas i18n implicam, e `npm run build` roda esse `--check`. Prova: com o índice antigo o comando sai 1 com «content/indice.en.json: es lista 0 aulas traduzidas, mas os mapas i18n implicam 30 (correr "npm run content")»; com o índice regerado sai 0.
+- `content/cursos.json`: a descrição inglesa do espanhol dizia «Explanations in Portuguese today; English edition in preparation» — deixou de ser verdade para as aulas 1–30. Passou a «Lessons 1–30 are already explained in English; the rest is being translated». As de alemão e italiano continuam verdadeiras (não há nenhuma aula traduzida).
+- `scripts/i18n-aulas.mjs`: a CLI (`extrair`, `juntar`, `titulos`, `estado`) comparava `import.meta.url` com `file://` + caminho do Windows e **nunca executava** neste ambiente — nenhum erro, nenhuma saída. Passou a usar `path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)`, como `scripts/auditar-cobertura-internacional.mjs` já fazia. Sem isso, o fluxo de tradução documentado em `docs/ESTRUTURA-INTERNACIONAL.md` não era executável.
+
+Verificado localmente: `tsc --noEmit` limpo; `node scripts/conteudo.mjs --check` conforme (460 aulas · 1.840 dias-fonte · 680 dias traduzidos); `testar-inventario-seo` conforme (3.680 sessões, sitemap 133); `testar-titulos` 95 títulos ≤ 60 caracteres; `testar-idiomas-ensino` OK; `testar-dominio` 20/20 (HTTP real incluso); `npm run build:website` OK. Sonda com `Host` real no servidor de produção local (`curl -H "Host: …"`; `fetch` do Node não honra o `Host` e deu resultado falso na primeira tentativa):
+
+| Sondagem local, `Host` real | Antes | Agora |
+|---|---|---|
+| `.com/curso/es` | `lang="en"`, «Spanish course: English edition in preparation», `noindex` | igual — o hub só é indexável quando **todas** as aulas estão em inglês (`metaRota.ts` → `explicacaoCompleta`), e faltam 32 |
+| `.com/curso/es/dia/1` | `lang="en"` com **texto da aula em português** | `lang="en"`, «Sounds, alphabet and first words · Spanish · Day 1», corpo em inglês, sem `robots` |
+| `.com/gramatica/es` | `lang="en"` com gramática em português (fallback `es.json`) | `lang="en"`, «Spanish grammar for English speakers», 12.880 bytes em inglês |
+| `.com/sitemap.xml` | 36 `<loc>` | **46** `<loc>` (+`/gramatica/es`, +`/curso/es/dia/1..8`) |
+| `.com.br/curso/es`, `.com.br/gramatica/es` | pt-BR | pt-BR, sem mudança de texto; o sitemap `.com.br` continua com **87** `<loc>` e ganhou `xhtml:link` para as 9 páginas de espanhol |
+
+Limitação do método de sondagem: o navegador deste ambiente não executa o React quando o `Host` é forjado (`--host-resolver-rules`), porque o HSTS do domínio manda os assets para https contra um servidor http — uma página sem corpo pré-renderizado (`noindex`, como o hub do espanhol) aparece vazia na sonda mesmo com HTML e API corretos. A prova aqui é o HTML e a API servidos com `curl -H "Host: …"`, não a renderização no navegador.
+
+
+O que continua faltando para o espanhol virar idioma pleno do `.com` (número medido, não estimado): **32 aulas / 128 sessões** em inglês, mais 32 aulas de gramática sem tradução. E, para alemão e italiano, o buraco é total: `de` 0 de **72 aulas** (288 sessões, **18.352 textos** de explicação, 402 só na aula 1) e `it` 0 de **62 aulas** (248 sessões, **17.100 textos**, 464 na aula 1). Os títulos já estão traduzidos (`de` 291, `it` 310) e as palavras dos cursos de alemão já trazem o inglês no próprio dado; o que falta é a prosa de explicação, que pelo §1 do `docs/ESTRUTURA-INTERNACIONAL.md` não é tradução palavra a palavra (as comparações de som são reescritas com referências do inglês) e pelo §4 exige revisão de falante nativo antes de divulgar.
+
+Estado: **implementado e testado localmente; não mesclado, não deployado, não verificado em produção.**
+
+
 
 ## /sobre em inglês: página escrita, não tradução automática (2026-11-09)
 
