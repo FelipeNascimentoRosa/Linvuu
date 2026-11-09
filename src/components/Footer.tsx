@@ -39,7 +39,7 @@ export function Footer({ semNovidades = false }: { semNovidades?: boolean }) {
           <Link to="/#metodo">{t.nav.metodo}</Link>
           <Link to="/#avaliacoes">{t.nav.avaliacoes}</Link>
           <Link to="/#faq">{t.nav.duvidas}</Link>
-          {LOCALE.codigo === 'pt-BR' ? <Link to="/contato">{t.rodape.contato}</Link> : <a href={`mailto:${EMAIL_OFICIAL}`}>{t.rodape.contato}</a>}
+          <Link to="/contato">{t.rodape.contato}</Link>
         </nav>
         <nav aria-label={t.rodape.idiomas}>
           <h2>{t.rodape.idiomas}</h2>

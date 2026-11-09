@@ -92,7 +92,7 @@ Estado: **mesclado** (PR #535, `be7ac4caf`; 9/9 checks verdes — `build`, `pari
 
 O deploy levou **menos de 40 minutos** para aparecer: às 11:11 local (4 minutos depois do merge das 14:07:18Z) o `.com/sitemap.xml` ainda tinha 36 URLs e o `/por-que-linvuu` ainda tinha título em português. A hora exata da virada não foi medida — as sondas no terminal ficaram tamponadas — mas confirma a regra do `NOTES.md` §7: o push não publica, a Render publica no ritmo dela.
 
-Limitações: o texto inglês pede revisão humana antes de divulgação (fatos verificáveis, redação por revisar); `/contato` e `/ex-alunos-udemy` continuam só em português (`noindex` no `.com`), por decisão registrada — `/contato` é o próximo candidato natural, porque contato é confiança para quem compra.
+Limitações: o texto inglês pede revisão humana antes de divulgação (fatos verificáveis, redação por revisar). `/contato` deixou de estar nesta lista em 09/11/2026 (PR #543): passou a existir em inglês no `.com`, indexável, com `hreflang` pt-BR/en e entrada no sitemap (46 → 47 URLs); a barra do topo e o rodapé do `.com` voltaram a linká-la em vez de `mailto:`. Continuam só em português, com `noindex` no `.com`, `/ex-alunos-udemy` e `/livro/gramatica-ru`, por decisão registrada.
 
 ## Espanhol de volta ao `.com`: o índice inglês estava escondendo 30 aulas prontas (2026-11-09)
 

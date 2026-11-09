@@ -4,7 +4,7 @@
 > Este documento responde à Etapa 1 do [`PROMPT_EN.md`](PROMPT_EN.md): para cada página pública, existe versão em inglês, e o que ela tem de errado.
 > Os números vêm de [`METRICS_EN.md`](METRICS_EN.md) (Etapa 2), medidos com `npm run medir:ingles` em 09/11/2026.
 
-**In English (abstract).** All 39 public page routes of `linvuu.com` were audited by fetching the server HTML and, for pages the React client mounts, by rendering them in Chromium against production. 34 routes already serve native-quality English (median 0 grammar/usage lints per 100 words, Flesch 52,7). Three routes (`/contato`, `/ex-alunos-udemy`, `/livro/gramatica-ru`) serve Portuguese copy under `lang="en"` and are the only real translation gap; several others carry English metadata problems (short titles, over-long or Portuguese descriptions). Nothing was rewritten in this phase.
+**In English (abstract).** All 39 public page routes of `linvuu.com` were audited by fetching the server HTML and, for pages the React client mounts, by rendering them in Chromium against production. 34 routes already serve native-quality English (median 0 grammar/usage lints per 100 words, Flesch 52,7). Three routes (`/contato`, `/ex-alunos-udemy`, `/livro/gramatica-ru`) serve Portuguese copy under `lang="en"` and are the only real translation gap; several others carry English metadata problems (short titles, over-long or Portuguese descriptions). Nothing was rewritten in this phase. **Later that day `/contato` was translated into English; `/ex-alunos-udemy` and `/livro/gramatica-ru` remain.**
 
 ## 1. O que foi auditado e como
 
@@ -35,7 +35,7 @@ Legenda de status: **nativo** = inglês escrito do zero, sem cara de tradução;
 | 5 | `/portugues` | vitrine de idioma | `https://linvuu.com/portugues` | sim | indexável | nativo | 455 · 0,9 · 56,6 · 90 |
 | 6 | `/russo-online` | vitrine de idioma | `https://linvuu.com/russo-online` | sim | indexável | nativo | 241 · 0,0 · 51,9 · 87 |
 | 7 | `/sobre` | confiança | `https://linvuu.com/sobre` | sim | indexável | nativo | 373 · 0,0 · 47,0 · 69 |
-| 8 | `/contato` | confiança | `https://linvuu.com/contato` | não | `noindex` | **português** | 229 · 4,4 · 44,6 · 79 |
+| 8 | `/contato` | confiança | `https://linvuu.com/contato` | não | `noindex` | **português** → inglês em 09/11/2026 (F1) | 229 · 4,4 · 44,6 · 79 |
 | 9 | `/ex-alunos-udemy` | confiança | `https://linvuu.com/ex-alunos-udemy` | não | `noindex` | **português** | 424 · 9,0 · 46,8 · 90 |
 | 10 | `/livro/gramatica-ru` | livro | `https://linvuu.com/livro/gramatica-ru` | não | `noindex` | **português** | 232 · 4,3 · 40,0 · 75 |
 | 11 | `/livros` | livro | — | não | — | redireciona para `.com.br` | 301 |
@@ -74,7 +74,7 @@ Legenda de status: **nativo** = inglês escrito do zero, sem cara de tradução;
 
 ## 4. Defeitos encontrados, com evidência
 
-### F1 — Três páginas publicadas em português no domínio inglês (defeito principal)
+### F1 — Três páginas publicadas em português no domínio inglês (defeito principal) — **uma corrigida em 09/11/2026, duas pendentes**
 
 `lang="en"`, `noindex`, 200 OK — e o corpo em português. Mesma classe de defeito que `/sobre` e `/por-que-linvuu` tinham antes de serem traduzidas.
 
@@ -87,9 +87,11 @@ Legenda de status: **nativo** = inglês escrito do zero, sem cara de tradução;
 Duas delas avisam o leitor, em português, que estão em português. Isso é honesto com quem chega, e continua sendo o defeito: a promessa do `.com` é inglês (Regra de Ouro 1).
 
 Agravantes medidos:
-- `/contato` **não é linkada** no `.com`: a barra superior troca o link por `mailto:` no perfil global (`src/components/BarraTopo.tsx`). A página existe, é servida e não tem entrada interna.
+- ~~`/contato` **não é linkada** no `.com`~~ — **corrigido em 09/11/2026**: a barra superior e o rodapé do `.com` passaram a apontar para `/contato` (antes trocavam o link por `mailto:`), e a página entrou no sitemap do `.com` com `hreflang` pt-BR/en/x-default.
 - A descrição de `/livro/gramatica-ru` é a **genérica brasileira** ("Cursos de inglês, espanhol, francês… feitos para brasileiros"), 169 caracteres, numa página `noindex`.
 - Correção certa: **traduzir**, não redirecionar. Redirecionar `/contato` para `/` deixaria o leitor sem canal de contato em inglês; as outras duas são páginas de conversão com oferta específica.
+
+**`/contato` traduzida em 09/11/2026.** O texto vive em `src/lib/institucional.ts` (`CONTATO`, um registro por idioma, com `seoTitulo`/`seoDescricao` separados do `h1`); os rótulos dos canais vêm de `src/config/contato.ts`, que passou a receber o idioma (`contatos('en')`); o corpo pré-renderizado em `metaRota.ts` acompanha. O que foi medido no HTML servido com `Host: linvuu.com`: `h1` "Contact", canais "Website / E-mail / WhatsApp: Message on WhatsApp", nota dos autores em inglês, **sem** o aviso "Esta página está em português", `noindex` removido, `hreflang` en/pt-BR/x-default e `/contato` no sitemap do `.com` (46 → 47 URLs). No `.com.br` a página continua em português, com os mesmos canais e os mesmos rótulos de antes.
 
 ### F2 — Metadados em português em páginas que já têm interface em inglês — **corrigido em 09/11/2026**
 
@@ -110,7 +112,7 @@ Eram oito, todos abaixo da faixa útil de 50–60 caracteres:
 | `/termos` | `Terms of use · Linvuu` | 21 | `Terms of use for the Linvuu site and courses · Linvuu` | 53 |
 | `/privacidade` | `Privacy policy · Linvuu` | 23 | `Privacy policy: what data Linvuu collects · Linvuu` | 50 |
 | `/sobre` | `Who writes Linvuu · Linvuu` | 26 | `Who writes Linvuu: the authors and the method · Linvuu` | 54 |
-| `/contato` | `Contato · Linvuu` | 16 | **pendente**: sai com a tradução da página (F1) | — |
+| `/contato` | `Contato · Linvuu` | 16 | `Contact Linvuu: e-mail, WhatsApp and LinkedIn · Linvuu` | 54 |
 
 Regra de implementação: o rótulo de menu («Courses», «Subscription») continua servindo à navegação; o título de busca é um campo separado (`SEO_EN` em `metaRota.ts`, `seoTitulo` em `sobre.ts`). Em `/sobre` o `h1` e o lead visível não mudaram.
 
@@ -160,7 +162,7 @@ O Harper, em dialeto americano, cobra a vírgula de Oxford em 70 pontos: `/portu
 
 ### F11 — Inglês entregue de duas maneiras diferentes na mesma página
 
-Cada rota é servida com um `<main data-prerender>` que fica **oculto quando o JavaScript roda** (`<style>@media (scripting:enabled){main[data-prerender]{display:none}}</style>`, `src/lib/metaRota.ts:389-390`). Para páginas com `corpo` pré-renderizado (home, aulas, gramática, sobre), quem chega sem JS lê um texto; quem tem JS lê o do React. Nas três páginas do F1 os dois caminhos são portugueses — mas a divergência entre os dois caminhos é um risco a manter sob medição, porque o texto que o Google indexa pode não ser o que o aluno lê.
+Cada rota é servida com um `<main data-prerender>` que fica **oculto quando o JavaScript roda** (`<style>@media (scripting:enabled){main[data-prerender]{display:none}}</style>`, `src/lib/metaRota.ts:389-390`). Para páginas com `corpo` pré-renderizado (home, aulas, gramática, sobre, contato), quem chega sem JS lê um texto; quem tem JS lê o do React. Nas duas páginas que restam do F1 os dois caminhos são portugueses — mas a divergência entre os dois caminhos é um risco a manter sob medição, porque o texto que o Google indexa pode não ser o que o aluno lê.
 
 ### Correção de metadados do `.com` (09/11/2026) — evidência
 
@@ -182,7 +184,7 @@ Medido no HTML que o servidor entrega com `Host: linvuu.com` (build de produçã
 | `/gramatica/fr` | 44 → 44 | 117 → 134 |
 | `/gramatica/es` | 45 → 45 | 118 → 135 |
 | `/russo-online` | 45 → 45 | 100 → 156 |
-| `/contato` | 16 → 16 | 115 → 115 (**F1**, pendente) |
+| `/contato` | 16 → 54 | 115 → 124 (inglês; **F1** corrigido) |
 
 O que a mudança **não** fez: nenhum texto visível mudou (`h1`, lead e corpo intactos; `/sobre` e `/por-que-linvuu` ganharam campos de SEO separados do texto da página), nenhuma rota mudou de idioma, `noindex` e `canonical` ficaram como estavam, e o `.com.br` foi conferido byte a byte nas mesmas rotas (descrição de 160 caracteres da 404 preservada). Os testes `testar:titulos` (95 títulos ≤ 60 nos dois domínios), `testar-contrato-billing`, `testar-inventario-seo`, `testar-seo-publico`, `testar-links-publicos` e `testar-robots-navegacao` passaram.
 
@@ -218,7 +220,7 @@ A ordem segue a receita: primeiro o que já recebe tráfego e vende, depois o qu
 | 2 | `/cursos` | decide se o visitante continua; só 162 palavras e título de 17 caracteres | F3, F4, F6 |
 | 3 | `/assinatura` | página onde o dinheiro entra; texto bom, mas duplicado e sem `h2` | F9, F5 |
 | 4 | `/por-que-linvuu` | argumento de venda mais longo (514 palavras); descrição truncada | F4, F7 |
-| 5 | `/contato` | **F1**: hoje é português; é a página de confiança do domínio inglês | F1, F3, F6 |
+| 5 | `/contato` | **F1 corrigido em 09/11/2026**: já é inglês e é a página de confiança do domínio inglês; falta texto | F6, F7 |
 | 6 | `/sobre` | confiança/autoria; título de 27 caracteres, Flesch 47 | F3, F4, F9 |
 | 7 | `/ex-alunos-udemy` | **F1**: conversão de ex-alunos, 424 palavras em português | F1 |
 | 8 | `/livro/gramatica-ru` | **F1**: produto pago, 232 palavras em português, `noindex` | F1, F4 |
@@ -228,7 +230,7 @@ A ordem segue a receita: primeiro o que já recebe tráfego e vende, depois o qu
 
 O que **não** entra na Fase 2: `/curso/*` e `/gramatica/*` de conteúdo (já nativos e bem avaliados), `/gramatica/{ru,br,fr,es}` (1098–1257 palavras, Flesch 70–80) e as aulas `dia/1` (0,2–1,2 lint/100).
 
-**Estado em 09/11/2026:** F2, F3 e a maior parte de F4 foram fechados de uma vez, fora da ordem por página, porque eram metadados e não conteúdo (tabela de evidência no fim do §4). Com isso, na Fase 2 cada página entra pelo defeito que resta — F6 (palavras), F7 (quick answer), F8 (vírgula serial), F9 (microcopy) — não pelo título. `/contato` continua sendo o primeiro trabalho de conteúdo, porque é o único F1 que ainda bloqueia a confiança do domínio inglês.
+**Estado em 09/11/2026:** F2, F3 e a maior parte de F4 foram fechados de uma vez, fora da ordem por página, porque eram metadados e não conteúdo (tabela de evidência no fim do §4). Com isso, na Fase 2 cada página entra pelo defeito que resta — F6 (palavras), F7 (quick answer), F8 (vírgula serial), F9 (microcopy) — não pelo título. `/contato` foi traduzida no mesmo dia, então o próximo F1 é `/ex-alunos-udemy`, seguido de `/livro/gramatica-ru`.
 
 ## 8. Critério de aceite por página (Fases 2 e 3)
 

@@ -161,7 +161,9 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
   if (p === '/sobre') { const s = SOBRE[loc.codigo]; return { status: 200, caminho: p, titulo: s.seoTitulo ?? s.titulo, descricao: s.seoDescricao ?? s.descricao, em: ['pt-BR', 'en'], jsonld: [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: s.titulo, url: `${SITE}/sobre`, inLanguage: loc.codigo, mainEntity: { '@id': ORG_ID } }, organizacao(SITE), ...AUTORES.map((a) => pessoa(a, SITE))] }; }
   // /por-que-linvuu existe nos dois idiomas desde 09/11/2026, como o /sobre — texto em src/lib/porQue.ts.
   if (p === '/por-que-linvuu') { const x = POR_QUE[loc.codigo]; return { status: 200, caminho: p, titulo: x.seoTitulo ?? x.titulo, descricao: x.seoDescricao ?? x.descricao, em: ['pt-BR', 'en'], jsonld: [{ '@context': 'https://schema.org', '@type': 'WebPage', name: x.titulo, url: `${SITE}/por-que-linvuu`, inLanguage: loc.codigo, about: { '@id': ORG_ID } }, organizacao(SITE)] }; }
-  if (p === '/contato') return { status: 200, caminho: p, titulo: CONTATO.titulo, descricao: CONTATO.descricao, ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'ContactPage', name: CONTATO.titulo, url: `${SITE}/contato`, inLanguage: 'pt-BR', about: { '@id': ORG_ID } }, organizacao(SITE)] };
+  // /contato existe nos dois idiomas desde 09/11/2026: texto em src/lib/institucional.ts (CONTATO).
+  // Era a última página de confiança em português no domínio inglês (F1 do EN_AUDIT.md).
+  if (p === '/contato') { const c = CONTATO[loc.codigo]; return { status: 200, caminho: p, titulo: c.seoTitulo, descricao: c.seoDescricao, em: ['pt-BR', 'en'], jsonld: [{ '@context': 'https://schema.org', '@type': 'ContactPage', name: c.titulo, url: `${SITE}/contato`, inLanguage: loc.codigo, about: { '@id': ORG_ID } }, organizacao(SITE)] }; }
   if (p === '/ex-alunos-udemy') return { status: 200, caminho: p, titulo: EX_ALUNOS.titulo, descricao: EX_ALUNOS.descricao, ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'WebPage', name: EX_ALUNOS.titulo, url: `${SITE}/ex-alunos-udemy`, inLanguage: 'pt-BR', about: { '@id': ORG_ID } }, organizacao(SITE)] };
   if (p === '/livros') return { status: 200, caminho: p, titulo: 'Coleção Linvuu: livros de gramática', descricao: LIVROS_DESCRICAO, ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'ItemList', name: 'Coleção Linvuu', itemListElement: LIVROS_META.map((l, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE}/livros/${l.id}`, name: tituloLivro(l) })) }] };
   let lm = p.match(/^\/livros\/([^/]+)$/);
@@ -309,15 +311,15 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
  * Navegação global do HTML pré-renderizado, na língua da página.
  * Até 2026-11-04 só o português a tinha: sem menu, as aulas e gramáticas em inglês ficavam com
  * 1 único link interno (o de regresso ao curso), contra 7 nas aulas em português (auditoria SEO).
- * Nos outros idiomas os destinos são os que existem e são indexáveis nessa língua: Livros, Contato e
- * Ex-alunos da Udemy só existem em português (são noindex nas outras), por isso não entram — o rodapé do
- * site segue a mesma regra (Footer.tsx só os mostra em pt-BR). Sobre e Por-que-Linvuu existem nas duas.
+ * Nos outros idiomas os destinos são os que existem e são indexáveis nessa língua: Livros e
+ * Ex-alunos da Udemy só existem em português, por isso não entram. Contato entrou no `.com` em 09/11/2026,
+ * quando passou a existir em inglês; Sobre, Por-que-Linvuu e Contato existem nas duas línguas.
  */
 function menuPreRender(loc: Locale): string {
   if (loc.codigo === 'pt-BR') return '<nav aria-label="Principal"><a href="/cursos">Cursos</a> · <a href="/livros">Livros</a> · <a href="/sobre">Quem somos</a> · <a href="/por-que-linvuu">Por que estudar com a Linvuu?</a> · <a href="/contato">Contato</a> · <a href="/privacidade">Privacidade</a></nav>';
   const tx = TX[loc.codigo];
   const a = (href: string, texto: string) => `<a href="${esc(caminhoEm(loc.codigo, href))}">${esc(texto)}</a>`;
-  const itens = [a('/', tx.inicio), a('/cursos', tx.cursos), a('/sobre', tx.sobre), a('/por-que-linvuu', tx.porQue), a('/gramatica', tx.gram), ...(loc.codigo === 'en' ? [a('/portugues', tx.ptNav)] : []), a('/termos', tx.termos), a('/privacidade', tx.priv)];
+  const itens = [a('/', tx.inicio), a('/cursos', tx.cursos), a('/sobre', tx.sobre), a('/por-que-linvuu', tx.porQue), a('/gramatica', tx.gram), ...(loc.codigo === 'en' ? [a('/portugues', tx.ptNav)] : []), a('/contato', loc.codigo === 'en' ? 'Contact' : 'Contato'), a('/termos', tx.termos), a('/privacidade', tx.priv)];
   return `<nav aria-label="${loc.codigo === 'en' ? 'Main' : 'Principal'}">${itens.join(' · ')}</nav>`;
 }
 
@@ -420,7 +422,7 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
       + `<h2>${esc(x.paraQuemTitulo)}</h2><p>${esc(x.paraQuem)}</p><h2>${esc(x.ctaTitulo)}</h2><p>`
       + x.ctaSegmentos.map((s) => (s.link ? a(s.link, s.texto) : esc(s.texto))).join('') + '</p>';
   }
-  if (base === '/contato') corpo = cabeca(CONTATO.titulo, CONTATO.descricao) + `<p>${esc(CONTATO.lead)}</p>` + li(contatos().filter((c) => c.id !== 'linkedin').map((c) => `<a href="${esc(c.href)}">${esc(c.nome)}: ${esc(c.rotulo)}</a>`)) + `<h2 id="linkedin">LinkedIn</h2>` + li(AUTORES.map((x) => `<a href="${esc(x.links[0])}" rel="me">${esc(x.nome)}</a>`));
+  if (base === '/contato') { const c = CONTATO[loc.codigo]; corpo = cabeca(c.titulo, c.descricao) + `<p>${esc(c.lead)}</p>` + li(contatos(loc.codigo).filter((x) => x.id !== 'linkedin').map((x) => `<a href="${esc(x.href)}">${esc(x.nome)}: ${esc(x.rotulo)}</a>`)) + `<h2 id="linkedin">LinkedIn</h2><p>${esc(c.autoresNota)}</p>` + li(AUTORES.map((x) => `<a href="${esc(x.links[0])}" rel="me">${esc(x.nome)}</a>`)); }
   if (base === '/ex-alunos-udemy') corpo = cabeca(EX_ALUNOS.titulo, EX_ALUNOS.descricao) + `<p>${esc(EX_ALUNOS.lead)}</p><h2>O que você encontra na Linvuu</h2>` + li(EX_ALUNOS.beneficios.map((x) => esc(x))) + `<h2>Como pedir sua condição especial</h2><ol>${EX_ALUNOS.passos.map((x) => `<li>${esc(x)}</li>`).join('')}</ol><p>${esc(EX_ALUNOS.aviso)}</p>` + `<h2>Perguntas frequentes</h2>` + EX_ALUNOS.perguntas.map((q) => `<h3>${esc(q.p)}</h3><p>${esc(q.r)}</p>`).join('');
   const menu = menuPreRender(loc);
   return corpo ? `<main data-prerender>${menu}${corpo}</main>` : '';
