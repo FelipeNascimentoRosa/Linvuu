@@ -471,7 +471,7 @@ export function alternativosDe(m: MetaRota, _site: string, d: DadosMeta | null =
 
 /** O que o navegador aplica ao navegar dentro do site: os mesmos valores que o servidor colocaria no HTML desta rota. */
 export function metaParaNavegador(m: MetaRota, _site: string, d: DadosMeta | null = null) {
-  return { status: m.status, caminho: m.caminho, titulo: m.titulo ? `${m.titulo} · Linvuu` : null, descricao: m.descricao ?? null, canonical: urlAbsolutaEm((m.locale ?? localePadrao()).codigo, m.caminho), noindex: !!m.semIndice, alternativos: alternativosDe(m, _site, d), lang: (m.locale ?? localePadrao()).codigo };
+  return { status: m.status, caminho: m.caminho, titulo: m.titulo ? (m.semMarca ? m.titulo : `${m.titulo} · Linvuu`) : null, descricao: m.descricao ?? null, canonical: urlAbsolutaEm((m.locale ?? localePadrao()).codigo, m.caminho), noindex: !!m.semIndice, alternativos: alternativosDe(m, _site, d), lang: (m.locale ?? localePadrao()).codigo };
 }
 
 export function aplicarMeta(html: string, m: MetaRota, _site: string, d: DadosMeta | null = null): string {
