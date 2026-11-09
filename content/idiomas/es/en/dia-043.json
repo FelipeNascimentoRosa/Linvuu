@@ -1,0 +1,192 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 43,
+  "fase": 5,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Town and directions: Transport and tickets",
+  "objetivo": "Lesson 11, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 11,
+    "titulo": "Town and directions",
+    "objetivo": "Name places in the city, ask where something is, understand and give simple directions («todo recto, gire a la derecha, la segunda calle»), use means of transport with «en» and «a pie», and ask for a ticket.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Transport and tickets",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "el metro",
+            "translit": "[pronuncia] el MEH-tro",
+            "pt": "the subway",
+            "en": "",
+            "audio": "el metro"
+          },
+          {
+            "ru": "el autobús",
+            "translit": "[pronuncia] el ow-to-BOOS",
+            "pt": "the bus",
+            "en": "",
+            "audio": "el autobús"
+          },
+          {
+            "ru": "el billete",
+            "translit": "[pronuncia] el bee-LYEH-teh",
+            "pt": "the ticket (Spain)",
+            "en": "",
+            "audio": "el billete"
+          },
+          {
+            "ru": "la parada",
+            "translit": "[pronuncia] la pah-RAH-dah",
+            "pt": "the bus stop",
+            "en": "",
+            "audio": "la parada"
+          },
+          {
+            "ru": "a pie",
+            "translit": "[pronuncia] ah pee-EH",
+            "pt": "on foot",
+            "en": "",
+            "audio": "a pie"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Means of transport and how long it takes",
+        "explicacao": "STEP 1: to say the means of transport, use «en»: «en autobús», «en metro», «en tren», «en coche», «en taxi», «en bicicleta», «en avión». For on foot, «a pie» or «andando». STEP 2: «tomar» means to take a form of transport: «Tomo el autobús». You'll also hear «coger» for this in Spain; in much of Latin America, this verb is offensive and should be avoided. STEP 3: «llegar» means to arrive: «Llego en metro», «Llegamos a pie». STEP 4: «viajar» means to travel: «Viajo en tren a Sevilla». STEP 5: duration is asked with «¿Cuánto tarda?» and answered with «Tarda diez minutos». «Tardar» is regular. STEP 6: «un billete» is the word for ticket in Spain; in Latin America, it's «un boleto» or «un pasaje». «Billete de ida» means one-way, «billete de ida y vuelta» means round-trip. STEP 7: the bus has local names: «autobús» in Spain; «colectivo» in Argentina, «camión» in Mexico, «guagua» in parts of the Caribbean and the Canary Islands, «micro» in Chile. STEP 8: to ask for the ticket: «Un billete de ida y vuelta a Sevilla, por favor». STEP 9: in Spain, the subway and bus use either a single ticket or a rechargeable card; the rules vary by city, so ask at the ticket counter.",
+        "comparacao": "English says «by bus», «by subway», «by car», «on foot». Spanish uses «en» for vehicles («en autobús», «en coche») and «a pie» for walking — a direct, one-to-one mapping. One real trap: the verb «coger» (to take/grab) is everyday Spanish in Spain, but offensive in much of Latin America, where «tomar» is the safe choice.",
+        "tabela": [
+          {
+            "meio": "[misto] en autobús",
+            "exemplo": "[misto] Llego en autobús.",
+            "traducao": "[misto] I'm coming by bus."
+          },
+          {
+            "meio": "[misto] en metro",
+            "exemplo": "[misto] Viajo en metro.",
+            "traducao": "[misto] I travel by subway."
+          },
+          {
+            "meio": "[misto] en tren",
+            "exemplo": "[misto] Viajo en tren.",
+            "traducao": "[misto] I travel by train."
+          },
+          {
+            "meio": "[misto] en coche",
+            "exemplo": "[misto] Llegamos en coche.",
+            "traducao": "[misto] We arrive by car."
+          },
+          {
+            "meio": "[misto] a pie, andando",
+            "exemplo": "[misto] Llego a pie.",
+            "traducao": "[misto] I arrive on foot."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] Llego de autobús.",
+            "certo": "[misto] Llego en autobús.",
+            "motivo": "The means of transport needs «en»."
+          },
+          {
+            "errado": "[misto] Llego en pie.",
+            "certo": "[misto] Llego a pie.",
+            "motivo": "On foot is «a pie»."
+          },
+          {
+            "errado": "[misto] Cojo el autobús. (in Latin America)",
+            "certo": "[misto] Tomo el autobús.",
+            "motivo": "«Coger» can be offensive in much of Latin America."
+          },
+          {
+            "errado": "[misto] Un boleto de ida y vuelta a Sevilla, por favor. (in Spain)",
+            "certo": "[misto] Un billete de ida y vuelta a Sevilla, por favor.",
+            "motivo": "In Spain it's «billete»; «boleto» is used in Latin American countries."
+          }
+        ],
+        "tag": "Transport"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "Perdone, ¿para ir a la estación? / Excuse me, how do I get to the station?",
+        "contexto": "Lucía, a tourist, asks a police officer for directions.",
+        "linhas": [
+          {
+            "personagem": "Lucía",
+            "ru": "— Perdone, ¿para ir a la estación?",
+            "pt": "— Excuse me, how do I get to the station?",
+            "audio": "Perdone, ¿para ir a la estación?",
+            "rotulo": "[personagem] Lucía"
+          },
+          {
+            "personagem": "El policía",
+            "ru": "— Siga todo recto hasta el semáforo.",
+            "pt": "— Go straight ahead to the traffic light.",
+            "audio": "Siga todo recto hasta el semáforo.",
+            "rotulo": "[personagem] El policía"
+          },
+          {
+            "personagem": "Lucía",
+            "ru": "— ¿Está lejos?",
+            "pt": "— Is it far?",
+            "audio": "¿Está lejos?",
+            "rotulo": "[personagem] Lucía"
+          },
+          {
+            "personagem": "El policía",
+            "ru": "— No, está a diez minutos andando. Gire a la izquierda en el semáforo y tome la segunda calle a la derecha.",
+            "pt": "— No, it's ten minutes on foot. Turn left at the traffic light and take the second street on the right.",
+            "audio": "No, está a diez minutos andando. Gire a la izquierda en el semáforo y tome la segunda calle a la derecha.",
+            "rotulo": "[personagem] El policía"
+          },
+          {
+            "personagem": "Lucía",
+            "ru": "— ¿A la izquierda y luego a la derecha?",
+            "pt": "— Left and then right?",
+            "audio": "¿A la izquierda y luego a la derecha?",
+            "rotulo": "[personagem] Lucía"
+          },
+          {
+            "personagem": "El policía",
+            "ru": "— Eso es. La estación está enfrente del museo.",
+            "pt": "— That's right. The station is across from the museum.",
+            "audio": "Eso es. La estación está enfrente del museo.",
+            "rotulo": "[personagem] El policía"
+          },
+          {
+            "personagem": "Lucía",
+            "ru": "— Muchas gracias.",
+            "pt": "— Thank you very much.",
+            "audio": "Muchas gracias.",
+            "rotulo": "[personagem] Lucía"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe out loud, for real, how you get to a friend's house and to work: means of transport, how long it takes, what's nearby. Use «en», «a pie» and «tarda»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say the ordinals from first to fifth in the feminine, and two short routes with «usted»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-011.json",
+  "responsavel": null
+}

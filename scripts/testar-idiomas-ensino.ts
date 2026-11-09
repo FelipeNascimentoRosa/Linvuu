@@ -3,8 +3,8 @@ import { escolherExplicacao, resolverExplicacao, preferenciaExplicacao, lembrarE
 import { localeDoCaminho } from '../src/i18n/locales';
 const memoria = new Map<string, string>();
 Object.defineProperty(globalThis, 'localStorage', { configurable: true, value: {getItem: (k: string) => memoria.get(k) ?? null, setItem: (k: string, v: string) => memoria.set(k, v)} });
-// Menus em três idiomas não mudam a fonte portuguesa do curso de alemão.
-for (const rota of ['/curso/de', '/en/curso/de', '/es/curso/de']) {
+// Menus em dois idiomas não mudam a fonte portuguesa do curso de alemão.
+for (const rota of ['/curso/de', '/en/curso/de']) {
   assert.ok(localeDoCaminho(rota));
   assert.equal(preferenciaExplicacao('de', 'pt'), 'pt');
 }

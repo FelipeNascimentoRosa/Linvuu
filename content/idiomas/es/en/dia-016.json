@@ -1,0 +1,521 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 16,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Present tense in -ar, negation and questions: Review and practice of lesson 4",
+  "objetivo": "Lesson 4, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 4,
+    "titulo": "Present tense in -ar, negation and questions",
+    "objetivo": "Conjugate regular -ar verbs in the present, negate with «no», ask yes/no questions and questions with «qué, dónde, cuándo, por qué, cómo, cuánto», and tell «muy» apart from «mucho» and «por qué» from «porque».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 4",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Hablamos español",
+            "opcoes": [
+              "[misto] Hablamos español",
+              "[misto] Hablan español",
+              "[misto] Habláis español"
+            ],
+            "gabarito": "[misto] Hablamos español",
+            "explicacao": "Listen to the «mos» of «hablamos».",
+            "id": "es-004-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Trabajo en Madrid",
+            "opcoes": [
+              "[misto] Trabajo en Madrid",
+              "[misto] Trabaja en Madrid",
+              "[misto] Trabajan en Madrid"
+            ],
+            "gabarito": "[misto] Trabajo en Madrid",
+            "explicacao": "Listen to the final «o» of «trabajo».",
+            "id": "es-004-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "¿Dónde estudias?",
+            "opcoes": [
+              "[misto] ¿Dónde estudias?",
+              "[misto] ¿Dónde estudia?",
+              "[misto] ¿Cuándo estudias?"
+            ],
+            "gabarito": "[misto] ¿Dónde estudias?",
+            "explicacao": "Listen to «dónde» and the final «s» of «estudias».",
+            "id": "es-004-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «estudiar» mean?",
+            "audio": "estudiar",
+            "opcoes": [
+              "how much, how many?",
+              "to study",
+              "to dance",
+              "always"
+            ],
+            "gabarito": "to study",
+            "explicacao": "«estudiar» = to study.",
+            "id": "es-004-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Estudio español",
+            "respostaEsperada": "Estudio español",
+            "explicacao": "Write: Estudio español.",
+            "id": "es-004-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "No bailo mucho",
+            "respostaEsperada": "No bailo mucho",
+            "explicacao": "Write: No bailo mucho.",
+            "id": "es-004-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "¿Por qué estudias español?",
+            "respostaEsperada": "¿Por qué estudias español?",
+            "explicacao": "Write: ¿Por qué estudias español?",
+            "id": "es-004-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «¿cómo?» mean?",
+            "audio": "¿cómo?",
+            "opcoes": [
+              "what?",
+              "always",
+              "how?",
+              "to dance"
+            ],
+            "gabarito": "how?",
+            "explicacao": "«¿cómo?» = how?.",
+            "id": "es-004-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «tú» form of «cantar»?",
+            "opcoes": [
+              "[misto] cantas",
+              "[misto] canta",
+              "[misto] cantáis"
+            ],
+            "gabarito": "[misto] cantas",
+            "explicacao": "With «tú», the ending is «-as».",
+            "id": "es-004-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «nosotros» form of «trabajar»?",
+            "opcoes": [
+              "[misto] trabajamos",
+              "[misto] trabajáis",
+              "[misto] trabajan"
+            ],
+            "gabarito": "[misto] trabajamos",
+            "explicacao": "With «nosotros», the ending is «-amos».",
+            "id": "es-004-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I don't speak German»?",
+            "opcoes": [
+              "[misto] No hablo alemán.",
+              "[misto] Hablo no alemán.",
+              "[misto] No hablas alemán."
+            ],
+            "gabarito": "[misto] No hablo alemán.",
+            "explicacao": "«No» comes before the verb.",
+            "id": "es-004-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «¿dónde?» mean?",
+            "audio": "¿dónde?",
+            "opcoes": [
+              "to travel",
+              "to work",
+              "where?",
+              "a little"
+            ],
+            "gabarito": "where?",
+            "explicacao": "«¿dónde?» = where?.",
+            "id": "es-004-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you answer «¿Por qué estudias español?»",
+            "opcoes": [
+              "[misto] Porque viajo mucho.",
+              "[misto] Por qué viajo mucho.",
+              "[misto] Porqué viajo mucho."
+            ],
+            "gabarito": "[misto] Porque viajo mucho.",
+            "explicacao": "The answer uses «porque», one word, no accent.",
+            "id": "es-004-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "[misto] Hablo mucho.",
+              "[misto] Hablo muy.",
+              "[misto] Hablo muy mucho."
+            ],
+            "gabarito": "[misto] Hablo mucho.",
+            "explicacao": "With a verb, use «mucho»; «muy» only goes before an adjective or adverb.",
+            "id": "es-004-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «to catch the bus» in a way that's safe everywhere in Latin America and Spain?",
+            "opcoes": [
+              "[misto] tomar el autobús",
+              "[misto] pegar el autobús",
+              "[misto] bajar el autobús"
+            ],
+            "gabarito": "[misto] tomar el autobús",
+            "explicacao": "«Pegar» means to hit or to glue; «coger» is avoided in much of Latin America.",
+            "id": "es-004-e12"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «nunca» mean?",
+            "audio": "nunca",
+            "opcoes": [
+              "to dance",
+              "sometimes",
+              "to work",
+              "never"
+            ],
+            "gabarito": "never",
+            "explicacao": "«nunca» = never.",
+            "id": "es-004-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Yo ___ español. (hablar)",
+            "opcoes": [
+              "[misto] hablo",
+              "[misto] hablas",
+              "[misto] habla"
+            ],
+            "gabarito": "[misto] hablo",
+            "explicacao": "With «yo», the ending is «-o».",
+            "id": "es-004-e13"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ellos ___ en un hotel. (trabajar)",
+            "opcoes": [
+              "[misto] trabajan",
+              "[misto] trabaja",
+              "[misto] trabajamos"
+            ],
+            "gabarito": "[misto] trabajan",
+            "explicacao": "With «ellos», the ending is «-an».",
+            "id": "es-004-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ trabajas? (where)",
+            "opcoes": [
+              "[misto] ¿Dónde",
+              "[misto] ¿Cuándo",
+              "[misto] ¿Qué"
+            ],
+            "gabarito": "[misto] ¿Dónde",
+            "explicacao": "«Dónde» asks about place.",
+            "id": "es-004-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escucho ___ Ana.",
+            "opcoes": [
+              "[misto] a",
+              "[misto] con",
+              "[misto] de"
+            ],
+            "gabarito": "[misto] a",
+            "explicacao": "The «personal a» comes before a person.",
+            "id": "es-004-e16"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «poco» mean?",
+            "audio": "poco",
+            "opcoes": [
+              "a lot (with a verb)",
+              "to cook",
+              "to speak",
+              "a little"
+            ],
+            "gabarito": "a little",
+            "explicacao": "«poco» = a little.",
+            "id": "es-004-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ella es ___ simpática. (very)",
+            "opcoes": [
+              "[misto] muy",
+              "[misto] mucho",
+              "[misto] mucha"
+            ],
+            "gabarito": "[misto] muy",
+            "explicacao": "Before an adjective, use «muy».",
+            "id": "es-004-e17"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «No hablo alemán.»",
+            "opcoes": [
+              "No",
+              "hablo",
+              "alemán."
+            ],
+            "gabarito": "No hablo alemán.",
+            "explicacao": "«No» comes before the verb.",
+            "id": "es-004-e18"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «¿Dónde trabajas?»",
+            "opcoes": [
+              "¿Dónde",
+              "trabajas?"
+            ],
+            "gabarito": "¿Dónde trabajas?",
+            "explicacao": "The question word opens the sentence.",
+            "id": "es-004-e19"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «siempre» mean?",
+            "audio": "siempre",
+            "opcoes": [
+              "a lot (with a verb)",
+              "never",
+              "to work",
+              "always"
+            ],
+            "gabarito": "always",
+            "explicacao": "«siempre» = always.",
+            "id": "es-004-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I speak Portuguese and I study Spanish.",
+            "respostaEsperada": "[misto] Hablo portugués y estudio español.",
+            "id": "es-004-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Nosotros ___ español. (estudiar)",
+            "opcoes": [
+              "[misto] estudian",
+              "[misto] estudio",
+              "[misto] estudiamos"
+            ],
+            "gabarito": "[misto] estudiamos",
+            "explicacao": "«Nosotros» needs the ending «-amos».",
+            "id": "es-004-e21"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tú ___ música. (escutar)",
+            "opcoes": [
+              "[misto] escuchas",
+              "[misto] escucha",
+              "[misto] escucho"
+            ],
+            "gabarito": "[misto] escuchas",
+            "explicacao": "With «tú», -ar verbs end in «-as».",
+            "id": "es-004-e22"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and put the sentence together.",
+            "audio": "Hablamos español",
+            "opcoes": [
+              "español",
+              "Hablamos"
+            ],
+            "gabarito": "Hablamos español",
+            "explicacao": "Write: Hablamos español",
+            "id": "es-004-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "¿___ viajas? — En agosto. (when)",
+            "opcoes": [
+              "[misto] Dónde",
+              "[misto] Cómo",
+              "[misto] Cuándo"
+            ],
+            "gabarito": "[misto] Cuándo",
+            "explicacao": "The answer gives a time, so the question is «cuándo».",
+            "id": "es-004-e23"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ella trabaja ___ . (a lot)",
+            "opcoes": [
+              "[misto] muy",
+              "[misto] poco",
+              "[misto] mucho"
+            ],
+            "gabarito": "[misto] mucho",
+            "explicacao": "After a verb, use «mucho»; «muy» only comes before an adjective or adverb.",
+            "id": "es-004-e24"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «ellos» form of «comprar»?",
+            "opcoes": [
+              "[misto] compran",
+              "[misto] compra",
+              "[misto] compráis"
+            ],
+            "gabarito": "[misto] compran",
+            "explicacao": "Ellos: stem + «-an».",
+            "id": "es-004-e25"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and put the sentence together.",
+            "audio": "Trabajo en Madrid",
+            "opcoes": [
+              "Madrid",
+              "en",
+              "Trabajo"
+            ],
+            "gabarito": "Trabajo en Madrid",
+            "explicacao": "Write: Trabajo en Madrid",
+            "id": "es-004-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which answer fits «¿Cuándo viajas?»",
+            "opcoes": [
+              "[misto] En Madrid.",
+              "[misto] Porque sí.",
+              "[misto] En agosto."
+            ],
+            "gabarito": "[misto] En agosto.",
+            "explicacao": "«Cuándo» asks about time.",
+            "id": "es-004-e26"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the correct negation of «Bailo mucho»?",
+            "opcoes": [
+              "[misto] No bailo mucho.",
+              "[misto] Bailo no mucho.",
+              "[misto] No yo bailo mucho."
+            ],
+            "gabarito": "[misto] No bailo mucho.",
+            "explicacao": "«No» comes right before the verb.",
+            "id": "es-004-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «A veces cocino en casa.»",
+            "opcoes": [
+              "A",
+              "veces",
+              "cocino",
+              "en",
+              "casa."
+            ],
+            "gabarito": "A veces cocino en casa.",
+            "explicacao": "The frequency adverb sits close to the verb.",
+            "id": "es-004-e28"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and put the sentence together.",
+            "audio": "¿Dónde estudias?",
+            "opcoes": [
+              "estudias?",
+              "¿Dónde"
+            ],
+            "gabarito": "¿Dónde estudias?",
+            "explicacao": "Write: ¿Dónde estudias?",
+            "id": "es-004-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Ella habla español y portugués.»",
+            "opcoes": [
+              "Ella",
+              "habla",
+              "español",
+              "y",
+              "portugués."
+            ],
+            "gabarito": "Ella habla español y portugués.",
+            "explicacao": "Ella uses the form «habla».",
+            "id": "es-004-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: We work in Madrid and we travel a lot.",
+            "respostaEsperada": "[misto] Trabajamos en Madrid y viajamos mucho.",
+            "id": "es-004-e30"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: Where do you study, Ana? (informal)",
+            "respostaEsperada": "[misto] ¿Dónde estudias, Ana?",
+            "id": "es-004-e31"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Tell a friend, out loud, what you do during the week, and ask them three questions about their day."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say what you do and don't do, with six -ar verbs. Then ask a friend two questions."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-004.json",
+  "responsavel": null
+}

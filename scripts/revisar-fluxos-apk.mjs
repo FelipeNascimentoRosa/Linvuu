@@ -2,14 +2,15 @@
 import { chromium } from 'playwright';
 import assert from 'node:assert/strict';
 import { spawn } from 'node:child_process';
+const semAbertura=async(b,o)=>{const c=await b.newContext(o);await c.addInitScript(()=>{try{localStorage.setItem('linvuu:primeira-abertura:v1','1');}catch{}});return c;}; // estes testes começam depois das telas da primeira abertura
 const base='http://127.0.0.1:4332';
 const server=spawn(process.execPath,['node_modules/vite/bin/vite.js','preview','--outDir','dist-apk','--host','127.0.0.1','--port','4332','--strictPort'],{stdio:'ignore'});
 let browser;
 try {
  for(let i=0;i<60;i++){try{if((await fetch(base)).ok)break;}catch{}await new Promise(r=>setTimeout(r,500));}
  browser=await chromium.launch();
- for(const locale of ['', '/en','/es']) {
-  const ctx=await browser.newContext({viewport:{width:390,height:844},reducedMotion:'reduce'});
+ for(const locale of ['', '/en']) {
+  const ctx=await semAbertura(browser,{viewport:{width:390,height:844},reducedMotion:'reduce'});
   const page=await ctx.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto(base+locale+'/cursos');await page.locator('.app-catalogo').waitFor();
   assert.equal(await page.locator('.app-grade section').count(),locale?1:6);

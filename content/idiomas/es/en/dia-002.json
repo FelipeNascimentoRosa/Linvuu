@@ -1,0 +1,373 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 2,
+  "fase": 1,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Sounds, alphabet and first words: Sounds that change: vowels, j, g, c, z, ll, ñ and rr",
+  "objetivo": "Lesson 1, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 1,
+    "titulo": "Sounds, alphabet and first words",
+    "objetivo": "Spell in Spanish, read the letters that sound different from what you expect (j, g, c, z, qu, ll, ñ, rr, h), keep vowels full and clear, mark the stressed syllable, and say your first greetings, with «tú» and with «usted».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Sounds that change: vowels, j, g, c, z, ll, ñ and rr",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "el jamón",
+            "translit": "[pronuncia] el hah-MOHN",
+            "pt": "the ham",
+            "en": "",
+            "audio": "el jamón"
+          },
+          {
+            "ru": "el queso",
+            "translit": "[pronuncia] el KEH-so",
+            "pt": "the cheese",
+            "en": "",
+            "audio": "el queso"
+          },
+          {
+            "ru": "el niño",
+            "translit": "[pronuncia] el NEE-nyo",
+            "pt": "the boy, the child",
+            "en": "",
+            "audio": "el niño"
+          },
+          {
+            "ru": "la calle",
+            "translit": "[pronuncia] lah KAH-yeh",
+            "pt": "the street",
+            "en": "",
+            "audio": "la calle"
+          },
+          {
+            "ru": "la cena",
+            "translit": "[pronuncia] lah THEH-nah",
+            "pt": "dinner",
+            "en": "",
+            "audio": "la cena"
+          },
+          {
+            "ru": "el zapato",
+            "translit": "[pronuncia] el thah-PAH-to",
+            "pt": "the shoe",
+            "en": "",
+            "audio": "el zapato"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Full vowels and the letters j, g, c, qu, z",
+        "explicacao": "Listen to the examples before reading each step. STEP 1: Spanish has five vowels: a, e, i, o, u. They're always clear and full-length. A final «e» never turns into an «i» sound: «leche» sounds «LEH-cheh», not «LEH-chee». A final «o» never turns into a «u» sound: «todo» sounds «TOH-doh», not «TOH-doo». STEP 2: there's no nasal vowel. In «pan» and «mano», the «n» is fully pronounced. STEP 3: the letter «j» sounds like a rough, throaty «h», similar to the Scottish «ch» in «loch». «Jamón» sounds «hah-MOHN». It never sounds like «j» in «jam». STEP 4: «g» before «e» and «i» sounds the same as «j»: «gente» sounds «HEN-teh». Before «a», «o» and «u», «g» is hard, as in «go». STEP 5: for a hard «g» before «e» and «i», you write «gu», and the «u» stays silent: «guitarra» sounds «gee-TAH-rrah». STEP 6: «c» before «a», «o» and «u» sounds «k»: «casa». For a «k» sound before «e» and «i», you write «qu», with a silent «u»: «queso» sounds «KEH-so». STEP 7: «c» before «e» and «i», and the letter «z», sound «th» (as in «think») in Spain: «cena» sounds «THEH-nah», «zapato» sounds «thah-PAH-to». In Latin America they sound like «s». Both pronunciations are correct; this course uses the one from Spain.",
+        "comparacao": "in English, «g» before «e» is often soft (as in «gentle») and «c» before «e» often sounds like «s». In Spanish, «ge» sounds like a rough «h» and «ce» sounds «th» (or «s» in Latin America). Reading «jamón» as if the «j» were an English «j», or «gente» with a soft «j» sound, is the giveaway accent to avoid.",
+        "exemplos": [
+          {
+            "ru": "jamón",
+            "pt": "ham: the «j» is a rough h"
+          },
+          {
+            "ru": "gente",
+            "pt": "people: the «g» before «e» is a rough h"
+          },
+          {
+            "ru": "gato",
+            "pt": "cat: the «g» before «a» is hard"
+          },
+          {
+            "ru": "guitarra",
+            "pt": "guitar: the «u» in «gui» is silent"
+          },
+          {
+            "ru": "queso",
+            "pt": "cheese: the «u» in «que» is silent"
+          },
+          {
+            "ru": "cena",
+            "pt": "dinner: «c» before «e» sounds th"
+          },
+          {
+            "ru": "zapato",
+            "pt": "shoe: the «z» sounds th"
+          }
+        ],
+        "tabela": [
+          {
+            "grafia": "[misto] j; g + e, i",
+            "som": "[misto] rough h",
+            "exemplos": "[misto] jamón, gente, jefe"
+          },
+          {
+            "grafia": "[misto] g + a, o, u",
+            "som": "[misto] hard g",
+            "exemplos": "[misto] gato, gusto, gota"
+          },
+          {
+            "grafia": "[misto] gu + e, i",
+            "som": "[misto] hard g (silent u)",
+            "exemplos": "[misto] guerra, guitarra, guiso"
+          },
+          {
+            "grafia": "[misto] c + a, o, u; qu + e, i",
+            "som": "[misto] k",
+            "exemplos": "[misto] casa, copa, queso, quién"
+          },
+          {
+            "grafia": "[misto] c + e, i; z",
+            "som": "[misto] th (Spain); s (Latin America)",
+            "exemplos": "[misto] cena, cielo, zapato"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] read «jamón» with an English «j» sound",
+            "certo": "[misto] hah-MOHN",
+            "motivo": "The «j» sounds like a rough, throaty «h», never like the English «j»."
+          },
+          {
+            "errado": "[misto] read «queso» with the «u» pronounced",
+            "certo": "[misto] KEH-so",
+            "motivo": "In «que» and «qui» the «u» is silent."
+          },
+          {
+            "errado": "[misto] read «leche» with a final «i» sound",
+            "certo": "[misto] LEH-cheh",
+            "motivo": "Spanish final vowels stay full; they don't get reduced."
+          }
+        ],
+        "tag": "Pronunciation"
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "The sounds ll, ñ, ch, h, rr, b, v, d, t and s",
+        "explicacao": "Keep listening first. STEP 1: «ll» and «y» at the start of a syllable sound like a soft «y», close to the «y» in «yes»: «calle» sounds «KAH-yeh», «yo» sounds «yoh». In Argentina they sound like the «sh» in «she». STEP 2: «ñ» sounds «ny», as in «canyon»: «niño» sounds «NEE-nyo», «España» sounds «es-PAH-nyah». STEP 3: «ch» sounds like the English «ch» in «chair»: «leche», «chico». STEP 4: «h» is always silent: «hola» sounds «OH-lah», «hotel» sounds «oh-TEL». STEP 5: an «r» at the start of a word, and «rr», are strongly rolled: «rojo», «perro». Between vowels, a single «r» is just one quick tap. This changes the meaning: «pero» means «but», and «perro» means «dog». STEP 6: «b» and «v» sound the same, like the English «b»: «vino» sounds «BEE-no». STEP 7: «t» and «d» never soften into «ch» or «j» sounds, not even before «i»: «tío» and «día» keep a crisp, hard sound. STEP 8: «s» is always «s», never «z»: «casa» sounds «KAH-sah», not «KAH-zah».",
+        "comparacao": "English shares most of these sounds, so the mistake is swapping a Spanish sound for a similar-sounding English one. The five traps: the final vowel that doesn't reduce, the «j» that's an «h» and not an English «j», the «s» in «casa» that's never a «z», the «t» and «d» that stay hard before «i», and the rolled «rr». English's «y» (yes) and «ny» (canyon) cover «ll» and «ñ» reasonably well, but Spanish keeps them more consistent.",
+        "exemplos": [
+          {
+            "ru": "la calle",
+            "pt": "the street: the «ll» is a soft y"
+          },
+          {
+            "ru": "el niño",
+            "pt": "the child: the «ñ» sounds ny"
+          },
+          {
+            "ru": "la leche",
+            "pt": "the milk: the «ch» sounds ch (as in chair)"
+          },
+          {
+            "ru": "el hotel",
+            "pt": "the hotel: the «h» is silent"
+          },
+          {
+            "ru": "el perro",
+            "pt": "the dog: the «rr» rolls strongly"
+          },
+          {
+            "ru": "pero",
+            "pt": "but: the «r» is a single tap"
+          },
+          {
+            "ru": "el vino",
+            "pt": "the wine: the «v» sounds like b"
+          },
+          {
+            "ru": "la casa",
+            "pt": "the house: the «s» never turns into z"
+          }
+        ],
+        "tabela": [
+          {
+            "grafia": "[misto] ll; y",
+            "som": "[misto] soft y",
+            "exemplos": "[misto] calle, llave, yo"
+          },
+          {
+            "grafia": "[misto] ñ",
+            "som": "[misto] ny",
+            "exemplos": "[misto] España, niño, mañana"
+          },
+          {
+            "grafia": "[misto] ch",
+            "som": "[misto] ch (as in chair)",
+            "exemplos": "[misto] leche, chico, noche"
+          },
+          {
+            "grafia": "[misto] h",
+            "som": "[misto] silent",
+            "exemplos": "[misto] hola, hotel, hoy"
+          },
+          {
+            "grafia": "[misto] initial r; rr",
+            "som": "[misto] strongly rolled",
+            "exemplos": "[misto] rojo, perro, carro"
+          },
+          {
+            "grafia": "[misto] b; v",
+            "som": "[misto] the same b sound",
+            "exemplos": "[misto] vino, vaca, bien"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] read «día» with a soft j sound",
+            "certo": "[misto] DEE-ah",
+            "motivo": "In Spanish, «d» never softens into a «j»-like sound before «i»."
+          },
+          {
+            "errado": "[misto] read «pero» and «perro» the same way",
+            "certo": "[misto] PEH-ro (single tap) and PEH-rro (rolled)",
+            "motivo": "The rolled «rr» changes the word: but × dog."
+          },
+          {
+            "errado": "[misto] read «casa» with a z sound",
+            "certo": "[misto] KAH-sah",
+            "motivo": "Spanish «s» never sounds like «z»."
+          },
+          {
+            "errado": "[misto] read «hotel» with a rough h sound",
+            "certo": "[misto] oh-TEL",
+            "motivo": "The «h» is silent; the rough-h sound belongs to «j»."
+          }
+        ],
+        "tag": "Pronunciation"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "el queso",
+            "opcoes": [
+              "[misto] el queso",
+              "[misto] el beso",
+              "[misto] el peso"
+            ],
+            "gabarito": "[misto] el queso",
+            "explicacao": "Listen to the start: «k» in «que». «Beso» and «peso» start with «b» and «p».",
+            "id": "es-001-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "la cena",
+            "opcoes": [
+              "[misto] la cena",
+              "[misto] la pena",
+              "[misto] la vena"
+            ],
+            "gabarito": "[misto] la cena",
+            "explicacao": "The starting sound is «th» (or «s»), different from «p» and «b».",
+            "id": "es-001-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "el niño",
+            "opcoes": [
+              "[misto] el niño",
+              "[misto] el nido",
+              "[misto] el año"
+            ],
+            "gabarito": "[misto] el niño",
+            "explicacao": "Listen for the «ny» sound in the middle of the word.",
+            "id": "es-001-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "la calle",
+            "opcoes": [
+              "[misto] la calle",
+              "[misto] la cara",
+              "[misto] la cal"
+            ],
+            "gabarito": "[misto] la calle",
+            "explicacao": "Listen for the soft «y» sound of «ll» and the full final «e».",
+            "id": "es-001-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "la calle",
+            "respostaEsperada": "la calle",
+            "explicacao": "The soft «y» sound is written «ll»: «calle».",
+            "id": "es-001-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "el jamón",
+            "respostaEsperada": "el jamón",
+            "explicacao": "The rough-h sound before «a» is written «j»: «jamón».",
+            "id": "es-001-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you read «cena» in Spain?",
+            "opcoes": [
+              "[misto] THEH-nah",
+              "[misto] KEH-nah",
+              "[misto] CHEH-nah"
+            ],
+            "gabarito": "[misto] THEH-nah",
+            "explicacao": "«c» before «e» sounds «th» in Spain (in Latin America, «s»).",
+            "id": "es-001-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you read «niño»?",
+            "opcoes": [
+              "[misto] NEE-nyo",
+              "[misto] NEE-no",
+              "[misto] NEE-nee-oh"
+            ],
+            "gabarito": "[misto] NEE-nyo",
+            "explicacao": "The letter «ñ» sounds «ny».",
+            "id": "es-001-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you read «queso»?",
+            "opcoes": [
+              "[misto] KEH-so",
+              "[misto] koo-EH-so",
+              "[misto] CHEH-so"
+            ],
+            "gabarito": "[misto] KEH-so",
+            "explicacao": "In «que», the «u» is silent.",
+            "id": "es-001-e09"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 6,
+        "enunciado": "Listen to the sentence and repeat it out loud, first slowly, then faster, five times: «Jorge compra jamón y queso. El perro de Rosa corre por la calle.» Watch the «j» (rough h), the rolled «rr» and the «s» of «Rosa» (never a «z»). Then read again: jamón, gente, queso, cena, zapato, calle, niño, perro."
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Spell the name of your city in Spanish and say «hola», «gracias» and «adiós» without looking."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-001.json",
+  "responsavel": null
+}

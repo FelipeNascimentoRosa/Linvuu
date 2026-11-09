@@ -1,0 +1,174 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 41,
+  "fase": 5,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Town and directions: Places in town",
+  "objetivo": "Lesson 11, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 11,
+    "titulo": "Town and directions",
+    "objetivo": "Name places in the city, ask where something is, understand and give simple directions («todo recto, gire a la derecha, la segunda calle»), use means of transport with «en» and «a pie», and ask for a ticket.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Places in town",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "la calle",
+            "translit": "[pronuncia] la KAH-lyeh",
+            "pt": "the street",
+            "en": "",
+            "audio": "la calle"
+          },
+          {
+            "ru": "la farmacia",
+            "translit": "[pronuncia] la far-MAH-thyah",
+            "pt": "the pharmacy",
+            "en": "",
+            "audio": "la farmacia"
+          },
+          {
+            "ru": "el supermercado",
+            "translit": "[pronuncia] el soo-per-mer-KAH-do",
+            "pt": "the supermarket",
+            "en": "",
+            "audio": "el supermercado"
+          },
+          {
+            "ru": "la estación",
+            "translit": "[pronuncia] la es-tah-THYON",
+            "pt": "the station",
+            "en": "",
+            "audio": "la estación"
+          },
+          {
+            "ru": "el museo",
+            "translit": "[pronuncia] el moo-SEH-o",
+            "pt": "the museum",
+            "en": "",
+            "audio": "el museo"
+          },
+          {
+            "ru": "el mercado",
+            "translit": "[pronuncia] el mer-KAH-do",
+            "pt": "the market",
+            "en": "",
+            "audio": "el mercado"
+          },
+          {
+            "ru": "el ayuntamiento",
+            "translit": "[pronuncia] el ah-yoon-tah-MYEN-to",
+            "pt": "the city hall",
+            "en": "",
+            "audio": "el ayuntamiento"
+          },
+          {
+            "ru": "la parada",
+            "translit": "[pronuncia] la pah-RAH-dah",
+            "pt": "the stop (bus)",
+            "en": "",
+            "audio": "la parada"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Asking where something is",
+        "explicacao": "STEP 1: to get a stranger's attention, start with «Perdone» or «Disculpe» (usted), or «Perdona» and «Disculpa» (tú). STEP 2: the main question is «¿Dónde está…?»: «¿Dónde está la farmacia?», «¿Dónde están los baños?». Remember: a specific, known thing needs «estar». STEP 3: if you're not sure something exists, ask with «hay»: «¿Hay una farmacia por aquí?». «Por aquí» means «around here, nearby». STEP 4: «¿Está lejos?» and «¿Está cerca?» help you find out the distance. The answer might be «Está a diez minutos andando» or «Está a dos calles». STEP 5: «¿Cómo llego a…?» asks how to get there: «¿Cómo llego a la estación?». «Llegar» is regular (llego, llegas, llega…). The preposition is «a». STEP 6: you can also ask «¿Para ir a…?»: «Perdone, ¿para ir al museo?». Here «ir» is in the infinitive, and its conjugation comes in the next lesson. STEP 7: places in the city have a gender and follow the plural rules from lesson 5: «el museo, los museos», «la farmacia, las farmacias», «la estación, las estaciones». STEP 8: tricky words: «ayuntamiento» means city hall; «estación» can mean a train station, a subway or bus station, or a season of the year (spring, summer…); «manzana» means apple, and also a city block; «calle» means street; «avenida» and «paseo» are wide streets, like avenues or boulevards. STEP 9: in Latin America, city hall goes by different names depending on the country (for example, «alcaldía» or «municipalidad»). STEP 10: «el centro» means downtown; for a neighborhood, «el barrio».",
+        "comparacao": "English «where is the pharmacy?» maps onto Spanish «¿Dónde está la farmacia?» with «estar» for location — straightforward. Some Latin American speakers also use «quedar» the same way («¿Dónde queda la farmacia?»), but «estar» is the safe choice everywhere. The false friend to flag: «ayuntamiento» means city hall, not anything to do with a gathering.",
+        "exemplos": [
+          {
+            "ru": "Perdone, ¿dónde está el mercado?",
+            "pt": "Excuse me, where's the market?"
+          },
+          {
+            "ru": "¿Hay una farmacia por aquí?",
+            "pt": "Is there a pharmacy around here?"
+          },
+          {
+            "ru": "La estación está cerca del ayuntamiento.",
+            "pt": "The station is near city hall."
+          },
+          {
+            "ru": "¿Cómo llego al museo?",
+            "pt": "How do I get to the museum?"
+          }
+        ],
+        "tabela": [
+          {
+            "pergunta": "[misto] ¿Dónde está la farmacia?",
+            "funcao": "[misto] a known place",
+            "traducao": "[misto] Where's the pharmacy?"
+          },
+          {
+            "pergunta": "[misto] ¿Hay un banco por aquí?",
+            "funcao": "[misto] finding out if it exists",
+            "traducao": "[misto] Is there a bank around here?"
+          },
+          {
+            "pergunta": "[misto] ¿Está lejos?",
+            "funcao": "[misto] distance",
+            "traducao": "[misto] Is it far?"
+          },
+          {
+            "pergunta": "[misto] ¿Cómo llego a la estación?",
+            "funcao": "[misto] how to get there",
+            "traducao": "[misto] How do I get to the station?"
+          },
+          {
+            "pergunta": "[misto] Perdone, ¿para ir al museo?",
+            "funcao": "[misto] getting attention and asking",
+            "traducao": "[misto] Excuse me, how do I get to the museum?"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] ¿Dónde es la farmacia?",
+            "certo": "[misto] ¿Dónde está la farmacia?",
+            "motivo": "To locate a place, use «estar»."
+          },
+          {
+            "errado": "[misto] ¿Cómo llego en la estación?",
+            "certo": "[misto] ¿Cómo llego a la estación?",
+            "motivo": "The destination needs «a»."
+          },
+          {
+            "errado": "[misto] ¿Hay la farmacia por aquí?",
+            "certo": "[misto] ¿Hay una farmacia por aquí?",
+            "motivo": "After «hay», an indefinite article."
+          },
+          {
+            "errado": "[misto] ¿Dónde está los baños?",
+            "certo": "[misto] ¿Dónde están los baños?",
+            "motivo": "Plural: «están»."
+          }
+        ],
+        "tag": "The city"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Ask out loud, with «usted», where each of the six places on the list is: «Perdone, ¿dónde está…?». Then ask if there's one nearby: «¿Hay… por aquí?»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Conjugate «estar» from memory and describe where three objects in your house are with «encima de, debajo de, al lado de». Say these times: 2:15, 5:40, 9:30."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-011.json",
+  "responsavel": null
+}

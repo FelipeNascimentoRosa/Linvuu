@@ -1,0 +1,192 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 35,
+  "fase": 4,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Time, days and months: Opening hours and routine",
+  "objetivo": "Lesson 9, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 9,
+    "titulo": "Time, days and months",
+    "objetivo": "Ask and tell the time, set a time with «a las», say the days of the week, the months and the date, and talk about opening hours and routine with «de… a…» and «todos los días».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Opening hours and routine",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "el horario",
+            "translit": "[pronuncia] el o-RAH-ryo",
+            "pt": "the hours, the schedule",
+            "en": "",
+            "audio": "el horario"
+          },
+          {
+            "ru": "abre, cierra",
+            "translit": "[pronuncia] AH-breh, THYEH-rrah",
+            "pt": "it opens, it closes",
+            "en": "",
+            "audio": "abre, cierra"
+          },
+          {
+            "ru": "la biblioteca",
+            "translit": "[pronuncia] la bee-blyo-TEH-kah",
+            "pt": "the library",
+            "en": "",
+            "audio": "la biblioteca"
+          },
+          {
+            "ru": "la librería",
+            "translit": "[pronuncia] la lee-breh-REE-ah",
+            "pt": "the bookshop; not «biblioteca»",
+            "en": "",
+            "audio": "la librería"
+          },
+          {
+            "ru": "todos los días",
+            "translit": "[pronuncia] TO-dos los DEE-ahs",
+            "pt": "every day",
+            "en": "",
+            "audio": "todos los días"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "De… a…, abre and cierra, todos los días",
+        "explicacao": "STEP 1: for a span of hours, Spanish uses «de… a…» (with the time): «de nueve a cinco», «de lunes a viernes». «Desde… hasta…» does the same thing, more emphatically: «desde las nueve hasta las cinco». STEP 2: shops and libraries «abren» and «cierran» (open and close): «La tienda abre a las diez y cierra a las ocho». «Cerrar» (to close) follows the «querer» pattern: «cierro, cierras, cierra, cerramos, cerráis, cierran». STEP 3: frequency: «todos los días» (every day), «todas las noches», «cada día», «los lunes», «a veces», «nunca». STEP 4: «temprano» means early, and «tarde» means late (and also means afternoon): «Llego tarde.» STEP 5: don't swap these two words: «biblioteca» is the place where you borrow books; the shop that sells books is the «librería» (a false friend for Portuguese speakers, since «biblioteca» there means library too, but in Spanish the shop is specifically «librería»). STEP 6: «¿A qué hora abre…?» and «¿Hasta qué hora está abierto?» are the key questions for opening hours. STEP 7: business hours vary from city to city and country to country, and some businesses close at midday — check before you go. STEP 8: use «cerrado» (closed) and «abierto» (open) as adjectives: «La biblioteca está abierta». The verb «estar» comes in lesson 10.",
+        "comparacao": "English says «from nine to five» and «Monday through Friday». Spanish uses «de nueve a cinco» and «de lunes a viernes» — structurally almost identical, just with no article before the hours in the first phrase. The one real trap is «librería» vs. «biblioteca»: the shop that sells books is the «librería», and the place that lends them out is the «biblioteca».",
+        "tabela": [
+          {
+            "frase": "[misto] de nueve a cinco",
+            "uso": "[misto] span of hours",
+            "traducao": "[misto] from nine to five"
+          },
+          {
+            "frase": "[misto] de lunes a viernes",
+            "uso": "[misto] span of days",
+            "traducao": "[misto] Monday through Friday"
+          },
+          {
+            "frase": "[misto] Abre a las diez.",
+            "uso": "[misto] when it opens",
+            "traducao": "[misto] It opens at ten."
+          },
+          {
+            "frase": "[misto] Cierra a las ocho.",
+            "uso": "[misto] when it closes",
+            "traducao": "[misto] It closes at eight."
+          },
+          {
+            "frase": "[misto] todos los días",
+            "uso": "[misto] frequency",
+            "traducao": "every day"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] La biblioteca vende libros.",
+            "certo": "[misto] La librería vende libros.",
+            "motivo": "The shop is the «librería»; the «biblioteca» lends books."
+          },
+          {
+            "errado": "[misto] La tienda cierro a las ocho.",
+            "certo": "[misto] La tienda cierra a las ocho.",
+            "motivo": "The verb agrees with the subject: «la tienda» takes the third person, «cierra»."
+          },
+          {
+            "errado": "[misto] La tienda abre desde lunes a viernes.",
+            "certo": "[misto] La tienda abre de lunes a viernes.",
+            "motivo": "Use either «de… a…» or «desde… hasta…», never mixed together."
+          },
+          {
+            "errado": "[misto] Todos días",
+            "certo": "[misto] Todos los días",
+            "motivo": "The article «los» is missing."
+          }
+        ],
+        "tag": "Schedules"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "¿A qué hora abre? / What time does it open?",
+        "contexto": "Carmen calls the library and speaks with a staff member.",
+        "linhas": [
+          {
+            "personagem": "Carmen",
+            "ru": "— Buenos días. ¿A qué hora abre la biblioteca?",
+            "pt": "— Good morning. What time does the library open?",
+            "audio": "Buenos días. ¿A qué hora abre la biblioteca?",
+            "rotulo": "[personagem] Carmen"
+          },
+          {
+            "personagem": "El empleado",
+            "ru": "— Abre a las nueve de la mañana, señora.",
+            "pt": "— It opens at nine in the morning, ma'am.",
+            "audio": "Abre a las nueve de la mañana, señora.",
+            "rotulo": "[personagem] El empleado"
+          },
+          {
+            "personagem": "Carmen",
+            "ru": "— ¿Y hasta qué hora está abierta?",
+            "pt": "— And until what time is it open?",
+            "audio": "¿Y hasta qué hora está abierta?",
+            "rotulo": "[personagem] Carmen"
+          },
+          {
+            "personagem": "El empleado",
+            "ru": "— Cierra a las ocho de la tarde, de lunes a viernes.",
+            "pt": "— It closes at eight at night, Monday through Friday.",
+            "audio": "Cierra a las ocho de la tarde, de lunes a viernes.",
+            "rotulo": "[personagem] El empleado"
+          },
+          {
+            "personagem": "Carmen",
+            "ru": "— ¿Y los sábados?",
+            "pt": "— And on Saturdays?",
+            "audio": "¿Y los sábados?",
+            "rotulo": "[personagem] Carmen"
+          },
+          {
+            "personagem": "El empleado",
+            "ru": "— Los sábados abre de diez a dos. Los domingos está cerrada.",
+            "pt": "— On Saturdays it's open from ten to two. On Sundays it's closed.",
+            "audio": "Los sábados abre de diez a dos. Los domingos está cerrada.",
+            "rotulo": "[personagem] El empleado"
+          },
+          {
+            "personagem": "Carmen",
+            "ru": "— Muchas gracias. Hasta el sábado.",
+            "pt": "— Thank you very much. See you Saturday.",
+            "audio": "Muchas gracias. Hasta el sábado.",
+            "rotulo": "[personagem] Carmen"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe out loud the hours of a shop or your own routine: «Abre… Cierra… Los sábados… Todos los días…» Use three times and two days."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say the seven days and the twelve months in order, with no pause. Then say today's full date."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-009.json",
+  "responsavel": null
+}

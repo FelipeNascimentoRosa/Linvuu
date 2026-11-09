@@ -1,0 +1,249 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 103,
+  "fase": 11,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Comparatives and superlatives: The superlative",
+  "objetivo": "Lesson 26, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 26,
+    "titulo": "Comparatives and superlatives",
+    "objetivo": "Compare people, things, and places with «más… que», «menos… que», «tan… como», and «tanto… como», use the irregular comparatives («mejor, peor, mayor, menor»), form the superlative («el más… de», «-ísimo»), and avoid the «más de» × «más que» mistake.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "The superlative",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "el pueblo",
+            "translit": "[pronuncia] el PWEH-blo",
+            "pt": "the town, the small city",
+            "en": "",
+            "audio": "el pueblo"
+          },
+          {
+            "ru": "la ciudad",
+            "translit": "[pronuncia] la thyoo-DAHD",
+            "pt": "the city",
+            "en": "",
+            "audio": "la ciudad"
+          },
+          {
+            "ru": "el campo",
+            "translit": "[pronuncia] el KAHM-po",
+            "pt": "the countryside",
+            "en": "",
+            "audio": "el campo"
+          },
+          {
+            "ru": "tranquilo, tranquila",
+            "translit": "[pronuncia] trahn-KEE-lo",
+            "pt": "quiet, calm",
+            "en": "",
+            "audio": "tranquilo, tranquila"
+          },
+          {
+            "ru": "ruidoso, ruidosa",
+            "translit": "[pronuncia] rwee-DOH-so",
+            "pt": "noisy",
+            "en": "",
+            "audio": "ruidoso, ruidosa"
+          },
+          {
+            "ru": "largo, larga",
+            "translit": "[pronuncia] LAR-go",
+            "pt": "long (not \"wide\")",
+            "en": "",
+            "audio": "largo, larga"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "The superlative: «el más… de» and «-ísimo»",
+        "explicacao": "STEP 1: to say something is the maximum within a group, put the article before «más» or «menos»: «Madrid es la ciudad más grande de España.» The structure is «el, la, los, las» + (noun) + «más» + adjective + «de» + the group. STEP 2: after the group, use «de», never \"in\": «el más alto de la clase», «la más cara de la tienda». STEP 3: with «mejor» and «peor», the article comes right before them: «el mejor restaurante de la ciudad», «la peor idea del día». STEP 4: without a group, the article changes the meaning: «Es más caro» (comparison) versus «Es el más caro» (superlative). STEP 5: the other superlative is the absolute one: saying a quality is very intense. You form it with «muy» + adjective («muy caro») or with the ending «-ísimo, -ísima»: «carísimo», «riquísimo», «facilísimo». Drop the final vowel of the adjective and add «-ísimo»: «caro → carísimo», «grande → grandísimo». English has no suffix of its own for this absolute superlative — it just stacks on \"very\" or \"extremely\" — so «-ísimo» is a genuinely new tool, not a translation of anything you already do with adjectives. STEP 6: small spelling changes keep the sound the same: «rico → riquísimo» (c becomes qu), «largo → larguísimo» (g becomes gu), «feliz → felicísimo» (z becomes c). STEP 7: false friend: «largo» means long, not \"large\" — despite looking exactly like the English word. The opposite of «estrecho» (narrow) is «ancho» (wide): «una calle ancha», «un río largo».",
+        "comparacao": "The relative superlative lines up closely with English: \"the most expensive city in Spain\" is «la ciudad más caro de España», just swapping \"in\" for «de». The absolute superlative is where English has nothing to offer: there's no English suffix that does what «-ísimo» does, so «carísimo» and «facilísimo» are a new pattern to build, not a translation of an existing one. And «largo» is a trap specifically for an English speaker, since it looks exactly like \"large\" but actually means \"long\" — the real word for large/wide is «ancho».",
+        "exemplos": [
+          {
+            "ru": "Es la calle más ruidosa de mi barrio.",
+            "pt": "It's the noisiest street in my neighborhood."
+          },
+          {
+            "ru": "Este es el mejor pueblo de la región.",
+            "pt": "This is the best town in the region."
+          },
+          {
+            "ru": "El examen fue facilísimo.",
+            "pt": "The test was super easy."
+          },
+          {
+            "ru": "Es un río larguísimo.",
+            "pt": "It's an extremely long river."
+          }
+        ],
+        "tabelas": [
+          {
+            "titulo": "The absolute superlative with -ísimo",
+            "linhas": [
+              {
+                "adjetivo": "expensive",
+                "superlativo": "[misto] carísimo",
+                "observacao": "[misto] drop the -o"
+              },
+              {
+                "adjetivo": "[misto] rico",
+                "superlativo": "[misto] riquísimo",
+                "observacao": "[misto] c becomes qu"
+              },
+              {
+                "adjetivo": "[misto] largo",
+                "superlativo": "[misto] larguísimo",
+                "observacao": "[misto] g becomes gu"
+              },
+              {
+                "adjetivo": "[misto] feliz",
+                "superlativo": "[misto] felicísimo",
+                "observacao": "[misto] z becomes c"
+              },
+              {
+                "adjetivo": "easy",
+                "superlativo": "[misto] facilísimo",
+                "observacao": "[misto] adds -ísimo"
+              }
+            ]
+          },
+          {
+            "titulo": "False friends",
+            "linhas": [
+              {
+                "palavra": "[misto] largo",
+                "significa": "[misto] long",
+                "exemplo": "[misto] Es un camino muy largo."
+              },
+              {
+                "palavra": "[misto] wide",
+                "significa": "[misto] long (not wide)",
+                "exemplo": "[misto] Es una calle ancha."
+              },
+              {
+                "palavra": "[misto] estrecho",
+                "significa": "[misto] narrow",
+                "exemplo": "[misto] La puerta es estrecha."
+              }
+            ]
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] Es la ciudad más grande en España.",
+            "certo": "[misto] Es la ciudad más grande de España.",
+            "motivo": "After the group, Spanish uses «de»."
+          },
+          {
+            "errado": "[misto] Es el más mejor.",
+            "certo": "[misto] Es el mejor.",
+            "motivo": "«Mejor» is already a comparative: it never takes «más»."
+          },
+          {
+            "errado": "[misto] Es una calle larga. (meaning to say wide)",
+            "certo": "[misto] Es una calle ancha.",
+            "motivo": "«Largo» means long; for width, use «ancho»."
+          },
+          {
+            "errado": "[misto] Es ricísimo.",
+            "certo": "[misto] Es riquísimo.",
+            "motivo": "To keep the \"k\" sound, «c» becomes «qu»."
+          }
+        ],
+        "tag": "Comparatives"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "Dos viajes / Two trips",
+        "contexto": "Lucía and Diego decide how to travel to Seville and compare their options.",
+        "linhas": [
+          {
+            "personagem": "Lucía",
+            "ru": "— Diego, ¿cómo viajamos a Sevilla, en tren o en autobús?",
+            "pt": "— Diego, how should we get to Seville, by train or by bus?",
+            "audio": "Diego, ¿cómo viajamos a Sevilla, en tren o en autobús?",
+            "rotulo": "[personagem] Lucía"
+          },
+          {
+            "personagem": "Diego",
+            "ru": "— El tren es más rápido que el autobús, pero también es más caro.",
+            "pt": "— The train is faster than the bus, but it's also more expensive.",
+            "audio": "El tren es más rápido que el autobús, pero también es más caro.",
+            "rotulo": "[personagem] Diego"
+          },
+          {
+            "personagem": "Lucía",
+            "ru": "— ¿Cuánto es la diferencia?",
+            "pt": "— What's the price difference?",
+            "audio": "¿Cuánto es la diferencia?",
+            "rotulo": "[personagem] Lucía"
+          },
+          {
+            "personagem": "Diego",
+            "ru": "— Más de veinte euros por persona.",
+            "pt": "— More than twenty euros per person.",
+            "audio": "Más de veinte euros por persona.",
+            "rotulo": "[personagem] Diego"
+          },
+          {
+            "personagem": "Lucía",
+            "ru": "— Entonces el autobús es la opción más barata.",
+            "pt": "— Then the bus is the cheaper option.",
+            "audio": "Entonces el autobús es la opción más barata.",
+            "rotulo": "[personagem] Lucía"
+          },
+          {
+            "personagem": "Diego",
+            "ru": "— Sí, pero es menos cómodo y el viaje es mucho más largo.",
+            "pt": "— Yes, but it's less comfortable and the trip takes a lot longer.",
+            "audio": "Sí, pero es menos cómodo y el viaje es mucho más largo.",
+            "rotulo": "[personagem] Diego"
+          },
+          {
+            "personagem": "Lucía",
+            "ru": "— Tengo tanto tiempo como tú, pero no tanto dinero.",
+            "pt": "— I have as much time as you, but not as much money.",
+            "audio": "Tengo tanto tiempo como tú, pero no tanto dinero.",
+            "rotulo": "[personagem] Lucía"
+          },
+          {
+            "personagem": "Diego",
+            "ru": "— Vale, vamos en autobús. Es la mejor opción para nosotros.",
+            "pt": "— All right, let's take the bus. It's the best option for us.",
+            "audio": "Vale, vamos en autobús. Es la mejor opción para nosotros.",
+            "rotulo": "[personagem] Diego"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Invent a superlative for each place you know: «la calle más… de mi barrio», «el mejor restaurante de…», «el día más… de la semana». Say three sentences and one with «-ísimo»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say the difference between «más grande» and «mayor». Make one sentence with «mejor» and another with «peor»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-026.json",
+  "responsavel": null
+}

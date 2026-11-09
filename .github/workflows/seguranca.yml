@@ -20,8 +20,13 @@ jobs:
       - name: Instalar e rodar o gitleaks (binário oficial, sem action de terceiros)
         run: |
           V=8.21.2
-          curl -sSfL "https://github.com/gitleaks/gitleaks/releases/download/v${V}/gitleaks_${V}_linux_x64.tar.gz" | tar -xz gitleaks
-          ./gitleaks detect --source . --redact --verbose --exit-code 1
+          # O download de releases do GitHub às vezes responde 504. Plano B: a imagem oficial do gitleaks no ghcr.io, mesma versão.
+          if curl -sSfL --retry 5 --retry-all-errors --retry-delay 10 -o gl.tgz "https://github.com/gitleaks/gitleaks/releases/download/v${V}/gitleaks_${V}_linux_x64.tar.gz" && tar -xzf gl.tgz gitleaks; then
+            ./gitleaks detect --source . --redact --verbose --exit-code 1
+          else
+            echo "Release indisponível; usando ghcr.io/gitleaks/gitleaks:v${V}"
+            docker run --rm -v "$PWD:/repo" -w /repo "ghcr.io/gitleaks/gitleaks:v${V}" detect --source /repo --redact --verbose --exit-code 1
+          fi
   dependencias:
     name: Auditoria completa de dependências
     runs-on: ubuntu-latest

@@ -110,14 +110,14 @@ export function Header() {
       <label>{x.leitura}<select id="app-leitura" value={escala} onChange={e => setEscala(e.target.value)}><option value="1">{x.normal}</option><option value="1.25">{x.ampliado}</option><option value="1.5">{x.grande}</option></select></label>
       <button type="button" className="app-ajustes-fechar" onClick={fecharPainel}>{x.fechar}</button>
       <p>{a.avisoIdiomas}</p>
-      <Link to="/conta">{{'pt-BR':'Sua conta',en:'Your account',es:'Tu cuenta'}[LOCALE.codigo]}</Link>
-      <Link to="/conta#excluir-conta">{{'pt-BR':'Excluir conta e dados',en:'Delete account and data',es:'Eliminar cuenta y datos'}[LOCALE.codigo]}</Link>
+      <Link to="/conta">{{'pt-BR':'Sua conta',en:'Your account'}[LOCALE.codigo]}</Link>
+      <Link to="/conta#excluir-conta">{{'pt-BR':'Excluir conta e dados',en:'Delete account and data'}[LOCALE.codigo]}</Link>
       <Link to="/privacidade">{t.rodape.privacidade}</Link>
       <Link to="/termos">{t.assinatura.termos}</Link>
       {usuario ? <button type="button" disabled={saindo} onClick={deslogar}>{saindo ? t.geral.carregando : t.nav.sair}</button> : <Link to="/entrar">{t.nav.entrar}</Link>}
       {erro && <p role="alert">{a.erroSair}</p>}
     </section>}
-    {falhaArmazenamento&&<p className="app-rede" role="alert">{{'pt-BR':'Não foi possível confirmar a recuperação ou a cópia de segurança do progresso neste aparelho.',en:'Could not confirm progress recovery or its backup on this device.',es:'No se pudo confirmar la recuperación o la copia de seguridad del progreso en este dispositivo.'}[LOCALE.codigo]} <button type="button" className="btn btn-ghost" disabled={recuperando} onClick={()=>{setRecuperando(true);void sincronizarArmazenamento().finally(()=>setRecuperando(false));}}>{recuperando?t.geral.carregando:a.tentarNovamente}</button></p>}
+    {falhaArmazenamento&&<p className="app-rede" role="alert">{{'pt-BR':'Não foi possível confirmar a recuperação ou a cópia de segurança do progresso neste aparelho.',en:'Could not confirm progress recovery or its backup on this device.'}[LOCALE.codigo]} <button type="button" className="btn btn-ghost" disabled={recuperando} onClick={()=>{setRecuperando(true);void sincronizarArmazenamento().finally(()=>setRecuperando(false));}}>{recuperando?t.geral.carregando:a.tentarNovamente}</button></p>}
     {!online && <p className="app-rede" role="status">{a.semRede}</p>}
   </>;
 }

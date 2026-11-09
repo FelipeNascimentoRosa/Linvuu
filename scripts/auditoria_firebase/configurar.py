@@ -11,7 +11,7 @@ SA = "auditoria-github@linvuu.iam.gserviceaccount.com"
 ROLE = "linvuuAuditoriaConfig"
 PRINCIPAL = "principalSet://iam.googleapis.com/projects/982052790317/locations/global/workloadIdentityPools/linvuu-auditoria/attribute.repository_id/1400441159"
 MAPPING = "google.subject=assertion.sub,attribute.repository_id=assertion.repository_id"
-CONDITION = "assertion.repository_id=='1400441159' && assertion.repository_owner_id=='204771338' && assertion.ref=='refs/heads/main' && assertion.workflow_ref=='FelipeVRosa/Linvuu/.github/workflows/auditoria-firebase.yml@refs/heads/main'"
+CONDITION = "assertion.repository_id=='1400441159' && assertion.repository_owner_id=='204771338' && assertion.ref=='refs/heads/main' && assertion.workflow_ref=='FelipeNascimentoRosa/Linvuu/.github/workflows/auditoria-firebase.yml@refs/heads/main'"
 PERMISSIONS = [
     "resourcemanager.projects.get", "resourcemanager.projects.getIamPolicy",
     "firebaserules.releases.get", "firebaserules.releases.list", "firebaserules.rulesets.get",
@@ -90,7 +90,7 @@ def main():
     parser.add_argument("--apply", action="store_true", help="Cria recursos e vínculos IAM descritos no plano")
     args = parser.parse_args()
     if args.apply:
-        raise SystemExit("Instalador OIDC antigo aposentado. Nao aplique ao repositorio publico. Use o instalador atualizado de FelipeVRosa/Linvuu-Auditoria-Firebase.")
+        raise SystemExit("Instalador OIDC antigo aposentado. Nao aplique ao repositorio publico. Use o instalador atualizado de FelipeNascimentoRosa/Linvuu-Auditoria-Firebase.")
     if not args.apply:
         print(json.dumps({"projectId": PROJECT, "projectNumber": NUMBER, "accountRequired": "hello.linvuu@gmail.com",
             "serviceAccount": SA, "pool": POOL, "provider": PROVIDER, "condition": CONDITION,

@@ -11,13 +11,3 @@ updates:
   - package-ecosystem: github-actions
     directory: /
     schedule: { interval: monthly }
-  # Kokoro (voz offline) está PAUSADO: é a alternativa para en/fr/es/it (ver docs/AUDIO-ELEVENLABS.md).
-  # Sem PRs de versão; e torch/transformers ficam fixos até despausar, porque mudam a instalação
-  # (torch sem +cpu baixa CUDA; transformers 5 pode não rodar o Kokoro). Ao despausar: atualizar e testar gerando áudio.
-  - package-ecosystem: pip
-    directory: /scripts/audio
-    schedule: { interval: monthly }
-    open-pull-requests-limit: 0
-    ignore:
-      - dependency-name: torch
-      - dependency-name: transformers

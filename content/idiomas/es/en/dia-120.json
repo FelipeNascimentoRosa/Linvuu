@@ -1,0 +1,503 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 120,
+  "fase": 12,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Estar + gerund, ir a + infinitive and acabar de: Review and practice of lesson 30",
+  "objetivo": "Lesson 30, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 30,
+    "titulo": "Estar + gerund, ir a + infinitive and acabar de",
+    "objetivo": "Talk about what's happening right now with «estar» + gerund, about the near future with «ir a» + infinitive, and about the recent past with «acabar de» + infinitive, form the regular and irregular gerund, and place the pronouns correctly.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 30",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Estoy leyendo un libro",
+            "opcoes": [
+              "[misto] Estoy leyendo un libro",
+              "[misto] Estoy leyendo un libre",
+              "[misto] Estoy viendo un libro"
+            ],
+            "gabarito": "[misto] Estoy leyendo un libro",
+            "explicacao": "Listen for «leyendo»: the gerund of «leer» has a «y».",
+            "id": "es-030-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Voy a cenar dentro de media hora",
+            "opcoes": [
+              "[misto] Voy a cenar dentro de media hora",
+              "[misto] Acabo de cenar dentro de media hora",
+              "[misto] Estoy cenando dentro de media hora"
+            ],
+            "gabarito": "[misto] Voy a cenar dentro de media hora",
+            "explicacao": "Listen for «voy a»: the near future.",
+            "id": "es-030-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Acabo de llegar a casa",
+            "opcoes": [
+              "[misto] Acabo de llegar a casa",
+              "[misto] Voy a llegar a casa",
+              "[misto] Estoy llegando a casa"
+            ],
+            "gabarito": "[misto] Acabo de llegar a casa",
+            "explicacao": "Listen for «acabo de»: the recent past.",
+            "id": "es-030-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Mi padre está durmiendo",
+            "respostaEsperada": "Mi padre está durmiendo",
+            "explicacao": "Write: Mi padre está durmiendo. The gerund of «dormir» is «durmiendo».",
+            "id": "es-030-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Voy a estudiar en la biblioteca",
+            "respostaEsperada": "Voy a estudiar en la biblioteca",
+            "explicacao": "Write: Voy a estudiar en la biblioteca.",
+            "id": "es-030-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Are you having dinner already?»",
+            "opcoes": [
+              "cenando",
+              "¿Estás",
+              "ya?"
+            ],
+            "gabarito": "¿Estás cenando ya?",
+            "explicacao": "Write: ¿Estás cenando ya?",
+            "id": "es-030-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Acabamos de comer",
+            "respostaEsperada": "Acabamos de comer",
+            "explicacao": "Write: Acabamos de comer.",
+            "id": "es-030-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Hola, Pablo. ¿Qué estás haciendo?",
+            "respostaEsperada": "Hola, Pablo. ¿Qué estás haciendo?",
+            "explicacao": "Hi, Pablo. What are you doing?",
+            "id": "es-030-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the gerund of «decir»?",
+            "opcoes": [
+              "[misto] diciendo",
+              "[misto] deciendo",
+              "[misto] dijendo"
+            ],
+            "gabarito": "[misto] diciendo",
+            "explicacao": "The «e» of the stem becomes «i»: diciendo.",
+            "id": "es-030-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the gerund of «leer»?",
+            "opcoes": [
+              "[misto] leyendo",
+              "[misto] leiendo",
+              "[misto] leendo"
+            ],
+            "gabarito": "[misto] leyendo",
+            "explicacao": "Between vowels, the «i» becomes «y».",
+            "id": "es-030-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I'm going to eat»?",
+            "opcoes": [
+              "[misto] Voy a comer.",
+              "[misto] Voy comer.",
+              "[misto] Voy de comer."
+            ],
+            "gabarito": "[misto] Voy a comer.",
+            "explicacao": "The preposition «a» is required.",
+            "id": "es-030-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "¿Estás cenando ya?",
+            "respostaEsperada": "¿Estás cenando ya?",
+            "explicacao": "Are you having dinner already?",
+            "id": "es-030-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I just arrived»?",
+            "opcoes": [
+              "[misto] Acabo de llegar.",
+              "[misto] Acabé de llegar.",
+              "[misto] Voy a llegar."
+            ],
+            "gabarito": "[misto] Acabo de llegar.",
+            "explicacao": "The verb «acabar» stays in the present.",
+            "id": "es-030-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «Mi hermana está embarazada» mean?",
+            "opcoes": [
+              "[misto] My sister is pregnant.",
+              "[misto] My sister is embarrassed.",
+              "[misto] My sister has a cold."
+            ],
+            "gabarito": "[misto] My sister is pregnant.",
+            "explicacao": "«Embarazada» means pregnant; embarrassed is «avergonzada».",
+            "id": "es-030-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which word means \"dinner\"?",
+            "opcoes": [
+              "[misto] la cena",
+              "[misto] la escena",
+              "[misto] el almuerzo"
+            ],
+            "gabarito": "[misto] la cena",
+            "explicacao": "«Escena» is a movie scene.",
+            "id": "es-030-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Estoy cocinando. Acabo de llegar a casa.",
+            "respostaEsperada": "Estoy cocinando. Acabo de llegar a casa.",
+            "explicacao": "I'm cooking. I just got home.",
+            "id": "es-030-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ahora mismo ___ cocinando. (yo, estar)",
+            "opcoes": [
+              "[misto] estoy",
+              "[misto] voy",
+              "[misto] acabo"
+            ],
+            "gabarito": "[misto] estoy",
+            "explicacao": "«Estar» + gerund describes an action in progress.",
+            "id": "es-030-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Not yet. I'm going to have dinner in half an hour. And you?»",
+            "opcoes": [
+              "hora.",
+              "¿Y",
+              "no.",
+              "Voy",
+              "de",
+              "dentro",
+              "cenar",
+              "Todavía",
+              "a",
+              "media",
+              "tú?"
+            ],
+            "gabarito": "Todavía no. Voy a cenar dentro de media hora. ¿Y tú?",
+            "explicacao": "Write: Todavía no. Voy a cenar dentro de media hora. ¿Y tú?",
+            "id": "es-030-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Mañana ___ a viajar. (nosotros, ir)",
+            "opcoes": [
+              "[misto] vamos",
+              "[misto] vais",
+              "[misto] vamos de"
+            ],
+            "gabarito": "[misto] vamos",
+            "explicacao": "«Vamos a» + infinitive: near future.",
+            "id": "es-030-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ella ___ de salir. (acabar, present)",
+            "opcoes": [
+              "[misto] acaba",
+              "[misto] acabó",
+              "[misto] acabará"
+            ],
+            "gabarito": "[misto] acaba",
+            "explicacao": "With «acabar de», the verb stays in the present.",
+            "id": "es-030-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Me ___ duchando. (estar)",
+            "opcoes": [
+              "[misto] estoy",
+              "[misto] voy",
+              "[misto] estás"
+            ],
+            "gabarito": "[misto] estoy",
+            "explicacao": "Pronoun + «estar» + gerund.",
+            "id": "es-030-e16"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Estamos mirando la cartelera.»",
+            "opcoes": [
+              "Estamos",
+              "mirando",
+              "la",
+              "cartelera."
+            ],
+            "gabarito": "Estamos mirando la cartelera.",
+            "explicacao": "«Estar» + gerund + object.",
+            "id": "es-030-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Todavía no. Voy a cenar dentro de media hora. ¿Y tú?",
+            "respostaEsperada": "Todavía no. Voy a cenar dentro de media hora. ¿Y tú?",
+            "explicacao": "Not yet. I'm going to have dinner in half an hour. And you?",
+            "id": "es-030-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Vamos a cenar en un bar.»",
+            "opcoes": [
+              "Vamos",
+              "a",
+              "cenar",
+              "en",
+              "un",
+              "bar."
+            ],
+            "gabarito": "Vamos a cenar en un bar.",
+            "explicacao": "«Vamos a» + infinitive.",
+            "id": "es-030-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "¿Qué película vais a ver?",
+            "respostaEsperada": "¿Qué película vais a ver?",
+            "explicacao": "What movie are you two going to see?",
+            "id": "es-030-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I just got home and I'm going to cook now.",
+            "respostaEsperada": "[misto] Acabo de llegar y voy a cocinar ahora.",
+            "id": "es-030-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ella está ___ una carta. (escribir)",
+            "opcoes": [
+              "[misto] escribendo",
+              "[misto] escribiendo",
+              "[misto] escribando"
+            ],
+            "gabarito": "[misto] escribiendo",
+            "explicacao": "Gerund of -ir verbs: «-iendo».",
+            "id": "es-030-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ellos ___ de salir. (acabar)",
+            "opcoes": [
+              "[misto] acaban",
+              "[misto] acabo",
+              "[misto] acaba"
+            ],
+            "gabarito": "[misto] acaban",
+            "explicacao": "«Acabar de» + infinitive; with «ellos», it's «acaban».",
+            "id": "es-030-e21"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «I'm waiting for the bus. I'm going to the movies with Marta.»",
+            "opcoes": [
+              "el",
+              "cine",
+              "Marta.",
+              "ir",
+              "a",
+              "esperando",
+              "Estoy",
+              "con",
+              "autobús.",
+              "Voy",
+              "al"
+            ],
+            "gabarito": "Estoy esperando el autobús. Voy a ir al cine con Marta.",
+            "explicacao": "Write: Estoy esperando el autobús. Voy a ir al cine con Marta.",
+            "id": "es-030-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Mañana nosotros ___ a viajar a Sevilla. (ir)",
+            "opcoes": [
+              "[misto] vais",
+              "[misto] vamos",
+              "[misto] voy"
+            ],
+            "gabarito": "[misto] vamos",
+            "explicacao": "With «nosotros», «ir» becomes «vamos».",
+            "id": "es-030-e22"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Estoy a ___ de salir. (about to)",
+            "opcoes": [
+              "[misto] pronto",
+              "[misto] punto",
+              "[misto] pondo"
+            ],
+            "gabarito": "[misto] punto",
+            "explicacao": "«Estar a punto de» + infinitive means to be about to.",
+            "id": "es-030-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the gerund of «pedir»?",
+            "opcoes": [
+              "[misto] pediendo",
+              "[misto] pidiendo",
+              "[misto] pedindo"
+            ],
+            "gabarito": "[misto] pidiendo",
+            "explicacao": "The stem's «e» becomes «i»: «pidiendo».",
+            "id": "es-030-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "¿Vais a cenar después?",
+            "respostaEsperada": "¿Vais a cenar después?",
+            "explicacao": "Are you two going to have dinner afterward?",
+            "id": "es-030-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence shows the near future?",
+            "opcoes": [
+              "[misto] Voy a cenar.",
+              "[misto] Estoy cenando.",
+              "[misto] Acabo de cenar."
+            ],
+            "gabarito": "[misto] Voy a cenar.",
+            "explicacao": "«Ir a» + infinitive is the near future.",
+            "id": "es-030-e25"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Estoy esperando el autobús. Voy a ir al cine con Marta.",
+            "respostaEsperada": "Estoy esperando el autobús. Voy a ir al cine con Marta.",
+            "explicacao": "I'm waiting for the bus. I'm going to the movies with Marta.",
+            "id": "es-030-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which word means \"movie scene\"?",
+            "opcoes": [
+              "[misto] la cena",
+              "[misto] la escena",
+              "[misto] la cola"
+            ],
+            "gabarito": "[misto] la escena",
+            "explicacao": "«Cena» means dinner; a movie scene is «escena».",
+            "id": "es-030-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Estoy esperando el autobús ahora mismo.»",
+            "opcoes": [
+              "Estoy",
+              "esperando",
+              "el",
+              "autobús",
+              "ahora",
+              "mismo."
+            ],
+            "gabarito": "Estoy esperando el autobús ahora mismo.",
+            "explicacao": "«Estar» + gerund shows an action in progress.",
+            "id": "es-030-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Acabamos de llegar a casa.»",
+            "opcoes": [
+              "Acabamos",
+              "de",
+              "llegar",
+              "a",
+              "casa."
+            ],
+            "gabarito": "Acabamos de llegar a casa.",
+            "explicacao": "«Acabar de» + infinitive shows the recent past.",
+            "id": "es-030-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: We're looking at the movie listings.",
+            "respostaEsperada": "[misto] Estamos mirando la cartelera.",
+            "id": "es-030-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I just ate and I'm going to study.",
+            "respostaEsperada": "[misto] Acabo de comer y voy a estudiar.",
+            "id": "es-030-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say out loud three things you just did, three things you're doing, and three things you're going to do."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Describe a street scene with «estar» + gerund, say three plans with «ir a», and two things you just did."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-030.json",
+  "responsavel": null
+}

@@ -1,0 +1,156 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 86,
+  "fase": 9,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Indefinido × imperfecto: Same verb, different meaning",
+  "objetivo": "Lesson 22, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 22,
+    "titulo": "Indefinido × imperfecto",
+    "objetivo": "Choose between the pretérito indefinido and the imperfecto when telling a story: the imperfecto sets the scene, the indefinido moves the story forward, and the same verb can shift meaning (sabía × supe, conocía × conocí, quería × quise). Learn «había» and «hubo», and the difference between «salir de» and «irse».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Same verb, different meaning",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "había",
+            "translit": "[pronuncia] ah-BEE-ah",
+            "pt": "there was, there were (existence in the past)",
+            "en": "",
+            "audio": "había"
+          },
+          {
+            "ru": "hubo",
+            "translit": "[pronuncia] OO-bo",
+            "pt": "there was, there were (a specific event)",
+            "en": "",
+            "audio": "hubo"
+          },
+          {
+            "ru": "irse",
+            "translit": "[pronuncia] EER-seh",
+            "pt": "to leave, to go away",
+            "en": "",
+            "audio": "irse"
+          },
+          {
+            "ru": "salir de",
+            "translit": "[pronuncia] sah-LEER deh",
+            "pt": "to leave (a place)",
+            "en": "",
+            "audio": "salir de"
+          },
+          {
+            "ru": "conocer",
+            "translit": "[pronuncia] ko-no-THER",
+            "pt": "to meet, to know",
+            "en": "",
+            "audio": "conocer"
+          },
+          {
+            "ru": "el accidente",
+            "translit": "[pronuncia] el ak-thee-DEN-teh",
+            "pt": "the accident",
+            "en": "",
+            "audio": "el accidente"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Sabía × supe, había × hubo, and salir × irse",
+        "explicacao": "STEP 1: four verbs shift meaning depending on which past tense they're in. «Sabía» means «I already knew»; «supe» means «I found out (at that moment)». «Conocía a Ana» means «I already knew Ana»; «conocí a Ana» means «I met Ana for the first time». STEP 2: «quería salir» means «I wanted to leave», with no word on whether I actually did; «quise salir» means «I tried to leave», and «no quise salir» means «I refused to leave». STEP 3: «podía salir» means «I had the option of leaving»; «pude salir» means «I managed to leave», and «no pude salir» means «I wasn't able to leave». STEP 4: «había» is the imperfecto of «hay» and sets the scene: «Había mucha gente en la plaza» (there were a lot of people in the square). STEP 5: «hubo» is the indefinido of «hay» and reports a specific event: «Hubo un accidente en la plaza» (there was an accident in the square). Both are invariable: «había dos personas», «hubo dos accidentes» — never «habían» or «hubieron». STEP 6: judging a whole, finished event calls for the indefinido: «La fiesta fue genial» (the party was great). Describing how the party was at a given moment calls for the imperfecto: «La fiesta era genial, pero yo estaba cansado» (the party was great, but I was tired). STEP 7: a closed period, even a long one, calls for the indefinido: «Viví tres años en Lima» (I lived in Lima for three years); with no stated limit, the imperfecto: «Vivía en Lima» (I used to live in Lima). STEP 8: «salir de» means to leave a place («Salí del trabajo a las seis»); «irse» means to go away, to take off («Se fue a las seis»); «salir con alguien» means to go out with someone, in the sense of dating («Salió con Marta»).",
+        "comparacao": "English has exactly this same split in meaning for «knew/found out» and «could/managed to», so the underlying logic isn't new — «I knew» versus «I found out», «I could leave» versus «I managed to leave» are real, distinct ideas in English too, just expressed with different words rather than a tense swap on the same verb. What's new is «había» versus «hubo»: English «there was» covers both the backdrop sense (there were a lot of people) and the single-event sense (there was an accident) with the exact same words, so nothing in English flags that Spanish treats these as two different grammatical choices.",
+        "exemplos": [
+          {
+            "ru": "Ya sabía la noticia, pero ayer supe los detalles.",
+            "pt": "I already knew the news, but yesterday I found out the details."
+          },
+          {
+            "ru": "Había mucha gente y de repente hubo un accidente.",
+            "pt": "There were a lot of people, and suddenly there was an accident."
+          },
+          {
+            "ru": "Quería ir, pero no pude.",
+            "pt": "I wanted to go, but I couldn't manage it."
+          }
+        ],
+        "tabela": [
+          {
+            "verbo": "[misto] saber",
+            "imperfecto": "[misto] sabía = already knew",
+            "indefinido": "[misto] supe = found out"
+          },
+          {
+            "verbo": "[misto] conocer",
+            "imperfecto": "[misto] conocía = already knew (a person/place)",
+            "indefinido": "[misto] conocí = met for the first time"
+          },
+          {
+            "verbo": "[misto] querer",
+            "imperfecto": "[misto] quería = wanted to",
+            "indefinido": "[misto] quise / no quise = tried to / refused to"
+          },
+          {
+            "verbo": "[misto] poder",
+            "imperfecto": "[misto] podía = had the option to",
+            "indefinido": "[misto] pude / no pude = managed to / wasn't able to"
+          },
+          {
+            "verbo": "[misto] haber (hay)",
+            "imperfecto": "[misto] había = there was/were (setting)",
+            "indefinido": "[misto] hubo = there was/were (a specific event)"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] Habían muchas personas en la plaza.",
+            "certo": "[misto] Había muchas personas en la plaza.",
+            "motivo": "«Haber» as existence is impersonal: «había» never changes."
+          },
+          {
+            "errado": "[misto] Hubieron dos accidentes.",
+            "certo": "[misto] Hubo dos accidentes.",
+            "motivo": "The same goes for «hubo»: it's invariable."
+          },
+          {
+            "errado": "[misto] Ayer sabía la noticia. (meaning: I found out)",
+            "certo": "[misto] Ayer supe la noticia.",
+            "motivo": "For finding out a fact, use the indefinido."
+          },
+          {
+            "errado": "[misto] Salí de el trabajo a las seis.",
+            "certo": "[misto] Salí del trabajo a las seis.",
+            "motivo": "The preposition «de» plus the article «el» contracts to «del»."
+          }
+        ],
+        "tag": "Indefinido × imperfecto"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Narrate out loud, in at least eight sentences, an unexpected event. Start with the setting in the imperfecto («Eran las… Había…») and continue with what happened in the indefinido («De repente… Hubo… Pude… Supe…»)."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Make two sentences with «cuando»: one ongoing action in the imperfecto, and another that interrupts it in the indefinido."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-022.json",
+  "responsavel": null
+}

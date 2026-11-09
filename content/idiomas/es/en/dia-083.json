@@ -1,0 +1,159 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 83,
+  "fase": 9,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Pretérito imperfecto: Descriptions, simultaneous actions and false friends",
+  "objetivo": "Lesson 21, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 21,
+    "titulo": "Pretérito imperfecto",
+    "objetivo": "Form the pretérito imperfecto of -ar, -er and -ir verbs and the three irregulars (ser, ir, ver), and use it for past habits, descriptions, age, time, and weather, while avoiding three false friends: «exquisito», «embarazada», and «raro».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Descriptions, simultaneous actions and false friends",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "mientras",
+            "translit": "[pronuncia] MYEN-tras",
+            "pt": "while",
+            "en": "",
+            "audio": "mientras"
+          },
+          {
+            "ru": "exquisito",
+            "translit": "[pronuncia] eks-kee-SEE-to",
+            "pt": "delicious, refined",
+            "en": "",
+            "audio": "exquisito"
+          },
+          {
+            "ru": "raro",
+            "translit": "[pronuncia] RAH-ro",
+            "pt": "odd, strange",
+            "en": "",
+            "audio": "raro"
+          },
+          {
+            "ru": "embarazada",
+            "translit": "[pronuncia] em-bah-rah-THAH-dah",
+            "pt": "pregnant",
+            "en": "",
+            "audio": "embarazada"
+          },
+          {
+            "ru": "antiguo",
+            "translit": "[pronuncia] an-TEE-gwo",
+            "pt": "old, historic",
+            "en": "",
+            "audio": "antiguo"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Mientras and three false friends",
+        "explicacao": "STEP 1: «mientras» connects two actions that were happening at the same time; the verb goes in the imperfecto on both sides: «Mientras yo cocinaba, mi padre leía» (while I was cooking, my father was reading). STEP 2: «exquisito» doesn't mean «exquisite» in the narrow English sense of finely crafted — it just means delicious, really good, or refined: «La comida era exquisita». To say something's odd or strange, use «raro» or «extraño»: «Es un hombre muy raro». STEP 3: «embarazada» doesn't mean «embarrassed» — it means pregnant: «Mi hermana estaba embarazada». To say «embarrassed», use «avergonzado» or «cortado»: «Estaba muy avergonzada». STEP 4: «antiguo» means old in the sense of historic or long-standing; «viejo» means old in the sense of worn or aged. «Una casa antigua» isn't necessarily run-down. STEP 5: the imperfecto also shows up with time and age, as in the previous section: «Eran las cinco y ya era de noche» (it was five and already dark).",
+        "comparacao": "Two of these false friends are genuine traps for an English speaker, just from a different direction than for a Portuguese one: «exquisito» looks like English «exquisite» and does share some of its meaning (refined, very good), but it's used far more broadly in Spanish for anything delicious, which can feel like overkill applied to, say, a sandwich. «Embarazada» looks nothing like English «embarrassed» on the page, so an English speaker is less likely to fall into that one by resemblance — but it's worth knowing precisely because the two words can otherwise seem like they should be related. «Raro» maps cleanly onto English «rare» in spelling but means «odd/strange» far more often than «uncommon» in everyday Spanish.",
+        "tabela": [
+          {
+            "palavra": "[misto] exquisito",
+            "significado": "delicious, refined",
+            "exemplo": "[misto] La tarta era exquisita."
+          },
+          {
+            "palavra": "[misto] raro, extraño",
+            "significado": "odd, strange",
+            "exemplo": "[misto] Era un ruido muy raro."
+          },
+          {
+            "palavra": "[misto] embarazada",
+            "significado": "pregnant",
+            "exemplo": "[misto] Mi prima estaba embarazada."
+          },
+          {
+            "palavra": "[misto] avergonzado, cortado",
+            "significado": "[misto] embarrassed",
+            "exemplo": "[misto] Estaba avergonzado."
+          },
+          {
+            "palavra": "[misto] antiguo / viejo",
+            "significado": "[misto] old, historic / old, worn",
+            "exemplo": "[misto] Era una casa antigua."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] La sopa era esquisita. (meaning delicious)",
+            "certo": "[misto] La sopa era exquisita.",
+            "motivo": "«Exquisito» means delicious; «esquisito» isn't a Spanish word."
+          },
+          {
+            "errado": "[misto] Mi amiga estaba embarazada de vergüenza.",
+            "certo": "[misto] Mi amiga estaba avergonzada.",
+            "motivo": "«Embarazada» means pregnant; «embarrassed» is «avergonzada» or «cortada»."
+          },
+          {
+            "errado": "[misto] Era un ruido exquisito.",
+            "certo": "[misto] Era un ruido raro.",
+            "motivo": "For something odd, use «raro» or «extraño»."
+          }
+        ],
+        "tag": "Pretérito imperfecto"
+      },
+      {
+        "tipo": "texto",
+        "min": 8,
+        "titulo": "Los veranos en el pueblo / Summers in the village",
+        "ru": "Cuando yo era niña, pasaba todos los veranos en el pueblo de mis abuelos. La casa era antigua y tenía un patio con una higuera. Por las mañanas mi abuela cocinaba y mi abuelo leía el periódico. Mis primos y yo jugábamos en la calle hasta la hora de comer. La comida de mi abuela era exquisita. Por la noche hacía fresco y nos sentábamos en el patio mientras mi abuelo contaba historias.",
+        "pt": "When I was a child, I used to spend every summer in my grandparents' village. The house was old and had a courtyard with a fig tree. In the morning my grandmother used to cook and my grandfather would read the newspaper. My cousins and I used to play in the street until it was time to eat. My grandmother's food was delicious. In the evening it would turn cool and we'd sit in the courtyard while my grandfather told stories.",
+        "perguntas": [
+          {
+            "pergunta": "[misto] ¿Dónde pasaba los veranos la narradora?",
+            "resposta": "[misto] En el pueblo de sus abuelos."
+          },
+          {
+            "pergunta": "[misto] ¿Cómo era la casa?",
+            "resposta": "[misto] Antigua, con un patio con una higuera."
+          },
+          {
+            "pergunta": "[misto] ¿Qué hacía el abuelo por las mañanas?",
+            "resposta": "[misto] Leía el periódico."
+          },
+          {
+            "pergunta": "[misto] ¿Dónde jugaban los primos?",
+            "resposta": "[misto] En la calle."
+          },
+          {
+            "pergunta": "[misto] ¿Cómo era la comida de la abuela?",
+            "resposta": "[misto] Exquisita."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Write five sentences about a place from your childhood, using «era», «tenía», «estaba», «mientras», and a comparison with what it's like today."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Conjugate «ser», «ir», and «ver» in the imperfecto. Say one sentence with «tenía… años» and another with «eran las…»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-021.json",
+  "responsavel": null
+}

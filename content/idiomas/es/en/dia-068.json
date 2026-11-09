@@ -1,0 +1,498 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 68,
+  "fase": 7,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Pretérito perfecto: saying what you did today: Review and practice of lesson 17",
+  "objetivo": "Lesson 17, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 17,
+    "titulo": "Pretérito perfecto: saying what you did today",
+    "objetivo": "Form the pretérito perfecto with haber + past participle (regular and irregular), use it with hoy, esta mañana, esta semana, ya, todavía no, alguna vez and nunca, and see where it overlaps with — and differs from — the English present perfect.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 17",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "He comido en casa",
+            "opcoes": [
+              "[misto] He comido en casa",
+              "[misto] Ha comido en casa",
+              "[misto] Hemos comido en casa"
+            ],
+            "gabarito": "[misto] He comido en casa",
+            "explicacao": "Listen for the «he» at the start: first person.",
+            "id": "es-017-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Todavía no he visto la película",
+            "opcoes": [
+              "[misto] Todavía no he visto la película",
+              "[misto] Todavía no he hecho la película",
+              "[misto] Ya he visto la película"
+            ],
+            "gabarito": "[misto] Todavía no he visto la película",
+            "explicacao": "Listen for «todavía no» and the participle «visto».",
+            "id": "es-017-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "¿Has estado alguna vez en España?",
+            "opcoes": [
+              "[misto] ¿Has estado alguna vez en España?",
+              "[misto] ¿Ha estado alguna vez en España?",
+              "[misto] ¿Habéis estado alguna vez en España?"
+            ],
+            "gabarito": "[misto] ¿Has estado alguna vez en España?",
+            "explicacao": "Listen for «has» and the question with «alguna vez».",
+            "id": "es-017-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Hoy he trabajado mucho",
+            "respostaEsperada": "Hoy he trabajado mucho",
+            "explicacao": "Write: Hoy he trabajado mucho.",
+            "id": "es-017-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Hemos escrito un correo",
+            "respostaEsperada": "Hemos escrito un correo",
+            "explicacao": "Write: Hemos escrito un correo. The participle of «escribir» is «escrito».",
+            "id": "es-017-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «I have. Have you ever been to the mountains?»",
+            "opcoes": [
+              "sí.",
+              "en",
+              "alguna",
+              "¿Has",
+              "Yo",
+              "sierra?",
+              "estado",
+              "la",
+              "vez"
+            ],
+            "gabarito": "Yo sí. ¿Has estado alguna vez en la sierra?",
+            "explicacao": "Write: Yo sí. ¿Has estado alguna vez en la sierra?",
+            "id": "es-017-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Nunca he estado en Madrid",
+            "respostaEsperada": "Nunca he estado en Madrid",
+            "explicacao": "Write: Nunca he estado en Madrid.",
+            "id": "es-017-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Hola, Elena. ¿Qué has hecho hoy?",
+            "respostaEsperada": "Hola, Elena. ¿Qué has hecho hoy?",
+            "explicacao": "Hi, Elena. What have you done today?",
+            "id": "es-017-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «yo» form of the pretérito perfecto of «hablar»?",
+            "opcoes": [
+              "[misto] he hablado",
+              "[misto] tengo hablado",
+              "[misto] ha hablado"
+            ],
+            "gabarito": "[misto] he hablado",
+            "explicacao": "Haber (he) + participle (hablado).",
+            "id": "es-017-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the participle of «hacer»?",
+            "opcoes": [
+              "[misto] hecho",
+              "[misto] hacido",
+              "[misto] haciendo"
+            ],
+            "gabarito": "[misto] hecho",
+            "explicacao": "Irregular participle: «hecho».",
+            "id": "es-017-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the participle of «escribir»?",
+            "opcoes": [
+              "[misto] escrito",
+              "[misto] escribido",
+              "[misto] escribiendo"
+            ],
+            "gabarito": "[misto] escrito",
+            "explicacao": "Irregular participle: «escrito».",
+            "id": "es-017-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Yo sí. ¿Has estado alguna vez en la sierra?",
+            "respostaEsperada": "Yo sí. ¿Has estado alguna vez en la sierra?",
+            "explicacao": "I have. Have you ever been to the mountains?",
+            "id": "es-017-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the participle of «leer»?",
+            "opcoes": [
+              "[misto] leído",
+              "[misto] leido",
+              "[misto] lecho"
+            ],
+            "gabarito": "[misto] leído",
+            "explicacao": "It carries an accent on the «í».",
+            "id": "es-017-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "[misto] Ya he comido.",
+              "[misto] He ya comido.",
+              "[misto] Tengo comido."
+            ],
+            "gabarito": "[misto] Ya he comido.",
+            "explicacao": "«Ya» goes before «he»; «tengo comido» isn't the compound tense.",
+            "id": "es-017-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I watched a movie»?",
+            "opcoes": [
+              "[misto] He visto una película.",
+              "[misto] He asistido una película.",
+              "[misto] He mirado a una película."
+            ],
+            "gabarito": "[misto] He visto una película.",
+            "explicacao": "A movie is «watched» with «ver»; «asistir a» means to attend an event.",
+            "id": "es-017-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "¿Has comido ya?",
+            "respostaEsperada": "¿Has comido ya?",
+            "explicacao": "Have you eaten yet?",
+            "id": "es-017-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Hoy ___ trabajado mucho. (yo)",
+            "opcoes": [
+              "[misto] he",
+              "[misto] ha",
+              "[misto] hemos"
+            ],
+            "gabarito": "[misto] he",
+            "explicacao": "With «yo», the form of «haber» is «he».",
+            "id": "es-017-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Deal, agreed.»",
+            "opcoes": [
+              "de",
+              "Vale,",
+              "acuerdo."
+            ],
+            "gabarito": "Vale, de acuerdo.",
+            "explicacao": "Write: Vale, de acuerdo.",
+            "id": "es-017-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ella ___ vuelto tarde. (haber)",
+            "opcoes": [
+              "[misto] ha",
+              "[misto] han",
+              "[misto] has"
+            ],
+            "gabarito": "[misto] ha",
+            "explicacao": "With «ella», the form is «ha».",
+            "id": "es-017-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Nosotros ___ visto una serie. (haber)",
+            "opcoes": [
+              "[misto] hemos",
+              "[misto] habéis",
+              "[misto] han"
+            ],
+            "gabarito": "[misto] hemos",
+            "explicacao": "With «nosotros», the form is «hemos».",
+            "id": "es-017-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Todavía no he ___ la película. (ver)",
+            "opcoes": [
+              "[misto] visto",
+              "[misto] visado",
+              "[misto] ver"
+            ],
+            "gabarito": "[misto] visto",
+            "explicacao": "Irregular participle: «visto».",
+            "id": "es-017-e16"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "¿Has estado ___ vez en Madrid?",
+            "opcoes": [
+              "[misto] alguna",
+              "[misto] algún",
+              "[misto] nada"
+            ],
+            "gabarito": "[misto] alguna",
+            "explicacao": "«Alguna vez» is the fixed phrase.",
+            "id": "es-017-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Vale, de acuerdo.",
+            "respostaEsperada": "Vale, de acuerdo.",
+            "explicacao": "Deal, agreed.",
+            "id": "es-017-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Hoy me he levantado muy pronto.»",
+            "opcoes": [
+              "Hoy",
+              "me",
+              "he",
+              "levantado",
+              "muy",
+              "pronto."
+            ],
+            "gabarito": "Hoy me he levantado muy pronto.",
+            "explicacao": "The pronoun comes before «he».",
+            "id": "es-017-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Sí, he estado dos veces. Me encanta. ¿Y tú?",
+            "respostaEsperada": "Sí, he estado dos veces. Me encanta. ¿Y tú?",
+            "explicacao": "Yes, I've been twice. I love it. What about you?",
+            "id": "es-017-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «¿Qué has hecho esta mañana?»",
+            "opcoes": [
+              "¿Qué",
+              "has",
+              "hecho",
+              "esta",
+              "mañana?"
+            ],
+            "gabarito": "¿Qué has hecho esta mañana?",
+            "explicacao": "The question word opens the sentence.",
+            "id": "es-017-e19"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: Today I worked and went to the market, but I haven't eaten yet.",
+            "respostaEsperada": "[misto] Hoy he trabajado y he ido al mercado, pero todavía no he comido.",
+            "id": "es-017-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Hoy nosotros ___ comido en casa.",
+            "opcoes": [
+              "[misto] han",
+              "[misto] hemos",
+              "[misto] he"
+            ],
+            "gabarito": "[misto] hemos",
+            "explicacao": "With «nosotros», the auxiliary is «hemos».",
+            "id": "es-017-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «puesto» mean?",
+            "audio": "puesto",
+            "opcoes": [
+              "opened (from abrir)",
+              "written (from escribir)",
+              "put, set (from poner)",
+              "done (from hacer)"
+            ],
+            "gabarito": "put, set (from poner)",
+            "explicacao": "«puesto» = put, set (from poner).",
+            "id": "es-017-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Todavía no he ___ el correo. (escribir)",
+            "opcoes": [
+              "[misto] escribido",
+              "[misto] escrito",
+              "[misto] escribo"
+            ],
+            "gabarito": "[misto] escrito",
+            "explicacao": "«Escribir» has an irregular participle: «escrito».",
+            "id": "es-017-e22"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ya hemos ___ la puerta. (abrir)",
+            "opcoes": [
+              "[misto] abierto",
+              "[misto] abrido",
+              "[misto] abrimos"
+            ],
+            "gabarito": "[misto] abierto",
+            "explicacao": "«Abrir» has an irregular participle: «abierto».",
+            "id": "es-017-e23"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Yo nunca ___ estado en Lima.",
+            "opcoes": [
+              "[misto] ha",
+              "[misto] he",
+              "[misto] hay"
+            ],
+            "gabarito": "[misto] he",
+            "explicacao": "With «yo», the auxiliary is «he».",
+            "id": "es-017-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Yo nunca he estado. ¿Vamos este fin de semana?",
+            "respostaEsperada": "Yo nunca he estado. ¿Vamos este fin de semana?",
+            "explicacao": "I've never been. Shall we go this weekend?",
+            "id": "es-017-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the participle of «ver»?",
+            "opcoes": [
+              "[misto] vido",
+              "[misto] visto",
+              "[misto] veído"
+            ],
+            "gabarito": "[misto] visto",
+            "explicacao": "«Ver» has an irregular participle: «visto».",
+            "id": "es-017-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «hecho» mean?",
+            "audio": "hecho",
+            "opcoes": [
+              "this year",
+              "never",
+              "done (from hacer)",
+              "written (from escribir)"
+            ],
+            "gabarito": "done (from hacer)",
+            "explicacao": "«hecho» = done (from hacer).",
+            "id": "es-017-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the participle of «poner»?",
+            "opcoes": [
+              "[misto] puesto",
+              "[misto] ponido",
+              "[misto] pusto"
+            ],
+            "gabarito": "[misto] puesto",
+            "explicacao": "«Poner» has an irregular participle: «puesto».",
+            "id": "es-017-e26"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct with a reflexive verb?",
+            "opcoes": [
+              "[misto] He me levantado.",
+              "[misto] Me levanto he.",
+              "[misto] Me he levantado."
+            ],
+            "gabarito": "[misto] Me he levantado.",
+            "explicacao": "The pronoun comes before «haber».",
+            "id": "es-017-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Todavía no he comido.»",
+            "opcoes": [
+              "Todavía",
+              "no",
+              "he",
+              "comido."
+            ],
+            "gabarito": "Todavía no he comido.",
+            "explicacao": "«No» comes before «haber».",
+            "id": "es-017-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I worked a lot today and I haven't eaten yet.",
+            "respostaEsperada": "[misto] Hoy he trabajado mucho y todavía no he comido.",
+            "id": "es-017-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: Have you ever been to Mexico? (informal)",
+            "respostaEsperada": "[misto] ¿Has estado alguna vez en México?",
+            "id": "es-017-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Narrate out loud your day today, from waking up until now, in six sentences using the pretérito perfecto and two markers such as «ya» and «todavía no»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Narrate out loud what you've done today and what you haven't done yet, using at least two irregular participles. Then ask a friend if they've already done the same."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-017.json",
+  "responsavel": null
+}

@@ -2,7 +2,6 @@ import { useDestinoSessao } from '../lib/useDestinoSessao';
 import { Link } from 'react-router-dom';
 import { gruposDoCurso, statusDoCurso, coberturaDoCurso } from '../lib/content';
 import { Navegacao } from '../components/Navegacao';
-import { JsonLd } from '../components/JsonLd';
 import { usePageTitle } from '../lib/usePageTitle';
 import { SITE_URL } from '../config/site';
 import { SESSOES_GRATIS } from '../config/planos';
@@ -13,14 +12,13 @@ export default function CursoBr() {
   const destino = useDestinoSessao();
   const t = useT();
   const c = t.cursoBr;
-  usePageTitle(c.tituloSeo, c.descSeo, ['en', 'es']);
+  usePageTitle(c.tituloSeo, c.descSeo, ['en']);
   const grupos = gruposDoCurso('br');
   const stats = statusDoCurso('br');
   const cob = coberturaDoCurso('br');
   const cobertura = t.cursoPagina.cobertura(cob.traduzidas, cob.total, t.linguas[cob.reserva]);
   return (
     <div className="pagina">
-      <JsonLd dados={{ '@context': 'https://schema.org', '@type': 'Course', name: c.tituloSeo, alternateName: 'Português do Brasil para estrangeiros', description: c.descSeo, inLanguage: LOCALE.codigo, teaches: 'Brazilian Portuguese', provider: { '@type': 'Organization', name: 'Linvuu', url: SITE_URL } }} />
       <Navegacao idioma="br" pai="/portugues" trilha={[{ rotulo: t.geral.inicio, para: '/' }, { rotulo: c.migalha, para: '/portugues' }, { rotulo: t.geral.cursos }]} />
       <header className="curso-topo">
         <div>

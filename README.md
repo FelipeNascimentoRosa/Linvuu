@@ -2,7 +2,26 @@
 
 Plataforma **internacional** de ensino de idiomas (português, inglês e espanhol; ver [docs/DECISAO-SITE-INTERNACIONAL.md](docs/DECISAO-SITE-INTERNACIONAL.md)) com **frontend React + Vite + TypeScript**, servidor **Node.js/Express** e versões web e Android tratadas separadamente. Código no repositório público; site: https://linvuu.com.br.
 
-**O estado verificável fica em [docs/ESTADO-ATUAL.md](docs/ESTADO-ATUAL.md)**. Registros antigos, como `docs/CONTEXTO.md`, não substituem o código, CI e as consultas de produção. Não tratar recursos em rascunho como lançados.
+**O estado verificável fica em [docs/ESTADO-ATUAL.md](docs/ESTADO-ATUAL.md)**. Registros antigos, como `docs/historico/CONTEXTO.md`, não substituem o código, CI e as consultas de produção. Não tratar recursos em rascunho como lançados.
+
+## Onde fica cada coisa (site × app)
+
+Um repositório só, como manda a convenção do Capacitor: o site e o app Android compartilham aulas, livros, idiomas, login e servidor; o que muda é a interface.
+
+| Pasta | O que é | Quem usa |
+|---|---|---|
+| `src/plataforma/website/` | Interface do **site** (linvuu.com.br e linvuu.com) | site |
+| `src/plataforma/apk/` | Interface do **app Android** (primeira abertura, abas, sessões, ajustes) | app |
+| `src/lib/`, `src/i18n/`, `src/config/`, `src/components/` | Código compartilhado: aulas, progresso, login, textos, preços | site e app |
+| `android/` | Casca nativa do app (Gradle, manifesto, ícones). `npm run build:apk` gera `dist-apk/`, que o Capacitor copia para cá | app |
+| `server/`, `server.ts` | Servidor (Render): API, cobrança, áudio privado, avaliações | site e app |
+| `content/` | Aulas, gramática e livros | site e app |
+| `public/` | Arquivos do site (o app leva só imagens e fontes; áudio vem do servidor) | site |
+| `docs/` | Decisões e registros. App: `docs/APP.md`, `docs/COBRANCA-APP.md`, `docs/RELEASE-PLAY-20261024.md`, `docs/APP-PRIMEIRA-ABERTURA-2026-11-08.md` | — |
+
+**Livros (e-books):** os livros A1–A2 da Coleção Linvuu (texto-fonte, diagramação e PDFs) ficam no repositório privado `FelipeNascimentoRosa/linvuu-livros-em-pdf`; o catálogo está no README de lá. Aqui ficam só os capítulos usados pelo site (`content/`).
+
+Gerado e nunca versionado: `dist/`, `dist-apk/`, `android/app/build/`, `android/app/src/main/assets/public/`, `revisao-publica/`.
 
 ## Executar e validar
 
@@ -25,10 +44,10 @@ Mais scripts e versões em [package.json](package.json). Testes da `main` só co
 
 ## Operação comprovada (27/10/2026)
 
-- `main` **3431e440**: [CI](https://github.com/FelipeVRosa/Linvuu/actions/runs/40453761867) e [Segurança](https://github.com/FelipeVRosa/Linvuu/actions/runs/40453762120) aprovadas.
+- `main` **3431e440**: [CI](https://github.com/FelipeNascimentoRosa/Linvuu/actions/runs/40453761867) e [Segurança](https://github.com/FelipeNascimentoRosa/Linvuu/actions/runs/40453762120) aprovadas.
 - Render: deploy de **3431e440** confirmado `live` (serviço `linvuu`), não é aprovação automática de autenticação e pagamentos.
-- GitHub → Google Cloud: [teste OIDC público](https://github.com/FelipeVRosa/Linvuu-Auditoria-Firebase/actions/runs/40460208259) aprovado para **identidade temporária e número do projeto `linvuu`**. A equivalência de `firestore.rules` com as regras publicadas **ainda não está comprovada**.
-- O repositório separado [Linvuu-Auditoria-Firebase](https://github.com/FelipeVRosa/Linvuu-Auditoria-Firebase) está **público**. Seu job de coleta detalhada IAM/Firestore é intencionalmente bloqueado no modo público; não removê-lo para obter logs sensíveis.
+- GitHub → Google Cloud: [teste OIDC público](https://github.com/FelipeNascimentoRosa/Linvuu-Auditoria-Firebase/actions/runs/40460208259) aprovado para **identidade temporária e número do projeto `linvuu`**. A equivalência de `firestore.rules` com as regras publicadas **ainda não está comprovada**.
+- O repositório separado [Linvuu-Auditoria-Firebase](https://github.com/FelipeNascimentoRosa/Linvuu-Auditoria-Firebase) está **público**. Seu job de coleta detalhada IAM/Firestore é intencionalmente bloqueado no modo público; não removê-lo para obter logs sensíveis.
 - Livros futuros, novos níveis e gamificação permanecem fora do deploy atual (PRs em rascunho #360 e #367).
 
 ## Arquivos e instruções

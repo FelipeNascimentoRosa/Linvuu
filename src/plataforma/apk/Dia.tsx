@@ -33,7 +33,7 @@ export default function Dia(){
  if(!coberturaDoCurso(curso!.id).traduzidas)return <div className="pagina"><h1>{curso!.nome}</h1><p>{a.preparacao}</p><Link to="/cursos">{x.explorar}</Link></div>;
  if(aula&&!aula.sessao)return <DiaLegado/>;
  return <div className="pagina app-aula">
-  <Link className="app-aula-voltar" to={`/curso/${curso!.id}`}><span aria-hidden="true">← </span>{({'pt-BR':'Percurso de ',en:'',es:'Recorrido de '} as const)[LOCALE.codigo]}{curso!.nome}{LOCALE.codigo==='en'?' path':''}</Link>
+  <Link className="app-aula-voltar" to={`/curso/${curso!.id}`}><span aria-hidden="true">← </span>{({'pt-BR':'Percurso de ',en:''} as const)[LOCALE.codigo]}{curso!.nome}{LOCALE.codigo==='en'?' path':''}</Link>
   {decidindo&&<p className="app-carregando" role="status">{T.carregando}</p>}
   {bloqueado&&!decidindo&&<AcessoLimitado idioma={curso!.id} curso={curso!.nome} indisponivel={ass.indisponivel}/>}
   {erro&&<div className="app-erro" role="alert"><h1>{T.semAula}</h1><button type="button" className="btn btn-primary" onClick={()=>setTentativa(v=>v+1)}>{a.tentarNovamente}</button></div>}

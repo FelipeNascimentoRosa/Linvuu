@@ -27,36 +27,36 @@
           {
             "ru": "comment dit-on…",
             "translit": "koh-mahn dee-TOHN",
-            "pt": "",
-            "en": "",
+            "pt": "how do you say…",
+            "en": "how do you say…",
             "audio": "comment dit-on…"
           },
           {
             "ru": "c'est-à-dire",
             "translit": "seh-tah-DEER",
-            "pt": "",
-            "en": "",
+            "pt": "that is to say; in other words",
+            "en": "that is to say; in other words",
             "audio": "c'est-à-dire"
           },
           {
             "ru": "un truc qui sert à",
             "translit": "an trewk kee sehr AH",
-            "pt": "",
-            "en": "",
+            "pt": "a thing used for",
+            "en": "a thing used for",
             "audio": "un truc qui sert à"
           },
           {
             "ru": "je veux dire",
             "translit": "zhuh vuh DEER",
-            "pt": "",
-            "en": "",
+            "pt": "I mean",
+            "en": "I mean",
             "audio": "je veux dire"
           },
           {
             "ru": "répéter",
             "translit": "ray-pay-TAY",
-            "pt": "",
-            "en": "",
+            "pt": "to repeat",
+            "en": "to repeat",
             "audio": "répéter"
           }
         ]
@@ -66,10 +66,10 @@
         "min": 8,
         "titulo": "Working around gaps and asking for help",
         "explicacao": "STEP 1: ask for the word: «Comment dit-on \"tool\" en français ?» STEP 2: describe: «C'est un truc qui sert à couper.» «C'est quelque chose qu'on utilise pour…» STEP 3: use another, simpler word: «Je veux dire…», «c'est-à-dire…» STEP 4: ask for a repeat: «Pouvez-vous répéter, s'il vous plaît ?» «Pouvez-vous parler plus lentement ?» STEP 5: confirm: «Si j'ai bien compris, vous voulez dire que…» STEP 6: buy time: «Euh… comment dire…», «Attendez, je réfléchis.»",
-        "comparacao": "in English we say «that thing you use to…» without embarrassment. In French, «un truc qui sert à…» plays the same role and is completely natural; using it is a sign of strategy, not weakness.",
+        "comparacao": "In English, “that thing you use to…” can help when you forget a word. In everyday French, «un truc qui sert à…» works similarly; «un objet qui sert à…» is more suitable in formal contexts.",
         "tabela": [
           {
-            "situation": "to ask for the floor",
+            "situation": "ask for a word",
             "formal": "Comment dit-on… en français ?",
             "informal": "Ça se dit comment ?"
           },
@@ -79,7 +79,7 @@
             "informal": "C'est un truc pour…"
           },
           {
-            "situation": "to repeat",
+            "situation": "ask someone to repeat",
             "formal": "Pourriez-vous répéter ?",
             "informal": "Tu peux répéter ?"
           },
@@ -94,16 +94,16 @@
             "informal": "Donc tu veux dire que…"
           },
           {
-            "situation": "to save time",
+            "situation": "buy time",
             "formal": "Attendez, je réfléchis.",
             "informal": "Euh… comment dire…"
           }
         ],
         "erros": [
           {
-            "errado": "Comment dit-on en français \"tool\" ?",
-            "certo": "Comment dit-on \"tool\" en français ?",
-            "motivo": "Order."
+            "errado": "Comment dit-on «tool» à français ?",
+            "certo": "Comment dit-on «tool» en français ?",
+            "motivo": "Use «en français» to ask how to say something in French."
           },
           {
             "errado": "Pouvez-vous répéter plus slowly ?",
@@ -139,7 +139,7 @@
             "resposta": "In the main hall."
           },
           {
-            "pergunta": "Who should you ask?",
+            "pergunta": "Where can guests ask questions?",
             "resposta": "At reception."
           }
         ]

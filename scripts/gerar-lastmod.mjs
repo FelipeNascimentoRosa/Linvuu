@@ -42,7 +42,7 @@ const dataDoFicheiro = (f) => {
 };
 
 // 3) Ficheiros-fonte de cada rota (caminhos relativos à raiz do repo).
-const TEXTO_LOCALE = { 'pt-BR': 'src/i18n/pt-BR.ts', en: 'src/i18n/en.ts', es: 'src/i18n/es.ts' };
+const TEXTO_LOCALE = { 'pt-BR': 'src/i18n/pt-BR.ts', en: 'src/i18n/en.ts' };
 const pad = (n, t) => String(n).padStart(t, '0');
 function fontes(caminho, locale) {
   const L = locale === 'pt-BR' ? null : locale; // 'en' | 'es' | null
@@ -75,7 +75,7 @@ const manifesto = {};
 const semFonte = [];
 for (const u of urls) {
   const completo = u.slice(SITE.length) || '/';
-  const locale = completo === '/en' || completo.startsWith('/en/') ? 'en' : completo === '/es' || completo.startsWith('/es/') ? 'es' : 'pt-BR';
+  const locale = completo === '/en' || completo.startsWith('/en/') ? 'en' : 'pt-BR';
   const caminho = locale === 'pt-BR' ? completo : completo.slice(3) || '/';
   const deps = fontes(caminho, locale);
   const datas = (deps ?? []).map(dataDoFicheiro).filter(Boolean).sort();

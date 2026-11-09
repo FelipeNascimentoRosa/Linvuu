@@ -2,6 +2,7 @@ import {chromium} from 'playwright';
 import AxeBuilder from '@axe-core/playwright';
 import {spawn} from 'node:child_process';
 import assert from 'node:assert/strict';
+const semAbertura=async(b,o)=>{const c=await b.newContext(o);await c.addInitScript(()=>{try{localStorage.setItem('linvuu:primeira-abertura:v1','1');localStorage.setItem('linvuu:sugestao-idioma-dispensada','1');}catch{}});return c;}; // começa depois das telas iniciais do app e sem a faixa de idioma do site
 let browser;
 try{
  browser=await chromium.launch({executablePath:process.env.CHROME_EXECUTABLE_PATH,args:['--no-sandbox']});
@@ -10,8 +11,8 @@ try{
   const server=spawn(process.execPath,['node_modules/vite/bin/vite.js','preview','--outDir',outDir,'--host','127.0.0.1','--port','4388','--strictPort'],{stdio:'ignore'});
   try{
    for(let n=0;n<60;n++){try{if((await fetch(base)).ok)break;}catch{}await new Promise(r=>setTimeout(r,250));}
-   for(const locale of ['','/en','/es']){
-    const ctx=await browser.newContext({viewport:{width:320,height:720}}),page=await ctx.newPage(),events=[];
+   for(const locale of ['', '/en']){
+    const ctx=await semAbertura(browser,{viewport:{width:320,height:720}}),page=await ctx.newPage(),events=[];
     await page.route('https://linvuu.com.br/**',r=>r.abort());
     await page.route('https://us.i.posthog.com/**',async r=>{events.push(JSON.parse(r.request().postData()));await r.fulfill({status:200,contentType:'application/json',body:'{"status":1}'});});
     await page.goto(base+locale+'/');await page.locator('.analytics-consent').waitFor();
@@ -19,7 +20,7 @@ try{
     await page.locator('.analytics-consent-analytics .analytics-actions button').last().click();await page.reload();await page.locator('.analytics-consent').waitFor();assert.equal(events.length,0,'recusa persiste');
     await page.locator('.analytics-consent-analytics summary').click();await page.locator('.analytics-consent-analytics .analytics-actions button').first().click();
     for(let n=0;n<30&&!events.length;n++)await page.waitForTimeout(50);
-    assert.equal(events[0]?.event,'page_viewed');assert.equal(events[0]?.properties.platform,target==='apk'?'android':'web');assert.equal(events[0]?.properties.environment,'test');assert.equal(events[0]?.properties.interface_language,locale==='/en'?'en':locale==='/es'?'es':'pt-BR');
+    assert.equal(events[0]?.event,'page_viewed');assert.equal(events[0]?.properties.platform,target==='apk'?'android':'web');assert.equal(events[0]?.properties.environment,'test');assert.equal(events[0]?.properties.interface_language,locale==='/en'?'en':'pt-BR');
     await page.goto(base+locale+'/cursos?token=do-not-capture');await page.locator('.analytics-consent').waitFor();await page.waitForTimeout(200);
     assert.ok(!JSON.stringify(events).includes('do-not-capture'));
     await page.evaluate(()=>document.documentElement.style.setProperty('--app-text-scale','2'));

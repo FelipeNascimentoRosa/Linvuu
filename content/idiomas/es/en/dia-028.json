@@ -1,0 +1,502 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 28,
+  "fase": 3,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Family and possessives: Review and practice of lesson 7",
+  "objetivo": "Lesson 7, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 7,
+    "titulo": "Family and possessives",
+    "objetivo": "Name family members in the masculine and feminine, form the mixed plural («los hermanos»), use the possessives «mi, tu, su, nuestro, vuestro» with the right agreement, show possession with «de», and say how many people are in your household.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 7",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Mis abuelos viven en Sevilla",
+            "opcoes": [
+              "[misto] Mis abuelos viven en Sevilla",
+              "[misto] Mi abuelo vive en Sevilla",
+              "[misto] Mis abuelas viven en Sevilla"
+            ],
+            "gabarito": "[misto] Mis abuelos viven en Sevilla",
+            "explicacao": "Listen to «mis», «abuelos» and «viven»: plural throughout.",
+            "id": "es-007-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Esta es mi hermana",
+            "opcoes": [
+              "[misto] Esta es mi hermana",
+              "[misto] Este es mi hermano",
+              "[misto] Esta es mi madre"
+            ],
+            "gabarito": "[misto] Esta es mi hermana",
+            "explicacao": "Listen to «esta» and «hermana».",
+            "id": "es-007-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "¿Cuántos hermanos tienes?",
+            "opcoes": [
+              "[misto] ¿Cuántos hermanos tienes?",
+              "[misto] ¿Cuántos hermanos tiene?",
+              "[misto] ¿Cuántas hermanas tienes?"
+            ],
+            "gabarito": "[misto] ¿Cuántos hermanos tienes?",
+            "explicacao": "Listen to «tienes» with «tú».",
+            "id": "es-007-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Mi madre se llama Rosa",
+            "respostaEsperada": "Mi madre se llama Rosa",
+            "explicacao": "Write: Mi madre se llama Rosa.",
+            "id": "es-007-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Somos cuatro en casa",
+            "respostaEsperada": "Somos cuatro en casa",
+            "explicacao": "Write: Somos cuatro en casa.",
+            "id": "es-007-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «They're my parents, Rosa and Manuel, and my grandparents.»",
+            "opcoes": [
+              "mis",
+              "Manuel,",
+              "abuelos.",
+              "y",
+              "padres,",
+              "Rosa",
+              "y",
+              "Son",
+              "mis"
+            ],
+            "gabarito": "Son mis padres, Rosa y Manuel, y mis abuelos.",
+            "explicacao": "Write: Son mis padres, Rosa y Manuel, y mis abuelos.",
+            "id": "es-007-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "El libro de Ana",
+            "respostaEsperada": "El libro de Ana",
+            "explicacao": "Write: El libro de Ana.",
+            "id": "es-007-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Mira, Javier, esta es mi familia.",
+            "respostaEsperada": "Mira, Javier, esta es mi familia.",
+            "explicacao": "Look, Javier, this is my family.",
+            "id": "es-007-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «my brothers»?",
+            "opcoes": [
+              "[misto] mis hermanos",
+              "[misto] mi hermanos",
+              "[misto] mis hermano"
+            ],
+            "gabarito": "[misto] mis hermanos",
+            "explicacao": "The possessive and the noun both go plural.",
+            "id": "es-007-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which possessive completes «___ casa» (our)?",
+            "opcoes": [
+              "[misto] nuestra",
+              "[misto] nuestro",
+              "[misto] nuestras"
+            ],
+            "gabarito": "[misto] nuestra",
+            "explicacao": "«Casa» is feminine singular.",
+            "id": "es-007-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the mixed plural of «hermano / hermana»?",
+            "opcoes": [
+              "[misto] los hermanos",
+              "[misto] los hermanas",
+              "[misto] las hermanos"
+            ],
+            "gabarito": "[misto] los hermanos",
+            "explicacao": "The masculine plural covers the mixed group.",
+            "id": "es-007-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Son mis padres, Rosa y Manuel, y mis abuelos.",
+            "respostaEsperada": "Son mis padres, Rosa y Manuel, y mis abuelos.",
+            "explicacao": "They're my parents, Rosa and Manuel, and my grandparents.",
+            "id": "es-007-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «Ana's book»?",
+            "opcoes": [
+              "[misto] el libro de Ana",
+              "[misto] el libro Ana",
+              "[misto] Ana libro"
+            ],
+            "gabarito": "[misto] el libro de Ana",
+            "explicacao": "Possession needs «de».",
+            "id": "es-007-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «mi hermano mayor» mean?",
+            "opcoes": [
+              "[misto] my older brother",
+              "[misto] my bigger brother",
+              "[misto] my younger brother"
+            ],
+            "gabarito": "[misto] my older brother",
+            "explicacao": "«Mayor» means older.",
+            "id": "es-007-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which form is correct?",
+            "opcoes": [
+              "[misto] tu casa",
+              "[misto] tú casa",
+              "[misto] tu casas"
+            ],
+            "gabarito": "[misto] tu casa",
+            "explicacao": "The possessive carries no accent mark.",
+            "id": "es-007-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "¡Qué bonita! ¿Quiénes son ellos?",
+            "respostaEsperada": "¡Qué bonita! ¿Quiénes son ellos?",
+            "explicacao": "How nice! Who are they?",
+            "id": "es-007-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ padres viven en Madrid. (my)",
+            "opcoes": [
+              "[misto] Mis",
+              "[misto] Mi",
+              "[misto] Nuestro"
+            ],
+            "gabarito": "[misto] Mis",
+            "explicacao": "Plural possessive.",
+            "id": "es-007-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «No, there are six of us, with my grandmother.»",
+            "opcoes": [
+              "No,",
+              "mi",
+              "somos",
+              "seis,",
+              "con",
+              "abuela."
+            ],
+            "gabarito": "No, somos seis, con mi abuela.",
+            "explicacao": "Write: No, somos seis, con mi abuela.",
+            "id": "es-007-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Es el coche ___ profesor. (the teacher's)",
+            "opcoes": [
+              "[misto] del",
+              "[misto] de el",
+              "[misto] al"
+            ],
+            "gabarito": "[misto] del",
+            "explicacao": "De + el = del.",
+            "id": "es-007-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ana es ___ hermana. (my)",
+            "opcoes": [
+              "[misto] mi",
+              "[misto] mis",
+              "[misto] el mi"
+            ],
+            "gabarito": "[misto] mi",
+            "explicacao": "No article, and singular.",
+            "id": "es-007-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ellos viven con ___ madre. (their mother)",
+            "opcoes": [
+              "[misto] su",
+              "[misto] sus",
+              "[misto] nuestro"
+            ],
+            "gabarito": "[misto] su",
+            "explicacao": "«Su» for ellos, just one mother.",
+            "id": "es-007-e16"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tengo un hermano ___ . (older)",
+            "opcoes": [
+              "[misto] mayor",
+              "[misto] maior",
+              "[misto] grande"
+            ],
+            "gabarito": "[misto] mayor",
+            "explicacao": "«Mayor» means the older one.",
+            "id": "es-007-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "No, somos seis, con mi abuela.",
+            "respostaEsperada": "No, somos seis, con mi abuela.",
+            "explicacao": "No, there are six of us, with my grandmother.",
+            "id": "es-007-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Mi madre se llama Rosa.»",
+            "opcoes": [
+              "Mi",
+              "madre",
+              "se",
+              "llama",
+              "Rosa."
+            ],
+            "gabarito": "Mi madre se llama Rosa.",
+            "explicacao": "Possessive, noun and verb.",
+            "id": "es-007-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Sí, tengo un hermano mayor y una hermana menor.",
+            "respostaEsperada": "Sí, tengo un hermano mayor y una hermana menor.",
+            "explicacao": "Yes, I have an older brother and a younger sister.",
+            "id": "es-007-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Tengo dos hermanos y una hermana.»",
+            "opcoes": [
+              "Tengo",
+              "dos",
+              "hermanos",
+              "y",
+              "una",
+              "hermana."
+            ],
+            "gabarito": "Tengo dos hermanos y una hermana.",
+            "explicacao": "Tener + quantity.",
+            "id": "es-007-e19"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: My grandmother lives with my parents.",
+            "respostaEsperada": "[misto] Mi abuela vive con mis padres.",
+            "id": "es-007-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ellos son ___ hermanos. (our)",
+            "opcoes": [
+              "[misto] nuestro",
+              "[misto] nuestras",
+              "[misto] nuestros"
+            ],
+            "gabarito": "[misto] nuestros",
+            "explicacao": "«Nuestros» agrees with «hermanos» (masculine plural).",
+            "id": "es-007-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «el tío» mean?",
+            "audio": "el tío",
+            "opcoes": [
+              "the uncle",
+              "the grandfather",
+              "the aunt",
+              "younger"
+            ],
+            "gabarito": "the uncle",
+            "explicacao": "«el tío» = the uncle.",
+            "id": "es-007-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Esta es ___ hermana, Ana. (your, tú)",
+            "opcoes": [
+              "[misto] tu",
+              "[misto] tus",
+              "[misto] su"
+            ],
+            "gabarito": "[misto] tu",
+            "explicacao": "«Hermana» is singular, so «tu» (no «s»).",
+            "id": "es-007-e22"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "La hija de mi tío es mi ___ . (cousin)",
+            "opcoes": [
+              "[misto] sobrina",
+              "[misto] tía",
+              "[misto] prima"
+            ],
+            "gabarito": "[misto] prima",
+            "explicacao": "The uncle's daughter is the cousin.",
+            "id": "es-007-e23"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Los padres de mi padre son mis ___ . (grandparents)",
+            "opcoes": [
+              "[misto] abuelos",
+              "[misto] tíos",
+              "[misto] primos"
+            ],
+            "gabarito": "[misto] abuelos",
+            "explicacao": "My father's parents are my grandparents.",
+            "id": "es-007-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Entonces sois cinco en casa.",
+            "respostaEsperada": "Entonces sois cinco en casa.",
+            "explicacao": "So there are five of you at home.",
+            "id": "es-007-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «aunts and uncles» as one single plural?",
+            "opcoes": [
+              "[misto] las tíos",
+              "[misto] los tíos",
+              "[misto] los tías"
+            ],
+            "gabarito": "[misto] los tíos",
+            "explicacao": "The masculine plural covers the mixed group.",
+            "id": "es-007-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «la madre» mean?",
+            "audio": "la madre",
+            "opcoes": [
+              "the mother",
+              "the grandfather",
+              "the aunt",
+              "married"
+            ],
+            "gabarito": "the mother",
+            "explicacao": "«la madre» = the mother.",
+            "id": "es-007-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «my grandparents' house»?",
+            "opcoes": [
+              "[misto] la casa de mis abuelos",
+              "[misto] la casa de mi abuelos",
+              "[misto] la mi casa de abuelos"
+            ],
+            "gabarito": "[misto] la casa de mis abuelos",
+            "explicacao": "Possession with «de»; «mis» agrees with «abuelos» (plural).",
+            "id": "es-007-e26"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «soltero» mean?",
+            "opcoes": [
+              "[misto] married",
+              "[misto] younger",
+              "[misto] single"
+            ],
+            "gabarito": "[misto] single",
+            "explicacao": "«Soltero» means single; married is «casado».",
+            "id": "es-007-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Mis abuelos viven con nosotros.»",
+            "opcoes": [
+              "Mis",
+              "abuelos",
+              "viven",
+              "con",
+              "nosotros."
+            ],
+            "gabarito": "Mis abuelos viven con nosotros.",
+            "explicacao": "«Mis» agrees with «abuelos»; «viven» agrees with «ellos».",
+            "id": "es-007-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: My younger brother's name is Pablo.",
+            "respostaEsperada": "[misto] Mi hermano menor se llama Pablo.",
+            "id": "es-007-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: There are five of us in my family.",
+            "respostaEsperada": "[misto] Somos cinco en mi familia.",
+            "id": "es-007-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Show an imaginary family photo out loud: «Esta es mi familia. Estos son mis… Este es mi… Esta es mi…» Give names, ages and professions."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Introduce your family in six sentences: how many you are, names, ages, and where you live."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-007.json",
+  "responsavel": null
+}

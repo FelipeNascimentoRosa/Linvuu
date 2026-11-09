@@ -17,7 +17,6 @@
    contraste sobre o fundo verde-escuro — troca pela variante papel do mesmo
    estado, só quando a arte em uso é a padrão (data-padrao). Mesmo padrão
    `content:url(...)` do wordmark do APK (plataforma/apk/app.css). */
-.area-aluno[data-tema="escuro"] .carga-vuu-mascote[data-padrao]{content:url(/assets/vuu/vuu-sonolento-papel.svg)}
 .carga-vuu-texto{margin:0;font-size:15px}
 @media (prefers-reduced-motion:no-preference){
   .carga-vuu-bloco{animation:carga-vuu-respira 1.8s ease-in-out infinite alternate}

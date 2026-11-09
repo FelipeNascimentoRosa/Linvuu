@@ -1,0 +1,172 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 14,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Present tense in -ar, negation and questions: Negation and questions",
+  "objetivo": "Lesson 4, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 4,
+    "titulo": "Present tense in -ar, negation and questions",
+    "objetivo": "Conjugate regular -ar verbs in the present, negate with «no», ask yes/no questions and questions with «qué, dónde, cuándo, por qué, cómo, cuánto», and tell «muy» apart from «mucho» and «por qué» from «porque».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Negation and questions",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "¿qué?",
+            "translit": "[pronuncia] keh",
+            "pt": "what?",
+            "en": "",
+            "audio": "¿qué?"
+          },
+          {
+            "ru": "¿dónde?",
+            "translit": "[pronuncia] DON-deh",
+            "pt": "where?",
+            "en": "",
+            "audio": "¿dónde?"
+          },
+          {
+            "ru": "¿cuándo?",
+            "translit": "[pronuncia] KWAN-do",
+            "pt": "when?",
+            "en": "",
+            "audio": "¿cuándo?"
+          },
+          {
+            "ru": "¿por qué?",
+            "translit": "[pronuncia] por keh",
+            "pt": "why?",
+            "en": "",
+            "audio": "¿por qué?"
+          },
+          {
+            "ru": "¿cómo?",
+            "translit": "[pronuncia] KO-mo",
+            "pt": "how?",
+            "en": "",
+            "audio": "¿cómo?"
+          },
+          {
+            "ru": "¿cuánto, cuánta?",
+            "translit": "[pronuncia] KWAN-to, KWAN-tah",
+            "pt": "how much, how many?",
+            "en": "",
+            "audio": "¿cuánto, cuánta?"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Negating, asking and answering",
+        "explicacao": "STEP 1: negation is «no», always before the verb: «No hablo alemán.» If there's a pronoun, it goes before the «no»: «Yo no hablo alemán.» STEP 2: in a short answer, «no» is repeated: «¿Hablas inglés? — No, no hablo inglés.» The first is the short answer; the second negates the verb. STEP 3: with «nunca» (never) and «nada» (nothing), negation works like the English double negative pattern: «No trabajo nunca», or, with the word first, «Nunca trabajo». Both mean the same thing. STEP 4: a yes/no question has the same word order as the statement, with rising intonation and the «¿ ?» marks: «¿Trabajas en Madrid?» You can also put the subject after the verb: «¿Trabaja Ana en Madrid?» STEP 5: questions with a question word start with that word, and the verb comes right after: «¿Dónde trabajas?», «¿Qué estudias?», «¿Cuándo viajas?» STEP 6: «por qué» (two words, with an accent) asks; «porque» (one word, no accent) answers: «¿Por qué estudias español? — Porque viajo mucho.» STEP 7: «cuánto» agrees with the noun: «cuánto», «cuánta», «cuántos», «cuántas». STEP 8: to ask for confirmation, add «¿verdad?» or «¿no?»: «Trabajas en Madrid, ¿verdad?»",
+        "comparacao": "«No» before the verb works like English «don't/doesn't», except Spanish keeps the same bare «no» in every person — there's no separate helper verb to conjugate. The real new things to learn: the opening «¿» mark, the accent on question words («qué», «dónde»), and the pair «por qué» (asking, two words, accented) × «porque» (answering, one word, no accent) — in English both directions use the same word, «why/because», so this split needs to be learned fresh.",
+        "tabelas": [
+          {
+            "titulo": "Question words",
+            "linhas": [
+              {
+                "interrogativo": "[misto] ¿Qué?",
+                "significado": "[misto] what",
+                "exemplo": "[misto] ¿Qué estudias?"
+              },
+              {
+                "interrogativo": "[misto] ¿Dónde?",
+                "significado": "[misto] where",
+                "exemplo": "[misto] ¿Dónde trabajas?"
+              },
+              {
+                "interrogativo": "[misto] ¿Cuándo?",
+                "significado": "[misto] when",
+                "exemplo": "[misto] ¿Cuándo viajas?"
+              },
+              {
+                "interrogativo": "[misto] ¿Cómo?",
+                "significado": "[misto] how",
+                "exemplo": "[misto] ¿Cómo cocinas?"
+              },
+              {
+                "interrogativo": "[misto] ¿Cuánto?",
+                "significado": "[misto] how much",
+                "exemplo": "[misto] ¿Cuántos idiomas hablas?"
+              },
+              {
+                "interrogativo": "[misto] ¿Por qué?",
+                "significado": "[misto] why",
+                "exemplo": "[misto] ¿Por qué estudias?"
+              }
+            ]
+          },
+          {
+            "titulo": "por qué, porque, porqué",
+            "linhas": [
+              {
+                "forma": "[misto] por qué",
+                "uso": "[misto] question",
+                "exemplo": "[misto] ¿Por qué trabajas aquí?"
+              },
+              {
+                "forma": "[misto] porque",
+                "uso": "[misto] answer, reason",
+                "exemplo": "[misto] Porque vivo aquí."
+              },
+              {
+                "forma": "[misto] porqué",
+                "uso": "[misto] noun: the reason (why)",
+                "exemplo": "[misto] Este es el porqué."
+              }
+            ]
+          }
+        ],
+        "erros": [
+          {
+            "errado": "[misto] Hablo no inglés.",
+            "certo": "[misto] No hablo inglés.",
+            "motivo": "«No» comes before the verb."
+          },
+          {
+            "errado": "[misto] Trabajas dónde?",
+            "certo": "[misto] ¿Dónde trabajas?",
+            "motivo": "The question word comes first, and the question opens with «¿»."
+          },
+          {
+            "errado": "[misto] ¿Por que estudias español?",
+            "certo": "[misto] ¿Por qué estudias español?",
+            "motivo": "When asking, it's two words and «qué» carries an accent."
+          },
+          {
+            "errado": "[misto] Por qué trabajo en Madrid. (answer)",
+            "certo": "[misto] Porque trabajo en Madrid.",
+            "motivo": "In the answer, it's a single word, with no accent."
+          }
+        ],
+        "tag": "Questions"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Answer out loud: «¿Hablas inglés? ¿Dónde trabajas? ¿Qué estudias? ¿Por qué estudias español? ¿Viajas mucho?» Then ask the same questions to an imaginary friend, using «usted»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Conjugate «hablar» and «trabajar» from memory, from «yo» to «ellos». Say one sentence with each form."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-004.json",
+  "responsavel": null
+}

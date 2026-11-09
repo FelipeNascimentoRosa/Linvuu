@@ -1,0 +1,501 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 36,
+  "fase": 4,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Time, days and months: Review and practice of lesson 9",
+  "objetivo": "Lesson 9, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 9,
+    "titulo": "Time, days and months",
+    "objetivo": "Ask and tell the time, set a time with «a las», say the days of the week, the months and the date, and talk about opening hours and routine with «de… a…» and «todos los días».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 9",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Son las tres y media",
+            "opcoes": [
+              "[misto] Son las tres y media",
+              "[misto] Son las tres y cuarto",
+              "[misto] Son las cuatro y media"
+            ],
+            "gabarito": "[misto] Son las tres y media",
+            "explicacao": "Listen to the hour «tres» and «y media».",
+            "id": "es-009-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Es la una menos cuarto",
+            "opcoes": [
+              "[misto] Es la una menos cuarto",
+              "[misto] Es la una y cuarto",
+              "[misto] Son las doce y cuarto"
+            ],
+            "gabarito": "[misto] Es la una menos cuarto",
+            "explicacao": "Listen to «menos cuarto»: fifteen minutes still needed to reach the hour.",
+            "id": "es-009-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "La tienda abre los sábados",
+            "opcoes": [
+              "[misto] La tienda abre los sábados",
+              "[misto] La tienda cierra los sábados",
+              "[misto] La tienda abre los domingos"
+            ],
+            "gabarito": "[misto] La tienda abre los sábados",
+            "explicacao": "Listen to «abre» and «sábados».",
+            "id": "es-009-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Hoy es 12 de octubre",
+            "respostaEsperada": "Hoy es 12 de octubre",
+            "explicacao": "Write: Hoy es 12 de octubre.",
+            "id": "es-009-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Son las ocho de la tarde",
+            "respostaEsperada": "Son las ocho de la tarde",
+            "explicacao": "Write: Son las ocho de la tarde.",
+            "id": "es-009-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «It closes at eight at night, Monday through Friday.»",
+            "opcoes": [
+              "viernes.",
+              "de",
+              "a",
+              "las",
+              "Cierra",
+              "tarde,",
+              "de",
+              "ocho",
+              "lunes",
+              "a",
+              "la"
+            ],
+            "gabarito": "Cierra a las ocho de la tarde, de lunes a viernes.",
+            "explicacao": "Write: Cierra a las ocho de la tarde, de lunes a viernes.",
+            "id": "es-009-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Cierra a las ocho",
+            "respostaEsperada": "Cierra a las ocho",
+            "explicacao": "Write: Cierra a las ocho.",
+            "id": "es-009-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Buenos días. ¿A qué hora abre la biblioteca?",
+            "respostaEsperada": "Buenos días. ¿A qué hora abre la biblioteca?",
+            "explicacao": "Good morning. What time does the library open?",
+            "id": "es-009-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «It's one o'clock»?",
+            "opcoes": [
+              "[misto] Es la una.",
+              "[misto] Son la una.",
+              "[misto] Son las una."
+            ],
+            "gabarito": "[misto] Es la una.",
+            "explicacao": "Singular: «es la una».",
+            "id": "es-009-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say 4:45?",
+            "opcoes": [
+              "[misto] las cinco menos cuarto",
+              "[misto] las cuatro menos cuarto",
+              "[misto] las cuatro y media"
+            ],
+            "gabarito": "[misto] las cinco menos cuarto",
+            "explicacao": "Fifteen minutes still needed to reach five.",
+            "id": "es-009-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which date is correct?",
+            "opcoes": [
+              "[misto] 5 de mayo",
+              "[misto] 5 mayo",
+              "[misto] quinto de mayo"
+            ],
+            "gabarito": "[misto] 5 de mayo",
+            "explicacao": "Day + de + month.",
+            "id": "es-009-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Cierra a las ocho de la tarde, de lunes a viernes.",
+            "respostaEsperada": "Cierra a las ocho de la tarde, de lunes a viernes.",
+            "explicacao": "It closes at eight at night, Monday through Friday.",
+            "id": "es-009-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «on Mondays»?",
+            "opcoes": [
+              "[misto] los lunes",
+              "[misto] el lunes",
+              "[misto] lunes"
+            ],
+            "gabarito": "[misto] los lunes",
+            "explicacao": "Habit: plural article.",
+            "id": "es-009-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Where do you buy books?",
+            "opcoes": [
+              "[misto] en la librería",
+              "[misto] en la biblioteca",
+              "[misto] en la oficina"
+            ],
+            "gabarito": "[misto] en la librería",
+            "explicacao": "«Librería» sells; «biblioteca» lends.",
+            "id": "es-009-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «tomorrow morning»?",
+            "opcoes": [
+              "[misto] mañana por la mañana",
+              "[misto] mañana en la mañana",
+              "[misto] mañana a la mañana"
+            ],
+            "gabarito": "[misto] mañana por la mañana",
+            "explicacao": "«Por la mañana» with no exact time.",
+            "id": "es-009-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "Abre a las nueve de la mañana, señora.",
+            "respostaEsperada": "Abre a las nueve de la mañana, señora.",
+            "explicacao": "It opens at nine in the morning, ma'am.",
+            "id": "es-009-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "La clase es ___ las nueve. (at)",
+            "opcoes": [
+              "[misto] a",
+              "[misto] en",
+              "[misto] de"
+            ],
+            "gabarito": "[misto] a",
+            "explicacao": "A time with «a las».",
+            "id": "es-009-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «On Saturdays it's open from ten to two. On Sundays it's closed.»",
+            "opcoes": [
+              "diez",
+              "abre",
+              "Los",
+              "domingos",
+              "cerrada.",
+              "dos.",
+              "está",
+              "de",
+              "sábados",
+              "a",
+              "Los"
+            ],
+            "gabarito": "Los sábados abre de diez a dos. Los domingos está cerrada.",
+            "explicacao": "Write: Los sábados abre de diez a dos. Los domingos está cerrada.",
+            "id": "es-009-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "La tienda abre de lunes ___ viernes. (to)",
+            "opcoes": [
+              "[misto] a",
+              "[misto] hasta",
+              "[misto] de"
+            ],
+            "gabarito": "[misto] a",
+            "explicacao": "«De… a…» for days.",
+            "id": "es-009-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Hoy es ___. (Tuesday)",
+            "opcoes": [
+              "[misto] martes",
+              "[misto] Martes",
+              "[misto] el martes"
+            ],
+            "gabarito": "[misto] martes",
+            "explicacao": "Day of the week lowercase and with no article in the answer.",
+            "id": "es-009-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Son las ocho ___ la noche.",
+            "opcoes": [
+              "[misto] de",
+              "[misto] en",
+              "[misto] por"
+            ],
+            "gabarito": "[misto] de",
+            "explicacao": "An exact time with «de la noche».",
+            "id": "es-009-e16"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "La biblioteca ___ a las ocho. (closes)",
+            "opcoes": [
+              "[misto] cierra",
+              "[misto] cerra",
+              "[misto] cierro"
+            ],
+            "gabarito": "[misto] cierra",
+            "explicacao": "«Cerrar» has «ie» in the «ella» form.",
+            "id": "es-009-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Los sábados abre de diez a dos. Los domingos está cerrada.",
+            "respostaEsperada": "Los sábados abre de diez a dos. Los domingos está cerrada.",
+            "explicacao": "On Saturdays it's open from ten to two. On Sundays it's closed.",
+            "id": "es-009-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «La tienda abre a las diez.»",
+            "opcoes": [
+              "La",
+              "tienda",
+              "abre",
+              "a",
+              "las",
+              "diez."
+            ],
+            "gabarito": "La tienda abre a las diez.",
+            "explicacao": "Subject, verb and time.",
+            "id": "es-009-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "¿Y hasta qué hora está abierta?",
+            "respostaEsperada": "¿Y hasta qué hora está abierta?",
+            "explicacao": "And until what time is it open?",
+            "id": "es-009-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «¿Qué hora es?»",
+            "opcoes": [
+              "¿Qué",
+              "hora",
+              "es?"
+            ],
+            "gabarito": "¿Qué hora es?",
+            "explicacao": "The fixed question for the time.",
+            "id": "es-009-e19"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: Today is Friday, April 3rd. It's half past two.",
+            "respostaEsperada": "[misto] Hoy es viernes, 3 de abril. Son las dos y media.",
+            "id": "es-009-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Son las ocho y ___ . (half)",
+            "opcoes": [
+              "[misto] cuarto",
+              "[misto] menos",
+              "[misto] media"
+            ],
+            "gabarito": "[misto] media",
+            "explicacao": "«Y media» means 30 minutes.",
+            "id": "es-009-e21"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Thank you very much. See you Saturday.»",
+            "opcoes": [
+              "sábado.",
+              "Hasta",
+              "gracias.",
+              "Muchas",
+              "el"
+            ],
+            "gabarito": "Muchas gracias. Hasta el sábado.",
+            "explicacao": "Write: Muchas gracias. Hasta el sábado.",
+            "id": "es-009-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Son las tres ___ cuarto. (2:45)",
+            "opcoes": [
+              "[misto] menos",
+              "[misto] y",
+              "[misto] a"
+            ],
+            "gabarito": "[misto] menos",
+            "explicacao": "Past the half hour, you name the next hour «minus» the minutes still needed.",
+            "id": "es-009-e22"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "¿___ hora es? (what)",
+            "opcoes": [
+              "[misto] Cuál",
+              "[misto] Qué",
+              "[misto] Cuándo"
+            ],
+            "gabarito": "[misto] Qué",
+            "explicacao": "The time is asked with «¿Qué hora es?».",
+            "id": "es-009-e23"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Hoy es quince ___ junio. (of)",
+            "opcoes": [
+              "[misto] en",
+              "[misto] el",
+              "[misto] de"
+            ],
+            "gabarito": "[misto] de",
+            "explicacao": "In a date, «de» goes between the day and the month.",
+            "id": "es-009-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then reveal the answer.",
+            "audio": "¿Y los sábados?",
+            "respostaEsperada": "¿Y los sábados?",
+            "explicacao": "And on Saturdays?",
+            "id": "es-009-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the plural of «sábado»?",
+            "opcoes": [
+              "[misto] los sábado",
+              "[misto] los sábados",
+              "[misto] los sábadoes"
+            ],
+            "gabarito": "[misto] los sábados",
+            "explicacao": "«Sábado» and «domingo» take an «-s» in the plural.",
+            "id": "es-009-e25"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Muchas gracias. Hasta el sábado.",
+            "respostaEsperada": "Muchas gracias. Hasta el sábado.",
+            "explicacao": "Thank you very much. See you Saturday.",
+            "id": "es-009-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which question asks what time a class is?",
+            "opcoes": [
+              "[misto] ¿Qué hora es?",
+              "[misto] ¿Qué día es la clase?",
+              "[misto] ¿A qué hora es la clase?"
+            ],
+            "gabarito": "[misto] ¿A qué hora es la clase?",
+            "explicacao": "«¿A qué hora…?» asks the time of an event.",
+            "id": "es-009-e26"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the «ellos» form of «cerrar»?",
+            "opcoes": [
+              "[misto] cierran",
+              "[misto] cerran",
+              "[misto] cierrán"
+            ],
+            "gabarito": "[misto] cierran",
+            "explicacao": "The stem's «e» becomes «ie» in every form except «nosotros» and «vosotros».",
+            "id": "es-009-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Trabajo de lunes a viernes.»",
+            "opcoes": [
+              "Trabajo",
+              "de",
+              "lunes",
+              "a",
+              "viernes."
+            ],
+            "gabarito": "Trabajo de lunes a viernes.",
+            "explicacao": "«De… a…» marks a span.",
+            "id": "es-009-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: The library opens at nine in the morning.",
+            "respostaEsperada": "[misto] La biblioteca abre a las nueve de la mañana.",
+            "id": "es-009-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: It's a quarter past eight at night.",
+            "respostaEsperada": "[misto] Son las ocho y cuarto de la noche.",
+            "id": "es-009-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe your week out loud: what you do on Mondays, Wednesdays and Saturdays, and at what time. Use at least three times."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say the time on your clock, today's day, and the date. Then say what time you do three things during the day."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-009.json",
+  "responsavel": null
+}

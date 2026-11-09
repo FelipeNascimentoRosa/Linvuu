@@ -27,43 +27,43 @@
           {
             "ru": "rester",
             "translit": "reh-STAY",
-            "pt": "",
-            "en": "",
+            "pt": "to stay; to remain",
+            "en": "to stay; to remain",
             "audio": "rester"
           },
           {
             "ru": "demander",
             "translit": "duh-mahn-DAY",
-            "pt": "",
-            "en": "",
+            "pt": "to ask; to ask for",
+            "en": "to ask; to ask for",
             "audio": "demander"
           },
           {
             "ru": "attendre",
             "translit": "ah-tahn-DRUH",
-            "pt": "",
-            "en": "",
+            "pt": "to wait (for)",
+            "en": "to wait (for)",
             "audio": "attendre"
           },
           {
             "ru": "exprès",
             "translit": "ek-SPREH",
-            "pt": "",
-            "en": "",
+            "pt": "on purpose",
+            "en": "on purpose",
             "audio": "exprès"
           },
           {
             "ru": "sale",
             "translit": "SAL",
-            "pt": "",
-            "en": "",
+            "pt": "dirty",
+            "en": "dirty",
             "audio": "sale"
           },
           {
             "ru": "ignorer",
             "translit": "ee-nyoh-RAY",
-            "pt": "",
-            "en": "",
+            "pt": "not to know; to ignore (depending on context)",
+            "en": "not to know; to ignore (depending on context)",
             "audio": "ignorer"
           }
         ]
@@ -72,8 +72,8 @@
         "tipo": "gramatica",
         "min": 12,
         "titulo": "Watch out for the traps",
-        "explicacao": "STEP 1: «rester» = to stay: «Je reste à Paris.» (not «to rest») STEP 2: «demander» = to ask (not “to demand”): «Il demande un café.» «Elle demande l'heure.» STEP 3: «attendre» = to wait (not “to attend”): «J'attends le bus.» STEP 4: «exprès» = on purpose (not “express”): «Il l'a fait exprès.» STEP 5: «sale» = dirty (not “sale”): «Mes mains sont sales.» STEP 6: «ignorer» = not to know (not “to ignore”): «J'ignore la réponse.» STEP 7: «magasin» = shop (not «magazine»): «Il y a un magasin près d'ici.» STEP 8: «blesser» = to hurt, to wound (not “to bless”): «Il s'est blessé à la jambe.» STEP 9: «tirer» = to pull (not “to tire”): «Tirez la porte.»",
-        "comparacao": "in English, «to wait» and «to attend» are the ones that confuse most: French «attendre» means to wait, not to attend. And «ignorer» is not to deliberately overlook, but to not know: «j'ignore» = «I don't know».",
+        "explicacao": "STEP 1: «rester» = to stay: «Je reste à Paris.» (not «to rest») STEP 2: «demander» = to ask (not “to demand”): «Il demande un café.» «Elle demande l'heure.» STEP 3: «attendre» = to wait (not “to attend”): «J'attends le bus.» STEP 4: «exprès» = on purpose (not “express”): «Il l'a fait exprès.» STEP 5: «sale» = dirty (not “sale”): «Mes mains sont sales.» STEP 6: «ignorer» can mean not to know, and can also mean to ignore, depending on context: «J'ignore la réponse.» STEP 7: «magasin» = shop (not «magazine»): «Il y a un magasin près d'ici.» STEP 8: «blesser» = to hurt, to wound (not “to bless”): «Il s'est blessé à la jambe.» STEP 9: «tirer» = to pull (not “to tire”): «Tirez la porte.»",
+        "comparacao": "French «attendre» usually means to wait (for), not to attend an event: «assister à» means to attend. «Ignorer» can mean not to know, as in «j’ignore la réponse», or to ignore someone, depending on context.",
         "tabela": [
           {
             "expression": "rester",
@@ -87,7 +87,7 @@
           },
           {
             "expression": "attendre",
-            "function": "to hope",
+            "function": "to wait (for)",
             "example": "J'attends le bus."
           },
           {
@@ -118,9 +118,9 @@
             "motivo": "«Exprès» means on purpose."
           },
           {
-            "errado": "Je demande si tu as faim. (in place of «I demand»)",
-            "certo": "Je te demande si tu as faim.",
-            "motivo": "«Demander» means to ask, never to demand."
+            "errado": "Je demande si tu as faim. (intended meaning: “I demand that you eat”)",
+            "certo": "J’exige que tu manges.",
+            "motivo": "«Demander» commonly means to ask or ask for. For an emphatic demand, «exiger» is often appropriate; context matters."
           },
           {
             "errado": "Mon pull est sal.",

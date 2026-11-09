@@ -27,36 +27,36 @@
           {
             "ru": "annoncer",
             "translit": "ah-nohn-SAY",
-            "pt": "",
-            "en": "",
+            "pt": "to announce",
+            "en": "to announce",
             "audio": "annoncer"
           },
           {
             "ru": "confirmer",
             "translit": "kohn-feer-MAY",
-            "pt": "",
-            "en": "",
+            "pt": "to confirm",
+            "en": "to confirm",
             "audio": "confirmer"
           },
           {
             "ru": "suggérer",
             "translit": "sewg-zhay-RAY",
-            "pt": "",
-            "en": "",
+            "pt": "to suggest",
+            "en": "to suggest",
             "audio": "suggérer"
           },
           {
             "ru": "insister",
             "translit": "an-sees-TAY",
-            "pt": "",
-            "en": "",
+            "pt": "to insist",
+            "en": "to insist",
             "audio": "insister"
           },
           {
             "ru": "reconnaître",
             "translit": "ruh-koh-neh-TRUH",
-            "pt": "",
-            "en": "",
+            "pt": "to acknowledge; to recognize",
+            "en": "to acknowledge; to recognize",
             "audio": "reconnaître"
           }
         ]
@@ -65,8 +65,8 @@
         "tipo": "gramatica",
         "min": 8,
         "titulo": "Reporting verbs",
-        "explicacao": "STEP 1: in written reports, prefer more precise verbs than «dire»: «Il a annoncé que…», «Elle a confirmé que…», «Il a suggéré de…», «Elle a insisté sur…», «Il a reconnu que…» STEP 2: the tense shifts back after a past-tense verb: «Il a dit : \"Je viendrai\" → Il a dit qu'il viendrait.» STEP 3: questions: «Elle a demandé si nous étions prêts.» STEP 4: orders: «Il nous a demandé de partir.» STEP 5: minutes formulas: «Il a été décidé que…», «Il a été convenu de…»",
-        "comparacao": "in English «he said he would come» also shifts the tense back. What is new is the richness of verbs: in professional French, «dire» is little used in minutes; «annoncer», «confirmer» and «souligner» give precision.",
+        "explicacao": "STEP 1: in written reports, prefer more precise verbs than «dire»: «Il a annoncé que…», «Elle a confirmé que…», «Il a suggéré de…», «Elle a insisté sur…», «Il a reconnu que…» STEP 2: after a past reporting verb, the tense often shifts when describing a future event from that past perspective: «Il a dit : \"Je viendrai\" → Il a dit qu'il viendrait.» STEP 3: questions: «Elle a demandé si nous étions prêts.» STEP 4: orders: «Il nous a demandé de partir.» STEP 5: minutes formulas: «Il a été décidé que…», «Il a été convenu de…»",
+        "comparacao": "English also often shifts tenses in reported speech: “he said he would come.” In meeting minutes, specific reporting verbs such as «annoncer», «confirmer» and «souligner» make the speaker’s purpose clearer.",
         "tabela": [
           {
             "verb": "annoncer que",
@@ -95,9 +95,9 @@
         ],
         "erros": [
           {
-            "errado": "Il a dit qu'il viendra.",
+            "errado": "Il a dit qu'il viendrais.",
             "certo": "Il a dit qu'il viendrait.",
-            "motivo": "Backshift: conditional."
+            "motivo": "For «il», the conditional ending is «-ait». Here it expresses a future event viewed from the past."
           },
           {
             "errado": "Elle a demandé si étions-nous prêts.",

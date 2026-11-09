@@ -18,11 +18,13 @@ const LivrosIndice = lazy(() => import('./pages/Livros').then((m) => ({ default:
 const LivroPagina = lazy(() => import('./pages/Livros').then((m) => ({ default: m.LivroPagina })));
 const LivroCapitulo = lazy(() => import('./pages/Livros').then((m) => ({ default: m.LivroCapitulo })));
 const Sobre = lazy(() => import('./pages/Sobre'));
+const AulasRusso = lazy(() => import('./pages/AulasRusso'));
 const PorQue = lazy(() => import('./pages/PorQue'));
 const Contato = lazy(() => import('./pages/Contato'));
 const ExAlunosUdemy = lazy(() => import('./pages/ExAlunosUdemy'));
 const ExcluirConta = lazy(() => import('./pages/ExcluirConta'));
-import { Header, BarraTopo, BarraInferior, Footer } from '@plataforma/Chrome';
+import { Header, BarraTopo, BarraInferior, Footer, PrimeiraAbertura } from '@plataforma/Chrome';
+import { SugestaoIdioma } from './components/SugestaoIdioma';
 import NaoEncontrada from './pages/NaoEncontrada';
 import Carregando from './components/Carregando';
 import { useT } from './i18n';
@@ -57,6 +59,7 @@ export default function App() {
     <>
       <a href="#conteudo" className="skip-link">{t.geral.pular}</a>
       <RolarAoTopo />
+      {!NATIVO && <SugestaoIdioma />}
       {!NATIVO && <BarraTopo semNovidades={AREA_ALUNO.test(pathname)} />}
       <Header />
       <main id="conteudo" className={!NATIVO ? 'site-camadas' : undefined} tabIndex={-1}>
@@ -76,6 +79,7 @@ export default function App() {
           <Route path="/livros" element={<LivrosIndice />} />
           <Route path="/livros/:id" element={<LivroPagina />} />
           <Route path="/livros/:id/capitulo/:n" element={<LivroCapitulo />} />
+          <Route path="/russo-online" element={NATIVO ? <Navigate to="/" replace /> : <AulasRusso />} />
           <Route path="/sobre" element={NATIVO ? <Navigate to="/" replace /> : <Sobre />} />
           <Route path="/por-que-linvuu" element={NATIVO ? <Navigate to="/" replace /> : <PorQue />} />
           <Route path="/contato" element={NATIVO ? <Navigate to="/" replace /> : <Contato />} />
@@ -92,6 +96,7 @@ export default function App() {
       <AnalyticsConsent />
       {!AREA_ALUNO.test(pathname) && !NATIVO && <Footer />}
       {NATIVO && !AREA_ALUNO.test(pathname) && <BarraInferior />}
+      {NATIVO && <PrimeiraAbertura />}
     </>
   );
 }

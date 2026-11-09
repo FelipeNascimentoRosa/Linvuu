@@ -6,22 +6,31 @@ import { resolve } from 'node:path';
 
 const bin = process.env.GOOGLE_ROBOTS_BIN;
 assert(bin, 'Defina GOOGLE_ROBOTS_BIN com o caminho do executável oficial compilado.');
-const robots = resolve('public/robots.txt');
-const xml = readFileSync('public/sitemap.xml', 'utf8');
-const urls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
-assert(urls.length > 0, 'O sitemap precisa conter URLs.');
-const casos = [
-  ...urls.map(url => [url, true]),
-  ['https://linvuu.com.br/livro/gramatica-ru', true], // Google precisa ler o noindex.
-  ['https://linvuu.com.br/api/gramatica/ru', true],
-  ['https://linvuu.com.br/api/gramatica/ru?l=en', true],
-  ['https://linvuu.com.br/api/billing/checkout', false],
-  ['https://linvuu.com.br/api/audio/ru/teste.mp3', false],
-  ['https://linvuu.com.br/admin/painel', false],
+// Os dois domínios: cada um com o seu robots.txt e o seu sitemap.
+const dominios = [
+  { site: 'https://linvuu.com.br', robots: 'public/robots.txt', sitemap: 'public/sitemap.xml' },
+  { site: 'https://linvuu.com', robots: 'public/robots-global.txt', sitemap: 'public/sitemap-global.xml' },
 ];
-for (const [url, permitido] of casos) {
-  const r = spawnSync(bin, [robots, 'Googlebot', url], { encoding: 'utf8', timeout: 10000 });
-  assert.ifError(r.error);
-  assert.equal(r.status, permitido ? 0 : 1, `${url}: parser retornou ${r.status}; ${r.stderr || r.stdout}`);
+let total = 0;
+for (const { site, robots: arqRobots, sitemap } of dominios) {
+  const robots = resolve(arqRobots);
+  const urls = [...readFileSync(sitemap, 'utf8').matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
+  assert(urls.length > 0, `O sitemap de ${site} precisa conter URLs.`);
+  assert(urls.every(u => u.startsWith(site)), `O sitemap de ${site} só lista URLs do próprio domínio.`);
+  const casos = [
+    ...urls.map(url => [url, true]),
+    [`${site}/livro/gramatica-ru`, true], // Google precisa ler o noindex.
+    [`${site}/api/gramatica/ru`, true],
+    [`${site}/api/gramatica/ru?l=en`, true],
+    [`${site}/api/billing/checkout`, false],
+    [`${site}/api/audio/ru/teste.mp3`, false],
+    [`${site}/admin/painel`, false],
+  ];
+  for (const [url, permitido] of casos) {
+    const r = spawnSync(bin, [robots, 'Googlebot', url], { encoding: 'utf8', timeout: 10000 });
+    assert.ifError(r.error);
+    assert.equal(r.status, permitido ? 0 : 1, `${url}: parser retornou ${r.status}; ${r.stderr || r.stdout}`);
+  }
+  total += urls.length;
 }
-console.log(`Parser oficial: ${urls.length} URLs do sitemap e regras específicas verificadas para Googlebot.`);
+console.log(`Parser oficial: ${total} URLs dos dois sitemaps e regras específicas verificadas para Googlebot.`);

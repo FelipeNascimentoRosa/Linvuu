@@ -1,0 +1,18 @@
+# Pendências (estacionamento — nada aqui gera PR sozinho)
+- [gatilho] Receita internacional > US$ 5.000/mês → avaliar Paddle (MoR) ou entidade US + Stripe US (spread atual ≈ 2%, não verificado).
+- Render: definir `STRIPE_PRICE_ID_USD` (ID do preço mensal de US$ 19,99 já existente) antes de divulgar o .com; sem ela a mensal em dólar recusa o checkout (o anual funciona).
+- Stripe: ativar Apple Pay e Google Pay no painel (Felipe). Compra de teste controlada nos dois domínios antes de divulgar (nenhuma compra real de ponta a ponta foi verificada).
+- linvuu.com/livros responde 200 com página em português («Coleção Linvuu: livros de gramática») no domínio em inglês — decidir: redirecionar ao .com.br, 404 ou noindex.
+- #453 (títulos pt ≤ 60 caracteres) ficou desatualizado após a reestruturação do metaRota: refazer sobre a main (medir primeiro quais títulos passam de 60).
+- #445 (Vuu celebração/erro gentil) é duplicata funcional do #469 já mesclado: fechar ou descartar.
+- Áudio pago: movido para o repositório privado `Linvuu-Audio` (docs/AUDIO-PRIVADO.md). Falta o token no Render e, depois de confirmado em produção, limpar o histórico do repositório público.
+- content/legado/: Felipe decide — fonte histórica ou quarentena junto de `_PARA-APAGAR-FELIPE`.
+- docs/infra/*20261019*: métricas antigas; candidatas à próxima quarentena.
+- /russo-online: credenciais dos professores aguardando o LinkedIn do Felipe: entram só diploma/certificados de russo (São Petersburgo) e o perfil público. Regra do Felipe: nunca citar o instituto/escola anterior dele em lugar nenhum do site ou dos textos.
+- Redes sociais: URLs reais aguardando o Felipe (enquanto isso, rodapé sem ícones mortos).
+- Prova social: lista das avaliações (Google Business e Udemy, exibidas como avaliações do instrutor/curso, sem nomear escola anterior) aguardando o Felipe; sem AggregateRating.
+- DNS (Felipe/Cloudflare): SPF `v=spf1 -all`, DMARC `v=DMARC1; p=reject; rua=mailto:hello.linvuu@gmail.com` e MX nulo `0 .` nos dois domínios; manter o TXT google-site-verification existente.
+- Firebase: conferir Authorized domains (linvuu.com) e referrer da chave de API; Search Console: propriedade sc-domain:linvuu.com e sitemaps dos dois domínios.
+- HSTS preload: irreversível — decisão adiada.
+- APK: preços definidos na Play Console, vendas no app ainda não ativadas.
+- Gamificação (#367, fechado) e editorial B1–B2 (#360): aguardando decisão de produto.

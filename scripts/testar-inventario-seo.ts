@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { aplicarMeta, carregarDadosMeta, metaDaRota } from '../src/lib/metaRota.ts';
 import { destinoSessao } from '../src/lib/destinoSessao.ts';
-import { LOCALES, caminhoEm } from '../src/i18n/locales.ts';
+import { LOCALES_POR_PERFIL, caminhoEm, comPerfil, perfilDoHost, urlAbsolutaEm } from '../src/i18n/locales.ts';
 import { SESSOES_GRATIS } from '../src/config/planos.ts';
 
 const d = carregarDadosMeta(process.cwd());
@@ -10,7 +10,7 @@ assert.ok(d, 'metadados carregados');
 const base = fs.readFileSync('index.html', 'utf8');
 let sessoes = 0, pagas = 0, gratuitas = 0;
 const inventario: { url: string; status: number; noindex: boolean; tipo: string }[] = [];
-for (const loc of LOCALES) {
+for (const [perfil, loc] of LOCALES_POR_PERFIL) comPerfil(perfil, () => {
   for (const c of d.cursos) {
     const ind = d.indice[c.id];
     assert.ok(ind, `índice de ${c.id}`);
@@ -28,7 +28,7 @@ for (const loc of LOCALES) {
       assert.ok(!titulos.has(m.titulo!), `título único para cada sessão: ${p}`);
       titulos.add(m.titulo!);
       const h = aplicarMeta(base, m, 'https://linvuu.com.br', d);
-      assert.ok(h.includes(`rel="canonical" href="https://linvuu.com.br${p}"`), p);
+      assert.ok(h.includes(`rel="canonical" href="${urlAbsolutaEm(loc.codigo, p)}"`), p);
       if (excluir) {
         assert.ok(h.includes('name="robots" content="noindex"'), p);
         assert.ok(!h.includes('<main data-prerender>'), `conteúdo restrito não pré-renderizado: ${p}`);
@@ -54,18 +54,41 @@ for (const loc of LOCALES) {
     const m = metaDaRota(caminhoEm(loc.codigo, p), d);
     assert.ok(m.semIndice, p);
   }
-}
+});
 
-const sitemap = fs.readFileSync('public/sitemap.xml', 'utf8');
+// Dois sitemaps: .com.br (português) e .com (inglês e espanhol). Cada URL é verificada no perfil do seu próprio domínio.
+const sitemap = fs.readFileSync('public/sitemap.xml', 'utf8') + fs.readFileSync('public/sitemap-global.xml', 'utf8');
 const urls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(m => m[1]);
 assert.equal(new Set(urls).size, urls.length, 'sitemap sem duplicatas');
 for (const u of urls) {
-  const p = new URL(u).pathname;
-  const m = metaDaRota(p, d);
-  assert.equal(m.status, 200, u);
-  assert.ok(!m.semIndice, u);
-  assert.equal(u, 'https://linvuu.com.br' + m.caminho, u);
+  const { pathname: p, hostname } = new URL(u);
+  comPerfil(perfilDoHost(hostname), () => {
+    const m = metaDaRota(p, d);
+    assert.equal(m.status, 200, u);
+    assert.ok(!m.semIndice, u);
+    assert.equal(u, urlAbsolutaEm(m.locale!.codigo, m.caminho), u);
+  });
 }
+// Sentido inverso (regra única de indexação): toda página de curso, gramática ou sessão que o servidor declara
+// indexável está no sitemap, e o cluster hreflang do sitemap é exatamente o que o servidor publica no HTML.
+const blocos = [...sitemap.matchAll(/<url><loc>(.*?)<\/loc>([\s\S]*?)<\/url>/g)];
+const anotSitemap = new Map(blocos.map((b) => [b[1], [...b[2].matchAll(/hreflang="([^"]+)" href="([^"]+)"/g)].map((x) => `${x[1]}=${x[2]}`).sort().join(' ')]));
+let indexaveis = 0;
+for (const [perfil, loc] of LOCALES_POR_PERFIL) for (const c of d.cursos) comPerfil(perfil, () => {
+  const rotas = [`/curso/${c.id}`, `/gramatica/${c.id}`, ...Array.from({ length: SESSOES_GRATIS }, (_, i) => `/curso/${c.id}/dia/${i + 1}`)];
+  for (const r of rotas) {
+    const p = caminhoEm(loc.codigo, r);
+    const m = metaDaRota(p, d);
+    const u = urlAbsolutaEm(loc.codigo, p);
+    if (m.status !== 200 || m.semIndice) { assert.ok(!anotSitemap.has(u), `noindex fora do sitemap: ${u}`); continue; }
+    indexaveis++;
+    assert.ok(anotSitemap.has(u), `indexável ausente do sitemap: ${u}`);
+    const h = aplicarMeta(base, m, 'https://linvuu.com.br', d);
+    const noHtml = [...h.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)"/g)].map((x) => `${x[1]}=${x[2]}`).sort().join(' ');
+    assert.equal(anotSitemap.get(u), noHtml, `hreflang igual no sitemap e no HTML: ${u}`);
+  }
+});
+assert.ok(indexaveis > 0);
 for (const p of ['/curso/en', '/curso/en/dia/1', '/gramatica/en', '/desconhecida']) {
   const m = metaDaRota(p, null);
   assert.equal(m.status, 503, 'falha dos metadados não vira soft 404/200');

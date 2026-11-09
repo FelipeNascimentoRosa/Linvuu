@@ -26,7 +26,7 @@
         "itens": [
           {
             "tipo": "audio-recognition",
-            "enunciado": "Listen and choose.",
+            "enunciado": "Listen and choose the sentence you hear.",
             "audio": "Je propose que nous commencions",
             "opcoes": [
               "Je propose que nous commencions",
@@ -39,7 +39,7 @@
           },
           {
             "tipo": "audio-recognition",
-            "enunciado": "Listen and choose.",
+            "enunciado": "Listen and choose the sentence you hear.",
             "audio": "Nous signons, sauf si le prix augmente",
             "opcoes": [
               "Nous signons, sauf si le prix augmente",
@@ -52,7 +52,7 @@
           },
           {
             "tipo": "audio-recognition",
-            "enunciado": "Listen and choose.",
+            "enunciado": "Listen and choose the sentence you hear.",
             "audio": "Il a dit qu'il viendrait",
             "opcoes": [
               "Il a dit qu'il viendrait",
@@ -60,7 +60,7 @@
               "Il a dit qu'il vient"
             ],
             "gabarito": "Il a dit qu'il viendrait",
-            "explicacao": "Tense backshift.",
+            "explicacao": "The conditional expresses a future event seen from the past; a future tense can also be used when the event remains future in the present context.",
             "id": "fr-059-e03"
           },
           {
@@ -131,7 +131,7 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "Exception with the indicative:",
+            "enunciado": "Which expression means “unless” and introduces a clause in the indicative?",
             "opcoes": [
               "sauf si",
               "à moins que",
@@ -143,14 +143,14 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "The right verb for «giving the news»:",
+            "enunciado": "Which verb means “to announce” a decision?",
             "opcoes": [
               "annoncer",
               "dire",
               "parler"
             ],
             "gabarito": "annoncer",
-            "explicacao": "Reporting.",
+            "explicacao": "«Annoncer» means to announce; «dire» means to say and «parler» means to speak.",
             "id": "fr-059-e09"
           },
           {
@@ -318,7 +318,7 @@
             "enunciado": "Listen, repeat aloud and then show the answer.",
             "audio": "l'ordre du jour",
             "respostaEsperada": "l'ordre du jour",
-            "explicacao": "a pauta",
+            "explicacao": "the agenda",
             "id": "fr-059-r03",
             "complemento": true
           },
@@ -336,7 +336,7 @@
           },
           {
             "tipo": "fill-gap",
-            "enunciado": "Il a ___ de changer la date. (sugeriu)",
+            "enunciado": "Il a ___ de changer la date. (suggested)",
             "opcoes": [
               "suggérer",
               "suggéré",
@@ -375,14 +375,14 @@
           },
           {
             "tipo": "fill-gap",
-            "enunciado": "Nous sommes ___ à un accord. (we have reached)",
+            "enunciado": "Nous sommes ___ à un accord. (a mixed group has reached)",
             "opcoes": [
               "parvenus",
               "parvenu",
               "parvenue"
             ],
             "gabarito": "parvenus",
-            "explicacao": "«Parvenir» uses «être» and agrees with «nous».",
+            "explicacao": "«Parvenir» uses «être»; in a mixed group, the plural participle is «parvenus».",
             "id": "fr-059-e22"
           },
           {

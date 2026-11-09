@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import { traduzirAula } from './i18n-aulas.mjs';
+const aula = JSON.parse(fs.readFileSync('content/idiomas/fr/aulas/aula-061.json', 'utf8'));
+const traduzida = traduzirAula(aula, 'fr', 'en').aula;
+const itens = traduzida.sessoes.flatMap(s => s.blocos).filter(b => b.tipo === 'exercicios').flatMap(b => b.itens);
+const item = id => itens.find(x => x.id === id);
+assert.equal(item('fr-061-e10').gabarito, 'to wait');
+assert.ok(item('fr-061-e10').opcoes.includes('to wait'));
+assert.match(item('fr-061-e24').enunciado, /past perspective/);
+assert.match(item('fr-061-e26').enunciado, /phone was stolen/);
+console.log('ok: revisão da aula 61 preservada na geração');
