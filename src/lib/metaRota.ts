@@ -95,9 +95,43 @@ const TX = {
     ementa: (n: number) => `All ${n} lessons in the course`, ant: (n: number) => `← Session ${n}`, seg: (n: number) => `Session ${n} →`,
     curso: (n: string) => `Learn ${n} online, explained in English`, cursoPrep: (n: string) => `${n} course: English edition in preparation`, cursoJ: (n: string) => `${n} for English speakers`, inicio: 'Home',
     aula: (a: number, t: string, n: string) => `Lesson ${a}: ${t} · ${n}`, aulaD: (n: string, a: number, t: string, s: number, tot: number, lingua: string) => `${n}, lesson ${a} (${t}), session ${s} of ${tot}: explained in ${lingua}, with audio for every sentence and exercises.`,
-    sessao: (s: number, n: string) => `Session ${s} · ${n}`, dia: (n: number) => `Day ${n}`, gram: 'Grammar', gramC: (n: string) => `${n} grammar for English speakers`, gramD: (n: string, lingua: string) => `${n} grammar explained in ${lingua}, topic by topic, with tables, examples and common mistakes. Free topics included.`, nao: 'Page not found',
+    sessao: (s: number, n: string) => `Session ${s} · ${n}`, dia: (n: number) => `Day ${n}`, gram: 'Grammar', gramC: (n: string) => `${n} grammar for English speakers`, gramD: (n: string, lingua: string) => `${n} grammar explained in ${lingua}, topic by topic: tables, examples, common mistakes and a link to the lesson where you practise it.`, nao: 'Page not found',
   },
 } as const;
+/**
+ * Títulos e descrições de SEO das páginas fixas do site em inglês (.com).
+ * O rótulo de menu («Courses», «Subscription») serve à navegação; o <title> precisa de 30 a 60 caracteres
+ * (com « · Linvuu») e a <meta name="description"> de 120 a 160, com a palavra-chave.
+ * Medição de 09/11/2026 no .com (EN_AUDIT.md §F3 e §F4): oito títulos abaixo de 30 caracteres e onze
+ * descrições abaixo de 120. O português fica como estava: esta passagem é do site em inglês.
+ */
+const SEO_EN = {
+  cursosT: 'Language courses: Portuguese, French and Russian',
+  cursosD: 'Linvuu language courses for English speakers: Brazilian Portuguese, French and Russian explained in English, in 30-minute sessions. Two free lessons.',
+  assinaturaT: 'Subscription: monthly and 12-month plans',
+  assinaturaD: 'Learn languages with Linvuu: a monthly or 12-month plan, priced in US dollars, and the first two lessons of every course free. No card needed to start.',
+  privT: 'Privacy policy: what data Linvuu collects',
+  privD: "What data Linvuu collects, why we collect it, how long it stays and what your rights are under Brazil's LGPD data protection law, in plain English.",
+  termosT: 'Terms of use for the Linvuu site and courses',
+  termosD: 'Rules for using the Linvuu site and courses: payment, cancellation, the 7-day refund and what we expect from each other. Brazilian law applies.',
+  entrarT: 'Sign in to your Linvuu account',
+  entrarD: 'Sign in to your Linvuu account with e-mail or Google to pick up the course where you stopped, review your answers and keep your progress saved.',
+  cadastroT: 'Create your Linvuu account',
+  cadastroD: 'Create a free Linvuu account with e-mail or Google, start the first two lessons of any course for free and keep your progress saved.',
+  naoD: 'The page you asked for does not exist or has moved. Go back to the Linvuu home page, or see the courses and the free grammar topics.',
+  descPadrao: 'Linvuu: language courses for English speakers, with the first two lessons of every course free and no card required to start.',
+} as const;
+/**
+ * Descrição usada quando a rota não define uma (404 e páginas sem descrição própria): a do idioma da página.
+ * Antes, essas rotas herdavam a descrição do modelo, que é em português — por isso /entrar, /cadastro e a 404
+ * serviam texto em português no linvuu.com (EN_AUDIT.md §F2).
+ */
+const DESC_PADRAO: Record<'pt-BR' | 'en', string> = {
+  // A do modelo (index.html) é esta: mantê-la deixa a 404 em português exatamente como estava.
+  'pt-BR': 'Cursos de inglês, espanhol, francês, italiano, alemão e russo feitos para brasileiros. Explicações em português, áudio e exercícios. Experimente 2 aulas grátis.',
+  en: SEO_EN.descPadrao,
+};
+
 /** Nome de cada língua de explicação, escrito na língua da página (para as descrições dizerem a língua real de cada aula/gramática). */
 const LINGUAS: Record<string, Record<string, string>> = {
   'pt-BR': { pt: 'português', en: 'inglês' },
@@ -105,7 +139,7 @@ const LINGUAS: Record<string, Record<string, string>> = {
 };
 const HOME = {
   'pt-BR': { titulo: HOME_BR.tituloSeo, descricao: HOME_BR.descricao },
-  en: { titulo: 'Language courses for English speakers', descricao: 'Courses for English speakers: Brazilian Portuguese, French and Russian explained in English; German, Spanish and Italian coming soon in English. Try 2 free lessons.' },
+  en: { titulo: 'Language courses for English speakers', descricao: 'Courses for English speakers: Brazilian Portuguese, French and Russian explained in English, German, Spanish and Italian in translation. 2 lessons free.' },
 };
 
 export function metaDaRota(pathname: string, d: DadosMeta | null): MetaRota {
@@ -124,9 +158,9 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
   // Livros: só em português (nos outros idiomas a página existe, mas não entra na busca).
   // /sobre existe nos dois idiomas desde 09/11/2026 — texto em src/lib/sobre.ts, indexável em pt-BR e em inglês.
   const livroBase = { em: ['pt-BR'] as Locale['codigo'][], semIndice: loc.codigo !== 'pt-BR' ? true : undefined };
-  if (p === '/sobre') { const s = SOBRE[loc.codigo]; return { status: 200, caminho: p, titulo: s.titulo, descricao: s.descricao, em: ['pt-BR', 'en'], jsonld: [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: s.titulo, url: `${SITE}/sobre`, inLanguage: loc.codigo, mainEntity: { '@id': ORG_ID } }, organizacao(SITE), ...AUTORES.map((a) => pessoa(a, SITE))] }; }
+  if (p === '/sobre') { const s = SOBRE[loc.codigo]; return { status: 200, caminho: p, titulo: s.seoTitulo ?? s.titulo, descricao: s.seoDescricao ?? s.descricao, em: ['pt-BR', 'en'], jsonld: [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: s.titulo, url: `${SITE}/sobre`, inLanguage: loc.codigo, mainEntity: { '@id': ORG_ID } }, organizacao(SITE), ...AUTORES.map((a) => pessoa(a, SITE))] }; }
   // /por-que-linvuu existe nos dois idiomas desde 09/11/2026, como o /sobre — texto em src/lib/porQue.ts.
-  if (p === '/por-que-linvuu') { const x = POR_QUE[loc.codigo]; return { status: 200, caminho: p, titulo: x.titulo, descricao: x.descricao, em: ['pt-BR', 'en'], jsonld: [{ '@context': 'https://schema.org', '@type': 'WebPage', name: x.titulo, url: `${SITE}/por-que-linvuu`, inLanguage: loc.codigo, about: { '@id': ORG_ID } }, organizacao(SITE)] }; }
+  if (p === '/por-que-linvuu') { const x = POR_QUE[loc.codigo]; return { status: 200, caminho: p, titulo: x.seoTitulo ?? x.titulo, descricao: x.seoDescricao ?? x.descricao, em: ['pt-BR', 'en'], jsonld: [{ '@context': 'https://schema.org', '@type': 'WebPage', name: x.titulo, url: `${SITE}/por-que-linvuu`, inLanguage: loc.codigo, about: { '@id': ORG_ID } }, organizacao(SITE)] }; }
   if (p === '/contato') return { status: 200, caminho: p, titulo: CONTATO.titulo, descricao: CONTATO.descricao, ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'ContactPage', name: CONTATO.titulo, url: `${SITE}/contato`, inLanguage: 'pt-BR', about: { '@id': ORG_ID } }, organizacao(SITE)] };
   if (p === '/ex-alunos-udemy') return { status: 200, caminho: p, titulo: EX_ALUNOS.titulo, descricao: EX_ALUNOS.descricao, ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'WebPage', name: EX_ALUNOS.titulo, url: `${SITE}/ex-alunos-udemy`, inLanguage: 'pt-BR', about: { '@id': ORG_ID } }, organizacao(SITE)] };
   if (p === '/livros') return { status: 200, caminho: p, titulo: 'Coleção Linvuu: livros de gramática', descricao: LIVROS_DESCRICAO, ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'ItemList', name: 'Coleção Linvuu', itemListElement: LIVROS_META.map((l, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE}/livros/${l.id}`, name: tituloLivro(l) })) }] };
@@ -152,19 +186,21 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     ] };
   }
   const fixas: Record<string, { titulo: string; descricao?: string; semIndice?: boolean; em?: Locale['codigo'][] }> = {
-    '/cursos': { titulo: tx.cursos, descricao: loc.codigo === 'pt-BR' ? 'Cursos de idiomas Linvuu: sem medo de gramática, com sessões de 30 minutos. Experimente duas aulas gratuitas.' : 'Linvuu language courses: grammar without fear, with 30-minute sessions. Try two lessons for free.' },
+    '/cursos': loc.codigo === 'en'
+      ? { titulo: SEO_EN.cursosT, descricao: SEO_EN.cursosD }
+      : { titulo: tx.cursos, descricao: 'Cursos de idiomas Linvuu: sem medo de gramática, com sessões de 30 minutos. Experimente duas aulas gratuitas.' },
     // Curso de português para estrangeiros: explicado em inglês, existe só no .com (no .com.br, 301 para cá).
     '/portugues': { titulo: tx.pt, descricao: tx.ptD, em: ['en'] },
     // Aulas ao vivo de russo: existe em português e em inglês; em espanhol a página volta para a home (noindex).
     '/russo-online': { titulo: AULAS_RUSSO[loc.codigo === 'en' ? 'en' : 'pt-BR'].titulo, descricao: AULAS_RUSSO[loc.codigo === 'en' ? 'en' : 'pt-BR'].descricao, em: ['pt-BR', 'en'] },
-    '/entrar': { titulo: tx.entrar, semIndice: true },
-    '/cadastro': { titulo: tx.cadastro, semIndice: true },
+    '/entrar': loc.codigo === 'en' ? { titulo: SEO_EN.entrarT, descricao: SEO_EN.entrarD, semIndice: true } : { titulo: tx.entrar, semIndice: true },
+    '/cadastro': loc.codigo === 'en' ? { titulo: SEO_EN.cadastroT, descricao: SEO_EN.cadastroD, semIndice: true } : { titulo: tx.cadastro, semIndice: true },
     '/livro/gramatica-ru': { titulo: 'Gramática russa A1–A2', semIndice: true },
     // A página de preços existe de verdade nos dois idiomas (um por domínio): indexável nos dois,
     // para os alternates hreflang de uma versão não apontarem para a outra como noindex.
-    '/assinatura': loc.codigo === 'pt-BR' ? { titulo: 'Planos e assinatura', descricao: 'Aprenda idiomas com a Linvuu: planos mensal, trimestral com 30% OFF no Pix e anual. Experimente duas aulas grátis, sem cartão.' } : { titulo: tx.assinatura, descricao: 'Learn languages with Linvuu: monthly or annual plans, priced in US dollars. Try two free lessons, no card required.' },
-    '/privacidade': { titulo: tx.priv, descricao: tx.privD },
-    '/termos': { titulo: tx.termos, descricao: tx.termosD },
+    '/assinatura': loc.codigo === 'pt-BR' ? { titulo: 'Planos e assinatura', descricao: 'Aprenda idiomas com a Linvuu: planos mensal, trimestral com 30% OFF no Pix e anual. Experimente duas aulas grátis, sem cartão.' } : { titulo: SEO_EN.assinaturaT, descricao: SEO_EN.assinaturaD },
+    '/privacidade': loc.codigo === 'en' ? { titulo: SEO_EN.privT, descricao: SEO_EN.privD } : { titulo: tx.priv, descricao: tx.privD },
+    '/termos': loc.codigo === 'en' ? { titulo: SEO_EN.termosT, descricao: SEO_EN.termosD } : { titulo: tx.termos, descricao: tx.termosD },
     '/excluir-conta': { titulo: EXCLUSAO[loc.codigo].titulo, descricao: EXCLUSAO[loc.codigo].descricao },
   };
   if (fixas[p]) {
@@ -469,7 +505,7 @@ const POLITICA_REEMBOLSO = { '@type': 'MerchantReturnPolicy', applicableCountry:
 const orgId = (site: string) => `${site}/#organizacao`;
 const organizacao = (SITE: string) => ({ '@context': 'https://schema.org', '@type': 'EducationalOrganization', '@id': orgId(SITE), name: 'Linvuu', url: SITE, logo: `${SITE}/brand/linvuu-logo.png`, email: EMAIL_OFICIAL, sameAs: [SITE_BR, siteDoIdioma('en'), ...REDES.filter((r) => r.url).map((r) => r.url)].filter((u) => u !== SITE), founder: AUTORES.map((a) => ({ '@type': 'Person', '@id': `${SITE}/sobre#${a.id}`, name: a.nome, sameAs: [...a.links] })) });
 const pessoa = (a: (typeof AUTORES)[number], SITE: string) => ({ '@context': 'https://schema.org', '@type': 'Person', '@id': `${SITE}/sobre#${a.id}`, name: a.nome, url: `${SITE}/sobre#${a.id}`, worksFor: { '@id': orgId(SITE) }, sameAs: [...a.links], knowsAbout: ['Matemática', 'Linguística', 'Ensino de idiomas', 'Inteligência artificial', 'Teoria dos números', 'Álgebra linear'] });
-const naoEncontrada = (p: string, loc: Locale): MetaRota => ({ status: 404, caminho: p, titulo: TX[loc.codigo].nao, semIndice: true });
+const naoEncontrada = (p: string, loc: Locale): MetaRota => ({ status: 404, caminho: p, titulo: TX[loc.codigo].nao, descricao: loc.codigo === 'en' ? SEO_EN.naoD : undefined, semIndice: true });
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
 /** Versões por idioma + x-default exatamente como o HTML do servidor as publica (fonte única também para o navegador). */
@@ -502,8 +538,9 @@ export function aplicarMeta(html: string, m: MetaRota, _site: string, d: DadosMe
     out = out.replace(/<title>[^<]*<\/title>/, () => `<title>${tit}</title>`);
     troca(/(<meta property="og:title" content=")[^"]*(")/, tit);
   }
-  if (m.descricao) {
-    const desc = esc(m.descricao);
+  // Descrição: a da rota ou, quando ela não define uma, a do idioma da página — nunca a do outro idioma.
+  {
+    const desc = esc(m.descricao ?? DESC_PADRAO[loc.codigo]);
     troca(/(<meta name="description" content=")[^"]*(")/, desc);
     troca(/(<meta property="og:description" content=")[^"]*(")/, desc);
   }
@@ -517,7 +554,7 @@ export function aplicarMeta(html: string, m: MetaRota, _site: string, d: DadosMe
   out = out.replace(/<link rel="alternate" hreflang="pt-BR" href="[^"]*" \/>/, () => alternativos);
   troca(/(<meta name="twitter:card" content=")[^"]*(")/, 'summary_large_image');
   const twitterTitle = esc(m.semMarca && m.titulo ? m.titulo : `${m.titulo ?? 'Linvuu'} · Linvuu`);
-  const twitterDescription = esc(m.descricao ?? 'Cursos de idiomas Linvuu.');
+  const twitterDescription = esc(m.descricao ?? DESC_PADRAO[loc.codigo]);
   out = out.replace('</head>', () => `<meta name="twitter:title" content="${twitterTitle}" /><meta name="twitter:description" content="${twitterDescription}" /><meta name="twitter:image" content="${esc(site)}/brand/avatar-1080.png" />\n</head>`);
   if (m.jsonld?.length) out = out.replace('</head>', () => m.jsonld!.map((j) => `    <script type="application/ld+json">${JSON.stringify(j).replace(/</g, '\\u003c')}</script>\n`).join('') + '  </head>');
   const conteudo = conteudoRota(m, d, loc);

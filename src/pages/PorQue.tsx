@@ -7,7 +7,7 @@ import { POR_QUE } from '../lib/porQue';
 /** "Por que estudar com a Linvuu?": os motivos, em fatos verificáveis. Existe em português (.com.br) e em inglês (.com). */
 export default function PorQue() {
   const x = POR_QUE[LOCALE.codigo];
-  usePageTitle(x.titulo, x.descricao, ['pt-BR', 'en'], false);
+  usePageTitle(x.seoTitulo ?? x.titulo, x.seoDescricao ?? x.descricao, ['pt-BR', 'en'], false);
   return (
     <div className="pagina lvr">
       <header className="lvr-topo">

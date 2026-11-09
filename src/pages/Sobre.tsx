@@ -9,7 +9,7 @@ import { SOBRE } from '../lib/sobre';
 /** Quem escreve a Linvuu: autoria, origem e método. Existe em português (.com.br) e em inglês (.com). */
 export default function Sobre() {
   const s = SOBRE[LOCALE.codigo];
-  usePageTitle(s.titulo, s.descricao, ['pt-BR', 'en'], false);
+  usePageTitle(s.seoTitulo ?? s.titulo, s.seoDescricao ?? s.descricao, ['pt-BR', 'en'], false);
   return (
     <div className="pagina lvr">
       <header className="lvr-topo">

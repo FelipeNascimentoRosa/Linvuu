@@ -91,29 +91,34 @@ Agravantes medidos:
 - A descrição de `/livro/gramatica-ru` é a **genérica brasileira** ("Cursos de inglês, espanhol, francês… feitos para brasileiros"), 169 caracteres, numa página `noindex`.
 - Correção certa: **traduzir**, não redirecionar. Redirecionar `/contato` para `/` deixaria o leitor sem canal de contato em inglês; as outras duas são páginas de conversão com oferta específica.
 
-### F2 — Metadados em português em páginas que já têm interface em inglês
+### F2 — Metadados em português em páginas que já têm interface em inglês — **corrigido em 09/11/2026**
 
-`/entrar` e `/cadastro` têm título em inglês (`Sign in · Linvuu`, `Sign up · Linvuu`) e a **mesma descrição genérica em português**, 169 caracteres, herdada do padrão do site. É o mecanismo do F1 (descrição padrão em `pt-BR`), mas só na `<meta>`, não no corpo.
+`/entrar` e `/cadastro` tinham título em inglês (`Sign in · Linvuu`, `Sign up · Linvuu`) e a **mesma descrição genérica em português**, 160 caracteres, herdada do padrão do modelo.
 
-### F3 — Títulos curtos (abaixo de 30 caracteres)
+Causa: rota sem descrição própria ficava com a `<meta name="description">` do `index.html`, que é em português. Correção estrutural em `src/lib/metaRota.ts`: `DESC_PADRAO` dá a descrição padrão **do idioma da página** (vale também para a 404), e `/entrar` e `/cadastro` passaram a ter descrição própria em inglês. O `.com.br` ficou idêntico ao que era (mesma descrição de 160 caracteres na 404 e nas duas páginas de conta).
 
-| Rota | Título | Caracteres |
-|---|---|---|
-| `/cursos` | `Courses · Linvuu` | 17 |
-| `/contato` | `Contato · Linvuu` | 17 |
-| `/entrar` | `Sign in · Linvuu` | 17 |
-| `/cadastro` | `Sign up · Linvuu` | 17 |
-| `/assinatura` | `Subscription · Linvuu` | 22 |
-| `/termos` | `Terms of use · Linvuu` | 22 |
-| `/privacidade` | `Privacy policy · Linvuu` | 24 |
-| `/sobre` | `Who writes Linvuu · Linvuu` | 27 |
+### F3 — Títulos curtos (abaixo de 30 caracteres) — **corrigido no `.com` em 09/11/2026**
 
-Um título de 17 caracteres desperdiça a parte mais visível do resultado de busca; a faixa útil é 50–60 (Etapa 5 do mandato).
+Eram oito, todos abaixo da faixa útil de 50–60 caracteres:
 
-### F4 — Descrições longas demais (truncadas) ou curtas demais
+| Rota | Título antes | Caracteres | Título depois | Caracteres |
+|---|---|---|---|---|
+| `/cursos` | `Courses · Linvuu` | 16 | `Language courses: Portuguese, French and Russian · Linvuu` | 57 |
+| `/entrar` | `Sign in · Linvuu` | 16 | `Sign in to your Linvuu account · Linvuu` | 39 |
+| `/cadastro` | `Sign up · Linvuu` | 16 | `Create your Linvuu account · Linvuu` | 35 |
+| `/assinatura` | `Subscription · Linvuu` | 21 | `Subscription: monthly and 12-month plans · Linvuu` | 49 |
+| `/termos` | `Terms of use · Linvuu` | 21 | `Terms of use for the Linvuu site and courses · Linvuu` | 53 |
+| `/privacidade` | `Privacy policy · Linvuu` | 23 | `Privacy policy: what data Linvuu collects · Linvuu` | 50 |
+| `/sobre` | `Who writes Linvuu · Linvuu` | 26 | `Who writes Linvuu: the authors and the method · Linvuu` | 54 |
+| `/contato` | `Contato · Linvuu` | 16 | **pendente**: sai com a tradução da página (F1) | — |
 
-- Longas: `/curso/de` 222, `/curso/es` 212, `/curso/it` 197, `/por-que-linvuu` 170, `/sobre` 170, `/` 164, `/curso/fr` 161.
-- Curtas: `/curso/en` 32 ("English for Portuguese speakers." — e o título promete "Learn English online, explained in English": a descrição contradiz o título), `/termos` 44, `/privacidade` 57, `/cursos` 97, `/russo-online` 100.
+Regra de implementação: o rótulo de menu («Courses», «Subscription») continua servindo à navegação; o título de busca é um campo separado (`SEO_EN` em `metaRota.ts`, `seoTitulo` em `sobre.ts`). Em `/sobre` o `h1` e o lead visível não mudaram.
+
+### F4 — Descrições longas demais (truncadas) ou curtas demais — **corrigido no `.com`, com quatro exceções**
+
+- Longas, corrigidas: `/por-que-linvuu` 170 → 142, `/sobre` 170 → 158, `/` 164 → 152. As de `/curso/de` (222), `/curso/es` (212) e `/curso/it` (197) vêm de `content/cursos.json` e continuam: são páginas `noindex` (edição em inglês incompleta), onde a descrição não rende resultado de busca — ficam para quando o curso for traduzido.
+- Curtas, corrigidas: `/cursos` 97 → 149, `/assinatura` 115 → 151, `/privacidade` 57 → 147, `/termos` 44 → 143, `/russo-online` 100 → 156, `/gramatica/ru|fr|es` 118|117|118 → 135|134|135.
+- Continua curta: `/curso/en` (32 caracteres, "English for Portuguese speakers") — é o curso de inglês para brasileiros, oferecido no `.com.br` e `noindex` no `.com`; a descrição só faz sentido depois de decidir se a página fica.
 
 ### F5 — Hierarquia de títulos rasa ou ausente
 
@@ -157,9 +162,34 @@ O Harper, em dialeto americano, cobra a vírgula de Oxford em 70 pontos: `/portu
 
 Cada rota é servida com um `<main data-prerender>` que fica **oculto quando o JavaScript roda** (`<style>@media (scripting:enabled){main[data-prerender]{display:none}}</style>`, `src/lib/metaRota.ts:389-390`). Para páginas com `corpo` pré-renderizado (home, aulas, gramática, sobre), quem chega sem JS lê um texto; quem tem JS lê o do React. Nas três páginas do F1 os dois caminhos são portugueses — mas a divergência entre os dois caminhos é um risco a manter sob medição, porque o texto que o Google indexa pode não ser o que o aluno lê.
 
-## 5. O que já está bom (e não deve ser mexido sem motivo)
+### Correção de metadados do `.com` (09/11/2026) — evidência
 
-- **O inglês é nativo, não tradução automática.** Mediana de **0 lints de gramática/uso por 100 palavras** em 37 páginas; o pior caso é `/gramatica/fr` com 2,8 (exemplos em francês). Não há cara de texto passado por tradutor: as frases são curtas e concretas ("German, Spanish and Italian coming soon in English"; "Rules stated precisely, examples that test the rule, and attention to the mistake a learner actually makes").
+Medido no HTML que o servidor entrega com `Host: linvuu.com` (build de produção local, `NODE_ENV=production`), comparado ao baseline de `.en-baseline/fase1/resumo.json`:
+
+| Rota | Título (caracteres) | Descrição (caracteres) |
+|---|---|---|
+| `/` | 46 → 46 | 164 → 152 |
+| `/cursos` | 16 → 57 | 97 → 149 |
+| `/assinatura` | 21 → 49 | 115 → 151 |
+| `/por-que-linvuu` | 31 → 31 | 170 → 142 |
+| `/sobre` | 26 → 54 | 170 → 158 |
+| `/privacidade` | 23 → 50 | 57 → 147 |
+| `/termos` | 21 → 53 | 44 → 143 |
+| `/entrar` | 16 → 39 | 160 (português) → 143 (inglês) |
+| `/cadastro` | 16 → 35 | 160 (português) → 132 (inglês) |
+| `/pagina-que-nao-existe` | 23 → 23 | 160 (português) → 132 (inglês) |
+| `/gramatica/ru` | 45 → 45 | 118 → 135 |
+| `/gramatica/fr` | 44 → 44 | 117 → 134 |
+| `/gramatica/es` | 45 → 45 | 118 → 135 |
+| `/russo-online` | 45 → 45 | 100 → 156 |
+| `/contato` | 16 → 16 | 115 → 115 (**F1**, pendente) |
+
+O que a mudança **não** fez: nenhum texto visível mudou (`h1`, lead e corpo intactos; `/sobre` e `/por-que-linvuu` ganharam campos de SEO separados do texto da página), nenhuma rota mudou de idioma, `noindex` e `canonical` ficaram como estavam, e o `.com.br` foi conferido byte a byte nas mesmas rotas (descrição de 160 caracteres da 404 preservada). Os testes `testar:titulos` (95 títulos ≤ 60 nos dois domínios), `testar-contrato-billing`, `testar-inventario-seo`, `testar-seo-publico`, `testar-links-publicos` e `testar-robots-navegacao` passaram.
+
+Uma correção factual veio junto: a descrição da home dizia «German, Spanish and Italian **coming soon in English**», mas os três cursos já têm as primeiras aulas explicadas em inglês (`/curso/es` tem 30 aulas). Agora diz «in translation», que é o estado real.
+
+
+- **O inglês é nativo, não tradução automática.** Mediana de **0 lints de gramática/uso por 100 palavras** em 37 páginas; o pior caso é `/gramatica/fr` com 2,8 (exemplos em francês). Não há cara de texto passado por tradutor: as frases são curtas e concretas ("Rules stated precisely, examples that test the rule, and attention to the mistake a learner actually makes"; "The first two lessons of every course are free, no card needed").
 - **Clareza dentro da faixa:** Flesch mediano 52,7 (alvo do mandato: 50–70); 18 das 33 páginas medidas como prosa caem na faixa, 11 ficam abaixo de 50 e 4 acima de 70.
 - **Uma única `h1` por página** em todas as 37; onde a migalha de navegação repete o `h1`, o texto aparece duplicado na leitura (F9).
 - **Promessas honestas:** `/portugues` diz explicitamente que não promete fluência, prazo nem equivalência com Celpe-Bras; `/assinatura` informa reembolso de 7 dias e que a Stripe processa o pagamento. Isso é raro num site de cursos e é ativo de confiança — a reescrita das outras páginas deve copiar esse tom, não suavizá-lo.
@@ -197,6 +227,8 @@ A ordem segue a receita: primeiro o que já recebe tráfego e vende, depois o qu
 | 11 | gates (`/curso/de|it|en`, `/gramatica/de|it|en`) | tradução em curso; só entram quando o curso fechar | F5, F10 |
 
 O que **não** entra na Fase 2: `/curso/*` e `/gramatica/*` de conteúdo (já nativos e bem avaliados), `/gramatica/{ru,br,fr,es}` (1098–1257 palavras, Flesch 70–80) e as aulas `dia/1` (0,2–1,2 lint/100).
+
+**Estado em 09/11/2026:** F2, F3 e a maior parte de F4 foram fechados de uma vez, fora da ordem por página, porque eram metadados e não conteúdo (tabela de evidência no fim do §4). Com isso, na Fase 2 cada página entra pelo defeito que resta — F6 (palavras), F7 (quick answer), F8 (vírgula serial), F9 (microcopy) — não pelo título. `/contato` continua sendo o primeiro trabalho de conteúdo, porque é o único F1 que ainda bloqueia a confiança do domínio inglês.
 
 ## 8. Critério de aceite por página (Fases 2 e 3)
 

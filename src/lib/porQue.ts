@@ -12,6 +12,9 @@ export type SegmentoPorQue = { texto: string; link?: '/cursos' | '/livros' | '/s
 export type TextoPorQue = {
   titulo: string;
   descricao: string;
+  /** Descrição só da <meta name="description"> (até 160 caracteres). O lead visível continua em `descricao`. */
+  seoDescricao?: string;
+  seoTitulo?: string;
   kicker: string;
   lead: string;
   motivosRotulo: string;
@@ -55,6 +58,7 @@ export const POR_QUE: Record<'pt-BR' | 'en', TextoPorQue> = {
   },
   en: {
     titulo: 'Why study with Linvuu?',
+    seoDescricao: 'Explanations in English, the mistakes English speakers really make, audio in every sentence, 30-minute sessions and books written by teachers.',
     descricao: 'Explanations in English, the mistakes English speakers really make, audio in every sentence, 30-minute sessions and books written by teachers. See what changes at Linvuu.',
     kicker: 'About the method',
     lead: 'Linvuu is for English speakers learning Brazilian Portuguese, French or Russian without memorising loose rules. Every lesson starts from what you already know, explains why the sentence is built that way, and shows the mistake most English speakers make.',
