@@ -4,7 +4,10 @@
 
 **Solução:** o áudio vive no repositório **privado** `FelipeNascimentoRosa/Linvuu-Audio`. O build do Render o baixa para `.audio-privado/` (`scripts/audio-privado.mjs`) e a rota `/api/audio` o serve só com assinatura ativa (`server/audio-privado.ts`). O v2 tem prioridade; o antigo é reserva.
 
-## Passo a passo (nesta ordem)
+## Autenticação do build: chave SSH (feito em 09/11/2026) ou token
+O build baixa o repositório privado com uma **deploy key SSH somente leitura** (título "render-linvuu-audio (somente leitura)" em Linvuu-Audio → Settings → Deploy keys). A chave privada (base64) está na variável `AUDIO_DEPLOY_KEY` do Render. Ela não expira e só enxerga o `Linvuu-Audio`. Para trocar: gere outra com `ssh-keygen -t ed25519 -N ""`, cadastre a pública como deploy key somente leitura, ponha a privada em base64 no Render e remova a antiga. O token (`AUDIO_REPO_TOKEN`) continua aceito como alternativa.
+
+## Passo a passo com token (alternativa)
 1. **Token (você):** GitHub → Settings → Developer settings → Fine-grained tokens → só o repositório `Linvuu-Audio`, permissão **Contents: Read-only**, validade de 1 ano. Copie.
 2. **Render (você):** serviço `linvuu` → Environment → `AUDIO_REPO_TOKEN` = o token. Faça o deploy deste PR.
 3. **Conferir em produção (você):** abrir uma sessão paga com assinatura ativa e ouvir; `GET /api/audio/<idioma>/<hash>.mp3` sem login deve dar 401 e, com assinatura, 200. O log do build mostra `audio-privado: N MP3 baixados`.

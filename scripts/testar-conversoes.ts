@@ -41,4 +41,12 @@ assert.equal(meta.headers.Authorization, 'Bearer tok'); assert.ok(!meta.url.incl
 const tt = pedidos.find((p) => p.url.includes('tiktok'))!;
 assert.equal((tt.corpo.data as Record<string, any>[])[0].user.email, sha('aluno@exemplo.com'));
 assert.ok(!JSON.stringify(pedidos).includes('Aluno@Exemplo'), 'e-mail nunca sai em texto');
+// Domínio da compra: o evento sai com o endereço de onde o aluno pagou; valor de fora da lista cai no padrão
+for (const [site, esperado] of [['https://linvuu.com', 'https://linvuu.com/assinatura'], ['https://linvuu.com.br', 'https://linvuu.com.br/assinatura'], ['https://outro-site.com', 'https://linvuu.com.br/assinatura'], [undefined, 'https://linvuu.com.br/assinatura']] as const) {
+  pedidos.length = 0;
+  await enviarCompra(compra({ ...m, ...(site ? { site } : {}) } as Record<string, string>), env, pedir);
+  const mt = (pedidos.find((p) => p.url.includes('graph.facebook.com'))!.corpo.data as Record<string, any>[])[0];
+  const tk = (pedidos.find((p) => p.url.includes('tiktok'))!.corpo.data as Record<string, any>[])[0];
+  assert.equal(mt.event_source_url, esperado); assert.equal(tk.page.url, esperado);
+}
 console.log('OK: conversões só com consentimento e destino configurado; e-mail/uid em hash; deduplicação por sessão.');

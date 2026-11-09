@@ -33,7 +33,8 @@ export type Compra = { id: string; uid: string; plano: string; valor: number; mo
 export async function enviarCompra(c: Compra, env: NodeJS.ProcessEnv = process.env, pedir: typeof fetch = fetch): Promise<number> {
   const m = c.metadata;
   const envios: Promise<boolean>[] = [];
-  const site = env.APP_URL || 'https://linvuu.com.br';
+  // Domínio onde a compra aconteceu (gravado pelo checkout); só aceita os dois domínios próprios.
+  const site = /^https:\/\/(www\.)?linvuu\.com(\.br)?$/.test(m.site ?? '') ? m.site : (env.APP_URL || 'https://linvuu.com.br');
   const posthogToken = env.POSTHOG_TOKEN || env.VITE_POSTHOG_TOKEN;
   const posthogHost = env.POSTHOG_HOST || env.VITE_POSTHOG_HOST;
   if (m.ph && posthogToken && posthogHost && /^https:\/\/(us|eu)\.i\.posthog\.com$/.test(posthogHost)) {
