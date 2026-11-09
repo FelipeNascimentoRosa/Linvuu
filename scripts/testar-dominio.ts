@@ -30,7 +30,7 @@ const casos: [string, string, string, string, string | null][] = [
   ['/livro (sem s) não é a coleção', GLOBAL, '/livro', '', null],
   ['/curso/br segue no .com (explicação em inglês)', GLOBAL, '/curso/br', '', null],
   ['/curso/br no .com.br é tratado na rota, não aqui', BR, '/curso/br', '', null],
-  ['/sobre não redireciona: falta página em inglês (PENDENCIAS)', GLOBAL, '/sobre', '', null],
+  ['/sobre não redireciona: agora tem página em inglês indexável (09/11/2026)', GLOBAL, '/sobre', '', null],
   ['a raiz do .com não redireciona', GLOBAL, '/', '', null],
   ['a raiz do .com.br não redireciona', BR, '/', '', null],
   ['host desconhecido segue o perfil brasileiro', 'localhost', '/livros', '', null],

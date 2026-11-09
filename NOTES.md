@@ -10,7 +10,7 @@ This file explains, in English, the decisions behind the Linvuu site so that a r
 
 **What enforces it:** `server/dominio.ts` returns 301 when a route exists only in the other domain (e.g. `/livros` on `.com` → `.com.br/livros`). `scripts/testar-dominio.ts` covers the rule with 20 pure cases plus 8 real HTTP requests in CI. `<html lang>` follows the domain: `pt-BR` on `.com.br`, `en` on `.com`.
 
-**Known gap:** `/sobre` on `.com` still serves Portuguese text with `lang="en"`. The fix is an English page, not a redirect — redirecting would send the user to the other domain for a page that exists on both.
+**Former gap, now closed (09/11/2026):** `/sobre` used to serve Portuguese text with `lang="en"` and `noindex` on `.com`. It now has a real English page written for English speakers (`src/lib/sobre.ts`, same text module feeding `Sobre.tsx` and the server-rendered HTML), `lang="en"`, no `noindex`, and `hreflang` pt-BR/en/x-default in the `.com` sitemap. The redirect rule was deliberately **not** used here: the page has content on both domains, so sending the reader to the other domain would have lost the visit.
 
 ## 2. i18n: typed dictionaries, not a library
 
