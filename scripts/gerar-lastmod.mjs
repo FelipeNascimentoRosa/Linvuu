@@ -51,9 +51,9 @@ function fontes(caminho, locale) {
     case '/': return ['src/pages/Home.tsx', 'src/i18n/home.ts', TEXTO_LOCALE[locale], 'content/cursos.json', 'content/indice.json', ...indiceL];
     case '/cursos': return ['src/pages/Cursos.tsx', 'content/cursos.json', 'content/indice.json'];
     case '/assinatura': return ['src/pages/Assinatura.tsx', 'src/config/planos.ts', 'src/lib/assinatura.ts'];
-    case '/sobre': return ['src/pages/Sobre.tsx'];
-    case '/por-que-linvuu': return ['src/pages/PorQue.tsx'];
-    case '/contato': return ['src/pages/Contato.tsx'];
+    case '/sobre': return ['src/pages/Sobre.tsx', 'src/lib/sobre.ts'];
+    case '/por-que-linvuu': return ['src/pages/PorQue.tsx', 'src/lib/porQue.ts'];
+    case '/contato': return ['src/pages/Contato.tsx', 'src/lib/institucional.ts', 'src/config/contato.ts'];
     case '/ex-alunos-udemy': return ['src/pages/ExAlunosUdemy.tsx'];
     case '/livros': return ['src/pages/Livros.tsx', ...fs.readdirSync(path.join(raiz, 'content', 'livros')).sort().map((id) => `content/livros/${id}/sumario.json`)];
   }

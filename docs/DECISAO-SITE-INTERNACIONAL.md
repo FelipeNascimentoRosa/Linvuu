@@ -14,7 +14,7 @@
 >
 > Ficam **superados** os itens 4 e 8 (que citam `/`, `/en`, `/es`) e a linha "Render" da seção Infraestrutura (o mesmo serviço serve os dois domínios, não os caminhos `/en` e `/es`). O espanhol deixou de existir em 06/11. O resto da decisão — não prometer o que não existe, ocultar o curso da própria língua, língua do site ≠ língua da explicação — continua valendo integralmente.
 >
-> Estado medido em 09/11 (`main` = `be7ac4caf`): `.com.br` responde `lang="pt-BR"` e `.com` responde `lang="en"`; `/livros` no `.com` → 301 para o `.com.br` (PR #530). As duas rotas institucionais que serviam português dentro do domínio inglês **foram traduzidas e verificadas em produção**: `/sobre` (PR #533) e `/por-que-linvuu` (PR #535) respondem 200 em inglês, sem `noindex`, com `hreflang` pt-BR/en/x-default. Continuam só em português, por decisão e não por esquecimento, `/contato` e `/ex-alunos-udemy` (`noindex` no `.com`, listados em `PENDENCIAS.md`); o próximo candidato natural é `/contato`.
+> Estado medido em 09/11 (`main` = `be7ac4caf`): `.com.br` responde `lang="pt-BR"` e `.com` responde `lang="en"`; `/livros` no `.com` → 301 para o `.com.br` (PR #530). As três rotas institucionais que serviam português dentro do domínio inglês **foram traduzidas**: `/sobre` (PR #533) e `/por-que-linvuu` (PR #535), verificadas em produção, e `/contato` (PR #543), que passou a responder 200 em inglês, sem `noindex`, com `hreflang` pt-BR/en/x-default e entrada no sitemap do `.com` (46 → 47 URLs). Continuam só em português, por decisão e não por esquecimento, `/ex-alunos-udemy` (conversão de ex-alunos) e `/livro/gramatica-ru` (produto em português): os dois seguem `noindex` no `.com`, listados em `PENDENCIAS.md`.
 
 
 ## O que isso significa

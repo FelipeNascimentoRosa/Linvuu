@@ -4,11 +4,48 @@
 // O texto de "Por que estudar com a Linvuu?" saiu daqui para src/lib/porQue.ts quando a página passou a existir
 // também em inglês (09/11/2026), pelo mesmo motivo do /sobre: uma língua por domínio, texto próprio em cada uma.
 
-export const CONTATO = {
-  titulo: 'Contato',
-  descricao: 'Como falar com a Linvuu: dúvidas sobre os cursos, os livros e o seu acesso, por e-mail e pelo LinkedIn dos autores.',
-  lead: 'Dúvidas sobre os cursos, os livros ou o seu acesso? Escolha o canal que for mais fácil para você.',
-} as const;
+export type TextoContato = {
+  titulo: string;
+  descricao: string;
+  lead: string;
+  kicker: string;
+  autoresNota: string;
+  perfilRotulo: string;
+  ariaCanais: string;
+  /** Só o título de busca e a descrição de busca: o h1 e o lead visível continuam em `titulo` e `descricao`. */
+  seoTitulo: string;
+  seoDescricao: string;
+};
+
+/**
+ * Contato: existe em português (.com.br) e em inglês (.com) desde 09/11/2026.
+ * Era a última página de confiança servida em português no domínio inglês (F1 do EN_AUDIT.md).
+ * O inglês foi escrito para quem lê o site em inglês, não traduzido palavra por palavra.
+ */
+export const CONTATO: Record<'pt-BR' | 'en', TextoContato> = {
+  'pt-BR': {
+    titulo: 'Contato',
+    descricao: 'Como falar com a Linvuu: dúvidas sobre os cursos, os livros e o seu acesso, por e-mail e pelo LinkedIn dos autores.',
+    lead: 'Dúvidas sobre os cursos, os livros ou o seu acesso? Escolha o canal que for mais fácil para você.',
+    kicker: 'Fale com a Linvuu',
+    autoresNota: 'Os autores respondem pelos próprios perfis.',
+    perfilRotulo: 'Perfil no LinkedIn',
+    ariaCanais: 'Canais de contato',
+    seoTitulo: 'Contato: fale com a Linvuu',
+    seoDescricao: 'Como falar com a Linvuu: dúvidas sobre os cursos, os livros e o seu acesso, por e-mail, WhatsApp e pelo LinkedIn dos autores.',
+  },
+  en: {
+    titulo: 'Contact',
+    descricao: 'How to reach Linvuu: questions about the courses, the books or your account, by e-mail and through the authors on LinkedIn.',
+    lead: 'Questions about the courses, the books or your account? Pick whichever channel is easier for you.',
+    kicker: 'Talk to Linvuu',
+    autoresNota: 'The authors answer from their own profiles.',
+    perfilRotulo: 'LinkedIn profile',
+    ariaCanais: 'Contact channels',
+    seoTitulo: 'Contact Linvuu: e-mail, WhatsApp and LinkedIn',
+    seoDescricao: 'How to reach Linvuu: questions about the courses, the books or your account, by e-mail, WhatsApp or the authors on LinkedIn.',
+  },
+};
 
 export const EX_ALUNOS = {
   titulo: 'Ex-alunos da Udemy: continue o russo na Linvuu',

@@ -6,6 +6,7 @@ import { EMAIL_OFICIAL, SITE_URL } from './site.ts';
 
 export const WHATSAPP_NUMERO = '5512996332770';
 export const WHATSAPP_MENSAGEM = 'Olá! Vim pelo site da Linvuu e queria tirar uma dúvida.';
+export const WHATSAPP_MENSAGEM_EN = 'Hello! I came from the Linvuu website and I have a question.';
 export const LINKEDIN_EMPRESA = '';
 
 export type IdContato = 'site' | 'email' | 'whatsapp' | 'linkedin';
@@ -13,15 +14,17 @@ export interface Contato { id: IdContato; nome: string; rotulo: string; href: st
 
 export const whatsappUrl = (mensagem: string = WHATSAPP_MENSAGEM): string => (WHATSAPP_NUMERO ? `https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(mensagem)}` : '');
 
-/** Só entram os canais que existem de verdade: nada de ícone que leva a lugar nenhum. */
-export function contatos(): Contato[] {
+/** Só entram os canais que existem de verdade: nada de ícone que leva a lugar nenhum.
+ *  Os rótulos seguem o idioma do domínio: no `.com` nada de «Falar pelo WhatsApp» em português. */
+export function contatos(codigo: 'pt-BR' | 'en' = 'pt-BR'): Contato[] {
+  const en = codigo === 'en';
   const lista: Contato[] = [
-    { id: 'site', nome: 'Site', rotulo: SITE_URL.replace('https://', ''), href: SITE_URL, externo: false },
+    { id: 'site', nome: en ? 'Website' : 'Site', rotulo: SITE_URL.replace('https://', ''), href: SITE_URL, externo: false },
     { id: 'email', nome: 'E-mail', rotulo: EMAIL_OFICIAL, href: `mailto:${EMAIL_OFICIAL}`, externo: false },
   ];
-  if (WHATSAPP_NUMERO) lista.push({ id: 'whatsapp', nome: 'WhatsApp', rotulo: 'Falar pelo WhatsApp', href: whatsappUrl(), externo: true });
+  if (WHATSAPP_NUMERO) lista.push({ id: 'whatsapp', nome: 'WhatsApp', rotulo: en ? 'Message on WhatsApp' : 'Falar pelo WhatsApp', href: whatsappUrl(en ? WHATSAPP_MENSAGEM_EN : WHATSAPP_MENSAGEM), externo: true });
   lista.push(LINKEDIN_EMPRESA
-    ? { id: 'linkedin', nome: 'LinkedIn', rotulo: 'Linvuu no LinkedIn', href: LINKEDIN_EMPRESA, externo: true }
-    : { id: 'linkedin', nome: 'LinkedIn', rotulo: 'Perfis dos autores', href: '/contato#linkedin', externo: false });
+    ? { id: 'linkedin', nome: 'LinkedIn', rotulo: en ? 'Linvuu on LinkedIn' : 'Linvuu no LinkedIn', href: LINKEDIN_EMPRESA, externo: true }
+    : { id: 'linkedin', nome: 'LinkedIn', rotulo: en ? 'Authors’ profiles' : 'Perfis dos autores', href: '/contato#linkedin', externo: false });
   return lista;
 }
