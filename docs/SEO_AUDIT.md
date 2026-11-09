@@ -67,7 +67,7 @@ Uma coisa do playbook é boa e fica: **a auditoria medida** (este arquivo) e a e
 Ordenadas pelo que trava receita, não pelo que é mais fácil.
 
 1. **Compra não verificada de ponta a ponta**, nos dois domínios. Enquanto isso não acontecer, nada de anúncio: é a mesma conclusão de `docs/MARKETING-30-DIAS-2026-11.md`. Depende de Felipe (US$ 1, reembolsar, conferir queda de acesso).
-2. ~~**`.com/sobre` em português com `<html lang="en">`**~~ — **resolvido em 09/11** (PR #533; verificado em produção: 200, `lang="en"`, sem `noindex`, sitemap do `.com` com 36 URLs): página escrita em inglês, `lang="en"`, sem `noindex`, no sitemap do `.com` com hreflang. Foi tradução, não redirect, como este documento dizia.
+2. ~~**`.com/sobre` em português com `<html lang="en">`**~~ — **resolvido em 09/11** (PR #533; verificado em produção: 200, `lang="en"`, sem `noindex`, sitemap do `.com` com 36 URLs): página escrita em inglês, `lang="en"`, sem `noindex`, no sitemap do `.com` com hreflang. Foi tradução, não redirect, como este documento dizia. O mesmo defeito existia, pior, em `/por-que-linvuu` — título em português, `noindex` e **sem corpo pré-renderizado** no `.com` — na rota que vende; corrigido em 09/11 na branch `feat/por-que-em-ingles` (aguardando merge e deploy).
 3. **Inglês só cobre 3 dos 7 cursos** (br 248, fr 248, ru 312 = 808 sessões). `de`, `en`, `es` e `it` têm **0** explicação em inglês: vender esses quatro no `.com` seria prometer o que não existe. Traduzir 4 × 248–288 sessões é meses de trabalho — só depois de o Brasil pagar (§ `docs/META-1M-2027.md`).
 4. **Demanda de busca das páginas de aula é baixa.** 3.784 páginas é alcance, não tráfego: ninguém procura "aula 7 dia 3 curso de alemão". O tráfego orgânico vem de páginas de dúvida ("quando usar since e for", "acusativo alemão"). **Falta o corpus editorial** que disputa essas buscas — é o único item desta lista que gera receita sem depender de Felipe.
 5. **APK sem monetização**: compras desligadas, sem backend Play, sem AAB assinado (`docs/APK.md:7,15`). Quatro a seis semanas de engenharia que só pagam depois da publicação.
@@ -78,12 +78,13 @@ Ordenadas pelo que trava receita, não pelo que é mais fácil.
 
 | # | Tarefa | Dono | Depende de | Efeito |
 |---|---|---|---|---|
-| 1 | Traduzir `/sobre` para o `.com` | ~~agente~~ **feito 09/11, em produção** | — | fechou a última rota pt dentro do domínio en |
+| 1 | Traduzir `/sobre` e `/por-que-linvuu` para o `.com` | ~~agente~~ **feito 09/11** (`/sobre` em produção; `/por-que-linvuu` aguardando merge) | — | tirou o português das duas rotas institucionais do domínio en |
 | 2 | Corpus editorial pt: páginas de dúvida com `FAQPage` | agente | — | a única alavanca de tráfego orgânico real |
 | 3 | Atualizar `DECISAO-SITE-INTERNACIONAL.md` ao modelo por domínio | agente | — | para de induzir erro nos agentes |
 | 4 | Compra verificada US$ 1 + R$ (dois domínios) | Felipe | Stripe test | destrava anúncio e medição |
 | 5 | Play: AAB assinado + backend de compras | agente + Felipe | dados empresariais | abre o canal APK |
 | 6 | Traduzir `de`/`en`/`es`/`it` para inglês | agente | receita do Brasil | abre o `.com` de verdade |
+| 7 | Traduzir `/contato` para o `.com` | agente | decisão do Felipe | contato é confiança para quem compra; hoje é `noindex` no `.com` |
 
 O item 2 é o único que combina "não depende de terceiro" com "gera receita", e é o que o `docs/META-1M-2027.md` trata como motor principal de médio prazo.
 

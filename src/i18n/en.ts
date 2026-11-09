@@ -79,7 +79,7 @@ export const en: Dicionario = {
     eConj: 'and',
     criadaPor: 'Created by',
     frase: 'Languages taught step by step, for English speakers.', novidadesTitulo: 'Get updates', novidadesTexto: 'New lessons, languages and books. No spam.',
-    termos: 'Terms of use', sobre: 'About Linvuu', privacidade: 'Privacy policy', idiomas: 'Languages', portugues: 'Brazilian Portuguese', contato: 'Contact', direitos: '© 2026 Linvuu. All rights reserved.',
+    termos: 'Terms of use', sobre: 'About Linvuu', porQue: 'Why study with Linvuu?', privacidade: 'Privacy policy', idiomas: 'Languages', portugues: 'Brazilian Portuguese', contato: 'Contact', direitos: '© 2026 Linvuu. All rights reserved.',
   },
   newsletter: { email: 'Your e-mail', consentimento: 'I agree to receive e-mails from Linvuu.', botao: 'Sign me up', ok: 'Done. You will receive Linvuu updates.', erro: 'We could not sign you up right now. Write to', invalido: 'Enter a valid e-mail address.', semAceite: 'Tick the box to receive e-mails.', ocupado: 'Sending…', assunto: 'Updates, please' },
   card: { noAr: (n: number) => (n === 1 ? '1 lesson online' : `${n} lessons online`), preparo: 'In preparation', ate: 'zero to B1', cobertura: (a: number, b: number) => (a >= b ? 'All lessons in English' : `${a} of ${b} lessons in English`) },
