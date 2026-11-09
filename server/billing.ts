@@ -237,21 +237,21 @@ export function registrarCobranca(app: Express, urlBase: (req: Request) => strin
           ? await stripe!.checkout.sessions.create({
               ...comum, mode: 'payment', // sem lista fixa: o Stripe oferece, em USD, os meios que a conta tem ativos (cartão, Apple/Google Pay, Link, PayPal...)
               line_items: [{ quantity: 1, price_data: { currency: 'usd', unit_amount: CENTAVOS_USD.anual, product_data: { name: 'Linvuu: 12 months of access' } } }],
-              metadata: { plano: 'anual', uid: u.uid, ...medicao },
+              metadata: { plano: 'anual', uid: u.uid, ...medicao, site: base },
               custom_text: { submit: { message: 'One payment, no automatic renewal, with a full refund within 7 days.' } },
             }, opcoes)
           : await stripe!.checkout.sessions.create({
               ...comum, mode: 'subscription',
               custom_text: { submit: { message: 'Full refund within 7 days. Cancel any time, no penalty.' } },
               line_items: [{ price: precoMensalUsdObrigatorio(process.env.STRIPE_PRICE_ID_USD), quantity: 1 }],
-              metadata: { plano: 'mensal', uid: u.uid, ...medicao },
+              metadata: { plano: 'mensal', uid: u.uid, ...medicao, site: base },
             }, opcoes))
         : pix
         ? await stripe!.checkout.sessions.create({
             ...comum, mode: 'payment', allowed_payment_method_types: ['pix'],
             payment_method_options: { pix: { expires_after_seconds: 86400 } },
             line_items: [{ quantity: 1, price_data: { currency: 'brl', unit_amount: CENTAVOS['trimestral-pix'], product_data: { name: 'Linvuu: 3 meses de acesso (Pix, 30% de desconto)' } } }],
-            metadata: { plano, uid: u.uid, ...medicao },
+            metadata: { plano, uid: u.uid, ...medicao, site: base },
             custom_text: { submit: { message: 'Pagamento único por Pix, sem renovação automática. O QR code aparece na tela seguinte. Reembolso integral em até 7 dias.' } },
           }, opcoes)
         : pacote
@@ -259,14 +259,14 @@ export function registrarCobranca(app: Express, urlBase: (req: Request) => strin
             ...comum, mode: 'payment', allowed_payment_method_types: ['card', 'boleto'],
             payment_method_options: { boleto: { expires_after_days: 3 } },
             line_items: [{ quantity: 1, price_data: { currency: 'brl', unit_amount: anual ? CENTAVOS.anual : CENTAVOS.trimestral, product_data: { name: anual ? 'Linvuu: 12 meses de acesso' : 'Linvuu: 3 meses de acesso' } } }],
-            metadata: { plano: anual ? 'anual' : 'trimestral', uid: u.uid, ...medicao },
+            metadata: { plano: anual ? 'anual' : 'trimestral', uid: u.uid, ...medicao, site: base },
             custom_text: { submit: { message: 'Pagamento único, sem renovação automática, com reembolso integral em até 7 dias.' } },
           }, opcoes)
         : await stripe!.checkout.sessions.create({
             ...comum, mode: 'subscription',
             custom_text: { submit: { message: 'Reembolso integral em até 7 dias. Cancele quando quiser, sem multa.' } },
             line_items: [{ price: await preco(), quantity: 1 }],
-            metadata: { plano: 'mensal', uid: u.uid, ...medicao },
+            metadata: { plano: 'mensal', uid: u.uid, ...medicao, site: base },
           }, opcoes);
       res.json({ url: s.url });
     } catch (e) { console.error('billing/checkout', e); res.status(500).json({ error: 'Não foi possível abrir o pagamento.' }); }
