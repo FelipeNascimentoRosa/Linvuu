@@ -120,7 +120,19 @@ Limitação do método de sondagem: o navegador deste ambiente não executa o Re
 
 O que continua faltando para o espanhol virar idioma pleno do `.com` (número medido, não estimado): **32 aulas / 128 sessões** em inglês, mais 32 aulas de gramática sem tradução. E, para alemão e italiano, o buraco é total: `de` 0 de **72 aulas** (288 sessões, **18.352 textos** de explicação, 402 só na aula 1) e `it` 0 de **62 aulas** (248 sessões, **17.100 textos**, 464 na aula 1). Os títulos já estão traduzidos (`de` 291, `it` 310) e as palavras dos cursos de alemão já trazem o inglês no próprio dado; o que falta é a prosa de explicação, que pelo §1 do `docs/ESTRUTURA-INTERNACIONAL.md` não é tradução palavra a palavra (as comparações de som são reescritas com referências do inglês) e pelo §4 exige revisão de falante nativo antes de divulgar.
 
-Estado: **implementado e testado localmente; não mesclado, não deployado, não verificado em produção.**
+Estado: **mesclado** (PR #537, `4c3f4f7d9`; 7/7 checks verdes — `build`, `paridade-head`, `lighthouse`, `apk`, `robots-google`, gitleaks e dependências) e **verificado em produção em 09/11/2026**, depois de o deploy do Render entrar (o sitemap do `.com` virou de 37 para 46 `<loc>` entre 14:50 e 14:52Z; `mergedAt` 14:26Z):
+
+| Sondagem (produção, com query única para furar o cache de borda) | Resultado |
+|---|---|
+| `https://linvuu.com/curso/es/dia/1` | 200, `<html lang="en"`, «Sounds, alphabet and first words · Spanish · Day 1», **sem `robots`**, corpo em inglês, nenhuma palavra em português |
+| `https://linvuu.com/gramatica/es` | 200, `lang="en"`, «Spanish grammar for English speakers · Linvuu», sem `robots`, 12.848 bytes |
+| `https://linvuu.com/curso/es` | 200, `lang="en"`, «Spanish course: English edition in preparation», `noindex` — de propósito: faltam 32 aulas |
+| `https://linvuu.com/cursos` | 200, `lang="en"`, «Courses · Linvuu» |
+| `https://linvuu.com.br/curso/es/dia/1` | 200, `lang="pt-BR"`, «Sons, alfabeto e primeiras palavras · Espanhol · Dia 1» — inalterado |
+| `https://linvuu.com.br/gramatica/es` | 200, `lang="pt-BR"`, «Gramática: espanhol» — inalterado |
+| `https://linvuu.com/sitemap.xml` | **46** `<loc>` (eram 37); `/curso/es/dia/1` com `hreflang` en → `.com` |
+| `https://linvuu.com.br/sitemap.xml` | 87 `<loc>`; a mesma URL com `hreflang` pt-BR → `.com.br` |
+| não regrediu | `.com/sobre` 200 «Who writes Linvuu» sem `robots`; `.com/por-que-linvuu` 200 «Why study with Linvuu?» sem `robots` |
 
 
 
