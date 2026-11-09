@@ -77,7 +77,7 @@ export const ptBR = {
     eConj: 'e',
     criadaPor: 'Criada por',
     frase: 'Idiomas ensinados passo a passo, para quem fala português.', novidadesTitulo: 'Receba novidades', novidadesTexto: 'Novas aulas, idiomas e livros. Sem spam.',
-    termos: 'Termos de uso', sobre: 'Quem somos', privacidade: 'Política de privacidade', idiomas: 'Idiomas', portugues: 'Português para estrangeiros', contato: 'Contato', direitos: '© 2026 Linvuu. Todos os direitos reservados.',
+    termos: 'Termos de uso', sobre: 'Quem somos', porQue: 'Por que estudar com a Linvuu?', privacidade: 'Política de privacidade', idiomas: 'Idiomas', portugues: 'Português para estrangeiros', contato: 'Contato', direitos: '© 2026 Linvuu. Todos os direitos reservados.',
   },
   newsletter: { email: 'Seu e-mail', consentimento: 'Concordo em receber e-mails da Linvuu.', botao: 'Quero receber', ok: 'Pronto. Você vai receber as novidades da Linvuu.', erro: 'Não conseguimos registrar agora. Escreva para', invalido: 'Digite um e-mail válido.', semAceite: 'Marque a caixa para receber e-mails.', ocupado: 'Enviando…', assunto: 'Quero receber novidades' },
   card: { noAr: (n: number) => (n === 1 ? '1 aula no ar' : `${n} aulas no ar`), preparo: 'Em preparação', ate: 'do zero ao B1', cobertura: (_a: number, _b: number) => '' },
