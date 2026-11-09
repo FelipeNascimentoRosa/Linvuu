@@ -66,7 +66,18 @@ O `PENDENCIAS.md` e o `docs/PLANO-3-DIAS-2026-11.md` traziam "definir `STRIPE_PR
 Prova: `https://linvuu.com/readyz` responde 200. Isso só acontece porque `server/prontidao.ts` valida o preço em dólar **quando a variável existe** e devolve 503 em `preco-usd` ou `preco-usd-divergente`; o 200 atesta variável presente, formato válido, preço ativo, live, em dólar, mensal e com `unit_amount` igual ao anunciado. `https://linvuu.com/assinatura` mostra US$ 19.99 e US$ 149.00 e **nenhum** valor em reais; `https://linvuu.com.br/assinatura` mostra R$ 139, R$ 291,90, R$ 417 e R$ 999 e nenhum em dólar. Ou seja: a moeda segue o domínio, como a decisão de 07/11 (`docs/PRECOS-DEFINIDOS.md`) descreve.
 Limitações: nenhuma sessão de Checkout foi aberta e nenhuma cobrança foi feita — a compra de teste de US$ 1 com reembolso continua pendente e é o único passo que depende do Felipe; Apple Pay e Google Pay não foram verificados no painel. Observação de método: o subdomínio `linvuu.onrender.com` responde 404 em `/readyz`, coincidindo com `renderSubdomainPolicy: disabled` na configuração do serviço; por isso a prova usa os dois domínios públicos. Estado: documental — corrige o registro, não altera código nem configuração.
 
-## Três merges, auditoria medida e meta de receita (2026-11-09)
+## /sobre em inglês: página escrita, não tradução automática (2026-11-09)
+
+`https://linvuu.com/sobre` servia texto em português com `<html lang="en">` e `noindex`: mentia para o leitor de tela e não existia para a busca. Agora existe página em inglês de verdade — o item 1 da fila de `docs/SEO_AUDIT.md`.
+
+- Texto nas duas línguas em `src/lib/sobre.ts`, no mesmo molde de `src/lib/institucional.ts`: a página React e o HTML pré-renderizado que o Google lê saem da mesma fonte, e o exemplo do método foi reescrito para o erro de quem fala inglês («eu sou trinta anos» em vez de «eu tenho trinta anos»).
+- `src/lib/metaRota.ts`: `/sobre` passa a ter título, descrição e `inLanguage` por idioma, `em: ['pt-BR', 'en']` e nenhum `semIndice`; o HTML pré-renderizado traz a página inteira na língua do domínio; o menu do `.com` ganha o link «About Linvuu» (antes a página era órfã lá).
+- `scripts/seo.mjs`: `/sobre` entra no sitemap dos dois domínios com `hreflang` (`.com`: 35 → 36 URLs).
+- `Footer.tsx` e `src/i18n/{pt-BR,en}.ts`: link «About Linvuu» no rodapé inglês; o português continua «Quem somos», com o texto idêntico.
+
+Verificado: `tsc --noEmit` e `lint:apk` limpos; `testar:dominio` 20/20; `testar-inventario-seo` conforme (3.680 sessões, sitemap 123); `testar-http-seo` **3.784 páginas** conformes (281 redirecionamentos); `testar-titulos` 87 títulos com no máximo 60 caracteres; `testar-seo-publico` conforme; `npm run build` OK. HTTP local com `Host` real: `.com/sobre` → `lang="en"`, `inLanguage: en`, sem `robots`, hreflang pt-BR/en/x-default; `.com.br/sobre` → `lang="pt-BR"`, `inLanguage: pt-BR`, texto em português. Estado: implementado e testado nesta branch; **sem merge**.
+
+
 
 Fila fechada nesta sessão, todos por squash, CI completo verde e branch remota apagada: **#530** (`/livros` no `.com` → 301, `6090f6814`), **#529** (`.env` carregado antes dos módulos, `6f77dc67f`) e **#531** (mensal em dólar já configurada, `b71ce2405`). Dois deles colidiam no mesmo ponto deste arquivo; as resoluções foram aditivas — as seções das duas pontas foram mantidas e nenhuma linha vinda da main foi removida. Depois do deploy, produção conferida por HTTP: `https://linvuu.com/readyz` → **200** e `https://linvuu.com/livros` → **301** para `https://linvuu.com.br/livros`. O 200 do `/readyz` continua atestando preço em dólar presente, ativo, live, mensal e com o valor anunciado (`server/prontidao.ts`).
 
