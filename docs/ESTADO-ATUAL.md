@@ -75,7 +75,22 @@ Limitações: nenhuma sessão de Checkout foi aberta e nenhuma cobrança foi fei
 - `scripts/seo.mjs`: `/sobre` entra no sitemap dos dois domínios com `hreflang` (`.com`: 35 → 36 URLs).
 - `Footer.tsx` e `src/i18n/{pt-BR,en}.ts`: link «About Linvuu» no rodapé inglês; o português continua «Quem somos», com o texto idêntico.
 
-Verificado: `tsc --noEmit` e `lint:apk` limpos; `testar:dominio` 20/20; `testar-inventario-seo` conforme (3.680 sessões, sitemap 123); `testar-http-seo` **3.784 páginas** conformes (281 redirecionamentos); `testar-titulos` 87 títulos com no máximo 60 caracteres; `testar-seo-publico` conforme; `npm run build` OK. HTTP local com `Host` real: `.com/sobre` → `lang="en"`, `inLanguage: en`, sem `robots`, hreflang pt-BR/en/x-default; `.com.br/sobre` → `lang="pt-BR"`, `inLanguage: pt-BR`, texto em português. Estado: implementado e testado nesta branch; **sem merge**.
+Verificado: `tsc --noEmit` e `lint:apk` limpos; `testar:dominio` 20/20; `testar-inventario-seo` conforme (3.680 sessões, sitemap 123); `testar-http-seo` **3.784 páginas** conformes (281 redirecionamentos); `testar-titulos` 87 títulos com no máximo 60 caracteres; `testar-seo-publico` conforme; `npm run build` OK. HTTP local com `Host` real: `.com/sobre` → `lang="en"`, `inLanguage: en`, sem `robots`, hreflang pt-BR/en/x-default; `.com.br/sobre` → `lang="pt-BR"`, `inLanguage: pt-BR`, texto em português.
+
+Estado: **mesclado** (PR #533, `52ec41761`) e **verificado em produção em 09/11/2026**, depois de o deploy do Render entrar:
+
+| Sondagem (produção, com query única para furar o cache de borda) | Resultado |
+|---|---|
+| `https://linvuu.com/sobre` | 200, `<html lang="en"`, título «Who writes Linvuu · Linvuu», **sem `<meta name="robots">`** |
+| canonical e alternates do `.com/sobre` | `canonical` https://linvuu.com/sobre; `hreflang` pt-BR → .com.br, en → .com, x-default → .com |
+| `https://linvuu.com.br/sobre` | 200, `<html lang="pt-BR"`, título «Quem escreve a Linvuu», `inLanguage: pt-BR`, sem `noindex` |
+| `https://linvuu.com/sitemap.xml` | **36** `<loc>` (era 35); `/sobre` com os três `xhtml:link` |
+| `https://linvuu.com.br/sitemap.xml` | 87 `<loc>`; `/sobre` com os três `xhtml:link` |
+| menu e rodapé do `.com` | link «About Linvuu» presente na home e no `/sobre` |
+| corpo pré-renderizado do `/sobre` inglês | texto inteiro em inglês, com o exemplo «eu sou trinta anos» citado como erro do falante de inglês |
+| não regrediu | `https://linvuu.com/livros` → 301 para `https://linvuu.com.br/livros` (query preservada); `.com.br/livros` → 200; `.com/` → 200 com `lang="en"` |
+
+O deploy levou cerca de 25 minutos para aparecer; até ele entrar, o `.com/sitemap.xml` continuou com 35 URLs e o `/sobre` com título em português — sinal de que a origem ainda estava na versão anterior, não de cache (a sonda com query única mostrou o mesmo).
 
 
 

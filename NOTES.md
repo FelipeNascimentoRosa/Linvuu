@@ -40,6 +40,15 @@ Consequence: "unused CSS", "font-display", "images without dimensions" and "not 
 
 `docs/VUU.md` records one Vuu (`public/assets/vuu/vuu.svg`). It is kept: it appears in empty states and onboarding, costs one cached SVG, and no measurement shows it hurting conversion. There is no plan to add more mascots, and no plan to remove the one that exists.
 
-## 7. Root `NOTES.md` (this file) is documentation only
+## 7. How a merge actually reaches the public domain
+
+Measured on 09/11/2026 (PR #533): pushing to `main` does not touch the public site. Render builds on its own schedule and, in this run, the new code appeared about **25 minutes** after the merge. Until then `https://linvuu.com/sitemap.xml` still listed 35 URLs and `/sobre` still had its old Portuguese title.
+
+Two consequences for anyone verifying a deploy:
+
+- **Add a unique query string** (`?cb=<random>`) to the probe. Cloudflare caches HTML by full URL at the edge, and without the query you may be reading the previous version and calling it a failed deploy. With the query and the old content, the origin is genuinely old.
+- **Pick a probe that only the new code can answer** — here, the sitemap count (35 → 36) and the English `<title>`. `/readyz` returns `{"ok":true,"checkedAt":…}` and carries no commit identity, so it cannot tell you which version is live. `linvuu.onrender.com` is disabled (`renderSubdomainPolicy: disabled`), so there is no origin URL to inspect directly either.
+
+## 8. Root `NOTES.md` (this file) is documentation only
 
 It changes nothing at runtime. If it ever disagrees with the Portuguese documents, the Portuguese documents win and this file is corrected in the same PR.
