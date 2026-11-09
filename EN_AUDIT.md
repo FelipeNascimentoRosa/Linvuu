@@ -151,7 +151,7 @@ O Harper, em dialeto americano, cobra a vírgula de Oxford em 70 pontos: `/portu
 
 ### F10 — Indexação incoerente entre hub e aula
 
-`/curso/es` está `noindex`, mas `/curso/es/dia/1` está **indexável e no sitemap** — e o texto dela é inglês completo (684 palavras, 0 lint de gramática). Para o Google, a aula é a porta de entrada de um curso cujo hub não existe. `/curso/de|it|en` e `/gramatica/de|it|en` estão coerentes (hub e aula bloqueados).
+`/curso/es` está `noindex`, mas `/curso/es/dia/1` está **indexável e no sitemap** — e o texto dela é inglês completo (684 palavras, 2 lints de gramática/uso, 0,3 por 100). Para o Google, a aula é a porta de entrada de um curso cujo hub não existe. `/curso/de|it|en` e `/gramatica/de|it|en` estão coerentes (hub e aula bloqueados).
 
 ### F11 — Inglês entregue de duas maneiras diferentes na mesma página
 

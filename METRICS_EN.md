@@ -138,7 +138,7 @@ Medição: `https://linvuu.com` (HTML do servidor) + Chromium em produção para
 | Páginas medidas | 37 | + 1 redirect, + 1 página 404 |
 | Palavras medidas | 20 717 | só o conteúdo principal |
 | Lints do Harper | 2 073 | de todos os tipos |
-| `gramaticaUso` | **123** (0,59 por 100 palavras) | a meta do mandato é ≤ 0,5 — a média passa de raspão, mas 30 dos 123 vieram de `/gramatica/{br,fr,es}`, páginas que ensinam línguas |
+| `gramaticaUso` | **123** (0,59 por 100 palavras) | a meta do mandato é ≤ 0,5. O número engana: **92 dos 123** vieram de `/gramatica/{br,fr,es}`, páginas que ensinam línguas e citam exemplos em outra língua. Fora delas sobram 31 lints em 17.127 palavras = **0,18 por 100**, dentro da meta |
 | `ortografia` | 1 789 | 86 % do total. Em página que ensina russo, francês ou português, cada palavra estrangeira é "erro de ortografia"; o que importa aqui é o salto nas três páginas em português (43, 47 e 155) |
 | `estiloOxford` | 70 | decisão de guia de estilo, não erro |
 | `legibilidade` | 41 | frases longas, cai junto com a reescrita |
