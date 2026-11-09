@@ -49,6 +49,18 @@ Two consequences for anyone verifying a deploy:
 - **Add a unique query string** (`?cb=<random>`) to the probe. Cloudflare caches HTML by full URL at the edge, and without the query you may be reading the previous version and calling it a failed deploy. With the query and the old content, the origin is genuinely old.
 - **Pick a probe that only the new code can answer** — here, the sitemap count (35 → 36) and the English `<title>`. `/readyz` returns `{"ok":true,"checkedAt":…}` and carries no commit identity, so it cannot tell you which version is live. `linvuu.onrender.com` is disabled (`renderSubdomainPolicy: disabled`), so there is no origin URL to inspect directly either.
 
-## 8. Root `NOTES.md` (this file) is documentation only
+## 9. Design changes need a measurement, not an opinion (REA, 09/11/2026)
+
+A playbook received on 09/11/2026 demands evidence for every visual change (Rapid Evidence Assessment) and forbids improvising on taste. That rule is adopted here as written, with three additions that the repository already enforces:
+
+- **Baseline before the change.** `node scripts/medir-baseline.mjs --runs=2` measures the local build (`.com.br` profile) and `--so-producao` measures both live domains, always with the same tools: Lighthouse 13.6.0 (inside the pinned `@lhci/cli` 0.16.0 in `scripts/seo-tools`) and axe-core 4.14.0 through Playwright. Numbers go to `METRICS.md`; the raw reports stay in `.baseline/<run>/` (git-ignored).
+- **One variable at a time.** `lighthouserc.cjs` already blocks a merge when SEO < 0.90, performance < 0.75, CLS > 0.10 or the page is not crawlable. A visual change that trips those gates is reverted, not argued with.
+- **A conversion metric must exist before the change is judged.** `src/lib/analytics.ts:4` lists the only events the site may send. There is no per-button CTA event yet, so a hero or button experiment can only be judged by `view_pricing` / `select_plan` / `checkout_started`; that is weaker than a click on the button itself. This is recorded as a prerequisite in `docs/SEO_AUDIT.md` §7.4.
+
+Why the local run is not enough: the server decides the domain profile from the `Host` header, and neither Lighthouse nor Chromium lets the auditor forge it. The `.com` face is therefore measured on production after the deploy, which is also the only place where CDN, compression and cache behave as the reader experiences them.
+
+Two honest limits, both recorded rather than worked around: Lighthouse measures **TBT**, not INP — real INP needs field data (CrUX or Search Console), which needs credentials this repository does not hold; and PostHog numbers are consent-gated and not readable without the founder's project access, so the funnel baseline in `METRICS.md` is marked *not measured* instead of estimated.
+
+## 10. Root `NOTES.md` (this file) is documentation only
 
 It changes nothing at runtime. If it ever disagrees with the Portuguese documents, the Portuguese documents win and this file is corrected in the same PR.

@@ -21,8 +21,8 @@ Isso é melhor que prerender de build para este produto: as 1.840 sessões e os 
 | Item | Estado | Fonte |
 |---|---|---|
 | Páginas HTML públicas | 3.784 respostas HTTP com meta coerente | `scripts/testar-http-seo.ts` |
-| Sitemap `.com.br` | `public/sitemap.xml`, **87 URLs** | contagem de `<loc>` |
-| Sitemap `.com` | `public/sitemap-global.xml`, **35 URLs** | contagem de `<loc>` |
+| Sitemap `.com.br` | `public/sitemap.xml`, **87 URLs** | contagem de `<loc>` (`node scripts/seo.mjs` regenera) |
+| Sitemap `.com` | `public/sitemap-global.xml`, **46 URLs** (eram 35 em 09/11 antes do PR #537) | contagem de `<loc>` |
 | `robots.txt` | existe; `Allow: /`, `Disallow: /api/` e `/admin/`, `Sitemap:` declarado | `public/robots.txt`; `public/robots-global.txt` |
 | `favicon` | existe (`/brand/favicon-64.png` + `apple-touch-icon`) | `index.html:22-23` |
 | `webmanifest` (PWA) | **não existe** — e não é prioridade: o app do celular é o APK. O `manifest` do `vite.config.ts:70` é o manifest de build do Vite (modulepreload), outro assunto | `vite.config.ts:69-70` |
@@ -31,7 +31,7 @@ Isso é melhor que prerender de build para este produto: as 1.840 sessões e os 
 | `lang` por domínio | `.com.br` → `pt-BR`; `.com` → `en`; rota que não existe no domínio → 301 | `server/dominio.ts`, `scripts/testar-dominio.ts` |
 | JSON-LD | **23 tipos** já emitidos, incluindo `EducationalOrganization`, `WebSite`, `BreadcrumbList`, `Course`, `CourseInstance`, `Offer`, `Product`, `FAQPage`, `Book`, `Chapter` | `src/lib/metaRota.ts`, `src/components/JsonLd.tsx` |
 | Imagens | 16 `.webp`, 9 `.svg`, 5 `.png`, 3 `.jpg` — WebP já é o padrão | `public/**` |
-| Conteúdo | 7 cursos, **1.840 sessões**; 1.592 explicadas em pt, 808 em inglês | `docs/COBERTURA-IDIOMAS.md` |
+| Conteúdo | 7 cursos, **1.840 sessões**; 1.592 explicadas em pt, **928** em inglês (808 + 120 de espanhol a partir do PR #537) | `docs/COBERTURA-IDIOMAS.md`, `node scripts/conteudo.mjs --check` |
 
 ## 3. O que o CI já cobra (não precisa de auditoria manual)
 
@@ -88,3 +88,58 @@ Ordenadas pelo que trava receita, não pelo que é mais fácil.
 
 O item 2 é o único que combina "não depende de terceiro" com "gera receita", e é o que o `docs/META-1M-2027.md` trata como motor principal de médio prazo.
 
+
+
+## 7. Mapa de rotas e estado medido — Fase 1 do protocolo REA (09/11/2026)
+
+Inventário levantado por leitura do código e por HTTP real, não por suposição:
+
+- rotas do Express: `Select-String -Path server.ts,server/*.ts` (as famílias da tabela abaixo);
+- rotas do React: `src/App.tsx:67-93`;
+- famílias dinâmicas e totais: `content/indice.json` + `content/indice.en.json`;
+- estado em produção: `node --import tsx scripts/testar-http-seo.ts` → `{"paginasHttp":3784,"redirecionados":281,"aliases":3,"resultado":"conforme"}` (09/11/2026, `dist` do commit `f364b7dc`), mais sondagem `curl` rota a rota nos dois domínios com `?cb=` aleatório para furar o cache de borda.
+
+### 7.1 Rotas de página (React + injeção de meta no Express)
+
+| Rota | Existe em `.com.br` | Existe em `.com` | Indexável |
+|---|---|---|---|
+| `/` | sim (pt-BR) | sim (en) | sim, nos dois |
+| `/cursos` | sim | sim | sim |
+| `/curso/:id` | sim (br, de, en, es, fr, it, ru) | idem, explicado em inglês quando existe | sim; `de`, `en`, `es`, `it` ficam `noindex` no `.com` com «English edition in preparation» |
+| `/curso/:id/dia/:n` | sim (1.840) | subconjunto explicado em inglês (928 sessões) | sim nas sessões traduzidas |
+| `/gramatica` e `/gramatica/:id` | sim | sim | sim quando a gramática existe no idioma |
+| `/livros`, `/livros/:id`, `/livros/:id/capitulo/:n` | sim | **não** (301 para o `.com.br`) | sim só no `.com.br` |
+| `/livro/gramatica-ru` | sim | sim, `noindex` | não (página de apoio) |
+| `/portugues` | 301 para o `.com` | sim (curso de português para estrangeiros) | sim |
+| `/russo-online` | sim | sim | sim |
+| `/sobre`, `/por-que-linvuu` | sim | sim, em inglês desde o PR #535 | sim |
+| `/contato` | sim | sim, **`noindex`** e corpo em português | não no `.com` (limitação registrada em `src/lib/metaRota.ts:276-277`) |
+| `/ex-alunos-udemy` | sim | sim, `noindex` e título em português | não no `.com` |
+| `/assinatura`, `/entrar`, `/cadastro`, `/excluir-conta` | sim | sim | `entrar`/`cadastro` sempre `noindex` |
+| `/privacidade`, `/termos` | sim | sim, em inglês | sim |
+| `/conta` | 404 (só no app nativo) | 404 | não |
+
+### 7.2 Endpoints de serviço (nunca indexáveis)
+
+`/healthz`, `/readyz`, `/api/meta`, `/api/aula/:idioma/:n`, `/api/gramatica/:idioma`, `/api/audio/:idioma/:arquivo`, `/api/billing/{status,checkout,portal}`, `/api/progresso`, `/api/avaliacoes`, `/api/newsletter`, `/api/evento`, `/api/metricas`, `/api/conta/excluir`, `/api/stripe/webhook`, `/api/livros/gramatica-ru`, `/.well-known/assetlinks.json`, `/sitemap.xml`, `/robots.txt`, `/llms.txt`. Todos com `noindex` e limite de uso em `server/seguranca.ts:119-131`.
+
+### 7.3 Redirecionamentos com regra (301, testados)
+
+| De | Para | Por quê |
+|---|---|---|
+| `/metodo` | `/#metodo` | âncora antiga |
+| `/preco` | `/assinatura` | nome antigo |
+| `/brazilian-portuguese`, `/en/brazilian-portuguese`, `/es/brazilian-portuguese` | `.com/portugues` | o curso tem uma casa só |
+| `/en/*` no `.com.br` | `.com/*` | inglês mora no `.com` |
+| `/es/*` em qualquer domínio | caminho sem prefixo, no domínio do idioma | o espanhol deixou de ter prefixo em 06/11/2026 |
+| `/curso/br/*` no `.com.br` | `.com/curso/br/*` | o curso de português para estrangeiros mora no domínio inglês (`server.ts:199-202`); no `.com` é página normal |
+| rota com barra final | mesma rota sem barra | endereço único (`server.ts:204`) |
+
+### 7.4 O que está quebrado, faltando ou frágil (medido hoje)
+
+1. **Três páginas do `.com` sem versão inglesa**: `/contato` (corpo e título em português, `noindex`), `/ex-alunos-udemy` (título em português, `noindex`) e `/livro/gramatica-ru` (título em português, `noindex`). As três devolvem 200 com `lang="en"` e texto em português — o mesmo defeito que `/sobre` e `/por-que-linvuu` tiveram, corrigidos em 09/11. A correção aqui é traduzir, não redirecionar: são páginas de confiança de quem compra.
+2. **`/livros/*` não existe no `.com`**: 301 para o `.com.br`. Coerente com o §7.3, mas deixa o domínio inglês sem a coleção de livros.
+3. **`de`, `en`, `es` e `it` não são vendáveis no `.com`**: cobertura em inglês de 0, 0, 120 e 0 sessões (`docs/COBERTURA-IDIOMAS.md`). O espanhol tem 8 aulas publicadas e o hub `noindex`.
+4. **`webmanifest` ausente** — não é prioridade enquanto o caminho móvel for o APK.
+5. **`docs/DECISAO-SITE-INTERNACIONAL.md` desatualizado** (ainda descreve `/`, `/en`, `/es`), e é o documento que o `AGENTS.md` manda ler primeiro.
+6. **Nenhum evento de clique em CTA**: `src/lib/analytics.ts:4` cobre `page_viewed`, `course_viewed`, `lesson_started`, `practice_completed`, `lesson_completed`, `view_pricing`, `select_plan`, `checkout_started`, `checkout_returned`, `signup_completed`. Dá para medir o funil, mas **não** «quantos clicaram neste botão do hero». Qualquer mudança de hero/CTA na Fase 4 precisa desse evento antes, senão a atribuição fica cega.
