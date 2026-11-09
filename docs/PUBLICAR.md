@@ -7,7 +7,7 @@ O site no ar roda no **Render**, em https://linvuu.com.br, com deploy automátic
 npm install
 npm run dev          # abre em http://localhost:3000
 ```
-Para o login funcionar localmente, crie `.env.local` a partir de `.env.example` (ver `docs/AUTENTICACAO.md`).
+Para o login funcionar localmente, crie `.env` na raiz a partir de `.env.example` (ver `docs/AUTENTICACAO.md`). O servidor lê **`.env`**, não `.env.local`; as `VITE_*` são lidas pelo Vite em `.env` e `.env.local`. O `.env` fica fora do Git (`.gitignore`).
 
 ## No Render
 - Build: `npm install && npm run build` (valida o conteúdo e gera `dist/`). Start: `npm start` (`tsx server.ts`, que serve o `dist/` e a API).
