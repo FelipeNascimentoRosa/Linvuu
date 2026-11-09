@@ -20,6 +20,7 @@
     "testar:seguranca": "node scripts/testar-seguranca.mjs && node --import tsx scripts/testar-ip.ts",
     "validar:design": "node scripts/validar-design.mjs",
     "medir:baseline": "node scripts/medir-baseline.mjs",
+    "medir:ingles": "node scripts/en-tools/medir-ingles.mjs",
     "app:android": "node scripts/app-android.mjs",
     "testar:avaliacoes": "node --import tsx scripts/testar-avaliacoes.ts",
     "testar:progresso": "node --import tsx scripts/testar-progresso.ts && node --import tsx scripts/testar-mensagem-retomada.ts",
