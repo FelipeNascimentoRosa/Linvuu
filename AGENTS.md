@@ -2,6 +2,7 @@
 
 **PRIMEIRO LEIA:** [`docs/CONTINUIDADE-2026-10-27.md`](docs/CONTINUIDADE-2026-10-27.md). Esse é o relato comum e datado de PRs, Render, Firebase/IAM/OIDC, Firestore, Search Console, Stripe, Android, Vuu e conversão de repositórios privados. Para estados atuais, confirme GitHub, Render e GSC antes de decidir. A privacidade dos três repositórios deve ser verificada pela API, não presumida.
 **A Linvuu é um site internacional desde 29/10/2026** (linvuu.com.br em português e linvuu.com em inglês, um só idioma de interface por domínio; o site em espanhol foi retirado em 06/11/2026; a gramática é explicada na língua nativa do aluno). Leia [`docs/DECISAO-SITE-INTERNACIONAL.md`](docs/DECISAO-SITE-INTERNACIONAL.md) antes de qualquer texto, rota ou conteúdo.
+**Meta de receita:** R$ 1.100.000 até 31/12/2027 — [`docs/META-1M-2027.md`](docs/META-1M-2027.md). Toda tarefa deve ligar-se a um dos cinco motores ou a um portão mensal do §4 desse documento; o que não liga, não é prioridade.
 Antes de alterar este repositório, leia `docs/ESTADO-ATUAL.md`, `docs/COORDENACAO-IA.md` e as instruções locais aplicáveis. Estas instruções valem para Claude, ChatGPT/Codex, Cursor e Google Antigravity.
 - Entradas específicas: `CLAUDE.md` (Claude), `.cursor/rules/linvuu.mdc` (Cursor) e `GEMINI.md` (Antigravity). O `AGENTS.md` é a fonte comum; evite duplicar normas contraditórias.
 - Consulte a main atual e os PRs abertos; não trate lembranças da conversa como estado de produção.
