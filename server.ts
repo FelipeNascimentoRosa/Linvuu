@@ -1,3 +1,5 @@
+// Primeiro import, de propósito: carrega o .env antes de qualquer módulo ler process.env.
+import './server/env.ts';
 import express from 'express';
 import compression from 'compression';
 import type { Request, Response } from 'express';
@@ -5,7 +7,6 @@ import { createServer as createViteServer } from 'vite';
 import path from 'path';
 import fs from 'node:fs';
 import { fileURLToPath } from 'url';
-import dotenv from 'dotenv';
 import { registrarCobranca, registrarLivroProtegido, registrarNotificacoesCobranca } from './server/billing';
 import { registrarProgresso } from './server/progresso';
 import { registrarMedicao } from './server/medicao';
@@ -19,8 +20,6 @@ import { registrarAssetLinks } from './server/assetlinks';
 import { aplicarMeta, carregarDadosMeta, metaDaRota, metaParaNavegador } from './src/lib/metaRota.ts';
 import { SITE_URL, SITE_GLOBAL_URL } from './src/config/site.ts';
 import { baseDaRequisicao, noPerfilDe, perfilDaRequisicao, registrarDominio } from './server/dominio';
-
-dotenv.config();
 
 // Uma falha assíncrona esquecida não pode derrubar o site: registra e segue.
 process.on('unhandledRejection', (e) => { console.error('[Linvuu] promessa rejeitada sem tratamento:', e instanceof Error ? e.message : e); });
