@@ -7,7 +7,7 @@ Onde ficam os arquivos: sessões em `content/idiomas/<curso>/<l>/dia-NNN.json` (
 | Curso | Escrito em | Explicado em pt | Explicado em en | Explicado em es |
 |---|---|---|---|---|
 | br | en | 0/248 · gramática não | 248/248 · gramática sim |
-| de | pt | 288/288 · gramática sim | 0/288 · gramática não |
+| de | pt | 288/288 · gramática sim | 4/288 · gramática sim |
 | en | pt | 248/248 · gramática sim | 0/248 · gramática não |
 | es | pt | 248/248 · gramática sim | 120/248 · gramática sim |
 | fr | pt | 248/248 · gramática sim | 248/248 · gramática sim |
