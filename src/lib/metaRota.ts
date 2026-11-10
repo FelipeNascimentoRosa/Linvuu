@@ -27,7 +27,7 @@ export type DadosMeta = {
   cursos: CursoMeta[];
   indice: Record<string, { total: number; grupos?: { aula: number; titulo: string; dias: [number, number] }[]; fonte?: string; tr?: Record<string, { g: Record<string, string>; aulas?: number[] }> }>;
 };
-export type MetaRota = { status: number; titulo?: string; /** título visível (h1) quando for diferente do título de busca — ver `fixas` */ h1?: string; descricao?: string; caminho: string; semIndice?: boolean; /** página-folha (aula/capítulo): o título não leva o sufixo « · Linvuu» */ semMarca?: boolean; jsonld?: object[]; locale?: Locale; /** idiomas em que a página existe (hreflang); padrão: os três */ em?: Locale['codigo'][] };
+export type MetaRota = { status: number; titulo?: string; /** título visível (h1) quando for diferente do título de busca — ver `fixas` */ h1?: string; descricao?: string; caminho: string; semIndice?: boolean; /** página-folha (aula/capítulo): o título não leva o sufixo « · Linvuu» */ semMarca?: boolean; jsonld?: object[]; locale?: Locale; /** idiomas em que a página existe (hreflang); padrão: todos os LOCALES */ em?: Locale['codigo'][] };
 
 /**
  * Regra única de indexação de cursos (usada pelo servidor, por scripts/seo.mjs e pelos testes):
@@ -84,7 +84,7 @@ function carregarLivros(raiz: string): DadosMeta['livros'] {
 const TX = {
   'pt-BR': {
     cursos: 'Cursos', sobre: 'Quem somos', porQue: 'Por que a Linvuu?', entrar: 'Entrar', cadastro: 'Cadastre-se', assinatura: 'Assinatura', priv: 'Política de privacidade', privD: 'Quais dados a Linvuu coleta, para quê e quais são os seus direitos pela LGPD.', termos: 'Termos de uso', termosD: 'Regras de uso do site e dos cursos da Linvuu.',
-    pt: 'Português para estrangeiros · Brazilian Portuguese', ptNav: 'Português para estrangeiros', ptD: 'Curso de português do Brasil para estrangeiros, do A1 ao B1, com aulas explicadas em inglês ou espanhol. 62 aulas.',
+    pt: 'Português para estrangeiros · Brazilian Portuguese', ptNav: 'Português para estrangeiros', ptD: 'Curso de português do Brasil para estrangeiros, do A1 ao B1, com aulas explicadas em inglês. 62 aulas.',
     ementa: (n: number) => `As ${n} aulas do curso`, ant: (n: number) => `← Sessão ${n}`, seg: (n: number) => `Sessão ${n} →`,
     curso: (n: string) => `Curso de ${n.toLowerCase()} online, explicado em português`, cursoPrep: (n: string) => `${n}: curso para quem fala português`, cursoJ: (n: string) => `${n} para quem fala português`, inicio: 'Início',
     aula: (a: number, t: string, n: string) => `Aula ${a}: ${t} · ${n}`, aulaD: (n: string, a: number, t: string, s: number, tot: number, lingua: string) => `${n}, aula ${a} (${t}), sessão ${s} de ${tot}: explicação em ${lingua}, áudio em cada frase e exercícios com correção.`,
@@ -174,7 +174,7 @@ export function metaDaRota(pathname: string, d: DadosMeta | null): MetaRota {
 }
 
 function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
-  // Cada idioma mora num domínio (PT no .com.br; EN/ES no .com): a identidade e as URLs absolutas seguem o domínio do idioma da página.
+  // Cada idioma mora num domínio (PT no .com.br; EN no .com): a identidade e as URLs absolutas seguem o domínio do idioma da página.
   const SITE = siteDoIdioma(loc.codigo);
   const ORG_ID = orgId(SITE);
   const tx = TX[loc.codigo];
@@ -218,7 +218,7 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
       : { titulo: SEO_BR.cursosT, descricao: SEO_BR.cursosD },
     // Curso de português para estrangeiros: explicado em inglês, existe só no .com (no .com.br, 301 para cá).
     '/portugues': { titulo: tx.pt, descricao: tx.ptD, em: ['en'] },
-    // Aulas ao vivo de russo: existe em português e em inglês; em espanhol a página volta para a home (noindex).
+    // Aulas ao vivo de russo: existe em português e em inglês.
     '/russo-online': { titulo: AULAS_RUSSO[loc.codigo === 'en' ? 'en' : 'pt-BR'].titulo, descricao: AULAS_RUSSO[loc.codigo === 'en' ? 'en' : 'pt-BR'].descricao, em: ['pt-BR', 'en'] },
     '/entrar': loc.codigo === 'en' ? { titulo: SEO_EN.entrarT, descricao: SEO_EN.entrarD, semIndice: true } : { titulo: tx.entrar, semIndice: true },
     '/cadastro': loc.codigo === 'en' ? { titulo: SEO_EN.cadastroT, descricao: SEO_EN.cadastroD, semIndice: true } : { titulo: tx.cadastro, semIndice: true },
@@ -477,7 +477,7 @@ const cacheSessoesEn = new Map<string, any>();
 const ROTULOS_SESSAO = {
   en: { voc: 'Vocabulary', pron: 'pronunciation', trad: 'english', alfa: 'Alphabet and sounds', letra: 'letter', som: 'sound', ex: 'example', lingua: 'In English:', pratica: 'Practise:' },
 } as const;
-/** Sessão gratuita (dias 1 a 8) explicada em inglês ou espanhol: content/idiomas/<curso>/<lingua>/dia-NNN.json,
+/** Sessão gratuita (dias 1 a 8) explicada em inglês: content/idiomas/<curso>/en/dia-NNN.json,
  * ou o arquivo-base quando essa é a língua-fonte do curso (português para estrangeiros). Mesma regra de privacidade da versão em português. */
 function sessaoGratisEnParaHtml(d: DadosMeta | null, curso: string, dia: number, lingua: 'en' = 'en'): string {
   if (!d?.raiz || dia < 1 || dia > SESSOES_GRATIS || !/^[a-z]{2}$/.test(curso)) return '';
@@ -489,7 +489,7 @@ function sessaoGratisEnParaHtml(d: DadosMeta | null, curso: string, dia: number,
   const sessao = arq.sessao;
   if (!sessao?.blocos) return '';
   const t = (x: unknown) => esc(String(x ?? ''));
-  // Nos arquivos traduzidos a tradução fica em «en» ou, nos de espanhol, em «pt»; campo vazio não conta.
+  // Nos arquivos traduzidos a tradução fica em «en» (no curso de português para estrangeiros, em «pt»); campo vazio não conta.
   const en = (x: Bloco) => x[lingua] || x.en || x.pt;
   const paras = (x: string) => String(x ?? '').split(/\s*(?:PASSO|STEP) \d+:\s*/).filter(Boolean).map((y) => `<p>${t(y)}</p>`).join('');
   const tab = (linhas: Bloco[]) => linhas?.length ? `<table><thead><tr>${Object.keys(linhas[0]).map((k) => `<th>${t(k)}</th>`).join('')}</tr></thead><tbody>${linhas.map((l) => `<tr>${Object.values(l).map((v) => `<td>${t(v)}</td>`).join('')}</tr>`).join('')}</tbody></table>` : '';
@@ -550,7 +550,7 @@ export function alternativosDe(m: MetaRota, _site: string, d: DadosMeta | null =
   const codigoFonte = fonte === 'pt' ? 'pt-BR' : fonte;
   // x-default = a versão para quem não tem versão no seu idioma: inglês (o .com, internacional) quando existe; senão português; senão o idioma-fonte.
   const padrao = em.find((l) => l.codigo === 'en') ?? em.find((l) => l.codigo === 'pt-BR') ?? em.find((l) => l.codigo === codigoFonte) ?? em[0];
-  // Cada versão vive no domínio do seu idioma (PT: .com.br; EN/ES: .com), então o cluster hreflang cruza domínios.
+  // Cada versão vive no domínio do seu idioma (PT: .com.br; EN: .com), então o cluster hreflang cruza domínios.
   return [...em.map((l) => ({ hreflang: l.codigo, href: urlAbsolutaEm(l.codigo, m.caminho) })), { hreflang: 'x-default', href: urlAbsolutaEm(padrao.codigo, m.caminho) }];
 }
 

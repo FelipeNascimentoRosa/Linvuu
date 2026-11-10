@@ -13,7 +13,7 @@ import { useAuth } from '../lib/AuthContext';
 
 type Topico = Omit<Extract<Bloco, { tipo: 'gramatica' }>, 'tipo' | 'min' | 'tag'> & { id: string; categoria: string; aula: number; aulaTitulo: string; sessao: string; dia: number; /** língua do texto quando o tópico ainda não foi traduzido */ explicacaoEm?: string };
 interface Pacote { idioma: string; categorias: string[]; topicos: Topico[]; completo: boolean; bloqueados: number; semTraducao?: number }
-// Abas na ordem da vitrine do idioma do site (o curso de português para estrangeiros só aparece em inglês e espanhol).
+// Abas na ordem da vitrine do idioma do site (o curso de português para estrangeiros só aparece em inglês).
 
 export default function Gramatica() {
   const IDIOMAS = idiomasDeGramaticaNoSite(); // só os que a vitrine deste domínio oferece (chips)

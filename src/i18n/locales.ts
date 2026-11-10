@@ -1,4 +1,5 @@
-// Idiomas da INTERFACE. O idioma das explicações é uma preferência separada por curso. O endereço diz o idioma: / (português), /en (inglês), /es (espanhol).
+// Idiomas da INTERFACE: português no .com.br, inglês no .com. O espanhol não é língua de interface nem de
+// explicação — é só uma língua a estudar (curso `es`, `content/idiomas/es`), como o alemão ou o russo.
 // A base de cada curso (o idioma estudado: palavras, frases, diálogos e áudio) é a mesma; muda só a explicação.
 import { SITE_URL, SITE_GLOBAL_URL } from '../config/site';
 export type CodigoLocale = 'pt-BR' | 'en';
@@ -33,7 +34,7 @@ export function comPerfil<T>(p: Perfil, fn: () => T): T {
   const antes = perfil; perfil = p;
   try { return fn(); } finally { perfil = antes; }
 }
-/** Domínio onde cada idioma "mora": português no .com.br; inglês e espanhol no .com. */
+/** Domínio onde cada idioma de interface "mora": português no .com.br; inglês no .com. */
 export const perfilDoIdioma = (c: CodigoLocale): Perfil => (c === 'pt-BR' ? 'br' : 'global');
 export const siteDoIdioma = (c: CodigoLocale): string => (perfilDoIdioma(c) === 'br' ? SITE_URL : SITE_GLOBAL_URL);
 
