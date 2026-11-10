@@ -559,6 +559,15 @@ export function metaParaNavegador(m: MetaRota, _site: string, d: DadosMeta | nul
   return { status: m.status, caminho: m.caminho, titulo: m.titulo ? (m.semMarca ? m.titulo : `${m.titulo} · Linvuu`) : null, descricao: m.descricao ?? null, canonical: urlAbsolutaEm((m.locale ?? localePadrao()).codigo, m.caminho), noindex: !!m.semIndice, alternativos: alternativosDe(m, _site, d), lang: (m.locale ?? localePadrao()).codigo };
 }
 
+/**
+ * A Cloudflare (Scrape Shield › ofuscação de endereço de e-mail) reescreve todo `mailto:` de uma resposta HTML
+ * que passa pela borda para `/cdn-cgi/l/email-protection#hash`. No domínio `.com` essa troca deixou o e-mail de
+ * `/sobre` e `/contato` como link morto: em 09/11/2026 o próprio `/cdn-cgi/l/email-protection#hash` respondia 404
+ * (o `.com.br` não tem a ofuscação ligada e o `mailto:` funcionava). Os comentários `email_off` são a saída
+ * documentada pela Cloudflare para servir o endereço intacto; o React substitui o bloco assim que carrega.
+ */
+const semOfuscacaoDeEmail = (html: string) => html.replace(/<a href="mailto:[^"]*"[\s\S]*?<\/a>/g, (a) => `<!--email_off-->${a}<!--/email_off-->`);
+
 export function aplicarMeta(html: string, m: MetaRota, _site: string, d: DadosMeta | null = null): string {
   let out = html;
   const loc = m.locale ?? localePadrao();
@@ -589,7 +598,7 @@ export function aplicarMeta(html: string, m: MetaRota, _site: string, d: DadosMe
   out = out.replace('</head>', () => `<meta name="twitter:title" content="${twitterTitle}" /><meta name="twitter:description" content="${twitterDescription}" /><meta name="twitter:image" content="${esc(site)}/brand/avatar-1080.png" />\n</head>`);
   if (m.jsonld?.length) out = out.replace('</head>', () => m.jsonld!.map((j) => `    <script type="application/ld+json">${JSON.stringify(j).replace(/</g, '\\u003c')}</script>\n`).join('') + '  </head>');
   const conteudo = conteudoRota(m, d, loc);
-  if (conteudo) out = out.replace('<div id="root"></div>', () => `<div id="root">${conteudo}</div>`);
+  if (conteudo) out = out.replace('<div id="root"></div>', () => `<div id="root">${semOfuscacaoDeEmail(conteudo)}</div>`);
   if (m.semIndice) out = out.replace('</head>', () => '    <meta name="robots" content="noindex" />\n  </head>');
   // Marca a rota cujo <head> veio pronto do servidor: o navegador não reescreve título, robots, canonical nem hreflang dela.
   out = out.replace('</head>', () => `    <meta name="linvuu-rota" content="${esc(m.caminho)}" />\n  </head>`);
