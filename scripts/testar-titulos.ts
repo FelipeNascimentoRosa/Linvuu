@@ -25,3 +25,27 @@ for (const perfil of ['br', 'global'] as const) {
   });
 }
 console.log(`OK: ${total} títulos indexáveis com no máximo 60 caracteres nos dois domínios.`);
+
+// Descrição das páginas fixas do site em português: de 120 a 160 caracteres, como o Google as exibe.
+// Sem esta guarda a classe volta — em 10/11/2026 /termos servia 45, /privacidade 77 e /gramatica/* 99–102.
+// As páginas fixas do .com (em inglês) foram medidas no EN_AUDIT.md §F4 e não entram aqui; /curso/* também
+// não, porque a descrição delas vem do modelo da aula e não desta tabela.
+let totalBr = 0;
+comPerfil('br', () => {
+  const fixas = ['/', '/cursos', '/assinatura', '/termos', '/privacidade'];
+  for (const c of d!.cursos) {
+    const m = metaDaRota('/gramatica/' + c.id, d);
+    if (m.status === 200 && !m.semIndice) fixas.push('/gramatica/' + c.id);
+  }
+  for (const p of fixas) {
+    const m = metaDaRota(p, d);
+    if (m.status !== 200 || !m.descricao || m.semIndice) continue;
+    totalBr++;
+    assert.ok(
+      m.descricao.length >= 120 && m.descricao.length <= 160,
+      `br ${p}: descrição com ${m.descricao.length} caracteres (faixa 120–160): ${m.descricao}`,
+    );
+  }
+});
+console.log(`OK: ${totalBr} descrições de páginas fixas do .com.br entre 120 e 160 caracteres.`);
+
