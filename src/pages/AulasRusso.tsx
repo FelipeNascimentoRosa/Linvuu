@@ -18,13 +18,17 @@ export default function AulasRusso() {
         <p className="lead">{t.lead}</p>
       </header>
       <section className="lvr-artigo" aria-label={t.comoTitulo}>
-        {t.credenciais.length > 0 && <><h2 id="ar-quem" className="lvr-h2" style={{ marginTop: 0 }}>{t.quemTitulo}</h2>
+        <h2 className="lvr-h2" style={{ marginTop: 0 }}>{t.paraQuemTitulo}</h2>
+        <ul>{t.paraQuem.map((c) => <li key={c} className="lvr-p">{c}</li>)}</ul>
+        {t.credenciais.length > 0 && <><h2 id="ar-quem" className="lvr-h2">{t.quemTitulo}</h2>
         <ul>{t.credenciais.map((c) => <li key={c} className="lvr-p">{c}</li>)}</ul></>}
         <h2 className="lvr-h2">{t.comoTitulo}</h2>
         <ul>{t.como.map((c) => <li key={c} className="lvr-p">{c}</li>)}</ul>
         {t.relatos && t.relatos.length > 0 && <><h2 className="lvr-h2">{t.relatosTitulo}</h2>
         {t.relatos.map((r) => <blockquote key={r.nome} className="lvr-p">“{r.texto}” <cite>— {r.nome}</cite></blockquote>)}
         <p className="lvr-p"><small>{t.relatosFonte}</small></p></>}
+        <h2 className="lvr-h2">{t.faqTitulo}</h2>
+        {t.faq.map((x) => <div key={x.p}><h3 className="lvr-h3">{x.p}</h3><p className="lvr-p">{x.r}</p></div>)}
         <h2 className="lvr-h2">{t.playlistTitulo}</h2>
         <p className="lvr-p">{t.playlist}</p>
         <p><a className="btn btn-primary" href={t.playlistUrl} target="_blank" rel="noopener noreferrer">{t.playlistBotao}</a></p>

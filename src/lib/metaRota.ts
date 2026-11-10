@@ -242,7 +242,14 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
           : [{ '@type': 'Question', name: 'Posso experimentar sem cartão?', acceptedAnswer: { '@type': 'Answer', text: 'As duas primeiras aulas de cada curso são gratuitas, sem cartão.' } }, { '@type': 'Question', name: 'Qual é o desconto no Pix?', acceptedAnswer: { '@type': 'Answer', text: `O plano trimestral custa ${PRECO_TRIMESTRAL_PIX} no Pix, 30% de desconto sobre ${PRECO_TRIMESTRAL}.` } }] },
       );
     }
-    if (p === '/russo-online') jsonld.push({ '@context': 'https://schema.org', '@type': 'Service', name: fixas[p].titulo, description: fixas[p].descricao, serviceType: loc.codigo === 'en' ? 'Online Russian language lessons' : 'Aulas de russo online', inLanguage: loc.codigo, provider: { '@id': ORG_ID }, areaServed: 'Worldwide', url: `${urlAbsolutaEm(loc.codigo, '/russo-online')}` });
+    if (p === '/russo-online') {
+      const x = AULAS_RUSSO[loc.codigo === 'en' ? 'en' : 'pt-BR'];
+      jsonld.push(
+        { '@context': 'https://schema.org', '@type': 'Service', name: fixas[p].titulo, description: fixas[p].descricao, serviceType: loc.codigo === 'en' ? 'Online Russian language classes' : 'Aulas de russo online', inLanguage: loc.codigo, provider: { '@id': ORG_ID }, areaServed: 'Worldwide', url: `${urlAbsolutaEm(loc.codigo, '/russo-online')}` },
+        // FAQPage só vale com as perguntas visíveis na página — e elas estão (src/pages/AulasRusso.tsx e o HTML acima).
+        { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: x.faq.map((q) => ({ '@type': 'Question', name: q.p, acceptedAnswer: { '@type': 'Answer', text: q.r } })) },
+      );
+    }
     return { status: 200, caminho: p, ...fixas[p], jsonld };
   }
   if (!d) return { status: 503, caminho: p, semIndice: true }; // falha de conteúdo não vira página genérica indexável
@@ -439,7 +446,19 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
     const x = EXCLUSAO[loc.codigo];
     corpo = cabeca(x.titulo, x.lead) + x.secoes.map((s, i) => `<h2>${esc(s.titulo)}</h2>${s.passos ? `<ol>${s.passos.map((p) => `<li>${esc(p)}</li>`).join('')}</ol>` : ''}${s.itens ? li(s.itens.map(esc)) : ''}${(s.paragrafos ?? []).map((p) => `<p>${esc(p)}</p>`).join('')}${i === 0 ? `<p>${esc(x.formulario.alternativa)} <a href="mailto:${EMAIL_OFICIAL}">${EMAIL_OFICIAL}</a>.</p>` : ''}`).join('');
   }
-  if (base === '/russo-online') { const x = AULAS_RUSSO[loc.codigo === 'en' ? 'en' : 'pt-BR']; corpo = cabeca(x.titulo, x.lead) + (x.credenciais.length ? `<h2>${esc(x.quemTitulo)}</h2>` + li(x.credenciais.map(esc)) : '') + (x.relatos && x.relatos.length ? `<h2>${esc(x.relatosTitulo || '')}</h2>` + li(x.relatos.map((r) => esc(`“${r.texto}” — ${r.nome}`))) + `<p>${esc(x.relatosFonte || '')}</p>` : '') + `<h2>${esc(x.playlistTitulo)}</h2><p>${esc(x.playlist)} <a href="${esc(x.playlistUrl)}">${esc(x.playlistBotao)}</a></p>` + `<h2>${esc(x.comoTitulo)}</h2>` + li(x.como.map(esc)) + `<h2>${esc(x.testeTitulo)}</h2><p>${esc(x.teste)} ${a('/curso/ru', x.testeLink)}</p><h2>${esc(x.ctaTitulo)}</h2><p>${esc(x.cta)}</p>`; }
+  if (base === '/russo-online') {
+    // O texto inteiro vai no HTML do servidor: é o que o Google lê sem executar JavaScript, e é a única página que
+    // responde à consulta medida em inglês («russian classes near me», 120 impressões e 0 cliques em 10/11/2026).
+    const x = AULAS_RUSSO[loc.codigo === 'en' ? 'en' : 'pt-BR'];
+    corpo = cabeca(x.titulo, x.lead)
+      + `<h2>${esc(x.paraQuemTitulo)}</h2>` + li(x.paraQuem.map((s) => esc(s)))
+      + (x.credenciais.length ? `<h2>${esc(x.quemTitulo)}</h2>` + li(x.credenciais.map((s) => esc(s))) : '')
+      + `<h2>${esc(x.comoTitulo)}</h2>` + li(x.como.map((s) => esc(s)))
+      + (x.relatos && x.relatos.length ? `<h2>${esc(x.relatosTitulo || '')}</h2>` + li(x.relatos.map((r) => esc(`“${r.texto}” — ${r.nome}`))) + `<p>${esc(x.relatosFonte || '')}</p>` : '')
+      + `<h2>${esc(x.faqTitulo)}</h2>` + x.faq.map((q) => `<h3>${esc(q.p)}</h3><p>${esc(q.r)}</p>`).join('')
+      + `<h2>${esc(x.playlistTitulo)}</h2><p>${esc(x.playlist)} <a href="${esc(x.playlistUrl)}">${esc(x.playlistBotao)}</a></p>`
+      + `<h2>${esc(x.testeTitulo)}</h2><p>${esc(x.teste)} ${a('/curso/ru', x.testeLink)}</p><h2>${esc(x.ctaTitulo)}</h2><p>${esc(x.cta)}</p>`;
+  }
   if (base === '/sobre') {
     // Texto inteiro na língua da página: é o que o Google lê sem executar JavaScript.
     const s = SOBRE[loc.codigo];
