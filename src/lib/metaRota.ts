@@ -26,7 +26,7 @@ export type DadosMeta = {
   cursos: CursoMeta[];
   indice: Record<string, { total: number; grupos?: { aula: number; titulo: string; dias: [number, number] }[]; fonte?: string; tr?: Record<string, { g: Record<string, string>; aulas?: number[] }> }>;
 };
-export type MetaRota = { status: number; titulo?: string; descricao?: string; caminho: string; semIndice?: boolean; /** página-folha (aula/capítulo): o título não leva o sufixo « · Linvuu» */ semMarca?: boolean; jsonld?: object[]; locale?: Locale; /** idiomas em que a página existe (hreflang); padrão: os três */ em?: Locale['codigo'][] };
+export type MetaRota = { status: number; titulo?: string; /** título visível (h1) quando for diferente do título de busca — ver `fixas` */ h1?: string; descricao?: string; caminho: string; semIndice?: boolean; /** página-folha (aula/capítulo): o título não leva o sufixo « · Linvuu» */ semMarca?: boolean; jsonld?: object[]; locale?: Locale; /** idiomas em que a página existe (hreflang); padrão: os três */ em?: Locale['codigo'][] };
 
 /**
  * Regra única de indexação de cursos (usada pelo servidor, por scripts/seo.mjs e pelos testes):
@@ -103,7 +103,7 @@ const TX = {
  * O rótulo de menu («Courses», «Subscription») serve à navegação; o <title> precisa de 30 a 60 caracteres
  * (com « · Linvuu») e a <meta name="description"> de 120 a 160, com a palavra-chave.
  * Medição de 09/11/2026 no .com (EN_AUDIT.md §F3 e §F4): oito títulos abaixo de 30 caracteres e onze
- * descrições abaixo de 120. O português fica como estava: esta passagem é do site em inglês.
+ * descrições abaixo de 120. O português tem o bloco `SEO_BR` abaixo, com a mesma regra aplicada.
  */
 const SEO_EN = {
   cursosT: 'Language courses: Portuguese, French and Russian',
@@ -120,6 +120,30 @@ const SEO_EN = {
   cadastroD: 'Create a free Linvuu account with e-mail or Google, start the first two lessons of any course for free and keep your progress saved.',
   naoD: 'The page you asked for does not exist or has moved. Go back to the Linvuu home page, or see the courses and the free grammar topics.',
   descPadrao: 'Linvuu: language courses for English speakers, with the first two lessons of every course free and no card required to start.',
+} as const;
+/**
+ * Títulos e descrições de SEO das páginas fixas do site em português (.com.br).
+ * Mesma regra do `SEO_EN`: rótulo de menu serve à navegação, `<title>` de 30 a 60 caracteres com
+ * « · Linvuu» e `<meta name="description">` de 120 a 160, com a palavra que a pessoa digita.
+ *
+ * Medição de 10/11/2026 no HTML servido de linvuu.com.br: home com 164 caracteres de descrição,
+ * `/cursos` com título de 15 («Cursos», só a marca), `/termos` 22/45, `/privacidade` 32/77,
+ * `/gramatica/<idioma>` 25–26 e 99–102. No Search Console do mesmo dia (13/10 a 09/11) essas
+ * páginas somavam 9 cliques em 28 dias, e `/assinatura` aparecia em posição 2,9 com 33 impressões
+ * e nenhum clique — o defeito de metadado mais caro do domínio, porque é a página de preços.
+ */
+const SEO_BR = {
+  cursosT: 'Cursos de idiomas online explicados em português',
+  cursosD: 'Cursos de inglês, espanhol, francês, italiano, alemão e russo explicados em português, em sessões de 30 minutos. Duas aulas grátis, sem cartão.',
+  assinaturaT: 'Planos e assinatura: mensal, trimestral e anual',
+  assinaturaD: 'Aprenda idiomas com a Linvuu: plano mensal, trimestral com 30% OFF no Pix e anual. Duas aulas grátis, sem cartão, e cancelamento quando quiser.',
+  privT: 'Política de privacidade: dados, cookies e LGPD',
+  privD: 'Quais dados a Linvuu coleta, para quê, por quanto tempo ficam guardados e como exercer os seus direitos de titular pela LGPD. Sem juridiquês.',
+  termosT: 'Termos de uso do site e dos cursos',
+  termosD: 'Regras de uso do site e dos cursos da Linvuu: planos e pagamento, cancelamento, reembolso em até 7 dias, conteúdo de terceiros e a lei brasileira aplicada.',
+  /** Nome de cada língua no feminino/masculino certo: «Gramática do russo», «do alemão», «do inglês». */
+  gramT: (n: string) => `Gramática do ${n.toLowerCase()} explicada em português`,
+  gramD: (n: string, lingua: string) => `Gramática de ${n.toLowerCase()} explicada em ${lingua}, tópico por tópico: tabelas, exemplos, erros comuns de brasileiros e a aula onde cada tema se pratica.`,
 } as const;
 /**
  * Descrição usada quando a rota não define uma (404 e páginas sem descrição própria): a do idioma da página.
@@ -187,10 +211,10 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
       { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Livros', item: `${SITE}/livros` }, { '@type': 'ListItem', position: 2, name: l.nome, item: `${SITE}/livros/${l.id}` }, { '@type': 'ListItem', position: 3, name: `Capítulo ${c.n}`, item: url }] },
     ] };
   }
-  const fixas: Record<string, { titulo: string; descricao?: string; semIndice?: boolean; em?: Locale['codigo'][] }> = {
+  const fixas: Record<string, { titulo: string; h1?: string; descricao?: string; semIndice?: boolean; em?: Locale['codigo'][] }> = {
     '/cursos': loc.codigo === 'en'
       ? { titulo: SEO_EN.cursosT, descricao: SEO_EN.cursosD }
-      : { titulo: tx.cursos, descricao: 'Cursos de idiomas Linvuu: sem medo de gramática, com sessões de 30 minutos. Experimente duas aulas gratuitas.' },
+      : { titulo: SEO_BR.cursosT, descricao: SEO_BR.cursosD },
     // Curso de português para estrangeiros: explicado em inglês, existe só no .com (no .com.br, 301 para cá).
     '/portugues': { titulo: tx.pt, descricao: tx.ptD, em: ['en'] },
     // Aulas ao vivo de russo: existe em português e em inglês; em espanhol a página volta para a home (noindex).
@@ -200,9 +224,9 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     '/livro/gramatica-ru': { titulo: 'Gramática russa A1–A2', semIndice: true },
     // A página de preços existe de verdade nos dois idiomas (um por domínio): indexável nos dois,
     // para os alternates hreflang de uma versão não apontarem para a outra como noindex.
-    '/assinatura': loc.codigo === 'pt-BR' ? { titulo: 'Planos e assinatura', descricao: 'Aprenda idiomas com a Linvuu: planos mensal, trimestral com 30% OFF no Pix e anual. Experimente duas aulas grátis, sem cartão.' } : { titulo: SEO_EN.assinaturaT, descricao: SEO_EN.assinaturaD },
-    '/privacidade': loc.codigo === 'en' ? { titulo: SEO_EN.privT, descricao: SEO_EN.privD } : { titulo: tx.priv, descricao: tx.privD },
-    '/termos': loc.codigo === 'en' ? { titulo: SEO_EN.termosT, descricao: SEO_EN.termosD } : { titulo: tx.termos, descricao: tx.termosD },
+    '/assinatura': loc.codigo === 'pt-BR' ? { titulo: SEO_BR.assinaturaT, h1: 'Planos e assinatura', descricao: SEO_BR.assinaturaD } : { titulo: SEO_EN.assinaturaT, descricao: SEO_EN.assinaturaD },
+    '/privacidade': loc.codigo === 'en' ? { titulo: SEO_EN.privT, descricao: SEO_EN.privD } : { titulo: SEO_BR.privT, h1: tx.priv, descricao: SEO_BR.privD },
+    '/termos': loc.codigo === 'en' ? { titulo: SEO_EN.termosT, descricao: SEO_EN.termosD } : { titulo: SEO_BR.termosT, h1: tx.termos, descricao: SEO_BR.termosD },
     '/excluir-conta': { titulo: EXCLUSAO[loc.codigo].titulo, descricao: EXCLUSAO[loc.codigo].descricao },
   };
   if (fixas[p]) {
@@ -289,17 +313,21 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     const fonteGram = d.indice[c.id]?.fonte ?? 'pt';
     const temGram = gramaticaExisteEm(d, c.id, loc.explicacao);
     const gramEm = (l: Locale) => l.cursoOculto !== c.id && c.status !== 'em-breve' && gramaticaExisteEm(d, c.id, l.explicacao);
-    const descGram = tx.gramD(c.nome, LINGUAS[loc.codigo][temGram ? loc.explicacao : fonteGram] ?? '');
+    const linguaGram = LINGUAS[loc.codigo][temGram ? loc.explicacao : fonteGram] ?? '';
+    // No pt-BR o título de busca é próprio (`SEO_BR.gramT`): `tx.gramC` («Gramática: russo») continua
+    // servindo de rótulo de link no corpo pré-renderizado, onde a frase inteira ficaria pesada.
+    const titGram = loc.codigo === 'pt-BR' ? SEO_BR.gramT(c.nome) : tx.gramC(c.nome);
+    const descGram = loc.codigo === 'pt-BR' ? SEO_BR.gramD(c.nome, linguaGram) : tx.gramD(c.nome, linguaGram);
     // Alternates só para os públicos a quem o curso é oferecido (mesma regra da página do curso):
     // a gramática de uma língua explicada ao próprio público dela não é uma versão de idioma —
     // declarar esse alternate apontava para a página gémea marcada noindex.
     return {
       // Gramática que ainda não existe neste idioma não é página própria (o conteúdo seria o original, em outra língua).
-      status: 200, caminho: p, titulo: tx.gramC(c.nome), descricao: descGram, semIndice: !gramEm(loc) || undefined, em: LOCALES.filter(gramEm).map((l) => l.codigo),
+      status: 200, caminho: p, titulo: titGram, h1: tx.gramC(c.nome), descricao: descGram, semIndice: !gramEm(loc) || undefined, em: LOCALES.filter(gramEm).map((l) => l.codigo),
       jsonld: [
         // A página de gramática é o recurso de referência do curso: tópicos e tabelas cuja descrição nomeia a língua real das explicações.
-        { '@context': 'https://schema.org', '@type': 'LearningResource', name: tx.gramC(c.nome), description: descGram, url, inLanguage: loc.codigo, learningResourceType: 'Grammar reference', teaches: c.nome, isPartOf: { '@type': 'Course', name: tx.cursoJ(c.nome), url: cursoUrl }, provider: { '@id': ORG_ID } },
-        { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: tx.inicio, item: `${urlAbsolutaEm(loc.codigo, '/')}` }, { '@type': 'ListItem', position: 2, name: c.nome, item: cursoUrl }, { '@type': 'ListItem', position: 3, name: tx.gramC(c.nome), item: url }] },
+        { '@context': 'https://schema.org', '@type': 'LearningResource', name: titGram, description: descGram, url, inLanguage: loc.codigo, learningResourceType: 'Grammar reference', teaches: c.nome, isPartOf: { '@type': 'Course', name: tx.cursoJ(c.nome), url: cursoUrl }, provider: { '@id': ORG_ID } },
+        { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: tx.inicio, item: `${urlAbsolutaEm(loc.codigo, '/')}` }, { '@type': 'ListItem', position: 2, name: c.nome, item: cursoUrl }, { '@type': 'ListItem', position: 3, name: titGram, item: url }] },
       ],
     };
   }
@@ -389,17 +417,17 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
       navegar.push(a(`/curso/${md[1]}`, nomeCurso));
       if (d && gramaticaExisteEm(d, md[1], loc.explicacao)) navegar.push(a(`/gramatica/${md[1]}`, tx.gramC(nomeCurso)));
       if (diaN < SESSOES_GRATIS && vizinhaIndexavel(diaN + 1)) navegar.push(a(`/curso/${md[1]}/dia/${diaN + 1}`, tx.seg(diaN + 1)));
-      corpo = cabeca(m.titulo ?? '', m.descricao) + (loc.codigo === 'pt-BR' ? sessaoGratisParaHtml(d, md[1], diaN) : sessaoGratisEnParaHtml(d, md[1], diaN)) + `<p>${navegar.join(' · ')}</p>`;
+      corpo = cabeca(m.h1 ?? m.titulo ?? '', m.descricao) + (loc.codigo === 'pt-BR' ? sessaoGratisParaHtml(d, md[1], diaN) : sessaoGratisEnParaHtml(d, md[1], diaN)) + `<p>${navegar.join(' · ')}</p>`;
     } else if (mg && d) {
       // Só chega aqui o que é indexável (o topo da função devolve '' para noindex): a gramática existe na língua da página.
       const suf = (d.indice[mg[1]]?.fonte ?? 'pt') === loc.explicacao ? '' : loc.explicacao;
-      corpo = cabeca(m.titulo ?? '', m.descricao) + gramaticaGratisParaHtml(d, mg[1], suf) + `<p>${a(`/curso/${mg[1]}`, visiveis.find((x) => x.id === mg[1])?.nome ?? mg[1])}</p>`;
+      corpo = cabeca(m.h1 ?? m.titulo ?? '', m.descricao) + gramaticaGratisParaHtml(d, mg[1], suf) + `<p>${a(`/curso/${mg[1]}`, visiveis.find((x) => x.id === mg[1])?.nome ?? mg[1])}</p>`;
     } else if (m.titulo) {
-      corpo = cabeca(m.titulo, m.descricao);
+      corpo = cabeca(m.h1 ?? m.titulo, m.descricao);
     }
   }
-  if (base === '/assinatura' && loc.codigo === 'pt-BR') corpo = cabeca(m.titulo ?? '', m.descricao) + `<h2 id="oferta-atual">Assinatura Linvuu</h2><p>Acesso a todos os cursos de idiomas.</p><ul><li>Mensal: ${esc(PRECO_MENSAL)}, com renovação automática.</li><li>3 meses: ${esc(PRECO_TRIMESTRAL_PIX)} no Pix (30% OFF) ou ${esc(PRECO_TRIMESTRAL)} no cartão ou boleto, pagamento único.</li><li>12 meses: ${esc(PRECO_ANUAL)}, pagamento único.</li></ul><h2>Posso experimentar sem cartão?</h2><p>As duas primeiras aulas de cada curso são gratuitas, sem cartão.</p><h2>Qual é o desconto no Pix?</h2><p>O plano trimestral custa ${esc(PRECO_TRIMESTRAL_PIX)} no Pix, 30% de desconto sobre ${esc(PRECO_TRIMESTRAL)}.</p><p>${a('/cursos', 'Testar 2 aulas grátis, sem cartão')} · ${a('/cadastro', 'Criar conta')} · ${a('/termos', 'Consultar termos e condições')}</p>`;
-  if (base === '/assinatura' && loc.codigo === 'en') corpo = cabeca(m.titulo ?? '', m.descricao) + `<h2 id="oferta-atual">Linvuu Subscription</h2><p>Access to every Linvuu course, with explanations in English.</p><ul><li>Monthly: ${esc(PRECOS.en.mensal)}, with automatic renewal.</li><li>12 months: ${esc(PRECOS.en.anual)}, one-time payment by card.</li></ul><h2>Can I try it without a card?</h2><p>The first two lessons of every course are free, with no card required.</p><h2>What currency are the prices in?</h2><p>Prices are in US dollars, paid by card (Apple Pay and Google Pay where your device supports them). Full refund within 7 days.</p><p>${a('/cursos', 'Try 2 free lessons, no card')} · ${a('/cadastro', 'Create account')} · ${a('/termos', 'Read the terms')}</p>`;
+  if (base === '/assinatura' && loc.codigo === 'pt-BR') corpo = cabeca(m.h1 ?? m.titulo ?? '', m.descricao) + `<h2 id="oferta-atual">Assinatura Linvuu</h2><p>Acesso a todos os cursos de idiomas.</p><ul><li>Mensal: ${esc(PRECO_MENSAL)}, com renovação automática.</li><li>3 meses: ${esc(PRECO_TRIMESTRAL_PIX)} no Pix (30% OFF) ou ${esc(PRECO_TRIMESTRAL)} no cartão ou boleto, pagamento único.</li><li>12 meses: ${esc(PRECO_ANUAL)}, pagamento único.</li></ul><h2>Posso experimentar sem cartão?</h2><p>As duas primeiras aulas de cada curso são gratuitas, sem cartão.</p><h2>Qual é o desconto no Pix?</h2><p>O plano trimestral custa ${esc(PRECO_TRIMESTRAL_PIX)} no Pix, 30% de desconto sobre ${esc(PRECO_TRIMESTRAL)}.</p><p>${a('/cursos', 'Testar 2 aulas grátis, sem cartão')} · ${a('/cadastro', 'Criar conta')} · ${a('/termos', 'Consultar termos e condições')}</p>`;
+  if (base === '/assinatura' && loc.codigo === 'en') corpo = cabeca(m.h1 ?? m.titulo ?? '', m.descricao) + `<h2 id="oferta-atual">Linvuu Subscription</h2><p>Access to every Linvuu course, with explanations in English.</p><ul><li>Monthly: ${esc(PRECOS.en.mensal)}, with automatic renewal.</li><li>12 months: ${esc(PRECOS.en.anual)}, one-time payment by card.</li></ul><h2>Can I try it without a card?</h2><p>The first two lessons of every course are free, with no card required.</p><h2>What currency are the prices in?</h2><p>Prices are in US dollars, paid by card (Apple Pay and Google Pay where your device supports them). Full refund within 7 days.</p><p>${a('/cursos', 'Try 2 free lessons, no card')} · ${a('/cadastro', 'Create account')} · ${a('/termos', 'Read the terms')}</p>`;
   if (base === '/excluir-conta') {
     // Sem JavaScript a página continua útil: texto completo e o endereço para o pedido.
     const x = EXCLUSAO[loc.codigo];
