@@ -95,7 +95,12 @@ try {
   for (const [host, outro] of [['linvuu.com', 'linvuu.com.br'], ['linvuu.com.br', 'linvuu.com']]) {
     const sm = await (await get(host, '/sitemap.xml')).text();
     const locs = [...sm.matchAll(/<loc>(.*?)<\/loc>/g)].map((x) => new URL(x[1]).hostname);
-    assert.ok(locs.length > 20 && locs.every((h) => h === host), `${host}: sitemap só com URLs do próprio domínio`);
+    // O piso de 20 URLs envelheceu em 11/11/2026: com a sessão de aula fora do sitemap
+    // (docs/DECISAO-INDEXACAO-2026-11-11.md) o .com ficou com 15 URLs. O que este teste protege
+    // é «sitemap existe, não está vazio e só lista o próprio domínio»; a contagem exata é
+    // conferida por scripts/testar-inventario-seo.ts, que falha se alguém mexer na política.
+    assert.ok(locs.length >= 10, `${host}: sitemap com ${locs.length} URLs`);
+    assert.ok(locs.every((h) => h === host), `${host}: sitemap só com URLs do próprio domínio`);
     assert.ok(sm.includes(`href="https://${outro}`), `${host}: alternates apontam para o outro domínio`);
     const rb = await (await get(host, '/robots.txt')).text();
     assert.ok(rb.includes(`Sitemap: https://${host}/sitemap.xml`), `${host}: robots aponta para o próprio sitemap`);

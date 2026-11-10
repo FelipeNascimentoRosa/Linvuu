@@ -43,8 +43,13 @@ const lerDom = (page) => page.evaluate(() => ({
 }));
 
 const sitemap = global ? fs.readFileSync('public/sitemap-global.xml', 'utf8') : await (await fetch(`${base}/sitemap.xml`)).text();
-const urls = [...new Set([...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => new URL(m[1]).pathname).concat(extras))];
-assert.ok(urls.length > (global ? 25 : 50), 'sitemap carregado');
+const doSitemap = [...new Set([...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => new URL(m[1]).pathname))];
+const urls = [...new Set(doSitemap.concat(extras))];
+// Em 11/11/2026 a sessão de aula saiu do sitemap (docs/DECISAO-INDEXACAO-2026-11-11.md):
+// .com.br 87 → 39 e .com 51 → 15, e o piso fixo (50/25) passou a mentir. O que este teste
+// precisa garantir é que leu o sitemap certo — home e hubs de curso lá dentro —; a contagem
+// exata vive em scripts/testar-inventario-seo.ts.
+assert.ok(doSitemap.includes('/') && doSitemap.some((u) => /^\/curso\/[a-z]{2}$/.test(u)), 'sitemap carregado');
 
 const browser = await chromium.launch(global ? { args: [`--unsafely-treat-insecure-origin-as-secure=${base}`, `--host-resolver-rules=MAP ${HOST} 127.0.0.1`] } : {});
 const ctx = await semSugestaoIdioma(browser,{ viewport: { width: 390, height: 844 } });
