@@ -294,7 +294,12 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     // Curso BR (português para estrangeiros): forma curta no título («Portuguese» / «Português»); com o nome completo os dias 1–4
     // passavam de 60 caracteres (decisão do Felipe, 2026-11-04: sem excepções ao limite). H1, descrições e JSON-LD mantêm o nome completo.
     const nomeTitulo = c.id === 'br' ? (loc.codigo === 'en' ? 'Portuguese' : 'Português') : c.nome;
-    return { status: 200, caminho: p, titulo: `${t} · ${nomeTitulo} · ${tx.dia(n)}`, semMarca: true, descricao: descAula, semIndice: n > SESSOES_GRATIS || !temNo(loc) || undefined, em: LOCALES.filter(temNo).map((l) => l.codigo),
+    // Decisão de 11/11/2026 (Felipe): sessão de aula não é página de busca. Medido no Search Console entre 13/10 e
+    // 08/11: as 3.680 sessões dos dois domínios somaram ~25 impressões em 27 dias e nenhuma foi indexada; as amostras
+    // grátis repetiam o hub (mesmo cabeçalho, mesma navegação, ~400 palavras). A sessão continua acessível e é o teste
+    // grátis que o hub anuncia, mas sai do índice e do sitemap: a página de busca do curso é o hub (`/curso/<id>`).
+    // `noindex` sem `Disallow` no robots.txt, para o Google poder ler a marca e retirar a URL do índice.
+    return { status: 200, caminho: p, titulo: `${t} · ${nomeTitulo} · ${tx.dia(n)}`, semMarca: true, descricao: descAula, semIndice: true,
       // Sessão grátis: dados de recurso educacional, sempre gratuito (as demais são por assinatura e não ganham marcação de gratuidade)
       jsonld: n <= SESSOES_GRATIS ? [{
         '@context': 'https://schema.org', '@type': 'LearningResource', name: tx.aula(g.aula, t, c.nome), description: descAula, url: `${urlAbsolutaEm(loc.codigo, p)}`,

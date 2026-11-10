@@ -20,23 +20,18 @@ for (const [perfil, loc] of LOCALES_POR_PERFIL) comPerfil(perfil, () => {
       const m = metaDaRota(p, d);
       const g = ind.grupos?.find(x => n >= x.dias[0] && n <= x.dias[1]);
       assert.ok(g, `sessão ${p} pertence a uma aula`);
-      const traduzida = (ind.fonte ?? 'pt') === loc.explicacao || !!ind.tr?.[loc.explicacao]?.aulas?.includes(g.aula);
-      const excluir = n > SESSOES_GRATIS || c.id === loc.cursoOculto || !traduzida;
+      // Regra desde 11/11/2026: a sessão nunca é página de busca — a página de busca do curso é o hub (`/curso/<id>`).
+      // A sessão continua servida a quem estuda (é a aula grátis que o hub anuncia), mas não recebe tráfego do Google.
       assert.equal(m.status, 200, p);
-      assert.equal(!!m.semIndice, excluir, p);
+      assert.ok(m.semIndice, `sessão fora do índice: ${p}`);
       assert.equal(m.caminho, p);
       assert.ok(!titulos.has(m.titulo!), `título único para cada sessão: ${p}`);
       titulos.add(m.titulo!);
       const h = aplicarMeta(base, m, 'https://linvuu.com.br', d);
       assert.ok(h.includes(`rel="canonical" href="${urlAbsolutaEm(loc.codigo, p)}"`), p);
-      if (excluir) {
-        assert.ok(h.includes('name="robots" content="noindex"'), p);
-        assert.ok(!h.includes('<main data-prerender>'), `conteúdo restrito não pré-renderizado: ${p}`);
-        assert.ok(!h.includes('hreflang='), `noindex não anuncia alternativas: ${p}`);
-      } else {
-        assert.ok(!h.includes('name="robots"'), p);
-        assert.ok(h.includes('<main data-prerender>'), p);
-      }
+      assert.ok(h.includes('name="robots" content="noindex"'), p);
+      assert.ok(!h.includes('<main data-prerender>'), `sessão não pré-renderizada: ${p}`);
+      assert.ok(!h.includes('hreflang='), `noindex não anuncia alternativas: ${p}`);
       const anonimo = destinoSessao(c.id, n, false);
       assert.equal(anonimo, n > SESSOES_GRATIS ? '/assinatura' : `/curso/${c.id}/dia/${n}`);
       assert.equal(destinoSessao(c.id, n, true), `/curso/${c.id}/dia/${n}`, 'conta conserva navegação; autorização continua no backend');
@@ -60,6 +55,8 @@ for (const [perfil, loc] of LOCALES_POR_PERFIL) comPerfil(perfil, () => {
 const sitemap = fs.readFileSync('public/sitemap.xml', 'utf8') + fs.readFileSync('public/sitemap-global.xml', 'utf8');
 const urls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(m => m[1]);
 assert.equal(new Set(urls).size, urls.length, 'sitemap sem duplicatas');
+// 11/11/2026: nenhuma sessão de aula é anunciada — o índice do curso é o hub, não as 3.680 sessões.
+assert.ok(!urls.some(u => /\/dia\/\d+$/.test(u)), `sitemap não lista sessão de aula: ${urls.find(u => /\/dia\/\d+$/.test(u))}`);
 for (const u of urls) {
   const { pathname: p, hostname } = new URL(u);
   comPerfil(perfilDoHost(hostname), () => {
@@ -75,7 +72,7 @@ const blocos = [...sitemap.matchAll(/<url><loc>(.*?)<\/loc>([\s\S]*?)<\/url>/g)]
 const anotSitemap = new Map(blocos.map((b) => [b[1], [...b[2].matchAll(/hreflang="([^"]+)" href="([^"]+)"/g)].map((x) => `${x[1]}=${x[2]}`).sort().join(' ')]));
 let indexaveis = 0;
 for (const [perfil, loc] of LOCALES_POR_PERFIL) for (const c of d.cursos) comPerfil(perfil, () => {
-  const rotas = [`/curso/${c.id}`, `/gramatica/${c.id}`, ...Array.from({ length: SESSOES_GRATIS }, (_, i) => `/curso/${c.id}/dia/${i + 1}`)];
+  const rotas = [`/curso/${c.id}`, `/gramatica/${c.id}`];
   for (const r of rotas) {
     const p = caminhoEm(loc.codigo, r);
     const m = metaDaRota(p, d);

@@ -1,6 +1,7 @@
 # Estado atual da Linvuu
 > **29/10/2026: a Linvuu é um site internacional** ([decisão](DECISAO-SITE-INTERNACIONAL.md)). Cobertura de tradução em [COBERTURA-IDIOMAS.md](COBERTURA-IDIOMAS.md). Textos abaixo que digam "para brasileiros" estão superados.
 Registro inicial: 26/10/2026 (Brasília). **Atualização factual: 27/10/2026, após confirmação por GitHub e Render.** Este arquivo é um snapshot: verificar main e deploy novamente em cada retomada.
+> **11/11/2026 — indexação:** a sessão de aula deixa de ser página de busca (3.680 sessões → `noindex`; sitemap `.com.br` 87 → 39 e `.com` 51 → 15). Medição, decisão e reversão em [DECISAO-INDEXACAO-2026-11-11.md](DECISAO-INDEXACAO-2026-11-11.md). A pagina de busca do curso é o hub `/curso/<id>`.
 
 ## Atualização operacional verificada — 27/10/2026
 
