@@ -5,7 +5,7 @@ import { useAuth } from '../lib/AuthContext';
 import { carregarAuth } from '../lib/firebase';
 import { api } from '../lib/api';
 import { usePageTitle } from '../lib/usePageTitle';
-import { PRECO_MENSAL, PRECO_TRIMESTRAL } from '../config/planos';
+import { precosDo } from '../config/planos';
 import { LOCALE, T } from '../i18n';
 
 type Estado = 'carregando' | 'liberado' | 'entrar' | 'assinar' | 'indisponivel';
@@ -41,7 +41,7 @@ export default function LivroGramatica() {
       <div style={{ maxWidth: 1180, margin: '0 auto', padding: '16px 16px 0' }}>
         <aside className="lv-atencao" style={{ margin: '0 0 16px' }}>
           <p className="lv-eyebrow">O livro faz parte do curso</p>
-          <p>A gramática russa da Linvuu não é vendida avulsa. Ela está incluída na assinatura, {!APK && <>por {PRECO_MENSAL} por mês, ou {PRECO_TRIMESTRAL} por 3 meses no cartão ou boleto.</>} Quem tem acesso ativo pode ler o livro inteiro.</p>
+          <p>A gramática russa da Linvuu não é vendida avulsa. Ela está incluída na assinatura, {!APK && <>por {precosDo(LOCALE.codigo).mensal} por mês{precosDo(LOCALE.codigo).moeda === 'BRL' ? <>, ou {precosDo(LOCALE.codigo).trimestral} por 3 meses no cartão ou boleto.</> : '.'}</>} Quem tem acesso ativo pode ler o livro inteiro.</p>
           <p>Copiar, baixar, redistribuir ou compartilhar o conteúdo, total ou em parte, é proibido. Quem fizer isso perde o acesso ao curso.</p>
         </aside>
         <iframe title="Gramática russa A1–A2" srcDoc={html} sandbox="" style={{ width: '100%', height: 'calc(100vh - 230px)', border: 0, display: 'block' }} />
@@ -63,7 +63,7 @@ export default function LivroGramatica() {
         <>
       <aside className="lv-atencao" style={{ margin: '0 0 16px' }}>
         <p className="lv-eyebrow">O livro faz parte do curso</p>
-        <p>A gramática russa da Linvuu não é vendida avulsa. Ela está incluída na assinatura, {!APK && <>por {PRECO_MENSAL} por mês, ou {PRECO_TRIMESTRAL} por 3 meses no cartão ou boleto.</>} Quem tem acesso ativo pode ler o livro inteiro.</p>
+        <p>A gramática russa da Linvuu não é vendida avulsa. Ela está incluída na assinatura, {!APK && <>por {precosDo(LOCALE.codigo).mensal} por mês{precosDo(LOCALE.codigo).moeda === 'BRL' ? <>, ou {precosDo(LOCALE.codigo).trimestral} por 3 meses no cartão ou boleto.</> : '.'}</>} Quem tem acesso ativo pode ler o livro inteiro.</p>
         <p>Copiar, baixar, redistribuir ou compartilhar o conteúdo, total ou em parte, é proibido. Quem fizer isso perde o acesso ao curso.</p>
       </aside>
           <p><Link className="btn btn-primary" to="/assinatura">Ver planos</Link></p>

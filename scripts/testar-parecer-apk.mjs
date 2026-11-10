@@ -3,13 +3,14 @@ import AxeBuilder from '@axe-core/playwright';
 import {spawn} from 'node:child_process';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+const semAbertura=async(b,o)=>{const c=await b.newContext(o);await c.addInitScript(()=>{try{localStorage.setItem('linvuu:primeira-abertura:v1','1');}catch{}});return c;}; // estes testes começam depois das telas da primeira abertura
 const base='http://127.0.0.1:4347', rows=[];
 const server=spawn(process.execPath,['node_modules/vite/bin/vite.js','preview','--outDir','dist-apk','--host','127.0.0.1','--port','4347','--strictPort'],{stdio:'ignore'});
 let browser;
 try {
  for(let i=0;i<60;i++){try{if((await fetch(base)).ok)break;}catch{}await new Promise(r=>setTimeout(r,250));}
  browser=await chromium.launch({headless:true,executablePath:process.env.CHROME_EXECUTABLE_PATH,args:['--no-sandbox']});
- const context=await browser.newContext({viewport:{width:320,height:640},reducedMotion:'reduce'});const page=await context.newPage();
+ const context=await semAbertura(browser,{viewport:{width:320,height:640},reducedMotion:'reduce'});const page=await context.newPage();
  await page.route('https://linvuu.com.br/**',r=>r.abort());
  for(const tema of ['claro','escuro'])for(const path of ['/','/cursos','/curso/en','/curso/en/dia/1','/curso/en/dia/4','/curso/en/dia/9','/entrar','/assinatura','/conta','/gramatica/en']){
   if(page.url()!=='about:blank')await page.evaluate(()=>localStorage.clear());

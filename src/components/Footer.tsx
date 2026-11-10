@@ -34,10 +34,12 @@ export function Footer({ semNovidades = false }: { semNovidades?: boolean }) {
           <Link to="/cursos">{t.nav.todos}</Link>
           <Link to={`/gramatica/${idiomasDeGramaticaNoSite()[0] ?? 'ru'}`}>{t.nav.gramatica}</Link>
           {LOCALE.codigo !== 'pt-BR' && <Link to="/portugues">{t.rodape.portugues}</Link>}
-          {LOCALE.codigo === 'pt-BR' && <><Link to="/livros">Livros</Link><Link to="/sobre">Quem somos</Link><Link to="/por-que-linvuu">Por que estudar com a Linvuu?</Link></>}
+          {LOCALE.codigo === 'pt-BR' && <><Link to="/livros">Livros</Link><Link to="/sobre">{t.rodape.sobre}</Link><Link to="/por-que-linvuu">{t.rodape.porQue}</Link></>}
+          {LOCALE.codigo !== 'pt-BR' && <><Link to="/sobre">{t.rodape.sobre}</Link><Link to="/por-que-linvuu">{t.rodape.porQue}</Link></>}
           <Link to="/#metodo">{t.nav.metodo}</Link>
+          <Link to="/#avaliacoes">{t.nav.avaliacoes}</Link>
           <Link to="/#faq">{t.nav.duvidas}</Link>
-          {LOCALE.codigo === 'pt-BR' ? <Link to="/contato">{t.rodape.contato}</Link> : <a href={`mailto:${EMAIL_OFICIAL}`}>{t.rodape.contato}</a>}
+          <Link to="/contato">{t.rodape.contato}</Link>
         </nav>
         <nav aria-label={t.rodape.idiomas}>
           <h2>{t.rodape.idiomas}</h2>

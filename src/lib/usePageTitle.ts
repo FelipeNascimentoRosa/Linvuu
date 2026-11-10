@@ -62,13 +62,13 @@ function aplicar(m: { titulo: string; descricao: string; canonical: string; noin
  * Os argumentos só valem onde não há servidor de metadados: o APK (sem SEO) e o desenvolvimento local.
  * `idiomas`: em quais idiomas a página existe (padrão: os dois). As sessões passam [].
  */
-export function usePageTitle(titulo?: string, descricao?: string, idiomas: CodigoLocale[] = ['pt-BR', 'en'], semIndice = false) {
+export function usePageTitle(titulo?: string, descricao?: string, idiomas: CodigoLocale[] = ['pt-BR', 'en'], semIndice = false, semMarca = false) {
   const t = useT();
   const { pathname } = useLocation();
   useEffect(() => {
     const caminho = normalizar(window.location.pathname);
     const local = () => {
-      const tit = titulo ? `${titulo} · Linvuu` : t.meta.titulo;
+      const tit = titulo ? (semMarca ? titulo : `${titulo} · Linvuu`) : t.meta.titulo;
       const alternativos = !semIndice && idiomas.length > 1
         ? [...LOCALES.filter((x) => idiomas.includes(x.codigo)).map((l) => ({ hreflang: l.codigo, href: urlAbsolutaEm(l.codigo, caminho) })),
           { hreflang: 'x-default', href: urlAbsolutaEm(idiomas.includes('en') ? 'en' : 'pt-BR', caminho) }]
@@ -86,5 +86,5 @@ export function usePageTitle(titulo?: string, descricao?: string, idiomas: Codig
       aplicar({ titulo: m.titulo ?? t.meta.titulo, descricao: m.descricao ?? t.meta.descricao, canonical: m.canonical, noindex: m.noindex, alternativos: m.alternativos });
     });
     return () => { viva = false; };
-  }, [titulo, descricao, t, idiomas.join(), semIndice, pathname]);
+  }, [titulo, descricao, t, idiomas.join(), semIndice, semMarca, pathname]);
 }

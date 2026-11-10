@@ -1,3 +1,5 @@
+// Primeiro import, de propósito: carrega o .env antes de qualquer módulo ler process.env.
+import './server/env.ts';
 import express from 'express';
 import compression from 'compression';
 import type { Request, Response } from 'express';
@@ -5,11 +7,11 @@ import { createServer as createViteServer } from 'vite';
 import path from 'path';
 import fs from 'node:fs';
 import { fileURLToPath } from 'url';
-import dotenv from 'dotenv';
 import { registrarCobranca, registrarLivroProtegido, registrarNotificacoesCobranca } from './server/billing';
 import { registrarProgresso } from './server/progresso';
 import { registrarMedicao } from './server/medicao';
 import { registrarNewsletter } from './server/newsletter';
+import { registrarAvaliacoes } from './server/avaliacoes';
 import { registrarExclusao } from './server/exclusao';
 import { credencialConfigurada } from './server/firebase-admin';
 import { fecharApi, registrarErros, registrarSeguranca } from './server/seguranca';
@@ -18,8 +20,6 @@ import { registrarAssetLinks } from './server/assetlinks';
 import { aplicarMeta, carregarDadosMeta, metaDaRota, metaParaNavegador } from './src/lib/metaRota.ts';
 import { SITE_URL, SITE_GLOBAL_URL } from './src/config/site.ts';
 import { baseDaRequisicao, noPerfilDe, perfilDaRequisicao, registrarDominio } from './server/dominio';
-
-dotenv.config();
 
 // Uma falha assíncrona esquecida não pode derrubar o site: registra e segue.
 process.on('unhandledRejection', (e) => { console.error('[Linvuu] promessa rejeitada sem tratamento:', e instanceof Error ? e.message : e); });
@@ -54,6 +54,7 @@ async function startServer() {
   registrarProgresso(app);
   registrarMedicao(app);
   registrarNewsletter(app);
+  registrarAvaliacoes(app);
   registrarExclusao(app);
   // Metadados de cada rota (título, descrição, hreflang, conteúdo pré-renderizado): a mesma fonte para o HTML e para /api/meta.
   const dadosMeta = process.env.NODE_ENV === 'production' ? carregarDadosMeta(__dirname) : null;

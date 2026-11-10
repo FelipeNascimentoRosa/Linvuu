@@ -14,11 +14,6 @@ const copy: Record<string, readonly [string]> = {
   'Estamos produzindo livros para os níveis B1–B2. Eles ainda não estão disponíveis.': ['We are producing books for B1–B2 levels. They are not available yet.'],
   'Livro de alemão →': ['German book →'], 'Livro de espanhol →': ['Spanish book →'],
 
-  'CONHEÇA O VUU': ['MEET VUU'],
-  'Uma língua fica mais próxima quando faz sentido.': ['A language feels closer when it makes sense.'],
-  'Vuu acompanha a curiosidade que move a Linvuu: entender o que as palavras fazem, ouvir como soam e usar o idioma em situações reais.': ['Vuu shares the curiosity behind Linvuu: understand what words do, hear how they sound and use the language in real situations.'],
-  'Comece com uma explicação em português e pratique no seu ritmo.': ['Start with an explanation that makes sense and practise at your own pace.'],
-  'Conhecer o curso de alemão →': ['Explore the German course →'],
 
   'VUU · UM GOSTINHO DO SEU PRÓXIMO IDIOMA': ['VUU · A TASTE OF YOUR NEXT LANGUAGE'],
   'A OFERTA DE HOJE': ['AVAILABLE TODAY'],

@@ -9,15 +9,16 @@ import { getAuth } from 'firebase-admin/auth';
 import { firebaseAdmin } from './firebase-admin';
 import { consultarPlay, playConfigurado } from './play';
 import { registrarWebhookCobranca } from './billing-webhook';
-import { precoMensalObrigatorio, planoSiteValido } from './billing-contrato';
+import { precoMensalObrigatorio, precoMensalUsdObrigatorio, planoSiteValido, planoUsdValido } from './billing-contrato';
 import crypto from 'node:crypto';
 import { podeComprar, type Acesso } from './acesso-calculo';
 import { acessoDoRegistro, gravarRegistro, lerRegistro, liberarConversao, reservarConversao } from './acesso';
 import { enviarCompra, validarMedicao } from './conversoes';
 import { criarProcessadorCobranca } from './cobranca-eventos';
-import { CENTAVOS } from '../src/config/planos.ts';
+import { CENTAVOS, CENTAVOS_USD } from '../src/config/planos.ts';
 import { caminhoNoPerfil } from '../src/i18n/locales.ts';
 import { perfilDaRequisicao } from './dominio';
+import { arquivoDoAudioPrivado, avisarSeSemAudioPrivado } from './audio-privado';
 
 const chave = process.env.STRIPE_SECRET_KEY;
 const projeto = process.env.FIREBASE_PROJECT_ID || process.env.VITE_FIREBASE_PROJECT_ID;
@@ -54,12 +55,12 @@ async function preco(): Promise<string> {
 // por uid (e o pedido em andamento é compartilhado), e a busca só acontece uma vez por processo.
 const clientes = new Map<string, Promise<string>>();
 const usuarioPorCliente = new Map<string, string>();
-function cliente(u: { uid: string; email?: string }): Promise<string> {
+function cliente(u: { uid: string; email?: string }, idiomaEmails?: 'pt-BR' | 'en'): Promise<string> {
   const guardado = clientes.get(u.uid);
   if (guardado) return guardado;
   const p = (async () => {
     const r = await stripe!.customers.search({ query: `metadata['uid']:'${u.uid}'` });
-    const id = r.data[0]?.id ?? (await stripe!.customers.create({ email: u.email, metadata: { uid: u.uid } }, { idempotencyKey: `linvuu-cliente-${u.uid}` })).id;
+    const id = r.data[0]?.id ?? (await stripe!.customers.create({ email: u.email, metadata: { uid: u.uid }, ...(idiomaEmails ? { preferred_locales: [idiomaEmails] } : {}) }, { idempotencyKey: `linvuu-cliente-${u.uid}` })).id;
     usuarioPorCliente.set(id, u.uid);
     return id;
   })();
@@ -126,6 +127,7 @@ async function consultarStripe(u: { uid: string; email?: string }): Promise<Aces
 }
 
 export function registrarCobranca(app: Express, urlBase: (req: Request) => string) {
+  avisarSeSemAudioPrivado();
   const nao = (res: Response) => res.status(503).json({ error: 'Pagamento ainda não configurado.' });
   const guarda = async (req: Request, res: Response) => {
     if (!cobrancaConfigurada()) { nao(res); return null; }
@@ -183,9 +185,9 @@ export function registrarCobranca(app: Express, urlBase: (req: Request) => strin
     const idioma = String(req.params.idioma), arquivo = String(req.params.arquivo);
     if (!/^[a-z]{2}$/.test(idioma) || !/^[0-9a-f]{8}\.mp3$/.test(arquivo)) { res.status(404).end(); return; }
     // Voz nova (ElevenLabs) em audio-privado-v2; o que ainda não foi regravado cai no áudio antigo (Edge).
-    const novo = path.resolve(process.cwd(), 'server', 'audio-privado-v2', idioma, arquivo);
-    const arq = fs.existsSync(novo) ? novo : path.resolve(process.cwd(), 'server', 'audio-privado', idioma, arquivo);
-    if (!fs.existsSync(arq)) { res.status(404).end(); return; }
+    // Os arquivos vêm do repositório privado Linvuu-Audio (server/audio-privado.ts).
+    const arq = arquivoDoAudioPrivado(idioma, arquivo);
+    if (!arq) { res.status(404).end(); return; }
     const livre = process.env.NODE_ENV !== 'production' && !cobrancaConfigurada();
     if (!livre) {
       const u = await guarda(req, res); if (!u) return;
@@ -210,6 +212,9 @@ export function registrarCobranca(app: Express, urlBase: (req: Request) => strin
       const base = urlBase(req);
       const plano = req.body?.plano;
       if (!planoSiteValido(plano)) { res.status(400).json({ error: 'Plano inválido.' }); return; }
+      // linvuu.com cobra em dólares (docs/PRECOS-DEFINIDOS.md): só mensal e anual, só cartão, sem código FUNDADORES.
+      const dolar = perfilDaRequisicao(req) === 'global';
+      if (dolar && !planoUsdValido(plano)) { res.status(400).json({ error: 'Plano indisponível neste site.' }); return; }
       const pix = plano === 'trimestral-pix';
       const anual = plano === 'anual';
       const pacote = plano === 'trimestral' || pix || anual;
@@ -218,21 +223,35 @@ export function registrarCobranca(app: Express, urlBase: (req: Request) => strin
       const pode = podeComprar(atual, plano);
       if (!pode.ok) { res.status(409).json({ error: pode.motivo === 'ja-assinante' ? 'Você já tem uma assinatura ativa.' : 'Você já tem acesso pago ativo.', motivo: pode.motivo }); return; }
       const medicao = validarMedicao(req.body?.medicao, req.ip, req.get('user-agent'));
-      const c = await cliente(u);
+      const c = await cliente(u, perfilDaRequisicao(req) === 'global' ? 'en' : 'pt-BR');
       // idioma do site (pt, en): o checkout do Stripe e a volta para o site ficam no mesmo idioma
-      const idioma = req.body?.idioma === 'en' ? ('en' as const) : null;
+      const idioma = dolar || req.body?.idioma === 'en' ? ('en' as const) : null;
       // volta para o idioma e para o domínio de onde veio (no .com o inglês não tem prefixo; no .com.br segue /en)
       const perfil = perfilDaRequisicao(req);
       const rota = (cod: 'pt-BR' | 'en') => caminhoNoPerfil(perfil, cod, '/assinatura');
       // Duplo clique (ou nova tentativa da rede) com o mesmo pedido em 10 minutos devolve a MESMA sessão, não abre outra.
-      const opcoes = { idempotencyKey: 'checkout-' + crypto.createHash('sha256').update(JSON.stringify([u.uid, plano, idioma, medicao, Math.floor(Date.now() / 600_000)])).digest('hex').slice(0, 40) };
-      const comum = { customer: c, locale: (idioma ?? 'pt-BR') as 'pt-BR' | 'en', success_url: `${base}${rota(idioma ?? 'pt-BR')}?ok=1`, cancel_url: `${base}${rota(idioma ?? 'pt-BR')}`, client_reference_id: u.uid, allow_promotion_codes: true };
-      const s = pix
+      const opcoes = { idempotencyKey: 'checkout-' + crypto.createHash('sha256').update(JSON.stringify([u.uid, plano, idioma, dolar, medicao, Math.floor(Date.now() / 600_000)])).digest('hex').slice(0, 40) };
+      const comum = { customer: c, locale: (idioma ?? 'pt-BR') as 'pt-BR' | 'en', success_url: `${base}${rota(idioma ?? 'pt-BR')}?ok=1`, cancel_url: `${base}${rota(idioma ?? 'pt-BR')}`, client_reference_id: u.uid, allow_promotion_codes: !dolar };
+      const s = dolar
+        ? (anual
+          ? await stripe!.checkout.sessions.create({
+              ...comum, mode: 'payment', // sem lista fixa: o Stripe oferece, em USD, os meios que a conta tem ativos (cartão, Apple/Google Pay, Link, PayPal...)
+              line_items: [{ quantity: 1, price_data: { currency: 'usd', unit_amount: CENTAVOS_USD.anual, product_data: { name: 'Linvuu: 12 months of access' } } }],
+              metadata: { plano: 'anual', uid: u.uid, ...medicao, site: base },
+              custom_text: { submit: { message: 'One payment, no automatic renewal, with a full refund within 7 days.' } },
+            }, opcoes)
+          : await stripe!.checkout.sessions.create({
+              ...comum, mode: 'subscription',
+              custom_text: { submit: { message: 'Full refund within 7 days. Cancel any time, no penalty.' } },
+              line_items: [{ price: precoMensalUsdObrigatorio(process.env.STRIPE_PRICE_ID_USD), quantity: 1 }],
+              metadata: { plano: 'mensal', uid: u.uid, ...medicao, site: base },
+            }, opcoes))
+        : pix
         ? await stripe!.checkout.sessions.create({
             ...comum, mode: 'payment', allowed_payment_method_types: ['pix'],
             payment_method_options: { pix: { expires_after_seconds: 86400 } },
             line_items: [{ quantity: 1, price_data: { currency: 'brl', unit_amount: CENTAVOS['trimestral-pix'], product_data: { name: 'Linvuu: 3 meses de acesso (Pix, 30% de desconto)' } } }],
-            metadata: { plano, uid: u.uid, ...medicao },
+            metadata: { plano, uid: u.uid, ...medicao, site: base },
             custom_text: { submit: { message: 'Pagamento único por Pix, sem renovação automática. O QR code aparece na tela seguinte. Reembolso integral em até 7 dias.' } },
           }, opcoes)
         : pacote
@@ -240,14 +259,14 @@ export function registrarCobranca(app: Express, urlBase: (req: Request) => strin
             ...comum, mode: 'payment', allowed_payment_method_types: ['card', 'boleto'],
             payment_method_options: { boleto: { expires_after_days: 3 } },
             line_items: [{ quantity: 1, price_data: { currency: 'brl', unit_amount: anual ? CENTAVOS.anual : CENTAVOS.trimestral, product_data: { name: anual ? 'Linvuu: 12 meses de acesso' : 'Linvuu: 3 meses de acesso' } } }],
-            metadata: { plano: anual ? 'anual' : 'trimestral', uid: u.uid, ...medicao },
+            metadata: { plano: anual ? 'anual' : 'trimestral', uid: u.uid, ...medicao, site: base },
             custom_text: { submit: { message: 'Pagamento único, sem renovação automática, com reembolso integral em até 7 dias.' } },
           }, opcoes)
         : await stripe!.checkout.sessions.create({
             ...comum, mode: 'subscription',
             custom_text: { submit: { message: 'Reembolso integral em até 7 dias. Cancele quando quiser, sem multa.' } },
             line_items: [{ price: await preco(), quantity: 1 }],
-            metadata: { plano: 'mensal', uid: u.uid, ...medicao },
+            metadata: { plano: 'mensal', uid: u.uid, ...medicao, site: base },
           }, opcoes);
       res.json({ url: s.url });
     } catch (e) { console.error('billing/checkout', e); res.status(500).json({ error: 'Não foi possível abrir o pagamento.' }); }
@@ -258,7 +277,7 @@ export function registrarCobranca(app: Express, urlBase: (req: Request) => strin
     if (!stripe) { nao(res); return; }
     try {
       const idioma = req.body?.idioma === 'en' ? ('en' as const) : null;
-      const s = await stripe!.billingPortal.sessions.create({ customer: await cliente(u), locale: idioma ?? 'pt-BR', return_url: `${urlBase(req)}${caminhoNoPerfil(perfilDaRequisicao(req), idioma ?? 'pt-BR', '/assinatura')}` });
+      const s = await stripe!.billingPortal.sessions.create({ customer: await cliente(u, perfilDaRequisicao(req) === 'global' ? 'en' : 'pt-BR'), locale: idioma ?? 'pt-BR', return_url: `${urlBase(req)}${caminhoNoPerfil(perfilDaRequisicao(req), idioma ?? 'pt-BR', '/assinatura')}` });
       res.json({ url: s.url });
     } catch (e) { console.error('billing/portal', e); res.status(500).json({ error: 'Não foi possível abrir o portal.' }); }
   });

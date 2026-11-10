@@ -44,7 +44,17 @@ export const ptBR = {
   },
   carta: { kicker: 'Quem faz a Linvuu', titulo: 'Carta' },
   livros: { kicker: 'Livros', titulo: 'Coleção Linvuu', rotulo: 'Livros da Linvuu', capa: (t: string) => `Capa do livro de ${t}, Coleção Linvuu` },
-  avaliacoes: { kicker: 'Avaliações', titulo: 'O que dizem nossos alunos', vazio: 'As primeiras avaliações de alunos reais chegam em breve.', rotulo: 'Avaliações de alunos' },
+  avaliacoes: {
+    kicker: 'Avaliações', titulo: 'O que dizem nossos alunos', vazio: 'As primeiras avaliações de alunos reais chegam em breve.', rotulo: 'Avaliações de alunos',
+    media: (m: string, n: number) => `${m} de 5 · ${n} ${n === 1 ? 'avaliação' : 'avaliações'}`, aulas: (n: number) => `${n} ${n === 1 ? 'sessão concluída' : 'sessões concluídas'}`,
+    conhece: 'Conhece o professor', nota: 'Nota', estrelas: (n: number) => `${n} de 5 estrelas`,
+    avalie: 'Avalie a Linvuu', avalieIntro: (n: number) => `Para avaliar, entre na sua conta e conclua pelo menos ${n} sessões das aulas grátis. Sua avaliação passa por uma conferência antes de aparecer e mostramos todas as aprovadas, inclusive as críticas.`,
+    campoNota: 'Sua nota', campoTexto: 'Sua experiência (20 a 600 caracteres, sem links)', campoNome: 'Nome que aparece no site', campoRelacao: 'Sua relação com o professor',
+    relNenhuma: 'Sou aluno, sem relação pessoal com o professor', relConhece: 'Conheço o professor pessoalmente',
+    aceite: 'Autorizo mostrar meu nome e meu texto no site da Linvuu.', foto: 'Mostrar a foto do meu perfil do Google', enviar: 'Enviar avaliação', enviando: 'Enviando…',
+    entrar: 'Entre na sua conta para avaliar.', fazerAulas: (n: number) => `Conclua pelo menos ${n} sessões das aulas grátis, com a conta aberta, para poder avaliar.`,
+    obrigado: 'Recebemos sua avaliação. Ela aparece no site depois da conferência.', jaEnviou: 'Você já enviou uma avaliação.', invalido: 'Confira nota, texto (sem links) e nome.', erro: 'Não foi possível enviar agora. Tente de novo.',
+  },
   portuguesHome: {
     kicker: 'Português para estrangeiros',
     titulo: 'Tem um amigo estrangeiro?',
@@ -67,7 +77,7 @@ export const ptBR = {
     eConj: 'e',
     criadaPor: 'Criada por',
     frase: 'Idiomas ensinados passo a passo, para quem fala português.', novidadesTitulo: 'Receba novidades', novidadesTexto: 'Novas aulas, idiomas e livros. Sem spam.',
-    termos: 'Termos de uso', privacidade: 'Política de privacidade', idiomas: 'Idiomas', portugues: 'Português para estrangeiros', contato: 'Contato', direitos: '© 2026 Linvuu. Todos os direitos reservados.',
+    termos: 'Termos de uso', sobre: 'Quem somos', porQue: 'Por que estudar com a Linvuu?', privacidade: 'Política de privacidade', idiomas: 'Idiomas', portugues: 'Português para estrangeiros', contato: 'Contato', direitos: '© 2026 Linvuu. Todos os direitos reservados.',
   },
   newsletter: { email: 'Seu e-mail', consentimento: 'Concordo em receber e-mails da Linvuu.', botao: 'Quero receber', ok: 'Pronto. Você vai receber as novidades da Linvuu.', erro: 'Não conseguimos registrar agora. Escreva para', invalido: 'Digite um e-mail válido.', semAceite: 'Marque a caixa para receber e-mails.', ocupado: 'Enviando…', assunto: 'Quero receber novidades' },
   card: { noAr: (n: number) => (n === 1 ? '1 aula no ar' : `${n} aulas no ar`), preparo: 'Em preparação', ate: 'do zero ao B1', cobertura: (_a: number, _b: number) => '' },
@@ -179,8 +189,8 @@ export const ptBR = {
   portugues: {
     tituloSeo: 'Português para estrangeiros · Brazilian Portuguese', descSeo: 'Curso de português do Brasil para estrangeiros, do A1 ao B1, com aulas explicadas em inglês. 62 aulas.',
     kicker: 'Português para estrangeiros', h1: 'Português do Brasil para quem não fala português',
-    lead: 'Um curso completo do zero ao B1, com cada aula explicada em inglês ou em espanhol. São 62 aulas de quatro sessões, com áudio, diálogos, gramática e exercícios. Indique a amigos, colegas e alunos estrangeiros.',
-    comecar: 'Ver o curso em inglês', ver: 'Ver o curso em espanhol',
+    lead: 'Um curso completo do zero ao B1, com cada aula explicada em inglês. São 62 aulas de quatro sessões, com áudio, diálogos, gramática e exercícios. Indique a amigos, colegas e alunos estrangeiros.',
+    comecar: 'Ver o curso em inglês', ver: 'Ver todas as aulas',
     nota: (s: number, p: string) => `As 2 primeiras aulas (${s} sessões) são grátis. Depois, ${p} por mês, com todos os cursos da Linvuu.`,
     niveisT: 'Níveis', aulas: (a: string) => `Aulas ${a}`, comoT: 'Como é o curso', honestoT: 'Com honestidade', planos: 'Planos',
     niveis: [

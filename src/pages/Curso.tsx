@@ -13,6 +13,7 @@ import '../site-publico.css';
 import { LIVROS } from '../config/livros';
 import { Capacitor } from '@capacitor/core';
 import { APRESENTACOES_CURSO } from '../lib/apresentacoes';
+import { DESC_SEO_CURSO } from '../config/seoCurso';
 
 export default function Curso() {
   const destino = useDestinoSessao();
@@ -21,7 +22,7 @@ export default function Curso() {
   const t = useT();
   const curso = getCurso(id);
   const feitos = useDiasFeitos(curso?.id);
-  usePageTitle(curso && curso.id !== 'br' ? t.cursoPagina.tituloSeo(curso.nome) : undefined, curso?.descricao, LOCALES.filter((l) => l.cursoOculto !== curso?.id).map((l) => l.codigo), !curso || curso.status === 'em-breve' || curso.id === LOCALE.cursoOculto);
+  usePageTitle(curso && curso.id !== 'br' ? t.cursoPagina.tituloSeo(curso.nome) : undefined, curso ? DESC_SEO_CURSO[curso.id]?.[LOCALE.codigo] ?? curso.descricao : undefined, LOCALES.filter((l) => l.cursoOculto !== curso?.id).map((l) => l.codigo), !curso || curso.status === 'em-breve' || curso.id === LOCALE.cursoOculto);
   if (!curso) return <NaoEncontrada />;
   if (curso.id === 'br') return <CursoBr />;
 

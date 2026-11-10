@@ -35,8 +35,8 @@ const alvoPadrao = (g) => {
 // com entrada própria. A assinatura é indexável nos três idiomas (página localizada genuína nas três —
 // sem noindex desde a correção de integridade hreflang), por isso entra com <loc> próprio em todas.
 grupos.push({ p: '/', em: todos() }, { p: '/cursos', em: todos(), anot: todos() }, { p: '/assinatura', em: todos(), anot: todos() });
-// Livros e Sobre: só em português. Cada capítulo de amostra publicado (content/livros/<idioma>/cap-NN.json) entra no sitemap.
-grupos.push({ p: '/portugues', em: ['en'] }, { p: '/russo-online', em: ['pt-BR', 'en'], anot: ['pt-BR', 'en'] }, { p: '/sobre', em: ['pt-BR'] }, { p: '/por-que-linvuu', em: ['pt-BR'] }, { p: '/contato', em: ['pt-BR'] }, { p: '/ex-alunos-udemy', em: ['pt-BR'] }, { p: '/livros', em: ['pt-BR'] });
+// Sobre, Por que Linvuu e Contato: em todas as línguas (texto próprio em cada uma — Contato passou a existir em inglês em 09/11/2026). Livros e Ex-alunos: só em português. Cada capítulo de amostra publicado (content/livros/<idioma>/cap-NN.json) entra no sitemap.
+grupos.push({ p: '/portugues', em: ['en'] }, { p: '/russo-online', em: ['pt-BR', 'en'], anot: ['pt-BR', 'en'] }, { p: '/sobre', em: todos(), anot: todos() }, { p: '/por-que-linvuu', em: todos(), anot: todos() }, { p: '/contato', em: todos(), anot: todos() }, { p: '/ex-alunos-udemy', em: ['pt-BR'] }, { p: '/livros', em: ['pt-BR'] });
 const dirLivros = path.join(raiz, 'content', 'livros');
 if (fs.existsSync(dirLivros)) for (const id of fs.readdirSync(dirLivros).sort()) {
   // Apenas os capítulos de amostra: a presença de outro arquivo não o torna público.

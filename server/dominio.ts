@@ -32,6 +32,10 @@ export function redirecionamentoDeDominio(host: string, caminho: string, consult
   if (h === HOST_BR && /^\/(portugues|gramatica\/br)(\/|$)/.test(caminho)) return `${SITE_GLOBAL_URL}${caminho}${q}`;
   // .com: o inglês é a raiz; /en/... era o endereço antigo (e o de quem digita por hábito); /es/... também.
   if (h === HOST_GLOBAL && prefixo) return `${SITE_GLOBAL_URL}${caminho.slice(3) || '/'}${q}`;
+  // .com: a coleção de livros de gramática só existe em português, e o .com é o site em inglês. O endereço define o
+  // idioma da interface (docs/DECISAO-SITE-INTERNACIONAL.md), então /livros vai para o domínio onde o conteúdo mora em
+  // vez de devolver uma página em português com <html lang="en"> dentro do .com. É 301 porque o endereço não volta.
+  if (h === HOST_GLOBAL && /^\/livros(\/|$)/.test(caminho)) return `${SITE_URL}${caminho}${q}`;
   // .com: o curso de português só existe com explicação em inglês (/curso/br); o resto em português mora no .com.br
   return null;
 }

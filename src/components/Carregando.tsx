@@ -5,8 +5,7 @@ import './carregando.css';
 // fallbacks globais: o ecrã de arranque (main.tsx, enquanto a sessão resolve), o
 // fallback do Suspense (App.tsx, em cada navegação para uma rota lazy) e os estados
 // de espera da página da aula (Dia.tsx: decisão de acesso e fetch dos dados).
-// A arte por omissão é o estado sonolento do sistema vetorial da pose B (vírgula/balão,
-// aprovada em 04/11/2026 — variante verde, para fundos claros), servido a ≥ 96 px como
+// A arte por omissão é o único Vuu (public/assets/vuu/vuu.svg, docs/VUU.md), servido a ≥ 96 px como
 // manda a regra de tamanho mínimo da marca; a prop `arte`
 // continua a permitir trocar a arte sem tocar nos pontos de uso. Na área do aluno
 // em tema escuro, o CSS (carregando.css) troca a arte padrão pela variante papel,
@@ -32,8 +31,8 @@ export default function Carregando({ arte = ARTE_PADRAO, marca = false }: { arte
         </div>
       </div>
       <div className="carga-vuu-rodape">
-        {/* viewBox do sistema vetorial: 300 90 350 290 — largura/altura nesta proporção para reservar o espaço certo antes de a imagem chegar. */}
-        <img className="carga-vuu-mascote" data-padrao={arte === ARTE_PADRAO || undefined} src={arte} alt="" width="116" height="96" />
+        {/* viewBox do Vuu: 300 × 331 — largura/altura nesta proporção para reservar o espaço certo antes de a imagem chegar. */}
+        <img className="carga-vuu-mascote" data-padrao={arte === ARTE_PADRAO || undefined} src={arte} alt="" width="87" height="96" />
         <p className="carga-vuu-texto">{t.geral.carregando}</p>
       </div>
     </div>

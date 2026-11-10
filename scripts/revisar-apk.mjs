@@ -2,6 +2,7 @@
 import { chromium } from 'playwright';
 import assert from 'node:assert/strict';
 import { spawn } from 'node:child_process';
+const semAbertura=async(b,o)=>{const c=await b.newContext(o);await c.addInitScript(()=>{try{localStorage.setItem('linvuu:primeira-abertura:v1','1');}catch{}});return c;}; // estes testes começam depois das telas da primeira abertura
 const base = 'http://127.0.0.1:4331';
 const servidor = spawn(process.execPath, ['node_modules/vite/bin/vite.js','preview','--outDir','dist-apk','--host','127.0.0.1','--port','4331','--strictPort'], {stdio:'inherit'});
 let browser;
@@ -14,7 +15,7 @@ try {
   assert.ok(pronto,'prévia APK iniciou');
   browser=await chromium.launch();
   for (const width of [320,390]) for (const locale of ['', '/en']) {
-    const context=await browser.newContext({viewport:{width,height:844},reducedMotion:'reduce'});
+    const context=await semAbertura(browser,{viewport:{width,height:844},reducedMotion:'reduce'});
     const page=await context.newPage(), erros=[];
     page.on('pageerror',e=>erros.push(e.message));
     await page.goto(base+locale+'/');

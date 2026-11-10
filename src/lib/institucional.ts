@@ -1,29 +1,51 @@
-// Textos das páginas institucionais "Por que estudar com a Linvuu?" e "Contato".
+// Textos das páginas institucionais "Contato" e "Ex-alunos da Udemy".
 // Ficam aqui para a página React e o HTML entregue ao Google (metaRota.ts) dizerem exatamente o mesmo.
 // Regra do projeto (docs/MARKETING.md): só fatos verificáveis, sem número de vaidade, sem promessa de fluência.
+// O texto de "Por que estudar com a Linvuu?" saiu daqui para src/lib/porQue.ts quando a página passou a existir
+// também em inglês (09/11/2026), pelo mesmo motivo do /sobre: uma língua por domínio, texto próprio em cada uma.
 
-export const POR_QUE = {
-  titulo: 'Por que estudar com a Linvuu?',
-  descricao: 'Explicação em português, erros típicos de brasileiros, áudio em cada frase, sessões de 30 minutos e livros escritos por quem dá aula. Veja o que muda na Linvuu.',
-  lead: 'A Linvuu é para quem fala português e quer aprender inglês, espanhol, alemão, francês, italiano ou russo sem decorar regras soltas. Cada aula parte do que você já sabe, explica o porquê e mostra o erro que quase todo brasileiro comete.',
-  motivos: [
-    { id: 'portugues', titulo: 'Parte do português, não do zero', texto: 'Cada capítulo começa por um hábito seu que o outro idioma não aceita: dizer “tenho 30 anos” em inglês, ler uma palavra francesa letra por letra, achar que “exquisito” em espanhol é “esquisito”. Quem sabe qual é o hábito corrige o erro em semanas, e não em anos.' },
-    { id: 'explicacao', titulo: 'Explicação na sua língua', texto: 'A regra vem completa, em português, com as exceções e o erro típico. O idioma estudado aparece em frases curtas, diálogos e tabelas, e você entende por que a frase é assim antes de repetir.' },
-    { id: 'audio', titulo: 'Som em cada frase', texto: 'Diálogos, frases prontas e vocabulário têm áudio, para você ouvir e repetir desde o primeiro dia. As vozes são geradas por síntese de voz neural, e o site avisa quando houver gravações de falantes nativos.' },
-    { id: 'sessoes', titulo: 'Sessões de 30 minutos', texto: 'Cada aula é dividida em sessões de 30 minutos, em passos pequenos. Dá para estudar no intervalo do trabalho e retomar no dia seguinte sem perder o fio.' },
-    { id: 'correcao', titulo: 'Exercícios corrigidos na hora', texto: 'Escolha, lacuna e produção, com a resposta certa e a explicação do erro logo depois de cada tentativa. Você descobre na hora o que errou e por quê.' },
-    { id: 'livro-e-curso', titulo: 'O livro e o curso se completam', texto: 'O livro traz a situação, a armadilha do português e o treino em degraus. O site traz o passo a passo, o vocabulário com áudio e os exercícios corrigidos. O que existe só de um lado vira conteúdo dos dois.' },
-    { id: 'autoria', titulo: 'Autoria com nome e sobrenome', texto: 'Os textos são de Felipe Nascimento Rosa e Luiza Nascimento Rosa, matemáticos com experiência em linguística e ensino de idiomas. Eles escrevem, revisam e adaptam os livros e as aulas, a partir da experiência de sala de aula.' },
-    { id: 'gratis', titulo: 'Dá para começar sem pagar', texto: 'As duas primeiras aulas de cada curso são grátis, e os dois primeiros capítulos de cada livro podem ser lidos inteiros, com áudio. Você testa o método antes de decidir.' },
-  ],
-  paraQuem: 'Os cursos vão do A1 ao B1 do quadro europeu (CEFR). Servem para quem está começando, para quem estudou e travou e para quem quer organizar o que já sabe. A Linvuu não promete fluência em 30 dias: promete explicação clara e prática diária que funciona.',
-} as const;
+export type TextoContato = {
+  titulo: string;
+  descricao: string;
+  lead: string;
+  kicker: string;
+  autoresNota: string;
+  perfilRotulo: string;
+  ariaCanais: string;
+  /** Só o título de busca e a descrição de busca: o h1 e o lead visível continuam em `titulo` e `descricao`. */
+  seoTitulo: string;
+  seoDescricao: string;
+};
 
-export const CONTATO = {
-  titulo: 'Contato',
-  descricao: 'Como falar com a Linvuu: dúvidas sobre os cursos, os livros e o seu acesso, por e-mail e pelo LinkedIn dos autores.',
-  lead: 'Dúvidas sobre os cursos, os livros ou o seu acesso? Escolha o canal que for mais fácil para você.',
-} as const;
+/**
+ * Contato: existe em português (.com.br) e em inglês (.com) desde 09/11/2026.
+ * Era a última página de confiança servida em português no domínio inglês (F1 do EN_AUDIT.md).
+ * O inglês foi escrito para quem lê o site em inglês, não traduzido palavra por palavra.
+ */
+export const CONTATO: Record<'pt-BR' | 'en', TextoContato> = {
+  'pt-BR': {
+    titulo: 'Contato',
+    descricao: 'Como falar com a Linvuu: dúvidas sobre os cursos, os livros e o seu acesso, por e-mail e pelo LinkedIn dos autores.',
+    lead: 'Dúvidas sobre os cursos, os livros ou o seu acesso? Escolha o canal que for mais fácil para você.',
+    kicker: 'Fale com a Linvuu',
+    autoresNota: 'Os autores respondem pelos próprios perfis.',
+    perfilRotulo: 'Perfil no LinkedIn',
+    ariaCanais: 'Canais de contato',
+    seoTitulo: 'Contato: fale com a Linvuu',
+    seoDescricao: 'Como falar com a Linvuu: dúvidas sobre os cursos, os livros e o seu acesso, por e-mail, WhatsApp e pelo LinkedIn dos autores.',
+  },
+  en: {
+    titulo: 'Contact',
+    descricao: 'How to reach Linvuu: questions about the courses, the books or your account, by e-mail and through the authors on LinkedIn.',
+    lead: 'Questions about the courses, the books or your account? Pick whichever channel is easier for you.',
+    kicker: 'Talk to Linvuu',
+    autoresNota: 'The authors answer from their own profiles.',
+    perfilRotulo: 'LinkedIn profile',
+    ariaCanais: 'Contact channels',
+    seoTitulo: 'Contact Linvuu: e-mail, WhatsApp and LinkedIn',
+    seoDescricao: 'How to reach Linvuu: questions about the courses, the books or your account, by e-mail, WhatsApp or the authors on LinkedIn.',
+  },
+};
 
 export const EX_ALUNOS = {
   titulo: 'Ex-alunos da Udemy: continue o russo na Linvuu',

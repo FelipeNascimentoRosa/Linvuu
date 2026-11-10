@@ -5,6 +5,7 @@ import { comPrefixo } from '../i18n';
 import { definirUsuarioProgresso } from './progresso';
 import { limparAudioPrivado } from './audio';
 import { analytics } from './analytics';
+import { APK } from '../plataforma';
 
 export interface Usuario { uid: string; nome: string; email: string; foto: string | null }
 
@@ -58,7 +59,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     usuario, carregando, configurado: authConfigurado,
     entrarComGoogle: async () => {
       const { auth, m } = await carregarAuth();
-      const r = await m.signInWithPopup(auth, new m.GoogleAuthProvider());
+      // No app Android o popup não funciona no WebView: o Android escolhe a conta e o Firebase recebe o token do Google.
+      const r = APK
+        ? await m.signInWithCredential(auth, m.GoogleAuthProvider.credential(await (await import('../plataforma/apk/googleNativo')).idTokenGoogle()))
+        : await m.signInWithPopup(auth, new m.GoogleAuthProvider());
       if (m.getAdditionalUserInfo(r)?.isNewUser) void analytics.capture('signup_completed', { page: 'signup' });
     },
     entrarComEmail: async (email, senha) => {
@@ -95,6 +99,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     sair: async () => {
       const { auth, m } = await carregarAuth();
       await m.signOut(auth);
+      if (APK) await (await import('../plataforma/apk/googleNativo')).sairGoogleNativo();
     },
   }), [usuario, carregando]);
 

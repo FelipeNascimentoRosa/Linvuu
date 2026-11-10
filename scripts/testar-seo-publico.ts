@@ -8,6 +8,7 @@ import { HOME_BR } from '../src/config/oferta-publica.ts';
 // Vitrine de planos não lançados (removida do código em 05/11/2026): o texto não pode voltar ao HTML.
 const PLANOS_AVISO = 'Novos planos em preparação';
 import { CAPITULOS_GRATIS } from '../src/lib/livros.ts';
+import { comPerfil, perfilDoHost } from '../src/i18n/locales.ts';
 import { LIVROS } from '../src/config/livros.ts';
 const raiz = process.cwd();
 const dados = carregarDadosMeta(raiz);
@@ -18,7 +19,7 @@ const home = html('/');
 assert.ok(home.includes(`<h1>${HOME_BR.titulo}</h1>`));
 assert.ok(home.includes(HOME_BR.descricao));
 for (const rota of ['/curso/de', '/curso/ru', '/livros/de', '/livros/es']) assert.ok(home.includes(`href="${rota}"`), `link público ${rota}`);
-assert.ok(home.includes('Conheça o Vuu'));
+assert.ok(!home.includes('Conheça o Vuu'));
 assert.ok(home.includes('Estamos produzindo livros para os níveis B1–B2. Eles ainda não estão disponíveis.'));
 assert.ok(html('/livros').includes('Estamos produzindo livros para os níveis B1–B2. Eles ainda não estão disponíveis.'));
 assert.ok(!home.includes(PLANOS_AVISO), 'a home apresenta a oferta ativa, sem planos não lançados');
@@ -84,6 +85,19 @@ for (const [idioma, prefixo] of [['en', ''], ['es', ''], ['de', ''], ['fr', ''],
   assert.ok(livre && pagina.includes(livre.titulo), `gramática ${idioma} contém tópico gratuito no HTML inicial`);
   if (pago) assert.ok(!pagina.includes(pago.titulo), `gramática ${idioma} não expõe tópico pago`);
 }
+// Cloudflare (Scrape Shield) troca `mailto:` por /cdn-cgi/l/email-protection#… em toda resposta HTML da borda.
+// Em 09/11/2026 o e-mail de /sobre e /contato no `.com` era link morto: o /cdn-cgi/… respondia 404.
+// O marcador email_off mantém o endereço intacto no HTML pré-renderizado; o React o substitui ao carregar.
+const textoNoGlobal = (url: string) => comPerfil(perfilDoHost('linvuu.com'), () => aplicarMeta(base, metaDaRota(url, dados), 'https://linvuu.com', dados));
+for (const rota of ['/sobre', '/contato']) {
+  const pagina = textoNoGlobal(rota);
+  assert.ok(/<!--email_off--><a href="mailto:[^"]+@[^"]+"/.test(pagina), `${rota} no .com protege o e-mail do filtro da Cloudflare`);
+  assert.ok(!pagina.includes('/cdn-cgi/'), `${rota} no .com não entrega link para /cdn-cgi/`);
+}
+// O marcador é inofensivo onde a ofuscação está desligada (é só um comentário HTML): o `.com.br` também o recebe,
+// e o `<a href="mailto:…">` continua real nos dois domínios.
+assert.ok(html('/sobre').includes('<!--email_off--><a href="mailto:'), 'o .com.br mantém o e-mail como link real');
+
 console.log('SEO público: proposta consistente, idiomas preservados e conteúdo pago fora do HTML.');
 
 const traco = (valor: number) => renderToStaticMarkup(createElement(Traco, {valor, exato:true, trilha:true}));
