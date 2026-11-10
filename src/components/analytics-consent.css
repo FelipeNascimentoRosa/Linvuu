@@ -19,3 +19,18 @@ html:not([data-plataforma="nativo"]) body{padding-bottom:var(--lv-consent-h,0px)
 .analytics-consent[data-flutuante="true"] .analytics-actions{display:flex;gap:.5rem;flex-wrap:wrap}
 .analytics-consent[data-flutuante="true"] .analytics-actions .btn{flex:1 1 8rem;min-height:44px}
 @media (max-width:600px){.analytics-consent[data-pending="true"],.analytics-consent[data-flutuante="true"]{bottom:0;width:100%;border-radius:1rem 1rem 0 0;padding:.25rem 1rem .75rem;max-height:45vh;font-size:.8125rem;line-height:1.5}}
+
+/* Primeira visita (site): barra de uma linha. O aviso ocupava 45–60vh e cobria o herói,
+   que é justamente onde a pessoa decide ficar. Agora ele tem ~64px e o detalhe abre em "Detalhar".
+   Seletores com duas classes porque as regras de [data-flutuante="true"] acima são mais específicas. */
+.analytics-consent.analytics-consent-bar{max-height:none;overflow:visible;display:flex;align-items:center;gap:.75rem 1rem;flex-wrap:wrap;
+  width:min(56rem,calc(100% - 2rem));margin:0;padding:.5rem .5rem .5rem 1.25rem;border:1px solid var(--linha);
+  border-radius:var(--r-pill);background:var(--bg-elevado);box-shadow:var(--sombra-flutuante)}
+.analytics-consent.analytics-consent-bar .analytics-consent-curto{flex:1 1 15rem;margin:0;max-width:56ch;font-size:.9375rem;line-height:1.45;color:var(--fg-2)}
+.analytics-consent.analytics-consent-bar .analytics-actions{flex:0 0 auto;gap:.5rem;flex-wrap:nowrap;align-items:center}
+.analytics-consent.analytics-consent-bar .analytics-actions .btn{flex:0 0 auto;min-height:44px;padding:0 1.25rem;border-radius:var(--r-pill);font-size:.9375rem;white-space:nowrap}
+.analytics-consent.analytics-consent-bar .analytics-consent-detalhar{text-decoration:underline;padding:0 .5rem}
+@media (max-width:720px){.analytics-consent.analytics-consent-bar{width:100%;gap:.5rem;padding:.625rem .75rem calc(.625rem + env(safe-area-inset-bottom,0px));border-radius:1rem 1rem 0 0}
+.analytics-consent.analytics-consent-bar .analytics-consent-curto{flex:1 1 100%;font-size:.875rem}
+.analytics-consent.analytics-consent-bar .analytics-actions{flex:1 1 100%;flex-wrap:wrap}
+.analytics-consent.analytics-consent-bar .analytics-actions .btn{flex:1 1 6rem}}
