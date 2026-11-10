@@ -18,6 +18,7 @@ import { contatos } from '../config/contato.ts';
 import { AUTORES, CAPITULOS_GRATIS, LIVROS_DESCRICAO, LIVROS_EM_PRODUCAO, LIVROS_META, capituloParaHtml, livroMeta, minutosDeLeitura, tituloLivro, type CapituloLivro, type ItemSumario } from './livros.ts';
 import { APRESENTACOES_CURSO, APRESENTACOES_LIVRO } from './apresentacoes.ts';
 import { AULAS_RUSSO } from '../config/aulas-russo';
+import { DESC_SEO_CURSO } from '../config/seoCurso.ts';
 
 type CursoMeta = { id: string; nome: string; descricao: string; status?: string; i18n?: Record<string, { nome: string; descricao: string }> };
 export type DadosMeta = {
@@ -256,7 +257,7 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     // Indexável só onde o curso existe de verdade: oferecido a esse público e com todas as aulas explicadas na língua dele.
     const oferecidoEm = (l: Locale) => c.status !== 'em-breve' && l.cursoOculto !== c.id && explicacaoCompleta(d, c.id, l.explicacao);
     return {
-      status: 200, caminho: p, titulo: oferecidoEm(loc) || c.id === loc.cursoOculto ? (c.id === 'br' ? (loc.codigo === 'en' ? 'Learn Brazilian Portuguese online (A1–B1)' : 'Português para estrangeiros: curso online (A1–B1)') : tx.curso(c.nome)) : tx.cursoPrep(c.nome), descricao: c.descricao,
+      status: 200, caminho: p, titulo: oferecidoEm(loc) || c.id === loc.cursoOculto ? (c.id === 'br' ? (loc.codigo === 'en' ? 'Learn Brazilian Portuguese online (A1–B1)' : 'Português para estrangeiros: curso online (A1–B1)') : tx.curso(c.nome)) : tx.cursoPrep(c.nome), descricao: DESC_SEO_CURSO[c.id]?.[loc.codigo] ?? c.descricao,
       // o curso escrito para o próprio público deste idioma (ex.: inglês no site em inglês) não entra na busca;
       // nem o curso cuja edição neste idioma ainda está incompleta (prometeria explicações que não existem).
       semIndice: !oferecidoEm(loc) || undefined,

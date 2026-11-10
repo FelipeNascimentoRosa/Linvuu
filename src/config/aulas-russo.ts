@@ -33,7 +33,7 @@ export type TextoAulasRusso = {
 export const AULAS_RUSSO: Record<'pt-BR' | 'en', TextoAulasRusso> = {
   'pt-BR': {
     titulo: 'Aulas de russo online com professores',
-    descricao: 'Aulas de russo ao vivo por videochamada com professores da Linvuu, junto com o curso de russo online.',
+    descricao: 'Aulas de russo ao vivo por videochamada, em horários combinados com você, e o curso de russo da Linvuu entre as aulas: alfabeto, gramática e áudio.',
     lead: 'Aprenda russo com professores, ao vivo, por videochamada, e estude entre as aulas no curso de russo da Linvuu.',
     quemTitulo: 'Os professores',
     credenciais: [
