@@ -2,9 +2,9 @@
 // O conjunto de URLs deriva do mesmo modelo de indexação do servidor (src/lib/metaRota.ts), para o sitemap não
 // divergir do site servido: hub de curso só é indexável no idioma em que TODAS as aulas estão explicadas, e a
 // gramática só onde o arquivo dela existe nesse idioma (sem o curso do próprio público — LOCALES.oculto — nem 'em-breve');
-// as sessões grátis só são indexáveis no idioma em que a explicação da aula existe (o idioma-fonte do curso
-// ou uma tradução presente em content/indice.<idioma>.json). Fora do sitemap ficam, por decisão, as páginas
-// legais (/privacidade, /termos) e as versões que o servidor marca com noindex.
+// as sessões de aula NÃO entram: desde 11/11/2026 a sessão é `noindex` (o curso é indexado no hub `/curso/<id>`),
+// porque as 3.680 sessões dos dois domínios somaram ~25 impressões em 27 dias no Search Console e nenhuma foi indexada.
+// Fora do sitemap ficam, por decisão, as páginas legais (/privacidade, /termos) e as versões que o servidor marca com noindex.
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -54,7 +54,6 @@ if (fs.existsSync(dirLivros)) for (const id of fs.readdirSync(dirLivros).sort())
 // noindex em produção (temNo, em metaRota.ts), lida dos mesmos ficheiros de conteúdo — assim,
 // quando uma tradução for publicada, as URLs entram no sitemap sem nova lista manual.
 const EXPLICACAO = { 'pt-BR': 'pt', en: 'en' };
-const temAula = (id, loc, aula) => fonte(id) === EXPLICACAO[loc.c] || (tr[EXPLICACAO[loc.c]]?.[id]?.aulas ?? []).includes(aula);
 // Mesma regra de metaRota.ts (explicacaoCompleta / gramaticaExisteEm); scripts/testar-inventario-seo.ts confere as duas nos dois sentidos.
 const completo = (id, loc) => fonte(id) === EXPLICACAO[loc.c] || ((indice[id]?.grupos ?? []).length > 0 && (indice[id].grupos).every((g) => (tr[EXPLICACAO[loc.c]]?.[id]?.aulas ?? []).includes(g.aula)));
 const temGramatica = (id, loc) => fonte(id) === EXPLICACAO[loc.c] || fs.existsSync(path.join(raiz, 'content', 'gramatica', `${id}.${EXPLICACAO[loc.c]}.json`));
@@ -64,10 +63,6 @@ for (const c of cursos.filter((x) => x.status !== 'em-breve')) {
   const emGram = oferecidos.filter((l) => temGramatica(c.id, l)).map((l) => l.c);
   if (emHub.length) grupos.push({ p: `/curso/${c.id}`, em: emHub });
   if (emGram.length) grupos.push({ p: `/gramatica/${c.id}`, em: emGram });
-  for (let d = 1; d <= 8; d++) {
-    const em = oferecidos.filter((l) => temAula(c.id, l, Math.ceil(d / 4))).map((l) => l.c);
-    if (em.length) grupos.push({ p: `/curso/${c.id}/dia/${d}`, em });
-  }
 }
 const url = (c, p) => { const l = LOCALES.find((x) => x.c === c); return `${l.site}${l.p ? (p === '/' ? l.p : l.p + p) : p}`; };
 // chave do manifesto de lastmod: o caminho no esquema antigo (/, /en, /es), único por idioma
