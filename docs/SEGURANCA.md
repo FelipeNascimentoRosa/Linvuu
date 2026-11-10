@@ -60,4 +60,4 @@ npm run build
 npm run testar:seguranca   # sobe o servidor em modo produção e verifica cabeçalhos, API fechada, 429, 413 e erros sem detalhes
 npm audit
 ```
-Se encontrar um problema, escreva para hello.linvuu@gmail.com.
+Se encontrar um problema, escreva para contato@linvuu.com.
