@@ -1,0 +1,72 @@
+/* Variante B — "Alegre vivo".
+   Tudo da variante A, e mais: duas cores quentes fora da paleta de quatro (coral e sol).
+   É a que mais se afasta do "premium frio" — e a que exige a sua palavra, porque quebra a regra
+   "só estas quatro cores" registrada em tokens.css (decisão de 07/10/2026). */
+
+/* 1. Barra de cookies compacta (igual à A, com tom quente). */
+html:not([data-plataforma="nativo"]) body{padding-bottom:0}
+html:not([data-plataforma="nativo"]){scroll-padding-bottom:0}
+.analytics-consent[data-flutuante="true"]{bottom:14px;width:min(58rem,calc(100% - 28px));max-height:none;overflow:visible;
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;border-radius:999px;padding:10px 12px 10px 22px;background:#FFF6EC;
+  border-color:#F0D9BE;box-shadow:0 18px 40px -22px rgba(30,59,47,.6)}
+.analytics-consent[data-flutuante="true"]::before{content:"Cookies: medimos o site para melhorar as aulas. Você escolhe.";font-size:13.5px;flex:1 1 18rem;color:#6B4B2A}
+.analytics-consent[data-flutuante="true"] summary,
+.analytics-consent[data-flutuante="true"] p,
+.analytics-consent[data-flutuante="true"] .analytics-consent-ads{display:none}
+.analytics-consent[data-flutuante="true"] .analytics-actions{gap:8px;flex:0 0 auto}
+.analytics-consent[data-flutuante="true"] .analytics-actions .btn{flex:0 0 auto;min-height:40px;padding:0 20px;border-radius:999px}
+.analytics-consent[data-flutuante="true"] .analytics-actions .btn[aria-pressed]{background:#C2542D;color:#fff;border-color:#C2542D}
+
+/* 2. Paleta estendida + herói. */
+:root{--site-r-card:22px;--site-r-control:14px}
+.br-home{--b-coral:#C2542D;--b-coral-escuro:#9E3F1F;--b-coral-claro:#FBE3D6;--b-sol:#F2C879;--b-creme:#FDF6EA;--b-verde-claro:#E8F0DE}
+.br-hero{padding:40px 32px 52px;gap:48px;grid-template-columns:1.02fr .98fr}
+.br-hero h1{font-size:clamp(38px,4.2vw,58px);line-height:1.05;letter-spacing:-.028em;margin:18px 0 20px}
+.br-home h1 em{color:var(--b-coral);background:linear-gradient(transparent 68%,var(--b-sol) 68%);box-decoration-break:clone;-webkit-box-decoration-break:clone;padding:0 .08em}
+.br-eyebrow{display:inline-block;background:var(--b-coral);color:#fff;padding:7px 15px;border-radius:999px;font-size:11px;letter-spacing:.11em}
+.br-lead{font-size:19px;max-width:44ch;color:#3F4A3E}
+.br-hero-copy .br-pick{margin:26px 0 12px!important;color:var(--b-coral-escuro)}
+
+/* 3. CTA em coral, chips com cor de verdade. */
+.br-pick-btn{border-radius:999px;padding:11px 20px;background:#fff;border:1.5px solid #E4CDB4;color:var(--b-coral-escuro);
+  transition:transform .18s,box-shadow .18s,background .18s,color .18s}
+.br-pick-btn:hover{background:var(--b-coral);color:#fff;transform:translateY(-2px);box-shadow:0 12px 22px -12px rgba(194,84,45,.7)}
+.br-actions .br-text-link{display:inline-flex;align-items:center;gap:14px;background:var(--b-coral);color:#fff;border-bottom:0;
+  border-radius:999px;padding:17px 30px;font-size:16.5px;box-shadow:0 18px 34px -18px rgba(194,84,45,.8);transition:transform .18s,background .18s}
+.br-actions .br-text-link:hover{transform:translateY(-2px);background:var(--b-coral-escuro)}
+.br-button{border-radius:999px;padding:16px 28px;background:var(--b-coral);border-color:var(--b-coral);box-shadow:0 18px 34px -20px rgba(194,84,45,.85)}
+.br-button:hover{background:var(--b-coral-escuro)}
+
+/* 4. Cena do Vuu: halo solar, cartão mais macio. */
+.br-scene{background:radial-gradient(ellipse at 30% 40%,var(--b-coral-claro) 0,transparent 68%)}
+.br-demo{border-radius:28px;transform:rotate(-1.4deg);box-shadow:0 34px 80px -38px rgba(60,40,20,.45);border-color:#EFD9BF}
+.br-orbit{background:var(--b-sol);border-radius:999px;color:#6B4B1A}
+.br-orbit-two{background:var(--b-verde-claro)}
+.br-sound button{background:var(--b-coral)}
+
+/* 5. Seções com superfícies que alternam — o site deixa de ser bege contínuo. */
+.br-why-grid article{border:0;border-radius:20px;background:#fff;padding:26px;box-shadow:0 2px 0 rgba(30,59,47,.04),0 18px 38px -30px rgba(30,59,47,.8)}
+.br-why-grid article:nth-child(4n+2){background:var(--b-verde-claro)}
+.br-why-grid article:nth-child(4n+3){background:var(--b-coral-claro)}
+.br-why-grid article:nth-child(4n){background:var(--b-creme)}
+.br-method article{border:0;border-radius:20px;background:#fff;box-shadow:0 18px 38px -30px rgba(30,59,47,.8);transition:transform .25s,box-shadow .25s}
+.br-method article:hover{transform:translateY(-4px)}
+.br-method article:nth-child(2){background:var(--b-creme)}
+.br-method article:nth-child(3){background:var(--b-verde-claro)}
+.br-language{border:0;border-radius:20px;background:var(--b-creme);box-shadow:0 2px 0 rgba(30,59,47,.04),0 18px 38px -30px rgba(30,59,47,.8);transition:transform .22s,box-shadow .22s}
+.br-language:hover{transform:translateY(-4px) rotate(-.6deg);box-shadow:0 28px 52px -30px rgba(30,59,47,.8)}
+.br-language:nth-child(6n+1){background:var(--b-coral-claro)}
+.br-language:nth-child(6n+2){background:var(--b-verde-claro)}
+.br-language:nth-child(6n+3){background:#F6E7C8}
+.br-language:nth-child(6n+4){background:#EAF1E4}
+.br-language:nth-child(6n+5){background:#FBEEDD}
+.br-language:nth-child(6n){background:#F1EFE2}
+.br-greeting{color:var(--b-coral-escuro)}
+.br-book{border-radius:28px;background:var(--b-verde-claro)}
+.br-plan{border-radius:18px}
+.br-faq details{border:0;border-radius:14px;background:#fff;box-shadow:0 1px 0 rgba(30,59,47,.05)}
+.br-faq details[open]{background:var(--b-creme)}
+
+/* 6. Fecho solar. */
+.br-last{background:linear-gradient(160deg,var(--b-sol),var(--b-coral-claro) 70%);border-radius:32px;margin:0 32px 64px;padding:68px 32px}
+.br-last h2 em{color:var(--b-coral-escuro)}

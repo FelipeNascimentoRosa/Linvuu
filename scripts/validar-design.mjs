@@ -138,6 +138,7 @@ pares.claro.push(
   ['site: opção selecionada', 'texto', '--verde-floresta', '--site-selecao'],
   ['site: cartão de idioma', 'texto', '--site-texto-idioma', '--site-idioma-verde'],
   ['site: resposta de dúvida', 'texto', '--site-texto-faq', '--papel'],
+  ['site: selo em pílula sobre ocre', 'texto', '--grafite', '--ocre-claro'],
 );
 
 let falhas = 0;
