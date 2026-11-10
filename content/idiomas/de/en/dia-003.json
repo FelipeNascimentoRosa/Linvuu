@@ -1,0 +1,435 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 3,
+  "fase": 1,
+  "nivel": "zero",
+  "status": "publicada",
+  "titulo": "Sounds and first words: Letter combinations",
+  "objetivo": "Lesson 1, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 1,
+    "titulo": "Sounds and first words",
+    "objetivo": "Recognise the sounds of German (including ä, ö, ü, ß, ch, sch, ei, ie), read new words without fear and make your first greetings.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "zero"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Letter combinations",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 6,
+        "titulo": "Long and short vowels, and vowel pairs",
+        "explicacao": "Some letters together make a sound of their own. The rule always holds. STEP 1: listen to «Tal» and then «Ball». In «Tal» the vowel «a» is long, as if you stretched it: «tahl». In «Ball» it is short. STEP 2: after a vowel, a single consonant usually leaves the vowel long, as in «Name». Two consonants leave it short, as in «Kette». STEP 3: two vowels together make a new sound. The pair «ei» sounds «eye», and «Eis» is read «ice». STEP 4: the pair «ie» is a long «ee», and «Bier» is read «beer». STEP 5: the pairs «eu» and «äu» sound «oy», and «Euro» is read «OY-roh». STEP 6: the pair «au» sounds «ow», as in «house», and «Haus» is read «howss». Be careful not to mix them up: «ei» sounds «eye», but «ie» sounds «ee».",
+        "comparacao": "in English the letters «ei» would be read «ay», as in «eight». In German «ei» sounds «eye», as in «ice». The pair «ie» is not the English «ie» of «pie»: it is a long «ee».",
+        "exemplos": [
+          {
+            "ru": "Eis",
+            "pt": "ice, ice cream"
+          },
+          {
+            "ru": "Wein",
+            "pt": "wine"
+          },
+          {
+            "ru": "Bier",
+            "pt": "beer"
+          },
+          {
+            "ru": "Brief",
+            "pt": "letter"
+          },
+          {
+            "ru": "Euro",
+            "pt": "euro"
+          },
+          {
+            "ru": "Häuser",
+            "pt": "houses"
+          },
+          {
+            "ru": "Haus",
+            "pt": "house"
+          },
+          {
+            "ru": "Auto",
+            "pt": "car"
+          }
+        ],
+        "tabela": [
+          {
+            "combinacao": "vowel + 1 consonant",
+            "som": "long vowel",
+            "exemplo": "Tal (tahl), Name (NAH-meh)"
+          },
+          {
+            "combinacao": "vowel + 2 consonants",
+            "som": "short vowel",
+            "exemplo": "Ball (bahl), Kette (KET-teh)"
+          },
+          {
+            "combinacao": "ei",
+            "som": "«eye»",
+            "exemplo": "Eis (ice), Wein (vine)"
+          },
+          {
+            "combinacao": "ie",
+            "som": "long «ee»",
+            "exemplo": "Bier (beer), Brief (breef)"
+          },
+          {
+            "combinacao": "eu, äu",
+            "som": "«oy»",
+            "exemplo": "Euro (OY-roh), Häuser (HOY-zer)"
+          },
+          {
+            "combinacao": "au",
+            "som": "«ow»",
+            "exemplo": "Haus (howss), Auto (OW-toh)"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Eis, read «ice»",
+            "certo": "Eis",
+            "motivo": "German «ei» sounds «eye», as in «ice». The word is read «ice»."
+          },
+          {
+            "errado": "Bier, read «beer»",
+            "certo": "Bier",
+            "motivo": "The pair «ie» is a long «ee». The word is read «beer», with no separate «e» sound."
+          },
+          {
+            "errado": "Euro, read «OY-roh»",
+            "certo": "Euro",
+            "motivo": "The pair «eu» sounds «oy». The word is read «OY-roh»."
+          }
+        ],
+        "tag": "Pronunciation"
+      },
+      {
+        "tipo": "gramatica",
+        "min": 6,
+        "titulo": "Consonant combinations",
+        "explicacao": "STEP 1: the group «sch» sounds «sh», as in «shoe». The word «Schule» is read «SHOO-leh». STEP 2: at the start of a word, «sp» and «st» sound «shp» and «sht». «Sport» is read «shport» and «Stein» is read «shtine». STEP 3: the group «ch» has two sounds. After «e», «i», «ä», «ö», «ü», «l», «n» and «r» it is soft: a very light stream of air, like a whispered «h» in «hue». «Ich» is read «ikh». STEP 4: after «a», «o», «u» and the pair «au», «ch» is rough: it comes from the back of the throat, as in Scottish «loch». «Buch» is read «bookh». STEP 5: the group «tsch» sounds «ch», as in «church». «Deutsch» is read «doitch». STEP 6: the group «pf» joins «p» and «f» in a single breath: «Apfel». The group «qu» sounds «kv»: «Quelle». The group «ck» is a short «k»: «Jacke». The group «ng» is nasal, with no separate «g» at the end: «singen».",
+        "comparacao": "in English «ch» sounds «tch», as in «chair». In German «ch» is another sound, soft or rough, and the «sh» sound is written «sch».",
+        "exemplos": [
+          {
+            "ru": "Schule",
+            "pt": "school"
+          },
+          {
+            "ru": "Sport",
+            "pt": "sport"
+          },
+          {
+            "ru": "ich",
+            "pt": "I"
+          },
+          {
+            "ru": "Milch",
+            "pt": "milk"
+          },
+          {
+            "ru": "Buch",
+            "pt": "book"
+          },
+          {
+            "ru": "Deutsch",
+            "pt": "German (language)"
+          }
+        ],
+        "tabela": [
+          {
+            "combinacao": "sch",
+            "som": "«sh» as in «shoe»",
+            "exemplo": "Schule (SHOO-leh), Fisch (fish)"
+          },
+          {
+            "combinacao": "sp, st (at the start)",
+            "som": "«shp», «sht»",
+            "exemplo": "Sport (shport), Stein (shtine)"
+          },
+          {
+            "combinacao": "ch (soft)",
+            "som": "soft «kh», whispered",
+            "exemplo": "ich (ikh), Milch (milkh)"
+          },
+          {
+            "combinacao": "ch (rough)",
+            "som": "as in Scottish «loch»",
+            "exemplo": "Buch (bookh), acht (ahkht)"
+          },
+          {
+            "combinacao": "tsch",
+            "som": "«ch» as in «church»",
+            "exemplo": "Deutsch (doitch)"
+          },
+          {
+            "combinacao": "pf",
+            "som": "«p» and «f» together",
+            "exemplo": "Apfel (AHP-fel)"
+          },
+          {
+            "combinacao": "qu",
+            "som": "«kv»",
+            "exemplo": "Quelle (KVEL-leh)"
+          },
+          {
+            "combinacao": "ck",
+            "som": "short «k»",
+            "exemplo": "Jacke (YAH-keh)"
+          },
+          {
+            "combinacao": "ng",
+            "som": "nasal, with no separate «g»",
+            "exemplo": "singen (ZING-en)"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Schule, read «SHOO-leh»",
+            "certo": "Schule",
+            "motivo": "The group «sch» always sounds «sh». The word is read «SHOO-leh»."
+          },
+          {
+            "errado": "Sport, read «shport»",
+            "certo": "Sport",
+            "motivo": "At the start of a word, «sp» sounds «shp». The word is read «shport»."
+          },
+          {
+            "errado": "Buch, read «bookh»",
+            "certo": "Buch",
+            "motivo": "After «u», «ch» is rough, as in Scottish «loch». The word is read «bookh»."
+          }
+        ],
+        "tag": "Pronunciation"
+      },
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "ich",
+            "translit": "ikh",
+            "pt": "I",
+            "en": "I",
+            "audio": "ich"
+          },
+          {
+            "ru": "Schule",
+            "translit": "SHOO-leh",
+            "pt": "school",
+            "en": "school",
+            "audio": "Schule"
+          },
+          {
+            "ru": "Sport",
+            "translit": "shport",
+            "pt": "sport",
+            "en": "sport",
+            "audio": "Sport"
+          },
+          {
+            "ru": "Eis",
+            "translit": "ice",
+            "pt": "ice, ice cream",
+            "en": "ice",
+            "audio": "Eis"
+          },
+          {
+            "ru": "Bier",
+            "translit": "beer",
+            "pt": "beer",
+            "en": "beer",
+            "audio": "Bier"
+          },
+          {
+            "ru": "Wein",
+            "translit": "vine",
+            "pt": "wine",
+            "en": "wine",
+            "audio": "Wein"
+          },
+          {
+            "ru": "Euro",
+            "translit": "OY-roh",
+            "pt": "euro",
+            "en": "euro",
+            "audio": "Euro"
+          },
+          {
+            "ru": "Buch",
+            "translit": "bookh",
+            "pt": "book",
+            "en": "book",
+            "audio": "Buch"
+          },
+          {
+            "ru": "Deutsch",
+            "translit": "doitch",
+            "pt": "German (language)",
+            "en": "German",
+            "audio": "Deutsch"
+          },
+          {
+            "ru": "Apfel",
+            "translit": "AHP-fel",
+            "pt": "apple",
+            "en": "apple",
+            "audio": "Apfel"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How is «ei» read in «Eis»?",
+            "opcoes": [
+              "«eye»",
+              "«eye»",
+              "«ee»"
+            ],
+            "gabarito": "«eye»",
+            "explicacao": "The pair «ei» sounds «eye», as in «ice». That is why «Eis» is read «ice».",
+            "id": "de-001-e19"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How is «ie» read in «Bier»?",
+            "opcoes": [
+              "a long «ee»",
+              "«ee» as in «see»",
+              "«eye»"
+            ],
+            "gabarito": "a long «ee»",
+            "explicacao": "The pair «ie» is a long «ee», and the «e» is not sounded. That is why «Bier» is read «beer».",
+            "id": "de-001-e20"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How is «sch» read in «Schule»?",
+            "opcoes": [
+              "«sh» as in «shoe»",
+              "«sk» as in «school»",
+              "«s»"
+            ],
+            "gabarito": "«sh» as in «shoe»",
+            "explicacao": "The group «sch» always sounds «sh». A «sk» would be the English sound of «school», which German does not use here.",
+            "id": "de-001-e21"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Wein",
+            "opcoes": [
+              "Wein",
+              "Wien",
+              "Wasser"
+            ],
+            "gabarito": "Wein",
+            "explicacao": "You hear «vine», with the pair «ei» sounding «eye». «Wien» (Vienna) would sound «veen», with «ie», and «Wasser» would sound «VAH-ser».",
+            "id": "de-001-e22"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Fisch",
+            "opcoes": [
+              "Fisch",
+              "Film",
+              "Eis"
+            ],
+            "gabarito": "Fisch",
+            "explicacao": "The word ends in «sh», the sound of the group «sch»: «fish». «Film» ends in «m» and «Eis» starts with a vowel.",
+            "id": "de-001-e23"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Buch",
+            "opcoes": [
+              "Buch",
+              "Bad",
+              "Bier"
+            ],
+            "gabarito": "Buch",
+            "explicacao": "The ending is the rough «ch», as in Scottish «loch»: «bookh». «Bad» ends in «d» and «Bier» ends in a soft «r».",
+            "id": "de-001-e24"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Schule",
+            "respostaEsperada": "Schule",
+            "explicacao": "The «sh» sound is written with the group «sch». Write «Schule», not «Shule», because German does not use «sh» for this sound.",
+            "id": "de-001-e25"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Bier",
+            "respostaEsperada": "Bier",
+            "explicacao": "The long «ee» is written «ie» in German. Write «Bier», not «Bir».",
+            "id": "de-001-e26"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "B___r (beer; read «beer»)",
+            "opcoes": [
+              "ie",
+              "ei",
+              "I"
+            ],
+            "gabarito": "ie",
+            "explicacao": "The long «ee» is written «ie». With «ei» the word would sound «buy-er».",
+            "id": "de-001-e27"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "W___n (wine; read «vine»)",
+            "opcoes": [
+              "ei",
+              "ie",
+              "I"
+            ],
+            "gabarito": "ei",
+            "explicacao": "The «eye» sound is written «ei». With «ie» the word would sound «veen», which is «Wien», the city of Vienna.",
+            "id": "de-001-e28"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ule (school; read «SHOO-leh»)",
+            "opcoes": [
+              "Sch",
+              "Sp",
+              "St"
+            ],
+            "gabarito": "Sch",
+            "explicacao": "The «sh» sound at the start is written «sch». With «sp» or «st» it would sound «shp» or «sht».",
+            "id": "de-001-e29"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Read out loud: «ich, Schule, Sport, Eis, Bier, Wein, Euro, Buch, Deutsch, Apfel». Then say the words with «ch» twice, very slowly: first the soft «ch» of «ich», then the rough «ch» of «Buch»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Listen again to the 10 words from the previous session and repeat each one out loud. Pay attention to the breathed «h», the «w» and the «z»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-001.json",
+  "responsavel": null
+}

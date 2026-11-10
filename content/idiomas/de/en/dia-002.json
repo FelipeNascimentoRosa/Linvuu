@@ -1,0 +1,334 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 2,
+  "fase": 1,
+  "nivel": "zero",
+  "status": "publicada",
+  "titulo": "Sounds and first words: Consonants that change their sound",
+  "objetivo": "Lesson 1, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 1,
+    "titulo": "Sounds and first words",
+    "objetivo": "Recognise the sounds of German (including ä, ö, ü, ß, ch, sch, ei, ie), read new words without fear and make your first greetings.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "zero"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Consonants that change their sound",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "alfabeto",
+        "min": 9,
+        "grupos": [
+          {
+            "nome": "Group 3 — Consonants that change sound",
+            "letras": [
+              {
+                "maiuscula": "H",
+                "minuscula": "h",
+                "som": "breathed «h», as in «house»",
+                "ipa": "[h]",
+                "exemplo": "Haus",
+                "exemploPt": "house"
+              },
+              {
+                "maiuscula": "J",
+                "minuscula": "j",
+                "som": "like the «y» in «yes»",
+                "ipa": "[j]",
+                "exemplo": "Jahr",
+                "exemploPt": "year"
+              },
+              {
+                "maiuscula": "R",
+                "minuscula": "r",
+                "som": "guttural «r», from the back of the throat",
+                "ipa": "[ʁ]",
+                "exemplo": "rot",
+                "exemploPt": "red"
+              },
+              {
+                "maiuscula": "S",
+                "minuscula": "s",
+                "som": "«z» before a vowel; «s» at the end of a word",
+                "ipa": "[z / s]",
+                "exemplo": "Sonne",
+                "exemploPt": "sun"
+              },
+              {
+                "maiuscula": "V",
+                "minuscula": "v",
+                "som": "«f» in most German words",
+                "ipa": "[f]",
+                "exemplo": "Vater",
+                "exemploPt": "father"
+              },
+              {
+                "maiuscula": "W",
+                "minuscula": "w",
+                "som": "«v» as in «van»",
+                "ipa": "[v]",
+                "exemplo": "Wasser",
+                "exemploPt": "water"
+              },
+              {
+                "maiuscula": "Z",
+                "minuscula": "z",
+                "som": "«ts», as in the end of «cats»",
+                "ipa": "[ts]",
+                "exemplo": "Zeit",
+                "exemploPt": "time"
+              },
+              {
+                "maiuscula": "ß",
+                "minuscula": "ß",
+                "som": "«ss» (long s); it is called «Eszett»",
+                "ipa": "[s]",
+                "exemplo": "Straße",
+                "exemploPt": "street"
+              },
+              {
+                "maiuscula": "G",
+                "minuscula": "g",
+                "som": "hard «g», as in «go» — always hard",
+                "ipa": "[g]",
+                "exemplo": "gut",
+                "exemploPt": "good"
+              }
+            ]
+          },
+          {
+            "nome": "Group 4 — Rare letters",
+            "letras": [
+              {
+                "maiuscula": "C",
+                "minuscula": "c",
+                "som": "«k» in loanwords such as «Computer»; on its own it is rare (it appears in «ch», «sch» and «ck»)",
+                "ipa": "[k / ts]",
+                "exemplo": "Computer",
+                "exemploPt": "computer"
+              },
+              {
+                "maiuscula": "Q",
+                "minuscula": "q",
+                "som": "it always comes with «u», and the pair «qu» sounds «kv»",
+                "ipa": "[k]",
+                "exemplo": "Quiz",
+                "exemploPt": "quiz"
+              },
+              {
+                "maiuscula": "Y",
+                "minuscula": "y",
+                "som": "sounds like «ü» in words of Greek origin",
+                "ipa": "[y]",
+                "exemplo": "Typ",
+                "exemploPt": "type"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "Haus",
+            "translit": "howss",
+            "pt": "house",
+            "en": "house",
+            "audio": "Haus"
+          },
+          {
+            "ru": "Jahr",
+            "translit": "yahr",
+            "pt": "year",
+            "en": "year",
+            "audio": "Jahr"
+          },
+          {
+            "ru": "rot",
+            "translit": "roht",
+            "pt": "red",
+            "en": "red",
+            "audio": "rot"
+          },
+          {
+            "ru": "Sonne",
+            "translit": "ZON-neh",
+            "pt": "sun",
+            "en": "sun",
+            "audio": "Sonne"
+          },
+          {
+            "ru": "Vater",
+            "translit": "FAH-ter",
+            "pt": "father",
+            "en": "father",
+            "audio": "Vater"
+          },
+          {
+            "ru": "Wasser",
+            "translit": "VAH-ser",
+            "pt": "water",
+            "en": "water",
+            "audio": "Wasser"
+          },
+          {
+            "ru": "Zeit",
+            "translit": "tsite",
+            "pt": "time",
+            "en": "time",
+            "audio": "Zeit"
+          },
+          {
+            "ru": "Straße",
+            "translit": "SHTRAH-zeh",
+            "pt": "street",
+            "en": "street",
+            "audio": "Straße"
+          },
+          {
+            "ru": "gut",
+            "translit": "goot",
+            "pt": "good",
+            "en": "good",
+            "audio": "gut"
+          },
+          {
+            "ru": "Hand",
+            "translit": "hahnt",
+            "pt": "hand",
+            "en": "hand",
+            "audio": "Hand"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 9,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Wasser",
+            "opcoes": [
+              "Wasser",
+              "Vater",
+              "Sonne"
+            ],
+            "gabarito": "Wasser",
+            "explicacao": "German «w» sounds like the «v» in «van»: «VAH-ser». «Vater» starts with «f» («FAH-ter») and «Sonne» starts with a «z» sound («ZON-neh»).",
+            "id": "de-001-e10"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Zeit",
+            "opcoes": [
+              "Zeit",
+              "Sonne",
+              "Straße"
+            ],
+            "gabarito": "Zeit",
+            "explicacao": "The word starts with «ts», the sound at the end of «cats». «Sonne» starts with a «z» sound and «Straße» with «sh».",
+            "id": "de-001-e11"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Jahr",
+            "opcoes": [
+              "Jahr",
+              "Haus",
+              "roht"
+            ],
+            "gabarito": "Jahr",
+            "explicacao": "German «j» sounds like the «y» in «yes»: «yahr». «Haus» starts with a breathed «h» and «rot» with the throat «r».",
+            "id": "de-001-e12"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Wasser",
+            "respostaEsperada": "Wasser",
+            "explicacao": "Write it with «w», which sounds like «v». Do not write «Vasser»: in German «v» almost always sounds «f». The «ss» in the middle is a strong «s».",
+            "id": "de-001-e13"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Straße",
+            "respostaEsperada": "Straße",
+            "explicacao": "«ß» is called «Eszett» and sounds like «ss». It does not exist in English and appears after a long vowel, as in the «a» of «Straße».",
+            "id": "de-001-e14"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "The «h» of «Haus», at the start of a word, is:",
+            "opcoes": [
+              "breathed, as in «house»",
+              "silent, as in «hour»",
+              "the same as «r»"
+            ],
+            "gabarito": "breathed, as in «house»",
+            "explicacao": "In German the «h» at the start is breathed, a thin stream of air. Only in English is «h» silent (as in «hour»).",
+            "id": "de-001-e15"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "The «s» of «Sonne» (before a vowel) sounds like:",
+            "opcoes": [
+              "«z»",
+              "«s» as in «sun»",
+              "«x»"
+            ],
+            "gabarito": "«z»",
+            "explicacao": "Before a vowel German «s» is voiced, like the «z» in «zebra»: «ZON-neh». At the end of a word it is a plain «s» again.",
+            "id": "de-001-e16"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___asser (water; read «VAH-ser»)",
+            "opcoes": [
+              "W",
+              "V",
+              "F"
+            ],
+            "gabarito": "W",
+            "explicacao": "The «v» sound is written «w» in German. The letter «v» would sound «f».",
+            "id": "de-001-e17"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___eit (time; read «tsite»)",
+            "opcoes": [
+              "Z",
+              "S",
+              "C"
+            ],
+            "gabarito": "Z",
+            "explicacao": "The «ts» sound is written «z». An «s» would sound «z» before a vowel, and a «c» alone would sound «k».",
+            "id": "de-001-e18"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 4,
+        "enunciado": "Read the 10 words out loud: «Haus, Jahr, rot, Sonne, Vater, Wasser, Zeit, Straße, gut, Hand». Watch the breathed «h», the «w» (v) and the «z» (ts). Then pick three words and say them one at a time, very slowly, splitting off the first sound: «v… VAH-ser»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Listen again to the words from the previous session and repeat each one out loud. Then read the 18 letters from the previous session without looking at the translation."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-001.json",
+  "responsavel": null
+}

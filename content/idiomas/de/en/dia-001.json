@@ -1,0 +1,368 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 1,
+  "fase": 1,
+  "nivel": "zero",
+  "status": "publicada",
+  "titulo": "Sounds and first words: Easy vowels and consonants",
+  "objetivo": "Lesson 1, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 1,
+    "titulo": "Sounds and first words",
+    "objetivo": "Recognise the sounds of German (including ä, ö, ü, ß, ch, sch, ei, ie), read new words without fear and make your first greetings.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "zero"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Easy vowels and consonants",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "intro",
+        "min": 3,
+        "texto": "Listen first, read after. Next to every letter, word and sentence there is a speaker: tap it, listen and repeat out loud. German is written the way it is spoken, and the pronunciation rules are few and regular. In this lesson you hear and read German for the first time: you learn the sounds, read new words without fear and finish with the first greetings. In the tables, «kh» marks the soft «ch» and «rr» marks the rough one (as in Scottish «loch»)."
+      },
+      {
+        "tipo": "alfabeto",
+        "min": 10,
+        "grupos": [
+          {
+            "nome": "Group 1 — Vowels",
+            "letras": [
+              {
+                "maiuscula": "A",
+                "minuscula": "a",
+                "som": "like the «a» in «father»",
+                "ipa": "[aː / a]",
+                "exemplo": "Apfel",
+                "exemploPt": "apple"
+              },
+              {
+                "maiuscula": "E",
+                "minuscula": "e",
+                "som": "like the «e» in «café», but without the glide",
+                "ipa": "[eː / ɛ]",
+                "exemplo": "Tee",
+                "exemploPt": "tea"
+              },
+              {
+                "maiuscula": "I",
+                "minuscula": "i",
+                "som": "like the «i» in «machine», but short",
+                "ipa": "[iː / ɪ]",
+                "exemplo": "Insel",
+                "exemploPt": "island"
+              },
+              {
+                "maiuscula": "O",
+                "minuscula": "o",
+                "som": "like the «o» in «more», but without the glide",
+                "ipa": "[oː / ɔ]",
+                "exemplo": "Ofen",
+                "exemploPt": "oven"
+              },
+              {
+                "maiuscula": "U",
+                "minuscula": "u",
+                "som": "like the «oo» in «moon», but short",
+                "ipa": "[uː / ʊ]",
+                "exemplo": "Uhr",
+                "exemploPt": "clock"
+              },
+              {
+                "maiuscula": "Ä",
+                "minuscula": "ä",
+                "som": "like the «e» in «bed», but longer",
+                "ipa": "[ɛː / ɛ]",
+                "exemplo": "Käse",
+                "exemploPt": "cheese"
+              },
+              {
+                "maiuscula": "Ö",
+                "minuscula": "ö",
+                "som": "the «e» sound with rounded lips, as if saying «o»",
+                "ipa": "[øː / œ]",
+                "exemplo": "Öl",
+                "exemploPt": "oil"
+              },
+              {
+                "maiuscula": "Ü",
+                "minuscula": "ü",
+                "som": "the «ee» sound with rounded lips, as if saying «oo»",
+                "ipa": "[yː / ʏ]",
+                "exemplo": "Tür",
+                "exemploPt": "door"
+              }
+            ]
+          },
+          {
+            "nome": "Group 2 — Consonants that look like English",
+            "letras": [
+              {
+                "maiuscula": "B",
+                "minuscula": "b",
+                "som": "like the «b» in «ball»",
+                "ipa": "[b]",
+                "exemplo": "Bad",
+                "exemploPt": "bathroom"
+              },
+              {
+                "maiuscula": "D",
+                "minuscula": "d",
+                "som": "like the «d» in «door», tongue on the teeth",
+                "ipa": "[d]",
+                "exemplo": "Dame",
+                "exemploPt": "lady"
+              },
+              {
+                "maiuscula": "F",
+                "minuscula": "f",
+                "som": "like the «f» in «fish»",
+                "ipa": "[f]",
+                "exemplo": "Film",
+                "exemploPt": "film"
+              },
+              {
+                "maiuscula": "K",
+                "minuscula": "k",
+                "som": "like the «k» in «kilo»",
+                "ipa": "[k]",
+                "exemplo": "Kino",
+                "exemploPt": "cinema"
+              },
+              {
+                "maiuscula": "L",
+                "minuscula": "l",
+                "som": "like the «l» in «lamp»",
+                "ipa": "[l]",
+                "exemplo": "Lampe",
+                "exemploPt": "lamp"
+              },
+              {
+                "maiuscula": "M",
+                "minuscula": "m",
+                "som": "like the «m» in «map»",
+                "ipa": "[m]",
+                "exemplo": "Mama",
+                "exemploPt": "mom"
+              },
+              {
+                "maiuscula": "N",
+                "minuscula": "n",
+                "som": "like the «n» in «name»",
+                "ipa": "[n]",
+                "exemplo": "Name",
+                "exemploPt": "name"
+              },
+              {
+                "maiuscula": "P",
+                "minuscula": "p",
+                "som": "like the «p» in «pen», with no puff of air",
+                "ipa": "[p]",
+                "exemplo": "Papa",
+                "exemploPt": "dad"
+              },
+              {
+                "maiuscula": "T",
+                "minuscula": "t",
+                "som": "like the «t» in «stop», drier and with no puff of air",
+                "ipa": "[t]",
+                "exemplo": "Taxi",
+                "exemploPt": "taxi"
+              },
+              {
+                "maiuscula": "X",
+                "minuscula": "x",
+                "som": "«ks», as in «taxi»",
+                "ipa": "[ks]",
+                "exemplo": "Fax",
+                "exemploPt": "fax"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "Papa",
+            "translit": "PAH-pah",
+            "pt": "dad",
+            "en": "dad",
+            "audio": "Papa"
+          },
+          {
+            "ru": "Mama",
+            "translit": "MAH-mah",
+            "pt": "mom",
+            "en": "mom",
+            "audio": "Mama"
+          },
+          {
+            "ru": "Tee",
+            "translit": "tay",
+            "pt": "tea",
+            "en": "tea",
+            "audio": "Tee"
+          },
+          {
+            "ru": "Taxi",
+            "translit": "TAHK-see",
+            "pt": "taxi",
+            "en": "taxi",
+            "audio": "Taxi"
+          },
+          {
+            "ru": "Film",
+            "translit": "film",
+            "pt": "film",
+            "en": "film",
+            "audio": "Film"
+          },
+          {
+            "ru": "Kino",
+            "translit": "KEE-noh",
+            "pt": "cinema",
+            "en": "cinema",
+            "audio": "Kino"
+          },
+          {
+            "ru": "Lampe",
+            "translit": "LAHM-peh",
+            "pt": "lamp",
+            "en": "lamp",
+            "audio": "Lampe"
+          },
+          {
+            "ru": "Name",
+            "translit": "NAH-meh",
+            "pt": "name",
+            "en": "name",
+            "audio": "Name"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 9,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Käse",
+            "opcoes": [
+              "Käse",
+              "Kino",
+              "Name"
+            ],
+            "gabarito": "Käse",
+            "explicacao": "You hear a «k» and right after it the «ä», which sounds like the «e» in «bed» but longer: «KAY-zeh». «Kino» would have an «i» right after the «k», and «Name» starts with «n».",
+            "id": "de-001-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Tür",
+            "opcoes": [
+              "Tür",
+              "Tee",
+              "Uhr"
+            ],
+            "gabarito": "Tür",
+            "explicacao": "The word starts with «t» and has «ü», the «oo» sound made with the tongue in the «ee» position. «Tee» has a plain long «e», and «Uhr» starts straight on the vowel «u».",
+            "id": "de-001-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Taxi",
+            "opcoes": [
+              "Taxi",
+              "Fax",
+              "Papa"
+            ],
+            "gabarito": "Taxi",
+            "explicacao": "The first sound is a «t». «Fax» starts with «f» and «Papa» with «p», so they do not fit.",
+            "id": "de-001-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Kino",
+            "respostaEsperada": "Kino",
+            "explicacao": "The «k» sound is written with the letter «k» in German, never with «c» as in «cinema». The final «o» is pronounced: «KEE-noh».",
+            "id": "de-001-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Lampe",
+            "respostaEsperada": "Lampe",
+            "explicacao": "Write «Lampe»: the final «e» is pronounced too, very short: «LAHM-peh». In German final letters are not silent.",
+            "id": "de-001-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which German letter is pronounced with the lips shaped for «oo» and the tongue saying «ee»?",
+            "opcoes": [
+              "Ü",
+              "U",
+              "Ö"
+            ],
+            "gabarito": "Ü",
+            "explicacao": "«ü» mixes the two: lips for «oo», tongue for «ee». «ö» makes the same mix with «o» and «e».",
+            "id": "de-001-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "The «ä» of «Käse» sounds like:",
+            "opcoes": [
+              "the «e» in «bed», but longer",
+              "the «a» in «father»",
+              "the «oo» in «moon»"
+            ],
+            "gabarito": "the «e» in «bed», but longer",
+            "explicacao": "The letter «ä» is an open «e». That is why «Käse» sounds «KAY-zeh» and not «kah-zeh».",
+            "id": "de-001-e07"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "K___se (cheese; read «KAY-zeh»)",
+            "opcoes": [
+              "ä",
+              "a",
+              "ö"
+            ],
+            "gabarito": "ä",
+            "explicacao": "The open «e» sound is written «ä». With «a» the word would sound «kah-zeh», and with «ö» it would sound different.",
+            "id": "de-001-e08"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "T___r (door; read «tewr», lips rounded)",
+            "opcoes": [
+              "ü",
+              "u",
+              "i"
+            ],
+            "gabarito": "ü",
+            "explicacao": "To get the «oo» sound with the tongue in the «ee» position, the right letter is «ü». With a plain «u» the word would sound like «tour».",
+            "id": "de-001-e09"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 4,
+        "enunciado": "Say out loud: «Papa, Mama, Tee, Taxi, Film, Kino, Lampe, Name». Repeat each word twice: first slowly, then at normal speed. Practise «ü» and «ö»: lips for «oo» (or «oh») and the tongue saying «ee» (or «ay»). If you can, record yourself and compare with the audio."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-001.json",
+  "responsavel": null
+}
