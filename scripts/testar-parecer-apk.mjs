@@ -33,7 +33,7 @@ try {
    const labels=await page.locator('.lv-tab').evaluateAll(els=>els.map(el=>{const l=el.lastElementChild,r=l.getBoundingClientRect(),a=el.getBoundingClientRect();return {visible:getComputedStyle(l).display!=='none',contained:r.left>=a.left-1&&r.right<=a.right+1&&r.bottom<=a.bottom+1};}));
    assert.equal(labels.length,5);assert.ok(labels.every(l=>l.visible&&l.contained),'cada rótulo deve ficar na própria aba');
   }
-  if(path==='/assinatura'){assert.equal(await page.locator('#excluir-conta').count(),1);assert.match(await page.locator('#excluir-conta a.btn').getAttribute('href'),/^mailto:hello\.linvuu@gmail\.com\?/);}
+  if(path==='/assinatura'){assert.equal(await page.locator('#excluir-conta').count(),1);assert.match(await page.locator('#excluir-conta a.btn').getAttribute('href'),/^mailto:contato@linvuu\.com\?/);} // endereço de contato oficial (src/config/site.ts)
   if(path==='/curso/en'){
    assert.equal(await page.locator('a[href="/curso/en/dia/9"]').count(),0);
    for(const width of [320,360,393,412]){
