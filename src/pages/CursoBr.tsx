@@ -7,7 +7,7 @@ import { SITE_URL } from '../config/site';
 import { SESSOES_GRATIS } from '../config/planos';
 import { LOCALE, useT } from '../i18n';
 
-/** Página do curso de português do Brasil para estrangeiros (inglês e espanhol). */
+/** Página do curso de português do Brasil para estrangeiros (explicado em inglês). */
 export default function CursoBr() {
   const destino = useDestinoSessao();
   const t = useT();

@@ -38,7 +38,7 @@ function AplicacaoDaConta() {
   return <App key={usuario?.uid ?? 'visitante'} />;
 }
 
-// Em inglês e espanhol, os títulos traduzidos das aulas chegam antes da primeira tela (um arquivo pequeno, só do idioma escolhido).
+// Em inglês os títulos traduzidos das aulas chegam antes da primeira tela (um arquivo pequeno, só do idioma escolhido).
 carregarTraducoes().finally(() => createRoot(document.getElementById('root')!).render(
   <BrowserRouter basename={LOCALE.prefixo || undefined}>
     <AuthProvider>

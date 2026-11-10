@@ -4,7 +4,7 @@ import { LOCALE } from '../i18n';
 import { usePageTitle } from '../lib/usePageTitle';
 import { AULAS_RUSSO, whatsappAulasRusso } from '../config/aulas-russo';
 
-/** Aulas ao vivo de russo (pt e en). Em espanhol a página não existe: volta para a home. */
+/** Aulas ao vivo de russo (pt e en). */
 export default function AulasRusso() {
   const cod = LOCALE.codigo === 'en' ? 'en' : 'pt-BR';
   const t = AULAS_RUSSO[cod];

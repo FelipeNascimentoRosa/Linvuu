@@ -23,8 +23,8 @@ export const localeLembrado = (): CodigoLocale | null => {
 const HOSTS_DO_SITE = /^(www\.)?linvuu\.com(\.br)?$/i;
 export const urlEm = (codigo: CodigoLocale) => {
   const resto = `${window.location.search}${window.location.hash}`;
-  // Nos domínios do site, cada idioma mora num domínio (PT no .com.br; EN e ES no .com): trocar de domínio exige endereço absoluto.
-  // Fora deles (desenvolvimento, app Android, prévias), a estrutura antiga /, /en, /es continua valendo.
+  // Nos domínios do site, cada idioma mora num domínio (PT no .com.br; EN no .com): trocar de domínio exige endereço absoluto.
+  // Fora deles (desenvolvimento, app Android, prévias), a estrutura / e /en continua valendo.
   if (HOSTS_DO_SITE.test(window.location.hostname) && perfilDoIdioma(codigo) !== perfilAtual()) return `${urlAbsolutaEm(codigo, window.location.pathname)}${resto}`;
   return `${caminhoEm(codigo, window.location.pathname)}${resto}`;
 };

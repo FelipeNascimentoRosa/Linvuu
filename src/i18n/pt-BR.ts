@@ -189,8 +189,8 @@ export const ptBR = {
   portugues: {
     tituloSeo: 'Português para estrangeiros · Brazilian Portuguese', descSeo: 'Curso de português do Brasil para estrangeiros, do A1 ao B1, com aulas explicadas em inglês. 62 aulas.',
     kicker: 'Português para estrangeiros', h1: 'Português do Brasil para quem não fala português',
-    lead: 'Um curso completo do zero ao B1, com cada aula explicada em inglês ou em espanhol. São 62 aulas de quatro sessões, com áudio, diálogos, gramática e exercícios. Indique a amigos, colegas e alunos estrangeiros.',
-    comecar: 'Ver o curso em inglês', ver: 'Ver o curso em espanhol',
+    lead: 'Um curso completo do zero ao B1, com cada aula explicada em inglês. São 62 aulas de quatro sessões, com áudio, diálogos, gramática e exercícios. Indique a amigos, colegas e alunos estrangeiros.',
+    comecar: 'Ver o curso em inglês', ver: 'Ver todas as aulas',
     nota: (s: number, p: string) => `As 2 primeiras aulas (${s} sessões) são grátis. Depois, ${p} por mês, com todos os cursos da Linvuu.`,
     niveisT: 'Níveis', aulas: (a: string) => `Aulas ${a}`, comoT: 'Como é o curso', honestoT: 'Com honestidade', planos: 'Planos',
     niveis: [
