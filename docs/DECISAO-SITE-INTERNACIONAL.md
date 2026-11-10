@@ -17,13 +17,26 @@
 > Estado medido em 09/11 (`main` = `be7ac4caf`): `.com.br` responde `lang="pt-BR"` e `.com` responde `lang="en"`; `/livros` no `.com` → 301 para o `.com.br` (PR #530). As três rotas institucionais que serviam português dentro do domínio inglês **foram traduzidas**: `/sobre` (PR #533) e `/por-que-linvuu` (PR #535), verificadas em produção, e `/contato` (PR #543), que passou a responder 200 em inglês, sem `noindex`, com `hreflang` pt-BR/en/x-default e entrada no sitemap do `.com` (46 → 47 URLs). Continuam só em português, por decisão e não por esquecimento, `/ex-alunos-udemy` (conversão de ex-alunos) e `/livro/gramatica-ru` (produto em português): os dois seguem `noindex` no `.com`, listados em `PENDENCIAS.md`.
 
 
+> ## Emenda de 11/11/2026 — espanhol é língua a estudar, nunca língua de explicação
+>
+> **Ordem do Felipe, 11/11/2026.** O espanhol **não é** língua de interface nem de explicação, e não volta — só numa outra decisão dele (se o site viralizar), que seria registrada aqui antes de qualquer código. O que existe hoje:
+>
+> | | Até 06/11 | Agora |
+> |---|---|---|
+> | `.com.br` | português, com uma opção de ler as explicações em espanhol | explicações **em português** |
+> | `.com` | — | explicações **em inglês** |
+> | espanhol | interface e explicações em espanhol | **só língua a estudar**: `curso/es`, `livros/es`, `content/idiomas/es` (como alemão, russo, francês, italiano) |
+> | `/es/...` | família de endereços válida | endereço **legado**, sem conteúdo; só redireciona |
+>
+> Limpeza feita nesta data: `Explicacao = 'pt' | 'en'` (`src/i18n/ensino.ts`), sem dicionário espanhol, sem pasta de tradução `es` em `content/idiomas/*`, sem texto público prometendo aula explicada em espanhol. Os itens 1, 3, 4 e 6 abaixo estão **superados** nesta parte; a linha "Render" da seção Infraestrutura também. O resto continua valendo.
+
 ## O que isso significa
-1. **Público.** Falantes de português, inglês e espanhol estudam qualquer idioma que não seja o seu. Um americano ou um indiano estuda russo ou alemão com explicações em inglês; um falante de espanhol, com explicações em espanhol.
+1. **Público.** Falantes de português e de inglês estudam qualquer idioma que não seja o seu. Um americano ou um indiano estuda russo ou alemão com explicações em inglês; um falante de espanhol lê o site em português ou em inglês — **não há explicação em espanhol** (emenda de 11/11).
 2. **Uma só home, um só marketing.** A home e a comunicação são as mesmas para todas as línguas (modelo dos concorrentes, como o Babbel). Só o texto muda de língua. Não se cria home separada por público. A home em português (`src/pages/HomeBrasileiros.tsx`) é a base; `src/i18n/home.ts` traduz.
-3. **O curso da própria língua do visitante nunca aparece** na vitrine (`cursoOculto` em `src/i18n/locales.ts`): em `/en` não há inglês, em `/es` não há espanhol, em `/` não há português para estrangeiros.
-4. **Língua do site ≠ língua de explicação.** O endereço define a interface (`/`, `/en`, `/es`). A explicação das aulas e a gramática têm arquivos próprios por língua (ver `docs/ESTRUTURA-INTERNACIONAL.md`).
+3. **O curso da própria língua do visitante nunca aparece** na vitrine (`cursoOculto` em `src/i18n/locales.ts`): no `.com` não há inglês; no `.com.br` não há português para estrangeiros.
+4. **Língua do site ≠ língua de explicação.** O domínio define a interface (`.com.br` em português, `.com` em inglês). A explicação das aulas e a gramática têm arquivos próprios por língua, hoje só `pt` e `en` (ver `docs/ESTRUTURA-INTERNACIONAL.md`).
 5. **Nada de "para brasileiros" no texto público.** "Brasileiros" só aparece no curso Português do Brasil.
-6. **Não prometer o que não existe.** "Explicado em inglês/espanhol" só onde as aulas estão traduzidas (hoje: só o curso `br` em inglês). O estado real está em `docs/COBERTURA-IDIOMAS.md` (`node scripts/cobertura-idiomas.mjs`).
+6. **Não prometer o que não existe.** "Explicado em inglês" só onde as aulas estão traduzidas (hoje: só o curso `br` em inglês) e "explicado em português" no `.com.br`. O estado real está em `docs/COBERTURA-IDIOMAS.md` (`node scripts/cobertura-idiomas.mjs`).
 
 ## Onde isso aparece (para não se perder)
 | Assunto | Arquivo |
@@ -39,6 +52,6 @@
 `docs/INTERNACIONAL.md` (13/10, "EN desligado") e qualquer texto que descreva a Linvuu como "para brasileiros" ou o inglês/espanhol como edição só de interface.
 
 ## Infraestrutura
-- **Render:** o mesmo serviço `linvuu` serve `/`, `/en` e `/es`; não há serviço por língua.
+- **Render:** o mesmo serviço `linvuu` serve os dois domínios (`.com.br` em português, `.com` em inglês); não há serviço nem caminho por língua.
 - **Firebase:** um só projeto e um só Firestore; a língua é preferência do usuário, não projeto separado.
 - **Preço e Stripe:** não mudam por esta decisão. Preço internacional exige autorização explícita do Felipe.

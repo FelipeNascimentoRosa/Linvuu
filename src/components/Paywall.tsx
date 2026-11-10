@@ -13,7 +13,7 @@ export function Paywall({ curso, indisponivel, idioma }: { curso: string; indisp
   const P = precosDo(LOCALE.codigo); // reais no .com.br, dólares no .com (só mensal e anual, cartão)
   const brl = P.moeda === 'BRL';
   const { usuario } = useAuth();
-  const { pathname } = useLocation(); // caminho sem o prefixo de idioma (/en, /es)
+  const { pathname } = useLocation(); // caminho sem o prefixo de idioma (/en)
   const [ocupado, setOcupado] = useState(false);
   const [erro, setErro] = useState('');
   const assinar = async (plano: Plano) => {
