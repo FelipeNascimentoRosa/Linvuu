@@ -65,7 +65,13 @@ await ctx.route('**/*', async (r) => {
   await r.fulfill({ response: resp, headers: h });
 });
 const falhas = [];
-const esperarHead = async (page) => { await page.waitForLoadState('networkidle').catch(() => {}); await page.waitForTimeout(150); };
+// A SPA atualiza o <head> depois de trocar de rota. Esperar o título do servidor (limite de 5 s) evita comparar
+// o <head> da página anterior em runner lento; o tempo esgotado não esconde a diferença — ela aparece na comparação.
+const esperarHead = async (page, titulo) => {
+  await page.waitForLoadState('networkidle').catch(() => {});
+  if (titulo) await page.waitForFunction((t) => document.title === t, titulo, { timeout: 5000 }).catch(() => {});
+  await page.waitForTimeout(50);
+};
 
 async function conferir(p) {
   const page = await ctx.newPage();
@@ -92,9 +98,9 @@ for (const [de, para] of percursos) {
   const achou = await page.evaluate((h) => { const a = [...document.querySelectorAll(`a[href="${h}"]`)].find((x) => !x.closest('[data-prerender]')); a?.click(); return !!a; }, para);
   if (!achou) { falhas.push(`SPA ${de} → ${para}: link não encontrado`); await page.close(); continue; }
   await page.waitForURL(base + para);
-  await esperarHead(page);
-  const dom = await lerDom(page);
   const servidor = lerHtml(await buscar(para));
+  await esperarHead(page, servidor.titulo);
+  const dom = await lerDom(page);
   for (const k of Object.keys(servidor)) if (servidor[k] !== dom[k]) falhas.push(`SPA ${de} → ${para} [${k}] servidor=«${servidor[k]}» navegador=«${dom[k]}»`);
   await page.close();
 }
