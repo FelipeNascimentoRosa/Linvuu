@@ -4,12 +4,12 @@ Uma linha por lote. O agente altera **só** a linha do lote em que trabalhou, no
 
 | nº | lote | quem | estado | PR | prova |
 |---|---|---|---|---|---|
-| 1 | Mesclar #555, #556 e #557 e zerar a fila de PRs | A+F | mergeado | #555 #556 #557 | Felipe mesclou em 11/11; só o #564 (plano) está aberto; smoke de produção 11/11: 200 e título no idioma certo nas 13 rotas dos dois domínios, 1 h1 nas indexáveis, sem R$ no .com nem US$ no .br; `/curso/ru/dia/1` sem h1 no HTML do servidor nos dois (sessão é noindex) |
-| 2 | Fazer o e-mail de contato exibido receber mensagem | A+F | espera o Felipe | — | falta escolher (a) Email Routing da Cloudflare em linvuu.com ou (b) trocar o endereço exibido para contato@linvuu.com.br; a opção (b) o agente faz em 10 min assim que ele disser |
+| 1 | Mesclar #555, #556 e #557 e zerar a fila de PRs | A+F | mergeado | #555 #556 #557 | `gh pr list --state open` → só o PR do plano em 11/11; smoke de produção 200 e título no idioma certo nas 13 rotas dos dois domínios |
+| 2 | Fazer o e-mail de contato exibido receber mensagem | A+F | em produção | Felipe | Felipe verificou o recebimento em 11/11; DNS 11/11: MX da Cloudflare (Email Routing) em linvuu.com e linvuu.com.br — antes `0 .` no .com |
 | 3 | Comprar de verdade nos dois domínios e reembolsar | A+F | espera o Felipe | — | falta ele fazer as 3 compras com cartão próprio (mensal R$ 139, trimestral Pix R$ 291,90, mensal US$ 19,99); depois o agente confere webhook, acesso e reembolso |
-| 4 | Imprimir o funil real a partir do servidor | A | PR aberto | #565 | `testar:medicao`, `testar-cobranca-eventos.ts`, contrato de billing e lint verdes; falta chamar `/api/metricas` em produção após o deploy |
-| 5 | Contar visitas por rota sem cookie e sem consentimento | A | a fazer | — | — |
-| 6 | Registrar clique de botão com identificador | A | a fazer | — | — |
+| 4 | Imprimir o funil real a partir do servidor | A | em produção | #565 | mergeado 11/11 (dc4eb6c5); `/api/metricas` → 404 sem `METRICAS_TOKEN` (por desenho); falta a 1ª chamada autenticada com o token |
+| 5 | Contar visitas por rota sem cookie e sem consentimento | A | mergeado | #567 | mergeado 11/11 (04efdf96); `testar:medicao` verde |
+| 6 | Registrar clique de botão com identificador | A | mergeado | #568 | mergeado 11/11 (5cb70f90); `POST /api/cta` inválido → 400 |
 | 7 | Trocar "chegam em breve" por avaliações reais | A | a fazer | — | — |
 | 8 | Exibir FUNDADORES, o trimestral e uma grade de planos alinhada | A | a fazer | — | — |
 | 9 | Pôr preço, botão e regra dos 7 dias na primeira tela de /assinatura | A+F | a fazer | — | — |
@@ -96,7 +96,7 @@ Uma linha por lote. O agente altera **só** a linha do lote em que trabalhou, no
 | 90 | Conquistar 30 links reais para os dois domínios | A+F | a fazer | — | — |
 | 91 | Validar os dados estruturados nas 10 páginas principais | A | a fazer | — | — |
 | 92 | Encurtar o salto duplo de /es/* | A | a fazer | — | — |
-| 93 | Remover o código morto do metaRota | A | a fazer | — | — |
+| 93 | Remover o código morto do metaRota | A | mergeado | #570 | mergeado 11/11 (37c78ccd); `src/lib/metaRota.ts` 675 → 602 linhas; `testar-inventario-seo.ts` conforme |
 | 94 | Restaurar o backup do Firestore num emulador | A | a fazer | — | — |
 | 95 | Cercar cada rota com tratamento de erro e contar falhas | A | a fazer | — | — |
 | 96 | Tornar a acessibilidade bloqueante no CI | A | a fazer | — | — |

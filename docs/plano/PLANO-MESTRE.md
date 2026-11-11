@@ -1,6 +1,6 @@
 # Plano-mestre da Linvuu — 11/11/2026
 
-Resposta ao `docs/PROMPT-UNICO-PLANEJAMENTO-2026-11-11.md`, escrita uma vez, para ser executada lote a lote por outro modelo. Três arquivos trabalham juntos: este (o porquê e a ordem), [`LOTES.md`](LOTES.md) (os 100 lotes) e [`EXECUTAR.md`](EXECUTAR.md) (como rodar cada sessão). O andamento fica em [`ESTADO.md`](ESTADO.md).
+Resposta ao `docs/historico/PROMPT-UNICO-PLANEJAMENTO-2026-11-11.md`, escrita uma vez, para ser executada lote a lote por outro modelo. Três arquivos trabalham juntos: este (o porquê e a ordem), [`LOTES.md`](LOTES.md) (os 100 lotes) e [`EXECUTAR.md`](EXECUTAR.md) (como rodar cada sessão). O andamento fica em [`ESTADO.md`](ESTADO.md).
 
 **De onde vêm os fatos.** Do repositório na `main` em `7ad0f435`, dos documentos do projeto, do dossiê de 10–11/11 e de leituras feitas em 11/11/2026 nos dois sites, no DNS, na API do GitHub e no vidIQ. O que foi medido hoje está marcado "(medido 11/11)". Número meu que não é medição é **alvo** ou **hipótese `H n`** (lista no §11).
 

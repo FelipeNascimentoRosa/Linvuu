@@ -1,5 +1,7 @@
 # Prompt único de planejamento máximo — Linvuu (11/11/2026)
 
+> **Arquivado em 11/11/2026 (lote 99).** Substituído por [`docs/plano/`](../plano/EXECUTAR.md) — o único plano em vigor. Mantido só como registro histórico; não execute a partir daqui.
+
 **Para que serve:** uma só sessão de um modelo de raciocínio forte (o "melhor cérebro" disponível, usado **uma vez**) para produzir o mapa completo do site, a régua do impecável e a fila de 100 lotes de execução — que depois é executada por Cline + Sonnet 5.5, lote por lote.
 
 **Por que existe:** um one-shot falha por três motivos, sempre os mesmos — (1) o modelo não vê o site e inventa; (2) o padrão "está bom" deixa passar o medíocre; (3) o pedido sem formato vira ensaio e trava. Este arquivo remove os três: entrega a verdade medida, define impecável em números e impõe um esqueleto de saída com contagem verificável.
