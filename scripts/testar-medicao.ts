@@ -4,6 +4,9 @@ import express from 'express';
 import { agregar, validar } from '../server/medicao.ts';
 import { funilPorDia, idFunil } from '../server/funil.ts';
 import { agregarVisitas, ehRobo, idVisita, registrarVisitas, rotaModelo, visitaContavel } from '../server/visitas.ts';
+import { agregarCtas, campoCta, chaveCta, idCta, registrarCtas } from '../server/ctas.ts';
+import { CTAS } from '../src/config/ctas.ts';
+import { readdirSync, readFileSync } from 'node:fs';
 
 const id = 'a'.repeat(32);
 assert.ok(validar({ id, eventos: [{ t: 'ex', idioma: 'en', ex: 'en-018-e01', tp: 'multiple-choice', ok: 1 }, { t: 'fim', idioma: 'en', aula: 18, ac: 30, tot: 40 }] }));
@@ -107,4 +110,53 @@ await pedir('/curso/ru', 'Googlebot/2.1'); // robô não conta
 await new Promise((r) => setTimeout(r, 50));
 srv.close();
 assert.deepEqual(contadas, [{ host: '127.0.0.1', rota: '/curso/:id' }], 'só a visita de gente em HTML 200 é contada');
+// Cliques em botão (lote 6): lista fechada, contagem por dia/host/botão, sem cookie e sem IP.
+assert.equal(new Set(CTAS).size, CTAS.length, 'sem identificador repetido na lista fechada');
+assert.ok(CTAS.every((c) => /^[a-z]+(_[a-z]+)+$/.test(c)), 'identificador em minúsculas, com sublinhado, igual nos dois idiomas');
+assert.deepEqual(chaveCta('linvuu.com.br', 'assinatura_anual'), { host: 'linvuu.com.br', cta: 'assinatura_anual' });
+assert.equal(chaveCta('linvuu.com.br:443', 'home_curso')?.host, 'linvuu.com.br', 'a porta não entra no host');
+assert.equal(chaveCta('linvuu.com.br', 'botao_inventado'), null, 'botão fora da lista não é contado');
+assert.equal(chaveCta('linvuu.com.br', 'https://linvuu.com.br/x'), null, 'URL não é identificador de botão');
+assert.equal(chaveCta('', 'assinatura_anual'), null, 'sem host não há contagem');
+const ci = idCta('linvuu.com.br', '2026-11-20');
+assert.match(ci, /^[a-f0-9]{32}$/);
+assert.ok(!ci.includes('linvuu'), 'o ID do documento é hash, não o host');
+assert.equal(ci, idCta('linvuu.com.br', '2026-11-20'), 'mesmo dia e host, mesmo documento (soma no mesmo contador)');
+assert.notEqual(ci, idCta('linvuu.com', '2026-11-20'), 'domínios diferentes, documentos diferentes');
+assert.notEqual(ci, idCta('linvuu.com.br', '2026-11-21'), 'dias diferentes, documentos diferentes');
+const ac = agregarCtas([
+  { d: '2026-11-20', h: 'linvuu.com.br', n: 3, [campoCta('assinatura_anual')]: 2, [campoCta('home_curso')]: 1 },
+  { d: '2026-11-19', h: 'linvuu.com', n: 4, [campoCta('assinatura_anual')]: 4 },
+  { d: '2026-01-01', h: 'linvuu.com.br', n: 99, [campoCta('assinatura_anual')]: 99 },
+  { d: '2026-11-20', h: 'linvuu.com.br', n: 0 },
+], 28, agora);
+assert.equal(ac.total, 7, 'só o que está dentro da janela e tem n > 0');
+assert.deepEqual(ac.porDia[27], { dia: '2026-11-20', cliques: 3 });
+assert.deepEqual(ac.porHost, [{ host: 'linvuu.com', cliques: 4 }, { host: 'linvuu.com.br', cliques: 3 }]);
+assert.deepEqual(ac.porCta, [{ cta: 'assinatura_anual', cliques: 6 }, { cta: 'home_curso', cliques: 1 }], 'botão com mais clique primeiro; fora da janela não entra');
+// Todo data-cta escrito no código tem de existir na lista fechada: identificador inventado não passa do build.
+const marcados = new Set<string>();
+for (const f of readdirSync(new URL('../src/', import.meta.url), { recursive: true, encoding: 'utf8' })) {
+  if (!/\.tsx?$/.test(f)) continue;
+  const texto = readFileSync(new URL(`../src/${f.replace(/\\/g, '/')}`, import.meta.url), 'utf8');
+  for (const m of texto.matchAll(/\b(?:data-cta|cta)="([a-zA-Z0-9_-]+)"/g)) marcados.add(m[1]);
+}
+for (const m of marcados) assert.ok((CTAS as readonly string[]).includes(m), `cta="${m}" não está na lista fechada de src/config/ctas.ts`);
+assert.ok(marcados.size >= 10, `os botões principais estão marcados (${marcados.size})`);
+
+// A rota de verdade, num servidor Express local: só identificador da lista é contado, e uma vez por clique.
+const cliques: { host: string; cta: string }[] = [];
+const appCta = express();
+appCta.use(express.json());
+registrarCtas(appCta, (c) => cliques.push(c));
+const srvCta = await new Promise<import('node:http').Server>((ok) => { const s = appCta.listen(0, '127.0.0.1', () => ok(s)); });
+const baseCta = `http://127.0.0.1:${(srvCta.address() as { port: number }).port}`;
+const clicar = (corpo: unknown) => fetch(baseCta + '/api/cta', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(corpo) });
+assert.equal((await clicar({ cta: 'assinatura_anual' })).status, 204, 'clique válido responde sem corpo');
+assert.equal((await clicar({ cta: 'botao_inventado' })).status, 400, 'botão fora da lista é recusado');
+assert.equal((await clicar({})).status, 400, 'sem identificador é recusado');
+assert.equal((await clicar({ cta: ['assinatura_anual'] })).status, 400, 'lista no lugar do identificador é recusada');
+await new Promise((r) => setTimeout(r, 50));
+srvCta.close();
+assert.deepEqual(cliques, [{ host: '127.0.0.1', cta: 'assinatura_anual' }], 'só o clique em botão da lista é contado');
 console.log('ok: medição');

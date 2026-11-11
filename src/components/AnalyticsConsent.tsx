@@ -5,6 +5,7 @@ import {analytics,rotaAnalytics,type AnalyticsChoice} from '../lib/analytics';
 import {metaPixel} from '../lib/metaPixel';
 import {tiktokPixel} from '../lib/tiktokPixel';
 import {clarity} from '../lib/clarity';
+import {ctaDoAlvo,registrarCta} from '../lib/cta';
 import {APK} from '../plataforma';
 import './analytics-consent.css';
 const texts={
@@ -23,6 +24,9 @@ export function BotaoPreferencias({className}:{className?:string}){
 export function AnalyticsConsent(){
  const t=texts[LOCALE.codigo],ad=ads[LOCALE.codigo],x=extra[LOCALE.codigo],[aberto,setAberto]=useState(false),{pathname,search}=useLocation(),[choice,setChoice]=useState<AnalyticsChoice>(()=>analytics.choice()),[adChoice,setAdChoice]=useState<AnalyticsChoice>(()=>metaPixel.choice());
  useEffect(()=>{if(choice!=='yes')return;const props=rotaAnalytics(pathname);if(!props)return;void analytics.capture('page_viewed',props);if(props.page==='course')void analytics.capture('course_viewed',props);if(props.page==='lesson')void analytics.capture('lesson_started',props);},[pathname,choice]);
+ // Clique em botão medido (lote 6). Fica aqui porque este componente está montado no site inteiro.
+ // O evento do PostHog continua dependendo do consentimento; o contador do servidor não guarda quem clicou.
+ useEffect(()=>{const aoClicar=(e:MouseEvent)=>{const cta=ctaDoAlvo(e.target);if(cta)registrarCta(cta);};document.addEventListener('click',aoClicar,true);return()=>document.removeEventListener('click',aoClicar,true);},[]);
  useEffect(()=>{if(APK)return;if(choice==='yes')clarity.permitir();else if(choice==='no')clarity.recusar();},[choice]);
  useEffect(()=>{if(!APK&&adChoice==='yes'){metaPixel.pageView();tiktokPixel.pageView();}},[pathname,search,adChoice]);
  const medir=useCallback((el:HTMLElement|null)=>{const raiz=document.documentElement;if(!el||APK){raiz.style.removeProperty('--lv-consent-h');return;}const ro=new ResizeObserver(()=>raiz.style.setProperty('--lv-consent-h',`${Math.ceil(el.getBoundingClientRect().height)+16}px`));ro.observe(el);},[]);

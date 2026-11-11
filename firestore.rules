@@ -40,7 +40,7 @@ service cloud.firestore {
     }
 
     // Negação explícita e documentada de todo o resto (já seria negado por padrão):
-    //  - /newsletter, /eventos, /funil e /visitas: só o servidor (Admin SDK) grava e lê.
+    //  - /newsletter, /eventos, /funil, /visitas e /ctas: só o servidor (Admin SDK) grava e lê.
     //  - /usuarios (coleção antiga, sem uso no código) e /lessons (conteúdo vem do servidor): sem acesso do navegador.
     match /{document=**} {
       allow read, write: if false;

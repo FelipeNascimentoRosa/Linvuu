@@ -11,6 +11,7 @@ import { registrarCobranca, registrarLivroProtegido, registrarNotificacoesCobran
 import { registrarProgresso } from './server/progresso';
 import { registrarMedicao } from './server/medicao';
 import { registrarVisitas } from './server/visitas';
+import { registrarCtas } from './server/ctas';
 import { registrarNewsletter } from './server/newsletter';
 import { registrarAvaliacoes } from './server/avaliacoes';
 import { registrarExclusao } from './server/exclusao';
@@ -56,6 +57,7 @@ async function startServer() {
   registrarMedicao(app);
   // Visitas por rota, contadas no servidor: registrado antes das rotas de página para pegar todo HTML 200.
   registrarVisitas(app);
+registrarCtas(app); // POST /api/cta: clique de botão contado sem cookie e sem IP (lote 6)
   registrarNewsletter(app);
   registrarAvaliacoes(app);
   registrarExclusao(app);

@@ -12,9 +12,10 @@ try{
   try{
    for(let n=0;n<60;n++){try{if((await fetch(base)).ok)break;}catch{}await new Promise(r=>setTimeout(r,250));}
    for(const locale of ['', '/en']){
-    const ctx=await semAbertura(browser,{viewport:{width:320,height:720}}),page=await ctx.newPage(),events=[];
+    const ctx=await semAbertura(browser,{viewport:{width:320,height:720}}),page=await ctx.newPage(),events=[],cliques=[];
     await page.route('https://linvuu.com.br/**',r=>r.abort());
     await page.route('https://us.i.posthog.com/**',async r=>{events.push(JSON.parse(r.request().postData()));await r.fulfill({status:200,contentType:'application/json',body:'{"status":1}'});});
+    await page.route('**/api/cta',async r=>{cliques.push(JSON.parse(r.request().postData()));await r.fulfill({status:204,body:''});});
     await page.goto(base+locale+'/');await page.locator('.analytics-consent').waitFor();
     await page.waitForTimeout(200);assert.equal(events.length,0,'nenhum envio antes de consentir');
     // Reabre o detalhe por finalidade quando a barra já saiu da tela (o rodapé sempre tem o botão).
@@ -32,6 +33,19 @@ try{
     await page.locator('.analytics-consent-analytics summary').click();await page.locator('.analytics-consent-analytics .analytics-actions button').first().click();
     for(let n=0;n<30&&!events.length;n++)await page.waitForTimeout(50);
     assert.equal(events[0]?.event,'page_viewed');assert.equal(events[0]?.properties.platform,target==='apk'?'android':'web');assert.equal(events[0]?.properties.environment,'test');assert.equal(events[0]?.properties.interface_language,locale==='/en'?'en':'pt-BR');
+    // Clique medido (lote 6), só no site: a home do APK é a tela do app, sem botão de campanha.
+    // Teclado, não mouse: o aviso de análise está fixo no rodapé e cobriria o botão.
+    if(target==='website'){
+     const alvo=page.locator('[data-cta]:visible').first();await alvo.waitFor();
+     const idBotao=await alvo.getAttribute('data-cta');assert.match(idBotao??'',/^[a-z]+(_[a-z]+)+$/,'o botão marcado usa identificador no formato da lista fechada');
+     await alvo.focus();await page.keyboard.press('Enter');
+     for(let n=0;n<40&&!events.some(e=>e.event==='cta_clicked');n++)await page.waitForTimeout(50);
+     const clique=events.find(e=>e.event==='cta_clicked');
+     assert.equal(clique?.properties.cta,idBotao,'o evento do clique leva o identificador do botão');
+     assert.ok(!JSON.stringify(clique?.properties).includes('/'),'nenhuma URL no evento de clique');
+     for(let n=0;n<40&&!cliques.length;n++)await page.waitForTimeout(50);
+     assert.deepEqual(cliques[0],{cta:idBotao},'o servidor recebe só o identificador: sem cookie, sem IP e sem texto');
+    }
     await page.goto(base+locale+'/cursos?token=do-not-capture');await abrir();await page.waitForTimeout(200);
     assert.ok(!JSON.stringify(events).includes('do-not-capture'));
     await page.evaluate(()=>document.documentElement.style.setProperty('--app-text-scale','2'));
