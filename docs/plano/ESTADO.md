@@ -31,7 +31,7 @@ Uma linha por lote. O agente altera **só** a linha do lote em que trabalhou, no
 | 25 | Transformar /gramatica num hub de verdade | A | a fazer | — | — |
 | 26 | Reescrever os hubs de russo e alemão por intenção de busca | A | a fazer | — | — |
 | 27 | Reescrever os hubs de inglês, espanhol, francês e italiano | A | a fazer | — | — |
-| 28 | Marcar o idioma de todo trecho estrangeiro | A | PR aberto | #578 | local: `/gramatica/de` 0 → 247 `lang="de"` no HTML do servidor (ru 238, fr 326, it 430, es 339, en 359); exemplos e erros dos tópicos grátis entram no HTML |
+| 28 | Marcar o idioma de todo trecho estrangeiro | A | em produção | #578 | produção 11/11 12:40Z: `curl -s https://linvuu.com.br/gramatica/de | grep -c lang="de"` → 62 (DOD ≥ 20); o HTML servido agora é a página real (#580) |
 | 29 | Garantir toque de 44 px, campo de 16 px, texto de 14 px e linha de 75 | A | a fazer | — | — |
 | 30 | Unificar a escala de títulos e pôr o H1 acima do H2 no celular | A | a fazer | — | — |
 | 31 | Corrigir textos vencidos e páginas mistas (D5, D7, D9, D10) | A | a fazer | — | — |
