@@ -107,8 +107,8 @@ const TX = {
  * descrições abaixo de 120. O português tem o bloco `SEO_BR` abaixo, com a mesma regra aplicada.
  */
 const SEO_EN = {
-  cursosT: 'Language courses: Portuguese, French and Russian',
-  cursosD: 'Linvuu language courses for English speakers: Brazilian Portuguese, French and Russian explained in English, in 30-minute sessions. Two free lessons.',
+  cursosT: 'Online language courses explained in English',
+  cursosD: 'Language courses for English speakers: Brazilian Portuguese, French and Russian fully explained in English; Spanish and German partly. Two free lessons.',
   assinaturaT: 'Subscription: monthly and 12-month plans',
   assinaturaD: 'Learn languages with Linvuu: a monthly or 12-month plan, priced in US dollars, and the first two lessons of every course free. No card needed to start.',
   privT: 'Privacy policy: what data Linvuu collects',
@@ -184,7 +184,7 @@ const LINGUAS: Record<string, Record<string, string>> = {
 };
 const HOME = {
   'pt-BR': { titulo: HOME_BR.tituloSeo, descricao: HOME_BR.descricao },
-  en: { titulo: 'Language courses for English speakers', descricao: 'Courses for English speakers: Brazilian Portuguese, French and Russian explained in English, German, Spanish and Italian in translation. 2 lessons free.' },
+  en: { titulo: 'Language courses for English speakers', descricao: 'Courses for English speakers: Brazilian Portuguese, French and Russian fully explained in English; Spanish and German partly. Try 2 free lessons.' },
 };
 
 /**

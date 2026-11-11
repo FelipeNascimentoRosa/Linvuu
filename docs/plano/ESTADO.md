@@ -10,11 +10,11 @@ Uma linha por lote. O agente altera **só** a linha do lote em que trabalhou, no
 | 4 | Imprimir o funil real a partir do servidor | A | em produção | #565 | mergeado 11/11 (dc4eb6c5); `/api/metricas` → 404 sem `METRICAS_TOKEN` (por desenho); falta a 1ª chamada autenticada com o token |
 | 5 | Contar visitas por rota sem cookie e sem consentimento | A | mergeado | #567 | mergeado 11/11 (04efdf96); `testar:medicao` verde |
 | 6 | Registrar clique de botão com identificador | A | mergeado | #568 | mergeado 11/11 (5cb70f90); `POST /api/cta` inválido → 400 |
-| 7 | Trocar "chegam em breve" por avaliações reais | A | PR aberto | #572 | `grep "chegam em breve" dist/assets/*.js` = 0; 7 avaliações da Udemy com fonte no .com.br; .com sem lista vazia; lint e build verdes |
+| 7 | Trocar "chegam em breve" por avaliações reais | A | mergeado | #572 | `grep "chegam em breve" dist/assets/*.js` = 0; 7 avaliações da Udemy com fonte no .com.br; .com sem lista vazia; lint e build verdes |
 | 8 | Exibir FUNDADORES, o trimestral e uma grade de planos alinhada | A | a fazer | — | — |
 | 9 | Pôr preço, botão e regra dos 7 dias na primeira tela de /assinatura | A+F | a fazer | — | — |
 | 10 | Mostrar prova e botão na primeira dobra do celular | A | a fazer | — | — |
-| 11 | Corrigir as promessas que o .com não cumpre (D1, D8, D11, D12) | A | a fazer | — | — |
+| 11 | Corrigir as promessas que o .com não cumpre (D1, D8, D11, D12) | A | PR aberto | #576 | /en/curso/it → "0 of 62 lessons" (era "Every lesson…"); título/descrição de /cursos e da home sem prometer italiano; livros fora da home do .com; D11 não reproduz (1 visível + 1 no FAQPage); titulos, seo-publico, inventário e dominio verdes |
 | 12 | Oferecer o anual em até 12 vezes no cartão | A+F | a fazer | — | — |
 | 13 | Abrir conversa por WhatsApp com clique medido | A+F | a fazer | — | — |
 | 14 | Reenviar os sitemaps e pedir indexação das 10 páginas que vendem | A+F | a fazer | — | — |
@@ -60,7 +60,7 @@ Uma linha por lote. O agente altera **só** a linha do lote em que trabalhou, no
 | 54 | Publicar 30 dúvidas de russo em inglês no .com | A | a fazer | — | — |
 | 55 | Ligar aula, dúvida e livro com próximo passo e trilha | A | a fazer | — | — |
 | 56 | Criar o teste de nível por idioma | A | a fazer | — | — |
-| 57 | Mostrar o objetivo real de cada aula no hub e na sessão | A | a fazer | — | — |
+| 57 | Mostrar o objetivo real de cada aula no hub e na sessão | A | mergeado | #573 | /curso/de com 72 objetivos em pt-BR; 0 em /en/curso/ru |
 | 58 | Agendar a revisão espaçada com data de retorno | A | a fazer | — | — |
 | 59 | Reorganizar a página da aula | A | a fazer | — | — |
 | 60 | Eliminar o flash de "Carregando…" em curso e aula | A | a fazer | — | — |
@@ -95,14 +95,14 @@ Uma linha por lote. O agente altera **só** a linha do lote em que trabalhou, no
 | 89 | Criar perfis dos professores em Preply e Superprof | A+F | a fazer | — | — |
 | 90 | Conquistar 30 links reais para os dois domínios | A+F | a fazer | — | — |
 | 91 | Validar os dados estruturados nas 10 páginas principais | A | a fazer | — | — |
-| 92 | Encurtar o salto duplo de /es/* | A | a fazer | — | — |
+| 92 | Encurtar o salto duplo de /es/* | A | PR aberto | #575 | testar:dominio 23 casos; /es/livros chega ao .com.br em 1 salto |
 | 93 | Remover o código morto do metaRota | A | mergeado | #570 | mergeado 11/11 (37c78ccd); `src/lib/metaRota.ts` 675 → 602 linhas; `testar-inventario-seo.ts` conforme |
 | 94 | Restaurar o backup do Firestore num emulador | A | a fazer | — | — |
 | 95 | Cercar cada rota com tratamento de erro e contar falhas | A | a fazer | — | — |
 | 96 | Tornar a acessibilidade bloqueante no CI | A | a fazer | — | — |
 | 97 | Assistir 5 gravações por semana no Clarity | F | a fazer | — | — |
 | 98 | Publicar o painel semanal dos 6 números | A | a fazer | — | — |
-| 99 | Arquivar planos substituídos e deixar um só caminho de leitura | A | PR aberto | #571 | 5 planos antigos movidos para docs/historico; AGENTS.md, CLAUDE.md e docs/README.md apontam só para docs/plano; links .md conferidos por script |
+| 99 | Arquivar planos substituídos e deixar um só caminho de leitura | A | mergeado | #571 | 5 planos antigos movidos para docs/historico; AGENTS.md, CLAUDE.md e docs/README.md apontam só para docs/plano; links .md conferidos por script |
 | 100 | Reescrever o plano com números reais nos dois portões | A+F | a fazer | — | — |
 
 ## Portões
