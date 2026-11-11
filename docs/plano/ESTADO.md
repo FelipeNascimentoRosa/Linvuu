@@ -23,7 +23,7 @@ Uma linha por lote. O agente altera **só** a linha do lote em que trabalhou, no
 | 17 | Publicar a Turma de Russo ao vivo com pagamento na página | A+F | a fazer | — | — |
 | 18 | Captar interesse por idioma num formulário único | A | a fazer | — | — |
 | 19 | Acionar os ex-alunos da Udemy antes de 30/01/2027 | A+F | a fazer | — | — |
-| 20 | Tirar o áudio pago da árvore pública do repositório | A+F | a fazer | — | — |
+| 20 | Tirar o áudio pago da árvore pública do repositório | A+F | PR aberto | #583 | Felipe pôs `AUDIO_REPO_TOKEN` no Render; log do deploy `dep-dbq70iu7` 13:41Z: `audio-privado: 11033 MP3 baixados de FelipeNascimentoRosa/Linvuu-Audio (token)`; o servidor já serve de `.audio-privado/`; este PR tira os 11.039 arquivos (11.033 MP3 + 6 manifestos) da árvore |
 | 21 | Tirar os capítulos pagos da árvore pública | A | a fazer | — | — |
 | 22 | Limpar do histórico do Git os arquivos pagos | A+F | a fazer | — | — |
 | 23 | Criar rota e molde da página de dúvida e publicar o piloto | A | a fazer | — | — |
