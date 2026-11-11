@@ -16,9 +16,11 @@ try {
   await page.route('https://analytics.tiktok.com/**',async route=>{tiktokLoads++;await route.fulfill({status:200,contentType:'text/javascript',body:'/* TikTok SDK bloqueado no teste local */'});});
   await page.addInitScript(()=>localStorage.setItem('linvuu:marketing:v1','yes'));
   await page.goto(base+lang+'/livros/de?utm_source=facebook&utm_medium=organic_social');
-  const box=page.locator('.analytics-consent-ads'); await box.waitFor();
+  const box=page.locator('.analytics-consent-ads');
+  // Primeira visita mostra a barra de uma linha: o detalhe por finalidade mora em «Detalhar».
   // Depois da escolha o painel sai da página; reabre pelo botão «Preferências de cookies» do rodapé.
-  const abrir=async()=>{ await page.waitForLoadState('networkidle'); if(!await box.isVisible()) await page.locator('.lv-preferencias').first().click(); await box.waitFor(); };
+  const abrir=async()=>{ await page.waitForLoadState('networkidle'); if(!await box.isVisible()){ const detalhar=page.locator('.analytics-consent-bar .analytics-consent-detalhar'); if(await detalhar.count()) await detalhar.click(); else await page.locator('.lv-preferencias').first().click(); } await box.waitFor(); };
+  await abrir();
   assert.equal(loads,0,'consentimento antigo apenas Meta não autoriza novos pixels'); assert.equal(tiktokLoads,0); assert.equal(requests,0);
   await box.locator('button').last().click(); await page.reload(); await abrir();
   assert.equal(loads,0,'recusa persiste após recarregar'); assert.equal(tiktokLoads,0);

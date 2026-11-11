@@ -41,8 +41,8 @@ export function AnalyticsConsent(){
  if(!APK&&pendente&&!aberto)return <aside ref={medir} className="analytics-consent analytics-consent-bar" data-flutuante="true" aria-label={t.title}>
   <p className="analytics-consent-curto">{t.curto}</p>
   <div className="analytics-actions">
-   <button type="button" className="btn btn-ghost" onClick={()=>tudo('yes')}>{x.aceitar}</button>
-   <button type="button" className="btn btn-ghost" onClick={()=>tudo('no')}>{x.recusar}</button>
+   <button type="button" className="btn btn-ghost analytics-consent-aceitar" onClick={()=>tudo('yes')}>{x.aceitar}</button>
+   <button type="button" className="btn btn-ghost analytics-consent-recusar" onClick={()=>tudo('no')}>{x.recusar}</button>
    <button type="button" className="btn btn-ghost analytics-consent-detalhar" onClick={()=>setAberto(true)}>{x.preferencias}</button>
   </div>
  </aside>;
