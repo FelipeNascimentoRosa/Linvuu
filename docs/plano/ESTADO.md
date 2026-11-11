@@ -10,7 +10,7 @@ Uma linha por lote. O agente altera **só** a linha do lote em que trabalhou, no
 | 4 | Imprimir o funil real a partir do servidor | A | em produção | #565 | mergeado 11/11 (dc4eb6c5); `/api/metricas` → 404 sem `METRICAS_TOKEN` (por desenho); falta a 1ª chamada autenticada com o token |
 | 5 | Contar visitas por rota sem cookie e sem consentimento | A | mergeado | #567 | mergeado 11/11 (04efdf96); `testar:medicao` verde |
 | 6 | Registrar clique de botão com identificador | A | mergeado | #568 | mergeado 11/11 (5cb70f90); `POST /api/cta` inválido → 400 |
-| 7 | Trocar "chegam em breve" por avaliações reais | A | a fazer | — | — |
+| 7 | Trocar "chegam em breve" por avaliações reais | A | PR aberto | #572 | `grep "chegam em breve" dist/assets/*.js` = 0; 7 avaliações da Udemy com fonte no .com.br; .com sem lista vazia; lint e build verdes |
 | 8 | Exibir FUNDADORES, o trimestral e uma grade de planos alinhada | A | a fazer | — | — |
 | 9 | Pôr preço, botão e regra dos 7 dias na primeira tela de /assinatura | A+F | a fazer | — | — |
 | 10 | Mostrar prova e botão na primeira dobra do celular | A | a fazer | — | — |
