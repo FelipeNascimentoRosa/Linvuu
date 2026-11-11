@@ -181,6 +181,16 @@
 --site-livro-destaque:#e6c68f;
 --site-divisor-faq:#cbd3c3;
 --site-texto-faq:#4e5949;
---site-r-card:12px;
---site-r-control:8px;
+--site-r-card:20px;
+--site-r-control:12px;
+
+/* Sombra macia no site público (nov/2026). O cartão da área do aluno continua sem sombra
+   (--r-card:0 e --sombra-flutuante acima); estas valem só para a composição do website. */
+--site-sombra-suave:0 2px 0 rgba(30,59,47,.04),0 18px 38px -30px rgba(30,59,47,.75);
+--site-sombra-alta:0 26px 48px -30px rgba(30,59,47,.8);
+--site-sombra-botao:0 16px 30px -18px rgba(30,59,47,.75);
+--site-sombra-controle:0 10px 20px -12px rgba(30,59,47,.65);
+--site-sombra-cena:0 30px 72px -36px rgba(30,59,47,.55);
+--site-sombra-linha:0 1px 0 rgba(30,59,47,.06);
+--site-sombra-barra:0 18px 40px -22px rgba(30,59,47,.6);
 }
