@@ -57,6 +57,7 @@ Mais scripts e versões em [package.json](package.json). Testes da `main` só co
 - [CLAUDE.md](CLAUDE.md): entrada de Claude e critério de evidência.
 - [DEEPSEEK.md](DEEPSEEK.md): entrada de DeepSeek v4.1; contrato em [docs/PROMPT-MESTRE-DEEPSEEK-v4.1.md](docs/PROMPT-MESTRE-DEEPSEEK-v4.1.md).
 - [docs/COORDENACAO-IA.md](docs/COORDENACAO-IA.md): coordenação entre agentes, com o estado dos PRs medido por API.
+- [docs/AUDITORIA-SITE-2026-11-11.md](docs/AUDITORIA-SITE-2026-11-11.md): o que está errado no site, medido em 11/11/2026 nos 54 URLs dos dois sitemaps e no Search Console (registro atribuído a DeepSeek v4.1 Flash).
 - [docs/conexao-firebase-github.md](docs/conexao-firebase-github.md): estado e limites da auditoria Firebase.
 - `firestore.rules` e `firebase.json`: regras versionadas e configuração do emulador. **Nenhum deploy Firestore automático é executado por este README.**
 
