@@ -4,9 +4,9 @@ Uma linha por lote. O agente altera **só** a linha do lote em que trabalhou, no
 
 | nº | lote | quem | estado | PR | prova |
 |---|---|---|---|---|---|
-| 1 | Mesclar #555, #556 e #557 e zerar a fila de PRs | A+F | a fazer | — | — |
-| 2 | Fazer o e-mail de contato exibido receber mensagem | A+F | a fazer | — | — |
-| 3 | Comprar de verdade nos dois domínios e reembolsar | A+F | a fazer | — | — |
+| 1 | Mesclar #555, #556 e #557 e zerar a fila de PRs | A+F | mergeado | #555 #556 #557 | Felipe mesclou em 11/11; só o #564 (plano) está aberto; smoke de produção 11/11: 200 e título no idioma certo nas 13 rotas dos dois domínios, 1 h1 nas indexáveis, sem R$ no .com nem US$ no .br; `/curso/ru/dia/1` sem h1 no HTML do servidor nos dois (sessão é noindex) |
+| 2 | Fazer o e-mail de contato exibido receber mensagem | A+F | espera o Felipe | — | falta escolher (a) Email Routing da Cloudflare em linvuu.com ou (b) trocar o endereço exibido para contato@linvuu.com.br; a opção (b) o agente faz em 10 min assim que ele disser |
+| 3 | Comprar de verdade nos dois domínios e reembolsar | A+F | espera o Felipe | — | falta ele fazer as 3 compras com cartão próprio (mensal R$ 139, trimestral Pix R$ 291,90, mensal US$ 19,99); depois o agente confere webhook, acesso e reembolso |
 | 4 | Imprimir o funil real a partir do servidor | A | a fazer | — | — |
 | 5 | Contar visitas por rota sem cookie e sem consentimento | A | a fazer | — | — |
 | 6 | Registrar clique de botão com identificador | A | a fazer | — | — |
