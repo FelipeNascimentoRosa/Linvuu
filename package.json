@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "tsx server.ts",
-    "build": "node scripts/audio-privado.mjs && node scripts/conteudo.mjs --check && node scripts/seo.mjs && vite build && node scripts/comprimir.mjs",
+    "build": "node scripts/audio-privado.mjs && node scripts/conteudo.mjs --check && node scripts/seo.mjs && vite build && (npx playwright install chromium || true) && node scripts/prerender.mjs && node scripts/comprimir.mjs",
     "start": "tsx server.ts",
     "preview": "vite preview",
     "clean": "rm -rf dist server.js",
@@ -64,6 +64,7 @@
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "node-edge-tts": "^1.2.12",
+    "playwright": "^1.56.1",
     "typescript": "^7.0.2"
   },
   "engines": {
