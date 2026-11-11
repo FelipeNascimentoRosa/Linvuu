@@ -113,7 +113,7 @@ Uma linha por lote. O agente altera **só** a linha do lote em que trabalhou, no
 |---|---|---|---|---|---|
 | I1 | Home do .com em torno do que está completo (herói e grade só com os 3 completos; parciais numa faixa "In translation" com a contagem real) | A | PR aberto | #584 | local: herói e grade do .com = French, Brazilian Portuguese, Russian; faixa = Spanish 30 of 62, German 1 of 72; celular sem buraco na grade (3º cartão em largura total); .com.br inalterado (6 cartões, 2 colunas); prerender 60/60 |
 | I2 | Acabamentos visuais do .com: capa do livro no herói de `/curso/ru`, rótulos do rodapé em inglês, "Website" do `/contato` apontando para linvuu.com (D2, D14) | A | a fazer | — | — |
-| I3 | Páginas de curso em inglês (ru, fr, br) respondendo preço, prazo até B1, professor e iniciante | A | a fazer | — | — |
+| I3 | Páginas de curso em inglês (ru, fr, br) respondendo preço, prazo até B1, professor e iniciante | A | PR aberto | #586 | local: bloco "Before you start the … course" em linvuu.com/curso/ru, /fr e /br, com preço de `planos.ts` (US$19.99 / US$149.00), aulas e sessões do índice (78/312, 62/248, 62/248), horas e ritmo sem prometer data, professor ao vivo só no russo (link /russo-online), título real da aula 1; ausente em es/de (parciais) e no .com.br; prerender 60/60 |
 | I4 | 30 dúvidas de russo em inglês (em blocos de 5), a partir de `ru.en.json` | A | a fazer | — | — |
 | I5 | Explicações em inglês de alemão, espanhol e italiano (284 + 128 + 248 sessões) — só depois de o .com vender | A+F | a fazer | — | — |
 

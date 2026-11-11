@@ -6,6 +6,7 @@ import { usePageTitle } from '../lib/usePageTitle';
 import { SITE_URL } from '../config/site';
 import { SESSOES_GRATIS } from '../config/planos';
 import { LOCALE, useT } from '../i18n';
+import { PerguntasCurso } from '../components/PerguntasCurso';
 
 /** Página do curso de português do Brasil para estrangeiros (explicado em inglês). */
 export default function CursoBr() {
@@ -32,6 +33,7 @@ export default function CursoBr() {
         </div>
       </header>
       {cobertura && <p className="nota">{cobertura}</p>}
+      {import.meta.env.VITE_ALVO !== 'apk' && LOCALE.codigo !== 'pt-BR' && cob.total > 0 && cob.traduzidas >= cob.total && <PerguntasCurso id="br" nome={c.h1} grupos={grupos} />}
       {c.niveis.map((n) => {
         const lista = grupos.filter((g) => (g.nivel ?? 'a1') === n.k);
         if (!lista.length) return null;
