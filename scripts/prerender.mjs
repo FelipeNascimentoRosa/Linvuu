@@ -14,6 +14,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { spawn } from 'node:child_process';
+import http from 'node:http';
 
 const raiz = path.resolve(import.meta.dirname, '..');
 const dist = path.join(raiz, 'dist');
@@ -71,9 +72,15 @@ await contexto.route('**/*', async (rota) => {
   const u = new URL(rota.request().url());
   if (!/^linvuu\.com(\.br)?$/.test(u.hostname)) return rota.abort();
   try {
-    const r = await fetch(`http://127.0.0.1:${PORTA}${u.pathname}${u.search}`, { headers: { host: u.hostname, 'user-agent': 'LinvuuPrerender/1.0', accept: rota.request().headers().accept ?? '*/*' }, redirect: 'manual' });
-    const headers = Object.fromEntries([...r.headers].filter(([k]) => !/^(content-encoding|content-length|transfer-encoding)$/i.test(k)));
-    await rota.fulfill({ status: r.status, headers, body: Buffer.from(await r.arrayBuffer()) });
+    // http.request (não fetch): o fetch do Node descarta o cabeçalho Host, e o servidor responderia como .com.br.
+    const r = await new Promise((ok, erro) => {
+      const req = http.request({ host: '127.0.0.1', port: PORTA, path: `${u.pathname}${u.search}`, headers: { host: u.hostname, 'user-agent': 'LinvuuPrerender/1.0', accept: rota.request().headers().accept ?? '*/*', 'x-forwarded-proto': 'https' } }, (res) => {
+        const partes = []; res.on('data', (c) => partes.push(c)); res.on('end', () => ok({ status: res.statusCode, headers: res.headers, corpo: Buffer.concat(partes) }));
+      });
+      req.on('error', erro); req.end();
+    });
+    const headers = Object.fromEntries(Object.entries(r.headers).filter(([k]) => !/^(content-encoding|content-length|transfer-encoding|connection)$/i.test(k)).map(([k, v]) => [k, String(v)]));
+    await rota.fulfill({ status: r.status, headers, body: r.corpo });
   } catch { await rota.abort(); }
 });
 for (const u of urls) {
