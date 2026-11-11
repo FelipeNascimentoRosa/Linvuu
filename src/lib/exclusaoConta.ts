@@ -10,7 +10,7 @@ export interface TextoExclusao {
 export const EXCLUSAO: Record<'pt-BR' | 'en', TextoExclusao> = {
   'pt-BR': {
     titulo: 'Excluir conta e dados da Linvuu',
-    descricao: 'Como pedir a exclusão da sua conta Linvuu e dos dados associados, no site e no aplicativo Linvuu para Android.',
+    descricao: 'Como pedir a exclusão da sua conta Linvuu e dos dados associados, pelo site ou pelo aplicativo para Android, e o que acontece com o progresso e a assinatura.',
     lead: 'Esta página vale para o site linvuu.com.br e para o aplicativo Linvuu na Google Play. Você pode pedir a exclusão daqui, sem entrar no app e sem instalá-lo de novo.',
     secoes: [
       { titulo: 'Como pedir', passos: [
@@ -40,7 +40,7 @@ export const EXCLUSAO: Record<'pt-BR' | 'en', TextoExclusao> = {
   },
   en: {
     titulo: 'Delete your Linvuu account and data',
-    descricao: 'How to request deletion of your Linvuu account and associated data, on the website and in the Linvuu Android app.',
+    descricao: 'How to request deletion of your Linvuu account and associated data, on the website or in the Android app, and what happens to your progress and subscription.',
     lead: 'This page covers the linvuu.com.br website and the Linvuu app on Google Play. You can request deletion here without signing in to the app or reinstalling it.',
     secoes: [
       { titulo: 'How to request it', passos: [

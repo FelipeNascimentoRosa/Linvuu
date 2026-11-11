@@ -189,6 +189,8 @@ Livros B1–C2 e protótipos seguem sujeitos a revisão antes de publicação (`
 
 Os itens 2–5 cabem em **um PR só** e fecham a regressão silenciosa: enquanto a régua não olhar essas rotas, o defeito volta.
 
+**Estado em 11/11/2026 (fim do dia):** itens **2 a 6 implementados** — `src/lib/metaRota.ts` (título e descrição do hub `/gramatica`, título e descrição dos capítulos), `scripts/seo.mjs` (sitemap de 39 → 43 no `.com.br` e 15 → 19 no `.com`), `scripts/testar-titulos.ts` (régua ampliada e piso de 30 caracteres) e `docs/DECISAO-SITE-INTERNACIONAL.md` (regra das sete rotas `noindex`). Verificado com `node --import tsx scripts/testar-titulos.ts` (62 títulos e 62 descrições, zero fora da faixa), `npm run build` e `node --import tsx scripts/testar-inventario-seo.ts` (`resultado: conforme`, `sitemap: 62`). Item 1 continua bloqueado por ordem do Felipe (escrita no Search Console) e os itens 7 e 8 seguem abertos.
+
 ## 9. Como reproduzir
 
 ```powershell

@@ -15,7 +15,7 @@ import { SOBRE } from './sobre.ts';
 import { POR_QUE } from './porQue.ts';
 import { EXCLUSAO } from './exclusaoConta.ts';
 import { contatos } from '../config/contato.ts';
-import { AUTORES, CAPITULOS_GRATIS, LIVROS_DESCRICAO, LIVROS_EM_PRODUCAO, LIVROS_META, capituloParaHtml, livroMeta, minutosDeLeitura, tituloLivro, type CapituloLivro, type ItemSumario } from './livros.ts';
+import { AUTORES, CAPITULOS_GRATIS, LIVROS_DESCRICAO, LIVROS_EM_PRODUCAO, LIVROS_META, capituloParaHtml, livroMeta, minutosDeLeitura, tituloLivro, type CapituloLivro, type ItemSumario, type MetaLivro } from './livros.ts';
 import { APRESENTACOES_CURSO, APRESENTACOES_LIVRO } from './apresentacoes.ts';
 import { AULAS_RUSSO } from '../config/aulas-russo';
 import { DESC_SEO_CURSO } from '../config/seoCurso.ts';
@@ -115,6 +115,14 @@ const SEO_EN = {
   privD: "What data Linvuu collects, why we collect it, how long it stays and what your rights are under Brazil's LGPD data protection law, in plain English.",
   termosT: 'Terms of use for the Linvuu site and courses',
   termosD: 'Rules for using the Linvuu site and courses: payment, cancellation, the 7-day refund and what we expect from each other. Brazilian law applies.',
+  /**
+   * Hub `/gramatica`. Até 11/11/2026 o título era só «Grammar · Linvuu» (16 caracteres, nenhum termo de busca)
+   * e a página ficava fora dos dois sitemaps — era o maior buraco de busca do site (AUDITORIA-SITE-2026-11-11 §4).
+   * A descrição nomeia as gramáticas que existem de fato em inglês: hoje espanhol, russo, francês e português
+   * do Brasil (content/gramatica/<id>.en.json). Ao traduzir outra, atualize a frase aqui.
+   */
+  gramaticaT: 'Grammar guides explained in English',
+  gramaticaD: 'Grammar topics for Spanish, Russian, French and Brazilian Portuguese, explained in English with tables, examples and the mistakes each language hides from you.',
   entrarT: 'Sign in to your Linvuu account',
   entrarD: 'Sign in to your Linvuu account with e-mail or Google to pick up the course where you stopped, review your answers and keep your progress saved.',
   cadastroT: 'Create your Linvuu account',
@@ -142,6 +150,14 @@ const SEO_BR = {
   privD: 'Quais dados a Linvuu coleta, para quê, por quanto tempo ficam guardados e como exercer os seus direitos de titular pela LGPD. Sem juridiquês.',
   termosT: 'Termos de uso do site e dos cursos',
   termosD: 'Regras de uso do site e dos cursos da Linvuu: planos e pagamento, cancelamento, reembolso em até 7 dias, conteúdo de terceiros e a lei brasileira aplicada.',
+  /**
+   * Hub `/gramatica`, a página de entrada da busca por gramática. Até 11/11/2026 servia «Gramática · Linvuu»
+   * (18 caracteres, sem termo de busca) e não estava em nenhum dos dois sitemaps, apesar de indexada
+   * (AUDITORIA-SITE-2026-11-11 §4). A descrição nomeia as seis gramáticas que existem em português
+   * (content/gramatica/<id>.json); ao publicar outra, atualize a frase aqui.
+   */
+  gramaticaT: 'Gramática de idiomas explicada em português',
+  gramaticaD: 'Tópicos de gramática de inglês, espanhol, alemão, francês, italiano e russo explicados em português, com tabelas, exemplos e os erros comuns de cada idioma.',
   /** Nome de cada língua no feminino/masculino certo: «Gramática do russo», «do alemão», «do inglês». */
   gramT: (n: string) => `Gramática do ${n.toLowerCase()} explicada em português`,
   gramD: (n: string, lingua: string) => `Gramática de ${n.toLowerCase()} explicada em ${lingua}, tópico por tópico: tabelas, exemplos, erros comuns de brasileiros e a aula onde cada tema se pratica.`,
@@ -166,6 +182,22 @@ const HOME = {
   'pt-BR': { titulo: HOME_BR.tituloSeo, descricao: HOME_BR.descricao },
   en: { titulo: 'Language courses for English speakers', descricao: 'Courses for English speakers: Brazilian Portuguese, French and Russian explained in English, German, Spanish and Italian in translation. 2 lessons free.' },
 };
+
+/**
+ * Descrição de capítulo de livro na faixa de 120–160 caracteres que o Google exibe. O título do capítulo entra
+ * na frase e varia de 13 a 36 caracteres, então o fecho cresce quando ele é curto: com o fecho único antigo,
+ * sete das doze descrições saíam entre 109 e 119 (AUDITORIA-SITE-2026-11-11 §5). Se um capítulo futuro tiver
+ * título mais curto que os de hoje, `scripts/testar-titulos.ts` acusa em vez de o defeito passar calado.
+ */
+const FECHOS_CAPITULO = [
+  '. Leitura grátis, com áudio.',
+  '. Leitura grátis, com áudio e tabelas.',
+  '. Leitura grátis, com áudio, tabelas e exemplos.',
+];
+function descricaoCapitulo(l: MetaLivro, c: CapituloLivro): string {
+  const abre = `${l.nome}, capítulo ${c.n} do livro de gramática prática da Coleção Linvuu: ${c.titulo}`;
+  return abre + (FECHOS_CAPITULO.find((f) => abre.length + f.length >= 120) ?? FECHOS_CAPITULO[FECHOS_CAPITULO.length - 1]);
+}
 
 export function metaDaRota(pathname: string, d: DadosMeta | null): MetaRota {
   const loc = localeDoCaminho(pathname);
@@ -207,7 +239,10 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     const l = livroMeta(lm[1]); const c = d?.livros[lm[1]]?.caps[Number(lm[2])];
     if (!l || !c) return naoEncontrada(p, loc);
     const url = `${SITE}/livros/${l.id}/capitulo/${c.n}`;
-    return { status: 200, caminho: p, titulo: `${l.nome}, cap. ${c.n}: ${c.titulo.split(':')[0]}`, semMarca: true, descricao: `${l.nome}, capítulo ${c.n} do livro de gramática prática da Coleção Linvuu: ${c.titulo}. Leitura grátis, com áudio.`, ...livroBase, jsonld: [
+    // Título e descrição nas faixas que o Google exibe (30–60 e 120–160). Medição de 11/11/2026:
+    // `/livros/de/capitulo/1` saía com 29 caracteres e sete das doze descrições com 109 a 119
+    // (AUDITORIA-SITE-2026-11-11 §5). O nível CEFR do capítulo entra no título: é o que a pessoa procura.
+    return { status: 200, caminho: p, titulo: `${l.nome}, cap. ${c.n}: ${c.titulo.split(':')[0]}${c.nivel ? ` (${c.nivel.toUpperCase()})` : ''}`, semMarca: true, descricao: descricaoCapitulo(l, c), ...livroBase, jsonld: [
       { '@context': 'https://schema.org', '@type': 'Chapter', name: `Capítulo ${c.n}: ${c.titulo}`, position: c.n, url, inLanguage: 'pt-BR', isAccessibleForFree: true, educationalLevel: c.nivel || undefined, timeRequired: `PT${minutosDeLeitura(c)}M`, isPartOf: { '@type': 'Book', name: tituloLivro(l), url: `${SITE}/livros/${l.id}` }, author: AUTORES.map((a) => ({ '@type': 'Person', name: a.nome, url: `${SITE}/sobre#${a.id}` })), publisher: { '@id': ORG_ID } },
       { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Livros', item: `${SITE}/livros` }, { '@type': 'ListItem', position: 2, name: l.nome, item: `${SITE}/livros/${l.id}` }, { '@type': 'ListItem', position: 3, name: `Capítulo ${c.n}`, item: url }] },
     ] };
@@ -317,7 +352,11 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
   }
   m = p.match(/^\/gramatica(?:\/([^/]+))?$/);
   if (m) {
-    if (!m[1]) return { status: 200, caminho: p, titulo: tx.gram };
+    // Hub de gramática: título com o termo que a pessoa digita e descrição própria nos dois idiomas.
+    // Até 11/11/2026 devolvia só `tx.gram` («Gramática»/«Grammar»), sem descrição — leia-se SEO_BR.gramaticaT.
+    if (!m[1]) return loc.codigo === 'en'
+      ? { status: 200, caminho: p, titulo: SEO_EN.gramaticaT, descricao: SEO_EN.gramaticaD }
+      : { status: 200, caminho: p, titulo: SEO_BR.gramaticaT, descricao: SEO_BR.gramaticaD };
     const c = curso(m[1]);
     if (!c) return naoEncontrada(p, loc);
     const url = `${urlAbsolutaEm(loc.codigo, p)}`;
