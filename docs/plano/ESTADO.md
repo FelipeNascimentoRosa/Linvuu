@@ -7,11 +7,11 @@ Uma linha por lote. O agente altera **só** a linha do lote em que trabalhou, no
 | 1 | Mesclar #555, #556 e #557 e zerar a fila de PRs | A+F | mergeado | #555 #556 #557 | `gh pr list --state open` → só o PR do plano em 11/11; smoke de produção 200 e título no idioma certo nas 13 rotas dos dois domínios |
 | 2 | Fazer o e-mail de contato exibido receber mensagem | A+F | em produção | Felipe | Felipe verificou o recebimento em 11/11; DNS 11/11: MX da Cloudflare (Email Routing) em linvuu.com e linvuu.com.br — antes `0 .` no .com |
 | 3 | Comprar de verdade nos dois domínios e reembolsar | A+F | espera o Felipe | — | falta ele fazer as 3 compras com cartão próprio (mensal R$ 139, trimestral Pix R$ 291,90, mensal US$ 19,99); depois o agente confere webhook, acesso e reembolso |
+| 8 | Exibir FUNDADORES, o trimestral e uma grade de planos alinhada | A | PR aberto | #579 | local: `/assinatura` .br com FUNDADORES (1×), .com sem; home com o trimestral (R$ 291,90 Pix ou R$ 417) e FUNDADORES; botões dos 3 cartões da home na mesma altura (y=4417 nos 3); `testar-contrato-billing` e `validar:design` ok |
 | 4 | Imprimir o funil real a partir do servidor | A | em produção | #565 | deploy `dep-dbq14obncjis73cih4fg` live 07:02Z; `GET /api/metricas` → 404 sem `METRICAS_TOKEN` (por desenho: sem token a rota não existe) |
 | 5 | Contar visitas por rota sem cookie e sem consentimento | A | em produção | #567 | deploy `dep-dbq3f42jnfac739p8q30` live 09:40Z (04efdf961); `npm run testar:medicao` verde no check `build` |
 | 6 | Registrar clique de botão com identificador | A | em produção | #568 | deploy `dep-dbq3fsutehms73b810ug` live 09:42Z (5cb70f903); `POST /api/cta` com CTA inválido → 400 nos dois domínios, home 200 |
 | 7 | Trocar "chegam em breve" por avaliações reais | A | em produção | #572 | produção 11/11 11:30Z: `chegam em breve` = 0 nos JS servidos por linvuu.com.br; `relatosFonte` presente (avaliações da Udemy com fonte) |
-| 8 | Exibir FUNDADORES, o trimestral e uma grade de planos alinhada | A | a fazer | — | — |
 | 9 | Pôr preço, botão e regra dos 7 dias na primeira tela de /assinatura | A+F | a fazer | — | — |
 | 10 | Mostrar prova e botão na primeira dobra do celular | A | a fazer | — | — |
 | 11 | Corrigir as promessas que o .com não cumpre (D1, D8, D11, D12) | A | PR aberto | #576 | /en/curso/it → "0 of 62 lessons" (era "Every lesson…"); título/descrição de /cursos e da home sem prometer italiano; livros fora da home do .com; D11 não reproduz (1 visível + 1 no FAQPage); titulos, seo-publico, inventário e dominio verdes |

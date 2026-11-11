@@ -9,6 +9,8 @@ export const PRECO_TRIMESTRAL = import.meta.env?.VITE_ALVO === 'apk' ? '' : 'R$ 
 export const PRECO_TRIMESTRAL_PIX = import.meta.env?.VITE_ALVO === 'apk' ? '' : 'R$ 291,90'; // 30% de desconto, só no Pix
 export const PRECO_ANUAL = import.meta.env?.VITE_ALVO === 'apk' ? '' : 'R$ 999'; // 12 meses, pagamento único
 export const PRECO_ANUAL_MES = import.meta.env?.VITE_ALVO === 'apk' ? '' : 'R$ 83,25'; // equivalência mensal do anual (999 / 12); só apresentação, o total continua em destaque
+/** Código de fundador (ex-alunos da Udemy), só no .com.br: 50% no mensal, para sempre. Fonte: docs/PRECOS-DEFINIDOS.md («Fundadores»). */
+export const FUNDADORES = import.meta.env?.VITE_ALVO === 'apk' ? null : { codigo: 'FUNDADORES', precoMes: 'R$ 69,50', validade: '30/01/2027' } as const;
 export const PRECO_TRIMESTRAL_PIX_MES = import.meta.env?.VITE_ALVO === 'apk' ? '' : 'R$ 97,30'; // equivalência mensal do trimestral no Pix (291,90 / 3); só apresentação
 
 
