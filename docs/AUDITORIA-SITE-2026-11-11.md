@@ -189,6 +189,8 @@ Livros B1–C2 e protótipos seguem sujeitos a revisão antes de publicação (`
 
 Os itens 2–5 cabem em **um PR só** e fecham a regressão silenciosa: enquanto a régua não olhar essas rotas, o defeito volta.
 
+**Estado em 11/11/2026 (fim do dia):** itens **2, 4, 5 e 6 implementados**; o item 3 foi implementado em parte — `/privacidade`, `/termos` e `/excluir-conta` entraram nos dois sitemaps (`39 → 42` no `.com.br`, `15 → 18` no `.com`), e **`/gramatica` ficou fora**, por um motivo medido: o React trata `/gramatica` como alias e redireciona para `/gramatica/<primeiro idioma>` (`src/pages/Gramatica.tsx`), então o hub que o servidor serve é abandonado pelo navegador. O check `paridade-head` do CI reprovou essa divergência (título, canonical e `hreflang` diferentes entre servidor e DOM) no PR #560; enquanto não existir uma página de hub de verdade no React, `/gramatica` não pode entrar no sitemap — o que falta ali é página, não metadado. Verificado com `node --import tsx scripts/testar-titulos.ts` (62 títulos e 62 descrições na faixa), `npm run build` e `node --import tsx scripts/testar-inventario-seo.ts` (`resultado: conforme`, `sitemap: 60`). Item 1 continua bloqueado por ordem do Felipe (escrita no Search Console) e os itens 7 e 8 seguem abertos.
+
 ## 9. Como reproduzir
 
 ```powershell

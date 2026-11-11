@@ -30,6 +30,21 @@
 >
 > Limpeza feita nesta data: `Explicacao = 'pt' | 'en'` (`src/i18n/ensino.ts`), sem dicionário espanhol, sem pasta de tradução `es` em `content/idiomas/*`, sem texto público prometendo aula explicada em espanhol. Os itens 1, 3, 4 e 6 abaixo estão **superados** nesta parte; a linha "Render" da seção Infraestrutura também. O resto continua valendo.
 
+> ## Emenda de 11/11/2026 — quais páginas de idioma ficam fora do índice
+>
+> **Regra, escrita por ordem do Felipe em 11/11/2026** (medida em `docs/AUDITORIA-SITE-2026-11-11.md` §5.2). Uma página de curso ou de gramática só é indexável — sem `noindex`, com `<loc>` no sitemap do seu domínio e `hreflang` para as versões que existem — quando o conteúdo dela existe **na língua daquele domínio**. Não é escolha de SEO: é o item 6 abaixo («não prometer o que não existe»), lido dos arquivos de conteúdo por `explicacaoCompleta` e `gramaticaExisteEm` (`src/lib/metaRota.ts`).
+>
+> | Domínio | `/curso/<id>` indexável | `/gramatica/<id>` indexável |
+> |---|---|---|
+> | `linvuu.com.br` (pt) | todos, menos `br` (o curso de português mora no `.com`) | todos, menos `br` |
+> | `linvuu.com` (en) | `br`, `fr`, `ru` | `br`, `es`, `fr`, `ru` |
+>
+> No `.com`, sete rotas respondem **200 com `noindex`**, sem `<loc>` e sem `hreflang`: `/curso/de`, `/curso/en`, `/curso/es`, `/curso/it`, `/gramatica/de`, `/gramatica/en` e `/gramatica/it`. São páginas que só servem a quem já tem o link — mostram o texto original em português. O que as destrava **não é código, é conteúdo**: `content/indice.en.json` com todas as aulas daquele curso explicadas em inglês, e `content/gramatica/<id>.en.json`. Publicada a tradução, a página entra no índice e no sitemap sozinha, porque a decisão é lida dos arquivos a cada requisição.
+>
+> Medido nos dois domínios em 11/11/2026: no `.com`, `br`, `fr` e `ru` têm curso completo em inglês; `es` tem só a gramática traduzida (`/gramatica/es` indexável, `/curso/es` não).
+>
+> **Não** apague esse `noindex` para "igualar" os domínios: sem a tradução, a página em inglês passa a mostrar português e a competir consigo mesma na busca. Quem cobre o que sobra indexável é `scripts/testar-titulos.ts` (títulos 30–60, descrições 120–160) mais `scripts/testar-inventario-seo.ts` (indexável ⇔ no sitemap, `hreflang` igual ao HTML).
+
 ## O que isso significa
 1. **Público.** Falantes de português e de inglês estudam qualquer idioma que não seja o seu. Um americano ou um indiano estuda russo ou alemão com explicações em inglês; um falante de espanhol lê o site em português ou em inglês — **não há explicação em espanhol** (emenda de 11/11).
 2. **Uma só home, um só marketing.** A home e a comunicação são as mesmas para todas as línguas (modelo dos concorrentes, como o Babbel). Só o texto muda de língua. Não se cria home separada por público. A home em português (`src/pages/HomeBrasileiros.tsx`) é a base; `src/i18n/home.ts` traduz.

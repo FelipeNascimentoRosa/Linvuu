@@ -4,7 +4,11 @@
 // gramática só onde o arquivo dela existe nesse idioma (sem o curso do próprio público — LOCALES.oculto — nem 'em-breve');
 // as sessões de aula NÃO entram: desde 11/11/2026 a sessão é `noindex` (o curso é indexado no hub `/curso/<id>`),
 // porque as 3.680 sessões dos dois domínios somaram ~25 impressões em 27 dias no Search Console e nenhuma foi indexada.
-// Fora do sitemap ficam, por decisão, as páginas legais (/privacidade, /termos) e as versões que o servidor marca com noindex.
+// Fora do sitemap ficam, por decisão, só as páginas que o servidor marca com noindex (entrar, cadastro, 404) e as
+// que o navegador abandona (o alias `/gramatica`). Até 11/11/2026 ficavam também /privacidade, /termos e
+// /excluir-conta: as três estavam indexadas e sem <loc> nenhum, então o Google as encontrava por link, sem lastmod e
+// sem cluster hreflang declarado (AUDITORIA-SITE-2026-11-11 §4). /excluir-conta passou a ser indexável de propósito:
+// é a página que a Google Play exige para exclusão de conta (noindex e sitemap seriam contraditórios — escolhemos sitemap).
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -37,6 +41,12 @@ const alvoPadrao = (g) => {
 grupos.push({ p: '/', em: todos() }, { p: '/cursos', em: todos(), anot: todos() }, { p: '/assinatura', em: todos(), anot: todos() });
 // Sobre, Por que Linvuu e Contato: em todas as línguas (texto próprio em cada uma — Contato passou a existir em inglês em 09/11/2026). Livros e Ex-alunos: só em português. Cada capítulo de amostra publicado (content/livros/<idioma>/cap-NN.json) entra no sitemap.
 grupos.push({ p: '/portugues', em: ['en'] }, { p: '/russo-online', em: ['pt-BR', 'en'], anot: ['pt-BR', 'en'] }, { p: '/sobre', em: todos(), anot: todos() }, { p: '/por-que-linvuu', em: todos(), anot: todos() }, { p: '/contato', em: todos(), anot: todos() }, { p: '/ex-alunos-udemy', em: ['pt-BR'] }, { p: '/livros', em: ['pt-BR'] });
+// Hub da gramática: NÃO entra aqui. O React trata `/gramatica` como alias — `src/pages/Gramatica.tsx` faz
+// `<Navigate to={/gramatica/<primeiro idioma>}>` —, então o servidor serviria um hub que o navegador abandona;
+// o check `paridade-head` do CI reprovou exatamente isso em 11/11/2026 (título, canonical e hreflang divergentes).
+// Para indexar o hub é preciso primeiro uma página de hub de verdade no React (ver PENDENCIAS.md).
+// As duas páginas legais e a de exclusão de conta já são páginas reais nos dois idiomas e passaram na paridade.
+grupos.push({ p: '/privacidade', em: todos(), anot: todos() }, { p: '/termos', em: todos(), anot: todos() }, { p: '/excluir-conta', em: todos(), anot: todos() });
 const dirLivros = path.join(raiz, 'content', 'livros');
 if (fs.existsSync(dirLivros)) for (const id of fs.readdirSync(dirLivros).sort()) {
   // Apenas os capítulos de amostra: a presença de outro arquivo não o torna público.
