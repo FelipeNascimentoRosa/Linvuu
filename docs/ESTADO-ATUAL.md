@@ -3,6 +3,8 @@
 Registro inicial: 26/10/2026 (Brasília). **Atualização factual: 27/10/2026, após confirmação por GitHub e Render.** Este arquivo é um snapshot: verificar main e deploy novamente em cada retomada.
 > **11/11/2026 — indexação:** a sessão de aula deixa de ser página de busca (3.680 sessões → `noindex`; sitemap `.com.br` 87 → 39 e `.com` 51 → 15). Medição, decisão e reversão em [DECISAO-INDEXACAO-2026-11-11.md](DECISAO-INDEXACAO-2026-11-11.md). A pagina de busca do curso é o hub `/curso/<id>`.
 
+> **12/11/2026 — o que está aberto e o que não está provado** (medido por `gh` e por HTTP): main em `a4872027c`. [#558](https://github.com/FelipeNascimentoRosa/Linvuu/pull/558) — PAINEL, entrada DeepSeek, contrato v4.1 e mapa regenerado — com 3 checks verdes, aguardando merge. [#555](https://github.com/FelipeNascimentoRosa/Linvuu/pull/555) — barra de consentimento em uma linha — **reprovado**: `web` e `analytics` estouram no clique do consentimento (`.analytics-consent-analytics .analytics-actions button`), então a barra nova quebrou o contrato que o teste dirige. **Indexação não está resolvida:** `/gramatica` e `/excluir-conta` estão fora da régua de título/descrição em produção e fora do alcance de `scripts/testar-titulos.ts`; cinco páginas indexáveis ficam fora do `sitemap.xml`. Números e causas em [COORDENACAO-IA.md](COORDENACAO-IA.md).
+
 ## Atualização operacional verificada — 27/10/2026
 
 - **GitHub público** `FelipeNascimentoRosa/Linvuu`: main no SHA `3431e4409065e0f1bfed71c3d704b4079d41ef39` antes da presente limpeza; [CI](https://github.com/FelipeNascimentoRosa/Linvuu/actions/runs/40453761867) e [Segurança](https://github.com/FelipeNascimentoRosa/Linvuu/actions/runs/40453762120) aprovadas nesse SHA.
