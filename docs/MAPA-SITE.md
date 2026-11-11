@@ -10,7 +10,7 @@ Responde, sem abrir navegador, três perguntas: o que existe, de onde vem e como
 - Páginas concretas no .com.br (pt-BR): **37** — 32 indexáveis
 - Sessões de aula (`/curso/:id/dia/:n`, fora do índice): **1840** em 7 cursos
 - Capítulos de livro: **12** em 6 livros
-- Folhas de CSS: **20** (2020 linhas)
+- Folhas de CSS: **20** (2044 linhas)
 - Comandos de verificação no `package.json`: **20**
 - Arquivos JSON de conteúdo: **3929**
 
@@ -113,8 +113,8 @@ A coluna "veste" sai da importação real no código. Folha global (`styles.css`
 |---|---|---|
 | `styles.css` | 434 | `main.tsx` |
 | `redesign.css` | 425 | `main.tsx` |
-| `tokens.css` | 187 | `main.tsx` |
-| `pages/home-brasileiros.css` | 176 | `pages/HomeBrasileiros.tsx` |
+| `tokens.css` | 197 | `main.tsx` |
+| `pages/home-brasileiros.css` | 190 | `pages/HomeBrasileiros.tsx` |
 | `plataforma/apk/app.css` | 176 | `plataforma/apk/Header.tsx` |
 | `camadas.css` | 160 | `main.tsx` |
 | `livros.css` | 116 | `pages/AulasRusso.tsx`, `pages/Contato.tsx`, `pages/ExAlunosUdemy.tsx`, `pages/Livros.tsx`, `pages/PorQue.tsx`, `pages/Sobre.tsx` |
