@@ -154,6 +154,7 @@ export const ptBR = {
     topicos: (n: number) => (n === 1 ? '1 tópico' : `${n} tópicos`), aula: (n: number) => `Aula ${n}`, praticar: (a: number, s: string) => `Praticar na aula ${a}, sessão ${s} →`,
     bloqueados: (n: number) => `Mostramos os tópicos das 2 primeiras aulas. Os outros ${n} tópicos são para assinantes.`,
     semTraducao: 'Alguns tópicos ainda aparecem em português enquanto a tradução não chega.',
+    semTraducaoTotal: 'Esta gramática ainda não foi traduzida para o português: os tópicos abaixo aparecem na língua original. Os exemplos e as tabelas são os mesmos.',
   },
   assinatura: {
     titulo: 'Assinatura', entreOu: ['Para assinar,', 'entre', 'ou', 'crie sua conta'], gratis: (n: number) => `As ${n} primeiras aulas de cada curso são grátis.`,

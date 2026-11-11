@@ -156,6 +156,7 @@ export const en: Dicionario = {
     topicos: (n: number) => (n === 1 ? '1 topic' : `${n} topics`), aula: (n: number) => `Lesson ${n}`, praticar: (a: number, s: string) => `Practise it in lesson ${a}, session ${s} →`,
     bloqueados: (n: number) => `These are the topics of the first 2 lessons. The other ${n} topics are for subscribers.`,
     semTraducao: 'Some topics are still shown in Portuguese until their translation is ready.',
+    semTraducaoTotal: 'This grammar has not been translated into English yet: the topics below are explained in Portuguese. The examples and tables are the same.',
   },
   assinatura: {
     titulo: 'Subscription', entreOu: ['To subscribe,', 'sign in', 'or', 'create your account'], gratis: (n: number) => `The first ${n} lessons of every course are free.`,

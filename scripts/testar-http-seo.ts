@@ -58,8 +58,8 @@ try {
         assert.equal(r.headers.get('location'), 'https://linvuu.com' + p, p);
         await r.arrayBuffer();
         redirecionados++;
-      } else if (perfil === 'global' && /^\/livros(?:\/|$)/.test(p)) {
-        // no .com a coleção de livros de gramática (explicada em português) não existe: vai para o .com.br.
+      } else if (perfil === 'global' && /^\/(?:livros|ex-alunos-udemy)(?:\/|$)/.test(p)) {
+        // no .com a coleção de livros de gramática e a página de ex-alunos da Udemy (só em português) não existem: vão para o .com.br.
         // É o espelho da regra acima e o que scripts/seo.mjs já declara ({ p: '/livros', em: ['pt-BR'] }).
         assert.equal(r.status, 301, `${host}${p}`);
         assert.equal(r.headers.get('location'), 'https://linvuu.com.br' + p, `${host}${p}`);

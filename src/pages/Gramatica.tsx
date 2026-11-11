@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
 import { Navegacao } from '../components/Navegacao';
 import { Gramatica as BlocoGramatica } from '../components/Sessao';
-import { idiomasDeGramaticaNoSite, todosIdiomasDeGramatica, fonteDoCurso, explicacaoDoCurso, getCurso } from '../lib/content';
+import { idiomasDeGramaticaNoSite, todosIdiomasDeGramatica, fonteDoCurso, explicacaoDoCurso, getCurso, coberturaNoSite } from '../lib/content';
 import { LOCALE, useT } from '../i18n';
 import { usePageTitle } from '../lib/usePageTitle';
 import type { Bloco } from '../lib/aulas';
@@ -44,6 +44,8 @@ export default function Gramatica() {
   const lista = useMemo(() => (pacote ? pacote.topicos.filter((t) => cat === 'todas' || t.categoria === cat) : []), [pacote, cat]);
   const t = useT();
   const g = t.gramaticaPagina;
+  // Cobertura na língua do site (pt-BR no .com.br, en no .com): decide o aviso honesto acima dos tópicos.
+  const cob = curso ? coberturaNoSite(curso.id) : { traduzidas: 0, total: 0 };
   usePageTitle(curso ? g.titulo(curso.nome) : g.tituloGeral, curso ? g.descricao(curso.nome) : undefined, undefined, curso?.id === LOCALE.cursoOculto || curso?.status === 'em-breve');
   if (!id || !curso || !VALIDOS.includes(curso.id)) return <Navigate to={`/gramatica/${IDIOMAS[0]}`} replace />;
 
@@ -55,10 +57,12 @@ export default function Gramatica() {
       <div className="chips" role="group" aria-label={g.idioma}>
         {IDIOMAS.map((k) => <Link key={k} to={`/gramatica/${k}`} className={k === curso.id ? 'chip on' : 'chip'} aria-current={k === curso.id ? 'page' : undefined}>{getCurso(k)?.nome}</Link>)}
       </div>
+      {/* Gramática sem tradução na língua do site: dizer antes de mostrar (D10 — título em inglês sobre miolo em português). */}
+      {cob.traduzidas === 0 && <p className="nota">{g.semTraducaoTotal}</p>}
       {falhou && <p className="erro" role="alert">{g.erro}</p>}
       {!pacote && !falhou && <p className="resultado carga-lista" role="status">{t.geral.carregando}</p>}
       {pacote && <>
-      {!!pacote.semTraducao && <p className="nota">{g.semTraducao}</p>}
+      {cob.traduzidas > 0 && (cob.traduzidas < cob.total || !!pacote.semTraducao) && <p className="nota">{g.semTraducao}</p>}
       <div className="chips" role="group" aria-label={g.categoria}>
         {['todas', ...pacote.categorias].map((c) => <button key={c} type="button" className={cat === c ? 'on' : ''} aria-pressed={cat === c} onClick={() => setCat(c)}>{c === 'todas' ? g.todas : c}</button>)}
       </div>
