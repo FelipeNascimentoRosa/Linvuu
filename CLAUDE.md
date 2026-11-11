@@ -1,57 +1,61 @@
-# Linvuu — instruções para Claude (estado comprovado)
+# CLAUDE.md — Linvuu
 
-## Atualização — domínio internacional, 06/11/2026
-Em andamento: `linvuu.com` (inglês na raiz; o site em espanhol foi retirado em 06/11, o curso de espanhol permanece) e `linvuu.com.br` (português). Leia [docs/DOMINIO-COM-2026-11-06.md](docs/DOMINIO-COM-2026-11-06.md). Nada disso está no ar até o merge, o deploy e o domínio respondendo no Render serem conferidos.
+<!-- Atualizado em 2026-11-11 a partir de auditoria completa (repo + sites ao vivo). Substitui a versão de 06/11/2026. -->
 
-## Atualização para Claude — Vuu e próximo passo, 29/10/2026
-Existe **um único Vuu** (decisão do Felipe, 08/11/2026): o de capuz com a mão no queixo, `public/assets/vuu/vuu.svg`. As versões antigas (sorridente 2D, pose B, balão de fala, mascotes de comida) estão descartadas; não recriar nem restaurar. Leia [o registro do Vuu](docs/VUU.md).
+> Instruções de trabalho para o Claude Code neste repositório. Curto de propósito: o detalhe operacional vive em `docs/ESTADO-ATUAL.md` e `PENDENCIAS.md` — leia os dois no início de qualquer tarefa maior. Em conflito entre este arquivo e eles, **este arquivo manda nas regras** e **eles mandam nos fatos**.
 
-O próximo passo priorizado é [progresso compreensível e reforço positivo](docs/PROXIMO-PASSO-PROGRESSO-2026-10-29.md), aproveitando os dados reais já existentes. O PR #367 é um protótipo em rascunho a consultar, não uma funcionalidade já entregue. Não representar sessões marcadas pelo aluno como domínio comprovado.
+## O produto em 5 linhas
+- Linvuu: cursos de idiomas (alemão, inglês, espanhol, francês, italiano, português BR, russo) com explicação na língua do aluno e **áudio em cada frase**. **2 primeiras aulas grátis** (sessões 1–8; paywall na 9).
+- Um único serviço Render serve **linvuu.com.br** (perfil `br`, interface pt-BR) e **linvuu.com** (perfil `global`, interface EN) — a separação é **por Host em runtime**, não por build (`server/dominio.ts`, `src/i18n/locales.ts`).
+- Stack: React 19 + Vite 8 + TypeScript strict, react-router-dom 7, Express 5 (`server.ts`), Firebase (Auth + Firestore), Stripe 23, Capacitor 8 (APK do mesmo código, `VITE_ALVO=apk`).
+- Preços (fonte única: `src/config/planos.ts` — nunca hardcode preço fora dele): BRL mensal 139 / trimestral 417 / trimestral Pix 291,90 / anual 999; USD mensal 19,99 / anual 149. Cupom FUNDADORES (50% no mensal BRL) só existe no .com.br.
+- Dono: Felipe Nascimento Rosa. Marca: verde #1E3B2F, papel #F5F1E8, grafite #1D1F1C, ocre #B7791F; fontes Newsreader/Source Sans 3/Literata/Caveat; mascote **Vuu** (nunca o Pelmeni).
 
-## Retomada do site e SEO — 27/10/2026
-Leia primeiro [a passagem de contexto da integração](docs/HANDOFF-SITE-2026-10-27.md). Ela atualiza os snapshots abaixo: o Vuu já está implementado nesta integração e o proprietário autorizou a publicação das correções do site. Confira o estado real da `main`, do deploy e dos PRs antes de afirmar que algo está publicado.
+## Mapa de rotas (páginas)
+`/` · `/cursos` · `/curso/:id` · `/curso/:id/dia/:n` · `/portugues` · `/gramatica(/:id)` · `/livros(/:id(/capitulo/:n))` · `/livro/gramatica-ru` · `/russo-online` · `/assinatura` · `/entrar` · `/cadastro` · `/conta` (só APK) · `/sobre` · `/por-que-linvuu` · `/contato` · `/ex-alunos-udemy` · `/privacidade` · `/termos` · `/excluir-conta` · `*` = 404 real.
+Regras de domínio em `server/dominio.ts` (301): www→apex; `/en`/`/es` de interface → .com/raiz (espanhol de interface foi **retirado** em 06/11); `/curso/br` no .com.br → .com; `/livros` no .com → .com.br.
 
-## Ponto de entrada obrigatório para a retomada
-Leia [**CONTINUIDADE-2026-10-27.md**](docs/CONTINUIDADE-2026-10-27.md) **por inteiro** antes de alterar qualquer coisa. Ela registra as entregas de 27/10 e contém snapshots históricos; a atualização acima prevalece quanto ao Vuu. Verifique a visibilidade real, a main e o deploy antes de afirmar estados atuais. Claude não recebe memórias de ChatGPT/Gemini automaticamente; GitHub + testes são o protocolo de sincronia.
+## Onde mora cada subsistema
+| Subsistema | Arquivos |
+|---|---|
+| Billing/checkout/Stripe | `server/billing.ts`, `server/billing-contrato.ts`, `server/billing-webhook.ts`, `src/config/planos.ts` |
+| Prontidão (env vars) | `server/prontidao.ts` (`/readyz` confere variáveis e valores) |
+| Áudio de assinante | `server/audio-privado*` (ver ARMADILHA 2), rota `/api/audio` |
+| Áudio público | `public/audio/` (hoje: `v2/` = 4.062 arquivos, `es/` 907, `it/` 557) |
+| Conteúdo dos cursos | `content/idiomas/<id>/<interface>/dia-NNN.json` (4 sessões = 1 aula) |
+| Índices de catálogo | `content/indice.json` (PT) e `content/indice.en.json` (EN) — **esquemas diferentes** (ver ARMADILHA 4) |
+| SEO (meta/canonical/hreflang/JSON-LD) | `server/metaRota.ts` (fonte única; também `/api/meta`) |
+| Sitemaps/robots | por domínio, gerados; sessões `/dia/N` são **noindex de propósito** (decisão 11/11, PR #551) |
+| Design | `src/tokens.css` (tokens oficiais) + cascata em `src/main.tsx` (ver ARMADILHA 3) |
+| Plataformas | `src/plataforma/website` × `src/plataforma/apk` (alias `@plataforma`; build falha se checkout vazar p/ o APK) |
 
-**Fonte de regras:** leia `AGENTS.md` e `docs/COORDENACAO-IA.md`. Antes de qualquer edição, consulte a `main`, PRs abertos, checks e `docs/ESTADO-ATUAL.md`; esse último é um *snapshot* com data, não uma sincronização permanente.
+## Estado real do catálogo (medido em 11/11/2026 — confira antes de afirmar)
+Sessões com explicação por interface: **RU 312/312 · FR 248/248 · PT→EN (curso BR) 248 · ES-EN 120/248 · DE-EN 4/288 · IT-EN 0/248 · EN (no .br) 248/248.**
+Regra `explicacaoCompleta` (`metaRota.ts`): curso só ganha página indexável/hreflang num idioma quando **todas** as aulas estão explicadas nele. Por isso o sitemap do .com tem 15 URLs e o do .com.br 39 — **é intencional, não é bug**. Não "corrija" sitemap/índice para expor curso parcial sem ordem do Felipe.
 
-## O que foi verificado em 27/10/2026
-- Repositório de produto `FelipeNascimentoRosa/Linvuu` **público**; `main` no SHA `3431e4409065e0f1bfed71c3d704b4079d41ef39` ao consultar.
-- CI e Segurança do SHA `3431e440`: **success**, [CI](https://github.com/FelipeNascimentoRosa/Linvuu/actions/runs/40453761867) e [Segurança](https://github.com/FelipeNascimentoRosa/Linvuu/actions/runs/40453762120).
-- Render `linvuu`, deploy `dep-dbg34nrbc2fs739ptjk0`, SHA `3431e440`: **live**, confirmado por API. Não extrapolar a checkout, login de usuários, regras Firestore ou APK.
-- Repositório de auditoria `FelipeNascimentoRosa/Linvuu-Auditoria-Firebase` **público**. [Run #40460208259](https://github.com/FelipeNascimentoRosa/Linvuu-Auditoria-Firebase/actions/runs/40460208259): testes offline e autenticação federada Google OIDC **success**, conferido `projectNumber=982052790317` do projeto `linvuu`. Isto comprova **identidade e leitura do identificador do projeto**, não leitura administrativa completa.
-- Cloud Shell sob as duas contas proprietárias reportou `CONFIGURACAO_GCP_VERIFICADA` após `--apply` e `--verify`; não foi obtida nesta sessão uma coleta administrativa independente de IAM ou das regras publicadas.
-- Workflow antigo de auditoria Firebase em `FelipeNascimentoRosa/Linvuu`: **aposentado**; o workflow válido é o do repositório separado e sua coleta detalhada **permanece bloqueada enquanto o repositório for público**.
-- PRs #360 (editorial futuro) e #367 (gamificação) permanecem **draft**, não aprovados para publicação.
+## ARMADILHAS (não repetir)
+1. **Checkout mensal USD** depende de `STRIPE_PRICE_ID_USD` no ambiente do Render (o anual USD usa `price_data` inline e funciona sem ela). Se o mensal .com quebrar, cheque `/readyz` e o ambiente **antes** de mexer em código. O `render.yaml` não declara essa variável — a ausência lá não prova ausência no painel.
+2. **Áudio pago no repo público:** `server/audio-privado*/` (11.033 MP3) ainda está na árvore pública. A migração p/ o repo privado `Linvuu-Audio` (`scripts/audio-privado.mjs`) espera o token no Render. **Nunca** adicione áudio pago novo em `server/`; trate qualquer mudança aqui como sensível e avise o Felipe.
+3. **CSS em camadas:** `main.tsx` empilha tokens → site-publico → styles → redesign → camadas. **Não crie folha global nova** nem "redesign2.css": ajuste na camada existente certa ou nos tokens. Hex de cor só em `tokens.css` (os hex em componentes de bandeira são exceção legítima).
+4. **Dois índices, dois esquemas:** `indice.json` ≠ `indice.en.json`. O gerador `scripts/conteudo.mjs` tem a **GUARDA 2026-11-04**: nunca regenere índice por cima de dias traduzidos em disco sem o mapa i18n — foi assim que o espanhol EN "sumiu" uma vez.
+5. **Copy pública — fatos que não podem mudar sem ordem do Felipe:** "2 primeiras aulas grátis" (não "aula 1 grátis"); "áudio em cada frase" (não "em cada palavra"); nunca prometer fluência/prazo/certificado; preços só os de `planos.ts`; contato no .com.br é **contato@linvuu.com.br**.
+6. **Home:** `src/pages/Home.tsx` é só um re-export de `HomeBrasileiros` (texto via `src/i18n/home.ts`). Não crie variante nova de home sem matar uma antiga.
 
-## Não afirmar que funciona sem comprovação
-- Publicação e segurança efetiva das `firestore.rules` de produção, usuários e documentos.
-- Login real, revogação testada com tokens reais, assinatura, Stripe/checkout/webhooks externos.
-- APK compilado, assinado e testado em aparelho ou publicado na Google Play.
-- Áudios gerados em workflow: execução verde não autoriza uso comercial da origem TTS.
-- Todos os idiomas/números de aulas, experiência visual mobile ou SEO orgânico integralmente validado.
+## Regras de trabalho (invioláveis)
+- **Nunca** trabalhe direto na `main`: branch + PR sempre. Fila máxima: 3 PRs abertos + 3 drafts.
+- **Merge: somente com ordem explícita do Felipe na conversa.** (Isto substitui a autorização ampla registrada no AGENTS.md — em caso de divergência, vale esta linha.)
+- **Não** pague plano/altere billing do Render/Stripe, **não** publique `firestore.rules`, **não** apague branch/arquivo/DNS pré-existente, **não** reescreva histórico do Git — tudo isso é só com ordem expressa e específica do Felipe.
+- Segredos nunca em chat, arquivo, print ou commit. Variáveis de ambiente: confira existência pelo `/readyz`, nunca imprima valores.
+- Vocabulário de status, sem exceção: **implementado → testado → mergeado → deploy → produção** são estados diferentes. Só afirme o que verificou (CI verde, smoke, leitura ao vivo). "Acho que funciona" não é status.
+- Depois de deploy, rode a skill **`verificar-site`** (smoke dos dois domínios) antes de declarar produção.
+- Ao mexer em texto de interface: PT no perfil `br`, EN no `global`, **nunca misturar línguas na mesma página** — o caso `/curso/it` no .com (promessa em inglês sobre conteúdo em português) é o anti-exemplo permanente.
+- Testes são scripts Node sob medida em `scripts/` + workflows em `.github/workflows/` (não há Vitest/Jest). Rode o workflow relevante e diga qual rodou.
 
-## Como trabalhar
-1. Reproduzir o erro e distinguir **implementado → testes simulados → CI → merge → deploy → produção**.
-2. Criar branch/PR, executar checks aplicáveis, registrar SHA, evidências, limites e reversão; não sobrescrever branches de outros agentes.
-3. Não apagar histórico, conteúdo de livros, workflows ainda úteis ou PRs futuros só para esconder checks antigos em vermelho.
-4. Não publicar credenciais, policies IAM, artefatos com dados administrativos, chaves, tokens ou dados de alunos em repositório público.
-5. Não realizar deploy de `firestore.rules`, mudanças de cobrança, Render, credenciais ou APP/APK como efeito colateral de documentação.
+## Antes de qualquer tarefa, responda para você mesmo
+1. Qual domínio/perfil é afetado (.com.br, .com, APK, os três)?
+2. O curso envolvido está **completo** na interface afetada? (tabela acima)
+3. A mudança toca billing, áudio pago, índice ou SEO? Se sim, releia a ARMADILHA correspondente.
+4. Como vou **provar** o resultado (CI, smoke, URL ao vivo)?
 
-**Leia** [estado verificado](docs/ESTADO-ATUAL.md) e [Firebase — situação e verificação](docs/conexao-firebase-github.md). `docs/historico/CONTEXTO.md` e `docs/historico/PARCERIA-IA.md` são registros históricos, não fontes de verdade do presente.
-
-## Verificação de encerramento — 27/10/2026
-- Render: commit `6bf7dd9` publicado `live`, build e deploy aprovados (dep-dbg4aeajnfac739kpjlg). O site atual não foi substituído por uma nova arquitetura.
-- Google Search Console (propriedade `sc-domain:linvuu.com.br`): sitemap com 81 URLs e zero erros/avisos na última leitura do Google, em 22/10. As 81 URLs foram registradas no Indexing Tracker nesta auditoria. Inspeção por URL confirmou indexação de /, /assinatura, /cursos, /curso/en, /en, /sobre, /livros; não indexadas /curso/de, /livros/de e /es. Não afirmar indexação de todas as URLs nem confundir cliques de proprietário com visitantes.
-- Auditoria SEO on-page de 10 páginas: 0 avisos críticos, 0 altos, 4 médios, 13 leves. Problema verificável: objeto Organization em JSON-LD de cursos sem logo; corrigido neste PR com teste. Textos curtos e metadados devem ser revisados editorialmente, sem geração de conteúdo artificial.
-- Stripe conectado em `livemode=true`: 1 preço mensal ativo de R$ 139,00; webhook habilitado para `https://linvuu.com.br/api/stripe/webhook` com eventos de checkout, assinatura e faturas. Nenhum Payment Link encontrado (o site usa Checkout Sessions criadas pelo backend). O fato de existir webhook não comprova entrega bem-sucedida nem conceder acesso ao curso.
-- Pagamentos web: **não verificado fluxo de compra real ponta a ponta**. Não executar compra real, não mudar preços, descontos, cupons ou eventos Stripe sem tarefa explícita; conferir com teste controlado antes de declarar 8/10 para vendas.
-- APK: build web separado não é Android release/AAB certificada. Não declarar conformidade final com Google Play sem análise de artefato, política de pagamentos e teste em aparelho.
-- Sem acesso conectado ao GA4 pelo GSC Wizard desta conta; não inventar métricas de eventos, conversão ou páginas de erro reais.
-
-## Atualização de auditoria por 20 frentes (27/10/2026)
-Leia [docs/AUDITORIA-20-FRENTES-2026-10-27.md](docs/AUDITORIA-20-FRENTES-2026-10-27.md) antes de prometer lançamento. O relatório distingue fatos de GitHub, Render, Search Console, Stripe e PostHog dos testes reais ainda pendentes. PR #375 corrige JSON-LD e está live; PR #377 impede preços automáticos e está live. PR #378 adiciona eventos opt-in e foi mergeado, mas confirmar SHA de deploy antes de dizer que está live. PR #379 corrigiu transições de cor dos botões do APK, passou na prévia e em rerun e foi mergeado; verificar SHA de produção e homologação física antes de declarar Google Play pronta. Issues #376, #380 e #381 registram blockers. **Não há 20 subagentes independentes nesta execução; são 20 verificações técnicas com fontes.**
-
-## Diagnóstico Googlebot revisado (27/10/2026)
-**Fonte de verdade atualizada:** [docs/SEO-INDEXACAO-GSC-2026-10-27.md](docs/SEO-INDEXACAO-GSC-2026-10-27.md). A **home está indexada**, rastreada pelo Googlebot móvel em 27/10 07:10 UTC, `robotsTxtState=ALLOWED` e `pageFetchState=SUCCESSFUL`. HTTPS e www redirecionam corretamente nos testes atuais; bloqueios históricos não equivalem a bloqueios atuais. Google aceitou reenvio do sitemap de 81 URLs em 27/10 07:52 UTC. Cursos/livros prioritários continuam desconhecidos/descobertos mas não indexados; GSC não oferece via API solicitação individual de indexação. **Nunca afirmar que somente /en é indexada, nem que as 81 URLs já estão indexadas.** Não modificar robots que permitem / para apagar avisos antigos sem inspecionar as URLs exatas.
+---
+*Base: auditoria de 11/11/2026 (HEAD `a4872027`). Atualize a tabela de catálogo e as armadilhas quando os fatos mudarem — CLAUDE.md desatualizado é pior que nenhum.*
