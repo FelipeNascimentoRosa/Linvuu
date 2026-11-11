@@ -20,7 +20,7 @@ Regras de domínio em `server/dominio.ts` (301): www→apex; `/en`/`/es` de inte
 |---|---|
 | Billing/checkout/Stripe | `server/billing.ts`, `server/billing-contrato.ts`, `server/billing-webhook.ts`, `src/config/planos.ts` |
 | Prontidão (env vars) | `server/prontidao.ts` (`/readyz` confere variáveis e valores) |
-| Áudio de assinante | `server/audio-privado*` (ver ARMADILHA 2), rota `/api/audio` |
+| Áudio de assinante | repositório **privado** `Linvuu-Audio`, baixado no build para `.audio-privado/` (`scripts/audio-privado.mjs`, `AUDIO_REPO_TOKEN` no Render); servido só por `/api/audio` |
 | Áudio público | `public/audio/` (hoje: `v2/` = 4.062 arquivos, `es/` 907, `it/` 557) |
 | Conteúdo dos cursos | `content/idiomas/<id>/<interface>/dia-NNN.json` (4 sessões = 1 aula) |
 | Índices de catálogo | `content/indice.json` (PT) e `content/indice.en.json` (EN) — **esquemas diferentes** (ver ARMADILHA 4) |
@@ -35,7 +35,7 @@ Regra `explicacaoCompleta` (`metaRota.ts`): curso só ganha página indexável/h
 
 ## ARMADILHAS (não repetir)
 1. **Checkout mensal USD** depende de `STRIPE_PRICE_ID_USD` no ambiente do Render (o anual USD usa `price_data` inline e funciona sem ela). Se o mensal .com quebrar, cheque `/readyz` e o ambiente **antes** de mexer em código. O `render.yaml` não declara essa variável — a ausência lá não prova ausência no painel. **Configuração TESTADA (11/11/2026): a variável está cadastrada no painel do Render e o valor confere exatamente com o preço mensal USD da conta live da Stripe (US$ 19,99/mês), conferência feita nos dois painéis; declaração registrada a pedido do Felipe. A compra real de ponta a ponta segue sendo o lote 3 do plano-mestre.**
-2. **Áudio pago no repo público:** `server/audio-privado*/` (11.033 MP3) ainda está na árvore pública. A migração p/ o repo privado `Linvuu-Audio` (`scripts/audio-privado.mjs`) espera o token no Render. **Nunca** adicione áudio pago novo em `server/`; trate qualquer mudança aqui como sensível e avise o Felipe.
+2. **Áudio pago fora do repositório público (lote 20, 11/11/2026):** os 11.033 MP3 pagos vivem só no repositório privado `Linvuu-Audio`; o build do Render os baixa com `AUDIO_REPO_TOKEN` (log: `audio-privado: 11033 MP3 baixados`). Sem a credencial, o build **para** (o deploy anterior continua no ar). **Nunca** adicione áudio pago em `server/` nem em `public/`: o caminho é commitar no `Linvuu-Audio`. O histórico do Git ainda tem os arquivos antigos (lote 22, só com ordem expressa do Felipe).
 3. **CSS em camadas:** `main.tsx` empilha tokens → site-publico → styles → redesign → camadas. **Não crie folha global nova** nem "redesign2.css": ajuste na camada existente certa ou nos tokens. Hex de cor só em `tokens.css` (os hex em componentes de bandeira são exceção legítima).
 4. **Dois índices, dois esquemas:** `indice.json` ≠ `indice.en.json`. O gerador `scripts/conteudo.mjs` tem a **GUARDA 2026-11-04**: nunca regenere índice por cima de dias traduzidos em disco sem o mapa i18n — foi assim que o espanhol EN "sumiu" uma vez.
 5. **Copy pública — fatos que não podem mudar sem ordem do Felipe:** "2 primeiras aulas grátis" (não "aula 1 grátis"); "áudio em cada frase" (não "em cada palavra"); nunca prometer fluência/prazo; certificado **de conclusão emitido pela Linvuu (CNPJ)** é permitido (decisão do Felipe, 11/11/2026), mas nunca como "reconhecido pelo MEC", "oficial" ou equivalente a exame (Celpe-Bras, Goethe, DELF etc.); preços só os de `planos.ts`; contato no .com.br é **contato@linvuu.com.br**.
