@@ -5,6 +5,7 @@ import type { Express, Request, Response } from 'express';
 import { getFirestore } from 'firebase-admin/firestore';
 import { firebaseAdmin, projetoFirebase } from './firebase-admin';
 import { lerFunil } from './funil';
+import { lerVisitas } from './visitas';
 
 const COLECAO = 'eventos';
 const ID = /^[a-f0-9]{32}$/;
@@ -102,8 +103,11 @@ export function registrarMedicao(app: Express) {
       const linhas = snap.docs.map((x) => x.data() as Linha);
       res.setHeader('Cache-Control', 'private, no-store');
       // O funil falhar (ex.: permissão de listar usuários) não pode esconder o relatório de aprendizado.
-      const funil = await lerFunil(dd).catch((e) => { console.error('metricas/funil', e); return { erro: 'Funil indisponível.' }; });
-      res.json({ dias: dd, eventos: linhas.length, truncado: snap.size >= 50_000, funil, ...agregar(linhas, dia(Date.now())) });
+      const [funil, visitas] = await Promise.all([
+        lerFunil(dd).catch((e) => { console.error('metricas/funil', e); return { erro: 'Funil indisponível.' }; }),
+        lerVisitas(dd).catch((e) => { console.error('metricas/visitas', e); return { erro: 'Visitas indisponíveis.' }; }),
+      ]);
+      res.json({ dias: dd, eventos: linhas.length, truncado: snap.size >= 50_000, funil, visitas, ...agregar(linhas, dia(Date.now())) });
     } catch { res.status(500).json({ error: 'Não foi possível ler as métricas.' }); }
   });
 }
