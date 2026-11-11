@@ -210,13 +210,28 @@ registrarCtas(app); // POST /api/cta: clique de botão contado sem cookie e sem 
       const q = req.originalUrl.indexOf('?');
       res.redirect(301, req.path.replace(/\/+$/, '') + (q >= 0 ? req.originalUrl.slice(q) : ''));
     });
+    const cachePreRender = new Map<string, string | null>();
+    const paginaPreRenderizada = (perfil: string, caminho: string): string | null => {
+      const chave = `${perfil}${caminho}`;
+      if (!cachePreRender.has(chave)) {
+        const pasta = path.resolve(__dirname, 'dist', 'prerender');
+        const arq = path.join(pasta, perfil, `${caminho === '/' ? 'index' : caminho}.html`);
+        const dentro = /^\/[\w/-]*$/.test(caminho) && !caminho.includes('..') && arq.startsWith(pasta + path.sep);
+        cachePreRender.set(chave, dentro && fs.existsSync(arq) ? fs.readFileSync(arq, 'utf8') : null);
+      }
+      return cachePreRender.get(chave)!;
+    };
     app.get('/{*pagina}', (req: Request, res: Response) => {
       res.setHeader('Cache-Control', 'no-cache');
       htmlBase ??= fs.readFileSync(path.resolve(__dirname, 'dist', 'index.html'), 'utf8');
       res.vary('Host');
       const base = htmlBase;
       // Perfil do domínio da requisição durante a montagem síncrona do HTML (a estrutura de endereços difere entre .com e .com.br).
-      const { m, html } = noPerfilDe(req, () => { const m = metaDaRota(req.path, dadosMeta); return { m, html: comPreloadDaRota(aplicarMeta(base, m, SITE_URL, dadosMeta), req.path) }; });
+      // Página indexável pré-renderizada no build (scripts/prerender.mjs): o #root já leva o HTML real que a pessoa vê.
+      // Sem o arquivo, metaRota coloca o resumo do servidor, como antes. O <head> vem sempre de metaRota.
+      const real = paginaPreRenderizada(perfilDaRequisicao(req), req.path);
+      const baseDaPagina = real ? base.replace('<div id="root"></div>', () => `<div id="root">${real}</div>`) : base;
+      const { m, html } = noPerfilDe(req, () => { const m = metaDaRota(req.path, dadosMeta); return { m, html: comPreloadDaRota(aplicarMeta(m.status === 200 ? baseDaPagina : base, m, SITE_URL, dadosMeta), req.path) }; });
       res.status(m.status).type('html').send(html);
     });
   } else {

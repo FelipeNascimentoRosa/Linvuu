@@ -2,7 +2,6 @@
 .av-kicker{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--verde-floresta);font-weight:600;margin:0 0 4px}
 .av-resumo{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:8px 0 16px}
 .av-estrelas{color:var(--ocre);letter-spacing:2px;font-size:1.05rem}
-.av-vazio{color:var(--grafite-65)}
 .avaliacoes ul.av-lista{list-style:none;margin:16px 0;padding:0;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
 .avaliacoes li.av-card{list-style:none;margin:0;background:var(--papel-claro);border:1px solid var(--papel-borda);border-radius:10px;padding:16px}
 .av-texto{margin:8px 0;line-height:1.55}
@@ -30,3 +29,4 @@
 .av-foto{width:48px;height:48px;border-radius:50%;object-fit:cover;flex-shrink:0;background:var(--verde-100)}
 .av-iniciais{display:grid;place-items:center;background:var(--verde-floresta);color:var(--papel);font-weight:700;letter-spacing:.02em}
 .av-com-foto .av-foto{width:32px;height:32px}
+.av-fonte{color:var(--grafite-65);margin:0 0 8px}

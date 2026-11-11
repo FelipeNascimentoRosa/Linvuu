@@ -1,5 +1,7 @@
 # 06 · MARKETING — DA NOTA 2 PARA A NOTA 5 EM 30 DIAS
 
+> **Arquivado em 11/11/2026 (lote 99).** Substituído por [`docs/plano/`](../plano/EXECUTAR.md) — o único plano em vigor. Mantido só como registro histórico; não execute a partir daqui.
+
 > A atração começa HOJE, junto com o plano de 3 dias.
 > Estrutura: nota 9. Marketing: nota 2. A meta do mês: nota 5.
 > Resultado esperado: a "Atração de 30" — a escala de explosão.

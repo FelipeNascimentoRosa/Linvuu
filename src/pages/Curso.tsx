@@ -113,6 +113,7 @@ export default function Curso() {
           <summary>
             <span className="fase-num">{t.cursoPagina.aula(g.aula)}</span>
             <strong>{g.titulo}</strong>
+            {g.objetivo && <span className="fase-objetivo">{g.objetivo}</span>}
             <span className={`fase-dias ${feitasAula === nDias ? 'fase-feita' : ''}`}>{feitasAula > 0 ? `${feitasAula === nDias ? '✓ ' : ''}${feitasAula}/${nDias} · ` : ''}{t.cursoPagina.sessoes(g.dias[0], g.dias[1])}</span>
           </summary>
           <ol className="dias" start={g.dias[0]}>
