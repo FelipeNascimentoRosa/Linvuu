@@ -42,6 +42,7 @@ Regra `explicacaoCompleta` (`metaRota.ts`): curso só ganha página indexável/h
 6. **Home:** `src/pages/Home.tsx` é só um re-export de `HomeBrasileiros` (texto via `src/i18n/home.ts`). Não crie variante nova de home sem matar uma antiga.
 
 ## Regras de trabalho (invioláveis)
+- **Material antigo não é fonte nem métrica (ordem do Felipe, 11/11/2026).** `_para_apagar/`, `docs/historico/` e relatórios datados (auditorias, snapshots, painéis de métricas antigos) são arquivo morto: não leia como estado atual, não cite número deles, não compare métricas com eles. Estado de indexação/SEO só vale se medido **ao vivo** na hora: `curl` no site, sitemap publicado, Search Console. Resultado do Google (`site:`) é cache do Google, não o estado do site — nunca reporte como fato atual sem dizer isso.
 - **Nunca** trabalhe direto na `main`: branch + PR sempre. Fila máxima: 3 PRs abertos + 3 drafts.
 - **Merge: somente com ordem explícita do Felipe na conversa.** (Isto substitui a autorização ampla registrada no AGENTS.md — em caso de divergência, vale esta linha.)
 - **Não** pague plano/altere billing do Render/Stripe, **não** publique `firestore.rules`, **não** apague branch/arquivo/DNS pré-existente, **não** reescreva histórico do Git — tudo isso é só com ordem expressa e específica do Felipe.

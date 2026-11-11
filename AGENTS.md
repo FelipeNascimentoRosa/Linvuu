@@ -17,6 +17,7 @@ Antes de alterar este repositório, leia `docs/ESTADO-ATUAL.md`, `docs/COORDENAC
 - Testes da mudança e checks aplicáveis precisam passar antes do merge. Uma limitação externa deve ser registrada, não escondida.
 
 ## Modo de entrega (pedido do Felipe, 29/10/2026)
+- **Material antigo não é fonte nem métrica (ordem do Felipe, 11/11/2026).** `_para_apagar/`, `docs/historico/` e relatórios datados (auditorias, snapshots, painéis de métricas antigos) são arquivo morto: não leia como estado atual, não cite número deles, não compare métricas com eles. Estado de indexação/SEO só vale se medido **ao vivo** na hora: `curl` no site, sitemap publicado, Search Console. Resultado do Google (`site:`) é cache do Google, não o estado do site — nunca reporte como fato atual sem dizer isso.
 - Entregue o resultado pronto: capítulo, texto, tabela e exercícios escritos; código completo, sem "resto aqui". Sumários e planos só quando pedidos.
 - Registre o estado em uma linha (por exemplo, "rascunho, sem revisão humana"). Avise apenas o que for material: licença incompatível com uso comercial, risco de segurança, dado não verificado ou bloqueio real.
 - O Felipe é fluente em russo e corrige o conteúdo; siga o roteiro dele sem rediscutir.
