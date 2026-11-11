@@ -52,9 +52,11 @@ Mais scripts e versões em [package.json](package.json). Testes da `main` só co
 
 ## Arquivos e instruções
 
-- [AGENTS.md](AGENTS.md): fonte comum para ChatGPT/Codex, Claude, Cursor e Antigravity.
+- [AGENTS.md](AGENTS.md): fonte comum para ChatGPT/Codex, Claude, Cursor, Antigravity e DeepSeek.
+- [PAINEL.md](PAINEL.md): o que está aberto, reprovado ou bloqueado hoje. Leia antes de escolher a tarefa.
 - [CLAUDE.md](CLAUDE.md): entrada de Claude e critério de evidência.
-- [docs/COORDENACAO-IA.md](docs/COORDENACAO-IA.md): coordenação entre agentes.
+- [DEEPSEEK.md](DEEPSEEK.md): entrada de DeepSeek v4.1; contrato em [docs/PROMPT-MESTRE-DEEPSEEK-v4.1.md](docs/PROMPT-MESTRE-DEEPSEEK-v4.1.md).
+- [docs/COORDENACAO-IA.md](docs/COORDENACAO-IA.md): coordenação entre agentes, com o estado dos PRs medido por API.
 - [docs/conexao-firebase-github.md](docs/conexao-firebase-github.md): estado e limites da auditoria Firebase.
 - `firestore.rules` e `firebase.json`: regras versionadas e configuração do emulador. **Nenhum deploy Firestore automático é executado por este README.**
 

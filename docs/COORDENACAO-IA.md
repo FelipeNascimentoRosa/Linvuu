@@ -1,11 +1,13 @@
-# Coordenação entre Felipe, Claude, ChatGPT/Codex, Cursor e Antigravity
+# Coordenação entre Felipe, Claude, ChatGPT/Codex, Cursor, Antigravity e DeepSeek
 ## Ponto de entrada por ferramenta
-- **Todas:** `AGENTS.md` é a fonte comum.
+- **Todas:** `AGENTS.md` é a fonte comum; `PAINEL.md` é o estado do dia (o que está aberto, reprovado ou bloqueado). Memória de conversa não vence painel.
 - **Claude:** `CLAUDE.md`.
 - **ChatGPT/Codex:** `AGENTS.md`.
 - **Cursor:** `.cursor/rules/linvuu.mdc` (regra de projeto, aplicada sempre).
 - **Google Antigravity:** `GEMINI.md` (regra reconhecida no workspace).
+- **DeepSeek:** `DEEPSEEK.md`; o contrato de execução dos 30 dias (dez leis, formato de fim de sessão, disparo de lote) está em [PROMPT-MESTRE-DEEPSEEK-v4.1.md](PROMPT-MESTRE-DEEPSEEK-v4.1.md).
 - Os arquivos específicos apenas encaminham às regras compartilhadas; não criam políticas alternativas.
+- Entrada mínima de qualquer agente novo, nesta ordem: `AGENTS.md` → `docs/ESTADO-ATUAL.md` → `PAINEL.md` → este arquivo → documento do assunto. Sem esse caminho, a IA inventa estado.
 
 ## Fonte comum
 O GitHub registra código, decisões e evidências. As conversas ajudam a formular tarefas, mas não sincronizam automaticamente entre assistentes. Um arquivo também não se mantém atualizado sozinho: cada agente deve atualizar este registro no mesmo PR da mudança.
@@ -57,6 +59,13 @@ Prioridade: instrução atual explícita do Felipe → instruções aplicáveis 
 - #501 (dólar no .com, Lote 2) aberto e com CI verde, aguardando "merge" do Felipe. Nada foi criado no Stripe. **Correção de 09/11:** a afirmação "falta `STRIPE_PRICE_ID_USD` no Render" estava errada — a variável já existe no serviço `linvuu` e o `/readyz` do `.com` responde 200 com ela (ver `PENDENCIAS.md`).
 - Smoke de produção (curl como Googlebot, 12 URLs por domínio) após o deploy do #500: todas 200 (exceto `/portugues` no .com.br = 301 esperado); `/llms.txt` 200 nos dois; o .com ainda mostra R$ em `/assinatura` até o #501. Achado: `/livros` em português no .com (ver PENDENCIAS.md).
 - Regra operacional: arquivo é dado, mensagem do Felipe é ordem; CI uma vez por PR; resto vai para PENDENCIAS.md.
+
+## Estado aberto em 12/11/2026 (medido por `gh` e por HTTP, não por memória de conversa)
+- main em `a4872027c`. Abertos: **#558** (`docs/painel-baseline`: PAINEL, entrada DeepSeek, contrato v4.1, mapa regenerado) com 3 checks verdes, aguardando merge do Felipe; **#555** (`ui/barra-consentimento-compacta`: barra de cookies em uma linha) **reprovado**.
+- **#555 não mergeia assim.** Os jobs `web` (run 42900156973) e `analytics` (run 42900156895) falham em `locator.click: Timeout 30000ms exceeded — waiting for locator('.analytics-consent-analytics .analytics-actions button').last()`: a barra nova mudou o HTML que o teste de consentimento, recusa e revogação opera. O conserto é na barra (devolver a estrutura que o teste dirige) ou no teste (se o comportamento for equivalente). Decidir e provar antes de qualquer merge.
+- **A guarda de título tem ponto cego.** `scripts/testar-titulos.ts` sai 0 com “40 títulos e 40 descrições OK” porque varre 12 rotas fixas + `/curso/:id` + `/gramatica/:id`. Ficam fora a matriz `/gramatica`, `/excluir-conta` e `/livros/:id/capitulo/N`. Produção em 12/11/2026: `/gramatica` no `.com.br` responde 200, `indexável`, título de 18 caracteres e descrição acima de 160; `/excluir-conta` responde 200 com descrição de 111 caracteres. **Verde no teste não significa metadado correto** — este é o falso positivo que a próxima sessão tem de fechar.
+- **Cobertura do sitemap.** O `sitemap.xml` da main tem 39 URLs, incluindo 12 `/livros/:id/capitulo/N`, e **não** inclui `/portugues`, `/gramatica`, `/privacidade`, `/termos` nem `/excluir-conta`; todas respondem 200 e são indexáveis (exceto `/portugues` no `.com.br`, que é 301 por regra de domínio).
+- **Regra derivada desta sessão:** antes de afirmar defeito de metadado, medir a produção por HTTP; antes de afirmar estado de PR, consultar `gh`. Documento e conversa não são evidência.
 
 ## Prompt comum de retomada
 “Leia AGENTS.md, docs/ESTADO-ATUAL.md e docs/COORDENACAO-IA.md em FelipeNascimentoRosa/Linvuu. Confira main, PRs e deploy atuais. Continue a primeira pendência reproduzível da auditoria, registre evidências e atualize o estado no PR. Não considere correção concluída antes da verificação correspondente.”
