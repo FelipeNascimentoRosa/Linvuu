@@ -10,6 +10,7 @@ import { fileURLToPath } from 'url';
 import { registrarCobranca, registrarLivroProtegido, registrarNotificacoesCobranca } from './server/billing';
 import { registrarProgresso } from './server/progresso';
 import { registrarMedicao } from './server/medicao';
+import { registrarVisitas } from './server/visitas';
 import { registrarNewsletter } from './server/newsletter';
 import { registrarAvaliacoes } from './server/avaliacoes';
 import { registrarExclusao } from './server/exclusao';
@@ -53,6 +54,8 @@ async function startServer() {
   registrarLivroProtegido(app);
   registrarProgresso(app);
   registrarMedicao(app);
+  // Visitas por rota, contadas no servidor: registrado antes das rotas de página para pegar todo HTML 200.
+  registrarVisitas(app);
   registrarNewsletter(app);
   registrarAvaliacoes(app);
   registrarExclusao(app);
