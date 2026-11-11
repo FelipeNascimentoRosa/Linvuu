@@ -25,6 +25,8 @@ Métrica da semana (muda com o lote): ver § 3.
 
 ## 3. Plano 30 dias — lotes
 
+> **A partir de 11/11/2026 a fila de trabalho é a de [`docs/plano/LOTES.md`](docs/plano/LOTES.md)** (100 lotes em 5 ondas; como executar em [`docs/plano/EXECUTAR.md`](docs/plano/EXECUTAR.md); andamento em [`docs/plano/ESTADO.md`](docs/plano/ESTADO.md)). A tabela abaixo fica como registro do plano de 30 dias: os lotes 0 a 4 dela correspondem à Onda 0 e à Onda 1 do plano-mestre.
+
 | Lote | Semana | Critério de pronto | Prova exigida | Status |
 |---|---|---|---|---|
 | 0 · Decisões | dia 1 | fila zerada | 3 merges no `git log` + PAINEL commitado | ⏳ em curso |
@@ -70,7 +72,10 @@ Cada pendência recebe: **sim**, **não** ou **"adiar até [data]"**. Pergunta c
 
 ## 7. Achados fora do lote (reportar, não consertar)
 
-- (vazio)
+- 2026-11-11 · `linvuu.com` tem MX nulo (`0 .`) e o site exibe `contato@linvuu.com` nos dois domínios: mensagem enviada a esse endereço não é entregue · prova: consulta DNS de 11/11 e `src/config/site.ts` · virou o lote 2.
+- 2026-11-11 · o repositório `FelipeNascimentoRosa/Linvuu` responde `visibility: public` na API, com 11.033 MP3 pagos e 151 arquivos de `content/livros-privado` na árvore · virou os lotes 20 a 22.
+- 2026-11-11 · a captura `v1-curso.png` do dossiê de 10–11/11 mostra a página 404, não um curso: a prova foi anexada sem ser olhada.
+- 2026-11-11 · `docs/APK.md` diz que o backend do Google Play não existe; `server/play.ts` existe e fica desligado sem a chave · virou o lote 73.
 
 ## 8. Evidências recentes (append-only: data · fato · prova)
 
