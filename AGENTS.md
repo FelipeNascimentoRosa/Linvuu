@@ -1,10 +1,11 @@
 # Linvuu — instruções comuns para agentes
 
+**ANTES DE TUDO:** [`PAINEL.md`](PAINEL.md) — memória do projeto e instrumento do dono. Se a memória do agente divergir do painel, o painel vence; o que não está nele não existe. O contrato de execução dos 30 dias (as dez leis, o formato de fim de sessão e o disparo de cada lote) está em [`docs/PROMPT-MESTRE-DEEPSEEK-v4.1.md`](docs/PROMPT-MESTRE-DEEPSEEK-v4.1.md).
 **PRIMEIRO LEIA:** [`docs/CONTINUIDADE-2026-10-27.md`](docs/CONTINUIDADE-2026-10-27.md). Esse é o relato comum e datado de PRs, Render, Firebase/IAM/OIDC, Firestore, Search Console, Stripe, Android, Vuu e conversão de repositórios privados. Para estados atuais, confirme GitHub, Render e GSC antes de decidir. A privacidade dos três repositórios deve ser verificada pela API, não presumida.
 **A Linvuu é um site internacional desde 29/10/2026** (linvuu.com.br em português e linvuu.com em inglês, um só idioma de interface por domínio; o site em espanhol foi retirado em 06/11/2026; a gramática é explicada na língua nativa do aluno). Leia [`docs/DECISAO-SITE-INTERNACIONAL.md`](docs/DECISAO-SITE-INTERNACIONAL.md) antes de qualquer texto, rota ou conteúdo.
 **Meta de receita:** R$ 1.100.000 até 31/12/2027 — [`docs/META-1M-2027.md`](docs/META-1M-2027.md). Toda tarefa deve ligar-se a um dos cinco motores ou a um portão mensal do §4 desse documento; o que não liga, não é prioridade.
 Antes de alterar este repositório, leia `docs/ESTADO-ATUAL.md`, `docs/COORDENACAO-IA.md` e as instruções locais aplicáveis. Estas instruções valem para Claude, ChatGPT/Codex, Cursor e Google Antigravity.
-- Entradas específicas: `CLAUDE.md` (Claude), `.cursor/rules/linvuu.mdc` (Cursor) e `GEMINI.md` (Antigravity). O `AGENTS.md` é a fonte comum; evite duplicar normas contraditórias.
+- Entradas específicas: `CLAUDE.md` (Claude), `.cursor/rules/linvuu.mdc` (Cursor), `GEMINI.md` (Antigravity) e `DEEPSEEK.md` (DeepSeek v4.1). O `AGENTS.md` é a fonte comum; evite duplicar normas contraditórias.
 - Consulte a main atual e os PRs abertos; não trate lembranças da conversa como estado de produção.
 - Use branch e PR. Não sobrescreva trabalho do outro agente. Registre a tarefa e os arquivos no corpo do PR antes das mudanças seguintes.
 - Cada correção deve atualizar o registro do assunto com evidência e limitações.
