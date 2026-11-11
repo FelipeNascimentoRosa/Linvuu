@@ -105,6 +105,18 @@ Uma linha por lote. O agente altera **só** a linha do lote em que trabalhou, no
 | 99 | Arquivar planos substituídos e deixar um só caminho de leitura | A | mergeado | #571 | `docs/plano/ESTADO.md` na main (raw 200); planos antigos em `docs/historico/`; AGENTS.md e CLAUDE.md apontam para docs/plano/ |
 | 100 | Reescrever o plano com números reais nos dois portões | A+F | a fazer | — | — |
 
+## Internacional — linvuu.com (perfil `global`, interface em inglês)
+
+> **Para o agente:** todo lote `I` mexe **só no .com** (`linvuu.com`, inglês). Nunca altere o .com.br por um lote I; se a mudança tocar código compartilhado, prove que o .com.br ficou igual (captura ou contagem). Completos em inglês: português-BR, francês, russo. Parciais: espanhol, alemão. Italiano: 0. Sempre atualize esta tabela no mesmo PR do lote (ordem do Felipe, 11/11/2026).
+
+| nº | lote | quem | estado | PR | prova |
+|---|---|---|---|---|---|
+| I1 | Home do .com em torno do que está completo (herói e grade só com os 3 completos; parciais numa faixa "In translation" com a contagem real) | A | PR aberto | #584 | local: herói e grade do .com = French, Brazilian Portuguese, Russian; faixa = Spanish 30 of 62, German 1 of 72; celular sem buraco na grade (3º cartão em largura total); .com.br inalterado (6 cartões, 2 colunas); prerender 60/60 |
+| I2 | Acabamentos visuais do .com: capa do livro no herói de `/curso/ru`, rótulos do rodapé em inglês, "Website" do `/contato` apontando para linvuu.com (D2, D14) | A | a fazer | — | — |
+| I3 | Páginas de curso em inglês (ru, fr, br) respondendo preço, prazo até B1, professor e iniciante | A | a fazer | — | — |
+| I4 | 30 dúvidas de russo em inglês (em blocos de 5), a partir de `ru.en.json` | A | a fazer | — | — |
+| I5 | Explicações em inglês de alemão, espanhol e italiano (284 + 128 + 248 sessões) — só depois de o .com vender | A+F | a fazer | — | — |
+
 ## Portões
 
 | Data | O que tem de ser verdade | Medido | Decisão |

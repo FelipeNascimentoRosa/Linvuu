@@ -139,7 +139,7 @@
 .br-method,.br-languages{grid-template-columns:1fr}
 .br-method article{padding:24px}
 .br-method-top{margin-bottom:20px}
-.br-languages{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.br-languages{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.br-languages>:last-child:nth-child(odd){grid-column:1/-1}
 .br-language{padding:18px}
 .br-greeting{font-size:34px;margin-bottom:24px}
 .br-language p{font-size:14px}
@@ -187,3 +187,10 @@
 .br-pick-btn{display:inline-flex;align-items:center;min-height:44px;padding:11px 20px;border:1px solid var(--site-borda-controle);border-radius:var(--r-pill);color:var(--br-green);font-weight:650;font-size:16px;background:var(--site-cartao);transition:transform .18s,box-shadow .18s,background .18s}
 .br-pick-btn:hover{background:var(--br-green);color:var(--site-branco);transform:translateY(-2px);box-shadow:var(--site-sombra-controle)}
 .br-current a{display:inline-flex;align-items:center;min-height:44px}
+/* .com — faixa «In translation» (lote I1): cursos ainda parciais em inglês, com a contagem real, abaixo da grade dos completos. */
+.br-traducao{margin-top:24px;padding:20px 24px;border-radius:var(--site-r-card);background:var(--papel-escuro);color:var(--grafite)}
+.br-traducao p{margin:0 0 10px;max-width:68ch}
+.br-traducao ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:12px 28px}
+.br-traducao li{display:flex;flex-direction:column;gap:2px}
+.br-traducao a{font-weight:600;color:var(--verde-floresta)}
+.br-traducao span{font-size:14px;color:var(--grafite-65)}

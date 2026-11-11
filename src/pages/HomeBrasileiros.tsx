@@ -11,7 +11,7 @@ import { usePageTitle } from '../lib/usePageTitle';
 import { useRetomadaGeral } from '../lib/retomar';
 import { textoRetomada } from '../lib/mensagemRetomada';
 import { LIVROS } from '../config/livros';
-import { IDIOMAS_GRAMATICA, cursoComExplicacaoNoSite } from '../lib/content';
+import { IDIOMAS_GRAMATICA, cursoComExplicacaoNoSite, coberturaNoSite } from '../lib/content';
 import './home-brasileiros.css';
 import { Avaliacoes } from '../components/Avaliacoes';
 
@@ -35,6 +35,12 @@ const perguntas = [
 export default function HomeBrasileiros() {
   // No .com só entram os cursos com aulas explicadas em inglês; a cobertura vem do índice carregado antes de abrir o site.
   const idiomas = idiomasDoSite.filter((i) => cursoComExplicacaoNoSite(i.id));
+  // .com: herói e grade só com os cursos explicados em inglês do começo ao fim; os parciais vão para a faixa
+  // «In translation» com a contagem real (lote I1 — o herói não oferece o que a nota de baixo cancela).
+  const ehCom = LOCALE.codigo !== 'pt-BR';
+  const completo = (id: string) => { const c = coberturaNoSite(id); return c.total > 0 && c.traduzidas >= c.total; };
+  const principais = ehCom ? idiomas.filter((i) => completo(i.id)) : idiomas;
+  const emTraducao = ehCom ? idiomas.filter((i) => !completo(i.id)) : [];
   usePageTitle(h(HOME_BR.tituloSeo), h(HOME_BR.descricao));
   const retomada = useRetomadaGeral();
   const [idioma, setIdioma] = useState(idiomas[0]);
@@ -56,7 +62,7 @@ export default function HomeBrasileiros() {
         <h1>{h("Aprenda idiomas online,")}<br /><em>{h("explicados em português.")}</em></h1>
         <p className="br-lead">{h(HOME_BR.lead)}</p>
         <p className="br-pick" id="br-pick-title">{h("Que idioma você quer aprender?")}</p>
-        <nav className="br-pick-list" aria-labelledby="br-pick-title">{idiomas.map((i) => <HomeCourseLink key={i.id} to={`/curso/${i.id}`} className="br-pick-btn">{h(i.nome)}</HomeCourseLink>)}</nav>
+        <nav className="br-pick-list" aria-labelledby="br-pick-title">{principais.map((i) => <HomeCourseLink key={i.id} to={`/curso/${i.id}`} className="br-pick-btn">{h(i.nome)}</HomeCourseLink>)}</nav>
         <div className="br-actions"><a className="br-text-link" href="#experimente">{h("Experimentar o método ↓")}</a></div>
         <p className="br-fine">{h("2 primeiras aulas grátis · Sem cartão para experimentar")}</p>
         {LOCALE.codigo === 'pt-BR' && <p className="br-fine"><a href="https://www.udemy.com/course/curso-de-russo-a1-ate-a2/" target="_blank" rel="noopener noreferrer">Curso de russo na Udemy: nota 4,7 de 5 em 72 avaliações · 285 alunos</a></p>}
@@ -89,7 +95,7 @@ export default function HomeBrasileiros() {
         ['03', 'Coloque em prática.', 'Exercícios com correção e atividades de fala e escrita para usar o que aprendeu.', '↗', '/fotos/pratica.jpg'],
       ].map(([n, titulo, texto, icon, foto]) => <article key={n}><img className="br-method-foto" src={foto} alt="" width="1000" height="600" loading="lazy" decoding="async" /><div className="br-method-top"><span>{n}</span><b aria-hidden="true">{icon}</b></div><h3>{h(titulo)}</h3><p>{h(texto)}</p></article>)}</div>
     </section>
-    <section className="br-section" id="idiomas"><span id="cursos" /><div className="br-section-head"><div><p className="br-eyebrow">{h("ESCOLHA UM CURSO ONLINE")}</p><h2>{h("Qual idioma você")}<br />{h("quer aprender hoje?")}</h2></div><p>{h("Para viajar, se aproximar de outras culturas ou realizar um objetivo seu. Encontre um idioma para começar.")}</p></div><div className="br-languages">{idiomas.map((i, n) => <HomeCourseLink cta="home_curso" key={i.id} to={`/curso/${i.id}`} className={`br-language br-language-${n}`}><span className="br-greeting" lang={i.lang}>{i.oi}<span aria-hidden="true">.</span></span><div><h3>{h(i.nome)}</h3><span aria-hidden="true">↗</span></div><p>{h(i.detalhe)}</p></HomeCourseLink>)}</div></section>
+    <section className="br-section" id="idiomas"><span id="cursos" /><div className="br-section-head"><div><p className="br-eyebrow">{h("ESCOLHA UM CURSO ONLINE")}</p><h2>{h("Qual idioma você")}<br />{h("quer aprender hoje?")}</h2></div><p>{h("Para viajar, se aproximar de outras culturas ou realizar um objetivo seu. Encontre um idioma para começar.")}</p></div><div className="br-languages">{principais.map((i, n) => <HomeCourseLink cta="home_curso" key={i.id} to={`/curso/${i.id}`} className={`br-language br-language-${n}`}><span className="br-greeting" lang={i.lang}>{i.oi}<span aria-hidden="true">.</span></span><div><h3>{h(i.nome)}</h3><span aria-hidden="true">↗</span></div><p>{h(i.detalhe)}</p></HomeCourseLink>)}</div>{emTraducao.length > 0 && <div className="br-traducao"><p className="br-eyebrow">IN TRANSLATION</p><p>The English explanations for these courses are being written lesson by lesson. You can already start with the lessons that are ready:</p><ul>{emTraducao.map((i) => { const c = coberturaNoSite(i.id); return <li key={i.id}><HomeCourseLink cta="home_curso" to={`/curso/${i.id}`}>{h(i.nome)}</HomeCourseLink><span>{c.traduzidas} of {c.total} lessons in English</span></li>; })}</ul></div>}</section>
     {/* Os livros só existem em português (/livros no .com redireciona ao .com.br): no .com a seção prometia o que o visitante não lê. */}
     {LOCALE.codigo === 'pt-BR' && (
     <section className="br-book"><div className="br-book-covers" aria-hidden="true">{['en', 'de', 'ru'].filter(id => id !== LOCALE.cursoOculto && cursoComExplicacaoNoSite(id)).map(id => <img key={id} src={`/livros/${id}-a1-a2-v1-600.webp`} width="600" height="800" alt="" loading="lazy" decoding="async" />)}</div><div><p className="br-eyebrow">{h("PARA QUEM GOSTA DE IR ALÉM")}</p><h2>{h("Seu aprendizado")}<br />{h("também tem páginas.")}</h2><p>{h("Explore os livros da Linvuu, leia com calma e volte aos assuntos que merecem mais atenção.")}</p><p>{h('Livros A1–A2 em seis idiomas. Leia os dois primeiros capítulos grátis, com áudio.')}</p><p>{h(LIVROS_EM_PRODUCAO)}</p><Link className="br-text-link" to="/livros">{h("Conhecer a coleção →")}</Link><div className="br-book-links"><HomeCourseLink to="/livros/de">{h("Livro de alemão →")}</HomeCourseLink><HomeCourseLink to="/livros/es">{h("Livro de espanhol →")}</HomeCourseLink></div></div></section>
