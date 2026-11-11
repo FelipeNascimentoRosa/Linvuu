@@ -34,7 +34,7 @@ Uma linha por lote. O agente altera **só** a linha do lote em que trabalhou, no
 | 28 | Marcar o idioma de todo trecho estrangeiro | A | em produção | #578 | produção 11/11 12:40Z: `curl -s https://linvuu.com.br/gramatica/de | grep -c lang="de"` → 62 (DOD ≥ 20); o HTML servido agora é a página real (#580) |
 | 29 | Garantir toque de 44 px, campo de 16 px, texto de 14 px e linha de 75 | A | a fazer | — | — |
 | 30 | Unificar a escala de títulos e pôr o H1 acima do H2 no celular | A | a fazer | — | — |
-| 31 | Corrigir textos vencidos e páginas mistas (D5, D7, D9, D10) | A | a fazer | — | — |
+| 31 | Corrigir textos vencidos e páginas mistas (D5, D7, D9, D10) | A | PR aberto | #582 | local: `/russo-online` dos dois domínios com "21 playlists" e link do perfil no Spotify; .com com as 7 avaliações (traduzidas, com a fonte); `/livro/gramatica-ru` "Quinze capítulos"; `.com/ex-alunos-udemy` → 301 .com.br (`testar:dominio` e `testar-http-seo`); gramáticas de/es/it no .com com aviso de tradução; prerender 60/60 |
 | 32 | Alinhar a busca de /cursos, o leque de livros e o rodapé | A | a fazer | — | — |
 | 33 | Contratar envio de e-mail e autenticar o domínio | A+F | a fazer | — | — |
 | 34 | Escrever a sequência de 5 e-mails por idioma | A | a fazer | — | — |

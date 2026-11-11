@@ -19,6 +19,7 @@ const casos: [string, string, string, string, string | null][] = [
   ['/portugues no .com.br é explicado em inglês no .com', BR, '/portugues', '', url(SITE_GLOBAL_URL, '/portugues')],
   ['/gramatica/br no .com.br mora no .com', BR, '/gramatica/br', '', url(SITE_GLOBAL_URL, '/gramatica/br')],
   ['/en/ antigo no .com perde o prefixo', GLOBAL, '/en/cursos', '', url(SITE_GLOBAL_URL, '/cursos')],
+  ['/ex-alunos-udemy no .com vai para o .com.br (página só em português)', GLOBAL, '/ex-alunos-udemy', '', url(SITE_URL, '/ex-alunos-udemy')],
   ['/es/ no .com perde o prefixo', GLOBAL, '/es/cursos', '', url(SITE_GLOBAL_URL, '/cursos')],
   // A correção desta branch: /livros é conteúdo em português e o .com é o site em inglês.
   ['/livros no .com vai para o .com.br', GLOBAL, '/livros', '', url(SITE_URL, '/livros')],

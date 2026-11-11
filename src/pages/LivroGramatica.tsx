@@ -54,7 +54,7 @@ export default function LivroGramatica() {
       {LOCALE.codigo !== 'pt-BR' && <p className="nota" lang={LOCALE.codigo}>{T.livro.indisponivelIdioma}</p>}
       <p className="lv-eyebrow">Livro · Russo · A1–A2</p>
       <h1 className="lv-h1">A gramática russa que faltava para o estudante brasileiro.</h1>
-      <p className="lv-lead">Dez aulas, do gênero dos substantivos ao genitivo, explicadas em português, com exemplos em frases curtas, quadros-resumo e exercícios com gabarito. Pensada para quem tem dificuldade com gramática e quer entender a lógica das terminações, não só decorar tabelas.</p>
+      <p className="lv-lead">Quinze capítulos, do alfabeto ao quadro geral dos 6 casos, explicados em português, com exemplos em frases curtas, quadros-resumo e exercícios com gabarito. Pensada para quem tem dificuldade com gramática e quer entender a lógica das terminações, não só decorar tabelas.</p>
       {estado === 'carregando' && <p className="lv-nota">Carregando…</p>}
       {estado === 'entrar' && (
         <p><Link className="btn btn-primary" to="/entrar">Entrar para ler</Link></p>
