@@ -8,12 +8,12 @@ import {clarity} from '../lib/clarity';
 import {APK} from '../plataforma';
 import './analytics-consent.css';
 const texts={
- 'pt-BR':{title:'Preferências de análise',text:'Podemos usar o PostHog e o Microsoft Clarity para entender a navegação e melhorar o site? O Clarity grava a sessão sem o texto digitado em formulários. Não enviamos nome, e-mail nem respostas. É opcional e você pode mudar sua escolha aqui.',yes:'Permitir análise',no:'Não permitir',privacy:'Privacidade',saved:'Preferência salva.'},
- en:{title:'Analytics preferences',text:'May we use PostHog and Microsoft Clarity to understand navigation and improve the site? Clarity records the session without text typed into forms. We do not send your name, email or answers. This is optional; you can change your choice here.',yes:'Allow analytics',no:'Decline analytics',privacy:'Privacy',saved:'Preference saved.'}};
+ 'pt-BR':{title:'Preferências de análise',text:'Podemos usar o PostHog e o Microsoft Clarity para entender a navegação e melhorar o site? O Clarity grava a sessão sem o texto digitado em formulários. Não enviamos nome, e-mail nem respostas. É opcional e você pode mudar sua escolha aqui.',yes:'Permitir análise',no:'Não permitir',privacy:'Privacidade',saved:'Preferência salva.',curto:'Usamos cookies para medir o site e melhorar as aulas. Você escolhe.'},
+ en:{title:'Analytics preferences',text:'May we use PostHog and Microsoft Clarity to understand navigation and improve the site? Clarity records the session without text typed into forms. We do not send your name, email or answers. This is optional; you can change your choice here.',yes:'Allow analytics',no:'Decline analytics',privacy:'Privacy',saved:'Preference saved.',curto:'We use cookies to measure the site and improve the lessons. Your call.'}};
 const ads={
  'pt-BR':{title:'Preferências de publicidade',text:'Podemos usar os pixels da Meta e do TikTok para medir anúncios? Eles recebem dados de navegação e podem usar cookies.',yes:'Permitir',no:'Recusar'},
  en:{title:'Advertising preferences',text:'May we use the Meta and TikTok pixels to measure ads? They receive browsing data and may use cookies.',yes:'Allow',no:'Decline'}};
-const extra={'pt-BR':{fechar:'Fechar',reabrir:'Preferências de cookies'},en:{fechar:'Close',reabrir:'Cookie preferences'}};
+const extra={'pt-BR':{fechar:'Fechar',reabrir:'Preferências de cookies',preferencias:'Detalhar',aceitar:'Aceitar',recusar:'Recusar'},en:{fechar:'Close',reabrir:'Cookie preferences',preferencias:'Details',aceitar:'Accept',recusar:'Decline'}};
 const EVENTO_PREFERENCIAS='linvuu:preferencias-privacidade';
 /** No site, o painel só aparece enquanto falta uma escolha; depois, reabre por este botão (rodapé e página de privacidade). */
 export function BotaoPreferencias({className}:{className?:string}){
@@ -36,6 +36,16 @@ export function AnalyticsConsent(){
  if(!APK&&!pendente&&!aberto){document.documentElement.style.removeProperty('--lv-consent-h');return (choice||adChoice)?<span className="sr-only" role="status">{t.saved}</span>:null;}
  const choose=(v:'yes'|'no')=>{analytics.choose(v);setChoice(analytics.choice());};
  const chooseAd=(v:'yes'|'no')=>{metaPixel.choose(v);tiktokPixel.choose(v);setAdChoice(metaPixel.choice());};
+ // Primeira visita: uma linha só, dois botões, um clique. O detalhe por finalidade fica em "Detalhar".
+ const tudo=(v:'yes'|'no')=>{choose(v);chooseAd(v);};
+ if(!APK&&pendente&&!aberto)return <aside ref={medir} className="analytics-consent analytics-consent-bar" data-flutuante="true" aria-label={t.title}>
+  <p className="analytics-consent-curto">{t.curto}</p>
+  <div className="analytics-actions">
+   <button type="button" className="btn btn-ghost analytics-consent-aceitar" onClick={()=>tudo('yes')}>{x.aceitar}</button>
+   <button type="button" className="btn btn-ghost analytics-consent-recusar" onClick={()=>tudo('no')}>{x.recusar}</button>
+   <button type="button" className="btn btn-ghost analytics-consent-detalhar" onClick={()=>setAberto(true)}>{x.preferencias}</button>
+  </div>
+ </aside>;
  return <aside ref={medir} className="analytics-consent" data-pending={pendente} data-flutuante={APK?undefined:'true'} aria-label={t.title}>
  {analytics.configured()&&<details className="analytics-consent-analytics" open={choice===null}><summary>{t.title}</summary><p>{t.text} <Link to="/privacidade">{t.privacy}</Link></p><div className="analytics-actions"><button type="button" className="btn btn-ghost" aria-pressed={choice==='yes'} onClick={()=>choose('yes')}>{t.yes}</button><button type="button" className="btn btn-ghost" aria-pressed={choice==='no'} onClick={()=>choose('no')}>{t.no}</button></div></details>}
  {!APK&&<details className="analytics-consent-ads" open={adChoice===null}><summary>{ad.title}</summary><p>{ad.text} <Link to="/privacidade">{t.privacy}</Link></p><div className="analytics-actions"><button type="button" className="btn btn-ghost" aria-pressed={adChoice==='yes'} onClick={()=>chooseAd('yes')}>{ad.yes}</button><button type="button" className="btn btn-ghost" aria-pressed={adChoice==='no'} onClick={()=>chooseAd('no')}>{ad.no}</button></div></details>}
