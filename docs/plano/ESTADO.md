@@ -7,11 +7,11 @@ Uma linha por lote. O agente altera **só** a linha do lote em que trabalhou, no
 | 1 | Mesclar #555, #556 e #557 e zerar a fila de PRs | A+F | mergeado | #555 #556 #557 | `gh pr list --state open` → só o PR do plano em 11/11; smoke de produção 200 e título no idioma certo nas 13 rotas dos dois domínios |
 | 2 | Fazer o e-mail de contato exibido receber mensagem | A+F | em produção | Felipe | Felipe verificou o recebimento em 11/11; DNS 11/11: MX da Cloudflare (Email Routing) em linvuu.com e linvuu.com.br — antes `0 .` no .com |
 | 3 | Comprar de verdade nos dois domínios e reembolsar | A+F | espera o Felipe | — | falta ele fazer as 3 compras com cartão próprio (mensal R$ 139, trimestral Pix R$ 291,90, mensal US$ 19,99); depois o agente confere webhook, acesso e reembolso |
-| 4 | Imprimir o funil real a partir do servidor | A | em produção | #565 | mergeado 11/11 (dc4eb6c5); `/api/metricas` → 404 sem `METRICAS_TOKEN` (por desenho); falta a 1ª chamada autenticada com o token |
-| 5 | Contar visitas por rota sem cookie e sem consentimento | A | mergeado | #567 | mergeado 11/11 (04efdf96); `testar:medicao` verde |
-| 6 | Registrar clique de botão com identificador | A | mergeado | #568 | mergeado 11/11 (5cb70f90); `POST /api/cta` inválido → 400 |
-| 7 | Trocar "chegam em breve" por avaliações reais | A | PR aberto | #572 | `grep "chegam em breve" dist/assets/*.js` = 0; 7 avaliações da Udemy com fonte no .com.br; .com sem lista vazia; lint e build verdes |
 | 8 | Exibir FUNDADORES, o trimestral e uma grade de planos alinhada | A | PR aberto | #579 | local: `/assinatura` .br com FUNDADORES (1×), .com sem; home com o trimestral (R$ 291,90 Pix ou R$ 417) e FUNDADORES; botões dos 3 cartões da home na mesma altura (y=4417 nos 3); `testar-contrato-billing` e `validar:design` ok |
+| 4 | Imprimir o funil real a partir do servidor | A | em produção | #565 | deploy `dep-dbq14obncjis73cih4fg` live 07:02Z; `GET /api/metricas` → 404 sem `METRICAS_TOKEN` (por desenho: sem token a rota não existe) |
+| 5 | Contar visitas por rota sem cookie e sem consentimento | A | em produção | #567 | deploy `dep-dbq3f42jnfac739p8q30` live 09:40Z (04efdf961); `npm run testar:medicao` verde no check `build` |
+| 6 | Registrar clique de botão com identificador | A | em produção | #568 | deploy `dep-dbq3fsutehms73b810ug` live 09:42Z (5cb70f903); `POST /api/cta` com CTA inválido → 400 nos dois domínios, home 200 |
+| 7 | Trocar "chegam em breve" por avaliações reais | A | em produção | #572 | produção 11/11 11:30Z: `chegam em breve` = 0 nos JS servidos por linvuu.com.br; `relatosFonte` presente (avaliações da Udemy com fonte) |
 | 9 | Pôr preço, botão e regra dos 7 dias na primeira tela de /assinatura | A+F | a fazer | — | — |
 | 10 | Mostrar prova e botão na primeira dobra do celular | A | a fazer | — | — |
 | 11 | Corrigir as promessas que o .com não cumpre (D1, D8, D11, D12) | A | a fazer | — | — |
@@ -31,7 +31,7 @@ Uma linha por lote. O agente altera **só** a linha do lote em que trabalhou, no
 | 25 | Transformar /gramatica num hub de verdade | A | a fazer | — | — |
 | 26 | Reescrever os hubs de russo e alemão por intenção de busca | A | a fazer | — | — |
 | 27 | Reescrever os hubs de inglês, espanhol, francês e italiano | A | a fazer | — | — |
-| 28 | Marcar o idioma de todo trecho estrangeiro | A | a fazer | — | — |
+| 28 | Marcar o idioma de todo trecho estrangeiro | A | PR aberto | #578 | local: `/gramatica/de` 0 → 247 `lang="de"` no HTML do servidor (ru 238, fr 326, it 430, es 339, en 359); exemplos e erros dos tópicos grátis entram no HTML |
 | 29 | Garantir toque de 44 px, campo de 16 px, texto de 14 px e linha de 75 | A | a fazer | — | — |
 | 30 | Unificar a escala de títulos e pôr o H1 acima do H2 no celular | A | a fazer | — | — |
 | 31 | Corrigir textos vencidos e páginas mistas (D5, D7, D9, D10) | A | a fazer | — | — |
@@ -60,7 +60,7 @@ Uma linha por lote. O agente altera **só** a linha do lote em que trabalhou, no
 | 54 | Publicar 30 dúvidas de russo em inglês no .com | A | a fazer | — | — |
 | 55 | Ligar aula, dúvida e livro com próximo passo e trilha | A | a fazer | — | — |
 | 56 | Criar o teste de nível por idioma | A | a fazer | — | — |
-| 57 | Mostrar o objetivo real de cada aula no hub e na sessão | A | a fazer | — | — |
+| 57 | Mostrar o objetivo real de cada aula no hub e na sessão | A | mergeado | #573 | local: `/curso/de` com 72 objetivos em pt-BR, 0 em `/en/curso/ru`; produção 11/11 11:30Z ainda sem `fase-objetivo` no JS (deploy pendente) |
 | 58 | Agendar a revisão espaçada com data de retorno | A | a fazer | — | — |
 | 59 | Reorganizar a página da aula | A | a fazer | — | — |
 | 60 | Eliminar o flash de "Carregando…" em curso e aula | A | a fazer | — | — |
@@ -96,13 +96,13 @@ Uma linha por lote. O agente altera **só** a linha do lote em que trabalhou, no
 | 90 | Conquistar 30 links reais para os dois domínios | A+F | a fazer | — | — |
 | 91 | Validar os dados estruturados nas 10 páginas principais | A | a fazer | — | — |
 | 92 | Encurtar o salto duplo de /es/* | A | a fazer | — | — |
-| 93 | Remover o código morto do metaRota | A | mergeado | #570 | mergeado 11/11 (37c78ccd); `src/lib/metaRota.ts` 675 → 602 linhas; `testar-inventario-seo.ts` conforme |
+| 93 | Remover o código morto do metaRota | A | em produção | #570 · 37c78ccd9 | deploy `dep-dbq3n0u7bikc738hntk0` live 09:57:07Z; `src/lib/metaRota.ts` 675 → 602 linhas (−73); lint exit 0 e inventário `{"sessoes":3680,"sitemap":60,"resultado":"conforme"}`; em produção `/curso/ru` 200 com `<main data-prerender>` e `/curso/ru/dia/1` 200 sem pré-render e com `noindex` (era o esperado) |
 | 94 | Restaurar o backup do Firestore num emulador | A | a fazer | — | — |
 | 95 | Cercar cada rota com tratamento de erro e contar falhas | A | a fazer | — | — |
 | 96 | Tornar a acessibilidade bloqueante no CI | A | a fazer | — | — |
 | 97 | Assistir 5 gravações por semana no Clarity | F | a fazer | — | — |
 | 98 | Publicar o painel semanal dos 6 números | A | a fazer | — | — |
-| 99 | Arquivar planos substituídos e deixar um só caminho de leitura | A | PR aberto | #571 | 5 planos antigos movidos para docs/historico; AGENTS.md, CLAUDE.md e docs/README.md apontam só para docs/plano; links .md conferidos por script |
+| 99 | Arquivar planos substituídos e deixar um só caminho de leitura | A | mergeado | #571 | `docs/plano/ESTADO.md` na main (raw 200); planos antigos em `docs/historico/`; AGENTS.md e CLAUDE.md apontam para docs/plano/ |
 | 100 | Reescrever o plano com números reais nos dois portões | A+F | a fazer | — | — |
 
 ## Portões
