@@ -30,6 +30,7 @@
 .site-camadas .site-curso .fase-bloco[open] summary{background:var(--site-idioma-verde)}
 .site-camadas .site-curso .fase-num{padding:6px 10px;border-radius:6px;background:var(--site-seletor);font-size:12px;font-weight:600;color:var(--verde-floresta)}
 .site-camadas .site-curso .fase-bloco summary strong{font-size:17px;font-weight:600;line-height:1.5;min-width:0}
+.site-camadas .site-curso .fase-objetivo{flex-basis:100%;order:3;font-size:14px;font-weight:400;line-height:1.5;color:var(--grafite-65)}
 .site-camadas .site-curso .fase-dias{font-size:12px;font-weight:400;color:var(--site-texto-nota);white-space:normal}
 .site-camadas .site-curso .dias{border-color:var(--site-divisor)}
 .site-camadas .site-curso .dias li+li{border-color:var(--site-divisor)}
