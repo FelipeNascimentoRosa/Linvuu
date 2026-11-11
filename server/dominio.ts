@@ -27,11 +27,11 @@ export function redirecionamentoDeDominio(host: string, caminho: string, consult
   const prefixo = caminho.match(/^\/(en|es)(?=\/|$)/)?.[1];
   // .com.br: inglês e o antigo espanhol do site vivem (ou viveram) no .com. 301 permanente: o Google transfere a relevância.
   // O site em espanhol foi retirado (2026-11-06); /es/... leva ao mesmo caminho em inglês. O curso de espanhol (/curso/es) não tem prefixo e segue igual.
-  if (h === HOST_BR && prefixo) return `${SITE_GLOBAL_URL}${caminho.slice(3) || '/'}${q}`;
+  // Sem o prefixo, o resto do caminho decide o domínio num salto só (ex.: /es/livros vai direto ao .com.br/livros).
+  if (prefixo) { const resto = caminho.slice(3) || '/'; return redirecionamentoDeDominio(HOST_GLOBAL, resto, consulta) ?? `${SITE_GLOBAL_URL}${resto}${q}`; }
   // .com.br: o curso de português para estrangeiros é explicado em inglês, então a página e a gramática dele moram no .com.
   if (h === HOST_BR && /^\/(portugues|gramatica\/br)(\/|$)/.test(caminho)) return `${SITE_GLOBAL_URL}${caminho}${q}`;
   // .com: o inglês é a raiz; /en/... era o endereço antigo (e o de quem digita por hábito); /es/... também.
-  if (h === HOST_GLOBAL && prefixo) return `${SITE_GLOBAL_URL}${caminho.slice(3) || '/'}${q}`;
   // .com: a coleção de livros de gramática só existe em português, e o .com é o site em inglês. O endereço define o
   // idioma da interface (docs/DECISAO-SITE-INTERNACIONAL.md), então /livros vai para o domínio onde o conteúdo mora em
   // vez de devolver uma página em português com <html lang="en"> dentro do .com. É 301 porque o endereço não volta.
