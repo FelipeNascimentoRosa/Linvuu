@@ -117,9 +117,11 @@ const SEO_EN = {
   termosD: 'Rules for using the Linvuu site and courses: payment, cancellation, the 7-day refund and what we expect from each other. Brazilian law applies.',
   /**
    * Hub `/gramatica`. Até 11/11/2026 o título era só «Grammar · Linvuu» (16 caracteres, nenhum termo de busca)
-   * e a página ficava fora dos dois sitemaps — era o maior buraco de busca do site (AUDITORIA-SITE-2026-11-11 §4).
-   * A descrição nomeia as gramáticas que existem de fato em inglês: hoje espanhol, russo, francês e português
-   * do Brasil (content/gramatica/<id>.en.json). Ao traduzir outra, atualize a frase aqui.
+   * (AUDITORIA-SITE-2026-11-11 §4). O hub continua **fora do sitemap**: no React `/gramatica` é um alias que
+   * redireciona para `/gramatica/<primeiro idioma>` (`src/pages/Gramatica.tsx`), e o check `paridade-head` do CI
+   * reprova a divergência entre este `<head>` e o DOM. O texto abaixo fica pronto para quando houver página de hub
+   * (ver PENDENCIAS.md). A descrição nomeia as gramáticas que existem de fato em inglês: hoje espanhol, russo,
+   * francês e português do Brasil (content/gramatica/<id>.en.json). Ao traduzir outra, atualize a frase aqui.
    */
   gramaticaT: 'Grammar guides explained in English',
   gramaticaD: 'Grammar topics for Spanish, Russian, French and Brazilian Portuguese, explained in English with tables, examples and the mistakes each language hides from you.',
@@ -152,9 +154,11 @@ const SEO_BR = {
   termosD: 'Regras de uso do site e dos cursos da Linvuu: planos e pagamento, cancelamento, reembolso em até 7 dias, conteúdo de terceiros e a lei brasileira aplicada.',
   /**
    * Hub `/gramatica`, a página de entrada da busca por gramática. Até 11/11/2026 servia «Gramática · Linvuu»
-   * (18 caracteres, sem termo de busca) e não estava em nenhum dos dois sitemaps, apesar de indexada
-   * (AUDITORIA-SITE-2026-11-11 §4). A descrição nomeia as seis gramáticas que existem em português
-   * (content/gramatica/<id>.json); ao publicar outra, atualize a frase aqui.
+   * (18 caracteres, sem termo de busca) (AUDITORIA-SITE-2026-11-11 §4). O hub continua **fora do sitemap**:
+   * no React `/gramatica` é um alias que redireciona para `/gramatica/<primeiro idioma>` (`src/pages/Gramatica.tsx`)
+   * e o check `paridade-head` do CI reprova a divergência entre este `<head>` e o DOM — o texto abaixo fica pronto
+   * para quando houver página de hub (ver PENDENCIAS.md). A descrição nomeia as seis gramáticas que existem em
+   * português (content/gramatica/<id>.json); ao publicar outra, atualize a frase aqui.
    */
   gramaticaT: 'Gramática de idiomas explicada em português',
   gramaticaD: 'Tópicos de gramática de inglês, espanhol, alemão, francês, italiano e russo explicados em português, com tabelas, exemplos e os erros comuns de cada idioma.',
