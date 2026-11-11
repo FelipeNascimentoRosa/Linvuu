@@ -95,7 +95,7 @@ Uma linha por lote. O agente altera **só** a linha do lote em que trabalhou, no
 | 89 | Criar perfis dos professores em Preply e Superprof | A+F | a fazer | — | — |
 | 90 | Conquistar 30 links reais para os dois domínios | A+F | a fazer | — | — |
 | 91 | Validar os dados estruturados nas 10 páginas principais | A | a fazer | — | — |
-| 92 | Encurtar o salto duplo de /es/* | A | a fazer | — | — |
+| 92 | Encurtar o salto duplo de /es/* | A | PR aberto | #575 | `testar:dominio` 23 casos; `/es/livros` no .com.br chega ao `.com.br/livros` em 1 salto (era 2); regra só nos dois domínios reais |
 | 93 | Remover o código morto do metaRota | A | em produção | #570 · 37c78ccd9 | deploy `dep-dbq3n0u7bikc738hntk0` live 09:57:07Z; `src/lib/metaRota.ts` 675 → 602 linhas (−73); lint exit 0 e inventário `{"sessoes":3680,"sitemap":60,"resultado":"conforme"}`; em produção `/curso/ru` 200 com `<main data-prerender>` e `/curso/ru/dia/1` 200 sem pré-render e com `noindex` (era o esperado) |
 | 94 | Restaurar o backup do Firestore num emulador | A | a fazer | — | — |
 | 95 | Cercar cada rota com tratamento de erro e contar falhas | A | a fazer | — | — |
