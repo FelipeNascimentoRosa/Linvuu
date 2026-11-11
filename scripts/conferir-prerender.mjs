@@ -17,7 +17,9 @@ const pegar = (host, caminho) => new Promise((ok, erro) => {
 
 let real = 0, total = 0;
 const resumo = [];
+const porDominio = [];
 for (const host of ['linvuu.com.br', 'linvuu.com']) {
+  const antes = { real, total };
   const { html: sitemap } = await pegar(host, '/sitemap.xml');
   const caminhos = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(([, l]) => new URL(l)).filter((u) => u.hostname === host).map((u) => u.pathname);
   for (const c of caminhos) {
@@ -26,6 +28,7 @@ for (const host of ['linvuu.com.br', 'linvuu.com']) {
     const root = html.match(/<div id="root">([\s\S]*)<\/div>\s*(?:<script|<\/body>)/)?.[1] ?? '';
     if (status === 200 && root && !root.includes('data-prerender')) real++; else resumo.push(`${host}${c} (${status})`);
   }
+  porDominio.push(`${host} ${real - antes.real}/${total - antes.total}`);
 }
-console.log(`${real} de ${total} páginas com o HTML real${resumo.length ? `; com resumo: ${resumo.join(', ')}` : ''}`);
+console.log(`${porDominio.join(' · ')} — ${real} de ${total} páginas com o HTML real${resumo.length ? `; com resumo: ${resumo.join(', ')}` : ''}`);
 process.exit(resumo.length ? 1 : 0);

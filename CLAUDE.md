@@ -2,6 +2,8 @@
 
 <!-- Atualizado em 2026-11-11 a partir de auditoria completa (repo + sites ao vivo). Substitui a versão de 06/11/2026. -->
 
+> **LEIA-ME PRIMEIRO: [`docs/DOMINIOS.md`](docs/DOMINIOS.md)** — o site nacional (**linvuu.com.br**, português, reais) e o internacional (**linvuu.com**, inglês, dólares) lado a lado: catálogo completo, sitemap, moeda e plano de cada um. Todo número sobre o site é dito **por domínio**, nunca somado.
+>
 > Instruções de trabalho para o Claude Code neste repositório. **Plano em vigor: `docs/plano/EXECUTAR.md` + `docs/plano/ESTADO.md` (comando `/lote`).** Curto de propósito: o detalhe operacional vive em `docs/ESTADO-ATUAL.md` e `PENDENCIAS.md` — leia os dois no início de qualquer tarefa maior. Em conflito entre este arquivo e eles, **este arquivo manda nas regras** e **eles mandam nos fatos**.
 
 ## O produto em 5 linhas
