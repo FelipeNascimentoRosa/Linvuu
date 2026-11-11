@@ -11,7 +11,7 @@ Uma linha por lote. O agente altera **só** a linha do lote em que trabalhou, no
 | 5 | Contar visitas por rota sem cookie e sem consentimento | A | mergeado | #567 | mergeado 11/11 (04efdf96); `testar:medicao` verde |
 | 6 | Registrar clique de botão com identificador | A | mergeado | #568 | mergeado 11/11 (5cb70f90); `POST /api/cta` inválido → 400 |
 | 7 | Trocar "chegam em breve" por avaliações reais | A | PR aberto | #572 | `grep "chegam em breve" dist/assets/*.js` = 0; 7 avaliações da Udemy com fonte no .com.br; .com sem lista vazia; lint e build verdes |
-| 8 | Exibir FUNDADORES, o trimestral e uma grade de planos alinhada | A | a fazer | — | — |
+| 8 | Exibir FUNDADORES, o trimestral e uma grade de planos alinhada | A | PR aberto | #579 | local: `/assinatura` .br com FUNDADORES (1×), .com sem; home com o trimestral (R$ 291,90 Pix ou R$ 417) e FUNDADORES; botões dos 3 cartões da home na mesma altura (y=4417 nos 3); `testar-contrato-billing` e `validar:design` ok |
 | 9 | Pôr preço, botão e regra dos 7 dias na primeira tela de /assinatura | A+F | a fazer | — | — |
 | 10 | Mostrar prova e botão na primeira dobra do celular | A | a fazer | — | — |
 | 11 | Corrigir as promessas que o .com não cumpre (D1, D8, D11, D12) | A | a fazer | — | — |

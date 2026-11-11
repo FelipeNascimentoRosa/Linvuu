@@ -4,7 +4,7 @@ import type { Plano } from '../lib/assinatura';
 import { Navegacao } from '../components/Navegacao';
 import { useAuth } from '../lib/AuthContext';
 import { abrir, useAssinatura } from '../lib/assinatura';
-import { AULAS_GRATIS, precosDo } from '../config/planos';
+import { AULAS_GRATIS, precosDo, FUNDADORES } from '../config/planos';
 import { EMAIL_OFICIAL } from '../config/site';
 import { usePageTitle } from '../lib/usePageTitle';
 import { data, LOCALE, useT } from '../i18n';
@@ -75,6 +75,7 @@ export default function Assinatura() {
                   <h3>{s.mensal}</h3>
                   <p className="lv-plano-preco">{P.mensal}<span>{s.porMes}</span></p>
                   <p>{s.mensalTxt}</p>
+                  {P.moeda === 'BRL' && FUNDADORES && <p className="lv-fundadores">Ex-aluno da Udemy? Use o código <strong>{FUNDADORES.codigo}</strong> no pagamento: {FUNDADORES.precoMes} por mês, para sempre. Válido até {FUNDADORES.validade}.</p>}
                   <button type="button" className="btn btn-primary" onClick={() => ir('checkout', 'mensal')} disabled={ocupado} data-cta="assinatura_mensal">{ocupado ? t.geral.abrindo : s.assinarBtn}</button>
                   <p className="lv-garantia"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 11V8a5 5 0 0 1 10 0v3M6 11h12v9H6z" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg><span>{s.garantiaMensal}</span></p>
                 </div>
