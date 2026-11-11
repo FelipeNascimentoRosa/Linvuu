@@ -50,7 +50,7 @@ export default function Assinatura() {
           {usuario && escolhido && !a.ativa && (
             <div className="nota lv-assinatura-escolhido" role="status">
               <span>{s.escolhido(nomePlano[escolhido])}</span>
-              <button type="button" className="btn btn-primary" onClick={() => ir('checkout', escolhido)} disabled={ocupado}>{ocupado ? t.geral.abrindo : s.continuarPagamento}</button>
+              <button type="button" className="btn btn-primary" onClick={() => ir('checkout', escolhido)} disabled={ocupado} data-cta="assinatura_continuar">{ocupado ? t.geral.abrindo : s.continuarPagamento}</button>
             </div>
           )}
           {usuario && a.ativa ? (
@@ -60,7 +60,7 @@ export default function Assinatura() {
               ) : (
                 <>
                   <p><strong>{s.ativa}</strong>{a.cancelaEm ? s.termina(data(a.cancelaEm)) : ''} {s.liberados}</p>
-                  <button type="button" className="btn btn-primary" onClick={() => ir('portal')} disabled={ocupado}>{s.gerenciar}</button>
+                  <button type="button" className="btn btn-primary" onClick={() => ir('portal')} disabled={ocupado} data-cta="assinatura_gerenciar">{s.gerenciar}</button>
                 </>
               )}
               <p>{s.reembolso} <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>.</p>
@@ -75,7 +75,7 @@ export default function Assinatura() {
                   <h3>{s.mensal}</h3>
                   <p className="lv-plano-preco">{P.mensal}<span>{s.porMes}</span></p>
                   <p>{s.mensalTxt}</p>
-                  <button type="button" className="btn btn-primary" onClick={() => ir('checkout', 'mensal')} disabled={ocupado}>{ocupado ? t.geral.abrindo : s.assinarBtn}</button>
+                  <button type="button" className="btn btn-primary" onClick={() => ir('checkout', 'mensal')} disabled={ocupado} data-cta="assinatura_mensal">{ocupado ? t.geral.abrindo : s.assinarBtn}</button>
                   <p className="lv-garantia"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 11V8a5 5 0 0 1 10 0v3M6 11h12v9H6z" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg><span>{s.garantiaMensal}</span></p>
                 </div>
                 {P.moeda === 'BRL' && (
@@ -84,9 +84,9 @@ export default function Assinatura() {
                   <p className="lv-plano-preco">{P.trimestralPix}<span>{s.noPix}</span></p>
                   <p className="lv-plano-equiv">{s.equivMes(P.trimestralPixMes)}</p>
                   <p>{s.pixTxt}</p>
-                  <button type="button" className="btn btn-primary" onClick={() => ir('checkout', 'trimestral-pix')} disabled={ocupado}>{ocupado ? t.geral.abrindo : s.pixBtn}</button>
+                  <button type="button" className="btn btn-primary" onClick={() => ir('checkout', 'trimestral-pix')} disabled={ocupado} data-cta="assinatura_trimestral_pix">{ocupado ? t.geral.abrindo : s.pixBtn}</button>
                   <p className="lv-plano-preco">{P.trimestral}<span>{s.cartaoBoleto}</span></p>
-                  <button type="button" className="btn btn-ghost" onClick={() => ir('checkout', 'trimestral')} disabled={ocupado}>{ocupado ? t.geral.abrindo : s.tresBtn}</button>
+                  <button type="button" className="btn btn-ghost" onClick={() => ir('checkout', 'trimestral')} disabled={ocupado} data-cta="assinatura_trimestral">{ocupado ? t.geral.abrindo : s.tresBtn}</button>
                   <p className="lv-garantia"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 11V8a5 5 0 0 1 10 0v3M6 11h12v9H6z" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg><span>{s.garantiaUnico}</span></p>
                 </div>
                 )}
@@ -96,7 +96,7 @@ export default function Assinatura() {
                   <p className="lv-plano-preco">{P.anual}<span>{s.cartaoBoleto}</span></p>
                   <p className="lv-plano-equiv">{s.equivMes(P.anualMes)}</p>
                   <p>{s.anoTxt}</p>
-                  <button type="button" className="btn btn-primary" onClick={() => ir('checkout', 'anual')} disabled={ocupado}>{ocupado ? t.geral.abrindo : s.anoBtn}</button>
+                  <button type="button" className="btn btn-primary" onClick={() => ir('checkout', 'anual')} disabled={ocupado} data-cta="assinatura_anual">{ocupado ? t.geral.abrindo : s.anoBtn}</button>
                   <p className="lv-garantia"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 11V8a5 5 0 0 1 10 0v3M6 11h12v9H6z" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg><span>{s.garantiaUnico}</span></p>
                 </div>
               </div>

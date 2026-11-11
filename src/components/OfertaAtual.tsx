@@ -34,7 +34,7 @@ export function OfertaAtual() {
         {p.destaque && <span className="br-plan-selo">{h('Menor preço por mês')}</span>}
         <span className="br-plan-name">{h(p.nome)}</span><h3>{p.preco}</h3><p>{h(p.detalhe)}</p>
         {p.equivMes && <p className="br-plan-equiv">≈ {p.equivMes} {h('por mês')}</p>}
-        <HomeCourseLink to={`/assinatura?plano=${p.id}#oferta-atual`} className="br-button" onClick={() => { void analytics.capture('select_plan', { page: 'home', billing_plan: p.id }); }}>{h('Ver condições do plano')} <span aria-hidden="true">↗</span></HomeCourseLink>
+        <HomeCourseLink cta="home_plano" to={`/assinatura?plano=${p.id}#oferta-atual`} className="br-button" onClick={() => { void analytics.capture('select_plan', { page: 'home', billing_plan: p.id }); }}>{h('Ver condições do plano')} <span aria-hidden="true">↗</span></HomeCourseLink>
       </article>)}</div>
       {emReais && <p className="br-plan-note">{h('O plano de três meses também está disponível no cartão ou boleto. Consulte os valores e condições antes de contratar.')}</p>}
       <div className="br-current"><HomeCourseLink to="/cursos">{h('Experimentar duas aulas grátis →')}</HomeCourseLink><HomeCourseLink to="/assinatura">{h('Ver todos os detalhes da assinatura →')}</HomeCourseLink></div>

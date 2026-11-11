@@ -28,18 +28,18 @@ export function Paywall({ curso, indisponivel, idioma }: { curso: string; indisp
       {usuario ? (
         <>
           <div className="lv-hero-botoes">
-            <Botao variante="primary" onClick={() => assinar('mensal')} disabled={ocupado}>{ocupado ? T.abrindo : T.assinar(P.mensal)}</Botao>
-            {brl && <Botao variante="primary" onClick={() => assinar('trimestral-pix')} disabled={ocupado}>{T.trimPix(P.trimestralPix)}</Botao>}
+            <Botao variante="primary" onClick={() => assinar('mensal')} disabled={ocupado} data-cta="paywall_mensal">{ocupado ? T.abrindo : T.assinar(P.mensal)}</Botao>
+            {brl && <Botao variante="primary" onClick={() => assinar('trimestral-pix')} disabled={ocupado} data-cta="paywall_trimestral_pix">{T.trimPix(P.trimestralPix)}</Botao>}
           </div>
           <div className="lv-hero-botoes">
-            {brl && <Botao variante="ghost" onClick={() => assinar('trimestral')} disabled={ocupado}>{T.tres(P.trimestral)}</Botao>}
-            <Botao variante="ghost" onClick={() => assinar('anual')} disabled={ocupado}>{T.anual(P.anual)}</Botao>
+            {brl && <Botao variante="ghost" onClick={() => assinar('trimestral')} disabled={ocupado} data-cta="paywall_trimestral">{T.tres(P.trimestral)}</Botao>}
+            <Botao variante="ghost" onClick={() => assinar('anual')} disabled={ocupado} data-cta="paywall_anual">{T.anual(P.anual)}</Botao>
           </div>
         </>
       ) : (
         <div className="lv-hero-botoes">
-          <BotaoLink to={`/cadastro?proximo=${encodeURIComponent(pathname)}`} variante="primary">{T.criar}</BotaoLink>
-          <BotaoLink to={`/entrar?proximo=${encodeURIComponent(pathname)}`} variante="ghost">{T.jaTenho}</BotaoLink>
+          <BotaoLink to={`/cadastro?proximo=${encodeURIComponent(pathname)}`} variante="primary" data-cta="paywall_criar">{T.criar}</BotaoLink>
+          <BotaoLink to={`/entrar?proximo=${encodeURIComponent(pathname)}`} variante="ghost" data-cta="paywall_entrar">{T.jaTenho}</BotaoLink>
         </div>
       )}
       {erro && <p className="erro" role="alert">{erro}</p>}

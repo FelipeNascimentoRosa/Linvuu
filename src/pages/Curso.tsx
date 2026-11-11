@@ -45,7 +45,7 @@ export default function Curso() {
   const website = import.meta.env.VITE_ALVO !== 'apk' && !Capacitor.isNativePlatform();
   const retomar = ret && !inicio && (
         <section className="curso-retomar" aria-label={t.cursoPagina.feitas(feitos.size, ret.total)}>
-          <Link to={destino(curso.id, feitos.size ? ret.dia : 1)} className="btn btn-primary">
+          <Link to={destino(curso.id, feitos.size ? ret.dia : 1)} className="btn btn-primary" data-cta={feitos.size ? 'curso_continuar' : 'curso_comecar'}>
             {feitos.size ? t.cursoPagina.continuar(ret.dia, ret.titulo) : t.cursoPagina.comecar}
           </Link>
           {feitos.size > 0 && (

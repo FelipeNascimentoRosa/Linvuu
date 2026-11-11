@@ -18,6 +18,7 @@ Métrica da semana (muda com o lote): ver § 3.
 |---|---|
 | Home do .com.br no índice do Google | **NÃO** — "Descoberto, não indexado" (apenas /en/, /es/portugues, /excluir-conta e páginas internas) |
 | Visitas/semana | sem dado até o deploy do lote 5: a partir dele, `GET /api/metricas` → `visitas` (por dia, host e rota; HTML 200, sem robô, sem cookie e sem IP) |
+| Cliques por botão | sem dado até o deploy do lote 6: a partir dele, `GET /api/metricas` → `ctas` (por dia, host e botão da lista fechada `src/config/ctas.ts`; sem cookie, sem IP e sem identificador) |
 | Cadastros | 0 (a partir do deploy do lote 4, o número vem de `GET /api/metricas` → `funil.porDia`, com token `METRICAS_TOKEN`) |
 | Assinaturas | 0 |
 | Eventos de analytics | 0 — instrumentação inexistente |
@@ -74,6 +75,7 @@ Cada pendência recebe: **sim**, **não** ou **"adiar até [data]"**. Pergunta c
 
 ## 8. Evidências recentes (append-only: data · fato · prova)
 
+- 2026-11-11 · lote 6 · clique de botão medido: `data-cta` (lista fechada em `src/config/ctas.ts`, 19 identificadores) na home, hub de curso, paywall e /assinatura; evento `cta_clicked` no PostHog só com consentimento e contador `POST /api/cta` → coleção `ctas` (dia × host × botão, `FieldValue.increment`, 204 antes de gravar), sem cookie, sem IP e sem identificador; `GET /api/metricas` devolve `ctas` (`total`, `porDia`, `porHost`, `porCta`) · `node scripts/testar-analytics-browser.mjs` verde nos 4 casos (site/APK × pt//en) e `npm run testar:medicao` verde (rota real: aceita só id da lista, 400 no resto)
 - 2026-11-11 · lote 5 · visitas contadas no servidor: coleção `visitas` (dia × host × rota-modelo, `FieldValue.increment`), sem cookie, sem IP e sem robô declarado; `GET /api/metricas` devolve `visitas` (`total`, `porDia`, `porHost`, `porRota`) · `npm run testar:medicao` verde (inclui servidor Express local: conta HTML 200 de gente, não conta 404, JSON nem Googlebot); 4 rotas de produção respondem 200 e a desconhecida 404
 - 2026-11-11 · lote 4 · `GET /api/metricas` ganhou `funil` (28 dias × contas, sessão 1, sessão 8, checkouts abertos, checkouts pagos; sessão e checkout contam só depois do deploy) · `npm run testar:medicao` e `testar-cobranca-eventos.ts` verdes
 - 2026-11-11 · baseline deste painel · auditoria do dossiê 09–11/11 (36 PRs, 7 categorias)
