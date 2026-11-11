@@ -72,7 +72,7 @@ Regra `explicacaoCompleta` (`metaRota.ts`): curso só ganha página indexável/h
 Formato: **onde → problema → correção → verificação**. Ao concluir um item, risque-o daqui no mesmo PR.
 
 - **[corrigido no #576]** **D1 [ALTA] `linvuu.com/curso/it`** → subtítulo "Every lesson of this course is explained in English." sobre 62 aulas com títulos em português, sem nota de cobertura (italiano EN = 0/248) → aplicar a nota honesta de cobertura (modelo D-regra acima) ou retirar a frase → verificar: o texto da página é compatível com `indice.en.json` (`it.aulas=[]`).
-- **D2 `linvuu.com.br/contato` e `/sobre`** → exibem `contato@linvuu.com` → trocar para **contato@linvuu.com.br** no perfil `br` (fonte: `config/site.ts` por perfil). E **`linvuu.com/contato`** → o item "Website" aponta para `linvuu.com.br` → apontar para `linvuu.com`.
+- **[parte .com corrigida no #585: «Website» → linvuu.com; falta o e-mail do .com.br]** **D2 `linvuu.com.br/contato` e `/sobre`** → exibem `contato@linvuu.com` → trocar para **contato@linvuu.com.br** no perfil `br` (fonte: `config/site.ts` por perfil). E **`linvuu.com/contato`** → o item "Website" aponta para `linvuu.com.br` → apontar para `linvuu.com`.
 - **[corrigido no #579]** **D3 Home e `/assinatura` do .com.br** → o cupom **FUNDADORES não aparece em nenhum lugar** → exibir na seção de planos e em `/assinatura` (50% no mensal BRL, conforme `planos.ts`) → verificar ao vivo nos dois lugares.
 - **[corrigido no #579]** **D4 Home .com.br, seção "A oferta de hoje"** → omite o trimestral no cartão (R$ 417); só mostra mensal, Pix e anual → incluir o trimestral no cartão com hierarquia clara entre as 4 opções.
 - **[corrigido no #582]** **D5 `/russo-online` (dois domínios)** → texto do Spotify diz que só há "a seleção avançada" e que níveis "entram aos poucos" → atualizar: **21 playlists públicas, 7 idiomas × 3 níveis** (desde 06/11/2026), com os links. E a versão .com **não tem** a seção de depoimentos que a .br tem (7 avaliações reais da Udemy) → espelhar a seção em inglês.
@@ -88,9 +88,9 @@ Formato: **onde → problema → correção → verificação**. Ao concluir um 
   - `/assinatura` .br: grade desalinhada, anual sozinho com vazio à direita → grade de 3 cartões equilibrada (ver D3/D4 e regra dos cartões).
   - Home .br `#planos` e `/cursos`: botões sem alinhamento na base; leque de livros **corta o livro de russo** e esconde o título; busca de `/cursos` é um contêiner gigante com o campo em ~1/3 da largura → corrigir os três.
   - `/curso/ru/dia/1` (página da aula): coluna estreita com ~1/3 da tela vazia à direita; título "Introdução" numa serifada pesada estranha ao site; pílula "Revisão" órfã; barra de progresso invisível → alargar a coluna ou usar a direita (progresso/áudio), título na fonte padrão dos demais, progresso visível.
-  - `.com/curso/ru`: hero **sem a capa do livro** que existe no .br (metade direita vazia) → mesmo hero dos dois perfis.
-  - `.com` home: grade de cursos 3+2 com célula vazia → layout pensado para 5 cartões.
-  - Rodapé (todos): ícones finos/de baixo contraste e terço direito vazio; no .com, rótulos de acessibilidade das redes estão em português → contraste/uso do espaço e rótulos no idioma do perfil.
+  - **[corrigido no #585]** `.com/curso/ru`: hero **sem a capa do livro** que existe no .br (metade direita vazia) → mesmo hero dos dois perfis.
+  - **[corrigido no #584]** `.com` home: grade de cursos 3+2 com célula vazia → layout pensado para 5 cartões.
+  - **[rótulos do .com corrigidos no #585]** Rodapé (todos): ícones finos/de baixo contraste e terço direito vazio; no .com, rótulos de acessibilidade das redes estão em português → contraste/uso do espaço e rótulos no idioma do perfil.
 - **D15 Observação** → `/privacidade` e `/termos` (dois domínios): a leitura de texto só extraiu título+descrição → conferir a renderização do corpo no navegador antes de concluir qualquer defeito.
 
 ## NÃO MEXER (verificado bom em 11/11/2026)
