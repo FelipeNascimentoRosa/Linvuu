@@ -36,6 +36,8 @@ export function redirecionamentoDeDominio(host: string, caminho: string, consult
   // idioma da interface (docs/DECISAO-SITE-INTERNACIONAL.md), então /livros vai para o domínio onde o conteúdo mora em
   // vez de devolver uma página em português com <html lang="en"> dentro do .com. É 301 porque o endereço não volta.
   if (h === HOST_GLOBAL && /^\/livros(\/|$)/.test(caminho)) return `${SITE_URL}${caminho}${q}`;
+  // .com: a página para ex-alunos da Udemy existe só em português (o curso da Udemy é para brasileiros): mora no .com.br.
+  if (h === HOST_GLOBAL && /^\/ex-alunos-udemy(\/|$)/.test(caminho)) return `${SITE_URL}${caminho}${q}`;
   // .com: o curso de português só existe com explicação em inglês (/curso/br); o resto em português mora no .com.br
   return null;
 }

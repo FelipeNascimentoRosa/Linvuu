@@ -13,4 +13,6 @@ export const REDES: Rede[] = [
 ];
 
 /** Playlist de russo por nível, no Spotify. */
+/** Perfil da Linvuu no Spotify: as 21 playlists públicas (7 idiomas × 3 níveis, desde 06/11/2026). */
+export const SPOTIFY_PERFIL = 'https://open.spotify.com/user/31uzlbyxe2frjmbydaos24jekrvq';
 export const SPOTIFY_PLAYLIST_RU = 'https://open.spotify.com/playlist/0DbI3tfcBFSw5aeSun89b0';

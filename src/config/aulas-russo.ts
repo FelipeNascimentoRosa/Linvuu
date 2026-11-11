@@ -2,7 +2,7 @@
 // Só entra aqui o que tem documento: diploma e certificados de russo da Universidade Estatal de São Petersburgo e o perfil
 // público do LinkedIn (só o que diz respeito ao russo; nunca citar outra escola ou instituto). Valores e horários não são anunciados: são combinados no contato.
 import { whatsappUrl } from './contato.ts';
-import { SPOTIFY_PLAYLIST_RU } from './social.ts';
+import { SPOTIFY_PERFIL } from './social.ts';
 
 export type TextoAulasRusso = {
   titulo: string;
@@ -75,9 +75,9 @@ export const AULAS_RUSSO: Record<'pt-BR' | 'en', TextoAulasRusso> = {
       { nome: 'Paola Renata O.', texto: 'excelente material, com professores capacitados que realmente te ensinam russo. muito obrigada!' },
     ],
     playlistTitulo: 'Ouça russo enquanto estuda',
-    playlist: 'A Linvuu montou uma playlist no Spotify com músicas em russo separadas por nível. Hoje há a seleção avançada, e novas faixas e níveis entram aos poucos.',
-    playlistBotao: 'Abrir a playlist no Spotify',
-    playlistUrl: SPOTIFY_PLAYLIST_RU,
+    playlist: 'A Linvuu tem 21 playlists públicas no Spotify: 7 idiomas, cada um em 3 níveis. As de russo vão do iniciante ao avançado, para você ouvir no ritmo em que está.',
+    playlistBotao: 'Ver as playlists no Spotify',
+    playlistUrl: SPOTIFY_PERFIL,
     comoTitulo: 'Como funcionam as aulas',
     como: [
       'Você conta o seu nível e o seu objetivo: uma viagem, o trabalho, uma prova, a família.',
@@ -118,10 +118,21 @@ export const AULAS_RUSSO: Record<'pt-BR' | 'en', TextoAulasRusso> = {
       'Felipe Rosa: took part in the SPbU workshop series «Preparing for TORFL, B2 to C2» (24 hours), St Petersburg University Language Testing Centre, June 2021.',
       'Felipe Rosa: gave the talk «Preparing for TORFL using a distance-learning platform» at the SPbU online seminar, 26 June 2021.',
     ],
+    relatosTitulo: 'What students say',
+    relatosFonte: 'Five-star reviews of the Udemy course «Russo para Brasileiros: do Zero ao A2» (average 4.74 from 72 reviews, as of 07/11/2026), written in Portuguese and translated here; names shortened.',
+    relatos: [
+      { nome: 'Lucas L.', texto: 'The teachers explain things extremely clearly, and the videos have great image and sound quality.' },
+      { nome: 'Paulo Henrique S.', texto: 'The course has been amazing, I am really enjoying the explanations. Well done!' },
+      { nome: 'Ana Maria L.', texto: 'The course is very complete, the teachers are very attentive and sent me the class materials on WhatsApp.' },
+      { nome: 'Naelson P.', texto: 'Very complete, and friendly teachers!' },
+      { nome: 'Herica M.', texto: 'Excellent course at an affordable price. I recommend it!' },
+      { nome: 'Priscila Z.', texto: 'The best teachers, teaching and a method that really work! I highly recommend it.' },
+      { nome: 'Paola Renata O.', texto: 'Excellent material, with qualified teachers who really teach you Russian. Thank you so much!' },
+    ],
     playlistTitulo: 'Listen to Russian while you study',
-    playlist: 'Linvuu has a Spotify playlist of Russian songs sorted by level. The advanced selection is up now, and more tracks and levels are added over time.',
-    playlistBotao: 'Open the playlist on Spotify',
-    playlistUrl: SPOTIFY_PLAYLIST_RU,
+    playlist: 'Linvuu has 21 public playlists on Spotify: 7 languages, each in 3 levels. The Russian ones run from beginner to advanced, so you can listen at the level you are at.',
+    playlistBotao: 'See the playlists on Spotify',
+    playlistUrl: SPOTIFY_PERFIL,
     comoTitulo: 'How the classes work',
     como: [
       'You tell us your level and what you need Russian for: a trip, work, an exam, family.',

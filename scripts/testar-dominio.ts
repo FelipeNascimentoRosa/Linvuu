@@ -19,6 +19,7 @@ const casos: [string, string, string, string, string | null][] = [
   ['/portugues no .com.br é explicado em inglês no .com', BR, '/portugues', '', url(SITE_GLOBAL_URL, '/portugues')],
   ['/gramatica/br no .com.br mora no .com', BR, '/gramatica/br', '', url(SITE_GLOBAL_URL, '/gramatica/br')],
   ['/en/ antigo no .com perde o prefixo', GLOBAL, '/en/cursos', '', url(SITE_GLOBAL_URL, '/cursos')],
+  ['/ex-alunos-udemy no .com vai para o .com.br (página só em português)', GLOBAL, '/ex-alunos-udemy', '', url(SITE_URL, '/ex-alunos-udemy')],
   ['/es/ no .com perde o prefixo', GLOBAL, '/es/cursos', '', url(SITE_GLOBAL_URL, '/cursos')],
   ['/es/livros no .com.br vai direto ao .com.br, num salto só', BR, '/es/livros', '', url(SITE_URL, '/livros')],
   ['/en/livros no .com vai direto ao .com.br', GLOBAL, '/en/livros/ru', '', url(SITE_URL, '/livros/ru')],
