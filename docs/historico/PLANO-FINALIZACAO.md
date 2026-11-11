@@ -1,5 +1,7 @@
 # Plano de finalização (18/10/2026) e lista do que falta
 
+> **Arquivado em 11/11/2026 (lote 99).** Substituído por [`docs/plano/`](../plano/EXECUTAR.md) — o único plano em vigor. Mantido só como registro histórico; não execute a partir daqui.
+
 Lançamento: **5/11/2026**. Foco Brasil. Sem geração de áudio nem mudança de pagamento até a decisão do Felipe.
 
 ## Estado em 18/10

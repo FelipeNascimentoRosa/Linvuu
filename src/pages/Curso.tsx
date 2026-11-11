@@ -1,6 +1,6 @@
 import { useDestinoSessao } from '../lib/useDestinoSessao';
 import { Link, useParams, useSearchParams } from 'react-router-dom';
-import { DIAS, FASES, IDIOMAS_GRAMATICA, coberturaDoCurso, diaDoCurso, gruposDoCurso, inicioDoNivel, NIVEL_CURTO, NIVEL_LABEL, STATUS_AULA, getCurso, statusDoCurso } from '../lib/content';
+import { DIAS, FASES, IDIOMAS_GRAMATICA, coberturaNoSite, fonteDoCurso, diaDoCurso, gruposDoCurso, inicioDoNivel, NIVEL_CURTO, NIVEL_LABEL, STATUS_AULA, getCurso, statusDoCurso } from '../lib/content';
 import { Navegacao } from '../components/Navegacao';
 import { usePageTitle } from '../lib/usePageTitle';
 import { SITE_URL } from '../config/site';
@@ -35,7 +35,8 @@ export default function Curso() {
   const tituloInicio = grupoInicio ? t.cursoPagina.aulaTitulo(grupoInicio.aula, grupoInicio.titulo) : (inicio && DIAS[inicio.dia - 1] ? diaDoCurso(curso.id, DIAS[inicio.dia - 1]).titulo : '');
   const ultimo = grupos.length ? grupos[grupos.length - 1].dias[1] : 0;
   const fasesRestantes = FASES.filter((f) => f.dias[1] > ultimo);
-  const cob = coberturaDoCurso(curso.id);
+  // Site: a nota mede a cobertura na língua da interface (sem tradução, o .com dizia "every lesson explained in English" sobre aulas em português — D1). O APK mede pela escolha do aluno (coberturaDoCurso).
+  const cob = { ...coberturaNoSite(curso.id), reserva: fonteDoCurso(curso.id) };
   const cobertura = t.cursoPagina.cobertura(cob.traduzidas, cob.total, t.linguas[cob.reserva]);
   const ret = grupos.length ? pontoDeRetomada(curso.id) : undefined;
   const grupoRet = ret && feitos.size ? grupos.find((x) => ret.dia >= x.dias[0] && ret.dia <= x.dias[1]) : undefined;
@@ -113,6 +114,7 @@ export default function Curso() {
           <summary>
             <span className="fase-num">{t.cursoPagina.aula(g.aula)}</span>
             <strong>{g.titulo}</strong>
+            {g.objetivo && <span className="fase-objetivo">{g.objetivo}</span>}
             <span className={`fase-dias ${feitasAula === nDias ? 'fase-feita' : ''}`}>{feitasAula > 0 ? `${feitasAula === nDias ? '✓ ' : ''}${feitasAula}/${nDias} · ` : ''}{t.cursoPagina.sessoes(g.dias[0], g.dias[1])}</span>
           </summary>
           <ol className="dias" start={g.dias[0]}>

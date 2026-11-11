@@ -76,7 +76,7 @@
 .br-plan p{font-size:15px;line-height:1.5;min-height:45px}
 .br-plan ul{padding:18px 0 18px 18px;font-size:14px;line-height:1.6;flex:1}
 .br-plan li{margin-bottom:10px}
-.br-plan .br-button{font-size:14px;padding:12px 8px;gap:4px}
+.br-plan .br-button{font-size:14px;padding:12px 8px;gap:4px;margin-top:auto}
 .br-plan-note{margin-top:24px!important;font-size:14px;line-height:1.7;color:var(--site-texto-inverso);max-width:760px}
 .br-current{border-top:1px solid var(--site-divisor-inverso);margin-top:28px;padding-top:22px;display:flex;gap:20px;flex-wrap:wrap;font-size:14px}
 .br-current a{color:var(--site-branco);text-decoration:underline}

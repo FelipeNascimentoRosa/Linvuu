@@ -107,8 +107,8 @@ const TX = {
  * descrições abaixo de 120. O português tem o bloco `SEO_BR` abaixo, com a mesma regra aplicada.
  */
 const SEO_EN = {
-  cursosT: 'Language courses: Portuguese, French and Russian',
-  cursosD: 'Linvuu language courses for English speakers: Brazilian Portuguese, French and Russian explained in English, in 30-minute sessions. Two free lessons.',
+  cursosT: 'Online language courses explained in English',
+  cursosD: 'Language courses for English speakers: Brazilian Portuguese, French and Russian fully explained in English; Spanish and German partly. Two free lessons.',
   assinaturaT: 'Subscription: monthly and 12-month plans',
   assinaturaD: 'Learn languages with Linvuu: a monthly or 12-month plan, priced in US dollars, and the first two lessons of every course free. No card needed to start.',
   privT: 'Privacy policy: what data Linvuu collects',
@@ -184,7 +184,7 @@ const LINGUAS: Record<string, Record<string, string>> = {
 };
 const HOME = {
   'pt-BR': { titulo: HOME_BR.tituloSeo, descricao: HOME_BR.descricao },
-  en: { titulo: 'Language courses for English speakers', descricao: 'Courses for English speakers: Brazilian Portuguese, French and Russian explained in English, German, Spanish and Italian in translation. 2 lessons free.' },
+  en: { titulo: 'Language courses for English speakers', descricao: 'Courses for English speakers: Brazilian Portuguese, French and Russian fully explained in English; Spanish and German partly. Try 2 free lessons.' },
 };
 
 /**
@@ -518,7 +518,12 @@ function gramaticaGratisParaHtml(d: DadosMeta | null, idioma: string, sufixo: st
   try {
     const pacote = JSON.parse(fs.readFileSync(arquivo, 'utf8'));
     const topicos = (pacote.topicos as Bloco[]).filter((t) => typeof t.dia === 'number' && t.dia <= SESSOES_GRATIS);
-    const corpo = topicos.map((t) => `<section><h2>${esc(String(t.titulo ?? ''))}</h2>${String(t.explicacao ?? '').split(/\s*(?:PASSO|STEP) \d+:\s*/).filter(Boolean).map((p) => `<p>${esc(p)}</p>`).join('')}</section>`).join('');
+    // WCAG 3.1.2: todo trecho no idioma estudado leva lang, para o leitor de tela e o Google lerem com a voz certa.
+    const lang = idioma === 'br' ? 'pt-BR' : idioma;
+    const marcar = (s: string) => esc(s).replace(/«([^»]+)»/g, `«<span lang="${lang}">$1</span>»`);
+    const exemplos = (t: Bloco) => Array.isArray(t.exemplos) && t.exemplos.length ? `<ul>${(t.exemplos as Bloco[]).map((e) => `<li><span lang="${lang}">${esc(String(e.ru ?? ''))}</span>${e.pt ? ` — ${esc(String(e.pt))}` : ''}</li>`).join('')}</ul>` : '';
+    const erros = (t: Bloco) => Array.isArray(t.erros) && t.erros.length ? `<ul>${(t.erros as Bloco[]).map((e) => `<li>✗ <span lang="${lang}">${esc(String(e.errado ?? ''))}</span> → ✓ <span lang="${lang}">${esc(String(e.certo ?? ''))}</span></li>`).join('')}</ul>` : '';
+    const corpo = topicos.map((t) => `<section><h2>${esc(String(t.titulo ?? ''))}</h2>${String(t.explicacao ?? '').split(/\s*(?:PASSO|STEP) \d+:\s*/).filter(Boolean).map((p) => `<p>${marcar(p)}</p>`).join('')}${exemplos(t)}${erros(t)}</section>`).join('');
     cacheGramatica.set(arquivo, corpo);
     return corpo;
   } catch { return ''; }

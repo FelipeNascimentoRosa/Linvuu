@@ -1,6 +1,6 @@
 # Linvuu — instruções para Gemini / Google Antigravity
 
-**OBRIGATÓRIO:** antes de trabalhar, leia integralmente [docs/CONTINUIDADE-2026-10-27.md](docs/CONTINUIDADE-2026-10-27.md), depois AGENTS.md, CLAUDE.md apenas para cruzar estado, e docs/COORDENACAO-IA.md. Os mesmos fatos auditados servem para Claude, ChatGPT/Codex, Gemini/Antigravity e Cursor. Não supor que agentes compartilharem contas/memória; sincronização é por main, PRs, checks e relatório. Projeto Firebase em produção é `linvuu`; Cloud Shell de duas contas com Owner, OIDC leitura validado, mas Firestore regras não homologadas com usuários reais. Googlebot rastreou a home com robots ALLOWED e sitemap lido sem erros; não afirmar bloqueio total. Vuu é frente futura informada, sem asset/merge confirmado na main. A privacidade deve ser conferida pela API após conversão.
+**OBRIGATÓRIO:** antes de trabalhar, leia integralmente [AGENTS.md](AGENTS.md). Documentos datados (como `docs/CONTINUIDADE-2026-10-27.md`) são histórico, não estado atual.
 
 As regras de projeto são compartilhadas entre Claude, ChatGPT/Codex, Cursor e Antigravity.
 

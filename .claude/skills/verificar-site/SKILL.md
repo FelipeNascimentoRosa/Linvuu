@@ -26,5 +26,8 @@ Mesmas rotas em `https://<host><rota>` com `-A "Mozilla/5.0 (compatible; Googleb
 - blocos `application/ld+json` quando a rota tem dados estruturados;
 - moeda: **nenhum "R$" em páginas do .com e nenhum "US$" no .com.br** (conteúdo de aula do curso de português cita reais como assunto: ignorar `/curso/br` e `/gramatica/br`).
 
+## HTML real para o Google (todo deploy, sem exceção)
+`node scripts/conferir-prerender.mjs` (produção) ou `node scripts/conferir-prerender.mjs http://127.0.0.1:4398` (local). Esperado: **"60 de 60 páginas com o HTML real"** (o total acompanha os sitemaps). Qualquer página "com resumo" em produção é defeito: veja a linha `[prerender] X de Y` no log do build no Render antes de declarar produção.
+
 ## Saída
-"12/12 OK por domínio" ou a lista exata do que falhou (host, rota, o que esperava, o que veio). Sem tabela de checks nem log.
+"12/12 OK por domínio · prerender 60/60" ou a lista exata do que falhou (host, rota, o que esperava, o que veio). Sem tabela de checks nem log.

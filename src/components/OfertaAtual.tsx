@@ -1,6 +1,6 @@
 import { HomeCourseLink } from './HomeCourseLink';
 import { homeText as h } from '../i18n/home';
-import { precosDo } from '../config/planos';
+import { precosDo, FUNDADORES } from '../config/planos';
 import { LOCALE } from '../i18n';
 import { analytics } from '../lib/analytics';
 import { useEffect, useRef } from 'react';
@@ -23,7 +23,7 @@ export function OfertaAtual() {
   type Plano = { nome: string; preco: string; detalhe: string; id: string; equivMes?: string; destaque?: boolean };
   const planos: Plano[] = [
     { nome: 'Mensal', preco: P.mensal, detalhe: 'por mês · renovação automática', id: 'mensal' },
-    ...(emReais ? [{ nome: 'Três meses no Pix', preco: P.trimestralPix, detalhe: 'pagamento único · 30% de desconto', id: 'trimestral-pix', equivMes: P.trimestralPixMes }] : []),
+    ...(emReais ? [{ nome: 'Três meses', preco: P.trimestralPix, detalhe: `no Pix (30% de desconto) ou ${P.trimestral} no cartão/boleto · pagamento único`, id: 'trimestral-pix', equivMes: P.trimestralPixMes }] : []),
     { nome: 'Anual', preco: P.anual, detalhe: '12 meses · pagamento único', id: 'anual', equivMes: P.anualMes, destaque: true },
   ];
   return <section ref={secao} className="br-plans-wrap br-live-plans" id="planos" aria-labelledby="oferta-titulo">
@@ -36,7 +36,7 @@ export function OfertaAtual() {
         {p.equivMes && <p className="br-plan-equiv">≈ {p.equivMes} {h('por mês')}</p>}
         <HomeCourseLink cta="home_plano" to={`/assinatura?plano=${p.id}#oferta-atual`} className="br-button" onClick={() => { void analytics.capture('select_plan', { page: 'home', billing_plan: p.id }); }}>{h('Ver condições do plano')} <span aria-hidden="true">↗</span></HomeCourseLink>
       </article>)}</div>
-      {emReais && <p className="br-plan-note">{h('O plano de três meses também está disponível no cartão ou boleto. Consulte os valores e condições antes de contratar.')}</p>}
+      {emReais && FUNDADORES && <p className="br-plan-note">Ex-aluno da Udemy? Use o código <strong>{FUNDADORES.codigo}</strong> no pagamento do mensal: {FUNDADORES.precoMes} por mês, para sempre. Válido até {FUNDADORES.validade}.</p>}
       <div className="br-current"><HomeCourseLink to="/cursos">{h('Experimentar duas aulas grátis →')}</HomeCourseLink><HomeCourseLink to="/assinatura">{h('Ver todos os detalhes da assinatura →')}</HomeCourseLink></div>
     </div>
   </section>;

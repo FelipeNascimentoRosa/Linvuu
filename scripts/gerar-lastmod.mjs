@@ -44,7 +44,14 @@ const dataDoFicheiro = (f) => {
 // 3) Ficheiros-fonte de cada rota (caminhos relativos à raiz do repo).
 const TEXTO_LOCALE = { 'pt-BR': 'src/i18n/pt-BR.ts', en: 'src/i18n/en.ts' };
 const pad = (n, t) => String(n).padStart(t, '0');
+// O <head> de toda rota (título, descrição, idioma, canonical, hreflang) é gerado no servidor por estes arquivos:
+// quando eles mudam, o que o Google lê muda — a data precisa refletir isso (06/11: .com.br deixou de servir es/en).
+const CABECA = ['server/metaRota.ts', 'server/dominio.ts', 'src/i18n/locales.ts'];
 function fontes(caminho, locale) {
+  const f = fontesDaPagina(caminho, locale);
+  return f ? [...f, ...CABECA] : f;
+}
+function fontesDaPagina(caminho, locale) {
   const L = locale === 'pt-BR' ? null : locale; // 'en' | 'es' | null
   const indiceL = L ? [`content/indice.${L}.json`] : [];
   switch (caminho) {

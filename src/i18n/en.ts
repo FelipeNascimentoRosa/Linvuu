@@ -7,7 +7,7 @@ const sessaoDe = (n: number) => `Lesson ${Math.ceil(n / 4)} · session ${(n - 1)
 export const en: Dicionario = {
   meta: {
     titulo: 'Linvuu · Language courses for English speakers',
-    descricao: 'Courses for English speakers: Brazilian Portuguese, French and Russian explained in English; German, Spanish and Italian in translation. Try 2 free lessons.',
+    descricao: 'Courses for English speakers: Brazilian Portuguese, French and Russian fully explained in English; Spanish and German partly. Try 2 free lessons.',
   },
   geral: {
     pular: 'Skip to content', carregando: 'Loading…', inicio: 'Home', cursos: 'Courses', voltar: 'Back', voceEstaEm: 'You are here',
@@ -47,7 +47,7 @@ export const en: Dicionario = {
   carta: { kicker: 'Who makes Linvuu', titulo: 'Letter' },
   livros: { kicker: 'Books', titulo: 'The Linvuu collection', rotulo: 'Linvuu books', capa: (t: string) => `Cover of the ${t} book, Linvuu collection` },
   avaliacoes: {
-    kicker: 'Reviews', titulo: 'What our students say', vazio: 'The first reviews from real students are coming soon.', rotulo: 'Student reviews',
+    kicker: 'Reviews', titulo: 'What our students say', udemy: false, rotulo: 'Student reviews',
     media: (m: string, n: number) => `${m} out of 5 · ${n} ${n === 1 ? 'review' : 'reviews'}`, aulas: (n: number) => `${n} ${n === 1 ? 'session completed' : 'sessions completed'}`,
     conhece: 'Knows the teacher', nota: 'Rating', estrelas: (n: number) => `${n} out of 5 stars`,
     avalie: 'Review Linvuu', avalieIntro: (n: number) => `To leave a review, sign in and complete at least ${n} sessions of the free lessons. Each review is checked before it appears, and we show every approved one, critical ones included.`,
