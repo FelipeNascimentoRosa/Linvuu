@@ -18,7 +18,7 @@ Métrica da semana (muda com o lote): ver § 3.
 |---|---|
 | Home do .com.br no índice do Google | **NÃO** — "Descoberto, não indexado" (apenas /en/, /es/portugues, /excluir-conta e páginas internas) |
 | Visitas/semana | sem dado |
-| Cadastros | 0 |
+| Cadastros | 0 (a partir do deploy do lote 4, o número vem de `GET /api/metricas` → `funil.porDia`, com token `METRICAS_TOKEN`) |
 | Assinaturas | 0 |
 | Eventos de analytics | 0 — instrumentação inexistente |
 | Capítulos publicados | **12 de 113** |
@@ -74,6 +74,7 @@ Cada pendência recebe: **sim**, **não** ou **"adiar até [data]"**. Pergunta c
 
 ## 8. Evidências recentes (append-only: data · fato · prova)
 
+- 2026-11-11 · lote 4 · `GET /api/metricas` ganhou `funil` (28 dias × contas, sessão 1, sessão 8, checkouts abertos, checkouts pagos; sessão e checkout contam só depois do deploy) · `npm run testar:medicao` e `testar-cobranca-eventos.ts` verdes
 - 2026-11-11 · baseline deste painel · auditoria do dossiê 09–11/11 (36 PRs, 7 categorias)
 
 ## 9. Conta 60/20/20 do período

@@ -14,6 +14,7 @@ import crypto from 'node:crypto';
 import { podeComprar, type Acesso } from './acesso-calculo';
 import { acessoDoRegistro, gravarRegistro, lerRegistro, liberarConversao, reservarConversao } from './acesso';
 import { enviarCompra, validarMedicao } from './conversoes';
+import { registrarFunil } from './funil';
 import { criarProcessadorCobranca } from './cobranca-eventos';
 import { CENTAVOS, CENTAVOS_USD } from '../src/config/planos.ts';
 import { caminhoNoPerfil } from '../src/i18n/locales.ts';
@@ -117,6 +118,7 @@ const eventos = criarProcessadorCobranca({
   stripe: () => stripe!,
   registro: { ler: lerRegistro, gravar: gravarRegistro, reservar: reservarConversao, liberar: liberarConversao },
   enviarCompra,
+  funil: registrarFunil,
   uidConhecido: (c) => usuarioPorCliente.get(c),
   lembrarUid: (c, uid) => usuarioPorCliente.set(c, uid),
   esquecerMemoria: (uid) => { acessos.delete(uid); renovou.delete(uid); },
@@ -268,6 +270,7 @@ export function registrarCobranca(app: Express, urlBase: (req: Request) => strin
             line_items: [{ price: await preco(), quantity: 1 }],
             metadata: { plano: 'mensal', uid: u.uid, ...medicao, site: base },
           }, opcoes);
+      await registrarFunil('checkout_aberto', s.id);
       res.json({ url: s.url });
     } catch (e) { console.error('billing/checkout', e); res.status(500).json({ error: 'Não foi possível abrir o pagamento.' }); }
   });
