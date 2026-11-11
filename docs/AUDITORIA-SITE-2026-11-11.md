@@ -17,7 +17,7 @@
 | Descrição ausente | **0** |
 | Páginas indexáveis fora do sitemap | **4 rotas / 8 URLs** |
 | URLs indexáveis sem `hreflang` | **30 de 54** |
-| Rotas com resposta diferente entre domínios | **24** (das quais 3 são redirecionamento legítimo e 14 são o mesmo caso de livro) |
+| Rotas com resposta diferente entre domínios | **24**: 16 redirecionamento legítimo, 7 `noindex` intencional e 1 `noindex` com conteúdo em português |
 | Capítulos de livro indexados no Google | **parcial**: 1 de 3 inspecionados está fora do índice |
 | Sitemaps reenviados ao Google após o corte de 11/11 | **não** — último envio 28/10 (`.com.br`) e 07/11 (`.com`) |
 
@@ -30,7 +30,8 @@
 | `sc-domain:linvuu.com.br` | `https://linvuu.com.br/sitemap.xml` | 28/10/2026 | 09/11/2026 | **87** | **39** |
 | `sc-domain:linvuu.com` | `https://linvuu.com/sitemap.xml` | 07/11/2026 | 09/11/2026 | **35** | **15** |
 
-O corte de 87 → 39 e 51 → 15 foi decidido em `docs/DECISAO-INDEXACAO-2026-11-11.md` e está no ar, mas o Google ainda lê a versão anterior: os dois downloads são de 09/11, antes do merge. Erros e avisos nos dois sitemaps: **0**. Contador "indexadas" do GSC: **0** nos dois — contador conhecido por atrasar, não usar como medida.
+O corte de 87 → 39 (`.com.br`) e 51 → 15 (`.com`) foi decidido em `docs/DECISAO-INDEXACAO-2026-11-11.md` e está no ar, mas o Google ainda lê a versão anterior. No `.com` a leitura é pior que o número sugere: o último envio aceito foi de um arquivo de **35** URLs em 07/11, o arquivo cresceu até 51 sem ser reenviado e só então caiu para 15 — ou seja, o Google nunca viu a versão de 51 e não viu a de 15. Os dois downloads registrados são de 09/11, antes do merge. Erros e avisos nos dois sitemaps: **0**. Contador "indexadas" do GSC: **0** nos dois — contador conhecido por atrasar, não usar como medida.
+
 
 **Falta:** reenviar os dois sitemaps e pedir indexação das páginas prioritárias. É escrita na conta do Search Console — **exige ordem explícita do Felipe**.
 
@@ -112,7 +113,7 @@ Todas respondem 200, têm canonical para si mesmas, **não** têm `noindex` e n�
 
 Matriz completa medida rota por rota nos dois domínios. **24 rotas respondem diferente.** A maior parte é intencional; a lista abaixo separa o que é regra do que é inconsistência.
 
-### 5.1 Assimetrias legítimas (17) — não mexer sem decisão
+### 5.1 Assimetrias legítimas (16) — não mexer sem decisão
 
 | Rota | `.com.br` | `.com` | Regra |
 |---|---|---|---|
