@@ -45,7 +45,7 @@ export const ptBR = {
   carta: { kicker: 'Quem faz a Linvuu', titulo: 'Carta' },
   livros: { kicker: 'Livros', titulo: 'Coleção Linvuu', rotulo: 'Livros da Linvuu', capa: (t: string) => `Capa do livro de ${t}, Coleção Linvuu` },
   avaliacoes: {
-    kicker: 'Avaliações', titulo: 'O que dizem nossos alunos', vazio: 'As primeiras avaliações de alunos reais chegam em breve.', rotulo: 'Avaliações de alunos',
+    kicker: 'Avaliações', titulo: 'O que dizem nossos alunos', udemy: true, rotulo: 'Avaliações de alunos',
     media: (m: string, n: number) => `${m} de 5 · ${n} ${n === 1 ? 'avaliação' : 'avaliações'}`, aulas: (n: number) => `${n} ${n === 1 ? 'sessão concluída' : 'sessões concluídas'}`,
     conhece: 'Conhece o professor', nota: 'Nota', estrelas: (n: number) => `${n} de 5 estrelas`,
     avalie: 'Avalie a Linvuu', avalieIntro: (n: number) => `Para avaliar, entre na sua conta e conclua pelo menos ${n} sessões das aulas grátis. Sua avaliação passa por uma conferência antes de aparecer e mostramos todas as aprovadas, inclusive as críticas.`,

@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../lib/AuthContext';
 import { carregarAuth } from '../lib/firebase';
 import { api } from '../lib/api';
+import { AULAS_RUSSO } from '../config/aulas-russo';
 import { AULAS_MIN, NOTA_MAX, TEXTO_MAX, type AvaliacaoPublica, type Relacao } from '../config/avaliacoes';
 import { comPrefixo, useT } from '../i18n';
 import './avaliacoes.css';
@@ -51,13 +52,30 @@ export function Avaliacoes() {
   };
 
   const itens = dados?.itens ?? [];
+  // Sem avaliação aprovada na Linvuu, a prova vem de avaliações reais da Udemy (só em português, idioma original, com a fonte escrita).
+  const udemy = a.udemy ? AULAS_RUSSO['pt-BR'] : null;
+  const relatos = itens.length === 0 && udemy?.relatos ? udemy.relatos : [];
+  const temLista = itens.length > 0 || relatos.length > 0;
   const msg = { ok: a.obrigado, duplicada: a.jaEnviou, poucas: a.fazerAulas(AULAS_MIN), invalido: a.invalido, erro: a.erro } as const;
   return (
     <section className="avaliacoes" aria-label={a.rotulo} id="avaliacoes">
-      <p className="av-kicker">{a.kicker}</p>
-      <h2>{a.titulo}</h2>
+      {temLista && <><p className="av-kicker">{a.kicker}</p><h2>{relatos.length > 0 ? udemy!.relatosTitulo : a.titulo}</h2></>}
       {dados && dados.media !== null && dados.contadas > 0 && <p className="av-resumo"><Estrelas n={Math.round(dados.media)} rotulo={a.estrelas(Math.round(dados.media))} /> <strong>{a.media(dados.media.toLocaleString(), dados.contadas)}</strong></p>}
-      {itens.length === 0 ? <p className="av-vazio">{a.vazio}</p> : (
+      {relatos.length > 0 && (
+        <>
+          <ul className="av-lista">
+            {relatos.map((r) => (
+              <li key={r.nome} className="av-card">
+                <Estrelas n={NOTA_MAX} rotulo={a.estrelas(NOTA_MAX)} />
+                <p className="av-texto">“{r.texto}”</p>
+                <p className="av-autor"><strong>{r.nome}</strong></p>
+              </li>
+            ))}
+          </ul>
+          <p className="av-fonte"><small>{udemy!.relatosFonte}</small></p>
+        </>
+      )}
+      {itens.length > 0 && (
         <ul className="av-lista">
           {itens.map((i, k) => (
             <li key={`${i.nome}-${i.em}-${k}`} className="av-card">
@@ -73,7 +91,7 @@ export function Avaliacoes() {
       )}
 
       <div className="av-form-caixa">
-        <h3>{a.avalie}</h3>
+        {temLista ? <h3>{a.avalie}</h3> : <h2>{a.avalie}</h2>}
         <p className="av-intro">{a.avalieIntro(AULAS_MIN)}</p>
         {!usuario ? <p><Link className="btn btn-primary" to={comPrefixo(`/entrar?proximo=${encodeURIComponent(`${pathname}#avaliacoes`)}`)}>{a.entrar}</Link></p> : estado === 'ok' || estado === 'duplicada' ? <p role="status">{msg[estado]}</p> : (
           <form onSubmit={enviar} className="av-form">

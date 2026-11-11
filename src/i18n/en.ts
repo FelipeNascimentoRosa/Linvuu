@@ -47,7 +47,7 @@ export const en: Dicionario = {
   carta: { kicker: 'Who makes Linvuu', titulo: 'Letter' },
   livros: { kicker: 'Books', titulo: 'The Linvuu collection', rotulo: 'Linvuu books', capa: (t: string) => `Cover of the ${t} book, Linvuu collection` },
   avaliacoes: {
-    kicker: 'Reviews', titulo: 'What our students say', vazio: 'The first reviews from real students are coming soon.', rotulo: 'Student reviews',
+    kicker: 'Reviews', titulo: 'What our students say', udemy: false, rotulo: 'Student reviews',
     media: (m: string, n: number) => `${m} out of 5 · ${n} ${n === 1 ? 'review' : 'reviews'}`, aulas: (n: number) => `${n} ${n === 1 ? 'session completed' : 'sessions completed'}`,
     conhece: 'Knows the teacher', nota: 'Rating', estrelas: (n: number) => `${n} out of 5 stars`,
     avalie: 'Review Linvuu', avalieIntro: (n: number) => `To leave a review, sign in and complete at least ${n} sessions of the free lessons. Each review is checked before it appears, and we show every approved one, critical ones included.`,
