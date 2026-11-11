@@ -1,5 +1,7 @@
 # 05 · PLANO — O SITE COMPLETO EM 3 DIAS
 
+> **Arquivado em 11/11/2026 (lote 99).** Substituído por [`docs/plano/`](../plano/EXECUTAR.md) — o único plano em vigor. Mantido só como registro histórico; não execute a partir daqui.
+
 > Plano operativo da Linvuu. Dia 1 começa HOJE.
 > Método: organização extrema + repositórios públicos + revisores
 > em cada própria língua. Cada linha tem um dono. Sem dono, não é tarefa.

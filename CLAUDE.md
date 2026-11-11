@@ -2,7 +2,7 @@
 
 <!-- Atualizado em 2026-11-11 a partir de auditoria completa (repo + sites ao vivo). Substitui a versão de 06/11/2026. -->
 
-> Instruções de trabalho para o Claude Code neste repositório. Curto de propósito: o detalhe operacional vive em `docs/ESTADO-ATUAL.md` e `PENDENCIAS.md` — leia os dois no início de qualquer tarefa maior. Em conflito entre este arquivo e eles, **este arquivo manda nas regras** e **eles mandam nos fatos**.
+> Instruções de trabalho para o Claude Code neste repositório. **Plano em vigor: `docs/plano/EXECUTAR.md` + `docs/plano/ESTADO.md` (comando `/lote`).** Curto de propósito: o detalhe operacional vive em `docs/ESTADO-ATUAL.md` e `PENDENCIAS.md` — leia os dois no início de qualquer tarefa maior. Em conflito entre este arquivo e eles, **este arquivo manda nas regras** e **eles mandam nos fatos**.
 
 ## O produto em 5 linhas
 - Linvuu: cursos de idiomas (alemão, inglês, espanhol, francês, italiano, português BR, russo) com explicação na língua do aluno e **áudio em cada frase**. **2 primeiras aulas grátis** (sessões 1–8; paywall na 9).
