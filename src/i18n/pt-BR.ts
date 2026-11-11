@@ -74,6 +74,7 @@ export const ptBR = {
   ],
   cta: { titulo: 'Sua primeira sessão leva 30 minutos.', texto: 'Comece agora: 2 aulas grátis, sem cartão e sem instalar nada.', primario: 'Começar grátis', secundario: 'Ver todos os cursos' },
   rodape: {
+    redesRotulo: 'Redes sociais da Linvuu', novaAba: 'abre em nova aba',
     eConj: 'e',
     criadaPor: 'Criada por',
     frase: 'Idiomas ensinados passo a passo, para quem fala português.', novidadesTitulo: 'Receba novidades', novidadesTexto: 'Novas aulas, idiomas e livros. Sem spam.',
@@ -88,6 +89,7 @@ export const ptBR = {
     avisoObraTitulo: '', avisoObraTexto: '',
   },
   cursoPagina: {
+    gramaticaCartao: { rotulo: 'Gramática · em português', texto: 'Toda a gramática deste curso, explicada em português, tópico por tópico.', link: (nome: string) => `Abrir a gramática de ${nome} →` },
     continuarBtn: 'Continuar', sessaoTitulo: (n: number, t: string) => `Sessão ${n}: ${t}`, continuar: (n: number, t: string) => `Continuar na sessão ${n}: ${t}`, comecar: 'Começar pela sessão 1 (grátis)', feitas: (a: number, b: number) => `${a} de ${b} sessões concluídas`, concluida: 'concluída', aulasNivel: (n: number) => `${n} aulas`, retomarKicker: (c: string) => `Continuar ${c}`,
     tituloSeo: (nome: string) => `Curso de ${nome.toLowerCase()} online, explicado em português`,
     fatos: ['Sessões de ~30 min', 'Começa do zero'], noAr: (a: number, b: number) => `${a} de ${b} sessões no ar`, gramatica: (nome: string) => `Gramática: ${nome.toLowerCase()} →`,

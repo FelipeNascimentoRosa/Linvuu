@@ -59,7 +59,7 @@ export default function Curso() {
       );
 
   return (
-    <div className={LOCALE.codigo === 'pt-BR' ? 'pagina site-publico site-curso' : 'pagina'}>
+    <div className={website ? 'pagina site-publico site-curso' : 'pagina'}>
       <Navegacao pai="/cursos" trilha={[{ rotulo: t.geral.inicio, para: '/' }, { rotulo: t.geral.cursos, para: '/cursos' }, { rotulo: curso.nome }]} />
 
       <header className="curso-topo">
@@ -75,6 +75,11 @@ export default function Curso() {
           {website && retomar}
 
         </div>
+        {/* .com: os livros existem só em português; no lugar da capa, a gramática do curso, que existe em inglês (lote I2). */}
+        {website && LOCALE.codigo !== 'pt-BR' && cob.total > 0 && cob.traduzidas >= cob.total && IDIOMAS_GRAMATICA.includes(curso.id) && <figure className="curso-livro curso-gramatica-cartao">
+          <img src="/assets/vuu/vuu.svg" alt="" width="96" height="106" decoding="async" />
+          <figcaption><span>{t.cursoPagina.gramaticaCartao.rotulo}</span><strong>{t.cursoPagina.gramaticaCartao.texto}</strong><Link to={`/gramatica/${curso.id}`}>{t.cursoPagina.gramaticaCartao.link(curso.nome)}</Link></figcaption>
+        </figure>}
         {website && LOCALE.codigo === 'pt-BR' && livro?.capa && <figure className="curso-livro">
           <img src={livro.capa} alt={`Capa do livro de ${curso.nome}, Coleção Linvuu`} width="600" height="800" decoding="async" />
           <figcaption><span>Coleção Linvuu · A1–A2</span><strong>Seu livro para ler, ouvir e voltar quando precisar.</strong><Link to={livro.link?.startsWith('/livros/') ? livro.link : '/livros'}>Ler 2 capítulos grátis →</Link></figcaption>

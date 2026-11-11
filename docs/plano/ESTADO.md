@@ -23,7 +23,7 @@ Uma linha por lote. O agente altera **só** a linha do lote em que trabalhou, no
 | 17 | Publicar a Turma de Russo ao vivo com pagamento na página | A+F | a fazer | — | — |
 | 18 | Captar interesse por idioma num formulário único | A | a fazer | — | — |
 | 19 | Acionar os ex-alunos da Udemy antes de 30/01/2027 | A+F | a fazer | — | — |
-| 20 | Tirar o áudio pago da árvore pública do repositório | A+F | PR aberto | #583 | Felipe pôs `AUDIO_REPO_TOKEN` no Render; log do deploy `dep-dbq70iu7` 13:41Z: `audio-privado: 11033 MP3 baixados de FelipeNascimentoRosa/Linvuu-Audio (token)`; o servidor já serve de `.audio-privado/`; este PR tira os 11.039 arquivos (11.033 MP3 + 6 manifestos) da árvore |
+| 20 | Tirar o áudio pago da árvore pública do repositório | A+F | em produção | #583 | `git ls-tree origin/main` sem `server/audio-privado*` (0 arquivos); builds de 21:28Z e 22:24Z: `audio-privado: 11033 MP3 baixados de FelipeNascimentoRosa/Linvuu-Audio (token)`; prerender 60/60 ao vivo. O histórico do Git ainda tem os arquivos (lote 22) |
 | 21 | Tirar os capítulos pagos da árvore pública | A | a fazer | — | — |
 | 22 | Limpar do histórico do Git os arquivos pagos | A+F | a fazer | — | — |
 | 23 | Criar rota e molde da página de dúvida e publicar o piloto | A | a fazer | — | — |
@@ -111,8 +111,8 @@ Uma linha por lote. O agente altera **só** a linha do lote em que trabalhou, no
 
 | nº | lote | quem | estado | PR | prova |
 |---|---|---|---|---|---|
-| I1 | Home do .com em torno do que está completo (herói e grade só com os 3 completos; parciais numa faixa "In translation" com a contagem real) | A | PR aberto | #584 | local: herói e grade do .com = French, Brazilian Portuguese, Russian; faixa = Spanish 30 of 62, German 1 of 72; celular sem buraco na grade (3º cartão em largura total); .com.br inalterado (6 cartões, 2 colunas); prerender 60/60 |
-| I2 | Acabamentos visuais do .com: capa do livro no herói de `/curso/ru`, rótulos do rodapé em inglês, "Website" do `/contato` apontando para linvuu.com (D2, D14) | A | a fazer | — | — |
+| I1 | Home do .com em torno do que está completo (herói e grade só com os 3 completos; parciais numa faixa "In translation" com a contagem real) | A | em produção | #584 | produção 11/11 22:30Z: grade de linvuu.com = French, Brazilian Portuguese, Russian; faixa = Spanish 30 of 62, German 1 of 72; prerender 60/60 |
+| I2 | Acabamentos visuais do .com: herói de `/curso/:id`, rótulos do rodapé em inglês, "Website" do `/contato` (D2, D14) | A | PR aberto | #585 | local: página de curso do .com no mesmo molde do .com.br (era outro template); no lugar da capa (livro só em português), cartão da gramática em inglês com o Vuu 96 px em ru/fr; rodapé do .com com rótulos em inglês ("Linvuu on social media", "opens in a new tab"); `/contato` do .com aponta para linvuu.com; .com.br inalterado (capa, rótulos e link conferidos); prerender 60/60 |
 | I3 | Páginas de curso em inglês (ru, fr, br) respondendo preço, prazo até B1, professor e iniciante | A | a fazer | — | — |
 | I4 | 30 dúvidas de russo em inglês (em blocos de 5), a partir de `ru.en.json` | A | a fazer | — | — |
 | I5 | Explicações em inglês de alemão, espanhol e italiano (284 + 128 + 248 sessões) — só depois de o .com vender | A+F | a fazer | — | — |
