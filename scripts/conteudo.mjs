@@ -246,7 +246,7 @@ for (const c of cursos.filter((x) => x.area === 'idiomas')) {
     if (aula.dia !== d.dia || aula.idioma !== c.id) erros.push(`${file}: dia/idioma não confere`);
     if (!STATUS.includes(aula.status)) erros.push(`${file}: status inválido "${aula.status}"`);
     status.push(aula.status);
-    if (aula.aula?.numero) { const g = (grupos[aula.aula.numero] ??= { aula: aula.aula.numero, titulo: aula.aula.titulo, nivel: aula.nivel, dias: [d.dia, d.dia] }); g.dias[1] = d.dia; }
+    if (aula.aula?.numero) { const g = (grupos[aula.aula.numero] ??= { aula: aula.aula.numero, titulo: aula.aula.titulo, ...(aula.aula.objetivo ? { objetivo: aula.aula.objetivo } : {}), nivel: aula.nivel, dias: [d.dia, d.dia] }); g.dias[1] = d.dia; }
     const m = trilha.dias[d.dia - 1] ?? { titulo: null, objetivo: null };
     if (aula.titulo !== m.titulo || aula.objetivo !== m.objetivo) sobrescritos[d.dia] = { t: aula.titulo, o: aula.objetivo };
   }

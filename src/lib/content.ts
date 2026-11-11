@@ -59,7 +59,7 @@ export async function carregarTraducoes() {
   const depois = () => { void carregarTraducao('en'); };
   if (typeof window !== 'undefined' && 'requestIdleCallback' in window) window.requestIdleCallback(depois, { timeout: 4000 }); else setTimeout(depois, 2000);
 }
-const INDICE = indiceJson.cursos as unknown as Record<string, { total: number; publicadas: number; emProducao: number; planejadas: number; status: StatusAula[]; sobrescritos: Record<string, { t: string; o: string }>; grupos?: { aula: number; titulo: string; nivel?: string; dias: [number, number] }[]; fonte?: Explicacao; amostra?: { min: number; blocos: [string, number][] } }>;
+const INDICE = indiceJson.cursos as unknown as Record<string, { total: number; publicadas: number; emProducao: number; planejadas: number; status: StatusAula[]; sobrescritos: Record<string, { t: string; o: string }>; grupos?: { aula: number; titulo: string; objetivo?: string; nivel?: string; dias: [number, number] }[]; fonte?: Explicacao; amostra?: { min: number; blocos: [string, number][] } }>;
 
 /** Língua em que as explicações do curso foram escritas (o curso de português para estrangeiros foi escrito em inglês). */
 export const fonteDoCurso = (id: string): Explicacao => INDICE[id]?.fonte ?? 'pt';
@@ -98,10 +98,11 @@ export const diaDoCurso = (id: string, d: DiaMestre) => {
 export const getCurso = (id?: string) => CURSOS.find((c) => c.id === id);
 export const statusDoCurso = (id: string) => INDICE[id];
 /** Aulas escritas do curso (cada uma com 4 sessões = 4 dias), com o título no idioma do site quando houver. */
-export const gruposDoCurso = (id: string) => {
+export const gruposDoCurso = (id: string): { aula: number; titulo: string; objetivo?: string; nivel?: string; dias: [number, number] }[] => {
   const g = INDICE[id]?.grupos ?? [];
   const tr = traducao(id);
-  return tr ? g.map((x) => ({ ...x, titulo: tr.g[x.aula] ?? x.titulo })) : g;
+  /* O objetivo só existe na língua em que a aula foi escrita: com tradução ativa ele sairia misturado, então não é exibido. */
+  return tr ? g.map(({ objetivo: _o, ...x }) => ({ ...x, titulo: tr.g[x.aula] ?? x.titulo })) : g;
 };
 const ORDEM_NIVEL = ['zero', 'a1', 'a2', 'b1', 'b2', 'c1'];
 export const NIVEL_LABEL: Record<string, string> = T.nivel.label;
