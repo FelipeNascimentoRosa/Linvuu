@@ -57,5 +57,42 @@ Regra `explicacaoCompleta` (`metaRota.ts`): curso só ganha página indexável/h
 3. A mudança toca billing, áudio pago, índice ou SEO? Se sim, releia a ARMADILHA correspondente.
 4. Como vou **provar** o resultado (CI, smoke, URL ao vivo)?
 
+## DESIGN — regras permanentes
+- **CSS:** proibido criar folha global nova. O caminho é consolidar `styles`/`redesign`/`camadas` numa folha só sobre `tokens.css`, nunca empilhar a próxima camada. Cor crua (hex) só em `tokens.css` (exceção: componentes de bandeira).
+- **Cartões:** itens da mesma fileira têm **altura igual e CTA alinhado na base** (coluna flex + `margin-top:auto` no botão). Cartão com dois preços empilhados e dois botões é proibido — meio de pagamento é seletor dentro do cartão.
+- **Nenhuma seção vazia em produção:** sem conteúdo real, a seção **não renderiza**. Placeholder do tipo "chega em breve" é defeito, não recurso.
+- **Um template por tipo de página** (curso, gramática, livro) nos dois perfis. Curso parcial usa **sempre** a nota honesta de cobertura (modelo: `/curso/es` e `/curso/de` no .com — "Explanations in English: N of M lessons so far…"). Prometer explicação num idioma sobre conteúdo em outro é o defeito mais grave deste site.
+- **Banner de idioma e cookies nunca cobrem o cabeçalho** — faixa fina no topo, dispensável, sem sobrepor logo/menu nem o hero.
+- **Marca presente:** o mascote **Vuu** e a fonte **Caveat** existem para serem usados (estados vazios, conclusão de aula, detalhes editoriais). Hoje o Vuu só aparece no hero da home e a Caveat em nenhuma página.
+- **Carregamento:** nada de flash de "Carregando…"/esqueleto vazio em curso e aula — o conteúdo principal renderiza junto (o servidor já gera meta por rota; elimine o flash no cliente).
+
+## DESIGN — correções exatas por página (medido em 11/11/2026, 73 URLs lidas)
+Formato: **onde → problema → correção → verificação**. Ao concluir um item, risque-o daqui no mesmo PR.
+
+- **D1 [ALTA] `linvuu.com/curso/it`** → subtítulo "Every lesson of this course is explained in English." sobre 62 aulas com títulos em português, sem nota de cobertura (italiano EN = 0/248) → aplicar a nota honesta de cobertura (modelo D-regra acima) ou retirar a frase → verificar: o texto da página é compatível com `indice.en.json` (`it.aulas=[]`).
+- **D2 `linvuu.com.br/contato` e `/sobre`** → exibem `contato@linvuu.com` → trocar para **contato@linvuu.com.br** no perfil `br` (fonte: `config/site.ts` por perfil). E **`linvuu.com/contato`** → o item "Website" aponta para `linvuu.com.br` → apontar para `linvuu.com`.
+- **D3 Home e `/assinatura` do .com.br** → o cupom **FUNDADORES não aparece em nenhum lugar** → exibir na seção de planos e em `/assinatura` (50% no mensal BRL, conforme `planos.ts`) → verificar ao vivo nos dois lugares.
+- **D4 Home .com.br, seção "A oferta de hoje"** → omite o trimestral no cartão (R$ 417); só mostra mensal, Pix e anual → incluir o trimestral no cartão com hierarquia clara entre as 4 opções.
+- **D5 `/russo-online` (dois domínios)** → texto do Spotify diz que só há "a seleção avançada" e que níveis "entram aos poucos" → atualizar: **21 playlists públicas, 7 idiomas × 3 níveis** (desde 06/11/2026), com os links. E a versão .com **não tem** a seção de depoimentos que a .br tem (7 avaliações reais da Udemy) → espelhar a seção em inglês.
+- **D6 Seção de avaliações vazia** → a inspeção visual de 11/11 viu "chegam em breve" na home, em `/assinatura` e no .com; a leitura de texto posterior não a encontrou → **conferir no navegador**: se existir no cliente, preencher com as avaliações reais (modelo: `/russo-online`) ou remover a seção (regra permanente acima).
+- **D7 `linvuu.com.br/livro/gramatica-ru`** → anuncia "**Dez aulas**", mas o livro tem **15 capítulos** (sumário em `/livros/ru`) → corrigir o número e conferir a landing inteira contra o sumário.
+- **D8 `linvuu.com/cursos`** → título e descrição nomeiam só "Portuguese, French and Russian", mas a página lista 5 cursos → renomear para os cursos reais da página.
+- **D9 `linvuu.com/ex-alunos-udemy`** → página 100% em português no domínio internacional, sem versão nem moldura EN → criar a versão EN ou redirecionar para o .com.br (o padrão do site é um dos dois; ex.: `/livros` no .com redireciona 301 para o .br — confirmado).
+- **D10 `linvuu.com/gramatica/de` e `/gramatica/it`** → título "…for English speakers" com o miolo (tópicos, explicações, tabelas) em português, e template diferente das gramáticas de ru/fr/es/br → unificar o template e traduzir o miolo ou aplicar a moldura honesta de cobertura.
+- **D11 `linvuu.com/assinatura`** → a pergunta "What currency are the prices in?" aparece **duas vezes** (bloco solto + FAQ), mesma resposta → remover uma.
+- **D12 Home do .com** → a descrição cita italiano "in translation", mas **não há cartão de italiano** na home (5 cursos), e o texto promete livros "in six languages" → adicionar o cartão com a nota de cobertura ou corrigir as duas frases.
+- **D13 Sitemaps e índice de gramática** → `/gramatica` (índice) está fora dos dois sitemaps e o título no .br é genérico ("Gramática · Linvuu") → título com palavra-chave e decisão explícita sobre o índice no sitemap. Atenção: curso parcial fora do sitemap do .com é **intencional** (regra `explicacaoCompleta`) — não "corrigir" sem ordem do Felipe; o que falta é distinguir decisão de esquecimento, página a página.
+- **D14 Acabamentos visuais (inspeção desktop, 11/11)** →
+  - `/assinatura` .br: grade desalinhada, anual sozinho com vazio à direita → grade de 3 cartões equilibrada (ver D3/D4 e regra dos cartões).
+  - Home .br `#planos` e `/cursos`: botões sem alinhamento na base; leque de livros **corta o livro de russo** e esconde o título; busca de `/cursos` é um contêiner gigante com o campo em ~1/3 da largura → corrigir os três.
+  - `/curso/ru/dia/1` (página da aula): coluna estreita com ~1/3 da tela vazia à direita; título "Introdução" numa serifada pesada estranha ao site; pílula "Revisão" órfã; barra de progresso invisível → alargar a coluna ou usar a direita (progresso/áudio), título na fonte padrão dos demais, progresso visível.
+  - `.com/curso/ru`: hero **sem a capa do livro** que existe no .br (metade direita vazia) → mesmo hero dos dois perfis.
+  - `.com` home: grade de cursos 3+2 com célula vazia → layout pensado para 5 cartões.
+  - Rodapé (todos): ícones finos/de baixo contraste e terço direito vazio; no .com, rótulos de acessibilidade das redes estão em português → contraste/uso do espaço e rótulos no idioma do perfil.
+- **D15 Observação** → `/privacidade` e `/termos` (dois domínios): a leitura de texto só extraiu título+descrição → conferir a renderização do corpo no navegador antes de concluir qualquer defeito.
+
+## NÃO MEXER (verificado bom em 11/11/2026)
+Conteúdo pedagógico inteiro (livros e capítulos 1–2 de todos os idiomas, aulas grátis 1–2 completas), paywall na sessão 9 nos dois domínios, `/cursos` do .br, cursos completos (RU/FR/BR no .com; todos no .br), gramáticas completas, preços exibidos (batem com `planos.ts` nos dois domínios), robots.txt dos dois domínios, 404 real. A auditoria leu 73 URLs e **não encontrou nenhum placeholder de conteúdo**.
+
 ---
-*Base: auditoria de 11/11/2026 (HEAD `a4872027`). Atualize a tabela de catálogo e as armadilhas quando os fatos mudarem — CLAUDE.md desatualizado é pior que nenhum.*
+*Base: auditoria de 11/11/2026 (HEAD `a4872027`) + leitura completa dos sites em 11/11/2026 (73 URLs). Atualize a tabela de catálogo, as armadilhas e os itens D quando os fatos mudarem — CLAUDE.md desatualizado é pior que nenhum.*
