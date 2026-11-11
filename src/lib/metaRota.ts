@@ -518,7 +518,12 @@ function gramaticaGratisParaHtml(d: DadosMeta | null, idioma: string, sufixo: st
   try {
     const pacote = JSON.parse(fs.readFileSync(arquivo, 'utf8'));
     const topicos = (pacote.topicos as Bloco[]).filter((t) => typeof t.dia === 'number' && t.dia <= SESSOES_GRATIS);
-    const corpo = topicos.map((t) => `<section><h2>${esc(String(t.titulo ?? ''))}</h2>${String(t.explicacao ?? '').split(/\s*(?:PASSO|STEP) \d+:\s*/).filter(Boolean).map((p) => `<p>${esc(p)}</p>`).join('')}</section>`).join('');
+    // WCAG 3.1.2: todo trecho no idioma estudado leva lang, para o leitor de tela e o Google lerem com a voz certa.
+    const lang = idioma === 'br' ? 'pt-BR' : idioma;
+    const marcar = (s: string) => esc(s).replace(/«([^»]+)»/g, `«<span lang="${lang}">$1</span>»`);
+    const exemplos = (t: Bloco) => Array.isArray(t.exemplos) && t.exemplos.length ? `<ul>${(t.exemplos as Bloco[]).map((e) => `<li><span lang="${lang}">${esc(String(e.ru ?? ''))}</span>${e.pt ? ` — ${esc(String(e.pt))}` : ''}</li>`).join('')}</ul>` : '';
+    const erros = (t: Bloco) => Array.isArray(t.erros) && t.erros.length ? `<ul>${(t.erros as Bloco[]).map((e) => `<li>✗ <span lang="${lang}">${esc(String(e.errado ?? ''))}</span> → ✓ <span lang="${lang}">${esc(String(e.certo ?? ''))}</span></li>`).join('')}</ul>` : '';
+    const corpo = topicos.map((t) => `<section><h2>${esc(String(t.titulo ?? ''))}</h2>${String(t.explicacao ?? '').split(/\s*(?:PASSO|STEP) \d+:\s*/).filter(Boolean).map((p) => `<p>${marcar(p)}</p>`).join('')}${exemplos(t)}${erros(t)}</section>`).join('');
     cacheGramatica.set(arquivo, corpo);
     return corpo;
   } catch { return ''; }
