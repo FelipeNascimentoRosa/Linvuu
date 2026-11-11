@@ -1,0 +1,17 @@
+# EOL canônico dos arquivos gerados: LF.
+#
+# `scripts/seo.mjs` grava estes quatro arquivos com '\n' puro (o site é servido por Linux no Render,
+# então o byte publicado precisa ser LF). No Windows, `core.autocrlf=true` fazia o checkout gravar
+# CRLF; a cada `npm run build` o gerador regravava LF e os dois sitemaps voltavam a aparecer como
+# modificados sem nenhuma diferença de conteúdo (`git diff` vazio, `git add` sem stage) — árvore
+# suja, commit ambíguo e risco de arrastar ruído para um PR de outra frente.
+# Declarar `eol=lf` aqui tira o CRLF da equação: o que sai do checkout é o mesmo byte que o gerador
+# escreve. Vale para Windows e Linux, independente do `core.autocrlf` de cada máquina.
+# Escopo estreito de propósito: `public/llms.txt` e `public/llms-global.txt` não são gerados pelo
+# seo.mjs e ficam fora desta regra (evita renormalizar arquivo que ninguém pediu).
+#
+# motor-processo.02 — FILA-DE-TRABALHO.md §4 #9 e §11 #13.
+public/sitemap.xml text eol=lf
+public/sitemap-global.xml text eol=lf
+public/robots.txt text eol=lf
+public/robots-global.txt text eol=lf
