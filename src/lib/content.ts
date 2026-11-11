@@ -73,8 +73,7 @@ const traducao = (id: string, explicacao = explicacaoDoCurso(id)): Traducao | un
 /** Quantas aulas do curso estão explicadas no idioma do site (todas, quando o curso foi escrito nele). */
 export const coberturaDoCurso = (id: string) => {
   const total = INDICE[id]?.grupos?.length ?? 0;
-  /* Mede na língua do site: sem tradução, explicacaoDoCurso cai na língua de origem e a nota dizia "every lesson explained in English" sobre aulas em português (D1, /curso/it no .com). */
-  if (fonteDoCurso(id) === LOCALE.explicacao) return { traduzidas: total, total, reserva: LOCALE.explicacao };
+  if (fonteDoCurso(id) === explicacaoDoCurso(id)) return { traduzidas: total, total, reserva: explicacaoDoCurso(id) };
   return { traduzidas: traducao(id)?.aulas.length ?? 0, total, reserva: fonteDoCurso(id) };
 };
 /** Aulas explicadas NO IDIOMA DO SITE (independe da escolha do aluno): é o que decide se o curso entra na vitrine daquele domínio. */
