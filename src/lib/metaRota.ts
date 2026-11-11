@@ -7,7 +7,7 @@ import { COMECAR } from './comecar.ts';
 import { HOME_BR } from '../config/oferta-publica.ts';
 import fs from 'node:fs';
 import path from 'node:path';
-import { SESSOES_GRATIS, SESSOES_POR_AULA, PRECO_MENSAL, PRECO_TRIMESTRAL, PRECO_TRIMESTRAL_PIX, PRECO_ANUAL, CENTAVOS, CENTAVOS_USD, PRECOS, precoSchema } from '../config/planos.ts';
+import { SESSOES_GRATIS, PRECO_MENSAL, PRECO_TRIMESTRAL, PRECO_TRIMESTRAL_PIX, PRECO_ANUAL, CENTAVOS, CENTAVOS_USD, PRECOS, precoSchema } from '../config/planos.ts';
 import { LOCALES, Locale, caminhoEm, localeDoCaminho, localePadrao, semPrefixo, siteDoIdioma, urlAbsolutaEm } from '../i18n/locales.ts';
 import { EMAIL_OFICIAL } from '../config/site.ts';
 import { CONTATO, EX_ALUNOS } from './institucional.ts';
@@ -440,7 +440,6 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
       corpo = cabeca(`Capítulo ${c.n}: ${c.titulo}`, undefined) + `<p>${AUTORES.map((a) => esc(a.nome)).join(' e ')}</p>` + capituloParaHtml(c, livroMeta(mcl[1])?.lang ?? mcl[1]) + `<p><a href="/livros/${mcl[1]}">Voltar ao livro</a></p>`;
     }
     const mc = base.match(/^\/curso\/([^/]+)$/);
-    const md = base.match(/^\/curso\/([^/]+)\/dia\/(\d+)$/);
     const mg = base.match(/^\/gramatica\/([a-z]{2})$/);
     if (corpo) { /* livros */ } else if (mc) {
       const c = visiveis.find((x) => x.id === mc[1]);
@@ -458,22 +457,6 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
       // Ementa completa como texto: o que o curso ensina de verdade, aula por aula (só as amostras grátis viram link).
       if (grupos.length) corpo += `<h2>${esc(tx.ementa(grupos.length))}</h2><ol>${grupos.map((g) => `<li>${esc(mesmo ? g.titulo : tr?.[g.aula] ?? g.titulo)}</li>`).join('')}</ol>`;
       if (c && d && gramaticaExisteEm(d, mc[1], loc.explicacao)) corpo += `<p>${a(`/gramatica/${mc[1]}`, tx.gramC(c.nome))}</p>`;
-    } else if (md) {
-      // Navegação entre sessões da amostra pública + curso + gramática do curso, na língua da página.
-      // A vizinha só entra se também for indexável nesta língua (a aula dela traduzida), com o mesmo
-      // critério de metaSemLocale — nada de links do pré-render para páginas noindex.
-      const diaN = Number(md[2]);
-      const nomeCurso = visiveis.find((x) => x.id === md[1])?.nome ?? md[1];
-      const navegar: string[] = [];
-      const vizinhaIndexavel = (n: number) => {
-        const g = d?.indice[md[1]]?.grupos?.find((x) => n >= x.dias[0] && n <= x.dias[1]);
-        return !!g && ((d?.indice[md[1]]?.fonte ?? 'pt') === loc.explicacao || !!d?.indice[md[1]]?.tr?.[loc.explicacao]?.aulas?.includes(g.aula));
-      };
-      if (diaN > 1 && vizinhaIndexavel(diaN - 1)) navegar.push(a(`/curso/${md[1]}/dia/${diaN - 1}`, tx.ant(diaN - 1)));
-      navegar.push(a(`/curso/${md[1]}`, nomeCurso));
-      if (d && gramaticaExisteEm(d, md[1], loc.explicacao)) navegar.push(a(`/gramatica/${md[1]}`, tx.gramC(nomeCurso)));
-      if (diaN < SESSOES_GRATIS && vizinhaIndexavel(diaN + 1)) navegar.push(a(`/curso/${md[1]}/dia/${diaN + 1}`, tx.seg(diaN + 1)));
-      corpo = cabeca(m.h1 ?? m.titulo ?? '', m.descricao) + (loc.codigo === 'pt-BR' ? sessaoGratisParaHtml(d, md[1], diaN) : sessaoGratisEnParaHtml(d, md[1], diaN)) + `<p>${navegar.join(' · ')}</p>`;
     } else if (mg && d) {
       // Só chega aqui o que é indexável (o topo da função devolve '' para noindex): a gramática existe na língua da página.
       const suf = (d.indice[mg[1]]?.fonte ?? 'pt') === loc.explicacao ? '' : loc.explicacao;
@@ -524,7 +507,7 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
   return corpo ? `<main data-prerender>${menu}${corpo}</main>` : '';
 }
 
-/** Sessão de aula grátis (dias 1 a SESSOES_GRATIS) em HTML simples para quem não executa JavaScript. O que é pago nunca passa por aqui. */
+/** Bloco de conteúdo de um arquivo de gramática (JSON), renderizado em HTML simples para quem não executa JavaScript. */
 type Bloco = Record<string, any>;
 const cacheGramatica = new Map<string, string>();
 /** Apenas tópicos públicos que a página também mostra a visitantes após carregar a API. */
@@ -539,62 +522,6 @@ function gramaticaGratisParaHtml(d: DadosMeta | null, idioma: string, sufixo: st
     cacheGramatica.set(arquivo, corpo);
     return corpo;
   } catch { return ''; }
-}
-const cacheSessoesEn = new Map<string, any>();
-const ROTULOS_SESSAO = {
-  en: { voc: 'Vocabulary', pron: 'pronunciation', trad: 'english', alfa: 'Alphabet and sounds', letra: 'letter', som: 'sound', ex: 'example', lingua: 'In English:', pratica: 'Practise:' },
-} as const;
-/** Sessão gratuita (dias 1 a 8) explicada em inglês: content/idiomas/<curso>/en/dia-NNN.json,
- * ou o arquivo-base quando essa é a língua-fonte do curso (português para estrangeiros). Mesma regra de privacidade da versão em português. */
-function sessaoGratisEnParaHtml(d: DadosMeta | null, curso: string, dia: number, lingua: 'en' = 'en'): string {
-  if (!d?.raiz || dia < 1 || dia > SESSOES_GRATIS || !/^[a-z]{2}$/.test(curso)) return '';
-  const nomeArq = `dia-${String(dia).padStart(3, '0')}.json`;
-  const f = (d.indice[curso]?.fonte ?? 'pt') === lingua ? path.join(d.raiz, 'content', 'idiomas', curso, nomeArq) : path.join(d.raiz, 'content', 'idiomas', curso, lingua, nomeArq);
-  const R = ROTULOS_SESSAO[lingua];
-  let arq = cacheSessoesEn.get(f);
-  if (!arq) { try { arq = JSON.parse(fs.readFileSync(f, 'utf8')); cacheSessoesEn.set(f, arq); } catch { return ''; } }
-  const sessao = arq.sessao;
-  if (!sessao?.blocos) return '';
-  const t = (x: unknown) => esc(String(x ?? ''));
-  // Nos arquivos traduzidos a tradução fica em «en» (no curso de português para estrangeiros, em «pt»); campo vazio não conta.
-  const en = (x: Bloco) => x[lingua] || x.en || x.pt;
-  const paras = (x: string) => String(x ?? '').split(/\s*(?:PASSO|STEP) \d+:\s*/).filter(Boolean).map((y) => `<p>${t(y)}</p>`).join('');
-  const tab = (linhas: Bloco[]) => linhas?.length ? `<table><thead><tr>${Object.keys(linhas[0]).map((k) => `<th>${t(k)}</th>`).join('')}</tr></thead><tbody>${linhas.map((l) => `<tr>${Object.values(l).map((v) => `<td>${t(v)}</td>`).join('')}</tr>`).join('')}</tbody></table>` : '';
-  const partes: string[] = [`<p>${t(arq.objetivo)}</p>`];
-  for (const b of sessao.blocos as Bloco[]) {
-    if (b.tipo === 'intro' || b.tipo === 'revisao') partes.push(`<p>${t(b.texto ?? b.enunciado)}</p>`);
-    else if (b.tipo === 'palavras') partes.push(`<h2>${R.voc}</h2>${tab((b.itens ?? []).map((i: Bloco) => ({ [curso]: i.ru, [R.pron]: i.translit, [R.trad]: en(i) })))}`);
-    else if (b.tipo === 'alfabeto') partes.push(`<h2>${R.alfa}</h2>` + (b.grupos ?? []).map((g: Bloco) => `<h3>${t(g.nome)}</h3>${tab((g.letras ?? []).map((l: Bloco) => ({ [R.letra]: `${l.maiuscula} ${l.minuscula}`, [R.som]: l.som, [R.ex]: l.exemplo, [R.trad]: l.exemploPt })))}`).join(''));
-    else if (b.tipo === 'gramatica') partes.push(`<h2>${t(b.titulo)}</h2>${paras(b.explicacao)}${b.comparacao ? `<p><strong>${R.lingua}</strong> ${t(b.comparacao)}</p>` : ''}${b.exemplos ? `<ul>${b.exemplos.map((e: Bloco) => `<li>${t(e.ru)} — ${t(en(e))}</li>`).join('')}</ul>` : ''}${b.tabela ? tab(b.tabela) : ''}${(b.tabelas ?? []).map((x: Bloco) => `<h3>${t(x.titulo)}</h3>${tab(x.linhas)}`).join('')}`);
-    else if (b.tipo === 'dialogo') partes.push(`<h2>${t(b.titulo)}</h2><p>${t(b.contexto)}</p><ul>${(b.linhas ?? []).map((l: Bloco) => `<li><strong>${t(l.personagem)}:</strong> ${t(l.ru)} <em>${t(en(l))}</em></li>`).join('')}</ul>`);
-    else if (b.tipo === 'texto') partes.push(`<h2>${t(b.titulo)}</h2><p>${t(b.ru)}</p><p>${t(en(b))}</p>`);
-    else if (b.tipo === 'producao') partes.push(`<p><strong>${R.pratica}</strong> ${t(b.enunciado)}</p>`);
-  }
-  return `<h2>${t(sessao.titulo)} (${t(sessao.duracaoMin)} min)</h2>${partes.join('')}`;
-}
-const cacheAulas = new Map<string, any>();
-function sessaoGratisParaHtml(d: DadosMeta | null, curso: string, dia: number): string {
-  if (!d?.raiz || dia < 1 || dia > SESSOES_GRATIS || !/^[a-z]{2}$/.test(curso)) return '';
-  const aulaN = Math.ceil(dia / SESSOES_POR_AULA), idx = (dia - 1) % SESSOES_POR_AULA;
-  const f = path.join(d.raiz, 'content', 'idiomas', curso, 'aulas', `aula-${String(aulaN).padStart(3, '0')}.json`);
-  let aula = cacheAulas.get(f);
-  if (!aula) { try { aula = JSON.parse(fs.readFileSync(f, 'utf8')); cacheAulas.set(f, aula); } catch { return ''; } }
-  const sessao = aula.sessoes?.[idx];
-  if (!sessao) return '';
-  const t = (x: unknown) => esc(String(x ?? ''));
-  const paras = (x: string) => String(x ?? '').split(/\s*PASSO \d+:\s*/).filter(Boolean).map((y) => `<p>${t(y)}</p>`).join('');
-  const tab = (linhas: Bloco[]) => linhas?.length ? `<table><thead><tr>${Object.keys(linhas[0]).map((k) => `<th>${t(k)}</th>`).join('')}</tr></thead><tbody>${linhas.map((l) => `<tr>${Object.values(l).map((v) => `<td>${t(v)}</td>`).join('')}</tr>`).join('')}</tbody></table>` : '';
-  const partes: string[] = [`<p>${t(aula.objetivo)}</p>`];
-  for (const b of sessao.blocos as Bloco[]) {
-    if (b.tipo === 'intro' || b.tipo === 'revisao') partes.push(`<p>${t(b.texto ?? b.enunciado)}</p>`);
-    else if (b.tipo === 'palavras') partes.push(`<h2>Vocabulário</h2>${tab(b.itens.map((i: Bloco) => ({ [curso]: i.ru, pronúncia: i.translit, português: i.pt })))}`);
-    else if (b.tipo === 'alfabeto') partes.push(`<h2>Alfabeto e sons</h2>` + (b.grupos ?? []).map((g: Bloco) => `<h3>${t(g.nome)}</h3>${tab(g.letras.map((l: Bloco) => ({ letra: `${l.maiuscula} ${l.minuscula}`, som: l.som, exemplo: l.exemplo, tradução: l.exemploPt })))}`).join(''));
-    else if (b.tipo === 'gramatica') partes.push(`<h2>${t(b.titulo)}</h2>${paras(b.explicacao)}${b.comparacao ? `<p><strong>Em português:</strong> ${t(b.comparacao)}</p>` : ''}${b.exemplos ? `<ul>${b.exemplos.map((e: Bloco) => `<li>${t(e.ru)} — ${t(e.pt)}</li>`).join('')}</ul>` : ''}${b.tabela ? tab(b.tabela) : ''}${(b.tabelas ?? []).map((x: Bloco) => `<h3>${t(x.titulo)}</h3>${tab(x.linhas)}`).join('')}${b.erros ? `<h3>Erros comuns</h3><ul>${b.erros.map((e: Bloco) => `<li>${t(e.errado)} → ${t(e.certo)}. ${t(e.motivo)}</li>`).join('')}</ul>` : ''}`);
-    else if (b.tipo === 'dialogo') partes.push(`<h2>${t(b.titulo)}</h2><p>${t(b.contexto)}</p><ul>${b.linhas.map((l: Bloco) => `<li><strong>${t(l.personagem)}:</strong> ${t(l.ru)} <em>${t(l.pt)}</em></li>`).join('')}</ul>`);
-    else if (b.tipo === 'texto') partes.push(`<h2>${t(b.titulo)}</h2><p>${t(b.ru)}</p><p>${t(b.pt)}</p>`);
-    else if (b.tipo === 'producao') partes.push(`<p><strong>Pratique:</strong> ${t(b.enunciado)}</p>`);
-  }
-  return `<h2>${t(sessao.titulo)} (${t(sessao.duracaoMin)} min)</h2>${partes.join('')}`;
 }
 
 const SITE_BR = 'https://linvuu.com.br';
