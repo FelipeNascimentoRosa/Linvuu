@@ -18,6 +18,7 @@ export type DepsCobranca = {
     liberar: (uid: string, pagamento: string) => Promise<void>;
   };
   enviarCompra: (c: Compra) => Promise<number>;
+  funil?: (tipo: 'checkout_pago', chave: string, ts?: number) => Promise<void>;
   uidConhecido?: (cliente: string) => string | undefined;
   lembrarUid?: (cliente: string, uid: string) => void;
   esquecerMemoria?: (uid: string) => void;
@@ -86,7 +87,10 @@ export function criarProcessadorCobranca(d: DepsCobranca) {
     if (sessao?.payment_status === 'paid' && sessao.mode === 'payment') await d.registro.gravar(uid, { pagamentos: { [sessao.id]: evento.created } });
     if (evento.type === 'charge.refunded' || evento.type === 'charge.dispute.created') await encerrarMensalDevolvida(clienteId, evento);
     await acessoDoCliente(uid, clienteId);
-    if (sessao?.payment_status === 'paid') await registrarConversao(uid, sessao, evento.created);
+    if (sessao?.payment_status === 'paid') {
+      await d.funil?.('checkout_pago', sessao.id, evento.created * 1000);
+      await registrarConversao(uid, sessao, evento.created);
+    }
   }
 
   return { processarEvento, acessoDoCliente };

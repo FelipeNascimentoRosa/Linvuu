@@ -4,6 +4,7 @@ import type { Express, Request, Response } from 'express';
 import { FieldValue, getFirestore } from 'firebase-admin/firestore';
 import { usuario } from './billing';
 import { firebaseAdmin, projetoFirebase } from './firebase-admin';
+import { registrarFunil } from './funil';
 
 const projeto = projetoFirebase;
 const COLECAO = 'users';
@@ -43,6 +44,8 @@ export function registrarProgresso(app: Express) {
         { licoesCompletas: feito ? FieldValue.arrayUnion(chave) : FieldValue.arrayRemove(chave) },
         { merge: true },
       );
+      // Funil: a 1ª e a 8ª sessão concluídas (a 9ª é o paywall). Uma vez por aluno, em qualquer idioma.
+      if (feito && (dia === 1 || dia === 8)) await registrarFunil(dia === 1 ? 'sessao_1' : 'sessao_8', u.uid);
       res.json({ ok: true });
     } catch {
       res.status(500).json({ error: 'Não foi possível salvar o progresso.' });

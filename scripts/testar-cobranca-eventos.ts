@@ -29,6 +29,7 @@ const reg = new Map<string, Registro>();
 const reservas = new Set<string>();
 const compras: Compra[] = [];
 let aceitar = 1;
+const funil: { tipo: string; chave: string; ts?: number }[] = [];
 const p = criarProcessadorCobranca({
   stripe: () => fake,
   registro: {
@@ -38,6 +39,7 @@ const p = criarProcessadorCobranca({
     liberar: async (uid, id) => { reservas.delete(uid + id); },
   },
   enviarCompra: async (c) => { compras.push(c); return aceitar; },
+  funil: async (tipo, chave, ts) => { funil.push({ tipo, chave, ts }); },
   agora: () => agora,
 });
 const evento = (type: string, object: object, created = agora, id = `evt_${Math.random()}`) => ({ id, type, created, data: { object } }) as unknown as Stripe.Event;
@@ -48,13 +50,14 @@ let n = 0; const ok = (m: string) => { n++; console.log('ok', m); };
 const pix = { id: 'cs_pix', object: 'checkout.session', customer: 'cus_A', mode: 'payment', created: t('2026-11-01T10:00:00Z'), payment_status: 'unpaid', metadata: { plano: 'trimestral-pix', ads: '1', ph: '' }, amount_total: 29190, currency: 'brl', customer_details: { email: 'aluno@exemplo.com' }, payment_intent: { id: 'pi_pix', latest_charge: null } };
 sessoes.push(pix);
 await p.processarEvento('cus_A', evento('checkout.session.completed', pix, t('2026-11-01T10:05:00Z')));
-assert.equal(acesso()?.ativa, false); assert.equal(compras.length, 0);
+assert.equal(acesso()?.ativa, false); assert.equal(compras.length, 0); assert.equal(funil.length, 0, 'Pix pendente não entra no funil como pago');
 ok('Pix pendente não libera nem conta como compra (uid achado pelo cliente do Stripe, sem memória de processo)');
 pix.payment_status = 'paid'; (pix.payment_intent as { latest_charge: unknown }).latest_charge = { created: t('2026-11-03T09:00:00Z'), amount: 29190, amount_refunded: 0, refunded: false, disputed: false };
 await p.processarEvento('cus_A', evento('checkout.session.async_payment_succeeded', pix, t('2026-11-03T09:00:30Z')));
 assert.equal(acesso()?.ativa, true);
 assert.equal(acesso()?.ate, t('2027-02-03T09:00:30Z'));
 ok('Pix pago: acesso por 3 meses contados da confirmação');
+assert.deepEqual(funil, [{ tipo: 'checkout_pago', chave: 'cs_pix', ts: t('2026-11-03T09:00:30Z') * 1000 }], 'pago entra no funil uma vez, por id de sessão');
 assert.equal(compras.length, 1); assert.equal(compras[0].valor, 291.9); assert.equal(compras[0].email, 'aluno@exemplo.com');
 await p.processarEvento('cus_A', evento('checkout.session.async_payment_succeeded', pix, t('2026-11-03T09:00:30Z')));
 assert.equal(compras.length, 1);
