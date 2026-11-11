@@ -102,7 +102,7 @@ Uma linha por lote. O agente altera **só** a linha do lote em que trabalhou, no
 | 96 | Tornar a acessibilidade bloqueante no CI | A | a fazer | — | — |
 | 97 | Assistir 5 gravações por semana no Clarity | F | a fazer | — | — |
 | 98 | Publicar o painel semanal dos 6 números | A | a fazer | — | — |
-| 99 | Arquivar planos substituídos e deixar um só caminho de leitura | A | a fazer | — | — |
+| 99 | Arquivar planos substituídos e deixar um só caminho de leitura | A | PR aberto | #571 | 5 planos antigos movidos para docs/historico; AGENTS.md, CLAUDE.md e docs/README.md apontam só para docs/plano; links .md conferidos por script |
 | 100 | Reescrever o plano com números reais nos dois portões | A+F | a fazer | — | — |
 
 ## Portões
