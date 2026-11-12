@@ -27,7 +27,7 @@ Medido no repositório em 11/11/2026 (`ls content/idiomas/<id>/en`). Confira ant
 | Francês `fr` | 248/248 | completo, indexável | travado (curado à mão) |
 | Português p/ estrangeiros `br` | 248/248 (escrito em inglês) | completo, indexável | travado |
 | Espanhol `es` | 128/248 | parcial: nota de cobertura, fora do sitemap | travado o que existe |
-| Alemão `de` | 4/288 | parcial: nota de cobertura, fora do sitemap | travado o que existe |
+| Alemão `de` | 8/288 (aulas 1–2, as duas grátis) | parcial: nota de cobertura, fora do sitemap | travado o que existe |
 | Italiano `it` | 0/248 | parcial: nota de cobertura, fora do sitemap | — |
 
 Gramáticas em inglês servidas: `ru.en.json`, `fr.en.json`, `es.en.json`, `br.json` (travadas).
@@ -63,6 +63,7 @@ Fontes permitidas: FSI/DLI/Peace Corps (domínio público) como base; Wikibooks 
 | 11/11 | Guarda: ru/en e fr/en curados nunca regenerados por mapa | #590 | mergeado |
 | 11/11 | Este arquivo + trava `travas-en.json` no CI e no build | #591 | mergeado |
 | 11/11 | Espanhol aula 32 em inglês (relativos; sessões 125–128) | #592 | mergeado |
+| 11/11 | Alemão aula 2 em inglês (sessões 5–8, grátis): apresentar-se, «sein», du/ihr/Sie; primeira `de.en.json` (gramática parcial com nota honesta) | este PR | aberto |
 
 ## 6. O que falta no .com (ordem por impacto real)
 
@@ -73,3 +74,24 @@ Fontes permitidas: FSI/DLI/Peace Corps (domínio público) como base; Wikibooks 
 5. **D13 — `/gramatica` (índice) no sitemap do .com** e título com palavra-chave em inglês.
 6. **Alemão** (284 sessões) e **italiano** (248) em inglês — depois do espanhol.
 7. **Compra real em USD de ponta a ponta** (lote 3): webhook, acesso à sessão 9, reembolso.
+
+## 7. Plano do alemão em inglês (o curso mais vazio do .com)
+
+**Tamanho medido (11/11/2026):** 72 aulas, 288 sessões; faltam as aulas 3–72 — cerca de **17.200 textos e 100 mil palavras** de explicação (3× uma aula de espanhol). As 2 aulas grátis (sessões 1–8) já estão em inglês.
+
+**O aluno é falante nativo de inglês — o alemão é o idioma mais próximo do inglês do catálogo.** Cada aula explora isso:
+- **Parentes do inglês** como atalho de vocabulário: *Haus/house, Buch/book, trinken/drink, kommen/come, Wasser/water*.
+- **Falsos amigos do inglês**: *bekommen* (receber, não "become"), *Gift* (veneno), *also* (então), *wer* (quem, não "where"), *Handy* (celular), *eventuell* (talvez), *fast* (quase), *Chef* (chefe).
+- **O que o inglês perdeu e o alemão manteve**: gênero (*der/die/das*), casos (o inglês só guarda *he/him, who/whom*), verbo na 2ª posição e no fim da subordinada (*weil ich müde bin*), *du/ihr/Sie*.
+- **Pronúncia escrita para leitor de inglês**: *w = v*, *v = f*, *z = ts*, *ch* suave = «kh», *ü/ö* explicados a partir de «ee/eh» com lábios arredondados; maiúscula na sílaba forte.
+- Respostas-modelo de produção com a vida do aluno de inglês (*aus den USA, aus Kanada, aus England*), nunca «aus Brasilien».
+
+**Ordem (uma aula por PR, travada ao entrar):**
+1. **Bloco A1 (aulas 3–20)** — é o que o aluno que acabou as 2 aulas grátis encontra ao assinar; prioridade comercial.
+2. **Bloco A2 (aulas 21–46)** — Perfekt, casos, dativo, adjetivos, subordinadas.
+3. **Bloco B1/B2 (aulas 47–72)**.
+O espanhol (aulas 33–62) e o alemão andam em paralelo: uma aula de cada por rodada.
+
+**Fontes:** FSI German Basic Course (domínio público) como conferência da progressão e dos exercícios; Wikibooks German só como roteiro; texto final original. Nada de Goethe-Institut/DW/Duden copiado.
+
+**Ao fechar 288/288:** o curso entra no sitemap/hreflang do .com sozinho (`explicacaoCompleta`), a nota de cobertura some, e a gramática `de.en.json` fica completa.

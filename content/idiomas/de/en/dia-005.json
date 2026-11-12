@@ -1,0 +1,426 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 5,
+  "fase": 1,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Who I am: Ich heiße…",
+  "objetivo": "Lesson 2, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 2,
+    "titulo": "Who I am",
+    "objetivo": "Introduce yourself, ask someone's name and where they're from, and use «sein» (to be) in the present, with «du», «ihr» and «Sie».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Ich heiße…",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "dialogo",
+        "min": 5,
+        "titulo": "Hallo! Wie heißt du? / Hi! What's your name?",
+        "contexto": "Lea and Paul meet in line at a language school.",
+        "linhas": [
+          {
+            "personagem": "Lea",
+            "ru": "— Hallo! Ich heiße Lea. Wie heißt du?",
+            "pt": "— Hi! My name is Lea. What's your name?",
+            "audio": "Hallo! Ich heiße Lea. Wie heißt du?",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Hallo, Lea! Ich heiße Paul.",
+            "pt": "— Hi, Lea! My name is Paul.",
+            "audio": "Hallo, Lea! Ich heiße Paul.",
+            "rotulo": "Paul"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Woher kommst du, Paul?",
+            "pt": "— Where are you from, Paul?",
+            "audio": "Woher kommst du, Paul?",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Ich komme aus Brasilien. Und du?",
+            "pt": "— I'm from Brazil. And you?",
+            "audio": "Ich komme aus Brasilien. Und du?",
+            "rotulo": "Paul"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Ich komme aus Hamburg.",
+            "pt": "— I'm from Hamburg.",
+            "audio": "Ich komme aus Hamburg.",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Freut mich, Lea!",
+            "pt": "— Nice to meet you, Lea!",
+            "audio": "Freut mich, Lea!",
+            "rotulo": "Paul"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Freut mich auch, Paul!",
+            "pt": "— Nice to meet you too, Paul!",
+            "audio": "Freut mich auch, Paul!",
+            "rotulo": "Lea"
+          }
+        ]
+      },
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "heißen",
+            "translit": "HIGH-sen",
+            "pt": "to be called",
+            "en": "to be called",
+            "audio": "heißen"
+          },
+          {
+            "ru": "der Name",
+            "translit": "dehr NAH-meh",
+            "pt": "name",
+            "en": "name",
+            "audio": "der Name"
+          },
+          {
+            "ru": "der Vorname",
+            "translit": "dehr FOR-nah-meh",
+            "pt": "first name",
+            "en": "first name",
+            "audio": "der Vorname"
+          },
+          {
+            "ru": "der Nachname",
+            "translit": "dehr NAHKH-nah-meh",
+            "pt": "last name",
+            "en": "last name",
+            "audio": "der Nachname"
+          },
+          {
+            "ru": "kommen",
+            "translit": "KOM-en",
+            "pt": "to come",
+            "en": "to come",
+            "audio": "kommen"
+          },
+          {
+            "ru": "aus",
+            "translit": "OWSS",
+            "pt": "from (origin)",
+            "en": "from",
+            "audio": "aus"
+          },
+          {
+            "ru": "woher",
+            "translit": "voh-HEHR",
+            "pt": "where from",
+            "en": "where from",
+            "audio": "woher"
+          },
+          {
+            "ru": "wer",
+            "translit": "vehr",
+            "pt": "who",
+            "en": "who",
+            "audio": "wer"
+          },
+          {
+            "ru": "wie",
+            "translit": "vee",
+            "pt": "how",
+            "en": "how",
+            "audio": "wie"
+          },
+          {
+            "ru": "und",
+            "translit": "oont",
+            "pt": "and",
+            "en": "and",
+            "audio": "und"
+          },
+          {
+            "ru": "ja",
+            "translit": "yah",
+            "pt": "yes",
+            "en": "yes",
+            "audio": "ja"
+          },
+          {
+            "ru": "nein",
+            "translit": "nine",
+            "pt": "no",
+            "en": "no",
+            "audio": "nein"
+          },
+          {
+            "ru": "Freut mich",
+            "translit": "FROYT mikh",
+            "pt": "nice to meet you",
+            "en": "nice to meet you",
+            "audio": "Freut mich"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 7,
+        "titulo": "Word order and your first questions",
+        "explicacao": "STEP 1: listen to «Ich heiße Lea.» and then «Wie heißt du?». To say your name, the verb is «heißen», \"to be called\" — German says \"I am called Lea\", not \"my name is\". STEP 2: in German, the conjugated verb is always in SECOND position in the sentence. In «Ich heiße Lea», «ich» takes first position and «heiße» second. STEP 3: in questions with a question word, that word comes first. Examples: «wie», which means \"how\" and sounds like «vee», and «woher», which means \"where from\" and sounds like «voh-HEHR». The verb stays second: «Wie heißt du?» and «Woher kommst du?». STEP 4: in a yes/no question, the verb moves to the front: «Heißt du Lea?» — no \"do\" needed, unlike English. Answer «Ja» or «Nein». STEP 5: the verb ending changes with the person. With «ich», it ends in «e»: «ich heiße», «ich komme». With «du», it ends in «st»: «du kommst». In «heißen», the «ß» already makes the «s» sound, so you only add «t»: «du heißt». STEP 6: as in English, the pronoun is required: «Ich komme aus den USA», never just «Komme aus den USA». STEP 7: a heads-up. In «der Name» and «der Vorname», «der» is an article (a German \"the\"). You'll learn the articles in lesson 3. For now, repeat «der» together with the word.",
+        "comparacao": "English and German start out alike: «Ich heiße Lea», \"I am called Lea\". The difference shows up as soon as something else opens the sentence. English keeps subject-then-verb (\"Today I come\"), but German keeps the verb in second place no matter what comes first: «Heute komme ich», literally \"Today come I\". English has a trace of this in questions (\"Where are you from?\"), and German questions work the same way: «Woher kommst du?». One more trap: «Wer» means \"who\", not \"where\" — \"where\" is «wo».",
+        "tabelas": [
+          {
+            "titulo": "heißen, to be called",
+            "linhas": [
+              {
+                "pronome": "ich",
+                "forma": "heiße",
+                "exemplo": "Ich heiße Lea."
+              },
+              {
+                "pronome": "du",
+                "forma": "heißt",
+                "exemplo": "Wie heißt du?"
+              },
+              {
+                "pronome": "er / sie / es",
+                "forma": "heißt",
+                "exemplo": "Er heißt Paul."
+              },
+              {
+                "pronome": "wir",
+                "forma": "heißen",
+                "exemplo": "Wir heißen Müller."
+              },
+              {
+                "pronome": "ihr",
+                "forma": "heißt",
+                "exemplo": "Wie heißt ihr?"
+              },
+              {
+                "pronome": "sie / Sie",
+                "forma": "heißen",
+                "exemplo": "Wie heißen Sie?"
+              }
+            ]
+          },
+          {
+            "titulo": "kommen, to come",
+            "linhas": [
+              {
+                "pronome": "ich",
+                "forma": "komme",
+                "exemplo": "Ich komme aus Brasilien."
+              },
+              {
+                "pronome": "du",
+                "forma": "kommst",
+                "exemplo": "Woher kommst du?"
+              },
+              {
+                "pronome": "er / sie / es",
+                "forma": "kommt",
+                "exemplo": "Sie kommt aus Hamburg."
+              },
+              {
+                "pronome": "wir",
+                "forma": "kommen",
+                "exemplo": "Wir kommen aus Brasilien."
+              },
+              {
+                "pronome": "ihr",
+                "forma": "kommt",
+                "exemplo": "Woher kommt ihr?"
+              },
+              {
+                "pronome": "sie / Sie",
+                "forma": "kommen",
+                "exemplo": "Woher kommen Sie?"
+              }
+            ]
+          },
+          {
+            "titulo": "Questions and answers",
+            "linhas": [
+              {
+                "pergunta": "Wie heißt du?",
+                "resposta": "Ich heiße Anna.",
+                "pt": "What's your name? My name is Anna."
+              },
+              {
+                "pergunta": "Wie heißen Sie?",
+                "resposta": "Ich heiße Müller.",
+                "pt": "What's your name? (formal) My name is Müller."
+              },
+              {
+                "pergunta": "Woher kommst du?",
+                "resposta": "Ich komme aus Brasilien.",
+                "pt": "Where are you from? I'm from Brazil."
+              },
+              {
+                "pergunta": "Woher kommen Sie?",
+                "resposta": "Ich komme aus Brasilien.",
+                "pt": "Where are you from? (formal) I'm from Brazil."
+              }
+            ]
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich Anna heiße.",
+            "certo": "Ich heiße Anna.",
+            "motivo": "The conjugated verb goes in second position, right after «ich»."
+          },
+          {
+            "errado": "Wie du heißt?",
+            "certo": "Wie heißt du?",
+            "motivo": "In a question with «wie», the verb comes right after the question word."
+          },
+          {
+            "errado": "Du kommen aus Brasilien.",
+            "certo": "Du kommst aus Brasilien.",
+            "motivo": "With «du», the verb ends in «st»."
+          },
+          {
+            "errado": "Heiße Anna.",
+            "certo": "Ich heiße Anna.",
+            "motivo": "The pronoun «ich» can never be dropped, just like \"I\" in English."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Wie heißt du?",
+            "opcoes": [
+              "Wie heißt du?",
+              "Woher kommst du?",
+              "Wie geht’s?"
+            ],
+            "gabarito": "Wie heißt du?",
+            "explicacao": "You hear «vee HIGHST doo»: asking someone's name uses the verb «heißen». «Woher kommst du?» asks where they're from, and «Wie geht’s?» asks how they are.",
+            "id": "de-002-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ich komme aus Brasilien.",
+            "opcoes": [
+              "Ich komme aus Brasilien.",
+              "Ich heiße Paul.",
+              "Ich komme aus Hamburg."
+            ],
+            "gabarito": "Ich komme aus Brasilien.",
+            "explicacao": "The sentence has the verb «komme» and ends with «Brasilien». «Ich heiße Paul» gives a name, and «Hamburg» is a different city.",
+            "id": "de-002-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ich heiße Lea.",
+            "respostaEsperada": "Ich heiße Lea.",
+            "explicacao": "Write «heiße» with «ß», which sounds like «ss». The verb comes right after «ich», in second position.",
+            "id": "de-002-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Guten Morgen, Lea!",
+            "respostaEsperada": "Guten Morgen, Lea!",
+            "explicacao": "Back to lesson 1: «Guten Morgen» is the morning greeting, and the person's name comes after it, separated by a comma.",
+            "id": "de-002-e04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich ___ Anna. (heißen)",
+            "opcoes": [
+              "heiße",
+              "heißt",
+              "heißen"
+            ],
+            "gabarito": "heiße",
+            "explicacao": "With «ich», the verb ends in «e»: «ich heiße». The form «heißt» goes with «du», «er» or «ihr».",
+            "id": "de-002-e05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Du ___ aus Brasilien. (kommen)",
+            "opcoes": [
+              "kommst",
+              "komme",
+              "kommt"
+            ],
+            "gabarito": "kommst",
+            "explicacao": "With «du», the verb ends in «st»: «du kommst». The «e» ending is for «ich», and the «t» ending is for «er».",
+            "id": "de-002-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Ich heiße Paul.",
+              "Ich Paul heiße.",
+              "Heiße ich Paul."
+            ],
+            "gabarito": "Ich heiße Paul.",
+            "explicacao": "The conjugated verb goes in second position, right after «ich». «Heiße ich Paul?» would be a yes/no question.",
+            "id": "de-002-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"Where are you from?\"",
+            "opcoes": [
+              "kommst",
+              "du",
+              "Woher"
+            ],
+            "gabarito": "Woher kommst du?",
+            "explicacao": "The question word «Woher» comes first, the verb «kommst» second, and «du» after it.",
+            "id": "de-002-e08"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"Is your name Lea?\"",
+            "opcoes": [
+              "Lea",
+              "du",
+              "Heißt"
+            ],
+            "gabarito": "Heißt du Lea?",
+            "explicacao": "In a yes/no question, the verb opens the sentence: «Heißt», then «du», then the name.",
+            "id": "de-002-e09"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 4,
+        "enunciado": "Say out loud: «Hallo! Ich heiße … Ich komme aus … Freut mich!» (with your own name and country). Then ask a real or imaginary person both questions: «Wie heißt du? Woher kommst du?». If you can, record yourself for 20 seconds and listen back."
+      },
+      {
+        "tipo": "revisao",
+        "min": 2,
+        "enunciado": "Listen again to the greetings from the last lesson and repeat: «Hallo», «Guten Morgen», «Guten Tag», «Guten Abend», «Wie geht’s?» and «Tschüs». Then read «ich», «Schule» and «Buch» out loud."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-002.json",
+  "responsavel": null
+}
