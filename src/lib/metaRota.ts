@@ -45,7 +45,12 @@ export function explicacaoCompleta(d: DadosMeta, id: string, explicacao: string)
 /** A gramática existe num idioma quando é o idioma-fonte do curso ou quando há o arquivo traduzido. */
 export function gramaticaExisteEm(d: DadosMeta, id: string, explicacao: string): boolean {
   if ((d.indice[id]?.fonte ?? 'pt') === explicacao) return true;
-  return !!d.raiz && /^[a-z]{2}$/.test(id) && fs.existsSync(path.join(d.raiz, 'content', 'gramatica', `${id}.${explicacao}.json`));
+  if (!d.raiz || !/^[a-z]{2}$/.test(id) || !fs.existsSync(path.join(d.raiz, 'content', 'gramatica', `${id}.${explicacao}.json`))) return false;
+  // Gramática traduzida só vai ao Google com pelo menos METADE das aulas explicadas no idioma (ordem do Felipe,
+  // 12/11/2026): abaixo disso a página é majoritariamente em outra língua — fica noindex e fora do sitemap.
+  const ind = d.indice[id];
+  const grupos = ind?.grupos ?? [];
+  return grupos.length > 0 && (ind?.tr?.[explicacao]?.aulas ?? []).length * 2 >= grupos.length;
 }
 
 export function carregarDadosMeta(raiz: string): DadosMeta | null {

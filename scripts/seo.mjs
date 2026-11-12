@@ -66,7 +66,7 @@ if (fs.existsSync(dirLivros)) for (const id of fs.readdirSync(dirLivros).sort())
 const EXPLICACAO = { 'pt-BR': 'pt', en: 'en' };
 // Mesma regra de metaRota.ts (explicacaoCompleta / gramaticaExisteEm); scripts/testar-inventario-seo.ts confere as duas nos dois sentidos.
 const completo = (id, loc) => fonte(id) === EXPLICACAO[loc.c] || ((indice[id]?.grupos ?? []).length > 0 && (indice[id].grupos).every((g) => (tr[EXPLICACAO[loc.c]]?.[id]?.aulas ?? []).includes(g.aula)));
-const temGramatica = (id, loc) => fonte(id) === EXPLICACAO[loc.c] || fs.existsSync(path.join(raiz, 'content', 'gramatica', `${id}.${EXPLICACAO[loc.c]}.json`));
+const temGramatica = (id, loc) => fonte(id) === EXPLICACAO[loc.c] || (fs.existsSync(path.join(raiz, 'content', 'gramatica', `${id}.${EXPLICACAO[loc.c]}.json`)) && (indice[id]?.grupos ?? []).length > 0 && (tr[EXPLICACAO[loc.c]]?.[id]?.aulas ?? []).length * 2 >= indice[id].grupos.length);
 for (const c of cursos.filter((x) => x.status !== 'em-breve')) {
   const oferecidos = LOCALES.filter((l) => l.oculto !== c.id);
   const emHub = oferecidos.filter((l) => completo(c.id, l)).map((l) => l.c);
