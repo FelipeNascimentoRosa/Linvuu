@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { usePageTitle } from '../lib/usePageTitle';
 import { JsonLd } from '../components/JsonLd';
-import { EMAIL_OFICIAL } from '../config/site';
+import { emailOficial } from '../config/site';
 import { siteDoIdioma, urlAbsolutaEm } from '../i18n/locales';
 import { precosDo, SESSOES_GRATIS } from '../config/planos';
 import { LOCALE, useT } from '../i18n';
@@ -58,7 +58,7 @@ export default function Portugues() {
         <h2 id="pt-honesto" className="pagina-h2">{c.honestoT}</h2>
         <ul className="pt-pontos">
           <li><span>{c.honesto[0]}</span></li>
-          <li><span>{c.honesto[1]} <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>.</span></li>
+          <li><span>{c.honesto[1]} <a href={`mailto:${emailOficial()}`}>{emailOficial()}</a>.</span></li>
           <li><span>{c.honesto[2]}</span></li>
         </ul>
         {!emPortugues && (

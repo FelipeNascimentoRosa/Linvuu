@@ -2,7 +2,7 @@ import { FormEvent, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { authConfigurado } from '../lib/firebase';
 import { api } from '../lib/api';
-import { EMAIL_OFICIAL } from '../config/site';
+import { emailOficial } from '../config/site';
 import { LOCALE, useT } from '../i18n';
 
 const EMAIL_OK = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
@@ -33,7 +33,7 @@ export function Newsletter({ origem }: { origem: string }) {
     } catch { setEstado('erro'); }
   };
 
-  if (!authConfigurado) return <p className="news-nota"><a href={`mailto:${EMAIL_OFICIAL}?subject=${encodeURIComponent(t.newsletter.assunto)}`}>{EMAIL_OFICIAL}</a></p>;
+  if (!authConfigurado) return <p className="news-nota"><a href={`mailto:${emailOficial()}?subject=${encodeURIComponent(t.newsletter.assunto)}`}>{emailOficial()}</a></p>;
   if (estado === 'ok') return <p className="news-ok" role="status">{t.newsletter.ok}</p>;
   return (
     <form className="news" onSubmit={enviar} noValidate>
@@ -45,7 +45,7 @@ export function Newsletter({ origem }: { origem: string }) {
       <input type="text" name="ref_extra_nl" tabIndex={-1} autoComplete="off" aria-hidden="true" value={isca} onChange={(e) => setIsca(e.target.value)} style={{ position: 'absolute', left: '-10000px', width: 1, height: 1, opacity: 0 }} />
       <label className="check news-aceite"><input type="checkbox" checked={aceite} onChange={(e) => setAceite(e.target.checked)} /> {t.newsletter.consentimento} <Link to="/privacidade">{t.rodape.privacidade}</Link></label>
       {aviso && <p className="conta-erro" role="alert">{aviso}</p>}
-      {estado === 'erro' && <p className="conta-erro" role="alert">{t.newsletter.erro} <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>.</p>}
+      {estado === 'erro' && <p className="conta-erro" role="alert">{t.newsletter.erro} <a href={`mailto:${emailOficial()}`}>{emailOficial()}</a>.</p>}
     </form>
   );
 }

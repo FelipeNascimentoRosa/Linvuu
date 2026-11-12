@@ -5,7 +5,7 @@ import { Navegacao } from '../components/Navegacao';
 import { useAuth } from '../lib/AuthContext';
 import { abrir, useAssinatura } from '../lib/assinatura';
 import { AULAS_GRATIS, precosDo, FUNDADORES } from '../config/planos';
-import { EMAIL_OFICIAL } from '../config/site';
+import { emailOficial } from '../config/site';
 import { usePageTitle } from '../lib/usePageTitle';
 import { data, LOCALE, useT } from '../i18n';
 import { analytics } from '../lib/analytics';
@@ -63,7 +63,7 @@ export default function Assinatura() {
                   <button type="button" className="btn btn-primary" onClick={() => ir('portal')} disabled={ocupado} data-cta="assinatura_gerenciar">{s.gerenciar}</button>
                 </>
               )}
-              <p>{s.reembolso} <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>.</p>
+              <p>{s.reembolso} <a href={`mailto:${emailOficial()}`}>{emailOficial()}</a>.</p>
             </>
           ) : (
             <>
