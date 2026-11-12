@@ -1,0 +1,535 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 36,
+  "fase": 4,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Town and directions: Practice",
+  "objetivo": "Lesson 9, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 9,
+    "titulo": "Town and directions",
+    "objetivo": "Name places in town, tell Wo? (where) from Wohin? (where to) with «in», use «zu», and ask for and give directions.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Practice",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich bin ___ Park. (Wo?)",
+            "opcoes": [
+              "im",
+              "in den",
+              "ins"
+            ],
+            "gabarito": "im",
+            "explicacao": "Staying put: dative.",
+            "id": "de-009-e01"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Then turn left. The station is next to the post office.\"",
+            "opcoes": [
+              "Post.",
+              "Der",
+              "biegen",
+              "Bahnhof",
+              "Sie",
+              "neben",
+              "links",
+              "der",
+              "Dann",
+              "ab.",
+              "ist"
+            ],
+            "gabarito": "Dann biegen Sie links ab. Der Bahnhof ist neben der Post.",
+            "explicacao": "Write: Dann biegen Sie links ab. Der Bahnhof ist neben der Post.",
+            "id": "de-009-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich gehe ___ Park. (Wohin?)",
+            "opcoes": [
+              "in den",
+              "im",
+              "in dem"
+            ],
+            "gabarito": "in den",
+            "explicacao": "Movement: accusative.",
+            "id": "de-009-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Dann biegen Sie links ab. Der Bahnhof ist neben der Post.",
+            "respostaEsperada": "Dann biegen Sie links ab. Der Bahnhof ist neben der Post.",
+            "explicacao": "Then turn left. The station is next to the post office.",
+            "id": "de-009-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Wir sind ___ Schule. (Wo?)",
+            "opcoes": [
+              "in der",
+              "in die",
+              "im"
+            ],
+            "gabarito": "in der",
+            "explicacao": "Feminine, staying put.",
+            "id": "de-009-e03"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Is it far?\"",
+            "opcoes": [
+              "das",
+              "Ist",
+              "weit?"
+            ],
+            "gabarito": "Ist das weit?",
+            "explicacao": "Write: Ist das weit?",
+            "id": "de-009-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Entschuldigung, wo ist der Bahnhof?",
+            "respostaEsperada": "Entschuldigung, wo ist der Bahnhof?",
+            "explicacao": "Excuse me, where's the station?",
+            "id": "de-009-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ist das weit?",
+            "respostaEsperada": "Ist das weit?",
+            "explicacao": "Is it far?",
+            "id": "de-009-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Er geht ___ Schule. (Wohin?)",
+            "opcoes": [
+              "in die",
+              "in der",
+              "ins"
+            ],
+            "gabarito": "in die",
+            "explicacao": "Feminine, movement.",
+            "id": "de-009-e04"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"No, it's not far. It's ten minutes on foot.\"",
+            "opcoes": [
+              "weit.",
+              "es",
+              "Nein,",
+              "Zu",
+              "es",
+              "Minuten.",
+              "sind",
+              "nicht",
+              "ist",
+              "Fuß",
+              "zehn"
+            ],
+            "gabarito": "Nein, es ist nicht weit. Zu Fuß sind es zehn Minuten.",
+            "explicacao": "Write: Nein, es ist nicht weit. Zu Fuß sind es zehn Minuten.",
+            "id": "de-009-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Sie geht ___ Kino. (Wohin?)",
+            "opcoes": [
+              "ins",
+              "im",
+              "in den"
+            ],
+            "gabarito": "ins",
+            "explicacao": "Neuter, movement: in das = ins.",
+            "id": "de-009-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Nein, es ist nicht weit. Zu Fuß sind es zehn Minuten.",
+            "respostaEsperada": "Nein, es ist nicht weit. Zu Fuß sind es zehn Minuten.",
+            "explicacao": "No, it's not far. It's ten minutes on foot.",
+            "id": "de-009-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich fahre ___ Bahnhof.",
+            "opcoes": [
+              "zum",
+              "zur",
+              "ins"
+            ],
+            "gabarito": "zum",
+            "explicacao": "zu + dem = zum.",
+            "id": "de-009-e06"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"You're welcome! Goodbye!\"",
+            "opcoes": [
+              "Auf",
+              "geschehen!",
+              "Wiedersehen!",
+              "Gern"
+            ],
+            "gabarito": "Gern geschehen! Auf Wiedersehen!",
+            "explicacao": "Write: Gern geschehen! Auf Wiedersehen!",
+            "id": "de-009-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Der Bahnhof? Gehen Sie geradeaus bis zur Ampel.",
+            "respostaEsperada": "Der Bahnhof? Gehen Sie geradeaus bis zur Ampel.",
+            "explicacao": "The station? Go straight ahead to the traffic light.",
+            "id": "de-009-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Gern geschehen! Auf Wiedersehen!",
+            "respostaEsperada": "Gern geschehen! Auf Wiedersehen!",
+            "explicacao": "You're welcome! Goodbye!",
+            "id": "de-009-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich gehe ___ Post.",
+            "opcoes": [
+              "zur",
+              "zum",
+              "ins"
+            ],
+            "gabarito": "zur",
+            "explicacao": "zu + der = zur.",
+            "id": "de-009-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «das Krankenhaus» mean?",
+            "audio": "das Krankenhaus",
+            "opcoes": [
+              "hospital",
+              "far",
+              "post office",
+              "intersection"
+            ],
+            "gabarito": "hospital",
+            "explicacao": "«das Krankenhaus» = hospital (literally \"sick house\").",
+            "id": "de-009-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Gehen Sie geradeaus» is:",
+            "opcoes": [
+              "a formal command",
+              "a question",
+              "the past tense"
+            ],
+            "gabarito": "a formal command",
+            "explicacao": "Verb first, then «Sie».",
+            "id": "de-009-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «das Museum» mean?",
+            "audio": "das Museum",
+            "opcoes": [
+              "museum",
+              "train station",
+              "pharmacy",
+              "school"
+            ],
+            "gabarito": "museum",
+            "explicacao": "«das Museum» = museum.",
+            "id": "de-009-x10",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Gibt es hier eine Apotheke?",
+            "respostaEsperada": "Gibt es hier eine Apotheke?",
+            "explicacao": "Is there a pharmacy around here?",
+            "id": "de-009-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «die Post» mean?",
+            "audio": "die Post",
+            "opcoes": [
+              "post office",
+              "school",
+              "traffic light",
+              "straight ahead"
+            ],
+            "gabarito": "post office",
+            "explicacao": "«die Post» = post office (and mail).",
+            "id": "de-009-x11",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«rechts» means:",
+            "opcoes": [
+              "right",
+              "left",
+              "straight ahead"
+            ],
+            "gabarito": "right",
+            "explicacao": "rechts = right.",
+            "id": "de-009-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «der Supermarkt» mean?",
+            "audio": "der Supermarkt",
+            "opcoes": [
+              "street",
+              "supermarket",
+              "straight ahead",
+              "intersection"
+            ],
+            "gabarito": "supermarket",
+            "explicacao": "«der Supermarkt» = supermarket.",
+            "id": "de-009-x12",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"Turn left.\"",
+            "opcoes": [
+              "Biegen",
+              "Sie",
+              "links",
+              "ab"
+            ],
+            "gabarito": "Biegen Sie links ab.",
+            "explicacao": "abbiegen: the prefix goes to the end.",
+            "id": "de-009-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «nah» mean?",
+            "audio": "nah",
+            "opcoes": [
+              "bus stop",
+              "near, close",
+              "far",
+              "traffic light"
+            ],
+            "gabarito": "near, close",
+            "explicacao": "«nah» = near.",
+            "id": "de-009-x13",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Wo ist die Post?",
+            "opcoes": [
+              "Wo ist die Post?",
+              "Wo ist der Bahnhof?",
+              "Wo ist die Bank?"
+            ],
+            "gabarito": "Wo ist die Post?",
+            "explicacao": "«wo» = where (not «wer», who).",
+            "id": "de-009-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «geradeaus» mean?",
+            "audio": "geradeaus",
+            "opcoes": [
+              "straight ahead",
+              "near, close",
+              "bank",
+              "pharmacy"
+            ],
+            "gabarito": "straight ahead",
+            "explicacao": "«geradeaus» = straight ahead.",
+            "id": "de-009-x14",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Ja, die Apotheke ist gegenüber der Bank.",
+            "respostaEsperada": "Ja, die Apotheke ist gegenüber der Bank.",
+            "explicacao": "Yes, the pharmacy is across from the bank.",
+            "id": "de-009-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Wo ist die Post?",
+            "opcoes": [
+              "die",
+              "ist",
+              "Wo",
+              "Post?"
+            ],
+            "gabarito": "Wo ist die Post?",
+            "explicacao": "Write: Wo ist die Post?",
+            "id": "de-009-x15",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Gehen Sie geradeaus",
+            "respostaEsperada": "Gehen Sie geradeaus",
+            "explicacao": "Formal imperative.",
+            "id": "de-009-e12"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Gehen Sie geradeaus",
+            "opcoes": [
+              "Sie",
+              "Gehen",
+              "geradeaus"
+            ],
+            "gabarito": "Gehen Sie geradeaus",
+            "explicacao": "Write: Gehen Sie geradeaus",
+            "id": "de-009-x16",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "To ask for directions, you say:",
+            "opcoes": [
+              "Entschuldigung, wo ist die Post?",
+              "Ich bin die Post.",
+              "Die Post ist ein Bahnhof."
+            ],
+            "gabarito": "Entschuldigung, wo ist die Post?",
+            "explicacao": "A polite question.",
+            "id": "de-009-e13"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Wo ist die Post?",
+            "respostaEsperada": "Wo ist die Post?",
+            "explicacao": "Write: Wo ist die Post?",
+            "id": "de-009-x17",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Wir sind ___ Schule. (at)",
+            "opcoes": [
+              "in der",
+              "in die",
+              "im",
+              "ins"
+            ],
+            "gabarito": "in der",
+            "explicacao": "Where? Dative feminine: «in der».",
+            "id": "de-009-m01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich gehe ___ Kino. (to the)",
+            "opcoes": [
+              "ins",
+              "im",
+              "in der",
+              "zur"
+            ],
+            "gabarito": "ins",
+            "explicacao": "Movement: «in das» = «ins».",
+            "id": "de-009-m02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ Sie geradeaus. (Go)",
+            "opcoes": [
+              "Gehen",
+              "Gehe",
+              "Geht",
+              "Gehst"
+            ],
+            "gabarito": "Gehen",
+            "explicacao": "Formal imperative: «Gehen Sie».",
+            "id": "de-009-m03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence uses the formal imperative to tell someone to go straight ahead?",
+            "opcoes": [
+              "Sie gehen geradeaus!",
+              "Gehen Sie geradeaus!",
+              "Gehen geradeaus Sie!"
+            ],
+            "gabarito": "Gehen Sie geradeaus!",
+            "explicacao": "Formal imperative: verb first.",
+            "id": "de-009-m04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Ich bin in den Park.",
+              "Ich bin im Park.",
+              "Ich bin ins Park."
+            ],
+            "gabarito": "Ich bin im Park.",
+            "explicacao": "Staying put: dative.",
+            "id": "de-009-m05"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write 4 sentences: where a place is, how to get there, where you're going and where you live.",
+            "respostaEsperada": "Die Post ist neben der Bank. Gehen Sie geradeaus. Ich gehe ins Kino. Ich wohne in Berlin.",
+            "id": "de-009-e14"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Record yourself asking for and giving directions."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 4 sentences: where you are, where you're going, how to get to the station and where the pharmacy is."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-009.json",
+  "responsavel": null
+}

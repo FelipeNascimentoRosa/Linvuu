@@ -1,0 +1,249 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 37,
+  "fase": 4,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Review and test of the first block: Review map",
+  "objetivo": "Lesson 10, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 10,
+    "titulo": "Review and test of the first block",
+    "objetivo": "Review pronunciation, articles, the present, the accusative, separable verbs, time and directions, fix the most common English-speaker mistakes, and take the test for the first block.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Review map",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Lesson goal. By the end of the four sessions, you ask yes/no questions and questions with wer, was, wo, woher, wohin, wann and wie, and answer in full sentences."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "First day of class",
+        "contexto": "Camila is in the classroom. The teacher is taking attendance. Jonas sits next to her.",
+        "linhas": [
+          {
+            "personagem": "Lehrerin",
+            "ru": "— Guten Morgen! Wer ist Camila?",
+            "pt": "— Good morning! Who is Camila?",
+            "audio": "Guten Morgen! Wer ist Camila?",
+            "rotulo": "Lehrerin"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Das bin ich.",
+            "pt": "— That's me.",
+            "audio": "Das bin ich.",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Lehrerin",
+            "ru": "— Woher kommen Sie, Camila?",
+            "pt": "— Where are you from, Camila?",
+            "audio": "Woher kommen Sie, Camila?",
+            "rotulo": "Lehrerin"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Aus Brasilien. Ich wohne jetzt in München.",
+            "pt": "— From Brazil. Now I live in Munich.",
+            "audio": "Aus Brasilien. Ich wohne jetzt in München.",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Lehrerin",
+            "ru": "— Sprechen Sie Englisch?",
+            "pt": "— Do you speak English?",
+            "audio": "Sprechen Sie Englisch?",
+            "rotulo": "Lehrerin"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ja, ein bisschen.",
+            "pt": "— Yes, a little bit.",
+            "audio": "Ja, ein bisschen.",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Hallo, ich bin Jonas. Wo wohnst du?",
+            "pt": "— Hi, I'm Jonas. Where do you live?",
+            "audio": "Hallo, ich bin Jonas. Wo wohnst du?",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ich wohne in Schwabing.",
+            "pt": "— I live in Schwabing.",
+            "audio": "Ich wohne in Schwabing.",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Cool! Ich auch. Trinken wir nachher Kaffee?",
+            "pt": "— Cool! Me too. Shall we grab a coffee later?",
+            "audio": "Cool! Ich auch. Trinken wir nachher Kaffee?",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Gern!",
+            "pt": "— Let's!",
+            "audio": "Gern!",
+            "rotulo": "Camila"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "The English speaker's trap",
+        "explicacao": "STEP 1: there's a second trap. Modern English uses \"where\" for three ideas. German keeps them apart: STEP 2: wo for staying put, wohin for movement towards, woher for movement from — the old English \"where, whither, whence\".",
+        "comparacao": "English builds questions with \"do\": \"Do you live in Munich?\" German has no \"do\" at all: the verb itself moves to first position — Wohnst du in München? Think of English \"Are you…?\" or \"Can you…?\", where the verb already comes first, and do the same with every verb.",
+        "tabela": [
+          {
+            "ingles": "where (location)",
+            "alemao": "wo",
+            "exemplo": "Wo wohnst du?"
+          },
+          {
+            "ingles": "where to (whither)",
+            "alemao": "wohin",
+            "exemplo": "Wohin gehst du?"
+          },
+          {
+            "ingles": "where from (whence)",
+            "alemao": "woher",
+            "exemplo": "Woher kommst du?"
+          }
+        ],
+        "tag": "Trap"
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Everything you already know, in one table",
+        "explicacao": "This table sums up lessons 1 to 9, one line per point. Reread one line at a time and say an example of your own out loud. If something feels odd, go back to the lesson shown or open the topic in the Grammar tab.",
+        "tabela": [
+          {
+            "tema": "Pronunciation",
+            "regra": "ei = \"eye\", ie = long \"ee\", sch = \"sh\", ch = soft \"kh\" (ich) or throaty (Bach), w = \"v\", v = \"f\", z = \"ts\", s + vowel = \"z\".",
+            "aula": "1"
+          },
+          {
+            "tema": "Verb in 2nd position",
+            "regra": "The conjugated verb goes in 2nd position; a yes/no question starts with the verb — never with \"do\".",
+            "aula": "2, 4"
+          },
+          {
+            "tema": "sein and haben",
+            "regra": "ich bin, du bist, er ist...; ich habe, du hast, er hat...",
+            "aula": "2, 5"
+          },
+          {
+            "tema": "du, ihr, Sie",
+            "regra": "du (one friend), ihr (several friends), Sie (formal, one or several).",
+            "aula": "2"
+          },
+          {
+            "tema": "Gender and articles",
+            "regra": "der, die, das; every noun capitalized; learn the article with the word.",
+            "aula": "3"
+          },
+          {
+            "tema": "Plural",
+            "regra": "Five patterns: -e, -(e)n, -er, no ending, -s (often with an umlaut).",
+            "aula": "3"
+          },
+          {
+            "tema": "ein, eine, kein",
+            "regra": "ein Tisch, eine Lampe, kein Buch; in the plural, keine.",
+            "aula": "3"
+          },
+          {
+            "tema": "Regular present",
+            "regra": "-e, -st, -t, -en, -t, -en; stem in -t or -d: du arbeitest.",
+            "aula": "4"
+          },
+          {
+            "tema": "Possessives",
+            "regra": "mein, meine…: they agree with the thing owned.",
+            "aula": "5"
+          },
+          {
+            "tema": "Numbers",
+            "regra": "21 = einundzwanzig (unidade + und + dezena).",
+            "aula": "5, 6"
+          },
+          {
+            "tema": "Time",
+            "regra": "«halb neun» = 8h30; Viertel vor / nach.",
+            "aula": "6"
+          },
+          {
+            "tema": "Days, months, dates",
+            "regra": "am Montag, im Mai, der 5. Oktober.",
+            "aula": "6"
+          },
+          {
+            "tema": "Accusative",
+            "regra": "Only the masculine changes: der → den, ein → einen, kein → keinen.",
+            "aula": "5, 7"
+          },
+          {
+            "tema": "Verbs e → i",
+            "regra": "du isst, er liest, du nimmst.",
+            "aula": "7"
+          },
+          {
+            "tema": "möchten",
+            "regra": "ich möchte … + second verb in the infinitive, at the end.",
+            "aula": "7"
+          },
+          {
+            "tema": "Separable verbs",
+            "regra": "Ich stehe um sieben Uhr auf.",
+            "aula": "8"
+          },
+          {
+            "tema": "a → ä",
+            "regra": "du fährst, er schläft.",
+            "aula": "8"
+          },
+          {
+            "tema": "Wo? × Wohin?",
+            "regra": "im Park (dativo) × in den Park (acusativo).",
+            "aula": "9"
+          },
+          {
+            "tema": "Formal imperative",
+            "regra": "Gehen Sie geradeaus!",
+            "aula": "9"
+          }
+        ],
+        "tag": "Review"
+      },
+      {
+        "tipo": "producao",
+        "min": 7,
+        "enunciado": "Introduce yourself out loud in 8 sentences: name, where you're from, age, family, where you live, what you eat, when you get up and how you get to work."
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Read the alphabet and the combinations ei, ie, eu, au, sch, ch, sp, st out loud."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-010.json",
+  "responsavel": null
+}

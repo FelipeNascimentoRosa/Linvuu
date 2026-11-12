@@ -1,0 +1,280 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 39,
+  "fase": 4,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Review and test of the first block: The most common mistakes",
+  "objetivo": "Lesson 10, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 10,
+    "titulo": "Review and test of the first block",
+    "objetivo": "Review pronunciation, articles, the present, the accusative, separable verbs, time and directions, fix the most common English-speaker mistakes, and take the test for the first block.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "The most common mistakes",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "The 10 most common English-speaker mistakes",
+        "explicacao": "These ten mistakes show up most often in English speakers. Fixing just these makes your German sound far more natural. Read each pair out loud: first the wrong one (to recognize how odd it sounds), then the right one.",
+        "erros": [
+          {
+            "errado": "Ich habe 20 Jahre.",
+            "certo": "Ich bin 20 Jahre alt.",
+            "motivo": "Same as English: \"I am 20 years old\" — but don't drop alt after Jahre."
+          },
+          {
+            "errado": "Heute ich arbeite.",
+            "certo": "Heute arbeite ich.",
+            "motivo": "Verb in 2nd position: \"Today work I\"."
+          },
+          {
+            "errado": "Tust du hier wohnen?",
+            "certo": "Wohnst du hier?",
+            "motivo": "No \"do\": the verb itself opens the question."
+          },
+          {
+            "errado": "Ich bin lerne Deutsch.",
+            "certo": "Ich lerne Deutsch.",
+            "motivo": "No \"am …-ing\": one verb form covers both."
+          },
+          {
+            "errado": "die Tisch",
+            "certo": "der Tisch",
+            "motivo": "One \"the\" in English, three in German: learn the article with the word."
+          },
+          {
+            "errado": "ich lerne deutsch.",
+            "certo": "Ich lerne Deutsch.",
+            "motivo": "Capital letter at the start and on every noun; languages too, as in English."
+          },
+          {
+            "errado": "Ich möchte trinken einen Kaffee.",
+            "certo": "Ich möchte einen Kaffee trinken.",
+            "motivo": "The second verb goes to the end."
+          },
+          {
+            "errado": "Ich kaufe es. (der Computer)",
+            "certo": "Ich kaufe ihn.",
+            "motivo": "A masculine thing is ihn, not \"it\" = es."
+          },
+          {
+            "errado": "Wir steigen aus am Marienplatz.",
+            "certo": "Wir steigen am Marienplatz aus.",
+            "motivo": "The separable prefix goes to the very end, not where English puts \"off\"."
+          },
+          {
+            "errado": "halb drei = 3:30",
+            "certo": "halb drei = 2:30",
+            "motivo": "halb looks ahead: half an hour BEFORE three (British \"half three\" is the opposite)."
+          }
+        ],
+        "tag": "Review"
+      },
+      {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "Wie heißt du? / Wie heißen Sie?",
+            "translit": "",
+            "pt": "What's your name? (informal / formal)",
+            "en": "",
+            "audio": "Wie heißt du? / Wie heißen Sie?"
+          },
+          {
+            "ru": "Woher kommen Sie?",
+            "translit": "",
+            "pt": "Where are you from? (formal)",
+            "en": "",
+            "audio": "Woher kommen Sie?"
+          },
+          {
+            "ru": "Wo wohnst du?",
+            "translit": "",
+            "pt": "Where do you live?",
+            "en": "",
+            "audio": "Wo wohnst du?"
+          },
+          {
+            "ru": "Was machst du?",
+            "translit": "",
+            "pt": "What do you do?",
+            "en": "",
+            "audio": "Was machst du?"
+          },
+          {
+            "ru": "Sprechen Sie Englisch?",
+            "translit": "",
+            "pt": "Do you speak English? (formal)",
+            "en": "",
+            "audio": "Sprechen Sie Englisch?"
+          },
+          {
+            "ru": "Was bedeutet das?",
+            "translit": "",
+            "pt": "What does that mean?",
+            "en": "",
+            "audio": "Was bedeutet das?"
+          },
+          {
+            "ru": "Wie sagt man … auf Deutsch?",
+            "translit": "",
+            "pt": "How do you say … in German?",
+            "en": "",
+            "audio": "Wie sagt man … auf Deutsch?"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "___ wohnst du?",
+            "opcoes": [
+              "Wo",
+              "Wohin",
+              "Woher"
+            ],
+            "gabarito": "Wo",
+            "explicacao": "Wo asks where someone lives: Wo wohnst du? Wohin asks about a destination and woher about origin.",
+            "id": "de-010-L-101"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ask about the destination: ___ gehst du heute?",
+            "opcoes": [
+              "Wo",
+              "Wohin",
+              "Woher"
+            ],
+            "gabarito": "Wohin",
+            "explicacao": "We need the destination. Wohin means \"where to\": Wohin gehst du heute? (Where are you going today?)",
+            "id": "de-010-L-102"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ask about the origin: ___ kommt Tom?",
+            "opcoes": [
+              "Wo",
+              "Wohin",
+              "Woher"
+            ],
+            "gabarito": "Woher",
+            "explicacao": "We need the origin. Woher means \"where from\": Woher kommt Tom? Wohin would ask about a destination.",
+            "id": "de-010-L-103"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "___ ist das? (answer: a person, Camila)",
+            "opcoes": [
+              "Wer",
+              "Was"
+            ],
+            "gabarito": "Wer",
+            "explicacao": "The answer is a person, so use wer (\"who\"): Wer ist das?",
+            "id": "de-010-L-104"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "___ machst du heute?",
+            "opcoes": [
+              "Wer",
+              "Was"
+            ],
+            "gabarito": "Was",
+            "explicacao": "To ask about an activity, use was (\"what\"): Was machst du heute? Wer asks about a person, not an action.",
+            "id": "de-010-L-105"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which of the three is a yes/no question?",
+            "opcoes": [
+              "Wo wohnst du?",
+              "Wohnst du hier?",
+              "Woher kommt Tom?"
+            ],
+            "gabarito": "Wohnst du hier?",
+            "explicacao": "Wohnst du hier? is a yes/no question: the conjugated verb comes before the subject. The other options start with question words and ask for specific information.",
+            "id": "de-010-L-106"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete the questions by conjugating the verb: ___ du Deutsch? (lernen) · Wo wohnt Camila? (wohnen)",
+            "respostaEsperada": "Lernst",
+            "explicacao": "With du, lernen becomes lernst. In a yes/no question, the conjugated verb opens the sentence: Lernst du Deutsch?",
+            "id": "de-010-L-201a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete the questions by conjugating the verb: Lernst du Deutsch? (lernen) · Wo ___ Camila? (wohnen)",
+            "respostaEsperada": "wohnt",
+            "explicacao": "Camila is third person singular; wohnen becomes wohnt. In a question with Wo, the verb comes right after the question word: Wo wohnt Camila?",
+            "id": "de-010-L-201b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete the questions by conjugating the verb: Woher ___ ihr? (kommen) · Wohnen Sie in München? (wohnen)",
+            "respostaEsperada": "kommt",
+            "explicacao": "With ihr, kommen becomes kommt. After Woher, it's verb then subject: Woher kommt ihr?",
+            "id": "de-010-L-202a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete the questions by conjugating the verb: Woher kommt ihr? (kommen) · ___ Sie in München? (wohnen)",
+            "respostaEsperada": "Wohnen",
+            "explicacao": "With formal Sie, wohnen stays wohnen. A yes/no question starts with the verb: Wohnen Sie in München?",
+            "id": "de-010-L-202b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Turn it into a yes/no question, in the order verb–subject–time: Tom arbeitet heute. → ___",
+            "respostaEsperada": "Arbeitet Tom heute?",
+            "explicacao": "Put the conjugated verb before the subject and keep heute at the end: Arbeitet Tom heute? — no \"does\" needed.",
+            "id": "de-010-L-203a"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Du trinkst gern Kaffee. → ___",
+            "respostaEsperada": "Trinkst du gern Kaffee?",
+            "id": "de-010-L-204"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Sie wohnen in Berlin. → ___",
+            "respostaEsperada": "Wohnen Sie in Berlin?",
+            "id": "de-010-L-205"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Match each question to the right answer: (1) Wer ist das? · (2) Was machst du? · (3) Wie alt bist du? · (4) Woher kommst du? · (5) Wo wohnst du? Answers: (a) In Schwabing. · (b) Ich bin 28 Jahre alt. · (c) Das ist Jonas. · (d) Aus Brasilien. · (e) Ich lerne Deutsch.",
+            "respostaEsperada": "Matches: 1c, 2e, 3b, 4d, 5a",
+            "id": "de-010-L-206"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 7,
+        "enunciado": "Read each mistake out loud and say the correct form. Then record 5 sentences of your own without any of these mistakes."
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Write 3 mistakes you've made in German and the correct form."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-010.json",
+  "responsavel": null
+}

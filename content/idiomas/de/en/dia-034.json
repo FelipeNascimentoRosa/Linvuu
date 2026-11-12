@@ -1,0 +1,143 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 34,
+  "fase": 4,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Town and directions: Asking for and giving directions",
+  "objetivo": "Lesson 9, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 9,
+    "titulo": "Town and directions",
+    "objetivo": "Name places in town, tell Wo? (where) from Wohin? (where to) with «in», use «zu», and ask for and give directions.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Asking for and giving directions",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "links",
+            "translit": "LINKS",
+            "pt": "left",
+            "en": "left",
+            "audio": "links"
+          },
+          {
+            "ru": "rechts",
+            "translit": "REKHTS",
+            "pt": "right",
+            "en": "right",
+            "audio": "rechts"
+          },
+          {
+            "ru": "geradeaus",
+            "translit": "geh-RAH-deh-owss",
+            "pt": "straight ahead",
+            "en": "straight ahead",
+            "audio": "geradeaus"
+          },
+          {
+            "ru": "die Ampel",
+            "translit": "dee AHM-pel",
+            "pt": "traffic light",
+            "en": "traffic light",
+            "audio": "die Ampel"
+          },
+          {
+            "ru": "die Kreuzung",
+            "translit": "dee KROY-tsoong",
+            "pt": "intersection",
+            "en": "crossing",
+            "audio": "die Kreuzung"
+          },
+          {
+            "ru": "die Straße",
+            "translit": "dee SHTRAH-seh",
+            "pt": "street",
+            "en": "street",
+            "audio": "die Straße"
+          },
+          {
+            "ru": "weit",
+            "translit": "VITE",
+            "pt": "far",
+            "en": "far",
+            "audio": "weit"
+          },
+          {
+            "ru": "nah",
+            "translit": "NAH",
+            "pt": "near, close",
+            "en": "near",
+            "audio": "nah"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Asking for and giving directions (formal imperative)",
+        "explicacao": "To ask: «Entschuldigung, wo ist die Post?» (Excuse me, where's the post office?) or «Wie komme ich zum Bahnhof?» (How do I get to the station?). To answer, use the formal imperative: the verb comes FIRST, followed by «Sie»: «Gehen Sie geradeaus.» (Go straight ahead.) «Biegen Sie links ab.» (Turn left — «abbiegen» is separable, so the prefix goes to the end.) «Nehmen Sie die zweite Straße rechts.» (Take the second street on the right.) English drops the \"you\" in commands; German formal commands keep «Sie». Other useful phrases: an der Ampel (at the light), an der Kreuzung (at the intersection), neben (next to), gegenüber (across from), in der Nähe (nearby).",
+        "tabela": [
+          {
+            "frase": "Gehen Sie geradeaus.",
+            "pt": "Go straight ahead."
+          },
+          {
+            "frase": "Biegen Sie links ab.",
+            "pt": "Turn left."
+          },
+          {
+            "frase": "Biegen Sie rechts ab.",
+            "pt": "Turn right."
+          },
+          {
+            "frase": "Nehmen Sie die zweite Straße links.",
+            "pt": "Take the second street on the left."
+          },
+          {
+            "frase": "An der Ampel links.",
+            "pt": "Left at the traffic light."
+          },
+          {
+            "frase": "Das ist nicht weit.",
+            "pt": "It's not far."
+          },
+          {
+            "frase": "Es ist neben der Bank.",
+            "pt": "It's next to the bank."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Sie gehen geradeaus!",
+            "certo": "Gehen Sie geradeaus!",
+            "motivo": "Formal imperative: verb first, then «Sie»."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say: «Entschuldigung, wo ist die Post? — Gehen Sie geradeaus. Biegen Sie links ab.»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write the articles «im, in der, ins, in den, in die» and an example of each."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-009.json",
+  "responsavel": null
+}

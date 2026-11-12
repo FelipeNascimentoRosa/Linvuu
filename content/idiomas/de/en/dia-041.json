@@ -1,0 +1,265 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 41,
+  "fase": 5,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Können and möchten: ability, permission, requests and invitations: Können: what I can do",
+  "objetivo": "Lesson 11, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 11,
+    "titulo": "Können and möchten: ability, permission, requests and invitations",
+    "objetivo": "Say what you can do with «können», ask politely for help and for things to be explained, and invite, accept or decline with «möchten» and «können» — always with the second verb at the end.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Können: what I can do",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Lesson goal. By the end of the four sessions, you use können, müssen, wollen, sollen, dürfen and möchten with the infinitive at the end of the sentence, tell nicht müssen from nicht dürfen, and use lassen."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "At the café",
+        "contexto": "Camila and Jonas order something to drink and eat.",
+        "linhas": [
+          {
+            "personagem": "Kellner",
+            "ru": "— Guten Tag! Was möchten Sie trinken?",
+            "pt": "— Good morning! What would you like to drink?",
+            "audio": "Guten Tag! Was möchten Sie trinken?",
+            "rotulo": "Kellner"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ich möchte einen Kaffee, bitte. Mein Freund möchte einen Tee. Kann er auch Milch haben?",
+            "pt": "— I'd like a coffee, please. My friend wants a tea. Can he have milk too?",
+            "audio": "Ich möchte einen Kaffee, bitte. Mein Freund möchte einen Tee. Kann er auch Milch haben?",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Kellner",
+            "ru": "— Natürlich. Möchten Sie auch etwas essen?",
+            "pt": "— Of course. Would you like something to eat as well?",
+            "audio": "Natürlich. Möchten Sie auch etwas essen?",
+            "rotulo": "Kellner"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Ja, wir wollen Kuchen. Was können Sie empfehlen?",
+            "pt": "— Yes, we'd like some cake. What do you recommend?",
+            "audio": "Ja, wir wollen Kuchen. Was können Sie empfehlen?",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Kellner",
+            "ru": "— Sie müssen den Apfelkuchen probieren. Er ist frisch.",
+            "pt": "— You have to try the apple cake. It's fresh.",
+            "audio": "Sie müssen den Apfelkuchen probieren. Er ist frisch.",
+            "rotulo": "Kellner"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Darf ich mit Karte bezahlen?",
+            "pt": "— Can I pay by card?",
+            "audio": "Darf ich mit Karte bezahlen?",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Kellner",
+            "ru": "— Leider nicht. Sie müssen bar bezahlen.",
+            "pt": "— Unfortunately not. You have to pay cash.",
+            "audio": "Leider nicht. Sie müssen bar bezahlen.",
+            "rotulo": "Kellner"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Kein Problem. Jonas, du musst nicht bezahlen. Heute zahle ich.",
+            "pt": "— No problem. Jonas, you don't have to pay. Today it's on me.",
+            "audio": "Kein Problem. Jonas, du musst nicht bezahlen. Heute zahle ich.",
+            "rotulo": "Camila"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "The English speaker's trap",
+        "explicacao": "STEP 1: nicht müssen = don't have to. Nicht dürfen = mustn't (forbidden). English \"must not\" sounds like «muss nicht», but it means «darf nicht» — mixing them up flips the meaning.",
+        "comparacao": "Three traps, and they're all false friends: «ich will» means \"I want\", never \"I will\"; «ich muss nicht» means \"I don't have to\", not \"I must not\"; and «ich darf nicht» is the real \"I mustn't / I'm not allowed\".",
+        "tabela": [
+          {
+            "ingles": "I want to eat cake.",
+            "alemao": "Ich will Kuchen essen."
+          },
+          {
+            "ingles": "I don't have to come.",
+            "alemao": "Ich muss nicht kommen."
+          },
+          {
+            "ingles": "I mustn't come (not allowed).",
+            "alemao": "Ich darf nicht kommen."
+          },
+          {
+            "ingles": "I have to go home.",
+            "alemao": "Ich muss nach Hause."
+          }
+        ],
+        "tag": "Trap"
+      },
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "schwimmen",
+            "translit": "SHVIM-en",
+            "pt": "to swim",
+            "en": "to swim",
+            "audio": "schwimmen"
+          },
+          {
+            "ru": "tanzen",
+            "translit": "TAHN-tsen",
+            "pt": "to dance",
+            "en": "to dance",
+            "audio": "tanzen"
+          },
+          {
+            "ru": "singen",
+            "translit": "ZING-en",
+            "pt": "to sing",
+            "en": "to sing",
+            "audio": "singen"
+          },
+          {
+            "ru": "malen",
+            "translit": "MAH-len",
+            "pt": "to paint, to draw",
+            "en": "to paint",
+            "audio": "malen"
+          },
+          {
+            "ru": "das Klavier",
+            "translit": "dahs klah-VEER",
+            "pt": "piano",
+            "en": "piano",
+            "audio": "das Klavier"
+          },
+          {
+            "ru": "die Gitarre",
+            "translit": "dee gee-TAH-reh",
+            "pt": "guitar",
+            "en": "guitar",
+            "audio": "die Gitarre"
+          },
+          {
+            "ru": "der Fußball",
+            "translit": "dehr FOOS-bahl",
+            "pt": "soccer",
+            "en": "football",
+            "audio": "der Fußball"
+          },
+          {
+            "ru": "schlecht",
+            "translit": "SHLEKHT",
+            "pt": "bad, badly",
+            "en": "bad",
+            "audio": "schlecht"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Können: your first modal verb, step by step",
+        "explicacao": "A MODAL verb helps another verb say \"can\", \"must\", \"should\", \"want to\". Let's build the first one, «können» — a cousin of English \"can\". STEP 1: «können» says what you know how to do or are able to do: «Ich kann schwimmen» = I can swim. STEP 2: conjugate «können»; it's irregular in the singular: ich kann, du kannst, er kann, wir können, ihr könnt, sie können. STEP 3: the second verb goes to the END of the sentence, in the infinitive: «Ich kann gut schwimmen» — \"I can well swim\". The sentence is \"bracketed\": the modal in 2nd position and the infinitive at the end. STEP 4: to ask, the modal goes to the front: «Kannst du schwimmen?» — exactly like \"Can you swim?\". STEP 5: to negate, «nicht» goes before the verb at the end: «Ich kann nicht schwimmen.» RULE OF THUMB: «ich» and «er» are the SAME (kann) and never take -t — just as English says \"I can, he can\", never \"he cans\".",
+        "comparacao": "English modals work almost the same way: \"I can swim\", \"Can you swim?\", and \"he can\" with no -s, just like «er kann» with no -t. The one big difference is position: in German, the infinitive always goes to the END of the sentence instead of staying next to the modal. «Ich kann sehr gut Deutsch sprechen» — \"I can very well German speak\".",
+        "exemplos": [
+          {
+            "ru": "Ich kann gut schwimmen.",
+            "pt": "I can swim well."
+          },
+          {
+            "ru": "Kannst du Klavier spielen? — Ja, ein bisschen.",
+            "pt": "Can you play the piano? — Yes, a little."
+          },
+          {
+            "ru": "Ich kann nicht tanzen.",
+            "pt": "I can't dance."
+          }
+        ],
+        "tabela": [
+          {
+            "pronome": "ich",
+            "können": "kann",
+            "exemplo": "Ich kann schwimmen."
+          },
+          {
+            "pronome": "du",
+            "können": "kannst",
+            "exemplo": "Kannst du tanzen?"
+          },
+          {
+            "pronome": "er / sie / es",
+            "können": "kann",
+            "exemplo": "Er kann gut singen."
+          },
+          {
+            "pronome": "wir",
+            "können": "können",
+            "exemplo": "Wir können Gitarre spielen."
+          },
+          {
+            "pronome": "ihr",
+            "können": "könnt",
+            "exemplo": "Könnt ihr malen?"
+          },
+          {
+            "pronome": "sie / Sie",
+            "können": "können",
+            "exemplo": "Können Sie Klavier spielen?"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich können schwimmen.",
+            "certo": "Ich kann schwimmen.",
+            "motivo": "«ich» takes «kann», not «können»."
+          },
+          {
+            "errado": "Er kannt singen.",
+            "certo": "Er kann singen.",
+            "motivo": "With «er», the modal takes no -t — like \"he can\", not \"he cans\"."
+          },
+          {
+            "errado": "Ich kann schwimmen gut.",
+            "certo": "Ich kann gut schwimmen.",
+            "motivo": "The main verb goes to the END of the sentence."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say 5 things you can do and 2 you can't: «Ich kann … / Ich kann nicht …»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Write the 6 forms of «möchten» and 3 sentences with «Ich möchte … + verb at the end»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-011.json",
+  "responsavel": null
+}

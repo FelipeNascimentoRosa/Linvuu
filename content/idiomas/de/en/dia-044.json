@@ -1,0 +1,348 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 44,
+  "fase": 5,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Können and möchten: ability, permission, requests and invitations: Practice",
+  "objetivo": "Lesson 11, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 11,
+    "titulo": "Können and möchten: ability, permission, requests and invitations",
+    "objetivo": "Say what you can do with «können», ask politely for help and for things to be explained, and invite, accept or decline with «möchten» and «können» — always with the second verb at the end.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Practice",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 16,
+        "itens": [
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich ___ schwimmen. (können)",
+            "opcoes": [
+              "kann",
+              "kannst",
+              "können"
+            ],
+            "gabarito": "kann",
+            "explicacao": "ich → kann.",
+            "id": "de-011-e01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Du ___ gut tanzen. (können)",
+            "opcoes": [
+              "kannst",
+              "kann",
+              "könnt"
+            ],
+            "gabarito": "kannst",
+            "explicacao": "du → kannst.",
+            "id": "de-011-e02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Er ___ Klavier spielen. (können)",
+            "opcoes": [
+              "kann",
+              "kannt",
+              "können"
+            ],
+            "gabarito": "kann",
+            "explicacao": "er → kann, no -t.",
+            "id": "de-011-e03"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Guten Tag! Was möchten Sie trinken?",
+            "respostaEsperada": "Guten Tag! Was möchten Sie trinken?",
+            "explicacao": "Good morning! What would you like to drink?",
+            "id": "de-011-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Wir ___ Gitarre spielen. (können)",
+            "opcoes": [
+              "können",
+              "kann",
+              "könnt"
+            ],
+            "gabarito": "können",
+            "explicacao": "wir → können.",
+            "id": "de-011-e04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ihr ___ gut singen. (können)",
+            "opcoes": [
+              "könnt",
+              "können",
+              "kannst"
+            ],
+            "gabarito": "könnt",
+            "explicacao": "ihr → könnt.",
+            "id": "de-011-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Where does the second verb go with «können»?",
+            "opcoes": [
+              "at the end of the sentence",
+              "right after «können»",
+              "at the beginning"
+            ],
+            "gabarito": "at the end of the sentence",
+            "explicacao": "The sentence bracket.",
+            "id": "de-011-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Sie müssen den Apfelkuchen probieren. Er ist frisch.",
+            "respostaEsperada": "Sie müssen den Apfelkuchen probieren. Er ist frisch.",
+            "explicacao": "You have to try the apple cake. It's fresh.",
+            "id": "de-011-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Ich kann gut schwimmen.",
+              "Ich kann schwimmen gut.",
+              "Ich können gut schwimmen."
+            ],
+            "gabarito": "Ich kann gut schwimmen.",
+            "explicacao": "Modal in 2nd position, infinitive at the end.",
+            "id": "de-011-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"Can you help me?\"",
+            "opcoes": [
+              "Kannst",
+              "du",
+              "mir",
+              "helfen"
+            ],
+            "gabarito": "Kannst du mir helfen?",
+            "explicacao": "Yes/no question: modal first.",
+            "id": "de-011-e08"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"I can't dance.\"",
+            "opcoes": [
+              "Ich",
+              "kann",
+              "nicht",
+              "tanzen"
+            ],
+            "gabarito": "Ich kann nicht tanzen.",
+            "explicacao": "«nicht» before the verb at the end.",
+            "id": "de-011-e09"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Am Samstag? Ja, gern! Um wie viel Uhr?",
+            "respostaEsperada": "Am Samstag? Ja, gern! Um wie viel Uhr?",
+            "explicacao": "On Saturday? Yes, gladly! What time?",
+            "id": "de-011-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Wie bitte?» is used:",
+            "opcoes": [
+              "to ask someone to repeat",
+              "to thank someone",
+              "to say goodbye"
+            ],
+            "gabarito": "to ask someone to repeat",
+            "explicacao": "When you didn't catch something.",
+            "id": "de-011-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you decline an invitation politely?",
+            "opcoes": [
+              "Nein, leider nicht.",
+              "Nein, gern!",
+              "Ja, leider nicht."
+            ],
+            "gabarito": "Nein, leider nicht.",
+            "explicacao": "«leider» = unfortunately.",
+            "id": "de-011-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Können Sie bitte langsamer sprechen?» means:",
+            "opcoes": [
+              "Could you speak more slowly?",
+              "Do you know how to speak slowly?",
+              "Do you want to speak louder?"
+            ],
+            "gabarito": "Could you speak more slowly?",
+            "explicacao": "langsamer = more slowly.",
+            "id": "de-011-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Ich möchte lieber einen Salat.",
+            "respostaEsperada": "Ich möchte lieber einen Salat.",
+            "explicacao": "I'd rather have a salad.",
+            "id": "de-011-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Kannst du um halb acht am Bahnhof sein?",
+            "opcoes": [
+              "Kannst du um halb acht am Bahnhof sein?",
+              "Kannst du um acht Uhr kommen?",
+              "Möchtest du am Bahnhof essen?"
+            ],
+            "gabarito": "Kannst du um halb acht am Bahnhof sein?",
+            "explicacao": "«halb acht» = 7:30.",
+            "id": "de-011-e13"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Können Sie das bitte wiederholen",
+            "respostaEsperada": "Können Sie das bitte wiederholen",
+            "explicacao": "A polite request with «können».",
+            "id": "de-011-e14"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write 5 sentences: two skills, a request, an invitation and a polite refusal with a reason.",
+            "respostaEsperada": "Ich kann gut schwimmen. Ich kann nicht tanzen. Können Sie das bitte wiederholen? Möchtest du ins Kino gehen? Nein, leider nicht. Ich muss arbeiten.",
+            "id": "de-011-e15"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Write four sentences about what you can and can't do (Ich kann gut …, aber ich kann nicht …).",
+            "respostaEsperada": "Ich kann gut kochen und schwimmen. Ich kann schon ein bisschen Deutsch sprechen, aber ich kann noch nicht perfekt schreiben. Morgen kann ich leider nicht zum Kurs kommen.",
+            "id": "de-011-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write three sentences about what you have to do this week (Diese Woche muss ich …).",
+            "respostaEsperada": "Diese Woche muss ich viel arbeiten. Am Mittwoch muss ich zum Arzt gehen. Am Freitag muss ich meine Wohnung putzen.",
+            "id": "de-011-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write three rules for living together or for traffic using Man darf hier nicht … / Du darfst nicht ….",
+            "respostaEsperada": "Hier darf man nicht rauchen. Du darfst vor der Bank nicht parken. Im Museum darf man nicht fotografieren.",
+            "id": "de-011-L-p03"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write a five-line café dialogue between you and the server using möchten, können, müssen and dürfen.",
+            "respostaEsperada": "Model dialogue: — Guten Tag! Was möchten Sie bestellen? — Ich möchte einen Kaffee und ein Stück Apfelkuchen, bitte. — Gern! Möchten Sie den Kaffee mit Milch? — Ja, bitte. Kann ich hier mit Karte bezahlen? — Ja, natürlich, Sie können mit Karte bezahlen.",
+            "id": "de-011-L-p04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Ich kann sprechen Deutsch.",
+            "respostaEsperada": "Ich kann Deutsch sprechen.",
+            "explicacao": "Ich kann Deutsch sprechen.",
+            "id": "de-011-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it (you mean \"you mustn't park here\"): Du musst hier nicht parken.",
+            "respostaEsperada": "Du darfst hier nicht parken.",
+            "explicacao": "Du darfst hier nicht parken. (muss nicht = don't have to; darf nicht = mustn't)",
+            "id": "de-011-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Ich möchte zu essen einen Kuchen.",
+            "respostaEsperada": "Ich möchte einen Kuchen essen.",
+            "explicacao": "Ich möchte einen Kuchen essen. (no \"to\", infinitive at the end)",
+            "id": "de-011-L-c05"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Is there a mistake? Correct it or write «OK»: Ich muss nach Hause.",
+            "respostaEsperada": "OK",
+            "id": "de-011-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "The typical English-speaker mistakes",
+        "explicacao": "STEP 1: the costliest mistakes: keeping the infinitive next to the modal, as in English (Ich kann sprechen Deutsch instead of Ich kann Deutsch sprechen); adding \"to\" (Ich möchte zu essen); reading «ich will» as \"I will\" (it's \"I want\"); and the biggest false friend — «muss nicht» means \"don't have to\", while English \"must not\" is «darf nicht». STEP 2: read the table and say each correct sentence out loud before you look at the reason.",
+        "erros": [
+          {
+            "errado": "Ich kann sprechen Deutsch.",
+            "certo": "Ich kann Deutsch sprechen.",
+            "motivo": "The infinitive goes to the end, not next to the modal as in English."
+          },
+          {
+            "errado": "Du musst hier nicht parken. (= you mustn't)",
+            "certo": "Du darfst hier nicht parken.",
+            "motivo": "English \"must not\" = darf nicht; muss nicht = don't have to."
+          },
+          {
+            "errado": "Ich will morgen kommen. (= I will)",
+            "certo": "Ich komme morgen. / Ich werde morgen kommen.",
+            "motivo": "«ich will» means \"I want\", never \"I will\"."
+          },
+          {
+            "errado": "Er kannt singen.",
+            "certo": "Er kann singen.",
+            "motivo": "Like \"he can\": no ending on the modal with er."
+          },
+          {
+            "errado": "Ich möchte zu essen einen Kuchen.",
+            "certo": "Ich möchte einen Kuchen essen.",
+            "motivo": "No \"to\" after a modal; infinitive at the end."
+          },
+          {
+            "errado": "Kannst Sie mir helfen?",
+            "certo": "Können Sie mir helfen?",
+            "motivo": "Formal Sie takes können."
+          }
+        ],
+        "tag": "Typical mistake"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Can I do it? I ask for things with Ich möchte …, bitte. · I say what I have to, can and want to do, keeping the verb bracket. · I know when to use nicht dürfen (forbidden) and nicht müssen (optional)."
+      },
+      {
+        "tipo": "revisao",
+        "min": 2,
+        "enunciado": "Review. Complete: Ich möchte einen ____ (Kaffee) trinken (with the article). Ich habe ____ Bruder (ein). Ich stehe um sieben Uhr ____ (aufstehen)."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-011.json",
+  "responsavel": null
+}
