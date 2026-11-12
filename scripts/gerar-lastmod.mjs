@@ -26,6 +26,11 @@ const SITE = 'https://linvuu.com.br';
 execFileSync('node', [path.join(raiz, 'scripts', 'seo.mjs')], { stdio: 'inherit' });
 const sitemap = fs.readFileSync(path.join(raiz, 'public', 'sitemap.xml'), 'utf8');
 const urls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map((m) => m[1]);
+// Sitemap do .com (inglês). Até 12/11/2026 este gerador lia só o sitemap.xml do .com.br, e o sitemap-global.xml
+// saía sem nenhum <lastmod>. As URLs do .com entram com a chave legada «/en…», que é a que scripts/seo.mjs lê.
+const SITE_GLOBAL = 'https://linvuu.com';
+const global = fs.readFileSync(path.join(raiz, 'public', 'sitemap-global.xml'), 'utf8');
+for (const m of global.matchAll(/<loc>(.*?)<\/loc>/g)) { const p = m[1].slice(SITE_GLOBAL.length) || '/'; urls.push(`${SITE}${p === '/' ? '/en' : '/en' + p}`); }
 
 // 2) Data do último commit que tocou um ficheiro (cache por ficheiro).
 const cache = new Map();
@@ -62,6 +67,8 @@ function fontesDaPagina(caminho, locale) {
     case '/por-que-linvuu': return ['src/pages/PorQue.tsx', 'src/lib/porQue.ts'];
     case '/contato': return ['src/pages/Contato.tsx', 'src/lib/institucional.ts', 'src/config/contato.ts'];
     case '/ex-alunos-udemy': return ['src/pages/ExAlunosUdemy.tsx'];
+    case '/gramatica': return ['src/pages/Gramatica.tsx'];
+    case '/portugues': return ['src/pages/Portugues.tsx', TEXTO_LOCALE[locale]];
     case '/livros': return ['src/pages/Livros.tsx', ...fs.readdirSync(path.join(raiz, 'content', 'livros')).sort().map((id) => `content/livros/${id}/sumario.json`)];
   }
   let m;

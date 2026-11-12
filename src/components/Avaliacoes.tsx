@@ -59,7 +59,7 @@ export function Avaliacoes() {
   const msg = { ok: a.obrigado, duplicada: a.jaEnviou, poucas: a.fazerAulas(AULAS_MIN), invalido: a.invalido, erro: a.erro } as const;
   return (
     <section className="avaliacoes" aria-label={a.rotulo} id="avaliacoes">
-      {temLista && <><p className="av-kicker">{a.kicker}</p><h2>{relatos.length > 0 ? udemy!.relatosTitulo : a.titulo}</h2></>}
+      {temLista && <><h2>{relatos.length > 0 ? udemy!.relatosTitulo : a.titulo}</h2></>}
       {dados && dados.media !== null && dados.contadas > 0 && <p className="av-resumo"><Estrelas n={Math.round(dados.media)} rotulo={a.estrelas(Math.round(dados.media))} /> <strong>{a.media(dados.media.toLocaleString(), dados.contadas)}</strong></p>}
       {relatos.length > 0 && (
         <>

@@ -431,3 +431,10 @@ a.livro:focus-visible{outline:2px solid var(--ocre);outline-offset:6px}
 
 /* Caixas de seleção com alvo mínimo de 24px (WCAG 2.5.8). */
 .check input[type="checkbox"]{width:1.25rem;height:1.25rem;min-width:1.25rem;margin:0 .5rem 0 0;vertical-align:middle;accent-color:var(--accent-dark)}
+
+/* ===== Hub da gramática (/gramatica) ===== */
+.gram-hub{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.gram-hub a{display:flex;flex-direction:column;gap:4px;min-height:44px;padding:18px 20px;border:1px solid var(--border);border-radius:var(--r-sm);color:var(--text);background:var(--papel-claro)}
+.gram-hub a:hover{border-color:var(--verde-floresta)}
+.gram-hub strong{font-family:var(--font-display);font-size:22px;font-weight:500;color:var(--verde-floresta)}
+.gram-hub span{font-size:15px;color:var(--grafite-65)}

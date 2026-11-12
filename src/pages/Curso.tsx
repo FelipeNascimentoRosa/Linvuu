@@ -65,7 +65,7 @@ export default function Curso() {
 
       <header className="curso-topo">
         <div>
-          {LOCALE.codigo === 'pt-BR' && <p className="site-eyebrow">SEU PRÓXIMO IDIOMA, PASSO A PASSO</p>}
+          
           <h1 className="pagina-h1">{curso.nome} {curso.nomeNativo !== curso.nome && <em lang={curso.id}>{curso.nomeNativo}</em>}</h1>
           <p className="lead">{curso.descricao}</p>
           <div className="curso-fatos">

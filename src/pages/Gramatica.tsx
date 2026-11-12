@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Link, Navigate, useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { Navegacao } from '../components/Navegacao';
 import { Gramatica as BlocoGramatica } from '../components/Sessao';
 import { idiomasDeGramaticaNoSite, todosIdiomasDeGramatica, fonteDoCurso, explicacaoDoCurso, getCurso, coberturaNoSite } from '../lib/content';
@@ -14,6 +14,11 @@ import { useAuth } from '../lib/AuthContext';
 type Topico = Omit<Extract<Bloco, { tipo: 'gramatica' }>, 'tipo' | 'min' | 'tag'> & { id: string; categoria: string; aula: number; aulaTitulo: string; sessao: string; dia: number; /** língua do texto quando o tópico ainda não foi traduzido */ explicacaoEm?: string };
 interface Pacote { idioma: string; categorias: string[]; topicos: Topico[]; completo: boolean; bloqueados: number; semTraducao?: number }
 // Abas na ordem da vitrine do idioma do site (o curso de português para estrangeiros só aparece em inglês).
+
+const HUB = {
+  'pt-BR': { h1: 'Gramática de idiomas explicada em português', lead: 'Escolha o idioma. Cada gramática reúne os tópicos do curso com tabelas, exemplos e os erros mais comuns de quem fala português. Os tópicos das duas primeiras aulas são abertos.', item: (n: string) => `Tópicos de ${n.toLowerCase()} do A1 ao B1` },
+  en: { h1: 'Grammar guides explained in English', lead: 'Pick a language. Each guide gathers the course topics with tables, examples and the mistakes English speakers make most. The topics from the first two lessons are open to everyone.', item: (n: string) => `${n} topics from A1 to B1` },
+} as const;
 
 export default function Gramatica() {
   const IDIOMAS = idiomasDeGramaticaNoSite(); // só os que a vitrine deste domínio oferece (chips)
@@ -46,8 +51,26 @@ export default function Gramatica() {
   const g = t.gramaticaPagina;
   // Cobertura na língua do site (pt-BR no .com.br, en no .com): decide o aviso honesto acima dos tópicos.
   const cob = curso ? coberturaNoSite(curso.id) : { traduzidas: 0, total: 0 };
-  usePageTitle(curso ? g.titulo(curso.nome) : g.tituloGeral, curso ? g.descricao(curso.nome) : undefined, undefined, curso?.id === LOCALE.cursoOculto || curso?.status === 'em-breve');
-  if (!id || !curso || !VALIDOS.includes(curso.id)) return <Navigate to={`/gramatica/${IDIOMAS[0]}`} replace />;
+  const hub = !id || !curso || !VALIDOS.includes(curso.id);
+  usePageTitle(!hub ? g.titulo(curso.nome) : HUB[LOCALE.codigo === 'pt-BR' ? 'pt-BR' : 'en'].h1, !hub ? g.descricao(curso.nome) : undefined, undefined, !hub && (curso.id === LOCALE.cursoOculto || curso.status === 'em-breve'));
+  // Hub /gramatica (12/11/2026): página de verdade, indexável e no sitemap. Antes era um redirecionamento no cliente
+  // para o primeiro idioma, e por isso ficava fora do sitemap (o <head> do servidor não batia com o DOM).
+  if (hub) {
+    const x = HUB[LOCALE.codigo === 'pt-BR' ? 'pt-BR' : 'en'];
+    return (
+      <div className="pagina">
+        <Navegacao pai="/" trilha={[{ rotulo: t.geral.inicio, para: '/' }, { rotulo: t.nav.gramatica }]} />
+        <h1 className="pagina-h1">{x.h1}</h1>
+        <p className="lead">{x.lead}</p>
+        <ul className="gram-hub">
+          {IDIOMAS.map((k) => { const c = getCurso(k); if (!c) return null; return (
+            <li key={k}><Link to={`/gramatica/${k}`}><strong>{g.titulo(c.nome)}</strong><span>{x.item(c.nome)}</span></Link></li>
+          ); })}
+        </ul>
+      </div>
+    );
+  }
+
 
   return (
     <div className="pagina">

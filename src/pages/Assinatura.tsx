@@ -42,7 +42,7 @@ export default function Assinatura() {
       <Navegacao pai="/" trilha={[{ rotulo: t.geral.inicio, para: '/' }, { rotulo: s.titulo }]} />
       <h1 className="pagina-h1">{LOCALE.codigo === 'pt-BR' ? 'Um plano para o seu próximo passo.' : s.titulo}</h1>
       <div id="oferta-atual" />
-      {LOCALE.codigo === 'pt-BR' && !a.ativa && <header className="site-offer-heading"><p className="site-eyebrow">DISPONÍVEL HOJE</p><h2>Assinatura atual</h2><p>Acesso a todos os cursos. Escolha o plano ou comece pelas duas primeiras aulas grátis, sem cartão.</p></header>}
+      {LOCALE.codigo === 'pt-BR' && !a.ativa && <header className="site-offer-heading"><h2>Assinatura atual</h2><p>Acesso a todos os cursos. Escolha o plano ou comece pelas duas primeiras aulas grátis, sem cartão.</p></header>}
       {carregando || (usuario && a.carregando) ? <p className="resultado" role="status">{t.geral.carregando}</p> : (
         <div className="texto-legal lv-assinatura">
           {params.get('ok') && !a.ativa && <p className="nota">{s.recebido} <button type="button" className="link-btn" onClick={a.recarregar}>{s.atualize}</button>.</p>}
