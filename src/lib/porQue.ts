@@ -74,7 +74,7 @@ export const POR_QUE: Record<'pt-BR' | 'en', TextoPorQue> = {
       { id: 'gratis', titulo: 'You can start without paying', texto: 'The first two lessons of every course are free, and the first two chapters of every book can be read in full, with audio. You test the method before deciding.' },
     ],
     paraQuemTitulo: 'Who it is for',
-    paraQuem: 'The courses run from A1 to B1 on the CEFR scale, and on this site Brazilian Portuguese, French, Russian and German are explained in English. They serve beginners, people who studied before and got stuck, and people who want to organise what they already know. Linvuu does not promise fluency in 30 days: it promises a clear explanation and daily practice that works.',
+    paraQuem: 'The courses run from A1 to B1 on the CEFR scale, and on this site Spanish, German, French, Russian and Brazilian Portuguese are explained in English. They serve beginners, people who studied before and got stuck, and people who want to organise what they already know. Linvuu does not promise fluency in 30 days: it promises a clear explanation and daily practice that works.',
     ctaTitulo: 'Start now',
     ctaSegmentos: [
       { link: '/cursos', texto: 'See the courses' },

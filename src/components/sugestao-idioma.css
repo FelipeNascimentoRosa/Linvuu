@@ -1,6 +1,19 @@
-/* Faixa fixa por cima do topo: não empurra a página (sem mudança de layout, CLS). */
-.sugestao-idioma{position:fixed;top:0;left:0;right:0;z-index:900;box-shadow:0 2px 10px rgba(0,0,0,.18);display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;justify-content:center;padding:calc(10px + env(safe-area-inset-top,0px)) 16px 10px;background:var(--verde-floresta);color:var(--papel);font-size:.9375rem}
-.sugestao-idioma p{margin:0}
-.sugestao-idioma a{color:var(--papel);font-weight:700;text-decoration:underline;text-underline-offset:3px;min-height:44px;display:inline-flex;align-items:center}
-.sugestao-idioma button{min-height:44px;padding:0 12px;border:1px solid rgba(245,241,232,.5);border-radius:8px;background:transparent;color:var(--papel);font:inherit;cursor:pointer}
+/* Sugestão de idioma. Regra de design: nunca cobrir logo, menu ou herói.
+   Desktop: ocupa exatamente a faixa fina do topo (.barra-topo, altura fixa), por cima dela; o cabeçalho fica livre.
+   Celular: a faixa do topo não existe; vira um cartão pequeno no rodapé da tela, acima do aviso de cookies.
+   Em ambos é fixa ou absoluta: aparecer depois do carregamento não empurra a página (sem CLS). */
+.sugestao-idioma{position:absolute;top:0;left:0;right:0;z-index:900;height:calc(var(--barra-topo-h) + env(safe-area-inset-top,0px));padding:env(safe-area-inset-top,0px) 16px 0;
+  display:flex;align-items:center;justify-content:center;gap:16px;background:var(--verde-floresta);color:var(--papel);font-size:.875rem;white-space:nowrap}
+.sugestao-idioma p{margin:0;overflow:hidden;text-overflow:ellipsis}
+.sugestao-idioma a{color:var(--papel);font-weight:700;text-decoration:underline;text-underline-offset:3px;display:inline-flex;align-items:center;min-height:var(--barra-topo-h)}
+.sugestao-idioma button{min-height:32px;padding:0 12px;border:1px solid rgba(245,241,232,.5);border-radius:8px;background:transparent;color:var(--papel);font:inherit;cursor:pointer}
 .sugestao-idioma :focus-visible{outline:3px solid var(--ocre);outline-offset:2px}
+.sugestao-idioma .si-curto{display:none}
+/* Celular: não há faixa do topo. Vira uma pílula no espaço livre do cabeçalho, entre o logo e o menu, sem cobrir nenhum dos dois. */
+@media(max-width:760px){
+  .sugestao-idioma{top:calc(env(safe-area-inset-top,0px) + 12px);left:auto;right:64px;height:44px;padding:0 2px 0 14px;border-radius:999px;gap:2px;box-shadow:var(--sombra-flutuante)}
+  .sugestao-idioma p,.sugestao-idioma .si-longo{display:none}
+  .sugestao-idioma .si-curto{display:inline}
+  .sugestao-idioma a{min-height:44px;font-size:.875rem}
+  .sugestao-idioma button{min-width:44px;min-height:44px;border:0;font-size:1.25rem;line-height:1}
+}

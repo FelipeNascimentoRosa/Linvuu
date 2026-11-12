@@ -34,3 +34,6 @@ html:not([data-plataforma="nativo"]) body{padding-bottom:var(--lv-consent-h,0px)
 .analytics-consent.analytics-consent-bar .analytics-consent-curto{flex:1 1 100%;font-size:.875rem}
 .analytics-consent.analytics-consent-bar .analytics-actions{flex:1 1 100%;flex-wrap:wrap}
 .analytics-consent.analytics-consent-bar .analytics-actions .btn{flex:1 1 6rem}}
+/* Telas largas: o aviso vai para o canto direito. Centralizado, ele cobria o botão principal do herói (coluna da esquerda). */
+@media (min-width:1024px){.analytics-consent.analytics-consent-bar{left:auto;right:1.25rem;transform:none;width:min(34rem,calc(100% - 2.5rem));border-radius:1.25rem;padding:.75rem .75rem .75rem 1.25rem}
+.analytics-consent.analytics-consent-bar .analytics-consent-curto{flex:1 1 100%;max-width:none}}

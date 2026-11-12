@@ -6,6 +6,7 @@
 @font-face{font-family:'Source Sans 3 Fallback Android';src:local('Roboto Regular'),local('Roboto-Regular');ascent-override:108.9713%;descent-override:42.5669%;line-gap-override:0%;size-adjust:93.9697%}
 /* Tokens da identidade Linvuu (sistema de design aprovado em 2026-10-07). */
 :root{
+  --barra-topo-h:40px; /* faixa fina do topo; a sugestão de idioma ocupa exatamente esta altura */
 /* Paleta de marca: só estas quatro. */
 --verde-floresta:#1E3B2F;
 --papel:#F5F1E8;

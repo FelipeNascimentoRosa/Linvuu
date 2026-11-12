@@ -70,6 +70,7 @@ export default function Assinatura() {
               <p>{s.intro(AULAS_GRATIS)}</p>
               <p><Link className="btn btn-ghost" to="/cursos">{LOCALE.codigo === 'pt-BR' ? 'Testar 2 aulas grátis, sem cartão' : t.geral.inicio}</Link></p>
               {!usuario && <p className="nota lv-assinatura-conta">{s.semConta} <Link to="/entrar?proximo=/assinatura">{s.jaTemConta}</Link></p>}
+              {LOCALE.codigo !== 'pt-BR' && <h2 className="sr-only">Plans</h2>}
               <div className="lv-planos">
                 <div className={`lv-plano ${escolhido === 'mensal' ? 'lv-plano-escolhido' : ''}`}>
                   <h3>{s.mensal}</h3>
