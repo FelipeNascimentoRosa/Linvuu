@@ -1,0 +1,513 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 148,
+  "fase": 15,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Home, renting and neighbours: Review and practice of lesson 37",
+  "objetivo": "Lesson 37, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 37,
+    "titulo": "Home, renting and neighbours",
+    "objetivo": "Describe your home and its floors (rooms, ordinal numbers, prepositions of place), look for and rent a flat (alquiler, fianza, gastos, the hundreds) and talk politely to the landlady and the neighbours, reporting faults and asking for repairs.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 37",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Vivo en el tercer piso",
+            "opcoes": [
+              "Vivo en el tercer piso",
+              "Vivo en el tercero piso",
+              "Vivo en la tercer piso"
+            ],
+            "gabarito": "Vivo en el tercer piso",
+            "explicacao": "«Tercero» drops the «-o» before a masculine noun.",
+            "id": "es-037-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "¿Los gastos están incluidos?",
+            "opcoes": [
+              "¿Los gastos están incluidos?",
+              "¿Los gastos son incluidos?",
+              "¿Los gastos hay incluidos?"
+            ],
+            "gabarito": "¿Los gastos están incluidos?",
+            "explicacao": "A state: «estar incluido».",
+            "id": "es-037-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ya se lo dije ayer",
+            "opcoes": [
+              "Ya se lo dije ayer",
+              "Ya le lo dije ayer",
+              "Ya lo le dije ayer"
+            ],
+            "gabarito": "Ya se lo dije ayer",
+            "explicacao": "Two pronouns: «se lo».",
+            "id": "es-037-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "La lámpara está encima de la mesa",
+            "respostaEsperada": "La lámpara está encima de la mesa",
+            "explicacao": "Write: La lámpara está encima de la mesa.",
+            "id": "es-037-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "No funciona la calefacción",
+            "respostaEsperada": "No funciona la calefacción",
+            "explicacao": "Write: No funciona la calefacción.",
+            "id": "es-037-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Yes, I'll be in until twelve. After that I have to go to work.»",
+            "opcoes": [
+              "las",
+              "ir",
+              "que",
+              "Después",
+              "doce.",
+              "Sí,",
+              "hasta",
+              "estaré",
+              "trabajar.",
+              "a",
+              "tengo"
+            ],
+            "gabarito": "Sí, estaré hasta las doce. Después tengo que ir a trabajar.",
+            "explicacao": "Write: Sí, estaré hasta las doce. Después tengo que ir a trabajar.",
+            "id": "es-037-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Son setecientos cincuenta euros al mes",
+            "respostaEsperada": "Son setecientos cincuenta euros al mes",
+            "explicacao": "Write: Son setecientos cincuenta euros al mes.",
+            "id": "es-037-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "Buenos días, Diego. ¿Qué ha pasado?",
+            "respostaEsperada": "Buenos días, Diego. ¿Qué ha pasado?",
+            "explicacao": "Good morning, Diego. What's happened?",
+            "id": "es-037-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «el piso» mean in Spain?",
+            "opcoes": [
+              "a flat, or a floor (storey)",
+              "the floor (ground under your feet)",
+              "the roof"
+            ],
+            "gabarito": "a flat, or a floor (storey)",
+            "explicacao": "The floor under your feet is «el suelo».",
+            "id": "es-037-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say \"the third floor\" (masculine)?",
+            "opcoes": [
+              "el tercer piso",
+              "el tercero piso",
+              "el tres piso"
+            ],
+            "gabarito": "el tercer piso",
+            "explicacao": "Short ordinal before a masculine singular noun.",
+            "id": "es-037-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which number is 500?",
+            "opcoes": [
+              "quinientos",
+              "cincocientos",
+              "cinco cientos"
+            ],
+            "gabarito": "quinientos",
+            "explicacao": "500 is irregular.",
+            "id": "es-037-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Sí, estaré hasta las doce. Después tengo que ir a trabajar.",
+            "respostaEsperada": "Sí, estaré hasta las doce. Después tengo que ir a trabajar.",
+            "explicacao": "Yes, I'll be in until twelve. After that I have to go to work.",
+            "id": "es-037-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Cuatrocientos cincuenta euros",
+              "Cuatrocientos y cincuenta euros",
+              "Cuatro cientos cincuenta euros"
+            ],
+            "gabarito": "Cuatrocientos cincuenta euros",
+            "explicacao": "No «y» between hundreds and tens.",
+            "id": "es-037-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "In answer to «¿Le molesta si abro la ventana?», what does «No, claro que no» mean?",
+            "opcoes": [
+              "Go ahead and open it.",
+              "Don't open it.",
+              "I didn't understand."
+            ],
+            "gabarito": "Go ahead and open it.",
+            "explicacao": "«No» to «¿le molesta?» gives permission, as in English.",
+            "id": "es-037-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "El piso ___ amueblado. (is)",
+            "opcoes": [
+              "está",
+              "es",
+              "hay"
+            ],
+            "gabarito": "está",
+            "explicacao": "A state: «estar».",
+            "id": "es-037-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "Vaya, lo siento. ¿Hay agua caliente en el baño?",
+            "respostaEsperada": "Vaya, lo siento. ¿Hay agua caliente en el baño?",
+            "explicacao": "Oh dear, I'm sorry. Is there hot water in the bathroom?",
+            "id": "es-037-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "La lavadora ___ estropeada.",
+            "opcoes": [
+              "está",
+              "es",
+              "tiene"
+            ],
+            "gabarito": "está",
+            "explicacao": "A fault: «estar estropeado».",
+            "id": "es-037-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «estropeado, roto» mean?",
+            "audio": "estropeado, roto",
+            "opcoes": [
+              "the contract, the lease",
+              "the bathroom",
+              "broken, not working",
+              "the lift, the elevator"
+            ],
+            "gabarito": "broken, not working",
+            "explicacao": "«estropeado, roto» = broken, not working.",
+            "id": "es-037-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Quisiera ___ el piso. (see)",
+            "opcoes": [
+              "ver",
+              "veo",
+              "visto"
+            ],
+            "gabarito": "ver",
+            "explicacao": "Polite request + infinitive.",
+            "id": "es-037-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ya ___ lo dije. (to her)",
+            "opcoes": [
+              "se",
+              "le",
+              "lo"
+            ],
+            "gabarito": "se",
+            "explicacao": "«Le lo» becomes «se lo».",
+            "id": "es-037-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "El grifo ___ . (is dripping)",
+            "opcoes": [
+              "gotea",
+              "gotean",
+              "goteo"
+            ],
+            "gabarito": "gotea",
+            "explicacao": "Third person singular.",
+            "id": "es-037-e16"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «¿Cuánto es el alquiler al mes?»",
+            "opcoes": [
+              "¿Cuánto",
+              "es",
+              "el",
+              "alquiler",
+              "al",
+              "mes?"
+            ],
+            "gabarito": "¿Cuánto es el alquiler al mes?",
+            "explicacao": "Asking the monthly price.",
+            "id": "es-037-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «el grifo» mean?",
+            "audio": "el grifo",
+            "opcoes": [
+              "the terrace, the balcony",
+              "the tap, the faucet",
+              "the ground floor",
+              "the contract, the lease"
+            ],
+            "gabarito": "the tap, the faucet",
+            "explicacao": "«el grifo» = the tap, the faucet.",
+            "id": "es-037-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Mi piso está en el segundo.»",
+            "opcoes": [
+              "Mi",
+              "piso",
+              "está",
+              "en",
+              "el",
+              "segundo."
+            ],
+            "gabarito": "Mi piso está en el segundo.",
+            "explicacao": "Location with «estar».",
+            "id": "es-037-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "Sí, agua caliente sí hay. Solo falla la calefacción.",
+            "respostaEsperada": "Sí, agua caliente sí hay. Solo falla la calefacción.",
+            "explicacao": "Yes, there's hot water. It's just the heating.",
+            "id": "es-037-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I'd like to see the flat. Does the rent include the bills? The heating isn't working.",
+            "respostaEsperada": "Quisiera ver el piso. ¿El alquiler incluye los gastos? No funciona la calefacción.",
+            "id": "es-037-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Vivo en el ___ piso. (first)",
+            "opcoes": [
+              "primero",
+              "primer",
+              "primera"
+            ],
+            "gabarito": "primer",
+            "explicacao": "«Primero» drops the «o» before a masculine noun.",
+            "id": "es-037-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "El ascensor ___ estropeado desde ayer.",
+            "opcoes": [
+              "es",
+              "está",
+              "hay"
+            ],
+            "gabarito": "está",
+            "explicacao": "The state of an appliance: «estar».",
+            "id": "es-037-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «la terraza» mean?",
+            "audio": "la terraza",
+            "opcoes": [
+              "the noise",
+              "the kitchen",
+              "the ground floor",
+              "the terrace, the balcony"
+            ],
+            "gabarito": "the terrace, the balcony",
+            "explicacao": "«la terraza» = the terrace, the balcony.",
+            "id": "es-037-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "El piso está ___ . (furnished)",
+            "opcoes": [
+              "amueblados",
+              "amueblada",
+              "amueblado"
+            ],
+            "gabarito": "amueblado",
+            "explicacao": "«Piso» is masculine singular.",
+            "id": "es-037-e22"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Son ___ euros. (900)",
+            "opcoes": [
+              "novecientos",
+              "nuevecientos",
+              "noventa"
+            ],
+            "gabarito": "novecientos",
+            "explicacao": "900 is «novecientos».",
+            "id": "es-037-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «la fianza» mean?",
+            "opcoes": [
+              "the deposit",
+              "the rent",
+              "the tap, the faucet"
+            ],
+            "gabarito": "the deposit",
+            "explicacao": "«Fianza» is the deposit.",
+            "id": "es-037-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "Muchas gracias, señora. Hasta mañana.",
+            "respostaEsperada": "Muchas gracias, señora. Hasta mañana.",
+            "explicacao": "Thank you very much. See you tomorrow.",
+            "id": "es-037-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you politely ask someone to turn the music down?",
+            "opcoes": [
+              "Baja la música.",
+              "¿Podría bajar un poco la música, por favor?",
+              "¿Puedes bajar la música?"
+            ],
+            "gabarito": "¿Podría bajar un poco la música, por favor?",
+            "explicacao": "With neighbours, use the polite conditional.",
+            "id": "es-037-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «la cocina» mean?",
+            "audio": "la cocina",
+            "opcoes": [
+              "the kitchen",
+              "the deposit",
+              "the bathroom",
+              "the rent"
+            ],
+            "gabarito": "the kitchen",
+            "explicacao": "«la cocina» = the kitchen.",
+            "id": "es-037-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say \"Flat for rent\"?",
+            "opcoes": [
+              "Alquilar piso.",
+              "Es alquila piso.",
+              "Se alquila piso."
+            ],
+            "gabarito": "Se alquila piso.",
+            "explicacao": "Ads use impersonal «se».",
+            "id": "es-037-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «¿Cuántas habitaciones tiene el piso?»",
+            "opcoes": [
+              "¿Cuántas",
+              "habitaciones",
+              "tiene",
+              "el",
+              "piso?"
+            ],
+            "gabarito": "¿Cuántas habitaciones tiene el piso?",
+            "explicacao": "«Habitaciones» is feminine: «cuántas».",
+            "id": "es-037-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «No funciona el ascensor desde ayer.»",
+            "opcoes": [
+              "No",
+              "funciona",
+              "el",
+              "ascensor",
+              "desde",
+              "ayer."
+            ],
+            "gabarito": "No funciona el ascensor desde ayer.",
+            "explicacao": "A fault with «no funciona».",
+            "id": "es-037-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: The kitchen has a big window.",
+            "respostaEsperada": "La cocina tiene una ventana grande.",
+            "id": "es-037-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: The flat is furnished and has two bedrooms.",
+            "respostaEsperada": "El piso está amueblado y tiene dos habitaciones.",
+            "id": "es-037-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe your dream flat out loud: the floor, the rooms, the monthly rent and what it has."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Describe your home out loud, ask about the terms of a rental and report a fault, in five sentences."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-037.json",
+  "responsavel": null
+}

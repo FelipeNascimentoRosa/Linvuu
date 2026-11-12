@@ -1,0 +1,179 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 131,
+  "fase": 14,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Health: the doctor and the pharmacy: At the pharmacy",
+  "objetivo": "Lesson 33, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 33,
+    "titulo": "Health: the doctor and the pharmacy",
+    "objetivo": "Name parts of the body, say what hurts and how you feel («me duele», «tengo dolor de», «tengo fiebre»), make a doctor's appointment, understand what the doctor asks you to do (usted and the imperative) and ask for medicine at the pharmacy.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "At the pharmacy",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "la farmacia",
+            "translit": "lah far-MAH-thyah",
+            "pt": "the pharmacy, the drugstore",
+            "en": "",
+            "audio": "la farmacia"
+          },
+          {
+            "ru": "el jarabe",
+            "translit": "el hah-RAH-beh",
+            "pt": "the syrup, cough medicine",
+            "en": "",
+            "audio": "el jarabe"
+          },
+          {
+            "ru": "la pomada",
+            "translit": "lah poh-MAH-dah",
+            "pt": "the ointment, the cream",
+            "en": "",
+            "audio": "la pomada"
+          },
+          {
+            "ru": "la tirita",
+            "translit": "lah tee-REE-tah",
+            "pt": "the Band-Aid, the plaster (Spain); in Latin America it's «curita»",
+            "en": "",
+            "audio": "la tirita"
+          },
+          {
+            "ru": "sin receta",
+            "translit": "seen rreh-THEH-tah",
+            "pt": "without a prescription, over the counter",
+            "en": "",
+            "audio": "sin receta"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Asking for something for a problem",
+        "explicacao": "STEP 1: at the pharmacy, ask with «¿Tiene algo para…?» or «Necesito algo para…». «Para» shows the purpose here, as in lesson 31: «algo para la tos» (something for a cough), «algo para el dolor de cabeza». English \"for\" is «para» when it means \"intended for\" — not «por». STEP 2: the pharmacist asks: «¿Es para usted?», «¿Tiene receta?», «¿Es alérgico a algún medicamento?». Note «alérgico A» (English \"allergic TO\" — same idea, different preposition from «de»). STEP 3: dosage uses «cada», «veces al día» and «antes / después de las comidas»: «Una pastilla cada ocho horas, después de comer.» STEP 4: «se» says what is sold (a fixed phrase for now; the full rule comes later): «Se vende sin receta» (it's sold over the counter), «Se vende con receta». STEP 5: before taking anything, read the box and the leaflet. The pharmacist may say: «Lea el prospecto» — the leaflet inside. STEP 6: if you've already taken something, say «Ya he tomado…» (lesson 17) or «Ayer tomé…» (lesson 19). STEP 7: vocabulary varies: «tirita» in Spain and «curita» in Latin America.",
+        "comparacao": "English \"something FOR a cough\" is «algo PARA la tos» — «para» because it is the purpose — and Spanish keeps the article («la tos»). English \"allergic TO\" matches «alérgico A»: never «de».",
+        "erros": [
+          {
+            "errado": "Necesito algo por la tos.",
+            "certo": "Necesito algo para la tos.",
+            "motivo": "Purpose takes «para», not «por»."
+          },
+          {
+            "errado": "Soy alérgico de la penicilina.",
+            "certo": "Soy alérgico a la penicilina.",
+            "motivo": "«Alérgico» takes the preposition «a»."
+          },
+          {
+            "errado": "Tengo alergia de la penicilina.",
+            "certo": "Tengo alergia a la penicilina.",
+            "motivo": "With «alergia», the preposition is «a»."
+          },
+          {
+            "errado": "Quiero una pastilla para dolor.",
+            "certo": "Quisiera algo para el dolor de cabeza.",
+            "motivo": "Be specific and use the polite request from lesson 29."
+          }
+        ],
+        "tag": "Health"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "En la farmacia / At the pharmacy",
+        "contexto": "Javier goes to the pharmacy because he has a cough and a sore throat.",
+        "linhas": [
+          {
+            "personagem": "La farmacéutica",
+            "ru": "— Buenas tardes. ¿Qué desea?",
+            "pt": "— Good afternoon. What can I get you?",
+            "audio": "Buenas tardes. ¿Qué desea?",
+            "rotulo": "La farmacéutica"
+          },
+          {
+            "personagem": "Javier",
+            "ru": "— Buenas tardes. Tengo tos desde hace tres días y me duele la garganta. ¿Tiene algo para eso?",
+            "pt": "— Good afternoon. I've had a cough for three days and my throat hurts. Do you have anything for it?",
+            "audio": "Buenas tardes. Tengo tos desde hace tres días y me duele la garganta. ¿Tiene algo para eso?",
+            "rotulo": "Javier"
+          },
+          {
+            "personagem": "La farmacéutica",
+            "ru": "— ¿Tiene fiebre?",
+            "pt": "— Do you have a fever?",
+            "audio": "¿Tiene fiebre?",
+            "rotulo": "La farmacéutica"
+          },
+          {
+            "personagem": "Javier",
+            "ru": "— No, fiebre no tengo. Solo estoy un poco cansado.",
+            "pt": "— No, no fever. I'm just a bit tired.",
+            "audio": "No, fiebre no tengo. Solo estoy un poco cansado.",
+            "rotulo": "Javier"
+          },
+          {
+            "personagem": "La farmacéutica",
+            "ru": "— ¿Es alérgico a algún medicamento?",
+            "pt": "— Are you allergic to any medication?",
+            "audio": "¿Es alérgico a algún medicamento?",
+            "rotulo": "La farmacéutica"
+          },
+          {
+            "personagem": "Javier",
+            "ru": "— No, a ninguno.",
+            "pt": "— No, none.",
+            "audio": "No, a ninguno.",
+            "rotulo": "Javier"
+          },
+          {
+            "personagem": "La farmacéutica",
+            "ru": "— Tome este jarabe como indica la caja. Y si sigue mal dentro de una semana, hable con su médico.",
+            "pt": "— Take this syrup as the box says. And if you still feel unwell in a week, see your doctor.",
+            "audio": "Tome este jarabe como indica la caja. Y si sigue mal dentro de una semana, hable con su médico.",
+            "rotulo": "La farmacéutica"
+          },
+          {
+            "personagem": "Javier",
+            "ru": "— ¿Se vende sin receta?",
+            "pt": "— Is it sold without a prescription?",
+            "audio": "¿Se vende sin receta?",
+            "rotulo": "Javier"
+          },
+          {
+            "personagem": "La farmacéutica",
+            "ru": "— Sí, sin receta. Son nueve euros con cincuenta.",
+            "pt": "— Yes, no prescription needed. That's nine euros fifty.",
+            "audio": "Sí, sin receta. Son nueve euros con cincuenta.",
+            "rotulo": "La farmacéutica"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Play Javier's part out loud. Change the symptoms — a headache or a stomach ache — and how long: «desde ayer», «desde hace dos días»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say three doctor's instructions with the usted imperative: «Abra…, Respire…, Tome…». Then say two frequency phrases: «dos veces al día», «cada ocho horas»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-033.json",
+  "responsavel": null
+}

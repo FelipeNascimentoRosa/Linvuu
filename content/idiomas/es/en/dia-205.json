@@ -1,0 +1,184 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 205,
+  "fase": 21,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Connectors: Contrast and concession",
+  "objetivo": "Lesson 52, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 52,
+    "titulo": "Connectors",
+    "objetivo": "Organise what you say with connectors of contrast and concession («pero, sino, sin embargo, aunque, a pesar de que»), of cause and consequence («como, ya que, por eso, así que, de modo que») and of addition, order, time and condition («además, en primer lugar, en cuanto, siempre que»), choosing the right mood (indicative or subjunctive) when the connector requires it.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Contrast and concession",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "pero",
+            "translit": "",
+            "pt": "but",
+            "en": "",
+            "audio": "pero"
+          },
+          {
+            "ru": "sino",
+            "translit": "",
+            "pt": "but (rather), but instead",
+            "en": "",
+            "audio": "sino"
+          },
+          {
+            "ru": "sin embargo",
+            "translit": "",
+            "pt": "however, nevertheless",
+            "en": "",
+            "audio": "sin embargo"
+          },
+          {
+            "ru": "no obstante",
+            "translit": "",
+            "pt": "nonetheless",
+            "en": "",
+            "audio": "no obstante"
+          },
+          {
+            "ru": "en cambio",
+            "translit": "",
+            "pt": "on the other hand, whereas",
+            "en": "",
+            "audio": "en cambio"
+          },
+          {
+            "ru": "mientras que",
+            "translit": "",
+            "pt": "whereas, while",
+            "en": "",
+            "audio": "mientras que"
+          },
+          {
+            "ru": "aunque",
+            "translit": "",
+            "pt": "although, even though; even if",
+            "en": "",
+            "audio": "aunque"
+          },
+          {
+            "ru": "a pesar de",
+            "translit": "",
+            "pt": "in spite of, despite",
+            "en": "",
+            "audio": "a pesar de"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Pero, sino, sin embargo, aunque",
+        "explicacao": "STEP 1: «pero» joins two contrasting ideas, like English \"but\": «Es caro, pero es bueno». STEP 2: English \"but\" has a second job that Spanish gives to another word. After a NEGATIVE, when you correct and replace (\"not X but Y\"), Spanish uses «sino»: «No es rojo, sino azul» (It's not red but blue). If a verb follows, use «sino que»: «No lo compró, sino que lo alquiló» (He didn't buy it — he rented it). Don't confuse it with «si no» (if not), two words. STEP 3: «sin embargo» and «no obstante» are more formal than «pero», like English \"however\": «Es caro. Sin embargo, vale la pena». STEP 4: «en cambio» and «mientras que» contrast two situations, English \"whereas\", \"on the other hand\": «Yo estudio por la mañana; mi hermano, en cambio, estudia por la noche», «Aquí llueve mucho, mientras que allí hace sol». STEP 5: «aunque» covers two English words. With the indicative, it's a known fact, English \"although\": «Aunque llueve, salimos» (Although it's raining, we're going out). With the subjunctive, it's hypothetical or doesn't matter, English \"even if\": «Aunque llueva, saldremos» (Even if it rains, we'll go out). STEP 6: «a pesar de» (despite, in spite of) comes with a noun or an infinitive: «A pesar del frío», «A pesar de estar cansado» (despite being tired — infinitive, not gerund). «A pesar de que» (despite the fact that) comes with a conjugated verb, usually indicative: «A pesar de que estaba cansado, vino». STEP 7: «por más que» and «por mucho que» express useless effort, English \"however much\", with the subjunctive: «Por más que lo intente, no lo consigo», «Por mucho que estudie, no lo recuerdo». STEP 8: «aun cuando» is a more formal alternative to «aunque» and also takes both moods.",
+        "comparacao": "English \"but\" does two jobs; Spanish splits them: «pero» for a simple contrast (\"It's expensive, but good\") and «sino» after a negative to correct (\"not red BUT blue\" = «no rojo, SINO azul»). English \"although\" and \"even if\" are both «aunque» — indicative for \"although\", subjunctive for \"even if\". And \"despite being\" = «a pesar de ser», with an infinitive.",
+        "exemplos": [
+          {
+            "ru": "No me gusta el café, sino el té.",
+            "pt": "I don't like coffee — I like tea."
+          },
+          {
+            "ru": "Estudié mucho. Sin embargo, no aprobé.",
+            "pt": "I studied a lot. However, I didn't pass."
+          },
+          {
+            "ru": "Aunque llueva, iremos a la playa.",
+            "pt": "Even if it rains, we'll go to the beach."
+          },
+          {
+            "ru": "A pesar de que era tarde, seguimos hablando.",
+            "pt": "Although it was late, we kept talking."
+          }
+        ],
+        "tabela": [
+          {
+            "conector": "pero",
+            "sentido": "simple contrast",
+            "exemplo": "Es pequeño, pero es cómodo."
+          },
+          {
+            "conector": "sino / sino que",
+            "sentido": "correction after a negative",
+            "exemplo": "No viaja en tren, sino que va en coche."
+          },
+          {
+            "conector": "sin embargo, no obstante",
+            "sentido": "formal contrast",
+            "exemplo": "Llegó tarde; sin embargo, no perdió el tren."
+          },
+          {
+            "conector": "en cambio, mientras que",
+            "sentido": "two different sides",
+            "exemplo": "Yo madrugo; ella, en cambio, trasnocha."
+          },
+          {
+            "conector": "aunque + indicative",
+            "sentido": "a known fact (\"although\")",
+            "exemplo": "Aunque está cansado, trabaja."
+          },
+          {
+            "conector": "aunque + subjunctive",
+            "sentido": "hypothesis or doesn't matter (\"even if\")",
+            "exemplo": "Aunque esté cansado, trabajará."
+          },
+          {
+            "conector": "a pesar de que",
+            "sentido": "concession",
+            "exemplo": "A pesar de que llovía, salimos."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "No es rojo, pero azul.",
+            "certo": "No es rojo, sino azul.",
+            "motivo": "After a negative, the correction is «sino» (English \"not X but Y\")."
+          },
+          {
+            "errado": "A pesar que llovía, salimos.",
+            "certo": "A pesar de que llovía, salimos.",
+            "motivo": "The correct expression is «a pesar de que»."
+          },
+          {
+            "errado": "No lo compró, sino lo alquiló.",
+            "certo": "No lo compró, sino que lo alquiló.",
+            "motivo": "Before a conjugated verb, use «sino que»."
+          },
+          {
+            "errado": "Sino estudias, no aprobarás.",
+            "certo": "Si no estudias, no aprobarás.",
+            "motivo": "«Si no» (if not) is written as two words."
+          }
+        ],
+        "tag": "Connectors"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say out loud five contrasts about yourself or your city, with «pero», «sino», «sin embargo», «en cambio» and «aunque»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say five sentences with «pero», «porque» and «y». Then say two hypotheses with «si» (one possible and one unreal) to review the mood after «si»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-052.json",
+  "responsavel": null
+}

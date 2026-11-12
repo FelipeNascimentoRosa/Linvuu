@@ -1,0 +1,175 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 206,
+  "fase": 21,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Connectors: Cause and consequence",
+  "objetivo": "Lesson 52, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 52,
+    "titulo": "Connectors",
+    "objetivo": "Organise what you say with connectors of contrast and concession («pero, sino, sin embargo, aunque, a pesar de que»), of cause and consequence («como, ya que, por eso, así que, de modo que») and of addition, order, time and condition («además, en primer lugar, en cuanto, siempre que»), choosing the right mood (indicative or subjunctive) when the connector requires it.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Cause and consequence",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "ya que",
+            "translit": "",
+            "pt": "since, as (cause)",
+            "en": "",
+            "audio": "ya que"
+          },
+          {
+            "ru": "puesto que",
+            "translit": "",
+            "pt": "seeing that, given that",
+            "en": "",
+            "audio": "puesto que"
+          },
+          {
+            "ru": "debido a",
+            "translit": "",
+            "pt": "due to, owing to",
+            "en": "",
+            "audio": "debido a"
+          },
+          {
+            "ru": "gracias a",
+            "translit": "",
+            "pt": "thanks to",
+            "en": "",
+            "audio": "gracias a"
+          },
+          {
+            "ru": "por eso",
+            "translit": "",
+            "pt": "that's why, so",
+            "en": "",
+            "audio": "por eso"
+          },
+          {
+            "ru": "así que",
+            "translit": "",
+            "pt": "so (consequence)",
+            "en": "",
+            "audio": "así que"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Porque, como, ya que, por eso, así que",
+        "explicacao": "STEP 1: to give the cause, use «porque» (because), which answers «¿por qué?»: «No fui porque estaba enfermo». STEP 2: English \"as\" and \"since\" can give a cause in the middle of a sentence (\"I didn't go as I was ill\"); Spanish «como» only gives a cause at the START: «Como estaba enfermo, no fui» (As I was ill, I didn't go). «No fui como estaba enfermo» is wrong — in the middle, use «porque» or «ya que». STEP 3: English \"since\" (causal) is «ya que» or «puesto que» — not «desde», which is only \"since\" for time: «Ya que estás aquí, ayúdame» (Since you're here, help me). «Dado que» is similar and more formal. STEP 4: «debido a» (due to, owing to) and «a causa de» (because of) take a noun: «debido a la lluvia», «a causa del frío». With a verb, use «debido a que». STEP 5: «gracias a» is a positive cause («Gracias a ti, aprobé»); «por culpa de» is a negative one (because of, it's … 's fault): «Por culpa del tráfico, llegué tarde». STEP 6: for consequence, use «por eso», «así que», «por lo tanto» and «por consiguiente». English \"so\" is the big trap: \"so\" meaning \"therefore\" is «así que» or «por eso» («Estaba enfermo, así que no fui»), while \"so\" meaning \"very\" is «tan» («tan cansado»). Never «tan» for \"therefore\". STEP 7: «por lo tanto» and «por consiguiente» are formal, English \"therefore\", \"consequently\", usually followed by a comma: «Por lo tanto, no podemos aceptar». STEP 8: «tan… que» and «tanto… que» show intensity and consequence, English \"so … that\": «Estaba tan cansado que se durmió», «Trabajó tanto que se enfermó». STEP 9: «de modo que» has two uses. With the indicative it's a consequence: «Llegó tarde, de modo que perdió el tren». With the subjunctive it's a purpose: «Habla alto, de modo que todos te oigan».",
+        "comparacao": "English \"since\" and \"as\" can be causal anywhere in the sentence; Spanish «como» (causal) only goes at the START, and causal \"since\" is «ya que», never «desde». English \"so\" has two meanings: \"therefore\" = «así que» / «por eso»; \"very\" = «tan» (\"so tired that\" = «tan cansado que»).",
+        "exemplos": [
+          {
+            "ru": "Como no tenía tiempo, no cociné.",
+            "pt": "As I didn't have time, I didn't cook."
+          },
+          {
+            "ru": "Debido a la huelga, no hay trenes.",
+            "pt": "Owing to the strike, there are no trains."
+          },
+          {
+            "ru": "Hizo mucho calor, por eso fuimos a la playa.",
+            "pt": "It was very hot, so we went to the beach."
+          },
+          {
+            "ru": "Estaba tan cansada que se durmió en el sofá.",
+            "pt": "She was so tired that she fell asleep on the sofa."
+          }
+        ],
+        "tabela": [
+          {
+            "conector": "porque",
+            "tipo": "cause",
+            "exemplo": "No fui porque estaba enfermo."
+          },
+          {
+            "conector": "como (at the start)",
+            "tipo": "cause",
+            "exemplo": "Como llovía, nos quedamos en casa."
+          },
+          {
+            "conector": "ya que, puesto que, dado que",
+            "tipo": "a known cause (\"since\")",
+            "exemplo": "Ya que estás aquí, ayúdame."
+          },
+          {
+            "conector": "debido a, a causa de",
+            "tipo": "cause + noun",
+            "exemplo": "Debido a la lluvia, cerraron."
+          },
+          {
+            "conector": "gracias a, por culpa de",
+            "tipo": "positive or negative cause",
+            "exemplo": "Gracias a ti, aprobé."
+          },
+          {
+            "conector": "por eso, así que",
+            "tipo": "consequence (speech)",
+            "exemplo": "Llovía, así que nos quedamos."
+          },
+          {
+            "conector": "por lo tanto, por consiguiente",
+            "tipo": "consequence (formal)",
+            "exemplo": "Por lo tanto, no iremos."
+          },
+          {
+            "conector": "tan… que",
+            "tipo": "intensity and consequence (\"so … that\")",
+            "exemplo": "Estaba tan cansado que se durmió."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Nos quedamos como llovía.",
+            "certo": "Nos quedamos porque llovía.",
+            "motivo": "Causal «como» goes at the start of the sentence (English \"We stayed as it was raining\" can't be copied)."
+          },
+          {
+            "errado": "Estaba cansado, tan me fui.",
+            "certo": "Estaba cansado, así que me fui.",
+            "motivo": "English \"so\" meaning \"therefore\" is «así que» or «por eso»; «tan» only means \"so\" as in \"so tired\"."
+          },
+          {
+            "errado": "Debido que llovía, cerraron.",
+            "certo": "Debido a que llovía, cerraron.",
+            "motivo": "With a verb, the expression is «debido a que»."
+          },
+          {
+            "errado": "Estaba tan cansado, que se durmió.",
+            "certo": "Estaba tan cansado que se durmió.",
+            "motivo": "In «tan… que», there's no comma before «que»."
+          }
+        ],
+        "tag": "Connectors"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Explain out loud why you do five everyday things, using «porque», «como», «ya que» and «gracias a». Then say three consequences with «por eso», «así que» and «por lo tanto»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say three sentences with «aunque», one with the indicative and one with the subjunctive. Then one with «a pesar de»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-052.json",
+  "responsavel": null
+}

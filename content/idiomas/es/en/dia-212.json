@@ -1,0 +1,512 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 212,
+  "fase": 22,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Opinion and debate: Review and practice of lesson 53",
+  "objetivo": "Lesson 53, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 53,
+    "titulo": "Opinion and debate",
+    "objetivo": "Give your opinion, agree and disagree politely, back up an argument with reasons and examples, and use the indicative and the subjunctive correctly after «creo que», «no creo que» and «es importante que».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 53",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "No creo que tengas razón",
+            "opcoes": [
+              "No creo que tengas razón",
+              "No creo que tienes razón",
+              "Creo que tienes razón"
+            ],
+            "gabarito": "No creo que tengas razón",
+            "explicacao": "Listen for the «no» and the subjunctive «tengas».",
+            "id": "es-053-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Estoy de acuerdo contigo",
+            "opcoes": [
+              "Estoy de acuerdo contigo",
+              "No estoy de acuerdo contigo",
+              "Estoy de acuerdo con ella"
+            ],
+            "gabarito": "Estoy de acuerdo contigo",
+            "explicacao": "No «no», and with «contigo».",
+            "id": "es-053-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Es importante que escuchemos",
+            "opcoes": [
+              "Es importante que escuchemos",
+              "Es importante escuchar",
+              "Es importante que escuchamos"
+            ],
+            "gabarito": "Es importante que escuchemos",
+            "explicacao": "«Nosotros» subjunctive: «escuchemos».",
+            "id": "es-053-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Me parece que es una buena idea",
+            "respostaEsperada": "Me parece que es una buena idea",
+            "explicacao": "Write: Me parece que es una buena idea. (indicative after «me parece que»)",
+            "id": "es-053-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "No creo que sea posible",
+            "respostaEsperada": "No creo que sea posible",
+            "explicacao": "Write: No creo que sea posible. (subjunctive «sea»)",
+            "id": "es-053-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «What do you think about banning phones in schools?»",
+            "opcoes": [
+              "opinas",
+              "prohibir",
+              "en",
+              "los",
+              "móvil",
+              "¿Tú",
+              "qué",
+              "de",
+              "institutos?",
+              "el"
+            ],
+            "gabarito": "¿Tú qué opinas de prohibir el móvil en los institutos?",
+            "explicacao": "Write: ¿Tú qué opinas de prohibir el móvil en los institutos?",
+            "id": "es-053-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Tienes razón en parte",
+            "respostaEsperada": "Tienes razón en parte",
+            "explicacao": "Write: Tienes razón en parte. (no article)",
+            "id": "es-053-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "¿Ah, no? ¿Y qué propones?",
+            "respostaEsperada": "¿Ah, no? ¿Y qué propones?",
+            "explicacao": "Oh, really? So what do you suggest?",
+            "id": "es-053-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "No creo que tenga razón.",
+              "No creo que tiene razón.",
+              "No creo que tendrá razón."
+            ],
+            "gabarito": "No creo que tenga razón.",
+            "explicacao": "A negated opinion takes the subjunctive.",
+            "id": "es-053-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say \"I agree with you\"?",
+            "opcoes": [
+              "Estoy de acuerdo contigo.",
+              "Soy de acuerdo contigo.",
+              "Estoy acuerdo a ti."
+            ],
+            "gabarito": "Estoy de acuerdo contigo.",
+            "explicacao": "«Estar de acuerdo» and «contigo».",
+            "id": "es-053-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence disagrees gently?",
+            "opcoes": [
+              "No lo veo así.",
+              "Tienes razón.",
+              "Estoy totalmente de acuerdo."
+            ],
+            "gabarito": "No lo veo así.",
+            "explicacao": "The other two are agreement.",
+            "id": "es-053-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "¿Tú qué opinas de prohibir el móvil en los institutos?",
+            "respostaEsperada": "¿Tú qué opinas de prohibir el móvil en los institutos?",
+            "explicacao": "What do you think about banning phones in schools?",
+            "id": "es-053-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say \"it's important to listen\" (for everyone)?",
+            "opcoes": [
+              "Es importante escuchar.",
+              "Es importante que escuchar.",
+              "Es importante escucha."
+            ],
+            "gabarito": "Es importante escuchar.",
+            "explicacao": "With no specific subject, just the infinitive.",
+            "id": "es-053-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which option has no mistake?",
+            "opcoes": [
+              "En mi opinión, es una buena idea.",
+              "En mi opinión que es una buena idea.",
+              "En mi opinión de que es una buena idea."
+            ],
+            "gabarito": "En mi opinión, es una buena idea.",
+            "explicacao": "After «en mi opinión» comes a comma.",
+            "id": "es-053-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Creo que Marta ___ razón.",
+            "opcoes": [
+              "tiene",
+              "tenga",
+              "tendría"
+            ],
+            "gabarito": "tiene",
+            "explicacao": "An affirmation: indicative.",
+            "id": "es-053-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "En mi opinión,…",
+            "respostaEsperada": "En mi opinión,…",
+            "explicacao": "in my opinion,…",
+            "id": "es-053-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "No me parece que ___ una buena idea.",
+            "opcoes": [
+              "sea",
+              "es",
+              "será"
+            ],
+            "gabarito": "sea",
+            "explicacao": "A negated opinion: subjunctive.",
+            "id": "es-053-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Now that does seem reasonable to me.»",
+            "opcoes": [
+              "parece",
+              "sí",
+              "razonable.",
+              "Eso",
+              "me"
+            ],
+            "gabarito": "Eso sí me parece razonable.",
+            "explicacao": "Write: Eso sí me parece razonable.",
+            "id": "es-053-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Es mejor que ___ con calma. (nosotros, hablar)",
+            "opcoes": [
+              "hablemos",
+              "hablamos",
+              "hablar"
+            ],
+            "gabarito": "hablemos",
+            "explicacao": "«Nosotros» subjunctive.",
+            "id": "es-053-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Es evidente que los jóvenes ___ menos. (leer)",
+            "opcoes": [
+              "leen",
+              "lean",
+              "leyeran"
+            ],
+            "gabarito": "leen",
+            "explicacao": "«Es evidente que» presents a fact: indicative.",
+            "id": "es-053-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Estoy de acuerdo ___ . (with you)",
+            "opcoes": [
+              "contigo",
+              "con tú",
+              "a ti"
+            ],
+            "gabarito": "contigo",
+            "explicacao": "«Contigo» is a fixed form.",
+            "id": "es-053-e16"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Entiendo tu punto de vista, pero no lo veo así.»",
+            "opcoes": [
+              "Entiendo",
+              "tu",
+              "punto",
+              "de",
+              "vista,",
+              "pero",
+              "no",
+              "lo",
+              "veo",
+              "así."
+            ],
+            "gabarito": "Entiendo tu punto de vista, pero no lo veo así.",
+            "explicacao": "Acknowledge the other person, then disagree.",
+            "id": "es-053-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Eso sí me parece razonable.",
+            "respostaEsperada": "Eso sí me parece razonable.",
+            "explicacao": "Now that does seem reasonable to me.",
+            "id": "es-053-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Es importante que escuchemos a todos.»",
+            "opcoes": [
+              "Es",
+              "importante",
+              "que",
+              "escuchemos",
+              "a",
+              "todos."
+            ],
+            "gabarito": "Es importante que escuchemos a todos.",
+            "explicacao": "Es importante que + subjunctive.",
+            "id": "es-053-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "a favor / en contra",
+            "respostaEsperada": "a favor / en contra",
+            "explicacao": "for / against",
+            "id": "es-053-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I think it's a good idea, but I don't think it's easy.",
+            "respostaEsperada": "Creo que es una buena idea, pero no creo que sea fácil.",
+            "id": "es-053-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Creo que ella ___ razón. (tener)",
+            "opcoes": [
+              "tenga",
+              "tiene",
+              "tuviera"
+            ],
+            "gabarito": "tiene",
+            "explicacao": "An affirmative opinion: «creo que» + indicative.",
+            "id": "es-053-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Es mejor que ___ pronto. (nosotros, llegar)",
+            "opcoes": [
+              "llegamos",
+              "lleguemos",
+              "llegar"
+            ],
+            "gabarito": "lleguemos",
+            "explicacao": "«Es mejor que» takes the subjunctive; «g» becomes «gu» before «e».",
+            "id": "es-053-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «el tema» mean?",
+            "audio": "el tema",
+            "opcoes": [
+              "it's better that…",
+              "I think (that)…",
+              "I agree.",
+              "the topic, the subject"
+            ],
+            "gabarito": "the topic, the subject",
+            "explicacao": "«el tema» = the topic, the subject.",
+            "id": "es-053-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Es evidente que ___ un problema. (haber)",
+            "opcoes": [
+              "haya",
+              "hay",
+              "habría"
+            ],
+            "gabarito": "hay",
+            "explicacao": "«Es evidente que» states a fact: indicative.",
+            "id": "es-053-e22"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Estoy de acuerdo ___ que hay que esperar.",
+            "opcoes": [
+              "con",
+              "de",
+              "en"
+            ],
+            "gabarito": "en",
+            "explicacao": "With an idea: «estar de acuerdo en que».",
+            "id": "es-053-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the opposite of «a favor»?",
+            "opcoes": [
+              "de acuerdo",
+              "en parte",
+              "en contra"
+            ],
+            "gabarito": "en contra",
+            "explicacao": "«A favor» × «en contra».",
+            "id": "es-053-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "Es mejor que…",
+            "respostaEsperada": "Es mejor que…",
+            "explicacao": "it's better that…",
+            "id": "es-053-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which expression takes the subjunctive?",
+            "opcoes": [
+              "Es verdad que",
+              "Es evidente que",
+              "Es una pena que"
+            ],
+            "gabarito": "Es una pena que",
+            "explicacao": "Emotion and judgement take the subjunctive; «es verdad que» and «es evidente que» take the indicative.",
+            "id": "es-053-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «Es raro que…» mean?",
+            "audio": "Es raro que…",
+            "opcoes": [
+              "it's better that…",
+              "it's strange that…",
+              "it's necessary that…",
+              "in my opinion,…"
+            ],
+            "gabarito": "it's strange that…",
+            "explicacao": "«Es raro que…» = it's strange that….",
+            "id": "es-053-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say \"in my opinion\"?",
+            "opcoes": [
+              "Por mi opinión,",
+              "A mi opinión,",
+              "En mi opinión,"
+            ],
+            "gabarito": "En mi opinión,",
+            "explicacao": "The formula is «en mi opinión».",
+            "id": "es-053-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «No estoy del todo de acuerdo contigo.»",
+            "opcoes": [
+              "No",
+              "estoy",
+              "del",
+              "todo",
+              "de",
+              "acuerdo",
+              "contigo."
+            ],
+            "gabarito": "No estoy del todo de acuerdo contigo.",
+            "explicacao": "Gentle disagreement.",
+            "id": "es-053-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Es importante que hablemos del tema.»",
+            "opcoes": [
+              "Es",
+              "importante",
+              "que",
+              "hablemos",
+              "del",
+              "tema."
+            ],
+            "gabarito": "Es importante que hablemos del tema.",
+            "explicacao": "«Es importante que» takes the subjunctive.",
+            "id": "es-053-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I think you're right. (informal)",
+            "respostaEsperada": "Creo que tienes razón.",
+            "id": "es-053-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I don't think it's a good idea.",
+            "respostaEsperada": "No creo que sea una buena idea.",
+            "id": "es-053-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Pick a light, debatable topic (for example, eating dinner early or late) and talk for 30 seconds: an opinion, a reason, an example and a concession with «tienes razón en parte»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Give an opinion on public transport in three sentences: one with «creo que», one with «no creo que» and one with «es necesario que»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-053.json",
+  "responsavel": null
+}

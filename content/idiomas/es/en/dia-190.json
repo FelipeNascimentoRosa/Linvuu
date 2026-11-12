@@ -1,0 +1,170 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 190,
+  "fase": 19,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Indirect speech: Markers of time, place and person",
+  "objetivo": "Lesson 48, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 48,
+    "titulo": "Indirect speech",
+    "objetivo": "Report what someone said, asked or requested: shift the tenses (present → imperfecto, future → conditional, pretérito → pluscuamperfecto, imperative → imperfecto de subjuntivo), the time and place markers (hoy → ese día, aquí → allí) and the pronouns, and turn questions and requests into reported speech.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Markers of time, place and person",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "ese día",
+            "translit": "",
+            "pt": "that day",
+            "en": "",
+            "audio": "ese día"
+          },
+          {
+            "ru": "el día anterior, la víspera",
+            "translit": "",
+            "pt": "the day before, the previous day",
+            "en": "",
+            "audio": "el día anterior, la víspera"
+          },
+          {
+            "ru": "al día siguiente",
+            "translit": "",
+            "pt": "the next day, the following day",
+            "en": "",
+            "audio": "al día siguiente"
+          },
+          {
+            "ru": "allí, allá",
+            "translit": "",
+            "pt": "there",
+            "en": "",
+            "audio": "allí, allá"
+          },
+          {
+            "ru": "entonces",
+            "translit": "",
+            "pt": "then, at that moment",
+            "en": "",
+            "audio": "entonces"
+          },
+          {
+            "ru": "la semana anterior",
+            "translit": "",
+            "pt": "the week before",
+            "en": "",
+            "audio": "la semana anterior"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Hoy, aquí, este: what changes",
+        "explicacao": "STEP 1: in direct speech, words like «hoy», «aquí», «este» depend on when and where the person is speaking. When you report the sentence later or elsewhere, these words must change — as in English (\"today\" → \"that day\"). STEP 2: time markers change like this: «hoy» → «ese día» (that day); «ayer» → «el día anterior» or «la víspera» (the day before); «mañana» → «al día siguiente» (the next day); «ahora» → «entonces» (then); «hace dos días» → «dos días antes» (two days before); «la semana que viene» → «la semana siguiente»; «el año pasado» → «el año anterior». STEP 3: place markers and demonstratives change: «aquí» → «allí» or «allá» (there); «este» → «ese» or «aquel»; «ven» (come here) → «fuera» (go there), as in «me dijo que fuera». STEP 4: pronouns change person: «Mi casa es grande», said by Ana, becomes «Ana dijo que su casa era grande». «Te llamaré», said to you, becomes «me dijo que me llamaría». STEP 5: point of view matters. If you're reporting on the same day or in the same place, you don't need to change: if Ana told you in the morning «Hoy salgo temprano» and you report it that evening, you can say «Ana dijo que hoy salía temprano». STEP 6: «ir» and «venir» also adapt to where the speaker is. «Ven a mi casa» can be reported as «Me dijo que fuera a su casa» or, if you're there, «Me dijo que viniera a su casa». STEP 7: in writing, when the sentence has more than one verb, shift all of them: «Dijo que había llegado la víspera y que se iría al día siguiente».",
+        "comparacao": "English changes these words too: \"today\" → \"that day\", \"tomorrow\" → \"the next day\", \"here\" → \"there\". Spanish uses «el día anterior» and «al día siguiente» (with «a + el» = «al»). For \"that day\", both «ese día» and «aquel día» work.",
+        "exemplos": [
+          {
+            "ru": "«Hoy no trabajo.» → Dijo que ese día no trabajaba.",
+            "pt": "\"I'm not working today.\" → He said he wasn't working that day."
+          },
+          {
+            "ru": "«Mañana te llamaré.» → Me dijo que me llamaría al día siguiente.",
+            "pt": "\"I'll call tomorrow.\" → He told me he would call me the next day."
+          },
+          {
+            "ru": "«Aquí hace calor.» → Comentó que allí hacía calor.",
+            "pt": "\"It's hot here.\" → She mentioned that it was hot there."
+          },
+          {
+            "ru": "«Mi hermana llegó ayer.» → Dijo que su hermana había llegado el día anterior.",
+            "pt": "\"My sister arrived yesterday.\" → She said her sister had arrived the day before."
+          }
+        ],
+        "tabela": [
+          {
+            "direto": "hoy",
+            "indireto": "ese día",
+            "exemplo": "Dijo que ese día no trabajaba."
+          },
+          {
+            "direto": "ayer",
+            "indireto": "el día anterior, la víspera",
+            "exemplo": "Contó que el día anterior había estado enfermo."
+          },
+          {
+            "direto": "mañana",
+            "indireto": "al día siguiente",
+            "exemplo": "Dijo que llegaría al día siguiente."
+          },
+          {
+            "direto": "ahora",
+            "indireto": "entonces",
+            "exemplo": "Dijo que entonces estaba ocupado."
+          },
+          {
+            "direto": "aquí",
+            "indireto": "allí, allá",
+            "exemplo": "Explicó que allí hacía mucho frío."
+          },
+          {
+            "direto": "este, esta",
+            "indireto": "ese, esa, aquel, aquella",
+            "exemplo": "Dijo que aquella casa era cara."
+          },
+          {
+            "direto": "la semana que viene",
+            "indireto": "la semana siguiente",
+            "exemplo": "Avisó de que se iría la semana siguiente."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Me dijo el lunes que mañana vendría.",
+            "certo": "Me dijo el lunes que vendría al día siguiente.",
+            "motivo": "When you report it later, «mañana» becomes «al día siguiente» (\"the next day\")."
+          },
+          {
+            "errado": "Dijo que aquí hacía frío. (reported from another place)",
+            "certo": "Dijo que allí hacía frío.",
+            "motivo": "«Aquí» becomes «allí» when the speaker's place has changed."
+          },
+          {
+            "errado": "Ana dijo que mi casa era grande. (the house is Ana's)",
+            "certo": "Ana dijo que su casa era grande.",
+            "motivo": "The possessive changes person: «mi» becomes «su»."
+          },
+          {
+            "errado": "Contó que ayer había llegado.",
+            "certo": "Contó que había llegado el día anterior.",
+            "motivo": "With the backshift, «ayer» becomes «el día anterior»."
+          }
+        ],
+        "tag": "Indirect speech"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Pick a conversation you had last week. Tell it out loud as if to someone who wasn't there, swapping «hoy, ayer, mañana, aquí» for the right markers."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Put into reported speech: «Estudio español» (Dijo que…), «Viajaré a Sevilla» (Dijo que…), «He comprado un billete» (Dijo que…)."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-048.json",
+  "responsavel": null
+}

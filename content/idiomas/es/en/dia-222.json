@@ -1,0 +1,137 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 222,
+  "fase": 23,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "News and media: Reporting what others said",
+  "objetivo": "Lesson 56, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 56,
+    "titulo": "News and media",
+    "objetivo": "Read and understand the style of a news story and a headline, report what other people said, and talk about news, social media and hoaxes with the right vocabulary and structures.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Reporting what others said",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "según",
+            "translit": "seh-GOON",
+            "pt": "according to",
+            "en": "",
+            "audio": "según"
+          },
+          {
+            "ru": "afirmar, asegurar",
+            "translit": "ah-feer-MAR, ah-seh-goo-RAR",
+            "pt": "to state, to assure",
+            "en": "",
+            "audio": "afirmar, asegurar"
+          },
+          {
+            "ru": "anunciar",
+            "translit": "ah-noon-THYAR",
+            "pt": "to announce",
+            "en": "",
+            "audio": "anunciar"
+          },
+          {
+            "ru": "negar, desmentir",
+            "translit": "neh-GAR, des-men-TEER",
+            "pt": "to deny",
+            "en": "",
+            "audio": "negar, desmentir"
+          },
+          {
+            "ru": "al parecer",
+            "translit": "ahl pah-reh-THER",
+            "pt": "apparently",
+            "en": "",
+            "audio": "al parecer"
+          },
+          {
+            "ru": "la fuente",
+            "translit": "lah FWEN-teh",
+            "pt": "the source",
+            "en": "",
+            "audio": "la fuente"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Citing sources and reporting what was said",
+        "explicacao": "STEP 1: to say where information comes from, use «según» with no preposition after it: «Según la policía, no hay heridos.» (According to the police, no one was hurt.), «Según fuentes municipales, el proyecto costó dos millones.» STEP 2: the most common reporting verbs are «afirmar», «asegurar», «anunciar», «explicar», «declarar» and «añadir». They all take «que» and a verb in the indicative: «La alcaldesa anunció que abriría la biblioteca en octubre.» STEP 3: the sequence of tenses from lesson 48 still applies, much as in English reported speech: present becomes imperfect, preterite becomes pluperfect, future becomes conditional: «Dijo: Llegaremos pronto → Dijo que llegarían pronto.» STEP 4: when someone denies something, the next verb goes into the subjunctive, because you're not asserting the fact: «El club negó que el entrenador se fuera.» (The club denied that the coach was leaving.) English keeps the indicative here; Spanish doesn't. STEP 5: for unconfirmed information: «Dicen que…», «Se dice que…» (It's said that…), «Al parecer…» (Apparently…), «Parece ser que…». STEP 6: the press uses a \"rumour conditional\": «El accidente habría ocurrido de madrugada.» It means the source says so but the paper doesn't confirm it — like English \"the accident reportedly happened…\". You need to recognise it; you don't need to use it when speaking.",
+        "comparacao": "English \"He denied that it was true\" keeps the indicative; Spanish switches: «Negó que fuera cierto». English \"reportedly / allegedly\" often corresponds to the rumour conditional: «habría ocurrido». And after «afirmar», «asegurar» and «anunciar» there's no «de»: «afirmó que», never «afirmó de que».",
+        "tabela": [
+          {
+            "funcao": "citing the source",
+            "estrutura": "Según + source",
+            "exemplo": "Según la policía, no hay heridos."
+          },
+          {
+            "funcao": "reporting a statement",
+            "estrutura": "verb + que + indicative",
+            "exemplo": "Anunció que cerraría el viernes."
+          },
+          {
+            "funcao": "reporting a denial",
+            "estrutura": "negar / desmentir + que + subjunctive",
+            "exemplo": "Negó que fuera cierto."
+          },
+          {
+            "funcao": "unconfirmed information",
+            "estrutura": "Dicen que / Al parecer",
+            "exemplo": "Al parecer, el tren llegará tarde."
+          },
+          {
+            "funcao": "journalistic rumour",
+            "estrutura": "conditional",
+            "exemplo": "El suceso habría ocurrido de noche."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Afirmó de que no había daños.",
+            "certo": "Afirmó que no había daños.",
+            "motivo": "Reporting verbs don't take «de que» (this mistake is called «dequeísmo»)."
+          },
+          {
+            "errado": "Según a la policía, no hay heridos.",
+            "certo": "Según la policía, no hay heridos.",
+            "motivo": "«Según» takes no preposition after it."
+          },
+          {
+            "errado": "El portavoz negó que es cierto.",
+            "certo": "El portavoz negó que fuera cierto.",
+            "motivo": "Someone who denies isn't asserting: subjunctive."
+          }
+        ],
+        "tag": "Indirect speech"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Pick a news story you read today and tell it out loud with «Según…», «afirmó que…» and «al parecer…». Use at least three different reporting verbs."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Turn these into reported speech out loud: «Voy a llegar tarde» (dijo que…) and «Hemos terminado» (dijo que…)."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-056.json",
+  "responsavel": null
+}

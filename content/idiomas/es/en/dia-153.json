@@ -1,0 +1,171 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 153,
+  "fase": 16,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Pluscuamperfecto: Forming the pluscuamperfecto",
+  "objetivo": "Lesson 39, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 39,
+    "titulo": "Pluscuamperfecto",
+    "objetivo": "Form and use the pluscuamperfecto («había hablado», «había hecho») to talk about something that had already happened before another moment in the past, with pronouns, negation, questions and markers like «ya» and «todavía no».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Forming the pluscuamperfecto",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "intro",
+        "min": 0,
+        "texto": "Welcome to B1. At A2 you told stories in the past with the indefinido and the imperfecto, and you already use «he» + participle. Now you'll learn to place one event BEFORE another past event, which makes your stories much clearer."
+      },
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "ya había salido",
+            "translit": "",
+            "pt": "had already left",
+            "en": "",
+            "audio": "ya había salido"
+          },
+          {
+            "ru": "todavía no había llegado",
+            "translit": "",
+            "pt": "hadn't arrived yet",
+            "en": "",
+            "audio": "todavía no había llegado"
+          },
+          {
+            "ru": "nunca había visto",
+            "translit": "",
+            "pt": "had never seen",
+            "en": "",
+            "audio": "nunca había visto"
+          },
+          {
+            "ru": "antes de eso",
+            "translit": "",
+            "pt": "before that",
+            "en": "",
+            "audio": "antes de eso"
+          },
+          {
+            "ru": "aún no",
+            "translit": "",
+            "pt": "not yet",
+            "en": "",
+            "audio": "aún no"
+          },
+          {
+            "ru": "hasta entonces",
+            "translit": "",
+            "pt": "until then",
+            "en": "",
+            "audio": "hasta entonces"
+          },
+          {
+            "ru": "por fin",
+            "translit": "",
+            "pt": "finally, at last",
+            "en": "",
+            "audio": "por fin"
+          },
+          {
+            "ru": "al llegar",
+            "translit": "",
+            "pt": "on arriving, when (I) arrived",
+            "en": "",
+            "audio": "al llegar"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Había + participle: the past perfect",
+        "explicacao": "STEP 1: good news — this tense is English \"had + past participle\": \"I had left\", \"she had done\". Spanish builds it exactly the same way: «había salido», «había hecho». STEP 2: the catch: English \"have\" is both possession and the auxiliary; Spanish splits them. Possession is «tener», but the auxiliary is ALWAYS «haber». So \"I had a car\" is «Tenía un coche», but \"I had eaten\" is «Había comido» — never «tenía comido». STEP 3: the auxiliary is «haber» in the imperfecto: «había, habías, había, habíamos, habíais, habían». Every form has an accent on the «í». STEP 4: then comes the participle: -ar verbs take «-ado» (hablado), -er and -ir verbs take «-ido» (comido, vivido). When the stem ends in a strong vowel (a, e, o), «-ido» takes an accent: «leído, oído, traído, creído, caído». STEP 5: the irregular participles are the same ones you already use with «he»: hecho, dicho, visto, puesto, escrito, abierto, vuelto, roto, muerto, cubierto, resuelto — and their compounds: «deshecho, descrito, devuelto, descubierto». Watch out: Spanish never adds «-ido» to these («escribido», «hacido» don't exist), just as English doesn't say \"writed\". STEP 6: with «haber», the participle NEVER agrees: «Ella había salido», «Ellas habían salido». STEP 7: the auxiliary and the participle stay together — nothing goes in between. English says \"I had ALREADY left\", \"I had NEVER seen\", \"I had seen IT\"; Spanish moves those words outside: «Ya había salido», «Nunca había visto», «Lo había visto». STEP 8: careful: «había» is also the past of «hay» («había mucha gente» = there were a lot of people). If a participle follows, it's the auxiliary.",
+        "comparacao": "English has the same tense: \"had + past participle\" = «había + participio». Two differences: the auxiliary is «haber», not «tener» (English \"have\" covers both), and nothing goes between «había» and the participle — English \"had already left\" is «ya había salido», \"had seen it\" is «lo había visto».",
+        "tabela": [
+          {
+            "pessoa": "yo",
+            "forma": "había hablado",
+            "exemplo": "Ya había hablado con ella."
+          },
+          {
+            "pessoa": "tú",
+            "forma": "habías comido",
+            "exemplo": "¿Ya habías comido?"
+          },
+          {
+            "pessoa": "él, ella, usted",
+            "forma": "había vivido",
+            "exemplo": "Había vivido en Lima."
+          },
+          {
+            "pessoa": "nosotros, nosotras",
+            "forma": "habíamos hecho",
+            "exemplo": "Lo habíamos hecho juntos."
+          },
+          {
+            "pessoa": "vosotros, vosotras",
+            "forma": "habíais dicho",
+            "exemplo": "Ya me lo habíais dicho."
+          },
+          {
+            "pessoa": "ellos, ellas, ustedes",
+            "forma": "habían visto",
+            "exemplo": "Ya lo habían visto."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Tenía hablado con ella.",
+            "certo": "Había hablado con ella.",
+            "motivo": "The auxiliary in this tense is «haber», not «tener» — English \"had\" doesn't become «tenía» here."
+          },
+          {
+            "errado": "Habia salido.",
+            "certo": "Había salido.",
+            "motivo": "Every form of «había» takes an accent on the «í»."
+          },
+          {
+            "errado": "Había escribido una carta.",
+            "certo": "Había escrito una carta.",
+            "motivo": "«Escribir» has an irregular participle: «escrito»."
+          },
+          {
+            "errado": "Había hacido la tarea.",
+            "certo": "Había hecho la tarea.",
+            "motivo": "«Hacer» has an irregular participle: «hecho»."
+          },
+          {
+            "errado": "Ellas habían salidas.",
+            "certo": "Ellas habían salido.",
+            "motivo": "With «haber», the participle doesn't change for gender or number."
+          }
+        ],
+        "tag": "Compound tenses"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Imagine 8 a.m. yesterday. Say five sentences about what you had already done by then: «A las ocho ya había desayunado. Todavía no había salido de casa…»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say out loud what you've already done today, with «he» + participle: «He desayunado… He salido…». Then say the participle of hacer, decir, ver, poner and escribir."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-039.json",
+  "responsavel": null
+}

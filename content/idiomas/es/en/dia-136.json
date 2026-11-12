@@ -1,0 +1,517 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 136,
+  "fase": 14,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Travel: airport, train and hotel: Review and practice of lesson 34",
+  "objetivo": "Lesson 34, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 34,
+    "titulo": "Travel: airport, train and hotel",
+    "objetivo": "Buy a train ticket and ask about times, platform and journey time («tarda», «dura»), say how you travel with «en», get through the airport (facturar, puerta de embarque, equipaje) and book and use a hotel.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 34",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Quisiera un billete de ida y vuelta",
+            "opcoes": [
+              "Quisiera un billete de ida y vuelta",
+              "Quisiera un billete a ida y vuelta",
+              "Quiero un billete de ida"
+            ],
+            "gabarito": "Quisiera un billete de ida y vuelta",
+            "explicacao": "The fixed phrase is «de ida y vuelta».",
+            "id": "es-034-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "El tren sale del andén cuatro",
+            "opcoes": [
+              "El tren sale del andén cuatro",
+              "El tren sale de la andén cuatro",
+              "El tren llega del andén cuatro"
+            ],
+            "gabarito": "El tren sale del andén cuatro",
+            "explicacao": "«Andén» is masculine: «del andén».",
+            "id": "es-034-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Tengo una reserva a nombre de Silva",
+            "opcoes": [
+              "Tengo una reserva a nombre de Silva",
+              "Tengo una reserva en el nombre de Silva",
+              "Tengo una reserva con nombre de Silva"
+            ],
+            "gabarito": "Tengo una reserva a nombre de Silva",
+            "explicacao": "Fixed phrase: «a nombre de» (English \"under the name of\").",
+            "id": "es-034-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "El vuelo lleva retraso",
+            "respostaEsperada": "El vuelo lleva retraso",
+            "explicacao": "Write: El vuelo lleva retraso.",
+            "id": "es-034-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Voy en tren a Sevilla",
+            "respostaEsperada": "Voy en tren a Sevilla",
+            "explicacao": "Write: Voy en tren a Sevilla.",
+            "id": "es-034-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «la reserva» mean?",
+            "audio": "la reserva",
+            "opcoes": [
+              "the platform",
+              "reception",
+              "the flight",
+              "the reservation, the booking"
+            ],
+            "gabarito": "the reservation, the booking",
+            "explicacao": "«la reserva» = the reservation, the booking.",
+            "id": "es-034-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Quisiera facturar esta maleta",
+            "respostaEsperada": "Quisiera facturar esta maleta",
+            "explicacao": "Write: Quisiera facturar esta maleta.",
+            "id": "es-034-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "Buenas noches. ¿En qué puedo ayudarle?",
+            "respostaEsperada": "Buenas noches. ¿En qué puedo ayudarle?",
+            "explicacao": "Good evening. How can I help you?",
+            "id": "es-034-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say \"I'm going by train\"?",
+            "opcoes": [
+              "Voy en tren.",
+              "Voy de tren.",
+              "Voy por tren."
+            ],
+            "gabarito": "Voy en tren.",
+            "explicacao": "Transport takes «en»; on foot is «a pie».",
+            "id": "es-034-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which verb do you use in \"It takes the train two hours to get there\"?",
+            "opcoes": [
+              "tarda",
+              "dura",
+              "lleva"
+            ],
+            "gabarito": "tarda",
+            "explicacao": "«Tarda dos horas en llegar»: how long something takes to arrive.",
+            "id": "es-034-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «El hotel está completo» mean?",
+            "opcoes": [
+              "The hotel has no free rooms.",
+              "The hotel is complete.",
+              "The hotel is expensive."
+            ],
+            "gabarito": "The hotel has no free rooms.",
+            "explicacao": "False friend: «completo» means full.",
+            "id": "es-034-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «la recepción» mean?",
+            "audio": "la recepción",
+            "opcoes": [
+              "one-way, single",
+              "the delay",
+              "the reservation, the booking",
+              "reception"
+            ],
+            "gabarito": "reception",
+            "explicacao": "«la recepción» = reception.",
+            "id": "es-034-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is «la ventanilla»?",
+            "opcoes": [
+              "the train window or the ticket counter",
+              "the luggage",
+              "the timetable"
+            ],
+            "gabarito": "the train window or the ticket counter",
+            "explicacao": "Both, depending on context.",
+            "id": "es-034-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "¿A qué hora ___ el tren? (leaves)",
+            "opcoes": [
+              "sale",
+              "salgo",
+              "sales"
+            ],
+            "gabarito": "sale",
+            "explicacao": "«El tren» is third person: «sale».",
+            "id": "es-034-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "El tren llega ___ las doce y cuarenta.",
+            "opcoes": [
+              "a",
+              "en",
+              "de"
+            ],
+            "gabarito": "a",
+            "explicacao": "Clock times take «a las» (English \"at\").",
+            "id": "es-034-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "Aquí tiene. ¿A qué hora es el desayuno?",
+            "respostaEsperada": "Aquí tiene. ¿A qué hora es el desayuno?",
+            "explicacao": "Here you are. What time is breakfast?",
+            "id": "es-034-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "El viaje ___ dos horas. (lasts)",
+            "opcoes": [
+              "dura",
+              "tardo",
+              "duro"
+            ],
+            "gabarito": "dura",
+            "explicacao": "«Dura» for how long the event lasts.",
+            "id": "es-034-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «el desayuno incluido» mean?",
+            "audio": "el desayuno incluido",
+            "opcoes": [
+              "the platform",
+              "the timetable, the schedule",
+              "the double room",
+              "breakfast included"
+            ],
+            "gabarito": "breakfast included",
+            "explicacao": "«el desayuno incluido» = breakfast included.",
+            "id": "es-034-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Mi maleta no ___ llegado.",
+            "opcoes": [
+              "ha",
+              "he",
+              "está"
+            ],
+            "gabarito": "ha",
+            "explicacao": "Pretérito perfecto: «ha llegado».",
+            "id": "es-034-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Hay que ___ la habitación antes de las doce. (leave)",
+            "opcoes": [
+              "dejar",
+              "dejo",
+              "deja"
+            ],
+            "gabarito": "dejar",
+            "explicacao": "«Hay que» + infinitive.",
+            "id": "es-034-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «¿A qué hora sale el próximo tren?»",
+            "opcoes": [
+              "¿A",
+              "qué",
+              "hora",
+              "sale",
+              "el",
+              "próximo",
+              "tren?"
+            ],
+            "gabarito": "¿A qué hora sale el próximo tren?",
+            "explicacao": "Asking the time.",
+            "id": "es-034-e16"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Quisiera reservar una habitación doble.»",
+            "opcoes": [
+              "Quisiera",
+              "reservar",
+              "una",
+              "habitación",
+              "doble."
+            ],
+            "gabarito": "Quisiera reservar una habitación doble.",
+            "explicacao": "Polite request.",
+            "id": "es-034-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «el andén» mean?",
+            "audio": "el andén",
+            "opcoes": [
+              "one-way, single",
+              "breakfast included",
+              "the platform",
+              "reception"
+            ],
+            "gabarito": "the platform",
+            "explicacao": "«el andén» = the platform.",
+            "id": "es-034-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I have a reservation under the name Silva. Is breakfast included?",
+            "respostaEsperada": "Tengo una reserva a nombre de Silva. ¿Está incluido el desayuno?",
+            "id": "es-034-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "¿Hay wifi en la habitación?",
+            "respostaEsperada": "¿Hay wifi en la habitación?",
+            "explicacao": "Is there wifi in the room?",
+            "id": "es-034-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Quisiera un billete de ida ___ vuelta.",
+            "opcoes": [
+              "o",
+              "e",
+              "y"
+            ],
+            "gabarito": "y",
+            "explicacao": "«Ida y vuelta» is the fixed phrase for a return / round trip.",
+            "id": "es-034-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tengo una reserva a ___ de Silva.",
+            "opcoes": [
+              "nombre",
+              "número",
+              "nombra"
+            ],
+            "gabarito": "nombre",
+            "explicacao": "The fixed phrase is «a nombre de».",
+            "id": "es-034-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tengo dos ___ y un equipaje de mano.",
+            "opcoes": [
+              "equipajes",
+              "maletas",
+              "maletos"
+            ],
+            "gabarito": "maletas",
+            "explicacao": "«Equipaje» isn't counted (like \"luggage\"); you count «maletas».",
+            "id": "es-034-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «de ida» mean?",
+            "audio": "de ida",
+            "opcoes": [
+              "the delay",
+              "one-way, single",
+              "the flight",
+              "the reservation, the booking"
+            ],
+            "gabarito": "one-way, single",
+            "explicacao": "«de ida» = one-way, single.",
+            "id": "es-034-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "La puerta de ___ es la doce.",
+            "opcoes": [
+              "embarque",
+              "embarco",
+              "embarca"
+            ],
+            "gabarito": "embarque",
+            "explicacao": "«Puerta de embarque» is the boarding gate.",
+            "id": "es-034-e22"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Voy ___ avión a Lima.",
+            "opcoes": [
+              "por",
+              "de",
+              "en"
+            ],
+            "gabarito": "en",
+            "explicacao": "Means of transport take «en».",
+            "id": "es-034-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which question asks how long the trip takes?",
+            "opcoes": [
+              "¿Cuántos tarda el viaje?",
+              "¿Cuánto tarda el viaje?",
+              "¿Cuándo tarda el viaje?"
+            ],
+            "gabarito": "¿Cuánto tarda el viaje?",
+            "explicacao": "«Cuánto tarda» asks how long it takes.",
+            "id": "es-034-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "Perfecto. Muchas gracias.",
+            "respostaEsperada": "Perfecto. Muchas gracias.",
+            "explicacao": "Perfect. Thank you very much.",
+            "id": "es-034-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «el retraso» mean?",
+            "opcoes": [
+              "delay",
+              "getting there early",
+              "portrait"
+            ],
+            "gabarito": "delay",
+            "explicacao": "«Retraso» is a delay.",
+            "id": "es-034-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «la habitación doble» mean?",
+            "audio": "la habitación doble",
+            "opcoes": [
+              "the delay",
+              "one-way, single",
+              "the double room",
+              "breakfast included"
+            ],
+            "gabarito": "the double room",
+            "explicacao": "«la habitación doble» = the double room.",
+            "id": "es-034-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you ask whether breakfast is included?",
+            "opcoes": [
+              "¿Hay incluido el desayuno?",
+              "¿Está incluido el desayuno?",
+              "¿Es incluido el desayuno?"
+            ],
+            "gabarito": "¿Está incluido el desayuno?",
+            "explicacao": "For the state of something, use «estar incluido».",
+            "id": "es-034-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «¿A qué hora sale el próximo tren a Madrid?»",
+            "opcoes": [
+              "¿A",
+              "qué",
+              "hora",
+              "sale",
+              "el",
+              "próximo",
+              "tren",
+              "a",
+              "Madrid?"
+            ],
+            "gabarito": "¿A qué hora sale el próximo tren a Madrid?",
+            "explicacao": "«¿A qué hora…?» asks the time.",
+            "id": "es-034-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Tengo una reserva para tres noches.»",
+            "opcoes": [
+              "Tengo",
+              "una",
+              "reserva",
+              "para",
+              "tres",
+              "noches."
+            ],
+            "gabarito": "Tengo una reserva para tres noches.",
+            "explicacao": "«Reserva para» + length of stay.",
+            "id": "es-034-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I have a reservation under the name Silva.",
+            "respostaEsperada": "Tengo una reserva a nombre de Silva.",
+            "id": "es-034-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: Which is the boarding gate?",
+            "respostaEsperada": "¿Cuál es la puerta de embarque?",
+            "id": "es-034-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe an imaginary trip out loud: which city you leave from, how you travel, where you sleep and what time you arrive."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say out loud, with «usted», five travel requests: a ticket, the platform, a suitcase, a hotel booking and the wifi."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-034.json",
+  "responsavel": null
+}

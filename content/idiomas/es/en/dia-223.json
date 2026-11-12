@@ -1,0 +1,210 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 223,
+  "fase": 23,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "News and media: Talking about news and rumours",
+  "objetivo": "Lesson 56, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 56,
+    "titulo": "News and media",
+    "objetivo": "Read and understand the style of a news story and a headline, report what other people said, and talk about news, social media and hoaxes with the right vocabulary and structures.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Talking about news and rumours",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "compartir",
+            "translit": "kom-par-TEER",
+            "pt": "to share",
+            "en": "",
+            "audio": "compartir"
+          },
+          {
+            "ru": "comprobar",
+            "translit": "kom-proh-BAR",
+            "pt": "to check, to verify",
+            "en": "",
+            "audio": "comprobar"
+          },
+          {
+            "ru": "fiarse de",
+            "translit": "FYAR-seh deh",
+            "pt": "to trust",
+            "en": "",
+            "audio": "fiarse de"
+          },
+          {
+            "ru": "desconfiar de",
+            "translit": "des-kon-FYAR deh",
+            "pt": "to distrust",
+            "en": "",
+            "audio": "desconfiar de"
+          },
+          {
+            "ru": "Me suena.",
+            "translit": "meh SWEH-nah",
+            "pt": "it rings a bell.",
+            "en": "",
+            "audio": "Me suena."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Talking about news, social media and fact-checking",
+        "explicacao": "STEP 1: to bring up a topic: «¿Has visto la noticia de…?» (Have you seen the story about…?), «He leído que…», «Me suena que…» (I seem to remember that…). STEP 2: to express doubt: «No me fío de esa página.» (I don't trust that website.), «Desconfío de ese titular.», «No sé si es verdad.» «Fiarse de» and «confiar en» mean the same but take different prepositions. STEP 3: to give advice, use the negative imperative, which uses the subjunctive (lesson 28): «No compartas una noticia sin comprobar la fuente.» and the affirmative: «Comprueba la fuente.» STEP 4: to generalise: «Hay que comprobar la fuente» (You have to check the source), «Conviene leer más de un periódico.» STEP 5: use impersonal «se» for collective habits: «Se comparte mucha información falsa por las redes.» (A lot of false information is shared on social media.)",
+        "comparacao": "English \"to trust\" has no preposition, and \"trust IN\" exists too. Spanish fixes it: «confiar EN» and «fiarse DE»: «Confío en él», «Me fío de él». So \"I don't trust that site\" = «No me fío de esa página». And \"to check\" in this sense is «comprobar», not «chequear» (used colloquially in Latin America, but avoid it in careful Spanish).",
+        "tabela": [
+          {
+            "objetivo": "asking",
+            "frase": "¿Has visto la noticia del concierto?"
+          },
+          {
+            "objetivo": "doubting",
+            "frase": "No me fío de esa página."
+          },
+          {
+            "objetivo": "giving advice",
+            "frase": "No compartas nada sin comprobar la fuente."
+          },
+          {
+            "objetivo": "saying it's false",
+            "frase": "Eso es un bulo."
+          },
+          {
+            "objetivo": "generalising",
+            "frase": "Hay que leer más de un periódico."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Me fío en esa página.",
+            "certo": "Me fío de esa página.",
+            "motivo": "«Fiarse» takes «de»."
+          },
+          {
+            "errado": "No compartes esa noticia.",
+            "certo": "No compartas esa noticia.",
+            "motivo": "The negative imperative uses the subjunctive: «compartas»."
+          },
+          {
+            "errado": "Confío de él.",
+            "certo": "Confío en él.",
+            "motivo": "With «confiar», the preposition is «en»."
+          }
+        ],
+        "tag": "Media"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Un mensaje en las redes / A message on social media",
+        "contexto": "Isabel and Marcos talk about a message going round online.",
+        "linhas": [
+          {
+            "personagem": "Isabel",
+            "ru": "— Marcos, ¿has visto lo que circula por las redes? Dicen que mañana cierran todas las tiendas del centro.",
+            "pt": "— Marcos, have you seen what's going round on social media? They say all the shops in the centre are closing tomorrow.",
+            "audio": "Marcos, ¿has visto lo que circula por las redes? Dicen que mañana cierran todas las tiendas del centro.",
+            "rotulo": "Isabel"
+          },
+          {
+            "personagem": "Marcos",
+            "ru": "— ¿Quién lo dice? ¿Hay alguna fuente?",
+            "pt": "— Who says so? Is there a source?",
+            "audio": "¿Quién lo dice? ¿Hay alguna fuente?",
+            "rotulo": "Marcos"
+          },
+          {
+            "personagem": "Isabel",
+            "ru": "— Lo ha compartido mucha gente, pero no pone de dónde sale.",
+            "pt": "— Lots of people have shared it, but it doesn't say where it comes from.",
+            "audio": "Lo ha compartido mucha gente, pero no pone de dónde sale.",
+            "rotulo": "Isabel"
+          },
+          {
+            "personagem": "Marcos",
+            "ru": "— Entonces yo no me fiaría. Seguro que es un bulo.",
+            "pt": "— Then I wouldn't trust it. It's definitely a hoax.",
+            "audio": "Entonces yo no me fiaría. Seguro que es un bulo.",
+            "rotulo": "Marcos"
+          },
+          {
+            "personagem": "Isabel",
+            "ru": "— Tienes razón. Voy a mirar la página del ayuntamiento.",
+            "pt": "— You're right. I'll check the council's website.",
+            "audio": "Tienes razón. Voy a mirar la página del ayuntamiento.",
+            "rotulo": "Isabel"
+          },
+          {
+            "personagem": "Marcos",
+            "ru": "— Buena idea. Y no lo compartas hasta comprobarlo.",
+            "pt": "— Good idea. And don't share it until you've checked.",
+            "audio": "Buena idea. Y no lo compartas hasta comprobarlo.",
+            "rotulo": "Marcos"
+          },
+          {
+            "personagem": "Isabel",
+            "ru": "— Ya lo he comprobado: no han anunciado nada. Es falso.",
+            "pt": "— I've already checked: they haven't announced anything. It's false.",
+            "audio": "Ya lo he comprobado: no han anunciado nada. Es falso.",
+            "rotulo": "Isabel"
+          },
+          {
+            "personagem": "Marcos",
+            "ru": "— Pues entonces mejor avisar a los demás.",
+            "pt": "— Then we'd better let the others know.",
+            "audio": "Pues entonces mejor avisar a los demás.",
+            "rotulo": "Marcos"
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "min": 4,
+        "titulo": "Abre una nueva biblioteca / New library opens (made-up news story)",
+        "ru": "El ayuntamiento inauguró ayer una biblioteca pública en el barrio de Los Almendros, una zona que hasta ahora no tenía ninguna. El edificio, que antes fue una fábrica de tejidos, cuenta con tres plantas, una sala infantil y un espacio para estudiar. Según la concejala de Cultura, el proyecto ha necesitado dos años de obras. «Queríamos un lugar abierto a todos», aseguró durante la ceremonia. La biblioteca abrirá de lunes a sábado, de nueve de la mañana a nueve de la noche. Los vecinos celebraron la apertura con una pequeña fiesta en la plaza. Al parecer, ya se han apuntado más de trescientas personas para hacerse el carné.",
+        "pt": "The city council yesterday opened a public library in the Los Almendros neighbourhood, an area that until now didn't have one. The building, formerly a textile factory, has three floors, a children's room and a study area. According to the councillor for Culture, the project took two years of building work. \"We wanted a place open to everyone,\" she said during the ceremony. The library will open Monday to Saturday, from nine in the morning to nine at night. Residents celebrated the opening with a small party in the square. Apparently, more than three hundred people have already signed up for a library card. (News story made up for this lesson.)",
+        "perguntas": [
+          {
+            "pergunta": "¿Qué se inauguró y cuándo?",
+            "resposta": "Una biblioteca pública, ayer."
+          },
+          {
+            "pergunta": "¿Qué había antes en el edificio?",
+            "resposta": "Una fábrica de tejidos."
+          },
+          {
+            "pergunta": "¿Qué dijo la concejala?",
+            "resposta": "Aseguró: «Queríamos un lugar abierto a todos»."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Explain out loud, in four sentences, how you check whether a news story is true before sharing it. Use «hay que…», «comprobar la fuente» and «no compartas…»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say three ways of presenting information you can't confirm (for example, «Dicen que…»)."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-056.json",
+  "responsavel": null
+}

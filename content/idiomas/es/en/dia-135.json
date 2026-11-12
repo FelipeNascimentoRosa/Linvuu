@@ -1,0 +1,172 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 135,
+  "fase": 14,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Travel: airport, train and hotel: At the hotel",
+  "objetivo": "Lesson 34, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 34,
+    "titulo": "Travel: airport, train and hotel",
+    "objetivo": "Buy a train ticket and ask about times, platform and journey time («tarda», «dura»), say how you travel with «en», get through the airport (facturar, puerta de embarque, equipaje) and book and use a hotel.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "At the hotel",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "la reserva",
+            "translit": "lah rreh-SEHR-bah",
+            "pt": "the reservation, the booking",
+            "en": "",
+            "audio": "la reserva"
+          },
+          {
+            "ru": "la habitación individual",
+            "translit": "lah ah-bee-tah-THYOHN een-dee-bee-DWAHL",
+            "pt": "the single room (Latin America: el cuarto)",
+            "en": "",
+            "audio": "la habitación individual"
+          },
+          {
+            "ru": "la habitación doble",
+            "translit": "lah ah-bee-tah-THYOHN DOH-bleh",
+            "pt": "the double room",
+            "en": "",
+            "audio": "la habitación doble"
+          },
+          {
+            "ru": "el desayuno incluido",
+            "translit": "el deh-sah-YOO-noh een-kloo-EE-doh",
+            "pt": "breakfast included",
+            "en": "",
+            "audio": "el desayuno incluido"
+          },
+          {
+            "ru": "la recepción",
+            "translit": "lah rreh-thep-THYOHN",
+            "pt": "reception",
+            "en": "",
+            "audio": "la recepción"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Booking and using a hotel",
+        "explicacao": "STEP 1: to book: «Quisiera reservar una habitación doble para dos noches, del tres al cinco de mayo.» English \"from the 3rd TO the 5th\" is «DEL tres AL cinco». STEP 2: when you arrive: «Tengo una reserva a nombre de Silva.» English says \"under the name Silva\" or \"in the name of Silva\"; Spanish uses the fixed phrase «a nombre de» — never «en el nombre de» or «bajo el nombre». The receptionist may ask: «¿A nombre de quién?» (Under what name?). STEP 3: useful questions: «¿Está incluido el desayuno?», «¿A qué hora es el desayuno?», «¿Hay wifi en la habitación?», «¿A qué hora hay que dejar la habitación?» (What time is check-out?). STEP 4: problems: «No funciona el aire acondicionado», «No hay agua caliente», «La ducha está rota» (estar + participle). Ask politely: «¿Podría cambiarme de habitación?» STEP 5: when you leave: «Quisiera dejar la habitación» and «La cuenta, por favor.» STEP 6: false friend: in a hotel, «completo» means FULL, no vacancies («El hotel está completo»), not \"complete\". «Habitación doble» is for two people; the bed can be «de matrimonio» (double bed) or «dos camas» (twin). STEP 7: in many Latin American countries you'll hear «cuarto» instead of «habitación».",
+        "comparacao": "English \"under the name Silva\" is «a nombre de Silva», a fixed phrase. «Completo» is a trap: in a hotel it means \"full, no vacancies\", and because it's a state it takes «estar». And \"from the 3rd TO the 5th\" is «del tres al cinco».",
+        "erros": [
+          {
+            "errado": "Tengo una reserva en el nombre de Silva.",
+            "certo": "Tengo una reserva a nombre de Silva.",
+            "motivo": "Fixed phrase: «a nombre de» (English \"under the name of\")."
+          },
+          {
+            "errado": "El hotel es completo.",
+            "certo": "El hotel está completo.",
+            "motivo": "Being full is a state, so it takes «estar»."
+          },
+          {
+            "errado": "¿Hay incluido el desayuno?",
+            "certo": "¿Está incluido el desayuno?",
+            "motivo": "For something that is included, use «estar incluido»."
+          },
+          {
+            "errado": "Quiero cambiar de habitación.",
+            "certo": "¿Podría cambiarme de habitación?",
+            "motivo": "With strangers, prefer the polite request."
+          }
+        ],
+        "tag": "Travel"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "En la recepción / At reception",
+        "contexto": "Marcos arrives at the hotel at night and checks in.",
+        "linhas": [
+          {
+            "personagem": "La recepcionista",
+            "ru": "— Buenas noches. ¿En qué puedo ayudarle?",
+            "pt": "— Good evening. How can I help you?",
+            "audio": "Buenas noches. ¿En qué puedo ayudarle?",
+            "rotulo": "La recepcionista"
+          },
+          {
+            "personagem": "Marcos",
+            "ru": "— Buenas noches. Tengo una reserva a nombre de Marcos Silva, para tres noches.",
+            "pt": "— Good evening. I have a reservation under the name Marcos Silva, for three nights.",
+            "audio": "Buenas noches. Tengo una reserva a nombre de Marcos Silva, para tres noches.",
+            "rotulo": "Marcos"
+          },
+          {
+            "personagem": "La recepcionista",
+            "ru": "— Un momento, por favor. Sí, una habitación doble con desayuno incluido. ¿Me permite su pasaporte?",
+            "pt": "— One moment, please. Yes, a double room with breakfast included. May I see your passport?",
+            "audio": "Un momento, por favor. Sí, una habitación doble con desayuno incluido. ¿Me permite su pasaporte?",
+            "rotulo": "La recepcionista"
+          },
+          {
+            "personagem": "Marcos",
+            "ru": "— Aquí tiene. ¿A qué hora es el desayuno?",
+            "pt": "— Here you are. What time is breakfast?",
+            "audio": "Aquí tiene. ¿A qué hora es el desayuno?",
+            "rotulo": "Marcos"
+          },
+          {
+            "personagem": "La recepcionista",
+            "ru": "— De siete a diez, en la planta baja. Su habitación es la trescientos cinco y el ascensor está a la izquierda.",
+            "pt": "— From seven to ten, on the ground floor. Your room is three hundred and five, and the lift is on the left.",
+            "audio": "De siete a diez, en la planta baja. Su habitación es la trescientos cinco y el ascensor está a la izquierda.",
+            "rotulo": "La recepcionista"
+          },
+          {
+            "personagem": "Marcos",
+            "ru": "— ¿Hay wifi en la habitación?",
+            "pt": "— Is there wifi in the room?",
+            "audio": "¿Hay wifi en la habitación?",
+            "rotulo": "Marcos"
+          },
+          {
+            "personagem": "La recepcionista",
+            "ru": "— Sí, la contraseña está en la tarjeta. Y hay que dejar la habitación antes de las doce.",
+            "pt": "— Yes, the password is on the card. And you need to check out before noon.",
+            "audio": "Sí, la contraseña está en la tarjeta. Y hay que dejar la habitación antes de las doce.",
+            "rotulo": "La recepcionista"
+          },
+          {
+            "personagem": "Marcos",
+            "ru": "— Perfecto. Muchas gracias.",
+            "pt": "— Perfect. Thank you very much.",
+            "audio": "Perfecto. Muchas gracias.",
+            "rotulo": "Marcos"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Play Marcos out loud, changing the booking: one night, a single room, no breakfast. Ask whether there is wifi."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say out loud, with «usted», how you would ask for a ticket and for a checked suitcase."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-034.json",
+  "responsavel": null
+}

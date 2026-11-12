@@ -1,0 +1,222 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 167,
+  "fase": 17,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Present subjunctive (forms): Spelling changes and commands with usted",
+  "objetivo": "Lesson 42, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 42,
+    "titulo": "Present subjunctive (forms)",
+    "objetivo": "Form the present subjunctive of regular verbs, of irregular verbs from the «yo» form («tenga», «haga», «diga»), of stem-changing verbs and of the six verbs with their own forms («sea», «esté», «vaya», «haya», «sepa», «dé»), with the spelling changes (busque, llegue, empiece).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Spelling changes and commands with usted",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "pase",
+            "translit": "",
+            "pt": "come in (usted)",
+            "en": "",
+            "audio": "pase"
+          },
+          {
+            "ru": "siéntese",
+            "translit": "",
+            "pt": "sit down (usted)",
+            "en": "",
+            "audio": "siéntese"
+          },
+          {
+            "ru": "dígame",
+            "translit": "",
+            "pt": "tell me (usted)",
+            "en": "",
+            "audio": "dígame"
+          },
+          {
+            "ru": "tenga",
+            "translit": "",
+            "pt": "have, take, here you are (usted)",
+            "en": "",
+            "audio": "tenga"
+          },
+          {
+            "ru": "no se preocupe",
+            "translit": "",
+            "pt": "don't worry (usted)",
+            "en": "",
+            "audio": "no se preocupe"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Keeping the sound: c/qu, g/gu, z/c and g/j",
+        "explicacao": "STEP 1: in the subjunctive, the final vowel flips to «e» (in -ar) or «a» (in -er and -ir). That flip can change the sound of the consonant before it, so the spelling changes to keep the sound — the same idea as English \"picnic → picnicking\", where a «k» is added to keep the hard sound. STEP 2: -car verbs: «c» becomes «qu» before «e»: buscar → busque, busques, busque…; sacar → saque; tocar → toque. STEP 3: -gar verbs: «g» becomes «gu» before «e»: llegar → llegue; pagar → pague; apagar → apague. STEP 4: -zar verbs: «z» becomes «c» before «e» (Spanish rarely writes «ze»): empezar → empiece; cruzar → cruce; utilizar → utilice. STEP 5: -ger and -gir verbs: «g» becomes «j» before «a»: coger → coja, escoger → escoja, dirigir → dirija. STEP 6: «seguir» and «conseguir» lose the «u»: siga, consiga. «Jugar» changes both its stem and its spelling: juegue. STEP 7: the sound stays the same as in the infinitive: the «c» in «buscar» sounds like /k/, so in «busque» the «qu» keeps that sound. STEP 8: you already use these forms in commands: «Llegue temprano», «Busque aquí», «No llegues tarde».",
+        "comparacao": "It's only spelling: the sound of the infinitive is kept. «buscar → busque» (/k/), «llegar → llegue» (hard /g/), «empezar → empiece» (Spanish avoids «ze»), «coger → coja» (the throaty /x/). English does something similar with \"panic → panicked\".",
+        "tabela": [
+          {
+            "infinitivo": "buscar",
+            "yo": "busco",
+            "subjuntivo": "busque",
+            "mudanca": "c → qu"
+          },
+          {
+            "infinitivo": "sacar",
+            "yo": "saco",
+            "subjuntivo": "saque",
+            "mudanca": "c → qu"
+          },
+          {
+            "infinitivo": "llegar",
+            "yo": "llego",
+            "subjuntivo": "llegue",
+            "mudanca": "g → gu"
+          },
+          {
+            "infinitivo": "pagar",
+            "yo": "pago",
+            "subjuntivo": "pague",
+            "mudanca": "g → gu"
+          },
+          {
+            "infinitivo": "empezar",
+            "yo": "empiezo",
+            "subjuntivo": "empiece",
+            "mudanca": "z → c"
+          },
+          {
+            "infinitivo": "cruzar",
+            "yo": "cruzo",
+            "subjuntivo": "cruce",
+            "mudanca": "z → c"
+          },
+          {
+            "infinitivo": "coger",
+            "yo": "cojo",
+            "subjuntivo": "coja",
+            "mudanca": "g → j (already in the yo form)"
+          },
+          {
+            "infinitivo": "seguir",
+            "yo": "sigo",
+            "subjuntivo": "siga",
+            "mudanca": "gu → g"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "que yo busce",
+            "certo": "que yo busque",
+            "motivo": "Before «e», the /k/ «c» has to become «qu»."
+          },
+          {
+            "errado": "que yo llege",
+            "certo": "que yo llegue",
+            "motivo": "Before «e», the hard /g/ «g» has to become «gu»."
+          },
+          {
+            "errado": "que yo empeze",
+            "certo": "que yo empiece",
+            "motivo": "Before «e», «z» becomes «c», and the stem changes to «ie»."
+          },
+          {
+            "errado": "que yo coga",
+            "certo": "que yo coja",
+            "motivo": "Before «a», «g» would sound hard /g/; to keep the /x/ sound, write «j»."
+          }
+        ],
+        "tag": "Subjunctive"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "En la recepción del hotel / At the hotel reception",
+        "contexto": "Mr Martínez books a night at a hotel. The receptionist uses several usted commands, which are subjunctive forms.",
+        "linhas": [
+          {
+            "personagem": "La recepcionista",
+            "ru": "— Buenos días, señor Martínez. Pase y siéntese, por favor.",
+            "pt": "— Good morning, Mr Martínez. Come in and have a seat, please.",
+            "audio": "Buenos días, señor Martínez. Pase y siéntese, por favor.",
+            "rotulo": "La recepcionista"
+          },
+          {
+            "personagem": "Señor Martínez",
+            "ru": "— Gracias. Quiero hacer una reserva para el viernes.",
+            "pt": "— Thank you. I'd like to make a booking for Friday.",
+            "audio": "Gracias. Quiero hacer una reserva para el viernes.",
+            "rotulo": "Señor Martínez"
+          },
+          {
+            "personagem": "La recepcionista",
+            "ru": "— Perfecto. Dígame su nombre completo y tenga a mano su documento.",
+            "pt": "— Perfect. Tell me your full name and have your ID ready.",
+            "audio": "Perfecto. Dígame su nombre completo y tenga a mano su documento.",
+            "rotulo": "La recepcionista"
+          },
+          {
+            "personagem": "Señor Martínez",
+            "ru": "— Aquí lo tiene. ¿Puedo pagar con tarjeta?",
+            "pt": "— Here you are. Can I pay by card?",
+            "audio": "Aquí lo tiene. ¿Puedo pagar con tarjeta?",
+            "rotulo": "Señor Martínez"
+          },
+          {
+            "personagem": "La recepcionista",
+            "ru": "— Claro. No se preocupe por el pago hoy; puede hacerlo a la llegada. Espere un momento, por favor, mientras lo compruebo.",
+            "pt": "— Of course. Don't worry about payment today; you can do it when you arrive. Wait a moment, please, while I check.",
+            "audio": "Claro. No se preocupe por el pago hoy; puede hacerlo a la llegada. Espere un momento, por favor, mientras lo compruebo.",
+            "rotulo": "La recepcionista"
+          },
+          {
+            "personagem": "Señor Martínez",
+            "ru": "— Sin prisa. Oiga, ¿el desayuno está incluido?",
+            "pt": "— No rush. Listen, is breakfast included?",
+            "audio": "Sin prisa. Oiga, ¿el desayuno está incluido?",
+            "rotulo": "Señor Martínez"
+          },
+          {
+            "personagem": "La recepcionista",
+            "ru": "— Sí. Y si llega tarde, no se olvide de avisar a recepción.",
+            "pt": "— Yes. And if you arrive late, don't forget to let reception know.",
+            "audio": "Sí. Y si llega tarde, no se olvide de avisar a recepción.",
+            "rotulo": "La recepcionista"
+          },
+          {
+            "personagem": "Señor Martínez",
+            "ru": "— Muy bien. Hasta el viernes.",
+            "pt": "— Very good. See you on Friday.",
+            "audio": "Muy bien. Hasta el viernes.",
+            "rotulo": "Señor Martínez"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Give six commands to someone you call «usted», using the verbs pasar, sentarse, decir, tener, esperar and llegar: «Pase, siéntese…». Then give a friend three negative commands: «No llegues tarde…»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say out loud the subjunctive of ir, ser, estar, haber and saber for «yo» and «ellos»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-042.json",
+  "responsavel": null
+}

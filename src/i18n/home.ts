@@ -18,7 +18,7 @@ const copy: Record<string, readonly [string]> = {
   'VUU · UM GOSTINHO DO SEU PRÓXIMO IDIOMA': ['VUU · A TASTE OF YOUR NEXT LANGUAGE'],
   'A OFERTA DE HOJE': ['AVAILABLE TODAY'],
   'Seu ritmo.': ['Your pace.'], 'Seu próximo idioma.': ['Your next language.'],
-  'Acesso aos cursos de idiomas, com explicações em português. Comece pelas duas primeiras aulas grátis, sem cartão.': ['All language courses included: Brazilian Portuguese, French, Russian and German fully in English; Spanish partly. Start with two free lessons, no card required.'],
+  'Acesso aos cursos de idiomas, com explicações em português. Comece pelas duas primeiras aulas grátis, sem cartão.': ['All language courses included: Spanish, German, French, Russian and Brazilian Portuguese, fully in English. Start with two free lessons, no card required.'],
   'Mensal': ['Monthly'], 'Três meses no Pix': ['Three months with Pix'], 'Anual': ['Annual'],
   'por mês · renovação automática': ['per month · automatic renewal'],
   'pagamento único · 30% de desconto': ['one-time payment · 30% off'],
@@ -34,7 +34,7 @@ const copy: Record<string, readonly [string]> = {
 
   'Planos': ['Plans'],
   'Aprenda idiomas online, explicados em português': ['Language courses for English speakers'],
-  'Site para aprender inglês, espanhol, francês, italiano, alemão e russo online. Cursos com explicação em português, áudio em cada frase e exercícios. 2 aulas grátis.': ['Courses for English speakers: Brazilian Portuguese, French, Russian and German fully explained in English; Spanish partly. Try 2 free lessons.'],
+  'Site para aprender inglês, espanhol, francês, italiano, alemão e russo online. Cursos com explicação em português, áudio em cada frase e exercícios. 2 aulas grátis.': ['Courses for English speakers: Spanish, German, French, Russian and Brazilian Portuguese, fully explained in English. Try 2 free lessons.'],
   'Português do Brasil': ['Brazilian Portuguese'], 'Do primeiro “oi” às suas próximas conversas no Brasil.': ['From your first “oi” to your next conversations in Brazil.'],
   'Inglês': ['English'], 'Espanhol': ['Spanish'], 'Francês': ['French'],
   'Italiano': ['Italian'], 'Alemão': ['German'], 'Russo': ['Russian'],
@@ -148,7 +148,7 @@ export const homeText = (text: string): string => {
 };
 
 export const homeNotice = LOCALE.codigo === 'en'
-  ? 'Brazilian Portuguese, French, Russian and German are fully explained in English. Spanish and Italian are coming as soon as their English explanations are ready.'
+  ? 'Spanish, German, French, Russian and Brazilian Portuguese are fully explained in English. Italian is coming as soon as its English explanations are ready.'
   : '';
 
 export function selectionHelp(name: string, limit: number) {

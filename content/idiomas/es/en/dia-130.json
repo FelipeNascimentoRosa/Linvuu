@@ -1,0 +1,147 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 130,
+  "fase": 13,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Health: the doctor and the pharmacy: At the doctor's",
+  "objetivo": "Lesson 33, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 33,
+    "titulo": "Health: the doctor and the pharmacy",
+    "objetivo": "Name parts of the body, say what hurts and how you feel («me duele», «tengo dolor de», «tengo fiebre»), make a doctor's appointment, understand what the doctor asks you to do (usted and the imperative) and ask for medicine at the pharmacy.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "At the doctor's",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "la cita",
+            "translit": "lah THEE-tah (Latin America: SEE-tah)",
+            "pt": "the appointment",
+            "en": "",
+            "audio": "la cita"
+          },
+          {
+            "ru": "el médico, la médica",
+            "translit": "el MEH-dee-koh, lah MEH-dee-kah",
+            "pt": "the doctor (m. / f.)",
+            "en": "",
+            "audio": "el médico, la médica"
+          },
+          {
+            "ru": "la consulta",
+            "translit": "lah kohn-SOOL-tah",
+            "pt": "the doctor's office; the consultation",
+            "en": "",
+            "audio": "la consulta"
+          },
+          {
+            "ru": "el centro de salud",
+            "translit": "el THEN-troh deh sah-LOOD",
+            "pt": "the public health centre (Spain)",
+            "en": "",
+            "audio": "el centro de salud"
+          },
+          {
+            "ru": "la receta",
+            "translit": "lah rreh-THEH-tah (rolled r)",
+            "pt": "the prescription (also a cooking recipe)",
+            "en": "",
+            "audio": "la receta"
+          },
+          {
+            "ru": "las urgencias",
+            "translit": "lahs oor-HEN-thyahs («j/g» = a strong h)",
+            "pt": "the emergency room, A&E",
+            "en": "",
+            "audio": "las urgencias"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Making an appointment and understanding what the doctor asks",
+        "explicacao": "STEP 1: to make an appointment, use the polite request from lesson 29: «Quisiera pedir una cita con el médico» (I'd like to make an appointment) or «Necesito una cita para el jueves.» Ask: «¿Tiene hueco esta tarde?» (hueco = a free slot) or «¿A qué hora puedo ir?». STEP 2: doctor and patient address each other as «usted», so everything is in the third person: «¿Qué le pasa?» (What's the matter?), «¿Dónde le duele?», «¿Desde cuándo tiene fiebre?». STEP 3: instructions use the usted imperative (lesson 28): -ar verbs take «-e»; -er and -ir verbs take «-a» — the vowels swap. So: «respire hondo» (take a deep breath), «abra la boca», «tosa» (cough), «siéntese», «descanse», «beba mucha agua», «tome una pastilla», «vuelva en una semana». STEP 4: frequency is «cada» + time («cada ocho horas» = every eight hours) or «veces al día»: «dos veces al día» (twice a day), «una vez a la semana». «Cada» never changes. STEP 5: advice comes with «tiene que» or «debe» (lesson 13): «Tiene que descansar», «Debe beber agua». Also «hay que» (one has to): «Hay que esperar dos días.» STEP 6: you answer with short phrases: «Desde ayer», «Me duele aquí», «Sí, soy alérgico a la penicilina», «No, no tengo fiebre». STEP 7: false friends: «pastilla» is a pill or tablet (and a throat lozenge), «receta» is the prescription, «embarazada» means PREGNANT — not embarrassed (that's «avergonzado/a») — and «constipado» means having a cold. STEP 8: careful: here you learn to communicate, not to treat yourself. For any health question, talk to a professional.",
+        "comparacao": "English speakers have the most famous false friend in Spanish here: «estoy embarazada» means \"I'm pregnant\", not \"I'm embarrassed\" (that is «tengo vergüenza» or «estoy avergonzado/a»). Also: «receta» is both the prescription and the cooking recipe, «constipado» is a cold, and the doctor uses «usted», so his imperatives end in «-e/-a» («abra», «respire»), not the «tú» forms.",
+        "tabela": [
+          {
+            "medico": "¿Qué le pasa?",
+            "paciente": "Me duele la garganta y tengo tos.",
+            "traducao": "What's the matter? / My throat hurts and I have a cough."
+          },
+          {
+            "medico": "¿Desde cuándo tiene fiebre?",
+            "paciente": "Desde ayer por la noche.",
+            "traducao": "Since when have you had a fever? / Since last night."
+          },
+          {
+            "medico": "Abra la boca, por favor.",
+            "paciente": "(opens mouth)",
+            "traducao": "Open your mouth, please."
+          },
+          {
+            "medico": "Respire hondo.",
+            "paciente": "(takes a deep breath)",
+            "traducao": "Take a deep breath."
+          },
+          {
+            "medico": "Tiene que descansar.",
+            "paciente": "Vale, gracias.",
+            "traducao": "You need to rest. / OK, thank you."
+          },
+          {
+            "medico": "Vuelva en una semana.",
+            "paciente": "De acuerdo. ¿Puedo pedir la cita ahora?",
+            "traducao": "Come back in a week. / All right. Can I make the appointment now?"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Abre la boca, señora García.",
+            "certo": "Abra la boca, señora García.",
+            "motivo": "With «usted», the imperative of abrir is «abra»."
+          },
+          {
+            "errado": "Tengo cita por el jueves.",
+            "certo": "Tengo cita el jueves.",
+            "motivo": "Days of the week take no preposition — no \"ON Thursday\" in Spanish."
+          },
+          {
+            "errado": "Soy embarazada.",
+            "certo": "Estoy embarazada.",
+            "motivo": "Pregnancy is a state and takes «estar»."
+          },
+          {
+            "errado": "Tomo dos pastillas cada de ocho horas.",
+            "certo": "Tomo dos pastillas cada ocho horas.",
+            "motivo": "«Cada» goes straight before the time, with no «de»."
+          }
+        ],
+        "tag": "Health"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Act out a dialogue alone, out loud: first make an appointment («Quisiera pedir una cita…»), then, as the patient, describe three symptoms and how long you've had them, and finally, as the doctor, give three usted instructions."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say from memory five sentences with «me duele», «me duelen» and «tengo dolor de». Then say a symptom with «desde hace»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-033.json",
+  "responsavel": null
+}

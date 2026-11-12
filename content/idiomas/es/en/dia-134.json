@@ -1,0 +1,142 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 134,
+  "fase": 14,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Travel: airport, train and hotel: At the airport",
+  "objetivo": "Lesson 34, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 34,
+    "titulo": "Travel: airport, train and hotel",
+    "objetivo": "Buy a train ticket and ask about times, platform and journey time («tarda», «dura»), say how you travel with «en», get through the airport (facturar, puerta de embarque, equipaje) and book and use a hotel.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "At the airport",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "el vuelo",
+            "translit": "el BWEH-loh («v» sounds like a soft «b»)",
+            "pt": "the flight",
+            "en": "",
+            "audio": "el vuelo"
+          },
+          {
+            "ru": "la puerta de embarque",
+            "translit": "lah PWEHR-tah deh em-BAR-keh",
+            "pt": "the boarding gate",
+            "en": "",
+            "audio": "la puerta de embarque"
+          },
+          {
+            "ru": "la tarjeta de embarque",
+            "translit": "lah tar-HEH-tah deh em-BAR-keh",
+            "pt": "the boarding pass",
+            "en": "",
+            "audio": "la tarjeta de embarque"
+          },
+          {
+            "ru": "facturar",
+            "translit": "fahk-too-RAR",
+            "pt": "to check in (your luggage)",
+            "en": "",
+            "audio": "facturar"
+          },
+          {
+            "ru": "la maleta",
+            "translit": "lah mah-LEH-tah",
+            "pt": "the suitcase",
+            "en": "",
+            "audio": "la maleta"
+          },
+          {
+            "ru": "el equipaje de mano",
+            "translit": "el eh-kee-PAH-heh deh MAH-noh",
+            "pt": "the hand luggage, carry-on",
+            "en": "",
+            "audio": "el equipaje de mano"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Check-in, boarding and luggage",
+        "explicacao": "STEP 1: at the counter, say what you want to do: «Quisiera facturar esta maleta» (I'd like to check in this suitcase). The agent asks: «¿Cuántas maletas lleva?» You answer: «Una maleta y un equipaje de mano.» STEP 2: «equipaje» (luggage, baggage) is uncountable, exactly like English \"luggage\": «mi equipaje», «el equipaje de mano», «no traje ningún equipaje» (I didn't bring any luggage). You count suitcases: «dos maletas». This is one place where English helps you: never «dos equipajes», just as you'd never say \"two luggages\". STEP 3: «facturar» is \"to check in\" luggage; careful, «la factura» is the bill or invoice. STEP 4: ask for the gate: «¿Cuál es la puerta de embarque?» «Puerta doce.» STEP 5: boarding and flight times: «El embarque empieza a las seis», «El vuelo sale a las seis y media». Delays: «El vuelo lleva retraso» or «El vuelo está retrasado». Cancellations: «Se ha cancelado el vuelo.» STEP 6: obligation with «hay que» and «tiene que» (lesson 13): «Hay que pasar por el control de seguridad», «Tiene que presentar el pasaporte.» STEP 7: to ask where something is, start with «perdone» or «disculpe» (usted imperatives = \"excuse me\"): «Perdone, ¿dónde está el mostrador de la compañía?» STEP 8: with the pretérito perfecto (lesson 17) and the direct object pronoun (lesson 23): «Ya he facturado la maleta» or, without repeating it, «Ya la he facturado» (I've already checked it in). STEP 9: luggage problems: «Mi maleta no ha llegado», «He perdido mi tarjeta de embarque». STEP 10: false friends: «el bolso» is a handbag, «el bolsillo» is a pocket, and «la bolsa» is a (shopping) bag.",
+        "comparacao": "Good news: «equipaje», like English \"luggage\", is uncountable — you count «maletas», not «equipajes». The new verb is «facturar» (\"check in\"), which has nothing to do with «factura» (bill). And «puerta» is the airport gate.",
+        "tabela": [
+          {
+            "situacao": "at the counter",
+            "frase": "Quisiera facturar esta maleta.",
+            "traducao": "I'd like to check in this suitcase."
+          },
+          {
+            "situacao": "question",
+            "frase": "¿Cuántas maletas lleva?",
+            "traducao": "How many suitcases do you have?"
+          },
+          {
+            "situacao": "gate",
+            "frase": "¿Cuál es la puerta de embarque?",
+            "traducao": "Which is the boarding gate?"
+          },
+          {
+            "situacao": "delay",
+            "frase": "El vuelo lleva retraso.",
+            "traducao": "The flight is delayed."
+          },
+          {
+            "situacao": "obligation",
+            "frase": "Hay que pasar por el control de seguridad.",
+            "traducao": "You have to go through security."
+          },
+          {
+            "situacao": "problem",
+            "frase": "Mi maleta no ha llegado.",
+            "traducao": "My suitcase hasn't arrived."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Tengo dos equipajes.",
+            "certo": "Tengo dos maletas.",
+            "motivo": "«Equipaje» is all your luggage (uncountable, like English \"luggage\"); count the suitcases."
+          },
+          {
+            "errado": "Quiero despachar la maleta.",
+            "certo": "Quisiera facturar la maleta.",
+            "motivo": "The verb is «facturar» (to check in), and the request is polite."
+          },
+          {
+            "errado": "¿Donde está el control de seguridad?",
+            "certo": "¿Dónde está el control de seguridad?",
+            "motivo": "In a question, «dónde» takes an accent."
+          }
+        ],
+        "tag": "Travel"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Do your own check-in, out loud: say how many suitcases you have, ask for the gate, ask whether there is a delay and, finally, say that your suitcase hasn't arrived."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say from memory three sentences with «sale a las…», «llega a las…», «tarda…» and «dura…»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-034.json",
+  "responsavel": null
+}

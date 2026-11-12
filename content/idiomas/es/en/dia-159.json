@@ -1,0 +1,196 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 159,
+  "fase": 16,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Futuro perfecto and probability: Waiting for Pablo",
+  "objetivo": "Lesson 40, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 40,
+    "titulo": "Futuro perfecto and probability",
+    "objetivo": "Form the futuro perfecto («habré terminado») to say what will already be finished by a future moment, and use it together with the simple future to make guesses about the present and the recent past («habrá llegado ya»).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Waiting for Pablo",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "seguramente",
+            "translit": "",
+            "pt": "surely, very likely",
+            "en": "",
+            "audio": "seguramente"
+          },
+          {
+            "ru": "probablemente",
+            "translit": "",
+            "pt": "probably",
+            "en": "",
+            "audio": "probablemente"
+          },
+          {
+            "ru": "a lo mejor",
+            "translit": "",
+            "pt": "maybe, perhaps (colloquial)",
+            "en": "",
+            "audio": "a lo mejor"
+          },
+          {
+            "ru": "supongo que",
+            "translit": "",
+            "pt": "I suppose (that)",
+            "en": "",
+            "audio": "supongo que"
+          },
+          {
+            "ru": "seguro que",
+            "translit": "",
+            "pt": "for sure, I bet",
+            "en": "",
+            "audio": "seguro que"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Words that go with guesses",
+        "explicacao": "STEP 1: a guess can come with a helper expression: «seguramente, probablemente, supongo que, me imagino que, seguro que». STEP 2: after «supongo que», «me imagino que» and «seguro que», use the indicative, as you already do: «Supongo que ha llegado», «Seguro que viene de camino» (I bet he's on his way). STEP 3: «a lo mejor» is very colloquial and means \"maybe\". It also takes the indicative: «A lo mejor ha perdido el autobús». STEP 4: «quizá» and «tal vez» also mean \"maybe/perhaps\", but they can take another verb form that you'll learn in lesson 43. For now, use «a lo mejor». STEP 5: when you use one of these expressions, the future is optional: «Seguramente habrá llegado» and «Seguro que ha llegado» are both natural. STEP 6: to link guesses, use «o», «y», «como»: «O no ha oído el despertador, o ha perdido el autobús» (Either… or…). STEP 7: false friend: «seguramente» means \"probably\", not \"securely\" or \"for sure\" — for certainty, say «seguro» or «sin duda».",
+        "comparacao": "«Probablemente» works like \"probably\". Watch «seguramente»: it means \"most likely\", not \"surely\" in the sense of certainty — for \"definitely\" use «seguro que» or «sin duda». «A lo mejor» (maybe) takes the indicative.",
+        "exemplos": [
+          {
+            "ru": "Seguramente habrá llegado ya.",
+            "pt": "He's probably arrived already."
+          },
+          {
+            "ru": "Supongo que ha perdido el autobús.",
+            "pt": "I suppose he missed the bus."
+          },
+          {
+            "ru": "A lo mejor tiene el móvil sin batería.",
+            "pt": "Maybe his phone's battery is dead."
+          },
+          {
+            "ru": "Seguro que viene de camino.",
+            "pt": "I bet he's on his way."
+          },
+          {
+            "ru": "Me imagino que no ha visto mi mensaje.",
+            "pt": "I imagine he hasn't seen my message."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "A lo mejor está sin batería, quizá.",
+            "certo": "A lo mejor está sin batería.",
+            "motivo": "One \"maybe\" word per sentence is enough."
+          },
+          {
+            "errado": "Supongo que habrá que llegado.",
+            "certo": "Supongo que ha llegado.",
+            "motivo": "After «supongo que», use the ordinary verb, in the indicative."
+          },
+          {
+            "errado": "Seguro de que viene.",
+            "certo": "Seguro que viene.",
+            "motivo": "As a stand-alone expression, «seguro que» takes no «de»."
+          }
+        ],
+        "tag": "Expressions"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "Esperando a Pablo / Waiting for Pablo",
+        "contexto": "Carmen and Javier are waiting for Pablo outside the cinema. He's late.",
+        "linhas": [
+          {
+            "personagem": "Carmen",
+            "ru": "— Son las nueve y media y Pablo todavía no ha llegado. ¿Dónde estará?",
+            "pt": "— It's half past nine and Pablo still isn't here. I wonder where he is.",
+            "audio": "Son las nueve y media y Pablo todavía no ha llegado. ¿Dónde estará?",
+            "rotulo": "Carmen"
+          },
+          {
+            "personagem": "Javier",
+            "ru": "— Habrá perdido el autobús, como siempre.",
+            "pt": "— He must have missed the bus, as usual.",
+            "audio": "Habrá perdido el autobús, como siempre.",
+            "rotulo": "Javier"
+          },
+          {
+            "personagem": "Carmen",
+            "ru": "— O no habrá oído el despertador. Le he llamado dos veces y no contesta.",
+            "pt": "— Or he didn't hear his alarm. I've called him twice and he isn't answering.",
+            "audio": "O no habrá oído el despertador. Le he llamado dos veces y no contesta.",
+            "rotulo": "Carmen"
+          },
+          {
+            "personagem": "Javier",
+            "ru": "— A lo mejor tiene el móvil sin batería. Seguro que viene de camino.",
+            "pt": "— Maybe his phone's dead. I'm sure he's on his way.",
+            "audio": "A lo mejor tiene el móvil sin batería. Seguro que viene de camino.",
+            "rotulo": "Javier"
+          },
+          {
+            "personagem": "Carmen",
+            "ru": "— ¿Y si se ha confundido de cine? Hay dos cerca de aquí.",
+            "pt": "— What if he's gone to the wrong cinema? There are two near here.",
+            "audio": "¿Y si se ha confundido de cine? Hay dos cerca de aquí.",
+            "rotulo": "Carmen"
+          },
+          {
+            "personagem": "Javier",
+            "ru": "— Ya habrá visto mi mensaje. Le escribí hace diez minutos.",
+            "pt": "— He'll have seen my message by now. I wrote to him ten minutes ago.",
+            "audio": "Ya habrá visto mi mensaje. Le escribí hace diez minutos.",
+            "rotulo": "Javier"
+          },
+          {
+            "personagem": "Pablo",
+            "ru": "— Perdonad el retraso. Se me ha estropeado la bici y he venido andando.",
+            "pt": "— Sorry I'm late. My bike broke down and I came on foot.",
+            "audio": "Perdonad el retraso. Se me ha estropeado la bici y he venido andando.",
+            "rotulo": "Pablo"
+          },
+          {
+            "personagem": "Carmen",
+            "ru": "— Pues habrás venido corriendo.",
+            "pt": "— You must have run all the way, then.",
+            "audio": "Pues habrás venido corriendo.",
+            "rotulo": "Carmen"
+          },
+          {
+            "personagem": "Pablo",
+            "ru": "— Casi. Necesito sentarme un momento.",
+            "pt": "— Almost. I need to sit down for a moment.",
+            "audio": "Casi. Necesito sentarme un momento.",
+            "rotulo": "Pablo"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Write four sentences guessing about someone in your family who hasn't answered a message yet. Use «habrá», «estará» and «a lo mejor»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Turn these into guesses: «Pablo está en casa», «Ha salido», «No ha visto el mensaje». Say all three with the future."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-040.json",
+  "responsavel": null
+}

@@ -1,0 +1,526 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 244,
+  "fase": 25,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Review of the tenses: Review and practice of lesson 61",
+  "objetivo": "Lesson 61, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 61,
+    "titulo": "Review of the tenses",
+    "objetivo": "Review and compare the B1 tenses: the past (present perfect, preterite, imperfect, pluperfect), the future, probability, the conditional, «si» hypotheses and the subjunctive, choosing each tense by the idea you want to express.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 61",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Cuando llegué, el tren ya había salido",
+            "opcoes": [
+              "Cuando llegué, el tren ya había salido",
+              "Cuando llegué, el tren ya salió",
+              "Cuando llegaba, el tren ya salía"
+            ],
+            "gabarito": "Cuando llegué, el tren ya había salido",
+            "explicacao": "Pluperfect: an action before another past moment.",
+            "id": "es-061-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Si tuviera dinero, viajaría",
+            "opcoes": [
+              "Si tuviera dinero, viajaría",
+              "Si tendría dinero, viajaría",
+              "Si tengo dinero, viajaría"
+            ],
+            "gabarito": "Si tuviera dinero, viajaría",
+            "explicacao": "Unreal in the present: imperfect subjunctive + conditional.",
+            "id": "es-061-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Cuando llegues, llámame",
+            "opcoes": [
+              "Cuando llegues, llámame",
+              "Cuando llegarás, llámame",
+              "Cuando llegas, llámame"
+            ],
+            "gabarito": "Cuando llegues, llámame",
+            "explicacao": "«Cuando» + subjunctive for the future.",
+            "id": "es-061-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Nunca he estado en Perú",
+            "respostaEsperada": "Nunca he estado en Perú",
+            "explicacao": "Write: Nunca he estado en Perú.",
+            "id": "es-061-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «probablemente» mean?",
+            "audio": "probablemente",
+            "opcoes": [
+              "maybe (with indicative)",
+              "yesterday",
+              "probably",
+              "maybe, perhaps"
+            ],
+            "gabarito": "probably",
+            "explicacao": "«probablemente» = probably.",
+            "id": "es-061-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ojalá venga mañana",
+            "respostaEsperada": "Ojalá venga mañana",
+            "explicacao": "Write: Ojalá venga mañana.",
+            "id": "es-061-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Si hubiera sabido, habría venido",
+            "respostaEsperada": "Si hubiera sabido, habría venido",
+            "explicacao": "Write: Si hubiera sabido, habría venido.",
+            "id": "es-061-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence uses the right tense?",
+            "opcoes": [
+              "Ayer compré pan.",
+              "Ayer he comprado pan.",
+              "Ayer compraba pan."
+            ],
+            "gabarito": "Ayer compré pan.",
+            "explicacao": "«Ayer» is a finished time: preterite.",
+            "id": "es-061-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence describes a past habit?",
+            "opcoes": [
+              "Cuando era niño, iba a la playa cada verano.",
+              "Cuando era niño, iría a la playa cada verano.",
+              "Cuando era niño, he ido a la playa."
+            ],
+            "gabarito": "Cuando era niño, iba a la playa cada verano.",
+            "explicacao": "Habit: imperfect.",
+            "id": "es-061-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «esta mañana» mean?",
+            "audio": "esta mañana",
+            "opcoes": [
+              "already",
+              "this morning",
+              "I suppose that",
+              "probably"
+            ],
+            "gabarito": "this morning",
+            "explicacao": "«esta mañana» = this morning.",
+            "id": "es-061-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "hace dos años",
+            "respostaEsperada": "hace dos años",
+            "explicacao": "two years ago",
+            "id": "es-061-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you express a guess about the present?",
+            "opcoes": [
+              "Ahora estará en casa.",
+              "Ahora estuvo en casa.",
+              "Ahora estaba en casa."
+            ],
+            "gabarito": "Ahora estará en casa.",
+            "explicacao": "The future expresses probability in the present.",
+            "id": "es-061-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Si estudiara más, aprobaría.",
+              "Si estudiaría más, aprobaría.",
+              "Si estudio más, aprobaría."
+            ],
+            "gabarito": "Si estudiara más, aprobaría.",
+            "explicacao": "Si + imperfect subjunctive + conditional.",
+            "id": "es-061-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Si hubiera estudiado, habría aprobado.",
+              "Si habría estudiado, habría aprobado.",
+              "Si había estudiado, aprobaría."
+            ],
+            "gabarito": "Si hubiera estudiado, habría aprobado.",
+            "explicacao": "Unreal in the past.",
+            "id": "es-061-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «si tuviera…» mean?",
+            "audio": "si tuviera…",
+            "opcoes": [
+              "maybe, perhaps",
+              "two years ago",
+              "if I had…",
+              "although, even if"
+            ],
+            "gabarito": "if I had…",
+            "explicacao": "«si tuviera…» = if I had….",
+            "id": "es-061-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "It's hot now and you're going out anyway. Which sentence is correct?",
+            "opcoes": [
+              "Aunque hace calor, salgo.",
+              "Aunque hacía calor, salgo.",
+              "Aunque hará calor, salgo."
+            ],
+            "gabarito": "Aunque hace calor, salgo.",
+            "explicacao": "A real fact: indicative.",
+            "id": "es-061-e12"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Quería que vinieras.",
+              "Quería que vengas.",
+              "Quería que vienes."
+            ],
+            "gabarito": "Quería que vinieras.",
+            "explicacao": "A main verb in the past: imperfect subjunctive.",
+            "id": "es-061-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which form is irregular in the future?",
+            "opcoes": [
+              "tendré",
+              "hablaré",
+              "comeré"
+            ],
+            "gabarito": "tendré",
+            "explicacao": "«Tener» changes its stem: tendr-.",
+            "id": "es-061-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Mientras ___ por la calle, vi a un amigo. (caminar)",
+            "opcoes": [
+              "caminaba",
+              "caminé",
+              "he caminado"
+            ],
+            "gabarito": "caminaba",
+            "explicacao": "An action in progress: imperfect.",
+            "id": "es-061-e15"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "a lo mejor",
+            "respostaEsperada": "a lo mejor",
+            "explicacao": "maybe (with indicative)",
+            "id": "es-061-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «es posible que» mean?",
+            "audio": "es posible que",
+            "opcoes": [
+              "I suppose that",
+              "probably",
+              "it's possible that",
+              "probably, surely"
+            ],
+            "gabarito": "it's possible that",
+            "explicacao": "«es posible que» = it's possible that.",
+            "id": "es-061-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Hoy ___ mucho. (trabajar)",
+            "opcoes": [
+              "he trabajado",
+              "trabajé",
+              "trabajaba"
+            ],
+            "gabarito": "he trabajado",
+            "explicacao": "A period that isn't over yet (Spain): present perfect.",
+            "id": "es-061-e16"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Dijo que ___ el lunes. (venir)",
+            "opcoes": [
+              "vendría",
+              "vendrá",
+              "vino"
+            ],
+            "gabarito": "vendría",
+            "explicacao": "The future seen from the past: conditional.",
+            "id": "es-061-e17"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Espero que ___ bien. (llegar)",
+            "opcoes": [
+              "llegues",
+              "llegas",
+              "llegarás"
+            ],
+            "gabarito": "llegues",
+            "explicacao": "«Espero que» + subjunctive.",
+            "id": "es-061-e18"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Te lo explico ___ que lo entiendas.",
+            "opcoes": [
+              "para",
+              "por",
+              "porque"
+            ],
+            "gabarito": "para",
+            "explicacao": "«Para que» + subjunctive.",
+            "id": "es-061-e19"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «cuando» mean?",
+            "audio": "cuando",
+            "opcoes": [
+              "while",
+              "suddenly",
+              "not yet",
+              "when"
+            ],
+            "gabarito": "when",
+            "explicacao": "«cuando» = when.",
+            "id": "es-061-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Si llueve, me quedo en casa.»",
+            "opcoes": [
+              "Si",
+              "llueve,",
+              "me",
+              "quedo",
+              "en",
+              "casa."
+            ],
+            "gabarito": "Si llueve, me quedo en casa.",
+            "explicacao": "Si + present, no future.",
+            "id": "es-061-e20"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: When you arrive, call me. If I had known, I would have come.",
+            "respostaEsperada": "Cuando llegues, llámame. Si hubiera sabido, habría venido.",
+            "id": "es-061-e21"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ayer ___ al cine con Marta. (ir, yo)",
+            "opcoes": [
+              "iba",
+              "fui",
+              "he ido"
+            ],
+            "gabarito": "fui",
+            "explicacao": "A finished, dated event: preterite.",
+            "id": "es-061-e22"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Mientras yo cocinaba, mi padre ___ . (leer)",
+            "opcoes": [
+              "leyó",
+              "leía",
+              "ha leído"
+            ],
+            "gabarito": "leía",
+            "explicacao": "A simultaneous action in progress: imperfect.",
+            "id": "es-061-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «de repente» mean?",
+            "audio": "de repente",
+            "opcoes": [
+              "if I had…",
+              "suddenly",
+              "maybe, perhaps",
+              "while"
+            ],
+            "gabarito": "suddenly",
+            "explicacao": "«de repente» = suddenly.",
+            "id": "es-061-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "es posible que",
+            "respostaEsperada": "es posible que",
+            "explicacao": "it's possible that",
+            "id": "es-061-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Esta semana ___ mucho. (trabajar, yo, in Spain)",
+            "opcoes": [
+              "trabajé",
+              "trabajaba",
+              "he trabajado"
+            ],
+            "gabarito": "he trabajado",
+            "explicacao": "«Esta semana» isn't over yet: present perfect.",
+            "id": "es-061-e24"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Si tuviera tiempo, ___ . (viajar, yo)",
+            "opcoes": [
+              "viajaría",
+              "viajaré",
+              "viajo"
+            ],
+            "gabarito": "viajaría",
+            "explicacao": "Unreal hypothesis: «si» + imperfect subjunctive and the conditional.",
+            "id": "es-061-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say \"When I arrived, the film had already started\"?",
+            "opcoes": [
+              "Cuando llegué, la película ya empezó.",
+              "Cuando llegué, la película ya había empezado.",
+              "Cuando llegaba, la película ya empezaba."
+            ],
+            "gabarito": "Cuando llegué, la película ya había empezado.",
+            "explicacao": "The earlier action goes into the pluperfect.",
+            "id": "es-061-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Cuando llegué, el tren ya había salido",
+            "opcoes": [
+              "el",
+              "tren",
+              "salido",
+              "había",
+              "llegué,",
+              "ya",
+              "Cuando"
+            ],
+            "gabarito": "Cuando llegué, el tren ya había salido",
+            "explicacao": "Write: Cuando llegué, el tren ya había salido",
+            "id": "es-061-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which expression takes the subjunctive?",
+            "opcoes": [
+              "creo que",
+              "sé que",
+              "dudo que"
+            ],
+            "gabarito": "dudo que",
+            "explicacao": "Doubt takes the subjunctive.",
+            "id": "es-061-e27"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you express a guess about the past?",
+            "opcoes": [
+              "Habrá salido ya.",
+              "Salió ya.",
+              "Ha salido ya."
+            ],
+            "gabarito": "Habrá salido ya.",
+            "explicacao": "The future perfect expresses a guess about what has already happened.",
+            "id": "es-061-e28"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Cuando era niño, iba a la playa cada verano.»",
+            "opcoes": [
+              "Cuando",
+              "era",
+              "niño,",
+              "iba",
+              "a",
+              "la",
+              "playa",
+              "cada",
+              "verano."
+            ],
+            "gabarito": "Cuando era niño, iba a la playa cada verano.",
+            "explicacao": "Past habit: imperfect.",
+            "id": "es-061-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: Yesterday it rained a lot and I stayed at home.",
+            "respostaEsperada": "Ayer llovió mucho y me quedé en casa.",
+            "id": "es-061-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Tell out loud something from your past in 5 sentences, using at least four of the tenses from this lesson, and finish with a wish with «ojalá»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say out loud one sentence for each tense: preterite, imperfect, present perfect, pluperfect, future, conditional and subjunctive."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-061.json",
+  "responsavel": null
+}
