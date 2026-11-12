@@ -1,0 +1,136 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 63,
+  "fase": 7,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Jobs and the workplace: Dialogue and reading",
+  "objetivo": "Lesson 16, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 16,
+    "titulo": "Jobs and the workplace",
+    "objetivo": "Say your job (without an article, with the feminine in -in), ask about other people's jobs, say where and for whom you work, and talk about your working hours.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Dialogue and reading",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "dialogo",
+        "min": 10,
+        "titulo": "Was machst du beruflich? / What do you do for a living?",
+        "contexto": "Two people on a course get to know each other.",
+        "linhas": [
+          {
+            "personagem": "Lara",
+            "ru": "— Hallo, ich bin Lara. Was machst du beruflich?",
+            "pt": "— Hi, I'm Lara. What do you do for a living?",
+            "audio": "Hallo, ich bin Lara. Was machst du beruflich?",
+            "rotulo": "Lara"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Ich bin Ingenieur. Ich arbeite bei Siemens. Und du?",
+            "pt": "— I'm an engineer. I work at Siemens. And you?",
+            "audio": "Ich bin Ingenieur. Ich arbeite bei Siemens. Und du?",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Lara",
+            "ru": "— Ich bin Ärztin. Ich arbeite im Krankenhaus.",
+            "pt": "— I'm a doctor. I work at the hospital.",
+            "audio": "Ich bin Ärztin. Ich arbeite im Krankenhaus.",
+            "rotulo": "Lara"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Wie interessant! Wie lange arbeitest du jeden Tag?",
+            "pt": "— How interesting! How many hours a day do you work?",
+            "audio": "Wie interessant! Wie lange arbeitest du jeden Tag?",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Lara",
+            "ru": "— Von sieben bis fünfzehn Uhr. Und du?",
+            "pt": "— From seven to three. And you?",
+            "audio": "Von sieben bis fünfzehn Uhr. Und du?",
+            "rotulo": "Lara"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Ich arbeite von acht bis siebzehn Uhr. Ich habe zwei Kollegen und eine Chefin.",
+            "pt": "— I work from eight to five. I have two coworkers and a boss.",
+            "audio": "Ich arbeite von acht bis siebzehn Uhr. Ich habe zwei Kollegen und eine Chefin.",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Lara",
+            "ru": "— Arbeitest du gern?",
+            "pt": "— Do you like working?",
+            "audio": "Arbeitest du gern?",
+            "rotulo": "Lara"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Ja, sehr gern. Und du?",
+            "pt": "— Yes, a lot. And you?",
+            "audio": "Ja, sehr gern. Und du?",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Lara",
+            "ru": "— Ich auch. Aber am Wochenende habe ich frei.",
+            "pt": "— Me too. But I'm off on weekends.",
+            "audio": "Ich auch. Aber am Wochenende habe ich frei.",
+            "rotulo": "Lara"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Dann können wir zusammen Kaffee trinken!",
+            "pt": "— Then we can have a coffee together!",
+            "audio": "Dann können wir zusammen Kaffee trinken!",
+            "rotulo": "Tom"
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "min": 10,
+        "titulo": "Die Familie Weber / The Weber family",
+        "ru": "Das ist meine Familie. Mein Vater ist Ingenieur und arbeitet in der Fabrik. Meine Mutter ist Lehrerin und arbeitet in der Schule. Mein Bruder ist Student. Er studiert in Berlin. Meine Schwester ist Verkäuferin und arbeitet im Geschäft. Ich bin Köchin und arbeite im Restaurant. Am Wochenende haben wir alle frei.",
+        "pt": "This is my family. My father is an engineer and works at the factory. My mother is a teacher and works at the school. My brother is a student. He studies in Berlin. My sister is a salesperson and works at the store. I'm a cook and I work at the restaurant. On weekends we're all off.",
+        "perguntas": [
+          {
+            "pergunta": "Was ist der Vater von Beruf?",
+            "resposta": "Ingenieur"
+          },
+          {
+            "pergunta": "Wo arbeitet die Mutter?",
+            "resposta": "In der Schule"
+          },
+          {
+            "pergunta": "Was ist die Erzählerin von Beruf?",
+            "resposta": "Köchin"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Introduce your family out loud, with each person's job."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write a six-line dialogue in which two people talk about their jobs and workplaces."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-016.json",
+  "responsavel": null
+}

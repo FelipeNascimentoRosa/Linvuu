@@ -1,0 +1,187 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 59,
+  "fase": 6,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Shopping and clothes: Dieser, diese, dieses and the dialogue",
+  "objetivo": "Lesson 15, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 15,
+    "titulo": "Shopping and clothes",
+    "objetivo": "Name clothes and colors, ask about and understand prices and sizes, point with «dieser, diese, dieses», and go through a whole purchase in a store.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Dieser, diese, dieses and the dialogue",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "dieser / diese / dieses",
+            "translit": "DEE-zer / DEE-zeh / DEE-zes",
+            "pt": "this (m. / f. / n.)",
+            "en": "this",
+            "audio": "dieser / diese / dieses"
+          },
+          {
+            "ru": "welche",
+            "translit": "VEL-kheh",
+            "pt": "which (color, f.)",
+            "en": "which",
+            "audio": "welche"
+          },
+          {
+            "ru": "die Umkleidekabine",
+            "translit": "dee OOM-kly-deh-kah-BEE-neh",
+            "pt": "fitting room",
+            "en": "fitting room",
+            "audio": "die Umkleidekabine"
+          },
+          {
+            "ru": "die Kasse",
+            "translit": "dee KAH-seh",
+            "pt": "checkout, cash register",
+            "en": "checkout",
+            "audio": "die Kasse"
+          },
+          {
+            "ru": "bar",
+            "translit": "BAR",
+            "pt": "in cash",
+            "en": "cash",
+            "audio": "bar"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Pointing: dieser, diese, dieses",
+        "explicacao": "STEP 1: «dieser, diese, dieses» (this) follow gender, like «der, die, das»: «dieser Pullover» (m), «diese Jacke» (f), «dieses Hemd» (n), «diese Schuhe» (plural, \"these\"). STEP 2: the masculine direct object changes, as you've learned: «Ich nehme diesen Pullover» (accusative: dieser → diesen). Feminine, neuter and plural stay the same. STEP 3: use it to point at things in a store: «Wie finden Sie diese Jacke?» (What do you think of this jacket?), «Ich nehme dieses Hemd.»",
+        "tabela": [
+          {
+            "genero": "masculine",
+            "nominativo": "dieser Pullover",
+            "acusativo": "diesen Pullover"
+          },
+          {
+            "genero": "feminine",
+            "nominativo": "diese Jacke",
+            "acusativo": "diese Jacke"
+          },
+          {
+            "genero": "neuter",
+            "nominativo": "dieses Hemd",
+            "acusativo": "dieses Hemd"
+          },
+          {
+            "genero": "plural",
+            "nominativo": "diese Schuhe",
+            "acusativo": "diese Schuhe"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich nehme dieser Pullover.",
+            "certo": "Ich nehme diesen Pullover.",
+            "motivo": "Masculine direct object: diesen."
+          }
+        ],
+        "tag": "Adjectives and possessives"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 10,
+        "titulo": "Im Kaufhaus / At the department store",
+        "contexto": "A customer buys a jacket.",
+        "linhas": [
+          {
+            "personagem": "Verkäuferin",
+            "ru": "— Guten Tag! Kann ich Ihnen helfen?",
+            "pt": "— Good morning! Can I help you?",
+            "audio": "Guten Tag! Kann ich Ihnen helfen?",
+            "rotulo": "Verkäuferin"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Ja, ich suche eine Jacke.",
+            "pt": "— Yes, I'm looking for a jacket.",
+            "audio": "Ja, ich suche eine Jacke.",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Verkäuferin",
+            "ru": "— Welche Farbe möchten Sie?",
+            "pt": "— What color would you like?",
+            "audio": "Welche Farbe möchten Sie?",
+            "rotulo": "Verkäuferin"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Blau oder schwarz. Was kostet diese Jacke hier?",
+            "pt": "— Blue or black. How much is this jacket here?",
+            "audio": "Blau oder schwarz. Was kostet diese Jacke hier?",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Verkäuferin",
+            "ru": "— Diese Jacke kostet neunzig Euro.",
+            "pt": "— This jacket is ninety euros.",
+            "audio": "Diese Jacke kostet neunzig Euro.",
+            "rotulo": "Verkäuferin"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Das ist ein bisschen teuer. Haben Sie die Jacke in Größe M?",
+            "pt": "— That's a bit expensive. Do you have the jacket in size M?",
+            "audio": "Das ist ein bisschen teuer. Haben Sie die Jacke in Größe M?",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Verkäuferin",
+            "ru": "— Ja, hier. Sie können sie anprobieren. Die Umkleidekabine ist dort.",
+            "pt": "— Yes, here. You can try it on. The fitting room is over there.",
+            "audio": "Ja, hier. Sie können sie anprobieren. Die Umkleidekabine ist dort.",
+            "rotulo": "Verkäuferin"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Sie passt mir gut. Ich nehme sie.",
+            "pt": "— It fits me well. I'll take it.",
+            "audio": "Sie passt mir gut. Ich nehme sie.",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Verkäuferin",
+            "ru": "— Zahlen Sie bar oder mit Karte?",
+            "pt": "— Will you pay in cash or by card?",
+            "audio": "Zahlen Sie bar oder mit Karte?",
+            "rotulo": "Verkäuferin"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Mit Karte, bitte.",
+            "pt": "— By card, please.",
+            "audio": "Mit Karte, bitte.",
+            "rotulo": "Lea"
+          }
+        ]
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 4 prices out in words in German."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-015.json",
+  "responsavel": null
+}

@@ -1,0 +1,154 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 58,
+  "fase": 6,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Shopping and clothes: Prices and sizes",
+  "objetivo": "Lesson 15, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 15,
+    "titulo": "Shopping and clothes",
+    "objetivo": "Name clothes and colors, ask about and understand prices and sizes, point with «dieser, diese, dieses», and go through a whole purchase in a store.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Prices and sizes",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "der Preis",
+            "translit": "dehr PRICE",
+            "pt": "price",
+            "en": "price",
+            "audio": "der Preis"
+          },
+          {
+            "ru": "teuer",
+            "translit": "TOY-er",
+            "pt": "expensive",
+            "en": "expensive",
+            "audio": "teuer"
+          },
+          {
+            "ru": "billig",
+            "translit": "BIL-ikh",
+            "pt": "cheap",
+            "en": "cheap",
+            "audio": "billig"
+          },
+          {
+            "ru": "günstig",
+            "translit": "GÜN-stikh",
+            "pt": "good value, affordable",
+            "en": "good value",
+            "audio": "günstig"
+          },
+          {
+            "ru": "die Größe",
+            "translit": "dee GRÖ-seh",
+            "pt": "size",
+            "en": "size",
+            "audio": "die Größe"
+          },
+          {
+            "ru": "zu groß",
+            "translit": "tsoo GROHS",
+            "pt": "too big",
+            "en": "too big",
+            "audio": "zu groß"
+          },
+          {
+            "ru": "zu klein",
+            "translit": "tsoo KLINE",
+            "pt": "too small",
+            "en": "too small",
+            "audio": "zu klein"
+          },
+          {
+            "ru": "anprobieren",
+            "translit": "AHN-pro-bee-ren",
+            "pt": "to try on (clothes)",
+            "en": "to try on",
+            "audio": "anprobieren"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Asking the price, reading prices, and saying \"too\"",
+        "explicacao": "STEP 1: for the price, ask «Was kostet …?» or «Wie viel kostet …?» for ONE thing; for several, «Was kosten …?»: «Was kostet die Jacke?», «Was kosten die Schuhe?» — like \"How much is…?\" / \"How much are…?\". STEP 2: read prices like this: «25 €» = «fünfundzwanzig Euro»; «2,50 €» = «zwei Euro fünfzig» (euros first, then cents — and a comma, not a period); «0,99 €» = «neunundneunzig Cent». STEP 3: «zu» + adjective = too: «Die Hose ist zu groß.» STEP 4: size: «Größe 38», «Größe M» (European sizes: a US women's 8 is about a 38). STEP 5: three shop phrases: «Kann ich das anprobieren?» (Can I try this on?), «Haben Sie das in Größe M?», «Ich nehme das» (I'll take it). STEP 6: «passen» takes the person in the DATIVE: «Die Jacke passt mir» = the jacket fits me; treat it as a set phrase for now.",
+        "exemplos": [
+          {
+            "ru": "Was kostet die Jacke? — Sie kostet neunzig Euro.",
+            "pt": "How much is the jacket? — It's ninety euros."
+          },
+          {
+            "ru": "Was kosten die Schuhe? — Sie kosten achtzig Euro.",
+            "pt": "How much are the shoes? — They're eighty euros."
+          },
+          {
+            "ru": "Die Hose ist zu groß. Haben Sie sie in Größe 38?",
+            "pt": "The pants are too big. Do you have them in size 38?"
+          }
+        ],
+        "tabela": [
+          {
+            "valor": "25 €",
+            "leitura": "fünfundzwanzig Euro"
+          },
+          {
+            "valor": "2,50 €",
+            "leitura": "zwei Euro fünfzig"
+          },
+          {
+            "valor": "0,99 €",
+            "leitura": "neunundneunzig Cent"
+          },
+          {
+            "valor": "99,90 €",
+            "leitura": "neunundneunzig Euro neunzig"
+          },
+          {
+            "valor": "120 €",
+            "leitura": "hundertzwanzig Euro"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Was kostet die Schuhe?",
+            "certo": "Was kosten die Schuhe?",
+            "motivo": "Plural: «kosten»."
+          },
+          {
+            "errado": "Die Hose ist groß zu.",
+            "certo": "Die Hose ist zu groß.",
+            "motivo": "«zu» comes before the adjective."
+          }
+        ],
+        "tag": "Numbers"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Ask the price of 5 things and answer out loud: «Was kostet …? Es kostet …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write the colors in German and an item of clothing for each."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-015.json",
+  "responsavel": null
+}

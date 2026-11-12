@@ -1,0 +1,145 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 62,
+  "fase": 7,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Jobs and the workplace: Where and for whom I work",
+  "objetivo": "Lesson 16, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 16,
+    "titulo": "Jobs and the workplace",
+    "objetivo": "Say your job (without an article, with the feminine in -in), ask about other people's jobs, say where and for whom you work, and talk about your working hours.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Where and for whom I work",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "das Büro",
+            "translit": "dahs bü-ROH",
+            "pt": "office",
+            "en": "office",
+            "audio": "das Büro"
+          },
+          {
+            "ru": "die Firma",
+            "translit": "dee FEER-mah",
+            "pt": "company, firm",
+            "en": "company",
+            "audio": "die Firma"
+          },
+          {
+            "ru": "die Fabrik",
+            "translit": "dee fah-BREEK",
+            "pt": "factory",
+            "en": "factory",
+            "audio": "die Fabrik"
+          },
+          {
+            "ru": "das Geschäft",
+            "translit": "dahs geh-SHEFT",
+            "pt": "store, shop; business",
+            "en": "shop",
+            "audio": "das Geschäft"
+          },
+          {
+            "ru": "die Praxis",
+            "translit": "dee PRAHK-sis",
+            "pt": "(doctor's) practice, office",
+            "en": "practice",
+            "audio": "die Praxis"
+          },
+          {
+            "ru": "der Kollege / die Kollegin",
+            "translit": "dehr ko-LEH-geh / dee ko-LEH-gin",
+            "pt": "coworker (m. / f.)",
+            "en": "colleague",
+            "audio": "der Kollege / die Kollegin"
+          },
+          {
+            "ru": "der Chef / die Chefin",
+            "translit": "dehr SHEF / dee SHEH-fin",
+            "pt": "boss (m. / f.)",
+            "en": "boss",
+            "audio": "der Chef / die Chefin"
+          },
+          {
+            "ru": "die Arbeitszeit",
+            "translit": "dee AR-bites-tsite",
+            "pt": "working hours",
+            "en": "working hours",
+            "audio": "die Arbeitszeit"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Where you work, step by step",
+        "explicacao": "STEP 1: ask «Wo arbeitest du?» or «Wo arbeiten Sie?». STEP 2: to give the PLACE, use «in» and the forms you know from lesson 9: der and das words take «im» (im Büro, im Krankenhaus, im Geschäft); die words take «in der» (in der Schule, in der Fabrik, in der Praxis). STEP 3: to say WHO you work FOR, or at which company, use «bei» — English uses \"at\" or \"for\": «Ich arbeite bei Siemens» (I work at / for Siemens), «bei der Post», «bei der Bank». STEP 4: hours: «Ich arbeite von acht bis siebzehn Uhr» (from eight to five). STEP 5: ask «Wie lange arbeitest du?» (how long per day) and «Wann arbeitest du?» (what time). STEP 6: two common situations: «Ich bin arbeitslos» (I'm unemployed) and «Ich habe frei / Urlaub» (I'm off / on vacation). At A2 you'll see why it's «im» and «in der»; for now, memorize the pairs.",
+        "tabela": [
+          {
+            "pergunta": "Wo arbeitest du?",
+            "resposta": "Ich arbeite im Büro. / in der Schule. / in der Fabrik.",
+            "pt": "At the office. / At school. / At the factory."
+          },
+          {
+            "pergunta": "Bei wem arbeitest du?",
+            "resposta": "Ich arbeite bei Siemens. / bei der Post.",
+            "pt": "At Siemens. / At the post office."
+          },
+          {
+            "pergunta": "Wann arbeitest du?",
+            "resposta": "Von acht bis siebzehn Uhr.",
+            "pt": "From eight to five."
+          },
+          {
+            "pergunta": "Als was arbeitest du?",
+            "resposta": "Ich arbeite als Verkäufer.",
+            "pt": "I work as a salesperson."
+          },
+          {
+            "pergunta": "Arbeitest du gern?",
+            "resposta": "Ja, sehr gern. / Nein, nicht so gern.",
+            "pt": "Yes, a lot. / Not much."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich arbeite in der Büro.",
+            "certo": "Ich arbeite im Büro.",
+            "motivo": "«Büro» is a das word: «im»."
+          },
+          {
+            "errado": "Ich arbeite in Siemens.",
+            "certo": "Ich arbeite bei Siemens.",
+            "motivo": "A company: «bei», not «in» — English \"at Siemens\"."
+          }
+        ],
+        "tag": "Prepositions"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say where and for whom 5 people work and what hours you work or study."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write the feminine of 6 jobs and a sentence with each."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-016.json",
+  "responsavel": null
+}

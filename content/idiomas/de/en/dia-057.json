@@ -1,0 +1,189 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 57,
+  "fase": 6,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Shopping and clothes: Clothes and colours",
+  "objetivo": "Lesson 15, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 15,
+    "titulo": "Shopping and clothes",
+    "objetivo": "Name clothes and colors, ask about and understand prices and sizes, point with «dieser, diese, dieses», and go through a whole purchase in a store.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Clothes and colours",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 12,
+        "itens": [
+          {
+            "ru": "die Kleidung",
+            "translit": "dee KLY-doong",
+            "pt": "clothing, clothes",
+            "en": "clothes",
+            "audio": "die Kleidung"
+          },
+          {
+            "ru": "die Hose",
+            "translit": "dee HOH-zeh",
+            "pt": "pants, trousers",
+            "en": "trousers",
+            "audio": "die Hose"
+          },
+          {
+            "ru": "das Hemd",
+            "translit": "dahs HEMT",
+            "pt": "shirt",
+            "en": "shirt",
+            "audio": "das Hemd"
+          },
+          {
+            "ru": "das T-Shirt",
+            "translit": "dahs TEE-shirt",
+            "pt": "T-shirt",
+            "en": "T-shirt",
+            "audio": "das T-Shirt"
+          },
+          {
+            "ru": "der Pullover",
+            "translit": "dehr pu-LOH-ver",
+            "pt": "sweater",
+            "en": "sweater",
+            "audio": "der Pullover"
+          },
+          {
+            "ru": "die Jacke",
+            "translit": "dee YAH-keh",
+            "pt": "jacket",
+            "en": "jacket",
+            "audio": "die Jacke"
+          },
+          {
+            "ru": "der Mantel",
+            "translit": "dehr MAHN-tel",
+            "pt": "coat",
+            "en": "coat",
+            "audio": "der Mantel"
+          },
+          {
+            "ru": "das Kleid",
+            "translit": "dahs KLITE",
+            "pt": "dress",
+            "en": "dress",
+            "audio": "das Kleid"
+          },
+          {
+            "ru": "der Rock",
+            "translit": "dehr ROK",
+            "pt": "skirt",
+            "en": "skirt",
+            "audio": "der Rock"
+          },
+          {
+            "ru": "die Schuhe",
+            "translit": "dee SHOO-eh",
+            "pt": "shoes (plural)",
+            "en": "shoes",
+            "audio": "die Schuhe"
+          },
+          {
+            "ru": "die Socken",
+            "translit": "dee ZOK-en",
+            "pt": "socks (plural)",
+            "en": "socks",
+            "audio": "die Socken"
+          },
+          {
+            "ru": "die Mütze",
+            "translit": "dee MÜT-seh",
+            "pt": "hat, beanie, cap",
+            "en": "cap",
+            "audio": "die Mütze"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Colors, and the adjective after «sein»",
+        "explicacao": "STEP 1: to describe something with «sein», the adjective comes AFTER the verb and does NOT change: «Die Jacke ist blau», «Die Schuhe sind schwarz» — exactly like English \"the jacket is blue\", \"the shoes are black\". STEP 2: ask «Welche Farbe hat …?» (what color is …?) or «Wie ist …?». STEP 3: colors are written in lowercase, because they're adjectives. STEP 4: the adjective can take «zu» (too): «Die Hose ist zu groß» (the pants are too big). Adjective endings in front of a noun (ein blaues Hemd) only come at A2; for now, use the adjective ON ITS OWN, after «sein».",
+        "comparacao": "Good news: after «sein», German adjectives behave exactly like English ones — no ending at all: «ist blau», «sind blau», \"is blue\", \"are blue\". Several colors are almost English: braun (brown), grün (green), grau (gray), weiß (white).",
+        "tabela": [
+          {
+            "cor": "rot",
+            "pt": "red",
+            "exemplo": "Das Kleid ist rot."
+          },
+          {
+            "cor": "blau",
+            "pt": "blue",
+            "exemplo": "Die Jacke ist blau."
+          },
+          {
+            "cor": "grün",
+            "pt": "green",
+            "exemplo": "Der Pullover ist grün."
+          },
+          {
+            "cor": "gelb",
+            "pt": "yellow",
+            "exemplo": "Das T-Shirt ist gelb."
+          },
+          {
+            "cor": "schwarz",
+            "pt": "black",
+            "exemplo": "Die Schuhe sind schwarz."
+          },
+          {
+            "cor": "weiß",
+            "pt": "white",
+            "exemplo": "Das Hemd ist weiß."
+          },
+          {
+            "cor": "grau",
+            "pt": "gray",
+            "exemplo": "Der Mantel ist grau."
+          },
+          {
+            "cor": "braun",
+            "pt": "brown",
+            "exemplo": "Der Rock ist braun."
+          },
+          {
+            "cor": "rosa / lila / orange",
+            "pt": "pink / purple / orange",
+            "exemplo": "Die Mütze ist rosa."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Die Schuhe sind schwarze.",
+            "certo": "Die Schuhe sind schwarz.",
+            "motivo": "After «sein», the adjective doesn't change."
+          }
+        ],
+        "tag": "Adjectives and possessives"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Describe the clothes you're wearing right now: «Die Hose ist … Das T-Shirt ist …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 5 sentences with «kein», «keine» or «keinen» and 3 with «nicht»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-015.json",
+  "responsavel": null
+}

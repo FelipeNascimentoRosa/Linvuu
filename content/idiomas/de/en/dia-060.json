@@ -1,0 +1,560 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 60,
+  "fase": 6,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Shopping and clothes: Reading and practice",
+  "objetivo": "Lesson 15, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 15,
+    "titulo": "Shopping and clothes",
+    "objetivo": "Name clothes and colors, ask about and understand prices and sizes, point with «dieser, diese, dieses», and go through a whole purchase in a store.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Reading and practice",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "texto",
+        "min": 5,
+        "titulo": "Mein Einkauf / My shopping",
+        "ru": "Heute gehe ich einkaufen. Ich brauche eine Hose und einen Pullover. Die Hose kostet vierzig Euro. Der Pullover ist blau und kostet fünfundzwanzig Euro. Das ist nicht teuer. Ich nehme beide. Ich bezahle mit Karte.",
+        "pt": "Today I'm going shopping. I need a pair of pants and a sweater. The pants cost forty euros. The sweater is blue and costs twenty-five euros. That's not expensive. I'll take both. I pay by card.",
+        "perguntas": [
+          {
+            "pergunta": "Was braucht der Autor?",
+            "resposta": "Eine Hose und einen Pullover"
+          },
+          {
+            "pergunta": "Was kostet die Hose?",
+            "resposta": "Vierzig Euro"
+          },
+          {
+            "pergunta": "Wie bezahlt der Autor?",
+            "resposta": "Mit Karte"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 15,
+        "itens": [
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Die Jacke ___ blau. (sein)",
+            "opcoes": [
+              "ist",
+              "sind",
+              "bist"
+            ],
+            "gabarito": "ist",
+            "explicacao": "«Jacke» is singular.",
+            "id": "de-015-e01"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Yes, I'm looking for a jacket.\"",
+            "opcoes": [
+              "suche",
+              "Jacke.",
+              "Ja,",
+              "ich",
+              "eine"
+            ],
+            "gabarito": "Ja, ich suche eine Jacke.",
+            "explicacao": "Write: Ja, ich suche eine Jacke.",
+            "id": "de-015-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Die Schuhe sind ___. (black)",
+            "opcoes": [
+              "schwarz",
+              "schwarze",
+              "schwarzen"
+            ],
+            "gabarito": "schwarz",
+            "explicacao": "After «sein», the adjective doesn't change.",
+            "id": "de-015-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ja, ich suche eine Jacke.",
+            "respostaEsperada": "Ja, ich suche eine Jacke.",
+            "explicacao": "Yes, I'm looking for a jacket.",
+            "id": "de-015-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Was ___ die Jacke?",
+            "opcoes": [
+              "kostet",
+              "kosten",
+              "kostest"
+            ],
+            "gabarito": "kostet",
+            "explicacao": "One thing: kostet.",
+            "id": "de-015-e03"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Blue or black. How much is this jacket here?\"",
+            "opcoes": [
+              "diese",
+              "kostet",
+              "Blau",
+              "oder",
+              "schwarz.",
+              "hier?",
+              "Was",
+              "Jacke"
+            ],
+            "gabarito": "Blau oder schwarz. Was kostet diese Jacke hier?",
+            "explicacao": "Write: Blau oder schwarz. Was kostet diese Jacke hier?",
+            "id": "de-015-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Guten Tag! Kann ich Ihnen helfen?",
+            "respostaEsperada": "Guten Tag! Kann ich Ihnen helfen?",
+            "explicacao": "Good morning! Can I help you?",
+            "id": "de-015-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Blau oder schwarz. Was kostet diese Jacke hier?",
+            "respostaEsperada": "Blau oder schwarz. Was kostet diese Jacke hier?",
+            "explicacao": "Blue or black. How much is this jacket here?",
+            "id": "de-015-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Was ___ die Schuhe?",
+            "opcoes": [
+              "kosten",
+              "kostet",
+              "koste"
+            ],
+            "gabarito": "kosten",
+            "explicacao": "Plural: kosten.",
+            "id": "de-015-e04"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Yes, here. You can try it on. The fitting room is over there.\"",
+            "opcoes": [
+              "können",
+              "Ja,",
+              "Umkleidekabine",
+              "dort.",
+              "anprobieren.",
+              "Die",
+              "hier.",
+              "sie",
+              "Sie",
+              "ist"
+            ],
+            "gabarito": "Ja, hier. Sie können sie anprobieren. Die Umkleidekabine ist dort.",
+            "explicacao": "Write: Ja, hier. Sie können sie anprobieren. Die Umkleidekabine ist dort.",
+            "id": "de-015-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Die Hose ist ___ groß. (too)",
+            "opcoes": [
+              "zu",
+              "sehr",
+              "so"
+            ],
+            "gabarito": "zu",
+            "explicacao": "«zu» + adjective = too.",
+            "id": "de-015-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ja, hier. Sie können sie anprobieren. Die Umkleidekabine ist dort.",
+            "respostaEsperada": "Ja, hier. Sie können sie anprobieren. Die Umkleidekabine ist dort.",
+            "explicacao": "Yes, here. You can try it on. The fitting room is over there.",
+            "id": "de-015-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich nehme ___ Pullover. (this)",
+            "opcoes": [
+              "diesen",
+              "dieser",
+              "dieses"
+            ],
+            "gabarito": "diesen",
+            "explicacao": "Masculine direct object.",
+            "id": "de-015-e06"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"It fits me well. I'll take it.\"",
+            "opcoes": [
+              "gut.",
+              "Ich",
+              "sie.",
+              "mir",
+              "Sie",
+              "nehme",
+              "passt"
+            ],
+            "gabarito": "Sie passt mir gut. Ich nehme sie.",
+            "explicacao": "Write: Sie passt mir gut. Ich nehme sie.",
+            "id": "de-015-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Welche Farbe möchten Sie?",
+            "respostaEsperada": "Welche Farbe möchten Sie?",
+            "explicacao": "What color would you like?",
+            "id": "de-015-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Sie passt mir gut. Ich nehme sie.",
+            "respostaEsperada": "Sie passt mir gut. Ich nehme sie.",
+            "explicacao": "It fits me well. I'll take it.",
+            "id": "de-015-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "2,50 € is read:",
+            "opcoes": [
+              "zwei Euro fünfzig",
+              "fünfzig Euro zwei",
+              "zwei fünfzig Cent"
+            ],
+            "gabarito": "zwei Euro fünfzig",
+            "explicacao": "Euros first, then cents.",
+            "id": "de-015-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"By card, please.\"",
+            "opcoes": [
+              "bitte.",
+              "Karte,",
+              "Mit"
+            ],
+            "gabarito": "Mit Karte, bitte.",
+            "explicacao": "Write: Mit Karte, bitte.",
+            "id": "de-015-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Kann ich das anprobieren?» means:",
+            "opcoes": [
+              "Can I try this on?",
+              "Can I buy this?",
+              "Can I return this?"
+            ],
+            "gabarito": "Can I try this on?",
+            "explicacao": "anprobieren = to try on.",
+            "id": "de-015-e08"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Mit Karte, bitte.",
+            "respostaEsperada": "Mit Karte, bitte.",
+            "explicacao": "By card, please.",
+            "id": "de-015-x10",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «der Mantel» mean?",
+            "audio": "der Mantel",
+            "opcoes": [
+              "expensive",
+              "fitting room",
+              "clothing, clothes",
+              "coat"
+            ],
+            "gabarito": "coat",
+            "explicacao": "«der Mantel» = coat (not \"mantle\").",
+            "id": "de-015-x11",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Die Jacke passt mir» means:",
+            "opcoes": [
+              "The jacket fits me",
+              "The jacket is mine",
+              "I like the jacket"
+            ],
+            "gabarito": "The jacket fits me",
+            "explicacao": "«passen» + dative.",
+            "id": "de-015-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «bar» mean?",
+            "audio": "bar",
+            "opcoes": [
+              "expensive",
+              "in cash",
+              "clothing, clothes",
+              "fitting room"
+            ],
+            "gabarito": "in cash",
+            "explicacao": "«bar» = in cash (not a bar!).",
+            "id": "de-015-x12",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Diese Jacke kostet neunzig Euro.",
+            "respostaEsperada": "Diese Jacke kostet neunzig Euro.",
+            "explicacao": "This jacket is ninety euros.",
+            "id": "de-015-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «der Pullover» mean?",
+            "audio": "der Pullover",
+            "opcoes": [
+              "clothing, clothes",
+              "expensive",
+              "sweater",
+              "too small"
+            ],
+            "gabarito": "sweater",
+            "explicacao": "«der Pullover» = sweater (British: pullover, jumper).",
+            "id": "de-015-x13",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"I'll take this jacket.\"",
+            "opcoes": [
+              "Ich",
+              "nehme",
+              "diese",
+              "Jacke"
+            ],
+            "gabarito": "Ich nehme diese Jacke.",
+            "explicacao": "Feminine: diese.",
+            "id": "de-015-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «die Umkleidekabine» mean?",
+            "audio": "die Umkleidekabine",
+            "opcoes": [
+              "price",
+              "coat",
+              "fitting room",
+              "pants, trousers"
+            ],
+            "gabarito": "fitting room",
+            "explicacao": "«die Umkleidekabine» = fitting room.",
+            "id": "de-015-x14",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"How much is the jacket?\"",
+            "opcoes": [
+              "Was",
+              "kostet",
+              "die",
+              "Jacke"
+            ],
+            "gabarito": "Was kostet die Jacke?",
+            "explicacao": "A question with a question word.",
+            "id": "de-015-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «zu groß» mean?",
+            "audio": "zu groß",
+            "opcoes": [
+              "coat",
+              "too big",
+              "good value, affordable",
+              "sweater"
+            ],
+            "gabarito": "too big",
+            "explicacao": "«zu groß» = too big.",
+            "id": "de-015-x15",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Zahlen Sie bar oder mit Karte?",
+            "opcoes": [
+              "Zahlen Sie bar oder mit Karte?",
+              "Möchten Sie die Jacke anprobieren?",
+              "Haben Sie die Jacke in Größe M?"
+            ],
+            "gabarito": "Zahlen Sie bar oder mit Karte?",
+            "explicacao": "«bar» = in cash (not a bar!).",
+            "id": "de-015-e12"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «das T-Shirt» mean?",
+            "audio": "das T-Shirt",
+            "opcoes": [
+              "expensive",
+              "T-shirt",
+              "which (color, f.)",
+              "sweater"
+            ],
+            "gabarito": "T-shirt",
+            "explicacao": "«das T-Shirt» = T-shirt.",
+            "id": "de-015-x16",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Zahlen Sie bar oder mit Karte?",
+            "respostaEsperada": "Zahlen Sie bar oder mit Karte?",
+            "explicacao": "Will you pay in cash or by card?",
+            "id": "de-015-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Zahlen Sie bar oder mit Karte?",
+            "opcoes": [
+              "oder",
+              "Zahlen",
+              "mit",
+              "bar",
+              "Sie",
+              "Karte?"
+            ],
+            "gabarito": "Zahlen Sie bar oder mit Karte?",
+            "explicacao": "Write: Zahlen Sie bar oder mit Karte?",
+            "id": "de-015-x17",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Haben Sie die Jacke in Größe M",
+            "respostaEsperada": "Haben Sie die Jacke in Größe M",
+            "explicacao": "Asking for a size.",
+            "id": "de-015-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Haben Sie die Jacke in Größe M",
+            "opcoes": [
+              "Jacke",
+              "in",
+              "die",
+              "M",
+              "Größe",
+              "Sie",
+              "Haben"
+            ],
+            "gabarito": "Haben Sie die Jacke in Größe M",
+            "explicacao": "Write: Haben Sie die Jacke in Größe M",
+            "id": "de-015-x18",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«teuer» is the opposite of:",
+            "opcoes": [
+              "billig",
+              "groß",
+              "klein"
+            ],
+            "gabarito": "billig",
+            "explicacao": "expensive × cheap.",
+            "id": "de-015-e14"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Zahlen Sie bar oder mit Karte?",
+            "respostaEsperada": "Zahlen Sie bar oder mit Karte?",
+            "explicacao": "Write: Zahlen Sie bar oder mit Karte?",
+            "id": "de-015-x19",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich nehme ___ Pullover. (this)",
+            "opcoes": [
+              "diesen",
+              "dieser",
+              "diese",
+              "dieses"
+            ],
+            "gabarito": "diesen",
+            "explicacao": "Masculine direct object: «diesen».",
+            "id": "de-015-m01"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Die Hose ist groß zu.",
+              "Die Hose ist zu groß.",
+              "Die Hose zu ist groß."
+            ],
+            "gabarito": "Die Hose ist zu groß.",
+            "explicacao": "«zu» comes before the adjective.",
+            "id": "de-015-m02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write 5 sentences about a purchase: what you're looking for, the color, the price, the size and how you pay.",
+            "respostaEsperada": "Ich suche eine Jacke. Sie ist blau. Sie kostet neunzig Euro. Sie ist zu groß. Ich bezahle mit Karte.",
+            "id": "de-015-e15"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Record yourself going through a whole purchase in a store: asking, checking the price, trying on, choosing and paying."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write a six-line store dialogue using price, size and «Ich nehme …»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-015.json",
+  "responsavel": null
+}
