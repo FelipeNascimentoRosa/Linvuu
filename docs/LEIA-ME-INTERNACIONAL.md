@@ -95,6 +95,14 @@ O espanhol (aulas 33–62) e o alemão andam em paralelo: uma aula de cada por r
 
 **Antes de escrever cada aula, leia o capítulo do livro Linvuu correspondente** (`content/livros-privado/de/alinhamento.json` → `cap-NN.md`): é a bibliografia da casa, de onde a aula do site nasceu. Confira se a aula tem tudo o que o capítulo tem (tabela de erros, cena, pistas) e preencha a lacuna na versão inglesa com `@bloco:<sessão>:<bloco>` no mapa i18n. Lacuna achada no texto em português do .com.br é anotada, não corrigida (lote do .com.br).
 
+**Checklist por aula do alemão (lições das aulas 3–8):**
+1. Tabela «armadilha» (sessão 1, bloco 3) vem com chaves `portugues/ingles/evite` que **não** dizem o que a coluna mostra — refaça com `@bloco:0:2` e chaves de `content/colunas.json` (`ingles`, `alemao`, `evite`, `possuidor`, `genero`, `sujeito`, `objeto`…).
+2. Quadros «Descubra» com chaves `c1…c5` → refaça com chaves com rótulo (`@bloco:1:0`).
+3. Bloco «O erro típico» (sessão 4, bloco 3) costuma ter `erros: []` e o texto manda «reler a tabela» → preencha 6 erros do falante de inglês (`@bloco:3:2`).
+4. «Retorno» cita «capítulo N» do livro (numeração ≠ aulas do site) → reescreva sem número de capítulo.
+5. Células `[misto]` em português sem acento (quem, onde, como, domingo…) escapam do filtro — confira a lista SKIP.
+6. Respostas-modelo com «aus Brasilien / Portugiesisch» → vida do aluno de inglês.
+
 **Fontes externas:** FSI German Basic Course (domínio público) como conferência da progressão e dos exercícios; Wikibooks German só como roteiro; texto final original. Nada de Goethe-Institut/DW/Duden copiado.
 
 **Ao fechar 288/288:** o curso entra no sitemap/hreflang do .com sozinho (`explicacaoCompleta`), a nota de cobertura some, e a gramática `de.en.json` fica completa.
