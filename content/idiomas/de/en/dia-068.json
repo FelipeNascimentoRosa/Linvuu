@@ -1,0 +1,560 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 68,
+  "fase": 7,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Home and housing: es gibt: Reading and practice",
+  "objetivo": "Lesson 17, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 17,
+    "titulo": "Home and housing: es gibt",
+    "objetivo": "Name the rooms and furniture, say what there is with «es gibt» and «haben», describe a home (size, rent) and understand an apartment ad.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Reading and practice",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "texto",
+        "min": 5,
+        "titulo": "Meine Wohnung / My apartment",
+        "ru": "Meine Wohnung ist nicht groß, aber schön. Sie hat drei Zimmer: ein Wohnzimmer, ein Schlafzimmer und eine Küche. Das Bad ist klein. Im Wohnzimmer gibt es ein Sofa, einen Tisch und ein Regal. Es gibt auch einen Balkon. Dort trinke ich morgens Kaffee. Die Miete kostet siebenhundert Euro im Monat.",
+        "pt": "My apartment isn't big, but it's nice. It has three rooms: a living room, a bedroom and a kitchen. The bathroom is small. In the living room there's a sofa, a table and a bookcase. There's also a balcony. I have coffee there in the morning. The rent is seven hundred euros a month.",
+        "perguntas": [
+          {
+            "pergunta": "Wie viele Zimmer hat die Wohnung?",
+            "resposta": "Drei"
+          },
+          {
+            "pergunta": "Was gibt es im Wohnzimmer?",
+            "resposta": "Ein Sofa, einen Tisch und ein Regal"
+          },
+          {
+            "pergunta": "Was kostet die Miete?",
+            "resposta": "Siebenhundert Euro im Monat"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 15,
+        "itens": [
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Es gibt ___ Balkon. (a)",
+            "opcoes": [
+              "einen",
+              "ein",
+              "eine"
+            ],
+            "gabarito": "einen",
+            "explicacao": "Balkon is masculine: accusative.",
+            "id": "de-017-e01"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"And how much is the rent?\"",
+            "opcoes": [
+              "was",
+              "Und",
+              "kostet",
+              "die",
+              "Miete?"
+            ],
+            "gabarito": "Und was kostet die Miete?",
+            "explicacao": "Write: Und was kostet die Miete?",
+            "id": "de-017-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Es gibt ___ Küche. (a)",
+            "opcoes": [
+              "eine",
+              "einen",
+              "ein"
+            ],
+            "gabarito": "eine",
+            "explicacao": "Küche is feminine.",
+            "id": "de-017-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Und was kostet die Miete?",
+            "respostaEsperada": "Und was kostet die Miete?",
+            "explicacao": "And how much is the rent?",
+            "id": "de-017-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Es gibt ___ Garten. (no)",
+            "opcoes": [
+              "keinen",
+              "kein",
+              "keine"
+            ],
+            "gabarito": "keinen",
+            "explicacao": "Garten is masculine: keinen.",
+            "id": "de-017-e03"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Wie groß ist die Wohnung?",
+            "respostaEsperada": "Wie groß ist die Wohnung?",
+            "explicacao": "How big is the apartment?",
+            "id": "de-017-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"No, there's no garden, but there's a balcony.\"",
+            "opcoes": [
+              "es",
+              "gibt",
+              "Nein,",
+              "es",
+              "nicht,",
+              "aber",
+              "gibt",
+              "Balkon.",
+              "einen",
+              "einen",
+              "Garten"
+            ],
+            "gabarito": "Nein, einen Garten gibt es nicht, aber es gibt einen Balkon.",
+            "explicacao": "Write: Nein, einen Garten gibt es nicht, aber es gibt einen Balkon.",
+            "id": "de-017-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Die Wohnung ___ drei Zimmer. (haben)",
+            "opcoes": [
+              "hat",
+              "haben",
+              "hast"
+            ],
+            "gabarito": "hat",
+            "explicacao": "er/sie/es → hat.",
+            "id": "de-017-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Nein, einen Garten gibt es nicht, aber es gibt einen Balkon.",
+            "respostaEsperada": "Nein, einen Garten gibt es nicht, aber es gibt einen Balkon.",
+            "explicacao": "No, there's no garden, but there's a balcony.",
+            "id": "de-017-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Die Küche ist ___. (small)",
+            "opcoes": [
+              "klein",
+              "kleine",
+              "kleiner"
+            ],
+            "gabarito": "klein",
+            "explicacao": "After «sein», the adjective doesn't change.",
+            "id": "de-017-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Of course. Come tomorrow at ten.\"",
+            "opcoes": [
+              "zehn",
+              "Natürlich.",
+              "Uhr.",
+              "morgen",
+              "Sie",
+              "um",
+              "Kommen"
+            ],
+            "gabarito": "Natürlich. Kommen Sie morgen um zehn Uhr.",
+            "explicacao": "Write: Natürlich. Kommen Sie morgen um zehn Uhr.",
+            "id": "de-017-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich bin ___ Küche. (in the)",
+            "opcoes": [
+              "in der",
+              "im",
+              "in die"
+            ],
+            "gabarito": "in der",
+            "explicacao": "Wo? + a die word: in der.",
+            "id": "de-017-e06"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Natürlich. Kommen Sie morgen um zehn Uhr.",
+            "respostaEsperada": "Natürlich. Kommen Sie morgen um zehn Uhr.",
+            "explicacao": "Of course. Come tomorrow at ten.",
+            "id": "de-017-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Sie hat fünfundfünfzig Quadratmeter.",
+            "respostaEsperada": "Sie hat fünfundfünfzig Quadratmeter.",
+            "explicacao": "It's fifty-five square meters.",
+            "id": "de-017-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «das Schlafzimmer» mean?",
+            "audio": "das Schlafzimmer",
+            "opcoes": [
+              "dark",
+              "shelf, bookcase",
+              "house",
+              "bedroom"
+            ],
+            "gabarito": "bedroom",
+            "explicacao": "«das Schlafzimmer» = bedroom (literally \"sleep room\").",
+            "id": "de-017-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich gehe ___ Bad. (to the)",
+            "opcoes": [
+              "ins",
+              "im",
+              "in der"
+            ],
+            "gabarito": "ins",
+            "explicacao": "Wohin? + a das word: ins.",
+            "id": "de-017-e07"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich gehe ___ Garten. (into the)",
+            "opcoes": [
+              "in den",
+              "im",
+              "in dem"
+            ],
+            "gabarito": "in den",
+            "explicacao": "Wohin? + a der word: in den.",
+            "id": "de-017-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «hell» mean?",
+            "audio": "hell",
+            "opcoes": [
+              "bright, light",
+              "room",
+              "kitchen",
+              "hallway, entrance"
+            ],
+            "gabarito": "bright, light",
+            "explicacao": "«hell» = bright (not \"hell\"!).",
+            "id": "de-017-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Wie viele Zimmer hat die Wohnung?» asks:",
+            "opcoes": [
+              "how many rooms",
+              "how much the rent is",
+              "how big it is"
+            ],
+            "gabarito": "how many rooms",
+            "explicacao": "«wie viele» = how many.",
+            "id": "de-017-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «die Dusche» mean?",
+            "audio": "die Dusche",
+            "opcoes": [
+              "wardrobe, cupboard",
+              "shower",
+              "to view (a property)",
+              "rent"
+            ],
+            "gabarito": "shower",
+            "explicacao": "«die Dusche» = shower.",
+            "id": "de-017-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Sechshundert Euro im Monat, plus Nebenkosten.",
+            "respostaEsperada": "Sechshundert Euro im Monat, plus Nebenkosten.",
+            "explicacao": "Six hundred euros a month, plus utilities.",
+            "id": "de-017-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «die Anzeige» mean?",
+            "audio": "die Anzeige",
+            "opcoes": [
+              "shelf, bookcase",
+              "to view (a property)",
+              "wardrobe, cupboard",
+              "ad, listing"
+            ],
+            "gabarito": "ad, listing",
+            "explicacao": "«die Anzeige» = ad, listing.",
+            "id": "de-017-x10",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "55 m² is read:",
+            "opcoes": [
+              "fünfundfünfzig Quadratmeter",
+              "fünfzigfünf Meter",
+              "fünfundfünfzig Meter"
+            ],
+            "gabarito": "fünfundfünfzig Quadratmeter",
+            "explicacao": "m² = Quadratmeter.",
+            "id": "de-017-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «der Kühlschrank» mean?",
+            "audio": "der Kühlschrank",
+            "opcoes": [
+              "dark",
+              "wardrobe, cupboard",
+              "refrigerator, fridge",
+              "rent"
+            ],
+            "gabarito": "refrigerator, fridge",
+            "explicacao": "«der Kühlschrank» = fridge (literally \"cool cupboard\").",
+            "id": "de-017-x11",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Nebenkosten» are:",
+            "opcoes": [
+              "extra costs, utilities",
+              "the rent",
+              "the deposit"
+            ],
+            "gabarito": "extra costs, utilities",
+            "explicacao": "heating, water, building fees.",
+            "id": "de-017-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «der Schrank» mean?",
+            "audio": "der Schrank",
+            "opcoes": [
+              "refrigerator, fridge",
+              "kitchen",
+              "bedroom",
+              "wardrobe, cupboard"
+            ],
+            "gabarito": "wardrobe, cupboard",
+            "explicacao": "«der Schrank» = wardrobe, cupboard.",
+            "id": "de-017-x12",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"There's a balcony.\"",
+            "opcoes": [
+              "Es",
+              "gibt",
+              "einen",
+              "Balkon"
+            ],
+            "gabarito": "Es gibt einen Balkon.",
+            "explicacao": "es gibt + accusative.",
+            "id": "de-017-e12"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Gibt es einen Garten?",
+            "opcoes": [
+              "einen",
+              "Gibt",
+              "es",
+              "Garten?"
+            ],
+            "gabarito": "Gibt es einen Garten?",
+            "explicacao": "Write: Gibt es einen Garten?",
+            "id": "de-017-x13",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Kann ich die Wohnung sehen?",
+            "respostaEsperada": "Kann ich die Wohnung sehen?",
+            "explicacao": "Can I see the apartment?",
+            "id": "de-017-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Gibt es einen Garten?",
+            "opcoes": [
+              "Gibt es einen Garten?",
+              "Hat die Wohnung einen Garten?",
+              "Es gibt keinen Garten."
+            ],
+            "gabarito": "Gibt es einen Garten?",
+            "explicacao": "A question with «es gibt».",
+            "id": "de-017-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Die Miete kostet sechshundert Euro im Monat",
+            "opcoes": [
+              "Die",
+              "im",
+              "Miete",
+              "Monat",
+              "kostet",
+              "Euro",
+              "sechshundert"
+            ],
+            "gabarito": "Die Miete kostet sechshundert Euro im Monat",
+            "explicacao": "Write: Die Miete kostet sechshundert Euro im Monat",
+            "id": "de-017-x14",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Die Miete kostet sechshundert Euro im Monat",
+            "respostaEsperada": "Die Miete kostet sechshundert Euro im Monat",
+            "explicacao": "sechshundert = 600.",
+            "id": "de-017-e14"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Gibt es einen Garten?",
+            "respostaEsperada": "Gibt es einen Garten?",
+            "explicacao": "Write: Gibt es einen Garten?",
+            "id": "de-017-x15",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Die Wohnung hat ___ Zimmer. (two)",
+            "opcoes": [
+              "zwei",
+              "zweien",
+              "zweite",
+              "zweiter"
+            ],
+            "gabarito": "zwei",
+            "explicacao": "We use «zwei Zimmer». «Zwo» is also a variant of «zwei» (used on the phone), so it isn't simply wrong.",
+            "id": "de-017-m01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich gehe in ___ Küche. (the)",
+            "opcoes": [
+              "die",
+              "der",
+              "das",
+              "den"
+            ],
+            "gabarito": "die",
+            "explicacao": "Movement: feminine accusative: «die».",
+            "id": "de-017-m02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich bin in ___ Küche. (the)",
+            "opcoes": [
+              "der",
+              "die",
+              "dem",
+              "den"
+            ],
+            "gabarito": "der",
+            "explicacao": "Where? Feminine dative: «der».",
+            "id": "de-017-m03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich gehe ___ Bad. (to the)",
+            "opcoes": [
+              "ins",
+              "im",
+              "in der",
+              "in den"
+            ],
+            "gabarito": "ins",
+            "explicacao": "«in das» = «ins» with movement.",
+            "id": "de-017-m04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Die Küche ist kleine.",
+              "Die Küche ist klein.",
+              "Die Küche ist kleines."
+            ],
+            "gabarito": "Die Küche ist klein.",
+            "explicacao": "After «sein», the adjective doesn't change.",
+            "id": "de-017-m05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Es geben zwei Zimmer.",
+              "Es gibt zwei Zimmer.",
+              "Es gibt zweien Zimmer."
+            ],
+            "gabarito": "Es gibt zwei Zimmer.",
+            "explicacao": "«es gibt» doesn't change in the plural.",
+            "id": "de-017-m06"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write 5 sentences about your home: the rooms, what there is, the size, the rent and your favorite room.",
+            "respostaEsperada": "Meine Wohnung hat drei Zimmer. Es gibt einen Balkon. Sie hat sechzig Quadratmeter. Die Miete kostet siebenhundert Euro. Ich bin gern in der Küche.",
+            "id": "de-017-e15"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Record yourself showing your home: room by room, with «es gibt», «haben» and adjectives."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write a three-line rental ad for an imaginary apartment."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-017.json",
+  "responsavel": null
+}

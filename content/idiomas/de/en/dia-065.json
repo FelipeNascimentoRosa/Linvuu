@@ -1,0 +1,179 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 65,
+  "fase": 7,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Home and housing: es gibt: Rooms and «es gibt»",
+  "objetivo": "Lesson 17, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 17,
+    "titulo": "Home and housing: es gibt",
+    "objetivo": "Name the rooms and furniture, say what there is with «es gibt» and «haben», describe a home (size, rent) and understand an apartment ad.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Rooms and «es gibt»",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 12,
+        "itens": [
+          {
+            "ru": "das Haus",
+            "translit": "dahs HOWSS",
+            "pt": "house",
+            "en": "house",
+            "audio": "das Haus"
+          },
+          {
+            "ru": "die Wohnung",
+            "translit": "dee VOH-noong",
+            "pt": "apartment",
+            "en": "flat",
+            "audio": "die Wohnung"
+          },
+          {
+            "ru": "das Zimmer",
+            "translit": "dahs TSIM-er",
+            "pt": "room",
+            "en": "room",
+            "audio": "das Zimmer"
+          },
+          {
+            "ru": "das Wohnzimmer",
+            "translit": "dahs VOHN-tsim-er",
+            "pt": "living room",
+            "en": "living room",
+            "audio": "das Wohnzimmer"
+          },
+          {
+            "ru": "das Schlafzimmer",
+            "translit": "dahs SHLAHF-tsim-er",
+            "pt": "bedroom",
+            "en": "bedroom",
+            "audio": "das Schlafzimmer"
+          },
+          {
+            "ru": "die Küche",
+            "translit": "dee KÜ-kheh",
+            "pt": "kitchen",
+            "en": "kitchen",
+            "audio": "die Küche"
+          },
+          {
+            "ru": "das Bad",
+            "translit": "dahs BAHT",
+            "pt": "bathroom",
+            "en": "bathroom",
+            "audio": "das Bad"
+          },
+          {
+            "ru": "der Flur",
+            "translit": "dehr FLOOR",
+            "pt": "hallway, entrance",
+            "en": "hall",
+            "audio": "der Flur"
+          },
+          {
+            "ru": "der Balkon",
+            "translit": "dehr bahl-KONG",
+            "pt": "balcony",
+            "en": "balcony",
+            "audio": "der Balkon"
+          },
+          {
+            "ru": "der Garten",
+            "translit": "dehr GAR-ten",
+            "pt": "garden, yard",
+            "en": "garden",
+            "audio": "der Garten"
+          },
+          {
+            "ru": "das Sofa",
+            "translit": "dahs ZOH-fah",
+            "pt": "sofa, couch",
+            "en": "sofa",
+            "audio": "das Sofa"
+          },
+          {
+            "ru": "das Bett",
+            "translit": "dahs BET",
+            "pt": "bed",
+            "en": "bed",
+            "audio": "das Bett"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "«Es gibt»: saying what there is, step by step",
+        "explicacao": "STEP 1: «es gibt» means \"there is\" or \"there are\": «Es gibt einen Balkon» = there's a balcony. STEP 2: «es gibt» is a FIXED phrase — literally \"it gives\" — and, unlike English \"there is / there are\", it never changes for the plural: «Es gibt zwei Zimmer» (there are two rooms). What exists goes into the ACCUSATIVE, so masculine nouns take «einen» or «keinen»: «Es gibt einen Garten», «Es gibt keinen Garten». Feminine, neuter and plural don't change: «Es gibt eine Küche», «Es gibt ein Bad». STEP 3: to ask: «Gibt es einen Balkon?» (Is there a balcony?) STEP 4: the difference from «haben»: «haben» has an owner («Die Wohnung hat einen Balkon» — the apartment has a balcony); «es gibt» just says something exists («In der Wohnung gibt es einen Balkon»). Both take the accusative.",
+        "comparacao": "English switches between \"there is\" and \"there are\"; German «es gibt» never changes. And since «es gibt» is literally \"it gives\", what follows is an object — so the masculine changes: einen Balkon, keinen Garten.",
+        "tabela": [
+          {
+            "genero": "masculine",
+            "exemplo": "Es gibt einen Balkon. / Es gibt keinen Garten.",
+            "pt": "There's a balcony. / There's no garden."
+          },
+          {
+            "genero": "feminine",
+            "exemplo": "Es gibt eine Küche.",
+            "pt": "There's a kitchen."
+          },
+          {
+            "genero": "neuter",
+            "exemplo": "Es gibt ein Bad.",
+            "pt": "There's a bathroom."
+          },
+          {
+            "genero": "plural",
+            "exemplo": "Es gibt zwei Zimmer.",
+            "pt": "There are two rooms."
+          },
+          {
+            "genero": "question",
+            "exemplo": "Gibt es hier einen Supermarkt?",
+            "pt": "Is there a supermarket around here?"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Es gibt ein Balkon.",
+            "certo": "Es gibt einen Balkon.",
+            "motivo": "What exists goes into the accusative: «Balkon» is masculine."
+          },
+          {
+            "errado": "Es gibt nicht Garten.",
+            "certo": "Es gibt keinen Garten.",
+            "motivo": "A noun: «kein» — \"there's no garden\"."
+          },
+          {
+            "errado": "Es geben zwei Zimmer.",
+            "certo": "Es gibt zwei Zimmer.",
+            "motivo": "«es gibt» doesn't change, even in the plural — unlike \"there are\"."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Describe your home out loud: «Es gibt eine Küche, ein Bad, ein Schlafzimmer …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 jobs in the masculine and feminine."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-017.json",
+  "responsavel": null
+}

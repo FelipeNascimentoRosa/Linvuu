@@ -1,0 +1,169 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 66,
+  "fase": 7,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Home and housing: es gibt: Describing your home",
+  "objetivo": "Lesson 17, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 17,
+    "titulo": "Home and housing: es gibt",
+    "objetivo": "Name the rooms and furniture, say what there is with «es gibt» and «haben», describe a home (size, rent) and understand an apartment ad.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Describing your home",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "der Schrank",
+            "translit": "dehr SHRAHNK",
+            "pt": "wardrobe, cupboard",
+            "en": "wardrobe",
+            "audio": "der Schrank"
+          },
+          {
+            "ru": "der Kühlschrank",
+            "translit": "dehr KÜHL-shrahnk",
+            "pt": "refrigerator, fridge",
+            "en": "fridge",
+            "audio": "der Kühlschrank"
+          },
+          {
+            "ru": "das Regal",
+            "translit": "dahs reh-GAHL",
+            "pt": "shelf, bookcase",
+            "en": "shelf",
+            "audio": "das Regal"
+          },
+          {
+            "ru": "der Fernseher",
+            "translit": "dehr FERN-zeh-er",
+            "pt": "TV (set)",
+            "en": "TV set",
+            "audio": "der Fernseher"
+          },
+          {
+            "ru": "die Dusche",
+            "translit": "dee DOO-sheh",
+            "pt": "shower",
+            "en": "shower",
+            "audio": "die Dusche"
+          },
+          {
+            "ru": "die Miete",
+            "translit": "dee MEE-teh",
+            "pt": "rent",
+            "en": "rent",
+            "audio": "die Miete"
+          },
+          {
+            "ru": "hell",
+            "translit": "HELL",
+            "pt": "bright, light",
+            "en": "bright",
+            "audio": "hell"
+          },
+          {
+            "ru": "dunkel",
+            "translit": "DOON-kel",
+            "pt": "dark",
+            "en": "dark",
+            "audio": "dunkel"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Describing a home, step by step",
+        "explicacao": "STEP 1: «haben» says what the home has: «Die Wohnung hat drei Zimmer.» STEP 2: ask «Wie viele Zimmer hat die Wohnung?» (How many rooms does the apartment have?) STEP 3: adjectives come after «sein» and don't change: «Die Küche ist klein und hell.» STEP 4: size, in square meters: «Die Wohnung hat sechzig Quadratmeter» (written 60 m²; about 650 sq ft). STEP 5: rent: «Die Miete kostet sechshundert Euro im Monat.» Careful: in German ads, «Zimmer» counts all rooms except kitchen and bathroom — a «2-Zimmer-Wohnung» is a living room plus one bedroom, not a two-bedroom. STEP 6: WHERE (Wo?) and WHERE TO (Wohin?), with the pairs from lesson 9: «im Wohnzimmer» / «ins Wohnzimmer»; «in der Küche» / «in die Küche»; «im Bad» / «ins Bad»; «im Garten» / «in den Garten». Careful: for the balcony, German uses «auf» (\"on\"), as English does: «auf dem Balkon» / «auf den Balkon».",
+        "exemplos": [
+          {
+            "ru": "Die Wohnung hat drei Zimmer und einen Balkon.",
+            "pt": "The apartment has three rooms and a balcony."
+          },
+          {
+            "ru": "Die Küche ist klein, aber hell.",
+            "pt": "The kitchen is small but bright."
+          },
+          {
+            "ru": "Ich bin in der Küche. Ich gehe ins Bad.",
+            "pt": "I'm in the kitchen. I'm going to the bathroom."
+          }
+        ],
+        "tabela": [
+          {
+            "comodo": "das Wohnzimmer",
+            "wo": "im Wohnzimmer",
+            "wohin": "ins Wohnzimmer"
+          },
+          {
+            "comodo": "das Schlafzimmer",
+            "wo": "im Schlafzimmer",
+            "wohin": "ins Schlafzimmer"
+          },
+          {
+            "comodo": "die Küche",
+            "wo": "in der Küche",
+            "wohin": "in die Küche"
+          },
+          {
+            "comodo": "das Bad",
+            "wo": "im Bad",
+            "wohin": "ins Bad"
+          },
+          {
+            "comodo": "der Flur",
+            "wo": "im Flur",
+            "wohin": "in den Flur"
+          },
+          {
+            "comodo": "der Garten",
+            "wo": "im Garten",
+            "wohin": "in den Garten"
+          },
+          {
+            "comodo": "der Balkon",
+            "wo": "auf dem Balkon",
+            "wohin": "auf den Balkon"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Die Küche ist kleine.",
+            "certo": "Die Küche ist klein.",
+            "motivo": "After «sein», the adjective doesn't change."
+          },
+          {
+            "errado": "Ich gehe in der Küche.",
+            "certo": "Ich gehe in die Küche.",
+            "motivo": "With movement (Wohin?): «in die»."
+          }
+        ],
+        "tag": "Prepositions"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe a home out loud (yours or an imaginary one): rooms, size and rent."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 5 sentences with «es gibt», one of them negative."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-017.json",
+  "responsavel": null
+}
