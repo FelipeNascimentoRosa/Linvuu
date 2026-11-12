@@ -1,0 +1,634 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 48,
+  "fase": 5,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Müssen, wollen and dürfen: obligation, wish and permission: Practice and dialogue",
+  "objetivo": "Lesson 12, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 12,
+    "titulo": "Müssen, wollen and dürfen: obligation, wish and permission",
+    "objetivo": "Use «müssen» (have to), «wollen» (want to) and «dürfen» (be allowed to), and read the most common signs — always with the sentence bracket.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Practice and dialogue",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Im Schwimmbad / At the swimming pool",
+        "contexto": "A staff member explains the rules to a visitor.",
+        "linhas": [
+          {
+            "personagem": "Bademeister",
+            "ru": "— Entschuldigung, Sie dürfen hier nicht rauchen.",
+            "pt": "— Excuse me, you can't smoke here.",
+            "audio": "Entschuldigung, Sie dürfen hier nicht rauchen.",
+            "rotulo": "Bademeister"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Oh, das tut mir leid. Wo darf man rauchen?",
+            "pt": "— Oh, sorry. Where can you smoke?",
+            "audio": "Oh, das tut mir leid. Wo darf man rauchen?",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Bademeister",
+            "ru": "— Draußen, vor dem Eingang. Hier ist es verboten.",
+            "pt": "— Outside, in front of the entrance. It's not allowed in here.",
+            "audio": "Draußen, vor dem Eingang. Hier ist es verboten.",
+            "rotulo": "Bademeister"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Danke. Muss ich auch die Schuhe ausziehen?",
+            "pt": "— Thanks. Do I have to take my shoes off too?",
+            "audio": "Danke. Muss ich auch die Schuhe ausziehen?",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Bademeister",
+            "ru": "— Ja, hier müssen alle die Schuhe ausziehen.",
+            "pt": "— Yes, everyone has to take their shoes off here.",
+            "audio": "Ja, hier müssen alle die Schuhe ausziehen.",
+            "rotulo": "Bademeister"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Und darf ich mit der Kamera fotografieren?",
+            "pt": "— And can I take pictures with my camera?",
+            "audio": "Und darf ich mit der Kamera fotografieren?",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Bademeister",
+            "ru": "— Nein, Fotografieren ist hier nicht erlaubt.",
+            "pt": "— No, taking photos isn't allowed here.",
+            "audio": "Nein, Fotografieren ist hier nicht erlaubt.",
+            "rotulo": "Bademeister"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 9,
+        "itens": [
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich ___ heute arbeiten. (müssen)",
+            "opcoes": [
+              "muss",
+              "musst",
+              "müssen"
+            ],
+            "gabarito": "muss",
+            "explicacao": "ich → muss.",
+            "id": "de-012-e01"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Outside, in front of the entrance. It's not allowed in here.\"",
+            "opcoes": [
+              "vor",
+              "verboten.",
+              "ist",
+              "dem",
+              "Draußen,",
+              "Hier",
+              "Eingang.",
+              "es"
+            ],
+            "gabarito": "Draußen, vor dem Eingang. Hier ist es verboten.",
+            "explicacao": "Write: Draußen, vor dem Eingang. Hier ist es verboten.",
+            "id": "de-012-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Du ___ pünktlich sein. (müssen)",
+            "opcoes": [
+              "musst",
+              "muss",
+              "müsst"
+            ],
+            "gabarito": "musst",
+            "explicacao": "du → musst.",
+            "id": "de-012-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Draußen, vor dem Eingang. Hier ist es verboten.",
+            "respostaEsperada": "Draußen, vor dem Eingang. Hier ist es verboten.",
+            "explicacao": "Outside, in front of the entrance. It's not allowed in here.",
+            "id": "de-012-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich ___ nächste Woche nach Berlin fahren. (wollen)",
+            "opcoes": [
+              "will",
+              "willst",
+              "wollen"
+            ],
+            "gabarito": "will",
+            "explicacao": "ich → will (= I want to, not \"I will\").",
+            "id": "de-012-e03"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Yes, everyone has to take their shoes off here.\"",
+            "opcoes": [
+              "Schuhe",
+              "die",
+              "müssen",
+              "Ja,",
+              "ausziehen.",
+              "alle",
+              "hier"
+            ],
+            "gabarito": "Ja, hier müssen alle die Schuhe ausziehen.",
+            "explicacao": "Write: Ja, hier müssen alle die Schuhe ausziehen.",
+            "id": "de-012-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Entschuldigung, Sie dürfen hier nicht rauchen.",
+            "respostaEsperada": "Entschuldigung, Sie dürfen hier nicht rauchen.",
+            "explicacao": "Excuse me, you can't smoke here.",
+            "id": "de-012-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ja, hier müssen alle die Schuhe ausziehen.",
+            "respostaEsperada": "Ja, hier müssen alle die Schuhe ausziehen.",
+            "explicacao": "Yes, everyone has to take their shoes off here.",
+            "id": "de-012-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Wir ___ zusammen kochen. (wollen)",
+            "opcoes": [
+              "wollen",
+              "will",
+              "wollt"
+            ],
+            "gabarito": "wollen",
+            "explicacao": "wir → wollen.",
+            "id": "de-012-e04"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"No, taking photos isn't allowed here.\"",
+            "opcoes": [
+              "Fotografieren",
+              "nicht",
+              "Nein,",
+              "ist",
+              "erlaubt.",
+              "hier"
+            ],
+            "gabarito": "Nein, Fotografieren ist hier nicht erlaubt.",
+            "explicacao": "Write: Nein, Fotografieren ist hier nicht erlaubt.",
+            "id": "de-012-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ ich hier sitzen? (dürfen)",
+            "opcoes": [
+              "Darf",
+              "Darfe",
+              "Dürfen"
+            ],
+            "gabarito": "Darf",
+            "explicacao": "ich → darf.",
+            "id": "de-012-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Nein, Fotografieren ist hier nicht erlaubt.",
+            "respostaEsperada": "Nein, Fotografieren ist hier nicht erlaubt.",
+            "explicacao": "No, taking photos isn't allowed here.",
+            "id": "de-012-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Oh, das tut mir leid. Wo darf man rauchen?",
+            "respostaEsperada": "Oh, das tut mir leid. Wo darf man rauchen?",
+            "explicacao": "Oh, sorry. Where can you smoke?",
+            "id": "de-012-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «der Plan» mean?",
+            "audio": "der Plan",
+            "opcoes": [
+              "together",
+              "to smoke",
+              "entrance",
+              "plan"
+            ],
+            "gabarito": "plan",
+            "explicacao": "«der Plan» = plan.",
+            "id": "de-012-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Hier ___ man nicht rauchen. (dürfen)",
+            "opcoes": [
+              "darf",
+              "dürfen",
+              "darfst"
+            ],
+            "gabarito": "darf",
+            "explicacao": "«man» takes «darf».",
+            "id": "de-012-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Hier darf man nicht parken» means:",
+            "opcoes": [
+              "You mustn't park here",
+              "You don't have to park here",
+              "Nobody wants to park here"
+            ],
+            "gabarito": "You mustn't park here",
+            "explicacao": "«nicht dürfen» = forbidden (mustn't).",
+            "id": "de-012-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «man» mean?",
+            "audio": "man",
+            "opcoes": [
+              "to take photos",
+              "one, you, people (impersonal)",
+              "next week",
+              "late"
+            ],
+            "gabarito": "one, you, people (impersonal)",
+            "explicacao": "«man» = one, you, people (impersonal).",
+            "id": "de-012-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "To ask a stranger for a coffee, the best choice is:",
+            "opcoes": [
+              "Ich möchte einen Kaffee.",
+              "Ich will einen Kaffee.",
+              "Ich muss einen Kaffee."
+            ],
+            "gabarito": "Ich möchte einen Kaffee.",
+            "explicacao": "«möchten» is polite.",
+            "id": "de-012-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «vielleicht» mean?",
+            "audio": "vielleicht",
+            "opcoes": [
+              "immediately",
+              "next week",
+              "definitely, for sure",
+              "maybe, perhaps"
+            ],
+            "gabarito": "maybe, perhaps",
+            "explicacao": "«vielleicht» = maybe.",
+            "id": "de-012-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Danke. Muss ich auch die Schuhe ausziehen?",
+            "respostaEsperada": "Danke. Muss ich auch die Schuhe ausziehen?",
+            "explicacao": "Thanks. Do I have to take my shoes off too?",
+            "id": "de-012-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «viel» mean?",
+            "audio": "viel",
+            "opcoes": [
+              "punctual, on time",
+              "this evening, tonight",
+              "a lot, much",
+              "plan"
+            ],
+            "gabarito": "a lot, much",
+            "explicacao": "«viel» = a lot, much.",
+            "id": "de-012-x10",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"I have to get up at seven o'clock.\"",
+            "opcoes": [
+              "Ich",
+              "muss",
+              "um",
+              "sieben",
+              "Uhr",
+              "aufstehen"
+            ],
+            "gabarito": "Ich muss um sieben Uhr aufstehen.",
+            "explicacao": "The separable verb stays whole at the end.",
+            "id": "de-012-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «der Eingang» mean?",
+            "audio": "der Eingang",
+            "opcoes": [
+              "forbidden",
+              "entrance",
+              "exit",
+              "late"
+            ],
+            "gabarito": "entrance",
+            "explicacao": "«der Eingang» = entrance.",
+            "id": "de-012-x11",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Hier darf man nicht rauchen",
+            "opcoes": [
+              "Hier darf man nicht rauchen",
+              "Hier muss man rauchen",
+              "Hier will man nicht rauchen"
+            ],
+            "gabarito": "Hier darf man nicht rauchen",
+            "explicacao": "«darf» + «nicht» = forbidden.",
+            "id": "de-012-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «bestimmt» mean?",
+            "audio": "bestimmt",
+            "opcoes": [
+              "a lot, much",
+              "this evening, tonight",
+              "definitely, for sure",
+              "future"
+            ],
+            "gabarito": "definitely, for sure",
+            "explicacao": "«bestimmt» = definitely.",
+            "id": "de-012-x12",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Und darf ich mit der Kamera fotografieren?",
+            "respostaEsperada": "Und darf ich mit der Kamera fotografieren?",
+            "explicacao": "And can I take pictures with my camera?",
+            "id": "de-012-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Hier darf man nicht rauchen",
+            "opcoes": [
+              "darf",
+              "nicht",
+              "rauchen",
+              "Hier",
+              "man"
+            ],
+            "gabarito": "Hier darf man nicht rauchen",
+            "explicacao": "Write: Hier darf man nicht rauchen",
+            "id": "de-012-x13",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Fotografieren ist hier nicht erlaubt",
+            "respostaEsperada": "Fotografieren ist hier nicht erlaubt",
+            "explicacao": "«erlaubt» = allowed.",
+            "id": "de-012-e11"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Fotografieren ist hier nicht erlaubt",
+            "opcoes": [
+              "erlaubt",
+              "hier",
+              "Fotografieren",
+              "ist",
+              "nicht"
+            ],
+            "gabarito": "Fotografieren ist hier nicht erlaubt",
+            "explicacao": "Write: Fotografieren ist hier nicht erlaubt",
+            "id": "de-012-x14",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Eingang» and «Ausgang» are:",
+            "opcoes": [
+              "entrance and exit",
+              "exit and entrance",
+              "arrival and departure"
+            ],
+            "gabarito": "entrance and exit",
+            "explicacao": "Ein = in; Aus = out — the same as English.",
+            "id": "de-012-e12"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Hier darf man nicht rauchen",
+            "respostaEsperada": "Hier darf man nicht rauchen",
+            "explicacao": "Write: Hier darf man nicht rauchen",
+            "id": "de-012-x15",
+            "complemento": true
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write 5 sentences: one with «müssen», one with «wollen», one with «dürfen», a prohibition and a permission.",
+            "respostaEsperada": "Ich muss arbeiten. Ich will nach Berlin fahren. Darf ich hier sitzen? Hier darf man nicht rauchen. Hier darf man fotografieren.",
+            "id": "de-012-e13"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Record yourself: say what you have to do, what you want to do and what you may or mustn't do in a public place."
+      },
+      {
+        "tipo": "exercicios",
+        "min": 6,
+        "itens": [
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Er kannt kommen.",
+            "respostaEsperada": "Er kann kommen.",
+            "explicacao": "Er kann kommen. (ich = er, no -t)",
+            "id": "de-012-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Wir können nicht gehen nach Hause.",
+            "respostaEsperada": "Wir können nicht nach Hause gehen.",
+            "explicacao": "Wir können nicht nach Hause gehen.",
+            "id": "de-012-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Du willst helfen mir?",
+            "respostaEsperada": "Willst du mir helfen?",
+            "explicacao": "Willst du mir helfen?",
+            "id": "de-012-L-c06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Er ___ früh aufstehen. (müssen)",
+            "opcoes": [
+              "muss",
+              "musst",
+              "müssen",
+              "müsst"
+            ],
+            "gabarito": "muss",
+            "explicacao": "3rd person: «er muss», no ending.",
+            "id": "de-012-m01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ ich hier sitzen? (may I)",
+            "opcoes": [
+              "Darf",
+              "Dürfen",
+              "Darfe",
+              "Darfst"
+            ],
+            "gabarito": "Darf",
+            "explicacao": "A question with a modal: «Darf ich…?»",
+            "id": "de-012-m02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Hier ___ man nicht rauchen. (it's forbidden)",
+            "opcoes": [
+              "darf",
+              "dürfen",
+              "darfst",
+              "dürft"
+            ],
+            "gabarito": "darf",
+            "explicacao": "«man darf nicht» = it's forbidden.",
+            "id": "de-012-m03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence follows the neutral order from this lesson, with the infinitive at the end?",
+            "opcoes": [
+              "Ich muss aufstehe um sieben Uhr.",
+              "Ich muss um sieben Uhr aufstehen.",
+              "Ich muss aufstehen um sieben Uhr."
+            ],
+            "gabarito": "Ich muss um sieben Uhr aufstehen.",
+            "explicacao": "In this lesson's neutral order: «Ich muss um sieben Uhr aufstehen». In other contexts a phrase can come after the infinitive, but that's an advanced exception, not the rule to copy now.",
+            "id": "de-012-m04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "To ask politely for a coffee:",
+            "opcoes": [
+              "Ich will einen Kaffee.",
+              "Ich möchte einen Kaffee, bitte.",
+              "Ich muss einen Kaffee."
+            ],
+            "gabarito": "Ich möchte einen Kaffee, bitte.",
+            "explicacao": "«möchten» is polite; «wollen» sounds curt.",
+            "id": "de-012-m05"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 2,
+        "titulo": "The typical English-speaker mistakes",
+        "explicacao": "STEP 1: the costliest mistakes: «muss nicht» used for English \"mustn't\" (that's «darf nicht»); «ich will» used for \"I will\" (it means \"I want\"); «wollen» in a shop, where it sounds as curt as \"I want…\" (use «möchten»); the infinitive next to the modal, as in English; and an -t on the modal with er (er kannt, er willt). STEP 2: read the table and say each correct sentence out loud before you look at the reason.",
+        "erros": [
+          {
+            "errado": "Hier muss man nicht rauchen. (= you mustn't smoke)",
+            "certo": "Hier darf man nicht rauchen.",
+            "motivo": "\"Mustn't\" = darf nicht; muss nicht = don't have to."
+          },
+          {
+            "errado": "Ich will morgen anrufen. (= I will call)",
+            "certo": "Ich rufe morgen an.",
+            "motivo": "«ich will» = I want; for the future, the present tense is enough."
+          },
+          {
+            "errado": "Ich will einen Kaffee. (to a waiter)",
+            "certo": "Ich möchte einen Kaffee, bitte.",
+            "motivo": "«wollen» sounds curt in a shop; use «möchten»."
+          },
+          {
+            "errado": "Er willt gehen.",
+            "certo": "Er will gehen.",
+            "motivo": "ich and er are the same: no -t."
+          },
+          {
+            "errado": "Ich muss aufstehen um sieben Uhr.",
+            "certo": "Ich muss um sieben Uhr aufstehen.",
+            "motivo": "The infinitive goes to the end."
+          },
+          {
+            "errado": "Hier dürfen nicht rauchen.",
+            "certo": "Hier darf man nicht rauchen.",
+            "motivo": "Impersonal \"you\" needs «man», with the er form."
+          }
+        ],
+        "tag": "Typical mistake"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Can I do it? I say what I have to, want to and may do, keeping the verb bracket. · I know nicht dürfen (forbidden, mustn't) from nicht müssen (don't have to). · I ask politely with möchten instead of wollen."
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Write a sentence with each of the 4 modals you know: können, müssen, wollen and dürfen."
+      },
+      {
+        "tipo": "revisao",
+        "min": 2,
+        "enunciado": "Review. Complete: Ich ____ (können) gut schwimmen. Wohin ____ (gehen) du heute? Ich stehe um sieben Uhr ____ (aufstehen)."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-012.json",
+  "responsavel": null
+}

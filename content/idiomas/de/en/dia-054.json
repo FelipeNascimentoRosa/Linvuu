@@ -1,0 +1,177 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 54,
+  "fase": 6,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Accusative pronouns and negation (kein and nicht): Kein, keine: negating a noun",
+  "objetivo": "Lesson 14, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 14,
+    "titulo": "Accusative pronouns and negation (kein and nicht)",
+    "objetivo": "Replace the direct object with pronouns (ihn, sie, es, mich, dich…), negate nouns with «kein» and everything else with «nicht», and answer negative questions with «doch».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Kein, keine: negating a noun",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Work it out yourself",
+        "explicacao": "STEP 1: compare each pair. STEP 2: Questions: STEP 3: when does ein, or no article, become kein? STEP 4: when does nicht appear? STEP 5: where is nicht when the sentence has no adjective or place?",
+        "tabela": [
+          {
+            "afirmativa": "Ich habe ein Auto.",
+            "negativa": "Ich habe kein Auto."
+          },
+          {
+            "afirmativa": "Das ist eine Lampe.",
+            "negativa": "Das ist keine Lampe."
+          },
+          {
+            "afirmativa": "Ich habe Zeit.",
+            "negativa": "Ich habe keine Zeit."
+          },
+          {
+            "afirmativa": "Tom wohnt in Berlin.",
+            "negativa": "Tom wohnt nicht in Berlin."
+          },
+          {
+            "afirmativa": "Das Zimmer ist groß.",
+            "negativa": "Das Zimmer ist nicht groß."
+          },
+          {
+            "afirmativa": "Camila kommt.",
+            "negativa": "Camila kommt nicht."
+          }
+        ],
+        "tag": "Discover"
+      },
+      {
+        "tipo": "palavras",
+        "min": 7,
+        "itens": [
+          {
+            "ru": "der Hunger",
+            "translit": "dehr HOONG-er",
+            "pt": "hunger",
+            "en": "hunger",
+            "audio": "der Hunger"
+          },
+          {
+            "ru": "der Durst",
+            "translit": "dehr DOORST",
+            "pt": "thirst",
+            "en": "thirst",
+            "audio": "der Durst"
+          },
+          {
+            "ru": "die Zeit",
+            "translit": "dee TSITE",
+            "pt": "time",
+            "en": "time",
+            "audio": "die Zeit"
+          },
+          {
+            "ru": "das Geld",
+            "translit": "dahs GELT",
+            "pt": "money",
+            "en": "money",
+            "audio": "das Geld"
+          },
+          {
+            "ru": "die Lust",
+            "translit": "dee LOOST",
+            "pt": "desire, being in the mood",
+            "en": "desire",
+            "audio": "die Lust"
+          },
+          {
+            "ru": "das Problem",
+            "translit": "dahs pro-BLEHM",
+            "pt": "problem",
+            "en": "problem",
+            "audio": "das Problem"
+          },
+          {
+            "ru": "die Ahnung",
+            "translit": "dee AH-noong",
+            "pt": "idea, clue",
+            "en": "idea",
+            "audio": "die Ahnung"
+          },
+          {
+            "ru": "das Auto",
+            "translit": "dahs OW-toh",
+            "pt": "car",
+            "en": "car",
+            "audio": "das Auto"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "«Kein» and «keine»: negating a noun, step by step",
+        "explicacao": "STEP 1: «kein» negates NOUNS — it's the English \"no\" in \"I have no car\", or \"not a / not any\". Use it instead of «ein», or when the noun has no article: «Ich habe ein Auto» → «Ich habe kein Auto»; «Ich habe Zeit» → «Ich habe keine Zeit». STEP 2: «kein» takes the endings of «ein»: masculine kein (nominative) and keinen (accusative); feminine keine; neuter kein; plural keine. STEP 3: set phrases with «haben»: «Ich habe keinen Hunger» (I'm not hungry — German \"has\" hunger), «keinen Durst», «keine Zeit», «keine Lust» (I don't feel like it), «keine Ahnung» (no idea). STEP 4: remember the masculine direct object takes -en: «keinen Hunger», «keinen Kaffee».",
+        "tabela": [
+          {
+            "genero": "masculine",
+            "nominativo": "kein Hund",
+            "acusativo": "keinen Hund",
+            "exemplo": "Ich habe keinen Hund."
+          },
+          {
+            "genero": "feminine",
+            "nominativo": "keine Katze",
+            "acusativo": "keine Katze",
+            "exemplo": "Ich habe keine Katze."
+          },
+          {
+            "genero": "neuter",
+            "nominativo": "kein Auto",
+            "acusativo": "kein Auto",
+            "exemplo": "Ich habe kein Auto."
+          },
+          {
+            "genero": "plural",
+            "nominativo": "keine Kinder",
+            "acusativo": "keine Kinder",
+            "exemplo": "Ich habe keine Kinder."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich habe nicht Zeit.",
+            "certo": "Ich habe keine Zeit.",
+            "motivo": "With a noun, use «kein/keine»."
+          },
+          {
+            "errado": "Ich habe kein Hunger.",
+            "certo": "Ich habe keinen Hunger.",
+            "motivo": "«Hunger» is masculine: as a direct object → keinen."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 4,
+        "enunciado": "Say 6 things you don't have: «Ich habe keinen / keine / kein …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Write the accusative pronouns for all 9 persons."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-014.json",
+  "responsavel": null
+}

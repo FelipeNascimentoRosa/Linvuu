@@ -1,0 +1,170 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 46,
+  "fase": 5,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Müssen, wollen and dürfen: obligation, wish and permission: Wollen: want",
+  "objetivo": "Lesson 12, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 12,
+    "titulo": "Müssen, wollen and dürfen: obligation, wish and permission",
+    "objetivo": "Use «müssen» (have to), «wollen» (want to) and «dürfen» (be allowed to), and read the most common signs — always with the sentence bracket.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Wollen: want",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "der Plan",
+            "translit": "dehr PLAHN",
+            "pt": "plan",
+            "en": "plan",
+            "audio": "der Plan"
+          },
+          {
+            "ru": "die Idee",
+            "translit": "dee ee-DEH",
+            "pt": "idea",
+            "en": "idea",
+            "audio": "die Idee"
+          },
+          {
+            "ru": "vielleicht",
+            "translit": "fee-LIKHT",
+            "pt": "maybe, perhaps",
+            "en": "maybe",
+            "audio": "vielleicht"
+          },
+          {
+            "ru": "bestimmt",
+            "translit": "beh-SHTIMT",
+            "pt": "definitely, for sure",
+            "en": "certainly",
+            "audio": "bestimmt"
+          },
+          {
+            "ru": "allein",
+            "translit": "ah-LINE",
+            "pt": "alone",
+            "en": "alone",
+            "audio": "allein"
+          },
+          {
+            "ru": "zusammen",
+            "translit": "tsoo-ZAH-men",
+            "pt": "together",
+            "en": "together",
+            "audio": "zusammen"
+          },
+          {
+            "ru": "nächste Woche",
+            "translit": "NEKH-steh VOH-kheh",
+            "pt": "next week",
+            "en": "next week",
+            "audio": "nächste Woche"
+          },
+          {
+            "ru": "die Zukunft",
+            "translit": "dee TSOO-koonft",
+            "pt": "future",
+            "en": "future",
+            "audio": "die Zukunft"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Wollen: want to, and how it differs from möchten",
+        "explicacao": "STEP 1: «wollen» expresses a FIRM wish or a plan: «Ich will nächste Woche nach Berlin fahren» = I want to go to Berlin next week. False friend alert: «ich will» never means \"I will\". STEP 2: conjugate: ich will, du willst, er will, wir wollen, ihr wollt, sie wollen. Careful: «ich» and «er» are both «will», with no -t. STEP 3: the infinitive goes to the end. STEP 4: «möchten» is softer and more polite (\"I'd like\"); «wollen» is direct (\"I want\"). When asking a stranger for something, prefer «möchten»: «Ich möchte einen Kaffee», not «Ich will einen Kaffee», which sounds curt — just like \"I want a coffee\" does in English.",
+        "tabelas": [
+          {
+            "titulo": "wollen",
+            "linhas": [
+              {
+                "pronome": "ich",
+                "wollen": "will",
+                "exemplo": "Ich will Deutsch lernen."
+              },
+              {
+                "pronome": "du",
+                "wollen": "willst",
+                "exemplo": "Was willst du machen?"
+              },
+              {
+                "pronome": "er / sie / es",
+                "wollen": "will",
+                "exemplo": "Sie will nach Berlin fahren."
+              },
+              {
+                "pronome": "wir",
+                "wollen": "wollen",
+                "exemplo": "Wir wollen zusammen kochen."
+              },
+              {
+                "pronome": "ihr",
+                "wollen": "wollt",
+                "exemplo": "Wollt ihr ins Kino gehen?"
+              },
+              {
+                "pronome": "sie / Sie",
+                "wollen": "wollen",
+                "exemplo": "Was wollen Sie trinken?"
+              }
+            ]
+          },
+          {
+            "titulo": "wollen × möchten",
+            "linhas": [
+              {
+                "modal": "wollen",
+                "sentido": "I want (firm, a plan)",
+                "exemplo": "Ich will heute Abend zu Hause bleiben."
+              },
+              {
+                "modal": "möchten",
+                "sentido": "I'd like (polite, a request)",
+                "exemplo": "Ich möchte bitte einen Kaffee."
+              }
+            ]
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich will einen Kaffee, bitte. (at a café, to a stranger)",
+            "certo": "Ich möchte einen Kaffee, bitte.",
+            "motivo": "«wollen» sounds curt; «möchten» is polite."
+          },
+          {
+            "errado": "Er willt gehen.",
+            "certo": "Er will gehen.",
+            "motivo": "With «er», the modal takes no -t."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say 5 of your plans: «Ich will nächste Woche … Ich will vielleicht … Ich will bestimmt …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write the 6 forms of «müssen» and 3 sentences with separable verbs."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-012.json",
+  "responsavel": null
+}

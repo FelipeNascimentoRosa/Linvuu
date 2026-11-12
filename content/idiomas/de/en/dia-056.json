@@ -1,0 +1,367 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 56,
+  "fase": 6,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Accusative pronouns and negation (kein and nicht): Practice",
+  "objetivo": "Lesson 14, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 14,
+    "titulo": "Accusative pronouns and negation (kein and nicht)",
+    "objetivo": "Replace the direct object with pronouns (ihn, sie, es, mich, dich…), negate nouns with «kein» and everything else with «nicht», and answer negative questions with «doch».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Practice",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 16,
+        "itens": [
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Wo ist der Schlüssel? Ich suche ___.",
+            "opcoes": [
+              "ihn",
+              "er",
+              "ihm"
+            ],
+            "gabarito": "ihn",
+            "explicacao": "«der Schlüssel» is masculine: accusative «ihn» — \"it\" in English.",
+            "id": "de-014-e01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Wo ist die Tasche? Ich finde ___ nicht.",
+            "opcoes": [
+              "sie",
+              "es",
+              "ihn"
+            ],
+            "gabarito": "sie",
+            "explicacao": "«die Tasche» is feminine: «sie».",
+            "id": "de-014-e02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Das Buch ist gut. Ich lese ___ gern.",
+            "opcoes": [
+              "es",
+              "sie",
+              "ihn"
+            ],
+            "gabarito": "es",
+            "explicacao": "«das Buch» is neuter: «es».",
+            "id": "de-014-e03"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Hallo Camila! Hast du heute Abend Zeit?",
+            "respostaEsperada": "Hallo Camila! Hast du heute Abend Zeit?",
+            "explicacao": "Hi, Camila! Do you have time tonight?",
+            "id": "de-014-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich liebe ___. (you, informal)",
+            "opcoes": [
+              "dich",
+              "du",
+              "dir"
+            ],
+            "gabarito": "dich",
+            "explicacao": "Accusative of «du».",
+            "id": "de-014-e04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Er sieht ___. (me)",
+            "opcoes": [
+              "mich",
+              "ich",
+              "mir"
+            ],
+            "gabarito": "mich",
+            "explicacao": "Accusative of «ich».",
+            "id": "de-014-e05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich habe ___ Auto. (no)",
+            "opcoes": [
+              "kein",
+              "keine",
+              "keinen"
+            ],
+            "gabarito": "kein",
+            "explicacao": "«Auto» is neuter: kein.",
+            "id": "de-014-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Schade! Und morgen?",
+            "respostaEsperada": "Schade! Und morgen?",
+            "explicacao": "Too bad! And tomorrow?",
+            "id": "de-014-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich habe ___ Zeit. (no)",
+            "opcoes": [
+              "keine",
+              "kein",
+              "keinen"
+            ],
+            "gabarito": "keine",
+            "explicacao": "«Zeit» is feminine: keine.",
+            "id": "de-014-e07"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich habe ___ Hunger. (no)",
+            "opcoes": [
+              "keinen",
+              "kein",
+              "keine"
+            ],
+            "gabarito": "keinen",
+            "explicacao": "«Hunger» is masculine, a direct object: keinen.",
+            "id": "de-014-e08"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich arbeite heute ___.",
+            "opcoes": [
+              "nicht",
+              "kein",
+              "keine"
+            ],
+            "gabarito": "nicht",
+            "explicacao": "Negating the verb: «nicht» at the end.",
+            "id": "de-014-e09"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Hast du heute Abend Zeit?",
+            "respostaEsperada": "Hast du heute Abend Zeit?",
+            "explicacao": "Do you have time tonight?",
+            "id": "de-014-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "When do you use «kein»?",
+            "opcoes": [
+              "to negate nouns",
+              "to negate verbs",
+              "to negate adjectives"
+            ],
+            "gabarito": "to negate nouns",
+            "explicacao": "«kein» negates nouns.",
+            "id": "de-014-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Hast du keine Zeit? — ___, ich habe Zeit!",
+            "opcoes": [
+              "Doch",
+              "Ja",
+              "Nein"
+            ],
+            "gabarito": "Doch",
+            "explicacao": "It contradicts the negative.",
+            "id": "de-014-e11"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"I'm not getting up.\"",
+            "opcoes": [
+              "Ich",
+              "stehe",
+              "nicht",
+              "auf"
+            ],
+            "gabarito": "Ich stehe nicht auf.",
+            "explicacao": "«nicht» before the prefix.",
+            "id": "de-014-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Doch, ich habe Hunger! Aber ich muss noch arbeiten.",
+            "respostaEsperada": "Doch, ich habe Hunger! Aber ich muss noch arbeiten.",
+            "explicacao": "Yes, I am! But I still have to work.",
+            "id": "de-014-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"I can't come.\"",
+            "opcoes": [
+              "Ich",
+              "kann",
+              "nicht",
+              "kommen"
+            ],
+            "gabarito": "Ich kann nicht kommen.",
+            "explicacao": "«nicht» before the infinitive.",
+            "id": "de-014-e13"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ich hole dich ab",
+            "opcoes": [
+              "Ich hole dich ab",
+              "Ich hole es ab",
+              "Ich hole ihn ab"
+            ],
+            "gabarito": "Ich hole dich ab",
+            "explicacao": "«dich» = accusative of «du».",
+            "id": "de-014-e14"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write 5 sentences: an accusative pronoun, a «kein», a «nicht», a «nicht» with a separable verb and an answer with «doch».",
+            "respostaEsperada": "Ich sehe ihn. Ich habe keine Zeit. Ich arbeite heute nicht. Ich stehe nicht auf. Hast du keinen Hunger? Doch!",
+            "id": "de-014-e15"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Write five true negative sentences about yourself: two with kein / keine, two with nicht and one with nie (\"never\").",
+            "respostaEsperada": "Ich habe kein Fahrrad. Ich habe heute keine Zeit. Ich wohne nicht in Hamburg. Meine Wohnung ist nicht groß. Ich trinke nie Bier.",
+            "id": "de-014-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Answer the three negative questions: Hast du kein Auto? / Lernst du nicht Deutsch? / Hast du heute keine Zeit?",
+            "respostaEsperada": "— Hast du kein Auto? — Doch, ich habe ein Auto! (or: Nein, ich habe kein Auto.) / — Lernst du nicht Deutsch? — Doch, ich lerne jeden Tag Deutsch! / — Hast du heute keine Zeit? — Nein, heute habe ich leider keine Zeit.",
+            "id": "de-014-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write a four-line dialogue turning down an invitation for tonight (Leider habe ich heute keine Zeit…) and suggesting tomorrow.",
+            "respostaEsperada": "Model dialogue: — Hallo Anna! Hast du heute Abend Zeit? Gehen wir ins Kino? — Leider nicht! Heute habe ich keine Zeit, ich arbeite noch. — Schade! Und morgen Abend? — Morgen arbeite ich nicht. Morgen habe ich Zeit!",
+            "id": "de-014-L-p03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Ich nicht wohne in Berlin.",
+            "respostaEsperada": "Ich wohne nicht in Berlin.",
+            "explicacao": "Ich wohne nicht in Berlin.",
+            "id": "de-014-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Ich habe nicht Auto.",
+            "respostaEsperada": "Ich habe kein Auto.",
+            "explicacao": "Ich habe kein Auto.",
+            "id": "de-014-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Das ist nicht eine Lampe.",
+            "respostaEsperada": "Das ist keine Lampe.",
+            "explicacao": "Das ist keine Lampe.",
+            "id": "de-014-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Ich habe kein Zeit.",
+            "respostaEsperada": "Ich habe keine Zeit.",
+            "explicacao": "Ich habe keine Zeit. (Zeit is feminine.)",
+            "id": "de-014-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Ich bin nicht Lehrerin.",
+            "respostaEsperada": "Ich bin keine Lehrerin.",
+            "explicacao": "Ich bin keine Lehrerin.",
+            "id": "de-014-L-c05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Heute ich arbeite nicht.",
+            "respostaEsperada": "Heute arbeite ich nicht.",
+            "explicacao": "Heute arbeite ich nicht. (verb in position 2)",
+            "id": "de-014-L-c06"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Is there a mistake? Correct it or write «OK»: Er kommt nicht.",
+            "respostaEsperada": "OK",
+            "id": "de-014-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "The typical English-speaker mistakes",
+        "explicacao": "STEP 1: the costliest mistakes: looking for a \"do\" (there is none); putting nicht before the verb, where English puts \"not\" (Ich nicht wohne); saying nicht ein for \"not a\" instead of kein (Das ist nicht ein Tisch); answering ja to a negative question when you mean \"yes, I do\" (it's doch); and saying es for every thing, like \"it\" (Ich suche es for der Schlüssel instead of ihn). STEP 2: read the table and say each correct sentence out loud before you look at the reason.",
+        "erros": [
+          {
+            "errado": "Ich nicht wohne in Berlin.",
+            "certo": "Ich wohne nicht in Berlin.",
+            "motivo": "No \"do\", and nicht doesn't go before the verb as \"not\" does in English."
+          },
+          {
+            "errado": "Das ist nicht eine Lampe.",
+            "certo": "Das ist keine Lampe.",
+            "motivo": "\"Not a\" before a noun is kein(e)."
+          },
+          {
+            "errado": "Ich habe nicht Zeit.",
+            "certo": "Ich habe keine Zeit.",
+            "motivo": "\"No time / not any time\" = keine Zeit."
+          },
+          {
+            "errado": "Hast du keine Zeit? — Ja, ich habe Zeit!",
+            "certo": "Doch, ich habe Zeit!",
+            "motivo": "To contradict a negative question, use doch."
+          },
+          {
+            "errado": "Wo ist der Schlüssel? Ich suche es.",
+            "certo": "Ich suche ihn.",
+            "motivo": "A masculine thing is ihn, not \"it\" = es."
+          },
+          {
+            "errado": "Ich bin nicht Lehrerin.",
+            "certo": "Ich bin keine Lehrerin.",
+            "motivo": "A job is a noun: negate it with kein(e)."
+          }
+        ],
+        "tag": "Typical mistake"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Can I do it? I say Ich habe keine Zeit and Ich verstehe nicht. · I choose kein or nicht by looking at the positive sentence, and I answer Doch when I disagree with a negative."
+      },
+      {
+        "tipo": "revisao",
+        "min": 2,
+        "enunciado": "Review. Complete with the plural: Das sind keine ____ (Tisch). Das sind keine ____ (Haus). Das sind keine ____ (Frau). Turn into a question: Du hast kein Auto. Er kommt nicht. Start with Morgen: Ich komme nicht."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-014.json",
+  "responsavel": null
+}

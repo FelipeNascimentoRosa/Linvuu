@@ -1,0 +1,349 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 55,
+  "fase": 6,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Accusative pronouns and negation (kein and nicht): Nicht and the answer «doch»",
+  "objetivo": "Lesson 14, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 14,
+    "titulo": "Accusative pronouns and negation (kein and nicht)",
+    "objetivo": "Replace the direct object with pronouns (ihn, sie, es, mich, dich…), negate nouns with «kein» and everything else with «nicht», and answer negative questions with «doch».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Nicht and the answer «doch»",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "gar nicht",
+            "translit": "gar NIKHT",
+            "pt": "not at all",
+            "en": "not at all",
+            "audio": "gar nicht"
+          },
+          {
+            "ru": "nicht mehr",
+            "translit": "nikht MEHR",
+            "pt": "no longer, not anymore",
+            "en": "no longer",
+            "audio": "nicht mehr"
+          },
+          {
+            "ru": "nur",
+            "translit": "NOOR",
+            "pt": "only, just",
+            "en": "only",
+            "audio": "nur"
+          },
+          {
+            "ru": "aber",
+            "translit": "AH-ber",
+            "pt": "but",
+            "en": "but",
+            "audio": "aber"
+          },
+          {
+            "ru": "leider",
+            "translit": "LY-der",
+            "pt": "unfortunately",
+            "en": "unfortunately",
+            "audio": "leider"
+          },
+          {
+            "ru": "doch",
+            "translit": "DOKH",
+            "pt": "yes! (contradicting a negative)",
+            "en": "yes, I do",
+            "audio": "doch"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 7,
+        "titulo": "«Nicht»: where it goes, and answering with «doch»",
+        "explicacao": "STEP 1: «kein» negates NOUNS; «nicht» negates EVERYTHING ELSE: the verb, the whole sentence, an adjective or an adverb. STEP 2: when it negates the whole sentence, «nicht» goes to the END: «Ich arbeite heute nicht» (I'm not working today). STEP 3: when it negates an adjective or adverb, it goes BEFORE it: «Das Buch ist nicht teuer.» STEP 4: with a separable verb, «nicht» comes before the prefix: «Ich stehe nicht auf.» STEP 5: with modals, before the infinitive: «Ich kann nicht kommen.» STEP 6: if someone asks a NEGATIVE question («Hast du keine Zeit?»), answer «DOCH» to mean \"yes, I do\" and «Nein» to mean \"no, I don't\". English has to say \"Yes, I do!\" with stress; German has one word, «doch», just for contradicting a negative.",
+        "tabela": [
+          {
+            "situacao": "negates the whole sentence",
+            "exemplo": "Ich arbeite heute nicht."
+          },
+          {
+            "situacao": "negates an adjective",
+            "exemplo": "Das Buch ist nicht teuer."
+          },
+          {
+            "situacao": "negates an adverb or place",
+            "exemplo": "Ich komme nicht aus Spanien."
+          },
+          {
+            "situacao": "separable verb",
+            "exemplo": "Ich stehe nicht auf."
+          },
+          {
+            "situacao": "modal verb",
+            "exemplo": "Ich kann nicht kommen."
+          },
+          {
+            "situacao": "answer «doch»",
+            "exemplo": "Hast du keine Zeit? — Doch, ich habe Zeit!"
+          },
+          {
+            "situacao": "answer «nein»",
+            "exemplo": "Hast du keine Zeit? — Nein, ich habe keine Zeit."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich nicht arbeite heute.",
+            "certo": "Ich arbeite heute nicht.",
+            "motivo": "«nicht» goes to the end."
+          },
+          {
+            "errado": "Ich habe nicht Zeit.",
+            "certo": "Ich habe keine Zeit.",
+            "motivo": "A noun: «keine»."
+          },
+          {
+            "errado": "Hast du keine Zeit? — Ja, ich habe Zeit.",
+            "certo": "Hast du keine Zeit? — Doch, ich habe Zeit.",
+            "motivo": "To contradict a negative, use «doch», not «ja»."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 5,
+        "titulo": "Hast du Zeit? / Do you have time?",
+        "contexto": "Two friends arrange dinner.",
+        "linhas": [
+          {
+            "personagem": "Lea",
+            "ru": "— Hast du heute Abend Zeit?",
+            "pt": "— Do you have time tonight?",
+            "audio": "Hast du heute Abend Zeit?",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Nein, leider nicht. Ich habe keine Zeit.",
+            "pt": "— No, unfortunately not. I don't have time.",
+            "audio": "Nein, leider nicht. Ich habe keine Zeit.",
+            "rotulo": "Paul"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Hast du keinen Hunger? Wir können zusammen essen.",
+            "pt": "— Aren't you hungry? We could eat together.",
+            "audio": "Hast du keinen Hunger? Wir können zusammen essen.",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Doch, ich habe Hunger! Aber ich muss noch arbeiten.",
+            "pt": "— Yes, I am! But I still have to work.",
+            "audio": "Doch, ich habe Hunger! Aber ich muss noch arbeiten.",
+            "rotulo": "Paul"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Arbeitest du nicht um sechs Uhr?",
+            "pt": "— Don't you work until six?",
+            "audio": "Arbeitest du nicht um sechs Uhr?",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Doch, aber heute arbeite ich bis acht.",
+            "pt": "— Yes, I do, but today I'm working until eight.",
+            "audio": "Doch, aber heute arbeite ich bis acht.",
+            "rotulo": "Paul"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Dann essen wir um halb neun. Ich hole dich ab.",
+            "pt": "— Then let's eat at eight-thirty. I'll pick you up.",
+            "audio": "Dann essen wir um halb neun. Ich hole dich ab.",
+            "rotulo": "Lea"
+          }
+        ]
+      },
+      {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "Ich verstehe nicht.",
+            "translit": "",
+            "pt": "I don't understand.",
+            "en": "",
+            "audio": "Ich verstehe nicht."
+          },
+          {
+            "ru": "Ich weiß nicht.",
+            "translit": "",
+            "pt": "I don't know.",
+            "en": "",
+            "audio": "Ich weiß nicht."
+          },
+          {
+            "ru": "Ich habe keine Zeit.",
+            "translit": "",
+            "pt": "I don't have time.",
+            "en": "",
+            "audio": "Ich habe keine Zeit."
+          },
+          {
+            "ru": "Das ist kein Problem.",
+            "translit": "",
+            "pt": "That's no problem.",
+            "en": "",
+            "audio": "Das ist kein Problem."
+          },
+          {
+            "ru": "Noch nicht.",
+            "translit": "",
+            "pt": "Not yet.",
+            "en": "",
+            "audio": "Noch nicht."
+          },
+          {
+            "ru": "Ich habe keinen Hunger.",
+            "translit": "",
+            "pt": "I'm not hungry.",
+            "en": "",
+            "audio": "Ich habe keinen Hunger."
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Ich habe ___ Auto.",
+            "respostaEsperada": "kein (neuter)",
+            "id": "de-014-L-101"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Das ist ___ Lampe.",
+            "respostaEsperada": "keine (feminine)",
+            "id": "de-014-L-102"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Tom wohnt ___ in Berlin.",
+            "respostaEsperada": "nicht (place)",
+            "id": "de-014-L-103"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Wir haben ___ Kinder.",
+            "respostaEsperada": "keine (plural)",
+            "id": "de-014-L-104"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Das Zimmer ist ___ groß.",
+            "respostaEsperada": "nicht (adjective)",
+            "id": "de-014-L-105"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Camila ist ___ Lehrerin.",
+            "respostaEsperada": "keine (job)",
+            "id": "de-014-L-106"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Make the sentences negative with kein / keine or nicht: Ich habe ein Auto. → ___",
+            "respostaEsperada": "Ich habe kein Auto",
+            "id": "de-014-L-201"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Make the sentences negative with kein / keine or nicht: Das ist eine Wohnung. → ___",
+            "respostaEsperada": "Das ist keine Wohnung",
+            "id": "de-014-L-202"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Make the sentences negative with kein / keine or nicht: Tom kommt heute. → ___",
+            "respostaEsperada": "Tom kommt heute nicht",
+            "id": "de-014-L-203"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Make the sentences negative with kein / keine or nicht: Ich wohne in Berlin. → ___",
+            "respostaEsperada": "Ich wohne nicht in Berlin",
+            "id": "de-014-L-204"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Make the sentences negative with kein / keine or nicht: Das Zimmer ist neu. → ___",
+            "respostaEsperada": "Das Zimmer ist nicht neu",
+            "id": "de-014-L-205"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Make the sentences negative with kein / keine or nicht: Ich habe Zeit. → ___",
+            "respostaEsperada": "Ich habe keine Zeit",
+            "id": "de-014-L-206"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Make the sentences negative with kein / keine or nicht: Ich bin Lehrer. → ___",
+            "respostaEsperada": "Ich bin kein Lehrer",
+            "id": "de-014-L-207"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Kommst du nicht? (you are coming!) → ___, ich komme!",
+            "respostaEsperada": "Doch",
+            "explicacao": "Doch contradicts the negative in the question. Since you are coming, the answer is Doch, ich komme! — \"Yes, I am coming!\"",
+            "id": "de-014-L-208a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Wohnst du nicht in Berlin? (you really don't live there) → ___, ich wohne in München.",
+            "respostaEsperada": "Nein",
+            "explicacao": "Nein confirms here that you don't live in Berlin. The rest, ich wohne in München, says where you do live.",
+            "id": "de-014-L-209a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Hast du keine Zeit? (you do have time!) → ___, ich habe Zeit!",
+            "respostaEsperada": "Doch",
+            "explicacao": "Doch contradicts the negative in Hast du keine Zeit? Since you do have time, the answer is Doch, ich habe Zeit!",
+            "id": "de-014-L-210a"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 1,
+        "enunciado": "Answer out loud with «doch» or «nein»: «Hast du keine Zeit? Hast du keinen Hunger? Arbeitest du nicht?»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Write 5 sentences with «kein», «keine» and «keinen»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-014.json",
+  "responsavel": null
+}

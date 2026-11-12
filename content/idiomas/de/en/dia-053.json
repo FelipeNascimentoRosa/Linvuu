@@ -1,0 +1,265 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 53,
+  "fase": 6,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Accusative pronouns and negation (kein and nicht): Accusative pronouns",
+  "objetivo": "Lesson 14, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 14,
+    "titulo": "Accusative pronouns and negation (kein and nicht)",
+    "objetivo": "Replace the direct object with pronouns (ihn, sie, es, mich, dich…), negate nouns with «kein» and everything else with «nicht», and answer negative questions with «doch».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Accusative pronouns",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Lesson goal. By the end of the four sessions, you negate sentences with nicht or kein without hesitating, know where nicht goes, and answer negative questions with doch or nein."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "An invitation turned down",
+        "contexto": "Jonas wants to go out with Camila, but she's busy.",
+        "linhas": [
+          {
+            "personagem": "Jonas",
+            "ru": "— Hallo Camila! Hast du heute Abend Zeit?",
+            "pt": "— Hi, Camila! Do you have time tonight?",
+            "audio": "Hallo Camila! Hast du heute Abend Zeit?",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Leider nicht. Ich habe keine Zeit, ich lerne noch.",
+            "pt": "— Unfortunately not. I don't have time, I'm still studying.",
+            "audio": "Leider nicht. Ich habe keine Zeit, ich lerne noch.",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Schade! Und morgen?",
+            "pt": "— Too bad! And tomorrow?",
+            "audio": "Schade! Und morgen?",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Morgen habe ich Zeit. Aber ich spiele nicht gut Fußball.",
+            "pt": "— Tomorrow I have time. But I don't play soccer well.",
+            "audio": "Morgen habe ich Zeit. Aber ich spiele nicht gut Fußball.",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Kein Problem! Wir spielen nicht Fußball, wir trinken Tee.",
+            "pt": "— No problem! We won't play soccer, we'll have tea.",
+            "audio": "Kein Problem! Wir spielen nicht Fußball, wir trinken Tee.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Super! Ich bin keine Sportlerin.",
+            "pt": "— Great! I'm no athlete.",
+            "audio": "Super! Ich bin keine Sportlerin.",
+            "rotulo": "Camila"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "The English speaker's trap",
+        "explicacao": "STEP 1: a second trap: English uses \"not … any\" where German uses one word: \"I don't have any time\" = «Ich habe keine Zeit», \"I don't have anything\" = «Ich habe nichts». No \"do\", no \"not … any\". STEP 2: is there an ein (or no article) in the positive sentence? Swap it for kein. Otherwise, use nicht.",
+        "comparacao": "English negates with \"not\" and usually needs \"do\": \"I don't live in Berlin. I don't have a car. I don't have time.\" German has no \"do\" at all, and it splits the work between two words: «nicht» for verbs, places and adjectives, and «kein» — literally \"no\", as in \"I have no car\" — for nouns.",
+        "tabela": [
+          {
+            "ingles": "I don't live in Berlin.",
+            "alemao": "Ich wohne nicht in Berlin.",
+            "regra": "negates the verb or the place: nicht"
+          },
+          {
+            "ingles": "I don't have a car.",
+            "alemao": "Ich habe kein Auto.",
+            "regra": "negates a noun with ein or no article: kein"
+          },
+          {
+            "ingles": "I don't have time.",
+            "alemao": "Ich habe keine Zeit.",
+            "regra": "same: kein"
+          },
+          {
+            "ingles": "It's not big.",
+            "alemao": "Es ist nicht groß.",
+            "regra": "negates an adjective: nicht"
+          }
+        ],
+        "tag": "Trap"
+      },
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "brauchen",
+            "translit": "BROW-khen",
+            "pt": "to need",
+            "en": "to need",
+            "audio": "brauchen"
+          },
+          {
+            "ru": "suchen",
+            "translit": "ZOO-khen",
+            "pt": "to look for",
+            "en": "to look for",
+            "audio": "suchen"
+          },
+          {
+            "ru": "finden",
+            "translit": "FIN-den",
+            "pt": "to find",
+            "en": "to find",
+            "audio": "finden"
+          },
+          {
+            "ru": "lieben",
+            "translit": "LEE-ben",
+            "pt": "to love",
+            "en": "to love",
+            "audio": "lieben"
+          },
+          {
+            "ru": "mögen",
+            "translit": "MÖ-gen",
+            "pt": "to like",
+            "en": "to like",
+            "audio": "mögen"
+          },
+          {
+            "ru": "abholen",
+            "translit": "AHP-hoh-len",
+            "pt": "to pick up (someone)",
+            "en": "to pick up",
+            "audio": "abholen"
+          },
+          {
+            "ru": "einladen",
+            "translit": "INE-lah-den",
+            "pt": "to invite",
+            "en": "to invite",
+            "audio": "einladen"
+          },
+          {
+            "ru": "fragen",
+            "translit": "FRAH-gen",
+            "pt": "to ask",
+            "en": "to ask",
+            "audio": "fragen"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Accusative pronouns, step by step",
+        "explicacao": "STEP 1: the DIRECT OBJECT is what receives the action: in «Ich sehe den Mann», the one I see is «den Mann». STEP 2: to avoid repeating the noun, we replace the object with a pronoun: «Ich sehe den Mann» → «Ich sehe ihn» (I see him). STEP 3: for things, the pronoun follows the noun's GENDER, where English always says \"it\": «der Tisch» → «ihn»; «die Lampe» → «sie»; «das Buch» → «es»; «die Bücher» → «sie». STEP 4: English already does this with people: I → me, he → him, we → us. German does the same: «ich» → «mich», «du» → «dich», «er» → «ihn», «wir» → «uns», «ihr» → «euch». STEP 5: careful with «sie» (her, them) and «Sie» (you, formal): context and the capital letter tell you which is which.",
+        "comparacao": "English object pronouns are the closest match in the whole lesson: me, you, him, her, it, us, them. German has the same idea — mich, dich, ihn, sie, es, uns, euch, sie — with one twist: a thing gets «ihn» or «sie» according to its gender, never automatically \"it\".",
+        "exemplos": [
+          {
+            "ru": "Wo ist der Schlüssel? Ich suche ihn.",
+            "pt": "Where's the key? I'm looking for it."
+          },
+          {
+            "ru": "Wo ist die Tasche? Ich finde sie nicht.",
+            "pt": "Where's the bag? I can't find it."
+          },
+          {
+            "ru": "Das Buch ist gut. Ich lese es gern.",
+            "pt": "The book is good. I like reading it."
+          }
+        ],
+        "tabela": [
+          {
+            "nominativo": "ich",
+            "acusativo": "mich",
+            "exemplo": "Er sieht mich."
+          },
+          {
+            "nominativo": "du",
+            "acusativo": "dich",
+            "exemplo": "Ich liebe dich."
+          },
+          {
+            "nominativo": "er",
+            "acusativo": "ihn",
+            "exemplo": "Ich kenne ihn."
+          },
+          {
+            "nominativo": "sie (she)",
+            "acusativo": "sie",
+            "exemplo": "Ich suche sie."
+          },
+          {
+            "nominativo": "es",
+            "acusativo": "es",
+            "exemplo": "Ich finde es gut."
+          },
+          {
+            "nominativo": "wir",
+            "acusativo": "uns",
+            "exemplo": "Sie ruft uns an."
+          },
+          {
+            "nominativo": "ihr",
+            "acusativo": "euch",
+            "exemplo": "Ich lade euch ein."
+          },
+          {
+            "nominativo": "sie (they)",
+            "acusativo": "sie",
+            "exemplo": "Ich kenne sie."
+          },
+          {
+            "nominativo": "Sie (formal)",
+            "acusativo": "Sie",
+            "exemplo": "Ich verstehe Sie."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich sehe er.",
+            "certo": "Ich sehe ihn.",
+            "motivo": "A direct object takes the accusative — like he → him."
+          },
+          {
+            "errado": "Ich liebe du.",
+            "certo": "Ich liebe dich.",
+            "motivo": "«du» becomes «dich» in the accusative."
+          }
+        ],
+        "tag": "Pronouns"
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Replace objects with pronouns out loud: «Ich sehe den Mann → Ich sehe ihn», with 5 sentences of your own."
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Write the accusative of «der Mann», «die Frau», «das Kind» and «die Kinder», with the definite article."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-014.json",
+  "responsavel": null
+}
