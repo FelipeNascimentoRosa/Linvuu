@@ -1,0 +1,349 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 8,
+  "fase": 1,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Who I am: Practice",
+  "objetivo": "Lesson 2, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 2,
+    "titulo": "Who I am",
+    "objetivo": "Introduce yourself, ask someone's name and where they're from, and use «sein» (to be) in the present, with «du», «ihr» and «Sie».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Practice",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "dialogo",
+        "min": 5,
+        "titulo": "An der Rezeption / At the front desk",
+        "contexto": "Paul arrives at a hotel in Berlin. The receptionist addresses him as «Sie».",
+        "linhas": [
+          {
+            "personagem": "Rezeptionistin",
+            "ru": "— Guten Tag! Wie heißen Sie?",
+            "pt": "— Good morning! What's your name, please?",
+            "audio": "Guten Tag! Wie heißen Sie?",
+            "rotulo": "Receptionist"
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Guten Tag! Ich heiße Paul Silva.",
+            "pt": "— Good morning! My name is Paul Silva.",
+            "audio": "Guten Tag! Ich heiße Paul Silva.",
+            "rotulo": "Paul"
+          },
+          {
+            "personagem": "Rezeptionistin",
+            "ru": "— Woher kommen Sie, Herr Silva?",
+            "pt": "— Where are you from, Mr. Silva?",
+            "audio": "Woher kommen Sie, Herr Silva?",
+            "rotulo": "Receptionist"
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Ich komme aus Brasilien, aus São Paulo.",
+            "pt": "— I'm from Brazil, from São Paulo.",
+            "audio": "Ich komme aus Brasilien, aus São Paulo.",
+            "rotulo": "Paul"
+          },
+          {
+            "personagem": "Rezeptionistin",
+            "ru": "— Sie sprechen gut Deutsch!",
+            "pt": "— You speak German well!",
+            "audio": "Sie sprechen gut Deutsch!",
+            "rotulo": "Receptionist"
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Danke! Ich spreche nur ein bisschen.",
+            "pt": "— Thank you! I only speak a little.",
+            "audio": "Danke! Ich spreche nur ein bisschen.",
+            "rotulo": "Paul"
+          },
+          {
+            "personagem": "Rezeptionistin",
+            "ru": "— Freut mich, Herr Silva!",
+            "pt": "— Nice to meet you, Mr. Silva!",
+            "audio": "Freut mich, Herr Silva!",
+            "rotulo": "Receptionist"
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Freut mich auch!",
+            "pt": "— Nice to meet you too!",
+            "audio": "Freut mich auch!",
+            "rotulo": "Paul"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 18,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "In «Ich heiße Anna», the verb «heiße» is:",
+            "opcoes": [
+              "in 2nd position",
+              "in 1st position",
+              "at the end"
+            ],
+            "gabarito": "in 2nd position",
+            "explicacao": "The conjugated verb is in second position: first «Ich», then «heiße», then «Anna».",
+            "id": "de-002-e29"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"I'm from Brazil.\"",
+            "opcoes": [
+              "aus",
+              "Brasilien",
+              "Ich",
+              "komme"
+            ],
+            "gabarito": "Ich komme aus Brasilien.",
+            "explicacao": "The subject «Ich» comes first, the verb «komme» second, and «aus Brasilien» completes the sentence.",
+            "id": "de-002-e30"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Er ___ aus Wien. (sein)",
+            "opcoes": [
+              "ist",
+              "bist",
+              "sind"
+            ],
+            "gabarito": "ist",
+            "explicacao": "With «er», «sie» and «es», the form of «sein» is «ist». «Bist» is only for «du».",
+            "id": "de-002-e31"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Frau Becker, ___ Sie müde? (sein)",
+            "opcoes": [
+              "sind",
+              "seid",
+              "bist"
+            ],
+            "gabarito": "sind",
+            "explicacao": "Formal «Sie» uses the same form as «sie» (they): «sind». «Seid» goes with «ihr» and «bist» with «du».",
+            "id": "de-002-e32"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Hallo! Ich heiße Lea. Wie heißt du?",
+            "respostaEsperada": "Hallo! Ich heiße Lea. Wie heißt du?",
+            "explicacao": "Hi! My name is Lea. What's your name?",
+            "id": "de-002-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ihr ___ aus Brasilien. (kommen)",
+            "opcoes": [
+              "kommt",
+              "kommen",
+              "kommst"
+            ],
+            "gabarito": "kommt",
+            "explicacao": "With «ihr», the verb ends in «t»: «ihr kommt». The «st» ending is for «du», and «en» is for «wir», «sie» and «Sie».",
+            "id": "de-002-e33"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich ___ nicht müde. (sein)",
+            "opcoes": [
+              "bin",
+              "bist",
+              "ist"
+            ],
+            "gabarito": "bin",
+            "explicacao": "The negative sentence keeps the same form of «sein»: with «ich» it's «bin». «Nicht» comes after the verb.",
+            "id": "de-002-e34"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "The feminine of «der Brasilianer» is:",
+            "opcoes": [
+              "die Brasilianerin",
+              "die Brasilianer",
+              "das Brasilianerin"
+            ],
+            "gabarito": "die Brasilianerin",
+            "explicacao": "Add «in» to the masculine to make the feminine. The article for a woman is «die».",
+            "id": "de-002-e35"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Sein» means:",
+            "opcoes": [
+              "to be (who and how/where)",
+              "to have",
+              "to become"
+            ],
+            "gabarito": "to be (who and how/where)",
+            "explicacao": "German has one verb for both, just like English \"to be\": who you are and how or where you are.",
+            "id": "de-002-e36"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Ja, ich bin Paul Silva. Ich bin aus Brasilien.",
+            "respostaEsperada": "Ja, ich bin Paul Silva. Ich bin aus Brasilien.",
+            "explicacao": "Yes, I'm Paul Silva. I'm from Brazil.",
+            "id": "de-002-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Ich bin müde» means:",
+            "opcoes": [
+              "I'm tired",
+              "I'm bored",
+              "I'm sick"
+            ],
+            "gabarito": "I'm tired",
+            "explicacao": "«Ich bin müde» works just like English: \"I am tired\". Only the word order and the verb form need watching.",
+            "id": "de-002-e37"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "With formal «Sie», the verb «kommen» is:",
+            "opcoes": [
+              "kommen",
+              "kommst",
+              "kommt"
+            ],
+            "gabarito": "kommen",
+            "explicacao": "Formal «Sie» takes the same verb form as «sie» (they): «kommen». «Kommst» goes with «du», and «kommt» with «er» or «ihr».",
+            "id": "de-002-e38"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"What's your name?\"",
+            "opcoes": [
+              "du",
+              "Wie",
+              "heißt"
+            ],
+            "gabarito": "Wie heißt du?",
+            "explicacao": "The question word «Wie» opens the sentence, the verb «heißt» is second, and «du» comes after.",
+            "id": "de-002-e39"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Hallo, Lara! Ich bin Tom. Woher kommst du?",
+            "respostaEsperada": "Hallo, Lara! Ich bin Tom. Woher kommst du?",
+            "explicacao": "Hi, Lara! I'm Tom. Where are you from?",
+            "id": "de-002-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Woher kommst du?",
+            "opcoes": [
+              "Woher kommst du?",
+              "Wie heißt du?",
+              "Wer bist du?"
+            ],
+            "gabarito": "Woher kommst du?",
+            "explicacao": "«Woher» means \"where from\". It asks about origin, and starts «voh-HEHR». Careful: «Wer», which looks like \"where\", means \"who\".",
+            "id": "de-002-e40"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Sie sind aus Berlin.",
+            "opcoes": [
+              "Sie sind aus Berlin.",
+              "Sie ist aus Berlin.",
+              "Wir sind aus Berlin."
+            ],
+            "gabarito": "Sie sind aus Berlin.",
+            "explicacao": "You hear «zee zint»: with plural «sie», or formal «Sie», the form is «sind». In «Sie ist» you'd hear «zee ist».",
+            "id": "de-002-e41"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Wie heißen Sie?",
+            "opcoes": [
+              "Wie heißen Sie?",
+              "Wie heißt du?",
+              "Woher kommen Sie?"
+            ],
+            "gabarito": "Wie heißen Sie?",
+            "explicacao": "The question about the name ends in «zee», the formal address. With «du» it would end «heißt du».",
+            "id": "de-002-e42"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ich heiße Anna.",
+            "respostaEsperada": "Ich heiße Anna.",
+            "explicacao": "Write «Ich» and «heiße», with «ß». The verb goes in second position, right after «ich».",
+            "id": "de-002-e43"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Guten Tag! Wie heißen Sie?",
+            "respostaEsperada": "Guten Tag! Wie heißen Sie?",
+            "explicacao": "Good morning! What's your name, please?",
+            "id": "de-002-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Wir sind glücklich.",
+            "respostaEsperada": "Wir sind glücklich.",
+            "explicacao": "Write «Wir» with «w» (it sounds like an English «v») and «sind» with a «d» at the end. «Glücklich» has an «ü» and ends with the soft «ch».",
+            "id": "de-002-e44"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write 4 sentences: your name, where you're from, your nationality and how you are.",
+            "respostaEsperada": "Ich heiße Anna. Ich komme aus Kanada. Ich bin Kanadierin. Ich bin glücklich.",
+            "id": "de-002-e45"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write how you ask a stranger their name and where they're from, using «Sie».",
+            "respostaEsperada": "Wie heißen Sie? Woher kommen Sie?",
+            "id": "de-002-e46"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write 3 sentences about someone you know: their name, where they're from and which language they speak.",
+            "respostaEsperada": "Sie heißt Emma. Sie kommt aus England. Sie spricht Englisch.",
+            "id": "de-002-e47"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Record yourself for about 30 seconds: «Hallo! Ich heiße … Ich komme aus … Ich bin … Ich spreche … Freut mich!». Then record the formal version, for a stranger: «Guten Tag! Ich heiße … Woher kommen Sie?»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 2,
+        "enunciado": "Listen again to the dialogue «Wer bist du?» from the last session and repeat each line out loud, copying the rhythm and intonation."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-002.json",
+  "responsavel": null
+}
