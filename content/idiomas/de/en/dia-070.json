@@ -1,0 +1,153 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 70,
+  "fase": 7,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Free time, weather and hobbies: Weather and seasons",
+  "objetivo": "Lesson 18, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 18,
+    "titulo": "Free time, weather and hobbies",
+    "objetivo": "Talk about your hobbies and what you prefer (gern, lieber, am liebsten), describe the weather and the seasons, and make plans for the weekend.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Weather and seasons",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "das Wetter",
+            "translit": "dahs VET-er",
+            "pt": "weather",
+            "en": "weather",
+            "audio": "das Wetter"
+          },
+          {
+            "ru": "der Regen",
+            "translit": "dehr REH-gen",
+            "pt": "rain",
+            "en": "rain",
+            "audio": "der Regen"
+          },
+          {
+            "ru": "der Schnee",
+            "translit": "dehr SHNEH",
+            "pt": "snow",
+            "en": "snow",
+            "audio": "der Schnee"
+          },
+          {
+            "ru": "der Wind",
+            "translit": "dehr VINT",
+            "pt": "wind",
+            "en": "wind",
+            "audio": "der Wind"
+          },
+          {
+            "ru": "die Wolke",
+            "translit": "dee VOL-keh",
+            "pt": "cloud",
+            "en": "cloud",
+            "audio": "die Wolke"
+          },
+          {
+            "ru": "kühl",
+            "translit": "KÜHL",
+            "pt": "cool",
+            "en": "cool",
+            "audio": "kühl"
+          },
+          {
+            "ru": "die Temperatur",
+            "translit": "dee tem-peh-rah-TOOR",
+            "pt": "temperature",
+            "en": "temperature",
+            "audio": "die Temperatur"
+          },
+          {
+            "ru": "das Grad",
+            "translit": "dahs GRAHT",
+            "pt": "degree",
+            "en": "degree",
+            "audio": "das Grad"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Talking about the weather: the impersonal «es», step by step",
+        "explicacao": "STEP 1: ask «Wie ist das Wetter?» (What's the weather like?) STEP 2: for rain and snow, German uses the verb with «es»: «Es regnet» (it's raining), «Es schneit» (it's snowing). The «es» is required and doesn't refer to anything — exactly like English \"it\". STEP 3: with adjectives: «Es ist warm / kalt / heiß / kühl / windig / sonnig / bewölkt» (it's warm / cold / hot / cool / windy / sunny / cloudy). STEP 4: temperature, in Celsius: «Es sind zwanzig Grad» (it's 20 degrees, about 68 °F) — note the plural «sind». STEP 5: the seasons are der words and take «im»: «im Frühling», «im Sommer», «im Herbst», «im Winter» (in spring, summer, fall, winter): «Im Sommer ist es heiß.» STEP 6: to say you feel cold, German says «Mir ist kalt» — \"to me it is cold\". «Ich bin kalt» would mean you're a cold person!",
+        "tabela": [
+          {
+            "frase": "Es regnet.",
+            "pt": "It's raining."
+          },
+          {
+            "frase": "Es schneit.",
+            "pt": "It's snowing."
+          },
+          {
+            "frase": "Es ist sonnig und warm.",
+            "pt": "It's sunny and warm."
+          },
+          {
+            "frase": "Es ist kalt und windig.",
+            "pt": "It's cold and windy."
+          },
+          {
+            "frase": "Es sind zwanzig Grad.",
+            "pt": "It's twenty degrees (Celsius)."
+          },
+          {
+            "frase": "Im Winter ist es kalt.",
+            "pt": "It's cold in winter."
+          },
+          {
+            "frase": "Mir ist kalt.",
+            "pt": "I'm cold."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Regnet.",
+            "certo": "Es regnet.",
+            "motivo": "The impersonal «es» is missing — like \"it\" in \"it's raining\"."
+          },
+          {
+            "errado": "Ich bin kalt.",
+            "certo": "Mir ist kalt.",
+            "motivo": "For how you feel, say «Mir ist kalt», not «ich bin» — that would mean you're a cold person."
+          },
+          {
+            "errado": "In Sommer ist es heiß.",
+            "certo": "Im Sommer ist es heiß.",
+            "motivo": "Season: «im»."
+          }
+        ],
+        "tag": "Time"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe today's weather, and each season where you live."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 4 sentences with «gern», «nicht gern», «lieber» and «am liebsten»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-018.json",
+  "responsavel": null
+}
