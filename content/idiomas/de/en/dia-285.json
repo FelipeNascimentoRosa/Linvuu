@@ -1,0 +1,150 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 285,
+  "fase": 29,
+  "nivel": "b2",
+  "status": "publicada",
+  "titulo": "Indirect speech 1: dass, ob, sollen and Konjunktiv I: Reporting with dass and with normal word order",
+  "objetivo": "Lesson 72, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 72,
+    "titulo": "Indirect speech 1: dass, ob, sollen and Konjunktiv I",
+    "objetivo": "Report what someone else said with «dass» and with normal word order, turn questions and orders into reported speech (ob, W-questions, sollen) and recognise the Konjunktiv I (er sei, er habe, er komme) in the news.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Reporting with dass and with normal word order",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "sagen",
+            "translit": "ZAH-gen",
+            "pt": "to say",
+            "en": "to say",
+            "audio": "sagen"
+          },
+          {
+            "ru": "fragen",
+            "translit": "FRAH-gen",
+            "pt": "to ask",
+            "en": "to ask",
+            "audio": "fragen"
+          },
+          {
+            "ru": "behaupten",
+            "translit": "buh-HOWP-ten",
+            "pt": "to claim",
+            "en": "to claim",
+            "audio": "behaupten"
+          },
+          {
+            "ru": "berichten",
+            "translit": "buh-RIKH-ten",
+            "pt": "to report",
+            "en": "to report",
+            "audio": "berichten"
+          },
+          {
+            "ru": "mitteilen",
+            "translit": "MIT-tye-len",
+            "pt": "to inform, to tell",
+            "en": "to inform",
+            "audio": "mitteilen"
+          },
+          {
+            "ru": "meinen",
+            "translit": "MY-nen",
+            "pt": "to think, to mean",
+            "en": "to think",
+            "audio": "meinen"
+          },
+          {
+            "ru": "erwidern",
+            "translit": "air-VEE-dern",
+            "pt": "to reply",
+            "en": "to reply",
+            "audio": "erwidern"
+          },
+          {
+            "ru": "zugeben",
+            "translit": "TSOO-gay-ben",
+            "pt": "to admit",
+            "en": "to admit",
+            "audio": "zugeben"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "Reported speech, step by step",
+        "explicacao": "STEP 1: in DIRECT SPEECH you repeat someone's words in quotation marks: «Er sagt: „Ich bin müde.\"» (German opens quotes at the bottom: „ … \"). In REPORTED SPEECH you REPORT what the person said: «Er sagt, dass er müde ist.» STEP 2: with «DASS» + verb at the end, or with NORMAL WORD ORDER (no «dass»), just as English can drop \"that\": «Er sagt, er ist müde.» STEP 3: the PRONOUNS change depending on who speaks and who listens: «ich» → «er»: «Ich bin müde» → «Er sagt, dass er müde ist.» STEP 4: the TENSE stays the same in conversation: present stays present, Perfekt stays Perfekt: «Er sagt: „Ich habe gearbeitet.\" → Er sagt, dass er gearbeitet hat.» Big difference from English: German does NOT backshift. English \"he said he WAS tired\" is «er hat gesagt, dass er müde IST». STEP 5: YES/NO QUESTIONS: «ob» (= \"if/whether\"; never «wenn»): «Er fragt: „Hast du Zeit?\" → Er fragt, ob ich Zeit habe.» STEP 6: QUESTIONS with a question word: keep the word: «Er fragt: „Wo wohnst du?\" → Er fragt, wo ich wohne.» STEP 7: ORDERS: «sollen»: «Er sagt: „Komm!\" → Er sagt, ich soll kommen» (English \"he tells me to come\").",
+        "comparacao": "English uses «that» (often dropped) and «if/whether» for questions, and usually shifts the tense back. German uses «dass» and «ob» with the verb at the end (or normal word order without «dass») — and in conversation keeps the original tense.",
+        "tabela": [
+          {
+            "direto": "Er sagt: „Ich bin müde.\"",
+            "indireto": "Er sagt, dass er müde ist. / Er sagt, er ist müde."
+          },
+          {
+            "direto": "Sie sagt: „Ich habe gearbeitet.\"",
+            "indireto": "Sie sagt, dass sie gearbeitet hat."
+          },
+          {
+            "direto": "Er fragt: „Hast du Zeit?\"",
+            "indireto": "Er fragt, ob ich Zeit habe."
+          },
+          {
+            "direto": "Er fragt: „Wo wohnst du?\"",
+            "indireto": "Er fragt, wo ich wohne."
+          },
+          {
+            "direto": "Er sagt: „Komm!\"",
+            "indireto": "Er sagt, ich soll kommen."
+          },
+          {
+            "direto": "Sie sagt: „Ich komme morgen.\"",
+            "indireto": "Sie sagt, dass sie morgen kommt."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Er sagt, dass ich bin müde.",
+            "certo": "Er sagt, dass er müde ist.",
+            "motivo": "The pronoun changes and the verb goes to the end."
+          },
+          {
+            "errado": "Er fragt, hast du Zeit.",
+            "certo": "Er fragt, ob ich Zeit habe.",
+            "motivo": "Yes/no question: «ob» (\"if/whether\")."
+          },
+          {
+            "errado": "Er sagt, komm!",
+            "certo": "Er sagt, ich soll kommen.",
+            "motivo": "Reported order: «sollen» (English \"tells me to …\")."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Report 6 sentences other people said, out loud: «Er sagt, dass … Sie fragt, ob … Er sagt, ich soll …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 sentences with the Futur II and modal particles."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-072.json",
+  "responsavel": null
+}

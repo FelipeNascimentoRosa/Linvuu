@@ -1,0 +1,155 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 286,
+  "fase": 29,
+  "nivel": "b2",
+  "status": "publicada",
+  "titulo": "Indirect speech 1: dass, ob, sollen and Konjunktiv I: Konjunktiv I (to recognise)",
+  "objetivo": "Lesson 72, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 72,
+    "titulo": "Indirect speech 1: dass, ob, sollen and Konjunktiv I",
+    "objetivo": "Report what someone else said with «dass» and with normal word order, turn questions and orders into reported speech (ob, W-questions, sollen) and recognise the Konjunktiv I (er sei, er habe, er komme) in the news.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Konjunktiv I (to recognise)",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "er sei",
+            "translit": "air zye",
+            "pt": "he is / be (Konj. I)",
+            "en": "he is (reported)",
+            "audio": "er sei"
+          },
+          {
+            "ru": "er habe",
+            "translit": "air HAH-beh",
+            "pt": "he has / have (Konj. I)",
+            "en": "he has (reported)",
+            "audio": "er habe"
+          },
+          {
+            "ru": "er komme",
+            "translit": "air KOM-meh",
+            "pt": "he comes / come (Konj. I)",
+            "en": "he comes (reported)",
+            "audio": "er komme"
+          },
+          {
+            "ru": "er gehe",
+            "translit": "air GAY-eh",
+            "pt": "he goes / go (Konj. I)",
+            "en": "he goes (reported)",
+            "audio": "er gehe"
+          },
+          {
+            "ru": "er könne",
+            "translit": "air KÖ-neh",
+            "pt": "he can (Konj. I)",
+            "en": "he can (reported)",
+            "audio": "er könne"
+          },
+          {
+            "ru": "er müsse",
+            "translit": "air MÜ-seh",
+            "pt": "he must (Konj. I)",
+            "en": "he must (reported)",
+            "audio": "er müsse"
+          },
+          {
+            "ru": "er wolle",
+            "translit": "air VOL-leh",
+            "pt": "he wants (Konj. I)",
+            "en": "he wants (reported)",
+            "audio": "er wolle"
+          },
+          {
+            "ru": "die Zeitung",
+            "translit": "dee TSY-toong",
+            "pt": "newspaper",
+            "en": "newspaper",
+            "audio": "die Zeitung"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "The Konjunktiv I, step by step",
+        "explicacao": "STEP 1: the KONJUNKTIV I is the form used in the NEWS and formal texts to report what someone said, without claiming it is true: «Der Minister sagte, er sei krank» — English needs \"allegedly\" or \"he said that…\" to get the same distance. STEP 2: in CONVERSATION, people use the indicative («dass er krank ist») or the Konjunktiv II («er wäre krank»); the Konjunktiv I is something to RECOGNISE when reading. STEP 3: form: STEM + «-e» in the 3rd person singular: er komme, er gehe, er habe, er könne, er müsse, er wolle. It looks like the English subjunctive \"that he BE\", \"that he COME\" — no -s. STEP 4: «SEIN» is the only verb with its own complete set: ich sei, du seist, er sei, wir seien, ihr seiet, sie seien. STEP 5: when the Konjunktiv I looks the same as the indicative (e.g. plural «sie haben»), the Konjunktiv II is used instead: «sie hätten». STEP 6: the meaning is «according to him, … ».",
+        "tabela": [
+          {
+            "infinitivo": "sein",
+            "konjI": "er sei",
+            "frase": "Er sagte, er sei krank."
+          },
+          {
+            "infinitivo": "haben",
+            "konjI": "er habe",
+            "frase": "Er sagte, er habe keine Zeit."
+          },
+          {
+            "infinitivo": "kommen",
+            "konjI": "er komme",
+            "frase": "Sie sagte, sie komme morgen."
+          },
+          {
+            "infinitivo": "gehen",
+            "konjI": "er gehe",
+            "frase": "Er sagte, er gehe nach Hause."
+          },
+          {
+            "infinitivo": "können",
+            "konjI": "er könne",
+            "frase": "Er sagte, er könne nicht kommen."
+          },
+          {
+            "infinitivo": "müssen",
+            "konjI": "er müsse",
+            "frase": "Er sagte, er müsse arbeiten."
+          },
+          {
+            "infinitivo": "wollen",
+            "konjI": "er wolle",
+            "frase": "Er sagte, er wolle reisen."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Er sagte, dass er sei krank.",
+            "certo": "Er sagte, er sei krank. / Er sagte, dass er krank sei.",
+            "motivo": "Konjunktiv I: either without «dass», or with «dass» and the verb at the end."
+          },
+          {
+            "errado": "Er sagte, er kommt. (in a formal text)",
+            "certo": "Er sagte, er komme.",
+            "motivo": "In the press, prefer the Konjunktiv I."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Read out loud 6 news sentences in the Konjunktiv I and say what they mean: «Er sagte, er sei krank → according to him, he is ill.»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 sentences in reported speech, with dass, ob and sollen."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-072.json",
+  "responsavel": null
+}

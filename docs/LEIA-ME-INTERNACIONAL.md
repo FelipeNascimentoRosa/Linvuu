@@ -27,7 +27,7 @@ Medido no repositório em 11/11/2026 (`ls content/idiomas/<id>/en`). Confira ant
 | Francês `fr` | 248/248 | completo, indexável | travado (curado à mão) |
 | Português p/ estrangeiros `br` | 248/248 (escrito em inglês) | completo, indexável | travado |
 | Espanhol `es` | 128/248 | parcial: nota de cobertura, fora do sitemap | travado o que existe |
-| Alemão `de` | 284/288 (aulas 1–71) | parcial: nota de cobertura, fora do sitemap | travado o que existe |
+| Alemão `de` | 288/288 | completo, indexável (desde 12/11) | travado |
 | Italiano `it` | 0/248 | parcial: nota de cobertura, fora do sitemap | — |
 
 Gramáticas em inglês servidas: `ru.en.json`, `fr.en.json`, `es.en.json`, `br.json` (travadas).
@@ -73,7 +73,7 @@ Fontes permitidas: FSI/DLI/Peace Corps (domínio público) como base; Wikibooks 
 3. **I4 — 30 dúvidas de russo em inglês** (páginas de busca para quem pesquisa em inglês), a partir de `ru.en.json`.
 4. **D14 — página da aula** (`/curso/ru/dia/1`): coluna estreita, título em serifa estranha, progresso invisível.
 5. **D13 — `/gramatica` (índice) no sitemap do .com** e título com palavra-chave em inglês.
-6. **Alemão** (284 sessões) e **italiano** (248) em inglês — depois do espanhol.
+6. **Alemão concluído (288/288, 12/11).** Falta o **italiano** (248) em inglês — depois do espanhol.
 7. **Compra real em USD de ponta a ponta** (lote 3): webhook, acesso à sessão 9, reembolso.
 
 ## 7. Plano do alemão em inglês (o curso mais vazio do .com)
