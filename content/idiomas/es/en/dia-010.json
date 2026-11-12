@@ -26,42 +26,42 @@
         "itens": [
           {
             "ru": "Brasil, brasileño",
-            "translit": "[pronuncia] brah-SEEL, brah-see-LEH-nyo",
+            "translit": "brah-SEEL, brah-see-LEH-nyo",
             "pt": "Brazil, Brazilian",
             "en": "",
             "audio": "Brasil, brasileño"
           },
           {
             "ru": "España, español",
-            "translit": "[pronuncia] es-PAH-nyah, es-pah-NYOL",
+            "translit": "es-PAH-nyah, es-pah-NYOL",
             "pt": "Spain, Spanish",
             "en": "",
             "audio": "España, español"
           },
           {
             "ru": "Portugal, portugués",
-            "translit": "[pronuncia] por-too-GAL, por-too-GESS",
+            "translit": "por-too-GAL, por-too-GESS",
             "pt": "Portugal, Portuguese",
             "en": "",
             "audio": "Portugal, portugués"
           },
           {
             "ru": "México, mexicano",
-            "translit": "[pronuncia] MEH-hee-ko, meh-hee-KAH-no",
+            "translit": "MEH-hee-ko, meh-hee-KAH-no",
             "pt": "Mexico, Mexican",
             "en": "",
             "audio": "México, mexicano"
           },
           {
             "ru": "Argentina, argentino",
-            "translit": "[pronuncia] ar-hen-TEE-nah, ar-hen-TEE-no",
+            "translit": "ar-hen-TEE-nah, ar-hen-TEE-no",
             "pt": "Argentina, Argentinian",
             "en": "",
             "audio": "Argentina, argentino"
           },
           {
             "ru": "Estados Unidos, estadounidense",
-            "translit": "[pronuncia] es-TAH-dos oo-NEE-dos, es-tah-do-oo-nee-DEN-seh",
+            "translit": "es-TAH-dos oo-NEE-dos, es-tah-do-oo-nee-DEN-seh",
             "pt": "United States, American (from the US)",
             "en": "",
             "audio": "Estados Unidos, estadounidense"
@@ -76,65 +76,65 @@
         "comparacao": "English uses «in» for both cities and countries («in Madrid», «in Brazil»), so «en» without an article is actually simpler than Spanish's own rules for «el, la» elsewhere — the real novelty is the feminine of «español», «francés» and «alemán»: you add «-a» and the accent mark disappears («francesa», «alemana»), which has no equivalent in English adjectives at all.",
         "tabela": [
           {
-            "pais": "[misto] España",
-            "masculino": "[misto] español",
-            "feminino": "[misto] española"
+            "pais": "España",
+            "masculino": "español",
+            "feminino": "española"
           },
           {
-            "pais": "[misto] Brasil",
-            "masculino": "[misto] brasileño",
-            "feminino": "[misto] brasileña"
+            "pais": "Brasil",
+            "masculino": "brasileño",
+            "feminino": "brasileña"
           },
           {
-            "pais": "[misto] Portugal",
-            "masculino": "[misto] portugués",
-            "feminino": "[misto] portuguesa"
+            "pais": "Portugal",
+            "masculino": "portugués",
+            "feminino": "portuguesa"
           },
           {
-            "pais": "[misto] Francia",
-            "masculino": "[misto] francés",
-            "feminino": "[misto] francesa"
+            "pais": "Francia",
+            "masculino": "francés",
+            "feminino": "francesa"
           },
           {
-            "pais": "[misto] Alemania",
-            "masculino": "[misto] alemán",
-            "feminino": "[misto] alemana"
+            "pais": "Alemania",
+            "masculino": "alemán",
+            "feminino": "alemana"
           },
           {
-            "pais": "[misto] Italia",
-            "masculino": "[misto] italiano",
-            "feminino": "[misto] italiana"
+            "pais": "Italia",
+            "masculino": "italiano",
+            "feminino": "italiana"
           },
           {
-            "pais": "[misto] México",
-            "masculino": "[misto] mexicano",
-            "feminino": "[misto] mexicana"
+            "pais": "México",
+            "masculino": "mexicano",
+            "feminino": "mexicana"
           },
           {
-            "pais": "[misto] Estados Unidos",
-            "masculino": "[misto] estadounidense",
-            "feminino": "[misto] estadounidense"
+            "pais": "Estados Unidos",
+            "masculino": "estadounidense",
+            "feminino": "estadounidense"
           }
         ],
         "erros": [
           {
-            "errado": "[misto] Vivo no Brasil.",
-            "certo": "[misto] Vivo en Brasil.",
+            "errado": "Vivo no Brasil.",
+            "certo": "Vivo en Brasil.",
             "motivo": "Spanish has no separate word for «in»; it just uses «en» with no article."
           },
           {
-            "errado": "[misto] Ella es español.",
-            "certo": "[misto] Ella es española.",
+            "errado": "Ella es español.",
+            "certo": "Ella es española.",
             "motivo": "The nationality agrees with gender."
           },
           {
-            "errado": "[misto] Soy Brasileño.",
-            "certo": "[misto] Soy brasileño.",
+            "errado": "Soy Brasileño.",
+            "certo": "Soy brasileño.",
             "motivo": "Nationalities are written lowercase."
           },
           {
-            "errado": "[misto] Soy de Brasil y vivo de Madrid.",
-            "certo": "[misto] Soy de Brasil y vivo en Madrid.",
+            "errado": "Soy de Brasil y vivo de Madrid.",
+            "certo": "Soy de Brasil y vivo en Madrid.",
             "motivo": "«De» shows origin; for where you live, use «en»."
           }
         ],

@@ -26,42 +26,42 @@
         "itens": [
           {
             "ru": "el tío",
-            "translit": "[misto] el tío",
+            "translit": "el tío",
             "pt": "the uncle",
             "en": "",
             "audio": "el tío"
           },
           {
             "ru": "la tía",
-            "translit": "[misto] la tía",
+            "translit": "la tía",
             "pt": "the aunt",
             "en": "",
             "audio": "la tía"
           },
           {
             "ru": "el primo",
-            "translit": "[pronuncia] el PREE-mo",
+            "translit": "el PREE-mo",
             "pt": "the cousin (male)",
             "en": "",
             "audio": "el primo"
           },
           {
             "ru": "la prima",
-            "translit": "[pronuncia] la PREE-mah",
+            "translit": "la PREE-mah",
             "pt": "the cousin (female)",
             "en": "",
             "audio": "la prima"
           },
           {
             "ru": "el marido",
-            "translit": "[pronuncia] el mah-REE-do",
+            "translit": "el mah-REE-do",
             "pt": "the husband",
             "en": "",
             "audio": "el marido"
           },
           {
             "ru": "la mujer",
-            "translit": "[pronuncia] la moo-HEHR",
+            "translit": "la moo-HEHR",
             "pt": "the wife; the woman",
             "en": "",
             "audio": "la mujer"
@@ -102,66 +102,66 @@
         ],
         "tabela": [
           {
-            "pessoa": "[misto] yo",
-            "singular": "[misto] mi",
-            "plural": "[misto] mis",
-            "exemplo": "[misto] mi hermano, mis hermanos"
+            "pessoa": "yo",
+            "singular": "mi",
+            "plural": "mis",
+            "exemplo": "mi hermano, mis hermanos"
           },
           {
-            "pessoa": "[misto] tú",
-            "singular": "[misto] tu",
-            "plural": "[misto] tus",
-            "exemplo": "[misto] tu casa, tus casas"
+            "pessoa": "tú",
+            "singular": "tu",
+            "plural": "tus",
+            "exemplo": "tu casa, tus casas"
           },
           {
-            "pessoa": "[misto] él, ella, usted",
-            "singular": "[misto] su",
-            "plural": "[misto] sus",
-            "exemplo": "[misto] su padre, sus padres"
+            "pessoa": "él, ella, usted",
+            "singular": "su",
+            "plural": "sus",
+            "exemplo": "su padre, sus padres"
           },
           {
-            "pessoa": "[misto] nosotros",
-            "singular": "[misto] nuestro, nuestra",
-            "plural": "[misto] nuestros, nuestras",
-            "exemplo": "[misto] nuestra casa, nuestros libros"
+            "pessoa": "nosotros",
+            "singular": "nuestro, nuestra",
+            "plural": "nuestros, nuestras",
+            "exemplo": "nuestra casa, nuestros libros"
           },
           {
-            "pessoa": "[misto] vosotros (Spain)",
-            "singular": "[misto] vuestro, vuestra",
-            "plural": "[misto] vuestros, vuestras",
-            "exemplo": "[misto] vuestro coche, vuestras amigas"
+            "pessoa": "vosotros (Spain)",
+            "singular": "vuestro, vuestra",
+            "plural": "vuestros, vuestras",
+            "exemplo": "vuestro coche, vuestras amigas"
           },
           {
-            "pessoa": "[misto] ellos, ellas, ustedes",
-            "singular": "[misto] su",
-            "plural": "[misto] sus",
-            "exemplo": "[misto] su casa, sus casas"
+            "pessoa": "ellos, ellas, ustedes",
+            "singular": "su",
+            "plural": "sus",
+            "exemplo": "su casa, sus casas"
           }
         ],
         "erros": [
           {
-            "errado": "[misto] El mi libro",
-            "certo": "[misto] Mi libro",
+            "errado": "El mi libro",
+            "certo": "Mi libro",
             "motivo": "A possessive before the noun doesn't take an article."
           },
           {
-            "errado": "[misto] Mi hermanas",
-            "certo": "[misto] Mis hermanas",
+            "errado": "Mi hermanas",
+            "certo": "Mis hermanas",
             "motivo": "The possessive agrees in number with the thing possessed."
           },
           {
-            "errado": "[misto] Nuestro casa",
-            "certo": "[misto] Nuestra casa",
+            "errado": "Nuestro casa",
+            "certo": "Nuestra casa",
             "motivo": "«Nuestro» agrees in gender with «casa»."
           },
           {
-            "errado": "[misto] Tú casa es grande.",
-            "certo": "[misto] Tu casa es grande.",
+            "errado": "Tú casa es grande.",
+            "certo": "Tu casa es grande.",
             "motivo": "The possessive carries no accent mark."
           },
           {
-            "errado": "[misto] Ella vive con sus madre.",
-            "certo": "[misto] Ella vive con su madre.",
+            "errado": "Ella vive con sus madre.",
+            "certo": "Ella vive con su madre.",
             "motivo": "Just one mother: singular."
           }
         ],

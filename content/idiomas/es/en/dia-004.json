@@ -29,11 +29,11 @@
             "enunciado": "Listen and choose.",
             "audio": "jamón",
             "opcoes": [
-              "[misto] jamón",
-              "[misto] camón",
-              "[misto] gamón"
+              "jamón",
+              "camón",
+              "gamón"
             ],
-            "gabarito": "[misto] jamón",
+            "gabarito": "jamón",
             "explicacao": "Listen to the «j», a rough h.",
             "id": "es-001-e10"
           },
@@ -42,11 +42,11 @@
             "enunciado": "Listen and choose.",
             "audio": "perro",
             "opcoes": [
-              "[misto] pero",
-              "[misto] perro",
-              "[misto] pelo"
+              "pero",
+              "perro",
+              "pelo"
             ],
-            "gabarito": "[misto] perro",
+            "gabarito": "perro",
             "explicacao": "Listen to the rolled «rr» of «perro».",
             "id": "es-001-e11"
           },
@@ -55,11 +55,11 @@
             "enunciado": "Listen and choose.",
             "audio": "buenas tardes",
             "opcoes": [
-              "[misto] buenas tardes",
-              "[misto] buenos días",
-              "[misto] buenas noches"
+              "buenas tardes",
+              "buenos días",
+              "buenas noches"
             ],
-            "gabarito": "[misto] buenas tardes",
+            "gabarito": "buenas tardes",
             "explicacao": "Listen to «tardes» and the final «s».",
             "id": "es-001-e12"
           },
@@ -91,11 +91,11 @@
             "tipo": "multiple-choice",
             "enunciado": "How do you read «jamón»?",
             "opcoes": [
-              "[misto] hah-MOHN",
-              "[misto] djamón",
-              "[misto] zamón"
+              "hah-MOHN",
+              "djamón",
+              "zamón"
             ],
-            "gabarito": "[misto] hah-MOHN",
+            "gabarito": "hah-MOHN",
             "explicacao": "The «j» sounds like a rough, throaty h.",
             "id": "es-001-e16"
           },
@@ -112,11 +112,11 @@
             "tipo": "multiple-choice",
             "enunciado": "Which of these words needs an accent mark?",
             "opcoes": [
-              "[misto] cafe → café",
-              "[misto] casa → cása",
-              "[misto] mesa → mesá"
+              "cafe → café",
+              "casa → cása",
+              "mesa → mesá"
             ],
-            "gabarito": "[misto] cafe → café",
+            "gabarito": "cafe → café",
             "explicacao": "It ends in a vowel, but the stress falls on the last syllable.",
             "id": "es-001-e17"
           },
@@ -124,11 +124,11 @@
             "tipo": "multiple-choice",
             "enunciado": "With a stranger, which question do you use?",
             "opcoes": [
-              "[misto] ¿Cómo está usted?",
-              "[misto] ¿Cómo estás?",
-              "[misto] ¿Cómo eres?"
+              "¿Cómo está usted?",
+              "¿Cómo estás?",
+              "¿Cómo eres?"
             ],
-            "gabarito": "[misto] ¿Cómo está usted?",
+            "gabarito": "¿Cómo está usted?",
             "explicacao": "With strangers, you use «usted».",
             "id": "es-001-e18"
           },
@@ -136,11 +136,11 @@
             "tipo": "fill-gap",
             "enunciado": "___ días. (good morning)",
             "opcoes": [
-              "[misto] Buenos",
-              "[misto] Buenas",
-              "[misto] Bueno"
+              "Buenos",
+              "Buenas",
+              "Bueno"
             ],
-            "gabarito": "[misto] Buenos",
+            "gabarito": "Buenos",
             "explicacao": "«Días» is masculine plural: «buenos días».",
             "id": "es-001-e19"
           },
@@ -148,11 +148,11 @@
             "tipo": "fill-gap",
             "enunciado": "___ tardes. (good afternoon)",
             "opcoes": [
-              "[misto] Buenas",
-              "[misto] Buenos",
-              "[misto] Buena"
+              "Buenas",
+              "Buenos",
+              "Buena"
             ],
-            "gabarito": "[misto] Buenas",
+            "gabarito": "Buenas",
             "explicacao": "«Tardes» is feminine plural: «buenas tardes».",
             "id": "es-001-e20"
           },
@@ -160,11 +160,11 @@
             "tipo": "fill-gap",
             "enunciado": "Muy bien, ___ . (thank you)",
             "opcoes": [
-              "[misto] gracias",
-              "[pronuncia] ah-dee-OHS",
-              "[misto] hola"
+              "gracias",
+              "ah-dee-OHS",
+              "hola"
             ],
-            "gabarito": "[misto] gracias",
+            "gabarito": "gracias",
             "explicacao": "«Gracias» is how you say thanks.",
             "id": "es-001-e21"
           },
@@ -172,11 +172,11 @@
             "tipo": "fill-gap",
             "enunciado": "Gracias. — De ___ . (you're welcome)",
             "opcoes": [
-              "[misto] nada",
-              "[misto] favor",
-              "[misto] luego"
+              "nada",
+              "favor",
+              "luego"
             ],
-            "gabarito": "[misto] nada",
+            "gabarito": "nada",
             "explicacao": "«De nada» answers «gracias».",
             "id": "es-001-e22"
           },
@@ -216,18 +216,18 @@
           {
             "tipo": "producao",
             "enunciado": "Write in Spanish: good afternoon, thank you and see you soon.",
-            "respostaEsperada": "[misto] Buenas tardes. Gracias. Hasta luego.",
+            "respostaEsperada": "Buenas tardes. Gracias. Hasta luego.",
             "id": "es-001-e25"
           },
           {
             "tipo": "fill-gap",
             "enunciado": "¿Cómo ___? (you, informal)",
             "opcoes": [
-              "[misto] está",
-              "[misto] estás",
-              "[misto] estar"
+              "está",
+              "estás",
+              "estar"
             ],
-            "gabarito": "[misto] estás",
+            "gabarito": "estás",
             "explicacao": "With «tú», the verb ends in «-s»: «¿Cómo estás?».",
             "id": "es-001-e26"
           },
@@ -235,11 +235,11 @@
             "tipo": "fill-gap",
             "enunciado": "Buenas ___. (good night)",
             "opcoes": [
-              "[misto] días",
-              "[misto] tardes",
-              "[misto] noches"
+              "días",
+              "tardes",
+              "noches"
             ],
-            "gabarito": "[misto] noches",
+            "gabarito": "noches",
             "explicacao": "«Buenas noches» works both when arriving and when saying goodbye at night.",
             "id": "es-001-e27"
           },
@@ -247,11 +247,11 @@
             "tipo": "fill-gap",
             "enunciado": "El ___ es delicioso. (the cheese)",
             "opcoes": [
-              "[misto] queso",
-              "[misto] keso",
-              "[misto] quiso"
+              "queso",
+              "keso",
+              "quiso"
             ],
-            "gabarito": "[misto] queso",
+            "gabarito": "queso",
             "explicacao": "The «k» sound before «e» is written «qu»: «queso».",
             "id": "es-001-e28"
           },
@@ -259,11 +259,11 @@
             "tipo": "fill-gap",
             "enunciado": "La ___ es larga. (the street)",
             "opcoes": [
-              "[misto] caye",
-              "[misto] calle",
-              "[misto] calhe"
+              "caye",
+              "calle",
+              "calhe"
             ],
-            "gabarito": "[misto] calle",
+            "gabarito": "calle",
             "explicacao": "The «ll» sound is written with two «l»'s: «calle».",
             "id": "es-001-e29"
           },
@@ -271,11 +271,11 @@
             "tipo": "multiple-choice",
             "enunciado": "How do you read «gente»?",
             "opcoes": [
-              "[misto] hénte",
-              "[misto] guênte",
-              "[misto] djênte"
+              "hénte",
+              "guênte",
+              "djênte"
             ],
-            "gabarito": "[misto] hénte",
+            "gabarito": "hénte",
             "explicacao": "The «g» before «e» sounds like a rough h, never like an English «j».",
             "id": "es-001-e30"
           },
@@ -283,11 +283,11 @@
             "tipo": "multiple-choice",
             "enunciado": "What's the reply to «Gracias»?",
             "opcoes": [
-              "[misto] Por favor.",
-              "[misto] De nada.",
-              "[misto] Hasta luego."
+              "Por favor.",
+              "De nada.",
+              "Hasta luego."
             ],
-            "gabarito": "[misto] De nada.",
+            "gabarito": "De nada.",
             "explicacao": "«De nada» is the reply to a «thank you».",
             "id": "es-001-e31"
           },
@@ -304,11 +304,11 @@
             "tipo": "multiple-choice",
             "enunciado": "Which word is written with the correct accent?",
             "opcoes": [
-              "[misto] telefono",
-              "[misto] telefóno",
-              "[misto] teléfono"
+              "telefono",
+              "telefóno",
+              "teléfono"
             ],
-            "gabarito": "[misto] teléfono",
+            "gabarito": "teléfono",
             "explicacao": "The stressed syllable is «le»; since it breaks the rule, it carries an accent mark.",
             "id": "es-001-e32"
           },
@@ -341,13 +341,13 @@
           {
             "tipo": "producao",
             "enunciado": "Write in Spanish: Nice to meet you. See you soon.",
-            "respostaEsperada": "[misto] Mucho gusto. Hasta luego.",
+            "respostaEsperada": "Mucho gusto. Hasta luego.",
             "id": "es-001-e35"
           },
           {
             "tipo": "producao",
             "enunciado": "Write in Spanish: How are you? (informal) Very well, thank you.",
-            "respostaEsperada": "[misto] ¿Cómo estás? Muy bien, gracias.",
+            "respostaEsperada": "¿Cómo estás? Muy bien, gracias.",
             "id": "es-001-e36"
           },
           {
@@ -355,11 +355,11 @@
             "enunciado": "Listen and choose.",
             "audio": "Hasta luego",
             "opcoes": [
-              "[misto] Hasta luego",
-              "[misto] Adiós",
-              "[misto] Buenas noches"
+              "Hasta luego",
+              "Adiós",
+              "Buenas noches"
             ],
-            "gabarito": "[misto] Hasta luego",
+            "gabarito": "Hasta luego",
             "explicacao": "Listen to the silent «h» of «hasta» and the hard «g» of «luego».",
             "id": "es-001-e37"
           },
@@ -368,11 +368,11 @@
             "enunciado": "Listen and choose.",
             "audio": "Mucho gusto",
             "opcoes": [
-              "[misto] Mucho gusto",
-              "[misto] Muchas gracias",
-              "[misto] Muy bien"
+              "Mucho gusto",
+              "Muchas gracias",
+              "Muy bien"
             ],
-            "gabarito": "[misto] Mucho gusto",
+            "gabarito": "Mucho gusto",
             "explicacao": "Listen to the «ch» of «mucho» and the hard «g» of «gusto».",
             "id": "es-001-e38"
           },
@@ -381,11 +381,11 @@
             "enunciado": "Listen and choose.",
             "audio": "¿Cómo estás?",
             "opcoes": [
-              "[misto] ¿Cómo estás?",
-              "[misto] ¿Cómo está usted?",
-              "[misto] ¿Cómo está?"
+              "¿Cómo estás?",
+              "¿Cómo está usted?",
+              "¿Cómo está?"
             ],
-            "gabarito": "[misto] ¿Cómo estás?",
+            "gabarito": "¿Cómo estás?",
             "explicacao": "Listen to the final «s»: that's «tú». Without it, it would be the «usted» form.",
             "id": "es-001-e39"
           },
@@ -403,11 +403,11 @@
             "enunciado": "Listen and choose.",
             "audio": "Muy bien, gracias",
             "opcoes": [
-              "[misto] Muy bien, gracias",
-              "[misto] Muchas gracias",
-              "[misto] Muy buenas tardes"
+              "Muy bien, gracias",
+              "Muchas gracias",
+              "Muy buenas tardes"
             ],
-            "gabarito": "[misto] Muy bien, gracias",
+            "gabarito": "Muy bien, gracias",
             "explicacao": "Listen to «bien» and «gracias» with the «th» (or «s») sound in «gracias».",
             "id": "es-001-e40"
           },
@@ -416,11 +416,11 @@
             "enunciado": "Listen and choose.",
             "audio": "De nada",
             "opcoes": [
-              "[misto] De nada",
-              "[misto] Por favor",
-              "[misto] Mucho gusto"
+              "De nada",
+              "Por favor",
+              "Mucho gusto"
             ],
-            "gabarito": "[misto] De nada",
+            "gabarito": "De nada",
             "explicacao": "It's the reply to a «gracias».",
             "id": "es-001-e41"
           },
@@ -444,11 +444,11 @@
             "tipo": "fill-gap",
             "enunciado": "Hola. ¿Cómo ___ usted? (is)",
             "opcoes": [
-              "[misto] está",
-              "[misto] estás",
-              "[misto] eres"
+              "está",
+              "estás",
+              "eres"
             ],
-            "gabarito": "[misto] está",
+            "gabarito": "está",
             "explicacao": "With «usted», the verb doesn't take «-s»: «está».",
             "id": "es-001-e44"
           },
@@ -456,11 +456,11 @@
             "tipo": "fill-gap",
             "enunciado": "Mucho ___. (pleasure, i.e. nice to meet you)",
             "opcoes": [
-              "[misto] gusto",
-              "[misto] gracias",
-              "[misto] luego"
+              "gusto",
+              "gracias",
+              "luego"
             ],
-            "gabarito": "[misto] gusto",
+            "gabarito": "gusto",
             "explicacao": "«Mucho gusto» is the set phrase for «nice to meet you».",
             "id": "es-001-e45"
           },
@@ -468,11 +468,11 @@
             "tipo": "fill-gap",
             "enunciado": "___ luego. (see you soon)",
             "opcoes": [
-              "[misto] Hasta",
-              "[misto] Adiós",
-              "[misto] Hola"
+              "Hasta",
+              "Adiós",
+              "Hola"
             ],
-            "gabarito": "[misto] Hasta",
+            "gabarito": "Hasta",
             "explicacao": "«Hasta luego» is the most common goodbye between people who'll see each other again.",
             "id": "es-001-e46"
           }

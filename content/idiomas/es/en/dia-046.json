@@ -26,14 +26,14 @@
         "itens": [
           {
             "ru": "venir",
-            "translit": "[pronuncia] beh-NEER",
+            "translit": "beh-NEER",
             "pt": "to come",
             "en": "",
             "audio": "venir"
           },
           {
             "ru": "decir",
-            "translit": "[pronuncia] deh-THEER",
+            "translit": "deh-THEER",
             "pt": "to say, to tell",
             "en": "",
             "audio": "decir"
@@ -47,21 +47,21 @@
           },
           {
             "ru": "ver",
-            "translit": "[pronuncia] behr",
+            "translit": "behr",
             "pt": "to see",
             "en": "",
             "audio": "ver"
           },
           {
             "ru": "saber",
-            "translit": "[pronuncia] sah-BEHR",
+            "translit": "sah-BEHR",
             "pt": "to know",
             "en": "",
             "audio": "saber"
           },
           {
             "ru": "el regalo",
-            "translit": "[pronuncia] el reh-GAH-lo",
+            "translit": "el reh-GAH-lo",
             "pt": "the gift, the birthday present",
             "en": "",
             "audio": "el regalo"
@@ -101,34 +101,34 @@
             "titulo": "venir and decir",
             "linhas": [
               {
-                "pronome": "[misto] yo",
-                "venir": "[misto] vengo",
-                "decir": "[misto] digo"
+                "pronome": "yo",
+                "venir": "vengo",
+                "decir": "digo"
               },
               {
-                "pronome": "[misto] tú",
-                "venir": "[misto] vienes",
-                "decir": "[misto] dices"
+                "pronome": "tú",
+                "venir": "vienes",
+                "decir": "dices"
               },
               {
-                "pronome": "[misto] él / ella / usted",
-                "venir": "[misto] viene",
-                "decir": "[misto] dice"
+                "pronome": "él / ella / usted",
+                "venir": "viene",
+                "decir": "dice"
               },
               {
-                "pronome": "[misto] nosotros",
-                "venir": "[misto] venimos",
-                "decir": "[misto] decimos"
+                "pronome": "nosotros",
+                "venir": "venimos",
+                "decir": "decimos"
               },
               {
-                "pronome": "[misto] vosotros",
-                "venir": "[misto] venís",
-                "decir": "[misto] decís"
+                "pronome": "vosotros",
+                "venir": "venís",
+                "decir": "decís"
               },
               {
-                "pronome": "[misto] ellos, ustedes",
-                "venir": "[misto] vienen",
-                "decir": "[misto] dicen"
+                "pronome": "ellos, ustedes",
+                "venir": "vienen",
+                "decir": "dicen"
               }
             ]
           },
@@ -136,68 +136,68 @@
             "titulo": "dar, ver and saber",
             "linhas": [
               {
-                "pronome": "[misto] yo",
-                "dar": "[misto] doy",
-                "ver": "[misto] veo",
-                "saber": "[misto] sé"
+                "pronome": "yo",
+                "dar": "doy",
+                "ver": "veo",
+                "saber": "sé"
               },
               {
-                "pronome": "[misto] tú",
-                "dar": "[misto] das",
-                "ver": "[misto] ves",
-                "saber": "[misto] sabes"
+                "pronome": "tú",
+                "dar": "das",
+                "ver": "ves",
+                "saber": "sabes"
               },
               {
-                "pronome": "[misto] él / ella / usted",
-                "dar": "[misto] da",
-                "ver": "[misto] ve",
-                "saber": "[misto] sabe"
+                "pronome": "él / ella / usted",
+                "dar": "da",
+                "ver": "ve",
+                "saber": "sabe"
               },
               {
-                "pronome": "[misto] nosotros",
-                "dar": "[misto] damos",
-                "ver": "[misto] vemos",
-                "saber": "[misto] sabemos"
+                "pronome": "nosotros",
+                "dar": "damos",
+                "ver": "vemos",
+                "saber": "sabemos"
               },
               {
-                "pronome": "[misto] vosotros",
-                "dar": "[misto] dais",
-                "ver": "[misto] veis",
-                "saber": "[misto] sabéis"
+                "pronome": "vosotros",
+                "dar": "dais",
+                "ver": "veis",
+                "saber": "sabéis"
               },
               {
-                "pronome": "[misto] ellos, ustedes",
-                "dar": "[misto] dan",
-                "ver": "[misto] ven",
-                "saber": "[misto] saben"
+                "pronome": "ellos, ustedes",
+                "dar": "dan",
+                "ver": "ven",
+                "saber": "saben"
               }
             ]
           }
         ],
         "erros": [
           {
-            "errado": "[misto] Yo sabo cocinar.",
-            "certo": "[misto] Yo sé cocinar.",
+            "errado": "Yo sabo cocinar.",
+            "certo": "Yo sé cocinar.",
             "motivo": "«Saber» has the irregular form «sé» in «yo»."
           },
           {
-            "errado": "[misto] Tú viene hoy.",
-            "certo": "[misto] Tú vienes hoy.",
+            "errado": "Tú viene hoy.",
+            "certo": "Tú vienes hoy.",
             "motivo": "With «tú», the form is «vienes»."
           },
           {
-            "errado": "[misto] Yo da un regalo.",
-            "certo": "[misto] Yo doy un regalo.",
+            "errado": "Yo da un regalo.",
+            "certo": "Yo doy un regalo.",
             "motivo": "The «yo» form of «dar» is «doy»."
           },
           {
-            "errado": "[misto] Tú dis la verdad.",
-            "certo": "[misto] Tú dices la verdad.",
+            "errado": "Tú dis la verdad.",
+            "certo": "Tú dices la verdad.",
             "motivo": "With «tú», the form is «dices»."
           },
           {
-            "errado": "[misto] Yo se la respuesta.",
-            "certo": "[misto] Yo sé la respuesta.",
+            "errado": "Yo se la respuesta.",
+            "certo": "Yo sé la respuesta.",
             "motivo": "«Sé» (from saber) carries an accent mark; «se» with no accent is a different word."
           }
         ],

@@ -26,35 +26,35 @@
         "itens": [
           {
             "ru": "profesor, profesora",
-            "translit": "[pronuncia] pro-feh-SOR, pro-feh-SO-rah",
+            "translit": "pro-feh-SOR, pro-feh-SO-rah",
             "pt": "teacher",
             "en": "",
             "audio": "profesor, profesora"
           },
           {
             "ru": "estudiante",
-            "translit": "[pronuncia] es-too-DYAN-teh",
+            "translit": "es-too-DYAN-teh",
             "pt": "student",
             "en": "",
             "audio": "estudiante"
           },
           {
             "ru": "médico, médica",
-            "translit": "[pronuncia] MEH-dee-ko, MEH-dee-kah",
+            "translit": "MEH-dee-ko, MEH-dee-kah",
             "pt": "doctor",
             "en": "",
             "audio": "médico, médica"
           },
           {
             "ru": "ingeniero, ingeniera",
-            "translit": "[pronuncia] een-heh-NYEH-ro, een-heh-NYEH-rah",
+            "translit": "een-heh-NYEH-ro, een-heh-NYEH-rah",
             "pt": "engineer",
             "en": "",
             "audio": "ingeniero, ingeniera"
           },
           {
             "ru": "camarero, camarera",
-            "translit": "[pronuncia] kah-mah-REH-ro, kah-mah-REH-rah",
+            "translit": "kah-mah-REH-ro, kah-mah-REH-rah",
             "pt": "waiter, waitress",
             "en": "",
             "audio": "camarero, camarera"
@@ -72,29 +72,29 @@
             "titulo": "Professions: masculine and feminine",
             "linhas": [
               {
-                "terminacao": "[misto] -o → -a",
-                "masculino": "[misto] médico",
-                "feminino": "[misto] médica"
+                "terminacao": "-o → -a",
+                "masculino": "médico",
+                "feminino": "médica"
               },
               {
-                "terminacao": "[misto] -or → -ora",
-                "masculino": "[misto] profesor",
-                "feminino": "[misto] profesora"
+                "terminacao": "-or → -ora",
+                "masculino": "profesor",
+                "feminino": "profesora"
               },
               {
-                "terminacao": "[misto] -ero → -era",
-                "masculino": "[misto] camarero",
-                "feminino": "[misto] camarera"
+                "terminacao": "-ero → -era",
+                "masculino": "camarero",
+                "feminino": "camarera"
               },
               {
-                "terminacao": "[misto] -e (no change)",
-                "masculino": "[misto] estudiante",
-                "feminino": "[misto] estudiante"
+                "terminacao": "-e (no change)",
+                "masculino": "estudiante",
+                "feminino": "estudiante"
               },
               {
-                "terminacao": "[misto] -ista (no change)",
-                "masculino": "[misto] periodista",
-                "feminino": "[misto] periodista"
+                "terminacao": "-ista (no change)",
+                "masculino": "periodista",
+                "feminino": "periodista"
               }
             ]
           },
@@ -102,47 +102,47 @@
             "titulo": "Questions with ser",
             "linhas": [
               {
-                "pergunta": "[misto] ¿Quién eres?",
-                "significado": "[misto] who are you?",
-                "resposta": "[misto] Soy Pablo."
+                "pergunta": "¿Quién eres?",
+                "significado": "who are you?",
+                "resposta": "Soy Pablo."
               },
               {
-                "pergunta": "[misto] ¿Qué es?",
-                "significado": "[misto] what is it?",
-                "resposta": "[misto] Es un hotel."
+                "pergunta": "¿Qué es?",
+                "significado": "what is it?",
+                "resposta": "Es un hotel."
               },
               {
-                "pergunta": "[misto] ¿Cómo es Ana?",
-                "significado": "[misto] what's Ana like?",
-                "resposta": "[misto] Es muy simpática."
+                "pergunta": "¿Cómo es Ana?",
+                "significado": "what's Ana like?",
+                "resposta": "Es muy simpática."
               },
               {
-                "pergunta": "[misto] ¿Eres médico?",
-                "significado": "[misto] are you a doctor?",
-                "resposta": "[misto] Sí, soy médico."
+                "pergunta": "¿Eres médico?",
+                "significado": "are you a doctor?",
+                "resposta": "Sí, soy médico."
               }
             ]
           }
         ],
         "erros": [
           {
-            "errado": "[misto] Ella es profesor.",
-            "certo": "[misto] Ella es profesora.",
+            "errado": "Ella es profesor.",
+            "certo": "Ella es profesora.",
             "motivo": "The profession agrees with gender."
           },
           {
-            "errado": "[misto] Ella es estudianta.",
-            "certo": "[misto] Ella es estudiante.",
+            "errado": "Ella es estudianta.",
+            "certo": "Ella es estudiante.",
             "motivo": "Words ending in «-e» don't change for gender."
           },
           {
-            "errado": "[misto] Eres profesora?",
-            "certo": "[misto] ¿Eres profesora?",
+            "errado": "Eres profesora?",
+            "certo": "¿Eres profesora?",
             "motivo": "The question opens with «¿»."
           },
           {
-            "errado": "[misto] Ellos son camareras.",
-            "certo": "[misto] Ellos son camareros.",
+            "errado": "Ellos son camareras.",
+            "certo": "Ellos son camareros.",
             "motivo": "A group of men uses the masculine."
           }
         ],
@@ -159,56 +159,56 @@
             "ru": "— Buenos días. Soy Marta y soy profesora. ¿Y tú?",
             "pt": "— Good morning. I'm Marta and I'm a teacher. And you?",
             "audio": "Buenos días. Soy Marta y soy profesora. ¿Y tú?",
-            "rotulo": "[personagem] La profesora"
+            "rotulo": "La profesora"
           },
           {
             "personagem": "Pablo",
             "ru": "— Soy Pablo y soy estudiante. Ella es Sofía.",
             "pt": "— I'm Pablo and I'm a student. This is Sofía.",
             "audio": "Soy Pablo y soy estudiante. Ella es Sofía.",
-            "rotulo": "[personagem] Pablo"
+            "rotulo": "Pablo"
           },
           {
             "personagem": "Sofía",
             "ru": "— Hola. No soy estudiante, soy ingeniera.",
             "pt": "— Hi. I'm not a student, I'm an engineer.",
             "audio": "Hola. No soy estudiante, soy ingeniera.",
-            "rotulo": "[personagem] Sofía"
+            "rotulo": "Sofía"
           },
           {
             "personagem": "La profesora",
             "ru": "— ¿Eres ingeniera? ¡Qué bien!",
             "pt": "— You're an engineer? Great!",
             "audio": "¿Eres ingeniera? ¡Qué bien!",
-            "rotulo": "[personagem] La profesora"
+            "rotulo": "La profesora"
           },
           {
             "personagem": "Pablo",
             "ru": "— Sofía es muy inteligente.",
             "pt": "— Sofía is very intelligent.",
             "audio": "Sofía es muy inteligente.",
-            "rotulo": "[personagem] Pablo"
+            "rotulo": "Pablo"
           },
           {
             "personagem": "Sofía",
             "ru": "— Gracias, Pablo. Tú eres muy simpático.",
             "pt": "— Thank you, Pablo. You're very nice.",
             "audio": "Gracias, Pablo. Tú eres muy simpático.",
-            "rotulo": "[personagem] Sofía"
+            "rotulo": "Sofía"
           },
           {
             "personagem": "La profesora",
             "ru": "— Ustedes son muy simpáticos.",
             "pt": "— You're all very nice.",
             "audio": "Ustedes son muy simpáticos.",
-            "rotulo": "[personagem] La profesora"
+            "rotulo": "La profesora"
           },
           {
             "personagem": "Pablo",
             "ru": "— Gracias, profesora. Mucho gusto.",
             "pt": "— Thank you, teacher. Nice to meet you.",
             "audio": "Gracias, profesora. Mucho gusto.",
-            "rotulo": "[personagem] Pablo"
+            "rotulo": "Pablo"
           }
         ]
       },
@@ -221,11 +221,11 @@
             "enunciado": "Listen and choose.",
             "audio": "Ella es médica",
             "opcoes": [
-              "[misto] Ella es médica",
-              "[misto] Ellas son médicas",
-              "[misto] Ella es médico"
+              "Ella es médica",
+              "Ellas son médicas",
+              "Ella es médico"
             ],
-            "gabarito": "[misto] Ella es médica",
+            "gabarito": "Ella es médica",
             "explicacao": "Listen to «es» (one person) and the final «-a» (feminine).",
             "id": "es-002-e01"
           },
@@ -234,11 +234,11 @@
             "enunciado": "Listen and choose.",
             "audio": "¿Quién es él?",
             "opcoes": [
-              "[misto] ¿Quién es él?",
-              "[misto] ¿Quién eres?",
-              "[misto] ¿Cómo es él?"
+              "¿Quién es él?",
+              "¿Quién eres?",
+              "¿Cómo es él?"
             ],
-            "gabarito": "[misto] ¿Quién es él?",
+            "gabarito": "¿Quién es él?",
             "explicacao": "Listen to «quién»: it asks who the person is.",
             "id": "es-002-e02"
           },
@@ -247,11 +247,11 @@
             "enunciado": "Listen and choose.",
             "audio": "Eres muy simpático",
             "opcoes": [
-              "[misto] Eres muy simpático",
-              "[misto] Es muy simpático",
-              "[misto] Soy muy simpático"
+              "Eres muy simpático",
+              "Es muy simpático",
+              "Soy muy simpático"
             ],
-            "gabarito": "[misto] Eres muy simpático",
+            "gabarito": "Eres muy simpático",
             "explicacao": "Listen to «eres»: it's the «tú» form.",
             "id": "es-002-e03"
           },
@@ -267,11 +267,11 @@
             "tipo": "fill-gap",
             "enunciado": "Pablo ___ estudiante. (is)",
             "opcoes": [
-              "[misto] es",
-              "[misto] eres",
-              "[misto] son"
+              "es",
+              "eres",
+              "son"
             ],
-            "gabarito": "[misto] es",
+            "gabarito": "es",
             "explicacao": "Pablo is «él»: the form is «es».",
             "id": "es-002-e05"
           },
@@ -279,11 +279,11 @@
             "tipo": "fill-gap",
             "enunciado": "Ella es ___ . (doctor)",
             "opcoes": [
-              "[misto] médica",
-              "[misto] médico",
-              "[misto] médicas"
+              "médica",
+              "médico",
+              "médicas"
             ],
-            "gabarito": "[misto] médica",
+            "gabarito": "médica",
             "explicacao": "A singular feminine subject needs «médica».",
             "id": "es-002-e06"
           },
@@ -291,11 +291,11 @@
             "tipo": "multiple-choice",
             "enunciado": "What's the feminine of «camarero»?",
             "opcoes": [
-              "[misto] camarera",
-              "[misto] camarero",
-              "[misto] camarea"
+              "camarera",
+              "camarero",
+              "camarea"
             ],
-            "gabarito": "[misto] camarera",
+            "gabarito": "camarera",
             "explicacao": "In «-ero», the feminine is «-era».",
             "id": "es-002-e07"
           },
@@ -303,11 +303,11 @@
             "tipo": "multiple-choice",
             "enunciado": "Which question means «What's Pablo like?»",
             "opcoes": [
-              "[misto] ¿Cómo es Pablo?",
-              "[misto] ¿Quién es Pablo?",
-              "[misto] ¿Qué es Pablo?"
+              "¿Cómo es Pablo?",
+              "¿Quién es Pablo?",
+              "¿Qué es Pablo?"
             ],
-            "gabarito": "[misto] ¿Cómo es Pablo?",
+            "gabarito": "¿Cómo es Pablo?",
             "explicacao": "«Cómo» asks what someone's like; «quién» asks who they are.",
             "id": "es-002-e08"
           }

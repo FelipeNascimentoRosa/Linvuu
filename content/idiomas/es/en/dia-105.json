@@ -26,56 +26,56 @@
         "itens": [
           {
             "ru": "mañana",
-            "translit": "[pronuncia] mah-NYAH-na",
+            "translit": "mah-NYAH-na",
             "pt": "tomorrow",
             "en": "",
             "audio": "mañana"
           },
           {
             "ru": "pasado mañana",
-            "translit": "[pronuncia] pah-SAH-do mah-NYAH-na",
+            "translit": "pah-SAH-do mah-NYAH-na",
             "pt": "the day after tomorrow",
             "en": "",
             "audio": "pasado mañana"
           },
           {
             "ru": "la semana que viene",
-            "translit": "[pronuncia] la seh-MAH-na keh BYEH-neh",
+            "translit": "la seh-MAH-na keh BYEH-neh",
             "pt": "next week",
             "en": "",
             "audio": "la semana que viene"
           },
           {
             "ru": "el año que viene",
-            "translit": "[pronuncia] el AH-nyo keh BYEH-neh",
+            "translit": "el AH-nyo keh BYEH-neh",
             "pt": "next year",
             "en": "",
             "audio": "el año que viene"
           },
           {
             "ru": "dentro de dos días",
-            "translit": "[pronuncia] DEN-tro deh dos DEE-as",
+            "translit": "DEN-tro deh dos DEE-as",
             "pt": "two days from now",
             "en": "",
             "audio": "dentro de dos días"
           },
           {
             "ru": "en el futuro",
-            "translit": "[pronuncia] en el foo-TOO-ro",
+            "translit": "en el foo-TOO-ro",
             "pt": "in the future",
             "en": "",
             "audio": "en el futuro"
           },
           {
             "ru": "algún día",
-            "translit": "[pronuncia] al-GOON DEE-a",
+            "translit": "al-GOON DEE-a",
             "pt": "someday",
             "en": "",
             "audio": "algún día"
           },
           {
             "ru": "pronto",
-            "translit": "[pronuncia] PRON-to",
+            "translit": "PRON-to",
             "pt": "soon",
             "en": "",
             "audio": "pronto"
@@ -111,63 +111,63 @@
             "titulo": "Regular future",
             "linhas": [
               {
-                "pronome": "[misto] yo",
-                "hablar": "[misto] hablaré",
-                "comer": "[misto] comeré",
-                "vivir": "[misto] viviré"
+                "pronome": "yo",
+                "hablar": "hablaré",
+                "comer": "comeré",
+                "vivir": "viviré"
               },
               {
-                "pronome": "[misto] tú",
-                "hablar": "[misto] hablarás",
-                "comer": "[misto] comerás",
-                "vivir": "[misto] vivirás"
+                "pronome": "tú",
+                "hablar": "hablarás",
+                "comer": "comerás",
+                "vivir": "vivirás"
               },
               {
-                "pronome": "[misto] él / ella / usted",
-                "hablar": "[misto] hablará",
-                "comer": "[misto] comerá",
-                "vivir": "[misto] vivirá"
+                "pronome": "él / ella / usted",
+                "hablar": "hablará",
+                "comer": "comerá",
+                "vivir": "vivirá"
               },
               {
-                "pronome": "[misto] nosotros, nosotras",
-                "hablar": "[misto] hablaremos",
-                "comer": "[misto] comeremos",
-                "vivir": "[misto] viviremos"
+                "pronome": "nosotros, nosotras",
+                "hablar": "hablaremos",
+                "comer": "comeremos",
+                "vivir": "viviremos"
               },
               {
-                "pronome": "[misto] vosotros, vosotras",
-                "hablar": "[misto] hablaréis",
-                "comer": "[misto] comeréis",
-                "vivir": "[misto] viviréis"
+                "pronome": "vosotros, vosotras",
+                "hablar": "hablaréis",
+                "comer": "comeréis",
+                "vivir": "viviréis"
               },
               {
-                "pronome": "[misto] ellos, ellas, ustedes",
-                "hablar": "[misto] hablarán",
-                "comer": "[misto] comerán",
-                "vivir": "[misto] vivirán"
+                "pronome": "ellos, ellas, ustedes",
+                "hablar": "hablarán",
+                "comer": "comerán",
+                "vivir": "vivirán"
               }
             ]
           }
         ],
         "erros": [
           {
-            "errado": "[misto] Hablerás español.",
-            "certo": "[misto] Hablarás español.",
+            "errado": "Hablerás español.",
+            "certo": "Hablarás español.",
             "motivo": "The future keeps the whole infinitive: hablar + ás."
           },
           {
-            "errado": "[misto] Si mañana lloverá, no saldré.",
-            "certo": "[misto] Si mañana llueve, no saldré.",
+            "errado": "Si mañana lloverá, no saldré.",
+            "certo": "Si mañana llueve, no saldré.",
             "motivo": "After «si», use the present, never the future."
           },
           {
-            "errado": "[misto] Yo hablaré, tú hablarás, él hablara.",
-            "certo": "[misto] Yo hablaré, tú hablarás, él hablará.",
+            "errado": "Yo hablaré, tú hablarás, él hablara.",
+            "certo": "Yo hablaré, tú hablarás, él hablará.",
             "motivo": "The «él» form takes an accent: «hablará»."
           },
           {
-            "errado": "[misto] Nosotros hablaramos.",
-            "certo": "[misto] Nosotros hablaremos.",
+            "errado": "Nosotros hablaramos.",
+            "certo": "Nosotros hablaremos.",
             "motivo": "The «nosotros» ending is «-emos» for all three groups."
           }
         ],

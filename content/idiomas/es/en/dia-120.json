@@ -29,11 +29,11 @@
             "enunciado": "Listen and choose.",
             "audio": "Estoy leyendo un libro",
             "opcoes": [
-              "[misto] Estoy leyendo un libro",
-              "[misto] Estoy leyendo un libre",
-              "[misto] Estoy viendo un libro"
+              "Estoy leyendo un libro",
+              "Estoy leyendo un libre",
+              "Estoy viendo un libro"
             ],
-            "gabarito": "[misto] Estoy leyendo un libro",
+            "gabarito": "Estoy leyendo un libro",
             "explicacao": "Listen for «leyendo»: the gerund of «leer» has a «y».",
             "id": "es-030-e01"
           },
@@ -42,11 +42,11 @@
             "enunciado": "Listen and choose.",
             "audio": "Voy a cenar dentro de media hora",
             "opcoes": [
-              "[misto] Voy a cenar dentro de media hora",
-              "[misto] Acabo de cenar dentro de media hora",
-              "[misto] Estoy cenando dentro de media hora"
+              "Voy a cenar dentro de media hora",
+              "Acabo de cenar dentro de media hora",
+              "Estoy cenando dentro de media hora"
             ],
-            "gabarito": "[misto] Voy a cenar dentro de media hora",
+            "gabarito": "Voy a cenar dentro de media hora",
             "explicacao": "Listen for «voy a»: the near future.",
             "id": "es-030-e02"
           },
@@ -55,11 +55,11 @@
             "enunciado": "Listen and choose.",
             "audio": "Acabo de llegar a casa",
             "opcoes": [
-              "[misto] Acabo de llegar a casa",
-              "[misto] Voy a llegar a casa",
-              "[misto] Estoy llegando a casa"
+              "Acabo de llegar a casa",
+              "Voy a llegar a casa",
+              "Estoy llegando a casa"
             ],
-            "gabarito": "[misto] Acabo de llegar a casa",
+            "gabarito": "Acabo de llegar a casa",
             "explicacao": "Listen for «acabo de»: the recent past.",
             "id": "es-030-e03"
           },
@@ -113,11 +113,11 @@
             "tipo": "multiple-choice",
             "enunciado": "What's the gerund of «decir»?",
             "opcoes": [
-              "[misto] diciendo",
-              "[misto] deciendo",
-              "[misto] dijendo"
+              "diciendo",
+              "deciendo",
+              "dijendo"
             ],
-            "gabarito": "[misto] diciendo",
+            "gabarito": "diciendo",
             "explicacao": "The «e» of the stem becomes «i»: diciendo.",
             "id": "es-030-e07"
           },
@@ -125,11 +125,11 @@
             "tipo": "multiple-choice",
             "enunciado": "What's the gerund of «leer»?",
             "opcoes": [
-              "[misto] leyendo",
-              "[misto] leiendo",
-              "[misto] leendo"
+              "leyendo",
+              "leiendo",
+              "leendo"
             ],
-            "gabarito": "[misto] leyendo",
+            "gabarito": "leyendo",
             "explicacao": "Between vowels, the «i» becomes «y».",
             "id": "es-030-e08"
           },
@@ -137,11 +137,11 @@
             "tipo": "multiple-choice",
             "enunciado": "How do you say «I'm going to eat»?",
             "opcoes": [
-              "[misto] Voy a comer.",
-              "[misto] Voy comer.",
-              "[misto] Voy de comer."
+              "Voy a comer.",
+              "Voy comer.",
+              "Voy de comer."
             ],
-            "gabarito": "[misto] Voy a comer.",
+            "gabarito": "Voy a comer.",
             "explicacao": "The preposition «a» is required.",
             "id": "es-030-e09"
           },
@@ -158,11 +158,11 @@
             "tipo": "multiple-choice",
             "enunciado": "How do you say «I just arrived»?",
             "opcoes": [
-              "[misto] Acabo de llegar.",
-              "[misto] Acabé de llegar.",
-              "[misto] Voy a llegar."
+              "Acabo de llegar.",
+              "Acabé de llegar.",
+              "Voy a llegar."
             ],
-            "gabarito": "[misto] Acabo de llegar.",
+            "gabarito": "Acabo de llegar.",
             "explicacao": "The verb «acabar» stays in the present.",
             "id": "es-030-e10"
           },
@@ -170,11 +170,11 @@
             "tipo": "multiple-choice",
             "enunciado": "What does «Mi hermana está embarazada» mean?",
             "opcoes": [
-              "[misto] My sister is pregnant.",
-              "[misto] My sister is embarrassed.",
-              "[misto] My sister has a cold."
+              "My sister is pregnant.",
+              "My sister is embarrassed.",
+              "My sister has a cold."
             ],
-            "gabarito": "[misto] My sister is pregnant.",
+            "gabarito": "My sister is pregnant.",
             "explicacao": "«Embarazada» means pregnant; embarrassed is «avergonzada».",
             "id": "es-030-e11"
           },
@@ -182,11 +182,11 @@
             "tipo": "multiple-choice",
             "enunciado": "Which word means \"dinner\"?",
             "opcoes": [
-              "[misto] la cena",
-              "[misto] la escena",
-              "[misto] el almuerzo"
+              "la cena",
+              "la escena",
+              "el almuerzo"
             ],
-            "gabarito": "[misto] la cena",
+            "gabarito": "la cena",
             "explicacao": "«Escena» is a movie scene.",
             "id": "es-030-e12"
           },
@@ -203,11 +203,11 @@
             "tipo": "fill-gap",
             "enunciado": "Ahora mismo ___ cocinando. (yo, estar)",
             "opcoes": [
-              "[misto] estoy",
-              "[misto] voy",
-              "[misto] acabo"
+              "estoy",
+              "voy",
+              "acabo"
             ],
-            "gabarito": "[misto] estoy",
+            "gabarito": "estoy",
             "explicacao": "«Estar» + gerund describes an action in progress.",
             "id": "es-030-e13"
           },
@@ -236,11 +236,11 @@
             "tipo": "fill-gap",
             "enunciado": "Mañana ___ a viajar. (nosotros, ir)",
             "opcoes": [
-              "[misto] vamos",
-              "[misto] vais",
-              "[misto] vamos de"
+              "vamos",
+              "vais",
+              "vamos de"
             ],
-            "gabarito": "[misto] vamos",
+            "gabarito": "vamos",
             "explicacao": "«Vamos a» + infinitive: near future.",
             "id": "es-030-e14"
           },
@@ -248,11 +248,11 @@
             "tipo": "fill-gap",
             "enunciado": "Ella ___ de salir. (acabar, present)",
             "opcoes": [
-              "[misto] acaba",
-              "[misto] acabó",
-              "[misto] acabará"
+              "acaba",
+              "acabó",
+              "acabará"
             ],
-            "gabarito": "[misto] acaba",
+            "gabarito": "acaba",
             "explicacao": "With «acabar de», the verb stays in the present.",
             "id": "es-030-e15"
           },
@@ -260,11 +260,11 @@
             "tipo": "fill-gap",
             "enunciado": "Me ___ duchando. (estar)",
             "opcoes": [
-              "[misto] estoy",
-              "[misto] voy",
-              "[misto] estás"
+              "estoy",
+              "voy",
+              "estás"
             ],
-            "gabarito": "[misto] estoy",
+            "gabarito": "estoy",
             "explicacao": "Pronoun + «estar» + gerund.",
             "id": "es-030-e16"
           },
@@ -317,18 +317,18 @@
           {
             "tipo": "producao",
             "enunciado": "Write in Spanish: I just got home and I'm going to cook now.",
-            "respostaEsperada": "[misto] Acabo de llegar y voy a cocinar ahora.",
+            "respostaEsperada": "Acabo de llegar y voy a cocinar ahora.",
             "id": "es-030-e19"
           },
           {
             "tipo": "fill-gap",
             "enunciado": "Ella está ___ una carta. (escribir)",
             "opcoes": [
-              "[misto] escribendo",
-              "[misto] escribiendo",
-              "[misto] escribando"
+              "escribendo",
+              "escribiendo",
+              "escribando"
             ],
-            "gabarito": "[misto] escribiendo",
+            "gabarito": "escribiendo",
             "explicacao": "Gerund of -ir verbs: «-iendo».",
             "id": "es-030-e20"
           },
@@ -336,11 +336,11 @@
             "tipo": "fill-gap",
             "enunciado": "Ellos ___ de salir. (acabar)",
             "opcoes": [
-              "[misto] acaban",
-              "[misto] acabo",
-              "[misto] acaba"
+              "acaban",
+              "acabo",
+              "acaba"
             ],
-            "gabarito": "[misto] acaban",
+            "gabarito": "acaban",
             "explicacao": "«Acabar de» + infinitive; with «ellos», it's «acaban».",
             "id": "es-030-e21"
           },
@@ -369,11 +369,11 @@
             "tipo": "fill-gap",
             "enunciado": "Mañana nosotros ___ a viajar a Sevilla. (ir)",
             "opcoes": [
-              "[misto] vais",
-              "[misto] vamos",
-              "[misto] voy"
+              "vais",
+              "vamos",
+              "voy"
             ],
-            "gabarito": "[misto] vamos",
+            "gabarito": "vamos",
             "explicacao": "With «nosotros», «ir» becomes «vamos».",
             "id": "es-030-e22"
           },
@@ -381,11 +381,11 @@
             "tipo": "fill-gap",
             "enunciado": "Estoy a ___ de salir. (about to)",
             "opcoes": [
-              "[misto] pronto",
-              "[misto] punto",
-              "[misto] pondo"
+              "pronto",
+              "punto",
+              "pondo"
             ],
-            "gabarito": "[misto] punto",
+            "gabarito": "punto",
             "explicacao": "«Estar a punto de» + infinitive means to be about to.",
             "id": "es-030-e23"
           },
@@ -393,11 +393,11 @@
             "tipo": "multiple-choice",
             "enunciado": "What's the gerund of «pedir»?",
             "opcoes": [
-              "[misto] pediendo",
-              "[misto] pidiendo",
-              "[misto] pedindo"
+              "pediendo",
+              "pidiendo",
+              "pedindo"
             ],
-            "gabarito": "[misto] pidiendo",
+            "gabarito": "pidiendo",
             "explicacao": "The stem's «e» becomes «i»: «pidiendo».",
             "id": "es-030-e24"
           },
@@ -414,11 +414,11 @@
             "tipo": "multiple-choice",
             "enunciado": "Which sentence shows the near future?",
             "opcoes": [
-              "[misto] Voy a cenar.",
-              "[misto] Estoy cenando.",
-              "[misto] Acabo de cenar."
+              "Voy a cenar.",
+              "Estoy cenando.",
+              "Acabo de cenar."
             ],
-            "gabarito": "[misto] Voy a cenar.",
+            "gabarito": "Voy a cenar.",
             "explicacao": "«Ir a» + infinitive is the near future.",
             "id": "es-030-e25"
           },
@@ -435,11 +435,11 @@
             "tipo": "multiple-choice",
             "enunciado": "Which word means \"movie scene\"?",
             "opcoes": [
-              "[misto] la cena",
-              "[misto] la escena",
-              "[misto] la cola"
+              "la cena",
+              "la escena",
+              "la cola"
             ],
-            "gabarito": "[misto] la escena",
+            "gabarito": "la escena",
             "explicacao": "«Cena» means dinner; a movie scene is «escena».",
             "id": "es-030-e26"
           },
@@ -475,13 +475,13 @@
           {
             "tipo": "producao",
             "enunciado": "Write in Spanish: We're looking at the movie listings.",
-            "respostaEsperada": "[misto] Estamos mirando la cartelera.",
+            "respostaEsperada": "Estamos mirando la cartelera.",
             "id": "es-030-e29"
           },
           {
             "tipo": "producao",
             "enunciado": "Write in Spanish: I just ate and I'm going to study.",
-            "respostaEsperada": "[misto] Acabo de comer y voy a estudiar.",
+            "respostaEsperada": "Acabo de comer y voy a estudiar.",
             "id": "es-030-e30"
           }
         ]

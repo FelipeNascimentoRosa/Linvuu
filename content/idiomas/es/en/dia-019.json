@@ -26,56 +26,56 @@
         "itens": [
           {
             "ru": "hay",
-            "translit": "[pronuncia] eye",
+            "translit": "eye",
             "pt": "there is, there are",
             "en": "",
             "audio": "hay"
           },
           {
             "ru": "no hay",
-            "translit": "[pronuncia] no eye",
+            "translit": "no eye",
             "pt": "there isn't, there aren't",
             "en": "",
             "audio": "no hay"
           },
           {
             "ru": "¿Hay…?",
-            "translit": "[pronuncia] eye",
+            "translit": "eye",
             "pt": "is there…? are there…?",
             "en": "",
             "audio": "¿Hay…?"
           },
           {
             "ru": "el parque",
-            "translit": "[pronuncia] el PAR-keh",
+            "translit": "el PAR-keh",
             "pt": "the park",
             "en": "",
             "audio": "el parque"
           },
           {
             "ru": "la plaza",
-            "translit": "[pronuncia] la PLAH-thah",
+            "translit": "la PLAH-thah",
             "pt": "the square",
             "en": "",
             "audio": "la plaza"
           },
           {
             "ru": "la tienda",
-            "translit": "[pronuncia] la tee-EN-dah",
+            "translit": "la tee-EN-dah",
             "pt": "the shop",
             "en": "",
             "audio": "la tienda"
           },
           {
             "ru": "el banco",
-            "translit": "[pronuncia] el BAHN-ko",
+            "translit": "el BAHN-ko",
             "pt": "the bank",
             "en": "",
             "audio": "el banco"
           },
           {
             "ru": "la oficina",
-            "translit": "[pronuncia] la o-fee-THEE-nah",
+            "translit": "la o-fee-THEE-nah",
             "pt": "the office (not «oficina» for cars — that's a repair shop)",
             "en": "",
             "audio": "la oficina"
@@ -108,50 +108,50 @@
         ],
         "tabela": [
           {
-            "frase": "[misto] Hay un parque.",
-            "quando": "[misto] statement, singular",
-            "traducao": "[misto] There's a park."
+            "frase": "Hay un parque.",
+            "quando": "statement, singular",
+            "traducao": "There's a park."
           },
           {
-            "frase": "[misto] Hay dos bancos.",
-            "quando": "[misto] statement, plural",
-            "traducao": "[misto] There are two banks."
+            "frase": "Hay dos bancos.",
+            "quando": "statement, plural",
+            "traducao": "There are two banks."
           },
           {
-            "frase": "[misto] No hay problema.",
-            "quando": "[misto] negation",
-            "traducao": "[misto] There's no problem."
+            "frase": "No hay problema.",
+            "quando": "negation",
+            "traducao": "There's no problem."
           },
           {
-            "frase": "[misto] ¿Hay una tienda aquí?",
-            "quando": "[misto] question",
-            "traducao": "[misto] Is there a shop here?"
+            "frase": "¿Hay una tienda aquí?",
+            "quando": "question",
+            "traducao": "Is there a shop here?"
           },
           {
-            "frase": "[misto] Hay que estudiar.",
-            "quando": "[misto] general obligation",
-            "traducao": "[misto] You have to study."
+            "frase": "Hay que estudiar.",
+            "quando": "general obligation",
+            "traducao": "You have to study."
           }
         ],
         "erros": [
           {
-            "errado": "[misto] Tiene un banco cerca.",
-            "certo": "[misto] Hay un banco cerca.",
+            "errado": "Tiene un banco cerca.",
+            "certo": "Hay un banco cerca.",
             "motivo": "For existence, use «hay», not «tiene»."
           },
           {
-            "errado": "[misto] Hayn dos tiendas.",
-            "certo": "[misto] Hay dos tiendas.",
+            "errado": "Hayn dos tiendas.",
+            "certo": "Hay dos tiendas.",
             "motivo": "«Hay» never changes form."
           },
           {
-            "errado": "[misto] Hay el banco en la plaza.",
-            "certo": "[misto] El banco está en la plaza.",
+            "errado": "Hay el banco en la plaza.",
+            "certo": "El banco está en la plaza.",
             "motivo": "A specific, known thing calls for «estar», and «hay» calls for an indefinite one."
           },
           {
-            "errado": "[misto] Trabajo en una oficina de coches.",
-            "certo": "[misto] Trabajo en un taller de coches.",
+            "errado": "Trabajo en una oficina de coches.",
+            "certo": "Trabajo en un taller de coches.",
             "motivo": "«Oficina» means office; a car repair shop is «taller»."
           }
         ],
@@ -168,42 +168,42 @@
             "ru": "— Pablo, ¿hay tiendas en tu barrio?",
             "pt": "— Pablo, are there shops in your neighborhood?",
             "audio": "Pablo, ¿hay tiendas en tu barrio?",
-            "rotulo": "[personagem] Lucía"
+            "rotulo": "Lucía"
           },
           {
             "personagem": "Pablo",
             "ru": "— Sí, hay muchas tiendas y un parque grande.",
             "pt": "— Yes, there are lots of shops and a big park.",
             "audio": "Sí, hay muchas tiendas y un parque grande.",
-            "rotulo": "[personagem] Pablo"
+            "rotulo": "Pablo"
           },
           {
             "personagem": "Lucía",
             "ru": "— ¿Y hay un banco?",
             "pt": "— And is there a bank?",
             "audio": "¿Y hay un banco?",
-            "rotulo": "[personagem] Lucía"
+            "rotulo": "Lucía"
           },
           {
             "personagem": "Pablo",
             "ru": "— Sí, hay dos bancos en la plaza.",
             "pt": "— Yes, there are two banks on the square.",
             "audio": "Sí, hay dos bancos en la plaza.",
-            "rotulo": "[personagem] Pablo"
+            "rotulo": "Pablo"
           },
           {
             "personagem": "Lucía",
             "ru": "— ¿Hay una oficina de correos?",
             "pt": "— Is there a post office?",
             "audio": "¿Hay una oficina de correos?",
-            "rotulo": "[personagem] Lucía"
+            "rotulo": "Lucía"
           },
           {
             "personagem": "Pablo",
             "ru": "— No, no hay. Hay una en el centro.",
             "pt": "— No, there isn't. There's one downtown.",
             "audio": "No, no hay. Hay una en el centro.",
-            "rotulo": "[personagem] Pablo"
+            "rotulo": "Pablo"
           }
         ]
       },

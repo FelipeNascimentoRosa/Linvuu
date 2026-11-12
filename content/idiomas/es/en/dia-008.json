@@ -29,11 +29,11 @@
             "enunciado": "Listen and choose.",
             "audio": "Soy profesora",
             "opcoes": [
-              "[misto] Soy profesora",
-              "[misto] Soy profesor",
-              "[misto] Eres profesora"
+              "Soy profesora",
+              "Soy profesor",
+              "Eres profesora"
             ],
-            "gabarito": "[misto] Soy profesora",
+            "gabarito": "Soy profesora",
             "explicacao": "Listen to the final «-a»: feminine.",
             "id": "es-002-e09"
           },
@@ -42,11 +42,11 @@
             "enunciado": "Listen and choose.",
             "audio": "Somos estudiantes",
             "opcoes": [
-              "[misto] Somos estudiantes",
-              "[misto] Son estudiantes",
-              "[misto] Sois estudiantes"
+              "Somos estudiantes",
+              "Son estudiantes",
+              "Sois estudiantes"
             ],
-            "gabarito": "[misto] Somos estudiantes",
+            "gabarito": "Somos estudiantes",
             "explicacao": "Listen to the «mos» of «somos».",
             "id": "es-002-e10"
           },
@@ -55,11 +55,11 @@
             "enunciado": "Listen and choose.",
             "audio": "No es alto",
             "opcoes": [
-              "[misto] No es alto",
-              "[misto] No eres alto",
-              "[misto] No soy alto"
+              "No es alto",
+              "No eres alto",
+              "No soy alto"
             ],
-            "gabarito": "[misto] No es alto",
+            "gabarito": "No es alto",
             "explicacao": "Listen to the form «es».",
             "id": "es-002-e11"
           },
@@ -91,11 +91,11 @@
             "tipo": "multiple-choice",
             "enunciado": "What's the form of «ser» for «usted»?",
             "opcoes": [
-              "[misto] es",
-              "[misto] eres",
-              "[misto] sois"
+              "es",
+              "eres",
+              "sois"
             ],
-            "gabarito": "[misto] es",
+            "gabarito": "es",
             "explicacao": "«Usted» takes the same form as «él» and «ella».",
             "id": "es-002-e15"
           },
@@ -112,11 +112,11 @@
             "tipo": "multiple-choice",
             "enunciado": "Which form of «ser» goes with «vosotros» (Spain)?",
             "opcoes": [
-              "[misto] sois",
-              "[misto] son",
-              "[misto] somos"
+              "sois",
+              "son",
+              "somos"
             ],
-            "gabarito": "[misto] sois",
+            "gabarito": "sois",
             "explicacao": "«Vosotros sois».",
             "id": "es-002-e16"
           },
@@ -124,11 +124,11 @@
             "tipo": "multiple-choice",
             "enunciado": "Which sentence is correct for a woman?",
             "opcoes": [
-              "[misto] Soy alta.",
-              "[misto] Soy alto.",
-              "[misto] Soy altos."
+              "Soy alta.",
+              "Soy alto.",
+              "Soy altos."
             ],
-            "gabarito": "[misto] Soy alta.",
+            "gabarito": "Soy alta.",
             "explicacao": "The adjective agrees: feminine singular.",
             "id": "es-002-e17"
           },
@@ -136,11 +136,11 @@
             "tipo": "multiple-choice",
             "enunciado": "How do you say «They're not doctors»?",
             "opcoes": [
-              "[misto] Ellos no son médicos.",
-              "[misto] Ellos son no médicos.",
-              "[misto] Ellos no sois médicos."
+              "Ellos no son médicos.",
+              "Ellos son no médicos.",
+              "Ellos no sois médicos."
             ],
-            "gabarito": "[misto] Ellos no son médicos.",
+            "gabarito": "Ellos no son médicos.",
             "explicacao": "«No» comes before the verb; «ellos» takes «son».",
             "id": "es-002-e18"
           },
@@ -148,11 +148,11 @@
             "tipo": "multiple-choice",
             "enunciado": "What's the plural of «joven»?",
             "opcoes": [
-              "[misto] jóvenes",
-              "[misto] jovenes",
-              "[misto] jóvens"
+              "jóvenes",
+              "jovenes",
+              "jóvens"
             ],
-            "gabarito": "[misto] jóvenes",
+            "gabarito": "jóvenes",
             "explicacao": "A final consonant needs «-es», and the accent mark keeps the stress on the same syllable.",
             "id": "es-002-e19"
           },
@@ -160,11 +160,11 @@
             "tipo": "multiple-choice",
             "enunciado": "Which word means «delicious»?",
             "opcoes": [
-              "[misto] exquisito",
-              "[misto] raro",
-              "[misto] largo"
+              "exquisito",
+              "raro",
+              "largo"
             ],
-            "gabarito": "[misto] exquisito",
+            "gabarito": "exquisito",
             "explicacao": "False friend: «exquisito» means delicious; «raro» means weird.",
             "id": "es-002-e20"
           },
@@ -172,11 +172,11 @@
             "tipo": "fill-gap",
             "enunciado": "Yo ___ Ana. (am)",
             "opcoes": [
-              "[misto] soy",
-              "[misto] es",
-              "[misto] eres"
+              "soy",
+              "es",
+              "eres"
             ],
-            "gabarito": "[misto] soy",
+            "gabarito": "soy",
             "explicacao": "With «yo», the verb is «soy».",
             "id": "es-002-e21"
           },
@@ -184,11 +184,11 @@
             "tipo": "fill-gap",
             "enunciado": "Ellos ___ simpáticos.",
             "opcoes": [
-              "[misto] son",
-              "[misto] somos",
-              "[misto] es"
+              "son",
+              "somos",
+              "es"
             ],
-            "gabarito": "[misto] son",
+            "gabarito": "son",
             "explicacao": "«Ellos son».",
             "id": "es-002-e22"
           },
@@ -206,8 +206,8 @@
             "enunciado": "Ella es ___ . (intelligent)",
             "opcoes": [
               "intelligent",
-              "[misto] inteligenta",
-              "[misto] inteligentes"
+              "inteligenta",
+              "inteligentes"
             ],
             "gabarito": "intelligent",
             "explicacao": "An adjective ending in «-e», singular.",
@@ -217,11 +217,11 @@
             "tipo": "fill-gap",
             "enunciado": "Nosotras somos ___ . (tall)",
             "opcoes": [
-              "[misto] altas",
-              "[misto] altos",
-              "[misto] alta"
+              "altas",
+              "altos",
+              "alta"
             ],
-            "gabarito": "[misto] altas",
+            "gabarito": "altas",
             "explicacao": "Feminine plural.",
             "id": "es-002-e24"
           },
@@ -251,18 +251,18 @@
           {
             "tipo": "producao",
             "enunciado": "Write in Spanish: She's a doctor and she's not a teacher.",
-            "respostaEsperada": "[misto] Ella es médica y no es profesora.",
+            "respostaEsperada": "Ella es médica y no es profesora.",
             "id": "es-002-e27"
           },
           {
             "tipo": "fill-gap",
             "enunciado": "Tú ___ profesor. (are)",
             "opcoes": [
-              "[misto] es",
-              "[misto] eres",
-              "[misto] soy"
+              "es",
+              "eres",
+              "soy"
             ],
-            "gabarito": "[misto] eres",
+            "gabarito": "eres",
             "explicacao": "With «tú», «ser» becomes «eres».",
             "id": "es-002-e28"
           },
@@ -270,11 +270,11 @@
             "tipo": "fill-gap",
             "enunciado": "Ustedes ___ estudiantes.",
             "opcoes": [
-              "[misto] son",
-              "[misto] sois",
-              "[misto] somos"
+              "son",
+              "sois",
+              "somos"
             ],
-            "gabarito": "[misto] son",
+            "gabarito": "son",
             "explicacao": "«Ustedes» takes the same form as «ellos»: «son».",
             "id": "es-002-e29"
           },
@@ -282,11 +282,11 @@
             "tipo": "fill-gap",
             "enunciado": "Marta es ___ . (teacher)",
             "opcoes": [
-              "[misto] profesora",
-              "[misto] profesor",
-              "[misto] profesores"
+              "profesora",
+              "profesor",
+              "profesores"
             ],
-            "gabarito": "[misto] profesora",
+            "gabarito": "profesora",
             "explicacao": "Marta is a woman: «-or» becomes «-ora».",
             "id": "es-002-e30"
           },
@@ -303,11 +303,11 @@
             "tipo": "fill-gap",
             "enunciado": "Los niños son ___ . (nice)",
             "opcoes": [
-              "[misto] simpático",
-              "[misto] simpáticas",
-              "[misto] simpáticos"
+              "simpático",
+              "simpáticas",
+              "simpáticos"
             ],
-            "gabarito": "[misto] simpáticos",
+            "gabarito": "simpáticos",
             "explicacao": "A masculine plural subject needs the adjective in «-os».",
             "id": "es-002-e31"
           },
@@ -315,11 +315,11 @@
             "tipo": "multiple-choice",
             "enunciado": "How do you say «wide» in Spanish?",
             "opcoes": [
-              "[misto] largo",
-              "[misto] alto",
-              "[misto] ancho"
+              "largo",
+              "alto",
+              "ancho"
             ],
-            "gabarito": "[misto] ancho",
+            "gabarito": "ancho",
             "explicacao": "«Largo» in Spanish means «long»; width is «ancho».",
             "id": "es-002-e32"
           },
@@ -327,11 +327,11 @@
             "tipo": "multiple-choice",
             "enunciado": "What's the feminine of «trabajador»?",
             "opcoes": [
-              "[misto] trabajadra",
-              "[misto] trabajadora",
-              "[misto] trabajadore"
+              "trabajadra",
+              "trabajadora",
+              "trabajadore"
             ],
-            "gabarito": "[misto] trabajadora",
+            "gabarito": "trabajadora",
             "explicacao": "Adjectives ending in «-or» add «-a».",
             "id": "es-002-e33"
           },
@@ -339,11 +339,11 @@
             "tipo": "multiple-choice",
             "enunciado": "What's the plural of «feliz»?",
             "opcoes": [
-              "[misto] felizes",
-              "[misto] felizs",
-              "[misto] felices"
+              "felizes",
+              "felizs",
+              "felices"
             ],
-            "gabarito": "[misto] felices",
+            "gabarito": "felices",
             "explicacao": "Words ending in «z» change it to «c» before «-es».",
             "id": "es-002-e34"
           },
@@ -375,7 +375,7 @@
           {
             "tipo": "producao",
             "enunciado": "Write in Spanish: We're students and they're engineers.",
-            "respostaEsperada": "[misto] Somos estudiantes y ellos son ingenieros.",
+            "respostaEsperada": "Somos estudiantes y ellos son ingenieros.",
             "id": "es-002-e37"
           },
           {
@@ -390,7 +390,7 @@
           {
             "tipo": "producao",
             "enunciado": "Write in Spanish: Are you an engineer, ma'am? No, I'm a doctor.",
-            "respostaEsperada": "[misto] ¿Es usted ingeniera? No, soy médica.",
+            "respostaEsperada": "¿Es usted ingeniera? No, soy médica.",
             "id": "es-002-e38"
           },
           {
@@ -398,11 +398,11 @@
             "enunciado": "Listen and choose.",
             "audio": "Ellos son jóvenes",
             "opcoes": [
-              "[misto] Ellos son jóvenes",
-              "[misto] Ellas son jóvenes",
-              "[misto] Ellos son joven"
+              "Ellos son jóvenes",
+              "Ellas son jóvenes",
+              "Ellos son joven"
             ],
-            "gabarito": "[misto] Ellos son jóvenes",
+            "gabarito": "Ellos son jóvenes",
             "explicacao": "Listen to «ellos» (masculine) and the plural «jóvenes».",
             "id": "es-002-e39"
           },
@@ -411,11 +411,11 @@
             "enunciado": "Listen and choose.",
             "audio": "Vosotros sois amigos",
             "opcoes": [
-              "[misto] Vosotros sois amigos",
-              "[misto] Ellos son amigos",
-              "[misto] Nosotros somos amigos"
+              "Vosotros sois amigos",
+              "Ellos son amigos",
+              "Nosotros somos amigos"
             ],
-            "gabarito": "[misto] Vosotros sois amigos",
+            "gabarito": "Vosotros sois amigos",
             "explicacao": "Listen to «sois», the form that belongs only to «vosotros».",
             "id": "es-002-e40"
           },
@@ -431,11 +431,11 @@
             "tipo": "fill-gap",
             "enunciado": "Nosotros ___ amigos. (are)",
             "opcoes": [
-              "[misto] somos",
-              "[misto] son",
-              "[misto] sois"
+              "somos",
+              "son",
+              "sois"
             ],
-            "gabarito": "[misto] somos",
+            "gabarito": "somos",
             "explicacao": "«Nosotros» needs «somos».",
             "id": "es-002-e42"
           },
@@ -443,11 +443,11 @@
             "tipo": "fill-gap",
             "enunciado": "Vosotros ___ jóvenes. (are)",
             "opcoes": [
-              "[misto] sois",
-              "[misto] son",
-              "[misto] somos"
+              "sois",
+              "son",
+              "somos"
             ],
-            "gabarito": "[misto] sois",
+            "gabarito": "sois",
             "explicacao": "«Vosotros» needs «sois».",
             "id": "es-002-e43"
           },

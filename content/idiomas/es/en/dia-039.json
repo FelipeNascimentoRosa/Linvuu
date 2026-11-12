@@ -26,35 +26,35 @@
         "itens": [
           {
             "ru": "listo, lista",
-            "translit": "[pronuncia] LEES-to, LEES-tah",
+            "translit": "LEES-to, LEES-tah",
             "pt": "clever; ready (with estar)",
             "en": "",
             "audio": "listo, lista"
           },
           {
             "ru": "aburrido, aburrida",
-            "translit": "[pronuncia] ah-boo-RREE-do, ah-boo-RREE-dah",
+            "translit": "ah-boo-RREE-do, ah-boo-RREE-dah",
             "pt": "boring; bored (with estar)",
             "en": "",
             "audio": "aburrido, aburrida"
           },
           {
             "ru": "de acuerdo",
-            "translit": "[pronuncia] deh ah-KWER-do",
+            "translit": "deh ah-KWER-do",
             "pt": "in agreement",
             "en": "",
             "audio": "de acuerdo"
           },
           {
             "ru": "¿Dónde está?",
-            "translit": "[pronuncia] DON-deh es-TAH",
+            "translit": "DON-deh es-TAH",
             "pt": "where is it?",
             "en": "",
             "audio": "¿Dónde está?"
           },
           {
             "ru": "aquí, ahí, allí",
-            "translit": "[pronuncia] ah-KEE, ah-EE, ah-LYEE",
+            "translit": "ah-KEE, ah-EE, ah-LYEE",
             "pt": "here, there, over there",
             "en": "",
             "audio": "aquí, ahí, allí"
@@ -69,45 +69,45 @@
         "comparacao": "English runs into the exact same ambiguity with a few of its own adjectives, even with a single verb «to be»: compare «he's boring» (a trait) with a sense closer to «he's bored» (a state) — English just uses two different adjectives to split that meaning, where Spanish uses the same adjective with two different verbs. These pairs are worth memorizing as a set, since they come up constantly.",
         "tabela": [
           {
-            "adjetivo": "[misto] listo",
-            "com_ser": "[misto] Es listo. (clever)",
-            "com_estar": "[misto] Está listo. (ready)"
+            "adjetivo": "listo",
+            "com_ser": "Es listo. (clever)",
+            "com_estar": "Está listo. (ready)"
           },
           {
-            "adjetivo": "[misto] aburrido",
-            "com_ser": "[misto] Es aburrido. (boring)",
-            "com_estar": "[misto] Está aburrido. (bored)"
+            "adjetivo": "aburrido",
+            "com_ser": "Es aburrido. (boring)",
+            "com_estar": "Está aburrido. (bored)"
           },
           {
-            "adjetivo": "[misto] guapo",
-            "com_ser": "[misto] Es guapo. (good-looking)",
-            "com_estar": "[misto] Está guapo. (looks good today)"
+            "adjetivo": "guapo",
+            "com_ser": "Es guapo. (good-looking)",
+            "com_estar": "Está guapo. (looks good today)"
           },
           {
-            "adjetivo": "[misto] rico",
-            "com_ser": "[misto] Es rico. (wealthy)",
-            "com_estar": "[misto] Está rico. (tastes delicious)"
+            "adjetivo": "rico",
+            "com_ser": "Es rico. (wealthy)",
+            "com_estar": "Está rico. (tastes delicious)"
           },
           {
-            "adjetivo": "[misto] verde",
-            "com_ser": "[misto] Es verde. (the color)",
-            "com_estar": "[misto] Está verde. (unripe)"
+            "adjetivo": "verde",
+            "com_ser": "Es verde. (the color)",
+            "com_estar": "Está verde. (unripe)"
           }
         ],
         "erros": [
           {
-            "errado": "[misto] El plátano es verde todavía.",
-            "certo": "[misto] El plátano está verde todavía.",
+            "errado": "El plátano es verde todavía.",
+            "certo": "El plátano está verde todavía.",
             "motivo": "Fruit that hasn't ripened yet: «estar verde»."
           },
           {
-            "errado": "[misto] Mi hermano está listo, siempre gana.",
-            "certo": "[misto] Mi hermano es listo, siempre gana.",
+            "errado": "Mi hermano está listo, siempre gana.",
+            "certo": "Mi hermano es listo, siempre gana.",
             "motivo": "A lasting trait needs «ser»."
           },
           {
-            "errado": "[misto] El libro está aburrido.",
-            "certo": "[misto] El libro es aburrido.",
+            "errado": "El libro está aburrido.",
+            "certo": "El libro es aburrido.",
             "motivo": "To say the book is boring, use «ser»; «estar aburrido» is what a person feels."
           }
         ],
@@ -124,42 +124,42 @@
             "ru": "— Hola, Tomás. ¿Dónde estás?",
             "pt": "— Hi, Tomás. Where are you?",
             "audio": "Hola, Tomás. ¿Dónde estás?",
-            "rotulo": "[personagem] Inés"
+            "rotulo": "Inés"
           },
           {
             "personagem": "Tomás",
             "ru": "— Estoy en la biblioteca, cerca de la plaza.",
             "pt": "— I'm at the library, near the square.",
             "audio": "Estoy en la biblioteca, cerca de la plaza.",
-            "rotulo": "[personagem] Tomás"
+            "rotulo": "Tomás"
           },
           {
             "personagem": "Inés",
             "ru": "— ¿Estás ocupado?",
             "pt": "— Are you busy?",
             "audio": "¿Estás ocupado?",
-            "rotulo": "[personagem] Inés"
+            "rotulo": "Inés"
           },
           {
             "personagem": "Tomás",
             "ru": "— Un poco. Estoy cansado, pero estoy contento: mi trabajo ya está listo.",
             "pt": "— A little. I'm tired, but happy: my work is already done.",
             "audio": "Un poco. Estoy cansado, pero estoy contento: mi trabajo ya está listo.",
-            "rotulo": "[personagem] Tomás"
+            "rotulo": "Tomás"
           },
           {
             "personagem": "Inés",
             "ru": "— Entonces la fiesta es a las ocho, en casa de Clara.",
             "pt": "— So the party is at eight, at Clara's place.",
             "audio": "Entonces la fiesta es a las ocho, en casa de Clara.",
-            "rotulo": "[personagem] Inés"
+            "rotulo": "Inés"
           },
           {
             "personagem": "Tomás",
             "ru": "— Perfecto, estoy de acuerdo. Hasta luego.",
             "pt": "— Perfect, I agree. See you soon.",
             "audio": "Perfecto, estoy de acuerdo. Hasta luego.",
-            "rotulo": "[personagem] Tomás"
+            "rotulo": "Tomás"
           }
         ]
       },

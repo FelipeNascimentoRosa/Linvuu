@@ -26,42 +26,42 @@
         "itens": [
           {
             "ru": "todo recto",
-            "translit": "[pronuncia] TO-do RREK-to",
+            "translit": "TO-do RREK-to",
             "pt": "straight ahead",
             "en": "",
             "audio": "todo recto"
           },
           {
             "ru": "a la derecha",
-            "translit": "[pronuncia] ah lah deh-REH-chah",
+            "translit": "ah lah deh-REH-chah",
             "pt": "to the right",
             "en": "",
             "audio": "a la derecha"
           },
           {
             "ru": "a la izquierda",
-            "translit": "[pronuncia] ah lah eeth-KYER-dah",
+            "translit": "ah lah eeth-KYER-dah",
             "pt": "to the left",
             "en": "",
             "audio": "a la izquierda"
           },
           {
             "ru": "la esquina",
-            "translit": "[pronuncia] la es-KEE-nah",
+            "translit": "la es-KEE-nah",
             "pt": "the corner",
             "en": "",
             "audio": "la esquina"
           },
           {
             "ru": "el semáforo",
-            "translit": "[pronuncia] el seh-MAH-fo-ro",
+            "translit": "el seh-MAH-fo-ro",
             "pt": "the traffic light",
             "en": "",
             "audio": "el semáforo"
           },
           {
             "ru": "el cruce",
-            "translit": "[pronuncia] el KROO-theh",
+            "translit": "el KROO-theh",
             "pt": "the crossing, the intersection",
             "en": "",
             "audio": "el cruce"
@@ -98,55 +98,55 @@
         ],
         "tabela": [
           {
-            "funcao": "[misto] going straight ahead",
-            "usted": "[misto] Siga todo recto.",
-            "tu": "[misto] Sigue todo recto."
+            "funcao": "going straight ahead",
+            "usted": "Siga todo recto.",
+            "tu": "Sigue todo recto."
           },
           {
-            "funcao": "[misto] turning",
-            "usted": "[misto] Gire / Doble a la derecha.",
-            "tu": "[misto] Gira / Dobla a la derecha."
+            "funcao": "turning",
+            "usted": "Gire / Doble a la derecha.",
+            "tu": "Gira / Dobla a la derecha."
           },
           {
-            "funcao": "[misto] crossing",
-            "usted": "[misto] Cruce la plaza.",
-            "tu": "[misto] Cruza la plaza."
+            "funcao": "crossing",
+            "usted": "Cruce la plaza.",
+            "tu": "Cruza la plaza."
           },
           {
-            "funcao": "[misto] taking the street",
-            "usted": "[misto] Tome la segunda calle.",
-            "tu": "[misto] Toma la segunda calle."
+            "funcao": "taking the street",
+            "usted": "Tome la segunda calle.",
+            "tu": "Toma la segunda calle."
           },
           {
-            "funcao": "[misto] distance",
-            "usted": "[misto] Está a cinco minutos andando.",
-            "tu": "[misto] Está a cinco minutos andando."
+            "funcao": "distance",
+            "usted": "Está a cinco minutos andando.",
+            "tu": "Está a cinco minutos andando."
           }
         ],
         "erros": [
           {
-            "errado": "[misto] Gire en la derecha.",
-            "certo": "[misto] Gire a la derecha.",
+            "errado": "Gire en la derecha.",
+            "certo": "Gire a la derecha.",
             "motivo": "A direction takes «a», not «en»."
           },
           {
-            "errado": "[misto] Siga todo derecha.",
-            "certo": "[misto] Siga todo recto.",
+            "errado": "Siga todo derecha.",
+            "certo": "Siga todo recto.",
             "motivo": "«Recto» is masculine; «derecha» is the side."
           },
           {
-            "errado": "[misto] Tome la primero calle.",
-            "certo": "[misto] Tome la primera calle.",
+            "errado": "Tome la primero calle.",
+            "certo": "Tome la primera calle.",
             "motivo": "The ordinal agrees with «calle»."
           },
           {
-            "errado": "[misto] Tome el primero semáforo.",
-            "certo": "[misto] Tome el primer semáforo.",
+            "errado": "Tome el primero semáforo.",
+            "certo": "Tome el primer semáforo.",
             "motivo": "Before a masculine singular noun, «primero» becomes «primer»."
           },
           {
-            "errado": "[misto] Está a cinco minutos a pie andando.",
-            "certo": "[misto] Está a cinco minutos andando.",
+            "errado": "Está a cinco minutos a pie andando.",
+            "certo": "Está a cinco minutos andando.",
             "motivo": "Pick either «andando» or «a pie»."
           }
         ],

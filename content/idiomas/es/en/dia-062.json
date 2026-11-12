@@ -26,42 +26,42 @@
         "itens": [
           {
             "ru": "también",
-            "translit": "[pronuncia] tam-BYEN",
+            "translit": "tam-BYEN",
             "pt": "also, too",
             "en": "",
             "audio": "también"
           },
           {
             "ru": "tampoco",
-            "translit": "[pronuncia] tam-PO-ko",
+            "translit": "tam-PO-ko",
             "pt": "not either",
             "en": "",
             "audio": "tampoco"
           },
           {
             "ru": "bastante",
-            "translit": "[pronuncia] bas-TAN-teh",
+            "translit": "bas-TAN-teh",
             "pt": "quite a bit",
             "en": "",
             "audio": "bastante"
           },
           {
             "ru": "sobre todo",
-            "translit": "[pronuncia] SO-breh TO-do",
+            "translit": "SO-breh TO-do",
             "pt": "mainly, above all",
             "en": "",
             "audio": "sobre todo"
           },
           {
             "ru": "divertido, divertida",
-            "translit": "[pronuncia] dee-ber-TEE-do, dee-ber-TEE-dah",
+            "translit": "dee-ber-TEE-do, dee-ber-TEE-dah",
             "pt": "fun, funny",
             "en": "",
             "audio": "divertido, divertida"
           },
           {
             "ru": "aburrido, aburrida",
-            "translit": "[pronuncia] ah-boo-RREE-do, ah-boo-RREE-dah",
+            "translit": "ah-boo-RREE-do, ah-boo-RREE-dah",
             "pt": "boring",
             "en": "",
             "audio": "aburrido, aburrida"
@@ -94,60 +94,60 @@
         ],
         "tabela": [
           {
-            "situacao": "[misto] the other person likes it, you do too",
-            "resposta": "[misto] A mí también.",
-            "exemplo": "[misto] —Me gusta bailar. —A mí también."
+            "situacao": "the other person likes it, you do too",
+            "resposta": "A mí también.",
+            "exemplo": "—Me gusta bailar. —A mí también."
           },
           {
-            "situacao": "[misto] the other person doesn't like it, neither do you",
-            "resposta": "[misto] A mí tampoco.",
-            "exemplo": "[misto] —No me gusta madrugar. —A mí tampoco."
+            "situacao": "the other person doesn't like it, neither do you",
+            "resposta": "A mí tampoco.",
+            "exemplo": "—No me gusta madrugar. —A mí tampoco."
           },
           {
-            "situacao": "[misto] the other person doesn't like it, you do",
-            "resposta": "[misto] A mí sí.",
-            "exemplo": "[misto] —No me gusta el pescado. —A mí sí."
+            "situacao": "the other person doesn't like it, you do",
+            "resposta": "A mí sí.",
+            "exemplo": "—No me gusta el pescado. —A mí sí."
           },
           {
-            "situacao": "[misto] the other person likes it, you don't",
-            "resposta": "[misto] A mí no.",
-            "exemplo": "[misto] —Me gusta correr. —A mí no."
+            "situacao": "the other person likes it, you don't",
+            "resposta": "A mí no.",
+            "exemplo": "—Me gusta correr. —A mí no."
           },
           {
-            "situacao": "[misto] comparing",
-            "resposta": "[misto] Prefiero X a Y.",
-            "exemplo": "[misto] Prefiero el té al café."
+            "situacao": "comparing",
+            "resposta": "Prefiero X a Y.",
+            "exemplo": "Prefiero el té al café."
           },
           {
-            "situacao": "[misto] giving an opinion",
-            "resposta": "[misto] Me parece + adjective.",
-            "exemplo": "[misto] Me parece muy divertido."
+            "situacao": "giving an opinion",
+            "resposta": "Me parece + adjective.",
+            "exemplo": "Me parece muy divertido."
           }
         ],
         "erros": [
           {
-            "errado": "[misto] A Pablo gusta el cine.",
-            "certo": "[misto] A Pablo le gusta el cine.",
+            "errado": "A Pablo gusta el cine.",
+            "certo": "A Pablo le gusta el cine.",
             "motivo": "With «a + person», the pronoun «le» is required."
           },
           {
-            "errado": "[misto] A mis padres le gustan los museos.",
-            "certo": "[misto] A mis padres les gustan los museos.",
+            "errado": "A mis padres le gustan los museos.",
+            "certo": "A mis padres les gustan los museos.",
             "motivo": "The pronoun agrees with «mis padres»: «les»."
           },
           {
-            "errado": "[misto] —No me gusta el té. —A mí también.",
-            "certo": "[misto] —No me gusta el té. —A mí tampoco.",
+            "errado": "—No me gusta el té. —A mí también.",
+            "certo": "—No me gusta el té. —A mí tampoco.",
             "motivo": "To agree with a negative, use «tampoco»."
           },
           {
-            "errado": "[misto] Prefiero café que té.",
-            "certo": "[misto] Prefiero el café al té.",
+            "errado": "Prefiero café que té.",
+            "certo": "Prefiero el café al té.",
             "motivo": "In Spanish, you compare with «a»: «preferir X a Y»."
           },
           {
-            "errado": "[misto] Me parecen interesante los libros.",
-            "certo": "[misto] Me parecen interesantes los libros.",
+            "errado": "Me parecen interesante los libros.",
+            "certo": "Me parecen interesantes los libros.",
             "motivo": "«Parecer» agrees with what's being judged, in the plural."
           }
         ],

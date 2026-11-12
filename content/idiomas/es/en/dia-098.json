@@ -26,42 +26,42 @@
         "itens": [
           {
             "ru": "pasar",
-            "translit": "[pronuncia] pah-SAR",
+            "translit": "pah-SAR",
             "pt": "to pass (something to someone)",
             "en": "",
             "audio": "pasar"
           },
           {
             "ru": "recordar",
-            "translit": "[pronuncia] reh-kor-DAR",
+            "translit": "reh-kor-DAR",
             "pt": "to remember, to remind",
             "en": "",
             "audio": "recordar"
           },
           {
             "ru": "la contraseña",
-            "translit": "[pronuncia] la kon-trah-SEH-nya",
+            "translit": "la kon-trah-SEH-nya",
             "pt": "the password",
             "en": "",
             "audio": "la contraseña"
           },
           {
             "ru": "la dirección",
-            "translit": "[pronuncia] la dee-rek-THYOHN",
+            "translit": "la dee-rek-THYOHN",
             "pt": "the address",
             "en": "",
             "audio": "la dirección"
           },
           {
             "ru": "el recibo",
-            "translit": "[pronuncia] el reh-THEE-bo",
+            "translit": "el reh-THEE-bo",
             "pt": "the receipt",
             "en": "",
             "audio": "el recibo"
           },
           {
             "ru": "el correo",
-            "translit": "[pronuncia] el ko-REH-o",
+            "translit": "el ko-REH-o",
             "pt": "the email; the mail",
             "en": "",
             "audio": "el correo"
@@ -94,50 +94,50 @@
         ],
         "tabela": [
           {
-            "frase_completa": "[misto] Le doy el libro a Ana.",
-            "com_pronomes": "[misto] Se lo doy."
+            "frase_completa": "Le doy el libro a Ana.",
+            "com_pronomes": "Se lo doy."
           },
           {
-            "frase_completa": "[misto] Le mando la carta a Pablo.",
-            "com_pronomes": "[misto] Se la mando."
+            "frase_completa": "Le mando la carta a Pablo.",
+            "com_pronomes": "Se la mando."
           },
           {
-            "frase_completa": "[misto] Les di los billetes a mis padres.",
-            "com_pronomes": "[misto] Se los di."
+            "frase_completa": "Les di los billetes a mis padres.",
+            "com_pronomes": "Se los di."
           },
           {
-            "frase_completa": "[misto] Les expliqué las reglas a los niños.",
-            "com_pronomes": "[misto] Se las expliqué."
+            "frase_completa": "Les expliqué las reglas a los niños.",
+            "com_pronomes": "Se las expliqué."
           },
           {
-            "frase_completa": "[misto] Voy a dar el regalo a Marta.",
-            "com_pronomes": "[misto] Voy a dárselo. / Se lo voy a dar."
+            "frase_completa": "Voy a dar el regalo a Marta.",
+            "com_pronomes": "Voy a dárselo. / Se lo voy a dar."
           }
         ],
         "erros": [
           {
-            "errado": "[misto] Le lo di a Pablo.",
-            "certo": "[misto] Se lo di a Pablo.",
+            "errado": "Le lo di a Pablo.",
+            "certo": "Se lo di a Pablo.",
             "motivo": "«Le lo» doesn't exist; use «se lo»."
           },
           {
-            "errado": "[misto] Les las mandé a mis padres.",
-            "certo": "[misto] Se las mandé a mis padres.",
+            "errado": "Les las mandé a mis padres.",
+            "certo": "Se las mandé a mis padres.",
             "motivo": "«Les las» doesn't exist; use «se las»."
           },
           {
-            "errado": "[misto] Se la di a mis padres. (the keys)",
-            "certo": "[misto] Se las di a mis padres.",
+            "errado": "Se la di a mis padres. (the keys)",
+            "certo": "Se las di a mis padres.",
             "motivo": "The direct pronoun agrees with the thing: «las llaves»."
           },
           {
-            "errado": "[misto] Voy a darselo.",
-            "certo": "[misto] Voy a dárselo.",
+            "errado": "Voy a darselo.",
+            "certo": "Voy a dárselo.",
             "motivo": "With two pronouns attached to the infinitive, the written accent is required."
           },
           {
-            "errado": "[misto] Os lo digo a ustedes.",
-            "certo": "[misto] Se lo digo a ustedes.",
+            "errado": "Os lo digo a ustedes.",
+            "certo": "Se lo digo a ustedes.",
             "motivo": "With «ustedes», the pronoun is «se», not «os»."
           }
         ],

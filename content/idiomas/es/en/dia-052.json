@@ -29,11 +29,11 @@
             "enunciado": "Listen and choose.",
             "audio": "Quiero un café, por favor",
             "opcoes": [
-              "[misto] Quiero un café, por favor",
-              "[misto] Quieres un café, por favor",
-              "[misto] Queremos un café, por favor"
+              "Quiero un café, por favor",
+              "Quieres un café, por favor",
+              "Queremos un café, por favor"
             ],
-            "gabarito": "[misto] Quiero un café, por favor",
+            "gabarito": "Quiero un café, por favor",
             "explicacao": "Listen to the «ie» in «quiero» and the «-o» ending.",
             "id": "es-013-e01"
           },
@@ -42,11 +42,11 @@
             "enunciado": "Listen and choose.",
             "audio": "No puedo venir hoy",
             "opcoes": [
-              "[misto] No puedo venir hoy",
-              "[misto] No puedes venir hoy",
-              "[misto] No podemos venir hoy"
+              "No puedo venir hoy",
+              "No puedes venir hoy",
+              "No podemos venir hoy"
             ],
-            "gabarito": "[misto] No puedo venir hoy",
+            "gabarito": "No puedo venir hoy",
             "explicacao": "Listen to the «ue» in «puedo».",
             "id": "es-013-e02"
           },
@@ -55,11 +55,11 @@
             "enunciado": "Listen and choose.",
             "audio": "Tengo que estudiar",
             "opcoes": [
-              "[misto] Tengo que estudiar",
-              "[misto] Tienes que estudiar",
-              "[misto] Tenemos que estudiar"
+              "Tengo que estudiar",
+              "Tienes que estudiar",
+              "Tenemos que estudiar"
             ],
-            "gabarito": "[misto] Tengo que estudiar",
+            "gabarito": "Tengo que estudiar",
             "explicacao": "Listen to «tengo»: it's the «yo» form.",
             "id": "es-013-e03"
           },
@@ -121,11 +121,11 @@
             "tipo": "multiple-choice",
             "enunciado": "What's the «tú» form of «querer»?",
             "opcoes": [
-              "[misto] quieres",
-              "[misto] queres",
-              "[misto] quiere"
+              "quieres",
+              "queres",
+              "quiere"
             ],
-            "gabarito": "[misto] quieres",
+            "gabarito": "quieres",
             "explicacao": "With «tú», the «e» becomes «ie» and the ending is «-es».",
             "id": "es-013-e07"
           },
@@ -133,11 +133,11 @@
             "tipo": "multiple-choice",
             "enunciado": "What's the «nosotros» form of «poder»?",
             "opcoes": [
-              "[misto] podemos",
-              "[misto] puedemos",
-              "[misto] pueden"
+              "podemos",
+              "puedemos",
+              "pueden"
             ],
-            "gabarito": "[misto] podemos",
+            "gabarito": "podemos",
             "explicacao": "In «nosotros», the stem doesn't change.",
             "id": "es-013-e08"
           },
@@ -160,11 +160,11 @@
             "tipo": "multiple-choice",
             "enunciado": "How do you say «I have to work»?",
             "opcoes": [
-              "[misto] Tengo que trabajar.",
-              "[misto] Tengo de trabajar.",
-              "[misto] Tengo trabajar."
+              "Tengo que trabajar.",
+              "Tengo de trabajar.",
+              "Tengo trabajar."
             ],
-            "gabarito": "[misto] Tengo que trabajar.",
+            "gabarito": "Tengo que trabajar.",
             "explicacao": "The structure is always «tener que + infinitive».",
             "id": "es-013-e09"
           },
@@ -172,11 +172,11 @@
             "tipo": "multiple-choice",
             "enunciado": "Which sentence uses «hay que» correctly?",
             "opcoes": [
-              "[misto] Hay que llegar pronto.",
-              "[misto] Hay que yo llegar pronto.",
-              "[misto] Hay que llego pronto."
+              "Hay que llegar pronto.",
+              "Hay que yo llegar pronto.",
+              "Hay que llego pronto."
             ],
-            "gabarito": "[misto] Hay que llegar pronto.",
+            "gabarito": "Hay que llegar pronto.",
             "explicacao": "«Hay que» is impersonal and takes the infinitive.",
             "id": "es-013-e10"
           },
@@ -184,11 +184,11 @@
             "tipo": "multiple-choice",
             "enunciado": "How do you ask a stranger (usted) to repeat something?",
             "opcoes": [
-              "[misto] ¿Puede repetir, por favor?",
-              "[misto] ¿Puedes repetir, por favor?",
-              "[misto] ¿Puedo repetir, por favor?"
+              "¿Puede repetir, por favor?",
+              "¿Puedes repetir, por favor?",
+              "¿Puedo repetir, por favor?"
             ],
-            "gabarito": "[misto] ¿Puede repetir, por favor?",
+            "gabarito": "¿Puede repetir, por favor?",
             "explicacao": "With «usted», the verb takes the third-person form: «puede».",
             "id": "es-013-e11"
           },
@@ -211,11 +211,11 @@
             "tipo": "multiple-choice",
             "enunciado": "Which sentence is correct?",
             "opcoes": [
-              "[misto] Duermo ocho horas.",
-              "[misto] Dormo ocho horas.",
-              "[misto] Duermimos ocho horas."
+              "Duermo ocho horas.",
+              "Dormo ocho horas.",
+              "Duermimos ocho horas."
             ],
-            "gabarito": "[misto] Duermo ocho horas.",
+            "gabarito": "Duermo ocho horas.",
             "explicacao": "«Dormir» changes o → ue in «yo».",
             "id": "es-013-e12"
           },
@@ -223,11 +223,11 @@
             "tipo": "fill-gap",
             "enunciado": "Yo ___ viajar en agosto. (querer)",
             "opcoes": [
-              "[misto] quiero",
-              "[misto] quero",
-              "[misto] quiere"
+              "quiero",
+              "quero",
+              "quiere"
             ],
-            "gabarito": "[misto] quiero",
+            "gabarito": "quiero",
             "explicacao": "«Querer» changes e → ie in «yo».",
             "id": "es-013-e13"
           },
@@ -235,11 +235,11 @@
             "tipo": "fill-gap",
             "enunciado": "La clase ___ a las nueve. (empezar)",
             "opcoes": [
-              "[misto] empieza",
-              "[misto] empeza",
-              "[misto] empezamos"
+              "empieza",
+              "empeza",
+              "empezamos"
             ],
-            "gabarito": "[misto] empieza",
+            "gabarito": "empieza",
             "explicacao": "«Empezar» changes e → ie in the third person.",
             "id": "es-013-e14"
           },
@@ -262,11 +262,11 @@
             "tipo": "fill-gap",
             "enunciado": "Ellos ___ al fútbol los domingos. (jugar)",
             "opcoes": [
-              "[misto] juegan",
-              "[misto] jugamos",
-              "[misto] juga"
+              "juegan",
+              "jugamos",
+              "juga"
             ],
-            "gabarito": "[misto] juegan",
+            "gabarito": "juegan",
             "explicacao": "«Jugar» changes u → ue; «al» comes next in the sentence.",
             "id": "es-013-e15"
           },
@@ -274,11 +274,11 @@
             "tipo": "fill-gap",
             "enunciado": "Hoy no ___ venir. (yo, poder)",
             "opcoes": [
-              "[misto] puedo",
-              "[misto] podo",
-              "[misto] puede"
+              "puedo",
+              "podo",
+              "puede"
             ],
-            "gabarito": "[misto] puedo",
+            "gabarito": "puedo",
             "explicacao": "«Poder» changes o → ue in «yo».",
             "id": "es-013-e16"
           },
@@ -301,11 +301,11 @@
             "tipo": "fill-gap",
             "enunciado": "¿___ un café? (tú, querer)",
             "opcoes": [
-              "[misto] Quieres",
-              "[misto] Quieren",
-              "[misto] Queres"
+              "Quieres",
+              "Quieren",
+              "Queres"
             ],
-            "gabarito": "[misto] Quieres",
+            "gabarito": "Quieres",
             "explicacao": "With «tú», the form is «quieres».",
             "id": "es-013-e17"
           },
@@ -356,18 +356,18 @@
           {
             "tipo": "producao",
             "enunciado": "Write in Spanish: I want to rest, but today I have to work.",
-            "respostaEsperada": "[misto] Quiero descansar, pero hoy tengo que trabajar.",
+            "respostaEsperada": "Quiero descansar, pero hoy tengo que trabajar.",
             "id": "es-013-e20"
           },
           {
             "tipo": "fill-gap",
             "enunciado": "Nosotros ___ ir al cine. (querer)",
             "opcoes": [
-              "[misto] quieren",
-              "[misto] quieremos",
-              "[misto] queremos"
+              "quieren",
+              "quieremos",
+              "queremos"
             ],
-            "gabarito": "[misto] queremos",
+            "gabarito": "queremos",
             "explicacao": "In «nosotros», there's no vowel change: «queremos».",
             "id": "es-013-e21"
           },
@@ -375,11 +375,11 @@
             "tipo": "fill-gap",
             "enunciado": "Ella ___ estudiar más. (deber)",
             "opcoes": [
-              "[misto] debe",
-              "[misto] deben",
-              "[misto] debes"
+              "debe",
+              "deben",
+              "debes"
             ],
-            "gabarito": "[misto] debe",
+            "gabarito": "debe",
             "explicacao": "«Deber» is regular; with «ella», it's «debe».",
             "id": "es-013-e22"
           },
@@ -402,11 +402,11 @@
             "tipo": "fill-gap",
             "enunciado": "Tú ___ a casa a las seis. (volver)",
             "opcoes": [
-              "[misto] volves",
-              "[misto] vuelves",
-              "[misto] vueles"
+              "volves",
+              "vuelves",
+              "vueles"
             ],
-            "gabarito": "[misto] vuelves",
+            "gabarito": "vuelves",
             "explicacao": "The «o» becomes «ue» with «tú»: «vuelves».",
             "id": "es-013-e23"
           },
@@ -414,11 +414,11 @@
             "tipo": "fill-gap",
             "enunciado": "Tengo ___ llamar a mi madre. (to)",
             "opcoes": [
-              "[misto] de",
-              "[misto] a",
-              "[misto] que"
+              "de",
+              "a",
+              "que"
             ],
-            "gabarito": "[misto] que",
+            "gabarito": "que",
             "explicacao": "Obligation is said with «tener que» + infinitive.",
             "id": "es-013-e24"
           },
@@ -426,11 +426,11 @@
             "tipo": "multiple-choice",
             "enunciado": "How do you ask a friend to open the window?",
             "opcoes": [
-              "[misto] ¿Puedo abrir la ventana?",
-              "[misto] ¿Abres puedes la ventana?",
-              "[misto] ¿Puedes abrir la ventana?"
+              "¿Puedo abrir la ventana?",
+              "¿Abres puedes la ventana?",
+              "¿Puedes abrir la ventana?"
             ],
-            "gabarito": "[misto] ¿Puedes abrir la ventana?",
+            "gabarito": "¿Puedes abrir la ventana?",
             "explicacao": "«¿Puedes + infinitive?» asks a favor of someone else.",
             "id": "es-013-e25"
           },
@@ -452,11 +452,11 @@
             "tipo": "multiple-choice",
             "enunciado": "What's the «ellos» form of «dormir»?",
             "opcoes": [
-              "[misto] duermen",
-              "[misto] dormen",
-              "[misto] duermían"
+              "duermen",
+              "dormen",
+              "duermían"
             ],
-            "gabarito": "[misto] duermen",
+            "gabarito": "duermen",
             "explicacao": "The «o» becomes «ue» in «ellos».",
             "id": "es-013-e26"
           },
@@ -464,11 +464,11 @@
             "tipo": "multiple-choice",
             "enunciado": "Which phrase shows a general obligation, with no subject?",
             "opcoes": [
-              "[misto] tengo que",
-              "[misto] debo",
-              "[misto] hay que"
+              "tengo que",
+              "debo",
+              "hay que"
             ],
-            "gabarito": "[misto] hay que",
+            "gabarito": "hay que",
             "explicacao": "«Hay que» + infinitive applies to everyone.",
             "id": "es-013-e27"
           },
@@ -504,13 +504,13 @@
           {
             "tipo": "producao",
             "enunciado": "Write in Spanish: I want to sleep, but I have to study.",
-            "respostaEsperada": "[misto] Quiero dormir, pero tengo que estudiar.",
+            "respostaEsperada": "Quiero dormir, pero tengo que estudiar.",
             "id": "es-013-e29"
           },
           {
             "tipo": "producao",
             "enunciado": "Write in Spanish: We can play soccer on Sunday.",
-            "respostaEsperada": "[misto] Podemos jugar al fútbol el domingo.",
+            "respostaEsperada": "Podemos jugar al fútbol el domingo.",
             "id": "es-013-e30"
           }
         ]

@@ -29,11 +29,11 @@
             "enunciado": "Listen and choose.",
             "audio": "Busco una falda azul",
             "opcoes": [
-              "[misto] Busco una falda azul",
-              "[misto] Busco unas faldas azules",
-              "[misto] Busco un vestido azul"
+              "Busco una falda azul",
+              "Busco unas faldas azules",
+              "Busco un vestido azul"
             ],
-            "gabarito": "[misto] Busco una falda azul",
+            "gabarito": "Busco una falda azul",
             "explicacao": "Listen for «una», «falda» and «azul» in the singular.",
             "id": "es-015-e01"
           },
@@ -42,11 +42,11 @@
             "enunciado": "Listen and choose.",
             "audio": "¿Cuánto cuestan estos zapatos?",
             "opcoes": [
-              "[misto] ¿Cuánto cuestan estos zapatos?",
-              "[misto] ¿Cuánto cuesta este zapato?",
-              "[misto] ¿Cuánto cuestan esos zapatos?"
+              "¿Cuánto cuestan estos zapatos?",
+              "¿Cuánto cuesta este zapato?",
+              "¿Cuánto cuestan esos zapatos?"
             ],
-            "gabarito": "[misto] ¿Cuánto cuestan estos zapatos?",
+            "gabarito": "¿Cuánto cuestan estos zapatos?",
             "explicacao": "Listen for the plural «cuestan» and «estos».",
             "id": "es-015-e02"
           },
@@ -55,11 +55,11 @@
             "enunciado": "Listen and choose.",
             "audio": "Cuesta doscientos euros",
             "opcoes": [
-              "[misto] Cuesta doscientos euros",
-              "[misto] Cuesta trescientos euros",
-              "[misto] Cuesta quinientos euros"
+              "Cuesta doscientos euros",
+              "Cuesta trescientos euros",
+              "Cuesta quinientos euros"
             ],
-            "gabarito": "[misto] Cuesta doscientos euros",
+            "gabarito": "Cuesta doscientos euros",
             "explicacao": "Listen for «dos» at the start of «doscientos».",
             "id": "es-015-e03"
           },
@@ -116,11 +116,11 @@
             "tipo": "multiple-choice",
             "enunciado": "Which sentence agrees correctly?",
             "opcoes": [
-              "[misto] una camisa blanca",
-              "[misto] una camisa blanco",
-              "[misto] un camisa blanca"
+              "una camisa blanca",
+              "una camisa blanco",
+              "un camisa blanca"
             ],
-            "gabarito": "[misto] una camisa blanca",
+            "gabarito": "una camisa blanca",
             "explicacao": "Feminine singular: «una camisa blanca».",
             "id": "es-015-e07"
           },
@@ -128,11 +128,11 @@
             "tipo": "multiple-choice",
             "enunciado": "What's the plural of «azul»?",
             "opcoes": [
-              "[misto] azules",
-              "[misto] azuls",
-              "[misto] azul"
+              "azules",
+              "azuls",
+              "azul"
             ],
-            "gabarito": "[misto] azules",
+            "gabarito": "azules",
             "explicacao": "The plural of «azul» is «azules».",
             "id": "es-015-e08"
           },
@@ -140,11 +140,11 @@
             "tipo": "multiple-choice",
             "enunciado": "How do you say «How much do these shoes cost?»",
             "opcoes": [
-              "[misto] ¿Cuánto cuestan estos zapatos?",
-              "[misto] ¿Cuánto cuesta estos zapatos?",
-              "[misto] ¿Cuánto cuestan estas zapatos?"
+              "¿Cuánto cuestan estos zapatos?",
+              "¿Cuánto cuesta estos zapatos?",
+              "¿Cuánto cuestan estas zapatos?"
             ],
-            "gabarito": "[misto] ¿Cuánto cuestan estos zapatos?",
+            "gabarito": "¿Cuánto cuestan estos zapatos?",
             "explicacao": "Plural: «cuestan» and «estos».",
             "id": "es-015-e09"
           },
@@ -161,11 +161,11 @@
             "tipo": "multiple-choice",
             "enunciado": "Which number is 105?",
             "opcoes": [
-              "[misto] ciento cinco",
-              "[misto] cien cinco",
-              "[misto] cienticinco"
+              "ciento cinco",
+              "cien cinco",
+              "cienticinco"
             ],
-            "gabarito": "[misto] ciento cinco",
+            "gabarito": "ciento cinco",
             "explicacao": "«Cien» becomes «ciento» when another number follows it.",
             "id": "es-015-e10"
           },
@@ -173,11 +173,11 @@
             "tipo": "multiple-choice",
             "enunciado": "What does «la falda» mean?",
             "opcoes": [
-              "[misto] the skirt",
-              "[misto] the fault",
+              "the skirt",
+              "the fault",
               "the pants"
             ],
-            "gabarito": "[misto] the skirt",
+            "gabarito": "the skirt",
             "explicacao": "False friend: «falda» means skirt.",
             "id": "es-015-e11"
           },
@@ -185,11 +185,11 @@
             "tipo": "multiple-choice",
             "enunciado": "How do you say «In this store»?",
             "opcoes": [
-              "[misto] En esta tienda",
-              "[misto] Nesta tienda",
-              "[misto] En la esta tienda"
+              "En esta tienda",
+              "Nesta tienda",
+              "En la esta tienda"
             ],
-            "gabarito": "[misto] En esta tienda",
+            "gabarito": "En esta tienda",
             "explicacao": "Spanish doesn't fuse: «en» + «esta».",
             "id": "es-015-e12"
           },
@@ -206,11 +206,11 @@
             "tipo": "fill-gap",
             "enunciado": "Quiero ___ camisa. (this one, near me)",
             "opcoes": [
-              "[misto] esta",
-              "[misto] este",
-              "[misto] estas"
+              "esta",
+              "este",
+              "estas"
             ],
-            "gabarito": "[misto] esta",
+            "gabarito": "esta",
             "explicacao": "«Camisa» is feminine singular.",
             "id": "es-015-e13"
           },
@@ -233,11 +233,11 @@
             "tipo": "fill-gap",
             "enunciado": "¿Cuánto ___ estos zapatos? (costar)",
             "opcoes": [
-              "[misto] cuestan",
-              "[misto] cuesta",
-              "[misto] cuestas"
+              "cuestan",
+              "cuesta",
+              "cuestas"
             ],
-            "gabarito": "[misto] cuestan",
+            "gabarito": "cuestan",
             "explicacao": "Plural: «cuestan».",
             "id": "es-015-e14"
           },
@@ -245,11 +245,11 @@
             "tipo": "fill-gap",
             "enunciado": "Doscientas ___.",
             "opcoes": [
-              "[misto] camisas",
-              "[misto] camisa",
-              "[misto] camisos"
+              "camisas",
+              "camisa",
+              "camisos"
             ],
-            "gabarito": "[misto] camisas",
+            "gabarito": "camisas",
             "explicacao": "The hundreds agree in gender and number.",
             "id": "es-015-e15"
           },
@@ -257,11 +257,11 @@
             "tipo": "fill-gap",
             "enunciado": "¿Qué es ___? (something unknown)",
             "opcoes": [
-              "[misto] esto",
-              "[misto] este",
-              "[misto] esta"
+              "esto",
+              "este",
+              "esta"
             ],
-            "gabarito": "[misto] esto",
+            "gabarito": "esto",
             "explicacao": "The neuter «esto» is for what you can't name.",
             "id": "es-015-e16"
           },
@@ -269,11 +269,11 @@
             "tipo": "fill-gap",
             "enunciado": "Puedo pagar ___ tarjeta.",
             "opcoes": [
-              "[misto] con",
-              "[misto] en",
-              "[misto] de"
+              "con",
+              "en",
+              "de"
             ],
-            "gabarito": "[misto] con",
+            "gabarito": "con",
             "explicacao": "By card: «con tarjeta».",
             "id": "es-015-e17"
           },
@@ -324,18 +324,18 @@
           {
             "tipo": "producao",
             "enunciado": "Write in Spanish: I want this blue skirt, but it's a bit expensive.",
-            "respostaEsperada": "[misto] Quiero esta falda azul, pero es un poco cara.",
+            "respostaEsperada": "Quiero esta falda azul, pero es un poco cara.",
             "id": "es-015-e20"
           },
           {
             "tipo": "fill-gap",
             "enunciado": "Quiero ___ zapatos. (those, far away)",
             "opcoes": [
-              "[misto] estos",
-              "[misto] aquellos",
-              "[misto] esos"
+              "estos",
+              "aquellos",
+              "esos"
             ],
-            "gabarito": "[misto] aquellos",
+            "gabarito": "aquellos",
             "explicacao": "«Aquel» points at what's far from both; masculine plural, «aquellos».",
             "id": "es-015-e21"
           },
@@ -359,11 +359,11 @@
             "tipo": "fill-gap",
             "enunciado": "Son ___ euros. (500)",
             "opcoes": [
-              "[misto] quinientas",
-              "[misto] quinientos",
-              "[misto] cincuenta"
+              "quinientas",
+              "quinientos",
+              "cincuenta"
             ],
-            "gabarito": "[misto] quinientos",
+            "gabarito": "quinientos",
             "explicacao": "500 is «quinientos»; «euros» is masculine.",
             "id": "es-015-e22"
           },
@@ -371,11 +371,11 @@
             "tipo": "fill-gap",
             "enunciado": "Los pantalones me quedan ___ . (too small)",
             "opcoes": [
-              "[misto] pequeño",
-              "[misto] pequeña",
-              "[misto] pequeños"
+              "pequeño",
+              "pequeña",
+              "pequeños"
             ],
-            "gabarito": "[misto] pequeños",
+            "gabarito": "pequeños",
             "explicacao": "The adjective agrees with «pantalones» (masculine plural).",
             "id": "es-015-e23"
           },
@@ -383,11 +383,11 @@
             "tipo": "fill-gap",
             "enunciado": "Esta chaqueta es muy ___ . (expensive)",
             "opcoes": [
-              "[misto] caro",
-              "[misto] cara",
-              "[misto] caras"
+              "caro",
+              "cara",
+              "caras"
             ],
-            "gabarito": "[misto] cara",
+            "gabarito": "cara",
             "explicacao": "«Chaqueta» is feminine singular: «cara».",
             "id": "es-015-e24"
           },
@@ -405,10 +405,10 @@
             "enunciado": "What does «las rebajas» mean?",
             "opcoes": [
               "the fitting room",
-              "[misto] the size",
-              "[misto] the sale"
+              "the size",
+              "the sale"
             ],
-            "gabarito": "[misto] the sale",
+            "gabarito": "the sale",
             "explicacao": "«Rebajas» are the marked-down prices.",
             "id": "es-015-e25"
           },
@@ -425,11 +425,11 @@
             "tipo": "multiple-choice",
             "enunciado": "How do you say «I'll pay in cash»?",
             "opcoes": [
-              "[misto] Pago con efectivo.",
-              "[misto] Pago en efectivo.",
-              "[misto] Pago por efectivo."
+              "Pago con efectivo.",
+              "Pago en efectivo.",
+              "Pago por efectivo."
             ],
-            "gabarito": "[misto] Pago en efectivo.",
+            "gabarito": "Pago en efectivo.",
             "explicacao": "It's said «en efectivo»; by card, «con tarjeta».",
             "id": "es-015-e26"
           },
@@ -437,11 +437,11 @@
             "tipo": "multiple-choice",
             "enunciado": "What's the plural of «marrón»?",
             "opcoes": [
-              "[misto] marrones",
-              "[misto] marrons",
-              "[misto] marrónes"
+              "marrones",
+              "marrons",
+              "marrónes"
             ],
-            "gabarito": "[misto] marrones",
+            "gabarito": "marrones",
             "explicacao": "It ends in a consonant: add «-es», and the accent mark drops.",
             "id": "es-015-e27"
           },
@@ -461,13 +461,13 @@
           {
             "tipo": "producao",
             "enunciado": "Write in Spanish: How much does this green skirt cost?",
-            "respostaEsperada": "[misto] ¿Cuánto cuesta esta falda verde?",
+            "respostaEsperada": "¿Cuánto cuesta esta falda verde?",
             "id": "es-015-e29"
           },
           {
             "tipo": "producao",
             "enunciado": "Write in Spanish: These white shoes are new.",
-            "respostaEsperada": "[misto] Estos zapatos blancos son nuevos.",
+            "respostaEsperada": "Estos zapatos blancos son nuevos.",
             "id": "es-015-e30"
           }
         ]

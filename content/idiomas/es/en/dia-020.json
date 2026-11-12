@@ -29,11 +29,11 @@
             "enunciado": "Listen and choose.",
             "audio": "Hay dos bancos en la plaza",
             "opcoes": [
-              "[misto] Hay dos bancos en la plaza",
-              "[misto] Hay un banco en la plaza",
-              "[misto] Hay dos tiendas en la plaza"
+              "Hay dos bancos en la plaza",
+              "Hay un banco en la plaza",
+              "Hay dos tiendas en la plaza"
             ],
-            "gabarito": "[misto] Hay dos bancos en la plaza",
+            "gabarito": "Hay dos bancos en la plaza",
             "explicacao": "Listen to «dos bancos»: plural and number.",
             "id": "es-005-e01"
           },
@@ -42,11 +42,11 @@
             "enunciado": "Listen and choose.",
             "audio": "Las canciones son bonitas",
             "opcoes": [
-              "[misto] Las canciones son bonitas",
-              "[misto] La canción es bonita",
-              "[misto] Las casas son bonitas"
+              "Las canciones son bonitas",
+              "La canción es bonita",
+              "Las casas son bonitas"
             ],
-            "gabarito": "[misto] Las canciones son bonitas",
+            "gabarito": "Las canciones son bonitas",
             "explicacao": "Listen to «las» and the final «-nes».",
             "id": "es-005-e02"
           },
@@ -55,11 +55,11 @@
             "enunciado": "Listen and choose.",
             "audio": "El problema es difícil",
             "opcoes": [
-              "[misto] El problema es difícil",
-              "[misto] La problema es difícil",
-              "[misto] El problema es fácil"
+              "El problema es difícil",
+              "La problema es difícil",
+              "El problema es fácil"
             ],
-            "gabarito": "[misto] El problema es difícil",
+            "gabarito": "El problema es difícil",
             "explicacao": "Listen to «el problema»: masculine.",
             "id": "es-005-e03"
           },
@@ -114,11 +114,11 @@
             "tipo": "multiple-choice",
             "enunciado": "What's the article for «problema»?",
             "opcoes": [
-              "[misto] el",
-              "[misto] la",
-              "[misto] una"
+              "el",
+              "la",
+              "una"
             ],
-            "gabarito": "[misto] el",
+            "gabarito": "el",
             "explicacao": "Greek-derived words ending in «-ma» are masculine: el problema, el tema.",
             "id": "es-005-e07"
           },
@@ -126,11 +126,11 @@
             "tipo": "multiple-choice",
             "enunciado": "What's the plural of «lápiz»?",
             "opcoes": [
-              "[misto] lápices",
-              "[misto] lápizes",
-              "[misto] lápiz"
+              "lápices",
+              "lápizes",
+              "lápiz"
             ],
-            "gabarito": "[misto] lápices",
+            "gabarito": "lápices",
             "explicacao": "The «z» becomes «c» before «-es».",
             "id": "es-005-e08"
           },
@@ -138,11 +138,11 @@
             "tipo": "multiple-choice",
             "enunciado": "What's the plural of «canción»?",
             "opcoes": [
-              "[misto] canciones",
-              "[misto] canciónes",
-              "[misto] cancións"
+              "canciones",
+              "canciónes",
+              "cancións"
             ],
-            "gabarito": "[misto] canciones",
+            "gabarito": "canciones",
             "explicacao": "The accent mark disappears, because the stress stays on the same syllable.",
             "id": "es-005-e09"
           },
@@ -159,11 +159,11 @@
             "tipo": "multiple-choice",
             "enunciado": "Which sentence says «There are lots of shops»?",
             "opcoes": [
-              "[misto] Hay muchas tiendas.",
-              "[misto] Hayn muchas tiendas.",
-              "[misto] Tiene muchas tiendas."
+              "Hay muchas tiendas.",
+              "Hayn muchas tiendas.",
+              "Tiene muchas tiendas."
             ],
-            "gabarito": "[misto] Hay muchas tiendas.",
+            "gabarito": "Hay muchas tiendas.",
             "explicacao": "«Hay» never changes form, and it covers existence.",
             "id": "es-005-e10"
           },
@@ -171,11 +171,11 @@
             "tipo": "multiple-choice",
             "enunciado": "How do you say «milk»?",
             "opcoes": [
-              "[misto] la leche",
-              "[misto] el leche",
-              "[misto] las leche"
+              "la leche",
+              "el leche",
+              "las leche"
             ],
-            "gabarito": "[misto] la leche",
+            "gabarito": "la leche",
             "explicacao": "Leche is feminine.",
             "id": "es-005-e11"
           },
@@ -183,11 +183,11 @@
             "tipo": "multiple-choice",
             "enunciado": "Which word means «long»?",
             "opcoes": [
-              "[misto] largo",
-              "[misto] ancho",
-              "[misto] grande"
+              "largo",
+              "ancho",
+              "grande"
             ],
-            "gabarito": "[misto] largo",
+            "gabarito": "largo",
             "explicacao": "«Largo» means long; «ancho» means wide.",
             "id": "es-005-e12"
           },
@@ -204,11 +204,11 @@
             "tipo": "fill-gap",
             "enunciado": "___ mano es grande. (the)",
             "opcoes": [
-              "[misto] La",
-              "[misto] El",
-              "[misto] Un"
+              "La",
+              "El",
+              "Un"
             ],
-            "gabarito": "[misto] La",
+            "gabarito": "La",
             "explicacao": "«Mano» is feminine.",
             "id": "es-005-e13"
           },
@@ -234,11 +234,11 @@
             "tipo": "fill-gap",
             "enunciado": "Hablo ___ profesor. (about the)",
             "opcoes": [
-              "[misto] del",
-              "[misto] de el",
-              "[misto] al"
+              "del",
+              "de el",
+              "al"
             ],
-            "gabarito": "[misto] del",
+            "gabarito": "del",
             "explicacao": "De + el contracts to «del».",
             "id": "es-005-e14"
           },
@@ -246,11 +246,11 @@
             "tipo": "fill-gap",
             "enunciado": "Hay ___ parque aquí. (a)",
             "opcoes": [
-              "[misto] un",
-              "[misto] una",
-              "[misto] el"
+              "un",
+              "una",
+              "el"
             ],
-            "gabarito": "[misto] un",
+            "gabarito": "un",
             "explicacao": "After «hay», an indefinite article; «parque» is masculine.",
             "id": "es-005-e15"
           },
@@ -258,11 +258,11 @@
             "tipo": "fill-gap",
             "enunciado": "Las casas son ___. (white)",
             "opcoes": [
-              "[misto] blancas",
-              "[misto] blancos",
-              "[misto] blanca"
+              "blancas",
+              "blancos",
+              "blanca"
             ],
-            "gabarito": "[misto] blancas",
+            "gabarito": "blancas",
             "explicacao": "The adjective agrees with «casas»: feminine plural.",
             "id": "es-005-e16"
           },
@@ -270,11 +270,11 @@
             "tipo": "fill-gap",
             "enunciado": "Los ___ son jóvenes. (friends)",
             "opcoes": [
-              "[misto] amigos",
-              "[misto] amigo",
-              "[misto] amigas"
+              "amigos",
+              "amigo",
+              "amigas"
             ],
-            "gabarito": "[misto] amigos",
+            "gabarito": "amigos",
             "explicacao": "The masculine plural covers the whole group.",
             "id": "es-005-e17"
           },
@@ -327,18 +327,18 @@
           {
             "tipo": "producao",
             "enunciado": "Write in Spanish: There are two shops and a park in my neighborhood.",
-            "respostaEsperada": "[misto] Hay dos tiendas y un parque en mi barrio.",
+            "respostaEsperada": "Hay dos tiendas y un parque en mi barrio.",
             "id": "es-005-e20"
           },
           {
             "tipo": "fill-gap",
             "enunciado": "___ día es bonito. (the)",
             "opcoes": [
-              "[misto] La",
-              "[misto] El",
-              "[misto] Los"
+              "La",
+              "El",
+              "Los"
             ],
-            "gabarito": "[misto] El",
+            "gabarito": "El",
             "explicacao": "«Día» is masculine, even though it ends in «-a».",
             "id": "es-005-e21"
           },
@@ -361,11 +361,11 @@
             "tipo": "fill-gap",
             "enunciado": "Hay dos ___ en la plaza. (banks)",
             "opcoes": [
-              "[misto] bancos",
-              "[misto] banco",
-              "[misto] bancas"
+              "bancos",
+              "banco",
+              "bancas"
             ],
-            "gabarito": "[misto] bancos",
+            "gabarito": "bancos",
             "explicacao": "After «dos», the noun goes plural: «-s» after a vowel.",
             "id": "es-005-e22"
           },
@@ -373,11 +373,11 @@
             "tipo": "fill-gap",
             "enunciado": "Los ___ son bonitos. (the countries)",
             "opcoes": [
-              "[misto] paises",
-              "[misto] países",
-              "[misto] paíes"
+              "paises",
+              "países",
+              "paíes"
             ],
-            "gabarito": "[misto] países",
+            "gabarito": "países",
             "explicacao": "The stressed «í» keeps its accent mark in the plural: «país → países».",
             "id": "es-005-e23"
           },
@@ -385,11 +385,11 @@
             "tipo": "fill-gap",
             "enunciado": "Tengo ___ ciudad favorita. (a)",
             "opcoes": [
-              "[misto] un",
-              "[misto] unos",
-              "[misto] una"
+              "un",
+              "unos",
+              "una"
             ],
-            "gabarito": "[misto] una",
+            "gabarito": "una",
             "explicacao": "«Ciudad» ends in «-dad», so it's feminine.",
             "id": "es-005-e24"
           },
@@ -406,11 +406,11 @@
             "tipo": "multiple-choice",
             "enunciado": "What's the article for «ciudad»?",
             "opcoes": [
-              "[misto] el",
-              "[misto] la",
-              "[misto] los"
+              "el",
+              "la",
+              "los"
             ],
-            "gabarito": "[misto] la",
+            "gabarito": "la",
             "explicacao": "Words ending in «-dad» are feminine: «la ciudad».",
             "id": "es-005-e25"
           },
@@ -433,11 +433,11 @@
             "tipo": "multiple-choice",
             "enunciado": "What's the plural of «reloj»?",
             "opcoes": [
-              "[misto] relojs",
-              "[misto] relojes",
-              "[misto] relojas"
+              "relojs",
+              "relojes",
+              "relojas"
             ],
-            "gabarito": "[misto] relojes",
+            "gabarito": "relojes",
             "explicacao": "It ends in a consonant, so «-es» is added.",
             "id": "es-005-e26"
           },
@@ -445,11 +445,11 @@
             "tipo": "multiple-choice",
             "enunciado": "How do you say «There's no bank here»?",
             "opcoes": [
-              "[misto] Hay no banco aquí.",
-              "[misto] No hay banco aquí.",
-              "[misto] No tiene banco aquí."
+              "Hay no banco aquí.",
+              "No hay banco aquí.",
+              "No tiene banco aquí."
             ],
-            "gabarito": "[misto] No hay banco aquí.",
+            "gabarito": "No hay banco aquí.",
             "explicacao": "The negation is «no hay», with «no» before the verb.",
             "id": "es-005-e27"
           },
@@ -471,13 +471,13 @@
           {
             "tipo": "producao",
             "enunciado": "Write in Spanish: There's a park and a square in my neighborhood.",
-            "respostaEsperada": "[misto] Hay un parque y una plaza en mi barrio.",
+            "respostaEsperada": "Hay un parque y una plaza en mi barrio.",
             "id": "es-005-e29"
           },
           {
             "tipo": "producao",
             "enunciado": "Write in Spanish: The city's problems are big.",
-            "respostaEsperada": "[misto] Los problemas de la ciudad son grandes.",
+            "respostaEsperada": "Los problemas de la ciudad son grandes.",
             "id": "es-005-e30"
           }
         ]

@@ -29,11 +29,11 @@
             "enunciado": "Listen and choose.",
             "audio": "Lo compré ayer",
             "opcoes": [
-              "[misto] Lo compré ayer",
-              "[misto] La compré ayer",
-              "[misto] Lo compró ayer"
+              "Lo compré ayer",
+              "La compré ayer",
+              "Lo compró ayer"
             ],
-            "gabarito": "[misto] Lo compré ayer",
+            "gabarito": "Lo compré ayer",
             "explicacao": "Listen for the initial «lo» and the final «é» of «yo».",
             "id": "es-023-e01"
           },
@@ -42,11 +42,11 @@
             "enunciado": "Listen and choose.",
             "audio": "Las veo mañana",
             "opcoes": [
-              "[misto] Las veo mañana",
-              "[misto] Los veo mañana",
-              "[misto] Las vi mañana"
+              "Las veo mañana",
+              "Los veo mañana",
+              "Las vi mañana"
             ],
-            "gabarito": "[misto] Las veo mañana",
+            "gabarito": "Las veo mañana",
             "explicacao": "«Las» replaces a feminine plural object.",
             "id": "es-023-e02"
           },
@@ -55,11 +55,11 @@
             "enunciado": "Listen and choose.",
             "audio": "Te llamo esta noche",
             "opcoes": [
-              "[misto] Te llamo esta noche",
-              "[misto] Me llamo esta noche",
-              "[misto] Se llama esta noche"
+              "Te llamo esta noche",
+              "Me llamo esta noche",
+              "Se llama esta noche"
             ],
-            "gabarito": "[misto] Te llamo esta noche",
+            "gabarito": "Te llamo esta noche",
             "explicacao": "«Te» is the direct object for the person you're talking to.",
             "id": "es-023-e03"
           },
@@ -120,11 +120,11 @@
             "tipo": "multiple-choice",
             "enunciado": "Which pronoun replaces «el libro»?",
             "opcoes": [
-              "[misto] lo",
-              "[misto] la",
-              "[misto] le"
+              "lo",
+              "la",
+              "le"
             ],
-            "gabarito": "[misto] lo",
+            "gabarito": "lo",
             "explicacao": "Masculine singular: «lo».",
             "id": "es-023-e07"
           },
@@ -132,11 +132,11 @@
             "tipo": "multiple-choice",
             "enunciado": "Which pronoun replaces «las llaves»?",
             "opcoes": [
-              "[misto] las",
-              "[misto] los",
-              "[misto] les"
+              "las",
+              "los",
+              "les"
             ],
-            "gabarito": "[misto] las",
+            "gabarito": "las",
             "explicacao": "Feminine plural: «las».",
             "id": "es-023-e08"
           },
@@ -144,11 +144,11 @@
             "tipo": "multiple-choice",
             "enunciado": "How do you say «I saw it»?",
             "opcoes": [
-              "[misto] Lo vi.",
-              "[misto] Vi-lo.",
-              "[misto] Vi lo."
+              "Lo vi.",
+              "Vi-lo.",
+              "Vi lo."
             ],
-            "gabarito": "[misto] Lo vi.",
+            "gabarito": "Lo vi.",
             "explicacao": "The pronoun comes before the verb, with no hyphen.",
             "id": "es-023-e09"
           },
@@ -165,11 +165,11 @@
             "tipo": "multiple-choice",
             "enunciado": "Which one is correct?",
             "opcoes": [
-              "[misto] Quiero comprarlo.",
-              "[misto] Quiero comprar-lo.",
-              "[misto] Quiero lo comprar."
+              "Quiero comprarlo.",
+              "Quiero comprar-lo.",
+              "Quiero lo comprar."
             ],
-            "gabarito": "[misto] Quiero comprarlo.",
+            "gabarito": "Quiero comprarlo.",
             "explicacao": "The pronoun attaches to the infinitive with no hyphen.",
             "id": "es-023-e10"
           },
@@ -177,11 +177,11 @@
             "tipo": "multiple-choice",
             "enunciado": "What's the natural answer to «¿Compraste el pan?»",
             "opcoes": [
-              "[misto] Sí, lo compré.",
-              "[misto] Sí, compré.",
-              "[misto] Sí, le compré."
+              "Sí, lo compré.",
+              "Sí, compré.",
+              "Sí, le compré."
             ],
-            "gabarito": "[misto] Sí, lo compré.",
+            "gabarito": "Sí, lo compré.",
             "explicacao": "The pronoun is required.",
             "id": "es-023-e11"
           },
@@ -189,11 +189,11 @@
             "tipo": "multiple-choice",
             "enunciado": "What does «Lo siento» mean?",
             "opcoes": [
-              "[misto] I'm sorry.",
-              "[misto] I feel it.",
-              "[misto] I know."
+              "I'm sorry.",
+              "I feel it.",
+              "I know."
             ],
-            "gabarito": "[misto] I'm sorry.",
+            "gabarito": "I'm sorry.",
             "explicacao": "It's a fixed phrase for apologizing.",
             "id": "es-023-e12"
           },
@@ -210,11 +210,11 @@
             "tipo": "multiple-choice",
             "enunciado": "What does «cola» mean in «la cola del banco»?",
             "opcoes": [
-              "[misto] a line",
-              "[misto] glue",
-              "[misto] an animal's tail"
+              "a line",
+              "glue",
+              "an animal's tail"
             ],
-            "gabarito": "[misto] a line",
+            "gabarito": "a line",
             "explicacao": "In Spanish «cola» can mean a line of people.",
             "id": "es-023-e13"
           },
@@ -242,11 +242,11 @@
             "tipo": "fill-gap",
             "enunciado": "¿Ves a Ana? — Sí, ___ veo.",
             "opcoes": [
-              "[misto] la",
-              "[misto] lo",
-              "[misto] le"
+              "la",
+              "lo",
+              "le"
             ],
-            "gabarito": "[misto] la",
+            "gabarito": "la",
             "explicacao": "Ana is feminine singular: «la».",
             "id": "es-023-e14"
           },
@@ -254,11 +254,11 @@
             "tipo": "fill-gap",
             "enunciado": "¿Conoces a Pedro? — Sí, ___ conozco.",
             "opcoes": [
-              "[misto] lo",
-              "[misto] la",
-              "[misto] los"
+              "lo",
+              "la",
+              "los"
             ],
-            "gabarito": "[misto] lo",
+            "gabarito": "lo",
             "explicacao": "Pedro is masculine singular: «lo».",
             "id": "es-023-e15"
           },
@@ -266,11 +266,11 @@
             "tipo": "fill-gap",
             "enunciado": "¿Compraste las flores? — Sí, ___ compré.",
             "opcoes": [
-              "[misto] las",
-              "[misto] los",
-              "[misto] la"
+              "las",
+              "los",
+              "la"
             ],
-            "gabarito": "[misto] las",
+            "gabarito": "las",
             "explicacao": "Feminine plural: «las».",
             "id": "es-023-e16"
           },
@@ -278,11 +278,11 @@
             "tipo": "fill-gap",
             "enunciado": "Quiero ver___ mañana. (la película)",
             "opcoes": [
-              "[misto] la",
-              "[misto] lo",
-              "[misto] le"
+              "la",
+              "lo",
+              "le"
             ],
-            "gabarito": "[misto] la",
+            "gabarito": "la",
             "explicacao": "The pronoun attaches to the infinitive: «verla».",
             "id": "es-023-e17"
           },
@@ -299,11 +299,11 @@
             "tipo": "fill-gap",
             "enunciado": "¿Me llamas? — Sí, ___ llamo.",
             "opcoes": [
-              "[misto] te",
-              "[misto] me",
-              "[misto] se"
+              "te",
+              "me",
+              "se"
             ],
-            "gabarito": "[misto] te",
+            "gabarito": "te",
             "explicacao": "The one asking is «me»; the one answering uses «te».",
             "id": "es-023-e18"
           },
@@ -343,7 +343,7 @@
           {
             "tipo": "producao",
             "enunciado": "Write in Spanish: I saw her yesterday and called her.",
-            "respostaEsperada": "[misto] La vi ayer y la llamé.",
+            "respostaEsperada": "La vi ayer y la llamé.",
             "id": "es-023-e21"
           },
           {
@@ -365,11 +365,11 @@
             "tipo": "fill-gap",
             "enunciado": "¿Tienes las gafas? — Sí, ___ tengo.",
             "opcoes": [
-              "[misto] los",
-              "[misto] la",
-              "[misto] las"
+              "los",
+              "la",
+              "las"
             ],
-            "gabarito": "[misto] las",
+            "gabarito": "las",
             "explicacao": "«Las gafas» is feminine plural: «las».",
             "id": "es-023-e22"
           },
@@ -377,11 +377,11 @@
             "tipo": "fill-gap",
             "enunciado": "Voy a llamar___ mañana. (you, informal)",
             "opcoes": [
-              "[misto] me",
-              "[misto] te",
-              "[misto] lo"
+              "me",
+              "te",
+              "lo"
             ],
-            "gabarito": "[misto] te",
+            "gabarito": "te",
             "explicacao": "With «a ti», the pronoun is «te», attached to the infinitive.",
             "id": "es-023-e23"
           },
@@ -389,11 +389,11 @@
             "tipo": "fill-gap",
             "enunciado": "¿Puedes ayudar___, por favor? (me)",
             "opcoes": [
-              "[misto] te",
-              "[misto] la",
-              "[misto] me"
+              "te",
+              "la",
+              "me"
             ],
-            "gabarito": "[misto] me",
+            "gabarito": "me",
             "explicacao": "With «a mí», the pronoun is «me».",
             "id": "es-023-e24"
           },
@@ -410,11 +410,11 @@
             "tipo": "fill-gap",
             "enunciado": "A la señora Ruiz, ___ llamo mañana.",
             "opcoes": [
-              "[misto] La",
-              "[misto] Lo",
-              "[misto] Le"
+              "La",
+              "Lo",
+              "Le"
             ],
-            "gabarito": "[misto] La",
+            "gabarito": "La",
             "explicacao": "Feminine direct object: «la».",
             "id": "es-023-e25"
           },
@@ -437,11 +437,11 @@
             "tipo": "multiple-choice",
             "enunciado": "How do you say «I don't see them» (masculine)?",
             "opcoes": [
-              "[misto] Los no veo.",
-              "[misto] No los veo.",
-              "[misto] No veo los."
+              "Los no veo.",
+              "No los veo.",
+              "No veo los."
             ],
-            "gabarito": "[misto] No los veo.",
+            "gabarito": "No los veo.",
             "explicacao": "The pronoun goes right before the verb, after «no».",
             "id": "es-023-e26"
           },
@@ -449,11 +449,11 @@
             "tipo": "multiple-choice",
             "enunciado": "How do you say «I want to see her»?",
             "opcoes": [
-              "[misto] Quiero la ver.",
-              "[misto] Quiero ver-la.",
-              "[misto] Quiero verla."
+              "Quiero la ver.",
+              "Quiero ver-la.",
+              "Quiero verla."
             ],
-            "gabarito": "[misto] Quiero verla.",
+            "gabarito": "Quiero verla.",
             "explicacao": "The pronoun attaches to the infinitive, with no hyphen.",
             "id": "es-023-e27"
           },
@@ -461,11 +461,11 @@
             "tipo": "multiple-choice",
             "enunciado": "Which pronoun replaces «a Ana» as a direct object?",
             "opcoes": [
-              "[misto] la",
-              "[misto] lo",
-              "[misto] le"
+              "la",
+              "lo",
+              "le"
             ],
-            "gabarito": "[misto] la",
+            "gabarito": "la",
             "explicacao": "Feminine singular direct object: «la».",
             "id": "es-023-e28"
           },
@@ -485,7 +485,7 @@
           {
             "tipo": "producao",
             "enunciado": "Write in Spanish: I see her every day.",
-            "respostaEsperada": "[misto] La veo todos los días.",
+            "respostaEsperada": "La veo todos los días.",
             "id": "es-023-e30"
           }
         ]

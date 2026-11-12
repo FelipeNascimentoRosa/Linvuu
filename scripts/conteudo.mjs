@@ -188,6 +188,7 @@ function validarCatalogo() {
         if (d.idioma !== c.id) erros.push(`${onde}: idioma "${d.idioma}" ≠ ${c.id}`);
         if (d.explicacao !== l) erros.push(`${onde}: explicacao "${d.explicacao}" ≠ ${l}`);
         if (d.dia !== n) erros.push(`${onde}: campo dia=${d.dia} ≠ ${n}`);
+        if (/"\[(misto|pronuncia|personagem)\] /.test(JSON.stringify(d))) erros.push(`${onde}: marcador interno de tradução ([misto]/[pronuncia]/[personagem]) no texto servido ao aluno`);
         if (fi) {
           if (d.status !== fi.status) erros.push(`${onde}: status "${d.status}" ≠ status do dia-fonte (${fi.status})`);
           if (d.fase !== fi.fase) erros.push(`${onde}: fase difere do dia-fonte`);

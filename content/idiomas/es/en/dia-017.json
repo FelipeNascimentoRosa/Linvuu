@@ -26,56 +26,56 @@
         "itens": [
           {
             "ru": "el libro",
-            "translit": "[pronuncia] el LEE-bro",
+            "translit": "el LEE-bro",
             "pt": "the book",
             "en": "",
             "audio": "el libro"
           },
           {
             "ru": "la casa",
-            "translit": "[pronuncia] la KAH-sah",
+            "translit": "la KAH-sah",
             "pt": "the house",
             "en": "",
             "audio": "la casa"
           },
           {
             "ru": "el coche",
-            "translit": "[pronuncia] el KO-cheh",
+            "translit": "el KO-cheh",
             "pt": "the car",
             "en": "",
             "audio": "el coche"
           },
           {
             "ru": "la mesa",
-            "translit": "[pronuncia] la MEH-sah",
+            "translit": "la MEH-sah",
             "pt": "the table",
             "en": "",
             "audio": "la mesa"
           },
           {
             "ru": "el día",
-            "translit": "[pronuncia] el DEE-ah",
+            "translit": "el DEE-ah",
             "pt": "the day",
             "en": "",
             "audio": "el día"
           },
           {
             "ru": "la mano",
-            "translit": "[pronuncia] la MAH-no",
+            "translit": "la MAH-no",
             "pt": "the hand",
             "en": "",
             "audio": "la mano"
           },
           {
             "ru": "el problema",
-            "translit": "[pronuncia] el pro-BLEH-mah",
+            "translit": "el pro-BLEH-mah",
             "pt": "the problem",
             "en": "",
             "audio": "el problema"
           },
           {
             "ru": "la ciudad",
-            "translit": "[pronuncia] la thyoo-DAHD",
+            "translit": "la thyoo-DAHD",
             "pt": "the city",
             "en": "",
             "audio": "la ciudad"
@@ -116,54 +116,54 @@
         ],
         "tabela": [
           {
-            "tipo": "[misto] definite masculine",
-            "singular": "[misto] el",
-            "plural": "[misto] los",
-            "exemplo": "[misto] el libro, los libros"
+            "tipo": "definite masculine",
+            "singular": "el",
+            "plural": "los",
+            "exemplo": "el libro, los libros"
           },
           {
-            "tipo": "[misto] definite feminine",
-            "singular": "[misto] la",
-            "plural": "[misto] las",
-            "exemplo": "[misto] la casa, las casas"
+            "tipo": "definite feminine",
+            "singular": "la",
+            "plural": "las",
+            "exemplo": "la casa, las casas"
           },
           {
-            "tipo": "[misto] indefinite masculine",
-            "singular": "[misto] un",
-            "plural": "[misto] unos",
-            "exemplo": "[misto] un coche, unos coches"
+            "tipo": "indefinite masculine",
+            "singular": "un",
+            "plural": "unos",
+            "exemplo": "un coche, unos coches"
           },
           {
-            "tipo": "[misto] indefinite feminine",
-            "singular": "[misto] una",
-            "plural": "[misto] unas",
-            "exemplo": "[misto] una mesa, unas mesas"
+            "tipo": "indefinite feminine",
+            "singular": "una",
+            "plural": "unas",
+            "exemplo": "una mesa, unas mesas"
           }
         ],
         "erros": [
           {
-            "errado": "[misto] La problema es difícil.",
-            "certo": "[misto] El problema es difícil.",
+            "errado": "La problema es difícil.",
+            "certo": "El problema es difícil.",
             "motivo": "«Problema» ends in «-a», but it's masculine."
           },
           {
-            "errado": "[misto] El leche es blanca.",
-            "certo": "[misto] La leche es blanca.",
+            "errado": "El leche es blanca.",
+            "certo": "La leche es blanca.",
             "motivo": "«Leche» is feminine in Spanish."
           },
           {
-            "errado": "[misto] El mano",
-            "certo": "[misto] La mano",
+            "errado": "El mano",
+            "certo": "La mano",
             "motivo": "«Mano» ends in «-o», but it's feminine."
           },
           {
-            "errado": "[misto] Un mesa grande",
-            "certo": "[misto] Una mesa grande",
+            "errado": "Un mesa grande",
+            "certo": "Una mesa grande",
             "motivo": "The article agrees with the noun's gender."
           },
           {
-            "errado": "[misto] Soy una profesora.",
-            "certo": "[misto] Soy profesora.",
+            "errado": "Soy una profesora.",
+            "certo": "Soy profesora.",
             "motivo": "With a profession after «ser», and no adjective, no article is used."
           }
         ],

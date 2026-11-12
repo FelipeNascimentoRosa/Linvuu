@@ -29,11 +29,11 @@
             "enunciado": "Listen and choose.",
             "audio": "El libro está encima de la mesa",
             "opcoes": [
-              "[misto] El libro está encima de la mesa",
-              "[misto] El libro está debajo de la mesa",
-              "[misto] Hay un libro encima de la mesa"
+              "El libro está encima de la mesa",
+              "El libro está debajo de la mesa",
+              "Hay un libro encima de la mesa"
             ],
-            "gabarito": "[misto] El libro está encima de la mesa",
+            "gabarito": "El libro está encima de la mesa",
             "explicacao": "Listen to «encima» and the verb «está».",
             "id": "es-010-e01"
           },
@@ -42,11 +42,11 @@
             "enunciado": "Listen and choose.",
             "audio": "Estamos contentos",
             "opcoes": [
-              "[misto] Estamos contentos",
-              "[misto] Estáis contentos",
-              "[misto] Están contentos"
+              "Estamos contentos",
+              "Estáis contentos",
+              "Están contentos"
             ],
-            "gabarito": "[misto] Estamos contentos",
+            "gabarito": "Estamos contentos",
             "explicacao": "Listen to the «-mos» of «estamos».",
             "id": "es-010-e02"
           },
@@ -55,11 +55,11 @@
             "enunciado": "Listen and choose.",
             "audio": "La fiesta es en mi casa",
             "opcoes": [
-              "[misto] La fiesta es en mi casa",
-              "[misto] La fiesta está en mi casa",
-              "[misto] La casa es mía"
+              "La fiesta es en mi casa",
+              "La fiesta está en mi casa",
+              "La casa es mía"
             ],
-            "gabarito": "[misto] La fiesta es en mi casa",
+            "gabarito": "La fiesta es en mi casa",
             "explicacao": "An event's location: «es en».",
             "id": "es-010-e03"
           },
@@ -121,11 +121,11 @@
             "tipo": "multiple-choice",
             "enunciado": "Which verb is used to say where a city is?",
             "opcoes": [
-              "[misto] estar",
-              "[misto] ser",
-              "[misto] hay"
+              "estar",
+              "ser",
+              "hay"
             ],
-            "gabarito": "[misto] estar",
+            "gabarito": "estar",
             "explicacao": "Location needs «estar».",
             "id": "es-010-e07"
           },
@@ -133,11 +133,11 @@
             "tipo": "multiple-choice",
             "enunciado": "How do you say «I agree»?",
             "opcoes": [
-              "[misto] Estoy de acuerdo.",
-              "[misto] Soy de acuerdo.",
-              "[misto] Estoy en acuerdo."
+              "Estoy de acuerdo.",
+              "Soy de acuerdo.",
+              "Estoy en acuerdo."
             ],
-            "gabarito": "[misto] Estoy de acuerdo.",
+            "gabarito": "Estoy de acuerdo.",
             "explicacao": "A fixed expression with «estar de».",
             "id": "es-010-e08"
           },
@@ -145,11 +145,11 @@
             "tipo": "multiple-choice",
             "enunciado": "What's the «tú» form of «estar»?",
             "opcoes": [
-              "[misto] estás",
-              "[misto] está",
-              "[misto] estáis"
+              "estás",
+              "está",
+              "estáis"
             ],
-            "gabarito": "[misto] estás",
+            "gabarito": "estás",
             "explicacao": "With «tú», «estás», with an accent mark.",
             "id": "es-010-e09"
           },
@@ -166,11 +166,11 @@
             "tipo": "multiple-choice",
             "enunciado": "What does «Está listo» mean?",
             "opcoes": [
-              "[misto] it's ready",
-              "[misto] he's clever",
-              "[misto] he's sick"
+              "it's ready",
+              "he's clever",
+              "he's sick"
             ],
-            "gabarito": "[misto] it's ready",
+            "gabarito": "it's ready",
             "explicacao": "With «estar», «listo» means ready.",
             "id": "es-010-e10"
           },
@@ -178,11 +178,11 @@
             "tipo": "multiple-choice",
             "enunciado": "Which sentence says the banana hasn't ripened yet?",
             "opcoes": [
-              "[misto] El plátano está verde.",
-              "[misto] El plátano es verde.",
-              "[misto] El plátano hay verde."
+              "El plátano está verde.",
+              "El plátano es verde.",
+              "El plátano hay verde."
             ],
-            "gabarito": "[misto] El plátano está verde.",
+            "gabarito": "El plátano está verde.",
             "explicacao": "«Estar verde» means unripe; «ser verde» is the color.",
             "id": "es-010-e11"
           },
@@ -190,11 +190,11 @@
             "tipo": "multiple-choice",
             "enunciado": "Which spelling is correct?",
             "opcoes": [
-              "[misto] encima",
-              "[misto] en cima",
-              "[misto] encíma"
+              "encima",
+              "en cima",
+              "encíma"
             ],
-            "gabarito": "[misto] encima",
+            "gabarito": "encima",
             "explicacao": "One single word, no accent mark.",
             "id": "es-010-e12"
           },
@@ -211,11 +211,11 @@
             "tipo": "fill-gap",
             "enunciado": "Yo ___ en casa. (estar)",
             "opcoes": [
-              "[misto] estoy",
-              "[misto] soy",
-              "[misto] estás"
+              "estoy",
+              "soy",
+              "estás"
             ],
-            "gabarito": "[misto] estoy",
+            "gabarito": "estoy",
             "explicacao": "With «yo», «estoy».",
             "id": "es-010-e13"
           },
@@ -238,11 +238,11 @@
             "tipo": "fill-gap",
             "enunciado": "Ellos ___ cansados. (estar)",
             "opcoes": [
-              "[misto] están",
-              "[misto] son",
-              "[misto] estamos"
+              "están",
+              "son",
+              "estamos"
             ],
-            "gabarito": "[misto] están",
+            "gabarito": "están",
             "explicacao": "State: «están».",
             "id": "es-010-e14"
           },
@@ -250,11 +250,11 @@
             "tipo": "fill-gap",
             "enunciado": "El banco está ___ parque. (next to the)",
             "opcoes": [
-              "[misto] al lado del",
-              "[misto] al lado de el",
-              "[misto] lado del"
+              "al lado del",
+              "al lado de el",
+              "lado del"
             ],
-            "gabarito": "[misto] al lado del",
+            "gabarito": "al lado del",
             "explicacao": "De + el = del.",
             "id": "es-010-e15"
           },
@@ -262,11 +262,11 @@
             "tipo": "fill-gap",
             "enunciado": "Madrid ___ en España.",
             "opcoes": [
-              "[misto] está",
-              "[misto] es",
-              "[misto] hay"
+              "está",
+              "es",
+              "hay"
             ],
-            "gabarito": "[misto] está",
+            "gabarito": "está",
             "explicacao": "Location: «está».",
             "id": "es-010-e16"
           },
@@ -274,11 +274,11 @@
             "tipo": "fill-gap",
             "enunciado": "Yo ___ profesor. (ser)",
             "opcoes": [
-              "[misto] soy",
-              "[misto] estoy",
-              "[misto] estás"
+              "soy",
+              "estoy",
+              "estás"
             ],
-            "gabarito": "[misto] soy",
+            "gabarito": "soy",
             "explicacao": "Profession: «soy».",
             "id": "es-010-e17"
           },
@@ -338,18 +338,18 @@
           {
             "tipo": "producao",
             "enunciado": "Write in Spanish: The bank is next to the park, and I'm tired.",
-            "respostaEsperada": "[misto] El banco está al lado del parque y estoy cansado.",
+            "respostaEsperada": "El banco está al lado del parque y estoy cansado.",
             "id": "es-010-e20"
           },
           {
             "tipo": "fill-gap",
             "enunciado": "Nosotros ___ en la biblioteca. (estar)",
             "opcoes": [
-              "[misto] somos",
-              "[misto] estamos",
-              "[misto] estáis"
+              "somos",
+              "estamos",
+              "estáis"
             ],
-            "gabarito": "[misto] estamos",
+            "gabarito": "estamos",
             "explicacao": "Location needs «estar»; with «nosotros», «estamos».",
             "id": "es-010-e21"
           },
@@ -372,11 +372,11 @@
             "tipo": "fill-gap",
             "enunciado": "El gato está ___ la silla. (under the)",
             "opcoes": [
-              "[misto] debajo",
-              "[misto] debajo de",
-              "[misto] debajo del"
+              "debajo",
+              "debajo de",
+              "debajo del"
             ],
-            "gabarito": "[misto] debajo de",
+            "gabarito": "debajo de",
             "explicacao": "«Debajo» needs «de»; with «la silla», it becomes «debajo de la silla».",
             "id": "es-010-e22"
           },
@@ -384,11 +384,11 @@
             "tipo": "fill-gap",
             "enunciado": "Mi hermana ___ muy guapa hoy. (looks really good)",
             "opcoes": [
-              "[misto] es",
-              "[misto] está",
-              "[misto] tiene"
+              "es",
+              "está",
+              "tiene"
             ],
-            "gabarito": "[misto] está",
+            "gabarito": "está",
             "explicacao": "For something about today, a state, use «estar».",
             "id": "es-010-e23"
           },
@@ -396,11 +396,11 @@
             "tipo": "fill-gap",
             "enunciado": "Mi hermano ___ aburrido; nunca dice nada. (is boring)",
             "opcoes": [
-              "[misto] está",
-              "[misto] hay",
-              "[misto] es"
+              "está",
+              "hay",
+              "es"
             ],
-            "gabarito": "[misto] es",
+            "gabarito": "es",
             "explicacao": "As a trait of the person, use «ser»: «es aburrido».",
             "id": "es-010-e24"
           },
@@ -417,11 +417,11 @@
             "tipo": "multiple-choice",
             "enunciado": "Which sentence is correct for a woman?",
             "opcoes": [
-              "[misto] Estoy cansado.",
-              "[misto] Estoy cansada.",
-              "[misto] Estoy cansade."
+              "Estoy cansado.",
+              "Estoy cansada.",
+              "Estoy cansade."
             ],
-            "gabarito": "[misto] Estoy cansada.",
+            "gabarito": "Estoy cansada.",
             "explicacao": "The adjective agrees with the speaker: a woman, «cansada».",
             "id": "es-010-e25"
           },
@@ -444,11 +444,11 @@
             "tipo": "multiple-choice",
             "enunciado": "How do you say «The party is at my house»?",
             "opcoes": [
-              "[misto] La fiesta está en mi casa.",
-              "[misto] La fiesta es en mi casa.",
-              "[misto] La fiesta hay en mi casa."
+              "La fiesta está en mi casa.",
+              "La fiesta es en mi casa.",
+              "La fiesta hay en mi casa."
             ],
-            "gabarito": "[misto] La fiesta es en mi casa.",
+            "gabarito": "La fiesta es en mi casa.",
             "explicacao": "An event uses «ser» to say where it happens.",
             "id": "es-010-e26"
           },
@@ -482,13 +482,13 @@
           {
             "tipo": "producao",
             "enunciado": "Write in Spanish: I'm at home and I'm very tired. (a man speaking)",
-            "respostaEsperada": "[misto] Estoy en casa y estoy muy cansado.",
+            "respostaEsperada": "Estoy en casa y estoy muy cansado.",
             "id": "es-010-e29"
           },
           {
             "tipo": "producao",
             "enunciado": "Write in Spanish: The book is behind the table.",
-            "respostaEsperada": "[misto] El libro está detrás de la mesa.",
+            "respostaEsperada": "El libro está detrás de la mesa.",
             "id": "es-010-e30"
           }
         ]

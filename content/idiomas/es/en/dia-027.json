@@ -26,35 +26,35 @@
         "itens": [
           {
             "ru": "mayor",
-            "translit": "[pronuncia] mah-YOR",
+            "translit": "mah-YOR",
             "pt": "older; grown-up",
             "en": "",
             "audio": "mayor"
           },
           {
             "ru": "menor",
-            "translit": "[pronuncia] meh-NOR",
+            "translit": "meh-NOR",
             "pt": "younger",
             "en": "",
             "audio": "menor"
           },
           {
             "ru": "casado, casada",
-            "translit": "[pronuncia] kah-SAH-do, kah-SAH-dah",
+            "translit": "kah-SAH-do, kah-SAH-dah",
             "pt": "married",
             "en": "",
             "audio": "casado, casada"
           },
           {
             "ru": "soltero, soltera",
-            "translit": "[pronuncia] sol-TEH-ro, sol-TEH-rah",
+            "translit": "sol-TEH-ro, sol-TEH-rah",
             "pt": "single, unmarried",
             "en": "",
             "audio": "soltero, soltera"
           },
           {
             "ru": "somos cuatro",
-            "translit": "[pronuncia] SO-mos KWAH-tro",
+            "translit": "SO-mos KWAH-tro",
             "pt": "there are four of us",
             "en": "",
             "audio": "somos cuatro"
@@ -69,55 +69,55 @@
         "comparacao": "English also uses «of» plus an apostrophe-s for possession, and the key difference is the mandatory contraction: «del» (de + el), and no article before a person's name. Watch out for «mayor»: in a family context it means «older», not «larger» in size (which is «más grande»).",
         "tabela": [
           {
-            "frase": "[misto] el libro de Ana",
-            "funcao": "[misto] possession with a name",
-            "traducao": "[misto] Ana's book"
+            "frase": "el libro de Ana",
+            "funcao": "possession with a name",
+            "traducao": "Ana's book"
           },
           {
-            "frase": "[misto] el coche del profesor",
-            "funcao": "[misto] de + el = del",
-            "traducao": "[misto] the teacher's car"
+            "frase": "el coche del profesor",
+            "funcao": "de + el = del",
+            "traducao": "the teacher's car"
           },
           {
-            "frase": "[misto] mi hermano mayor",
-            "funcao": "[misto] older",
-            "traducao": "[misto] my older brother"
+            "frase": "mi hermano mayor",
+            "funcao": "older",
+            "traducao": "my older brother"
           },
           {
-            "frase": "[misto] mi hermana menor",
-            "funcao": "[misto] younger",
-            "traducao": "[misto] my younger sister"
+            "frase": "mi hermana menor",
+            "funcao": "younger",
+            "traducao": "my younger sister"
           },
           {
-            "frase": "[misto] Somos cuatro.",
-            "funcao": "[misto] how many we are",
-            "traducao": "[misto] There are four of us."
+            "frase": "Somos cuatro.",
+            "funcao": "how many we are",
+            "traducao": "There are four of us."
           },
           {
-            "frase": "[misto] don Manuel, doña Rosa",
-            "funcao": "[misto] respect",
-            "traducao": "[misto] Mr. Manuel, Mrs. Rosa"
+            "frase": "don Manuel, doña Rosa",
+            "funcao": "respect",
+            "traducao": "Mr. Manuel, Mrs. Rosa"
           }
         ],
         "erros": [
           {
-            "errado": "[misto] El libro Ana",
-            "certo": "[misto] El libro de Ana",
+            "errado": "El libro Ana",
+            "certo": "El libro de Ana",
             "motivo": "Possession needs «de»."
           },
           {
-            "errado": "[misto] Es el coche de el profesor.",
-            "certo": "[misto] Es el coche del profesor.",
+            "errado": "Es el coche de el profesor.",
+            "certo": "Es el coche del profesor.",
             "motivo": "«De + el» contracts to «del»."
           },
           {
-            "errado": "[misto] Mi hermano maior",
-            "certo": "[misto] Mi hermano mayor",
+            "errado": "Mi hermano maior",
+            "certo": "Mi hermano mayor",
             "motivo": "«Mayor» means the older one; «maior» doesn't exist in Spanish."
           },
           {
-            "errado": "[misto] Somos cuatro personas en la familia.",
-            "certo": "[misto] Somos cuatro en la familia.",
+            "errado": "Somos cuatro personas en la familia.",
+            "certo": "Somos cuatro en la familia.",
             "motivo": "It's already understood they're people."
           }
         ],
@@ -134,49 +134,49 @@
             "ru": "— Mira, Javier, esta es mi familia.",
             "pt": "— Look, Javier, this is my family.",
             "audio": "Mira, Javier, esta es mi familia.",
-            "rotulo": "[personagem] Marta"
+            "rotulo": "Marta"
           },
           {
             "personagem": "Javier",
             "ru": "— ¡Qué bonita! ¿Quiénes son ellos?",
             "pt": "— How nice! Who are they?",
             "audio": "¡Qué bonita! ¿Quiénes son ellos?",
-            "rotulo": "[personagem] Javier"
+            "rotulo": "Javier"
           },
           {
             "personagem": "Marta",
             "ru": "— Son mis padres, Rosa y Manuel, y mis abuelos.",
             "pt": "— They're my parents, Rosa and Manuel, and my grandparents.",
             "audio": "Son mis padres, Rosa y Manuel, y mis abuelos.",
-            "rotulo": "[personagem] Marta"
+            "rotulo": "Marta"
           },
           {
             "personagem": "Javier",
             "ru": "— ¿Tienes hermanos?",
             "pt": "— Do you have siblings?",
             "audio": "¿Tienes hermanos?",
-            "rotulo": "[personagem] Javier"
+            "rotulo": "Javier"
           },
           {
             "personagem": "Marta",
             "ru": "— Sí, tengo un hermano mayor y una hermana menor.",
             "pt": "— Yes, I have an older brother and a younger sister.",
             "audio": "Sí, tengo un hermano mayor y una hermana menor.",
-            "rotulo": "[personagem] Marta"
+            "rotulo": "Marta"
           },
           {
             "personagem": "Javier",
             "ru": "— Entonces sois cinco en casa.",
             "pt": "— So there are five of you at home.",
             "audio": "Entonces sois cinco en casa.",
-            "rotulo": "[personagem] Javier"
+            "rotulo": "Javier"
           },
           {
             "personagem": "Marta",
             "ru": "— No, somos seis, con mi abuela.",
             "pt": "— No, there are six of us, with my grandmother.",
             "audio": "No, somos seis, con mi abuela.",
-            "rotulo": "[personagem] Marta"
+            "rotulo": "Marta"
           }
         ]
       },

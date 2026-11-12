@@ -54,14 +54,14 @@
           },
           {
             "ru": "despacio",
-            "translit": "[pronuncia] des-PAH-thyo",
+            "translit": "des-PAH-thyo",
             "pt": "slowly",
             "en": "",
             "audio": "despacio"
           },
           {
             "ru": "cuidado",
-            "translit": "[pronuncia] kwee-DAH-do",
+            "translit": "kwee-DAH-do",
             "pt": "careful",
             "en": "",
             "audio": "cuidado"
@@ -97,28 +97,28 @@
             "titulo": "Regular negative",
             "linhas": [
               {
-                "verbo": "[misto] hablar",
-                "tu": "[misto] no hables",
-                "usted": "[misto] no hable",
-                "vosotros": "[misto] no habléis"
+                "verbo": "hablar",
+                "tu": "no hables",
+                "usted": "no hable",
+                "vosotros": "no habléis"
               },
               {
-                "verbo": "[misto] comer",
-                "tu": "[misto] no comas",
-                "usted": "[misto] no coma",
-                "vosotros": "[misto] no comáis"
+                "verbo": "comer",
+                "tu": "no comas",
+                "usted": "no coma",
+                "vosotros": "no comáis"
               },
               {
-                "verbo": "[misto] escribir",
-                "tu": "[misto] no escribas",
-                "usted": "[misto] no escriba",
-                "vosotros": "[misto] no escribáis"
+                "verbo": "escribir",
+                "tu": "no escribas",
+                "usted": "no escriba",
+                "vosotros": "no escribáis"
               },
               {
-                "verbo": "[misto] ir",
-                "tu": "[misto] no vayas",
-                "usted": "[misto] no vaya",
-                "vosotros": "[misto] no vayáis"
+                "verbo": "ir",
+                "tu": "no vayas",
+                "usted": "no vaya",
+                "vosotros": "no vayáis"
               }
             ]
           },
@@ -126,29 +126,29 @@
             "titulo": "Affirmative and negative tú, side by side",
             "linhas": [
               {
-                "verbo": "[misto] hacer",
-                "afirmativo": "[misto] haz",
-                "negativo": "[misto] no hagas"
+                "verbo": "hacer",
+                "afirmativo": "haz",
+                "negativo": "no hagas"
               },
               {
-                "verbo": "[misto] decir",
-                "afirmativo": "[misto] di",
-                "negativo": "[misto] no digas"
+                "verbo": "decir",
+                "afirmativo": "di",
+                "negativo": "no digas"
               },
               {
-                "verbo": "[misto] poner",
-                "afirmativo": "[misto] pon",
-                "negativo": "[misto] no pongas"
+                "verbo": "poner",
+                "afirmativo": "pon",
+                "negativo": "no pongas"
               },
               {
-                "verbo": "[misto] ser",
-                "afirmativo": "[misto] sé",
-                "negativo": "[misto] no seas"
+                "verbo": "ser",
+                "afirmativo": "sé",
+                "negativo": "no seas"
               },
               {
-                "verbo": "[misto] tener",
-                "afirmativo": "[misto] ten",
-                "negativo": "[misto] no tengas"
+                "verbo": "tener",
+                "afirmativo": "ten",
+                "negativo": "no tengas"
               }
             ]
           },
@@ -156,47 +156,47 @@
             "titulo": "Affirmative vosotros (Spain)",
             "linhas": [
               {
-                "infinitivo": "[misto] hablar",
-                "vosotros": "[misto] hablad",
-                "observacao": "[misto] drop the -r and add -d"
+                "infinitivo": "hablar",
+                "vosotros": "hablad",
+                "observacao": "drop the -r and add -d"
               },
               {
-                "infinitivo": "[misto] comer",
-                "vosotros": "[misto] comed",
-                "observacao": "[misto] drop the -r and add -d"
+                "infinitivo": "comer",
+                "vosotros": "comed",
+                "observacao": "drop the -r and add -d"
               },
               {
-                "infinitivo": "[misto] escribir",
-                "vosotros": "[misto] escribid",
-                "observacao": "[misto] drop the -r and add -d"
+                "infinitivo": "escribir",
+                "vosotros": "escribid",
+                "observacao": "drop the -r and add -d"
               },
               {
-                "infinitivo": "[misto] sentarse",
-                "vosotros": "[misto] sentaos",
-                "observacao": "[misto] reflexive, without the -d"
+                "infinitivo": "sentarse",
+                "vosotros": "sentaos",
+                "observacao": "reflexive, without the -d"
               }
             ]
           }
         ],
         "erros": [
           {
-            "errado": "[misto] No habla tan rápido. (order to a friend)",
-            "certo": "[misto] No hables tan rápido.",
+            "errado": "No habla tan rápido. (order to a friend)",
+            "certo": "No hables tan rápido.",
             "motivo": "In a negative order to «tú», use the subjunctive, not the affirmative form."
           },
           {
-            "errado": "[misto] No dices eso.",
-            "certo": "[misto] No digas eso.",
+            "errado": "No dices eso.",
+            "certo": "No digas eso.",
             "motivo": "Negative order: «no» + subjunctive."
           },
           {
-            "errado": "[misto] Te levanta ahora.",
-            "certo": "[misto] Levántate ahora.",
+            "errado": "Te levanta ahora.",
+            "certo": "Levántate ahora.",
             "motivo": "In the affirmative, the pronoun comes after the verb and attaches to it."
           },
           {
-            "errado": "[misto] Me llama más tarde. (as a command)",
-            "certo": "[misto] Llámame más tarde.",
+            "errado": "Me llama más tarde. (as a command)",
+            "certo": "Llámame más tarde.",
             "motivo": "In the affirmative, the pronoun goes after and attaches: «llámame»."
           }
         ],
