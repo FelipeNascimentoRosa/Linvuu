@@ -1,0 +1,255 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 161,
+  "fase": 17,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "The genitive: possession, time and wegen, während, trotz: The genitive of possession",
+  "objetivo": "Lesson 41, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 41,
+    "titulo": "The genitive: possession, time and wegen, während, trotz",
+    "objetivo": "Use the genitive for possession (das Auto meines Vaters), with proper names (Annas Auto), in expressions of time and place (Ende des Jahres), and after wegen, während and trotz.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "The genitive of possession",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Lesson goal. By the end of the four sessions, you say \"whose\" with the genitive (das Haus des Mannes), with von (das Auto von Tom) and with a proper name (Toms Auto), decline weak masculine nouns (den Studenten), and use wegen, trotz and innerhalb."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Lena's party",
+        "contexto": "At the party, Camila and Jonas try to figure out whose things are whose.",
+        "linhas": [
+          {
+            "personagem": "Camila",
+            "ru": "— Wessen Jacke ist das?",
+            "pt": "— Whose jacket is this?",
+            "audio": "Wessen Jacke ist das?",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Das ist Toms Jacke. Die Tasche gehört Lena.",
+            "pt": "— It's Tom's jacket. The bag is Lena's.",
+            "audio": "Das ist Toms Jacke. Die Tasche gehört Lena.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Und wem gehört das Auto vor der Tür?",
+            "pt": "— And whose car is in front of the door?",
+            "audio": "Und wem gehört das Auto vor der Tür?",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Das ist das Auto des Nachbarn. Er kommt heute nicht, wegen des Wetters.",
+            "pt": "— It's the neighbor's car. He's not coming today, because of the weather.",
+            "audio": "Das ist das Auto des Nachbarn. Er kommt heute nicht, wegen des Wetters.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Trotz des Regens sind viele Gäste da! Kennst du den Studenten dort?",
+            "pt": "— Despite the rain, there are lots of guests! Do you know that student over there?",
+            "audio": "Trotz des Regens sind viele Gäste da! Kennst du den Studenten dort?",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Ja, das ist der Kollege von Tom. Er hilft Lena in der Küche.",
+            "pt": "— Yes, he's Tom's colleague. He's helping Lena in the kitchen.",
+            "audio": "Ja, das ist der Kollege von Tom. Er hilft Lena in der Küche.",
+            "rotulo": "Jonas"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "The English-speaker trap",
+        "explicacao": "STEP 1: English has two ways to show possession: \"Tom's car\" and \"the car of my father\". German has both too, plus a third. With a proper name, the owner comes first and takes -s with NO apostrophe: «Toms Auto» (not Tom's). STEP 2: with an ordinary noun, the owner comes AFTER the thing, in the genitive — like English \"of\": «das Haus meines Vaters» (the house of my father), never «meines Vaters Haus». STEP 3: in everyday speech, «von» + dative works like \"of\": «das Auto von meinem Vater». STEP 4: one more trap: some masculine nouns take -n in every case except the nominative (der Student, den Studenten). English has nothing like this.",
+        "comparacao": "English uses 's and \"of\": \"Tom's car\", \"the house of my parents\", \"the neighbor's car\". German uses three paths: name + s («Toms Auto»), genitive after the noun («das Haus des Nachbarn»), or von + dative in speech («das Auto von Tom»).",
+        "tabela": [
+          {
+            "ingles": "Tom's car",
+            "alemao": "Toms Auto / das Auto von Tom"
+          },
+          {
+            "ingles": "the neighbor's house",
+            "alemao": "das Haus des Nachbarn"
+          },
+          {
+            "ingles": "my parents' friends",
+            "alemao": "die Freunde meiner Eltern"
+          },
+          {
+            "ingles": "I see the student",
+            "alemao": "ich sehe den Studenten"
+          }
+        ],
+        "tag": "Trap"
+      },
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "der Besitzer",
+            "translit": "dair beh-ZIT-ser",
+            "pt": "owner",
+            "en": "owner",
+            "audio": "der Besitzer"
+          },
+          {
+            "ru": "die Meinung",
+            "translit": "dee MY-noong",
+            "pt": "opinion",
+            "en": "opinion",
+            "audio": "die Meinung"
+          },
+          {
+            "ru": "der Titel",
+            "translit": "dair TEE-tel",
+            "pt": "title",
+            "en": "title",
+            "audio": "der Titel"
+          },
+          {
+            "ru": "der Anfang",
+            "translit": "dair AHN-fahng",
+            "pt": "beginning",
+            "en": "beginning",
+            "audio": "der Anfang"
+          },
+          {
+            "ru": "das Ende",
+            "translit": "dahs EN-deh",
+            "pt": "end",
+            "en": "end",
+            "audio": "das Ende"
+          },
+          {
+            "ru": "die Mitte",
+            "translit": "dee MIT-eh",
+            "pt": "middle, center",
+            "en": "middle",
+            "audio": "die Mitte"
+          },
+          {
+            "ru": "der Rand",
+            "translit": "dair RAHNT",
+            "pt": "edge, side",
+            "en": "edge",
+            "audio": "der Rand"
+          },
+          {
+            "ru": "das Land",
+            "translit": "dahs LAHNT",
+            "pt": "country; countryside",
+            "en": "country",
+            "audio": "das Land"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "The genitive, step by step",
+        "explicacao": "STEP 1: the GENITIVE answers «wessen?» (whose?) and shows POSSESSION or belonging: «das Auto meines Vaters» (my father's car). STEP 2: the owner comes AFTER the thing owned — like English \"of\": «das Auto meines Vaters» = \"the car of my father\", not «meines Vaters Auto». STEP 3: genitive articles: masculine «des», feminine «der», neuter «des», plural «der»; indefinite: «eines», «einer», «eines». STEP 4: MASCULINE and NEUTER nouns add «-(e)s» — the same -s as English 's: «des Mannes», «des Kindes», «des Autos»; feminine and plural nouns don't change: «der Frau», «der Kinder». STEP 5: with PROPER NAMES, add «-s» with no apostrophe and no article, BEFORE the thing: «Annas Auto», «Pauls Buch». STEP 6: in speech, the genitive is often replaced by «von» + dative: «das Auto von meinem Vater».",
+        "comparacao": "English 's and German genitive -s are the same old ending: \"the man's\" ~ «des Mannes». But German puts the owner after the noun with «des/der», and only proper names go in front («Annas Auto») — without an apostrophe.",
+        "exemplos": [
+          {
+            "ru": "Das ist das Auto meines Vaters.",
+            "pt": "This is my father's car."
+          },
+          {
+            "ru": "Das ist die Tasche der Frau.",
+            "pt": "This is the woman's bag."
+          },
+          {
+            "ru": "Das ist Annas Handy.",
+            "pt": "This is Anna's phone."
+          },
+          {
+            "ru": "Das Haus meiner Eltern ist groß.",
+            "pt": "My parents' house is big."
+          }
+        ],
+        "tabela": [
+          {
+            "genero": "masculine",
+            "artigo": "des Mannes / eines Vaters",
+            "exemplo": "das Auto des Mannes"
+          },
+          {
+            "genero": "feminine",
+            "artigo": "der Frau / einer Mutter",
+            "exemplo": "die Tasche der Frau"
+          },
+          {
+            "genero": "neuter",
+            "artigo": "des Kindes / eines Hauses",
+            "exemplo": "das Spielzeug des Kindes"
+          },
+          {
+            "genero": "plural",
+            "artigo": "der Kinder / meiner Eltern",
+            "exemplo": "das Haus meiner Eltern"
+          },
+          {
+            "genero": "proper name",
+            "artigo": "Annas, Pauls",
+            "exemplo": "Annas Auto, Pauls Buch"
+          },
+          {
+            "genero": "in speech (von + dative)",
+            "artigo": "von meinem Vater",
+            "exemplo": "das Auto von meinem Vater"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Das ist das Auto mein Vater.",
+            "certo": "Das ist das Auto meines Vaters.",
+            "motivo": "Possession: genitive, and the noun adds -s."
+          },
+          {
+            "errado": "Das ist Annas' Auto.",
+            "certo": "Das ist Annas Auto.",
+            "motivo": "No apostrophe in German."
+          },
+          {
+            "errado": "Das ist meines Vaters Auto.",
+            "certo": "Das ist das Auto meines Vaters.",
+            "motivo": "The owner comes after (or use a proper name before)."
+          }
+        ],
+        "tag": "Cases"
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say 6 sentences about possession: «Das ist das Auto meines Vaters. Das ist Annas Handy. Das ist die Tasche der Frau.»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Write the article chart in all four cases from memory."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-041.json",
+  "responsavel": null
+}
