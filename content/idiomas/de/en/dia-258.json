@@ -1,0 +1,140 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 258,
+  "fase": 26,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Working life: CV, application and interview: The application and cover letter",
+  "objetivo": "Lesson 65, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 65,
+    "titulo": "Working life: CV, application and interview",
+    "objetivo": "Describe your education and experience, write a job application and a résumé in the German format, and answer the most common job-interview questions.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "The application and cover letter",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "die Bewerbung",
+            "translit": "dee beh-VAIR-boong",
+            "pt": "application",
+            "en": "application",
+            "audio": "die Bewerbung"
+          },
+          {
+            "ru": "die Stelle",
+            "translit": "dee SHTEL-eh",
+            "pt": "position, job opening",
+            "en": "job",
+            "audio": "die Stelle"
+          },
+          {
+            "ru": "das Anschreiben",
+            "translit": "dahs AHN-shry-ben",
+            "pt": "cover letter",
+            "en": "cover letter",
+            "audio": "das Anschreiben"
+          },
+          {
+            "ru": "die Stellenanzeige",
+            "translit": "dee SHTEL-en-ahn-tsy-geh",
+            "pt": "job ad",
+            "en": "job ad",
+            "audio": "die Stellenanzeige"
+          },
+          {
+            "ru": "die Voraussetzung",
+            "translit": "dee FOR-ows-zet-soong",
+            "pt": "requirement",
+            "en": "requirement",
+            "audio": "die Voraussetzung"
+          },
+          {
+            "ru": "die Unterlagen",
+            "translit": "dee OON-ter-lah-gen",
+            "pt": "documents (application papers)",
+            "en": "documents",
+            "audio": "die Unterlagen"
+          },
+          {
+            "ru": "der Termin",
+            "translit": "dair tair-MEEN",
+            "pt": "appointment, scheduled interview",
+            "en": "appointment",
+            "audio": "der Termin"
+          },
+          {
+            "ru": "die Zusage / die Absage",
+            "translit": "dee TSOO-zah-geh / dee AHP-zah-geh",
+            "pt": "acceptance / rejection",
+            "en": "acceptance / rejection",
+            "audio": "die Zusage / die Absage"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "The application letter, step by step",
+        "explicacao": "STEP 1: the cover letter (Anschreiben) follows a formal pattern: greeting («Sehr geehrte Damen und Herren,»), reference («Ich bewerbe mich auf Ihre Stellenanzeige als …» — I'm applying for your job ad as…), introduction, motivation, qualifications, availability, closing («Mit freundlichen Grüßen»). STEP 2: to apply, say: «Ich bewerbe mich um die Stelle als …» (sich bewerben um + Akk — apply FOR = um) or «auf die Stelle» (also used). STEP 3: for your MOTIVATION: «Ich interessiere mich für diese Stelle, weil …» STEP 4: for QUALIFICATIONS: «Ich bringe Erfahrung in … mit» (I bring experience in…), «Ich verfüge über gute Kenntnisse in …» (I have a good knowledge of…). STEP 5: for AVAILABILITY: «Ich stehe Ihnen ab dem 1. Mai zur Verfügung» (I'm available from May 1). STEP 6: to close: «Über eine Einladung zu einem Vorstellungsgespräch würde ich mich sehr freuen» (I would be very pleased to be invited to an interview — the polite Konjunktiv II).",
+        "tabela": [
+          {
+            "parte": "reference",
+            "frase": "Ich bewerbe mich auf Ihre Stellenanzeige als Verkäufer."
+          },
+          {
+            "parte": "motivation",
+            "frase": "Ich interessiere mich für diese Stelle, weil ich gern mit Kunden arbeite."
+          },
+          {
+            "parte": "qualifications",
+            "frase": "Ich verfüge über zwei Jahre Berufserfahrung im Verkauf."
+          },
+          {
+            "parte": "availability",
+            "frase": "Ich stehe Ihnen ab dem 1. Mai zur Verfügung."
+          },
+          {
+            "parte": "closing",
+            "frase": "Über eine Einladung zu einem Vorstellungsgespräch würde ich mich sehr freuen."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich bewerbe mich für die Stelle.",
+            "certo": "Ich bewerbe mich um die Stelle.",
+            "motivo": "«sich bewerben um» (apply FOR = um)."
+          },
+          {
+            "errado": "Ich würde mich freuen über eine Einladung.",
+            "certo": "Über eine Einladung würde ich mich sehr freuen.",
+            "motivo": "The natural position: the prepositional phrase first, for emphasis."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Write a short cover letter out loud (6 sentences): reference, motivation, qualifications and closing."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 sentences about your education, with dates."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-065.json",
+  "responsavel": null
+}

@@ -1,0 +1,145 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 257,
+  "fase": 26,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Working life: CV, application and interview: Education and experience",
+  "objetivo": "Lesson 65, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 65,
+    "titulo": "Working life: CV, application and interview",
+    "objetivo": "Describe your education and experience, write a job application and a résumé in the German format, and answer the most common job-interview questions.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Education and experience",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "der Lebenslauf",
+            "translit": "dair LAY-bens-lowf",
+            "pt": "résumé, CV",
+            "en": "CV",
+            "audio": "der Lebenslauf"
+          },
+          {
+            "ru": "die Ausbildung",
+            "translit": "dee OWS-bil-doong",
+            "pt": "vocational training, apprenticeship",
+            "en": "training",
+            "audio": "die Ausbildung"
+          },
+          {
+            "ru": "das Studium",
+            "translit": "dahs SHTOO-dee-oom",
+            "pt": "university studies",
+            "en": "studies",
+            "audio": "das Studium"
+          },
+          {
+            "ru": "der Abschluss",
+            "translit": "dair AHP-shlooss",
+            "pt": "degree, diploma, completion",
+            "en": "degree",
+            "audio": "der Abschluss"
+          },
+          {
+            "ru": "die Berufserfahrung",
+            "translit": "dee beh-ROOFS-air-fah-roong",
+            "pt": "work experience",
+            "en": "work experience",
+            "audio": "die Berufserfahrung"
+          },
+          {
+            "ru": "die Kenntnisse",
+            "translit": "dee KENT-niss-eh",
+            "pt": "skills, knowledge",
+            "en": "skills",
+            "audio": "die Kenntnisse"
+          },
+          {
+            "ru": "das Praktikum",
+            "translit": "dahs PRAHK-tee-koom",
+            "pt": "internship",
+            "en": "internship",
+            "audio": "das Praktikum"
+          },
+          {
+            "ru": "die Stärke",
+            "translit": "dee SHTAIR-keh",
+            "pt": "strength",
+            "en": "strength",
+            "audio": "die Stärke"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "Talking about your education and experience, step by step",
+        "explicacao": "STEP 1: the German LEBENSLAUF is chronological and factual: personal details, education, experience, skills (languages, IT), interests. It's often in table form, and many still include a photo and date of birth — unlike a US résumé. STEP 2: use the PERFEKT in conversation and the PRÄTERITUM in writing: «Ich habe Betriebswirtschaft studiert», «Ich studierte Betriebswirtschaft» (I studied business administration). STEP 3: for periods: «von 2015 bis 2019» (from 2015 to 2019), «seit 2020» + present tense: «Seit 2020 arbeite ich als Verkäufer» (I've been working as a salesperson since 2020 — English uses the present perfect, German the present). STEP 4: for how long: «ein Jahr lang», «zwei Jahre lang» (for a year, for two years). STEP 5: for results: «Ich habe die Ausbildung mit gutem Erfolg abgeschlossen» (I completed the training successfully). STEP 6: skills: «Ich spreche fließend Englisch und gut Deutsch» (I speak English fluently and German well).",
+        "tabela": [
+          {
+            "funcao": "education",
+            "frase": "Ich habe von 2015 bis 2019 Betriebswirtschaft studiert."
+          },
+          {
+            "funcao": "experience",
+            "frase": "Seit 2020 arbeite ich als Verkäufer bei einer Firma."
+          },
+          {
+            "funcao": "internship",
+            "frase": "Ich habe ein Praktikum bei einer Bank gemacht."
+          },
+          {
+            "funcao": "result",
+            "frase": "Ich habe die Ausbildung mit gutem Erfolg abgeschlossen."
+          },
+          {
+            "funcao": "languages",
+            "frase": "Ich spreche fließend Englisch und gut Deutsch."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich arbeite seit 2020 als Verkäufer gewesen.",
+            "certo": "Seit 2020 arbeite ich als Verkäufer.",
+            "motivo": "«seit» + present tense (English: \"have been working\")."
+          },
+          {
+            "errado": "Ich habe Betriebswirtschaft studieren.",
+            "certo": "Ich habe Betriebswirtschaft studiert.",
+            "motivo": "Perfekt: Partizip II at the end."
+          },
+          {
+            "errado": "Ich bin Verkäufer arbeite.",
+            "certo": "Ich arbeite als Verkäufer.",
+            "motivo": "«arbeiten als» + job, with no article (work AS a salesperson)."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Describe your education and experience out loud in 6 sentences, with dates."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write a 6-sentence opinion text with the connectors you've learned."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-065.json",
+  "responsavel": null
+}
