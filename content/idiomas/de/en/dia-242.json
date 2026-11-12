@@ -1,0 +1,153 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 242,
+  "fase": 25,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Adjectives and nouns with prepositions: Nouns with prepositions",
+  "objetivo": "Lesson 61, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 61,
+    "titulo": "Adjectives and nouns with prepositions",
+    "objetivo": "Use the adjectives and nouns that take a fixed preposition (stolz auf, zufrieden mit, Angst vor, Lust auf…), with the right case, and the pronominal adverb looking ahead to dass or zu.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Nouns with prepositions",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "die Angst vor",
+            "translit": "dee AHNGST for",
+            "pt": "fear of",
+            "en": "fear of",
+            "audio": "die Angst vor"
+          },
+          {
+            "ru": "die Lust auf",
+            "translit": "dee LOOST owf",
+            "pt": "desire for, feeling like",
+            "en": "desire for",
+            "audio": "die Lust auf"
+          },
+          {
+            "ru": "das Interesse an",
+            "translit": "dahs in-teh-RESS-eh ahn",
+            "pt": "interest in",
+            "en": "interest in",
+            "audio": "das Interesse an"
+          },
+          {
+            "ru": "die Hoffnung auf",
+            "translit": "dee HOFF-noong owf",
+            "pt": "hope for",
+            "en": "hope for",
+            "audio": "die Hoffnung auf"
+          },
+          {
+            "ru": "der Wunsch nach",
+            "translit": "dair VOONSH nahkh",
+            "pt": "wish for, desire for",
+            "en": "wish for",
+            "audio": "der Wunsch nach"
+          },
+          {
+            "ru": "die Frage nach",
+            "translit": "dee FRAH-geh nahkh",
+            "pt": "question about",
+            "en": "question about",
+            "audio": "die Frage nach"
+          },
+          {
+            "ru": "die Antwort auf",
+            "translit": "dee AHNT-vort owf",
+            "pt": "answer to",
+            "en": "answer to",
+            "audio": "die Antwort auf"
+          },
+          {
+            "ru": "das Problem mit",
+            "translit": "dahs pro-BLAYM mit",
+            "pt": "problem with",
+            "en": "problem with",
+            "audio": "das Problem mit"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Nouns with prepositions",
+        "explicacao": "STEP 1: there are also NOUNS with a fixed preposition, and they work the same way: the preposition takes a case. STEP 2: with the accusative: «die Lust auf + Akk» («Ich habe Lust auf ein Eis» — I feel like an ice cream), «die Hoffnung auf + Akk» (hope for), «die Antwort auf + Akk» (answer to). STEP 3: with the dative: «die Angst vor + Dat» («Ich habe Angst vor Spinnen» — I'm afraid of spiders; afraid OF = vor), «das Interesse an + Dat» (interest in), «das Problem mit + Dat», «der Wunsch nach + Dat» (desire for), «die Frage nach + Dat» (question about). STEP 4: the preposition comes AFTER the noun: «Ich habe Angst vor dem Test.» STEP 5: with «haben»: «Ich habe Angst, Lust, Interesse, Hoffnung, Probleme, einen Wunsch …» — German \"has\" fear where English \"is\" afraid. STEP 6: with «dass» or «zu»: «Ich habe Angst davor, allein zu sein» (I'm afraid of being alone) / «Ich habe die Hoffnung, dass es klappt.»",
+        "tabela": [
+          {
+            "substantivo": "Angst vor + Dat",
+            "frase": "Ich habe Angst vor dem Test."
+          },
+          {
+            "substantivo": "Lust auf + Akk",
+            "frase": "Ich habe Lust auf ein Eis."
+          },
+          {
+            "substantivo": "Interesse an + Dat",
+            "frase": "Er hat Interesse an Musik."
+          },
+          {
+            "substantivo": "Hoffnung auf + Akk",
+            "frase": "Sie hat die Hoffnung auf eine Stelle."
+          },
+          {
+            "substantivo": "Wunsch nach + Dat",
+            "frase": "Ich habe den Wunsch nach Ruhe."
+          },
+          {
+            "substantivo": "Frage nach + Dat",
+            "frase": "Ich habe eine Frage nach dem Weg."
+          },
+          {
+            "substantivo": "Problem mit + Dat",
+            "frase": "Ich habe ein Problem mit dem Computer."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich habe Angst von dem Test.",
+            "certo": "Ich habe Angst vor dem Test.",
+            "motivo": "Fixed preposition: «Angst vor» (afraid OF = vor)."
+          },
+          {
+            "errado": "Ich habe Lust zu ein Eis.",
+            "certo": "Ich habe Lust auf ein Eis.",
+            "motivo": "«Lust auf» + noun."
+          },
+          {
+            "errado": "Ich habe Angst davor allein sein.",
+            "certo": "Ich habe Angst davor, allein zu sein.",
+            "motivo": "Looking ahead with «zu» and a comma."
+          }
+        ],
+        "tag": "Nouns"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say 6 sentences with nouns and prepositions: «Ich habe Angst vor … Ich habe Lust auf … Ich habe Interesse an …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write the 8 adjectives with prepositions and the case they take."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-061.json",
+  "responsavel": null
+}
