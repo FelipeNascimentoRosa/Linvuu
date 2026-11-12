@@ -1,0 +1,141 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 222,
+  "fase": 23,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Purpose and contrast: um … zu, damit, ohne … zu, statt … zu: Damit: so that",
+  "objetivo": "Lesson 56, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 56,
+    "titulo": "Purpose and contrast: um … zu, damit, ohne … zu, statt … zu",
+    "objetivo": "Express purpose with «um … zu» (same subject) and «damit» (different subjects), and use «ohne … zu» and «(an)statt … zu» to say \"without doing\" and \"instead of doing\".",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Damit: so that",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "damit",
+            "translit": "dah-MIT",
+            "pt": "so that",
+            "en": "so that",
+            "audio": "damit"
+          },
+          {
+            "ru": "verstehen",
+            "translit": "fair-SHTAY-en",
+            "pt": "to understand",
+            "en": "to understand",
+            "audio": "verstehen"
+          },
+          {
+            "ru": "erklären",
+            "translit": "air-KLAIR-en",
+            "pt": "to explain",
+            "en": "to explain",
+            "audio": "erklären"
+          },
+          {
+            "ru": "helfen",
+            "translit": "HEL-fen",
+            "pt": "to help",
+            "en": "to help",
+            "audio": "helfen"
+          },
+          {
+            "ru": "vergessen",
+            "translit": "fair-GESS-en",
+            "pt": "to forget",
+            "en": "to forget",
+            "audio": "vergessen"
+          },
+          {
+            "ru": "sicher",
+            "translit": "ZIKH-er",
+            "pt": "sure, safe",
+            "en": "safe",
+            "audio": "sicher"
+          },
+          {
+            "ru": "pünktlich",
+            "translit": "POONKT-likh",
+            "pt": "on time, punctual",
+            "en": "punctual",
+            "audio": "pünktlich"
+          },
+          {
+            "ru": "die Zukunft",
+            "translit": "dee TSOO-koonft",
+            "pt": "future",
+            "en": "future",
+            "audio": "die Zukunft"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Damit: purpose with different subjects",
+        "explicacao": "STEP 1: «DAMIT» (so that) opens a subordinate clause of purpose. The conjugated verb goes to the END. STEP 2: use it when the subject of the main clause and that of the subordinate clause are DIFFERENT: «Ich erkläre es dir, damit du es verstehst» (I'm explaining it to you so that you understand it). STEP 3: you can also use it with the SAME subject, but «um … zu» is more common and shorter. STEP 4: «damit» isn't «mit» (with); it's one word, a conjunction. STEP 5: the comma before «damit» is required. STEP 6: question «Wozu?» (what for?); answer with «um … zu» or «damit».",
+        "tabela": [
+          {
+            "sujeitos": "different",
+            "frase": "Ich erkläre es dir, damit du es verstehst."
+          },
+          {
+            "sujeitos": "different",
+            "frase": "Ich rufe dich an, damit du nicht vergisst."
+          },
+          {
+            "sujeitos": "different",
+            "frase": "Wir schreiben es auf, damit niemand es vergisst."
+          },
+          {
+            "sujeitos": "same (prefer um … zu)",
+            "frase": "Ich lerne, um die Prüfung zu bestehen."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich erkläre es dir, um du es verstehst.",
+            "certo": "Ich erkläre es dir, damit du es verstehst.",
+            "motivo": "Different subjects: «damit»."
+          },
+          {
+            "errado": "Ich erkläre es dir, damit du verstehst es.",
+            "certo": "Ich erkläre es dir, damit du es verstehst.",
+            "motivo": "Verb at the end."
+          },
+          {
+            "errado": "Ich lerne, damit ich die Prüfung bestehe.",
+            "certo": "Ich lerne, um die Prüfung zu bestehen.",
+            "motivo": "Same subject: prefer «um … zu»."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say 6 sentences with «damit»: «Ich erkläre es dir, damit du es … Ich schreibe es auf, damit niemand …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 sentences with «um … zu»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-056.json",
+  "responsavel": null
+}

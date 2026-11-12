@@ -1,0 +1,561 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 224,
+  "fase": 23,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Purpose and contrast: um … zu, damit, ohne … zu, statt … zu: Practice",
+  "objetivo": "Lesson 56, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 56,
+    "titulo": "Purpose and contrast: um … zu, damit, ohne … zu, statt … zu",
+    "objetivo": "Express purpose with «um … zu» (same subject) and «damit» (different subjects), and use «ohne … zu» and «(an)statt … zu» to say \"without doing\" and \"instead of doing\".",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Practice",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich lerne Deutsch, ___ in Berlin zu arbeiten.",
+            "opcoes": [
+              "um",
+              "damit",
+              "für"
+            ],
+            "gabarito": "um",
+            "explicacao": "Same subject: um … zu.",
+            "id": "de-056-e01"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"I listen to podcasts every day to improve my listening.\"",
+            "opcoes": [
+              "höre",
+              "mein",
+              "Hörverstehen",
+              "zu",
+              "jeden",
+              "verbessern.",
+              "Tag",
+              "Podcasts,",
+              "Ich",
+              "um"
+            ],
+            "gabarito": "Ich höre jeden Tag Podcasts, um mein Hörverstehen zu verbessern.",
+            "explicacao": "Write: Ich höre jeden Tag Podcasts, um mein Hörverstehen zu verbessern.",
+            "id": "de-056-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich erkläre es dir, ___ du es verstehst.",
+            "opcoes": [
+              "damit",
+              "um",
+              "weil"
+            ],
+            "gabarito": "damit",
+            "explicacao": "Different subjects: damit.",
+            "id": "de-056-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ich höre jeden Tag Podcasts, um mein Hörverstehen zu verbessern.",
+            "respostaEsperada": "Ich höre jeden Tag Podcasts, um mein Hörverstehen zu verbessern.",
+            "explicacao": "I listen to podcasts every day to improve my listening.",
+            "id": "de-056-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Er ging, ___ ein Wort zu sagen.",
+            "opcoes": [
+              "ohne",
+              "statt",
+              "um"
+            ],
+            "gabarito": "ohne",
+            "explicacao": "without doing.",
+            "id": "de-056-e03"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"I write the words down so that I don't forget them.\"",
+            "opcoes": [
+              "sie",
+              "ich",
+              "Ich",
+              "vergesse.",
+              "schreibe",
+              "auf,",
+              "damit",
+              "nicht",
+              "Wörter",
+              "die"
+            ],
+            "gabarito": "Ich schreibe die Wörter auf, damit ich sie nicht vergesse.",
+            "explicacao": "Write: Ich schreibe die Wörter auf, damit ich sie nicht vergesse.",
+            "id": "de-056-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Warum lernst du Deutsch?",
+            "respostaEsperada": "Warum lernst du Deutsch?",
+            "explicacao": "Why are you learning German?",
+            "id": "de-056-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ zu lernen, schaut er fern.",
+            "opcoes": [
+              "Statt",
+              "Ohne",
+              "Um"
+            ],
+            "gabarito": "Statt",
+            "explicacao": "instead of doing.",
+            "id": "de-056-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ich schreibe die Wörter auf, damit ich sie nicht vergesse.",
+            "respostaEsperada": "Ich schreibe die Wörter auf, damit ich sie nicht vergesse.",
+            "explicacao": "I write the words down so that I don't forget them.",
+            "id": "de-056-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich stehe früh auf, um den Zug ___ erreichen.",
+            "opcoes": [
+              "zu",
+              "um",
+              "für"
+            ],
+            "gabarito": "zu",
+            "explicacao": "um … zu.",
+            "id": "de-056-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Instead of watching TV every day, I'd rather read books.\"",
+            "opcoes": [
+              "lese",
+              "ich",
+              "fernzusehen,",
+              "Tag",
+              "Bücher.",
+              "lieber",
+              "jeden",
+              "Statt"
+            ],
+            "gabarito": "Statt jeden Tag fernzusehen, lese ich lieber Bücher.",
+            "explicacao": "Write: Statt jeden Tag fernzusehen, lese ich lieber Bücher.",
+            "id": "de-056-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich rufe dich an, damit du nicht ___. (vergessen)",
+            "opcoes": [
+              "vergisst",
+              "vergessen",
+              "zu vergessen"
+            ],
+            "gabarito": "vergisst",
+            "explicacao": "Subordinate clause: verb at the end.",
+            "id": "de-056-e06"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Statt jeden Tag fernzusehen, lese ich lieber Bücher.",
+            "respostaEsperada": "Statt jeden Tag fernzusehen, lese ich lieber Bücher.",
+            "explicacao": "Instead of watching TV every day, I'd rather read books.",
+            "id": "de-056-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Ich lerne Deutsch, um in Berlin zu arbeiten.",
+            "respostaEsperada": "Ich lerne Deutsch, um in Berlin zu arbeiten.",
+            "explicacao": "I'm learning German in order to work in Berlin.",
+            "id": "de-056-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «erklären» mean?",
+            "audio": "erklären",
+            "opcoes": [
+              "to explain",
+              "future",
+              "exam, test",
+              "so that"
+            ],
+            "gabarito": "to explain",
+            "explicacao": "«erklären» = to explain.",
+            "id": "de-056-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Um … zu» needs:",
+            "opcoes": [
+              "the same subject",
+              "different subjects",
+              "no subject"
+            ],
+            "gabarito": "the same subject",
+            "explicacao": "Ich lerne, um … zu.",
+            "id": "de-056-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «bestehen» mean?",
+            "audio": "bestehen",
+            "opcoes": [
+              "money",
+              "to pass (an exam)",
+              "to reach, to achieve",
+              "so that"
+            ],
+            "gabarito": "to pass (an exam)",
+            "explicacao": "«bestehen» = to pass (an exam).",
+            "id": "de-056-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Damit» opens a clause with the verb:",
+            "opcoes": [
+              "at the end",
+              "in 2nd position",
+              "at the beginning"
+            ],
+            "gabarito": "at the end",
+            "explicacao": "Subordinate clause.",
+            "id": "de-056-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «sparen» mean?",
+            "audio": "sparen",
+            "opcoes": [
+              "on time, punctual",
+              "so that",
+              "to save (money)",
+              "to improve"
+            ],
+            "gabarito": "to save (money)",
+            "explicacao": "«sparen» = to save (money).",
+            "id": "de-056-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Und wie lernst du?",
+            "respostaEsperada": "Und wie lernst du?",
+            "explicacao": "And how do you study?",
+            "id": "de-056-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «pünktlich» mean?",
+            "audio": "pünktlich",
+            "opcoes": [
+              "to understand",
+              "on time, punctual",
+              "exam, test",
+              "to forget"
+            ],
+            "gabarito": "on time, punctual",
+            "explicacao": "«pünktlich» = on time, punctual.",
+            "id": "de-056-x10",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Ohne … zu» means:",
+            "opcoes": [
+              "without doing",
+              "in order to do",
+              "instead of doing"
+            ],
+            "gabarito": "without doing",
+            "explicacao": "Ohne ein Wort zu sagen.",
+            "id": "de-056-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «verbessern» mean?",
+            "audio": "verbessern",
+            "opcoes": [
+              "on time, punctual",
+              "future",
+              "to improve",
+              "to reach, to achieve"
+            ],
+            "gabarito": "to improve",
+            "explicacao": "«verbessern» = to improve.",
+            "id": "de-056-x11",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"I'm learning German to work in Berlin.\"",
+            "opcoes": [
+              "Ich",
+              "lerne",
+              "Deutsch",
+              "um",
+              "in",
+              "Berlin",
+              "zu",
+              "arbeiten"
+            ],
+            "gabarito": "Ich lerne Deutsch, um in Berlin zu arbeiten.",
+            "explicacao": "um … zu.",
+            "id": "de-056-e10"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"Instead of studying, he watches TV.\"",
+            "opcoes": [
+              "Statt",
+              "zu",
+              "lernen",
+              "schaut",
+              "er",
+              "fern"
+            ],
+            "gabarito": "Statt zu lernen, schaut er fern.",
+            "explicacao": "statt … zu.",
+            "id": "de-056-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «der Zweck» mean?",
+            "audio": "der Zweck",
+            "opcoes": [
+              "to improve",
+              "on time, punctual",
+              "to understand",
+              "purpose"
+            ],
+            "gabarito": "purpose",
+            "explicacao": "«der Zweck» = purpose.",
+            "id": "de-056-x12",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Ich spreche mit Muttersprachlern, ohne Angst zu haben.",
+            "respostaEsperada": "Ich spreche mit Muttersprachlern, ohne Angst zu haben.",
+            "explicacao": "I talk with native speakers without being afraid.",
+            "id": "de-056-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Ich schreibe die Wörter auf, damit ich sie nicht vergesse",
+            "opcoes": [
+              "sie",
+              "Ich",
+              "schreibe",
+              "damit",
+              "vergesse",
+              "die",
+              "Wörter",
+              "ich",
+              "auf,",
+              "nicht"
+            ],
+            "gabarito": "Ich schreibe die Wörter auf, damit ich sie nicht vergesse",
+            "explicacao": "Write: Ich schreibe die Wörter auf, damit ich sie nicht vergesse",
+            "id": "de-056-x13",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ich schreibe die Wörter auf, damit ich sie nicht vergesse",
+            "opcoes": [
+              "Ich schreibe die Wörter auf, damit ich sie nicht vergesse",
+              "Ich schreibe die Wörter auf, um sie nicht zu vergessen",
+              "Ich vergesse die Wörter nicht"
+            ],
+            "gabarito": "Ich schreibe die Wörter auf, damit ich sie nicht vergesse",
+            "explicacao": "damit + verb at the end.",
+            "id": "de-056-e12"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Er ging, ohne ein Wort zu sagen",
+            "opcoes": [
+              "zu",
+              "ein",
+              "Wort",
+              "sagen",
+              "Er",
+              "ohne",
+              "ging,"
+            ],
+            "gabarito": "Er ging, ohne ein Wort zu sagen",
+            "explicacao": "Write: Er ging, ohne ein Wort zu sagen",
+            "id": "de-056-x14",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Er ging, ohne ein Wort zu sagen",
+            "respostaEsperada": "Er ging, ohne ein Wort zu sagen",
+            "explicacao": "ohne … zu.",
+            "id": "de-056-e13"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ich schreibe die Wörter auf, damit ich sie nicht vergesse",
+            "respostaEsperada": "Ich schreibe die Wörter auf, damit ich sie nicht vergesse",
+            "explicacao": "Write: Ich schreibe die Wörter auf, damit ich sie nicht vergesse",
+            "id": "de-056-x15",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich stehe früh auf, ___ den Zug zu erreichen.",
+            "opcoes": [
+              "um",
+              "damit",
+              "ohne",
+              "statt"
+            ],
+            "gabarito": "um",
+            "explicacao": "Same subject: «um … zu».",
+            "id": "de-056-m01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich erkläre es dir, ___ du es verstehst.",
+            "opcoes": [
+              "damit",
+              "um",
+              "ohne",
+              "statt"
+            ],
+            "gabarito": "damit",
+            "explicacao": "Different subjects: «damit».",
+            "id": "de-056-m02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Er ging, ___ ein Wort zu sagen.",
+            "opcoes": [
+              "ohne",
+              "um",
+              "damit",
+              "statt"
+            ],
+            "gabarito": "ohne",
+            "explicacao": "«ohne … zu» = without + -ing.",
+            "id": "de-056-m03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ zu lernen, schaut er fern. (instead of)",
+            "opcoes": [
+              "Statt",
+              "Ohne",
+              "Um",
+              "Damit"
+            ],
+            "gabarito": "Statt",
+            "explicacao": "«statt … zu» = instead of.",
+            "id": "de-056-m04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Ich lerne Deutsch, um ich in Berlin zu arbeiten.",
+              "Ich lerne Deutsch, um in Berlin zu arbeiten.",
+              "Ich lerne Deutsch, zu in Berlin arbeiten."
+            ],
+            "gabarito": "Ich lerne Deutsch, um in Berlin zu arbeiten.",
+            "explicacao": "In «um … zu», the subject isn't repeated.",
+            "id": "de-056-m05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Ich rufe dich an, um du nicht vergisst.",
+              "Ich rufe dich an, damit du nicht vergisst.",
+              "Ich rufe dich an, damit du vergisst nicht."
+            ],
+            "gabarito": "Ich rufe dich an, damit du nicht vergisst.",
+            "explicacao": "Different subjects: «damit», verb at the end.",
+            "id": "de-056-m06"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: I'm studying to pass the exam.",
+            "opcoes": [
+              "Ich",
+              "lerne,",
+              "um",
+              "die",
+              "Prüfung",
+              "zu",
+              "bestehen."
+            ],
+            "gabarito": "Ich lerne, um die Prüfung zu bestehen.",
+            "explicacao": "Purpose with the same subject.",
+            "id": "de-056-m07"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write 5 sentences: one with «um … zu», one with «damit», one with «ohne … zu», one with «statt … zu» and one with «ohne dass».",
+            "respostaEsperada": "Ich lerne Deutsch, um in Berlin zu arbeiten. Ich erkläre es dir, damit du es verstehst. Er ging, ohne ein Wort zu sagen. Statt zu lernen, schaut er fern. Er ging, ohne dass jemand es merkte.",
+            "id": "de-056-e14"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Record yourself explaining your goals and how you reach them, with the four constructions."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write a 6-sentence text about how you study, with the four constructions."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-056.json",
+  "responsavel": null
+}
