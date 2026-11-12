@@ -1,0 +1,144 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 170,
+  "fase": 17,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Health and the body: at the doctor's and the pharmacy: Symptoms, medicines and the pharmacy",
+  "objetivo": "Lesson 43, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 43,
+    "titulo": "Health and the body: at the doctor's and the pharmacy",
+    "objetivo": "Name the parts of the body, say what hurts and what your symptoms are, make an appointment, understand the doctor's instructions (imperative), and buy medicine at the pharmacy.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Symptoms, medicines and the pharmacy",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "das Fieber",
+            "translit": "dahs FEE-ber",
+            "pt": "fever",
+            "en": "fever",
+            "audio": "das Fieber"
+          },
+          {
+            "ru": "der Husten",
+            "translit": "dair HOO-sten",
+            "pt": "cough",
+            "en": "cough",
+            "audio": "der Husten"
+          },
+          {
+            "ru": "der Schnupfen",
+            "translit": "dair SHNOOP-fen",
+            "pt": "runny nose, sniffles",
+            "en": "cold",
+            "audio": "der Schnupfen"
+          },
+          {
+            "ru": "die Erkältung",
+            "translit": "dee air-KEL-toong",
+            "pt": "cold (illness)",
+            "en": "cold",
+            "audio": "die Erkältung"
+          },
+          {
+            "ru": "die Tablette",
+            "translit": "dee tah-BLET-eh",
+            "pt": "pill, tablet",
+            "en": "tablet",
+            "audio": "die Tablette"
+          },
+          {
+            "ru": "das Medikament",
+            "translit": "dahs meh-dee-kah-MENT",
+            "pt": "medicine, medication",
+            "en": "medicine",
+            "audio": "das Medikament"
+          },
+          {
+            "ru": "das Rezept",
+            "translit": "dahs reh-TSEPT",
+            "pt": "prescription",
+            "en": "prescription",
+            "audio": "das Rezept"
+          },
+          {
+            "ru": "die Apotheke",
+            "translit": "dee ah-po-TAY-keh",
+            "pt": "pharmacy",
+            "en": "pharmacy",
+            "audio": "die Apotheke"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Symptoms, instructions and medicine",
+        "explicacao": "STEP 1: for symptoms, use «haben»: «Ich habe Fieber» (I have a fever — no article!), «Ich habe Husten» (I have a cough), «Ich habe eine Erkältung» (I have a cold). STEP 2: the doctor gives instructions in the formal IMPERATIVE (lesson 13): «Trinken Sie viel Tee», «Bleiben Sie im Bett», «Nehmen Sie die Tabletten dreimal täglich.» STEP 3: dosage: «einmal / zweimal / dreimal täglich» (once / twice / three times a day), «vor dem Essen» (before meals), «nach dem Essen» (after meals). STEP 4: at the pharmacy: «Ich hätte gern etwas gegen Kopfschmerzen» (I'd like something for a headache) — English \"for\" becomes «gegen» (against) + accusative. STEP 5: «Ich brauche ein Rezept» (I need a prescription) and «Haben Sie ein Rezept?» (Do you have a prescription?). False friend: «Rezept» means prescription (or recipe), never \"receipt\" (that's «die Quittung»).",
+        "tabela": [
+          {
+            "situacao": "symptom",
+            "frase": "Ich habe Fieber und Husten."
+          },
+          {
+            "situacao": "doctor's instruction",
+            "frase": "Bleiben Sie drei Tage im Bett."
+          },
+          {
+            "situacao": "dosage",
+            "frase": "Nehmen Sie die Tablette dreimal täglich nach dem Essen."
+          },
+          {
+            "situacao": "at the pharmacy",
+            "frase": "Ich hätte gern etwas gegen Kopfschmerzen."
+          },
+          {
+            "situacao": "prescription",
+            "frase": "Haben Sie ein Rezept?"
+          },
+          {
+            "situacao": "advice",
+            "frase": "Trinken Sie viel Wasser."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich hätte gern etwas für Kopfschmerzen.",
+            "certo": "Ich hätte gern etwas gegen Kopfschmerzen.",
+            "motivo": "Medicine \"against\": gegen (English \"for\")."
+          },
+          {
+            "errado": "Nehmen Sie dreimal täglich die Tablette.",
+            "certo": "Nehmen Sie die Tablette dreimal täglich.",
+            "motivo": "Natural order: object before frequency (both exist; the first sounds worse)."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe out loud your symptoms, what the doctor says and what you ask for at the pharmacy."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write the 12 body parts with their articles."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-043.json",
+  "responsavel": null
+}
