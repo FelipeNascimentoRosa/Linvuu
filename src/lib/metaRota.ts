@@ -113,7 +113,7 @@ const TX = {
  */
 const SEO_EN = {
   cursosT: 'Online language courses explained in English',
-  cursosD: 'Language courses for English speakers: Brazilian Portuguese, French, Russian and German fully explained in English; Spanish partly. Two free lessons.',
+  cursosD: 'Language courses for English speakers: Spanish, German, French, Russian and Brazilian Portuguese, fully explained in English. Two free lessons.',
   assinaturaT: 'Subscription: monthly and 12-month plans',
   assinaturaD: 'Learn languages with Linvuu: a monthly or 12-month plan, priced in US dollars, and the first two lessons of every course free. No card needed to start.',
   privT: 'Privacy policy: what data Linvuu collects',
@@ -129,7 +129,7 @@ const SEO_EN = {
    * francês e português do Brasil (content/gramatica/<id>.en.json). Ao traduzir outra, atualize a frase aqui.
    */
   gramaticaT: 'Grammar guides explained in English',
-  gramaticaD: 'Grammar topics for Spanish, Russian, French and Brazilian Portuguese, explained in English with tables, examples and the mistakes each language hides from you.',
+  gramaticaD: 'Grammar for Spanish, German, Russian, French and Brazilian Portuguese, explained in English with tables, examples and the mistakes each language hides.',
   entrarT: 'Sign in to your Linvuu account',
   entrarD: 'Sign in to your Linvuu account with e-mail or Google to pick up the course where you stopped, review your answers and keep your progress saved.',
   cadastroT: 'Create your Linvuu account',
@@ -189,7 +189,7 @@ const LINGUAS: Record<string, Record<string, string>> = {
 };
 const HOME = {
   'pt-BR': { titulo: HOME_BR.tituloSeo, descricao: HOME_BR.descricao },
-  en: { titulo: 'Language courses for English speakers', descricao: 'Courses for English speakers: Brazilian Portuguese, French, Russian and German fully explained in English; Spanish partly. Try 2 free lessons.' },
+  en: { titulo: 'Language courses for English speakers', descricao: 'Courses for English speakers: Spanish, German, French, Russian and Brazilian Portuguese, fully explained in English. Try 2 free lessons.' },
 };
 
 /**
