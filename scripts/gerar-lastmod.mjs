@@ -62,6 +62,7 @@ function fontesDaPagina(caminho, locale) {
     case '/por-que-linvuu': return ['src/pages/PorQue.tsx', 'src/lib/porQue.ts'];
     case '/contato': return ['src/pages/Contato.tsx', 'src/lib/institucional.ts', 'src/config/contato.ts'];
     case '/ex-alunos-udemy': return ['src/pages/ExAlunosUdemy.tsx'];
+    case '/gramatica': return ['src/pages/Gramatica.tsx'];
     case '/livros': return ['src/pages/Livros.tsx', ...fs.readdirSync(path.join(raiz, 'content', 'livros')).sort().map((id) => `content/livros/${id}/sumario.json`)];
   }
   let m;

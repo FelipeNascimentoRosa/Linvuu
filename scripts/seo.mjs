@@ -41,10 +41,9 @@ const alvoPadrao = (g) => {
 grupos.push({ p: '/', em: todos() }, { p: '/cursos', em: todos(), anot: todos() }, { p: '/assinatura', em: todos(), anot: todos() });
 // Sobre, Por que Linvuu e Contato: em todas as línguas (texto próprio em cada uma — Contato passou a existir em inglês em 09/11/2026). Livros e Ex-alunos: só em português. Cada capítulo de amostra publicado (content/livros/<idioma>/cap-NN.json) entra no sitemap.
 grupos.push({ p: '/portugues', em: ['en'] }, { p: '/russo-online', em: ['pt-BR', 'en'], anot: ['pt-BR', 'en'] }, { p: '/sobre', em: todos(), anot: todos() }, { p: '/por-que-linvuu', em: todos(), anot: todos() }, { p: '/contato', em: todos(), anot: todos() }, { p: '/ex-alunos-udemy', em: ['pt-BR'] }, { p: '/livros', em: ['pt-BR'] });
-// Hub da gramática: NÃO entra aqui. O React trata `/gramatica` como alias — `src/pages/Gramatica.tsx` faz
-// `<Navigate to={/gramatica/<primeiro idioma>}>` —, então o servidor serviria um hub que o navegador abandona;
-// o check `paridade-head` do CI reprovou exatamente isso em 11/11/2026 (título, canonical e hreflang divergentes).
-// Para indexar o hub é preciso primeiro uma página de hub de verdade no React (ver PENDENCIAS.md).
+// Hub da gramática: desde 12/11/2026 é uma página de verdade (src/pages/Gramatica.tsx sem id lista as gramáticas
+// do domínio), com o mesmo título no <head> e no <h1>; por isso entra no sitemap nas duas línguas.
+grupos.push({ p: '/gramatica', em: todos(), anot: todos() });
 // As duas páginas legais e a de exclusão de conta já são páginas reais nos dois idiomas e passaram na paridade.
 grupos.push({ p: '/privacidade', em: todos(), anot: todos() }, { p: '/termos', em: todos(), anot: todos() }, { p: '/excluir-conta', em: todos(), anot: todos() });
 const dirLivros = path.join(raiz, 'content', 'livros');
