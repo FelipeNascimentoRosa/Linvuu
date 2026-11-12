@@ -1,0 +1,164 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 133,
+  "fase": 14,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Adjectives 3: without an article (kalter Kaffee, gute Freunde): No article: nominative and accusative",
+  "objetivo": "Lesson 34, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 34,
+    "titulo": "Adjectives 3: without an article (kalter Kaffee, gute Freunde)",
+    "objetivo": "Give the adjective its ending when there's no article (uncountable nouns, plurals, orders and prices), using the endings of der, die, das, and bring the three adjective families together in one chart.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "No article: nominative and accusative",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "das Getränk",
+            "translit": "dahs geh-TRENK",
+            "pt": "drink, beverage",
+            "en": "drink",
+            "audio": "das Getränk"
+          },
+          {
+            "ru": "der Salat",
+            "translit": "dair zah-LAHT",
+            "pt": "salad",
+            "en": "salad",
+            "audio": "der Salat"
+          },
+          {
+            "ru": "das Obst",
+            "translit": "dahs OHPST",
+            "pt": "fruit (in general)",
+            "en": "fruit",
+            "audio": "das Obst"
+          },
+          {
+            "ru": "das Gemüse",
+            "translit": "dahs geh-MÜ-zeh",
+            "pt": "vegetables",
+            "en": "vegetables",
+            "audio": "das Gemüse"
+          },
+          {
+            "ru": "das Öl",
+            "translit": "dahs ÖL",
+            "pt": "oil",
+            "en": "oil",
+            "audio": "das Öl"
+          },
+          {
+            "ru": "der Reis",
+            "translit": "dair RICE",
+            "pt": "rice",
+            "en": "rice",
+            "audio": "der Reis"
+          },
+          {
+            "ru": "kalt",
+            "translit": "KAHLT",
+            "pt": "cold",
+            "en": "cold",
+            "audio": "kalt"
+          },
+          {
+            "ru": "heiß",
+            "translit": "HICE",
+            "pt": "hot",
+            "en": "hot",
+            "audio": "heiß"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "Adjectives with no article, step by step",
+        "explicacao": "STEP 1: with no article (neither der nor ein), the ADJECTIVE has to show the case ALL BY ITSELF. STEP 2: it borrows the endings of the definite article: «der» → -er, «die» → -e, «das» → -es, plural «die» → -e. STEP 3: nominative: kalter Kaffee (m), kalte Milch (f), kaltes Wasser (n), kalte Getränke (plural). STEP 4: accusative: as always, only the masculine changes: kalten Kaffee (-en); the rest is the same as the nominative. STEP 5: you'll use this with UNCOUNTABLE nouns (Kaffee, Milch, Wasser, Brot, Obst), with PLURALS without an article (gute Freunde — good friends), and in orders and prices: «Ich möchte kalten Kaffee» (I'd like iced coffee), «Wir haben frisches Brot» (we have fresh bread).",
+        "comparacao": "English says \"cold coffee\", \"fresh bread\", \"good friends\" without a second thought. These are exactly the cases where German has no article — so the adjective must carry the case with the endings of «der, die, das»: kalter Kaffee, frisches Brot, gute Freunde.",
+        "exemplos": [
+          {
+            "ru": "Kalter Kaffee schmeckt nicht gut.",
+            "pt": "Cold coffee doesn't taste good."
+          },
+          {
+            "ru": "Ich möchte kalten Kaffee.",
+            "pt": "I'd like iced coffee."
+          },
+          {
+            "ru": "Wir haben frisches Brot.",
+            "pt": "We have fresh bread."
+          },
+          {
+            "ru": "Ich habe gute Freunde.",
+            "pt": "I have good friends."
+          }
+        ],
+        "tabela": [
+          {
+            "genero": "masculine",
+            "nominativo": "kalter Kaffee",
+            "acusativo": "kalten Kaffee"
+          },
+          {
+            "genero": "feminine",
+            "nominativo": "kalte Milch",
+            "acusativo": "kalte Milch"
+          },
+          {
+            "genero": "neuter",
+            "nominativo": "kaltes Wasser",
+            "acusativo": "kaltes Wasser"
+          },
+          {
+            "genero": "plural",
+            "nominativo": "kalte Getränke",
+            "acusativo": "kalte Getränke"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich möchte kalter Kaffee.",
+            "certo": "Ich möchte kalten Kaffee.",
+            "motivo": "Masculine accusative: «-en»."
+          },
+          {
+            "errado": "Wir haben frisch Brot.",
+            "certo": "Wir haben frisches Brot.",
+            "motivo": "With no article, the adjective carries the ending (-es)."
+          },
+          {
+            "errado": "Ich habe gut Freunde.",
+            "certo": "Ich habe gute Freunde.",
+            "motivo": "Plural with no article: «-e»."
+          }
+        ],
+        "tag": "Adjectives and possessives"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Say 6 sentences about food and drink with no article: «Ich möchte kalten Kaffee. Wir haben frisches Brot. Ich esse gern frisches Obst.»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write the adjectives declined after der/die/das and after ein/mein/kein, in the nominative and accusative."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-034.json",
+  "responsavel": null
+}

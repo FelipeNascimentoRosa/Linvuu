@@ -1,0 +1,112 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 78,
+  "fase": 8,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "A1 review and mock test: Reading and listening (A1 format, original)",
+  "objetivo": "Lesson 20, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 20,
+    "titulo": "A1 review and mock test",
+    "objetivo": "Review all of A1 on one map, practice reading, listening, writing and speaking in the A1 exam format (Hören, Lesen, Schreiben, Sprechen), fix the most common mistakes and take an original practice test.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Reading and listening (A1 format, original)",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "texto",
+        "min": 10,
+        "titulo": "Eine E-Mail / An email",
+        "ru": "Liebe Mia, wie geht es dir? Ich wohne jetzt in München. Meine Wohnung hat zwei Zimmer und einen Balkon. Am Samstag habe ich Geburtstag. Ich mache eine Party. Sie beginnt um 18 Uhr. Kannst du kommen? Bitte bring Musik mit. Viele Grüße, Anna",
+        "pt": "Dear Mia, how are you? I live in Munich now. My apartment has two rooms and a balcony. Saturday is my birthday. I'm having a party. It starts at 6 pm. Can you come? Please bring some music. Hugs, Anna",
+        "perguntas": [
+          {
+            "pergunta": "Wo wohnt Anna jetzt?",
+            "resposta": "In München"
+          },
+          {
+            "pergunta": "Wann hat Anna Geburtstag?",
+            "resposta": "Am Samstag"
+          },
+          {
+            "pergunta": "What time does the party start?",
+            "resposta": "At 6 pm"
+          },
+          {
+            "pergunta": "Was soll Mia mitbringen?",
+            "resposta": "Musik"
+          }
+        ]
+      },
+      {
+        "tipo": "dialogo",
+        "min": 10,
+        "titulo": "Am Telefon / On the phone",
+        "contexto": "Two friends make plans.",
+        "linhas": [
+          {
+            "personagem": "Paul",
+            "ru": "— Hallo Lea, hier ist Paul. Hast du morgen Zeit?",
+            "pt": "— Hi, Lea, it's Paul. Do you have time tomorrow?",
+            "audio": "Hallo Lea, hier ist Paul. Hast du morgen Zeit?",
+            "rotulo": "Paul"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Morgen? Nein, leider nicht. Ich muss arbeiten. Aber am Freitag habe ich Zeit.",
+            "pt": "— Tomorrow? No, unfortunately. I have to work. But I have time on Friday.",
+            "audio": "Morgen? Nein, leider nicht. Ich muss arbeiten. Aber am Freitag habe ich Zeit.",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Gut. Möchtest du ins Kino gehen?",
+            "pt": "— Great. Do you want to go to the movies?",
+            "audio": "Gut. Möchtest du ins Kino gehen?",
+            "rotulo": "Paul"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Ja, gern! Um wie viel Uhr?",
+            "pt": "— Yes, gladly! What time?",
+            "audio": "Ja, gern! Um wie viel Uhr?",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Um halb acht. Ich hole dich ab.",
+            "pt": "— At seven-thirty. I'll pick you up.",
+            "audio": "Um halb acht. Ich hole dich ab.",
+            "rotulo": "Paul"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Prima! Dann bis Freitag.",
+            "pt": "— Great! See you Friday, then.",
+            "audio": "Prima! Dann bis Freitag.",
+            "rotulo": "Lea"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Answer out loud, as yourself: where you live, when your birthday is and what you're doing on Friday evening."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Read the email and dialogue below out loud before you start."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-020.json",
+  "responsavel": null
+}

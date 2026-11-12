@@ -1,0 +1,130 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 147,
+  "fase": 15,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Subordinate clauses 2: wenn, ob and indirect questions: Wenn, ob, weil and dass together",
+  "objetivo": "Lesson 37, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 37,
+    "titulo": "Subordinate clauses 2: wenn, ob and indirect questions",
+    "objetivo": "Build sentences with «wenn» (if, whenever), «ob» (whether — in indirect questions) and question words (wo, wann, warum…) in indirect questions, with the verb at the end of the subordinate clause.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Wenn, ob, weil and dass together",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "The four conjunctions side by side",
+        "explicacao": "STEP 1: all four send the conjugated verb to the END of the subordinate clause: weil (because), dass (that), wenn (if, whenever) and ob (whether). STEP 2: the trick to keep them apart: «dass» introduces a FACT; «ob» introduces a QUESTION; «wenn» introduces a CONDITION or a habit; «weil» introduces a REASON. STEP 3: with more than one subordinate clause, apply the rule to each: «Ich weiß, dass er kommt, wenn er Zeit hat» (I know that he'll come if he has time).",
+        "tabela": [
+          {
+            "conjuncao": "weil",
+            "ideia": "reason",
+            "frase": "Ich bleibe, weil es regnet."
+          },
+          {
+            "conjuncao": "dass",
+            "ideia": "a fact",
+            "frase": "Ich weiß, dass es regnet."
+          },
+          {
+            "conjuncao": "wenn",
+            "ideia": "condition or habit",
+            "frase": "Wenn es regnet, bleibe ich."
+          },
+          {
+            "conjuncao": "ob",
+            "ideia": "a question",
+            "frase": "Ich weiß nicht, ob es regnet."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 10,
+        "titulo": "Eine Auskunft / Asking for information",
+        "contexto": "A traveler asks a station employee for information.",
+        "linhas": [
+          {
+            "personagem": "Tom",
+            "ru": "— Entschuldigung, können Sie mir sagen, wann der Zug nach Berlin abfährt?",
+            "pt": "— Excuse me, can you tell me when the train to Berlin leaves?",
+            "audio": "Entschuldigung, können Sie mir sagen, wann der Zug nach Berlin abfährt?",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Beamter",
+            "ru": "— Der Zug fährt um vierzehn Uhr fünfzehn ab. Wenn Sie schnell sind, bekommen Sie noch eine Fahrkarte.",
+            "pt": "— The train leaves at 2:15 p.m. If you hurry, you can still get a ticket.",
+            "audio": "Der Zug fährt um vierzehn Uhr fünfzehn ab. Wenn Sie schnell sind, bekommen Sie noch eine Fahrkarte.",
+            "rotulo": "Beamter"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Wissen Sie auch, ob der Zug Verspätung hat?",
+            "pt": "— Do you also know whether the train is delayed?",
+            "audio": "Wissen Sie auch, ob der Zug Verspätung hat?",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Beamter",
+            "ru": "— Ich weiß nicht, ob er pünktlich ist. Ich sehe nach.",
+            "pt": "— I don't know whether it's on time. I'll check.",
+            "audio": "Ich weiß nicht, ob er pünktlich ist. Ich sehe nach.",
+            "rotulo": "Beamter"
+          },
+          {
+            "personagem": "Beamter",
+            "ru": "— Der Zug hat zehn Minuten Verspätung, weil es einen Unfall gab.",
+            "pt": "— The train is ten minutes late, because there was an accident.",
+            "audio": "Der Zug hat zehn Minuten Verspätung, weil es einen Unfall gab.",
+            "rotulo": "Beamter"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Danke. Wo kann ich eine Fahrkarte kaufen?",
+            "pt": "— Thank you. Where can I buy a ticket?",
+            "audio": "Danke. Wo kann ich eine Fahrkarte kaufen?",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Beamter",
+            "ru": "— Dort am Schalter. Ich glaube, dass er noch offen ist.",
+            "pt": "— Over there at the counter. I think it's still open.",
+            "audio": "Dort am Schalter. Ich glaube, dass er noch offen ist.",
+            "rotulo": "Beamter"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Vielen Dank! Ich frage dort, ob ich noch einen Platz bekomme.",
+            "pt": "— Thank you very much! I'll ask there whether I can still get a seat.",
+            "audio": "Vielen Dank! Ich frage dort, ob ich noch einen Platz bekomme.",
+            "rotulo": "Tom"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Ask for information out loud with indirect questions: «Können Sie mir sagen, wo … / wann … / ob …?»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write one sentence with each conjunction: weil, dass, wenn and ob."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-037.json",
+  "responsavel": null
+}

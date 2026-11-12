@@ -1,0 +1,198 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 14,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Present tense verbs and word order: Word order and questions",
+  "objetivo": "Lesson 4, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 4,
+    "titulo": "Present tense verbs and word order",
+    "objetivo": "Conjugate regular verbs in the present, put the verb in second position, and ask simple questions and make negatives.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Word order and questions",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Work it out yourself",
+        "explicacao": "STEP 1: read the four sentences and notice where the verb and the subject are. STEP 2: Questions: STEP 3: which word never moves in any of the four? STEP 4: what happens to Tom when something else opens the sentence? STEP 5: in sentence 4, how many words come before the verb?",
+        "tabela": [],
+        "tag": "Discover"
+      },
+      {
+        "tipo": "palavras",
+        "min": 7,
+        "itens": [
+          {
+            "ru": "heute",
+            "translit": "HOY-teh",
+            "pt": "today",
+            "en": "today",
+            "audio": "heute"
+          },
+          {
+            "ru": "morgen",
+            "translit": "MOR-gen",
+            "pt": "tomorrow",
+            "en": "tomorrow",
+            "audio": "morgen"
+          },
+          {
+            "ru": "jetzt",
+            "translit": "YETST",
+            "pt": "now",
+            "en": "now",
+            "audio": "jetzt"
+          },
+          {
+            "ru": "oft",
+            "translit": "OFT",
+            "pt": "often",
+            "en": "often",
+            "audio": "oft"
+          },
+          {
+            "ru": "immer",
+            "translit": "IM-er",
+            "pt": "always",
+            "en": "always",
+            "audio": "immer"
+          },
+          {
+            "ru": "nie",
+            "translit": "NEE",
+            "pt": "never",
+            "en": "never",
+            "audio": "nie"
+          },
+          {
+            "ru": "manchmal",
+            "translit": "MAHNKH-mahl",
+            "pt": "sometimes",
+            "en": "sometimes",
+            "audio": "manchmal"
+          },
+          {
+            "ru": "gern",
+            "translit": "GEHRN",
+            "pt": "gladly; (to like doing)",
+            "en": "gladly",
+            "audio": "gern"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Verb in second position, questions and negatives",
+        "explicacao": "The conjugated verb always sits in 2nd position. If the sentence starts with something else (today, tomorrow), the subject moves to after the verb: «Heute arbeite ich.» In yes/no questions, the verb comes 1st — no \"do\" needed: «Wohnst du in Berlin?» (Do you live in Berlin?). In questions with a question word, the word comes 1st and the verb 2nd: «Wo wohnst du?» The negative «nicht» goes after the verb («Ich arbeite nicht» = I don't work) or before what it negates («Ich wohne nicht in Berlin»). To say you like doing something, put «gern» after the verb: «Ich lerne gern Deutsch» (I like learning German).",
+        "tabelas": [
+          {
+            "titulo": "The positions in a sentence",
+            "linhas": [
+              {
+                "pos1": "Ich",
+                "pos2": "wohne",
+                "resto": "in Berlin."
+              },
+              {
+                "pos1": "Heute",
+                "pos2": "arbeite",
+                "resto": "ich nicht."
+              },
+              {
+                "pos1": "Wo",
+                "pos2": "wohnst",
+                "resto": "du?"
+              },
+              {
+                "pos1": "Wohnst",
+                "pos2": "du",
+                "resto": "in Berlin?"
+              }
+            ]
+          },
+          {
+            "titulo": "Question words",
+            "linhas": [
+              {
+                "pergunta": "wer",
+                "pt": "who",
+                "exemplo": "Wer ist das?"
+              },
+              {
+                "pergunta": "was",
+                "pt": "what",
+                "exemplo": "Was machst du?"
+              },
+              {
+                "pergunta": "wo",
+                "pt": "where",
+                "exemplo": "Wo wohnst du?"
+              },
+              {
+                "pergunta": "woher",
+                "pt": "where from",
+                "exemplo": "Woher kommst du?"
+              },
+              {
+                "pergunta": "wohin",
+                "pt": "where to",
+                "exemplo": "Wohin reist du?"
+              },
+              {
+                "pergunta": "wann",
+                "pt": "when",
+                "exemplo": "Wann arbeitest du?"
+              },
+              {
+                "pergunta": "wie",
+                "pt": "how",
+                "exemplo": "Wie heißt du?"
+              },
+              {
+                "pergunta": "warum",
+                "pt": "why",
+                "exemplo": "Warum lernst du Deutsch?"
+              }
+            ]
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich heute arbeite.",
+            "certo": "Heute arbeite ich.",
+            "motivo": "The conjugated verb goes in 2nd position."
+          },
+          {
+            "errado": "Wo du wohnst?",
+            "certo": "Wo wohnst du?",
+            "motivo": "Question word + verb + subject."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "producao",
+        "min": 4,
+        "enunciado": "Say: «Heute arbeite ich. Wo wohnst du? Ich lerne gern Deutsch.»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Conjugate «wohnen» and «arbeiten» out loud in all six forms."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-004.json",
+  "responsavel": null
+}

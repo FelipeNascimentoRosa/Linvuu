@@ -1,0 +1,146 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 213,
+  "fase": 22,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Konjunktiv II 1: unreal situations and wishes: Wenn + Konjunktiv II",
+  "objetivo": "Lesson 54, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 54,
+    "titulo": "Konjunktiv II 1: unreal situations and wishes",
+    "objetivo": "Form unreal conditionals with «wenn» + Konjunktiv II («Wenn ich Zeit hätte, würde ich reisen»), express wishes («Ich wünschte, …»), give hypothetical advice, and ask «Was würdest du tun, wenn …?».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Wenn + Konjunktiv II",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "die Million",
+            "translit": "dee mil-YOHN",
+            "pt": "million",
+            "en": "million",
+            "audio": "die Million"
+          },
+          {
+            "ru": "der Lottogewinn",
+            "translit": "dair LOT-oh-geh-vin",
+            "pt": "lottery win",
+            "en": "lottery win",
+            "audio": "der Lottogewinn"
+          },
+          {
+            "ru": "reich",
+            "translit": "RIKH",
+            "pt": "rich",
+            "en": "rich",
+            "audio": "reich"
+          },
+          {
+            "ru": "arm",
+            "translit": "ARM",
+            "pt": "poor",
+            "en": "poor",
+            "audio": "arm"
+          },
+          {
+            "ru": "die Welt",
+            "translit": "dee VELT",
+            "pt": "world",
+            "en": "world",
+            "audio": "die Welt"
+          },
+          {
+            "ru": "träumen",
+            "translit": "TROY-men",
+            "pt": "to dream",
+            "en": "to dream",
+            "audio": "träumen"
+          },
+          {
+            "ru": "der Traum",
+            "translit": "dair TROWM",
+            "pt": "dream",
+            "en": "dream",
+            "audio": "der Traum"
+          },
+          {
+            "ru": "unmöglich",
+            "translit": "OON-mök-likh",
+            "pt": "impossible",
+            "en": "impossible",
+            "audio": "unmöglich"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "Unreal conditionals, step by step",
+        "explicacao": "STEP 1: an UNREAL CONDITIONAL talks about something unlikely or impossible in the present: «Wenn ich mehr Zeit hätte, würde ich reisen» (if I had more time, I would travel). STEP 2: in the «WENN» clause, the verb goes to the END and is in the KONJUNKTIV II: «hätte», «wäre», «könnte», or «würde» + infinitive. STEP 3: in the MAIN clause, use «WÜRDE» + infinitive at the end (or «hätte», «wäre», «könnte» directly): «…, würde ich reisen.» STEP 4: the short forms you need: hätte (haben — would have / had), wäre (sein — would be / were), könnte (können — could), würde + infinitive (all other verbs). STEP 5: «Wenn ich du wäre, würde ich …» = If I were you, I would… STEP 6: compare: REAL condition: «Wenn ich Zeit habe, reise ich» (it might happen); UNREAL: «Wenn ich Zeit hätte, würde ich reisen» (I don't have time).",
+        "comparacao": "English uses the past tense in the if-clause and \"would\" in the main clause (\"If I had time, I would travel\"). German uses the Konjunktiv II in BOTH parts: «Wenn ich Zeit hätte, würde ich reisen» — «hätte» looks like \"had\" with an umlaut, and «wäre» is your \"were\".",
+        "tabela": [
+          {
+            "tipo": "real",
+            "frase": "Wenn ich Zeit habe, reise ich."
+          },
+          {
+            "tipo": "unreal (present)",
+            "frase": "Wenn ich Zeit hätte, würde ich reisen."
+          },
+          {
+            "tipo": "unreal (with wäre)",
+            "frase": "Wenn ich reich wäre, würde ich um die Welt reisen."
+          },
+          {
+            "tipo": "if I were you",
+            "frase": "Wenn ich du wäre, würde ich mehr schlafen."
+          },
+          {
+            "tipo": "question",
+            "frase": "Was würdest du tun, wenn du eine Million hättest?"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Wenn ich Zeit habe, würde ich reisen. (and I don't)",
+            "certo": "Wenn ich Zeit hätte, würde ich reisen.",
+            "motivo": "Unreal: Konjunktiv II on both sides."
+          },
+          {
+            "errado": "Wenn ich würde Zeit haben, würde ich reisen.",
+            "certo": "Wenn ich Zeit hätte, würde ich reisen.",
+            "motivo": "After «wenn», avoid «würde» with haben and sein: use «hätte», «wäre»."
+          },
+          {
+            "errado": "Wenn ich Zeit hätte, ich würde reisen.",
+            "certo": "Wenn ich Zeit hätte, würde ich reisen.",
+            "motivo": "Main clause: verb in 2nd position."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Say 6 dreams out loud: «Wenn ich eine Million hätte, würde ich … Wenn ich reich wäre, würde ich …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 sentences with würde, hätte, wäre and könnte from A2."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-054.json",
+  "responsavel": null
+}

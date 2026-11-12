@@ -1,0 +1,279 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 101,
+  "fase": 11,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Dative 1: articles and pronouns: The dative of the articles",
+  "objetivo": "Lesson 26, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 26,
+    "titulo": "Dative 1: articles and pronouns",
+    "objetivo": "Understand what the dative is (\"to whom?\"), form the dative of the definite and indefinite articles and of the personal pronouns, and use them with verbs of giving, showing and telling, in the right order.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "The dative of the articles",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Lesson goal. By the end of the four sessions, you say \"to whom\" and \"for whom\" with dem, der, mir, dir, ihm and ihr, and you use the verbs that take the dative (helfen, gefallen, gehören) without slipping into the accusative."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "A birthday present",
+        "contexto": "Jonas and Camila pick out a present for a friend.",
+        "linhas": [
+          {
+            "personagem": "Jonas",
+            "ru": "— Lena hat morgen Geburtstag. Was schenken wir ihr?",
+            "pt": "— It's Lena's birthday tomorrow. What should we give her?",
+            "audio": "Lena hat morgen Geburtstag. Was schenken wir ihr?",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ich schenke ihr ein Buch. Das Buch gefällt ihr bestimmt.",
+            "pt": "— I'm giving her a book. I'm sure she'll like the book.",
+            "audio": "Ich schenke ihr ein Buch. Das Buch gefällt ihr bestimmt.",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Gute Idee! Ich zeige dir einen Laden. Der Verkäufer dort hilft uns immer.",
+            "pt": "— Good idea! I'll show you a store. The salesperson there always helps us.",
+            "audio": "Gute Idee! Ich zeige dir einen Laden. Der Verkäufer dort hilft uns immer.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Danke! Das ist nett von dir.",
+            "pt": "— Thanks! That's very kind of you.",
+            "audio": "Danke! Das ist nett von dir.",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Gern! Und wie geht es dir heute?",
+            "pt": "— You're welcome! And how are you today?",
+            "audio": "Gern! Und wie geht es dir heute?",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Mir geht es gut. Und dir?",
+            "pt": "— I'm fine. And you?",
+            "audio": "Mir geht es gut. Und dir?",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Mir auch.",
+            "pt": "— Me too.",
+            "audio": "Mir auch.",
+            "rotulo": "Jonas"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "The English-speaker trap",
+        "explicacao": "STEP 1: helfen, danken, gehören, gefallen, antworten all take the dative. Memorize them as one block.",
+        "comparacao": "The dative is the \"to whom / for whom\" case. In English it hides in word order (\"I give him the book\") or behind \"to\" (\"I give the book to him\"). But there are three traps where English uses a plain object and German needs the dative.",
+        "tabela": [
+          {
+            "ingles": "I'm helping you.",
+            "alemao": "Ich helfe dir."
+          },
+          {
+            "ingles": "The book belongs to me.",
+            "alemao": "Das Buch gehört mir."
+          },
+          {
+            "ingles": "I like the book.",
+            "alemao": "Das Buch gefällt mir."
+          },
+          {
+            "ingles": "I give the man the book.",
+            "alemao": "Ich gebe dem Mann das Buch."
+          }
+        ],
+        "tag": "Trap"
+      },
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "der Brief",
+            "translit": "dair BREEF",
+            "pt": "letter",
+            "en": "letter",
+            "audio": "der Brief"
+          },
+          {
+            "ru": "die Blume",
+            "translit": "dee BLOO-meh",
+            "pt": "flower",
+            "en": "flower",
+            "audio": "die Blume"
+          },
+          {
+            "ru": "das Geschenk",
+            "translit": "dahs geh-SHENK",
+            "pt": "gift, present",
+            "en": "gift",
+            "audio": "das Geschenk"
+          },
+          {
+            "ru": "das Spielzeug",
+            "translit": "dahs SHPEEL-tsoyk",
+            "pt": "toy",
+            "en": "toy",
+            "audio": "das Spielzeug"
+          },
+          {
+            "ru": "die Postkarte",
+            "translit": "dee POST-kar-teh",
+            "pt": "postcard",
+            "en": "postcard",
+            "audio": "die Postkarte"
+          },
+          {
+            "ru": "das Foto",
+            "translit": "dahs FOH-toh",
+            "pt": "photo",
+            "en": "photo",
+            "audio": "das Foto"
+          },
+          {
+            "ru": "die Einladung",
+            "translit": "dee INE-lah-doong",
+            "pt": "invitation",
+            "en": "invitation",
+            "audio": "die Einladung"
+          },
+          {
+            "ru": "die Rechnung",
+            "translit": "dee RESH-noong",
+            "pt": "bill, invoice",
+            "en": "bill",
+            "audio": "die Rechnung"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "The dative, step by step",
+        "explicacao": "STEP 1: the DATIVE answers «wem?» (to whom?). It marks the person who RECEIVES, hears or benefits from the action — the INDIRECT OBJECT: in «Ich gebe dem Kind einen Apfel», what I give is «einen Apfel» (accusative, the direct object), and who receives it is «dem Kind» (dative). STEP 2: definite articles in the dative: masculine «dem», feminine «der», neuter «dem», plural «den». STEP 3: indefinite articles: masculine «einem», feminine «einer», neuter «einem»; the plural has no «ein» (with «kein»: «keinen»). STEP 4: in the PLURAL, the noun adds «-n»: «den Kindern», «den Freunden» (except nouns already ending in -n or -s: «den Eltern», «den Autos»). STEP 5: trick: masculine and neuter are IDENTICAL in the dative (dem, einem) — the -m is the same one you see in English \"him\" and \"whom\". STEP 6: compare the three columns in the table and read them out loud, column by column.",
+        "comparacao": "English marks the indirect object with \"to\" or with word order (\"give the apple to the boy\" / \"give the boy the apple\"). German drops the \"to\" and changes the article: «dem Kind». Your English ear already knows the ending: him, whom, them — dative -m.",
+        "exemplos": [
+          {
+            "ru": "Ich gebe dem Mann das Buch.",
+            "pt": "I give the book to the man."
+          },
+          {
+            "ru": "Ich schicke der Frau einen Brief.",
+            "pt": "I send the woman a letter."
+          },
+          {
+            "ru": "Ich schenke dem Kind ein Spielzeug.",
+            "pt": "I give the child a toy."
+          },
+          {
+            "ru": "Ich zeige den Kindern das Foto.",
+            "pt": "I show the photo to the children."
+          }
+        ],
+        "tabelas": [
+          {
+            "titulo": "Definite article",
+            "linhas": [
+              {
+                "caso": "Nominativ",
+                "masculino": "der Mann",
+                "feminino": "die Frau",
+                "neutro": "das Kind",
+                "plural": "die Kinder"
+              },
+              {
+                "caso": "Akkusativ",
+                "masculino": "den Mann",
+                "feminino": "die Frau",
+                "neutro": "das Kind",
+                "plural": "die Kinder"
+              },
+              {
+                "caso": "Dativ",
+                "masculino": "dem Mann",
+                "feminino": "der Frau",
+                "neutro": "dem Kind",
+                "plural": "den Kindern"
+              }
+            ]
+          },
+          {
+            "titulo": "Indefinite article (ein-, mein-, kein-)",
+            "linhas": [
+              {
+                "caso": "Nominativ",
+                "masculino": "ein Freund",
+                "feminino": "eine Freundin",
+                "neutro": "ein Kind",
+                "plural": "meine Freunde"
+              },
+              {
+                "caso": "Akkusativ",
+                "masculino": "einen Freund",
+                "feminino": "eine Freundin",
+                "neutro": "ein Kind",
+                "plural": "meine Freunde"
+              },
+              {
+                "caso": "Dativ",
+                "masculino": "einem Freund",
+                "feminino": "einer Freundin",
+                "neutro": "einem Kind",
+                "plural": "meinen Freunden"
+              }
+            ]
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich gebe den Mann das Buch.",
+            "certo": "Ich gebe dem Mann das Buch.",
+            "motivo": "The receiver goes into the dative: «dem»."
+          },
+          {
+            "errado": "Ich zeige den Kinder das Foto.",
+            "certo": "Ich zeige den Kindern das Foto.",
+            "motivo": "Dative plural: the noun adds -n."
+          }
+        ],
+        "tag": "Cases"
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say 6 sentences in which you give, show or send something to someone: «Ich gebe dem … / der … / den … Kindern …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Write the article chart in the nominative and the accusative, for all four genders."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-026.json",
+  "responsavel": null
+}

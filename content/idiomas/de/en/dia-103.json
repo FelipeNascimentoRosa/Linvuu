@@ -1,0 +1,367 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 103,
+  "fase": 11,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Dative 1: articles and pronouns: Two objects: word order",
+  "objetivo": "Lesson 26, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 26,
+    "titulo": "Dative 1: articles and pronouns",
+    "objetivo": "Understand what the dative is (\"to whom?\"), form the dative of the definite and indefinite articles and of the personal pronouns, and use them with verbs of giving, showing and telling, in the right order.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Two objects: word order",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 7,
+        "titulo": "Dative and accusative in the same sentence: the order, step by step",
+        "explicacao": "STEP 1: if the sentence has TWO NOUNS, the dative comes first: «Ich gebe dem Kind den Ball» (like \"I give the child the ball\"). STEP 2: if one of them is a PRONOUN, the pronoun comes first: «Ich gebe ihm den Ball» (dative pronoun + accusative noun) and «Ich gebe ihn dem Kind» (accusative pronoun + dative noun — \"I give it to the child\"). STEP 3: if BOTH are pronouns, the ACCUSATIVE comes first: «Ich gebe ihn ihm» (\"I give it to him\"). STEP 4: remember the dative plural with «-n»: «den Kindern».",
+        "tabela": [
+          {
+            "padrao": "noun + noun",
+            "exemplo": "Ich gebe dem Kind den Ball."
+          },
+          {
+            "padrao": "dative pronoun + noun",
+            "exemplo": "Ich gebe ihm den Ball."
+          },
+          {
+            "padrao": "accusative pronoun + dative noun",
+            "exemplo": "Ich gebe ihn dem Kind."
+          },
+          {
+            "padrao": "two pronouns: accusative first",
+            "exemplo": "Ich gebe ihn ihm."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich gebe den Ball dem Kind.",
+            "certo": "Ich gebe dem Kind den Ball.",
+            "motivo": "With two nouns, the dative comes first."
+          },
+          {
+            "errado": "Ich gebe den Ball ihm.",
+            "certo": "Ich gebe ihm den Ball.",
+            "motivo": "The pronoun comes before the noun."
+          }
+        ],
+        "tag": "Cases"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 7,
+        "titulo": "Geschenke / Presents",
+        "contexto": "Two friends talk about birthday presents.",
+        "linhas": [
+          {
+            "personagem": "Mia",
+            "ru": "— Was schenkst du deiner Mutter zum Geburtstag?",
+            "pt": "— What are you giving your mom for her birthday?",
+            "audio": "Was schenkst du deiner Mutter zum Geburtstag?",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Ich schenke ihr einen Schal. Und du?",
+            "pt": "— I'm giving her a scarf. And you?",
+            "audio": "Ich schenke ihr einen Schal. Und du?",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Ich schenke meinem Vater ein Buch.",
+            "pt": "— I'm giving my dad a book.",
+            "audio": "Ich schenke meinem Vater ein Buch.",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Gefällt ihm das Buch?",
+            "pt": "— Will he like the book?",
+            "audio": "Gefällt ihm das Buch?",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Ja, ich glaube schon. Er liest gern Krimis.",
+            "pt": "— Yes, I think so. He likes reading crime novels.",
+            "audio": "Ja, ich glaube schon. Er liest gern Krimis.",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Und deinen Eltern? Kaufst du ihnen auch etwas?",
+            "pt": "— And your parents? Are you buying them something too?",
+            "audio": "Und deinen Eltern? Kaufst du ihnen auch etwas?",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Ich koche ihnen am Samstag ein Essen.",
+            "pt": "— On Saturday I'm cooking them a meal.",
+            "audio": "Ich koche ihnen am Samstag ein Essen.",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Das ist eine schöne Idee. Ich helfe dir gern.",
+            "pt": "— That's a lovely idea. I'd be glad to help you.",
+            "audio": "Das ist eine schöne Idee. Ich helfe dir gern.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Danke! Mit dem Auto holen wir den Kuchen.",
+            "pt": "— Thanks! We'll pick up the cake by car.",
+            "audio": "Danke! Mit dem Auto holen wir den Kuchen.",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Perfekt! Bis Samstag!",
+            "pt": "— Perfect! See you Saturday!",
+            "audio": "Perfekt! Bis Samstag!",
+            "rotulo": "Jonas"
+          }
+        ]
+      },
+      {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "Ich helfe dir.",
+            "translit": "",
+            "pt": "I'm helping you.",
+            "en": "",
+            "audio": "Ich helfe dir."
+          },
+          {
+            "ru": "Das gehört mir.",
+            "translit": "",
+            "pt": "That's mine.",
+            "en": "",
+            "audio": "Das gehört mir."
+          },
+          {
+            "ru": "Das gefällt mir.",
+            "translit": "",
+            "pt": "I like that.",
+            "en": "",
+            "audio": "Das gefällt mir."
+          },
+          {
+            "ru": "Wie geht es dir? / Mir geht es gut.",
+            "translit": "",
+            "pt": "How are you? / I'm fine.",
+            "en": "",
+            "audio": "Wie geht es dir? / Mir geht es gut."
+          },
+          {
+            "ru": "Mir ist kalt.",
+            "translit": "",
+            "pt": "I'm cold.",
+            "en": "",
+            "audio": "Mir ist kalt."
+          },
+          {
+            "ru": "Ich schenke dir ein Buch.",
+            "translit": "",
+            "pt": "I'm giving you a book as a present.",
+            "en": "",
+            "audio": "Ich schenke dir ein Buch."
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ich gebe ___ Mann das Buch.",
+            "opcoes": [
+              "dem",
+              "den"
+            ],
+            "gabarito": "dem",
+            "explicacao": "In «jemandem etwas geben», the receiver is in the dative. «Mann» is masculine singular, so the article is «dem»: Ich gebe dem Mann das Buch.",
+            "id": "de-026-L-101"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ich gebe ___ Frau das Buch.",
+            "opcoes": [
+              "die",
+              "der"
+            ],
+            "gabarito": "der",
+            "explicacao": "«Frau» is the person who receives the book, so she is in the dative. The feminine singular definite article in the dative is «der»: Ich gebe der Frau das Buch.",
+            "id": "de-026-L-102"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ich gebe ___ Kind das Buch.",
+            "opcoes": [
+              "dem",
+              "der"
+            ],
+            "gabarito": "dem",
+            "explicacao": "«Kind» receives the book and is in the dative. For neuter singular, the definite article is «dem»: Ich gebe dem Kind das Buch.",
+            "id": "de-026-L-103"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ich helfe ___ Kindern.",
+            "opcoes": [
+              "die",
+              "den"
+            ],
+            "gabarito": "den",
+            "explicacao": "«Helfen» takes the dative. In the plural, the article is «den» and «Kinder» adds -n: Ich helfe den Kindern.",
+            "id": "de-026-L-104"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ich helfe ___.",
+            "opcoes": [
+              "dich",
+              "dir"
+            ],
+            "gabarito": "dir",
+            "explicacao": "«Helfen» takes the dative. The pronoun «du» becomes «dir», not «dich»: Ich helfe dir.",
+            "id": "de-026-L-105"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Das Buch gehört ___.",
+            "opcoes": [
+              "mich",
+              "mir"
+            ],
+            "gabarito": "mir",
+            "explicacao": "«Gehören» says who the book belongs to, and it takes the dative. «Ich» becomes «mir»: Das Buch gehört mir.",
+            "id": "de-026-L-106"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "___ gehört das Buch?",
+            "opcoes": [
+              "Wen",
+              "Wem"
+            ],
+            "gabarito": "Wem",
+            "explicacao": "To ask about a person in the dative, use «wem» (to whom): Wem gehört das Buch? «Wen» is accusative.",
+            "id": "de-026-L-107"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Wir danken ___ (er). · Ich schenke ihr (sie, she) ein Buch.",
+            "respostaEsperada": "ihm",
+            "explicacao": "«Danken» takes the dative. «Er» becomes «ihm»: Wir danken ihm.",
+            "id": "de-026-L-201a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Wir danken ihm (er). · Ich schenke ___ (sie, she) ein Buch.",
+            "respostaEsperada": "ihr",
+            "explicacao": "The person who receives the present is in the dative. «Sie» meaning \"she\" becomes «ihr»: Ich schenke ihr ein Buch.",
+            "id": "de-026-L-201b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Die Wohnung gefällt ___ (wir) sehr. · Ich antworte Ihnen (Sie, formal) sofort.",
+            "respostaEsperada": "uns",
+            "explicacao": "With «gefallen», the person who likes something is in the dative (literally \"the apartment pleases us\"). «Wir» becomes «uns»: Die Wohnung gefällt uns sehr.",
+            "id": "de-026-L-202a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Die Wohnung gefällt uns (wir) sehr. · Ich antworte ___ (Sie, formal) sofort.",
+            "respostaEsperada": "Ihnen",
+            "explicacao": "«Antworten» takes the dative. For the formal «Sie», the pronoun is «Ihnen», capitalized: Ich antworte Ihnen sofort.",
+            "id": "de-026-L-202b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Der Lehrer hilft ___ (sie, they). · Wie geht es euch (ihr, you all)?",
+            "respostaEsperada": "ihnen",
+            "explicacao": "«Helfen» takes the dative. «Sie» meaning \"they\" becomes «ihnen», lowercase: Der Lehrer hilft ihnen.",
+            "id": "de-026-L-203a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Der Lehrer hilft ihnen (sie, they). · Wie geht es ___ (ihr, you all)?",
+            "respostaEsperada": "euch",
+            "explicacao": "In «Wie geht es …?», the person is in the dative. «Ihr» (you all) becomes «euch»: Wie geht es euch?",
+            "id": "de-026-L-203b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete with the definite article in the dative (dem, der, den): Ich schenke ___ Frau (f.) eine Blume. · Ich zeige dem Kind (n.) den Park.",
+            "respostaEsperada": "der",
+            "explicacao": "«Frau» receives the flower and is in the feminine singular dative. The definite article is «der»: Ich schenke der Frau eine Blume.",
+            "id": "de-026-L-204a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete with the definite article in the dative (dem, der, den): Ich schenke der Frau (f.) eine Blume. · Ich zeige ___ Kind (n.) den Park.",
+            "respostaEsperada": "dem",
+            "explicacao": "«Kind» is the one being shown the park, so it is in the neuter singular dative: «dem». Ich zeige dem Kind den Park.",
+            "id": "de-026-L-204b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete with the definite article in the dative (dem, der, den): Wir geben ___ Kindern (pl.) Wasser. · Das Auto gehört dem Lehrer (m.).",
+            "respostaEsperada": "den",
+            "explicacao": "The ones who receive the water are in the dative. In the plural: «den Kindern», with the article «den» and -n on the noun.",
+            "id": "de-026-L-205a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete with the definite article in the dative (dem, der, den): Wir geben den Kindern (pl.) Wasser. · Das Auto gehört ___ Lehrer (m.).",
+            "respostaEsperada": "dem",
+            "explicacao": "«Gehören» puts the owner in the dative. «Lehrer» is masculine singular, so the article is «dem»: Das Auto gehört dem Lehrer.",
+            "id": "de-026-L-205b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete with the definite article in the dative (dem, der, den): Ich schicke ___ Chef (m.) die E-Mail und antworte der Kollegin (f.).",
+            "respostaEsperada": "dem",
+            "explicacao": "«Chef» is the receiver of the e-mail, in the masculine singular dative: «dem». Ich schicke dem Chef die E-Mail.",
+            "id": "de-026-L-206a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete with the definite article in the dative (dem, der, den): Ich schicke dem Chef (m.) die E-Mail und antworte ___ Kollegin (f.).",
+            "respostaEsperada": "der",
+            "explicacao": "«Antworten» takes the dative. «Kollegin» is feminine singular; the dative definite article is «der»: Ich antworte der Kollegin.",
+            "id": "de-026-L-206b"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Say who you give presents to on birthdays: «Ich schenke meiner Mutter … Ich schenke ihr … Ich gebe es ihr.»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Write the pronouns in the three cases for all nine persons."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-026.json",
+  "responsavel": null
+}

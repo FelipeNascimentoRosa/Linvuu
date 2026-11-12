@@ -1,0 +1,163 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 73,
+  "fase": 8,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Travel and transport: Means of transport",
+  "objetivo": "Lesson 19, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 19,
+    "titulo": "Travel and transport",
+    "objetivo": "Say how you get around, buy a ticket, understand train times and book a hotel room.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Means of transport",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 10,
+        "itens": [
+          {
+            "ru": "das Verkehrsmittel",
+            "translit": "dahs fehr-KEHRS-mit-el",
+            "pt": "means of transportation",
+            "en": "means of transport",
+            "audio": "das Verkehrsmittel"
+          },
+          {
+            "ru": "der Zug",
+            "translit": "dehr TSOOK",
+            "pt": "train",
+            "en": "train",
+            "audio": "der Zug"
+          },
+          {
+            "ru": "der Bus",
+            "translit": "dehr BOOS",
+            "pt": "bus",
+            "en": "bus",
+            "audio": "der Bus"
+          },
+          {
+            "ru": "die U-Bahn",
+            "translit": "dee OO-bahn",
+            "pt": "subway",
+            "en": "underground",
+            "audio": "die U-Bahn"
+          },
+          {
+            "ru": "die Straßenbahn",
+            "translit": "dee SHTRAH-sen-bahn",
+            "pt": "streetcar, tram",
+            "en": "tram",
+            "audio": "die Straßenbahn"
+          },
+          {
+            "ru": "das Flugzeug",
+            "translit": "dahs FLOOK-tsoyk",
+            "pt": "airplane",
+            "en": "plane",
+            "audio": "das Flugzeug"
+          },
+          {
+            "ru": "das Schiff",
+            "translit": "dahs SHIF",
+            "pt": "ship",
+            "en": "ship",
+            "audio": "das Schiff"
+          },
+          {
+            "ru": "das Motorrad",
+            "translit": "dahs MOH-tor-raht",
+            "pt": "motorcycle",
+            "en": "motorbike",
+            "audio": "das Motorrad"
+          },
+          {
+            "ru": "der Flughafen",
+            "translit": "dehr FLOOK-hah-fen",
+            "pt": "airport",
+            "en": "airport",
+            "audio": "der Flughafen"
+          },
+          {
+            "ru": "zu Fuß",
+            "translit": "tsoo FOOS",
+            "pt": "on foot",
+            "en": "on foot",
+            "audio": "zu Fuß"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "How you get there: «mit» + means of transportation",
+        "explicacao": "STEP 1: for the MEANS, use «mit» + article — where English says \"by bus\", German says \"with the bus\": «mit dem Zug», «mit dem Bus», «mit dem Auto», «mit dem Fahrrad», «mit dem Flugzeug», «mit dem Taxi». For die words: «mit der U-Bahn», «mit der Straßenbahn». Learn them as ready-made chunks (why it's «dem» and «der» comes at A2). STEP 2: \"on foot\" is «zu Fuß», with no article. STEP 3: ask «Wie kommst du zur Arbeit?» (How do you get to work?) or «Wie fährst du?» STEP 4: «fahren» changes a to ä with «du» and «er» (du fährst, er fährt); «fliegen» and «gehen» are regular in the present. Careful: «gehen» means going on foot — if you take any vehicle, German says «fahren». STEP 5: the DESTINATION: «nach» with cities and countries («nach Berlin», «nach Kanada»); «zu» with places and people («zum Bahnhof», «zur Schule»).",
+        "tabela": [
+          {
+            "meio": "der Zug",
+            "frase": "Ich fahre mit dem Zug."
+          },
+          {
+            "meio": "der Bus",
+            "frase": "Er fährt mit dem Bus zur Arbeit."
+          },
+          {
+            "meio": "das Auto / das Fahrrad / das Taxi",
+            "frase": "Wir fahren mit dem Auto."
+          },
+          {
+            "meio": "das Flugzeug",
+            "frase": "Sie fliegt mit dem Flugzeug nach Berlin."
+          },
+          {
+            "meio": "die U-Bahn / die Straßenbahn",
+            "frase": "Ich fahre mit der U-Bahn."
+          },
+          {
+            "meio": "on foot",
+            "frase": "Ich gehe zu Fuß."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich fahre mit der Bus.",
+            "certo": "Ich fahre mit dem Bus.",
+            "motivo": "«Bus» is a der word: after «mit», «dem»."
+          },
+          {
+            "errado": "Ich fahre mit Zug.",
+            "certo": "Ich fahre mit dem Zug.",
+            "motivo": "The article is missing: \"by train\" is «mit dem Zug»."
+          },
+          {
+            "errado": "Ich gehe mit Fuß.",
+            "certo": "Ich gehe zu Fuß.",
+            "motivo": "«zu Fuß» is a fixed phrase."
+          }
+        ],
+        "tag": "Prepositions"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say how you get to work, to school and to another city: «Ich fahre mit … / Ich gehe zu Fuß.»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 5 sentences about your free time with «gern» and «lieber»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-019.json",
+  "responsavel": null
+}

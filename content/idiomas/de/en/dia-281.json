@@ -1,0 +1,246 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 281,
+  "fase": 29,
+  "nivel": "b2",
+  "status": "publicada",
+  "titulo": "Futur II, assumptions and modal particles: The Futur II",
+  "objetivo": "Lesson 71, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 71,
+    "titulo": "Futur II, assumptions and modal particles",
+    "objetivo": "Form the Futur II (werden + Partizip II + haben/sein) for things that will be completed in the future and for assumptions about the past, and understand the most common modal particles (doch, mal, ja, eben, halt, denn, eigentlich, wohl, schon, aber, ruhig).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "The Futur II",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Lesson goal. By the end of the four sessions you will recognise the most common particles in speech (doch, mal, ja, eben, halt, denn, aber, schon), know what each one does to the tone of a sentence, and use mal, doch and denn to sound less blunt, without changing the grammar."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "The late train",
+        "contexto": "Camila, Jonas and Lena are waiting for the train on the platform. It is late.",
+        "linhas": [
+          {
+            "personagem": "Camila",
+            "ru": "— Der Zug hat vierzig Minuten Verspätung. Was machen wir denn jetzt?",
+            "pt": "— The train is forty minutes late. So what do we do now?",
+            "audio": "Der Zug hat vierzig Minuten Verspätung. Was machen wir denn jetzt?",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Wir warten halt. Das ist die Bahn, das weißt du ja.",
+            "pt": "— We wait, what else can we do. It's the railway, you know what it's like.",
+            "audio": "Wir warten halt. Das ist die Bahn, das weißt du ja.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Lena",
+            "ru": "— Komm, trinken wir doch einen Kaffee. Da vorne ist ein Café.",
+            "pt": "— Come on, let's get a coffee. There's a café just over there.",
+            "audio": "Komm, trinken wir doch einen Kaffee. Da vorne ist ein Café.",
+            "rotulo": "Lena"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Das Café sieht aber teuer aus.",
+            "pt": "— Wow, the café looks expensive.",
+            "audio": "Das Café sieht aber teuer aus.",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Dann nehmen wir eben Kaffee aus dem Automaten. Warte mal, ich habe noch Münzen.",
+            "pt": "— Then we'll get a coffee from the machine. Hang on, I've still got some coins.",
+            "audio": "Dann nehmen wir eben Kaffee aus dem Automaten. Warte mal, ich habe noch Münzen.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Lena",
+            "ru": "— Siehst du, es geht doch. Und keine Sorge, der Zug kommt schon.",
+            "pt": "— See? It works out. And don't worry, the train will come.",
+            "audio": "Siehst du, es geht doch. Und keine Sorge, der Zug kommt schon.",
+            "rotulo": "Lena"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "The English-speaker trap",
+        "explicacao": "STEP 1: English has no single word for each particle either — it uses tone of voice, \"come on\", \"just\", \"anyway\", tag questions or \"wow\". Learn the effect (invitation, resignation, surprise) and the whole sentence, not a translation of the particle.",
+        "comparacao": "Three traps.",
+        "tabela": [
+          {
+            "ingles": "Come with us, come on!",
+            "alemao": "Komm doch mit!",
+            "evite": "invitation"
+          },
+          {
+            "ingles": "Hang on a second.",
+            "alemao": "Warte mal!",
+            "evite": "soft request"
+          },
+          {
+            "ingles": "You know, right? I'm tired.",
+            "alemao": "Du weißt ja, ich bin müde.",
+            "evite": "you already know this"
+          },
+          {
+            "ingles": "Then we'll just stay here, what can you do.",
+            "alemao": "Dann bleiben wir halt hier.",
+            "evite": "resignation"
+          },
+          {
+            "ingles": "What are you doing here, anyway?",
+            "alemao": "Was machst du denn hier?",
+            "evite": "curiosity"
+          },
+          {
+            "ingles": "Wow, that's expensive!",
+            "alemao": "Das ist aber teuer!",
+            "evite": "surprise"
+          },
+          {
+            "ingles": "You'll manage, don't worry.",
+            "alemao": "Das schaffst du schon.",
+            "evite": "reassuring"
+          }
+        ],
+        "tag": "Trap"
+      },
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "bis dahin",
+            "translit": "bis DAH-hin",
+            "pt": "by then",
+            "en": "by then",
+            "audio": "bis dahin"
+          },
+          {
+            "ru": "spätestens",
+            "translit": "SHPAY-tes-tens",
+            "pt": "at the latest",
+            "en": "at the latest",
+            "audio": "spätestens"
+          },
+          {
+            "ru": "vermutlich",
+            "translit": "fair-MOOT-likh",
+            "pt": "presumably",
+            "en": "presumably",
+            "audio": "vermutlich"
+          },
+          {
+            "ru": "sicherlich",
+            "translit": "ZIKH-er-likh",
+            "pt": "certainly, surely",
+            "en": "surely",
+            "audio": "sicherlich"
+          },
+          {
+            "ru": "vermuten",
+            "translit": "fair-MOO-ten",
+            "pt": "to suppose, to suspect",
+            "en": "to assume",
+            "audio": "vermuten"
+          },
+          {
+            "ru": "annehmen",
+            "translit": "AHN-nay-men",
+            "pt": "to assume",
+            "en": "to assume",
+            "audio": "annehmen"
+          },
+          {
+            "ru": "erledigen",
+            "translit": "air-LAY-dee-gen",
+            "pt": "to get done, to deal with",
+            "en": "to take care of",
+            "audio": "erledigen"
+          },
+          {
+            "ru": "schaffen",
+            "translit": "SHAF-fen",
+            "pt": "to manage, to get done",
+            "en": "to manage",
+            "audio": "schaffen"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "The Futur II, step by step",
+        "explicacao": "STEP 1: the FUTUR II uses «WERDEN» (conjugated) + PARTIZIP II + «HABEN» or «SEIN» (infinitive, at the end): «Er wird das Buch gelesen haben», «Er wird angekommen sein.» This is English \"will have read\", \"will have arrived\" — but German sends «haben/sein» to the very end. STEP 2: USE 1: something that will be COMPLETED at a point in the future: «Bis morgen werde ich es geschafft haben» (by tomorrow I will have managed it). STEP 3: USE 2: an ASSUMPTION about the PAST, with «wohl», «wahrscheinlich», «vermutlich»: «Er wird wohl krank gewesen sein» (he must have been ill). English uses \"must have\" here, not \"will have\". STEP 4: the choice between «haben» and «sein» is the one from the Perfekt (movement and change of state → «sein»). STEP 5: in practice, the Futur II is rare in speech; assumptions are its most common use. STEP 6: compare: Futur I («Er wird kommen»: he will come) × Futur II («Er wird gekommen sein»: he will have come, or he must have come).",
+        "comparacao": "English has «will have done» for something completed in the future and «must have done» for an assumption about the past. German covers both with the Futur II: werden + Partizip II + haben/sein.",
+        "tabela": [
+          {
+            "uso": "completed in the future",
+            "frase": "Bis morgen werde ich das Buch gelesen haben."
+          },
+          {
+            "uso": "completed in the future (sein)",
+            "frase": "Bis zehn Uhr wird er angekommen sein."
+          },
+          {
+            "uso": "assumption about the past",
+            "frase": "Er wird wohl krank gewesen sein."
+          },
+          {
+            "uso": "assumption about the past",
+            "frase": "Sie wird den Zug verpasst haben."
+          },
+          {
+            "uso": "Futur I × Futur II",
+            "frase": "Er wird kommen. × Er wird gekommen sein."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Er wird das Buch gelesen.",
+            "certo": "Er wird das Buch gelesen haben.",
+            "motivo": "Futur II: Partizip II + haben."
+          },
+          {
+            "errado": "Er wird angekommen haben.",
+            "certo": "Er wird angekommen sein.",
+            "motivo": "«ankommen» takes «sein»."
+          },
+          {
+            "errado": "Er hat wohl krank gewesen.",
+            "certo": "Er wird wohl krank gewesen sein.",
+            "motivo": "Assumption about the past: werden + Partizip II + sein."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say 6 Futur II sentences out loud: «Bis morgen werde ich … gemacht haben. Er wird wohl … gewesen sein.»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Write 6 sentences with adjectives used as nouns."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-071.json",
+  "responsavel": null
+}

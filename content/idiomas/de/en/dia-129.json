@@ -1,0 +1,164 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 129,
+  "fase": 13,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Adjectives 2: with ein, mein, kein (ein großer Mann): Nominative and accusative",
+  "objetivo": "Lesson 33, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 33,
+    "titulo": "Adjectives 2: with ein, mein, kein (ein großer Mann)",
+    "objetivo": "Give the adjective its ending after ein, eine, mein, dein, kein…: the adjective takes -er, -e, -es where the article doesn't show the case, and -en everywhere else.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Nominative and accusative",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "der Hund",
+            "translit": "dair HOONT",
+            "pt": "dog",
+            "en": "dog",
+            "audio": "der Hund"
+          },
+          {
+            "ru": "die Katze",
+            "translit": "dee KAHT-seh",
+            "pt": "cat",
+            "en": "cat",
+            "audio": "die Katze"
+          },
+          {
+            "ru": "das Haus",
+            "translit": "dahs HOWS",
+            "pt": "house",
+            "en": "house",
+            "audio": "das Haus"
+          },
+          {
+            "ru": "die Freunde",
+            "translit": "dee FROYN-deh",
+            "pt": "friends",
+            "en": "friends",
+            "audio": "die Freunde"
+          },
+          {
+            "ru": "nett",
+            "translit": "NET",
+            "pt": "nice, kind",
+            "en": "nice",
+            "audio": "nett"
+          },
+          {
+            "ru": "lustig",
+            "translit": "LOOS-tikh",
+            "pt": "funny",
+            "en": "funny",
+            "audio": "lustig"
+          },
+          {
+            "ru": "ruhig",
+            "translit": "ROO-ikh",
+            "pt": "calm, quiet",
+            "en": "quiet",
+            "audio": "ruhig"
+          },
+          {
+            "ru": "laut",
+            "translit": "LOWT",
+            "pt": "loud",
+            "en": "loud",
+            "audio": "laut"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "Ein, mein, kein + adjective, step by step",
+        "explicacao": "STEP 1: «ein», «eine», «mein», «kein»… fail to show the case in THREE places: masculine nominative («ein»), neuter nominative («ein») and neuter accusative («ein»). In those places the ADJECTIVE takes over and shows the case: «ein großer Mann» (-er, like the -r of «der»), «ein kleines Kind» (-es, like the -s of «das»). STEP 2: everywhere else, the article already shows the case, and the adjective takes «-e» or «-en», just as after «der»: «eine kleine Frau», «einen großen Mann». STEP 3: nominative: ein großer Mann (-er), eine kleine Frau (-e), ein neues Auto (-es), meine neuen Autos (-en). STEP 4: accusative: einen großen Mann (-en), eine kleine Frau (-e), ein neues Auto (-es), meine neuen Autos (-en). STEP 5: rule of thumb: «-er» and «-es» appear only when «ein» has no ending: masculine nominative, and neuter nominative and accusative.",
+        "comparacao": "English has nothing like this — \"a big man\", \"a small child\". The logic is simple, though: German wants the case to show up ONCE. If the article (ein) didn't show it, the adjective does. Think of it as the -r of «der» and the -s of «das» moving onto the adjective: der → ein großeR, das → ein kleineS.",
+        "exemplos": [
+          {
+            "ru": "Das ist ein netter Mann.",
+            "pt": "This is a nice man."
+          },
+          {
+            "ru": "Ich kenne einen netten Mann.",
+            "pt": "I know a nice man."
+          },
+          {
+            "ru": "Das ist ein neues Auto.",
+            "pt": "This is a new car."
+          },
+          {
+            "ru": "Ich habe eine kleine Katze.",
+            "pt": "I have a little cat."
+          }
+        ],
+        "tabela": [
+          {
+            "genero": "masculine",
+            "nominativo": "ein großer Mann",
+            "acusativo": "einen großen Mann"
+          },
+          {
+            "genero": "feminine",
+            "nominativo": "eine kleine Frau",
+            "acusativo": "eine kleine Frau"
+          },
+          {
+            "genero": "neuter",
+            "nominativo": "ein neues Auto",
+            "acusativo": "ein neues Auto"
+          },
+          {
+            "genero": "plural",
+            "nominativo": "meine neuen Autos",
+            "acusativo": "meine neuen Autos"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Das ist ein großen Mann.",
+            "certo": "Das ist ein großer Mann.",
+            "motivo": "Masculine nominative: the adjective takes «-er»."
+          },
+          {
+            "errado": "Das ist ein neu Auto.",
+            "certo": "Das ist ein neues Auto.",
+            "motivo": "Neuter: «-es»."
+          },
+          {
+            "errado": "Ich habe ein kleine Katze.",
+            "certo": "Ich habe eine kleine Katze.",
+            "motivo": "Feminine: «eine»."
+          }
+        ],
+        "tag": "Adjectives and possessives"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Describe 6 people or animals with «ein» and an adjective: «Das ist ein netter Mann. Ich habe eine kleine Katze …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write the chart of the adjective after der, die, das in all four cases."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-033.json",
+  "responsavel": null
+}

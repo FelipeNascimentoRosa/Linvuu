@@ -1,0 +1,271 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 21,
+  "fase": 3,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Numbers, time and days: Numbers up to 100",
+  "objetivo": "Lesson 6, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 6,
+    "titulo": "Numbers, time and days",
+    "objetivo": "Count to 100 and beyond, tell the time, and say the days of the week, the months and the date.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Numbers up to 100",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Lesson goal. By the end of the four sessions, you read and say numbers up to a thousand, tell the time without falling for halb, say days, months and dates, and ask and answer prices."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "The class schedule",
+        "contexto": "Camila and Jonas sort out their class and talk about birthdays.",
+        "linhas": [
+          {
+            "personagem": "Camila",
+            "ru": "— Jonas, wann ist der Kurs?",
+            "pt": "— Jonas, when is the class?",
+            "audio": "Jonas, wann ist der Kurs?",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Am Montag und am Mittwoch, von vier bis sechs Uhr.",
+            "pt": "— On Monday and Wednesday, from four to six.",
+            "audio": "Am Montag und am Mittwoch, von vier bis sechs Uhr.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Wie spät ist es jetzt?",
+            "pt": "— What time is it now?",
+            "audio": "Wie spät ist es jetzt?",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Es ist halb drei. Wir haben noch Zeit.",
+            "pt": "— It's half past two. We still have time.",
+            "audio": "Es ist halb drei. Wir haben noch Zeit.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Gut! Wann hast du Geburtstag?",
+            "pt": "— Great! When's your birthday?",
+            "audio": "Gut! Wann hast du Geburtstag?",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Am dritten Oktober. Das ist ein Feiertag! Und du?",
+            "pt": "— On October 3rd. It's a public holiday! And yours?",
+            "audio": "Am dritten Oktober. Das ist ein Feiertag! Und du?",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Am zwölften Mai. Ich bin achtundzwanzig.",
+            "pt": "— On May 12th. I'm twenty-eight.",
+            "audio": "Am zwölften Mai. Ich bin achtundzwanzig.",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Und ich bin siebenundzwanzig.",
+            "pt": "— And I'm twenty-seven.",
+            "audio": "Und ich bin siebenundzwanzig.",
+            "rotulo": "Jonas"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "The English speaker's trap",
+        "explicacao": "STEP 1: halb looks ahead to the next hour. Halb vier is half an hour BEFORE four: 3:30, not \"half four\".",
+        "comparacao": "Four traps are waiting for English speakers — and one of them can make you an hour late.",
+        "tabela": [],
+        "tag": "Trap"
+      },
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "zwanzig",
+            "translit": "TSVAHN-tsikh",
+            "pt": "twenty",
+            "en": "twenty",
+            "audio": "zwanzig"
+          },
+          {
+            "ru": "einundzwanzig",
+            "translit": "INE-oont-TSVAHN-tsikh",
+            "pt": "twenty-one",
+            "en": "twenty-one",
+            "audio": "einundzwanzig"
+          },
+          {
+            "ru": "dreißig",
+            "translit": "DRY-sikh",
+            "pt": "thirty",
+            "en": "thirty",
+            "audio": "dreißig"
+          },
+          {
+            "ru": "vierzig",
+            "translit": "FEER-tsikh",
+            "pt": "forty",
+            "en": "forty",
+            "audio": "vierzig"
+          },
+          {
+            "ru": "fünfzig",
+            "translit": "FÜNF-tsikh",
+            "pt": "fifty",
+            "en": "fifty",
+            "audio": "fünfzig"
+          },
+          {
+            "ru": "sechzig",
+            "translit": "ZEKH-tsikh",
+            "pt": "sixty",
+            "en": "sixty",
+            "audio": "sechzig"
+          },
+          {
+            "ru": "siebzig",
+            "translit": "ZEEP-tsikh",
+            "pt": "seventy",
+            "en": "seventy",
+            "audio": "siebzig"
+          },
+          {
+            "ru": "achtzig",
+            "translit": "AHKH-tsikh",
+            "pt": "eighty",
+            "en": "eighty",
+            "audio": "achtzig"
+          },
+          {
+            "ru": "neunzig",
+            "translit": "NOYN-tsikh",
+            "pt": "ninety",
+            "en": "ninety",
+            "audio": "neunzig"
+          },
+          {
+            "ru": "hundert",
+            "translit": "HOON-dert",
+            "pt": "a hundred",
+            "en": "one hundred",
+            "audio": "hundert"
+          },
+          {
+            "ru": "tausend",
+            "translit": "TOW-zent",
+            "pt": "a thousand",
+            "en": "thousand",
+            "audio": "tausend"
+          },
+          {
+            "ru": "die Telefonnummer",
+            "translit": "dee teh-leh-FOHN-noo-mer",
+            "pt": "phone number",
+            "en": "phone number",
+            "audio": "die Telefonnummer"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 7,
+        "titulo": "Numbers 21 to 100",
+        "explicacao": "From 21 to 99, German says the ones first and then the tens, joined by «und»: 25 = fünfundzwanzig, \"five-and-twenty\" — like the old English \"four-and-twenty blackbirds\". «Eins» becomes «ein»: 21 = einundzwanzig. And it's all one word. Watch 16 and 60 (sechzehn, sechzig) and 17 and 70 (siebzehn, siebzig): they drop letters. 30 is dreißig, with ß. Hundreds simply add up: zweihundert (200), 101 = hunderteins. A thousand is «tausend». Phone numbers are usually read digit by digit.",
+        "comparacao": "English says \"twenty-five\", tens first. German says \"five-and-twenty\", ones first. When you hear a number, wait for the end: in «sechsundachtzig», the 8 comes last, and it's the biggest part.",
+        "tabela": [
+          {
+            "numero": "21",
+            "alemao": "einundzwanzig"
+          },
+          {
+            "numero": "32",
+            "alemao": "zweiunddreißig"
+          },
+          {
+            "numero": "43",
+            "alemao": "dreiundvierzig"
+          },
+          {
+            "numero": "54",
+            "alemao": "vierundfünfzig"
+          },
+          {
+            "numero": "65",
+            "alemao": "fünfundsechzig"
+          },
+          {
+            "numero": "76",
+            "alemao": "sechsundsiebzig"
+          },
+          {
+            "numero": "87",
+            "alemao": "siebenundachtzig"
+          },
+          {
+            "numero": "98",
+            "alemao": "achtundneunzig"
+          },
+          {
+            "numero": "100",
+            "alemao": "hundert"
+          },
+          {
+            "numero": "101",
+            "alemao": "hunderteins"
+          },
+          {
+            "numero": "1000",
+            "alemao": "tausend"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "zwanzigfünf",
+            "certo": "fünfundzwanzig",
+            "motivo": "The ones come first, joined by «und»."
+          },
+          {
+            "errado": "sechszig",
+            "certo": "sechzig",
+            "motivo": "60 drops the -s of «sechs»."
+          }
+        ],
+        "tag": "Numbers"
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Count in tens up to 100 and say your phone number, digit by digit, in German."
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Count from 0 to 20 in German, out loud, without looking."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-006.json",
+  "responsavel": null
+}

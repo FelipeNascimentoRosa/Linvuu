@@ -1,0 +1,141 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 230,
+  "fase": 23,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Paired connectors: entweder … oder, weder … noch, einerseits … andererseits, je … desto: Einerseits … andererseits, zwar … aber, je … desto",
+  "objetivo": "Lesson 58, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 58,
+    "titulo": "Paired connectors: entweder … oder, weder … noch, einerseits … andererseits, je … desto",
+    "objetivo": "Use paired connectors (entweder … oder, weder … noch, sowohl … als auch, nicht nur … sondern auch, einerseits … andererseits, zwar … aber, je … desto) to list, contrast and argue.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Einerseits … andererseits, zwar … aber, je … desto",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "einerseits … andererseits",
+            "translit": "INE-er-zites … AHN-deh-rer-zites",
+            "pt": "on the one hand … on the other hand",
+            "en": "on the one hand … on the other",
+            "audio": "einerseits … andererseits"
+          },
+          {
+            "ru": "zwar … aber",
+            "translit": "TSVAR … AH-ber",
+            "pt": "admittedly … but, it's true that … but",
+            "en": "true … but",
+            "audio": "zwar … aber"
+          },
+          {
+            "ru": "je … desto",
+            "translit": "YAY … DES-toh",
+            "pt": "the more … the more",
+            "en": "the more … the more",
+            "audio": "je … desto"
+          },
+          {
+            "ru": "je mehr … desto besser",
+            "translit": "YAY MAIR … DES-toh BESS-er",
+            "pt": "the more … the better",
+            "en": "the more … the better",
+            "audio": "je mehr … desto besser"
+          },
+          {
+            "ru": "das Leben",
+            "translit": "dahs LAY-ben",
+            "pt": "life",
+            "en": "life",
+            "audio": "das Leben"
+          },
+          {
+            "ru": "die Natur",
+            "translit": "dee nah-TOOR",
+            "pt": "nature",
+            "en": "nature",
+            "audio": "die Natur"
+          },
+          {
+            "ru": "die Ruhe",
+            "translit": "dee ROO-eh",
+            "pt": "peace and quiet",
+            "en": "quiet",
+            "audio": "die Ruhe"
+          },
+          {
+            "ru": "das Angebot",
+            "translit": "dahs AHN-geh-boht",
+            "pt": "offer",
+            "en": "offer",
+            "audio": "das Angebot"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Arguing with paired connectors",
+        "explicacao": "STEP 1: «EINERSEITS … ANDERERSEITS» (on the one hand … on the other hand) shows two sides of an issue: «Einerseits ist das Leben in der Stadt spannend, andererseits ist es laut und teuer.» Both connectors take position 1 (or sit in the middle of the clause); the verb comes right after. STEP 2: «ZWAR … ABER» (admittedly … but) concedes and then counters: «Das Hotel ist zwar teuer, aber es liegt zentral» (the hotel is expensive, it's true, but it's central). STEP 3: «JE … DESTO» (the more … the more) uses the COMPARATIVE in both parts — exactly like English \"the more…, the better\": the «je» part is a SUBORDINATE clause (verb at the end); the «desto» part is the MAIN clause (verb in 2nd position): «Je mehr ich lerne, desto besser verstehe ich» (the more I study, the better I understand). STEP 4: «je … umso» means the same as «je … desto». STEP 5: use them in opinion texts, in writing and in formal speech.",
+        "tabela": [
+          {
+            "par": "einerseits … andererseits",
+            "frase": "Einerseits ist das Leben in der Stadt spannend, andererseits ist es laut und teuer."
+          },
+          {
+            "par": "zwar … aber",
+            "frase": "Das Hotel ist zwar teuer, aber es liegt zentral."
+          },
+          {
+            "par": "je … desto",
+            "frase": "Je mehr ich lerne, desto besser verstehe ich."
+          },
+          {
+            "par": "je … umso",
+            "frase": "Je länger ich warte, umso nervöser werde ich."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Je mehr ich lerne, desto ich verstehe besser.",
+            "certo": "Je mehr ich lerne, desto besser verstehe ich.",
+            "motivo": "desto + comparative + verb in 2nd position."
+          },
+          {
+            "errado": "Je mehr ich lerne ich verstehe besser.",
+            "certo": "Je mehr ich lerne, desto besser verstehe ich.",
+            "motivo": "The «desto» is missing."
+          },
+          {
+            "errado": "Je mehr ich lerne, desto besser ich verstehe.",
+            "certo": "Je mehr ich lerne, desto besser verstehe ich.",
+            "motivo": "The main clause has the verb in 2nd position."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Give 6 arguments out loud: «Einerseits … andererseits … Das ist zwar … aber … Je mehr …, desto …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 sentences with entweder … oder, weder … noch and sowohl … als auch."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-058.json",
+  "responsavel": null
+}

@@ -1,0 +1,66 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 38,
+  "fase": 4,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Review and test of the first block: Final reading of the block",
+  "objetivo": "Lesson 10, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 10,
+    "titulo": "Review and test of the first block",
+    "objetivo": "Review pronunciation, articles, the present, the accusative, separable verbs, time and directions, fix the most common English-speaker mistakes, and take the test for the first block.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Final reading of the block",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Work it out yourself",
+        "explicacao": "STEP 1: compare the questions and answers. STEP 2: Questions: STEP 3: where is the verb in questions without a question word? STEP 4: where is the verb in questions with a question word? Can the subject disappear in the answer?",
+        "tabela": [
+          {
+            "pergunta": "Wohnst du in Berlin?",
+            "resposta": "Ja, ich wohne in Berlin."
+          },
+          {
+            "pergunta": "Wo wohnst du?",
+            "resposta": "Ich wohne in Berlin."
+          },
+          {
+            "pergunta": "Kommt Tom aus Irland?",
+            "resposta": "Ja, er kommt aus Irland."
+          },
+          {
+            "pergunta": "Woher kommt Tom?",
+            "resposta": "Er kommt aus Irland."
+          },
+          {
+            "pergunta": "Lernt ihr Deutsch?",
+            "resposta": "Nein, wir lernen Englisch."
+          }
+        ],
+        "tag": "Discover"
+      },
+      {
+        "tipo": "producao",
+        "min": 9,
+        "enunciado": "Answer the questions from the text and dialogue out loud, as yourself."
+      },
+      {
+        "tipo": "revisao",
+        "min": 9,
+        "enunciado": "Read the text and dialogue below out loud before you start."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-010.json",
+  "responsavel": null
+}

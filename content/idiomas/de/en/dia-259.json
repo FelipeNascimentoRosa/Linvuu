@@ -1,0 +1,144 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 259,
+  "fase": 26,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Working life: CV, application and interview: The job interview",
+  "objetivo": "Lesson 65, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 65,
+    "titulo": "Working life: CV, application and interview",
+    "objetivo": "Describe your education and experience, write a job application and a résumé in the German format, and answer the most common job-interview questions.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "The job interview",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Answering interview questions",
+        "explicacao": "STEP 1: the most common questions: «Erzählen Sie etwas über sich» (tell us about yourself), «Warum möchten Sie bei uns arbeiten?» (why do you want to work for us?), «Was sind Ihre Stärken und Schwächen?» (strengths and weaknesses), «Wo sehen Sie sich in fünf Jahren?» (where do you see yourself in five years?), «Haben Sie Fragen an uns?». STEP 2: to talk about yourself: present + Perfekt: «Ich bin 30 Jahre alt und habe Betriebswirtschaft studiert.» STEP 3: for strengths: «Ich bin zuverlässig, teamfähig und lerne schnell» (I'm reliable, a team player and a fast learner). STEP 4: for weaknesses, honestly: «Manchmal bin ich zu perfektionistisch.» STEP 5: for the future: «In fünf Jahren möchte ich Verantwortung übernehmen» (take on responsibility). STEP 6: to ask questions: «Wie sieht ein typischer Arbeitstag aus?» (What does a typical workday look like?), «Gibt es Weiterbildungsmöglichkeiten?» (Are there opportunities for further training?). Note: German interviews stay with «Sie» — never switch to «du» unless they offer it.",
+        "tabela": [
+          {
+            "pergunta": "Erzählen Sie etwas über sich.",
+            "resposta": "Ich bin 30 Jahre alt und habe Betriebswirtschaft studiert."
+          },
+          {
+            "pergunta": "Warum möchten Sie bei uns arbeiten?",
+            "resposta": "Weil ich Ihre Firma interessant finde und gern im Team arbeite."
+          },
+          {
+            "pergunta": "Was sind Ihre Stärken?",
+            "resposta": "Ich bin zuverlässig, teamfähig und lerne schnell."
+          },
+          {
+            "pergunta": "Was sind Ihre Schwächen?",
+            "resposta": "Manchmal bin ich zu perfektionistisch."
+          },
+          {
+            "pergunta": "Wo sehen Sie sich in fünf Jahren?",
+            "resposta": "Ich möchte Verantwortung übernehmen."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 10,
+        "titulo": "Das Vorstellungsgespräch / The job interview",
+        "contexto": "A candidate is interviewed by an HR manager.",
+        "linhas": [
+          {
+            "personagem": "Chefin",
+            "ru": "— Guten Tag, Frau Lopes. Erzählen Sie bitte etwas über sich.",
+            "pt": "— Good morning, Ms. Lopes. Please tell us a little about yourself.",
+            "audio": "Guten Tag, Frau Lopes. Erzählen Sie bitte etwas über sich.",
+            "rotulo": "Chefin"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Ich bin 30 Jahre alt, komme aus Brasilien und habe Betriebswirtschaft studiert.",
+            "pt": "— I'm 30, I'm from Brazil and I studied business administration.",
+            "audio": "Ich bin 30 Jahre alt, komme aus Brasilien und habe Betriebswirtschaft studiert.",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Chefin",
+            "ru": "— Warum möchten Sie bei uns arbeiten?",
+            "pt": "— Why do you want to work for us?",
+            "audio": "Warum möchten Sie bei uns arbeiten?",
+            "rotulo": "Chefin"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Weil ich Ihre Firma interessant finde und gern im Team arbeite.",
+            "pt": "— Because I find your company interesting and I like working in a team.",
+            "audio": "Weil ich Ihre Firma interessant finde und gern im Team arbeite.",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Chefin",
+            "ru": "— Was sind Ihre Stärken?",
+            "pt": "— What are your strengths?",
+            "audio": "Was sind Ihre Stärken?",
+            "rotulo": "Chefin"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Ich bin zuverlässig, teamfähig und lerne schnell.",
+            "pt": "— I'm reliable, a good team player and I learn fast.",
+            "audio": "Ich bin zuverlässig, teamfähig und lerne schnell.",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Chefin",
+            "ru": "— Und Ihre Schwächen?",
+            "pt": "— And your weaknesses?",
+            "audio": "Und Ihre Schwächen?",
+            "rotulo": "Chefin"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Manchmal bin ich zu perfektionistisch, aber ich arbeite daran.",
+            "pt": "— Sometimes I'm too much of a perfectionist, but I'm working on it.",
+            "audio": "Manchmal bin ich zu perfektionistisch, aber ich arbeite daran.",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Chefin",
+            "ru": "— Haben Sie noch Fragen an uns?",
+            "pt": "— Do you have any questions for us?",
+            "audio": "Haben Sie noch Fragen an uns?",
+            "rotulo": "Chefin"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Ja, gibt es Weiterbildungsmöglichkeiten?",
+            "pt": "— Yes, are there opportunities for further training?",
+            "audio": "Ja, gibt es Weiterbildungsmöglichkeiten?",
+            "rotulo": "Lea"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Answer the five most common interview questions out loud, as yourself."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write the 6 parts of a cover letter, with one sentence each."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-065.json",
+  "responsavel": null
+}

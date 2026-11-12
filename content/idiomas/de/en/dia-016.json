@@ -1,0 +1,342 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 16,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Present tense verbs and word order: Practice",
+  "objetivo": "Lesson 4, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 4,
+    "titulo": "Present tense verbs and word order",
+    "objetivo": "Conjugate regular verbs in the present, put the verb in second position, and ask simple questions and make negatives.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Practice",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 16,
+        "itens": [
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich ___ in Berlin. (wohnen)",
+            "opcoes": [
+              "wohne",
+              "wohnst",
+              "wohnt"
+            ],
+            "gabarito": "wohne",
+            "explicacao": "ich → -e.",
+            "id": "de-004-e01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Du ___ Deutsch. (lernen)",
+            "opcoes": [
+              "lernst",
+              "lerne",
+              "lernt"
+            ],
+            "gabarito": "lernst",
+            "explicacao": "du → -st.",
+            "id": "de-004-e02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Er ___ hier. (arbeiten)",
+            "opcoes": [
+              "arbeitet",
+              "arbeitt",
+              "arbeiten"
+            ],
+            "gabarito": "arbeitet",
+            "explicacao": "Stem in -t: add the -e-.",
+            "id": "de-004-e03"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Heute koche ich. Du kochst morgen.",
+            "respostaEsperada": "Heute koche ich. Du kochst morgen.",
+            "explicacao": "Today I'm cooking. You cook tomorrow.",
+            "id": "de-004-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Wir ___ Kaffee. (trinken)",
+            "opcoes": [
+              "trinken",
+              "trinkt",
+              "trinke"
+            ],
+            "gabarito": "trinken",
+            "explicacao": "wir → -en.",
+            "id": "de-004-e04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ihr ___ Musik. (hören)",
+            "opcoes": [
+              "hört",
+              "HÖ-ren",
+              "höre"
+            ],
+            "gabarito": "hört",
+            "explicacao": "ihr → -t.",
+            "id": "de-004-e05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Du ___ nach Berlin. (reisen)",
+            "opcoes": [
+              "reist",
+              "reisst",
+              "reisest"
+            ],
+            "gabarito": "reist",
+            "explicacao": "Stem in -s: «du» loses the -s.",
+            "id": "de-004-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Ja, gern. Hier trinkt man abends oft Tee, oder?",
+            "respostaEsperada": "Ja, gern. Hier trinkt man abends oft Tee, oder?",
+            "explicacao": "Yes, gladly. People here often drink tea in the evening, right?",
+            "id": "de-004-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"Today I'm working.\"",
+            "opcoes": [
+              "Heute",
+              "arbeite",
+              "ich"
+            ],
+            "gabarito": "Heute arbeite ich.",
+            "explicacao": "The verb goes in 2nd position.",
+            "id": "de-004-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"Where do you live?\"",
+            "opcoes": [
+              "Wo",
+              "wohnst",
+              "du"
+            ],
+            "gabarito": "Wo wohnst du?",
+            "explicacao": "Question word + verb + subject.",
+            "id": "de-004-e08"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Ich wohne in Hamburg. Und du?",
+            "respostaEsperada": "Ich wohne in Hamburg. Und du?",
+            "explicacao": "I live in Hamburg. And you?",
+            "id": "de-004-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "In German, the conjugated verb goes:",
+            "opcoes": [
+              "in 2nd position",
+              "at the end",
+              "always in 1st position"
+            ],
+            "gabarito": "in 2nd position",
+            "explicacao": "Second position in a statement.",
+            "id": "de-004-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "A yes/no question starts:",
+            "opcoes": [
+              "with the verb",
+              "with the subject",
+              "with the word «ob»"
+            ],
+            "gabarito": "with the verb",
+            "explicacao": "Verb first — no \"do\".",
+            "id": "de-004-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Wann» means:",
+            "opcoes": [
+              "when",
+              "where",
+              "why"
+            ],
+            "gabarito": "when",
+            "explicacao": "«wann» = when (not \"when\" ≠ «wenn», which you'll meet later).",
+            "id": "de-004-e11"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Wirklich? Ich lerne gern Sprachen!",
+            "respostaEsperada": "Wirklich? Ich lerne gern Sprachen!",
+            "explicacao": "Really? I like learning languages!",
+            "id": "de-004-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Wo wohnst du?",
+            "opcoes": [
+              "Wo wohnst du?",
+              "Wie heißt du?",
+              "Woher kommst du?"
+            ],
+            "gabarito": "Wo wohnst du?",
+            "explicacao": "«wo» = where (and «wer» = who).",
+            "id": "de-004-e12"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ich lerne gern Deutsch",
+            "respostaEsperada": "Ich lerne gern Deutsch",
+            "explicacao": "gern = gladly; with a verb: to like doing.",
+            "id": "de-004-e13"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write 4 sentences: where you live, where you work, what you're learning, and a question.",
+            "respostaEsperada": "Ich wohne in Berlin. Ich arbeite hier. Ich lerne Deutsch. Wo wohnst du?",
+            "id": "de-004-e14"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Write the sentence Ich wohne in Recife three different ways, starting with Heute, Jetzt and Hier.",
+            "respostaEsperada": "Heute wohne ich in Recife. / Jetzt wohne ich in Recife. / Hier wohne ich in Recife.",
+            "id": "de-004-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write five sentences about your day, each starting with a different block: Heute, Jetzt, Dann, Hier and Dort.",
+            "respostaEsperada": "Heute arbeite ich viel. Jetzt lerne ich Deutsch. Dann trinke ich gern Kaffee. Hier wohne ich sehr gern. Dort spielt Tom Fußball.",
+            "id": "de-004-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Rewrite three facts from the scene in lesson 2, starting with Heute, Jetzt and In München.",
+            "respostaEsperada": "Heute kochen Tom und Camila zusammen. Jetzt lernt Camila Deutsch. In München wohnt Tom gern.",
+            "id": "de-004-L-p03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Heute ich lerne Deutsch.",
+            "respostaEsperada": "Heute lerne ich Deutsch.",
+            "explicacao": "Heute lerne ich Deutsch.",
+            "id": "de-004-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Dann wir kochen zusammen.",
+            "respostaEsperada": "Dann kochen wir zusammen.",
+            "explicacao": "Dann kochen wir zusammen.",
+            "id": "de-004-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Hier Tom wohnt.",
+            "respostaEsperada": "Hier wohnt Tom.",
+            "explicacao": "Hier wohnt Tom.",
+            "id": "de-004-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Jetzt Tom und Camila kochen.",
+            "respostaEsperada": "Jetzt kochen Tom und Camila.",
+            "explicacao": "Jetzt kochen Tom und Camila.",
+            "id": "de-004-L-c04"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Is there a mistake? Correct it or write «OK»: Ich trinke gern Kaffee.",
+            "respostaEsperada": "OK",
+            "id": "de-004-L-c05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Morgen ich spiele Fußball.",
+            "respostaEsperada": "Morgen spiele ich Fußball.",
+            "explicacao": "Morgen spiele ich Fußball.",
+            "id": "de-004-L-c06"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "The typical English-speaker mistakes",
+        "explicacao": "STEP 1: the costliest mistake is keeping the subject glued to the front after a time or place word: Heute ich lerne. It feels natural because English does it (\"Today I learn\"), but in German the verb is a magnet fixed in position 2 and the subject moves after it (inversion). Two more English habits: adding a \"do\" (there is none: «Wohnst du hier?») and translating \"I am learning\" word for word (just «Ich lerne»). STEP 2: read the table and say each correct sentence out loud before you look at the reason.",
+        "erros": [
+          {
+            "errado": "Heute ich lerne Deutsch.",
+            "certo": "Heute lerne ich Deutsch.",
+            "motivo": "The verb stays in position 2; the subject moves after it — not \"Today I learn\"."
+          },
+          {
+            "errado": "Morgen ich spiele Fußball.",
+            "certo": "Morgen spiele ich Fußball.",
+            "motivo": "Any time word in position 1 pushes the subject after the verb."
+          },
+          {
+            "errado": "Tust du wohnen in Berlin?",
+            "certo": "Wohnst du in Berlin?",
+            "motivo": "German has no \"do\": the verb itself opens a yes/no question."
+          },
+          {
+            "errado": "Ich bin lerne Deutsch.",
+            "certo": "Ich lerne Deutsch.",
+            "motivo": "No \"am …-ing\" in German: «Ich lerne» already means \"I'm learning\"."
+          },
+          {
+            "errado": "Er arbeit hier.",
+            "certo": "Er arbeitet hier.",
+            "motivo": "Stem in -t: add an -e- before the ending."
+          },
+          {
+            "errado": "Ich lerne Deutsch gern.",
+            "certo": "Ich lerne gern Deutsch.",
+            "motivo": "«gern» goes right after the verb, before the object."
+          }
+        ],
+        "tag": "Typical mistake"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Can I do it? I start a sentence with Heute and put the verb right after it. · I recognize the position-1 block in Tom und Camila kochen. · I notice immediately that Dann wir kochen is wrong."
+      },
+      {
+        "tipo": "revisao",
+        "min": 2,
+        "enunciado": "Review. From lesson 2: complete with the right verb form inside longer sentences: Heute ____ (arbeiten) er in München. · Jetzt ____ (wohnen) ihr in Berlin. · Dann ____ (haben) wir Hunger. · Hier ____ (sein) du richtig. From lesson 1: say the sound of the first letter out loud: Wasser, Zeit, Sonne."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-004.json",
+  "responsavel": null
+}

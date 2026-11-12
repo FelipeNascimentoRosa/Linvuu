@@ -1,0 +1,149 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 262,
+  "fase": 27,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Media, society and the environment: The environment and sustainable habits",
+  "objetivo": "Lesson 66, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 66,
+    "titulo": "Media, society and the environment",
+    "objetivo": "Talk about the news, social media, the environment and sustainable habits, understand short news texts, and give your opinion on social issues with B1 vocabulary and structures.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "The environment and sustainable habits",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "die Umwelt",
+            "translit": "dee OOM-velt",
+            "pt": "the environment",
+            "en": "environment",
+            "audio": "die Umwelt"
+          },
+          {
+            "ru": "der Klimawandel",
+            "translit": "dair KLEE-mah-vahn-del",
+            "pt": "climate change",
+            "en": "climate change",
+            "audio": "der Klimawandel"
+          },
+          {
+            "ru": "der Müll",
+            "translit": "dair MÜL",
+            "pt": "trash, garbage",
+            "en": "rubbish",
+            "audio": "der Müll"
+          },
+          {
+            "ru": "recyceln",
+            "translit": "reh-ZY-keln",
+            "pt": "to recycle",
+            "en": "to recycle",
+            "audio": "recyceln"
+          },
+          {
+            "ru": "Energie sparen",
+            "translit": "eh-nair-GHEE SHPAH-ren",
+            "pt": "to save energy",
+            "en": "to save energy",
+            "audio": "Energie sparen"
+          },
+          {
+            "ru": "der öffentliche Verkehr",
+            "translit": "dair ÖF-ent-li-kheh fair-KAIR",
+            "pt": "public transportation",
+            "en": "public transport",
+            "audio": "der öffentliche Verkehr"
+          },
+          {
+            "ru": "die Verschmutzung",
+            "translit": "dee fair-SHMOOT-soong",
+            "pt": "pollution",
+            "en": "pollution",
+            "audio": "die Verschmutzung"
+          },
+          {
+            "ru": "nachhaltig",
+            "translit": "NAHKH-hahl-tikh",
+            "pt": "sustainable",
+            "en": "sustainable",
+            "audio": "nachhaltig"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Talking about the environment, step by step",
+        "explicacao": "STEP 1: for HABITS: «Ich trenne den Müll» (I separate my trash — Germany sorts trash into several bins), «Ich spare Energie», «Ich fahre mit öffentlichen Verkehrsmitteln» (I take public transportation). STEP 2: for PURPOSE (lesson 56): «Ich recycle, um die Umwelt zu schützen» and «damit die Umwelt sauberer wird». STEP 3: for CONSEQUENCE: «Das Klima wird wärmer. Deshalb müssen wir handeln.» STEP 4: for HYPOTHESES (Konjunktiv II): «Wenn alle weniger Auto fahren würden, wäre die Luft sauberer» (if everyone drove less, the air would be cleaner). STEP 5: for the PASSIVE: «Der Müll wird getrennt», «Viele Flaschen werden recycelt.» STEP 6: for OPINION: «Ich finde, dass jeder Verantwortung übernehmen sollte» (I think everyone should take responsibility).",
+        "tabela": [
+          {
+            "funcao": "habit",
+            "frase": "Ich trenne den Müll und spare Energie."
+          },
+          {
+            "funcao": "purpose",
+            "frase": "Ich recycle, um die Umwelt zu schützen."
+          },
+          {
+            "funcao": "consequence",
+            "frase": "Das Klima wird wärmer. Deshalb müssen wir handeln."
+          },
+          {
+            "funcao": "hypothesis",
+            "frase": "Wenn alle weniger Auto fahren würden, wäre die Luft sauberer."
+          },
+          {
+            "funcao": "passive",
+            "frase": "Viele Flaschen werden recycelt."
+          },
+          {
+            "funcao": "opinion",
+            "frase": "Ich finde, dass jeder Verantwortung übernehmen sollte."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich recycle, damit ich schütze die Umwelt.",
+            "certo": "Ich recycle, um die Umwelt zu schützen.",
+            "motivo": "Same subject: «um … zu»."
+          },
+          {
+            "errado": "Wenn alle weniger Auto fahren, ist die Luft sauberer. (as a hypothesis)",
+            "certo": "Wenn alle weniger Auto fahren würden, wäre die Luft sauberer.",
+            "motivo": "Unreal: Konjunktiv II."
+          },
+          {
+            "errado": "Der Müll trennt.",
+            "certo": "Der Müll wird getrennt.",
+            "motivo": "Passive: werden + Partizip II."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say out loud what you do for the environment and what people should do."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 sentences about how you get your news."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-066.json",
+  "responsavel": null
+}

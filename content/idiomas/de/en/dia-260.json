@@ -1,0 +1,551 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 260,
+  "fase": 26,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Working life: CV, application and interview: Practice",
+  "objetivo": "Lesson 65, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 65,
+    "titulo": "Working life: CV, application and interview",
+    "objetivo": "Describe your education and experience, write a job application and a résumé in the German format, and answer the most common job-interview questions.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Practice",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Seit 2020 ___ ich als Verkäufer. (arbeiten)",
+            "opcoes": [
+              "arbeite",
+              "arbeitete",
+              "habe gearbeitet"
+            ],
+            "gabarito": "arbeite",
+            "explicacao": "«seit» + present tense (English: \"have been working\").",
+            "id": "de-065-e01"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Good morning, Ms. Lopes. Please tell us a little about yourself.\"",
+            "opcoes": [
+              "Sie",
+              "Erzählen",
+              "bitte",
+              "etwas",
+              "Frau",
+              "sich.",
+              "Lopes.",
+              "über",
+              "Guten",
+              "Tag,"
+            ],
+            "gabarito": "Guten Tag, Frau Lopes. Erzählen Sie bitte etwas über sich.",
+            "explicacao": "Write: Guten Tag, Frau Lopes. Erzählen Sie bitte etwas über sich.",
+            "id": "de-065-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich habe von 2015 bis 2019 Betriebswirtschaft ___. (studieren)",
+            "opcoes": [
+              "studiert",
+              "gestudiert",
+              "studieren"
+            ],
+            "gabarito": "studiert",
+            "explicacao": "Perfekt: no ge-.",
+            "id": "de-065-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Guten Tag, Frau Lopes. Erzählen Sie bitte etwas über sich.",
+            "respostaEsperada": "Guten Tag, Frau Lopes. Erzählen Sie bitte etwas über sich.",
+            "explicacao": "Good morning, Ms. Lopes. Please tell us a little about yourself.",
+            "id": "de-065-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich bewerbe mich ___ die Stelle.",
+            "opcoes": [
+              "um",
+              "für",
+              "an"
+            ],
+            "gabarito": "um",
+            "explicacao": "sich bewerben um.",
+            "id": "de-065-e03"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Because I find your company interesting and I like working in a team.\"",
+            "opcoes": [
+              "Ihre",
+              "finde",
+              "arbeite.",
+              "ich",
+              "und",
+              "Firma",
+              "Weil",
+              "im",
+              "Team",
+              "interessant",
+              "gern"
+            ],
+            "gabarito": "Weil ich Ihre Firma interessant finde und gern im Team arbeite.",
+            "explicacao": "Write: Weil ich Ihre Firma interessant finde und gern im Team arbeite.",
+            "id": "de-065-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Weil ich Ihre Firma interessant finde und gern im Team arbeite.",
+            "respostaEsperada": "Weil ich Ihre Firma interessant finde und gern im Team arbeite.",
+            "explicacao": "Because I find your company interesting and I like working in a team.",
+            "id": "de-065-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Warum möchten Sie bei uns arbeiten?",
+            "respostaEsperada": "Warum möchten Sie bei uns arbeiten?",
+            "explicacao": "Why do you want to work for us?",
+            "id": "de-065-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"I'm reliable, a good team player and I learn fast.\"",
+            "opcoes": [
+              "bin",
+              "lerne",
+              "schnell.",
+              "zuverlässig,",
+              "und",
+              "teamfähig",
+              "Ich"
+            ],
+            "gabarito": "Ich bin zuverlässig, teamfähig und lerne schnell.",
+            "explicacao": "Write: Ich bin zuverlässig, teamfähig und lerne schnell.",
+            "id": "de-065-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich ___ über gute Kenntnisse in Englisch. (verfügen)",
+            "opcoes": [
+              "verfüge",
+              "verfügst",
+              "verfügt"
+            ],
+            "gabarito": "verfüge",
+            "explicacao": "verfügen über + Akk.",
+            "id": "de-065-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ich bin zuverlässig, teamfähig und lerne schnell.",
+            "respostaEsperada": "Ich bin zuverlässig, teamfähig und lerne schnell.",
+            "explicacao": "I'm reliable, a good team player and I learn fast.",
+            "id": "de-065-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich interessiere mich für diese Stelle, ___ ich gern mit Kunden arbeite.",
+            "opcoes": [
+              "weil",
+              "ob",
+              "wenn"
+            ],
+            "gabarito": "weil",
+            "explicacao": "Reason.",
+            "id": "de-065-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Sometimes I'm too much of a perfectionist, but I'm working on it.\"",
+            "opcoes": [
+              "Manchmal",
+              "aber",
+              "zu",
+              "daran.",
+              "arbeite",
+              "perfektionistisch,",
+              "ich",
+              "bin",
+              "ich"
+            ],
+            "gabarito": "Manchmal bin ich zu perfektionistisch, aber ich arbeite daran.",
+            "explicacao": "Write: Manchmal bin ich zu perfektionistisch, aber ich arbeite daran.",
+            "id": "de-065-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Was sind Ihre Stärken?",
+            "respostaEsperada": "Was sind Ihre Stärken?",
+            "explicacao": "What are your strengths?",
+            "id": "de-065-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Manchmal bin ich zu perfektionistisch, aber ich arbeite daran.",
+            "respostaEsperada": "Manchmal bin ich zu perfektionistisch, aber ich arbeite daran.",
+            "explicacao": "Sometimes I'm too much of a perfectionist, but I'm working on it.",
+            "id": "de-065-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Über eine Einladung ___ ich mich freuen. (würde)",
+            "opcoes": [
+              "würde",
+              "werde",
+              "wurde"
+            ],
+            "gabarito": "würde",
+            "explicacao": "Politeness: Konjunktiv II.",
+            "id": "de-065-e06"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Yes, are there opportunities for further training?\"",
+            "opcoes": [
+              "Ja,",
+              "gibt",
+              "Weiterbildungsmöglichkeiten?",
+              "es"
+            ],
+            "gabarito": "Ja, gibt es Weiterbildungsmöglichkeiten?",
+            "explicacao": "Write: Ja, gibt es Weiterbildungsmöglichkeiten?",
+            "id": "de-065-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "The German Lebenslauf is:",
+            "opcoes": [
+              "chronological and factual",
+              "a long narrative",
+              "only about interests"
+            ],
+            "gabarito": "chronological and factual",
+            "explicacao": "Details, education, experience.",
+            "id": "de-065-e07"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ja, gibt es Weiterbildungsmöglichkeiten?",
+            "respostaEsperada": "Ja, gibt es Weiterbildungsmöglichkeiten?",
+            "explicacao": "Yes, are there opportunities for further training?",
+            "id": "de-065-x10",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «das Anschreiben» mean?",
+            "audio": "das Anschreiben",
+            "opcoes": [
+              "cover letter",
+              "documents (application papers)",
+              "strength",
+              "vocational training, apprenticeship"
+            ],
+            "gabarito": "cover letter",
+            "explicacao": "«das Anschreiben» = cover letter.",
+            "id": "de-065-x11",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Das Anschreiben» is:",
+            "opcoes": [
+              "the cover letter",
+              "the résumé",
+              "the interview"
+            ],
+            "gabarito": "the cover letter",
+            "explicacao": "The application letter.",
+            "id": "de-065-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «der Termin» mean?",
+            "audio": "der Termin",
+            "opcoes": [
+              "work experience",
+              "appointment, scheduled interview",
+              "university studies",
+              "vocational training, apprenticeship"
+            ],
+            "gabarito": "appointment, scheduled interview",
+            "explicacao": "«der Termin» = appointment, scheduled interview.",
+            "id": "de-065-x12",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Und Ihre Schwächen?",
+            "respostaEsperada": "Und Ihre Schwächen?",
+            "explicacao": "And your weaknesses?",
+            "id": "de-065-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «die Ausbildung» mean?",
+            "audio": "die Ausbildung",
+            "opcoes": [
+              "vocational training, apprenticeship",
+              "strength",
+              "résumé, CV",
+              "application"
+            ],
+            "gabarito": "vocational training, apprenticeship",
+            "explicacao": "«die Ausbildung» = vocational training, apprenticeship.",
+            "id": "de-065-x13",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Die Absage» is:",
+            "opcoes": [
+              "a rejection",
+              "an acceptance",
+              "an ad"
+            ],
+            "gabarito": "a rejection",
+            "explicacao": "Absage × Zusage.",
+            "id": "de-065-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «die Stellenanzeige» mean?",
+            "audio": "die Stellenanzeige",
+            "opcoes": [
+              "vocational training, apprenticeship",
+              "documents (application papers)",
+              "application",
+              "job ad"
+            ],
+            "gabarito": "job ad",
+            "explicacao": "«die Stellenanzeige» = job ad.",
+            "id": "de-065-x14",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"I'm applying for the position of salesperson.\"",
+            "opcoes": [
+              "Ich",
+              "bewerbe",
+              "mich",
+              "um",
+              "die",
+              "Stelle",
+              "als",
+              "Verkäufer"
+            ],
+            "gabarito": "Ich bewerbe mich um die Stelle als Verkäufer.",
+            "explicacao": "sich bewerben um.",
+            "id": "de-065-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «die Berufserfahrung» mean?",
+            "audio": "die Berufserfahrung",
+            "opcoes": [
+              "work experience",
+              "strength",
+              "degree, diploma, completion",
+              "appointment, scheduled interview"
+            ],
+            "gabarito": "work experience",
+            "explicacao": "«die Berufserfahrung» = work experience.",
+            "id": "de-065-x15",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Haben Sie noch Fragen an uns?",
+            "respostaEsperada": "Haben Sie noch Fragen an uns?",
+            "explicacao": "Do you have any questions for us?",
+            "id": "de-065-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «die Voraussetzung» mean?",
+            "audio": "die Voraussetzung",
+            "opcoes": [
+              "internship",
+              "résumé, CV",
+              "documents (application papers)",
+              "requirement"
+            ],
+            "gabarito": "requirement",
+            "explicacao": "«die Voraussetzung» = requirement.",
+            "id": "de-065-x16",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Manchmal bin ich zu perfektionistisch",
+            "opcoes": [
+              "Manchmal",
+              "ich",
+              "zu",
+              "perfektionistisch",
+              "bin"
+            ],
+            "gabarito": "Manchmal bin ich zu perfektionistisch",
+            "explicacao": "Write: Manchmal bin ich zu perfektionistisch",
+            "id": "de-065-x17",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Manchmal bin ich zu perfektionistisch",
+            "opcoes": [
+              "Manchmal bin ich zu perfektionistisch",
+              "Immer bin ich perfekt",
+              "Manchmal arbeite ich nicht"
+            ],
+            "gabarito": "Manchmal bin ich zu perfektionistisch",
+            "explicacao": "A weakness.",
+            "id": "de-065-e11"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Ich bin zuverlässig, teamfähig und lerne schnell",
+            "opcoes": [
+              "bin",
+              "lerne",
+              "und",
+              "teamfähig",
+              "schnell",
+              "Ich",
+              "zuverlässig,"
+            ],
+            "gabarito": "Ich bin zuverlässig, teamfähig und lerne schnell",
+            "explicacao": "Write: Ich bin zuverlässig, teamfähig und lerne schnell",
+            "id": "de-065-x18",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ich bin zuverlässig, teamfähig und lerne schnell",
+            "respostaEsperada": "Ich bin zuverlässig, teamfähig und lerne schnell",
+            "explicacao": "Strengths.",
+            "id": "de-065-e12"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Manchmal bin ich zu perfektionistisch",
+            "respostaEsperada": "Manchmal bin ich zu perfektionistisch",
+            "explicacao": "Write: Manchmal bin ich zu perfektionistisch",
+            "id": "de-065-x19",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich habe die Ausbildung mit gutem Erfolg ___. (completed)",
+            "opcoes": [
+              "abgeschlossen",
+              "abschließen",
+              "abgeschlossene",
+              "schloss ab"
+            ],
+            "gabarito": "abgeschlossen",
+            "explicacao": "Perfekt of a separable verb: «abgeschlossen».",
+            "id": "de-065-m01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich ___ mich um die Stelle.",
+            "opcoes": [
+              "bewerbe",
+              "bewirbe",
+              "bewerbt",
+              "bewerben"
+            ],
+            "gabarito": "bewerbe",
+            "explicacao": "«sich bewerben um»; first person: «bewerbe».",
+            "id": "de-065-m02"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Ich arbeite seit 2020 als Verkäufer gewesen.",
+              "Seit 2020 arbeite ich als Verkäufer.",
+              "Seit 2020 habe ich als Verkäufer arbeiten."
+            ],
+            "gabarito": "Seit 2020 arbeite ich als Verkäufer.",
+            "explicacao": "«seit» + present tense for something still going on.",
+            "id": "de-065-m03"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: I speak German fluently.",
+            "opcoes": [
+              "Ich",
+              "spreche",
+              "fließend",
+              "Deutsch."
+            ],
+            "gabarito": "Ich spreche fließend Deutsch.",
+            "explicacao": "Verb in 2nd position.",
+            "id": "de-065-m04"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write 5 sentences of an application: reference, education, experience, a strength and the closing.",
+            "respostaEsperada": "Ich bewerbe mich um die Stelle als Verkäufer. Ich habe Betriebswirtschaft studiert. Seit 2020 arbeite ich im Verkauf. Ich bin zuverlässig und lerne schnell. Über eine Einladung würde ich mich sehr freuen.",
+            "id": "de-065-e13"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Record yourself doing a complete job interview in German."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write an answer to each interview question, from memory."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-065.json",
+  "responsavel": null
+}

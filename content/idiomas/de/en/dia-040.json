@@ -1,0 +1,381 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 40,
+  "fase": 4,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Review and test of the first block: Test of the first block",
+  "objetivo": "Lesson 10, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 10,
+    "titulo": "Review and test of the first block",
+    "objetivo": "Review pronunciation, articles, the present, the accusative, separable verbs, time and directions, fix the most common English-speaker mistakes, and take the test for the first block.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Test of the first block",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 16,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How is «ei» pronounced in «Eis»?",
+            "opcoes": [
+              "«ai»",
+              "«ei»",
+              "«i»"
+            ],
+            "gabarito": "«ai»",
+            "explicacao": "«ei» sounds like \"eye\".",
+            "id": "de-010-e01"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Article of «Frau»:",
+            "opcoes": [
+              "die",
+              "der",
+              "das"
+            ],
+            "gabarito": "die",
+            "explicacao": "Frau is feminine.",
+            "id": "de-010-e02"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Plural of «Haus»:",
+            "opcoes": [
+              "Häuser",
+              "Hause",
+              "Haus"
+            ],
+            "gabarito": "Häuser",
+            "explicacao": "Plural in -er with an umlaut.",
+            "id": "de-010-e03"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Guten Morgen! Wer ist Camila?",
+            "respostaEsperada": "Guten Morgen! Wer ist Camila?",
+            "explicacao": "Good morning! Who is Camila?",
+            "id": "de-010-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich ___ Brasilianer. (sein)",
+            "opcoes": [
+              "bin",
+              "bist",
+              "ist"
+            ],
+            "gabarito": "bin",
+            "explicacao": "ich → bin.",
+            "id": "de-010-e04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Er ___ einen Bruder. (haben)",
+            "opcoes": [
+              "hat",
+              "hast",
+              "habt"
+            ],
+            "gabarito": "hat",
+            "explicacao": "er → hat.",
+            "id": "de-010-e05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Wir ___ in Berlin. (wohnen)",
+            "opcoes": [
+              "wohnen",
+              "wohnt",
+              "wohne"
+            ],
+            "gabarito": "wohnen",
+            "explicacao": "wir → -en.",
+            "id": "de-010-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich esse ___ Käse. (the)",
+            "opcoes": [
+              "den",
+              "der",
+              "dem"
+            ],
+            "gabarito": "den",
+            "explicacao": "Masculine accusative.",
+            "id": "de-010-e07"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Woher kommen Sie, Camila?",
+            "respostaEsperada": "Woher kommen Sie, Camila?",
+            "explicacao": "Where are you from, Camila?",
+            "id": "de-010-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Du ___ ein Brot. (essen)",
+            "opcoes": [
+              "isst",
+              "esst",
+              "isse"
+            ],
+            "gabarito": "isst",
+            "explicacao": "e → i with «du».",
+            "id": "de-010-e08"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich ___ einen Tee. (möchten)",
+            "opcoes": [
+              "möchte",
+              "möchtest",
+              "möchten"
+            ],
+            "gabarito": "möchte",
+            "explicacao": "ich → möchte.",
+            "id": "de-010-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "21 in German:",
+            "opcoes": [
+              "einundzwanzig",
+              "zwanzigeins",
+              "einsundzwanzig"
+            ],
+            "gabarito": "einundzwanzig",
+            "explicacao": "ones + und + tens.",
+            "id": "de-010-e10"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Sprechen Sie Englisch?",
+            "respostaEsperada": "Sprechen Sie Englisch?",
+            "explicacao": "Do you speak English?",
+            "id": "de-010-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«halb drei» is:",
+            "opcoes": [
+              "2:30",
+              "3:30",
+              "3:00"
+            ],
+            "gabarito": "2:30",
+            "explicacao": "Half an hour before three.",
+            "id": "de-010-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich arbeite ___ Montag.",
+            "opcoes": [
+              "am",
+              "im",
+              "um"
+            ],
+            "gabarito": "am",
+            "explicacao": "Day of the week: am.",
+            "id": "de-010-e12"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"I get up at seven o'clock.\"",
+            "opcoes": [
+              "Ich",
+              "stehe",
+              "um",
+              "sieben",
+              "Uhr",
+              "auf"
+            ],
+            "gabarito": "Ich stehe um sieben Uhr auf.",
+            "explicacao": "The separable prefix goes to the end.",
+            "id": "de-010-e13"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich gehe ___ Kino. (Wohin?)",
+            "opcoes": [
+              "ins",
+              "im",
+              "in den"
+            ],
+            "gabarito": "ins",
+            "explicacao": "Movement, neuter: ins.",
+            "id": "de-010-e14"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Hallo, ich bin Jonas. Wo wohnst du?",
+            "respostaEsperada": "Hallo, ich bin Jonas. Wo wohnst du?",
+            "explicacao": "Hi, I'm Jonas. Where do you live?",
+            "id": "de-010-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Gehen Sie geradeaus",
+            "opcoes": [
+              "Gehen Sie geradeaus",
+              "Biegen Sie links ab",
+              "Es ist nicht weit"
+            ],
+            "gabarito": "Gehen Sie geradeaus",
+            "explicacao": "Formal imperative.",
+            "id": "de-010-e15"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ich komme aus Brasilien und wohne in Berlin",
+            "respostaEsperada": "Ich komme aus Brasilien und wohne in Berlin",
+            "explicacao": "Verb in 2nd position.",
+            "id": "de-010-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write 6 sentences: your name, where you're from, your age, what you eat, when you get up and where you go in the evening.",
+            "respostaEsperada": "Ich heiße Emma. Ich komme aus Kanada. Ich bin fünfundzwanzig Jahre alt. Ich esse ein Brot. Ich stehe um sieben Uhr auf. Am Abend gehe ich ins Kino.",
+            "id": "de-010-e17"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Write four questions for a new classmate using du: one with wie, one with woher, one with wo and one with was.",
+            "respostaEsperada": "Wie heißt du? / Woher kommst du? / Wo wohnst du jetzt? / Was machst du hier in München?",
+            "id": "de-010-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write your own full answers to those four questions.",
+            "respostaEsperada": "Ich heiße Lucas. / Ich komme aus Brasilien. / Ich wohne jetzt in München. / Ich lerne Deutsch und arbeite hier.",
+            "id": "de-010-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write a six-line dialogue between you and a classmate on the first day of a German class.",
+            "respostaEsperada": "Model dialogue: — Hallo! Ich bin Ryan. Wie heißt du? — Hallo Ryan! Ich heiße Anna. Woher kommst du? — Ich komme aus den USA. Und du, kommst du aus Deutschland? — Nein, ich komme aus Österreich, aber ich wohne jetzt hier. — Cool! Trinken wir nachher zusammen Kaffee? — Ja, sehr gern!",
+            "id": "de-010-L-p03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Wo du wohnst?",
+            "respostaEsperada": "Wo wohnst du?",
+            "explicacao": "Wo wohnst du?",
+            "id": "de-010-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Wohnen du in Berlin?",
+            "respostaEsperada": "Wohnst du in Berlin?",
+            "explicacao": "Wohnst du in Berlin? (the verb agrees with du)",
+            "id": "de-010-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Woher du kommst?",
+            "respostaEsperada": "Woher kommst du?",
+            "explicacao": "Woher kommst du?",
+            "id": "de-010-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Wo gehst du heute?",
+            "respostaEsperada": "Wohin gehst du heute?",
+            "explicacao": "Wohin gehst du heute? (a destination needs wohin)",
+            "id": "de-010-L-c04"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Is there a mistake? Correct it or write «OK»: Wer wohnt hier?",
+            "respostaEsperada": "OK",
+            "id": "de-010-L-c05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Was ist Tom?",
+            "respostaEsperada": "Wer ist Tom?",
+            "explicacao": "Wer ist Tom? (a person: wer)",
+            "id": "de-010-L-c06"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "The typical English-speaker mistakes",
+        "explicacao": "STEP 1: the costliest mistakes: using wo for everything, because English \"where\" covers all three (a destination needs wohin, an origin woher); keeping the subject before the verb in a question (Wo du wohnst? instead of Wo wohnst du?); looking for a \"do\" that German doesn't have; and mixing up wer (\"who\") with \"where\". STEP 2: read the table and say each correct sentence out loud before you look at the reason.",
+        "erros": [
+          {
+            "errado": "Wo gehst du heute?",
+            "certo": "Wohin gehst du heute?",
+            "motivo": "English \"where\" covers three ideas; a destination needs wohin."
+          },
+          {
+            "errado": "Wo du wohnst?",
+            "certo": "Wo wohnst du?",
+            "motivo": "Question word first, then the verb, then the subject."
+          },
+          {
+            "errado": "Tust du in Berlin wohnen?",
+            "certo": "Wohnst du in Berlin?",
+            "motivo": "No \"do\" in German: the verb itself opens the question."
+          },
+          {
+            "errado": "Wer ist der Bahnhof?",
+            "certo": "Wo ist der Bahnhof?",
+            "motivo": "wer = who; where = wo."
+          },
+          {
+            "errado": "Was ist Tom?",
+            "certo": "Wer ist Tom?",
+            "motivo": "A person: wer."
+          },
+          {
+            "errado": "Woher du kommst?",
+            "certo": "Woher kommst du?",
+            "motivo": "Verb right after the question word."
+          }
+        ],
+        "tag": "Typical mistake"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Can I do it? I ask for someone's name, origin, home and activity. · I choose between wo, wohin and woher. · I turn statements into yes/no questions."
+      },
+      {
+        "tipo": "revisao",
+        "min": 2,
+        "enunciado": "Review. Reorder into statements, starting with the first word: (a) Heute / lernen / wir / Deutsch. (b) Dann / Camila / trinkt / Kaffee. (c) Hier / Tom / wohnt. Write the right form: du (wohnen), er (kommen), ihr (lernen), Sie (arbeiten). Say out loud: Wo, Woher, Warum, Wer, Wie. What sound does w make? And ie?"
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-010.json",
+  "responsavel": null
+}

@@ -1,0 +1,178 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 90,
+  "fase": 9,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Perfekt 3: haben or sein?: More verbs and the confusing exceptions",
+  "objetivo": "Lesson 23, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 23,
+    "titulo": "Perfekt 3: haben or sein?",
+    "objetivo": "Choose the right Perfekt auxiliary (haben or sein), use verbs of movement and change of state, and build complete sentences — questions, negatives, and the words schon, noch nicht and noch nie.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "More verbs and the confusing exceptions",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "passieren",
+            "translit": "pah-SEER-en",
+            "pt": "to happen",
+            "en": "to happen",
+            "audio": "passieren"
+          },
+          {
+            "ru": "aufwachen",
+            "translit": "OWF-vahk-en",
+            "pt": "to wake up",
+            "en": "to wake up",
+            "audio": "aufwachen"
+          },
+          {
+            "ru": "der Unfall",
+            "translit": "dair OON-fahl",
+            "pt": "accident",
+            "en": "accident",
+            "audio": "der Unfall"
+          },
+          {
+            "ru": "verlieren",
+            "translit": "fair-LEER-en",
+            "pt": "to lose",
+            "en": "to lose",
+            "audio": "verlieren"
+          },
+          {
+            "ru": "gewinnen",
+            "translit": "geh-VIN-en",
+            "pt": "to win",
+            "en": "to win",
+            "audio": "gewinnen"
+          },
+          {
+            "ru": "vergessen",
+            "translit": "fair-GESS-en",
+            "pt": "to forget",
+            "en": "to forget",
+            "audio": "vergessen"
+          },
+          {
+            "ru": "sterben",
+            "translit": "SHTAIR-ben",
+            "pt": "to die",
+            "en": "to die",
+            "audio": "sterben"
+          },
+          {
+            "ru": "wachsen",
+            "translit": "VAHK-sen",
+            "pt": "to grow",
+            "en": "to grow",
+            "audio": "wachsen"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "More verbs with sein, and the usual mix-ups",
+        "explicacao": "STEP 1: more change-of-state verbs that take «sein»: passieren → passiert («Was ist passiert?» — What happened?); aufwachen → aufgewacht; sterben → gestorben; wachsen → gewachsen; werden → geworden. STEP 2: verbs that look similar but take «haben», because neither the place nor the state of the subject changes: verlieren → verloren; gewinnen → gewonnen; vergessen → vergessen. STEP 3: watch out for «fahren»: with a direct object it takes «haben» — «Ich habe das Auto gefahren» (I drove the car); without an object, going from one place to another, it takes «sein» — «Ich bin nach Berlin gefahren» (I drove to Berlin). STEP 4: the most common question of all: «Was ist passiert?» STEP 5: when in doubt, ask yourself: \"does the subject change place or state?\"",
+        "exemplos": [
+          {
+            "ru": "Was ist passiert?",
+            "pt": "What happened?"
+          },
+          {
+            "ru": "Ich habe meinen Schlüssel verloren.",
+            "pt": "I lost my key."
+          },
+          {
+            "ru": "Ich habe das Auto gefahren.",
+            "pt": "I drove the car."
+          },
+          {
+            "ru": "Ich bin nach Berlin gefahren.",
+            "pt": "I went to Berlin."
+          }
+        ],
+        "tabela": [
+          {
+            "auxiliar": "sein",
+            "infinitivo": "passieren",
+            "participio": "passiert"
+          },
+          {
+            "auxiliar": "sein",
+            "infinitivo": "aufwachen",
+            "participio": "aufgewacht"
+          },
+          {
+            "auxiliar": "sein",
+            "infinitivo": "sterben",
+            "participio": "gestorben"
+          },
+          {
+            "auxiliar": "sein",
+            "infinitivo": "werden",
+            "participio": "geworden"
+          },
+          {
+            "auxiliar": "haben",
+            "infinitivo": "verlieren",
+            "participio": "verloren"
+          },
+          {
+            "auxiliar": "haben",
+            "infinitivo": "gewinnen",
+            "participio": "gewonnen"
+          },
+          {
+            "auxiliar": "haben",
+            "infinitivo": "vergessen",
+            "participio": "vergessen"
+          },
+          {
+            "auxiliar": "haben (with an object)",
+            "infinitivo": "fahren",
+            "participio": "gefahren"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich bin meinen Schlüssel verloren.",
+            "certo": "Ich habe meinen Schlüssel verloren.",
+            "motivo": "«verlieren» takes «haben»."
+          },
+          {
+            "errado": "Es hat passiert.",
+            "certo": "Es ist passiert.",
+            "motivo": "«passieren» takes «sein»."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Tell about a day when something happened («Was ist passiert?») in 6 Perfekt sentences, using both «haben» and «sein»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write the auxiliary and the Partizip II of 10 verbs: 5 with «sein» and 5 with «haben»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-023.json",
+  "responsavel": null
+}

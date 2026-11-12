@@ -1,0 +1,144 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 171,
+  "fase": 18,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Health and the body: at the doctor's and the pharmacy: Making an appointment and seeing the doctor",
+  "objetivo": "Lesson 43, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 43,
+    "titulo": "Health and the body: at the doctor's and the pharmacy",
+    "objetivo": "Name the parts of the body, say what hurts and what your symptoms are, make an appointment, understand the doctor's instructions (imperative), and buy medicine at the pharmacy.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Making an appointment and seeing the doctor",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Making an appointment, step by step",
+        "explicacao": "STEP 1: to make one: «Ich möchte einen Termin vereinbaren» (I'd like to make an appointment). STEP 2: the receptionist suggests: «Haben Sie am Dienstag um zehn Uhr Zeit?» (Are you free on Tuesday at ten?) STEP 3: you accept or suggest another time: «Ja, das passt mir gut» (that works for me) or «Leider nicht. Geht es am Mittwoch?» (Unfortunately not. Does Wednesday work?) STEP 4: confirm: «Dann sehen wir uns am Dienstag um zehn Uhr.» STEP 5: if you need to cancel: «Ich muss meinen Termin leider absagen» (unfortunately I have to cancel my appointment). Note: «Termin» is any appointment; a \"date\" in the romantic sense is «ein Date».",
+        "tabela": [
+          {
+            "funcao": "asking",
+            "frase": "Ich möchte einen Termin vereinbaren."
+          },
+          {
+            "funcao": "suggesting",
+            "frase": "Haben Sie am Dienstag um zehn Uhr Zeit?"
+          },
+          {
+            "funcao": "accepting",
+            "frase": "Ja, das passt mir gut."
+          },
+          {
+            "funcao": "suggesting another time",
+            "frase": "Leider nicht. Geht es am Mittwoch?"
+          },
+          {
+            "funcao": "canceling",
+            "frase": "Ich muss meinen Termin leider absagen."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 10,
+        "titulo": "Beim Arzt / At the doctor's",
+        "contexto": "A patient is seen by the doctor.",
+        "linhas": [
+          {
+            "personagem": "Ärztin",
+            "ru": "— Guten Tag! Was fehlt Ihnen?",
+            "pt": "— Good morning! What seems to be the problem?",
+            "audio": "Guten Tag! Was fehlt Ihnen?",
+            "rotulo": "Ärztin"
+          },
+          {
+            "personagem": "Anna",
+            "ru": "— Mir ist schlecht, und der Kopf tut mir weh.",
+            "pt": "— I feel sick and my head hurts.",
+            "audio": "Mir ist schlecht, und der Kopf tut mir weh.",
+            "rotulo": "Anna"
+          },
+          {
+            "personagem": "Ärztin",
+            "ru": "— Seit wann haben Sie das?",
+            "pt": "— Since when have you had this?",
+            "audio": "Seit wann haben Sie das?",
+            "rotulo": "Ärztin"
+          },
+          {
+            "personagem": "Anna",
+            "ru": "— Seit gestern Abend. Ich habe nicht gut geschlafen.",
+            "pt": "— Since last night. I didn't sleep well.",
+            "audio": "Seit gestern Abend. Ich habe nicht gut geschlafen.",
+            "rotulo": "Anna"
+          },
+          {
+            "personagem": "Ärztin",
+            "ru": "— Haben Sie Fieber?",
+            "pt": "— Do you have a fever?",
+            "audio": "Haben Sie Fieber?",
+            "rotulo": "Ärztin"
+          },
+          {
+            "personagem": "Anna",
+            "ru": "— Ja, ein bisschen. Ich habe auch Husten.",
+            "pt": "— Yes, a little. I also have a cough.",
+            "audio": "Ja, ein bisschen. Ich habe auch Husten.",
+            "rotulo": "Anna"
+          },
+          {
+            "personagem": "Ärztin",
+            "ru": "— Sie haben eine Erkältung. Bleiben Sie drei Tage im Bett und trinken Sie viel Tee.",
+            "pt": "— You have a cold. Stay in bed for three days and drink lots of tea.",
+            "audio": "Sie haben eine Erkältung. Bleiben Sie drei Tage im Bett und trinken Sie viel Tee.",
+            "rotulo": "Ärztin"
+          },
+          {
+            "personagem": "Anna",
+            "ru": "— Muss ich Tabletten nehmen?",
+            "pt": "— Do I need to take pills?",
+            "audio": "Muss ich Tabletten nehmen?",
+            "rotulo": "Anna"
+          },
+          {
+            "personagem": "Ärztin",
+            "ru": "— Ja, nehmen Sie die Tabletten dreimal täglich nach dem Essen. Hier ist das Rezept.",
+            "pt": "— Yes, take the pills three times a day after meals. Here's the prescription.",
+            "audio": "Ja, nehmen Sie die Tabletten dreimal täglich nach dem Essen. Hier ist das Rezept.",
+            "rotulo": "Ärztin"
+          },
+          {
+            "personagem": "Anna",
+            "ru": "— Vielen Dank! Auf Wiedersehen.",
+            "pt": "— Thank you very much! Goodbye.",
+            "audio": "Vielen Dank! Auf Wiedersehen.",
+            "rotulo": "Anna"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Make an appointment out loud and describe your symptoms to the doctor."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 symptoms and 4 doctor's instructions in the formal imperative."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-043.json",
+  "responsavel": null
+}

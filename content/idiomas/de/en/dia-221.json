@@ -1,0 +1,142 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 221,
+  "fase": 23,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Purpose and contrast: um … zu, damit, ohne … zu, statt … zu: Um … zu: in order to",
+  "objetivo": "Lesson 56, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 56,
+    "titulo": "Purpose and contrast: um … zu, damit, ohne … zu, statt … zu",
+    "objetivo": "Express purpose with «um … zu» (same subject) and «damit» (different subjects), and use «ohne … zu» and «(an)statt … zu» to say \"without doing\" and \"instead of doing\".",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Um … zu: in order to",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "das Ziel",
+            "translit": "dahs TSEEL",
+            "pt": "goal, aim",
+            "en": "goal",
+            "audio": "das Ziel"
+          },
+          {
+            "ru": "der Zweck",
+            "translit": "dair TSVECK",
+            "pt": "purpose",
+            "en": "purpose",
+            "audio": "der Zweck"
+          },
+          {
+            "ru": "verbessern",
+            "translit": "fair-BESS-ern",
+            "pt": "to improve",
+            "en": "to improve",
+            "audio": "verbessern"
+          },
+          {
+            "ru": "erreichen",
+            "translit": "air-RYE-khen",
+            "pt": "to reach, to achieve",
+            "en": "to reach",
+            "audio": "erreichen"
+          },
+          {
+            "ru": "sparen",
+            "translit": "SHPAH-ren",
+            "pt": "to save (money)",
+            "en": "to save",
+            "audio": "sparen"
+          },
+          {
+            "ru": "das Geld",
+            "translit": "dahs GELT",
+            "pt": "money",
+            "en": "money",
+            "audio": "das Geld"
+          },
+          {
+            "ru": "die Prüfung",
+            "translit": "dee PRÜ-foong",
+            "pt": "exam, test",
+            "en": "exam",
+            "audio": "die Prüfung"
+          },
+          {
+            "ru": "bestehen",
+            "translit": "beh-SHTAY-en",
+            "pt": "to pass (an exam)",
+            "en": "to pass",
+            "audio": "bestehen"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "Um … zu: purpose, step by step",
+        "explicacao": "STEP 1: to say WHAT something is done FOR, use «UM … ZU» + infinitive — English \"(in order) to\": «Ich lerne Deutsch, um in Berlin zu arbeiten» (I'm learning German in order to work in Berlin). STEP 2: «um» opens the phrase; «zu» goes RIGHT BEFORE the infinitive at the end; with a separable verb: «um aufzustehen». STEP 3: RULE: the SUBJECT is the SAME in the main clause and in the «um … zu» phrase (here, «ich» does both things). STEP 4: a comma before «um». STEP 5: «um … zu» answers «Wozu?» (what for?) or «Warum?». STEP 6: don't use «um … zu» when the subject changes: then use «damit» (next session). Also: never translate \"for\" + -ing with «für» («für arbeiten» is wrong) — it's «um … zu arbeiten».",
+        "comparacao": "English says \"to\" or \"in order to\" (\"I study to work in Berlin\"). German says «um … zu» + infinitive, with the same subject. Plain \"to\" without \"um\" usually isn't enough for purpose in German.",
+        "tabela": [
+          {
+            "frase": "Ich lerne Deutsch, um in Berlin zu arbeiten.",
+            "pt": "I'm learning German in order to work in Berlin."
+          },
+          {
+            "frase": "Er spart Geld, um ein Auto zu kaufen.",
+            "pt": "He's saving money to buy a car."
+          },
+          {
+            "frase": "Ich stehe früh auf, um den Zug zu erreichen.",
+            "pt": "I get up early to catch the train."
+          },
+          {
+            "frase": "Wir lernen viel, um die Prüfung zu bestehen.",
+            "pt": "We study a lot to pass the exam."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich lerne Deutsch, um ich in Berlin zu arbeiten.",
+            "certo": "Ich lerne Deutsch, um in Berlin zu arbeiten.",
+            "motivo": "In «um … zu», the subject isn't repeated."
+          },
+          {
+            "errado": "Ich stehe früh auf, um zu aufstehen.",
+            "certo": "Ich stehe früh auf, um den Zug zu erreichen.",
+            "motivo": "Use um + object + zu + verb."
+          },
+          {
+            "errado": "Ich lerne Deutsch, zu in Berlin arbeiten.",
+            "certo": "Ich lerne Deutsch, um in Berlin zu arbeiten.",
+            "motivo": "The «um» is missing."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Say 6 purposes out loud: «Ich lerne Deutsch, um … zu … Ich spare Geld, um … zu …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 sentences with the infinitive with zu."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-056.json",
+  "responsavel": null
+}

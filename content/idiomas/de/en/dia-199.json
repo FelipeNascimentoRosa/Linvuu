@@ -1,0 +1,130 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 199,
+  "fase": 20,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "The passive 1: werden + Partizip II: The passive in everyday life",
+  "objetivo": "Lesson 50, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 50,
+    "titulo": "The passive 1: werden + Partizip II",
+    "objetivo": "Form the present passive (werden + Partizip II) with and without an agent (von + dative), use the passive with modal verbs, and tell the passive (a process) apart from a state (sein + Partizip II).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "The passive in everyday life",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "When to use the passive",
+        "explicacao": "STEP 1: use the passive when the AGENT is unknown, obvious or unimportant: «Das Paket wird morgen geliefert» (the package will be delivered tomorrow). STEP 2: in instructions and processes: «Zuerst werden die Zwiebeln geschnitten» (first the onions are chopped). STEP 3: in signs and notices: «Hier darf nicht geparkt werden» (no parking here). STEP 4: in the news: «Das Gebäude wird renoviert» (the building is being renovated). STEP 5: the active alternative with «man» — English \"they\" or \"you\": «Man repariert das Auto» (they're repairing the car) — means the same but sounds more informal.",
+        "tabela": [
+          {
+            "uso": "unknown agent",
+            "frase": "Das Paket wird morgen geliefert."
+          },
+          {
+            "uso": "process (recipe)",
+            "frase": "Zuerst werden die Zwiebeln geschnitten."
+          },
+          {
+            "uso": "notice, sign",
+            "frase": "Hier darf nicht geparkt werden."
+          },
+          {
+            "uso": "news",
+            "frase": "Das Gebäude wird renoviert."
+          },
+          {
+            "uso": "active with man",
+            "frase": "Man repariert das Auto."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 10,
+        "titulo": "In der Autowerkstatt / At the auto repair shop",
+        "contexto": "A customer asks about his car.",
+        "linhas": [
+          {
+            "personagem": "Tom",
+            "ru": "— Guten Tag! Mein Auto wird heute repariert, nicht wahr?",
+            "pt": "— Good morning! My car is being repaired today, right?",
+            "audio": "Guten Tag! Mein Auto wird heute repariert, nicht wahr?",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Mechaniker",
+            "ru": "— Ja, die Bremsen werden gerade gewechselt.",
+            "pt": "— Yes, the brakes are being replaced right now.",
+            "audio": "Ja, die Bremsen werden gerade gewechselt.",
+            "rotulo": "Mechaniker"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Muss auch das Öl gewechselt werden?",
+            "pt": "— Does the oil need to be changed too?",
+            "audio": "Muss auch das Öl gewechselt werden?",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Mechaniker",
+            "ru": "— Ja, das sollte gemacht werden. Es wird gleich nach den Bremsen erledigt.",
+            "pt": "— Yes, that should be done. It'll be taken care of right after the brakes.",
+            "audio": "Ja, das sollte gemacht werden. Es wird gleich nach den Bremsen erledigt.",
+            "rotulo": "Mechaniker"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Wann ist das Auto fertig?",
+            "pt": "— When will the car be ready?",
+            "audio": "Wann ist das Auto fertig?",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Mechaniker",
+            "ru": "— Am Nachmittag. Dann ist alles erledigt.",
+            "pt": "— In the afternoon. Then everything will be done.",
+            "audio": "Am Nachmittag. Dann ist alles erledigt.",
+            "rotulo": "Mechaniker"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Wird das Auto auch gewaschen?",
+            "pt": "— Will the car be washed too?",
+            "audio": "Wird das Auto auch gewaschen?",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Mechaniker",
+            "ru": "— Ja, das machen wir immer. Es wird innen und außen gewaschen.",
+            "pt": "— Yes, we always do that. It's washed inside and out.",
+            "audio": "Ja, das machen wir immer. Es wird innen und außen gewaschen.",
+            "rotulo": "Mechaniker"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe out loud what's done at a repair shop or a company, using the passive: «Die Autos werden repariert. Die Pakete werden geliefert.»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 sentences: a process, a state and a passive with a modal."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-050.json",
+  "responsavel": null
+}

@@ -1,0 +1,140 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 198,
+  "fase": 20,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "The passive 1: werden + Partizip II: The passive with modals, and the state passive",
+  "objetivo": "Lesson 50, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 50,
+    "titulo": "The passive 1: werden + Partizip II",
+    "objetivo": "Form the present passive (werden + Partizip II) with and without an agent (von + dative), use the passive with modal verbs, and tell the passive (a process) apart from a state (sein + Partizip II).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "The passive with modals, and the state passive",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "müssen",
+            "translit": "MÜSS-en",
+            "pt": "to have to, must",
+            "en": "must",
+            "audio": "müssen"
+          },
+          {
+            "ru": "können",
+            "translit": "KÖ-nen",
+            "pt": "can, to be able to",
+            "en": "can",
+            "audio": "können"
+          },
+          {
+            "ru": "dürfen",
+            "translit": "DÜR-fen",
+            "pt": "to be allowed to, may",
+            "en": "may",
+            "audio": "dürfen"
+          },
+          {
+            "ru": "sollen",
+            "translit": "ZOL-en",
+            "pt": "should, to be supposed to",
+            "en": "should",
+            "audio": "sollen"
+          },
+          {
+            "ru": "geöffnet",
+            "translit": "geh-ÖFF-net",
+            "pt": "open (opened)",
+            "en": "open",
+            "audio": "geöffnet"
+          },
+          {
+            "ru": "geschlossen",
+            "translit": "geh-SHLOSS-en",
+            "pt": "closed",
+            "en": "closed",
+            "audio": "geschlossen"
+          },
+          {
+            "ru": "repariert",
+            "translit": "reh-pah-REERT",
+            "pt": "repaired, fixed",
+            "en": "repaired",
+            "audio": "repariert"
+          },
+          {
+            "ru": "erledigt",
+            "translit": "air-LAY-dikht",
+            "pt": "done, taken care of",
+            "en": "done",
+            "audio": "erledigt"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "The passive with modals, and the state passive",
+        "explicacao": "STEP 1: the passive with a MODAL: conjugated modal (2nd position) + Partizip II + «WERDEN» (infinitive, at the end): «Das Auto muss repariert werden» (the car has to be repaired — \"must be repaired\" = «muss repariert werden»). STEP 2: questions: «Kann das Problem gelöst werden?» (Can the problem be solved?) STEP 3: the ZUSTANDSPASSIV (state passive) uses «SEIN» + Partizip II: it describes the result, not the process: «Das Geschäft ist geschlossen» (the store is closed) × «Das Geschäft wird geschlossen» (the store is being closed / is closing down). STEP 4: «Die Arbeit ist erledigt» (the work is done). STEP 5: the passive with no subject: «Hier wird getanzt» (there's dancing here); «Es wird viel gelacht» (there's a lot of laughing).",
+        "tabela": [
+          {
+            "tipo": "modal + passive",
+            "frase": "Das Auto muss repariert werden."
+          },
+          {
+            "tipo": "question with a modal",
+            "frase": "Kann das Problem gelöst werden?"
+          },
+          {
+            "tipo": "process (werden)",
+            "frase": "Das Geschäft wird geschlossen."
+          },
+          {
+            "tipo": "state (sein)",
+            "frase": "Das Geschäft ist geschlossen."
+          },
+          {
+            "tipo": "no subject",
+            "frase": "Hier wird getanzt."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Das Auto muss werden repariert.",
+            "certo": "Das Auto muss repariert werden.",
+            "motivo": "«werden» comes last."
+          },
+          {
+            "errado": "Das Geschäft wird geschlossen. (meaning: the store is already closed)",
+            "certo": "Das Geschäft ist geschlossen.",
+            "motivo": "State: «sein»."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say 6 sentences in the passive with modals and in the state passive: «Das Auto muss repariert werden. Das Geschäft ist geschlossen.»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 sentences in the present passive, two with «von»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-050.json",
+  "responsavel": null
+}

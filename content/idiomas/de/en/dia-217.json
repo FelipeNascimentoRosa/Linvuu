@@ -1,0 +1,146 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 217,
+  "fase": 22,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "The infinitive with zu: Zu + infinitive",
+  "objetivo": "Lesson 55, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 55,
+    "titulo": "The infinitive with zu",
+    "objetivo": "Use the infinitive with «zu» after verbs, adjectives and expressions, with the position of «zu» in separable verbs, and recognize the verbs that don't take «zu».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Zu + infinitive",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "anfangen",
+            "translit": "AHN-fahng-en",
+            "pt": "to start, to begin",
+            "en": "to start",
+            "audio": "anfangen"
+          },
+          {
+            "ru": "aufhören",
+            "translit": "OWF-hör-en",
+            "pt": "to stop, to quit",
+            "en": "to stop",
+            "audio": "aufhören"
+          },
+          {
+            "ru": "versuchen",
+            "translit": "fair-ZOO-khen",
+            "pt": "to try",
+            "en": "to try",
+            "audio": "versuchen"
+          },
+          {
+            "ru": "vergessen",
+            "translit": "fair-GESS-en",
+            "pt": "to forget",
+            "en": "to forget",
+            "audio": "vergessen"
+          },
+          {
+            "ru": "vorhaben",
+            "translit": "FOR-hah-ben",
+            "pt": "to plan, to intend",
+            "en": "to intend",
+            "audio": "vorhaben"
+          },
+          {
+            "ru": "hoffen",
+            "translit": "HOFF-en",
+            "pt": "to hope",
+            "en": "to hope",
+            "audio": "hoffen"
+          },
+          {
+            "ru": "planen",
+            "translit": "PLAH-nen",
+            "pt": "to plan",
+            "en": "to plan",
+            "audio": "planen"
+          },
+          {
+            "ru": "vorschlagen",
+            "translit": "FOR-shlah-gen",
+            "pt": "to suggest, to propose",
+            "en": "to suggest",
+            "audio": "vorschlagen"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "The infinitive with zu, step by step",
+        "explicacao": "STEP 1: after MANY verbs, adjectives and expressions, the second verb goes in the INFINITIVE with «ZU» before it — just like English \"to\": «Ich versuche, Deutsch zu lernen» (I'm trying to learn German). STEP 2: «zu» comes RIGHT BEFORE the infinitive, at the end of the sentence; add a comma when the infinitive has other words with it: «Ich habe vergessen, dich anzurufen» (I forgot to call you). STEP 3: with SEPARABLE verbs, «zu» goes BETWEEN the prefix and the verb, all one word: anrufen → «anzurufen», mitbringen → «mitzubringen», aufstehen → «aufzustehen». STEP 4: verbs that take «zu»: anfangen, aufhören, beginnen, versuchen, vergessen, vorhaben, hoffen, planen, vorschlagen, empfehlen. Many match English \"to\"-verbs: try to, forget to, hope to, plan to. STEP 5: expressions with «zu»: «Ich habe Lust / Zeit / keine Lust, … zu …» (I feel like / have time / don't feel like…), «Es ist wichtig / schön / schwer, … zu …» (it's important / nice / hard to…). STEP 6: compare with the modals — the same as English \"can\" without \"to\": «Ich kann schwimmen» (no zu) × «Ich versuche zu schwimmen» (with zu).",
+        "comparacao": "English puts \"to\" before the infinitive (\"I forgot to call\"). German does the same with «zu», but at the END of the sentence: «Ich habe vergessen, dich anzurufen». And where English modals take no \"to\" (can, must, will), German modals take no «zu» either.",
+        "tabela": [
+          {
+            "construcao": "verb + zu",
+            "frase": "Ich versuche, Deutsch zu lernen."
+          },
+          {
+            "construcao": "separable verb: zu in the middle",
+            "frase": "Ich habe vergessen, dich anzurufen."
+          },
+          {
+            "construcao": "Lust / Zeit haben",
+            "frase": "Ich habe keine Lust, heute zu arbeiten."
+          },
+          {
+            "construcao": "es ist + adjective",
+            "frase": "Es ist wichtig, pünktlich zu sein."
+          },
+          {
+            "construcao": "anfangen / aufhören",
+            "frase": "Er hat angefangen, Sport zu machen."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich habe vergessen, dich zu anrufen.",
+            "certo": "Ich habe vergessen, dich anzurufen.",
+            "motivo": "Separable verb: «zu» between the prefix and the verb."
+          },
+          {
+            "errado": "Ich versuche, Deutsch lernen.",
+            "certo": "Ich versuche, Deutsch zu lernen.",
+            "motivo": "The «zu» is missing."
+          },
+          {
+            "errado": "Ich kann zu schwimmen.",
+            "certo": "Ich kann schwimmen.",
+            "motivo": "Modals don't take «zu» (like English \"can swim\")."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Say 6 sentences with «zu»: «Ich versuche, … zu … Ich habe vergessen, … Ich habe keine Lust, …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 sentences in the Konjunktiv II, past and present."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-055.json",
+  "responsavel": null
+}

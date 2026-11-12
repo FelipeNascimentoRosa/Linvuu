@@ -1,0 +1,276 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 15,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Present tense verbs and word order: Dialogue and reading",
+  "objetivo": "Lesson 4, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 4,
+    "titulo": "Present tense verbs and word order",
+    "objetivo": "Conjugate regular verbs in the present, put the verb in second position, and ask simple questions and make negatives.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Dialogue and reading",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "dialogo",
+        "min": 9,
+        "titulo": "Wo wohnst du? / Where do you live?",
+        "contexto": "Two coworkers chat during a break.",
+        "linhas": [
+          {
+            "personagem": "Mia",
+            "ru": "— Wo wohnst du, Jonas?",
+            "pt": "— Where do you live, Jonas?",
+            "audio": "Wo wohnst du, Jonas?",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Ich wohne in Hamburg. Und du?",
+            "pt": "— I live in Hamburg. And you?",
+            "audio": "Ich wohne in Hamburg. Und du?",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Ich wohne in München. Arbeitest du in Hamburg?",
+            "pt": "— I live in Munich. Do you work in Hamburg?",
+            "audio": "Ich wohne in München. Arbeitest du in Hamburg?",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Ja, ich arbeite hier. Ich lerne auch Portugiesisch.",
+            "pt": "— Yes, I work here. I'm also learning Portuguese.",
+            "audio": "Ja, ich arbeite hier. Ich lerne auch Portugiesisch.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Wirklich? Ich lerne gern Sprachen!",
+            "pt": "— Really? I like learning languages!",
+            "audio": "Wirklich? Ich lerne gern Sprachen!",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Wir lernen zusammen!",
+            "pt": "— Let's learn together!",
+            "audio": "Wir lernen zusammen!",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Gern! Wann lernen wir?",
+            "pt": "— Gladly! When shall we study?",
+            "audio": "Gern! Wann lernen wir?",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Morgen! Tschüs!",
+            "pt": "— Tomorrow! Bye!",
+            "audio": "Morgen! Tschüs!",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Tschüs!",
+            "pt": "— Bye!",
+            "audio": "Tschüs!",
+            "rotulo": "Mia"
+          }
+        ]
+      },
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "Heute lerne ich Deutsch.",
+            "translit": "",
+            "pt": "Today I'm studying German.",
+            "en": "",
+            "audio": "Heute lerne ich Deutsch."
+          },
+          {
+            "ru": "Jetzt wohne ich in …",
+            "translit": "",
+            "pt": "Now I live in …",
+            "en": "",
+            "audio": "Jetzt wohne ich in …"
+          },
+          {
+            "ru": "Dann kochen wir zusammen.",
+            "translit": "",
+            "pt": "Then we'll cook together.",
+            "en": "",
+            "audio": "Dann kochen wir zusammen."
+          },
+          {
+            "ru": "Hier wohnt Tom.",
+            "translit": "",
+            "pt": "Tom lives here.",
+            "en": "",
+            "audio": "Hier wohnt Tom."
+          },
+          {
+            "ru": "Ich trinke gern Kaffee.",
+            "translit": "",
+            "pt": "I like drinking coffee.",
+            "en": "",
+            "audio": "Ich trinke gern Kaffee."
+          },
+          {
+            "ru": "Morgen spiele ich Fußball.",
+            "translit": "",
+            "pt": "Tomorrow I'm playing soccer.",
+            "en": "",
+            "audio": "Morgen spiele ich Fußball."
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 9,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Heute ich wohne in Berlin",
+              "Heute wohne ich in Berlin"
+            ],
+            "gabarito": "Heute wohne ich in Berlin",
+            "explicacao": "In a statement like this, the conjugated verb takes second position. With Heute first, wohne comes next and then the subject ich.",
+            "id": "de-004-L-101"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Jetzt Camila lernt Deutsch",
+              "Jetzt lernt Camila Deutsch"
+            ],
+            "gabarito": "Jetzt lernt Camila Deutsch",
+            "explicacao": "Jetzt takes first position; the conjugated verb lernt comes second, before the subject Camila.",
+            "id": "de-004-L-102"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Dann wir kochen",
+              "Dann kochen wir"
+            ],
+            "gabarito": "Dann kochen wir",
+            "explicacao": "With Dann at the start of the statement, kochen takes second position and the subject wir comes after.",
+            "id": "de-004-L-103"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "What is position 1 in Tom und Camila kochen heute?",
+            "respostaEsperada": "Tom und Camila — one single block of three words",
+            "id": "de-004-L-104"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "How many blocks come before the verb in Heute Abend kocht Tom?",
+            "respostaEsperada": "One block: Heute Abend",
+            "id": "de-004-L-105"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Where does gern go to say \"I like drinking tea\"?",
+            "opcoes": [
+              "Ich gern trinke Tee",
+              "Ich trinke gern Tee"
+            ],
+            "gabarito": "Ich trinke gern Tee",
+            "explicacao": "In Ich trinke gern Tee, the conjugated verb trinke comes after the subject Ich. Gern shows the person likes drinking tea.",
+            "id": "de-004-L-106"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Build the statement, starting with the first word given: Heute / ich / Kaffee / trinke. → ___",
+            "respostaEsperada": "Heute trinke ich Kaffee",
+            "id": "de-004-L-201"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Build the statement, starting with the first word given: Dort / Tom / arbeitet. → ___",
+            "respostaEsperada": "Dort arbeitet Tom",
+            "explicacao": "Dort opens the statement. The conjugated verb arbeitet takes second position, followed by the subject Tom.",
+            "id": "de-004-L-202a"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Build the statement, starting with the first word given: Dann / wir / zusammen / lernen. → ___",
+            "respostaEsperada": "Dann lernen wir zusammen",
+            "id": "de-004-L-203"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Build the statement, starting with the first word given: Hier / Camila / wohnt / gern. → ___",
+            "respostaEsperada": "Hier wohnt Camila gern",
+            "id": "de-004-L-204"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Build the statement, starting with the first word given: Am Abend / ich / Musik / höre. → ___",
+            "respostaEsperada": "Am Abend höre ich Musik",
+            "id": "de-004-L-205"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Build the statement, starting with the first word given: Morgen / wir / nach Berlin / fahren. → ___",
+            "respostaEsperada": "Morgen fahren wir nach Berlin",
+            "id": "de-004-L-206"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Conjugate the verb, keeping position 2: Heute ___ (spielen) Tom Fußball. · Jetzt hören (hören) wir Musik. · Später kochst (kochen) du.",
+            "respostaEsperada": "spielt",
+            "explicacao": "Tom is third person singular: spielen becomes spielt. With Heute first, the verb comes before the subject.",
+            "id": "de-004-L-207a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Conjugate the verb, keeping position 2: Heute spielt (spielen) Tom Fußball. · Jetzt ___ (hören) wir Musik. · Später kochst (kochen) du.",
+            "respostaEsperada": "hören",
+            "explicacao": "With wir, hören stays hören in the present. Jetzt opens the sentence, followed by the verb and the subject wir.",
+            "id": "de-004-L-207b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Conjugate the verb, keeping position 2: Heute spielt (spielen) Tom Fußball. · Jetzt hören (hören) wir Musik. · Später ___ (kochen) du.",
+            "respostaEsperada": "kochst",
+            "explicacao": "With du, kochen becomes kochst. Später opens the statement, followed by kochst and du.",
+            "id": "de-004-L-207c"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 4,
+        "enunciado": "Say out loud where you live, where you work and what you're learning."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Write 4 questions in German with different question words."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-004.json",
+  "responsavel": null
+}

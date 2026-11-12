@@ -36,7 +36,7 @@ assert.ok(!/noindex/.test(rpt) && !/noindex/.test(ren), 'pt e en indexáveis');
 assert.ok(fs.readFileSync('dist/sitemap.xml', 'utf8').includes('/russo-online'));
 assert.ok(html('/en').includes('Language courses for English speakers'));
 assert.ok(!html('/en').includes('Brazilian learners'));
-assert.ok(html('/en').includes('Brazilian Portuguese, French and Russian fully explained in English'));
+assert.ok(html('/en').includes('Brazilian Portuguese, French, Russian and German fully explained in English'));
 assert.ok(!html('/en').includes('Every explanation is in English'), 'a home em inglês não promete explicação em inglês onde ela não existe');
 assert.ok(!html('/en').includes('lessons explained in English'));
 assert.ok(!html('/assinatura').includes('name="robots" content="noindex"'));
@@ -67,7 +67,7 @@ for (const curso of ['en', 'ru']) {
   const links = [...html(`/curso/${curso}`).matchAll(new RegExp(`href="/curso/${curso}/dia/(\\d+)"`, 'g'))].map((x) => Number(x[1]));
   assert.deepEqual(links, [1, 2, 3, 4, 5, 6, 7, 8], 'todas as oito amostras possuem links estaticos, sem sessoes pagas');
 }
-assert.ok(!/href="\/en\/curso\/de\/dia\//.test(html('/en/curso/de')), 'curso sem aulas traduzidas nao anuncia sessoes inexistentes');
+assert.ok(!/href="\/en\/curso\/it\/dia\//.test(html('/en/curso/it')), 'curso sem aulas traduzidas nao anuncia sessoes inexistentes');
 const sitemap = fs.readFileSync('public/sitemap.xml', 'utf8');
 for (const match of sitemap.matchAll(/<loc>https:\/\/linvuu\.com\.br\/livros\/[a-z]{2}\/capitulo\/(\d+)<\/loc>/g)) {
   assert.ok(CAPITULOS_GRATIS.some(n => n === Number(match[1])), 'sitemap inclui somente capítulos gratuitos');

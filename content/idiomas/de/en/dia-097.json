@@ -1,0 +1,145 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 97,
+  "fase": 10,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "The four cases: nominative, accusative, dative and genitive: What a case is",
+  "objetivo": "Lesson 25, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 25,
+    "titulo": "The four cases: nominative, accusative, dative and genitive",
+    "objetivo": "Understand what the four German cases are (Nominativ, Akkusativ, Dativ, Genitiv), read the full article chart, and use the personal pronouns in the nominative, accusative and dative.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "What a case is",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "das Geschenk",
+            "translit": "dahs geh-SHENK",
+            "pt": "gift, present",
+            "en": "gift",
+            "audio": "das Geschenk"
+          },
+          {
+            "ru": "der Hund",
+            "translit": "dair HOONT",
+            "pt": "dog",
+            "en": "dog",
+            "audio": "der Hund"
+          },
+          {
+            "ru": "die Katze",
+            "translit": "dee KAHT-seh",
+            "pt": "cat",
+            "en": "cat",
+            "audio": "die Katze"
+          },
+          {
+            "ru": "das Handy",
+            "translit": "dahs HEN-dee",
+            "pt": "cell phone",
+            "en": "mobile phone",
+            "audio": "das Handy"
+          },
+          {
+            "ru": "die Tasche",
+            "translit": "dee TAH-sheh",
+            "pt": "bag, purse",
+            "en": "bag",
+            "audio": "die Tasche"
+          },
+          {
+            "ru": "der Schlüssel",
+            "translit": "dair SHLÜS-el",
+            "pt": "key",
+            "en": "key",
+            "audio": "der Schlüssel"
+          },
+          {
+            "ru": "das Fahrrad",
+            "translit": "dahs FAHR-raht",
+            "pt": "bicycle",
+            "en": "bicycle",
+            "audio": "das Fahrrad"
+          },
+          {
+            "ru": "die Zeitung",
+            "translit": "dee TSY-toong",
+            "pt": "newspaper",
+            "en": "newspaper",
+            "audio": "die Zeitung"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "The four cases",
+        "explicacao": "In German, a word's job in the sentence shows up in the ARTICLE (and sometimes in an ending). There are four cases. NOMINATIVE: who does the action, the subject (wer? was? — who? what?). ACCUSATIVE: the direct object (wen? was? — whom? what?). DATIVE: the indirect object, the person you give, tell or help (wem? — to whom?). GENITIVE: possession (wessen? — whose?). In «Der Mann gibt dem Kind einen Apfel» (The man gives the child an apple): «der Mann» is the subject (nominative), «dem Kind» is who he gives it to (dative), and «einen Apfel» is what he gives (accusative). You already use the nominative and the accusative; this lesson gives you the full chart.",
+        "comparacao": "English kept cases only in its pronouns: he / him / his, she / her, who / whom / whose. \"Who sees him?\" vs \"Whom does he see?\" is exactly the German idea — German just applies it to the articles too. And English word order (\"give the child an apple\") does the job that «dem Kind» does in German, which is why German word order can be freer.",
+        "tabela": [
+          {
+            "caso": "Nominativ",
+            "pergunta": "wer? was?",
+            "funcao": "subject",
+            "exemplo": "Der Mann liest."
+          },
+          {
+            "caso": "Akkusativ",
+            "pergunta": "wen? was?",
+            "funcao": "direct object",
+            "exemplo": "Ich sehe den Mann."
+          },
+          {
+            "caso": "Dativ",
+            "pergunta": "wem?",
+            "funcao": "indirect object",
+            "exemplo": "Ich helfe dem Mann."
+          },
+          {
+            "caso": "Genitiv",
+            "pergunta": "wessen?",
+            "funcao": "possession",
+            "exemplo": "Das ist das Auto des Mannes."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich helfe den Mann.",
+            "certo": "Ich helfe dem Mann.",
+            "motivo": "«helfen» takes the dative (help *to* whom?)."
+          },
+          {
+            "errado": "Ich sehe der Mann.",
+            "certo": "Ich sehe den Mann.",
+            "motivo": "A masculine direct object goes into the accusative."
+          }
+        ],
+        "tag": "Cases"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Say: «Der Mann liest. Ich sehe den Mann. Ich helfe dem Mann. Das ist das Auto des Mannes.»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 4 sentences with a direct object (accusative): «Ich esse den Käse…»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-025.json",
+  "responsavel": null
+}

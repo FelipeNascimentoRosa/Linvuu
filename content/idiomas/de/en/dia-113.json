@@ -1,0 +1,245 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 113,
+  "fase": 12,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Accusative and prepositions of place: Wo? × Wohin?: Durch, für, gegen, ohne, um",
+  "objetivo": "Lesson 29, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 29,
+    "titulo": "Accusative and prepositions of place: Wo? × Wohin?",
+    "objetivo": "Use the prepositions that take the accusative (durch, für, gegen, ohne, um) and the nine two-way prepositions, choosing the dative (Wo?, no movement) or the accusative (Wohin?, movement toward a destination).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Durch, für, gegen, ohne, um",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Lesson goal. By the end of the four sessions, you choose the right preposition and the case it takes, tell wo from wohin with the two-way prepositions, and use the contractions im, am, zum, zur and vom."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "How to get to the station",
+        "contexto": "Camila asks for directions on the street.",
+        "linhas": [
+          {
+            "personagem": "Camila",
+            "ru": "— Entschuldigung, wie komme ich zum Bahnhof?",
+            "pt": "— Excuse me, how do I get to the station?",
+            "audio": "Entschuldigung, wie komme ich zum Bahnhof?",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Passant",
+            "ru": "— Sie gehen hier geradeaus und dann nach links. Der Bahnhof ist gegenüber dem Rathaus.",
+            "pt": "— Go straight ahead here and then turn left. The station is across from the town hall.",
+            "audio": "Sie gehen hier geradeaus und dann nach links. Der Bahnhof ist gegenüber dem Rathaus.",
+            "rotulo": "Passant"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Und wie lange dauert es mit dem Bus?",
+            "pt": "— And how long does it take by bus?",
+            "audio": "Und wie lange dauert es mit dem Bus?",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Passant",
+            "ru": "— Mit dem Bus zehn Minuten. Die Haltestelle ist vor der Bank.",
+            "pt": "— By bus, ten minutes. The stop is in front of the bank.",
+            "audio": "Mit dem Bus zehn Minuten. Die Haltestelle ist vor der Bank.",
+            "rotulo": "Passant"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Danke! Ich wohne erst seit einer Woche hier.",
+            "pt": "— Thank you! I've only been living here for a week.",
+            "audio": "Danke! Ich wohne erst seit einer Woche hier.",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Passant",
+            "ru": "— Willkommen in München!",
+            "pt": "— Welcome to Munich!",
+            "audio": "Willkommen in München!",
+            "rotulo": "Passant"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "The English-speaker trap",
+        "explicacao": "STEP 1: German chooses the preposition by the situation, and each preposition brings a case with it. STEP 2: English \"to\" becomes nach, zu or in depending on the destination, and \"in\" can be dative or accusative depending on movement. And \"I've been studying for three months\" uses the present in German, never a past tense. STEP 3: a preposition never comes alone — it comes with a case. Learn the two together.",
+        "comparacao": "English uses \"in\", \"to\", \"at\" and \"into\" for many things — and actually, \"in\" vs \"into\" is your best clue: \"into\" (movement) = accusative, \"in\" (location) = dative.",
+        "tabela": [
+          {
+            "ingles": "I'm in the kitchen.",
+            "alemao": "Ich bin in der Küche.",
+            "regra": "location, no movement: dative"
+          },
+          {
+            "ingles": "I'm going into the kitchen.",
+            "alemao": "Ich gehe in die Küche.",
+            "regra": "movement into: accusative"
+          },
+          {
+            "ingles": "I'm going to Berlin.",
+            "alemao": "Ich fahre nach Berlin.",
+            "regra": "city: nach"
+          },
+          {
+            "ingles": "I'm going to the doctor.",
+            "alemao": "Ich gehe zum Arzt.",
+            "regra": "person: zu"
+          },
+          {
+            "ingles": "I'm going to the supermarket.",
+            "alemao": "Ich gehe in den Supermarkt.",
+            "regra": "enclosed place (going inside): in"
+          },
+          {
+            "ingles": "I'm going by bus.",
+            "alemao": "Ich fahre mit dem Bus.",
+            "regra": "means of transport: mit + dative"
+          },
+          {
+            "ingles": "I've been studying for three months.",
+            "alemao": "Ich lerne seit drei Monaten Deutsch.",
+            "regra": "seit + dative + present tense"
+          }
+        ],
+        "tag": "Trap"
+      },
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "der Fluss",
+            "translit": "dair FLOOSS",
+            "pt": "river",
+            "en": "river",
+            "audio": "der Fluss"
+          },
+          {
+            "ru": "der Wald",
+            "translit": "dair VAHLT",
+            "pt": "forest, woods",
+            "en": "forest",
+            "audio": "der Wald"
+          },
+          {
+            "ru": "die Brücke",
+            "translit": "dee BRÜ-keh",
+            "pt": "bridge",
+            "en": "bridge",
+            "audio": "die Brücke"
+          },
+          {
+            "ru": "der Tunnel",
+            "translit": "dair TOO-nel",
+            "pt": "tunnel",
+            "en": "tunnel",
+            "audio": "der Tunnel"
+          },
+          {
+            "ru": "der Strand",
+            "translit": "dair SHTRAHNT",
+            "pt": "beach",
+            "en": "beach",
+            "audio": "der Strand"
+          },
+          {
+            "ru": "der Berg",
+            "translit": "dair BAIRK",
+            "pt": "mountain",
+            "en": "mountain",
+            "audio": "der Berg"
+          },
+          {
+            "ru": "der See",
+            "translit": "dair ZAY",
+            "pt": "lake",
+            "en": "lake",
+            "audio": "der See"
+          },
+          {
+            "ru": "das Meer",
+            "translit": "dahs MAIR",
+            "pt": "sea",
+            "en": "sea",
+            "audio": "das Meer"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 9,
+        "titulo": "Durch, für, gegen, ohne, um: always accusative",
+        "explicacao": "STEP 1: five prepositions ALWAYS take the accusative: durch (through), für (for), gegen (against; around, about — with times), ohne (without) and um (around; at — with clock times). Learn them as a chant: durch, für, gegen, ohne, um (a classic memory hook is \"DOGFU\"). STEP 2: remember that in the accusative only the masculine changes (den, einen, keinen). STEP 3: common contractions: durch das = durchs, für das = fürs, um das = ums. STEP 4: «gegen» also gives approximate times: «Wir kommen gegen acht Uhr» (we'll come around eight).",
+        "tabela": [
+          {
+            "preposicao": "durch",
+            "significado": "through",
+            "exemplo": "Wir gehen durch den Wald."
+          },
+          {
+            "preposicao": "für",
+            "significado": "for",
+            "exemplo": "Das Geschenk ist für meinen Bruder."
+          },
+          {
+            "preposicao": "gegen",
+            "significado": "against; around (times)",
+            "exemplo": "Ich bin gegen den Plan. Wir kommen gegen acht Uhr."
+          },
+          {
+            "preposicao": "ohne",
+            "significado": "without",
+            "exemplo": "Ich trinke Kaffee ohne Zucker."
+          },
+          {
+            "preposicao": "um",
+            "significado": "around; at (clock times)",
+            "exemplo": "Die Kinder laufen um den Tisch. Der Zug fährt um acht Uhr."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Das Geschenk ist für meinem Bruder.",
+            "certo": "Das Geschenk ist für meinen Bruder.",
+            "motivo": "«für» takes the accusative."
+          },
+          {
+            "errado": "Ich trinke Kaffee ohne dem Zucker.",
+            "certo": "Ich trinke Kaffee ohne Zucker.",
+            "motivo": "«ohne» takes the accusative (and here it doesn't even take an article)."
+          }
+        ],
+        "tag": "Prepositions"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Say: «Wir gehen durch den Wald. Das Geschenk ist für meine Mutter. Ich trinke Kaffee ohne Zucker.»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Write the seven dative prepositions and one sentence with each."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-029.json",
+  "responsavel": null
+}

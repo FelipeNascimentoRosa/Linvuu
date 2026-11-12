@@ -29,7 +29,7 @@ export const COMECAR: Record<'pt-BR' | 'en', Comecar> = {
   en: {
     kicker: 'Getting started', titulo: 'How to start on Linvuu', lead: 'Four steps, with no sign-up and no card.',
     passos: [
-      { n: '01', t: 'Choose your course', d: 'Pick the course you want. Brazilian Portuguese, French and Russian are explained in English from start to finish; the other courses are being translated, and each course page shows its real coverage.' },
+      { n: '01', t: 'Choose your course', d: 'Pick the course you want. Brazilian Portuguese, French, Russian and German are explained in English from start to finish; the other courses are being translated, and each course page shows its real coverage.' },
       { n: '02', t: 'Open the first session', d: 'Each session takes about 30 minutes and comes in short blocks: read, tap Continue and go at your own pace. The first two lessons of each course are free.' },
       { n: '03', t: 'Listen and repeat out loud', d: 'Tap the speaker icon next to any word, sentence or dialogue. Listen first, then repeat: the language comes in through the ear.' },
       { n: '04', t: 'Practise and track your progress', d: 'Exercises are marked straight away, with the reason for each mistake. Mark the session as done; when you sign in, your progress is saved on any device.' },

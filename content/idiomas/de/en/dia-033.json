@@ -1,0 +1,167 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 33,
+  "fase": 4,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Town and directions: Places: where and where to",
+  "objetivo": "Lesson 9, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 9,
+    "titulo": "Town and directions",
+    "objetivo": "Name places in town, tell Wo? (where) from Wohin? (where to) with «in», use «zu», and ask for and give directions.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Places: where and where to",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 10,
+        "itens": [
+          {
+            "ru": "der Bahnhof",
+            "translit": "dehr BAHN-hohf",
+            "pt": "train station",
+            "en": "station",
+            "audio": "der Bahnhof"
+          },
+          {
+            "ru": "die Post",
+            "translit": "dee POST",
+            "pt": "post office",
+            "en": "post office",
+            "audio": "die Post"
+          },
+          {
+            "ru": "die Bank",
+            "translit": "dee BAHNK",
+            "pt": "bank",
+            "en": "bank",
+            "audio": "die Bank"
+          },
+          {
+            "ru": "der Supermarkt",
+            "translit": "dehr ZOO-per-markt",
+            "pt": "supermarket",
+            "en": "supermarket",
+            "audio": "der Supermarkt"
+          },
+          {
+            "ru": "die Apotheke",
+            "translit": "dee ah-po-TEH-keh",
+            "pt": "pharmacy",
+            "en": "pharmacy",
+            "audio": "die Apotheke"
+          },
+          {
+            "ru": "das Kino",
+            "translit": "dahs KEE-no",
+            "pt": "movie theater",
+            "en": "cinema",
+            "audio": "das Kino"
+          },
+          {
+            "ru": "das Museum",
+            "translit": "dahs moo-ZEH-oom",
+            "pt": "museum",
+            "en": "museum",
+            "audio": "das Museum"
+          },
+          {
+            "ru": "der Park",
+            "translit": "dehr PARK",
+            "pt": "park",
+            "en": "park",
+            "audio": "der Park"
+          },
+          {
+            "ru": "die Schule",
+            "translit": "dee SHOO-leh",
+            "pt": "school",
+            "en": "school",
+            "audio": "die Schule"
+          },
+          {
+            "ru": "das Krankenhaus",
+            "translit": "dahs KRAHN-ken-howss",
+            "pt": "hospital",
+            "en": "hospital",
+            "audio": "das Krankenhaus"
+          },
+          {
+            "ru": "die Haltestelle",
+            "translit": "dee HAHL-teh-shteh-leh",
+            "pt": "bus stop",
+            "en": "bus stop",
+            "audio": "die Haltestelle"
+          },
+          {
+            "ru": "das Restaurant",
+            "translit": "dahs res-toh-RAHN",
+            "pt": "restaurant",
+            "en": "restaurant",
+            "audio": "das Restaurant"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Wo? and Wohin?: \"in\" and \"into\"",
+        "explicacao": "With «in», German separates WHERE you are (Wo?) from WHERE you're going (Wohin?) — the way English separates \"in\" from \"into\", or old English \"where\" from \"whither\". Wo? uses the DATIVE: masculine and neuter «im» (in dem), feminine «in der». Wohin? uses the ACCUSATIVE: masculine «in den», feminine «in die», neuter «ins» (in das). To go to a place there's also «zu» (always dative): zum (zu dem) Bahnhof, zur (zu der) Post; and «nach» for cities and countries: nach Berlin. The full cases come in lessons 11 to 13; for now, memorize the chart.",
+        "comparacao": "English changes the preposition: \"I'm in the park\" vs \"I'm going into / to the park\". German keeps the same preposition («in») and changes the article instead: «im Park» (in) vs «in den Park» (into). And \"to\" has three German versions: «in» for buildings you enter, «zu» for people and places you go up to, «nach» for cities and countries.",
+        "tabela": [
+          {
+            "genero": "masculine",
+            "wo": "im Park",
+            "wohin": "in den Park",
+            "zu": "zum Park"
+          },
+          {
+            "genero": "feminine",
+            "wo": "in der Schule",
+            "wohin": "in die Schule",
+            "zu": "zur Schule"
+          },
+          {
+            "genero": "neuter",
+            "wo": "im Kino",
+            "wohin": "ins Kino",
+            "zu": "zum Kino"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich gehe im Kino.",
+            "certo": "Ich gehe ins Kino.",
+            "motivo": "With movement (Wohin?): accusative, «ins»."
+          },
+          {
+            "errado": "Ich bin in den Park.",
+            "certo": "Ich bin im Park.",
+            "motivo": "Staying put (Wo?): dative, «im»."
+          }
+        ],
+        "tag": "Prepositions"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say: «Ich bin im Park. Ich gehe in den Park. Ich bin in der Schule. Ich gehe in die Schule. Ich gehe ins Kino.»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 4 sentences about what you do in the morning and in the evening."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-009.json",
+  "responsavel": null
+}

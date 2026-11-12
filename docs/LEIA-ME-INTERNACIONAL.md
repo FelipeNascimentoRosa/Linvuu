@@ -27,7 +27,7 @@ Medido no repositório em 11/11/2026 (`ls content/idiomas/<id>/en`). Confira ant
 | Francês `fr` | 248/248 | completo, indexável | travado (curado à mão) |
 | Português p/ estrangeiros `br` | 248/248 (escrito em inglês) | completo, indexável | travado |
 | Espanhol `es` | 128/248 | parcial: nota de cobertura, fora do sitemap | travado o que existe |
-| Alemão `de` | 8/288 (aulas 1–2, as duas grátis) | parcial: nota de cobertura, fora do sitemap | travado o que existe |
+| Alemão `de` | 288/288 | completo, indexável (desde 12/11) | travado |
 | Italiano `it` | 0/248 | parcial: nota de cobertura, fora do sitemap | — |
 
 Gramáticas em inglês servidas: `ru.en.json`, `fr.en.json`, `es.en.json`, `br.json` (travadas).
@@ -63,7 +63,8 @@ Fontes permitidas: FSI/DLI/Peace Corps (domínio público) como base; Wikibooks 
 | 11/11 | Guarda: ru/en e fr/en curados nunca regenerados por mapa | #590 | mergeado |
 | 11/11 | Este arquivo + trava `travas-en.json` no CI e no build | #591 | mergeado |
 | 11/11 | Espanhol aula 32 em inglês (relativos; sessões 125–128) | #592 | mergeado |
-| 11/11 | Alemão aula 2 em inglês (sessões 5–8, grátis): apresentar-se, «sein», du/ihr/Sie; primeira `de.en.json` (gramática parcial com nota honesta) | este PR | aberto |
+| 11/11 | Alemão aula 2 em inglês (sessões 5–8, grátis): apresentar-se, «sein», du/ihr/Sie; primeira `de.en.json` (gramática parcial com nota honesta) | #593 | aberto |
+| 11/11 | Alemão aula 3 (artigos e plural) em inglês, conferida com o cap. 5 do livro; preenchidas 3 lacunas do site (tabela da armadilha, cabeçalhos «c1/c2», tabela de erros vazia) | este PR | aberto |
 
 ## 6. O que falta no .com (ordem por impacto real)
 
@@ -72,7 +73,7 @@ Fontes permitidas: FSI/DLI/Peace Corps (domínio público) como base; Wikibooks 
 3. **I4 — 30 dúvidas de russo em inglês** (páginas de busca para quem pesquisa em inglês), a partir de `ru.en.json`.
 4. **D14 — página da aula** (`/curso/ru/dia/1`): coluna estreita, título em serifa estranha, progresso invisível.
 5. **D13 — `/gramatica` (índice) no sitemap do .com** e título com palavra-chave em inglês.
-6. **Alemão** (284 sessões) e **italiano** (248) em inglês — depois do espanhol.
+6. **Alemão concluído (288/288, 12/11).** Falta o **italiano** (248) em inglês — depois do espanhol.
 7. **Compra real em USD de ponta a ponta** (lote 3): webhook, acesso à sessão 9, reembolso.
 
 ## 7. Plano do alemão em inglês (o curso mais vazio do .com)
@@ -92,6 +93,16 @@ Fontes permitidas: FSI/DLI/Peace Corps (domínio público) como base; Wikibooks 
 3. **Bloco B1/B2 (aulas 47–72)**.
 O espanhol (aulas 33–62) e o alemão andam em paralelo: uma aula de cada por rodada.
 
-**Fontes:** FSI German Basic Course (domínio público) como conferência da progressão e dos exercícios; Wikibooks German só como roteiro; texto final original. Nada de Goethe-Institut/DW/Duden copiado.
+**Antes de escrever cada aula, leia o capítulo do livro Linvuu correspondente** (`content/livros-privado/de/alinhamento.json` → `cap-NN.md`): é a bibliografia da casa, de onde a aula do site nasceu. Confira se a aula tem tudo o que o capítulo tem (tabela de erros, cena, pistas) e preencha a lacuna na versão inglesa com `@bloco:<sessão>:<bloco>` no mapa i18n. Lacuna achada no texto em português do .com.br é anotada, não corrigida (lote do .com.br).
+
+**Checklist por aula do alemão (lições das aulas 3–8):**
+1. Tabela «armadilha» (sessão 1, bloco 3) vem com chaves `portugues/ingles/evite` que **não** dizem o que a coluna mostra — refaça com `@bloco:0:2` e chaves de `content/colunas.json` (`ingles`, `alemao`, `evite`, `possuidor`, `genero`, `sujeito`, `objeto`…).
+2. Quadros «Descubra» com chaves `c1…c5` → refaça com chaves com rótulo (`@bloco:1:0`).
+3. Bloco «O erro típico» (sessão 4, bloco 3) costuma ter `erros: []` e o texto manda «reler a tabela» → preencha 6 erros do falante de inglês (`@bloco:3:2`).
+4. «Retorno» cita «capítulo N» do livro (numeração ≠ aulas do site) → reescreva sem número de capítulo.
+5. Células `[misto]` em português sem acento (quem, onde, como, domingo…) escapam do filtro — confira a lista SKIP.
+6. Respostas-modelo com «aus Brasilien / Portugiesisch» → vida do aluno de inglês.
+
+**Fontes externas:** **FSI German Basic Course já está no repositório** (`fontes-publicas/fsi-de/`, domínio público, texto por unidade + mapa FSI → aulas). Antes de cada aula do A2 em diante, leia as «Notes on Grammar» das unidades indicadas no mapa: elas comparam o alemão com o inglês (escritas para americanos) e são a base dos contrastes da versão inglesa. Wikibooks só como roteiro; texto final original; nenhuma frase alemã nova sem áudio.
 
 **Ao fechar 288/288:** o curso entra no sitemap/hreflang do .com sozinho (`explicacaoCompleta`), a nota de cobertura some, e a gramática `de.en.json` fica completa.

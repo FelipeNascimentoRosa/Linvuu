@@ -1,0 +1,130 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 267,
+  "fase": 27,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Presentations, charts and discussion: Questions and discussion",
+  "objetivo": "Lesson 67, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 67,
+    "titulo": "Presentations, charts and discussion",
+    "objetivo": "Structure and give a short oral presentation (opening, parts, conclusion), describe charts and numbers, and lead a discussion with questions, answers and requests for clarification.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Questions and discussion",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Leading a discussion, step by step",
+        "explicacao": "STEP 1: to TAKE THE FLOOR: «Darf ich etwas sagen?», «Ich möchte kurz ergänzen …». STEP 2: to ASK FOR CLARIFICATION: «Könnten Sie das bitte noch einmal erklären?», «Was meinen Sie damit?» (\"What do you mean by that?\" — never «Was bedeuten Sie?»). STEP 3: to ANSWER: «Das ist eine gute Frage», «Wie ich schon gesagt habe …», «Dazu möchte ich sagen, dass …». STEP 4: to DISAGREE politely: «Das sehe ich etwas anders», «Das stimmt zwar, aber …» — German is more direct than English, but these softeners keep it polite. STEP 5: to CHANGE THE SUBJECT: «Das bringt mich zu einem anderen Punkt». STEP 6: to WRAP UP: «Wenn es keine weiteren Fragen gibt, möchte ich mich bedanken».",
+        "tabela": [
+          {
+            "funcao": "take the floor",
+            "frase": "Darf ich etwas sagen? / Ich möchte kurz ergänzen …"
+          },
+          {
+            "funcao": "ask for clarification",
+            "frase": "Könnten Sie das bitte noch einmal erklären?"
+          },
+          {
+            "funcao": "answer",
+            "frase": "Das ist eine gute Frage. Dazu möchte ich sagen, dass …"
+          },
+          {
+            "funcao": "disagree",
+            "frase": "Das stimmt zwar, aber ich sehe das etwas anders."
+          },
+          {
+            "funcao": "wrap up",
+            "frase": "Wenn es keine weiteren Fragen gibt, möchte ich mich bedanken."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 10,
+        "titulo": "Fragen nach der Präsentation / Questions after the presentation",
+        "contexto": "After a presentation, the audience asks questions.",
+        "linhas": [
+          {
+            "personagem": "Tom",
+            "ru": "— Vielen Dank für Ihre Aufmerksamkeit. Haben Sie Fragen?",
+            "pt": "— Thank you very much for your attention. Are there any questions?",
+            "audio": "Vielen Dank für Ihre Aufmerksamkeit. Haben Sie Fragen?",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Ja, darf ich etwas fragen? Wie viele Personen haben an der Umfrage teilgenommen?",
+            "pt": "— Yes, may I ask something? How many people took part in the survey?",
+            "audio": "Ja, darf ich etwas fragen? Wie viele Personen haben an der Umfrage teilgenommen?",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Es haben hundert Personen teilgenommen, die Hälfte davon Frauen.",
+            "pt": "— One hundred people took part, half of them women.",
+            "audio": "Es haben hundert Personen teilgenommen, die Hälfte davon Frauen.",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Danke. Können Sie die Grafik noch einmal erklären?",
+            "pt": "— Thank you. Could you explain the chart once more?",
+            "audio": "Danke. Können Sie die Grafik noch einmal erklären?",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Gern. Sie zeigt, dass die Zahl im Vergleich zum Vorjahr um zehn Prozent gestiegen ist.",
+            "pt": "— Gladly. It shows that the number rose by ten percent compared with the previous year.",
+            "audio": "Gern. Sie zeigt, dass die Zahl im Vergleich zum Vorjahr um zehn Prozent gestiegen ist.",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Anna",
+            "ru": "— Ich habe eine Frage zum Schluss: Was empfehlen Sie?",
+            "pt": "— I have a question about the conclusion: what do you recommend?",
+            "audio": "Ich habe eine Frage zum Schluss: Was empfehlen Sie?",
+            "rotulo": "Anna"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Ich empfehle, mehr in öffentliche Verkehrsmittel zu investieren.",
+            "pt": "— I recommend investing more in public transport.",
+            "audio": "Ich empfehle, mehr in öffentliche Verkehrsmittel zu investieren.",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Anna",
+            "ru": "— Das ist ein interessanter Vorschlag. Vielen Dank!",
+            "pt": "— That is an interesting proposal. Thank you very much!",
+            "audio": "Das ist ein interessanter Vorschlag. Vielen Dank!",
+            "rotulo": "Anna"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Answer out loud 4 questions after an imaginary presentation, using the phrases from this session."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 sentences to describe a chart."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-067.json",
+  "responsavel": null
+}

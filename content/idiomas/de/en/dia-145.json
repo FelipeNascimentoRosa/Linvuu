@@ -1,0 +1,149 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 145,
+  "fase": 15,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Subordinate clauses 2: wenn, ob and indirect questions: Wenn: if and when",
+  "objetivo": "Lesson 37, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 37,
+    "titulo": "Subordinate clauses 2: wenn, ob and indirect questions",
+    "objetivo": "Build sentences with «wenn» (if, whenever), «ob» (whether — in indirect questions) and question words (wo, wann, warum…) in indirect questions, with the verb at the end of the subordinate clause.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Wenn: if and when",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "wenn",
+            "translit": "VEN",
+            "pt": "if; when(ever)",
+            "en": "if; whenever",
+            "audio": "wenn"
+          },
+          {
+            "ru": "immer wenn",
+            "translit": "IM-er VEN",
+            "pt": "whenever, every time",
+            "en": "whenever",
+            "audio": "immer wenn"
+          },
+          {
+            "ru": "dann",
+            "translit": "DAHN",
+            "pt": "then",
+            "en": "then",
+            "audio": "dann"
+          },
+          {
+            "ru": "regnen",
+            "translit": "RAYG-nen",
+            "pt": "to rain",
+            "en": "to rain",
+            "audio": "regnen"
+          },
+          {
+            "ru": "scheinen",
+            "translit": "SHY-nen",
+            "pt": "to shine; to seem",
+            "en": "to shine",
+            "audio": "scheinen"
+          },
+          {
+            "ru": "bekommen",
+            "translit": "beh-KOM-en",
+            "pt": "to get, to receive",
+            "en": "to get",
+            "audio": "bekommen"
+          },
+          {
+            "ru": "schnell",
+            "translit": "SHNELL",
+            "pt": "fast, quick",
+            "en": "quick",
+            "audio": "schnell"
+          },
+          {
+            "ru": "bald",
+            "translit": "BAHLT",
+            "pt": "soon",
+            "en": "soon",
+            "audio": "bald"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "Wenn: if and whenever, step by step",
+        "explicacao": "STEP 1: «wenn» has two meanings: IF (a condition): «Wenn es regnet, bleibe ich zu Hause» (if it rains, I stay home); and WHENEVER, WHEN (a habit): «Wenn ich müde bin, trinke ich Kaffee» (when I'm tired, I drink coffee). STEP 2: the RULE is the same as with «weil»: the conjugated verb goes to the END of the «wenn» clause. STEP 3: the «wenn» clause usually comes first; then the main clause starts with the VERB: «Wenn es regnet, bleibe ich zu Hause.» STEP 4: it can also come second: «Ich bleibe zu Hause, wenn es regnet.» STEP 5: «dann» (then) can reinforce the main clause, like English \"if…, then…\": «Wenn es regnet, dann bleibe ich zu Hause.» STEP 6: «wenn» is not for a single action in the past (that's «als»). False friend alert: «wenn» is NOT \"when?\" (that's «wann») — and German «wenn» never means English \"when\" for one past event.",
+        "tabela": [
+          {
+            "sentido": "condition (if)",
+            "frase": "Wenn es regnet, bleibe ich zu Hause."
+          },
+          {
+            "sentido": "habit (whenever)",
+            "frase": "Wenn ich müde bin, trinke ich Kaffee."
+          },
+          {
+            "sentido": "after the main clause",
+            "frase": "Ich bleibe zu Hause, wenn es regnet."
+          },
+          {
+            "sentido": "with dann",
+            "frase": "Wenn du Zeit hast, dann besuche ich dich."
+          },
+          {
+            "sentido": "with a separable verb",
+            "frase": "Wenn ich früh aufstehe, bin ich müde."
+          },
+          {
+            "sentido": "with a modal",
+            "frase": "Wenn ich arbeiten muss, komme ich nicht."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Wenn es regnet, ich bleibe zu Hause.",
+            "certo": "Wenn es regnet, bleibe ich zu Hause.",
+            "motivo": "After the subordinate clause, the main clause starts with the verb."
+          },
+          {
+            "errado": "Wenn es regnet ich bleibe …",
+            "certo": "Wenn es regnet, bleibe ich …",
+            "motivo": "A comma is required between the two clauses."
+          },
+          {
+            "errado": "Wenn ich bin müde, trinke ich Kaffee.",
+            "certo": "Wenn ich müde bin, trinke ich Kaffee.",
+            "motivo": "Verb at the end of the subordinate clause."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Say 6 sentences out loud with «wenn»: «Wenn es regnet, … Wenn ich müde bin, … Wenn ich Zeit habe, …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 4 sentences with «weil» and 4 with «dass», with the verb at the end."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-037.json",
+  "responsavel": null
+}

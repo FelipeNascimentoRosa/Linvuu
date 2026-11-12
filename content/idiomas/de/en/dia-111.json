@@ -1,0 +1,144 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 111,
+  "fase": 12,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Dative 3: prepositions that take the dative: Contractions and dialogue",
+  "objetivo": "Lesson 28, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 28,
+    "titulo": "Dative 3: prepositions that take the dative",
+    "objetivo": "Use aus, bei, mit, nach, seit, von and zu (plus gegenüber) with the dative, the contractions (beim, vom, zum, zur), and the expressions for origin, company, means, time and destination.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Contractions and dialogue",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "The contractions: beim, vom, zum, zur",
+        "explicacao": "STEP 1: in speech and everyday writing, the preposition and the article merge — like English \"do not\" → \"don't\": bei dem → beim; von dem → vom; zu dem → zum; zu der → zur. STEP 2: «mit dem» has no contraction (you always say «mit dem»). STEP 3: use the contracted form whenever the article is «dem» (masculine and neuter) or «der» (only with «zu»): «beim Arzt», «vom Bahnhof», «zum Supermarkt», «zur Schule».",
+        "tabela": [
+          {
+            "forma": "bei dem",
+            "contraido": "beim",
+            "exemplo": "Ich bin beim Arzt."
+          },
+          {
+            "forma": "von dem",
+            "contraido": "vom",
+            "exemplo": "Ich komme vom Bahnhof."
+          },
+          {
+            "forma": "zu dem",
+            "contraido": "zum",
+            "exemplo": "Ich gehe zum Supermarkt."
+          },
+          {
+            "forma": "zu der",
+            "contraido": "zur",
+            "exemplo": "Ich gehe zur Schule."
+          }
+        ],
+        "tag": "Prepositions"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 10,
+        "titulo": "Woher kommst du? Wohin gehst du? / Where are you coming from? Where are you going?",
+        "contexto": "Two friends run into each other on the street.",
+        "linhas": [
+          {
+            "personagem": "Mia",
+            "ru": "— Woher kommst du gerade?",
+            "pt": "— Where are you coming from right now?",
+            "audio": "Woher kommst du gerade?",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Ich komme vom Arzt. Ich war seit acht Uhr dort.",
+            "pt": "— I'm coming from the doctor. I'd been there since eight.",
+            "audio": "Ich komme vom Arzt. Ich war seit acht Uhr dort.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Und wie bist du dorthin gekommen?",
+            "pt": "— And how did you get there?",
+            "audio": "Und wie bist du dorthin gekommen?",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Mit dem Bus. Und du? Wohin gehst du jetzt?",
+            "pt": "— By bus. And you? Where are you going now?",
+            "audio": "Mit dem Bus. Und du? Wohin gehst du jetzt?",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Ich gehe zur Post und dann zum Supermarkt.",
+            "pt": "— I'm going to the post office and then to the supermarket.",
+            "audio": "Ich gehe zur Post und dann zum Supermarkt.",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Gehst du zu Fuß?",
+            "pt": "— On foot?",
+            "audio": "Gehst du zu Fuß?",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Ja, nach der Arbeit gehe ich gern zu Fuß.",
+            "pt": "— Yes, after work I like to walk.",
+            "audio": "Ja, nach der Arbeit gehe ich gern zu Fuß.",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Ich wohne seit zwei Jahren hier und kenne die Stadt noch nicht gut.",
+            "pt": "— I've lived here for two years and I still don't know the city well.",
+            "audio": "Ich wohne seit zwei Jahren hier und kenne die Stadt noch nicht gut.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Dann komm mit! Ich zeige dir die Stadt.",
+            "pt": "— Then come with me! I'll show you the city.",
+            "audio": "Dann komm mit! Ich zeige dir die Stadt.",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Gern, danke!",
+            "pt": "— I'd love to, thanks!",
+            "audio": "Gern, danke!",
+            "rotulo": "Jonas"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say where you're coming from, where you're going now and how you get around: «Ich komme vom … Ich gehe zum … Ich fahre mit dem …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write the seven dative prepositions in order and one sentence with each."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-028.json",
+  "responsavel": null
+}

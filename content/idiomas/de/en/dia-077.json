@@ -1,0 +1,146 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 77,
+  "fase": 8,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "A1 review and mock test: The A1 map",
+  "objetivo": "Lesson 20, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 20,
+    "titulo": "A1 review and mock test",
+    "objetivo": "Review all of A1 on one map, practice reading, listening, writing and speaking in the A1 exam format (Hören, Lesen, Schreiben, Sprechen), fix the most common mistakes and take an original practice test.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "The A1 map",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 15,
+        "titulo": "All of A1 in one table",
+        "explicacao": "This table sums up lessons 1 to 19. Reread one line at a time and say an example of your own out loud. If a line feels odd, go back to the lesson shown or open the topic in the Grammar tab.",
+        "tabela": [
+          {
+            "tema": "Pronunciation",
+            "regra": "ei = \"eye\", ie = long \"ee\", sch = \"sh\", ch = soft \"kh\" (ich) or throaty (Bach), w = \"v\", v = \"f\", z = \"ts\".",
+            "aula": "1"
+          },
+          {
+            "tema": "Verb in 2nd position",
+            "regra": "The conjugated verb goes in 2nd position; a yes/no question starts with the verb — no \"do\".",
+            "aula": "2, 4"
+          },
+          {
+            "tema": "sein and haben",
+            "regra": "ich bin, du bist, er ist…; ich habe, du hast, er hat…",
+            "aula": "2, 5"
+          },
+          {
+            "tema": "du, ihr, Sie",
+            "regra": "du (one friend), ihr (several), Sie (formal).",
+            "aula": "2"
+          },
+          {
+            "tema": "Gender, articles and plural",
+            "regra": "der, die, das; every noun capitalized; five plural patterns.",
+            "aula": "3"
+          },
+          {
+            "tema": "Regular present",
+            "regra": "-e, -st, -t, -en, -t, -en; stem in -t or -d: du arbeitest.",
+            "aula": "4"
+          },
+          {
+            "tema": "Numbers, time and dates",
+            "regra": "21 = einundzwanzig; halb neun = 8h30; am Montag, im Mai.",
+            "aula": "5, 6"
+          },
+          {
+            "tema": "Accusative",
+            "regra": "Only the masculine changes: den, einen, keinen (like he → him).",
+            "aula": "7"
+          },
+          {
+            "tema": "Verbs e → i, a → ä",
+            "regra": "du isst, er liest; du fährst, er schläft.",
+            "aula": "7, 8"
+          },
+          {
+            "tema": "Separable verbs",
+            "regra": "Ich stehe um sieben Uhr auf.",
+            "aula": "8"
+          },
+          {
+            "tema": "Wo? × Wohin?",
+            "regra": "im Park × in den Park; in der Schule × in die Schule; im Kino × ins Kino.",
+            "aula": "9"
+          },
+          {
+            "tema": "Modals",
+            "regra": "können, müssen, wollen, dürfen, möchten + infinitive at the end; «nicht dürfen» = mustn't; «ich will» = I want.",
+            "aula": "11, 12"
+          },
+          {
+            "tema": "Imperative",
+            "regra": "Öffnen Sie! · Komm! · Nimm! · Seid leise!",
+            "aula": "13"
+          },
+          {
+            "tema": "Accusative pronouns",
+            "regra": "mich, dich, ihn, sie, es, uns, euch, sie, Sie.",
+            "aula": "14"
+          },
+          {
+            "tema": "kein and nicht",
+            "regra": "«kein» negates nouns; «nicht» negates the rest; «doch» contradicts a negative.",
+            "aula": "14"
+          },
+          {
+            "tema": "Colors and prices",
+            "regra": "An adjective after «sein» doesn't change; €2.50 = zwei Euro fünfzig.",
+            "aula": "15"
+          },
+          {
+            "tema": "Jobs",
+            "regra": "No article (Ich bin Lehrer); feminine in -in; im Büro, in der Schule, bei Siemens.",
+            "aula": "16"
+          },
+          {
+            "tema": "es gibt",
+            "regra": "es gibt + accusative: Es gibt einen Balkon.",
+            "aula": "17"
+          },
+          {
+            "tema": "gern, lieber, am liebsten; the weather",
+            "regra": "Ich schwimme gern. Es regnet. Im Sommer ist es heiß.",
+            "aula": "18"
+          },
+          {
+            "tema": "Transportation",
+            "regra": "mit dem Zug, mit der U-Bahn, zu Fuß; nach Berlin, zum Bahnhof.",
+            "aula": "19"
+          }
+        ],
+        "tag": "Review"
+      },
+      {
+        "tipo": "producao",
+        "min": 10,
+        "enunciado": "Introduce yourself out loud in 10 sentences: name, origin, age, family, job, where you live, hobbies, what you eat, how you get to work and what you do on weekends."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Read out loud the 5 sentences from A1 you find hardest."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-020.json",
+  "responsavel": null
+}

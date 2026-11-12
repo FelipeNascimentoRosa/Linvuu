@@ -1,0 +1,180 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 75,
+  "fase": 8,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Travel and transport: At the hotel",
+  "objetivo": "Lesson 19, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 19,
+    "titulo": "Travel and transport",
+    "objetivo": "Say how you get around, buy a ticket, understand train times and book a hotel room.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "At the hotel",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "das Einzelzimmer",
+            "translit": "dahs INE-tsel-tsim-er",
+            "pt": "single room",
+            "en": "single room",
+            "audio": "das Einzelzimmer"
+          },
+          {
+            "ru": "das Doppelzimmer",
+            "translit": "dahs DOP-el-tsim-er",
+            "pt": "double room",
+            "en": "double room",
+            "audio": "das Doppelzimmer"
+          },
+          {
+            "ru": "das Frühstück",
+            "translit": "dahs FRÜ-shtük",
+            "pt": "breakfast",
+            "en": "breakfast",
+            "audio": "das Frühstück"
+          },
+          {
+            "ru": "reservieren",
+            "translit": "reh-zer-VEE-ren",
+            "pt": "to book, reserve",
+            "en": "to reserve",
+            "audio": "reservieren"
+          },
+          {
+            "ru": "der Koffer",
+            "translit": "dehr KOF-er",
+            "pt": "suitcase",
+            "en": "suitcase",
+            "audio": "der Koffer"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Booking a room, step by step",
+        "explicacao": "STEP 1: ask if they have a room: «Haben Sie ein Einzelzimmer frei?» or say: «Ich möchte ein Zimmer reservieren.» STEP 2: say how many nights: «Für zwei Nächte» («Nacht» has the plural «Nächte», like night → nights with an umlaut). STEP 3: ask the price: «Was kostet das Zimmer pro Nacht?» STEP 4: ask about breakfast: «Ist das Frühstück dabei?» (Is breakfast included?) STEP 5: payment: «Kann ich mit Karte zahlen?» STEP 6: at check-out: «Ich möchte bitte bezahlen.» Watch the floors: German counts like British English — «im zweiten Stock» is the second floor above the ground floor, so the THIRD floor in American terms.",
+        "tabela": [
+          {
+            "situacao": "asking",
+            "frase": "Haben Sie ein Einzelzimmer frei?"
+          },
+          {
+            "situacao": "nights",
+            "frase": "Für zwei Nächte, bitte."
+          },
+          {
+            "situacao": "price",
+            "frase": "Was kostet das Zimmer pro Nacht?"
+          },
+          {
+            "situacao": "breakfast",
+            "frase": "Ist das Frühstück dabei?"
+          },
+          {
+            "situacao": "paying",
+            "frase": "Kann ich mit Karte zahlen?"
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 10,
+        "titulo": "Im Hotel / At the hotel",
+        "contexto": "A guest arrives at a hotel.",
+        "linhas": [
+          {
+            "personagem": "Rezeptionistin",
+            "ru": "— Guten Abend! Kann ich Ihnen helfen?",
+            "pt": "— Good evening! Can I help you?",
+            "audio": "Guten Abend! Kann ich Ihnen helfen?",
+            "rotulo": "Rezeptionistin"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Guten Abend! Haben Sie ein Einzelzimmer frei?",
+            "pt": "— Good evening! Do you have a single room available?",
+            "audio": "Guten Abend! Haben Sie ein Einzelzimmer frei?",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Rezeptionistin",
+            "ru": "— Ja. Für wie viele Nächte?",
+            "pt": "— Yes. For how many nights?",
+            "audio": "Ja. Für wie viele Nächte?",
+            "rotulo": "Rezeptionistin"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Für zwei Nächte, bitte.",
+            "pt": "— For two nights, please.",
+            "audio": "Für zwei Nächte, bitte.",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Rezeptionistin",
+            "ru": "— Das Zimmer kostet achtzig Euro pro Nacht.",
+            "pt": "— The room is eighty euros a night.",
+            "audio": "Das Zimmer kostet achtzig Euro pro Nacht.",
+            "rotulo": "Rezeptionistin"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Ist das Frühstück dabei?",
+            "pt": "— Is breakfast included?",
+            "audio": "Ist das Frühstück dabei?",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Rezeptionistin",
+            "ru": "— Ja, das Frühstück ist von sieben bis zehn Uhr.",
+            "pt": "— Yes, breakfast is from seven to ten.",
+            "audio": "Ja, das Frühstück ist von sieben bis zehn Uhr.",
+            "rotulo": "Rezeptionistin"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Sehr gut. Kann ich mit Karte zahlen?",
+            "pt": "— Great. Can I pay by card?",
+            "audio": "Sehr gut. Kann ich mit Karte zahlen?",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Rezeptionistin",
+            "ru": "— Natürlich. Hier ist Ihr Schlüssel. Das Zimmer ist im zweiten Stock.",
+            "pt": "— Of course. Here's your key. The room is on the second floor (third floor in the US).",
+            "audio": "Natürlich. Hier ist Ihr Schlüssel. Das Zimmer ist im zweiten Stock.",
+            "rotulo": "Rezeptionistin"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Danke schön. Gute Nacht!",
+            "pt": "— Thank you very much. Good night!",
+            "audio": "Danke schön. Gute Nacht!",
+            "rotulo": "Tom"
+          }
+        ]
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write a six-line dialogue buying a train ticket."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-019.json",
+  "responsavel": null
+}

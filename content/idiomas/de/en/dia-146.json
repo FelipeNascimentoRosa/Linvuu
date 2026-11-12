@@ -1,0 +1,149 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 146,
+  "fase": 15,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Subordinate clauses 2: wenn, ob and indirect questions: Ob and indirect questions",
+  "objetivo": "Lesson 37, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 37,
+    "titulo": "Subordinate clauses 2: wenn, ob and indirect questions",
+    "objetivo": "Build sentences with «wenn» (if, whenever), «ob» (whether — in indirect questions) and question words (wo, wann, warum…) in indirect questions, with the verb at the end of the subordinate clause.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Ob and indirect questions",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "fragen",
+            "translit": "FRAH-gen",
+            "pt": "to ask",
+            "en": "to ask",
+            "audio": "fragen"
+          },
+          {
+            "ru": "wissen",
+            "translit": "VISS-en",
+            "pt": "to know (a fact)",
+            "en": "to know",
+            "audio": "wissen"
+          },
+          {
+            "ru": "ob",
+            "translit": "OP",
+            "pt": "whether, if (indirect question)",
+            "en": "whether",
+            "audio": "ob"
+          },
+          {
+            "ru": "die Auskunft",
+            "translit": "dee OWS-koonft",
+            "pt": "information",
+            "en": "information",
+            "audio": "die Auskunft"
+          },
+          {
+            "ru": "wissen wollen",
+            "translit": "VISS-en VOL-en",
+            "pt": "to want to know",
+            "en": "to want to know",
+            "audio": "wissen wollen"
+          },
+          {
+            "ru": "unbedingt",
+            "translit": "OON-beh-dingt",
+            "pt": "definitely, by all means",
+            "en": "definitely",
+            "audio": "unbedingt"
+          },
+          {
+            "ru": "der Schalter",
+            "translit": "dair SHAHL-ter",
+            "pt": "counter, ticket window",
+            "en": "counter",
+            "audio": "der Schalter"
+          },
+          {
+            "ru": "die Verspätung",
+            "translit": "dee fair-SHPAY-toong",
+            "pt": "delay",
+            "en": "delay",
+            "audio": "die Verspätung"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Indirect questions: ob and question words",
+        "explicacao": "STEP 1: an INDIRECT QUESTION is a question inside another sentence: «Ich weiß nicht, ob er kommt» (I don't know whether he's coming). STEP 2: for YES/NO questions, use «ob» — English \"whether\" or \"if\": «Kommt er? → Ich weiß nicht, ob er kommt.» STEP 3: for questions WITH a question word, the word itself opens the subordinate clause: «Wo wohnt er? → Ich weiß nicht, wo er wohnt.» «Wann fährt der Zug ab? → Kannst du mir sagen, wann der Zug abfährt?» STEP 4: in both cases, the conjugated verb goes to the END and the separable prefix rejoins the verb (abfährt). English does something similar: \"Where is the station?\" → \"Can you tell me where the station is?\" STEP 5: use them to ask for information politely: «Können Sie mir sagen, wo der Bahnhof ist?» STEP 6: the comma before «ob» and before the question word is required.",
+        "tabela": [
+          {
+            "direta": "Kommt er?",
+            "indireta": "Ich weiß nicht, ob er kommt."
+          },
+          {
+            "direta": "Hat der Zug Verspätung?",
+            "indireta": "Wissen Sie, ob der Zug Verspätung hat?"
+          },
+          {
+            "direta": "Wo wohnt er?",
+            "indireta": "Ich weiß nicht, wo er wohnt."
+          },
+          {
+            "direta": "Wann fährt der Zug ab?",
+            "indireta": "Können Sie mir sagen, wann der Zug abfährt?"
+          },
+          {
+            "direta": "Warum kommt sie nicht?",
+            "indireta": "Ich frage mich, warum sie nicht kommt."
+          },
+          {
+            "direta": "Wo ist der Bahnhof?",
+            "indireta": "Können Sie mir sagen, wo der Bahnhof ist?"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich weiß nicht, ob kommt er.",
+            "certo": "Ich weiß nicht, ob er kommt.",
+            "motivo": "After «ob», the verb goes to the end."
+          },
+          {
+            "errado": "Können Sie mir sagen, wo ist der Bahnhof?",
+            "certo": "Können Sie mir sagen, wo der Bahnhof ist?",
+            "motivo": "Indirect question: the verb goes to the end (as in English \"where the station is\")."
+          },
+          {
+            "errado": "Ich weiß nicht, wenn er kommt.",
+            "certo": "Ich weiß nicht, ob er kommt.",
+            "motivo": "«wenn» is \"if\" for a condition; for \"if\" meaning \"whether\", use «ob»."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Turn 6 direct questions into indirect questions out loud: «Wo wohnt er? → Ich weiß nicht, wo er wohnt.»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 sentences with «wenn», three with the subordinate clause first."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-037.json",
+  "responsavel": null
+}

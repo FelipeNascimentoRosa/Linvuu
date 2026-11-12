@@ -1,0 +1,234 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 225,
+  "fase": 23,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Connectors: obwohl, trotzdem, deshalb, deswegen, außerdem, sonst: Obwohl × trotzdem",
+  "objetivo": "Lesson 57, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 57,
+    "titulo": "Connectors: obwohl, trotzdem, deshalb, deswegen, außerdem, sonst",
+    "objetivo": "Use the connectors of concession (obwohl, trotzdem), consequence (deshalb, deswegen, darum), addition (außerdem) and alternative (sonst), telling the conjunction (verb at the end) apart from the connecting adverb (verb in 2nd position).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Obwohl × trotzdem",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Lesson goal. By the end of the four sessions, you link two sentences with und, aber, oder, denn and sondern without changing the word order, know when English \"but\" becomes aber and when it becomes sondern, and leave out a repeated subject. Then you add obwohl, trotzdem, deshalb, außerdem and sonst, which do change the word order."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Where to have dinner?",
+        "contexto": "Lena, Camila and Jonas decide what to do tonight.",
+        "linhas": [
+          {
+            "personagem": "Lena",
+            "ru": "— Wollen wir heute Abend kochen oder essen gehen?",
+            "pt": "— Do we want to cook tonight or go out to eat?",
+            "audio": "Wollen wir heute Abend kochen oder essen gehen?",
+            "rotulo": "Lena"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ich bin müde, aber ich habe Hunger.",
+            "pt": "— I'm tired, but I'm hungry.",
+            "audio": "Ich bin müde, aber ich habe Hunger.",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Ich möchte nicht kochen, sondern lieber essen gehen. Dort ist ein neues Restaurant, und es ist nicht teuer.",
+            "pt": "— I don't want to cook, but rather go out to eat. There's a new restaurant over there, and it's not expensive.",
+            "audio": "Ich möchte nicht kochen, sondern lieber essen gehen. Dort ist ein neues Restaurant, und es ist nicht teuer.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Gut, denn ich möchte heute nicht kochen.",
+            "pt": "— Great, because I don't want to cook today.",
+            "audio": "Gut, denn ich möchte heute nicht kochen.",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Lena",
+            "ru": "— Ich komme mit, aber ich kann nur bis zehn Uhr bleiben.",
+            "pt": "— I'll come along, but I can only stay until ten.",
+            "audio": "Ich komme mit, aber ich kann nur bis zehn Uhr bleiben.",
+            "rotulo": "Lena"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Kein Problem. Wir gehen um sieben Uhr und kommen um zehn zurück.",
+            "pt": "— No problem. We'll leave at seven and be back at ten.",
+            "audio": "Kein Problem. Wir gehen um sieben Uhr und kommen um zehn zurück.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Oder wir bleiben länger und nehmen ein Taxi.",
+            "pt": "— Or we stay longer and take a taxi.",
+            "audio": "Oder wir bleiben länger und nehmen ein Taxi.",
+            "rotulo": "Camila"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "The English-speaker trap",
+        "explicacao": "STEP 1: English \"but\" has two German versions: «aber» contrasts (\"I'm tired, but I'm coming\"); «sondern» corrects a negative (\"not coffee but tea\" — «nicht Kaffee, sondern Tee»). STEP 2: «denn» and «weil» both mean \"because\": after «denn», normal order (subject, verb); after «weil», the verb goes to the end. STEP 3: English \"so\", \"still\" and \"that's why\" become adverbs that take position 1 and pull the verb right after them: «Deshalb bleibe ich», «Trotzdem gehe ich».",
+        "comparacao": "Three traps.",
+        "tabela": [
+          {
+            "ingles": "I'm tired, but I'm coming along.",
+            "alemao": "Ich bin müde, aber ich komme mit."
+          },
+          {
+            "ingles": "I don't drink coffee, but (rather) tea.",
+            "alemao": "Ich trinke keinen Kaffee, sondern Tee."
+          },
+          {
+            "ingles": "I'm staying home, because I'm sick.",
+            "alemao": "Ich bleibe zu Hause, denn ich bin krank."
+          },
+          {
+            "ingles": "Are you coming along or staying here?",
+            "alemao": "Kommst du mit oder bleibst du hier?"
+          },
+          {
+            "ingles": "I get up and have breakfast.",
+            "alemao": "Ich stehe auf und frühstücke."
+          }
+        ],
+        "tag": "Trap"
+      },
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "obwohl",
+            "translit": "op-VOHL",
+            "pt": "although, even though",
+            "en": "although",
+            "audio": "obwohl"
+          },
+          {
+            "ru": "trotzdem",
+            "translit": "TROTS-daym",
+            "pt": "still, anyway, nevertheless",
+            "en": "nevertheless",
+            "audio": "trotzdem"
+          },
+          {
+            "ru": "dennoch",
+            "translit": "DEN-nokh",
+            "pt": "nevertheless, all the same",
+            "en": "yet",
+            "audio": "dennoch"
+          },
+          {
+            "ru": "zwar … aber",
+            "translit": "TSVAR … AH-ber",
+            "pt": "it's true that … but",
+            "en": "it is true … but",
+            "audio": "zwar … aber"
+          },
+          {
+            "ru": "allerdings",
+            "translit": "AH-ler-dings",
+            "pt": "however, admittedly",
+            "en": "however",
+            "audio": "allerdings"
+          },
+          {
+            "ru": "jedoch",
+            "translit": "yay-DOKH",
+            "pt": "however",
+            "en": "however",
+            "audio": "jedoch"
+          },
+          {
+            "ru": "dagegen",
+            "translit": "dah-GAY-gen",
+            "pt": "on the other hand, by contrast",
+            "en": "on the other hand",
+            "audio": "dagegen"
+          },
+          {
+            "ru": "trotz",
+            "translit": "TROTS",
+            "pt": "despite, in spite of",
+            "en": "despite",
+            "audio": "trotz"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Obwohl and trotzdem: one idea, two structures",
+        "explicacao": "STEP 1: both words express CONCESSION: the action happens despite an obstacle. STEP 2: «OBWOHL» (although) is a SUBORDINATING conjunction: the conjugated verb goes to the END: «Obwohl es regnet, gehe ich spazieren» (although it's raining, I'm going for a walk). STEP 3: «TROTZDEM» (still, anyway) is a connecting ADVERB: it takes position 1 and the verb comes right after it, in position 2: «Es regnet. Trotzdem gehe ich spazieren» (it's raining. I'm going for a walk anyway). STEP 4: use «obwohl» to link the two ideas in ONE sentence; use «trotzdem» to link two sentences. STEP 5: «trotz» + genitive is a preposition (lesson 41): «trotz des Regens» (despite the rain). STEP 6: a trick: «obwohl» is the opposite of «weil», and both send the verb to the end.",
+        "comparacao": "English \"although\" and \"still/anyway\" keep normal word order. In German, after «obwohl» the verb goes to the end; after «trotzdem» the verb comes right next, before the subject: «Trotzdem gehe ich», never «Trotzdem ich gehe».",
+        "tabela": [
+          {
+            "palavra": "obwohl (conjunction)",
+            "frase": "Obwohl es regnet, gehe ich spazieren."
+          },
+          {
+            "palavra": "trotzdem (adverb)",
+            "frase": "Es regnet. Trotzdem gehe ich spazieren."
+          },
+          {
+            "palavra": "trotz (preposition + genitive)",
+            "frase": "Trotz des Regens gehe ich spazieren."
+          },
+          {
+            "palavra": "zwar … aber",
+            "frase": "Es regnet zwar, aber ich gehe trotzdem spazieren."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Obwohl es regnet, ich gehe spazieren.",
+            "certo": "Obwohl es regnet, gehe ich spazieren.",
+            "motivo": "After the subordinate clause, the main clause starts with the verb."
+          },
+          {
+            "errado": "Es regnet. Trotzdem ich gehe spazieren.",
+            "certo": "Es regnet. Trotzdem gehe ich spazieren.",
+            "motivo": "After «trotzdem», the verb in 2nd position."
+          },
+          {
+            "errado": "Obwohl es regnet, trotzdem gehe ich spazieren.",
+            "certo": "Obwohl es regnet, gehe ich spazieren.",
+            "motivo": "«Obwohl» and «trotzdem» aren't used together."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say 6 sentences of concession out loud: «Obwohl … , … Es … . Trotzdem …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Write 6 sentences with «um … zu», «damit», «ohne … zu» and «statt … zu»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-057.json",
+  "responsavel": null
+}

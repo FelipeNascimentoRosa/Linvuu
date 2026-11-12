@@ -1,0 +1,166 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 89,
+  "fase": 9,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Perfekt 3: haben or sein?: When to use sein",
+  "objetivo": "Lesson 23, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 23,
+    "titulo": "Perfekt 3: haben or sein?",
+    "objetivo": "Choose the right Perfekt auxiliary (haben or sein), use verbs of movement and change of state, and build complete sentences — questions, negatives, and the words schon, noch nicht and noch nie.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "When to use sein",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "gehen / gegangen",
+            "translit": "GAY-en / geh-GAHNG-en",
+            "pt": "to go (on foot) / gone",
+            "en": "to go",
+            "audio": "gehen / gegangen"
+          },
+          {
+            "ru": "fahren / gefahren",
+            "translit": "FAH-ren / geh-FAH-ren",
+            "pt": "to go (by vehicle), drive / gone, driven",
+            "en": "to drive",
+            "audio": "fahren / gefahren"
+          },
+          {
+            "ru": "kommen / gekommen",
+            "translit": "KOM-en / geh-KOM-en",
+            "pt": "to come / come",
+            "en": "to come",
+            "audio": "kommen / gekommen"
+          },
+          {
+            "ru": "fliegen / geflogen",
+            "translit": "FLEE-gen / geh-FLOH-gen",
+            "pt": "to fly / flown",
+            "en": "to fly",
+            "audio": "fliegen / geflogen"
+          },
+          {
+            "ru": "laufen / gelaufen",
+            "translit": "LOW-fen / geh-LOW-fen",
+            "pt": "to run / run",
+            "en": "to run",
+            "audio": "laufen / gelaufen"
+          },
+          {
+            "ru": "bleiben / geblieben",
+            "translit": "BLY-ben / geh-BLEE-ben",
+            "pt": "to stay / stayed",
+            "en": "to stay",
+            "audio": "bleiben / geblieben"
+          },
+          {
+            "ru": "aufstehen / aufgestanden",
+            "translit": "OWF-shtay-en / OWF-geh-shtahn-den",
+            "pt": "to get up",
+            "en": "to get up",
+            "audio": "aufstehen / aufgestanden"
+          },
+          {
+            "ru": "einschlafen / eingeschlafen",
+            "translit": "INE-shlah-fen / INE-geh-shlah-fen",
+            "pt": "to fall asleep",
+            "en": "to fall asleep",
+            "audio": "einschlafen / eingeschlafen"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "Haben or sein? Step by step",
+        "explicacao": "STEP 1: most verbs form the Perfekt with «haben». STEP 2: three groups use «SEIN» instead: (1) verbs of MOVEMENT from one place to another: gehen, fahren, kommen, fliegen, laufen, reisen, ankommen; (2) verbs of a CHANGE OF STATE: aufstehen, einschlafen, aufwachen, werden; (3) the verbs «sein» and «bleiben» themselves. STEP 3: rule of thumb: if you can add \"from A to B\" or say \"something changed\", use «sein»; otherwise, «haben». STEP 4: the auxiliary «sein» is in the present tense: ich bin, du bist, er ist, wir sind, ihr seid, sie sind. STEP 5: the verb bracket stays the same: «Ich bin nach Berlin gefahren.» (I drove to Berlin.) «Er ist um sieben Uhr aufgestanden.» (He got up at seven.) «Wir sind zu Hause geblieben.» (We stayed home.)",
+        "comparacao": "English uses \"have\" for everything: \"I have gone\", \"she has stayed\". Older English still had the German split — \"He is come\", \"Christ is risen\", \"The leaves are fallen\" — and German keeps it: «haben» for most verbs, «sein» for going, coming and changing. So «Ich bin gegangen» is literally \"I am gone\".",
+        "tabela": [
+          {
+            "grupo": "movement",
+            "infinitivo": "gehen",
+            "frase": "Ich bin ins Kino gegangen."
+          },
+          {
+            "grupo": "movement",
+            "infinitivo": "fahren",
+            "frase": "Wir sind nach Berlin gefahren."
+          },
+          {
+            "grupo": "movement",
+            "infinitivo": "kommen",
+            "frase": "Er ist spät gekommen."
+          },
+          {
+            "grupo": "movement",
+            "infinitivo": "fliegen",
+            "frase": "Sie ist nach Rom geflogen."
+          },
+          {
+            "grupo": "change of state",
+            "infinitivo": "aufstehen",
+            "frase": "Ich bin um sechs Uhr aufgestanden."
+          },
+          {
+            "grupo": "change of state",
+            "infinitivo": "einschlafen",
+            "frase": "Das Kind ist früh eingeschlafen."
+          },
+          {
+            "grupo": "sein / bleiben",
+            "infinitivo": "bleiben",
+            "frase": "Wir sind zu Hause geblieben."
+          },
+          {
+            "grupo": "sein / bleiben",
+            "infinitivo": "sein",
+            "frase": "Ich bin in Berlin gewesen."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich habe nach Berlin gefahren.",
+            "certo": "Ich bin nach Berlin gefahren.",
+            "motivo": "Movement from one place to another: «sein»."
+          },
+          {
+            "errado": "Ich habe zu Hause geblieben.",
+            "certo": "Ich bin zu Hause geblieben.",
+            "motivo": "«bleiben» takes «sein», even though nothing moves."
+          },
+          {
+            "errado": "Ich bin Kaffee getrunken.",
+            "certo": "Ich habe Kaffee getrunken.",
+            "motivo": "Most verbs take «haben»."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Tell about a trip or an outing in 6 Perfekt sentences, using «sein» and the verbs of movement."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 8 Perfekt sentences with «haben», using regular and irregular participles."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-023.json",
+  "responsavel": null
+}

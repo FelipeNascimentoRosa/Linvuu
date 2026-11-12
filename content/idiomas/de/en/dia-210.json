@@ -1,0 +1,140 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 210,
+  "fase": 21,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Time conjunctions: als, wenn, während, seitdem, bis, sobald: Wenn: repetition, present and future",
+  "objetivo": "Lesson 53, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 53,
+    "titulo": "Time conjunctions: als, wenn, während, seitdem, bis, sobald",
+    "objetivo": "Choose between «als» (a single event in the past) and «wenn» (repetition, the present and the future), and use während, seitdem, bis, sobald and solange — always with the verb at the end.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Wenn: repetition, present and future",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "immer wenn",
+            "translit": "IM-er VEN",
+            "pt": "whenever, every time",
+            "en": "whenever",
+            "audio": "immer wenn"
+          },
+          {
+            "ru": "jedes Mal, wenn",
+            "translit": "YAY-des MAHL ven",
+            "pt": "every time (that)",
+            "en": "every time",
+            "audio": "jedes Mal, wenn"
+          },
+          {
+            "ru": "manchmal",
+            "translit": "MAHNKH-mahl",
+            "pt": "sometimes",
+            "en": "sometimes",
+            "audio": "manchmal"
+          },
+          {
+            "ru": "oft",
+            "translit": "OFT",
+            "pt": "often",
+            "en": "often",
+            "audio": "oft"
+          },
+          {
+            "ru": "selten",
+            "translit": "ZEL-ten",
+            "pt": "rarely, seldom",
+            "en": "rarely",
+            "audio": "selten"
+          },
+          {
+            "ru": "nie",
+            "translit": "NEE",
+            "pt": "never",
+            "en": "never",
+            "audio": "nie"
+          },
+          {
+            "ru": "jedes Wochenende",
+            "translit": "YAY-des VOKH-en-en-deh",
+            "pt": "every weekend",
+            "en": "every weekend",
+            "audio": "jedes Wochenende"
+          },
+          {
+            "ru": "jeden Tag",
+            "translit": "YAY-den TAHK",
+            "pt": "every day",
+            "en": "every day",
+            "audio": "jeden Tag"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Wenn: things that repeat, the present and the future",
+        "explicacao": "STEP 1: «WENN» (when, whenever, if) links the main clause to events that REPEAT, to the PRESENT and to the FUTURE: «Wenn ich Zeit habe, rufe ich dich an» (when I have time, I'll call you). STEP 2: for repetition IN THE PAST, German also uses «wenn», usually with «immer» or «jedes Mal» — English \"whenever\" or \"used to\": «Immer wenn ich Zeit hatte, bin ich zum See gegangen» (whenever I had time, I went to the lake). STEP 3: the choice: ONCE in the past → «als»; several times, or present/future → «wenn». STEP 4: the order is the same as in all subordinate clauses: verb at the end, main clause with the verb in 2nd position. STEP 5: remember «wenn» also means \"if\" (a condition): «Wenn es regnet, bleibe ich zu Hause.»",
+        "tabela": [
+          {
+            "quando": "present",
+            "frase": "Wenn ich Zeit habe, rufe ich dich an."
+          },
+          {
+            "quando": "future",
+            "frase": "Wenn du kommst, koche ich etwas."
+          },
+          {
+            "quando": "repetition in the past",
+            "frase": "Immer wenn ich Zeit hatte, bin ich zum See gegangen."
+          },
+          {
+            "quando": "every time",
+            "frase": "Jedes Mal, wenn es regnet, bleibe ich zu Hause."
+          },
+          {
+            "quando": "a single event (als)",
+            "frase": "Als ich ankam, regnete es."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Als ich Zeit hatte, bin ich immer zum See gegangen.",
+            "certo": "Immer wenn ich Zeit hatte, bin ich zum See gegangen.",
+            "motivo": "Repetition: «wenn»."
+          },
+          {
+            "errado": "Wenn ich gestern ankam, regnete es.",
+            "certo": "Als ich gestern ankam, regnete es.",
+            "motivo": "A single event: «als»."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say out loud what you do whenever you have time and what you'll do when you're on vacation, with «wenn»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 sentences with «als» about your past."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-053.json",
+  "responsavel": null
+}

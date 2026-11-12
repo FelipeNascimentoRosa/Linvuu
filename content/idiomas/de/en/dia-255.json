@@ -1,0 +1,130 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 255,
+  "fase": 26,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Giving opinions, agreeing, disagreeing and structuring a text: Structuring an opinion text",
+  "objetivo": "Lesson 64, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 64,
+    "titulo": "Giving opinions, agreeing, disagreeing and structuring a text",
+    "objetivo": "Express and justify an opinion, agree and disagree politely, and structure an opinion text (a forum post or a letter to the editor) with an introduction, arguments, an example and a conclusion.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Structuring an opinion text",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "The opinion text, step by step",
+        "explicacao": "STEP 1: an opinion text (a forum post, a letter to the editor) has FOUR parts: INTRODUCTION (the topic and your position), ARGUMENTS (two or three, with reasons), an EXAMPLE (a concrete case) and a CONCLUSION. STEP 2: introduction: «Ich möchte meine Meinung zum Thema … äußern» (I'd like to share my opinion on…). STEP 3: arguments, in order: «ERSTENS …, ZWEITENS …, DRITTENS …» (first, second, third), «AUSSERDEM …» (besides). STEP 4: example: «Zum Beispiel …», «Ein Beispiel dafür ist …». STEP 5: counterargument: «Natürlich gibt es auch Nachteile, aber …» (of course there are downsides too, but…). STEP 6: conclusion: «Zusammenfassend kann man sagen, dass …» (to sum up…), «Abschließend möchte ich sagen …» (in conclusion…). STEP 7: use the connectors you've learned (weil, denn, deshalb, obwohl, trotzdem, einerseits … andererseits) — and remember each one's word order.",
+        "tabela": [
+          {
+            "parte": "introduction",
+            "frase": "Ich möchte meine Meinung zum Thema Homeoffice äußern."
+          },
+          {
+            "parte": "arguments",
+            "frase": "Erstens spart man Zeit. Zweitens kann man ruhiger arbeiten."
+          },
+          {
+            "parte": "example",
+            "frase": "Zum Beispiel muss man nicht pendeln."
+          },
+          {
+            "parte": "counterargument",
+            "frase": "Natürlich gibt es auch Nachteile, aber die Vorteile überwiegen."
+          },
+          {
+            "parte": "conclusion",
+            "frase": "Zusammenfassend kann man sagen, dass Homeoffice sinnvoll ist."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 10,
+        "titulo": "Eine Diskussion über Homeoffice / A discussion about working from home",
+        "contexto": "Two colleagues debate working from home.",
+        "linhas": [
+          {
+            "personagem": "Mia",
+            "ru": "— Ich bin der Meinung, dass Homeoffice die Arbeit verbessert.",
+            "pt": "— I'm of the opinion that working from home improves people's work.",
+            "audio": "Ich bin der Meinung, dass Homeoffice die Arbeit verbessert.",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Da stimme ich dir teilweise zu. Man spart Zeit, weil man nicht pendeln muss.",
+            "pt": "— I partly agree. You save time, because you don't have to commute.",
+            "audio": "Da stimme ich dir teilweise zu. Man spart Zeit, weil man nicht pendeln muss.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Außerdem kann man ruhiger arbeiten.",
+            "pt": "— Besides, you can work more calmly.",
+            "audio": "Außerdem kann man ruhiger arbeiten.",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Das sehe ich anders. Zu Hause lenkt mich vieles ab.",
+            "pt": "— I see it differently. At home, lots of things distract me.",
+            "audio": "Das sehe ich anders. Zu Hause lenkt mich vieles ab.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Zum Beispiel?",
+            "pt": "— For example?",
+            "audio": "Zum Beispiel?",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Zum Beispiel die Wäsche, der Fernseher und die Nachbarn.",
+            "pt": "— For example, the laundry, the TV and the neighbors.",
+            "audio": "Zum Beispiel die Wäsche, der Fernseher und die Nachbarn.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Einerseits hast du recht, andererseits kann man sich gut organisieren.",
+            "pt": "— On the one hand you're right; on the other, you can organize yourself well.",
+            "audio": "Einerseits hast du recht, andererseits kann man sich gut organisieren.",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Zusammenfassend würde ich sagen: Eine Mischung aus beidem ist ideal.",
+            "pt": "— To sum up, I'd say a mix of both is ideal.",
+            "audio": "Zusammenfassend würde ich sagen: Eine Mischung aus beidem ist ideal.",
+            "rotulo": "Jonas"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Defend an opinion out loud in 8 sentences, with an introduction, two arguments, an example and a conclusion."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 phrases for agreeing and disagreeing."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-064.json",
+  "responsavel": null
+}

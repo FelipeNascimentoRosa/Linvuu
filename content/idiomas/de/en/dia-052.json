@@ -1,0 +1,374 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 52,
+  "fase": 6,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "The imperative: asking, telling and instructing: Practice",
+  "objetivo": "Lesson 13, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 13,
+    "titulo": "The imperative: asking, telling and instructing",
+    "objetivo": "Form the imperative with «Sie», «wir», «du» and «ihr», including separable and irregular verbs, and understand the instructions in classes, textbooks and exams.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Practice",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 16,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Formal imperative of «öffnen»:",
+            "opcoes": [
+              "Öffnen Sie!",
+              "Sie öffnen!",
+              "Öffne Sie!"
+            ],
+            "gabarito": "Öffnen Sie!",
+            "explicacao": "Verb first, «Sie» after.",
+            "id": "de-013-e01"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Imperative of «aufstehen» (Sie):",
+            "opcoes": [
+              "Stehen Sie auf!",
+              "Aufstehen Sie!",
+              "Sie stehen auf!"
+            ],
+            "gabarito": "Stehen Sie auf!",
+            "explicacao": "Separable prefix at the end.",
+            "id": "de-013-e02"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Imperative of «kommen» (du):",
+            "opcoes": [
+              "Komm!",
+              "Kommst!",
+              "Komme du!"
+            ],
+            "gabarito": "Komm!",
+            "explicacao": "No «du» and no «-st».",
+            "id": "de-013-e03"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Camila, ich lese die Anleitung. Du nimmst die Tomaten.",
+            "respostaEsperada": "Camila, ich lese die Anleitung. Du nimmst die Tomaten.",
+            "explicacao": "Camila, I'll read the recipe. You get the tomatoes.",
+            "id": "de-013-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Imperative of «nehmen» (du):",
+            "opcoes": [
+              "Nimm!",
+              "Nehm!",
+              "Nehme!"
+            ],
+            "gabarito": "Nimm!",
+            "explicacao": "Keeps the e → i change.",
+            "id": "de-013-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Imperative of «lesen» (du):",
+            "opcoes": [
+              "Lies!",
+              "Les!",
+              "Lese!"
+            ],
+            "gabarito": "Lies!",
+            "explicacao": "Keeps the e → ie change.",
+            "id": "de-013-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Imperative of «fahren» (du):",
+            "opcoes": [
+              "Fahr!",
+              "Fähr!",
+              "Fahre!"
+            ],
+            "gabarito": "Fahr!",
+            "explicacao": "No umlaut in the imperative.",
+            "id": "de-013-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Siehst du? Ich schneide schnell!",
+            "respostaEsperada": "Siehst du? Ich schneide schnell!",
+            "explicacao": "See? I chop fast!",
+            "id": "de-013-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ langsam! (warten, du)",
+            "opcoes": [
+              "Warte",
+              "Wart",
+              "Wartest"
+            ],
+            "gabarito": "Warte",
+            "explicacao": "A stem in -t adds -e.",
+            "id": "de-013-e07"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ ruhig! (sein, du)",
+            "opcoes": [
+              "Sei",
+              "Bist",
+              "Sein"
+            ],
+            "gabarito": "Sei",
+            "explicacao": "Irregular imperative.",
+            "id": "de-013-e08"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ leise! (sein, ihr)",
+            "opcoes": [
+              "Seid",
+              "Sei",
+              "Seien"
+            ],
+            "gabarito": "Seid",
+            "explicacao": "«ihr» → seid.",
+            "id": "de-013-e09"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ Sie bitte Platz! (nehmen)",
+            "opcoes": [
+              "Nehmen",
+              "Nimm",
+              "Nehmt"
+            ],
+            "gabarito": "Nehmen",
+            "explicacao": "Polite form.",
+            "id": "de-013-e10"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Das stimmt. Du schläfst immer sofort.",
+            "respostaEsperada": "Das stimmt. Du schläfst immer sofort.",
+            "explicacao": "True. You always fall asleep right away.",
+            "id": "de-013-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"Please listen.\"",
+            "opcoes": [
+              "Hören",
+              "Sie",
+              "bitte",
+              "zu"
+            ],
+            "gabarito": "Hören Sie bitte zu.",
+            "explicacao": "Separable: «zu» goes to the end.",
+            "id": "de-013-e11"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"Let's begin!\"",
+            "opcoes": [
+              "Fangen",
+              "wir",
+              "an"
+            ],
+            "gabarito": "Fangen wir an!",
+            "explicacao": "wir imperative: verb first.",
+            "id": "de-013-e12"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Kreuzen Sie an: richtig oder falsch» asks you to:",
+            "opcoes": [
+              "mark with an X",
+              "write a letter",
+              "listen to a recording"
+            ],
+            "gabarito": "mark with an X",
+            "explicacao": "ankreuzen = mark with an X.",
+            "id": "de-013-e13"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Öffnen Sie das Buch auf Seite zehn.",
+            "respostaEsperada": "Öffnen Sie das Buch auf Seite zehn.",
+            "explicacao": "Open your books to page ten.",
+            "id": "de-013-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Öffnen Sie das Buch auf Seite zehn",
+            "opcoes": [
+              "Öffnen Sie das Buch auf Seite zehn",
+              "Schließen Sie das Buch",
+              "Lesen Sie den Text"
+            ],
+            "gabarito": "Öffnen Sie das Buch auf Seite zehn",
+            "explicacao": "öffnen = to open.",
+            "id": "de-013-e14"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Beantworten Sie bitte alle Fragen",
+            "respostaEsperada": "Beantworten Sie bitte alle Fragen",
+            "explicacao": "beantworten = to answer.",
+            "id": "de-013-e15"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write 5 instructions: two with «Sie», two with «du» and one with «ihr».",
+            "respostaEsperada": "Öffnen Sie das Buch. Lesen Sie den Text. Komm bitte! Nimm das Buch! Seid bitte leise!",
+            "id": "de-013-e16"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Write four sentences about your morning and a relative's, contrasting ich (no vowel change) and er/sie (with vowel change), using essen, lesen, fahren, nehmen.",
+            "respostaEsperada": "Am Morgen esse ich Brot, und mein Bruder isst Obst. Ich lese die Zeitung, und er liest seine E-Mails. Ich nehme den Bus, und meine Schwester fährt mit dem Fahrrad zur Arbeit.",
+            "id": "de-013-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write four instructions from a simple recipe for a friend (du) using Nimm …! Schneide …! Gib …! Koch …!",
+            "respostaEsperada": "Nimm drei Tomaten und eine Zwiebel! Schneide die Zwiebel klein! Gib ein bisschen Öl und Salz dazu! Koch die Soße zehn Minuten!",
+            "id": "de-013-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write a four-line kitchen mini-dialogue asking for help and ingredients with the imperative and bitte.",
+            "respostaEsperada": "Model dialogue: — Jonas, hilf mir bitte kurz in der Küche! — Klar! Was soll ich machen? — Nimm bitte das Messer und schneide das Brot! Und gib mir bitte das Salz! — Hier, bitte schön!",
+            "id": "de-013-L-p03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Du sprechst zu schnell.",
+            "respostaEsperada": "Du sprichst zu schnell.",
+            "explicacao": "Du sprichst zu schnell.",
+            "id": "de-013-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Er nehmt den Bus.",
+            "respostaEsperada": "Er nimmt den Bus.",
+            "explicacao": "Er nimmt den Bus.",
+            "id": "de-013-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Gibt mir das Salz!",
+            "respostaEsperada": "Gib mir das Salz!",
+            "explicacao": "Gib mir das Salz!",
+            "id": "de-013-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Ich fähre nach Wien.",
+            "respostaEsperada": "Ich fahre nach Wien.",
+            "explicacao": "Ich fahre nach Wien. (ich doesn't change)",
+            "id": "de-013-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Er liesst ein Buch.",
+            "respostaEsperada": "Er liest ein Buch.",
+            "explicacao": "Er liest ein Buch.",
+            "id": "de-013-L-c05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Sprich Sie langsam!",
+            "respostaEsperada": "Sprechen Sie langsam!",
+            "explicacao": "Sprechen Sie langsam!",
+            "id": "de-013-L-c06"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Is there a mistake? Correct it or write «OK»: Du schläfst gut.",
+            "respostaEsperada": "OK",
+            "id": "de-013-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "The typical English-speaker mistakes",
+        "explicacao": "STEP 1: the costliest mistakes: using one command form for everyone, as in English (Sprich! to your boss, or Sprechen Sie! to your kid); dropping the vowel change in du and er/sie/es (du sprechst, er nehmt); changing the vowel where it doesn't belong (ich fähre); leaving the -st or -t in the du imperative (Gibst / Gibt mir! instead of Gib mir!); and looking for a \"don't\" — German just adds nicht. STEP 2: read the table and say each correct sentence out loud before you look at the reason.",
+        "erros": [
+          {
+            "errado": "Sprich langsam! (to your boss)",
+            "certo": "Sprechen Sie langsam!",
+            "motivo": "English has one command form; German needs the formal one with Sie."
+          },
+          {
+            "errado": "Du sprechst zu schnell.",
+            "certo": "Du sprichst zu schnell.",
+            "motivo": "sprechen changes e → i with du and er."
+          },
+          {
+            "errado": "Gibt mir das Salz!",
+            "certo": "Gib mir das Salz!",
+            "motivo": "The du imperative drops the ending: Gib!"
+          },
+          {
+            "errado": "Fähr langsam!",
+            "certo": "Fahr langsam!",
+            "motivo": "No umlaut in the imperative."
+          },
+          {
+            "errado": "Ich fähre nach Wien.",
+            "certo": "Ich fahre nach Wien.",
+            "motivo": "ich never takes the vowel change."
+          },
+          {
+            "errado": "Tu nicht rauchen!",
+            "certo": "Rauch nicht! / Rauchen Sie nicht!",
+            "motivo": "No \"don't\" in German: just add nicht."
+          }
+        ],
+        "tag": "Typical mistake"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Can I do it? I conjugate sprechen, nehmen, essen and fahren without getting du and er wrong. · I give a simple instruction to a friend (du), a group (ihr) and a stranger (Sie)."
+      },
+      {
+        "tipo": "revisao",
+        "min": 2,
+        "enunciado": "Review. Complete: Er ____ (können) gut kochen. Ich ____ (müssen) früh aufstehen. Hier ____ (dürfen) man nicht rauchen."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-013.json",
+  "responsavel": null
+}

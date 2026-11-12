@@ -1,0 +1,185 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 126,
+  "fase": 13,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Adjectives 1: with the definite article (der große Mann): Dative and genitive",
+  "objetivo": "Lesson 32, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 32,
+    "titulo": "Adjectives 1: with the definite article (der große Mann)",
+    "objetivo": "Give the adjective its ending when it comes before a noun, after der, die, das: the two endings -e and -en, in all four cases.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Dative and genitive",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "Figure it out yourself",
+        "explicacao": "STEP 1: look at the same adjective in three situations in the table: after der/die/das, after ein/kein/mein, and with no article. STEP 2: in which row does the masculine end in -er? STEP 3: in which row does the neuter end in -es? STEP 4: where is the plural -en? STEP 5: compare «der neue Tisch» and «ein neuer Tisch»: the -r of «der» seems to \"jump\" onto the adjective when the article is «ein». Why? What do der, die, das show that ein doesn't? This lesson covers the first row; the next two lessons cover the other two.",
+        "tabela": [
+          {
+            "artigo": "der/die/das",
+            "masculino": "der neue Tisch",
+            "feminino": "die neue Lampe",
+            "neutro": "das neue Bett",
+            "plural": "die neuen Stühle"
+          },
+          {
+            "artigo": "ein/kein/mein",
+            "masculino": "ein neuer Tisch",
+            "feminino": "eine neue Lampe",
+            "neutro": "ein neues Bett",
+            "plural": "keine neuen Stühle"
+          },
+          {
+            "artigo": "— (no article)",
+            "masculino": "kalter Kaffee",
+            "feminino": "kalte Milch",
+            "neutro": "kaltes Wasser",
+            "plural": "kalte Getränke"
+          }
+        ],
+        "tag": "Figure it out"
+      },
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "süß",
+            "translit": "ZÜSS",
+            "pt": "sweet",
+            "en": "sweet",
+            "audio": "süß"
+          },
+          {
+            "ru": "frisch",
+            "translit": "FRISH",
+            "pt": "fresh",
+            "en": "fresh",
+            "audio": "frisch"
+          },
+          {
+            "ru": "bitter",
+            "translit": "BIT-er",
+            "pt": "bitter",
+            "en": "bitter",
+            "audio": "bitter"
+          },
+          {
+            "ru": "scharf",
+            "translit": "SHARF",
+            "pt": "spicy, hot; sharp",
+            "en": "spicy",
+            "audio": "scharf"
+          },
+          {
+            "ru": "leicht",
+            "translit": "LYKHT",
+            "pt": "light; easy",
+            "en": "light, easy",
+            "audio": "leicht"
+          },
+          {
+            "ru": "schwer",
+            "translit": "SHVAIR",
+            "pt": "heavy; difficult",
+            "en": "heavy, hard",
+            "audio": "schwer"
+          },
+          {
+            "ru": "sauber",
+            "translit": "SOW-ber",
+            "pt": "clean",
+            "en": "clean",
+            "audio": "sauber"
+          },
+          {
+            "ru": "schmutzig",
+            "translit": "SHMOOT-sikh",
+            "pt": "dirty",
+            "en": "dirty",
+            "audio": "schmutzig"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Dative and genitive: all «-en»",
+        "explicacao": "STEP 1: in the DATIVE, after der, die, das, the ending is «-en» for ALL genders and the plural: «dem großen Mann», «der kleinen Frau», «dem neuen Auto», «den großen Kindern». STEP 2: in the GENITIVE, the ending is also «-en»: «des großen Mannes», «der kleinen Frau», «des neuen Autos», «der großen Kinder». STEP 3: sum it up like this: there is «-e» in only five places (nominative singular in all three genders, plus accusative feminine and neuter); everything else is «-en». STEP 4: use them after dative and two-way prepositions: «mit dem neuen Auto» (with the new car), «in der kleinen Küche» (in the small kitchen).",
+        "tabela": [
+          {
+            "caso": "Nominativ",
+            "masculino": "der große Mann",
+            "feminino": "die kleine Frau",
+            "neutro": "das neue Auto",
+            "plural": "die großen Kinder"
+          },
+          {
+            "caso": "Akkusativ",
+            "masculino": "den großen Mann",
+            "feminino": "die kleine Frau",
+            "neutro": "das neue Auto",
+            "plural": "die großen Kinder"
+          },
+          {
+            "caso": "Dativ",
+            "masculino": "dem großen Mann",
+            "feminino": "der kleinen Frau",
+            "neutro": "dem neuen Auto",
+            "plural": "den großen Kindern"
+          },
+          {
+            "caso": "Genitiv",
+            "masculino": "des großen Mannes",
+            "feminino": "der kleinen Frau",
+            "neutro": "des neuen Autos",
+            "plural": "der großen Kinder"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich fahre mit dem neue Auto.",
+            "certo": "Ich fahre mit dem neuen Auto.",
+            "motivo": "Dative: «-en» for all."
+          },
+          {
+            "errado": "Ich wohne in der klein Wohnung.",
+            "certo": "Ich wohne in der kleinen Wohnung.",
+            "motivo": "Feminine dative: «-en»."
+          }
+        ],
+        "tag": "Adjectives and possessives"
+      },
+      {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "In 30 seconds",
+        "explicacao": "STEP 1: ask three questions, in this order. (1) Is the adjective BEFORE a noun? If not (after sein), no ending. (2) Is there an article that already shows gender and case (der, die, das, dem, den…)? Then the ending is only -e or -en (this lesson). (3) If the article is «ein» with no ending, or there is no article, the adjective must show gender and case itself: -er, -es, -e (lessons 33 and 34).",
+        "tag": "Summary"
+      },
+      {
+        "tipo": "producao",
+        "min": 4,
+        "enunciado": "Make 6 sentences with prepositions and adjectives: «Ich fahre mit dem neuen Auto. Ich wohne in der kleinen Wohnung …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Write the declined adjective (nominative and accusative) with «der», «die», «das» and plural «die»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-032.json",
+  "responsavel": null
+}

@@ -1,0 +1,142 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 135,
+  "fase": 14,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Adjectives 3: without an article (kalter Kaffee, gute Freunde): The three families and the restaurant",
+  "objetivo": "Lesson 34, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 34,
+    "titulo": "Adjectives 3: without an article (kalter Kaffee, gute Freunde)",
+    "objetivo": "Give the adjective its ending when there's no article (uncountable nouns, plurals, orders and prices), using the endings of der, die, das, and bring the three adjective families together in one chart.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "The three families and the restaurant",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "The three families in one chart",
+        "explicacao": "STEP 1: German wants the case shown ONCE: either on the article or on the adjective. STEP 2: with DER/DIE/DAS (the article shows the case): the adjective takes «-e» or «-en». STEP 3: with EIN/MEIN/KEIN (the article doesn't show the case in the masculine nominative and in the neuter): the adjective takes «-er» and «-es» there, and «-e/-en» everywhere else. STEP 4: with NO article: the adjective shows the case with the endings of «der, die, das» (and dem in the dative). STEP 5: memory trick: \"If the article fails, the adjective takes over.\"",
+        "tabela": [
+          {
+            "familia": "der / die / das + adjective",
+            "nominativo": "der große Mann",
+            "acusativo": "den großen Mann",
+            "dativo": "dem großen Mann"
+          },
+          {
+            "familia": "ein / mein / kein + adjective",
+            "nominativo": "ein großer Mann",
+            "acusativo": "einen großen Mann",
+            "dativo": "einem großen Mann"
+          },
+          {
+            "familia": "no article + adjective",
+            "nominativo": "großer Mann",
+            "acusativo": "großen Mann",
+            "dativo": "großem Mann"
+          }
+        ],
+        "tag": "Adjectives and possessives"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 10,
+        "titulo": "Im Restaurant / At the restaurant",
+        "contexto": "A couple orders from a waiter.",
+        "linhas": [
+          {
+            "personagem": "Kellner",
+            "ru": "— Guten Abend! Was möchten Sie trinken?",
+            "pt": "— Good evening! What would you like to drink?",
+            "audio": "Guten Abend! Was möchten Sie trinken?",
+            "rotulo": "Kellner"
+          },
+          {
+            "personagem": "Anna",
+            "ru": "— Ich möchte kaltes Wasser und einen heißen Tee.",
+            "pt": "— I'd like iced water and a hot tea.",
+            "audio": "Ich möchte kaltes Wasser und einen heißen Tee.",
+            "rotulo": "Anna"
+          },
+          {
+            "personagem": "Ben",
+            "ru": "— Für mich einen frischen Orangensaft, bitte.",
+            "pt": "— For me, a fresh orange juice, please.",
+            "audio": "Für mich einen frischen Orangensaft, bitte.",
+            "rotulo": "Ben"
+          },
+          {
+            "personagem": "Kellner",
+            "ru": "— Gern. Und zum Essen? Wir haben frischen Fisch und frisches Gemüse.",
+            "pt": "— Certainly. And to eat? We have fresh fish and fresh vegetables.",
+            "audio": "Gern. Und zum Essen? Wir haben frischen Fisch und frisches Gemüse.",
+            "rotulo": "Kellner"
+          },
+          {
+            "personagem": "Anna",
+            "ru": "— Ich nehme gebratenen Fisch mit frischem Gemüse.",
+            "pt": "— I'll have fried fish with fresh vegetables.",
+            "audio": "Ich nehme gebratenen Fisch mit frischem Gemüse.",
+            "rotulo": "Anna"
+          },
+          {
+            "personagem": "Ben",
+            "ru": "— Ich möchte gute Suppe und frisches Brot.",
+            "pt": "— I'd like a good soup and fresh bread.",
+            "audio": "Ich möchte gute Suppe und frisches Brot.",
+            "rotulo": "Ben"
+          },
+          {
+            "personagem": "Kellner",
+            "ru": "— Sehr gern. Möchten Sie auch einen gemischten Salat?",
+            "pt": "— Certainly. Would you also like a mixed salad?",
+            "audio": "Sehr gern. Möchten Sie auch einen gemischten Salat?",
+            "rotulo": "Kellner"
+          },
+          {
+            "personagem": "Anna",
+            "ru": "— Nein, danke. Wir haben genug Essen.",
+            "pt": "— No, thanks. We have enough food.",
+            "audio": "Nein, danke. Wir haben genug Essen.",
+            "rotulo": "Anna"
+          },
+          {
+            "personagem": "Ben",
+            "ru": "— Und viele Grüße an den Koch!",
+            "pt": "— And our compliments to the chef!",
+            "audio": "Und viele Grüße an den Koch!",
+            "rotulo": "Ben"
+          },
+          {
+            "personagem": "Kellner",
+            "ru": "— Das mache ich gern. Guten Appetit!",
+            "pt": "— With pleasure. Enjoy your meal!",
+            "audio": "Das mache ich gern. Guten Appetit!",
+            "rotulo": "Kellner"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Order at a restaurant out loud with drinks, dishes and adjectives, with and without an article."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write one sentence for each adjective family: after der, after ein and with no article."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-034.json",
+  "responsavel": null
+}

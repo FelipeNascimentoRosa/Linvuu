@@ -1,0 +1,606 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 92,
+  "fase": 10,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Perfekt 3: haben or sein?: Reading and practice",
+  "objetivo": "Lesson 23, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 23,
+    "titulo": "Perfekt 3: haben or sein?",
+    "objetivo": "Choose the right Perfekt auxiliary (haben or sein), use verbs of movement and change of state, and build complete sentences — questions, negatives, and the words schon, noch nicht and noch nie.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Reading and practice",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "texto",
+        "min": 3,
+        "titulo": "Mein Wochenende / My weekend",
+        "ru": "Am Samstag bin ich um neun Uhr aufgestanden. Ich habe gefrühstückt und die Zeitung gelesen. Dann bin ich mit dem Bus in die Stadt gefahren und habe eingekauft. Am Abend habe ich mit meiner Freundin gekocht. Wir haben Fisch gegessen und Wein getrunken. Am Sonntag bin ich zu Hause geblieben und habe viel geschlafen.",
+        "pt": "On Saturday I got up at nine. I had breakfast and read the newspaper. Then I took the bus into town and went shopping. In the evening I cooked with my friend. We ate fish and drank wine. On Sunday I stayed home and slept a lot.",
+        "perguntas": [
+          {
+            "pergunta": "Wann ist der Autor aufgestanden?",
+            "resposta": "Um neun Uhr"
+          },
+          {
+            "pergunta": "Was haben sie am Abend gegessen?",
+            "resposta": "Fisch"
+          },
+          {
+            "pergunta": "Was hat der Autor am Sonntag gemacht?",
+            "resposta": "Er ist zu Hause geblieben und hat viel geschlafen"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 10,
+        "itens": [
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich ___ nach Berlin gefahren.",
+            "opcoes": [
+              "bin",
+              "habe",
+              "hat"
+            ],
+            "gabarito": "bin",
+            "explicacao": "Movement: sein.",
+            "id": "de-023-e01"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"No, never. What about you?\"",
+            "opcoes": [
+              "nie.",
+              "du?",
+              "Und",
+              "Nein,",
+              "noch"
+            ],
+            "gabarito": "Nein, noch nie. Und du?",
+            "explicacao": "Write: Nein, noch nie. Und du?",
+            "id": "de-023-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Er ___ zu Hause geblieben.",
+            "opcoes": [
+              "ist",
+              "hat",
+              "wird"
+            ],
+            "gabarito": "ist",
+            "explicacao": "«bleiben» takes «sein», even though nothing moves.",
+            "id": "de-023-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Nein, noch nie. Und du?",
+            "respostaEsperada": "Nein, noch nie. Und du?",
+            "explicacao": "No, never. What about you?",
+            "id": "de-023-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Wir ___ Fisch gegessen.",
+            "opcoes": [
+              "haben",
+              "sind",
+              "hat"
+            ],
+            "gabarito": "haben",
+            "explicacao": "«essen» takes «haben».",
+            "id": "de-023-e03"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Have you been to Berlin often?\"",
+            "opcoes": [
+              "in",
+              "gewesen?",
+              "Bist",
+              "du",
+              "oft",
+              "Berlin"
+            ],
+            "gabarito": "Bist du oft in Berlin gewesen?",
+            "explicacao": "Write: Bist du oft in Berlin gewesen?",
+            "id": "de-023-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Bist du oft in Berlin gewesen?",
+            "respostaEsperada": "Bist du oft in Berlin gewesen?",
+            "explicacao": "Have you been to Berlin often?",
+            "id": "de-023-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Hast du schon einmal Sushi gegessen?",
+            "respostaEsperada": "Hast du schon einmal Sushi gegessen?",
+            "explicacao": "Have you ever eaten sushi?",
+            "id": "de-023-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Yes, I've been there three times.\"",
+            "opcoes": [
+              "bin",
+              "dreimal",
+              "dort",
+              "ich",
+              "gewesen.",
+              "Ja,"
+            ],
+            "gabarito": "Ja, ich bin dreimal dort gewesen.",
+            "explicacao": "Write: Ja, ich bin dreimal dort gewesen.",
+            "id": "de-023-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich ___ meinen Schlüssel verloren.",
+            "opcoes": [
+              "habe",
+              "bin",
+              "ist"
+            ],
+            "gabarito": "habe",
+            "explicacao": "«verlieren» takes «haben».",
+            "id": "de-023-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ja, ich bin dreimal dort gewesen.",
+            "respostaEsperada": "Ja, ich bin dreimal dort gewesen.",
+            "explicacao": "Yes, I've been there three times.",
+            "id": "de-023-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Was ___ passiert?",
+            "opcoes": [
+              "ist",
+              "hat",
+              "wird"
+            ],
+            "gabarito": "ist",
+            "explicacao": "«passieren» takes «sein».",
+            "id": "de-023-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Once by train, and twice I flew.\"",
+            "opcoes": [
+              "und",
+              "Zug",
+              "zweimal",
+              "Einmal",
+              "ich",
+              "dem",
+              "mit",
+              "geflogen.",
+              "bin"
+            ],
+            "gabarito": "Einmal mit dem Zug und zweimal bin ich geflogen.",
+            "explicacao": "Write: Einmal mit dem Zug und zweimal bin ich geflogen.",
+            "id": "de-023-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Er ist um sieben Uhr ___. (aufstehen)",
+            "opcoes": [
+              "aufgestanden",
+              "geaufstanden",
+              "aufgestehen"
+            ],
+            "gabarito": "aufgestanden",
+            "explicacao": "Separable and irregular.",
+            "id": "de-023-e06"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Einmal mit dem Zug und zweimal bin ich geflogen.",
+            "respostaEsperada": "Einmal mit dem Zug und zweimal bin ich geflogen.",
+            "explicacao": "Once by train, and twice I flew.",
+            "id": "de-023-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Ja, ich habe letztes Jahr in Berlin Sushi gegessen.",
+            "respostaEsperada": "Ja, ich habe letztes Jahr in Berlin Sushi gegessen.",
+            "explicacao": "Yes, I ate sushi in Berlin last year.",
+            "id": "de-023-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Then you have to come along soon!\"",
+            "opcoes": [
+              "du",
+              "mitkommen!",
+              "musst",
+              "bald",
+              "Dann"
+            ],
+            "gabarito": "Dann musst du bald mitkommen!",
+            "explicacao": "Write: Dann musst du bald mitkommen!",
+            "id": "de-023-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "When do you use «sein» in the Perfekt?",
+            "opcoes": [
+              "movement or a change of state, plus sein/bleiben",
+              "always with irregular verbs",
+              "with all separable verbs"
+            ],
+            "gabarito": "movement or a change of state, plus sein/bleiben",
+            "explicacao": "Rule of thumb.",
+            "id": "de-023-e07"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Dann musst du bald mitkommen!",
+            "respostaEsperada": "Dann musst du bald mitkommen!",
+            "explicacao": "Then you have to come along soon!",
+            "id": "de-023-x10",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"I'd love to! I have vacation in August.\"",
+            "opcoes": [
+              "Urlaub.",
+              "Ich",
+              "Gern!",
+              "im",
+              "habe",
+              "August"
+            ],
+            "gabarito": "Gern! Ich habe im August Urlaub.",
+            "explicacao": "Write: Gern! Ich habe im August Urlaub.",
+            "id": "de-023-x11",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Noch nie» means:",
+            "opcoes": [
+              "never (so far)",
+              "not yet",
+              "only once"
+            ],
+            "gabarito": "never (so far)",
+            "explicacao": "Life experience.",
+            "id": "de-023-e08"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Gern! Ich habe im August Urlaub.",
+            "respostaEsperada": "Gern! Ich habe im August Urlaub.",
+            "explicacao": "I'd love to! I have vacation in August.",
+            "id": "de-023-x12",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Bist du mit dem Zug gefahren?",
+            "respostaEsperada": "Bist du mit dem Zug gefahren?",
+            "explicacao": "Did you go by train?",
+            "id": "de-023-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «gewinnen» mean?",
+            "audio": "gewinnen",
+            "opcoes": [
+              "to win",
+              "to fall asleep",
+              "to lose",
+              "to forget"
+            ],
+            "gabarito": "to win",
+            "explicacao": "«gewinnen» = to win.",
+            "id": "de-023-x13",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«dreimal» means:",
+            "opcoes": [
+              "three times",
+              "three days",
+              "the third"
+            ],
+            "gabarito": "three times",
+            "explicacao": "Number + mal.",
+            "id": "de-023-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «vergessen» mean?",
+            "audio": "vergessen",
+            "opcoes": [
+              "to forget",
+              "to win",
+              "to fall asleep",
+              "to lose"
+            ],
+            "gabarito": "to forget",
+            "explicacao": "«vergessen» = to forget.",
+            "id": "de-023-x14",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"I haven't eaten yet.\"",
+            "opcoes": [
+              "Ich",
+              "habe",
+              "noch",
+              "nicht",
+              "gegessen"
+            ],
+            "gabarito": "Ich habe noch nicht gegessen.",
+            "explicacao": "«noch nicht» goes before the participle.",
+            "id": "de-023-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «aufstehen / aufgestanden» mean?",
+            "audio": "aufstehen / aufgestanden",
+            "opcoes": [
+              "to die",
+              "to grow",
+              "to win",
+              "to get up"
+            ],
+            "gabarito": "to get up",
+            "explicacao": "«aufstehen / aufgestanden» = to get up.",
+            "id": "de-023-x15",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"Did you go to Berlin?\"",
+            "opcoes": [
+              "Bist",
+              "du",
+              "nach",
+              "Berlin",
+              "gefahren"
+            ],
+            "gabarito": "Bist du nach Berlin gefahren?",
+            "explicacao": "In a question, the auxiliary comes first.",
+            "id": "de-023-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «passieren» mean?",
+            "audio": "passieren",
+            "opcoes": [
+              "to happen",
+              "to lose",
+              "to forget",
+              "to die"
+            ],
+            "gabarito": "to happen",
+            "explicacao": "«passieren» = to happen.",
+            "id": "de-023-x16",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Ich bin noch nie nach Berlin geflogen.",
+            "respostaEsperada": "Ich bin noch nie nach Berlin geflogen.",
+            "explicacao": "I've never flown to Berlin.",
+            "id": "de-023-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «sterben» mean?",
+            "audio": "sterben",
+            "opcoes": [
+              "to grow",
+              "to win",
+              "to happen",
+              "to die"
+            ],
+            "gabarito": "to die",
+            "explicacao": "«sterben» = to die.",
+            "id": "de-023-x17",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «verlieren» mean?",
+            "audio": "verlieren",
+            "opcoes": [
+              "to happen",
+              "to forget",
+              "to lose",
+              "to grow"
+            ],
+            "gabarito": "to lose",
+            "explicacao": "«verlieren» = to lose.",
+            "id": "de-023-x18",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ich bin noch nie nach Berlin geflogen",
+            "opcoes": [
+              "Ich bin noch nie nach Berlin geflogen",
+              "Ich habe noch nie Berlin gesehen",
+              "Ich bin schon einmal geflogen"
+            ],
+            "gabarito": "Ich bin noch nie nach Berlin geflogen",
+            "explicacao": "«noch nie» = never.",
+            "id": "de-023-e12"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Ich bin noch nie nach Berlin geflogen",
+            "opcoes": [
+              "nach",
+              "geflogen",
+              "Ich",
+              "nie",
+              "noch",
+              "bin",
+              "Berlin"
+            ],
+            "gabarito": "Ich bin noch nie nach Berlin geflogen",
+            "explicacao": "Write: Ich bin noch nie nach Berlin geflogen",
+            "id": "de-023-x19",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Wir sind zu Hause geblieben",
+            "respostaEsperada": "Wir sind zu Hause geblieben",
+            "explicacao": "bleiben + sein.",
+            "id": "de-023-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Wir sind zu Hause geblieben",
+            "opcoes": [
+              "zu",
+              "Wir",
+              "sind",
+              "Hause",
+              "geblieben"
+            ],
+            "gabarito": "Wir sind zu Hause geblieben",
+            "explicacao": "Write: Wir sind zu Hause geblieben",
+            "id": "de-023-x20",
+            "complemento": true
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write 5 Perfekt sentences about a trip: one verb with «sein», one with «haben», a question, a negative, and «noch nie».",
+            "respostaEsperada": "Ich bin nach Berlin gefahren. Ich habe viel gesehen. Bist du auch dort gewesen? Ich habe nicht geschlafen. Ich bin noch nie geflogen.",
+            "id": "de-023-e14"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Record yourself telling about your last weekend in the Perfekt, with both «haben» and «sein»."
+      },
+      {
+        "tipo": "exercicios",
+        "min": 6,
+        "itens": [
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Ich habe Pedro geanrufen.",
+            "respostaEsperada": "Ich habe Pedro angerufen.",
+            "explicacao": "Ich habe Pedro angerufen.",
+            "id": "de-023-L-c03"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Does this sentence have a mistake? Correct it or write «OK»: Ich bin gestern früh aufgestanden.",
+            "respostaEsperada": "OK",
+            "id": "de-023-L-c06"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 2,
+        "titulo": "The typical English-speaker mistakes",
+        "explicacao": "STEP 1: the costliest mistakes: using haben with verbs of movement or change of state, because English says \"have gone\" (Ich habe gegangen instead of Ich bin gegangen); using sein with an object (Ich bin das Auto gefahren); translating \"I have never\" as «Ich habe nie» instead of «noch nie»; and putting «nicht» after the participle as in English word order. STEP 2: read the table and say each correct sentence out loud before you look at the reason.",
+        "erros": [
+          {
+            "errado": "Ich habe ins Kino gegangen.",
+            "certo": "Ich bin ins Kino gegangen.",
+            "motivo": "Movement from A to B: sein, even though English says \"have gone\"."
+          },
+          {
+            "errado": "Er hat um sieben aufgestanden.",
+            "certo": "Er ist um sieben aufgestanden.",
+            "motivo": "Change of state: sein."
+          },
+          {
+            "errado": "Wir haben zu Hause geblieben.",
+            "certo": "Wir sind zu Hause geblieben.",
+            "motivo": "bleiben always takes sein."
+          },
+          {
+            "errado": "Ich bin das Auto gefahren.",
+            "certo": "Ich habe das Auto gefahren.",
+            "motivo": "fahren with a direct object takes haben."
+          },
+          {
+            "errado": "Ich habe nie Sushi gegessen.",
+            "certo": "Ich habe noch nie Sushi gegessen.",
+            "motivo": "\"I have never (yet)\" = noch nie."
+          },
+          {
+            "errado": "Ich habe gearbeitet nicht.",
+            "certo": "Ich habe nicht gearbeitet.",
+            "motivo": "nicht goes before the participle."
+          }
+        ],
+        "tag": "Typical mistake"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Can I do it? I choose haben or sein without hesitating and tell where I went last weekend. · I ask a classmate \"Hast du schon einmal …?\" and answer with «noch nie» or «einmal / zweimal»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Write a short 6-sentence text about a trip you took, in the Perfekt."
+      },
+      {
+        "tipo": "revisao",
+        "min": 2,
+        "enunciado": "Review. Complete: Ich habe viel Wasser ____. (trinken) · Wir haben Deutsch ____. (sprechen) · Sie hat ihre Oma ____. (besuchen)"
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-023.json",
+  "responsavel": null
+}

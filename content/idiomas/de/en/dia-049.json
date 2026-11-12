@@ -1,0 +1,290 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 49,
+  "fase": 5,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "The imperative: asking, telling and instructing: The formal imperative: Sie",
+  "objetivo": "Lesson 13, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 13,
+    "titulo": "The imperative: asking, telling and instructing",
+    "objetivo": "Form the imperative with «Sie», «wir», «du» and «ihr», including separable and irregular verbs, and understand the instructions in classes, textbooks and exams.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "The formal imperative: Sie",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Lesson goal. By the end of the four sessions, you conjugate sprechen, essen, geben, nehmen, lesen, sehen, helfen, fahren and schlafen without falling into the du/er trap, and you give orders, advice and requests with the imperative for du, ihr and Sie."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Cooking together",
+        "contexto": "Camila and Jonas are making pasta. Lena arrives. Then the neighbor knocks on the door.",
+        "linhas": [
+          {
+            "personagem": "Jonas",
+            "ru": "— Camila, ich lese die Anleitung. Du nimmst die Tomaten.",
+            "pt": "— Camila, I'll read the recipe. You get the tomatoes.",
+            "audio": "Camila, ich lese die Anleitung. Du nimmst die Tomaten.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Gut. Und ich möchte ein Messer.",
+            "pt": "— OK. And I want a knife.",
+            "audio": "Gut. Und ich möchte ein Messer.",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Hier, nimm das Messer! Und schneide die Zwiebel, bitte.",
+            "pt": "— Here, take the knife! And chop the onion, please.",
+            "audio": "Hier, nimm das Messer! Und schneide die Zwiebel, bitte.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Siehst du? Ich schneide schnell!",
+            "pt": "— See? I chop fast!",
+            "audio": "Siehst du? Ich schneide schnell!",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Super! Aber sei vorsichtig!",
+            "pt": "— Great! But be careful!",
+            "audio": "Super! Aber sei vorsichtig!",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Lena",
+            "ru": "— Hallo! Was macht ihr?",
+            "pt": "— Hi! What are you two doing?",
+            "audio": "Hallo! Was macht ihr?",
+            "rotulo": "Lena"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Wir kochen. Lena, hilf mir bitte! Gib mir das Salz.",
+            "pt": "— We're cooking. Lena, help me, please! Pass me the salt.",
+            "audio": "Wir kochen. Lena, hilf mir bitte! Gib mir das Salz.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Isst du auch Pasta, Lena?",
+            "pt": "— Do you eat pasta too, Lena?",
+            "audio": "Isst du auch Pasta, Lena?",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Lena",
+            "ru": "— Ja, gern. Ich esse viel, aber danach schlafe ich auf dem Sofa!",
+            "pt": "— Yes, gladly. I eat a lot, but then I fall asleep on the sofa!",
+            "audio": "Ja, gern. Ich esse viel, aber danach schlafe ich auf dem Sofa!",
+            "rotulo": "Lena"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Das stimmt. Du schläfst immer sofort.",
+            "pt": "— True. You always fall asleep right away.",
+            "audio": "Das stimmt. Du schläfst immer sofort.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Herr Weber",
+            "ru": "— Entschuldigung! Seid bitte leise. Es ist schon spät.",
+            "pt": "— Excuse me! Please be quiet. It's already late.",
+            "audio": "Entschuldigung! Seid bitte leise. Es ist schon spät.",
+            "rotulo": "Herr Weber"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Oh, Entschuldigung, Herr Weber! Möchten Sie Pasta? Nehmen Sie einen Teller!",
+            "pt": "— Oh, sorry, Mr. Weber! Would you like some pasta? Take a plate!",
+            "audio": "Oh, Entschuldigung, Herr Weber! Möchten Sie Pasta? Nehmen Sie einen Teller!",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Herr Weber",
+            "ru": "— Nein, danke. Gute Nacht.",
+            "pt": "— No, thank you. Good night.",
+            "audio": "Nein, danke. Gute Nacht.",
+            "rotulo": "Herr Weber"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "The English speaker's trap",
+        "explicacao": "STEP 1: the vowel changes only with du and er/sie/es. With ich, wir, ihr and sie, the verb stays as in the infinitive.",
+        "comparacao": "Three traps. English has one command form for everyone (\"Speak slowly!\"); German has three, depending on who you're talking to — and the du form keeps the vowel change.",
+        "tabela": [
+          {
+            "ingles": "You speak German.",
+            "alemao": "Du sprichst Deutsch."
+          },
+          {
+            "ingles": "She takes the bus.",
+            "alemao": "Sie nimmt den Bus."
+          },
+          {
+            "ingles": "Speak slowly! (to a friend)",
+            "alemao": "Sprich langsam!"
+          },
+          {
+            "ingles": "Speak slowly! (to a group of friends)",
+            "alemao": "Sprecht langsam!"
+          },
+          {
+            "ingles": "Speak slowly! (formal)",
+            "alemao": "Sprechen Sie langsam!"
+          }
+        ],
+        "tag": "Trap"
+      },
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "Platz nehmen",
+            "translit": "PLAHTS NEH-men",
+            "pt": "to sit down, take a seat",
+            "en": "to take a seat",
+            "audio": "Platz nehmen"
+          },
+          {
+            "ru": "öffnen",
+            "translit": "ÖF-nen",
+            "pt": "to open",
+            "en": "to open",
+            "audio": "öffnen"
+          },
+          {
+            "ru": "schließen",
+            "translit": "SHLEE-sen",
+            "pt": "to close",
+            "en": "to close",
+            "audio": "schließen"
+          },
+          {
+            "ru": "zuhören",
+            "translit": "TSOO-hö-ren",
+            "pt": "to listen",
+            "en": "to listen",
+            "audio": "zuhören"
+          },
+          {
+            "ru": "lesen",
+            "translit": "LEH-zen",
+            "pt": "to read",
+            "en": "to read",
+            "audio": "lesen"
+          },
+          {
+            "ru": "schreiben",
+            "translit": "SHRY-ben",
+            "pt": "to write",
+            "en": "to write",
+            "audio": "schreiben"
+          },
+          {
+            "ru": "die Seite",
+            "translit": "dee ZY-teh",
+            "pt": "page",
+            "en": "page",
+            "audio": "die Seite"
+          },
+          {
+            "ru": "bitte schön",
+            "translit": "BIT-teh SHÖN",
+            "pt": "please / here you go",
+            "en": "here you are",
+            "audio": "bitte schön"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "The imperative with «Sie» and «wir», step by step",
+        "explicacao": "The imperative is for asking, giving instructions, inviting and telling people what to do. We start with the POLITE form, which you hear in shops, schools and exams. STEP 1: take the infinitive («öffnen») and put «Sie» after it: «Öffnen Sie das Buch.» So the verb comes FIRST and «Sie» right behind it. English drops the \"you\" in commands; German formal commands keep it. STEP 2: separable verbs: the prefix goes to the END: «Hören Sie zu.», «Stehen Sie auf.» STEP 3: «bitte» makes the request polite and can go in several places: «Öffnen Sie bitte das Buch.» STEP 4: the «wir» form invites people to do something together — the German \"let's\": «Gehen wir!» (Let's go!), «Fangen wir an!» (Let's begin!). STEP 5: to negate, put «nicht» at the end: «Rauchen Sie nicht!»",
+        "comparacao": "English commands drop the subject: \"Open the book.\" The German formal imperative keeps it, right after the verb: «Öffnen Sie das Buch» — almost a question without the question mark. And \"let's…\" is simply the wir form with the verb first: «Gehen wir!»",
+        "tabela": [
+          {
+            "infinitivo": "öffnen",
+            "imperativo": "Öffnen Sie das Buch.",
+            "pt": "Open the book."
+          },
+          {
+            "infinitivo": "lesen",
+            "imperativo": "Lesen Sie den Text.",
+            "pt": "Read the text."
+          },
+          {
+            "infinitivo": "zuhören (separable)",
+            "imperativo": "Hören Sie bitte zu.",
+            "pt": "Please listen."
+          },
+          {
+            "infinitivo": "aufstehen (separable)",
+            "imperativo": "Stehen Sie auf.",
+            "pt": "Stand up."
+          },
+          {
+            "infinitivo": "Platz nehmen",
+            "imperativo": "Nehmen Sie bitte Platz.",
+            "pt": "Please take a seat."
+          },
+          {
+            "infinitivo": "gehen (wir)",
+            "imperativo": "Gehen wir!",
+            "pt": "Let's go!"
+          },
+          {
+            "infinitivo": "rauchen (negative)",
+            "imperativo": "Rauchen Sie nicht!",
+            "pt": "Don't smoke!"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Sie öffnen das Buch!",
+            "certo": "Öffnen Sie das Buch!",
+            "motivo": "In the imperative, the verb comes BEFORE «Sie»."
+          },
+          {
+            "errado": "Aufstehen Sie.",
+            "certo": "Stehen Sie auf.",
+            "motivo": "The separable prefix goes to the end."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Give 5 instructions out loud as if you were a teacher: «Öffnen Sie …, Lesen Sie …, Schreiben Sie …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Write the «ich» and «du» forms of «müssen», «wollen» and «dürfen»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-013.json",
+  "responsavel": null
+}

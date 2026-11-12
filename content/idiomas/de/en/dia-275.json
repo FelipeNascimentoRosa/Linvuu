@@ -1,0 +1,130 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 275,
+  "fase": 28,
+  "nivel": "b2",
+  "status": "publicada",
+  "titulo": "Konjunktiv II 2: the unreal past: Apologies, criticism and regrets",
+  "objetivo": "Lesson 69, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 69,
+    "titulo": "Konjunktiv II 2: the unreal past",
+    "objetivo": "Form the past Konjunktiv II (hätte / wäre + Partizip II), express regret and criticism («Ich hätte … sollen») and build conditionals about what did not happen.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Apologies, criticism and regrets",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Using the unreal past in conversation",
+        "explicacao": "STEP 1: to express regret: «Schade, dass … !» or «Hätte ich das gewusst!» (verb first — like English \"Had I known!\"). STEP 2: to apologise politely: «Ich hätte dir Bescheid sagen sollen.» STEP 3: to criticise gently: «Du hättest wenigstens anrufen können.» STEP 4: to express regret with «wenn»: «Wenn ich das gewusst hätte, wäre ich früher gegangen.» STEP 5: to console: «Das hätte jedem passieren können» (that could have happened to anyone).",
+        "tabela": [
+          {
+            "funcao": "expressing regret",
+            "frase": "Hätte ich das gewusst!"
+          },
+          {
+            "funcao": "apologising",
+            "frase": "Ich hätte dir Bescheid sagen sollen."
+          },
+          {
+            "funcao": "criticising gently",
+            "frase": "Du hättest wenigstens anrufen können."
+          },
+          {
+            "funcao": "regret with wenn",
+            "frase": "Wenn ich das gewusst hätte, wäre ich früher gegangen."
+          },
+          {
+            "funcao": "consoling",
+            "frase": "Das hätte jedem passieren können."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 10,
+        "titulo": "Verpasst! / Missed it!",
+        "contexto": "Two friends talk about a party one of them missed.",
+        "linhas": [
+          {
+            "personagem": "Lea",
+            "ru": "— Warum bist du nicht zur Party gekommen?",
+            "pt": "— Why didn't you come to the party?",
+            "audio": "Warum bist du nicht zur Party gekommen?",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Ich wäre gern gekommen, aber ich musste arbeiten.",
+            "pt": "— I would gladly have come, but I had to work.",
+            "audio": "Ich wäre gern gekommen, aber ich musste arbeiten.",
+            "rotulo": "Paul"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Du hättest wenigstens anrufen können.",
+            "pt": "— You could at least have called.",
+            "audio": "Du hättest wenigstens anrufen können.",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Du hast recht. Ich hätte dir eine Nachricht schreiben sollen.",
+            "pt": "— You're right. I should have sent you a message.",
+            "audio": "Du hast recht. Ich hätte dir eine Nachricht schreiben sollen.",
+            "rotulo": "Paul"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Wenn du gekommen wärst, hättest du alle getroffen.",
+            "pt": "— If you had come, you would have met everyone.",
+            "audio": "Wenn du gekommen wärst, hättest du alle getroffen.",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Wenn ich das gewusst hätte, wäre ich früher gegangen.",
+            "pt": "— If I had known, I would have left earlier.",
+            "audio": "Wenn ich das gewusst hätte, wäre ich früher gegangen.",
+            "rotulo": "Paul"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Schade! Wir hätten viel Spaß gehabt.",
+            "pt": "— What a shame! We would have had a lot of fun.",
+            "audio": "Schade! Wir hätten viel Spaß gehabt.",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Nächstes Mal komme ich bestimmt, versprochen!",
+            "pt": "— Next time I'll definitely come, I promise!",
+            "audio": "Nächstes Mal komme ich bestimmt, versprochen!",
+            "rotulo": "Paul"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Apologise and criticise gently out loud, with «hätte … sollen / können»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 sentences with «hätte + infinitive + modal»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-069.json",
+  "responsavel": null
+}

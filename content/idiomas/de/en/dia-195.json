@@ -1,0 +1,142 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 195,
+  "fase": 20,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Relative clauses 3: dative, prepositions and genitive: The genitive: dessen and deren",
+  "objetivo": "Lesson 49, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 49,
+    "titulo": "Relative clauses 3: dative, prepositions and genitive",
+    "objetivo": "Form relative clauses with the relative pronoun in the dative (dem, der, dem, denen), with a preposition before the relative pronoun (mit dem, in der, für die), and with the genitive (dessen, deren).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "The genitive: dessen and deren",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Dessen and deren: the possessive relative",
+        "explicacao": "STEP 1: to show POSSESSION inside a relative clause — English \"whose\" — German uses «DESSEN» (masculine and neuter) and «DEREN» (feminine and plural). STEP 2: the owner comes before; the thing owned comes after, with NO article: «Der Mann, dessen Auto dort steht, ist mein Nachbar» (the man whose car is parked there is my neighbor). STEP 3: «Die Frau, deren Tochter Ärztin ist, wohnt hier» (the woman whose daughter is a doctor lives here). STEP 4: «Das Kind, dessen Mutter arbeitet, geht in die Schule.» «Die Leute, deren Kinder spielen, sind meine Freunde.» STEP 5: the conjugated verb goes to the end. Note: English \"whose\" never changes; German chooses by the OWNER's gender: dessen (him/it), deren (her/them).",
+        "tabela": [
+          {
+            "genero": "masculine",
+            "relativo": "dessen",
+            "exemplo": "Der Mann, dessen Auto dort steht, ist mein Nachbar."
+          },
+          {
+            "genero": "feminine",
+            "relativo": "deren",
+            "exemplo": "Die Frau, deren Tochter Ärztin ist, wohnt hier."
+          },
+          {
+            "genero": "neuter",
+            "relativo": "dessen",
+            "exemplo": "Das Kind, dessen Mutter arbeitet, geht zur Schule."
+          },
+          {
+            "genero": "plural",
+            "relativo": "deren",
+            "exemplo": "Die Leute, deren Kinder spielen, sind Freunde."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Der Mann, dessen das Auto dort steht",
+            "certo": "Der Mann, dessen Auto dort steht",
+            "motivo": "After «dessen/deren», no article."
+          },
+          {
+            "errado": "Die Frau, dessen Tochter Ärztin ist",
+            "certo": "Die Frau, deren Tochter Ärztin ist",
+            "motivo": "Feminine owner: «deren»."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 10,
+        "titulo": "Die Nachbarschaft / The neighborhood",
+        "contexto": "Two people talk about their neighbors.",
+        "linhas": [
+          {
+            "personagem": "Mia",
+            "ru": "— Kennst du die Frau, die im dritten Stock wohnt?",
+            "pt": "— Do you know the woman who lives on the third floor?",
+            "audio": "Kennst du die Frau, die im dritten Stock wohnt?",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Ja, das ist die Frau, deren Sohn Musiker ist.",
+            "pt": "— Yes, she's the woman whose son is a musician.",
+            "audio": "Ja, das ist die Frau, deren Sohn Musiker ist.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Und der Mann, der neben ihr wohnt?",
+            "pt": "— And the man who lives next to her?",
+            "audio": "Und der Mann, der neben ihr wohnt?",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Das ist der Mann, dessen Hund immer bellt.",
+            "pt": "— He's the man whose dog is always barking.",
+            "audio": "Das ist der Mann, dessen Hund immer bellt.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Die Gegend, in der wir wohnen, ist wirklich schön.",
+            "pt": "— The area we live in is really nice.",
+            "audio": "Die Gegend, in der wir wohnen, ist wirklich schön.",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Ja, aber die Leute, mit denen ich arbeite, wohnen weit weg.",
+            "pt": "— Yes, but the people I work with live far away.",
+            "audio": "Ja, aber die Leute, mit denen ich arbeite, wohnen weit weg.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Der Verein, bei dem ich Mitglied bin, trifft sich am Samstag.",
+            "pt": "— The club I'm a member of meets on Saturday.",
+            "audio": "Der Verein, bei dem ich Mitglied bin, trifft sich am Samstag.",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Das Thema, über das ihr sprecht, interessiert mich auch.",
+            "pt": "— The topic you're talking about interests me too.",
+            "audio": "Das Thema, über das ihr sprecht, interessiert mich auch.",
+            "rotulo": "Jonas"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe your neighbors and your neighborhood out loud with «dessen», «deren», «mit dem», «in der» and «mit denen»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 sentences with relative clauses and prepositions."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-049.json",
+  "responsavel": null
+}

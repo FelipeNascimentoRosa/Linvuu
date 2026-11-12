@@ -1,0 +1,264 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 29,
+  "fase": 3,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "My daily routine: Separable verbs",
+  "objetivo": "Lesson 8, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 8,
+    "titulo": "My daily routine",
+    "objetivo": "Describe your daily routine with separable verbs, verbs that change a to ä, and time expressions (um, am, von … bis, jeden Tag).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Separable verbs",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Lesson goal. By the end of the four sessions, you use aufstehen, anrufen, einkaufen, mitkommen and abfahren with the prefix at the end of the sentence, recognize the inseparable verbs (verstehen, besuchen, bekommen) and don't split what shouldn't be split."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Going shopping",
+        "contexto": "Jonas is going to the market. Camila decides to come along, but first she calls her brother.",
+        "linhas": [
+          {
+            "personagem": "Jonas",
+            "ru": "— Camila, ich kaufe heute ein. Kommst du mit?",
+            "pt": "— Camila, I'm going shopping today. Are you coming along?",
+            "audio": "Camila, ich kaufe heute ein. Kommst du mit?",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ja, gern. Wann fahren wir ab?",
+            "pt": "— Yes, gladly. When do we leave?",
+            "audio": "Ja, gern. Wann fahren wir ab?",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Der Bus fährt um zehn Uhr ab. Wir steigen am Marienplatz aus.",
+            "pt": "— The bus leaves at ten. We get off at Marienplatz.",
+            "audio": "Der Bus fährt um zehn Uhr ab. Wir steigen am Marienplatz aus.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Moment, ich rufe zuerst Pedro an. Hallo Pedro! Wir kaufen heute ein.",
+            "pt": "— Just a second, I'm calling Pedro first. Hi, Pedro! We're going shopping today.",
+            "audio": "Moment, ich rufe zuerst Pedro an. Hallo Pedro! Wir kaufen heute ein.",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Pedro",
+            "ru": "— Kein Problem. Wann kommst du zurück?",
+            "pt": "— No problem. When are you coming back?",
+            "audio": "Kein Problem. Wann kommst du zurück?",
+            "rotulo": "Pedro"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ich muss um sechs Uhr zurückkommen. Lena besucht uns.",
+            "pt": "— I need to be back at six. Lena is coming to visit us.",
+            "audio": "Ich muss um sechs Uhr zurückkommen. Lena besucht uns.",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Los, steig ein! Der Bus kommt jetzt an.",
+            "pt": "— Come on, get in! The bus is coming.",
+            "audio": "Los, steig ein! Der Bus kommt jetzt an.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Warte, Jonas! Ich vergesse immer meine Tasche.",
+            "pt": "— Wait, Jonas! I always forget my bag.",
+            "audio": "Warte, Jonas! Ich vergesse immer meine Tasche.",
+            "rotulo": "Camila"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "The English speaker's trap",
+        "explicacao": "STEP 1: a separable prefix goes to the end. Be-, ge-, er-, ver-, ent-, emp- stay attached.",
+        "comparacao": "English speakers have a head start here: phrasal verbs. \"I get up\", \"I call you back\", \"the bus pulls in\" — English already splits verb and particle. German goes further: the prefix flies to the very END of the sentence, however long it is. «Ich rufe dich morgen um acht Uhr an» — \"I call you tomorrow at eight up\". Three traps: forgetting to send it to the end, leaving it in the middle (like English \"get off at Marienplatz\"), and splitting verbs that never split.",
+        "tabela": [
+          {
+            "ingles": "I'll call you.",
+            "alemao": "Ich rufe dich an."
+          },
+          {
+            "ingles": "Are you coming along?",
+            "alemao": "Kommst du mit?"
+          },
+          {
+            "ingles": "The bus leaves at ten.",
+            "alemao": "Der Bus fährt um zehn Uhr ab."
+          },
+          {
+            "ingles": "I understand you.",
+            "alemao": "Ich verstehe dich."
+          },
+          {
+            "ingles": "I'm visiting my grandmother.",
+            "alemao": "Ich besuche meine Oma."
+          }
+        ],
+        "tag": "Trap"
+      },
+      {
+        "tipo": "palavras",
+        "min": 7,
+        "itens": [
+          {
+            "ru": "aufstehen",
+            "translit": "OWF-shteh-en",
+            "pt": "to get up",
+            "en": "to get up",
+            "audio": "aufstehen"
+          },
+          {
+            "ru": "frühstücken",
+            "translit": "FRÜH-shtü-ken",
+            "pt": "to have breakfast",
+            "en": "to have breakfast",
+            "audio": "frühstücken"
+          },
+          {
+            "ru": "duschen",
+            "translit": "DOO-shen",
+            "pt": "to shower",
+            "en": "to shower",
+            "audio": "duschen"
+          },
+          {
+            "ru": "anrufen",
+            "translit": "AHN-roo-fen",
+            "pt": "to call (phone)",
+            "en": "to call",
+            "audio": "anrufen"
+          },
+          {
+            "ru": "einkaufen",
+            "translit": "INE-kow-fen",
+            "pt": "to go shopping",
+            "en": "to shop",
+            "audio": "einkaufen"
+          },
+          {
+            "ru": "fernsehen",
+            "translit": "FERN-zeh-en",
+            "pt": "to watch TV",
+            "en": "to watch TV",
+            "audio": "fernsehen"
+          },
+          {
+            "ru": "aufräumen",
+            "translit": "OWF-roy-men",
+            "pt": "to tidy up",
+            "en": "to tidy up",
+            "audio": "aufräumen"
+          },
+          {
+            "ru": "ankommen",
+            "translit": "AHN-kom-en",
+            "pt": "to arrive",
+            "en": "to arrive",
+            "audio": "ankommen"
+          },
+          {
+            "ru": "abfahren",
+            "translit": "AHP-fah-ren",
+            "pt": "to leave, depart (vehicle)",
+            "en": "to depart",
+            "audio": "abfahren"
+          },
+          {
+            "ru": "mitkommen",
+            "translit": "MIT-kom-en",
+            "pt": "to come along",
+            "en": "to come along",
+            "audio": "mitkommen"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Separable verbs: the prefix goes to the end",
+        "explicacao": "Many German verbs have a prefix that splits off: «aufstehen» (to get up). In the present, the conjugated verb sits in 2nd position and the PREFIX goes to the END of the sentence: «Ich stehe um sieben Uhr auf» — like \"I get up at seven\", but with \"up\" at the very end. In the infinitive, or with a modal verb, the verb stays whole: «Ich möchte um sieben Uhr aufstehen.» Common separable prefixes: auf- (up), an- (on, at), ein- (in), mit- (with, along), ab- (off, away), fern- (far), aus- (out), zurück- (back) — often the same ideas as English particles. Other prefixes NEVER separate: be-, ge-, er-, ver-, zer-, ent-, emp-: «Ich besuche meine Oma» (besuchen).",
+        "comparacao": "English phrasal verbs (\"get up\", \"call back\") already split verb and particle, but the particle usually stays close to the verb. In German it goes to the end of the clause, and the whole sentence is \"bracketed\" between the verb and the prefix.",
+        "tabela": [
+          {
+            "infinitivo": "aufstehen",
+            "exemplo": "Ich stehe um sieben Uhr auf.",
+            "pt": "I get up at seven."
+          },
+          {
+            "infinitivo": "anrufen",
+            "exemplo": "Er ruft seine Mutter an.",
+            "pt": "He calls his mother."
+          },
+          {
+            "infinitivo": "einkaufen",
+            "exemplo": "Wir kaufen heute ein.",
+            "pt": "We're going shopping today."
+          },
+          {
+            "infinitivo": "fernsehen",
+            "exemplo": "Sie sieht abends fern.",
+            "pt": "She watches TV in the evening."
+          },
+          {
+            "infinitivo": "ankommen",
+            "exemplo": "Der Zug kommt um acht Uhr an.",
+            "pt": "The train arrives at eight."
+          },
+          {
+            "infinitivo": "mitkommen",
+            "exemplo": "Kommst du mit?",
+            "pt": "Are you coming along?"
+          },
+          {
+            "infinitivo": "besuchen (inseparable)",
+            "exemplo": "Ich besuche meine Oma.",
+            "pt": "I'm visiting my grandmother."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich aufstehe um sieben Uhr.",
+            "certo": "Ich stehe um sieben Uhr auf.",
+            "motivo": "The separable prefix goes to the end of the sentence."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say: «Ich stehe um sieben Uhr auf. Ich rufe meine Mutter an. Wir kaufen ein.»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Write the 6 forms of «sein» and «haben» from memory."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-008.json",
+  "responsavel": null
+}

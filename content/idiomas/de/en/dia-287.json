@@ -1,0 +1,130 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 287,
+  "fase": 29,
+  "nivel": "b2",
+  "status": "publicada",
+  "titulo": "Indirect speech 1: dass, ob, sollen and Konjunktiv I: Telling what was said",
+  "objetivo": "Lesson 72, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 72,
+    "titulo": "Indirect speech 1: dass, ob, sollen and Konjunktiv I",
+    "objetivo": "Report what someone else said with «dass» and with normal word order, turn questions and orders into reported speech (ob, W-questions, sollen) and recognise the Konjunktiv I (er sei, er habe, er komme) in the news.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Telling what was said",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Telling a third person what was said",
+        "explicacao": "STEP 1: in conversation, report with «Er hat gesagt, dass …» or «Sie meint, dass …». STEP 2: to report a request: «Sie hat gefragt, ob du kommst.» STEP 3: to report an order: «Er hat gesagt, ich soll warten.» STEP 4: to report doubt: «Er weiß nicht, ob es klappt.» STEP 5: combine with words like «angeblich» (allegedly), «laut» (according to): «Laut Zeitung ist er krank.»",
+        "tabela": [
+          {
+            "funcao": "reporting a fact",
+            "frase": "Er hat gesagt, dass er keine Zeit hat."
+          },
+          {
+            "funcao": "reporting a request",
+            "frase": "Sie hat gefragt, ob du kommst."
+          },
+          {
+            "funcao": "reporting an order",
+            "frase": "Er hat gesagt, ich soll warten."
+          },
+          {
+            "funcao": "according to a source",
+            "frase": "Laut Zeitung ist er krank."
+          },
+          {
+            "funcao": "allegedly",
+            "frase": "Er ist angeblich krank."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 10,
+        "titulo": "Was hat er gesagt? / What did he say?",
+        "contexto": "Two colleagues talk about what the boss said.",
+        "linhas": [
+          {
+            "personagem": "Mia",
+            "ru": "— Was hat der Chef in der Besprechung gesagt?",
+            "pt": "— What did the boss say in the meeting?",
+            "audio": "Was hat der Chef in der Besprechung gesagt?",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Er hat gesagt, dass wir nächste Woche ein neues Projekt beginnen.",
+            "pt": "— He said that we are starting a new project next week.",
+            "audio": "Er hat gesagt, dass wir nächste Woche ein neues Projekt beginnen.",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Hat er gefragt, ob wir Zeit haben?",
+            "pt": "— Did he ask if we have time?",
+            "audio": "Hat er gefragt, ob wir Zeit haben?",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Ja, er hat gefragt, ob wir Überstunden machen können.",
+            "pt": "— Yes, he asked if we can do overtime.",
+            "audio": "Ja, er hat gefragt, ob wir Überstunden machen können.",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Und was hast du geantwortet?",
+            "pt": "— And what did you answer?",
+            "audio": "Und was hast du geantwortet?",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Ich habe gesagt, dass ich nur am Freitag Zeit habe.",
+            "pt": "— I said that I only have time on Friday.",
+            "audio": "Ich habe gesagt, dass ich nur am Freitag Zeit habe.",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Er hat noch gesagt, ich soll die Unterlagen vorbereiten.",
+            "pt": "— He also said that I'm supposed to prepare the documents.",
+            "audio": "Er hat noch gesagt, ich soll die Unterlagen vorbereiten.",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Laut Chef ist das Projekt sehr wichtig.",
+            "pt": "— According to the boss, the project is very important.",
+            "audio": "Laut Chef ist das Projekt sehr wichtig.",
+            "rotulo": "Lea"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say out loud what a colleague or a boss said, using «dass», «ob» and «soll»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 news sentences in reported speech."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-072.json",
+  "responsavel": null
+}

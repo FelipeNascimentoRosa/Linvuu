@@ -1,0 +1,536 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 64,
+  "fase": 7,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Jobs and the workplace: Practice",
+  "objetivo": "Lesson 16, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 16,
+    "titulo": "Jobs and the workplace",
+    "objetivo": "Say your job (without an article, with the feminine in -in), ask about other people's jobs, say where and for whom you work, and talk about your working hours.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Practice",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say \"I'm a teacher\"?",
+            "opcoes": [
+              "Ich bin Lehrer.",
+              "Ich bin ein Lehrer.",
+              "Ich habe Lehrer."
+            ],
+            "gabarito": "Ich bin Lehrer.",
+            "explicacao": "No article after «sein».",
+            "id": "de-016-e01"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"I'm an engineer. I work at Siemens. And you?\"",
+            "opcoes": [
+              "arbeite",
+              "bei",
+              "Ingenieur.",
+              "Und",
+              "Ich",
+              "bin",
+              "du?",
+              "Siemens.",
+              "Ich"
+            ],
+            "gabarito": "Ich bin Ingenieur. Ich arbeite bei Siemens. Und du?",
+            "explicacao": "Write: Ich bin Ingenieur. Ich arbeite bei Siemens. Und du?",
+            "id": "de-016-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Feminine of «der Arzt»:",
+            "opcoes": [
+              "die Ärztin",
+              "die Arztin",
+              "die Arzte"
+            ],
+            "gabarito": "die Ärztin",
+            "explicacao": "Umlaut + -in.",
+            "id": "de-016-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ich bin Ingenieur. Ich arbeite bei Siemens. Und du?",
+            "respostaEsperada": "Ich bin Ingenieur. Ich arbeite bei Siemens. Und du?",
+            "explicacao": "I'm an engineer. I work at Siemens. And you?",
+            "id": "de-016-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Feminine of «der Koch»:",
+            "opcoes": [
+              "die Köchin",
+              "die Kochin",
+              "die Köche"
+            ],
+            "gabarito": "die Köchin",
+            "explicacao": "Umlaut + -in.",
+            "id": "de-016-e03"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"How interesting! How many hours a day do you work?\"",
+            "opcoes": [
+              "Tag?",
+              "jeden",
+              "du",
+              "Wie",
+              "lange",
+              "Wie",
+              "arbeitest",
+              "interessant!"
+            ],
+            "gabarito": "Wie interessant! Wie lange arbeitest du jeden Tag?",
+            "explicacao": "Write: Wie interessant! Wie lange arbeitest du jeden Tag?",
+            "id": "de-016-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Hallo, ich bin Lara. Was machst du beruflich?",
+            "respostaEsperada": "Hallo, ich bin Lara. Was machst du beruflich?",
+            "explicacao": "Hi, I'm Lara. What do you do for a living?",
+            "id": "de-016-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Wie interessant! Wie lange arbeitest du jeden Tag?",
+            "respostaEsperada": "Wie interessant! Wie lange arbeitest du jeden Tag?",
+            "explicacao": "How interesting! How many hours a day do you work?",
+            "id": "de-016-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich arbeite ___ Büro. (at the)",
+            "opcoes": [
+              "im",
+              "in der",
+              "bei"
+            ],
+            "gabarito": "im",
+            "explicacao": "«Büro» is a das word.",
+            "id": "de-016-e04"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Do you like working?\"",
+            "opcoes": [
+              "du",
+              "Arbeitest",
+              "gern?"
+            ],
+            "gabarito": "Arbeitest du gern?",
+            "explicacao": "Write: Arbeitest du gern?",
+            "id": "de-016-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Meine Mutter arbeitet ___ Schule. (at the)",
+            "opcoes": [
+              "in der",
+              "im",
+              "bei"
+            ],
+            "gabarito": "in der",
+            "explicacao": "«Schule» is a die word.",
+            "id": "de-016-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Arbeitest du gern?",
+            "respostaEsperada": "Arbeitest du gern?",
+            "explicacao": "Do you like working?",
+            "id": "de-016-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Er arbeitet ___ Siemens. (at)",
+            "opcoes": [
+              "bei",
+              "in",
+              "im"
+            ],
+            "gabarito": "bei",
+            "explicacao": "A company: «bei», not «in» — English \"at Siemens\".",
+            "id": "de-016-e06"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Me too. But I'm off on weekends.\"",
+            "opcoes": [
+              "am",
+              "ich",
+              "frei.",
+              "habe",
+              "Wochenende",
+              "Ich",
+              "auch.",
+              "Aber"
+            ],
+            "gabarito": "Ich auch. Aber am Wochenende habe ich frei.",
+            "explicacao": "Write: Ich auch. Aber am Wochenende habe ich frei.",
+            "id": "de-016-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Ich bin Ärztin. Ich arbeite im Krankenhaus.",
+            "respostaEsperada": "Ich bin Ärztin. Ich arbeite im Krankenhaus.",
+            "explicacao": "I'm a doctor. I work at the hospital.",
+            "id": "de-016-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ich auch. Aber am Wochenende habe ich frei.",
+            "respostaEsperada": "Ich auch. Aber am Wochenende habe ich frei.",
+            "explicacao": "Me too. But I'm off on weekends.",
+            "id": "de-016-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich arbeite ___ acht ___ siebzehn Uhr.",
+            "opcoes": [
+              "von … bis",
+              "um … bis",
+              "ab … zu"
+            ],
+            "gabarito": "von … bis",
+            "explicacao": "von … bis (from … to).",
+            "id": "de-016-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Then we can have a coffee together!\"",
+            "opcoes": [
+              "Kaffee",
+              "trinken!",
+              "wir",
+              "Dann",
+              "zusammen",
+              "können"
+            ],
+            "gabarito": "Dann können wir zusammen Kaffee trinken!",
+            "explicacao": "Write: Dann können wir zusammen Kaffee trinken!",
+            "id": "de-016-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Was ___ Sie von Beruf?",
+            "opcoes": [
+              "sind",
+              "haben",
+              "machen"
+            ],
+            "gabarito": "sind",
+            "explicacao": "«Was sind Sie von Beruf?»",
+            "id": "de-016-e08"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Dann können wir zusammen Kaffee trinken!",
+            "respostaEsperada": "Dann können wir zusammen Kaffee trinken!",
+            "explicacao": "Then we can have a coffee together!",
+            "id": "de-016-x10",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «die Firma» mean?",
+            "audio": "die Firma",
+            "opcoes": [
+              "(doctor's) practice, office",
+              "company, firm",
+              "working hours",
+              "office"
+            ],
+            "gabarito": "company, firm",
+            "explicacao": "«die Firma» = company, firm.",
+            "id": "de-016-x11",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Sie ist ___. (a teacher)",
+            "opcoes": [
+              "Lehrerin",
+              "Lehrer",
+              "eine Lehrer"
+            ],
+            "gabarito": "Lehrerin",
+            "explicacao": "Feminine, no article.",
+            "id": "de-016-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «die Praxis» mean?",
+            "audio": "die Praxis",
+            "opcoes": [
+              "working hours",
+              "store, shop; business",
+              "(doctor's) practice, office",
+              "job, profession"
+            ],
+            "gabarito": "(doctor's) practice, office",
+            "explicacao": "«die Praxis» = (doctor's) practice.",
+            "id": "de-016-x12",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Von sieben bis fünfzehn Uhr. Und du?",
+            "respostaEsperada": "Von sieben bis fünfzehn Uhr. Und du?",
+            "explicacao": "From seven to three. And you?",
+            "id": "de-016-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «das Geschäft» mean?",
+            "audio": "das Geschäft",
+            "opcoes": [
+              "office",
+              "factory",
+              "store, shop; business",
+              "company, firm"
+            ],
+            "gabarito": "store, shop; business",
+            "explicacao": "«das Geschäft» = store; business.",
+            "id": "de-016-x13",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Ich bin arbeitslos» means:",
+            "opcoes": [
+              "I'm unemployed",
+              "I'm on vacation",
+              "I'm very busy"
+            ],
+            "gabarito": "I'm unemployed",
+            "explicacao": "arbeitslos = without work.",
+            "id": "de-016-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «das Büro» mean?",
+            "audio": "das Büro",
+            "opcoes": [
+              "(doctor's) practice, office",
+              "office",
+              "job, profession",
+              "store, shop; business"
+            ],
+            "gabarito": "office",
+            "explicacao": "«das Büro» = office.",
+            "id": "de-016-x14",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"I work as a salesperson.\"",
+            "opcoes": [
+              "Ich",
+              "arbeite",
+              "als",
+              "Verkäufer"
+            ],
+            "gabarito": "Ich arbeite als Verkäufer.",
+            "explicacao": "«als» + job, no article — like \"work as\".",
+            "id": "de-016-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «die Fabrik» mean?",
+            "audio": "die Fabrik",
+            "opcoes": [
+              "factory",
+              "(doctor's) practice, office",
+              "store, shop; business",
+              "working hours"
+            ],
+            "gabarito": "factory",
+            "explicacao": "«die Fabrik» = factory (not \"fabric\", which is «der Stoff»).",
+            "id": "de-016-x15",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"Where do you work?\"",
+            "opcoes": [
+              "Wo",
+              "arbeitest",
+              "du"
+            ],
+            "gabarito": "Wo arbeitest du?",
+            "explicacao": "Question word + verb + subject.",
+            "id": "de-016-e12"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «der Beruf» mean?",
+            "audio": "der Beruf",
+            "opcoes": [
+              "factory",
+              "job, profession",
+              "working hours",
+              "(doctor's) practice, office"
+            ],
+            "gabarito": "job, profession",
+            "explicacao": "«der Beruf» = job, profession.",
+            "id": "de-016-x16",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Ja, sehr gern. Und du?",
+            "respostaEsperada": "Ja, sehr gern. Und du?",
+            "explicacao": "Yes, a lot. And you?",
+            "id": "de-016-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Was bist du von Beruf?",
+            "opcoes": [
+              "von",
+              "Was",
+              "Beruf?",
+              "du",
+              "bist"
+            ],
+            "gabarito": "Was bist du von Beruf?",
+            "explicacao": "Write: Was bist du von Beruf?",
+            "id": "de-016-x17",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Was bist du von Beruf?",
+            "opcoes": [
+              "Was bist du von Beruf?",
+              "Wo arbeitest du?",
+              "Wie lange arbeitest du?"
+            ],
+            "gabarito": "Was bist du von Beruf?",
+            "explicacao": "Asking about someone's job.",
+            "id": "de-016-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Ich arbeite bei der Post",
+            "opcoes": [
+              "der",
+              "Post",
+              "Ich",
+              "arbeite",
+              "bei"
+            ],
+            "gabarito": "Ich arbeite bei der Post",
+            "explicacao": "Write: Ich arbeite bei der Post",
+            "id": "de-016-x18",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ich arbeite bei der Post",
+            "respostaEsperada": "Ich arbeite bei der Post",
+            "explicacao": "«bei der Post»: a company.",
+            "id": "de-016-e14"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Was bist du von Beruf?",
+            "respostaEsperada": "Was bist du von Beruf?",
+            "explicacao": "Write: Was bist du von Beruf?",
+            "id": "de-016-x19",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Sie arbeitet ___ Köchin.",
+            "opcoes": [
+              "als",
+              "wie",
+              "bei",
+              "in"
+            ],
+            "gabarito": "als",
+            "explicacao": "«arbeiten als» + job.",
+            "id": "de-016-m01"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Ich arbeite in Siemens.",
+              "Ich arbeite bei Siemens.",
+              "Ich arbeite auf Siemens."
+            ],
+            "gabarito": "Ich arbeite bei Siemens.",
+            "explicacao": "A company: «bei», not «in» — English \"at Siemens\".",
+            "id": "de-016-m02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write 5 sentences: your job, where you work, your hours, a relative's job, and whether you like working.",
+            "respostaEsperada": "Ich bin Lehrerin. Ich arbeite in der Schule. Ich arbeite von acht bis fünfzehn Uhr. Mein Vater ist Arzt. Ich arbeite gern.",
+            "id": "de-016-e15"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Record yourself: introduce yourself professionally (job, place, hours) and ask someone else the same."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 4 sentences: your job, where you work, your hours and a relative's job."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-016.json",
+  "responsavel": null
+}

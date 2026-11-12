@@ -1,0 +1,166 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 85,
+  "fase": 9,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Perfekt 2: irregular participles: Group 1: the vowel stays the same",
+  "objetivo": "Lesson 22, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 22,
+    "titulo": "Perfekt 2: irregular participles",
+    "objetivo": "Form the Partizip II of the most common strong and mixed verbs, in three small groups (same vowel, changing vowel, mixed verbs), and use them in the Perfekt.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Group 1: the vowel stays the same",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "schlafen / geschlafen",
+            "translit": "SHLAH-fen / geh-SHLAH-fen",
+            "pt": "to sleep / slept",
+            "en": "to sleep",
+            "audio": "schlafen / geschlafen"
+          },
+          {
+            "ru": "laufen / gelaufen",
+            "translit": "LOW-fen / geh-LOW-fen",
+            "pt": "to run, walk / run",
+            "en": "to run",
+            "audio": "laufen / gelaufen"
+          },
+          {
+            "ru": "fahren / gefahren",
+            "translit": "FAH-ren / geh-FAH-ren",
+            "pt": "to go (by vehicle), drive / driven",
+            "en": "to drive",
+            "audio": "fahren / gefahren"
+          },
+          {
+            "ru": "tragen / getragen",
+            "translit": "TRAH-gen / geh-TRAH-gen",
+            "pt": "to carry, wear / carried, worn",
+            "en": "to carry, wear",
+            "audio": "tragen / getragen"
+          },
+          {
+            "ru": "geben / gegeben",
+            "translit": "GEH-ben / geh-GEH-ben",
+            "pt": "to give / given",
+            "en": "to give",
+            "audio": "geben / gegeben"
+          },
+          {
+            "ru": "essen / gegessen",
+            "translit": "ESS-en / geh-GESS-en",
+            "pt": "to eat / eaten",
+            "en": "to eat",
+            "audio": "essen / gegessen"
+          },
+          {
+            "ru": "lesen / gelesen",
+            "translit": "LEH-zen / geh-LEH-zen",
+            "pt": "to read / read",
+            "en": "to read",
+            "audio": "lesen / gelesen"
+          },
+          {
+            "ru": "sehen / gesehen",
+            "translit": "ZEH-en / geh-ZEH-en",
+            "pt": "to see / seen",
+            "en": "to see",
+            "audio": "sehen / gesehen"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "Strong participles, group 1, step by step",
+        "explicacao": "STEP 1: STRONG (irregular) verbs form the Partizip II with «ge-» + stem + «-EN», not «-t». You already know the idea from English: \"given\", \"eaten\", \"seen\", \"driven\" — German keeps that -en ending on far more verbs. STEP 2: in GROUP 1, the stem vowel stays the SAME as in the infinitive: schlafen → geschlafen; laufen → gelaufen; fahren → gefahren; tragen → getragen; geben → gegeben (given); essen → gegessen (eaten); lesen → gelesen; sehen → gesehen (seen); kommen → gekommen (come). STEP 3: no umlaut in the participle: «du fährst», but «gefahren». STEP 4: careful: «fahren», «laufen» and «kommen» use «sein» in the Perfekt (see lesson 23); for now, just learn the participle. STEP 5: always learn the infinitive together with the participle — «sehen, gesehen» — the way you once learned \"see, saw, seen\".",
+        "comparacao": "English has exactly the same split: regular verbs take -ed (\"played\"), strong verbs take -en and often change the vowel (\"given\", \"driven\", \"drunk\"). German regular verbs take -t, strong verbs take -en. Many pairs even match: geben/given, essen/eaten, sehen/seen, kommen/come.",
+        "tabela": [
+          {
+            "infinitivo": "schlafen",
+            "participio": "geschlafen",
+            "exemplo": "Ich habe gut geschlafen."
+          },
+          {
+            "infinitivo": "tragen",
+            "participio": "getragen",
+            "exemplo": "Sie hat eine Jacke getragen."
+          },
+          {
+            "infinitivo": "geben",
+            "participio": "gegeben",
+            "exemplo": "Er hat mir ein Buch gegeben."
+          },
+          {
+            "infinitivo": "essen",
+            "participio": "gegessen",
+            "exemplo": "Wir haben Fisch gegessen."
+          },
+          {
+            "infinitivo": "lesen",
+            "participio": "gelesen",
+            "exemplo": "Ich habe einen Roman gelesen."
+          },
+          {
+            "infinitivo": "sehen",
+            "participio": "gesehen",
+            "exemplo": "Hast du den Film gesehen?"
+          },
+          {
+            "infinitivo": "fahren (sein)",
+            "participio": "gefahren",
+            "exemplo": "Ich bin nach Berlin gefahren."
+          },
+          {
+            "infinitivo": "kommen (sein)",
+            "participio": "gekommen",
+            "exemplo": "Er ist spät gekommen."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich habe geschlaft.",
+            "certo": "Ich habe geschlafen.",
+            "motivo": "Strong verbs end in -en, like \"eaten\", not -t."
+          },
+          {
+            "errado": "Ich habe gefährt.",
+            "certo": "Ich bin gefahren.",
+            "motivo": "No umlaut, and it takes «sein»."
+          },
+          {
+            "errado": "Ich habe gegesst.",
+            "certo": "Ich habe gegessen.",
+            "motivo": "The participle of «essen» is «gegessen» (with an extra g)."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Say 6 Perfekt sentences with the group 1 verbs: «Ich habe … geschlafen / gegessen / gelesen / gesehen …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write the Partizip II of 8 regular verbs, including those with «ge-» in the middle and those with no «ge-»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-022.json",
+  "responsavel": null
+}

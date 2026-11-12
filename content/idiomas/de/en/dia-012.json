@@ -1,0 +1,378 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 12,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Nouns and articles: Practice",
+  "objetivo": "Lesson 3, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 3,
+    "titulo": "Nouns and articles",
+    "objetivo": "Use der, die, das and ein/eine/kein, capitalize nouns and form the most common plurals.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Practice",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 16,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Article of «Mann»:",
+            "opcoes": [
+              "der",
+              "die",
+              "das"
+            ],
+            "gabarito": "der",
+            "explicacao": "Mann is masculine.",
+            "id": "de-003-e01"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Article of «Frau»:",
+            "opcoes": [
+              "die",
+              "der",
+              "das"
+            ],
+            "gabarito": "die",
+            "explicacao": "Frau is feminine.",
+            "id": "de-003-e02"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Article of «Kind»:",
+            "opcoes": [
+              "das",
+              "der",
+              "die"
+            ],
+            "gabarito": "das",
+            "explicacao": "Kind is neuter.",
+            "id": "de-003-e03"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Wie schön! Ist das eine Lampe?",
+            "respostaEsperada": "Wie schön! Ist das eine Lampe?",
+            "explicacao": "How nice! Is that a lamp?",
+            "id": "de-003-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Article of «Zeitung» (ending -ung):",
+            "opcoes": [
+              "die",
+              "der",
+              "das"
+            ],
+            "gabarito": "die",
+            "explicacao": "-ung is feminine.",
+            "id": "de-003-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Article of «Mädchen» (ending -chen):",
+            "opcoes": [
+              "das",
+              "die",
+              "der"
+            ],
+            "gabarito": "das",
+            "explicacao": "-chen is neuter.",
+            "id": "de-003-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Article of «Lehrer» (ending -er):",
+            "opcoes": [
+              "der",
+              "die",
+              "das"
+            ],
+            "gabarito": "der",
+            "explicacao": "-er for a person is masculine.",
+            "id": "de-003-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Every German noun is written:",
+            "opcoes": [
+              "with a capital letter",
+              "in lowercase",
+              "with a capital only for names, as in English"
+            ],
+            "gabarito": "with a capital letter",
+            "explicacao": "Always with a capital letter.",
+            "id": "de-003-e07"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Und die Küche?",
+            "respostaEsperada": "Und die Küche?",
+            "explicacao": "And the kitchen?",
+            "id": "de-003-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Plural of «Tisch»:",
+            "opcoes": [
+              "Tische",
+              "Tisches",
+              "Tischen"
+            ],
+            "gabarito": "Tische",
+            "explicacao": "Plural in -e.",
+            "id": "de-003-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Plural of «Lampe»:",
+            "opcoes": [
+              "Lampen",
+              "Lampe",
+              "Lampes"
+            ],
+            "gabarito": "Lampen",
+            "explicacao": "Plural in -n.",
+            "id": "de-003-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Plural of «Haus»:",
+            "opcoes": [
+              "Häuser",
+              "Haus",
+              "Hause"
+            ],
+            "gabarito": "Häuser",
+            "explicacao": "Plural in -er with an umlaut.",
+            "id": "de-003-e10"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Ist das ein Tisch?",
+            "respostaEsperada": "Ist das ein Tisch?",
+            "explicacao": "Is that a table?",
+            "id": "de-003-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Plural of «Auto»:",
+            "opcoes": [
+              "Autos",
+              "Autoen",
+              "Auter"
+            ],
+            "gabarito": "Autos",
+            "explicacao": "Foreign word: -s.",
+            "id": "de-003-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Das ist ___ Buch. (a)",
+            "opcoes": [
+              "ein",
+              "eine",
+              "kein"
+            ],
+            "gabarito": "ein",
+            "explicacao": "Buch is neuter: ein.",
+            "id": "de-003-e12"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Das ist ___ Lampe. (a)",
+            "opcoes": [
+              "eine",
+              "ein",
+              "keine"
+            ],
+            "gabarito": "eine",
+            "explicacao": "Lampe is feminine: eine.",
+            "id": "de-003-e13"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Das ist ___ Tisch. (not a)",
+            "opcoes": [
+              "kein",
+              "keine",
+              "ein"
+            ],
+            "gabarito": "kein",
+            "explicacao": "Tisch is masculine: kein.",
+            "id": "de-003-e14"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Das sind Bücher. Die Bücher sind neu.",
+            "respostaEsperada": "Das sind Bücher. Die Bücher sind neu.",
+            "explicacao": "They're books. The books are new.",
+            "id": "de-003-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Das sind Bücher",
+            "opcoes": [
+              "Das sind Bücher",
+              "Das ist ein Buch",
+              "Das ist kein Buch"
+            ],
+            "gabarito": "Das sind Bücher",
+            "explicacao": "Plural: das sind.",
+            "id": "de-003-e15"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Das ist eine Tür",
+            "respostaEsperada": "Das ist eine Tür",
+            "explicacao": "eine, because Tür is feminine.",
+            "id": "de-003-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write 4 sentences: one object, another object, a negative and a plural.",
+            "respostaEsperada": "Das ist ein Tisch. Das ist eine Lampe. Das ist kein Stuhl. Das sind Bücher.",
+            "id": "de-003-e17"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Write six sentences describing your bedroom or office with Hier ist ein/eine … and Der/Die/Das … ist … (use groß, klein, neu, alt, schön).",
+            "respostaEsperada": "Hier ist ein Bett. Das Bett ist groß. Dort ist ein Tisch. Der Tisch ist neu. Da ist eine Lampe. Die Lampe ist sehr schön.",
+            "id": "de-003-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write six everyday nouns with their article and plural (e.g. der Schlüssel, die Zeitung, das Buch, die Wohnung, der Stuhl, das Auto).",
+            "respostaEsperada": "der Schlüssel, die Schlüssel; die Zeitung, die Zeitungen; das Buch, die Bücher; die Wohnung, die Wohnungen; der Stuhl, die Stühle; das Auto, die Autos.",
+            "id": "de-003-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Build three compound nouns and give each one's article: der Kaffee + die Tasse, das Haus + die Tür, die Zeitung + der Artikel (with a linking -s-). Rule: the LAST part decides the gender.",
+            "respostaEsperada": "Compounds: die Kaffeetasse (the gender of the last part: die Tasse), die Haustür (die Tür), der Zeitungsartikel (der Artikel).",
+            "id": "de-003-L-p03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Das ist eine Tisch.",
+            "respostaEsperada": "Das ist ein Tisch.",
+            "explicacao": "Das ist ein Tisch. (Tisch is masculine: ein.)",
+            "id": "de-003-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Die Fenster ist groß.",
+            "respostaEsperada": "Das Fenster ist groß.",
+            "explicacao": "Das Fenster ist groß. (Fenster is neuter.)",
+            "id": "de-003-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Der Lampe ist neu.",
+            "respostaEsperada": "Die Lampe ist neu.",
+            "explicacao": "Die Lampe ist neu. (Lampe is feminine.)",
+            "id": "de-003-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Die Autoen sind neu.",
+            "respostaEsperada": "Die Autos sind neu.",
+            "explicacao": "Die Autos sind neu. (plural in -s.)",
+            "id": "de-003-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Ich bin eine Lehrerin.",
+            "respostaEsperada": "Ich bin Lehrerin.",
+            "explicacao": "Ich bin Lehrerin. (no article before a job — unlike \"I'm a teacher\".)",
+            "id": "de-003-L-c05"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Is there a mistake? Correct it or write «OK»: Die Küche ist hier.",
+            "respostaEsperada": "OK",
+            "id": "de-003-L-c06"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "The typical English-speaker mistakes",
+        "explicacao": "STEP 1: the costliest habits come straight from English: one \"the\" for everything (die Tisch instead of der Tisch), \"it\" for every thing (es for der Tisch instead of er), the English -s plural (die Kinds), and \"a\" before a job (Ich bin eine Lehrerin, from \"I'm a teacher\"). STEP 2: read the table and say each correct sentence out loud before you look at the reason.",
+        "erros": [
+          {
+            "errado": "Das ist eine Tisch.",
+            "certo": "Das ist ein Tisch.",
+            "motivo": "Tisch is masculine (der Tisch), so \"a\" is ein. Only die words take eine."
+          },
+          {
+            "errado": "Der Tisch ist neu. Es ist modern.",
+            "certo": "Der Tisch ist neu. Er ist modern.",
+            "motivo": "English says \"it\" for every thing; German uses the noun's gender: der Tisch → er."
+          },
+          {
+            "errado": "Die Kinds spielen.",
+            "certo": "Die Kinder spielen.",
+            "motivo": "Not the English -s: Kind → Kinder, just like child → children."
+          },
+          {
+            "errado": "Ich bin eine Lehrerin.",
+            "certo": "Ich bin Lehrerin.",
+            "motivo": "No article before a job after sein — unlike \"I'm a teacher\"."
+          },
+          {
+            "errado": "die Kaffeetasse → der Kaffeetasse",
+            "certo": "die Kaffeetasse",
+            "motivo": "In a compound, the last part decides the gender: die Tasse → die Kaffeetasse."
+          },
+          {
+            "errado": "Das ist ein buch.",
+            "certo": "Das ist ein Buch.",
+            "motivo": "Every German noun is capitalized, not just names."
+          }
+        ],
+        "tag": "Typical mistake"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Can I do it? I say der Tisch, never just Tisch. · I use Das ist ein/eine … to point at things. · I choose er, sie or es by gender — not \"it\" for everything — and form the plural of common words."
+      },
+      {
+        "tipo": "revisao",
+        "min": 2,
+        "enunciado": "Review. From lesson 2: turn these into yes/no questions by putting the verb first: Das ist ein Tisch. Das sind Stühle. Tom ist Lehrer. Then start these sentences with Heute and keep the verb in second place: Der Tisch ist neu. Die Lampe ist alt. Finally, replace the noun with er, sie or es — never just \"es\" for everything: Der Tisch ist neu. Die Lampe ist alt. Das Bett ist groß."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-003.json",
+  "responsavel": null
+}

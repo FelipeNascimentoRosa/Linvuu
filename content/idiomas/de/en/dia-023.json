@@ -1,0 +1,483 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 23,
+  "fase": 3,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Numbers, time and days: Days, months and the date",
+  "objetivo": "Lesson 6, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 6,
+    "titulo": "Numbers, time and days",
+    "objetivo": "Count to 100 and beyond, tell the time, and say the days of the week, the months and the date.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Days, months and the date",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "Januar",
+            "translit": "YAH-noo-ar",
+            "pt": "January",
+            "en": "January",
+            "audio": "Januar"
+          },
+          {
+            "ru": "Februar",
+            "translit": "FEH-broo-ar",
+            "pt": "February",
+            "en": "February",
+            "audio": "Februar"
+          },
+          {
+            "ru": "März",
+            "translit": "MEHRTS",
+            "pt": "March",
+            "en": "March",
+            "audio": "März"
+          },
+          {
+            "ru": "April",
+            "translit": "ah-PRIL",
+            "pt": "April",
+            "en": "April",
+            "audio": "April"
+          },
+          {
+            "ru": "Mai",
+            "translit": "MY",
+            "pt": "May",
+            "en": "May",
+            "audio": "Mai"
+          },
+          {
+            "ru": "Juni",
+            "translit": "YOO-nee",
+            "pt": "June",
+            "en": "June",
+            "audio": "Juni"
+          },
+          {
+            "ru": "Juli",
+            "translit": "YOO-lee",
+            "pt": "July",
+            "en": "July",
+            "audio": "Juli"
+          },
+          {
+            "ru": "August",
+            "translit": "ow-GOOST",
+            "pt": "August",
+            "en": "August",
+            "audio": "August"
+          },
+          {
+            "ru": "September",
+            "translit": "zep-TEM-ber",
+            "pt": "September",
+            "en": "September",
+            "audio": "September"
+          },
+          {
+            "ru": "Oktober",
+            "translit": "ok-TOH-ber",
+            "pt": "October",
+            "en": "October",
+            "audio": "Oktober"
+          },
+          {
+            "ru": "November",
+            "translit": "no-VEM-ber",
+            "pt": "November",
+            "en": "November",
+            "audio": "November"
+          },
+          {
+            "ru": "Dezember",
+            "translit": "deh-TSEM-ber",
+            "pt": "December",
+            "en": "December",
+            "audio": "Dezember"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 9,
+        "titulo": "Days of the week, months and the date",
+        "explicacao": "Days and months are all masculine (der Montag, der Januar) — and like all nouns, capitalized. «Am» + day = on (Monday): «am Montag». «Im» + month = in (January): «im Mai». The date uses an ordinal with a period: «der 5. Oktober» (der fünfte Oktober) — the period does the job of English \"th\". Up to 19, the ordinal is the number + -te (der vierte); 1, 3, 7 and 8 are special (erste, dritte, siebte, achte), as in first, third. From 20 on, it's the number + -ste (der zwanzigste). In «am 5. Oktober», read «am fünften Oktober». The day comes before the month: 5.10. is October 5th.",
+        "exemplos": [
+          {
+            "ru": "Heute ist der 5. Oktober.",
+            "pt": "Today is October 5th."
+          },
+          {
+            "ru": "Ich habe am 3. Mai Geburtstag.",
+            "pt": "My birthday is on May 3rd."
+          },
+          {
+            "ru": "Im Juli ist es heiß.",
+            "pt": "It's hot in July."
+          }
+        ],
+        "tabelas": [
+          {
+            "titulo": "Days of the week",
+            "linhas": [
+              {
+                "dia": "Montag",
+                "pt": "Monday",
+                "exemplo": "am Montag"
+              },
+              {
+                "dia": "Dienstag",
+                "pt": "Tuesday",
+                "exemplo": "am Dienstag"
+              },
+              {
+                "dia": "Mittwoch",
+                "pt": "Wednesday",
+                "exemplo": "am Mittwoch"
+              },
+              {
+                "dia": "Donnerstag",
+                "pt": "Thursday",
+                "exemplo": "am Donnerstag"
+              },
+              {
+                "dia": "Freitag",
+                "pt": "Friday",
+                "exemplo": "am Freitag"
+              },
+              {
+                "dia": "Samstag",
+                "pt": "Saturday",
+                "exemplo": "am Samstag"
+              },
+              {
+                "dia": "Sonntag",
+                "pt": "Sunday",
+                "exemplo": "am Sonntag"
+              }
+            ]
+          },
+          {
+            "titulo": "Ordinals for dates",
+            "linhas": [
+              {
+                "numero": "1.",
+                "alemao": "der erste"
+              },
+              {
+                "numero": "2.",
+                "alemao": "der zweite"
+              },
+              {
+                "numero": "3.",
+                "alemao": "der dritte"
+              },
+              {
+                "numero": "4.",
+                "alemao": "der vierte"
+              },
+              {
+                "numero": "5.",
+                "alemao": "der fünfte"
+              },
+              {
+                "numero": "7.",
+                "alemao": "der siebte"
+              },
+              {
+                "numero": "8.",
+                "alemao": "der achte"
+              },
+              {
+                "numero": "10.",
+                "alemao": "der zehnte"
+              },
+              {
+                "numero": "20.",
+                "alemao": "der zwanzigste"
+              },
+              {
+                "numero": "31.",
+                "alemao": "der einunddreißigste"
+              }
+            ]
+          }
+        ],
+        "tag": "Time"
+      },
+      {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "Wie spät ist es?",
+            "translit": "",
+            "pt": "What time is it?",
+            "en": "",
+            "audio": "Wie spät ist es?"
+          },
+          {
+            "ru": "Es ist halb drei.",
+            "translit": "",
+            "pt": "It's half past two.",
+            "en": "",
+            "audio": "Es ist halb drei."
+          },
+          {
+            "ru": "Um wie viel Uhr beginnt der Kurs?",
+            "translit": "",
+            "pt": "What time does the class start?",
+            "en": "",
+            "audio": "Um wie viel Uhr beginnt der Kurs?"
+          },
+          {
+            "ru": "Wann hast du Geburtstag?",
+            "translit": "",
+            "pt": "When's your birthday?",
+            "en": "",
+            "audio": "Wann hast du Geburtstag?"
+          },
+          {
+            "ru": "Am zwölften Mai.",
+            "translit": "",
+            "pt": "On May 12th.",
+            "en": "",
+            "audio": "Am zwölften Mai."
+          },
+          {
+            "ru": "Wie viel kostet das?",
+            "translit": "",
+            "pt": "How much is this?",
+            "en": "",
+            "audio": "Wie viel kostet das?"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "einundzwanzig is",
+            "opcoes": [
+              "12",
+              "21",
+              "121"
+            ],
+            "gabarito": "21",
+            "explicacao": "Einundzwanzig means 21: ein is the ones, und joins the parts and zwanzig is the tens. From 21 to 99, the ones come before the tens.",
+            "id": "de-006-L-101"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "dreißig is",
+            "opcoes": [
+              "13",
+              "30",
+              "33"
+            ],
+            "gabarito": "30",
+            "explicacao": "Dreißig means 30. Don't confuse it with dreizehn, 13: in dreißig, -ßig is the tens ending (like English -ty).",
+            "id": "de-006-L-102"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "halb vier is",
+            "opcoes": [
+              "3:30",
+              "4:30"
+            ],
+            "gabarito": "3:30",
+            "explicacao": "Halb vier means half an hour before four: 3:30. The hour named after halb is the next hour.",
+            "id": "de-006-L-103"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Viertel vor sechs is",
+            "opcoes": [
+              "5:45",
+              "6:15"
+            ],
+            "gabarito": "5:45",
+            "explicacao": "Viertel vor sechs means a quarter to six: 5:45. Vor shows the minutes left until the next hour.",
+            "id": "de-006-L-104"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "der siebte Mai is",
+            "opcoes": [
+              "May 17th",
+              "May 7th"
+            ],
+            "gabarito": "May 7th",
+            "explicacao": "Siebte is the ordinal \"seventh\". Der siebte Mai is May 7th; May 17th would be der siebzehnte Mai.",
+            "id": "de-006-L-105"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "fünfundvierzig is",
+            "opcoes": [
+              "54",
+              "45"
+            ],
+            "gabarito": "45",
+            "explicacao": "Fünfundvierzig means 45: fünf is the ones and vierzig the tens. The ones come before und and the tens.",
+            "id": "de-006-L-106"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Write the numbers out in German: 14 → ___ · 16 → sechzehn · 17 → siebzehn · 32 → zweiunddreißig",
+            "respostaEsperada": "vierzehn",
+            "explicacao": "14 is vierzehn: vier plus zehn, in a single word.",
+            "id": "de-006-L-201a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Write the numbers out in German: 14 → vierzehn · 16 → ___ · 17 → siebzehn · 32 → zweiunddreißig",
+            "respostaEsperada": "sechzehn",
+            "explicacao": "16 is sechzehn. It drops the final s of sechs before zehn.",
+            "id": "de-006-L-201b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Write the numbers out in German: 14 → vierzehn · 16 → sechzehn · 17 → ___ · 32 → zweiunddreißig",
+            "respostaEsperada": "siebzehn",
+            "explicacao": "17 is siebzehn. It uses sieb-, without the en of sieben, before zehn.",
+            "id": "de-006-L-201c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Write the numbers out in German: 14 → vierzehn · 16 → sechzehn · 17 → siebzehn · 32 → ___",
+            "respostaEsperada": "zweiunddreißig",
+            "explicacao": "32 is zweiunddreißig: zwei is the ones, und joins the parts and dreißig is the tens.",
+            "id": "de-006-L-201d"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Write the numbers out in German: 58 → ___ · 99 → neunundneunzig · 125 → hundertfünfundzwanzig · 1000 → tausend",
+            "respostaEsperada": "achtundfünfzig",
+            "explicacao": "58 is achtundfünfzig. The ones, acht, come before und and the tens, fünfzig.",
+            "id": "de-006-L-202a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Write the numbers out in German: 58 → achtundfünfzig · 99 → ___ · 125 → hundertfünfundzwanzig · 1000 → tausend",
+            "respostaEsperada": "neunundneunzig",
+            "explicacao": "99 is neunundneunzig: neun is 9 and neunzig is 90, joined by und.",
+            "id": "de-006-L-202b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Use the forms without an initial ein for 125 and 1000: write the numbers out in German: 58 → achtundfünfzig · 99 → neunundneunzig · 125 → ___ · 1000 → tausend",
+            "respostaEsperada": "hundertfünfundzwanzig",
+            "explicacao": "125 is hundertfünfundzwanzig in the form without ein: hundert plus fünfundzwanzig. Einhundertfünfundzwanzig also exists, but the exercise asks for the form without ein.",
+            "id": "de-006-L-202c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Use the forms without an initial ein for 125 and 1000: write the numbers out in German: 58 → achtundfünfzig · 99 → neunundneunzig · 125 → hundertfünfundzwanzig · 1000 → ___",
+            "respostaEsperada": "tausend",
+            "explicacao": "1000 is tausend in the form asked for, without ein. Eintausend also exists, but it isn't the form asked for here.",
+            "id": "de-006-L-202d"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Fill in with Viertel nach, halb or Viertel vor, depending on the time: 4:15 → Es ist ___ · 6:30 → Es ist halb sieben · 8:45 → Es ist Viertel vor neun",
+            "respostaEsperada": "Viertel nach vier",
+            "explicacao": "4:15 is Viertel nach vier: a quarter past four. The exercise asks for this everyday form, not the official vier Uhr fünfzehn.",
+            "id": "de-006-L-203a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Fill in with Viertel nach, halb or Viertel vor, depending on the time: 4:15 → Es ist Viertel nach vier · 6:30 → Es ist ___ · 8:45 → Es ist Viertel vor neun",
+            "respostaEsperada": "halb sieben",
+            "explicacao": "6:30 is halb sieben: half an hour before seven. The exercise asks for the form with halb.",
+            "id": "de-006-L-203b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Fill in with Viertel nach, halb or Viertel vor, depending on the time: 4:15 → Es ist Viertel nach vier · 6:30 → Es ist halb sieben · 8:45 → Es ist ___",
+            "respostaEsperada": "Viertel vor neun",
+            "explicacao": "8:45 is Viertel vor neun: a quarter to nine. The exercise asks for the form with Viertel vor.",
+            "id": "de-006-L-203c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Use nach for 9:10 and the official format with Uhr for 12:00 and 18:20: 9:10 → Es ist ___ · 12:00 → Es ist zwölf Uhr · 18:20 (official) → Es ist achtzehn Uhr zwanzig",
+            "respostaEsperada": "zehn nach neun",
+            "explicacao": "9:10 is zehn nach neun, with nach: ten past nine.",
+            "id": "de-006-L-204a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Use nach for 9:10 and the official format with Uhr for 12:00 and 18:20: 9:10 → Es ist zehn nach neun · 12:00 → Es ist ___ · 18:20 (official) → Es ist achtzehn Uhr zwanzig",
+            "respostaEsperada": "zwölf Uhr",
+            "explicacao": "12:00 is zwölf Uhr in the official format with Uhr.",
+            "id": "de-006-L-204b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Use nach for 9:10 and the official format with Uhr for 12:00 and 18:20: 9:10 → Es ist zehn nach neun · 12:00 → Es ist zwölf Uhr · 18:20 (official) → Es ist ___",
+            "respostaEsperada": "achtzehn Uhr zwanzig",
+            "explicacao": "18:20 is achtzehn Uhr zwanzig in the official format: the 24-hour clock, Uhr, then the minutes.",
+            "id": "de-006-L-204c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Fill in only the gap after Am with the ordinal and the month, without repeating Am: 1. Januar → Am ___ · 3. Oktober → Am dritten Oktober · 12. Mai → Am zwölften Mai · 24. Dezember → Am vierundzwanzigsten Dezember",
+            "respostaEsperada": "ersten Januar",
+            "explicacao": "After am, the ordinal ends in -en: am ersten Januar (\"on the first of January\"). Erst- is the irregular form of \"first\". Fill in only ersten Januar, since Am is already written.",
+            "id": "de-006-L-205a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Fill in only the gap after Am with the ordinal and the month, without repeating Am: 1. Januar → Am ersten Januar · 3. Oktober → Am ___ · 12. Mai → Am zwölften Mai · 24. Dezember → Am vierundzwanzigsten Dezember",
+            "respostaEsperada": "dritten Oktober",
+            "explicacao": "After am, the ordinal ends in -en: am dritten Oktober. Dritt- is the irregular form of \"third\". Don't repeat Am in the gap.",
+            "id": "de-006-L-205b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Fill in only the gap after Am with the ordinal and the month, without repeating Am: 1. Januar → Am ersten Januar · 3. Oktober → Am dritten Oktober · 12. Mai → Am ___ · 24. Dezember → Am vierundzwanzigsten Dezember",
+            "respostaEsperada": "zwölften Mai",
+            "explicacao": "12th is zwölfte; after am, it's zwölften: am zwölften Mai. The answer is just zwölften Mai, since Am is already before the gap.",
+            "id": "de-006-L-205c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Fill in only the gap after Am with the ordinal and the month, without repeating Am: 1. Januar → Am ersten Januar · 3. Oktober → Am dritten Oktober · 12. Mai → Am zwölften Mai · 24. Dezember → Am ___",
+            "respostaEsperada": "vierundzwanzigsten Dezember",
+            "explicacao": "24th is formed with -st-: vierundzwanzigste. After am, it's vierundzwanzigsten: am vierundzwanzigsten Dezember. Don't repeat Am in the gap.",
+            "id": "de-006-L-205d"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Say today's date and your birthday in German."
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Say the time on 5 imaginary clocks, morning and afternoon."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-006.json",
+  "responsavel": null
+}

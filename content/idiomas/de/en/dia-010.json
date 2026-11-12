@@ -1,0 +1,207 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 10,
+  "fase": 1,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Nouns and articles: The plural",
+  "objetivo": "Lesson 3, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 3,
+    "titulo": "Nouns and articles",
+    "objetivo": "Use der, die, das and ein/eine/kein, capitalize nouns and form the most common plurals.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "The plural",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Work it out yourself",
+        "explicacao": "STEP 1: look at the endings of the words in each group. STEP 2: Group A: die Zeitung, die Wohnung, die Gesundheit, die Möglichkeit, die Freundschaft, die Information. STEP 3: Group B: das Mädchen, das Brötchen, das Büchlein, das Instrument. STEP 4: Group C: der Lehrer, der Computer, der Frühling, der Montag, der Dezember. STEP 5: which endings mark group A and group B? What does group C have in common, besides the ending? STEP 6: now look at the plurals:",
+        "tabela": [
+          {
+            "singular": "der Tag",
+            "plural": "die Tage"
+          },
+          {
+            "singular": "die Stadt",
+            "plural": "die Städte"
+          },
+          {
+            "singular": "das Kind",
+            "plural": "die Kinder"
+          },
+          {
+            "singular": "das Haus",
+            "plural": "die Häuser"
+          },
+          {
+            "singular": "die Frau",
+            "plural": "die Frauen"
+          },
+          {
+            "singular": "die Schule",
+            "plural": "die Schulen"
+          },
+          {
+            "singular": "der Lehrer",
+            "plural": "die Lehrer"
+          },
+          {
+            "singular": "das Auto",
+            "plural": "die Autos"
+          }
+        ],
+        "tag": "Discover"
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Plurals: five patterns",
+        "explicacao": "German plurals come in five patterns: -e (der Tisch → die Tische), -(e)n (die Lampe → die Lampen), -er (das Buch → die Bücher), no ending (der Lehrer → die Lehrer) and -s (das Auto → die Autos, common in foreign words). Many words also add an umlaut to the vowel (a → ä, o → ö, u → ü) — just like English man → men, foot → feet, mouse → mice, which are leftovers of the same old Germanic rule. There's no safe rule: learn the plural with the noun. The plural definite article is always «die», for all three genders.",
+        "comparacao": "The English reflex is to add -s. In German, -s is the rarest pattern (mostly foreign words: Autos, Hotels). English already has the German patterns in its oldest words: child → children is the German -er (Kind → Kinder), ox → oxen is -en, man → men is the umlaut (Mann → Männer).",
+        "tabela": [
+          {
+            "tipo": "-e",
+            "singular": "der Tisch",
+            "plural": "die Tische"
+          },
+          {
+            "tipo": "-e + umlaut",
+            "singular": "der Stuhl",
+            "plural": "die Stühle"
+          },
+          {
+            "tipo": "-n / -en",
+            "singular": "die Lampe",
+            "plural": "die Lampen"
+          },
+          {
+            "tipo": "-n / -en",
+            "singular": "die Frau",
+            "plural": "die Frauen"
+          },
+          {
+            "tipo": "-er",
+            "singular": "das Kind",
+            "plural": "die Kinder"
+          },
+          {
+            "tipo": "-er + umlaut",
+            "singular": "das Buch / das Haus",
+            "plural": "die Bücher / die Häuser"
+          },
+          {
+            "tipo": "no ending",
+            "singular": "der Lehrer / das Fenster",
+            "plural": "die Lehrer / die Fenster"
+          },
+          {
+            "tipo": "no ending + umlaut",
+            "singular": "der Vater / die Mutter",
+            "plural": "die Väter / die Mütter"
+          },
+          {
+            "tipo": "-s",
+            "singular": "das Auto / das Hotel",
+            "plural": "die Autos / die Hotels"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "die Tischen",
+            "certo": "die Tische",
+            "motivo": "«Tisch» takes -e in the plural, not -en."
+          },
+          {
+            "errado": "die Kinders",
+            "certo": "die Kinder",
+            "motivo": "Kind → Kinder (no -s, just like children)."
+          }
+        ],
+        "tag": "Nouns"
+      },
+      {
+        "tipo": "palavras",
+        "min": 7,
+        "itens": [
+          {
+            "ru": "das Auto",
+            "translit": "dahs OW-toh",
+            "pt": "car",
+            "en": "car",
+            "audio": "das Auto"
+          },
+          {
+            "ru": "das Hotel",
+            "translit": "dahs ho-TEL",
+            "pt": "hotel",
+            "en": "hotel",
+            "audio": "das Hotel"
+          },
+          {
+            "ru": "die Mutter",
+            "translit": "dee MOO-ter",
+            "pt": "mother",
+            "en": "mother",
+            "audio": "die Mutter"
+          },
+          {
+            "ru": "der Vater",
+            "translit": "dehr FAH-ter",
+            "pt": "father",
+            "en": "father",
+            "audio": "der Vater"
+          },
+          {
+            "ru": "der Bruder",
+            "translit": "dehr BROO-der",
+            "pt": "brother",
+            "en": "brother",
+            "audio": "der Bruder"
+          },
+          {
+            "ru": "die Schwester",
+            "translit": "dee SHVES-ter",
+            "pt": "sister",
+            "en": "sister",
+            "audio": "die Schwester"
+          },
+          {
+            "ru": "der Freund",
+            "translit": "dehr FROYNT",
+            "pt": "friend (male)",
+            "en": "friend",
+            "audio": "der Freund"
+          },
+          {
+            "ru": "die Freundin",
+            "translit": "dee FROYN-din",
+            "pt": "friend (female)",
+            "en": "friend (f)",
+            "audio": "die Freundin"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 4,
+        "enunciado": "Say the plural of: «der Tisch, die Lampe, das Kind, das Buch, das Auto, der Vater»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Write the article (der, die or das) of 6 words from the last session."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-003.json",
+  "responsavel": null
+}

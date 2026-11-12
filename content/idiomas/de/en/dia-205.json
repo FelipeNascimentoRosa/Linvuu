@@ -1,0 +1,170 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 205,
+  "fase": 21,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Plusquamperfekt: nachdem and bevor: The Plusquamperfekt",
+  "objetivo": "Lesson 52, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 52,
+    "titulo": "Plusquamperfekt: nachdem and bevor",
+    "objetivo": "Form the Plusquamperfekt (hatte/war + Partizip II), use it for a past that came before another past, and combine it with nachdem and bevor.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "The Plusquamperfekt",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "vorher",
+            "translit": "FOR-hair",
+            "pt": "before, beforehand",
+            "en": "before",
+            "audio": "vorher"
+          },
+          {
+            "ru": "nachher",
+            "translit": "NAHKH-hair",
+            "pt": "afterwards, later",
+            "en": "afterwards",
+            "audio": "nachher"
+          },
+          {
+            "ru": "danach",
+            "translit": "DAH-nahkh",
+            "pt": "after that",
+            "en": "after that",
+            "audio": "danach"
+          },
+          {
+            "ru": "davor",
+            "translit": "DAH-for",
+            "pt": "before that",
+            "en": "before that",
+            "audio": "davor"
+          },
+          {
+            "ru": "zuerst",
+            "translit": "tsoo-AIRST",
+            "pt": "first",
+            "en": "first",
+            "audio": "zuerst"
+          },
+          {
+            "ru": "zuletzt",
+            "translit": "tsoo-LETST",
+            "pt": "last, finally",
+            "en": "last",
+            "audio": "zuletzt"
+          },
+          {
+            "ru": "schon",
+            "translit": "SHOHN",
+            "pt": "already",
+            "en": "already",
+            "audio": "schon"
+          },
+          {
+            "ru": "bereits",
+            "translit": "beh-RITES",
+            "pt": "already (more formal)",
+            "en": "already",
+            "audio": "bereits"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "The Plusquamperfekt, step by step",
+        "explicacao": "STEP 1: the PLUSQUAMPERFEKT is the \"past of the past\": it tells something that happened BEFORE another past event — the English past perfect (\"I had eaten\"). STEP 2: form: Präteritum of «haben» or «sein» (hatte / war) + Partizip II at the end: «Ich hatte gegessen» (I had eaten), «Er war gegangen» (he had left). STEP 3: the choice of haben/sein is the same as in the Perfekt: «ich hatte gearbeitet», «ich war gefahren». English always uses \"had\"; German uses «war» with verbs of movement and change: «er war gegangen». STEP 4: conjugate: ich hatte / war, du hattest / warst, er hatte / war, wir hatten / waren, ihr hattet / wart, sie hatten / waren. STEP 5: helpful words: schon, bereits, vorher, davor, zuerst: «Als ich ankam, hatte der Film schon begonnen» (when I arrived, the movie had already started).",
+        "comparacao": "English has the same tense: \"I had eaten\" = «Ich hatte gegessen». Two differences: German uses «war» instead of \"had\" with movement verbs («er war gegangen» = he had gone), and the participle goes to the end.",
+        "exemplos": [
+          {
+            "ru": "Als ich ankam, hatte der Film schon begonnen.",
+            "pt": "When I arrived, the movie had already started."
+          },
+          {
+            "ru": "Ich hatte nichts gegessen und war sehr müde.",
+            "pt": "I hadn't eaten anything and I was very tired."
+          },
+          {
+            "ru": "Er war schon gegangen, als ich kam.",
+            "pt": "He had already left when I arrived."
+          }
+        ],
+        "tabela": [
+          {
+            "pronome": "ich",
+            "haben": "hatte gegessen",
+            "sein": "war gegangen"
+          },
+          {
+            "pronome": "du",
+            "haben": "hattest gegessen",
+            "sein": "warst gegangen"
+          },
+          {
+            "pronome": "er / sie / es",
+            "haben": "hatte gegessen",
+            "sein": "war gegangen"
+          },
+          {
+            "pronome": "wir",
+            "haben": "hatten gegessen",
+            "sein": "waren gegangen"
+          },
+          {
+            "pronome": "ihr",
+            "haben": "hattet gegessen",
+            "sein": "wart gegangen"
+          },
+          {
+            "pronome": "sie / Sie",
+            "haben": "hatten gegessen",
+            "sein": "waren gegangen"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich habe gegessen gehabt.",
+            "certo": "Ich hatte gegessen.",
+            "motivo": "Plusquamperfekt: hatte + Partizip II."
+          },
+          {
+            "errado": "Er hatte gegangen.",
+            "certo": "Er war gegangen.",
+            "motivo": "«gehen» uses «sein»."
+          },
+          {
+            "errado": "Als ich ankam, der Film hatte schon begonnen.",
+            "certo": "Als ich ankam, hatte der Film schon begonnen.",
+            "motivo": "Main clause after the subordinate clause: verb first."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Tell 6 things you had already done before a moment in the past: «Als ich ankam, hatte … schon …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 sentences in the passive in the Präteritum and the Perfekt."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-052.json",
+  "responsavel": null
+}

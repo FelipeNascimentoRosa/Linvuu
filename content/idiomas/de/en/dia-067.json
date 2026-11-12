@@ -1,0 +1,184 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 67,
+  "fase": 7,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Home and housing: es gibt: The ad and the viewing",
+  "objetivo": "Lesson 17, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 17,
+    "titulo": "Home and housing: es gibt",
+    "objetivo": "Name the rooms and furniture, say what there is with «es gibt» and «haben», describe a home (size, rent) and understand an apartment ad.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "The ad and the viewing",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "die Anzeige",
+            "translit": "dee AHN-tsy-geh",
+            "pt": "ad, listing",
+            "en": "advert",
+            "audio": "die Anzeige"
+          },
+          {
+            "ru": "mieten",
+            "translit": "MEE-ten",
+            "pt": "to rent",
+            "en": "to rent",
+            "audio": "mieten"
+          },
+          {
+            "ru": "ab sofort",
+            "translit": "ahp zo-FORT",
+            "pt": "available now",
+            "en": "immediately",
+            "audio": "ab sofort"
+          },
+          {
+            "ru": "die Nebenkosten",
+            "translit": "dee NEH-ben-kos-ten",
+            "pt": "extra costs (utilities, building fees)",
+            "en": "additional costs",
+            "audio": "die Nebenkosten"
+          },
+          {
+            "ru": "besichtigen",
+            "translit": "beh-ZIKH-ti-gen",
+            "pt": "to view (a property)",
+            "en": "to view",
+            "audio": "besichtigen"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Reading a rental ad",
+        "explicacao": "Ads are short and full of abbreviations. Learn the most common ones: «Zi.» or «-Zimmer-Wohnung» (rooms), «m²» (square meters, «Quadratmeter»), «€ / Monat» (euros per month), «NK» or «Nebenkosten» (extra costs: heating, water, trash, building fees), «ab sofort» (available now), «Balkon», «Bad», «Kü.» (kitchen). Sample ad (original): «Schöne 2-Zimmer-Wohnung, 55 m², Küche, Bad, Balkon. Miete 600 € im Monat plus Nebenkosten. Ab sofort frei.» In English: \"Nice 2-room apartment (1 bedroom + living room), 55 m², kitchen, bathroom, balcony. Rent €600 a month plus utilities. Available now.\"",
+        "tabela": [
+          {
+            "sigla": "2-Zi.-Whg.",
+            "significado": "2-room apartment: 1 bedroom + living room (Zimmer-Wohnung)"
+          },
+          {
+            "sigla": "55 m²",
+            "significado": "55 metros quadrados (fünfundfünfzig Quadratmeter)"
+          },
+          {
+            "sigla": "600 € / Monat",
+            "significado": "600 euros a month"
+          },
+          {
+            "sigla": "NK / Nebenkosten",
+            "significado": "extra costs: heating, water, trash, building fees"
+          },
+          {
+            "sigla": "ab sofort",
+            "significado": "available now"
+          },
+          {
+            "sigla": "Kü., Bad, Balkon",
+            "significado": "kitchen, bathroom, balcony"
+          }
+        ],
+        "tag": "Time"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 10,
+        "titulo": "Eine Wohnung besichtigen / Viewing an apartment",
+        "contexto": "An applicant calls a landlord.",
+        "linhas": [
+          {
+            "personagem": "Mia",
+            "ru": "— Guten Tag! Ich suche eine Wohnung. Haben Sie noch eine Wohnung frei?",
+            "pt": "— Good morning! I'm looking for an apartment. Do you still have one available?",
+            "audio": "Guten Tag! Ich suche eine Wohnung. Haben Sie noch eine Wohnung frei?",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Vermieter",
+            "ru": "— Ja, ich habe eine Zwei-Zimmer-Wohnung. Sie hat eine Küche, ein Bad und einen Balkon.",
+            "pt": "— Yes, I have a two-room apartment. It has a kitchen, a bathroom and a balcony.",
+            "audio": "Ja, ich habe eine Zwei-Zimmer-Wohnung. Sie hat eine Küche, ein Bad und einen Balkon.",
+            "rotulo": "Vermieter"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Wie groß ist die Wohnung?",
+            "pt": "— How big is the apartment?",
+            "audio": "Wie groß ist die Wohnung?",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Vermieter",
+            "ru": "— Sie hat fünfundfünfzig Quadratmeter.",
+            "pt": "— It's fifty-five square meters.",
+            "audio": "Sie hat fünfundfünfzig Quadratmeter.",
+            "rotulo": "Vermieter"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Und was kostet die Miete?",
+            "pt": "— And how much is the rent?",
+            "audio": "Und was kostet die Miete?",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Vermieter",
+            "ru": "— Sechshundert Euro im Monat, plus Nebenkosten.",
+            "pt": "— Six hundred euros a month, plus utilities.",
+            "audio": "Sechshundert Euro im Monat, plus Nebenkosten.",
+            "rotulo": "Vermieter"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Gibt es einen Garten?",
+            "pt": "— Is there a garden?",
+            "audio": "Gibt es einen Garten?",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Vermieter",
+            "ru": "— Nein, einen Garten gibt es nicht, aber es gibt einen Balkon.",
+            "pt": "— No, there's no garden, but there's a balcony.",
+            "audio": "Nein, einen Garten gibt es nicht, aber es gibt einen Balkon.",
+            "rotulo": "Vermieter"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Kann ich die Wohnung sehen?",
+            "pt": "— Can I see the apartment?",
+            "audio": "Kann ich die Wohnung sehen?",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Vermieter",
+            "ru": "— Natürlich. Kommen Sie morgen um zehn Uhr.",
+            "pt": "— Of course. Come tomorrow at ten.",
+            "audio": "Natürlich. Kommen Sie morgen um zehn Uhr.",
+            "rotulo": "Vermieter"
+          }
+        ]
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write a sentence for each pair: im / ins, in der / in die, im / in den."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-017.json",
+  "responsavel": null
+}

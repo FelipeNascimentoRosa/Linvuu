@@ -1,0 +1,148 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 175,
+  "fase": 18,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Work, forms and formal e-mails: Forms and ads",
+  "objetivo": "Lesson 44, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 44,
+    "titulo": "Work, forms and formal e-mails",
+    "objetivo": "Write formal and informal e-mails (greeting, subject, request, apology, closing), fill in forms, and understand job and course ads, at A2 writing level.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Forms and ads",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Filling in forms and reading ads",
+        "explicacao": "STEP 1: forms ask for: Vorname (first name), Nachname (last name), Geburtsdatum (date of birth), Geburtsort (place of birth), Staatsangehörigkeit (nationality), Adresse (address), Telefonnummer, E-Mail-Adresse, Beruf (occupation). STEP 2: a German address: street THEN number («Hauptstraße 12»), then postal code and city («10115 Berlin»). STEP 3: dates are day.month.year («05.10.1990» = October 5, 1990 — not May 10, as an American reader might think!). STEP 4: in job ads, look for: «Wir suchen» (we're looking for), «Sie haben» (you have — the requirements), «Wir bieten» (we offer), «Bewerbung an» (send your application to). STEP 5: in course ads: «Kursbeginn» (course start), «Dauer» (length), «Preis» (price), «Anmeldung» (registration).",
+        "tabela": [
+          {
+            "campo": "Vorname / Nachname",
+            "pt": "first name / last name"
+          },
+          {
+            "campo": "Geburtsdatum",
+            "pt": "date of birth (05.10.1990 = October 5, 1990)"
+          },
+          {
+            "campo": "Staatsangehörigkeit",
+            "pt": "nationality"
+          },
+          {
+            "campo": "Adresse",
+            "pt": "address (Hauptstraße 12, 10115 Berlin)"
+          },
+          {
+            "campo": "Wir suchen … / Wir bieten …",
+            "pt": "we're looking for … / we offer …"
+          },
+          {
+            "campo": "Kursbeginn / Dauer / Preis",
+            "pt": "start / length / price"
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 10,
+        "titulo": "Eine Anmeldung / Signing up",
+        "contexto": "A student signs up for a course by phone.",
+        "linhas": [
+          {
+            "personagem": "Sekretärin",
+            "ru": "— Sprachschule Berlin, guten Tag!",
+            "pt": "— Language School Berlin, good morning!",
+            "audio": "Sprachschule Berlin, guten Tag!",
+            "rotulo": "Sekretärin"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Guten Tag! Ich möchte mich für den Deutschkurs anmelden.",
+            "pt": "— Good morning! I'd like to sign up for the German course.",
+            "audio": "Guten Tag! Ich möchte mich für den Deutschkurs anmelden.",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Sekretärin",
+            "ru": "— Gern. Wie ist Ihr Name, bitte?",
+            "pt": "— Certainly. What's your name, please?",
+            "audio": "Gern. Wie ist Ihr Name, bitte?",
+            "rotulo": "Sekretärin"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Tom Weber. Ich schreibe: W-E-B-E-R.",
+            "pt": "— Tom Weber. I'll spell it: W-E-B-E-R.",
+            "audio": "Tom Weber. Ich schreibe: W-E-B-E-R.",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Sekretärin",
+            "ru": "— Und Ihre Adresse?",
+            "pt": "— And your address?",
+            "audio": "Und Ihre Adresse?",
+            "rotulo": "Sekretärin"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Hauptstraße 12, 10115 Berlin.",
+            "pt": "— Hauptstraße 12, 10115 Berlin.",
+            "audio": "Hauptstraße 12, 10115 Berlin.",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Sekretärin",
+            "ru": "— Der Kurs beginnt am ersten Montag im Oktober. Die Dauer ist drei Monate.",
+            "pt": "— The course starts on the first Monday in October. It lasts three months.",
+            "audio": "Der Kurs beginnt am ersten Montag im Oktober. Die Dauer ist drei Monate.",
+            "rotulo": "Sekretärin"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Was kostet der Kurs?",
+            "pt": "— How much does the course cost?",
+            "audio": "Was kostet der Kurs?",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Sekretärin",
+            "ru": "— Er kostet vierhundert Euro. Schicken Sie uns bitte die Anmeldung per E-Mail.",
+            "pt": "— It costs four hundred euros. Please send us the registration by e-mail.",
+            "audio": "Er kostet vierhundert Euro. Schicken Sie uns bitte die Anmeldung per E-Mail.",
+            "rotulo": "Sekretärin"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Vielen Dank! Ich schicke sie heute noch.",
+            "pt": "— Thank you very much! I'll send it today.",
+            "audio": "Vielen Dank! Ich schicke sie heute noch.",
+            "rotulo": "Tom"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Fill in a form with your details out loud, in German, and sign up for a course by phone."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write a short 5-line e-mail asking for information about a course."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-044.json",
+  "responsavel": null
+}

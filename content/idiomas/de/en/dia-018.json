@@ -1,0 +1,192 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 18,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Family, haben and possessives: Possessives",
+  "objetivo": "Lesson 5, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 5,
+    "titulo": "Family, haben and possessives",
+    "objetivo": "Talk about your family with «haben», use the accusative for the direct object, the possessives, and say your age with numbers 0 to 20.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Possessives",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Work it out yourself",
+        "explicacao": "STEP 1: look at the endings of mein. STEP 2: now look at the owner. STEP 3: Tom und seine Mutter. Lena und ihr Vater. STEP 4: Camila und ihr Bruder. STEP 5: Questions: STEP 6: which words you already know do the endings of mein remind you of? STEP 7: what decides between sein and ihr? STEP 8: what decides between seine and sein?",
+        "tabela": [
+          {
+            "caso": "Nominative",
+            "masculino": "Das ist mein Bruder.",
+            "feminino": "Das ist meine Schwester.",
+            "neutro": "Das ist mein Kind.",
+            "plural": "Das sind meine Eltern."
+          },
+          {
+            "caso": "Accusative",
+            "masculino": "Ich sehe meinen Bruder.",
+            "feminino": "Ich sehe meine Schwester.",
+            "neutro": "Ich sehe mein Kind.",
+            "plural": "Ich sehe meine Eltern."
+          },
+          {
+            "caso": "Dative",
+            "masculino": "Ich helfe meinem Bruder.",
+            "feminino": "Ich helfe meiner Schwester.",
+            "neutro": "Ich helfe meinem Kind.",
+            "plural": "Ich helfe meinen Eltern."
+          }
+        ],
+        "tag": "Discover"
+      },
+      {
+        "tipo": "palavras",
+        "min": 7,
+        "itens": [
+          {
+            "ru": "alt",
+            "translit": "AHLT",
+            "pt": "old",
+            "en": "old",
+            "audio": "alt"
+          },
+          {
+            "ru": "jung",
+            "translit": "YOONG",
+            "pt": "young",
+            "en": "young",
+            "audio": "jung"
+          },
+          {
+            "ru": "groß",
+            "translit": "GROHS",
+            "pt": "big, tall",
+            "en": "big, tall",
+            "audio": "groß"
+          },
+          {
+            "ru": "klein",
+            "translit": "KLINE",
+            "pt": "small",
+            "en": "small",
+            "audio": "klein"
+          },
+          {
+            "ru": "nett",
+            "translit": "NET",
+            "pt": "nice",
+            "en": "nice",
+            "audio": "nett"
+          },
+          {
+            "ru": "lustig",
+            "translit": "LOOS-tikh",
+            "pt": "funny",
+            "en": "funny",
+            "audio": "lustig"
+          },
+          {
+            "ru": "verheiratet",
+            "translit": "fehr-HY-rah-tet",
+            "pt": "married",
+            "en": "married",
+            "audio": "verheiratet"
+          },
+          {
+            "ru": "ledig",
+            "translit": "LEH-dikh",
+            "pt": "single",
+            "en": "single",
+            "audio": "ledig"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Mein, dein, sein…: possessives",
+        "explicacao": "Possessives agree with the THING owned (gender and number), in their ending: «mein Vater», «meine Mutter», «mein Kind», «meine Eltern». They take the same endings as «ein»: no ending for masculine and neuter, -e for feminine and plural. The stem comes from the owner, as in English: «sein» = his (or its), «ihr» = her (and their); «Ihr», capitalized, is the formal \"your\". Careful: «unser» and «euer» lose the inner -e- before an ending: unsere, eure.",
+        "tabela": [
+          {
+            "pronome": "ich",
+            "possessivo": "mein",
+            "masc_neutro": "mein Vater / mein Kind",
+            "fem_plural": "meine Mutter / meine Eltern"
+          },
+          {
+            "pronome": "du",
+            "possessivo": "dein",
+            "masc_neutro": "dein Vater / dein Kind",
+            "fem_plural": "deine Mutter / deine Eltern"
+          },
+          {
+            "pronome": "er",
+            "possessivo": "sein",
+            "masc_neutro": "sein Vater / sein Kind",
+            "fem_plural": "seine Mutter / seine Eltern"
+          },
+          {
+            "pronome": "sie",
+            "possessivo": "ihr",
+            "masc_neutro": "ihr Vater / ihr Kind",
+            "fem_plural": "ihre Mutter / ihre Eltern"
+          },
+          {
+            "pronome": "wir",
+            "possessivo": "unser",
+            "masc_neutro": "unser Vater / unser Kind",
+            "fem_plural": "unsere Mutter / unsere Eltern"
+          },
+          {
+            "pronome": "ihr",
+            "possessivo": "euer",
+            "masc_neutro": "euer Vater / euer Kind",
+            "fem_plural": "eure Mutter / eure Eltern"
+          },
+          {
+            "pronome": "sie / Sie",
+            "possessivo": "ihr / Ihr",
+            "masc_neutro": "ihr Vater / Ihr Vater",
+            "fem_plural": "ihre Mutter / Ihre Mutter"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "mein Mutter",
+            "certo": "meine Mutter",
+            "motivo": "«Mutter» is feminine: meine."
+          },
+          {
+            "errado": "seine Mutter (her mother)",
+            "certo": "ihre Mutter",
+            "motivo": "«sein» = his; «ihr» = her — exactly as in English."
+          }
+        ],
+        "tag": "Adjectives and possessives"
+      },
+      {
+        "tipo": "producao",
+        "min": 4,
+        "enunciado": "Say: «Das ist mein Vater. Das ist meine Mutter. Das sind meine Eltern. Mein Bruder ist jung.»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Write the 6 forms of «haben» from memory."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-005.json",
+  "responsavel": null
+}

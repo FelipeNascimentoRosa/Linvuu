@@ -1,0 +1,156 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 45,
+  "fase": 5,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Müssen, wollen and dürfen: obligation, wish and permission: Müssen: have to",
+  "objetivo": "Lesson 12, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 12,
+    "titulo": "Müssen, wollen and dürfen: obligation, wish and permission",
+    "objetivo": "Use «müssen» (have to), «wollen» (want to) and «dürfen» (be allowed to), and read the most common signs — always with the sentence bracket.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Müssen: have to",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "der Termin",
+            "translit": "dehr tehr-MEEN",
+            "pt": "appointment",
+            "en": "appointment",
+            "audio": "der Termin"
+          },
+          {
+            "ru": "die Hausaufgabe",
+            "translit": "dee HOWSS-owf-gah-beh",
+            "pt": "homework",
+            "en": "homework",
+            "audio": "die Hausaufgabe"
+          },
+          {
+            "ru": "pünktlich",
+            "translit": "POONKT-likh",
+            "pt": "punctual, on time",
+            "en": "punctual",
+            "audio": "pünktlich"
+          },
+          {
+            "ru": "früh",
+            "translit": "FRÜ",
+            "pt": "early",
+            "en": "early",
+            "audio": "früh"
+          },
+          {
+            "ru": "spät",
+            "translit": "SHPEHT",
+            "pt": "late",
+            "en": "late",
+            "audio": "spät"
+          },
+          {
+            "ru": "sofort",
+            "translit": "zo-FORT",
+            "pt": "immediately",
+            "en": "immediately",
+            "audio": "sofort"
+          },
+          {
+            "ru": "heute Abend",
+            "translit": "HOY-teh AH-bent",
+            "pt": "this evening, tonight",
+            "en": "tonight",
+            "audio": "heute Abend"
+          },
+          {
+            "ru": "viel",
+            "translit": "FEEL",
+            "pt": "a lot, much",
+            "en": "a lot",
+            "audio": "viel"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "Müssen: obligation and necessity, step by step",
+        "explicacao": "STEP 1: «müssen» expresses what you HAVE TO do (obligation or necessity): «Ich muss arbeiten» = I have to work / I must work — \"must\" is its English cousin. STEP 2: conjugate: ich muss, du musst, er muss, wir müssen, ihr müsst, sie müssen. The «ü» disappears in the singular and, as with «können», «ich» and «er» are the same, with no -t. STEP 3: the second verb goes to the END, in the infinitive: «Du musst pünktlich sein.» STEP 4: question: «Muss ich heute arbeiten?» STEP 5: a separable verb stays WHOLE at the end: «Ich muss um sieben Uhr aufstehen.» English needs \"have to\" (two words plus \"to\"); German has one modal and no \"to\".",
+        "comparacao": "English says \"I have to work\" or \"I must work\". German only has the second pattern: «Ich muss arbeiten», with the infinitive at the end of the sentence. And remember the trap from lesson 11: «Ich muss nicht» means \"I don't have to\", not \"I mustn't\".",
+        "tabela": [
+          {
+            "pronome": "ich",
+            "müssen": "muss",
+            "exemplo": "Ich muss arbeiten."
+          },
+          {
+            "pronome": "du",
+            "müssen": "musst",
+            "exemplo": "Du musst pünktlich sein."
+          },
+          {
+            "pronome": "er / sie / es",
+            "müssen": "muss",
+            "exemplo": "Er muss früh aufstehen."
+          },
+          {
+            "pronome": "wir",
+            "müssen": "müssen",
+            "exemplo": "Wir müssen einkaufen."
+          },
+          {
+            "pronome": "ihr",
+            "müssen": "müsst",
+            "exemplo": "Ihr müsst Hausaufgaben machen."
+          },
+          {
+            "pronome": "sie / Sie",
+            "müssen": "müssen",
+            "exemplo": "Müssen Sie heute arbeiten?"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich müssen arbeiten.",
+            "certo": "Ich muss arbeiten.",
+            "motivo": "«ich» takes «muss»."
+          },
+          {
+            "errado": "Er musst früh aufstehen.",
+            "certo": "Er muss früh aufstehen.",
+            "motivo": "With «er», no -st and no -t."
+          },
+          {
+            "errado": "Ich muss aufstehe um sieben Uhr.",
+            "certo": "Ich muss um sieben Uhr aufstehen.",
+            "motivo": "The whole infinitive goes to the end."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Say 5 things you have to do today: «Ich muss …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write the 6 forms of «können» and one sentence with each."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-012.json",
+  "responsavel": null
+}

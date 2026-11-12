@@ -34,8 +34,8 @@ Regras de domínio em `server/dominio.ts` (301): www→apex; `/en`/`/es` de inte
 | Plataformas | `src/plataforma/website` × `src/plataforma/apk` (alias `@plataforma`; build falha se checkout vazar p/ o APK) |
 
 ## Estado real do catálogo (medido em 11/11/2026 — confira antes de afirmar)
-Sessões com explicação por interface: **RU 312/312 · FR 248/248 · PT→EN (curso BR) 248 · ES-EN 120/248 · DE-EN 4/288 · IT-EN 0/248 · EN (no .br) 248/248.**
-Regra `explicacaoCompleta` (`metaRota.ts`): curso só ganha página indexável/hreflang num idioma quando **todas** as aulas estão explicadas nele. Por isso o sitemap do .com tem 15 URLs e o do .com.br 39 — **é intencional, não é bug**. Não "corrija" sitemap/índice para expor curso parcial sem ordem do Felipe.
+Sessões com explicação por interface: **RU 312/312 · FR 248/248 · PT→EN (curso BR) 248 · ES-EN 128/248 · DE-EN 288/288 (12/11) · IT-EN 0/248 · EN (no .br) 248/248.**
+Regra `explicacaoCompleta` (`metaRota.ts`): curso só ganha página indexável/hreflang num idioma quando **todas** as aulas estão explicadas nele. Por isso o sitemap do .com tem 20 URLs e o do .com.br 42 (12/11, após o alemão completo) — **é intencional, não é bug**. Não "corrija" sitemap/índice para expor curso parcial sem ordem do Felipe.
 
 ## ARMADILHAS (não repetir)
 1. **Checkout mensal USD** depende de `STRIPE_PRICE_ID_USD` no ambiente do Render (o anual USD usa `price_data` inline e funciona sem ela). Se o mensal .com quebrar, cheque `/readyz` e o ambiente **antes** de mexer em código. O `render.yaml` não declara essa variável — a ausência lá não prova ausência no painel. **Configuração TESTADA (11/11/2026): a variável está cadastrada no painel do Render e o valor confere exatamente com o preço mensal USD da conta live da Stripe (US$ 19,99/mês), conferência feita nos dois painéis; declaração registrada a pedido do Felipe. A compra real de ponta a ponta segue sendo o lote 3 do plano-mestre.**

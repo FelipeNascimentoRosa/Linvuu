@@ -1,0 +1,173 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 82,
+  "fase": 9,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Perfekt 1: the past with haben (regular verbs): When the Partizip II has no «ge-»",
+  "objetivo": "Lesson 21, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 21,
+    "titulo": "Perfekt 1: the past with haben (regular verbs)",
+    "objetivo": "Tell what happened using the Perfekt of regular verbs: haben + Partizip II (ge-…-t), including the forms without «ge-» (-ieren, be-, er-, ver-, ent-) and separable verbs.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "When the Partizip II has no «ge-»",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Work it out yourself",
+        "explicacao": "STEP 1: look at the sentences. STEP 2: Questions: STEP 3: where are haben and sein in the sentence? And the participle? STEP 4: almost all participles start with ge-. In which sentences is the ge- \"hidden\"? Where does it show up? STEP 5: in sentences 4 and 5, which verbs take sein? What do aufstehen and kommen have in common? Compare gekocht and getrunken. Which ends in -t and which in -en?",
+        "tabela": [],
+        "tag": "Discover"
+      },
+      {
+        "tipo": "palavras",
+        "min": 7,
+        "itens": [
+          {
+            "ru": "studieren",
+            "translit": "shtoo-DEE-ren",
+            "pt": "to study (at university), major in",
+            "en": "to study",
+            "audio": "studieren"
+          },
+          {
+            "ru": "besuchen",
+            "translit": "beh-ZOO-khen",
+            "pt": "to visit",
+            "en": "to visit",
+            "audio": "besuchen"
+          },
+          {
+            "ru": "bestellen",
+            "translit": "beh-SHTEL-en",
+            "pt": "to order (at a restaurant)",
+            "en": "to order",
+            "audio": "bestellen"
+          },
+          {
+            "ru": "bezahlen",
+            "translit": "beh-TSAH-len",
+            "pt": "to pay",
+            "en": "to pay",
+            "audio": "bezahlen"
+          },
+          {
+            "ru": "verkaufen",
+            "translit": "fehr-KOW-fen",
+            "pt": "to sell",
+            "en": "to sell",
+            "audio": "verkaufen"
+          },
+          {
+            "ru": "erklären",
+            "translit": "ehr-KLEH-ren",
+            "pt": "to explain",
+            "en": "to explain",
+            "audio": "erklären"
+          },
+          {
+            "ru": "telefonieren",
+            "translit": "teh-leh-foh-NEE-ren",
+            "pt": "to phone, call",
+            "en": "to phone",
+            "audio": "telefonieren"
+          },
+          {
+            "ru": "reparieren",
+            "translit": "reh-pah-REE-ren",
+            "pt": "to repair, fix",
+            "en": "to repair",
+            "audio": "reparieren"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Special cases of the regular Partizip II",
+        "explicacao": "STEP 1: if the stem ends in -t or -d, the participle takes «-et» to stay pronounceable — just like English \"waited\", \"needed\": arbeiten → gearbeitet; warten → gewartet. STEP 2: verbs in «-ieren» take NO «ge-»: studieren → studiert; telefonieren → telefoniert; reparieren → repariert. These are mostly borrowed words you'll recognize (studieren, reparieren, informieren). STEP 3: verbs with an INSEPARABLE prefix (be-, ge-, er-, ver-, ent-, emp-, zer-) take NO «ge-» either: besuchen → besucht; bezahlen → bezahlt; verkaufen → verkauft; erklären → erklärt. STEP 4: rule of thumb: if the verb starts with be-, er-, ver-, ent- or ge-, or ends in -ieren, its participle has no «ge-». (The FSI's tip: «ge-» only goes on a verb whose FIRST syllable is stressed.)",
+        "tabela": [
+          {
+            "regra": "stem in -t / -d",
+            "infinitivo": "arbeiten",
+            "participio": "gearbeitet"
+          },
+          {
+            "regra": "stem in -t / -d",
+            "infinitivo": "warten",
+            "participio": "gewartet"
+          },
+          {
+            "regra": "-ieren: no ge-",
+            "infinitivo": "studieren",
+            "participio": "studiert"
+          },
+          {
+            "regra": "-ieren: no ge-",
+            "infinitivo": "telefonieren",
+            "participio": "telefoniert"
+          },
+          {
+            "regra": "be-: no ge-",
+            "infinitivo": "besuchen",
+            "participio": "besucht"
+          },
+          {
+            "regra": "be-: no ge-",
+            "infinitivo": "bezahlen",
+            "participio": "bezahlt"
+          },
+          {
+            "regra": "ver-: no ge-",
+            "infinitivo": "verkaufen",
+            "participio": "verkauft"
+          },
+          {
+            "regra": "er-: no ge-",
+            "infinitivo": "erklären",
+            "participio": "erklärt"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich habe gestudiert.",
+            "certo": "Ich habe studiert.",
+            "motivo": "Verbs in -ieren take no «ge-»."
+          },
+          {
+            "errado": "Ich habe gearbeit.",
+            "certo": "Ich habe gearbeitet.",
+            "motivo": "Stem in -t: the participle takes «-et», like \"waited\"."
+          },
+          {
+            "errado": "Ich habe gebesucht.",
+            "certo": "Ich habe besucht.",
+            "motivo": "The prefix be- already takes the place of «ge-»."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 4,
+        "enunciado": "Say 6 sentences about last week, with one verb from each group: -ieren, be-, ver-, er- and stem in -t."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Write the Partizip II of 8 regular verbs: machen, lernen, spielen, kaufen, kochen, hören, wohnen, tanzen."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-021.json",
+  "responsavel": null
+}

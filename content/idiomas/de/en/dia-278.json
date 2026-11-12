@@ -1,0 +1,155 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 278,
+  "fase": 28,
+  "nivel": "b2",
+  "status": "publicada",
+  "titulo": "Partizip I and II as adjectives: Partizip I as an adjective",
+  "objetivo": "Lesson 70, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 70,
+    "titulo": "Partizip I and II as adjectives",
+    "objetivo": "Use the Partizip II (gekochte Eier, ein verlorener Schlüssel, die gestiegenen Preise) and the Partizip I (lachend, die spielenden Kinder) as adjectives, with the right ending and the right meaning (passive and completed, active and completed, or active and ongoing).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Partizip I as an adjective",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "lachend",
+            "translit": "LAKH-ent",
+            "pt": "laughing",
+            "en": "laughing",
+            "audio": "lachend"
+          },
+          {
+            "ru": "laufend",
+            "translit": "LOW-fent",
+            "pt": "running; ongoing",
+            "en": "running",
+            "audio": "laufend"
+          },
+          {
+            "ru": "schlafend",
+            "translit": "SHLAH-fent",
+            "pt": "sleeping",
+            "en": "sleeping",
+            "audio": "schlafend"
+          },
+          {
+            "ru": "spielend",
+            "translit": "SHPEE-lent",
+            "pt": "playing",
+            "en": "playing",
+            "audio": "spielend"
+          },
+          {
+            "ru": "fließend",
+            "translit": "FLEE-sent",
+            "pt": "fluent; flowing, running (water)",
+            "en": "fluent; flowing",
+            "audio": "fließend"
+          },
+          {
+            "ru": "steigend",
+            "translit": "SHTYE-gent",
+            "pt": "rising, growing",
+            "en": "rising",
+            "audio": "steigend"
+          },
+          {
+            "ru": "wachsend",
+            "translit": "VAK-sent",
+            "pt": "rising, growing",
+            "en": "growing",
+            "audio": "wachsend"
+          },
+          {
+            "ru": "blühend",
+            "translit": "BLÜ-ent",
+            "pt": "blooming, flourishing",
+            "en": "blooming",
+            "audio": "blühend"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "The Partizip I as an adjective, step by step",
+        "explicacao": "STEP 1: the PARTIZIP I is the INFINITIVE + «-D»: lachen → lachend; laufen → laufend; schlafen → schlafend; spielen → spielend. It is the German counterpart of the English -ing adjective (\"a laughing child\"). STEP 2: the MEANING is ACTIVE and ONGOING: «das schlafende Kind» is the child WHO IS SLEEPING; «die spielenden Kinder», the children who are playing. STEP 3: before the noun it takes adjective endings: «ein lachendes Kind», «die spielenden Kinder», «fließendes Wasser». STEP 4: it can work as an ADVERB, with no ending: «Er kam lachend herein» (he came in laughing). Careful: German never uses the Partizip I for the English continuous tense — \"I am laughing\" is «ich lache», never «ich bin lachend». STEP 5: it appears in fixed expressions: «laufende Kosten» (running costs), «steigende Preise» (rising prices), «fließend Deutsch sprechen» (to speak German fluently). STEP 6: compare: Partizip I (active, happening) × Partizip II (passive, completed): «das kochende Wasser» (the boiling water) × «das gekochte Ei» (the boiled egg).",
+        "tabela": [
+          {
+            "infinitivo": "lachen",
+            "participio": "lachend",
+            "exemplo": "ein lachendes Kind"
+          },
+          {
+            "infinitivo": "spielen",
+            "participio": "spielend",
+            "exemplo": "die spielenden Kinder"
+          },
+          {
+            "infinitivo": "schlafen",
+            "participio": "schlafend",
+            "exemplo": "das schlafende Baby"
+          },
+          {
+            "infinitivo": "fließen",
+            "participio": "fließend",
+            "exemplo": "fließendes Wasser / fließend Deutsch"
+          },
+          {
+            "infinitivo": "steigen",
+            "participio": "steigend",
+            "exemplo": "steigende Preise"
+          },
+          {
+            "infinitivo": "kochen",
+            "participio": "kochend (Partizip I) × gekocht (Partizip II)",
+            "exemplo": "das kochende Wasser × das gekochte Ei"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "das spielen Kind",
+            "certo": "das spielende Kind",
+            "motivo": "Partizip I: infinitive + d."
+          },
+          {
+            "errado": "Er kam lachende herein.",
+            "certo": "Er kam lachend herein.",
+            "motivo": "As an adverb: no ending."
+          },
+          {
+            "errado": "das gekochte Wasser (that is boiling)",
+            "certo": "das kochende Wasser",
+            "motivo": "Action in progress: Partizip I."
+          }
+        ],
+        "tag": "Adjectives and possessives"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe 6 scenes with the Partizip I: «das schlafende Baby, die spielenden Kinder, fließendes Wasser …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 sentences with the Partizip II as an adjective, before the noun and after «sein»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-070.json",
+  "responsavel": null
+}

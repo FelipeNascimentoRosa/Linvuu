@@ -1,0 +1,248 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 153,
+  "fase": 16,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Basic Konjunktiv II: würde, hätte, wäre, könnte: Würde + infinitive",
+  "objetivo": "Lesson 39, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 39,
+    "titulo": "Basic Konjunktiv II: würde, hätte, wäre, könnte",
+    "objetivo": "Use the basic Konjunktiv II forms (würde + infinitive, hätte, wäre, könnte) for polite requests, wishes, suggestions and advice.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Würde + infinitive",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Lesson goal. By the end of the four sessions, you ask politely (Könnten Sie …? Würden Sie …?), say what you'd like (Ich hätte gern …, Ich würde gern …), give advice (Du solltest …, An deiner Stelle würde ich …) and make suggestions (Wir könnten …, Wie wäre es mit …?)."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "At the hotel and on the street",
+        "contexto": "Jonas checks in at a hotel in Vienna. Later, Camila gives Lena some advice.",
+        "linhas": [
+          {
+            "personagem": "Rezeption",
+            "ru": "— Guten Tag! Was kann ich für Sie tun?",
+            "pt": "— Good morning! How can I help you?",
+            "audio": "Guten Tag! Was kann ich für Sie tun?",
+            "rotulo": "Rezeption"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Guten Tag! Ich hätte gern ein Zimmer für zwei Nächte.",
+            "pt": "— Good morning! I'd like a room for two nights.",
+            "audio": "Guten Tag! Ich hätte gern ein Zimmer für zwei Nächte.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Rezeption",
+            "ru": "— Gern. Hätten Sie lieber ein Zimmer mit Frühstück?",
+            "pt": "— Certainly. Would you prefer a room with breakfast?",
+            "audio": "Gern. Hätten Sie lieber ein Zimmer mit Frühstück?",
+            "rotulo": "Rezeption"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Ja, bitte. Wo kann ich parken?",
+            "pt": "— Yes, please. Where can I park?",
+            "audio": "Ja, bitte. Wo kann ich parken?",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Rezeption",
+            "ru": "— Dort hinten. Könnten Sie bitte hier unterschreiben?",
+            "pt": "— Out back. Could you sign here, please?",
+            "audio": "Dort hinten. Könnten Sie bitte hier unterschreiben?",
+            "rotulo": "Rezeption"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Gern. Könnten Sie mir auch einen Stadtplan geben?",
+            "pt": "— Of course. Could you also give me a city map?",
+            "audio": "Gern. Könnten Sie mir auch einen Stadtplan geben?",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Rezeption",
+            "ru": "— Natürlich. Hier, bitte.",
+            "pt": "— Certainly. Here you are.",
+            "audio": "Natürlich. Hier, bitte.",
+            "rotulo": "Rezeption"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "The English-speaker trap",
+        "explicacao": "STEP 1: good news: the German Konjunktiv II maps almost one to one onto English: würde = would, könnte = could, sollte = should, hätte = would have, wäre = would be. STEP 2: the trap is \"could\": English \"could\" is both a past (\"I could swim as a child\") and a polite form (\"Could you help me?\"). German splits them: «konnte» (past, no umlaut) vs «könnte» (polite, with umlaut). STEP 3: and \"I want a coffee\" («Ich will einen Kaffee») sounds rude in German: say «Ich hätte gern …» or «Ich möchte …».",
+        "comparacao": "Three traps.",
+        "tabela": [
+          {
+            "ingles": "I'd like a coffee.",
+            "alemao": "Ich hätte gern einen Kaffee."
+          },
+          {
+            "ingles": "Could you help me?",
+            "alemao": "Könnten Sie mir helfen?"
+          },
+          {
+            "ingles": "Would you please wait?",
+            "alemao": "Würden Sie bitte warten?"
+          },
+          {
+            "ingles": "You should sleep more.",
+            "alemao": "Du solltest mehr schlafen."
+          },
+          {
+            "ingles": "If I were you, I'd go.",
+            "alemao": "An deiner Stelle würde ich fahren."
+          }
+        ],
+        "tag": "Trap"
+      },
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "höflich",
+            "translit": "HÖF-likh",
+            "pt": "polite, courteous",
+            "en": "polite",
+            "audio": "höflich"
+          },
+          {
+            "ru": "bitten",
+            "translit": "BIT-en",
+            "pt": "to ask (for), to request",
+            "en": "to ask for",
+            "audio": "bitten"
+          },
+          {
+            "ru": "der Wunsch",
+            "translit": "dair VOONSH",
+            "pt": "wish",
+            "en": "wish",
+            "audio": "der Wunsch"
+          },
+          {
+            "ru": "die Bitte",
+            "translit": "dee BIT-eh",
+            "pt": "request",
+            "en": "request",
+            "audio": "die Bitte"
+          },
+          {
+            "ru": "eigentlich",
+            "translit": "ICE-gent-likh",
+            "pt": "actually, really",
+            "en": "actually",
+            "audio": "eigentlich"
+          },
+          {
+            "ru": "an deiner Stelle",
+            "translit": "ahn DINE-er SHTEL-eh",
+            "pt": "in your place, if I were you",
+            "en": "in your place",
+            "audio": "an deiner Stelle"
+          },
+          {
+            "ru": "der Rat",
+            "translit": "dair RAHT",
+            "pt": "advice",
+            "en": "advice",
+            "audio": "der Rat"
+          },
+          {
+            "ru": "der Vorschlag",
+            "translit": "dair FOR-shlahk",
+            "pt": "suggestion",
+            "en": "suggestion",
+            "audio": "der Vorschlag"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Würde + infinitive, step by step",
+        "explicacao": "STEP 1: the Konjunktiv II is for being POLITE and for talking about WISHES and things that aren't real. At this level you only need a few forms. STEP 2: the most useful one is «würde» (would) + infinitive at the END: «Ich würde gern ins Kino gehen» (I'd like to go to the movies — literally \"I would gladly go to the cinema\"). STEP 3: conjugate «würde»: ich würde, du würdest, er würde, wir würden, ihr würdet, sie würden. STEP 4: to ASK politely: «Würdest du mir helfen?» (informal), «Würden Sie bitte das Fenster schließen?» (formal). STEP 5: «gern» adds the idea of \"like to\": «Ich würde gern …» = I'd like to… STEP 6: compare the levels of politeness — exactly as in English: «Kannst du mir helfen?» (Can you…?) < «Könntest du mir helfen?» (Could you…?) < «Würdest du mir helfen?» (Would you…?).",
+        "comparacao": "English does the same with \"would\" + verb (\"I would go\"). The difference is word order: in German the infinitive goes to the END: «Ich würde gern ins Kino gehen», not «Ich würde gehen gern ins Kino».",
+        "tabela": [
+          {
+            "pronome": "ich",
+            "würde": "würde",
+            "exemplo": "Ich würde gern reisen."
+          },
+          {
+            "pronome": "du",
+            "würde": "würdest",
+            "exemplo": "Würdest du mir helfen?"
+          },
+          {
+            "pronome": "er / sie / es",
+            "würde": "würde",
+            "exemplo": "Er würde gern schlafen."
+          },
+          {
+            "pronome": "wir",
+            "würde": "würden",
+            "exemplo": "Wir würden gern kommen."
+          },
+          {
+            "pronome": "ihr",
+            "würde": "würdet",
+            "exemplo": "Würdet ihr mitkommen?"
+          },
+          {
+            "pronome": "sie / Sie",
+            "würde": "würden",
+            "exemplo": "Würden Sie bitte warten?"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich würde gehen gern ins Kino.",
+            "certo": "Ich würde gern ins Kino gehen.",
+            "motivo": "The infinitive goes to the end."
+          },
+          {
+            "errado": "Ich würde gerne gehe.",
+            "certo": "Ich würde gern gehen.",
+            "motivo": "After «würde»: the infinitive."
+          },
+          {
+            "errado": "Würden du mir helfen?",
+            "certo": "Würdest du mir helfen?",
+            "motivo": "«du» → würdest."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say 6 wishes and polite requests: «Ich würde gern … Würdest du mir …? Würden Sie bitte …?»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Write 6 sentences with reflexive verbs and 4 with «wenn»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-039.json",
+  "responsavel": null
+}

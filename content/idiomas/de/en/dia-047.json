@@ -1,0 +1,180 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 47,
+  "fase": 5,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Müssen, wollen and dürfen: obligation, wish and permission: Dürfen: being allowed, and signs",
+  "objetivo": "Lesson 12, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 12,
+    "titulo": "Müssen, wollen and dürfen: obligation, wish and permission",
+    "objetivo": "Use «müssen» (have to), «wollen» (want to) and «dürfen» (be allowed to), and read the most common signs — always with the sentence bracket.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Dürfen: being allowed, and signs",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "verboten",
+            "translit": "fehr-BOH-ten",
+            "pt": "forbidden",
+            "en": "forbidden",
+            "audio": "verboten"
+          },
+          {
+            "ru": "erlaubt",
+            "translit": "ehr-LOWPT",
+            "pt": "allowed",
+            "en": "allowed",
+            "audio": "erlaubt"
+          },
+          {
+            "ru": "der Eingang",
+            "translit": "dehr INE-gahng",
+            "pt": "entrance",
+            "en": "entrance",
+            "audio": "der Eingang"
+          },
+          {
+            "ru": "der Ausgang",
+            "translit": "dehr OWSS-gahng",
+            "pt": "exit",
+            "en": "exit",
+            "audio": "der Ausgang"
+          },
+          {
+            "ru": "rauchen",
+            "translit": "ROW-khen",
+            "pt": "to smoke",
+            "en": "to smoke",
+            "audio": "rauchen"
+          },
+          {
+            "ru": "fotografieren",
+            "translit": "foh-toh-grah-FEE-ren",
+            "pt": "to take photos",
+            "en": "to take photos",
+            "audio": "fotografieren"
+          },
+          {
+            "ru": "das Schild",
+            "translit": "dahs SHILT",
+            "pt": "sign",
+            "en": "sign",
+            "audio": "das Schild"
+          },
+          {
+            "ru": "man",
+            "translit": "MAHN",
+            "pt": "one, you, people (impersonal)",
+            "en": "one, you",
+            "audio": "man"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Dürfen: being allowed (and the word «man»)",
+        "explicacao": "STEP 1: «dürfen» expresses PERMISSION: «Darf ich hier sitzen?» = May I sit here? STEP 2: conjugate: ich darf, du darfst, er darf, wir dürfen, ihr dürft, sie dürfen (the «ü» disappears in the singular). STEP 3: with «nicht», «dürfen» means FORBIDDEN — it's the German \"mustn't\": «Hier darf man nicht rauchen» = you mustn't smoke here. STEP 4: «man» is impersonal, like English \"one\" or the general \"you\": «Hier darf man parken» (you can park here). It takes the «er» form of the verb. Signs use the infinitive or a noun: «Rauchen verboten», «Parken erlaubt», «Eingang», «Ausgang».",
+        "tabelas": [
+          {
+            "titulo": "dürfen",
+            "linhas": [
+              {
+                "pronome": "ich",
+                "dürfen": "darf",
+                "exemplo": "Darf ich hier sitzen?"
+              },
+              {
+                "pronome": "du",
+                "dürfen": "darfst",
+                "exemplo": "Du darfst hier nicht parken."
+              },
+              {
+                "pronome": "er / sie / es / man",
+                "dürfen": "darf",
+                "exemplo": "Hier darf man nicht rauchen."
+              },
+              {
+                "pronome": "wir",
+                "dürfen": "dürfen",
+                "exemplo": "Wir dürfen hier fotografieren."
+              },
+              {
+                "pronome": "ihr",
+                "dürfen": "dürft",
+                "exemplo": "Ihr dürft jetzt gehen."
+              },
+              {
+                "pronome": "sie / Sie",
+                "dürfen": "dürfen",
+                "exemplo": "Dürfen Sie hier rauchen?"
+              }
+            ]
+          },
+          {
+            "titulo": "The most common signs",
+            "linhas": [
+              {
+                "frase": "Rauchen verboten",
+                "pt": "No smoking"
+              },
+              {
+                "frase": "Parken verboten",
+                "pt": "No parking"
+              },
+              {
+                "frase": "Fotografieren erlaubt",
+                "pt": "Photography allowed"
+              },
+              {
+                "frase": "Eingang",
+                "pt": "Entrance"
+              },
+              {
+                "frase": "Ausgang",
+                "pt": "Exit"
+              }
+            ]
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Hier dürfen nicht rauchen.",
+            "certo": "Hier darf man nicht rauchen.",
+            "motivo": "The subject «man» is missing; it takes the form «darf»."
+          },
+          {
+            "errado": "Ich darfe hier sitzen?",
+            "certo": "Darf ich hier sitzen?",
+            "motivo": "Question: the modal comes first and «ich» takes «darf»."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say 5 rules for places you know: «Hier darf man … / Hier darf man nicht …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write the 6 forms of «wollen» and the difference between «wollen» and «möchten»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-012.json",
+  "responsavel": null
+}

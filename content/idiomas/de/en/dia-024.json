@@ -1,0 +1,344 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 24,
+  "fase": 3,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Numbers, time and days: Practice",
+  "objetivo": "Lesson 6, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 6,
+    "titulo": "Numbers, time and days",
+    "objetivo": "Count to 100 and beyond, tell the time, and say the days of the week, the months and the date.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Practice",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 12,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "45 in German:",
+            "opcoes": [
+              "fünfundvierzig",
+              "vierundfünfzig",
+              "vierzigfünf"
+            ],
+            "gabarito": "fünfundvierzig",
+            "explicacao": "The ones come first.",
+            "id": "de-006-e01"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "21 in German:",
+            "opcoes": [
+              "einundzwanzig",
+              "zwanzigeins",
+              "einsundzwanzig"
+            ],
+            "gabarito": "einundzwanzig",
+            "explicacao": "eins becomes ein.",
+            "id": "de-006-e02"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "60 in German:",
+            "opcoes": [
+              "sechzig",
+              "sechszig",
+              "sechszehn"
+            ],
+            "gabarito": "sechzig",
+            "explicacao": "60 drops the -s.",
+            "id": "de-006-e03"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Jonas, wann ist der Kurs?",
+            "respostaEsperada": "Jonas, wann ist der Kurs?",
+            "explicacao": "Jonas, when is the class?",
+            "id": "de-006-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«halb drei» is:",
+            "opcoes": [
+              "2:30",
+              "3:30",
+              "3:00"
+            ],
+            "gabarito": "2:30",
+            "explicacao": "Half an hour before three.",
+            "id": "de-006-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Viertel nach acht» is:",
+            "opcoes": [
+              "8:15",
+              "7:45",
+              "8:45"
+            ],
+            "gabarito": "8:15",
+            "explicacao": "A quarter past eight.",
+            "id": "de-006-e05"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Wie spät ist es jetzt?",
+            "respostaEsperada": "Wie spät ist es jetzt?",
+            "explicacao": "What time is it now?",
+            "id": "de-006-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Es ist ___ neun. (8:45)",
+            "opcoes": [
+              "Viertel vor",
+              "Viertel nach",
+              "halb"
+            ],
+            "gabarito": "Viertel vor",
+            "explicacao": "A quarter to nine.",
+            "id": "de-006-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich arbeite ___ Montag.",
+            "opcoes": [
+              "am",
+              "im",
+              "um"
+            ],
+            "gabarito": "am",
+            "explicacao": "Day of the week: am (\"on\").",
+            "id": "de-006-e07"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Der Kurs beginnt ___ Mai.",
+            "opcoes": [
+              "im",
+              "am",
+              "um"
+            ],
+            "gabarito": "im",
+            "explicacao": "Month: im (\"in\").",
+            "id": "de-006-e08"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Gut! Wann hast du Geburtstag?",
+            "respostaEsperada": "Gut! Wann hast du Geburtstag?",
+            "explicacao": "Great! When's your birthday?",
+            "id": "de-006-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich habe ___ 5. Oktober Geburtstag.",
+            "opcoes": [
+              "am",
+              "im",
+              "um"
+            ],
+            "gabarito": "am",
+            "explicacao": "Date: am (\"on\").",
+            "id": "de-006-e09"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"On Tuesday I have time.\"",
+            "opcoes": [
+              "Am",
+              "Dienstag",
+              "habe",
+              "ich",
+              "Zeit"
+            ],
+            "gabarito": "Am Dienstag habe ich Zeit.",
+            "explicacao": "The verb goes in 2nd position.",
+            "id": "de-006-e10"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Am zwölften Mai. Ich bin achtundzwanzig.",
+            "respostaEsperada": "Am zwölften Mai. Ich bin achtundzwanzig.",
+            "explicacao": "On May 12th. I'm twenty-eight.",
+            "id": "de-006-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Es ist halb neun",
+            "opcoes": [
+              "Es ist halb neun",
+              "Es ist neun Uhr",
+              "Es ist Viertel nach neun"
+            ],
+            "gabarito": "Es ist halb neun",
+            "explicacao": "halb neun = 8:30.",
+            "id": "de-006-e11"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Um wie viel Uhr?",
+            "respostaEsperada": "Um wie viel Uhr?",
+            "explicacao": "Asking the time of an event.",
+            "id": "de-006-e12"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write 4 sentences: the time now, a day of the week, a month and today's date.",
+            "respostaEsperada": "Es ist halb drei. Am Montag arbeite ich. Im Mai habe ich Urlaub. Heute ist der 5. Oktober.",
+            "id": "de-006-e13"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 10,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Write three appointments for your week with a day (Am …), a time (um … Uhr) and an activity: Am Montag um 18 Uhr habe ich Deutschkurs.",
+            "respostaEsperada": "Am Montag um achtzehn Uhr habe ich Deutschkurs. Am Mittwoch um halb neun arbeite ich im Büro. Am Freitag um zwanzig Uhr koche ich mit Freunden.",
+            "id": "de-006-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write your birthday (Ich habe am … Geburtstag) and your age in words.",
+            "respostaEsperada": "Ich habe am fünfzehnten August Geburtstag. Ich bin dreißig Jahre alt.",
+            "id": "de-006-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write out these three prices: €4.50, €19.90 and €350.",
+            "respostaEsperada": "4,50 € = vier Euro fünfzig. 19,90 € = neunzehn Euro neunzig. 350 € = dreihundertfünfzig Euro.",
+            "id": "de-006-L-p03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it (the time is 3:30): Es ist halb drei.",
+            "respostaEsperada": "Es ist halb vier.",
+            "explicacao": "Es ist halb vier. (3:30 is half an hour before four.)",
+            "id": "de-006-L-c01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Is there a mistake? Correct it or write «OK»: ein und zwanzig",
+            "respostaEsperada": "einundzwanzig, all one word.",
+            "id": "de-006-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Heute ist montag.",
+            "respostaEsperada": "Heute ist Montag.",
+            "explicacao": "Heute ist Montag. (nouns, including days, are capitalized)",
+            "id": "de-006-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Am Mai habe ich Geburtstag.",
+            "respostaEsperada": "Im Mai habe ich Geburtstag.",
+            "explicacao": "Im Mai habe ich Geburtstag. (months take im)",
+            "id": "de-006-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Ich bin 28 Jahre.",
+            "respostaEsperada": "Ich bin achtundzwanzig Jahre alt.",
+            "explicacao": "Ich bin achtundzwanzig Jahre alt.",
+            "id": "de-006-L-c05"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Is there a mistake? Correct it or write «OK»: dreizig",
+            "respostaEsperada": "dreißig, with ß.",
+            "id": "de-006-L-c06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Der Kurs beginnt am vier Uhr.",
+            "respostaEsperada": "Der Kurs beginnt um vier Uhr.",
+            "explicacao": "Der Kurs beginnt um vier Uhr. (times take um)",
+            "id": "de-006-L-c07"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Is there a mistake? Correct it or write «OK»: Heute ist Dienstag.",
+            "respostaEsperada": "OK",
+            "id": "de-006-L-c08"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "The typical English-speaker mistakes",
+        "explicacao": "STEP 1: the costliest mistake is reading halb drei as \"half past three\" (and showing up an hour late!). British speakers are hit twice, because \"half three\" means 3:30. The other one: the time prepositions — um for clock times (at eight), am for days and dates (on Monday), im for months and seasons (in May). STEP 2: read the table and say each correct sentence out loud before you look at the reason.",
+        "erros": [
+          {
+            "errado": "Es ist halb vier. (meaning 4:30)",
+            "certo": "Es ist halb fünf.",
+            "motivo": "Halb looks ahead: halb fünf = half an hour before five = 4:30."
+          },
+          {
+            "errado": "zwanzigfünf",
+            "certo": "fünfundzwanzig",
+            "motivo": "Ones first, then und, then the tens — all in one word."
+          },
+          {
+            "errado": "Der Kurs beginnt am vier Uhr.",
+            "certo": "Der Kurs beginnt um vier Uhr.",
+            "motivo": "Clock times take um (\"at\")."
+          },
+          {
+            "errado": "Am Mai habe ich Geburtstag.",
+            "certo": "Im Mai habe ich Geburtstag.",
+            "motivo": "Months take im (\"in\"); days and dates take am (\"on\")."
+          },
+          {
+            "errado": "Heute ist montag.",
+            "certo": "Heute ist Montag.",
+            "motivo": "Days are nouns, so they're capitalized."
+          },
+          {
+            "errado": "Ich bin 28 Jahre.",
+            "certo": "Ich bin achtundzwanzig Jahre alt.",
+            "motivo": "With Jahre, add alt — like \"years old\"."
+          }
+        ],
+        "tag": "Typical mistake"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Can I do it? I count to 100 without looking and read any clock without falling for halb. · I say my birthday and my age and ask how much something costs."
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Review. Make these negative: Der Kurs ist am Montag. Ich habe Zeit. Es ist halb drei. Write the plural: drei ____ (Tisch), vier ____ (Haus), fünf ____ (Frau). Ask the question: Der Kurs beginnt um vier Uhr. → Wann …? Ich bin achtundzwanzig. → Wie …?"
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-006.json",
+  "responsavel": null
+}

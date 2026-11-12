@@ -1,0 +1,447 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 83,
+  "fase": 9,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Perfekt 1: the past with haben (regular verbs): Separable verbs in the Perfekt and dialogue",
+  "objetivo": "Lesson 21, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 21,
+    "titulo": "Perfekt 1: the past with haben (regular verbs)",
+    "objetivo": "Tell what happened using the Perfekt of regular verbs: haben + Partizip II (ge-…-t), including the forms without «ge-» (-ieren, be-, er-, ver-, ent-) and separable verbs.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Separable verbs in the Perfekt and dialogue",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "einkaufen",
+            "translit": "INE-kow-fen",
+            "pt": "to go shopping",
+            "en": "to shop",
+            "audio": "einkaufen"
+          },
+          {
+            "ru": "aufräumen",
+            "translit": "OWF-roy-men",
+            "pt": "to tidy up",
+            "en": "to tidy up",
+            "audio": "aufräumen"
+          },
+          {
+            "ru": "abholen",
+            "translit": "AHP-hoh-len",
+            "pt": "to pick up (someone)",
+            "en": "to pick up",
+            "audio": "abholen"
+          },
+          {
+            "ru": "anmelden",
+            "translit": "AHN-mel-den",
+            "pt": "to sign up, register",
+            "en": "to register",
+            "audio": "anmelden"
+          },
+          {
+            "ru": "einpacken",
+            "translit": "INE-pah-ken",
+            "pt": "to pack",
+            "en": "to pack",
+            "audio": "einpacken"
+          },
+          {
+            "ru": "aufmachen",
+            "translit": "OWF-mahkh-en",
+            "pt": "to open",
+            "en": "to open",
+            "audio": "aufmachen"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 7,
+        "titulo": "Regular separable verbs: «ge-» goes in the middle",
+        "explicacao": "STEP 1: a separable verb has prefix + stem: «einkaufen» = ein + kaufen. STEP 2: in the Partizip II, «ge-» goes BETWEEN the prefix and the stem: ein + ge + kauft → «eingekauft»; auf + ge + räumt → «aufgeräumt»; ab + ge + holt → «abgeholt»; an + ge + meldet → «angemeldet» (stem in -d: +et). STEP 3: in the sentence, the whole participle goes to the end: «Ich habe heute eingekauft.» STEP 4: compare with the present: «Ich kaufe heute ein» (prefix at the end) × «Ich habe heute eingekauft» (participle at the end) — \"I shop\", \"I have shopped\", with the particle glued back on.",
+        "tabela": [
+          {
+            "infinitivo": "einkaufen",
+            "participio": "eingekauft",
+            "exemplo": "Wir haben heute eingekauft."
+          },
+          {
+            "infinitivo": "aufräumen",
+            "participio": "aufgeräumt",
+            "exemplo": "Ich habe die Wohnung aufgeräumt."
+          },
+          {
+            "infinitivo": "abholen",
+            "participio": "abgeholt",
+            "exemplo": "Er hat mich abgeholt."
+          },
+          {
+            "infinitivo": "anmelden",
+            "participio": "angemeldet",
+            "exemplo": "Sie hat das Kind angemeldet."
+          },
+          {
+            "infinitivo": "aufmachen",
+            "participio": "aufgemacht",
+            "exemplo": "Ich habe das Fenster aufgemacht."
+          },
+          {
+            "infinitivo": "einpacken",
+            "participio": "eingepackt",
+            "exemplo": "Wir haben die Koffer eingepackt."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich habe geeingekauft.",
+            "certo": "Ich habe eingekauft.",
+            "motivo": "«ge-» goes in the middle, only once."
+          },
+          {
+            "errado": "Ich habe eingekaufen.",
+            "certo": "Ich habe eingekauft.",
+            "motivo": "Regular: ends in -t."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 6,
+        "titulo": "Was hast du gestern gemacht? / What did you do yesterday?",
+        "contexto": "Two friends talk about the day before.",
+        "linhas": [
+          {
+            "personagem": "Lea",
+            "ru": "— Hallo Paul! Was hast du gestern gemacht?",
+            "pt": "— Hi, Paul! What did you do yesterday?",
+            "audio": "Hallo Paul! Was hast du gestern gemacht?",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Ich habe lange gearbeitet. Dann habe ich eingekauft.",
+            "pt": "— I worked a lot. Then I went shopping.",
+            "audio": "Ich habe lange gearbeitet. Dann habe ich eingekauft.",
+            "rotulo": "Paul"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Hast du auch gekocht?",
+            "pt": "— Did you cook too?",
+            "audio": "Hast du auch gekocht?",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Ja, ich habe Pasta gekocht und Musik gehört.",
+            "pt": "— Yes, I cooked pasta and listened to music.",
+            "audio": "Ja, ich habe Pasta gekocht und Musik gehört.",
+            "rotulo": "Paul"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Und hast du schon die Wohnung aufgeräumt?",
+            "pt": "— And have you tidied up the apartment yet?",
+            "audio": "Und hast du schon die Wohnung aufgeräumt?",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Nein, noch nicht. Das mache ich morgen.",
+            "pt": "— No, not yet. I'll do it tomorrow.",
+            "audio": "Nein, noch nicht. Das mache ich morgen.",
+            "rotulo": "Paul"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Ich habe gestern meine Oma besucht.",
+            "pt": "— I visited my grandmother yesterday.",
+            "audio": "Ich habe gestern meine Oma besucht.",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Wie schön! Hast du sie abgeholt?",
+            "pt": "— How nice! Did you pick her up?",
+            "audio": "Wie schön! Hast du sie abgeholt?",
+            "rotulo": "Paul"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Ja, ich habe sie vom Bahnhof abgeholt.",
+            "pt": "— Yes, I picked her up at the station.",
+            "audio": "Ja, ich habe sie vom Bahnhof abgeholt.",
+            "rotulo": "Lea"
+          }
+        ]
+      },
+      {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "Was hast du gestern gemacht?",
+            "translit": "",
+            "pt": "What did you do yesterday?",
+            "en": "",
+            "audio": "Was hast du gestern gemacht?"
+          },
+          {
+            "ru": "Ich habe Pizza gegessen.",
+            "translit": "",
+            "pt": "I ate pizza.",
+            "en": "",
+            "audio": "Ich habe Pizza gegessen."
+          },
+          {
+            "ru": "Ich bin früh aufgestanden.",
+            "translit": "",
+            "pt": "I woke up early.",
+            "en": "",
+            "audio": "Ich bin früh aufgestanden."
+          },
+          {
+            "ru": "Wir sind nach Berlin gefahren.",
+            "translit": "",
+            "pt": "We went to Berlin.",
+            "en": "",
+            "audio": "Wir sind nach Berlin gefahren."
+          },
+          {
+            "ru": "Er hat mich angerufen.",
+            "translit": "",
+            "pt": "He called me.",
+            "en": "",
+            "audio": "Er hat mich angerufen."
+          },
+          {
+            "ru": "Ich habe dich nicht verstanden.",
+            "translit": "",
+            "pt": "I didn't understand you.",
+            "en": "",
+            "audio": "Ich habe dich nicht verstanden."
+          },
+          {
+            "ru": "Hast du das gewusst?",
+            "translit": "",
+            "pt": "Did you know that?",
+            "en": "",
+            "audio": "Hast du das gewusst?"
+          },
+          {
+            "ru": "Ich habe es vergessen.",
+            "translit": "",
+            "pt": "I forgot.",
+            "en": "",
+            "audio": "Ich habe es vergessen."
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which one is correct?",
+            "opcoes": [
+              "Ich habe gegangen",
+              "Ich bin gegangen"
+            ],
+            "gabarito": "Ich bin gegangen",
+            "explicacao": "Gehen, in this sense of going somewhere, forms the Perfekt with sein and the participle gegangen: Ich bin gegangen.",
+            "id": "de-021-L-101"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Wir ___ Kaffee getrunken.",
+            "opcoes": [
+              "haben",
+              "sind"
+            ],
+            "gabarito": "haben",
+            "explicacao": "Trinken forms the Perfekt with haben. With wir, use haben: Wir haben Kaffee getrunken.",
+            "id": "de-021-L-102"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Er ___ nach Hause gekommen.",
+            "opcoes": [
+              "hat",
+              "ist"
+            ],
+            "gabarito": "ist",
+            "explicacao": "Kommen forms the Perfekt with sein. With er, the auxiliary is ist: Er ist nach Hause gekommen.",
+            "id": "de-021-L-103"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Participle of machen: (gemacht, gemachen)",
+            "respostaEsperada": "gemacht",
+            "id": "de-021-L-104"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Participle of besuchen: (gebesucht, besucht)",
+            "respostaEsperada": "besucht",
+            "id": "de-021-L-105"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Participle of anrufen: (geanrufen, angerufen)",
+            "respostaEsperada": "angerufen",
+            "id": "de-021-L-106"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Participle of essen: (gegessen, geesst)",
+            "respostaEsperada": "gegessen",
+            "id": "de-021-L-107"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Write the Partizip II of each verb: lernen → ___ · arbeiten → gearbeitet · sehen → gesehen · schlafen → geschlafen",
+            "respostaEsperada": "gelernt",
+            "explicacao": "The participle of lernen is gelernt. For this regular verb, add ge- at the start and -t to the stem lern-.",
+            "id": "de-021-L-201a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Write the Partizip II of each verb: lernen → gelernt · arbeiten → ___ · sehen → gesehen · schlafen → geschlafen",
+            "respostaEsperada": "gearbeitet",
+            "explicacao": "The participle of arbeiten is gearbeitet. With a stem ending in -t, this regular verb uses ge- and the ending -et.",
+            "id": "de-021-L-201b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Write the Partizip II of each verb: lernen → gelernt · arbeiten → gearbeitet · sehen → ___ · schlafen → geschlafen",
+            "respostaEsperada": "gesehen",
+            "explicacao": "The participle of sehen is the strong form gesehen, ending in -en — like English \"seen\". It has to be learned, not built with the regular -t pattern.",
+            "id": "de-021-L-201c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Write the Partizip II of each verb: lernen → gelernt · arbeiten → gearbeitet · sehen → gesehen · schlafen → ___",
+            "respostaEsperada": "geschlafen",
+            "explicacao": "The Partizip II of schlafen is geschlafen. It's a strong form ending in -en, not the regular -t pattern.",
+            "id": "de-021-L-201d"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Write the Partizip II of each verb: einkaufen → ___ · verstehen → verstanden · studieren → studiert · bleiben → geblieben",
+            "respostaEsperada": "eingekauft",
+            "explicacao": "Einkaufen is separable. In the participle, ge- goes between ein- and the stem: ein + ge + kauf + t gives eingekauft.",
+            "id": "de-021-L-202a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Write the Partizip II of each verb: einkaufen → eingekauft · verstehen → ___ · studieren → studiert · bleiben → geblieben",
+            "respostaEsperada": "verstanden",
+            "explicacao": "Verstehen has the inseparable prefix ver-. Its strong participle is verstanden — compare English \"understood\" — with no ge- in front of the prefix.",
+            "id": "de-021-L-202b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Write the Partizip II of each verb: einkaufen → eingekauft · verstehen → verstanden · studieren → ___ · bleiben → geblieben",
+            "respostaEsperada": "studiert",
+            "explicacao": "Verbs in -ieren, like studieren, form the participle without ge-. Add -t to the stem: studiert.",
+            "id": "de-021-L-202c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Write the Partizip II of each verb: einkaufen → eingekauft · verstehen → verstanden · studieren → studiert · bleiben → ___",
+            "respostaEsperada": "geblieben",
+            "explicacao": "The strong participle of bleiben is geblieben, with a vowel change in the stem and the ending -en.",
+            "id": "de-021-L-202d"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Change the sentences from the present to the Perfekt: Ich koche Pasta. → ___",
+            "respostaEsperada": "Ich habe Pasta gekocht",
+            "id": "de-021-L-203"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Change the sentences from the present to the Perfekt: Du isst einen Apfel. → ___",
+            "respostaEsperada": "Du hast einen Apfel gegessen",
+            "id": "de-021-L-204"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Change the sentences from the present to the Perfekt: Wir fahren nach Berlin. → ___",
+            "respostaEsperada": "Wir sind nach Berlin gefahren",
+            "id": "de-021-L-205"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Change the sentences from the present to the Perfekt: Er steht um sieben Uhr auf. → ___",
+            "respostaEsperada": "Er ist um sieben Uhr aufgestanden",
+            "id": "de-021-L-206"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Change the sentences from the present to the Perfekt: Sie ruft mich an. → ___",
+            "respostaEsperada": "Sie hat mich angerufen",
+            "id": "de-021-L-207"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Fill in the Perfekt auxiliary in the present: Ich ___ gestern viel gelesen. · Sie (she) ist in die Stadt gefahren. · Wir sind zu Hause geblieben. · Ihr habt Pizza gegessen.",
+            "respostaEsperada": "habe",
+            "explicacao": "The task asks for the Perfekt auxiliary in the present. Lesen forms this tense with haben; with ich, it's habe: Ich habe gestern viel gelesen.",
+            "id": "de-021-L-208a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Fill in the Perfekt auxiliary in the present: Ich habe gestern viel gelesen. · Sie (she) ___ in die Stadt gefahren. · Wir sind zu Hause geblieben. · Ihr habt Pizza gegessen.",
+            "respostaEsperada": "ist",
+            "explicacao": "Fahren, meaning travel into town, forms the Perfekt with sein. With sie meaning \"she\", it's ist: Sie ist in die Stadt gefahren.",
+            "id": "de-021-L-208b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Fill in the Perfekt auxiliary in the present: Ich habe gestern viel gelesen. · Sie (she) ist in die Stadt gefahren. · Wir ___ zu Hause geblieben. · Ihr habt Pizza gegessen.",
+            "respostaEsperada": "sind",
+            "explicacao": "Bleiben forms the Perfekt with sein, even though it means staying put. With wir, it's sind: Wir sind zu Hause geblieben.",
+            "id": "de-021-L-208c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Fill in the Perfekt auxiliary in the present: Ich habe gestern viel gelesen. · Sie (she) ist in die Stadt gefahren. · Wir sind zu Hause geblieben. · Ihr ___ Pizza gegessen.",
+            "respostaEsperada": "habt",
+            "explicacao": "Essen forms the Perfekt with haben. With ihr, the present auxiliary is habt: Ihr habt Pizza gegessen.",
+            "id": "de-021-L-208d"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Put the questions into the Perfekt: Was machst du? → ___? / Wohin fährst du? → ___?",
+            "respostaEsperada": "Was hast du gemacht? / Wohin bist du gefahren?",
+            "id": "de-021-L-209"
+          }
+        ]
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Write the Partizip II of studieren, besuchen, bezahlen, arbeiten and warten."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-021.json",
+  "responsavel": null
+}

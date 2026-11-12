@@ -1,0 +1,146 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 201,
+  "fase": 21,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "The passive 2: Präteritum, Perfekt and alternatives: The passive in the Präteritum",
+  "objetivo": "Lesson 51, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 51,
+    "titulo": "The passive 2: Präteritum, Perfekt and alternatives",
+    "objetivo": "Use the passive in the past (wurde + Partizip II and ist … worden), the passive with no subject, and the alternatives «man» and «sich lassen», and recognize the passive in history texts and in the news.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "The passive in the Präteritum",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "das Rathaus",
+            "translit": "dahs RAHT-hows",
+            "pt": "town hall, city hall",
+            "en": "town hall",
+            "audio": "das Rathaus"
+          },
+          {
+            "ru": "die Kirche",
+            "translit": "dee KEER-kheh",
+            "pt": "church",
+            "en": "church",
+            "audio": "die Kirche"
+          },
+          {
+            "ru": "das Schloss",
+            "translit": "dahs SHLOSS",
+            "pt": "castle, palace",
+            "en": "castle",
+            "audio": "das Schloss"
+          },
+          {
+            "ru": "das Denkmal",
+            "translit": "dahs DENK-mahl",
+            "pt": "monument",
+            "en": "monument",
+            "audio": "das Denkmal"
+          },
+          {
+            "ru": "gründen",
+            "translit": "GRÜN-den",
+            "pt": "to found",
+            "en": "to found",
+            "audio": "gründen"
+          },
+          {
+            "ru": "zerstören",
+            "translit": "tsair-SHTÖR-en",
+            "pt": "to destroy",
+            "en": "to destroy",
+            "audio": "zerstören"
+          },
+          {
+            "ru": "renovieren",
+            "translit": "reh-no-VEER-en",
+            "pt": "to renovate",
+            "en": "to renovate",
+            "audio": "renovieren"
+          },
+          {
+            "ru": "eröffnen",
+            "translit": "air-ÖFF-nen",
+            "pt": "to open, to inaugurate",
+            "en": "to open",
+            "audio": "eröffnen"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "The passive in the past, step by step",
+        "explicacao": "STEP 1: the PAST passive (Präteritum) uses «WURDE» + Partizip II: «Das Rathaus wurde 1450 gebaut» (the town hall was built in 1450). English \"was built\" = «wurde gebaut» — NOT «war gebaut». STEP 2: conjugate «wurde»: ich wurde, du wurdest, er wurde, wir wurden, ihr wurdet, sie wurden. STEP 3: it's the natural form in history TEXTS, the news and reports: «Das Schloss wurde 1200 gegründet» (the castle was founded in 1200), «Die Kirche wurde im Krieg zerstört» (the church was destroyed in the war). STEP 4: the verb bracket stays: «wurde» in 2nd position, Partizip II at the end. STEP 5: the agent appears with «von + dative» (\"by\"): «Das Rathaus wurde von einem Architekten gebaut.» STEP 6: the passive WITH NO SUBJECT uses «es» or nothing: «Gestern wurde gefeiert» (there was a party yesterday).",
+        "comparacao": "English uses \"was / were\" + participle: \"it was built\", \"they were destroyed\". German uses «wurde / wurden» + Partizip II. «War gebaut» exists too, but it describes a state (\"had been built, stood finished\"), not the event.",
+        "tabela": [
+          {
+            "pronome": "ich",
+            "wurde": "wurde",
+            "exemplo": "Ich wurde 1990 geboren."
+          },
+          {
+            "pronome": "er / sie / es",
+            "wurde": "wurde",
+            "exemplo": "Das Rathaus wurde 1450 gebaut."
+          },
+          {
+            "pronome": "wir",
+            "wurde": "wurden",
+            "exemplo": "Wir wurden eingeladen."
+          },
+          {
+            "pronome": "sie / Sie",
+            "wurde": "wurden",
+            "exemplo": "Die Kirchen wurden renoviert."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Das Rathaus wurde bauen.",
+            "certo": "Das Rathaus wurde gebaut.",
+            "motivo": "Partizip II at the end."
+          },
+          {
+            "errado": "Die Kirchen wurde zerstört.",
+            "certo": "Die Kirchen wurden zerstört.",
+            "motivo": "Plural: «wurden»."
+          },
+          {
+            "errado": "Das Rathaus ist 1450 gebaut.",
+            "certo": "Das Rathaus wurde 1450 gebaut.",
+            "motivo": "A historical past event: «wurde»."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Tell the history of a building or a city in 6 sentences with «wurde» and «wurden»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 sentences in the present passive, one with a modal and one in the state passive."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-051.json",
+  "responsavel": null
+}

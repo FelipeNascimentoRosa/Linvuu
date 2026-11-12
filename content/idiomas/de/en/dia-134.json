@@ -1,0 +1,141 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 134,
+  "fase": 14,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Adjectives 3: without an article (kalter Kaffee, gute Freunde): No article: dative and quantities",
+  "objetivo": "Lesson 34, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 34,
+    "titulo": "Adjectives 3: without an article (kalter Kaffee, gute Freunde)",
+    "objetivo": "Give the adjective its ending when there's no article (uncountable nouns, plurals, orders and prices), using the endings of der, die, das, and bring the three adjective families together in one chart.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "No article: dative and quantities",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "viele",
+            "translit": "FEE-leh",
+            "pt": "many",
+            "en": "many",
+            "audio": "viele"
+          },
+          {
+            "ru": "wenige",
+            "translit": "VAY-nee-geh",
+            "pt": "few",
+            "en": "few",
+            "audio": "wenige"
+          },
+          {
+            "ru": "einige",
+            "translit": "INE-ee-geh",
+            "pt": "some, a few",
+            "en": "some",
+            "audio": "einige"
+          },
+          {
+            "ru": "mehrere",
+            "translit": "MAIR-eh-reh",
+            "pt": "several",
+            "en": "several",
+            "audio": "mehrere"
+          },
+          {
+            "ru": "genug",
+            "translit": "geh-NOOK",
+            "pt": "enough",
+            "en": "enough",
+            "audio": "genug"
+          },
+          {
+            "ru": "etwas",
+            "translit": "ET-vahs",
+            "pt": "something, some",
+            "en": "something",
+            "audio": "etwas"
+          },
+          {
+            "ru": "nichts",
+            "translit": "NIKHTS",
+            "pt": "nothing",
+            "en": "nothing",
+            "audio": "nichts"
+          },
+          {
+            "ru": "alles",
+            "translit": "AHL-es",
+            "pt": "everything",
+            "en": "everything",
+            "audio": "alles"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "No article in the dative, and after viele, wenige, einige",
+        "explicacao": "STEP 1: in the DATIVE, with no article, the endings are: -em (m), -er (f), -em (n), -en (plural) — again the endings of dem, der, dem, den: «mit kaltem Kaffee», «mit kalter Milch», «mit kaltem Wasser», «mit kalten Getränken». STEP 2: after «viele» (many), «wenige» (few), «einige» (some), «mehrere» (several), the adjective also takes the no-article ending: «viele neue Bücher», «einige gute Freunde». STEP 3: after «alle» (all), the adjective takes «-en», as after «die»: «alle neuen Bücher». STEP 4: use the no-article form to talk about people or things in general: «Ich esse gern frisches Obst» (I like eating fresh fruit).",
+        "tabela": [
+          {
+            "caso": "Nominativ",
+            "masculino": "kalter Kaffee",
+            "feminino": "kalte Milch",
+            "neutro": "kaltes Wasser",
+            "plural": "kalte Getränke"
+          },
+          {
+            "caso": "Akkusativ",
+            "masculino": "kalten Kaffee",
+            "feminino": "kalte Milch",
+            "neutro": "kaltes Wasser",
+            "plural": "kalte Getränke"
+          },
+          {
+            "caso": "Dativ",
+            "masculino": "kaltem Kaffee",
+            "feminino": "kalter Milch",
+            "neutro": "kaltem Wasser",
+            "plural": "kalten Getränken"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich trinke mit kalten Kaffee.",
+            "certo": "Ich trinke mit kaltem Kaffee.",
+            "motivo": "Masculine dative with no article: «-em»."
+          },
+          {
+            "errado": "Ich habe viele neuen Bücher.",
+            "certo": "Ich habe viele neue Bücher.",
+            "motivo": "After «viele», the adjective takes «-e»."
+          }
+        ],
+        "tag": "Adjectives and possessives"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say 6 sentences with «viele», «einige» and adjectives: «Ich habe viele gute Freunde. Wir haben einige neue Bücher …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write the chart of the adjective with no article in the nominative and accusative."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-034.json",
+  "responsavel": null
+}

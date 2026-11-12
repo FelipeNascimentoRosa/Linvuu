@@ -1,0 +1,142 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 229,
+  "fase": 23,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Paired connectors: entweder … oder, weder … noch, einerseits … andererseits, je … desto: Entweder … oder, weder … noch, sowohl … als auch",
+  "objetivo": "Lesson 58, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 58,
+    "titulo": "Paired connectors: entweder … oder, weder … noch, einerseits … andererseits, je … desto",
+    "objetivo": "Use paired connectors (entweder … oder, weder … noch, sowohl … als auch, nicht nur … sondern auch, einerseits … andererseits, zwar … aber, je … desto) to list, contrast and argue.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Entweder … oder, weder … noch, sowohl … als auch",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "entweder … oder",
+            "translit": "ENT-vay-der … OH-der",
+            "pt": "either … or",
+            "en": "either … or",
+            "audio": "entweder … oder"
+          },
+          {
+            "ru": "weder … noch",
+            "translit": "VAY-der … NOKH",
+            "pt": "neither … nor",
+            "en": "neither … nor",
+            "audio": "weder … noch"
+          },
+          {
+            "ru": "sowohl … als auch",
+            "translit": "zoh-VOHL … ahls OWKH",
+            "pt": "both … and, as well as",
+            "en": "both … and",
+            "audio": "sowohl … als auch"
+          },
+          {
+            "ru": "nicht nur … sondern auch",
+            "translit": "nikht NOOR … ZON-dern OWKH",
+            "pt": "not only … but also",
+            "en": "not only … but also",
+            "audio": "nicht nur … sondern auch"
+          },
+          {
+            "ru": "der Vorteil",
+            "translit": "dair FOR-tile",
+            "pt": "advantage",
+            "en": "advantage",
+            "audio": "der Vorteil"
+          },
+          {
+            "ru": "der Nachteil",
+            "translit": "dair NAHKH-tile",
+            "pt": "disadvantage",
+            "en": "disadvantage",
+            "audio": "der Nachteil"
+          },
+          {
+            "ru": "die Möglichkeit",
+            "translit": "dee MÖK-likh-kite",
+            "pt": "possibility",
+            "en": "possibility",
+            "audio": "die Möglichkeit"
+          },
+          {
+            "ru": "die Alternative",
+            "translit": "dee ahl-tair-nah-TEE-veh",
+            "pt": "alternative",
+            "en": "alternative",
+            "audio": "die Alternative"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "Paired connectors, step by step",
+        "explicacao": "STEP 1: a pair of connectors links TWO matching parts of a sentence — the same pairs English has. «ENTWEDER … ODER» (either … or) gives a CHOICE: «Ich trinke entweder Tee oder Kaffee.» STEP 2: «WEDER … NOCH» (neither … nor) negates both parts; the verb takes NO «nicht»: «Er kann weder lesen noch schreiben» (he can neither read nor write). STEP 3: «SOWOHL … ALS AUCH» (both … and / as well as) adds both: «Sie spricht sowohl Deutsch als auch Englisch.» STEP 4: «NICHT NUR … SONDERN AUCH» (not only … but also): «Ich spreche nicht nur Deutsch, sondern auch Spanisch.» STEP 5: the two parts should be the same type (two nouns, two verbs, two adjectives); the conjugated verb agrees with the subject: with «sowohl … als auch», plural. STEP 6: «entweder … oder» can open the sentence and invert the verb: «Entweder du kommst, oder du bleibst zu Hause.»",
+        "comparacao": "English has the same pairs: either… or, neither… nor, both… and, not only… but also. German just needs care with the verb position — and remember: \"but also\" uses «sondern», not «aber».",
+        "tabela": [
+          {
+            "par": "entweder … oder",
+            "frase": "Ich trinke entweder Tee oder Kaffee."
+          },
+          {
+            "par": "weder … noch",
+            "frase": "Er kann weder lesen noch schreiben."
+          },
+          {
+            "par": "sowohl … als auch",
+            "frase": "Sie spricht sowohl Deutsch als auch Englisch."
+          },
+          {
+            "par": "nicht nur … sondern auch",
+            "frase": "Ich spreche nicht nur Deutsch, sondern auch Spanisch."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Er kann weder nicht lesen noch schreiben.",
+            "certo": "Er kann weder lesen noch schreiben.",
+            "motivo": "«weder … noch» is already negative."
+          },
+          {
+            "errado": "Ich trinke entweder Tee, oder Kaffee ich.",
+            "certo": "Ich trinke entweder Tee oder Kaffee.",
+            "motivo": "Two parts of the same type."
+          },
+          {
+            "errado": "Sie spricht sowohl Deutsch und Englisch.",
+            "certo": "Sie spricht sowohl Deutsch als auch Englisch.",
+            "motivo": "The pair is «sowohl … als auch»."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Say 6 sentences with the pairs: «Ich trinke entweder … oder … Er kann weder … noch … Sie spricht sowohl … als auch …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 sentences with obwohl, trotzdem, deshalb, außerdem and sonst."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-058.json",
+  "responsavel": null
+}

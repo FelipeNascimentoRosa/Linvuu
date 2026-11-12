@@ -1,0 +1,564 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 100,
+  "fase": 10,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "The four cases: nominative, accusative, dative and genitive: Practice",
+  "objetivo": "Lesson 25, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 25,
+    "titulo": "The four cases: nominative, accusative, dative and genitive",
+    "objetivo": "Understand what the four German cases are (Nominativ, Akkusativ, Dativ, Genitiv), read the full article chart, and use the personal pronouns in the nominative, accusative and dative.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Practice",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 13,
+        "itens": [
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich sehe ___ Hund. (the)",
+            "opcoes": [
+              "den",
+              "der",
+              "dem"
+            ],
+            "gabarito": "den",
+            "explicacao": "Masculine accusative.",
+            "id": "de-025-e01"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"The phone? It's mine. Thanks!\"",
+            "opcoes": [
+              "mir.",
+              "Das",
+              "Handy?",
+              "gehört",
+              "Danke!",
+              "Es"
+            ],
+            "gabarito": "Das Handy? Es gehört mir. Danke!",
+            "explicacao": "Write: Das Handy? Es gehört mir. Danke!",
+            "id": "de-025-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich helfe ___ Mann. (the)",
+            "opcoes": [
+              "dem",
+              "den",
+              "des"
+            ],
+            "gabarito": "dem",
+            "explicacao": "helfen takes the dative.",
+            "id": "de-025-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Das Handy? Es gehört mir. Danke!",
+            "respostaEsperada": "Das Handy? Es gehört mir. Danke!",
+            "explicacao": "The phone? It's mine. Thanks!",
+            "id": "de-025-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Das ist das Auto ___ Mannes.",
+            "opcoes": [
+              "des",
+              "dem",
+              "den"
+            ],
+            "gabarito": "des",
+            "explicacao": "Masculine genitive.",
+            "id": "de-025-e03"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Entschuldigung, wem gehört das Handy?",
+            "respostaEsperada": "Entschuldigung, wem gehört das Handy?",
+            "explicacao": "Excuse me, whose cell phone is this?",
+            "id": "de-025-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"No, the bag is my sister's.\"",
+            "opcoes": [
+              "gehört",
+              "Tasche",
+              "meiner",
+              "Nein,",
+              "die",
+              "Schwester."
+            ],
+            "gabarito": "Nein, die Tasche gehört meiner Schwester.",
+            "explicacao": "Write: Nein, die Tasche gehört meiner Schwester.",
+            "id": "de-025-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Der Mann gibt ___ Kind einen Apfel. (to the)",
+            "opcoes": [
+              "dem",
+              "das",
+              "des"
+            ],
+            "gabarito": "dem",
+            "explicacao": "Kind is neuter: dative «dem».",
+            "id": "de-025-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Nein, die Tasche gehört meiner Schwester.",
+            "respostaEsperada": "Nein, die Tasche gehört meiner Schwester.",
+            "explicacao": "No, the bag is my sister's.",
+            "id": "de-025-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Die Frau hilft ___ Nachbarin. (the)",
+            "opcoes": [
+              "der",
+              "die",
+              "den"
+            ],
+            "gabarito": "der",
+            "explicacao": "Feminine dative: «der».",
+            "id": "de-025-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"And the key? That's definitely hers.\"",
+            "opcoes": [
+              "gehört",
+              "Schlüssel?",
+              "Und",
+              "der",
+              "ihr.",
+              "bestimmt",
+              "Der"
+            ],
+            "gabarito": "Und der Schlüssel? Der gehört bestimmt ihr.",
+            "explicacao": "Write: Und der Schlüssel? Der gehört bestimmt ihr.",
+            "id": "de-025-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich gebe ___ Schlüssel. (her the)",
+            "opcoes": [
+              "ihr den",
+              "sie den",
+              "ihr der"
+            ],
+            "gabarito": "ihr den",
+            "explicacao": "Pronoun in the dative, then the object in the accusative.",
+            "id": "de-025-e06"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Und der Schlüssel? Der gehört bestimmt ihr.",
+            "respostaEsperada": "Und der Schlüssel? Der gehört bestimmt ihr.",
+            "explicacao": "And the key? That's definitely hers.",
+            "id": "de-025-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Das Handy gehört ___. (to me)",
+            "opcoes": [
+              "mir",
+              "mich",
+              "ich"
+            ],
+            "gabarito": "mir",
+            "explicacao": "«gehören» takes the dative.",
+            "id": "de-025-e07"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Und die Tasche? Gehört sie dir auch?",
+            "respostaEsperada": "Und die Tasche? Gehört sie dir auch?",
+            "explicacao": "And the bag? Is it yours too?",
+            "id": "de-025-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Very good. And who are you giving the present to?\"",
+            "opcoes": [
+              "Sehr",
+              "du",
+              "Geschenk?",
+              "gibst",
+              "das",
+              "gut.",
+              "wem",
+              "Und"
+            ],
+            "gabarito": "Sehr gut. Und wem gibst du das Geschenk?",
+            "explicacao": "Write: Sehr gut. Und wem gibst du das Geschenk?",
+            "id": "de-025-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich sehe ___. (him)",
+            "opcoes": [
+              "ihn",
+              "ihm",
+              "er"
+            ],
+            "gabarito": "ihn",
+            "explicacao": "Accusative of «er».",
+            "id": "de-025-e08"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Sehr gut. Und wem gibst du das Geschenk?",
+            "respostaEsperada": "Sehr gut. Und wem gibst du das Geschenk?",
+            "explicacao": "Very good. And who are you giving the present to?",
+            "id": "de-025-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich helfe ___. (them)",
+            "opcoes": [
+              "ihnen",
+              "sie",
+              "ihr"
+            ],
+            "gabarito": "ihnen",
+            "explicacao": "Dative plural: ihnen.",
+            "id": "de-025-e09"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"How nice! I'm giving him a book.\"",
+            "opcoes": [
+              "schön!",
+              "ein",
+              "ihm",
+              "Wie",
+              "Buch.",
+              "Ich",
+              "schenke"
+            ],
+            "gabarito": "Wie schön! Ich schenke ihm ein Buch.",
+            "explicacao": "Write: Wie schön! Ich schenke ihm ein Buch.",
+            "id": "de-025-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "The question word for the dative is:",
+            "opcoes": [
+              "wem?",
+              "wen?",
+              "wessen?"
+            ],
+            "gabarito": "wem?",
+            "explicacao": "wem = to whom.",
+            "id": "de-025-e10"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Wie schön! Ich schenke ihm ein Buch.",
+            "respostaEsperada": "Wie schön! Ich schenke ihm ein Buch.",
+            "explicacao": "How nice! I'm giving him a book.",
+            "id": "de-025-x10",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Ja, ich gebe ihr den Schlüssel.",
+            "respostaEsperada": "Ja, ich gebe ihr den Schlüssel.",
+            "explicacao": "Yes, I'll give her the key.",
+            "id": "de-025-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "In «Ich gebe es meinem Bruder», «meinem Bruder» is in the:",
+            "opcoes": [
+              "dative",
+              "accusative",
+              "genitive"
+            ],
+            "gabarito": "dative",
+            "explicacao": "The person I give it to.",
+            "id": "de-025-e11"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Great! He likes to read.\"",
+            "opcoes": [
+              "Super!",
+              "liest",
+              "gern.",
+              "Er"
+            ],
+            "gabarito": "Super! Er liest gern.",
+            "explicacao": "Write: Super! Er liest gern.",
+            "id": "de-025-x11",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "In the accusative, which gender changes?",
+            "opcoes": [
+              "only the masculine",
+              "only the feminine",
+              "all of them"
+            ],
+            "gabarito": "only the masculine",
+            "explicacao": "der → den, ein → einen.",
+            "id": "de-025-e12"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Super! Er liest gern.",
+            "respostaEsperada": "Super! Er liest gern.",
+            "explicacao": "Great! He likes to read.",
+            "id": "de-025-x12",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Dative plural of «die Kinder»:",
+            "opcoes": [
+              "den Kindern",
+              "den Kinder",
+              "dem Kindern"
+            ],
+            "gabarito": "den Kindern",
+            "explicacao": "Dative plural: article «den» and noun +n.",
+            "id": "de-025-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «die Tasche» mean?",
+            "audio": "die Tasche",
+            "opcoes": [
+              "newspaper",
+              "bag, purse",
+              "name",
+              "cat"
+            ],
+            "gabarito": "bag, purse",
+            "explicacao": "«die Tasche» = bag.",
+            "id": "de-025-x13",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"I give her the key.\"",
+            "opcoes": [
+              "Ich",
+              "gebe",
+              "ihr",
+              "den",
+              "Schlüssel"
+            ],
+            "gabarito": "Ich gebe ihr den Schlüssel.",
+            "explicacao": "Pronoun before the noun.",
+            "id": "de-025-e14"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «das Fahrrad» mean?",
+            "audio": "das Fahrrad",
+            "opcoes": [
+              "whose",
+              "key",
+              "bicycle",
+              "who (subject)"
+            ],
+            "gabarito": "bicycle",
+            "explicacao": "«das Fahrrad» = bicycle.",
+            "id": "de-025-x14",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Ich gebe es meinem Bruder. Er hat heute Geburtstag.",
+            "respostaEsperada": "Ich gebe es meinem Bruder. Er hat heute Geburtstag.",
+            "explicacao": "I'm giving it to my brother. Today is his birthday.",
+            "id": "de-025-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Das Handy gehört mir",
+            "opcoes": [
+              "Das Handy gehört mir",
+              "Ich sehe das Handy",
+              "Das ist mein Handy"
+            ],
+            "gabarito": "Das Handy gehört mir",
+            "explicacao": "«mir» is dative.",
+            "id": "de-025-e15"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «wessen» mean?",
+            "audio": "wessen",
+            "opcoes": [
+              "whom (direct object)",
+              "whose",
+              "cat",
+              "bag, purse"
+            ],
+            "gabarito": "whose",
+            "explicacao": "«wessen» = whose.",
+            "id": "de-025-x15",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ich gebe es meinem Bruder",
+            "respostaEsperada": "Ich gebe es meinem Bruder",
+            "explicacao": "Accusative pronoun + dative noun.",
+            "id": "de-025-e16"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «die Eltern» mean?",
+            "audio": "die Eltern",
+            "opcoes": [
+              "parents",
+              "cat",
+              "to whom",
+              "dog"
+            ],
+            "gabarito": "parents",
+            "explicacao": "«die Eltern» = parents.",
+            "id": "de-025-x16",
+            "complemento": true
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write 4 sentences, one in each case: nominative, accusative, dative and genitive.",
+            "respostaEsperada": "Der Hund schläft. Ich sehe den Hund. Ich gebe dem Hund Wasser. Das ist das Haus des Lehrers.",
+            "id": "de-025-e17"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Record yourself explaining, with your own examples, what the nominative, accusative, dative and genitive are."
+      },
+      {
+        "tipo": "exercicios",
+        "min": 6,
+        "itens": [
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Ich habe ein Hund.",
+            "respostaEsperada": "Ich habe einen Hund.",
+            "explicacao": "Ich habe einen Hund.",
+            "id": "de-025-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Das ist einen Tisch.",
+            "respostaEsperada": "Das ist ein Tisch.",
+            "explicacao": "Das ist ein Tisch. (after sein: nominative)",
+            "id": "de-025-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Er hat keine Auto.",
+            "respostaEsperada": "Er hat kein Auto.",
+            "explicacao": "Er hat kein Auto. (Auto is neuter.)",
+            "id": "de-025-L-c06"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 2,
+        "titulo": "The typical English-speaker mistakes",
+        "explicacao": "STEP 1: the costliest mistakes: dropping the -en of a masculine direct object (Ich habe ein Hund instead of einen Hund), because English \"a\" never changes; using the accusative after sein (Das ist einen Tisch — \"is\" links two nominatives); treating helfen like English \"help someone\" and putting it in the accusative (Ich helfe den Mann); and copying English order with pronouns (Ich gebe den Ball ihm). STEP 2: read the table and say each correct sentence out loud before you look at the reason.",
+        "erros": [
+          {
+            "errado": "Ich habe ein Hund.",
+            "certo": "Ich habe einen Hund.",
+            "motivo": "Masculine direct object: einen (English \"a\" never changes; German does)."
+          },
+          {
+            "errado": "Das ist einen Tisch.",
+            "certo": "Das ist ein Tisch.",
+            "motivo": "After sein, both sides are nominative."
+          },
+          {
+            "errado": "Ich helfe den Mann.",
+            "certo": "Ich helfe dem Mann.",
+            "motivo": "helfen takes the dative, unlike English \"help him\"."
+          },
+          {
+            "errado": "Das Handy gehört ich.",
+            "certo": "Das Handy gehört mir.",
+            "motivo": "gehören takes the dative: mir."
+          },
+          {
+            "errado": "Ich gebe den Ball ihm.",
+            "certo": "Ich gebe ihm den Ball.",
+            "motivo": "A pronoun comes before a noun."
+          },
+          {
+            "errado": "Er hat keine Auto.",
+            "certo": "Er hat kein Auto.",
+            "motivo": "Auto is neuter: kein."
+          }
+        ],
+        "tag": "Typical mistake"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Can I do it? I tell the four cases apart in «Der Mann gibt dem Kind einen Apfel». · I say «Das gehört mir», «Ich helfe ihm» and «Ich gebe ihr den Schlüssel» without thinking."
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Write 4 sentences, one in each case: nominative, accusative, dative and genitive."
+      },
+      {
+        "tipo": "revisao",
+        "min": 2,
+        "enunciado": "Review. Complete in the Präteritum: Gestern ____ ich müde. (sein) · Wir ____ keine Zeit. (haben) · Er ____ nicht kommen. (können) · Say the article: ____ Schrank, ____ Lampe, ____ Fenster, ____ Stühle."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-025.json",
+  "responsavel": null
+}
