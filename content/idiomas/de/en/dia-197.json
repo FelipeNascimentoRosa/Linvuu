@@ -1,0 +1,146 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 197,
+  "fase": 20,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "The passive 1: werden + Partizip II: The passive in the present",
+  "objetivo": "Lesson 50, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 50,
+    "titulo": "The passive 1: werden + Partizip II",
+    "objetivo": "Form the present passive (werden + Partizip II) with and without an agent (von + dative), use the passive with modal verbs, and tell the passive (a process) apart from a state (sein + Partizip II).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "The passive in the present",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "reparieren",
+            "translit": "reh-pah-REER-en",
+            "pt": "to repair, to fix",
+            "en": "to repair",
+            "audio": "reparieren"
+          },
+          {
+            "ru": "bauen",
+            "translit": "BOW-en",
+            "pt": "to build",
+            "en": "to build",
+            "audio": "bauen"
+          },
+          {
+            "ru": "herstellen",
+            "translit": "HAIR-shtel-en",
+            "pt": "to manufacture, to produce",
+            "en": "to produce",
+            "audio": "herstellen"
+          },
+          {
+            "ru": "liefern",
+            "translit": "LEE-fern",
+            "pt": "to deliver",
+            "en": "to deliver",
+            "audio": "liefern"
+          },
+          {
+            "ru": "produzieren",
+            "translit": "pro-doo-TSEER-en",
+            "pt": "to produce",
+            "en": "to produce",
+            "audio": "produzieren"
+          },
+          {
+            "ru": "verkaufen",
+            "translit": "fair-KOW-fen",
+            "pt": "to sell",
+            "en": "to sell",
+            "audio": "verkaufen"
+          },
+          {
+            "ru": "erfinden",
+            "translit": "air-FIN-den",
+            "pt": "to invent",
+            "en": "to invent",
+            "audio": "erfinden"
+          },
+          {
+            "ru": "entdecken",
+            "translit": "ent-DECK-en",
+            "pt": "to discover",
+            "en": "to discover",
+            "audio": "entdecken"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "The passive, step by step",
+        "explicacao": "STEP 1: in the ACTIVE, the subject DOES the action: «Der Mechaniker repariert das Auto» (the mechanic is repairing the car). In the PASSIVE, the action is the focus and who does it matters less: «Das Auto wird repariert» (the car is being repaired). STEP 2: the present passive is: conjugated «WERDEN» (2nd position) + PARTIZIP II (at the end): «Das Auto wird repariert.» English uses \"be\" for the passive; German uses «werden». STEP 3: conjugate «werden»: ich werde, du wirst, er wird, wir werden, ihr werdet, sie werden. STEP 4: the direct object of the active sentence becomes the SUBJECT of the passive: «Der Mechaniker repariert DAS AUTO» → «DAS AUTO wird repariert.» STEP 5: to say WHO does it (\"by\"), use «VON + dative»: «Das Auto wird vom Mechaniker repariert» (by the mechanic). STEP 6: for a cause or means, use «durch + accusative»: «Das Haus wird durch den Sturm zerstört» (the house is destroyed by the storm).",
+        "comparacao": "English builds the passive with \"be\": \"the car is repaired / is being repaired\". German uses «werden» for the passive and keeps «sein» for the resulting STATE: «Das Auto wird repariert» (is being repaired — a process) vs «Das Auto ist repariert» (is repaired — finished). \"By\" = «von».",
+        "tabela": [
+          {
+            "ativo": "Der Mechaniker repariert das Auto.",
+            "passivo": "Das Auto wird repariert."
+          },
+          {
+            "ativo": "Man baut das Haus.",
+            "passivo": "Das Haus wird gebaut."
+          },
+          {
+            "ativo": "Die Firma liefert die Pakete.",
+            "passivo": "Die Pakete werden geliefert."
+          },
+          {
+            "ativo": "Der Koch kocht das Essen.",
+            "passivo": "Das Essen wird vom Koch gekocht."
+          },
+          {
+            "ativo": "Man verkauft Brot.",
+            "passivo": "Brot wird verkauft."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Das Auto wird reparieren.",
+            "certo": "Das Auto wird repariert.",
+            "motivo": "Passive: Partizip II at the end, not the infinitive."
+          },
+          {
+            "errado": "Die Pakete wird geliefert.",
+            "certo": "Die Pakete werden geliefert.",
+            "motivo": "Plural: «werden»."
+          },
+          {
+            "errado": "Das Auto wird von der Mechaniker repariert.",
+            "certo": "Das Auto wird vom Mechaniker repariert.",
+            "motivo": "«von» + dative: «vom»."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Turn 6 active sentences into the passive out loud: «Man repariert das Auto → Das Auto wird repariert.»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 sentences with relative clauses in the dative, with prepositions and in the genitive."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-050.json",
+  "responsavel": null
+}
