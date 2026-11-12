@@ -1,0 +1,166 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 173,
+  "fase": 18,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Subjunctive: time and purpose: Cuando, en cuanto, hasta que: the future calls for the subjunctive",
+  "objetivo": "Lesson 44, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 44,
+    "titulo": "Subjunctive: time and purpose",
+    "objetivo": "Use the present subjunctive after time conjunctions that refer to the future («cuando llegues», «en cuanto termine», «hasta que vuelva»), after purpose conjunctions («para que entiendas», «sin que lo sepa») and after conditions («a menos que», «con tal de que», «en caso de que»), and tell it apart from the indicative.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Cuando, en cuanto, hasta que: the future calls for the subjunctive",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "cuando",
+            "translit": "",
+            "pt": "when",
+            "en": "",
+            "audio": "cuando"
+          },
+          {
+            "ru": "en cuanto",
+            "translit": "",
+            "pt": "as soon as",
+            "en": "",
+            "audio": "en cuanto"
+          },
+          {
+            "ru": "tan pronto como",
+            "translit": "",
+            "pt": "as soon as",
+            "en": "",
+            "audio": "tan pronto como"
+          },
+          {
+            "ru": "hasta que",
+            "translit": "",
+            "pt": "until",
+            "en": "",
+            "audio": "hasta que"
+          },
+          {
+            "ru": "después de que",
+            "translit": "",
+            "pt": "after",
+            "en": "",
+            "audio": "después de que"
+          },
+          {
+            "ru": "antes de que",
+            "translit": "",
+            "pt": "before",
+            "en": "",
+            "audio": "antes de que"
+          },
+          {
+            "ru": "mientras",
+            "translit": "",
+            "pt": "while, as long as",
+            "en": "",
+            "audio": "mientras"
+          },
+          {
+            "ru": "una vez que",
+            "translit": "",
+            "pt": "once",
+            "en": "",
+            "audio": "una vez que"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Cuando llegues, llámame: it hasn't happened yet",
+        "explicacao": "STEP 1: English already does something special after \"when\" with a future meaning: it uses the present, never \"will\": \"When you ARRIVE, call me\", not \"when you will arrive\". Spanish also refuses the future here, but it uses the present SUBJUNCTIVE: «Cuando llegues, llámame», «En cuanto termine» (as soon as I finish), «Hasta que vuelva» (until he comes back). STEP 2: so «cuando llegarás» is wrong, and so is «cuando llegas mañana» (copying English \"when you arrive tomorrow\"). STEP 3: the general rule: if the action has already happened or is a habit, use the indicative: «Cuando llego a casa, ceno» (habit: whenever I get home), «Cuando llegué, llovía» (past). If the action is in the future and hasn't happened yet, use the subjunctive: «Cuando llegue a casa, cenaré». STEP 4: the clue is in the main clause: if it's in the future, a command or «ir a» + infinitive, the «cuando» clause is usually subjunctive: «Cuando termines, llámame», «Voy a descansar en cuanto acabe». STEP 5: the time conjunctions that follow this rule: «cuando, en cuanto, tan pronto como, hasta que, después de que, mientras (que), una vez que». STEP 6: «antes de que» (before) is special: since the action hasn't happened yet by definition, it ALWAYS takes the subjunctive: «Llámame antes de que salgas» (Call me before you leave). STEP 7: with the same subject, use the infinitive after «antes de» and «después de» — English \"before leaving\", \"after eating\": «Llámame antes de salir», «Hablamos después de comer». STEP 8: «mientras» meaning \"while (this happens)\" takes the indicative: «Mientras cocino, escucho música». About the future, meaning \"as long as\", it takes the subjunctive: «Mientras no llueva, iremos al parque» (As long as it doesn't rain, we'll go to the park).",
+        "comparacao": "English \"When you arrive, call me\" already avoids \"will\" — Spanish goes one step further and uses the subjunctive: «Cuando llegues, llámame». Same for \"as soon as I finish\" («en cuanto termine»), \"until he comes back» («hasta que vuelva») and \"before you leave\" («antes de que salgas»). For habits and the past, the indicative stays: «Cuando llego a casa, ceno».",
+        "tabela": [
+          {
+            "ideia": "habit",
+            "modo": "indicative",
+            "exemplo": "When(ever) I get home, I have dinner."
+          },
+          {
+            "ideia": "past",
+            "modo": "indicative",
+            "exemplo": "When I arrived, they had already had dinner."
+          },
+          {
+            "ideia": "future, hasn't happened yet",
+            "modo": "subjunctive",
+            "exemplo": "When I arrive, we'll have dinner."
+          },
+          {
+            "ideia": "request (imperative)",
+            "modo": "subjunctive",
+            "exemplo": "As soon as you arrive, call me."
+          },
+          {
+            "ideia": "antes de que (always)",
+            "modo": "subjunctive",
+            "exemplo": "Call me before you leave."
+          },
+          {
+            "ideia": "same subject",
+            "modo": "infinitive",
+            "exemplo": "Call me before leaving."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Cuando llegarás, llámame.",
+            "certo": "Cuando llegues, llámame.",
+            "motivo": "After «cuando» with a future meaning, Spanish uses the present subjunctive, never the future."
+          },
+          {
+            "errado": "Cuando llegas mañana, llámame.",
+            "certo": "Cuando llegues mañana, llámame.",
+            "motivo": "A future action: subjunctive (not the indicative, as English \"when you arrive\" suggests)."
+          },
+          {
+            "errado": "Hasta que vienes, esperaré aquí.",
+            "certo": "Hasta que vengas, esperaré aquí.",
+            "motivo": "A future action: subjunctive (not the indicative, as English \"when you arrive\" suggests)."
+          },
+          {
+            "errado": "Llámame antes de que llegas.",
+            "certo": "Llámame antes de que llegues.",
+            "motivo": "«Antes de que» always takes the subjunctive."
+          },
+          {
+            "errado": "Cuando llegue ayer, llovía.",
+            "certo": "Cuando llegué ayer, llovía.",
+            "motivo": "An action already in the past: indicative. Watch the accent: «llegué» (I arrived) and «llegue» (subjunctive)."
+          }
+        ],
+        "tag": "Subjunctive"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say five plans for the future with «cuando», «en cuanto» and «hasta que»: «Cuando termine el curso, viajaré… En cuanto tenga tiempo, llamaré a… Esperaré hasta que…»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say out loud three sentences with «quiero que», two with «no creo que» and one with «ojalá». Then conjugate «llegar» in the subjunctive (llegue, llegues…)."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-044.json",
+  "responsavel": null
+}

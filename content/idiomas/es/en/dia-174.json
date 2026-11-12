@@ -1,0 +1,137 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 174,
+  "fase": 18,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Subjunctive: time and purpose: Purpose: para que, a fin de que, sin que",
+  "objetivo": "Lesson 44, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 44,
+    "titulo": "Subjunctive: time and purpose",
+    "objetivo": "Use the present subjunctive after time conjunctions that refer to the future («cuando llegues», «en cuanto termine», «hasta que vuelva»), after purpose conjunctions («para que entiendas», «sin que lo sepa») and after conditions («a menos que», «con tal de que», «en caso de que»), and tell it apart from the indicative.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Purpose: para que, a fin de que, sin que",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "para que",
+            "translit": "",
+            "pt": "so that",
+            "en": "",
+            "audio": "para que"
+          },
+          {
+            "ru": "a fin de que",
+            "translit": "",
+            "pt": "in order that",
+            "en": "",
+            "audio": "a fin de que"
+          },
+          {
+            "ru": "con el fin de que",
+            "translit": "",
+            "pt": "with the aim that",
+            "en": "",
+            "audio": "con el fin de que"
+          },
+          {
+            "ru": "de modo que",
+            "translit": "",
+            "pt": "so that; so (result)",
+            "en": "",
+            "audio": "de modo que"
+          },
+          {
+            "ru": "sin que",
+            "translit": "",
+            "pt": "without (someone) …-ing",
+            "en": "",
+            "audio": "sin que"
+          },
+          {
+            "ru": "¿para qué?",
+            "translit": "",
+            "pt": "what for?",
+            "en": "",
+            "audio": "¿para qué?"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "What for? Purpose with «para» and «para que»",
+        "explicacao": "STEP 1: to say why you do something, Spanish uses «para» (English \"to\", \"in order to\"). If the subject is the same in both parts, the next verb stays in the infinitive: «Estudio para aprobar» (I study to pass). STEP 2: if the subjects are different, use «para que» and the subjunctive: «Te lo explico para que lo entiendas» (I'm explaining it so that you understand / for you to understand). English \"for you to understand\" can't be copied — Spanish has no \"for + person + to\". STEP 3: the more formal version is «a fin de que» or «con el fin de que»: «Enviamos el aviso a fin de que todos lo lean». STEP 4: «de modo que» and «de manera que» have two uses. Meaning purpose (\"so that\"), they take the subjunctive: «Habla despacio, de modo que todos lo entiendan». Meaning result (\"so, therefore\"), they take the indicative: «Habla despacio, de modo que todos lo entienden». English \"so that\" has the same double meaning. STEP 5: «sin que» always takes the subjunctive: «Sale sin que nadie lo vea» (He leaves without anyone seeing him) — English uses \"-ing\", Spanish needs a full subjunctive clause. With the same subject, use «sin» + infinitive: «Sale sin hacer ruido» (without making a noise). STEP 6: «¿para qué?» asks the purpose (What for?), while «¿por qué?» asks the cause (Why?). STEP 7: don't use the infinitive when someone ELSE does the action: «Te llamo para ayudarte» (I'm calling to help you — I help) vs «Te llamo para que me ayudes» (I'm calling so that you help me — you help).",
+        "comparacao": "English \"I'm explaining it FOR YOU TO understand\" and \"He left WITHOUT ANYONE SEEING him\" have no Spanish equivalent: say «para que lo entiendas» and «sin que nadie lo vea». With one subject, both languages use the infinitive: \"I study to pass\" = «Estudio para aprobar».",
+        "exemplos": [
+          {
+            "ru": "Estudio para aprobar el examen.",
+            "pt": "I study to pass the exam."
+          },
+          {
+            "ru": "Te lo explico para que lo entiendas.",
+            "pt": "I'm explaining so that you understand."
+          },
+          {
+            "ru": "Habla despacio para que todos entiendan.",
+            "pt": "Speak slowly so that everyone understands."
+          },
+          {
+            "ru": "Sale sin que nadie lo vea.",
+            "pt": "He leaves without anyone seeing him."
+          },
+          {
+            "ru": "Te llamo para que me ayudes.",
+            "pt": "I'm calling so that you can help me."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Te lo explico para que entiendes.",
+            "certo": "Te lo explico para que entiendas.",
+            "motivo": "«Para que» takes the subjunctive."
+          },
+          {
+            "errado": "Estudio para que apruebo.",
+            "certo": "Estudio para aprobar.",
+            "motivo": "With the same subject, use «para» + infinitive."
+          },
+          {
+            "errado": "Sale sin que nadie lo ve.",
+            "certo": "Sale sin que nadie lo vea.",
+            "motivo": "«Sin que» always takes the subjunctive (English uses \"-ing\")."
+          },
+          {
+            "errado": "Te llamo para que me ayudar.",
+            "certo": "Te llamo para que me ayudes.",
+            "motivo": "After «para que», the verb is conjugated, in the subjunctive (not English \"for you to help\")."
+          }
+        ],
+        "tag": "Subjunctive"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Say six sentences about why you do things and why other people do them: «Estudio español para viajar. Mi madre me llama para que no me olvide de… Salgo sin que…»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Complete out loud: «Cuando (yo) … a casa, cenaré. Espera aquí hasta que (yo) … Llámame en cuanto (tú) …»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-044.json",
+  "responsavel": null
+}
