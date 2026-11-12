@@ -1,0 +1,150 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 189,
+  "fase": 19,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Relative clauses 2: the relative pronoun in the accusative and «was»: The relative pronoun in the accusative",
+  "objetivo": "Lesson 48, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 48,
+    "titulo": "Relative clauses 2: the relative pronoun in the accusative and «was»",
+    "objetivo": "Form relative clauses where the relative pronoun is the direct object (den, die, das, die), use «was» after alles, nichts, etwas and superlatives, and combine several relative clauses.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "The relative pronoun in the accusative",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "spannend",
+            "translit": "SHPAHN-ent",
+            "pt": "exciting, gripping",
+            "en": "exciting",
+            "audio": "spannend"
+          },
+          {
+            "ru": "der Roman",
+            "translit": "dair roh-MAHN",
+            "pt": "novel",
+            "en": "novel",
+            "audio": "der Roman"
+          },
+          {
+            "ru": "das Lied",
+            "translit": "dahs LEET",
+            "pt": "song",
+            "en": "song",
+            "audio": "das Lied"
+          },
+          {
+            "ru": "die Serie",
+            "translit": "dee ZAIR-ee-eh",
+            "pt": "series, TV show",
+            "en": "series",
+            "audio": "die Serie"
+          },
+          {
+            "ru": "die Ausstellung",
+            "translit": "dee OWS-shtel-oong",
+            "pt": "exhibition",
+            "en": "exhibition",
+            "audio": "die Ausstellung"
+          },
+          {
+            "ru": "das Konzert",
+            "translit": "dahs kon-TSAIRT",
+            "pt": "concert",
+            "en": "concert",
+            "audio": "das Konzert"
+          },
+          {
+            "ru": "die Zeitung",
+            "translit": "dee TSY-toong",
+            "pt": "newspaper",
+            "en": "newspaper",
+            "audio": "die Zeitung"
+          },
+          {
+            "ru": "die Buchhandlung",
+            "translit": "dee BOOKH-hahnt-loong",
+            "pt": "bookstore",
+            "en": "bookshop",
+            "audio": "die Buchhandlung"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "The relative pronoun in the accusative, step by step",
+        "explicacao": "STEP 1: when the relative pronoun is the DIRECT OBJECT of the relative clause, it goes into the ACCUSATIVE: «Der Mann, den ich gestern getroffen habe, ist mein Chef» (the man (whom) I met yesterday is my boss). STEP 2: the forms are those of the definite article in the accusative: «den» (m), «die» (f), «das» (n), «die» (plural). STEP 3: only the MASCULINE changes compared to the nominative (der → den); feminine, neuter and plural stay the same: «die Frau, die ich kenne», «das Buch, das ich lese», «die Filme, die ich mag». STEP 4: the SUBJECT of the relative clause comes AFTER the relative pronoun («den ich», «die ich»): if a noun or pronoun follows the relative pronoun, that's the subject, and the relative pronoun is the object. STEP 5: the conjugated verb stays at the END. And remember: English can drop \"that/whom\" here (\"the man I met\"); German never drops it.",
+        "comparacao": "English uses the same \"that\" for subject and object (\"the man that lives here\", \"the man that I met\") — or drops it. German shows the difference with the CASE of the relative pronoun: der (subject) × den (direct object, masculine) — just like the old English pair who × whom.",
+        "tabela": [
+          {
+            "genero": "masculine",
+            "nominativo": "der",
+            "acusativo": "den",
+            "exemplo": "Der Mann, den ich gestern getroffen habe, ist mein Chef."
+          },
+          {
+            "genero": "feminine",
+            "nominativo": "die",
+            "acusativo": "die",
+            "exemplo": "Die Frau, die ich kenne, arbeitet hier."
+          },
+          {
+            "genero": "neuter",
+            "nominativo": "das",
+            "acusativo": "das",
+            "exemplo": "Das Buch, das ich lese, ist spannend."
+          },
+          {
+            "genero": "plural",
+            "nominativo": "die",
+            "acusativo": "die",
+            "exemplo": "Die Filme, die ich mag, sind alt."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Der Mann, der ich gestern getroffen habe, ist mein Chef.",
+            "certo": "Der Mann, den ich gestern getroffen habe, ist mein Chef.",
+            "motivo": "Masculine direct object: «den»."
+          },
+          {
+            "errado": "Das Buch, den ich lese, ist spannend.",
+            "certo": "Das Buch, das ich lese, ist spannend.",
+            "motivo": "Neuter: «das»."
+          },
+          {
+            "errado": "Der Film, den ich habe gesehen, war gut.",
+            "certo": "Der Film, den ich gesehen habe, war gut.",
+            "motivo": "The auxiliary comes last."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Describe 6 things or people out loud with accusative relative clauses: «Das Buch, das ich lese … Der Film, den ich … habe»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 sentences with nominative relative clauses."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-048.json",
+  "responsavel": null
+}

@@ -1,0 +1,144 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 190,
+  "fase": 19,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Relative clauses 2: the relative pronoun in the accusative and «was»: Alles, was and nichts, was",
+  "objetivo": "Lesson 48, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 48,
+    "titulo": "Relative clauses 2: the relative pronoun in the accusative and «was»",
+    "objetivo": "Form relative clauses where the relative pronoun is the direct object (den, die, das, die), use «was» after alles, nichts, etwas and superlatives, and combine several relative clauses.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Alles, was and nichts, was",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "das Beste",
+            "translit": "dahs BES-teh",
+            "pt": "the best (thing)",
+            "en": "the best",
+            "audio": "das Beste"
+          },
+          {
+            "ru": "das Schönste",
+            "translit": "dahs SHÖN-steh",
+            "pt": "the most beautiful (thing)",
+            "en": "the most beautiful",
+            "audio": "das Schönste"
+          },
+          {
+            "ru": "das Wichtigste",
+            "translit": "dahs VIKH-tikh-steh",
+            "pt": "the most important (thing)",
+            "en": "the most important",
+            "audio": "das Wichtigste"
+          },
+          {
+            "ru": "das Einzige",
+            "translit": "dahs INE-tsi-geh",
+            "pt": "the only thing",
+            "en": "the only thing",
+            "audio": "das Einzige"
+          },
+          {
+            "ru": "alles",
+            "translit": "AHL-es",
+            "pt": "everything",
+            "en": "everything",
+            "audio": "alles"
+          },
+          {
+            "ru": "nichts",
+            "translit": "NIKHTS",
+            "pt": "nothing",
+            "en": "nothing",
+            "audio": "nichts"
+          },
+          {
+            "ru": "etwas",
+            "translit": "ET-vahs",
+            "pt": "something",
+            "en": "something",
+            "audio": "etwas"
+          },
+          {
+            "ru": "vieles",
+            "translit": "FEE-les",
+            "pt": "a lot (of things)",
+            "en": "a lot",
+            "audio": "vieles"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "«Was» as a relative pronoun, step by step",
+        "explicacao": "STEP 1: after «alles», «nichts», «etwas», «vieles» and after superlatives used as nouns (das Beste, das Schönste, das Wichtigste), the relative pronoun is «WAS» (not «das»): «Alles, was ich weiß, habe ich gelernt» (everything (that) I know, I've learned). STEP 2: the verb goes to the end: «Das ist das Beste, was ich je gegessen habe» (that's the best thing I've ever eaten). STEP 3: when it refers to a whole sentence, it's also «was» — exactly like English \"which\": «Er hat gewonnen, was mich freut» (he won, which makes me happy). STEP 4: «wo» as a relative of place in speech: «Die Stadt, wo ich wohne» (in standard German, «in der»); learn «in der» (lesson 49). STEP 5: remember the verb position: always at the end of the relative clause.",
+        "tabela": [
+          {
+            "antecedente": "alles",
+            "frase": "Alles, was ich weiß, habe ich gelernt."
+          },
+          {
+            "antecedente": "nichts",
+            "frase": "Das ist nichts, was ich verstehe."
+          },
+          {
+            "antecedente": "etwas",
+            "frase": "Das ist etwas, was mir gefällt."
+          },
+          {
+            "antecedente": "das Beste",
+            "frase": "Das ist das Beste, was ich je gegessen habe."
+          },
+          {
+            "antecedente": "a whole sentence (\"which\")",
+            "frase": "Er hat gewonnen, was mich freut."
+          },
+          {
+            "antecedente": "vieles",
+            "frase": "Vieles, was er sagt, stimmt nicht."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Alles, das ich weiß, habe ich gelernt.",
+            "certo": "Alles, was ich weiß, habe ich gelernt.",
+            "motivo": "After «alles»: «was»."
+          },
+          {
+            "errado": "Das ist das Beste, das ich gesehen habe.",
+            "certo": "Das ist das Beste, was ich gesehen habe.",
+            "motivo": "After a superlative used as a noun: «was»."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say 6 sentences with «was»: «Alles, was … Das ist das Beste, was … Das ist etwas, was …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write the chart of relative pronouns in the nominative and the accusative."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-048.json",
+  "responsavel": null
+}
