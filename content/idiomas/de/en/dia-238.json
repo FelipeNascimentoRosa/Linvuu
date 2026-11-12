@@ -1,0 +1,149 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 238,
+  "fase": 24,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Verbs with prepositions 2: darauf, daran, worauf, woran: Wo(r)- + preposition",
+  "objetivo": "Lesson 60, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 60,
+    "titulo": "Verbs with prepositions 2: darauf, daran, worauf, woran",
+    "objetivo": "Use the pronominal adverbs with «da(r)-» (darauf, daran, davon…) to refer back to things and situations, the questions with «wo(r)-» (worauf, woran…), and the look-ahead «darauf, dass …» / «darauf, … zu …».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Wo(r)- + preposition",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "worauf",
+            "translit": "voh-ROWF",
+            "pt": "for what, on what (a thing)",
+            "en": "what … for",
+            "audio": "worauf"
+          },
+          {
+            "ru": "woran",
+            "translit": "voh-RAHN",
+            "pt": "of what, about what (a thing)",
+            "en": "what … of",
+            "audio": "woran"
+          },
+          {
+            "ru": "wovon",
+            "translit": "voh-FON",
+            "pt": "of what, from what",
+            "en": "what … of",
+            "audio": "wovon"
+          },
+          {
+            "ru": "wofür",
+            "translit": "voh-FÜR",
+            "pt": "for what, what for",
+            "en": "what for",
+            "audio": "wofür"
+          },
+          {
+            "ru": "worüber",
+            "translit": "voh-RÜ-ber",
+            "pt": "about what",
+            "en": "what about",
+            "audio": "worüber"
+          },
+          {
+            "ru": "womit",
+            "translit": "voh-MIT",
+            "pt": "with what",
+            "en": "with what",
+            "audio": "womit"
+          },
+          {
+            "ru": "wozu",
+            "translit": "voh-TSOO",
+            "pt": "what for, to what",
+            "en": "what for",
+            "audio": "wozu"
+          },
+          {
+            "ru": "worum",
+            "translit": "voh-ROOM",
+            "pt": "about what",
+            "en": "what about",
+            "audio": "worum"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Asking about things with wo(r)-",
+        "explicacao": "STEP 1: to ask about a THING or SITUATION linked to a prepositional verb, use «WO(R)-» + preposition: «Ich warte auf den Bus» → «WORAUF wartest du?» (What are you waiting for?) English leaves the preposition at the end; German glues it to the question word. STEP 2: the same rule as «da(r)-»: «wo-» + consonant (womit, wovon, wofür, wozu) and «wor-» + vowel (worauf, woran, worüber, worum). STEP 3: for PEOPLE, use the preposition + question pronoun: «Auf WEN wartest du?» (Who are you waiting for? — accusative), «Mit WEM sprichst du?» (Who are you talking to? — dative). STEP 4: compare: «Worauf wartest du?» (a thing) × «Auf wen wartest du?» (a person). STEP 5: answer with the preposition + noun or with «darauf»: «Ich warte auf den Bus» or «Ich warte darauf.» STEP 6: in conversation, «Woran denkst du?» (What are you thinking about?), «Worüber sprecht ihr?» (What are you talking about?) and «Wofür interessierst du dich?» (What are you interested in?) are very common.",
+        "tabela": [
+          {
+            "coisa": "Worauf wartest du?",
+            "pessoa": "Auf wen wartest du?"
+          },
+          {
+            "coisa": "Woran denkst du?",
+            "pessoa": "An wen denkst du?"
+          },
+          {
+            "coisa": "Worüber sprecht ihr?",
+            "pessoa": "Über wen sprecht ihr?"
+          },
+          {
+            "coisa": "Wofür interessierst du dich?",
+            "pessoa": "Für wen interessierst du dich?"
+          },
+          {
+            "coisa": "Womit beschäftigst du dich?",
+            "pessoa": "Mit wem beschäftigst du dich?"
+          },
+          {
+            "coisa": "Wovon träumst du?",
+            "pessoa": "Von wem träumst du?"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Auf was wartest du?",
+            "certo": "Worauf wartest du?",
+            "motivo": "In correct German: «worauf» for things."
+          },
+          {
+            "errado": "Worauf wartest du? (about a person)",
+            "certo": "Auf wen wartest du?",
+            "motivo": "A person: preposition + wen/wem."
+          },
+          {
+            "errado": "Wo denkst du an?",
+            "certo": "Woran denkst du?",
+            "motivo": "The preposition joins «wo(r)-» — it doesn't dangle at the end."
+          }
+        ],
+        "tag": "Pronouns"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Ask 6 questions out loud with «wo(r)-»: «Worauf wartest du? Woran denkst du? Worüber sprecht ihr?»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 pairs of sentences: with a noun and with a pronominal adverb."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-060.json",
+  "responsavel": null
+}
