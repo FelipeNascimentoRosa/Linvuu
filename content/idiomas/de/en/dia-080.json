@@ -1,0 +1,526 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 80,
+  "fase": 8,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "A1 review and mock test: A1 mock test",
+  "objetivo": "Lesson 20, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 20,
+    "titulo": "A1 review and mock test",
+    "objetivo": "Review all of A1 on one map, practice reading, listening, writing and speaking in the A1 exam format (Hören, Lesen, Schreiben, Sprechen), fix the most common mistakes and take an original practice test.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "A1 mock test",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ich möchte ein Zimmer reservieren",
+            "opcoes": [
+              "Ich möchte ein Zimmer reservieren",
+              "Ich habe ein Zimmer gebucht",
+              "Ich suche ein Zimmer"
+            ],
+            "gabarito": "Ich möchte ein Zimmer reservieren",
+            "explicacao": "Hören: what does the person want?",
+            "id": "de-020-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Der Zug fährt um vierzehn Uhr fünfzehn ab",
+            "opcoes": [
+              "Der Zug fährt um vierzehn Uhr fünfzehn ab",
+              "Der Zug kommt um vierzehn Uhr fünfzehn an",
+              "Der Zug fährt um vier Uhr fünfzehn ab"
+            ],
+            "gabarito": "Der Zug fährt um vierzehn Uhr fünfzehn ab",
+            "explicacao": "Hören: departure at 14:15.",
+            "id": "de-020-e02"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Great! See you Friday, then.\"",
+            "opcoes": [
+              "Dann",
+              "Freitag.",
+              "Prima!",
+              "bis"
+            ],
+            "gabarito": "Prima! Dann bis Freitag.",
+            "explicacao": "Write: Prima! Dann bis Freitag.",
+            "id": "de-020-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Hier darf man nicht parken",
+            "opcoes": [
+              "Hier darf man nicht parken",
+              "Hier muss man parken",
+              "Hier will man parken"
+            ],
+            "gabarito": "Hier darf man nicht parken",
+            "explicacao": "Hören: a prohibition.",
+            "id": "de-020-e03"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Hallo Lea, hier ist Paul. Hast du morgen Zeit?",
+            "respostaEsperada": "Hallo Lea, hier ist Paul. Hast du morgen Zeit?",
+            "explicacao": "Hi, Lea, it's Paul. Do you have time tomorrow?",
+            "id": "de-020-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Prima! Dann bis Freitag.",
+            "respostaEsperada": "Prima! Dann bis Freitag.",
+            "explicacao": "Great! See you Friday, then.",
+            "id": "de-020-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Die Wohnung hat zwei Zimmer und einen Balkon",
+            "respostaEsperada": "Die Wohnung hat zwei Zimmer und einen Balkon",
+            "explicacao": "Schreiben: es gibt / haben + accusative.",
+            "id": "de-020-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Read: «Der Supermarkt ist von Montag bis Samstag von 8 bis 20 Uhr geöffnet.» When is it open?",
+            "opcoes": [
+              "Monday to Saturday, 8 am to 8 pm",
+              "Every day, 8 am to 8 pm",
+              "Monday to Friday, 8 am to 6 pm"
+            ],
+            "gabarito": "Monday to Saturday, 8 am to 8 pm",
+            "explicacao": "Lesen: «geöffnet» = open.",
+            "id": "de-020-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Ich möchte ein Zimmer reservieren",
+            "opcoes": [
+              "reservieren",
+              "Ich",
+              "möchte",
+              "ein",
+              "Zimmer"
+            ],
+            "gabarito": "Ich möchte ein Zimmer reservieren",
+            "explicacao": "Write: Ich möchte ein Zimmer reservieren",
+            "id": "de-020-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Read: «Einzelzimmer: 45 € pro Nacht. Frühstück: 5 €.» How much is one night with breakfast?",
+            "opcoes": [
+              "50 euros",
+              "45 euros",
+              "40 euros"
+            ],
+            "gabarito": "50 euros",
+            "explicacao": "Lesen: 45 + 5.",
+            "id": "de-020-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Read: «Liebe Anna, ich komme um 14 Uhr am Bahnhof an. Holst du mich ab? Gruß, Paul.» What does Paul want?",
+            "opcoes": [
+              "For Anna to pick him up at the station",
+              "For Anna to come to the hotel",
+              "For Anna to call at 2 pm"
+            ],
+            "gabarito": "For Anna to pick him up at the station",
+            "explicacao": "Lesen: «abholen» = to pick up.",
+            "id": "de-020-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Der Zug fährt um vierzehn Uhr fünfzehn ab",
+            "opcoes": [
+              "Zug",
+              "fährt",
+              "vierzehn",
+              "Uhr",
+              "um",
+              "ab",
+              "fünfzehn",
+              "Der"
+            ],
+            "gabarito": "Der Zug fährt um vierzehn Uhr fünfzehn ab",
+            "explicacao": "Write: Der Zug fährt um vierzehn Uhr fünfzehn ab",
+            "id": "de-020-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Gut. Möchtest du ins Kino gehen?",
+            "respostaEsperada": "Gut. Möchtest du ins Kino gehen?",
+            "explicacao": "Great. Do you want to go to the movies?",
+            "id": "de-020-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Read the sign: «Rauchen verboten.» It means:",
+            "opcoes": [
+              "No smoking",
+              "Smoking allowed",
+              "Smoking only here"
+            ],
+            "gabarito": "No smoking",
+            "explicacao": "Lesen: signs.",
+            "id": "de-020-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Read: «Ich bin Köchin und arbeite im Restaurant.» The person:",
+            "opcoes": [
+              "is a cook",
+              "is a waitress",
+              "is a customer"
+            ],
+            "gabarito": "is a cook",
+            "explicacao": "Lesen: jobs.",
+            "id": "de-020-e09"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Hier darf man nicht parken",
+            "opcoes": [
+              "man",
+              "Hier",
+              "darf",
+              "nicht",
+              "parken"
+            ],
+            "gabarito": "Hier darf man nicht parken",
+            "explicacao": "Write: Hier darf man nicht parken",
+            "id": "de-020-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich ___ 25 Jahre alt. (sein)",
+            "opcoes": [
+              "bin",
+              "habe",
+              "bist"
+            ],
+            "gabarito": "bin",
+            "explicacao": "Age with «sein».",
+            "id": "de-020-e10"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Ja, gern! Um wie viel Uhr?",
+            "respostaEsperada": "Ja, gern! Um wie viel Uhr?",
+            "explicacao": "Yes, gladly! What time?",
+            "id": "de-020-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Die Wohnung hat zwei Zimmer und einen Balkon",
+            "opcoes": [
+              "zwei",
+              "Die",
+              "Zimmer",
+              "Wohnung",
+              "Balkon",
+              "hat",
+              "und",
+              "einen"
+            ],
+            "gabarito": "Die Wohnung hat zwei Zimmer und einen Balkon",
+            "explicacao": "Write: Die Wohnung hat zwei Zimmer und einen Balkon",
+            "id": "de-020-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich esse ___ Käse. (the)",
+            "opcoes": [
+              "den",
+              "der",
+              "dem"
+            ],
+            "gabarito": "den",
+            "explicacao": "Masculine accusative.",
+            "id": "de-020-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich habe ___ Zeit. (no)",
+            "opcoes": [
+              "keine",
+              "kein",
+              "nicht"
+            ],
+            "gabarito": "keine",
+            "explicacao": "«Zeit» is feminine.",
+            "id": "de-020-e12"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ich möchte ein Zimmer reservieren",
+            "respostaEsperada": "Ich möchte ein Zimmer reservieren",
+            "explicacao": "Write: Ich möchte ein Zimmer reservieren",
+            "id": "de-020-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich fahre ___ Zug nach Berlin.",
+            "opcoes": [
+              "mit dem",
+              "mit der",
+              "in dem"
+            ],
+            "gabarito": "mit dem",
+            "explicacao": "«Zug» is a der word.",
+            "id": "de-020-e13"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ Sie bitte Platz! (nehmen)",
+            "opcoes": [
+              "Nehmen",
+              "Nimm",
+              "Nehmt"
+            ],
+            "gabarito": "Nehmen",
+            "explicacao": "Formal imperative.",
+            "id": "de-020-e14"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Der Zug fährt um vierzehn Uhr fünfzehn ab",
+            "respostaEsperada": "Der Zug fährt um vierzehn Uhr fünfzehn ab",
+            "explicacao": "Write: Der Zug fährt um vierzehn Uhr fünfzehn ab",
+            "id": "de-020-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Um halb acht. Ich hole dich ab.",
+            "respostaEsperada": "Um halb acht. Ich hole dich ab.",
+            "explicacao": "At seven-thirty. I'll pick you up.",
+            "id": "de-020-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"I'm not working today.\"",
+            "opcoes": [
+              "Heute",
+              "arbeite",
+              "ich",
+              "nicht"
+            ],
+            "gabarito": "Heute arbeite ich nicht.",
+            "explicacao": "Verb in 2nd position; «nicht» at the end.",
+            "id": "de-020-e15"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Hier darf man nicht parken",
+            "respostaEsperada": "Hier darf man nicht parken",
+            "explicacao": "Write: Hier darf man nicht parken",
+            "id": "de-020-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"Could you speak more slowly, please?\"",
+            "opcoes": [
+              "Können",
+              "Sie",
+              "bitte",
+              "langsamer",
+              "sprechen"
+            ],
+            "gabarito": "Können Sie bitte langsamer sprechen?",
+            "explicacao": "Modal first; infinitive at the end.",
+            "id": "de-020-e16"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich ___ 20 Jahre alt. (I'm twenty now.)",
+            "opcoes": [
+              "bin",
+              "habe",
+              "werde",
+              "heiße"
+            ],
+            "gabarito": "bin",
+            "explicacao": "For your current age: «Ich bin 20 Jahre alt». «Ich werde 20 Jahre alt» means you're turning twenty — «werden» = to become.",
+            "id": "de-020-m01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Heute ___ ich im Büro.",
+            "opcoes": [
+              "arbeite",
+              "ich arbeite",
+              "arbeitet",
+              "arbeitest"
+            ],
+            "gabarito": "arbeite",
+            "explicacao": "After «heute», the verb comes in 2nd position.",
+            "id": "de-020-m02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Du ___ Brot. (eat)",
+            "opcoes": [
+              "isst",
+              "isst du",
+              "esst",
+              "esse"
+            ],
+            "gabarito": "isst",
+            "explicacao": "e → i with «du»: «du isst».",
+            "id": "de-020-m03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich habe ___ Zeit. (no)",
+            "opcoes": [
+              "keine",
+              "nicht",
+              "kein",
+              "keinen"
+            ],
+            "gabarito": "keine",
+            "explicacao": "«Zeit» is feminine: «keine».",
+            "id": "de-020-m04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich sehe ___. (him)",
+            "opcoes": [
+              "ihn",
+              "er",
+              "ihm",
+              "sein"
+            ],
+            "gabarito": "ihn",
+            "explicacao": "Masculine accusative pronoun: «ihn».",
+            "id": "de-020-m05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich gehe ___ Kino. (to the)",
+            "opcoes": [
+              "ins",
+              "im",
+              "in der",
+              "in dem"
+            ],
+            "gabarito": "ins",
+            "explicacao": "Movement: accusative; «in das» = «ins».",
+            "id": "de-020-m06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Es gibt ___ Balkon. (a)",
+            "opcoes": [
+              "einen",
+              "ein",
+              "eine",
+              "einem"
+            ],
+            "gabarito": "einen",
+            "explicacao": "«es gibt» + masculine accusative.",
+            "id": "de-020-m07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Ich möchte essen einen Fisch.",
+              "Ich möchte einen Fisch essen.",
+              "Ich essen möchte einen Fisch."
+            ],
+            "gabarito": "Ich möchte einen Fisch essen.",
+            "explicacao": "The second verb goes to the end.",
+            "id": "de-020-m08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Ich aufstehe um sieben Uhr.",
+              "Ich stehe um sieben Uhr auf.",
+              "Ich stehe auf um sieben Uhr."
+            ],
+            "gabarito": "Ich stehe um sieben Uhr auf.",
+            "explicacao": "The separable prefix goes to the end.",
+            "id": "de-020-m09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is a formal command to open the book?",
+            "opcoes": [
+              "Sie öffnen das Buch!",
+              "Öffnen Sie das Buch!",
+              "Öffnet Sie das Buch!"
+            ],
+            "gabarito": "Öffnen Sie das Buch!",
+            "explicacao": "Formal imperative: verb before «Sie».",
+            "id": "de-020-m10"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Schreiben: write 5 sentences about yourself (name, origin, job, where you live, a hobby).",
+            "respostaEsperada": "Ich heiße Ana. Ich komme aus Brasilien. Ich bin Lehrerin. Ich wohne in Berlin. Ich schwimme gern.",
+            "id": "de-020-e17"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Sprechen, in 3 parts: (1) introduce yourself; (2) ask and answer questions from keywords (Familie, Beruf, Wohnung, Hobby, Essen); (3) make 3 polite requests («Machen Sie bitte das Fenster zu. Können Sie mir helfen?»)."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Reread the A1 map and choose the 3 points where you still make mistakes."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-020.json",
+  "responsavel": null
+}
