@@ -1,0 +1,160 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 91,
+  "fase": 10,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Perfekt 3: haben or sein?: The complete Perfekt",
+  "objetivo": "Lesson 23, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 23,
+    "titulo": "Perfekt 3: haben or sein?",
+    "objetivo": "Choose the right Perfekt auxiliary (haben or sein), use verbs of movement and change of state, and build complete sentences — questions, negatives, and the words schon, noch nicht and noch nie.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "The complete Perfekt",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Questions, negatives, and the words schon, noch nicht, noch nie",
+        "explicacao": "STEP 1: a yes/no question starts with the auxiliary: «Hast du schon gegessen?» (Have you eaten yet?), «Bist du nach Berlin gefahren?» STEP 2: the negative «nicht» goes BEFORE the Partizip II: «Ich habe nicht gearbeitet.» (I didn't work.) STEP 3: «schon» (already, yet) and «noch nicht» (not yet): «Hast du schon gegessen? — Nein, noch nicht.» STEP 4: «schon einmal» (ever, once before) and «noch nie» (never, not once so far): «Hast du schon einmal Sushi gegessen? — Nein, noch nie.» This is where German uses the Perfekt for life experience, just like English \"Have you ever…?\". STEP 5: counting times: einmal, zweimal, dreimal (once, twice, three times). STEP 6: with «sein», «haben» and the modal verbs, conversation prefers the Präteritum (lesson 24): «Ich war schon einmal in Berlin.»",
+        "tabela": [
+          {
+            "funcao": "question",
+            "exemplo": "Hast du schon gegessen? / Bist du schon gegangen?"
+          },
+          {
+            "funcao": "negative",
+            "exemplo": "Ich habe nicht gearbeitet."
+          },
+          {
+            "funcao": "already / not yet",
+            "exemplo": "Ja, schon. / Nein, noch nicht."
+          },
+          {
+            "funcao": "ever (once before)",
+            "exemplo": "Hast du schon einmal Sushi gegessen?"
+          },
+          {
+            "funcao": "never",
+            "exemplo": "Nein, noch nie."
+          },
+          {
+            "funcao": "how many times",
+            "exemplo": "Ich bin dreimal dort gewesen."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich nicht habe gearbeitet.",
+            "certo": "Ich habe nicht gearbeitet.",
+            "motivo": "«nicht» goes before the participle."
+          },
+          {
+            "errado": "Ich habe nie Sushi gegessen.",
+            "certo": "Ich habe noch nie Sushi gegessen.",
+            "motivo": "Life experience: «noch nie» (never yet), not just «nie»."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 10,
+        "titulo": "Hast du schon einmal …? / Have you ever …?",
+        "contexto": "Two friends talk about their experiences.",
+        "linhas": [
+          {
+            "personagem": "Lea",
+            "ru": "— Hast du schon einmal Sushi gegessen?",
+            "pt": "— Have you ever eaten sushi?",
+            "audio": "Hast du schon einmal Sushi gegessen?",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Nein, noch nie. Und du?",
+            "pt": "— No, never. What about you?",
+            "audio": "Nein, noch nie. Und du?",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Ja, ich habe letztes Jahr in Berlin Sushi gegessen.",
+            "pt": "— Yes, I ate sushi in Berlin last year.",
+            "audio": "Ja, ich habe letztes Jahr in Berlin Sushi gegessen.",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Bist du oft in Berlin gewesen?",
+            "pt": "— Have you been to Berlin often?",
+            "audio": "Bist du oft in Berlin gewesen?",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Ja, ich bin dreimal dort gewesen.",
+            "pt": "— Yes, I've been there three times.",
+            "audio": "Ja, ich bin dreimal dort gewesen.",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Bist du mit dem Zug gefahren?",
+            "pt": "— Did you go by train?",
+            "audio": "Bist du mit dem Zug gefahren?",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Einmal mit dem Zug und zweimal bin ich geflogen.",
+            "pt": "— Once by train, and twice I flew.",
+            "audio": "Einmal mit dem Zug und zweimal bin ich geflogen.",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Ich bin noch nie nach Berlin geflogen.",
+            "pt": "— I've never flown to Berlin.",
+            "audio": "Ich bin noch nie nach Berlin geflogen.",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Dann musst du bald mitkommen!",
+            "pt": "— Then you have to come along soon!",
+            "audio": "Dann musst du bald mitkommen!",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Gern! Ich habe im August Urlaub.",
+            "pt": "— I'd love to! I have vacation in August.",
+            "audio": "Gern! Ich habe im August Urlaub.",
+            "rotulo": "Tom"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Ask and answer out loud: «Hast du schon einmal …? Nein, noch nie. Ja, ich bin einmal / zweimal … gewesen.»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write a rule of thumb for choosing between «haben» and «sein», with 3 examples of each."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-023.json",
+  "responsavel": null
+}
