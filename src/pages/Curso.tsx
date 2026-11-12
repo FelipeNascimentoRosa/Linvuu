@@ -6,6 +6,7 @@ import { usePageTitle } from '../lib/usePageTitle';
 import { SITE_URL } from '../config/site';
 import { LOCALE, LOCALES, useT } from '../i18n';
 import { gratis } from '../config/planos';
+import { PerguntasCurso } from '../components/PerguntasCurso';
 import { pontoDeRetomada, useDiasFeitos } from '../lib/retomar';
 import NaoEncontrada from './NaoEncontrada';
 import CursoBr from './CursoBr';
@@ -91,6 +92,8 @@ export default function Curso() {
         <h2 id="curso-apresentacao" className="pagina-h2">{APRESENTACOES_CURSO[curso.id].titulo}</h2>
         {APRESENTACOES_CURSO[curso.id].paragrafos.map((p) => <p key={p}>{p}</p>)}
       </section>}
+      {/* .com (lote I3): perguntas de quem compara cursos, só nos cursos explicados em inglês do começo ao fim. */}
+      {website && LOCALE.codigo !== 'pt-BR' && cob.total > 0 && cob.traduzidas >= cob.total && <PerguntasCurso id={curso.id} nome={curso.nome} grupos={grupos} />}
       {!website && retomar}
 
       {cobertura && <p className="nota">{cobertura}</p>}
