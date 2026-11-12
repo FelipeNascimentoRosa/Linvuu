@@ -3,7 +3,7 @@ import { APK } from '../plataforma';
 import { Link } from 'react-router-dom';
 import { Navegacao } from '../components/Navegacao';
 import { usePageTitle } from '../lib/usePageTitle';
-import { EMAIL_OFICIAL } from '../config/site';
+import { emailOficial } from '../config/site';
 import { PRECO_ANUAL, PRECO_MENSAL, PRECO_TRIMESTRAL, PRECO_TRIMESTRAL_PIX, PRECOS } from '../config/planos';
 import { LOCALE, urlEm, useT } from '../i18n';
 
@@ -15,7 +15,7 @@ function PrivacidadePt() {
       <h1 className="pagina-h1">Política de privacidade</h1>
       <p className="resultado">Última atualização: {ATUALIZADO}</p>
       <div className="texto-legal">
-        <p>Esta política explica quais dados a Linvuu coleta, para quê, e quais são os seus direitos, conforme a Lei Geral de Proteção de Dados (LGPD, Lei 13.709/2018). Contato do responsável: <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>.</p>
+        <p>Esta política explica quais dados a Linvuu coleta, para quê, e quais são os seus direitos, conforme a Lei Geral de Proteção de Dados (LGPD, Lei 13.709/2018). Contato do responsável: <a href={`mailto:${emailOficial()}`}>{emailOficial()}</a>.</p>
         <h2>Quais dados coletamos</h2>
         <ul>
           <li><strong>Conta:</strong> nome, e-mail e senha. A senha é guardada pelo serviço de autenticação do Google (Firebase Authentication); a Linvuu não tem acesso a ela em texto.</li>
@@ -40,7 +40,7 @@ function PrivacidadePt() {
         <h2>Por quanto tempo guardamos</h2>
         <p>Enquanto a sua conta existir ou até você pedir a exclusão. Dados de newsletter ficam até você cancelar.</p>
         <h2>Os seus direitos</h2>
-        <p>Você pode pedir confirmação de que tratamos seus dados, acesso, correção, exclusão, portabilidade e informações sobre o compartilhamento, além de retirar o consentimento. Escreva para <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>. Você também pode reclamar à Autoridade Nacional de Proteção de Dados (ANPD).</p>
+        <p>Você pode pedir confirmação de que tratamos seus dados, acesso, correção, exclusão, portabilidade e informações sobre o compartilhamento, além de retirar o consentimento. Escreva para <a href={`mailto:${emailOficial()}`}>{emailOficial()}</a>. Você também pode reclamar à Autoridade Nacional de Proteção de Dados (ANPD).</p>
         <h2>Menores de idade</h2>
         <p>Se você tem menos de 18 anos, use o site com o conhecimento de um responsável.</p>
         <h2>Mudanças</h2>
@@ -56,7 +56,7 @@ function TermosPt() {
       <h1 className="pagina-h1">Termos de uso</h1>
       <p className="resultado">Última atualização: 5 de novembro de 2026</p>
       <div className="texto-legal">
-        <p>Ao usar o site da Linvuu ou criar uma conta, você concorda com estes termos. Dúvidas: <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>.</p>
+        <p>Ao usar o site da Linvuu ou criar uma conta, você concorda com estes termos. Dúvidas: <a href={`mailto:${emailOficial()}`}>{emailOficial()}</a>.</p>
         <h2>O que a Linvuu oferece</h2>
         <p>Cursos de idiomas, em texto, áudio e exercícios. Algumas aulas estão em produção ou em revisão e podem mudar. Cada aula mostra o seu status.</p>
         <h2>Resultados</h2>
@@ -68,7 +68,7 @@ function TermosPt() {
         <h2>Plano pago e reembolso</h2>
         {!APK && (<p>As duas primeiras aulas de cada curso são grátis. Para continuar, há uma assinatura mensal de {PRECO_MENSAL}, cobrada todo mês até você cancelar. O preço e a forma de pagamento aparecem antes da compra.</p>)}
         {!APK && (<p><strong>Pacotes de pagamento único:</strong> 3 meses por {PRECO_TRIMESTRAL_PIX} no Pix (30% de desconto) ou {PRECO_TRIMESTRAL} no cartão ou boleto; 12 meses por {PRECO_ANUAL}. Os pacotes não se renovam sozinhos. O período começa quando o pagamento é confirmado (Pix e boleto podem levar algum tempo) e, se você comprar um novo pacote antes do fim do atual, o novo período começa quando o atual termina. Quem tem a assinatura mensal ativa não compra pacote por cima dela: primeiro cancela a assinatura.</p>)}
-        <p><strong>Reembolso de 7 dias:</strong> você pode pedir o reembolso integral em até 7 dias depois do pagamento de qualquer plano (mensal ou pacote), sem dar motivo, escrevendo para <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>. Esse prazo também é o direito de arrependimento previsto no Código de Defesa do Consumidor para compras feitas pela internet.</p>
+        <p><strong>Reembolso de 7 dias:</strong> você pode pedir o reembolso integral em até 7 dias depois do pagamento de qualquer plano (mensal ou pacote), sem dar motivo, escrevendo para <a href={`mailto:${emailOficial()}`}>{emailOficial()}</a>. Esse prazo também é o direito de arrependimento previsto no Código de Defesa do Consumidor para compras feitas pela internet.</p>
         <p><strong>Cancelamento da assinatura mensal:</strong> você cancela quando quiser, sem multa. O acesso continua até o fim do período já pago, e não há nova cobrança depois disso.</p>
         <h2>Disponibilidade</h2>
         <p>Trabalhamos para manter o site no ar, mas ele pode ficar indisponível para manutenção ou por falhas fora do nosso controle.</p>
@@ -86,7 +86,7 @@ function PrivacyEn() {
       <h1 className="pagina-h1">Privacy policy</h1>
       <p className="resultado">Last updated: 8 October 2026</p>
       <div className="texto-legal">
-        <p>This policy explains what data Linvuu collects, why, and what your rights are under Brazil's General Data Protection Law (LGPD, Law 13.709/2018). Contact: <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>.</p>
+        <p>This policy explains what data Linvuu collects, why, and what your rights are under Brazil's General Data Protection Law (LGPD, Law 13.709/2018). Contact: <a href={`mailto:${emailOficial()}`}>{emailOficial()}</a>.</p>
         <h2>What we collect</h2>
         <ul>
           <li><strong>Account:</strong> name, e-mail and password. The password is stored by Google's authentication service (Firebase Authentication); Linvuu never sees it in plain text.</li>
@@ -110,7 +110,7 @@ function PrivacyEn() {
         <h2>How long we keep it</h2>
         <p>As long as your account exists or until you ask us to delete it. Newsletter data is kept until you unsubscribe.</p>
         <h2>Your rights</h2>
-        <p>You can ask us to confirm that we process your data, and to access, correct, delete or port it, ask who we share it with, and withdraw your consent. Write to <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>. You may also complain to Brazil's data protection authority (ANPD) or to the authority of your country.</p>
+        <p>You can ask us to confirm that we process your data, and to access, correct, delete or port it, ask who we share it with, and withdraw your consent. Write to <a href={`mailto:${emailOficial()}`}>{emailOficial()}</a>. You may also complain to Brazil's data protection authority (ANPD) or to the authority of your country.</p>
         <h2>Minors</h2>
         <p>If you are under 18, use the site with the knowledge of a parent or guardian.</p>
         <h2>Changes</h2>
@@ -126,7 +126,7 @@ function TermsEn() {
       <h1 className="pagina-h1">Terms of use</h1>
       <p className="resultado">Last updated: 5 November 2026</p>
       <div className="texto-legal">
-        <p>By using the Linvuu site or creating an account you agree to these terms. Questions: <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>.</p>
+        <p>By using the Linvuu site or creating an account you agree to these terms. Questions: <a href={`mailto:${emailOficial()}`}>{emailOficial()}</a>.</p>
         <h2>What Linvuu offers</h2>
         <p>Language courses in text, audio and exercises. Some lessons are in production or under review and may change; each lesson shows its status.</p>
         <h2>Results</h2>
@@ -138,7 +138,7 @@ function TermsEn() {
         <h2>Paid plan and refunds</h2>
         {!APK && (<p>The first two lessons of every course are free. To continue there is a monthly subscription of {PRECOS.en.mensal} (US dollars), charged every month until you cancel. The price and payment method are shown before you buy; your card issuer may charge its own fees.</p>)}
         {!APK && (<p><strong>One-time package:</strong> 12 months for {PRECOS.en.anual}, paid once by card. The package does not renew automatically. The period starts when the payment is confirmed and, if you buy a new package before the current one ends, the new period starts when the current one ends. While a monthly subscription is active you cannot buy a package on top of it; cancel the subscription first.</p>)}
-        <p><strong>7-day refund:</strong> you can ask for a full refund within 7 days of paying for any plan (monthly or package), without giving a reason, by writing to <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>.</p>
+        <p><strong>7-day refund:</strong> you can ask for a full refund within 7 days of paying for any plan (monthly or package), without giving a reason, by writing to <a href={`mailto:${emailOficial()}`}>{emailOficial()}</a>.</p>
         <p><strong>Cancelling the monthly subscription:</strong> cancel whenever you like, with no fee. Access continues until the end of the period already paid and there are no further charges.</p>
         <h2>Availability</h2>
         <p>We work to keep the site online, but it may be unavailable for maintenance or because of failures beyond our control.</p>

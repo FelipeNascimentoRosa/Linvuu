@@ -1,7 +1,7 @@
 import { BotaoPreferencias } from './AnalyticsConsent';
 import { Link } from 'react-router-dom';
 import { CURSOS_ATIVOS, idiomasDeGramaticaNoSite, cursoComExplicacaoNoSite } from '../lib/content';
-import { EMAIL_OFICIAL } from '../config/site';
+import { emailOficial } from '../config/site';
 import { LOCALE, useT } from '../i18n';
 import { Redes } from './Redes';
 import { ContatoIcones } from './IconesContato';
@@ -49,7 +49,7 @@ export function Footer({ semNovidades = false }: { semNovidades?: boolean }) {
       <div className="lv-foot-base">
         <span>{t.rodape.direitos}</span>
         <span className="lv-foot-legal"><Link to="/termos">{t.rodape.termos}</Link><Link to="/privacidade">{t.rodape.privacidade}</Link><Link to="/excluir-conta">{({'pt-BR':'Excluir conta',en:'Delete account'} as const)[LOCALE.codigo]}</Link><BotaoPreferencias /></span>
-        <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>
+        <a href={`mailto:${emailOficial()}`}>{emailOficial()}</a>
         {/* Identificação legal da empresa (nome registado e CNPJ): factual, não se traduz. */}
         <span className="lv-foot-cnpj">Linvuu · Felipe Nascimento Rosa · CNPJ 38.800.654/0001-72 · São José dos Campos/SP</span>
       </div>

@@ -2,7 +2,7 @@ import { FormEvent, useEffect, useRef, useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { useAuth } from '../lib/AuthContext';
 import { googleAtivo, mensagemDeErro } from '../lib/firebase';
-import { EMAIL_OFICIAL } from '../config/site';
+import { emailOficial } from '../config/site';
 import { usePageTitle } from '../lib/usePageTitle';
 import { useT } from '../i18n';
 
@@ -95,7 +95,7 @@ export default function Conta({ modo }: { modo: 'entrar' | 'cadastro' }) {
 
         {cadastro && <p className="conta-aceite">{c.aceite[0]} <Link to="/termos">{c.aceite[1]}</Link> {c.aceite[2]} <Link to="/privacidade">{c.aceite[3]}</Link>.</p>}
         <p className="conta-troca">{cadastro ? c.jaTem : c.naoTem} <Link to={`${outra}${destino !== '/' ? `?proximo=${encodeURIComponent(destino)}` : ''}`}>{cadastro ? c.entrarBtn : c.cadastreGratis}</Link></p>
-        <p className="conta-ajuda">{c.ajuda} <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a></p>
+        <p className="conta-ajuda">{c.ajuda} <a href={`mailto:${emailOficial()}`}>{emailOficial()}</a></p>
       </div>
     </div>
   );

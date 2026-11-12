@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { Navegacao } from '../components/Navegacao';
 import { usePageTitle } from '../lib/usePageTitle';
-import { EMAIL_OFICIAL } from '../config/site';
+import { emailOficial } from '../config/site';
 import { LOCALE, useT } from '../i18n';
 import { useAuth } from '../lib/AuthContext';
 import { EXCLUSAO } from '../lib/exclusaoConta';
@@ -32,9 +32,9 @@ export default function ExcluirConta() {
                 <ExclusaoDireta origem="site" />
                 <label htmlFor="exclusao-email">{f.rotulo}</label>
                 <input id="exclusao-email" type="email" autoComplete="email" maxLength={254} value={email} onChange={(e) => setEmail(e.target.value)} />
-                <a className="btn btn-primary" href={`mailto:${EMAIL_OFICIAL}?subject=${encodeURIComponent(f.assunto)}&body=${encodeURIComponent(f.corpo + email.trim())}`}>{f.botao}</a>
+                <a className="btn btn-primary" href={`mailto:${emailOficial()}?subject=${encodeURIComponent(f.assunto)}&body=${encodeURIComponent(f.corpo + email.trim())}`}>{f.botao}</a>
                 <p>{f.aviso}</p>
-                <p>{f.alternativa} <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>.</p>
+                <p>{f.alternativa} <a href={`mailto:${emailOficial()}`}>{emailOficial()}</a>.</p>
               </div>
             )}
           </section>

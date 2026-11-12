@@ -9,7 +9,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { SESSOES_GRATIS, PRECO_MENSAL, PRECO_TRIMESTRAL, PRECO_TRIMESTRAL_PIX, PRECO_ANUAL, CENTAVOS, CENTAVOS_USD, PRECOS, precoSchema } from '../config/planos.ts';
 import { LOCALES, Locale, caminhoEm, localeDoCaminho, localePadrao, semPrefixo, siteDoIdioma, urlAbsolutaEm } from '../i18n/locales.ts';
-import { EMAIL_OFICIAL } from '../config/site.ts';
+import { emailOficial } from '../config/site.ts';
 import { CONTATO, EX_ALUNOS } from './institucional.ts';
 import { SOBRE } from './sobre.ts';
 import { POR_QUE } from './porQue.ts';
@@ -476,7 +476,7 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
   if (base === '/excluir-conta') {
     // Sem JavaScript a página continua útil: texto completo e o endereço para o pedido.
     const x = EXCLUSAO[loc.codigo];
-    corpo = cabeca(x.titulo, x.lead) + x.secoes.map((s, i) => `<h2>${esc(s.titulo)}</h2>${s.passos ? `<ol>${s.passos.map((p) => `<li>${esc(p)}</li>`).join('')}</ol>` : ''}${s.itens ? li(s.itens.map(esc)) : ''}${(s.paragrafos ?? []).map((p) => `<p>${esc(p)}</p>`).join('')}${i === 0 ? `<p>${esc(x.formulario.alternativa)} <a href="mailto:${EMAIL_OFICIAL}">${EMAIL_OFICIAL}</a>.</p>` : ''}`).join('');
+    corpo = cabeca(x.titulo, x.lead) + x.secoes.map((s, i) => `<h2>${esc(s.titulo)}</h2>${s.passos ? `<ol>${s.passos.map((p) => `<li>${esc(p)}</li>`).join('')}</ol>` : ''}${s.itens ? li(s.itens.map(esc)) : ''}${(s.paragrafos ?? []).map((p) => `<p>${esc(p)}</p>`).join('')}${i === 0 ? `<p>${esc(x.formulario.alternativa)} <a href="mailto:${emailOficial()}">${emailOficial()}</a>.</p>` : ''}`).join('');
   }
   if (base === '/russo-online') {
     // O texto inteiro vai no HTML do servidor: é o que o Google lê sem executar JavaScript, e é a única página que
@@ -498,7 +498,7 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
       + AUTORES.map((x) => `<h3 id="${x.id}">${esc(x.nome)}</h3><p>${esc(s.autorPapel)} ${x.links.map((u) => `<a href="${esc(u)}" rel="me">${/linkedin/.test(u) ? 'LinkedIn' : 'Facebook'}</a>`).join(' · ')}</p>`).join('')
       + `<p>${esc(s.bio)}</p><h2>${esc(s.origemTitulo)}</h2><p>${esc(s.origem)}</p><h2>${esc(s.metodoTitulo)}</h2>`
       + s.metodo.map((x) => `<p><strong>${esc(x.titulo)}</strong> ${esc(x.texto)}</p>`).join('')
-      + `<h2>${esc(s.audioTitulo)}</h2><p>${esc(s.audio)}</p><h2>${esc(s.ctaTitulo)}</h2><p>${a('/livros', s.ctaLivros)}, ${a('/cursos', s.ctaCursos)} ${esc(s.ctaOu)} <a href="mailto:${EMAIL_OFICIAL}">${EMAIL_OFICIAL}</a>.</p>`;
+      + `<h2>${esc(s.audioTitulo)}</h2><p>${esc(s.audio)}</p><h2>${esc(s.ctaTitulo)}</h2><p>${a('/livros', s.ctaLivros)}, ${a('/cursos', s.ctaCursos)} ${esc(s.ctaOu)} <a href="mailto:${emailOficial()}">${emailOficial()}</a>.</p>`;
   }
   if (base === '/por-que-linvuu') {
     // Texto inteiro na língua da página: é o que o Google lê sem executar JavaScript.
@@ -539,7 +539,7 @@ const SITE_BR = 'https://linvuu.com.br';
 // Política real do site (paywall e termos): reembolso integral em até 7 dias.
 const POLITICA_REEMBOLSO = { '@type': 'MerchantReturnPolicy', applicableCountry: 'BR', returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow', merchantReturnDays: 7, returnFees: 'https://schema.org/FreeReturn' };
 const orgId = (site: string) => `${site}/#organizacao`;
-const organizacao = (SITE: string) => ({ '@context': 'https://schema.org', '@type': 'EducationalOrganization', '@id': orgId(SITE), name: 'Linvuu', url: SITE, logo: `${SITE}/brand/linvuu-logo.png`, email: EMAIL_OFICIAL, sameAs: [SITE_BR, siteDoIdioma('en'), ...REDES.filter((r) => r.url).map((r) => r.url)].filter((u) => u !== SITE), founder: AUTORES.map((a) => ({ '@type': 'Person', '@id': `${SITE}/sobre#${a.id}`, name: a.nome, sameAs: [...a.links] })) });
+const organizacao = (SITE: string) => ({ '@context': 'https://schema.org', '@type': 'EducationalOrganization', '@id': orgId(SITE), name: 'Linvuu', url: SITE, logo: `${SITE}/brand/linvuu-logo.png`, email: emailOficial(), sameAs: [SITE_BR, siteDoIdioma('en'), ...REDES.filter((r) => r.url).map((r) => r.url)].filter((u) => u !== SITE), founder: AUTORES.map((a) => ({ '@type': 'Person', '@id': `${SITE}/sobre#${a.id}`, name: a.nome, sameAs: [...a.links] })) });
 const pessoa = (a: (typeof AUTORES)[number], SITE: string) => ({ '@context': 'https://schema.org', '@type': 'Person', '@id': `${SITE}/sobre#${a.id}`, name: a.nome, url: `${SITE}/sobre#${a.id}`, worksFor: { '@id': orgId(SITE) }, sameAs: [...a.links], knowsAbout: ['Matemática', 'Linguística', 'Ensino de idiomas', 'Inteligência artificial', 'Teoria dos números', 'Álgebra linear'] });
 const naoEncontrada = (p: string, loc: Locale): MetaRota => ({ status: 404, caminho: p, titulo: TX[loc.codigo].nao, descricao: loc.codigo === 'en' ? SEO_EN.naoD : undefined, semIndice: true });
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
