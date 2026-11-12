@@ -103,6 +103,6 @@ O espanhol (aulas 33–62) e o alemão andam em paralelo: uma aula de cada por r
 5. Células `[misto]` em português sem acento (quem, onde, como, domingo…) escapam do filtro — confira a lista SKIP.
 6. Respostas-modelo com «aus Brasilien / Portugiesisch» → vida do aluno de inglês.
 
-**Fontes externas:** FSI German Basic Course (domínio público) como conferência da progressão e dos exercícios; Wikibooks German só como roteiro; texto final original. Nada de Goethe-Institut/DW/Duden copiado.
+**Fontes externas:** **FSI German Basic Course já está no repositório** (`fontes-publicas/fsi-de/`, domínio público, texto por unidade + mapa FSI → aulas). Antes de cada aula do A2 em diante, leia as «Notes on Grammar» das unidades indicadas no mapa: elas comparam o alemão com o inglês (escritas para americanos) e são a base dos contrastes da versão inglesa. Wikibooks só como roteiro; texto final original; nenhuma frase alemã nova sem áudio.
 
 **Ao fechar 288/288:** o curso entra no sitemap/hreflang do .com sozinho (`explicacaoCompleta`), a nota de cobertura some, e a gramática `de.en.json` fica completa.
