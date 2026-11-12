@@ -1,0 +1,167 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 226,
+  "fase": 23,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Connectors: obwohl, trotzdem, deshalb, deswegen, außerdem, sonst: Deshalb, deswegen, darum",
+  "objetivo": "Lesson 57, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 57,
+    "titulo": "Connectors: obwohl, trotzdem, deshalb, deswegen, außerdem, sonst",
+    "objetivo": "Use the connectors of concession (obwohl, trotzdem), consequence (deshalb, deswegen, darum), addition (außerdem) and alternative (sonst), telling the conjunction (verb at the end) apart from the connecting adverb (verb in 2nd position).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Deshalb, deswegen, darum",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Figure it out yourself",
+        "explicacao": "STEP 1: look at the sentences in the table. STEP 2: in sentence 1, does the word order change after «aber»? Where's the verb? STEP 3: in sentence 2, after «denn», is «habe» in position 2 or at the end? STEP 4: in sentence 4, is the subject missing after «und»? Where's the verb? STEP 5: in sentences 3 and 6, what comes before «sondern»? Compare with sentence 1. STEP 6: in sentence 5, where does the verb go after «obwohl»? And what comes first after the comma? STEP 7: before which connectors is there a comma? Before which one isn't there? Check your answers in the next blocks.",
+        "tabela": [
+          {
+            "frase": "1. Ich bin müde, aber ich komme mit."
+          },
+          {
+            "frase": "2. Ich bleibe zu Hause, denn ich habe Fieber."
+          },
+          {
+            "frase": "3. Ich trinke keinen Kaffee, sondern Tee."
+          },
+          {
+            "frase": "4. Ich stehe auf und gehe zur Arbeit."
+          },
+          {
+            "frase": "5. Obwohl es regnet, gehe ich spazieren."
+          },
+          {
+            "frase": "6. Ich bin nicht müde, sondern hungrig."
+          }
+        ],
+        "tag": "Figure it out"
+      },
+      {
+        "tipo": "palavras",
+        "min": 7,
+        "itens": [
+          {
+            "ru": "deshalb",
+            "translit": "DES-hahlp",
+            "pt": "that's why, so",
+            "en": "therefore",
+            "audio": "deshalb"
+          },
+          {
+            "ru": "deswegen",
+            "translit": "DES-vay-gen",
+            "pt": "that's why, so",
+            "en": "that is why",
+            "audio": "deswegen"
+          },
+          {
+            "ru": "darum",
+            "translit": "dah-ROOM",
+            "pt": "that's why, for that reason",
+            "en": "that is why",
+            "audio": "darum"
+          },
+          {
+            "ru": "also",
+            "translit": "AHL-zoh",
+            "pt": "so, therefore",
+            "en": "so",
+            "audio": "also"
+          },
+          {
+            "ru": "folglich",
+            "translit": "FOLK-likh",
+            "pt": "consequently",
+            "en": "consequently",
+            "audio": "folglich"
+          },
+          {
+            "ru": "daher",
+            "translit": "DAH-hair",
+            "pt": "hence, that's why",
+            "en": "hence",
+            "audio": "daher"
+          },
+          {
+            "ru": "infolgedessen",
+            "translit": "in-FOL-geh-DESS-en",
+            "pt": "as a result",
+            "en": "as a result",
+            "audio": "infolgedessen"
+          },
+          {
+            "ru": "die Folge",
+            "translit": "dee FOL-geh",
+            "pt": "consequence",
+            "en": "consequence",
+            "audio": "die Folge"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Deshalb, deswegen and darum: consequence, step by step",
+        "explicacao": "STEP 1: «DESHALB», «DESWEGEN» and «DARUM» mean \"THAT'S WHY / SO\" and express CONSEQUENCE. They are connecting ADVERBS: they take position 1, and the conjugated verb comes right after (position 2): «Ich bin krank. Deshalb bleibe ich zu Hause» (I'm sick. That's why I'm staying home). STEP 2: the same idea with «WEIL» (reason) flips the order: «Ich bleibe zu Hause, weil ich krank bin.» Consequence second → «deshalb»; reason second → «weil». STEP 3: «also» and «daher» (so, hence) work similarly: «Ich habe Fieber, also bleibe ich im Bett.» False friend: German «also» means \"so, therefore\" — not English \"also\" (that's «auch»)! STEP 4: question: «Warum?» — answer: «Weil …» or «Deshalb …». STEP 5: remember the verb position after «deshalb» is 2nd; after «weil» it's the end.",
+        "tabela": [
+          {
+            "conector": "deshalb (adverb)",
+            "frase": "Ich bin krank. Deshalb bleibe ich zu Hause."
+          },
+          {
+            "conector": "deswegen (adverb)",
+            "frase": "Es regnet. Deswegen nehme ich einen Schirm."
+          },
+          {
+            "conector": "darum (adverb)",
+            "frase": "Er hat Zeit. Darum kommt er mit."
+          },
+          {
+            "conector": "weil (conjunction)",
+            "frase": "Ich bleibe zu Hause, weil ich krank bin."
+          },
+          {
+            "conector": "also",
+            "frase": "Ich habe Fieber, also bleibe ich im Bett."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich bin krank. Deshalb ich bleibe zu Hause.",
+            "certo": "Ich bin krank. Deshalb bleibe ich zu Hause.",
+            "motivo": "After «deshalb», the verb in 2nd position."
+          },
+          {
+            "errado": "Ich bin krank, deshalb bleibe ich zu Hause, weil.",
+            "certo": "Ich bin krank. Deshalb bleibe ich zu Hause.",
+            "motivo": "Choose one link: deshalb OR weil."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "producao",
+        "min": 4,
+        "enunciado": "Say 6 sentences with a consequence: «Ich bin müde. Deshalb … Es regnet. Deswegen …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Write 6 sentences with «obwohl» and «trotzdem»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-057.json",
+  "responsavel": null
+}
