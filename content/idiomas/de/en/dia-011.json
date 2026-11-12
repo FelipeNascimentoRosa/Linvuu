@@ -1,0 +1,455 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 11,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Nouns and articles: Ein, eine, kein and dialogue",
+  "objetivo": "Lesson 3, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 3,
+    "titulo": "Nouns and articles",
+    "objetivo": "Use der, die, das and ein/eine/kein, capitalize nouns and form the most common plurals.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Ein, eine, kein and dialogue",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 7,
+        "titulo": "Ein, eine, kein: \"a\" and \"no\"",
+        "explicacao": "«Ein» and «eine» are the German \"a/an\": ein Mann, eine Frau, ein Kind. Half the guesswork disappears with one rule: «ein» is for der and das words, «eine» only for die words. As in English, there's no \"a\" in the plural: «Das sind Bücher» (those are books). To negate a noun, German uses «kein» (or «keine»), with the same endings as «ein»: «Das ist kein Tisch» = \"that's not a table\" / \"that's no table\". To point at things, use «das ist» for one and «das sind» for several — «das» here works like English \"that\", whatever the gender.",
+        "tabela": [
+          {
+            "genero": "masculine",
+            "definido": "der Tisch",
+            "indefinido": "ein Tisch",
+            "negativo": "kein Tisch"
+          },
+          {
+            "genero": "feminine",
+            "definido": "die Lampe",
+            "indefinido": "eine Lampe",
+            "negativo": "keine Lampe"
+          },
+          {
+            "genero": "neuter",
+            "definido": "das Buch",
+            "indefinido": "ein Buch",
+            "negativo": "kein Buch"
+          },
+          {
+            "genero": "plural",
+            "definido": "die Bücher",
+            "indefinido": "—",
+            "negativo": "keine Bücher"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Das ist ein Lampe.",
+            "certo": "Das ist eine Lampe.",
+            "motivo": "«Lampe» is feminine: eine."
+          },
+          {
+            "errado": "Das sind ein Bücher.",
+            "certo": "Das sind Bücher.",
+            "motivo": "There's no \"a\" in the plural, just like in English."
+          }
+        ],
+        "tag": "Nouns"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 7,
+        "titulo": "Was ist das? / What's this?",
+        "contexto": "Two friends point at things in a room.",
+        "linhas": [
+          {
+            "personagem": "Anna",
+            "ru": "— Was ist das?",
+            "pt": "— What's this?",
+            "audio": "Was ist das?",
+            "rotulo": "Anna"
+          },
+          {
+            "personagem": "Ben",
+            "ru": "— Das ist ein Buch. Und das ist eine Lampe.",
+            "pt": "— That's a book. And that's a lamp.",
+            "audio": "Das ist ein Buch. Und das ist eine Lampe.",
+            "rotulo": "Ben"
+          },
+          {
+            "personagem": "Anna",
+            "ru": "— Ist das ein Tisch?",
+            "pt": "— Is that a table?",
+            "audio": "Ist das ein Tisch?",
+            "rotulo": "Anna"
+          },
+          {
+            "personagem": "Ben",
+            "ru": "— Nein, das ist kein Tisch. Das ist ein Stuhl.",
+            "pt": "— No, that's not a table. It's a chair.",
+            "audio": "Nein, das ist kein Tisch. Das ist ein Stuhl.",
+            "rotulo": "Ben"
+          },
+          {
+            "personagem": "Anna",
+            "ru": "— Und was sind das?",
+            "pt": "— And what are these?",
+            "audio": "Und was sind das?",
+            "rotulo": "Anna"
+          },
+          {
+            "personagem": "Ben",
+            "ru": "— Das sind Bücher. Die Bücher sind neu.",
+            "pt": "— They're books. The books are new.",
+            "audio": "Das sind Bücher. Die Bücher sind neu.",
+            "rotulo": "Ben"
+          },
+          {
+            "personagem": "Anna",
+            "ru": "— Und das? Ist das eine Tür?",
+            "pt": "— And this? Is it a door?",
+            "audio": "Und das? Ist das eine Tür?",
+            "rotulo": "Anna"
+          },
+          {
+            "personagem": "Ben",
+            "ru": "— Ja, das ist eine Tür.",
+            "pt": "— Yes, it's a door.",
+            "audio": "Ja, das ist eine Tür.",
+            "rotulo": "Ben"
+          }
+        ]
+      },
+      {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "Was ist das?",
+            "translit": "",
+            "pt": "What's that?",
+            "en": "",
+            "audio": "Was ist das?"
+          },
+          {
+            "ru": "Das ist ein Buch.",
+            "translit": "",
+            "pt": "That's a book.",
+            "en": "",
+            "audio": "Das ist ein Buch."
+          },
+          {
+            "ru": "Das sind Bücher.",
+            "translit": "",
+            "pt": "Those are books.",
+            "en": "",
+            "audio": "Das sind Bücher."
+          },
+          {
+            "ru": "Wie heißt das auf Deutsch?",
+            "translit": "",
+            "pt": "How do you say that in German?",
+            "en": "",
+            "audio": "Wie heißt das auf Deutsch?"
+          },
+          {
+            "ru": "Der, die oder das?",
+            "translit": "",
+            "pt": "Which article is it?",
+            "en": "",
+            "audio": "Der, die oder das?"
+          },
+          {
+            "ru": "Ich bin Lehrerin.",
+            "translit": "",
+            "pt": "I'm a teacher. (woman)",
+            "en": "",
+            "audio": "Ich bin Lehrerin."
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Choose the definite article (singular): ___ Zeitung.",
+            "opcoes": [
+              "der",
+              "die",
+              "das"
+            ],
+            "gabarito": "die",
+            "explicacao": "Zeitung is feminine: die Zeitung. The ending -ung is a reliable clue for feminine.",
+            "id": "de-003-L-101"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Choose the definite article (singular): ___ Mädchen.",
+            "opcoes": [
+              "der",
+              "die",
+              "das"
+            ],
+            "gabarito": "das",
+            "explicacao": "Mädchen is grammatically neuter: das Mädchen. The diminutive ending -chen always makes a word neuter, whoever it refers to.",
+            "id": "de-003-L-102"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Choose the definite article (singular) for a male teacher: ___ Lehrer.",
+            "opcoes": [
+              "der",
+              "die",
+              "das"
+            ],
+            "gabarito": "der",
+            "explicacao": "The task asks for the masculine singular: der Lehrer. Die Lehrer would be the plural. Not every noun in -er is masculine, but people in -er are.",
+            "id": "de-003-L-103"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Choose the definite article (singular): ___ Wohnung.",
+            "opcoes": [
+              "der",
+              "die",
+              "das"
+            ],
+            "gabarito": "die",
+            "explicacao": "Wohnung is feminine: die Wohnung. The ending -ung makes feminine nouns.",
+            "id": "de-003-L-104"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Choose the definite article (singular): ___ Montag.",
+            "opcoes": [
+              "der",
+              "die",
+              "das"
+            ],
+            "gabarito": "der",
+            "explicacao": "Days of the week are masculine: der Montag.",
+            "id": "de-003-L-105"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Choose the definite article (singular): ___ Brötchen.",
+            "opcoes": [
+              "der",
+              "die",
+              "das"
+            ],
+            "gabarito": "das",
+            "explicacao": "Brötchen is neuter: das Brötchen. The diminutive ending -chen makes it neuter.",
+            "id": "de-003-L-106"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Plural of Kind:",
+            "opcoes": [
+              "Kinde",
+              "Kinder",
+              "Kinden"
+            ],
+            "gabarito": "Kinder",
+            "explicacao": "The plural of Kind is Kinder, with -er: das Kind → die Kinder (compare child → children).",
+            "id": "de-003-L-107"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Plural of Frau:",
+            "opcoes": [
+              "Fraue",
+              "Frauen",
+              "Fraus"
+            ],
+            "gabarito": "Frauen",
+            "explicacao": "The plural of Frau is Frauen, with -en: die Frau → die Frauen.",
+            "id": "de-003-L-108"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Plural of Auto:",
+            "opcoes": [
+              "Auten",
+              "Autoe",
+              "Autos"
+            ],
+            "gabarito": "Autos",
+            "explicacao": "The plural of Auto is Autos, with -s: das Auto → die Autos.",
+            "id": "de-003-L-109"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Introduce the object with \"a\" (ein/eine): Das ist ___ Lampe. → Die Lampe ist neu.",
+            "respostaEsperada": "eine",
+            "explicacao": "Lampe is feminine. To introduce it with \"a\", use eine Lampe.",
+            "id": "de-003-L-201a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Refer back to it with \"the\" (der/die/das): Das ist eine Lampe. → ___ Lampe ist neu.",
+            "respostaEsperada": "Die",
+            "explicacao": "The lamp has already been introduced, so it's \"the\": feminine die. Die Lampe ist neu, capitalized because it starts the sentence.",
+            "id": "de-003-L-201b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Introduce the object with \"a\" (ein/eine): Das ist ___ Tisch. → Der Tisch ist modern.",
+            "respostaEsperada": "ein",
+            "explicacao": "Tisch is masculine, so \"a\" is ein: Das ist ein Tisch.",
+            "id": "de-003-L-202a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Refer back to it with \"the\" (der/die/das): Das ist ein Tisch. → ___ Tisch ist modern.",
+            "respostaEsperada": "Der",
+            "explicacao": "Tisch is masculine. Referring back with \"the\": Der Tisch, capitalized at the start of the sentence.",
+            "id": "de-003-L-202b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Introduce the object with \"a\" (ein/eine): Das ist ___ Fenster. → Das Fenster ist groß.",
+            "respostaEsperada": "ein",
+            "explicacao": "Fenster is neuter, so \"a\" is ein: Das ist ein Fenster.",
+            "id": "de-003-L-203a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Refer back to it with \"the\" (der/die/das): Das ist ein Fenster. → ___ Fenster ist groß.",
+            "respostaEsperada": "Das",
+            "explicacao": "Fenster is neuter. Referring back uses das: Das Fenster ist groß.",
+            "id": "de-003-L-203b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Introduce the object with \"a\" (ein/eine): Das ist ___ Schlüssel. → Der Schlüssel ist klein.",
+            "respostaEsperada": "ein",
+            "explicacao": "Schlüssel is masculine, so \"a\" is ein Schlüssel.",
+            "id": "de-003-L-204a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Refer back to it with \"the\" (der/die/das): Das ist ein Schlüssel. → ___ Schlüssel ist klein.",
+            "respostaEsperada": "Der",
+            "explicacao": "Schlüssel is masculine, so \"the\" is der: Der Schlüssel ist klein.",
+            "id": "de-003-L-204b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Introduce the object with \"a\" (ein/eine): Das ist ___ Wohnung. → Die Wohnung ist schön.",
+            "respostaEsperada": "eine",
+            "explicacao": "Wohnung is feminine, so \"a\" is eine: eine Wohnung.",
+            "id": "de-003-L-205a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Refer back to it with \"the\" (der/die/das): Das ist eine Wohnung. → ___ Wohnung ist schön.",
+            "respostaEsperada": "Die",
+            "explicacao": "Wohnung is feminine. Referring back: Die Wohnung, capitalized at the start of the sentence.",
+            "id": "de-003-L-205b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Introduce the object with \"a\" (ein/eine): Das ist ___ Bett. → Das Bett ist alt.",
+            "respostaEsperada": "ein",
+            "explicacao": "Bett is neuter, so \"a\" is ein: ein Bett.",
+            "id": "de-003-L-206a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Refer back to it with \"the\" (der/die/das): Das ist ein Bett. → ___ Bett ist alt.",
+            "respostaEsperada": "Das",
+            "explicacao": "Bett is neuter, so \"the\" is das: Das Bett ist alt.",
+            "id": "de-003-L-206b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Fill in only the gap, with the plural and the article die: der Tag → ___ · die Stadt → die Städte · das Haus → die Häuser · die Schule → die Schulen · der Lehrer → die Lehrer · das Auto → die Autos",
+            "respostaEsperada": "die Tage",
+            "explicacao": "The plural of Tag is Tage. With the plural article: die Tage.",
+            "id": "de-003-L-207a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Fill in only the gap, with the plural and the article die: der Tag → die Tage · die Stadt → ___ · das Haus → die Häuser · die Schule → die Schulen · der Lehrer → die Lehrer · das Auto → die Autos",
+            "respostaEsperada": "die Städte",
+            "explicacao": "The plural of Stadt is Städte, with a → ä and the ending -e: die Städte.",
+            "id": "de-003-L-207b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Fill in only the gap, with the plural and the article die: der Tag → die Tage · die Stadt → die Städte · das Haus → ___ · die Schule → die Schulen · der Lehrer → die Lehrer · das Auto → die Autos",
+            "respostaEsperada": "die Häuser",
+            "explicacao": "The plural of Haus is Häuser, with au → äu and the ending -er: die Häuser.",
+            "id": "de-003-L-207c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Fill in only the gap, with the plural and the article die: der Tag → die Tage · die Stadt → die Städte · das Haus → die Häuser · die Schule → ___ · der Lehrer → die Lehrer · das Auto → die Autos",
+            "respostaEsperada": "die Schulen",
+            "explicacao": "The plural of Schule is Schulen. The plural article is die: die Schulen.",
+            "id": "de-003-L-207d"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Fill in only the gap, with the plural and the article die: der Tag → die Tage · die Stadt → die Städte · das Haus → die Häuser · die Schule → die Schulen · der Lehrer → ___ · das Auto → die Autos",
+            "respostaEsperada": "die Lehrer",
+            "explicacao": "The plural of Lehrer looks the same as the singular — like English sheep → sheep. The article shows the plural: der Lehrer → die Lehrer.",
+            "id": "de-003-L-207e"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Fill in only the gap, with the plural and the article die: der Tag → die Tage · die Stadt → die Städte · das Haus → die Häuser · die Schule → die Schulen · der Lehrer → die Lehrer · das Auto → ___",
+            "respostaEsperada": "die Autos",
+            "explicacao": "The plural of Auto is Autos. With the plural article: die Autos.",
+            "id": "de-003-L-207f"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Fill in only the gap, with the feminine form of the job (die is already written): der Lehrer → die ___ · der Student → die Studentin · der Arzt → die Ärztin",
+            "respostaEsperada": "Lehrerin",
+            "explicacao": "The feminine of Lehrer is Lehrerin, with the ending -in. Die is already written before the gap.",
+            "id": "de-003-L-208a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Fill in only the gap, with the feminine form of the job (die is already written): der Lehrer → die Lehrerin · der Student → die ___ · der Arzt → die Ärztin",
+            "respostaEsperada": "Studentin",
+            "explicacao": "The feminine of Student is Studentin. Die is already there before the gap.",
+            "id": "de-003-L-208b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Fill in only the gap, with the feminine form of the job (die is already written): der Lehrer → die Lehrerin · der Student → die Studentin · der Arzt → die ___",
+            "respostaEsperada": "Ärztin",
+            "explicacao": "The feminine of Arzt is Ärztin, with A → Ä and the ending -in. The article die is already written.",
+            "id": "de-003-L-208c"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Point at 5 things in your home and say: «Das ist ein … / eine … / Das sind …»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Write the plural of 6 words you already know."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-003.json",
+  "responsavel": null
+}
