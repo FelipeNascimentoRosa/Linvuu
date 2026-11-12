@@ -318,7 +318,7 @@ a.livro:focus-visible{outline:2px solid var(--ocre);outline-offset:6px}
 
 /* ===== Barra do topo (novidades e contato; sem seletor de idioma: cada domínio tem um só idioma) ===== */
 .barra-topo{background:var(--papel-claro);border-bottom:1px solid var(--border);font-size:13px}
-.barra-topo-in{max-width:1320px;margin:0 auto;padding:6px var(--pad);display:flex;justify-content:flex-end;align-items:center;gap:22px}
+.barra-topo-in{max-width:1320px;margin:0 auto;padding:0 var(--pad);height:var(--barra-topo-h);display:flex;justify-content:flex-end;align-items:center;gap:22px}
 .barra-topo a{display:inline-flex;align-items:center;gap:7px;font-weight:600;color:var(--text)}
 .barra-topo a:hover{text-decoration:underline}
 .barra-links{display:flex;align-items:center;gap:22px}
@@ -341,7 +341,7 @@ a.livro:focus-visible{outline:2px solid var(--ocre);outline-offset:6px}
 .texto-legal h2{font-size:20px;font-weight:700;margin:28px 0 8px}
 .texto-legal p,.texto-legal li{color:var(--muted);margin-bottom:8px}
 .texto-legal ul{list-style:disc;padding-left:22px}
-.texto-legal a{text-decoration:underline;color:var(--text)}
+.texto-legal a:not(.btn){text-decoration:underline;color:var(--text)}
 .conta-aceite{font-size:13px;color:var(--faint);text-align:center}
 .conta-aceite a{text-decoration:underline;color:var(--text)}
 

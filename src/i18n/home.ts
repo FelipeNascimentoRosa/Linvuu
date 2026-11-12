@@ -91,7 +91,7 @@ const copy: Record<string, readonly [string]> = {
   'Ouça. Repita.': ['Listen. Repeat.'],
   'Pequenas frases. Novas possibilidades.': ['Small phrases. New possibilities.'],
   'Abrir aula grátis →': ['Open a free lesson →'],
-  'Em português.': ['In English,'], 'Desde a explicação.': ['in Brazilian Portuguese, French, Russian and German.'],
+  'Em português.': ['In English,'], 'Desde a explicação.': ['in Spanish, German, French, Russian and Brazilian Portuguese.'],
   'Com áudio.': ['With audio.'], 'Para ouvir e repetir.': ['To listen and repeat.'],
   'No seu ritmo.': ['At your own pace.'], 'Uma sessão por vez.': ['One session at a time.'],
   'MENOS ADIVINHAÇÃO. MAIS COMPREENSÃO.': ['LESS GUESSWORK. MORE UNDERSTANDING.'],

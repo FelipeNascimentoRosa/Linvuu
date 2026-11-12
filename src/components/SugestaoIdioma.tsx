@@ -8,9 +8,9 @@ import { idiomaSugerido } from '../lib/sugestaoIdioma';
 import './sugestao-idioma.css';
 
 const CHAVE = 'linvuu:sugestao-idioma-dispensada';
-const TX: Record<CodigoLocale, { texto: string; ir: string; fechar: string }> = {
-  en: { texto: 'Prefer English? Linvuu explains every course in English.', ir: 'Open Linvuu in English', fechar: 'Stay here' },
-  'pt-BR': { texto: 'Fala português? A Linvuu explica todos os cursos em português.', ir: 'Abrir a Linvuu em português', fechar: 'Continuar aqui' },
+const TX: Record<CodigoLocale, { texto: string; ir: string; curto: string; fechar: string }> = {
+  en: { texto: 'Prefer English? Linvuu explains every course in English.', ir: 'Open Linvuu in English', curto: 'In English', fechar: 'Stay here' },
+  'pt-BR': { texto: 'Fala português? A Linvuu explica todos os cursos em português.', ir: 'Abrir a Linvuu em português', curto: 'Em português', fechar: 'Continuar aqui' },
 };
 
 export function SugestaoIdioma() {
@@ -26,8 +26,8 @@ export function SugestaoIdioma() {
   return (
     <aside className="sugestao-idioma" lang={alvo} aria-label={t.ir}>
       <p>{t.texto}</p>
-      <a href={urlEm(alvo)} hrefLang={alvo} onClick={() => { try { localStorage.setItem(CHAVE, '1'); } catch { /* segue */ } }}>{t.ir} →</a>
-      <button type="button" onClick={fechar}>{t.fechar}</button>
+      <a href={urlEm(alvo)} hrefLang={alvo} aria-label={t.ir} onClick={() => { try { localStorage.setItem(CHAVE, '1'); } catch { /* segue */ } }}><span className="si-longo">{t.ir} →</span><span className="si-curto">{t.curto} →</span></a>
+      <button type="button" onClick={fechar} aria-label={t.fechar}><span className="si-longo">{t.fechar}</span><span className="si-curto" aria-hidden="true">×</span></button>
     </aside>
   );
 }
