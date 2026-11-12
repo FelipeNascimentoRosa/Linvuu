@@ -1,0 +1,135 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 206,
+  "fase": 21,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Plusquamperfekt: nachdem and bevor: Nachdem",
+  "objetivo": "Lesson 52, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 52,
+    "titulo": "Plusquamperfekt: nachdem and bevor",
+    "objetivo": "Form the Plusquamperfekt (hatte/war + Partizip II), use it for a past that came before another past, and combine it with nachdem and bevor.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Nachdem",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "nachdem",
+            "translit": "nahkh-DAYM",
+            "pt": "after (conjunction)",
+            "en": "after",
+            "audio": "nachdem"
+          },
+          {
+            "ru": "sobald",
+            "translit": "zoh-BAHLT",
+            "pt": "as soon as",
+            "en": "as soon as",
+            "audio": "sobald"
+          },
+          {
+            "ru": "sofort",
+            "translit": "zoh-FORT",
+            "pt": "immediately, right away",
+            "en": "immediately",
+            "audio": "sofort"
+          },
+          {
+            "ru": "plötzlich",
+            "translit": "PLÖTS-likh",
+            "pt": "suddenly",
+            "en": "suddenly",
+            "audio": "plötzlich"
+          },
+          {
+            "ru": "endlich",
+            "translit": "ENT-likh",
+            "pt": "finally, at last",
+            "en": "finally",
+            "audio": "endlich"
+          },
+          {
+            "ru": "inzwischen",
+            "translit": "in-TSVISH-en",
+            "pt": "meanwhile",
+            "en": "meanwhile",
+            "audio": "inzwischen"
+          },
+          {
+            "ru": "später",
+            "translit": "SHPAY-ter",
+            "pt": "later",
+            "en": "later",
+            "audio": "später"
+          },
+          {
+            "ru": "anschließend",
+            "translit": "AHN-shlee-sent",
+            "pt": "subsequently, afterwards",
+            "en": "afterwards",
+            "audio": "anschließend"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Nachdem + Plusquamperfekt, step by step",
+        "explicacao": "STEP 1: «NACHDEM» (after) opens a subordinate clause: the conjugated verb goes to the END. STEP 2: the event in the subordinate clause happened FIRST, so it goes in the PLUSQUAMPERFEKT; the main clause goes in the Präteritum or Perfekt: «Nachdem ich gegessen hatte, bin ich spazieren gegangen» (after I had eaten, I went for a walk). STEP 3: the same idea in the present: «Nachdem ich gegessen habe, gehe ich spazieren» (Perfekt in the subordinate clause, present in the main clause). STEP 4: if the subordinate clause comes first, the main clause starts with the VERB. STEP 5: always pick the tense of «nachdem» by this rule: ONE STEP BACK from the main clause. English is relaxed here (\"after I ate, I left\"); German is strict. Also: «nachdem» is a conjunction; the preposition \"after\" is «nach» («nach dem Essen»).",
+        "tabela": [
+          {
+            "principal": "Perfekt",
+            "nachdem": "Plusquamperfekt",
+            "frase": "Nachdem ich gegessen hatte, bin ich spazieren gegangen."
+          },
+          {
+            "principal": "Präteritum",
+            "nachdem": "Plusquamperfekt",
+            "frase": "Nachdem er angekommen war, rief er mich an."
+          },
+          {
+            "principal": "present",
+            "nachdem": "Perfekt",
+            "frase": "Nachdem ich gegessen habe, gehe ich spazieren."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Nachdem ich aß, bin ich gegangen.",
+            "certo": "Nachdem ich gegessen hatte, bin ich gegangen.",
+            "motivo": "«nachdem» needs a tense one step back: Plusquamperfekt."
+          },
+          {
+            "errado": "Nachdem ich gegessen hatte, ich bin gegangen.",
+            "certo": "Nachdem ich gegessen hatte, bin ich gegangen.",
+            "motivo": "The main clause starts with the verb."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Tell about your day in 6 sentences with «nachdem»: «Nachdem ich aufgestanden war, … Nachdem ich gefrühstückt hatte, …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write the Plusquamperfekt forms with «hatte» and «war»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-052.json",
+  "responsavel": null
+}
