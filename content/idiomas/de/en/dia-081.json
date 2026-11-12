@@ -1,0 +1,260 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 81,
+  "fase": 9,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Perfekt 1: the past with haben (regular verbs): The Perfekt: haben + Partizip II",
+  "objetivo": "Lesson 21, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 21,
+    "titulo": "Perfekt 1: the past with haben (regular verbs)",
+    "objetivo": "Tell what happened using the Perfekt of regular verbs: haben + Partizip II (ge-…-t), including the forms without «ge-» (-ieren, be-, er-, ver-, ent-) and separable verbs.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "The Perfekt: haben + Partizip II",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Lesson goal. By the end of the four sessions, you say what you did yesterday with haben or sein + past participle, form the participle of regular, irregular, separable and inseparable verbs, and choose between haben and sein."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "What did you do yesterday?",
+        "contexto": "Lena runs into Camila at the café and asks how her day was yesterday.",
+        "linhas": [
+          {
+            "personagem": "Lena",
+            "ru": "— Hallo Camila! Was hast du gestern gemacht?",
+            "pt": "— Hi, Camila! What did you do yesterday?",
+            "audio": "Hallo Camila! Was hast du gestern gemacht?",
+            "rotulo": "Lena"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ich bin früh aufgestanden. Dann habe ich Pedro angerufen. Wir haben lange gesprochen.",
+            "pt": "— I woke up early. Then I called Pedro. We talked for a long time.",
+            "audio": "Ich bin früh aufgestanden. Dann habe ich Pedro angerufen. Wir haben lange gesprochen.",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Lena",
+            "ru": "— Und danach?",
+            "pt": "— And then?",
+            "audio": "Und danach?",
+            "rotulo": "Lena"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Jonas und ich sind in die Stadt gefahren. Wir haben eingekauft. Ich habe ein Buch gekauft.",
+            "pt": "— Jonas and I went downtown. We went shopping. I bought a book.",
+            "audio": "Jonas und ich sind in die Stadt gefahren. Wir haben eingekauft. Ich habe ein Buch gekauft.",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Lena",
+            "ru": "— Seid ihr ins Museum gegangen?",
+            "pt": "— Did you go to the museum?",
+            "audio": "Seid ihr ins Museum gegangen?",
+            "rotulo": "Lena"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ja! Wir haben viele Bilder gesehen. Aber ich habe meine Tasche vergessen.",
+            "pt": "— We did! We saw lots of paintings. But I forgot my bag.",
+            "audio": "Ja! Wir haben viele Bilder gesehen. Aber ich habe meine Tasche vergessen.",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Lena",
+            "ru": "— Oh nein! Hast du sie gefunden?",
+            "pt": "— Oh no! Did you find it?",
+            "audio": "Oh nein! Hast du sie gefunden?",
+            "rotulo": "Lena"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ja, Jonas hat sie gefunden. Wir sind nach Hause gekommen und haben Pasta gekocht.",
+            "pt": "— Yes, Jonas found it. We went home and cooked pasta.",
+            "audio": "Ja, Jonas hat sie gefunden. Wir sind nach Hause gekommen und haben Pasta gekocht.",
+            "rotulo": "Camila"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "The English speaker's trap",
+        "explicacao": "STEP 1: spoken past = auxiliary in position 2 + participle at the end. Movement or change of state = sein.",
+        "comparacao": "Three traps. The FSI course, written for American diplomats in 1961, put it in capitals: German and English devices for talking about past time do not coincide exactly.",
+        "tabela": [
+          {
+            "ingles": "I ate pizza yesterday.",
+            "alemao": "Gestern habe ich Pizza gegessen."
+          },
+          {
+            "ingles": "I called Pedro.",
+            "alemao": "Ich habe Pedro angerufen."
+          },
+          {
+            "ingles": "I woke up early.",
+            "alemao": "Ich bin früh aufgestanden."
+          },
+          {
+            "ingles": "We went to the museum.",
+            "alemao": "Wir sind ins Museum gegangen."
+          },
+          {
+            "ingles": "What did you do?",
+            "alemao": "Was hast du gemacht?"
+          }
+        ],
+        "tag": "Trap"
+      },
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "gestern",
+            "translit": "GES-tern",
+            "pt": "yesterday",
+            "en": "yesterday",
+            "audio": "gestern"
+          },
+          {
+            "ru": "vorgestern",
+            "translit": "FOR-ges-tern",
+            "pt": "the day before yesterday",
+            "en": "the day before yesterday",
+            "audio": "vorgestern"
+          },
+          {
+            "ru": "letzte Woche",
+            "translit": "LETS-teh VOKH-eh",
+            "pt": "last week",
+            "en": "last week",
+            "audio": "letzte Woche"
+          },
+          {
+            "ru": "letzten Monat",
+            "translit": "LETS-ten MOH-naht",
+            "pt": "last month",
+            "en": "last month",
+            "audio": "letzten Monat"
+          },
+          {
+            "ru": "letztes Jahr",
+            "translit": "LETS-tes YAHR",
+            "pt": "last year",
+            "en": "last year",
+            "audio": "letztes Jahr"
+          },
+          {
+            "ru": "schon",
+            "translit": "SHOHN",
+            "pt": "already",
+            "en": "already",
+            "audio": "schon"
+          },
+          {
+            "ru": "noch nicht",
+            "translit": "nokh NIKHT",
+            "pt": "not yet",
+            "en": "not yet",
+            "audio": "noch nicht"
+          },
+          {
+            "ru": "gerade",
+            "translit": "geh-RAH-deh",
+            "pt": "just now, a moment ago",
+            "en": "just now",
+            "audio": "gerade"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "The Perfekt, step by step",
+        "explicacao": "STEP 1: the Perfekt is the past tense of CONVERSATION and messages: «Ich habe Deutsch gelernt». It looks like the English present perfect (\"I have learned\"), but it does the job of the simple past: «Gestern habe ich gearbeitet» = \"I worked yesterday\" — English would never say \"Yesterday I have worked\". STEP 2: it has TWO parts: the auxiliary «haben», conjugated, in 2nd position, and the PARTIZIP II (past participle) at the END of the sentence — the same bracket you know from the modals. STEP 3: the Partizip II of regular verbs is «ge-» + stem + «-t», like English \"-ed\": machen → gemacht; lernen → gelernt; spielen → gespielt; kaufen → gekauft; kochen → gekocht; hören → gehört. STEP 4: conjugate «haben»: ich habe, du hast, er hat, wir haben, ihr habt, sie haben. STEP 5: a yes/no question: «Hast du schon gegessen?» (Have you eaten yet? / Did you eat yet?) and the answer: «Ja, schon» or «Nein, noch nicht». STEP 6: use past time words: gestern, letzte Woche, letztes Jahr. And remember the opposite trap: \"I've been living here for two years\" is NOT a Perfekt in German — it's the present with «seit»: «Ich wohne seit zwei Jahren hier».",
+        "comparacao": "English splits the past between \"I did\" and \"I have done\", and the choice matters. German conversation uses the Perfekt for both: «Ich habe gegessen» = \"I ate\" and \"I have eaten\". The form looks like English (have + participle), but the participle goes to the very END of the sentence.",
+        "tabela": [
+          {
+            "infinitivo": "machen",
+            "participio": "gemacht",
+            "exemplo": "Ich habe Hausaufgaben gemacht."
+          },
+          {
+            "infinitivo": "lernen",
+            "participio": "gelernt",
+            "exemplo": "Wir haben Deutsch gelernt."
+          },
+          {
+            "infinitivo": "spielen",
+            "participio": "gespielt",
+            "exemplo": "Er hat gestern Fußball gespielt."
+          },
+          {
+            "infinitivo": "kaufen",
+            "participio": "gekauft",
+            "exemplo": "Sie hat ein Kleid gekauft."
+          },
+          {
+            "infinitivo": "kochen",
+            "participio": "gekocht",
+            "exemplo": "Ich habe Pasta gekocht."
+          },
+          {
+            "infinitivo": "hören",
+            "participio": "gehört",
+            "exemplo": "Wir haben Musik gehört."
+          },
+          {
+            "infinitivo": "wohnen",
+            "participio": "gewohnt",
+            "exemplo": "Ich habe in Berlin gewohnt."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich habe machen Hausaufgaben.",
+            "certo": "Ich habe Hausaufgaben gemacht.",
+            "motivo": "The Partizip II goes to the END of the sentence — not next to haben as in English."
+          },
+          {
+            "errado": "Ich habe gespielen.",
+            "certo": "Ich habe gespielt.",
+            "motivo": "Regular verbs end in -t, not -en."
+          },
+          {
+            "errado": "Ich gemacht habe.",
+            "certo": "Ich habe gemacht.",
+            "motivo": "The auxiliary stays in 2nd position."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say 5 things you did yesterday: «Gestern habe ich … gemacht / gekocht / gehört …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Write the 6 present-tense forms of «haben» and 4 sentences with «Ich habe …» in the present."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-021.json",
+  "responsavel": null
+}
