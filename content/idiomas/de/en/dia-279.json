@@ -1,0 +1,135 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 279,
+  "fase": 28,
+  "nivel": "b2",
+  "status": "publicada",
+  "titulo": "Partizip I and II as adjectives: At the flea market",
+  "objetivo": "Lesson 70, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 70,
+    "titulo": "Partizip I and II as adjectives",
+    "objetivo": "Use the Partizip II (gekochte Eier, ein verlorener Schlüssel, die gestiegenen Preise) and the Partizip I (lachend, die spielenden Kinder) as adjectives, with the right ending and the right meaning (passive and completed, active and completed, or active and ongoing).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "At the flea market",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Choosing between Partizip I and II",
+        "explicacao": "STEP 1: ask: IS the action HAPPENING or HAS it ALREADY HAPPENED? Happening → Partizip I («die spielenden Kinder»); completed → Partizip II («die gespielte Rolle»). The English test works too: \"-ing\" → Partizip I; \"-ed / past participle\" → Partizip II. STEP 2: also ask: who does the action? If the noun DOES the action → Partizip I («das schlafende Kind» is sleeping). If the noun UNDERGOES the action → Partizip II («der gekochte Reis» was cooked). Exception: with intransitive «sein» verbs, the noun DID the completed action and the Partizip II is active («die gestiegenen Preise»: the prices that have risen). STEP 3: to describe used, damaged or lost objects, use the Partizip II: «das gebrauchte Fahrrad», «die beschädigte Kette». STEP 4: to describe people or things in action, use the Partizip I: «die lachenden Kinder», «das fließende Wasser».",
+        "tabela": [
+          {
+            "pergunta": "does the noun DO the action?",
+            "usar": "Partizip I",
+            "frase": "das schlafende Kind, die lachenden Kinder"
+          },
+          {
+            "pergunta": "does the noun UNDERGO the action?",
+            "usar": "Partizip II",
+            "frase": "der gekochte Reis, die beschädigte Kette"
+          },
+          {
+            "pergunta": "intransitive verb with sein: the noun DID the (completed) action",
+            "usar": "Partizip II (active)",
+            "frase": "die gestiegenen Preise, die verblühte Rose"
+          },
+          {
+            "pergunta": "is the action in progress?",
+            "usar": "Partizip I",
+            "frase": "steigende Preise"
+          },
+          {
+            "pergunta": "has the action already finished?",
+            "usar": "Partizip II",
+            "frase": "das geöffnete Fenster, die verlorene Zeit"
+          }
+        ],
+        "tag": "Adjectives and possessives"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 10,
+        "titulo": "Auf dem Flohmarkt / At the flea market",
+        "contexto": "A customer bargains at a flea market.",
+        "linhas": [
+          {
+            "personagem": "Verkäufer",
+            "ru": "— Guten Tag! Hier gibt es gebrauchte Bücher, alte Uhren und ein Fahrrad.",
+            "pt": "— Good morning! There are second-hand books, old clocks and a bike here.",
+            "audio": "Guten Tag! Hier gibt es gebrauchte Bücher, alte Uhren und ein Fahrrad.",
+            "rotulo": "Verkäufer"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Ich suche ein gebrauchtes Fahrrad für meinen Sohn.",
+            "pt": "— I'm looking for a used bike for my son.",
+            "audio": "Ich suche ein gebrauchtes Fahrrad für meinen Sohn.",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Verkäufer",
+            "ru": "— Dort steht eins. Die Bremsen sind neu, aber die Kette ist beschädigt.",
+            "pt": "— There's one over there. The brakes are new, but the chain is damaged.",
+            "audio": "Dort steht eins. Die Bremsen sind neu, aber die Kette ist beschädigt.",
+            "rotulo": "Verkäufer"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Was kostet es mit der beschädigten Kette?",
+            "pt": "— How much is it with the damaged chain?",
+            "audio": "Was kostet es mit der beschädigten Kette?",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Verkäufer",
+            "ru": "— Fünfzig Euro. Der Preis ist fest, aber ich repariere die Kette gern.",
+            "pt": "— Fifty euros. The price is fixed, but I'll happily repair the chain.",
+            "audio": "Fünfzig Euro. Der Preis ist fest, aber ich repariere die Kette gern.",
+            "rotulo": "Verkäufer"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Gut. Und diese gebrochene Lampe? Funktioniert sie noch?",
+            "pt": "— Great. And this broken lamp? Does it still work?",
+            "audio": "Gut. Und diese gebrochene Lampe? Funktioniert sie noch?",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Verkäufer",
+            "ru": "— Nein, sie ist kaputt. Aber diese Uhr ist ein Schnäppchen. Sie läuft noch perfekt.",
+            "pt": "— No, it's broken. But this clock is a bargain. It still works perfectly.",
+            "audio": "Nein, sie ist kaputt. Aber diese Uhr ist ein Schnäppchen. Sie läuft noch perfekt.",
+            "rotulo": "Verkäufer"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Dann nehme ich das Fahrrad. Die gebrochene Lampe lasse ich hier.",
+            "pt": "— Then I'll take the bike. I'll leave the broken lamp here.",
+            "audio": "Dann nehme ich das Fahrrad. Die gebrochene Lampe lasse ich hier.",
+            "rotulo": "Lea"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe out loud what you see at a flea market, using the Partizip I and II."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write one sentence with each Partizip I and II from the session."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-070.json",
+  "responsavel": null
+}

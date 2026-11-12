@@ -1,0 +1,543 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 280,
+  "fase": 28,
+  "nivel": "b2",
+  "status": "publicada",
+  "titulo": "Partizip I and II as adjectives: Practice",
+  "objetivo": "Lesson 70, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 70,
+    "titulo": "Partizip I and II as adjectives",
+    "objetivo": "Use the Partizip II (gekochte Eier, ein verlorener Schlüssel, die gestiegenen Preise) and the Partizip I (lachend, die spielenden Kinder) as adjectives, with the right ending and the right meaning (passive and completed, active and completed, or active and ongoing).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Practice",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "fill-gap",
+            "enunciado": "das ___ Ei (boiled)",
+            "opcoes": [
+              "gekochte",
+              "kochende",
+              "gekocht"
+            ],
+            "gabarito": "gekochte",
+            "explicacao": "Partizip II + ending.",
+            "id": "de-070-e01"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Then I'll take the bike. I'll leave the broken lamp here.»",
+            "opcoes": [
+              "gebrochene",
+              "Lampe",
+              "ich",
+              "Dann",
+              "ich",
+              "Fahrrad.",
+              "das",
+              "nehme",
+              "lasse",
+              "hier.",
+              "Die"
+            ],
+            "gabarito": "Dann nehme ich das Fahrrad. Die gebrochene Lampe lasse ich hier.",
+            "explicacao": "Write: Dann nehme ich das Fahrrad. Die gebrochene Lampe lasse ich hier.",
+            "id": "de-070-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "ein ___ Schlüssel (lost)",
+            "opcoes": [
+              "verlorener",
+              "verlorenes",
+              "verlorene"
+            ],
+            "gabarito": "verlorener",
+            "explicacao": "Masculine with ein: -er.",
+            "id": "de-070-e02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "das ___ Kind (who is sleeping)",
+            "opcoes": [
+              "schlafende",
+              "geschlafene",
+              "schlafend"
+            ],
+            "gabarito": "schlafende",
+            "explicacao": "Partizip I + ending.",
+            "id": "de-070-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Dann nehme ich das Fahrrad. Die gebrochene Lampe lasse ich hier.",
+            "respostaEsperada": "Dann nehme ich das Fahrrad. Die gebrochene Lampe lasse ich hier.",
+            "explicacao": "Then I'll take the bike. I'll leave the broken lamp here.",
+            "id": "de-070-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "die ___ Kinder (playing)",
+            "opcoes": [
+              "spielenden",
+              "gespielten",
+              "spielend"
+            ],
+            "gabarito": "spielenden",
+            "explicacao": "Partizip I, plural with the article: -en.",
+            "id": "de-070-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «geöffnet» mean?",
+            "audio": "geöffnet",
+            "opcoes": [
+              "sleeping",
+              "open, opened",
+              "boiled",
+              "broken"
+            ],
+            "gabarito": "open, opened",
+            "explicacao": "«geöffnet» = open, opened.",
+            "id": "de-070-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "Ich suche ein gebrauchtes Fahrrad für meinen Sohn.",
+            "respostaEsperada": "Ich suche ein gebrauchtes Fahrrad für meinen Sohn.",
+            "explicacao": "I'm looking for a used bike for my son.",
+            "id": "de-070-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Er kam ___ herein. (laughing)",
+            "opcoes": [
+              "lachend",
+              "lachende",
+              "gelacht"
+            ],
+            "gabarito": "lachend",
+            "explicacao": "Adverb: no ending.",
+            "id": "de-070-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «lachend» mean?",
+            "audio": "lachend",
+            "opcoes": [
+              "broken",
+              "blooming, flourishing",
+              "laughing",
+              "damaged"
+            ],
+            "gabarito": "laughing",
+            "explicacao": "«lachend» = laughing.",
+            "id": "de-070-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Das Geschäft ist ___. (open)",
+            "opcoes": [
+              "geöffnet",
+              "geöffnete",
+              "öffnend"
+            ],
+            "gabarito": "geöffnet",
+            "explicacao": "After sein: unchanged.",
+            "id": "de-070-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «gebraten» mean?",
+            "audio": "gebraten",
+            "opcoes": [
+              "open, opened",
+              "blooming, flourishing",
+              "fried, roasted",
+              "lost"
+            ],
+            "gabarito": "fried, roasted",
+            "explicacao": "«gebraten» = fried, roasted.",
+            "id": "de-070-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ Preise (rising)",
+            "opcoes": [
+              "Steigende",
+              "Gestiegene",
+              "Steigen"
+            ],
+            "gabarito": "Steigende",
+            "explicacao": "Partizip I, plural without an article: -e.",
+            "id": "de-070-e07"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "Was kostet es mit der beschädigten Kette?",
+            "respostaEsperada": "Was kostet es mit der beschädigten Kette?",
+            "explicacao": "How much is it with the damaged chain?",
+            "id": "de-070-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «gebrochen» mean?",
+            "audio": "gebrochen",
+            "opcoes": [
+              "playing",
+              "broken",
+              "used, second-hand",
+              "open, opened"
+            ],
+            "gabarito": "broken",
+            "explicacao": "«gebrochen» = broken.",
+            "id": "de-070-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "The Partizip I has a meaning that is:",
+            "opcoes": [
+              "active and ongoing",
+              "passive and completed",
+              "future"
+            ],
+            "gabarito": "active and ongoing",
+            "explicacao": "Action in progress.",
+            "id": "de-070-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «beschädigt» mean?",
+            "audio": "beschädigt",
+            "opcoes": [
+              "sleeping",
+              "blocked, closed off",
+              "damaged",
+              "rising, growing"
+            ],
+            "gabarito": "damaged",
+            "explicacao": "«beschädigt» = damaged.",
+            "id": "de-070-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "The Partizip II of a transitive verb, used as an adjective, means:",
+            "opcoes": [
+              "passive and completed",
+              "active and ongoing",
+              "future"
+            ],
+            "gabarito": "passive and completed",
+            "explicacao": "An action that was done to the noun.",
+            "id": "de-070-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «wachsend» mean?",
+            "audio": "wachsend",
+            "opcoes": [
+              "broken",
+              "blooming, flourishing",
+              "blocked, closed off",
+              "rising, growing"
+            ],
+            "gabarito": "rising, growing",
+            "explicacao": "«wachsend» = growing.",
+            "id": "de-070-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "The Partizip I is formed with:",
+            "opcoes": [
+              "infinitive + d",
+              "ge- + stem + t",
+              "stem + te"
+            ],
+            "gabarito": "infinitive + d",
+            "explicacao": "lachen → lachend.",
+            "id": "de-070-e10"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «the used bike»",
+            "opcoes": [
+              "das",
+              "gebrauchte",
+              "Fahrrad"
+            ],
+            "gabarito": "das gebrauchte Fahrrad",
+            "explicacao": "Partizip II + ending -e.",
+            "id": "de-070-e11"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Die spielenden Kinder lachen",
+            "opcoes": [
+              "Die",
+              "lachen",
+              "spielenden",
+              "Kinder"
+            ],
+            "gabarito": "Die spielenden Kinder lachen",
+            "explicacao": "Write: Die spielenden Kinder lachen",
+            "id": "de-070-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "Gut. Und diese gebrochene Lampe? Funktioniert sie noch?",
+            "respostaEsperada": "Gut. Und diese gebrochene Lampe? Funktioniert sie noch?",
+            "explicacao": "Great. And this broken lamp? Does it still work?",
+            "id": "de-070-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Ich suche ein gebrauchtes Fahrrad",
+            "opcoes": [
+              "ein",
+              "Fahrrad",
+              "gebrauchtes",
+              "Ich",
+              "suche"
+            ],
+            "gabarito": "Ich suche ein gebrauchtes Fahrrad",
+            "explicacao": "Write: Ich suche ein gebrauchtes Fahrrad",
+            "id": "de-070-x10",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Die spielenden Kinder lachen",
+            "opcoes": [
+              "Die spielenden Kinder lachen",
+              "Die gespielten Kinder lachen",
+              "Die Kinder spielen und lachen"
+            ],
+            "gabarito": "Die spielenden Kinder lachen",
+            "explicacao": "Partizip I.",
+            "id": "de-070-e12"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ich suche ein gebrauchtes Fahrrad",
+            "respostaEsperada": "Ich suche ein gebrauchtes Fahrrad",
+            "explicacao": "Partizip II with a neuter ending.",
+            "id": "de-070-e13"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Die spielenden Kinder lachen",
+            "respostaEsperada": "Die spielenden Kinder lachen",
+            "explicacao": "Write: Die spielenden Kinder lachen",
+            "id": "de-070-x11",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "der ___ Schlüssel (lost)",
+            "opcoes": [
+              "verlorene",
+              "verloren",
+              "verlorenen",
+              "verlorener"
+            ],
+            "gabarito": "verlorene",
+            "explicacao": "After «der» (masculine nominative): «-e».",
+            "id": "de-070-m01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "die ___ Straße (blocked)",
+            "opcoes": [
+              "gesperrte",
+              "gesperrt",
+              "gesperrten",
+              "gesperrter"
+            ],
+            "gabarito": "gesperrte",
+            "explicacao": "After «die» in the nominative: «-e».",
+            "id": "de-070-m02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Das Fenster ist ___. (open)",
+            "opcoes": [
+              "geöffnet",
+              "geöffnete",
+              "geöffneten",
+              "geöffnetes"
+            ],
+            "gabarito": "geöffnet",
+            "explicacao": "After «sein», the adjective takes no ending.",
+            "id": "de-070-m03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "ein ___ Fahrrad (used)",
+            "opcoes": [
+              "gebrauchtes",
+              "gebrauchte",
+              "gebrauchten",
+              "gebrauchter"
+            ],
+            "gabarito": "gebrauchtes",
+            "explicacao": "«Fahrrad» is neuter; with «ein»: «-es».",
+            "id": "de-070-m04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "die ___ Preise (rising)",
+            "opcoes": [
+              "steigenden",
+              "steigend",
+              "steigende",
+              "steigender"
+            ],
+            "gabarito": "steigenden",
+            "explicacao": "Partizip I + plural with the article: «-en».",
+            "id": "de-070-m05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Das Kind schläft ___. (sleeping)",
+            "opcoes": [
+              "schlafend",
+              "schlafende",
+              "schlafenden",
+              "geschlafen"
+            ],
+            "gabarito": "schlafend",
+            "explicacao": "As an adverb, the Partizip I takes no ending.",
+            "id": "de-070-m06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "das kochende Ei (boiled)",
+              "das gekochte Ei",
+              "das kochte Ei"
+            ],
+            "gabarito": "das gekochte Ei",
+            "explicacao": "The egg undergoes the action: Partizip II.",
+            "id": "de-070-m07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "das gekochte Wasser (boiling right now)",
+              "das kochende Wasser",
+              "das kochte Wasser"
+            ],
+            "gabarito": "das kochende Wasser",
+            "explicacao": "Action in progress: Partizip I.",
+            "id": "de-070-m08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Partizip I of «lachen»:",
+            "opcoes": [
+              "lachend",
+              "gelacht",
+              "lachende",
+              "lacht"
+            ],
+            "gabarito": "lachend",
+            "explicacao": "Infinitive + «d».",
+            "id": "de-070-m09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Fließend Deutsch sprechen» means:",
+            "opcoes": [
+              "to speak German fluently",
+              "to speak German slowly",
+              "to learn German",
+              "to understand German"
+            ],
+            "gabarito": "to speak German fluently",
+            "explicacao": "«fließend» = fluent(ly).",
+            "id": "de-070-m10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "ein verlorenes Schlüssel",
+              "ein verlorener Schlüssel",
+              "ein verlorene Schlüssel"
+            ],
+            "gabarito": "ein verlorener Schlüssel",
+            "explicacao": "«Schlüssel» is masculine: «-er» after «ein».",
+            "id": "de-070-m11"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: the blocked road is long.",
+            "opcoes": [
+              "Die",
+              "gesperrte",
+              "Straße",
+              "ist",
+              "lang."
+            ],
+            "gabarito": "Die gesperrte Straße ist lang.",
+            "explicacao": "Participle adjective before the noun, with its ending.",
+            "id": "de-070-m12"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write 5 sentences with participles as adjectives: two Partizip II, two Partizip I and one used as an adverb.",
+            "respostaEsperada": "Ich suche ein gebrauchtes Fahrrad. Die beschädigte Kette ist alt. Die spielenden Kinder lachen. Das schlafende Baby ist ruhig. Er kam lachend herein.",
+            "id": "de-070-e14"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Record yourself describing people, objects and scenes with the Partizip I and II."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write a 6-sentence text using participles as adjectives."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-070.json",
+  "responsavel": null
+}
