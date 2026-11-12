@@ -111,11 +111,12 @@ O espanhol (aulas 33–62) e o alemão andam em paralelo: uma aula de cada por r
 
 **Onde paramos:** aulas 1–32 em inglês (128/248 sessões). Faltam **30 aulas = 120 sessões**: 33–38 (fim do A2 temático + simulado A2) e 39–62 (B1 inteiro). Medido: **≈ 11.700 textos únicos, ≈ 81 mil palavras** a explicar. Todas as 30 aulas têm bloco de erros (hoje do falante de português → reescrever para o de inglês); nenhuma tem tabela «armadilha» de duas colunas.
 
-**Fontes (cruzadas por aula):**
-- **FSI Spanish Basic Course** (domínio público) — `fontes-publicas/fsi-es/`, units 16–55 com mapa FSI → aulas. Escrito para americanos: é a base dos contrastes.
-- **Tatoeba** (CC BY) — banco de frases para conferir naturalidade; nunca o áudio.
-- **Roteiro apenas (licença NC/SA, não copiar):** *Spanish Grammar in Context* (COERLL, CC BY-NC-SA), *Acceso* (Kansas, CC BY-NC), Wikibooks Spanish (CC BY-SA).
-- **Livres com atribuição, se precisar de texto:** *Semillas* e *El Jardín del Lenguaje* (Univ. of Iowa, CC BY).
+**Fontes (cruzadas por aula) — tudo em `fontes-publicas/`, com o mapa aula → fonte em `fontes-publicas/LEIA-ME.md`:**
+- **FSI Spanish Basic Course**, units 1–55 (domínio público) — escrito para americanos: base dos contrastes.
+- ***Ahora Entendemos*** (CC BY 4.0) — progressão do B1, capítulo por capítulo.
+- **Broomhall, *Spanish Composition* (1921)** e outras gramáticas antigas para falantes de inglês — roteiro dos erros típicos, organizados pela palavra inglesa que engana (*to be*, *for*, *since*, *to take*, *would*).
+- **Tatoeba** — 261.773 pares espanhol–inglês locais (`tatoeba-es/buscar.py`), para conferir naturalidade; nunca o áudio.
+- **Só roteiro (NC/SA):** *Spanish Grammar in Context*, *Acceso*, Wikibooks.
 
 **O aluno fala inglês — cada aula explora:**
 - **O subjuntivo existe em inglês, mas escondido**: «I suggest that he *be*», «if I *were* you», «I wish I *had*» — ponto de partida para *quiera, fuera, hubiera*.

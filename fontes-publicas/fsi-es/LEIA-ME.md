@@ -1,8 +1,8 @@
 # FSI Spanish Basic Course (1961) — fonte de domínio público
 
-- **Origem:** Foreign Service Institute, Departamento de Estado dos EUA, *Spanish Basic Course* (Stockwell, Bowen, Silva-Fuenzalida), volumes 2–4, units 16–55. Obra do governo federal dos EUA → **domínio público**, uso comercial livre.
-- **Arquivos baixados:** PDFs dos *Student Text* (vol. 2, 3 e 4) em fsi-languages.yojik.eu, 12/11/2026; texto extraído com `pdftotext`. O PDF é escaneado: há erros de leitura (c → e, ó → 6, b → h) — **nunca copie sem conferir**.
-- `unidades/unit-NN.txt`: o texto separado por unidade (16–55).
+- **Origem:** Foreign Service Institute, Departamento de Estado dos EUA, *Spanish Basic Course* (Stockwell, Bowen, Silva-Fuenzalida), volumes 1–4, units 1–55. Obra do governo federal dos EUA → **domínio público**, uso comercial livre.
+- **Arquivos baixados:** PDFs dos *Student Text* (vol. 1 a 4) em fsi-languages.yojik.eu, 12/11/2026; texto extraído com `pdftotext`. O PDF é escaneado: há erros de leitura (c → e, ó → 6, b → h) — **nunca copie sem conferir**.
+- `unidades/unit-NN.txt`: o texto separado por unidade (1–55).
 
 ## Para que serve na Linvuu
 As notas gramaticais do FSI foram escritas **para americanos** e comparam cada ponto do espanhol com o inglês («Spanish infinitive for English -ing», «English subject-verb = Spanish object-verb», «lack of construction correlation»). São a base dos contrastes da versão inglesa das aulas 33–62 de espanhol do linvuu.com.
