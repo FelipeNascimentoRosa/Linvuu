@@ -1,0 +1,155 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 166,
+  "fase": 17,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Questions and indefinite pronouns: Wer, wen, wem, wessen",
+  "objetivo": "Lesson 42, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 42,
+    "titulo": "Questions and indefinite pronouns",
+    "objetivo": "Ask questions with welcher/welche/welches, was für ein and wer/wen/wem/wessen, and use the indefinite pronouns man, jemand, niemand, etwas, nichts, alles, alle and viele.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Wer, wen, wem, wessen",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "wer",
+            "translit": "VAIR",
+            "pt": "who (subject)",
+            "en": "who",
+            "audio": "wer"
+          },
+          {
+            "ru": "wen",
+            "translit": "VAIN",
+            "pt": "whom (direct object)",
+            "en": "whom",
+            "audio": "wen"
+          },
+          {
+            "ru": "wem",
+            "translit": "VAIM",
+            "pt": "to whom (dative)",
+            "en": "to whom",
+            "audio": "wem"
+          },
+          {
+            "ru": "wessen",
+            "translit": "VESS-en",
+            "pt": "whose",
+            "en": "whose",
+            "audio": "wessen"
+          },
+          {
+            "ru": "mit wem",
+            "translit": "mit VAIM",
+            "pt": "with whom",
+            "en": "with whom",
+            "audio": "mit wem"
+          },
+          {
+            "ru": "für wen",
+            "translit": "für VAIN",
+            "pt": "for whom",
+            "en": "for whom",
+            "audio": "für wen"
+          },
+          {
+            "ru": "von wem",
+            "translit": "fon VAIM",
+            "pt": "from whom, by whom",
+            "en": "from whom",
+            "audio": "von wem"
+          },
+          {
+            "ru": "zu wem",
+            "translit": "tsoo VAIM",
+            "pt": "to whom (going to a person)",
+            "en": "to whom",
+            "audio": "zu wem"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "The four forms of \"who\", step by step",
+        "explicacao": "STEP 1: \"who?\" changes with the CASE, like the pronouns — English still has who / whom / whose: «wer» (nominative, subject): «Wer kommt?» (Who's coming?); «wen» (accusative, direct object): «Wen siehst du?» (Whom do you see?); «wem» (dative): «Wem hilfst du?» (Who are you helping? — to whom); «wessen» (genitive): «Wessen Auto ist das?» (Whose car is that?). STEP 2: with a PREPOSITION, the preposition comes first and decides the case — no dangling prepositions as in English \"Who are you talking to?\": «Mit wem sprichst du?» (mit + dative), «Für wen ist das?» (für + accusative), «Von wem ist der Brief?» (von + dative), «Zu wem gehst du?» (zu + dative). STEP 3: the answer uses the same case: «Mit wem sprichst du? — Mit meinem Chef.» STEP 4: remember the prepositions and the cases they take (lessons 28 and 29).",
+        "tabela": [
+          {
+            "caso": "wer? (Nom.)",
+            "pergunta": "Wer kommt heute?",
+            "resposta": "Mein Bruder kommt."
+          },
+          {
+            "caso": "wen? (Akk.)",
+            "pergunta": "Wen siehst du?",
+            "resposta": "Ich sehe meinen Bruder."
+          },
+          {
+            "caso": "wem? (Dat.)",
+            "pergunta": "Wem hilfst du?",
+            "resposta": "Ich helfe meinem Bruder."
+          },
+          {
+            "caso": "wessen? (Gen.)",
+            "pergunta": "Wessen Auto ist das?",
+            "resposta": "Das ist das Auto meines Bruders."
+          },
+          {
+            "caso": "mit wem?",
+            "pergunta": "Mit wem sprichst du?",
+            "resposta": "Mit meinem Chef."
+          },
+          {
+            "caso": "für wen?",
+            "pergunta": "Für wen ist das Geschenk?",
+            "resposta": "Für meine Mutter."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Wer siehst du?",
+            "certo": "Wen siehst du?",
+            "motivo": "Direct object: «wen» (whom)."
+          },
+          {
+            "errado": "Wen hilfst du?",
+            "certo": "Wem hilfst du?",
+            "motivo": "«helfen» takes the dative: «wem»."
+          },
+          {
+            "errado": "Mit wen sprichst du?",
+            "certo": "Mit wem sprichst du?",
+            "motivo": "«mit» takes the dative."
+          }
+        ],
+        "tag": "Pronouns"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Ask and answer 6 questions out loud: «Wer … ? Wen … ? Wem … ? Mit wem … ? Für wen … ?»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write the chart of «welcher» for all four genders in the nominative, accusative and dative."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-042.json",
+  "responsavel": null
+}

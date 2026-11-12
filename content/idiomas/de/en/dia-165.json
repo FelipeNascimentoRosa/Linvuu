@@ -1,0 +1,160 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 165,
+  "fase": 17,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Questions and indefinite pronouns: Welcher and was für ein",
+  "objetivo": "Lesson 42, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 42,
+    "titulo": "Questions and indefinite pronouns",
+    "objetivo": "Ask questions with welcher/welche/welches, was für ein and wer/wen/wem/wessen, and use the indefinite pronouns man, jemand, niemand, etwas, nichts, alles, alle and viele.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Welcher and was für ein",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "der Typ",
+            "translit": "dair TÜP",
+            "pt": "type; guy (informal)",
+            "en": "type",
+            "audio": "der Typ"
+          },
+          {
+            "ru": "die Sorte",
+            "translit": "dee ZOR-teh",
+            "pt": "kind, sort",
+            "en": "sort",
+            "audio": "die Sorte"
+          },
+          {
+            "ru": "die Wahl",
+            "translit": "dee VAHL",
+            "pt": "choice",
+            "en": "choice",
+            "audio": "die Wahl"
+          },
+          {
+            "ru": "wählen",
+            "translit": "VAY-len",
+            "pt": "to choose; to vote",
+            "en": "to choose",
+            "audio": "wählen"
+          },
+          {
+            "ru": "aussuchen",
+            "translit": "OWS-zoo-khen",
+            "pt": "to pick out, to select",
+            "en": "to select",
+            "audio": "aussuchen"
+          },
+          {
+            "ru": "der Unterschied",
+            "translit": "dair OON-ter-sheet",
+            "pt": "difference",
+            "en": "difference",
+            "audio": "der Unterschied"
+          },
+          {
+            "ru": "gleich",
+            "translit": "GLYKH",
+            "pt": "the same, equal",
+            "en": "same",
+            "audio": "gleich"
+          },
+          {
+            "ru": "anders",
+            "translit": "AHN-ders",
+            "pt": "different",
+            "en": "different",
+            "audio": "anders"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "Welcher? and Was für ein?, step by step",
+        "explicacao": "STEP 1: «welcher, welche, welches» means \"WHICH\" and picks from known options: «Welcher Pullover gefällt dir?» (Which sweater do you like?). STEP 2: it declines like «der, die, das» and like «dieser»: nominative: welcher Mann, welche Frau, welches Kind, welche Kinder; accusative: welchen Mann, welche Frau, welches Kind, welche Kinder; dative: welchem Mann, welcher Frau, welchem Kind, welchen Kindern. STEP 3: an adjective after it takes the endings it would take after the definite article: «Welchen blauen Pullover?» STEP 4: «was für ein» means \"WHAT KIND OF\": «Was für ein Film ist das?» (What kind of movie is it?). Here «ein» declines like the indefinite article and «was für» stays fixed: «Was für einen Film möchtest du sehen?» (masculine accusative). STEP 5: for the plural, no article: «Was für Filme magst du?» (What kind of movies do you like?)",
+        "comparacao": "English makes the same distinction: \"which\" (choosing from options) vs \"what kind of\" (the category). German: «welcher» (which) vs «was für ein» (what kind of). The difference is that «welcher» changes its ending like «der».",
+        "exemplos": [
+          {
+            "ru": "Welcher Pullover gefällt dir?",
+            "pt": "Which sweater do you like?"
+          },
+          {
+            "ru": "Welchen Film möchtest du sehen?",
+            "pt": "Which movie do you want to see?"
+          },
+          {
+            "ru": "Was für ein Film ist das?",
+            "pt": "What kind of movie is this?"
+          },
+          {
+            "ru": "Was für Filme magst du?",
+            "pt": "What kind of movies do you like?"
+          }
+        ],
+        "tabela": [
+          {
+            "caso": "Nominativ",
+            "masculino": "welcher Mann",
+            "feminino": "welche Frau",
+            "neutro": "welches Kind",
+            "plural": "welche Kinder"
+          },
+          {
+            "caso": "Akkusativ",
+            "masculino": "welchen Mann",
+            "feminino": "welche Frau",
+            "neutro": "welches Kind",
+            "plural": "welche Kinder"
+          },
+          {
+            "caso": "Dativ",
+            "masculino": "welchem Mann",
+            "feminino": "welcher Frau",
+            "neutro": "welchem Kind",
+            "plural": "welchen Kindern"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Welcher Film möchtest du sehen?",
+            "certo": "Welchen Film möchtest du sehen?",
+            "motivo": "Masculine direct object: «welchen»."
+          },
+          {
+            "errado": "Was für ein Filme magst du?",
+            "certo": "Was für Filme magst du?",
+            "motivo": "Plural: no «ein»."
+          }
+        ],
+        "tag": "Pronouns"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Ask 6 questions out loud: «Welchen … möchtest du? Welche … gefällt dir? Was für ein … ist das?»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 sentences with the genitive (possession) and the three genitive prepositions."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-042.json",
+  "responsavel": null
+}

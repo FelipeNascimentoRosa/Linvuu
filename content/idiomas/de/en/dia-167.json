@@ -1,0 +1,157 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 167,
+  "fase": 17,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Questions and indefinite pronouns: Man, jemand, niemand, etwas, nichts, alles",
+  "objetivo": "Lesson 42, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 42,
+    "titulo": "Questions and indefinite pronouns",
+    "objetivo": "Ask questions with welcher/welche/welches, was für ein and wer/wen/wem/wessen, and use the indefinite pronouns man, jemand, niemand, etwas, nichts, alles, alle and viele.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Man, jemand, niemand, etwas, nichts, alles",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Indefinite pronouns, step by step",
+        "explicacao": "STEP 1: «man» (one, you, people in general) takes the «er» form of the verb: «Man darf hier nicht rauchen» (You can't smoke here). It's like English \"one\" or general \"you\" — and careful: «man» is not \"man\" (that's «der Mann»). STEP 2: «jemand» (someone) and «niemand» (no one) change in the accusative and dative: «jemanden», «niemanden»; «jemandem», «niemandem»: «Ich sehe niemanden» (I don't see anyone), «Ich helfe niemandem.» STEP 3: «etwas» (something), «nichts» (nothing), «alles» (everything) don't change: «Ich brauche etwas», «Er sagt nichts», «Sie weiß alles.» STEP 4: an adjective after them becomes a neuter noun, capitalized, with -es — like English \"something new\": «Hast du etwas Neues?» (Anything new?), «nichts Gutes» (nothing good). STEP 5: «alle» (all, everyone) and «viele» (many) are plural: «Alle Kinder spielen», «Viele Leute kommen.»",
+        "tabela": [
+          {
+            "pronome": "man",
+            "significado": "one, you, people (in general)",
+            "exemplo": "Hier darf man nicht rauchen."
+          },
+          {
+            "pronome": "jemand / niemand",
+            "significado": "someone / no one",
+            "exemplo": "Ist jemand da? — Nein, niemand."
+          },
+          {
+            "pronome": "jemanden / niemanden (Akk.)",
+            "significado": "someone / no one (as an object)",
+            "exemplo": "Ich sehe niemanden."
+          },
+          {
+            "pronome": "etwas / nichts / alles",
+            "significado": "something / nothing / everything",
+            "exemplo": "Er sagt nichts. Sie weiß alles."
+          },
+          {
+            "pronome": "etwas / nichts + adjetivo",
+            "significado": "something new / nothing good",
+            "exemplo": "Hast du etwas Neues? Ich habe nichts Gutes gehört."
+          },
+          {
+            "pronome": "alle / viele",
+            "significado": "all / many",
+            "exemplo": "Alle Kinder spielen. Viele Leute kommen."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich sehe niemand.",
+            "certo": "Ich sehe niemanden.",
+            "motivo": "Accusative: «niemanden»."
+          },
+          {
+            "errado": "Hast du etwas neues?",
+            "certo": "Hast du etwas Neues?",
+            "motivo": "The adjective becomes a noun: capital letter and -es."
+          },
+          {
+            "errado": "Man dürfen hier rauchen.",
+            "certo": "Man darf hier rauchen.",
+            "motivo": "«man» takes the «er» form."
+          }
+        ],
+        "tag": "Pronouns"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 10,
+        "titulo": "Ist jemand da? / Is anyone there?",
+        "contexto": "Two colleagues are looking for someone at the office.",
+        "linhas": [
+          {
+            "personagem": "Lea",
+            "ru": "— Ist jemand im Büro?",
+            "pt": "— Is anyone in the office?",
+            "audio": "Ist jemand im Büro?",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Nein, niemand. Alle sind in der Besprechung.",
+            "pt": "— No, no one. Everyone is in the meeting.",
+            "audio": "Nein, niemand. Alle sind in der Besprechung.",
+            "rotulo": "Paul"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Wann kommt man aus der Besprechung zurück?",
+            "pt": "— When do people get back from the meeting?",
+            "audio": "Wann kommt man aus der Besprechung zurück?",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Ich weiß nichts Genaues. Vielleicht um zehn Uhr.",
+            "pt": "— I don't know anything for sure. Maybe at ten.",
+            "audio": "Ich weiß nichts Genaues. Vielleicht um zehn Uhr.",
+            "rotulo": "Paul"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Hast du etwas Neues von der Chefin gehört?",
+            "pt": "— Have you heard anything new from the boss?",
+            "audio": "Hast du etwas Neues von der Chefin gehört?",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Nein, ich habe niemanden gesehen.",
+            "pt": "— No, I haven't seen anyone.",
+            "audio": "Nein, ich habe niemanden gesehen.",
+            "rotulo": "Paul"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Dann warten wir. Viele Leute kommen erst später.",
+            "pt": "— Then we'll wait. Many people come later.",
+            "audio": "Dann warten wir. Viele Leute kommen erst später.",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Gute Idee. Ich hole uns einen Kaffee.",
+            "pt": "— Good idea. I'll get us a coffee.",
+            "audio": "Gute Idee. Ich hole uns einen Kaffee.",
+            "rotulo": "Paul"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Make 6 sentences with «man», «jemand», «niemand», «etwas», «nichts» and «alles»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 4 questions with «wer, wen, wem, wessen» and the answers."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-042.json",
+  "responsavel": null
+}
