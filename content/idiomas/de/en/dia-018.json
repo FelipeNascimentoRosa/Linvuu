@@ -27,25 +27,25 @@
         "explicacao": "STEP 1: look at the endings of mein. STEP 2: now look at the owner. STEP 3: Tom und seine Mutter. Lena und ihr Vater. STEP 4: Camila und ihr Bruder. STEP 5: Questions: STEP 6: which words you already know do the endings of mein remind you of? STEP 7: what decides between sein and ihr? STEP 8: what decides between seine and sein?",
         "tabela": [
           {
-            "c1": "Nominative",
-            "c2": "Das ist mein Bruder.",
-            "c3": "Das ist meine Schwester.",
-            "c4": "Das ist mein Kind.",
-            "c5": "Das sind meine Eltern."
+            "caso": "Nominative",
+            "masculino": "Das ist mein Bruder.",
+            "feminino": "Das ist meine Schwester.",
+            "neutro": "Das ist mein Kind.",
+            "plural": "Das sind meine Eltern."
           },
           {
-            "c1": "Accusative",
-            "c2": "Ich sehe meinen Bruder.",
-            "c3": "Ich sehe meine Schwester.",
-            "c4": "Ich sehe mein Kind.",
-            "c5": "Ich sehe meine Eltern."
+            "caso": "Accusative",
+            "masculino": "Ich sehe meinen Bruder.",
+            "feminino": "Ich sehe meine Schwester.",
+            "neutro": "Ich sehe mein Kind.",
+            "plural": "Ich sehe meine Eltern."
           },
           {
-            "c1": "Dative",
-            "c2": "Ich helfe meinem Bruder.",
-            "c3": "Ich helfe meiner Schwester.",
-            "c4": "Ich helfe meinem Kind.",
-            "c5": "Ich helfe meinen Eltern."
+            "caso": "Dative",
+            "masculino": "Ich helfe meinem Bruder.",
+            "feminino": "Ich helfe meiner Schwester.",
+            "neutro": "Ich helfe meinem Kind.",
+            "plural": "Ich helfe meinen Eltern."
           }
         ],
         "tag": "Discover"

@@ -97,24 +97,24 @@
         "comparacao": "English works out who does what from word order: \"the man sees the dog\" and \"the dog sees the man\" are different because the order changes — \"the\" never changes. German keeps the order freer and marks the object on the article instead: «Den Hund sieht der Mann» still means \"the man sees the dog\". You already know the idea from English pronouns: he sees → sees him. German does the same with masculine articles: der → den.",
         "tabela": [
           {
-            "ingles": "masculine",
-            "alemao": "der Tisch",
-            "evite": "den Tisch"
+            "genero": "masculine",
+            "sujeito": "der Tisch",
+            "objeto": "den Tisch"
           },
           {
-            "ingles": "feminine",
-            "alemao": "die Lampe",
-            "evite": "die Lampe"
+            "genero": "feminine",
+            "sujeito": "die Lampe",
+            "objeto": "die Lampe"
           },
           {
-            "ingles": "neuter",
-            "alemao": "das Bett",
-            "evite": "das Bett"
+            "genero": "neuter",
+            "sujeito": "das Bett",
+            "objeto": "das Bett"
           },
           {
-            "ingles": "plural",
-            "alemao": "die Stühle",
-            "evite": "die Stühle"
+            "genero": "plural",
+            "sujeito": "die Stühle",
+            "objeto": "die Stühle"
           }
         ],
         "tag": "Trap"

@@ -105,11 +105,6 @@ export function traduzirAula(aula, id, l) {
     const original = aula.sessoes[copia.sessoes.indexOf(s)].blocos[s.blocos.indexOf(b)].itens[k].pt;
     if (i.en && i.pt === original && !mapa[original]) { i.pt = i.en; const j = faltam.indexOf(original); if (j >= 0) faltam.splice(j, 1); }
   });
-  // Tabelas «armadilha» do curso de alemão vieram do livro com as chaves portugues/ingles/evite, mas o conteúdo é
-  // frase na língua do aluno / alemão certo / alemão errado. Na versão traduzida, as chaves passam a dizer o que mostram.
-  if (id === 'de' && l !== fonteDe(id)) for (const s of copia.sessoes) for (const b of s.blocos) if (Array.isArray(b.tabela) && b.tabela.length && b.tabela.every((r) => 'portugues' in r && 'ingles' in r && 'evite' in r)) {
-    b.tabela = b.tabela.map((r) => ({ [l === 'en' ? 'ingles' : l]: r.portugues, alemao: r.ingles, evite: r.evite }));
-  }
   return { aula: copia, faltam: [...new Set(faltam)] };
 }
 

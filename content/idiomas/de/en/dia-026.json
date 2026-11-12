@@ -27,28 +27,28 @@
         "explicacao": "STEP 1: compare the sentences. STEP 2: Questions: STEP 3: which gender changes form when it goes from subject to object? STEP 4: what happens to ein in the masculine? STEP 5: who is the subject in Ich kaufe den Tisch? And the object?",
         "tabela": [
           {
-            "c1": "Der Tisch ist alt.",
-            "c2": "Ich kaufe den Tisch. (masculine object: der → den)"
+            "sujeito": "Der Tisch ist alt.",
+            "objeto": "Ich kaufe den Tisch."
           },
           {
-            "c1": "Die Lampe ist neu.",
-            "c2": "Ich kaufe die Lampe."
+            "sujeito": "Die Lampe ist neu.",
+            "objeto": "Ich kaufe die Lampe."
           },
           {
-            "c1": "Das Buch ist gut.",
-            "c2": "Ich kaufe das Buch."
+            "sujeito": "Das Buch ist gut.",
+            "objeto": "Ich kaufe das Buch."
           },
           {
-            "c1": "Die Stühle sind alt.",
-            "c2": "Ich kaufe die Stühle."
+            "sujeito": "Die Stühle sind alt.",
+            "objeto": "Ich kaufe die Stühle."
           },
           {
-            "c1": "Ein Hund ist hier.",
-            "c2": "Ich habe einen Hund."
+            "sujeito": "Ein Hund ist hier.",
+            "objeto": "Ich habe einen Hund."
           },
           {
-            "c1": "Eine Katze ist hier.",
-            "c2": "Ich habe eine Katze."
+            "sujeito": "Eine Katze ist hier.",
+            "objeto": "Ich habe eine Katze."
           }
         ],
         "tag": "Discover"
