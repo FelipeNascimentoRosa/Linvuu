@@ -1,0 +1,215 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 102,
+  "fase": 11,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Dative 1: articles and pronouns: The dative of the pronouns",
+  "objetivo": "Lesson 26, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 26,
+    "titulo": "Dative 1: articles and pronouns",
+    "objetivo": "Understand what the dative is (\"to whom?\"), form the dative of the definite and indefinite articles and of the personal pronouns, and use them with verbs of giving, showing and telling, in the right order.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "The dative of the pronouns",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "Figure it out yourself",
+        "explicacao": "STEP 1: look at the sentences in the table and find who receives something. STEP 2: which article turns into «dem»? For which genders? STEP 3: what happens to «die» (feminine) in the dative? And in the plural? STEP 4: what happens to the noun itself in the plural? STEP 5: which object comes first: the dative (the person) or the accusative (das Buch)? Is that the same as \"I give the child the book\" in English? Check your answers in the next block.",
+        "tabela": [
+          {
+            "frase": "Ich gebe dem Mann das Buch.",
+            "funcao": "dem Mann = to whom (m.)"
+          },
+          {
+            "frase": "Ich schicke der Frau einen Brief.",
+            "funcao": "der Frau = to whom (f.)"
+          },
+          {
+            "frase": "Ich schenke dem Kind ein Spielzeug.",
+            "funcao": "dem Kind = to whom (n.)"
+          },
+          {
+            "frase": "Ich zeige den Kindern das Foto.",
+            "funcao": "den Kindern = to whom (pl.)"
+          }
+        ],
+        "tag": "Figure it out"
+      },
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "schenken",
+            "translit": "SHENK-en",
+            "pt": "to give (as a gift)",
+            "en": "to give (a gift)",
+            "audio": "schenken"
+          },
+          {
+            "ru": "schicken",
+            "translit": "SHICK-en",
+            "pt": "to send",
+            "en": "to send",
+            "audio": "schicken"
+          },
+          {
+            "ru": "zeigen",
+            "translit": "TSY-gen",
+            "pt": "to show",
+            "en": "to show",
+            "audio": "zeigen"
+          },
+          {
+            "ru": "erzählen",
+            "translit": "air-TSAY-len",
+            "pt": "to tell (a story)",
+            "en": "to tell",
+            "audio": "erzählen"
+          },
+          {
+            "ru": "leihen",
+            "translit": "LY-en",
+            "pt": "to lend",
+            "en": "to lend",
+            "audio": "leihen"
+          },
+          {
+            "ru": "anbieten",
+            "translit": "AHN-bee-ten",
+            "pt": "to offer",
+            "en": "to offer",
+            "audio": "anbieten"
+          },
+          {
+            "ru": "empfehlen",
+            "translit": "emp-FAY-len",
+            "pt": "to recommend",
+            "en": "to recommend",
+            "audio": "empfehlen"
+          },
+          {
+            "ru": "wünschen",
+            "translit": "VÜN-shen",
+            "pt": "to wish",
+            "en": "to wish",
+            "audio": "wünschen"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Pronouns in the dative, step by step",
+        "explicacao": "STEP 1: personal pronouns have a dative form too: mir (to me), dir (to you), ihm (to him, to it), ihr (to her), uns (to us), euch (to you all), ihnen (to them), Ihnen (to you, formal). STEP 2: they replace «dem Mann», «der Frau», «den Kindern» so you don't repeat the noun: «Ich gebe dem Mann das Buch» → «Ich gebe ihm das Buch» (I give him the book). STEP 3: compare the three columns of the table: nominative («ich»), accusative («mich») and dative («mir»). English \"me\" covers both «mich» and «mir» — German doesn't. Careful: «uns» and «euch» are the same in the accusative and the dative. STEP 4: these verbs usually take TWO objects (dative + accusative), just like English \"give someone something\": geben, schenken, schicken, zeigen, erzählen, leihen, anbieten, empfehlen. STEP 5: «wünschen» is a classic: «Ich wünsche dir einen schönen Tag» (I wish you a nice day).",
+        "exemplos": [
+          {
+            "ru": "Ich gebe ihm das Buch.",
+            "pt": "I give him the book."
+          },
+          {
+            "ru": "Ich schicke ihr eine Postkarte.",
+            "pt": "I send her a postcard."
+          },
+          {
+            "ru": "Er zeigt uns die Stadt.",
+            "pt": "He shows us the city."
+          },
+          {
+            "ru": "Ich wünsche dir einen schönen Tag.",
+            "pt": "I wish you a good day."
+          }
+        ],
+        "tabela": [
+          {
+            "nominativo": "ich",
+            "acusativo": "mich",
+            "dativo": "mir"
+          },
+          {
+            "nominativo": "du",
+            "acusativo": "dich",
+            "dativo": "dir"
+          },
+          {
+            "nominativo": "er",
+            "acusativo": "ihn",
+            "dativo": "ihm"
+          },
+          {
+            "nominativo": "sie (she)",
+            "acusativo": "sie",
+            "dativo": "ihr"
+          },
+          {
+            "nominativo": "es",
+            "acusativo": "es",
+            "dativo": "ihm"
+          },
+          {
+            "nominativo": "wir",
+            "acusativo": "uns",
+            "dativo": "uns"
+          },
+          {
+            "nominativo": "ihr",
+            "acusativo": "euch",
+            "dativo": "euch"
+          },
+          {
+            "nominativo": "sie (they)",
+            "acusativo": "sie",
+            "dativo": "ihnen"
+          },
+          {
+            "nominativo": "Sie (formal)",
+            "acusativo": "Sie",
+            "dativo": "Ihnen"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich gebe er das Buch.",
+            "certo": "Ich gebe ihm das Buch.",
+            "motivo": "The receiver takes the dative: «ihm»."
+          },
+          {
+            "errado": "Das Handy gehört ich.",
+            "certo": "Das Handy gehört mir.",
+            "motivo": "«ich» becomes «mir» in the dative."
+          }
+        ],
+        "tag": "Pronouns"
+      },
+      {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "In 30 seconds",
+        "explicacao": "STEP 1: with two nouns, the person (dative) comes first — the same as English \"give the child the book\": Ich gebe dem Kind das Buch.",
+        "tag": "Summary"
+      },
+      {
+        "tipo": "producao",
+        "min": 4,
+        "enunciado": "Replace the receiver with a pronoun out loud — «Ich gebe dem Mann das Buch → Ich gebe ihm das Buch» — with 6 sentences of your own."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Write the dative of the definite and indefinite articles and 4 examples."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-026.json",
+  "responsavel": null
+}
