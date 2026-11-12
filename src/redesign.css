@@ -135,7 +135,7 @@ a.livro:focus-visible{outline:2px solid var(--verde,#1E3B2F);outline-offset:4px}
 
 /* Página «Português para estrangeiros»: cada item traz o texto em português e em inglês, um sob o outro */
 .pt-pontos{list-style:none;margin:0 0 32px;padding:0;display:grid;gap:20px}
-.pt-pontos li{border-left:2px solid var(--verde-floresta);padding:2px 0 2px 18px;max-width:46em}
+.pt-pontos li{border-left:2px solid var(--verde-floresta);padding:2px 0 2px 18px;max-width:70ch}
 .pt-pontos li span{display:block}
 .pt-pontos li span+span{margin-top:6px;color:var(--grafite-65)}
 .pt-estrangeiros .lead{max-width:40em}

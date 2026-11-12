@@ -41,10 +41,10 @@ export const AULAS_RUSSO: Record<'pt-BR' | 'en', TextoAulasRusso> = {
   'pt-BR': {
     titulo: 'Aulas de russo online, ao vivo com professor',
     descricao: 'Aulas de russo por videochamada, em horários combinados com você, e o curso de russo da Linvuu entre as aulas: gramática explicada e áudio em cada frase.',
-    lead: 'A aula é onde o russo vira conversa. O curso é onde estão a gramática e o áudio, aula por aula, para a hora com o professor ser gasta falando — não copiando tabela.',
+    lead: 'A aula é onde o russo vira conversa. O curso é onde estão a gramática e o áudio, aula por aula, para a hora com o professor ser gasta falando, e não copiando tabela.',
     paraQuemTitulo: 'Para quem são as aulas',
     paraQuem: [
-      'Quem começa do zero: o alfabeto cirílico é a primeira coisa que o curso ensina, e a aula segue a mesma ordem — você não precisa chegar sabendo nada.',
+      'Quem começa do zero: o alfabeto cirílico é a primeira coisa que o curso ensina, e a aula segue a mesma ordem: você não precisa chegar sabendo nada.',
       'Quem já lê russo e trava na hora de falar: a aula é o lugar da fala, com alguém corrigindo na hora.',
       'Quem se prepara para o TRKI, a prova de proficiência em russo, do B2 ao C2.',
       'Quem ouviu russo em casa a vida inteira e nunca estudou a gramática: os casos e os verbos de movimento, finalmente em ordem.',
