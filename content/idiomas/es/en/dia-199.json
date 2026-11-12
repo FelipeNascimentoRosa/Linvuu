@@ -1,0 +1,231 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 199,
+  "fase": 20,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Gerund and participle: The participle: forms and uses",
+  "objetivo": "Lesson 50, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 50,
+    "titulo": "Gerund and participle",
+    "objetivo": "Form and use the gerund (regular and irregular, with attached pronouns, in phrases like «llevar», «seguir» and «ir» + gerund, and without the English \"-ing\" uses Spanish doesn't accept) and the participle (irregular forms, agreement as an adjective, «estar», «tener», «llevar» and «dejar» + participle, absolute constructions).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "The participle: forms and uses",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "cerrado, cerrada",
+            "translit": "",
+            "pt": "closed",
+            "en": "",
+            "audio": "cerrado, cerrada"
+          },
+          {
+            "ru": "abierto, abierta",
+            "translit": "",
+            "pt": "open",
+            "en": "",
+            "audio": "abierto, abierta"
+          },
+          {
+            "ru": "roto, rota",
+            "translit": "",
+            "pt": "broken",
+            "en": "",
+            "audio": "roto, rota"
+          },
+          {
+            "ru": "hecho, hecha",
+            "translit": "",
+            "pt": "done, made",
+            "en": "",
+            "audio": "hecho, hecha"
+          },
+          {
+            "ru": "envuelto, envuelta",
+            "translit": "",
+            "pt": "wrapped",
+            "en": "",
+            "audio": "envuelto, envuelta"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Hablado, comido, vivido, hecho",
+        "explicacao": "STEP 1: the participle is the form you already use in the pretérito perfecto («he hablado») and in the passive («fue publicado») — English \"-ed\" / past participle. STEP 2: drop the infinitive ending and add «-ado» (-ar verbs) or «-ido» (-er and -ir verbs): hablar → hablado, comer → comido, vivir → vivido. STEP 3: the irregular ones have to be learned: abrir → abierto, cubrir → cubierto, decir → dicho, escribir → escrito, hacer → hecho, morir → muerto, poner → puesto, romper → roto, ver → visto, volver → vuelto. Compounds follow: descubrir → descubierto, deshacer → deshecho, devolver → devuelto, resolver → resuelto, satisfacer → satisfecho. STEP 4: in compound tenses the participle never changes: «He escrito las cartas», «Hemos visto la película». STEP 5: as an adjective it agrees in gender and number: «las cartas escritas», «una puerta abierta», «los niños cansados». STEP 6: here's an English-speaker trap: positions and states that English says with \"-ing\" are participles in Spanish. \"I'm sitting\" = «Estoy sentado» (not «sentando», which means seating someone), \"she's standing\" = «está de pie», \"he's lying down\" = «está tumbado», \"I'm tired\" = «estoy cansado». STEP 7: with «tener», «llevar» or «dejar», the participle agrees with the object and shows a result: «Tengo escritas tres cartas» (I've got three letters written), «Llevo leídas cien páginas» (I've read a hundred pages so far), «Dejó cerrada la puerta» (He left the door closed). STEP 8: the absolute construction uses the participle for a finished action, in writing: «Terminada la clase, salimos» (Once the class was over, we left), «Dicho esto, empezamos» (That said, let's begin), «Hecho el pago, recibirá el recibo». With «estar», the participle describes a state: «La tienda está abierta».",
+        "comparacao": "English \"I'm sitting\", \"she's lying down\", \"he's leaning\" describe positions; Spanish uses «estar» + participle: «estoy sentado», «está tumbada», «está apoyado». «Estoy sentando» would mean \"I'm seating (someone)\". And English \"I have three letters written\" = «Tengo escritas tres cartas», with agreement.",
+        "tabela": [
+          {
+            "infinitivo": "abrir",
+            "participio": "abierto",
+            "exemplo": "La puerta está abierta."
+          },
+          {
+            "infinitivo": "cubrir",
+            "participio": "cubierto",
+            "exemplo": "El cielo está cubierto."
+          },
+          {
+            "infinitivo": "decir",
+            "participio": "dicho",
+            "exemplo": "Dicho esto, empezamos."
+          },
+          {
+            "infinitivo": "escribir",
+            "participio": "escrito",
+            "exemplo": "Tengo escritas tres cartas."
+          },
+          {
+            "infinitivo": "hacer",
+            "participio": "hecho",
+            "exemplo": "Trato hecho."
+          },
+          {
+            "infinitivo": "morir",
+            "participio": "muerto",
+            "exemplo": "La planta está muerta."
+          },
+          {
+            "infinitivo": "poner",
+            "participio": "puesto",
+            "exemplo": "La mesa está puesta."
+          },
+          {
+            "infinitivo": "romper",
+            "participio": "roto",
+            "exemplo": "El vaso está roto."
+          },
+          {
+            "infinitivo": "ver",
+            "participio": "visto",
+            "exemplo": "He visto esa película."
+          },
+          {
+            "infinitivo": "volver",
+            "participio": "vuelto",
+            "exemplo": "Ha vuelto a casa."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Hemos escritas las cartas.",
+            "certo": "Hemos escrito las cartas.",
+            "motivo": "In compound tenses with «haber», the participle doesn't agree."
+          },
+          {
+            "errado": "Tengo comprado dos billetes.",
+            "certo": "Tengo comprados dos billetes.",
+            "motivo": "With «tener», the participle agrees with the object."
+          },
+          {
+            "errado": "Estoy sentando en el sofá.",
+            "certo": "Estoy sentado en el sofá.",
+            "motivo": "English \"I'm sitting\" is a position, so it's «estar» + participle; «sentando» means seating someone."
+          },
+          {
+            "errado": "Ha hacido el trabajo.",
+            "certo": "Ha hecho el trabajo.",
+            "motivo": "«Hacer» has the irregular participle «hecho»."
+          }
+        ],
+        "tag": "Participle"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "La mudanza / The move",
+        "contexto": "Diego and Carmen are in the middle of moving house and talk about what's left to pack.",
+        "linhas": [
+          {
+            "personagem": "Diego",
+            "ru": "— ¿Cómo va la mudanza? ¿Está todo empaquetado?",
+            "pt": "— How's the move going? Is everything packed?",
+            "audio": "¿Cómo va la mudanza? ¿Está todo empaquetado?",
+            "rotulo": "Diego"
+          },
+          {
+            "personagem": "Carmen",
+            "ru": "— Casi. Llevo tres días guardando cosas y ya tengo empaquetados los libros y la ropa. Las cajas de la cocina siguen abiertas.",
+            "pt": "— Almost. I've been packing things for three days and I've already got the books and clothes boxed up. The kitchen boxes are still open.",
+            "audio": "Casi. Llevo tres días guardando cosas y ya tengo empaquetados los libros y la ropa. Las cajas de la cocina siguen abiertas.",
+            "rotulo": "Carmen"
+          },
+          {
+            "personagem": "Diego",
+            "ru": "— Yo voy bajando las cajas pequeñas al coche. ¿Dónde has dejado las llaves del piso?",
+            "pt": "— I'll start taking the small boxes down to the car. Where did you leave the keys to the flat?",
+            "audio": "Yo voy bajando las cajas pequeñas al coche. ¿Dónde has dejado las llaves del piso?",
+            "rotulo": "Diego"
+          },
+          {
+            "personagem": "Carmen",
+            "ru": "— Las dejé puestas en la puerta. Cuando salgas, cierra la puerta con llave y devuélveselas a la casera.",
+            "pt": "— I left them by the door. When you leave, lock the door and give them back to the landlady.",
+            "audio": "Las dejé puestas en la puerta. Cuando salgas, cierra la puerta con llave y devuélveselas a la casera.",
+            "rotulo": "Carmen"
+          },
+          {
+            "personagem": "Diego",
+            "ru": "— Vale. Mientras tanto, siéntate un rato. Llevas toda la mañana trabajando sin parar.",
+            "pt": "— OK. Meanwhile, sit down for a bit. You've spent the whole morning working non-stop.",
+            "audio": "Vale. Mientras tanto, siéntate un rato. Llevas toda la mañana trabajando sin parar.",
+            "rotulo": "Diego"
+          },
+          {
+            "personagem": "Carmen",
+            "ru": "— No puedo, si me siento ya no me levanto. Estoy agotada, pero tengo que seguir.",
+            "pt": "— I can't — if I sit down, I won't get up again. I'm exhausted, but I need to keep going.",
+            "audio": "No puedo, si me siento ya no me levanto. Estoy agotada, pero tengo que seguir.",
+            "rotulo": "Carmen"
+          },
+          {
+            "personagem": "Diego",
+            "ru": "— Entonces sigue de pie, pero bebe algo. Te he traído un zumo; está en la mesa, ya abierto.",
+            "pt": "— Then stay on your feet, but drink something. I've brought you a juice; it's on the table, already open.",
+            "audio": "Entonces sigue de pie, pero bebe algo. Te he traído un zumo; está en la mesa, ya abierto.",
+            "rotulo": "Diego"
+          },
+          {
+            "personagem": "Carmen",
+            "ru": "— ¡Gracias! Dándome el zumo me has salvado la mañana. Cuando acabemos, cenaremos tranquilos, hablando de todo menos de cajas.",
+            "pt": "— Thank you! You've saved my morning with that juice. When we're done, we'll have a quiet dinner, talking about anything but boxes.",
+            "audio": "¡Gracias! Dándome el zumo me has salvado la mañana. Cuando acabemos, cenaremos tranquilos, hablando de todo menos de cajas.",
+            "rotulo": "Carmen"
+          },
+          {
+            "personagem": "Diego",
+            "ru": "— Trato hecho. Pero antes acabemos con las de la cocina.",
+            "pt": "— Deal. But first let's finish the kitchen ones.",
+            "audio": "Trato hecho. Pero antes acabemos con las de la cocina.",
+            "rotulo": "Diego"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe your room or your desk out loud right now, with participles as adjectives and with «estar»: «La ventana está…», «La mesa está…», «Tengo… (escritas, guardadas, preparadas)»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say three sentences with a gerund and one with «llevar». Then say the participle of «hacer», «decir», «poner», «ver», «volver», «abrir» and «escribir»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-050.json",
+  "responsavel": null
+}
