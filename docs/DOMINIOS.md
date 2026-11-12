@@ -45,3 +45,5 @@ curl -s https://linvuu.com.br/sitemap.xml | grep -c '<loc>'  # 42
 curl -s https://linvuu.com/sitemap.xml | grep -c '<loc>'     # 18
 ```
 Smoke completo: skill `verificar-site` (relata cada domínio em separado).
+
+Lotes do .com, regras do aluno falante de inglês, trava do conteúdo traduzido e progresso: **[LEIA-ME-INTERNACIONAL.md](LEIA-ME-INTERNACIONAL.md)**.
