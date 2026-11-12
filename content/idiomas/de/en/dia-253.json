@@ -1,0 +1,145 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 253,
+  "fase": 26,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Giving opinions, agreeing, disagreeing and structuring a text: Giving your opinion",
+  "objetivo": "Lesson 64, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 64,
+    "titulo": "Giving opinions, agreeing, disagreeing and structuring a text",
+    "objetivo": "Express and justify an opinion, agree and disagree politely, and structure an opinion text (a forum post or a letter to the editor) with an introduction, arguments, an example and a conclusion.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Giving your opinion",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "meiner Meinung nach",
+            "translit": "MY-ner MY-noong NAHKH",
+            "pt": "in my opinion",
+            "en": "in my opinion",
+            "audio": "meiner Meinung nach"
+          },
+          {
+            "ru": "ich bin der Meinung, dass",
+            "translit": "ikh bin dair MY-noong dahss",
+            "pt": "I'm of the opinion that",
+            "en": "I am of the opinion that",
+            "audio": "ich bin der Meinung, dass"
+          },
+          {
+            "ru": "ich finde, dass",
+            "translit": "ikh FIN-deh dahss",
+            "pt": "I think that, I find that",
+            "en": "I find that",
+            "audio": "ich finde, dass"
+          },
+          {
+            "ru": "ich glaube / denke, dass",
+            "translit": "ikh GLOW-beh dahss",
+            "pt": "I believe / think that",
+            "en": "I believe / think that",
+            "audio": "ich glaube / denke, dass"
+          },
+          {
+            "ru": "das Argument",
+            "translit": "dahs ar-goo-MENT",
+            "pt": "argument",
+            "en": "argument",
+            "audio": "das Argument"
+          },
+          {
+            "ru": "das Beispiel",
+            "translit": "dahs BY-shpeel",
+            "pt": "example",
+            "en": "example",
+            "audio": "das Beispiel"
+          },
+          {
+            "ru": "der Grund",
+            "translit": "dair GROONT",
+            "pt": "reason",
+            "en": "reason",
+            "audio": "der Grund"
+          },
+          {
+            "ru": "die Begründung",
+            "translit": "dee beh-GRÜN-doong",
+            "pt": "justification, reasoning",
+            "en": "justification",
+            "audio": "die Begründung"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "Giving your opinion, step by step",
+        "explicacao": "STEP 1: to give your opinion, use a verb of opinion + «dass»: «Ich finde, dass Homeoffice praktisch ist» (I think working from home is practical). STEP 2: with NORMAL word order (no «dass»), the opinion sounds more direct — just like English \"I think working from home is practical\": «Ich finde, Homeoffice ist praktisch.» STEP 3: «MEINER MEINUNG NACH» (in my opinion) opens the sentence, and the verb comes right after (2nd position): «Meiner Meinung nach ist das richtig.» STEP 4: «Ich bin der Meinung, dass …» is formal; «Ich finde / glaube / denke / meine» is everyday. Careful: «ich meine» means \"I think / I mean (my opinion)\", not just \"I mean\" as a filler. STEP 5: ALWAYS back it up with «weil», «denn», «deshalb» or an example: «Ich finde das gut, weil man Zeit spart.» STEP 6: soften when needed: «Ich glaube eher, dass …» (I rather think that…), «Es kommt darauf an» (it depends).",
+        "tabela": [
+          {
+            "forma": "opinion verb + dass",
+            "frase": "Ich finde, dass Homeoffice praktisch ist."
+          },
+          {
+            "forma": "normal order",
+            "frase": "Ich finde, Homeoffice ist praktisch."
+          },
+          {
+            "forma": "meiner Meinung nach",
+            "frase": "Meiner Meinung nach ist das richtig."
+          },
+          {
+            "forma": "formal",
+            "frase": "Ich bin der Meinung, dass das ein Vorteil ist."
+          },
+          {
+            "forma": "with a reason",
+            "frase": "Ich finde das gut, weil man Zeit spart."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Meiner Meinung nach das ist richtig.",
+            "certo": "Meiner Meinung nach ist das richtig.",
+            "motivo": "After «meiner Meinung nach», the verb in 2nd position."
+          },
+          {
+            "errado": "Ich finde, dass Homeoffice ist praktisch.",
+            "certo": "Ich finde, dass Homeoffice praktisch ist.",
+            "motivo": "After «dass», the verb at the end."
+          },
+          {
+            "errado": "Ich bin der Meinung, ist das richtig.",
+            "certo": "Ich bin der Meinung, dass das richtig ist.",
+            "motivo": "The «dass» is missing."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Give 6 opinions about everyday topics, with a reason: «Ich finde, dass … , weil …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 8 words built by compounding, prefixes and suffixes."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-064.json",
+  "responsavel": null
+}

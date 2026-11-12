@@ -1,0 +1,145 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 254,
+  "fase": 26,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Giving opinions, agreeing, disagreeing and structuring a text: Agreeing and disagreeing",
+  "objetivo": "Lesson 64, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 64,
+    "titulo": "Giving opinions, agreeing, disagreeing and structuring a text",
+    "objetivo": "Express and justify an opinion, agree and disagree politely, and structure an opinion text (a forum post or a letter to the editor) with an introduction, arguments, an example and a conclusion.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Agreeing and disagreeing",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "zustimmen",
+            "translit": "TSOO-shtim-en",
+            "pt": "to agree",
+            "en": "to agree",
+            "audio": "zustimmen"
+          },
+          {
+            "ru": "widersprechen",
+            "translit": "VEE-der-shprekh-en",
+            "pt": "to contradict, to disagree",
+            "en": "to contradict",
+            "audio": "widersprechen"
+          },
+          {
+            "ru": "recht haben",
+            "translit": "REKHT HAH-ben",
+            "pt": "to be right",
+            "en": "to be right",
+            "audio": "recht haben"
+          },
+          {
+            "ru": "teilweise",
+            "translit": "TILE-vy-zeh",
+            "pt": "partly",
+            "en": "partly",
+            "audio": "teilweise"
+          },
+          {
+            "ru": "genauso",
+            "translit": "geh-NOW-zoh",
+            "pt": "exactly, just so",
+            "en": "exactly",
+            "audio": "genauso"
+          },
+          {
+            "ru": "anders",
+            "translit": "AHN-ders",
+            "pt": "differently",
+            "en": "different",
+            "audio": "anders"
+          },
+          {
+            "ru": "sicher",
+            "translit": "ZIKH-er",
+            "pt": "sure",
+            "en": "sure",
+            "audio": "sicher"
+          },
+          {
+            "ru": "dagegen sein",
+            "translit": "dah-GAY-gen zine",
+            "pt": "to be against",
+            "en": "to be against",
+            "audio": "dagegen sein"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Agreeing and disagreeing politely, step by step",
+        "explicacao": "STEP 1: to AGREE: «Da stimme ich dir zu» (I agree with you), «Das sehe ich genauso» (I see it the same way), «Da hast du recht» (you're right — German \"has\" right), «Das stimmt» (that's true). STEP 2: to agree PARTLY: «Da stimme ich dir teilweise zu», «Einerseits hast du recht, andererseits …». STEP 3: to DISAGREE politely: «Das sehe ich anders» (I see it differently), «Da bin ich nicht sicher», «Das stimmt nicht ganz» (that's not quite right). STEP 4: to DISAGREE strongly: «Da bin ich anderer Meinung», «Das sehe ich überhaupt nicht so». STEP 5: «zustimmen» takes the DATIVE and is separable: «Ich stimme dir zu», «Ich habe ihm zugestimmt». STEP 6: «dafür sein» (be in favor) and «dagegen sein» (be against), with «dass» or «zu»: «Ich bin dafür, dass wir früher anfangen.»",
+        "tabela": [
+          {
+            "funcao": "to agree",
+            "frase": "Da stimme ich dir zu. / Das sehe ich genauso. / Da hast du recht."
+          },
+          {
+            "funcao": "agreeing partly",
+            "frase": "Da stimme ich dir teilweise zu."
+          },
+          {
+            "funcao": "disagreeing politely",
+            "frase": "Das sehe ich anders. / Da bin ich nicht sicher."
+          },
+          {
+            "funcao": "disagreeing strongly",
+            "frase": "Da bin ich anderer Meinung."
+          },
+          {
+            "funcao": "for / against",
+            "frase": "Ich bin dafür, dass wir früher anfangen."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich stimme dich zu.",
+            "certo": "Ich stimme dir zu.",
+            "motivo": "«zustimmen» takes the dative."
+          },
+          {
+            "errado": "Ich zustimme dir.",
+            "certo": "Ich stimme dir zu.",
+            "motivo": "Separable: the prefix goes to the end."
+          },
+          {
+            "errado": "Das sehe ich anderes.",
+            "certo": "Das sehe ich anders.",
+            "motivo": "«anders» is an adverb (it doesn't change)."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "React out loud to 6 opinions: agree, partly agree and politely disagree."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 opinions with a justification."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-064.json",
+  "responsavel": null
+}
