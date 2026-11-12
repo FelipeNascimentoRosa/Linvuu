@@ -1,0 +1,156 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 213,
+  "fase": 22,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Formal style and e-mail: The structure of a formal e-mail",
+  "objetivo": "Lesson 54, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 54,
+    "titulo": "Formal style and e-mail",
+    "objetivo": "Write a formal email with the right subject line, greeting, opening, polite request and sign-off, and switch confidently between the informal register (tú) and the formal one (usted).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "The structure of a formal e-mail",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "el asunto",
+            "translit": "el ah-SOON-toh",
+            "pt": "the subject (of the email)",
+            "en": "",
+            "audio": "el asunto"
+          },
+          {
+            "ru": "Estimado señor / Estimada señora",
+            "translit": "es-tee-MAH-doh seh-NYOR / es-tee-MAH-dah seh-NYOH-rah",
+            "pt": "Dear Sir / Dear Madam",
+            "en": "",
+            "audio": "Estimado señor / Estimada señora"
+          },
+          {
+            "ru": "Le escribo para…",
+            "translit": "leh es-KREE-boh PAH-rah",
+            "pt": "I'm writing to…",
+            "en": "",
+            "audio": "Le escribo para…"
+          },
+          {
+            "ru": "adjunto",
+            "translit": "ahd-HOON-toh",
+            "pt": "attached",
+            "en": "",
+            "audio": "adjunto"
+          },
+          {
+            "ru": "A la espera de su respuesta",
+            "translit": "ah lah es-PEH-rah deh soo rres-PWES-tah",
+            "pt": "looking forward to your reply",
+            "en": "",
+            "audio": "A la espera de su respuesta"
+          },
+          {
+            "ru": "Quedo a su disposición.",
+            "translit": "KEH-doh ah soo dees-poh-see-THYOHN",
+            "pt": "I remain at your disposal.",
+            "en": "",
+            "audio": "Quedo a su disposición."
+          },
+          {
+            "ru": "Atentamente,",
+            "translit": "ah-TEN-tah-MEN-teh",
+            "pt": "Yours sincerely, / Yours faithfully,",
+            "en": "",
+            "audio": "Atentamente,"
+          },
+          {
+            "ru": "Un cordial saludo,",
+            "translit": "oon kor-DYAHL sah-LOO-doh",
+            "pt": "Kind regards,",
+            "en": "",
+            "audio": "Un cordial saludo,"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "The parts of a formal email",
+        "explicacao": "STEP 1: the subject line says in a few words what the email is about: «Asunto: Solicitud de información». Avoid «Hola» or leaving it blank. STEP 2: the greeting. With a name: «Estimado señor Ruiz:» or «Estimada señora García:». To several people: «Estimados señores:». When you don't know who will read it (\"To whom it may concern\"): «A quien corresponda:». Spanish puts a colon after the greeting, where English uses a comma; a comma is fine in less formal messages. STEP 3: the opening says why you're writing: «Le escribo para…», «Me dirijo a usted para…», «Me pongo en contacto con ustedes para…». STEP 4: the body: one topic per paragraph, short sentences, and «usted» from start to finish. STEP 5: the closing line before the sign-off: «A la espera de su respuesta,» (Looking forward to your reply), «Quedo a su disposición para cualquier duda.», «Le agradezco de antemano su atención.» (Thank you in advance for your attention.) STEP 6: the sign-off and signature: «Atentamente,» (Yours sincerely), «Un cordial saludo,» (Kind regards), «Cordialmente,», followed by your name. Between friends: «Un abrazo», «Hasta pronto», «Besos». STEP 7: abbreviations: «Sr.» (señor), «Sra.» (señora), «Srta.» (señorita, used less and less). Write them with a full stop. STEP 8: for attachments use «adjunto»: «Adjunto el documento» or «Le envío adjunto el documento».",
+        "comparacao": "English \"Dear Mr Ruiz\" is NOT «Querido señor Ruiz»: «querido» is affectionate, for family and friends. In formal writing use «Estimado». English \"Please find attached…\" also doesn't translate word for word; the natural Spanish is simply «Adjunto…». And Spanish puts a colon after the greeting: «Estimada señora García:».",
+        "tabela": [
+          {
+            "parte": "greeting",
+            "formal": "Estimada señora Pérez:",
+            "informal": "Hola, Marta,"
+          },
+          {
+            "parte": "opening",
+            "formal": "Le escribo para solicitar información.",
+            "informal": "Te escribo para preguntarte una cosa."
+          },
+          {
+            "parte": "attachment",
+            "formal": "Adjunto le envío el documento.",
+            "informal": "Te mando el documento."
+          },
+          {
+            "parte": "closing line",
+            "formal": "Quedo a su disposición.",
+            "informal": "Cualquier cosa, dime."
+          },
+          {
+            "parte": "sign-off",
+            "formal": "Atentamente, / Un cordial saludo,",
+            "informal": "Un abrazo, / Hasta pronto,"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Querido señor Ruiz:",
+            "certo": "Estimado señor Ruiz:",
+            "motivo": "«Querido» is affectionate (like \"my dear\"); in a formal email use «estimado»."
+          },
+          {
+            "errado": "Te escribo para pedir información. (to a company)",
+            "certo": "Le escribo para pedir información.",
+            "motivo": "With strangers or companies, use «usted»."
+          },
+          {
+            "errado": "Por favor, encuentre adjunto el currículum.",
+            "certo": "Adjunto el currículum.",
+            "motivo": "\"Please find attached\" is an English formula; Spanish just says «adjunto»."
+          },
+          {
+            "errado": "Estimada señor García:",
+            "certo": "Estimado señor García:",
+            "motivo": "«Estimado» agrees with «señor» (masculine)."
+          }
+        ],
+        "tag": "Formal register"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Write, out loud or on paper, the greeting and sign-off of a formal email to a company and then of one to a friend. Note the words that change."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say out loud the difference between «tú» and «usted» in three sentences: one to a friend, one to a doctor you don't know and one to your boss. Then say five opinion expressions from lesson 53."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-054.json",
+  "responsavel": null
+}

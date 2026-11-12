@@ -1,0 +1,206 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 215,
+  "fase": 22,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Formal style and e-mail: Complaining, thanking and replying",
+  "objetivo": "Lesson 54, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 54,
+    "titulo": "Formal style and e-mail",
+    "objetivo": "Write a formal email with the right subject line, greeting, opening, polite request and sign-off, and switch confidently between the informal register (tú) and the formal one (usted).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Complaining, thanking and replying",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "En respuesta a su mensaje…",
+            "translit": "en rres-PWES-tah ah soo men-SAH-heh",
+            "pt": "in reply to your message…",
+            "en": "",
+            "audio": "En respuesta a su mensaje…"
+          },
+          {
+            "ru": "No he recibido…",
+            "translit": "noh eh rreh-thee-BEE-doh",
+            "pt": "I haven't received…",
+            "en": "",
+            "audio": "No he recibido…"
+          },
+          {
+            "ru": "Les agradecería una solución.",
+            "translit": "lehs ah-grah-deh-theh-REE-ah OO-nah soh-loo-THYOHN",
+            "pt": "I would appreciate a solution.",
+            "en": "",
+            "audio": "Les agradecería una solución."
+          },
+          {
+            "ru": "Gracias por su rápida respuesta.",
+            "translit": "GRAH-thyahs por soo RRAH-pee-dah rres-PWES-tah",
+            "pt": "thank you for your prompt reply.",
+            "en": "",
+            "audio": "Gracias por su rápida respuesta."
+          },
+          {
+            "ru": "Le confirmo que…",
+            "translit": "leh kon-FEER-moh keh",
+            "pt": "I can confirm that…",
+            "en": "",
+            "audio": "Le confirmo que…"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Complaint, thank-you and reply emails",
+        "explicacao": "STEP 1: when you complain, start by describing the facts calmly: «Me pongo en contacto con ustedes porque todavía no he recibido el pedido que realicé el día 3.» The present perfect («no he recibido», I haven't received) is used for something that still applies today. STEP 2: then say what you expect: «Les agradecería una solución lo antes posible.» STEP 3: to thank: «Gracias por su rápida respuesta.», «Le agradezco su ayuda.» STEP 4: to reply to a message: «En respuesta a su mensaje del 12 de mayo, le confirmo que…». STEP 5: keep the tone: a polite complaint works better than an angry one. Avoid sentences like «Esto es inaceptable» in the first contact. STEP 6: «ustedes» (several people or a company) takes the verb in the 3rd person plural; «usted» (one person) takes the 3rd person singular. In Spain, «vosotros» is not used in formal email.",
+        "comparacao": "English \"you\" covers one person, several people and a whole company. Spanish formal register splits it: «Le escribo…» (to one person) and «Les escribo…» (to several people or to a company). \"I'm writing to complain\" = «Quisiera presentar una reclamación» or «Me pongo en contacto con ustedes porque…».",
+        "tabela": [
+          {
+            "objetivo": "complaining",
+            "frase": "Todavía no he recibido el pedido."
+          },
+          {
+            "objetivo": "asking for a solution",
+            "frase": "Les agradecería una solución lo antes posible."
+          },
+          {
+            "objetivo": "thanking",
+            "frase": "Gracias por su rápida respuesta."
+          },
+          {
+            "objetivo": "replying",
+            "frase": "En respuesta a su mensaje, le confirmo que…"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Les escribo para solicitar… (to one person)",
+            "certo": "Le escribo para solicitar…",
+            "motivo": "«Le» is for one person; «les» for several people or a company."
+          },
+          {
+            "errado": "No recibí todavía el pedido.",
+            "certo": "No he recibido todavía el pedido.",
+            "motivo": "For something that still applies today, the present perfect is more natural in Spain."
+          },
+          {
+            "errado": "Esto es inaceptable. Quiero mi dinero.",
+            "certo": "Les agradecería que me devolvieran el importe.",
+            "motivo": "Even in a complaint, keep the tone formal and polite."
+          }
+        ],
+        "tag": "Formal register"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Antes de enviar / Before sending",
+        "contexto": "Laura asks Sergio to check an email to the director.",
+        "linhas": [
+          {
+            "personagem": "Laura",
+            "ru": "— Sergio, ¿puedes mirar este correo antes de enviarlo? Es para la directora.",
+            "pt": "— Sergio, can you look at this email before I send it? It's for the director.",
+            "audio": "Sergio, ¿puedes mirar este correo antes de enviarlo? Es para la directora.",
+            "rotulo": "Laura"
+          },
+          {
+            "personagem": "Sergio",
+            "ru": "— Claro. ¿Cómo empieza?",
+            "pt": "— Sure. How does it start?",
+            "audio": "Claro. ¿Cómo empieza?",
+            "rotulo": "Sergio"
+          },
+          {
+            "personagem": "Laura",
+            "ru": "— Pone: «Hola, Carmen. Te mando el informe».",
+            "pt": "— It says: \"Hi, Carmen. I'm sending you the report.\"",
+            "audio": "Pone: «Hola, Carmen. Te mando el informe».",
+            "rotulo": "Laura"
+          },
+          {
+            "personagem": "Sergio",
+            "ru": "— Mejor no. Con la directora, es mejor que uses «Estimada señora Ruiz:» y «Le envío el informe adjunto».",
+            "pt": "— Better not. With the director, it's better for you to use «Estimada señora Ruiz:» and «Le envío el informe adjunto».",
+            "audio": "Mejor no. Con la directora, es mejor que uses «Estimada señora Ruiz:» y «Le envío el informe adjunto».",
+            "rotulo": "Sergio"
+          },
+          {
+            "personagem": "Laura",
+            "ru": "— Tienes razón. ¿Y al final? Había puesto «Un besito».",
+            "pt": "— You're right. And at the end? I'd put \"Lots of love.\"",
+            "audio": "Tienes razón. ¿Y al final? Había puesto «Un besito».",
+            "rotulo": "Laura"
+          },
+          {
+            "personagem": "Sergio",
+            "ru": "— Eso tampoco. Pon «Quedo a su disposición. Un cordial saludo».",
+            "pt": "— Not that either. Put \"I remain at your disposal. Kind regards.\"",
+            "audio": "Eso tampoco. Pon «Quedo a su disposición. Un cordial saludo».",
+            "rotulo": "Sergio"
+          },
+          {
+            "personagem": "Laura",
+            "ru": "— Mucho mejor. Gracias.",
+            "pt": "— Much better. Thanks.",
+            "audio": "Mucho mejor. Gracias.",
+            "rotulo": "Laura"
+          },
+          {
+            "personagem": "Sergio",
+            "ru": "— De nada. Y revisa el asunto: tiene que decir qué contiene el correo.",
+            "pt": "— You're welcome. And check the subject line: it has to say what the email contains.",
+            "audio": "De nada. Y revisa el asunto: tiene que decir qué contiene el correo.",
+            "rotulo": "Sergio"
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "min": 4,
+        "titulo": "Un correo formal / A formal email",
+        "ru": "Asunto: Información sobre el curso de fotografía\n\nEstimados señores:\n\nLes escribo para pedir información sobre el curso de fotografía que anuncian en su página web. Quisiera saber si todavía quedan plazas para el mes de octubre y cuál es el precio de la matrícula. Además, les agradecería que me indicaran si es necesario llevar cámara propia o si el centro presta el material.\n\nLes agradezco de antemano su atención y quedo a la espera de su respuesta.\n\nAtentamente,\nDaniela Ortega",
+        "pt": "Subject: Information about the photography course\n\nDear Sir or Madam,\n\nI am writing to request information about the photography course you advertise on your website. I would like to know whether there are still places available for October and how much the enrolment fee is. I would also be grateful if you could tell me whether I need to bring my own camera or whether the centre lends equipment.\n\nThank you in advance for your attention. I look forward to your reply.\n\nYours faithfully,\nDaniela Ortega",
+        "perguntas": [
+          {
+            "pergunta": "¿Para qué escribe Daniela?",
+            "resposta": "Para pedir información sobre un curso de fotografía."
+          },
+          {
+            "pergunta": "¿Qué quiere saber?",
+            "resposta": "Si quedan plazas para octubre, el precio de la matrícula y si hay que llevar cámara propia."
+          },
+          {
+            "pergunta": "¿Cómo se despide?",
+            "resposta": "Con «Atentamente,» y su nombre."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say out loud, sentence by sentence, the opening of a complaint email to an online shop. Start with «Me pongo en contacto con ustedes porque…»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Make this formal: «¿Me mandas el informe? Gracias por todo. Un abrazo.»"
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-054.json",
+  "responsavel": null
+}

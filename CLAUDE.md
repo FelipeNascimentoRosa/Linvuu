@@ -34,7 +34,7 @@ Regras de domínio em `server/dominio.ts` (301): www→apex; `/en`/`/es` de inte
 | Plataformas | `src/plataforma/website` × `src/plataforma/apk` (alias `@plataforma`; build falha se checkout vazar p/ o APK) |
 
 ## Estado real do catálogo (medido em 11/11/2026 — confira antes de afirmar)
-Sessões com explicação por interface: **RU 312/312 · FR 248/248 · PT→EN (curso BR) 248 · ES-EN 212/248 · DE-EN 288/288 (12/11) · IT-EN 0/248 · EN (no .br) 248/248.**
+Sessões com explicação por interface: **RU 312/312 · FR 248/248 · PT→EN (curso BR) 248 · ES-EN 216/248 · DE-EN 288/288 (12/11) · IT-EN 0/248 · EN (no .br) 248/248.**
 Regra `explicacaoCompleta` (`metaRota.ts`): curso só ganha página indexável/hreflang num idioma quando **todas** as aulas estão explicadas nele. Por isso o sitemap do .com tem 20 URLs e o do .com.br 42 (12/11, após o alemão completo) — **é intencional, não é bug**. Não "corrija" sitemap/índice para expor curso parcial sem ordem do Felipe.
 
 ## ARMADILHAS (não repetir)
