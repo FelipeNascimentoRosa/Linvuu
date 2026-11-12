@@ -1,0 +1,512 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 240,
+  "fase": 24,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Difficult pronouns and prepositions: Review and practice of lesson 60",
+  "objetivo": "Lesson 60, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 60,
+    "titulo": "Difficult pronouns and prepositions",
+    "objetivo": "Use the personal «a» confidently, recognise leísmo without adopting it, choose the right preposition after common verbs (including «de que»), review «por» and «para», and place pronouns correctly with infinitives, gerunds and imperatives.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 60",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Veo a Ana todos los días",
+            "opcoes": [
+              "Veo a Ana todos los días",
+              "Veo Ana todos los días",
+              "Tengo a Ana todos los días"
+            ],
+            "gabarito": "Veo a Ana todos los días",
+            "explicacao": "Listen for the personal «a» before «Ana».",
+            "id": "es-060-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Sueño con viajar a Chile",
+            "opcoes": [
+              "Sueño con viajar a Chile",
+              "Sueño de viajar a Chile",
+              "Sueño viajar a Chile"
+            ],
+            "gabarito": "Sueño con viajar a Chile",
+            "explicacao": "«Soñar» takes «con» (not «de», as in English \"dream of\").",
+            "id": "es-060-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "No me lo digas",
+            "opcoes": [
+              "No me lo digas",
+              "No dímelo",
+              "No me lo dices"
+            ],
+            "gabarito": "No me lo digas",
+            "explicacao": "Negative command: pronouns before the verb.",
+            "id": "es-060-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Estoy leyéndolo ahora",
+            "respostaEsperada": "Estoy leyéndolo ahora",
+            "explicacao": "Write: Estoy leyéndolo ahora.",
+            "id": "es-060-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Me di cuenta de que era tarde",
+            "respostaEsperada": "Me di cuenta de que era tarde",
+            "explicacao": "Write: Me di cuenta de que era tarde.",
+            "id": "es-060-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «lo quiero comprar» mean?",
+            "audio": "lo quiero comprar",
+            "opcoes": [
+              "to call someone",
+              "to ask someone",
+              "to love someone, to be fond of someone",
+              "I want to buy it (other position)"
+            ],
+            "gabarito": "I want to buy it (other position)",
+            "explicacao": "«lo quiero comprar» = I want to buy it (other position).",
+            "id": "es-060-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Dímelo ahora",
+            "respostaEsperada": "Dímelo ahora",
+            "explicacao": "Write: Dímelo ahora.",
+            "id": "es-060-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "ayudar a alguien",
+            "respostaEsperada": "ayudar a alguien",
+            "explicacao": "to help someone",
+            "id": "es-060-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Llamo a mi hermano.",
+              "Llamo mi hermano.",
+              "Llamo a mi mesa."
+            ],
+            "gabarito": "Llamo a mi hermano.",
+            "explicacao": "A specific person as direct object takes «a».",
+            "id": "es-060-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Tengo dos hermanos.",
+              "Tengo a dos hermanos.",
+              "Tengo de dos hermanos."
+            ],
+            "gabarito": "Tengo dos hermanos.",
+            "explicacao": "After «tener», the personal «a» isn't used.",
+            "id": "es-060-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which pronoun is recommended for the indirect object (\"I told her the truth\")?",
+            "opcoes": [
+              "Le dije la verdad.",
+              "La dije la verdad.",
+              "Lo dije la verdad."
+            ],
+            "gabarito": "Le dije la verdad.",
+            "explicacao": "Indirect object: «le», for a man or a woman; laísmo and loísmo are incorrect.",
+            "id": "es-060-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «estoy leyéndolo» mean?",
+            "audio": "estoy leyéndolo",
+            "opcoes": [
+              "to wait for someone",
+              "to be about",
+              "to count on",
+              "I'm reading it"
+            ],
+            "gabarito": "I'm reading it",
+            "explicacao": "«estoy leyéndolo» = I'm reading it.",
+            "id": "es-060-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence uses the preposition correctly?",
+            "opcoes": [
+              "Dejé de fumar.",
+              "Dejé fumar.",
+              "Dejé en fumar."
+            ],
+            "gabarito": "Dejé de fumar.",
+            "explicacao": "«Dejar de» + infinitive.",
+            "id": "es-060-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Me di cuenta de que era tarde.",
+              "Me di cuenta que era tarde.",
+              "Me di cuenta de qué era tarde."
+            ],
+            "gabarito": "Me di cuenta de que era tarde.",
+            "explicacao": "Keep the «de» before «que».",
+            "id": "es-060-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence uses «por» correctly?",
+            "opcoes": [
+              "Gracias por tu ayuda.",
+              "Gracias para tu ayuda.",
+              "Gracias de tu ayuda."
+            ],
+            "gabarito": "Gracias por tu ayuda.",
+            "explicacao": "«Por» expresses cause.",
+            "id": "es-060-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "llamar a alguien",
+            "respostaEsperada": "llamar a alguien",
+            "explicacao": "to call someone",
+            "id": "es-060-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence uses «para» correctly?",
+            "opcoes": [
+              "Lo necesito para el lunes.",
+              "Lo necesito por el lunes.",
+              "Lo necesito de el lunes."
+            ],
+            "gabarito": "Lo necesito para el lunes.",
+            "explicacao": "«Para» marks a deadline.",
+            "id": "es-060-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «esperar a alguien» mean?",
+            "audio": "esperar a alguien",
+            "opcoes": [
+              "to be about",
+              "tell me (it)",
+              "to love someone, to be fond of someone",
+              "to wait for someone"
+            ],
+            "gabarito": "to wait for someone",
+            "explicacao": "«esperar a alguien» = to wait for someone.",
+            "id": "es-060-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which form is correct?",
+            "opcoes": [
+              "Cómpralo.",
+              "Compra lo.",
+              "Compralo."
+            ],
+            "gabarito": "Cómpralo.",
+            "explicacao": "Affirmative command: pronoun attached and a written accent.",
+            "id": "es-060-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Busco ___ trabajo en Madrid.",
+            "opcoes": [
+              "un",
+              "a un",
+              "por un"
+            ],
+            "gabarito": "un",
+            "explicacao": "«Buscar» takes no preposition before a thing.",
+            "id": "es-060-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "No veo ___ nadie.",
+            "opcoes": [
+              "a",
+              "en",
+              "de"
+            ],
+            "gabarito": "a",
+            "explicacao": "After «nadie» as a direct object comes «a».",
+            "id": "es-060-e16"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Estoy ___ el libro. (leer + lo)",
+            "opcoes": [
+              "leyéndolo",
+              "leyendolo",
+              "leyéndole"
+            ],
+            "gabarito": "leyéndolo",
+            "explicacao": "A gerund with an attached pronoun takes a written accent.",
+            "id": "es-060-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «querer a alguien» mean?",
+            "audio": "querer a alguien",
+            "opcoes": [
+              "to know someone, to meet someone",
+              "I want to buy it",
+              "to wait for someone",
+              "to love someone, to be fond of someone"
+            ],
+            "gabarito": "to love someone, to be fond of someone",
+            "explicacao": "«querer a alguien» = to love someone, to be fond of someone.",
+            "id": "es-060-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Voy a ___. (decir + te + lo)",
+            "opcoes": [
+              "decírtelo",
+              "decirte lo",
+              "decírlote"
+            ],
+            "gabarito": "decírtelo",
+            "explicacao": "The indirect pronoun comes before the direct one: «decírtelo».",
+            "id": "es-060-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "visitar a alguien",
+            "respostaEsperada": "visitar a alguien",
+            "explicacao": "to visit someone",
+            "id": "es-060-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «No me lo digas.»",
+            "opcoes": [
+              "No",
+              "me",
+              "lo",
+              "digas."
+            ],
+            "gabarito": "No me lo digas.",
+            "explicacao": "In the negative, the pronouns go before the verb.",
+            "id": "es-060-e19"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Estudio para aprobar el examen.»",
+            "opcoes": [
+              "Estudio",
+              "para",
+              "aprobar",
+              "el",
+              "examen."
+            ],
+            "gabarito": "Estudio para aprobar el examen.",
+            "explicacao": "«Para» + infinitive expresses purpose.",
+            "id": "es-060-e20"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish, using «tú»: Tell me. I'm listening to it now. Don't buy it.",
+            "respostaEsperada": "Dímelo. Lo estoy escuchando ahora. No lo compres.",
+            "id": "es-060-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «preguntar a alguien» mean?",
+            "audio": "preguntar a alguien",
+            "opcoes": [
+              "to ask someone",
+              "to know someone, to meet someone",
+              "to think about",
+              "to remember"
+            ],
+            "gabarito": "to ask someone",
+            "explicacao": "«preguntar a alguien» = to ask someone.",
+            "id": "es-060-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Esperamos ___ nuestros amigos.",
+            "opcoes": [
+              "de",
+              "con",
+              "a"
+            ],
+            "gabarito": "a",
+            "explicacao": "A person as direct object: personal «a».",
+            "id": "es-060-e22"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Pienso ___ mis vacaciones.",
+            "opcoes": [
+              "en",
+              "de",
+              "a"
+            ],
+            "gabarito": "en",
+            "explicacao": "The construction is «pensar en».",
+            "id": "es-060-e23"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Me acuerdo ___ ti.",
+            "opcoes": [
+              "con",
+              "de",
+              "en"
+            ],
+            "gabarito": "de",
+            "explicacao": "The construction is «acordarse de».",
+            "id": "es-060-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "invitar a alguien",
+            "respostaEsperada": "invitar a alguien",
+            "explicacao": "to invite someone",
+            "id": "es-060-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Dímelo → No ___ digas.",
+            "opcoes": [
+              "te lo",
+              "lo me",
+              "me lo"
+            ],
+            "gabarito": "me lo",
+            "explicacao": "In a negative command, the pronouns come before the verb: «no me lo digas».",
+            "id": "es-060-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «invitar a alguien» mean?",
+            "audio": "invitar a alguien",
+            "opcoes": [
+              "to remember",
+              "to invite someone",
+              "to ask someone",
+              "tell me (it)"
+            ],
+            "gabarito": "to invite someone",
+            "explicacao": "«invitar a alguien» = to invite someone.",
+            "id": "es-060-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence uses the personal «a» correctly?",
+            "opcoes": [
+              "Busco a un hotel.",
+              "Busco un hotel.",
+              "Busco al hotel."
+            ],
+            "gabarito": "Busco un hotel.",
+            "explicacao": "The personal «a» isn't used for things.",
+            "id": "es-060-e26"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say \"I remember you\"?",
+            "opcoes": [
+              "Me acuerdo a ti.",
+              "Me acuerdo contigo.",
+              "Me acuerdo de ti."
+            ],
+            "gabarito": "Me acuerdo de ti.",
+            "explicacao": "The construction is «acordarse de».",
+            "id": "es-060-e27"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say \"I want to buy it\"?",
+            "opcoes": [
+              "Quiero lo comprar.",
+              "Quiero comprarlo.",
+              "Lo quiero comprarlo."
+            ],
+            "gabarito": "Quiero comprarlo.",
+            "explicacao": "The pronoun is attached to the infinitive, written as one word.",
+            "id": "es-060-e28"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Voy a decírtelo mañana.»",
+            "opcoes": [
+              "Voy",
+              "a",
+              "decírtelo",
+              "mañana."
+            ],
+            "gabarito": "Voy a decírtelo mañana.",
+            "explicacao": "Two pronouns attached to the infinitive take an accent.",
+            "id": "es-060-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I invite Marta and help her with the work.",
+            "respostaEsperada": "Invito a Marta y la ayudo con el trabajo.",
+            "id": "es-060-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Tell a friend out loud what you do each week and what for, with at least two verbs + preposition, one personal «a» and one attached pronoun."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say out loud: one sentence with the personal «a», one with a verb + preposition, one with «por», one with «para» and one with a pronoun attached to a command."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-060.json",
+  "responsavel": null
+}
