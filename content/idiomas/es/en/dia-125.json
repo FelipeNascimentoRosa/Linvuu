@@ -1,0 +1,156 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 125,
+  "fase": 13,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Relatives: que, donde, quien: Que: the most common relative",
+  "objetivo": "Lesson 32, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 32,
+    "titulo": "Relatives: que, donde, quien",
+    "objetivo": "Join two sentences with «que», talk about places and time with «donde», «en el que» and «el día en que», refer to people with «con quien» and «con la que», and avoid the two classic English-speaker mistakes: dropping «que» and leaving the preposition at the end.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Que: the most common relative",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "que",
+            "translit": "keh",
+            "pt": "that, which, who (relative; no accent)",
+            "en": "",
+            "audio": "que"
+          },
+          {
+            "ru": "el libro que leo",
+            "translit": "el LEE-bro keh LEH-o",
+            "pt": "the book (that) I'm reading",
+            "en": "",
+            "audio": "el libro que leo"
+          },
+          {
+            "ru": "la chica que vive aquí",
+            "translit": "lah CHEE-kah keh BEE-beh ah-KEE",
+            "pt": "the girl who lives here",
+            "en": "",
+            "audio": "la chica que vive aquí"
+          },
+          {
+            "ru": "la película que vimos",
+            "translit": "lah peh-LEE-koo-lah keh BEE-mos",
+            "pt": "the movie (that) we saw",
+            "en": "",
+            "audio": "la película que vimos"
+          },
+          {
+            "ru": "la tienda que abre a las nueve",
+            "translit": "",
+            "pt": "the store that opens at nine",
+            "en": "",
+            "audio": "la tienda que abre a las nueve"
+          },
+          {
+            "ru": "el ordenador que compré",
+            "translit": "",
+            "pt": "the computer (that) I bought (Latin America: la computadora)",
+            "en": "",
+            "audio": "el ordenador que compré"
+          },
+          {
+            "ru": "la oficina que está en el centro",
+            "translit": "lah oh-fee-THEE-nah",
+            "pt": "the office that's downtown (false friend: «oficina» is an office, not an \"officina\" or workshop; a car repair shop is «taller»)",
+            "en": "",
+            "audio": "la oficina que está en el centro"
+          },
+          {
+            "ru": "el compañero que trabaja conmigo",
+            "translit": "",
+            "pt": "the coworker who works with me",
+            "en": "",
+            "audio": "el compañero que trabaja conmigo"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Que: one relative word for people and things",
+        "explicacao": "STEP 1: a relative word joins two sentences and avoids repeating the same noun. Two sentences: «Tengo un amigo. Mi amigo vive en Sevilla.» One sentence: «Tengo un amigo que vive en Sevilla.» STEP 2: «que» covers \"who\", \"which\" and \"that\": people and things, singular and plural, masculine and feminine. It never changes: «el libro que», «los libros que», «la chica que», «las chicas que». STEP 3: «que» can be the subject (who does the action: «la chica que vive aquí») or the object (what receives it: «el libro que leo»). The form is the same. STEP 4: unlike English, Spanish never leaves the relative out. \"The book I'm reading\" must be «el libro que leo». STEP 5: the relative comes right after the noun it describes, and that noun isn't repeated as a pronoun: «el libro que lo leo» is wrong. STEP 6: «que» without an accent is the relative; «qué» with an accent is for questions and exclamations: «¿Qué lees?» but «el libro que leo». STEP 7: with a past-tense verb, it works the same way: «La película que vimos ayer era muy larga.» (False friend: «larga» means long, not large; \"large\" is «grande».) STEP 8: for extra information between commas, the relative is still «que»: «Mi hermana, que vive en Lyon, viene mañana.» STEP 9: after «que», the verb stays in the indicative when the person or thing is known. The subjunctive, for things you're looking for or wishing for, comes at B1.",
+        "comparacao": "English constantly leaves the relative out: \"the book I'm reading\", \"the movie we saw\". Spanish never does — «que» is required: «el libro que leo», never «el libro leo». English also chooses between \"who\", \"which\" and \"that\"; Spanish uses «que» for all of them, people and things alike. And once «que» is there, the noun is not repeated as a pronoun: «el libro que leo», not «el libro que lo leo».",
+        "tabela": [
+          {
+            "funcao": "subject (who does it)",
+            "exemplo": "La chica que vive aquí es médica.",
+            "traducao": "The girl who lives here is a doctor."
+          },
+          {
+            "funcao": "object (what receives it)",
+            "exemplo": "El libro que leo es muy bueno.",
+            "traducao": "The book I'm reading is very good."
+          },
+          {
+            "funcao": "person",
+            "exemplo": "El compañero que trabaja conmigo es de Bilbao.",
+            "traducao": "The coworker who works with me is from Bilbao."
+          },
+          {
+            "funcao": "things, plural",
+            "exemplo": "Las tiendas que abren tarde cierran a las diez.",
+            "traducao": "The stores that open late close at ten."
+          },
+          {
+            "funcao": "extra information, between commas",
+            "exemplo": "Mi hermana, que vive en Lyon, viene mañana.",
+            "traducao": "My sister, who lives in Lyon, is coming tomorrow."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "El libro que lo leo es bueno.",
+            "certo": "El libro que leo es bueno.",
+            "motivo": "«Que» already stands for the book; don't repeat it with «lo»."
+          },
+          {
+            "errado": "La chica que ella vive aquí es mi amiga.",
+            "certo": "La chica que vive aquí es mi amiga.",
+            "motivo": "The subject is already in «que»; «ella» is one word too many."
+          },
+          {
+            "errado": "El libro qué leo es bueno.",
+            "certo": "El libro que leo es bueno.",
+            "motivo": "«Qué» with an accent is only for questions and exclamations."
+          },
+          {
+            "errado": "Los vecinos que vive aquí son simpáticos.",
+            "certo": "Los vecinos que viven aquí son simpáticos.",
+            "motivo": "The verb agrees with the noun «que» stands for: «los vecinos viven»."
+          }
+        ],
+        "tag": "Relative pronouns"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Out loud, join four pairs of your own sentences with «que»: «Tengo un vecino. Es músico.» → «Tengo un vecino que es músico.»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say three sentences out loud with «por» and three with «para» (lesson 31). Then say three sentences with «mucho», «poco» and «bastante»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-032.json",
+  "responsavel": null
+}

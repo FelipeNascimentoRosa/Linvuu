@@ -1,0 +1,539 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 128,
+  "fase": 13,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Relatives: que, donde, quien: Review and practice of lesson 32",
+  "objetivo": "Lesson 32, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 32,
+    "titulo": "Relatives: que, donde, quien",
+    "objetivo": "Join two sentences with «que», talk about places and time with «donde», «en el que» and «el día en que», refer to people with «con quien» and «con la que», and avoid the two classic English-speaker mistakes: dropping «que» and leaving the preposition at the end.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 32",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "La casa donde vivo es pequeña",
+            "opcoes": [
+              "La casa donde vivo es pequeña",
+              "La casa que vivo es pequeña",
+              "La casa donde vive es pequeña"
+            ],
+            "gabarito": "La casa donde vivo es pequeña",
+            "explicacao": "Listen for «donde» and the first-person verb: «vivo».",
+            "id": "es-032-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "La chica con la que viajo es de Cádiz",
+            "opcoes": [
+              "La chica con la que viajo es de Cádiz",
+              "La chica que viajo es de Cádiz",
+              "La chica con ella viajo es de Cádiz"
+            ],
+            "gabarito": "La chica con la que viajo es de Cádiz",
+            "explicacao": "With a preposition, the relative is «con la que».",
+            "id": "es-032-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "El libro que leo es muy bueno",
+            "opcoes": [
+              "El libro que leo es muy bueno",
+              "El libro que lo leo es muy bueno",
+              "El libro que leí es muy bueno"
+            ],
+            "gabarito": "El libro que leo es muy bueno",
+            "explicacao": "There's no extra pronoun after «que».",
+            "id": "es-032-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "El día en que nos conocimos llovía",
+            "respostaEsperada": "El día en que nos conocimos llovía",
+            "explicacao": "Write: El día en que nos conocimos llovía.",
+            "id": "es-032-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "La película que vimos ayer era larga",
+            "respostaEsperada": "La película que vimos ayer era larga",
+            "explicacao": "Write: La película que vimos ayer era larga.",
+            "id": "es-032-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "La casa donde vivo es pequeña",
+            "opcoes": [
+              "donde",
+              "vivo",
+              "es",
+              "pequeña",
+              "La",
+              "casa"
+            ],
+            "gabarito": "La casa donde vivo es pequeña",
+            "explicacao": "Write: La casa donde vivo es pequeña",
+            "id": "es-032-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "El cine al que vamos está cerca",
+            "respostaEsperada": "El cine al que vamos está cerca",
+            "explicacao": "Write: El cine al que vamos está cerca. «A + el» becomes «al».",
+            "id": "es-032-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "el libro que leo",
+            "respostaEsperada": "el libro que leo",
+            "explicacao": "the book (that) I'm reading",
+            "id": "es-032-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence joins «Tengo un vecino. Es músico.»?",
+            "opcoes": [
+              "Tengo un vecino que es músico.",
+              "Tengo un vecino que él es músico.",
+              "Tengo un vecino quien es músico."
+            ],
+            "gabarito": "Tengo un vecino que es músico.",
+            "explicacao": "«Que» is already the subject.",
+            "id": "es-032-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say \"the house I live in\"?",
+            "opcoes": [
+              "La casa en la que vivo",
+              "La casa que vivo",
+              "La casa dónde vivo"
+            ],
+            "gabarito": "La casa en la que vivo",
+            "explicacao": "The preposition «en» comes before the relative.",
+            "id": "es-032-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which relative is correct in «La persona con ___ hablo es mi jefe»?",
+            "opcoes": [
+              "quien",
+              "que",
+              "cual"
+            ],
+            "gabarito": "quien",
+            "explicacao": "After a preposition, for people, use «quien» or «la que».",
+            "id": "es-032-e09"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "La chica con la que viajo es de Cádiz",
+            "opcoes": [
+              "con",
+              "viajo",
+              "de",
+              "que",
+              "es",
+              "chica",
+              "Cádiz",
+              "La",
+              "la"
+            ],
+            "gabarito": "La chica con la que viajo es de Cádiz",
+            "explicacao": "Write: La chica con la que viajo es de Cádiz",
+            "id": "es-032-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "El libro del que hablo es nuevo.",
+              "El libro de el que hablo es nuevo.",
+              "El libro que hablo es nuevo."
+            ],
+            "gabarito": "El libro del que hablo es nuevo.",
+            "explicacao": "De + el = del; and «hablar de» needs its preposition.",
+            "id": "es-032-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "La ciudad ___ vivo es grande.",
+            "opcoes": [
+              "DON-deh",
+              "dónde",
+              "qué"
+            ],
+            "gabarito": "DON-deh",
+            "explicacao": "As a relative, «donde» has no accent.",
+            "id": "es-032-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "El cine ___ que fuimos es nuevo.",
+            "opcoes": [
+              "al",
+              "del",
+              "en el"
+            ],
+            "gabarito": "al",
+            "explicacao": "«Ir a» + «el» makes «al».",
+            "id": "es-032-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "el ordenador que compré",
+            "respostaEsperada": "el ordenador que compré",
+            "explicacao": "the computer (that) I bought (Latin America: la computadora)",
+            "id": "es-032-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Los chicos ___ llegan tarde esperan.",
+            "opcoes": [
+              "que",
+              "quien",
+              "DON-deh"
+            ],
+            "gabarito": "que",
+            "explicacao": "Plural subject, no preposition: «que».",
+            "id": "es-032-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "El libro que leo es muy bueno",
+            "opcoes": [
+              "leo",
+              "libro",
+              "muy",
+              "bueno",
+              "es",
+              "que",
+              "El"
+            ],
+            "gabarito": "El libro que leo es muy bueno",
+            "explicacao": "Write: El libro que leo es muy bueno",
+            "id": "es-032-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Mi hermana, ___ vive en Lyon, viene mañana.",
+            "opcoes": [
+              "que",
+              "qué",
+              "DON-deh"
+            ],
+            "gabarito": "que",
+            "explicacao": "Between commas, the relative is still «que».",
+            "id": "es-032-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "El día ___ nos conocimos llovía.",
+            "opcoes": [
+              "en que",
+              "DON-deh",
+              "al que"
+            ],
+            "gabarito": "en que",
+            "explicacao": "For time, use «en que» after «día».",
+            "id": "es-032-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «La casa en la que vivo es pequeña.»",
+            "opcoes": [
+              "La",
+              "casa",
+              "en",
+              "la",
+              "que",
+              "vivo",
+              "es",
+              "pequeña."
+            ],
+            "gabarito": "La casa en la que vivo es pequeña.",
+            "explicacao": "The preposition goes before the relative.",
+            "id": "es-032-e16"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Tengo un amigo que vive en Sevilla.»",
+            "opcoes": [
+              "Tengo",
+              "un",
+              "amigo",
+              "que",
+              "vive",
+              "en",
+              "Sevilla."
+            ],
+            "gabarito": "Tengo un amigo que vive en Sevilla.",
+            "explicacao": "«Que» comes right after the noun.",
+            "id": "es-032-e17"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "El día en que nos conocimos llovía",
+            "opcoes": [
+              "El",
+              "conocimos",
+              "en",
+              "nos",
+              "llovía",
+              "día",
+              "que"
+            ],
+            "gabarito": "El día en que nos conocimos llovía",
+            "explicacao": "Write: El día en que nos conocimos llovía",
+            "id": "es-032-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: The girl I work with lives in the neighborhood where I was born.",
+            "respostaEsperada": "La chica con la que trabajo vive en el barrio donde nací.",
+            "id": "es-032-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "el restaurante donde cenamos",
+            "respostaEsperada": "el restaurante donde cenamos",
+            "explicacao": "the restaurant where we had dinner (cenar = to have dinner; «cena» is dinner, not a \"scene\", which is «escena»)",
+            "id": "es-032-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Los amigos con ___ viajo son brasileños.",
+            "opcoes": [
+              "quien",
+              "que",
+              "quienes"
+            ],
+            "gabarito": "quienes",
+            "explicacao": "After a preposition, plural people: «quienes».",
+            "id": "es-032-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "La calle por ___ paso es larga.",
+            "opcoes": [
+              "la que",
+              "el que",
+              "DON-deh"
+            ],
+            "gabarito": "la que",
+            "explicacao": "«Calle» is feminine: «por la que».",
+            "id": "es-032-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "El año ___ llegué a Madrid fue 2019.",
+            "opcoes": [
+              "DON-deh",
+              "en que",
+              "quien"
+            ],
+            "gabarito": "en que",
+            "explicacao": "For time, use «en que».",
+            "id": "es-032-e21"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "La película que vimos ayer era larga",
+            "opcoes": [
+              "larga",
+              "vimos",
+              "era",
+              "que",
+              "La",
+              "película",
+              "ayer"
+            ],
+            "gabarito": "La película que vimos ayer era larga",
+            "explicacao": "Write: La película que vimos ayer era larga",
+            "id": "es-032-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Los vecinos ___ viven aquí son simpáticos.",
+            "opcoes": [
+              "que",
+              "quienes",
+              "DON-deh"
+            ],
+            "gabarito": "que",
+            "explicacao": "As a subject, use «que», with no preposition.",
+            "id": "es-032-e22"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "El cine ___ vamos hoy es nuevo. (to which)",
+            "opcoes": [
+              "que",
+              "al que",
+              "en que"
+            ],
+            "gabarito": "al que",
+            "explicacao": "«Ir a» + el cine: «al que».",
+            "id": "es-032-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say \"the city where I live\"?",
+            "opcoes": [
+              "la ciudad dónde vivo",
+              "la ciudad donde vivo",
+              "la ciudad que vivo"
+            ],
+            "gabarito": "la ciudad donde vivo",
+            "explicacao": "As a relative, «donde» has no accent.",
+            "id": "es-032-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "el cine al que vamos",
+            "respostaEsperada": "el cine al que vamos",
+            "explicacao": "the movie theater we're going to",
+            "id": "es-032-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence repeats the pronoun by mistake?",
+            "opcoes": [
+              "El libro que leo es bueno.",
+              "El libro que leí es bueno.",
+              "El libro que lo leo es bueno."
+            ],
+            "gabarito": "El libro que lo leo es bueno.",
+            "explicacao": "«Que» already replaces the object; don't repeat it with «lo».",
+            "id": "es-032-e25"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "El cine al que vamos está cerca",
+            "opcoes": [
+              "cerca",
+              "está",
+              "El",
+              "al",
+              "vamos",
+              "que",
+              "cine"
+            ],
+            "gabarito": "El cine al que vamos está cerca",
+            "explicacao": "Write: El cine al que vamos está cerca",
+            "id": "es-032-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which relative is used for plural people after a preposition?",
+            "opcoes": [
+              "quienes",
+              "quien",
+              "DON-deh"
+            ],
+            "gabarito": "quienes",
+            "explicacao": "The plural of «quien» is «quienes».",
+            "id": "es-032-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «La persona con quien hablo es mi jefe.»",
+            "opcoes": [
+              "La",
+              "persona",
+              "con",
+              "quien",
+              "hablo",
+              "es",
+              "mi",
+              "jefe."
+            ],
+            "gabarito": "La persona con quien hablo es mi jefe.",
+            "explicacao": "Preposition + «quien» for people.",
+            "id": "es-032-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Tengo una amiga que vive en Cádiz.»",
+            "opcoes": [
+              "Tengo",
+              "una",
+              "amiga",
+              "que",
+              "vive",
+              "en",
+              "Cádiz."
+            ],
+            "gabarito": "Tengo una amiga que vive en Cádiz.",
+            "explicacao": "«Que» joins two sentences.",
+            "id": "es-032-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: The girl who lives here is my friend.",
+            "respostaEsperada": "La chica que vive aquí es mi amiga.",
+            "id": "es-032-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: The restaurant where we had dinner was very good. (with «donde»)",
+            "respostaEsperada": "El restaurante donde cenamos era muy bueno.",
+            "id": "es-032-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe your street out loud with five relatives: «La tienda que…, la plaza donde…, el vecino con quien…»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say out loud one sentence with «que», one with «donde», one with «en la que» and one with «con quien»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-032.json",
+  "responsavel": null
+}
