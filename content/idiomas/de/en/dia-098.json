@@ -1,0 +1,200 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 98,
+  "fase": 10,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "The four cases: nominative, accusative, dative and genitive: The article chart",
+  "objetivo": "Lesson 25, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 25,
+    "titulo": "The four cases: nominative, accusative, dative and genitive",
+    "objetivo": "Understand what the four German cases are (Nominativ, Akkusativ, Dativ, Genitiv), read the full article chart, and use the personal pronouns in the nominative, accusative and dative.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "The article chart",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "wer",
+            "translit": "VAIR",
+            "pt": "who (subject)",
+            "en": "who",
+            "audio": "wer"
+          },
+          {
+            "ru": "wen",
+            "translit": "VAIN",
+            "pt": "whom (direct object)",
+            "en": "whom",
+            "audio": "wen"
+          },
+          {
+            "ru": "wem",
+            "translit": "VAIM",
+            "pt": "to whom",
+            "en": "to whom",
+            "audio": "wem"
+          },
+          {
+            "ru": "wessen",
+            "translit": "VESS-en",
+            "pt": "whose",
+            "en": "whose",
+            "audio": "wessen"
+          },
+          {
+            "ru": "der Name",
+            "translit": "dair NAH-meh",
+            "pt": "name",
+            "en": "name",
+            "audio": "der Name"
+          },
+          {
+            "ru": "das Kind",
+            "translit": "dahs KINT",
+            "pt": "child",
+            "en": "child",
+            "audio": "das Kind"
+          },
+          {
+            "ru": "die Eltern",
+            "translit": "dee EL-tern",
+            "pt": "parents",
+            "en": "parents",
+            "audio": "die Eltern"
+          },
+          {
+            "ru": "das Auto",
+            "translit": "dahs OW-toh",
+            "pt": "car",
+            "en": "car",
+            "audio": "das Auto"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "The full article chart",
+        "explicacao": "This is the chart that organizes everything. Three shortcuts: (1) FEMININE and PLURAL barely change; they only change in the dative and the genitive. (2) NEUTER matches the nominative in the accusative, and matches the masculine in the dative and genitive. (3) In the accusative, only the masculine changes. Other details: in the genitive, masculine and neuter nouns add -s or -es («des Mannes», «des Kindes»); in the dative plural, the noun adds -n («den Kindern»), unless it already ends in -n or -s. Tip: «dem» and «den» are related to English \"them\"/\"the(m)\" — old English had the same -m dative.",
+        "exemplos": [
+          {
+            "ru": "Der Mann gibt dem Kind einen Apfel.",
+            "pt": "The man gives the child an apple."
+          },
+          {
+            "ru": "Die Frau hilft der Nachbarin.",
+            "pt": "The woman helps the neighbor."
+          },
+          {
+            "ru": "Das ist das Auto des Lehrers.",
+            "pt": "This is the teacher's car."
+          }
+        ],
+        "tabelas": [
+          {
+            "titulo": "Definite article (der, die, das)",
+            "linhas": [
+              {
+                "caso": "Nominativ",
+                "masculino": "der",
+                "feminino": "die",
+                "neutro": "das",
+                "plural": "die"
+              },
+              {
+                "caso": "Akkusativ",
+                "masculino": "den",
+                "feminino": "die",
+                "neutro": "das",
+                "plural": "die"
+              },
+              {
+                "caso": "Dativ",
+                "masculino": "dem",
+                "feminino": "der",
+                "neutro": "dem",
+                "plural": "den (+n)"
+              },
+              {
+                "caso": "Genitiv",
+                "masculino": "des (+s)",
+                "feminino": "der",
+                "neutro": "des (+s)",
+                "plural": "der"
+              }
+            ]
+          },
+          {
+            "titulo": "Indefinite article (ein, eine) and mein, dein, kein...",
+            "linhas": [
+              {
+                "caso": "Nominativ",
+                "masculino": "ein",
+                "feminino": "eine",
+                "neutro": "ein",
+                "plural": "— / keine"
+              },
+              {
+                "caso": "Akkusativ",
+                "masculino": "einen",
+                "feminino": "eine",
+                "neutro": "ein",
+                "plural": "— / keine"
+              },
+              {
+                "caso": "Dativ",
+                "masculino": "einem",
+                "feminino": "einer",
+                "neutro": "einem",
+                "plural": "— / keinen (+n)"
+              },
+              {
+                "caso": "Genitiv",
+                "masculino": "eines (+s)",
+                "feminino": "einer",
+                "neutro": "eines (+s)",
+                "plural": "— / keiner"
+              }
+            ]
+          }
+        ],
+        "erros": [
+          {
+            "errado": "mit der Kind",
+            "certo": "mit dem Kind",
+            "motivo": "«Kind» is neuter: dative «dem»."
+          },
+          {
+            "errado": "das Auto der Mann",
+            "certo": "das Auto des Mannes",
+            "motivo": "Possession: genitive, and the noun adds -es."
+          }
+        ],
+        "tag": "Cases"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Read the article chart out loud, column by column: «der, den, dem, des; die, die, der, der; das, das, dem, des»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write from memory the definite article in the nominative and the accusative, for all four genders."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-025.json",
+  "responsavel": null
+}

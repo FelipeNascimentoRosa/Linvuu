@@ -1,0 +1,182 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 99,
+  "fase": 10,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "The four cases: nominative, accusative, dative and genitive: Pronouns and dialogue",
+  "objetivo": "Lesson 25, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 25,
+    "titulo": "The four cases: nominative, accusative, dative and genitive",
+    "objetivo": "Understand what the four German cases are (Nominativ, Akkusativ, Dativ, Genitiv), read the full article chart, and use the personal pronouns in the nominative, accusative and dative.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Pronouns and dialogue",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Personal pronouns in three cases",
+        "explicacao": "Personal pronouns also change with case — just like English I/me, he/him, we/us. The dative is the one you'll use most, with verbs like «helfen», «gehören», «gefallen» and «geben». Word order rule: a PRONOUN comes before a NOUN («Ich gebe ihm den Ball» — I give him the ball; «Ich gebe es dem Kind» — I give it to the child). If both are pronouns, the accusative comes first: «Ich gebe ihn ihm» (I give it to him).",
+        "comparacao": "English already does this halfway: I → me, he → him, she → her, we → us, they → them. German adds one more column, the dative: mir, dir, ihm, ihr, uns, euch, ihnen. Note «mir»/«mich»: English \"me\" covers both.",
+        "tabela": [
+          {
+            "nominativo": "ich",
+            "acusativo": "mich",
+            "dativo": "mir"
+          },
+          {
+            "nominativo": "du",
+            "acusativo": "dich",
+            "dativo": "dir"
+          },
+          {
+            "nominativo": "er",
+            "acusativo": "ihn",
+            "dativo": "ihm"
+          },
+          {
+            "nominativo": "sie (she)",
+            "acusativo": "sie",
+            "dativo": "ihr"
+          },
+          {
+            "nominativo": "es",
+            "acusativo": "es",
+            "dativo": "ihm"
+          },
+          {
+            "nominativo": "wir",
+            "acusativo": "uns",
+            "dativo": "uns"
+          },
+          {
+            "nominativo": "ihr",
+            "acusativo": "euch",
+            "dativo": "euch"
+          },
+          {
+            "nominativo": "sie (they)",
+            "acusativo": "sie",
+            "dativo": "ihnen"
+          },
+          {
+            "nominativo": "Sie (formal)",
+            "acusativo": "Sie",
+            "dativo": "Ihnen"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich gebe den Ball ihm.",
+            "certo": "Ich gebe ihm den Ball.",
+            "motivo": "The pronoun comes before the noun."
+          },
+          {
+            "errado": "Das Handy gehört ich.",
+            "certo": "Das Handy gehört mir.",
+            "motivo": "«gehören» takes the dative."
+          }
+        ],
+        "tag": "Cases"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 10,
+        "titulo": "Wem gehört das? / Whose is this?",
+        "contexto": "Two friends sort out things people left behind.",
+        "linhas": [
+          {
+            "personagem": "Lara",
+            "ru": "— Entschuldigung, wem gehört das Handy?",
+            "pt": "— Excuse me, whose cell phone is this?",
+            "audio": "Entschuldigung, wem gehört das Handy?",
+            "rotulo": "Lara"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Das Handy? Es gehört mir. Danke!",
+            "pt": "— The phone? It's mine. Thanks!",
+            "audio": "Das Handy? Es gehört mir. Danke!",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Lara",
+            "ru": "— Und die Tasche? Gehört sie dir auch?",
+            "pt": "— And the bag? Is it yours too?",
+            "audio": "Und die Tasche? Gehört sie dir auch?",
+            "rotulo": "Lara"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Nein, die Tasche gehört meiner Schwester.",
+            "pt": "— No, the bag is my sister's.",
+            "audio": "Nein, die Tasche gehört meiner Schwester.",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Lara",
+            "ru": "— Und der Schlüssel? Der gehört bestimmt ihr.",
+            "pt": "— And the key? That's definitely hers.",
+            "audio": "Und der Schlüssel? Der gehört bestimmt ihr.",
+            "rotulo": "Lara"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Ja, ich gebe ihr den Schlüssel.",
+            "pt": "— Yes, I'll give her the key.",
+            "audio": "Ja, ich gebe ihr den Schlüssel.",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Lara",
+            "ru": "— Sehr gut. Und wem gibst du das Geschenk?",
+            "pt": "— Very good. And who are you giving the present to?",
+            "audio": "Sehr gut. Und wem gibst du das Geschenk?",
+            "rotulo": "Lara"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Ich gebe es meinem Bruder. Er hat heute Geburtstag.",
+            "pt": "— I'm giving it to my brother. Today is his birthday.",
+            "audio": "Ich gebe es meinem Bruder. Er hat heute Geburtstag.",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Lara",
+            "ru": "— Wie schön! Ich schenke ihm ein Buch.",
+            "pt": "— How nice! I'm giving him a book.",
+            "audio": "Wie schön! Ich schenke ihm ein Buch.",
+            "rotulo": "Lara"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Super! Er liest gern.",
+            "pt": "— Great! He likes to read.",
+            "audio": "Super! Er liest gern.",
+            "rotulo": "Tom"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Say: «Das Handy gehört mir. Ich gebe ihr den Schlüssel. Ich gebe es meinem Bruder.»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write the personal pronouns in the nominative: I, you (informal), he, she, we, you (plural), they."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-025.json",
+  "responsavel": null
+}
