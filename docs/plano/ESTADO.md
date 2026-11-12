@@ -115,7 +115,8 @@ Uma linha por lote. O agente altera **só** a linha do lote em que trabalhou, no
 | I2 | Acabamentos visuais do .com: herói de `/curso/:id`, rótulos do rodapé em inglês, "Website" do `/contato` (D2, D14) | A | PR aberto | #585 | local: página de curso do .com no mesmo molde do .com.br (era outro template); no lugar da capa (livro só em português), cartão da gramática em inglês com o Vuu 96 px em ru/fr; rodapé do .com com rótulos em inglês ("Linvuu on social media", "opens in a new tab"); `/contato` do .com aponta para linvuu.com; .com.br inalterado (capa, rótulos e link conferidos); prerender 60/60 |
 | I3 | Páginas de curso em inglês (ru, fr, br) respondendo preço, prazo até B1, professor e iniciante | A | PR aberto | #586 | local: bloco "Before you start the … course" em linvuu.com/curso/ru, /fr e /br, com preço de `planos.ts` (US$19.99 / US$149.00), aulas e sessões do índice (78/312, 62/248, 62/248), horas e ritmo sem prometer data, professor ao vivo só no russo (link /russo-online), título real da aula 1; ausente em es/de (parciais) e no .com.br; prerender 60/60 |
 | I4 | 30 dúvidas de russo em inglês (em blocos de 5), a partir de `ru.en.json` | A | a fazer | — | — |
-| I5 | Explicações em inglês de alemão, espanhol e italiano (284 + 128 + 248 sessões) — só depois de o .com vender | A+F | a fazer | — | — |
+| I5 | Explicações em inglês de alemão, espanhol e italiano (284 + 124 + 248 sessões) — piloto: espanhol aula 31 (sessões 121–124), fluxo oficial `i18n-aulas.mjs extrair/juntar`, conferido contra FSI/Wikibooks só como roteiro | A+F | piloto implementado (ES 124/248) — aguarda leitura do Felipe | #589 | — |
+| I5a | Marcadores internos `[misto]/[pronuncia]/[personagem]` visíveis ao aluno nas 120 sessões ES-EN; guarda no `conteudo.mjs --check` | A | implementado | #588 | — |
 
 ## Portões
 
