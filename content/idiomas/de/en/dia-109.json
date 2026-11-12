@@ -1,0 +1,141 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 109,
+  "fase": 11,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Dative 3: prepositions that take the dative: Aus, bei, mit",
+  "objetivo": "Lesson 28, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 28,
+    "titulo": "Dative 3: prepositions that take the dative",
+    "objetivo": "Use aus, bei, mit, nach, seit, von and zu (plus gegenüber) with the dative, the contractions (beim, vom, zum, zur), and the expressions for origin, company, means, time and destination.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Aus, bei, mit",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "der Arzt",
+            "translit": "dair AHRTST",
+            "pt": "doctor",
+            "en": "doctor",
+            "audio": "der Arzt"
+          },
+          {
+            "ru": "der Chef",
+            "translit": "dair SHEFF",
+            "pt": "boss",
+            "en": "boss",
+            "audio": "der Chef"
+          },
+          {
+            "ru": "der Zug",
+            "translit": "dair TSOOK",
+            "pt": "train",
+            "en": "train",
+            "audio": "der Zug"
+          },
+          {
+            "ru": "die Arbeit",
+            "translit": "dee AR-bite",
+            "pt": "work, job",
+            "en": "work",
+            "audio": "die Arbeit"
+          },
+          {
+            "ru": "der Urlaub",
+            "translit": "dair OOR-lowp",
+            "pt": "vacation",
+            "en": "holiday",
+            "audio": "der Urlaub"
+          },
+          {
+            "ru": "die Straßenbahn",
+            "translit": "dee SHTRAH-sen-bahn",
+            "pt": "streetcar, tram",
+            "en": "tram",
+            "audio": "die Straßenbahn"
+          },
+          {
+            "ru": "das Flugzeug",
+            "translit": "dahs FLOOK-tsoyk",
+            "pt": "airplane",
+            "en": "plane",
+            "audio": "das Flugzeug"
+          },
+          {
+            "ru": "das Schiff",
+            "translit": "dahs SHIFF",
+            "pt": "ship",
+            "en": "ship",
+            "audio": "das Schiff"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "Aus, bei, mit: always dative, step by step",
+        "explicacao": "STEP 1: seven prepositions ALWAYS take the dative: aus, bei, mit, nach, seit, von, zu. Learn them as a chant — German students sing them to \"The Blue Danube\": «aus-bei-mit-nach-seit-von-zu». STEP 2: «aus» = out of, from (origin) or made of: «Ich komme aus Brasilien» (I'm from Brazil), «aus dem Haus» (out of the house), «aus Holz» (made of wood). STEP 3: «bei» = at someone's place, at a business, near: «bei Anna» (at Anna's), «beim Arzt» (bei dem — at the doctor's), «bei der Arbeit» (at work). Note: «bei» is NOT \"by\" in the sense of \"by bus\". STEP 4: «mit» = with (company) and by (means of transport, tool): «mit meiner Mutter», «mit dem Zug» (by train), «mit dem Bus» (by bus). STEP 5: after these prepositions, the article is ALWAYS dative: dem (m), der (f), dem (n), den + -n (pl). STEP 6: contraction: bei dem = «beim».",
+        "comparacao": "English prepositions never change the noun after them (\"with the bus\", \"from the house\"). In German, the preposition decides the case: after aus, bei and mit, the article must turn dative (dem, der, den). And watch the false friends: «bei» ≠ \"by\", «mit dem Bus» = \"by bus\".",
+        "tabela": [
+          {
+            "preposicao": "aus",
+            "significado": "from, out of; made of",
+            "exemplo": "Ich komme aus dem Haus. / aus Brasilien."
+          },
+          {
+            "preposicao": "bei",
+            "significado": "at someone's place, at (a business)",
+            "exemplo": "Ich bin beim Arzt. Ich wohne bei meiner Oma."
+          },
+          {
+            "preposicao": "mit",
+            "significado": "with; by (means of)",
+            "exemplo": "Ich fahre mit dem Zug. Ich gehe mit meiner Freundin."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich fahre mit der Bus.",
+            "certo": "Ich fahre mit dem Bus.",
+            "motivo": "«mit» takes the dative; «Bus» is masculine: dem."
+          },
+          {
+            "errado": "Ich wohne bei meine Oma.",
+            "certo": "Ich wohne bei meiner Oma.",
+            "motivo": "«bei» takes the dative; feminine: «meiner»."
+          },
+          {
+            "errado": "Ich bin bei dem Arzt.",
+            "certo": "Ich bin beim Arzt.",
+            "motivo": "In speech, «bei dem» becomes «beim»."
+          }
+        ],
+        "tag": "Prepositions"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Say 6 sentences with aus, bei and mit: «Ich komme aus … Ich bin beim … Ich fahre mit dem …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 sentences with verbs that take the dative and 2 with feelings (Mir ist …)."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-028.json",
+  "responsavel": null
+}
