@@ -1,0 +1,384 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 27,
+  "fase": 3,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Food and drink: Möchten and the restaurant",
+  "objetivo": "Lesson 7, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 7,
+    "titulo": "Food and drink",
+    "objetivo": "Order food and drink, use the accusative (der → den, ein → einen), conjugate verbs that change e → i, and use «möchten» with the sentence bracket.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Möchten and the restaurant",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Möchten and the sentence bracket",
+        "explicacao": "«Ich möchte» is \"I'd like\" — more polite than «ich will», which is closer to \"I want\" (and never means \"I will\"!). The modal verb goes in 2nd position and the other verb goes to the END, in the infinitive: «Ich möchte einen Kaffee trinken» — literally \"I'd like a coffee drink\". This is the sentence \"bracket\". If the meaning is clear, the second verb can be left out: «Ich möchte einen Kaffee.» To order: «Ich nehme …» (I'll have …), «Ich möchte …», «Die Rechnung, bitte» and «Zahlen, bitte» (the check, please).",
+        "comparacao": "English keeps the verbs together: \"I'd like to drink a coffee\". German splits them and sends the second verb to the end: «Ich möchte einen Kaffee trinken». And there's no \"to\": just the infinitive.",
+        "tabela": [
+          {
+            "pronome": "ich",
+            "möchten": "möchte",
+            "exemplo": "Ich möchte einen Kaffee."
+          },
+          {
+            "pronome": "du",
+            "möchten": "möchtest",
+            "exemplo": "Möchtest du Kuchen?"
+          },
+          {
+            "pronome": "er / sie / es",
+            "möchten": "möchte",
+            "exemplo": "Er möchte einen Tee trinken."
+          },
+          {
+            "pronome": "wir",
+            "möchten": "möchten",
+            "exemplo": "Wir möchten bestellen."
+          },
+          {
+            "pronome": "ihr",
+            "möchten": "möchtet",
+            "exemplo": "Möchtet ihr Fisch essen?"
+          },
+          {
+            "pronome": "sie / Sie",
+            "möchten": "möchten",
+            "exemplo": "Was möchten Sie trinken?"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich möchte essen einen Fisch.",
+            "certo": "Ich möchte einen Fisch essen.",
+            "motivo": "The second verb goes to the END of the sentence."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 7,
+        "titulo": "Im Restaurant / At the restaurant",
+        "contexto": "Two customers and a waiter.",
+        "linhas": [
+          {
+            "personagem": "Kellner",
+            "ru": "— Guten Abend! Was möchten Sie trinken?",
+            "pt": "— Good evening! What would you like to drink?",
+            "audio": "Guten Abend! Was möchten Sie trinken?",
+            "rotulo": "Kellner"
+          },
+          {
+            "personagem": "Anna",
+            "ru": "— Ich möchte ein Wasser, bitte.",
+            "pt": "— I'd like a water, please.",
+            "audio": "Ich möchte ein Wasser, bitte.",
+            "rotulo": "Anna"
+          },
+          {
+            "personagem": "Ben",
+            "ru": "— Und ich nehme einen Kaffee.",
+            "pt": "— And I'll have a coffee.",
+            "audio": "Und ich nehme einen Kaffee.",
+            "rotulo": "Ben"
+          },
+          {
+            "personagem": "Kellner",
+            "ru": "— Gern. Und was möchten Sie essen?",
+            "pt": "— Certainly. And what would you like to eat?",
+            "audio": "Gern. Und was möchten Sie essen?",
+            "rotulo": "Kellner"
+          },
+          {
+            "personagem": "Anna",
+            "ru": "— Ich möchte den Fisch mit Reis.",
+            "pt": "— I'd like the fish with rice.",
+            "audio": "Ich möchte den Fisch mit Reis.",
+            "rotulo": "Anna"
+          },
+          {
+            "personagem": "Ben",
+            "ru": "— Ich esse eine Suppe und ein Brot.",
+            "pt": "— I'll have a soup and some bread.",
+            "audio": "Ich esse eine Suppe und ein Brot.",
+            "rotulo": "Ben"
+          },
+          {
+            "personagem": "Kellner",
+            "ru": "— Gern. Möchten Sie noch etwas?",
+            "pt": "— Certainly. Anything else?",
+            "audio": "Gern. Möchten Sie noch etwas?",
+            "rotulo": "Kellner"
+          },
+          {
+            "personagem": "Anna",
+            "ru": "— Nein, danke. Die Rechnung, bitte.",
+            "pt": "— No, thank you. The check, please.",
+            "audio": "Nein, danke. Die Rechnung, bitte.",
+            "rotulo": "Anna"
+          },
+          {
+            "personagem": "Kellner",
+            "ru": "— Das macht zwanzig Euro.",
+            "pt": "— That's twenty euros.",
+            "audio": "Das macht zwanzig Euro.",
+            "rotulo": "Kellner"
+          },
+          {
+            "personagem": "Ben",
+            "ru": "— Hier sind zwanzig Euro. Stimmt so!",
+            "pt": "— Here's twenty euros. Keep the change!",
+            "audio": "Hier sind zwanzig Euro. Stimmt so!",
+            "rotulo": "Ben"
+          }
+        ]
+      },
+      {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "Ich suche einen Tisch.",
+            "translit": "",
+            "pt": "I'm looking for a table.",
+            "en": "",
+            "audio": "Ich suche einen Tisch."
+          },
+          {
+            "ru": "Ich brauche einen Stuhl.",
+            "translit": "",
+            "pt": "I need a chair.",
+            "en": "",
+            "audio": "Ich brauche einen Stuhl."
+          },
+          {
+            "ru": "Ich kaufe den Tisch.",
+            "translit": "",
+            "pt": "I'll take the table.",
+            "en": "",
+            "audio": "Ich kaufe den Tisch."
+          },
+          {
+            "ru": "Ich habe keinen Hunger.",
+            "translit": "",
+            "pt": "I'm not hungry.",
+            "en": "",
+            "audio": "Ich habe keinen Hunger."
+          },
+          {
+            "ru": "Gibt es hier einen Supermarkt?",
+            "translit": "",
+            "pt": "Is there a supermarket here?",
+            "en": "",
+            "audio": "Gibt es hier einen Supermarkt?"
+          },
+          {
+            "ru": "Ich liebe dich.",
+            "translit": "",
+            "pt": "I love you.",
+            "en": "",
+            "audio": "Ich liebe dich."
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ich kaufe ___ Tisch.",
+            "opcoes": [
+              "der",
+              "den"
+            ],
+            "gabarito": "den",
+            "explicacao": "Tisch is masculine and receives the action of kaufen as a direct object in the accusative. The article changes from der to den: Ich kaufe den Tisch.",
+            "id": "de-007-L-101"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "___ Tisch ist neu.",
+            "opcoes": [
+              "Der",
+              "Den"
+            ],
+            "gabarito": "Der",
+            "explicacao": "Tisch is the subject of the sentence. In the masculine nominative singular, use der: Der Tisch ist neu.",
+            "id": "de-007-L-102"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ich suche ___ Schlüssel (m.).",
+            "opcoes": [
+              "der",
+              "den"
+            ],
+            "gabarito": "den",
+            "explicacao": "Schlüssel is masculine and the direct object of suchen. Among the options, the accusative form is den: Ich suche den Schlüssel.",
+            "id": "de-007-L-103"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Wir brauchen ___ Auto (n.).",
+            "opcoes": [
+              "ein",
+              "einen"
+            ],
+            "gabarito": "ein",
+            "explicacao": "Auto is neuter and the direct object of brauchen. The indefinite article in the neuter accusative singular is ein: Wir brauchen ein Auto.",
+            "id": "de-007-L-104"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Er hat ___ Hund (m.).",
+            "opcoes": [
+              "ein",
+              "einen"
+            ],
+            "gabarito": "einen",
+            "explicacao": "Hund is masculine and the direct object of haben. In the masculine accusative singular, ein becomes einen: Er hat einen Hund.",
+            "id": "de-007-L-105"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Das ist ___ Stuhl (m.).",
+            "opcoes": [
+              "ein",
+              "einen"
+            ],
+            "gabarito": "ein",
+            "explicacao": "In Das ist ein Stuhl, the noun after sein describes the subject, so it stays in the nominative — just as English says \"it is he\", not \"him\", in formal style. Stuhl is masculine singular: ein.",
+            "id": "de-007-L-106"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "___ besuchst du am Wochenende?",
+            "opcoes": [
+              "Wer",
+              "Wen"
+            ],
+            "gabarito": "Wen",
+            "explicacao": "Besuchen takes a direct object in the accusative. To ask about the person visited, use wen — the German \"whom\"; wer (\"who\") would ask about the subject.",
+            "id": "de-007-L-107"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich liebe ___ (du). · Tom sucht mich (ich).",
+            "respostaEsperada": "dich",
+            "explicacao": "Lieben takes a direct object in the accusative. Du becomes dich (\"you\" as object): Ich liebe dich.",
+            "id": "de-007-L-201a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich liebe dich (du). · Tom sucht ___ (ich).",
+            "respostaEsperada": "mich",
+            "explicacao": "Suchen takes a direct object in the accusative. Ich becomes mich (\"me\"): Tom sucht mich.",
+            "id": "de-007-L-201b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Camila kennt ___ (er). · Wir besuchen sie (sie, plural). · Hörst du uns (wir)?",
+            "respostaEsperada": "ihn",
+            "explicacao": "Kennen takes a direct object in the accusative. Er becomes ihn (\"him\"): Camila kennt ihn.",
+            "id": "de-007-L-202a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Camila kennt ihn (er). · Wir besuchen ___ (sie, plural). · Hörst du uns (wir)?",
+            "respostaEsperada": "sie",
+            "explicacao": "Plural sie stays sie in the accusative (\"they\" → \"them\" is the same word in German). So: Wir besuchen sie.",
+            "id": "de-007-L-202b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Camila kennt ihn (er). · Wir besuchen sie (sie, plural). · Hörst du ___ (wir)?",
+            "respostaEsperada": "uns",
+            "explicacao": "Hören takes a direct object in the accusative. Wir becomes uns (\"us\"): Hörst du uns?",
+            "id": "de-007-L-202c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Replace the object with the matching pronoun (ihn, sie, es): Ich kaufe den Computer. → Ich kaufe ___.",
+            "respostaEsperada": "ihn",
+            "explicacao": "Den Computer is masculine singular accusative. Where English says \"it\", German uses ihn for a masculine thing: Ich kaufe ihn.",
+            "id": "de-007-L-203a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Replace the object with the matching pronoun (ihn, sie, es): Ich bezahle die Rechnung. → Ich bezahle ___.",
+            "respostaEsperada": "sie",
+            "explicacao": "Die Rechnung is feminine singular accusative. The pronoun is sie — \"it\" in English: Ich bezahle sie.",
+            "id": "de-007-L-204a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Replace the object with the matching pronoun (ihn, sie, es): Ich lese das Formular. → Ich lese ___.",
+            "respostaEsperada": "es",
+            "explicacao": "Das Formular is neuter singular accusative. The pronoun is es: Ich lese es.",
+            "id": "de-007-L-205a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete the positive sentence with ein, eine or einen: Ich habe ___ Hund (m.), eine Katze (f.) und ein Auto (n.).",
+            "respostaEsperada": "einen",
+            "explicacao": "It's a positive sentence. Hund is masculine and the object of haben, so the indefinite article in the accusative is einen.",
+            "id": "de-007-L-206a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete the positive sentence with ein, eine or einen: Ich habe einen Hund (m.), ___ Katze (f.) und ein Auto (n.).",
+            "respostaEsperada": "eine",
+            "explicacao": "It's a positive sentence. Katze is feminine and the object of haben; in the feminine accusative, use eine.",
+            "id": "de-007-L-206b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete the positive sentence with ein, eine or einen: Ich habe einen Hund (m.), eine Katze (f.) und ___ Auto (n.).",
+            "respostaEsperada": "ein",
+            "explicacao": "It's a positive sentence. Auto is neuter and the object of haben; in the neuter accusative, use ein.",
+            "id": "de-007-L-206c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Say you have no appointment and no time, with kein: Heute habe ich ___ Termin (m.) und keine Zeit (f.).",
+            "respostaEsperada": "keinen",
+            "explicacao": "We negate the appointment. Termin is masculine and the object of haben; in the accusative, kein becomes keinen.",
+            "id": "de-007-L-207a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Say you have no appointment and no time, with kein: Heute habe ich keinen Termin (m.) und ___ Zeit (f.).",
+            "respostaEsperada": "keine",
+            "explicacao": "We negate the time. Zeit is feminine and the object of haben; in the accusative, use keine.",
+            "id": "de-007-L-207b"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Order out loud: a drink, a dish and «Die Rechnung, bitte»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Write the 6 forms of «essen» and «lesen» from memory."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-007.json",
+  "responsavel": null
+}

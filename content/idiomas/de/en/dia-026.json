@@ -1,0 +1,207 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 26,
+  "fase": 3,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Food and drink: Verbs with e → i",
+  "objetivo": "Lesson 7, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 7,
+    "titulo": "Food and drink",
+    "objetivo": "Order food and drink, use the accusative (der → den, ein → einen), conjugate verbs that change e → i, and use «möchten» with the sentence bracket.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Verbs with e → i",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Work it out yourself",
+        "explicacao": "STEP 1: compare the sentences. STEP 2: Questions: STEP 3: which gender changes form when it goes from subject to object? STEP 4: what happens to ein in the masculine? STEP 5: who is the subject in Ich kaufe den Tisch? And the object?",
+        "tabela": [
+          {
+            "c1": "Der Tisch ist alt.",
+            "c2": "Ich kaufe den Tisch. (masculine object: der → den)"
+          },
+          {
+            "c1": "Die Lampe ist neu.",
+            "c2": "Ich kaufe die Lampe."
+          },
+          {
+            "c1": "Das Buch ist gut.",
+            "c2": "Ich kaufe das Buch."
+          },
+          {
+            "c1": "Die Stühle sind alt.",
+            "c2": "Ich kaufe die Stühle."
+          },
+          {
+            "c1": "Ein Hund ist hier.",
+            "c2": "Ich habe einen Hund."
+          },
+          {
+            "c1": "Eine Katze ist hier.",
+            "c2": "Ich habe eine Katze."
+          }
+        ],
+        "tag": "Discover"
+      },
+      {
+        "tipo": "palavras",
+        "min": 7,
+        "itens": [
+          {
+            "ru": "essen",
+            "translit": "ESS-en",
+            "pt": "to eat",
+            "en": "to eat",
+            "audio": "essen"
+          },
+          {
+            "ru": "nehmen",
+            "translit": "NEH-men",
+            "pt": "to take",
+            "en": "to take",
+            "audio": "nehmen"
+          },
+          {
+            "ru": "lesen",
+            "translit": "LEH-zen",
+            "pt": "to read",
+            "en": "to read",
+            "audio": "lesen"
+          },
+          {
+            "ru": "sehen",
+            "translit": "ZEH-en",
+            "pt": "to see",
+            "en": "to see",
+            "audio": "sehen"
+          },
+          {
+            "ru": "geben",
+            "translit": "GEH-ben",
+            "pt": "to give",
+            "en": "to give",
+            "audio": "geben"
+          },
+          {
+            "ru": "kochen",
+            "translit": "KOKH-en",
+            "pt": "to cook",
+            "en": "to cook",
+            "audio": "kochen"
+          },
+          {
+            "ru": "bestellen",
+            "translit": "beh-SHTEL-en",
+            "pt": "to order (at a restaurant)",
+            "en": "to order",
+            "audio": "bestellen"
+          },
+          {
+            "ru": "bezahlen",
+            "translit": "beh-TSAH-len",
+            "pt": "to pay",
+            "en": "to pay",
+            "audio": "bezahlen"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Verbs that change e to i or ie",
+        "explicacao": "A group of very common verbs changes the vowel «e» to «i» or «ie» with «du» and «er / sie / es»: essen → du isst, er isst. The other persons are regular. In «nehmen» a consonant changes too (nimmst, nimmt). Learn each of these verbs with its «du» and «er» forms — the way English learners memorize irregular verbs.",
+        "tabela": [
+          {
+            "pronome": "ich",
+            "essen": "esse",
+            "nehmen": "nehme",
+            "lesen": "lese",
+            "sehen": "sehe",
+            "geben": "gebe",
+            "sprechen": "spreche"
+          },
+          {
+            "pronome": "du",
+            "essen": "isst",
+            "nehmen": "nimmst",
+            "lesen": "liest",
+            "sehen": "siehst",
+            "geben": "gibst",
+            "sprechen": "sprichst"
+          },
+          {
+            "pronome": "er / sie / es",
+            "essen": "isst",
+            "nehmen": "nimmt",
+            "lesen": "liest",
+            "sehen": "sieht",
+            "geben": "gibt",
+            "sprechen": "spricht"
+          },
+          {
+            "pronome": "wir",
+            "essen": "essen",
+            "nehmen": "nehmen",
+            "lesen": "lesen",
+            "sehen": "sehen",
+            "geben": "geben",
+            "sprechen": "sprechen"
+          },
+          {
+            "pronome": "ihr",
+            "essen": "esst",
+            "nehmen": "nehmt",
+            "lesen": "lest",
+            "sehen": "seht",
+            "geben": "gebt",
+            "sprechen": "sprecht"
+          },
+          {
+            "pronome": "sie / Sie",
+            "essen": "essen",
+            "nehmen": "nehmen",
+            "lesen": "lesen",
+            "sehen": "sehen",
+            "geben": "geben",
+            "sprechen": "sprechen"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Du esst Brot.",
+            "certo": "Du isst Brot.",
+            "motivo": "With «du», «essen» becomes «isst»."
+          },
+          {
+            "errado": "Er lest ein Buch.",
+            "certo": "Er liest ein Buch.",
+            "motivo": "With «er», «lesen» becomes «liest»."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 4,
+        "enunciado": "Say: «Ich lese ein Buch. Du liest eine Zeitung. Er isst einen Apfel. Sie nimmt einen Kaffee.»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Write 4 sentences with «Ich esse / Ich trinke» and a food in the accusative."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-007.json",
+  "responsavel": null
+}

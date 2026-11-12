@@ -1,0 +1,306 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 31,
+  "fase": 4,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "My daily routine: Dialogue and reading",
+  "objetivo": "Lesson 8, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 8,
+    "titulo": "My daily routine",
+    "objetivo": "Describe your daily routine with separable verbs, verbs that change a to ä, and time expressions (um, am, von … bis, jeden Tag).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Dialogue and reading",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "dialogo",
+        "min": 9,
+        "titulo": "Mein Tag / My day",
+        "contexto": "Two coworkers talk about their routines.",
+        "linhas": [
+          {
+            "personagem": "Mia",
+            "ru": "— Wann stehst du auf, Jonas?",
+            "pt": "— When do you get up, Jonas?",
+            "audio": "Wann stehst du auf, Jonas?",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Ich stehe um sechs Uhr auf. Und du?",
+            "pt": "— I get up at six. And you?",
+            "audio": "Ich stehe um sechs Uhr auf. Und du?",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Ich stehe um sieben Uhr auf. Dann dusche ich und frühstücke.",
+            "pt": "— I get up at seven. Then I shower and have breakfast.",
+            "audio": "Ich stehe um sieben Uhr auf. Dann dusche ich und frühstücke.",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Wann fährst du zur Arbeit?",
+            "pt": "— When do you go to work?",
+            "audio": "Wann fährst du zur Arbeit?",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Um acht Uhr. Ich arbeite von neun bis siebzehn Uhr.",
+            "pt": "— At eight. I work from nine to five.",
+            "audio": "Um acht Uhr. Ich arbeite von neun bis siebzehn Uhr.",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Und abends? Siehst du fern?",
+            "pt": "— And in the evening? Do you watch TV?",
+            "audio": "Und abends? Siehst du fern?",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Ja, manchmal. Dann rufe ich auch meine Eltern an.",
+            "pt": "— Yes, sometimes. Then I also call my parents.",
+            "audio": "Ja, manchmal. Dann rufe ich auch meine Eltern an.",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Ich kaufe abends oft ein.",
+            "pt": "— I often go shopping in the evening.",
+            "audio": "Ich kaufe abends oft ein.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Und wann schläfst du?",
+            "pt": "— And when do you go to sleep?",
+            "audio": "Und wann schläfst du?",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Um zehn Uhr. Ich schlafe gern früh.",
+            "pt": "— At ten. I like going to bed early.",
+            "audio": "Um zehn Uhr. Ich schlafe gern früh.",
+            "rotulo": "Jonas"
+          }
+        ]
+      },
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "Ich rufe dich später an.",
+            "translit": "",
+            "pt": "I'll call you later.",
+            "en": "",
+            "audio": "Ich rufe dich später an."
+          },
+          {
+            "ru": "Kommst du mit?",
+            "translit": "",
+            "pt": "Are you coming along?",
+            "en": "",
+            "audio": "Kommst du mit?"
+          },
+          {
+            "ru": "Der Bus kommt jetzt an.",
+            "translit": "",
+            "pt": "The bus is arriving now.",
+            "en": "",
+            "audio": "Der Bus kommt jetzt an."
+          },
+          {
+            "ru": "Wann fängt der Film an?",
+            "translit": "",
+            "pt": "When does the movie start?",
+            "en": "",
+            "audio": "Wann fängt der Film an?"
+          },
+          {
+            "ru": "Mach bitte die Tür zu!",
+            "translit": "",
+            "pt": "Close the door, please!",
+            "en": "",
+            "audio": "Mach bitte die Tür zu!"
+          },
+          {
+            "ru": "Ich verstehe das nicht.",
+            "translit": "",
+            "pt": "I don't understand that.",
+            "en": "",
+            "audio": "Ich verstehe das nicht."
+          },
+          {
+            "ru": "Nimm deine Tasche mit!",
+            "translit": "",
+            "pt": "Take your bag with you!",
+            "en": "",
+            "audio": "Nimm deine Tasche mit!"
+          },
+          {
+            "ru": "Räum bitte auf!",
+            "translit": "",
+            "pt": "Tidy up, please!",
+            "en": "",
+            "audio": "Räum bitte auf!"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 9,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Ich anrufe dich",
+              "Ich rufe dich an"
+            ],
+            "gabarito": "Ich rufe dich an",
+            "explicacao": "Anrufen is separable. In this statement, rufe is the conjugated verb in second position and an goes to the end: Ich rufe dich an.",
+            "id": "de-008-L-101"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Der Bus ___ um zehn Uhr ab.",
+            "opcoes": [
+              "fährt",
+              "fahrt"
+            ],
+            "gabarito": "fährt",
+            "explicacao": "Abfahren is separable. With der Bus, third person singular, fahren becomes fährt; ab goes to the end of the clause.",
+            "id": "de-008-L-102"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "___ du mit?",
+            "opcoes": [
+              "Kommst",
+              "Mitkommst"
+            ],
+            "gabarito": "Kommst",
+            "explicacao": "In a yes/no question with mitkommen, the conjugated verb kommst opens the sentence and mit goes to the end: Kommst du mit?",
+            "id": "de-008-L-103"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which verb is separable?",
+            "opcoes": [
+              "verstehen",
+              "einkaufen",
+              "besuchen"
+            ],
+            "gabarito": "einkaufen",
+            "explicacao": "Einkaufen is separable: Ich kaufe ein. Of the other options, verstehen and besuchen have inseparable prefixes.",
+            "id": "de-008-L-104"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which verb is inseparable?",
+            "opcoes": [
+              "aussteigen",
+              "bekommen",
+              "mitnehmen"
+            ],
+            "gabarito": "bekommen",
+            "explicacao": "Bekommen has the inseparable prefix be-. It never splits: Ich bekomme ein Buch. Aussteigen and mitnehmen are separable. And careful: bekommen means \"to get, receive\" — not \"to become\"!",
+            "id": "de-008-L-105"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ich muss früh ___.",
+            "opcoes": [
+              "aufstehen",
+              "stehen auf"
+            ],
+            "gabarito": "aufstehen",
+            "explicacao": "After the modal muss, use the infinitive without zu (\"to\"). Aufstehen stays whole here: Ich muss früh aufstehen.",
+            "id": "de-008-L-106"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ich ___ dich nicht.",
+            "opcoes": [
+              "verstehe",
+              "stehe"
+            ],
+            "gabarito": "verstehe",
+            "explicacao": "Verstehen is inseparable. With ich, it's verstehe, keeping ver-: Ich verstehe dich nicht.",
+            "id": "de-008-L-107"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Conjugate the separable verb anrufen in the present: ich ___ … ___ · du ___ … ___ · er ___ … ___ · wir ___ … ___ · ihr ___ … ___",
+            "respostaEsperada": "ich rufe … an, du rufst … an, er ruft … an, wir rufen … an, ihr ruft … an",
+            "id": "de-008-L-201"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Er ___ mich heute Abend ___ (anrufen). · Wir ___ im Supermarkt ___ (einkaufen).",
+            "respostaEsperada": "Er ruft mich heute Abend an. Wir kaufen im Supermarkt ein",
+            "id": "de-008-L-202"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Du ___ abends gern ___ (fernsehen). · Der Zug ___ um acht Uhr ___ (abfahren). · Wann ___ der Kurs ___ (anfangen)?",
+            "respostaEsperada": "Du siehst abends gern fern. Der Zug fährt um acht Uhr ab. Wann fängt der Kurs an?",
+            "id": "de-008-L-203"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich ___ (verstehen) die Frage nicht, aber der Lehrer erklärt (erklären) alles.",
+            "respostaEsperada": "verstehe",
+            "explicacao": "Verstehen is inseparable. The present form with ich is verstehe: Ich verstehe die Frage nicht.",
+            "id": "de-008-L-204a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich verstehe (verstehen) die Frage nicht, aber der Lehrer ___ (erklären) alles.",
+            "respostaEsperada": "erklärt",
+            "explicacao": "The subject der Lehrer is third person singular. Erklären, with the inseparable prefix er-, becomes erklärt: der Lehrer erklärt alles.",
+            "id": "de-008-L-204b"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Rewrite with the modal verb given, and write the imperative: Ich stehe früh auf. (müssen) → ___ · Wir kaufen heute ein. (wollen) → ___ · Kommst du mit? (können) → ___",
+            "respostaEsperada": "Ich muss früh aufstehen. Wir wollen heute einkaufen. Kannst du mitkommen?",
+            "id": "de-008-L-205"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Rewrite with the modal verb given, and write the imperative: Imperative: aufstehen (du: ___! / ihr: ___! / Sie: ___!) · mitkommen (du: ___!) · aufräumen (du: ___!)",
+            "respostaEsperada": "Steh auf! Steht auf! Stehen Sie auf! Komm mit! Räum auf!",
+            "id": "de-008-L-206"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 4,
+        "enunciado": "Describe your day out loud, from the time you get up to the time you go to bed."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Write your routine in 5 sentences, with times."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-008.json",
+  "responsavel": null
+}

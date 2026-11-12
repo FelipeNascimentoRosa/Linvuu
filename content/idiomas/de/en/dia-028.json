@@ -1,0 +1,342 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 28,
+  "fase": 3,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Food and drink: Reading and practice",
+  "objetivo": "Lesson 7, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 7,
+    "titulo": "Food and drink",
+    "objetivo": "Order food and drink, use the accusative (der → den, ein → einen), conjugate verbs that change e → i, and use «möchten» with the sentence bracket.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Reading and practice",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 13,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "For a masculine direct object, «der» becomes:",
+            "opcoes": [
+              "den",
+              "dem",
+              "des"
+            ],
+            "gabarito": "den",
+            "explicacao": "Masculine accusative.",
+            "id": "de-007-e01"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«ein Saft» as a direct object becomes:",
+            "opcoes": [
+              "einen Saft",
+              "ein Saft",
+              "einem Saft"
+            ],
+            "gabarito": "einen Saft",
+            "explicacao": "Masculine accusative.",
+            "id": "de-007-e02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich esse ___ Käse. (the)",
+            "opcoes": [
+              "den",
+              "der",
+              "die"
+            ],
+            "gabarito": "den",
+            "explicacao": "Käse is masculine.",
+            "id": "de-007-e03"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Ich suche einen Tisch.",
+            "respostaEsperada": "Ich suche einen Tisch.",
+            "explicacao": "I'm looking for a table.",
+            "id": "de-007-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich trinke ___ Kaffee. (a)",
+            "opcoes": [
+              "einen",
+              "ein",
+              "eine"
+            ],
+            "gabarito": "einen",
+            "explicacao": "Kaffee is masculine.",
+            "id": "de-007-e04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich esse ___ Suppe. (the)",
+            "opcoes": [
+              "die",
+              "den",
+              "der"
+            ],
+            "gabarito": "die",
+            "explicacao": "Feminine doesn't change.",
+            "id": "de-007-e05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Er ___ ein Brot. (essen)",
+            "opcoes": [
+              "isst",
+              "esst",
+              "isse"
+            ],
+            "gabarito": "isst",
+            "explicacao": "er → isst.",
+            "id": "de-007-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Ich trage den Tisch!",
+            "respostaEsperada": "Ich trage den Tisch!",
+            "explicacao": "I'll carry the table!",
+            "id": "de-007-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Du ___ ein Buch. (lesen)",
+            "opcoes": [
+              "liest",
+              "lest",
+              "lesst"
+            ],
+            "gabarito": "liest",
+            "explicacao": "du → liest.",
+            "id": "de-007-e07"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Sie nimmt / Sie ___ einen Kaffee. (nehmen)",
+            "opcoes": [
+              "nimmt",
+              "nehmt",
+              "nimmst"
+            ],
+            "gabarito": "nimmt",
+            "explicacao": "er/sie/es → nimmt.",
+            "id": "de-007-e08"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich ___ einen Tee. (möchten)",
+            "opcoes": [
+              "möchte",
+              "möchtest",
+              "möchten"
+            ],
+            "gabarito": "möchte",
+            "explicacao": "ich → möchte.",
+            "id": "de-007-e09"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Gern. Und was möchten Sie essen?",
+            "respostaEsperada": "Gern. Und was möchten Sie essen?",
+            "explicacao": "Certainly. And what would you like to eat?",
+            "id": "de-007-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"I'd like to eat a fish.\"",
+            "opcoes": [
+              "Ich",
+              "möchte",
+              "einen",
+              "Fisch",
+              "essen"
+            ],
+            "gabarito": "Ich möchte einen Fisch essen.",
+            "explicacao": "The second verb goes to the end.",
+            "id": "de-007-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Where does the second verb go with «möchten»?",
+            "opcoes": [
+              "at the end of the sentence",
+              "right after the subject",
+              "at the beginning"
+            ],
+            "gabarito": "at the end of the sentence",
+            "explicacao": "The sentence bracket.",
+            "id": "de-007-e11"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ich möchte ein Wasser",
+            "opcoes": [
+              "Ich möchte ein Wasser",
+              "Ich nehme einen Kaffee",
+              "Ich esse ein Brot"
+            ],
+            "gabarito": "Ich möchte ein Wasser",
+            "explicacao": "«möchte» + object.",
+            "id": "de-007-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Gern. Möchten Sie noch etwas?",
+            "respostaEsperada": "Gern. Möchten Sie noch etwas?",
+            "explicacao": "Certainly. Anything else?",
+            "id": "de-007-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Die Rechnung, bitte",
+            "respostaEsperada": "Die Rechnung, bitte",
+            "explicacao": "Asking for the check.",
+            "id": "de-007-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Das macht zwanzig Euro» means:",
+            "opcoes": [
+              "That's twenty euros",
+              "I make twenty euros",
+              "This is made of euros"
+            ],
+            "gabarito": "That's twenty euros",
+            "explicacao": "«Das macht» = that comes to.",
+            "id": "de-007-e14"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write 4 sentences: what you eat, what you drink, what you'd like and asking for the check.",
+            "respostaEsperada": "Ich esse ein Brot. Ich trinke einen Kaffee. Ich möchte einen Kuchen. Die Rechnung, bitte.",
+            "id": "de-007-e15"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 9,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Write five items on your shopping or work list with Ich brauche …, using two masculines (einen Laptop, einen Schlüssel), a feminine (eine Tasche), a neuter (ein Buch) and a plural (Bücher).",
+            "respostaEsperada": "Ich brauche einen Laptop, einen Schlüssel, eine Tasche, ein Buch und Bücher für den Kurs.",
+            "id": "de-007-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write a six-line conversation in a thrift store or shop between you and a salesperson (Ich suche einen/eine … / Wie viel kostet …? / Ich nehme den/die …).",
+            "respostaEsperada": "Model dialogue: — Guten Tag! Ich suche einen Rucksack und eine Jacke. — Hier ist ein Rucksack. Er ist fast neu. — Wie viel kostet der Rucksack? — Er kostet fünfzehn Euro. Und die Jacke kostet zwanzig Euro. — Super, ich nehme den Rucksack und die Jacke! — Vielen Dank!",
+            "id": "de-007-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write three direct questions: two with Wen (people, \"whom\") and one with Was (things), with their answers.",
+            "respostaEsperada": "— Wen besuchst du morgen? — Ich besuche meinen Bruder. / — Wen kennst du hier in München? — Ich kenne Jonas und Lena. / — Was suchst du? — Ich suche meinen Schlüssel.",
+            "id": "de-007-L-p03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Ich kaufe der Tisch.",
+            "respostaEsperada": "Ich kaufe den Tisch.",
+            "explicacao": "Ich kaufe den Tisch. (masculine object: der → den)",
+            "id": "de-007-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Ich suche den Lampe.",
+            "respostaEsperada": "Ich suche die Lampe.",
+            "explicacao": "Ich suche die Lampe. (Lampe is feminine: only masculine changes)",
+            "id": "de-007-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Ich brauche er.",
+            "respostaEsperada": "Ich brauche ihn.",
+            "explicacao": "Ich brauche ihn. (er → ihn, like he → him)",
+            "id": "de-007-L-c05"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Is there a mistake? Correct it or write «OK»: Ich suche eine Lampe.",
+            "respostaEsperada": "OK",
+            "id": "de-007-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "The typical English-speaker mistakes",
+        "explicacao": "STEP 1: the costliest mistake is forgetting the -en of the masculine object (Ich habe ein Hund instead of einen Hund), because English \"a\" never changes. Then the overcorrection: putting the accusative after sein (Das ist einen Tisch instead of ein Tisch), and calling every thing «es», like English \"it\" (Ich kaufe es for der Computer instead of ihn). STEP 2: read the table and say each correct sentence out loud before you look at the reason.",
+        "erros": [
+          {
+            "errado": "Ich habe ein Hund.",
+            "certo": "Ich habe einen Hund.",
+            "motivo": "English \"a\" never changes; German masculine ein becomes einen as an object."
+          },
+          {
+            "errado": "Ich kaufe der Tisch.",
+            "certo": "Ich kaufe den Tisch.",
+            "motivo": "Masculine object: der → den, like he → him."
+          },
+          {
+            "errado": "Ich kaufe es. (der Computer)",
+            "certo": "Ich kaufe ihn.",
+            "motivo": "A masculine thing is ihn, not es — even though English says \"it\"."
+          },
+          {
+            "errado": "Das ist einen Tisch.",
+            "certo": "Das ist ein Tisch.",
+            "motivo": "After sein there's no object: the nominative stays."
+          },
+          {
+            "errado": "Ich möchte trinken einen Kaffee.",
+            "certo": "Ich möchte einen Kaffee trinken.",
+            "motivo": "With möchten, the second verb goes to the end."
+          },
+          {
+            "errado": "Du esst Brot.",
+            "certo": "Du isst Brot.",
+            "motivo": "essen changes e → i with du and er: du isst, er isst."
+          }
+        ],
+        "tag": "Typical mistake"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Can I do it? I say Ich kaufe den Tisch and Ich habe einen Hund without thinking. · I replace a masculine object with ihn and ask about a person as object with Wen."
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Review. Complete: Der Tisch kostet ____ Euro (20). Die Lampe kostet ____ Euro (8). Der Kurs beginnt um ____ Uhr (4:00). Make these negative: Ich kaufe einen Tisch. Ich suche eine Lampe. Ich habe ein Auto. Give the article: ____ Schrank, ____ Lampe, ____ Fenster, ____ Stühle."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-007.json",
+  "responsavel": null
+}

@@ -1,0 +1,352 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 32,
+  "fase": 4,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "My daily routine: Practice",
+  "objetivo": "Lesson 8, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 8,
+    "titulo": "My daily routine",
+    "objetivo": "Describe your daily routine with separable verbs, verbs that change a to ä, and time expressions (um, am, von … bis, jeden Tag).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Practice",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 16,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Ich stehe um sieben Uhr auf.",
+              "Ich aufstehe um sieben Uhr.",
+              "Ich stehe auf um sieben Uhr."
+            ],
+            "gabarito": "Ich stehe um sieben Uhr auf.",
+            "explicacao": "The prefix goes to the end.",
+            "id": "de-008-e01"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"He calls his mother.\"",
+            "opcoes": [
+              "Er",
+              "ruft",
+              "seine",
+              "Mutter",
+              "an"
+            ],
+            "gabarito": "Er ruft seine Mutter an.",
+            "explicacao": "Verb in 2nd position, prefix at the end.",
+            "id": "de-008-e02"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"Today we're going shopping.\"",
+            "opcoes": [
+              "Wir",
+              "kaufen",
+              "heute",
+              "ein"
+            ],
+            "gabarito": "Wir kaufen heute ein.",
+            "explicacao": "einkaufen: the prefix «ein» goes to the end.",
+            "id": "de-008-e03"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Camila, ich kaufe heute ein. Kommst du mit?",
+            "respostaEsperada": "Camila, ich kaufe heute ein. Kommst du mit?",
+            "explicacao": "Camila, I'm going shopping today. Are you coming along?",
+            "id": "de-008-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Du ___ nach Berlin. (fahren)",
+            "opcoes": [
+              "fährst",
+              "fahrst",
+              "fährt"
+            ],
+            "gabarito": "fährst",
+            "explicacao": "a → ä with «du».",
+            "id": "de-008-e04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Er ___ gern lange. (schlafen)",
+            "opcoes": [
+              "schläft",
+              "schlaft",
+              "schläfst"
+            ],
+            "gabarito": "schläft",
+            "explicacao": "a → ä with «er».",
+            "id": "de-008-e05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Sie ___ jeden Tag. (laufen)",
+            "opcoes": [
+              "läuft",
+              "lauft",
+              "läufst"
+            ],
+            "gabarito": "läuft",
+            "explicacao": "au → äu with «sie».",
+            "id": "de-008-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Ich muss um sechs Uhr zurückkommen. Lena besucht uns.",
+            "respostaEsperada": "Ich muss um sechs Uhr zurückkommen. Lena besucht uns.",
+            "explicacao": "I need to be back at six. Lena is coming to visit us.",
+            "id": "de-008-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ Abend sehe ich fern.",
+            "opcoes": [
+              "Am",
+              "Um",
+              "Im"
+            ],
+            "gabarito": "Am",
+            "explicacao": "Part of the day: am.",
+            "id": "de-008-e07"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich arbeite ___ neun bis siebzehn Uhr.",
+            "opcoes": [
+              "von",
+              "um",
+              "am"
+            ],
+            "gabarito": "von",
+            "explicacao": "von … bis (from … to).",
+            "id": "de-008-e08"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Ich stehe um sechs Uhr auf. Und du?",
+            "respostaEsperada": "Ich stehe um sechs Uhr auf. Und du?",
+            "explicacao": "I get up at six. And you?",
+            "id": "de-008-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich stehe ___ sieben Uhr auf.",
+            "opcoes": [
+              "um",
+              "am",
+              "im"
+            ],
+            "gabarito": "um",
+            "explicacao": "Clock time: um.",
+            "id": "de-008-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«besuchen» is a verb that is:",
+            "opcoes": [
+              "inseparable (be-)",
+              "separable",
+              "irregular"
+            ],
+            "gabarito": "inseparable (be-)",
+            "explicacao": "be- never splits off.",
+            "id": "de-008-e10"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ich stehe um sechs Uhr auf",
+            "opcoes": [
+              "Ich stehe um sechs Uhr auf",
+              "Ich stehe um sieben Uhr auf",
+              "Ich fahre um sechs Uhr"
+            ],
+            "gabarito": "Ich stehe um sechs Uhr auf",
+            "explicacao": "aufstehen split.",
+            "id": "de-008-e11"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Ja, manchmal. Dann rufe ich auch meine Eltern an.",
+            "respostaEsperada": "Ja, manchmal. Dann rufe ich auch meine Eltern an.",
+            "explicacao": "Yes, sometimes. Then I also call my parents.",
+            "id": "de-008-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Er ruft seine Mutter an",
+            "respostaEsperada": "Er ruft seine Mutter an",
+            "explicacao": "anrufen: the prefix «an» goes to the end.",
+            "id": "de-008-e12"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "With «möchten», the separable verb is:",
+            "opcoes": [
+              "whole, at the end (aufstehen)",
+              "split",
+              "at the beginning"
+            ],
+            "gabarito": "whole, at the end (aufstehen)",
+            "explicacao": "Whole infinitive.",
+            "id": "de-008-e13"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write 4 sentences about your day, with a separable verb.",
+            "respostaEsperada": "Ich stehe um sieben Uhr auf. Ich frühstücke um halb acht. Ich fahre um acht Uhr zur Arbeit. Abends sehe ich fern.",
+            "id": "de-008-e14"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Write five sentences describing your daily routine with separable verbs (aufstehen, abfahren, ankommen, einkaufen, zurückkommen, fernsehen).",
+            "respostaEsperada": "Ich stehe jeden Tag um sieben Uhr auf. Um acht Uhr fahre ich mit dem Bus ab. Um halb neun komme ich im Büro an. Am Nachmittag kaufe ich im Supermarkt ein und komme um neunzehn Uhr zurück.",
+            "id": "de-008-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write three requests at home using the imperative of separable verbs (Mach bitte … zu! / Räum … auf! / Nimm … mit!).",
+            "respostaEsperada": "Mach bitte das Fenster zu! Räum bitte dein Zimmer auf! Nimm bitte deinen Regenschirm mit!",
+            "id": "de-008-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write a four-line dialogue arranging to go to the market or the movies with a friend (Kommst du mit? / Wann fahren wir ab?).",
+            "respostaEsperada": "Model dialogue: — Hallo Jonas! Ich gehe jetzt ins Kino. Kommst du mit? — Ja, sehr gern! Wann fängt der Film an? — Er fängt um zwanzig Uhr an. Wir fahren um halb acht mit der U-Bahn ab. — Super, ich nehme meine Jacke mit!",
+            "id": "de-008-L-p03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Ich anrufe dich später.",
+            "respostaEsperada": "Ich rufe dich später an.",
+            "explicacao": "Ich rufe dich später an.",
+            "id": "de-008-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Wir steigen aus am Marienplatz.",
+            "respostaEsperada": "Wir steigen am Marienplatz aus.",
+            "explicacao": "Wir steigen am Marienplatz aus. (the prefix goes to the very end, not where English puts \"off\")",
+            "id": "de-008-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Mitkommst du?",
+            "respostaEsperada": "Kommst du mit?",
+            "explicacao": "Kommst du mit?",
+            "id": "de-008-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Ich muss früh stehe auf.",
+            "respostaEsperada": "Ich muss früh aufstehen.",
+            "explicacao": "Ich muss früh aufstehen.",
+            "id": "de-008-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Er stehst um sieben Uhr auf.",
+            "respostaEsperada": "Er steht um sieben Uhr auf.",
+            "explicacao": "Er steht um sieben Uhr auf.",
+            "id": "de-008-L-c05"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Is there a mistake? Correct it or write «OK»: Ich besuche meine Oma.",
+            "respostaEsperada": "OK",
+            "id": "de-008-L-c06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Der Bus abfährt um zehn Uhr.",
+            "respostaEsperada": "Der Bus fährt um zehn Uhr ab.",
+            "explicacao": "Der Bus fährt um zehn Uhr ab.",
+            "id": "de-008-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "The typical English-speaker mistakes",
+        "explicacao": "STEP 1: the costliest mistakes: keeping the prefix glued to the conjugated verb (Ich anrufe dich instead of Ich rufe dich an); leaving it in the middle, where English puts its particle (Wir steigen aus am Marienplatz, from \"we get off at Marienplatz\"); splitting inseparable verbs (be-, ge-, er-, ver-, ent-, emp-); or splitting after a modal verb. STEP 2: read the table and say each correct sentence out loud before you look at the reason.",
+        "erros": [
+          {
+            "errado": "Ich anrufe dich später.",
+            "certo": "Ich rufe dich später an.",
+            "motivo": "The conjugated verb goes in position 2; the prefix an goes to the end."
+          },
+          {
+            "errado": "Wir steigen aus am Marienplatz.",
+            "certo": "Wir steigen am Marienplatz aus.",
+            "motivo": "Not where English puts \"off\": the prefix goes to the very end."
+          },
+          {
+            "errado": "Mitkommst du?",
+            "certo": "Kommst du mit?",
+            "motivo": "Question: verb first, prefix still at the end."
+          },
+          {
+            "errado": "Ich muss früh stehe auf.",
+            "certo": "Ich muss früh aufstehen.",
+            "motivo": "After a modal, the infinitive stays whole, at the end."
+          },
+          {
+            "errado": "Ich be suche meine Oma.",
+            "certo": "Ich besuche meine Oma.",
+            "motivo": "be- is inseparable: it never splits."
+          },
+          {
+            "errado": "Ich bekomme müde.",
+            "certo": "Ich werde müde.",
+            "motivo": "bekommen = to get, receive — \"to become\" is werden."
+          }
+        ],
+        "tag": "Typical mistake"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Can I do it? I describe my routine with separable verbs. · I invite someone with Kommst du mit? and I know when not to split the verb."
+      },
+      {
+        "tipo": "revisao",
+        "min": 2,
+        "enunciado": "Review. Complete: Er ____ (essen) gern Kuchen. Ich ____ (möchten) früh aufstehen. Ich habe ____ Bruder (ein)."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-008.json",
+  "responsavel": null
+}

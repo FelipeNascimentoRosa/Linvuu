@@ -1,0 +1,272 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 25,
+  "fase": 3,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Food and drink: Food and the accusative",
+  "objetivo": "Lesson 7, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 7,
+    "titulo": "Food and drink",
+    "objetivo": "Order food and drink, use the accusative (der → den, ein → einen), conjugate verbs that change e → i, and use «möchten» with the sentence bracket.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Food and the accusative",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Lesson goal. By the end of the four sessions, you tell the doer from the receiver of the action, use den, einen and keinen for masculine nouns without hesitating, and replace the object with ihn, sie or es."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "At the thrift store",
+        "contexto": "Camila and Jonas are looking for furniture for her room.",
+        "linhas": [
+          {
+            "personagem": "Camila",
+            "ru": "— Ich suche einen Tisch.",
+            "pt": "— I'm looking for a table.",
+            "audio": "Ich suche einen Tisch.",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Verkäufer",
+            "ru": "— Hier ist ein Tisch. Der Tisch ist alt, aber schön.",
+            "pt": "— Here's a table. It's old, but nice.",
+            "audio": "Hier ist ein Tisch. Der Tisch ist alt, aber schön.",
+            "rotulo": "Verkäufer"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Wie viel kostet der Tisch?",
+            "pt": "— How much is the table?",
+            "audio": "Wie viel kostet der Tisch?",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Verkäufer",
+            "ru": "— Zwanzig Euro.",
+            "pt": "— Twenty euros.",
+            "audio": "Zwanzig Euro.",
+            "rotulo": "Verkäufer"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Gut, ich kaufe den Tisch. Und ich brauche auch eine Lampe.",
+            "pt": "— Great, I'll take the table. And I also need a lamp.",
+            "audio": "Gut, ich kaufe den Tisch. Und ich brauche auch eine Lampe.",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Verkäufer",
+            "ru": "— Die Lampe kostet acht Euro. Brauchen Sie auch einen Stuhl?",
+            "pt": "— The lamp is eight euros. Do you need a chair too, ma'am?",
+            "audio": "Die Lampe kostet acht Euro. Brauchen Sie auch einen Stuhl?",
+            "rotulo": "Verkäufer"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Nein danke, ich habe schon einen Stuhl.",
+            "pt": "— No, thanks, I already have a chair.",
+            "audio": "Nein danke, ich habe schon einen Stuhl.",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Ich trage den Tisch!",
+            "pt": "— I'll carry the table!",
+            "audio": "Ich trage den Tisch!",
+            "rotulo": "Jonas"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "The English speaker's trap",
+        "explicacao": "STEP 1: German marks the role on the article — but only in the masculine. That's the whole trap: STEP 2: only the masculine changes. So just ask whether the word is a der word. If it isn't, nothing happens.",
+        "comparacao": "English works out who does what from word order: \"the man sees the dog\" and \"the dog sees the man\" are different because the order changes — \"the\" never changes. German keeps the order freer and marks the object on the article instead: «Den Hund sieht der Mann» still means \"the man sees the dog\". You already know the idea from English pronouns: he sees → sees him. German does the same with masculine articles: der → den.",
+        "tabela": [
+          {
+            "ingles": "masculine",
+            "alemao": "der Tisch",
+            "evite": "den Tisch"
+          },
+          {
+            "ingles": "feminine",
+            "alemao": "die Lampe",
+            "evite": "die Lampe"
+          },
+          {
+            "ingles": "neuter",
+            "alemao": "das Bett",
+            "evite": "das Bett"
+          },
+          {
+            "ingles": "plural",
+            "alemao": "die Stühle",
+            "evite": "die Stühle"
+          }
+        ],
+        "tag": "Trap"
+      },
+      {
+        "tipo": "palavras",
+        "min": 7,
+        "itens": [
+          {
+            "ru": "das Brot",
+            "translit": "dahs BROHT",
+            "pt": "bread",
+            "en": "bread",
+            "audio": "das Brot"
+          },
+          {
+            "ru": "die Butter",
+            "translit": "dee BOO-ter",
+            "pt": "butter",
+            "en": "butter",
+            "audio": "die Butter"
+          },
+          {
+            "ru": "der Käse",
+            "translit": "dehr KEH-zeh",
+            "pt": "cheese",
+            "en": "cheese",
+            "audio": "der Käse"
+          },
+          {
+            "ru": "das Ei",
+            "translit": "dahs EYE",
+            "pt": "egg",
+            "en": "egg",
+            "audio": "das Ei"
+          },
+          {
+            "ru": "der Apfel",
+            "translit": "dehr AHP-fel",
+            "pt": "apple",
+            "en": "apple",
+            "audio": "der Apfel"
+          },
+          {
+            "ru": "die Milch",
+            "translit": "dee MILKH",
+            "pt": "milk",
+            "en": "milk",
+            "audio": "die Milch"
+          },
+          {
+            "ru": "das Wasser",
+            "translit": "dahs VAH-ser",
+            "pt": "water",
+            "en": "water",
+            "audio": "das Wasser"
+          },
+          {
+            "ru": "der Kaffee",
+            "translit": "dehr KAH-feh",
+            "pt": "coffee",
+            "en": "coffee",
+            "audio": "der Kaffee"
+          },
+          {
+            "ru": "der Saft",
+            "translit": "dehr ZAHFT",
+            "pt": "juice",
+            "en": "juice",
+            "audio": "der Saft"
+          },
+          {
+            "ru": "der Kuchen",
+            "translit": "dehr KOO-khen",
+            "pt": "cake",
+            "en": "cake",
+            "audio": "der Kuchen"
+          },
+          {
+            "ru": "der Fisch",
+            "translit": "dehr FISH",
+            "pt": "fish",
+            "en": "fish",
+            "audio": "der Fisch"
+          },
+          {
+            "ru": "die Suppe",
+            "translit": "dee ZOO-peh",
+            "pt": "soup",
+            "en": "soup",
+            "audio": "die Suppe"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 7,
+        "titulo": "The accusative: the direct object changes only in the masculine",
+        "explicacao": "German has four cases. For now you need two: the NOMINATIVE (who does the action) and the ACCUSATIVE (the direct object: what you eat, drink, buy or have). The only difference between them is in the MASCULINE singular: der → den, ein → einen, kein → keinen. Feminine, neuter and plural stay the same. Verbs that take the accusative: essen, trinken, kaufen, haben, nehmen, möchten, lesen, sehen.",
+        "comparacao": "English \"the\" never changes: \"the cheese\" is the same as subject or object. German changes only the masculine: «der Käse» (subject) × «den Käse» (object) — the same switch as he → him.",
+        "tabela": [
+          {
+            "genero": "masculine",
+            "nominativo": "der / ein / kein",
+            "acusativo": "den / einen / keinen",
+            "exemplo": "Ich esse den Käse. Ich trinke einen Saft."
+          },
+          {
+            "genero": "feminine",
+            "nominativo": "die / eine / keine",
+            "acusativo": "die / eine / keine",
+            "exemplo": "Ich esse die Suppe."
+          },
+          {
+            "genero": "neuter",
+            "nominativo": "das / ein / kein",
+            "acusativo": "das / ein / kein",
+            "exemplo": "Ich esse das Brot."
+          },
+          {
+            "genero": "plural",
+            "nominativo": "die / — / keine",
+            "acusativo": "die / — / keine",
+            "exemplo": "Ich esse die Äpfel."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich esse der Käse.",
+            "certo": "Ich esse den Käse.",
+            "motivo": "Masculine direct object: den."
+          },
+          {
+            "errado": "Ich trinke ein Saft.",
+            "certo": "Ich trinke einen Saft.",
+            "motivo": "Masculine direct object: einen."
+          }
+        ],
+        "tag": "Cases"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Say: «Ich esse den Käse. Ich trinke einen Saft. Ich esse die Suppe. Ich esse ein Brot.»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Write today's date and the time right now in German."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-007.json",
+  "responsavel": null
+}

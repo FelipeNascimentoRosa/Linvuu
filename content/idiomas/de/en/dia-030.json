@@ -1,0 +1,193 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 30,
+  "fase": 3,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "My daily routine: When? and verbs with a → ä",
+  "objetivo": "Lesson 8, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 8,
+    "titulo": "My daily routine",
+    "objetivo": "Describe your daily routine with separable verbs, verbs that change a to ä, and time expressions (um, am, von … bis, jeden Tag).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "When? and verbs with a → ä",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Work it out yourself",
+        "explicacao": "STEP 1: look at the verbs. STEP 2: Questions: STEP 3: in sentence 1, where is auf? And the verb stehe? STEP 4: in sentence 4, with the modal, what happens to aufstehen? STEP 5: in sentence 5, where is auf? STEP 6: in sentences 6 and 7, do the prefixes ver- and be- split off? STEP 7: in sentence 2, the verb is fährt. Which vowel change do you notice?",
+        "tabela": [],
+        "tag": "Discover"
+      },
+      {
+        "tipo": "palavras",
+        "min": 7,
+        "itens": [
+          {
+            "ru": "der Morgen",
+            "translit": "dehr MOR-gen",
+            "pt": "morning",
+            "en": "morning",
+            "audio": "der Morgen"
+          },
+          {
+            "ru": "der Mittag",
+            "translit": "dehr MIT-tahk",
+            "pt": "noon, midday",
+            "en": "noon",
+            "audio": "der Mittag"
+          },
+          {
+            "ru": "der Nachmittag",
+            "translit": "dehr NAHKH-mit-tahk",
+            "pt": "afternoon",
+            "en": "afternoon",
+            "audio": "der Nachmittag"
+          },
+          {
+            "ru": "der Abend",
+            "translit": "dehr AH-bent",
+            "pt": "evening",
+            "en": "evening",
+            "audio": "der Abend"
+          },
+          {
+            "ru": "die Nacht",
+            "translit": "dee NAHKHT",
+            "pt": "night",
+            "en": "night",
+            "audio": "die Nacht"
+          },
+          {
+            "ru": "morgens",
+            "translit": "MOR-gens",
+            "pt": "in the mornings (always)",
+            "en": "in the morning",
+            "audio": "morgens"
+          },
+          {
+            "ru": "abends",
+            "translit": "AH-bents",
+            "pt": "in the evenings (always)",
+            "en": "in the evening",
+            "audio": "abends"
+          },
+          {
+            "ru": "jeden Tag",
+            "translit": "YEH-den TAHK",
+            "pt": "every day",
+            "en": "every day",
+            "audio": "jeden Tag"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Verbs with a → ä, and how to say when",
+        "explicacao": "Some verbs change «a» to «ä» with «du» and «er / sie / es»: fahren (du fährst), schlafen (du schläfst), laufen (du läufst), waschen (du wäschst), tragen (du trägst). To say WHEN: «um» + clock time (um sieben Uhr — at seven), «am» + part of the day (am Morgen, am Mittag, am Abend — but «in der Nacht», at night), «von … bis» (von neun bis siebzehn Uhr — from nine to five), «jeden Tag» (every day) and the adverbs «morgens, mittags, abends, nachts» for things you do regularly — like English \"mornings\", \"evenings\".",
+        "tabelas": [
+          {
+            "titulo": "a → ä with «du» and «er»",
+            "linhas": [
+              {
+                "pronome": "ich",
+                "fahren": "fahre",
+                "schlafen": "schlafe",
+                "laufen": "laufe"
+              },
+              {
+                "pronome": "du",
+                "fahren": "fährst",
+                "schlafen": "schläfst",
+                "laufen": "läufst"
+              },
+              {
+                "pronome": "er / sie / es",
+                "fahren": "fährt",
+                "schlafen": "schläft",
+                "laufen": "läuft"
+              },
+              {
+                "pronome": "wir",
+                "fahren": "fahren",
+                "schlafen": "schlafen",
+                "laufen": "laufen"
+              },
+              {
+                "pronome": "ihr",
+                "fahren": "fahrt",
+                "schlafen": "schlaft",
+                "laufen": "lauft"
+              },
+              {
+                "pronome": "sie / Sie",
+                "fahren": "fahren",
+                "schlafen": "schlafen",
+                "laufen": "laufen"
+              }
+            ]
+          },
+          {
+            "titulo": "How to say when",
+            "linhas": [
+              {
+                "forma": "um + clock time",
+                "exemplo": "Ich stehe um sieben Uhr auf."
+              },
+              {
+                "forma": "am + part of the day",
+                "exemplo": "Am Abend sehe ich fern."
+              },
+              {
+                "forma": "in der Nacht",
+                "exemplo": "In der Nacht schlafe ich."
+              },
+              {
+                "forma": "von … bis",
+                "exemplo": "Ich arbeite von neun bis siebzehn Uhr."
+              },
+              {
+                "forma": "jeden Tag",
+                "exemplo": "Ich lerne jeden Tag Deutsch."
+              },
+              {
+                "forma": "morgens, abends",
+                "exemplo": "Morgens trinke ich Kaffee."
+              }
+            ]
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Du fahrst nach Berlin.",
+            "certo": "Du fährst nach Berlin.",
+            "motivo": "With «du», «fahren» becomes «fährst»."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 4,
+        "enunciado": "Say: «Morgens trinke ich Kaffee. Um acht Uhr fahre ich zur Arbeit. Abends sehe ich fern. In der Nacht schlafe ich.»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Write 4 sentences with a separable verb."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-008.json",
+  "responsavel": null
+}
