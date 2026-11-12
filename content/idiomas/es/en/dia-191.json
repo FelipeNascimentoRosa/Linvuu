@@ -1,0 +1,211 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 191,
+  "fase": 20,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Indirect speech: Questions and requests in indirect speech",
+  "objetivo": "Lesson 48, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 48,
+    "titulo": "Indirect speech",
+    "objetivo": "Report what someone said, asked or requested: shift the tenses (present → imperfecto, future → conditional, pretérito → pluscuamperfecto, imperative → imperfecto de subjuntivo), the time and place markers (hoy → ese día, aquí → allí) and the pronouns, and turn questions and requests into reported speech.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Questions and requests in indirect speech",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "preguntar si",
+            "translit": "",
+            "pt": "to ask whether / if",
+            "en": "",
+            "audio": "preguntar si"
+          },
+          {
+            "ru": "pedir que",
+            "translit": "",
+            "pt": "to ask (someone) to",
+            "en": "",
+            "audio": "pedir que"
+          },
+          {
+            "ru": "ordenar que",
+            "translit": "",
+            "pt": "to order (someone) to",
+            "en": "",
+            "audio": "ordenar que"
+          },
+          {
+            "ru": "aconsejar que",
+            "translit": "",
+            "pt": "to advise (someone) to",
+            "en": "",
+            "audio": "aconsejar que"
+          },
+          {
+            "ru": "invitar a",
+            "translit": "",
+            "pt": "to invite to",
+            "en": "",
+            "audio": "invitar a"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Preguntó si venía, pidió que viniera",
+        "explicacao": "STEP 1: English \"ask\" is two Spanish verbs. Asking a QUESTION is «preguntar»; asking FOR something or asking someone TO DO something is «pedir». A yes/no question becomes «si» (if / whether): «¿Vienes?» → «Me preguntó si venía» (She asked if I was coming). No «que» before it: «preguntó si», not «preguntó que si». STEP 2: a question with a question word keeps it, with its accent, but without «¿ ?»: «¿Dónde vives?» → «Me preguntó dónde vivía» (She asked where I lived). «¿Qué quieres?» → «Me preguntó qué quería». STEP 3: the verb of the question follows the same tense changes as in session 1. STEP 4: requests and commands become «que» + imperfecto de subjuntivo. English uses an infinitive here — \"She told me TO SIT down\", \"He asked me NOT TO TALK\" — Spanish can't: «Siéntate» → «Me pidió que me sentara»; «No hables» → «Me pidió que no hablara». STEP 5: see the difference between informing and ordering: «Me dijo que venía» (He told me he was coming — information) and «Me dijo que viniera» (He told me to come — an order). The mood tells them apart. STEP 6: with «invitar», use «a» + infinitive or «a que» + subjunctive: «Me invitó a cenar», «Me invitó a que cenara con ella». STEP 7: in indirect questions with a question word, the subject usually goes after the verb: «Preguntó cuándo llegaba el tren» (She asked when the train was arriving).",
+        "comparacao": "English \"ask\" splits in two: «preguntar» (ask a question: «me preguntó si venía») and «pedir» (ask someone to do something: «me pidió que viniera»). And English \"She told me TO COME\" uses an infinitive; Spanish needs «que» + subjunctive: «Me dijo que viniera». Compare «Me dijo que venía» (He told me he was coming).",
+        "tabela": [
+          {
+            "tipo": "yes/no question",
+            "direto": "¿Vienes?",
+            "indireto": "Me preguntó si venía."
+          },
+          {
+            "tipo": "question with a question word",
+            "direto": "¿Dónde vives?",
+            "indireto": "Me preguntó dónde vivía."
+          },
+          {
+            "tipo": "question in the past",
+            "direto": "¿Qué has hecho?",
+            "indireto": "Me preguntó qué había hecho."
+          },
+          {
+            "tipo": "order or request",
+            "direto": "Siéntate.",
+            "indireto": "Me pidió que me sentara."
+          },
+          {
+            "tipo": "negative order",
+            "direto": "No hables.",
+            "indireto": "Me pidió que no hablara."
+          },
+          {
+            "tipo": "advice",
+            "direto": "Descansa.",
+            "indireto": "Me aconsejó que descansara."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Me preguntó donde vivía.",
+            "certo": "Me preguntó dónde vivía.",
+            "motivo": "The question word keeps its accent in reported speech."
+          },
+          {
+            "errado": "Me preguntó que si vivía en Madrid.",
+            "certo": "Me preguntó si vivía en Madrid.",
+            "motivo": "In standard Spanish, «que» isn't written before «si»."
+          },
+          {
+            "errado": "Me pidió que me siento.",
+            "certo": "Me pidió que me sentara.",
+            "motivo": "A request in the past takes the imperfecto de subjuntivo (English \"asked me TO sit down\")."
+          },
+          {
+            "errado": "Me dijo que vengo. (when it was an order)",
+            "certo": "Me dijo que viniera.",
+            "motivo": "For an order or request, use the subjunctive, not the indicative («Me dijo que viniera» = he told me to come)."
+          }
+        ],
+        "tag": "Indirect speech"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "Lo que dijo la jefa / What the boss said",
+        "contexto": "Lucía tells Pablo what her boss said to her at yesterday's meeting and what she answered.",
+        "linhas": [
+          {
+            "personagem": "Pablo",
+            "ru": "— ¿Qué te dijo la jefa en la reunión de ayer?",
+            "pt": "— What did the boss say to you at yesterday's meeting?",
+            "audio": "¿Qué te dijo la jefa en la reunión de ayer?",
+            "rotulo": "Pablo"
+          },
+          {
+            "personagem": "Lucía",
+            "ru": "— Me dijo que estaba muy contenta con mi trabajo y que quería hablar conmigo hoy.",
+            "pt": "— She said she was very happy with my work and that she wanted to talk to me today.",
+            "audio": "Me dijo que estaba muy contenta con mi trabajo y que quería hablar conmigo hoy.",
+            "rotulo": "Lucía"
+          },
+          {
+            "personagem": "Pablo",
+            "ru": "— ¿Y te explicó por qué?",
+            "pt": "— And did she explain why?",
+            "audio": "¿Y te explicó por qué?",
+            "rotulo": "Pablo"
+          },
+          {
+            "personagem": "Lucía",
+            "ru": "— Me comentó que iban a abrir una oficina nueva en Valencia y me preguntó si me gustaría dirigirla.",
+            "pt": "— She mentioned they were going to open a new office in Valencia and asked if I'd like to run it.",
+            "audio": "Me comentó que iban a abrir una oficina nueva en Valencia y me preguntó si me gustaría dirigirla.",
+            "rotulo": "Lucía"
+          },
+          {
+            "personagem": "Pablo",
+            "ru": "— ¡Qué bien! ¿Y qué le respondiste?",
+            "pt": "— That's great! And what did you say?",
+            "audio": "¡Qué bien! ¿Y qué le respondiste?",
+            "rotulo": "Pablo"
+          },
+          {
+            "personagem": "Lucía",
+            "ru": "— Le dije que lo pensaría y que le daría una respuesta al día siguiente. Esta mañana me preguntó si ya había decidido.",
+            "pt": "— I said I'd think about it and give her an answer the next day. This morning she asked if I'd decided yet.",
+            "audio": "Le dije que lo pensaría y que le daría una respuesta al día siguiente. Esta mañana me preguntó si ya había decidido.",
+            "rotulo": "Lucía"
+          },
+          {
+            "personagem": "Pablo",
+            "ru": "— ¿Y?",
+            "pt": "— And?",
+            "audio": "¿Y?",
+            "rotulo": "Pablo"
+          },
+          {
+            "personagem": "Lucía",
+            "ru": "— Le contesté que aceptaba, pero que necesitaba un mes para organizarme. Me pidió que le enviara un correo con las condiciones.",
+            "pt": "— I said yes, but that I needed a month to get organised. She asked me to send her an email with the conditions.",
+            "audio": "Le contesté que aceptaba, pero que necesitaba un mes para organizarme. Me pidió que le enviara un correo con las condiciones.",
+            "rotulo": "Lucía"
+          },
+          {
+            "personagem": "Pablo",
+            "ru": "— Te han ofrecido un buen puesto. ¡Ojalá me lo hubieran ofrecido a mí!",
+            "pt": "— They've offered you a great position. I wish they'd offered it to me!",
+            "audio": "Te han ofrecido un buen puesto. ¡Ojalá me lo hubieran ofrecido a mí!",
+            "rotulo": "Pablo"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Report out loud a question and a request someone made to you recently: «Me preguntó si…», «Me pidió que…»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Put into reported speech: «Estoy aquí» (Dijo que…), «Vendré mañana» (Dijo que…), «Ayer comí en casa» (Dijo que…)."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-048.json",
+  "responsavel": null
+}

@@ -1,0 +1,189 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 189,
+  "fase": 19,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Indirect speech: Verb tenses in indirect speech",
+  "objetivo": "Lesson 48, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 48,
+    "titulo": "Indirect speech",
+    "objetivo": "Report what someone said, asked or requested: shift the tenses (present → imperfecto, future → conditional, pretérito → pluscuamperfecto, imperative → imperfecto de subjuntivo), the time and place markers (hoy → ese día, aquí → allí) and the pronouns, and turn questions and requests into reported speech.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Verb tenses in indirect speech",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "decir que",
+            "translit": "",
+            "pt": "to say that",
+            "en": "",
+            "audio": "decir que"
+          },
+          {
+            "ru": "preguntar si",
+            "translit": "",
+            "pt": "to ask whether / if",
+            "en": "",
+            "audio": "preguntar si"
+          },
+          {
+            "ru": "contar que",
+            "translit": "",
+            "pt": "to tell (that)",
+            "en": "",
+            "audio": "contar que"
+          },
+          {
+            "ru": "explicar que",
+            "translit": "",
+            "pt": "to explain that",
+            "en": "",
+            "audio": "explicar que"
+          },
+          {
+            "ru": "comentar que",
+            "translit": "",
+            "pt": "to mention that, to remark",
+            "en": "",
+            "audio": "comentar que"
+          },
+          {
+            "ru": "responder que",
+            "translit": "",
+            "pt": "to reply that",
+            "en": "",
+            "audio": "responder que"
+          },
+          {
+            "ru": "avisar de que",
+            "translit": "",
+            "pt": "to let know, to warn that",
+            "en": "",
+            "audio": "avisar de que"
+          },
+          {
+            "ru": "añadir que",
+            "translit": "",
+            "pt": "to add that",
+            "en": "",
+            "audio": "añadir que"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Dijo que trabajaba en Madrid",
+        "explicacao": "STEP 1: direct speech gives someone's exact words, in quotation marks or with a dash: Ana dijo: «Trabajo en Madrid». Reported speech tells what she said, without quotation marks: «Ana dijo que trabajaba en Madrid» (Ana said she worked in Madrid). STEP 2: «que» joins the verb of saying to the reported sentence. English can drop \"that\" (\"she said she worked…\"); Spanish never drops «que». STEP 3: if the verb of saying is in the present or the pretérito perfecto («dice que», «ha dicho que»), the reported verb doesn't change: «Ana dice que trabaja en Madrid». STEP 4: if the verb of saying is in the past («dijo que», «me contó que», «preguntó»), the tenses shift back — exactly like English backshift: present → imperfecto (\"works\" → \"worked\"); pretérito perfecto and indefinido → pluscuamperfecto (\"has finished\" / \"finished\" → \"had finished\"); future → conditional (\"will\" → \"would\"); imperative → imperfecto de subjuntivo. STEP 5: the imperfecto, the pluscuamperfecto and the conditional don't change: «Vivía en Lima» stays «vivía». STEP 6: if the fact is still true, or the speaker wants to stress it, the original tense can stay: «Dijo que Madrid es la capital». But when in doubt, shift back. STEP 7: a present subjunctive shifts to the imperfecto de subjuntivo: «Quiero que vengas» becomes «Dijo que quería que viniera». STEP 8: more precise verbs than «decir» introduce reported speech: «contar, explicar, comentar, responder, añadir, avisar, afirmar, negar». Use them for variety.",
+        "comparacao": "Spanish backshifts like English: \"I'm tired\" → \"She said she WAS tired\" = «Dijo que ESTABA cansada»; \"I'll arrive at eight\" → \"He said he WOULD arrive\" = «Dijo que LLEGARÍA». The differences: «que» can never be dropped, and question words keep their accent in reported questions («dónde», «qué»).",
+        "exemplos": [
+          {
+            "ru": "Marta dijo que estaba cansada.",
+            "pt": "Marta said she was tired."
+          },
+          {
+            "ru": "Mi jefe me contó que había cambiado de oficina.",
+            "pt": "My boss told me he had moved offices."
+          },
+          {
+            "ru": "Nos explicó que llegaría tarde.",
+            "pt": "He explained to us that he would be late."
+          },
+          {
+            "ru": "Ha dicho que vendrá el viernes.",
+            "pt": "He said he's coming on Friday."
+          }
+        ],
+        "tabela": [
+          {
+            "direto": "«Trabajo en Madrid.»",
+            "indireto": "Dijo que trabajaba en Madrid.",
+            "mudanca": "present → imperfecto"
+          },
+          {
+            "direto": "«He terminado el informe.»",
+            "indireto": "Dijo que había terminado el informe.",
+            "mudanca": "perfecto → pluscuamperfecto"
+          },
+          {
+            "direto": "«Terminé el informe.»",
+            "indireto": "Dijo que había terminado el informe.",
+            "mudanca": "indefinido → pluscuamperfecto"
+          },
+          {
+            "direto": "«Vivía en Lima.»",
+            "indireto": "Dijo que vivía en Lima.",
+            "mudanca": "imperfecto doesn't change"
+          },
+          {
+            "direto": "«Llegaré a las ocho.»",
+            "indireto": "Dijo que llegaría a las ocho.",
+            "mudanca": "future → conditional"
+          },
+          {
+            "direto": "«Habré terminado a las ocho.»",
+            "indireto": "Dijo que habría terminado a las ocho.",
+            "mudanca": "futuro perfecto → condicional compuesto"
+          },
+          {
+            "direto": "«Cierra la puerta.»",
+            "indireto": "Pidió que cerrara la puerta.",
+            "mudanca": "imperative → imperfecto de subjuntivo"
+          },
+          {
+            "direto": "«Quiero que vengas.»",
+            "indireto": "Dijo que quería que viniera.",
+            "mudanca": "present → imperfecto; subjunctive → imperfecto de subjuntivo"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Marta dijo que está cansada.",
+            "certo": "Marta dijo que estaba cansada.",
+            "motivo": "When reporting something she said that's now past, the expected form is the backshift (keep the present only if the fact is still true)."
+          },
+          {
+            "errado": "Dijo que llegará a las ocho.",
+            "certo": "Dijo que llegaría a las ocho.",
+            "motivo": "The future becomes the conditional (\"will\" → \"would\")."
+          },
+          {
+            "errado": "Dijo que ha terminado el informe.",
+            "certo": "Dijo que había terminado el informe.",
+            "motivo": "The pretérito perfecto becomes the pluscuamperfecto (\"has finished\" → \"had finished\")."
+          },
+          {
+            "errado": "Me pidió que cerraba la puerta.",
+            "certo": "Me pidió que cerrara la puerta.",
+            "motivo": "A request takes the imperfecto de subjuntivo."
+          }
+        ],
+        "tag": "Indirect speech"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Think of three things someone told you this week. Report each one out loud: «Mi amigo me dijo que…», «Mi madre me contó que…», «Mi jefe me explicó que…»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say the imperfecto of «trabajar», the conditional of «llegar» and the pluscuamperfecto of «terminar» (yo): trabajaba, llegaría, había terminado. Then say in English one thing someone told you today."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-048.json",
+  "responsavel": null
+}
