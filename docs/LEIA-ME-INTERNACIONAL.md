@@ -26,7 +26,7 @@ Medido no repositório em 11/11/2026 (`ls content/idiomas/<id>/en`). Confira ant
 | Russo `ru` | 312/312 | completo, indexável | travado (curado à mão) |
 | Francês `fr` | 248/248 | completo, indexável | travado (curado à mão) |
 | Português p/ estrangeiros `br` | 248/248 (escrito em inglês) | completo, indexável | travado |
-| Espanhol `es` | 220/248 (aulas 1–55) | parcial: nota de cobertura, fora do sitemap | travado o que existe |
+| Espanhol `es` | 224/248 (aulas 1–56) | parcial: nota de cobertura, fora do sitemap | travado o que existe |
 | Alemão `de` | 288/288 | completo, indexável (desde 12/11) | travado |
 | Italiano `it` | 0/248 | parcial: nota de cobertura, fora do sitemap | — |
 
