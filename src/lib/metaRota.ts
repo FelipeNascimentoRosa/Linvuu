@@ -419,7 +419,8 @@ function menuPreRender(loc: Locale): string {
 export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): string {
   if (m.status !== 200 || m.semIndice) return '';
   const tx = TX[loc.codigo];
-  const a = (href: string, texto: string) => `<a href="${esc(caminhoEm(loc.codigo, href))}">${esc(texto)}</a>`;
+  // /livros só existe no .com.br: no .com o link vai direto para lá (sem o 301 entre domínios).
+  const a = (href: string, texto: string) => `<a href="${esc(href === '/livros' && loc.codigo === 'en' ? `${SITE_BR}/livros` : caminhoEm(loc.codigo, href))}">${esc(texto)}</a>`;
   const li = (itens: string[]) => (itens.length ? `<ul>${itens.map((i) => `<li>${i}</li>`).join('')}</ul>` : '');
   const cabeca = (t: string, desc?: string) => `<h1>${esc(t)}</h1>${desc ? `<p>${esc(desc)}</p>` : ''}`;
   const nome = (c: CursoMeta) => ({ ...c, ...(c.i18n?.[loc.codigo] ?? {}) });
