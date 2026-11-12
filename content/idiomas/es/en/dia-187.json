@@ -1,0 +1,187 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 187,
+  "fase": 19,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Hypotheses with «si»: Si + pluperfect subjunctive: what would have been",
+  "objetivo": "Lesson 47, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 47,
+    "titulo": "Hypotheses with «si»",
+    "objetivo": "Tell apart the three kinds of «si» sentences: a possible condition (si + present), an unlikely or unreal hypothesis about now (si + imperfecto de subjuntivo → conditional) and an impossible hypothesis about the past (si + pluscuamperfecto de subjuntivo → condicional compuesto), and give advice with «yo en tu lugar».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Si + pluperfect subjunctive: what would have been",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "arrepentirse de",
+            "translit": "",
+            "pt": "to regret",
+            "en": "",
+            "audio": "arrepentirse de"
+          },
+          {
+            "ru": "perder la oportunidad",
+            "translit": "",
+            "pt": "to miss the chance",
+            "en": "",
+            "audio": "perder la oportunidad"
+          },
+          {
+            "ru": "tomar una decisión",
+            "translit": "",
+            "pt": "to make a decision",
+            "en": "",
+            "audio": "tomar una decisión"
+          },
+          {
+            "ru": "aprovechar",
+            "translit": "",
+            "pt": "to make the most of",
+            "en": "",
+            "audio": "aprovechar"
+          },
+          {
+            "ru": "si lo hubiera sabido",
+            "translit": "",
+            "pt": "if I had known",
+            "en": "",
+            "audio": "si lo hubiera sabido"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Si hubiera estudiado, habría aprobado",
+        "explicacao": "STEP 1: to talk about what didn't happen in the past — the English third conditional, \"If I had studied, I would have passed\" — you need two pieces. STEP 2: the first piece is the pluscuamperfecto de subjuntivo, English \"had + past participle\" in the «si» part. It's formed with the imperfecto de subjuntivo of «haber» (hubiera, hubieras, hubiera, hubiéramos, hubierais, hubieran) plus the participle: «hubiera estudiado», «hubiera comido». The -se set also exists: «hubiese estudiado». STEP 3: the second piece is the condicional compuesto (lesson 41), English \"would have\": «habría» + participle, as in «habría aprobado». STEP 4: put them together: «Si hubiera estudiado, habría aprobado» (I didn't study, I didn't pass). In speech, the main part can also use «hubiera» instead of «habría»: «Si hubiera estudiado, hubiera aprobado». Both are accepted. STEP 5: the most famous English-speaker mistake is the colloquial \"if I would have known\": in Spanish that becomes «si habría sabido», which is wrong. The «si» part is always «hubiera»: «Si lo hubiera sabido». STEP 6: the irregular participles are the same ones you use in the pretérito perfecto: hecho, dicho, puesto, visto, escrito, vuelto, abierto, roto, muerto, cubierto. STEP 7: you can mix past and present, like an English mixed conditional: «Si hubiera aceptado ese trabajo, ahora viviría en Barcelona» (If I had taken that job, I would be living in Barcelona now). STEP 8: regrets use «ojalá» + pluscuamperfecto — English \"I wish I had\": «Ojalá hubiera estudiado más». Unreal comparisons in the past use «como si» + pluscuamperfecto: «Me miró como si no me hubiera visto nunca» (as if he had never seen me).",
+        "comparacao": "English third conditional: \"If I had studied, I would have passed\" = «Si hubiera estudiado, habría aprobado»: \"had\" → «hubiera», \"would have\" → «habría». Never «si habría sabido» (the \"if I would have known\" of casual English), and never «si había estudiado» (that's the indicative \"had\").",
+        "exemplos": [
+          {
+            "ru": "Si hubiera sabido la hora, habría llegado a tiempo.",
+            "pt": "If I had known the time, I would have arrived on time."
+          },
+          {
+            "ru": "Si no hubiéramos perdido el tren, estaríamos ya en Sevilla.",
+            "pt": "If we hadn't missed the train, we'd be in Seville by now."
+          },
+          {
+            "ru": "Ojalá hubieras venido a la fiesta.",
+            "pt": "I wish you had come to the party."
+          },
+          {
+            "ru": "Si me lo hubieran dicho antes, habría cambiado de plan.",
+            "pt": "If they'd told me sooner, I would have changed my plans."
+          }
+        ],
+        "tabela": [
+          {
+            "pessoa": "yo",
+            "pluscuamperfecto_subj": "hubiera estudiado",
+            "condicional_compuesto": "habría estudiado"
+          },
+          {
+            "pessoa": "tú",
+            "pluscuamperfecto_subj": "hubieras estudiado",
+            "condicional_compuesto": "habrías estudiado"
+          },
+          {
+            "pessoa": "él, ella, usted",
+            "pluscuamperfecto_subj": "hubiera estudiado",
+            "condicional_compuesto": "habría estudiado"
+          },
+          {
+            "pessoa": "nosotros",
+            "pluscuamperfecto_subj": "hubiéramos estudiado",
+            "condicional_compuesto": "habríamos estudiado"
+          },
+          {
+            "pessoa": "vosotros",
+            "pluscuamperfecto_subj": "hubierais estudiado",
+            "condicional_compuesto": "habríais estudiado"
+          },
+          {
+            "pessoa": "ellos, ellas, ustedes",
+            "pluscuamperfecto_subj": "hubieran estudiado",
+            "condicional_compuesto": "habrían estudiado"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Si habría estudiado, habría aprobado.",
+            "certo": "Si hubiera estudiado, habría aprobado.",
+            "motivo": "In the «si» part, use the pluscuamperfecto de subjuntivo, never the condicional compuesto (no \"if I would have studied\")."
+          },
+          {
+            "errado": "Si había estudiado, habría aprobado.",
+            "certo": "Si hubiera estudiado, habría aprobado.",
+            "motivo": "«Había estudiado» is indicative; a hypothesis needs «hubiera estudiado»."
+          },
+          {
+            "errado": "Si hubiera estudiado, aprobaría ayer.",
+            "certo": "Si hubiera estudiado, habría aprobado ayer.",
+            "motivo": "For a past result, the conditional must be compound (\"would have passed\")."
+          },
+          {
+            "errado": "Si hubiera hacido, habría ido.",
+            "certo": "Si hubiera hecho, habría ido.",
+            "motivo": "«Hacer» has the irregular participle «hecho»."
+          }
+        ],
+        "tag": "Hypotheses"
+      },
+      {
+        "tipo": "texto",
+        "min": 8,
+        "titulo": "Otras decisiones / Other decisions",
+        "ru": "A veces pienso en qué habría pasado si hubiera tomado otras decisiones. Si hubiera aceptado el trabajo de Barcelona, ahora viviría cerca del mar, pero probablemente no habría conocido a mi pareja. Si no hubiera dejado la música a los dieciocho años, tal vez tocaría en una orquesta. Mi hermana dice que, si yo hubiera estudiado derecho como querían mis padres, ahora ganaría más dinero. Puede ser, pero no sería tan feliz. Si pudiera cambiar una sola cosa, aprendería inglés antes. Si lo hubiera hecho de joven, hoy no tendría tanto miedo de hablar. Pero, si me quedo pensando en el pasado, no avanzo.",
+        "pt": "Sometimes I think about what would have happened if I'd made other decisions. If I had taken the job in Barcelona, I'd be living near the sea now, but I probably wouldn't have met my partner. If I hadn't given up music at eighteen, maybe I'd be playing in an orchestra. My sister says that if I had studied law, as my parents wanted, I'd be earning more money now. Maybe, but I wouldn't be as happy. If I could change just one thing, I'd learn English sooner. If I'd done it when I was young, I wouldn't be so afraid of speaking it today. But if I keep thinking about the past, I don't move forward.",
+        "perguntas": [
+          {
+            "pergunta": "¿Qué habría pasado si hubiera aceptado el trabajo de Barcelona?",
+            "resposta": "Viviría cerca del mar, pero probablemente no habría conocido a su pareja."
+          },
+          {
+            "pergunta": "¿A qué edad dejó la música?",
+            "resposta": "A los dieciocho años."
+          },
+          {
+            "pergunta": "¿Qué estudios querían sus padres?",
+            "resposta": "Derecho."
+          },
+          {
+            "pergunta": "¿Qué cambiaría?",
+            "resposta": "Aprendería inglés antes."
+          },
+          {
+            "pergunta": "¿Por qué dice que no avanza?",
+            "resposta": "Porque se queda pensando en el pasado."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Write and say out loud five sentences about past decisions: «Si hubiera… , habría…». Include one that mixes past and present: «Si hubiera estudiado…, ahora…»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say three sentences with the conditional and the imperfecto de subjuntivo: «Si tuviera…, yo…». Then say the pretérito perfecto of «hacer», «decir» and «ver»: he hecho, he dicho, he visto."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-047.json",
+  "responsavel": null
+}

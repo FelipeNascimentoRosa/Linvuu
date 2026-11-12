@@ -1,0 +1,179 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 147,
+  "fase": 15,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Home, renting and neighbours: With the landlady and the neighbours",
+  "objetivo": "Lesson 37, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 37,
+    "titulo": "Home, renting and neighbours",
+    "objetivo": "Describe your home and its floors (rooms, ordinal numbers, prepositions of place), look for and rent a flat (alquiler, fianza, gastos, the hundreds) and talk politely to the landlady and the neighbours, reporting faults and asking for repairs.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "With the landlady and the neighbours",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "la avería",
+            "translit": "lah ah-beh-REE-ah",
+            "pt": "the fault, the breakdown",
+            "en": "",
+            "audio": "la avería"
+          },
+          {
+            "ru": "estropeado, roto",
+            "translit": "es-troh-peh-AH-doh, RROH-toh",
+            "pt": "broken, not working",
+            "en": "",
+            "audio": "estropeado, roto"
+          },
+          {
+            "ru": "el grifo",
+            "translit": "el GREE-foh",
+            "pt": "the tap, the faucet",
+            "en": "",
+            "audio": "el grifo"
+          },
+          {
+            "ru": "el ruido",
+            "translit": "el rroo-EE-doh",
+            "pt": "the noise",
+            "en": "",
+            "audio": "el ruido"
+          },
+          {
+            "ru": "el vecino de arriba",
+            "translit": "",
+            "pt": "the upstairs neighbour",
+            "en": "",
+            "audio": "el vecino de arriba"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Reporting a fault and asking for quiet politely",
+        "explicacao": "STEP 1: for a fault, say what isn't working: «No funciona la calefacción» (the heating isn't working), «No hay agua caliente», «La lavadora está estropeada» (the washing machine is broken), «El grifo gotea» or «El grifo está goteando» (lesson 30: the tap is dripping). Something that has just broken: «Se ha estropeado el ascensor». STEP 2: to ask for a repair: «¿Podría venir alguien a arreglarlo?», «¿Podría arreglar el grifo esta semana?» (polite conditional, lesson 29). STEP 3: to ask a neighbour a favour, use «¿Le importa…?» or «¿Le molesta…?» — exactly like English \"Do you mind…?\": «¿Le importa bajar un poco la música?» (Would you mind turning the music down a bit?), «¿Le molesta si abro la ventana?» (Do you mind if I open the window?). As in English, answering «No» gives permission: «No, claro que no» = \"No, not at all, go ahead\". Note: English \"mind + -ING\" becomes «importar» + INFINITIVE («bajar»). STEP 4: to say what you've already reported, use the two pronouns from lesson 25: «¿Le ha dicho la avería a la casera?» «Sí, se lo dije ayer.» («le lo» becomes «se lo»). STEP 5: deadlines: «hasta el viernes» (until / by Friday), «dentro de dos días» (in two days' time). STEP 6: to thank politely: «Muchas gracias por su ayuda», «Se lo agradezco mucho» (I really appreciate it). STEP 7: «arreglar» means to fix, but also to tidy: «arreglar la habitación» is to tidy the room. «Molestar» means to bother, never \"to molest\".",
+        "comparacao": "«¿Le importa…?» is \"Do you mind…?\", and as in English, «No» means \"go ahead\". The differences: the infinitive replaces English \"-ing\" («¿Le importa bajar la música?»), «le lo» becomes «se lo», and «molestar» is just \"to bother\".",
+        "erros": [
+          {
+            "errado": "La lavadora es estropeada.",
+            "certo": "La lavadora está estropeada.",
+            "motivo": "Being broken is a state, so it takes «estar»."
+          },
+          {
+            "errado": "No funciona el calefacción.",
+            "certo": "No funciona la calefacción.",
+            "motivo": "«Calefacción» is feminine."
+          },
+          {
+            "errado": "Ya le lo dije.",
+            "certo": "Ya se lo dije.",
+            "motivo": "Two third-person pronouns: «le lo» becomes «se lo»."
+          },
+          {
+            "errado": "¿Puedes bajar la música?",
+            "certo": "¿Podría bajar un poco la música, por favor?",
+            "motivo": "With a neighbour you barely know, prefer the polite request."
+          }
+        ],
+        "tag": "Home"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "Una avería / A fault",
+        "contexto": "Diego calls his landlady about two problems in the flat.",
+        "linhas": [
+          {
+            "personagem": "Diego",
+            "ru": "— Buenos días, señora. Le llamo porque hay una avería en el piso.",
+            "pt": "— Good morning. I'm calling because there's a fault in the flat.",
+            "audio": "Buenos días, señora. Le llamo porque hay una avería en el piso.",
+            "rotulo": "Diego"
+          },
+          {
+            "personagem": "La casera",
+            "ru": "— Buenos días, Diego. ¿Qué ha pasado?",
+            "pt": "— Good morning, Diego. What's happened?",
+            "audio": "Buenos días, Diego. ¿Qué ha pasado?",
+            "rotulo": "La casera"
+          },
+          {
+            "personagem": "Diego",
+            "ru": "— Desde ayer no funciona la calefacción y el grifo de la cocina gotea.",
+            "pt": "— Since yesterday the heating hasn't been working and the kitchen tap is dripping.",
+            "audio": "Desde ayer no funciona la calefacción y el grifo de la cocina gotea.",
+            "rotulo": "Diego"
+          },
+          {
+            "personagem": "La casera",
+            "ru": "— Vaya, lo siento. ¿Hay agua caliente en el baño?",
+            "pt": "— Oh dear, I'm sorry. Is there hot water in the bathroom?",
+            "audio": "Vaya, lo siento. ¿Hay agua caliente en el baño?",
+            "rotulo": "La casera"
+          },
+          {
+            "personagem": "Diego",
+            "ru": "— Sí, agua caliente sí hay. Solo falla la calefacción.",
+            "pt": "— Yes, there's hot water. It's just the heating.",
+            "audio": "Sí, agua caliente sí hay. Solo falla la calefacción.",
+            "rotulo": "Diego"
+          },
+          {
+            "personagem": "La casera",
+            "ru": "— De acuerdo. Mañana por la mañana va a pasar un técnico. ¿Estará usted en casa?",
+            "pt": "— All right. Tomorrow morning a technician will come by. Will you be at home?",
+            "audio": "De acuerdo. Mañana por la mañana va a pasar un técnico. ¿Estará usted en casa?",
+            "rotulo": "La casera"
+          },
+          {
+            "personagem": "Diego",
+            "ru": "— Sí, estaré hasta las doce. Después tengo que ir a trabajar.",
+            "pt": "— Yes, I'll be in until twelve. After that I have to go to work.",
+            "audio": "Sí, estaré hasta las doce. Después tengo que ir a trabajar.",
+            "rotulo": "Diego"
+          },
+          {
+            "personagem": "La casera",
+            "ru": "— Perfecto. El técnico llegará antes de las doce. Si hay algún problema, me llama.",
+            "pt": "— Perfect. The technician will arrive before twelve. If there's any problem, call me.",
+            "audio": "Perfecto. El técnico llegará antes de las doce. Si hay algún problema, me llama.",
+            "rotulo": "La casera"
+          },
+          {
+            "personagem": "Diego",
+            "ru": "— Muchas gracias, señora. Hasta mañana.",
+            "pt": "— Thank you very much. See you tomorrow.",
+            "audio": "Muchas gracias, señora. Hasta mañana.",
+            "rotulo": "Diego"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Play Diego out loud, changing the fault: the lift, the washing machine, the air conditioning, and the time."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say out loud five questions you'd ask before renting a flat."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-037.json",
+  "responsavel": null
+}

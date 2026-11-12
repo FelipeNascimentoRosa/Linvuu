@@ -1,0 +1,199 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 175,
+  "fase": 18,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Subjunctive: time and purpose: Conditions and plans",
+  "objetivo": "Lesson 44, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 44,
+    "titulo": "Subjunctive: time and purpose",
+    "objetivo": "Use the present subjunctive after time conjunctions that refer to the future («cuando llegues», «en cuanto termine», «hasta que vuelva»), after purpose conjunctions («para que entiendas», «sin que lo sepa») and after conditions («a menos que», «con tal de que», «en caso de que»), and tell it apart from the indicative.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Conditions and plans",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "siempre que",
+            "translit": "",
+            "pt": "as long as, provided that",
+            "en": "",
+            "audio": "siempre que"
+          },
+          {
+            "ru": "con tal de que",
+            "translit": "",
+            "pt": "provided that",
+            "en": "",
+            "audio": "con tal de que"
+          },
+          {
+            "ru": "a menos que",
+            "translit": "",
+            "pt": "unless",
+            "en": "",
+            "audio": "a menos que"
+          },
+          {
+            "ru": "en caso de que",
+            "translit": "",
+            "pt": "in case",
+            "en": "",
+            "audio": "en caso de que"
+          },
+          {
+            "ru": "aunque",
+            "translit": "",
+            "pt": "although; even if",
+            "en": "",
+            "audio": "aunque"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Conditions and concessions",
+        "explicacao": "STEP 1: some conjunctions of condition always take the subjunctive, because they talk about something that hasn't happened or may not happen: «con tal de que, a menos que, a no ser que, en caso de que, siempre que (= provided that)». STEP 2: examples: «Iremos al lago a menos que llueva» (We'll go to the lake unless it rains), «Te presto el coche con tal de que lo cuides» (I'll lend you the car as long as you look after it), «Llévate el paraguas en caso de que llueva» (Take the umbrella in case it rains). English uses the plain present after \"unless\", \"in case\", \"as long as\" — Spanish uses the subjunctive. STEP 3: «siempre que» has two meanings. As a condition (provided that), it takes the subjunctive: «Puedes venir siempre que avises». Meaning \"whenever\" (habit), it takes the indicative: «Siempre que llego, me saluda». STEP 4: «aunque» changes meaning with the mood — and English uses two different words for it. With the indicative, it's a known fact: «Aunque llueve, saldremos» (ALTHOUGH it's raining, we'll go out). With the subjunctive, it's a hypothesis or something that doesn't matter: «Aunque llueva, saldremos» (EVEN IF it rains, we'll go out). STEP 5: sum it up: if you know it and state it, indicative; if it's possible, future or irrelevant, subjunctive. STEP 6: after these conjunctions with a different subject, the infinitive doesn't exist: «a menos que» needs a conjugated verb.",
+        "comparacao": "English \"unless it rains\", \"in case it rains\", \"as long as you look after it\" use the plain present; Spanish uses the subjunctive: «a menos que llueva», «en caso de que llueva», «con tal de que lo cuides». And English \"although\" / \"even if\" are one Spanish word, «aunque»: indicative for \"although\" (a fact), subjunctive for \"even if\" (a hypothesis).",
+        "tabela": [
+          {
+            "conjuncao": "a menos que, a no ser que",
+            "sentido": "unless",
+            "exemplo": "Iremos al lago a menos que llueva."
+          },
+          {
+            "conjuncao": "con tal de que",
+            "sentido": "provided that",
+            "exemplo": "Te lo presto con tal de que lo cuides."
+          },
+          {
+            "conjuncao": "en caso de que",
+            "sentido": "in case",
+            "exemplo": "Llévate un paraguas en caso de que llueva."
+          },
+          {
+            "conjuncao": "siempre que (condition)",
+            "sentido": "provided that",
+            "exemplo": "Puedes venir siempre que avises."
+          },
+          {
+            "conjuncao": "aunque + indicative",
+            "sentido": "although, a known fact",
+            "exemplo": "Aunque llueve, saldremos."
+          },
+          {
+            "conjuncao": "aunque + subjunctive",
+            "sentido": "even if, a hypothesis",
+            "exemplo": "Aunque llueva, saldremos."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Iremos al lago a menos que llueve.",
+            "certo": "Iremos al lago a menos que llueva.",
+            "motivo": "«A menos que» takes the subjunctive."
+          },
+          {
+            "errado": "Llévate un paraguas en caso de que necesitas.",
+            "certo": "Llévate un paraguas en caso de que lo necesites.",
+            "motivo": "«En caso de que» takes the subjunctive."
+          },
+          {
+            "errado": "Te lo presto con tal de que lo cuidas.",
+            "certo": "Te lo presto con tal de que lo cuides.",
+            "motivo": "«Con tal de que» takes the subjunctive."
+          }
+        ],
+        "tag": "Subjunctive"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "Planes para el sábado / Plans for Saturday",
+        "contexto": "Alba and Raúl make plans for Saturday. Pay attention to the conjunctions.",
+        "linhas": [
+          {
+            "personagem": "Alba",
+            "ru": "— ¿Qué hacemos el sábado?",
+            "pt": "— What shall we do on Saturday?",
+            "audio": "¿Qué hacemos el sábado?",
+            "rotulo": "Alba"
+          },
+          {
+            "personagem": "Raúl",
+            "ru": "— Cuando termine de trabajar, podemos ir al lago, siempre que no llueva.",
+            "pt": "— When I finish work, we can go to the lake, as long as it doesn't rain.",
+            "audio": "Cuando termine de trabajar, podemos ir al lago, siempre que no llueva.",
+            "rotulo": "Raúl"
+          },
+          {
+            "personagem": "Alba",
+            "ru": "— Vale. En caso de que llueva, ¿tienes un plan B?",
+            "pt": "— OK. In case it rains, have you got a plan B?",
+            "audio": "Vale. En caso de que llueva, ¿tienes un plan B?",
+            "rotulo": "Alba"
+          },
+          {
+            "personagem": "Raúl",
+            "ru": "— Sí, iremos al cine, a menos que prefieras quedarte en casa.",
+            "pt": "— Yes, we'll go to the cinema, unless you'd rather stay home.",
+            "audio": "Sí, iremos al cine, a menos que prefieras quedarte en casa.",
+            "rotulo": "Raúl"
+          },
+          {
+            "personagem": "Alba",
+            "ru": "— Prefiero salir. Te llamo en cuanto me levante, para que sepas la hora.",
+            "pt": "— I'd rather go out. I'll call you as soon as I get up, so you know the time.",
+            "audio": "Prefiero salir. Te llamo en cuanto me levante, para que sepas la hora.",
+            "rotulo": "Alba"
+          },
+          {
+            "personagem": "Raúl",
+            "ru": "— Perfecto. Yo llevo la comida, con tal de que tú traigas la bebida.",
+            "pt": "— Perfect. I'll bring the food, as long as you bring the drinks.",
+            "audio": "Perfecto. Yo llevo la comida, con tal de que tú traigas la bebida.",
+            "rotulo": "Raúl"
+          },
+          {
+            "personagem": "Alba",
+            "ru": "— Trato hecho. Y diré a Marta que venga, para que no se quede sola.",
+            "pt": "— Deal. And I'll tell Marta to come, so she isn't on her own.",
+            "audio": "Trato hecho. Y diré a Marta que venga, para que no se quede sola.",
+            "rotulo": "Alba"
+          },
+          {
+            "personagem": "Raúl",
+            "ru": "— Genial. Díselo cuando la veas el viernes.",
+            "pt": "— Great. Tell her when you see her on Friday.",
+            "audio": "Genial. Díselo cuando la veas el viernes.",
+            "rotulo": "Raúl"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Write four sentences with plans for the weekend and their conditions, using «cuando», «a menos que», «en caso de que» and «para que»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say out loud three sentences with «para que», two with «sin que» and one with «antes de que». Check that all the actions are future or not yet done."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-044.json",
+  "responsavel": null
+}

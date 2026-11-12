@@ -1,0 +1,505 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 168,
+  "fase": 17,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Present subjunctive (forms): Review and practice of lesson 42",
+  "objetivo": "Lesson 42, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 42,
+    "titulo": "Present subjunctive (forms)",
+    "objetivo": "Form the present subjunctive of regular verbs, of irregular verbs from the «yo» form («tenga», «haga», «diga»), of stem-changing verbs and of the six verbs with their own forms («sea», «esté», «vaya», «haya», «sepa», «dé»), with the spelling changes (busque, llegue, empiece).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 42",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Que ella coma",
+            "opcoes": [
+              "Que ella coma",
+              "Que ella come",
+              "Que ella comas"
+            ],
+            "gabarito": "Que ella coma",
+            "explicacao": "The «-a» ending in «coma» marks the subjunctive for -er verbs.",
+            "id": "es-042-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Que nosotros tengamos",
+            "opcoes": [
+              "Que nosotros tengamos",
+              "Que nosotros tenemos",
+              "Que nosotros tengáis"
+            ],
+            "gabarito": "Que nosotros tengamos",
+            "explicacao": "The «nosotros» form is «tengamos»; the vosotros form would be «tengáis».",
+            "id": "es-042-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Que vosotros vayáis",
+            "opcoes": [
+              "Que vosotros vayáis",
+              "Que vosotros vais",
+              "Que vosotros vayamos"
+            ],
+            "gabarito": "Que vosotros vayáis",
+            "explicacao": "«Vayáis» has the accent on the «á» and the ending «-áis».",
+            "id": "es-042-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Que tengas un buen viaje",
+            "respostaEsperada": "Que tengas un buen viaje",
+            "explicacao": "Write: Que tengas un buen viaje. «Tengas» is the «tú» form. (English \"Have a good trip!\")",
+            "id": "es-042-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "No me llames tan tarde",
+            "respostaEsperada": "No me llames tan tarde",
+            "explicacao": "Write: No me llames tan tarde. It's the negative tú imperative, which uses the subjunctive.",
+            "id": "es-042-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Perfect. Tell me your full name and have your ID ready.»",
+            "opcoes": [
+              "documento.",
+              "tenga",
+              "nombre",
+              "completo",
+              "a",
+              "mano",
+              "Dígame",
+              "y",
+              "su",
+              "Perfecto.",
+              "su"
+            ],
+            "gabarito": "Perfecto. Dígame su nombre completo y tenga a mano su documento.",
+            "explicacao": "Write: Perfecto. Dígame su nombre completo y tenga a mano su documento.",
+            "id": "es-042-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the subjunctive of «hablar» for «que yo»?",
+            "opcoes": [
+              "hable",
+              "hablo",
+              "hablaré"
+            ],
+            "gabarito": "hable",
+            "explicacao": "Drop the «-o» of «hablo» and add «-e».",
+            "id": "es-042-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "Buenos días, señor Martínez. Pase y siéntese, por favor.",
+            "respostaEsperada": "Buenos días, señor Martínez. Pase y siéntese, por favor.",
+            "explicacao": "Good morning, Mr Martínez. Come in and have a seat, please.",
+            "id": "es-042-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the subjunctive ending of «comer» for «que tú»?",
+            "opcoes": [
+              "-as",
+              "-es",
+              "-amos"
+            ],
+            "gabarito": "-as",
+            "explicacao": "In -er and -ir verbs, the swapped vowel is «a»: «comas».",
+            "id": "es-042-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the subjunctive of «ser» for «que él»?",
+            "opcoes": [
+              "sea",
+              "sepa",
+              "es"
+            ],
+            "gabarito": "sea",
+            "explicacao": "«Ser» has its own forms: sea, seas, sea…",
+            "id": "es-042-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the subjunctive of «pensar» for «que nosotros»?",
+            "opcoes": [
+              "pensemos",
+              "piensemos",
+              "pensamos"
+            ],
+            "gabarito": "pensemos",
+            "explicacao": "In -ar and -er verbs, «nosotros» doesn't change the stem.",
+            "id": "es-042-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Perfecto. Dígame su nombre completo y tenga a mano su documento.",
+            "respostaEsperada": "Perfecto. Dígame su nombre completo y tenga a mano su documento.",
+            "explicacao": "Perfect. Tell me your full name and have your ID ready.",
+            "id": "es-042-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the subjunctive of «dar» for «que yo»?",
+            "opcoes": [
+              "dé",
+              "de",
+              "dar"
+            ],
+            "gabarito": "dé",
+            "explicacao": "It takes an accent to tell it apart from the preposition «de».",
+            "id": "es-042-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the subjunctive of «salir» for «que yo»?",
+            "opcoes": [
+              "salga",
+              "sala",
+              "salía"
+            ],
+            "gabarito": "salga",
+            "explicacao": "The «yo» rule: salgo → salga.",
+            "id": "es-042-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say \"Speak more slowly\" to a gentleman, with «usted»?",
+            "opcoes": [
+              "Hable más despacio.",
+              "Habla más despacio.",
+              "Hablo más despacio."
+            ],
+            "gabarito": "Hable más despacio.",
+            "explicacao": "A command with «usted» uses the subjunctive form.",
+            "id": "es-042-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "Gracias. Quiero hacer una reserva para el viernes.",
+            "respostaEsperada": "Gracias. Quiero hacer una reserva para el viernes.",
+            "explicacao": "Thank you. I'd like to make a booking for Friday.",
+            "id": "es-042-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Que tú ___ paciencia. (tener)",
+            "opcoes": [
+              "tengas",
+              "tienes",
+              "tengan"
+            ],
+            "gabarito": "tengas",
+            "explicacao": "«Tú» form: tengas.",
+            "id": "es-042-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Very good. See you on Friday.»",
+            "opcoes": [
+              "Muy",
+              "Hasta",
+              "viernes.",
+              "el",
+              "bien."
+            ],
+            "gabarito": "Muy bien. Hasta el viernes.",
+            "explicacao": "Write: Muy bien. Hasta el viernes.",
+            "id": "es-042-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Que nosotros ___ pronto. (ir)",
+            "opcoes": [
+              "vayamos",
+              "vamos",
+              "vayan"
+            ],
+            "gabarito": "vayamos",
+            "explicacao": "«Ir» uses vay- in the subjunctive.",
+            "id": "es-042-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Que ellos ___ bien. (estar)",
+            "opcoes": [
+              "estén",
+              "están",
+              "esté"
+            ],
+            "gabarito": "estén",
+            "explicacao": "«Ellos» form: estén, with an accent.",
+            "id": "es-042-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Que yo ___ el libro. (buscar)",
+            "opcoes": [
+              "busque",
+              "busce",
+              "busco"
+            ],
+            "gabarito": "busque",
+            "explicacao": "«C» becomes «qu» before «e».",
+            "id": "es-042-e16"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Que vosotros ___ algo. (comer)",
+            "opcoes": [
+              "comáis",
+              "coméis",
+              "comas"
+            ],
+            "gabarito": "comáis",
+            "explicacao": "In -er verbs, the «vosotros» subjunctive is «-áis».",
+            "id": "es-042-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Muy bien. Hasta el viernes.",
+            "respostaEsperada": "Muy bien. Hasta el viernes.",
+            "explicacao": "Very good. See you on Friday.",
+            "id": "es-042-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Que ustedes ___ venir. (poder)",
+            "opcoes": [
+              "puedan",
+              "podan",
+              "pueden"
+            ],
+            "gabarito": "puedan",
+            "explicacao": "In «ellos, ustedes» the stem changes: pueda, puedas, pueda, puedan.",
+            "id": "es-042-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "Aquí lo tiene. ¿Puedo pagar con tarjeta?",
+            "respostaEsperada": "Aquí lo tiene. ¿Puedo pagar con tarjeta?",
+            "explicacao": "Here you are. Can I pay by card?",
+            "id": "es-042-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Siéntese aquí, por favor.»",
+            "opcoes": [
+              "Siéntese",
+              "aquí,",
+              "por",
+              "favor."
+            ],
+            "gabarito": "Siéntese aquí, por favor.",
+            "explicacao": "A command with «usted».",
+            "id": "es-042-e19"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «No hables tan rápido.»",
+            "opcoes": [
+              "No",
+              "hables",
+              "tan",
+              "rápido."
+            ],
+            "gabarito": "No hables tan rápido.",
+            "explicacao": "The negative tú imperative uses the subjunctive.",
+            "id": "es-042-e20"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write the six present subjunctive forms of «vivir».",
+            "respostaEsperada": "viva, vivas, viva, vivamos, viváis, vivan",
+            "id": "es-042-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «tenga» mean?",
+            "audio": "tenga",
+            "opcoes": [
+              "that we go",
+              "sit down (usted)",
+              "I recommend that you",
+              "have, take, here you are (usted)"
+            ],
+            "gabarito": "have, take, here you are (usted)",
+            "explicacao": "«tenga» = have, take, here you are (usted).",
+            "id": "es-042-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write the subjunctive of «hacer» for «yo», «tú» and «nosotros».",
+            "respostaEsperada": "haga, hagas, hagamos",
+            "id": "es-042-e22"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Quiero que tú ___ más. (hablar)",
+            "opcoes": [
+              "hablas",
+              "hable",
+              "hables"
+            ],
+            "gabarito": "hables",
+            "explicacao": "In -ar verbs, the subjunctive uses «-e»: «tú» gives «hables».",
+            "id": "es-042-e23"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Es importante que ellos ___ temprano. (comer)",
+            "opcoes": [
+              "comen",
+              "coman",
+              "coma"
+            ],
+            "gabarito": "coman",
+            "explicacao": "In -er verbs, the subjunctive uses «-a»: «ellos» gives «coman».",
+            "id": "es-042-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "Sin prisa. Oiga, ¿el desayuno está incluido?",
+            "respostaEsperada": "Sin prisa. Oiga, ¿el desayuno está incluido?",
+            "explicacao": "No rush. Listen, is breakfast included?",
+            "id": "es-042-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Espero que ella ___ bien. (estar)",
+            "opcoes": [
+              "esté",
+              "está",
+              "esta"
+            ],
+            "gabarito": "esté",
+            "explicacao": "«Estar» keeps its accent in the subjunctive: «esté».",
+            "id": "es-042-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «que tú hagas» mean?",
+            "audio": "que tú hagas",
+            "opcoes": [
+              "I want (someone) to",
+              "that you do / make",
+              "I prefer (that someone)",
+              "I hope (that)"
+            ],
+            "gabarito": "that you do / make",
+            "explicacao": "«que tú hagas» = that you do / make.",
+            "id": "es-042-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Quiero que usted ___ aquí. (venir)",
+            "opcoes": [
+              "viene",
+              "venga",
+              "vengue"
+            ],
+            "gabarito": "venga",
+            "explicacao": "Start from «vengo»: venga.",
+            "id": "es-042-e26"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the subjunctive of «pagar» for «que yo»?",
+            "opcoes": [
+              "pago",
+              "page",
+              "pague"
+            ],
+            "gabarito": "pague",
+            "explicacao": "To keep the sound, «g» becomes «gu» before «e».",
+            "id": "es-042-e27"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the subjunctive of «saber» for «que ellos»?",
+            "opcoes": [
+              "sepan",
+              "saban",
+              "sepen"
+            ],
+            "gabarito": "sepan",
+            "explicacao": "«Saber» has its own stem: «sep-» + «-an».",
+            "id": "es-042-e28"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Es importante que hagas la tarea.»",
+            "opcoes": [
+              "Es",
+              "importante",
+              "que",
+              "hagas",
+              "la",
+              "tarea."
+            ],
+            "gabarito": "Es importante que hagas la tarea.",
+            "explicacao": "«Hacer» → «hago» → «hagas».",
+            "id": "es-042-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I want you to come tomorrow. (informal)",
+            "respostaEsperada": "Quiero que vengas mañana.",
+            "id": "es-042-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say out loud the subjunctive of six verbs of your choice, three regular and three irregular, for two different persons each."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say the subjunctive recipe out loud in your own words: what you do with the «yo» form and how the vowel is swapped. Then give an example of a regular verb and an irregular one."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-042.json",
+  "responsavel": null
+}

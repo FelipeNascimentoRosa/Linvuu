@@ -1,0 +1,497 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 160,
+  "fase": 16,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Futuro perfecto and probability: Review and practice of lesson 40",
+  "objetivo": "Lesson 40, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 40,
+    "titulo": "Futuro perfecto and probability",
+    "objetivo": "Form the futuro perfecto («habré terminado») to say what will already be finished by a future moment, and use it together with the simple future to make guesses about the present and the recent past («habrá llegado ya»).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 40",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Habré terminado para el viernes",
+            "opcoes": [
+              "Habré terminado para el viernes",
+              "Habrá terminado para el viernes",
+              "Había terminado para el viernes"
+            ],
+            "gabarito": "Habré terminado para el viernes",
+            "explicacao": "Listen to the ending: «habré» (I) is different from «habrá» (he) and «había» (past).",
+            "id": "es-040-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "¿Habrá llegado ya?",
+            "opcoes": [
+              "¿Habrá llegado ya?",
+              "¿Ha llegado ya?",
+              "¿Habrán llegado ya?"
+            ],
+            "gabarito": "¿Habrá llegado ya?",
+            "explicacao": "«Habrá» (future) marks the guess; «ha» states the fact.",
+            "id": "es-040-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Estará en casa",
+            "opcoes": [
+              "Estará en casa",
+              "Estaba en casa",
+              "Está en casa"
+            ],
+            "gabarito": "Estará en casa",
+            "explicacao": "The future «estará» also works for guessing about the present.",
+            "id": "es-040-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Habremos llegado antes de las ocho",
+            "respostaEsperada": "Habremos llegado antes de las ocho",
+            "explicacao": "Write: Habremos llegado antes de las ocho. «Habremos» has no accent.",
+            "id": "es-040-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Habrá perdido el autobús",
+            "respostaEsperada": "Habrá perdido el autobús",
+            "explicacao": "Write: Habrá perdido el autobús. «Habrá» has an accent at the end.",
+            "id": "es-040-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «He'll have seen my message by now. I wrote to him ten minutes ago.»",
+            "opcoes": [
+              "minutos.",
+              "mensaje.",
+              "Ya",
+              "mi",
+              "habrá",
+              "visto",
+              "Le",
+              "diez",
+              "escribí",
+              "hace"
+            ],
+            "gabarito": "Ya habrá visto mi mensaje. Le escribí hace diez minutos.",
+            "explicacao": "Write: Ya habrá visto mi mensaje. Le escribí hace diez minutos.",
+            "id": "es-040-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say \"we will have finished\"?",
+            "opcoes": [
+              "habremos terminado",
+              "habíamos terminado",
+              "hemos terminado"
+            ],
+            "gabarito": "habremos terminado",
+            "explicacao": "Future of «haber» (habremos) + participle.",
+            "id": "es-040-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "Habrá perdido el autobús, como siempre.",
+            "respostaEsperada": "Habrá perdido el autobús, como siempre.",
+            "explicacao": "He must have missed the bus, as usual.",
+            "id": "es-040-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Habrá llegado ya» usually means…",
+            "opcoes": [
+              "He must have arrived by now.",
+              "He has arrived, I'm certain.",
+              "He had arrived."
+            ],
+            "gabarito": "He must have arrived by now.",
+            "explicacao": "The futuro perfecto is a guess about something that has already happened.",
+            "id": "es-040-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which of these sentences guesses about NOW?",
+            "opcoes": [
+              "Estará en casa.",
+              "Estaba en casa.",
+              "Ha estado en casa."
+            ],
+            "gabarito": "Estará en casa.",
+            "explicacao": "The simple future guesses about the present.",
+            "id": "es-040-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence expresses an obligation, not a guess?",
+            "opcoes": [
+              "Debes hacer los deberes.",
+              "Debes de estar cansado.",
+              "Debe de haber llegado."
+            ],
+            "gabarito": "Debes hacer los deberes.",
+            "explicacao": "«Deber» without «de» is an obligation; «deber de» is a guess.",
+            "id": "es-040-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ya habrá visto mi mensaje. Le escribí hace diez minutos.",
+            "respostaEsperada": "Ya habrá visto mi mensaje. Le escribí hace diez minutos.",
+            "explicacao": "He'll have seen my message by now. I wrote to him ten minutes ago.",
+            "id": "es-040-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say \"I wonder where he is\"?",
+            "opcoes": [
+              "¿Dónde estará?",
+              "¿Me pregunto dónde está?",
+              "¿Dónde está, me pregunto?"
+            ],
+            "gabarito": "¿Dónde estará?",
+            "explicacao": "In Spanish, the future does the job of \"I wonder\".",
+            "id": "es-040-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Para el viernes ya ___ el informe. (I will have finished)",
+            "opcoes": [
+              "habré terminado",
+              "había terminado",
+              "he terminado"
+            ],
+            "gabarito": "habré terminado",
+            "explicacao": "An action finished before a future moment: futuro perfecto.",
+            "id": "es-040-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ellos ___ llegado ya. (they must have arrived)",
+            "opcoes": [
+              "habrán",
+              "habían",
+              "habréis"
+            ],
+            "gabarito": "habrán",
+            "explicacao": "Third person plural in the future: «habrán».",
+            "id": "es-040-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "para el viernes",
+            "respostaEsperada": "para el viernes",
+            "explicacao": "by Friday",
+            "id": "es-040-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Son las diez: Marta ___ en casa. (must be)",
+            "opcoes": [
+              "estará",
+              "estaba",
+              "habrá estado"
+            ],
+            "gabarito": "estará",
+            "explicacao": "A guess about the present: simple future.",
+            "id": "es-040-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «You must have run all the way, then.»",
+            "opcoes": [
+              "habrás",
+              "venido",
+              "corriendo.",
+              "Pues"
+            ],
+            "gabarito": "Pues habrás venido corriendo.",
+            "explicacao": "Write: Pues habrás venido corriendo.",
+            "id": "es-040-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tú ya ___ visto el mensaje. (you must have seen)",
+            "opcoes": [
+              "habrás",
+              "habías",
+              "has"
+            ],
+            "gabarito": "habrás",
+            "explicacao": "Second person singular in the future: «habrás».",
+            "id": "es-040-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "A lo mejor Pablo ___ el autobús. (missed)",
+            "opcoes": [
+              "ha perdido",
+              "haber perdido",
+              "perdiendo"
+            ],
+            "gabarito": "ha perdido",
+            "explicacao": "«A lo mejor» is followed by the indicative.",
+            "id": "es-040-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Para las ocho ya habré salido.»",
+            "opcoes": [
+              "Para",
+              "las",
+              "ocho",
+              "ya",
+              "habré",
+              "salido."
+            ],
+            "gabarito": "Para las ocho ya habré salido.",
+            "explicacao": "«Ya» goes before the auxiliary.",
+            "id": "es-040-e16"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «¿Dónde estará Pablo?»",
+            "opcoes": [
+              "¿Dónde",
+              "estará",
+              "Pablo?"
+            ],
+            "gabarito": "¿Dónde estará Pablo?",
+            "explicacao": "A question with the future of guessing.",
+            "id": "es-040-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Pues habrás venido corriendo.",
+            "respostaEsperada": "Pues habrás venido corriendo.",
+            "explicacao": "You must have run all the way, then.",
+            "id": "es-040-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Habrá perdido el autobús, como siempre.»",
+            "opcoes": [
+              "Habrá",
+              "perdido",
+              "el",
+              "autobús,",
+              "como",
+              "siempre."
+            ],
+            "gabarito": "Habrá perdido el autobús, como siempre.",
+            "explicacao": "Auxiliary and participle together.",
+            "id": "es-040-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "a final de mes",
+            "respostaEsperada": "a final de mes",
+            "explicacao": "at the end of the month",
+            "id": "es-040-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: By six, I'll already have finished.",
+            "respostaEsperada": "Para las seis, ya habré terminado.",
+            "id": "es-040-e19"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: Has he arrived yet, I wonder?",
+            "respostaEsperada": "¿Habrá llegado ya?",
+            "id": "es-040-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Para el lunes ya ___ terminado el informe. (we)",
+            "opcoes": [
+              "hemos",
+              "habremos",
+              "habíamos"
+            ],
+            "gabarito": "habremos",
+            "explicacao": "Futuro perfecto: future of «haber» + participle.",
+            "id": "es-040-e21"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Almost. I need to sit down for a moment.»",
+            "opcoes": [
+              "un",
+              "momento.",
+              "sentarme",
+              "Casi.",
+              "Necesito"
+            ],
+            "gabarito": "Casi. Necesito sentarme un momento.",
+            "explicacao": "Write: Casi. Necesito sentarme un momento.",
+            "id": "es-040-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ellos ya ___ llegado. (a guess)",
+            "opcoes": [
+              "habrán",
+              "han",
+              "habían"
+            ],
+            "gabarito": "habrán",
+            "explicacao": "A guess about something already done: futuro perfecto.",
+            "id": "es-040-e22"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Seguro ___ viene de camino.",
+            "opcoes": [
+              "de que",
+              "que",
+              "porque"
+            ],
+            "gabarito": "que",
+            "explicacao": "The formula is «seguro que».",
+            "id": "es-040-e23"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Para entonces tú ya ___ vuelto.",
+            "opcoes": [
+              "has",
+              "habías",
+              "habrás"
+            ],
+            "gabarito": "habrás",
+            "explicacao": "With «tú», the future of «haber» is «habrás».",
+            "id": "es-040-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "todavía no habré llegado",
+            "respostaEsperada": "todavía no habré llegado",
+            "explicacao": "I won't have arrived yet",
+            "id": "es-040-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say \"He must have left already\"?",
+            "opcoes": [
+              "Ya habría salido.",
+              "Ya habrá salido.",
+              "Ya había salido hace rato."
+            ],
+            "gabarito": "Ya habrá salido.",
+            "explicacao": "Futuro perfecto for the guess.",
+            "id": "es-040-e25"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Casi. Necesito sentarme un momento.",
+            "respostaEsperada": "Casi. Necesito sentarme un momento.",
+            "explicacao": "Almost. I need to sit down for a moment.",
+            "id": "es-040-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which expression means \"maybe\" (colloquial)?",
+            "opcoes": [
+              "por fin",
+              "a lo mejor",
+              "seguramente"
+            ],
+            "gabarito": "a lo mejor",
+            "explicacao": "«A lo mejor» means \"maybe\".",
+            "id": "es-040-e26"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the «yo» futuro perfecto of «hacer»?",
+            "opcoes": [
+              "habré hacido",
+              "habré hecho",
+              "he hecho"
+            ],
+            "gabarito": "habré hecho",
+            "explicacao": "«Hacer» has an irregular participle: «hecho».",
+            "id": "es-040-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Para el viernes ya habré terminado el informe.»",
+            "opcoes": [
+              "Para",
+              "el",
+              "viernes",
+              "ya",
+              "habré",
+              "terminado",
+              "el",
+              "informe."
+            ],
+            "gabarito": "Para el viernes ya habré terminado el informe.",
+            "explicacao": "«Para el viernes» marks the deadline (\"by Friday\").",
+            "id": "es-040-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: By Friday, I'll already have finished the work. (with «Para el viernes»)",
+            "respostaEsperada": "Para el viernes ya habré terminado el trabajo.",
+            "id": "es-040-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I wonder where they are.",
+            "respostaEsperada": "¿Dónde estarán?",
+            "id": "es-040-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say out loud what you will have done by the end of the year and make two guesses about what your friends are doing right now."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say out loud three plan sentences with the futuro perfecto («para el viernes habré…») and three guesses («habrá llegado…», «estará…»)."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-040.json",
+  "responsavel": null
+}

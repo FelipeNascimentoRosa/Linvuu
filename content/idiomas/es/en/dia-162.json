@@ -1,0 +1,132 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 162,
+  "fase": 17,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Condicional compuesto: Advice and hypotheses without «si»",
+  "objetivo": "Lesson 41, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 41,
+    "titulo": "Condicional compuesto",
+    "objetivo": "Form the condicional compuesto («habría ido») and use it to talk about what would have happened but didn't, to give advice and criticism about the past («yo en tu lugar habría…», «deberías haberlo dicho») and to express wishes that didn't come true («me habría gustado»).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Advice and hypotheses without «si»",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "en tu lugar",
+            "translit": "",
+            "pt": "in your place, if I were you",
+            "en": "",
+            "audio": "en tu lugar"
+          },
+          {
+            "ru": "sin tu ayuda",
+            "translit": "",
+            "pt": "without your help",
+            "en": "",
+            "audio": "sin tu ayuda"
+          },
+          {
+            "ru": "con más tiempo",
+            "translit": "",
+            "pt": "with more time",
+            "en": "",
+            "audio": "con más tiempo"
+          },
+          {
+            "ru": "conseguir",
+            "translit": "",
+            "pt": "to manage, to achieve",
+            "en": "",
+            "audio": "conseguir"
+          },
+          {
+            "ru": "arrepentirse de",
+            "translit": "",
+            "pt": "to regret",
+            "en": "",
+            "audio": "arrepentirse de"
+          },
+          {
+            "ru": "decir la verdad",
+            "translit": "",
+            "pt": "to tell the truth",
+            "en": "",
+            "audio": "decir la verdad"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Advice, criticism and hidden conditions",
+        "explicacao": "STEP 1: the condicional compuesto gives your opinion on something that already happened: «Yo en tu lugar habría dicho la verdad» (If I were you, I would have told the truth). STEP 2: «en tu lugar» (or «en su lugar») — literally \"in your place\", English \"if I were you\" — sets up the imaginary situation by itself. STEP 3: many hypotheses don't need the word «si». An expression that implies the condition is enough: «Sin tu ayuda no lo habría conseguido» (Without your help I wouldn't have managed it). STEP 4: the same happens with «con» + noun: «Con más tiempo habría viajado más» (With more time I would have travelled more). STEP 5: also with «de otra manera» (otherwise): «De otra manera, lo habríamos hecho mejor». STEP 6: compare three tenses that look alike: the simple conditional is a hypothesis about the present or future («Iría contigo», I would go with you); the condicional compuesto is a hypothesis about the past («Habría ido contigo», I would have gone with you); the pluscuamperfecto is what really happened before («Había ido contigo», I had gone with you). STEP 7: when someone reports what was going to be finished in the future of a past moment, Spanish uses this tense too: «Dijo que habría terminado para el lunes» (He said he would have finished by Monday). For now, just recognise it. STEP 8: sentences with «si» (\"If I had known…\" = «Si hubiera sabido…») come in lesson 47 — and there you'll see why \"if I would have known\" never works in Spanish.",
+        "comparacao": "English \"If I were you, I would have told the truth\" = «Yo en tu lugar habría dicho la verdad». \"Without your help I wouldn't have managed\" = «Sin tu ayuda no lo habría conseguido». The structure is the same; just make sure \"would have\" becomes «habría», not «había».",
+        "tabela": [
+          {
+            "tempo": "condicional simple",
+            "ideia": "hypothesis about the present or future",
+            "exemplo": "Iría contigo."
+          },
+          {
+            "tempo": "condicional compuesto",
+            "ideia": "hypothesis about the past, which didn't happen",
+            "exemplo": "Habría ido contigo."
+          },
+          {
+            "tempo": "pluscuamperfecto",
+            "ideia": "something that really happened earlier",
+            "exemplo": "Había ido contigo."
+          },
+          {
+            "tempo": "indefinido",
+            "ideia": "finished past event",
+            "exemplo": "Fui contigo."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Sin tu ayuda no lo había conseguido.",
+            "certo": "Sin tu ayuda no lo habría conseguido.",
+            "motivo": "It isn't an earlier fact («había» = had), it's a hypothesis («habría» = would have)."
+          },
+          {
+            "errado": "Con más tiempo, había viajado más.",
+            "certo": "Con más tiempo habría viajado más.",
+            "motivo": "An imaginary condition takes the condicional compuesto."
+          },
+          {
+            "errado": "Yo en tu lugar lo había dicho.",
+            "certo": "Yo en tu lugar lo habría dicho.",
+            "motivo": "When you put yourself in someone else's place, it's a hypothesis: «habría dicho»."
+          }
+        ],
+        "tag": "Compound tenses"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "A friend missed the train and went home without telling anyone. Give him five pieces of advice about the past: «Yo en tu lugar habría llamado a alguien. Habrías podido…»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Conjugate «habría hecho» in all six persons. Then explain the difference between «había ido» and «habría ido» with one sentence for each."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-041.json",
+  "responsavel": null
+}

@@ -1,0 +1,509 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 180,
+  "fase": 18,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Pretérito perfecto de subjuntivo: Review and practice of lesson 45",
+  "objetivo": "Lesson 45, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 45,
+    "titulo": "Pretérito perfecto de subjuntivo",
+    "objetivo": "Form the pretérito perfecto de subjuntivo («haya llegado») and use it after the same subjunctive triggers when the action is already finished («espero que hayas llegado bien», «no creo que lo haya visto») and in time clauses («cuando hayas terminado»).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 45",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Espero que hayas llegado bien",
+            "opcoes": [
+              "Espero que hayas llegado bien",
+              "Espero que llegues bien",
+              "Espero que has llegado bien"
+            ],
+            "gabarito": "Espero que hayas llegado bien",
+            "explicacao": "«Hayas llegado» shows the arrival has already happened.",
+            "id": "es-045-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "No creo que lo haya visto",
+            "opcoes": [
+              "No creo que lo haya visto",
+              "No creo que lo he visto",
+              "No creo que lo vea"
+            ],
+            "gabarito": "No creo que lo haya visto",
+            "explicacao": "Listen for «haya» (subjunctive) after «no creo que».",
+            "id": "es-045-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Cuando hayas terminado, llámame",
+            "opcoes": [
+              "Cuando hayas terminado, llámame",
+              "Cuando termines, llámame",
+              "Cuando has terminado, llámame"
+            ],
+            "gabarito": "Cuando hayas terminado, llámame",
+            "explicacao": "«Cuando» + future: «hayas terminado».",
+            "id": "es-045-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Me alegra que hayáis venido",
+            "respostaEsperada": "Me alegra que hayáis venido",
+            "explicacao": "Write: Me alegra que hayáis venido. «Hayáis» has an accent.",
+            "id": "es-045-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Es posible que haya perdido el tren",
+            "respostaEsperada": "Es posible que haya perdido el tren",
+            "explicacao": "Write: Es posible que haya perdido el tren. Participle of «perder»: «perdido».",
+            "id": "es-045-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Espero que hayas llegado bien",
+            "opcoes": [
+              "bien",
+              "Espero",
+              "que",
+              "llegado",
+              "hayas"
+            ],
+            "gabarito": "Espero que hayas llegado bien",
+            "explicacao": "Write: Espero que hayas llegado bien",
+            "id": "es-045-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How is the pretérito perfecto de subjuntivo formed?",
+            "opcoes": [
+              "haya (subjunctive of haber) + participle",
+              "había + participle",
+              "tenga + participle"
+            ],
+            "gabarito": "haya (subjunctive of haber) + participle",
+            "explicacao": "Present subjunctive of «haber» + participle.",
+            "id": "es-045-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "espero que hayas llegado",
+            "respostaEsperada": "espero que hayas llegado",
+            "explicacao": "I hope you've arrived / got there",
+            "id": "es-045-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence says the person has ALREADY arrived?",
+            "opcoes": [
+              "Espero que hayas llegado bien.",
+              "Espero que llegues bien.",
+              "Espero que llegaste bien."
+            ],
+            "gabarito": "Espero que hayas llegado bien.",
+            "explicacao": "«Hayas llegado» is the finished action; «llegues» looks ahead.",
+            "id": "es-045-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which form is correct?",
+            "opcoes": [
+              "No creo que lo haya hecho.",
+              "No creo que lo ha hecho.",
+              "No creo que lo tenga hecho."
+            ],
+            "gabarito": "No creo que lo haya hecho.",
+            "explicacao": "After «no creo que», the auxiliary goes into the subjunctive.",
+            "id": "es-045-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Cuando hayas terminado» means…",
+            "opcoes": [
+              "when you've finished",
+              "when you finished",
+              "when you finish (every time)"
+            ],
+            "gabarito": "when you've finished",
+            "explicacao": "It's English \"when you've finished\", with the auxiliary in the subjunctive.",
+            "id": "es-045-e09"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Cuando hayas terminado, llámame",
+            "opcoes": [
+              "llámame",
+              "Cuando",
+              "terminado,",
+              "hayas"
+            ],
+            "gabarito": "Cuando hayas terminado, llámame",
+            "explicacao": "Write: Cuando hayas terminado, llámame",
+            "id": "es-045-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "After a trigger like «dudo que», English \"that he has arrived\" corresponds to…",
+            "opcoes": [
+              "que haya llegado",
+              "que tenga llegado",
+              "que había llegado"
+            ],
+            "gabarito": "que haya llegado",
+            "explicacao": "The Spanish auxiliary is «haber», in the subjunctive.",
+            "id": "es-045-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Es posible que hayan salido.",
+              "Es posible que hayan salidos.",
+              "Es posible que han salido."
+            ],
+            "gabarito": "Es posible que hayan salido.",
+            "explicacao": "The participle doesn't agree and the auxiliary is in the subjunctive.",
+            "id": "es-045-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Me alegra que tú ___ venido.",
+            "opcoes": [
+              "hayas",
+              "has",
+              "habías"
+            ],
+            "gabarito": "hayas",
+            "explicacao": "Emotion + perfecto de subjuntivo: «hayas».",
+            "id": "es-045-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "dudo que haya terminado",
+            "respostaEsperada": "dudo que haya terminado",
+            "explicacao": "I doubt he's finished",
+            "id": "es-045-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "No creo que ellos ___ llegado todavía.",
+            "opcoes": [
+              "hayan",
+              "han",
+              "habrán"
+            ],
+            "gabarito": "hayan",
+            "explicacao": "Doubt + perfecto de subjuntivo: «hayan».",
+            "id": "es-045-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Me alegra que hayáis venido",
+            "opcoes": [
+              "Me",
+              "venido",
+              "que",
+              "hayáis",
+              "alegra"
+            ],
+            "gabarito": "Me alegra que hayáis venido",
+            "explicacao": "Write: Me alegra que hayáis venido",
+            "id": "es-045-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Es posible que Marta se ___ olvidado.",
+            "opcoes": [
+              "haya",
+              "ha",
+              "hay"
+            ],
+            "gabarito": "haya",
+            "explicacao": "«Es posible que» + subjunctive: «haya».",
+            "id": "es-045-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Espero que vosotros ___ dormido bien.",
+            "opcoes": [
+              "hayáis",
+              "habéis",
+              "hayamos"
+            ],
+            "gabarito": "hayáis",
+            "explicacao": "«Vosotros» form: «hayáis».",
+            "id": "es-045-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Cuando ___ terminado, llámame. (tú)",
+            "opcoes": [
+              "hayas",
+              "has",
+              "habrás"
+            ],
+            "gabarito": "hayas",
+            "explicacao": "After «cuando» with a future meaning: «hayas terminado».",
+            "id": "es-045-e16"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "En cuanto yo ___ llegado, te aviso.",
+            "opcoes": [
+              "haya",
+              "he",
+              "había"
+            ],
+            "gabarito": "haya",
+            "explicacao": "«En cuanto» + future: subjunctive.",
+            "id": "es-045-e17"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Es posible que haya perdido el tren",
+            "opcoes": [
+              "el",
+              "perdido",
+              "Es",
+              "que",
+              "haya",
+              "tren",
+              "posible"
+            ],
+            "gabarito": "Es posible que haya perdido el tren",
+            "explicacao": "Write: Es posible que haya perdido el tren",
+            "id": "es-045-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Dudo que él ___ escrito la carta.",
+            "opcoes": [
+              "haya",
+              "ha",
+              "hay"
+            ],
+            "gabarito": "haya",
+            "explicacao": "«Dudar que» + perfecto de subjuntivo.",
+            "id": "es-045-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "espero que hayas llegado bien",
+            "respostaEsperada": "espero que hayas llegado bien",
+            "explicacao": "I hope you got there safely",
+            "id": "es-045-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Espero que hayas dormido bien.»",
+            "opcoes": [
+              "Espero",
+              "que",
+              "hayas",
+              "dormido",
+              "bien."
+            ],
+            "gabarito": "Espero que hayas dormido bien.",
+            "explicacao": "A wish about something that has already happened.",
+            "id": "es-045-e19"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «No creo que lo haya visto.»",
+            "opcoes": [
+              "No",
+              "creo",
+              "que",
+              "lo",
+              "haya",
+              "visto."
+            ],
+            "gabarito": "No creo que lo haya visto.",
+            "explicacao": "The pronoun goes before «haya».",
+            "id": "es-045-e20"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Llámame cuando hayas terminado.»",
+            "opcoes": [
+              "Llámame",
+              "cuando",
+              "hayas",
+              "terminado."
+            ],
+            "gabarito": "Llámame cuando hayas terminado.",
+            "explicacao": "«Cuando» + «haya» + participle.",
+            "id": "es-045-e21"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Espero que hayas llegado bien",
+            "respostaEsperada": "Espero que hayas llegado bien",
+            "explicacao": "Write: Espero que hayas llegado bien",
+            "id": "es-045-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I hope you got there safely.",
+            "respostaEsperada": "Espero que hayas llegado bien.",
+            "id": "es-045-e22"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I don't think he's understood.",
+            "respostaEsperada": "No creo que haya entendido.",
+            "id": "es-045-e23"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Espero que ellos ___ llegado bien. (haber)",
+            "opcoes": [
+              "han",
+              "hayan",
+              "habrán"
+            ],
+            "gabarito": "hayan",
+            "explicacao": "Pretérito perfecto de subjuntivo: «hayan» + participle.",
+            "id": "es-045-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "me sorprende que no haya respondido",
+            "respostaEsperada": "me sorprende que no haya respondido",
+            "explicacao": "I'm surprised he hasn't answered",
+            "id": "es-045-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Me alegra que tú ___ venido. (haber)",
+            "opcoes": [
+              "has",
+              "habías",
+              "hayas"
+            ],
+            "gabarito": "hayas",
+            "explicacao": "With «tú», the subjunctive of «haber» is «hayas».",
+            "id": "es-045-e25"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "No creo que lo haya visto",
+            "respostaEsperada": "No creo que lo haya visto",
+            "explicacao": "Write: No creo que lo haya visto",
+            "id": "es-045-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "En cuanto ___ pagado, salimos. (nosotros)",
+            "opcoes": [
+              "hayamos",
+              "hemos",
+              "habremos"
+            ],
+            "gabarito": "hayamos",
+            "explicacao": "A time clause about a finished action: «hayamos» + participle.",
+            "id": "es-045-e26"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say \"I doubt he's finished\"?",
+            "opcoes": [
+              "Dudo que ha terminado.",
+              "Dudo que haya terminado.",
+              "Dudo que tenga terminado."
+            ],
+            "gabarito": "Dudo que haya terminado.",
+            "explicacao": "«Dudar que» takes the subjunctive; a finished action: «haya» + participle.",
+            "id": "es-045-e27"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the «vosotros» form of «haber» in the present subjunctive?",
+            "opcoes": [
+              "habéis",
+              "hayais",
+              "hayáis"
+            ],
+            "gabarito": "hayáis",
+            "explicacao": "Only «hayáis» has an accent.",
+            "id": "es-045-e28"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Es una pena que no hayas venido.»",
+            "opcoes": [
+              "Es",
+              "una",
+              "pena",
+              "que",
+              "no",
+              "hayas",
+              "venido."
+            ],
+            "gabarito": "Es una pena que no hayas venido.",
+            "explicacao": "A judgement + «que» takes the subjunctive; a finished action.",
+            "id": "es-045-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I hope you all slept well. (ustedes)",
+            "respostaEsperada": "Espero que hayan dormido bien.",
+            "id": "es-045-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Answer out loud: «¿Qué esperas que haya pasado en tu ciudad esta semana? ¿Qué dudas que haya cambiado?» Use at least three sentences with the perfect subjunctive."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Explain out loud the difference between «llegues» and «hayas llegado» in two sentences. Then give two examples of «cuando hayas…» and two of «en cuanto haya…»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-045.json",
+  "responsavel": null
+}

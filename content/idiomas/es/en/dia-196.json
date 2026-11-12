@@ -1,0 +1,538 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 196,
+  "fase": 20,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "The passive and impersonal «se»: Review and practice of lesson 49",
+  "objetivo": "Lesson 49, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 49,
+    "titulo": "The passive and impersonal «se»",
+    "objetivo": "Form the passive voice with «ser» + participle (agreeing with the subject), use the passive «se» («Se venden pisos»), impersonal «se» («Se vive bien aquí») and other impersonal forms (third person plural, «uno»), and tell «ser» + participle apart from «estar» + participle.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 49",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "La casa fue construida en 1990",
+            "opcoes": [
+              "La casa fue construida en 1990",
+              "La casa fue construido en 1990",
+              "Las casas fueron construidas en 1990"
+            ],
+            "gabarito": "La casa fue construida en 1990",
+            "explicacao": "Listen for «fue construida»: singular, feminine.",
+            "id": "es-049-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Se venden pisos baratos",
+            "opcoes": [
+              "Se venden pisos baratos",
+              "Se vende piso barato",
+              "Se venden piso barato"
+            ],
+            "gabarito": "Se venden pisos baratos",
+            "explicacao": "The verb is plural: «venden».",
+            "id": "es-049-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Aquí se vive bien",
+            "opcoes": [
+              "Aquí se vive bien",
+              "Aquí se viven bien",
+              "Aquí vive bien"
+            ],
+            "gabarito": "Aquí se vive bien",
+            "explicacao": "Impersonal se: the verb is singular.",
+            "id": "es-049-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «se alquila» mean?",
+            "audio": "se alquila",
+            "opcoes": [
+              "to discover",
+              "luggage",
+              "for rent, to let",
+              "to hand in, to deliver"
+            ],
+            "gabarito": "for rent, to let",
+            "explicacao": "«se alquila» = for rent, to let.",
+            "id": "es-049-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "El libro fue publicado por una editorial pequeña",
+            "respostaEsperada": "El libro fue publicado por una editorial pequeña",
+            "explicacao": "Write: El libro fue publicado por una editorial pequeña.",
+            "id": "es-049-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "No se puede fumar aquí",
+            "respostaEsperada": "No se puede fumar aquí",
+            "explicacao": "Write: No se puede fumar aquí.",
+            "id": "es-049-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «inaugurar» mean?",
+            "audio": "inaugurar",
+            "opcoes": [
+              "it is forbidden",
+              "towel",
+              "to open, to inaugurate",
+              "please (polite request on signs)"
+            ],
+            "gabarito": "to open, to inaugurate",
+            "explicacao": "«inaugurar» = to open, to inaugurate.",
+            "id": "es-049-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Se alquilan habitaciones",
+            "respostaEsperada": "Se alquilan habitaciones",
+            "explicacao": "Write: Se alquilan habitaciones.",
+            "id": "es-049-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is in the passive voice?",
+            "opcoes": [
+              "La carta fue enviada ayer.",
+              "Ana envió la carta ayer.",
+              "Ana está enviando la carta."
+            ],
+            "gabarito": "La carta fue enviada ayer.",
+            "explicacao": "The passive uses «ser» + participle.",
+            "id": "es-049-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the correct participle of «escribir» in the passive?",
+            "opcoes": [
+              "La carta fue escrita.",
+              "La carta fue escribida.",
+              "La carta fue escribido."
+            ],
+            "gabarito": "La carta fue escrita.",
+            "explicacao": "The participle is irregular and agrees with «carta».",
+            "id": "es-049-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «firmar» mean?",
+            "audio": "firmar",
+            "opcoes": [
+              "guest",
+              "luggage",
+              "to sign",
+              "for sale"
+            ],
+            "gabarito": "to sign",
+            "explicacao": "«firmar» = to sign.",
+            "id": "es-049-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you write the ad for several rooms?",
+            "opcoes": [
+              "Se alquilan habitaciones.",
+              "Se alquila habitaciones.",
+              "Habitaciones son alquiladas."
+            ],
+            "gabarito": "Se alquilan habitaciones.",
+            "explicacao": "The verb agrees with the plural.",
+            "id": "es-049-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "La gente habla mucho.",
+              "La gente hablan mucho.",
+              "Las gente hablan mucho."
+            ],
+            "gabarito": "La gente habla mucho.",
+            "explicacao": "«La gente» is singular.",
+            "id": "es-049-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence describes the state of something?",
+            "opcoes": [
+              "La tienda está cerrada.",
+              "La tienda fue cerrada.",
+              "La tienda se cierra."
+            ],
+            "gabarito": "La tienda está cerrada.",
+            "explicacao": "«Estar» + participle shows the result.",
+            "id": "es-049-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «publicar» mean?",
+            "audio": "publicar",
+            "opcoes": [
+              "for sale",
+              "reception",
+              "to found",
+              "to publish"
+            ],
+            "gabarito": "to publish",
+            "explicacao": "«publicar» = to publish.",
+            "id": "es-049-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which impersonal sentence is correct?",
+            "opcoes": [
+              "En esta calle se vive tranquilo.",
+              "En esta calle se viven tranquilo.",
+              "En esta calle viven-se tranquilo."
+            ],
+            "gabarito": "En esta calle se vive tranquilo.",
+            "explicacao": "With impersonal «se», the verb stays singular.",
+            "id": "es-049-e12"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Las cartas serán ___ mañana. (enviar)",
+            "opcoes": [
+              "enviadas",
+              "enviados",
+              "enviada"
+            ],
+            "gabarito": "enviadas",
+            "explicacao": "The participle agrees with «cartas».",
+            "id": "es-049-e13"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "El museo fue inaugurado ___ la alcaldesa.",
+            "opcoes": [
+              "por",
+              "para",
+              "de"
+            ],
+            "gabarito": "por",
+            "explicacao": "The doer of the passive comes with «por» (English \"by\").",
+            "id": "es-049-e14"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «huésped» mean?",
+            "audio": "huésped",
+            "opcoes": [
+              "needed, wanted (staff)",
+              "towel",
+              "guest",
+              "to elect"
+            ],
+            "gabarito": "guest",
+            "explicacao": "«huésped» = guest.",
+            "id": "es-049-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Se ___ dos camareros. (necesitar)",
+            "opcoes": [
+              "necesitan",
+              "necesita",
+              "necesitamos"
+            ],
+            "gabarito": "necesitan",
+            "explicacao": "The verb agrees with «dos camareros».",
+            "id": "es-049-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Las puertas ___ abiertas. (a state)",
+            "opcoes": [
+              "están",
+              "son",
+              "fueron"
+            ],
+            "gabarito": "están",
+            "explicacao": "For a state, use «estar».",
+            "id": "es-049-e16"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «recepción» mean?",
+            "audio": "recepción",
+            "opcoes": [
+              "luggage",
+              "to announce",
+              "reception",
+              "for rent, to let"
+            ],
+            "gabarito": "reception",
+            "explicacao": "«recepción» = reception.",
+            "id": "es-049-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Está ___ fumar aquí. (forbidden)",
+            "opcoes": [
+              "prohibido",
+              "prohibir",
+              "prohibiendo"
+            ],
+            "gabarito": "prohibido",
+            "explicacao": "A fixed expression with the participle: «Está prohibido».",
+            "id": "es-049-e17"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Se habla español.»",
+            "opcoes": [
+              "Se",
+              "habla",
+              "español."
+            ],
+            "gabarito": "Se habla español.",
+            "explicacao": "«Se» goes before the verb.",
+            "id": "es-049-e18"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Las cartas serán enviadas mañana.»",
+            "opcoes": [
+              "Las",
+              "cartas",
+              "serán",
+              "enviadas",
+              "mañana."
+            ],
+            "gabarito": "Las cartas serán enviadas mañana.",
+            "explicacao": "Subject, «ser» in the future, agreeing participle.",
+            "id": "es-049-e19"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "La casa fue construida en 1990",
+            "opcoes": [
+              "1990",
+              "casa",
+              "La",
+              "fue",
+              "construida",
+              "en"
+            ],
+            "gabarito": "La casa fue construida en 1990",
+            "explicacao": "Write: La casa fue construida en 1990",
+            "id": "es-049-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: Rooms for rent for the summer.",
+            "respostaEsperada": "Se alquilan habitaciones para el verano.",
+            "id": "es-049-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "La carta fue ___ por Ana. (escribir)",
+            "opcoes": [
+              "escribida",
+              "escrito",
+              "escrita"
+            ],
+            "gabarito": "escrita",
+            "explicacao": "The participle agrees with «carta» (feminine); «escribir» → «escrito».",
+            "id": "es-049-e21"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Los edificios fueron ___ en 1990. (construir)",
+            "opcoes": [
+              "construido",
+              "construidos",
+              "construidas"
+            ],
+            "gabarito": "construidos",
+            "explicacao": "It agrees with «edificios» (masculine plural).",
+            "id": "es-049-e22"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Se venden pisos baratos",
+            "opcoes": [
+              "venden",
+              "pisos",
+              "baratos",
+              "Se"
+            ],
+            "gabarito": "Se venden pisos baratos",
+            "explicacao": "Write: Se venden pisos baratos",
+            "id": "es-049-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Se ___ casas baratas. (vender)",
+            "opcoes": [
+              "vende",
+              "vendan",
+              "venden"
+            ],
+            "gabarito": "venden",
+            "explicacao": "In the passive «se», the verb agrees with «casas».",
+            "id": "es-049-e23"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "La tienda ___ cerrada hoy. (estar)",
+            "opcoes": [
+              "es",
+              "está",
+              "fue"
+            ],
+            "gabarito": "está",
+            "explicacao": "A result or state: «estar» + participle.",
+            "id": "es-049-e24"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is a passive «se»?",
+            "opcoes": [
+              "Español es hablado aquí.",
+              "Es hablado español.",
+              "Se habla español."
+            ],
+            "gabarito": "Se habla español.",
+            "explicacao": "«Se» goes before the verb.",
+            "id": "es-049-e25"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Aquí se vive bien",
+            "opcoes": [
+              "Aquí",
+              "vive",
+              "bien",
+              "se"
+            ],
+            "gabarito": "Aquí se vive bien",
+            "explicacao": "Write: Aquí se vive bien",
+            "id": "es-049-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say \"My wallet's been stolen\" without saying who?",
+            "opcoes": [
+              "Me han robado la cartera.",
+              "Se roba mi cartera.",
+              "Me es robada la cartera."
+            ],
+            "gabarito": "Me han robado la cartera.",
+            "explicacao": "The third person plural, with no subject, points to a vague doer.",
+            "id": "es-049-e26"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Complete: «La gente ___ mucho.» (hablar)",
+            "opcoes": [
+              "hablan",
+              "hablamos",
+              "habla"
+            ],
+            "gabarito": "habla",
+            "explicacao": "«La gente» is singular in Spanish (unlike English \"people are\").",
+            "id": "es-049-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "El libro fue publicado por una editorial pequeña",
+            "opcoes": [
+              "editorial",
+              "libro",
+              "El",
+              "publicado",
+              "por",
+              "pequeña",
+              "una",
+              "fue"
+            ],
+            "gabarito": "El libro fue publicado por una editorial pequeña",
+            "explicacao": "Write: El libro fue publicado por una editorial pequeña",
+            "id": "es-049-x10",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «El museo fue inaugurado por la alcaldesa.»",
+            "opcoes": [
+              "El",
+              "museo",
+              "fue",
+              "inaugurado",
+              "por",
+              "la",
+              "alcaldesa."
+            ],
+            "gabarito": "El museo fue inaugurado por la alcaldesa.",
+            "explicacao": "Passive: «ser» + participle + «por» + doer.",
+            "id": "es-049-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: Spanish and Portuguese are spoken here.",
+            "respostaEsperada": "Aquí se habla español y portugués.",
+            "id": "es-049-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: The doors are open.",
+            "respostaEsperada": "Las puertas están abiertas.",
+            "id": "es-049-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe out loud a street or neighbourhood you know, using «se» to say what people do there, what is sold and what you can or can't do."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say two passive sentences with «ser» + participle and three with «se». Include a notice on a shop door."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-049.json",
+  "responsavel": null
+}

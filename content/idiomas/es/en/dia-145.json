@@ -1,0 +1,156 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 145,
+  "fase": 15,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Home, renting and neighbours: The house and its floors",
+  "objetivo": "Lesson 37, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 37,
+    "titulo": "Home, renting and neighbours",
+    "objetivo": "Describe your home and its floors (rooms, ordinal numbers, prepositions of place), look for and rent a flat (alquiler, fianza, gastos, the hundreds) and talk politely to the landlady and the neighbours, reporting faults and asking for repairs.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "The house and its floors",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "el piso",
+            "translit": "el PEE-soh",
+            "pt": "the flat, the apartment (Spain); Mexico and Argentina: el departamento",
+            "en": "",
+            "audio": "el piso"
+          },
+          {
+            "ru": "el salón",
+            "translit": "el sah-LOHN",
+            "pt": "the living room",
+            "en": "",
+            "audio": "el salón"
+          },
+          {
+            "ru": "la cocina",
+            "translit": "lah koh-THEE-nah (Latin America: koh-SEE-nah)",
+            "pt": "the kitchen",
+            "en": "",
+            "audio": "la cocina"
+          },
+          {
+            "ru": "el dormitorio, la habitación",
+            "translit": "el dor-mee-TOH-ryoh, lah ah-bee-tah-THYOHN",
+            "pt": "the bedroom",
+            "en": "",
+            "audio": "el dormitorio, la habitación"
+          },
+          {
+            "ru": "el baño",
+            "translit": "el BAH-nyoh",
+            "pt": "the bathroom",
+            "en": "",
+            "audio": "el baño"
+          },
+          {
+            "ru": "la terraza",
+            "translit": "lah teh-RRAH-thah",
+            "pt": "the terrace, the balcony",
+            "en": "",
+            "audio": "la terraza"
+          },
+          {
+            "ru": "el ascensor",
+            "translit": "el ahs-then-SOR (Latin America: ah-sen-SOR)",
+            "pt": "the lift, the elevator",
+            "en": "",
+            "audio": "el ascensor"
+          },
+          {
+            "ru": "la planta baja",
+            "translit": "lah PLAHN-tah BAH-hah",
+            "pt": "the ground floor",
+            "en": "",
+            "audio": "la planta baja"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Rooms, floors and where things are",
+        "explicacao": "STEP 1: to describe your home, use «tener» and «hay» (lessons 5 and 10): «Mi piso tiene tres habitaciones, un salón, una cocina y un baño», «En el salón hay un sofá». STEP 2: floors work like British English, NOT American: the ground floor is «la planta baja», and the floor above it is «el primer piso» or «la primera planta». So an American \"second floor\" is a Spanish «primer piso». If you're from the US, count one less. STEP 3: the ordinals: primero, segundo, tercero, cuarto, quinto, sexto, séptimo, octavo, noveno, décimo. «Primero» and «tercero» drop their final «-o» before a masculine singular noun: «el primer piso», «el tercer piso». The feminine doesn't change: «la primera planta», «la tercera planta». STEP 4: to say which floor you live on: «Vivo en el tercero» or «Vivo en el tercer piso». The question is «¿En qué piso vives?». STEP 5: «piso» means both a flat and a floor (storey); the floor you walk on is «el suelo», the wall is «la pared» and the ceiling is «el techo». STEP 6: the prepositions of place from lesson 10 work for furniture: «La lámpara está encima de la mesa» (on top of), «El libro está debajo de la cama» (under), «El sofá está al lado de la ventana» (next to), «La mesa está entre la silla y el sofá» (between). «Encima» and «debajo» are one word each. STEP 7: things in the home: «la cama» (bed), «la mesa» (table), «la silla» (chair), «el armario» (wardrobe, cupboard), «la lavadora» (washing machine), «la nevera» or «el frigorífico» (fridge; Mexico: el refrigerador; Argentina: la heladera). STEP 8: to say your home has something or not: «Tiene ascensor» (it has a lift), «No tiene terraza» — no article, just as in English \"it has no terrace\". STEP 9: the word for a flat varies: «piso» (Spain), «departamento» (Mexico, Argentina and others) and «apartamento» (elsewhere); «apartamento» is understood in Spain too.",
+        "comparacao": "Floors are counted the British way: «la planta baja» is the ground floor and «el primer piso» is the floor above — an American \"second floor\". «Piso» is a flat or a floor (storey); the floor under your feet is «el suelo». And «primero» / «tercero» shorten to «primer» / «tercer» before a masculine noun.",
+        "tabela": [
+          {
+            "ordinal": "primero (primer)",
+            "exemplo": "Vivo en el primer piso.",
+            "traducao": "I live on the first floor (US: second floor)."
+          },
+          {
+            "ordinal": "segundo",
+            "exemplo": "Mi tía vive en el segundo.",
+            "traducao": "My aunt lives on the second floor."
+          },
+          {
+            "ordinal": "tercero (tercer)",
+            "exemplo": "Mi tía vive en el tercer piso.",
+            "traducao": "My flat is on the third floor."
+          },
+          {
+            "ordinal": "cuarto",
+            "exemplo": "La oficina está en la cuarta planta.",
+            "traducao": "O escritório fica no quarto andar."
+          },
+          {
+            "ordinal": "quinto",
+            "exemplo": "El quinto piso no tiene terraza.",
+            "traducao": "The fifth floor has no terrace."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Vivo en el primero piso.",
+            "certo": "Vivo en el primer piso.",
+            "motivo": "«Primero» drops the «-o» before a masculine noun."
+          },
+          {
+            "errado": "Mi piso es en el tercero.",
+            "certo": "Mi piso está en el tercero.",
+            "motivo": "Location takes «estar»."
+          },
+          {
+            "errado": "La lámpara está en cima de la mesa.",
+            "certo": "La lámpara está encima de la mesa.",
+            "motivo": "«Encima de» is one word."
+          },
+          {
+            "errado": "Vivo en la tercer planta.",
+            "certo": "Vivo en la tercera planta.",
+            "motivo": "In the feminine, «tercera» keeps its «-a»."
+          }
+        ],
+        "tag": "Home"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe your home out loud: the floor, how many rooms, what's in the living room and the bedroom, and where each piece of furniture is."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Call a friend out loud, invite them to something and agree on the place and time (lesson 36)."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-037.json",
+  "responsavel": null
+}

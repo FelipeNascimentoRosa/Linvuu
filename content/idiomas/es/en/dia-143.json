@@ -1,0 +1,186 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 143,
+  "fase": 15,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Phone calls, invitations and arranging to meet: Arranging to meet: time and place",
+  "objetivo": "Lesson 36, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 36,
+    "titulo": "Phone calls, invitations and arranging to meet",
+    "objetivo": "Answer and make a phone call («¿Diga?», «Soy…», «¿Está…?»), leave a message, invite with «apetecer» and «¿quieres…?», accept and decline politely, and arrange a time and place with «quedar» and «nos vemos».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Arranging to meet: time and place",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "quedar con alguien",
+            "translit": "keh-DAR kohn AHL-gyen",
+            "pt": "to meet up with someone, to arrange to meet (Spain)",
+            "en": "",
+            "audio": "quedar con alguien"
+          },
+          {
+            "ru": "¿Quedamos?",
+            "translit": "keh-DAH-mohs",
+            "pt": "Shall we meet? / Shall we say…?",
+            "en": "",
+            "audio": "¿Quedamos?"
+          },
+          {
+            "ru": "Nos vemos.",
+            "translit": "nohs BEH-mohs",
+            "pt": "See you. / We'll see each other.",
+            "en": "",
+            "audio": "Nos vemos."
+          },
+          {
+            "ru": "en punto",
+            "translit": "en POON-toh",
+            "pt": "on the dot, sharp",
+            "en": "",
+            "audio": "en punto"
+          },
+          {
+            "ru": "llegar tarde, llegar a tiempo",
+            "translit": "",
+            "pt": "to be late, to arrive on time",
+            "en": "",
+            "audio": "llegar tarde, llegar a tiempo"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Arranging a time and place",
+        "explicacao": "STEP 1: in Spain, «quedar» means to arrange to meet: «¿Cuándo quedamos?» (When shall we meet?), «¿Dónde quedamos?», «Quedamos a las ocho en la plaza» (Let's meet at eight in the square). In Latin America, «¿Cuándo nos vemos?» or «¿Nos encontramos…?» are more common. «Quedar en» + infinitive (to agree to) works everywhere: «Quedamos en vernos el sábado». STEP 2: careful with English \"meet\". Meeting up with someone you know is «quedar» or «vernos»; meeting someone for the FIRST time is «conocer»: «Conocí a Ana en una fiesta» (I met Ana at a party). «Te conozco a las ocho» makes no sense. STEP 3: the time takes «a las»: «a las ocho en punto» (at eight sharp), «a las nueve y media». STEP 4: the place uses the prepositions from lesson 10: «delante del cine» (in front of), «enfrente del banco» (opposite), «al lado de la plaza», «en la puerta». STEP 5: to check the time works: «¿Te va bien el sábado?» or «¿Te viene bien a las ocho?» — no \"on\" before the day. STEP 6: if you're late: «Voy a llegar tarde», «Llego en diez minutos», «Estoy llegando» (lesson 30). STEP 7: to cancel: «Lo siento, no puedo ir. ¿Lo dejamos para otro día?» STEP 8: to close: «Quedamos así, entonces» (That's settled, then), «Nos vemos el sábado», «Hasta el sábado».",
+        "comparacao": "English \"meet\" covers two Spanish verbs: «quedar» / «vernos» to meet up with someone you already know, and «conocer» to meet someone for the first time. «Quedar» also means \"to stay\" or \"to be left\" («¿Cuánto queda?» = How much is left?) — context tells you which.",
+        "erros": [
+          {
+            "errado": "Te conozco a las ocho en la plaza.",
+            "certo": "Quedamos a las ocho. / Nos vemos a las ocho.",
+            "motivo": "Meeting up is «quedar» or «vernos»; «conocer» is meeting someone for the first time."
+          },
+          {
+            "errado": "Quedamos en las ocho.",
+            "certo": "Quedamos a las ocho.",
+            "motivo": "Clock times take «a las»."
+          },
+          {
+            "errado": "Nos vemos en la puerta de el cine.",
+            "certo": "Nos vemos en la puerta del cine.",
+            "motivo": "«De + el» becomes «del»."
+          },
+          {
+            "errado": "¿Te va bien en el sábado?",
+            "certo": "¿Te va bien el sábado?",
+            "motivo": "Days of the week take no preposition (no \"ON Saturday\")."
+          }
+        ],
+        "tag": "Invitations"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "Una llamada / A phone call",
+        "contexto": "Marta calls Pablo to invite him to the cinema.",
+        "linhas": [
+          {
+            "personagem": "Pablo",
+            "ru": "— ¿Diga?",
+            "pt": "— Hello?",
+            "audio": "¿Diga?",
+            "rotulo": "Pablo"
+          },
+          {
+            "personagem": "Marta",
+            "ru": "— Hola, Pablo, soy Marta. ¿Te molesto?",
+            "pt": "— Hi, Pablo, it's Marta. Is this a bad time?",
+            "audio": "Hola, Pablo, soy Marta. ¿Te molesto?",
+            "rotulo": "Marta"
+          },
+          {
+            "personagem": "Pablo",
+            "ru": "— No, qué va. Dime.",
+            "pt": "— No, not at all. Go ahead.",
+            "audio": "No, qué va. Dime.",
+            "rotulo": "Pablo"
+          },
+          {
+            "personagem": "Marta",
+            "ru": "— ¿Te apetece ir al cine el sábado? Hay una película que quiero ver.",
+            "pt": "— Do you feel like going to the cinema on Saturday? There's a film I want to see.",
+            "audio": "¿Te apetece ir al cine el sábado? Hay una película que quiero ver.",
+            "rotulo": "Marta"
+          },
+          {
+            "personagem": "Pablo",
+            "ru": "— Me encantaría, pero el sábado por la tarde tengo que ayudar a mi hermano con una mudanza.",
+            "pt": "— I'd love to, but on Saturday afternoon I have to help my brother move.",
+            "audio": "Me encantaría, pero el sábado por la tarde tengo que ayudar a mi hermano con una mudanza.",
+            "rotulo": "Pablo"
+          },
+          {
+            "personagem": "Marta",
+            "ru": "— ¿Y por la noche? Podemos quedar a las nueve y media.",
+            "pt": "— What about the evening? We could meet at half past nine.",
+            "audio": "¿Y por la noche? Podemos quedar a las nueve y media.",
+            "rotulo": "Marta"
+          },
+          {
+            "personagem": "Pablo",
+            "ru": "— Por la noche sí me va bien. ¿Dónde quedamos?",
+            "pt": "— The evening's fine for me. Where shall we meet?",
+            "audio": "Por la noche sí me va bien. ¿Dónde quedamos?",
+            "rotulo": "Pablo"
+          },
+          {
+            "personagem": "Marta",
+            "ru": "— Delante del cine, en la puerta principal.",
+            "pt": "— In front of the cinema, at the main entrance.",
+            "audio": "Delante del cine, en la puerta principal.",
+            "rotulo": "Marta"
+          },
+          {
+            "personagem": "Pablo",
+            "ru": "— Vale. Y si llego tarde, te escribo un mensaje.",
+            "pt": "— Done. And if I'm late, I'll text you.",
+            "audio": "Vale. Y si llego tarde, te escribo un mensaje.",
+            "rotulo": "Pablo"
+          },
+          {
+            "personagem": "Marta",
+            "ru": "— Perfecto. Entonces, nos vemos el sábado.",
+            "pt": "— Perfect. See you on Saturday, then.",
+            "audio": "Perfecto. Entonces, nos vemos el sábado.",
+            "rotulo": "Marta"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Play Marta or Pablo out loud, changing the plan (cenar, pasear, ver un partido), the day and the place."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Make an invitation, an acceptance and a polite refusal out loud."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-036.json",
+  "responsavel": null
+}

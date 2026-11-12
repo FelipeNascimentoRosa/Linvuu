@@ -1,0 +1,172 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 165,
+  "fase": 17,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Present subjunctive (forms): The swapped vowel: regular forms",
+  "objetivo": "Lesson 42, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 42,
+    "titulo": "Present subjunctive (forms)",
+    "objetivo": "Form the present subjunctive of regular verbs, of irregular verbs from the «yo» form («tenga», «haga», «diga»), of stem-changing verbs and of the six verbs with their own forms («sea», «esté», «vaya», «haya», «sepa», «dé»), with the spelling changes (busque, llegue, empiece).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "The swapped vowel: regular forms",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "quiero que",
+            "translit": "",
+            "pt": "I want (someone) to",
+            "en": "",
+            "audio": "quiero que"
+          },
+          {
+            "ru": "espero que",
+            "translit": "",
+            "pt": "I hope (that)",
+            "en": "",
+            "audio": "espero que"
+          },
+          {
+            "ru": "necesito que",
+            "translit": "",
+            "pt": "I need (someone) to",
+            "en": "",
+            "audio": "necesito que"
+          },
+          {
+            "ru": "prefiero que",
+            "translit": "",
+            "pt": "I prefer (that someone)",
+            "en": "",
+            "audio": "prefiero que"
+          },
+          {
+            "ru": "es importante que",
+            "translit": "",
+            "pt": "it's important that",
+            "en": "",
+            "audio": "es importante que"
+          },
+          {
+            "ru": "te recomiendo que",
+            "translit": "",
+            "pt": "I recommend that you",
+            "en": "",
+            "audio": "te recomiendo que"
+          },
+          {
+            "ru": "ojalá",
+            "translit": "",
+            "pt": "I hope so, let's hope",
+            "en": "",
+            "audio": "ojalá"
+          },
+          {
+            "ru": "no te preocupes",
+            "translit": "",
+            "pt": "don't worry (tú)",
+            "en": "",
+            "audio": "no te preocupes"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "The subjunctive recipe: drop the «-o» and swap the vowel",
+        "explicacao": "STEP 1: the subjunctive is a set of verb forms that Spanish uses after certain expressions, like «quiero que» or «es importante que». English has it too, but only as relics: \"I suggest that he BE on time\", \"It's important that she GO\", \"God save the King\", \"Long live the Queen\", \"If I WERE you\". In each case English uses an odd form (\"be\", \"go\", \"save\", \"were\") instead of the expected \"is\", \"goes\", \"saves\", \"was\". Spanish kept a full set of these forms and uses them every day, in ordinary conversation — not as something formal or old-fashioned. In this lesson you only learn to FORM them; the uses come in lessons 43 and 44. STEP 2: first, take the «yo» form of the present: «hablo», «como», «vivo». STEP 3: drop the final «-o»: «habl-», «com-», «viv-». STEP 4: add the SWAPPED vowel. -ar verbs switch to «e»: hable, hables, hable, hablemos, habléis, hablen. -er and -ir verbs switch to «a»: coma, comas, coma, comamos, comáis, coman; viva, vivas, viva, vivamos, viváis, vivan. STEP 5: to remember it: -ar verbs are the \"a\" verbs, so in the subjunctive they flip to «e»; -er and -ir verbs are the \"e/i\" verbs, so they flip to «a». STEP 6: the «yo» form is the same as the «él, ella, usted» form: «que yo hable» and «que él hable». When it could be confusing, use the pronoun. STEP 7: only the «vosotros» form has an accent: «habléis, comáis, viváis». In Latin America, «ustedes» is used instead: «hablen, coman, vivan». STEP 8: you've already used these forms in commands: the usted imperative and the negative tú imperative ARE subjunctive: «Hable más despacio», «No hables tan rápido», «Coma algo».",
+        "comparacao": "English has a subjunctive too, but only as fossils: \"I suggest that he BE here\", \"It's essential that she ATTEND\", \"If I WERE you\". Spanish uses its subjunctive all the time, in everyday speech. The good news: you already know some forms from the commands «Hable más despacio» and «No hables tan rápido» — that's the subjunctive.",
+        "tabela": [
+          {
+            "pessoa": "yo",
+            "hablar": "hable",
+            "comer": "coma",
+            "vivir": "viva"
+          },
+          {
+            "pessoa": "tú",
+            "hablar": "hables",
+            "comer": "comas",
+            "vivir": "vivas"
+          },
+          {
+            "pessoa": "él, ella, usted",
+            "hablar": "hable",
+            "comer": "coma",
+            "vivir": "viva"
+          },
+          {
+            "pessoa": "nosotros, nosotras",
+            "hablar": "hablemos",
+            "comer": "comamos",
+            "vivir": "vivamos"
+          },
+          {
+            "pessoa": "vosotros, vosotras",
+            "hablar": "habléis",
+            "comer": "comáis",
+            "vivir": "viváis"
+          },
+          {
+            "pessoa": "ellos, ellas, ustedes",
+            "hablar": "hablen",
+            "comer": "coman",
+            "vivir": "vivan"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "que tú habla",
+            "certo": "que tú hables",
+            "motivo": "In -ar verbs, the «tú» ending in the subjunctive is «-es»."
+          },
+          {
+            "errado": "que nosotros comemos",
+            "certo": "que nosotros comamos",
+            "motivo": "In -er verbs, the subjunctive uses «-a»: «comamos»."
+          },
+          {
+            "errado": "que ellos hablan",
+            "certo": "que ellos hablen",
+            "motivo": "In -ar verbs, the subjunctive uses «e»: «hablen»."
+          },
+          {
+            "errado": "que vosotros habláis",
+            "certo": "que vosotros habléis",
+            "motivo": "In -ar verbs, swap «a» for «e» in «vosotros» too."
+          },
+          {
+            "errado": "Quiero tú venir mañana.",
+            "certo": "Quiero que vengas mañana.",
+            "motivo": "English \"I want YOU TO COME\" can't be copied: when the subject changes, Spanish uses «que» + subjunctive."
+          }
+        ],
+        "tag": "Subjunctive"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say out loud the six subjunctive forms of «cantar» and «beber» («cante, cantes, cante…», «beba, bebas, beba…»). Then say: «Hable más despacio, por favor» and «No hables tan rápido»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say out loud the «yo» form of the present of hablar, comer, vivir, tener, hacer, decir and salir («hablo, como, vivo, tengo…»). These forms are the basis of this lesson."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-042.json",
+  "responsavel": null
+}

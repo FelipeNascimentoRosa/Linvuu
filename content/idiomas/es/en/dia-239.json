@@ -1,0 +1,169 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 239,
+  "fase": 24,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Difficult pronouns and prepositions: Pronouns with the infinitive, gerund and imperative",
+  "objetivo": "Lesson 60, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 60,
+    "titulo": "Difficult pronouns and prepositions",
+    "objetivo": "Use the personal «a» confidently, recognise leísmo without adopting it, choose the right preposition after common verbs (including «de que»), review «por» and «para», and place pronouns correctly with infinitives, gerunds and imperatives.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Pronouns with the infinitive, gerund and imperative",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "quiero comprarlo",
+            "translit": "KYEH-roh kom-PRAR-loh",
+            "pt": "I want to buy it",
+            "en": "",
+            "audio": "quiero comprarlo"
+          },
+          {
+            "ru": "lo quiero comprar",
+            "translit": "loh KYEH-roh kom-PRAR",
+            "pt": "I want to buy it (other position)",
+            "en": "",
+            "audio": "lo quiero comprar"
+          },
+          {
+            "ru": "estoy leyéndolo",
+            "translit": "es-TOY leh-YEN-doh-loh",
+            "pt": "I'm reading it",
+            "en": "",
+            "audio": "estoy leyéndolo"
+          },
+          {
+            "ru": "dímelo",
+            "translit": "DEE-meh-loh",
+            "pt": "tell me (it)",
+            "en": "",
+            "audio": "dímelo"
+          },
+          {
+            "ru": "no me lo digas",
+            "translit": "noh meh loh DEE-gahs",
+            "pt": "don't tell me (it)",
+            "en": "",
+            "audio": "no me lo digas"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Where to put pronouns",
+        "explicacao": "STEP 1: remember the order (lessons 23 to 25): the indirect object pronoun comes before the direct one: «me lo», «te la», «se lo». When «le» or «les» comes before «lo, la, los, las», it changes to «se»: «Se lo doy» (I give it to him). STEP 2: with an infinitive, the pronoun can go before the conjugated verb or be attached to the infinitive: «Lo quiero comprar» = «Quiero comprarlo». With «ir a»: «Te lo voy a decir» = «Voy a decírtelo». STEP 3: the same with the gerund: «Lo estoy leyendo» = «Estoy leyéndolo». When the pronoun is attached, a written accent appears to keep the stress on the same syllable: «leyéndolo», «diciéndomelo». STEP 4: with an affirmative command, the pronoun is always attached: «Cómpralo» (Buy it), «Dímelo» (Tell me), «Dáselo». When two pronouns are attached, or the verb is long, there's almost always a written accent. STEP 5: with a negative command, the pronoun goes before the verb: «No lo compres», «No me lo digas». STEP 6: with affirmative «vosotros», the final «-d» drops before «os»: «sentaos», «levantaos» (exception: «idos»). STEP 7: the pronoun never sits in the middle of a verb sequence: not «puedes me explicar», but «puedes explicarme» or «me puedes explicar».",
+        "comparacao": "English pronouns always come after the verb: \"buy it\", \"tell me\". In Spanish they come BEFORE a conjugated verb («lo compro»), and are attached AFTER infinitives, gerunds and affirmative commands, written as one word: «comprarlo», «dímelo». The written accent shows the verb keeps its original stressed syllable.",
+        "tabela": [
+          {
+            "caso": "infinitive",
+            "forma": "Quiero comprarlo. / Lo quiero comprar.",
+            "exemplo": "Voy a decírtelo. / Te lo voy a decir."
+          },
+          {
+            "caso": "gerund",
+            "forma": "Estoy leyéndolo. / Lo estoy leyendo.",
+            "exemplo": "Está contándomelo. / Me lo está contando."
+          },
+          {
+            "caso": "affirmative command",
+            "forma": "always attached",
+            "exemplo": "Cómpralo. Dímelo. Dáselo."
+          },
+          {
+            "caso": "negative command",
+            "forma": "before the verb",
+            "exemplo": "No lo compres. No me lo digas."
+          },
+          {
+            "caso": "affirmative vosotros",
+            "forma": "the -d drops",
+            "exemplo": "Sentaos. Levantaos."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Estoy leyendolo.",
+            "certo": "Estoy leyéndolo.",
+            "motivo": "When you attach the pronoun to the gerund, write the accent."
+          },
+          {
+            "errado": "Dime lo.",
+            "certo": "Dímelo.",
+            "motivo": "Written as one word, with an accent."
+          },
+          {
+            "errado": "No dímelo.",
+            "certo": "No me lo digas.",
+            "motivo": "In the negative, the pronoun goes first and the verb is in the subjunctive."
+          },
+          {
+            "errado": "Quiero lo comprar.",
+            "certo": "Quiero comprarlo. / Lo quiero comprar.",
+            "motivo": "The pronoun is attached to the infinitive or goes before the conjugated verb."
+          },
+          {
+            "errado": "Le lo digo.",
+            "certo": "Se lo digo.",
+            "motivo": "Two third-person pronouns: «le» becomes «se»."
+          }
+        ],
+        "tag": "Pronouns"
+      },
+      {
+        "tipo": "texto",
+        "min": 8,
+        "titulo": "Una mudanza con amigos / Moving house with friends",
+        "ru": "El sábado Inés se mudó a un piso nuevo y sus amigos la ayudaron. Pablo llevó el camión y no quiso dárselo a nadie: «Lo conduzco yo», dijo. Carlos estaba metiendo los libros en cajas. Cuando Inés le preguntó si los había contado, él respondió: «Estoy contándolos ahora». Para subir el sofá, Inés les dijo a los demás: «No lo levantéis solos; esperadme y os ayudo». Más tarde, al ver que la lámpara estaba rota, Inés llamó a su hermana: «Cómprame una igual, por favor, y tráemela mañana». Su hermana contestó: «Te la compro hoy y te la llevo». Al final, todos se sentaron en el suelo y comieron pizza. Inés dijo: «Gracias a todos. Sentaos y comed, que lo merecéis».",
+        "pt": "On Saturday Inés moved into a new flat and her friends helped her. Pablo brought the van and wouldn't let anyone else have it: \"I'm driving it,\" he said. Carlos was putting the books into boxes. When Inés asked him if he'd counted them, he replied: \"I'm counting them now.\" To carry the sofa upstairs, Inés told the others: \"Don't lift it on your own; wait for me and I'll help you.\" Later, seeing that the lamp was broken, Inés called her sister: \"Buy me one the same, please, and bring it tomorrow.\" Her sister replied: \"I'll buy it today and bring it over.\" In the end, everyone sat on the floor and ate pizza. Inés said: \"Thank you, everyone. Sit down and eat, you've earned it.\"",
+        "perguntas": [
+          {
+            "pergunta": "¿Quién llevó el camión?",
+            "resposta": "Pablo."
+          },
+          {
+            "pergunta": "¿Qué estaba haciendo Carlos?",
+            "resposta": "Metía los libros en cajas."
+          },
+          {
+            "pergunta": "¿Qué dijo Inés sobre el sofá?",
+            "resposta": "Que no lo levantaran solos y que la esperaran."
+          },
+          {
+            "pergunta": "¿Qué pidió Inés a su hermana?",
+            "resposta": "Que le comprara una lámpara igual y se la llevara al día siguiente."
+          },
+          {
+            "pergunta": "¿Qué comieron al final?",
+            "resposta": "Pizza."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Give a friend five commands, replacing the object with a pronoun: «Cómpralo», «Dímelo», «Dáselo», «No me lo digas», «Ayúdame». Then say the same idea with «estar» + gerund and with «ir a» + infinitive."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Make six sentences with verb + preposition, then say what each «por» and «para» you used is for."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-060.json",
+  "responsavel": null
+}

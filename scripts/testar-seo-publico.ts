@@ -36,7 +36,7 @@ assert.ok(!/noindex/.test(rpt) && !/noindex/.test(ren), 'pt e en indexáveis');
 assert.ok(fs.readFileSync('dist/sitemap.xml', 'utf8').includes('/russo-online'));
 assert.ok(html('/en').includes('Language courses for English speakers'));
 assert.ok(!html('/en').includes('Brazilian learners'));
-assert.ok(html('/en').includes('Brazilian Portuguese, French, Russian and German fully explained in English'));
+assert.ok(html('/en').includes('Spanish, German, French, Russian and Brazilian Portuguese, fully explained in English'));
 assert.ok(!html('/en').includes('Every explanation is in English'), 'a home em inglês não promete explicação em inglês onde ela não existe');
 assert.ok(!html('/en').includes('lessons explained in English'));
 assert.ok(!html('/assinatura').includes('name="robots" content="noindex"'));

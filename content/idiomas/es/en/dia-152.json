@@ -1,0 +1,520 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 152,
+  "fase": 16,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "A2 review and mock test: A2 mock test",
+  "objetivo": "Lesson 38, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 38,
+    "titulo": "A2 review and mock test",
+    "objetivo": "Review all of A2 on one map, practise reading, listening, short writing and speaking, fix the most common English-speaker mistakes at this level and take an original mock exam with explained answers.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "A2 mock test",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Cuando llegué, llovía",
+            "opcoes": [
+              "Cuando llegué, llovía",
+              "Cuando llegaba, llovió",
+              "Cuando llegaré, lloverá"
+            ],
+            "gabarito": "Cuando llegué, llovía",
+            "explicacao": "Listening: indefinido for the event («llegué») and imperfecto for the background («llovía»).",
+            "id": "es-038-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Llevo dos años viviendo aquí",
+            "opcoes": [
+              "Llevo dos años viviendo aquí",
+              "Viví aquí hace dos años",
+              "Viviré aquí dentro de dos años"
+            ],
+            "gabarito": "Llevo dos años viviendo aquí",
+            "explicacao": "Listening: «llevo» + time + gerund means something still going on.",
+            "id": "es-038-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Me duele la garganta desde ayer",
+            "opcoes": [
+              "Me duele la garganta desde ayer",
+              "Me duelen las gargantas desde ayer",
+              "Tengo dolor de garganta hace ayer"
+            ],
+            "gabarito": "Me duele la garganta desde ayer",
+            "explicacao": "Listening: «doler» in the singular, with the article.",
+            "id": "es-038-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Quedamos a las ocho delante del cine",
+            "opcoes": [
+              "Quedamos a las ocho delante del cine",
+              "Quedamos en las ocho delante del cine",
+              "Quedamos a las ocho detrás del cine"
+            ],
+            "gabarito": "Quedamos a las ocho delante del cine",
+            "explicacao": "Listening: «a las ocho» and «delante del».",
+            "id": "es-038-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Read: «Hace un mes que vivo en Zaragoza.» How long has the writer lived there?",
+            "opcoes": [
+              "for a month (and still lives there)",
+              "in a month's time",
+              "for a month (in the past)"
+            ],
+            "gabarito": "for a month (and still lives there)",
+            "explicacao": "Reading: «hace» + time says how long.",
+            "id": "es-038-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Hi, Camila, it's Hugo. Are you free on Saturday night?»",
+            "opcoes": [
+              "Camila,",
+              "soy",
+              "Hugo.",
+              "por",
+              "sábado",
+              "¿Estás",
+              "Hola,",
+              "noche?",
+              "la",
+              "el",
+              "libre"
+            ],
+            "gabarito": "Hola, Camila, soy Hugo. ¿Estás libre el sábado por la noche?",
+            "explicacao": "Write: Hola, Camila, soy Hugo. ¿Estás libre el sábado por la noche?",
+            "id": "es-038-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Read the dialogue. Where does Hugo invite Camila?",
+            "opcoes": [
+              "to dinner at a restaurant",
+              "to the cinema",
+              "on a train trip"
+            ],
+            "gabarito": "to dinner at a restaurant",
+            "explicacao": "Reading: «¿Te apetece ir a cenar?».",
+            "id": "es-038-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "Creo que sí. ¿Por qué?",
+            "respostaEsperada": "Creo que sí. ¿Por qué?",
+            "explicacao": "I think so. Why?",
+            "id": "es-038-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Si tengo tiempo, te llamaré.",
+              "Si tendré tiempo, te llamaré.",
+              "Si tenía tiempo, te llamaré."
+            ],
+            "gabarito": "Si tengo tiempo, te llamaré.",
+            "explicacao": "After «si», use the present — as in English \"if I HAVE time\", never \"if I will have\".",
+            "id": "es-038-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Mi hermano es más alto que yo.",
+              "Mi hermano es más alto de yo.",
+              "Mi hermano es más alto como yo."
+            ],
+            "gabarito": "Mi hermano es más alto que yo.",
+            "explicacao": "Comparison: «más… que».",
+            "id": "es-038-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Gracias por tu ayuda.",
+              "Gracias para tu ayuda.",
+              "Gracias de tu ayuda."
+            ],
+            "gabarito": "Gracias por tu ayuda.",
+            "explicacao": "Thanks take «por».",
+            "id": "es-038-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Hola, Camila, soy Hugo. ¿Estás libre el sábado por la noche?",
+            "respostaEsperada": "Hola, Camila, soy Hugo. ¿Estás libre el sábado por la noche?",
+            "explicacao": "Hi, Camila, it's Hugo. Are you free on Saturday night?",
+            "id": "es-038-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which is the most polite request?",
+            "opcoes": [
+              "Quisiera un café, por favor.",
+              "Quiero un café.",
+              "Dame un café."
+            ],
+            "gabarito": "Quisiera un café, por favor.",
+            "explicacao": "Polite conditional.",
+            "id": "es-038-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Recent past:",
+            "opcoes": [
+              "Acabo de comer.",
+              "Acabo comer.",
+              "Acabo a comer."
+            ],
+            "gabarito": "Acabo de comer.",
+            "explicacao": "«Acabar de» + infinitive (\"I've just eaten\").",
+            "id": "es-038-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the usted imperative of «beber»?",
+            "opcoes": [
+              "beba",
+              "bebe",
+              "bebed"
+            ],
+            "gabarito": "beba",
+            "explicacao": "-er verbs: «-a» ending in the usted form.",
+            "id": "es-038-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "Me encantaría. ¿A qué hora quedamos?",
+            "respostaEsperada": "Me encantaría. ¿A qué hora quedamos?",
+            "explicacao": "I'd love to. What time shall we meet?",
+            "id": "es-038-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Cuando era niño, ___ en el campo. (live)",
+            "opcoes": [
+              "vivía",
+              "viví",
+              "viviré"
+            ],
+            "gabarito": "vivía",
+            "explicacao": "A long phase in the past: imperfecto.",
+            "id": "es-038-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «It's called La Plaza. I'll send it to you by message right now.»",
+            "opcoes": [
+              "por",
+              "Se",
+              "llama",
+              "lo",
+              "mismo.",
+              "Plaza.",
+              "La",
+              "Te",
+              "mando",
+              "mensaje",
+              "ahora"
+            ],
+            "gabarito": "Se llama La Plaza. Te lo mando por mensaje ahora mismo.",
+            "explicacao": "Write: Se llama La Plaza. Te lo mando por mensaje ahora mismo.",
+            "id": "es-038-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ayer ___ al médico. (go)",
+            "opcoes": [
+              "fui",
+              "iba",
+              "voy"
+            ],
+            "gabarito": "fui",
+            "explicacao": "A finished event: indefinido of «ir».",
+            "id": "es-038-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ya ___ lo dije. (to her)",
+            "opcoes": [
+              "se",
+              "le",
+              "lo"
+            ],
+            "gabarito": "se",
+            "explicacao": "«Le lo» becomes «se lo».",
+            "id": "es-038-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Mañana ___ el pan. (buy)",
+            "opcoes": [
+              "compraré",
+              "compré",
+              "compraba"
+            ],
+            "gabarito": "compraré",
+            "explicacao": "Simple future: «compraré».",
+            "id": "es-038-e16"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "El libro ___ leo es caro.",
+            "opcoes": [
+              "que",
+              "donde",
+              "quien"
+            ],
+            "gabarito": "que",
+            "explicacao": "Object relative: «que» (English can drop \"that\"; Spanish can't).",
+            "id": "es-038-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Se llama La Plaza. Te lo mando por mensaje ahora mismo.",
+            "respostaEsperada": "Se llama La Plaza. Te lo mando por mensaje ahora mismo.",
+            "explicacao": "It's called La Plaza. I'll send it to you by message right now.",
+            "id": "es-038-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Voy ___ tren a Sevilla.",
+            "opcoes": [
+              "en",
+              "de",
+              "por"
+            ],
+            "gabarito": "en",
+            "explicacao": "Means of transport: «en» (\"by train\").",
+            "id": "es-038-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "Perfecto. ¿Cómo se llama?",
+            "respostaEsperada": "Perfecto. ¿Cómo se llama?",
+            "explicacao": "Perfect. What's it called?",
+            "id": "es-038-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Hablo portugués ___ inglés.",
+            "opcoes": [
+              "e",
+              "y",
+              "u"
+            ],
+            "gabarito": "e",
+            "explicacao": "«Y» becomes «e» before an «i» sound.",
+            "id": "es-038-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "¿Te ___ ir al cine?",
+            "opcoes": [
+              "apetece",
+              "apetecen",
+              "apeteces"
+            ],
+            "gabarito": "apetece",
+            "explicacao": "«Apetecer» + infinitive, singular.",
+            "id": "es-038-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Vivo en el ___ piso. (1st)",
+            "opcoes": [
+              "primer",
+              "primero",
+              "primo"
+            ],
+            "gabarito": "primer",
+            "explicacao": "«Primero» drops the «-o» before a masculine noun.",
+            "id": "es-038-e21"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «This time I'll get there before you, I promise!»",
+            "opcoes": [
+              "prometo!",
+              "tú,",
+              "Esta",
+              "que",
+              "llegaré",
+              "vez",
+              "lo",
+              "¡te",
+              "antes"
+            ],
+            "gabarito": "Esta vez llegaré antes que tú, ¡te lo prometo!",
+            "explicacao": "Write: Esta vez llegaré antes que tú, ¡te lo prometo!",
+            "id": "es-038-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Cuando era pequeño, vivía en el campo.»",
+            "opcoes": [
+              "Cuando",
+              "era",
+              "pequeño,",
+              "vivía",
+              "en",
+              "el",
+              "campo."
+            ],
+            "gabarito": "Cuando era pequeño, vivía en el campo.",
+            "explicacao": "Imperfecto for childhood.",
+            "id": "es-038-e22"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Me duele la espalda desde hace una semana.»",
+            "opcoes": [
+              "Me",
+              "duele",
+              "la",
+              "espalda",
+              "desde",
+              "hace",
+              "una",
+              "semana."
+            ],
+            "gabarito": "Me duele la espalda desde hace una semana.",
+            "explicacao": "Health with «desde hace».",
+            "id": "es-038-e23"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «¿Te apetece ir al cine el sábado?»",
+            "opcoes": [
+              "¿Te",
+              "apetece",
+              "ir",
+              "al",
+              "cine",
+              "el",
+              "sábado?"
+            ],
+            "gabarito": "¿Te apetece ir al cine el sábado?",
+            "explicacao": "Invitation with «apetecer».",
+            "id": "es-038-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then reveal the answer.",
+            "audio": "Gracias. ¿No llegarás tarde, como la última vez?",
+            "respostaEsperada": "Gracias. ¿No llegarás tarde, como la última vez?",
+            "explicacao": "Thanks. You won't be late, like last time?",
+            "id": "es-038-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Quisiera reservar una habitación doble",
+            "respostaEsperada": "Quisiera reservar una habitación doble",
+            "explicacao": "Write: Quisiera reservar una habitación doble. A polite travel request.",
+            "id": "es-038-e25"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Esta vez llegaré antes que tú, ¡te lo prometo!",
+            "respostaEsperada": "Esta vez llegaré antes que tú, ¡te lo prometo!",
+            "explicacao": "This time I'll get there before you, I promise!",
+            "id": "es-038-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ayer fuimos al cine y comimos pizza",
+            "respostaEsperada": "Ayer fuimos al cine y comimos pizza",
+            "explicacao": "Write: Ayer fuimos al cine y comimos pizza. Indefinido of «ir» and «comer».",
+            "id": "es-038-e26"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "La casa donde vivo es pequeña",
+            "respostaEsperada": "La casa donde vivo es pequeña",
+            "explicacao": "Write: La casa donde vivo es pequeña. «Donde» as a relative, with no accent.",
+            "id": "es-038-e27"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: When I was a child, I lived in the countryside. Yesterday I went to the cinema. If I have time, I'll call you. I've been living here for two years.",
+            "respostaEsperada": "Cuando era niño, vivía en el campo. Ayer fui al cine. Si tengo tiempo, te llamo. Vivo aquí desde hace dos años.",
+            "id": "es-038-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Spanish: I work at a small company. I've been working here for a year. I used to work in a shop.",
+            "respostaEsperada": "Trabajo en una empresa pequeña. Llevo un año trabajando aquí. Antes trabajaba en una tienda.",
+            "id": "es-038-e29"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ayer, cuando llegué, todos ___ . (sleep)",
+            "opcoes": [
+              "dormían",
+              "durmieron",
+              "duermen"
+            ],
+            "gabarito": "dormían",
+            "explicacao": "Background in the past: imperfecto.",
+            "id": "es-038-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Reread the items you got wrong and say the rule for each one out loud. Then redo only those items."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Reread the map and pick the three points where you still make mistakes. Take the mock exam without looking at the map."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-038.json",
+  "responsavel": null
+}

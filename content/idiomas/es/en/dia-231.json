@@ -1,0 +1,245 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 231,
+  "fase": 24,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Living in Spain or Latin America: banks, mobile phones and renting: Renting a property",
+  "objetivo": "Lesson 58, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 58,
+    "titulo": "Living in Spain or Latin America: banks, mobile phones and renting",
+    "objetivo": "Ask for information and handle everyday paperwork in Spanish: open and use a bank account, sign up for and complain about a mobile or internet service, and view and negotiate a rental, knowing what changes between Spain and Latin America.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Renting a property",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "el alquiler",
+            "translit": "el ahl-kee-LEHR",
+            "pt": "the rent (the contract and the monthly amount)",
+            "en": "",
+            "audio": "el alquiler"
+          },
+          {
+            "ru": "la fianza",
+            "translit": "lah FYAN-thah",
+            "pt": "the deposit",
+            "en": "",
+            "audio": "la fianza"
+          },
+          {
+            "ru": "el casero, la casera",
+            "translit": "el kah-SEH-roh, lah kah-SEH-rah",
+            "pt": "the landlord, the landlady",
+            "en": "",
+            "audio": "el casero, la casera"
+          },
+          {
+            "ru": "el inquilino, la inquilina",
+            "translit": "el een-kee-LEE-noh, lah een-kee-LEE-nah",
+            "pt": "the tenant",
+            "en": "",
+            "audio": "el inquilino, la inquilina"
+          },
+          {
+            "ru": "amueblado, amueblada",
+            "translit": "ah-mweh-BLAH-doh, ah-mweh-BLAH-dah",
+            "pt": "furnished",
+            "en": "",
+            "audio": "amueblado, amueblada"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Asking about and negotiating rental conditions",
+        "explicacao": "NOTE: contracts, deposits, deadlines and tenants' rights vary a lot from place to place; get everything in writing and check the current rules. STEP 1: to ask what's included, use «estar incluido»: «¿Están incluidos los gastos?» (Are bills included?). Watch the agreement: «El agua está incluida» («agua» is feminine, even with «el»). STEP 2: to ask whether something is allowed, use «se» + verb: «¿Se admiten mascotas?» (Are pets allowed?), «¿Se puede fumar en el piso?». STEP 3: to set a condition, use «siempre que» + subjunctive (as long as): «Acepto el piso siempre que me lo dejen amueblado». STEP 4: to say what happens before an action, use «antes de» + infinitive: «Antes de firmar, quisiera leer el contrato». English \"before signing\" uses -ing; Spanish uses the infinitive. STEP 5: to say something should be in writing, use «por escrito»: «Prefiero tenerlo por escrito». STEP 6: vocabulary: in Spain, «piso» is a flat/apartment; in Latin America you hear «apartamento» or «departamento». «Alquilar» works for both tenant and landlord, just like English \"rent\": «alquilar un piso» (as a tenant) or «alquilar mi piso a alguien» (as the owner). «Fianza» is the deposit in Spain; in Latin America people also say «depósito» or «garantía».",
+        "comparacao": "English \"bills included?\" = «¿Están incluidos los gastos?». \"Are pets allowed?\" = «¿Se admiten mascotas?». \"As long as\" = «siempre que» + subjunctive. Watch out: «piso» is a flat (or a storey), while the floor you walk on is «el suelo». And \"I'm interested in\" = «estoy interesado en», with «en», like English \"in\".",
+        "exemplos": [
+          {
+            "ru": "¿Están incluidos los gastos en el alquiler?",
+            "pt": "Are bills included in the rent?"
+          },
+          {
+            "ru": "El agua está incluida, pero la luz no.",
+            "pt": "Water is included, but electricity isn't."
+          },
+          {
+            "ru": "¿Se admiten mascotas?",
+            "pt": "Are pets allowed?"
+          },
+          {
+            "ru": "Acepto el piso siempre que me lo dejen amueblado.",
+            "pt": "I'll take the flat as long as you leave it furnished."
+          },
+          {
+            "ru": "Antes de firmar, quisiera leer el contrato con calma.",
+            "pt": "Before signing, I'd like to read the contract carefully."
+          },
+          {
+            "ru": "Prefiero tener las condiciones por escrito.",
+            "pt": "I'd prefer to have the conditions in writing."
+          }
+        ],
+        "tabela": [
+          {
+            "pergunta": "bills",
+            "frase": "¿Están incluidos los gastos?"
+          },
+          {
+            "pergunta": "pets",
+            "frase": "¿Se admiten mascotas?"
+          },
+          {
+            "pergunta": "deposit",
+            "frase": "¿Cuántos meses de fianza piden?"
+          },
+          {
+            "pergunta": "furniture",
+            "frase": "¿El piso está amueblado?"
+          },
+          {
+            "pergunta": "length of contract",
+            "frase": "¿Cuánto dura el contrato?"
+          },
+          {
+            "pergunta": "repairs",
+            "frase": "¿Quién arregla las averías?"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "El agua está incluido.",
+            "certo": "El agua está incluida.",
+            "motivo": "«Agua» is feminine; the article «el» is only for the sound."
+          },
+          {
+            "errado": "Acepto el piso siempre que incluye los gastos.",
+            "certo": "Acepto el piso siempre que incluya los gastos.",
+            "motivo": "After «siempre que» (a condition), use the subjunctive."
+          },
+          {
+            "errado": "Estoy interesado de este piso.",
+            "certo": "Estoy interesado en este piso.",
+            "motivo": "In Spanish, «interesado» takes «en»."
+          },
+          {
+            "errado": "Me gusta el piso porque tiene un piso de madera.",
+            "certo": "Me gusta el piso porque tiene suelo de madera.",
+            "motivo": "«Suelo» is the floor; «piso» is a flat (or a storey)."
+          }
+        ],
+        "tag": "Housing"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "Visitar un piso / Viewing a flat",
+        "contexto": "Marcos views a flat with the landlady and asks about the conditions.",
+        "linhas": [
+          {
+            "personagem": "La casera",
+            "ru": "— Buenas tardes, Marcos. Pasa, este es el piso.",
+            "pt": "— Good afternoon, Marcos. Come in, this is the flat.",
+            "audio": "Buenas tardes, Marcos. Pasa, este es el piso.",
+            "rotulo": "La casera"
+          },
+          {
+            "personagem": "Marcos",
+            "ru": "— Gracias. Es muy luminoso. ¿Está amueblado?",
+            "pt": "— Thanks. It's very bright. Is it furnished?",
+            "audio": "Gracias. Es muy luminoso. ¿Está amueblado?",
+            "rotulo": "Marcos"
+          },
+          {
+            "personagem": "La casera",
+            "ru": "— Sí, tiene cama y armario en el dormitorio, y sofá y mesa en el salón.",
+            "pt": "— Yes, there's a bed and a wardrobe in the bedroom, and a sofa and a table in the living room.",
+            "audio": "Sí, tiene cama y armario en el dormitorio, y sofá y mesa en el salón.",
+            "rotulo": "La casera"
+          },
+          {
+            "personagem": "Marcos",
+            "ru": "— Perfecto. ¿Los gastos están incluidos en el alquiler?",
+            "pt": "— Perfect. Are bills included in the rent?",
+            "audio": "Perfecto. ¿Los gastos están incluidos en el alquiler?",
+            "rotulo": "Marcos"
+          },
+          {
+            "personagem": "La casera",
+            "ru": "— El agua sí, pero la luz y el internet los paga el inquilino.",
+            "pt": "— Water is, but the tenant pays for electricity and internet.",
+            "audio": "El agua sí, pero la luz y el internet los paga el inquilino.",
+            "rotulo": "La casera"
+          },
+          {
+            "personagem": "Marcos",
+            "ru": "— ¿Cuántos meses de fianza piden?",
+            "pt": "— How many months' deposit do you ask for?",
+            "audio": "¿Cuántos meses de fianza piden?",
+            "rotulo": "Marcos"
+          },
+          {
+            "personagem": "La casera",
+            "ru": "— Eso lo dice el contrato. Te lo enseño por escrito antes de firmar.",
+            "pt": "— That's in the contract. I'll show it to you in writing before you sign.",
+            "audio": "Eso lo dice el contrato. Te lo enseño por escrito antes de firmar.",
+            "rotulo": "La casera"
+          },
+          {
+            "personagem": "Marcos",
+            "ru": "— Una pregunta más: ¿se admiten mascotas? Tengo un gato.",
+            "pt": "— One more question: are pets allowed? I have a cat.",
+            "audio": "Una pregunta más: ¿se admiten mascotas? Tengo un gato.",
+            "rotulo": "Marcos"
+          },
+          {
+            "personagem": "La casera",
+            "ru": "— Sí, siempre que no moleste a los vecinos.",
+            "pt": "— Yes, as long as it doesn't bother the neighbours.",
+            "audio": "Sí, siempre que no moleste a los vecinos.",
+            "rotulo": "La casera"
+          },
+          {
+            "personagem": "Marcos",
+            "ru": "— No hay problema. Quisiera leer el contrato con calma antes de firmar.",
+            "pt": "— No problem. I'd like to read the contract carefully before signing.",
+            "audio": "No hay problema. Quisiera leer el contrato con calma antes de firmar.",
+            "rotulo": "Marcos"
+          },
+          {
+            "personagem": "La casera",
+            "ru": "— Claro. Te lo mando esta tarde por correo y me dices si tienes dudas.",
+            "pt": "— Of course. I'll email it to you this afternoon and you can tell me if you have any questions.",
+            "audio": "Claro. Te lo mando esta tarde por correo y me dices si tienes dudas.",
+            "rotulo": "La casera"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Play Marcos: view a flat and ask about furniture, bills, deposit, pets and the contract. Also say on what condition you'd take it: «Acepto siempre que…»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say out loud how you'd ask a provider to: set up a line, say the signal has been failing for two days and ask them to check the bill."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-058.json",
+  "responsavel": null
+}

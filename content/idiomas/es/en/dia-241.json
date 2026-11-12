@@ -1,0 +1,185 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 241,
+  "fase": 25,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Review of the tenses: The past tenses",
+  "objetivo": "Lesson 61, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 61,
+    "titulo": "Review of the tenses",
+    "objetivo": "Review and compare the B1 tenses: the past (present perfect, preterite, imperfect, pluperfect), the future, probability, the conditional, «si» hypotheses and the subjunctive, choosing each tense by the idea you want to express.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "The past tenses",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "ayer",
+            "translit": "ah-YEHR",
+            "pt": "yesterday",
+            "en": "",
+            "audio": "ayer"
+          },
+          {
+            "ru": "anoche",
+            "translit": "ah-NOH-cheh",
+            "pt": "last night",
+            "en": "",
+            "audio": "anoche"
+          },
+          {
+            "ru": "hace dos años",
+            "translit": "AH-theh dohs AH-nyohs",
+            "pt": "two years ago",
+            "en": "",
+            "audio": "hace dos años"
+          },
+          {
+            "ru": "esta mañana",
+            "translit": "ES-tah mah-NYAH-nah",
+            "pt": "this morning",
+            "en": "",
+            "audio": "esta mañana"
+          },
+          {
+            "ru": "todavía no",
+            "translit": "toh-dah-BEE-ah noh",
+            "pt": "not yet",
+            "en": "",
+            "audio": "todavía no"
+          },
+          {
+            "ru": "ya",
+            "translit": "yah",
+            "pt": "already",
+            "en": "",
+            "audio": "ya"
+          },
+          {
+            "ru": "mientras",
+            "translit": "MYEN-trahs",
+            "pt": "while",
+            "en": "",
+            "audio": "mientras"
+          },
+          {
+            "ru": "de repente",
+            "translit": "deh rreh-PEN-teh",
+            "pt": "suddenly",
+            "en": "",
+            "audio": "de repente"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Which past tense to use",
+        "explicacao": "STEP 1: ask first: is the action finished and do I place it at a definite time (ayer, el año pasado, en 2019)? Then use the preterite: «Ayer compré pan», «Nació en 2001». STEP 2: is the action a past habit, a description, a setting or something in progress? Use the imperfect: «Cuando era niño, iba a la playa cada verano», «Llovía y hacía frío». This is the trap for English speakers: English \"I used to go\" and \"I WOULD go every summer\" (habit) are both the imperfect «iba», never the conditional «iría»; and \"I was walking\" is «caminaba». STEP 3: is the action linked to the present or to a period that isn't over (hoy, esta semana, este año, nunca, ya, todavía)? In Spain, use the present perfect: «Hoy he trabajado mucho», «Nunca he estado en Perú». STEP 4: did the action happen before another past moment? Use the pluperfect: «Cuando llegué, el tren ya había salido» (the train had already left). STEP 5: in a story, the imperfect describes the background and the preterite narrates the events: «Mientras caminaba por la calle, vi a un amigo» (While I was walking down the street, I saw a friend). Both fit in one sentence: the imperfect is what was going on; the preterite is what interrupted it. STEP 6: IMPORTANT, varieties: in most of Latin America the preterite replaces the present perfect for recent actions: «Hoy comí temprano», and the perfect is less frequent — much like American English \"I already ate\". In Spain the distinction is sharper. In both varieties, «ayer», «anoche» and «el año pasado» take the preterite. STEP 7: remember the irregular preterites: fui (ir and ser), hice, dije, tuve, estuve, pude, puse, supe, quise, vine, di, vi, traje. And the imperfect has only three irregulars: ser (era), ir (iba) and ver (veía).",
+        "comparacao": "English \"When I was a kid, I would go to the beach every summer\" uses \"would\" for a habit, but Spanish uses the imperfect: «iba», not «iría». English \"was -ing\" for an action in progress is also the imperfect: «caminaba». And as in British English, with «ayer» you can't use the present perfect: «Ayer compré», never «Ayer he comprado».",
+        "exemplos": [
+          {
+            "ru": "Ayer compré pan en la panadería.",
+            "pt": "Yesterday I bought bread at the bakery."
+          },
+          {
+            "ru": "Cuando era niño, iba a la playa cada verano.",
+            "pt": "When I was a child, I used to go to the beach every summer."
+          },
+          {
+            "ru": "Hoy he trabajado mucho.",
+            "pt": "I've worked a lot today."
+          },
+          {
+            "ru": "Nunca he estado en Perú.",
+            "pt": "I've never been to Peru."
+          },
+          {
+            "ru": "Cuando llegué, el tren ya había salido.",
+            "pt": "When I arrived, the train had already left."
+          },
+          {
+            "ru": "Mientras caminaba por la calle, vi a un amigo.",
+            "pt": "While I was walking down the street, I saw a friend."
+          },
+          {
+            "ru": "Llovía y hacía frío cuando salimos.",
+            "pt": "It was raining and cold when we went out."
+          }
+        ],
+        "tabela": [
+          {
+            "tempo": "preterite (indefinido)",
+            "forma": "hablé, comí, viví",
+            "uso": "finished action, definite time",
+            "marcadores": "ayer, anoche, hace dos años"
+          },
+          {
+            "tempo": "imperfect",
+            "forma": "hablaba, comía, vivía",
+            "uso": "habit, description, background",
+            "marcadores": "siempre, cuando era niño, mientras"
+          },
+          {
+            "tempo": "present perfect",
+            "forma": "he hablado, has comido",
+            "uso": "linked to the present (Spain)",
+            "marcadores": "hoy, esta semana, nunca, ya, todavía"
+          },
+          {
+            "tempo": "pluperfect",
+            "forma": "había hablado, habías comido",
+            "uso": "before another past event",
+            "marcadores": "ya, antes de, cuando llegué"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ayer he comprado pan.",
+            "certo": "Ayer compré pan.",
+            "motivo": "With «ayer», a finished time, use the preterite."
+          },
+          {
+            "errado": "Cuando era niño, iría a la playa cada verano.",
+            "certo": "Cuando era niño, iba a la playa cada verano.",
+            "motivo": "A past habit (\"would\", \"used to\") takes the imperfect, not the conditional."
+          },
+          {
+            "errado": "Cuando llegué, el tren ya salió.",
+            "certo": "Cuando llegué, el tren ya había salido.",
+            "motivo": "An action before another past one takes the pluperfect."
+          },
+          {
+            "errado": "Mientras comí, sonó el teléfono.",
+            "certo": "Mientras comía, sonó el teléfono.",
+            "motivo": "The action in progress, the one interrupted, goes into the imperfect."
+          }
+        ],
+        "tag": "Tenses"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Tell out loud, in 6 sentences, what you did last night (preterite), what your routine was like as a child (imperfect), what you've done today (present perfect) and what you'd already done before going to bed (pluperfect)."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Review lesson 60. Say one sentence with the personal «a», one with a verb + preposition and one with an attached pronoun."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-061.json",
+  "responsavel": null
+}
