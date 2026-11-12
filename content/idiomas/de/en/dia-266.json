@@ -1,0 +1,149 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 266,
+  "fase": 27,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Presentations, charts and discussion: Describing charts and figures",
+  "objetivo": "Lesson 67, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 67,
+    "titulo": "Presentations, charts and discussion",
+    "objetivo": "Structure and give a short oral presentation (opening, parts, conclusion), describe charts and numbers, and lead a discussion with questions, answers and requests for clarification.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Describing charts and figures",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "die Grafik",
+            "translit": "dee GRAH-feek",
+            "pt": "chart, graph",
+            "en": "graph",
+            "audio": "die Grafik"
+          },
+          {
+            "ru": "das Diagramm",
+            "translit": "das dee-ah-GRAHM",
+            "pt": "diagram",
+            "en": "chart",
+            "audio": "das Diagramm"
+          },
+          {
+            "ru": "das Prozent",
+            "translit": "das pro-TSENT",
+            "pt": "percent",
+            "en": "percent",
+            "audio": "das Prozent"
+          },
+          {
+            "ru": "die Mehrheit",
+            "translit": "dee MAIR-hite",
+            "pt": "majority",
+            "en": "majority",
+            "audio": "die Mehrheit"
+          },
+          {
+            "ru": "die Hälfte",
+            "translit": "dee HELF-teh",
+            "pt": "half",
+            "en": "half",
+            "audio": "die Hälfte"
+          },
+          {
+            "ru": "das Drittel",
+            "translit": "das DRIT-tel",
+            "pt": "a third",
+            "en": "a third",
+            "audio": "das Drittel"
+          },
+          {
+            "ru": "steigen / sinken",
+            "translit": "SHTYE-gen / ZINK-en",
+            "pt": "to rise / to fall",
+            "en": "to rise / to fall",
+            "audio": "steigen / sinken"
+          },
+          {
+            "ru": "im Vergleich zu",
+            "translit": "im fair-GLYKH tsoo",
+            "pt": "compared with",
+            "en": "compared to",
+            "audio": "im Vergleich zu"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Talking about charts, step by step",
+        "explicacao": "STEP 1: to introduce it: «Die Grafik zeigt …», «Das Diagramm stellt … dar». Careful: «die Grafik» is a chart/graph, not \"graphics\" in general. STEP 2: for PROPORTIONS: «die Mehrheit» (majority), «die Minderheit» (minority), «die Hälfte» (half), «ein Drittel» (a third), «ein Viertel» (a quarter), «zehn Prozent» (10%). STEP 3: for the TREND: «Die Zahl STEIGT» (rises), «SINKT» (falls), «BLEIBT GLEICH» (stays the same); in the past: «Die Zahl ist gestiegen / gesunken» (Perfekt with «sein», because these are verbs of change of state — English uses \"has risen\", German says \"IS risen\"). STEP 4: for the SIZE of the change: «um zehn Prozent» = \"by ten percent\": «Die Zahl ist um zehn Prozent gestiegen.» English \"by\" is NOT «bei» or «von» here. STEP 5: to COMPARE: «im Vergleich zum Vorjahr» (compared with the previous year), «im Jahr 2020 … im Jahr 2023 …» (German needs «im Jahr» or just the number — never \"in 2020\"). STEP 6: for the CONCLUSION: «Daraus kann man schließen, dass …» (from this one can conclude that …).",
+        "tabela": [
+          {
+            "funcao": "to present, to introduce",
+            "frase": "Die Grafik zeigt die Zahl der Radfahrer."
+          },
+          {
+            "funcao": "proportion",
+            "frase": "Die Mehrheit fährt mit dem Rad. Ein Drittel geht zu Fuß."
+          },
+          {
+            "funcao": "trend",
+            "frase": "Die Zahl steigt. / ist gestiegen. / bleibt gleich."
+          },
+          {
+            "funcao": "amount of change",
+            "frase": "Die Zahl ist um zehn Prozent gestiegen."
+          },
+          {
+            "funcao": "comparison",
+            "frase": "Im Vergleich zum Vorjahr ist die Zahl gestiegen."
+          },
+          {
+            "funcao": "conclusion",
+            "frase": "Daraus kann man schließen, dass das Rad beliebter wird."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Die Zahl hat gestiegen.",
+            "certo": "Die Zahl ist gestiegen.",
+            "motivo": "«steigen» takes «sein» — English \"has risen\" misleads you."
+          },
+          {
+            "errado": "Die Zahl ist von zehn Prozent gestiegen.",
+            "certo": "Die Zahl ist um zehn Prozent gestiegen.",
+            "motivo": "Size of the change: «um» = \"by\"."
+          },
+          {
+            "errado": "Im Vergleich zu dem Vorjahr",
+            "certo": "Im Vergleich zum Vorjahr",
+            "motivo": "Contraction: zu dem → zum."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe an imaginary chart out loud in 6 sentences, with proportions, trend and comparison."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write the 7 parts of a presentation with one sentence each."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-067.json",
+  "responsavel": null
+}

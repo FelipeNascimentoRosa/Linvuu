@@ -1,0 +1,153 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 265,
+  "fase": 27,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Presentations, charts and discussion: The structure of a presentation",
+  "objetivo": "Lesson 67, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 67,
+    "titulo": "Presentations, charts and discussion",
+    "objetivo": "Structure and give a short oral presentation (opening, parts, conclusion), describe charts and numbers, and lead a discussion with questions, answers and requests for clarification.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "The structure of a presentation",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "begrüßen",
+            "translit": "buh-GREW-sen",
+            "pt": "to greet, to welcome",
+            "en": "to welcome",
+            "audio": "begrüßen"
+          },
+          {
+            "ru": "das Thema",
+            "translit": "das TAY-mah",
+            "pt": "topic",
+            "en": "topic",
+            "audio": "das Thema"
+          },
+          {
+            "ru": "die Gliederung",
+            "translit": "dee GLEE-der-oong",
+            "pt": "structure, outline",
+            "en": "outline",
+            "audio": "die Gliederung"
+          },
+          {
+            "ru": "die Folie",
+            "translit": "dee FOHL-yeh",
+            "pt": "slide",
+            "en": "slide",
+            "audio": "die Folie"
+          },
+          {
+            "ru": "der Vortrag",
+            "translit": "dair FOR-trahk",
+            "pt": "talk, presentation",
+            "en": "talk",
+            "audio": "der Vortrag"
+          },
+          {
+            "ru": "die Aufmerksamkeit",
+            "translit": "dee OWF-mairk-zahm-kite",
+            "pt": "attention",
+            "en": "attention",
+            "audio": "die Aufmerksamkeit"
+          },
+          {
+            "ru": "vorstellen",
+            "translit": "FOR-shteh-len",
+            "pt": "to present, to introduce",
+            "en": "to present",
+            "audio": "vorstellen"
+          },
+          {
+            "ru": "zusammenfassen",
+            "translit": "tsoo-ZAH-men-fah-sen",
+            "pt": "to sum up",
+            "en": "to summarise",
+            "audio": "zusammenfassen"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "A presentation, step by step",
+        "explicacao": "STEP 1: OPENING: «Guten Morgen, meine Damen und Herren. Ich begrüße Sie zu meiner Präsentation.» STEP 2: TOPIC: «Heute spreche ich über …», «Das Thema meines Vortrags ist …». STEP 3: OUTLINE: «Mein Vortrag besteht aus drei Teilen: Erstens …, zweitens …, drittens …» — the same \"firstly, secondly, thirdly\" signposting you use in English. STEP 4: BODY: «Auf dieser Folie sehen Sie …», «Wie Sie sehen, …», «Ein wichtiger Punkt ist …». STEP 5: TRANSITION: «Kommen wir nun zum zweiten Punkt» (\"let's move on to the second point\" — note the verb comes FIRST, like a suggestion), «Damit komme ich zum Schluss». STEP 6: CONCLUSION: «Zusammenfassend kann man sagen, dass …» (verb at the end after «dass»). STEP 7: CLOSING: «Vielen Dank für Ihre Aufmerksamkeit. Haben Sie Fragen?» Watch out: English \"Today I talk about…\" keeps subject before verb; German puts the verb in 2nd place: «Heute SPRECHE ich …».",
+        "tabela": [
+          {
+            "parte": "opening",
+            "frase": "Guten Morgen, meine Damen und Herren. Ich begrüße Sie zu meiner Präsentation."
+          },
+          {
+            "parte": "topic",
+            "frase": "Heute spreche ich über das Thema Umwelt."
+          },
+          {
+            "parte": "outline",
+            "frase": "Mein Vortrag besteht aus drei Teilen."
+          },
+          {
+            "parte": "body",
+            "frase": "Auf dieser Folie sehen Sie die Zahlen. Wie Sie sehen, …"
+          },
+          {
+            "parte": "transition",
+            "frase": "Kommen wir nun zum zweiten Punkt."
+          },
+          {
+            "parte": "conclusion",
+            "frase": "Zusammenfassend kann man sagen, dass …"
+          },
+          {
+            "parte": "closing",
+            "frase": "Vielen Dank für Ihre Aufmerksamkeit. Haben Sie Fragen?"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Heute ich spreche über Umwelt.",
+            "certo": "Heute spreche ich über Umwelt.",
+            "motivo": "Verb in 2nd position after «heute» — not \"Today I speak\" word order."
+          },
+          {
+            "errado": "Ich begrüße Sie für meine Präsentation.",
+            "certo": "Ich begrüße Sie zu meiner Präsentation.",
+            "motivo": "«begrüßen zu» + dative (English says \"welcome TO\", German also uses «zu», never «für»)."
+          },
+          {
+            "errado": "Kommen wir jetzt zu die zweite Punkt.",
+            "certo": "Kommen wir nun zum zweiten Punkt.",
+            "motivo": "zu + dative: «zum zweiten Punkt»."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Say out loud the opening of a 1-minute presentation: welcome, topic and outline."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 sentences about media and the environment."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-067.json",
+  "responsavel": null
+}
