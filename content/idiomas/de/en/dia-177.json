@@ -1,0 +1,144 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 177,
+  "fase": 18,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Housing, town and finding your way: Looking for a flat",
+  "objetivo": "Lesson 45, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 45,
+    "titulo": "Housing, town and finding your way",
+    "objetivo": "Look for and rent an apartment (rent, floor, deposit), give and understand directions with several landmarks, and describe a neighborhood with its pros and cons.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Looking for a flat",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "die Kaltmiete",
+            "translit": "dee KAHLT-mee-teh",
+            "pt": "rent without utilities (\"cold rent\")",
+            "en": "rent (excl. costs)",
+            "audio": "die Kaltmiete"
+          },
+          {
+            "ru": "die Warmmiete",
+            "translit": "dee VARM-mee-teh",
+            "pt": "rent including utilities (\"warm rent\")",
+            "en": "rent (incl. costs)",
+            "audio": "die Warmmiete"
+          },
+          {
+            "ru": "die Kaution",
+            "translit": "dee kow-TSYOHN",
+            "pt": "security deposit",
+            "en": "deposit",
+            "audio": "die Kaution"
+          },
+          {
+            "ru": "der Stock",
+            "translit": "dair SHTOCK",
+            "pt": "floor, story",
+            "en": "floor",
+            "audio": "der Stock"
+          },
+          {
+            "ru": "das Erdgeschoss",
+            "translit": "dahs AIRT-geh-shoss",
+            "pt": "ground floor",
+            "en": "ground floor",
+            "audio": "das Erdgeschoss"
+          },
+          {
+            "ru": "der Aufzug",
+            "translit": "dair OWF-tsook",
+            "pt": "elevator",
+            "en": "lift",
+            "audio": "der Aufzug"
+          },
+          {
+            "ru": "möbliert",
+            "translit": "mö-BLEERT",
+            "pt": "furnished",
+            "en": "furnished",
+            "audio": "möbliert"
+          },
+          {
+            "ru": "der Vermieter",
+            "translit": "dair fair-MEE-ter",
+            "pt": "landlord",
+            "en": "landlord",
+            "audio": "der Vermieter"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "Renting an apartment, step by step",
+        "explicacao": "STEP 1: in ads, the «Kaltmiete» is the rent WITHOUT utilities; the «Warmmiete» includes water, heating and building fees. STEP 2: the «Kaution» is the security deposit, usually up to three months of «Kaltmiete». STEP 3: the floor — watch out, this is different from American English: «im Erdgeschoss» (on the ground floor = US first floor), «im ersten Stock» (on the first floor = US second floor), «im zweiten Stock», «im dritten Stock». After «in» + Wo?, the dative ordinal takes «-en». STEP 4: useful questions: «Ist die Wohnung möbliert?» (Is it furnished?), «Wie hoch ist die Kaution?» (How much is the deposit?), «In welchem Stock liegt die Wohnung?», «Gibt es einen Aufzug?» (Is there an elevator?), «Ab wann ist die Wohnung frei?» (When is it available?). STEP 5: asking permission: «Darf man Haustiere halten?» (Are pets allowed?) STEP 6: closing the deal: «Ich nehme die Wohnung» (I'll take the apartment).",
+        "tabela": [
+          {
+            "pergunta": "Ist die Wohnung möbliert?",
+            "pt": "Is the apartment furnished?"
+          },
+          {
+            "pergunta": "Wie hoch ist die Kaution?",
+            "pt": "How much is the deposit?"
+          },
+          {
+            "pergunta": "In welchem Stock liegt die Wohnung?",
+            "pt": "What floor is the apartment on?"
+          },
+          {
+            "pergunta": "Gibt es einen Aufzug?",
+            "pt": "Is there an elevator?"
+          },
+          {
+            "pergunta": "Ab wann ist die Wohnung frei?",
+            "pt": "When is the apartment available?"
+          },
+          {
+            "pergunta": "Darf man Haustiere halten?",
+            "pt": "Are pets allowed?"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Die Wohnung ist im dritte Stock.",
+            "certo": "Die Wohnung ist im dritten Stock.",
+            "motivo": "Masculine dative with an ordinal: -en."
+          },
+          {
+            "errado": "Ich suche ein Wohnung.",
+            "certo": "Ich suche eine Wohnung.",
+            "motivo": "«Wohnung» is feminine: «eine»."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Ask about 6 important things when renting an apartment: rent, deposit, floor, elevator, furniture and move-in date."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write a 5-line formal e-mail asking for information about a course."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-045.json",
+  "responsavel": null
+}

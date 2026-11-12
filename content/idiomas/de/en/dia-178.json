@@ -1,0 +1,153 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 178,
+  "fase": 18,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Housing, town and finding your way: Giving directions",
+  "objetivo": "Lesson 45, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 45,
+    "titulo": "Housing, town and finding your way",
+    "objetivo": "Look for and rent an apartment (rent, floor, deposit), give and understand directions with several landmarks, and describe a neighborhood with its pros and cons.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Giving directions",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "geradeaus",
+            "translit": "geh-RAH-deh-ows",
+            "pt": "straight ahead",
+            "en": "straight ahead",
+            "audio": "geradeaus"
+          },
+          {
+            "ru": "links",
+            "translit": "LINKS",
+            "pt": "(to the) left",
+            "en": "left",
+            "audio": "links"
+          },
+          {
+            "ru": "rechts",
+            "translit": "REKHTS",
+            "pt": "(to the) right",
+            "en": "right",
+            "audio": "rechts"
+          },
+          {
+            "ru": "die Ampel",
+            "translit": "dee AHM-pel",
+            "pt": "traffic light",
+            "en": "traffic light",
+            "audio": "die Ampel"
+          },
+          {
+            "ru": "die Kreuzung",
+            "translit": "dee KROY-tsoong",
+            "pt": "intersection",
+            "en": "crossing",
+            "audio": "die Kreuzung"
+          },
+          {
+            "ru": "die Ecke",
+            "translit": "dee ECK-eh",
+            "pt": "corner",
+            "en": "corner",
+            "audio": "die Ecke"
+          },
+          {
+            "ru": "die Brücke",
+            "translit": "dee BRÜ-keh",
+            "pt": "bridge",
+            "en": "bridge",
+            "audio": "die Brücke"
+          },
+          {
+            "ru": "vorbei an",
+            "translit": "for-BY ahn",
+            "pt": "past (going past)",
+            "en": "past",
+            "audio": "vorbei an"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Giving directions, step by step",
+        "explicacao": "STEP 1: use the formal IMPERATIVE (lesson 13) to give directions: «Gehen Sie geradeaus» (go straight ahead), «Biegen Sie links ab» (turn left), «Nehmen Sie die zweite Straße rechts» (take the second street on the right). STEP 2: «bis zu» + dative marks the end point: «bis zur Ampel» (zu der — as far as the traffic light), «bis zum Bahnhof» (zu dem), «bis zur Kreuzung». STEP 3: «an der Kreuzung» (Wo?, dative — at the intersection) and «über die Brücke» (movement: accusative — across the bridge). STEP 4: «vorbei an» + dative: «an der Bank vorbei» (past the bank). STEP 5: position: «auf der linken Seite» (on the left side), «auf der rechten Seite». STEP 6: ordinals for streets: «die erste / zweite / dritte Straße»: «Nehmen Sie die dritte Straße links.»",
+        "tabela": [
+          {
+            "instrucao": "straight ahead to the traffic light",
+            "frase": "Gehen Sie geradeaus bis zur Ampel."
+          },
+          {
+            "instrucao": "turning",
+            "frase": "Biegen Sie links ab."
+          },
+          {
+            "instrucao": "at the intersection",
+            "frase": "An der Kreuzung gehen Sie rechts."
+          },
+          {
+            "instrucao": "crossing the bridge",
+            "frase": "Gehen Sie über die Brücke."
+          },
+          {
+            "instrucao": "going past",
+            "frase": "Gehen Sie an der Bank vorbei."
+          },
+          {
+            "instrucao": "the second street",
+            "frase": "Nehmen Sie die zweite Straße links."
+          },
+          {
+            "instrucao": "on the side",
+            "frase": "Der Bahnhof ist auf der linken Seite."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Gehen Sie bis die Ampel.",
+            "certo": "Gehen Sie bis zur Ampel.",
+            "motivo": "«bis zu» + dative."
+          },
+          {
+            "errado": "Gehen Sie über der Brücke.",
+            "certo": "Gehen Sie über die Brücke.",
+            "motivo": "Movement (Wohin?): accusative."
+          },
+          {
+            "errado": "Der Bahnhof ist auf der linke Seite.",
+            "certo": "Der Bahnhof ist auf der linken Seite.",
+            "motivo": "Feminine dative: «-en»."
+          }
+        ],
+        "tag": "Prepositions"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Give directions out loud from where you are to a place you know, with at least 5 instructions."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 questions and answers about an apartment."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-045.json",
+  "responsavel": null
+}

@@ -1,0 +1,144 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 179,
+  "fase": 18,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Housing, town and finding your way: Describing the neighbourhood",
+  "objetivo": "Lesson 45, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 45,
+    "titulo": "Housing, town and finding your way",
+    "objetivo": "Look for and rent an apartment (rent, floor, deposit), give and understand directions with several landmarks, and describe a neighborhood with its pros and cons.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Describing the neighbourhood",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Pros, cons and moving",
+        "explicacao": "STEP 1: to talk about the neighborhood: «Die Lage ist zentral / ruhig / laut» (the location is central / quiet / noisy). STEP 2: for pros and cons, use «dass»: «Der Vorteil ist, dass die Wohnung zentral liegt» (the advantage is that the apartment is central). «Der Nachteil ist, dass es laut ist» (the disadvantage is that it's noisy). STEP 3: what's nearby: «In der Nähe gibt es einen Supermarkt, eine Apotheke und eine Haltestelle.» STEP 4: moving: «Ich ziehe nach Berlin um» (umziehen, separable — I'm moving to Berlin): «Wir ziehen in eine größere Wohnung um.» STEP 5: comparing (lesson 35): «Die neue Wohnung ist größer als die alte.»",
+        "tabela": [
+          {
+            "funcao": "the location",
+            "frase": "Die Lage ist zentral und ruhig."
+          },
+          {
+            "funcao": "advantage",
+            "frase": "Der Vorteil ist, dass alles in der Nähe ist."
+          },
+          {
+            "funcao": "disadvantage",
+            "frase": "Der Nachteil ist, dass es abends laut ist."
+          },
+          {
+            "funcao": "what's nearby",
+            "frase": "In der Nähe gibt es einen Supermarkt."
+          },
+          {
+            "funcao": "moving",
+            "frase": "Wir ziehen in eine größere Wohnung um."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 10,
+        "titulo": "Wie komme ich zum Bahnhof? / How do I get to the station?",
+        "contexto": "A tourist asks a passerby for directions.",
+        "linhas": [
+          {
+            "personagem": "Tom",
+            "ru": "— Entschuldigung, wie komme ich zum Bahnhof?",
+            "pt": "— Excuse me, how do I get to the station?",
+            "audio": "Entschuldigung, wie komme ich zum Bahnhof?",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Passantin",
+            "ru": "— Gehen Sie geradeaus bis zur Ampel.",
+            "pt": "— Go straight ahead to the traffic light.",
+            "audio": "Gehen Sie geradeaus bis zur Ampel.",
+            "rotulo": "Passantin"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Bis zur Ampel. Und dann?",
+            "pt": "— To the traffic light. And then?",
+            "audio": "Bis zur Ampel. Und dann?",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Passantin",
+            "ru": "— Dann gehen Sie links und an der Kreuzung rechts.",
+            "pt": "— Then turn left, and at the intersection turn right.",
+            "audio": "Dann gehen Sie links und an der Kreuzung rechts.",
+            "rotulo": "Passantin"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Links, und an der Kreuzung rechts. Ist es weit?",
+            "pt": "— Left, and right at the intersection. Is it far?",
+            "audio": "Links, und an der Kreuzung rechts. Ist es weit?",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Passantin",
+            "ru": "— Nein, nur zehn Minuten zu Fuß.",
+            "pt": "— No, only ten minutes on foot.",
+            "audio": "Nein, nur zehn Minuten zu Fuß.",
+            "rotulo": "Passantin"
+          },
+          {
+            "personagem": "Passantin",
+            "ru": "— Sie gehen über die Brücke, und der Bahnhof ist auf der linken Seite.",
+            "pt": "— You cross the bridge, and the station is on the left side.",
+            "audio": "Sie gehen über die Brücke, und der Bahnhof ist auf der linken Seite.",
+            "rotulo": "Passantin"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Vielen Dank! Gibt es dort auch eine Apotheke?",
+            "pt": "— Thank you very much! Is there a pharmacy there too?",
+            "audio": "Vielen Dank! Gibt es dort auch eine Apotheke?",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Passantin",
+            "ru": "— Ja, gegenüber dem Bahnhof, neben der Bank.",
+            "pt": "— Yes, across from the station, next to the bank.",
+            "audio": "Ja, gegenüber dem Bahnhof, neben der Bank.",
+            "rotulo": "Passantin"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Super, dann kann ich dort gleich etwas kaufen. Danke schön!",
+            "pt": "— Great, then I can buy something right there. Thanks a lot!",
+            "audio": "Super, dann kann ich dort gleich etwas kaufen. Danke schön!",
+            "rotulo": "Tom"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe your neighborhood in 8 sentences: the location, what's nearby, one advantage and one disadvantage."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write directions with 6 instructions, from your workplace to the station."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-045.json",
+  "responsavel": null
+}
