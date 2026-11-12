@@ -1,0 +1,150 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 173,
+  "fase": 18,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Work, forms and formal e-mails: Formal and informal e-mails",
+  "objetivo": "Lesson 44, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 44,
+    "titulo": "Work, forms and formal e-mails",
+    "objetivo": "Write formal and informal e-mails (greeting, subject, request, apology, closing), fill in forms, and understand job and course ads, at A2 writing level.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Formal and informal e-mails",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "Sehr geehrte Damen und Herren",
+            "translit": "zair geh-AIR-teh DAH-men oont HAIR-en",
+            "pt": "Dear Sir or Madam",
+            "en": "Dear Sir or Madam",
+            "audio": "Sehr geehrte Damen und Herren"
+          },
+          {
+            "ru": "Mit freundlichen Grüßen",
+            "translit": "mit FROYNT-likh-en GRÜ-sen",
+            "pt": "Sincerely, Kind regards",
+            "en": "Kind regards",
+            "audio": "Mit freundlichen Grüßen"
+          },
+          {
+            "ru": "Liebe Grüße",
+            "translit": "LEE-beh GRÜ-seh",
+            "pt": "Best wishes, Love (informal)",
+            "en": "Love, best wishes",
+            "audio": "Liebe Grüße"
+          },
+          {
+            "ru": "der Betreff",
+            "translit": "dair beh-TREFF",
+            "pt": "subject (of an e-mail)",
+            "en": "subject",
+            "audio": "der Betreff"
+          },
+          {
+            "ru": "die Anfrage",
+            "translit": "dee AHN-frah-geh",
+            "pt": "inquiry, request",
+            "en": "enquiry",
+            "audio": "die Anfrage"
+          },
+          {
+            "ru": "die Antwort",
+            "translit": "dee AHNT-vort",
+            "pt": "answer, reply",
+            "en": "answer",
+            "audio": "die Antwort"
+          },
+          {
+            "ru": "der Anhang",
+            "translit": "dair AHN-hahng",
+            "pt": "attachment",
+            "en": "attachment",
+            "audio": "der Anhang"
+          },
+          {
+            "ru": "bitte um",
+            "translit": "BIT-eh oom",
+            "pt": "I request, I ask for",
+            "en": "I ask for",
+            "audio": "bitte um"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "An e-mail, step by step",
+        "explicacao": "STEP 1: a formal e-mail (to a company, to someone you don't know) opens with «Sehr geehrte Damen und Herren,» (Dear Sir or Madam) — or «Sehr geehrte Frau Müller,» / «Sehr geehrter Herr Müller,» — and closes with «Mit freundlichen Grüßen» (Kind regards) and your name. Use «Sie» and polite forms. STEP 2: an informal e-mail (to a friend) opens with «Liebe Anna,» or «Lieber Paul,» and closes with «Liebe Grüße» or «Viele Grüße» (Best wishes). Use «du». STEP 3: the SUBJECT line (Betreff) is short: «Anfrage zum Deutschkurs» (Inquiry about the German course). STEP 4: the body goes: introduction, request, thanks: «Ich möchte mich für den Kurs anmelden. Könnten Sie mir bitte weitere Informationen schicken?» STEP 5: the polite request FORMULAS: «Könnten Sie mir bitte …?», «Ich würde gern …», «Ich bitte um …». STEP 6: replying: «Vielen Dank für Ihre Antwort» (Thank you for your reply). STEP 7: after the comma of the greeting, the first word of the e-mail starts in lowercase (unless it's a noun or «Sie»).",
+        "comparacao": "English \"Dear…\" works for everyone; German splits it: «Sehr geehrte/r…» for formal e-mails and «Liebe/r…» for friends — and «Liebe/r» is NOT for your bank. \"Sincerely\" / \"Kind regards\" = «Mit freundlichen Grüßen».",
+        "tabela": [
+          {
+            "tipo": "formal greeting",
+            "frase": "Sehr geehrte Damen und Herren, / Sehr geehrte Frau Müller, / Sehr geehrter Herr Müller,"
+          },
+          {
+            "tipo": "formal closing",
+            "frase": "Mit freundlichen Grüßen, (nome)"
+          },
+          {
+            "tipo": "informal greeting",
+            "frase": "Liebe Anna, / Lieber Paul,"
+          },
+          {
+            "tipo": "informal closing",
+            "frase": "Liebe Grüße, / Viele Grüße, / Bis bald,"
+          },
+          {
+            "tipo": "polite request",
+            "frase": "Könnten Sie mir bitte weitere Informationen schicken?"
+          },
+          {
+            "tipo": "thanks",
+            "frase": "Vielen Dank für Ihre Antwort."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Hallo Herr Müller, …",
+            "certo": "Sehr geehrter Herr Müller, …",
+            "motivo": "In a formal e-mail, the greeting is «Sehr geehrter/geehrte»."
+          },
+          {
+            "errado": "Mit freundliche Grüße",
+            "certo": "Mit freundlichen Grüßen",
+            "motivo": "«mit» + dative plural: -en."
+          },
+          {
+            "errado": "Dear Frau Müller",
+            "certo": "Sehr geehrte Frau Müller",
+            "motivo": "In German, the greeting is in German."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Say out loud how you'd open and close a formal e-mail and an informal one."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 8 sentences about health and appointments: symptoms, instructions and requests."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-044.json",
+  "responsavel": null
+}
