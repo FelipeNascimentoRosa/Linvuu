@@ -1,0 +1,154 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 233,
+  "fase": 24,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Verbs with prepositions 1: Verbs with «auf»",
+  "objetivo": "Lesson 59, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 59,
+    "titulo": "Verbs with prepositions 1",
+    "objetivo": "Learn the most common verbs that take a fixed preposition (auf, an, für, über, um, von, mit, bei, zu) and the case it takes, and use them in complete sentences.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Verbs with «auf»",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "warten auf",
+            "translit": "VAR-ten owf",
+            "pt": "to wait for",
+            "en": "to wait for",
+            "audio": "warten auf"
+          },
+          {
+            "ru": "sich freuen auf",
+            "translit": "zikh FROY-en owf",
+            "pt": "to look forward to",
+            "en": "to look forward to",
+            "audio": "sich freuen auf"
+          },
+          {
+            "ru": "hoffen auf",
+            "translit": "HOFF-en owf",
+            "pt": "to hope for",
+            "en": "to hope for",
+            "audio": "hoffen auf"
+          },
+          {
+            "ru": "sich vorbereiten auf",
+            "translit": "zikh FOR-beh-ry-ten owf",
+            "pt": "to prepare for",
+            "en": "to prepare for",
+            "audio": "sich vorbereiten auf"
+          },
+          {
+            "ru": "achten auf",
+            "translit": "AHKH-ten owf",
+            "pt": "to pay attention to",
+            "en": "to pay attention to",
+            "audio": "achten auf"
+          },
+          {
+            "ru": "antworten auf",
+            "translit": "AHNT-vor-ten owf",
+            "pt": "to reply to",
+            "en": "to answer",
+            "audio": "antworten auf"
+          },
+          {
+            "ru": "reagieren auf",
+            "translit": "reh-ahk-TEER-en owf",
+            "pt": "to react to",
+            "en": "to react to",
+            "audio": "reagieren auf"
+          },
+          {
+            "ru": "sich verlassen auf",
+            "translit": "zikh fair-LAHSS-en owf",
+            "pt": "to rely on, to count on",
+            "en": "to rely on",
+            "audio": "sich verlassen auf"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "Verbs with prepositions, step by step",
+        "explicacao": "STEP 1: many German verbs take a FIXED PREPOSITION that's part of the verb and can't be swapped: «warten AUF» (wait for), «denken AN» (think of), «sich interessieren FÜR» (be interested in). STEP 2: the preposition TAKES A CASE (accusative or dative), and the noun after it is in that case: «Ich warte auf DEN Bus» (accusative). STEP 3: ALWAYS learn the verb with its preposition and case: «warten auf + Akk». STEP 4: the German preposition is often NOT the one English uses: wait FOR = warten AUF; think OF = denken AN; interested IN = interessiert FÜR; depend ON = abhängen VON. Translating the English preposition is the #1 mistake. STEP 5: in this session, verbs with «AUF»: all take the ACCUSATIVE in their common uses: «Ich freue mich auf den Urlaub», «Ich hoffe auf gutes Wetter.» STEP 6: with a person, use the pronoun or noun in the accusative: «Ich warte auf meinen Bruder» / «Ich warte auf ihn.»",
+        "comparacao": "English verbs have fixed prepositions too (\"wait for\", \"think of\", \"depend on\") — but they almost never match the German ones. Learn each German verb as a chunk: «warten auf», «denken an», «abhängen von».",
+        "tabela": [
+          {
+            "verbo": "warten auf + Akk",
+            "frase": "Ich warte auf den Bus."
+          },
+          {
+            "verbo": "sich freuen auf + Akk",
+            "frase": "Ich freue mich auf den Urlaub."
+          },
+          {
+            "verbo": "hoffen auf + Akk",
+            "frase": "Ich hoffe auf gutes Wetter."
+          },
+          {
+            "verbo": "sich vorbereiten auf + Akk",
+            "frase": "Ich bereite mich auf die Prüfung vor."
+          },
+          {
+            "verbo": "achten auf + Akk",
+            "frase": "Achte auf den Verkehr!"
+          },
+          {
+            "verbo": "antworten auf + Akk",
+            "frase": "Er antwortet auf die E-Mail."
+          },
+          {
+            "verbo": "sich verlassen auf + Akk",
+            "frase": "Ich verlasse mich auf dich."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich warte für den Bus.",
+            "certo": "Ich warte auf den Bus.",
+            "motivo": "Fixed preposition: «warten auf» (wait FOR = auf)."
+          },
+          {
+            "errado": "Ich warte auf dem Bus.",
+            "certo": "Ich warte auf den Bus.",
+            "motivo": "«warten auf» takes the accusative."
+          },
+          {
+            "errado": "Ich freue mich über den Urlaub. (still to come)",
+            "certo": "Ich freue mich auf den Urlaub.",
+            "motivo": "«sich freuen auf» = looking forward to the future."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Say 6 sentences with «auf» verbs: «Ich warte auf … Ich freue mich auf … Ich hoffe auf …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 sentences with paired connectors."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-059.json",
+  "responsavel": null
+}

@@ -1,0 +1,153 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 234,
+  "fase": 24,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Verbs with prepositions 1: Verbs with «an», «für» and «über»",
+  "objetivo": "Lesson 59, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 59,
+    "titulo": "Verbs with prepositions 1",
+    "objetivo": "Learn the most common verbs that take a fixed preposition (auf, an, für, über, um, von, mit, bei, zu) and the case it takes, and use them in complete sentences.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Verbs with «an», «für» and «über»",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "denken an",
+            "translit": "DENK-en ahn",
+            "pt": "to think of, about",
+            "en": "to think of",
+            "audio": "denken an"
+          },
+          {
+            "ru": "glauben an",
+            "translit": "GLOW-ben ahn",
+            "pt": "to believe in",
+            "en": "to believe in",
+            "audio": "glauben an"
+          },
+          {
+            "ru": "teilnehmen an",
+            "translit": "TILE-nay-men ahn",
+            "pt": "to take part in",
+            "en": "to take part in",
+            "audio": "teilnehmen an"
+          },
+          {
+            "ru": "sich erinnern an",
+            "translit": "zikh air-IN-ern ahn",
+            "pt": "to remember",
+            "en": "to remember",
+            "audio": "sich erinnern an"
+          },
+          {
+            "ru": "sich interessieren für",
+            "translit": "zikh in-teh-reh-SEER-en für",
+            "pt": "to be interested in",
+            "en": "to be interested in",
+            "audio": "sich interessieren für"
+          },
+          {
+            "ru": "sich entscheiden für",
+            "translit": "zikh ent-SHY-den für",
+            "pt": "to decide on, to choose",
+            "en": "to decide on",
+            "audio": "sich entscheiden für"
+          },
+          {
+            "ru": "sprechen über",
+            "translit": "SHPREKH-en Ü-ber",
+            "pt": "to talk about",
+            "en": "to talk about",
+            "audio": "sprechen über"
+          },
+          {
+            "ru": "sich ärgern über",
+            "translit": "zikh AIR-gern Ü-ber",
+            "pt": "to be annoyed about",
+            "en": "to be annoyed about",
+            "audio": "sich ärgern über"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Verbs with an, für and über",
+        "explicacao": "STEP 1: with «AN»: «denken an + Akk» («Ich denke an dich» — I'm thinking of you), «glauben an + Akk» («Ich glaube an dich» — I believe in you), «sich erinnern an + Akk» (remember), and «teilnehmen an + DATIVE» («Ich nehme an dem Kurs teil» — «am Kurs» — I'm taking part in the course). STEP 2: with «FÜR»: always accusative: «sich interessieren für + Akk» («Ich interessiere mich für Musik» — interested IN = für), «sich entscheiden für + Akk» (decide on), «sich bedanken für + Akk» (thank for). STEP 3: with «ÜBER»: accusative: «sprechen über + Akk» (talk about), «sich ärgern über + Akk» (be annoyed about), «sich freuen über + Akk» (be happy about something you have), «diskutieren über + Akk». STEP 4: remember the difference: «freuen auf» (future, look forward to) × «freuen über» (present, be glad about). STEP 5: a trick: «über» = about the topic, «für» = interest or support, «an» = a mental connection.",
+        "tabela": [
+          {
+            "verbo": "denken an + Akk",
+            "frase": "Ich denke an dich."
+          },
+          {
+            "verbo": "teilnehmen an + Dat",
+            "frase": "Ich nehme am Kurs teil."
+          },
+          {
+            "verbo": "sich interessieren für + Akk",
+            "frase": "Ich interessiere mich für Musik."
+          },
+          {
+            "verbo": "sich entscheiden für + Akk",
+            "frase": "Ich habe mich für den Kurs entschieden."
+          },
+          {
+            "verbo": "sprechen über + Akk",
+            "frase": "Wir sprechen über das Wetter."
+          },
+          {
+            "verbo": "sich ärgern über + Akk",
+            "frase": "Ich ärgere mich über den Lärm."
+          },
+          {
+            "verbo": "sich freuen über + Akk",
+            "frase": "Ich freue mich über das Geschenk."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich denke von dir.",
+            "certo": "Ich denke an dich.",
+            "motivo": "Fixed preposition: «denken an» (think OF = an)."
+          },
+          {
+            "errado": "Ich interessiere mich in Musik.",
+            "certo": "Ich interessiere mich für Musik.",
+            "motivo": "«interessieren für» (interested IN = für)."
+          },
+          {
+            "errado": "Wir sprechen von das Wetter.",
+            "certo": "Wir sprechen über das Wetter.",
+            "motivo": "«sprechen über + Akk»."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say 6 sentences with «an», «für» and «über» verbs: «Ich denke an … Ich interessiere mich für … Wir sprechen über …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write the 7 «auf» verbs with their case and one sentence with each."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-059.json",
+  "responsavel": null
+}
