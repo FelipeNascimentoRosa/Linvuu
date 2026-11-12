@@ -5,12 +5,13 @@
 | `fsi-de/` | FSI *German Basic Course*, Units 1–24 (1961) | domínio público (governo dos EUA) | livre | contrastes alemão × inglês escritos para americanos; conferência da progressão |
 | `grimm-grammar/` | *Grimm Grammar*, COERLL / Univ. of Texas at Austin — gramática alemã de referência, A1–B1, escrita **em inglês para falantes de inglês**, 92 tópicos | **CC BY 4.0** | livre, **com atribuição** | explicações por tópico (casos, Perfekt, adjetivos, modais, Konjunktiv, passiva, reflexivos, falsos cognatos, partículas) |
 | `deutsch-im-blick/` | *Deutsch im Blick*, 2ª ed., Zsuzsanna Abrams, COERLL / UT Austin (capítulos 1–10) | **CC BY 4.0** | livre, **com atribuição** | vocabulário por tema, situações e atividades de 1º ano universitário nos EUA |
+| `fsi-es/` | FSI *Spanish Basic Course*, Units 16–55 (1961) | domínio público (governo dos EUA) | livre | contrastes espanhol × inglês escritos para americanos (subjuntivo, condicionais, por/para, gustar, -ing × infinitivo) para as aulas 33–62 |
 
 Baixados em 11–12/11/2026 de coerll.utexas.edu e archive.org. Texto extraído (HTML/PDF/OCR): confira antes de usar.
 
 **Regras (valem para qualquer fonte):**
 1. CC BY 4.0 permite adaptar e vender **desde que se dê crédito**: «Adapted in part from *Grimm Grammar* and *Deutsch im Blick* (COERLL, The University of Texas at Austin), CC BY 4.0». Toda aula que adaptar texto delas registra isso no PR; o crédito público vai na página de fontes do site (a criar antes do primeiro merge que copie texto).
-2. **Nunca** usar fontes CC BY-**NC** (não comercial) ou -**SA** como texto (só como roteiro): ex. *Willkommen: Deutsch für alle* (NC-SA), *A Foundation Course in Reading German* (NC-SA), Open University (NC-SA), Wikibooks (SA).
+2. **Nunca** usar fontes CC BY-**NC** (não comercial) ou -**SA** como texto (só como roteiro): ex. *Willkommen: Deutsch für alle* (NC-SA), *Spanish Grammar in Context* e *Acceso* (COERLL/Kansas, NC), *A Foundation Course in Reading German* (NC-SA), Open University (NC-SA), Wikibooks (SA).
 3. Frase alemã nova só com áudio no mesmo lote (a promessa do site é «áudio em cada frase»).
 4. O texto final da aula é escrito para o aluno do .com: inglês nativo, explicado a partir do inglês.
 

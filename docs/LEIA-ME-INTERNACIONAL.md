@@ -26,7 +26,7 @@ Medido no repositório em 11/11/2026 (`ls content/idiomas/<id>/en`). Confira ant
 | Russo `ru` | 312/312 | completo, indexável | travado (curado à mão) |
 | Francês `fr` | 248/248 | completo, indexável | travado (curado à mão) |
 | Português p/ estrangeiros `br` | 248/248 (escrito em inglês) | completo, indexável | travado |
-| Espanhol `es` | 128/248 | parcial: nota de cobertura, fora do sitemap | travado o que existe |
+| Espanhol `es` | 132/248 (aulas 1–33) | parcial: nota de cobertura, fora do sitemap | travado o que existe |
 | Alemão `de` | 288/288 | completo, indexável (desde 12/11) | travado |
 | Italiano `it` | 0/248 | parcial: nota de cobertura, fora do sitemap | — |
 
@@ -106,3 +106,24 @@ O espanhol (aulas 33–62) e o alemão andam em paralelo: uma aula de cada por r
 **Fontes externas:** **FSI German Basic Course já está no repositório** (`fontes-publicas/fsi-de/`, domínio público, texto por unidade + mapa FSI → aulas). Antes de cada aula do A2 em diante, leia as «Notes on Grammar» das unidades indicadas no mapa: elas comparam o alemão com o inglês (escritas para americanos) e são a base dos contrastes da versão inglesa. Wikibooks só como roteiro; texto final original; nenhuma frase alemã nova sem áudio.
 
 **Ao fechar 288/288:** o curso entra no sitemap/hreflang do .com sozinho (`explicacaoCompleta`), a nota de cobertura some, e a gramática `de.en.json` fica completa.
+
+## 8. Plano do espanhol em inglês — aulas 33–62 (levantamento de 12/11/2026)
+
+**Onde paramos:** aulas 1–32 em inglês (128/248 sessões). Faltam **30 aulas = 120 sessões**: 33–38 (fim do A2 temático + simulado A2) e 39–62 (B1 inteiro). Medido: **≈ 11.700 textos únicos, ≈ 81 mil palavras** a explicar. Todas as 30 aulas têm bloco de erros (hoje do falante de português → reescrever para o de inglês); nenhuma tem tabela «armadilha» de duas colunas.
+
+**Fontes (cruzadas por aula):**
+- **FSI Spanish Basic Course** (domínio público) — `fontes-publicas/fsi-es/`, units 16–55 com mapa FSI → aulas. Escrito para americanos: é a base dos contrastes.
+- **Tatoeba** (CC BY) — banco de frases para conferir naturalidade; nunca o áudio.
+- **Roteiro apenas (licença NC/SA, não copiar):** *Spanish Grammar in Context* (COERLL, CC BY-NC-SA), *Acceso* (Kansas, CC BY-NC), Wikibooks Spanish (CC BY-SA).
+- **Livres com atribuição, se precisar de texto:** *Semillas* e *El Jardín del Lenguaje* (Univ. of Iowa, CC BY).
+
+**O aluno fala inglês — cada aula explora:**
+- **O subjuntivo existe em inglês, mas escondido**: «I suggest that he *be*», «if I *were* you», «I wish I *had*» — ponto de partida para *quiera, fuera, hubiera*.
+- **«If I would…»**: o erro clássico do inglês falado → em espanhol nunca condicional depois de *si* («si tuviera», não «si tendría»).
+- **-ing → infinitivo**: «Smoking is bad» = *Fumar es malo*; «before leaving» = *antes de salir* (FSI 36); o gerúndio espanhol não é sujeito nem adjetivo.
+- **gustar**: «English subject-verb = Spanish object-verb» (FSI 34).
+- **por × para, ser × estar, pero × sino, pretérito × imperfecto**: o inglês tem uma palavra/um tempo só.
+- **Falsos amigos**: *embarazada* (grávida), *constipado* (resfriado), *actualmente* (atualmente, não «actually»), *realizar* (executar), *éxito* (sucesso), *asistir* (comparecer), *carpeta* (pasta), *recordar* (lembrar).
+- **Pronúncia para leitor de inglês**: *j/g* = «h» forte, *ll/y* = «y», *r* batido como o «tt» de «butter» americano, vogais curtas sem ditongo.
+
+**Ordem:** 33–38 (fecha o A2) → 39–47 (tempos compostos e subjuntivo) → 48–62. Uma aula por commit, travada ao entrar; ao fechar 248/248 o curso entra sozinho no sitemap/hreflang do .com (`explicacaoCompleta`).
