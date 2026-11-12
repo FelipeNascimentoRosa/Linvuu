@@ -1,0 +1,148 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 74,
+  "fase": 8,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Travel and transport: At the station: tickets and timetables",
+  "objetivo": "Lesson 19, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 19,
+    "titulo": "Travel and transport",
+    "objetivo": "Say how you get around, buy a ticket, understand train times and book a hotel room.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "At the station: tickets and timetables",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "die Fahrkarte",
+            "translit": "dee FAHR-kar-teh",
+            "pt": "ticket (transportation)",
+            "en": "ticket",
+            "audio": "die Fahrkarte"
+          },
+          {
+            "ru": "einfach",
+            "translit": "INE-fahkh",
+            "pt": "one-way",
+            "en": "one way",
+            "audio": "einfach"
+          },
+          {
+            "ru": "hin und zurück",
+            "translit": "hin oont tsoo-RÜK",
+            "pt": "round-trip",
+            "en": "return",
+            "audio": "hin und zurück"
+          },
+          {
+            "ru": "der Fahrplan",
+            "translit": "dehr FAHR-plahn",
+            "pt": "timetable, schedule",
+            "en": "timetable",
+            "audio": "der Fahrplan"
+          },
+          {
+            "ru": "die Abfahrt",
+            "translit": "dee AHP-fahrt",
+            "pt": "departure",
+            "en": "departure",
+            "audio": "die Abfahrt"
+          },
+          {
+            "ru": "die Ankunft",
+            "translit": "dee AHN-koonft",
+            "pt": "arrival",
+            "en": "arrival",
+            "audio": "die Ankunft"
+          },
+          {
+            "ru": "das Gleis",
+            "translit": "dahs GLICE",
+            "pt": "platform, track",
+            "en": "platform",
+            "audio": "das Gleis"
+          },
+          {
+            "ru": "die Verspätung",
+            "translit": "dee fehr-SHPEH-toong",
+            "pt": "delay",
+            "en": "delay",
+            "audio": "die Verspätung"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Buying a ticket and reading the schedule, step by step",
+        "explicacao": "STEP 1: ask with «bitte»: «Eine Fahrkarte nach München, bitte» (a ticket to Munich, please). STEP 2: the clerk asks «Einfach oder hin und zurück?» (one-way or round-trip?). STEP 3: ask the time: «Wann fährt der Zug nach München?» and answer with «abfahren» (separable): «Der Zug fährt um vierzehn Uhr fünfzehn ab.» Arrival: «Er kommt um sechzehn Uhr an.» STEP 4: transportation schedules use the 24-hour clock, as in lesson 6 — 14:15 is 2:15 pm. STEP 5: «Von Gleis 5» (from track / platform 5). STEP 6: duration: «Wie lange dauert die Fahrt?» — «Drei Stunden.» STEP 7: changing trains: «Sie müssen in Frankfurt umsteigen» (you have to change in Frankfurt; separable).",
+        "tabela": [
+          {
+            "situacao": "asking for the ticket",
+            "frase": "Eine Fahrkarte nach München, bitte."
+          },
+          {
+            "situacao": "one-way or round-trip",
+            "frase": "Einfach oder hin und zurück?"
+          },
+          {
+            "situacao": "asking the time",
+            "frase": "Wann fährt der Zug nach München?"
+          },
+          {
+            "situacao": "answering",
+            "frase": "Der Zug fährt um 14.15 Uhr ab."
+          },
+          {
+            "situacao": "the platform",
+            "frase": "Er fährt von Gleis 5."
+          },
+          {
+            "situacao": "the duration",
+            "frase": "Die Fahrt dauert drei Stunden."
+          },
+          {
+            "situacao": "changing trains",
+            "frase": "Sie müssen in Frankfurt umsteigen."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Der Zug abfährt um acht Uhr.",
+            "certo": "Der Zug fährt um acht Uhr ab.",
+            "motivo": "«abfahren» is separable."
+          },
+          {
+            "errado": "Eine Fahrkarte für München, bitte.",
+            "certo": "Eine Fahrkarte nach München, bitte.",
+            "motivo": "Destination city: «nach», not \"for\"."
+          }
+        ],
+        "tag": "Time"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Buy a ticket out loud: ask, choose one-way or round-trip, ask the time and the platform."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 5 sentences with «mit dem» or «mit der» and a means of transportation."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-019.json",
+  "responsavel": null
+}

@@ -1,0 +1,561 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 76,
+  "fase": 8,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Travel and transport: Reading and practice",
+  "objetivo": "Lesson 19, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 19,
+    "titulo": "Travel and transport",
+    "objetivo": "Say how you get around, buy a ticket, understand train times and book a hotel room.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Reading and practice",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "texto",
+        "min": 5,
+        "titulo": "Eine Reise nach Berlin / A trip to Berlin",
+        "ru": "Ich fahre am Freitag mit dem Zug nach Berlin. Der Zug fährt um acht Uhr ab und kommt um zwölf Uhr an. Die Fahrt dauert vier Stunden. In Berlin schlafe ich im Hotel. Ein Einzelzimmer kostet achtzig Euro pro Nacht. Am Sonntag fliege ich zurück.",
+        "pt": "On Friday I'm going to Berlin by train. The train leaves at eight and arrives at twelve. The trip takes four hours. In Berlin I'm staying at a hotel. A single room costs eighty euros a night. On Sunday I'm flying back.",
+        "perguntas": [
+          {
+            "pergunta": "Wie fährt der Autor nach Berlin?",
+            "resposta": "Mit dem Zug"
+          },
+          {
+            "pergunta": "Wie lange dauert die Fahrt?",
+            "resposta": "Vier Stunden"
+          },
+          {
+            "pergunta": "Wie kommt er zurück?",
+            "resposta": "Mit dem Flugzeug"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 15,
+        "itens": [
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich fahre ___ Zug. (by)",
+            "opcoes": [
+              "mit dem",
+              "mit der",
+              "mit den"
+            ],
+            "gabarito": "mit dem",
+            "explicacao": "«Zug» is a der word: mit dem.",
+            "id": "de-019-e01"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Good evening! Do you have a single room available?\"",
+            "opcoes": [
+              "Abend!",
+              "Sie",
+              "ein",
+              "Haben",
+              "Einzelzimmer",
+              "Guten",
+              "frei?"
+            ],
+            "gabarito": "Guten Abend! Haben Sie ein Einzelzimmer frei?",
+            "explicacao": "Write: Guten Abend! Haben Sie ein Einzelzimmer frei?",
+            "id": "de-019-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich fahre ___ U-Bahn. (by)",
+            "opcoes": [
+              "mit der",
+              "mit dem",
+              "mit die"
+            ],
+            "gabarito": "mit der",
+            "explicacao": "«U-Bahn» is a die word: mit der.",
+            "id": "de-019-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Guten Abend! Haben Sie ein Einzelzimmer frei?",
+            "respostaEsperada": "Guten Abend! Haben Sie ein Einzelzimmer frei?",
+            "explicacao": "Good evening! Do you have a single room available?",
+            "id": "de-019-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"For two nights, please.\"",
+            "opcoes": [
+              "zwei",
+              "bitte.",
+              "Für",
+              "Nächte,"
+            ],
+            "gabarito": "Für zwei Nächte, bitte.",
+            "explicacao": "Write: Für zwei Nächte, bitte.",
+            "id": "de-019-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich gehe ___ Fuß. (on foot)",
+            "opcoes": [
+              "zu",
+              "mit",
+              "nach"
+            ],
+            "gabarito": "zu",
+            "explicacao": "«zu Fuß».",
+            "id": "de-019-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Für zwei Nächte, bitte.",
+            "respostaEsperada": "Für zwei Nächte, bitte.",
+            "explicacao": "For two nights, please.",
+            "id": "de-019-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Guten Abend! Kann ich Ihnen helfen?",
+            "respostaEsperada": "Guten Abend! Kann ich Ihnen helfen?",
+            "explicacao": "Good evening! Can I help you?",
+            "id": "de-019-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Is breakfast included?\"",
+            "opcoes": [
+              "dabei?",
+              "Frühstück",
+              "Ist",
+              "das"
+            ],
+            "gabarito": "Ist das Frühstück dabei?",
+            "explicacao": "Write: Ist das Frühstück dabei?",
+            "id": "de-019-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich fahre ___ Berlin. (to)",
+            "opcoes": [
+              "nach",
+              "zu",
+              "in"
+            ],
+            "gabarito": "nach",
+            "explicacao": "City: «nach».",
+            "id": "de-019-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ist das Frühstück dabei?",
+            "respostaEsperada": "Ist das Frühstück dabei?",
+            "explicacao": "Is breakfast included?",
+            "id": "de-019-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich fahre ___ Bahnhof. (to the)",
+            "opcoes": [
+              "zum",
+              "nach",
+              "zur"
+            ],
+            "gabarito": "zum",
+            "explicacao": "«Bahnhof» is a der word: zum.",
+            "id": "de-019-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Great. Can I pay by card?\"",
+            "opcoes": [
+              "zahlen?",
+              "ich",
+              "mit",
+              "gut.",
+              "Kann",
+              "Sehr",
+              "Karte"
+            ],
+            "gabarito": "Sehr gut. Kann ich mit Karte zahlen?",
+            "explicacao": "Write: Sehr gut. Kann ich mit Karte zahlen?",
+            "id": "de-019-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Der Zug ___ um acht Uhr ___. (to leave)",
+            "opcoes": [
+              "fährt … ab",
+              "abfährt … –",
+              "fahren … ab"
+            ],
+            "gabarito": "fährt … ab",
+            "explicacao": "Separable: the prefix goes to the end.",
+            "id": "de-019-e06"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Sehr gut. Kann ich mit Karte zahlen?",
+            "respostaEsperada": "Sehr gut. Kann ich mit Karte zahlen?",
+            "explicacao": "Great. Can I pay by card?",
+            "id": "de-019-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Of course. Here's your key. The room is on the second floor.\"",
+            "opcoes": [
+              "ist",
+              "Natürlich.",
+              "zweiten",
+              "im",
+              "Das",
+              "Zimmer",
+              "Hier",
+              "Stock.",
+              "Schlüssel.",
+              "ist",
+              "Ihr"
+            ],
+            "gabarito": "Natürlich. Hier ist Ihr Schlüssel. Das Zimmer ist im zweiten Stock.",
+            "explicacao": "Write: Natürlich. Hier ist Ihr Schlüssel. Das Zimmer ist im zweiten Stock.",
+            "id": "de-019-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Ja. Für wie viele Nächte?",
+            "respostaEsperada": "Ja. Für wie viele Nächte?",
+            "explicacao": "Yes. For how many nights?",
+            "id": "de-019-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Natürlich. Hier ist Ihr Schlüssel. Das Zimmer ist im zweiten Stock.",
+            "respostaEsperada": "Natürlich. Hier ist Ihr Schlüssel. Das Zimmer ist im zweiten Stock.",
+            "explicacao": "Of course. Here's your key. The room is on the second floor (third floor in the US).",
+            "id": "de-019-x10",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Einfach oder hin und zurück?» asks:",
+            "opcoes": [
+              "one-way or round-trip",
+              "day or night",
+              "expensive or cheap"
+            ],
+            "gabarito": "one-way or round-trip",
+            "explicacao": "The type of ticket.",
+            "id": "de-019-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Thank you very much. Good night!\"",
+            "opcoes": [
+              "Gute",
+              "Nacht!",
+              "schön.",
+              "Danke"
+            ],
+            "gabarito": "Danke schön. Gute Nacht!",
+            "explicacao": "Write: Danke schön. Gute Nacht!",
+            "id": "de-019-x11",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Das Gleis» is:",
+            "opcoes": [
+              "the platform",
+              "the ticket",
+              "the delay"
+            ],
+            "gabarito": "the platform",
+            "explicacao": "Gleis 5 = track / platform 5.",
+            "id": "de-019-e08"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Danke schön. Gute Nacht!",
+            "respostaEsperada": "Danke schön. Gute Nacht!",
+            "explicacao": "Thank you very much. Good night!",
+            "id": "de-019-x12",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Das Zimmer kostet achtzig Euro pro Nacht.",
+            "respostaEsperada": "Das Zimmer kostet achtzig Euro pro Nacht.",
+            "explicacao": "The room is eighty euros a night.",
+            "id": "de-019-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «der Bus» mean?",
+            "audio": "der Bus",
+            "opcoes": [
+              "one-way",
+              "round-trip",
+              "bus",
+              "timetable, schedule"
+            ],
+            "gabarito": "bus",
+            "explicacao": "«der Bus» = bus.",
+            "id": "de-019-x13",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «der Zug» mean?",
+            "audio": "der Zug",
+            "opcoes": [
+              "airplane",
+              "on foot",
+              "ship",
+              "train"
+            ],
+            "gabarito": "train",
+            "explicacao": "«der Zug» = train.",
+            "id": "de-019-x14",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Für zwei Nächte» means:",
+            "opcoes": [
+              "for two nights",
+              "twice a night",
+              "on two different nights"
+            ],
+            "gabarito": "for two nights",
+            "explicacao": "Nacht → Nächte.",
+            "id": "de-019-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «reservieren» mean?",
+            "audio": "reservieren",
+            "opcoes": [
+              "to book, reserve",
+              "departure",
+              "on foot",
+              "means of transportation"
+            ],
+            "gabarito": "to book, reserve",
+            "explicacao": "«reservieren» = to book, reserve.",
+            "id": "de-019-x15",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"A ticket to Munich, please.\"",
+            "opcoes": [
+              "Eine",
+              "Fahrkarte",
+              "nach",
+              "München",
+              "bitte"
+            ],
+            "gabarito": "Eine Fahrkarte nach München, bitte.",
+            "explicacao": "Destination with «nach».",
+            "id": "de-019-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «hin und zurück» mean?",
+            "audio": "hin und zurück",
+            "opcoes": [
+              "timetable, schedule",
+              "round-trip",
+              "one-way",
+              "ticket (transportation)"
+            ],
+            "gabarito": "round-trip",
+            "explicacao": "«hin und zurück» = round-trip.",
+            "id": "de-019-x16",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"The train leaves at eight.\"",
+            "opcoes": [
+              "Der",
+              "Zug",
+              "fährt",
+              "um",
+              "acht",
+              "Uhr",
+              "ab"
+            ],
+            "gabarito": "Der Zug fährt um acht Uhr ab.",
+            "explicacao": "Separable: «ab» at the end.",
+            "id": "de-019-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «der Flughafen» mean?",
+            "audio": "der Flughafen",
+            "opcoes": [
+              "single room",
+              "airplane",
+              "delay",
+              "airport"
+            ],
+            "gabarito": "airport",
+            "explicacao": "«der Flughafen» = airport (literally \"flight harbor\").",
+            "id": "de-019-x17",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Ja, das Frühstück ist von sieben bis zehn Uhr.",
+            "respostaEsperada": "Ja, das Frühstück ist von sieben bis zehn Uhr.",
+            "explicacao": "Yes, breakfast is from seven to ten.",
+            "id": "de-019-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «das Verkehrsmittel» mean?",
+            "audio": "das Verkehrsmittel",
+            "opcoes": [
+              "round-trip",
+              "single room",
+              "means of transportation",
+              "delay"
+            ],
+            "gabarito": "means of transportation",
+            "explicacao": "«das Verkehrsmittel» = means of transportation.",
+            "id": "de-019-x18",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Haben Sie ein Einzelzimmer frei?",
+            "opcoes": [
+              "Haben Sie ein Einzelzimmer frei?",
+              "Haben Sie ein Doppelzimmer frei?",
+              "Ich möchte ein Zimmer reservieren."
+            ],
+            "gabarito": "Haben Sie ein Einzelzimmer frei?",
+            "explicacao": "Einzelzimmer = single room.",
+            "id": "de-019-e12"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Haben Sie ein Einzelzimmer frei?",
+            "opcoes": [
+              "frei?",
+              "ein",
+              "Sie",
+              "Haben",
+              "Einzelzimmer"
+            ],
+            "gabarito": "Haben Sie ein Einzelzimmer frei?",
+            "explicacao": "Write: Haben Sie ein Einzelzimmer frei?",
+            "id": "de-019-x19",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Wann fährt der Zug nach München",
+            "opcoes": [
+              "Zug",
+              "der",
+              "fährt",
+              "Wann",
+              "München",
+              "nach"
+            ],
+            "gabarito": "Wann fährt der Zug nach München",
+            "explicacao": "Write: Wann fährt der Zug nach München",
+            "id": "de-019-x20",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Wann fährt der Zug nach München",
+            "respostaEsperada": "Wann fährt der Zug nach München",
+            "explicacao": "Asking for the time.",
+            "id": "de-019-e13"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Haben Sie ein Einzelzimmer frei?",
+            "respostaEsperada": "Haben Sie ein Einzelzimmer frei?",
+            "explicacao": "Write: Haben Sie ein Einzelzimmer frei?",
+            "id": "de-019-x21",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Der Zug ___ um acht Uhr ab.",
+            "opcoes": [
+              "fährt",
+              "fahrt",
+              "abfährt",
+              "fahren"
+            ],
+            "gabarito": "fährt",
+            "explicacao": "«abfahren» is separable: «fährt … ab».",
+            "id": "de-019-m01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write 5 sentences about a trip: how you're going, where to, the time, the ticket and the hotel.",
+            "respostaEsperada": "Ich fahre mit dem Zug nach Berlin. Der Zug fährt um acht Uhr ab. Ich kaufe eine Fahrkarte. Das Zimmer kostet achtzig Euro. Ich bleibe zwei Nächte.",
+            "id": "de-019-e14"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Record yourself planning a trip: transportation, ticket, times and hotel."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write a short four-sentence text about a trip you took or want to take."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-019.json",
+  "responsavel": null
+}
