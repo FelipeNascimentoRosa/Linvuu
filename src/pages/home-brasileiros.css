@@ -197,5 +197,5 @@
 .br-hero .br-fine a{color:var(--papel-escuro);text-decoration:underline;text-underline-offset:3px}
 .br-hero :is(a,button):focus-visible{outline-color:var(--ocre-claro)}
 @media(max-width:900px){.br-hero-topo{grid-template-columns:1fr}.br-vuu-ouve{display:none}.br-home .br-frase{max-width:18ch}}
-@media(max-width:700px){.br-hero-in{padding:36px 22px 40px}.br-lead{font-size:18px}.br-palco{margin-top:32px;padding-top:26px}.br-frase-painel{margin-top:26px;min-height:150px}
+@media(max-width:700px){.br-hero-in{padding:26px 20px 36px}.br-hero h1{font-size:30px}.br-lead{font-size:16px;line-height:1.5}.br-palco{margin-top:20px;padding-top:18px}.br-hero .br-pick{margin-bottom:10px}.br-abas{gap:6px}.br-abas button{padding:0 14px;font-size:15px}.br-frase-painel{margin-top:18px;min-height:0}.br-home .br-frase{font-size:38px}.br-nota{margin-top:6px;font-size:22px}.br-som{margin-top:14px}.br-som button{width:48px;height:48px}.br-cta-linha{margin-top:14px}
 .br-home .br-cta{width:100%;justify-content:center}.br-som-dica{display:none}}
