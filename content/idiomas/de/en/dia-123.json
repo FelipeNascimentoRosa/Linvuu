@@ -1,0 +1,116 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 123,
+  "fase": 13,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "A2 review and mock test (part 1): The most common mistakes of the first half of A2",
+  "objetivo": "Lesson 31, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 31,
+    "titulo": "A2 review and mock test (part 1)",
+    "objetivo": "Review the Perfekt, the Präteritum, the dative, the accusative and the prepositions of place on one map, practice reading, listening and writing in the format of A2 exams, fix the most common mistakes, and take an original practice test.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "The most common mistakes of the first half of A2",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 15,
+        "titulo": "The 14 most common A2 mistakes (part 1)",
+        "explicacao": "Read each pair out loud: first the wrong one (so you recognize how strange it sounds), then the right one.",
+        "erros": [
+          {
+            "errado": "Ich habe nach Berlin gefahren.",
+            "certo": "Ich bin nach Berlin gefahren.",
+            "motivo": "Movement: «sein»."
+          },
+          {
+            "errado": "Ich habe gegessen Pasta.",
+            "certo": "Ich habe Pasta gegessen.",
+            "motivo": "The participle goes to the end."
+          },
+          {
+            "errado": "Ich habe gestudiert.",
+            "certo": "Ich habe studiert.",
+            "motivo": "-ieren: no «ge-»."
+          },
+          {
+            "errado": "Ich habe eingekaufen.",
+            "certo": "Ich habe eingekauft.",
+            "motivo": "Separable regular verb: -t."
+          },
+          {
+            "errado": "Ich bin müde gewesen.",
+            "certo": "Ich war müde.",
+            "motivo": "In conversation, «sein» uses the Präteritum."
+          },
+          {
+            "errado": "Ich helfe dich.",
+            "certo": "Ich helfe dir.",
+            "motivo": "«helfen» takes the dative."
+          },
+          {
+            "errado": "Das Kleid gefällt ich.",
+            "certo": "Das Kleid gefällt mir.",
+            "motivo": "The person who likes goes into the dative."
+          },
+          {
+            "errado": "Ich gebe den Mann das Buch.",
+            "certo": "Ich gebe dem Mann das Buch.",
+            "motivo": "The receiver: dative."
+          },
+          {
+            "errado": "Ich gebe den Ball ihm.",
+            "certo": "Ich gebe ihm den Ball.",
+            "motivo": "Pronoun before noun."
+          },
+          {
+            "errado": "Ich fahre mit der Bus.",
+            "certo": "Ich fahre mit dem Bus.",
+            "motivo": "mit + dative."
+          },
+          {
+            "errado": "Ich wohne seit drei Jahre hier.",
+            "certo": "Ich wohne seit drei Jahren hier.",
+            "motivo": "Dative plural: -n."
+          },
+          {
+            "errado": "Das Buch liegt auf den Tisch.",
+            "certo": "Das Buch liegt auf dem Tisch.",
+            "motivo": "Wo? dative."
+          },
+          {
+            "errado": "Ich lege das Buch auf dem Tisch.",
+            "certo": "Ich lege das Buch auf den Tisch.",
+            "motivo": "Wohin? accusative."
+          },
+          {
+            "errado": "Ich kenne den Student.",
+            "certo": "Ich kenne den Studenten.",
+            "motivo": "N-declension."
+          }
+        ],
+        "tag": "Review"
+      },
+      {
+        "tipo": "producao",
+        "min": 10,
+        "enunciado": "Write an e-mail of about 50 words to a friend about your weekend (Perfekt), how you were (Präteritum), and who you helped or gave something to. Then read it out loud."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 3 mistakes you still make with the Perfekt and the dative, and the correct form."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-031.json",
+  "responsavel": null
+}

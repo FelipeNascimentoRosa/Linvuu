@@ -1,0 +1,526 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 124,
+  "fase": 13,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "A2 review and mock test (part 1): A2 mock test (part 1)",
+  "objetivo": "Lesson 31, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 31,
+    "titulo": "A2 review and mock test (part 1)",
+    "objetivo": "Review the Perfekt, the Präteritum, the dative, the accusative and the prepositions of place on one map, practice reading, listening and writing in the format of A2 exams, fix the most common mistakes, and take an original practice test.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "A2 mock test (part 1)",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ich bin letztes Jahr nach Berlin geflogen",
+            "opcoes": [
+              "Ich bin letztes Jahr nach Berlin geflogen",
+              "Ich habe letztes Jahr Berlin gesehen",
+              "Ich fliege nächstes Jahr nach Berlin"
+            ],
+            "gabarito": "Ich bin letztes Jahr nach Berlin geflogen",
+            "explicacao": "Listening: Perfekt with «sein».",
+            "id": "de-031-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ich wollte kommen, aber ich musste arbeiten",
+            "opcoes": [
+              "Ich wollte kommen, aber ich musste arbeiten",
+              "Ich will kommen, aber ich muss arbeiten",
+              "Ich habe gearbeitet"
+            ],
+            "gabarito": "Ich wollte kommen, aber ich musste arbeiten",
+            "explicacao": "Listening: Präteritum of the modals.",
+            "id": "de-031-e02"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Since when have you had this?\"",
+            "opcoes": [
+              "Sie",
+              "das?",
+              "Seit",
+              "haben",
+              "wann"
+            ],
+            "gabarito": "Seit wann haben Sie das?",
+            "explicacao": "Write: Seit wann haben Sie das?",
+            "id": "de-031-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Das Buch gehört mir",
+            "opcoes": [
+              "Das Buch gehört mir",
+              "Das Buch gehört mich",
+              "Das Buch gehört ihm"
+            ],
+            "gabarito": "Das Buch gehört mir",
+            "explicacao": "Listening: dative.",
+            "id": "de-031-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Seit wann haben Sie das?",
+            "respostaEsperada": "Seit wann haben Sie das?",
+            "explicacao": "Since when have you had this?",
+            "id": "de-031-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Guten Tag! Was fehlt Ihnen?",
+            "respostaEsperada": "Guten Tag! Was fehlt Ihnen?",
+            "explicacao": "Good morning! What seems to be the problem?",
+            "id": "de-031-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ich habe meiner Mutter ein Buch geschenkt",
+            "respostaEsperada": "Ich habe meiner Mutter ein Buch geschenkt",
+            "explicacao": "Writing: dative + Perfekt.",
+            "id": "de-031-e04"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Yes, I had a slight fever.\"",
+            "opcoes": [
+              "ich",
+              "hatte",
+              "Ja,",
+              "ein",
+              "Fieber.",
+              "bisschen"
+            ],
+            "gabarito": "Ja, ich hatte ein bisschen Fieber.",
+            "explicacao": "Write: Ja, ich hatte ein bisschen Fieber.",
+            "id": "de-031-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Read: «Ich habe gestern lange gearbeitet und bin dann nach Hause gefahren.» What did the person do?",
+            "opcoes": [
+              "Worked a lot and then went home",
+              "Stayed home all day",
+              "Traveled to another city"
+            ],
+            "gabarito": "Worked a lot and then went home",
+            "explicacao": "Reading: Perfekt.",
+            "id": "de-031-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Read: «Die Apotheke ist gegenüber dem Bahnhof, neben der Bank.» Where is the pharmacy?",
+            "opcoes": [
+              "Across from the station, next to the bank",
+              "Behind the station",
+              "Inside the bank"
+            ],
+            "gabarito": "Across from the station, next to the bank",
+            "explicacao": "Reading: prepositions of place.",
+            "id": "de-031-e06"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ja, ich hatte ein bisschen Fieber.",
+            "respostaEsperada": "Ja, ich hatte ein bisschen Fieber.",
+            "explicacao": "Yes, I had a slight fever.",
+            "id": "de-031-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Mir ist schlecht, und der Kopf tut mir weh.",
+            "respostaEsperada": "Mir ist schlecht, und der Kopf tut mir weh.",
+            "explicacao": "I feel sick and my head hurts.",
+            "id": "de-031-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Ich bin letztes Jahr nach Berlin geflogen",
+            "opcoes": [
+              "letztes",
+              "geflogen",
+              "nach",
+              "Jahr",
+              "Ich",
+              "Berlin",
+              "bin"
+            ],
+            "gabarito": "Ich bin letztes Jahr nach Berlin geflogen",
+            "explicacao": "Write: Ich bin letztes Jahr nach Berlin geflogen",
+            "id": "de-031-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Read: «Ich wohne seit drei Jahren in Wien.» The person:",
+            "opcoes": [
+              "has lived in Vienna for three years (and still does)",
+              "lived in Vienna for three years (in the past)",
+              "is going to live in Vienna"
+            ],
+            "gabarito": "has lived in Vienna for three years (and still does)",
+            "explicacao": "Reading: «seit» + present tense.",
+            "id": "de-031-e07"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich ___ gestern Fußball gespielt.",
+            "opcoes": [
+              "habe",
+              "bin",
+              "hat"
+            ],
+            "gabarito": "habe",
+            "explicacao": "spielen: haben.",
+            "id": "de-031-e08"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Ich wollte kommen, aber ich musste arbeiten",
+            "opcoes": [
+              "musste",
+              "kommen,",
+              "ich",
+              "aber",
+              "arbeiten",
+              "wollte",
+              "Ich"
+            ],
+            "gabarito": "Ich wollte kommen, aber ich musste arbeiten",
+            "explicacao": "Write: Ich wollte kommen, aber ich musste arbeiten",
+            "id": "de-031-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Er ___ nach Rom geflogen.",
+            "opcoes": [
+              "ist",
+              "hat",
+              "wird"
+            ],
+            "gabarito": "ist",
+            "explicacao": "fliegen: sein.",
+            "id": "de-031-e09"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich gebe ___ Frau ein Buch. (to the)",
+            "opcoes": [
+              "der",
+              "die",
+              "dem"
+            ],
+            "gabarito": "der",
+            "explicacao": "Feminine dative.",
+            "id": "de-031-e10"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Das Buch gehört mir",
+            "opcoes": [
+              "Buch",
+              "Das",
+              "mir",
+              "gehört"
+            ],
+            "gabarito": "Das Buch gehört mir",
+            "explicacao": "Write: Das Buch gehört mir",
+            "id": "de-031-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Seit gestern Abend. Ich habe nicht gut geschlafen.",
+            "respostaEsperada": "Seit gestern Abend. Ich habe nicht gut geschlafen.",
+            "explicacao": "Since last night. I didn't sleep well.",
+            "id": "de-031-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Ich habe meiner Mutter ein Buch geschenkt",
+            "opcoes": [
+              "Buch",
+              "Ich",
+              "ein",
+              "Mutter",
+              "meiner",
+              "habe",
+              "geschenkt"
+            ],
+            "gabarito": "Ich habe meiner Mutter ein Buch geschenkt",
+            "explicacao": "Write: Ich habe meiner Mutter ein Buch geschenkt",
+            "id": "de-031-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich helfe ___. (him)",
+            "opcoes": [
+              "ihm",
+              "ihn",
+              "er"
+            ],
+            "gabarito": "ihm",
+            "explicacao": "helfen: dative.",
+            "id": "de-031-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich fahre ___ Zug. (by)",
+            "opcoes": [
+              "mit dem",
+              "mit der",
+              "in dem"
+            ],
+            "gabarito": "mit dem",
+            "explicacao": "«Zug» is «der».",
+            "id": "de-031-e12"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ich bin letztes Jahr nach Berlin geflogen",
+            "respostaEsperada": "Ich bin letztes Jahr nach Berlin geflogen",
+            "explicacao": "Write: Ich bin letztes Jahr nach Berlin geflogen",
+            "id": "de-031-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Die Lampe hängt ___ Tisch. (above the table)",
+            "opcoes": [
+              "über dem",
+              "über den",
+              "über die"
+            ],
+            "gabarito": "über dem",
+            "explicacao": "Wo? dative.",
+            "id": "de-031-e13"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Haben Sie Fieber gehabt?",
+            "respostaEsperada": "Haben Sie Fieber gehabt?",
+            "explicacao": "Did you have a fever?",
+            "id": "de-031-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ich wollte kommen, aber ich musste arbeiten",
+            "respostaEsperada": "Ich wollte kommen, aber ich musste arbeiten",
+            "explicacao": "Write: Ich wollte kommen, aber ich musste arbeiten",
+            "id": "de-031-x10",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich lege das Buch ___ Tisch. (onto the)",
+            "opcoes": [
+              "auf den",
+              "auf dem",
+              "auf der"
+            ],
+            "gabarito": "auf den",
+            "explicacao": "Wohin? accusative.",
+            "id": "de-031-e14"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Das Buch gehört mir",
+            "respostaEsperada": "Das Buch gehört mir",
+            "explicacao": "Write: Das Buch gehört mir",
+            "id": "de-031-x11",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"Yesterday I went to the movies.\"",
+            "opcoes": [
+              "Gestern",
+              "bin",
+              "ich",
+              "ins",
+              "Kino",
+              "gegangen"
+            ],
+            "gabarito": "Gestern bin ich ins Kino gegangen.",
+            "explicacao": "Auxiliary in 2nd position, participle at the end.",
+            "id": "de-031-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete in the Perfekt: Ich ___ nach Berlin gefahren.",
+            "opcoes": [
+              "bin",
+              "habe",
+              "wurde",
+              "war"
+            ],
+            "gabarito": "bin",
+            "explicacao": "The Perfekt asked for is «bin gefahren». «War gefahren» would be the Plusquamperfekt (past perfect), a different tense that can work in other contexts.",
+            "id": "de-031-m01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich habe gut ___. (sleep)",
+            "opcoes": [
+              "geschlafen",
+              "geschlaft",
+              "schlafen",
+              "geschlafte"
+            ],
+            "gabarito": "geschlafen",
+            "explicacao": "Strong participle: «geschlafen».",
+            "id": "de-031-m02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich helfe ___. (you)",
+            "opcoes": [
+              "dir",
+              "dich",
+              "du",
+              "dein"
+            ],
+            "gabarito": "dir",
+            "explicacao": "«helfen» takes the dative.",
+            "id": "de-031-m03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich fahre mit ___ Bus.",
+            "opcoes": [
+              "dem",
+              "der",
+              "den",
+              "das"
+            ],
+            "gabarito": "dem",
+            "explicacao": "«mit» + masculine dative: «dem».",
+            "id": "de-031-m04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Das Buch liegt auf ___ Tisch. (Wo?)",
+            "opcoes": [
+              "dem",
+              "den",
+              "der",
+              "das"
+            ],
+            "gabarito": "dem",
+            "explicacao": "Wo? takes the dative.",
+            "id": "de-031-m05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich lege das Buch auf ___ Tisch. (Wohin?)",
+            "opcoes": [
+              "den",
+              "dem",
+              "der",
+              "das"
+            ],
+            "gabarito": "den",
+            "explicacao": "Wohin? takes the accusative.",
+            "id": "de-031-m06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Ich kenne den Student.",
+              "Ich kenne den Studenten.",
+              "Ich kenne der Studenten."
+            ],
+            "gabarito": "Ich kenne den Studenten.",
+            "explicacao": "N-declension: accusative with «-en».",
+            "id": "de-031-m07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Ich gebe den Ball ihm.",
+              "Ich gebe ihm den Ball.",
+              "Ich gebe ihn dem Ball."
+            ],
+            "gabarito": "Ich gebe ihm den Ball.",
+            "explicacao": "Pronoun before noun.",
+            "id": "de-031-m08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Ich habe studiert.",
+              "Ich habe gestudiert.",
+              "Ich habe studieren."
+            ],
+            "gabarito": "Ich habe studiert.",
+            "explicacao": "Verbs in «-ieren» have no «ge-».",
+            "id": "de-031-m09"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Writing: write 5 sentences about your weekend (Perfekt), with «haben» and «sein», and one with the dative.",
+            "respostaEsperada": "Ich bin nach Berlin gefahren. Ich habe meine Tante besucht. Wir haben zusammen gekocht. Ich habe ihr ein Buch geschenkt. Ich bin am Sonntag nach Hause gekommen.",
+            "id": "de-031-e16"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Speaking, in 3 parts: (1) tell about your last weekend; (2) ask and answer questions from keywords (Reise, Arzt, Wohnung, Geschenk, Wetter); (3) make 3 polite requests («Können Sie mir helfen? Können Sie das wiederholen?»)."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Reread the map and pick the 3 points where you still make mistakes."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-031.json",
+  "responsavel": null
+}
