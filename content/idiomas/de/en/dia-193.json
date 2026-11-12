@@ -1,0 +1,146 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 193,
+  "fase": 20,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Relative clauses 3: dative, prepositions and genitive: Relative pronoun in the dative and with prepositions",
+  "objetivo": "Lesson 49, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 49,
+    "titulo": "Relative clauses 3: dative, prepositions and genitive",
+    "objetivo": "Form relative clauses with the relative pronoun in the dative (dem, der, dem, denen), with a preposition before the relative pronoun (mit dem, in der, für die), and with the genitive (dessen, deren).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Relative pronoun in the dative and with prepositions",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "die Gegend",
+            "translit": "dee GAY-gent",
+            "pt": "area, neighborhood",
+            "en": "area",
+            "audio": "die Gegend"
+          },
+          {
+            "ru": "der Verein",
+            "translit": "dair fair-INE",
+            "pt": "club, association",
+            "en": "club",
+            "audio": "der Verein"
+          },
+          {
+            "ru": "die Gruppe",
+            "translit": "dee GROO-peh",
+            "pt": "group",
+            "en": "group",
+            "audio": "die Gruppe"
+          },
+          {
+            "ru": "der Chor",
+            "translit": "dair KOHR",
+            "pt": "choir",
+            "en": "choir",
+            "audio": "der Chor"
+          },
+          {
+            "ru": "die Freundschaft",
+            "translit": "dee FROYNT-shahft",
+            "pt": "friendship",
+            "en": "friendship",
+            "audio": "die Freundschaft"
+          },
+          {
+            "ru": "das Mitglied",
+            "translit": "dahs MIT-gleet",
+            "pt": "member",
+            "en": "member",
+            "audio": "das Mitglied"
+          },
+          {
+            "ru": "die Mitarbeiter",
+            "translit": "dee MIT-ar-bye-ter",
+            "pt": "employees, staff",
+            "en": "staff",
+            "audio": "die Mitarbeiter"
+          },
+          {
+            "ru": "der Verwandte",
+            "translit": "dair fair-VAHN-teh",
+            "pt": "relative (family)",
+            "en": "relative",
+            "audio": "der Verwandte"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "The relative pronoun in the dative and with prepositions, step by step",
+        "explicacao": "STEP 1: if the relative pronoun is an INDIRECT OBJECT, it goes into the DATIVE: «dem» (m), «der» (f), «dem» (n), «DENEN» (plural — a form of its own!). STEP 2: the same goes if a PREPOSITION that takes the dative comes before it: «Der Mann, mit dem ich spreche, ist mein Chef» (the man I'm talking to / with whom I'm talking). STEP 3: RULE: the PREPOSITION goes BEFORE the relative pronoun — never at the end, as English allows (\"the man I'm talking to\"): «mit dem», «in der», «in dem», «mit denen», «bei dem». STEP 4: the CASE of the relative pronoun is whatever the preposition takes: «mit» + dative → «mit dem»; «für» + accusative → «für den»; «in» + Wo? dative → «in der». STEP 5: forms: «Die Stadt, in der ich wohne» (the city I live in), «Das Haus, in dem ich lebe», «Die Freunde, mit denen ich reise» (the friends I travel with), «Der Verein, bei dem ich Mitglied bin» (the club I'm a member of).",
+        "comparacao": "Everyday English leaves the preposition dangling at the end: \"the city I live in\", \"the friends I travel with\". Formal English puts it in front: \"the city in which I live\", \"the friends with whom I travel\" — and that formal version is the ONLY one German allows: «die Stadt, in der ich wohne», «die Freunde, mit denen ich reise».",
+        "tabela": [
+          {
+            "genero": "masculine",
+            "relativo": "dem",
+            "exemplo": "Der Mann, mit dem ich spreche, ist mein Chef."
+          },
+          {
+            "genero": "feminine",
+            "relativo": "der",
+            "exemplo": "Die Stadt, in der ich wohne, ist klein."
+          },
+          {
+            "genero": "neuter",
+            "relativo": "dem",
+            "exemplo": "Das Haus, in dem ich lebe, ist alt."
+          },
+          {
+            "genero": "plural",
+            "relativo": "denen",
+            "exemplo": "Die Freunde, mit denen ich reise, sind nett."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Die Freunde, mit die ich reise, sind nett.",
+            "certo": "Die Freunde, mit denen ich reise, sind nett.",
+            "motivo": "Dative plural relative pronoun: «denen»."
+          },
+          {
+            "errado": "Der Mann, ich spreche mit, ist mein Chef.",
+            "certo": "Der Mann, mit dem ich spreche, ist mein Chef.",
+            "motivo": "The preposition comes before the relative pronoun."
+          },
+          {
+            "errado": "Die Stadt, in die ich wohne, ist klein.",
+            "certo": "Die Stadt, in der ich wohne, ist klein.",
+            "motivo": "Wo? takes the dative: «in der»."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Describe 6 things or people out loud with relative clauses and prepositions: «Die Stadt, in der ich … Die Freunde, mit denen ich …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 sentences with accusative relative clauses and with «was»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-049.json",
+  "responsavel": null
+}
