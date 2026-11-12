@@ -1,0 +1,143 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 246,
+  "fase": 25,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Adjectival nouns: Der Deutsche, ein Bekannter",
+  "objetivo": "Lesson 62, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 62,
+    "titulo": "Adjectival nouns",
+    "objetivo": "Turn adjectives and participles into nouns (das Neue, etwas Neues, der Deutsche, ein Bekannter, der Reisende), with a capital letter and the adjective ending.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Der Deutsche, ein Bekannter",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "der Deutsche",
+            "translit": "dair DOY-cheh",
+            "pt": "the German (man)",
+            "en": "the German",
+            "audio": "der Deutsche"
+          },
+          {
+            "ru": "der Bekannte",
+            "translit": "dair beh-KAHN-teh",
+            "pt": "the acquaintance",
+            "en": "the acquaintance",
+            "audio": "der Bekannte"
+          },
+          {
+            "ru": "der Kranke",
+            "translit": "dair KRAHN-keh",
+            "pt": "the sick person, the patient",
+            "en": "the sick person",
+            "audio": "der Kranke"
+          },
+          {
+            "ru": "der Angestellte",
+            "translit": "dair AHN-geh-shtel-teh",
+            "pt": "the employee",
+            "en": "the employee",
+            "audio": "der Angestellte"
+          },
+          {
+            "ru": "der Verwandte",
+            "translit": "dair fair-VAHN-teh",
+            "pt": "the relative",
+            "en": "the relative",
+            "audio": "der Verwandte"
+          },
+          {
+            "ru": "der Arbeitslose",
+            "translit": "dair AR-bites-loh-zeh",
+            "pt": "the unemployed person",
+            "en": "the unemployed",
+            "audio": "der Arbeitslose"
+          },
+          {
+            "ru": "der Erwachsene",
+            "translit": "dair air-VAHK-seh-neh",
+            "pt": "the adult",
+            "en": "the adult",
+            "audio": "der Erwachsene"
+          },
+          {
+            "ru": "der Jugendliche",
+            "translit": "dair YOO-gent-li-kheh",
+            "pt": "the young person, teenager",
+            "en": "the young person",
+            "audio": "der Jugendliche"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "People: der Deutsche, ein Deutscher",
+        "explicacao": "STEP 1: many adjectives and participles become NOUNS FOR PEOPLE: «deutsch» → «der Deutsche» (the German); «bekannt» → «der Bekannte» (the acquaintance); «krank» → «der Kranke» (the sick person); «angestellt» → «der Angestellte» (the employee); «verwandt» → «der Verwandte» (the relative); «arbeitslos» → «der Arbeitslose» (the unemployed person). STEP 2: they decline like ADJECTIVES: after «der/die/das», «-e» (nominative) and «-en» (other cases); after «ein», «-er» (masculine), «-e» (feminine): «der Deutsche / ein Deutscher», «die Deutsche / eine Deutsche», «die Deutschen / Deutsche». So \"a German\" has a different ending from \"the German\". STEP 3: masculine accusative: «den Deutschen», «einen Deutschen». STEP 4: dative: «dem Deutschen», «einem Deutschen», «den Deutschen». STEP 5: use them to talk about groups: «die Erwachsenen» (adults), «die Jugendlichen» (young people), «die Kranken» (the sick).",
+        "tabela": [
+          {
+            "caso": "Nominativ",
+            "masculino": "der Deutsche / ein Deutscher",
+            "feminino": "die Deutsche / eine Deutsche",
+            "plural": "die Deutschen / Deutsche"
+          },
+          {
+            "caso": "Akkusativ",
+            "masculino": "den Deutschen / einen Deutschen",
+            "feminino": "die Deutsche / eine Deutsche",
+            "plural": "die Deutschen / Deutsche"
+          },
+          {
+            "caso": "Dativ",
+            "masculino": "dem Deutschen / einem Deutschen",
+            "feminino": "der Deutschen / einer Deutschen",
+            "plural": "den Deutschen / Deutschen"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "ein Bekannte",
+            "certo": "ein Bekannter",
+            "motivo": "Masculine with ein: «-er»."
+          },
+          {
+            "errado": "Ich kenne den Deutsche.",
+            "certo": "Ich kenne den Deutschen.",
+            "motivo": "Masculine accusative: «-en»."
+          },
+          {
+            "errado": "die deutsche (meaning \"the German women\", no noun)",
+            "certo": "die Deutschen",
+            "motivo": "An adjective used as a noun: capital letter."
+          }
+        ],
+        "tag": "Nouns"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Talk about people out loud: «Ich kenne einen Deutschen. Mein Bekannter arbeitet … Die Jugendlichen wollen …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 sentences with «etwas Neues», «nichts Gutes», «alles Gute» and «das Wichtigste»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-062.json",
+  "responsavel": null
+}

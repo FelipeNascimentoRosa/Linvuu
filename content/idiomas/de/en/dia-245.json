@@ -1,0 +1,146 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 245,
+  "fase": 25,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Adjectival nouns: Das Gute, etwas Neues, alles Gute",
+  "objetivo": "Lesson 62, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 62,
+    "titulo": "Adjectival nouns",
+    "objetivo": "Turn adjectives and participles into nouns (das Neue, etwas Neues, der Deutsche, ein Bekannter, der Reisende), with a capital letter and the adjective ending.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Das Gute, etwas Neues, alles Gute",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "das Gute",
+            "translit": "dahs GOO-teh",
+            "pt": "the good (thing), good",
+            "en": "the good",
+            "audio": "das Gute"
+          },
+          {
+            "ru": "das Neue",
+            "translit": "dahs NOY-eh",
+            "pt": "the new (thing), what's new",
+            "en": "the new",
+            "audio": "das Neue"
+          },
+          {
+            "ru": "das Wichtige",
+            "translit": "dahs VIKH-ti-geh",
+            "pt": "the important thing",
+            "en": "the important",
+            "audio": "das Wichtige"
+          },
+          {
+            "ru": "das Schöne",
+            "translit": "dahs SHÖ-neh",
+            "pt": "the beautiful (thing)",
+            "en": "the beautiful",
+            "audio": "das Schöne"
+          },
+          {
+            "ru": "etwas Neues",
+            "translit": "ET-vahs NOY-es",
+            "pt": "something new",
+            "en": "something new",
+            "audio": "etwas Neues"
+          },
+          {
+            "ru": "nichts Gutes",
+            "translit": "NIKHTS GOO-tes",
+            "pt": "nothing good",
+            "en": "nothing good",
+            "audio": "nichts Gutes"
+          },
+          {
+            "ru": "alles Gute",
+            "translit": "AHL-es GOO-teh",
+            "pt": "all the best",
+            "en": "all the best",
+            "audio": "alles Gute"
+          },
+          {
+            "ru": "viel Interessantes",
+            "translit": "FEEL in-teh-reh-SAHN-tes",
+            "pt": "a lot of interesting things",
+            "en": "a lot of interesting things",
+            "audio": "viel Interessantes"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "The adjective that becomes a noun, step by step",
+        "explicacao": "STEP 1: in German, any adjective can become a NOUN, and then it takes a CAPITAL letter: «gut» → «das Gute» (the good). STEP 2: after «DAS», the adjective takes «-e»: «das Gute», «das Neue», «das Wichtigste» (the most important thing), «das Schöne». English often adds \"thing\": \"the important thing\" = «das Wichtige». STEP 3: after «ETWAS», «NICHTS», «VIEL», «WENIG», the adjective takes «-ES» — and, just like English, it comes AFTER the word: «etwas Neues» (something new), «nichts Gutes» (nothing good), «viel Interessantes» (a lot of interesting things). STEP 4: after «ALLES», it takes «-E»: «alles Gute» (all the best). STEP 5: use these for abstract ideas: «das Wichtigste» (the most important thing), «das Beste» (the best). STEP 6: common questions and wishes: «Gibt es etwas Neues?» (Anything new?), «Ich wünsche dir alles Gute» (I wish you all the best).",
+        "comparacao": "English does this too, partly: \"something new\", \"nothing good\", \"the rich\", \"the poor\". German does it with every adjective, writes it with a capital letter, and picks the ending according to the word before it.",
+        "tabela": [
+          {
+            "construcao": "das + adj. -e",
+            "exemplo": "das Gute, das Neue, das Wichtigste, das Schöne"
+          },
+          {
+            "construcao": "etwas / nichts / viel + adj. -es",
+            "exemplo": "etwas Neues, nichts Gutes, viel Interessantes"
+          },
+          {
+            "construcao": "alles + adj. -e",
+            "exemplo": "alles Gute, alles Schöne"
+          },
+          {
+            "construcao": "wishes",
+            "exemplo": "Ich wünsche dir alles Gute."
+          },
+          {
+            "construcao": "question",
+            "exemplo": "Gibt es etwas Neues?"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "etwas neues",
+            "certo": "etwas Neues",
+            "motivo": "An adjective used as a noun: capital letter."
+          },
+          {
+            "errado": "nichts Gute",
+            "certo": "nichts Gutes",
+            "motivo": "After «nichts»: «-es»."
+          },
+          {
+            "errado": "alles Gutes",
+            "certo": "alles Gute",
+            "motivo": "After «alles»: «-e»."
+          }
+        ],
+        "tag": "Nouns"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Say 6 sentences with adjectives used as nouns: «Gibt es etwas Neues? Ich wünsche dir alles Gute. Das Wichtigste ist …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 sentences with adjectives and nouns that take a preposition (stolz auf, Angst vor…)."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-062.json",
+  "responsavel": null
+}
