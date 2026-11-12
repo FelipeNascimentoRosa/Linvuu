@@ -1,0 +1,231 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 141,
+  "fase": 15,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Subordinate clauses 1: weil and dass: Weil: because",
+  "objetivo": "Lesson 36, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 36,
+    "titulo": "Subordinate clauses 1: weil and dass",
+    "objetivo": "Build sentences with «weil» (because) and «dass» (that), with the conjugated verb at the END of the subordinate clause, the comma, the inversion when the subordinate clause comes first, and the difference between «weil» and «denn».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Weil: because",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Lesson goal. By the end of the four sessions, you join two sentences with weil, dass, wenn, als and ob, sending the conjugated verb to the end; you choose between wenn, als and wann for English \"when\"; and you turn a direct question into an indirect one (Ich weiß nicht, wann er kommt)."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "The Saturday hike",
+        "contexto": "Lena, Camila and Jonas plan a hike for the weekend. Tom hasn't confirmed yet.",
+        "linhas": [
+          {
+            "personagem": "Lena",
+            "ru": "— Weißt du, ob Tom am Samstag mitkommt?",
+            "pt": "— Do you know whether Tom is coming on Saturday?",
+            "audio": "Weißt du, ob Tom am Samstag mitkommt?",
+            "rotulo": "Lena"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Ich weiß es nicht. Als ich ihn gestern angerufen habe, hat er gesagt, dass er noch arbeiten muss.",
+            "pt": "— I don't know. When I called him yesterday, he said that he still has to work.",
+            "audio": "Ich weiß es nicht. Als ich ihn gestern angerufen habe, hat er gesagt, dass er noch arbeiten muss.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Schade. Wenn er nicht kommt, fahren wir zu dritt.",
+            "pt": "— Too bad. If he doesn't come, we'll go as a group of three.",
+            "audio": "Schade. Wenn er nicht kommt, fahren wir zu dritt.",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Lena",
+            "ru": "— Und wenn es regnet?",
+            "pt": "— And what if it rains?",
+            "audio": "Und wenn es regnet?",
+            "rotulo": "Lena"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Wenn es regnet, bleiben wir zu Hause, weil ich im Regen nicht gern wandere.",
+            "pt": "— If it rains, we'll stay home, because I don't like hiking in the rain.",
+            "audio": "Wenn es regnet, bleiben wir zu Hause, weil ich im Regen nicht gern wandere.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ich frage ihn noch einmal, wann er Zeit hat.",
+            "pt": "— I'll ask him again when he has time.",
+            "audio": "Ich frage ihn noch einmal, wann er Zeit hat.",
+            "rotulo": "Camila"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "The English-speaker trap",
+        "explicacao": "STEP 1: English \"when\" has three German versions: «wann» only asks a question (direct or indirect); «wenn» is the \"when\" of something that repeats or hasn't happened yet — and it's also \"if\"; «als» is the \"when\" of a single event in the past. STEP 2: English \"if\" has two: «wenn» for a condition (\"if it rains\") and «ob» for \"whether\" (\"I don't know if/whether he's coming\"). STEP 3: tip: if you can replace \"if\" with \"whether\", it's «ob».",
+        "comparacao": "Three traps.",
+        "tabela": [
+          {
+            "ingles": "When are you coming? (question)",
+            "alemao": "Wann kommst du?"
+          },
+          {
+            "ingles": "When(ever) I have time, I call. (always)",
+            "alemao": "Wenn ich Zeit habe, rufe ich an."
+          },
+          {
+            "ingles": "When I arrived, he was already there.",
+            "alemao": "Als ich ankam, war er schon da."
+          },
+          {
+            "ingles": "I don't know when he's arriving.",
+            "alemao": "Ich weiß nicht, wann er ankommt."
+          }
+        ],
+        "tag": "Trap"
+      },
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "weil",
+            "translit": "VILE",
+            "pt": "because",
+            "en": "because",
+            "audio": "weil"
+          },
+          {
+            "ru": "denn",
+            "translit": "DEN",
+            "pt": "because, for (another conjunction)",
+            "en": "because",
+            "audio": "denn"
+          },
+          {
+            "ru": "warum",
+            "translit": "vah-ROOM",
+            "pt": "why",
+            "en": "why",
+            "audio": "warum"
+          },
+          {
+            "ru": "der Grund",
+            "translit": "dair GROONT",
+            "pt": "reason",
+            "en": "reason",
+            "audio": "der Grund"
+          },
+          {
+            "ru": "deshalb",
+            "translit": "DES-hahlp",
+            "pt": "that's why, therefore",
+            "en": "therefore",
+            "audio": "deshalb"
+          },
+          {
+            "ru": "also",
+            "translit": "AHL-zoh",
+            "pt": "so, therefore",
+            "en": "so",
+            "audio": "also"
+          },
+          {
+            "ru": "deswegen",
+            "translit": "DES-vay-gen",
+            "pt": "that's why, therefore",
+            "en": "that is why",
+            "audio": "deswegen"
+          },
+          {
+            "ru": "leider",
+            "translit": "LY-der",
+            "pt": "unfortunately",
+            "en": "unfortunately",
+            "audio": "leider"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Weil: the verb goes to the end, step by step",
+        "explicacao": "STEP 1: «weil» (because) opens a SUBORDINATE clause: one that depends on another. STEP 2: MAIN RULE: in a subordinate clause, the CONJUGATED verb goes to the END: «Ich bleibe zu Hause, weil ich krank bin» — literally \"…because I sick am\". STEP 3: the COMMA before «weil» is required. STEP 4: with a separable verb, the prefix rejoins the verb at the end: «weil ich früh aufstehe». With the Perfekt, the auxiliary comes last: «weil ich Fieber gehabt habe». With a modal: «weil ich arbeiten muss». STEP 5: if the subordinate clause COMES FIRST, the main clause starts with the VERB (the whole subordinate clause counts as position one): «Weil ich krank bin, bleibe ich zu Hause.» STEP 6: the difference from «denn»: «denn» (because, for) is a normal conjunction and doesn't change the word order: «Ich bleibe zu Hause, denn ich bin krank.»",
+        "comparacao": "English keeps the same word order after \"because\" (\"because I am sick\"). German sends the conjugated verb to the END after «weil»: «weil ich krank bin». If you want English-style order, use «denn» instead.",
+        "tabela": [
+          {
+            "tipo": "main clause + weil",
+            "frase": "Ich bleibe zu Hause, weil ich krank bin."
+          },
+          {
+            "tipo": "weil + main clause",
+            "frase": "Weil ich krank bin, bleibe ich zu Hause."
+          },
+          {
+            "tipo": "denn (normal order)",
+            "frase": "Ich bleibe zu Hause, denn ich bin krank."
+          },
+          {
+            "tipo": "separable verb at the end",
+            "frase": "Ich bin müde, weil ich früh aufstehe."
+          },
+          {
+            "tipo": "modal at the end",
+            "frase": "Ich komme nicht, weil ich arbeiten muss."
+          },
+          {
+            "tipo": "Perfekt at the end",
+            "frase": "Ich war müde, weil ich schlecht geschlafen habe."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich bleibe zu Hause, weil ich bin krank.",
+            "certo": "Ich bleibe zu Hause, weil ich krank bin.",
+            "motivo": "After «weil», the conjugated verb goes to the end."
+          },
+          {
+            "errado": "Weil ich bin krank, bleibe ich zu Hause.",
+            "certo": "Weil ich krank bin, bleibe ich zu Hause.",
+            "motivo": "Verb at the end of the subordinate clause, then the main clause starts with the verb."
+          },
+          {
+            "errado": "Ich bin müde, weil ich stehe früh auf.",
+            "certo": "Ich bin müde, weil ich früh aufstehe.",
+            "motivo": "The separable prefix rejoins the verb at the end."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Give 6 reasons out loud with «weil»: «Ich lerne Deutsch, weil … Ich bin müde, weil …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Write 6 sentences with modal verbs and the main verb at the end of the sentence."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-036.json",
+  "responsavel": null
+}

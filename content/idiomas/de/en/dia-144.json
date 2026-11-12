@@ -1,0 +1,335 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 144,
+  "fase": 15,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Subordinate clauses 1: weil and dass: Practice",
+  "objetivo": "Lesson 36, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 36,
+    "titulo": "Subordinate clauses 1: weil and dass",
+    "objetivo": "Build sentences with «weil» (because) and «dass» (that), with the conjugated verb at the END of the subordinate clause, the comma, the inversion when the subordinate clause comes first, and the difference between «weil» and «denn».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Practice",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 16,
+        "itens": [
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich bleibe zu Hause, ___ ich krank bin.",
+            "opcoes": [
+              "weil",
+              "denn",
+              "dass"
+            ],
+            "gabarito": "weil",
+            "explicacao": "Reason: «weil».",
+            "id": "de-036-e01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich bleibe zu Hause, ___ ich bin krank.",
+            "opcoes": [
+              "denn",
+              "weil",
+              "dass"
+            ],
+            "gabarito": "denn",
+            "explicacao": "«denn» keeps the normal order.",
+            "id": "de-036-e02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich glaube, ___ er kommt.",
+            "opcoes": [
+              "dass",
+              "weil",
+              "das"
+            ],
+            "gabarito": "dass",
+            "explicacao": "The conjunction «dass» (with ss).",
+            "id": "de-036-e03"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Weißt du, ob Tom am Samstag mitkommt?",
+            "respostaEsperada": "Weißt du, ob Tom am Samstag mitkommt?",
+            "explicacao": "Do you know whether Tom is coming on Saturday?",
+            "id": "de-036-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich weiß, dass du müde ___. (sein)",
+            "opcoes": [
+              "bist",
+              "sind",
+              "warst"
+            ],
+            "gabarito": "bist",
+            "explicacao": "Verb at the end.",
+            "id": "de-036-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "After «weil», the conjugated verb goes:",
+            "opcoes": [
+              "to the end",
+              "to 2nd position",
+              "to the beginning"
+            ],
+            "gabarito": "to the end",
+            "explicacao": "The subordinate clause rule.",
+            "id": "de-036-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Ich komme nicht, weil ich arbeiten muss.",
+              "Ich komme nicht, weil ich muss arbeiten.",
+              "Ich komme nicht, weil muss ich arbeiten."
+            ],
+            "gabarito": "Ich komme nicht, weil ich arbeiten muss.",
+            "explicacao": "The conjugated modal comes last.",
+            "id": "de-036-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Und wenn es regnet?",
+            "respostaEsperada": "Und wenn es regnet?",
+            "explicacao": "And what if it rains?",
+            "id": "de-036-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "If the subordinate clause comes first, the main clause starts with:",
+            "opcoes": [
+              "the verb",
+              "the subject",
+              "«weil»"
+            ],
+            "gabarito": "the verb",
+            "explicacao": "Weil ich krank bin, bleibe ich…",
+            "id": "de-036-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«dass» is:",
+            "opcoes": [
+              "a conjunction (that)",
+              "an article",
+              "a relative pronoun"
+            ],
+            "gabarito": "a conjunction (that)",
+            "explicacao": "With «ss».",
+            "id": "de-036-e08"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Warum kommst du heute nicht zur Party?",
+            "respostaEsperada": "Warum kommst du heute nicht zur Party?",
+            "explicacao": "Why aren't you coming to the party tonight?",
+            "id": "de-036-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What's the irregular «ich» form of «wissen»?",
+            "opcoes": [
+              "weiß",
+              "wisse",
+              "weißt"
+            ],
+            "gabarito": "weiß",
+            "explicacao": "ich weiß.",
+            "id": "de-036-e09"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"I'm staying home because I'm sick.\"",
+            "opcoes": [
+              "Ich",
+              "bleibe",
+              "zu",
+              "Hause",
+              "weil",
+              "ich",
+              "krank",
+              "bin"
+            ],
+            "gabarito": "Ich bleibe zu Hause, weil ich krank bin.",
+            "explicacao": "Conjugated verb at the end of the subordinate clause.",
+            "id": "de-036-e10"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"I hope that you'll come.\"",
+            "opcoes": [
+              "Ich",
+              "hoffe",
+              "dass",
+              "du",
+              "kommst"
+            ],
+            "gabarito": "Ich hoffe, dass du kommst.",
+            "explicacao": "«dass» + verb at the end.",
+            "id": "de-036-e11"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Ja, morgen habe ich frei, weil ich Urlaub habe.",
+            "respostaEsperada": "Ja, morgen habe ich frei, weil ich Urlaub habe.",
+            "explicacao": "Yes, tomorrow I'm free, because I'm on vacation.",
+            "id": "de-036-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ich bin müde, weil ich früh aufstehe",
+            "opcoes": [
+              "Ich bin müde, weil ich früh aufstehe",
+              "Ich bin müde, weil ich stehe früh auf",
+              "Ich bin müde, denn ich stehe früh auf"
+            ],
+            "gabarito": "Ich bin müde, weil ich früh aufstehe",
+            "explicacao": "Separable verb joined together, at the end.",
+            "id": "de-036-e12"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ich glaube, dass er nicht kommt",
+            "respostaEsperada": "Ich glaube, dass er nicht kommt",
+            "explicacao": "dass + verb at the end.",
+            "id": "de-036-e13"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write 5 sentences: two with «weil», two with «dass» and one with the subordinate clause first.",
+            "respostaEsperada": "Ich lerne Deutsch, weil ich in Berlin arbeite. Ich bin müde, weil ich schlecht geschlafen habe. Ich glaube, dass er kommt. Ich hoffe, dass du Zeit hast. Weil ich krank bin, bleibe ich zu Hause.",
+            "id": "de-036-e14"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Write three sentences with weil about what you do and why (Ich lerne Deutsch, weil …).",
+            "respostaEsperada": "Ich lerne Deutsch, weil ich in Deutschland studieren möchte. Ich trinke morgens Kaffee, weil ich sonst müde bin. Ich fahre mit dem Zug, weil das Auto kaputt ist.",
+            "id": "de-036-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write two sentences with wenn about what you do when it rains or when you're tired.",
+            "respostaEsperada": "Wenn es am Wochenende regnet, bleibe ich zu Hause und lese ein Buch. Wenn ich abends müde bin, gehe ich früh ins Bett.",
+            "id": "de-036-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write two sentences with als about a day in your past (Als ich …).",
+            "respostaEsperada": "Als ich achtzehn Jahre alt war, machte ich meine erste Reise allein. Als ich gestern im Büro ankam, wartete mein Chef schon auf mich.",
+            "id": "de-036-L-p03"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Ask a classmate three indirect questions, starting with Weißt du, … or Kannst du mir sagen, ….",
+            "respostaEsperada": "Weißt du, wann der Deutschkurs heute beginnt? Kannst du mir sagen, wo hier ein Geldautomat ist? Weißt du, ob Lena heute Abend zur Party mitkommt?",
+            "id": "de-036-L-p04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Ich bleibe zu Hause, weil ich bin krank.",
+            "respostaEsperada": "Ich bleibe zu Hause, weil ich krank bin.",
+            "explicacao": "Ich bleibe zu Hause, weil ich krank bin.",
+            "id": "de-036-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Wenn ich ein Kind war, wohnte ich in Boston.",
+            "respostaEsperada": "Als ich ein Kind war, wohnte ich in Recife.",
+            "explicacao": "Als ich ein Kind war, wohnte ich in Boston.",
+            "id": "de-036-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Weil ich früh muss aufstehen, gehe ich früh ins Bett.",
+            "respostaEsperada": "Weil ich früh aufstehen muss, gehe ich früh ins Bett.",
+            "explicacao": "Weil ich früh aufstehen muss, gehe ich früh ins Bett.",
+            "id": "de-036-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "The typical English-speaker mistakes",
+        "explicacao": "STEP 1: the costliest mistake is keeping English word order: «weil ich bin krank» — your ear doesn't feel anything missing. The second is forgetting the inversion when the subordinate clause comes first: «Wenn es regnet, wir bleiben zu Hause». The third is translating every \"when\" as «wenn» and every \"if\" as «wenn»: for a single past event it's «als», for \"whether\" it's «ob», and for a question it's «wann». STEP 2: read the table and say each correct sentence out loud before you look at the reason.",
+        "erros": [
+          {
+            "errado": "Ich bleibe zu Hause, weil ich bin krank.",
+            "certo": "Ich bleibe zu Hause, weil ich krank bin.",
+            "motivo": "After weil, the conjugated verb goes to the end."
+          },
+          {
+            "errado": "Wenn es regnet, wir bleiben zu Hause.",
+            "certo": "Wenn es regnet, bleiben wir zu Hause.",
+            "motivo": "The subordinate clause is position 1: the verb comes next."
+          },
+          {
+            "errado": "Wenn ich ein Kind war, wohnte ich in Boston.",
+            "certo": "Als ich ein Kind war, wohnte ich in Boston.",
+            "motivo": "A single past event or period: als."
+          },
+          {
+            "errado": "Ich weiß nicht, wenn er kommt.",
+            "certo": "Ich weiß nicht, ob er kommt.",
+            "motivo": "\"if\" meaning \"whether\" = ob."
+          },
+          {
+            "errado": "Ich glaube, das er kommt.",
+            "certo": "Ich glaube, dass er kommt.",
+            "motivo": "The conjunction is spelled dass."
+          },
+          {
+            "errado": "Ich komme nicht, weil ich muss arbeiten.",
+            "certo": "Ich komme nicht, weil ich arbeiten muss.",
+            "motivo": "The conjugated modal comes last."
+          }
+        ],
+        "tag": "Typical mistake"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Can I do it? I explain why I do something with weil and send the verb to the end. · I choose between wenn, als and wann. · I turn «Wo wohnt er?» into «Ich weiß nicht, wo er wohnt»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 2,
+        "enunciado": "Review. Complete: Berlin ist größer ____ München. · Er ist so alt ____ ich. · Das Essen hier ist am ____. (gut) · Ich trinke ____ Tee als Kaffee. (gern)"
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-036.json",
+  "responsavel": null
+}
