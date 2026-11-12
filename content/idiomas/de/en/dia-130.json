@@ -1,0 +1,148 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 130,
+  "fase": 13,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Adjectives 2: with ein, mein, kein (ein großer Mann): Dative and genitive",
+  "objetivo": "Lesson 33, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 33,
+    "titulo": "Adjectives 2: with ein, mein, kein (ein großer Mann)",
+    "objetivo": "Give the adjective its ending after ein, eine, mein, dein, kein…: the adjective takes -er, -e, -es where the article doesn't show the case, and -en everywhere else.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Dative and genitive",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "der Nachbar",
+            "translit": "dair NAHKH-bar",
+            "pt": "neighbor (m.)",
+            "en": "neighbour",
+            "audio": "der Nachbar"
+          },
+          {
+            "ru": "der Kollege",
+            "translit": "dair ko-LAY-geh",
+            "pt": "colleague (m.)",
+            "en": "colleague",
+            "audio": "der Kollege"
+          },
+          {
+            "ru": "die Nachbarin",
+            "translit": "dee NAHKH-bah-rin",
+            "pt": "neighbor (f.)",
+            "en": "neighbour (f)",
+            "audio": "die Nachbarin"
+          },
+          {
+            "ru": "das Kind",
+            "translit": "dahs KINT",
+            "pt": "child",
+            "en": "child",
+            "audio": "das Kind"
+          },
+          {
+            "ru": "alt",
+            "translit": "AHLT",
+            "pt": "old",
+            "en": "old",
+            "audio": "alt"
+          },
+          {
+            "ru": "jung",
+            "translit": "YOONG",
+            "pt": "young",
+            "en": "young",
+            "audio": "jung"
+          },
+          {
+            "ru": "klug",
+            "translit": "KLOOK",
+            "pt": "smart, clever",
+            "en": "clever",
+            "audio": "klug"
+          },
+          {
+            "ru": "verrückt",
+            "translit": "fair-RÜCKT",
+            "pt": "crazy",
+            "en": "crazy",
+            "audio": "verrückt"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Dative and genitive after ein: «-en»",
+        "explicacao": "STEP 1: in the DATIVE, after «einem», «einer», «meinen», the adjective ending is «-en» for all genders: «mit einem alten Freund» (with an old friend), «mit einer netten Frau», «mit meinen alten Freunden». STEP 2: in the GENITIVE: «eines alten Mannes», «einer netten Frau», «meiner alten Freunde» (the ending is also «-en»). STEP 3: remember the dative plural rule: the noun adds «-n» (meinen alten Freunden). STEP 4: put it together with prepositions: «mit einem netten Nachbarn» (N-declension!).",
+        "tabela": [
+          {
+            "caso": "Nominativ",
+            "masculino": "ein großer Mann",
+            "feminino": "eine kleine Frau",
+            "neutro": "ein neues Auto",
+            "plural": "meine neuen Autos"
+          },
+          {
+            "caso": "Akkusativ",
+            "masculino": "einen großen Mann",
+            "feminino": "eine kleine Frau",
+            "neutro": "ein neues Auto",
+            "plural": "meine neuen Autos"
+          },
+          {
+            "caso": "Dativ",
+            "masculino": "einem großen Mann",
+            "feminino": "einer kleinen Frau",
+            "neutro": "einem neuen Auto",
+            "plural": "meinen neuen Autos"
+          },
+          {
+            "caso": "Genitiv",
+            "masculino": "eines großen Mannes",
+            "feminino": "einer kleinen Frau",
+            "neutro": "eines neuen Autos",
+            "plural": "meiner neuen Autos"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich wohne mit einem alte Freund.",
+            "certo": "Ich wohne mit einem alten Freund.",
+            "motivo": "Masculine dative: «-en»."
+          },
+          {
+            "errado": "Ich gebe meiner alte Mutter ein Buch.",
+            "certo": "Ich gebe meiner alten Mutter ein Buch.",
+            "motivo": "Feminine dative: «-en»."
+          }
+        ],
+        "tag": "Adjectives and possessives"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe out loud who you live or work with and who you give presents to, using ein/mein and an adjective in the dative."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write the adjectives declined after ein, eine, mein in the nominative and accusative."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-033.json",
+  "responsavel": null
+}
