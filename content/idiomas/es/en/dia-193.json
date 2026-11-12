@@ -1,0 +1,184 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 193,
+  "fase": 20,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "The passive and impersonal «se»: The passive with ser + participle",
+  "objetivo": "Lesson 49, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 49,
+    "titulo": "The passive and impersonal «se»",
+    "objetivo": "Form the passive voice with «ser» + participle (agreeing with the subject), use the passive «se» («Se venden pisos»), impersonal «se» («Se vive bien aquí») and other impersonal forms (third person plural, «uno»), and tell «ser» + participle apart from «estar» + participle.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "The passive with ser + participle",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "inaugurar",
+            "translit": "",
+            "pt": "to open, to inaugurate",
+            "en": "",
+            "audio": "inaugurar"
+          },
+          {
+            "ru": "publicar",
+            "translit": "",
+            "pt": "to publish",
+            "en": "",
+            "audio": "publicar"
+          },
+          {
+            "ru": "fundar",
+            "translit": "",
+            "pt": "to found",
+            "en": "",
+            "audio": "fundar"
+          },
+          {
+            "ru": "descubrir",
+            "translit": "",
+            "pt": "to discover",
+            "en": "",
+            "audio": "descubrir"
+          },
+          {
+            "ru": "elegir",
+            "translit": "",
+            "pt": "to elect",
+            "en": "",
+            "audio": "elegir"
+          },
+          {
+            "ru": "firmar",
+            "translit": "",
+            "pt": "to sign",
+            "en": "",
+            "audio": "firmar"
+          },
+          {
+            "ru": "entregar",
+            "translit": "",
+            "pt": "to hand in, to deliver",
+            "en": "",
+            "audio": "entregar"
+          },
+          {
+            "ru": "anunciar",
+            "translit": "",
+            "pt": "to announce",
+            "en": "",
+            "audio": "anunciar"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "El museo fue inaugurado por la alcaldesa",
+        "explicacao": "STEP 1: in the active voice, the doer is the subject: «La alcaldesa inauguró el museo» (The mayor opened the museum). In the passive, the receiver becomes the subject: «El museo fue inaugurado por la alcaldesa» (The museum was opened by the mayor). STEP 2: the passive is formed exactly like English \"be + past participle\": «ser» in the tense you need, plus the participle of the main verb. STEP 3: the difference from English: the participle AGREES in gender and number with the subject, because here it works like an adjective: «La casa fue construida», «Los libros fueron publicados», «Las cartas serán enviadas». STEP 4: the doer, if mentioned, comes with «por» — English \"by\": «por la alcaldesa», «por una editorial». STEP 5: «ser» can be in any tense: «es construido» (is built), «fue construido» (was built), «era construido», «ha sido construido» (has been built), «será construido» (will be built), «había sido construido» (had been built), «sería construido» (would be built). STEP 6: the «ser» passive is common in the news, official texts and formal writing. In conversation Spanish uses it much LESS than English: it prefers the active or «se» (next session). \"English is spoken here\" is «Aquí se habla inglés», not «inglés es hablado aquí». STEP 7: only verbs with a direct object form this passive. English \"I was told\" can't be copied («Fui dicho» doesn't exist): say «Me lo dijeron» or «Me dijeron». STEP 8: irregular participles stay irregular: «escrito», «hecho», «dicho», «puesto», «visto», «abierto». «La carta fue escrita» (not «escribida»).",
+        "comparacao": "English \"be + past participle + by\" works in Spanish: «La casa fue construida por la empresa». Two differences: the participle agrees («construidA», «publicadOS»), and Spanish uses this passive far less than English. English \"I was told\", \"I was given\" can't be copied at all: «Me dijeron», «Me dieron».",
+        "exemplos": [
+          {
+            "ru": "El libro fue publicado por una editorial pequeña.",
+            "pt": "The book was published by a small publisher."
+          },
+          {
+            "ru": "Los resultados serán anunciados el viernes.",
+            "pt": "The results will be announced on Friday."
+          },
+          {
+            "ru": "La ley ha sido aprobada por el Parlamento.",
+            "pt": "The law was passed by Parliament."
+          },
+          {
+            "ru": "Las llaves fueron entregadas a la vecina.",
+            "pt": "The keys were handed to the neighbour."
+          }
+        ],
+        "tabela": [
+          {
+            "tempo": "present",
+            "forma": "es construido",
+            "exemplo": "El puente es usado por miles de personas."
+          },
+          {
+            "tempo": "indefinido",
+            "forma": "fue construido",
+            "exemplo": "La escuela fue fundada en 1990."
+          },
+          {
+            "tempo": "imperfecto",
+            "forma": "era construido",
+            "exemplo": "La puerta era cerrada cada noche."
+          },
+          {
+            "tempo": "pretérito perfecto",
+            "forma": "ha sido construido",
+            "exemplo": "La noticia ha sido publicada hoy."
+          },
+          {
+            "tempo": "future",
+            "forma": "será construido",
+            "exemplo": "Las cartas serán enviadas mañana."
+          },
+          {
+            "tempo": "pluscuamperfecto",
+            "forma": "había sido construido",
+            "exemplo": "El contrato había sido firmado el lunes."
+          },
+          {
+            "tempo": "conditional",
+            "forma": "sería construido",
+            "exemplo": "El edificio sería inaugurado en mayo."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "La casa fue construido en 1990.",
+            "certo": "La casa fue construida en 1990.",
+            "motivo": "The participle agrees with the subject: «la casa», feminine (English \"built\" never changes)."
+          },
+          {
+            "errado": "Los libros fueron publicado.",
+            "certo": "Los libros fueron publicados.",
+            "motivo": "The participle agrees in the plural."
+          },
+          {
+            "errado": "El museo fue inaugurado de la alcaldesa.",
+            "certo": "El museo fue inaugurado por la alcaldesa.",
+            "motivo": "The doer of the passive comes with «por» (English \"by\")."
+          },
+          {
+            "errado": "La carta fue escribida por Ana.",
+            "certo": "La carta fue escrita por Ana.",
+            "motivo": "«Escribir» has the irregular participle «escrito»."
+          }
+        ],
+        "tag": "Passive"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say out loud five passive sentences about things you know: «Este libro fue escrito por…», «Mi escuela fue fundada…», «La ley fue aprobada…». Then turn two of them into the active voice."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say the participle of «construir», «publicar», «hacer», «decir», «escribir», «abrir» and «ver»: construido, publicado, hecho, dicho, escrito, abierto, visto. Then say the pretérito indefinido of «ser»: fui, fuiste, fue, fuimos, fuisteis, fueron."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-049.json",
+  "responsavel": null
+}

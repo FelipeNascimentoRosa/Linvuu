@@ -1,0 +1,160 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 194,
+  "fase": 20,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "The passive and impersonal «se»: The pasiva refleja and impersonal «se»",
+  "objetivo": "Lesson 49, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 49,
+    "titulo": "The passive and impersonal «se»",
+    "objetivo": "Form the passive voice with «ser» + participle (agreeing with the subject), use the passive «se» («Se venden pisos»), impersonal «se» («Se vive bien aquí») and other impersonal forms (third person plural, «uno»), and tell «ser» + participle apart from «estar» + participle.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "The pasiva refleja and impersonal «se»",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "se alquila",
+            "translit": "",
+            "pt": "for rent, to let",
+            "en": "",
+            "audio": "se alquila"
+          },
+          {
+            "ru": "se vende",
+            "translit": "",
+            "pt": "for sale",
+            "en": "",
+            "audio": "se vende"
+          },
+          {
+            "ru": "se busca",
+            "translit": "",
+            "pt": "wanted, looking for",
+            "en": "",
+            "audio": "se busca"
+          },
+          {
+            "ru": "se prohíbe",
+            "translit": "",
+            "pt": "it is forbidden",
+            "en": "",
+            "audio": "se prohíbe"
+          },
+          {
+            "ru": "se necesita",
+            "translit": "",
+            "pt": "needed, wanted (staff)",
+            "en": "",
+            "audio": "se necesita"
+          },
+          {
+            "ru": "se ruega",
+            "translit": "",
+            "pt": "please (polite request on signs)",
+            "en": "",
+            "audio": "se ruega"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Se venden pisos, se vive bien aquí",
+        "explicacao": "STEP 1: the passive «se» avoids saying who does the action. It's formed with «se» + verb in the third person — English \"is / are + participle\" in signs and ads. STEP 2: the verb agrees with the thing that receives the action, which comes after it: «Se vende un piso» (flat for sale), «Se venden pisos» (flats for sale). That's how signs are written: «Se alquila habitación», «Se alquilan habitaciones» (rooms to let). STEP 3: «se» comes before the verb: «Se habla español» (Spanish spoken). STEP 4: impersonal «se» has no subject: the verb is always singular. It's the English generic \"you\", \"one\" or \"people\": «Aquí se vive bien» (Life's good here / You live well here), «En verano se duerme poco», «Se trabaja mucho». STEP 5: when the complement is a specific person, with «a», the verb stays singular: «Se busca a los responsables» (They're looking for those responsible), «Se detuvo a dos sospechosos». Without «a», agreement is required: «Se buscan camareros» (Waiters wanted). STEP 6: don't confuse it with other uses of «se»: reflexive («Ana se lava»), reciprocal («se quieren») and the «se» that replaces «le» before «lo» («se lo di»). Here «se» means \"it doesn't matter who\". STEP 7: impersonal «se» also goes with «se puede», «se debe», «se necesita»: «Se puede entrar» (You can go in), «No se puede fumar» (No smoking). STEP 8: use «se» for rules and customs: «En España se cena tarde» (In Spain people have dinner late). It's a common generalisation, not true of everybody.",
+        "comparacao": "English signs say \"Flat for rent\", \"Rooms to let\", \"Waiters wanted\", \"Spanish spoken\"; English speech says \"you can't smoke here\", \"people eat late\". Spanish covers all of it with «se»: «Se alquila piso», «Se alquilan habitaciones», «Se buscan camareros», «Se habla español», «No se puede fumar», «Se cena tarde». Watch the agreement: plural thing, plural verb.",
+        "exemplos": [
+          {
+            "ru": "Se habla español, inglés y francés.",
+            "pt": "Spanish, English and French spoken."
+          },
+          {
+            "ru": "En esta calle se cierran las tiendas a las nueve.",
+            "pt": "On this street the shops close at nine."
+          },
+          {
+            "ru": "Se necesitan dos camareros para el verano.",
+            "pt": "Two waiters needed for the summer."
+          },
+          {
+            "ru": "En verano se duerme la siesta.",
+            "pt": "In summer people take a siesta."
+          }
+        ],
+        "tabela": [
+          {
+            "construcao": "passive se, singular",
+            "exemplo": "Se alquila una habitación.",
+            "traducao": "Room for rent."
+          },
+          {
+            "construcao": "passive se, plural",
+            "exemplo": "Se alquilan habitaciones.",
+            "traducao": "Rooms for rent."
+          },
+          {
+            "construcao": "impersonal se (no object)",
+            "exemplo": "Aquí se vive bien.",
+            "traducao": "Life is good here."
+          },
+          {
+            "construcao": "impersonal se + a person with «a»",
+            "exemplo": "Se busca a la autora del libro.",
+            "traducao": "They're looking for the author of the book."
+          },
+          {
+            "construcao": "se puede / se debe + infinitive",
+            "exemplo": "No se puede fumar aquí.",
+            "traducao": "You can't smoke here."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Se vende casas.",
+            "certo": "Se venden casas.",
+            "motivo": "The thing is plural, so the verb agrees."
+          },
+          {
+            "errado": "Se alquila habitaciones.",
+            "certo": "Se alquilan habitaciones.",
+            "motivo": "The verb agrees with «habitaciones»."
+          },
+          {
+            "errado": "Español es hablado aquí.",
+            "certo": "Se habla español.",
+            "motivo": "English \"Spanish is spoken here\" is copied as a «ser» passive; natural Spanish uses «se»."
+          },
+          {
+            "errado": "Se buscan a los responsables.",
+            "certo": "Se busca a los responsables.",
+            "motivo": "With a person and «a», the verb stays singular."
+          }
+        ],
+        "tag": "Passive"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Write and say out loud five short notices with «se», as on a door or in an ad: «Se prohíbe…», «Se alquila…», «Se necesitan…». Then say three customs from your country with «se»: «En mi país se…»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Put into the passive: «La alcaldesa inauguró el museo» and «Una editorial publicará los libros». Then say the participle of «vender», «alquilar» and «prohibir»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-049.json",
+  "responsavel": null
+}
