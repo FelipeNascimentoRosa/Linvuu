@@ -1,0 +1,151 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 105,
+  "fase": 11,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Dative 2: verbs that take the dative: Helfen, danken, gehören",
+  "objetivo": "Lesson 27, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 27,
+    "titulo": "Dative 2: verbs that take the dative",
+    "objetivo": "Use the verbs that put the person in the dative (helfen, danken, gehören, gefallen, schmecken, passen, fehlen, antworten, gratulieren, glauben) and the \"how I feel\" expressions with «mir» and «dir».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Helfen, danken, gehören",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "helfen",
+            "translit": "HEL-fen",
+            "pt": "to help",
+            "en": "to help",
+            "audio": "helfen"
+          },
+          {
+            "ru": "danken",
+            "translit": "DAHNK-en",
+            "pt": "to thank",
+            "en": "to thank",
+            "audio": "danken"
+          },
+          {
+            "ru": "gehören",
+            "translit": "geh-HÖR-en",
+            "pt": "to belong to",
+            "en": "to belong",
+            "audio": "gehören"
+          },
+          {
+            "ru": "antworten",
+            "translit": "AHNT-vor-ten",
+            "pt": "to answer, reply",
+            "en": "to answer",
+            "audio": "antworten"
+          },
+          {
+            "ru": "gratulieren",
+            "translit": "grah-too-LEER-en",
+            "pt": "to congratulate",
+            "en": "to congratulate",
+            "audio": "gratulieren"
+          },
+          {
+            "ru": "der Geburtstag",
+            "translit": "dair geh-BOORTS-tahk",
+            "pt": "birthday",
+            "en": "birthday",
+            "audio": "der Geburtstag"
+          },
+          {
+            "ru": "die Hilfe",
+            "translit": "dee HIL-feh",
+            "pt": "help",
+            "en": "help",
+            "audio": "die Hilfe"
+          },
+          {
+            "ru": "der Umzug",
+            "translit": "dair OOM-tsook",
+            "pt": "move (to a new home)",
+            "en": "move",
+            "audio": "der Umzug"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "Verbs that take the dative: the person goes into the dative, step by step",
+        "explicacao": "STEP 1: some German verbs put the person in the DATIVE, even though English uses a plain direct object: «Ich helfe dir» (I help you), «Ich danke dir» (I thank you), «Das Buch gehört mir» (the book belongs to me). STEP 2: these verbs do NOT take the accusative for the person: «Ich helfe dich» is wrong, even though \"help you\" feels like a direct object. STEP 3: learn each verb together with «wem?»: «helfen + dative», «danken + dative», «gehören + dative». A useful trick: think \"give help TO you\", \"give thanks TO you\", \"belong TO me\" — the \"to\" is your dative. STEP 4: «helfen» changes e to i with «du» and «er» (du hilfst, er hilft). STEP 5: «gratulieren» uses «zu» + dative for the occasion: «Ich gratuliere dir zum Geburtstag» (happy birthday — literally \"I congratulate to you on the birthday\"). STEP 6: «antworten» takes the dative for the person and «auf» + accusative for what you're answering: «Er antwortet dem Chef auf die E-Mail» (He answers the boss's e-mail).",
+        "comparacao": "English says \"help him\", \"thank him\", \"answer him\" with a direct object, so your instinct will say accusative (ihn). German keeps the old dative here: «Ich helfe ihm», «Ich danke ihm», «Ich antworte ihm». With «gehören», English already has the \"to\": \"it belongs to me\" = «es gehört mir».",
+        "tabela": [
+          {
+            "verbo": "helfen",
+            "exemplo": "Ich helfe dir.",
+            "pt": "I help you."
+          },
+          {
+            "verbo": "danken",
+            "exemplo": "Er dankt der Lehrerin.",
+            "pt": "He thanks the teacher."
+          },
+          {
+            "verbo": "gehören",
+            "exemplo": "Das Buch gehört mir.",
+            "pt": "The book is mine."
+          },
+          {
+            "verbo": "antworten",
+            "exemplo": "Er antwortet dem Chef.",
+            "pt": "He answers the boss."
+          },
+          {
+            "verbo": "gratulieren",
+            "exemplo": "Wir gratulieren dir zum Geburtstag.",
+            "pt": "We wish you a happy birthday."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich helfe dich.",
+            "certo": "Ich helfe dir.",
+            "motivo": "«helfen» takes the dative."
+          },
+          {
+            "errado": "Das Buch gehört ich.",
+            "certo": "Das Buch gehört mir.",
+            "motivo": "«gehören» takes the dative."
+          },
+          {
+            "errado": "Er hilfst mir.",
+            "certo": "Er hilft mir.",
+            "motivo": "With «er»: «hilft»."
+          }
+        ],
+        "tag": "Cases"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Say 6 sentences with «helfen», «danken» and «gehören»: «Ich helfe meiner Mutter. Das Handy gehört mir.»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write the dative pronouns for all nine persons and 5 sentences with them."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-027.json",
+  "responsavel": null
+}

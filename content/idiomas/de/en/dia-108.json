@@ -1,0 +1,588 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 108,
+  "fase": 11,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Dative 2: verbs that take the dative: Practice",
+  "objetivo": "Lesson 27, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 27,
+    "titulo": "Dative 2: verbs that take the dative",
+    "objetivo": "Use the verbs that put the person in the dative (helfen, danken, gehören, gefallen, schmecken, passen, fehlen, antworten, gratulieren, glauben) and the \"how I feel\" expressions with «mir» and «dir».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Practice",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 13,
+        "itens": [
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich helfe ___. (you)",
+            "opcoes": [
+              "dir",
+              "dich",
+              "du"
+            ],
+            "gabarito": "dir",
+            "explicacao": "«helfen» takes the dative.",
+            "id": "de-027-e01"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Oh, I'm sorry! Would you like something to drink?\"",
+            "opcoes": [
+              "trinken?",
+              "leid!",
+              "das",
+              "mir",
+              "du",
+              "etwas",
+              "tut",
+              "Oh,",
+              "Möchtest"
+            ],
+            "gabarito": "Oh, das tut mir leid! Möchtest du etwas trinken?",
+            "explicacao": "Write: Oh, das tut mir leid! Möchtest du etwas trinken?",
+            "id": "de-027-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Das Buch gehört ___. (to me)",
+            "opcoes": [
+              "mir",
+              "mich",
+              "ich"
+            ],
+            "gabarito": "mir",
+            "explicacao": "«gehören» takes the dative.",
+            "id": "de-027-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Oh, das tut mir leid! Möchtest du etwas trinken?",
+            "respostaEsperada": "Oh, das tut mir leid! Möchtest du etwas trinken?",
+            "explicacao": "Oh, I'm sorry! Would you like something to drink?",
+            "id": "de-027-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Wir danken ___ Lehrerin. (the)",
+            "opcoes": [
+              "der",
+              "die",
+              "dem"
+            ],
+            "gabarito": "der",
+            "explicacao": "Feminine dative.",
+            "id": "de-027-e03"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"I'll help you. Sit down.\"",
+            "opcoes": [
+              "hin.",
+              "dich",
+              "dir.",
+              "helfe",
+              "Ich",
+              "Setz"
+            ],
+            "gabarito": "Ich helfe dir. Setz dich hin.",
+            "explicacao": "Write: Ich helfe dir. Setz dich hin.",
+            "id": "de-027-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Hallo Paul! Wie geht es dir?",
+            "respostaEsperada": "Hallo Paul! Wie geht es dir?",
+            "explicacao": "Hi, Paul! How are you?",
+            "id": "de-027-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ich helfe dir. Setz dich hin.",
+            "respostaEsperada": "Ich helfe dir. Setz dich hin.",
+            "explicacao": "I'll help you. Sit down.",
+            "id": "de-027-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Er antwortet ___ Chef. (the)",
+            "opcoes": [
+              "dem",
+              "den",
+              "der"
+            ],
+            "gabarito": "dem",
+            "explicacao": "Masculine dative.",
+            "id": "de-027-e04"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Is that jacket over there yours? Are you cold?\"",
+            "opcoes": [
+              "dir",
+              "die",
+              "Jacke",
+              "kalt?",
+              "Gehört",
+              "dort",
+              "dir?",
+              "Ist"
+            ],
+            "gabarito": "Gehört die Jacke dort dir? Ist dir kalt?",
+            "explicacao": "Write: Gehört die Jacke dort dir? Ist dir kalt?",
+            "id": "de-027-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Er ___ mir. (helfen)",
+            "opcoes": [
+              "hilft",
+              "hilfst",
+              "helft"
+            ],
+            "gabarito": "hilft",
+            "explicacao": "er → hilft.",
+            "id": "de-027-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Gehört die Jacke dort dir? Ist dir kalt?",
+            "respostaEsperada": "Gehört die Jacke dort dir? Ist dir kalt?",
+            "explicacao": "Is that jacket over there yours? Are you cold?",
+            "id": "de-027-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Das Kleid ___ mir. (gefallen)",
+            "opcoes": [
+              "gefällt",
+              "gefallen",
+              "gefallt"
+            ],
+            "gabarito": "gefällt",
+            "explicacao": "er/sie/es → gefällt.",
+            "id": "de-027-e06"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Yes, the jacket is mine. I'm a little cold.\"",
+            "opcoes": [
+              "ein",
+              "mir.",
+              "gehört",
+              "Mir",
+              "bisschen",
+              "die",
+              "kalt.",
+              "Jacke",
+              "ist",
+              "Ja,"
+            ],
+            "gabarito": "Ja, die Jacke gehört mir. Mir ist ein bisschen kalt.",
+            "explicacao": "Write: Ja, die Jacke gehört mir. Mir ist ein bisschen kalt.",
+            "id": "de-027-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Ja, bitte. Ein Tee schmeckt mir jetzt gut.",
+            "respostaEsperada": "Ja, bitte. Ein Tee schmeckt mir jetzt gut.",
+            "explicacao": "Yes, please. A cup of tea would do me good right now.",
+            "id": "de-027-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ja, die Jacke gehört mir. Mir ist ein bisschen kalt.",
+            "respostaEsperada": "Ja, die Jacke gehört mir. Mir ist ein bisschen kalt.",
+            "explicacao": "Yes, the jacket is mine. I'm a little cold.",
+            "id": "de-027-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Die Schuhe ___ mir. (gefallen)",
+            "opcoes": [
+              "gefallen",
+              "gefällt",
+              "gefallt"
+            ],
+            "gabarito": "gefallen",
+            "explicacao": "Plural: gefallen.",
+            "id": "de-027-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Yes, it fits me well. Thanks!\"",
+            "opcoes": [
+              "sie",
+              "gut.",
+              "Danke!",
+              "mir",
+              "Ja,",
+              "passt"
+            ],
+            "gabarito": "Ja, sie passt mir gut. Danke!",
+            "explicacao": "Write: Ja, sie passt mir gut. Danke!",
+            "id": "de-027-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Die Jacke ___ mir gut. (passen)",
+            "opcoes": [
+              "passt",
+              "passen",
+              "pass"
+            ],
+            "gabarito": "passt",
+            "explicacao": "es → passt.",
+            "id": "de-027-e08"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ ist kalt. (to me)",
+            "opcoes": [
+              "Mir",
+              "Ich",
+              "Mich"
+            ],
+            "gabarito": "Mir",
+            "explicacao": "A feeling with the dative.",
+            "id": "de-027-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ja, sie passt mir gut. Danke!",
+            "respostaEsperada": "Ja, sie passt mir gut. Danke!",
+            "explicacao": "Yes, it fits me well. Thanks!",
+            "id": "de-027-x10",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Wie geht es dir?» asks:",
+            "opcoes": [
+              "how you are",
+              "where you're going",
+              "who you are"
+            ],
+            "gabarito": "how you are",
+            "explicacao": "A fixed phrase with the dative.",
+            "id": "de-027-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «folgen» mean?",
+            "audio": "folgen",
+            "opcoes": [
+              "to follow",
+              "move (to a new home)",
+              "to please, to like",
+              "to help"
+            ],
+            "gabarito": "to follow",
+            "explicacao": "«folgen» = to follow.",
+            "id": "de-027-x11",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Danke! Du bist sehr nett.",
+            "respostaEsperada": "Danke! Du bist sehr nett.",
+            "explicacao": "Thanks! That's very kind of you.",
+            "id": "de-027-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «danken» mean?",
+            "audio": "danken",
+            "opcoes": [
+              "move (to a new home)",
+              "to believe (someone)",
+              "to thank",
+              "to be missing"
+            ],
+            "gabarito": "to thank",
+            "explicacao": "«danken» = to thank.",
+            "id": "de-027-x12",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Es tut mir leid» means:",
+            "opcoes": [
+              "I'm sorry",
+              "I need that",
+              "I like that"
+            ],
+            "gabarito": "I'm sorry",
+            "explicacao": "Fixed phrase.",
+            "id": "de-027-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «passen» mean?",
+            "audio": "passen",
+            "opcoes": [
+              "to answer, reply",
+              "to fit, to suit",
+              "to thank",
+              "to hurt"
+            ],
+            "gabarito": "to fit, to suit",
+            "explicacao": "«passen» = to fit, to suit.",
+            "id": "de-027-x13",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Ich helfe dir.",
+              "Ich helfe dich.",
+              "Ich helfe du."
+            ],
+            "gabarito": "Ich helfe dir.",
+            "explicacao": "Dative.",
+            "id": "de-027-e12"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «glauben» mean?",
+            "audio": "glauben",
+            "opcoes": [
+              "to believe (someone)",
+              "to taste (good)",
+              "to congratulate",
+              "move (to a new home)"
+            ],
+            "gabarito": "to believe (someone)",
+            "explicacao": "«glauben» = to believe (someone).",
+            "id": "de-027-x14",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"I like the dress.\" (The dress pleases me.)",
+            "opcoes": [
+              "Das",
+              "Kleid",
+              "gefällt",
+              "mir"
+            ],
+            "gabarito": "Das Kleid gefällt mir.",
+            "explicacao": "The thing is the subject.",
+            "id": "de-027-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «wehtun» mean?",
+            "audio": "wehtun",
+            "opcoes": [
+              "to follow",
+              "to help",
+              "to hurt",
+              "to listen to"
+            ],
+            "gabarito": "to hurt",
+            "explicacao": "«wehtun» = to hurt.",
+            "id": "de-027-x15",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Hier, nimm sie. Gefällt sie dir?",
+            "respostaEsperada": "Hier, nimm sie. Gefällt sie dir?",
+            "explicacao": "Here, take it. Do you like it?",
+            "id": "de-027-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «die Hilfe» mean?",
+            "audio": "die Hilfe",
+            "opcoes": [
+              "help",
+              "to follow",
+              "to thank",
+              "to fit, to suit"
+            ],
+            "gabarito": "help",
+            "explicacao": "«die Hilfe» = help.",
+            "id": "de-027-x16",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Der Kopf tut mir weh",
+            "opcoes": [
+              "Der Kopf tut mir weh",
+              "Der Kopf tut dich weh",
+              "Mir ist der Kopf kalt"
+            ],
+            "gabarito": "Der Kopf tut mir weh",
+            "explicacao": "«wehtun» + dative.",
+            "id": "de-027-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Der Kopf tut mir weh",
+            "opcoes": [
+              "mir",
+              "weh",
+              "Kopf",
+              "tut",
+              "Der"
+            ],
+            "gabarito": "Der Kopf tut mir weh",
+            "explicacao": "Write: Der Kopf tut mir weh",
+            "id": "de-027-x17",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ich gratuliere dir zum Geburtstag",
+            "respostaEsperada": "Ich gratuliere dir zum Geburtstag",
+            "explicacao": "gratulieren + dative + zu.",
+            "id": "de-027-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Ich gratuliere dir zum Geburtstag",
+            "opcoes": [
+              "zum",
+              "Geburtstag",
+              "dir",
+              "gratuliere",
+              "Ich"
+            ],
+            "gabarito": "Ich gratuliere dir zum Geburtstag",
+            "explicacao": "Write: Ich gratuliere dir zum Geburtstag",
+            "id": "de-027-x18",
+            "complemento": true
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write 5 sentences: helping, thanking, owning, liking, and one feeling.",
+            "respostaEsperada": "Ich helfe meiner Mutter. Ich danke dir. Das Handy gehört mir. Das Kleid gefällt mir. Mir ist kalt.",
+            "id": "de-027-e16"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Record yourself: ask for help, say thank you, say what belongs to you, what you like and how you feel."
+      },
+      {
+        "tipo": "exercicios",
+        "min": 6,
+        "itens": [
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Ich gebe der Mann ein Buch.",
+            "respostaEsperada": "Ich gebe dem Mann ein Buch.",
+            "explicacao": "Ich gebe dem Mann ein Buch.",
+            "id": "de-027-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Correct it: Ich gebe den Kinder das Buch.",
+            "respostaEsperada": "Ich gebe den Kindern das Buch.",
+            "explicacao": "Ich gebe den Kindern das Buch.",
+            "id": "de-027-L-c05"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 2,
+        "titulo": "The typical English-speaker mistakes",
+        "explicacao": "STEP 1: the costliest mistakes: using the accusative with dative verbs, because English says \"help him\", \"thank him\", \"follow him\" (Ich helfe ihn / Ich danke dich instead of Ich helfe ihm / Ich danke dir); building «gefallen» like English \"like\" (Ich gefalle das Kleid instead of Das Kleid gefällt mir); and translating \"I'm cold\" word for word (Ich bin kalt instead of Mir ist kalt). STEP 2: read the table and say each correct sentence out loud before you look at the reason.",
+        "erros": [
+          {
+            "errado": "Ich helfe ihn.",
+            "certo": "Ich helfe ihm.",
+            "motivo": "helfen takes the dative, even though English says \"help him\"."
+          },
+          {
+            "errado": "Ich danke dich.",
+            "certo": "Ich danke dir.",
+            "motivo": "danken takes the dative: dir."
+          },
+          {
+            "errado": "Ich gefalle das Kleid.",
+            "certo": "Das Kleid gefällt mir.",
+            "motivo": "gefallen = \"to please\": the thing is the subject, the person is dative."
+          },
+          {
+            "errado": "Die Schuhe gefällt mir.",
+            "certo": "Die Schuhe gefallen mir.",
+            "motivo": "The verb agrees with the thing: plural gefallen."
+          },
+          {
+            "errado": "Ich bin kalt.",
+            "certo": "Mir ist kalt.",
+            "motivo": "Feelings: dative + ist. \"Ich bin kalt\" means \"I'm a cold person\"."
+          },
+          {
+            "errado": "Ich gratuliere dich zum Geburtstag.",
+            "certo": "Ich gratuliere dir zum Geburtstag.",
+            "motivo": "gratulieren takes the dative."
+          }
+        ],
+        "tag": "Typical mistake"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Can I do it? I say Ich helfe dir, Das gehört mir and Das gefällt mir. · I answer Mir geht es gut and Mir ist kalt, and choose between dem, der, den without looking at the chart."
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Write 6 sentences with verbs that take the dative and 2 with «Mir ist …»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 2,
+        "enunciado": "Review. Complete with the dative: Ich gebe ____ Mann das Buch. · Ich zeige ____ Kindern das Foto. · Ich gebe ____ (er) den Ball. · Ich wünsche ____ (du) einen schönen Tag."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-027.json",
+  "responsavel": null
+}

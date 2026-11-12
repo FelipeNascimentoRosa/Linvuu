@@ -1,0 +1,160 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 106,
+  "fase": 11,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Dative 2: verbs that take the dative: Gefallen, schmecken, passen and others",
+  "objetivo": "Lesson 27, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 27,
+    "titulo": "Dative 2: verbs that take the dative",
+    "objetivo": "Use the verbs that put the person in the dative (helfen, danken, gehören, gefallen, schmecken, passen, fehlen, antworten, gratulieren, glauben) and the \"how I feel\" expressions with «mir» and «dir».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Gefallen, schmecken, passen and others",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "gefallen",
+            "translit": "geh-FAHL-en",
+            "pt": "to please, to like",
+            "en": "to like",
+            "audio": "gefallen"
+          },
+          {
+            "ru": "schmecken",
+            "translit": "SHMECK-en",
+            "pt": "to taste (good)",
+            "en": "to taste",
+            "audio": "schmecken"
+          },
+          {
+            "ru": "passen",
+            "translit": "PAHSS-en",
+            "pt": "to fit, to suit",
+            "en": "to fit",
+            "audio": "passen"
+          },
+          {
+            "ru": "fehlen",
+            "translit": "FAY-len",
+            "pt": "to be missing",
+            "en": "to be missing",
+            "audio": "fehlen"
+          },
+          {
+            "ru": "glauben",
+            "translit": "GLOW-ben",
+            "pt": "to believe (someone)",
+            "en": "to believe",
+            "audio": "glauben"
+          },
+          {
+            "ru": "folgen",
+            "translit": "FOL-gen",
+            "pt": "to follow",
+            "en": "to follow",
+            "audio": "folgen"
+          },
+          {
+            "ru": "zuhören",
+            "translit": "TSOO-hör-en",
+            "pt": "to listen to",
+            "en": "to listen to",
+            "audio": "zuhören"
+          },
+          {
+            "ru": "wehtun",
+            "translit": "VAY-toon",
+            "pt": "to hurt",
+            "en": "to hurt",
+            "audio": "wehtun"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Gefallen, schmecken, passen: the German way of \"liking\"",
+        "explicacao": "STEP 1: «gefallen» flips the sentence: the person who likes goes into the DATIVE and the thing they like is the subject: «Das Kleid gefällt mir» — literally \"the dress pleases me\" = I like the dress. English does the same with \"please\" and \"appeal to\": \"the dress appeals to me\". STEP 2: the verb agrees with the THING: «Die Schuhe gefallen mir» (plural — \"the shoes please me\"). STEP 3: «schmecken» is about taste: «Die Suppe schmeckt mir (gut)» (I like the soup). STEP 4: «passen» means \"to fit\" and \"to suit\": «Die Jacke passt mir» (the jacket fits me), «Die Farbe passt dir gut» (the color suits you). STEP 5: «fehlen» (to be missing): «Mir fehlt Zeit» (I'm short of time — \"time is missing to me\"). STEP 6: «glauben», «folgen» and «zuhören» also take the dative for the person: «Ich glaube dir» (I believe you), «Sie folgt ihm» (she follows him), «Hör mir zu!» (listen to me!). STEP 7: «wehtun» (to hurt): «Der Kopf tut mir weh» (my head hurts). Careful: «gefallen» changes a to ä with «er» (es gefällt).",
+        "tabela": [
+          {
+            "verbo": "gefallen",
+            "exemplo": "Das Kleid gefällt mir.",
+            "pt": "I like the dress."
+          },
+          {
+            "verbo": "schmecken",
+            "exemplo": "Die Suppe schmeckt mir.",
+            "pt": "I like the soup (the taste)."
+          },
+          {
+            "verbo": "passen",
+            "exemplo": "Die Jacke passt mir.",
+            "pt": "The jacket fits me."
+          },
+          {
+            "verbo": "fehlen",
+            "exemplo": "Mir fehlt Zeit.",
+            "pt": "I'm short of time."
+          },
+          {
+            "verbo": "glauben",
+            "exemplo": "Ich glaube dir.",
+            "pt": "I believe you."
+          },
+          {
+            "verbo": "zuhören",
+            "exemplo": "Hör mir bitte zu!",
+            "pt": "Listen to me, please!"
+          },
+          {
+            "verbo": "wehtun",
+            "exemplo": "Der Kopf tut mir weh.",
+            "pt": "My head hurts."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Das Kleid gefällt ich.",
+            "certo": "Das Kleid gefällt mir.",
+            "motivo": "The person who likes goes into the dative."
+          },
+          {
+            "errado": "Die Schuhe gefällt mir.",
+            "certo": "Die Schuhe gefallen mir.",
+            "motivo": "The verb agrees with the THING that is liked."
+          },
+          {
+            "errado": "Ich gefalle das Kleid.",
+            "certo": "Das Kleid gefällt mir.",
+            "motivo": "The thing is the subject."
+          }
+        ],
+        "tag": "Cases"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say 6 sentences about what you like: «Das Haus gefällt mir. Die Suppe schmeckt mir. Die Jacke passt mir.»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write one sentence with each verb from the previous session."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-027.json",
+  "responsavel": null
+}
