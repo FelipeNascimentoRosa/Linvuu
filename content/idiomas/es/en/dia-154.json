@@ -1,0 +1,132 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 154,
+  "fase": 16,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Pluscuamperfecto: Ordering the events of a story",
+  "objetivo": "Lesson 39, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 39,
+    "titulo": "Pluscuamperfecto",
+    "objetivo": "Form and use the pluscuamperfecto («había hablado», «había hecho») to talk about something that had already happened before another moment in the past, with pronouns, negation, questions and markers like «ya» and «todavía no».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Ordering the events of a story",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "al llegar",
+            "translit": "",
+            "pt": "on arriving, when (I) arrived",
+            "en": "",
+            "audio": "al llegar"
+          },
+          {
+            "ru": "ya",
+            "translit": "",
+            "pt": "already",
+            "en": "",
+            "audio": "ya"
+          },
+          {
+            "ru": "todavía no",
+            "translit": "",
+            "pt": "not yet",
+            "en": "",
+            "audio": "todavía no"
+          },
+          {
+            "ru": "nunca antes",
+            "translit": "",
+            "pt": "never before",
+            "en": "",
+            "audio": "nunca antes"
+          },
+          {
+            "ru": "de repente",
+            "translit": "",
+            "pt": "suddenly",
+            "en": "",
+            "audio": "de repente"
+          },
+          {
+            "ru": "por eso",
+            "translit": "",
+            "pt": "that's why, so",
+            "en": "",
+            "audio": "por eso"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Which event came first?",
+        "explicacao": "STEP 1: think of two past events. One is the event you're telling («cuando llegué»). The other had already happened BEFORE it («el tren salió»). STEP 2: the more recent event, your reference point, takes the indefinido or the imperfecto: «Cuando llegué…». The older event takes the pluscuamperfecto: «…el tren ya había salido». STEP 3: so the full sentence is «Cuando llegué, el tren ya había salido» (When I arrived, the train had already left). First the train left, then I arrived. STEP 4: words that help you spot the order: «ya, todavía no, aún no, nunca, antes, hasta entonces, al + infinitive, cuando». STEP 5: «ya» and «todavía no» usually go before the auxiliary: «ya había salido», «todavía no habían llegado». STEP 6: use the pluscuamperfecto to explain a cause: «Llegó tarde porque había perdido el autobús» (He was late because he had missed the bus). STEP 7: and to say what you had never done up to a point: «Hasta aquel viaje, nunca había estado en Sevilla». STEP 8: if the events are told in the order they happened, you don't need it: «Llegué, cené y me acosté». STEP 9: don't confuse it with the pretérito perfecto: «No he comido» looks from the present; «No había comido» looks from a moment in the past.",
+        "comparacao": "The logic is the same as in English: \"When I arrived, the train had already left.\" But in casual English people often drop the past perfect (\"When I got there, the train already left\"). In Spanish that blurs the order of events, so use «ya había salido».",
+        "tabela": [
+          {
+            "tempo": "pretérito perfecto",
+            "olhar": "from the present",
+            "exemplo": "Todavía no he comido."
+          },
+          {
+            "tempo": "pluscuamperfecto",
+            "olhar": "from a moment in the past",
+            "exemplo": "Todavía no había comido cuando llamaste."
+          },
+          {
+            "tempo": "indefinido",
+            "olhar": "finished past event",
+            "exemplo": "Llamaste a las tres."
+          },
+          {
+            "tempo": "imperfecto",
+            "olhar": "background in the past",
+            "exemplo": "Tenía hambre."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Cuando llegué, el tren ya salió.",
+            "certo": "Cuando llegué, el tren ya había salido.",
+            "motivo": "The train left before I arrived, so you need the pluscuamperfecto (English \"had already left\")."
+          },
+          {
+            "errado": "Ayer, cuando me llamaste, ya he cenado.",
+            "certo": "Ayer, cuando me llamaste, ya había cenado.",
+            "motivo": "The reference point is in the past («ayer»); «he cenado» looks from the present."
+          },
+          {
+            "errado": "Nunca he estado en Sevilla hasta aquel viaje.",
+            "certo": "Nunca había estado en Sevilla hasta aquel viaje.",
+            "motivo": "With «hasta aquel viaje», the reference is a moment in the past (English \"I had never been… until that trip\")."
+          }
+        ],
+        "tag": "Compound tenses"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Tell a short story out loud in five sentences, with at least two pluscuamperfectos: «Ayer llegué tarde al trabajo. Mis compañeros ya habían empezado la reunión…»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Conjugate «había + hablado» out loud in all six persons and say the participle of abrir, volver, romper and cubrir."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-039.json",
+  "responsavel": null
+}
