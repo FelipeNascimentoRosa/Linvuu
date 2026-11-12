@@ -1,0 +1,235 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 185,
+  "fase": 19,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Relative clauses 1: the relative pronoun in the nominative: The relative clause",
+  "objetivo": "Lesson 47, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 47,
+    "titulo": "Relative clauses 1: the relative pronoun in the nominative",
+    "objetivo": "Understand and form relative clauses in which the relative pronoun is the subject (der, die, das, die), with the verb at the end, the commas, and the position right after the noun.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "The relative clause",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Lesson goal. By the end of the four sessions, you join two sentences with a relative pronoun (der, die, das, den), choose its form from the gender of the noun before it and from its job in the second clause, send the verb to the end, and put in the commas."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "At the lost and found",
+        "contexto": "Camila left her backpack on the train and went to the station's lost and found.",
+        "linhas": [
+          {
+            "personagem": "Camila",
+            "ru": "— Guten Tag. Ich suche einen Rucksack, den ich gestern im Zug vergessen habe.",
+            "pt": "— Good morning. I'm looking for a backpack that I left on the train yesterday.",
+            "audio": "Guten Tag. Ich suche einen Rucksack, den ich gestern im Zug vergessen habe.",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Mitarbeiter",
+            "ru": "— Wie sieht er aus?",
+            "pt": "— What does it look like?",
+            "audio": "Wie sieht er aus?",
+            "rotulo": "Mitarbeiter"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Er ist schwarz und hat einen roten Streifen. Im Rucksack sind ein Buch, das ich noch lesen muss, eine Jacke, die ich sehr mag, und meine Kamera, die nicht billig war.",
+            "pt": "— It's black and has a red stripe. In the backpack there's a book that I still have to read, a jacket that I really like, and my camera, which wasn't cheap.",
+            "audio": "Er ist schwarz und hat einen roten Streifen. Im Rucksack sind ein Buch, das ich noch lesen muss, eine Jacke, die ich sehr mag, und meine Kamera, die nicht billig war.",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Mitarbeiter",
+            "ru": "— Dann haben wir ihn. Das ist der Rucksack, den ein Mann heute früh gebracht hat.",
+            "pt": "— Then we have it. This is the backpack that a man brought in this morning.",
+            "audio": "Dann haben wir ihn. Das ist der Rucksack, den ein Mann heute früh gebracht hat.",
+            "rotulo": "Mitarbeiter"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Wunderbar! Wo ist der Mann, der ihn gefunden hat? Ich möchte ihm danken.",
+            "pt": "— Wonderful! Where's the man who found it? I'd like to thank him.",
+            "audio": "Wunderbar! Wo ist der Mann, der ihn gefunden hat? Ich möchte ihm danken.",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Mitarbeiter",
+            "ru": "— Er ist schon weg, aber er hat seinen Namen aufgeschrieben. Sie können ihm schreiben.",
+            "pt": "— He's already gone, but he left his name. You can write to him.",
+            "audio": "Er ist schon weg, aber er hat seinen Namen aufgeschrieben. Sie können ihm schreiben.",
+            "rotulo": "Mitarbeiter"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "The English-speaker trap",
+        "explicacao": "STEP 1: English uses \"who\", \"which\" or \"that\" — and often drops the pronoun completely: \"the man I know\", \"the book I read\". German NEVER drops it: «der Mann, den ich kenne», «das Buch, das ich gelesen habe». STEP 2: look twice: the gender of the noun before it picks the family (der, die, das, die), and the job of the pronoun in its own clause picks the case — like English who (subject) vs whom (object).",
+        "comparacao": "Three traps.",
+        "tabela": [
+          {
+            "ingles": "The man who lives here is a doctor.",
+            "alemao": "Der Mann, der hier wohnt, ist Arzt."
+          },
+          {
+            "ingles": "The man (that) I know is a doctor.",
+            "alemao": "Der Mann, den ich kenne, ist Arzt."
+          },
+          {
+            "ingles": "The woman who lives here is a doctor.",
+            "alemao": "Die Frau, die hier wohnt, ist Ärztin."
+          },
+          {
+            "ingles": "The woman (that) I know is a doctor.",
+            "alemao": "Die Frau, die ich kenne, ist Ärztin."
+          },
+          {
+            "ingles": "The book (that) I read is good.",
+            "alemao": "Das Buch, das ich gelesen habe, ist gut."
+          }
+        ],
+        "tag": "Trap"
+      },
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "der Gast",
+            "translit": "dair GAHST",
+            "pt": "guest",
+            "en": "guest",
+            "audio": "der Gast"
+          },
+          {
+            "ru": "das Mädchen",
+            "translit": "dahs MAYT-khen",
+            "pt": "girl",
+            "en": "girl",
+            "audio": "das Mädchen"
+          },
+          {
+            "ru": "die Leute",
+            "translit": "dee LOY-teh",
+            "pt": "people",
+            "en": "people",
+            "audio": "die Leute"
+          },
+          {
+            "ru": "der Schauspieler",
+            "translit": "dair SHOW-shpee-ler",
+            "pt": "actor",
+            "en": "actor",
+            "audio": "der Schauspieler"
+          },
+          {
+            "ru": "der Sänger",
+            "translit": "dair ZENG-er",
+            "pt": "singer",
+            "en": "singer",
+            "audio": "der Sänger"
+          },
+          {
+            "ru": "berühmt",
+            "translit": "beh-RÜMT",
+            "pt": "famous",
+            "en": "famous",
+            "audio": "berühmt"
+          },
+          {
+            "ru": "bekannt",
+            "translit": "beh-KAHNT",
+            "pt": "well-known; acquainted",
+            "en": "well-known",
+            "audio": "bekannt"
+          },
+          {
+            "ru": "der Kunde",
+            "translit": "dair KOON-deh",
+            "pt": "customer",
+            "en": "customer",
+            "audio": "der Kunde"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "The relative clause, step by step",
+        "explicacao": "STEP 1: a RELATIVE CLAUSE describes a noun: «Der Mann, der dort steht, ist mein Chef» (the man who is standing there is my boss). STEP 2: it starts with a RELATIVE PRONOUN that looks like the DEFINITE ARTICLE: der (m), die (f), das (n), die (plural). STEP 3: the GENDER and NUMBER of the relative pronoun come from the noun it describes (the antecedent): «Mann» is masculine → «der»; «Frau» is feminine → «die». In English \"who\" and \"which\" don't change — in German they do. STEP 4: the CASE of the relative pronoun comes from its job INSIDE the relative clause; in this lesson, it's the SUBJECT (nominative). STEP 5: the conjugated verb goes to the END of the relative clause, as with «weil» and «dass». STEP 6: the relative clause comes right AFTER the noun and between COMMAS — always, even where English uses no commas: «Der Mann, der dort steht, ist mein Chef.»",
+        "comparacao": "English uses \"who\" for people and \"which/that\" for things, and the word order stays normal (\"who is standing there\"). German uses der, die, das, die for people AND things, never drops the pronoun, and sends the verb to the end: «der dort steht».",
+        "tabela": [
+          {
+            "genero": "masculine",
+            "antecedente": "der Mann",
+            "relativo": "der",
+            "exemplo": "Der Mann, der dort steht, ist mein Chef."
+          },
+          {
+            "genero": "feminine",
+            "antecedente": "die Frau",
+            "relativo": "die",
+            "exemplo": "Die Frau, die dort steht, ist meine Chefin."
+          },
+          {
+            "genero": "neuter",
+            "antecedente": "das Kind",
+            "relativo": "das",
+            "exemplo": "Das Kind, das dort spielt, ist mein Neffe."
+          },
+          {
+            "genero": "plural",
+            "antecedente": "die Leute",
+            "relativo": "die",
+            "exemplo": "Die Leute, die dort warten, sind meine Gäste."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Der Mann, der steht dort, ist mein Chef.",
+            "certo": "Der Mann, der dort steht, ist mein Chef.",
+            "motivo": "The conjugated verb goes to the end of the relative clause."
+          },
+          {
+            "errado": "Der Mann der dort steht ist mein Chef.",
+            "certo": "Der Mann, der dort steht, ist mein Chef.",
+            "motivo": "A relative clause takes a comma before and after."
+          },
+          {
+            "errado": "Die Frau, der dort steht, ist meine Chefin.",
+            "certo": "Die Frau, die dort steht, ist meine Chefin.",
+            "motivo": "The relative pronoun agrees with the gender of the noun: «Frau» → «die»."
+          }
+        ],
+        "tag": "Sentence"
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Describe 6 people or things out loud: «Der Mann, der … Die Frau, die … Das Kind, das …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Write 8 of your favorite A2 sentences: Perfekt, dative, weil, dass and wenn."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-047.json",
+  "responsavel": null
+}
