@@ -1,0 +1,200 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 87,
+  "fase": 9,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Perfekt 2: irregular participles: Group 3: mixed and special verbs, and dialogue",
+  "objetivo": "Lesson 22, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 22,
+    "titulo": "Perfekt 2: irregular participles",
+    "objetivo": "Form the Partizip II of the most common strong and mixed verbs, in three small groups (same vowel, changing vowel, mixed verbs), and use them in the Perfekt.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Group 3: mixed and special verbs, and dialogue",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "bringen / gebracht",
+            "translit": "BRING-en / geh-BRAHKHT",
+            "pt": "to bring / brought",
+            "en": "to bring",
+            "audio": "bringen / gebracht"
+          },
+          {
+            "ru": "denken / gedacht",
+            "translit": "DENK-en / geh-DAHKHT",
+            "pt": "to think / thought",
+            "en": "to think",
+            "audio": "denken / gedacht"
+          },
+          {
+            "ru": "wissen / gewusst",
+            "translit": "VISS-en / geh-VOOST",
+            "pt": "to know (a fact) / known",
+            "en": "to know",
+            "audio": "wissen / gewusst"
+          },
+          {
+            "ru": "kennen / gekannt",
+            "translit": "KEN-en / geh-KAHNT",
+            "pt": "to know (a person, place) / known",
+            "en": "to know (a person)",
+            "audio": "kennen / gekannt"
+          },
+          {
+            "ru": "tun / getan",
+            "translit": "TOON / geh-TAHN",
+            "pt": "to do / done",
+            "en": "to do",
+            "audio": "tun / getan"
+          },
+          {
+            "ru": "werden / geworden",
+            "translit": "VEHR-den / geh-VOR-den",
+            "pt": "to become / become",
+            "en": "to become",
+            "audio": "werden / geworden"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Mixed verbs and special forms",
+        "explicacao": "STEP 1: MIXED verbs change the vowel (like strong verbs) but end in «-t» (like regular ones) — and English has the very same group: bringen → gebracht (bring → brought); denken → gedacht (think → thought); wissen → gewusst; kennen → gekannt. STEP 2: «haben» makes «gehabt» and «sein» makes «gewesen»; «tun» makes «getan» (done); «werden» makes «geworden» (with «sein»). STEP 3: with «sein» and «haben», conversation prefers the simple past (war, hatte), but the participle shows up in sentences like «Ich bin in Berlin gewesen» (I've been to Berlin). STEP 4: German has two verbs for \"to know\": «wissen» for facts («Ich habe das nicht gewusst» — I didn't know that) and «kennen» for people and places («Ich habe ihn gekannt» — I knew him).",
+        "tabela": [
+          {
+            "infinitivo": "bringen",
+            "participio": "gebracht",
+            "exemplo": "Er hat Brot gebracht."
+          },
+          {
+            "infinitivo": "denken",
+            "participio": "gedacht",
+            "exemplo": "Ich habe an dich gedacht."
+          },
+          {
+            "infinitivo": "wissen",
+            "participio": "gewusst",
+            "exemplo": "Das habe ich nicht gewusst."
+          },
+          {
+            "infinitivo": "kennen",
+            "participio": "gekannt",
+            "exemplo": "Ich habe ihn nicht gekannt."
+          },
+          {
+            "infinitivo": "tun",
+            "participio": "getan",
+            "exemplo": "Was hast du getan?"
+          },
+          {
+            "infinitivo": "haben",
+            "participio": "gehabt",
+            "exemplo": "Ich habe Glück gehabt."
+          },
+          {
+            "infinitivo": "sein (sein)",
+            "participio": "gewesen",
+            "exemplo": "Ich bin in Berlin gewesen."
+          },
+          {
+            "infinitivo": "werden (sein)",
+            "participio": "geworden",
+            "exemplo": "Es ist kalt geworden."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 9,
+        "titulo": "Was ist passiert? / What happened?",
+        "contexto": "Two friends talk about the day before.",
+        "linhas": [
+          {
+            "personagem": "Mia",
+            "ru": "— Hallo Jonas! Hast du Paul gestern gesehen?",
+            "pt": "— Hi, Jonas! Did you see Paul yesterday?",
+            "audio": "Hallo Jonas! Hast du Paul gestern gesehen?",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Ja, wir haben zusammen gegessen und viel gesprochen.",
+            "pt": "— Yes, we ate together and talked a lot.",
+            "audio": "Ja, wir haben zusammen gegessen und viel gesprochen.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Was habt ihr getrunken?",
+            "pt": "— What did you drink?",
+            "audio": "Was habt ihr getrunken?",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Wir haben Tee getrunken. Paul hat mir ein Buch gegeben.",
+            "pt": "— We had tea. Paul gave me a book.",
+            "audio": "Wir haben Tee getrunken. Paul hat mir ein Buch gegeben.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Hast du das Buch schon gelesen?",
+            "pt": "— Have you read the book yet?",
+            "audio": "Hast du das Buch schon gelesen?",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Nein, noch nicht. Ich habe es gestern nur angesehen.",
+            "pt": "— No, not yet. Yesterday I just looked at it.",
+            "audio": "Nein, noch nicht. Ich habe es gestern nur angesehen.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Hast du auch Fotos gemacht?",
+            "pt": "— Did you take pictures too?",
+            "audio": "Hast du auch Fotos gemacht?",
+            "rotulo": "Mia"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Ja, ich habe viele Fotos gemacht. Ich habe sie dir geschickt.",
+            "pt": "— Yes, I took lots of pictures. I sent them to you.",
+            "audio": "Ja, ich habe viele Fotos gemacht. Ich habe sie dir geschickt.",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Danke! Ich habe sie noch nicht gesehen.",
+            "pt": "— Thanks! I haven't seen them yet.",
+            "audio": "Danke! Ich habe sie noch nicht gesehen.",
+            "rotulo": "Mia"
+          }
+        ]
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write the Partizip II of trinken, finden, schreiben, sprechen, helfen, nehmen, treffen and beginnen."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-022.json",
+  "responsavel": null
+}

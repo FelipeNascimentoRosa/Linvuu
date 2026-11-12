@@ -1,0 +1,165 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 86,
+  "fase": 9,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Perfekt 2: irregular participles: Group 2: the vowel changes",
+  "objetivo": "Lesson 22, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 22,
+    "titulo": "Perfekt 2: irregular participles",
+    "objetivo": "Form the Partizip II of the most common strong and mixed verbs, in three small groups (same vowel, changing vowel, mixed verbs), and use them in the Perfekt.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Group 2: the vowel changes",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "trinken / getrunken",
+            "translit": "TRINK-en / geh-TROONK-en",
+            "pt": "to drink / drunk",
+            "en": "to drink",
+            "audio": "trinken / getrunken"
+          },
+          {
+            "ru": "finden / gefunden",
+            "translit": "FIN-den / geh-FOON-den",
+            "pt": "to find / found",
+            "en": "to find",
+            "audio": "finden / gefunden"
+          },
+          {
+            "ru": "schreiben / geschrieben",
+            "translit": "SHRY-ben / geh-SHREE-ben",
+            "pt": "to write / written",
+            "en": "to write",
+            "audio": "schreiben / geschrieben"
+          },
+          {
+            "ru": "sprechen / gesprochen",
+            "translit": "SHPREKH-en / geh-SHPROKH-en",
+            "pt": "to speak / spoken",
+            "en": "to speak",
+            "audio": "sprechen / gesprochen"
+          },
+          {
+            "ru": "helfen / geholfen",
+            "translit": "HEL-fen / geh-HOL-fen",
+            "pt": "to help / helped",
+            "en": "to help",
+            "audio": "helfen / geholfen"
+          },
+          {
+            "ru": "nehmen / genommen",
+            "translit": "NEH-men / geh-NOM-en",
+            "pt": "to take / taken",
+            "en": "to take",
+            "audio": "nehmen / genommen"
+          },
+          {
+            "ru": "treffen / getroffen",
+            "translit": "TREF-en / geh-TROF-en",
+            "pt": "to meet / met",
+            "en": "to meet",
+            "audio": "treffen / getroffen"
+          },
+          {
+            "ru": "beginnen / begonnen",
+            "translit": "beh-GIN-en / beh-GON-en",
+            "pt": "to begin / begun",
+            "en": "to begin",
+            "audio": "beginnen / begonnen"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Strong participles, group 2: the vowel changes",
+        "explicacao": "STEP 1: in GROUP 2, the stem vowel CHANGES in the participle, which still ends in «-en». STEP 2: the patterns are old Germanic ones that English shares: i → u (trinken → getrunken, like drink → drunk; finden → gefunden, find → found; singen → gesungen, sing → sung); ei → ie (schreiben → geschrieben, bleiben → geblieben); e → o (sprechen → gesprochen, like speak → spoken; helfen → geholfen; nehmen → genommen; treffen → getroffen; beginnen → begonnen, like begin → begun). STEP 3: «beginnen» has an inseparable prefix (be-): no «ge-» → begonnen. STEP 4: there's no absolute rule: use the patterns as a guide and memorize the pairs with the infinitive. STEP 5: all of these take «haben».",
+        "tabela": [
+          {
+            "padrao": "i → u",
+            "infinitivo": "trinken",
+            "participio": "getrunken"
+          },
+          {
+            "padrao": "i → u",
+            "infinitivo": "finden",
+            "participio": "gefunden"
+          },
+          {
+            "padrao": "ei → ie",
+            "infinitivo": "schreiben",
+            "participio": "geschrieben"
+          },
+          {
+            "padrao": "e → o",
+            "infinitivo": "sprechen",
+            "participio": "gesprochen"
+          },
+          {
+            "padrao": "e → o",
+            "infinitivo": "helfen",
+            "participio": "geholfen"
+          },
+          {
+            "padrao": "e → o",
+            "infinitivo": "nehmen",
+            "participio": "genommen"
+          },
+          {
+            "padrao": "e → o",
+            "infinitivo": "treffen",
+            "participio": "getroffen"
+          },
+          {
+            "padrao": "no ge-",
+            "infinitivo": "beginnen",
+            "participio": "begonnen"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich habe getrinkt.",
+            "certo": "Ich habe getrunken.",
+            "motivo": "i → u in the participle, like drink → drunk."
+          },
+          {
+            "errado": "Ich habe gesprechen.",
+            "certo": "Ich habe gesprochen.",
+            "motivo": "e → o in the participle, like speak → spoken."
+          },
+          {
+            "errado": "Ich habe gebeginnen.",
+            "certo": "Ich habe begonnen.",
+            "motivo": "be-: no ge-."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say 6 Perfekt sentences with the group 2 verbs: «Ich habe … getrunken / gefunden / geschrieben / gesprochen …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write the Partizip II of schlafen, tragen, geben, essen, lesen and sehen from memory."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-022.json",
+  "responsavel": null
+}
