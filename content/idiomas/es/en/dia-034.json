@@ -26,35 +26,35 @@
         "itens": [
           {
             "ru": "lunes",
-            "translit": "[pronuncia] LOO-ness",
+            "translit": "LOO-ness",
             "pt": "Monday",
             "en": "",
             "audio": "lunes"
           },
           {
             "ru": "martes",
-            "translit": "[pronuncia] MAR-tess",
+            "translit": "MAR-tess",
             "pt": "Tuesday",
             "en": "",
             "audio": "martes"
           },
           {
             "ru": "miércoles",
-            "translit": "[pronuncia] MYER-ko-less",
+            "translit": "MYER-ko-less",
             "pt": "Wednesday",
             "en": "",
             "audio": "miércoles"
           },
           {
             "ru": "jueves",
-            "translit": "[pronuncia] HWEH-bess",
+            "translit": "HWEH-bess",
             "pt": "Thursday",
             "en": "",
             "audio": "jueves"
           },
           {
             "ru": "viernes",
-            "translit": "[pronuncia] BYER-ness",
+            "translit": "BYER-ness",
             "pt": "Friday",
             "en": "",
             "audio": "viernes"
@@ -68,7 +68,7 @@
           },
           {
             "ru": "domingo",
-            "translit": "[pronuncia] do-MEEN-go",
+            "translit": "do-MEEN-go",
             "pt": "Sunday",
             "en": "",
             "audio": "domingo"
@@ -105,65 +105,65 @@
         ],
         "tabela": [
           {
-            "tipo": "[misto] one specific day",
-            "frase": "[misto] El lunes trabajo.",
-            "traducao": "[misto] Na segunda trabalho."
+            "tipo": "one specific day",
+            "frase": "El lunes trabajo.",
+            "traducao": "Na segunda trabalho."
           },
           {
-            "tipo": "[misto] every time it happens",
-            "frase": "[misto] Los lunes trabajo.",
-            "traducao": "[misto] On Mondays I work."
+            "tipo": "every time it happens",
+            "frase": "Los lunes trabajo.",
+            "traducao": "On Mondays I work."
           },
           {
-            "tipo": "[misto] asking the day",
-            "frase": "[misto] ¿Qué día es hoy? — Hoy es jueves.",
-            "traducao": "[misto] What day is it today? — Today is Thursday."
+            "tipo": "asking the day",
+            "frase": "¿Qué día es hoy? — Hoy es jueves.",
+            "traducao": "What day is it today? — Today is Thursday."
           },
           {
-            "tipo": "[misto] date",
-            "frase": "[misto] Hoy es 5 de mayo.",
-            "traducao": "[misto] Today is May 5th."
+            "tipo": "date",
+            "frase": "Hoy es 5 de mayo.",
+            "traducao": "Today is May 5th."
           },
           {
-            "tipo": "[misto] month",
-            "frase": "[misto] En agosto viajo.",
-            "traducao": "[misto] In August I travel."
+            "tipo": "month",
+            "frase": "En agosto viajo.",
+            "traducao": "In August I travel."
           },
           {
-            "tipo": "[misto] span",
-            "frase": "[misto] De lunes a viernes.",
-            "traducao": "[misto] Monday through Friday."
+            "tipo": "span",
+            "frase": "De lunes a viernes.",
+            "traducao": "Monday through Friday."
           }
         ],
         "erros": [
           {
-            "errado": "[misto] Lunes trabajo.",
-            "certo": "[misto] El lunes trabajo.",
+            "errado": "Lunes trabajo.",
+            "certo": "El lunes trabajo.",
             "motivo": "A specific day takes the article «el»."
           },
           {
-            "errado": "[misto] No trabajo en los miércoles.",
-            "certo": "[misto] No trabajo los miércoles.",
+            "errado": "No trabajo en los miércoles.",
+            "certo": "No trabajo los miércoles.",
             "motivo": "For habitual days, use the plural article, with no «en»."
           },
           {
-            "errado": "[misto] Hoy es Lunes.",
-            "certo": "[misto] Hoy es lunes.",
+            "errado": "Hoy es Lunes.",
+            "certo": "Hoy es lunes.",
             "motivo": "Days of the week are written lowercase."
           },
           {
-            "errado": "[misto] Hoy es 5 mayo.",
-            "certo": "[misto] Hoy es 5 de mayo.",
+            "errado": "Hoy es 5 mayo.",
+            "certo": "Hoy es 5 de mayo.",
             "motivo": "The date needs «de» between the day and the month."
           },
           {
-            "errado": "[misto] El quinto de enero",
-            "certo": "[misto] El cinco de enero",
+            "errado": "El quinto de enero",
+            "certo": "El cinco de enero",
             "motivo": "Only the 1st takes the ordinal form («el primero»)."
           },
           {
-            "errado": "[misto] En el mayo",
-            "certo": "[misto] En mayo",
+            "errado": "En el mayo",
+            "certo": "En mayo",
             "motivo": "Months take no article after «en»."
           }
         ],

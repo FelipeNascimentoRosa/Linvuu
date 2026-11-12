@@ -26,56 +26,56 @@
         "itens": [
           {
             "ru": "la entrada",
-            "translit": "[pronuncia] la en-TRAH-da",
+            "translit": "la en-TRAH-da",
             "pt": "the ticket, the entry",
             "en": "",
             "audio": "la entrada"
           },
           {
             "ru": "el billete",
-            "translit": "[pronuncia] el bee-LYEH-teh",
+            "translit": "el bee-LYEH-teh",
             "pt": "the ticket (Spain); the bill (money)",
             "en": "",
             "audio": "el billete"
           },
           {
             "ru": "el móvil",
-            "translit": "[pronuncia] el MOH-beel",
+            "translit": "el MOH-beel",
             "pt": "the cell phone (Spain)",
             "en": "",
             "audio": "el móvil"
           },
           {
             "ru": "el ordenador",
-            "translit": "[pronuncia] el or-deh-nah-DOR",
+            "translit": "el or-deh-nah-DOR",
             "pt": "the computer (Spain)",
             "en": "",
             "audio": "el ordenador"
           },
           {
             "ru": "el sobre",
-            "translit": "[pronuncia] el SOH-breh",
+            "translit": "el SOH-breh",
             "pt": "the envelope",
             "en": "",
             "audio": "el sobre"
           },
           {
             "ru": "la factura",
-            "translit": "[pronuncia] la fak-TOO-ra",
+            "translit": "la fak-TOO-ra",
             "pt": "the receipt, the invoice",
             "en": "",
             "audio": "la factura"
           },
           {
             "ru": "traer",
-            "translit": "[pronuncia] trah-EHR",
+            "translit": "trah-EHR",
             "pt": "to bring",
             "en": "",
             "audio": "traer"
           },
           {
             "ru": "entregar",
-            "translit": "[pronuncia] en-treh-GAR",
+            "translit": "en-treh-GAR",
             "pt": "to hand over, to deliver",
             "en": "",
             "audio": "entregar"
@@ -104,53 +104,53 @@
         ],
         "tabela": [
           {
-            "pessoa": "[misto] a mí",
-            "com_lo": "[misto] me lo",
-            "com_la": "[misto] me la",
-            "com_los": "[misto] me los",
-            "com_las": "[misto] me las"
+            "pessoa": "a mí",
+            "com_lo": "me lo",
+            "com_la": "me la",
+            "com_los": "me los",
+            "com_las": "me las"
           },
           {
-            "pessoa": "[misto] a ti",
-            "com_lo": "[misto] te lo",
-            "com_la": "[misto] te la",
-            "com_los": "[misto] te los",
-            "com_las": "[misto] te las"
+            "pessoa": "a ti",
+            "com_lo": "te lo",
+            "com_la": "te la",
+            "com_los": "te los",
+            "com_las": "te las"
           },
           {
-            "pessoa": "[misto] a nosotros",
-            "com_lo": "[misto] nos lo",
-            "com_la": "[misto] nos la",
-            "com_los": "[misto] nos los",
-            "com_las": "[misto] nos las"
+            "pessoa": "a nosotros",
+            "com_lo": "nos lo",
+            "com_la": "nos la",
+            "com_los": "nos los",
+            "com_las": "nos las"
           },
           {
-            "pessoa": "[misto] a vosotros (Spain)",
-            "com_lo": "[misto] os lo",
-            "com_la": "[misto] os la",
-            "com_los": "[misto] os los",
-            "com_las": "[misto] os las"
+            "pessoa": "a vosotros (Spain)",
+            "com_lo": "os lo",
+            "com_la": "os la",
+            "com_los": "os los",
+            "com_las": "os las"
           }
         ],
         "erros": [
           {
-            "errado": "[misto] ¿Me das lo?",
-            "certo": "[misto] ¿Me lo das?",
+            "errado": "¿Me das lo?",
+            "certo": "¿Me lo das?",
             "motivo": "The pronoun comes before the verb, and the indirect one comes first."
           },
           {
-            "errado": "[misto] Lo me dio ayer.",
-            "certo": "[misto] Me lo dio ayer.",
+            "errado": "Lo me dio ayer.",
+            "certo": "Me lo dio ayer.",
             "motivo": "The order is always indirect first (me, te, nos, os), then direct (lo, la, los, las)."
           },
           {
-            "errado": "[misto] Te los doy. (meaning to say: the key)",
-            "certo": "[misto] Te la doy.",
+            "errado": "Te los doy. (meaning to say: the key)",
+            "certo": "Te la doy.",
             "motivo": "The direct pronoun agrees with the thing: «la llave» is feminine singular."
           },
           {
-            "errado": "[misto] He lo dicho.",
-            "certo": "[misto] Lo he dicho.",
+            "errado": "He lo dicho.",
+            "certo": "Lo he dicho.",
             "motivo": "The pronoun never sits between the auxiliary and the participle."
           }
         ],

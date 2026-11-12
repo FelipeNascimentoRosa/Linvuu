@@ -26,35 +26,35 @@
         "itens": [
           {
             "ru": "el horario",
-            "translit": "[pronuncia] el o-RAH-ryo",
+            "translit": "el o-RAH-ryo",
             "pt": "the hours, the schedule",
             "en": "",
             "audio": "el horario"
           },
           {
             "ru": "abre, cierra",
-            "translit": "[pronuncia] AH-breh, THYEH-rrah",
+            "translit": "AH-breh, THYEH-rrah",
             "pt": "it opens, it closes",
             "en": "",
             "audio": "abre, cierra"
           },
           {
             "ru": "la biblioteca",
-            "translit": "[pronuncia] la bee-blyo-TEH-kah",
+            "translit": "la bee-blyo-TEH-kah",
             "pt": "the library",
             "en": "",
             "audio": "la biblioteca"
           },
           {
             "ru": "la librería",
-            "translit": "[pronuncia] la lee-breh-REE-ah",
+            "translit": "la lee-breh-REE-ah",
             "pt": "the bookshop; not «biblioteca»",
             "en": "",
             "audio": "la librería"
           },
           {
             "ru": "todos los días",
-            "translit": "[pronuncia] TO-dos los DEE-ahs",
+            "translit": "TO-dos los DEE-ahs",
             "pt": "every day",
             "en": "",
             "audio": "todos los días"
@@ -69,50 +69,50 @@
         "comparacao": "English says «from nine to five» and «Monday through Friday». Spanish uses «de nueve a cinco» and «de lunes a viernes» — structurally almost identical, just with no article before the hours in the first phrase. The one real trap is «librería» vs. «biblioteca»: the shop that sells books is the «librería», and the place that lends them out is the «biblioteca».",
         "tabela": [
           {
-            "frase": "[misto] de nueve a cinco",
-            "uso": "[misto] span of hours",
-            "traducao": "[misto] from nine to five"
+            "frase": "de nueve a cinco",
+            "uso": "span of hours",
+            "traducao": "from nine to five"
           },
           {
-            "frase": "[misto] de lunes a viernes",
-            "uso": "[misto] span of days",
-            "traducao": "[misto] Monday through Friday"
+            "frase": "de lunes a viernes",
+            "uso": "span of days",
+            "traducao": "Monday through Friday"
           },
           {
-            "frase": "[misto] Abre a las diez.",
-            "uso": "[misto] when it opens",
-            "traducao": "[misto] It opens at ten."
+            "frase": "Abre a las diez.",
+            "uso": "when it opens",
+            "traducao": "It opens at ten."
           },
           {
-            "frase": "[misto] Cierra a las ocho.",
-            "uso": "[misto] when it closes",
-            "traducao": "[misto] It closes at eight."
+            "frase": "Cierra a las ocho.",
+            "uso": "when it closes",
+            "traducao": "It closes at eight."
           },
           {
-            "frase": "[misto] todos los días",
-            "uso": "[misto] frequency",
+            "frase": "todos los días",
+            "uso": "frequency",
             "traducao": "every day"
           }
         ],
         "erros": [
           {
-            "errado": "[misto] La biblioteca vende libros.",
-            "certo": "[misto] La librería vende libros.",
+            "errado": "La biblioteca vende libros.",
+            "certo": "La librería vende libros.",
             "motivo": "The shop is the «librería»; the «biblioteca» lends books."
           },
           {
-            "errado": "[misto] La tienda cierro a las ocho.",
-            "certo": "[misto] La tienda cierra a las ocho.",
+            "errado": "La tienda cierro a las ocho.",
+            "certo": "La tienda cierra a las ocho.",
             "motivo": "The verb agrees with the subject: «la tienda» takes the third person, «cierra»."
           },
           {
-            "errado": "[misto] La tienda abre desde lunes a viernes.",
-            "certo": "[misto] La tienda abre de lunes a viernes.",
+            "errado": "La tienda abre desde lunes a viernes.",
+            "certo": "La tienda abre de lunes a viernes.",
             "motivo": "Use either «de… a…» or «desde… hasta…», never mixed together."
           },
           {
-            "errado": "[misto] Todos días",
-            "certo": "[misto] Todos los días",
+            "errado": "Todos días",
+            "certo": "Todos los días",
             "motivo": "The article «los» is missing."
           }
         ],
@@ -129,49 +129,49 @@
             "ru": "— Buenos días. ¿A qué hora abre la biblioteca?",
             "pt": "— Good morning. What time does the library open?",
             "audio": "Buenos días. ¿A qué hora abre la biblioteca?",
-            "rotulo": "[personagem] Carmen"
+            "rotulo": "Carmen"
           },
           {
             "personagem": "El empleado",
             "ru": "— Abre a las nueve de la mañana, señora.",
             "pt": "— It opens at nine in the morning, ma'am.",
             "audio": "Abre a las nueve de la mañana, señora.",
-            "rotulo": "[personagem] El empleado"
+            "rotulo": "El empleado"
           },
           {
             "personagem": "Carmen",
             "ru": "— ¿Y hasta qué hora está abierta?",
             "pt": "— And until what time is it open?",
             "audio": "¿Y hasta qué hora está abierta?",
-            "rotulo": "[personagem] Carmen"
+            "rotulo": "Carmen"
           },
           {
             "personagem": "El empleado",
             "ru": "— Cierra a las ocho de la tarde, de lunes a viernes.",
             "pt": "— It closes at eight at night, Monday through Friday.",
             "audio": "Cierra a las ocho de la tarde, de lunes a viernes.",
-            "rotulo": "[personagem] El empleado"
+            "rotulo": "El empleado"
           },
           {
             "personagem": "Carmen",
             "ru": "— ¿Y los sábados?",
             "pt": "— And on Saturdays?",
             "audio": "¿Y los sábados?",
-            "rotulo": "[personagem] Carmen"
+            "rotulo": "Carmen"
           },
           {
             "personagem": "El empleado",
             "ru": "— Los sábados abre de diez a dos. Los domingos está cerrada.",
             "pt": "— On Saturdays it's open from ten to two. On Sundays it's closed.",
             "audio": "Los sábados abre de diez a dos. Los domingos está cerrada.",
-            "rotulo": "[personagem] El empleado"
+            "rotulo": "El empleado"
           },
           {
             "personagem": "Carmen",
             "ru": "— Muchas gracias. Hasta el sábado.",
             "pt": "— Thank you very much. See you Saturday.",
             "audio": "Muchas gracias. Hasta el sábado.",
-            "rotulo": "[personagem] Carmen"
+            "rotulo": "Carmen"
           }
         ]
       },

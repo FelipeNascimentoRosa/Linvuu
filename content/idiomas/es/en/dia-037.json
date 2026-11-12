@@ -26,7 +26,7 @@
         "itens": [
           {
             "ru": "bien",
-            "translit": "[pronuncia] byen",
+            "translit": "byen",
             "pt": "well",
             "en": "",
             "audio": "bien"
@@ -40,42 +40,42 @@
           },
           {
             "ru": "cansado, cansada",
-            "translit": "[pronuncia] kan-SAH-do, kan-SAH-dah",
+            "translit": "kan-SAH-do, kan-SAH-dah",
             "pt": "tired",
             "en": "",
             "audio": "cansado, cansada"
           },
           {
             "ru": "contento, contenta",
-            "translit": "[pronuncia] kon-TEN-to, kon-TEN-tah",
+            "translit": "kon-TEN-to, kon-TEN-tah",
             "pt": "happy, glad",
             "en": "",
             "audio": "contento, contenta"
           },
           {
             "ru": "ocupado, ocupada",
-            "translit": "[pronuncia] o-koo-PAH-do, o-koo-PAH-dah",
+            "translit": "o-koo-PAH-do, o-koo-PAH-dah",
             "pt": "busy",
             "en": "",
             "audio": "ocupado, ocupada"
           },
           {
             "ru": "enfadado, enfadada",
-            "translit": "[pronuncia] en-fah-DAH-do, en-fah-DAH-dah",
+            "translit": "en-fah-DAH-do, en-fah-DAH-dah",
             "pt": "angry",
             "en": "",
             "audio": "enfadado, enfadada"
           },
           {
             "ru": "preocupado, preocupada",
-            "translit": "[pronuncia] preh-o-koo-PAH-do, preh-o-koo-PAH-dah",
+            "translit": "preh-o-koo-PAH-do, preh-o-koo-PAH-dah",
             "pt": "worried",
             "en": "",
             "audio": "preocupado, preocupada"
           },
           {
             "ru": "tranquilo, tranquila",
-            "translit": "[pronuncia] tran-KEE-lo, tran-KEE-lah",
+            "translit": "tran-KEE-lo, tran-KEE-lah",
             "pt": "calm",
             "en": "",
             "audio": "tranquilo, tranquila"
@@ -115,34 +115,34 @@
             "titulo": "estar (to be)",
             "linhas": [
               {
-                "pronome": "[misto] yo",
-                "forma": "[misto] estoy",
-                "exemplo": "[misto] Estoy en casa."
+                "pronome": "yo",
+                "forma": "estoy",
+                "exemplo": "Estoy en casa."
               },
               {
-                "pronome": "[misto] tú",
-                "forma": "[misto] estás",
-                "exemplo": "[misto] ¿Cómo estás?"
+                "pronome": "tú",
+                "forma": "estás",
+                "exemplo": "¿Cómo estás?"
               },
               {
-                "pronome": "[misto] él / ella / usted",
-                "forma": "[misto] está",
-                "exemplo": "[misto] Usted está en Madrid."
+                "pronome": "él / ella / usted",
+                "forma": "está",
+                "exemplo": "Usted está en Madrid."
               },
               {
-                "pronome": "[misto] nosotros, nosotras",
-                "forma": "[misto] estamos",
-                "exemplo": "[misto] Estamos contentos."
+                "pronome": "nosotros, nosotras",
+                "forma": "estamos",
+                "exemplo": "Estamos contentos."
               },
               {
-                "pronome": "[misto] vosotros, vosotras",
-                "forma": "[misto] estáis",
-                "exemplo": "[misto] ¿Estáis cansados?"
+                "pronome": "vosotros, vosotras",
+                "forma": "estáis",
+                "exemplo": "¿Estáis cansados?"
               },
               {
-                "pronome": "[misto] ellos, ellas, ustedes",
-                "forma": "[misto] están",
-                "exemplo": "[misto] Ellos están ocupados."
+                "pronome": "ellos, ellas, ustedes",
+                "forma": "están",
+                "exemplo": "Ellos están ocupados."
               }
             ]
           },
@@ -150,57 +150,57 @@
             "titulo": "Ser × estar: the first rule",
             "linhas": [
               {
-                "usa": "[misto] ser",
-                "para": "[misto] identity, origin, profession, time",
-                "exemplo": "[misto] Soy médico. Son las dos."
+                "usa": "ser",
+                "para": "identity, origin, profession, time",
+                "exemplo": "Soy médico. Son las dos."
               },
               {
-                "usa": "[misto] estar",
-                "para": "[misto] place and state",
-                "exemplo": "[misto] Estoy en casa. Estoy cansado."
+                "usa": "estar",
+                "para": "place and state",
+                "exemplo": "Estoy en casa. Estoy cansado."
               },
               {
-                "usa": "[misto] ser",
-                "para": "[misto] where an event happens",
-                "exemplo": "[misto] La fiesta es en mi casa."
+                "usa": "ser",
+                "para": "where an event happens",
+                "exemplo": "La fiesta es en mi casa."
               },
               {
-                "usa": "[misto] estar",
-                "para": "[misto] fixed expression for agreeing",
-                "exemplo": "[misto] Estoy de acuerdo."
+                "usa": "estar",
+                "para": "fixed expression for agreeing",
+                "exemplo": "Estoy de acuerdo."
               }
             ]
           }
         ],
         "erros": [
           {
-            "errado": "[misto] Soy en casa.",
-            "certo": "[misto] Estoy en casa.",
+            "errado": "Soy en casa.",
+            "certo": "Estoy en casa.",
             "motivo": "A place needs «estar»."
           },
           {
-            "errado": "[misto] Estoy profesor.",
-            "certo": "[misto] Soy profesor.",
+            "errado": "Estoy profesor.",
+            "certo": "Soy profesor.",
             "motivo": "A profession needs «ser»."
           },
           {
-            "errado": "[misto] Soy de acuerdo.",
-            "certo": "[misto] Estoy de acuerdo.",
+            "errado": "Soy de acuerdo.",
+            "certo": "Estoy de acuerdo.",
             "motivo": "The expression is fixed, with «estar»."
           },
           {
-            "errado": "[misto] Madrid es en España.",
-            "certo": "[misto] Madrid está en España.",
+            "errado": "Madrid es en España.",
+            "certo": "Madrid está en España.",
             "motivo": "A city's location needs «estar»."
           },
           {
-            "errado": "[misto] La fiesta está en mi casa.",
-            "certo": "[misto] La fiesta es en mi casa.",
+            "errado": "La fiesta está en mi casa.",
+            "certo": "La fiesta es en mi casa.",
             "motivo": "An event's location needs «ser»."
           },
           {
-            "errado": "[misto] Estoy cansada. (said by a man)",
-            "certo": "[misto] Estoy cansado.",
+            "errado": "Estoy cansada. (said by a man)",
+            "certo": "Estoy cansado.",
             "motivo": "The adjective agrees with the speaker."
           }
         ],

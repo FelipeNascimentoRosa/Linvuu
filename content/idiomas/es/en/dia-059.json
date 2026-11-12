@@ -26,14 +26,14 @@
         "itens": [
           {
             "ru": "barato, barata",
-            "translit": "[pronuncia] bah-RAH-to, bah-RAH-tah",
+            "translit": "bah-RAH-to, bah-RAH-tah",
             "pt": "cheap",
             "en": "",
             "audio": "barato, barata"
           },
           {
             "ru": "caro, cara",
-            "translit": "[pronuncia] KAH-ro, KAH-rah",
+            "translit": "KAH-ro, KAH-rah",
             "pt": "expensive",
             "en": "",
             "audio": "caro, cara"
@@ -47,14 +47,14 @@
           },
           {
             "ru": "pequeño, pequeña",
-            "translit": "[pronuncia] peh-KEH-nyo, peh-KEH-nyah",
+            "translit": "peh-KEH-nyo, peh-KEH-nyah",
             "pt": "small",
             "en": "",
             "audio": "pequeño, pequeña"
           },
           {
             "ru": "nuevo, nueva",
-            "translit": "[pronuncia] NWEH-bo, NWEH-bah",
+            "translit": "NWEH-bo, NWEH-bah",
             "pt": "new",
             "en": "",
             "audio": "nuevo, nueva"
@@ -91,48 +91,48 @@
         ],
         "tabela": [
           {
-            "distancia": "[misto] near me (aquí)",
-            "singular": "[misto] este, esta",
-            "plural": "[misto] estos, estas",
-            "neutro": "[misto] esto"
+            "distancia": "near me (aquí)",
+            "singular": "este, esta",
+            "plural": "estos, estas",
+            "neutro": "esto"
           },
           {
-            "distancia": "[misto] near you, or a bit further (ahí)",
-            "singular": "[misto] ese, esa",
-            "plural": "[misto] esos, esas",
-            "neutro": "[misto] eso"
+            "distancia": "near you, or a bit further (ahí)",
+            "singular": "ese, esa",
+            "plural": "esos, esas",
+            "neutro": "eso"
           },
           {
-            "distancia": "[misto] far from both (allí)",
-            "singular": "[misto] aquel, aquella",
-            "plural": "[misto] aquellos, aquellas",
-            "neutro": "[misto] aquello"
+            "distancia": "far from both (allí)",
+            "singular": "aquel, aquella",
+            "plural": "aquellos, aquellas",
+            "neutro": "aquello"
           }
         ],
         "erros": [
           {
-            "errado": "[misto] Este camisa es azul.",
-            "certo": "[misto] Esta camisa es azul.",
+            "errado": "Este camisa es azul.",
+            "certo": "Esta camisa es azul.",
             "motivo": "«Camisa» is feminine: «esta»."
           },
           {
-            "errado": "[misto] Esta pantalón es negro.",
-            "certo": "[misto] Estos pantalones son negros.",
+            "errado": "Esta pantalón es negro.",
+            "certo": "Estos pantalones son negros.",
             "motivo": "«Pantalones» is plural, and so is the verb."
           },
           {
-            "errado": "[misto] ¿Qué es este?",
-            "certo": "[misto] ¿Qué es esto?",
+            "errado": "¿Qué es este?",
+            "certo": "¿Qué es esto?",
             "motivo": "For something you don't know the identity of, use the neuter «esto»."
           },
           {
-            "errado": "[misto] Estoy nesta tienda.",
-            "certo": "[misto] Estoy en esta tienda.",
+            "errado": "Estoy nesta tienda.",
+            "certo": "Estoy en esta tienda.",
             "motivo": "There's no fusion: «en» + «esta»."
           },
           {
-            "errado": "[misto] Quiero de ese abrigo.",
-            "certo": "[misto] Quiero ese abrigo.",
+            "errado": "Quiero de ese abrigo.",
+            "certo": "Quiero ese abrigo.",
             "motivo": "With no preposition, the demonstrative just points at the object."
           }
         ],
@@ -149,84 +149,84 @@
             "ru": "— Buenas tardes. ¿Qué desea?",
             "pt": "— Good afternoon. What would you like?",
             "audio": "Buenas tardes. ¿Qué desea?",
-            "rotulo": "[personagem] La dependienta"
+            "rotulo": "La dependienta"
           },
           {
             "personagem": "Lucía",
             "ru": "— Buenas tardes. Busco una chaqueta negra.",
             "pt": "— Good afternoon. I'm looking for a black jacket.",
             "audio": "Buenas tardes. Busco una chaqueta negra.",
-            "rotulo": "[personagem] Lucía"
+            "rotulo": "Lucía"
           },
           {
             "personagem": "La dependienta",
             "ru": "— Tenemos estas dos. Esta es de algodón y esa es de lana.",
             "pt": "— We have these two. This one is cotton and that one is wool.",
             "audio": "Tenemos estas dos. Esta es de algodón y esa es de lana.",
-            "rotulo": "[personagem] La dependienta"
+            "rotulo": "La dependienta"
           },
           {
             "personagem": "Lucía",
             "ru": "— ¿Cuánto cuesta esta?",
             "pt": "— How much is this one?",
             "audio": "¿Cuánto cuesta esta?",
-            "rotulo": "[personagem] Lucía"
+            "rotulo": "Lucía"
           },
           {
             "personagem": "La dependienta",
             "ru": "— Cuesta sesenta y cinco euros.",
             "pt": "— It costs sixty-five euros.",
             "audio": "Cuesta sesenta y cinco euros.",
-            "rotulo": "[personagem] La dependienta"
+            "rotulo": "La dependienta"
           },
           {
             "personagem": "Lucía",
             "ru": "— Es un poco cara. ¿Y esa?",
             "pt": "— That's a bit pricey. And that one?",
             "audio": "Es un poco cara. ¿Y esa?",
-            "rotulo": "[personagem] Lucía"
+            "rotulo": "Lucía"
           },
           {
             "personagem": "La dependienta",
             "ru": "— Esa cuesta cuarenta euros y está en rebajas.",
             "pt": "— That one costs forty euros and it's on sale.",
             "audio": "Esa cuesta cuarenta euros y está en rebajas.",
-            "rotulo": "[personagem] La dependienta"
+            "rotulo": "La dependienta"
           },
           {
             "personagem": "Lucía",
             "ru": "— Perfecto. ¿Puedo probarme esta chaqueta?",
             "pt": "— Perfect. Can I try on this jacket?",
             "audio": "Perfecto. ¿Puedo probarme esta chaqueta?",
-            "rotulo": "[personagem] Lucía"
+            "rotulo": "Lucía"
           },
           {
             "personagem": "La dependienta",
             "ru": "— Claro. El probador está al fondo.",
             "pt": "— Of course. The fitting room is at the back.",
             "audio": "Claro. El probador está al fondo.",
-            "rotulo": "[personagem] La dependienta"
+            "rotulo": "La dependienta"
           },
           {
             "personagem": "Lucía",
             "ru": "— Me queda bien. Quiero esta chaqueta.",
             "pt": "— It fit me well. I'll take this jacket.",
             "audio": "Me queda bien. Quiero esta chaqueta.",
-            "rotulo": "[personagem] Lucía"
+            "rotulo": "Lucía"
           },
           {
             "personagem": "La dependienta",
             "ru": "— ¿Paga con tarjeta o en efectivo?",
             "pt": "— Are you paying by card or in cash?",
             "audio": "¿Paga con tarjeta o en efectivo?",
-            "rotulo": "[personagem] La dependienta"
+            "rotulo": "La dependienta"
           },
           {
             "personagem": "Lucía",
             "ru": "— Con tarjeta, por favor.",
             "pt": "— By card, please.",
             "audio": "Con tarjeta, por favor.",
-            "rotulo": "[personagem] Lucía"
+            "rotulo": "Lucía"
           }
         ]
       },

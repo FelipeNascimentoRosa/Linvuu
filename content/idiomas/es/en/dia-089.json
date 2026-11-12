@@ -26,56 +26,56 @@
         "itens": [
           {
             "ru": "la llave",
-            "translit": "[pronuncia] la LYAH-beh",
+            "translit": "la LYAH-beh",
             "pt": "the key",
             "en": "",
             "audio": "la llave"
           },
           {
             "ru": "el cargador",
-            "translit": "[pronuncia] el kar-gah-DOR",
+            "translit": "el kar-gah-DOR",
             "pt": "the charger",
             "en": "",
             "audio": "el cargador"
           },
           {
             "ru": "el paraguas",
-            "translit": "[pronuncia] el pah-RAH-gwas",
+            "translit": "el pah-RAH-gwas",
             "pt": "the umbrella",
             "en": "",
             "audio": "el paraguas"
           },
           {
             "ru": "las gafas",
-            "translit": "[pronuncia] las GAH-fas",
+            "translit": "las GAH-fas",
             "pt": "the glasses",
             "en": "",
             "audio": "las gafas"
           },
           {
             "ru": "buscar",
-            "translit": "[pronuncia] boos-KAR",
+            "translit": "boos-KAR",
             "pt": "to look for",
             "en": "",
             "audio": "buscar"
           },
           {
             "ru": "encontrar",
-            "translit": "[pronuncia] en-kon-TRAR",
+            "translit": "en-kon-TRAR",
             "pt": "to find",
             "en": "",
             "audio": "encontrar"
           },
           {
             "ru": "perder",
-            "translit": "[pronuncia] per-DER",
+            "translit": "per-DER",
             "pt": "to lose, to miss",
             "en": "",
             "audio": "perder"
           },
           {
             "ru": "llevar",
-            "translit": "[pronuncia] lyeh-BAR",
+            "translit": "lyeh-BAR",
             "pt": "to carry, to wear",
             "en": "",
             "audio": "llevar"
@@ -104,50 +104,50 @@
         ],
         "tabela": [
           {
-            "objeto": "[misto] el libro, el cargador",
-            "pronome": "[misto] lo",
-            "exemplo": "[misto] ¿El libro? Lo compré ayer."
+            "objeto": "el libro, el cargador",
+            "pronome": "lo",
+            "exemplo": "¿El libro? Lo compré ayer."
           },
           {
-            "objeto": "[misto] la llave, la película",
-            "pronome": "[misto] la",
-            "exemplo": "[misto] ¿La llave? No la encuentro."
+            "objeto": "la llave, la película",
+            "pronome": "la",
+            "exemplo": "¿La llave? No la encuentro."
           },
           {
-            "objeto": "[misto] los billetes, los amigos",
-            "pronome": "[misto] los",
-            "exemplo": "[misto] ¿Los billetes? Los tengo aquí."
+            "objeto": "los billetes, los amigos",
+            "pronome": "los",
+            "exemplo": "¿Los billetes? Los tengo aquí."
           },
           {
-            "objeto": "[misto] las gafas, las flores",
-            "pronome": "[misto] las",
-            "exemplo": "[misto] ¿Las gafas? Las perdí."
+            "objeto": "las gafas, las flores",
+            "pronome": "las",
+            "exemplo": "¿Las gafas? Las perdí."
           }
         ],
         "erros": [
           {
-            "errado": "[misto] ¿Compraste el pan? — Sí, compré.",
-            "certo": "[misto] Sí, lo compré.",
+            "errado": "¿Compraste el pan? — Sí, compré.",
+            "certo": "Sí, lo compré.",
             "motivo": "The direct object pronoun is required in Spanish."
           },
           {
-            "errado": "[misto] Yo vi ele ayer.",
-            "certo": "[misto] Lo vi ayer.",
+            "errado": "Yo vi ele ayer.",
+            "certo": "Lo vi ayer.",
             "motivo": "Spanish never uses a subject-style word like «él» as the object; it uses «lo»."
           },
           {
-            "errado": "[misto] Quiero comprar-lo.",
-            "certo": "[misto] Quiero comprarlo.",
+            "errado": "Quiero comprar-lo.",
+            "certo": "Quiero comprarlo.",
             "motivo": "The pronoun attaches to the infinitive with no hyphen."
           },
           {
-            "errado": "[misto] Veo la todos los días.",
-            "certo": "[misto] La veo todos los días.",
+            "errado": "Veo la todos los días.",
+            "certo": "La veo todos los días.",
             "motivo": "The pronoun comes before the conjugated verb."
           },
           {
-            "errado": "[misto] No veo lo.",
-            "certo": "[misto] No lo veo.",
+            "errado": "No veo lo.",
+            "certo": "No lo veo.",
             "motivo": "In the negative, «no» comes before the pronoun, which sits before the verb."
           }
         ],

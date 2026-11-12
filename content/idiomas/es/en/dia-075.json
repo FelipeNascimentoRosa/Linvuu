@@ -26,35 +26,35 @@
         "itens": [
           {
             "ru": "primero",
-            "translit": "[pronuncia] pree-MEH-ro",
+            "translit": "pree-MEH-ro",
             "pt": "first, firstly",
             "en": "",
             "audio": "primero"
           },
           {
             "ru": "luego",
-            "translit": "[pronuncia] LWEH-go",
+            "translit": "LWEH-go",
             "pt": "then, next",
             "en": "",
             "audio": "luego"
           },
           {
             "ru": "después",
-            "translit": "[pronuncia] des-PWES",
+            "translit": "des-PWES",
             "pt": "afterward",
             "en": "",
             "audio": "después"
           },
           {
             "ru": "más tarde",
-            "translit": "[pronuncia] mas TAR-deh",
+            "translit": "mas TAR-deh",
             "pt": "later",
             "en": "",
             "audio": "más tarde"
           },
           {
             "ru": "por fin",
-            "translit": "[pronuncia] por feen",
+            "translit": "por feen",
             "pt": "finally, lastly",
             "en": "",
             "audio": "por fin"
@@ -69,50 +69,50 @@
         "comparacao": "English makes no distinction at all between «I ate yesterday» and «I've eaten today» in terms of which past tense to reach for — the simple past covers the first and the present perfect the second, but nothing about English grammar maps directly onto the Spain/Latin-America split here. Spain keeps «Ayer comí» (indefinido) and «Hoy he comido» (perfecto) strictly separate by whether the time period is closed or still open; in Latin America that line is looser, and the indefinido covers both cases.",
         "tabela": [
           {
-            "marcador": "[misto] ayer, anoche, anteayer",
-            "tempo": "[misto] finished",
-            "exemplo": "[misto] Anoche llegué tarde."
+            "marcador": "ayer, anoche, anteayer",
+            "tempo": "finished",
+            "exemplo": "Anoche llegué tarde."
           },
           {
-            "marcador": "[misto] el lunes, el domingo pasado",
-            "tempo": "[misto] finished",
-            "exemplo": "[misto] El lunes pasado compré un libro."
+            "marcador": "el lunes, el domingo pasado",
+            "tempo": "finished",
+            "exemplo": "El lunes pasado compré un libro."
           },
           {
-            "marcador": "[misto] la semana pasada, el año pasado, en 2019",
-            "tempo": "[misto] finished",
-            "exemplo": "[misto] En 2019 viajé a Perú."
+            "marcador": "la semana pasada, el año pasado, en 2019",
+            "tempo": "finished",
+            "exemplo": "En 2019 viajé a Perú."
           },
           {
-            "marcador": "[misto] hace + time",
-            "tempo": "[misto] finished",
-            "exemplo": "[misto] Salí hace una hora."
+            "marcador": "hace + time",
+            "tempo": "finished",
+            "exemplo": "Salí hace una hora."
           },
           {
-            "marcador": "[misto] hoy, esta semana, este año",
-            "tempo": "[misto] not finished (Spain: perfecto)",
-            "exemplo": "[misto] Hoy he comido temprano."
+            "marcador": "hoy, esta semana, este año",
+            "tempo": "not finished (Spain: perfecto)",
+            "exemplo": "Hoy he comido temprano."
           }
         ],
         "erros": [
           {
-            "errado": "[misto] Ayer he llegado tarde.",
-            "certo": "[misto] Ayer llegué tarde.",
+            "errado": "Ayer he llegado tarde.",
+            "certo": "Ayer llegué tarde.",
             "motivo": "«Ayer» is a finished time: use the indefinido."
           },
           {
-            "errado": "[misto] Llegué hace dos días atrás.",
-            "certo": "[misto] Llegué hace dos días.",
+            "errado": "Llegué hace dos días atrás.",
+            "certo": "Llegué hace dos días.",
             "motivo": "«Hace» already marks the past; «atrás» is redundant."
           },
           {
-            "errado": "[misto] Hay un rato en la cocina.",
-            "certo": "[misto] Hay un ratón en la cocina.",
+            "errado": "Hay un rato en la cocina.",
+            "certo": "Hay un ratón en la cocina.",
             "motivo": "«Rato» means a little while; the rodent is «ratón»."
           },
           {
-            "errado": "[misto] Ayer trabajé en el escritorio de mi empresa.",
-            "certo": "[misto] Ayer trabajé en la oficina de mi empresa.",
+            "errado": "Ayer trabajé en el escritorio de mi empresa.",
+            "certo": "Ayer trabajé en la oficina de mi empresa.",
             "motivo": "«Escritorio» is the desk itself; the office as a place is «oficina»."
           }
         ],
@@ -126,28 +126,28 @@
         "pt": "On Saturday morning I had breakfast with my sister. Then we left the house and walked to the market. I bought some fruit and my sister bought bread. At two we had lunch at a small bar and drank sparkling water. In the afternoon I called my mother and wrote Carlos a message. I had dinner at home and watched a movie until eleven.",
         "perguntas": [
           {
-            "pergunta": "[misto] ¿Con quién desayunó Inés?",
-            "resposta": "[misto] Con su hermana."
+            "pergunta": "¿Con quién desayunó Inés?",
+            "resposta": "Con su hermana."
           },
           {
-            "pergunta": "[misto] ¿Adónde caminaron?",
-            "resposta": "[misto] Al mercado."
+            "pergunta": "¿Adónde caminaron?",
+            "resposta": "Al mercado."
           },
           {
-            "pergunta": "[misto] ¿Quién compró pan?",
-            "resposta": "[misto] La hermana de Inés."
+            "pergunta": "¿Quién compró pan?",
+            "resposta": "La hermana de Inés."
           },
           {
-            "pergunta": "[misto] ¿Qué bebieron en el bar?",
-            "resposta": "[misto] Agua con gas."
+            "pergunta": "¿Qué bebieron en el bar?",
+            "resposta": "Agua con gas."
           },
           {
-            "pergunta": "[misto] ¿A quién llamó Inés por la tarde?",
-            "resposta": "[misto] A su madre."
+            "pergunta": "¿A quién llamó Inés por la tarde?",
+            "resposta": "A su madre."
           },
           {
-            "pergunta": "[misto] ¿Dónde cenó?",
-            "resposta": "[misto] En casa."
+            "pergunta": "¿Dónde cenó?",
+            "resposta": "En casa."
           }
         ]
       },

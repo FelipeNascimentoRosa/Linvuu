@@ -26,42 +26,42 @@
         "itens": [
           {
             "ru": "alto, alta",
-            "translit": "[pronuncia] AHL-to, AHL-tah",
+            "translit": "AHL-to, AHL-tah",
             "pt": "tall",
             "en": "",
             "audio": "alto, alta"
           },
           {
             "ru": "simpático, simpática",
-            "translit": "[pronuncia] seem-PAH-tee-ko, seem-PAH-tee-kah",
+            "translit": "seem-PAH-tee-ko, seem-PAH-tee-kah",
             "pt": "nice, friendly",
             "en": "",
             "audio": "simpático, simpática"
           },
           {
             "ru": "joven",
-            "translit": "[pronuncia] HO-ven",
+            "translit": "HO-ven",
             "pt": "young",
             "en": "",
             "audio": "joven"
           },
           {
             "ru": "inteligente",
-            "translit": "[pronuncia] een-teh-lee-HEN-teh",
+            "translit": "een-teh-lee-HEN-teh",
             "pt": "intelligent",
             "en": "",
             "audio": "inteligente"
           },
           {
             "ru": "largo, larga",
-            "translit": "[pronuncia] LAR-go, LAR-gah",
+            "translit": "LAR-go, LAR-gah",
             "pt": "long (false friend: wide is «ancho»)",
             "en": "",
             "audio": "largo, larga"
           },
           {
             "ru": "exquisito, exquisita",
-            "translit": "[pronuncia] ess-kee-SEE-to, ess-kee-SEE-tah",
+            "translit": "ess-kee-SEE-to, ess-kee-SEE-tah",
             "pt": "delicious (false friend: it's not «weird»)",
             "en": "",
             "audio": "exquisito, exquisita"
@@ -102,60 +102,60 @@
         ],
         "tabela": [
           {
-            "tipo": "[misto] -o, -a",
-            "masc_sg": "[misto] alto",
-            "fem_sg": "[misto] alta",
-            "masc_pl": "[misto] altos",
-            "fem_pl": "[misto] altas"
+            "tipo": "-o, -a",
+            "masc_sg": "alto",
+            "fem_sg": "alta",
+            "masc_pl": "altos",
+            "fem_pl": "altas"
           },
           {
-            "tipo": "[misto] -e",
+            "tipo": "-e",
             "masc_sg": "intelligent",
             "fem_sg": "intelligent",
-            "masc_pl": "[misto] inteligentes",
-            "fem_pl": "[misto] inteligentes"
+            "masc_pl": "inteligentes",
+            "fem_pl": "inteligentes"
           },
           {
-            "tipo": "[misto] consonant, no gender change",
-            "masc_sg": "[misto] joven",
-            "fem_sg": "[misto] joven",
-            "masc_pl": "[misto] jóvenes",
-            "fem_pl": "[misto] jóvenes"
+            "tipo": "consonant, no gender change",
+            "masc_sg": "joven",
+            "fem_sg": "joven",
+            "masc_pl": "jóvenes",
+            "fem_pl": "jóvenes"
           },
           {
-            "tipo": "[misto] -or, -ol (feminine in -a)",
-            "masc_sg": "[misto] trabajador",
-            "fem_sg": "[misto] trabajadora",
-            "masc_pl": "[misto] trabajadores",
-            "fem_pl": "[misto] trabajadoras"
+            "tipo": "-or, -ol (feminine in -a)",
+            "masc_sg": "trabajador",
+            "fem_sg": "trabajadora",
+            "masc_pl": "trabajadores",
+            "fem_pl": "trabajadoras"
           },
           {
-            "tipo": "[misto] -ista",
-            "masc_sg": "[misto] optimista",
-            "fem_sg": "[misto] optimista",
-            "masc_pl": "[misto] optimistas",
-            "fem_pl": "[misto] optimistas"
+            "tipo": "-ista",
+            "masc_sg": "optimista",
+            "fem_sg": "optimista",
+            "masc_pl": "optimistas",
+            "fem_pl": "optimistas"
           }
         ],
         "erros": [
           {
-            "errado": "[misto] Ella es alto.",
-            "certo": "[misto] Ella es alta.",
+            "errado": "Ella es alto.",
+            "certo": "Ella es alta.",
             "motivo": "The adjective agrees with the subject's gender."
           },
           {
-            "errado": "[misto] Ellos son simpático.",
-            "certo": "[misto] Ellos son simpáticos.",
+            "errado": "Ellos son simpático.",
+            "certo": "Ellos son simpáticos.",
             "motivo": "The plural needs «-s»."
           },
           {
-            "errado": "[misto] Soy no alto.",
-            "certo": "[misto] No soy alto.",
+            "errado": "Soy no alto.",
+            "certo": "No soy alto.",
             "motivo": "«No» comes before the verb."
           },
           {
-            "errado": "[misto] Ella es inteligenta.",
-            "certo": "[misto] Ella es inteligente.",
+            "errado": "Ella es inteligenta.",
+            "certo": "Ella es inteligente.",
             "motivo": "Adjectives ending in «-e» don't change to «-a»."
           }
         ],
@@ -169,16 +169,16 @@
         "pt": "Rosa is my friend. She's tall and very nice. Luis is my friend. He's not tall, but he's very intelligent. They're both young and very hard-working. I'm Carmen. I'm not tall, but I'm nice. We're good friends. Great!",
         "perguntas": [
           {
-            "pergunta": "[misto] What's Rosa like?",
-            "resposta": "[misto] Rosa is tall and very nice."
+            "pergunta": "What's Rosa like?",
+            "resposta": "Rosa is tall and very nice."
           },
           {
-            "pergunta": "[misto] Is Luis tall?",
-            "resposta": "[misto] No: no es alto, pero es muy inteligente."
+            "pergunta": "Is Luis tall?",
+            "resposta": "No: no es alto, pero es muy inteligente."
           },
           {
-            "pergunta": "[misto] How does Carmen describe herself?",
-            "resposta": "[misto] She says she's not tall, but she's nice."
+            "pergunta": "How does Carmen describe herself?",
+            "resposta": "She says she's not tall, but she's nice."
           }
         ]
       },

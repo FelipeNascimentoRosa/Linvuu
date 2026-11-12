@@ -26,56 +26,56 @@
         "itens": [
           {
             "ru": "el café",
-            "translit": "[pronuncia] el kah-FEH",
+            "translit": "el kah-FEH",
             "pt": "the coffee",
             "en": "",
             "audio": "el café"
           },
           {
             "ru": "el té",
-            "translit": "[pronuncia] el teh",
+            "translit": "el teh",
             "pt": "the tea",
             "en": "",
             "audio": "el té"
           },
           {
             "ru": "el zumo",
-            "translit": "[pronuncia] el THOO-mo",
+            "translit": "el THOO-mo",
             "pt": "the juice (Spain)",
             "en": "",
             "audio": "el zumo"
           },
           {
             "ru": "la cerveza",
-            "translit": "[pronuncia] la ther-BEH-thah",
+            "translit": "la ther-BEH-thah",
             "pt": "the beer",
             "en": "",
             "audio": "la cerveza"
           },
           {
             "ru": "el agua",
-            "translit": "[pronuncia] el AH-gwah",
+            "translit": "el AH-gwah",
             "pt": "the water",
             "en": "",
             "audio": "el agua"
           },
           {
             "ru": "el bocadillo",
-            "translit": "[pronuncia] el bo-kah-DEE-lyo",
+            "translit": "el bo-kah-DEE-lyo",
             "pt": "the sandwich (on a long roll)",
             "en": "",
             "audio": "el bocadillo"
           },
           {
             "ru": "la tostada",
-            "translit": "[pronuncia] la tos-TAH-dah",
+            "translit": "la tos-TAH-dah",
             "pt": "the toast",
             "en": "",
             "audio": "la tostada"
           },
           {
             "ru": "la cuenta",
-            "translit": "[pronuncia] la KWEN-tah",
+            "translit": "la KWEN-tah",
             "pt": "the check, the bill",
             "en": "",
             "audio": "la cuenta"
@@ -111,34 +111,34 @@
             "titulo": "querer (to want)",
             "linhas": [
               {
-                "pronome": "[misto] yo",
-                "forma": "[misto] quiero",
-                "exemplo": "[misto] Quiero un café."
+                "pronome": "yo",
+                "forma": "quiero",
+                "exemplo": "Quiero un café."
               },
               {
-                "pronome": "[misto] tú",
-                "forma": "[misto] quieres",
-                "exemplo": "[misto] ¿Qué quieres tomar?"
+                "pronome": "tú",
+                "forma": "quieres",
+                "exemplo": "¿Qué quieres tomar?"
               },
               {
-                "pronome": "[misto] él / ella / usted",
-                "forma": "[misto] quiere",
-                "exemplo": "[misto] Ella quiere un té."
+                "pronome": "él / ella / usted",
+                "forma": "quiere",
+                "exemplo": "Ella quiere un té."
               },
               {
-                "pronome": "[misto] nosotros, nosotras",
-                "forma": "[misto] queremos",
-                "exemplo": "[misto] Queremos la cuenta."
+                "pronome": "nosotros, nosotras",
+                "forma": "queremos",
+                "exemplo": "Queremos la cuenta."
               },
               {
-                "pronome": "[misto] vosotros, vosotras",
-                "forma": "[misto] queréis",
-                "exemplo": "[misto] ¿Qué queréis tomar?"
+                "pronome": "vosotros, vosotras",
+                "forma": "queréis",
+                "exemplo": "¿Qué queréis tomar?"
               },
               {
-                "pronome": "[misto] ellos, ellas, ustedes",
-                "forma": "[misto] quieren",
-                "exemplo": "[misto] Ellos quieren agua."
+                "pronome": "ellos, ellas, ustedes",
+                "forma": "quieren",
+                "exemplo": "Ellos quieren agua."
               }
             ]
           },
@@ -146,57 +146,57 @@
             "titulo": "Ready-made phrases for ordering",
             "linhas": [
               {
-                "situacao": "[misto] ordering (polite)",
-                "frase": "[misto] Quisiera un café con leche, por favor.",
-                "traducao": "[misto] I'd like a coffee with milk, please."
+                "situacao": "ordering (polite)",
+                "frase": "Quisiera un café con leche, por favor.",
+                "traducao": "I'd like a coffee with milk, please."
               },
               {
-                "situacao": "[misto] ordering (friends)",
-                "frase": "[misto] Quiero una tostada.",
-                "traducao": "[misto] I want a toast."
+                "situacao": "ordering (friends)",
+                "frase": "Quiero una tostada.",
+                "traducao": "I want a toast."
               },
               {
-                "situacao": "[misto] waiter asks",
-                "frase": "[misto] ¿Qué desea? / ¿Qué va a tomar?",
-                "traducao": "[misto] What would you like? / What will you have?"
+                "situacao": "waiter asks",
+                "frase": "¿Qué desea? / ¿Qué va a tomar?",
+                "traducao": "What would you like? / What will you have?"
               },
               {
-                "situacao": "[misto] answer",
-                "frase": "[misto] Para mí, un zumo.",
-                "traducao": "[misto] For me, a juice."
+                "situacao": "answer",
+                "frase": "Para mí, un zumo.",
+                "traducao": "For me, a juice."
               },
               {
-                "situacao": "[misto] asking for the check",
-                "frase": "[misto] La cuenta, por favor.",
-                "traducao": "[misto] The check, please."
+                "situacao": "asking for the check",
+                "frase": "La cuenta, por favor.",
+                "traducao": "The check, please."
               }
             ]
           }
         ],
         "erros": [
           {
-            "errado": "[misto] Quero un café.",
-            "certo": "[misto] Quiero un café.",
+            "errado": "Quero un café.",
+            "certo": "Quiero un café.",
             "motivo": "«Quero» looks right but isn't Spanish; in Spanish it's «quiero», with «ie»."
           },
           {
-            "errado": "[misto] Quiero un café sin de azúcar.",
-            "certo": "[misto] Quiero un café sin azúcar.",
+            "errado": "Quiero un café sin de azúcar.",
+            "certo": "Quiero un café sin azúcar.",
             "motivo": "After «sin», don't use «de»."
           },
           {
-            "errado": "[misto] Tú quieres un té. (to a stranger)",
-            "certo": "[misto] Usted quiere un té. / ¿Qué desea?",
+            "errado": "Tú quieres un té. (to a stranger)",
+            "certo": "Usted quiere un té. / ¿Qué desea?",
             "motivo": "With strangers, use «usted»."
           },
           {
-            "errado": "[misto] Quiéremos la cuenta.",
-            "certo": "[misto] Queremos la cuenta.",
+            "errado": "Quiéremos la cuenta.",
+            "certo": "Queremos la cuenta.",
             "motivo": "In «nosotros», the «e» doesn't become «ie»."
           },
           {
-            "errado": "[misto] Esta sopa es esquisita. (meaning to say \"weird\")",
-            "certo": "[misto] Esta sopa es rara.",
+            "errado": "Esta sopa es esquisita. (meaning to say \"weird\")",
+            "certo": "Esta sopa es rara.",
             "motivo": "«Exquisito» means delicious; for weird, say «raro» or «extraño»."
           }
         ],

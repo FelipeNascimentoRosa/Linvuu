@@ -26,56 +26,56 @@
         "itens": [
           {
             "ru": "un día",
-            "translit": "[pronuncia] oon DEE-ah",
+            "translit": "oon DEE-ah",
             "pt": "one day (in the past)",
             "en": "",
             "audio": "un día"
           },
           {
             "ru": "aquel día",
-            "translit": "[pronuncia] ah-KEL DEE-ah",
+            "translit": "ah-KEL DEE-ah",
             "pt": "that day",
             "en": "",
             "audio": "aquel día"
           },
           {
             "ru": "de repente",
-            "translit": "[pronuncia] deh reh-PEN-teh",
+            "translit": "deh reh-PEN-teh",
             "pt": "suddenly",
             "en": "",
             "audio": "de repente"
           },
           {
             "ru": "cuando",
-            "translit": "[pronuncia] KWAN-do",
+            "translit": "KWAN-do",
             "pt": "when",
             "en": "",
             "audio": "cuando"
           },
           {
             "ru": "sonar",
-            "translit": "[pronuncia] so-NAR",
+            "translit": "so-NAR",
             "pt": "to ring",
             "en": "",
             "audio": "sonar"
           },
           {
             "ru": "llover",
-            "translit": "[pronuncia] lyo-BER",
+            "translit": "lyo-BER",
             "pt": "to rain",
             "en": "",
             "audio": "llover"
           },
           {
             "ru": "esperar",
-            "translit": "[pronuncia] es-peh-RAR",
+            "translit": "es-peh-RAR",
             "pt": "to wait",
             "en": "",
             "audio": "esperar"
           },
           {
             "ru": "perder",
-            "translit": "[pronuncia] per-DER",
+            "translit": "per-DER",
             "pt": "to lose, to miss",
             "en": "",
             "audio": "perder"
@@ -108,50 +108,50 @@
         ],
         "tabela": [
           {
-            "pergunta": "[misto] Did it happen and finish?",
-            "tempo": "[misto] indefinido",
-            "exemplo": "[misto] De repente sonó el teléfono."
+            "pergunta": "Did it happen and finish?",
+            "tempo": "indefinido",
+            "exemplo": "De repente sonó el teléfono."
           },
           {
-            "pergunta": "[misto] Was it a repeated habit?",
-            "tempo": "[misto] imperfecto",
-            "exemplo": "[misto] Todos los veranos íbamos al pueblo."
+            "pergunta": "Was it a repeated habit?",
+            "tempo": "imperfecto",
+            "exemplo": "Todos los veranos íbamos al pueblo."
           },
           {
-            "pergunta": "[misto] Is it a description, time, age, weather?",
-            "tempo": "[misto] imperfecto",
-            "exemplo": "[misto] Eran las ocho y hacía frío."
+            "pergunta": "Is it a description, time, age, weather?",
+            "tempo": "imperfecto",
+            "exemplo": "Eran las ocho y hacía frío."
           },
           {
-            "pergunta": "[misto] Was it ongoing when something happened?",
-            "tempo": "[misto] imperfecto + indefinido",
-            "exemplo": "[misto] Cocinaba cuando llegó Pablo."
+            "pergunta": "Was it ongoing when something happened?",
+            "tempo": "imperfecto + indefinido",
+            "exemplo": "Cocinaba cuando llegó Pablo."
           },
           {
-            "pergunta": "[misto] Events in sequence?",
-            "tempo": "[misto] indefinido, indefinido",
-            "exemplo": "[misto] Llegué, comí y salí."
+            "pergunta": "Events in sequence?",
+            "tempo": "indefinido, indefinido",
+            "exemplo": "Llegué, comí y salí."
           }
         ],
         "erros": [
           {
-            "errado": "[misto] Ayer iba al cine.",
-            "certo": "[misto] Ayer fui al cine.",
+            "errado": "Ayer iba al cine.",
+            "certo": "Ayer fui al cine.",
             "motivo": "«Ayer» signals a single, finished event, which calls for the indefinido."
           },
           {
-            "errado": "[misto] De niño fui al pueblo cada verano.",
-            "certo": "[misto] De niño iba al pueblo cada verano.",
+            "errado": "De niño fui al pueblo cada verano.",
+            "certo": "De niño iba al pueblo cada verano.",
             "motivo": "A past habit calls for the imperfecto."
           },
           {
-            "errado": "[misto] Dormí cuando sonaba el teléfono.",
-            "certo": "[misto] Dormía cuando sonó el teléfono.",
+            "errado": "Dormí cuando sonaba el teléfono.",
+            "certo": "Dormía cuando sonó el teléfono.",
             "motivo": "The ongoing action is the imperfecto; the one that interrupts is the indefinido."
           },
           {
-            "errado": "[misto] Llovía y de repente un coche paraba.",
-            "certo": "[misto] Llovía y de repente un coche paró.",
+            "errado": "Llovía y de repente un coche paraba.",
+            "certo": "Llovía y de repente un coche paró.",
             "motivo": "«De repente» marks a single event: indefinido."
           }
         ],

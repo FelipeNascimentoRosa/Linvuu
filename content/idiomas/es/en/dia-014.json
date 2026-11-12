@@ -26,42 +26,42 @@
         "itens": [
           {
             "ru": "¿qué?",
-            "translit": "[pronuncia] keh",
+            "translit": "keh",
             "pt": "what?",
             "en": "",
             "audio": "¿qué?"
           },
           {
             "ru": "¿dónde?",
-            "translit": "[pronuncia] DON-deh",
+            "translit": "DON-deh",
             "pt": "where?",
             "en": "",
             "audio": "¿dónde?"
           },
           {
             "ru": "¿cuándo?",
-            "translit": "[pronuncia] KWAN-do",
+            "translit": "KWAN-do",
             "pt": "when?",
             "en": "",
             "audio": "¿cuándo?"
           },
           {
             "ru": "¿por qué?",
-            "translit": "[pronuncia] por keh",
+            "translit": "por keh",
             "pt": "why?",
             "en": "",
             "audio": "¿por qué?"
           },
           {
             "ru": "¿cómo?",
-            "translit": "[pronuncia] KO-mo",
+            "translit": "KO-mo",
             "pt": "how?",
             "en": "",
             "audio": "¿cómo?"
           },
           {
             "ru": "¿cuánto, cuánta?",
-            "translit": "[pronuncia] KWAN-to, KWAN-tah",
+            "translit": "KWAN-to, KWAN-tah",
             "pt": "how much, how many?",
             "en": "",
             "audio": "¿cuánto, cuánta?"
@@ -79,34 +79,34 @@
             "titulo": "Question words",
             "linhas": [
               {
-                "interrogativo": "[misto] ¿Qué?",
-                "significado": "[misto] what",
-                "exemplo": "[misto] ¿Qué estudias?"
+                "interrogativo": "¿Qué?",
+                "significado": "what",
+                "exemplo": "¿Qué estudias?"
               },
               {
-                "interrogativo": "[misto] ¿Dónde?",
-                "significado": "[misto] where",
-                "exemplo": "[misto] ¿Dónde trabajas?"
+                "interrogativo": "¿Dónde?",
+                "significado": "where",
+                "exemplo": "¿Dónde trabajas?"
               },
               {
-                "interrogativo": "[misto] ¿Cuándo?",
-                "significado": "[misto] when",
-                "exemplo": "[misto] ¿Cuándo viajas?"
+                "interrogativo": "¿Cuándo?",
+                "significado": "when",
+                "exemplo": "¿Cuándo viajas?"
               },
               {
-                "interrogativo": "[misto] ¿Cómo?",
-                "significado": "[misto] how",
-                "exemplo": "[misto] ¿Cómo cocinas?"
+                "interrogativo": "¿Cómo?",
+                "significado": "how",
+                "exemplo": "¿Cómo cocinas?"
               },
               {
-                "interrogativo": "[misto] ¿Cuánto?",
-                "significado": "[misto] how much",
-                "exemplo": "[misto] ¿Cuántos idiomas hablas?"
+                "interrogativo": "¿Cuánto?",
+                "significado": "how much",
+                "exemplo": "¿Cuántos idiomas hablas?"
               },
               {
-                "interrogativo": "[misto] ¿Por qué?",
-                "significado": "[misto] why",
-                "exemplo": "[misto] ¿Por qué estudias?"
+                "interrogativo": "¿Por qué?",
+                "significado": "why",
+                "exemplo": "¿Por qué estudias?"
               }
             ]
           },
@@ -114,42 +114,42 @@
             "titulo": "por qué, porque, porqué",
             "linhas": [
               {
-                "forma": "[misto] por qué",
-                "uso": "[misto] question",
-                "exemplo": "[misto] ¿Por qué trabajas aquí?"
+                "forma": "por qué",
+                "uso": "question",
+                "exemplo": "¿Por qué trabajas aquí?"
               },
               {
-                "forma": "[misto] porque",
-                "uso": "[misto] answer, reason",
-                "exemplo": "[misto] Porque vivo aquí."
+                "forma": "porque",
+                "uso": "answer, reason",
+                "exemplo": "Porque vivo aquí."
               },
               {
-                "forma": "[misto] porqué",
-                "uso": "[misto] noun: the reason (why)",
-                "exemplo": "[misto] Este es el porqué."
+                "forma": "porqué",
+                "uso": "noun: the reason (why)",
+                "exemplo": "Este es el porqué."
               }
             ]
           }
         ],
         "erros": [
           {
-            "errado": "[misto] Hablo no inglés.",
-            "certo": "[misto] No hablo inglés.",
+            "errado": "Hablo no inglés.",
+            "certo": "No hablo inglés.",
             "motivo": "«No» comes before the verb."
           },
           {
-            "errado": "[misto] Trabajas dónde?",
-            "certo": "[misto] ¿Dónde trabajas?",
+            "errado": "Trabajas dónde?",
+            "certo": "¿Dónde trabajas?",
             "motivo": "The question word comes first, and the question opens with «¿»."
           },
           {
-            "errado": "[misto] ¿Por que estudias español?",
-            "certo": "[misto] ¿Por qué estudias español?",
+            "errado": "¿Por que estudias español?",
+            "certo": "¿Por qué estudias español?",
             "motivo": "When asking, it's two words and «qué» carries an accent."
           },
           {
-            "errado": "[misto] Por qué trabajo en Madrid. (answer)",
-            "certo": "[misto] Porque trabajo en Madrid.",
+            "errado": "Por qué trabajo en Madrid. (answer)",
+            "certo": "Porque trabajo en Madrid.",
             "motivo": "In the answer, it's a single word, with no accent."
           }
         ],

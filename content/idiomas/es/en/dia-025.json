@@ -26,56 +26,56 @@
         "itens": [
           {
             "ru": "el padre",
-            "translit": "[pronuncia] el PAH-dreh",
+            "translit": "el PAH-dreh",
             "pt": "the father",
             "en": "",
             "audio": "el padre"
           },
           {
             "ru": "la madre",
-            "translit": "[pronuncia] la MAH-dreh",
+            "translit": "la MAH-dreh",
             "pt": "the mother",
             "en": "",
             "audio": "la madre"
           },
           {
             "ru": "el hermano",
-            "translit": "[pronuncia] el er-MAH-no",
+            "translit": "el er-MAH-no",
             "pt": "the brother",
             "en": "",
             "audio": "el hermano"
           },
           {
             "ru": "la hermana",
-            "translit": "[pronuncia] la er-MAH-nah",
+            "translit": "la er-MAH-nah",
             "pt": "the sister",
             "en": "",
             "audio": "la hermana"
           },
           {
             "ru": "el hijo",
-            "translit": "[pronuncia] el EE-ho",
+            "translit": "el EE-ho",
             "pt": "the son",
             "en": "",
             "audio": "el hijo"
           },
           {
             "ru": "la hija",
-            "translit": "[pronuncia] la EE-hah",
+            "translit": "la EE-hah",
             "pt": "the daughter",
             "en": "",
             "audio": "la hija"
           },
           {
             "ru": "el abuelo",
-            "translit": "[pronuncia] el ah-BWEH-lo",
+            "translit": "el ah-BWEH-lo",
             "pt": "the grandfather",
             "en": "",
             "audio": "el abuelo"
           },
           {
             "ru": "la abuela",
-            "translit": "[pronuncia] la ah-BWEH-lah",
+            "translit": "la ah-BWEH-lah",
             "pt": "the grandmother",
             "en": "",
             "audio": "la abuela"
@@ -108,65 +108,65 @@
         ],
         "tabela": [
           {
-            "masculino": "[misto] el padre",
-            "feminino": "[misto] la madre",
-            "plural_misto": "[misto] los padres"
+            "masculino": "el padre",
+            "feminino": "la madre",
+            "plural_misto": "los padres"
           },
           {
-            "masculino": "[misto] el hermano",
-            "feminino": "[misto] la hermana",
-            "plural_misto": "[misto] los hermanos"
+            "masculino": "el hermano",
+            "feminino": "la hermana",
+            "plural_misto": "los hermanos"
           },
           {
-            "masculino": "[misto] el hijo",
-            "feminino": "[misto] la hija",
-            "plural_misto": "[misto] los hijos"
+            "masculino": "el hijo",
+            "feminino": "la hija",
+            "plural_misto": "los hijos"
           },
           {
-            "masculino": "[misto] el abuelo",
-            "feminino": "[misto] la abuela",
-            "plural_misto": "[misto] los abuelos"
+            "masculino": "el abuelo",
+            "feminino": "la abuela",
+            "plural_misto": "los abuelos"
           },
           {
-            "masculino": "[misto] el tío",
-            "feminino": "[misto] la tía",
-            "plural_misto": "[misto] los tíos"
+            "masculino": "el tío",
+            "feminino": "la tía",
+            "plural_misto": "los tíos"
           },
           {
-            "masculino": "[misto] el primo",
-            "feminino": "[misto] la prima",
-            "plural_misto": "[misto] los primos"
+            "masculino": "el primo",
+            "feminino": "la prima",
+            "plural_misto": "los primos"
           },
           {
-            "masculino": "[misto] el sobrino",
-            "feminino": "[misto] la sobrina",
-            "plural_misto": "[misto] los sobrinos"
+            "masculino": "el sobrino",
+            "feminino": "la sobrina",
+            "plural_misto": "los sobrinos"
           },
           {
-            "masculino": "[misto] el marido, el esposo",
-            "feminino": "[misto] la mujer, la esposa",
-            "plural_misto": "[misto] los esposos"
+            "masculino": "el marido, el esposo",
+            "feminino": "la mujer, la esposa",
+            "plural_misto": "los esposos"
           }
         ],
         "erros": [
           {
-            "errado": "[misto] Tengo dos irmanos.",
-            "certo": "[misto] Tengo dos hermanos.",
+            "errado": "Tengo dos irmanos.",
+            "certo": "Tengo dos hermanos.",
             "motivo": "«Hermano» has a silent «h» and is spelled with «e»."
           },
           {
-            "errado": "[misto] Mi madre es el hermana de Ana.",
-            "certo": "[misto] Mi madre es la hermana de Ana.",
+            "errado": "Mi madre es el hermana de Ana.",
+            "certo": "Mi madre es la hermana de Ana.",
             "motivo": "Use the feminine article «la» for «hermana»."
           },
           {
-            "errado": "[misto] Soy único hijo.",
-            "certo": "[misto] Soy hijo único.",
+            "errado": "Soy único hijo.",
+            "certo": "Soy hijo único.",
             "motivo": "The adjective «único» comes after «hijo»."
           },
           {
-            "errado": "[misto] Mis padre viven en Madrid.",
-            "certo": "[misto] Mis padres viven en Madrid.",
+            "errado": "Mis padre viven en Madrid.",
+            "certo": "Mis padres viven en Madrid.",
             "motivo": "The plural needs the «-s» on both the noun and the possessive."
           }
         ],

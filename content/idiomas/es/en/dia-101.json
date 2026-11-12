@@ -26,14 +26,14 @@
         "itens": [
           {
             "ru": "barato, barata",
-            "translit": "[pronuncia] bah-RAH-to",
+            "translit": "bah-RAH-to",
             "pt": "cheap",
             "en": "",
             "audio": "barato, barata"
           },
           {
             "ru": "caro, cara",
-            "translit": "[pronuncia] KAH-ro",
+            "translit": "KAH-ro",
             "pt": "expensive",
             "en": "",
             "audio": "caro, cara"
@@ -47,35 +47,35 @@
           },
           {
             "ru": "lento, lenta",
-            "translit": "[pronuncia] LEN-to",
+            "translit": "LEN-to",
             "pt": "slow",
             "en": "",
             "audio": "lento, lenta"
           },
           {
             "ru": "alto, alta",
-            "translit": "[pronuncia] AHL-to",
+            "translit": "AHL-to",
             "pt": "tall, high",
             "en": "",
             "audio": "alto, alta"
           },
           {
             "ru": "bajo, baja",
-            "translit": "[pronuncia] BAH-ho",
+            "translit": "BAH-ho",
             "pt": "short, low",
             "en": "",
             "audio": "bajo, baja"
           },
           {
             "ru": "fácil",
-            "translit": "[pronuncia] FAH-theel",
+            "translit": "FAH-theel",
             "pt": "easy",
             "en": "",
             "audio": "fácil"
           },
           {
             "ru": "difícil",
-            "translit": "[pronuncia] dee-FEE-theel",
+            "translit": "dee-FEE-theel",
             "pt": "difficult",
             "en": "",
             "audio": "difícil"
@@ -111,57 +111,57 @@
             "titulo": "The three comparisons",
             "linhas": [
               {
-                "tipo": "[misto] more",
-                "estrutura": "[misto] más + adjective + que",
-                "exemplo": "[misto] Este bolso es más caro que ese."
+                "tipo": "more",
+                "estrutura": "más + adjective + que",
+                "exemplo": "Este bolso es más caro que ese."
               },
               {
-                "tipo": "[misto] less",
-                "estrutura": "[misto] menos + adjective + que",
-                "exemplo": "[misto] Esta calle es menos ruidosa que la otra."
+                "tipo": "less",
+                "estrutura": "menos + adjective + que",
+                "exemplo": "Esta calle es menos ruidosa que la otra."
               },
               {
-                "tipo": "[misto] equal (adjective)",
-                "estrutura": "[misto] tan + adjective + como",
-                "exemplo": "[misto] Mi hermano es tan alto como mi padre."
+                "tipo": "equal (adjective)",
+                "estrutura": "tan + adjective + como",
+                "exemplo": "Mi hermano es tan alto como mi padre."
               },
               {
-                "tipo": "[misto] equal (noun)",
-                "estrutura": "[misto] tanto/a/os/as + noun + como",
-                "exemplo": "[misto] Tengo tantas clases como tú."
+                "tipo": "equal (noun)",
+                "estrutura": "tanto/a/os/as + noun + como",
+                "exemplo": "Tengo tantas clases como tú."
               },
               {
-                "tipo": "[misto] equal (verb)",
-                "estrutura": "[misto] verb + tanto como",
-                "exemplo": "[misto] Duermo tanto como mi madre."
+                "tipo": "equal (verb)",
+                "estrutura": "verb + tanto como",
+                "exemplo": "Duermo tanto como mi madre."
               },
               {
-                "tipo": "[misto] more than a number",
-                "estrutura": "[misto] más de + number",
-                "exemplo": "[misto] Cuesta más de cien euros."
+                "tipo": "more than a number",
+                "estrutura": "más de + number",
+                "exemplo": "Cuesta más de cien euros."
               }
             ]
           }
         ],
         "erros": [
           {
-            "errado": "[misto] Soy más alto de tú.",
-            "certo": "[misto] Soy más alto que tú.",
+            "errado": "Soy más alto de tú.",
+            "certo": "Soy más alto que tú.",
             "motivo": "Between two things being compared, use «que»; «de» only ever comes before a number."
           },
           {
-            "errado": "[misto] Hay más que veinte personas.",
-            "certo": "[misto] Hay más de veinte personas.",
+            "errado": "Hay más que veinte personas.",
+            "certo": "Hay más de veinte personas.",
             "motivo": "Before a number, Spanish uses «más de»."
           },
           {
-            "errado": "[misto] Ella es tan alta que yo.",
-            "certo": "[misto] Ella es tan alta como yo.",
+            "errado": "Ella es tan alta que yo.",
+            "certo": "Ella es tan alta como yo.",
             "motivo": "Equality is «tan… como», never «tan… que»."
           },
           {
-            "errado": "[misto] Tengo tanto libros como tú.",
-            "certo": "[misto] Tengo tantos libros como tú.",
+            "errado": "Tengo tanto libros como tú.",
+            "certo": "Tengo tantos libros como tú.",
             "motivo": "«Tanto» agrees with the noun: tantos libros."
           }
         ],

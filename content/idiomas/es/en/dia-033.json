@@ -26,56 +26,56 @@
         "itens": [
           {
             "ru": "la hora",
-            "translit": "[pronuncia] la O-rah",
+            "translit": "la O-rah",
             "pt": "the hour",
             "en": "",
             "audio": "la hora"
           },
           {
             "ru": "el minuto",
-            "translit": "[pronuncia] el mee-NOO-to",
+            "translit": "el mee-NOO-to",
             "pt": "the minute",
             "en": "",
             "audio": "el minuto"
           },
           {
             "ru": "el reloj",
-            "translit": "[pronuncia] el reh-LOH",
+            "translit": "el reh-LOH",
             "pt": "the clock, the watch",
             "en": "",
             "audio": "el reloj"
           },
           {
             "ru": "en punto",
-            "translit": "[pronuncia] en POON-to",
+            "translit": "en POON-to",
             "pt": "on the dot, sharp",
             "en": "",
             "audio": "en punto"
           },
           {
             "ru": "y cuarto",
-            "translit": "[pronuncia] ee KWAR-to",
+            "translit": "ee KWAR-to",
             "pt": "quarter past",
             "en": "",
             "audio": "y cuarto"
           },
           {
             "ru": "y media",
-            "translit": "[pronuncia] ee meh-DYAH",
+            "translit": "ee meh-DYAH",
             "pt": "half past",
             "en": "",
             "audio": "y media"
           },
           {
             "ru": "menos cuarto",
-            "translit": "[pronuncia] MEH-nos KWAR-to",
+            "translit": "MEH-nos KWAR-to",
             "pt": "quarter to",
             "en": "",
             "audio": "menos cuarto"
           },
           {
             "ru": "a las…",
-            "translit": "[pronuncia] ah lahs",
+            "translit": "ah lahs",
             "pt": "at… (to set a time)",
             "en": "",
             "audio": "a las…"
@@ -112,70 +112,70 @@
         ],
         "tabela": [
           {
-            "hora": "[misto] 1:00",
-            "espanhol": "[misto] Es la una.",
-            "observacao": "[misto] singular"
+            "hora": "1:00",
+            "espanhol": "Es la una.",
+            "observacao": "singular"
           },
           {
-            "hora": "[misto] 2:00",
-            "espanhol": "[misto] Son las dos.",
-            "observacao": "[misto] plural"
+            "hora": "2:00",
+            "espanhol": "Son las dos.",
+            "observacao": "plural"
           },
           {
-            "hora": "[misto] 3:10",
-            "espanhol": "[misto] Son las tres y diez.",
-            "observacao": "[misto] minutes with y"
+            "hora": "3:10",
+            "espanhol": "Son las tres y diez.",
+            "observacao": "minutes with y"
           },
           {
-            "hora": "[misto] 4:15",
-            "espanhol": "[misto] Son las cuatro y cuarto.",
-            "observacao": "[misto] fifteen minutes"
+            "hora": "4:15",
+            "espanhol": "Son las cuatro y cuarto.",
+            "observacao": "fifteen minutes"
           },
           {
-            "hora": "[misto] 5:30",
-            "espanhol": "[misto] Son las cinco y media.",
-            "observacao": "[misto] half hour"
+            "hora": "5:30",
+            "espanhol": "Son las cinco y media.",
+            "observacao": "half hour"
           },
           {
-            "hora": "[misto] 6:40",
-            "espanhol": "[misto] Son las siete menos veinte.",
-            "observacao": "[misto] minutes still needed"
+            "hora": "6:40",
+            "espanhol": "Son las siete menos veinte.",
+            "observacao": "minutes still needed"
           },
           {
-            "hora": "[misto] 7:45",
-            "espanhol": "[misto] Son las ocho menos cuarto.",
-            "observacao": "[misto] menos cuarto"
+            "hora": "7:45",
+            "espanhol": "Son las ocho menos cuarto.",
+            "observacao": "menos cuarto"
           },
           {
-            "hora": "[misto] 12:00",
-            "espanhol": "[misto] Es mediodía. / Son las doce.",
-            "observacao": "[misto] noon"
+            "hora": "12:00",
+            "espanhol": "Es mediodía. / Son las doce.",
+            "observacao": "noon"
           }
         ],
         "erros": [
           {
-            "errado": "[misto] Son la una.",
-            "certo": "[misto] Es la una.",
+            "errado": "Son la una.",
+            "certo": "Es la una.",
             "motivo": "One o'clock is singular."
           },
           {
-            "errado": "[misto] Es las dos.",
-            "certo": "[misto] Son las dos.",
+            "errado": "Es las dos.",
+            "certo": "Son las dos.",
             "motivo": "From two onward, the verb goes plural."
           },
           {
-            "errado": "[misto] Son las dos horas.",
-            "certo": "[misto] Son las dos.",
+            "errado": "Son las dos horas.",
+            "certo": "Son las dos.",
             "motivo": "The word «horas» stays implied."
           },
           {
-            "errado": "[misto] Son las siete y cuarenta y cinco.",
-            "certo": "[misto] Son las ocho menos cuarto.",
+            "errado": "Son las siete y cuarenta y cinco.",
+            "certo": "Son las ocho menos cuarto.",
             "motivo": "The digital form exists, but in speech «menos cuarto» is the natural choice."
           },
           {
-            "errado": "[misto] Son las ocho en la mañana.",
-            "certo": "[misto] Son las ocho de la mañana.",
+            "errado": "Son las ocho en la mañana.",
+            "certo": "Son las ocho de la mañana.",
             "motivo": "With an exact time, use «de la mañana»."
           }
         ],

@@ -26,56 +26,56 @@
         "itens": [
           {
             "ru": "ya",
-            "translit": "[pronuncia] yah",
+            "translit": "yah",
             "pt": "already",
             "en": "",
             "audio": "ya"
           },
           {
             "ru": "todavía no",
-            "translit": "[pronuncia] to-dah-BEE-ah no",
+            "translit": "to-dah-BEE-ah no",
             "pt": "not yet",
             "en": "",
             "audio": "todavía no"
           },
           {
             "ru": "hoy",
-            "translit": "[pronuncia] oy",
+            "translit": "oy",
             "pt": "today",
             "en": "",
             "audio": "hoy"
           },
           {
             "ru": "esta mañana",
-            "translit": "[pronuncia] ES-tah mah-NYAH-nah",
+            "translit": "ES-tah mah-NYAH-nah",
             "pt": "this morning",
             "en": "",
             "audio": "esta mañana"
           },
           {
             "ru": "esta semana",
-            "translit": "[pronuncia] ES-tah seh-MAH-nah",
+            "translit": "ES-tah seh-MAH-nah",
             "pt": "this week",
             "en": "",
             "audio": "esta semana"
           },
           {
             "ru": "este año",
-            "translit": "[pronuncia] ES-teh AH-nyo",
+            "translit": "ES-teh AH-nyo",
             "pt": "this year",
             "en": "",
             "audio": "este año"
           },
           {
             "ru": "alguna vez",
-            "translit": "[pronuncia] al-GOO-nah beth",
+            "translit": "al-GOO-nah beth",
             "pt": "ever, at some point (in one's life)",
             "en": "",
             "audio": "alguna vez"
           },
           {
             "ru": "nunca",
-            "translit": "[pronuncia] NOON-kah",
+            "translit": "NOON-kah",
             "pt": "never",
             "en": "",
             "audio": "nunca"
@@ -115,74 +115,74 @@
             "titulo": "haber (present) + participle",
             "linhas": [
               {
-                "pronome": "[misto] yo",
-                "haber": "[misto] he",
-                "hablar": "[misto] he hablado",
-                "comer": "[misto] he comido",
-                "vivir": "[misto] he vivido"
+                "pronome": "yo",
+                "haber": "he",
+                "hablar": "he hablado",
+                "comer": "he comido",
+                "vivir": "he vivido"
               },
               {
-                "pronome": "[misto] tú",
-                "haber": "[misto] has",
-                "hablar": "[misto] has hablado",
-                "comer": "[misto] has comido",
-                "vivir": "[misto] has vivido"
+                "pronome": "tú",
+                "haber": "has",
+                "hablar": "has hablado",
+                "comer": "has comido",
+                "vivir": "has vivido"
               },
               {
-                "pronome": "[misto] él / ella / usted",
-                "haber": "[misto] ha",
-                "hablar": "[misto] ha hablado",
-                "comer": "[misto] ha comido",
-                "vivir": "[misto] ha vivido"
+                "pronome": "él / ella / usted",
+                "haber": "ha",
+                "hablar": "ha hablado",
+                "comer": "ha comido",
+                "vivir": "ha vivido"
               },
               {
-                "pronome": "[misto] nosotros",
-                "haber": "[misto] hemos",
-                "hablar": "[misto] hemos hablado",
-                "comer": "[misto] hemos comido",
-                "vivir": "[misto] hemos vivido"
+                "pronome": "nosotros",
+                "haber": "hemos",
+                "hablar": "hemos hablado",
+                "comer": "hemos comido",
+                "vivir": "hemos vivido"
               },
               {
-                "pronome": "[misto] vosotros",
-                "haber": "[misto] habéis",
-                "hablar": "[misto] habéis hablado",
-                "comer": "[misto] habéis comido",
-                "vivir": "[misto] habéis vivido"
+                "pronome": "vosotros",
+                "haber": "habéis",
+                "hablar": "habéis hablado",
+                "comer": "habéis comido",
+                "vivir": "habéis vivido"
               },
               {
-                "pronome": "[misto] ellos, ustedes",
-                "haber": "[misto] han",
-                "hablar": "[misto] han hablado",
-                "comer": "[misto] han comido",
-                "vivir": "[misto] han vivido"
+                "pronome": "ellos, ustedes",
+                "haber": "han",
+                "hablar": "han hablado",
+                "comer": "han comido",
+                "vivir": "han vivido"
               }
             ]
           }
         ],
         "erros": [
           {
-            "errado": "[misto] Tengo comido.",
-            "certo": "[misto] He comido.",
+            "errado": "Tengo comido.",
+            "certo": "He comido.",
             "motivo": "The auxiliary is «haber»; «tener» doesn't form this compound tense."
           },
           {
-            "errado": "[misto] Ella han hablado.",
-            "certo": "[misto] Ella ha hablado.",
+            "errado": "Ella han hablado.",
+            "certo": "Ella ha hablado.",
             "motivo": "The auxiliary agrees with the subject: «ella ha»."
           },
           {
-            "errado": "[misto] Hemos comidos.",
-            "certo": "[misto] Hemos comido.",
+            "errado": "Hemos comidos.",
+            "certo": "Hemos comido.",
             "motivo": "The participle never changes."
           },
           {
-            "errado": "[misto] He me levantado.",
-            "certo": "[misto] Me he levantado.",
+            "errado": "He me levantado.",
+            "certo": "Me he levantado.",
             "motivo": "The pronoun comes before «haber»."
           },
           {
-            "errado": "[misto] He ya comido.",
-            "certo": "[misto] Ya he comido.",
+            "errado": "He ya comido.",
+            "certo": "Ya he comido.",
             "motivo": "Nothing comes between «haber» and the participle."
           }
         ],

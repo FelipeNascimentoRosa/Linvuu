@@ -26,42 +26,42 @@
         "itens": [
           {
             "ru": "los libros",
-            "translit": "[pronuncia] los LEE-bros",
+            "translit": "los LEE-bros",
             "pt": "the books",
             "en": "",
             "audio": "los libros"
           },
           {
             "ru": "las casas",
-            "translit": "[pronuncia] las KAH-sahs",
+            "translit": "las KAH-sahs",
             "pt": "the houses",
             "en": "",
             "audio": "las casas"
           },
           {
             "ru": "los lápices",
-            "translit": "[pronuncia] los LAH-pee-thess",
+            "translit": "los LAH-pee-thess",
             "pt": "the pencils",
             "en": "",
             "audio": "los lápices"
           },
           {
             "ru": "los países",
-            "translit": "[pronuncia] los pah-EE-sess",
+            "translit": "los pah-EE-sess",
             "pt": "the countries",
             "en": "",
             "audio": "los países"
           },
           {
             "ru": "las canciones",
-            "translit": "[pronuncia] las kan-thee-OH-ness",
+            "translit": "las kan-thee-OH-ness",
             "pt": "the songs",
             "en": "",
             "audio": "las canciones"
           },
           {
             "ru": "los jóvenes",
-            "translit": "[pronuncia] los HO-beh-ness",
+            "translit": "los HO-beh-ness",
             "pt": "the young people",
             "en": "",
             "audio": "los jóvenes"
@@ -102,60 +102,60 @@
         ],
         "tabela": [
           {
-            "termina_em": "[misto] vowel",
-            "regra": "[misto] + s",
-            "exemplo": "[misto] casa → casas"
+            "termina_em": "vowel",
+            "regra": "+ s",
+            "exemplo": "casa → casas"
           },
           {
-            "termina_em": "[misto] consonant",
-            "regra": "[misto] + es",
-            "exemplo": "[misto] ciudad → ciudades"
+            "termina_em": "consonant",
+            "regra": "+ es",
+            "exemplo": "ciudad → ciudades"
           },
           {
-            "termina_em": "[misto] -z",
-            "regra": "[misto] z becomes c + es",
-            "exemplo": "[misto] lápiz → lápices"
+            "termina_em": "-z",
+            "regra": "z becomes c + es",
+            "exemplo": "lápiz → lápices"
           },
           {
-            "termina_em": "[misto] -ción, -sión",
-            "regra": "[misto] loses the accent mark + es",
-            "exemplo": "[misto] canción → canciones"
+            "termina_em": "-ción, -sión",
+            "regra": "loses the accent mark + es",
+            "exemplo": "canción → canciones"
           },
           {
-            "termina_em": "[misto] -n with the stress on the syllable before it",
-            "regra": "[misto] gains an accent mark + es",
-            "exemplo": "[misto] joven → jóvenes"
+            "termina_em": "-n with the stress on the syllable before it",
+            "regra": "gains an accent mark + es",
+            "exemplo": "joven → jóvenes"
           },
           {
-            "termina_em": "[misto] -s with no stress at the end",
-            "regra": "[misto] doesn't change",
-            "exemplo": "[misto] el lunes → los lunes"
+            "termina_em": "-s with no stress at the end",
+            "regra": "doesn't change",
+            "exemplo": "el lunes → los lunes"
           }
         ],
         "erros": [
           {
-            "errado": "[misto] los lápizes",
-            "certo": "[misto] los lápices",
+            "errado": "los lápizes",
+            "certo": "los lápices",
             "motivo": "The «z» becomes «c» before «-es»."
           },
           {
-            "errado": "[misto] las canciónes",
-            "certo": "[misto] las canciones",
+            "errado": "las canciónes",
+            "certo": "las canciones",
             "motivo": "The accent mark disappears: the stressed syllable stays the same."
           },
           {
-            "errado": "[misto] los jovenes",
-            "certo": "[misto] los jóvenes",
+            "errado": "los jovenes",
+            "certo": "los jóvenes",
             "motivo": "An extra syllable appears, and the stressed syllable now needs an accent mark."
           },
           {
-            "errado": "[misto] Hablo de el problema.",
-            "certo": "[misto] Hablo del problema.",
+            "errado": "Hablo de el problema.",
+            "certo": "Hablo del problema.",
             "motivo": "«De + el» always contracts to «del»."
           },
           {
-            "errado": "[misto] una calle largo",
-            "certo": "[misto] una calle larga",
+            "errado": "una calle largo",
+            "certo": "una calle larga",
             "motivo": "The adjective agrees with the feminine noun."
           }
         ],

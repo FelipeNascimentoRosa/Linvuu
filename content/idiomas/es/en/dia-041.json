@@ -26,56 +26,56 @@
         "itens": [
           {
             "ru": "la calle",
-            "translit": "[pronuncia] la KAH-lyeh",
+            "translit": "la KAH-lyeh",
             "pt": "the street",
             "en": "",
             "audio": "la calle"
           },
           {
             "ru": "la farmacia",
-            "translit": "[pronuncia] la far-MAH-thyah",
+            "translit": "la far-MAH-thyah",
             "pt": "the pharmacy",
             "en": "",
             "audio": "la farmacia"
           },
           {
             "ru": "el supermercado",
-            "translit": "[pronuncia] el soo-per-mer-KAH-do",
+            "translit": "el soo-per-mer-KAH-do",
             "pt": "the supermarket",
             "en": "",
             "audio": "el supermercado"
           },
           {
             "ru": "la estación",
-            "translit": "[pronuncia] la es-tah-THYON",
+            "translit": "la es-tah-THYON",
             "pt": "the station",
             "en": "",
             "audio": "la estación"
           },
           {
             "ru": "el museo",
-            "translit": "[pronuncia] el moo-SEH-o",
+            "translit": "el moo-SEH-o",
             "pt": "the museum",
             "en": "",
             "audio": "el museo"
           },
           {
             "ru": "el mercado",
-            "translit": "[pronuncia] el mer-KAH-do",
+            "translit": "el mer-KAH-do",
             "pt": "the market",
             "en": "",
             "audio": "el mercado"
           },
           {
             "ru": "el ayuntamiento",
-            "translit": "[pronuncia] el ah-yoon-tah-MYEN-to",
+            "translit": "el ah-yoon-tah-MYEN-to",
             "pt": "the city hall",
             "en": "",
             "audio": "el ayuntamiento"
           },
           {
             "ru": "la parada",
-            "translit": "[pronuncia] la pah-RAH-dah",
+            "translit": "la pah-RAH-dah",
             "pt": "the stop (bus)",
             "en": "",
             "audio": "la parada"
@@ -108,50 +108,50 @@
         ],
         "tabela": [
           {
-            "pergunta": "[misto] ¿Dónde está la farmacia?",
-            "funcao": "[misto] a known place",
-            "traducao": "[misto] Where's the pharmacy?"
+            "pergunta": "¿Dónde está la farmacia?",
+            "funcao": "a known place",
+            "traducao": "Where's the pharmacy?"
           },
           {
-            "pergunta": "[misto] ¿Hay un banco por aquí?",
-            "funcao": "[misto] finding out if it exists",
-            "traducao": "[misto] Is there a bank around here?"
+            "pergunta": "¿Hay un banco por aquí?",
+            "funcao": "finding out if it exists",
+            "traducao": "Is there a bank around here?"
           },
           {
-            "pergunta": "[misto] ¿Está lejos?",
-            "funcao": "[misto] distance",
-            "traducao": "[misto] Is it far?"
+            "pergunta": "¿Está lejos?",
+            "funcao": "distance",
+            "traducao": "Is it far?"
           },
           {
-            "pergunta": "[misto] ¿Cómo llego a la estación?",
-            "funcao": "[misto] how to get there",
-            "traducao": "[misto] How do I get to the station?"
+            "pergunta": "¿Cómo llego a la estación?",
+            "funcao": "how to get there",
+            "traducao": "How do I get to the station?"
           },
           {
-            "pergunta": "[misto] Perdone, ¿para ir al museo?",
-            "funcao": "[misto] getting attention and asking",
-            "traducao": "[misto] Excuse me, how do I get to the museum?"
+            "pergunta": "Perdone, ¿para ir al museo?",
+            "funcao": "getting attention and asking",
+            "traducao": "Excuse me, how do I get to the museum?"
           }
         ],
         "erros": [
           {
-            "errado": "[misto] ¿Dónde es la farmacia?",
-            "certo": "[misto] ¿Dónde está la farmacia?",
+            "errado": "¿Dónde es la farmacia?",
+            "certo": "¿Dónde está la farmacia?",
             "motivo": "To locate a place, use «estar»."
           },
           {
-            "errado": "[misto] ¿Cómo llego en la estación?",
-            "certo": "[misto] ¿Cómo llego a la estación?",
+            "errado": "¿Cómo llego en la estación?",
+            "certo": "¿Cómo llego a la estación?",
             "motivo": "The destination needs «a»."
           },
           {
-            "errado": "[misto] ¿Hay la farmacia por aquí?",
-            "certo": "[misto] ¿Hay una farmacia por aquí?",
+            "errado": "¿Hay la farmacia por aquí?",
+            "certo": "¿Hay una farmacia por aquí?",
             "motivo": "After «hay», an indefinite article."
           },
           {
-            "errado": "[misto] ¿Dónde está los baños?",
-            "certo": "[misto] ¿Dónde están los baños?",
+            "errado": "¿Dónde está los baños?",
+            "certo": "¿Dónde están los baños?",
             "motivo": "Plural: «están»."
           }
         ],

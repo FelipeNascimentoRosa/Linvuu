@@ -26,42 +26,42 @@
         "itens": [
           {
             "ru": "la recepción",
-            "translit": "[pronuncia] la reh-thep-THYOHN",
+            "translit": "la reh-thep-THYOHN",
             "pt": "the front desk",
             "en": "",
             "audio": "la recepción"
           },
           {
             "ru": "la habitación",
-            "translit": "[pronuncia] la ah-bee-tah-THYOHN",
+            "translit": "la ah-bee-tah-THYOHN",
             "pt": "the room (hotel)",
             "en": "",
             "audio": "la habitación"
           },
           {
             "ru": "la llave",
-            "translit": "[pronuncia] la LYAH-beh",
+            "translit": "la LYAH-beh",
             "pt": "the key",
             "en": "",
             "audio": "la llave"
           },
           {
             "ru": "el ruido",
-            "translit": "[pronuncia] el RWEE-do",
+            "translit": "el RWEE-do",
             "pt": "the noise",
             "en": "",
             "audio": "el ruido"
           },
           {
             "ru": "cambiar",
-            "translit": "[pronuncia] kam-BYAR",
+            "translit": "kam-BYAR",
             "pt": "to change, to switch",
             "en": "",
             "audio": "cambiar"
           },
           {
             "ru": "la oficina",
-            "translit": "[pronuncia] la oh-fee-THEE-na",
+            "translit": "la oh-fee-THEE-na",
             "pt": "the office (not \"oficina mecánica\")",
             "en": "",
             "audio": "la oficina"
@@ -76,50 +76,50 @@
         "comparacao": "English has nothing like the «tú»/«usted» split driving this whole scale — one \"you\" covers a friend, a stranger, and a hotel clerk alike, so the courtesy ladder in English comes entirely from word choice (\"gimme the key\" → \"could you give me the key\" → \"would you be able to give me the key, please\") rather than from switching pronoun and verb forms the way «te» becomes «le» and «dame» becomes «podría darme». «Oficina» is the one vocabulary trap here: it means office, never an auto shop, which is «taller».",
         "tabela": [
           {
-            "nivel": "[misto] direct (friend)",
-            "exemplo": "[misto] Dame la llave.",
-            "traducao": "[misto] Give me the key."
+            "nivel": "direct (friend)",
+            "exemplo": "Dame la llave.",
+            "traducao": "Give me the key."
           },
           {
-            "nivel": "[misto] natural",
-            "exemplo": "[misto] ¿Me puedes dar la llave?",
-            "traducao": "[misto] Can you give me the key?"
+            "nivel": "natural",
+            "exemplo": "¿Me puedes dar la llave?",
+            "traducao": "Can you give me the key?"
           },
           {
-            "nivel": "[misto] polite",
-            "exemplo": "[misto] ¿Podría darme la llave, por favor?",
-            "traducao": "[misto] Could you give me the key, please?"
+            "nivel": "polite",
+            "exemplo": "¿Podría darme la llave, por favor?",
+            "traducao": "Could you give me the key, please?"
           },
           {
-            "nivel": "[misto] very polite",
-            "exemplo": "[misto] ¿Le importaría hablar más bajo?",
-            "traducao": "[misto] Would you mind speaking more quietly?"
+            "nivel": "very polite",
+            "exemplo": "¿Le importaría hablar más bajo?",
+            "traducao": "Would you mind speaking more quietly?"
           },
           {
-            "nivel": "[misto] formal request",
-            "exemplo": "[misto] ¿Sería posible cambiar de habitación?",
-            "traducao": "[misto] Would it be possible to switch rooms?"
+            "nivel": "formal request",
+            "exemplo": "¿Sería posible cambiar de habitación?",
+            "traducao": "Would it be possible to switch rooms?"
           }
         ],
         "erros": [
           {
-            "errado": "[misto] Quiero la llave. (to a stranger)",
-            "certo": "[misto] Quisiera la llave, por favor.",
+            "errado": "Quiero la llave. (to a stranger)",
+            "certo": "Quisiera la llave, por favor.",
             "motivo": "«Quiero» sounds too blunt with strangers."
           },
           {
-            "errado": "[misto] La oficina del coche está cerrada.",
-            "certo": "[misto] El taller está cerrado.",
+            "errado": "La oficina del coche está cerrada.",
+            "certo": "El taller está cerrado.",
             "motivo": "«Oficina» means office; an auto repair shop is «taller»."
           },
           {
-            "errado": "[misto] ¿Le importaría que hablar más bajo?",
-            "certo": "[misto] ¿Le importaría hablar más bajo?",
+            "errado": "¿Le importaría que hablar más bajo?",
+            "certo": "¿Le importaría hablar más bajo?",
             "motivo": "After «importaría», the infinitive comes straight after."
           },
           {
-            "errado": "[misto] Pido por una habitación.",
-            "certo": "[misto] Pido una habitación.",
+            "errado": "Pido por una habitación.",
+            "certo": "Pido una habitación.",
             "motivo": "«Pedir» never takes «por»: you ask for something directly."
           }
         ],
@@ -136,56 +136,56 @@
             "ru": "— Buenas tardes, señor Ruiz. ¿En qué puedo ayudarle?",
             "pt": "— Good afternoon, Mr. Ruiz. How can I help you?",
             "audio": "Buenas tardes, señor Ruiz. ¿En qué puedo ayudarle?",
-            "rotulo": "[personagem] La recepcionista"
+            "rotulo": "La recepcionista"
           },
           {
             "personagem": "Señor Ruiz",
             "ru": "— Buenas tardes. Me gustaría hablar de la habitación.",
             "pt": "— Good afternoon. I'd like to talk about the room.",
             "audio": "Buenas tardes. Me gustaría hablar de la habitación.",
-            "rotulo": "[personagem] Señor Ruiz"
+            "rotulo": "Señor Ruiz"
           },
           {
             "personagem": "La recepcionista",
             "ru": "— Por supuesto. ¿Hay algún problema?",
             "pt": "— Of course. Is there a problem?",
             "audio": "Por supuesto. ¿Hay algún problema?",
-            "rotulo": "[personagem] La recepcionista"
+            "rotulo": "La recepcionista"
           },
           {
             "personagem": "Señor Ruiz",
             "ru": "— Hay bastante ruido por la noche. ¿Sería posible cambiar de habitación?",
             "pt": "— There's quite a bit of noise at night. Would it be possible to switch rooms?",
             "audio": "Hay bastante ruido por la noche. ¿Sería posible cambiar de habitación?",
-            "rotulo": "[personagem] Señor Ruiz"
+            "rotulo": "Señor Ruiz"
           },
           {
             "personagem": "La recepcionista",
             "ru": "— Déjeme ver. Tendría una habitación tranquila en el segundo piso.",
             "pt": "— Let me check. I'd have a quiet room on the second floor.",
             "audio": "Déjeme ver. Tendría una habitación tranquila en el segundo piso.",
-            "rotulo": "[personagem] La recepcionista"
+            "rotulo": "La recepcionista"
           },
           {
             "personagem": "Señor Ruiz",
             "ru": "— Perfecto. ¿Podría darme la llave ahora?",
             "pt": "— Perfect. Could you give me the key now?",
             "audio": "Perfecto. ¿Podría darme la llave ahora?",
-            "rotulo": "[personagem] Señor Ruiz"
+            "rotulo": "Señor Ruiz"
           },
           {
             "personagem": "La recepcionista",
             "ru": "— Claro. Aquí tiene. Muchas gracias por su paciencia.",
             "pt": "— Of course. Here you go. Thank you very much for your patience.",
             "audio": "Claro. Aquí tiene. Muchas gracias por su paciencia.",
-            "rotulo": "[personagem] La recepcionista"
+            "rotulo": "La recepcionista"
           },
           {
             "personagem": "Señor Ruiz",
             "ru": "— Se lo agradezco mucho. Hasta luego.",
             "pt": "— I really appreciate it. See you later.",
             "audio": "Se lo agradezco mucho. Hasta luego.",
-            "rotulo": "[personagem] Señor Ruiz"
+            "rotulo": "Señor Ruiz"
           }
         ]
       },
