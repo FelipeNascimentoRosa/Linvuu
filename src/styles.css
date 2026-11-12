@@ -254,7 +254,7 @@ a.livro:focus-visible{outline:2px solid var(--ocre);outline-offset:6px}
 .bloco-topo span{font-size:14px;color:var(--muted)}
 .bloco-sub{font-size:18px;font-weight:700;margin:4px 0 10px}
 .ru{font-size:1.15em}
-.callout{padding:16px 20px;border-radius:var(--r-sm);background:var(--surface);color:var(--text)}
+.callout{padding:16px 20px;border-radius:var(--r-sm);background:var(--surface);color:var(--text);max-width:72ch}
 .callout-tarefa{background:var(--papel-escuro);border-left:4px solid var(--accent)}
 .callout .link{margin-top:6px}
 .som{flex-shrink:0;width:38px;height:38px;border-radius:50%;border:1.5px solid var(--text);background:var(--papel-claro);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;padding:0}

@@ -90,6 +90,7 @@ export default function Gramatica() {
         {['todas', ...pacote.categorias].map((c) => <button key={c} type="button" className={cat === c ? 'on' : ''} aria-pressed={cat === c} onClick={() => setCat(c)}>{c === 'todas' ? g.todas : c}</button>)}
       </div>
       <p className="resultado" aria-live="polite">{g.topicos(lista.length)}</p>
+      <h2 className="sr-only">{LOCALE.codigo === 'pt-BR' ? 'Tópicos' : 'Topics'}</h2>
       <div className="topicos">
         {lista.map((x) => (
           <details key={x.id} className="topico">
