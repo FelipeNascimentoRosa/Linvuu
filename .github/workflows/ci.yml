@@ -29,6 +29,8 @@ jobs:
           path: ~/.cache/firebase/emulators
           key: firebase-emulators-${{ runner.os }}-firebase-tools-15.34.1
       - run: npm ci
+      - name: Trava do conteúdo em inglês (docs/LEIA-ME-INTERNACIONAL.md)
+        run: node scripts/travas-en.mjs
       - name: Testar coletor e limites da auditoria Firebase sem acesso de produção
         run: python3 -m unittest discover -s scripts/auditoria_firebase -p 'test_*.py' -v
       - name: Verificar tipos TypeScript
