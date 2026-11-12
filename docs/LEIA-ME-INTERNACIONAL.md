@@ -27,7 +27,7 @@ Medido no repositório em 11/11/2026 (`ls content/idiomas/<id>/en`). Confira ant
 | Francês `fr` | 248/248 | completo, indexável | travado (curado à mão) |
 | Português p/ estrangeiros `br` | 248/248 (escrito em inglês) | completo, indexável | travado |
 | Espanhol `es` | 128/248 | parcial: nota de cobertura, fora do sitemap | travado o que existe |
-| Alemão `de` | 92/288 (aulas 1–23) | parcial: nota de cobertura, fora do sitemap | travado o que existe |
+| Alemão `de` | 96/288 (aulas 1–24) | parcial: nota de cobertura, fora do sitemap | travado o que existe |
 | Italiano `it` | 0/248 | parcial: nota de cobertura, fora do sitemap | — |
 
 Gramáticas em inglês servidas: `ru.en.json`, `fr.en.json`, `es.en.json`, `br.json` (travadas).
