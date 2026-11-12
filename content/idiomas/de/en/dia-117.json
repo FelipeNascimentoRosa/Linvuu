@@ -1,0 +1,131 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 117,
+  "fase": 12,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Verbs of position and the N-declension: Stehen × stellen, liegen × legen",
+  "objetivo": "Lesson 30, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 30,
+    "titulo": "Verbs of position and the N-declension",
+    "objetivo": "Use the position verbs (stehen/stellen, liegen/legen, sitzen/setzen, hängen) with Wo? and Wohin?, and the N-declension of weak masculine nouns (der Student → den Studenten).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Stehen × stellen, liegen × legen",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "stehen",
+            "translit": "SHTAY-en",
+            "pt": "to stand (be standing)",
+            "en": "to stand",
+            "audio": "stehen"
+          },
+          {
+            "ru": "stellen",
+            "translit": "SHTEL-en",
+            "pt": "to stand (something) up, to put upright",
+            "en": "to put (upright)",
+            "audio": "stellen"
+          },
+          {
+            "ru": "liegen",
+            "translit": "LEE-gen",
+            "pt": "to lie (be lying flat)",
+            "en": "to lie",
+            "audio": "liegen"
+          },
+          {
+            "ru": "legen",
+            "translit": "LAY-gen",
+            "pt": "to lay, to put down flat",
+            "en": "to lay",
+            "audio": "legen"
+          },
+          {
+            "ru": "das Regal",
+            "translit": "dahs reh-GAHL",
+            "pt": "shelf, bookcase",
+            "en": "shelf",
+            "audio": "das Regal"
+          },
+          {
+            "ru": "die Vase",
+            "translit": "dee VAH-zeh",
+            "pt": "vase",
+            "en": "vase",
+            "audio": "die Vase"
+          },
+          {
+            "ru": "das Bild",
+            "translit": "dahs BILT",
+            "pt": "picture",
+            "en": "picture",
+            "audio": "das Bild"
+          },
+          {
+            "ru": "das Sofa",
+            "translit": "dahs ZOH-fah",
+            "pt": "sofa, couch",
+            "en": "sofa",
+            "audio": "das Sofa"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "Stehen × stellen and liegen × legen, step by step",
+        "explicacao": "STEP 1: German has TWO verbs for each position: one says WHERE something IS (a state, Wo?) and the other says you PUT something there (movement, Wohin?). English has the same pair with lie/lay and sit/set — German just does it for \"stand\" too. STEP 2: stehen (to be standing) × stellen (to put something upright). STEP 3: liegen (to be lying) × legen (to lay something down) — exactly like English lie × lay. STEP 4: the STATE verb takes the DATIVE, the MOVEMENT verb takes the ACCUSATIVE: «Die Vase steht auf dem Tisch» (the vase is on the table) × «Ich stelle die Vase auf den Tisch» (I put the vase on the table). STEP 5: the forms: stehen – stand – gestanden; stellen – stellte – gestellt; liegen – lag – gelegen; legen – legte – gelegt. Note the pattern: the state verbs are strong, the \"putting\" verbs are regular. STEP 6: tall things or things that stand upright (bottle, vase, lamp, chair) use stehen/stellen; flat things or things lying down (book, newspaper, key) use liegen/legen.",
+        "comparacao": "English mostly says \"is\" and \"put\" for everything: \"the book is on the table\", \"I put the vase on the table\". German asks first: is it standing or lying? That choice picks the verb pair. Your best anchor is English lie/lay and sit/set — the same old Germanic pairs.",
+        "tabela": [
+          {
+            "estado": "stehen (Wo? dative)",
+            "movimento": "stellen (Wohin? accusative)",
+            "exemplo": "Die Lampe steht neben dem Sofa. / Ich stelle die Lampe neben das Sofa."
+          },
+          {
+            "estado": "liegen (Wo? dative)",
+            "movimento": "legen (Wohin? accusative)",
+            "exemplo": "Das Buch liegt auf dem Tisch. / Ich lege das Buch auf den Tisch."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich stehe die Vase auf den Tisch.",
+            "certo": "Ich stelle die Vase auf den Tisch.",
+            "motivo": "Movement (you put it there): «stellen»."
+          },
+          {
+            "errado": "Das Buch legt auf dem Tisch.",
+            "certo": "Das Buch liegt auf dem Tisch.",
+            "motivo": "State (it is lying there): «liegen»."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Describe 4 objects: where they are (steht / liegt) and where you put them (stelle / lege)."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write the nine two-way prepositions and the golden rule."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-030.json",
+  "responsavel": null
+}

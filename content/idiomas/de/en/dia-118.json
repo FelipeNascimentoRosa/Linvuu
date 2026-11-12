@@ -1,0 +1,140 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 118,
+  "fase": 12,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Verbs of position and the N-declension: Sitzen × setzen, hängen",
+  "objetivo": "Lesson 30, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 30,
+    "titulo": "Verbs of position and the N-declension",
+    "objetivo": "Use the position verbs (stehen/stellen, liegen/legen, sitzen/setzen, hängen) with Wo? and Wohin?, and the N-declension of weak masculine nouns (der Student → den Studenten).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Sitzen × setzen, hängen",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "sitzen",
+            "translit": "ZIT-sen",
+            "pt": "to sit (be sitting)",
+            "en": "to sit",
+            "audio": "sitzen"
+          },
+          {
+            "ru": "setzen",
+            "translit": "ZET-sen",
+            "pt": "to set, to seat (someone)",
+            "en": "to seat",
+            "audio": "setzen"
+          },
+          {
+            "ru": "hängen",
+            "translit": "HENG-en",
+            "pt": "to hang (be hanging / hang something)",
+            "en": "to hang",
+            "audio": "hängen"
+          },
+          {
+            "ru": "die Lehne",
+            "translit": "dee LAY-neh",
+            "pt": "backrest (of a chair)",
+            "en": "backrest",
+            "audio": "die Lehne"
+          },
+          {
+            "ru": "der Haken",
+            "translit": "dair HAH-ken",
+            "pt": "hook",
+            "en": "hook",
+            "audio": "der Haken"
+          },
+          {
+            "ru": "der Teppich",
+            "translit": "dair TEP-ikh",
+            "pt": "rug, carpet",
+            "en": "carpet",
+            "audio": "der Teppich"
+          },
+          {
+            "ru": "die Treppe",
+            "translit": "dee TREP-eh",
+            "pt": "stairs, staircase",
+            "en": "stairs",
+            "audio": "die Treppe"
+          },
+          {
+            "ru": "die Wand",
+            "translit": "dee VAHNT",
+            "pt": "wall",
+            "en": "wall",
+            "audio": "die Wand"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Sitzen × setzen and hängen, step by step",
+        "explicacao": "STEP 1: the same state/movement pair works for \"sitting\": sitzen (to be sitting, Wo?, dative) × setzen (to set, to seat someone, Wohin?, accusative) — like English sit × set: «Das Kind sitzt auf dem Stuhl» (the child is sitting on the chair) × «Ich setze das Kind auf den Stuhl» (I set the child on the chair). STEP 2: forms: sitzen – saß – gesessen (sat); setzen – setzte – gesetzt. STEP 3: «hängen» does both jobs, like English \"hang\": state («Die Jacke hängt an der Tür» — the jacket is hanging on the door) and movement («Ich hänge die Jacke an die Tür» — I hang the jacket on the door). In the state meaning it's strong (hängen – hing – gehangen, like hung); in the movement meaning it's regular (hängen – hängte – gehängt). STEP 4: summary: stehen/stellen (upright), liegen/legen (lying flat), sitzen/setzen (sitting), hängen (hanging).",
+        "tabela": [
+          {
+            "estado": "sitzen (Wo? dative)",
+            "movimento": "setzen (Wohin? accusative)",
+            "exemplo": "Das Kind sitzt auf dem Stuhl. / Ich setze das Kind auf den Stuhl."
+          },
+          {
+            "estado": "hängen (Wo? dative)",
+            "movimento": "hängen (Wohin? accusative)",
+            "exemplo": "Das Bild hängt an der Wand. / Ich hänge das Bild an die Wand."
+          },
+          {
+            "estado": "stehen",
+            "movimento": "stellen",
+            "exemplo": "Die Flasche steht auf dem Tisch. / Ich stelle die Flasche auf den Tisch."
+          },
+          {
+            "estado": "liegen",
+            "movimento": "legen",
+            "exemplo": "Der Schlüssel liegt neben dem Handy. / Ich lege den Schlüssel neben das Handy."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Das Kind setzt auf dem Stuhl.",
+            "certo": "Das Kind sitzt auf dem Stuhl.",
+            "motivo": "State: «sitzen»."
+          },
+          {
+            "errado": "Ich hänge das Bild an der Wand.",
+            "certo": "Ich hänge das Bild an die Wand.",
+            "motivo": "Movement: accusative."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Tidy up the living room out loud: «Ich stelle … Ich lege … Ich hänge … Ich setze …», then describe it: «… steht … liegt … hängt … sitzt …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write the four verbs of the pairs stehen/stellen and liegen/legen with their past forms."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-030.json",
+  "responsavel": null
+}

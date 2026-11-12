@@ -1,0 +1,172 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 119,
+  "fase": 12,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Verbs of position and the N-declension: The N-declension and dialogue",
+  "objetivo": "Lesson 30, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 30,
+    "titulo": "Verbs of position and the N-declension",
+    "objetivo": "Use the position verbs (stehen/stellen, liegen/legen, sitzen/setzen, hängen) with Wo? and Wohin?, and the N-declension of weak masculine nouns (der Student → den Studenten).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "The N-declension and dialogue",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "N-declension: the \"weak\" masculine nouns",
+        "explicacao": "A group of masculine nouns adds -n or -en in EVERY case except the nominative singular: der Student → den Studenten → dem Studenten → des Studenten. They are mostly male people and animals: der Junge (boy), der Kunde (customer), der Kollege (colleague), der Student, der Herr (gentleman, Mr.), der Mensch (human being), der Nachbar (neighbor), der Polizist (police officer), der Tourist, der Name, der Löwe (lion). Many end in -e or come from Latin/Greek with -ent, -ist, -ant. «Herr» adds only -n (den Herrn — on an envelope: «Herrn Müller»); «Name» adds -n in the accusative and dative and -ns in the genitive (des Namens). None of this applies to other masculine nouns.",
+        "tabela": [
+          {
+            "nominativo": "der Student",
+            "acusativo": "den Studenten",
+            "dativo": "dem Studenten",
+            "genitivo": "des Studenten"
+          },
+          {
+            "nominativo": "der Junge",
+            "acusativo": "den Jungen",
+            "dativo": "dem Jungen",
+            "genitivo": "des Jungen"
+          },
+          {
+            "nominativo": "der Kollege",
+            "acusativo": "den Kollegen",
+            "dativo": "dem Kollegen",
+            "genitivo": "des Kollegen"
+          },
+          {
+            "nominativo": "der Herr",
+            "acusativo": "den Herrn",
+            "dativo": "dem Herrn",
+            "genitivo": "des Herrn"
+          },
+          {
+            "nominativo": "der Mensch",
+            "acusativo": "den Menschen",
+            "dativo": "dem Menschen",
+            "genitivo": "des Menschen"
+          },
+          {
+            "nominativo": "der Name",
+            "acusativo": "den Namen",
+            "dativo": "dem Namen",
+            "genitivo": "des Namens"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich kenne den Student.",
+            "certo": "Ich kenne den Studenten.",
+            "motivo": "N-declension: -en outside the nominative."
+          },
+          {
+            "errado": "Ich helfe dem Kollege.",
+            "certo": "Ich helfe dem Kollegen.",
+            "motivo": "N-declension: -n in the dative."
+          }
+        ],
+        "tag": "Nouns"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 10,
+        "titulo": "In der Kantine / In the cafeteria",
+        "contexto": "Two colleagues have lunch together.",
+        "linhas": [
+          {
+            "personagem": "Lea",
+            "ru": "— Kennst du den Kollegen dort?",
+            "pt": "— Do you know that colleague over there?",
+            "audio": "Kennst du den Kollegen dort?",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Nein, ich kenne den Mann nicht. Wie heißt er?",
+            "pt": "— No, I don't know the man. What's his name?",
+            "audio": "Nein, ich kenne den Mann nicht. Wie heißt er?",
+            "rotulo": "Paul"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Er heißt Marco. Er ist Student und macht hier ein Praktikum.",
+            "pt": "— His name is Marco. He's a student and doing an internship here.",
+            "audio": "Er heißt Marco. Er ist Student und macht hier ein Praktikum.",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Ich helfe dem Studenten gern.",
+            "pt": "— I'll gladly help the student.",
+            "audio": "Ich helfe dem Studenten gern.",
+            "rotulo": "Paul"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Das ist nett. Gehen wir mit dem Kollegen in die Kantine?",
+            "pt": "— That's nice. Shall we go to the cafeteria with our colleague?",
+            "audio": "Das ist nett. Gehen wir mit dem Kollegen in die Kantine?",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Gute Idee! Wir gehen an den Tisch am Fenster.",
+            "pt": "— Good idea! Let's take the table by the window.",
+            "audio": "Gute Idee! Wir gehen an den Tisch am Fenster.",
+            "rotulo": "Paul"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Ich stelle meine Tasche auf den Stuhl.",
+            "pt": "— I'll put my bag on the chair.",
+            "audio": "Ich stelle meine Tasche auf den Stuhl.",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Und ich lege meine Jacke über die Lehne.",
+            "pt": "— And I'll put my jacket over the back of the chair.",
+            "audio": "Und ich lege meine Jacke über die Lehne.",
+            "rotulo": "Paul"
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Wo ist die Speisekarte? Sie liegt auf dem Tisch.",
+            "pt": "— Where's the menu? It's on the table.",
+            "audio": "Wo ist die Speisekarte? Sie liegt auf dem Tisch.",
+            "rotulo": "Lea"
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Ja, hier liegt sie. Guten Appetit!",
+            "pt": "— Yes, here it is. Enjoy your meal!",
+            "audio": "Ja, hier liegt sie. Guten Appetit!",
+            "rotulo": "Paul"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say: «Ich kenne den Studenten. Ich helfe dem Kollegen. Das ist das Buch des Jungen.»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write the four pairs of position verbs with one state sentence and one movement sentence each."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-030.json",
+  "responsavel": null
+}

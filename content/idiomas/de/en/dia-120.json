@@ -1,0 +1,556 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 120,
+  "fase": 12,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Verbs of position and the N-declension: Practice",
+  "objetivo": "Lesson 30, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 30,
+    "titulo": "Verbs of position and the N-declension",
+    "objetivo": "Use the position verbs (stehen/stellen, liegen/legen, sitzen/setzen, hängen) with Wo? and Wohin?, and the N-declension of weak masculine nouns (der Student → den Studenten).",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Practice",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Die Lampe ___ neben dem Sofa. (is standing)",
+            "opcoes": [
+              "steht",
+              "stellt",
+              "legt"
+            ],
+            "gabarito": "steht",
+            "explicacao": "state: stehen.",
+            "id": "de-030-e01"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"No, I don't know the man. What's his name?\"",
+            "opcoes": [
+              "Nein,",
+              "Mann",
+              "den",
+              "kenne",
+              "Wie",
+              "er?",
+              "heißt",
+              "ich",
+              "nicht."
+            ],
+            "gabarito": "Nein, ich kenne den Mann nicht. Wie heißt er?",
+            "explicacao": "Write: Nein, ich kenne den Mann nicht. Wie heißt er?",
+            "id": "de-030-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich ___ die Lampe neben das Sofa. (put upright)",
+            "opcoes": [
+              "stelle",
+              "stehe",
+              "liege"
+            ],
+            "gabarito": "stelle",
+            "explicacao": "movement: stellen.",
+            "id": "de-030-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Nein, ich kenne den Mann nicht. Wie heißt er?",
+            "respostaEsperada": "Nein, ich kenne den Mann nicht. Wie heißt er?",
+            "explicacao": "No, I don't know the man. What's his name?",
+            "id": "de-030-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Das Buch ___ auf dem Tisch. (is lying)",
+            "opcoes": [
+              "liegt",
+              "legt",
+              "steht"
+            ],
+            "gabarito": "liegt",
+            "explicacao": "state: liegen.",
+            "id": "de-030-e03"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"His name is Marco. He's a student and doing an internship here.\"",
+            "opcoes": [
+              "Student",
+              "Er",
+              "ein",
+              "macht",
+              "und",
+              "Marco.",
+              "Praktikum.",
+              "ist",
+              "Er",
+              "heißt",
+              "hier"
+            ],
+            "gabarito": "Er heißt Marco. Er ist Student und macht hier ein Praktikum.",
+            "explicacao": "Write: Er heißt Marco. Er ist Student und macht hier ein Praktikum.",
+            "id": "de-030-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Kennst du den Kollegen dort?",
+            "respostaEsperada": "Kennst du den Kollegen dort?",
+            "explicacao": "Do you know that colleague over there?",
+            "id": "de-030-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Er heißt Marco. Er ist Student und macht hier ein Praktikum.",
+            "respostaEsperada": "Er heißt Marco. Er ist Student und macht hier ein Praktikum.",
+            "explicacao": "His name is Marco. He's a student and doing an internship here.",
+            "id": "de-030-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich ___ das Buch auf den Tisch. (lay down)",
+            "opcoes": [
+              "lege",
+              "liege",
+              "stelle"
+            ],
+            "gabarito": "lege",
+            "explicacao": "movement: legen.",
+            "id": "de-030-e04"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"That's nice. Shall we go to the cafeteria with our colleague?\"",
+            "opcoes": [
+              "mit",
+              "in",
+              "Kantine?",
+              "Kollegen",
+              "nett.",
+              "Das",
+              "Gehen",
+              "wir",
+              "dem",
+              "ist",
+              "die"
+            ],
+            "gabarito": "Das ist nett. Gehen wir mit dem Kollegen in die Kantine?",
+            "explicacao": "Write: Das ist nett. Gehen wir mit dem Kollegen in die Kantine?",
+            "id": "de-030-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Das Kind ___ auf dem Stuhl. (is sitting)",
+            "opcoes": [
+              "sitzt",
+              "setzt",
+              "steht"
+            ],
+            "gabarito": "sitzt",
+            "explicacao": "state: sitzen.",
+            "id": "de-030-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Das ist nett. Gehen wir mit dem Kollegen in die Kantine?",
+            "respostaEsperada": "Das ist nett. Gehen wir mit dem Kollegen in die Kantine?",
+            "explicacao": "That's nice. Shall we go to the cafeteria with our colleague?",
+            "id": "de-030-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich ___ das Kind auf den Stuhl. (set, seat)",
+            "opcoes": [
+              "setze",
+              "sitze",
+              "stehe"
+            ],
+            "gabarito": "setze",
+            "explicacao": "movement: setzen.",
+            "id": "de-030-e06"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Good idea! Let's take the table by the window.\"",
+            "opcoes": [
+              "am",
+              "an",
+              "gehen",
+              "Fenster.",
+              "Idee!",
+              "den",
+              "Tisch",
+              "Wir",
+              "Gute"
+            ],
+            "gabarito": "Gute Idee! Wir gehen an den Tisch am Fenster.",
+            "explicacao": "Write: Gute Idee! Wir gehen an den Tisch am Fenster.",
+            "id": "de-030-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Ich helfe dem Studenten gern.",
+            "respostaEsperada": "Ich helfe dem Studenten gern.",
+            "explicacao": "I'll gladly help the student.",
+            "id": "de-030-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Gute Idee! Wir gehen an den Tisch am Fenster.",
+            "respostaEsperada": "Gute Idee! Wir gehen an den Tisch am Fenster.",
+            "explicacao": "Good idea! Let's take the table by the window.",
+            "id": "de-030-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Das Bild hängt an ___ Wand. (Wo?)",
+            "opcoes": [
+              "der",
+              "die",
+              "dem"
+            ],
+            "gabarito": "der",
+            "explicacao": "Wo? feminine dative.",
+            "id": "de-030-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"And I'll put my jacket over the back of the chair.\"",
+            "opcoes": [
+              "Jacke",
+              "Und",
+              "meine",
+              "Lehne.",
+              "über",
+              "die",
+              "ich",
+              "lege"
+            ],
+            "gabarito": "Und ich lege meine Jacke über die Lehne.",
+            "explicacao": "Write: Und ich lege meine Jacke über die Lehne.",
+            "id": "de-030-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich hänge das Bild an ___ Wand. (Wohin?)",
+            "opcoes": [
+              "die",
+              "der",
+              "den"
+            ],
+            "gabarito": "die",
+            "explicacao": "Wohin? feminine accusative.",
+            "id": "de-030-e08"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Und ich lege meine Jacke über die Lehne.",
+            "respostaEsperada": "Und ich lege meine Jacke über die Lehne.",
+            "explicacao": "And I'll put my jacket over the back of the chair.",
+            "id": "de-030-x10",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: \"Yes, here it is. Enjoy your meal!\"",
+            "opcoes": [
+              "Appetit!",
+              "sie.",
+              "Ja,",
+              "liegt",
+              "hier",
+              "Guten"
+            ],
+            "gabarito": "Ja, hier liegt sie. Guten Appetit!",
+            "explicacao": "Write: Ja, hier liegt sie. Guten Appetit!",
+            "id": "de-030-x11",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich kenne den ___. (student)",
+            "opcoes": [
+              "Studenten",
+              "Student",
+              "Studente"
+            ],
+            "gabarito": "Studenten",
+            "explicacao": "N-declension.",
+            "id": "de-030-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ja, hier liegt sie. Guten Appetit!",
+            "respostaEsperada": "Ja, hier liegt sie. Guten Appetit!",
+            "explicacao": "Yes, here it is. Enjoy your meal!",
+            "id": "de-030-x12",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich helfe dem ___. (colleague)",
+            "opcoes": [
+              "Kollegen",
+              "Kollege",
+              "Kollegem"
+            ],
+            "gabarito": "Kollegen",
+            "explicacao": "N-declension.",
+            "id": "de-030-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «die Lehne» mean?",
+            "audio": "die Lehne",
+            "opcoes": [
+              "stairs, staircase",
+              "backrest (of a chair)",
+              "to sit (be sitting)",
+              "picture"
+            ],
+            "gabarito": "backrest (of a chair)",
+            "explicacao": "«die Lehne» = backrest.",
+            "id": "de-030-x13",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Ich stelle meine Tasche auf den Stuhl.",
+            "respostaEsperada": "Ich stelle meine Tasche auf den Stuhl.",
+            "explicacao": "I'll put my bag on the chair.",
+            "id": "de-030-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «das Regal» mean?",
+            "audio": "das Regal",
+            "opcoes": [
+              "shelf, bookcase",
+              "vase",
+              "sofa, couch",
+              "hook"
+            ],
+            "gabarito": "shelf, bookcase",
+            "explicacao": "«das Regal» = shelf, bookcase.",
+            "id": "de-030-x14",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "STATE verbs (stehen, liegen, sitzen) take:",
+            "opcoes": [
+              "dative",
+              "accusative",
+              "genitive"
+            ],
+            "gabarito": "dative",
+            "explicacao": "No movement.",
+            "id": "de-030-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «liegen» mean?",
+            "audio": "liegen",
+            "opcoes": [
+              "to lay, to put down flat",
+              "hook",
+              "to lie (be lying flat)",
+              "sofa, couch"
+            ],
+            "gabarito": "to lie (be lying flat)",
+            "explicacao": "«liegen» = to be lying (flat).",
+            "id": "de-030-x15",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "MOVEMENT verbs (stellen, legen, setzen) take:",
+            "opcoes": [
+              "accusative",
+              "dative",
+              "genitive"
+            ],
+            "gabarito": "accusative",
+            "explicacao": "You put something somewhere.",
+            "id": "de-030-e12"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «der Teppich» mean?",
+            "audio": "der Teppich",
+            "opcoes": [
+              "stairs, staircase",
+              "backrest (of a chair)",
+              "rug, carpet",
+              "vase"
+            ],
+            "gabarito": "rug, carpet",
+            "explicacao": "«der Teppich» = rug, carpet.",
+            "id": "de-030-x16",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: \"I put the book on the table.\"",
+            "opcoes": [
+              "Ich",
+              "lege",
+              "das",
+              "Buch",
+              "auf",
+              "den",
+              "Tisch"
+            ],
+            "gabarito": "Ich lege das Buch auf den Tisch.",
+            "explicacao": "Wohin? accusative.",
+            "id": "de-030-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «die Vase» mean?",
+            "audio": "die Vase",
+            "opcoes": [
+              "shelf, bookcase",
+              "vase",
+              "backrest (of a chair)",
+              "to lie (be lying flat)"
+            ],
+            "gabarito": "vase",
+            "explicacao": "«die Vase» = vase.",
+            "id": "de-030-x17",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, then show the answer.",
+            "audio": "Wo ist die Speisekarte? Sie liegt auf dem Tisch.",
+            "respostaEsperada": "Wo ist die Speisekarte? Sie liegt auf dem Tisch.",
+            "explicacao": "Where's the menu? It's on the table.",
+            "id": "de-030-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «sitzen» mean?",
+            "audio": "sitzen",
+            "opcoes": [
+              "to lie (be lying flat)",
+              "to sit (be sitting)",
+              "wall",
+              "stairs, staircase"
+            ],
+            "gabarito": "to sit (be sitting)",
+            "explicacao": "«sitzen» = to be sitting.",
+            "id": "de-030-x18",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Die Jacke hängt an der Tür",
+            "opcoes": [
+              "Die Jacke hängt an der Tür",
+              "Ich hänge die Jacke an die Tür",
+              "Die Jacke liegt auf dem Stuhl"
+            ],
+            "gabarito": "Die Jacke hängt an der Tür",
+            "explicacao": "Wo? dative.",
+            "id": "de-030-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Die Jacke hängt an der Tür",
+            "opcoes": [
+              "der",
+              "Jacke",
+              "hängt",
+              "Die",
+              "an",
+              "Tür"
+            ],
+            "gabarito": "Die Jacke hängt an der Tür",
+            "explicacao": "Write: Die Jacke hängt an der Tür",
+            "id": "de-030-x19",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ich helfe dem Studenten",
+            "respostaEsperada": "Ich helfe dem Studenten",
+            "explicacao": "N-declension in the dative.",
+            "id": "de-030-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Listen and build the sentence.",
+            "audio": "Ich helfe dem Studenten",
+            "opcoes": [
+              "dem",
+              "helfe",
+              "Studenten",
+              "Ich"
+            ],
+            "gabarito": "Ich helfe dem Studenten",
+            "explicacao": "Write: Ich helfe dem Studenten",
+            "id": "de-030-x20",
+            "complemento": true
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write 5 sentences: one with stehen, one with stellen, one with liegen, one with legen, and one with «Studenten» or «Kollegen».",
+            "respostaEsperada": "Die Vase steht auf dem Tisch. Ich stelle die Vase auf den Tisch. Das Buch liegt auf dem Sofa. Ich lege das Buch auf das Sofa. Ich helfe dem Studenten.",
+            "id": "de-030-e16"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Record yourself describing your home with the position verbs."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 sentences: two with each pair of position verbs and two with the N-declension."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-030.json",
+  "responsavel": null
+}
