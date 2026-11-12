@@ -1,0 +1,140 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 218,
+  "fase": 22,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "The infinitive with zu: When zu is not used",
+  "objetivo": "Lesson 55, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 55,
+    "titulo": "The infinitive with zu",
+    "objetivo": "Use the infinitive with «zu» after verbs, adjectives and expressions, with the position of «zu» in separable verbs, and recognize the verbs that don't take «zu».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "When zu is not used",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "bleiben",
+            "translit": "BLY-ben",
+            "pt": "to stay",
+            "en": "to stay",
+            "audio": "bleiben"
+          },
+          {
+            "ru": "gehen",
+            "translit": "GAY-en",
+            "pt": "to go",
+            "en": "to go",
+            "audio": "gehen"
+          },
+          {
+            "ru": "lassen",
+            "translit": "LAHSS-en",
+            "pt": "to let; to have (something) done",
+            "en": "to let",
+            "audio": "lassen"
+          },
+          {
+            "ru": "sehen",
+            "translit": "ZAY-en",
+            "pt": "to see",
+            "en": "to see",
+            "audio": "sehen"
+          },
+          {
+            "ru": "hören",
+            "translit": "HÖR-en",
+            "pt": "to hear",
+            "en": "to hear",
+            "audio": "hören"
+          },
+          {
+            "ru": "helfen",
+            "translit": "HEL-fen",
+            "pt": "to help",
+            "en": "to help",
+            "audio": "helfen"
+          },
+          {
+            "ru": "lernen",
+            "translit": "LAIR-nen",
+            "pt": "to learn",
+            "en": "to learn",
+            "audio": "lernen"
+          },
+          {
+            "ru": "schwimmen",
+            "translit": "SHVIM-en",
+            "pt": "to swim",
+            "en": "to swim",
+            "audio": "schwimmen"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "The infinitive without zu, step by step",
+        "explicacao": "STEP 1: the MODALS don't take «zu»: «Ich kann schwimmen», «Ich muss arbeiten». STEP 2: neither does «werden» (Futur I): «Ich werde kommen.» STEP 3: verbs of going and staying, without «zu» — English uses \"-ing\" here: «Ich gehe schwimmen» (I'm going swimming), «Ich bleibe sitzen» (I stay seated), «Wir fahren einkaufen» (we're going shopping). STEP 4: «lassen» (to have something done, to let), «sehen» and «hören» (to see/hear an action): «Ich lasse das Auto reparieren» (I'm having the car repaired), «Ich sehe ihn kommen» (I see him coming), «Ich höre sie singen» (I hear her singing). STEP 5: «helfen» and «lernen» usually go without «zu» with a short infinitive: «Ich helfe dir kochen», «Ich lerne schwimmen». STEP 6: if in DOUBT, check the list: modal, werden, lassen, gehen, bleiben, sehen, hören → no «zu»; anfangen, versuchen, vergessen, hoffen → «zu».",
+        "tabela": [
+          {
+            "verbo": "modals",
+            "frase": "Ich kann schwimmen. Ich muss arbeiten."
+          },
+          {
+            "verbo": "werden",
+            "frase": "Ich werde kommen."
+          },
+          {
+            "verbo": "gehen / bleiben / fahren",
+            "frase": "Ich gehe schwimmen. Wir fahren einkaufen."
+          },
+          {
+            "verbo": "lassen",
+            "frase": "Ich lasse das Auto reparieren."
+          },
+          {
+            "verbo": "sehen / hören",
+            "frase": "Ich sehe ihn kommen. Ich höre sie singen."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich gehe zu schwimmen.",
+            "certo": "Ich gehe schwimmen.",
+            "motivo": "«gehen» + infinitive, no «zu» (English: going swimming)."
+          },
+          {
+            "errado": "Ich lasse das Auto zu reparieren.",
+            "certo": "Ich lasse das Auto reparieren.",
+            "motivo": "«lassen» doesn't take «zu»."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say 6 sentences without «zu»: «Ich gehe schwimmen. Ich lasse … Ich sehe … Ich höre …»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Write 6 sentences with the infinitive with zu, two with separable verbs."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-055.json",
+  "responsavel": null
+}
