@@ -26,7 +26,7 @@ Medido no repositório em 11/11/2026 (`ls content/idiomas/<id>/en`). Confira ant
 | Russo `ru` | 312/312 | completo, indexável | travado (curado à mão) |
 | Francês `fr` | 248/248 | completo, indexável | travado (curado à mão) |
 | Português p/ estrangeiros `br` | 248/248 (escrito em inglês) | completo, indexável | travado |
-| Espanhol `es` | 124/248 (+4 no PR #592) | parcial: nota de cobertura, fora do sitemap | travado o que existe |
+| Espanhol `es` | 128/248 | parcial: nota de cobertura, fora do sitemap | travado o que existe |
 | Alemão `de` | 4/288 | parcial: nota de cobertura, fora do sitemap | travado o que existe |
 | Italiano `it` | 0/248 | parcial: nota de cobertura, fora do sitemap | — |
 
@@ -61,7 +61,8 @@ Fontes permitidas: FSI/DLI/Peace Corps (domínio público) como base; Wikibooks 
 | 11/11 | Etiquetas internas `[misto]/[pronuncia]` retiradas das 120 sessões es/en + guarda | #588 | mergeado |
 | 11/11 | Piloto I5: espanhol aula 31 em inglês (sessões 121–124) | #589 | mergeado |
 | 11/11 | Guarda: ru/en e fr/en curados nunca regenerados por mapa | #590 | mergeado |
-| 11/11 | Este arquivo + trava `travas-en.json` (936 arquivos) no CI e no build | este PR | aberto |
+| 11/11 | Este arquivo + trava `travas-en.json` no CI e no build | #591 | mergeado |
+| 11/11 | Espanhol aula 32 em inglês (relativos; sessões 125–128) | #592 | mergeado |
 
 ## 6. O que falta no .com (ordem por impacto real)
 
