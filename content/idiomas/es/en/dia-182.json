@@ -1,0 +1,177 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 182,
+  "fase": 19,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Imperfect subjunctive: When to use it: requests, doubts, wishes and politeness",
+  "objetivo": "Lesson 46, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 46,
+    "titulo": "Imperfect subjunctive",
+    "objetivo": "Form the imperfecto de subjuntivo (-ra and -se, regular and irregular) from the pretérito indefinido, use it when the main verb is in the past («Quería que vinieras»), with «ojalá», «como si» and in polite requests («quisiera»), and with «para que», «antes de que», «sin que» and relative clauses.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "When to use it: requests, doubts, wishes and politeness",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "aconsejar que",
+            "translit": "",
+            "pt": "to advise (someone) to",
+            "en": "",
+            "audio": "aconsejar que"
+          },
+          {
+            "ru": "recomendar que",
+            "translit": "",
+            "pt": "to recommend that",
+            "en": "",
+            "audio": "recomendar que"
+          },
+          {
+            "ru": "prohibir que",
+            "translit": "",
+            "pt": "to forbid (someone) to",
+            "en": "",
+            "audio": "prohibir que"
+          },
+          {
+            "ru": "permitir que",
+            "translit": "",
+            "pt": "to allow (someone) to",
+            "en": "",
+            "audio": "permitir que"
+          },
+          {
+            "ru": "exigir que",
+            "translit": "",
+            "pt": "to demand that",
+            "en": "",
+            "audio": "exigir que"
+          },
+          {
+            "ru": "sugerir que",
+            "translit": "",
+            "pt": "to suggest that",
+            "en": "",
+            "audio": "sugerir que"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "When the main verb is in the past",
+        "explicacao": "STEP 1: the agreement rule is simple. A main verb in the present (or future) takes the present subjunctive; a main verb in the past takes the imperfecto de subjuntivo. «Me pide que espere» (She asks me to wait) becomes «Me pidió que esperara» (She asked me to wait). STEP 2: this works for the same ideas you saw in the present: requests and advice («pedir, aconsejar, recomendar, permitir, prohibir»), wishes («querer, esperar»), doubt and denial («dudar, no creer»), emotion («me alegró que, me sorprendió que») and judgement («era importante que, era mejor que»). STEP 3: with the pretérito perfecto («he pedido», «ha dicho») you're still thinking in the present, so you use the present subjunctive: «Me ha pedido que vaya». With the indefinido and the imperfecto, use the imperfecto de subjuntivo. STEP 4: «ojalá» with the imperfecto de subjuntivo expresses a difficult or unreal wish about now — exactly like English \"I wish\" + past: «Ojalá tuviera más tiempo» (I wish I HAD more time — but I don't). With the present, the wish is possible: «Ojalá tengas suerte» (I hope you're lucky). STEP 5: «como si» (as if) always takes the imperfecto de subjuntivo when it compares with something unreal — English \"as if he WERE\": «Habla como si fuera mi jefe» (but he isn't). STEP 6: in polite requests, «quisiera» is softer than «quiero», like English \"I would like\": «Quisiera reservar una mesa». You've used it since lesson 29; now you know where it comes from: it's the imperfecto de subjuntivo of «querer». STEP 7: with «dudar» and «no creer» in the past, the subjunctive stays: «No creía que fuera verdad» (I didn't think it was true). «Creía que era verdad» (an affirmation) takes the indicative.",
+        "comparacao": "English uses the past for unreal wishes and comparisons: \"I wish I HAD more time\", \"He talks as if he WERE the boss\". Spanish does the same with the past subjunctive: «Ojalá tuviera más tiempo», «Habla como si fuera el jefe». And English \"She asked me TO WAIT\" becomes «Me pidió que ESPERARA».",
+        "exemplos": [
+          {
+            "ru": "Mi jefa me aconsejó que pidiera vacaciones.",
+            "pt": "My boss advised me to ask for some time off."
+          },
+          {
+            "ru": "No creía que la película fuera tan larga.",
+            "pt": "I didn't think the film would be so long."
+          },
+          {
+            "ru": "Ojalá hiciera menos calor.",
+            "pt": "I wish it weren't so hot."
+          },
+          {
+            "ru": "Habla español como si fuera de Madrid.",
+            "pt": "He speaks Spanish as if he were from Madrid."
+          }
+        ],
+        "tabelas": [
+          {
+            "titulo": "Present × past: the tense of the main verb decides",
+            "linhas": [
+              {
+                "presente": "Quiero que vengas.",
+                "passado": "Quería que vinieras."
+              },
+              {
+                "presente": "Me pide que espere.",
+                "passado": "Me pidió que esperara."
+              },
+              {
+                "presente": "Es importante que estudies.",
+                "passado": "Era importante que estudiaras."
+              },
+              {
+                "presente": "Dudo que tenga tiempo.",
+                "passado": "Dudaba que tuviera tiempo."
+              },
+              {
+                "presente": "Me alegra que vengas.",
+                "passado": "Me alegró que vinieras."
+              }
+            ]
+          },
+          {
+            "titulo": "Other uses of the imperfecto de subjuntivo",
+            "linhas": [
+              {
+                "uso": "ojalá + imperfecto (an unreal wish about now)",
+                "exemplo": "Ojalá viviera cerca del mar."
+              },
+              {
+                "uso": "como si + imperfecto (an unreal comparison)",
+                "exemplo": "Me mira como si no me conociera."
+              },
+              {
+                "uso": "quisiera (polite request)",
+                "exemplo": "Quisiera pedir la cuenta, por favor."
+              }
+            ]
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Me pidió que le ayudo.",
+            "certo": "Me pidió que le ayudara.",
+            "motivo": "A request in the past calls for the subjunctive, also in the past."
+          },
+          {
+            "errado": "Habla como si es el jefe.",
+            "certo": "Habla como si fuera el jefe.",
+            "motivo": "«Como si» takes the imperfecto de subjuntivo, never the present indicative (English \"as if he WERE\")."
+          },
+          {
+            "errado": "No creía que es verdad.",
+            "certo": "No creía que fuera verdad.",
+            "motivo": "After «no creer que», the subjunctive stays, even in the past."
+          },
+          {
+            "errado": "Ojalá tengo más tiempo.",
+            "certo": "Ojalá tuviera más tiempo.",
+            "motivo": "«Ojalá» always takes the subjunctive, never the indicative."
+          }
+        ],
+        "tag": "Subjunctive"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Answer out loud with the imperfecto de subjuntivo: «¿Qué te pidió tu jefe o tu profesor la última vez?», «¿Qué te aconsejaron tus amigos?», «¿Qué te gustaría que fuera diferente en tu vida?», with «Ojalá…». Then ask for something with «Quisiera…» in an imaginary restaurant."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Without looking, say the imperfecto de subjuntivo of «tener», «hacer», «ir», «venir» and «decir» in the «yo» form. Then in the «nosotros» form."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-046.json",
+  "responsavel": null
+}

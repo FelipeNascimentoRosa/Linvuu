@@ -1,0 +1,194 @@
+{
+  "idioma": "es",
+  "explicacao": "en",
+  "dia": 183,
+  "fase": 19,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Imperfect subjunctive: Conjunctions and relative clauses in the past",
+  "objetivo": "Lesson 46, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 46,
+    "titulo": "Imperfect subjunctive",
+    "objetivo": "Form the imperfecto de subjuntivo (-ra and -se, regular and irregular) from the pretérito indefinido, use it when the main verb is in the past («Quería que vinieras»), with «ojalá», «como si» and in polite requests («quisiera»), and with «para que», «antes de que», «sin que» and relative clauses.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Conjunctions and relative clauses in the past",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "para que",
+            "translit": "",
+            "pt": "so that",
+            "en": "",
+            "audio": "para que"
+          },
+          {
+            "ru": "antes de que",
+            "translit": "",
+            "pt": "before",
+            "en": "",
+            "audio": "antes de que"
+          },
+          {
+            "ru": "sin que",
+            "translit": "",
+            "pt": "without",
+            "en": "",
+            "audio": "sin que"
+          },
+          {
+            "ru": "en caso de que",
+            "translit": "",
+            "pt": "in case",
+            "en": "",
+            "audio": "en caso de que"
+          },
+          {
+            "ru": "a menos que",
+            "translit": "",
+            "pt": "unless",
+            "en": "",
+            "audio": "a menos que"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Para que, antes de que, sin que and relative clauses",
+        "explicacao": "STEP 1: the conjunctions from lesson 44 («para que», «antes de que», «sin que») take the subjunctive. If the main verb is in the past, the subjunctive moves to the imperfecto: «Te llamé para que vinieras» (I called you so that you would come). English \"so that you WOULD come\" — but never «vendrías» here. STEP 2: «antes de que» always takes the subjunctive, even in the past: «Salimos antes de que lloviera» (We left before it rained). STEP 3: «sin que» is only used when the subjects are different: «Se fue sin que nadie lo viera» (He left without anyone seeing him). With the same subject, use «sin» + infinitive: «Se fue sin despedirse» (without saying goodbye). STEP 4: when what you're looking for is unknown or may not exist, the relative clause takes the subjunctive: «Buscaba un piso que tuviera terraza» (I was looking for a flat that had a terrace — any flat, if one existed). If the flat is a specific one, use the indicative: «Encontré un piso que tenía terraza». STEP 5: «cuando» for a past habit takes the indicative: «Cuando era niño, jugaba en la calle». The subjunctive only appears for something that hadn't happened yet from the point of view of the past: «Dijo que me llamaría cuando llegara» (He said he'd call me when he arrived).",
+        "comparacao": "English \"I called you so that you WOULD come\", \"We left before it RAINED\", \"I was looking for a flat that HAD a terrace\" use the past or \"would\"; Spanish uses the past subjunctive in all three: «para que vinieras», «antes de que lloviera», «un piso que tuviera terraza».",
+        "tabela": [
+          {
+            "conjuncao": "so that",
+            "exemplo": "Te llamé para que vinieras."
+          },
+          {
+            "conjuncao": "antes de que",
+            "exemplo": "Llegamos antes de que empezara la película."
+          },
+          {
+            "conjuncao": "sin que",
+            "exemplo": "Salió sin que nadie lo oyera."
+          },
+          {
+            "conjuncao": "en caso de que",
+            "exemplo": "Llevé un paraguas por si llovía / en caso de que lloviera."
+          },
+          {
+            "conjuncao": "unless",
+            "exemplo": "No iríamos a menos que nos invitaran."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Te llamé para que vienes.",
+            "certo": "Te llamé para que vinieras.",
+            "motivo": "«Para que» takes the subjunctive, and the main verb is in the past."
+          },
+          {
+            "errado": "Salí antes de que llegó.",
+            "certo": "Salí antes de que llegara.",
+            "motivo": "«Antes de que» always takes the subjunctive."
+          },
+          {
+            "errado": "Buscaba un piso que tiene terraza.",
+            "certo": "Buscaba un piso que tuviera terraza.",
+            "motivo": "When the flat is unknown, use the subjunctive."
+          },
+          {
+            "errado": "Se fue sin que despedirse.",
+            "certo": "Se fue sin despedirse.",
+            "motivo": "With the same subject, use «sin» + infinitive, without «que»."
+          }
+        ],
+        "tag": "Subjunctive"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "Una fiesta sorpresa / A surprise party",
+        "contexto": "Elena and Javier talk about a friend's surprise party and what nearly went wrong.",
+        "linhas": [
+          {
+            "personagem": "Elena",
+            "ru": "— ¿Qué tal salió la fiesta sorpresa de Marta?",
+            "pt": "— How did Marta's surprise party go?",
+            "audio": "¿Qué tal salió la fiesta sorpresa de Marta?",
+            "rotulo": "Elena"
+          },
+          {
+            "personagem": "Javier",
+            "ru": "— Muy bien, aunque casi la estropeamos. Su hermano le pidió que viniera a casa a las ocho y ella sospechó algo.",
+            "pt": "— Really well, though we nearly ruined everything. Her brother asked her to come home at eight and she suspected something.",
+            "audio": "Muy bien, aunque casi la estropeamos. Su hermano le pidió que viniera a casa a las ocho y ella sospechó algo.",
+            "rotulo": "Javier"
+          },
+          {
+            "personagem": "Elena",
+            "ru": "— ¿Por qué? Yo les dije a todos que no hablaran del tema en el grupo.",
+            "pt": "— Why? I told everyone not to talk about it in the group chat.",
+            "audio": "¿Por qué? Yo les dije a todos que no hablaran del tema en el grupo.",
+            "rotulo": "Elena"
+          },
+          {
+            "personagem": "Javier",
+            "ru": "— Ya, pero Sergio escribió un mensaje antes de que pudiéramos borrarlo. Marta quería que le contáramos qué pasaba.",
+            "pt": "— I know, but Sergio wrote a message before we could delete it. Marta wanted us to tell her what was going on.",
+            "audio": "Ya, pero Sergio escribió un mensaje antes de que pudiéramos borrarlo. Marta quería que le contáramos qué pasaba.",
+            "rotulo": "Javier"
+          },
+          {
+            "personagem": "Elena",
+            "ru": "— ¿Y qué le dijisteis?",
+            "pt": "— And what did you tell her?",
+            "audio": "¿Y qué le dijisteis?",
+            "rotulo": "Elena"
+          },
+          {
+            "personagem": "Javier",
+            "ru": "— Que no pasaba nada. Le pedí que se sentara y le dimos la tarta antes de que preguntara nada más.",
+            "pt": "— That nothing was going on. I asked her to sit down and we brought out the cake before she could ask anything else.",
+            "audio": "Que no pasaba nada. Le pedí que se sentara y le dimos la tarta antes de que preguntara nada más.",
+            "rotulo": "Javier"
+          },
+          {
+            "personagem": "Elena",
+            "ru": "— Me alegré mucho de que al final fuera una sorpresa de verdad. Ojalá pudiera ir a todas las fiestas así, pero trabajo casi todos los sábados.",
+            "pt": "— I was so glad it was a real surprise in the end. I wish I could go to every party like that, but I work almost every Saturday.",
+            "audio": "Me alegré mucho de que al final fuera una sorpresa de verdad. Ojalá pudiera ir a todas las fiestas así, pero trabajo casi todos los sábados.",
+            "rotulo": "Elena"
+          },
+          {
+            "personagem": "Javier",
+            "ru": "— Marta dijo que era la mejor fiesta de su vida y nos pidió que la repitiéramos el año que viene.",
+            "pt": "— Marta said it was the best party of her life and asked us to do it again next year.",
+            "audio": "Marta dijo que era la mejor fiesta de su vida y nos pidió que la repitiéramos el año que viene.",
+            "rotulo": "Javier"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Tell out loud about a time someone asked you to do something: «Una vez, mi amigo me pidió que…», «Yo le dije que…», «Esperaba que…»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Complete out loud: «Mi madre quería que yo…», «El profesor pidió que nosotros…», «Dudaba que ellos…», «Ojalá yo…»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/es/aulas/aula-046.json",
+  "responsavel": null
+}
