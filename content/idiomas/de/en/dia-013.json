@@ -1,0 +1,244 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 13,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Present tense verbs and word order: The regular present",
+  "objetivo": "Lesson 4, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 4,
+    "titulo": "Present tense verbs and word order",
+    "objetivo": "Conjugate regular verbs in the present, put the verb in second position, and ask simple questions and make negatives.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "The regular present",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Lesson goal. By the end of the four sessions, you build statements with the verb always in the right place — even when the sentence starts with heute, jetzt or hier."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Plans for the evening",
+        "contexto": "Tom and Camila plan the evening in the hostel kitchen.",
+        "linhas": [
+          {
+            "personagem": "Tom",
+            "ru": "— Heute koche ich. Du kochst morgen.",
+            "pt": "— Today I'm cooking. You cook tomorrow.",
+            "audio": "Heute koche ich. Du kochst morgen.",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Gern! Jetzt lerne ich noch Deutsch.",
+            "pt": "— Gladly! Right now I'm still studying German.",
+            "audio": "Gern! Jetzt lerne ich noch Deutsch.",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Dann trinken wir später Tee.",
+            "pt": "— Then we'll have tea later.",
+            "audio": "Dann trinken wir später Tee.",
+            "rotulo": "Tom"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ja, gern. Hier trinkt man abends oft Tee, oder?",
+            "pt": "— Yes, gladly. People here often drink tea in the evening, right?",
+            "audio": "Ja, gern. Hier trinkt man abends oft Tee, oder?",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Ja, in Irland auch!",
+            "pt": "— Yes, in Ireland too!",
+            "audio": "Ja, in Irland auch!",
+            "rotulo": "Tom"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "The English speaker's trap",
+        "explicacao": "STEP 1: count the positions. One block, then the verb. Always in that order.",
+        "comparacao": "In English, the subject sticks to the verb: \"Today I live in Munich.\" Copy that into German and you get Heute ich wohne in München, which is wrong. In German, the verb never leaves second position. When anything other than the subject opens the sentence, the subject moves to after the verb: Heute wohne ich in München — literally \"Today live I in Munich\". English still does this in a few fixed phrases (\"Here comes the bus\", \"Never have I seen…\"); German does it all the time.",
+        "tabela": [
+          {
+            "ingles": "Today I live in Berlin.",
+            "alemao": "Heute wohne ich in Berlin.",
+            "evite": "Heute ich wohne in Berlin."
+          },
+          {
+            "ingles": "Now we're learning German.",
+            "alemao": "Jetzt lernen wir Deutsch.",
+            "evite": "Jetzt wir lernen Deutsch."
+          },
+          {
+            "ingles": "Maria works over there.",
+            "alemao": "Dort arbeitet Maria.",
+            "evite": "Dort Maria arbeitet."
+          }
+        ],
+        "tag": "Trap"
+      },
+      {
+        "tipo": "palavras",
+        "min": 7,
+        "itens": [
+          {
+            "ru": "wohnen",
+            "translit": "VOH-nen",
+            "pt": "to live (reside)",
+            "en": "to live",
+            "audio": "wohnen"
+          },
+          {
+            "ru": "arbeiten",
+            "translit": "AR-by-ten",
+            "pt": "to work",
+            "en": "to work",
+            "audio": "arbeiten"
+          },
+          {
+            "ru": "lernen",
+            "translit": "LEHR-nen",
+            "pt": "to learn, to study",
+            "en": "to learn",
+            "audio": "lernen"
+          },
+          {
+            "ru": "machen",
+            "translit": "MAHKH-en",
+            "pt": "to do, to make",
+            "en": "to do, to make",
+            "audio": "machen"
+          },
+          {
+            "ru": "spielen",
+            "translit": "SHPEE-len",
+            "pt": "to play",
+            "en": "to play",
+            "audio": "spielen"
+          },
+          {
+            "ru": "kommen",
+            "translit": "KOM-en",
+            "pt": "to come",
+            "en": "to come",
+            "audio": "kommen"
+          },
+          {
+            "ru": "trinken",
+            "translit": "TRINK-en",
+            "pt": "to drink",
+            "en": "to drink",
+            "audio": "trinken"
+          },
+          {
+            "ru": "hören",
+            "translit": "HÖ-ren",
+            "pt": "to hear, to listen",
+            "en": "to hear",
+            "audio": "hören"
+          },
+          {
+            "ru": "kaufen",
+            "translit": "KOW-fen",
+            "pt": "to buy",
+            "en": "to buy",
+            "audio": "kaufen"
+          },
+          {
+            "ru": "reisen",
+            "translit": "RY-zen",
+            "pt": "to travel",
+            "en": "to travel",
+            "audio": "reisen"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 7,
+        "titulo": "Regular present tense: stem + ending",
+        "explicacao": "Almost all German verbs end in -en in the infinitive. Drop the -en to find the stem and add the endings: -e, -st, -t, -en, -t, -en. Where English adds only one -s (\"he works\"), German changes for every person — but there are only five endings to learn. If the stem ends in -t or -d (arbeiten, finden), an extra -e- goes in before -st and -t, to make it pronounceable: du arbeitest, er arbeitet. If the stem ends in -s, -ß or -z (heißen, reisen), «du» loses the -s of its ending: du heißt, du reist. The «wir», «sie» and «Sie» forms are the same as the infinitive.",
+        "comparacao": "English marks only one person in the present (he/she/it works). German marks almost all of them, but the pattern is short and regular, and «wir», «sie» and «Sie» simply repeat the infinitive. Good news: German has no \"do\" in questions or negatives and no -ing form — «Ich lerne» covers \"I learn\", \"I'm learning\" and \"I do learn\".",
+        "tabela": [
+          {
+            "pronome": "ich",
+            "terminacao": "-e",
+            "wohnen": "wohne",
+            "arbeiten": "arbeite"
+          },
+          {
+            "pronome": "du",
+            "terminacao": "-st",
+            "wohnen": "wohnst",
+            "arbeiten": "arbeitest"
+          },
+          {
+            "pronome": "er / sie / es",
+            "terminacao": "-t",
+            "wohnen": "wohnt",
+            "arbeiten": "arbeitet"
+          },
+          {
+            "pronome": "wir",
+            "terminacao": "-en",
+            "wohnen": "wohnen",
+            "arbeiten": "arbeiten"
+          },
+          {
+            "pronome": "ihr",
+            "terminacao": "-t",
+            "wohnen": "wohnt",
+            "arbeiten": "arbeitet"
+          },
+          {
+            "pronome": "sie / Sie",
+            "terminacao": "-en",
+            "wohnen": "wohnen",
+            "arbeiten": "arbeiten"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Du arbeitst.",
+            "certo": "Du arbeitest.",
+            "motivo": "Stem in -t: add an -e- before -st."
+          },
+          {
+            "errado": "Du reisst.",
+            "certo": "Du reist.",
+            "motivo": "Stem in -s: «du» loses the -s of the ending."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Say: «Ich wohne in … Ich arbeite … Ich lerne Deutsch. Du lernst auch Deutsch.»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Write the 6 forms of «sein» from memory."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-004.json",
+  "responsavel": null
+}

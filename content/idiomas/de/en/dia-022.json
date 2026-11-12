@@ -1,0 +1,175 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 22,
+  "fase": 3,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Numbers, time and days: Telling the time",
+  "objetivo": "Lesson 6, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 6,
+    "titulo": "Numbers, time and days",
+    "objetivo": "Count to 100 and beyond, tell the time, and say the days of the week, the months and the date.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Telling the time",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Work it out yourself",
+        "explicacao": "STEP 1: look at the numbers. STEP 2: look at the times. STEP 3: look at the dates.",
+        "tabela": [
+          {
+            "c1": "21",
+            "c2": "einundzwanzig"
+          },
+          {
+            "c1": "22",
+            "c2": "zweiundzwanzig"
+          },
+          {
+            "c1": "34",
+            "c2": "vierunddreißig"
+          },
+          {
+            "c1": "56",
+            "c2": "sechsundfünfzig"
+          },
+          {
+            "c1": "99",
+            "c2": "neunundneunzig"
+          }
+        ],
+        "tag": "Discover"
+      },
+      {
+        "tipo": "palavras",
+        "min": 7,
+        "itens": [
+          {
+            "ru": "die Uhr",
+            "translit": "dee OOR",
+            "pt": "clock; o'clock",
+            "en": "clock; o’clock",
+            "audio": "die Uhr"
+          },
+          {
+            "ru": "die Stunde",
+            "translit": "dee SHTOON-deh",
+            "pt": "hour (length of time)",
+            "en": "hour",
+            "audio": "die Stunde"
+          },
+          {
+            "ru": "die Minute",
+            "translit": "dee mee-NOO-teh",
+            "pt": "minute",
+            "en": "minute",
+            "audio": "die Minute"
+          },
+          {
+            "ru": "halb",
+            "translit": "HAHLP",
+            "pt": "half",
+            "en": "half",
+            "audio": "halb"
+          },
+          {
+            "ru": "das Viertel",
+            "translit": "dahs FEER-tel",
+            "pt": "quarter",
+            "en": "quarter",
+            "audio": "das Viertel"
+          },
+          {
+            "ru": "vor",
+            "translit": "FOR",
+            "pt": "to, before (the hour)",
+            "en": "to, before",
+            "audio": "vor"
+          },
+          {
+            "ru": "nach",
+            "translit": "NAHKH",
+            "pt": "past, after (the hour)",
+            "en": "past, after",
+            "audio": "nach"
+          },
+          {
+            "ru": "Punkt",
+            "translit": "POONKT",
+            "pt": "on the dot, sharp",
+            "en": "sharp",
+            "audio": "Punkt"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Telling the time",
+        "explicacao": "Questions: «Wie spät ist es?» or «Wie viel Uhr ist es?» (What time is it?). Answer: «Es ist acht Uhr.» For the time something happens: «Um wie viel Uhr?» — «Um acht Uhr» (at eight). In everyday speech: «fünf nach acht» (8:05, five past eight), «Viertel nach acht» (8:15, quarter past), «halb neun» (8:30), «Viertel vor neun» (8:45, quarter to), «fünf vor neun» (8:55). Careful: «halb neun» means HALF AN HOUR BEFORE nine, so 8:30. British \"half nine\" means 9:30 — the opposite! In official contexts (trains, TV) the 24-hour clock is used: «acht Uhr dreißig», «vierzehn Uhr fünfzehn».",
+        "comparacao": "English \"half past eight\" looks back at the hour that has passed. German «halb neun» looks ahead to the hour that's coming, nine. «Viertel nach» and «Viertel vor» work just like \"quarter past\" and \"quarter to\".",
+        "tabela": [
+          {
+            "hora": "8:00",
+            "informal": "acht Uhr",
+            "oficial": "acht Uhr"
+          },
+          {
+            "hora": "8:05",
+            "informal": "fünf nach acht",
+            "oficial": "acht Uhr fünf"
+          },
+          {
+            "hora": "8:15",
+            "informal": "Viertel nach acht",
+            "oficial": "acht Uhr fünfzehn"
+          },
+          {
+            "hora": "8:30",
+            "informal": "halb neun",
+            "oficial": "acht Uhr dreißig"
+          },
+          {
+            "hora": "8:45",
+            "informal": "Viertel vor neun",
+            "oficial": "acht Uhr fünfundvierzig"
+          },
+          {
+            "hora": "14:30",
+            "informal": "halb drei",
+            "oficial": "vierzehn Uhr dreißig"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "halb drei = 3:30",
+            "certo": "halb drei = 2:30",
+            "motivo": "«halb drei» is half an hour before three: 2:30."
+          }
+        ],
+        "tag": "Time"
+      },
+      {
+        "tipo": "producao",
+        "min": 4,
+        "enunciado": "Ask and answer: «Wie spät ist es? — Es ist halb drei.» Repeat with 5 different times."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Write out the numbers 21 to 30 in German."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-006.json",
+  "responsavel": null
+}

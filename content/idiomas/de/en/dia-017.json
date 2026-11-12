@@ -1,0 +1,334 @@
+{
+  "idioma": "de",
+  "explicacao": "en",
+  "dia": 17,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Family, haben and possessives: The family and the verb haben",
+  "objetivo": "Lesson 5, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 5,
+    "titulo": "Family, haben and possessives",
+    "objetivo": "Talk about your family with «haben», use the accusative for the direct object, the possessives, and say your age with numbers 0 to 20.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "The family and the verb haben",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Lesson goal. By the end of the four sessions, you use mein, dein, sein, ihr, unser, euer, Ihr with the right ending, choose between sein and ihr without mixing up owner and thing, and use dieser, welcher, jeder, alle and the indefinites man, jemand, niemand, etwas, nichts, alles."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "The family photo",
+        "contexto": "Camila shows a photo on her phone. Jonas asks who's who.",
+        "linhas": [
+          {
+            "personagem": "Jonas",
+            "ru": "— Wer ist das auf dem Foto?",
+            "pt": "— Who's that in the photo?",
+            "audio": "Wer ist das auf dem Foto?",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Das ist meine Familie. Das ist mein Vater, das ist meine Mutter und das ist mein Bruder Pedro.",
+            "pt": "— It's my family. This is my father, this is my mother and this is my brother Pedro.",
+            "audio": "Das ist meine Familie. Das ist mein Vater, das ist meine Mutter und das ist mein Bruder Pedro.",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Und diese Frau?",
+            "pt": "— And that woman?",
+            "audio": "Und diese Frau?",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Das ist meine Tante. Ihr Mann ist Arzt.",
+            "pt": "— That's my aunt. Her husband is a doctor.",
+            "audio": "Das ist meine Tante. Ihr Mann ist Arzt.",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Wo wohnt deine Familie?",
+            "pt": "— Where does your family live?",
+            "audio": "Wo wohnt deine Familie?",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Meine Eltern wohnen in Recife. Mein Bruder studiert in São Paulo.",
+            "pt": "— My parents live in Recife. My brother studies in São Paulo.",
+            "audio": "Meine Eltern wohnen in Recife. Mein Bruder studiert in São Paulo.",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Welches Foto gefällt dir am besten?",
+            "pt": "— Which photo do you like best?",
+            "audio": "Welches Foto gefällt dir am besten?",
+            "rotulo": "Jonas"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Dieses Foto. Hier sind alle zusammen.",
+            "pt": "— This one. Everyone's together here.",
+            "audio": "Dieses Foto. Hier sind alle zusammen.",
+            "rotulo": "Camila"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Meine Familie wohnt auch weit weg.",
+            "pt": "— My family lives far away too.",
+            "audio": "Meine Familie wohnt auch weit weg.",
+            "rotulo": "Jonas"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "The English speaker's trap",
+        "explicacao": "STEP 1: good news first: German possessives work like English ones — no article before them. \"My father\" is mein Vater, never der mein Vater. STEP 2: the owner picks the stem (my → mein, his → sein, her → ihr); the thing owned picks the ending (mein Vater, meine Mutter).",
+        "comparacao": "English already gets the owner right: \"his father\", \"her father\". German does the same with sein and ihr. The difference: the German possessive also takes an ending that agrees with the thing owned — something English never does. So \"his mother\" is seine Mutter and \"her father\" is ihr Vater. And watch the triple meaning of ihr: «ihr» = her / their, «Ihr» (capital) = your (formal), and «ihr» = you all.",
+        "tabela": [
+          {
+            "ingles": "his father",
+            "alemao": "sein Vater",
+            "evite": "Tom"
+          },
+          {
+            "ingles": "her father",
+            "alemao": "ihr Vater",
+            "evite": "Lena"
+          },
+          {
+            "ingles": "his mother",
+            "alemao": "seine Mutter",
+            "evite": "Tom"
+          },
+          {
+            "ingles": "her mother",
+            "alemao": "ihre Mutter",
+            "evite": "Lena"
+          },
+          {
+            "ingles": "your father (du)",
+            "alemao": "dein Vater",
+            "evite": "you, to a friend"
+          },
+          {
+            "ingles": "your father (formal)",
+            "alemao": "Ihr Vater",
+            "evite": "you, formal"
+          },
+          {
+            "ingles": "your father (you all)",
+            "alemao": "euer Vater",
+            "evite": "you all"
+          }
+        ],
+        "tag": "Trap"
+      },
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "die Familie",
+            "translit": "dee fah-MEE-lee-eh",
+            "pt": "family",
+            "en": "family",
+            "audio": "die Familie"
+          },
+          {
+            "ru": "die Eltern",
+            "translit": "dee EL-tern",
+            "pt": "parents (plural only)",
+            "en": "parents",
+            "audio": "die Eltern"
+          },
+          {
+            "ru": "der Sohn",
+            "translit": "dehr ZOHN",
+            "pt": "son",
+            "en": "son",
+            "audio": "der Sohn"
+          },
+          {
+            "ru": "die Tochter",
+            "translit": "dee TOKH-ter",
+            "pt": "daughter",
+            "en": "daughter",
+            "audio": "die Tochter"
+          },
+          {
+            "ru": "der Großvater",
+            "translit": "dehr GROHS-fah-ter",
+            "pt": "grandfather",
+            "en": "grandfather",
+            "audio": "der Großvater"
+          },
+          {
+            "ru": "die Großmutter",
+            "translit": "dee GROHS-moo-ter",
+            "pt": "grandmother",
+            "en": "grandmother",
+            "audio": "die Großmutter"
+          },
+          {
+            "ru": "der Opa",
+            "translit": "dehr OH-pah",
+            "pt": "grandpa",
+            "en": "grandpa",
+            "audio": "der Opa"
+          },
+          {
+            "ru": "die Oma",
+            "translit": "dee OH-mah",
+            "pt": "grandma",
+            "en": "grandma",
+            "audio": "die Oma"
+          },
+          {
+            "ru": "der Onkel",
+            "translit": "dehr ON-kel",
+            "pt": "uncle",
+            "en": "uncle",
+            "audio": "der Onkel"
+          },
+          {
+            "ru": "die Tante",
+            "translit": "dee TAHN-teh",
+            "pt": "aunt",
+            "en": "aunt",
+            "audio": "die Tante"
+          },
+          {
+            "ru": "die Geschwister",
+            "translit": "dee geh-SHVIS-ter",
+            "pt": "siblings (plural only)",
+            "en": "siblings",
+            "audio": "die Geschwister"
+          },
+          {
+            "ru": "der Enkel",
+            "translit": "dehr EN-kel",
+            "pt": "grandson",
+            "en": "grandson",
+            "audio": "der Enkel"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 7,
+        "titulo": "Haben and the direct object",
+        "explicacao": "«Haben» (to have) is irregular. The direct object of «haben» goes into the accusative. In the masculine singular, «ein» becomes «einen» and «kein» becomes «keinen»; in the feminine, neuter and plural nothing changes: «Ich habe einen Bruder. Ich habe eine Schwester. Ich habe ein Kind. Ich habe keine Kinder».",
+        "comparacao": "English shows the same idea only in pronouns: \"he\" sees, but you see \"him\". German does it with articles too, but only for masculine nouns: «ein Bruder» (the one who is) becomes «einen Bruder» (the one you have) — like he → him.",
+        "tabelas": [
+          {
+            "titulo": "haben in the present",
+            "linhas": [
+              {
+                "pronome": "ich",
+                "haben": "habe",
+                "exemplo": "Ich habe einen Bruder."
+              },
+              {
+                "pronome": "du",
+                "haben": "hast",
+                "exemplo": "Du hast eine Schwester."
+              },
+              {
+                "pronome": "er / sie / es",
+                "haben": "hat",
+                "exemplo": "Er hat ein Kind."
+              },
+              {
+                "pronome": "wir",
+                "haben": "haben",
+                "exemplo": "Wir haben keine Kinder."
+              },
+              {
+                "pronome": "ihr",
+                "haben": "habt",
+                "exemplo": "Ihr habt einen Sohn."
+              },
+              {
+                "pronome": "sie / Sie",
+                "haben": "haben",
+                "exemplo": "Sie haben eine Tochter."
+              }
+            ]
+          },
+          {
+            "titulo": "The accusative only changes the masculine",
+            "linhas": [
+              {
+                "genero": "masculine",
+                "definido": "der Bruder → den Bruder",
+                "indefinido": "ein Bruder → einen Bruder",
+                "negativo": "kein Bruder → keinen Bruder"
+              },
+              {
+                "genero": "feminine",
+                "definido": "die Schwester (no change)",
+                "indefinido": "eine Schwester (no change)",
+                "negativo": "keine Schwester (no change)"
+              },
+              {
+                "genero": "neuter",
+                "definido": "das Kind (no change)",
+                "indefinido": "ein Kind (no change)",
+                "negativo": "kein Kind (no change)"
+              },
+              {
+                "genero": "plural",
+                "definido": "die Eltern (no change)",
+                "indefinido": "—",
+                "negativo": "keine Eltern (no change)"
+              }
+            ]
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich habe ein Bruder.",
+            "certo": "Ich habe einen Bruder.",
+            "motivo": "Masculine direct object: einen."
+          },
+          {
+            "errado": "Ich habe nicht Kinder.",
+            "certo": "Ich habe keine Kinder.",
+            "motivo": "To negate a noun, use kein/keine — not \"nicht ein\"."
+          }
+        ],
+        "tag": "Verbs"
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say: «Ich habe einen Bruder. Ich habe eine Schwester. Ich habe keine Kinder.»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Write 4 sentences with regular verbs in the present."
+      }
+    ]
+  },
+  "origem": "content/idiomas/de/aulas/aula-005.json",
+  "responsavel": null
+}
