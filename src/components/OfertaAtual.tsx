@@ -28,7 +28,7 @@ export function OfertaAtual() {
   ];
   return <section ref={secao} className="br-plans-wrap br-live-plans" id="planos" aria-labelledby="oferta-titulo">
     <div className="br-section">
-      <div className="br-section-head"><div><p className="br-eyebrow">{h('A OFERTA DE HOJE')}</p><h2 id="oferta-titulo">{h('Seu ritmo.')}<br />{h('Seu próximo idioma.')}</h2></div>
+      <div className="br-section-head"><div><h2 id="oferta-titulo">{h('Seu ritmo.')}<br />{h('Seu próximo idioma.')}</h2></div>
         <p>{h('Acesso aos cursos de idiomas, com explicações em português. Comece pelas duas primeiras aulas grátis, sem cartão.')}</p></div>
       <div className="br-plans">{planos.map(p => <article className={p.destaque ? 'br-plan br-plan-destaque' : 'br-plan'} key={p.id}>
         {p.destaque && <span className="br-plan-selo">{h('Menor preço por mês')}</span>}

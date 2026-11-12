@@ -10,6 +10,8 @@ const copy: Record<string, readonly [string]> = {
   'Livro de': ['Book:'], 'Gramática de': ['Grammar:'],
   'Livros A1–A2 em seis idiomas. Leia os dois primeiros capítulos grátis, com áudio.': ['A1–A2 books in six languages. Read the first two chapters free, with audio.'],
   'Escolher meu idioma': ['Choose my language'],
+  'Começar a primeira aula de': ['Start the first lesson in'], 'Ver o curso completo': ['See the full course'],
+  'As duas primeiras aulas são grátis, sem cartão.': ['The first two lessons are free, no card needed.'],
   'Começar a primeira sessão em': ['Start the first session in'],
   'Estamos produzindo livros para os níveis B1–B2. Eles ainda não estão disponíveis.': ['We are producing books for B1–B2 levels. They are not available yet.'],
   'Livro de alemão →': ['German book →'], 'Livro de espanhol →': ['Spanish book →'],
