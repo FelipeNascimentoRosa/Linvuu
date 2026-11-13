@@ -34,6 +34,7 @@ html:not([data-plataforma="nativo"]) body{padding-bottom:var(--lv-consent-h,0px)
 .analytics-consent.analytics-consent-bar .analytics-consent-curto{flex:1 1 100%;font-size:.875rem}
 .analytics-consent.analytics-consent-bar .analytics-actions{flex:1 1 100%;flex-wrap:wrap}
 .analytics-consent.analytics-consent-bar .analytics-actions .btn{flex:1 1 6rem}}
-/* Telas largas: o aviso vai para o canto direito. Centralizado, ele cobria o botão principal do herói (coluna da esquerda). */
-@media (min-width:1024px){.analytics-consent.analytics-consent-bar{left:auto;right:1.25rem;transform:none;width:min(34rem,calc(100% - 2.5rem));border-radius:1.25rem;padding:.75rem .75rem .75rem 1.25rem}
-.analytics-consent.analytics-consent-bar .analytics-consent-curto{flex:1 1 100%;max-width:none}}
+/* Telas largas: faixa fina de uma linha colada na base, de lado a lado (13/11/2026). O cartão de 544×104 no canto direito
+   cobria texto e capas (auditoria Impeccable C4); a faixa tem ~56px e o body já recebe padding com a altura dela. */
+@media (min-width:1024px){.analytics-consent.analytics-consent-bar{left:0;right:0;bottom:0;transform:none;width:100%;max-width:none;border-radius:0;border-inline:0;border-bottom:0;box-shadow:none;padding:.375rem max(var(--pad),calc((100vw - 1320px) / 2 + var(--pad)));flex-wrap:nowrap}
+.analytics-consent.analytics-consent-bar .analytics-consent-curto{flex:1 1 auto;max-width:none}}

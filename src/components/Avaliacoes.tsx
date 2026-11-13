@@ -13,7 +13,7 @@ interface Resposta { itens: AvaliacaoPublica[]; total: number; media: number | n
 const iniciais = (nome: string) => nome.split(' ').filter(Boolean).slice(0, 2).map((p) => p[0]!.toUpperCase()).join('');
 
 const Estrelas = ({ n, rotulo }: { n: number; rotulo: string }) => (
-  <span className="av-estrelas" role="img" aria-label={rotulo}>{'★'.repeat(n)}<span aria-hidden="true">{'☆'.repeat(NOTA_MAX - n)}</span></span>
+  <span className="av-estrelas" role="img" aria-label={rotulo}>{Array.from({ length: NOTA_MAX }, (_, i) => <svg key={i} width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill={i < n ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z" /></svg>)}</span>
 );
 
 /** Avaliações de alunos (só as aprovadas) e formulário para quem concluiu as aulas gratuitas. Mesmo componente nos dois domínios. */

@@ -153,7 +153,8 @@ em{font-style:normal;color:var(--faint);font-weight:500}
   .dias a{grid-template-columns:28px 1fr}
   .dias a .pill{grid-column:2;justify-self:start}
 }
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none !important}}
+/* Movimento reduzido: sai o que se desloca; troca de cor e de opacidade continua, para o estado seguir visível (Impeccable audit, 13/11/2026). */
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-property:color,background-color,border-color,opacity,box-shadow !important}}
 
 /* ===== Faixas de seção: cada bloco de informação com sua cor ===== */
 
@@ -255,7 +256,9 @@ a.livro:focus-visible{outline:2px solid var(--ocre);outline-offset:6px}
 .bloco-sub{font-size:18px;font-weight:700;margin:4px 0 10px}
 .ru{font-size:1.15em}
 .callout{padding:16px 20px;border-radius:var(--r-sm);background:var(--surface);color:var(--text);max-width:72ch}
-.callout-tarefa{background:var(--papel-escuro);border-left:4px solid var(--accent)}
+.callout-tarefa{background:var(--papel-escuro)}
+/* Dentro de um bloco de aula a nota não vira um cartão dentro do cartão (Impeccable nested-cards): só o texto, com peso. */
+.bloco .callout:not(.callout-tarefa){background:none;padding:0;font-weight:500}
 .callout .link{margin-top:6px}
 .som{flex-shrink:0;width:38px;height:38px;border-radius:50%;border:1.5px solid var(--text);background:var(--papel-claro);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;padding:0}
 .som:hover{background:var(--text);color:var(--papel-claro)}
@@ -339,7 +342,7 @@ a.livro:focus-visible{outline:2px solid var(--ocre);outline-offset:6px}
 /* ===== Páginas legais e aceite do cadastro ===== */
 .texto-legal{max-width:760px}
 .texto-legal h2{font-size:20px;font-weight:700;margin:28px 0 8px}
-.texto-legal p,.texto-legal li{color:var(--muted);margin-bottom:8px}
+.texto-legal p,.texto-legal li{color:var(--muted);margin-bottom:8px;max-width:64ch}
 .texto-legal ul{list-style:disc;padding-left:22px}
 .texto-legal a:not(.btn){text-decoration:underline;color:var(--text)}
 .conta-aceite{font-size:13px;color:var(--faint);text-align:center}
@@ -348,7 +351,7 @@ a.livro:focus-visible{outline:2px solid var(--ocre);outline-offset:6px}
 .pill-disponivel{background:var(--ok-bg);color:var(--ok)}
 
 /* ===== Gramática: comparação e erros comuns ===== */
-.comparacao{margin:12px 0;background:var(--papel-escuro);border-left:4px solid var(--verde-floresta)}
+.comparacao{margin:12px 0;background:var(--papel-escuro)}
 .erros{margin-top:16px}
 .erros li{display:grid;gap:2px;padding:10px 14px;margin-bottom:8px;border:1.5px solid var(--border);border-radius:var(--r-sm)}
 .erros .errado{color:var(--tijolo);font-weight:600;text-decoration:line-through;text-decoration-thickness:1px}
@@ -360,6 +363,9 @@ a.livro:focus-visible{outline:2px solid var(--ocre);outline-offset:6px}
 .topicos{display:grid;gap:10px}
 .topico{border:1.5px solid var(--border);border-radius:var(--r-md);background:var(--papel-claro);padding:0 22px}
 .topico[open]{border-color:var(--text)}
+::placeholder{color:var(--muted);opacity:1}
+::selection{background:var(--verde-100,#D6E4DA);color:var(--grafite)}
+input,textarea{caret-color:var(--verde-floresta)}
 .topico{min-width:0;overflow-wrap:anywhere}
 .topico table{display:block;max-width:100%;overflow-x:auto}
 .topico summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:16px 0}
@@ -440,3 +446,8 @@ a.livro:focus-visible{outline:2px solid var(--ocre);outline-offset:6px}
 .gram-hub a:hover{border-color:var(--verde-floresta)}
 .gram-hub strong{font-family:var(--font-display);font-size:22px;font-weight:500;color:var(--verde-floresta)}
 .gram-hub span{font-size:15px;color:var(--grafite-65)}
+/* Alvos de toque no celular: 44px de altura mínima sem mudar o desenho (auditoria Impeccable C18, 13/11/2026). */
+@media(max-width:760px){
+  .lv-foot a,.br-text-link,.br-book-links a{min-height:44px;display:inline-flex;align-items:center}
+  .br-faq summary,.faq summary,.texto-legal summary{min-height:44px}
+}

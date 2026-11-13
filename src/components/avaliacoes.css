@@ -1,14 +1,15 @@
 .avaliacoes{margin:48px 0;padding-top:24px;border-top:1px solid var(--papel-borda)}
 .av-kicker{font-size:.9375rem;letter-spacing:0;text-transform:none;color:var(--verde-floresta);font-weight:600;margin:0 0 6px}
 .av-resumo{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:8px 0 16px}
-.av-estrelas{color:var(--ocre);letter-spacing:2px;font-size:1.05rem}
+/* Estrelas em SVG (antes eram ★ em texto ocre: contraste 3,49:1 e glifo no lugar de ícone — auditoria de 13/11/2026). */
+.av-estrelas{color:var(--ocre-escuro);display:inline-flex;gap:2px;vertical-align:-2px}
 .avaliacoes ul.av-lista{list-style:none;margin:16px 0;padding:0;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
 .avaliacoes li.av-card{list-style:none;margin:0;background:var(--papel-claro);border:1px solid var(--papel-borda);border-radius:10px;padding:16px}
 .av-texto{margin:8px 0;line-height:1.55}
 .av-autor{margin:0;font-size:.9rem;color:var(--grafite-65)}
 .av-selo{display:inline-block;white-space:nowrap;margin:4px 0 0 8px;padding:2px 8px;border-radius:999px;background:var(--ocre-claro);color:var(--grafite);font-size:.78rem}
 .av-form-caixa{margin-top:28px;padding:20px;background:var(--papel-claro);border:1px solid var(--papel-borda);border-radius:10px;max-width:640px}
-.av-intro{color:var(--grafite-65);font-size:.92rem}
+.av-intro{color:var(--grafite-65);font-size:1rem;max-width:62ch}
 .av-form{display:grid;gap:14px}
 .av-form label{display:grid;gap:6px;font-weight:600;font-size:.95rem}
 .av-form textarea,.av-form input[type=text]{font:inherit;padding:10px;border:1px solid var(--papel-borda);border-radius:8px;background:#fff;color:var(--grafite)}
@@ -29,4 +30,4 @@
 .av-foto{width:48px;height:48px;border-radius:50%;object-fit:cover;flex-shrink:0;background:var(--verde-100)}
 .av-iniciais{display:grid;place-items:center;background:var(--verde-floresta);color:var(--papel);font-weight:700;letter-spacing:.02em}
 .av-com-foto .av-foto{width:32px;height:32px}
-.av-fonte{color:var(--grafite-65);margin:0 0 8px;max-width:70ch}
+.av-fonte{color:var(--grafite-65);margin:0 0 8px;max-width:62ch}

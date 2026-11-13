@@ -39,7 +39,7 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
     raiz.dataset.temaAluno = tema;
     const cor = document.querySelector<HTMLMetaElement>('meta[name="theme-color"]');
     const antes = cor?.content;
-    if (cor) cor.content = tema === 'escuro' ? '#1A221D' : '#F5F1E8';
+    if (cor) cor.content = tema === 'escuro' ? '#1A221D' : (getComputedStyle(document.documentElement).getPropertyValue('--papel').trim() || '#F3F2EE');
     return () => { delete raiz.dataset.temaAluno; if (cor && antes) cor.content = antes; };
   }, [tema]);
   const [sons, setSons] = useState(sonsLigados);
@@ -110,7 +110,7 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
         <Link to={destino(idioma, n)} className={`aa-dia ${atual ? 'atual' : ''} ${feito ? 'feito' : ''}`} aria-current={atual ? 'page' : undefined}>
           <span className="aa-marca" aria-hidden="true">{feito ? '✓' : ''}</span>
           <span className="aa-dia-n">{n}</span>
-          <span className="aa-dia-t">{semPrefixo(d.titulo, grupos.find((g) => n >= g.dias[0] && n <= g.dias[1])?.titulo)}<small>{feito ? T.concluidoDia : STATUS_AULA[st]}</small></span>
+          <span className="aa-dia-t">{semPrefixo(d.titulo, grupos.find((g) => n >= g.dias[0] && n <= g.dias[1])?.titulo)}{(feito || st !== 'publicada') && <small>{feito ? T.concluidoDia : STATUS_AULA[st]}</small>}</span>
         </Link>
       </li>
     );
@@ -122,11 +122,11 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
       <aside className="aa-lateral" aria-label={T.trilhaAluno}>
         <div className="aa-topo">
           <div className="aa-titulo">
-            <span className="aa-kicker">{T.trilhaAluno} · {nome}</span>
             <strong>{primeiroNome ? T.olaNome(primeiroNome) : T.ola}</strong>
+            <span className="aa-kicker">{T.trilhaAluno} · {nome}</span>
           </div>
           <button type="button" className="aa-recolher" aria-expanded={!recolhida} onClick={() => setRecolhida((x) => !x)} aria-label={recolhida ? T.expandir : T.recolher}>
-            {recolhida ? '»' : '«'}
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{recolhida ? <path d="m9 6 6 6-6 6" /> : <path d="m15 6-6 6 6 6" />}</svg>
           </button>
         </div>
 
@@ -146,7 +146,7 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
                 <button type="button" aria-pressed={tema === 'escuro'} onClick={() => escolherTema('escuro')}><svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.5 14A8.8 8.8 0 0 1 10 3.5 8.8 8.8 0 1 0 20.5 14Z" /></svg>{T.escuro}</button>
               </div>
               <button type="button" className="aa-sons" aria-pressed={sons} onClick={alternarSons}>{T.sonsRotulo}: {sons ? T.sonsLig : T.sonsDesl}</button>
-              {temGramatica && <Link className="aa-gramatica" to={`/gramatica/${idioma}`}>{T.gramaticaDo(nome)} →</Link>}
+              {temGramatica && <Link className="aa-gramatica" to={`/gramatica/${idioma}`}>{T.gramaticaDo(nome)}</Link>}
             </div>
 
             <label className="aa-busca">

@@ -13,7 +13,6 @@ export default function AulasRusso() {
   return (
     <div className="pagina lvr">
       <header className="lvr-topo">
-        <p className="lv-kicker lv-kicker-esc">{cod === 'en' ? 'Live lessons' : 'Aulas ao vivo'}</p>
         <h1 className="pagina-h1">{t.titulo}</h1>
         <p className="lead">{t.lead}</p>
       </header>

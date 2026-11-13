@@ -37,7 +37,7 @@ export function OfertaAtual() {
         <HomeCourseLink cta="home_plano" to={`/assinatura?plano=${p.id}#oferta-atual`} className="br-button" onClick={() => { void analytics.capture('select_plan', { page: 'home', billing_plan: p.id }); }}>{h('Ver condições do plano')} <span aria-hidden="true">↗</span></HomeCourseLink>
       </article>)}</div>
       {emReais && FUNDADORES && <p className="br-plan-note">Ex-aluno da Udemy? Use o código <strong>{FUNDADORES.codigo}</strong> no pagamento do mensal: {FUNDADORES.precoMes} por mês, para sempre. Válido até {FUNDADORES.validade}.</p>}
-      <div className="br-current"><HomeCourseLink to="/cursos">{h('Experimentar duas aulas grátis →')}</HomeCourseLink><HomeCourseLink to="/assinatura">{h('Ver todos os detalhes da assinatura →')}</HomeCourseLink></div>
+      <div className="br-current"><HomeCourseLink to="/cursos">{h('Experimentar duas aulas grátis')}</HomeCourseLink><HomeCourseLink to="/assinatura">{h('Ver todos os detalhes da assinatura')}</HomeCourseLink></div>
     </div>
   </section>;
 }

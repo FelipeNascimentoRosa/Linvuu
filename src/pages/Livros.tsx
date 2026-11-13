@@ -29,7 +29,6 @@ export function LivrosIndice() {
   return (
     <div className="pagina lvr">
       <header className="lvr-topo">
-        <p className="lv-kicker lv-kicker-esc">Coleção Linvuu · Volume 1</p>
         <h1 className="pagina-h1">Gramática prática para quem fala português</h1>
         <p className="lead">Cada capítulo parte de dificuldades de quem fala português e apresenta exemplos para entender como a outra língua funciona. Escritos por {autoresTexto}.</p>
         {LOCALE.codigo === 'pt-BR' && <p>{LIVROS_EM_PRODUCAO}</p>}
@@ -81,8 +80,8 @@ export function LivroPagina() {
       <header className="lvr-livro-topo">
         <Capa m={m} tamanho={900} />
         <div>
-          <p className="lv-kicker lv-kicker-esc">Coleção Linvuu · Volume 1 · A1–A2</p>
           <h1 className="pagina-h1">{m.nome}: gramática prática, do zero ao A2</h1>
+          <p className="lvr-info">Coleção Linvuu, volume 1 (A1–A2)</p>
           <p className="lead">{m.descricao}</p>
           <p className="lvr-autoria">Por {autoresTexto}. <Link to="/sobre">Sobre os autores</Link></p>
           <div className="lv-hero-botoes">
@@ -218,9 +217,8 @@ export function LivroCapitulo() {
       <div className="lvr-leitura">
         <article className="lvr-artigo">
           <header className="lvr-cab">
-            <p className="lv-kicker lv-kicker-esc">{m.nome} · Capítulo {cap.n}{cap.nivel && ` · ${cap.nivel}`}</p>
             <h1 className="lvr-titulo">{cap.titulo}</h1>
-            <p className="lvr-info">Leitura de cerca de {minutosDeLeitura(cap)} minutos · {AUTORES.map((a) => a.nome).join(' e ')}</p>
+            <p className="lvr-info">{m.nome}, capítulo {cap.n}{cap.nivel && ` (${cap.nivel})`}. Leitura de cerca de {minutosDeLeitura(cap)} minutos, por {AUTORES.map((a) => a.nome).join(' e ')}.</p>
             <NotaIdioma />
           </header>
           <Blocos c={cap} />

@@ -84,11 +84,11 @@ export default function Curso() {
         </figure>}
         {website && LOCALE.codigo === 'pt-BR' && livro?.capa && <figure className="curso-livro">
           <img src={livro.capa} alt={`Capa do livro de ${curso.nome}, Coleção Linvuu`} width="600" height="800" decoding="async" />
-          <figcaption><span>Coleção Linvuu · A1–A2</span><strong>Seu livro para ler, ouvir e voltar quando precisar.</strong><Link to={livro.link?.startsWith('/livros/') ? livro.link : '/livros'}>Ler 2 capítulos grátis →</Link></figcaption>
+          <figcaption><span>Coleção Linvuu · A1–A2</span><strong>Seu livro para ler, ouvir e voltar quando precisar.</strong><Link to={livro.link?.startsWith('/livros/') ? livro.link : '/livros'}>Ler 2 capítulos grátis</Link></figcaption>
         </figure>}
       </header>
 
-      {LOCALE.codigo === 'pt-BR' && <nav className="site-course-nav" aria-label="Níveis e opções do curso">{Object.keys(aulasPorNivel).filter(Boolean).map(n => <a key={n} href={`#nivel-${n}`}>{NIVEL_LABEL[n] ?? n}</a>)}{website && livro?.link?.startsWith('/livros/') && <Link to={livro.link}>Livro de {curso.nome} ↗</Link>}<Link to="/#planos">Comparar planos ↗</Link></nav>}
+      {LOCALE.codigo === 'pt-BR' && <nav className="site-course-nav" aria-label="Níveis e opções do curso">{Object.keys(aulasPorNivel).filter(Boolean).map(n => <a key={n} href={`#nivel-${n}`}>{NIVEL_LABEL[n] ?? n}</a>)}{website && livro?.link?.startsWith('/livros/') && <Link to={livro.link}>Livro de {curso.nome}</Link>}<Link to="/#planos">Comparar planos</Link></nav>}
       {website && LOCALE.codigo === 'pt-BR' && APRESENTACOES_CURSO[curso.id] && <section aria-labelledby="curso-apresentacao" className="texto-legal">
         <h2 id="curso-apresentacao" className="pagina-h2">{APRESENTACOES_CURSO[curso.id].titulo}</h2>
         {APRESENTACOES_CURSO[curso.id].paragrafos.map((p) => <p key={p}>{p}</p>)}

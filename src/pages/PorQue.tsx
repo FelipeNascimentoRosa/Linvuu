@@ -12,7 +12,6 @@ export default function PorQue() {
   return (
     <div className="pagina lvr">
       <header className="lvr-topo">
-        <p className="lv-kicker lv-kicker-esc">{x.kicker}</p>
         <h1 className="pagina-h1">{x.titulo}</h1>
         <p className="lead">{x.lead}</p>
       </header>

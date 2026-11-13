@@ -12,7 +12,6 @@ export default function ExAlunosUdemy() {
   return (
     <div className="pagina lvr">
       <header className="lvr-topo">
-        <p className="lv-kicker lv-kicker-esc">Para quem estudou russo na Udemy</p>
         <h1 className="pagina-h1">{EX_ALUNOS.titulo}</h1>
         <p className="lead">{EX_ALUNOS.lead}</p>
         {LOCALE.codigo !== 'pt-BR' && <p className="lvr-nota" lang="pt-BR">Esta página está em português.</p>}
