@@ -45,6 +45,8 @@ try{
      assert.ok(!JSON.stringify(clique?.properties).includes('/'),'nenhuma URL no evento de clique');
      for(let n=0;n<40&&!cliques.length;n++)await page.waitForTimeout(50);
      assert.deepEqual(cliques[0],{cta:idBotao},'o servidor recebe só o identificador: sem cookie, sem IP e sem texto');
+     // O clique leva a outra página (a aula grátis); espera essa navegação terminar antes do próximo goto.
+     await page.waitForLoadState('load').catch(()=>{});await page.waitForTimeout(300);
     }
     await page.goto(base+locale+'/cursos?token=do-not-capture');await abrir();await page.waitForTimeout(200);
     assert.ok(!JSON.stringify(events).includes('do-not-capture'));
