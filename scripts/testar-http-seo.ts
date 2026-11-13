@@ -54,11 +54,17 @@ try {
       const r = await get(host, p);
       if (perfil === 'br' && /^\/(?:curso\/br|portugues|gramatica\/br)(?:\/|$)/.test(p)) {
         // no .com.br o português para estrangeiros (explicado em inglês) não existe: vai para o .com
+        // (/portugues vai direto a /curso/br desde 13/11/2026, num salto só)
         assert.equal(r.status, 301, p);
-        assert.equal(r.headers.get('location'), 'https://linvuu.com' + p, p);
+        assert.equal(r.headers.get('location'), 'https://linvuu.com' + (p.replace(/\/$/, '') === '/portugues' ? '/curso/br' : p), p);
         await r.arrayBuffer();
         redirecionados++;
-      } else if (perfil === 'global' && /^\/(?:livros|ex-alunos-udemy)(?:\/|$)/.test(p)) {
+      } else if (perfil === 'global' && /^\/portugues\/?$/.test(p)) {
+        assert.equal(r.status, 301, `${host}${p}`);
+        assert.equal(r.headers.get('location'), 'https://linvuu.com/curso/br', `${host}${p}`);
+        await r.arrayBuffer();
+        redirecionados++;
+      } else if (perfil === 'global' && /^\/(?:livros|ex-alunos-udemy|livro\/gramatica-ru)(?:\/|$)/.test(p)) {
         // no .com a coleção de livros de gramática e a página de ex-alunos da Udemy (só em português) não existem: vão para o .com.br.
         // É o espelho da regra acima e o que scripts/seo.mjs já declara ({ p: '/livros', em: ['pt-BR'] }).
         assert.equal(r.status, 301, `${host}${p}`);
@@ -82,7 +88,7 @@ try {
   // Estrutura antiga e variantes de host: redirecionamento permanente e sem cadeia
   const regras: [string, string, string][] = [
     ['linvuu.com.br', '/en', 'https://linvuu.com/'], ['linvuu.com.br', '/en/curso/ru', 'https://linvuu.com/curso/ru'], ['linvuu.com.br', '/es/cursos', 'https://linvuu.com/cursos'],
-    ['linvuu.com.br', '/es', 'https://linvuu.com/'], ['linvuu.com.br', '/portugues', 'https://linvuu.com/portugues'], ['linvuu.com.br', '/gramatica/br', 'https://linvuu.com/gramatica/br'], ['linvuu.com', '/es/cursos', 'https://linvuu.com/cursos'], ['linvuu.com', '/en', 'https://linvuu.com/'], ['linvuu.com', '/en/cursos', 'https://linvuu.com/cursos'],
+    ['linvuu.com.br', '/es', 'https://linvuu.com/'], ['linvuu.com.br', '/portugues', 'https://linvuu.com/curso/br'], ['linvuu.com.br', '/gramatica/br', 'https://linvuu.com/gramatica/br'], ['linvuu.com', '/es/cursos', 'https://linvuu.com/cursos'], ['linvuu.com', '/en', 'https://linvuu.com/'], ['linvuu.com', '/en/cursos', 'https://linvuu.com/cursos'],
     ['www.linvuu.com', '/curso/ru', 'https://linvuu.com/curso/ru'], ['www.linvuu.com.br', '/cursos', 'https://linvuu.com.br/cursos'],
   ];
   for (const [host, p, destino] of regras) {
@@ -113,9 +119,12 @@ try {
     assert.ok(t.includes(`https://${host}/`), `${host}: llms.txt cita o próprio domínio`);
     const proprias = [...t.matchAll(/https:\/\/(linvuu\.com(?:\.br)?)\//g)].filter((x) => x[1] === host).length;
     assert.ok(proprias >= 5, `${host}: llms.txt com links próprios`);
-    if (host === 'linvuu.com') assert.ok(!/\/curso\/(es|de|it)\b/.test(t), 'linvuu.com/llms.txt não lista cursos que não existem em inglês');
+    // Desde 13/11/2026 o llms.txt é gerado das mesmas listas do sitemap: o .com lista espanhol e alemão (completos em inglês)
+    // e não lista o italiano (0 de 248 explicadas em inglês). Links em Markdown, como pede a regra llms-txt do Lighthouse.
+    if (host === 'linvuu.com') { assert.ok(!/\/curso\/it\b/.test(t), 'linvuu.com/llms.txt não lista o italiano'); assert.ok(/\/curso\/es\b/.test(t) && /\/curso\/de\b/.test(t), 'linvuu.com/llms.txt lista espanhol e alemão'); }
+    assert.ok(/\[[^\]]+\]\(https:\/\/[^)]+\)/.test(t), `${host}: llms.txt com links em Markdown`);
   }
-  for (const [p, target] of [['/brazilian-portuguese', 'https://linvuu.com/portugues'], ['/preco', '/assinatura'], ['/metodo', '/#metodo']]) {
+  for (const [p, target] of [['/brazilian-portuguese', 'https://linvuu.com/curso/br'], ['/preco', '/assinatura'], ['/metodo', '/#metodo']]) {
     const r = await get('linvuu.com.br', p);
     assert.equal(r.status, 301, p);
     assert.equal(r.headers.get('location'), target, p);

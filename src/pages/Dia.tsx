@@ -76,7 +76,7 @@ export default function Dia() {
     <div className="pagina pagina-aluno">
     <AreaAluno idioma={curso!.id} nome={curso!.nome} dia={dia}>
     <div className="aa-leitura">
-      <Navegacao pai={`/curso/${curso!.id}`} idioma={curso!.id} trilha={[{ rotulo: t.geral.inicio, para: '/' }, { rotulo: t.geral.cursos, para: curso!.id === 'br' ? '/portugues' : '/cursos' }, { rotulo: curso!.nome, para: `/curso/${curso!.id}` }, { rotulo: T.rotuloDia(dia) }]} />
+      <Navegacao pai={`/curso/${curso!.id}`} idioma={curso!.id} trilha={[{ rotulo: t.geral.inicio, para: '/' }, { rotulo: t.geral.cursos, para: '/cursos' }, { rotulo: curso!.nome, para: `/curso/${curso!.id}` }, { rotulo: T.rotuloDia(dia) }]} />
 
       {/* Espera da decisão de acesso: mesmo componente dos fallbacks globais
           (esqueleto + Vuu sonolento), nunca o texto solto. */}

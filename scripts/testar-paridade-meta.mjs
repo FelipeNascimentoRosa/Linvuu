@@ -19,7 +19,7 @@ const porta = new URL(origem).port;
 const base = global ? `http://${HOST}:${porta}` : origem;
 const SITE = global ? 'https://linvuu.com' : 'https://linvuu.com.br';
 const extras = global
-  ? ['/curso/de', '/curso/de/dia/1', '/gramatica/de', '/portugues', '/entrar', '/pagina-que-nao-existe']
+  ? ['/curso/de', '/curso/de/dia/1', '/gramatica/de', '/curso/br', '/entrar', '/pagina-que-nao-existe']
   : ['/en/curso/de', '/en/curso/de/dia/1', '/gramatica/de', '/curso/ru/dia/9', '/entrar', '/pagina-que-nao-existe', '/en/pagina-que-nao-existe'];
 // fetch() ignora o cabeçalho Host; http.get o envia de verdade.
 const buscar = (p) => (!global ? fetch(origem + p).then((r) => r.text()) : new Promise((ok, erro) => {

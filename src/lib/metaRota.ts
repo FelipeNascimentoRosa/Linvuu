@@ -19,6 +19,13 @@ import { AUTORES, CAPITULOS_GRATIS, LIVROS_DESCRICAO, LIVROS_EM_PRODUCAO, LIVROS
 import { APRESENTACOES_CURSO, APRESENTACOES_LIVRO } from './apresentacoes.ts';
 import { AULAS_RUSSO } from '../config/aulas-russo';
 import { DESC_SEO_CURSO } from '../config/seoCurso.ts';
+// Data da última mudança do conteúdo (a mesma do <lastmod> do sitemap, gerada por scripts/gerar-lastmod.mjs).
+// Vai como dateModified nos capítulos e gramáticas: os auditores claude-seo/GEO pediram data de atualização (13/11/2026).
+let LASTMOD: Record<string, string> | null = null;
+const dataDe = (chave: string): string | undefined => {
+  if (!LASTMOD) { try { LASTMOD = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'content', 'lastmod.json'), 'utf8')); } catch { LASTMOD = {}; } }
+  return LASTMOD?.[chave];
+};
 
 type CursoMeta = { id: string; nome: string; descricao: string; status?: string; i18n?: Record<string, { nome: string; descricao: string }> };
 export type DadosMeta = {
@@ -252,7 +259,7 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     // `/livros/de/capitulo/1` saía com 29 caracteres e sete das doze descrições com 109 a 119
     // (AUDITORIA-SITE-2026-11-11 §5). O nível CEFR do capítulo entra no título: é o que a pessoa procura.
     return { status: 200, caminho: p, titulo: `${l.nome}, cap. ${c.n}: ${c.titulo.split(':')[0]}${c.nivel ? ` (${c.nivel.toUpperCase()})` : ''}`, semMarca: true, descricao: descricaoCapitulo(l, c), ...livroBase, jsonld: [
-      { '@context': 'https://schema.org', '@type': 'Chapter', name: `Capítulo ${c.n}: ${c.titulo}`, position: c.n, url, inLanguage: 'pt-BR', isAccessibleForFree: true, educationalLevel: c.nivel || undefined, timeRequired: `PT${minutosDeLeitura(c)}M`, isPartOf: { '@type': 'Book', name: tituloLivro(l), url: `${SITE}/livros/${l.id}` }, author: AUTORES.map((a) => ({ '@type': 'Person', name: a.nome, url: `${SITE}/sobre#${a.id}` })), publisher: { '@id': ORG_ID } },
+      { '@context': 'https://schema.org', '@type': 'Chapter', name: `Capítulo ${c.n}: ${c.titulo}`, position: c.n, url, inLanguage: 'pt-BR', isAccessibleForFree: true, educationalLevel: c.nivel || undefined, timeRequired: `PT${minutosDeLeitura(c)}M`, dateModified: dataDe(`/livros/${l.id}/capitulo/${c.n}`), isPartOf: { '@type': 'Book', name: tituloLivro(l), url: `${SITE}/livros/${l.id}` }, author: AUTORES.map((a) => ({ '@type': 'Person', name: a.nome, url: `${SITE}/sobre#${a.id}` })), publisher: { '@id': ORG_ID } },
       { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Livros', item: `${SITE}/livros` }, { '@type': 'ListItem', position: 2, name: l.nome, item: `${SITE}/livros/${l.id}` }, { '@type': 'ListItem', position: 3, name: `Capítulo ${c.n}`, item: url }] },
     ] };
   }
@@ -261,7 +268,6 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
       ? { titulo: SEO_EN.cursosT, descricao: SEO_EN.cursosD }
       : { titulo: SEO_BR.cursosT, descricao: SEO_BR.cursosD },
     // Curso de português para estrangeiros: explicado em inglês, existe só no .com (no .com.br, 301 para cá).
-    '/portugues': { titulo: tx.pt, descricao: tx.ptD, em: ['en'] },
     // Aulas ao vivo de russo: existe em português e em inglês.
     '/russo-online': { titulo: AULAS_RUSSO[loc.codigo === 'en' ? 'en' : 'pt-BR'].titulo, descricao: AULAS_RUSSO[loc.codigo === 'en' ? 'en' : 'pt-BR'].descricao, em: ['pt-BR', 'en'] },
     '/entrar': loc.codigo === 'en' ? { titulo: SEO_EN.entrarT, descricao: SEO_EN.entrarD, semIndice: true } : { titulo: tx.entrar, semIndice: true },
@@ -280,7 +286,7 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     if (p === '/assinatura') {
       const en = loc.codigo === 'en';
       jsonld.push(
-        { '@context': 'https://schema.org', '@type': 'Product', name: en ? 'Linvuu Subscription' : 'Assinatura Linvuu', description: fixas[p].descricao, image: `${SITE}/brand/linvuu-logo.png`, brand: { '@type': 'Brand', name: 'Linvuu' }, ...trechoSchema(aprovadasPorDominio[en ? 'global' : 'br']), offers: (en ? [['Monthly', precoSchema(CENTAVOS_USD.mensal)], ['Annual', precoSchema(CENTAVOS_USD.anual)]] : [['Mensal', precoSchema(CENTAVOS.mensal)], ['Trimestral Pix', precoSchema(CENTAVOS['trimestral-pix'])], ['Trimestral cartão ou boleto', precoSchema(CENTAVOS.trimestral)], ['Anual', precoSchema(CENTAVOS.anual)]]).map(([name, price]) => ({ '@type': 'Offer', name, price, priceCurrency: en ? 'USD' : 'BRL', availability: 'https://schema.org/InStock', url: `${SITE}/assinatura`, hasMerchantReturnPolicy: POLITICA_REEMBOLSO })) },
+        { '@context': 'https://schema.org', '@type': 'Product', name: en ? 'Linvuu Subscription' : 'Assinatura Linvuu', description: fixas[p].descricao, image: `${SITE}/brand/linvuu-logo.png`, brand: { '@type': 'Brand', name: 'Linvuu' }, ...trechoSchema(aprovadasPorDominio[en ? 'global' : 'br']), offers: (en ? [['Monthly', precoSchema(CENTAVOS_USD.mensal)], ['Annual', precoSchema(CENTAVOS_USD.anual)]] : [['Mensal', precoSchema(CENTAVOS.mensal)], ['Trimestral Pix', precoSchema(CENTAVOS['trimestral-pix'])], ['Trimestral cartão ou boleto', precoSchema(CENTAVOS.trimestral)], ['Anual', precoSchema(CENTAVOS.anual)]]).map(([name, price]) => ({ '@type': 'Offer', name, price, priceCurrency: en ? 'USD' : 'BRL', availability: 'https://schema.org/InStock', url: `${SITE}/assinatura`, hasMerchantReturnPolicy: politicaReembolso(en) })) },
         { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: en
           ? [{ '@type': 'Question', name: 'Can I try it without a card?', acceptedAnswer: { '@type': 'Answer', text: 'The first two lessons of every course are free, with no card required.' } }, { '@type': 'Question', name: 'What currency are the prices in?', acceptedAnswer: { '@type': 'Answer', text: 'Prices are in US dollars (US$19.99 a month or US$149 for 12 months, paid by card). The first two lessons of every course are free.' } }]
           : [{ '@type': 'Question', name: 'Posso experimentar sem cartão?', acceptedAnswer: { '@type': 'Answer', text: 'As duas primeiras aulas de cada curso são gratuitas, sem cartão.' } }, { '@type': 'Question', name: 'Qual é o desconto no Pix?', acceptedAnswer: { '@type': 'Answer', text: `O plano trimestral custa ${PRECO_TRIMESTRAL_PIX} no Pix, 30% de desconto sobre ${PRECO_TRIMESTRAL}.` } }] },
@@ -350,7 +356,13 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     // grátis repetiam o hub (mesmo cabeçalho, mesma navegação, ~400 palavras). A sessão continua acessível e é o teste
     // grátis que o hub anuncia, mas sai do índice e do sitemap: a página de busca do curso é o hub (`/curso/<id>`).
     // `noindex` sem `Disallow` no robots.txt, para o Google poder ler a marca e retirar a URL do índice.
-    return { status: 200, caminho: p, titulo: `${t} · ${nomeTitulo} · ${tx.dia(n)}`, semMarca: true, descricao: descAula, semIndice: true,
+    // Exceção de 13/11/2026 (Felipe, depois da auditoria externa): a SESSÃO 1 de cada curso volta a ser indexável no idioma
+    // em que a explicação dela existe — é a porta de entrada grátis e o Search Console já mostrava demanda nas sessões.
+    // As sessões 2 em diante continuam noindex e fora do sitemap.
+    const primeira = n === 1 && temNo(loc);
+    const titPrimeira = loc.codigo === 'en' ? `${t}: free ${nomeTitulo} lesson` : `${t}: aula grátis de ${nomeTitulo.toLowerCase()}`;
+    return { status: 200, caminho: p, titulo: primeira && titPrimeira.length <= 60 ? titPrimeira : `${t} · ${nomeTitulo} · ${tx.dia(n)}`, semMarca: true, descricao: descAula, semIndice: primeira ? undefined : true,
+      em: primeira ? LOCALES.filter(temNo).map((l) => l.codigo) : undefined,
       // Sessão grátis: dados de recurso educacional, sempre gratuito (as demais são por assinatura e não ganham marcação de gratuidade)
       jsonld: n <= SESSOES_GRATIS ? [{
         '@context': 'https://schema.org', '@type': 'LearningResource', name: tx.aula(g.aula, t, c.nome), description: descAula, url: `${urlAbsolutaEm(loc.codigo, p)}`,
@@ -363,9 +375,12 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
   if (m) {
     // Hub de gramática: título com o termo que a pessoa digita e descrição própria nos dois idiomas.
     // Até 11/11/2026 devolvia só `tx.gram` («Gramática»/«Grammar»), sem descrição — leia-se SEO_BR.gramaticaT.
-    if (!m[1]) return loc.codigo === 'en'
-      ? { status: 200, caminho: p, titulo: SEO_EN.gramaticaT, descricao: SEO_EN.gramaticaD }
-      : { status: 200, caminho: p, titulo: SEO_BR.gramaticaT, descricao: SEO_BR.gramaticaD };
+    if (!m[1]) {
+      const tit = loc.codigo === 'en' ? SEO_EN.gramaticaT : SEO_BR.gramaticaT;
+      const hubJson = [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: tit, url: urlAbsolutaEm(loc.codigo, p), inLanguage: loc.codigo, isPartOf: { '@id': ORG_ID } },
+        { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: tx.inicio, item: urlAbsolutaEm(loc.codigo, '/') }, { '@type': 'ListItem', position: 2, name: tx.gram, item: urlAbsolutaEm(loc.codigo, p) }] }];
+      return { status: 200, caminho: p, titulo: tit, descricao: loc.codigo === 'en' ? SEO_EN.gramaticaD : SEO_BR.gramaticaD, jsonld: hubJson };
+    }
     const c = curso(m[1]);
     if (!c) return naoEncontrada(p, loc);
     const url = `${urlAbsolutaEm(loc.codigo, p)}`;
@@ -387,7 +402,7 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
       status: 200, caminho: p, titulo: titGram, h1: tx.gramC(c.nome), descricao: descGram, semIndice: !gramEm(loc) || undefined, em: LOCALES.filter(gramEm).map((l) => l.codigo),
       jsonld: [
         // A página de gramática é o recurso de referência do curso: tópicos e tabelas cuja descrição nomeia a língua real das explicações.
-        { '@context': 'https://schema.org', '@type': 'LearningResource', name: titGram, description: descGram, url, inLanguage: loc.codigo, learningResourceType: 'Grammar reference', teaches: c.nome, isPartOf: { '@type': 'Course', name: tx.cursoJ(c.nome), url: cursoUrl }, provider: { '@id': ORG_ID } },
+        { '@context': 'https://schema.org', '@type': 'LearningResource', name: titGram, description: descGram, url, inLanguage: loc.codigo, learningResourceType: 'Grammar reference', teaches: c.nome, dateModified: dataDe(loc.codigo === 'en' ? `/en${p}` : p), isPartOf: { '@type': 'Course', name: tx.cursoJ(c.nome), url: cursoUrl }, provider: { '@id': ORG_ID } },
         { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: tx.inicio, item: `${urlAbsolutaEm(loc.codigo, '/')}` }, { '@type': 'ListItem', position: 2, name: c.nome, item: cursoUrl }, { '@type': 'ListItem', position: 3, name: titGram, item: url }] },
       ],
     };
@@ -408,7 +423,7 @@ function menuPreRender(loc: Locale): string {
   if (loc.codigo === 'pt-BR') return '<nav aria-label="Principal"><a href="/cursos">Cursos</a> · <a href="/livros">Livros</a> · <a href="/sobre">Quem somos</a> · <a href="/por-que-linvuu">Por que estudar com a Linvuu?</a> · <a href="/contato">Contato</a> · <a href="/privacidade">Privacidade</a></nav>';
   const tx = TX[loc.codigo];
   const a = (href: string, texto: string) => `<a href="${esc(caminhoEm(loc.codigo, href))}">${esc(texto)}</a>`;
-  const itens = [a('/', tx.inicio), a('/cursos', tx.cursos), a('/sobre', tx.sobre), a('/por-que-linvuu', tx.porQue), a('/gramatica', tx.gram), ...(loc.codigo === 'en' ? [a('/portugues', tx.ptNav)] : []), a('/contato', loc.codigo === 'en' ? 'Contact' : 'Contato'), a('/termos', tx.termos), a('/privacidade', tx.priv)];
+  const itens = [a('/', tx.inicio), a('/cursos', tx.cursos), a('/sobre', tx.sobre), a('/por-que-linvuu', tx.porQue), a('/gramatica', tx.gram), ...(loc.codigo === 'en' ? [a('/curso/br', tx.ptNav)] : []), a('/contato', loc.codigo === 'en' ? 'Contact' : 'Contato'), a('/termos', tx.termos), a('/privacidade', tx.priv)];
   return `<nav aria-label="${loc.codigo === 'en' ? 'Main' : 'Principal'}">${itens.join(' · ')}</nav>`;
 }
 
@@ -537,7 +552,11 @@ function gramaticaGratisParaHtml(d: DadosMeta | null, idioma: string, sufixo: st
 
 const SITE_BR = 'https://linvuu.com.br';
 // Política real do site (paywall e termos): reembolso integral em até 7 dias.
-const POLITICA_REEMBOLSO = { '@type': 'MerchantReturnPolicy', applicableCountry: 'BR', returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow', merchantReturnDays: 7, returnFees: 'https://schema.org/FreeReturn' };
+// Reembolso de 7 dias: vale para quem compra em cada domínio. No .com (USD) a política não é do Brasil — até 13/11/2026
+// o JSON-LD do .com declarava applicableCountry «BR». returnPolicyCountry é obrigatório desde março/2025.
+// Produto digital: sem devolução física, por isso returnMethod fica de fora (e shippingDetails não se aplica).
+const PAISES_GLOBAL = ['US', 'GB', 'CA', 'AU', 'IE', 'NZ'];
+const politicaReembolso = (en: boolean) => ({ '@type': 'MerchantReturnPolicy', applicableCountry: en ? PAISES_GLOBAL : 'BR', returnPolicyCountry: en ? PAISES_GLOBAL : 'BR', returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow', merchantReturnDays: 7, returnFees: 'https://schema.org/FreeReturn' });
 const orgId = (site: string) => `${site}/#organizacao`;
 const organizacao = (SITE: string) => ({ '@context': 'https://schema.org', '@type': 'EducationalOrganization', '@id': orgId(SITE), name: 'Linvuu', url: SITE, logo: `${SITE}/brand/linvuu-logo.png`, email: emailOficial(), sameAs: [SITE_BR, siteDoIdioma('en'), ...REDES.filter((r) => r.url).map((r) => r.url)].filter((u) => u !== SITE), founder: AUTORES.map((a) => ({ '@type': 'Person', '@id': `${SITE}/sobre#${a.id}`, name: a.nome, sameAs: [...a.links] })) });
 const pessoa = (a: (typeof AUTORES)[number], SITE: string) => ({ '@context': 'https://schema.org', '@type': 'Person', '@id': `${SITE}/sobre#${a.id}`, name: a.nome, url: `${SITE}/sobre#${a.id}`, worksFor: { '@id': orgId(SITE) }, sameAs: [...a.links], knowsAbout: ['Matemática', 'Linguística', 'Ensino de idiomas', 'Inteligência artificial', 'Teoria dos números', 'Álgebra linear'] });
@@ -593,14 +612,22 @@ export function aplicarMeta(html: string, m: MetaRota, _site: string, d: DadosMe
   troca(/(<html lang=")[^"]*(")/, loc.codigo);
   troca(/(<meta property="og:locale" content=")[^"]*(")/, loc.og);
   troca(/(<meta property="og:url" content=")[^"]*(")/, url);
-  troca(/(<meta property="og:image" content=")[^"]*(")/, esc(`${site}/brand/avatar-1080.png`));
+  // Imagem de compartilhamento 1200×630 no idioma da página (até 13/11/2026 era o avatar quadrado de 1080, recortado nas prévias).
+  const ogImg = `${site}/brand/${loc.codigo === 'en' ? 'og-en' : 'og-pt'}.png`;
+  troca(/(<meta property="og:image" content=")[^"]*(")/, esc(ogImg));
+  troca(/(<meta property="og:image:width" content=")[^"]*(")/, '1200');
+  troca(/(<meta property="og:image:height" content=")[^"]*(")/, '630');
+  troca(/(<meta property="og:image:alt" content=")[^"]*(")/, loc.codigo === 'en' ? 'Linvuu: languages explained in English, with audio for every sentence' : 'Linvuu: idiomas explicados em português, com áudio em cada frase');
   troca(/(<link rel="canonical" href=")[^"]*(")/, url);
   const alternativos = alternativosDe(m, _site, d).map((x) => `<link rel="alternate" hreflang="${x.hreflang}" href="${esc(x.href)}" />`).join('\n    ');
   out = out.replace(/<link rel="alternate" hreflang="pt-BR" href="[^"]*" \/>/, () => alternativos);
+  // og:locale:alternate: a mesma página existe no outro domínio, no outro idioma.
+  const outrosOg = alternativosDe(m, _site, d).map((x) => LOCALES.find((l) => l.codigo === x.hreflang)?.og).filter((o): o is string => !!o && o !== loc.og);
+  if (outrosOg.length) out = out.replace('</head>', () => [...new Set(outrosOg)].map((o) => `<meta property="og:locale:alternate" content="${o}" />`).join('') + '\n</head>');
   troca(/(<meta name="twitter:card" content=")[^"]*(")/, 'summary_large_image');
   const twitterTitle = esc(m.semMarca && m.titulo ? m.titulo : `${m.titulo ?? 'Linvuu'} · Linvuu`);
   const twitterDescription = esc(m.descricao ?? DESC_PADRAO[loc.codigo]);
-  out = out.replace('</head>', () => `<meta name="twitter:title" content="${twitterTitle}" /><meta name="twitter:description" content="${twitterDescription}" /><meta name="twitter:image" content="${esc(site)}/brand/avatar-1080.png" />\n</head>`);
+  out = out.replace('</head>', () => `<meta name="twitter:title" content="${twitterTitle}" /><meta name="twitter:description" content="${twitterDescription}" /><meta name="twitter:image" content="${esc(ogImg)}" />\n</head>`);
   if (m.jsonld?.length) out = out.replace('</head>', () => m.jsonld!.map((j) => `    <script type="application/ld+json">${JSON.stringify(j).replace(/</g, '\\u003c')}</script>\n`).join('') + '  </head>');
   const conteudo = conteudoRota(m, d, loc);
   if (conteudo) out = out.replace('<div id="root"></div>', () => `<div id="root">${semOfuscacaoDeEmail(conteudo)}</div>`);

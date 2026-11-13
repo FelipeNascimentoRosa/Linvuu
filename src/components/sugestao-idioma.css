@@ -1,19 +1,22 @@
-/* Sugestão de idioma. Regra de design: nunca cobrir logo, menu ou herói.
-   Desktop: ocupa exatamente a faixa fina do topo (.barra-topo, altura fixa), por cima dela; o cabeçalho fica livre.
-   Celular: a faixa do topo não existe; vira um cartão pequeno no rodapé da tela, acima do aviso de cookies.
-   Em ambos é fixa ou absoluta: aparecer depois do carregamento não empurra a página (sem CLS). */
-.sugestao-idioma{position:absolute;top:0;left:0;right:0;z-index:900;height:calc(var(--barra-topo-h) + env(safe-area-inset-top,0px));padding:env(safe-area-inset-top,0px) 16px 0;
-  display:flex;align-items:center;justify-content:center;gap:16px;background:var(--verde-floresta);color:var(--papel);font-size:.875rem;white-space:nowrap}
-.sugestao-idioma p{margin:0;overflow:hidden;text-overflow:ellipsis}
-.sugestao-idioma a{color:var(--papel);font-weight:700;text-decoration:underline;text-underline-offset:3px;display:inline-flex;align-items:center;min-height:var(--barra-topo-h)}
-.sugestao-idioma button{min-height:32px;padding:0 12px;border:1px solid rgba(245,241,232,.5);border-radius:8px;background:transparent;color:var(--papel);font:inherit;cursor:pointer}
+/* Sugestão de idioma. Regra de design: nunca cobrir logo, menu, herói nem os links da faixa do topo.
+   Desktop: texto discreto no lado ESQUERDO da faixa fina do topo, que fica vazio (os links da faixa ficam à direita).
+   Fundo transparente e largura limitada: não pinta por cima de nada (até 13/11/2026 era uma faixa verde opaca de lado
+   a lado que cobria «Receber novidades» e «Contato» — regra text-occlusion do detector Impeccable, 19 ocorrências).
+   Celular: a faixa do topo não existe; vira uma pílula no espaço livre do cabeçalho, entre o logo e o menu.
+   Em ambos é absoluta: aparecer depois do carregamento não empurra a página (sem CLS). */
+.sugestao-idioma{position:absolute;top:0;z-index:900;height:calc(var(--barra-topo-h) + env(safe-area-inset-top,0px));padding-top:env(safe-area-inset-top,0px);
+  left:max(var(--pad),calc((100vw - 1320px) / 2 + var(--pad)));right:auto;max-width:calc(100vw - 2 * var(--pad) - 340px);
+  display:flex;align-items:center;gap:14px;background:transparent;color:var(--text);font-size:13px;white-space:nowrap}
+.sugestao-idioma p{margin:0;overflow:hidden;text-overflow:ellipsis;color:var(--muted)}
+.sugestao-idioma a{color:var(--verde-floresta);font-weight:700;text-decoration:underline;text-underline-offset:3px;display:inline-flex;align-items:center;min-height:var(--barra-topo-h)}
+.sugestao-idioma button{min-height:28px;padding:0 10px;border:1px solid var(--border);border-radius:var(--r-control);background:transparent;color:var(--text);font:inherit;cursor:pointer}
 .sugestao-idioma :focus-visible{outline:3px solid var(--ocre);outline-offset:2px}
 .sugestao-idioma .si-curto{display:none}
-/* Celular: não há faixa do topo. Vira uma pílula no espaço livre do cabeçalho, entre o logo e o menu, sem cobrir nenhum dos dois. */
 @media(max-width:760px){
-  .sugestao-idioma{top:calc(env(safe-area-inset-top,0px) + 12px);left:auto;right:64px;height:44px;padding:0 2px 0 14px;border-radius:999px;gap:2px;box-shadow:var(--sombra-flutuante)}
+  .sugestao-idioma{top:calc(env(safe-area-inset-top,0px) + 12px);left:auto;right:64px;max-width:none;height:44px;padding:0 2px 0 14px;border-radius:999px;gap:2px;background:var(--verde-floresta);color:var(--papel);box-shadow:var(--sombra-flutuante)}
+  .sugestao-idioma a{color:var(--papel)}
   .sugestao-idioma p,.sugestao-idioma .si-longo{display:none}
   .sugestao-idioma .si-curto{display:inline}
   .sugestao-idioma a{min-height:44px;font-size:.875rem}
-  .sugestao-idioma button{min-width:44px;min-height:44px;border:0;font-size:1.25rem;line-height:1}
+  .sugestao-idioma button{min-width:44px;min-height:44px;border:0;color:var(--papel);font-size:1.25rem;line-height:1}
 }

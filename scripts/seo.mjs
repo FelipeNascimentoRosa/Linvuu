@@ -40,7 +40,7 @@ const alvoPadrao = (g) => {
 // sem noindex desde a correção de integridade hreflang), por isso entra com <loc> próprio em todas.
 grupos.push({ p: '/', em: todos() }, { p: '/cursos', em: todos(), anot: todos() }, { p: '/assinatura', em: todos(), anot: todos() });
 // Sobre, Por que Linvuu e Contato: em todas as línguas (texto próprio em cada uma — Contato passou a existir em inglês em 09/11/2026). Livros e Ex-alunos: só em português. Cada capítulo de amostra publicado (content/livros/<idioma>/cap-NN.json) entra no sitemap.
-grupos.push({ p: '/portugues', em: ['en'] }, { p: '/russo-online', em: ['pt-BR', 'en'], anot: ['pt-BR', 'en'] }, { p: '/sobre', em: todos(), anot: todos() }, { p: '/por-que-linvuu', em: todos(), anot: todos() }, { p: '/contato', em: todos(), anot: todos() }, { p: '/ex-alunos-udemy', em: ['pt-BR'] }, { p: '/livros', em: ['pt-BR'] });
+grupos.push({ p: '/russo-online', em: ['pt-BR', 'en'], anot: ['pt-BR', 'en'] }, { p: '/sobre', em: todos(), anot: todos() }, { p: '/por-que-linvuu', em: todos(), anot: todos() }, { p: '/contato', em: todos(), anot: todos() }, { p: '/ex-alunos-udemy', em: ['pt-BR'] }, { p: '/livros', em: ['pt-BR'] });
 // Hub da gramática: desde 12/11/2026 é uma página de verdade (src/pages/Gramatica.tsx sem id lista as gramáticas
 // do domínio), com o mesmo título no <head> e no <h1>; por isso entra no sitemap nas duas línguas.
 grupos.push({ p: '/gramatica', em: todos(), anot: todos() });
@@ -72,6 +72,9 @@ for (const c of cursos.filter((x) => x.status !== 'em-breve')) {
   const emGram = oferecidos.filter((l) => temGramatica(c.id, l)).map((l) => l.c);
   if (emHub.length) grupos.push({ p: `/curso/${c.id}`, em: emHub });
   if (emGram.length) grupos.push({ p: `/gramatica/${c.id}`, em: emGram });
+  // Sessão 1 (decisão de 13/11/2026): indexável onde o curso inteiro está explicado na língua da página (a sessão 1 é
+  // da aula 1; curso completo implica a aula 1 explicada). Mesma regra de metaRota.ts (temNo com n = 1).
+  if (emHub.length) grupos.push({ p: `/curso/${c.id}/dia/1`, em: emHub });
 }
 const url = (c, p) => { const l = LOCALES.find((x) => x.c === c); return `${l.site}${l.p ? (p === '/' ? l.p : l.p + p) : p}`; };
 // chave do manifesto de lastmod: o caminho no esquema antigo (/, /en, /es), único por idioma
@@ -97,3 +100,90 @@ const robots = (site) => `User-agent: *\nAllow: /\nAllow: /api/gramatica/\nDisal
 fs.writeFileSync(path.join(raiz, 'public', 'robots.txt'), robots(SITE_BR));
 fs.writeFileSync(path.join(raiz, 'public', 'robots-global.txt'), robots(SITE_GLOBAL));
 console.log(`sitemap .com.br: ${linhasBr.length} endereços (pt-BR) · sitemap .com: ${linhasGlobal.length} endereços (en)`);
+
+// llms.txt dos dois domínios, gerados aqui das MESMAS listas do sitemap (decisão de 13/11/2026, auditoria externa):
+// o arquivo estático do .com dizia que espanhol e alemão «não são oferecidos» enquanto o sitemap os listava completos,
+// e o do .com.br trazia o e-mail do .com. Preços lidos de src/config/planos.ts (fonte única); links em Markdown,
+// que é o que a regra llms-txt do Lighthouse exige.
+{
+  const planos = fs.readFileSync(path.join(raiz, 'src', 'config', 'planos.ts'), 'utf8');
+  const centavos = (nome) => Object.fromEntries([...planos.match(new RegExp(`export const ${nome} = \\{([^}]*)\\}`))[1].matchAll(/'?([\w-]+)'?:\s*(\d+)/g)].map(([, k, v]) => [k, Number(v)]));
+  const BRL = centavos('CENTAVOS'), USD = centavos('CENTAVOS_USD');
+  const fund = planos.match(/codigo: '(\w+)', precoMes: '([^']+)', validade: '([^']+)'/);
+  const real = (c) => 'R$ ' + (c / 100).toFixed(2).replace('.', ',').replace(/,00$/, '');
+  const dolar = (c) => 'US$' + (c / 100).toFixed(2);
+  const lista = JSON.parse(fs.readFileSync(path.join(raiz, 'content', 'cursos.json'), 'utf8'));
+  const nomes = Object.fromEntries((Array.isArray(lista) ? lista : lista.cursos).map((c) => [c.id, { pt: c.nome, en: c.i18n?.en?.nome ?? c.nome }]));
+  const noSitemap = (loc, p) => grupos.some((g) => g.p === p && g.em.includes(loc));
+  const md = (t, u) => `[${t}](${u})`;
+  const cursosDe = (loc, site, en) => cursos.filter((c) => noSitemap(loc, `/curso/${c.id}`)).map((c) => {
+    const n = nomes[c.id]?.[en ? 'en' : 'pt'] ?? c.id;
+    const aulas = indice[c.id]?.grupos?.length;
+    const gram = noSitemap(loc, `/gramatica/${c.id}`) ? ` · ${md(en ? `${n} grammar` : `Gramática de ${n.toLowerCase()}`, `${site}/gramatica/${c.id}`)}` : '';
+    return `- ${md(en ? `${n} course` : `Curso de ${n.toLowerCase()}`, `${site}/curso/${c.id}`)}${aulas ? (en ? ` (${aulas} lessons, A1 to B1)` : ` (${aulas} aulas, do A1 ao B1)`) : ''}: ${md(en ? 'free first lesson' : 'primeira aula grátis', `${site}/curso/${c.id}/dia/1`)}${gram}`;
+  });
+  const br = `# Linvuu (Brasil)
+
+> Cursos de idiomas e livros de gramática explicados em português, do zero ao B1, com áudio em cada frase. Escritos por Felipe Nascimento Rosa e Luiza Nascimento Rosa. As 2 primeiras aulas de cada curso são grátis, sem cartão.
+
+## Como funciona
+- Cada aula tem 4 sessões de 30 minutos: ouvir e ler, entender a regra comparada com o português, praticar com correção imediata.
+- Áudio nas frases, palavras e diálogos.
+- Trilha do A1 ao B1 do Quadro Europeu Comum de Referência. Não prometemos fluência nem prazo.
+
+## Cursos explicados em português
+${cursosDe('pt-BR', SITE_BR, false).join('\n')}
+- ${md('Todos os cursos', `${SITE_BR}/cursos`)}
+- ${md('Gramáticas', `${SITE_BR}/gramatica`)}
+- ${md('Aulas de russo ao vivo, com professor', `${SITE_BR}/russo-online`)}
+
+## Livros de gramática
+- ${md('Catálogo dos livros', `${SITE_BR}/livros`)}: os capítulos 1 e 2 de cada livro são de leitura gratuita.
+
+## Planos e preços
+- ${md('Página de planos', `${SITE_BR}/assinatura`)}
+- Mensal: ${real(BRL.mensal)} por mês, renovação automática.${fund ? ` Com o código ${fund[1]} (ex-alunos da Udemy): ${fund[2]} por mês, válido até ${fund[3]}.` : ''}
+- Trimestral: ${real(BRL.trimestral)} no cartão ou boleto, ou ${real(BRL['trimestral-pix'])} no Pix; pagamento único.
+- Anual: ${real(BRL.anual)}; pagamento único.
+- Reembolso integral em até 7 dias.
+
+## Quem escreve
+- ${md('Autores', `${SITE_BR}/sobre`)}
+- ${md('Por que estudar com a Linvuu', `${SITE_BR}/por-que-linvuu`)}
+- ${md('Contato', `${SITE_BR}/contato`)}: contato@linvuu.com.br
+
+## Versão em inglês
+- ${md('Cursos explicados em inglês, para quem fala inglês', SITE_GLOBAL)}
+`;
+  const gl = `# Linvuu (International)
+
+> Online language courses for English speakers, from zero to B1, explained in English with audio for every sentence. Written by Felipe Nascimento Rosa and Luiza Nascimento Rosa. The first 2 lessons of every course are free, no card required.
+
+## How it works
+- Each lesson has 4 sessions of 30 minutes: listen and read, understand the rule compared with English, practise with instant correction.
+- Audio for sentences, words and dialogues.
+- A path from A1 to B1 of the Common European Framework of Reference. We do not promise fluency or a deadline.
+
+## Courses explained in English
+${cursosDe('en', SITE_GLOBAL, true).join('\n')}
+- ${md('All courses', `${SITE_GLOBAL}/cursos`)}
+- ${md('Grammar guides', `${SITE_GLOBAL}/gramatica`)}
+- ${md('Live online Russian lessons with a teacher', `${SITE_GLOBAL}/russo-online`)}
+
+## Plans and prices
+- ${md('Pricing page', `${SITE_GLOBAL}/assinatura`)}
+- Prices are in US dollars, paid by card.
+- Monthly: ${dolar(USD.mensal)} a month, renews automatically.
+- Annual: ${dolar(USD.anual)}, one-time payment for 12 months.
+- Full refund within 7 days.
+
+## About
+- ${md('Authors', `${SITE_GLOBAL}/sobre`)}
+- ${md('Contact', `${SITE_GLOBAL}/contato`)}: contato@linvuu.com
+
+## Portuguese version
+- ${md('Courses explained in Portuguese, for Portuguese speakers', SITE_BR)}
+`;
+  fs.writeFileSync(path.join(raiz, 'public', 'llms.txt'), br);
+  fs.writeFileSync(path.join(raiz, 'public', 'llms-global.txt'), gl);
+}

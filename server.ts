@@ -76,6 +76,8 @@ registrarCtas(app); // POST /api/cta: clique de botão contado sem cookie e sem 
   // 7. Vite Middleware Integration (Dev) or Static dist (Prod)
   // -------------------------------------------------------------
   if (process.env.NODE_ENV === 'production') {
+    // /index.html é o modelo da SPA, não uma página: 301 para a raiz (antes respondia 200 com outro título e sem h1).
+    app.get('/index.html', (req: Request, res: Response) => { const q = req.originalUrl.indexOf('?'); res.redirect(301, '/' + (q >= 0 ? req.originalUrl.slice(q) : '')); });
     // sitemap.xml e robots.txt: rota explícita ANTES do express.static e do catch-all. Saem do dist como arquivo puro, com o tipo certo, e nunca
     // viram o HTML da SPA (o Search Console recusa um sitemap que chega como text/html).
     const arquivoEstatico = (nome: string, tipo: string) => (_req: Request, res: Response) => {
@@ -175,7 +177,7 @@ registrarCtas(app); // POST /api/cta: clique de botão contado sem cookie e sem 
       [/^\/gramatica(\/[a-z]{2})?$/, 'src/pages/Gramatica.tsx'],
       [/^\/livros(\/.*)?$/, 'src/pages/Livros.tsx'],
       [/^\/(termos|privacidade)$/, 'src/plataforma/website/Legal.tsx'],
-      [/^\/sobre$/, 'src/pages/Sobre.tsx'], [/^\/por-que-linvuu$/, 'src/pages/PorQue.tsx'], [/^\/contato$/, 'src/pages/Contato.tsx'], [/^\/portugues$/, 'src/pages/Portugues.tsx'],
+      [/^\/sobre$/, 'src/pages/Sobre.tsx'], [/^\/por-que-linvuu$/, 'src/pages/PorQue.tsx'], [/^\/contato$/, 'src/pages/Contato.tsx'],
     ];
     const preloadCache = new Map<string, string>();
     const comPreloadDaRota = (html: string, caminho: string) => {
@@ -196,7 +198,7 @@ registrarCtas(app); // POST /api/cta: clique de botão contado sem cookie e sem 
     // Arquivo de /assets que não existe mais (aba aberta antes de um deploy) deve dar 404 de verdade, não o HTML do site.
     app.get('/assets/*arquivo', (_req: Request, res: Response) => { res.status(404).type('text/plain').send('Not found'); });
     // Endereços que mudaram de lugar: redirecionamento permanente (o Google transfere a relevância).
-    app.get(['/brazilian-portuguese', '/en/brazilian-portuguese', '/es/brazilian-portuguese'], (_req: Request, res: Response) => { res.redirect(301, `${SITE_GLOBAL_URL}/portugues`); });
+    app.get(['/brazilian-portuguese', '/en/brazilian-portuguese', '/es/brazilian-portuguese'], (_req: Request, res: Response) => { res.redirect(301, `${SITE_GLOBAL_URL}/curso/br`); });
     // Endereços antigos ou digitados à mão que davam 404.
     app.get('/metodo', (_req: Request, res: Response) => { res.redirect(301, '/#metodo'); });
     app.get('/preco', (_req: Request, res: Response) => { res.redirect(301, '/assinatura'); });
@@ -222,7 +224,10 @@ registrarCtas(app); // POST /api/cta: clique de botão contado sem cookie e sem 
       return cachePreRender.get(chave)!;
     };
     app.get('/{*pagina}', (req: Request, res: Response) => {
-      res.setHeader('Cache-Control', 'no-cache');
+      // no-transform: a Cloudflare não reescreve o HTML (a ofuscação de e-mail do .com trocava todo mailto: por
+      // /cdn-cgi/l/email-protection, que responde 404 para robôs — 23 páginas no linkinator de 12/11/2026).
+      // A compressão continua: o middleware compression comprime aqui na origem.
+      res.setHeader('Cache-Control', 'no-cache, no-transform');
       htmlBase ??= fs.readFileSync(path.resolve(__dirname, 'dist', 'index.html'), 'utf8');
       res.vary('Host');
       const base = htmlBase;

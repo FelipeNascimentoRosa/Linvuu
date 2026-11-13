@@ -1,6 +1,6 @@
 import { BotaoPreferencias } from './AnalyticsConsent';
 import { Link } from 'react-router-dom';
-import { CURSOS_ATIVOS, idiomasDeGramaticaNoSite, cursoComExplicacaoNoSite } from '../lib/content';
+import { CURSOS_ATIVOS, cursoComExplicacaoNoSite } from '../lib/content';
 import { emailOficial } from '../config/site';
 import { LOCALE, useT } from '../i18n';
 import { Redes } from './Redes';
@@ -32,8 +32,8 @@ export function Footer({ semNovidades = false }: { semNovidades?: boolean }) {
         <nav aria-label="Linvuu">
           <h2>Linvuu</h2>
           <Link to="/cursos">{t.nav.todos}</Link>
-          <Link to={`/gramatica/${idiomasDeGramaticaNoSite()[0] ?? 'ru'}`}>{t.nav.gramatica}</Link>
-          {LOCALE.codigo !== 'pt-BR' && <Link to="/portugues">{t.rodape.portugues}</Link>}
+          <Link to="/gramatica">{t.nav.gramatica}</Link>
+          {LOCALE.codigo !== 'pt-BR' && <Link to="/curso/br">{t.rodape.portugues}</Link>}
           {LOCALE.codigo === 'pt-BR' && <><Link to="/livros">Livros</Link><Link to="/sobre">{t.rodape.sobre}</Link><Link to="/por-que-linvuu">{t.rodape.porQue}</Link></>}
           {LOCALE.codigo !== 'pt-BR' && <><Link to="/sobre">{t.rodape.sobre}</Link><Link to="/por-que-linvuu">{t.rodape.porQue}</Link></>}
           <Link to="/#metodo">{t.nav.metodo}</Link>

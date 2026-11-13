@@ -52,9 +52,11 @@ const pad = (n, t) => String(n).padStart(t, '0');
 // O <head> de toda rota (título, descrição, idioma, canonical, hreflang) é gerado no servidor por estes arquivos:
 // quando eles mudam, o que o Google lê muda — a data precisa refletir isso (06/11: .com.br deixou de servir es/en).
 const CABECA = ['server/metaRota.ts', 'server/dominio.ts', 'src/i18n/locales.ts'];
+// 13/11/2026: o <head> e o roteamento por domínio deixaram de contar. Uma mudança em dominio.ts ou locales.ts marcava
+// TODAS as páginas com a mesma data (os auditores claude-seo e marketingskills viram «lastmod idêntico» em 83% das URLs);
+// o Google pede a data da última mudança significativa do conteúdo principal, não do modelo.
 function fontes(caminho, locale) {
-  const f = fontesDaPagina(caminho, locale);
-  return f ? [...f, ...CABECA] : f;
+  return fontesDaPagina(caminho, locale);
 }
 function fontesDaPagina(caminho, locale) {
   const L = locale === 'pt-BR' ? null : locale; // 'en' | 'es' | null
@@ -68,6 +70,9 @@ function fontesDaPagina(caminho, locale) {
     case '/contato': return ['src/pages/Contato.tsx', 'src/lib/institucional.ts', 'src/config/contato.ts'];
     case '/ex-alunos-udemy': return ['src/pages/ExAlunosUdemy.tsx'];
     case '/gramatica': return ['src/pages/Gramatica.tsx'];
+    case '/russo-online': return ['src/pages/AulasRusso.tsx', ...['src/lib/aulasRusso.ts', 'src/config/aulas-russo.ts'].filter((f) => fs.existsSync(path.join(raiz, f)))];
+    case '/privacidade': case '/termos': return ['src/pages/Legal.tsx', ...['src/lib/legal.ts', 'src/i18n/legal.ts'].filter((f) => fs.existsSync(path.join(raiz, f)))];
+    case '/excluir-conta': return ['src/pages/ExcluirConta.tsx'];
     case '/portugues': return ['src/pages/Portugues.tsx', TEXTO_LOCALE[locale]];
     case '/livros': return ['src/pages/Livros.tsx', ...fs.readdirSync(path.join(raiz, 'content', 'livros')).sort().map((id) => `content/livros/${id}/sumario.json`)];
   }
@@ -79,7 +84,7 @@ function fontesDaPagina(caminho, locale) {
   }
   if ((m = caminho.match(/^\/curso\/([a-z]{2})$/))) return ['content/cursos.json', 'content/indice.json', 'content/trilha.json', ...indiceL];
   if ((m = caminho.match(/^\/gramatica\/([a-z]{2})$/))) return [`content/gramatica/${m[1]}.json`, ...(L ? [`content/gramatica/${m[1]}.${L}.json`] : [])];
-  if ((m = caminho.match(/^\/livros\/([a-z]{2})\/capitulo\/(\d+)$/))) return ['src/pages/Livros.tsx', `content/livros/${m[1]}/sumario.json`, `content/livros/${m[1]}/cap-${pad(m[2], 2)}.json`];
+  if ((m = caminho.match(/^\/livros\/([a-z]{2})\/capitulo\/(\d+)$/))) return [`content/livros/${m[1]}/cap-${pad(m[2], 2)}.json`];
   if ((m = caminho.match(/^\/livros\/([a-z]{2})$/))) return ['src/pages/Livros.tsx', `content/livros/${m[1]}/sumario.json`, `content/livros/${m[1]}/cap-01.json`, `content/livros/${m[1]}/cap-02.json`];
   return null; // rota sem mapa de fontes: fica sem lastmod e é assinalada abaixo
 }

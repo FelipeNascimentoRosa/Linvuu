@@ -8,6 +8,8 @@ import { SESSOES_GRATIS } from '../src/config/planos.ts';
 const d = carregarDadosMeta(process.cwd());
 assert.ok(d, 'metadados carregados');
 const base = fs.readFileSync('index.html', 'utf8');
+const SITEMAP_BR = fs.readFileSync('public/sitemap.xml', 'utf8');
+const SITEMAP_GLOBAL = fs.readFileSync('public/sitemap-global.xml', 'utf8');
 let sessoes = 0, pagas = 0, gratuitas = 0;
 const inventario: { url: string; status: number; noindex: boolean; tipo: string }[] = [];
 for (const [perfil, loc] of LOCALES_POR_PERFIL) comPerfil(perfil, () => {
@@ -23,15 +25,23 @@ for (const [perfil, loc] of LOCALES_POR_PERFIL) comPerfil(perfil, () => {
       // Regra desde 11/11/2026: a sessão nunca é página de busca — a página de busca do curso é o hub (`/curso/<id>`).
       // A sessão continua servida a quem estuda (é a aula grátis que o hub anuncia), mas não recebe tráfego do Google.
       assert.equal(m.status, 200, p);
-      assert.ok(m.semIndice, `sessão fora do índice: ${p}`);
+      // Exceção de 13/11/2026: a sessão 1 é indexável exatamente onde o curso inteiro está explicado (e só ali está no sitemap).
+      const noSitemap = (loc.codigo === 'en' ? SITEMAP_GLOBAL : SITEMAP_BR).includes(`${urlAbsolutaEm(loc.codigo, p)}</loc>`);
+      if (n === 1) assert.equal(!m.semIndice, noSitemap, `sessão 1 indexável ⇔ no sitemap: ${p}`);
+      else assert.ok(m.semIndice, `sessão fora do índice: ${p}`);
       assert.equal(m.caminho, p);
       assert.ok(!titulos.has(m.titulo!), `título único para cada sessão: ${p}`);
       titulos.add(m.titulo!);
       const h = aplicarMeta(base, m, 'https://linvuu.com.br', d);
       assert.ok(h.includes(`rel="canonical" href="${urlAbsolutaEm(loc.codigo, p)}"`), p);
-      assert.ok(h.includes('name="robots" content="noindex"'), p);
-      assert.ok(!h.includes('<main data-prerender>'), `sessão não pré-renderizada: ${p}`);
-      assert.ok(!h.includes('hreflang='), `noindex não anuncia alternativas: ${p}`);
+      if (m.semIndice) {
+        assert.ok(h.includes('name="robots" content="noindex"'), p);
+        assert.ok(!h.includes('<main data-prerender>'), `sessão não pré-renderizada: ${p}`);
+        assert.ok(!h.includes('hreflang='), `noindex não anuncia alternativas: ${p}`);
+      } else {
+        assert.ok(!h.includes('name="robots" content="noindex"'), p);
+        assert.equal(h.includes("hreflang="), (m.em?.length ?? 0) > 1, `sessão 1 indexável anuncia alternativas só se existe o par: ${p}`);
+      }
       const anonimo = destinoSessao(c.id, n, false);
       assert.equal(anonimo, n > SESSOES_GRATIS ? '/assinatura' : `/curso/${c.id}/dia/${n}`);
       assert.equal(destinoSessao(c.id, n, true), `/curso/${c.id}/dia/${n}`, 'conta conserva navegação; autorização continua no backend');
@@ -56,7 +66,8 @@ const sitemap = fs.readFileSync('public/sitemap.xml', 'utf8') + fs.readFileSync(
 const urls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(m => m[1]);
 assert.equal(new Set(urls).size, urls.length, 'sitemap sem duplicatas');
 // 11/11/2026: nenhuma sessão de aula é anunciada — o índice do curso é o hub, não as 3.680 sessões.
-assert.ok(!urls.some(u => /\/dia\/\d+$/.test(u)), `sitemap não lista sessão de aula: ${urls.find(u => /\/dia\/\d+$/.test(u))}`);
+// 13/11/2026 (Felipe): exceção única para a sessão 1, a porta de entrada grátis de cada curso completo.
+assert.ok(!urls.some(u => /\/dia\/(?!1$)\d+$/.test(u)), `sitemap não lista sessão de aula além da 1: ${urls.find(u => /\/dia\/(?!1$)\d+$/.test(u))}`);
 for (const u of urls) {
   const { pathname: p, hostname } = new URL(u);
   comPerfil(perfilDoHost(hostname), () => {

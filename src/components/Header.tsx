@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { CURSOS_ATIVOS, idiomasDeGramaticaNoSite, cursoComExplicacaoNoSite } from '../lib/content';
+import { CURSOS_ATIVOS, cursoComExplicacaoNoSite } from '../lib/content';
 import { useAuth } from '../lib/AuthContext';
 import { LOCALE, useT } from '../i18n';
 import { homeText } from '../i18n/home';
@@ -9,7 +9,8 @@ import '../site-publico.css';
 // Gramática: o primeiro curso da vitrine que tem a aba de gramática.
 
 export function Header() {
-  const GRAMATICA = `/gramatica/${idiomasDeGramaticaNoSite()[0] ?? 'ru'}`;
+  // Hub /gramatica (13/11/2026): antes o menu levava à gramática de um curso só e o hub ficava órfão.
+  const GRAMATICA = '/gramatica';
   const [menu, setMenu] = useState(false);
   const [conta, setConta] = useState(false);
   const nav = useNavigate();
