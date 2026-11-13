@@ -67,7 +67,8 @@ export function Header() {
           ) : (
             <>
               <Link to={`/entrar${proximo}`} className="lv-entrar">{t.nav.entrar}</Link>
-              <Link to={`/cadastro${proximo}`} className="btn btn-primary lv-head-cta">{t.nav.comecar}</Link>
+              {/* Dentro da aula a pessoa já começou: o botão do topo oferece o que a conta dá, salvar o progresso (13/11/2026). */}
+              <Link to={`/cadastro${proximo}`} className="btn btn-primary lv-head-cta">{/^\/curso\/[a-z]{2}\/dia\//.test(loc.pathname) ? (LOCALE.codigo === 'pt-BR' ? 'Salvar meu progresso' : 'Save my progress') : t.nav.comecar}</Link>
             </>
           )}
         </div>

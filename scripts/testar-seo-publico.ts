@@ -34,13 +34,13 @@ assert.ok(rpt.includes('<h1>Aulas de russo online, ao vivo com professor</h1>') 
 assert.ok(ren.includes('<h1>Russian classes online, live with a teacher</h1>') && ren.includes('"@type":"Service"') && ren.includes('"@type":"FAQPage"') && ren.includes('What do I study between classes?'));
 assert.ok(!/noindex/.test(rpt) && !/noindex/.test(ren), 'pt e en indexáveis');
 assert.ok(fs.readFileSync('dist/sitemap.xml', 'utf8').includes('/russo-online'));
-assert.ok(html('/en').includes('Language courses for English speakers'));
+assert.ok(html('/en').includes('anguage courses for English speakers'));
 assert.ok(!html('/en').includes('Brazilian learners'));
 assert.ok(html('/en').includes('Spanish, German, French, Russian and Brazilian Portuguese, fully explained in English'));
 assert.ok(!html('/en').includes('Every explanation is in English'), 'a home em inglês não promete explicação em inglês onde ela não existe');
 assert.ok(!html('/en').includes('lessons explained in English'));
 assert.ok(!html('/assinatura').includes('name="robots" content="noindex"'));
-assert.ok(html('/assinatura').includes('<h1>Planos e assinatura</h1>'));
+assert.ok(html('/assinatura').includes('<h1>Planos e preços da Linvuu</h1>'));
 assert.ok(html('/assinatura').includes('id="oferta-atual"'));
 assert.ok(html('/assinatura').includes('R$ 139'));
 assert.ok(!html('/assinatura').includes(PLANOS_AVISO), 'planos em preparação não aparecem na assinatura');

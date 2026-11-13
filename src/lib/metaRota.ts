@@ -121,7 +121,7 @@ const TX = {
 const SEO_EN = {
   cursosT: 'Online language courses explained in English',
   cursosD: 'Language courses for English speakers: Spanish, German, French, Russian and Brazilian Portuguese, fully explained in English. Two free lessons.',
-  assinaturaT: 'Subscription: monthly and 12-month plans',
+  assinaturaT: `Pricing: ${PRECOS.en.mensal} a month or ${PRECOS.en.anual} a year`,
   assinaturaD: 'Learn languages with Linvuu: a monthly or 12-month plan, priced in US dollars, and the first two lessons of every course free. No card needed to start.',
   privT: 'Privacy policy: what data Linvuu collects',
   privD: "What data Linvuu collects, why we collect it, how long it stays and what your rights are under Brazil's LGPD data protection law, in plain English.",
@@ -158,7 +158,7 @@ const SEO_EN = {
 const SEO_BR = {
   cursosT: 'Cursos de idiomas online explicados em português',
   cursosD: 'Cursos de inglês, espanhol, francês, italiano, alemão e russo explicados em português, em sessões de 30 minutos. Duas aulas grátis, sem cartão.',
-  assinaturaT: 'Planos e assinatura: mensal, trimestral e anual',
+  assinaturaT: `Planos e preços: a partir de ${PRECO_MENSAL} por mês`,
   assinaturaD: 'Aprenda idiomas com a Linvuu: plano mensal, trimestral com 30% OFF no Pix e anual. Duas aulas grátis, sem cartão, e cancelamento quando quiser.',
   privT: 'Política de privacidade: dados, cookies e LGPD',
   privD: 'Quais dados a Linvuu coleta, para quê, por quanto tempo ficam guardados e como exercer os seus direitos de titular pela LGPD. Sem juridiquês.',
@@ -196,7 +196,7 @@ const LINGUAS: Record<string, Record<string, string>> = {
 };
 const HOME = {
   'pt-BR': { titulo: HOME_BR.tituloSeo, descricao: HOME_BR.descricao },
-  en: { titulo: 'Language courses for English speakers', descricao: 'Courses for English speakers: Spanish, German, French, Russian and Brazilian Portuguese, fully explained in English. Try 2 free lessons.' },
+  en: { titulo: 'Online language courses for English speakers', descricao: 'Courses for English speakers: Spanish, German, French, Russian and Brazilian Portuguese, fully explained in English. Try 2 free lessons.' },
 };
 
 /**
@@ -275,7 +275,7 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     '/livro/gramatica-ru': { titulo: 'Gramática russa A1–A2', semIndice: true },
     // A página de preços existe de verdade nos dois idiomas (um por domínio): indexável nos dois,
     // para os alternates hreflang de uma versão não apontarem para a outra como noindex.
-    '/assinatura': loc.codigo === 'pt-BR' ? { titulo: SEO_BR.assinaturaT, h1: 'Planos e assinatura', descricao: SEO_BR.assinaturaD } : { titulo: SEO_EN.assinaturaT, descricao: SEO_EN.assinaturaD },
+    '/assinatura': loc.codigo === 'pt-BR' ? { titulo: SEO_BR.assinaturaT, h1: 'Planos e preços da Linvuu', descricao: SEO_BR.assinaturaD } : { titulo: SEO_EN.assinaturaT, h1: 'Linvuu pricing', descricao: SEO_EN.assinaturaD },
     '/privacidade': loc.codigo === 'en' ? { titulo: SEO_EN.privT, descricao: SEO_EN.privD } : { titulo: SEO_BR.privT, h1: tx.priv, descricao: SEO_BR.privD },
     '/termos': loc.codigo === 'en' ? { titulo: SEO_EN.termosT, descricao: SEO_EN.termosD } : { titulo: SEO_BR.termosT, h1: tx.termos, descricao: SEO_BR.termosD },
     '/excluir-conta': { titulo: EXCLUSAO[loc.codigo].titulo, descricao: EXCLUSAO[loc.codigo].descricao },
