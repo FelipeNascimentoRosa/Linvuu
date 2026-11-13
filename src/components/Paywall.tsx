@@ -14,6 +14,7 @@ export function Paywall({ curso, indisponivel, idioma }: { curso: string; indisp
   const brl = P.moeda === 'BRL';
   const { usuario } = useAuth();
   const { pathname } = useLocation(); // caminho sem o prefixo de idioma (/en)
+  const idCurso = pathname.match(/^\/curso\/([a-z]{2})\//)?.[1];
   const [ocupado, setOcupado] = useState(false);
   const [erro, setErro] = useState('');
   const assinar = async (plano: Plano) => {
@@ -43,7 +44,8 @@ export function Paywall({ curso, indisponivel, idioma }: { curso: string; indisp
         </div>
       )}
       {erro && <p className="erro" role="alert">{erro}</p>}
-      <p className="nota"><Link to="/termos">{T.termos}</Link></p>
+      {/* Saídas que não são «pagar agora»: comparar os planos ou voltar às aulas grátis do mesmo curso. */}
+      <p className="nota"><Link to="/assinatura">{LOCALE.codigo === 'pt-BR' ? 'Comparar os planos' : 'Compare the plans'}</Link>{idCurso && <> · <Link to={`/curso/${idCurso}`}>{LOCALE.codigo === 'pt-BR' ? 'Rever as aulas grátis' : 'Go back to the free lessons'}</Link></>} · <Link to="/termos">{T.termos}</Link></p>
     </section>
   );
 }

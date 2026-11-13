@@ -103,7 +103,7 @@ export const ptBR = {
       inicianteR: (titulo: string) => `Sim. O curso começa do início: a aula 1 é «${titulo}», e nada é exigido antes dela. Experimente as aulas 1 e 2 de graça antes de decidir.`,
     },
     gramaticaCartao: { rotulo: 'Gramática · em português', texto: 'Toda a gramática deste curso, explicada em português, tópico por tópico.', link: (nome: string) => `Abrir a gramática de ${nome}` },
-    continuarBtn: 'Continuar', sessaoTitulo: (n: number, t: string) => `Sessão ${n}: ${t}`, continuar: (n: number, t: string) => `Continuar na sessão ${n}: ${t}`, comecar: 'Começar pela sessão 1 (grátis)', feitas: (a: number, b: number) => `${a} de ${b} sessões concluídas`, concluida: 'concluída', aulasNivel: (n: number) => `${n} aulas`, retomarKicker: (c: string) => `Continuar ${c}`,
+    continuarBtn: 'Continuar', sessaoTitulo: (n: number, t: string) => `Sessão ${n}: ${t}`, continuar: (n: number, t: string) => `Continuar na sessão ${n}: ${t}`, comecar: 'Começar a aula grátis', feitas: (a: number, b: number) => `${a} de ${b} sessões concluídas`, concluida: 'concluída', aulasNivel: (n: number) => `${n} aulas`, retomarKicker: (c: string) => `Continuar ${c}`,
     tituloSeo: (nome: string) => `Curso de ${nome.toLowerCase()} online, explicado em português`,
     fatos: ['Sessões de ~30 min', 'Começa do zero'], noAr: (a: number, b: number) => `${a} de ${b} sessões no ar`, gramatica: (nome: string) => `Gramática: ${nome.toLowerCase()}`,
     partida: (n: number) => `Seu ponto de partida: sessão ${n}`, sugerimos: (nivel: string, n: number, t: string) => `Para o nível ${nivel}, sugerimos começar pela sessão ${n}: ${t}.`, irPara: (n: number) => `Ir para a sessão ${n}`,
@@ -156,10 +156,10 @@ export const ptBR = {
       { t: 'Prática', d: 'Exercícios com correção imediata.' },
     ],
     emMigracao: 'Escrita, em migração', emBreve: 'Em breve',
-    paywallT: (n: number, c: string) => `Você terminou as ${n} aulas grátis de ${c}.`,
+    paywallT: (n: number, c: string) => `As ${n} primeiras aulas de ${c} são grátis. A partir da aula ${n + 1}, o curso faz parte da assinatura.`,
     paywallP: (p: string) => `Para continuar, assine a Linvuu: ${p} por mês, todos os cursos, cancele quando quiser. Se não gostar, devolvemos o valor em até 7 dias.`,
     paywallErro: 'Não conseguimos confirmar sua assinatura agora. Recarregue a página em instantes.', abrindo: 'Abrindo…', assinar: (p: string) => `Assinar por ${p}/mês`,
-    tres: (p: string) => `3 meses por ${p} (cartão ou boleto)`, trimPix: (p: string) => APK ? '' : `3 meses por ${p} no Pix · economize R$ 125`, anual: (p: string) => `Prefere anual? 12 meses por ${p}`, criar: 'Criar conta para assinar', jaTenho: 'Já tenho conta', termos: 'Termos e reembolso',
+    tres: (p: string) => `3 meses por ${p} (cartão ou boleto)`, trimPix: (p: string) => APK ? '' : `3 meses por ${p} no Pix · 30% de desconto`, anual: (p: string) => `Prefere anual? 12 meses por ${p}`, criar: 'Criar conta para assinar', jaTenho: 'Já tenho conta', termos: 'Termos e reembolso',
     voltarBtn: 'Voltar', voceEstaEm: 'Você está em', moeda: '',
   },
   gramaticaPagina: {
@@ -185,9 +185,9 @@ export const ptBR = {
     termos: 'Termos de uso e reembolso', moeda: '',
   },
   conta: {
-    entrarT: 'Entrar', cadastroT: 'Cadastre-se', criarH: 'Crie sua conta grátis', entrarH: 'Entre na sua conta', criarSub: 'Salve seu progresso e continue de onde parou.', entrarSub: 'Bom te ver de novo.',
+    entrarT: 'Entrar', cadastroT: 'Cadastre-se', criarH: 'Crie sua conta grátis', entrarH: 'Entre na sua conta', criarSub: 'Grátis e sem cartão. Seu progresso fica salvo e você continua de onde parou, em qualquer aparelho.', entrarSub: 'Bom te ver de novo.',
     semLogin: 'O login ainda não foi ativado neste ambiente.', google: 'Continuar com Google', ou: 'ou com e-mail', nome: 'Nome', email: 'E-mail', senha: 'Senha', minimo: 'Mínimo de 6 caracteres.',
-    criarBtn: 'Criar conta', entrarBtn: 'Entrar', esqueci: 'Esqueci minha senha', digiteEmail: 'Digite seu e-mail acima para receber o link de nova senha.', linkEnviado: 'Se existir uma conta com esse e-mail, enviamos o link para criar uma nova senha.',
+    criarBtn: 'Criar conta grátis', entrarBtn: 'Entrar', esqueci: 'Esqueci minha senha', digiteEmail: 'Digite seu e-mail acima para receber o link de nova senha.', linkEnviado: 'Se existir uma conta com esse e-mail, enviamos o link para criar uma nova senha.',
     aceite: ['Ao criar a conta, você concorda com os', 'Termos de uso', 'e a', 'Política de privacidade'], jaTem: 'Já tem conta?', naoTem: 'Ainda não tem conta?', cadastreGratis: 'Cadastre-se grátis', ajuda: 'Precisa de ajuda?',
   },
   erros: {

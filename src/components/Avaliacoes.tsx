@@ -54,8 +54,12 @@ export function Avaliacoes() {
   const itens = dados?.itens ?? [];
   // Sem avaliação aprovada na Linvuu, a prova vem de avaliações reais da Udemy (só em português, idioma original, com a fonte escrita).
   const udemy = a.udemy ? AULAS_RUSSO['pt-BR'] : null;
-  const relatos = itens.length === 0 && udemy?.relatos ? udemy.relatos : [];
+  // Nas páginas de venda só os relatos sobre o ensino: os que citam vídeos ou WhatsApp descrevem o curso da Udemy, que o
+  // assinante da Linvuu não recebe (decisão do Felipe, 13/11/2026). Todos continuam em /russo-online.
+  const relatos = itens.length === 0 && udemy?.relatos ? udemy.relatos.filter((r) => !/v[íi]deo|whats ?app/i.test(r.texto)) : [];
   const temLista = itens.length > 0 || relatos.length > 0;
+  // Regra «nenhuma seção vazia»: sem nenhuma avaliação para mostrar, o visitante não vê a seção (só quem tem conta, para avaliar).
+  if (!temLista && !usuario) return null;
   const msg = { ok: a.obrigado, duplicada: a.jaEnviou, poucas: a.fazerAulas(AULAS_MIN), invalido: a.invalido, erro: a.erro } as const;
   return (
     <section className="avaliacoes" aria-label={a.rotulo} id="avaliacoes">

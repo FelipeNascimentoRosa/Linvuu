@@ -66,7 +66,9 @@ export default function Curso() {
       <header className="curso-topo">
         <div>
           
-          <h1 className="pagina-h1">{curso.nome} {curso.nomeNativo !== curso.nome && <em lang={curso.id}>{curso.nomeNativo}</em>}</h1>
+          {/* h1 com a busca (curso de X para quem fala a língua do site); o nome nativo fica como linha de apoio (13/11/2026). */}
+          <h1 className="pagina-h1">{LOCALE.codigo === 'pt-BR' ? `Curso de ${curso.nome.toLowerCase()} para quem fala português` : `${curso.nome} course for English speakers`}</h1>
+          {curso.nomeNativo !== curso.nome && <p className="curso-nativo" lang={curso.id}>{curso.nomeNativo}</p>}
           <p className="lead">{curso.descricao}</p>
           <div className="curso-fatos">
             {t.cursoPagina.fatos.map((f) => <span key={f}>{f}</span>)}
@@ -94,7 +96,7 @@ export default function Curso() {
         {APRESENTACOES_CURSO[curso.id].paragrafos.map((p) => <p key={p}>{p}</p>)}
       </section>}
       {/* .com (lote I3): perguntas de quem compara cursos, só nos cursos explicados em inglês do começo ao fim. */}
-      {website && LOCALE.codigo !== 'pt-BR' && cob.total > 0 && cob.traduzidas >= cob.total && <PerguntasCurso id={curso.id} nome={curso.nome} grupos={grupos} />}
+      {website && cob.total > 0 && cob.traduzidas >= cob.total && <PerguntasCurso id={curso.id} nome={curso.nome} grupos={grupos} />}
       {!website && retomar}
 
       {cobertura && <p className="nota">{cobertura}</p>}

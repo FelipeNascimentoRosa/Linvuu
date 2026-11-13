@@ -24,7 +24,8 @@ export default function CursoBr() {
       <Navegacao idioma="br" pai="/cursos" trilha={[{ rotulo: t.geral.inicio, para: '/' }, { rotulo: t.geral.cursos, para: '/cursos' }, { rotulo: c.h1 }]} />
       <header className="curso-topo">
         <div>
-          <h1 className="pagina-h1">{c.h1} <em lang="pt-BR">{c.h1b}</em></h1>
+          <h1 className="pagina-h1">Brazilian Portuguese course for English speakers</h1>
+          <p className="curso-nativo" lang="pt-BR">{c.h1b}</p>
           <p className="lead">{c.lead(grupos.length || 62)}</p>
           <div className="curso-fatos">
             <span>{c.sessoes(stats?.total ?? 248)}</span><span>{c.doZero}</span><span>{c.gratis(SESSOES_GRATIS)}</span>

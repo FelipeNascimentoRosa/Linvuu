@@ -68,7 +68,7 @@ export default function HomeBrasileiros() {
     <section className="br-hero" aria-labelledby="br-h1">
       <div className="br-hero-in">
         <div className="br-hero-topo">
-          <h1 id="br-h1">{h("Aprenda idiomas online,")}<br /><em>{h("explicados em português.")}</em></h1>
+          <h1 id="br-h1">{h("Idiomas explicados em português,")}<br /><em>{h("com áudio em cada frase.")}</em></h1>
           <p className="br-lead">{h(HOME_BR.lead)}</p>
         </div>
         <div className="br-palco" id="experimente">
@@ -88,11 +88,12 @@ export default function HomeBrasileiros() {
             <img className="br-vuu-ouve" src="/assets/vuu/vuu.svg" width="120" height="132" alt="" />
           </div>
           <div className="br-cta-linha">
-            <HomeCourseLink cta="home_comecar" to={`/curso/${idioma.id}/dia/1`} className="br-cta">{h('Começar a primeira aula de')} {h(idioma.nome)}</HomeCourseLink>
+            <HomeCourseLink cta="home_comecar" to={`/curso/${idioma.id}/dia/1`} className="br-cta">{LOCALE.codigo === 'pt-BR' ? `Começar a aula grátis de ${idioma.nome.toLowerCase()}` : `Start the free ${h(idioma.nome)} lesson`}</HomeCourseLink>
             <HomeCourseLink cta="home_curso" to={`/curso/${idioma.id}`} className="br-cta-sec">{h('Ver o curso completo')}</HomeCourseLink>
           </div>
           <p className="br-fine">{h("As duas primeiras aulas são grátis, sem cartão.")}</p>
           {LOCALE.codigo === 'pt-BR' && <p className="br-fine"><a href="https://www.udemy.com/course/curso-de-russo-a1-ate-a2/" target="_blank" rel="noopener noreferrer">Curso de russo na Udemy: nota 4,7 de 5 em 72 avaliações, 285 alunos</a></p>}
+          {LOCALE.codigo !== 'pt-BR' && <p className="br-fine"><a href="https://www.udemy.com/course/curso-de-russo-a1-ate-a2/" target="_blank" rel="noopener noreferrer" hrefLang="pt-BR">The authors’ Russian course on Udemy (taught in Portuguese): rated 4.7 out of 5 by 72 students</a></p>}
           {LOCALE.codigo !== 'pt-BR' && <p className="br-fine">{homeNotice}</p>}
         </div>
       </div>
