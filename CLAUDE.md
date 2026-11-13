@@ -16,8 +16,8 @@
 - Dono: Felipe Nascimento Rosa. Marca: verde #1E3B2F, papel #F3F2EE (até 12/11/2026 era #F5F1E8, creme), grafite #1D1F1C, ocre #B7791F; fontes Newsreader/Source Sans 3/Literata/Caveat; mascote **Vuu** (nunca o Pelmeni).
 
 ## Mapa de rotas (páginas)
-`/` · `/cursos` · `/curso/:id` · `/curso/:id/dia/:n` · `/portugues` · `/gramatica(/:id)` · `/livros(/:id(/capitulo/:n))` · `/livro/gramatica-ru` · `/russo-online` · `/assinatura` · `/entrar` · `/cadastro` · `/conta` (só APK) · `/sobre` · `/por-que-linvuu` · `/contato` · `/ex-alunos-udemy` · `/privacidade` · `/termos` · `/excluir-conta` · `*` = 404 real.
-Regras de domínio em `server/dominio.ts` (301): www→apex; `/en`/`/es` de interface → .com/raiz (espanhol de interface foi **retirado** em 06/11); `/curso/br` no .com.br → .com; `/livros` no .com → .com.br.
+`/` · `/cursos` · `/curso/:id` · `/curso/:id/dia/:n` · `/gramatica(/:id)` · `/livros(/:id(/capitulo/:n))` · `/livro/gramatica-ru` · `/russo-online` · `/assinatura` · `/entrar` · `/cadastro` · `/conta` (só APK) · `/sobre` · `/por-que-linvuu` · `/contato` · `/ex-alunos-udemy` · `/privacidade` · `/termos` · `/excluir-conta` · `*` = 404 real.
+Regras de domínio em `server/dominio.ts` (301): www→apex; `/en`/`/es` de interface → .com/raiz (espanhol de interface foi **retirado** em 06/11); `/curso/br` no .com.br → .com; `/livros`, `/ex-alunos-udemy` e `/livro/gramatica-ru` no .com → .com.br; `/portugues` (nos dois) → `linvuu.com/curso/br` (13/11: as duas páginas disputavam a mesma busca); `/index.html` → `/`.
 
 ## Onde mora cada subsistema
 | Subsistema | Arquivos |
@@ -29,13 +29,13 @@ Regras de domínio em `server/dominio.ts` (301): www→apex; `/en`/`/es` de inte
 | Conteúdo dos cursos | `content/idiomas/<id>/<interface>/dia-NNN.json` (4 sessões = 1 aula) |
 | Índices de catálogo | `content/indice.json` (PT) e `content/indice.en.json` (EN) — **esquemas diferentes** (ver ARMADILHA 4) |
 | SEO (meta/canonical/hreflang/JSON-LD) | `server/metaRota.ts` (fonte única; também `/api/meta`) |
-| Sitemaps/robots | por domínio, gerados; sessões `/dia/N` são **noindex de propósito** (decisão 11/11, PR #551) |
+| Sitemaps/robots/llms.txt | por domínio, gerados por `scripts/seo.mjs` (o llms.txt também, das mesmas listas, desde 13/11); sessões `/dia/N` são **noindex de propósito** (decisão 11/11, PR #551), **exceto a sessão 1** de cada curso completo no idioma da página (decisão do Felipe, 13/11) |
 | Design | `src/tokens.css` (tokens oficiais) + cascata em `src/main.tsx` (ver ARMADILHA 3) |
 | Plataformas | `src/plataforma/website` × `src/plataforma/apk` (alias `@plataforma`; build falha se checkout vazar p/ o APK) |
 
 ## Estado real do catálogo (medido em 11/11/2026 — confira antes de afirmar)
 Sessões com explicação por interface: **RU 312/312 · FR 248/248 · PT→EN (curso BR) 248 · ES-EN 248/248 (12/11) · DE-EN 288/288 (12/11) · IT-EN 0/248 · EN (no .br) 248/248.**
-Regra `explicacaoCompleta` (`metaRota.ts`): curso só ganha página indexável/hreflang num idioma quando **todas** as aulas estão explicadas nele. Por isso o sitemap do .com tem 22 URLs e o do .com.br 43 (12/11, após o alemão e o espanhol completos e o hub /gramatica) — **é intencional, não é bug**. Não "corrija" sitemap/índice para expor curso parcial sem ordem do Felipe.
+Regra `explicacaoCompleta` (`metaRota.ts`): curso só ganha página indexável/hreflang num idioma quando **todas** as aulas estão explicadas nele. Por isso o sitemap do .com tem 26 URLs e o do .com.br 49 (13/11: + sessão 1 de cada curso completo; − /portugues no .com) — **é intencional, não é bug**. Não "corrija" sitemap/índice para expor curso parcial sem ordem do Felipe.
 
 ## ARMADILHAS (não repetir)
 1. **Checkout mensal USD** depende de `STRIPE_PRICE_ID_USD` no ambiente do Render (o anual USD usa `price_data` inline e funciona sem ela). Se o mensal .com quebrar, cheque `/readyz` e o ambiente **antes** de mexer em código. O `render.yaml` não declara essa variável — a ausência lá não prova ausência no painel. **Configuração TESTADA (11/11/2026): a variável está cadastrada no painel do Render e o valor confere exatamente com o preço mensal USD da conta live da Stripe (US$ 19,99/mês), conferência feita nos dois painéis; declaração registrada a pedido do Felipe. A compra real de ponta a ponta segue sendo o lote 3 do plano-mestre.**

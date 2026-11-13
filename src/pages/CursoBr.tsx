@@ -3,16 +3,17 @@ import { Link } from 'react-router-dom';
 import { gruposDoCurso, statusDoCurso, coberturaDoCurso } from '../lib/content';
 import { Navegacao } from '../components/Navegacao';
 import { usePageTitle } from '../lib/usePageTitle';
-import { SITE_URL } from '../config/site';
 import { SESSOES_GRATIS } from '../config/planos';
 import { LOCALE, useT } from '../i18n';
 import { PerguntasCurso } from '../components/PerguntasCurso';
+import { emailOficial } from '../config/site';
 
 /** Página do curso de português do Brasil para estrangeiros (explicado em inglês). */
 export default function CursoBr() {
   const destino = useDestinoSessao();
   const t = useT();
   const c = t.cursoBr;
+  const p = t.portugues;
   usePageTitle(c.tituloSeo, c.descSeo, ['en']);
   const grupos = gruposDoCurso('br');
   const stats = statusDoCurso('br');
@@ -20,7 +21,7 @@ export default function CursoBr() {
   const cobertura = t.cursoPagina.cobertura(cob.traduzidas, cob.total, t.linguas[cob.reserva]);
   return (
     <div className="pagina">
-      <Navegacao idioma="br" pai="/portugues" trilha={[{ rotulo: t.geral.inicio, para: '/' }, { rotulo: c.migalha, para: '/portugues' }, { rotulo: t.geral.cursos }]} />
+      <Navegacao idioma="br" pai="/cursos" trilha={[{ rotulo: t.geral.inicio, para: '/' }, { rotulo: t.geral.cursos, para: '/cursos' }, { rotulo: c.h1 }]} />
       <header className="curso-topo">
         <div>
           <h1 className="pagina-h1">{c.h1} <em lang="pt-BR">{c.h1b}</em></h1>
@@ -28,11 +29,31 @@ export default function CursoBr() {
           <div className="curso-fatos">
             <span>{c.sessoes(stats?.total ?? 248)}</span><span>{c.doZero}</span><span>{c.gratis(SESSOES_GRATIS)}</span>
             <Link to="/gramatica/br" className="link-gramatica">{t.cursoPagina.gramatica(c.h1)}</Link>
-            <Link to="/portugues" className="link-gramatica">{c.sobre}</Link>
           </div>
         </div>
       </header>
       {cobertura && <p className="nota">{cobertura}</p>}
+      {/* Desde 13/11/2026 /portugues redireciona para cá (as duas disputavam a mesma busca): os níveis e as respostas diretas vieram junto. */}
+      <section aria-labelledby="br-niveis">
+        <h2 id="br-niveis" className="pagina-h2">{p.niveisT}</h2>
+        <div className="lv-niveis">
+          {p.niveis.map((n) => (
+            <article key={n.cod}>
+              <div className="lv-nivel-cod"><span className="lv-cod">{n.cod}</span><span>{p.aulas(n.aulas)}</span></div>
+              <p>{n.d}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+      <section aria-labelledby="br-honesto">
+        <h2 id="br-honesto" className="pagina-h2">{p.honestoT}</h2>
+        <ul className="pt-pontos">
+          {p.pontos.map((x) => <li key={x}><span>{x}</span></li>)}
+          <li><span>{p.honesto[0]}</span></li>
+          <li><span>{p.honesto[1]} <a href={`mailto:${emailOficial()}`}>{emailOficial()}</a>.</span></li>
+          <li><span>{p.honesto[2]}</span></li>
+        </ul>
+      </section>
       {import.meta.env.VITE_ALVO !== 'apk' && LOCALE.codigo !== 'pt-BR' && cob.total > 0 && cob.traduzidas >= cob.total && <PerguntasCurso id="br" nome={c.h1} grupos={grupos} />}
       {c.niveis.map((n) => {
         const lista = grupos.filter((g) => (g.nivel ?? 'a1') === n.k);

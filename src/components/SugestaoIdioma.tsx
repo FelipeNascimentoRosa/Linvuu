@@ -26,7 +26,13 @@ export function SugestaoIdioma() {
   return (
     <aside className="sugestao-idioma" lang={alvo} aria-label={t.ir}>
       <p>{t.texto}</p>
-      <a href={urlEm(alvo)} hrefLang={alvo} aria-label={t.ir} onClick={() => { try { localStorage.setItem(CHAVE, '1'); } catch { /* segue */ } }}><span className="si-longo">{t.ir} →</span><span className="si-curto">{t.curto} →</span></a>
+      <a href={urlEm(alvo)} hrefLang={alvo} aria-label={t.ir} onClick={(e) => {
+        try { localStorage.setItem(CHAVE, '1'); } catch { /* segue */ }
+        // Só para o par real desta página (o mesmo do hreflang do <head>); sem par, a home do outro domínio.
+        // Antes o link levava ao mesmo caminho no outro domínio, que às vezes era 301 de volta ou noindex (claude-seo L2).
+        const par = document.querySelector<HTMLLinkElement>(`link[rel="alternate"][hreflang="${alvo}"]`)?.href;
+        e.currentTarget.href = par || urlEm(alvo);
+      }}><span className="si-longo">{t.ir}</span><span className="si-curto">{t.curto}</span></a>
       <button type="button" onClick={fechar} aria-label={t.fechar}><span className="si-longo">{t.fechar}</span><span className="si-curto" aria-hidden="true">×</span></button>
     </aside>
   );

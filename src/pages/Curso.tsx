@@ -72,6 +72,7 @@ export default function Curso() {
             {t.cursoPagina.fatos.map((f) => <span key={f}>{f}</span>)}
             {stats && <span>{t.cursoPagina.noAr(stats.publicadas, stats.total)}</span>}
             {IDIOMAS_GRAMATICA.includes(curso.id) && <Link to={`/gramatica/${curso.id}`} className="link-gramatica">{t.cursoPagina.gramatica(curso.nome)}</Link>}
+            {curso.id === 'ru' && <Link to="/russo-online" className="link-gramatica">{LOCALE.codigo === 'pt-BR' ? 'Prefere aulas de russo ao vivo, com professor?' : 'Prefer live Russian lessons with a teacher?'}</Link>}
           </div>
           {website && retomar}
 

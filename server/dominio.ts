@@ -30,7 +30,8 @@ export function redirecionamentoDeDominio(host: string, caminho: string, consult
   // Sem o prefixo, o resto do caminho decide o domínio num salto só (ex.: /es/livros vai direto ao .com.br/livros).
   if (prefixo && (h === HOST_BR || h === HOST_GLOBAL)) { const resto = caminho.slice(3) || '/'; return redirecionamentoDeDominio(HOST_GLOBAL, resto, consulta) ?? `${SITE_GLOBAL_URL}${resto}${q}`; }
   // .com.br: o curso de português para estrangeiros é explicado em inglês, então a página e a gramática dele moram no .com.
-  if (h === HOST_BR && /^\/(portugues|gramatica\/br)(\/|$)/.test(caminho)) return `${SITE_GLOBAL_URL}${caminho}${q}`;
+  if (h === HOST_BR && /^\/portugues\/?$/.test(caminho)) return `${SITE_GLOBAL_URL}/curso/br${q}`;
+  if (h === HOST_BR && /^\/gramatica\/br(\/|$)/.test(caminho)) return `${SITE_GLOBAL_URL}${caminho}${q}`;
   // .com: o inglês é a raiz; /en/... era o endereço antigo (e o de quem digita por hábito); /es/... também.
   // .com: a coleção de livros de gramática só existe em português, e o .com é o site em inglês. O endereço define o
   // idioma da interface (docs/DECISAO-SITE-INTERNACIONAL.md), então /livros vai para o domínio onde o conteúdo mora em
@@ -38,6 +39,10 @@ export function redirecionamentoDeDominio(host: string, caminho: string, consult
   if (h === HOST_GLOBAL && /^\/livros(\/|$)/.test(caminho)) return `${SITE_URL}${caminho}${q}`;
   // .com: a página para ex-alunos da Udemy existe só em português (o curso da Udemy é para brasileiros): mora no .com.br.
   if (h === HOST_GLOBAL && /^\/ex-alunos-udemy(\/|$)/.test(caminho)) return `${SITE_URL}${caminho}${q}`;
+  // .com: o livro de gramática russa só existe em português (antes respondia 200 com título em PT no site em inglês).
+  if (h === HOST_GLOBAL && /^\/livro\/gramatica-ru(\/|$)/.test(caminho)) return `${SITE_URL}${caminho}${q}`;
+  // .com: /portugues e /curso/br disputavam a mesma busca; desde 13/11/2026 (Felipe) /curso/br é a página do curso.
+  if (h === HOST_GLOBAL && /^\/portugues\/?$/.test(caminho)) return `${SITE_GLOBAL_URL}/curso/br${q}`;
   // .com: o curso de português só existe com explicação em inglês (/curso/br); o resto em português mora no .com.br
   return null;
 }

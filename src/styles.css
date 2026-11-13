@@ -360,6 +360,8 @@ a.livro:focus-visible{outline:2px solid var(--ocre);outline-offset:6px}
 .topicos{display:grid;gap:10px}
 .topico{border:1.5px solid var(--border);border-radius:var(--r-md);background:var(--papel-claro);padding:0 22px}
 .topico[open]{border-color:var(--text)}
+.topico{min-width:0;overflow-wrap:anywhere}
+.topico table{display:block;max-width:100%;overflow-x:auto}
 .topico summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:16px 0}
 .topico summary::-webkit-details-marker{display:none}
 .topico summary strong{flex:1;min-width:200px;font-size:17px}

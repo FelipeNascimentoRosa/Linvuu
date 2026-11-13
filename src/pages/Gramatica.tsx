@@ -1,4 +1,5 @@
-import { useEffect, useMemo, useState } from 'react';
+import { Fragment, useEffect, useMemo, useState, type ReactNode } from 'react';
+import { urlAbsolutaEm } from '../i18n/locales';
 import { Link, useParams } from 'react-router-dom';
 import { Navegacao } from '../components/Navegacao';
 import { Gramatica as BlocoGramatica } from '../components/Sessao';
@@ -16,8 +17,10 @@ interface Pacote { idioma: string; categorias: string[]; topicos: Topico[]; comp
 // Abas na ordem da vitrine do idioma do site (o curso de português para estrangeiros só aparece em inglês).
 
 const HUB = {
-  'pt-BR': { h1: 'Gramática de idiomas explicada em português', lead: 'Escolha o idioma. Cada gramática reúne os tópicos do curso com tabelas, exemplos e os erros mais comuns de quem fala português. Os tópicos das duas primeiras aulas são abertos.', item: (n: string) => `Tópicos de ${n.toLowerCase()} do A1 ao B1` },
-  en: { h1: 'Grammar guides explained in English', lead: 'Pick a language. Each guide gathers the course topics with tables, examples and the mistakes English speakers make most. The topics from the first two lessons are open to everyone.', item: (n: string) => `${n} topics from A1 to B1` },
+  'pt-BR': { h1: 'Gramática de idiomas explicada em português', lead: 'Escolha o idioma. Cada gramática reúne os tópicos do curso com tabelas, exemplos e os erros mais comuns de quem fala português. Os tópicos das duas primeiras aulas são abertos.', item: (n: string) => `Tópicos de ${n.toLowerCase()} do A1 ao B1`,
+    comoT: 'Como cada gramática funciona', como: ['Cada tópico explica a regra a partir do português: o que é igual, o que muda e onde quem fala português costuma errar.', 'Os exemplos vêm com tradução, e as tabelas reúnem as formas que você precisa consultar de novo.', 'Cada tópico aponta para a sessão do curso em que ele é praticado, com áudio em cada frase.'] },
+  en: { h1: 'Grammar guides explained in English', lead: 'Pick a language. Each guide gathers the course topics with tables, examples and the mistakes English speakers make most. The topics from the first two lessons are open to everyone.', item: (n: string) => `${n} topics from A1 to B1`,
+    comoT: 'How each guide works', como: ['Each topic explains the rule from English: what works the same, what changes and where English speakers usually go wrong.', 'Examples come with a translation, and tables gather the forms you will want to look up again.', 'Each topic points to the course session where you practise it, with audio for every sentence.'] },
 } as const;
 
 export default function Gramatica() {
@@ -53,6 +56,11 @@ export default function Gramatica() {
   const cob = curso ? coberturaNoSite(curso.id) : { traduzidas: 0, total: 0 };
   const hub = !id || !curso || !VALIDOS.includes(curso.id);
   usePageTitle(!hub ? g.titulo(curso.nome) : HUB[LOCALE.codigo === 'pt-BR' ? 'pt-BR' : 'en'].h1, !hub ? g.descricao(curso.nome) : undefined, undefined, !hub && (curso.id === LOCALE.cursoOculto || curso.status === 'em-breve'));
+  // A gramática do curso de português para estrangeiros mora no .com: no .com.br o link vai direto para lá
+  // (antes passava por um 301 a cada clique — auditoria seo-skills, 13/11/2026).
+  const linkGram = (k: string, conteudo: ReactNode, className?: string, atual?: boolean) => k === 'br' && LOCALE.codigo === 'pt-BR'
+    ? <a href={urlAbsolutaEm('en', '/gramatica/br')} hrefLang="en" className={className}>{conteudo}</a>
+    : <Link to={`/gramatica/${k}`} className={className} aria-current={atual ? 'page' : undefined}>{conteudo}</Link>;
   // Hub /gramatica (12/11/2026): página de verdade, indexável e no sitemap. Antes era um redirecionamento no cliente
   // para o primeiro idioma, e por isso ficava fora do sitemap (o <head> do servidor não batia com o DOM).
   if (hub) {
@@ -64,9 +72,11 @@ export default function Gramatica() {
         <p className="lead">{x.lead}</p>
         <ul className="gram-hub">
           {IDIOMAS.map((k) => { const c = getCurso(k); if (!c) return null; return (
-            <li key={k}><Link to={`/gramatica/${k}`}><strong>{g.titulo(c.nome)}</strong><span>{x.item(c.nome)}</span></Link></li>
+            <li key={k}>{linkGram(k, <><strong>{g.titulo(c.nome)}</strong><span>{x.item(c.nome)}</span></>)}</li>
           ); })}
         </ul>
+        <h2 className="pagina-h2">{x.comoT}</h2>
+        <ul className="pt-pontos">{x.como.map((c) => <li key={c}><span>{c}</span></li>)}</ul>
       </div>
     );
   }
@@ -77,8 +87,10 @@ export default function Gramatica() {
       <Navegacao pai={`/curso/${curso.id}`} trilha={[{ rotulo: t.geral.inicio, para: '/' }, { rotulo: curso.nome, para: `/curso/${curso.id}` }, { rotulo: t.nav.gramatica }]} />
       <h1 className="pagina-h1">{g.titulo(curso.nome)}</h1>
       <p className="lead">{g.lead}</p>
+      {curso.id === 'ru' && <p className="gram-curso"><Link to="/russo-online">{LOCALE.codigo === 'pt-BR' ? 'Aulas de russo ao vivo, com professor' : 'Live Russian lessons with a teacher'}</Link></p>}
+      {curso.id !== LOCALE.cursoOculto && <p className="gram-curso"><Link to={`/curso/${curso.id}`}>{LOCALE.codigo === 'pt-BR' ? `Praticar no curso de ${curso.nome.toLowerCase()}, com áudio em cada frase` : `Practise in the ${curso.nome} course, with audio for every sentence`}</Link></p>}
       <div className="chips" role="group" aria-label={g.idioma}>
-        {IDIOMAS.map((k) => <Link key={k} to={`/gramatica/${k}`} className={k === curso.id ? 'chip on' : 'chip'} aria-current={k === curso.id ? 'page' : undefined}>{getCurso(k)?.nome}</Link>)}
+        {IDIOMAS.map((k) => <Fragment key={k}>{linkGram(k, getCurso(k)?.nome, k === curso.id ? 'chip on' : 'chip', k === curso.id)}</Fragment>)}
       </div>
       {/* Gramática sem tradução na língua do site: dizer antes de mostrar (D10 — título em inglês sobre miolo em português). */}
       {cob.traduzidas === 0 && <p className="nota">{g.semTraducaoTotal}</p>}
@@ -92,8 +104,8 @@ export default function Gramatica() {
       <p className="resultado" aria-live="polite">{g.topicos(lista.length)}</p>
       <h2 className="sr-only">{LOCALE.codigo === 'pt-BR' ? 'Tópicos' : 'Topics'}</h2>
       <div className="topicos">
-        {lista.map((x) => (
-          <details key={x.id} className="topico">
+        {lista.map((x, i) => (
+          <details key={x.id} className="topico" open={i === 0}>
             <summary><strong>{x.titulo}</strong><span className="topico-cat">{x.categoria}</span><span className="topico-aula">{g.aula(x.aula)}</span></summary>
             <BlocoGramatica b={{ tipo: 'gramatica', min: 0, ...x }} idioma={curso.id} explicacao={x.explicacaoEm ?? explicacaoDoCurso(curso.id)} />
             <p className="topico-link"><Link to={`/curso/${curso.id}/dia/${x.dia}`}>{g.praticar(x.aula, x.sessao.replace('S', ''))}</Link></p>

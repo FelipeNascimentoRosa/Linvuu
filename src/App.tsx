@@ -7,7 +7,6 @@ import Home from '@plataforma/Home';
 import Cursos from '@plataforma/Cursos';
 // Portugues, Sobre, PorQue, Contato e ExcluirConta só existem no site: no build do APK o vite.config troca esses módulos por um vazio.
 const Curso = lazy(() => import('@plataforma/Curso'));
-const Portugues = lazy(() => import('./pages/Portugues'));
 const Dia = lazy(() => import('@plataforma/Dia'));
 const Conta = lazy(() => import('./pages/Conta'));
 const Assinatura = lazy(() => import('@plataforma/Assinatura'));
@@ -67,8 +66,8 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cursos" element={<Cursos />} />
-          <Route path="/portugues" element={NATIVO ? <Navigate to="/" replace /> : <Portugues />} />
-          <Route path="/brazilian-portuguese" element={<Navigate to="/portugues" replace />} />
+          <Route path="/portugues" element={<Navigate to={NATIVO ? '/' : '/curso/br'} replace />} />
+          <Route path="/brazilian-portuguese" element={<Navigate to="/curso/br" replace />} />
           <Route path="/curso/:id" element={<Curso />} />
           <Route path="/curso/:id/dia/:n" element={<Dia />} />
           <Route path="/entrar" element={<Conta modo="entrar" />} />
