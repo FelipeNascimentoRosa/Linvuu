@@ -51,8 +51,10 @@ try {
         if (nome==='desktop') {
           await page.getByRole('button',{name:'Escuro',exact:true}).click();
           assert.equal(await page.locator('html').getAttribute('data-tema-aluno'),'escuro');
+          // Com movimento reduzido a troca de cor continua (só o deslocamento sai): espera a transição de cor terminar.
+          await page.waitForFunction(()=>getComputedStyle(document.querySelector('button.voltar')).color==='rgb(243, 242, 238)',null,{timeout:3000}).catch(()=>{});
           const colors=await page.locator('button.voltar').evaluate(el=>({fg:getComputedStyle(el).color,expected:getComputedStyle(el.closest('.area-aluno')).getPropertyValue('--sem-texto').trim()}));
-          assert.equal(colors.fg,'rgb(245, 241, 232)','Voltar usa texto claro no tema escuro');
+          assert.equal(colors.fg,'rgb(243, 242, 238)','Voltar usa texto claro no tema escuro (papel #F3F2EE desde 12/11/2026)');
           const dark=await page.screenshot({type:'jpeg',quality:65,fullPage:false});
           console.log(`LINVUU_SCREEN desktop-sessao-escuro ${dark.toString('base64')}`);
           await page.getByRole('button',{name:'Claro',exact:true}).click();
