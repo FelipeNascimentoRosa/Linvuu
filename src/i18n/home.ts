@@ -14,7 +14,7 @@ const copy: Record<string, readonly [string]> = {
   'As duas primeiras aulas são grátis, sem cartão.': ['The first two lessons are free, no card needed.'],
   'Começar a primeira sessão em': ['Start the first session in'],
   'Estamos produzindo livros para os níveis B1–B2. Eles ainda não estão disponíveis.': ['We are producing books for B1–B2 levels. They are not available yet.'],
-  'Livro de alemão →': ['German book →'], 'Livro de espanhol →': ['Spanish book →'],
+  'Livro de alemão': ['German book'], 'Livro de espanhol': ['Spanish book'],
 
 
   'VUU · UM GOSTINHO DO SEU PRÓXIMO IDIOMA': ['VUU · A TASTE OF YOUR NEXT LANGUAGE'],
@@ -29,8 +29,8 @@ const copy: Record<string, readonly [string]> = {
   'Menor preço por mês': ['Lowest price per month'],
   'por mês': ['per month'],
   'O plano de três meses também está disponível no cartão ou boleto. Consulte os valores e condições antes de contratar.': ['The three-month plan is also available by card or boleto. Review prices and terms before subscribing.'],
-  'Experimentar duas aulas grátis →': ['Try two free lessons →'],
-  'Ver todos os detalhes da assinatura →': ['View subscription details →'],
+  'Experimentar duas aulas grátis': ['Try two free lessons'],
+  'Ver todos os detalhes da assinatura': ['View subscription details'],
   'Quais cursos estão incluídos?': ['Which courses are included?'],
   'A assinatura atual dá acesso aos cursos da Linvuu. Antes de contratar, experimente as duas primeiras aulas de cada curso sem cartão.': ['The current subscription includes Linvuu courses. Try the first two lessons of each course without a card before subscribing.'],
 
@@ -58,7 +58,7 @@ const copy: Record<string, readonly [string]> = {
   'As sessões são organizadas para cerca de 30 minutos. Você pode estudar no seu ritmo e voltar para continuar.': ['Sessions are designed to take around 30 minutes. Study at your own pace and return to carry on.'],
   'Não foi possível tocar o áudio. Tente novamente.': ['The audio could not be played. Please try again.'],
   'Seu próximo passo:': ['Your next step:'],
-  'Continuar minha sessão →': ['Continue my session →'],
+  'Continuar minha sessão': ['Continue my session'],
   'CURSOS DE IDIOMAS FEITOS PARA BRASILEIROS': ['LANGUAGE COURSES MADE FOR ENGLISH SPEAKERS'],
   'O mundo tem': ['The world has'], 'muito a dizer.': ['so much to say.'],
   'Aprenda idiomas online,': ['Learn languages online,'],
@@ -67,8 +67,8 @@ const copy: Record<string, readonly [string]> = {
   'quer aprender hoje?': ['do you want to learn today?'],
   'ESCOLHA UM CURSO ONLINE': ['PICK AN ONLINE COURSE'],
   'Feito por professores.': ['Made by teachers.'],
-  'Conhecer os professores →': ['Meet the teachers →'],
-  'Ver aulas ao vivo →': ['See live lessons →'],
+  'Conhecer os professores': ['Meet the teachers'],
+  'Ver aulas ao vivo': ['See live lessons'],
   'CURSOS DE IDIOMAS ONLINE': ['ONLINE LANGUAGE COURSES'],
   'Cursos feitos por professores, com explicação em português, áudio em cada frase e exercícios.': ['Courses made by teachers, with explanations in English, audio for every phrase and exercises.'],
   'Que idioma você quer aprender?': ['Which language do you want to learn?'],
@@ -82,17 +82,17 @@ const copy: Record<string, readonly [string]> = {
   'Aula ao vivo, se quiser.': ['Live lessons, if you want.'],
   'Aulas de russo por videochamada com professores.': ['Russian lessons by video call with teachers.'],
   'Entre na conversa.': ['Join the conversation.'],
-  'Encontrar meu plano': ['Find my plan'], 'Encontrar meu plano ↗': ['Find my plan ↗'],
+  'Encontrar meu plano': ['Find my plan'],
   'Experimentar o método ↓': ['Try the method ↓'],
   '2 primeiras aulas grátis · Sem cartão para experimentar': ['First 2 lessons free · No card needed to try'],
-  'Olá, mundo.': ['Hello, world.'], 'Um novo começo ↗': ['A new beginning ↗'],
+  'Olá, mundo.': ['Hello, world.'], 'Um novo começo': ['A new beginning'],
   'UM GOSTINHO DO SEU PRÓXIMO IDIOMA': ['A TASTE OF YOUR NEXT LANGUAGE'],
   'Quero ouvir em': ['I want to listen in'], 'NO CAFÉ': ['AT THE CAFÉ'],
   'Olá. Um café, por favor.': ['Hello. A coffee, please.'],
   'Ouvir frase em': ['Listen to the phrase in'], 'Ouvindo…': ['Listening…'],
   'Ouça. Repita.': ['Listen. Repeat.'],
   'Pequenas frases. Novas possibilidades.': ['Small phrases. New possibilities.'],
-  'Abrir aula grátis →': ['Open a free lesson →'],
+  'Abrir aula grátis': ['Open a free lesson'],
   'Em português.': ['In English,'], 'Desde a explicação.': ['in Spanish, German, French, Russian and Brazilian Portuguese.'],
   'Com áudio.': ['With audio.'], 'Para ouvir e repetir.': ['To listen and repeat.'],
   'No seu ritmo.': ['At your own pace.'], 'Uma sessão por vez.': ['One session at a time.'],
@@ -113,10 +113,10 @@ const copy: Record<string, readonly [string]> = {
   'PARA QUEM GOSTA DE IR ALÉM': ['FOR THOSE WHO LIKE TO GO FURTHER'],
   'Seu aprendizado': ['Your learning'], 'também tem páginas.': ['has pages, too.'],
   'Explore os livros da Linvuu, leia com calma e volte aos assuntos que merecem mais atenção.': ['Explore Linvuu books, read at your own pace and revisit topics that deserve more attention.'],
-  'Conhecer a coleção →': ['Explore the collection →'],
+  'Conhecer a coleção': ['Explore the collection'],
   'VAMOS COMEÇAR BEM': ['LET’S GET OFF TO A GOOD START'],
   'Uma dúvida': ['Any questions'], 'antes do primeiro passo?': ['before your first step?'],
-  'Fale com a Linvuu →': ['Talk to Linvuu →'],
+  'Fale com a Linvuu': ['Talk to Linvuu'],
   'SEU PRÓXIMO IDIOMA COMEÇA COM UM PASSO': ['YOUR NEXT LANGUAGE STARTS WITH ONE STEP'],
   'Abra espaço para': ['Make room for'], 'novas conversas.': ['new conversations.'],
   'Conheça a proposta. Explore os idiomas. Experimente uma aula.': ['Discover the plans. Explore the languages. Try a lesson.'],
@@ -138,7 +138,7 @@ const copy: Record<string, readonly [string]> = {
   'Quais idiomas despertam sua curiosidade?': ['Which languages spark your curiosity?'],
   'Idiomas de interesse': ['Languages of interest'],
   'Quer consultar a oferta disponível hoje?': ['Want to see the offer available today?'],
-  'Ver assinatura atual →': ['View the current subscription →'],
+  'Ver assinatura atual': ['View the current subscription'],
 };
 
 export const homeText = (text: string): string => {
@@ -160,4 +160,4 @@ export function selectionHelp(name: string, limit: number) {
 export function selectionCount(count: number, limit: number) {
   return LOCALE.codigo === 'en' ? `${count} of ${limit} selected` : `${count} de ${limit} selecionados`;
 }
-export const tryLanguage = (name: string) => LOCALE.codigo === 'en' ? `Try ${name} →` : `Experimentar ${name} →`;
+export const tryLanguage = (name: string) => LOCALE.codigo === 'en' ? `Try ${name}` : `Experimentar ${name}`;

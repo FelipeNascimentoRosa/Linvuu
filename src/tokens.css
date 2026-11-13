@@ -46,8 +46,11 @@
 --linha:rgba(29,31,28,.14);
 --linha-forte:rgba(29,31,28,.58); /* borda de controle: ≥3:1 sobre papel */
 --linha-media:rgba(29,31,28,.28);
---linha-sobre-marca:rgba(245,241,232,.22);
---linha-sobre-marca-forte:rgba(245,241,232,.55);
+--linha-sobre-marca:rgba(243,242,238,.22);
+--linha-sobre-marca-forte:rgba(243,242,238,.55);
+--papel-luz:#F3F2EE; /* o papel da marca como cor FIXA: a área do aluno no escuro redefine --papel, isto não muda */
+--papel-texto-suave:rgba(243,242,238,.72); /* texto secundário sobre verde/grafite */
+--papel-texto-forte:rgba(243,242,238,.86);
 --acao:var(--verde-floresta);
 --acao-hover:var(--verde-900);
 --acao-fg:var(--papel);

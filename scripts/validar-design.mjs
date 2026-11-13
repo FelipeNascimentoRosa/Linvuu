@@ -202,6 +202,15 @@ if (existsSync(dist)) {
   linhas.push('pulado CSS de produção: dist/ não existe (rode npm run build antes)');
 }
 
+// 13/11/2026: o papel antigo (#F5F1E8, creme) foi trocado em #602 mas sobrou em 9 arquivos — dois tons de papel na
+// mesma tela, que o auditor externo viu e este validador não pegava. Agora nenhum arquivo de src/ pode trazer o creme antigo.
+{
+  const antigos = [];
+  const varrer = (dir) => { for (const n of readdirSync(dir, { withFileTypes: true })) { const f = join(dir, n.name); if (n.isDirectory()) varrer(f); else if (/\.(css|tsx?|svg|html)$/.test(n.name) && f !== join(RAIZ, 'src', 'tokens.css')) { const t = readFileSync(f, 'utf8'); if (/f5f1e8|245,\s*241,\s*232/i.test(t)) antigos.push(f.slice(RAIZ.length + 1)); } } };
+  varrer(join(RAIZ, 'src'));
+  if (antigos.length) falhas++;
+  linhas.push(`${antigos.length ? 'FALHA ' : 'ok    '} papel antigo #F5F1E8 fora de tokens.css: ${antigos.length ? antigos.join(', ') : 'nenhum'}`);
+}
 console.log(linhas.join('\n'));
 console.log(falhas ? `\n${falhas} falha(s).` : '\nSistema de design válido.');
 process.exit(falhas ? 1 : 0);

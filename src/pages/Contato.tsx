@@ -15,7 +15,6 @@ export default function Contato() {
   return (
     <div className="pagina lvr">
       <header className="lvr-topo">
-        <p className="lv-kicker lv-kicker-esc">{c.kicker}</p>
         <h1 className="pagina-h1">{c.titulo}</h1>
         <p className="lead">{c.lead}</p>
       </header>

@@ -98,11 +98,13 @@ export default function Dia() {
       {aula && (
         <>
           <header className="dia-header">
-            <span className="kicker-pagina">
-              {aula.aula ? T.kickerAula(aula.aula.numero, aula.sessao?.sessao.replace('S', '') ?? '', aula.aula.sessoes, aula.sessao?.duracaoMin ?? 30) : T.kickerDia(dia, total, fase?.titulo ?? '', NIVEL_LABEL[aula.nivel])}
-            </span>
-            {aula.aula && <p className="kicker-aula-titulo">{aula.aula.titulo}</p>}
+            {/* O título vem primeiro; a posição na trilha vira uma linha abaixo dele (antes eram dois rótulos empilhados
+                acima do h1 — proibição «kicker-above-heading» do Impeccable, auditoria de 13/11/2026). */}
             <h1 className="pagina-h1">{aula.aula && aula.titulo.startsWith(`${aula.aula.titulo}: `) ? aula.titulo.slice(aula.aula.titulo.length + 2) : aula.titulo}</h1>
+            <p className="dia-meta">
+              {aula.aula ? T.kickerAula(aula.aula.numero, aula.sessao?.sessao.replace('S', '') ?? '', aula.aula.sessoes, aula.sessao?.duracaoMin ?? 30) : T.kickerDia(dia, total, fase?.titulo ?? '', NIVEL_LABEL[aula.nivel])}
+              {aula.aula && <> · {aula.aula.titulo}</>}
+            </p>
             {telaLarga()
               ? <p className="lead">{aula.aula ? T.objetivoAula(aula.aula.objetivo) : T.objetivoDia(aula.objetivo)}</p>
               : <details className="aa-objetivo"><summary>{T.objetivoRotulo}</summary><p>{aula.aula ? aula.aula.objetivo : T.objetivoDia(aula.objetivo)}</p></details>}

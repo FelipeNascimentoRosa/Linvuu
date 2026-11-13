@@ -12,11 +12,11 @@
 .site-camadas .site-curso .curso-topo:not(:has(.curso-livro)){grid-template-columns:minmax(0,1fr)}
 .site-camadas .curso-topo .pagina-h1 em{display:block;font-size:.46em;font-style:normal;letter-spacing:-.02em;margin-top:10px;color:var(--site-texto-contexto)}
 .site-camadas .curso-fatos{display:flex;flex-wrap:wrap;gap:12px 20px;margin-top:24px;font-size:13px;line-height:1.6}
-.site-camadas .curso-fatos>span{padding-left:12px;border-left:2px solid var(--site-borda-controle)}
+.site-camadas .curso-fatos>span{padding-left:12px;border-left:1px solid var(--site-borda-controle)}
 .curso-livro{margin:0;display:grid;justify-items:center;gap:20px;min-width:0}
-.curso-livro>img{display:block;width:164px;max-width:100%;height:auto;transform:rotate(3deg);border-radius:3px;box-shadow:var(--sombra-papel)}
+.curso-livro>img{display:block;width:164px;max-width:100%;height:auto;border-radius:3px;box-shadow:var(--sombra-papel)}
 .curso-livro figcaption{display:grid;gap:8px;text-align:center;font-size:13px;line-height:1.5;color:var(--site-texto-idioma)}
-.curso-livro figcaption>span{font-size:10px;letter-spacing:.14em;text-transform:uppercase}
+.curso-livro figcaption>span{font-size:12px}
 .curso-gramatica-cartao>img{width:96px;transform:none;box-shadow:none;border-radius:0}
 .curso-livro figcaption strong{font-weight:500;max-width:24ch}
 .curso-livro figcaption a{font-weight:600;text-decoration:underline;text-underline-offset:4px;color:var(--verde-floresta);padding:6px 0}
@@ -46,7 +46,7 @@
 .site-camadas .site-catalogo .curso-grid{gap:24px;margin-top:28px;border:0}
 .site-camadas .site-catalogo .lv-card{position:relative;min-width:0;padding:30px;overflow:hidden;display:flex;flex-direction:column;align-items:flex-start}
 .site-camadas .site-catalogo .lv-saud{padding-right:100px;min-height:116px;margin-bottom:18px;font-size:42px;max-width:100%;overflow-wrap:anywhere}
-.curso-card-capa{position:absolute;right:24px;top:24px;width:84px;height:auto;max-height:116px;object-fit:contain;border-radius:2px;transform:rotate(5deg);box-shadow:var(--sombra-papel)}
+.curso-card-capa{position:absolute;right:24px;top:24px;width:84px;height:auto;max-height:116px;object-fit:contain;border-radius:2px;box-shadow:var(--sombra-papel)}
 .site-camadas .site-catalogo .lv-card-t{font-family:var(--font-display);font-size:32px;font-weight:500;letter-spacing:-.025em}
 .site-camadas .site-catalogo .lv-nativo{font-size:13px;margin:4px 0 12px;color:var(--site-texto-contexto)}
 .site-camadas .site-catalogo .lv-card-meta{margin-top:auto;padding-top:22px;line-height:1.6;border-top:1px solid var(--site-borda-cartao);width:100%;font-size:12px}
@@ -145,7 +145,7 @@
 .site-camadas .area-aluno .voltar{color:var(--sem-texto);background:var(--sem-superficie);border-color:var(--sem-borda);box-shadow:none}
 .site-camadas .area-aluno .voltar:hover{background:var(--sem-superficie-2);transform:none}
 .site-camadas .area-aluno .dia-header .lead{font-size:17px;line-height:1.7;max-width:65ch}
-.site-camadas .aa-dia.atual{box-shadow:inset 3px 0 var(--sem-destaque)}
+.site-camadas .aa-dia.atual{box-shadow:none}
 html[data-tema-aluno="escuro"]{color-scheme:dark}
 html[data-tema-aluno="claro"]{color-scheme:light}
 @media(prefers-reduced-motion:reduce){.site-camadas .aa-tema::before{transition:none}}

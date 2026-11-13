@@ -13,7 +13,6 @@ export default function Sobre() {
   return (
     <div className="pagina lvr">
       <header className="lvr-topo">
-        <p className="lv-kicker lv-kicker-esc">{s.kicker}</p>
         <h1 className="pagina-h1">{s.h1}</h1>
         <p className="lead">{s.lead}</p>
       </header>
