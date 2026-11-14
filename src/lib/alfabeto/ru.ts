@@ -56,28 +56,10 @@ export const LETRAS_RU: L[] = [
   l("Я", "я", "ia", "conhecido", "“ia”", "Parece um R espelhado. Sem acento fica fraca, perto de “i”.", W("я", "ia", "eu")),
 ];
 
-const ROTULO: Record<Grupo, string> = {
-  igual: "parece e soa igual",
-  engana: "parece, mas soa diferente",
-  conhecido: "não parece; som conhecido",
-  novo: "não parece; som novo",
-  sinal: "sem som",
-};
 const cartao = (x: L): Cartao => ({ glifo: `${x.m} ${x.n}`, nome: x.nome, som: x.som, dica: x.dica, exemplo: x.ex });
 const doGrupo = (g: Grupo) => LETRAS_RU.filter((x) => x.grupo === g).map(cartao);
 
-const tabelaCompleta: Bloco = {
-  t: "tabela", titulo: "As 33 letras, na ordem do alfabeto",
-  cabecalho: ["Letra", "Nome", "Som", "Em relação ao português"],
-  linhas: LETRAS_RU.map((x) => [`${x.m} ${x.n}`, x.nome, x.som, ROTULO[x.grupo]]),
-};
-
 const blocos: Bloco[] = [
-  { t: "p", x: "O alfabeto russo, o cirílico, tem 33 letras: 10 vogais, 21 consoantes e 2 sinais que não têm som próprio. Parece muita coisa, mas 12 delas já parecem com letras do português, e 13 têm forma nova com sons que você já conhece. Sobram só seis letras com sons realmente novos e dois sinais. Esta página reúne tudo, na ordem que facilita o estudo." },
-  { t: "p", x: "Para começar a ler russo, associe as letras aos seus sons e observe a vogal tônica. A pronúncia também muda conforme a posição e as letras vizinhas. Toque nos exemplos, ouça e repita: as aproximações em português são apenas um apoio." },
-  { t: "nota", titulo: "O acento nas palavras", x: "Em textos russos comuns o acento tônico não aparece. Nesta página ele aparece como um tracinho sobre a vogal (ма́ма), porque a pronúncia depende dele. Ao ver uma palavra nova, aprenda-a sempre com o acento." },
-  tabelaCompleta,
-
   { t: "h", x: "Letras que parecem com as do português" },
   { t: "h3", x: "Parecem e soam como no português: А К М О Т" },
   { t: "p", x: "Cinco letras iguais na forma e no som. Com elas você já lê palavras russas inteiras (veja a lista no fim da página)." },

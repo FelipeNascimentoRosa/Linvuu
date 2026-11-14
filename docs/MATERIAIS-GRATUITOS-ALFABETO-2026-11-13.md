@@ -76,3 +76,5 @@ Os botões usam `falar()` (`src/lib/audio.ts`): MP3 em `public/audio/` pelo hash
 - Build completo e `testar-plataformas.mjs`: neste clone Windows o `travas-en.mjs` reprova 1.342 arquivos por fim de linha (índice LF, pasta CRLF), alheio a esta mudança. Rodar no CI.
 - `lastmod` das 6 URLs novas: `npm run seo:lastmod` depois do primeiro commit.
 - Produção, Search Console e indexação: nada pedido nem medido.
+
+14/11/2026 — A pedido de Felipe, a página do alfabeto russo deixa de exibir o sumário, os parágrafos introdutórios, a nota inicial sobre acento e a tabela repetida das 33 letras. Permanecem os cartões das 33 letras, explicações, exercícios e vocabulário. Testes locais: TypeScript, testar-alfabeto e testar-vocabulario-russo. Publicação depende de merge e deploy.
