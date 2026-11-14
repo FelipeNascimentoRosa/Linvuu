@@ -33,7 +33,7 @@ export default function Cursos() {
   return (
     <div className={LOCALE.codigo === 'pt-BR' ? 'pagina site-publico site-catalogo' : 'pagina'}>
       <Navegacao pai="/" trilha={[{ rotulo: t.geral.inicio, para: '/' }, { rotulo: t.geral.cursos }]} />
-      {LOCALE.codigo === 'pt-BR' ? <header className="site-intro"><div><h1 className="pagina-h1">Cursos de idiomas online, explicados em português</h1><p className="site-lead">Seis cursos do A1 ao B1, com áudio em cada frase. Escolha uma língua e comece pela aula grátis.</p></div><aside className="site-aside"><strong>Conheça antes de decidir.</strong><p>Experimente as duas primeiras aulas de cada curso, sem cartão.</p><Link to="/#planos">Comparar os novos planos</Link></aside></header> : <h1 className="pagina-h1">Online language courses, explained in English</h1>}
+      {LOCALE.codigo === 'pt-BR' ? <header className="site-intro"><div><h1 className="pagina-h1">Cursos de idiomas online, explicados em português</h1><p className="site-lead">Seis cursos de idiomas, com áudio em cada frase. Escolha uma língua e comece pela aula grátis.</p></div><aside className="site-aside"><strong>Conheça antes de decidir.</strong><p>Experimente as duas primeiras aulas de cada curso, sem cartão.</p><Link to="/#planos">Comparar os novos planos</Link></aside></header> : <h1 className="pagina-h1">Online language courses, explained in English</h1>}
       <div className="filtros">
         <div className="search-field filtro-busca">
           <label htmlFor="q">{t.cursosPagina.buscar}</label>
@@ -46,8 +46,8 @@ export default function Cursos() {
         ? <div className="curso-grid">{lista.map((c) => {
           const livro = LOCALE.codigo === 'pt-BR' && import.meta.env.VITE_ALVO !== 'apk' && !Capacitor.isNativePlatform() && livroMeta(c.id);
           return livro ? <div className="catalogo-idioma" key={c.id}>
-            <CursoCard curso={c} nivel={2} />
-            <div className="catalogo-livro"><span>Livro A1–A2 · 2 capítulos grátis</span><Link to={`/livros/${c.id}`}>Abrir livro de {c.nome} <span aria-hidden="true">↗</span></Link></div>
+            <CursoCard curso={c} nivel={2} catalogoRascunho />
+            <div className="catalogo-livro"><span>Livro · 2 capítulos grátis</span><Link to={`/livros/${c.id}`}>Abrir livro de {c.nome} <span aria-hidden="true">↗</span></Link></div>
           </div> : <CursoCard key={c.id} curso={c} nivel={2} />;
         })}</div>
         : <p className="vazio">{t.cursosPagina.vazio(q)} <button type="button" className="link" onClick={() => setParams({}, { replace: true })}>{t.cursosPagina.limpar}</button>.</p>}
