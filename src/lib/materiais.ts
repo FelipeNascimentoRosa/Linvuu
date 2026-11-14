@@ -7,6 +7,7 @@ import { FRANCES } from "./alfabeto/fr.ts";
 import { ITALIANO } from "./alfabeto/it.ts";
 import { ESPANHOL } from "./alfabeto/es.ts";
 import { VOCABULARIO_RUSSO } from './vocabulario-russo.ts';
+import { pronunciaEspecial } from './pronuncia-russo.ts';
 
 export type { Alfabeto, Bloco, Exercicio };
 export type { Cartao, Exemplo } from "./alfabeto/base.ts";
@@ -51,7 +52,8 @@ export function palavrasDoGuia(a: Alfabeto) {
 export function audioVocabularioRusso(txt: string) {
   let h = 0x811c9dc5;
   for (const c of new TextEncoder().encode(txt.normalize('NFC').replace(/\u0301/g, '').trim())) h = Math.imul(h ^ c, 0x01000193) >>> 0;
-  return `/audio/materiais/ru/${h.toString(16).padStart(8, '0')}.mp3`;
+  const chave = h.toString(16).padStart(8, '0');
+  return `/audio${pronunciaEspecial('ru', chave) ?? `/materiais/ru/${chave}.mp3`}`;
 }
 
 const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");

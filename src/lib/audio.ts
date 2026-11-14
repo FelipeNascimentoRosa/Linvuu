@@ -3,6 +3,7 @@
 // Áudio de sessão paga não fica em public/: sai de /api/audio, com o token de login (ver audioPrivado).
 import { carregarAuth } from './firebase';
 import { api } from './api';
+import { pronunciaEspecial } from './pronuncia-russo';
 const BASE = (((import.meta.env ?? {}) as Record<string, string | undefined>).VITE_AUDIO_BASE_URL ?? (import.meta.env.VITE_ALVO === 'apk' ? 'https://linvuu.com.br/audio' : '/audio')).replace(/\/$/, '');
 const LANG: Record<string, string> = { pt: 'pt-BR', ru: 'ru-RU', de: 'de-DE', en: 'en-US', es: 'es-ES', fr: 'fr-FR', it: 'it-IT', br: 'pt-BR' };
 
@@ -114,7 +115,10 @@ async function tocar(texto: string, idioma: string, minha: number) {
   const novo = (await indiceV2(idioma)).has(h);
   const publico = novo || (await indice(idioma)).has(h);
   if (minha !== cancelar) return;
-  const origem = publico ? `${BASE}/${novo ? 'v2/' : ''}${idioma}/${h}.mp3` : await audioPrivado(idioma, h);
+  const especial = pronunciaEspecial(idioma, h);
+  const origem = especial
+    ? `${BASE}${especial}`
+    : publico ? `${BASE}/${novo ? 'v2/' : ''}${idioma}/${h}.mp3` : await audioPrivado(idioma, h);
   if (minha !== cancelar) return;
   if (origem) {
     try {

@@ -3,8 +3,13 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { VOCABULARIO_RUSSO } from '../src/lib/vocabulario-russo.ts';
 import { audioVocabularioRusso, alfabetoParaHtml, ALFABETOS } from '../src/lib/materiais.ts';
+import { AUDIO_KOT, HASH_KOT, pronunciaEspecial } from '../src/lib/pronuncia-russo.ts';
 
 assert.equal(VOCABULARIO_RUSSO.length, 200, 'a seleção deve conter 200 palavras');
+assert.equal(audioVocabularioRusso('ко́т'), `/audio${AUDIO_KOT}`);
+assert.equal(pronunciaEspecial('ru', HASH_KOT), AUDIO_KOT);
+assert.equal(pronunciaEspecial('en', HASH_KOT), undefined);
+assert.equal(pronunciaEspecial('ru', '00000000'), undefined);
 const palavras = new Set<string>();
 for (const w of VOCABULARIO_RUSSO) {
   const chave = w.txt.normalize('NFD').replace(/\u0301/g, '').toLowerCase();

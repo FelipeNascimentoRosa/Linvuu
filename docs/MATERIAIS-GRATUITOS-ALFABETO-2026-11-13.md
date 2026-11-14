@@ -1,5 +1,11 @@
 # Materiais gratuitos: guias de alfabeto e pronúncia (13/11/2026)
 
+## Correção da pronúncia de кот — 14/11/2026
+
+Felipe informou que o áudio sintético de кот publicado soava incorreto. A correspondência anterior no Whisper não comprova pronúncia nem sotaque; foi um erro considerá-la garantia suficiente. A gravação foi substituída, na página de alfabeto, na lista de vocabulário e no leitor de áudio do site, por fala humana russa de Lvova, de São Petersburgo, disponibilizada pelo Lingua Libre: https://en.wiktionary.org/wiki/File:LL-Q7737_(rus)-Lvova-%D0%BA%D0%BE%D1%82.wav . A página do arquivo declara **CC0 1.0**, inclusive para uso comercial. Fonte original WAV, SHA-1 `5956d6fc9aa3d347e855d0b3a82f31dc3f71015d`, confirmado após download; convertido para MP3 mono, 44,1 kHz, 128 kbps, com pausas breves. O Whisper transcreveu «Кот», o que só confirma reconhecimento, não qualidade. A gravação final requer audição do Felipe.
+
+O arquivo tem URL própria `public/audio/materiais/ru/kot-lvova-cc0.mp3` para evitar a versão antiga em cache. No site, `audioVocabularioRusso` e `falar` direcionam o hash de кот a esse arquivo; isso também modifica a reprodução compartilhada no curso. Os demais áudios não foram regravados. O APK tem outro reprodutor e não foi alterado.
+
 Pedido do Felipe (13/11/2026): uma aba "Materiais gratuitos" para a pessoa permanecer no site, com **uma página só por idioma** ensinando o alfabeto (as letras que parecem com as do português e as que não parecem), para russo, alemão, francês, italiano e espanhol, **primeiro no domínio .com.br**. O russo precisa ser impecável.
 
 **Estado em 14/11: implementado e testado localmente; publicação autorizada pelo Felipe, CI e deploy ainda não verificados.** O texto das 200 palavras e as gravações indicadas abaixo aguardam revisão humana.
