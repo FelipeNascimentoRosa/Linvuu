@@ -161,13 +161,13 @@ html[data-tema-aluno="claro"]{color-scheme:light}
 /* CLS: o rodapé ficava na tela enquanto a rota lazy carregava e pulava quando o conteúdo chegava (0,17-0,25 no Lighthouse). Com o main ocupando ao menos a altura da janela, o rodapé nasce abaixo da dobra e não se mexe à vista. */
 main.site-camadas{min-height:100vh}
 
-/* Ilustrações do catálogo: cada janela mostra o rabisco aprovado. */
-.site-camadas .site-catalogo .catalogo-rabisco{position:absolute;right:18px;top:18px;width:138px;height:145px;clip-path:polygon(58px 0,100% 0,100% 100%,0 100%,0 58px,58px 58px);background-image:url('/assets/catalogo/rabiscos.webp');background-repeat:no-repeat;background-size:800px auto;pointer-events:none}
-.site-camadas .site-catalogo .catalogo-rabisco-en{background-position:-112px -30px}
-.site-camadas .site-catalogo .catalogo-rabisco-es{background-position:-365px -30px}
-.site-camadas .site-catalogo .catalogo-rabisco-de{background-position:-615px -30px}
-.site-camadas .site-catalogo .catalogo-rabisco-fr{background-position:-112px -390px}
-.site-camadas .site-catalogo .catalogo-rabisco-it{background-position:-365px -390px}
-.site-camadas .site-catalogo .catalogo-rabisco-ru{background-position:-615px -390px}
-.site-camadas .site-catalogo .lv-saud{position:relative;margin-bottom:92px;max-width:48%;font-size:clamp(28px,3vw,40px);z-index:1}
-@media(max-width:360px){.site-camadas .site-catalogo .catalogo-rabisco{right:8px;transform:scale(.82);transform-origin:top right}}
+/* Rabiscos individuais mantêm texto e desenhos independentes. */
+.site-camadas .site-catalogo .catalogo-rabisco{position:absolute;right:18px;top:18px;width:140px;height:128px;background-repeat:no-repeat;background-size:100% auto;background-position:center bottom;pointer-events:none}
+.site-camadas .site-catalogo .catalogo-rabisco-en{background-image:url('/assets/catalogo/en.webp')}
+.site-camadas .site-catalogo .catalogo-rabisco-es{background-image:url('/assets/catalogo/es.webp')}
+.site-camadas .site-catalogo .catalogo-rabisco-de{background-image:url('/assets/catalogo/de.webp')}
+.site-camadas .site-catalogo .catalogo-rabisco-fr{background-image:url('/assets/catalogo/fr.webp')}
+.site-camadas .site-catalogo .catalogo-rabisco-it{background-image:url('/assets/catalogo/it.webp')}
+.site-camadas .site-catalogo .catalogo-rabisco-ru{background-image:url('/assets/catalogo/ru.webp')}
+.site-camadas .site-catalogo .lv-saud{position:relative;min-height:128px;margin-bottom:12px;padding-right:0;max-width:none;font-size:clamp(28px,2.4vw,36px);white-space:nowrap;overflow-wrap:normal;z-index:1}
+@media(max-width:360px){.site-camadas .site-catalogo .catalogo-rabisco{right:8px;width:115px;height:112px}}
