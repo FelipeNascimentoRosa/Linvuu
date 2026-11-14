@@ -161,13 +161,15 @@ html[data-tema-aluno="claro"]{color-scheme:light}
 /* CLS: o rodapé ficava na tela enquanto a rota lazy carregava e pulava quando o conteúdo chegava (0,17-0,25 no Lighthouse). Com o main ocupando ao menos a altura da janela, o rodapé nasce abaixo da dobra e não se mexe à vista. */
 main.site-camadas{min-height:100vh}
 
-/* Rabiscos individuais mantêm texto e desenhos independentes. */
-.site-camadas .site-catalogo .catalogo-rabisco{position:absolute;right:18px;top:18px;width:140px;height:128px;background-repeat:no-repeat;background-size:100% auto;background-position:center bottom;pointer-events:none}
-.site-camadas .site-catalogo .catalogo-rabisco-en{background-image:url('/assets/catalogo/en.webp')}
-.site-camadas .site-catalogo .catalogo-rabisco-es{background-image:url('/assets/catalogo/es.webp')}
-.site-camadas .site-catalogo .catalogo-rabisco-de{background-image:url('/assets/catalogo/de.webp')}
-.site-camadas .site-catalogo .catalogo-rabisco-fr{background-image:url('/assets/catalogo/fr.webp')}
-.site-camadas .site-catalogo .catalogo-rabisco-it{background-image:url('/assets/catalogo/it.webp')}
-.site-camadas .site-catalogo .catalogo-rabisco-ru{background-image:url('/assets/catalogo/ru.webp')}
-.site-camadas .site-catalogo .lv-saud{position:relative;min-height:128px;margin-bottom:12px;padding-right:0;max-width:none;font-size:clamp(28px,2.4vw,36px);white-space:nowrap;overflow-wrap:normal;z-index:1}
-@media(max-width:360px){.site-camadas .site-catalogo .catalogo-rabisco{right:8px;width:115px;height:112px}}
+/* A arte ocupa todo o cartão; os textos e links continuam nas camadas existentes. */
+.site-camadas .site-catalogo .catalogo-idioma:has(.catalogo-rabisco){background-color:var(--papel-claro);background-image:linear-gradient(rgba(251,250,247,.82),rgba(251,250,247,.82)),var(--catalogo-arte);background-size:cover;background-position:center bottom;background-repeat:no-repeat;transition:box-shadow var(--dur-2)}
+.site-camadas .site-catalogo .catalogo-idioma:has(.catalogo-rabisco-en){--catalogo-arte:url('/assets/catalogo/en.webp')}
+.site-camadas .site-catalogo .catalogo-idioma:has(.catalogo-rabisco-es){--catalogo-arte:url('/assets/catalogo/es.webp')}
+.site-camadas .site-catalogo .catalogo-idioma:has(.catalogo-rabisco-de){--catalogo-arte:url('/assets/catalogo/de.webp')}
+.site-camadas .site-catalogo .catalogo-idioma:has(.catalogo-rabisco-fr){--catalogo-arte:url('/assets/catalogo/fr.webp')}
+.site-camadas .site-catalogo .catalogo-idioma:has(.catalogo-rabisco-it){--catalogo-arte:url('/assets/catalogo/it.webp')}
+.site-camadas .site-catalogo .catalogo-idioma:has(.catalogo-rabisco-ru){--catalogo-arte:url('/assets/catalogo/ru.webp')}
+.site-camadas .site-catalogo .catalogo-idioma:has(.catalogo-rabisco):hover{box-shadow:0 4px 14px rgba(29,31,28,.10)}
+.site-camadas .site-catalogo .catalogo-rabisco{display:none}
+.site-camadas .site-catalogo .lv-saud{position:relative;min-height:0;margin-bottom:18px;padding-right:0;max-width:none;font-size:clamp(28px,2.4vw,36px);white-space:nowrap;overflow-wrap:normal}
+@media(prefers-reduced-motion:reduce){.site-camadas .site-catalogo .catalogo-idioma:has(.catalogo-rabisco){transition:none}}
