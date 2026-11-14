@@ -67,9 +67,9 @@ export default function HomeBrasileiros() {
       <HomeCourseLink cta="home_continuar" to={`/curso/${retomada.idioma}/dia/${retomada.dia}`}>{h("Continuar minha sessão")}</HomeCourseLink>{apoio.length > 0 && <p className="br-resume-apoio">{apoio.map((a) => <Link key={a.para} to={a.para}>{a.texto}</Link>)}</p>}</section>; })()}
     <section className="br-hero" aria-labelledby="br-h1">
       <div className="br-hero-in">
-        <div className="br-hero-topo">
+        <div className={`br-hero-topo${!ehCom ? " br-hero-topo-simples" : ""}`}>
           <h1 id="br-h1">{h("Idiomas explicados em português,")}<br /><em>{h("com áudio em cada frase.")}</em></h1>
-          <p className="br-lead">{h(HOME_BR.lead)}</p>
+          {ehCom && <p className="br-lead">{h(HOME_BR.lead)}</p>}
         </div>
         <div className="br-palco" id="experimente">
           <p className="br-pick" id="br-pick-title">{h("Que idioma você quer aprender?")}</p>
@@ -85,7 +85,7 @@ export default function HomeBrasileiros() {
               <span className="br-som-dica">{tocando ? h('Ouvindo…') : h('Ouça. Repita.')}</span>
             </div>
             <p role="status" className="br-error">{erro}</p>
-            <img className="br-vuu-ouve" src="/assets/vuu/vuu.svg" width="120" height="132" alt="" />
+            {ehCom && <img className="br-vuu-ouve" src="/assets/vuu/vuu.svg" width="120" height="132" alt="" />}
           </div>
           <div className="br-cta-linha">
             <HomeCourseLink cta="home_comecar" to={`/curso/${idioma.id}/dia/1`} className="br-cta">{LOCALE.codigo === 'pt-BR' ? `Começar a aula grátis de ${idioma.nome.toLowerCase()}` : `Start the free ${h(idioma.nome)} lesson`}</HomeCourseLink>
@@ -108,14 +108,14 @@ export default function HomeBrasileiros() {
         <article><h3>{h("Aula ao vivo, se quiser.")}</h3><p>{h("Aulas de russo por videochamada com professores.")}</p><Link className="br-text-link" to="/russo-online">{h("Ver aulas ao vivo")}</Link></article>
       </div>
     </section>
-    <section className="br-section" id="metodo"><div className="br-section-head"><div><h2>{h("Entender muda")}<br />{h("o jeito de aprender.")}</h2></div><p>{h("Você traz o português. A Linvuu usa essa base para explicar os sons, as estruturas e os erros comuns no novo idioma.")}</p></div>
+    <section className="br-section" id="metodo"><div className="br-section-head"><div><h2>{h("Entender muda")}<br />{h("o jeito de aprender.")}</h2></div>{ehCom && <p>{h("Você traz o português. A Linvuu usa essa base para explicar os sons, as estruturas e os erros comuns no novo idioma.")}</p>}</div>
       <div className="br-method">{[
         ['01', 'Ouça o idioma acontecer.', 'Palavras e diálogos com áudio para ligar o que você lê ao que você escuta.', '◉', '/fotos/comece.jpg'],
         ['02', 'Entenda o porquê.', 'Explicações em português, exemplos e comparações para construir uma base.', 'Aa', '/fotos/imersao.jpg'],
         ['03', 'Coloque em prática.', 'Exercícios com correção e atividades de fala e escrita para usar o que aprendeu.', '↗', '/fotos/pratica.jpg'],
       ].map(([n, titulo, texto, , foto]) => <article key={n}><img className="br-method-foto" src={foto} alt="" width="1000" height="600" loading="lazy" decoding="async" /><h3>{h(titulo)}</h3><p>{h(texto)}</p></article>)}</div>
     </section>
-    <section className="br-section" id="idiomas"><span id="cursos" /><div className="br-section-head"><div><h2>{h("Qual idioma você")}<br />{h("quer aprender hoje?")}</h2></div><p>{h("Para viajar, se aproximar de outras culturas ou realizar um objetivo seu. Encontre um idioma para começar.")}</p></div><div className="br-languages">{principais.map((i, n) => <HomeCourseLink cta="home_curso" key={i.id} to={`/curso/${i.id}`} className={`br-language br-language-${n}`}><span className="br-greeting" lang={i.lang}>{i.oi}<span aria-hidden="true">.</span></span><div><h3>{h(i.nome)}</h3><span aria-hidden="true">↗</span></div><p>{h(i.detalhe)}</p></HomeCourseLink>)}</div>{emTraducao.length > 0 && <div className="br-traducao"><p>The English explanations for these courses are being written lesson by lesson. You can already start with the lessons that are ready:</p><ul>{emTraducao.map((i) => { const c = coberturaNoSite(i.id); return <li key={i.id}><HomeCourseLink cta="home_curso" to={`/curso/${i.id}`}>{h(i.nome)}</HomeCourseLink><span>{c.traduzidas} of {c.total} lessons in English</span></li>; })}</ul></div>}</section>
+    <section className="br-section" id="idiomas"><span id="cursos" /><div className="br-section-head"><div><h2>{h("Qual idioma você")}<br />{h("quer aprender hoje?")}</h2></div>{ehCom && <p>{h("Para viajar, se aproximar de outras culturas ou realizar um objetivo seu. Encontre um idioma para começar.")}</p>}</div><div className="br-languages">{principais.map((i, n) => <HomeCourseLink cta="home_curso" key={i.id} to={`/curso/${i.id}`} className={`br-language br-language-${n}`}><span className="br-greeting" lang={i.lang}>{i.oi}<span aria-hidden="true">.</span></span><div><h3>{h(i.nome)}</h3><span aria-hidden="true">↗</span></div><p>{h(i.detalhe)}</p></HomeCourseLink>)}</div>{emTraducao.length > 0 && <div className="br-traducao"><p>The English explanations for these courses are being written lesson by lesson. You can already start with the lessons that are ready:</p><ul>{emTraducao.map((i) => { const c = coberturaNoSite(i.id); return <li key={i.id}><HomeCourseLink cta="home_curso" to={`/curso/${i.id}`}>{h(i.nome)}</HomeCourseLink><span>{c.traduzidas} of {c.total} lessons in English</span></li>; })}</ul></div>}</section>
     {/* Os livros só existem em português (/livros no .com redireciona ao .com.br): no .com a seção prometia o que o visitante não lê. */}
     {LOCALE.codigo === 'pt-BR' && (
     <section className="br-book"><div className="br-book-covers">{['en', 'de', 'ru'].filter(id => id !== LOCALE.cursoOculto && cursoComExplicacaoNoSite(id)).map(id => <img key={id} src={`/livros/${id}-a1-a2-v1-600.webp`} width="600" height="800" alt={LOCALE.codigo === 'pt-BR' ? `Capa do livro de ${(getCurso(id)?.nome ?? id).toLowerCase()} A1–A2, Coleção Linvuu` : `Cover of the ${getCurso(id)?.nome ?? id} A1–A2 book, Linvuu Collection`} loading="lazy" decoding="async" />)}</div><div><h2>{h("Seu aprendizado")}<br />{h("também tem páginas.")}</h2><p>{h("Explore os livros da Linvuu, leia com calma e volte aos assuntos que merecem mais atenção.")}</p><p>{h('Livros A1–A2 em seis idiomas. Leia os dois primeiros capítulos grátis, com áudio.')}</p><p>{h(LIVROS_EM_PRODUCAO)}</p><Link className="br-text-link" to="/livros">{h("Conhecer a coleção")}</Link><div className="br-book-links"><HomeCourseLink to="/livros/de">{h("Livro de alemão")}</HomeCourseLink><HomeCourseLink to="/livros/es">{h("Livro de espanhol")}</HomeCourseLink></div></div></section>
