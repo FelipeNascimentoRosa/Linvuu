@@ -163,7 +163,7 @@ function Teste({ a, onConcluir }: { a: Alfabeto; onConcluir: (acertos: number, t
 // ------------------------------------------------------------------ páginas
 const nota = LOCALE.codigo !== 'pt-BR';
 const ParaPortugues = () => (nota ? <p className="mat-nota-idioma" lang="pt-BR">Este material é escrito em português, para quem fala português.</p> : null);
-const PREVIA: Record<string, string> = { ru: 'Аа Бб Вв', de: 'ä ö ü ß', fr: 'é è ç œ', it: 'gn gl sc', es: 'ñ ll ch' };
+
 
 function VocabularioRusso({ a }: { a: Alfabeto }) {
   const [busca, setBusca] = useState('');
@@ -200,7 +200,6 @@ function VocabularioRusso({ a }: { a: Alfabeto }) {
 /** /materiais-gratuitos */
 export function MateriaisIndice() {
   usePageTitle(TITULO_HUB, DESCRICAO_HUB, ['pt-BR'], nota);
-  const { progresso } = useProgresso();
   return (
     <div className="pagina mat">
       <header className="mat-topo">
@@ -212,10 +211,9 @@ export function MateriaisIndice() {
         {ALFABETOS.map((a) => (
           <li key={a.id}>
             <Link to={caminhoAlfabeto(a.slug)} className="mat-curso-cartao">
-              <span className="mat-curso-glifos" lang={a.lang} aria-hidden="true">{PREVIA[a.id]}</span>
-              <h2>{a.id === 'ru' ? 'Russo: alfabeto e 200 palavras' : `Alfabeto ${a.idioma}`}</h2>
-              <p>{a.id === 'ru' ? 'Aprenda as letras e pratique 200 palavras úteis com áudio e tradução.' : `As letras e os sons, com áudio e teste rápido. Cerca de ${a.minutos} minutos.`}</p>
-              <span className="mat-curso-acao">{progresso[a.id] ? `Teste feito: ${progresso[a.id].acertos}/${progresso[a.id].total}` : 'Abrir o guia'}</span>
+              <img className="mat-curso-arte" src={`/assets/materiais/rabiscos/${a.id}.webp`} alt="" loading="lazy" />
+              <h2>Alfabeto {a.idioma.charAt(0).toUpperCase() + a.idioma.slice(1)}</h2>
+              <img className="mat-curso-marca" src="/assets/materiais/rabiscos/linvuu.png" alt="" />
             </Link>
           </li>
         ))}
