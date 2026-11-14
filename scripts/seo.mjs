@@ -41,7 +41,13 @@ const alvoPadrao = (g) => {
 grupos.push({ p: '/', em: todos() }, { p: '/cursos', em: todos(), anot: todos() }, { p: '/assinatura', em: todos(), anot: todos() });
 // Sobre, Por que Linvuu e Contato: em todas as línguas (texto próprio em cada uma — Contato passou a existir em inglês em 09/11/2026). Livros e Ex-alunos: só em português. Cada capítulo de amostra publicado (content/livros/<idioma>/cap-NN.json) entra no sitemap.
 grupos.push({ p: '/russo-online', em: ['pt-BR', 'en'], anot: ['pt-BR', 'en'] }, { p: '/sobre', em: todos(), anot: todos() }, { p: '/por-que-linvuu', em: todos(), anot: todos() }, { p: '/contato', em: todos(), anot: todos() }, { p: '/ex-alunos-udemy', em: ['pt-BR'] }, { p: '/livros', em: ['pt-BR'] });
-// Hub da gramática: desde 12/11/2026 é uma página de verdade (src/pages/Gramatica.tsx sem id lista as gramáticas
+// Materiais gratuitos (guias de alfabeto: russo, alemão, francês, italiano, espanhol), em português: só no .com.br.
+// Os slugs vêm de src/lib/alfabeto/<id>.ts (slug: "alfabeto-...").
+grupos.push({ p: '/materiais-gratuitos', em: ['pt-BR'] });
+for (const f of fs.readdirSync(path.join(raiz, 'src', 'lib', 'alfabeto')).filter((x) => x !== 'base.ts').sort()) {
+  const slug = fs.readFileSync(path.join(raiz, 'src', 'lib', 'alfabeto', f), 'utf8').match(/slug: "(alfabeto-[a-z]+)"/)?.[1];
+  if (slug) grupos.push({ p: `/materiais-gratuitos/${slug}`, em: ['pt-BR'] });
+}// Hub da gramática: desde 12/11/2026 é uma página de verdade (src/pages/Gramatica.tsx sem id lista as gramáticas
 // do domínio), com o mesmo título no <head> e no <h1>; por isso entra no sitemap nas duas línguas.
 grupos.push({ p: '/gramatica', em: todos(), anot: todos() });
 // As duas páginas legais e a de exclusão de conta já são páginas reais nos dois idiomas e passaram na paridade.
@@ -139,6 +145,9 @@ ${cursosDe('pt-BR', SITE_BR, false).join('\n')}
 
 ## Livros de gramática
 - ${md('Catálogo dos livros', `${SITE_BR}/livros`)}: os capítulos 1 e 2 de cada livro são de leitura gratuita.
+
+## Materiais gratuitos
+- ${md('Guias de alfabeto e pronúncia', `${SITE_BR}/materiais-gratuitos`)}: russo, alemão, francês, italiano e espanhol, com áudio e teste rápido, sem cadastro.
 
 ## Planos e preços
 - ${md('Página de planos', `${SITE_BR}/assinatura`)}

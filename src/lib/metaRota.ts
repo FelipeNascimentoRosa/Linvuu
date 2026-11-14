@@ -19,6 +19,7 @@ import { AUTORES, CAPITULOS_GRATIS, LIVROS_DESCRICAO, LIVROS_EM_PRODUCAO, LIVROS
 import { APRESENTACOES_CURSO, APRESENTACOES_LIVRO } from './apresentacoes.ts';
 import { AULAS_RUSSO } from '../config/aulas-russo';
 import { DESC_SEO_CURSO } from '../config/seoCurso.ts';
+import { ALFABETOS, CAMINHO_HUB as CAMINHO_MATERIAIS, DESCRICAO_HUB as DESCRICAO_MATERIAIS, TITULO_HUB as TITULO_MATERIAIS, alfabetoPorSlug, alfabetoParaHtml, caminhoAlfabeto } from './materiais.ts';
 // Data da última mudança do conteúdo (a mesma do <lastmod> do sitemap, gerada por scripts/gerar-lastmod.mjs).
 // Vai como dateModified nos capítulos e gramáticas: os auditores claude-seo/GEO pediram data de atualização (13/11/2026).
 let LASTMOD: Record<string, string> | null = null;
@@ -239,6 +240,20 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
   if (p === '/contato') { const c = CONTATO[loc.codigo]; return { status: 200, caminho: p, titulo: c.seoTitulo, descricao: c.seoDescricao, em: ['pt-BR', 'en'], jsonld: [{ '@context': 'https://schema.org', '@type': 'ContactPage', name: c.titulo, url: `${SITE}/contato`, inLanguage: loc.codigo, about: { '@id': ORG_ID } }, organizacao(SITE)] }; }
   if (p === '/ex-alunos-udemy') return { status: 200, caminho: p, titulo: EX_ALUNOS.titulo, descricao: EX_ALUNOS.descricao, ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'WebPage', name: EX_ALUNOS.titulo, url: `${SITE}/ex-alunos-udemy`, inLanguage: 'pt-BR', about: { '@id': ORG_ID } }, organizacao(SITE)] };
   if (p === '/livros') return { status: 200, caminho: p, titulo: 'Coleção Linvuu: livros de gramática', descricao: LIVROS_DESCRICAO, ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'ItemList', name: 'Coleção Linvuu', itemListElement: LIVROS_META.map((l, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE}/livros/${l.id}`, name: tituloLivro(l) })) }] };
+  // Materiais gratuitos: guias de alfabeto e pronúncia (russo, alemão, francês, italiano, espanhol), em português. Só no .com.br, como os livros.
+  if (p === CAMINHO_MATERIAIS) return { status: 200, caminho: p, titulo: TITULO_MATERIAIS, descricao: DESCRICAO_MATERIAIS, ...livroBase, jsonld: [
+    { '@context': 'https://schema.org', '@type': 'CollectionPage', name: TITULO_MATERIAIS, url: `${SITE}${p}`, inLanguage: 'pt-BR', isPartOf: { '@id': ORG_ID }, mainEntity: { '@type': 'ItemList', itemListElement: ALFABETOS.map((a, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE}${caminhoAlfabeto(a.slug)}`, name: a.titulo })) } },
+  ] };
+  const am = p.match(/^\/materiais-gratuitos\/([a-z-]+)$/);
+  if (am) {
+    const a = alfabetoPorSlug(am[1]);
+    if (!a) return naoEncontrada(p, loc);
+    const url = `${SITE}${p}`;
+    return { status: 200, caminho: p, titulo: a.titulo, descricao: a.descricao, ...livroBase, jsonld: [
+      { '@context': 'https://schema.org', '@type': 'LearningResource', '@id': `${url}#guia`, name: a.h1, description: a.descricao, url, inLanguage: 'pt-BR', isAccessibleForFree: true, learningResourceType: 'Guia de estudo', educationalLevel: 'Iniciante', teaches: a.ensina, timeRequired: `PT${a.minutos}M`, dateModified: dataDe(p), isPartOf: { '@type': 'CollectionPage', name: TITULO_MATERIAIS, url: `${SITE}${CAMINHO_MATERIAIS}` }, provider: { '@id': ORG_ID } },
+      { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Materiais gratuitos', item: `${SITE}${CAMINHO_MATERIAIS}` }, { '@type': 'ListItem', position: 2, name: `Alfabeto ${a.idioma}`, item: url }] },
+    ] };
+  }
   let lm = p.match(/^\/livros\/([^/]+)$/);
   if (lm) {
     const l = livroMeta(lm[1]);
@@ -420,7 +435,7 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
  * quando passou a existir em inglês; Sobre, Por-que-Linvuu e Contato existem nas duas línguas.
  */
 function menuPreRender(loc: Locale): string {
-  if (loc.codigo === 'pt-BR') return '<nav aria-label="Principal"><a href="/cursos">Cursos</a> · <a href="/livros">Livros</a> · <a href="/sobre">Quem somos</a> · <a href="/por-que-linvuu">Por que estudar com a Linvuu?</a> · <a href="/contato">Contato</a> · <a href="/privacidade">Privacidade</a></nav>';
+  if (loc.codigo === 'pt-BR') return '<nav aria-label="Principal"><a href="/cursos">Cursos</a> · <a href="/livros">Livros</a> · <a href="/materiais-gratuitos">Materiais gratuitos</a> · <a href="/sobre">Quem somos</a> · <a href="/por-que-linvuu">Por que estudar com a Linvuu?</a> · <a href="/contato">Contato</a> · <a href="/privacidade">Privacidade</a></nav>';
   const tx = TX[loc.codigo];
   const a = (href: string, texto: string) => `<a href="${esc(caminhoEm(loc.codigo, href))}">${esc(texto)}</a>`;
   const itens = [a('/', tx.inicio), a('/cursos', tx.cursos), a('/sobre', tx.sobre), a('/por-que-linvuu', tx.porQue), a('/gramatica', tx.gram), ...(loc.codigo === 'en' ? [a('/curso/br', tx.ptNav)] : []), a('/contato', loc.codigo === 'en' ? 'Contact' : 'Contato'), a('/termos', tx.termos), a('/privacidade', tx.priv)];
@@ -460,7 +475,13 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
       const c = d.livros[mcl[1]].caps[Number(mcl[2])];
       corpo = cabeca(`Capítulo ${c.n}: ${c.titulo}`, undefined) + `<p>${AUTORES.map((a) => esc(a.nome)).join(' e ')}</p>` + capituloParaHtml(c, livroMeta(mcl[1])?.lang ?? mcl[1]) + `<p><a href="/livros/${mcl[1]}">Voltar ao livro</a></p>`;
     }
-    const mc = base.match(/^\/curso\/([^/]+)$/);
+    // Materiais gratuitos: o texto inteiro do guia vai no HTML, para o Google e para quem não executa JavaScript.
+    const ma = base.match(/^\/materiais-gratuitos\/([a-z-]+)$/);
+    if (base === CAMINHO_MATERIAIS) corpo = cabeca(m.titulo ?? '', m.descricao) + li(ALFABETOS.map((a) => `<a href="${caminhoAlfabeto(a.slug)}">${esc(a.titulo)}</a>`));
+    else if (ma && alfabetoPorSlug(ma[1])) {
+      const a = alfabetoPorSlug(ma[1])!;
+      corpo = cabeca(a.h1, a.lead) + alfabetoParaHtml(a) + `<p><a href="/curso/${a.id}">Conhecer o curso de ${esc(a.idioma)}</a> · <a href="/livros/${a.id}/capitulo/1">Ler o capítulo 1 do livro</a> · <a href="${CAMINHO_MATERIAIS}">Todos os materiais gratuitos</a></p>`;
+    }    const mc = base.match(/^\/curso\/([^/]+)$/);
     const mg = base.match(/^\/gramatica\/([a-z]{2})$/);
     if (corpo) { /* livros */ } else if (mc) {
       const c = visiveis.find((x) => x.id === mc[1]);

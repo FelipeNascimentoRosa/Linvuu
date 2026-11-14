@@ -18,6 +18,9 @@ const LivroPagina = lazy(() => import('./pages/Livros').then((m) => ({ default: 
 const LivroCapitulo = lazy(() => import('./pages/Livros').then((m) => ({ default: m.LivroCapitulo })));
 const Sobre = lazy(() => import('./pages/Sobre'));
 const AulasRusso = lazy(() => import('./pages/AulasRusso'));
+// Materiais gratuitos (guias de alfabeto): só existe no site, em português; no APK o módulo vira vazio (vite.config).
+const MateriaisIndice = lazy(() => import('./pages/MateriaisGratuitos').then((m) => ({ default: m.MateriaisIndice })));
+const AlfabetoPagina = lazy(() => import('./pages/MateriaisGratuitos').then((m) => ({ default: m.AlfabetoPagina })));
 const PorQue = lazy(() => import('./pages/PorQue'));
 const Contato = lazy(() => import('./pages/Contato'));
 const ExAlunosUdemy = lazy(() => import('./pages/ExAlunosUdemy'));
@@ -78,6 +81,8 @@ export default function App() {
           <Route path="/livros" element={<LivrosIndice />} />
           <Route path="/livros/:id" element={<LivroPagina />} />
           <Route path="/livros/:id/capitulo/:n" element={<LivroCapitulo />} />
+          <Route path="/materiais-gratuitos" element={NATIVO ? <Navigate to="/" replace /> : <MateriaisIndice />} />
+          <Route path="/materiais-gratuitos/:slug" element={NATIVO ? <Navigate to="/" replace /> : <AlfabetoPagina />} />
           <Route path="/russo-online" element={NATIVO ? <Navigate to="/" replace /> : <AulasRusso />} />
           <Route path="/sobre" element={NATIVO ? <Navigate to="/" replace /> : <Sobre />} />
           <Route path="/por-que-linvuu" element={NATIVO ? <Navigate to="/" replace /> : <PorQue />} />

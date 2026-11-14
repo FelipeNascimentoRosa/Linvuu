@@ -37,6 +37,8 @@ export function redirecionamentoDeDominio(host: string, caminho: string, consult
   // idioma da interface (docs/DECISAO-SITE-INTERNACIONAL.md), então /livros vai para o domínio onde o conteúdo mora em
   // vez de devolver uma página em português com <html lang="en"> dentro do .com. É 301 porque o endereço não volta.
   if (h === HOST_GLOBAL && /^\/livros(\/|$)/.test(caminho)) return `${SITE_URL}${caminho}${q}`;
+  // .com: os materiais gratuitos (alfabeto russo) são escritos em português, para quem fala português: moram no .com.br.
+  if (h === HOST_GLOBAL && /^\/materiais-gratuitos(\/|$)/.test(caminho)) return `${SITE_URL}${caminho}${q}`;
   // .com: a página para ex-alunos da Udemy existe só em português (o curso da Udemy é para brasileiros): mora no .com.br.
   if (h === HOST_GLOBAL && /^\/ex-alunos-udemy(\/|$)/.test(caminho)) return `${SITE_URL}${caminho}${q}`;
   // .com: o livro de gramática russa só existe em português (antes respondia 200 com título em PT no site em inglês).

@@ -33,6 +33,10 @@ const casos: [string, string, string, string, string | null][] = [
   ['a consulta é preservada no redirecionamento de /livros', GLOBAL, '/livros', 'utm_source=x', url(SITE_URL, '/livros') + '?utm_source=x'],
   // Controles: nada do que já funcionava pode passar a redirecionar.
   ['/livros no .com.br é a página normal', BR, '/livros', '', null],
+  // Materiais gratuitos (alfabeto russo): escritos em português, moram no .com.br.
+  ['/materiais-gratuitos no .com vai para o .com.br', GLOBAL, '/materiais-gratuitos', '', url(SITE_URL, '/materiais-gratuitos')],
+  ['um guia dos materiais gratuitos no .com acompanha o redirecionamento', GLOBAL, '/materiais-gratuitos/alfabeto-russo', 'utm_source=x', url(SITE_URL, '/materiais-gratuitos/alfabeto-russo') + '?utm_source=x'],
+  ['/materiais-gratuitos no .com.br é a página normal', BR, '/materiais-gratuitos/alfabeto-russo', '', null],
   ['/livro (sem s) não é a coleção', GLOBAL, '/livro', '', null],
   ['/curso/br segue no .com (explicação em inglês)', GLOBAL, '/curso/br', '', null],
   ['/curso/br no .com.br é tratado na rota, não aqui', BR, '/curso/br', '', null],

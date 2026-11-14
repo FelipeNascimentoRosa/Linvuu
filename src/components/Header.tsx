@@ -43,6 +43,7 @@ export function Header() {
         <nav className="lv-nav" aria-label={t.geral.principal}>
           <Link to="/cursos">{t.nav.cursos}</Link>
           <Link to={GRAMATICA}>{t.nav.gramatica}</Link>
+          {LOCALE.codigo === 'pt-BR' && <Link to="/materiais-gratuitos">Materiais gratuitos</Link>}
           <Link to="/#metodo">{t.nav.metodo}</Link>
           <Link to="/#planos">{homeText('Planos')}</Link>
           <Link to="/#avaliacoes">{t.nav.avaliacoes}</Link>
@@ -85,6 +86,7 @@ export function Header() {
           {CURSOS_ATIVOS.filter((c) => cursoComExplicacaoNoSite(c.id)).map((c) => <Link key={c.id} to={`/curso/${c.id}`}>{c.nome}</Link>)}
           <Link to="/cursos">{t.nav.todos}</Link>
           <Link to={GRAMATICA}>{t.nav.gramatica}</Link>
+          {LOCALE.codigo === 'pt-BR' && <Link to="/materiais-gratuitos">Materiais gratuitos</Link>}
           <Link to="/#metodo">{t.nav.metodo}</Link>
           <Link to="/#planos">{homeText('Planos')}</Link>
           <Link to="/#avaliacoes">{t.nav.avaliacoes}</Link>

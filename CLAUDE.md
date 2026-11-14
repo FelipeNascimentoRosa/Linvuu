@@ -16,7 +16,7 @@
 - Dono: Felipe Nascimento Rosa. Marca: verde #1E3B2F, papel #F3F2EE (até 12/11/2026 era #F5F1E8, creme), grafite #1D1F1C, ocre #B7791F; fontes Newsreader/Source Sans 3/Literata/Caveat; mascote **Vuu** (nunca o Pelmeni).
 
 ## Mapa de rotas (páginas)
-`/` · `/cursos` · `/curso/:id` · `/curso/:id/dia/:n` · `/gramatica(/:id)` · `/livros(/:id(/capitulo/:n))` · `/livro/gramatica-ru` · `/russo-online` · `/assinatura` · `/entrar` · `/cadastro` · `/conta` (só APK) · `/sobre` · `/por-que-linvuu` · `/contato` · `/ex-alunos-udemy` · `/privacidade` · `/termos` · `/excluir-conta` · `*` = 404 real.
+`/` · `/cursos` · `/curso/:id` · `/curso/:id/dia/:n` · `/gramatica(/:id)` · `/livros(/:id(/capitulo/:n))` · `/livro/gramatica-ru` · `/materiais-gratuitos(/alfabeto-<idioma>)` (só pt, só .com.br; [docs/MATERIAIS-GRATUITOS-ALFABETO-2026-11-13.md](docs/MATERIAIS-GRATUITOS-ALFABETO-2026-11-13.md)) · `/russo-online` · `/assinatura` · `/entrar` · `/cadastro` · `/conta` (só APK) · `/sobre` · `/por-que-linvuu` · `/contato` · `/ex-alunos-udemy` · `/privacidade` · `/termos` · `/excluir-conta` · `*` = 404 real.
 Regras de domínio em `server/dominio.ts` (301): www→apex; `/en`/`/es` de interface → .com/raiz (espanhol de interface foi **retirado** em 06/11); `/curso/br` no .com.br → .com; `/livros`, `/ex-alunos-udemy` e `/livro/gramatica-ru` no .com → .com.br; `/portugues` (nos dois) → `linvuu.com/curso/br` (13/11: as duas páginas disputavam a mesma busca); `/index.html` → `/`.
 
 ## Onde mora cada subsistema

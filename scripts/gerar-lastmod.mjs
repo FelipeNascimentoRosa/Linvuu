@@ -69,6 +69,7 @@ function fontesDaPagina(caminho, locale) {
     case '/por-que-linvuu': return ['src/pages/PorQue.tsx', 'src/lib/porQue.ts'];
     case '/contato': return ['src/pages/Contato.tsx', 'src/lib/institucional.ts', 'src/config/contato.ts'];
     case '/ex-alunos-udemy': return ['src/pages/ExAlunosUdemy.tsx'];
+    case '/materiais-gratuitos': return ['src/pages/MateriaisGratuitos.tsx', 'src/lib/materiais.ts'];
     case '/gramatica': return ['src/pages/Gramatica.tsx'];
     case '/russo-online': return ['src/pages/AulasRusso.tsx', ...['src/lib/aulasRusso.ts', 'src/config/aulas-russo.ts'].filter((f) => fs.existsSync(path.join(raiz, f)))];
     case '/privacidade': case '/termos': return ['src/pages/Legal.tsx', ...['src/lib/legal.ts', 'src/i18n/legal.ts'].filter((f) => fs.existsSync(path.join(raiz, f)))];
@@ -86,6 +87,7 @@ function fontesDaPagina(caminho, locale) {
   if ((m = caminho.match(/^\/gramatica\/([a-z]{2})$/))) return [`content/gramatica/${m[1]}.json`, ...(L ? [`content/gramatica/${m[1]}.${L}.json`] : [])];
   if ((m = caminho.match(/^\/livros\/([a-z]{2})\/capitulo\/(\d+)$/))) return [`content/livros/${m[1]}/cap-${pad(m[2], 2)}.json`];
   if ((m = caminho.match(/^\/livros\/([a-z]{2})$/))) return ['src/pages/Livros.tsx', `content/livros/${m[1]}/sumario.json`, `content/livros/${m[1]}/cap-01.json`, `content/livros/${m[1]}/cap-02.json`];
+  if ((m = caminho.match(/^\/materiais-gratuitos\/alfabeto-(russo|alemao|frances|italiano|espanhol)$/))) return [`src/lib/alfabeto/${{ russo: 'ru', alemao: 'de', frances: 'fr', italiano: 'it', espanhol: 'es' }[m[1]]}.ts`, 'src/lib/alfabeto/base.ts'];
   return null; // rota sem mapa de fontes: fica sem lastmod e é assinalada abaixo
 }
 
