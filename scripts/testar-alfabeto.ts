@@ -33,7 +33,7 @@ for (const a of ALFABETOS) {
   for (const t of ['p', 'h', 'h3', 'tabela', 'cartoes', 'palavras', 'lista'] as const) assert.ok(tipos.has(t), `${onde} sem bloco ${t}`);
   assert.ok(a.blocos.filter((b) => b.t === 'h').length >= 4, `${onde} poucas seções`);
   const primeiraTabela = a.blocos.find((b) => b.t === 'tabela') as Extract<Bloco, { t: 'tabela' }>;
-  assert.ok(primeiraTabela.linhas.length >= 26, `${onde} tabela do alfabeto com ${primeiraTabela.linhas.length} linhas`);
+  if (a.id !== 'ru') assert.ok(primeiraTabela.linhas.length >= 26, `${onde} tabela do alfabeto com ${primeiraTabela.linhas.length} linhas`);
   for (const l of primeiraTabela.linhas) assert.equal(l.length, primeiraTabela.cabecalho.length, `${onde} linha de tabela com colunas erradas: ${l[0]}`);
 
   // palavras e cartões completos
@@ -78,7 +78,7 @@ const russo = ALFABETOS[0];
 const glifosCartao = russo.blocos.flatMap((b) => (b.t === 'cartoes' ? b.itens.map((c) => c.glifo) : []));
 assert.equal(glifosCartao.length, 33, `cartões do russo: ${glifosCartao.length}`);
 for (const x of LETRAS_RU) assert.ok(glifosCartao.includes(`${x.m} ${x.n}`), `letra sem cartão: ${x.m}`);
-assert.equal((russo.blocos.find((b) => b.t === 'tabela') as Extract<Bloco, { t: 'tabela' }>).linhas.length, 33, 'tabela completa do russo');
+assert.ok(!alfabetoParaHtml(russo).includes('As 33 letras, na ordem do alfabeto'), 'tabela introdutória removida');
 for (const x of LETRAS_RU) {
   assert.ok(x.ex.txt.length > 0 && x.ex.leitura && x.ex.pt, `exemplo da letra ${x.m}`);
   assert.ok(/^[Ѐ-ӿ́ -]+$/.test(x.ex.txt), `exemplo de ${x.m} com caractere fora do cirílico: ${x.ex.txt}`);

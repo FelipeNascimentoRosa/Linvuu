@@ -243,9 +243,9 @@ export function AlfabetoPagina() {
           <p className="mat-meta">Cerca de {a.minutos} minutos · Com áudio · Sem cadastro</p>
           <ParaPortugues />
         </header>
-        <nav className="mat-sumario" aria-label="Nesta página">
-          <ol>{secoes.map((s) => <li key={s.id}><a href={`#${s.id}`}><Rico x={s.texto} lang={a.lang} /></a></li>)}<li><a href="#mat-teste">Teste rápido</a></li>{a.id === 'ru' && <li><a href="#mat-vocabulario">Palavras com tradução</a></li>}</ol>
-        </nav>
+        {a.id !== 'ru' && <nav className="mat-sumario" aria-label="Nesta página">
+          <ol>{secoes.map((s) => <li key={s.id}><a href={`#${s.id}`}><Rico x={s.texto} lang={a.lang} /></a></li>)}<li><a href="#mat-teste">Teste rápido</a></li></ol>
+        </nav>}
         <Blocos blocos={a.blocos} lang={a.lang} />
         <Teste a={a} onConcluir={(ac2, t) => registrar(a.id, ac2, t)} />
         {a.id === 'ru' && <VocabularioRusso a={a} />}
