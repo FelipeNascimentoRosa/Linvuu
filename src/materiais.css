@@ -1,0 +1,103 @@
+/* Materiais gratuitos (alfabeto russo). Folha da página, no mesmo modelo de livros.css: só usa os tokens da marca,
+   sem cor crua e sem regra global. Tudo sob o prefixo .mat. */
+.mat{--mat-serif:var(--font-display);--mat-ru:var(--font-display-cirilico)}
+.mat-topo{max-width:760px;margin:0 0 32px}
+.mat-lg{font-family:var(--mat-ru);letter-spacing:0}
+.mat-p{max-width:66ch;margin:0 0 16px;line-height:1.6;color:var(--fg-2)}
+.mat-h2{font-family:var(--mat-serif);font-weight:500;font-size:28px;line-height:1.2;margin:44px 0 12px;color:var(--fg-1)}
+.mat-h3{font-family:var(--mat-serif);font-weight:500;font-size:21px;line-height:1.25;margin:28px 0 12px;color:var(--fg-1)}
+.mat-trilha{font-size:14px;margin:0 0 20px;color:var(--fg-3)}
+.mat-trilha a{display:inline-block;padding:11px 2px;color:inherit;text-decoration:underline;text-decoration-color:var(--ocre);text-underline-offset:3px}
+.mat-nota-idioma{font-size:14px;color:var(--fg-3);margin:12px 0 0}
+.mat-meta{margin:8px 0 0;color:var(--fg-3);font-size:15px}
+.mat-acoes{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0 0}
+.mat-fatos{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px 24px;color:var(--fg-2);font-size:16px}
+.mat-fatos li+li::before{content:"";display:inline-block;width:4px;height:4px;margin:0 12px 3px -14px;border-radius:50%;background:var(--ocre);vertical-align:middle}
+
+/* botão de áudio */
+.mat-ouvir{flex:none;display:inline-grid;place-items:center;width:44px;height:44px;border-radius:50%;border:1px solid var(--linha-forte);background:var(--papel-claro);color:var(--verde-floresta);cursor:pointer}
+.mat-ouvir:hover{background:var(--verde-100)}
+.mat-ouvir[data-tocando]{background:var(--verde-floresta);color:var(--papel-luz)}
+.mat-ouvir:focus-visible,.mat-opcao:focus-visible,.mat-tabela-caixa:focus-visible{outline:2px solid var(--foco);outline-offset:2px}
+
+/* hub */
+.mat-grade{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,340px));gap:24px}
+.mat-curso-cartao{display:flex;flex-direction:column;gap:8px;height:100%;padding:24px;border:1px solid var(--linha);border-radius:8px;background:var(--papel-claro);color:inherit;text-decoration:none}
+.mat-curso-cartao:hover{border-color:var(--linha-forte)}
+.mat-curso-glifos{font-family:var(--mat-ru);font-size:40px;line-height:1.1;color:var(--verde-floresta)}
+.mat-curso-cartao h2{font-family:var(--mat-serif);font-weight:500;font-size:26px;margin:8px 0 0}
+.mat-curso-cartao p{margin:0;color:var(--fg-2);line-height:1.5}
+.mat-curso-acao{margin-top:auto;padding-top:12px;font-weight:600;color:var(--verde-floresta);text-decoration:underline;text-decoration-color:var(--ocre);text-underline-offset:4px}
+
+/* sumário da página */
+.mat-sumario{max-width:760px;margin:0 0 8px;padding:16px 20px;border:1px solid var(--linha);border-radius:8px;background:var(--papel-claro)}
+.mat-sumario ol{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 20px}
+.mat-sumario a{display:inline-block;padding:10px 0;color:var(--verde-floresta);text-decoration:underline;text-decoration-color:var(--ocre);text-underline-offset:4px}
+.mat-sumario a:focus-visible{outline:2px solid var(--foco);outline-offset:2px}
+.mat-exercicios label{display:block;font-weight:600;margin:16px 0 6px}
+.mat-exercicios input[type="search"]{width:min(100%,460px);min-height:44px;padding:10px 12px;border:1px solid var(--linha);border-radius:6px;background:var(--papel-claro);color:var(--grafite);font:inherit}
+.mat-exercicios input[type="search"]:focus-visible{outline:2px solid var(--foco);outline-offset:2px}
+.mat .mat-h2{scroll-margin-top:96px}
+.mat-letra-glifo[data-longo]{font-size:26px;white-space:normal;text-align:center;line-height:1.25;padding:6px}
+
+/* cartões de letra */
+.mat-letras{list-style:none;margin:20px 0 28px;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:16px}
+.mat-letra{display:grid;grid-template-columns:110px minmax(0,1fr);gap:16px;padding:16px;border:1px solid var(--linha);border-radius:8px;background:var(--papel-claro)}
+.mat-letra-glifo{display:grid;place-items:center;min-height:110px;border-radius:6px;background:var(--verde-100);color:var(--verde-floresta);font-family:var(--mat-ru);font-size:46px;line-height:1;white-space:nowrap}
+.mat-letra-corpo p{margin:0 0 6px;line-height:1.45}
+.mat-letra-nome{color:var(--fg-3);font-size:15px}
+.mat-letra-som{font-weight:600;color:var(--fg-1)}
+.mat-letra-dica{color:var(--fg-2);font-size:15px}
+.mat-letra-ex{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;margin-top:10px!important}
+.mat-letra-ex-txt{font-size:24px;color:var(--fg-1)}
+.mat-letra-ex-pt{font-size:14px;color:var(--fg-3)}
+
+/* palavras */
+.mat-palavras{list-style:none;margin:12px 0 28px;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr));gap:12px}
+.mat-palavra{display:flex;align-items:center;gap:12px;padding:12px;border:1px solid var(--linha);border-radius:8px;background:var(--papel-claro)}
+.mat-palavra-txt{font-size:26px;line-height:1.1;color:var(--fg-1);overflow-wrap:anywhere}
+.mat-palavra-pt{margin-left:auto;text-align:right;font-size:14px;line-height:1.35;color:var(--fg-3)}
+
+/* nota de destaque */
+.mat-nota{max-width:66ch;margin:24px 0;padding:16px 20px;border-left:3px solid var(--ocre);background:var(--papel-claro);border-radius:0 8px 8px 0}
+.mat-nota-t{font-size:17px;font-weight:600;margin:0 0 6px;font-family:var(--font-body)}
+.mat-nota p{margin:0;line-height:1.55;color:var(--fg-2)}
+
+/* listas e tabelas */
+.mat-lista{max-width:66ch;margin:0 0 20px;padding-left:22px;line-height:1.6;color:var(--fg-2)}
+.mat-lista li+li{margin-top:6px}
+.mat-tabela-caixa{max-width:760px;margin:16px 0 28px;overflow-x:auto}
+.mat-tabela{width:100%;border-collapse:collapse;font-size:16px}
+.mat-tabela caption{text-align:left;font-weight:600;padding:0 0 8px;color:var(--fg-1)}
+.mat-tabela th,.mat-tabela td{padding:10px 12px;border-bottom:1px solid var(--linha);text-align:left;vertical-align:top}
+.mat-tabela th{background:var(--verde-100);color:var(--fg-1);font-weight:600}
+
+/* exercícios */
+.mat-qs{list-style:none;margin:16px 0 0;padding:0;max-width:760px}
+.mat-q{margin:0 0 16px}
+.mat-q fieldset{margin:0;padding:16px;border:1px solid var(--linha);border-radius:8px;background:var(--papel-claro);min-width:0}
+.mat-q legend{padding:0 6px;font-size:18px;font-weight:600;line-height:1.35;color:var(--fg-1)}
+.mat-q-n{color:var(--verde-floresta)}
+.mat-q-txt{display:flex;align-items:center;gap:12px;margin:8px 0 4px;font-size:34px;line-height:1.1;color:var(--fg-1)}
+.mat-q-opcoes{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.mat-opcao{min-height:44px;padding:8px 16px;border:1px solid var(--linha-forte);border-radius:6px;background:var(--bg);color:var(--fg-1);font:inherit;font-size:18px;cursor:pointer;text-align:left}
+.mat-opcao:hover:not(:disabled){background:var(--verde-100)}
+.mat-opcao:disabled{cursor:default}
+.mat-opcao[data-estado="certa"]{background:var(--ok-bg);border-color:var(--verde-floresta);font-weight:600}
+.mat-opcao[data-estado="errada"]{background:var(--erro-bg);border-color:var(--erro);color:var(--erro)}
+.mat-opcao[data-estado="neutra"]{opacity:.65}
+.mat-q-retorno{margin:12px 0 0;min-height:1.5em;line-height:1.5;color:var(--fg-2)}
+.mat-resultado{max-width:760px;margin:24px 0 0;padding:20px;border-radius:8px;background:var(--verde-100)}
+.mat-resultado-t{margin:0 0 6px;font-family:var(--mat-serif);font-size:24px;color:var(--verde-floresta)}
+.mat-resultado .mat-p{margin-bottom:12px}
+
+.mat-rodape-nav{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin:48px 0 0;max-width:760px}
+
+@media (max-width:560px){
+  .mat-letra{grid-template-columns:76px minmax(0,1fr);gap:12px}
+  .mat-letra-glifo{min-height:76px;font-size:30px}
+    .mat-h2{font-size:24px}
+}
+@media (prefers-reduced-motion:no-preference){
+  .mat-opcao,.mat-ouvir{transition:background-color .15s,border-color .15s}
+}

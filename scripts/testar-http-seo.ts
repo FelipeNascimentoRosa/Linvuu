@@ -33,7 +33,7 @@ try {
       for (let n = 1; n <= d.indice[c.id].total; n++) cam(`/curso/${c.id}/dia/${n}`);
       cam(`/curso/${c.id}/dia/0`); cam(`/curso/${c.id}/dia/${d.indice[c.id].total + 1}`);
     }
-    for (const r of ['/', '/cursos', '/assinatura', '/entrar', '/cadastro', '/livros', '/sobre', '/contato', '/ex-alunos-udemy', '/privacidade', '/termos', '/livro/gramatica-ru', '/nao-existe-auditoria']) cam(r);
+    for (const r of ['/', '/cursos', '/assinatura', '/entrar', '/cadastro', '/livros', '/sobre', '/contato', '/ex-alunos-udemy', '/privacidade', '/termos', '/livro/gramatica-ru', '/materiais-gratuitos', '/materiais-gratuitos/alfabeto-russo', '/materiais-gratuitos/alfabeto-alemao', '/materiais-gratuitos/alfabeto-frances', '/materiais-gratuitos/alfabeto-italiano', '/materiais-gratuitos/alfabeto-espanhol', '/materiais-gratuitos/alfabeto-klingon', '/nao-existe-auditoria']) cam(r);
     for (const [id, book] of Object.entries(d.livros)) {
       cam(`/livros/${id}`);
       for (const n of Object.keys(book.caps)) cam(`/livros/${id}/capitulo/${n}`);
@@ -64,7 +64,7 @@ try {
         assert.equal(r.headers.get('location'), 'https://linvuu.com/curso/br', `${host}${p}`);
         await r.arrayBuffer();
         redirecionados++;
-      } else if (perfil === 'global' && /^\/(?:livros|ex-alunos-udemy|livro\/gramatica-ru)(?:\/|$)/.test(p)) {
+      } else if (perfil === 'global' && /^\/(?:livros|ex-alunos-udemy|livro\/gramatica-ru|materiais-gratuitos)(?:\/|$)/.test(p)) {
         // no .com a coleção de livros de gramática e a página de ex-alunos da Udemy (só em português) não existem: vão para o .com.br.
         // É o espelho da regra acima e o que scripts/seo.mjs já declara ({ p: '/livros', em: ['pt-BR'] }).
         assert.equal(r.status, 301, `${host}${p}`);
