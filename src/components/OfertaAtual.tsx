@@ -26,7 +26,7 @@ export function OfertaAtual() {
     ...(emReais ? [{ nome: 'Três meses', preco: P.trimestralPix, detalhe: `no Pix (30% de desconto) ou ${P.trimestral} no cartão/boleto · pagamento único`, id: 'trimestral-pix', equivMes: P.trimestralPixMes }] : []),
     { nome: 'Anual', preco: P.anual, detalhe: '12 meses · pagamento único', id: 'anual', equivMes: P.anualMes, destaque: true },
   ];
-  return <section ref={secao} className="br-plans-wrap br-live-plans" id="planos" aria-labelledby="oferta-titulo">
+  return <section ref={secao} className="br-plans-wrap br-live-plans br-motion-item" id="planos" aria-labelledby="oferta-titulo">
     <div className="br-section">
       <div className="br-section-head"><div><h2 id="oferta-titulo">{h('Seu ritmo.')}<br />{h('Seu próximo idioma.')}</h2></div>
         {!emReais && <p>{h('Acesso aos cursos de idiomas, com explicações em português. Comece pelas duas primeiras aulas grátis, sem cartão.')}</p>}</div>

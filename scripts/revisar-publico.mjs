@@ -26,6 +26,14 @@ try {
         const recusar=page.locator(`.analytics-consent-${tipo}[open] .analytics-actions button`).last();
         if (await recusar.isVisible()) await recusar.click();
       }
+      if (arquivo === 'home') {
+        assert.equal(await page.locator('.br-rabisco-aprender').count(),1,'home brasileira tem ilustração decorativa');
+        assert.equal(await page.locator('.br-rabisco-cena').count(),3,'demais seções incluem rabiscos decorativos');
+        assert.equal(await page.locator('#metodo .br-method-foto-unica').count(),1,'método apresenta uma imagem junto dos três passos');
+        assert.equal(await page.locator('.br-motion-pronto').count(),0,'movimento reduzido não oculta seções');
+        const desenho = await page.locator('.br-rabisco-linhas path').first().evaluate(el => getComputedStyle(el).animationName);
+        assert.equal(desenho,'none','movimento reduzido desliga o desenho animado');
+      }
       if (arquivo === 'gramatica') {
         await page.locator('.topico').first().waitFor();
         assert.ok(await page.locator('.topico').count() > 0, 'amostras de gramática carregam para visitante');
@@ -121,5 +129,13 @@ try {
     assert.equal(errors.length,0,`${nome}: erros JS: ${errors.join('; ')}`);
     await context.close();
   }
+  const movimento = await semSugestaoIdioma(browser,{viewport:{width:390,height:844},reducedMotion:'no-preference'});
+  const paginaMovimento = await movimento.newPage();
+  await paginaMovimento.goto(base+'/');
+  await paginaMovimento.locator('.br-home-redesenhada').waitFor();
+  await paginaMovimento.locator('#metodo').evaluate(el => el.scrollIntoView());
+  await paginaMovimento.waitForFunction(() => document.querySelector('#metodo')?.classList.contains('br-motion-visivel'));
+  assert.equal(await paginaMovimento.locator('#metodo h2').count(),1,'seção continua presente após revelação');
+  await movimento.close();
   console.log('Revisão pública: desktop, 390px, 320px, ofertas disponíveis e âncora de assinatura passaram.');
 } finally {await browser?.close();server.kill();}
