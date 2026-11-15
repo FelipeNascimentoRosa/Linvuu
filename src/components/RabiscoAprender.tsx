@@ -14,7 +14,7 @@ export function RabiscoAprender() {
       <path pathLength="1" d="M321 118 C300 109 300 85 321 76 C344 66 371 77 371 94 C371 107 359 117 343 118 L334 129 L334 118 Z"/>
       <path pathLength="1" d="M48 256 C139 247 195 250 232 256 M265 256 C330 244 387 247 458 256 M45 261 C112 256 165 255 205 260"/>
     </g>
-    <g className="br-rabisco-acentos" stroke="#B7791F" strokeWidth="3" strokeLinecap="round"><path pathLength="1" d="M37 178 l28 -13 M42 188 l22 -9 M436 141 l27 -15 M443 151 l22 -9 M201 265 q38 8 84 -1"/></g>
+    <g className="br-rabisco-acentos" stroke="var(--ocre)" strokeWidth="3" strokeLinecap="round"><path pathLength="1" d="M37 178 l28 -13 M42 188 l22 -9 M436 141 l27 -15 M443 151 l22 -9 M201 265 q38 8 84 -1"/></g>
   </svg>;
 }
 

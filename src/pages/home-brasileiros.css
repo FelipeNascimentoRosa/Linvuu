@@ -191,11 +191,11 @@
 .br-hero-topo-simples{grid-template-columns:1fr}
 
 /* Home brasileira: papel neutro, composição editorial e desenhos que se revelam. */
-.br-home-redesenhada{--br-paper:#F3F2EE;--br-green:#1E3B2F;--br-ink:#1D1F1C;background:#F3F2EE}
+.br-home-redesenhada{--br-paper:var(--papel);--br-green:var(--verde-floresta);--br-ink:var(--grafite);background:var(--papel)}
 .br-home-redesenhada .br-hero-in{position:relative;overflow:hidden;padding-top:46px;padding-bottom:42px}
 .br-home-redesenhada .br-hero-topo,.br-home-redesenhada .br-palco{position:relative;z-index:1;max-width:650px}
 .br-home-redesenhada .br-hero h1{max-width:19ch}
-.br-home-redesenhada .br-rabisco-aprender{position:absolute;right:2.5%;top:55px;width:min(40%,440px);height:auto;color:#F3F2EE;pointer-events:none}
+.br-home-redesenhada .br-rabisco-aprender{position:absolute;right:2.5%;top:55px;width:min(40%,440px);height:auto;color:var(--papel);pointer-events:none}
 .br-home-redesenhada .br-rabisco-linhas path,.br-home-redesenhada .br-rabisco-acentos path{stroke-dasharray:1;stroke-dashoffset:0}
 @media(prefers-reduced-motion:no-preference){
  .br-home-redesenhada .br-rabisco-linhas path,.br-home-redesenhada .br-rabisco-acentos path{animation:br-desenhar 1.3s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--ordem,0) * 140ms)}
@@ -218,11 +218,11 @@
 .br-home-redesenhada .br-why-grid article{border-top:0;border-left:1px solid var(--papel-borda);padding:0 0 0 20px;gap:8px}
 .br-home-redesenhada .br-why-grid article:first-child{border-left:0;padding-left:0}
 .br-home-redesenhada .br-why-grid h3{font-size:21px}.br-home-redesenhada .br-why-grid p{font-size:15px}
-.br-home-redesenhada #metodo{position:relative}.br-home-redesenhada #metodo:before{content:'';position:absolute;inset:0 min(0px,calc((1200px - 100vw)/2));background:#E8E6DF;z-index:0;pointer-events:none}.br-home-redesenhada #metodo>*{position:relative;z-index:1}
+.br-home-redesenhada #metodo{position:relative}.br-home-redesenhada #metodo:before{content:'';position:absolute;inset:0 min(0px,calc((1200px - 100vw)/2));background:var(--papel-escuro);z-index:0;pointer-events:none}.br-home-redesenhada #metodo>*{position:relative;z-index:1}
 .br-home-redesenhada .br-method-foto{height:150px}.br-home-redesenhada .br-method article:nth-child(n+2) .br-method-foto{display:none}
 .br-home-redesenhada .br-languages{grid-template-columns:repeat(6,minmax(0,1fr));border-top:0}
 .br-home-redesenhada .br-language{padding:12px 14px;border-bottom:0}.br-home-redesenhada .br-greeting{font-size:25px;margin-bottom:10px}.br-home-redesenhada .br-language h3{font-size:18px}.br-home-redesenhada .br-language p{font-size:14px}
-.br-home-redesenhada .br-book{background:#E8E6DF;box-shadow:none;border-radius:16px;padding:32px 40px}
+.br-home-redesenhada .br-book{background:var(--papel-escuro);box-shadow:none;border-radius:16px;padding:32px 40px}
 .br-home-redesenhada .br-plan{border-radius:12px;box-shadow:none}
 .br-home-redesenhada .br-last{border-radius:16px;box-shadow:none}
 @media(max-width:900px){.br-home-redesenhada .br-rabisco-aprender{right:20px;top:60px;width:35%;opacity:.65}.br-home-redesenhada .br-hero-topo,.br-home-redesenhada .br-palco{max-width:65%}.br-home-redesenhada .br-languages{grid-template-columns:repeat(3,minmax(0,1fr))}}
