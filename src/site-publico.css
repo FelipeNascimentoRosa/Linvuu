@@ -27,3 +27,6 @@
 @media(prefers-reduced-motion:reduce){.site-publico .lv-card{transition:none}.site-publico .lv-card:hover{transform:none}}
 
 .site-publico .curso-grid{gap:20px}.site-publico .lv-card{border:1px solid var(--site-borda-idioma)}
+
+.site-catalogo .site-intro-cursos{display:block;margin-block:clamp(24px,4vw,48px) 18px}
+.site-catalogo .site-intro-cursos h1{margin:0}

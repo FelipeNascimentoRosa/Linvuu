@@ -6,18 +6,22 @@ import { LOCALE, useT } from '../i18n';
 import { homeText } from '../i18n/home';
 import '../site-publico.css';
 
-// Gramática: o primeiro curso da vitrine que tem a aba de gramática.
-
 export function Header() {
-  // Hub /gramatica (13/11/2026): antes o menu levava à gramática de um curso só e o hub ficava órfão.
-  const GRAMATICA = '/gramatica';
+  const t = useT();
+  const brasileiro = LOCALE.codigo === 'pt-BR';
+  const itens = [
+    ['/cursos', t.nav.cursos],
+    ...(!brasileiro ? [['/gramatica', t.nav.gramatica]] : [['/materiais-gratuitos', 'Materiais gratuitos']]),
+    ['/#metodo', t.nav.metodo], ['/#planos', homeText('Planos')],
+    ['/#avaliacoes', t.nav.avaliacoes], ['/#faq', t.nav.duvidas],
+    ...(brasileiro ? [['/contato', 'Fale conosco']] : []),
+  ];
   const [menu, setMenu] = useState(false);
   const [conta, setConta] = useState(false);
   const nav = useNavigate();
   const loc = useLocation();
   const { usuario, carregando, sair } = useAuth();
   const refConta = useRef<HTMLDivElement>(null);
-  const t = useT();
 
   useEffect(() => { setMenu(false); setConta(false); }, [loc.pathname, loc.search]);
   useEffect(() => {
@@ -41,13 +45,7 @@ export function Header() {
         </Link>
 
         <nav className="lv-nav" aria-label={t.geral.principal}>
-          <Link to="/cursos">{t.nav.cursos}</Link>
-          <Link to={GRAMATICA}>{t.nav.gramatica}</Link>
-          {LOCALE.codigo === 'pt-BR' && <Link to="/materiais-gratuitos">Materiais gratuitos</Link>}
-          <Link to="/#metodo">{t.nav.metodo}</Link>
-          <Link to="/#planos">{homeText('Planos')}</Link>
-          <Link to="/#avaliacoes">{t.nav.avaliacoes}</Link>
-          <Link to="/#faq">{t.nav.duvidas}</Link>
+          {itens.map(([to, texto]) => <Link key={to} to={to}>{texto}</Link>)}
         </nav>
 
         <div className="lv-conta" ref={refConta}>
@@ -69,7 +67,7 @@ export function Header() {
             <>
               <Link to={`/entrar${proximo}`} className="lv-entrar">{t.nav.entrar}</Link>
               {/* Dentro da aula a pessoa já começou: o botão do topo oferece o que a conta dá, salvar o progresso (13/11/2026). */}
-              <Link to={`/cadastro${proximo}`} className="btn btn-primary lv-head-cta">{/^\/curso\/[a-z]{2}\/dia\//.test(loc.pathname) ? (LOCALE.codigo === 'pt-BR' ? 'Salvar meu progresso' : 'Save my progress') : t.nav.comecar}</Link>
+              {(!brasileiro || /^\/curso\/[a-z]{2}\/dia\//.test(loc.pathname)) && <Link to={`/cadastro${proximo}`} className="btn btn-primary lv-head-cta">{/^\/curso\/[a-z]{2}\/dia\//.test(loc.pathname) ? (LOCALE.codigo === 'pt-BR' ? 'Salvar meu progresso' : 'Save my progress') : t.nav.comecar}</Link>}
             </>
           )}
         </div>
@@ -83,18 +81,12 @@ export function Header() {
 
       {menu && (
         <div className="lv-mobile" id="menu-mobile">
-          {CURSOS_ATIVOS.filter((c) => cursoComExplicacaoNoSite(c.id)).map((c) => <Link key={c.id} to={`/curso/${c.id}`}>{c.nome}</Link>)}
-          <Link to="/cursos">{t.nav.todos}</Link>
-          <Link to={GRAMATICA}>{t.nav.gramatica}</Link>
-          {LOCALE.codigo === 'pt-BR' && <Link to="/materiais-gratuitos">Materiais gratuitos</Link>}
-          <Link to="/#metodo">{t.nav.metodo}</Link>
-          <Link to="/#planos">{homeText('Planos')}</Link>
-          <Link to="/#avaliacoes">{t.nav.avaliacoes}</Link>
-          <Link to="/#faq">{t.nav.duvidas}</Link>
+          {!brasileiro && CURSOS_ATIVOS.filter((c) => cursoComExplicacaoNoSite(c.id)).map((c) => <Link key={c.id} to={`/curso/${c.id}`}>{c.nome}</Link>)}
+          {itens.map(([to, texto]) => <Link key={to} to={to} onClick={() => setMenu(false)}>{texto}</Link>)}
           {usuario ? <button type="button" className="menu-mobile-sair" onClick={deslogar}>{t.nav.sair} ({usuario.nome})</button> : (
             <div className="menu-mobile-conta">
               <Link to={`/entrar${proximo}`} className="btn btn-ghost">{t.nav.entrar}</Link>
-              <Link to={`/cadastro${proximo}`} className="btn btn-primary">{t.nav.comecar}</Link>
+              {!brasileiro && <Link to={`/cadastro${proximo}`} className="btn btn-primary">{t.nav.comecar}</Link>}
             </div>
           )}
         </div>

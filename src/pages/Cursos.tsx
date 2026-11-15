@@ -21,7 +21,7 @@ export default function Cursos() {
   const lista = useMemo(() => CURSOS.filter((c) => {
     if (!cursoComExplicacaoNoSite(c.id)) return false;
     if (!q) return true;
-    return norm(`${c.nome} ${c.nomeNativo} ${c.descricao}`).includes(norm(q));
+    return norm(`${c.nome} ${c.nomeNativo} ${LOCALE.codigo !== 'pt-BR' ? c.descricao : ''}`).includes(norm(q));
   }), [q]);
 
   const set = (k: string, v: string) => {
@@ -32,8 +32,8 @@ export default function Cursos() {
 
   return (
     <div className={LOCALE.codigo === 'pt-BR' ? 'pagina site-publico site-catalogo' : 'pagina'}>
-      <Navegacao pai="/" trilha={[{ rotulo: t.geral.inicio, para: '/' }, { rotulo: t.geral.cursos }]} />
-      {LOCALE.codigo === 'pt-BR' ? <header className="site-intro"><div><h1 className="pagina-h1">Cursos de idiomas online, explicados em português</h1><p className="site-lead">Seis cursos de idiomas, com áudio em cada frase. Escolha uma língua e comece pela aula grátis.</p></div><aside className="site-aside"><strong>Conheça antes de decidir.</strong><p>Experimente as duas primeiras aulas de cada curso, sem cartão.</p><Link to="/#planos">Comparar os novos planos</Link></aside></header> : <h1 className="pagina-h1">Online language courses, explained in English</h1>}
+      {LOCALE.codigo !== 'pt-BR' && <Navegacao pai="/" trilha={[{ rotulo: t.geral.inicio, para: '/' }, { rotulo: t.geral.cursos }]} />}
+      {LOCALE.codigo === 'pt-BR' ? <header className="site-intro site-intro-cursos"><h1 className="pagina-h1">Cursos de idiomas</h1></header> : <h1 className="pagina-h1">Online language courses, explained in English</h1>}
       <div className="filtros">
         <div className="search-field filtro-busca">
           <label htmlFor="q">{t.cursosPagina.buscar}</label>
@@ -41,7 +41,7 @@ export default function Cursos() {
         </div>
       </div>
       {LOCALE.codigo !== 'pt-BR' && <p className="nota"><Link to="/curso/br">{t.cursosPagina.portugues}</Link></p>}
-      <p className="resultado" aria-live="polite">{t.cursosPagina.contagem(lista.length)}</p>
+      {(LOCALE.codigo !== 'pt-BR' || q) && <p className="resultado" aria-live="polite">{t.cursosPagina.contagem(lista.length)}</p>}
       {lista.length > 0
         ? <div className="curso-grid">{lista.map((c) => {
           const livro = LOCALE.codigo === 'pt-BR' && import.meta.env.VITE_ALVO !== 'apk' && !Capacitor.isNativePlatform() && livroMeta(c.id);
