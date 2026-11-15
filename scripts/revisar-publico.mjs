@@ -131,7 +131,7 @@ try {
   const paginaMovimento = await movimento.newPage();
   await paginaMovimento.goto(base+'/');
   await paginaMovimento.locator('.br-home-redesenhada').waitFor();
-  await paginaMovimento.locator('#metodo').scrollIntoViewIfNeeded();
+  await paginaMovimento.locator('#metodo').evaluate(el => el.scrollIntoView());
   await paginaMovimento.waitForFunction(() => document.querySelector('#metodo')?.classList.contains('br-motion-visivel'));
   assert.equal(await paginaMovimento.locator('#metodo h2').count(),1,'seção continua presente após revelação');
   await movimento.close();
