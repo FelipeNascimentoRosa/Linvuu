@@ -29,7 +29,7 @@ import { Header, BarraTopo, BarraInferior, Footer, PrimeiraAbertura } from '@pla
 import { SugestaoIdioma } from './components/SugestaoIdioma';
 import NaoEncontrada from './pages/NaoEncontrada';
 import Carregando from './components/Carregando';
-import { useT } from './i18n';
+import { LOCALE, useT } from './i18n';
 
 function RolarAoTopo() {
   const { pathname, hash } = useLocation();
@@ -62,7 +62,7 @@ export default function App() {
       <a href="#conteudo" className="skip-link">{t.geral.pular}</a>
       <RolarAoTopo />
       {!NATIVO && <SugestaoIdioma />}
-      {!NATIVO && <BarraTopo semNovidades={AREA_ALUNO.test(pathname)} />}
+      {!NATIVO && LOCALE.codigo !== 'pt-BR' && <BarraTopo semNovidades={AREA_ALUNO.test(pathname)} />}
       <Header />
       <main id="conteudo" className={!NATIVO ? 'site-camadas' : undefined} tabIndex={-1}>
         <Suspense fallback={<Carregando />}>
