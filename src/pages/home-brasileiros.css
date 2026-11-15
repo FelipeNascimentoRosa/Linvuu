@@ -228,3 +228,15 @@
 @media(max-width:900px){.br-home-redesenhada .br-rabisco-aprender{right:20px;top:60px;width:35%;opacity:.65}.br-home-redesenhada .br-hero-topo,.br-home-redesenhada .br-palco{max-width:65%}.br-home-redesenhada .br-languages{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:700px){.br-home-redesenhada .br-hero-in{padding:30px 20px;display:flex;flex-direction:column}.br-home-redesenhada .br-hero-topo{order:0}.br-home-redesenhada .br-palco{order:1}.br-home-redesenhada .br-rabisco-aprender{order:2}.br-home-redesenhada .br-hero-topo,.br-home-redesenhada .br-palco{max-width:none}.br-home-redesenhada .br-rabisco-aprender{position:relative;display:block;width:min(72%,270px);right:auto;top:auto;margin:12px auto 0;opacity:.9}.br-home-redesenhada .br-section{padding:48px 24px}.br-home-redesenhada .br-why-grid{grid-template-columns:1fr 1fr;gap:24px}.br-home-redesenhada .br-why-grid article:nth-child(odd){padding-left:0;border-left:0}.br-home-redesenhada #metodo:before{inset:0}.br-home-redesenhada .br-method{grid-template-columns:1fr}.br-home-redesenhada .br-languages{grid-template-columns:repeat(2,minmax(0,1fr))}.br-home-redesenhada .br-language{border-bottom:1px solid var(--linha);min-height:100px}.br-home-redesenhada .br-book{padding:30px 24px}}
 @media(prefers-reduced-motion:reduce){.br-home-redesenhada .br-motion-pronto{opacity:1;transform:none}.br-home-redesenhada .br-rabisco-linhas path,.br-home-redesenhada .br-rabisco-acentos path{stroke-dasharray:none;stroke-dashoffset:0}}
+/* Rabiscos adicionais são decorativos; os caminhos Rough.js permanecem vetoriais. */
+.br-home-redesenhada .br-why,.br-home-redesenhada #idiomas{position:relative}
+.br-home-redesenhada .br-rabisco-cena{color:var(--verde-floresta);width:160px;height:auto;pointer-events:none}
+.br-home-redesenhada .br-rabisco-coliseu,.br-home-redesenhada .br-rabisco-globo{position:absolute;right:32px;top:32px;width:150px}
+.br-home-redesenhada .br-why-grid{padding-right:150px}
+.br-home-redesenhada #idiomas .br-section-head{padding-right:150px}
+.br-home-redesenhada .br-rabisco-livros{width:100%;max-width:260px;justify-self:center}
+.br-home-redesenhada .br-book-covers{display:none}
+@media(prefers-reduced-motion:no-preference){.br-home-redesenhada .br-motion-pronto .br-rabisco-cena path{stroke-dasharray:1;stroke-dashoffset:1}.br-home-redesenhada .br-motion-visivel .br-rabisco-cena path{animation:br-desenhar 1.1s ease-out both}}
+@media(max-width:900px){.br-home-redesenhada .br-rabisco-coliseu,.br-home-redesenhada .br-rabisco-globo{width:110px}.br-home-redesenhada .br-why-grid{padding-right:0}}
+@media(max-width:700px){.br-home-redesenhada .br-rabisco-coliseu,.br-home-redesenhada .br-rabisco-globo{position:static;display:block;width:120px;margin:0 0 24px auto}.br-home-redesenhada #idiomas .br-section-head{padding-right:0}.br-home-redesenhada .br-rabisco-livros{max-width:200px}}
+@media(prefers-reduced-motion:reduce){.br-home-redesenhada .br-rabisco-cena path{stroke-dasharray:none;stroke-dashoffset:0}}

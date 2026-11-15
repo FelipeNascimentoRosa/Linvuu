@@ -13,3 +13,5 @@ Validação: compilar, verificar conteúdo e links, e conferir as capturas de de
 ## Estudo da primeira página — 14/11/2026
 
 A página nacional foi aproximada da referência editorial enviada pelo Felipe: fundo de papel neutro, blocos verdes, separadores, linhas em ocre e composição mais compacta. O elemento de arquitetura do topo foi substituído por um desenho vetorial neutro de caderno, lápis e conversas. Os traços se revelam progressivamente; as seções entram quando ficam visíveis, somente uma vez. A preferência de movimento reduzido mostra todo o conteúdo sem movimento, e sem JavaScript a página permanece visível. Áudio, escolha de idioma, links, preços e avaliações reais permanecem funcionais; nomes de planos e depoimentos ilustrativos da referência não foram adotados. O domínio internacional mantém sua apresentação.
+
+Outros rabiscos vetoriais aparecem nas seções de apresentação, idiomas e livros e são revelados ao entrar na tela. O traço do Coliseu foi gerado com Rough.js (MIT); globo, livros e caderno foram desenhados em SVG.
