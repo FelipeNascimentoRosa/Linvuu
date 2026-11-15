@@ -200,8 +200,8 @@
 @media(prefers-reduced-motion:no-preference){
  .br-home-redesenhada .br-rabisco-linhas path,.br-home-redesenhada .br-rabisco-acentos path{animation:br-desenhar 1.3s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--ordem,0) * 140ms)}
  .br-home-redesenhada .br-rabisco-linhas path:nth-child(2){--ordem:1}.br-home-redesenhada .br-rabisco-linhas path:nth-child(3){--ordem:2}.br-home-redesenhada .br-rabisco-linhas path:nth-child(4){--ordem:3}.br-home-redesenhada .br-rabisco-linhas path:nth-child(5){--ordem:4}.br-home-redesenhada .br-rabisco-linhas path:nth-child(6){--ordem:5}.br-home-redesenhada .br-rabisco-linhas path:nth-child(7){--ordem:6}.br-home-redesenhada .br-rabisco-linhas path:nth-child(8){--ordem:7}.br-home-redesenhada .br-rabisco-linhas path:nth-child(9){--ordem:8}.br-home-redesenhada .br-rabisco-acentos path{--ordem:9}
- .br-home-redesenhada .br-motion-pronto{clip-path:inset(0 0 100% 0);transform:translateY(12px)}
- .br-home-redesenhada .br-motion-pronto.br-motion-visivel,.br-home-redesenhada .br-motion-pronto:focus-within{clip-path:inset(-2%);transform:none;transition:clip-path 650ms cubic-bezier(.2,.7,.2,1),transform 650ms cubic-bezier(.2,.7,.2,1)}
+ .br-home-redesenhada .br-motion-pronto{opacity:0;transform:translateY(12px)}
+ .br-home-redesenhada .br-motion-pronto.br-motion-visivel,.br-home-redesenhada .br-motion-pronto:focus-within{opacity:1;transform:none;transition:opacity 500ms ease-out,transform 650ms cubic-bezier(.2,.7,.2,1)}
 }
 @keyframes br-desenhar{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
 .br-home-redesenhada .br-palco{margin-top:24px;padding-top:0;border-top:0}
@@ -227,4 +227,4 @@
 .br-home-redesenhada .br-last{border-radius:16px;box-shadow:none}
 @media(max-width:900px){.br-home-redesenhada .br-rabisco-aprender{right:20px;top:60px;width:35%;opacity:.65}.br-home-redesenhada .br-hero-topo,.br-home-redesenhada .br-palco{max-width:65%}.br-home-redesenhada .br-languages{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:700px){.br-home-redesenhada .br-hero-in{padding:30px 20px}.br-home-redesenhada .br-hero-topo,.br-home-redesenhada .br-palco{max-width:none}.br-home-redesenhada .br-rabisco-aprender{position:relative;display:block;width:min(72%,270px);right:auto;top:auto;margin:12px auto 0;opacity:.9}.br-home-redesenhada .br-section{padding:48px 24px}.br-home-redesenhada .br-why-grid{grid-template-columns:1fr 1fr;gap:24px}.br-home-redesenhada .br-why-grid article:nth-child(odd){padding-left:0;border-left:0}.br-home-redesenhada #metodo:before{inset:0}.br-home-redesenhada .br-method{grid-template-columns:1fr}.br-home-redesenhada .br-languages{grid-template-columns:repeat(2,minmax(0,1fr))}.br-home-redesenhada .br-language{border-bottom:1px solid var(--linha);min-height:100px}.br-home-redesenhada .br-book{padding:30px 24px}}
-@media(prefers-reduced-motion:reduce){.br-home-redesenhada .br-motion-pronto{clip-path:none;transform:none}.br-home-redesenhada .br-rabisco-linhas path,.br-home-redesenhada .br-rabisco-acentos path{stroke-dasharray:none;stroke-dashoffset:0}}
+@media(prefers-reduced-motion:reduce){.br-home-redesenhada .br-motion-pronto{opacity:1;transform:none}.br-home-redesenhada .br-rabisco-linhas path,.br-home-redesenhada .br-rabisco-acentos path{stroke-dasharray:none;stroke-dashoffset:0}}
