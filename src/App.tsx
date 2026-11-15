@@ -25,11 +25,11 @@ const PorQue = lazy(() => import('./pages/PorQue'));
 const Contato = lazy(() => import('./pages/Contato'));
 const ExAlunosUdemy = lazy(() => import('./pages/ExAlunosUdemy'));
 const ExcluirConta = lazy(() => import('./pages/ExcluirConta'));
-import { Header, BarraTopo, BarraInferior, Footer, PrimeiraAbertura } from '@plataforma/Chrome';
+import { Header, BarraInferior, Footer, PrimeiraAbertura } from '@plataforma/Chrome';
 import { SugestaoIdioma } from './components/SugestaoIdioma';
 import NaoEncontrada from './pages/NaoEncontrada';
 import Carregando from './components/Carregando';
-import { LOCALE, useT } from './i18n';
+import { useT } from './i18n';
 
 function RolarAoTopo() {
   const { pathname, hash } = useLocation();
@@ -62,7 +62,6 @@ export default function App() {
       <a href="#conteudo" className="skip-link">{t.geral.pular}</a>
       <RolarAoTopo />
       {!NATIVO && <SugestaoIdioma />}
-      {!NATIVO && LOCALE.codigo !== 'pt-BR' && <BarraTopo semNovidades={AREA_ALUNO.test(pathname)} />}
       <Header />
       <main id="conteudo" className={!NATIVO ? 'site-camadas' : undefined} tabIndex={-1}>
         <Suspense fallback={<Carregando />}>

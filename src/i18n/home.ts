@@ -2,6 +2,11 @@ import { LOCALE } from './index';
 
 // Textos da home compartilhada. O conteúdo didático não é traduzido aqui.
 const copy: Record<string, readonly [string]> = {
+  'Qual idioma você quer aprender?': ['Which language do you want to learn?'],
+  'Ouça aqui e repita': ['Listen and repeat'],
+  'Ouça aqui e repita em': ['Listen and repeat in'],
+  'Explicações em português, com exemplos e comparações para construir uma base sólida.': ['Explanations in English, with examples and comparisons to build a solid foundation.'],
+  'Exercícios com correção e atividades de fala para praticar o que você aprendeu.': ['Exercises with feedback and speaking activities to practise what you have learned.'],
   'Que bom ter você de volta. Seu próximo passo está aqui.': ['Welcome back. Your next step is right here.'],
   'Vamos começar pela primeira sessão, no seu ritmo.': ['Let us start with the first session, at your own pace.'],
   'Nenhuma sessão marcada ainda': ['No sessions marked yet'],

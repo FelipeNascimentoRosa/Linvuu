@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { CURSOS_ATIVOS, cursoComExplicacaoNoSite } from '../lib/content';
 import { useAuth } from '../lib/AuthContext';
 import { LOCALE, useT } from '../i18n';
 import { homeText } from '../i18n/home';
@@ -11,10 +10,10 @@ export function Header() {
   const brasileiro = LOCALE.codigo === 'pt-BR';
   const itens = [
     ['/cursos', t.nav.cursos],
-    ...(!brasileiro ? [['/gramatica', t.nav.gramatica]] : [['/materiais-gratuitos', 'Materiais gratuitos']]),
+    brasileiro ? ['/materiais-gratuitos', 'Materiais gratuitos'] : ['/#experimente', 'Free practice'],
     ['/#metodo', t.nav.metodo], ['/#planos', homeText('Planos')],
     ['/#avaliacoes', t.nav.avaliacoes], ['/#faq', t.nav.duvidas],
-    ...(brasileiro ? [['/contato', 'Fale conosco']] : []),
+    ['/contato', brasileiro ? 'Fale conosco' : 'Contact us'],
   ];
   const [menu, setMenu] = useState(false);
   const [conta, setConta] = useState(false);
@@ -67,7 +66,7 @@ export function Header() {
             <>
               <Link to={`/entrar${proximo}`} className="lv-entrar">{t.nav.entrar}</Link>
               {/* Dentro da aula a pessoa já começou: o botão do topo oferece o que a conta dá, salvar o progresso (13/11/2026). */}
-              {(!brasileiro || /^\/curso\/[a-z]{2}\/dia\//.test(loc.pathname)) && <Link to={`/cadastro${proximo}`} className="btn btn-primary lv-head-cta">{/^\/curso\/[a-z]{2}\/dia\//.test(loc.pathname) ? (LOCALE.codigo === 'pt-BR' ? 'Salvar meu progresso' : 'Save my progress') : t.nav.comecar}</Link>}
+              {/^\/curso\/[a-z]{2}\/dia\//.test(loc.pathname) && <Link to={`/cadastro${proximo}`} className="btn btn-primary lv-head-cta">{/^\/curso\/[a-z]{2}\/dia\//.test(loc.pathname) ? (LOCALE.codigo === 'pt-BR' ? 'Salvar meu progresso' : 'Save my progress') : t.nav.comecar}</Link>}
             </>
           )}
         </div>
@@ -81,12 +80,10 @@ export function Header() {
 
       {menu && (
         <div className="lv-mobile" id="menu-mobile">
-          {!brasileiro && CURSOS_ATIVOS.filter((c) => cursoComExplicacaoNoSite(c.id)).map((c) => <Link key={c.id} to={`/curso/${c.id}`}>{c.nome}</Link>)}
           {itens.map(([to, texto]) => <Link key={to} to={to} onClick={() => setMenu(false)}>{texto}</Link>)}
           {usuario ? <button type="button" className="menu-mobile-sair" onClick={deslogar}>{t.nav.sair} ({usuario.nome})</button> : (
             <div className="menu-mobile-conta">
               <Link to={`/entrar${proximo}`} className="btn btn-ghost">{t.nav.entrar}</Link>
-              {!brasileiro && <Link to={`/cadastro${proximo}`} className="btn btn-primary">{t.nav.comecar}</Link>}
             </div>
           )}
         </div>

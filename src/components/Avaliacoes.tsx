@@ -5,7 +5,7 @@ import { carregarAuth } from '../lib/firebase';
 import { api } from '../lib/api';
 import { AULAS_RUSSO } from '../config/aulas-russo';
 import { AULAS_MIN, NOTA_MAX, TEXTO_MAX, type AvaliacaoPublica, type Relacao } from '../config/avaliacoes';
-import { comPrefixo, useT } from '../i18n';
+import { comPrefixo, LOCALE, useT } from '../i18n';
 import './avaliacoes.css';
 
 interface Resposta { itens: AvaliacaoPublica[]; total: number; media: number | null; contadas: number }
@@ -17,7 +17,7 @@ const Estrelas = ({ n, rotulo }: { n: number; rotulo: string }) => (
 );
 
 /** Avaliações de alunos (só as aprovadas) e formulário para quem concluiu as aulas gratuitas. Mesmo componente nos dois domínios. */
-export function Avaliacoes() {
+export function Avaliacoes({ vitrine = false }: { vitrine?: boolean }) {
   const a = useT().avaliacoes;
   const { usuario } = useAuth();
   const { pathname } = useLocation();
@@ -51,9 +51,10 @@ export function Avaliacoes() {
     } catch { setEstado('erro'); }
   };
 
-  const itens = dados?.itens ?? [];
-  // Sem avaliação aprovada na Linvuu, a prova vem de avaliações reais da Udemy (só em português, idioma original, com a fonte escrita).
-  const udemy = a.udemy ? AULAS_RUSSO['pt-BR'] : null;
+  const vitrineEmIngles = vitrine && LOCALE.codigo === 'en';
+  const itens = vitrineEmIngles ? [] : dados?.itens ?? [];
+  // Na home inglesa, use os relatos publicados com tradução revisada e fonte explícita.
+  const udemy = vitrineEmIngles ? AULAS_RUSSO.en : a.udemy ? AULAS_RUSSO['pt-BR'] : null;
   // Nas páginas de venda só os relatos sobre o ensino: os que citam vídeos ou WhatsApp descrevem o curso da Udemy, que o
   // assinante da Linvuu não recebe (decisão do Felipe, 13/11/2026). Todos continuam em /russo-online.
   const relatos = itens.length === 0 && udemy?.relatos ? udemy.relatos.filter((r) => !/v[íi]deo|whats ?app/i.test(r.texto)) : [];
@@ -64,7 +65,7 @@ export function Avaliacoes() {
   return (
     <section className="avaliacoes" aria-label={a.rotulo} id="avaliacoes">
       {temLista && <><h2>{relatos.length > 0 ? udemy!.relatosTitulo : a.titulo}</h2></>}
-      {dados && dados.media !== null && dados.contadas > 0 && <p className="av-resumo"><Estrelas n={Math.round(dados.media)} rotulo={a.estrelas(Math.round(dados.media))} /> <strong>{a.media(dados.media.toLocaleString(), dados.contadas)}</strong></p>}
+      {!vitrineEmIngles && dados && dados.media !== null && dados.contadas > 0 && <p className="av-resumo"><Estrelas n={Math.round(dados.media)} rotulo={a.estrelas(Math.round(dados.media))} /> <strong>{a.media(dados.media.toLocaleString(), dados.contadas)}</strong></p>}
       {relatos.length > 0 && (
         <>
           <ul className="av-lista">

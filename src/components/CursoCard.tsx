@@ -23,11 +23,11 @@ export function CursoCard({ curso, nivel = 3, catalogoRascunho = false }: { curs
   const cobertura = t.card.cobertura(cob.traduzidas, cob.total);
   return (
     <Link to={`/curso/${curso.id}`} className="lv-card">
-      {catalogoRascunho ? <span className={`catalogo-rabisco catalogo-rabisco-${curso.id}`} aria-hidden="true" /> : import.meta.env.VITE_ALVO !== 'apk' && !Capacitor.isNativePlatform() && LOCALE.codigo === 'pt-BR' && <img className="curso-card-capa" src={`/livros/${curso.id}-a1-a2-v1-600.webp`} alt={`Capa do livro de ${curso.nome.toLowerCase()} A1–A2, Coleção Linvuu`} width="600" height="800" loading="lazy" decoding="async" />}
+      {catalogoRascunho && curso.id !== 'br' ? <span className={`catalogo-rabisco catalogo-rabisco-${curso.id}`} aria-hidden="true" /> : import.meta.env.VITE_ALVO !== 'apk' && !Capacitor.isNativePlatform() && LOCALE.codigo === 'pt-BR' && <img className="curso-card-capa" src={`/livros/${curso.id}-a1-a2-v1-600.webp`} alt={`Capa do livro de ${curso.nome.toLowerCase()} A1–A2, Coleção Linvuu`} width="600" height="800" loading="lazy" decoding="async" />}
       {SAUDACAO[curso.id] && <span className="lv-saud" lang={curso.id === 'br' ? 'pt-BR' : curso.id} aria-hidden="true">{SAUDACAO[curso.id]}</span>}
       <Titulo className="lv-card-t">{curso.nome}</Titulo>
       <span className="lv-nativo" lang={curso.id === 'br' ? 'pt-BR' : curso.id}>{curso.nomeNativo !== curso.nome ? curso.nomeNativo : ' '}</span>
-      <p>{catalogoRascunho ? DESCRICOES_CATALOGO[curso.id] ?? curso.descricao : curso.descricao}</p>
+      <p>{catalogoRascunho && LOCALE.codigo === 'pt-BR' ? DESCRICOES_CATALOGO[curso.id] ?? curso.descricao : curso.descricao}</p>
       <span className="lv-card-meta">{aulas > 0 ? t.card.noAr(aulas) : t.card.preparo}{!catalogoRascunho && <> · {t.card.ate}</>}{cobertura && <><br />{cobertura}</>}</span>
     </Link>
   );
