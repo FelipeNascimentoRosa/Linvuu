@@ -29,6 +29,7 @@ try {
       if (arquivo === 'home') {
         assert.equal(await page.locator('.br-rabisco-aprender').count(),1,'home brasileira tem ilustração decorativa');
         assert.equal(await page.locator('.br-rabisco-cena').count(),3,'demais seções incluem rabiscos decorativos');
+        assert.equal(await page.locator('#metodo .br-method-foto-unica').count(),1,'método apresenta uma imagem junto dos três passos');
         assert.equal(await page.locator('.br-motion-pronto').count(),0,'movimento reduzido não oculta seções');
         const desenho = await page.locator('.br-rabisco-linhas path').first().evaluate(el => getComputedStyle(el).animationName);
         assert.equal(desenho,'none','movimento reduzido desliga o desenho animado');
