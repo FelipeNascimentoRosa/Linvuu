@@ -73,7 +73,7 @@ export default function Curso() {
           <div className="curso-fatos">
             {t.cursoPagina.fatos.map((f) => <span key={f}>{f}</span>)}
             {stats && <span>{t.cursoPagina.noAr(stats.publicadas, stats.total)}</span>}
-            {IDIOMAS_GRAMATICA.includes(curso.id) && <Link to={`/gramatica/${curso.id}`} className="link-gramatica">{t.cursoPagina.gramatica(curso.nome)}</Link>}
+            {LOCALE.codigo !== 'pt-BR' && IDIOMAS_GRAMATICA.includes(curso.id) && <Link to={`/gramatica/${curso.id}`} className="link-gramatica">{t.cursoPagina.gramatica(curso.nome)}</Link>}
             {curso.id === 'ru' && <Link to="/russo-online" className="link-gramatica">{LOCALE.codigo === 'pt-BR' ? 'Prefere aulas de russo ao vivo, com professor?' : 'Prefer live Russian lessons with a teacher?'}</Link>}
           </div>
           {website && retomar}
@@ -81,7 +81,6 @@ export default function Curso() {
         </div>
         {/* .com: os livros existem só em português; no lugar da capa, a gramática do curso, que existe em inglês (lote I2). */}
         {website && LOCALE.codigo !== 'pt-BR' && cob.total > 0 && cob.traduzidas >= cob.total && IDIOMAS_GRAMATICA.includes(curso.id) && <figure className="curso-livro curso-gramatica-cartao">
-          <img src="/assets/vuu/vuu.svg" alt="" width="96" height="106" decoding="async" />
           <figcaption><span>{t.cursoPagina.gramaticaCartao.rotulo}</span><strong>{t.cursoPagina.gramaticaCartao.texto}</strong><Link to={`/gramatica/${curso.id}`}>{t.cursoPagina.gramaticaCartao.link(curso.nome)}</Link></figcaption>
         </figure>}
         {website && LOCALE.codigo === 'pt-BR' && livro?.capa && <figure className="curso-livro">

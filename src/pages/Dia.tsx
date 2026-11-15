@@ -79,7 +79,7 @@ export default function Dia() {
       <Navegacao pai={`/curso/${curso!.id}`} idioma={curso!.id} trilha={[{ rotulo: t.geral.inicio, para: '/' }, { rotulo: t.geral.cursos, para: '/cursos' }, { rotulo: curso!.nome, para: `/curso/${curso!.id}` }, { rotulo: T.rotuloDia(dia) }]} />
 
       {/* Espera da decisão de acesso: mesmo componente dos fallbacks globais
-          (esqueleto + Vuu sonolento), nunca o texto solto. */}
+          (esqueleto de carregamento), nunca o texto solto. */}
       {decidindo && <Carregando />}
       {bloqueado && !decidindo && <Paywall idioma={curso!.id} curso={curso!.nome} indisponivel={ass.indisponivel} />}
       <ReportarProblema key={`${curso!.id}:${dia}`} idioma={curso!.id} dia={dia} />
