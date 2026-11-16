@@ -188,7 +188,7 @@ jobs:
           PY
           mapfile -t urls < reports/urls-auditadas.txt
           echo "URLS no escopo: ${#urls[@]}"
-          linkchecker --threads=3 --timeout=15 -r 1 --file-output=csv/utf-8/reports/linkchecker.csv --file-output=html/utf-8/reports/linkchecker.html "${urls[@]}" 2>&1 | tee reports/linkchecker.log
+          linkchecker --threads=3 --timeout=15 -r 1 --check-extern --file-output=csv/utf-8/reports/linkchecker.csv --file-output=html/utf-8/reports/linkchecker.html "${urls[@]}" 2>&1 | tee reports/linkchecker.log
       - name: Anexar CSV e log bruto de links
         if: always()
         uses: actions/upload-artifact@v4
