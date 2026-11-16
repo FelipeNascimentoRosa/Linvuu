@@ -8,15 +8,19 @@ const bin = process.env.GOOGLE_ROBOTS_BIN;
 assert(bin, 'Defina GOOGLE_ROBOTS_BIN com o caminho do executável oficial compilado.');
 // Os dois domínios: cada um com o seu robots.txt e o seu sitemap.
 const dominios = [
-  { site: 'https://linvuu.com.br', robots: 'public/robots.txt', sitemap: 'public/sitemap.xml' },
-  { site: 'https://linvuu.com', robots: 'public/robots-global.txt', sitemap: 'public/sitemap-global.xml' },
+  { site: 'https://linvuu.com.br', robots: 'public/robots.txt', sitemap: 'public/sitemap-brasil.xml' },
+  { site: 'https://linvuu.com', robots: 'public/robots-global.txt', sitemap: 'public/sitemap-internacional.xml' },
 ];
 let total = 0;
 for (const { site, robots: arqRobots, sitemap } of dominios) {
   const robots = resolve(arqRobots);
-  const urls = [...readFileSync(sitemap, 'utf8').matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
+  const robotsTxt = readFileSync(arqRobots, 'utf8');
+  assert(robotsTxt.includes(`Sitemap: ${site}/${sitemap.split('/').pop()}`), `${site}: robots aponta para o mapa exclusivo`);
+  const xml = readFileSync(sitemap, 'utf8');
+  assert(!xml.includes('xhtml:link'), `${site}: nao deve referenciar outros hosts por hreflang no XML`);
+  const urls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
   assert(urls.length > 0, `O sitemap de ${site} precisa conter URLs.`);
-  assert(urls.every(u => u.startsWith(site)), `O sitemap de ${site} só lista URLs do próprio domínio.`);
+  assert(urls.every(u => new URL(u).origin === site), `O sitemap de ${site} só lista URLs do próprio domínio.`);
   const casos = [
     ...urls.map(url => [url, true]),
     [`${site}/livro/gramatica-ru`, true], // Google precisa ler o noindex.
