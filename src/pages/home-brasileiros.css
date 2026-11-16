@@ -72,17 +72,6 @@
 .br-last h2 em{color:inherit;font-style:normal}
 .br-last .br-button{background:var(--br-green)}
 .br-last>p:last-child{font-size:14px;margin-top:22px}
-.br-resume{max-width:1136px;margin:20px auto 0;padding:16px 24px;background:var(--site-superficie-verde);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:15px;border-radius:14px}
-.br-resume a{color:var(--br-green);font-weight:700}
-.br-resume{align-items:center;justify-content:flex-start}
-.br-resume-vuu{flex:none;height:auto}
-.br-resume-texto{flex:1 1 220px;min-width:0}
-.br-resume-texto p{margin:0}
-.br-resume-frase{font-weight:700}
-.br-resume-prog,.br-resume-prox{font-size:14px}
-.br-resume>a{margin-left:auto}
-.br-resume-apoio{flex-basis:100%;margin:0;display:flex;flex-wrap:wrap;gap:6px 18px;font-size:14px}
-.br-resume-apoio a{font-weight:600}
 @keyframes br-pulse{to{transform:scaleY(.45)}}
 @media(max-width:1000px){
 .br-plans{grid-template-columns:repeat(2,1fr)}
@@ -110,7 +99,7 @@
 .br-plan ul{padding-top:8px}
 .br-current{flex-direction:column}
 .br-last{padding:56px 24px;margin:0 16px 40px}
-.br-resume{margin:16px 24px 0}}
+}
 @media(prefers-reduced-motion:reduce){.br-home *{animation:none!important;transition-property:color,background-color,border-color,opacity!important;scroll-behavior:auto!important}}
 /* Fotos nos três passos do método: pessoas de verdade estudando (tom verde da marca, ~60 KB cada, carregam sob demanda) */
 .br-method article{padding:0}

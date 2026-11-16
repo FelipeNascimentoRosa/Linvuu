@@ -14,7 +14,7 @@ Antes de alterar este repositório, leia `docs/ESTADO-ATUAL.md`, `docs/COORDENAC
 - Não publique segredos ou material comercial de terceiros.
 - Não altere cobrança, planos de infraestrutura ou permissões para contornar um teste falho.
 - Autorização atual do Felipe: auditar e corrigir segurança, cache, rotas, idiomas e SEO, inclusive fazer merges verificados. Não é autorização para exclusão indiscriminada de dados.
-- Os livros B1–C2 e protótipos continuam sujeitos a revisão antes de publicação. Existe um único Vuu (de capuz, mão no queixo; `public/assets/vuu/vuu.svg`), decisão de 08/11/2026: ver [docs/VUU.md](docs/VUU.md). Versões antigas estão descartadas.
+- Os livros B1–C2 e protótipos continuam sujeitos a revisão antes de publicação. O mascote Vuu foi retirado por decisão do Felipe, em 15/11/2026. Não reintroduza mascotes; ver [docs/VUU.md](docs/VUU.md).
 - Testes da mudança e checks aplicáveis precisam passar antes do merge. Uma limitação externa deve ser registrada, não escondida.
 
 ## Modo de entrega (pedido do Felipe, 29/10/2026)

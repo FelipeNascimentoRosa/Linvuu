@@ -1,6 +1,6 @@
 import { useDestinoSessao } from '../lib/useDestinoSessao';
 import { Link, useParams, useSearchParams } from 'react-router-dom';
-import { DIAS, FASES, IDIOMAS_GRAMATICA, coberturaNoSite, fonteDoCurso, diaDoCurso, gruposDoCurso, inicioDoNivel, NIVEL_CURTO, NIVEL_LABEL, STATUS_AULA, getCurso, statusDoCurso } from '../lib/content';
+import { DIAS, FASES, coberturaNoSite, fonteDoCurso, diaDoCurso, gruposDoCurso, inicioDoNivel, NIVEL_CURTO, NIVEL_LABEL, STATUS_AULA, getCurso, statusDoCurso } from '../lib/content';
 import { Navegacao } from '../components/Navegacao';
 import { usePageTitle } from '../lib/usePageTitle';
 import { SITE_URL } from '../config/site';
@@ -73,23 +73,18 @@ export default function Curso() {
           <div className="curso-fatos">
             {t.cursoPagina.fatos.map((f) => <span key={f}>{f}</span>)}
             {stats && <span>{t.cursoPagina.noAr(stats.publicadas, stats.total)}</span>}
-            {LOCALE.codigo !== 'pt-BR' && IDIOMAS_GRAMATICA.includes(curso.id) && <Link to={`/gramatica/${curso.id}`} className="link-gramatica">{t.cursoPagina.gramatica(curso.nome)}</Link>}
             {curso.id === 'ru' && <Link to="/russo-online" className="link-gramatica">{LOCALE.codigo === 'pt-BR' ? 'Prefere aulas de russo ao vivo, com professor?' : 'Prefer live Russian lessons with a teacher?'}</Link>}
           </div>
           {website && retomar}
 
         </div>
-        {/* .com: os livros existem só em português; no lugar da capa, a gramática do curso, que existe em inglês (lote I2). */}
-        {website && LOCALE.codigo !== 'pt-BR' && cob.total > 0 && cob.traduzidas >= cob.total && IDIOMAS_GRAMATICA.includes(curso.id) && <figure className="curso-livro curso-gramatica-cartao">
-          <figcaption><span>{t.cursoPagina.gramaticaCartao.rotulo}</span><strong>{t.cursoPagina.gramaticaCartao.texto}</strong><Link to={`/gramatica/${curso.id}`}>{t.cursoPagina.gramaticaCartao.link(curso.nome)}</Link></figcaption>
-        </figure>}
         {website && LOCALE.codigo === 'pt-BR' && livro?.capa && <figure className="curso-livro">
           <img src={livro.capa} alt={`Capa do livro de ${curso.nome}, Coleção Linvuu`} width="600" height="800" decoding="async" />
           <figcaption><span>Coleção Linvuu · A1–A2</span><strong>Seu livro para ler, ouvir e voltar quando precisar.</strong><Link to={livro.link?.startsWith('/livros/') ? livro.link : '/livros'}>Ler 2 capítulos grátis</Link></figcaption>
         </figure>}
       </header>
 
-      {LOCALE.codigo === 'pt-BR' && <nav className="site-course-nav" aria-label="Níveis e opções do curso">{Object.keys(aulasPorNivel).filter(Boolean).map(n => <a key={n} href={`#nivel-${n}`}>{NIVEL_LABEL[n] ?? n}</a>)}{website && livro?.link?.startsWith('/livros/') && <Link to={livro.link}>Livro de {curso.nome}</Link>}<Link to="/#planos">Comparar planos</Link></nav>}
+      {(website || LOCALE.codigo === 'pt-BR') && <nav className="site-course-nav" aria-label={LOCALE.codigo === 'pt-BR' ? 'Níveis e opções do curso' : 'Course levels and options'}>{Object.keys(aulasPorNivel).filter(Boolean).map(n => <a key={n} href={`#nivel-${n}`}>{NIVEL_LABEL[n] ?? n}</a>)}{website && LOCALE.codigo === 'pt-BR' && livro?.link?.startsWith('/livros/') && <Link to={livro.link}>Livro de {curso.nome}</Link>}<Link to="/#planos">{LOCALE.codigo === 'pt-BR' ? 'Comparar planos' : 'Compare plans'}</Link></nav>}
       {website && LOCALE.codigo === 'pt-BR' && APRESENTACOES_CURSO[curso.id] && <section aria-labelledby="curso-apresentacao" className="texto-legal">
         <h2 id="curso-apresentacao" className="pagina-h2">{APRESENTACOES_CURSO[curso.id].titulo}</h2>
         {APRESENTACOES_CURSO[curso.id].paragrafos.map((p) => <p key={p}>{p}</p>)}

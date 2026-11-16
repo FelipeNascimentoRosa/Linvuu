@@ -19,3 +19,7 @@ Outros rabiscos vetoriais aparecem nas seções de apresentação, idiomas e liv
 ## Revisão da home e do catálogo — 14/11/2026
 
 A home brasileira usa esmeralda na abertura, dois tons de marfim nas superfícies e azul claro no botão de áudio e na seleção ativa. Foram retirados os desenhos da home, a revelação ao rolar e as chamadas repetidas antes dos cursos. A grade de idiomas agora apresenta uma saudação e um link direto por curso. O catálogo mantém os cartões e simplifica o título e a busca. Os menus públicos brasileiros deixam de destacar Gramática; as rotas, o conteúdo didático e o menu do APK são preservados. O mascote deixa de aparecer na interface de carregamento e nos exercícios.
+
+## Paridade dos dois sites — 15/11/2026
+
+Home, cabeçalho e catálogo compartilham a apresentação aprovada. O .com exibe a interface em inglês e separa os cursos com tradução parcial. As avaliações da vitrine inglesa são traduções identificadas de relatos reais já publicados. Os planos, livros e guias seguem a disponibilidade de cada domínio. A faixa de retomada saiu da home; o progresso permanece acessível nos cursos. Rotas e mapa de rotas foram preservados. [Inventário de pendências](../pendencia-para-apagar/README.md).

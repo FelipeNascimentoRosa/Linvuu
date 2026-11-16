@@ -3,6 +3,7 @@ import { chromium } from 'playwright';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import { spawn } from 'node:child_process';
+import http from 'node:http';
 const semSugestaoIdioma=async(b,o)=>{const c=await b.newContext(o);await c.addInitScript(()=>{try{localStorage.setItem('linvuu:sugestao-idioma-dispensada','1');}catch{}});return c;}; // a faixa de sugestão de idioma tem teste próprio
 const base = 'http://127.0.0.1:4328';
 const server = spawn(process.execPath, ['--import','tsx','server.ts'], {env:{...process.env,NODE_ENV:'production',PORT:'4328'},stdio:'inherit'});
@@ -27,6 +28,7 @@ try {
         if (await recusar.isVisible()) await recusar.click();
       }
       if (arquivo === 'home') {
+        assert.equal(await page.locator('.br-resume').count(),0,'a abertura começa abaixo do cabeçalho, sem faixa de retomada');
         assert.equal(await page.locator('.br-hero .br-cta-linha, .br-hero .br-fine, .br-wave, .br-rabisco-aprender').count(),0,'home brasileira não repete ofertas nem exibe enfeites no áudio');
         await page.getByRole('tab', {name:'Inglês', exact:true}).focus();
         await page.keyboard.press('ArrowRight');
@@ -131,5 +133,33 @@ try {
     assert.equal(errors.length,0,`${nome}: erros JS: ${errors.join('; ')}`);
     await context.close();
   }
-  console.log('Revisão pública: desktop, 390px, 320px, ofertas disponíveis e âncora de assinatura passaram.');
+  const global = await semSugestaoIdioma(browser,{viewport:{width:1440,height:1000},reducedMotion:'reduce'});
+  await global.route('**/*', async route => {
+    const url = new URL(route.request().url());
+    if (url.hostname !== 'linvuu.com' || route.request().method() !== 'GET') return route.abort();
+    const {status,headers,body} = await new Promise((resolve,reject) => {
+      const req = http.get(url.pathname ? base + url.pathname + url.search : base, {headers:{host:url.hostname,'x-forwarded-proto':'https'}}, res => {
+        const parts=[]; res.on('data', part => parts.push(part));
+        res.on('end', () => resolve({status:res.statusCode,headers:Object.fromEntries(Object.entries(res.headers).filter(([name]) => !['content-length','transfer-encoding','connection','content-encoding'].includes(name))),body:Buffer.concat(parts)}));
+      });
+      req.on('error', reject);
+    });
+    await route.fulfill({status,headers,body});
+  });
+  const english = await global.newPage();
+  await english.goto('https://linvuu.com/');
+  await english.getByRole('button',{name:/^Listen and repeat in /}).waitFor();
+  assert.equal(await english.locator('html').getAttribute('lang'),'en');
+  assert.equal(await english.locator('.br-resume, .br-hero .br-cta-linha, #br-aba-en').count(),0);
+  assert.equal(await english.locator('.lv-nav').getByRole('link',{name:'Grammar',exact:true}).count(),0);
+  assert.equal(await english.getByRole('link',{name:'Contact us',exact:true}).first().getAttribute('href'),'/contato');
+  assert.match(await english.locator('#avaliacoes .av-fonte').innerText(), /translated here/);
+  await english.screenshot({path:'revisao-publica/desktop-global-home.png',fullPage:true});
+  await english.goto('https://linvuu.com/cursos');
+  await english.getByRole('heading',{name:'Language courses',exact:true}).waitFor();
+  assert.ok(await english.locator('.site-catalogo .catalogo-rabisco-fr').count());
+  assert.equal(await english.locator('.site-catalogo a[href="/curso/en"]').count(),0);
+  await english.screenshot({path:'revisao-publica/desktop-global-cursos.png',fullPage:true});
+  await global.close();
+  console.log('Revisão pública: desktop, 390px, 320px e paridade do .com passaram.');
 } finally {await browser?.close();server.kill();}
