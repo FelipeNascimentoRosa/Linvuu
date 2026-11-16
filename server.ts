@@ -101,8 +101,16 @@ registrarCtas(app); // POST /api/cta: clique de botão contado sem cookie e sem 
     // lista internacional atraves de /sitemap-global.xml.br no dominio brasileiro.
     // /prerender contem FRAGMENTOS por idioma, nao paginas HTML independentes.
     app.use((req: Request, res: Response, next) => {
-      const p = req.path.toLowerCase();
-      if (p === '/sitemap-global.xml' || p === '/robots-global.txt' || p === '/llms-global.txt'
+      // Express.static decodifica %XX ao procurar no filesystem: a guarda deve
+      // comparar o MESMO caminho decodificado para evitar bypass por %73itemap.
+      let p: string;
+      try { p = decodeURIComponent(req.path).toLowerCase(); }
+      catch { res.status(400).type('text/plain').send('Invalid path'); return; }
+      const publicas = new Set(['/sitemap.xml', '/sitemap-brasil.xml', '/sitemap-internacional.xml', '/robots.txt', '/llms.txt']);
+      if ((publicas.has(p) && req.path.toLowerCase() !== p)
+        || (p === '/sitemap-brasil.xml' && eGlobal(req))
+        || (p === '/sitemap-internacional.xml' && !eGlobal(req))
+        || p === '/sitemap-global.xml' || p === '/robots-global.txt' || p === '/llms-global.txt'
         || p === '/prerender' || p.startsWith('/prerender/')
         || /\.(?:xml|txt)\.br$/.test(p)) {
         res.status(404).type('text/plain').send('Not found');
