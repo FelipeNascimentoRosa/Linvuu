@@ -1,0 +1,197 @@
+name: Auditoria integral - Semgrep SonarQube LinkChecker
+on:
+  pull_request:
+    paths:
+      - 'src/**'
+      - 'server/**'
+      - 'server.ts'
+      - 'scripts/**'
+      - 'content/**'
+      - 'public/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.agents/skills/**'
+      - '.github/workflows/auditoria-integral.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: auditoria-integral-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  semgrep:
+    name: Semgrep - analise estatica completa
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar Semgrep Community Edition
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install semgrep
+          semgrep --version
+      - name: Executar regras de seguranca, OWASP e JS/TS em todo o repositorio
+        shell: bash
+        env:
+          SEMGREP_SEND_METRICS: 'off'
+        run: |
+          mkdir -p reports
+          set +e
+          semgrep scan --config p/security-audit --config p/owasp-top-ten --config p/javascript --config p/typescript --metrics=off --timeout=30 --max-target-bytes=2000000 --json --output=reports/semgrep.json .
+          code=$?
+          set -e
+          echo "semgrep_exit_code=$code" | tee reports/semgrep-status.txt
+          python3 - <<'PY'
+          import json, pathlib, collections
+          p=pathlib.Path('reports/semgrep.json')
+          if not p.exists():
+              print('Semgrep: NAO EXECUTADO; arquivo JSON inexistente')
+              raise SystemExit(2)
+          d=json.loads(p.read_text())
+          count=collections.Counter((r.get('extra',{}).get('severity','UNKNOWN')) for r in d.get('results',[]))
+          print('Semgrep resultados:', len(d.get('results',[])), 'severidades:', dict(count), 'erros de scanner:', len(d.get('errors',[])))
+          for r in d.get('results',[]):
+              print(f"{r.get('path')}:{r.get('start',{}).get('line')} {r.get('check_id')} {r.get('extra',{}).get('severity')} {r.get('extra',{}).get('message','').replace(chr(10),' ')[:350]}")
+          for e in d.get('errors',[]): print('ERRO SCANNER',e)
+          PY
+          if [ "$code" -ne 0 ]; then exit "$code"; fi
+      - name: Anexar resultado bruto Semgrep
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: auditoria-semgrep
+          path: reports/
+          if-no-files-found: warn
+          retention-days: 30
+
+  sonarqube:
+    name: SonarQube Community Build - instancia efemera
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+      - name: Inicializar SonarQube sem portas publicas
+        shell: bash
+        run: |
+          mkdir -p reports
+          docker run -d --rm --name linvuu-sonar-ci -p 127.0.0.1:9000:9000 -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true sonarqube:community
+          ok=0
+          for i in $(seq 1 150); do
+            status=$(curl -fsS --max-time 3 http://127.0.0.1:9000/api/system/status 2>/dev/null || true)
+            if echo "$status" | grep -q '"status":"UP"'; then ok=1; break; fi
+            sleep 2
+          done
+          if [ "$ok" -ne 1 ]; then
+            docker logs --tail 150 linvuu-sonar-ci > reports/sonarqube-startup.log 2>&1 || true
+            echo 'SonarQube nao iniciou; detalhes no artifact'
+            exit 1
+          fi
+          curl -fsS -u admin:admin -X POST -d 'name=Linvuu' -d 'project=linvuu' http://127.0.0.1:9000/api/projects/create > reports/sonar-project.json
+          token=$(curl -fsS -u admin:admin -X POST -d "name=linvuu-ci-${GITHUB_RUN_ID}" http://127.0.0.1:9000/api/user_tokens/generate | python3 -c 'import json,sys;print(json.load(sys.stdin)["token"])')
+          echo "::add-mask::$token"
+          printf 'SONAR_TOKEN=%s\n' "$token" >> "$GITHUB_ENV"
+      - name: Analisar todo o codigo de primeira parte no SonarQube
+        env:
+          SONAR_HOST_URL: http://127.0.0.1:9000
+        shell: bash
+        run: |
+          npx --yes @sonar/scan@4.3.5 \
+            -Dsonar.projectKey=linvuu \
+            -Dsonar.projectName=Linvuu \
+            -Dsonar.host.url=http://127.0.0.1:9000 \
+            -Dsonar.token="$SONAR_TOKEN" \
+            -Dsonar.sources=. \
+            -Dsonar.exclusions='**/node_modules/**,dist/**,dist-apk/**,**/*.mp3,**/*.wav,**/*.ogg,**/*.png,**/*.jpg,**/*.jpeg,**/*.webp,**/*.woff,**/*.woff2,**/*.pdf,**/*.zip,**/*.mp4,**/*.svg,**/*.lock,docs/historico/**,_para_apagar/**' \
+            -Dsonar.qualitygate.wait=true \
+            -Dsonar.qualitygate.timeout=240
+      - name: Exportar todas as issues do SonarQube e o Quality Gate
+        if: always()
+        shell: bash
+        run: |
+          mkdir -p reports
+          python3 - <<'PY'
+          import json, urllib.request, base64, pathlib
+          base='http://127.0.0.1:9000'
+          auth=base64.b64encode(b'admin:admin').decode()
+          def get(p):
+              req=urllib.request.Request(base+p,headers={'Authorization':'Basic '+auth})
+              with urllib.request.urlopen(req,timeout=20) as r: return json.load(r)
+          try:
+              total=[]
+              for page in range(1,101):
+                  obj=get(f'/api/issues/search?componentKeys=linvuu&ps=500&p={page}')
+                  total+=obj.get('issues',[])
+                  if len(total)>=obj.get('paging',{}).get('total', obj.get('total',0)):break
+              pathlib.Path('reports/sonarqube-issues.json').write_text(json.dumps(total,ensure_ascii=False,indent=2))
+              print('SonarQube total issues:',len(total))
+              for issue in total: print(issue.get('component'),issue.get('line'),issue.get('severity'),issue.get('rule'),issue.get('message'))
+              quality=get('/api/qualitygates/project_status?projectKey=linvuu')
+              pathlib.Path('reports/sonarqube-quality-gate.json').write_text(json.dumps(quality,ensure_ascii=False,indent=2))
+              print('Quality Gate:',quality.get('projectStatus',{}).get('status'))
+          except Exception as e:
+              print('Exportacao SonarQube nao concluida:',str(e))
+              pathlib.Path('reports/sonarqube-export-error.txt').write_text(str(e))
+          PY
+      - name: Anexar resultado bruto SonarQube
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: auditoria-sonarqube
+          path: reports/
+          retention-days: 30
+          if-no-files-found: warn
+      - name: Derrubar instancia efemera
+        if: always()
+        run: docker rm -f linvuu-sonar-ci || true
+
+  linkchecker:
+    name: LinkChecker - todas as URLs dos dois sitemaps
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar LinkChecker em ambiente isolado
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install linkchecker
+          linkchecker --version
+      - name: Rastrear cada URL existente dos dois sitemaps e links internos
+        shell: bash
+        run: |
+          mkdir -p reports
+          python3 - <<'PY' > reports/urls-auditadas.txt
+          from pathlib import Path
+          import re
+          urls=[]
+          for nome in ['sitemap-brasil.xml','sitemap-internacional.xml']:
+              s=Path('public',nome).read_text()
+              urls.extend(re.findall(r'<loc>(.*?)</loc>',s))
+          print('\n'.join(sorted(set(urls))))
+          PY
+          mapfile -t urls < reports/urls-auditadas.txt
+          echo "URLS no escopo: ${#urls[@]}"
+          linkchecker --threads=3 --timeout=15 --recursionlevel=1 --file-output=csv/utf-8/reports/linkchecker.csv --file-output=html/utf-8/reports/linkchecker.html "${urls[@]}" 2>&1 | tee reports/linkchecker.log
+      - name: Anexar CSV e log bruto de links
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: auditoria-linkchecker
+          path: reports/
+          retention-days: 30
+          if-no-files-found: warn
