@@ -16,6 +16,7 @@ import path from 'node:path';
 import { spawn } from 'node:child_process';
 import http from 'node:http';
 
+if (process.env.VITE_ALVO === 'apk') { console.log('[prerender] APK: sem renderizacao estatica da web.'); process.exit(0); }
 const raiz = path.resolve(import.meta.dirname, '..');
 const dist = path.join(raiz, 'dist');
 const saida = path.join(dist, 'prerender');
@@ -24,8 +25,8 @@ const obrigatorio = process.env.PRERENDER_OBRIGATORIO === '1';
 const falhar = (msg) => { console.error(`[prerender] ${msg}`); process.exit(obrigatorio ? 1 : 0); };
 
 const PERFIS = [
-  { perfil: 'br', host: 'linvuu.com.br', sitemap: 'sitemap.xml' },
-  { perfil: 'global', host: 'linvuu.com', sitemap: 'sitemap-global.xml' },
+  { perfil: 'br', host: 'linvuu.com.br', sitemap: 'sitemap-brasil.xml' },
+  { perfil: 'global', host: 'linvuu.com', sitemap: 'sitemap-internacional.xml' },
 ];
 
 let chromium;

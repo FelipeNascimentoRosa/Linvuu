@@ -62,7 +62,12 @@ for (const [perfil, loc] of LOCALES_POR_PERFIL) comPerfil(perfil, () => {
 });
 
 // Dois sitemaps: .com.br (português) e .com (inglês e espanhol). Cada URL é verificada no perfil do seu próprio domínio.
-const sitemap = fs.readFileSync('public/sitemap.xml', 'utf8') + fs.readFileSync('public/sitemap-global.xml', 'utf8');
+const sitemapBr = fs.readFileSync('public/sitemap-brasil.xml', 'utf8');
+const sitemapEn = fs.readFileSync('public/sitemap-internacional.xml', 'utf8');
+assert.ok(!sitemapBr.includes('https://linvuu.com/'), 'Brasil nao referencia o dominio internacional');
+assert.ok(!sitemapEn.includes('https://linvuu.com.br/'), 'Internacional nao referencia o Brasil');
+assert.ok(!sitemapBr.includes('xhtml:link') && !sitemapEn.includes('xhtml:link'), 'sitemaps independentes sem hreflang cruzado');
+const sitemap = sitemapBr + sitemapEn;
 const urls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(m => m[1]);
 assert.equal(new Set(urls).size, urls.length, 'sitemap sem duplicatas');
 // 11/11/2026: nenhuma sessão de aula é anunciada — o índice do curso é o hub, não as 3.680 sessões.
@@ -92,8 +97,8 @@ for (const [perfil, loc] of LOCALES_POR_PERFIL) for (const c of d.cursos) comPer
     indexaveis++;
     assert.ok(anotSitemap.has(u), `indexável ausente do sitemap: ${u}`);
     const h = aplicarMeta(base, m, 'https://linvuu.com.br', d);
-    const noHtml = [...h.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)"/g)].map((x) => `${x[1]}=${x[2]}`).sort().join(' ');
-    assert.equal(anotSitemap.get(u), noHtml, `hreflang igual no sitemap e no HTML: ${u}`);
+    // Hreflang pode continuar no HTML; o XML e isolado por decisao explicita.
+    assert.equal(anotSitemap.get(u), '', `XML sem referencias ao outro dominio: ${u}`);
   }
 });
 assert.ok(indexaveis > 0);

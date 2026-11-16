@@ -93,7 +93,7 @@ const linhasBr = [], linhasGlobal = [];
 const manifestoLastmod = (() => { const f = path.join(raiz, 'content', 'lastmod.json'); return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : {}; })();
 for (const g of grupos) for (const c of g.em) {
   const anot = g.anot ?? g.em;
-  const alt = anot.length > 1 ? anot.map((x) => `\n    <xhtml:link rel="alternate" hreflang="${x}" href="${url(x, g.p)}"/>`).join('') + `\n    <xhtml:link rel="alternate" hreflang="x-default" href="${url(alvoPadrao(g), g.p)}"/>` : '';
+  const alt = ''; // Sitemaps isolados: nenhuma referencia cruzada entre os dois dominios.
   const lm = manifestoLastmod[chaveLastmod(c, g.p)];
   const data = typeof lm === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(lm) ? `\n    <lastmod>${lm}</lastmod>` : '';
   (LOCALES.find((x) => x.c === c).site === SITE_BR ? linhasBr : linhasGlobal).push(`  <url><loc>${url(c, g.p)}</loc>${data}${alt}\n  </url>`);
@@ -101,8 +101,11 @@ for (const g of grupos) for (const c of g.em) {
 const xml = (linhas) => `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${linhas.join('\n')}\n</urlset>\n`;
 fs.writeFileSync(path.join(raiz, 'public', 'sitemap.xml'), xml(linhasBr));
 fs.writeFileSync(path.join(raiz, 'public', 'sitemap-global.xml'), xml(linhasGlobal));
+// Enderecos publicos exclusivos; os nomes historicos permanecem apenas como arquivos internos para testes legados.
+fs.writeFileSync(path.join(raiz, 'public', 'sitemap-brasil.xml'), xml(linhasBr));
+fs.writeFileSync(path.join(raiz, 'public', 'sitemap-internacional.xml'), xml(linhasGlobal));
 // A página de gramática carrega suas amostras abertas desta API; o acesso pago continua protegido no servidor.
-const robots = (site) => `User-agent: *\nAllow: /\nAllow: /api/gramatica/\nDisallow: /api/\nDisallow: /admin/\n\nSitemap: ${site}/sitemap.xml\n`;
+const robots = (site) => `User-agent: *\nAllow: /\nAllow: /api/gramatica/\nDisallow: /api/\nDisallow: /admin/\n\nSitemap: ${site}/${site === SITE_BR ? 'sitemap-brasil.xml' : 'sitemap-internacional.xml'}\n`;
 fs.writeFileSync(path.join(raiz, 'public', 'robots.txt'), robots(SITE_BR));
 fs.writeFileSync(path.join(raiz, 'public', 'robots-global.txt'), robots(SITE_GLOBAL));
 console.log(`sitemap .com.br: ${linhasBr.length} endereços (pt-BR) · sitemap .com: ${linhasGlobal.length} endereços (en)`);

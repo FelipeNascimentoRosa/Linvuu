@@ -12,7 +12,11 @@ on:
       - 'public/robots-global.txt'
       - 'public/sitemap.xml'
       - 'public/sitemap-global.xml'
+      - 'public/sitemap-brasil.xml'
+      - 'public/sitemap-internacional.xml'
       - 'scripts/seo.mjs'
+      - 'scripts/prerender.mjs'
+      - 'scripts/validar-prerender.mjs'
       - 'scripts/seo-tools/**'
       - 'scripts/google-robots/**'
       - 'scripts/testar-robots-google.mjs'
@@ -63,7 +67,7 @@ jobs:
           GOOGLE_ROBOTS_BIN: ${{ runner.temp }}/linvuu-robots/linvuu-google-robots
         run: |
           node scripts/seo.mjs
-          git diff --exit-code -- public/robots.txt public/robots-global.txt public/sitemap.xml public/sitemap-global.xml
+          git diff --exit-code -- public/robots.txt public/robots-global.txt public/sitemap.xml public/sitemap-global.xml public/sitemap-brasil.xml public/sitemap-internacional.xml
           node scripts/testar-robots-google.mjs
 
   paridade-head:
@@ -97,7 +101,7 @@ jobs:
           node scripts/testar-paridade-meta.mjs http://127.0.0.1:4398 global
 
   lighthouse:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04 # Playwright fixado nao suporta ubuntu26
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4

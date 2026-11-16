@@ -97,19 +97,29 @@ try {
     assert.equal(r.headers.get('location'), destino, `${host}${p}`);
     await r.arrayBuffer(); redirecionados++;
   }
-  // Cada domínio tem o seu sitemap e o seu robots, e só lista URLs do próprio domínio
-  for (const [host, outro] of [['linvuu.com', 'linvuu.com.br'], ['linvuu.com.br', 'linvuu.com']]) {
-    const sm = await (await get(host, '/sitemap.xml')).text();
+  // Os sitemaps publicos sao exclusivos e as URL antigas redirecionam sem misturar os domínios.
+  for (const host of ['linvuu.com', 'linvuu.com.br']) {
+    const nome = host === 'linvuu.com' ? 'sitemap-internacional.xml' : 'sitemap-brasil.xml';
+    const outro = host === 'linvuu.com' ? 'sitemap-brasil.xml' : 'sitemap-internacional.xml';
+    const r = await get(host, `/${nome}`);
+    assert.equal(r.status, 200, `${host}/${nome}`);
+    assert.match(r.headers.get('content-type') ?? '', /application\/xml/);
+    const sm = await r.text();
     const locs = [...sm.matchAll(/<loc>(.*?)<\/loc>/g)].map((x) => new URL(x[1]).hostname);
-    // O piso de 20 URLs envelheceu em 11/11/2026: com a sessão de aula fora do sitemap
-    // (docs/DECISAO-INDEXACAO-2026-11-11.md) o .com ficou com 15 URLs. O que este teste protege
-    // é «sitemap existe, não está vazio e só lista o próprio domínio»; a contagem exata é
-    // conferida por scripts/testar-inventario-seo.ts, que falha se alguém mexer na política.
     assert.ok(locs.length >= 10, `${host}: sitemap com ${locs.length} URLs`);
-    assert.ok(locs.every((h) => h === host), `${host}: sitemap só com URLs do próprio domínio`);
-    assert.ok(sm.includes(`href="https://${outro}`), `${host}: alternates apontam para o outro domínio`);
+    assert.ok(locs.every((h) => h === host), `${host}: sitemap so com URLs do proprio dominio`);
+    assert.ok(!sm.includes('xhtml:link'), `${host}: XML sem referencias cruzadas`);
+    assert.equal((await get(host, `/${outro}`)).status, 404, `${host}: mapa do outro dominio bloqueado`);
+    assert.equal((await get(host, '/sitemap-global.xml')).status, 404, `${host}: sitemap auxiliar interno bloqueado`);
+    for (const interno of ['/sitemap-global.xml.br', '/robots-global.txt', '/robots-global.txt.br', '/llms-global.txt', '/llms-global.txt.br', '/sitemap-brasil.xml.br', '/sitemap-internacional.xml.br', '/prerender/br/index.html', '/prerender/global/index.html', '/%73itemap-global.xml', '/sitemap-global%2exml', '/prerender/%67lobal/index.html', '/%73itemap.xml', '/%72obots.txt', '/%6clms.txt', host === 'linvuu.com' ? '/%73itemap-brasil.xml' : '/%73itemap-internacional.xml']) {
+      assert.equal((await get(host, interno)).status, 404, `${host}: artefato auxiliar bloqueado ${interno}`);
+    }
+    const legado = await get(host, '/sitemap.xml');
+    assert.equal(legado.status, 200, `${host}: endereco historico continua disponivel`);
+    assert.match(legado.headers.get('content-type') ?? '', /application\/xml/);
+    assert.equal(await legado.text(), sm, `${host}: sitemap historico e exclusivo identicos`);
     const rb = await (await get(host, '/robots.txt')).text();
-    assert.ok(rb.includes(`Sitemap: https://${host}/sitemap.xml`), `${host}: robots aponta para o próprio sitemap`);
+    assert.ok(rb.includes(`Sitemap: https://${host}/${nome}`), `${host}: robots aponta para o mapa correto`);
   }
   // llms.txt: cada domínio entrega o seu e só lista URLs do próprio domínio
   for (const [host, outro] of [['linvuu.com', 'linvuu.com.br'], ['linvuu.com.br', 'linvuu.com']]) {
