@@ -1,3 +1,4 @@
+import { Autoria } from '../components/Autoria';
 import { useEffect, useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import type { Plano } from '../lib/assinatura';
@@ -74,6 +75,14 @@ export default function Assinatura() {
               <p>{s.intro(AULAS_GRATIS)}</p>
               <p><Link className="btn btn-ghost" to="/cursos">{pt ? 'Testar 2 aulas grátis, sem cartão' : 'Try 2 free lessons, no card'}</Link></p>
               {!usuario && <p className="nota lv-assinatura-conta">{s.semConta} <Link to="/entrar?proximo=/assinatura">{s.jaTemConta}</Link></p>}
+              <h2 className="pagina-h2">{pt ? 'Como escolher um plano da Linvuu?' : 'How can I choose a Linvuu plan?'}</h2>
+              <p>{pt ? 'Você pode experimentar as duas primeiras aulas de cada curso gratuitamente antes de assinar. Os planos dão acesso ao conteúdo da plataforma; compare os valores e a forma de pagamento disponíveis abaixo. O plano mensal renova automaticamente, enquanto os pacotes trimestral e anual são pagamentos únicos.' : 'You can try the first two lessons of each course for free before subscribing. Plans give you access to the platform content, and you can compare the available prices below. The monthly plan renews automatically; the annual plan is a one-time payment for twelve months.'}</p>
+              <Autoria />
+              <div className="tabela-rolagem" role="region" tabIndex={0} aria-label={pt ? 'Comparação dos planos' : 'Plan comparison'}><table className="tabela"><caption>{pt ? 'Comparação dos planos' : 'Plan comparison'}</caption><thead><tr><th scope="col">{pt ? 'Plano' : 'Plan'}</th><th scope="col">{pt ? 'Preço' : 'Price'}</th></tr></thead><tbody>
+                <tr><th scope="row">{s.mensal}</th><td>{P.mensal}</td></tr>
+                {pt && <><tr><th scope="row">{s.pixBtn}</th><td>{P.trimestralPix}</td></tr><tr><th scope="row">{s.tresBtn}</th><td>{P.trimestral}</td></tr></>}
+                <tr><th scope="row">{s.dozeMeses}</th><td>{P.anual}</td></tr>
+              </tbody></table></div>
               <h2 className="pagina-h2">{pt ? 'Escolha seu plano' : 'Choose your plan'}</h2>
               {/* Três cartões numa fileira só, de mesma altura, botão na base. O trimestral tem UM preço e UM botão:
                   Pix ou cartão/boleto é um seletor dentro do cartão (regra do CLAUDE.md; auditoria Impeccable C1). */}

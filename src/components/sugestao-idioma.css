@@ -9,7 +9,7 @@
   display:flex;align-items:center;gap:14px;background:transparent;color:var(--text);font-size:13px;white-space:nowrap}
 .sugestao-idioma p{margin:0;overflow:hidden;text-overflow:ellipsis;color:var(--muted)}
 .sugestao-idioma a{color:var(--verde-floresta);font-weight:700;text-decoration:underline;text-underline-offset:3px;display:inline-flex;align-items:center;min-height:var(--barra-topo-h)}
-.sugestao-idioma button{min-height:28px;padding:0 10px;border:1px solid var(--border);border-radius:var(--r-control);background:transparent;color:var(--text);font:inherit;cursor:pointer}
+.sugestao-idioma button{min-height:44px;padding:0 10px;border:1px solid var(--border);border-radius:var(--r-control);background:transparent;color:var(--text);font:inherit;cursor:pointer}
 .sugestao-idioma :focus-visible{outline:3px solid var(--ocre);outline-offset:2px}
 .sugestao-idioma .si-curto{display:none}
 @media(max-width:760px){

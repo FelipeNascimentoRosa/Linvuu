@@ -21,12 +21,12 @@ try{
    await p.getByLabel(/E-mail da conta|Account email|Correo de la cuenta/).fill('aluno@exemplo.com');
    const href=decodeURIComponent(await link.getAttribute('href'));
    assert.match(href,/^mailto:hello\.linvuu@gmail\.com\?subject=/);assert.ok(href.includes(assunto)&&href.includes('aluno@exemplo.com'));
-   const conteudo=p.locator('#conteudo .pagina');
+   const conteudo=p.locator('#conteudo-principal .pagina');
    const hrefs=await conteudo.locator('a').evaluateAll(as=>as.map(a=>a.getAttribute('href')));
    assert.ok(hrefs.every(h=>!/checkout|stripe|billing|portal/i.test(h??'')),'sem link de pagamento: '+hrefs.join(' '));
    assert.match(await conteudo.innerText(),/Linvuu/);
    assert.match(await conteudo.innerText(),/Google Play/);
-   assert.deepEqual((await new AxeBuilder({page:p}).include('#conteudo').withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze()).violations.map(v=>v.id),[],`axe ${pref||'/'} ${tema}`);
+   assert.deepEqual((await new AxeBuilder({page:p}).include('#conteudo-principal').withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze()).violations.map(v=>v.id),[],`axe ${pref||'/'} ${tema}`);
    if(tema==='light'&&pref===''){assert.equal(await p.locator('footer a[href="/excluir-conta"]').count(),1,'link no rodapé');}
    await ctx.close();
   }

@@ -108,10 +108,18 @@ try {
     const locs = [...sm.matchAll(/<loc>(.*?)<\/loc>/g)].map((x) => new URL(x[1]).hostname);
     assert.ok(locs.length >= 10, `${host}: sitemap com ${locs.length} URLs`);
     assert.ok(locs.every((h) => h === host), `${host}: sitemap so com URLs do proprio dominio`);
-    assert.ok(!sm.includes('xhtml:link'), `${host}: XML sem referencias cruzadas`);
+    for (const [, alvo] of sm.matchAll(/<xhtml:link[^>]*href="([^"]+)"/g)) {
+      const url = new URL(alvo);
+      assert.ok(['linvuu.com', 'linvuu.com.br'].includes(url.hostname));
+      const resposta = await get(url.hostname, url.pathname);
+      assert.equal(resposta.status, 200, `alternativa deve responder 200: ${alvo}`);
+      const html = await resposta.text();
+      assert.ok(!html.includes('name="robots" content="noindex"'), `alternativa indexável: ${alvo}`);
+      assert.ok(html.includes(`rel="canonical" href="${alvo}"`), `canonical da alternativa: ${alvo}`);
+    }
     assert.equal((await get(host, `/${outro}`)).status, 404, `${host}: mapa do outro dominio bloqueado`);
     assert.equal((await get(host, '/sitemap-global.xml')).status, 404, `${host}: sitemap auxiliar interno bloqueado`);
-    for (const interno of ['/sitemap-global.xml.br', '/robots-global.txt', '/robots-global.txt.br', '/llms-global.txt', '/llms-global.txt.br', '/sitemap-brasil.xml.br', '/sitemap-internacional.xml.br', '/prerender/br/index.html', '/prerender/global/index.html', '/%73itemap-global.xml', '/sitemap-global%2exml', '/prerender/%67lobal/index.html', '/%73itemap.xml', '/%72obots.txt', '/%6clms.txt', host === 'linvuu.com' ? '/%73itemap-brasil.xml' : '/%73itemap-internacional.xml']) {
+    for (const interno of ['/sitemap-global.xml.br', '/robots-global.txt', '/robots-global.txt.br', '/llms-global.txt', '/llms-global.txt.br', '/llms-full-global.txt', '/llms-full-global.txt.br', '/sitemap-brasil.xml.br', '/sitemap-internacional.xml.br', '/prerender/br/index.html', '/prerender/global/index.html', '/%73itemap-global.xml', '/sitemap-global%2exml', '/prerender/%67lobal/index.html', '/%73itemap.xml', '/%72obots.txt', '/%6clms.txt', host === 'linvuu.com' ? '/%73itemap-brasil.xml' : '/%73itemap-internacional.xml']) {
       assert.equal((await get(host, interno)).status, 404, `${host}: artefato auxiliar bloqueado ${interno}`);
     }
     const legado = await get(host, '/sitemap.xml');
@@ -123,6 +131,11 @@ try {
   }
   // llms.txt: cada domínio entrega o seu e só lista URLs do próprio domínio
   for (const [host, outro] of [['linvuu.com', 'linvuu.com.br'], ['linvuu.com.br', 'linvuu.com']]) {
+    const completo = await get(host, '/llms-full.txt');
+    assert.equal(completo.status, 200, `${host}/llms-full.txt`);
+    assert.match(completo.headers.get('content-type') ?? '', /text\/plain/);
+    const textoCompleto = await completo.text();
+    assert.ok(textoCompleto.includes(host === 'linvuu.com' ? '# Course syllabuses' : '# Ementas dos cursos'));
     const r = await get(host, '/llms.txt');
     assert.equal(r.status, 200, `${host}/llms.txt`);
     const t = await r.text();

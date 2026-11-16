@@ -31,7 +31,7 @@ export function Footer({ semNovidades = false }: { semNovidades?: boolean }) {
         </div>
         <nav aria-label="Linvuu">
           <h2>Linvuu</h2>
-          <Link to="/cursos">{t.nav.todos}</Link>
+          {LOCALE.codigo !== 'pt-BR' && <Link to="/cursos">{t.nav.todos}</Link>}
           {LOCALE.codigo !== 'pt-BR' && <Link to="/gramatica">{t.nav.gramatica}</Link>}
           {LOCALE.codigo !== 'pt-BR' && <Link to="/curso/br">{t.rodape.portugues}</Link>}
           {LOCALE.codigo === 'pt-BR' && <><Link to="/livros">Livros</Link><Link to="/materiais-gratuitos">Materiais gratuitos</Link><Link to="/sobre">{t.rodape.sobre}</Link><Link to="/por-que-linvuu">{t.rodape.porQue}</Link></>}

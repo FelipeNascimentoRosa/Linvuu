@@ -35,25 +35,29 @@ function Palavras({ itens, idioma }: { itens: Palavra[]; idioma: string }) {
   const T = textos(idioma);
   const unicos = useMemo(() => itens.filter((p, i) => itens.findIndex((q) => norm(q.ru) === norm(p.ru)) === i), [itens]);
   return (
-    <ul className="palavras">
+    <dl className="palavras">
       {unicos.map((p) => (
-        <li key={p.ru}>
-          <div><strong lang={idioma} className="ru">{p.ru}</strong><span className="translit">{p.translit}</span></div>
-          <div className="trad">{p.pt}{p.ainda && <span className="ainda" title={T.aindaDica(p.ainda.join(', '))}>{T.ainda}</span>}</div>
+        <div key={p.ru} className="palavra-item">
+          <dt><strong lang={idioma === 'br' ? 'pt-BR' : idioma} className="ru">{p.ru}</strong><span className="translit">{p.translit}</span></dt>
+          <dd className="trad">{p.pt}{p.ainda && <span className="ainda" title={T.aindaDica(p.ainda.join(', '))}>{T.ainda}</span>}</dd>
           <Audio texto={p.audio ?? p.ru} idioma={idioma} />
-        </li>
+        </div>
       ))}
-    </ul>
+    </dl>
   );
 }
 
-export function Tabela({ linhas, explicacao = 'pt' }: { linhas: Record<string, string>[]; explicacao?: string }) {
+export function Tabela({ linhas, explicacao = 'pt', idioma, idiomasColunas = {} }: { linhas: Record<string, string>[]; explicacao?: string; idioma?: string; idiomasColunas?: Record<string, string> }) {
   const cols = Object.keys(linhas[0] ?? {});
+  const langAlvo = idioma === 'br' ? 'pt-BR' : idioma;
+  const colunaAlvo: Record<string, string[]> = { ru: ['ru', 'russo'], de: ['de', 'alemao'], es: ['es', 'espanhol'], fr: ['fr', 'frances'], it: ['it', 'italiano'], en: ['en', 'ingles'], br: ['br'] };
+  const langColuna = (coluna: string) => idiomasColunas[coluna] ?? (idioma && colunaAlvo[idioma]?.includes(coluna) ? langAlvo : undefined);
   return (
-    <div className="tabela-rolagem">
+    <div className="tabela-rolagem" role="region" tabIndex={0} aria-label={explicacao === 'en' ? 'Grammar table' : 'Tabela gramatical'}>
       <table className="tabela">
-        <thead><tr>{cols.map((c) => <th key={c}>{rotuloColuna(c, explicacao)}</th>)}</tr></thead>
-        <tbody>{linhas.map((l, i) => <tr key={i}>{cols.map((c) => <td key={c}>{l[c]}</td>)}</tr>)}</tbody>
+        <caption className="sr-only">{explicacao === 'en' ? 'Grammar table' : 'Tabela gramatical'}</caption>
+        <thead><tr>{cols.map((c) => <th key={c} scope="col">{rotuloColuna(c, explicacao)}</th>)}</tr></thead>
+        <tbody>{linhas.map((l, i) => <tr key={i}>{cols.map((c, coluna) => coluna === 0 ? <th key={c} scope="row" lang={langColuna(c)}>{l[c]}</th> : <td key={c} lang={langColuna(c)}>{l[c]}</td>)}</tr>)}</tbody>
       </table>
     </div>
   );
@@ -145,7 +149,7 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
     return (
       <div className="ex-resumo">
         <h3>{T.acertou(certos, corrigiveis.length)}</h3>
-        {erros.length > 0 && <ul>{erros.map((x, indice) => <li key={`${x.id}:${indice}`}><strong>{x.enunciado}</strong> {T.resposta} <span lang={idioma}>{x.gabarito ?? x.respostaEsperada}</span>{x.explicacao && <small> {x.explicacao}</small>}</li>)}</ul>}
+        {erros.length > 0 && <ul>{erros.map((x, indice) => <li key={`${x.id}:${indice}`}><strong>{x.enunciado}</strong> {T.resposta} <span lang={idioma === 'br' ? 'pt-BR' : idioma}>{x.gabarito ?? x.respostaEsperada}</span>{x.explicacao && <small> {x.explicacao}</small>}</li>)}</ul>}
         <button type="button" className="btn btn-ghost" onClick={recomecar}>{T.refazer}</button>
       </div>
     );
@@ -167,24 +171,24 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
       {comOpcoes && (
         <div className="ex-opcoes" role="radiogroup" aria-label={T.opcoes}>
           {ex.opcoes!.map((o) => (
-            <button key={o} type="button" role="radio" aria-checked={escolha === o} disabled={res !== null} className={`ex-op ${escolha === o ? 'on' : ''} ${res && o === ex.gabarito ? 'certa' : ''} ${res === 'erro' && escolha === o ? 'errada' : ''}`} onClick={() => setEscolha(o)} lang={idioma}>{o}</button>
+            <button key={o} type="button" role="radio" aria-checked={escolha === o} disabled={res !== null} className={`ex-op ${escolha === o ? 'on' : ''} ${res && o === ex.gabarito ? 'certa' : ''} ${res === 'erro' && escolha === o ? 'errada' : ''}`} onClick={() => setEscolha(o)} lang={idioma === 'br' ? 'pt-BR' : idioma}>{o}</button>
           ))}
           <small className="ex-dica">{T.teclado(ex.opcoes!.length)}</small>
         </div>
       )}
       {ex.tipo === 'sentence-ordering' && (
         <>
-          <div className="ex-montada" aria-live="polite" lang={idioma}>{ordem.length ? ordem.map((k) => ex.opcoes![k]).join(' ') : <em>{T.pecas}</em>}</div>
+          <div className="ex-montada" aria-live="polite" lang={idioma === 'br' ? 'pt-BR' : idioma}>{ordem.length ? ordem.map((k) => ex.opcoes![k]).join(' ') : <em>{T.pecas}</em>}</div>
           <div className="ex-opcoes">
-            {ex.opcoes!.map((o, k) => <button key={k} type="button" className="ex-op" disabled={ordem.includes(k) || res !== null} onClick={() => setOrdem([...ordem, k])} lang={idioma}>{o}</button>)}
+            {ex.opcoes!.map((o, k) => <button key={k} type="button" className="ex-op" disabled={ordem.includes(k) || res !== null} onClick={() => setOrdem([...ordem, k])} lang={idioma === 'br' ? 'pt-BR' : idioma}>{o}</button>)}
             <button type="button" className="link" disabled={res !== null || !ordem.length} onClick={() => setOrdem([])}>{T.limpar}</button>
           </div>
         </>
       )}
       {!comOpcoes && ex.tipo !== 'sentence-ordering' && ex.tipo !== 'repeat' && (
         ex.tipo === 'producao'
-          ? <textarea className="ex-texto" rows={3} value={texto} onChange={(e) => setTexto(e.target.value)} placeholder={T.escrevaPrivado} lang={idioma} />
-          : <input className="ex-texto" value={texto} disabled={res !== null} onChange={(e) => setTexto(e.target.value)} placeholder={idioma === 'ru' ? T.escrevaCirilico : T.escreva} lang={idioma} />
+          ? <textarea className="ex-texto" rows={3} value={texto} onChange={(e) => setTexto(e.target.value)} placeholder={T.escrevaPrivado} lang={idioma === 'br' ? 'pt-BR' : idioma} />
+          : <input className="ex-texto" value={texto} disabled={res !== null} onChange={(e) => setTexto(e.target.value)} placeholder={idioma === 'ru' ? T.escrevaCirilico : T.escreva} lang={idioma === 'br' ? 'pt-BR' : idioma} />
       )}
       <div className="ex-acoes ex-acoes-fixas">
         {res === null ? <button type="button" className="btn btn-primary" disabled={!pode} onClick={verificar}>{ex.tipo === 'producao' ? T.verExemplo : ex.tipo === 'repeat' ? T.mostrarResposta : T.verificar}</button>
@@ -194,9 +198,9 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
         <div className="ex-retorno">
           <div className={`ex-feedback ${res}${ex.tipo === 'repeat' ? ' repita' : ''}`} role="status">
             {res === 'ok' && <strong>{T.certo}</strong>}
-            {res === 'erro' && <strong>{T.errou} <span lang={idioma}>{ex.gabarito ?? ex.respostaEsperada}</span></strong>}
-            {res === 'livre' && ex.tipo === 'repeat' && <><strong lang={idioma}>{ex.respostaEsperada}</strong>{ex.explicacao && <span> {ex.explicacao}</span>}</>}
-            {res === 'livre' && ex.tipo !== 'repeat' && <strong>{T.compare} <span lang={idioma}>{ex.respostaEsperada}</span></strong>}
+            {res === 'erro' && <strong>{T.errou} <span lang={idioma === 'br' ? 'pt-BR' : idioma}>{ex.gabarito ?? ex.respostaEsperada}</span></strong>}
+            {res === 'livre' && ex.tipo === 'repeat' && <><strong lang={idioma === 'br' ? 'pt-BR' : idioma}>{ex.respostaEsperada}</strong>{ex.explicacao && <span> {ex.explicacao}</span>}</>}
+            {res === 'livre' && ex.tipo !== 'repeat' && <strong>{T.compare} <span lang={idioma === 'br' ? 'pt-BR' : idioma}>{ex.respostaEsperada}</span></strong>}
             {ex.explicacao && res !== 'livre' && <span> {ex.explicacao}</span>}
           </div>
         </div>
@@ -247,13 +251,13 @@ export function Gramatica({ b, idioma, explicacao }: { b: Extract<Bloco, { tipo:
       <Narrar itens={[b.explicacao, ...(b.comparacao ? [`Em português: ${b.comparacao}`] : [])]} idioma={idioma} explicacao={explicacao} />
       <Explicacao texto={b.explicacao} />
       {b.comparacao && <p className="callout comparacao"><strong>{rotuloComparacao}</strong> {b.comparacao}</p>}
-      {b.exemplos && <ul className="exemplos">{b.exemplos.map((e) => <li key={e.ru}><div className="ex-linha"><span lang={idioma} className="ru">{e.ru}</span><Audio texto={e.ru.replace(/\s*\(.*?\)\s*$/, '')} idioma={idioma} /></div><small className="trad">{e.pt}</small></li>)}</ul>}
-      {b.tabela && <Tabela linhas={b.tabela} explicacao={lingua} />}
-      {b.tabelas?.map((t, i) => <div key={i}>{t.titulo && <h4 className="bloco-sub">{t.titulo}</h4>}<Tabela linhas={t.linhas} explicacao={lingua} /></div>)}
+      {b.exemplos && <ul className="exemplos">{b.exemplos.map((e) => <li key={e.ru}><div className="ex-linha"><span lang={idioma === 'br' ? 'pt-BR' : idioma} className="ru">{e.ru}</span><Audio texto={e.ru.replace(/\s*\(.*?\)\s*$/, '')} idioma={idioma} /></div><small className="trad">{e.pt}</small></li>)}</ul>}
+      {b.tabela && <Tabela linhas={b.tabela} explicacao={lingua} idioma={idioma} />}
+      {b.tabelas?.map((t, i) => <div key={i}>{t.titulo && <h4 className="bloco-sub">{t.titulo}</h4>}<Tabela linhas={t.linhas} explicacao={lingua} idioma={idioma} /></div>)}
       {b.erros && (
         <div className="erros">
           <h4 className="bloco-sub">{T.erros}</h4>
-          <ul>{b.erros.map((e) => <li key={e.errado}><span className="errado" lang={idioma}>✗ {e.errado}</span><span className="certo" lang={idioma}>✓ {e.certo} <Audio texto={e.certo} idioma={idioma} /></span><small>{e.motivo}</small></li>)}</ul>
+          <ul>{b.erros.map((e) => <li key={e.errado}><span className="errado" lang={idioma === 'br' ? 'pt-BR' : idioma}>✗ {e.errado}</span><span className="certo" lang={idioma === 'br' ? 'pt-BR' : idioma}>✓ {e.certo} <Audio texto={e.certo} idioma={idioma} /></span><small>{e.motivo}</small></li>)}</ul>
         </div>
       )}
     </section>
@@ -270,7 +274,7 @@ function Conteudo({ b, idioma, explicacao }: { b: Bloco; idioma: string; explica
     case 'producao': return (
       <div className="callout callout-tarefa">
         <p><strong>{T.suaVez}</strong> {b.enunciado}</p>
-        {b.exemplo && <><button type="button" className="link" onClick={() => setExemplo((v) => !v)}>{exemplo ? T.esconder : T.verExemplo}</button>{exemplo && <p lang={idioma} className="ru">{b.exemplo}</p>}</>}
+        {b.exemplo && <><button type="button" className="link" onClick={() => setExemplo((v) => !v)}>{exemplo ? T.esconder : T.verExemplo}</button>{exemplo && <p lang={idioma === 'br' ? 'pt-BR' : idioma} className="ru">{b.exemplo}</p>}</>}
       </div>
     );
     case 'alfabeto': return (
@@ -279,10 +283,10 @@ function Conteudo({ b, idioma, explicacao }: { b: Bloco; idioma: string; explica
           <h3 className="bloco-sub">{g.nome}</h3>
           <ul className="letras">{g.letras.map((l) => (
             <li key={l.maiuscula}>
-              <span className="letra" lang={idioma}>{l.maiuscula} {l.minuscula}{l.nome && <> <Audio texto={l.nome} idioma={idioma} rotulo={T.nomeLetra(l.maiuscula)} /></>}</span>
+              <span className="letra" lang={idioma === 'br' ? 'pt-BR' : idioma}>{l.maiuscula} {l.minuscula}{l.nome && <> <Audio texto={l.nome} idioma={idioma} rotulo={T.nomeLetra(l.maiuscula)} /></>}</span>
               <span className="ipa">{l.ipa || T.semSom}</span>
               <span className="som-txt">{l.som}</span>
-              <span className="letra-ex"><span lang={idioma}>{l.exemplo}</span> · {l.exemploPt} <Audio texto={l.exemplo} idioma={idioma} /></span>
+              <span className="letra-ex"><span lang={idioma === 'br' ? 'pt-BR' : idioma}>{l.exemplo}</span> · {l.exemploPt} <Audio texto={l.exemplo} idioma={idioma} /></span>
             </li>
           ))}</ul>
         </section>
@@ -299,21 +303,21 @@ function Conteudo({ b, idioma, explicacao }: { b: Bloco; idioma: string; explica
           <label className="check"><input type="checkbox" checked={trad} onChange={(e) => setTrad(e.target.checked)} /> {T.mostrarTrad}</label>
         </div>
         <ul className="dialogo">{b.linhas.map((l, i) => (
-          <li key={i}><span className="quem">{l.rotulo ?? l.personagem}</span><div><span lang={idioma} className="ru">{l.ru}</span>{trad && <small className="trad">{l.pt}</small>}</div><Audio texto={l.audio ?? l.ru} idioma={idioma} /></li>
+          <li key={i}><span className="quem">{l.rotulo ?? l.personagem}</span><div><span lang={idioma === 'br' ? 'pt-BR' : idioma} className="ru">{l.ru}</span>{trad && <small className="trad">{l.pt}</small>}</div><Audio texto={l.audio ?? l.ru} idioma={idioma} /></li>
         ))}</ul>
       </section>
     );
     case 'texto': return (
       <section>
         <h3 className="bloco-sub">{b.titulo}</h3>
-        <p lang={idioma} className="ru texto-ru">{b.ru}</p>
+        <p lang={idioma === 'br' ? 'pt-BR' : idioma} className="ru texto-ru">{b.ru}</p>
         <div className="dialogo-barra">
           <Audio texto={b.ru} idioma={idioma} rotulo={T.ouvirTexto} />
           <label className="check"><input type="checkbox" checked={trad} onChange={(e) => setTrad(e.target.checked)} /> {T.mostrarTrad}</label>
         </div>
         {trad && <p className="trad">{b.pt}</p>}
         <h4 className="bloco-sub">{T.perguntas}</h4>
-        {b.perguntas.map((p) => <details key={p.pergunta} className="pergunta"><summary lang={idioma}>{p.pergunta}</summary><p lang={idioma}>{p.resposta}</p></details>)}
+        {b.perguntas.map((p) => <details key={p.pergunta} className="pergunta"><summary lang={idioma === 'br' ? 'pt-BR' : idioma}>{p.pergunta}</summary><p lang={idioma === 'br' ? 'pt-BR' : idioma}>{p.resposta}</p></details>)}
       </section>
     );
     case 'gramatica': return <Gramatica b={b} idioma={idioma} explicacao={explicacao} />;

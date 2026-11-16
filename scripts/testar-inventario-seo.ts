@@ -64,9 +64,8 @@ for (const [perfil, loc] of LOCALES_POR_PERFIL) comPerfil(perfil, () => {
 // Dois sitemaps: .com.br (português) e .com (inglês e espanhol). Cada URL é verificada no perfil do seu próprio domínio.
 const sitemapBr = fs.readFileSync('public/sitemap-brasil.xml', 'utf8');
 const sitemapEn = fs.readFileSync('public/sitemap-internacional.xml', 'utf8');
-assert.ok(!sitemapBr.includes('https://linvuu.com/'), 'Brasil nao referencia o dominio internacional');
-assert.ok(!sitemapEn.includes('https://linvuu.com.br/'), 'Internacional nao referencia o Brasil');
-assert.ok(!sitemapBr.includes('xhtml:link') && !sitemapEn.includes('xhtml:link'), 'sitemaps independentes sem hreflang cruzado');
+assert.ok([...sitemapBr.matchAll(/<loc>(.*?)<\/loc>/g)].every((m) => new URL(m[1]).hostname === 'linvuu.com.br'));
+assert.ok([...sitemapEn.matchAll(/<loc>(.*?)<\/loc>/g)].every((m) => new URL(m[1]).hostname === 'linvuu.com'));
 const sitemap = sitemapBr + sitemapEn;
 const urls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(m => m[1]);
 assert.equal(new Set(urls).size, urls.length, 'sitemap sem duplicatas');
@@ -86,6 +85,15 @@ for (const u of urls) {
 // indexável está no sitemap, e o cluster hreflang do sitemap é exatamente o que o servidor publica no HTML.
 const blocos = [...sitemap.matchAll(/<url><loc>(.*?)<\/loc>([\s\S]*?)<\/url>/g)];
 const anotSitemap = new Map(blocos.map((b) => [b[1], [...b[2].matchAll(/hreflang="([^"]+)" href="([^"]+)"/g)].map((x) => `${x[1]}=${x[2]}`).sort().join(' ')]));
+for (const [u, anot] of anotSitemap) {
+  const entries = anot ? anot.split(' ') : [];
+  for (const entry of entries) {
+    const [lang, target] = entry.split('=');
+    if (lang === 'x-default') continue;
+    assert.ok(anotSitemap.has(target), `alternativa ausente do sitemap: ${u} → ${target}`);
+    assert.equal(anotSitemap.get(target), anot, `hreflang nao reciproco: ${u} → ${target}`);
+  }
+}
 let indexaveis = 0;
 for (const [perfil, loc] of LOCALES_POR_PERFIL) for (const c of d.cursos) comPerfil(perfil, () => {
   const rotas = [`/curso/${c.id}`, `/gramatica/${c.id}`];
@@ -97,8 +105,8 @@ for (const [perfil, loc] of LOCALES_POR_PERFIL) for (const c of d.cursos) comPer
     indexaveis++;
     assert.ok(anotSitemap.has(u), `indexável ausente do sitemap: ${u}`);
     const h = aplicarMeta(base, m, 'https://linvuu.com.br', d);
-    // Hreflang pode continuar no HTML; o XML e isolado por decisao explicita.
-    assert.equal(anotSitemap.get(u), '', `XML sem referencias ao outro dominio: ${u}`);
+    const links = [...h.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)"/g)].map((x) => `${x[1]}=${x[2]}`).sort().join(' ');
+    assert.equal(anotSitemap.get(u), links, `hreflang HTML/XML: ${u}`);
   }
 });
 assert.ok(indexaveis > 0);

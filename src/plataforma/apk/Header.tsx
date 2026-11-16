@@ -25,12 +25,12 @@ export function Header() {
   useEffect(() => {
     let encerrado = false;
     const focar = () => {
-      const titulo = document.querySelector<HTMLElement>('#conteudo h1');
+      const titulo = document.querySelector<HTMLElement>('#conteudo-principal h1');
       if (!titulo || encerrado) return false;
       titulo.dataset.focoRota = "true"; titulo.tabIndex = -1; titulo.focus({preventScroll:true}); return true;
     };
     const observer = new MutationObserver(() => { if(focar()) observer.disconnect(); });
-    const frame = requestAnimationFrame(() => { if(!focar()) observer.observe(document.getElementById('conteudo') ?? document.body,{childList:true,subtree:true}); });
+    const frame = requestAnimationFrame(() => { if(!focar()) observer.observe(document.getElementById('conteudo-principal') ?? document.body,{childList:true,subtree:true}); });
     const limite = setTimeout(() => observer.disconnect(),5000);
     return () => { encerrado=true; cancelAnimationFrame(frame); clearTimeout(limite); observer.disconnect(); };
   }, [pathname]);
