@@ -4,7 +4,7 @@ import { HomeCourseLink } from '../components/HomeCourseLink';
 import { CursoCard } from '../components/CursoCard';
 import { homeText as h, homeNotice } from '../i18n/home';
 import { LOCALE } from '../i18n';
-import { Fragment, useState } from 'react';
+import { useState } from 'react';
 import { OfertaAtual } from '../components/OfertaAtual';
 import { HOME_BR } from '../config/oferta-publica';
 import { Link } from 'react-router-dom';
@@ -15,13 +15,13 @@ import './home-brasileiros.css';
 import { Avaliacoes } from '../components/Avaliacoes';
 
 const TODOS = [
-  { id: 'en', nome: 'Inglês', oi: 'Hello', frase: 'Hello. A coffee, please.', lang: 'en', detalhe: 'Do primeiro hello às suas próximas conversas.' },
-  { id: 'es', nome: 'Espanhol', oi: 'Hola', frase: 'Hola. Un café, por favor.', lang: 'es', detalhe: 'Vá além do portunhol, com explicações que fazem sentido.' },
-  { id: 'fr', nome: 'Francês', oi: 'Bonjour', frase: 'Bonjour. Un café, s’il vous plaît.', lang: 'fr', detalhe: 'Descubra os sons e entenda a lógica do francês.' },
-  { id: 'it', nome: 'Italiano', oi: 'Ciao', frase: 'Buongiorno. Un caffè, per favore.', lang: 'it', detalhe: 'Aproxime a vontade de falar da prática diária.' },
-  { id: 'de', nome: 'Alemão', oi: 'Hallo', frase: 'Guten Tag. Einen Kaffee, bitte.', lang: 'de', detalhe: 'Descomplique os primeiros passos, uma regra de cada vez.' },
-  { id: 'br', nome: 'Português do Brasil', oi: 'Olá', frase: 'Oi, bom dia. Um café, por favor.', lang: 'pt-BR', detalhe: 'Do primeiro “oi” às suas próximas conversas no Brasil.' },
-  { id: 'ru', nome: 'Russo', oi: 'Привет', frase: 'Здравствуйте. Мне кофе, пожалуйста.', lang: 'ru', detalhe: 'Comece pelo cirílico. Construa o resto com orientação.' },
+  { id: 'en', nome: 'Inglês', oi: 'Hello', frase: 'Hello. A coffee, please.', lang: 'en' },
+  { id: 'es', nome: 'Espanhol', oi: 'Hola', frase: 'Hola. Un café, por favor.', lang: 'es' },
+  { id: 'fr', nome: 'Francês', oi: 'Bonjour', frase: 'Bonjour. Un café, s’il vous plaît.', lang: 'fr' },
+  { id: 'it', nome: 'Italiano', oi: 'Ciao', frase: 'Buongiorno. Un caffè, per favore.', lang: 'it' },
+  { id: 'de', nome: 'Alemão', oi: 'Hallo', frase: 'Guten Tag. Einen Kaffee, bitte.', lang: 'de' },
+  { id: 'br', nome: 'Português do Brasil', oi: 'Olá', frase: 'Oi, bom dia. Um café, por favor.', lang: 'pt-BR' },
+  { id: 'ru', nome: 'Russo', oi: 'Привет', frase: 'Здравствуйте. Мне кофе, пожалуйста.', lang: 'ru' },
 ];
 // Cada público vê os cursos que não são a sua própria língua (em /en some o inglês; em / some o português para estrangeiros).
 const idiomasDoSite = TODOS.filter((i) => i.id !== LOCALE.cursoOculto);
@@ -45,7 +45,7 @@ export default function HomeBrasileiros() {
     const n = principais.findIndex((i) => i.id === idioma.id); let alvo = -1;
     if (e.key === 'ArrowRight') alvo = (n + 1) % principais.length; else if (e.key === 'ArrowLeft') alvo = (n - 1 + principais.length) % principais.length;
     else if (e.key === 'Home') alvo = 0; else if (e.key === 'End') alvo = principais.length - 1;
-    if (alvo < 0) return; e.preventDefault(); escolher(principais[alvo].id); document.getElementById(`br-aba-${principais[alvo].id}`)?.focus();
+    if (alvo < 0 || tocando || principais.length === 0) return; e.preventDefault(); escolher(principais[alvo].id); document.getElementById(`br-aba-${principais[alvo].id}`)?.focus();
   };
   const ouvir = async () => {
     setErro(''); setTocando(true);
@@ -56,37 +56,25 @@ export default function HomeBrasileiros() {
   return <div className={`br-home${!ehCom ? " br-home-leve" : ""}`}>
     <section className="br-hero" aria-labelledby="br-h1">
       <div className="br-hero-in">
-        <div className={`br-hero-topo${!ehCom ? " br-hero-topo-simples" : ""}`}>
+        <div className="br-hero-topo br-hero-topo-simples">
           <h1 id="br-h1">{h("Idiomas explicados em português,")}<br /><em>{h("com áudio em cada frase.")}</em></h1>
-          {ehCom && <p className="br-lead">{h(HOME_BR.lead)}</p>}
         </div>
         <div className="br-palco" id="experimente">
-          <p className="br-pick" id="br-pick-title">{ehCom ? h("Que idioma você quer aprender?") : "Qual idioma você quer aprender?"}</p>
+          <p className="br-pick" id="br-pick-title">{h("Qual idioma você quer aprender?")}</p>
           <div className="br-abas" role="tablist" aria-labelledby="br-pick-title" onKeyDown={teclaAba}>
             {principais.map((i) => <button key={i.id} type="button" role="tab" id={`br-aba-${i.id}`} aria-selected={i.id === idioma.id} aria-controls="br-frase" tabIndex={i.id === idioma.id ? 0 : -1} onClick={() => escolher(i.id)}>{h(i.nome)}</button>)}
           </div>
           <div className="br-frase-painel" id="br-frase" role="tabpanel" aria-labelledby={`br-aba-${idioma.id}`}>
-            <p className="br-frase" lang={idioma.lang} key={idioma.id}>{!ehCom ? idioma.frase : idioma.frase.split(' ').map((p, n) => <Fragment key={n}>{n > 0 && ' '}<span style={{ ['--n' as string]: n }}>{p}</span></Fragment>)}</p>
+            <p className="br-frase" lang={idioma.lang} key={idioma.id}>{idioma.frase}</p>
             <p className="br-nota">{h("Olá. Um café, por favor.")}</p>
             <div className="br-som">
-              {!ehCom ? <button className="br-ouvir" type="button" onClick={ouvir} disabled={tocando} aria-label={tocando ? undefined : `Ouça aqui e repita em ${idioma.nome}`}><span aria-hidden="true">▶</span> {tocando ? "Ouvindo…" : "Ouça aqui e repita"}</button> : <>
-              <button type="button" onClick={ouvir} disabled={tocando} aria-label={`${h('Ouvir frase em')} ${h(idioma.nome)}`}><span aria-hidden="true">{tocando ? '…' : '▶'}</span></button>
-              <div className={tocando ? 'br-wave playing' : 'br-wave'} aria-hidden="true">{Array.from({ length: 28 }, (_, n) => <i key={n} style={{ height: `${10 + (n * 17 % 34)}px`, animationDelay: `${n * 45}ms` }} />)}</div>
-              <span className="br-som-dica">{tocando ? h('Ouvindo…') : h('Ouça. Repita.')}</span></>}
+              <button className="br-ouvir" type="button" onClick={ouvir} disabled={tocando} aria-label={tocando ? undefined : `${h("Ouça aqui e repita em")} ${h(idioma.nome)}`}><span aria-hidden="true">▶</span> {tocando ? h("Ouvindo…") : h("Ouça aqui e repita")}</button>
             </div>
             <p role="status" className="br-error">{erro}</p>
           </div>
-          {ehCom && <><div className="br-cta-linha">
-            <HomeCourseLink cta="home_comecar" to={`/curso/${idioma.id}/dia/1`} className="br-cta">{LOCALE.codigo === 'pt-BR' ? `Começar a aula grátis de ${idioma.nome.toLowerCase()}` : `Start the free ${h(idioma.nome)} lesson`}</HomeCourseLink>
-            <HomeCourseLink cta="home_curso" to={`/curso/${idioma.id}`} className="br-cta-sec">{h('Ver o curso completo')}</HomeCourseLink>
-          </div>
-          <p className="br-fine">{h("As duas primeiras aulas são grátis, sem cartão.")}</p></>}
-          {LOCALE.codigo !== 'pt-BR' && <p className="br-fine"><a href="https://www.udemy.com/course/curso-de-russo-a1-ate-a2/" target="_blank" rel="noopener noreferrer" hrefLang="pt-BR">The authors’ Russian course on Udemy (taught in Portuguese): rated 4.7 out of 5 by 72 students</a></p>}
-          {LOCALE.codigo !== 'pt-BR' && <p className="br-fine">{homeNotice}</p>}
         </div>
       </div>
     </section>
-    {ehCom && <div className="br-benefits"><span><strong>{h("Em português.")}</strong>{h(" Desde a explicação.")}</span><span><strong>{h("Com áudio.")}</strong>{h(" Para ouvir e repetir.")}</span><span><strong>{h("No seu ritmo.")}</strong>{h(" Uma sessão por vez.")}</span></div>}
     <section className="br-section br-why br-motion-item" id="por-que-online" aria-labelledby="br-why-title">
       <div className="br-section-head"><div><h2 id="br-why-title">{h("Por que aprender com a Linvuu?")}</h2></div></div>
       <div className="br-why-grid">
@@ -99,19 +87,18 @@ export default function HomeBrasileiros() {
     <section className="br-section br-motion-item" id="metodo"><div className="br-section-head"><div><h2>{h("Entender muda")}<br />{h("o jeito de aprender.")}</h2></div>{ehCom && <p>{h("Você traz o português. A Linvuu usa essa base para explicar os sons, as estruturas e os erros comuns no novo idioma.")}</p>}</div>
       <div className="br-resposta-metodo"><h3>{LOCALE.codigo === 'en' ? 'How does the Linvuu method work?' : 'Como funciona o método da Linvuu?'}</h3><p>{LOCALE.codigo === 'en' ? 'Each lesson is organised into sessions that bring listening, reading, explanation and practice together. Audio accompanies words and dialogues, while examples connect new structures to what the learner already knows. The first two lessons are free, so you can explore the course before choosing a plan.' : 'Cada aula é organizada em sessões que reúnem escuta, leitura, explicação e prática. O áudio acompanha palavras e diálogos, enquanto exemplos relacionam estruturas novas ao que o aluno já conhece. As duas primeiras aulas são gratuitas, para que você conheça o curso antes de escolher um plano.'}</p><Autoria /></div>
       <div className="br-method">{[
-        ['01', 'Ouça o idioma acontecer.', 'Palavras e diálogos com áudio para ligar o que você lê ao que você escuta.', '◉', '/fotos/comece.jpg'],
-        ['02', 'Entenda o porquê.', 'Explicações em português, exemplos e comparações para construir uma base.', 'Aa', '/fotos/imersao.jpg'],
-        ['03', 'Coloque em prática.', 'Exercícios com correção e atividades de fala e escrita para usar o que aprendeu.', '↗', '/fotos/pratica.jpg'],
-      ].map(([n, titulo, texto, , foto]) => <article key={n}>{!ehCom && <span className="br-passo" aria-hidden="true">{n}</span>}{ehCom && <img className="br-method-foto" src={foto} alt="" width="1000" height="600" loading="lazy" decoding="async" />}<h3>{h(titulo)}</h3><p>{ehCom ? h(texto) : n === '02' ? 'Explicações em português, com exemplos e comparações para construir uma base sólida.' : n === '03' ? 'Exercícios com correção e atividades de fala para praticar o que você aprendeu.' : texto}</p></article>)}</div>
+        ['01', 'Ouça o idioma acontecer.', 'Palavras e diálogos com áudio para ligar o que você lê ao que você escuta.'],
+        ['02', 'Entenda o porquê.', 'Explicações em português, com exemplos e comparações para construir uma base sólida.'],
+        ['03', 'Coloque em prática.', 'Exercícios com correção e atividades de fala para praticar o que você aprendeu.'],
+      ].map(([n, titulo, texto]) => <article key={n}><span className="br-passo" aria-hidden="true">{n}</span><h3>{h(titulo)}</h3><p>{h(texto)}</p></article>)}</div>
     </section>
-    <section className="br-section br-motion-item" id="idiomas" aria-labelledby={ehCom ? undefined : "titulo-livros"}><span id="cursos" /><div className="br-section-head"><div><h2 id={ehCom ? undefined : "titulo-livros"}>{ehCom ? <>{h("Qual idioma você")}<br />{h("quer aprender hoje?")}</> : "Livros"}</h2></div>{ehCom && <p>{h("Para viajar, se aproximar de outras culturas ou realizar um objetivo seu. Encontre um idioma para começar.")}</p>}</div>{ehCom ? <div className="br-languages">{principais.map((i, n) => <HomeCourseLink cta="home_curso" key={i.id} to={`/curso/${i.id}`} className={`br-language br-language-${n}`}><span className="br-greeting" lang={i.lang}>{i.oi}{ehCom && <span aria-hidden="true">.</span>}</span><div><h3>{ehCom ? h(i.nome) : `Quero aprender ${i.nome.toLowerCase()}`}</h3><span aria-hidden="true">→</span></div>{ehCom && <p>{h(i.detalhe)}</p>}</HomeCourseLink>)}</div> : <div className="site-publico site-catalogo"><div className="curso-grid">{['en', 'es', 'de', 'fr', 'it', 'ru'].map((id) => CURSOS_ATIVOS.find((curso) => curso.id === id)!).filter(Boolean).map((c) => <div className="catalogo-idioma" key={c.id}><CursoCard curso={c} nivel={3} catalogoRascunho /><div className="catalogo-livro"><span>Livro · 2 capítulos grátis</span><Link to={`/livros/${c.id}`}>Abrir livro de {c.nome} <span aria-hidden="true">↗</span></Link></div></div>)}</div></div>}{emTraducao.length > 0 && <div className="br-traducao"><p>The English explanations for these courses are being written lesson by lesson. You can already start with the lessons that are ready:</p><ul>{emTraducao.map((i) => { const c = coberturaNoSite(i.id); return <li key={i.id}><HomeCourseLink cta="home_curso" to={`/curso/${i.id}`}>{h(i.nome)}</HomeCourseLink><span>{c.traduzidas} of {c.total} lessons in English</span></li>; })}</ul></div>}</section>
+    <section className="br-section br-motion-item" id="idiomas" aria-labelledby={ehCom ? undefined : "titulo-livros"}><span id="cursos" /><div className="br-section-head"><div><h2 id={ehCom ? undefined : "titulo-livros"}>{ehCom ? <>{h("Qual idioma você")}<br />{h("quer aprender hoje?")}</> : "Livros"}</h2></div>{ehCom && <p>{h("Para viajar, se aproximar de outras culturas ou realizar um objetivo seu. Encontre um idioma para começar.")}</p>}</div>{ehCom ? <div className="br-languages">{principais.map((i, n) => <HomeCourseLink cta="home_curso" key={i.id} to={`/curso/${i.id}`} className={`br-language br-language-${n}`}><span className="br-greeting" lang={i.lang}>{i.oi}{ehCom && <span aria-hidden="true">.</span>}</span><div><h3>{ehCom ? h(i.nome) : `Quero aprender ${i.nome.toLowerCase()}`}</h3><span aria-hidden="true">→</span></div></HomeCourseLink>)}</div> : <div className="site-publico site-catalogo"><div className="curso-grid">{['en', 'es', 'de', 'fr', 'it', 'ru'].map((id) => CURSOS_ATIVOS.find((curso) => curso.id === id)!).filter(Boolean).map((c) => <div className="catalogo-idioma" key={c.id}><CursoCard curso={c} nivel={3} catalogoRascunho /><div className="catalogo-livro"><span>Livro · 2 capítulos grátis</span><Link to={`/livros/${c.id}`}>Abrir livro de {c.nome} <span aria-hidden="true">↗</span></Link></div></div>)}</div></div>}{emTraducao.length > 0 && <div className="br-traducao"><p>The English explanations for these courses are being written lesson by lesson. You can already start with the lessons that are ready:</p><ul>{emTraducao.map((i) => { const c = coberturaNoSite(i.id); return <li key={i.id}><HomeCourseLink cta="home_curso" to={`/curso/${i.id}`}>{h(i.nome)}</HomeCourseLink><span>{c.traduzidas} of {c.total} lessons in English</span></li>; })}</ul></div>}</section>
     {/* Os livros só existem em português (/livros no .com redireciona ao .com.br): no .com a seção prometia o que o visitante não lê. */}
     {LOCALE.codigo === 'pt-BR' && (
     <section className="br-book"><div><h2>Seu aprendizado também tem páginas.</h2><p>Explore os livros da Linvuu, leia com calma e volte aos assuntos que merecem mais atenção.</p></div><Link className="br-text-link" to="/livros">Conhecer a coleção <span aria-hidden="true">→</span></Link></section>
     )}
     <OfertaAtual />
-    <div className="br-section br-avaliacoes br-motion-item"><Avaliacoes /></div>
+    <div className="br-section br-avaliacoes br-motion-item"><Avaliacoes vitrine /></div>
     <section className="br-section br-faq br-motion-item" id="faq"><div><h2>{h("Uma dúvida")}<br />{h("antes do primeiro passo?")}</h2><Link to="/contato" className="br-text-link">{h("Fale com a Linvuu")}</Link></div><div>{perguntas.map(([p,r]) => <details key={p}><summary>{h(p)}</summary><p>{h(r)}</p></details>)}</div></section>
-    {ehCom && <section className="br-last br-motion-item"><h2>{h("Abra espaço para")}<br /><em>{h("novas conversas.")}</em></h2><a href="#idiomas" className="br-button" data-cta="home_escolher_idioma">{h('Escolher meu idioma')} <span aria-hidden="true">↑</span></a><p>{h("Conheça a proposta. Explore os idiomas. Experimente uma aula.")}</p></section>}
   </div>;
 }
