@@ -85,11 +85,18 @@ registrarCtas(app); // POST /api/cta: clique de botão contado sem cookie e sem 
       if (!fs.existsSync(arq)) { res.status(404).type('text/plain; charset=utf-8').send('Not found'); return; }
       res.set({ 'Content-Type': tipo, 'Cache-Control': 'public, max-age=3600', 'X-Content-Type-Options': 'nosniff' }).send(fs.readFileSync(arq));
     };
-    // Cada domínio tem o seu sitemap e o seu robots (o do .com lista só inglês e espanhol; o do .com.br só português).
-    const sitemapBr = arquivoEstatico('sitemap.xml', 'application/xml; charset=utf-8'), sitemapGlobal = arquivoEstatico('sitemap-global.xml', 'application/xml; charset=utf-8');
-    const robotsBr = arquivoEstatico('robots.txt', 'text/plain; charset=utf-8'), robotsGlobal = arquivoEstatico('robots-global.txt', 'text/plain; charset=utf-8');
-    app.get('/sitemap.xml', (req: Request, res: Response) => { res.vary('Host'); (perfilDaRequisicao(req) === 'global' ? sitemapGlobal : sitemapBr)(req, res); });
-    app.get('/robots.txt', (req: Request, res: Response) => { res.vary('Host'); (perfilDaRequisicao(req) === 'global' ? robotsGlobal : robotsBr)(req, res); });
+    // Dois sitemaps com nomes EXCLUSIVOS: os arquivos internos nunca ficam acessiveis por URL direta.
+    const sitemapBr = arquivoEstatico('sitemap-brasil.xml', 'application/xml; charset=utf-8');
+    const sitemapGlobal = arquivoEstatico('sitemap-internacional.xml', 'application/xml; charset=utf-8');
+    const robotsBr = arquivoEstatico('robots.txt', 'text/plain; charset=utf-8');
+    const robotsGlobal = arquivoEstatico('robots-global.txt', 'text/plain; charset=utf-8');
+    const eGlobal = (req: Request) => perfilDaRequisicao(req) === 'global';
+    app.get('/sitemap-brasil.xml', (req: Request, res: Response) => { res.vary('Host'); if (eGlobal(req)) return res.sendStatus(404); sitemapBr(req, res); });
+    app.get('/sitemap-internacional.xml', (req: Request, res: Response) => { res.vary('Host'); if (!eGlobal(req)) return res.sendStatus(404); sitemapGlobal(req, res); });
+    // Compatibilidade com o endereco ja conhecido pelo Google, sem duplicar XML no indice.
+    app.get('/sitemap.xml', (req: Request, res: Response) => { res.vary('Host'); res.redirect(301, eGlobal(req) ? '/sitemap-internacional.xml' : '/sitemap-brasil.xml'); });
+    app.get(['/sitemap-global.xml', '/robots-global.txt'], (_req: Request, res: Response) => res.sendStatus(404));
+    app.get('/robots.txt', (req: Request, res: Response) => { res.vary('Host'); (eGlobal(req) ? robotsGlobal : robotsBr)(req, res); });
     // llms.txt: mapa curto do site para buscadores de IA; cada domínio entrega o seu (a versão do .com lista só o que existe em inglês).
     const llmsBr = arquivoEstatico('llms.txt', 'text/plain; charset=utf-8'), llmsGlobal = arquivoEstatico('llms-global.txt', 'text/plain; charset=utf-8');
     app.get('/llms.txt', (req: Request, res: Response) => { res.vary('Host'); (perfilDaRequisicao(req) === 'global' ? llmsGlobal : llmsBr)(req, res); });
