@@ -9,7 +9,7 @@ export function Header() {
   const t = useT();
   const brasileiro = LOCALE.codigo === 'pt-BR';
   const itens = [
-    ['/cursos', t.nav.cursos],
+    [brasileiro && import.meta.env.VITE_ALVO !== 'apk' ? '/livros' : '/cursos', brasileiro && import.meta.env.VITE_ALVO !== 'apk' ? 'Livros' : t.nav.cursos],
     brasileiro ? ['/materiais-gratuitos', 'Materiais gratuitos'] : ['/#experimente', 'Free practice'],
     ['/#metodo', t.nav.metodo], ['/#planos', homeText('Planos')],
     ['/#avaliacoes', t.nav.avaliacoes], ['/#faq', t.nav.duvidas],
@@ -44,17 +44,17 @@ export function Header() {
         </Link>
 
         <nav className="lv-nav" aria-label={t.geral.principal}>
-          {itens.map(([to, texto]) => <Link key={to} to={to}>{texto}</Link>)}
+          {itens.map(([to, texto]) => <Link key={to} to={to} aria-current={to === loc.pathname ? "page" : undefined}>{texto}</Link>)}
         </nav>
 
         <div className="lv-conta" ref={refConta}>
           {carregando ? null : usuario ? (
             <>
-              <button type="button" className="avatar-btn" aria-expanded={conta} aria-label={t.nav.contaDe(usuario.nome)} onClick={() => setConta((v) => !v)}>
+              <button type="button" className="avatar-btn" aria-expanded={conta} aria-controls="menu-conta" aria-label={t.nav.contaDe(usuario.nome)} onClick={() => setConta((v) => !v)}>
                 {usuario.foto ? <img src={usuario.foto} alt="" referrerPolicy="no-referrer" /> : usuario.nome.slice(0, 1).toUpperCase()}
               </button>
               {conta && (
-                <div className="menu-conta">
+                <div className="menu-conta" id="menu-conta">
                   <strong>{usuario.nome}</strong>
                   <span>{usuario.email}</span>
                   <Link to="/assinatura" onClick={() => setConta(false)}>{t.nav.assinatura}</Link>
@@ -79,14 +79,14 @@ export function Header() {
       </div>
 
       {menu && (
-        <div className="lv-mobile" id="menu-mobile">
-          {itens.map(([to, texto]) => <Link key={to} to={to} onClick={() => setMenu(false)}>{texto}</Link>)}
+        <nav className="lv-mobile" id="menu-mobile" aria-label={t.geral.principal}>
+          {itens.map(([to, texto]) => <Link key={to} to={to} aria-current={to === loc.pathname ? "page" : undefined} onClick={() => setMenu(false)}>{texto}</Link>)}
           {usuario ? <button type="button" className="menu-mobile-sair" onClick={deslogar}>{t.nav.sair} ({usuario.nome})</button> : (
             <div className="menu-mobile-conta">
               <Link to={`/entrar${proximo}`} className="btn btn-ghost">{t.nav.entrar}</Link>
             </div>
           )}
-        </div>
+        </nav>
       )}
     </header>
   );

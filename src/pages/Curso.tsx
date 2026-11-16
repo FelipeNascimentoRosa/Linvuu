@@ -68,7 +68,7 @@ export default function Curso() {
           
           {/* h1 com a busca (curso de X para quem fala a língua do site); o nome nativo fica como linha de apoio (13/11/2026). */}
           <h1 className="pagina-h1">{LOCALE.codigo === 'pt-BR' ? `Curso de ${curso.nome.toLowerCase()} para quem fala português` : `${curso.nome} course for English speakers`}</h1>
-          {curso.nomeNativo !== curso.nome && <p className="curso-nativo" lang={curso.id}>{curso.nomeNativo}</p>}
+          {curso.nomeNativo !== curso.nome && <p className="curso-nativo" lang={curso.id === 'br' ? 'pt-BR' : curso.id}>{curso.nomeNativo}</p>}
           <p className="lead">{curso.descricao}</p>
           <div className="curso-fatos">
             {t.cursoPagina.fatos.map((f) => <span key={f}>{f}</span>)}

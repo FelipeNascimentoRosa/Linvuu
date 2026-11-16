@@ -13,7 +13,7 @@ try{
  const ctx=await semAbertura(browser,{viewport:{width:360,height:780},reducedMotion:'reduce'});
  await ctx.route('https://linvuu.com.br/**',r=>r.abort());
  const p=await ctx.newPage();
- await p.goto(base+'/');await p.locator('#conteudo h1').waitFor();
+ await p.goto(base+'/');await p.locator('#conteudo-principal h1').waitFor();
  assert.equal(await p.locator('.app-reforco').count(),0,'sem prática, sem cartão');
  // Prática real: abrir o bloco de exercícios pelo atalho ?bloco e responder sempre a última opção.
  await p.goto(base+'/curso/en/dia/4?bloco=1');await p.locator('.app-etapa-titulo').waitFor();
@@ -27,7 +27,7 @@ try{
   await p.locator('.ex-acoes .btn-primary').click();
  }
  assert.ok(erros>0,'o roteiro precisa errar ao menos uma vez');
- await p.goto(base+'/');await p.locator('#conteudo h1').waitFor();
+ await p.goto(base+'/');await p.locator('#conteudo-principal h1').waitFor();
  const card=p.locator('.app-reforco');
  assert.equal(await card.count(),1,'cartão de reforço aparece');
  assert.match(await card.locator('h2').innerText(),new RegExp(`^${erros} exercícios? para rever$`));
@@ -36,19 +36,19 @@ try{
  assert.deepEqual(axe.violations.map(v=>v.id),[],'início com reforço sem violações axe');
  // Fim do gratuito: aba de estudo e botão do percurso nunca levam à sessão 9 bloqueada.
  await p.evaluate(()=>localStorage.setItem('linvuu:dias-concluidos:v1',JSON.stringify([1,2,3,4,5,6,7,8].map(d=>'en:'+d))));
- await p.goto(base+'/curso/en');await p.locator('#conteudo h1').waitFor();
+ await p.goto(base+'/curso/en');await p.locator('#conteudo-principal h1').waitFor();
  assert.equal(await p.locator('a[href="/curso/en/dia/9"]').count(),0,'nenhum link para sessão bloqueada');
  assert.equal(await p.locator('.lv-tab-estudar').getAttribute('href'),'/curso/en');
  // Limpeza local em dois toques: apaga estudo, mantém preferências.
  await p.evaluate(()=>localStorage.setItem('linvuu:tema-app','escuro'));
- await p.goto(base+'/conta');await p.locator('#conteudo h1').waitFor();
+ await p.goto(base+'/conta');await p.locator('#conteudo-principal h1').waitFor();
  await p.getByRole('button',{name:/Apagar progresso deste aparelho/}).click();
  await p.getByRole('button',{name:/Confirmar/}).click();
  await p.locator('[aria-labelledby=apagar-local-titulo] [role=status]').filter({hasText:/Pronto/}).waitFor();
  const restantes=await p.evaluate(()=>Object.keys(localStorage).filter(k=>k.startsWith('linvuu:')).sort());
  assert.ok(restantes.includes('linvuu:tema-app'),'preferência mantida');
  assert.ok(!restantes.some(k=>k.startsWith('linvuu:pratica-apk:')||k.startsWith('linvuu:dias-concluidos')),'estudo apagado');
- await p.goto(base+'/');await p.locator('#conteudo h1').waitFor();
+ await p.goto(base+'/');await p.locator('#conteudo-principal h1').waitFor();
  assert.equal(await p.locator('.app-reforco').count(),0,'cartão some depois de apagar');
  console.log(JSON.stringify({passed:['sem prática sem cartão','?bloco abre os exercícios',`reforço conta ${erros} erros reais`,'link volta ao bloco certo','axe sem violações no início','fim do gratuito sem link bloqueado','limpeza local mantém preferências'],limite:'Chromium em servidor local; não é Android nem TalkBack'}));
 }finally{await browser?.close();server.kill();}

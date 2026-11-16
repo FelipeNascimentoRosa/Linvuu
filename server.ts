@@ -106,11 +106,11 @@ registrarCtas(app); // POST /api/cta: clique de botão contado sem cookie e sem 
       let p: string;
       try { p = decodeURIComponent(req.path).toLowerCase(); }
       catch { res.status(400).type('text/plain').send('Invalid path'); return; }
-      const publicas = new Set(['/sitemap.xml', '/sitemap-brasil.xml', '/sitemap-internacional.xml', '/robots.txt', '/llms.txt']);
+      const publicas = new Set(['/sitemap.xml', '/sitemap-brasil.xml', '/sitemap-internacional.xml', '/robots.txt', '/llms.txt', '/llms-full.txt']);
       if ((publicas.has(p) && req.path.toLowerCase() !== p)
         || (p === '/sitemap-brasil.xml' && eGlobal(req))
         || (p === '/sitemap-internacional.xml' && !eGlobal(req))
-        || p === '/sitemap-global.xml' || p === '/robots-global.txt' || p === '/llms-global.txt'
+        || p === '/sitemap-global.xml' || p === '/robots-global.txt' || p === '/llms-global.txt' || p === '/llms-full-global.txt'
         || p === '/prerender' || p.startsWith('/prerender/')
         || /\.(?:xml|txt)\.br$/.test(p)) {
         res.status(404).type('text/plain').send('Not found');
@@ -122,6 +122,8 @@ registrarCtas(app); // POST /api/cta: clique de botão contado sem cookie e sem 
     // llms.txt: mapa curto do site para buscadores de IA; cada domínio entrega o seu (a versão do .com lista só o que existe em inglês).
     const llmsBr = arquivoEstatico('llms.txt', 'text/plain; charset=utf-8'), llmsGlobal = arquivoEstatico('llms-global.txt', 'text/plain; charset=utf-8');
     app.get('/llms.txt', (req: Request, res: Response) => { res.vary('Host'); (perfilDaRequisicao(req) === 'global' ? llmsGlobal : llmsBr)(req, res); });
+    const llmsFullBr = arquivoEstatico('llms-full.txt', 'text/plain; charset=utf-8'), llmsFullGlobal = arquivoEstatico('llms-full-global.txt', 'text/plain; charset=utf-8');
+    app.get('/llms-full.txt', (req: Request, res: Response) => { res.vary('Host'); (eGlobal(req) ? llmsFullGlobal : llmsFullBr)(req, res); });
     const distDir = path.resolve(__dirname, 'dist');
     // Regras de cache dos estáticos: as mesmas para o express.static e para o Brotli pré-comprimido abaixo,
     // para o mesmo arquivo ter sempre a mesma política, comprimido ou não.
@@ -266,6 +268,7 @@ registrarCtas(app); // POST /api/cta: clique de botão contado sem cookie e sem 
       const real = paginaPreRenderizada(perfilDaRequisicao(req), req.path);
       const baseDaPagina = real ? base.replace('<div id="root"></div>', () => `<div id="root">${real}</div>`) : base;
       const { m, html } = noPerfilDe(req, () => { const m = metaDaRota(req.path, dadosMeta); return { m, html: comPreloadDaRota(aplicarMeta(m.status === 200 ? baseDaPagina : base, m, SITE_URL, dadosMeta), req.path) }; });
+      if (m.semSeguimento) res.set('X-Robots-Tag', 'noindex, nofollow');
       res.status(m.status).type('html').send(html);
     });
   } else {

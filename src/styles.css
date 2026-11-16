@@ -263,7 +263,7 @@ a.livro:focus-visible{outline:2px solid var(--ocre);outline-offset:6px}
 .som{flex-shrink:0;width:38px;height:38px;border-radius:50%;border:1.5px solid var(--text);background:var(--papel-claro);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;padding:0}
 .som:hover{background:var(--text);color:var(--papel-claro)}
 .palavras{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
-.palavras li{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;border:1.5px solid var(--border);border-radius:var(--r-sm)}
+.palavras .palavra-item{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;border:1.5px solid var(--border);border-radius:var(--r-sm)}
 .palavras strong{font-size:22px;display:block}
 .translit{display:block;font-size:13px;color:var(--faint)}
 .trad{color:var(--muted);font-size:15px}
@@ -450,4 +450,15 @@ input,textarea{caret-color:var(--verde-floresta)}
 @media(max-width:760px){
   .lv-foot a,.br-text-link,.br-book-links a{min-height:44px;display:inline-flex;align-items:center}
   .br-faq summary,.faq summary,.texto-legal summary{min-height:44px}
+}
+
+/* Acessibilidade compartilhada: alvos de toque e leitura. */
+h1, h2, h3 { text-wrap: balance; }
+p, li { text-wrap: pretty; }
+.palavras dd { margin: 0; }
+button, .btn { min-width: 44px; min-height: 44px; }
+.lv-plano-preco, .lv-plano-equiv, .aa-dia, .lvr-item-n { font-variant-numeric: tabular-nums; }
+html:not([data-plataforma="nativo"]) :is(a, button, input, select, textarea, summary):focus-visible { outline: 3px solid #0D7A56 !important; outline-offset: 2px !important; }
+@media (forced-colors: active) {
+  html:not([data-plataforma="nativo"]) :is(a, button, input, select, textarea, summary):focus-visible { outline-color: Highlight !important; }
 }

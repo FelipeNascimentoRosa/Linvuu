@@ -1,7 +1,101 @@
 User-agent: *
 Allow: /
+Disallow: /entrar
+Disallow: /cadastro
+Disallow: /conta$
+Disallow: /conta/
+Disallow: /conta?
 Allow: /api/gramatica/
 Disallow: /api/
 Disallow: /admin/
 
+User-agent: Googlebot
+Allow: /
+Disallow: /entrar
+Disallow: /cadastro
+Disallow: /conta$
+Disallow: /conta/
+Disallow: /conta?
+Allow: /api/gramatica/
+Disallow: /api/
+Disallow: /admin/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /entrar
+Disallow: /cadastro
+Disallow: /conta$
+Disallow: /conta/
+Disallow: /conta?
+Allow: /api/gramatica/
+Disallow: /api/
+Disallow: /admin/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /entrar
+Disallow: /cadastro
+Disallow: /conta$
+Disallow: /conta/
+Disallow: /conta?
+Allow: /api/gramatica/
+Disallow: /api/
+Disallow: /admin/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /entrar
+Disallow: /cadastro
+Disallow: /conta$
+Disallow: /conta/
+Disallow: /conta?
+Allow: /api/gramatica/
+Disallow: /api/
+Disallow: /admin/
+
+User-agent: GPTBot
+Allow: /
+Disallow: /entrar
+Disallow: /cadastro
+Disallow: /conta$
+Disallow: /conta/
+Disallow: /conta?
+Allow: /api/gramatica/
+Disallow: /api/
+Disallow: /admin/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /entrar
+Disallow: /cadastro
+Disallow: /conta$
+Disallow: /conta/
+Disallow: /conta?
+Allow: /api/gramatica/
+Disallow: /api/
+Disallow: /admin/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /entrar
+Disallow: /cadastro
+Disallow: /conta$
+Disallow: /conta/
+Disallow: /conta?
+Allow: /api/gramatica/
+Disallow: /api/
+Disallow: /admin/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /entrar
+Disallow: /cadastro
+Disallow: /conta$
+Disallow: /conta/
+Disallow: /conta?
+Allow: /api/gramatica/
+Disallow: /api/
+Disallow: /admin/
+
+Sitemap: https://linvuu.com.br/sitemap.xml
 Sitemap: https://linvuu.com.br/sitemap-brasil.xml

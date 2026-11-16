@@ -1,5 +1,8 @@
+import { perguntasHome as perguntas } from '../lib/perguntasHome';
+import { Autoria } from '../components/Autoria';
 import { HomeCourseLink } from '../components/HomeCourseLink';
-import { homeText as h } from '../i18n/home';
+import { CursoCard } from '../components/CursoCard';
+import { homeText as h, homeNotice } from '../i18n/home';
 import { LOCALE } from '../i18n';
 import { useState } from 'react';
 import { OfertaAtual } from '../components/OfertaAtual';
@@ -7,7 +10,7 @@ import { HOME_BR } from '../config/oferta-publica';
 import { Link } from 'react-router-dom';
 import { falar } from '../lib/audio';
 import { usePageTitle } from '../lib/usePageTitle';
-import { cursoComExplicacaoNoSite, coberturaNoSite } from '../lib/content';
+import { CURSOS_ATIVOS, cursoComExplicacaoNoSite, coberturaNoSite } from '../lib/content';
 import './home-brasileiros.css';
 import { Avaliacoes } from '../components/Avaliacoes';
 
@@ -22,12 +25,7 @@ const TODOS = [
 ];
 // Cada público vê os cursos que não são a sua própria língua (em /en some o inglês; em / some o português para estrangeiros).
 const idiomasDoSite = TODOS.filter((i) => i.id !== LOCALE.cursoOculto);
-const perguntas = [
-  ['Preciso saber alguma coisa para começar?', 'Não. Você pode começar do zero. As explicações são em português e a trilha apresenta o idioma passo a passo.'],
-  ['Como posso conhecer as aulas?', 'As duas primeiras aulas de cada curso são gratuitas. Você pode experimentar antes de decidir pela assinatura.'],
-  ['Quais cursos estão incluídos?', 'A assinatura atual dá acesso aos cursos da Linvuu. Antes de contratar, experimente as duas primeiras aulas de cada curso sem cartão.'],
-  ['Quanto tempo preciso reservar?', 'As sessões são organizadas para cerca de 30 minutos. Você pode estudar no seu ritmo e voltar para continuar.'],
-];
+
 export default function HomeBrasileiros() {
   // No .com só entram os cursos com aulas explicadas em inglês; a cobertura vem do índice carregado antes de abrir o site.
   const idiomas = idiomasDoSite.filter((i) => cursoComExplicacaoNoSite(i.id));
@@ -55,7 +53,7 @@ export default function HomeBrasileiros() {
     catch { setErro(h('Não foi possível tocar o áudio. Tente novamente.')); }
     finally { setTocando(false); }
   };
-  return <div className="br-home br-home-leve">
+  return <div className={`br-home${!ehCom ? " br-home-leve" : ""}`}>
     <section className="br-hero" aria-labelledby="br-h1">
       <div className="br-hero-in">
         <div className="br-hero-topo br-hero-topo-simples">
@@ -86,14 +84,15 @@ export default function HomeBrasileiros() {
         <article><h3>{h("Aula ao vivo, se quiser.")}</h3><p>{h("Aulas de russo por videochamada com professores.")}</p><Link className="br-text-link" to="/russo-online">{h("Ver aulas ao vivo")}</Link></article>
       </div>
     </section>
-    <section className="br-section br-motion-item" id="metodo"><div className="br-section-head"><div><h2>{h("Entender muda")}<br />{h("o jeito de aprender.")}</h2></div></div>
+    <section className="br-section br-motion-item" id="metodo"><div className="br-section-head"><div><h2>{h("Entender muda")}<br />{h("o jeito de aprender.")}</h2></div>{ehCom && <p>{h("Você traz o português. A Linvuu usa essa base para explicar os sons, as estruturas e os erros comuns no novo idioma.")}</p>}</div>
+      <div className="br-resposta-metodo"><h3>{LOCALE.codigo === 'en' ? 'How does the Linvuu method work?' : 'Como funciona o método da Linvuu?'}</h3><p>{LOCALE.codigo === 'en' ? 'Each lesson is organised into sessions that bring listening, reading, explanation and practice together. Audio accompanies words and dialogues, while examples connect new structures to what the learner already knows. The first two lessons are free, so you can explore the course before choosing a plan.' : 'Cada aula é organizada em sessões que reúnem escuta, leitura, explicação e prática. O áudio acompanha palavras e diálogos, enquanto exemplos relacionam estruturas novas ao que o aluno já conhece. As duas primeiras aulas são gratuitas, para que você conheça o curso antes de escolher um plano.'}</p><Autoria /></div>
       <div className="br-method">{[
         ['01', 'Ouça o idioma acontecer.', 'Palavras e diálogos com áudio para ligar o que você lê ao que você escuta.'],
         ['02', 'Entenda o porquê.', 'Explicações em português, com exemplos e comparações para construir uma base sólida.'],
         ['03', 'Coloque em prática.', 'Exercícios com correção e atividades de fala para praticar o que você aprendeu.'],
       ].map(([n, titulo, texto]) => <article key={n}><span className="br-passo" aria-hidden="true">{n}</span><h3>{h(titulo)}</h3><p>{h(texto)}</p></article>)}</div>
     </section>
-    <section className="br-section br-motion-item" id="idiomas"><span id="cursos" /><div className="br-section-head"><div><h2>{h("Qual idioma você")}<br />{h("quer aprender hoje?")}</h2></div></div><div className="br-languages">{principais.map((i, n) => <HomeCourseLink cta="home_curso" key={i.id} to={`/curso/${i.id}`} className={`br-language br-language-${n}`}><span className="br-greeting" lang={i.lang}>{i.oi}</span><div><h3>{ehCom ? `I want to learn ${h(i.nome)}` : `Quero aprender ${i.nome.toLowerCase()}`}</h3><span aria-hidden="true">→</span></div></HomeCourseLink>)}</div>{emTraducao.length > 0 && <div className="br-traducao"><p>The English explanations for these courses are being written lesson by lesson. You can already start with the lessons that are ready:</p><ul>{emTraducao.map((i) => { const c = coberturaNoSite(i.id); return <li key={i.id}><HomeCourseLink cta="home_curso" to={`/curso/${i.id}`}>{h(i.nome)}</HomeCourseLink><span>{c.traduzidas} of {c.total} lessons in English</span></li>; })}</ul></div>}</section>
+    <section className="br-section br-motion-item" id="idiomas" aria-labelledby={ehCom ? undefined : "titulo-livros"}><span id="cursos" /><div className="br-section-head"><div><h2 id={ehCom ? undefined : "titulo-livros"}>{ehCom ? <>{h("Qual idioma você")}<br />{h("quer aprender hoje?")}</> : "Livros"}</h2></div>{ehCom && <p>{h("Para viajar, se aproximar de outras culturas ou realizar um objetivo seu. Encontre um idioma para começar.")}</p>}</div>{ehCom ? <div className="br-languages">{principais.map((i, n) => <HomeCourseLink cta="home_curso" key={i.id} to={`/curso/${i.id}`} className={`br-language br-language-${n}`}><span className="br-greeting" lang={i.lang}>{i.oi}{ehCom && <span aria-hidden="true">.</span>}</span><div><h3>{ehCom ? h(i.nome) : `Quero aprender ${i.nome.toLowerCase()}`}</h3><span aria-hidden="true">→</span></div></HomeCourseLink>)}</div> : <div className="site-publico site-catalogo"><div className="curso-grid">{['en', 'es', 'de', 'fr', 'it', 'ru'].map((id) => CURSOS_ATIVOS.find((curso) => curso.id === id)!).filter(Boolean).map((c) => <div className="catalogo-idioma" key={c.id}><CursoCard curso={c} nivel={3} catalogoRascunho /><div className="catalogo-livro"><span>Livro · 2 capítulos grátis</span><Link to={`/livros/${c.id}`}>Abrir livro de {c.nome} <span aria-hidden="true">↗</span></Link></div></div>)}</div></div>}{emTraducao.length > 0 && <div className="br-traducao"><p>The English explanations for these courses are being written lesson by lesson. You can already start with the lessons that are ready:</p><ul>{emTraducao.map((i) => { const c = coberturaNoSite(i.id); return <li key={i.id}><HomeCourseLink cta="home_curso" to={`/curso/${i.id}`}>{h(i.nome)}</HomeCourseLink><span>{c.traduzidas} of {c.total} lessons in English</span></li>; })}</ul></div>}</section>
     {/* Os livros só existem em português (/livros no .com redireciona ao .com.br): no .com a seção prometia o que o visitante não lê. */}
     {LOCALE.codigo === 'pt-BR' && (
     <section className="br-book"><div><h2>Seu aprendizado também tem páginas.</h2><p>Explore os livros da Linvuu, leia com calma e volte aos assuntos que merecem mais atenção.</p></div><Link className="br-text-link" to="/livros">Conhecer a coleção <span aria-hidden="true">→</span></Link></section>

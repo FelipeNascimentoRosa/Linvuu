@@ -35,7 +35,8 @@ try {
         assert.equal(await page.getByRole('tab', {name:'Espanhol', exact:true}).getAttribute('aria-selected'),'true');
         assert.match(await page.getByRole('tabpanel').innerText(),/Un café, por favor/);
         assert.equal(await page.getByRole('button', {name:'Ouça aqui e repita em Espanhol'}).count(),1);
-        assert.equal(await page.getByRole('link', {name:'Quero aprender espanhol'}).getAttribute('href'),'/curso/es');
+        assert.equal(await page.locator('.catalogo-idioma').filter({has: page.getByRole('heading', {name: 'Espanhol', exact: true})}).locator('a[href="/curso/es"]').count(), 1);
+        assert.equal(await page.locator('.catalogo-idioma').filter({has: page.getByRole('heading', {name: 'Espanhol', exact: true})}).locator('a[href="/livros/es"]').count(), 1);
         await page.keyboard.press('Home');
       }
       if (arquivo === 'gramatica') {
@@ -160,6 +161,13 @@ try {
   assert.ok(await english.locator('.site-catalogo .catalogo-rabisco-fr').count());
   assert.equal(await english.locator('.site-catalogo a[href="/curso/en"]').count(),0);
   await english.screenshot({path:'revisao-publica/desktop-global-cursos.png',fullPage:true});
+  const sugestao = await global.newPage();
+  await sugestao.addInitScript(() => { localStorage.removeItem('linvuu:sugestao-idioma-dispensada'); Object.defineProperty(navigator, 'languages', {get: () => ['pt-BR', 'pt']}); });
+  await sugestao.goto('https://linvuu.com/');
+  await sugestao.locator('.sugestao-idioma').waitFor();
+  const posicoes = await sugestao.evaluate(() => ({ sugestao: document.querySelector('.sugestao-idioma').getBoundingClientRect().bottom, cabecalho: document.querySelector('.lv-head').getBoundingClientRect().top }));
+  assert.ok(posicoes.sugestao <= posicoes.cabecalho, 'a sugestão de idioma não encobre o cabeçalho');
+  await sugestao.close();
   await global.close();
   console.log('Revisão pública: desktop, 390px, 320px e paridade do .com passaram.');
 } finally {await browser?.close();server.kill();}

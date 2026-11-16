@@ -1,3 +1,4 @@
+import type { CodigoLocale } from './locales';
 import { LOCALE } from './index';
 
 // Textos da home compartilhada. O conteúdo didático não é traduzido aqui.
@@ -147,8 +148,8 @@ const copy: Record<string, readonly [string]> = {
   'Ver assinatura atual': ['View the current subscription'],
 };
 
-export const homeText = (text: string): string => {
-  if (LOCALE.codigo === 'pt-BR') return text;
+export const homeText = (text: string, locale: CodigoLocale = LOCALE.codigo): string => {
+  if (locale === 'pt-BR') return text;
   const contagem = text.trim().match(/^(\d+) de (\d+) (sessão marcada|sessões marcadas)$/);
   if (contagem) return `${contagem[1]} of ${contagem[2]} ${contagem[1] === '1' ? 'session' : 'sessions'} marked`;
   const translated = copy[text.trim()]?.[0];

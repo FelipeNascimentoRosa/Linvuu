@@ -23,6 +23,11 @@ try {
   assert(!/Disallow:\s*\/livro\//.test(regras));
   assert.match(regras, /Allow:\s*\/api\/gramatica\//);
   assert.match(regras, /Disallow:\s*\/api\//);
+  assert.doesNotMatch(regras, /Disallow:\s*\/excluir-conta/);
+  const exclusao = await fetch(`${base}/excluir-conta`);
+  assert.equal(exclusao.status, 200);
+  assert.equal(exclusao.headers.get('x-robots-tag'), 'noindex, nofollow');
+  assert.match(await exclusao.text(), /name="robots" content="noindex, nofollow"/);
   const antigo = await fetch(`${base}/livro/gramatica-ru`);
   assert.match(await antigo.text(), /name="robots" content="noindex"/);
   const api = await fetch(`${base}/api/gramatica/ru`);

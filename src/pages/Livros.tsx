@@ -1,3 +1,4 @@
+import { Autoria } from '../components/Autoria';
 import { Fragment, useEffect, useState, type ReactElement } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import '../livros.css';
@@ -34,6 +35,7 @@ export function LivrosIndice() {
         {LOCALE.codigo === 'pt-BR' && <p>{LIVROS_EM_PRODUCAO}</p>}
         <NotaIdioma />
       </header>
+      <section aria-labelledby="livros-pergunta"><h2 id="livros-pergunta">Para quem são as gramáticas práticas da Linvuu?</h2><p>Os livros são feitos para quem fala português e quer entender a gramática de outro idioma com explicações, exemplos e comparações. A coleção apresenta conteúdos do início ao nível A2. Os dois primeiros capítulos de cada livro estão disponíveis gratuitamente para leitura, com áudio.</p><Autoria /></section>
       <ul className="lvr-grade">
         {LIVROS_META.map((m) => (
           <li key={m.id}>

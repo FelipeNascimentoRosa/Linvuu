@@ -14,7 +14,7 @@ try {
  await page.route('https://linvuu.com.br/**',r=>r.abort());
  for(const tema of ['claro','escuro'])for(const path of ['/','/cursos','/curso/en','/curso/en/dia/1','/curso/en/dia/4','/curso/en/dia/9','/entrar','/assinatura','/conta','/gramatica/en']){
   if(page.url()!=='about:blank')await page.evaluate(()=>localStorage.clear());
-  await page.goto(base+path);await page.locator('#conteudo h1').waitFor();
+  await page.goto(base+path);await page.locator('#conteudo-principal h1').waitFor();
   await page.evaluate(t=>{localStorage.setItem('linvuu:tema-app',t);document.documentElement.dataset.temaAluno=t},tema);
   await page.waitForTimeout(150);
   const axe=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze();
