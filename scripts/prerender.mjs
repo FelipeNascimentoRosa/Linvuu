@@ -16,6 +16,7 @@ import path from 'node:path';
 import { spawn } from 'node:child_process';
 import http from 'node:http';
 
+if (process.env.VITE_ALVO === 'apk') { console.log('[prerender] APK: sem renderizacao estatica da web.'); process.exit(0); }
 const raiz = path.resolve(import.meta.dirname, '..');
 const dist = path.join(raiz, 'dist');
 const saida = path.join(dist, 'prerender');
