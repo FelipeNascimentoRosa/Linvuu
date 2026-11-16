@@ -93,8 +93,9 @@ registrarCtas(app); // POST /api/cta: clique de botão contado sem cookie e sem 
     const eGlobal = (req: Request) => perfilDaRequisicao(req) === 'global';
     app.get('/sitemap-brasil.xml', (req: Request, res: Response) => { res.vary('Host'); if (eGlobal(req)) return res.sendStatus(404); sitemapBr(req, res); });
     app.get('/sitemap-internacional.xml', (req: Request, res: Response) => { res.vary('Host'); if (!eGlobal(req)) return res.sendStatus(404); sitemapGlobal(req, res); });
-    // Compatibilidade com o endereco ja conhecido pelo Google, sem duplicar XML no indice.
-    app.get('/sitemap.xml', (req: Request, res: Response) => { res.vary('Host'); res.redirect(301, eGlobal(req) ? '/sitemap-internacional.xml' : '/sitemap-brasil.xml'); });
+    // URL historica ja cadastrada no Search Console continua 200 com XML do proprio Host.
+    // O robots anuncia apenas o novo nome. Evita depender de redirect na leitura do sitemap antigo.
+    app.get('/sitemap.xml', (req: Request, res: Response) => { res.vary('Host'); (eGlobal(req) ? sitemapGlobal : sitemapBr)(req, res); });
     app.get(['/sitemap-global.xml', '/robots-global.txt'], (_req: Request, res: Response) => res.sendStatus(404));
     app.get('/robots.txt', (req: Request, res: Response) => { res.vary('Host'); (eGlobal(req) ? robotsGlobal : robotsBr)(req, res); });
     // llms.txt: mapa curto do site para buscadores de IA; cada domínio entrega o seu (a versão do .com lista só o que existe em inglês).
