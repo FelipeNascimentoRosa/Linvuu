@@ -1,7 +1,10 @@
-# Tres falsos positivos documentados em commits antigos do workflow de auditoria.
+# Cinco falsos positivos documentados em commits antigos do workflow de auditoria.
 # O identificador sinalizado era a credencial PADRAO da instancia efemera SonarQube,
 # executada em 127.0.0.1 em runner temporario, nunca senha Linvuu ou producao.
-# Ignorar SOMENTE os tres fingerprints historicos exatos; novos alertas seguem bloqueando CI.
+# Ignorar SOMENTE os cinco fingerprints historicos exatos; novos alertas seguem bloqueando CI.
 e6008f43cf77aa490bdc1dbb0d17ba91abb8c8fb:.github/workflows/auditoria-integral.yml:curl-auth-user:101
 4ecba1ba4847dfa7189bcc1240470efddd614ba6:.github/workflows/auditoria-integral.yml:curl-auth-user:100
 4ecba1ba4847dfa7189bcc1240470efddd614ba6:.github/workflows/auditoria-integral.yml:curl-auth-user:101
+# Mesma credencial padrao da instancia SonarQube efemera, neste commit historico.
+05856e6f5c2042d66f87c2fecd03d86130b8a122:.github/workflows/auditoria-integral.yml:curl-auth-user:100
+05856e6f5c2042d66f87c2fecd03d86130b8a122:.github/workflows/auditoria-integral.yml:curl-auth-user:101

@@ -23,6 +23,11 @@ try {
   assert(!/Disallow:\s*\/livro\//.test(regras));
   assert.match(regras, /Allow:\s*\/api\/gramatica\//);
   assert.match(regras, /Disallow:\s*\/api\//);
+  assert.doesNotMatch(regras, /Disallow:\s*\/excluir-conta/);
+  const exclusao = await fetch(`${base}/excluir-conta`);
+  assert.equal(exclusao.status, 200);
+  assert.equal(exclusao.headers.get('x-robots-tag'), 'noindex, nofollow');
+  assert.match(await exclusao.text(), /name="robots" content="noindex, nofollow"/);
   const antigo = await fetch(`${base}/livro/gramatica-ru`);
   assert.match(await antigo.text(), /name="robots" content="noindex"/);
   const api = await fetch(`${base}/api/gramatica/ru`);
@@ -51,25 +56,19 @@ try {
   assert(js, 'asset Vite com fingerprint no HTML');
   const versionado = await fetch(base + js);
   assert.match(versionado.headers.get('cache-control'), /max-age=31536000.*immutable/);
-  const vuu = await fetch(`${base}/assets/vuu/vuu.svg`);
-  assert.equal(vuu.status, 200);
-  assert.match(vuu.headers.get('cache-control'), /must-revalidate/);
-  assert(!vuu.headers.get('cache-control')?.includes('immutable'));
-  for (const arte of ['vuu.svg']) {
-    const r = await fetch(`${base}/assets/vuu/${arte}`);
-    assert.equal(r.status, 200, arte);
-    assert.match(r.headers.get('cache-control'), /must-revalidate/, `${arte} precisa revalidar`);
-    assert(!r.headers.get('cache-control')?.includes('immutable'), `${arte} não pode ser imutável (nome sem hash de conteúdo)`);
-    assert(r.headers.get('etag'), `${arte} possui ETag`);
-  }
-  const etag = vuu.headers.get('etag');
-  assert(etag, 'SVG possui ETag para revalidação');
-  // fetch acrescenta Cache-Control: no-cache aos pedidos condicionais; usar HTTP direto como um cache comum.
+  const arte = '/assets/catalogo/fr.webp';
+  const imagem = await fetch(base + arte);
+  assert.equal(imagem.status, 200);
+  assert.match(imagem.headers.get('cache-control'), /must-revalidate/);
+  assert(!imagem.headers.get('cache-control')?.includes('immutable'));
+  const etag = imagem.headers.get('etag');
+  assert(etag, 'imagem pública possui ETag');
   const statusCondicional = await new Promise((resolve, reject) => {
-    const req = http.get(`${base}/assets/vuu/vuu.svg`, { headers: { 'If-None-Match': etag } }, res => { res.resume(); resolve(res.statusCode); });
+    const req = http.get(base + arte, { headers: { 'If-None-Match': etag } }, res => { res.resume(); resolve(res.statusCode); });
     req.on('error', reject);
   });
   assert.equal(statusCondicional, 304);
+  assert.equal((await fetch(base + '/assets/vuu/vuu.svg')).status, 404);
   const indiceAudio = await fetch(`${base}/audio/de/index.json`);
   assert.match(indiceAudio.headers.get('cache-control'), /max-age=300/);
   const audio = (await indiceAudio.json()).find(h => /^[a-f0-9]{8}$/.test(h) && existsSync(`public/audio/de/${h}.mp3`));

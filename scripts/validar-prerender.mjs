@@ -14,8 +14,10 @@ for (const { site, perfil, sitemap } of configs) {
   const arquivo = path.join(raiz, 'dist', sitemap);
   if (!fs.existsSync(arquivo)) { falhas.push(site + ': sitemap nao existe em dist (' + sitemap + ')'); continue; }
   const xml = fs.readFileSync(arquivo, 'utf8');
-  const urls = [...xml.matchAll(/<loc>([^<]*)<\/loc>/g)].map((x) => x[1]);
-  if (!urls.length) falhas.push(site + ': nenhum loc no sitemap');
+  const urlsSitemap = [...xml.matchAll(/<loc>([^<]*)<\/loc>/g)].map((x) => x[1]);
+  if (!urlsSitemap.length) falhas.push(site + ': nenhum loc no sitemap');
+  const extras = [`https://${site}/excluir-conta`].filter((url) => !urlsSitemap.includes(url));
+  const urls = [...urlsSitemap, ...extras];
   let corretas = 0;
   for (const loc of urls) {
     let u;
@@ -29,7 +31,7 @@ for (const { site, perfil, sitemap } of configs) {
     if (texto.length < 180) { falhas.push(site + ': HTML superficial (' + texto.length + ' caracteres) ' + loc); continue; }
     corretas++;
   }
-  resultados.push({ site, urls: urls.length, htmlCompleto: corretas });
+  resultados.push({ site, urlsSitemap: urlsSitemap.length, extras: extras.length, htmlCompleto: corretas });
 }
 console.log(JSON.stringify({ resultados, falhas, ok: falhas.length === 0 }, null, 2));
 if (falhas.length) process.exitCode = 1;

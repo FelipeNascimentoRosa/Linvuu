@@ -1,7 +1,13 @@
+import type { CodigoLocale } from './locales';
 import { LOCALE } from './index';
 
 // Textos da home compartilhada. O conteúdo didático não é traduzido aqui.
 const copy: Record<string, readonly [string]> = {
+  'Qual idioma você quer aprender?': ['Which language do you want to learn?'],
+  'Ouça aqui e repita': ['Listen and repeat'],
+  'Ouça aqui e repita em': ['Listen and repeat in'],
+  'Explicações em português, com exemplos e comparações para construir uma base sólida.': ['Explanations in English, with examples and comparisons to build a solid foundation.'],
+  'Exercícios com correção e atividades de fala para praticar o que você aprendeu.': ['Exercises with feedback and speaking activities to practise what you have learned.'],
   'Que bom ter você de volta. Seu próximo passo está aqui.': ['Welcome back. Your next step is right here.'],
   'Vamos começar pela primeira sessão, no seu ritmo.': ['Let us start with the first session, at your own pace.'],
   'Nenhuma sessão marcada ainda': ['No sessions marked yet'],
@@ -142,8 +148,8 @@ const copy: Record<string, readonly [string]> = {
   'Ver assinatura atual': ['View the current subscription'],
 };
 
-export const homeText = (text: string): string => {
-  if (LOCALE.codigo === 'pt-BR') return text;
+export const homeText = (text: string, locale: CodigoLocale = LOCALE.codigo): string => {
+  if (locale === 'pt-BR') return text;
   const contagem = text.trim().match(/^(\d+) de (\d+) (sessão marcada|sessões marcadas)$/);
   if (contagem) return `${contagem[1]} of ${contagem[2]} ${contagem[1] === '1' ? 'session' : 'sessions'} marked`;
   const translated = copy[text.trim()]?.[0];

@@ -4,11 +4,7 @@
 // gramática só onde o arquivo dela existe nesse idioma (sem o curso do próprio público — LOCALES.oculto — nem 'em-breve');
 // as sessões de aula NÃO entram: desde 11/11/2026 a sessão é `noindex` (o curso é indexado no hub `/curso/<id>`),
 // porque as 3.680 sessões dos dois domínios somaram ~25 impressões em 27 dias no Search Console e nenhuma foi indexada.
-// Fora do sitemap ficam, por decisão, só as páginas que o servidor marca com noindex (entrar, cadastro, 404) e as
-// que o navegador abandona (o alias `/gramatica`). Até 11/11/2026 ficavam também /privacidade, /termos e
-// /excluir-conta: as três estavam indexadas e sem <loc> nenhum, então o Google as encontrava por link, sem lastmod e
-// sem cluster hreflang declarado (AUDITORIA-SITE-2026-11-11 §4). /excluir-conta passou a ser indexável de propósito:
-// é a página que a Google Play exige para exclusão de conta (noindex e sitemap seriam contraditórios — escolhemos sitemap).
+// Fora do sitemap ficam as rotas marcadas noindex, incluindo /excluir-conta.
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -50,8 +46,8 @@ for (const f of fs.readdirSync(path.join(raiz, 'src', 'lib', 'alfabeto')).filter
 }// Hub da gramática: desde 12/11/2026 é uma página de verdade (src/pages/Gramatica.tsx sem id lista as gramáticas
 // do domínio), com o mesmo título no <head> e no <h1>; por isso entra no sitemap nas duas línguas.
 grupos.push({ p: '/gramatica', em: todos(), anot: todos() });
-// As duas páginas legais e a de exclusão de conta já são páginas reais nos dois idiomas e passaram na paridade.
-grupos.push({ p: '/privacidade', em: todos(), anot: todos() }, { p: '/termos', em: todos(), anot: todos() }, { p: '/excluir-conta', em: todos(), anot: todos() });
+// As páginas legais indexáveis existem nos dois idiomas; exclusão de conta fica fora do sitemap por política de robots.
+grupos.push({ p: '/privacidade', em: todos(), anot: todos() }, { p: '/termos', em: todos(), anot: todos() });
 const dirLivros = path.join(raiz, 'content', 'livros');
 if (fs.existsSync(dirLivros)) for (const id of fs.readdirSync(dirLivros).sort()) {
   // Apenas os capítulos de amostra: a presença de outro arquivo não o torna público.
@@ -93,7 +89,8 @@ const linhasBr = [], linhasGlobal = [];
 const manifestoLastmod = (() => { const f = path.join(raiz, 'content', 'lastmod.json'); return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : {}; })();
 for (const g of grupos) for (const c of g.em) {
   const anot = g.anot ?? g.em;
-  const alt = ''; // Sitemaps isolados: nenhuma referencia cruzada entre os dois dominios.
+  const pares = anot.filter((idioma) => g.em.includes(idioma));
+  const alt = pares.length > 1 ? [...pares.map((idioma) => `\n    <xhtml:link rel="alternate" hreflang="${idioma}" href="${url(idioma, g.p)}" />`), `\n    <xhtml:link rel="alternate" hreflang="x-default" href="${url(alvoPadrao({ ...g, anot: pares }), g.p)}" />`].join('') : '';
   const lm = manifestoLastmod[chaveLastmod(c, g.p)];
   const data = typeof lm === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(lm) ? `\n    <lastmod>${lm}</lastmod>` : '';
   (LOCALES.find((x) => x.c === c).site === SITE_BR ? linhasBr : linhasGlobal).push(`  <url><loc>${url(c, g.p)}</loc>${data}${alt}\n  </url>`);
@@ -105,7 +102,11 @@ fs.writeFileSync(path.join(raiz, 'public', 'sitemap-global.xml'), xml(linhasGlob
 fs.writeFileSync(path.join(raiz, 'public', 'sitemap-brasil.xml'), xml(linhasBr));
 fs.writeFileSync(path.join(raiz, 'public', 'sitemap-internacional.xml'), xml(linhasGlobal));
 // A página de gramática carrega suas amostras abertas desta API; o acesso pago continua protegido no servidor.
-const robots = (site) => `User-agent: *\nAllow: /\nAllow: /api/gramatica/\nDisallow: /api/\nDisallow: /admin/\n\nSitemap: ${site}/${site === SITE_BR ? 'sitemap-brasil.xml' : 'sitemap-internacional.xml'}\n`;
+const robots = (site) => {
+  const agents = ['*', 'Googlebot', 'Bingbot', 'OAI-SearchBot', 'ChatGPT-User', 'GPTBot', 'ClaudeBot', 'Google-Extended', 'PerplexityBot'];
+  const regras = 'Allow: /\nDisallow: /entrar\nDisallow: /cadastro\nDisallow: /conta$\nDisallow: /conta/\nDisallow: /conta?\nAllow: /api/gramatica/\nDisallow: /api/\nDisallow: /admin/';
+  return agents.map((agent) => `User-agent: ${agent}\n${regras}`).join('\n\n') + `\n\nSitemap: ${site}/sitemap.xml\nSitemap: ${site}/${site === SITE_BR ? 'sitemap-brasil.xml' : 'sitemap-internacional.xml'}\n`;
+};
 fs.writeFileSync(path.join(raiz, 'public', 'robots.txt'), robots(SITE_BR));
 fs.writeFileSync(path.join(raiz, 'public', 'robots-global.txt'), robots(SITE_GLOBAL));
 console.log(`sitemap .com.br: ${linhasBr.length} endereços (pt-BR) · sitemap .com: ${linhasGlobal.length} endereços (en)`);
@@ -159,6 +160,11 @@ ${cursosDe('pt-BR', SITE_BR, false).join('\n')}
 - Anual: ${real(BRL.anual)}; pagamento único.
 - Reembolso integral em até 7 dias.
 
+## Perguntas frequentes
+- Preciso saber alguma coisa para começar? Não. É possível começar do zero, com explicações em português.
+- Como posso conhecer as aulas? As duas primeiras aulas de cada curso são gratuitas.
+- Quanto tempo preciso reservar? As sessões são organizadas para cerca de 30 minutos e podem ser estudadas no próprio ritmo.
+
 ## Quem escreve
 - ${md('Autores', `${SITE_BR}/sobre`)}
 - ${md('Por que estudar com a Linvuu', `${SITE_BR}/por-que-linvuu`)}
@@ -189,6 +195,11 @@ ${cursosDe('en', SITE_GLOBAL, true).join('\n')}
 - Annual: ${dolar(USD.anual)}, one-time payment for 12 months.
 - Full refund within 7 days.
 
+## Frequently asked questions
+- Can I start from zero? Yes. The courses introduce the language step by step.
+- How can I try the lessons? The first two lessons of each course are free.
+- How much time should I set aside? Sessions are designed for about 30 minutes and can be studied at your own pace.
+
 ## About
 - ${md('Authors', `${SITE_GLOBAL}/sobre`)}
 - ${md('Contact', `${SITE_GLOBAL}/contato`)}: contato@linvuu.com
@@ -196,6 +207,24 @@ ${cursosDe('en', SITE_GLOBAL, true).join('\n')}
 ## Portuguese version
 - ${md('Courses explained in Portuguese, for Portuguese speakers', SITE_BR)}
 `;
+  // O catálogo completo usa somente títulos de aulas e categorias, não o conteúdo pago.
+  const catalogoCompleto = (loc, site, ingles) => {
+    const blocos = cursos.filter((c) => noSitemap(loc, `/curso/${c.id}`)).map((c) => {
+      const nome = nomes[c.id]?.[ingles ? 'en' : 'pt'] ?? c.id;
+      const gruposCurso = indice[c.id]?.grupos ?? [];
+      const titulos = gruposCurso.map((g) => {
+        const titulo = ingles && fonte(c.id) !== 'en' ? tr.en?.[c.id]?.g?.[g.aula] : g.titulo;
+        return `- ${ingles ? 'Lesson' : 'Aula'} ${g.aula} (${g.nivel}; ${ingles ? 'sessions' : 'sessões'} ${g.dias[0]}–${g.dias[1]}): ${titulo ?? g.titulo}`;
+      });
+      const arquivo = path.join(raiz, 'content', 'gramatica', `${c.id}${ingles && fonte(c.id) !== 'en' ? '.en' : ''}.json`);
+      let categorias = [];
+      if (noSitemap(loc, `/gramatica/${c.id}`) && fs.existsSync(arquivo)) categorias = JSON.parse(fs.readFileSync(arquivo, 'utf8')).categorias ?? [];
+      return [`## ${nome}`, `${site}/curso/${c.id}`, ...titulos, ...(categorias.length ? [`${ingles ? 'Grammar categories' : 'Categorias de gramática'}: ${categorias.join(', ')}`] : [])].join('\n');
+    });
+    return blocos.join('\n\n');
+  };
   fs.writeFileSync(path.join(raiz, 'public', 'llms.txt'), br);
   fs.writeFileSync(path.join(raiz, 'public', 'llms-global.txt'), gl);
+  fs.writeFileSync(path.join(raiz, 'public', 'llms-full.txt'), `${br}\n# Ementas dos cursos\n\n${catalogoCompleto('pt-BR', SITE_BR, false)}\n`);
+  fs.writeFileSync(path.join(raiz, 'public', 'llms-full-global.txt'), `${gl}\n# Course syllabuses\n\n${catalogoCompleto('en', SITE_GLOBAL, true)}\n`);
 }

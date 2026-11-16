@@ -80,6 +80,8 @@ Cada pendência recebe: **sim**, **não** ou **"adiar até [data]"**. Pergunta c
 
 ## 8. Evidências recentes (append-only: data · fato · prova)
 
+- 2026-11-16 · branch local `codex/inventario-seo-acessibilidade` · build com 55/55 páginas `.com.br` e 26/26 `.com` (incluindo a página de exclusão fora dos sitemaps), trava de 1.349 arquivos intacta, TypeScript e testes HTTP locais aprovados; sem PR, merge ou deploy. Detalhes e limites em `docs/COORDENACAO-IA.md`.
+
 - 2026-11-11 · lote 6 · clique de botão medido: `data-cta` (lista fechada em `src/config/ctas.ts`, 19 identificadores) na home, hub de curso, paywall e /assinatura; evento `cta_clicked` no PostHog só com consentimento e contador `POST /api/cta` → coleção `ctas` (dia × host × botão, `FieldValue.increment`, 204 antes de gravar), sem cookie, sem IP e sem identificador; `GET /api/metricas` devolve `ctas` (`total`, `porDia`, `porHost`, `porCta`) · `node scripts/testar-analytics-browser.mjs` verde nos 4 casos (site/APK × pt//en) e `npm run testar:medicao` verde (rota real: aceita só id da lista, 400 no resto)
 - 2026-11-11 · lote 5 · visitas contadas no servidor: coleção `visitas` (dia × host × rota-modelo, `FieldValue.increment`), sem cookie, sem IP e sem robô declarado; `GET /api/metricas` devolve `visitas` (`total`, `porDia`, `porHost`, `porRota`) · `npm run testar:medicao` verde (inclui servidor Express local: conta HTML 200 de gente, não conta 404, JSON nem Googlebot); 4 rotas de produção respondem 200 e a desconhecida 404
 - 2026-11-11 · lote 4 · `GET /api/metricas` ganhou `funil` (28 dias × contas, sessão 1, sessão 8, checkouts abertos, checkouts pagos; sessão e checkout contam só depois do deploy) · `npm run testar:medicao` e `testar-cobranca-eventos.ts` verdes

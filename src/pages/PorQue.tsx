@@ -1,3 +1,4 @@
+import { Autoria } from '../components/Autoria';
 import { Link } from 'react-router-dom';
 import '../livros.css';
 import { SITE_URL } from '../config/site';
@@ -17,11 +18,12 @@ export default function PorQue() {
       </header>
 
       <section className="lvr-artigo" aria-label={x.motivosRotulo}>
+        <Autoria />
         {x.motivos.map((m, i) => (
-          <div key={m.id} id={m.id}>
+          <article key={m.id} id={m.id}>
             <h2 className="lvr-h2" style={i === 0 ? { marginTop: 0 } : undefined}>{m.titulo}</h2>
             <p className="lvr-p">{m.texto}</p>
-          </div>
+          </article>
         ))}
 
         <h2 className="lvr-h2">{x.paraQuemTitulo}</h2>

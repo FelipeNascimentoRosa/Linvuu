@@ -31,7 +31,7 @@ try{
  });
  assert.ok(origem.length>0,'o roteiro precisa errar ao menos uma vez');
  // 3. O início mostra a volta espaçada e o link abre a rodada nova.
- await p.goto(base+'/');await p.locator('#conteudo h1').waitFor();
+ await p.goto(base+'/');await p.locator('#conteudo-principal h1').waitFor();
  const card=p.locator('.app-reforco');
  assert.equal(await card.count(),1,'cartão aparece quando a volta venceu');
  assert.match(await card.innerText(),/1, 3 e 7 dias/);
@@ -51,11 +51,11 @@ try{
  assert.equal(esp.passo,0,'errou: mesmo passo');
  const dias=(Date.parse(esp.proxima)-Date.parse(esp.em))/864e5;
  assert.equal(dias,1,'errou: volta em 1 dia');
- await p.goto(base+'/');await p.locator('#conteudo h1').waitFor();
+ await p.goto(base+'/');await p.locator('#conteudo-principal h1').waitFor();
  assert.equal(await p.locator('.app-reforco').count(),0,'sem volta vencida, sem cartão');
  assert.match(await p.locator('.app-reforco-proxima').innerText(),/Próximo reforço espaçado: amanhã\./);
  // 5. A limpeza local também apaga o registro espaçado.
- await p.goto(base+'/conta');await p.locator('#conteudo h1').waitFor();
+ await p.goto(base+'/conta');await p.locator('#conteudo-principal h1').waitFor();
  await p.getByRole('button',{name:/Apagar progresso deste aparelho/}).click();await p.getByRole('button',{name:/Confirmar/}).click();
  await p.locator('[aria-labelledby=apagar-local-titulo] [role=status]').filter({hasText:/Pronto/}).waitFor();
  assert.equal(await p.evaluate(()=>Object.keys(localStorage).some(k=>k.includes(':espacado'))),false);

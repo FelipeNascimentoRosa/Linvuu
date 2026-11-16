@@ -17,7 +17,7 @@ const link = (rel: string, href: string, hreflang?: string) => {
 };
 
 /** O que o servidor publicaria no <head> de uma rota (src/lib/metaRota.ts → metaParaNavegador). */
-type MetaServidor = { status: number; caminho: string; titulo: string | null; descricao: string | null; canonical: string; noindex: boolean; alternativos: { hreflang: string; href: string }[] };
+type MetaServidor = { status: number; caminho: string; titulo: string | null; descricao: string | null; canonical: string; noindex: boolean; nofollow?: boolean; alternativos: { hreflang: string; href: string }[] };
 
 const normalizar = (p: string) => p.replace(/\/+$/, '') || '/';
 /** Rota cujo <head> veio pronto do servidor (marcada por aplicarMeta); some quando o visitante navega para outra. */
@@ -37,8 +37,8 @@ function metaDoServidor(caminho: string): Promise<MetaServidor | null> {
   return p;
 }
 
-function aplicar(m: { titulo: string; descricao: string; canonical: string; noindex: boolean; alternativos: { hreflang: string; href: string }[] }) {
-  sincronizarRobots(document, m.noindex);
+function aplicar(m: { titulo: string; descricao: string; canonical: string; noindex: boolean; nofollow?: boolean; alternativos: { hreflang: string; href: string }[] }) {
+  sincronizarRobots(document, m.noindex, m.nofollow);
   document.title = m.titulo;
   meta('meta[name="description"]', 'name=description', m.descricao);
   meta('meta[property="og:title"]', 'property=og:title', m.titulo);
@@ -73,7 +73,7 @@ export function usePageTitle(titulo?: string, descricao?: string, idiomas: Codig
         ? [...LOCALES.filter((x) => idiomas.includes(x.codigo)).map((l) => ({ hreflang: l.codigo, href: urlAbsolutaEm(l.codigo, caminho) })),
           { hreflang: 'x-default', href: urlAbsolutaEm(idiomas.includes('en') ? 'en' : 'pt-BR', caminho) }]
         : [];
-      aplicar({ titulo: tit, descricao: descricao ?? t.meta.descricao, canonical: urlAbsolutaEm(LOCALE.codigo, caminho), noindex: semIndice, alternativos });
+      aplicar({ titulo: tit, descricao: descricao ?? t.meta.descricao, canonical: urlAbsolutaEm(LOCALE.codigo, caminho), noindex: semIndice || caminho === '/excluir-conta', nofollow: caminho === '/excluir-conta', alternativos });
     };
     if (import.meta.env.VITE_ALVO === 'apk') { local(); return; }
     const marca = document.head.querySelector<HTMLMetaElement>(MARCA);
@@ -83,7 +83,7 @@ export function usePageTitle(titulo?: string, descricao?: string, idiomas: Codig
     metaDoServidor(caminho).then((m) => {
       if (!viva || normalizar(window.location.pathname) !== caminho) return;
       if (!m) { local(); return; }
-      aplicar({ titulo: m.titulo ?? t.meta.titulo, descricao: m.descricao ?? t.meta.descricao, canonical: m.canonical, noindex: m.noindex, alternativos: m.alternativos });
+      aplicar({ titulo: m.titulo ?? t.meta.titulo, descricao: m.descricao ?? t.meta.descricao, canonical: m.canonical, noindex: m.noindex, nofollow: m.nofollow, alternativos: m.alternativos });
     });
     return () => { viva = false; };
   }, [titulo, descricao, t, idiomas.join(), semIndice, semMarca, pathname]);

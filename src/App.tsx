@@ -25,11 +25,11 @@ const PorQue = lazy(() => import('./pages/PorQue'));
 const Contato = lazy(() => import('./pages/Contato'));
 const ExAlunosUdemy = lazy(() => import('./pages/ExAlunosUdemy'));
 const ExcluirConta = lazy(() => import('./pages/ExcluirConta'));
-import { Header, BarraTopo, BarraInferior, Footer, PrimeiraAbertura } from '@plataforma/Chrome';
+import { Header, BarraInferior, Footer, PrimeiraAbertura } from '@plataforma/Chrome';
 import { SugestaoIdioma } from './components/SugestaoIdioma';
 import NaoEncontrada from './pages/NaoEncontrada';
 import Carregando from './components/Carregando';
-import { LOCALE, useT } from './i18n';
+import { useT } from './i18n';
 
 function RolarAoTopo() {
   const { pathname, hash } = useLocation();
@@ -39,7 +39,7 @@ function RolarAoTopo() {
       const rolar = () => { const alvo = document.getElementById(hash.slice(1)); if (!alvo) return false; alvo.scrollIntoView(); return true; };
       if (rolar()) return;
       const observer = new MutationObserver(() => { if (rolar()) observer.disconnect(); });
-      observer.observe(document.getElementById('conteudo') ?? document.body, { childList: true, subtree: true });
+      observer.observe(document.getElementById('conteudo-principal') ?? document.body, { childList: true, subtree: true });
       const limite = setTimeout(() => observer.disconnect(), 5000);
       return () => { clearTimeout(limite); observer.disconnect(); };
     }
@@ -59,12 +59,11 @@ export default function App() {
   const t = useT();
   return (
     <>
-      <a href="#conteudo" className="skip-link">{t.geral.pular}</a>
+      <a href="#conteudo-principal" className="skip-link">{t.geral.pular}</a>
       <RolarAoTopo />
       {!NATIVO && <SugestaoIdioma />}
-      {!NATIVO && LOCALE.codigo !== 'pt-BR' && <BarraTopo semNovidades={AREA_ALUNO.test(pathname)} />}
       <Header />
-      <main id="conteudo" className={!NATIVO ? 'site-camadas' : undefined} tabIndex={-1}>
+      <main id="conteudo-principal" className={!NATIVO ? 'site-camadas' : undefined} tabIndex={-1}>
         <Suspense fallback={<Carregando />}>
         <Routes>
           <Route path="/" element={<Home />} />

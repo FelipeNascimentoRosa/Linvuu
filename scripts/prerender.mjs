@@ -43,6 +43,8 @@ for (const p of PERFIS) {
   }
 }
 if (!urls.length) falhar('nenhum sitemap encontrado.');
+// A página de exclusão é pública e precisa de HTML completo, embora robots a exclua do sitemap.
+for (const p of PERFIS) if (!urls.some((u) => u.perfil === p.perfil && u.caminho === '/excluir-conta')) urls.push({ ...p, caminho: '/excluir-conta' });
 
 // Servidor de produção sem credenciais reais (mesmo modelo do Lighthouse): só visitante, nada pago.
 const env = { ...process.env, NODE_ENV: 'production', PORT: String(PORTA), DOTENV_PATH: path.join(raiz, '.lighthouseci', 'sem-credenciais.env') };

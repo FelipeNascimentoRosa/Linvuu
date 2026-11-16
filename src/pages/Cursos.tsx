@@ -2,7 +2,6 @@ import { useMemo } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { CURSOS_ATIVOS as CURSOS, cursoComExplicacaoNoSite } from '../lib/content';
 import { CursoCard } from '../components/CursoCard';
-import { Navegacao } from '../components/Navegacao';
 import { usePageTitle } from '../lib/usePageTitle';
 import { LOCALE, useT } from '../i18n';
 import { livroMeta } from '../lib/livros';
@@ -21,7 +20,7 @@ export default function Cursos() {
   const lista = useMemo(() => CURSOS.filter((c) => {
     if (!cursoComExplicacaoNoSite(c.id)) return false;
     if (!q) return true;
-    return norm(`${c.nome} ${c.nomeNativo} ${LOCALE.codigo !== 'pt-BR' ? c.descricao : ''}`).includes(norm(q));
+    return norm(`${c.nome} ${c.nomeNativo}`).includes(norm(q));
   }), [q]);
 
   const set = (k: string, v: string) => {
@@ -31,24 +30,22 @@ export default function Cursos() {
   };
 
   return (
-    <div className={LOCALE.codigo === 'pt-BR' ? 'pagina site-publico site-catalogo' : 'pagina'}>
-      {LOCALE.codigo !== 'pt-BR' && <Navegacao pai="/" trilha={[{ rotulo: t.geral.inicio, para: '/' }, { rotulo: t.geral.cursos }]} />}
-      {LOCALE.codigo === 'pt-BR' ? <header className="site-intro site-intro-cursos"><h1 className="pagina-h1">Cursos de idiomas</h1></header> : <h1 className="pagina-h1">Online language courses, explained in English</h1>}
+    <div className="pagina site-publico site-catalogo">
+      <header className="site-intro site-intro-cursos"><h1 className="pagina-h1">{LOCALE.codigo === 'pt-BR' ? 'Cursos de idiomas' : 'Language courses'}</h1></header>
       <div className="filtros">
         <div className="search-field filtro-busca">
           <label htmlFor="q">{t.cursosPagina.buscar}</label>
           <input id="q" type="search" value={q} placeholder={t.cursosPagina.exemplo} onChange={(e) => set('q', e.target.value)} />
         </div>
       </div>
-      {LOCALE.codigo !== 'pt-BR' && <p className="nota"><Link to="/curso/br">{t.cursosPagina.portugues}</Link></p>}
-      {(LOCALE.codigo !== 'pt-BR' || q) && <p className="resultado" aria-live="polite">{t.cursosPagina.contagem(lista.length)}</p>}
+      {q && <p className="resultado" aria-live="polite">{t.cursosPagina.contagem(lista.length)}</p>}
       {lista.length > 0
         ? <div className="curso-grid">{lista.map((c) => {
           const livro = LOCALE.codigo === 'pt-BR' && import.meta.env.VITE_ALVO !== 'apk' && !Capacitor.isNativePlatform() && livroMeta(c.id);
-          return livro ? <div className="catalogo-idioma" key={c.id}>
+          return <div className="catalogo-idioma" key={c.id}>
             <CursoCard curso={c} nivel={2} catalogoRascunho />
-            <div className="catalogo-livro"><span>Livro · 2 capítulos grátis</span><Link to={`/livros/${c.id}`}>Abrir livro de {c.nome} <span aria-hidden="true">↗</span></Link></div>
-          </div> : <CursoCard key={c.id} curso={c} nivel={2} />;
+            {livro && <div className="catalogo-livro"><span>Livro · 2 capítulos grátis</span><Link to={`/livros/${c.id}`}>Abrir livro de {c.nome} <span aria-hidden="true">↗</span></Link></div>}
+          </div>;
         })}</div>
         : <p className="vazio">{t.cursosPagina.vazio(q)} <button type="button" className="link" onClick={() => setParams({}, { replace: true })}>{t.cursosPagina.limpar}</button>.</p>}
       {emBreve.length > 0 && !q && <p className="nota" data-em-breve>{t.cursosPagina.emBreve}: {emBreve.map((c) => c.nome).join(', ')}.</p>}

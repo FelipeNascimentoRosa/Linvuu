@@ -17,13 +17,18 @@ for (const { site, robots: arqRobots, sitemap } of dominios) {
   const robotsTxt = readFileSync(arqRobots, 'utf8');
   assert(robotsTxt.includes(`Sitemap: ${site}/${sitemap.split('/').pop()}`), `${site}: robots aponta para o mapa exclusivo`);
   const xml = readFileSync(sitemap, 'utf8');
-  assert(!xml.includes('xhtml:link'), `${site}: nao deve referenciar outros hosts por hreflang no XML`);
+  assert(xml.includes('xmlns:xhtml='), `${site}: namespace de alternativos presente`);
   const urls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
   assert(urls.length > 0, `O sitemap de ${site} precisa conter URLs.`);
   assert(urls.every(u => new URL(u).origin === site), `O sitemap de ${site} só lista URLs do próprio domínio.`);
   const casos = [
     ...urls.map(url => [url, true]),
-    [`${site}/livro/gramatica-ru`, true], // Google precisa ler o noindex.
+    [`${site}/livro/gramatica-ru`, true],
+    [`${site}/contato`, true],
+    [`${site}/excluir-conta`, true],
+    [`${site}/conta`, false],
+    [`${site}/conta/configuracoes`, false],
+    [`${site}/conta?origem=site`, false], // Google precisa ler o noindex.
     [`${site}/api/gramatica/ru`, true],
     [`${site}/api/gramatica/ru?l=en`, true],
     [`${site}/api/billing/checkout`, false],
