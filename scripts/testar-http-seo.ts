@@ -111,6 +111,9 @@ try {
     assert.ok(!sm.includes('xhtml:link'), `${host}: XML sem referencias cruzadas`);
     assert.equal((await get(host, `/${outro}`)).status, 404, `${host}: mapa do outro dominio bloqueado`);
     assert.equal((await get(host, '/sitemap-global.xml')).status, 404, `${host}: sitemap auxiliar interno bloqueado`);
+    for (const interno of ['/sitemap-global.xml.br', '/robots-global.txt', '/robots-global.txt.br', '/llms-global.txt', '/llms-global.txt.br', '/sitemap-brasil.xml.br', '/sitemap-internacional.xml.br', '/prerender/br/index.html', '/prerender/global/index.html']) {
+      assert.equal((await get(host, interno)).status, 404, `${host}: artefato auxiliar bloqueado ${interno}`);
+    }
     const legado = await get(host, '/sitemap.xml');
     assert.equal(legado.status, 200, `${host}: endereco historico continua disponivel`);
     assert.match(legado.headers.get('content-type') ?? '', /application\/xml/);
