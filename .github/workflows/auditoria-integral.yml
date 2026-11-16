@@ -188,7 +188,33 @@ jobs:
           PY
           mapfile -t urls < reports/urls-auditadas.txt
           echo "URLS no escopo: ${#urls[@]}"
+          set +e
           linkchecker --threads=3 --timeout=15 -r 1 --check-extern --file-output=csv/utf-8/reports/linkchecker.csv --file-output=html/utf-8/reports/linkchecker.html "${urls[@]}" 2>&1 | tee reports/linkchecker.log
+          rc=${PIPESTATUS[0]}
+          set -e
+          SCAN_EXIT="$rc" python3 - <<'PY'
+          import os, pathlib, re, sys
+          log=pathlib.Path('reports/linkchecker.log').read_text(errors='replace')
+          m=re.search(r"(\d+) warnings found\. (\d+) errors found\.",log)
+          if not m:
+              print('LinkChecker: faltam estatisticas finais; resultado inconclusivo')
+              sys.exit(1)
+          avisos,erros=map(int,m.groups())
+          blocos=re.split(r'(?m)^(?=URL\s+\x60)',log)
+          wa=[
+              bloco for bloco in blocos
+              if 'Warning    [http-redirected]' in bloco
+              and re.search(r'(?m)^URL\s+\x60https://wa\.me/',bloco)
+              and re.search(r'(?m)^Real URL\s+https://api\.whatsapp\.com/',bloco)
+              and re.search(r'(?m)^Result\s+Valid: 200 OK',bloco)
+              and 'status: 302 Found.' in bloco
+          ]
+          print('LinkChecker: avisos totais=',avisos,'redirecionamentos WhatsApp validos=',len(wa),'erros=',erros,'codigo=',os.getenv('SCAN_EXIT'))
+          if erros or avisos!=len(wa) or int(os.getenv('SCAN_EXIT','1')) not in (0,1):
+              print('Falha: alerta externo inesperado ou erro de rastreamento. Consultar artifacts.')
+              sys.exit(1)
+          print('Rastreio aprovado; avisos de redirecionamento WhatsApp permanecem no relatorio.')
+          PY
       - name: Anexar CSV e log bruto de links
         if: always()
         uses: actions/upload-artifact@v4
