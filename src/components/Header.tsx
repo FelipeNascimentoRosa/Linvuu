@@ -10,7 +10,7 @@ export function Header() {
   const brasileiro = LOCALE.codigo === 'pt-BR';
   const itens = [
     [brasileiro && import.meta.env.VITE_ALVO !== 'apk' ? '/livros' : '/cursos', brasileiro && import.meta.env.VITE_ALVO !== 'apk' ? 'Livros' : t.nav.cursos],
-    ...(!brasileiro ? [['/gramatica', t.nav.gramatica]] : [['/materiais-gratuitos', 'Materiais gratuitos']]),
+    brasileiro ? ['/materiais-gratuitos', 'Materiais gratuitos'] : ['/#experimente', 'Free practice'],
     ['/#metodo', t.nav.metodo], ['/#planos', homeText('Planos')],
     ['/#avaliacoes', t.nav.avaliacoes], ['/#faq', t.nav.duvidas],
     ['/contato', brasileiro ? 'Fale conosco' : 'Contact us'],
