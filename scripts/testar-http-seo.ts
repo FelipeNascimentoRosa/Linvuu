@@ -111,7 +111,7 @@ try {
     assert.ok(!sm.includes('xhtml:link'), `${host}: XML sem referencias cruzadas`);
     assert.equal((await get(host, `/${outro}`)).status, 404, `${host}: mapa do outro dominio bloqueado`);
     assert.equal((await get(host, '/sitemap-global.xml')).status, 404, `${host}: sitemap auxiliar interno bloqueado`);
-    for (const interno of ['/sitemap-global.xml.br', '/robots-global.txt', '/robots-global.txt.br', '/llms-global.txt', '/llms-global.txt.br', '/sitemap-brasil.xml.br', '/sitemap-internacional.xml.br', '/prerender/br/index.html', '/prerender/global/index.html']) {
+    for (const interno of ['/sitemap-global.xml.br', '/robots-global.txt', '/robots-global.txt.br', '/llms-global.txt', '/llms-global.txt.br', '/sitemap-brasil.xml.br', '/sitemap-internacional.xml.br', '/prerender/br/index.html', '/prerender/global/index.html', '/%73itemap-global.xml', '/sitemap-global%2exml', '/prerender/%67lobal/index.html', '/%73itemap.xml', '/%72obots.txt', '/%6clms.txt', host === 'linvuu.com' ? '/%73itemap-brasil.xml' : '/%73itemap-internacional.xml']) {
       assert.equal((await get(host, interno)).status, 404, `${host}: artefato auxiliar bloqueado ${interno}`);
     }
     const legado = await get(host, '/sitemap.xml');
