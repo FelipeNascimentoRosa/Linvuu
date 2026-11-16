@@ -24,8 +24,8 @@ const obrigatorio = process.env.PRERENDER_OBRIGATORIO === '1';
 const falhar = (msg) => { console.error(`[prerender] ${msg}`); process.exit(obrigatorio ? 1 : 0); };
 
 const PERFIS = [
-  { perfil: 'br', host: 'linvuu.com.br', sitemap: 'sitemap.xml' },
-  { perfil: 'global', host: 'linvuu.com', sitemap: 'sitemap-global.xml' },
+  { perfil: 'br', host: 'linvuu.com.br', sitemap: 'sitemap-brasil.xml' },
+  { perfil: 'global', host: 'linvuu.com', sitemap: 'sitemap-internacional.xml' },
 ];
 
 let chromium;
