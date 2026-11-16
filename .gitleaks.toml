@@ -1,0 +1,15 @@
+title = "Linvuu — regras de varredura de segredos"
+[extend]
+useDefault = true
+
+# A auditoria usa SonarQube Community temporario, acessivel APENAS em 127.0.0.1:9000.
+# O login padrao desse container na CI nao é credencial de servico, cliente ou producao.
+# Gitleaks 8.21.2 encontrou 3 vezes esse mesmo falso positivo no historico do PR.
+# Escopo limitado pelo AND: somente a string EXATA e somente o arquivo de auditoria.
+# Nao ignorar outros tokens, caminhos, commits ou alertas.
+[[allowlists]]
+description = "Credencial padrao do servidor SonarQube efemero e isolado na CI, nunca em producao"
+condition = "AND"
+regexTarget = "secret"
+regexes = ['''^admin:admin$''']
+paths = ['''^\.github/workflows/auditoria-integral\.yml$''']
