@@ -56,6 +56,7 @@ Fontes permitidas: FSI/DLI/Peace Corps (domínio público) como base; Wikibooks 
 
 | Data | O que | PR | Estado |
 |---|---|---|---|
+| 16/11 | SEO, acessibilidade e descoberta em branch isolada; a trava de conteúdo não foi atualizada | sem PR | local, sem deploy |
 | 11/11 | I1/I2 — cursos completos com o mesmo template do .br, cartão de gramática, D14 do .com | #584, #585 | produção |
 | 11/11 | I3 — páginas ru/fr/br respondem preço, tempo até B1, professor, iniciante | #586 | mergeado |
 | 11/11 | Etiquetas internas `[misto]/[pronuncia]` retiradas das 120 sessões es/en + guarda | #588 | mergeado |

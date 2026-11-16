@@ -69,3 +69,11 @@ Prioridade: instrução atual explícita do Felipe → instruções aplicáveis 
 
 ## Prompt comum de retomada
 “Leia AGENTS.md, docs/ESTADO-ATUAL.md e docs/COORDENACAO-IA.md em FelipeNascimentoRosa/Linvuu. Confira main, PRs e deploy atuais. Continue a primeira pendência reproduzível da auditoria, registre evidências e atualize o estado no PR. Não considere correção concluída antes da verificação correspondente.”
+
+## Branch local de SEO e acessibilidade — 16/11/2026
+
+- Escopo: geração de sitemaps/robots e llms por domínio, grafo institucional, componentes e marcação pedagógica, em `codex/inventario-seo-acessibilidade`, base `05856e6f`. Sem PR, merge ou deploy.
+- Conteúdo internacional: `node scripts/travas-en.mjs` passou com 1.349 arquivos; hashes não foram atualizados.
+- Sitemaps locais: `.com.br` 54 e `.com` 25 endereços; pré-render 55 e 26, incluindo `/excluir-conta` em ambos. A rota `/excluir-conta` foi omitida dos mapas por ordem explícita de bloqueio no robots; rastreadores não podem usar esse bloqueio para ler uma eventual diretiva `noindex`.
+- Validação local: TypeScript, inventário e 3.798 respostas HTTP; HTMLHint, axe e alvos de botões visíveis em 25 rotas nas larguras 390 e 1.280 px. Sem violações críticas/sérias ou alvos menores encontrados nessas amostras; repetir no SHA final. Validação de produção e SHA implantado não foram verificados.
+- Conflitos possíveis: PRs #616 (componentes/páginas), #617 (manifestos npm) e #619 (configuração de agentes). Reconciliar antes de abrir PR ou mesclar. Reversão: reverter a branch ou o commit específico após revisão; não regenerar a trava de conteúdo.
