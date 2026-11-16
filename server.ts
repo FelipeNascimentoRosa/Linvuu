@@ -96,7 +96,20 @@ registrarCtas(app); // POST /api/cta: clique de botão contado sem cookie e sem 
     // URL historica ja cadastrada no Search Console continua 200 com XML do proprio Host.
     // O robots anuncia apenas o novo nome. Evita depender de redirect na leitura do sitemap antigo.
     app.get('/sitemap.xml', (req: Request, res: Response) => { res.vary('Host'); (eGlobal(req) ? sitemapGlobal : sitemapBr)(req, res); });
-    app.get(['/sitemap-global.xml', '/robots-global.txt'], (_req: Request, res: Response) => res.sendStatus(404));
+    // Arquivos auxiliares internos e sidecars .br nao sao paginas publicas.
+    // Sem esta guarda, o middleware Brotli/express.static abaixo expoe a mesma
+    // lista internacional atraves de /sitemap-global.xml.br no dominio brasileiro.
+    // /prerender contem FRAGMENTOS por idioma, nao paginas HTML independentes.
+    app.use((req: Request, res: Response, next) => {
+      const p = req.path.toLowerCase();
+      if (p === '/sitemap-global.xml' || p === '/robots-global.txt' || p === '/llms-global.txt'
+        || p === '/prerender' || p.startsWith('/prerender/')
+        || /\.(?:xml|txt)\.br$/.test(p)) {
+        res.status(404).type('text/plain').send('Not found');
+        return;
+      }
+      next();
+    });
     app.get('/robots.txt', (req: Request, res: Response) => { res.vary('Host'); (eGlobal(req) ? robotsGlobal : robotsBr)(req, res); });
     // llms.txt: mapa curto do site para buscadores de IA; cada domínio entrega o seu (a versão do .com lista só o que existe em inglês).
     const llmsBr = arquivoEstatico('llms.txt', 'text/plain; charset=utf-8'), llmsGlobal = arquivoEstatico('llms-global.txt', 'text/plain; charset=utf-8');
