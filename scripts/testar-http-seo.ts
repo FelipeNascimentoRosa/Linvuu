@@ -112,8 +112,9 @@ try {
     assert.equal((await get(host, `/${outro}`)).status, 404, `${host}: mapa do outro dominio bloqueado`);
     assert.equal((await get(host, '/sitemap-global.xml')).status, 404, `${host}: sitemap auxiliar interno bloqueado`);
     const legado = await get(host, '/sitemap.xml');
-    assert.equal(legado.status, 301, `${host}: endereco antigo redireciona`);
-    assert.equal(legado.headers.get('location'), `/${nome}`, `${host}: redirect interno`);
+    assert.equal(legado.status, 200, `${host}: endereco historico continua disponivel`);
+    assert.match(legado.headers.get('content-type') ?? '', /application\/xml/);
+    assert.equal(await legado.text(), sm, `${host}: sitemap historico e exclusivo identicos`);
     const rb = await (await get(host, '/robots.txt')).text();
     assert.ok(rb.includes(`Sitemap: https://${host}/${nome}`), `${host}: robots aponta para o mapa correto`);
   }
