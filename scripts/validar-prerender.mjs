@@ -2,6 +2,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+if (process.env.VITE_ALVO === 'apk') { console.log('[validar-prerender] APK: validacao do HTML web nao se aplica.'); process.exit(0); }
 const raiz = process.cwd();
 const configs = [
   { site: 'linvuu.com.br', perfil: 'br', sitemap: 'sitemap-brasil.xml' },
