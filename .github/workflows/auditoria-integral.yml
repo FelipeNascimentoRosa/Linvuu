@@ -98,7 +98,9 @@ jobs:
             exit 1
           fi
           curl -fsS -u admin:admin -X POST -d 'name=Linvuu' -d 'project=linvuu' http://127.0.0.1:9000/api/projects/create > reports/sonar-project.json
-          token=$(curl -fsS -u admin:admin -X POST -d "name=linvuu-ci-${GITHUB_RUN_ID}" http://127.0.0.1:9000/api/user_tokens/generate | python3 -c 'import json,sys;print(json.load(sys.stdin)["token"])')
+          curl -fsS -u admin:admin -X POST -d "name=linvuu-ci-${GITHUB_RUN_ID}" http://127.0.0.1:9000/api/user_tokens/generate > "$RUNNER_TEMP/linvuu-sonar-token.json"
+          token=$(python3 -c 'import json,sys;print(json.load(open(sys.argv[1]))["token"])' "$RUNNER_TEMP/linvuu-sonar-token.json")
+          rm -f "$RUNNER_TEMP/linvuu-sonar-token.json"
           echo "::add-mask::$token"
           printf 'SONAR_TOKEN=%s\n' "$token" >> "$GITHUB_ENV"
       - name: Analisar todo o codigo de primeira parte no SonarQube
@@ -186,7 +188,7 @@ jobs:
           PY
           mapfile -t urls < reports/urls-auditadas.txt
           echo "URLS no escopo: ${#urls[@]}"
-          linkchecker --threads=3 --timeout=15 --recursionlevel=1 --file-output=csv/utf-8/reports/linkchecker.csv --file-output=html/utf-8/reports/linkchecker.html "${urls[@]}" 2>&1 | tee reports/linkchecker.log
+          linkchecker --threads=3 --timeout=15 -r 1 --file-output=csv/utf-8/reports/linkchecker.csv --file-output=html/utf-8/reports/linkchecker.html "${urls[@]}" 2>&1 | tee reports/linkchecker.log
       - name: Anexar CSV e log bruto de links
         if: always()
         uses: actions/upload-artifact@v4
