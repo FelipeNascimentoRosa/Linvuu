@@ -1,0 +1,333 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 7,
+  "fase": 1,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Essere, pronouns and adjectives: Asking questions with essere",
+  "objetivo": "Lesson 2, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 2,
+    "titulo": "Essere, pronouns and adjectives",
+    "objetivo": "Use the present tense of «essere» (to be) with every pronoun, choose between «tu», «Lei» and «voi», make adjectives agree in gender and number, and ask questions with «chi», «dove» and «come».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Asking questions with essere",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "texto",
+        "min": 6,
+        "titulo": "Marco and Giulia",
+        "ru": "Lui è Marco. È alto e simpatico. Lei è Giulia. È bassa, ma è molto gentile. Marco e Giulia sono amici. Oggi sono stanchi, ma contenti. Dove sono? Sono qui, a casa di Luca. Anche Luca e Sara sono qui. Sono giovani e simpatici. Che festa!",
+        "pt": "This is Marco. He is tall and friendly. This is Giulia. She is short, but very kind. Marco and Giulia are friends. Today they are tired, but happy. Where are they? They are here, at Luca's house. Luca and Sara are here too. They are young and friendly. What a party!",
+        "perguntas": [
+          {
+            "pergunta": "What is Marco like?",
+            "resposta": "«È alto e simpatico.»: he is tall and friendly."
+          },
+          {
+            "pergunta": "What is Giulia like?",
+            "resposta": "«È bassa, ma è molto gentile.»: she is short, but very kind."
+          },
+          {
+            "pergunta": "How are Marco and Giulia today?",
+            "resposta": "«Sono stanchi, ma contenti.»: they are tired, but happy."
+          },
+          {
+            "pergunta": "Where are they?",
+            "resposta": "«Sono qui, a casa di Luca.»: they are here, at Luca's house."
+          }
+        ]
+      },
+      {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "chi",
+            "translit": "kee",
+            "pt": "who",
+            "en": "",
+            "audio": "chi"
+          },
+          {
+            "ru": "dove",
+            "translit": "DOH-veh",
+            "pt": "where",
+            "en": "",
+            "audio": "dove"
+          },
+          {
+            "ru": "come",
+            "translit": "KOH-meh",
+            "pt": "how; what … like",
+            "en": "",
+            "audio": "come"
+          },
+          {
+            "ru": "qui",
+            "translit": "kwee",
+            "pt": "here",
+            "en": "",
+            "audio": "qui"
+          },
+          {
+            "ru": "là",
+            "translit": "lah",
+            "pt": "there",
+            "en": "",
+            "audio": "là"
+          },
+          {
+            "ru": "ma",
+            "translit": "mah",
+            "pt": "but",
+            "en": "",
+            "audio": "ma"
+          },
+          {
+            "ru": "anche",
+            "translit": "AHN-keh",
+            "pt": "also, too",
+            "en": "",
+            "audio": "anche"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Questions: chi, dove and come",
+        "explicacao": "You have just heard «Dove sono?» in the text. Here is how to ask questions. STEP 1: in Italian, a yes-or-no question keeps the same word order as the statement. Only the melody changes: it rises at the end. «Sei stanco?», are you tired? STEP 2: «chi» asks who. «Chi è lui? — È Marco.» STEP 3: «dove» asks where. «Dove sei? — Sono qui.» STEP 4: before «è», «dove» and «come» lose their last letter and join the verb. They become «dov'è» and «com'è», a bit like English «where's». The apostrophe marks the missing letter. Say it in one breath: «dov'è Giulia?» STEP 5: «com'è?» asks what someone or something is like: «Com'è Marco? — È alto.» But «come stai?» asks how the person is feeling. STEP 6: with several people, the verb goes into the plural: «Dove sono Marco e Giulia?» STEP 7: to answer, start with «sì» or «no» and repeat the verb: «Sei stanco? — Sì, sono stanco.» STEP 8: «qui» is here, and «là» is there: «Giulia è qui, Marco è là.»",
+        "comparacao": "English questions swap the order of the words: «you are tired» becomes «are you tired?». Italian never does that: «sei stanco» becomes «sei stanco?», with only a rising melody. And just as English shortens «where is» to «where's», Italian joins «dove è» into «dov'è».",
+        "exemplos": [
+          {
+            "ru": "Sei stanco?",
+            "pt": "Are you tired?"
+          },
+          {
+            "ru": "Chi è Giulia?",
+            "pt": "Who is Giulia?"
+          },
+          {
+            "ru": "Dov'è Marco?",
+            "pt": "Where is Marco?"
+          },
+          {
+            "ru": "Com'è Marco?",
+            "pt": "What is Marco like?"
+          },
+          {
+            "ru": "Dove sono Luca e Sara?",
+            "pt": "Where are Luca and Sara?"
+          },
+          {
+            "ru": "Sei stanco? — Sì, sono stanco.",
+            "pt": "Are you tired? — Yes, I'm tired."
+          }
+        ],
+        "tabela": [
+          {
+            "interrogativo": "chi",
+            "significado": "who",
+            "exemplo": "Chi è Giulia?"
+          },
+          {
+            "interrogativo": "dove",
+            "significado": "where",
+            "exemplo": "Dov'è Marco?"
+          },
+          {
+            "interrogativo": "come",
+            "significado": "what … like (description)",
+            "exemplo": "Com'è Marco?"
+          },
+          {
+            "interrogativo": "sì / no",
+            "significado": "yes / no",
+            "exemplo": "Sei stanco? Sì."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Dove è Marco?",
+            "certo": "Dov'è Marco?",
+            "motivo": "«Dove» and «è» join together in speech and in writing."
+          },
+          {
+            "errado": "Sei tu stanco?",
+            "certo": "Sei stanco?",
+            "motivo": "Don't swap the word order as in English. Only the melody changes."
+          },
+          {
+            "errado": "Chi sei lui?",
+            "certo": "Chi è lui?",
+            "motivo": "With «lui», the verb is «è»."
+          },
+          {
+            "errado": "Come è Marco?",
+            "certo": "Com'è Marco?",
+            "motivo": "«Come» and «è» join together."
+          }
+        ],
+        "tag": "Questions"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 6,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Dov'è Giulia?",
+            "opcoes": [
+              "Dov'è Giulia?",
+              "Chi è Giulia?",
+              "Com'è Giulia?"
+            ],
+            "gabarito": "Dov'è Giulia?",
+            "explicacao": "Listen to the beginning: «dov'è» contains «dove». «Chi» and «com'è» sound quite different.",
+            "id": "it-002-e07"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Siete contenti?",
+            "opcoes": [
+              "Siete contenti?",
+              "Siamo contenti?",
+              "Sono contenti?"
+            ],
+            "gabarito": "Siete contenti?",
+            "explicacao": "Listen to the difference between «siete», «siamo» and «sono». «Siete» goes with «voi».",
+            "id": "it-002-e08"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Com'è Marco?",
+            "opcoes": [
+              "Com'è Marco?",
+              "Dov'è Marco?",
+              "Chi è Marco?"
+            ],
+            "gabarito": "Com'è Marco?",
+            "explicacao": "Listen to the beginning, «com'»: it is «come» + «è», and asks what he is like.",
+            "id": "it-002-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Dov'è Marco?",
+            "respostaEsperada": "Dov'è Marco?",
+            "explicacao": "Write: Dov'è Marco? «Dove» and «è» join, with an apostrophe and an accent.",
+            "id": "it-002-e10"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Sei stanco?",
+            "respostaEsperada": "Sei stanco?",
+            "explicacao": "Write: Sei stanco? The question has the same word order as the statement. Only the melody rises.",
+            "id": "it-002-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «Where is Marco?»",
+            "opcoes": [
+              "Dove è Marco?",
+              "Dov'è Marco?",
+              "Dove sei Marco?"
+            ],
+            "gabarito": "Dov'è Marco?",
+            "explicacao": "«Dove» and «è» contract into «dov'è».",
+            "id": "it-002-e12"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which Italian verb means «to be»?",
+            "opcoes": [
+              "avere",
+              "parlare",
+              "essere"
+            ],
+            "gabarito": "essere",
+            "explicacao": "Italian uses one verb for both «I am Italian» and «I am tired»: «sono italiano» and «sono stanco».",
+            "id": "it-002-e13"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ è Giulia? (where)",
+            "opcoes": [
+              "Dov'",
+              "Chi",
+              "Com'"
+            ],
+            "gabarito": "Dov'",
+            "explicacao": "«Dov'è Giulia?» asks where.",
+            "id": "it-002-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ sono Marco e Luca? (where)",
+            "opcoes": [
+              "Chi",
+              "Come",
+              "Dove"
+            ],
+            "gabarito": "Dove",
+            "explicacao": "«Dove» asks for the place. The plural verb «sono» agrees with the two subjects.",
+            "id": "it-002-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ è Luca? — È alto e simpatico. (what … like)",
+            "opcoes": [
+              "Com'",
+              "Dov'",
+              "Chi"
+            ],
+            "gabarito": "Com'",
+            "explicacao": "The answer describes Luca, so the question is «com'è?».",
+            "id": "it-002-e16"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Dov'è Sara?»",
+            "opcoes": [
+              "Dov'è",
+              "Sara?"
+            ],
+            "gabarito": "Dov'è Sara?",
+            "explicacao": "A question with «dov'è», followed by the name.",
+            "id": "it-002-e17"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Italian: Where is Sara? She is here.",
+            "respostaEsperada": "Dov'è Sara? È qui.",
+            "id": "it-002-e18"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 4,
+        "enunciado": "Ask an imaginary friend three questions out loud («Come stai?», «Sei stanco?», «Dove sei?») and answer each one. Then ask «Chi è?» about someone in your family and answer."
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Describe two people out loud, one with an adjective in «o» and the other with an adjective in «e». Use the feminine and the plural."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-002.json",
+  "responsavel": null
+}

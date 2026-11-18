@@ -13,6 +13,7 @@
     "content": "node scripts/conteudo.mjs",
     "content:check": "node scripts/conteudo.mjs --check && node scripts/travas-en.mjs",
     "travas:en": "node scripts/travas-en.mjs --atualizar",
+    "audit:rotas-dominios": "node scripts/auditar-rotas-dominios.mjs",
     "seo:lastmod": "node scripts/gerar-lastmod.mjs",
     "aulas": "node scripts/compilar-aulas.mjs ru && node scripts/compilar-aulas.mjs de && node scripts/compilar-aulas.mjs en && node scripts/compilar-aulas.mjs fr && node scripts/compilar-aulas.mjs it && node scripts/compilar-aulas.mjs es && node scripts/compilar-aulas.mjs br && node scripts/aulas.mjs ru && node scripts/aulas.mjs de && node scripts/aulas.mjs en && node scripts/aulas.mjs fr && node scripts/aulas.mjs it && node scripts/aulas.mjs es && node scripts/aulas.mjs br && node scripts/gramatica.mjs ru && node scripts/gramatica.mjs de && node scripts/gramatica.mjs en && node scripts/gramatica.mjs fr && node scripts/gramatica.mjs it && node scripts/gramatica.mjs es && node scripts/gramatica.mjs br && node scripts/conteudo.mjs",
     "auditar": "node scripts/auditar-aulas.mjs ru --md",
@@ -34,7 +35,9 @@
     "testar:regras": "npm --prefix scripts/regras ci && npx --yes firebase-tools@15.34.1 emulators:exec --only firestore --project demo-linvuu-regras \"node scripts/regras/testar-regras.mjs\"",
     "testar:exclusao": "node --import tsx scripts/testar-exclusao.ts",
     "testar:newsletter": "node --import tsx scripts/testar-newsletter.ts",
-    "testar:newsletter:rota": "npx --yes firebase-tools@15.34.1 emulators:exec --only firestore --project demo-linvuu-newsletter \"node --import tsx scripts/testar-newsletter-rota.ts\""
+    "testar:newsletter:rota": "npx --yes firebase-tools@15.34.1 emulators:exec --only firestore --project demo-linvuu-newsletter \"node --import tsx scripts/testar-newsletter-rota.ts\"",
+    "midia:carrossel": "node scripts/midia/gerar-carrossel.mjs",
+    "midia:video": "node scripts/midia/gerar-video.mjs"
   },
   "dependencies": {
     "@capacitor/android": "^8.6.2",
@@ -60,6 +63,9 @@
   },
   "devDependencies": {
     "@capacitor/cli": "^8.6.2",
+    "@fontsource/literata": "^5.3.0",
+    "@fontsource/source-sans-3": "^5.3.1",
+    "@resvg/resvg-js": "^2.6.2",
     "@types/compression": "^1.8.1",
     "@types/express": "^5.0.6",
     "@types/node": "^26.6.6",
@@ -67,7 +73,10 @@
     "@types/react-dom": "^19.3.0",
     "axe-core": "^4.14.0",
     "htmlhint": "^1.9.2",
+    "hyperframes": "^0.9.67",
+    "linkinator": "^8.1.0",
     "node-edge-tts": "^1.2.12",
+    "satori": "^0.63.2",
     "schema-dts": "^2.1.0",
     "typescript": "^7.0.2"
   },
@@ -77,6 +86,7 @@
   "overrides": {
     "@grpc/grpc-js": "^1.14.0",
     "uuid": "^11.1.1",
-    "glob": "^14.0.3"
+    "glob": "^14.0.3",
+    "fflate": "^0.8.3"
   }
 }

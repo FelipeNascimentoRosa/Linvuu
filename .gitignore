@@ -48,3 +48,6 @@ server/audio-privado-v2/
 
 # Baseline do conteúdo em inglês (gerado por scripts/en-tools/auditar-ingles.mjs)
 .en-baseline/
+
+# mídia gerada (carrosséis): sai de content/ com npm run midia:carrossel; não versionar PNG
+output/

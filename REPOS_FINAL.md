@@ -164,3 +164,17 @@ A Fase 1 já está fechada sem eles: #539 (linha de base medida, mapa de rotas) 
 - **Estrelas e data de push são sinal de vida, não de qualidade.** `retext-readability` está sem push desde 2023 e é a ferramenta certa; `marketingskills` tem 59 mil estrelas e não serve a este repositório.
 - **Não testei nenhuma ferramenta recusada.** A recusa é de licença, arquitetura ou necessidade — não é juízo sobre qualidade técnica.
 - **Nada foi clonado e nenhuma dependência nova entrou no site** por causa deste arquivo. As seis ferramentas do §1 já estavam instaladas antes dele.
+
+## Adições de 18/11/2026 (ordem do Felipe: prompt de reentrada do Gemini) — licença conferida no LICENSE do repositório e no registro do npm
+| Item | Licença | Decisão | Uso |
+|---|---|---|---|
+| obra/superpowers, addyosmani/web-quality-skills, emilkowalski/skills, jakubkrehel/make-interfaces-feel-better, AgriciDaniel/claude-seo | MIT | instaladas (skills) | `.claude/skills`, commit em `skills-lock.json` |
+| pbakaus/impeccable | Apache-2.0 | instalada (skill) | já era a régua de `scripts/auditar-visual.mjs` |
+| trailofbits/skills | CC-BY-SA-4.0 | instalada sem 35 skills fora do escopo (blockchain, fuzzing C/Rust, Swift, Lean) | auditoria de segurança |
+| satori 0.63, @resvg/resvg-js 2.6 | MPL-2.0 (sem modificar) | aprovadas | `scripts/midia/gerar-carrossel.mjs` |
+| @fontsource/source-sans-3, @fontsource/literata | OFL-1.1 | aprovadas | .woff estáticos com cirílico para o carrossel (o satori não lê woff2) |
+| linkinator 8.1 | MIT | aprovada | auditoria de links do build (196 internos, 0 quebrados em 18/11) |
+| remotion | licença própria, paga a partir de 4 pessoas | **recusada** | vídeo: HyperFrames ou Playwright |
+| next-sitemap | MIT | **dispensada** | é para Next.js; os sitemaps já saem de `scripts/seo.mjs` |
+| ts-fsrs, @tanstack/react-query, zod, isomorphic-dompurify | MIT | **não instaladas** | sem uso no código deste PR (ver LEI ZERO, item 3); FSRS exige migrar o progresso salvo dos alunos |
+| hyperframes 0.9.67 (heygen-com/hyperframes) | Apache-2.0 | **motor oficial de vídeo** | `scripts/midia/gerar-video.mjs` (`npm run midia:video`); animação só em CSS, sem GSAP (licença própria) |

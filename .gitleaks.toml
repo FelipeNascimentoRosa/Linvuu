@@ -2,6 +2,17 @@ title = "Linvuu — regras de varredura de segredos"
 [extend]
 useDefault = true
 
+# Autorizado por Felipe em 18/11/2026: exemplos de token truncados na DOCUMENTACAO de duas skills de terceiros
+# (firebase-apk-scanner / trailofbits e seo / claude-seo). Sao ilustracoes de vulnerabilidade, nao credenciais.
+# Escopo: somente estes 2 arquivos; qualquer outro caminho continua varrido.
+# Formato [allowlist] porque o gitleaks 8.21.2 do CI nao le [[allowlists]] (so a partir da 8.25).
+[allowlist]
+description = "Tokens de exemplo na documentacao de skills de terceiros (2 arquivos)"
+paths = [
+  '''^\.claude/skills/firebase-apk-scanner/references/vulnerabilities\.md$''',
+  '''^\.claude/skills/seo/references/cwv-thresholds\.md$''',
+]
+
 # A auditoria usa SonarQube Community temporario, acessivel APENAS em 127.0.0.1:9000.
 # O login padrao desse container na CI nao é credencial de servico, cliente ou producao.
 # Gitleaks 8.21.2 encontrou 3 vezes esse mesmo falso positivo no historico do PR.

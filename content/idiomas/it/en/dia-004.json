@@ -1,0 +1,558 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 4,
+  "fase": 1,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Sounds, alphabet and first words: Review and practice of lesson 1",
+  "objetivo": "Lesson 1, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 1,
+    "titulo": "Sounds, alphabet and first words",
+    "objetivo": "Spell in Italian, read the letter combinations that change the sound (c, g, ch, gh, sc, gn, gli), hear double consonants and word stress, and make your first greetings, with «tu» and with «Lei».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Lesson 1 review and practice",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "texto",
+        "min": 5,
+        "titulo": "Una cartolina da Roma / A postcard from Rome",
+        "ru": "Ciao, mamma! Saluti da Roma! La città è bellissima e la gente è simpatica. Oggi la cena è speciale: spaghetti, gnocchi e gelato. Il caffè è buonissimo! Domani ho una gita con gli amici di scuola. Un abbraccio e a presto! Giulia",
+        "pt": "Hi, Mum! Greetings from Rome! The city is beautiful and the people are friendly. Tonight dinner is special: spaghetti, gnocchi and ice cream. The coffee is excellent! Tomorrow I have a trip with my friends from school. A hug, and see you soon! Giulia",
+        "perguntas": [
+          {
+            "pergunta": "Which city is Giulia writing from, and to whom?",
+            "resposta": "From Rome, to her mother («mamma»)."
+          },
+          {
+            "pergunta": "What is she having for dinner?",
+            "resposta": "«Spaghetti, gnocchi e gelato»: spaghetti, gnocchi and ice cream."
+          },
+          {
+            "pergunta": "In which words do you hear the «ny» sound and the «ly» sound?",
+            "resposta": "«Gnocchi» has the «ny» sound and «gli» (in «gli amici») has the «ly» sound."
+          },
+          {
+            "pergunta": "How does Giulia say goodbye?",
+            "resposta": "«Un abbraccio e a presto!»: a hug, and see you soon."
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 19,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "buongiorno",
+            "opcoes": [
+              "buongiorno",
+              "buonasera",
+              "arrivederci"
+            ],
+            "gabarito": "buongiorno",
+            "explicacao": "Listen to «giorno», which sounds «JOR-noh». «Buonasera» ends in «sera» and «arrivederci» is much longer.",
+            "id": "it-001-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "grazie",
+            "opcoes": [
+              "grazie",
+              "prego",
+              "scusi"
+            ],
+            "gabarito": "grazie",
+            "explicacao": "Listen to «zie», with «ts». «Prego» starts with «pr» and «scusi» with «sk».",
+            "id": "it-001-e10"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Buonasera, signora",
+            "opcoes": [
+              "Buonasera, signora",
+              "Buongiorno, signora",
+              "Arrivederci, signora"
+            ],
+            "gabarito": "Buonasera, signora",
+            "explicacao": "Listen to the beginning: «buonasera» contains «sera» and is the greeting for late afternoon and evening.",
+            "id": "it-001-e11"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Che cena!",
+            "opcoes": [
+              "Che cena!",
+              "Che scena!",
+              "Che sera!"
+            ],
+            "gabarito": "Che cena!",
+            "explicacao": "Listen to the «c» of «cena», which sounds «ch» as in «church». In «scena» you hear the «sh» of «sc», and in «sera» an «s».",
+            "id": "it-001-e12"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "famiglia",
+            "opcoes": [
+              "famiglia",
+              "fama",
+              "fame"
+            ],
+            "gabarito": "famiglia",
+            "explicacao": "Listen to the «lyah» ending: «gli» sounds like the «lli» in «million». The other two end in «ma» and «me».",
+            "id": "it-001-e13"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Piacere",
+            "opcoes": [
+              "Piacere",
+              "Per favore",
+              "Prego"
+            ],
+            "gabarito": "Piacere",
+            "explicacao": "Listen to the «ch» in the middle: «pyah-CHEH-reh». It is what you say when you meet someone.",
+            "id": "it-001-e14"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "arrivederci",
+            "respostaEsperada": "arrivederci",
+            "explicacao": "Write: arrivederci. Listen to the «chee» at the end: «c» before «i» sounds «ch».",
+            "id": "it-001-e15"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "per favore",
+            "respostaEsperada": "per favore",
+            "explicacao": "Write: per favore. The expression ends in «e»: the final «e» is said in full.",
+            "id": "it-001-e16"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud and then show the answer.",
+            "audio": "Ciao, Marco! Come stai?",
+            "respostaEsperada": "Ciao, Marco! Come stai?",
+            "explicacao": "Hi, Marco! How are you?",
+            "id": "it-001-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Come sta?",
+            "respostaEsperada": "Come sta?",
+            "explicacao": "Write: Come sta? Listen to the «sta» ending: it is the formal question.",
+            "id": "it-001-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "spaghetti",
+            "respostaEsperada": "spaghetti",
+            "explicacao": "Write: spaghetti. A hard «g» before «e» and «i» is written «gh».",
+            "id": "it-001-e18"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Buonasera",
+            "respostaEsperada": "Buonasera",
+            "explicacao": "Write: Buonasera. It is one word, and the «s» sits between vowels.",
+            "id": "it-001-e19"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you read «cena»?",
+            "opcoes": [
+              "CHEH-nah",
+              "KEH-nah",
+              "SEH-nah"
+            ],
+            "gabarito": "CHEH-nah",
+            "explicacao": "«c» before «e» sounds «ch», as in «church».",
+            "id": "it-001-e20"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you read «che»?",
+            "opcoes": [
+              "keh",
+              "cheh",
+              "sheh"
+            ],
+            "gabarito": "keh",
+            "explicacao": "With «ch», the sound is hard. The «h» protects the «c».",
+            "id": "it-001-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you read «gnocchi»?",
+            "opcoes": [
+              "NYOHK-kee",
+              "g-NOHK-kee",
+              "NOHK-kee"
+            ],
+            "gabarito": "NYOHK-kee",
+            "explicacao": "«gn» sounds «ny», as in «canyon».",
+            "id": "it-001-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which of these words means «grandfather»?",
+            "opcoes": [
+              "nonno",
+              "nono",
+              "nena"
+            ],
+            "gabarito": "nonno",
+            "explicacao": "The double consonant changes the meaning: «nono» means ninth.",
+            "id": "it-001-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "With an older stranger, which form of address do you use?",
+            "opcoes": [
+              "Lei",
+              "tu",
+              "ciao"
+            ],
+            "gabarito": "Lei",
+            "explicacao": "With strangers, you use «Lei», the third person.",
+            "id": "it-001-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud and then show the answer.",
+            "audio": "Ciao, a presto!",
+            "respostaEsperada": "Ciao, a presto!",
+            "explicacao": "Bye, see you soon!",
+            "id": "it-001-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "In «chi» (who), how does «ch» sound?",
+            "opcoes": [
+              "like «k»",
+              "like the «ch» in «church»",
+              "like «sh»"
+            ],
+            "gabarito": "like «k»",
+            "explicacao": "«Ch» before «e» and «i» has a hard «k» sound. The «h» is silent.",
+            "id": "it-001-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which word has the «sh» sound (as in «shoe»)?",
+            "opcoes": [
+              "scuola",
+              "scarpa",
+              "scena"
+            ],
+            "gabarito": "scena",
+            "explicacao": "«Sc» before «e» sounds «sh». Before «a», «o», «u» it sounds «sk».",
+            "id": "it-001-e26"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which greeting is only for friends?",
+            "opcoes": [
+              "ciao",
+              "buongiorno",
+              "arrivederci"
+            ],
+            "gabarito": "ciao",
+            "explicacao": "«Ciao» is informal. The other two work with anyone.",
+            "id": "it-001-e27"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you read «giorno»?",
+            "opcoes": [
+              "JOR-noh",
+              "jee-OR-noh",
+              "CHOR-noh"
+            ],
+            "gabarito": "JOR-noh",
+            "explicacao": "«g» before «i» sounds «j», and the «i» is barely heard.",
+            "id": "it-001-e28"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the letter «h» called in Italian?",
+            "opcoes": [
+              "AHK-kah",
+              "aitch",
+              "ha"
+            ],
+            "gabarito": "AHK-kah",
+            "explicacao": "The letter is called «AHK-kah». And inside words, the «h» is never pronounced.",
+            "id": "it-001-e29"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ sta? (How are you? — formal)",
+            "opcoes": [
+              "Come",
+              "Chi",
+              "Che"
+            ],
+            "gabarito": "Come",
+            "explicacao": "«Come sta?» is the formal question.",
+            "id": "it-001-e30"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Sto bene, ___ . (thank you)",
+            "opcoes": [
+              "grazie",
+              "prego",
+              "ciao"
+            ],
+            "gabarito": "grazie",
+            "explicacao": "«Grazie» says thank you.",
+            "id": "it-001-e31"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Grazie! — ___ . (you're welcome)",
+            "opcoes": [
+              "Prego",
+              "Scusi",
+              "Piacere"
+            ],
+            "gabarito": "Prego",
+            "explicacao": "«Prego» is the reply to «grazie».",
+            "id": "it-001-e32"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Sto ___, grazie. (well)",
+            "opcoes": [
+              "male",
+              "bene",
+              "buono"
+            ],
+            "gabarito": "bene",
+            "explicacao": "«Bene» is the adverb for «well». The final «e» is a clear «eh».",
+            "id": "it-001-e33"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud and then show the answer.",
+            "audio": "Buongiorno, Paolo! Sto bene, grazie. E Lei?",
+            "respostaEsperada": "Buongiorno, Paolo! Sto bene, grazie. E Lei?",
+            "explicacao": "Good morning, Paolo! I'm fine, thank you. And you?",
+            "id": "it-001-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Per ___ (please)",
+            "opcoes": [
+              "favore",
+              "favora",
+              "favori"
+            ],
+            "gabarito": "favore",
+            "explicacao": "The expression is «per favore», with a final «e».",
+            "id": "it-001-e34"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Pia___ere (nice to meet you: «ch» sound)",
+            "opcoes": [
+              "ch",
+              "c",
+              "sc"
+            ],
+            "gabarito": "c",
+            "explicacao": "«C» before «e» sounds «ch». «Ch» would give a «k» sound and «sc» would give «sh».",
+            "id": "it-001-e35"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Spa___etti (hard «g» sound)",
+            "opcoes": [
+              "g",
+              "gi",
+              "gh"
+            ],
+            "gabarito": "gh",
+            "explicacao": "Before «e» and «i», «g» sounds «j». For the hard sound, Italian writes «gh».",
+            "id": "it-001-e36"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Si___ora (madam: «ny» sound)",
+            "opcoes": [
+              "gli",
+              "gn",
+              "ny (as in «canyon»)"
+            ],
+            "gabarito": "gn",
+            "explicacao": "«Gn» sounds «ny». «Gli» sounds «ly».",
+            "id": "it-001-e37"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Fi___o (son: «ly» sound)",
+            "opcoes": [
+              "gn",
+              "li",
+              "gli"
+            ],
+            "gabarito": "gli",
+            "explicacao": "«Gli» sounds «ly», as in «figlio» and «famiglia».",
+            "id": "it-001-e38"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ciao, come ___ ? (to a friend)",
+            "opcoes": [
+              "stai",
+              "sta",
+              "sto"
+            ],
+            "gabarito": "stai",
+            "explicacao": "With «tu», the verb ends in «i»: «stai».",
+            "id": "it-001-e39"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Scusi, signora, come ___ ? (formal)",
+            "opcoes": [
+              "stai",
+              "sta",
+              "sto"
+            ],
+            "gabarito": "sta",
+            "explicacao": "With «Lei», the verb ends in «a»: «sta».",
+            "id": "it-001-e40"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Sto bene, grazie. E ___ ? (and you? — formal)",
+            "opcoes": [
+              "Lei",
+              "tu",
+              "chi"
+            ],
+            "gabarito": "Lei",
+            "explicacao": "If the question you were asked was formal, you return it with «Lei».",
+            "id": "it-001-e41"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud and then show the answer.",
+            "audio": "Buongiorno, signora! Sto bene, grazie. E Lei?",
+            "respostaEsperada": "Buongiorno, signora! Sto bene, grazie. E Lei?",
+            "explicacao": "Good morning, signora! I'm fine, thank you. And you?",
+            "id": "it-001-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Sto bene, grazie.»",
+            "opcoes": [
+              "Sto",
+              "bene,",
+              "grazie"
+            ],
+            "gabarito": "Sto bene, grazie.",
+            "explicacao": "The usual answer to «Come stai?».",
+            "id": "it-001-e42"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Ciao, come stai?»",
+            "opcoes": [
+              "Ciao,",
+              "come",
+              "stai?"
+            ],
+            "gabarito": "Ciao, come stai?",
+            "explicacao": "An informal greeting followed by the question with «stai».",
+            "id": "it-001-e43"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Buonasera, signora Rossi!»",
+            "opcoes": [
+              "Buonasera,",
+              "signora",
+              "Rossi!"
+            ],
+            "gabarito": "Buonasera, signora Rossi!",
+            "explicacao": "First the greeting, then the title and the surname.",
+            "id": "it-001-e44"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Come sta, signora?»",
+            "opcoes": [
+              "Come",
+              "sta,",
+              "signora?"
+            ],
+            "gabarito": "Come sta, signora?",
+            "explicacao": "The formal question comes first, and the title closes the sentence.",
+            "id": "it-001-e45"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Italian: good morning, thank you and goodbye.",
+            "respostaEsperada": "Buongiorno. Grazie. Arrivederci.",
+            "id": "it-001-e46"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Italian: How are you? I'm fine, thank you. (informal)",
+            "respostaEsperada": "Come stai? Sto bene, grazie.",
+            "id": "it-001-e47"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Italian: Please, thank you.",
+            "respostaEsperada": "Per favore, grazie.",
+            "id": "it-001-e48"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Italian: Good evening, madam. How are you? (formal)",
+            "respostaEsperada": "Buonasera, signora. Come sta?",
+            "id": "it-001-e49"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 4,
+        "enunciado": "Greet a friend in Italian and then an older stranger, out loud, and say goodbye to each. Then read Giulia's postcard out loud, slowly, taking care with «ch», «ny» and «ly»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 2,
+        "enunciado": "Spell three words from the alphabet from memory and say the greetings from this lesson, one with «tu» and one with «Lei»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-001.json",
+  "responsavel": null
+}
