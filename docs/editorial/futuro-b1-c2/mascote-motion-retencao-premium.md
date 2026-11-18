@@ -9,7 +9,7 @@
 - `scripts/generate_all_mascots.js`: script legado gera mascotes culinários por idioma (pelmeni, pretzel, croissant etc.) e ícones de objetos. Não adotar seis mascotes de idioma; verificar onde são usados antes de qualquer depreciação futura.
 - `src/lib/progresso.ts`: conclusão de unidades e sessões; não certifica domínio.
 - `src/lib/medicao.ts`: mede alguns acertos/erros sob consentimento; ainda falta transferência/retensão.
-- `src/plataforma/apk/espacadoModelo.ts`: revisões 1/3/7 dias e estado de etapa. Nunca converter esse estado automaticamente em “B2 dominado”.
+- `src/lib/revisao/espacadoModelo.ts`: revisões 1/3/7 dias e estado de etapa. Nunca converter esse estado automaticamente em “B2 dominado”.
 
 ## Hipótese de identidade visual: Vuu
 **Vuu é nome provisório, sujeito a aprovação editorial e busca de marca.** Personagem NÃO animal, NÃO robô e NÃO professor digital realista. Silhueta baseada numa única tira de papel dobrada em dois arcos fluidos, evocando o `uu` de Linvuu, um sinal de citação e o gesto de virar uma página; integração com traços do componente `Traco`. Formas assimétricas, leve irregularidade analógica, cor predominante verde-floresta, papel como área negativa, grafite para poucas marcas faciais, ocre só como ponto/linha de ênfase. Evitar olhos enormes, cílios, nariz de pássaro, chapéus estereotípicos, plásticos 3D, gradientes neon, confete contínuo e memes efêmeros.

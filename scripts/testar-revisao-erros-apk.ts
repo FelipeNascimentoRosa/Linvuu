@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import type {Exercicio} from '../src/lib/aulas';
-import {avancarRevisao,iniciarRevisao,novaRodada,pendentesRevisao,revisaoCompativel,validarRevisao} from '../src/plataforma/apk/revisaoModelo';
+import {avancarRevisao,iniciarRevisao,novaRodada,pendentesRevisao,revisaoCompativel,validarRevisao} from '../src/lib/revisao/revisaoModelo';
 import {valorValido,alterar,lerJournal,serializar,vazio} from '../src/plataforma/apk/recuperacao';
 const itens:Exercicio[]=[
  {id:'en-001-m01',tipo:'multiple-choice',enunciado:'Choose',opcoes:['a','b'],gabarito:'b',explicacao:'Use b.'},

@@ -85,13 +85,23 @@ await assertFails(updateDoc(doc(visitante(), 'newsletter/h1'), { email: 'x@exemp
 await assertFails(deleteDoc(doc(visitante(), 'newsletter/h1'))); ok('visitante não apaga inscrito');
 
 console.log('Coleções sem regra explícita e legadas permanecem bloqueadas');
-for (const caminho of ['usuarios/ana-uid', 'lessons/aula-1', 'eventos/e1', 'billing/ana-uid', 'qualquer/coisa', 'users/ana-uid/privado/x']) {
+for (const caminho of ['usuarios/ana-uid', 'lessons/aula-1', 'eventos/e1', 'billing/ana-uid', 'qualquer/coisa', 'users/ana-uid/privado/x', 'users/ana-uid/revisao/ru_1_S1_B1']) {
   await assertFails(getDoc(doc(ana(), caminho))); ok(`leitura negada: ${caminho}`);
   await assertFails(setDoc(doc(ana(), caminho.startsWith('users/ana-uid/') ? caminho : `${caminho}x`), { plano: 'premium' })); ok(`escrita negada: ${caminho}`);
 }
 await assertFails(getDoc(doc(visitante(), 'lessons/aula-1'))); ok('/lessons deixou de ter leitura pública');
 await assertFails(setDoc(doc(bruno(), 'usuarios/ana-uid'), { plano: 'premium' })); ok('/usuarios: Bruno não escreve na pasta da Ana');
 await assertFails(setDoc(doc(ana(), 'usuarios/ana-uid'), { plano: 'premium' })); ok('/usuarios: nem a própria Ana grava campos livres (antes era permitido)');
+
+// Revisão espaçada (users/{uid}/revisao/*): só o servidor (Admin SDK, que ignora as regras) lê e escreve. Ninguém pelo navegador.
+await env.withSecurityRulesDisabled(async (c) => { await setDoc(doc(c.firestore(), 'users/ana-uid/revisao/ru_1_S1_B1'), { idioma: 'ru', marca: 1 }); });
+await assertFails(getDoc(doc(ana(), 'users/ana-uid/revisao/ru_1_S1_B1'))); ok('revisão: a própria Ana não lê pelo navegador');
+await assertFails(getDocs(collection(ana(), 'users/ana-uid/revisao'))); ok('revisão: a própria Ana não lista pelo navegador');
+await assertFails(updateDoc(doc(ana(), 'users/ana-uid/revisao/ru_1_S1_B1'), { marca: 9e12 })); ok('revisão: a Ana não adianta a própria marca (não fixa o bloco no futuro)');
+await assertFails(deleteDoc(doc(ana(), 'users/ana-uid/revisao/ru_1_S1_B1'))); ok('revisão: a Ana não apaga pelo navegador');
+await assertFails(getDoc(doc(bruno(), 'users/ana-uid/revisao/ru_1_S1_B1'))); ok('revisão: Bruno não lê a da Ana');
+await assertFails(setDoc(doc(bruno(), 'users/ana-uid/revisao/ru_1_S1_B2'), { idioma: 'ru' })); ok('revisão: Bruno não escreve na da Ana');
+await assertFails(getDoc(doc(visitante(), 'users/ana-uid/revisao/ru_1_S1_B1'))); ok('revisão: visitante não lê');
 
 await env.cleanup();
 console.log(`\nOK: ${n} verificações de regras passaram.`);

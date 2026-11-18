@@ -9,6 +9,8 @@ import fs from 'node:fs';
 import { fileURLToPath } from 'url';
 import { registrarCobranca, registrarLivroProtegido, registrarNotificacoesCobranca } from './server/billing';
 import { registrarProgresso } from './server/progresso';
+import { registrarRevisao } from './server/revisao';
+import { LIMITE_CORPO_REVISAO } from './src/lib/revisao/registroBloco';
 import { registrarMedicao } from './server/medicao';
 import { registrarVisitas } from './server/visitas';
 import { registrarCtas } from './server/ctas';
@@ -44,6 +46,8 @@ async function startServer() {
   // HTML, JS, CSS e JSON comprimidos (o pacote principal cai para cerca de um quarto). MP3 já vem comprimido e fica de fora.
   app.use(compression({ filter: (req, res) => !/\.mp3$/.test(req.path) && compression.filter(req, res) }));
   registrarNotificacoesCobranca(app);
+  // Só a revisão aceita corpo grande (lote de até 50 blocos); o resto da API continua em 10 kB. Este parser vem antes do global.
+  app.use('/api/progresso/revisao', express.json({ limit: LIMITE_CORPO_REVISAO }));
   app.use(express.json({ limit: '10kb' }));
 
   // Saúde do serviço (para o Render e para monitoramento).
@@ -54,6 +58,7 @@ async function startServer() {
   registrarCobranca(app, (req) => baseDaRequisicao(req, process.env.APP_URL || (producao ? SITE_URL : `http://localhost:${PORT}`)));
   registrarLivroProtegido(app);
   registrarProgresso(app);
+  registrarRevisao(app);
   registrarMedicao(app);
   // Visitas por rota, contadas no servidor: registrado antes das rotas de página para pegar todo HTML 200.
   registrarVisitas(app);

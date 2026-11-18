@@ -5,7 +5,7 @@
 - `src/lib/progresso.ts`: marca dias concluídos e estados de sessão; isso mede atividade, NÃO domínio.
 - `src/lib/analytics.ts`: eventos `page_viewed`, `course_viewed`, `lesson_started`, `practice_completed`, `lesson_completed`, com consentimento e dados limitados; não coleta competência/retensão profunda.
 - `src/lib/medicao.ts`: eventos de acerto/erro da prática com consentimento.
-- `src/plataforma/apk/espacadoModelo.ts`: intervalos 1, 3, 7 dias (não comprovam retenção 30 dias); `RevisaoErros.tsx` já possui barra de progresso e revisão.
+- `src/lib/revisao/espacadoModelo.ts`: intervalos 1, 3, 7 dias (não comprovam retenção 30 dias); `RevisaoErros.tsx` já possui barra de progresso e revisão.
 - `scripts/testar-plataformas.mjs` não substitui teste de instalação Android e áudio no aparelho.
 
 ## Não tratar Duolingo como frontend aberto

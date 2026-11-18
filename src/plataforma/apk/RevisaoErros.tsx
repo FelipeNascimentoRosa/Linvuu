@@ -5,7 +5,7 @@ import {textos} from '../../lib/textos';
 import {usuarioDoProgresso} from '../../lib/progresso';
 import {LOCALE} from '../../i18n';
 import {falar,parar} from './audio';
-import {avancarRevisao,iniciarRevisao,novaRodada,pendentesRevisao,revisaoCompativel,validarRevisao,type Revisao} from './revisaoModelo';
+import {avancarRevisao,iniciarRevisao,novaRodada,pendentesRevisao,revisaoCompativel,validarRevisao,type Revisao} from '../../lib/revisao/revisaoModelo';
 import {revisaoTextos} from './revisaoTextos';
 import './revisao.css';
 

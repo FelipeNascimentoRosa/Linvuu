@@ -1,7 +1,7 @@
 /** Journal exclusivo do APK. Revisões ordenam cópias; null registra exclusão. */
-import { validarPratica, validarTentativa } from './estudoModelo';
-import { validarRevisao } from './revisaoModelo';
-import { validarEspacado } from './espacadoModelo';
+import { validarPratica, validarTentativa } from '../../lib/revisao/estudoModelo';
+import { validarRevisao } from '../../lib/revisao/revisaoModelo';
+import { validarEspacado } from '../../lib/revisao/espacadoModelo';
 export const CHAVE_JOURNAL = 'linvuu:armazenamento:v2';
 export const chavePersistente = (k: string) => k.length <= 512 && (/^linvuu:(progresso:v1|progresso-pendente:v1|dias-concluidos:v1)(:uid:[^:]+)?$/.test(k) || /^linvuu:pratica-apk:v1:[^:]+:.+$/.test(k) || /^linvuu:(tema-app|leitura-app|sons|locale)$/.test(k));
 export interface Entrada { revisao: number; valor: string | null; pendente?: boolean }
