@@ -34,7 +34,8 @@
     "testar:regras": "npm --prefix scripts/regras ci && npx --yes firebase-tools@15.34.1 emulators:exec --only firestore --project demo-linvuu-regras \"node scripts/regras/testar-regras.mjs\"",
     "testar:exclusao": "node --import tsx scripts/testar-exclusao.ts",
     "testar:newsletter": "node --import tsx scripts/testar-newsletter.ts",
-    "testar:newsletter:rota": "npx --yes firebase-tools@15.34.1 emulators:exec --only firestore --project demo-linvuu-newsletter \"node --import tsx scripts/testar-newsletter-rota.ts\""
+    "testar:newsletter:rota": "npx --yes firebase-tools@15.34.1 emulators:exec --only firestore --project demo-linvuu-newsletter \"node --import tsx scripts/testar-newsletter-rota.ts\"",
+    "midia:carrossel": "node scripts/midia/gerar-carrossel.mjs"
   },
   "dependencies": {
     "@capacitor/android": "^8.6.2",
@@ -60,6 +61,9 @@
   },
   "devDependencies": {
     "@capacitor/cli": "^8.6.2",
+    "@fontsource/literata": "^5.3.0",
+    "@fontsource/source-sans-3": "^5.3.1",
+    "@resvg/resvg-js": "^2.6.2",
     "@types/compression": "^1.8.1",
     "@types/express": "^5.0.6",
     "@types/node": "^26.6.6",
@@ -67,7 +71,9 @@
     "@types/react-dom": "^19.3.0",
     "axe-core": "^4.14.0",
     "htmlhint": "^1.9.2",
+    "linkinator": "^8.1.0",
     "node-edge-tts": "^1.2.12",
+    "satori": "^0.63.2",
     "schema-dts": "^2.1.0",
     "typescript": "^7.0.2"
   },

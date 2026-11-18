@@ -8,6 +8,13 @@
 >
 > Instruções de trabalho para o Claude Code neste repositório. **Plano em vigor: `docs/plano/EXECUTAR.md` + `docs/plano/ESTADO.md` (comando `/lote`).** Curto de propósito: o detalhe operacional vive em `docs/ESTADO-ATUAL.md` e `PENDENCIAS.md` — leia os dois no início de qualquer tarefa maior. Em conflito entre este arquivo e eles, **este arquivo manda nas regras** e **eles mandam nos fatos**.
 
+## LEI ZERO — proibido subestimar a Linvuu (Felipe, 18/11/2026)
+1. A Linvuu **não** é clone gamificado do Duolingo nem MVP de demonstração: é aprendizagem estrutural (alfabeto, fonética/IPA, morfologia, sintaxe, casos, conjugações, revisão espaçada) feita por professores, com engenharia, SEO internacional, segurança e distribuição em nível de produção.
+2. **Proibido** entregar stub, `mock`, função de mentira, "resto aqui", resumo raso ou devolver trabalho técnico ao Felipe. Toda entrega é completa, tipada, testada, com o comando que provou e a saída real.
+3. **Proibido instalar dependência que o PR não usa.** Pacote sem uso é stub de dependência. Toda biblioteca nova entra com licença conferida (MIT, Apache-2.0, BSD, MPL-2.0 sem modificar) e registro em `REPOS_FINAL.md`; GPL, AGPL e SSPL estão bloqueadas.
+4. **Mídia de marketing nasce do conteúdo real:** carrossel e vídeo só usam frases, tabelas e exemplos que existem em `content/` (`npm run midia:carrossel`). Vídeo em código: HyperFrames ou Playwright, **nunca Remotion** (licença paga a partir de 4 pessoas).
+5. Skills instaladas em 18/11/2026 (`skills-lock.json`, commit de cada fonte registrado): obra/superpowers, addyosmani/web-quality-skills, pbakaus/impeccable, emilkowalski/skills, jakubkrehel/make-interfaces-feel-better, AgriciDaniel/claude-seo e trailofbits/skills (CC-BY-SA-4.0; ficaram de fora 35 skills de blockchain, fuzzing de C/Rust, Swift e Lean, que não se aplicam a este código). Use-as; não reinstale as removidas.
+
 ## O produto em 5 linhas
 - Linvuu: cursos de idiomas (alemão, inglês, espanhol, francês, italiano, português BR, russo) com explicação na língua do aluno e **áudio em cada frase**. **2 primeiras aulas grátis** (sessões 1–8; paywall na 9).
 - Um único serviço Render serve **linvuu.com.br** (perfil `br`, interface pt-BR) e **linvuu.com** (perfil `global`, interface EN) — a separação é **por Host em runtime**, não por build (`server/dominio.ts`, `src/i18n/locales.ts`).
