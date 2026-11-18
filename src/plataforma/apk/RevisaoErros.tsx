@@ -1,4 +1,4 @@
-import {useEffect,useRef,useState} from 'react';
+import {useEffect,useRef,useState,type ReactNode} from 'react';
 import type {Exercicio} from '../../lib/aulas';
 import {corrigirResposta} from '../../lib/correcaoExercicios';
 import {textos} from '../../lib/textos';
@@ -14,7 +14,7 @@ export function lerRevisao(bloco:string,itens:Exercicio[],origem:number[]):Revis
  try{const v:unknown=JSON.parse(localStorage.getItem(chave(bloco))??'null');if(revisaoCompativel(v,itens,origem))return v;}catch{/* reiniciar somente a revisão incompatível */}
  return iniciarRevisao(itens,origem);
 }
-export function RevisaoErros({itens,origem,idioma,bloco,aoSair,titulo,aoTerminar}:{itens:Exercicio[];origem:number[];idioma:string;bloco:string;aoSair:()=>void;titulo?:string;aoTerminar?:(v:Revisao)=>void}) {
+export function RevisaoErros({itens,origem,idioma,bloco,aoSair,titulo,aoTerminar,final}:{itens:Exercicio[];origem:number[];idioma:string;bloco:string;aoSair:()=>void;titulo?:string;aoTerminar?:(v:Revisao)=>void;final?:(v:Revisao)=>ReactNode}) {
  const R=revisaoTextos(),T=textos(idioma),lingua=idioma==='br'?'pt-BR':idioma;
  const [storageKey]=useState(()=>chave(bloco));
  const [v,setV]=useState(()=>lerRevisao(bloco,itens,origem));
@@ -64,6 +64,7 @@ export function RevisaoErros({itens,origem,idioma,bloco,aoSair,titulo,aoTerminar
   </div>:<div className="app-revisao-resumo">
    <p>{pendentes.length?R.restam:R.tudo}</p>
    {pendentes.length>0&&v.rodada<10000&&<button type="button" className="btn btn-primary" onClick={()=>{setAviso(a=>({...a,texto:'',resposta:''}));setV(novaRodada);}}>{R.repetir} ({pendentes.length})</button>}
+   {final?.(v)}
    <details><summary>{R.ver}</summary><ol>{v.origem.map(n=><li key={n}><strong>{itens[n].enunciado}</strong><p>{v.respostas[n]?R.correta:R.incorreta} · {T.resposta} <span lang={lingua}>{resposta(itens[n])}</span></p><p>{itens[n].explicacao||R.semExplicacao}</p></li>)}</ol></details>
   </div>}
   {[0,1].map(slot=><p key={slot} className="sr-only" role="status" aria-live="polite" aria-atomic="true">{aviso.seq%2===slot&&<>{aviso.texto} <span lang={lingua}>{aviso.resposta}</span></>}</p>)}

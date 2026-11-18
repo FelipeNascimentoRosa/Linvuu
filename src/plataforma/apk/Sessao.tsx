@@ -2,7 +2,8 @@ import { ConclusaoSessao } from './ConclusaoSessao';
 import { ControlesAudio } from './ControlesAudio';
 import { RevisaoErros, lerRevisao } from './RevisaoErros';
 import { revisaoTextos } from './revisaoTextos';
-import { concluirVolta, espacadoVencido } from './reforco';
+import { espacadoVencido } from './reforco';
+import { AvaliacaoVolta } from './AvaliacaoVolta';
 import { lerPratica, salvarPratica, lerTentativa, salvarTentativa, assinaturaExercicios, type Pratica } from './estudo';
 import { APK } from '../../plataforma';
 import { useEffect, useMemo, useRef, useState } from 'react';
@@ -82,8 +83,8 @@ function AvisoMedicao({ idioma }: { idioma: string }) {
 }
 
 const textosEspacado={
-  'pt-BR':{titulo:'Reforço espaçado',abrir:'Fazer o reforço de hoje',nota:(p:number)=>`Volta ${p+1} de 3. Você já corrigiu estes erros; relembrar depois de um intervalo fixa mais do que rever na hora.`},
-  en:{titulo:'Spaced review',abrir:'Do today’s review',nota:(p:number)=>`Round ${p+1} of 3. You already fixed these mistakes; recalling them after a gap makes them stick better than reviewing right away.`},
+  'pt-BR':{titulo:'Reforço espaçado',abrir:'Fazer o reforço de hoje',nota:()=>'Você já corrigiu estes erros. Relembrar depois de um intervalo, que se ajusta ao quanto você lembra, fixa mais do que rever na hora.'},
+  en:{titulo:'Spaced review',abrir:'Do today’s review',nota:()=>'You already fixed these mistakes. Recalling them after a gap, adjusted to how well you remember, makes them stick better than reviewing right away.'},
   };
 
 function Exercicios({ itens, idioma, praticaChave, aoFinalizar }: { itens: Exercicio[]; idioma: string; praticaChave: string; aoFinalizar?: (acertos:number,total:number)=>void }) {
@@ -174,12 +175,12 @@ function Exercicios({ itens, idioma, praticaChave, aoFinalizar }: { itens: Exerc
     const vencido=salva?espacadoVencido(praticaChave,salva):null;
     const E=textosEspacado[LOCALE.codigo];
     if(pedidoEspacado){setPedidoEspacado(false);if(vencido)setEspacada(vencido);}
-    if(espacada&&origem.length)return <RevisaoErros key={espacada.rodada} itens={itens} origem={origem} idioma={idioma} bloco={espacada.rodada} titulo={E.titulo} aoTerminar={(v)=>concluirVolta(praticaChave,v)} aoSair={()=>setEspacada(null)}/>;
+    if(espacada&&origem.length)return <RevisaoErros key={espacada.rodada} itens={itens} origem={origem} idioma={idioma} bloco={espacada.rodada} titulo={E.titulo} final={(v)=>salva?<AvaliacaoVolta bloco={praticaChave} revisaoEm={salva.em} v={v}/>:null} aoSair={()=>setEspacada(null)}/>;
     if(revisando&&origem.length)return <RevisaoErros itens={itens} origem={origem} idioma={idioma} bloco={praticaChave} aoSair={()=>setRevisando(false)}/>;
     return (
       <div className="ex-resumo">
         <h3 ref={resultadoInicial} tabIndex={-1}>{T.acertou(certos, corrigiveis.length)}</h3>
-        {vencido&&<div className="app-espacado"><button type="button" className="btn btn-primary" onClick={()=>setEspacada(vencido)}>{E.abrir} ({origem.length})</button><p>{E.nota(vencido.passo)}</p></div>}
+        {vencido&&<div className="app-espacado"><button type="button" className="btn btn-primary" onClick={()=>setEspacada(vencido)}>{E.abrir} ({origem.length})</button><p>{E.nota()}</p></div>}
         {origem.length>0?<button type="button" className={vencido?'btn btn-ghost':'btn btn-primary'} onClick={()=>setRevisando(true)}>{rotuloRevisao} ({iniciou?`${reforcadas}/${origem.length}`:origem.length})</button>:corrigiveis.length>0&&<p>{R.nenhum}</p>}
         {erros.length > 0 && <ul>{erros.map((x, indice) => <li key={`${x.id}:${indice}`}><strong>{x.enunciado}</strong> {T.resposta} <span lang={idioma === 'br' ? 'pt-BR' : idioma}>{x.gabarito ?? x.respostaEsperada}</span>{x.explicacao && <small> {x.explicacao}</small>}</li>)}</ul>}
         <button type="button" className="btn btn-ghost" onClick={recomecar}>{T.refazer}</button>

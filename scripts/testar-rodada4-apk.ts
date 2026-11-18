@@ -4,7 +4,7 @@ import { destinoEstudo } from '../src/plataforma/apk/navegacaoModelo';
 import { chavesDeEstudo } from '../src/plataforma/apk/apagarLocal';
 import { iniciarRevisao } from '../src/plataforma/apk/revisaoModelo';
 import { agendaReforco } from '../src/plataforma/apk/reforcoModelo';
-import { registrarVolta, validarEspacado, DIA_MS } from '../src/plataforma/apk/espacadoModelo';
+import { registrarAvaliacao, validarEspacado, DIA_MS } from '../src/plataforma/apk/espacadoModelo';
 import { valorValido } from '../src/plataforma/apk/recuperacao';
 import type { Exercicio } from '../src/lib/aulas';
 
@@ -36,7 +36,7 @@ assert.equal(listarReforco('en', 'visitante', memoria(dados), diaDe).find((x) =>
 dados[`${P}visitante:en:1:S4:bloco:1:revisao-erros`] = JSON.stringify({ ...rev, respostas: { 0: true, 1: true, 2: true } });
 assert.equal(listarReforco('en', 'visitante', memoria(dados), diaDe).some((x) => x.dia === 4), false);
 
-// 2b. Reforço espaçado: erro corrigido volta em 1, 3 e 7 dias; errar na volta traz de volta em 1 dia; 3 voltas certas encerram.
+// 2b. Reforço espaçado (FSRS, escrita aditiva versao 1): erro corrigido volta no intervalo do FSRS; legado passo 3 segue encerrado.
 const K = `${P}visitante:en:1:S4:bloco:1`;
 const fimEm = '2026-10-20T12:00:00.000Z', t0 = Date.parse(fimEm);
 dados[`${K}:revisao-erros`] = JSON.stringify({ ...rev, respostas: { 0: true, 1: true, 2: true }, fim: true, indice: 2, em: fimEm });
@@ -45,17 +45,27 @@ assert.equal(ag(t0 + DIA_MS - 1).itens.some((x) => x.dia === 4), false, 'antes d
 assert.equal(ag(t0 + DIA_MS - 1).proxima, new Date(t0 + DIA_MS).toISOString(), 'informa quando volta');
 const volta1 = ag(t0 + DIA_MS).itens.find((x) => x.dia === 4);
 assert.deepEqual([volta1?.tipo, volta1?.passo, volta1?.pendentes], ['espacado', 0, 3], 'volta no 1º dia com as 3 questões corrigidas');
-let esp = registrarVolta(null, true, t0 + DIA_MS);
-assert.deepEqual([esp.passo, Date.parse(esp.proxima) - (t0 + DIA_MS)], [1, 3 * DIA_MS], 'acertou: próxima em 3 dias');
+let esp = registrarAvaliacao(null, fimEm, 'good', t0 + DIA_MS);
+assert.deepEqual([esp.passo, esp.versao, esp.fsrs?.reps], [1, 1, 1], 'acertou: passo legado 1 e FSRS gravado junto (versao 1)');
+assert.equal(esp.proxima, esp.fsrs?.due, 'campo legado `proxima` espelha o vencimento do FSRS');
+assert.ok(Date.parse(esp.proxima) > t0 + 2 * DIA_MS, 'depois de Bom a volta não é no dia seguinte');
 dados[`${K}:espacado`] = JSON.stringify(esp);
-assert.equal(ag(t0 + 2 * DIA_MS).itens.some((x) => x.dia === 4), false);
-assert.equal(ag(t0 + 4 * DIA_MS).itens.find((x) => x.dia === 4)?.passo, 1);
-esp = registrarVolta(esp, false, t0 + 4 * DIA_MS);
-assert.deepEqual([esp.passo, Date.parse(esp.proxima) - (t0 + 4 * DIA_MS)], [1, DIA_MS], 'errou na volta: mesmo passo, volta em 1 dia');
-esp = registrarVolta(esp, true, t0 + 5 * DIA_MS); assert.equal(Date.parse(esp.proxima) - (t0 + 5 * DIA_MS), 7 * DIA_MS, 'passo 2: 7 dias');
-esp = registrarVolta(esp, true, t0 + 12 * DIA_MS); assert.equal(esp.passo, 3);
-dados[`${K}:espacado`] = JSON.stringify(esp);
-assert.equal(ag(t0 + 400 * DIA_MS).itens.some((x) => x.dia === 4), false, 'três voltas certas: encerrado');
+const vence = Date.parse(esp.proxima);
+assert.equal(ag(vence - 1).itens.some((x) => x.dia === 4), false, 'antes do vencimento do FSRS não volta');
+assert.equal(ag(vence).itens.find((x) => x.dia === 4)?.passo, 1, 'no vencimento volta, com o passo legado preservado');
+const errou = registrarAvaliacao(esp, fimEm, 'again', vence);
+assert.ok(Date.parse(errou.proxima) - vence <= 60 * 60_000, 'Errei: volta em minutos (passo curto do FSRS)');
+assert.equal(errou.passo <= 2 && errou.passo >= 0, true);
+let ciclo = errou, agora = vence;
+for (let n = 0; n < 40; n++) { agora = Date.parse(ciclo.proxima); ciclo = registrarAvaliacao(ciclo, fimEm, 'good', agora); }
+assert.ok(ciclo.passo <= 2, 'com FSRS o passo legado nunca chega a 3 (o app antigo leria como encerrado)');
+assert.ok(Date.parse(ciclo.proxima) - agora <= 366 * DIA_MS, 'intervalo máximo de 365 dias');
+dados[`${K}:espacado`] = JSON.stringify(ciclo);
+assert.equal(ag(Date.parse(ciclo.proxima) + 1).itens.some((x) => x.dia === 4), true, 'o FSRS não encerra: continua voltando');
+// Registro legado que já encerrou os três passos continua encerrado (nunca ressuscita).
+dados[`${K}:espacado`] = JSON.stringify({ tipo: 'espacado', versao: 1, passo: 3, proxima: new Date(t0 + 12 * DIA_MS).toISOString(), em: new Date(t0 + 12 * DIA_MS).toISOString() });
+assert.equal(ag(t0 + 400 * DIA_MS).itens.some((x) => x.dia === 4), false, 'legado encerrado (passo 3): não volta');
+esp = ciclo;
 assert.ok(validarEspacado(esp) && !validarEspacado({ ...esp, passo: 9 }) && !validarEspacado({ ...esp, proxima: 'x' }));
 assert.ok(valorValido(`${K}:espacado`, JSON.stringify(esp)), 'journal aceita o registro espaçado');
 assert.equal(valorValido(`${K}:espacado`, '{"tipo":"espacado"}'), false, 'journal recusa registro inválido');
@@ -73,4 +83,4 @@ const chaves = ['linvuu:tema-app', 'linvuu:leitura-app', 'linvuu:dias-concluidos
 assert.deepEqual(chavesDeEstudo(null, chaves), ['linvuu:dias-concluidos:v1', 'linvuu:progresso:v1', `${P}visitante:en:1:S3:bloco:4`]);
 assert.deepEqual(chavesDeEstudo('A', chaves), ['linvuu:dias-concluidos:v1:uid:A', `${P}A:en:1:S3:bloco:4`]);
 
-console.log('Rodada 4 APK: reforço entre sessões e espaçado (1/3/7 dias), destino da aba de estudo e limpeza local aprovados.');
+console.log('Rodada 4 APK: reforço entre sessões e espaçado (FSRS, versao 1), destino da aba de estudo e limpeza local aprovados.');

@@ -82,6 +82,8 @@ jobs:
           node --import tsx scripts/testar-tentativas-apk.ts
           node --import tsx scripts/testar-revisao-erros-apk.ts
           node --import tsx scripts/testar-primeira-abertura-apk.ts
+          node --import tsx scripts/testar-rodada4-apk.ts
+          node --import tsx scripts/testar-fsrs-apk.ts
       - name: Testes das avaliações de alunos
         run: npm run testar:avaliacoes
       - name: Testar a sugestão de idioma pelo navegador

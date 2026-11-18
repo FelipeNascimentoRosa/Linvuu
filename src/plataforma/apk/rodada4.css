@@ -50,3 +50,13 @@ html[data-plataforma="nativo"] .topico :is(.topico-cat,.topico-aula){color:var(-
 .app-play-plano h3{margin:0;font-size:1.05rem}
 .app-play-plano p{margin:0}
 .app-play-preco strong{font-size:1.35rem}
+
+/* Avaliação da volta espaçada (FSRS): quatro botões com o intervalo previsto; só os permitidos pela correção ficam ativos. */
+.app-avaliacao{display:grid;gap:.6rem;margin:1rem 0;padding-top:1rem;border-top:1px solid var(--linha)}
+.app-avaliacao h4{margin:0;font-size:1.05rem}
+.app-avaliacao p{margin:0;font-size:.95rem;color:var(--fg-2)}
+.app-avaliacao-botoes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.5rem}
+.app-avaliacao-botoes .btn{display:grid;gap:.1rem;justify-items:center;min-height:3rem;padding:.5rem .25rem}
+.app-avaliacao-botoes small{font-size:.85rem;font-variant-numeric:tabular-nums}
+.app-avaliacao-botoes .btn:disabled{opacity:.55}
+@media (max-width:360px){.app-avaliacao-botoes{grid-template-columns:repeat(2,minmax(0,1fr))}}

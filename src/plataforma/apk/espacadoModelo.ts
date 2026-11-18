@@ -1,14 +1,25 @@
-/** Reforço espaçado (modelo puro, sem DOM): depois que o aluno corrige os erros de um bloco,
- *  eles voltam em intervalos crescentes — 1, 3 e 7 dias — até três relembranças certas seguidas.
- *  Base: recuperação espaçada e "successive relearning" (Cepeda et al., 2006; Rawson & Dunlosky, 2011),
- *  a mesma família de método do SRS de Mondly/Memrise/Anki e da regressão de meia-vida do Duolingo.
- *  Não é nota nem autorização: só decide quando lembrar o aluno. */
-export const INTERVALOS_DIAS = [1, 3, 7] as const;
-export const DIA_MS = 86_400_000;
+/** Reforço espaçado (modelo puro, sem DOM): depois que o aluno corrige os erros de um bloco, eles voltam no intervalo
+ *  que o FSRS (ts-fsrs) calcula pela lembrança real de cada bloco. Até 18/11/2026 o intervalo era fixo (1, 3 e 7 dias).
+ *  Base: recuperação espaçada e "successive relearning" (Cepeda et al., 2006; Rawson & Dunlosky, 2011) e o FSRS (MIT).
+ *  Não é nota nem autorização: só decide quando lembrar o aluno.
+ *
+ *  Contrato de dados (versao 1, ADITIVO): os campos legados `passo`, `proxima` e `em` continuam sendo escritos junto
+ *  com o objeto opcional `fsrs`. Um APK antigo no mesmo aparelho lê `proxima` como sempre e ignora `fsrs`; se ele regravar o
+ *  registro, o `fsrs` some e o novo app migra de novo a partir do estágio legado, sem alterar a data já agendada. */
+import { avaliar, cartaoDeLegado, MS_DIA, proximos, validarFsrs, type Fsrs, type Nota } from './fsrsAdaptador';
+export { notasPermitidas, NOTAS, rotuloIntervalo, type Fsrs, type Nota } from './fsrsAdaptador';
 
-export interface Espacado { tipo: 'espacado'; versao: 1; passo: number; proxima: string; em: string }
+/** Estágios do modelo antigo. Continuam valendo para ler registro legado: passo 3 = encerrado, nunca ressuscita. */
+export const INTERVALOS_DIAS = [1, 3, 7] as const;
+export const DIA_MS = MS_DIA;
+/** Com o FSRS ativo o `passo` legado fica em 0..2: o passo 3 do app antigo significa "encerrado" e o FSRS não encerra. */
+const PASSO_MAX_COM_FSRS = INTERVALOS_DIAS.length - 1;
+
+export interface Espacado { tipo: 'espacado'; versao: 1; passo: number; proxima: string; em: string; fsrs?: Fsrs }
 
 const data = (v: unknown) => typeof v === 'string' && Number.isFinite(Date.parse(v));
+/** Valida só o contrato legado, como o app antigo: `fsrs` é opcional e um `fsrs` corrompido não invalida o registro
+ *  (ele é ignorado e o estado é migrado do legado). */
 export function validarEspacado(v: unknown): v is Espacado {
   if (!v || typeof v !== 'object' || Array.isArray(v)) return false;
   const o = v as Record<string, unknown>;
@@ -18,16 +29,32 @@ export function validarEspacado(v: unknown): v is Espacado {
 /** Quando o bloco volta, sem registro espaçado: um intervalo depois da revisão concluída. */
 export const primeiraVolta = (revisaoEm: string) => new Date(Date.parse(revisaoEm) + INTERVALOS_DIAS[0] * DIA_MS).toISOString();
 
-/** Próximo estado depois de uma rodada espaçada. Acertar tudo de primeira avança um passo;
- *  errar algo mantém o passo e traz o bloco de volta no menor intervalo. */
-export function registrarVolta(atual: Espacado | null, acertouDePrimeira: boolean, agora: number): Espacado {
-  const passo = Math.min((atual?.passo ?? 0) + (acertouDePrimeira ? 1 : 0), INTERVALOS_DIAS.length);
-  const dias = !acertouDePrimeira ? INTERVALOS_DIAS[0] : passo < INTERVALOS_DIAS.length ? INTERVALOS_DIAS[passo] : 0;
-  return { tipo: 'espacado', versao: 1, passo, proxima: new Date(agora + dias * DIA_MS).toISOString(), em: new Date(agora).toISOString() };
+/** Estado FSRS do bloco: o gravado, ou o migrado do legado (mesma data de vencimento). `null` = encerrado no modelo antigo. */
+export function fsrsDoRegistro(esp: Espacado | null, revisaoEm: string): Fsrs | null {
+  if (esp && validarFsrs(esp.fsrs)) return esp.fsrs;
+  if (!esp) return cartaoDeLegado(0, primeiraVolta(revisaoEm), revisaoEm);
+  if (esp.passo >= INTERVALOS_DIAS.length) return null;
+  return cartaoDeLegado(esp.passo, esp.proxima, esp.em);
 }
 
-/** Estado do bloco para o reforço: `null` quando já completou os três intervalos. */
+/** Grava a nota da volta: calcula o FSRS e escreve junto os campos legados (`proxima` = vencimento do FSRS). */
+export function registrarAvaliacao(atual: Espacado | null, revisaoEm: string, nota: Nota, agora: number): Espacado {
+  const base = fsrsDoRegistro(atual, revisaoEm);
+  if (!base) return atual as Espacado; // encerrado no modelo antigo: nada a agendar
+  const novo = avaliar(base, nota, agora);
+  const passo = Math.min(PASSO_MAX_COM_FSRS, Math.max(0, novo.reps - novo.lapses));
+  return { tipo: 'espacado', versao: 1, passo, proxima: novo.due, em: new Date(agora).toISOString(), fsrs: novo };
+}
+
+/** O que cada botão vai agendar, para mostrar o intervalo previsto antes de o aluno escolher. */
+export function previsoesDaVolta(atual: Espacado | null, revisaoEm: string, agora: number): Record<Nota, Fsrs> | null {
+  const base = fsrsDoRegistro(atual, revisaoEm);
+  return base ? proximos(base, agora) : null;
+}
+
+/** Estado do bloco para o reforço: `null` quando o modelo antigo já o encerrou. */
 export function situacaoEspacada(revisaoEm: string, esp: Espacado | null): { passo: number; proxima: string } | null {
-  if (esp && esp.passo >= INTERVALOS_DIAS.length) return null;
-  return esp ? { passo: esp.passo, proxima: esp.proxima } : { passo: 0, proxima: primeiraVolta(revisaoEm) };
+  const fsrs = fsrsDoRegistro(esp, revisaoEm);
+  if (!fsrs) return null;
+  return { passo: esp?.passo ?? 0, proxima: fsrs.due };
 }
