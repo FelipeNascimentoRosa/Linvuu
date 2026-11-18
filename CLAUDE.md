@@ -6,6 +6,8 @@
 >
 > **TRABALHO NO linvuu.com? LEIA [`docs/LEIA-ME-INTERNACIONAL.md`](docs/LEIA-ME-INTERNACIONAL.md)** — o aluno do .com tem o **inglês como língua materna**: tudo em inglês, explicado a partir do inglês; conteúdo em inglês **travado** (`content/travas-en.json`, conferido no CI e no build); progresso e próximos passos do .com.
 >
+> **MAPA DE ROTAS, SITEMAPS E DOMÍNIOS: [`specs/MAPA-ROTAS-E-DOMINIOS.md`](specs/MAPA-ROTAS-E-DOMINIOS.md)** — matriz viva (gerada dos sitemaps reais) de quais rotas existem em cada domínio, paridade hreflang e regras anti-indexação prematura. Mexeu em rota, sitemap, hreflang ou idioma? Rode `npm run audit:rotas-dominios` (precisa de `dist/`); se a matriz mudar, `-- --atualizar-mapa` e commite. O CI reprova mapa desatualizado, URL do sitemap fora do ar, hreflang sem volta, página órfã e mistura de idioma.
+>
 > Instruções de trabalho para o Claude Code neste repositório. **Plano em vigor: `docs/plano/EXECUTAR.md` + `docs/plano/ESTADO.md` (comando `/lote`).** Curto de propósito: o detalhe operacional vive em `docs/ESTADO-ATUAL.md` e `PENDENCIAS.md` — leia os dois no início de qualquer tarefa maior. Em conflito entre este arquivo e eles, **este arquivo manda nas regras** e **eles mandam nos fatos**.
 
 ## LEI ZERO — proibido subestimar a Linvuu (Felipe, 18/11/2026)

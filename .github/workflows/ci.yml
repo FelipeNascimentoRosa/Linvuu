@@ -102,6 +102,8 @@ jobs:
           node --import tsx scripts/testar-http-seo.ts
           node --import tsx scripts/testar-links-publicos.ts
           node scripts/testar-seo-http.mjs
+      - name: Auditar rotas e dominios (sitemaps, canonical, hreflang, orfas, idioma, mapa vivo)
+        run: npm run audit:rotas-dominios
       - run: npm run build:apk
       - run: npm run testar:plataformas
       - name: Sistema de design (contraste nos dois temas, só var() nos módulos, CSS dentro do limite)
