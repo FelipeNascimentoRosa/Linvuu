@@ -3,8 +3,8 @@ import AxeBuilder from '@axe-core/playwright';
 import {spawn} from 'node:child_process';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
-import {assinaturaExercicios} from '../src/plataforma/apk/estudoModelo.ts';
-import {iniciarRevisao} from '../src/plataforma/apk/revisaoModelo.ts';
+import {assinaturaExercicios} from '../src/lib/revisao/estudoModelo.ts';
+import {iniciarRevisao} from '../src/lib/revisao/revisaoModelo.ts';
 const semAbertura=async(b,o)=>{const c=await b.newContext(o);await c.addInitScript(()=>{try{localStorage.setItem('linvuu:primeira-abertura:v1','1');}catch{}});return c;}; // estes testes começam depois das telas da primeira abertura
 const base='http://127.0.0.1:4366',passed=[],measurements=[];
 const server=spawn(process.execPath,['node_modules/vite/bin/vite.js','preview','--outDir','dist-apk','--host','127.0.0.1','--port','4366','--strictPort'],{stdio:'ignore'});let browser;

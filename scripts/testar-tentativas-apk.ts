@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {assinaturaExercicios,validarTentativa,validarPratica} from '../src/plataforma/apk/estudoModelo';
+import {assinaturaExercicios,validarTentativa,validarPratica} from '../src/lib/revisao/estudoModelo';
 import {lerTentativa,salvarTentativa,lerPratica,salvarPratica} from '../src/plataforma/apk/estudo';
 import {definirUsuarioProgresso} from '../src/lib/progresso';
 import type {Exercicio} from '../src/lib/aulas';

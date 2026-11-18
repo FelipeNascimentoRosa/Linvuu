@@ -1,10 +1,10 @@
 import assert from 'node:assert/strict';
-import { listarReforco } from '../src/plataforma/apk/reforcoModelo';
+import { listarReforco } from '../src/lib/revisao/reforcoModelo';
 import { destinoEstudo } from '../src/plataforma/apk/navegacaoModelo';
 import { chavesDeEstudo } from '../src/plataforma/apk/apagarLocal';
-import { iniciarRevisao } from '../src/plataforma/apk/revisaoModelo';
-import { agendaReforco } from '../src/plataforma/apk/reforcoModelo';
-import { registrarAvaliacao, validarEspacado, DIA_MS } from '../src/plataforma/apk/espacadoModelo';
+import { iniciarRevisao } from '../src/lib/revisao/revisaoModelo';
+import { agendaReforco } from '../src/lib/revisao/reforcoModelo';
+import { registrarAvaliacao, validarEspacado, DIA_MS } from '../src/lib/revisao/espacadoModelo';
 import { valorValido } from '../src/plataforma/apk/recuperacao';
 import type { Exercicio } from '../src/lib/aulas';
 

@@ -177,5 +177,5 @@ A Fase 1 já está fechada sem eles: #539 (linha de base medida, mapa de rotas) 
 | remotion | licença própria, paga a partir de 4 pessoas | **recusada** | vídeo: HyperFrames ou Playwright |
 | next-sitemap | MIT | **dispensada** | é para Next.js; os sitemaps já saem de `scripts/seo.mjs` |
 | @tanstack/react-query, zod, isomorphic-dompurify | MIT | **não instaladas** | sem uso no código (LEI ZERO, item 3): validadores próprios já testados, nenhum HTML de aluno renderizado, ~15 `fetch` com token/timeout próprios |
-| ts-fsrs 5.4.2 (fixado, sem `^`) | MIT | **instalada (18/11/2026)** | reforço espaçado do APK: `src/plataforma/apk/fsrsAdaptador.ts`. A 6.0.0 exige Node ≥ 24 (o projeto usa 22); o fuzz da 5.4.2 passa de `maximum_interval` em 1 dia (366 medido) e o adaptador impõe o teto de 365 |
+| ts-fsrs 5.4.2 (fixado, sem `^`) | MIT | **instalada (18/11/2026)** | reforço espaçado (módulo compartilhado do APK e do Web): `src/lib/revisao/fsrsAdaptador.ts`. A 6.0.0 exige Node ≥ 24 (o projeto usa 22); o fuzz da 5.4.2 passa de `maximum_interval` em 1 dia (366 medido) e o adaptador impõe o teto de 365 |
 | hyperframes 0.9.67 (heygen-com/hyperframes) | Apache-2.0 | **motor oficial de vídeo** | `scripts/midia/gerar-video.mjs` (`npm run midia:video`); animação só em CSS, sem GSAP (licença própria) |

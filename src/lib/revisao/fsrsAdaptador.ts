@@ -49,7 +49,10 @@ const deCartao = (c: Card, due: Date, agora: number): Fsrs => ({
 });
 
 /** Os quatro estados seguintes possíveis, calculados juntos (é o que alimenta o intervalo mostrado em cada botão). */
-export function proximos(f: Fsrs, agora: number): Record<Nota, Fsrs> {
+export function proximos(f: Fsrs, agoraDoRelogio: number): Record<Nota, Fsrs> {
+  // Relógio do aparelho atrasado (ou acertado para trás) não pode derrubar a tela: o ts-fsrs recusa tempo negativo
+  // (FSRSValidationError). A conta parte da última revisão, que é o mais cedo que a próxima pode acontecer.
+  const agora = Math.max(agoraDoRelogio, Date.parse(f.last_review));
   const civil = f.state === State.Review;
   const agoraCalc = civil ? meiaNoiteUtc(agora) : new Date(agora);
   const registro = motor.repeat(paraCartao(f, civil), agoraCalc);

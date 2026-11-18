@@ -1,5 +1,5 @@
-import type {Exercicio} from '../../lib/aulas';
-import {corrigirResposta} from '../../lib/correcaoExercicios';
+import type {Exercicio} from '../aulas';
+import {corrigirResposta} from '../correcaoExercicios';
 import {assinaturaExercicios} from './estudoModelo';
 
 /** Revisão local separada da primeira tentativa; não concede acesso ou nota no servidor. */
