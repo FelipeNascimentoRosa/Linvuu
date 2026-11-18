@@ -4,7 +4,7 @@
 import { gruposDoCurso } from '../../lib/content';
 import { usuarioDoProgresso } from '../../lib/progresso';
 import { agendaReforco, type ItemReforco } from './reforcoModelo';
-import { registrarVolta, situacaoEspacada, validarEspacado, type Espacado } from './espacadoModelo';
+import { previsoesDaVolta, registrarAvaliacao, situacaoEspacada, validarEspacado, type Espacado, type Fsrs, type Nota } from './espacadoModelo';
 import { pendentesRevisao, type Revisao } from './revisaoModelo';
 export type { ItemReforco } from './reforcoModelo';
 
@@ -35,10 +35,13 @@ export function espacadoVencido(bloco: string, revisao: Revisao | null, agora = 
   return { passo: s.passo, rodada: `${bloco}:espacado:${Date.parse(s.proxima).toString(36)}` };
 }
 
-/** Grava o resultado de uma volta espaçada. Devolve false se o aparelho não aceitou gravar. */
-export function concluirVolta(bloco: string, revisao: Revisao): boolean {
+/** Intervalo previsto para cada botão (Errei/Difícil/Bom/Fácil) desta volta, calculado agora pelo FSRS. */
+export const previsoesVolta = (bloco: string, revisaoEm: string, agora = Date.now()): Record<Nota, Fsrs> | null => previsoesDaVolta(lerEspacado(bloco), revisaoEm, agora);
+
+/** Grava a nota da volta espaçada (campos legados + `fsrs`). Devolve false se o aparelho não aceitou gravar. */
+export function avaliarVolta(bloco: string, revisaoEm: string, nota: Nota, agora = Date.now()): boolean {
   try {
-    localStorage.setItem(chave(bloco), JSON.stringify(registrarVolta(lerEspacado(bloco), revisao.rodada === 1 && pendentesRevisao(revisao).length === 0, Date.now())));
+    localStorage.setItem(chave(bloco), JSON.stringify(registrarAvaliacao(lerEspacado(bloco), revisaoEm, nota, agora)));
     window.dispatchEvent(new Event('linvuu:revisao-apk'));
     return true;
   } catch { return false; }
