@@ -35,7 +35,8 @@
     "testar:exclusao": "node --import tsx scripts/testar-exclusao.ts",
     "testar:newsletter": "node --import tsx scripts/testar-newsletter.ts",
     "testar:newsletter:rota": "npx --yes firebase-tools@15.34.1 emulators:exec --only firestore --project demo-linvuu-newsletter \"node --import tsx scripts/testar-newsletter-rota.ts\"",
-    "midia:carrossel": "node scripts/midia/gerar-carrossel.mjs"
+    "midia:carrossel": "node scripts/midia/gerar-carrossel.mjs",
+    "midia:video": "node scripts/midia/gerar-video.mjs"
   },
   "dependencies": {
     "@capacitor/android": "^8.6.2",
@@ -71,6 +72,7 @@
     "@types/react-dom": "^19.3.0",
     "axe-core": "^4.14.0",
     "htmlhint": "^1.9.2",
+    "hyperframes": "^0.9.67",
     "linkinator": "^8.1.0",
     "node-edge-tts": "^1.2.12",
     "satori": "^0.63.2",

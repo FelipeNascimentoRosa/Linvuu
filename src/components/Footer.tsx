@@ -34,7 +34,7 @@ export function Footer({ semNovidades = false }: { semNovidades?: boolean }) {
           {LOCALE.codigo !== 'pt-BR' && <Link to="/cursos">{t.nav.todos}</Link>}
           {LOCALE.codigo !== 'pt-BR' && <Link to="/gramatica">{t.nav.gramatica}</Link>}
           {LOCALE.codigo !== 'pt-BR' && <Link to="/curso/br">{t.rodape.portugues}</Link>}
-          {LOCALE.codigo === 'pt-BR' && <><Link to="/livros">Livros</Link><Link to="/materiais-gratuitos">Materiais gratuitos</Link><Link to="/sobre">{t.rodape.sobre}</Link><Link to="/por-que-linvuu">{t.rodape.porQue}</Link></>}
+          {LOCALE.codigo === 'pt-BR' && <><Link to="/gramatica">{t.nav.gramatica}</Link><Link to="/livros">Livros</Link><Link to="/materiais-gratuitos">Materiais gratuitos</Link><Link to="/sobre">{t.rodape.sobre}</Link><Link to="/por-que-linvuu">{t.rodape.porQue}</Link><Link to="/ex-alunos-udemy">Ex-alunos da Udemy</Link></>}
           {LOCALE.codigo !== 'pt-BR' && <><Link to="/sobre">{t.rodape.sobre}</Link><Link to="/por-que-linvuu">{t.rodape.porQue}</Link></>}
           <Link to="/#metodo">{t.nav.metodo}</Link>
           <Link to="/#avaliacoes">{t.nav.avaliacoes}</Link>

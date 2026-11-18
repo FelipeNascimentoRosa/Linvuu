@@ -176,4 +176,5 @@ A Fase 1 já está fechada sem eles: #539 (linha de base medida, mapa de rotas) 
 | linkinator 8.1 | MIT | aprovada | auditoria de links do build (196 internos, 0 quebrados em 18/11) |
 | remotion | licença própria, paga a partir de 4 pessoas | **recusada** | vídeo: HyperFrames ou Playwright |
 | next-sitemap | MIT | **dispensada** | é para Next.js; os sitemaps já saem de `scripts/seo.mjs` |
-| ts-fsrs, @tanstack/react-query, zod, isomorphic-dompurify | MIT | **não instaladas neste PR** | sem uso no código deste PR (ver LEI ZERO, item 3); FSRS exige migrar o progresso salvo dos alunos |
+| ts-fsrs, @tanstack/react-query, zod, isomorphic-dompurify | MIT | **não instaladas** | sem uso no código deste PR (ver LEI ZERO, item 3); FSRS exige migrar o progresso salvo dos alunos |
+| hyperframes 0.9.67 (heygen-com/hyperframes) | Apache-2.0 | **motor oficial de vídeo** | `scripts/midia/gerar-video.mjs` (`npm run midia:video`); animação só em CSS, sem GSAP (licença própria) |

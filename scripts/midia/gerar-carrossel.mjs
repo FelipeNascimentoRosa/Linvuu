@@ -49,10 +49,17 @@ const T = dominio === 'br'
       cta1: 'The first two lessons are free. No card needed.', cta2: 'Audio for every sentence. Courses made by teachers.', aula: (n, t) => `Lesson ${n} · ${t}`, guarde: 'Save it and review tomorrow.' };
 
 // ---------- conteúdo ----------
-const arquivo = join(RAIZ, 'content', 'gramatica', `${idioma}${dominio === 'com' ? '.en' : ''}.json`);
-if (!existsSync(arquivo)) falhar(`não há gramática explicada ${dominio === 'com' ? 'em inglês' : 'em português'} para "${idioma}" (${arquivo})`);
+// Língua de explicação = língua do aluno do domínio (.com.br → pt, .com → en). O arquivo vem da mesma regra do site
+// (scripts/i18n-aulas.mjs, fonteDe): <id>.json está escrito na língua-fonte do curso; <id>.<l>.json é a tradução.
+if (dominio === 'com' && idioma === 'en') falhar('o curso de inglês é para quem fala português (.com.br); o aluno do linvuu.com já fala inglês');
+const fonteDe = (id) => (id === 'br' ? 'en' : 'pt');
+const nomeArq = T.lingua === fonteDe(idioma) ? `${idioma}.json` : `${idioma}.${T.lingua}.json`;
+const arquivo = join(RAIZ, 'content', 'gramatica', nomeArq);
+if (!existsSync(arquivo)) falhar(`não há gramática de "${idioma}" explicada ${T.lingua === 'pt' ? 'em português' : 'em inglês'} (${nomeArq})`);
 const gram = JSON.parse(readFileSync(arquivo, 'utf8'));
-if (dominio === 'com' && gram.semTraducao) falhar(`${arquivo} ainda tem ${gram.semTraducao} trechos sem tradução: não sai carrossel do .com com português dentro`);
+// tópico de aula ainda não traduzida vem marcado com explicacaoEm: nunca entra em carrossel (nada de outra língua dentro)
+gram.topicos = gram.topicos.filter((t) => !t.explicacaoEm);
+if (!gram.topicos.length) falhar(`${nomeArq} ainda não tem nenhum tópico traduzido`);
 
 /** Primeiras frases inteiras até `max` caracteres. Nunca corta no meio de uma frase. */
 function frases(texto, max) {

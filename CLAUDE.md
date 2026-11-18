@@ -12,8 +12,8 @@
 1. A Linvuu **não** é clone gamificado do Duolingo nem MVP de demonstração: é aprendizagem estrutural (alfabeto, fonética/IPA, morfologia, sintaxe, casos, conjugações, revisão espaçada) feita por professores, com engenharia, SEO internacional, segurança e distribuição em nível de produção.
 2. **Proibido** entregar stub, `mock`, função de mentira, "resto aqui", resumo raso ou devolver trabalho técnico ao Felipe. Toda entrega é completa, tipada, testada, com o comando que provou e a saída real.
 3. **Proibido instalar dependência que o PR não usa.** Pacote sem uso é stub de dependência. Toda biblioteca nova entra com licença conferida (MIT, Apache-2.0, BSD, MPL-2.0 sem modificar) e registro em `REPOS_FINAL.md`; GPL, AGPL e SSPL estão bloqueadas.
-4. **Mídia de marketing nasce do conteúdo real:** carrossel e vídeo só usam frases, tabelas e exemplos que existem em `content/` (`npm run midia:carrossel`). Vídeo em código: HyperFrames ou Playwright, **nunca Remotion** (licença paga a partir de 4 pessoas).
-5. Skills instaladas em 18/11/2026 (`skills-lock.json`, commit de cada fonte registrado): obra/superpowers, addyosmani/web-quality-skills, pbakaus/impeccable, emilkowalski/skills, jakubkrehel/make-interfaces-feel-better, AgriciDaniel/claude-seo e trailofbits/skills (CC-BY-SA-4.0; ficaram de fora 35 skills de blockchain, fuzzing de C/Rust, Swift e Lean, que não se aplicam a este código). Use-as; não reinstale as removidas.
+4. **Mídia de marketing nasce do conteúdo real:** carrossel e vídeo só usam frases, tabelas e exemplos que existem em `content/` — `npm run midia:carrossel` (1080×1350) e `npm run midia:video` (1080×1920). **O motor oficial de vídeo da Linvuu é o HyperFrames** (heygen-com/hyperframes, Apache-2.0). **Nunca Remotion** (licença paga a partir de 4 pessoas).
+5. Skills (`skills-lock.json` registra fonte e commit): enxutas em 18/11/2026 de 133 para 17 externas + 3 da Linvuu (~5 mil tokens de descrição por sessão, eram ~20 mil). Engenharia (obra/superpowers): using-superpowers, writing-plans, executing-plans, test-driven-development, systematic-debugging, verification-before-completion. Design: impeccable, make-interfaces-feel-better, emil-design-eng. Qualidade web: web-quality-audit, core-web-vitals, accessibility. SEO (claude-seo): seo-technical, seo-hreflang, seo-geo. Segurança (trailofbits): differential-review, firebase-apk-scanner. Da Linvuu: Linvuu, carrossel-do-livro, verificar-site. Não reinstale as removidas sem motivo escrito aqui.
 
 ## O produto em 5 linhas
 - Linvuu: cursos de idiomas (alemão, inglês, espanhol, francês, italiano, português BR, russo) com explicação na língua do aluno e **áudio em cada frase**. **2 primeiras aulas grátis** (sessões 1–8; paywall na 9).
@@ -36,12 +36,12 @@ Regras de domínio em `server/dominio.ts` (301): www→apex; `/en`/`/es` de inte
 | Conteúdo dos cursos | `content/idiomas/<id>/<interface>/dia-NNN.json` (4 sessões = 1 aula) |
 | Índices de catálogo | `content/indice.json` (PT) e `content/indice.en.json` (EN) — **esquemas diferentes** (ver ARMADILHA 4) |
 | SEO (meta/canonical/hreflang/JSON-LD) | `server/metaRota.ts` (fonte única; também `/api/meta`) |
-| Sitemaps/robots/llms.txt | por domínio, gerados por `scripts/seo.mjs` (o llms.txt também, das mesmas listas, desde 13/11); sessões `/dia/N` são **noindex de propósito** (decisão 11/11, PR #551), **exceto a sessão 1** de cada curso completo no idioma da página (decisão do Felipe, 13/11) |
+| Sitemaps/robots/llms.txt | por domínio, gerados por `scripts/seo.mjs` (o llms.txt também, das mesmas listas, desde 13/11); sessões `/dia/N` são **noindex de propósito** (decisão 11/11, PR #551), **exceto a sessão 1** de cada curso completo no idioma da página (decisão do Felipe, 13/11; desde 18/11 o código exige `explicacaoCompleta` também na sessão 1, para curso parcial não ganhar página indexável fora do sitemap) |
 | Design | `src/tokens.css` (tokens oficiais) + cascata em `src/main.tsx` (ver ARMADILHA 3) |
 | Plataformas | `src/plataforma/website` × `src/plataforma/apk` (alias `@plataforma`; build falha se checkout vazar p/ o APK) |
 
 ## Estado real do catálogo (medido em 11/11/2026 — confira antes de afirmar)
-Sessões com explicação por interface: **RU 312/312 · FR 248/248 · PT→EN (curso BR) 248 · ES-EN 248/248 (12/11) · DE-EN 288/288 (12/11) · IT-EN 0/248 · EN (no .br) 248/248.**
+Sessões com explicação por interface: **RU 312/312 · FR 248/248 · PT→EN (curso BR) 248 · ES-EN 248/248 (12/11) · DE-EN 288/288 (12/11) · IT-EN 8/248 (18/11: aulas 1–2, as grátis; mapa em `content/idiomas/it/i18n/en/`, pronúncia e comparações reescritas para quem fala inglês) · EN (no .br) 248/248.**
 Regra `explicacaoCompleta` (`metaRota.ts`): curso só ganha página indexável/hreflang num idioma quando **todas** as aulas estão explicadas nele. Por isso o sitemap do .com tem 26 URLs e o do .com.br 49 (13/11: + sessão 1 de cada curso completo; − /portugues no .com) — **é intencional, não é bug**. Não "corrija" sitemap/índice para expor curso parcial sem ordem do Felipe.
 
 ## ARMADILHAS (não repetir)
