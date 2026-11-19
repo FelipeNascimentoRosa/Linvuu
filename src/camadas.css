@@ -195,3 +195,22 @@ main.site-camadas{min-height:100vh}
 .revisao-desempenho dt{color:var(--fg-2)}
 .revisao-desempenho dd{margin:0;font-size:1.4rem;font-variant-numeric:tabular-nums}
 @media (max-width:360px){.revisao-notas-botoes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* /por-que-linvuu: enxuta, só verde da marca e grafite claro; destaque pequeno (filete e negrito verde), sem caixas. */
+.pq .lvr-topo{max-width:780px;margin-bottom:28px}
+.pq-gancho{margin:0 0 18px;font-family:var(--font-display);font-weight:500;font-size:clamp(24px,2.6vw,32px);line-height:1.25;color:var(--verde-floresta);max-width:26ch}
+.pq-lead{font-size:clamp(18px,1.7vw,21px);line-height:1.65;color:var(--grafite-65)}
+.pq-lead strong{color:var(--verde-floresta);font-weight:700;background:linear-gradient(transparent 62%,var(--verde-100) 62%)}
+.pq-motivos{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:28px 36px;max-width:1000px;margin:0 0 40px}
+.pq-motivo{padding-top:14px;border-top:3px solid var(--verde-floresta)}
+.pq-motivo h2{margin:0 0 8px;font-family:var(--font-display);font-weight:500;font-size:clamp(20px,1.8vw,23px);line-height:1.2;color:var(--verde-floresta)}
+.pq-motivo p{margin:0;font-size:16px;line-height:1.6;color:var(--grafite-65)}
+.pq-fim{display:flex;flex-direction:column;align-items:flex-start;gap:14px;max-width:780px;padding-top:24px;border-top:1px solid var(--linha)}
+.pq-fim h2{margin:0;font-family:var(--font-display);font-weight:500;font-size:clamp(24px,2.4vw,30px);color:var(--verde-floresta)}
+.pq-fim p{margin:0;font-size:16px;line-height:1.6;color:var(--grafite-65)}
+.pq-fim p a{color:var(--verde-floresta);text-decoration:underline;text-decoration-color:var(--ocre);text-underline-offset:4px}
+.pq-botao{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 26px;border-radius:var(--r-pill);background:var(--verde-floresta);color:var(--papel-luz);font-size:17px;font-weight:700;text-decoration:none;transition:background-color .15s,transform .15s}
+.pq-botao:hover{background:var(--mat-verde)}
+.pq-botao:active{transform:scale(.98)}
+.pq-botao:focus-visible{outline:3px solid var(--foco);outline-offset:3px}
+@media(max-width:700px){.pq-botao{width:100%;justify-content:center}}
