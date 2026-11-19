@@ -5,6 +5,10 @@ on:
     paths: ['android/**', 'src/**', 'content/**', 'public/**', 'scripts/**', 'package*.json', 'vite.config.ts', 'capacitor.config.ts', '.github/workflows/app-android.yml', 'design/apk/teste-certificado-sha256.txt']
 permissions:
   contents: read
+concurrency:
+  group: app-android-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   apk:
     # Segredos e rascunhos só em execução manual (exige permissão de escrita) ou em PR de branch deste mesmo repositório; nunca em forks.
