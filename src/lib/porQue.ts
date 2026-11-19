@@ -32,7 +32,7 @@ export type TextoPorQue = {
 export const POR_QUE: Record<'pt-BR' | 'en', TextoPorQue> = {
   'pt-BR': {
     titulo: 'Por que estudar idiomas na Linvuu?',
-    seoTitulo: 'Por que estudar idiomas online · Áudio e 2 aulas grátis',
+    seoTitulo: 'Por que estudar idiomas online · 2 aulas grátis',
     seoDescricao: 'Curso de idiomas online sem firula: imersão, gramática, exercícios e conversa quando fazem sentido. Áudio em cada frase, sessões de 30 minutos e 2 aulas grátis.',
     descricao: 'Curso de idiomas online sem firula: você estuda o necessário, com áudio em cada frase, exercícios corrigidos na hora, sessões de 30 minutos e as 2 primeiras aulas grátis.',
     gancho: 'Promessa de marketing não ensina idioma. Estudar o que você precisa, na hora em que precisa, ensina.',
@@ -65,7 +65,7 @@ export const POR_QUE: Record<'pt-BR' | 'en', TextoPorQue> = {
   },
   en: {
     titulo: 'Why study languages at Linvuu?',
-    seoTitulo: 'Why study languages online · Audio and 2 free lessons',
+    seoTitulo: 'Why study languages online · 2 free lessons',
     seoDescricao: 'Online language courses without the fluff: immersion, grammar, exercises and conversation when they make sense. Audio in every sentence, 30-minute sessions and 2 free lessons.',
     descricao: 'Online language courses without the fluff: you study what you need, with audio in every sentence, exercises corrected on the spot, 30-minute sessions and the first 2 lessons free.',
     gancho: 'Marketing promises do not teach a language. Studying what you need, when you need it, does.',
