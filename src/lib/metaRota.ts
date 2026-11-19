@@ -354,6 +354,13 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
       ],
     };
   }
+  // Revisão espaçada do aluno (dados pessoais): `noindex, nofollow`, sem hreflang e fora dos sitemaps. Sem `Disallow` no robots.txt, para o Google poder ler a marca.
+  m = p.match(/^\/curso\/([^/]+)\/revisao$/);
+  if (m) {
+    const c = curso(m[1]);
+    if (!c || !d.indice[c.id]?.total) return naoEncontrada(p, loc);
+    return { status: 200, caminho: p, titulo: `${loc.codigo === 'en' ? 'Spaced review' : 'Revisão espaçada'} · ${c.nome}`, semIndice: true, semSeguimento: true, semMarca: true };
+  }
   m = p.match(/^\/curso\/([^/]+)\/dia\/(\d+)$/);
   if (m) {
     const c = curso(m[1]);

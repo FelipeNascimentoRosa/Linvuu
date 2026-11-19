@@ -46,6 +46,11 @@ for (const [de, outra] of [['src/plataforma/website', 'src/plataforma/apk'], ['s
   const dir = join(RAIZ, de);
   for (const f of arquivos(dir)) for (const spec of importsDe(f)) { const a = alvo(f, spec); if (a.startsWith(outra)) falha(`${relative(RAIZ, f)} importa "${spec}" (${de} não pode enxergar ${outra})`); }
 }
+// 2b. o código só do Web (armazém, sincronização, tela e atalhos da revisão) não entra no APK: nenhum arquivo do APK o importa
+const SO_WEB = /(lib\/revisaoWeb|components\/RevisaoBloco|components\/CartaoRevisao|pages\/Revisao)/;
+for (const f of arquivos(join(RAIZ, 'src/plataforma/apk'))) for (const spec of importsDe(f)) { const a = alvo(f, spec); if (SO_WEB.test(a)) falha(`${relative(RAIZ, f)} importa "${spec}" (revisão do Web não pode entrar no APK)`); }
+// e o módulo compartilhado nunca importa o código do Web
+for (const f of dominio) for (const spec of importsDe(f)) { if (SO_WEB.test(alvo(f, spec))) falha(`${relative(RAIZ, f)} importa "${spec}" (o domínio compartilhado não conhece o Web)`); }
 // 3. o servidor não importa de plataforma/* (o domínio de revisão já foi checado acima); e o servidor da revisão só usa src/lib/revisao
 for (const f of arquivos(join(RAIZ, 'server'))) {
   for (const spec of importsDe(f)) { const a = alvo(f, spec); if (a.startsWith('src/plataforma')) falha(`${relative(RAIZ, f)} importa "${spec}" (o servidor não depende de plataforma)`); }

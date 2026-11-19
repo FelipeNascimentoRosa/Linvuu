@@ -3,6 +3,7 @@ import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { DIAS, IDIOMAS_GRAMATICA, diaDoCurso, gruposDoCurso, statusDoCurso, STATUS_AULA } from '../lib/content';
 import { diaConcluido, diasConcluidos, marcarDia } from '../lib/progresso';
+import { CartaoRevisaoSite } from './CartaoRevisaoSite';
 import { salvarDiaConta, sincronizarConta, estadoProgressoConta, EVENTO_SINCRONIZACAO } from '../lib/progressoConta';
 import { useAuth } from '../lib/AuthContext';
 import { textos } from '../lib/textos';
@@ -139,6 +140,8 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
               </div>
               <p className="aa-acalma">{T.acalma(dia, total)}</p>
             </div>
+
+            <CartaoRevisaoSite idioma={idioma} />
 
             <div className="aa-linha-acoes">
               <div className="aa-tema" role="group" aria-label={T.tema} data-ativo={tema}>

@@ -9,6 +9,8 @@ import Cursos from '@plataforma/Cursos';
 const Curso = lazy(() => import('@plataforma/Curso'));
 const Dia = lazy(() => import('@plataforma/Dia'));
 const Conta = lazy(() => import('./pages/Conta'));
+// Revisão espaçada do Web: só no site (no APK a rota redireciona e o módulo vira vazio, ver vite.config).
+const Revisao = lazy(() => import('./pages/Revisao'));
 const Assinatura = lazy(() => import('@plataforma/Assinatura'));
 const Legal = lazy(() => import('@plataforma/Legal').then((m) => ({ default: m.Legal })));
 const Gramatica = lazy(() => import('./pages/Gramatica'));
@@ -72,6 +74,7 @@ export default function App() {
           <Route path="/brazilian-portuguese" element={<Navigate to="/curso/br" replace />} />
           <Route path="/curso/:id" element={<Curso />} />
           <Route path="/curso/:id/dia/:n" element={<Dia />} />
+          <Route path="/curso/:id/revisao" element={NATIVO ? <Navigate to="/" replace /> : <Revisao />} />
           <Route path="/entrar" element={<Conta modo="entrar" />} />
           <Route path="/cadastro" element={<Conta modo="cadastro" />} />
           <Route path="/gramatica" element={<Gramatica />} />

@@ -10,6 +10,8 @@ import { chaveSessao, lerSessao, salvarSessao } from '../lib/progresso';
 import { somErro } from '../lib/sons';
 import { useAuth } from '../lib/AuthContext';
 import { concluirDia } from './AreaAluno';
+/** Onde o bloco está: idioma, aula, sessão ("S3") e posição do bloco (a partir de 1). */
+type PontoDoBloco = { idioma: string; aula: number; sessao: string; bloco: number };
 import { LOCALE, dicionario } from '../i18n';
 import { explicacaoDoCurso } from '../lib/content';
 import colunasJson from '../../content/colunas.json';
@@ -79,7 +81,16 @@ function AvisoMedicao({ idioma }: { idioma: string }) {
   );
 }
 
-function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
+/** Guarda o bloco com erro na revisão espaçada. Import dinâmico atrás da constante de build: o APK (que tem a revisão própria) não leva este código. */
+async function guardarNaRevisao(ponto: PontoDoBloco, itens: Exercicio[], acertos: Record<number, boolean>) {
+  if (import.meta.env.VITE_ALVO === 'apk') return;
+  try {
+    const [{ armazemRevisao, sincronizarRevisao }, { registrarPratica, numeroDaSessao }] = await Promise.all([import('../lib/revisaoWeb/armazem'), import('../lib/revisaoWeb/pratica')]);
+    const sessao = numeroDaSessao(ponto.sessao);
+    if (sessao && registrarPratica(armazemRevisao, { ...ponto, sessao }, itens, acertos)) void sincronizarRevisao(ponto.idioma);
+  } catch { /* sem armazenamento ou rede: o aluno continua a aula normalmente */ }
+}
+function Exercicios({ itens, idioma, ponto }: { itens: Exercicio[]; idioma: string; ponto?: PontoDoBloco }) {
   const T = textos(idioma);
   const [i, setI] = useState(0);
   const [escolha, setEscolha] = useState<string | null>(null);
@@ -109,6 +120,8 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
       const final = { ...acertos };
       const resumo = resumirExercicios(itens, final);
       registrar({ t: 'fim', idioma, aula, ac: resumo.acertos, tot: resumo.total });
+      // Bloco com erro entra na revisão espaçada (neste navegador e, com login, na conta). A primeira tentativa de cada versão vale.
+      if (ponto) void guardarNaRevisao(ponto, itens, final);
       setFim(true);
     } else setI(i + 1);
   };
@@ -264,7 +277,7 @@ export function Gramatica({ b, idioma, explicacao }: { b: Extract<Bloco, { tipo:
   );
 }
 
-function Conteudo({ b, idioma, explicacao }: { b: Bloco; idioma: string; explicacao?: string }) {
+function Conteudo({ b, idioma, explicacao, ponto }: { b: Bloco; idioma: string; explicacao?: string; ponto?: PontoDoBloco }) {
   const T = textos(idioma);
   const [trad, setTrad] = useState(false);
   const [exemplo, setExemplo] = useState(false);
@@ -321,7 +334,7 @@ function Conteudo({ b, idioma, explicacao }: { b: Bloco; idioma: string; explica
       </section>
     );
     case 'gramatica': return <Gramatica b={b} idioma={idioma} explicacao={explicacao} />;
-    case 'exercicios': return <Exercicios itens={b.itens} idioma={idioma} />;
+    case 'exercicios': return <Exercicios itens={b.itens} idioma={idioma} ponto={ponto} />;
   }
 }
 
@@ -369,7 +382,7 @@ export function Sessao({ sessao, idioma, aula, dia, proximo, nomeIdioma, explica
       {compacta ? <details className="app-navegador-etapas"><summary><span>{T.blocosSessao}</span><span>{idx + 1}/{total} <span aria-hidden="true">⌄</span></span></summary>{etapas}</details> : etapas}
       <div className="bloco">
         <div className="bloco-topo"><h2 ref={tituloEtapa} className={compacta ? "app-etapa-titulo" : undefined} tabIndex={-1}>{T.rotuloBloco[b.tipo]}</h2><span>{T.bloco(idx + 1, total, b.min)}</span></div>
-        <Conteudo key={idx} b={b} idioma={idioma} explicacao={explicacao} />
+        <Conteudo key={idx} b={b} idioma={idioma} explicacao={explicacao} ponto={{ idioma, aula, sessao: sessao.sessao, bloco: idx + 1 }} />
       </div>
       <div className="sessao-nav">
         <button type="button" className="btn btn-ghost" disabled={idx === 0} onClick={() => setIdx(idx - 1)}>{T.voltar}</button>

@@ -28,6 +28,12 @@ assert.ok(!js.includes('"checkout"'), 'APK não contém ação de checkout');
 assert.ok(!js.includes('checkout.stripe.com'), 'APK não contém link Stripe');
 assert.ok(!/R\$\s*(139|417|291|999|79|125)/.test(js), 'APK não contém preços do website');
 assert.ok(js.includes('https://linvuu.com.br/audio'), 'APK usa áudio remoto');
+// Revisão espaçada: o APK tem a sua (chave `linvuu:pratica-apk`) e o site a dele (`linvuu:revisao-web`); nenhum leva o código do outro.
+assert.ok(!js.includes('linvuu:revisao-web'), 'APK não contém o armazém de revisão do Web');
+assert.ok(js.includes('linvuu:pratica-apk'), 'APK mantém a revisão própria');
+const jsSite = fs.readdirSync('dist/assets').filter((n) => n.endsWith('.js')).map((n) => fs.readFileSync(path.join('dist/assets', n), 'utf8')).join('\n');
+assert.ok(jsSite.includes('linvuu:revisao-web'), 'website contém o armazém de revisão do Web');
+assert.ok(!jsSite.includes('linvuu:pratica-apk'), 'website não contém o armazém de revisão do APK');
 const bytes = (dir) => fs.readdirSync(dir, { withFileTypes: true }).reduce((n, f) => n + (f.isDirectory() ? bytes(path.join(dir, f.name)) : fs.statSync(path.join(dir, f.name)).size), 0);
 console.log(`ok: plataformas separadas; website ${(bytes('dist') / 1024 ** 2).toFixed(1)} MiB, assets APK ${(bytes('dist-apk') / 1024 ** 2).toFixed(1)} MiB (não é tamanho do APK compilado)`);
 
