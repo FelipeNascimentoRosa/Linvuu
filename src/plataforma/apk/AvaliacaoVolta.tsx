@@ -1,8 +1,8 @@
 import { useMemo, useState } from 'react';
 import { LOCALE } from '../../i18n';
 import { avaliarVolta, previsoesVolta } from './reforco';
-import { NOTAS, notasPermitidas, rotuloIntervalo, type Nota } from './espacadoModelo';
-import { pendentesRevisao, type Revisao } from './revisaoModelo';
+import { NOTAS, notasPermitidas, rotuloIntervalo, type Nota } from '../../lib/revisao/espacadoModelo';
+import { pendentesRevisao, type Revisao } from '../../lib/revisao/revisaoModelo';
 
 /** Rótulos por idioma da interface (pt-BR no .com.br, en no .com) e o texto falado de cada intervalo (leitor de tela). */
 const T = {

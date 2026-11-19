@@ -83,7 +83,7 @@ jobs:
           node --import tsx scripts/testar-revisao-erros-apk.ts
           node --import tsx scripts/testar-primeira-abertura-apk.ts
           node --import tsx scripts/testar-rodada4-apk.ts
-          node --import tsx scripts/testar-fsrs-apk.ts
+          node --import tsx scripts/testar-fsrs-dominio.ts
       - name: Testes das avaliações de alunos
         run: npm run testar:avaliacoes
       - name: Testar a sugestão de idioma pelo navegador
@@ -92,6 +92,10 @@ jobs:
         run: npm run testar:newsletter
       - name: Testar a rota da newsletter no emulador do Firestore (consentimento, repetição, limite por IP)
         run: npm run testar:newsletter:rota
+      - name: Testar o domínio da revisão espaçada (FSRS, registro por bloco, conflito, isolamento de imports Web/APK)
+        run: npm run testar:revisao
+      - name: Testar a rota da revisão no emulador do Firestore e do Auth (validação, conflito, isolamento entre contas, limites)
+        run: npm run testar:revisao:rota
       - name: Testar as regras do Firestore no emulador (duas contas fictícias e visitante)
         run: npm run testar:regras
       - run: npm run build:website

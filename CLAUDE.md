@@ -34,6 +34,7 @@ Regras de domínio em `server/dominio.ts` (301): www→apex; `/en`/`/es` de inte
 | Billing/checkout/Stripe | `server/billing.ts`, `server/billing-contrato.ts`, `server/billing-webhook.ts`, `src/config/planos.ts` |
 | Prontidão (env vars) | `server/prontidao.ts` (`/readyz` confere variáveis e valores) |
 | Áudio de assinante | repositório **privado** `Linvuu-Audio`, baixado no build para `.audio-privado/` (`scripts/audio-privado.mjs`, `AUDIO_REPO_TOKEN` no Render); servido só por `/api/audio` |
+| Revisão espaçada (FSRS) | `src/lib/revisao/` (modelos puros, sem DOM: `fsrsAdaptador`, `espacadoModelo`, `revisaoModelo`, `reforcoModelo`, `estudoModelo`, `registroBloco`) usados pelo APK e pelo Web; `server/revisao.ts` (`GET/PUT /api/progresso/revisao`, subcoleção `users/{uid}/revisao/{bloco}`, só o Admin SDK); testes `npm run testar:revisao` e `testar:revisao:rota`. Web e APK nunca se importam (`scripts/testar-isolamento-revisao.mjs`) |
 | Áudio público | `public/audio/` (hoje: `v2/` = 4.062 arquivos, `es/` 907, `it/` 557) |
 | Conteúdo dos cursos | `content/idiomas/<id>/<interface>/dia-NNN.json` (4 sessões = 1 aula) |
 | Índices de catálogo | `content/indice.json` (PT) e `content/indice.en.json` (EN) — **esquemas diferentes** (ver ARMADILHA 4) |

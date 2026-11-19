@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {criarArmazenamento} from '../src/plataforma/apk/armazenamento';
 import {CHAVE_JOURNAL,alterar,lerJournal,reconciliar,serializar,valorValido,vazio} from '../src/plataforma/apk/recuperacao';
-import {assinaturaExercicios} from '../src/plataforma/apk/estudoModelo';
+import {assinaturaExercicios} from '../src/lib/revisao/estudoModelo';
 Object.assign(globalThis,{window:new EventTarget()});
 class Memoria {
  constructor(entradas:Record<string,string>={}) {Object.defineProperty(this,'mapa',{value:new Map(Object.entries(entradas)),enumerable:false});for(const [k,v]of Object.entries(entradas))this.setItem(k,v);}

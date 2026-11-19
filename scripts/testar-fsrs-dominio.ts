@@ -1,8 +1,8 @@
-// Prova do reforço espaçado com ts-fsrs (APK): migração do legado, escrita aditiva, progressão, teto de 365 dias e virada de dia.
+// Prova do reforço espaçado com ts-fsrs (domínio compartilhado, usado pelo APK e pelo Web): migração do legado, escrita aditiva, progressão, teto de 365 dias e virada de dia.
 import assert from 'node:assert/strict';
 import { Rating, State } from 'ts-fsrs';
-import { cartaoDeLegado, diaCivil, meiaNoiteLocal, MS_DIA, NOTAS, notasPermitidas, PARAMETROS, proximos, rotuloIntervalo, validarFsrs, type Fsrs, type Nota } from '../src/plataforma/apk/fsrsAdaptador';
-import { fsrsDoRegistro, INTERVALOS_DIAS, previsoesDaVolta, registrarAvaliacao, situacaoEspacada, validarEspacado, type Espacado } from '../src/plataforma/apk/espacadoModelo';
+import { cartaoDeLegado, diaCivil, meiaNoiteLocal, MS_DIA, NOTAS, notasPermitidas, PARAMETROS, proximos, rotuloIntervalo, validarFsrs, type Fsrs, type Nota } from '../src/lib/revisao/fsrsAdaptador';
+import { fsrsDoRegistro, INTERVALOS_DIAS, previsoesDaVolta, registrarAvaliacao, situacaoEspacada, validarEspacado, type Espacado } from '../src/lib/revisao/espacadoModelo';
 import { valorValido } from '../src/plataforma/apk/recuperacao';
 
 process.env.TZ = 'America/Sao_Paulo';
@@ -111,4 +111,23 @@ for (const tz of ['America/Sao_Paulo', 'America/New_York']) {
 }
 process.env.TZ = 'America/Sao_Paulo';
 
-console.log('FSRS APK: migração sem pico de vencidos, escrita aditiva versao 1, progressão Again/Hard/Good/Easy, teto de 365 dias e virada de dia local aprovados.');
+// 6. Relógio atrasado: avaliar com "agora" ANTES da última revisão não pode lançar (o ts-fsrs recusa tempo negativo).
+{
+  const revisadoEm = local(2026, 11, 18, 12);
+  const card = cartaoDeLegado(0, iso(revisadoEm + MS_DIA), iso(revisadoEm - 3 * MS_DIA));
+  const comDefeito = { ...card, last_review: iso(revisadoEm) };
+  for (const atraso of [60_000, 6 * 3_600_000, 3 * MS_DIA]) {
+    const agora = revisadoEm - atraso;
+    const p = proximos(comDefeito, agora);
+    for (const n of NOTAS) assert.ok(validarFsrs(p[n]), `relógio ${atraso} ms atrasado: ${n} continua válido`);
+    assert.ok(Date.parse(p.good.due) >= revisadoEm, `relógio atrasado: o vencimento parte da última revisão, não do passado (${atraso} ms)`);
+  }
+  const aprendendo = avaliarAprendendo(revisadoEm);
+  assert.ok(Date.parse(aprendendo.due) >= revisadoEm, 'passo curto com relógio atrasado também não lança');
+}
+function avaliarAprendendo(t: number): Fsrs {
+  const errou = proximos(cartaoDeLegado(0, iso(t + MS_DIA), iso(t - MS_DIA)), t).again; // vira Reaprendendo, last_review = t
+  return proximos(errou, t - 120_000).good;
+}
+
+console.log('FSRS (domínio compartilhado): migração sem pico de vencidos, escrita aditiva versao 1, progressão Again/Hard/Good/Easy, teto de 365 dias e virada de dia local aprovados.');

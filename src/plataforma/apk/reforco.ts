@@ -3,10 +3,10 @@
  *  Só lê o que o aluno respondeu. */
 import { gruposDoCurso } from '../../lib/content';
 import { usuarioDoProgresso } from '../../lib/progresso';
-import { agendaReforco, type ItemReforco } from './reforcoModelo';
-import { previsoesDaVolta, registrarAvaliacao, situacaoEspacada, validarEspacado, type Espacado, type Fsrs, type Nota } from './espacadoModelo';
-import { pendentesRevisao, type Revisao } from './revisaoModelo';
-export type { ItemReforco } from './reforcoModelo';
+import { agendaReforco, type ItemReforco } from '../../lib/revisao/reforcoModelo';
+import { previsoesDaVolta, registrarAvaliacao, situacaoEspacada, validarEspacado, type Espacado, type Fsrs, type Nota } from '../../lib/revisao/espacadoModelo';
+import { pendentesRevisao, type Revisao } from '../../lib/revisao/revisaoModelo';
+export type { ItemReforco } from '../../lib/revisao/reforcoModelo';
 
 /** Dia (sessão do percurso) a partir de aula + sessão "S3", usando os grupos reais do curso. */
 export function diaDaSessao(idioma: string, aula: number, sessao: number): number | null {
