@@ -184,7 +184,8 @@
 .br-home-leve .br-palco button:focus-visible{outline-color:var(--home-azul-texto)}
 .br-home-leve .br-error{color:var(--site-erro);min-height:0}
 .br-home-leve .br-error:not(:empty){margin-top:8px}
-.br-home-leve .br-section{padding-block:clamp(36px,5vw,68px)}
+.br-home-leve .br-section{padding-block:clamp(32px,4.5vw,56px)}
+.br-home-leve .br-section-head h2{margin:0 0 10px}
 .br-home-leve .br-section-head{margin-bottom:24px}
 .br-home-leve .br-languages{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;border:0}
 .br-home-leve .br-languages .br-language{grid-column:auto;display:block;min-height:0;padding:18px;border:1px solid var(--site-borda-cartao);border-radius:var(--site-r-control);background:var(--home-marfim-forte)}
@@ -227,3 +228,8 @@
 .br-why-cta:active{transform:scale(.98)}
 .br-why-cta:focus-visible{outline:3px solid var(--foco);outline-offset:3px}
 @media(max-width:700px){.br-why-cta{width:100%;justify-content:center}}
+
+/* Catálogo da home brasileira: o título agora diz o que fazer; a grade entra logo abaixo, sem vão de 100px. */
+.br-home-leve #idiomas .br-section-head{align-items:center;margin-bottom:0}
+.br-home-leve #idiomas .br-section-head>p{max-width:40ch;margin:0}
+.br-home-leve #idiomas .site-catalogo .curso-grid{margin-top:20px}
