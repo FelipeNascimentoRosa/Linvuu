@@ -201,7 +201,7 @@ export const ptBR = {
     padrao: 'Não foi possível concluir. Tente de novo.', compraApp: 'A compra ainda não está disponível neste aplicativo.',
   } as Record<string, string>,
   naoEncontrada: { titulo: 'Página não encontrada', texto: 'O endereço não existe ou mudou de lugar.', inicio: 'Voltar ao início', cursos: 'Ver cursos' },
-  legal: { privacidade: 'Política de privacidade', termos: 'Termos de uso', descPriv: 'Quais dados a Linvuu coleta, para quê e quais são os seus direitos pela LGPD.', descTermos: 'Regras de uso do site e dos cursos da Linvuu.', aviso: '' },
+  legal: { privacidade: 'Política de privacidade', termos: 'Termos de uso', descPriv: 'Quais dados a Linvuu coleta, para quê e quais são os seus direitos pela LGPD.', descTermos: 'Regras de uso do site e dos cursos da Linvuu.', aviso: '', versaoPt: '' },
   portugues: {
     tituloSeo: 'Português para estrangeiros · Brazilian Portuguese', descSeo: 'Curso de português do Brasil para estrangeiros, do A1 ao B1, com aulas explicadas em inglês. 62 aulas.',
     kicker: 'Português para estrangeiros', h1: 'Português do Brasil para quem não fala português',

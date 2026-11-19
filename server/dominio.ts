@@ -45,6 +45,8 @@ export function redirecionamentoDeDominio(host: string, caminho: string, consult
   if (h === HOST_GLOBAL && /^\/ex-alunos-udemy(\/|$)/.test(caminho)) return `${SITE_URL}${caminho}${q}`;
   // .com: o livro de gramática russa só existe em português (antes respondia 200 com título em PT no site em inglês).
   if (h === HOST_GLOBAL && /^\/livro\/gramatica-ru(\/|$)/.test(caminho)) return `${SITE_URL}${caminho}${q}`;
+  // .com: o curso de inglês é para quem fala português (explicado em português) e mora no .com.br; quem já fala inglês não o vê aqui.
+  if (h === HOST_GLOBAL && /^\/(curso|gramatica)\/en(\/|$)/.test(caminho)) return `${SITE_URL}${caminho}${q}`;
   // .com: /portugues e /curso/br disputavam a mesma busca; desde 13/11/2026 (Felipe) /curso/br é a página do curso.
   if (h === HOST_GLOBAL && /^\/portugues\/?$/.test(caminho)) return `${SITE_GLOBAL_URL}/curso/br${q}`;
   // .com: o curso de português só existe com explicação em inglês (/curso/br); o resto em português mora no .com.br

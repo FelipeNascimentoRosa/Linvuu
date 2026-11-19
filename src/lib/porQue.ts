@@ -69,13 +69,13 @@ export const POR_QUE: Record<'pt-BR' | 'en', TextoPorQue> = {
     seoDescricao: 'Online language courses without the fluff: immersion, grammar, exercises and conversation when needed. Audio in every sentence and 2 free lessons.',
     descricao: 'Online language courses without the fluff: you study what you need, with audio in every sentence, exercises corrected on the spot, 30-minute sessions and the first 2 lessons free.',
     gancho: 'Marketing promises do not teach a language. Studying what you need, when you need it, does.',
-    lead: 'Unlike other apps and sites that sell you marketing, Linvuu has no fluff: it is what you need to build a solid base and keep moving towards fluency.',
+    lead: 'Other apps sell you streaks and confetti. Linvuu gives you the rule, the reason behind it and the sentence out loud, so the base you build holds.',
     necessarioTitulo: 'Here you study what you need',
     necessario: [
-      { id: 'imersao', titulo: 'Immersion', texto: 'When you need it, we immerse.' },
-      { id: 'gramatica', titulo: 'Grammar', texto: 'When you need it, we study it.' },
-      { id: 'exercicios', titulo: 'Exercises', texto: 'When you need them, we do them.' },
-      { id: 'conversa', titulo: 'Conversation', texto: 'A relaxed group, too.' },
+      { id: 'imersao', titulo: 'Immersion', texto: 'Full-speed listening, once you have the words to follow it.' },
+      { id: 'gramatica', titulo: 'Grammar', texto: 'The rule, the exception and the mistake you are about to make.' },
+      { id: 'exercicios', titulo: 'Exercises', texto: 'Short drills that make the rule stick, corrected as you go.' },
+      { id: 'conversa', titulo: 'Conversation', texto: 'Relaxed group practice, for when you want to talk.' },
     ],
     motivosRotulo: 'Reasons to study at Linvuu',
     motivos: [
@@ -89,7 +89,7 @@ export const POR_QUE: Record<'pt-BR' | 'en', TextoPorQue> = {
     ctaTitulo: 'Start now, without paying',
     ctaBotao: { texto: 'Pick my language and start free', link: '/cursos' },
     ctaSegmentos: [
-      { link: '/livros', texto: 'Read a chapter (in Portuguese)' },
+      { link: '/livros', texto: 'Read a free chapter' },
       { texto: ' · ' },
       { link: '/sobre', texto: 'Meet the authors' },
       { texto: ' · ' },
