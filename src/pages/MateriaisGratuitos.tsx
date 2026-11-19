@@ -208,16 +208,23 @@ export function MateriaisIndice() {
         <ParaPortugues />
       </header>
       <ul className="mat-grade">
-        {ALFABETOS.map((a) => (
-          <li key={a.id}>
-            <Link to={caminhoAlfabeto(a.slug)} className="mat-curso-cartao">
-              <img className="mat-curso-arte" src={`/assets/materiais/rabiscos/${a.id}.webp`} alt="" loading="lazy" />
-              <h2>Alfabeto {a.idioma.charAt(0).toUpperCase() + a.idioma.slice(1)}</h2>
-              <img className="mat-curso-marca" src="/assets/materiais/rabiscos/linvuu.png" alt="" />
+        {ALFABETOS.map((a, n) => (
+          <li key={a.id} className="mat-cartao" data-tom={['vermelho', 'ocre', 'verde'][n % 3]}>
+            <Link to={caminhoAlfabeto(a.slug)} className="mat-cartao-link">
+              <span className="mat-cartao-arte"><img src={`/assets/materiais/rabiscos/${a.id}.webp`} alt="" loading="lazy" /></span>
+              <span className="mat-cartao-corpo">
+                <h2>Alfabeto {a.idioma.charAt(0).toUpperCase() + a.idioma.slice(1)}</h2>
+                <span className="mat-cartao-sub">Letras, sons e áudio em uma página</span>
+                <span className="mat-cartao-cta">Abrir o guia grátis <span aria-hidden="true">→</span></span>
+              </span>
             </Link>
           </li>
         ))}
       </ul>
+      <section className="mat-convite" aria-labelledby="mat-convite-t">
+        <div><h2 id="mat-convite-t">Do alfabeto à primeira conversa.</h2><p>As 2 primeiras aulas de cada curso são grátis, com explicação em português e áudio em cada frase.</p></div>
+        <Link to="/cursos" className="mat-convite-cta">Começar um curso grátis <span aria-hidden="true">→</span></Link>
+      </section>
     </div>
   );
 }

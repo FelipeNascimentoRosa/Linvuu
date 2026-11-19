@@ -24,12 +24,6 @@
 .br-section-head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:36px}
 .br-section-head h2,.br-faq h2,.br-book h2{margin:14px 0 18px}
 .br-section-head>p{max-width:370px;line-height:1.65;color:var(--site-texto-secundario)}
-.br-method{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
-.br-method article{background:none}
-.br-method-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:36px;font-size:12px}
-.br-method-top b{font-family:Georgia,serif;font-size:38px;font-weight:400;color:var(--br-green)}
-.br-method h3{font-size:22px;margin-bottom:12px}
-.br-method p{font-size:16px;line-height:1.65}
 .br-plans-wrap{background:var(--br-green);color:var(--br-paper)}
 .br-plans-wrap .br-section-head>p{color:var(--site-texto-inverso)}
 .br-plans{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
@@ -83,8 +77,6 @@
 .br-section{padding:56px 24px}
 .br-section-head{display:block;margin-bottom:28px}
 .br-section-head>p{max-width:none;font-size:17px}
-.br-method,.br-languages{grid-template-columns:1fr}
-.br-method-top{margin-bottom:20px}
 .br-languages{grid-template-columns:repeat(2,minmax(0,1fr))}.br-language:nth-child(3n){border-right:1px solid var(--linha)}.br-language:nth-child(2n){border-right:0}.br-languages>:last-child:nth-child(odd){grid-column:1/-1;border-right:0}
 .br-language{padding:18px}
 .br-greeting{font-size:34px;margin-bottom:24px}
@@ -102,11 +94,7 @@
 }
 @media(prefers-reduced-motion:reduce){.br-home *{animation:none!important;transition-property:color,background-color,border-color,opacity!important;scroll-behavior:auto!important}}
 /* Fotos nos três passos do método: pessoas de verdade estudando (tom verde da marca, ~60 KB cada, carregam sob demanda) */
-.br-method article{padding:0}
 
-.br-method-foto{display:block;width:100%;height:220px;object-fit:cover;margin-bottom:20px;border-radius:var(--r-sm)}
-.br-method-top{margin-bottom:20px!important}
-@media(max-width:700px){.br-method-foto{height:180px}}
 
 .br-plans-wrap :is(a,button):focus-visible{outline-color:var(--site-livro-destaque)}
 
@@ -198,8 +186,6 @@
 .br-home-leve .br-error:not(:empty){margin-top:8px}
 .br-home-leve .br-section{padding-block:clamp(36px,5vw,68px)}
 .br-home-leve .br-section-head{margin-bottom:24px}
-.br-home-leve #metodo{border-block:1px solid var(--site-divisor)}
-.br-home-leve .br-passo{display:inline-grid;place-items:center;width:36px;height:36px;margin-bottom:14px;border-radius:50%;background:var(--home-azul-claro);color:var(--home-azul-texto);font-size:13px;font-weight:700}
 .br-home-leve .br-languages{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;border:0}
 .br-home-leve .br-languages .br-language{grid-column:auto;display:block;min-height:0;padding:18px;border:1px solid var(--site-borda-cartao);border-radius:var(--site-r-control);background:var(--home-marfim-forte)}
 .br-home-leve .br-languages .br-language:hover{background:var(--home-azul-claro);color:var(--home-azul-texto)}
@@ -209,3 +195,19 @@
 .br-home-leve .br-book p{margin-bottom:0}
 .br-home-leve .br-book>a{justify-self:start}
 @media(max-width:760px){.br-home-leve .br-hero-in,.br-home-leve .br-book{grid-template-columns:minmax(0,1fr)}.br-home-leve .br-languages{grid-template-columns:repeat(2,minmax(0,1fr))}.br-home-leve .br-languages .br-language{padding:12px}.br-home-leve .br-language h3{font-size:14px}}
+
+
+/* Hero: promessa, ação principal e números reais do catálogo (contados do índice, não digitados). */
+.br-hero-sub{margin:20px 0 0;max-width:46ch;font-size:clamp(17px,1.5vw,20px);line-height:1.5;color:var(--papel-escuro)}
+.br-hero-acoes{display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px;margin-top:28px}
+.br-hero-cta{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 26px;border-radius:var(--r-pill);background:var(--ocre-claro);color:var(--verde-floresta);font-size:17px;font-weight:700;text-decoration:none;transition:background-color .15s,transform .15s}
+.br-hero-cta:hover{background:var(--papel)}
+.br-hero-cta:active{transform:scale(.98)}
+.br-hero-link{color:var(--papel);font-size:16px;font-weight:600;text-decoration:underline;text-decoration-color:var(--ocre-claro);text-underline-offset:5px;padding:12px 2px}
+.br-hero :is(.br-hero-cta,.br-hero-link):focus-visible{outline:3px solid var(--ocre-claro);outline-offset:3px}
+.br-metricas{display:grid;grid-template-columns:repeat(4,auto);justify-content:start;align-items:end;gap:0;margin:36px 0 0;padding:22px 0 0;border-top:1px solid var(--linha-sobre-marca)}
+.br-metricas div{display:flex;flex-direction:column-reverse;gap:4px;padding:0 28px;border-left:1px solid var(--linha-sobre-marca)}
+.br-metricas div:first-child{padding-left:0;border-left:0}
+.br-metricas dd{margin:0;font-family:var(--font-display);font-size:clamp(30px,3.2vw,44px);line-height:1;letter-spacing:-.02em;color:var(--papel);font-variant-numeric:tabular-nums}
+.br-metricas dt{font-size:15px;line-height:1.3;color:var(--papel-escuro);max-width:14ch}
+@media(max-width:700px){.br-hero-cta{width:100%;justify-content:center}.br-metricas{grid-template-columns:repeat(2,1fr);gap:20px 0}.br-metricas div:nth-child(odd){padding-left:0;border-left:0}.br-metricas div:nth-child(even){padding-left:20px}}
