@@ -163,7 +163,7 @@ export function Legal({ tipo }: { tipo: 'privacidade' | 'termos' }) {
   return (
     <div className="pagina">
       <Navegacao pai="/" trilha={[{ rotulo: t.geral.inicio, para: '/' }, { rotulo: titulo }]} />
-      {t.legal.aviso && <p className="nota">{t.legal.aviso} <a href={urlEm('pt-BR')} hrefLang="pt-BR" lang="pt-BR">Versão em português</a></p>}
+      {t.legal.aviso && <p className="nota">{t.legal.aviso} <a href={urlEm('pt-BR')} hrefLang="pt-BR" >{t.legal.versaoPt}</a></p>}
       <Texto />
     </div>
   );

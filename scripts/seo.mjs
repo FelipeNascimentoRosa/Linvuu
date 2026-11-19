@@ -191,6 +191,12 @@ ${cursosDe('en', SITE_GLOBAL, true).join('\n')}
 - ${md('Grammar guides', `${SITE_GLOBAL}/gramatica`)}
 - ${md('Live online Russian lessons with a teacher', `${SITE_GLOBAL}/russo-online`)}
 
+## Books
+- ${md('Olá Portuguese: the Brazilian Portuguese grammar book for English speakers', `${SITE_GLOBAL}/livros/br`)}: written in English, with audio; chapters 1 and 2 are free to read. Books for the other languages are not published in English yet.
+
+## Free materials
+- ${md('Free first lessons', `${SITE_GLOBAL}/materiais-gratuitos`)}: the first two lessons of every course are free, with audio and quick exercises, no account needed.
+
 ## Plans and prices
 - ${md('Pricing page', `${SITE_GLOBAL}/assinatura`)}
 - Prices are in US dollars, paid by card.
@@ -205,6 +211,7 @@ ${cursosDe('en', SITE_GLOBAL, true).join('\n')}
 
 ## About
 - ${md('Authors', `${SITE_GLOBAL}/sobre`)}
+- ${md('Why study with Linvuu', `${SITE_GLOBAL}/por-que-linvuu`)}
 - ${md('Contact', `${SITE_GLOBAL}/contato`)}: contato@linvuu.com
 
 ## Portuguese version

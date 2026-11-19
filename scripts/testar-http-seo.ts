@@ -64,9 +64,9 @@ try {
         assert.equal(r.headers.get('location'), 'https://linvuu.com/curso/br', `${host}${p}`);
         await r.arrayBuffer();
         redirecionados++;
-      } else if (perfil === 'global' && /^\/(?:livros\/(?!br(?:\/|$))[^/]+|ex-alunos-udemy|livro\/gramatica-ru|materiais-gratuitos\/.+)(?:\/|$)/.test(p)) {
+      } else if (perfil === 'global' && /^\/(?:livros\/(?!br(?:\/|$))[^/]+|ex-alunos-udemy|livro\/gramatica-ru|materiais-gratuitos\/.+|(?:curso|gramatica)\/en)(?:\/|$)/.test(p)) {
         // no .com os livros em português, a página de ex-alunos da Udemy e os guias de alfabeto (explicados em português)
-        // não existem: vão para o .com.br. Desde 19/11/2026 /livros (com o livro br) e o hub /materiais-gratuitos existem no .com.
+        // não existem: vão para o .com.br. O curso de inglês (explicado em português) também mora só no .com.br. Desde 19/11/2026 /livros (com o livro br) e o hub /materiais-gratuitos existem no .com.
         assert.equal(r.status, 301, `${host}${p}`);
         assert.equal(r.headers.get('location'), 'https://linvuu.com.br' + p, `${host}${p}`);
         await r.arrayBuffer();
