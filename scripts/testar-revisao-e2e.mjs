@@ -84,11 +84,9 @@ for (const [cod, t] of Object.entries(L)) {
     await p.getByRole('radio').first().waitFor();
     await p.getByText(/Bloco 2 de 2|Block 2 of 2/).waitFor();
     await p.getByRole('button', { name: /Conferir|Check/ }).waitFor();
-    await p.getByRole('radio').first().waitFor();
-    const errada = (await p.getByRole('radio').all());
-    let clicou = false;
-    for (const o of errada) { if ((await o.textContent()) !== B.errada.gabarito) { await o.click(); clicou = true; break; } }
-    assert.ok(clicou, `sem opção errada para clicar: ${cod} ${nome} :: ${(await p.locator('main').innerText()).slice(0, 600)} :: radios=${errada.length}`); await p.getByRole('button', { name: /Conferir|Check/ }).click();
+    // Seletor que o Playwright repete até a tela assentar: a opção errada é qualquer uma que não seja o gabarito.
+    await p.getByRole('radio').filter({ hasNotText: B.errada.gabarito }).first().click();
+    await p.getByRole('button', { name: /Conferir|Check/ }).click();
     await p.getByText(/Incorreto|Incorrect/).first().waitFor().catch(async (e) => { console.error('ESTADO:', cod, nome, (await p.locator('main').innerText()).slice(0, 700)); throw e; });
     await auditar('resposta errada');
     await p.keyboard.press('Enter'); // Terminar bloco
