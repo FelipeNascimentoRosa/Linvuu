@@ -232,4 +232,20 @@ const concluido = (r: RegistroBloco, fimEm: number): RegistroBloco => ({ ...r, r
   assert.equal(JSON.stringify(x), JSON.stringify(y)); assert.equal(x.length, 1); assert.equal(x[0].pratica.em, b.pratica.em);
   ok('fundir(a,b) = fundir(b,a): o aparelho e o servidor sempre escolhem o mesmo vencedor');
 }
+// 14. resumo: intervalo médio e proporção Bom + Fácil contra Errei, nas duas línguas
+{
+  const { somarEspera, mediaEspera, proporcaoAcerto, formatarEspera, SEM_ESPERAS } = await import('../src/lib/revisaoWeb/resumo');
+  assert.equal(mediaEspera(SEM_ESPERAS), null);
+  const e = somarEspera(somarEspera(SEM_ESPERAS, 2 * 86_400_000), 4 * 86_400_000);
+  assert.equal(mediaEspera(e), 3 * 86_400_000); assert.equal(e.blocos, 2);
+  assert.equal(somarEspera(SEM_ESPERAS, -5).somaMs, 0, 'relógio mexido não gera espera negativa');
+  const zero = { again: 0, hard: 0, good: 0, easy: 0 };
+  assert.equal(proporcaoAcerto(zero), null); assert.equal(proporcaoAcerto({ ...zero, hard: 3 }), null, 'só Difícil não tem razão');
+  assert.deepEqual(proporcaoAcerto({ ...zero, good: 2, easy: 1, again: 1, hard: 5 }), { bons: 3, total: 4, porcento: 75 });
+  assert.equal(proporcaoAcerto({ ...zero, again: 2 })!.porcento, 0);
+  assert.equal(formatarEspera(10 * 60_000, 'pt-BR'), '10 minutos'); assert.equal(formatarEspera(10 * 60_000, 'en'), '10 minutes');
+  assert.equal(formatarEspera(30_000, 'en'), '1 minute'); assert.equal(formatarEspera(3 * 3_600_000, 'pt-BR'), '3 horas');
+  assert.equal(formatarEspera(86_400_000, 'en'), '24 hours'); assert.equal(formatarEspera(3 * 86_400_000, 'en'), '3 days'); assert.equal(formatarEspera(3 * 86_400_000, 'pt-BR'), '3 dias');
+  ok('resumo: intervalo médio e Bom+Fácil contra Errei (Difícil fora da razão), sem divisão por zero, pt-BR e en');
+}
 console.log(`revisão Web: ${n} cenários verdes.`);

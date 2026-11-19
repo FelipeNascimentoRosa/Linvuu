@@ -31,4 +31,18 @@ assert.deepEqual(rotaAnalytics('/curso/en/dia/3'),{page:'lesson',study_language:
 const pending=criarAnalytics(cfg,store,((_u,init)=>new Promise((_resolve,reject)=>{init?.signal?.addEventListener('abort',()=>reject(Error('aborted')));})) as typeof fetch);
 const request=pending.capture('page_viewed');pending.choose('no');assert.equal(await request,false);
 assert.equal(data.get(ANALYTICS_CHOICE),'no');
+{
+  // Revisão espaçada: eventos novos só com a nota da lista fechada e a contagem de blocos; nada de bloco, questão ou resposta.
+  const rev=criarAnalytics(cfg,store,send);rev.choose('yes');const antes=calls.length;
+  await rev.capture('review_started',{study_language:'ru',blocks:4,answer:'secret',block:'ru_3_S1_B2'});
+  await rev.capture('review_rated',{study_language:'ru',rating:'good',uid:'private'});
+  await rev.capture('review_rated',{study_language:'ru',rating:'excelente'});
+  await rev.capture('review_completed',{study_language:'ru',blocks:99999});
+  const ev=calls.slice(antes).map(c=>JSON.parse(String(c.init.body)));
+  assert.deepEqual(ev.map(e=>e.event),['review_started','review_rated','review_rated','review_completed']);
+  assert.equal(ev[0].properties.blocks,4);assert.equal(ev[0].properties.study_language,'ru');
+  assert.equal(ev[1].properties.rating,'good');assert.equal(ev[2].properties.rating,undefined,'nota fora da lista não passa');
+  assert.equal(ev[3].properties.blocks,undefined,'contagem absurda não passa');
+  assert.doesNotMatch(JSON.stringify(ev),/secret|private|ru_3_S1_B2|excelente/);
+}
 console.log('ok: opt-in próprio, recusa/revogação, ID rotativo, payload mínimo, sem storage/rede bloqueiam sem quebrar o app');

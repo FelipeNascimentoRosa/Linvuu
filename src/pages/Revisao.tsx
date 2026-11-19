@@ -9,7 +9,9 @@ import type { RegistroBloco } from '../lib/revisao/registroBloco';
 import { armazemRevisao, sincronizarRevisao } from '../lib/revisaoWeb/armazem';
 import { agendaDoCurso, type ItemReforco } from '../lib/revisaoWeb/agenda';
 import { useRevisaoWeb } from '../lib/revisaoWeb/useRevisaoWeb';
-import { quandoRevisao, textosRevisao } from '../lib/revisaoWeb/textos';
+import { codigoRevisao, quandoRevisao, textosRevisao } from '../lib/revisaoWeb/textos';
+import { formatarEspera, mediaEspera, proporcaoAcerto, SEM_ESPERAS, somarEspera, type Esperas } from '../lib/revisaoWeb/resumo';
+import { analytics } from '../lib/analytics';
 import { usePageTitle } from '../lib/usePageTitle';
 import { useAssinatura } from '../lib/acesso';
 import { gratis } from '../config/planos';
@@ -38,6 +40,7 @@ export default function Revisao() {
   const [fila, setFila] = useState<ItemReforco[] | null>(null);
   const [pos, setPos] = useState(0);
   const [stats, setStats] = useState<Estatisticas>(ZERO);
+  const [esperas, setEsperas] = useState<Esperas>(SEM_ESPERAS);
   const [aberto, setAberto] = useState<Aberto>({ estado: 'carregando' });
   const [concluido, setConcluido] = useState(false);
   const [tentativa, setTentativa] = useState(0);
@@ -72,19 +75,25 @@ export default function Revisao() {
     if (!item) return false;
     const atual = achar(cursoId, item);
     if (!atual?.revisao) return false;
-    return !!armazemRevisao.gravar({ ...atual, espacado: registrarAvaliacao(atual.espacado ?? null, atual.revisao.em, nota, agora) });
+    const ok = !!armazemRevisao.gravar({ ...atual, espacado: registrarAvaliacao(atual.espacado ?? null, atual.revisao.em, nota, agora) });
+    if (ok) void analytics.capture('review_rated', { study_language: cursoId, rating: nota });
+    return ok;
   }, [item, cursoId]);
   const aoConcluir = useCallback((nota: Nota | null) => {
     setConcluido(true);
+    // Tempo até o bloco voltar: o vencimento gravado pelo FSRS menos o instante da nota (`em`).
+    const esp = nota && item ? achar(cursoId, item)?.espacado : undefined;
+    if (esp) setEsperas((e) => somarEspera(e, Date.parse(esp.proxima) - Date.parse(esp.em)));
     setStats((s) => ({ ...s, blocos: s.blocos + 1, ...(nota ? { [nota]: s[nota] + 1 } : { correcao: s.correcao + 1 }) }));
     void sincronizarRevisao(cursoId);
-  }, [cursoId]);
+  }, [cursoId, item]);
 
   // Ao concluir o bloco (nota registrada ou erros corrigidos) o foco vai para "Próximo bloco", senão o teclado ficaria perdido.
   useEffect(() => { if (concluido) proximoBtn.current?.focus(); }, [concluido]);
   const seguir = () => { setPos((p) => p + 1); setConcluido(false); };
   const terminou = !!fila && pos >= fila.length;
   useEffect(() => { if (terminou) cabecalho.current?.focus(); }, [terminou]);
+  useEffect(() => { if (terminou && stats.blocos > 0) void analytics.capture('review_completed', { study_language: cursoId, blocks: stats.blocos }); }, [terminou]);
   // Depois de terminar, a "próxima revisão" vem da agenda real (inclui o que acabou de ser reagendado).
   const proxima = useMemo(() => (terminou && valido ? agendaDoCurso(cursoId, armazemRevisao.ler(cursoId)).proxima : null), [terminou, valido, cursoId]);
 
@@ -100,7 +109,7 @@ export default function Revisao() {
             <p className="lead">{R.descricao}</p>
             {agenda.itens.length > 0 && <>
               <p><strong>{R.blocos(agenda.itens.length)}</strong></p>
-              <button type="button" className="btn btn-primary" onClick={() => { setFila(agenda.itens); setPos(0); setStats(ZERO); }}>{R.comecar}</button>
+              <button type="button" className="btn btn-primary" onClick={() => { setFila(agenda.itens); setPos(0); setStats(ZERO); setEsperas(SEM_ESPERAS); void analytics.capture('review_started', { study_language: cursoId, blocks: agenda.itens.length }); }}>{R.comecar}</button>
             </>}
             {agenda.itens.length === 0 && (assinatura.carregando ? <Carregando /> : <p>{agenda.total === 0 ? R.vazio : R.nada}</p>)}
             {agenda.itens.length === 0 && agenda.proxima && <p>{R.proxima(quandoRevisao(agenda.proxima))}</p>}
@@ -131,6 +140,15 @@ export default function Revisao() {
             <dl className="revisao-desempenho">
               {(['correcao', 'again', 'hard', 'good', 'easy'] as const).filter((k) => stats[k] > 0).map((k) => <div key={k}><dt>{R.desempenho[k]}</dt><dd>{stats[k]}</dd></div>)}
             </dl>
+            {(() => {
+              const acerto = proporcaoAcerto(stats), media = mediaEspera(esperas);
+              return (acerto || media !== null) && (
+                <ul className="revisao-numeros">
+                  {acerto && <li>{R.resumoAcerto(acerto.bons, acerto.total, acerto.porcento)}</li>}
+                  {media !== null && <li>{R.resumoIntervalo(formatarEspera(media, codigoRevisao()))}</li>}
+                </ul>
+              );
+            })()}
             <p>{proxima ? R.resumoProxima(quandoRevisao(proxima)) : R.resumoSem}</p>
             <p><Link className="btn btn-primary" to={`/curso/${curso!.id}`}>{R.voltar}</Link></p>
           </section>

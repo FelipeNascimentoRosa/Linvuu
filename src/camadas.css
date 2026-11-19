@@ -195,6 +195,7 @@ main.site-camadas{min-height:100vh}
 .revisao-desempenho div{display:grid;gap:.1rem;padding:.6rem .8rem;border:1px solid var(--linha);border-radius:var(--r-control)}
 .revisao-desempenho dt{color:var(--fg-2)}
 .revisao-desempenho dd{margin:0;font-size:1.4rem;font-variant-numeric:tabular-nums}
+.revisao-numeros{list-style:none;display:grid;gap:.35rem;margin:1rem 0;padding:0;max-width:60ch;color:var(--fg-2)}
 @media (max-width:360px){.revisao-notas-botoes{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
 /* /por-que-linvuu: poucos quadrados e as três cores da paleta (ocre, verde-noite, vermelho); texto curto. Só tokens. */
