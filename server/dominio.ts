@@ -33,12 +33,14 @@ export function redirecionamentoDeDominio(host: string, caminho: string, consult
   if (h === HOST_BR && /^\/portugues\/?$/.test(caminho)) return `${SITE_GLOBAL_URL}/curso/br${q}`;
   if (h === HOST_BR && /^\/gramatica\/br(\/|$)/.test(caminho)) return `${SITE_GLOBAL_URL}${caminho}${q}`;
   // .com: o inglês é a raiz; /en/... era o endereço antigo (e o de quem digita por hábito); /es/... também.
-  // .com: a coleção de livros de gramática só existe em português, e o .com é o site em inglês. O endereço define o
-  // idioma da interface (docs/DECISAO-SITE-INTERNACIONAL.md), então /livros vai para o domínio onde o conteúdo mora em
-  // vez de devolver uma página em português com <html lang="en"> dentro do .com. É 301 porque o endereço não volta.
-  if (h === HOST_GLOBAL && /^\/livros(\/|$)/.test(caminho)) return `${SITE_URL}${caminho}${q}`;
-  // .com: os materiais gratuitos (alfabeto russo) são escritos em português, para quem fala português: moram no .com.br.
-  if (h === HOST_GLOBAL && /^\/materiais-gratuitos(\/|$)/.test(caminho)) return `${SITE_URL}${caminho}${q}`;
+  // Desde 19/11/2026 (Felipe: o .com espelha o .com.br) o .com tem a própria coleção /livros, em inglês, com o único livro
+  // escrito em inglês: o de português para quem fala inglês (/livros/br). Os livros em português continuam no .com.br.
+  if (h === HOST_GLOBAL && /^\/livros\/(?!br(\/|$))[^/]+/.test(caminho)) return `${SITE_URL}${caminho}${q}`;
+  // .com.br: o livro de português para estrangeiros é escrito em inglês, então mora no .com (como /curso/br).
+  if (h === HOST_BR && /^\/livros\/br(\/|$)/.test(caminho)) return `${SITE_GLOBAL_URL}${caminho}${q}`;
+  // .com: o hub /materiais-gratuitos existe em inglês desde 19/11/2026; os guias de alfabeto (explicados em português)
+  // continuam só no .com.br.
+  if (h === HOST_GLOBAL && /^\/materiais-gratuitos\/.+/.test(caminho)) return `${SITE_URL}${caminho}${q}`;
   // .com: a página para ex-alunos da Udemy existe só em português (o curso da Udemy é para brasileiros): mora no .com.br.
   if (h === HOST_GLOBAL && /^\/ex-alunos-udemy(\/|$)/.test(caminho)) return `${SITE_URL}${caminho}${q}`;
   // .com: o livro de gramática russa só existe em português (antes respondia 200 com título em PT no site em inglês).

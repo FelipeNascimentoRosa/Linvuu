@@ -70,7 +70,10 @@ Fonte da verdade: a tabela de cobertura abaixo (contagem de arquivos em `content
 | `/gramatica/fr` | sim | sim | en ↔ pt-BR |
 | `/gramatica/it` | sim | — | — |
 | `/gramatica/ru` | sim | sim | en ↔ pt-BR |
-| `/livros` | sim | — | — |
+| `/livros` | sim | sim | en ↔ pt-BR |
+| `/livros/br` | — | sim | — |
+| `/livros/br/capitulo/1` | — | sim | — |
+| `/livros/br/capitulo/2` | — | sim | — |
 | `/livros/de` | sim | — | — |
 | `/livros/de/capitulo/1` | sim | — | — |
 | `/livros/de/capitulo/2` | sim | — | — |
@@ -89,7 +92,7 @@ Fonte da verdade: a tabela de cobertura abaixo (contagem de arquivos em `content
 | `/livros/ru` | sim | — | — |
 | `/livros/ru/capitulo/1` | sim | — | — |
 | `/livros/ru/capitulo/2` | sim | — | — |
-| `/materiais-gratuitos` | sim | — | — |
+| `/materiais-gratuitos` | sim | sim | en ↔ pt-BR |
 | `/materiais-gratuitos/alfabeto-alemao` | sim | — | — |
 | `/materiais-gratuitos/alfabeto-espanhol` | sim | — | — |
 | `/materiais-gratuitos/alfabeto-frances` | sim | — | — |

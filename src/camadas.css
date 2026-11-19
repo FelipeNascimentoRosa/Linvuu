@@ -169,6 +169,7 @@ main.site-camadas{min-height:100vh}
 .site-camadas .site-catalogo .catalogo-idioma:has(.catalogo-rabisco-fr){--catalogo-arte:url('/assets/catalogo/fr.webp')}
 .site-camadas .site-catalogo .catalogo-idioma:has(.catalogo-rabisco-it){--catalogo-arte:url('/assets/catalogo/it.webp')}
 .site-camadas .site-catalogo .catalogo-idioma:has(.catalogo-rabisco-ru){--catalogo-arte:url('/assets/catalogo/ru.webp')}
+.site-camadas .site-catalogo .catalogo-idioma:has(.catalogo-rabisco-br){--catalogo-arte:url('/assets/catalogo/br.webp')} /* Cristo Redentor, da capa do livro «Olá Portuguese» (19/11/2026) */
 .site-camadas .site-catalogo .catalogo-idioma:has(.catalogo-rabisco):hover{box-shadow:0 4px 14px rgba(29,31,28,.10)}
 .site-camadas .site-catalogo .catalogo-rabisco{display:none}
 .site-camadas .site-catalogo .lv-saud{position:relative;min-height:0;margin-bottom:18px;padding-right:0;max-width:none;font-size:clamp(28px,2.4vw,36px);white-space:nowrap;overflow-wrap:normal}

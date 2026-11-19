@@ -1,18 +1,18 @@
 # Mapa do site
 
-Gerado por `scripts/mapa-site.ts` em 2026-11-11. **Não editar à mão**: rode `npm run mapa:site` de novo.
+Gerado por `scripts/mapa-site.ts` em 2026-11-19. **Não editar à mão**: rode `npm run mapa:site` de novo.
 
 Responde, sem abrir navegador, três perguntas: o que existe, de onde vem e como se prova que está certo. Pedagogia e texto final são revisão humana do Felipe; este mapa não opina sobre conteúdo.
 
 ## Resumo
 
-- Rotas declaradas em `src/App.tsx`: **25**
-- Páginas concretas no .com.br (pt-BR): **37** — 32 indexáveis
+- Rotas declaradas em `src/App.tsx`: **28**
+- Páginas concretas no .com.br (pt-BR): **41** — 31 indexáveis
 - Sessões de aula (`/curso/:id/dia/:n`, fora do índice): **1840** em 7 cursos
-- Capítulos de livro: **12** em 6 livros
-- Folhas de CSS: **20** (2044 linhas)
-- Comandos de verificação no `package.json`: **20**
-- Arquivos JSON de conteúdo: **3929**
+- Capítulos de livro: **14** em 7 livros
+- Folhas de CSS: **20** (2380 linhas)
+- Comandos de verificação no `package.json`: **22**
+- Arquivos JSON de conteúdo: **4454**
 
 ## 0. Checagens objetivas
 
@@ -20,58 +20,54 @@ Mesma régua de `scripts/testar-titulos.ts` (título até 60 caracteres, descri�
 
 | Domínio | Indexáveis | Fora da faixa | Indexável sem descrição |
 |---|---|---|---|
-| .com.br | 32 | 3 | 1 |
-| .com | 19 | 2 | 1 |
-
-Páginas indexáveis do .com.br fora da régua — nenhuma é defeito provado, mas cada uma é ponto de ataque:
-
-| Caminho | Título (chars) | Descrição (chars) | O que olhar |
-|---|---|---|---|
-| `/portugues` | 50 | 102 | descrição fora de 120–160 |
-| `/gramatica` | 9 | 0 | sem descrição de busca |
-| `/excluir-conta` | 31 | 110 | descrição fora de 120–160 |
+| .com.br | 31 | 0 | 0 |
+| .com | 23 | 0 | 0 |
 
 ## 1. Rotas do .com.br (avaliadas pelo mesmo `metaRota` que o servidor usa)
 
 | Caminho | Componente | HTTP | No índice | Título (chars) | Descrição (chars) | Idiomas |
 |---|---|---|---|---|---|---|
-| `/` | Home | 200 | sim | 47 | 149 | 1 |
+| `/` | Home | 200 | sim | 37 | 149 | 1 |
 | `/cursos` | Cursos | 200 | sim | 48 | 143 | 1 |
-| `/portugues` | Portugues | 200 | sim | 50 | 102 | 1 |
+| `/portugues` | — | 404 | não | 21 | 0 | 1 |
 | `/curso/en` | Curso | 200 | sim | 46 | 147 | 1 |
-| `/curso/es` | Curso | 200 | sim | 48 | 158 | 1 |
+| `/curso/es` | Curso | 200 | sim | 48 | 158 | 2 |
 | `/curso/ru` | Curso | 200 | sim | 45 | 153 | 2 |
-| `/curso/de` | Curso | 200 | sim | 46 | 159 | 1 |
+| `/curso/de` | Curso | 200 | sim | 46 | 159 | 2 |
 | `/curso/fr` | Curso | 200 | sim | 47 | 157 | 2 |
 | `/curso/it` | Curso | 200 | sim | 48 | 153 | 1 |
 | `/curso/br` | Curso | 200 | não | 49 | 111 | 1 |
+| `/curso/:id/revisao` | Revisao | 404 | não | 21 | 0 | 1 |
 | `/entrar` | Conta | 200 | não | 6 | 0 | 1 |
 | `/cadastro` | Conta | 200 | não | 11 | 0 | 1 |
-| `/gramatica` | Gramatica | 200 | sim | 9 | 0 | 1 |
+| `/gramatica` | Gramatica | 200 | sim | 43 | 156 | 1 |
 | `/gramatica/en` | Gramatica | 200 | sim | 42 | 145 | 1 |
 | `/gramatica/es` | Gramatica | 200 | sim | 44 | 147 | 2 |
 | `/gramatica/ru` | Gramatica | 200 | sim | 41 | 144 | 2 |
-| `/gramatica/de` | Gramatica | 200 | sim | 42 | 145 | 1 |
+| `/gramatica/de` | Gramatica | 200 | sim | 42 | 145 | 2 |
 | `/gramatica/fr` | Gramatica | 200 | sim | 43 | 146 | 2 |
 | `/gramatica/it` | Gramatica | 200 | sim | 44 | 147 | 1 |
 | `/gramatica/br` | Gramatica | 200 | não | 63 | 163 | 1 |
 | `/livro/gramatica-ru` | LivroGramatica | 200 | não | 21 | 0 | 1 |
-| `/livros` | LivrosIndice | 200 | sim | 35 | 150 | 1 |
+| `/livros` | LivrosIndice | 200 | sim | 35 | 150 | 2 |
 | `/livros/en` | LivroPagina | 200 | sim | 40 | 159 | 1 |
 | `/livros/es` | LivroPagina | 200 | sim | 42 | 155 | 1 |
 | `/livros/de` | LivroPagina | 200 | sim | 40 | 137 | 1 |
 | `/livros/fr` | LivroPagina | 200 | sim | 41 | 141 | 1 |
 | `/livros/ru` | LivroPagina | 200 | sim | 39 | 156 | 1 |
 | `/livros/it` | LivroPagina | 200 | sim | 42 | 144 | 1 |
+| `/livros/br` | LivroPagina | 404 | não | 21 | 0 | 1 |
+| `/materiais-gratuitos` | MateriaisIndice | 200 | sim | 41 | 146 | 2 |
+| `/materiais-gratuitos/:slug` | AlfabetoPagina | 404 | não | 21 | 0 | 1 |
 | `/russo-online` | AulasRusso | 200 | sim | 44 | 153 | 2 |
 | `/sobre` | Sobre | 200 | sim | 21 | 158 | 2 |
-| `/por-que-linvuu` | PorQue | 200 | sim | 29 | 160 | 2 |
+| `/por-que-linvuu` | PorQue | 200 | sim | 47 | 160 | 2 |
 | `/contato` | Contato | 200 | sim | 26 | 125 | 2 |
 | `/ex-alunos-udemy` | ExAlunosUdemy | 200 | sim | 46 | 147 | 1 |
-| `/assinatura` | Assinatura | 200 | sim | 47 | 143 | 1 |
+| `/assinatura` | Assinatura | 200 | sim | 43 | 143 | 1 |
 | `/privacidade` | Legal | 200 | sim | 46 | 141 | 1 |
 | `/termos` | Legal | 200 | sim | 34 | 155 | 1 |
-| `/excluir-conta` | ExcluirConta | 200 | sim | 31 | 110 | 1 |
+| `/excluir-conta` | ExcluirConta | 200 | não | 31 | 157 | 1 |
 
 Todas as rotas, com o tipo de cada uma:
 
@@ -79,10 +75,11 @@ Todas as rotas, com o tipo de cada uma:
 |---|---|---|---|
 | `/` | página | Home |  |
 | `/cursos` | página | Cursos |  |
-| `/portugues` | só no site (no APK, /conta) | Portugues |  |
-| `/brazilian-portuguese` | redireciona | — | → /portugues |
+| `/portugues` | só no site (no APK, /conta) | — |  |
+| `/brazilian-portuguese` | redireciona | — | → /curso/br |
 | `/curso/:id` | página | Curso |  |
 | `/curso/:id/dia/:n` | página | Dia |  |
+| `/curso/:id/revisao` | só no site (no APK, /conta) | Revisao |  |
 | `/entrar` | página | Conta |  |
 | `/cadastro` | página | Conta |  |
 | `/gramatica` | página | Gramatica |  |
@@ -91,6 +88,8 @@ Todas as rotas, com o tipo de cada uma:
 | `/livros` | página | LivrosIndice |  |
 | `/livros/:id` | página | LivroPagina |  |
 | `/livros/:id/capitulo/:n` | página | LivroCapitulo |  |
+| `/materiais-gratuitos` | só no site (no APK, /conta) | MateriaisIndice |  |
+| `/materiais-gratuitos/:slug` | só no site (no APK, /conta) | AlfabetoPagina |  |
 | `/russo-online` | só no site (no APK, /conta) | AulasRusso |  |
 | `/sobre` | só no site (no APK, /conta) | Sobre |  |
 | `/por-que-linvuu` | só no site (no APK, /conta) | PorQue |  |
@@ -103,7 +102,7 @@ Todas as rotas, com o tipo de cada uma:
 | `/excluir-conta` | só no site (no APK, /conta) | ExcluirConta |  |
 | `*` | não encontrada (404) | NaoEncontrada |  |
 
-No .com (inglês): 37 páginas concretas, 19 indexáveis. A mesma rota pode ter status diferente em cada domínio — o mapa avalia cada perfil separadamente, como o servidor.
+No .com (inglês): 41 páginas concretas, 23 indexáveis. A mesma rota pode ter status diferente em cada domínio — o mapa avalia cada perfil separadamente, como o servidor.
 
 ## 2. Folhas de estilo e quem veste cada uma
 
@@ -111,35 +110,35 @@ A coluna "veste" sai da importação real no código. Folha global (`styles.css`
 
 | Folha | Linhas | Importada por |
 |---|---|---|
-| `styles.css` | 434 | `main.tsx` |
-| `redesign.css` | 425 | `main.tsx` |
-| `tokens.css` | 197 | `main.tsx` |
-| `pages/home-brasileiros.css` | 190 | `pages/HomeBrasileiros.tsx` |
+| `styles.css` | 465 | `main.tsx` |
+| `redesign.css` | 449 | `main.tsx` |
+| `pages/home-brasileiros.css` | 236 | `pages/HomeBrasileiros.tsx` |
+| `camadas.css` | 230 | `main.tsx` |
+| `tokens.css` | 209 | `main.tsx` |
 | `plataforma/apk/app.css` | 176 | `plataforma/apk/Header.tsx` |
-| `camadas.css` | 160 | `main.tsx` |
+| `materiais.css` | 117 | `pages/MateriaisGratuitos.tsx` |
 | `livros.css` | 116 | `pages/AulasRusso.tsx`, `pages/Contato.tsx`, `pages/ExAlunosUdemy.tsx`, `pages/Livros.tsx`, `pages/PorQue.tsx`, `pages/Sobre.tsx` |
-| `plataforma/apk/rodada4.css` | 53 | `plataforma/apk/BarraInferior.tsx` |
+| `plataforma/apk/rodada4.css` | 63 | `plataforma/apk/BarraInferior.tsx` |
+| `components/analytics-consent.css` | 50 | `components/AnalyticsConsent.tsx` |
 | `plataforma/apk/home-lote2.css` | 41 | `plataforma/apk/Home.tsx` |
 | `plataforma/apk/primeira-abertura.css` | 41 | `plataforma/apk/PrimeiraAbertura.tsx` |
 | `components/Button.module.css` | 35 | `components/Button.tsx` |
-| `components/avaliacoes.css` | 33 | `components/Avaliacoes.tsx` |
-| `site-publico.css` | 30 | `components/Header.tsx`, `main.tsx`, `pages/Assinatura.tsx`, `pages/Curso.tsx`, `pages/Cursos.tsx` |
-| `components/carregando.css` | 29 | `components/Carregando.tsx` |
-| `components/analytics-consent.css` | 22 | `components/AnalyticsConsent.tsx` |
+| `components/avaliacoes.css` | 34 | `components/Avaliacoes.tsx` |
+| `site-publico.css` | 33 | `components/Header.tsx`, `main.tsx`, `pages/Assinatura.tsx`, `pages/Curso.tsx`, `pages/Cursos.tsx` |
 | `plataforma/apk/conclusao.css` | 22 | `plataforma/apk/ConclusaoSessao.tsx` |
 | `plataforma/apk/revisao.css` | 22 | `plataforma/apk/RevisaoErros.tsx` |
-| `components/sugestao-idioma.css` | 7 | `components/SugestaoIdioma.tsx` |
+| `components/carregando.css` | 19 | `components/Carregando.tsx` |
+| `components/sugestao-idioma.css` | 15 | `components/SugestaoIdioma.tsx` |
 | `pages/excluir-conta.css` | 7 | `pages/ExcluirConta.tsx` |
-| `components/vuu.css` | 4 | `components/Vuu.tsx` |
 
 ## 3. Verificações disponíveis
 
 | Comando | O que executa |
 |---|---|
-| `npm run build` | `node scripts/audio-privado.mjs && node scripts/conteudo.mjs --check && node scripts/seo.mjs && vite build && node scripts/comprimir.mjs` |
+| `npm run build` | `node scripts/audio-privado.mjs && node scripts/conteudo.mjs --check && node scripts/travas-en.mjs && node scripts/seo.mjs && vite build && (npx playwright install chromium \|\| true) && node scripts/prerender.mjs && node scripts/validar-prerender.mjs && node scripts/comprimir.mjs` |
 | `npm run lint` | `tsc --noEmit` |
 | `npm run content` | `node scripts/conteudo.mjs` |
-| `npm run content:check` | `node scripts/conteudo.mjs --check` |
+| `npm run content:check` | `node scripts/conteudo.mjs --check && node scripts/travas-en.mjs` |
 | `npm run testar:medicao` | `node --import tsx scripts/testar-medicao.ts` |
 | `npm run testar:seguranca` | `node scripts/testar-seguranca.mjs && node --import tsx scripts/testar-ip.ts` |
 | `npm run validar:design` | `node scripts/validar-design.mjs` |
@@ -155,20 +154,21 @@ A coluna "veste" sai da importação real no código. Folha global (`styles.css`
 | `npm run testar:regras` | `npm --prefix scripts/regras ci && npx --yes firebase-tools@15.34.1 emulators:exec --only firestore --project demo-linvuu-regras "node scripts/regras/testar-regras.mjs"` |
 | `npm run testar:exclusao` | `node --import tsx scripts/testar-exclusao.ts` |
 | `npm run testar:newsletter` | `node --import tsx scripts/testar-newsletter.ts` |
+| `npm run testar:revisao` | `node --import tsx scripts/testar-fsrs-dominio.ts && node --import tsx scripts/testar-registro-bloco.ts && node --import tsx scripts/testar-revisao-web.ts && node scripts/testar-isolamento-revisao.mjs` |
+| `npm run testar:revisao:rota` | `npx --yes firebase-tools@15.34.1 emulators:exec --only firestore,auth --project demo-linvuu-revisao "node --import tsx scripts/testar-revisao-rota.ts"` |
 | `npm run testar:newsletter:rota` | `npx --yes firebase-tools@15.34.1 emulators:exec --only firestore --project demo-linvuu-newsletter "node --import tsx scripts/testar-newsletter-rota.ts"` |
 
-Scripts em `scripts/`: 75 (69 testes, 3 validadores, 2 medições).
+Scripts em `scripts/`: 80 (73 testes, 4 validadores, 2 medições).
 
 ## 4. Conteúdo
 
 | Pasta | Arquivos JSON |
 |---|---|
-| `content/*.json` (raiz) | 6 |
-| `content/idiomas/` | 3812 |
+| `content/*.json` (raiz) | 7 |
+| `content/idiomas/` | 4337 |
 | `content/livros-privado/` | 77 |
-| `content/livros/` | 18 |
-| `content/gramatica/` | 10 |
-| `content/legado/` | 6 |
+| `content/livros/` | 21 |
+| `content/gramatica/` | 12 |
 | `content/audio/` | 0 |
 
 ## 5. Painel de ataque

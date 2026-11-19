@@ -20,11 +20,11 @@ import { SOBRE } from './sobre.ts';
 import { POR_QUE } from './porQue.ts';
 import { EXCLUSAO } from './exclusaoConta.ts';
 import { contatos } from '../config/contato.ts';
-import { AUTORES, CAPITULOS_GRATIS, LIVROS_DESCRICAO, LIVROS_EM_PRODUCAO, LIVROS_META, capituloParaHtml, livroMeta, minutosDeLeitura, tituloLivro, type CapituloLivro, type ItemSumario, type MetaLivro } from './livros.ts';
+import { AUTORES, CAPITULOS_GRATIS, LIVROS_DESCRICAO, LIVROS_EM_PRODUCAO, LIVROS_META, LIVROS_META_EN, capituloParaHtml, livroDoSite, livrosDoSite, minutosDeLeitura, tituloLivro, type CapituloLivro, type ItemSumario, type MetaLivro } from './livros.ts';
 import { APRESENTACOES_CURSO, APRESENTACOES_LIVRO } from './apresentacoes.ts';
 import { AULAS_RUSSO } from '../config/aulas-russo';
 import { DESC_SEO_CURSO } from '../config/seoCurso.ts';
-import { ALFABETOS, CAMINHO_HUB as CAMINHO_MATERIAIS, DESCRICAO_HUB as DESCRICAO_MATERIAIS, TITULO_HUB as TITULO_MATERIAIS, alfabetoPorSlug, alfabetoParaHtml, caminhoAlfabeto } from './materiais.ts';
+import { ALFABETOS, CAMINHO_HUB as CAMINHO_MATERIAIS, DESCRICAO_HUB as DESCRICAO_MATERIAIS, TITULO_HUB as TITULO_MATERIAIS, alfabetoPorSlug, alfabetoParaHtml, caminhoAlfabeto, caminhoAulaGratis, HUB_EN } from './materiais.ts';
 // Data da última mudança do conteúdo (a mesma do <lastmod> do sitemap, gerada por scripts/gerar-lastmod.mjs).
 // Vai como dateModified nos capítulos e gramáticas: os auditores claude-seo/GEO pediram data de atualização (13/11/2026).
 let LASTMOD: Record<string, string> | null = null;
@@ -85,7 +85,7 @@ export function carregarDadosMeta(raiz: string): DadosMeta | null {
 /** Sumário e capítulos de amostra de cada livro (content/livros/<idioma>/). */
 function carregarLivros(raiz: string): DadosMeta['livros'] {
   const out: DadosMeta['livros'] = {};
-  for (const m of LIVROS_META) {
+  for (const m of [...LIVROS_META, ...LIVROS_META_EN]) {
     const dir = path.join(raiz, 'content', 'livros', m.id);
     if (!fs.existsSync(dir)) continue;
     const caps: Record<number, CapituloLivro> = {};
@@ -216,10 +216,18 @@ const FECHOS_CAPITULO = [
   '. Leitura grátis, com áudio e tabelas.',
   '. Leitura grátis, com áudio, tabelas e exemplos.',
 ];
-function descricaoCapitulo(l: MetaLivro, c: CapituloLivro): string {
-  const abre = `${l.nome}, capítulo ${c.n} do livro de gramática prática da Coleção Linvuu: ${c.titulo}`;
-  return abre + (FECHOS_CAPITULO.find((f) => abre.length + f.length >= 120) ?? FECHOS_CAPITULO[FECHOS_CAPITULO.length - 1]);
+const FECHOS_CAPITULO_EN = ['. Free to read, with audio.', '. Free to read, with audio and tables.', '. Free to read, with audio, tables and examples.'];
+function descricaoCapitulo(l: MetaLivro, c: CapituloLivro, en = false): string {
+  const abre = en ? `${l.nome}, chapter ${c.n} of the Linvuu practical grammar: ${c.titulo}` : `${l.nome}, capítulo ${c.n} do livro de gramática prática da Coleção Linvuu: ${c.titulo}`;
+  const fechos = en ? FECHOS_CAPITULO_EN : FECHOS_CAPITULO;
+  const d = abre + (fechos.find((f) => abre.length + f.length >= 120) ?? fechos[fechos.length - 1]);
+  return d.length > 160 ? `${abre.slice(0, 160 - fechos[0].length).replace(/[\s,:;]+\S*$/, '')}${fechos[0]}` : d;
 }
+/** Textos de SEO dos livros por domínio: .com.br em português (coleção inteira), .com em inglês (só o livro de português). */
+const LIVROS_SEO = {
+  'pt-BR': { indiceT: 'Coleção Linvuu: livros de gramática', indiceD: LIVROS_DESCRICAO, colecao: 'Coleção Linvuu', livros: 'Livros', cap: 'Capítulo', capAbrev: 'cap.', por: 'Por', e: ' e ', sumario: 'Sumário', voltar: 'Voltar ao livro' },
+  en: { indiceT: 'Linvuu Collection: practical grammar books', indiceD: 'Practical Brazilian Portuguese grammar for English speakers, from zero to A2. Read the first two chapters free, with audio.', colecao: 'Linvuu Collection', livros: 'Books', cap: 'Chapter', capAbrev: 'ch.', por: 'By', e: ' and ', sumario: 'Contents', voltar: 'Back to the book' },
+} as const;
 
 export function metaDaRota(pathname: string, d: DadosMeta | null): MetaRota {
   const loc = localeDoCaminho(pathname);
@@ -244,9 +252,16 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
   // Era a última página de confiança em português no domínio inglês (F1 do EN_AUDIT.md).
   if (p === '/contato') { const c = CONTATO[loc.codigo]; return { status: 200, caminho: p, titulo: c.seoTitulo, descricao: c.seoDescricao, em: ['pt-BR', 'en'], jsonld: [{ '@context': 'https://schema.org', '@type': 'ContactPage', name: c.titulo, url: `${SITE}/contato`, inLanguage: loc.codigo, about: { '@id': ORG_ID } }, organizacao(SITE)] }; }
   if (p === '/ex-alunos-udemy') return { status: 200, caminho: p, titulo: EX_ALUNOS.titulo, descricao: EX_ALUNOS.descricao, ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'WebPage', name: EX_ALUNOS.titulo, url: `${SITE}/ex-alunos-udemy`, inLanguage: 'pt-BR', about: { '@id': ORG_ID } }, organizacao(SITE)] };
-  if (p === '/livros') return { status: 200, caminho: p, titulo: 'Coleção Linvuu: livros de gramática', descricao: LIVROS_DESCRICAO, ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'ItemList', name: 'Coleção Linvuu', itemListElement: LIVROS_META.map((l, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE}/livros/${l.id}`, name: tituloLivro(l) })) }] };
+  // Livros: cada domínio tem a sua coleção (.com.br em português; .com em inglês, hoje só o livro de português).
+  const ls = LIVROS_SEO[loc.codigo];
+  const livroDominio = { em: [loc.codigo] as Locale['codigo'][] };
+  if (p === '/livros') return { status: 200, caminho: p, titulo: ls.indiceT, descricao: ls.indiceD, em: ['pt-BR', 'en'], jsonld: [{ '@context': 'https://schema.org', '@type': 'ItemList', name: ls.colecao, itemListElement: livrosDoSite(loc.codigo).map((l, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE}/livros/${l.id}`, name: tituloLivro(l) })) }] };
   // Materiais gratuitos: guias de alfabeto e pronúncia (russo, alemão, francês, italiano, espanhol), em português. Só no .com.br, como os livros.
-  if (p === CAMINHO_MATERIAIS) return { status: 200, caminho: p, titulo: TITULO_MATERIAIS, descricao: DESCRICAO_MATERIAIS, ...livroBase, jsonld: [
+  // .com (desde 19/11/2026): o hub existe em inglês, com os cartões levando à primeira aula grátis de cada curso.
+  if (p === CAMINHO_MATERIAIS && loc.codigo === 'en') return { status: 200, caminho: p, titulo: HUB_EN.titulo, descricao: HUB_EN.descricao, em: ['pt-BR', 'en'], jsonld: [
+    { '@context': 'https://schema.org', '@type': 'CollectionPage', name: HUB_EN.titulo, url: `${SITE}${p}`, inLanguage: 'en', isPartOf: { '@id': ORG_ID }, mainEntity: { '@type': 'ItemList', itemListElement: ALFABETOS.map((a, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE}${caminhoAulaGratis(a.id)}`, name: `${HUB_EN.idioma[a.id]} alphabet` })) } },
+  ] };
+  if (p === CAMINHO_MATERIAIS) return { status: 200, caminho: p, titulo: TITULO_MATERIAIS, descricao: DESCRICAO_MATERIAIS, em: ['pt-BR', 'en'], jsonld: [
     { '@context': 'https://schema.org', '@type': 'CollectionPage', name: TITULO_MATERIAIS, url: `${SITE}${p}`, inLanguage: 'pt-BR', isPartOf: { '@id': ORG_ID }, mainEntity: { '@type': 'ItemList', itemListElement: ALFABETOS.map((a, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE}${caminhoAlfabeto(a.slug)}`, name: a.titulo })) } },
   ] };
   const am = p.match(/^\/materiais-gratuitos\/([a-z-]+)$/);
@@ -261,26 +276,26 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
   }
   let lm = p.match(/^\/livros\/([^/]+)$/);
   if (lm) {
-    const l = livroMeta(lm[1]);
+    const l = livroDoSite(lm[1], loc.codigo);
     if (!l) return naoEncontrada(p, loc);
     const url = `${SITE}/livros/${l.id}`;
     const caps = Object.values(d?.livros[l.id]?.caps ?? {}).sort((a, b) => a.n - b.n);
-    return { status: 200, caminho: p, titulo: tituloLivro(l), descricao: l.descricao, ...livroBase, jsonld: [
-      { '@context': 'https://schema.org', '@type': 'Book', '@id': `${url}#livro`, name: tituloLivro(l), url, inLanguage: 'pt-BR', about: l.nome, image: `${SITE}/livros/${l.id}-a1-a2-v1-900.webp`, educationalLevel: 'A1–A2 (CEFR)', author: AUTORES.map((a) => ({ '@type': 'Person', '@id': a.id === 'felipe' ? AUTHOR_ID : `${SITE}/sobre#${a.id}`, name: a.nome, url: `${SITE}/sobre#${a.id}` })), publisher: { '@id': ORG_ID }, description: l.descricao, hasPart: caps.map((c) => ({ '@type': 'Chapter', name: `Capítulo ${c.n}: ${c.titulo}`, position: c.n, url: `${url}/capitulo/${c.n}`, isAccessibleForFree: true })) },
-      { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Livros', item: `${SITE}/livros` }, { '@type': 'ListItem', position: 2, name: l.nome, item: url }] },
+    return { status: 200, caminho: p, titulo: tituloLivro(l), descricao: l.descricao, ...livroDominio, jsonld: [
+      { '@context': 'https://schema.org', '@type': 'Book', '@id': `${url}#livro`, name: tituloLivro(l), url, inLanguage: loc.codigo, about: l.nome, image: `${SITE}/livros/${l.id}-a1-a2-v1-900.webp`, educationalLevel: 'A1–A2 (CEFR)', author: AUTORES.map((a) => ({ '@type': 'Person', '@id': a.id === 'felipe' ? AUTHOR_ID : `${SITE}/sobre#${a.id}`, name: a.nome, url: `${SITE}/sobre#${a.id}` })), publisher: { '@id': ORG_ID }, description: l.descricao, hasPart: caps.map((c) => ({ '@type': 'Chapter', name: `${ls.cap} ${c.n}: ${c.titulo}`, position: c.n, url: `${url}/capitulo/${c.n}`, isAccessibleForFree: true })) },
+      { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: ls.livros, item: `${SITE}/livros` }, { '@type': 'ListItem', position: 2, name: l.nome, item: url }] },
     ] };
   }
   lm = p.match(/^\/livros\/([^/]+)\/capitulo\/(\d+)$/);
   if (lm) {
-    const l = livroMeta(lm[1]); const c = d?.livros[lm[1]]?.caps[Number(lm[2])];
+    const l = livroDoSite(lm[1], loc.codigo); const c = d?.livros[lm[1]]?.caps[Number(lm[2])];
     if (!l || !c) return naoEncontrada(p, loc);
     const url = `${SITE}/livros/${l.id}/capitulo/${c.n}`;
     // Título e descrição nas faixas que o Google exibe (30–60 e 120–160). Medição de 11/11/2026:
     // `/livros/de/capitulo/1` saía com 29 caracteres e sete das doze descrições com 109 a 119
     // (AUDITORIA-SITE-2026-11-11 §5). O nível CEFR do capítulo entra no título: é o que a pessoa procura.
-    return { status: 200, caminho: p, titulo: `${l.nome}, cap. ${c.n}: ${c.titulo.split(':')[0]}${c.nivel ? ` (${c.nivel.toUpperCase()})` : ''}`, semMarca: true, descricao: descricaoCapitulo(l, c), ...livroBase, jsonld: [
-      { '@context': 'https://schema.org', '@type': 'Chapter', name: `Capítulo ${c.n}: ${c.titulo}`, position: c.n, url, inLanguage: 'pt-BR', isAccessibleForFree: true, educationalLevel: c.nivel || undefined, timeRequired: `PT${minutosDeLeitura(c)}M`, dateModified: dataDe(`/livros/${l.id}/capitulo/${c.n}`), isPartOf: { '@type': 'Book', name: tituloLivro(l), url: `${SITE}/livros/${l.id}` }, author: AUTORES.map((a) => ({ '@type': 'Person', '@id': a.id === 'felipe' ? AUTHOR_ID : `${SITE}/sobre#${a.id}`, name: a.nome, url: `${SITE}/sobre#${a.id}` })), publisher: { '@id': ORG_ID } },
-      { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Livros', item: `${SITE}/livros` }, { '@type': 'ListItem', position: 2, name: l.nome, item: `${SITE}/livros/${l.id}` }, { '@type': 'ListItem', position: 3, name: `Capítulo ${c.n}`, item: url }] },
+    return { status: 200, caminho: p, titulo: `${l.curto ?? l.nome}, ${ls.capAbrev} ${c.n}: ${c.titulo.split(':')[0]}${c.nivel ? ` (${c.nivel.toUpperCase()})` : ''}`, semMarca: true, descricao: descricaoCapitulo(l, c, loc.codigo === 'en'), ...livroDominio, jsonld: [
+      { '@context': 'https://schema.org', '@type': 'Chapter', name: `${ls.cap} ${c.n}: ${c.titulo}`, position: c.n, url, inLanguage: loc.codigo, isAccessibleForFree: true, educationalLevel: c.nivel || undefined, timeRequired: `PT${minutosDeLeitura(c)}M`, dateModified: dataDe(`/livros/${l.id}/capitulo/${c.n}`), isPartOf: { '@type': 'Book', name: tituloLivro(l), url: `${SITE}/livros/${l.id}` }, author: AUTORES.map((a) => ({ '@type': 'Person', '@id': a.id === 'felipe' ? AUTHOR_ID : `${SITE}/sobre#${a.id}`, name: a.nome, url: `${SITE}/sobre#${a.id}` })), publisher: { '@id': ORG_ID } },
+      { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: ls.livros, item: `${SITE}/livros` }, { '@type': 'ListItem', position: 2, name: l.nome, item: `${SITE}/livros/${l.id}` }, { '@type': 'ListItem', position: 3, name: `${ls.cap} ${c.n}`, item: url }] },
     ] };
   }
   const fixas: Record<string, { titulo: string; h1?: string; descricao?: string; semIndice?: boolean; semSeguimento?: boolean; em?: Locale['codigo'][] }> = {
@@ -479,21 +494,23 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
     const home = HOME[loc.codigo];
     corpo = cabeca(base === '/' && loc.codigo === 'pt-BR' ? HOME_BR.titulo : (base === '/cursos' ? tx.cursos : home.titulo) ?? 'Linvuu · Idiomas para quem fala português', m.descricao ?? home.descricao ?? 'Cursos de inglês, espanhol, alemão, francês, italiano e russo para quem fala português.') + `<h2>${esc(tx.cursos)}</h2>` + li(vitrine.map((c) => `${a(`/curso/${c.id}`, c.nome)}: ${esc(c.descricao)} · ${a(`/gramatica/${c.id}`, tx.gramC(c.nome))}`))
     if (base === '/' && loc.codigo === 'pt-BR') { corpo += `<p>${a('/curso/de', 'Conhecer o curso de alemão')} · ${a('/curso/ru', 'Conhecer o curso de russo')} · ${a('/livros/de', 'Livro de alemão')} · ${a('/livros/es', 'Livro de espanhol')}</p><p>${esc(LIVROS_EM_PRODUCAO)}</p><h2>Ouça, entenda e pratique</h2><p>Explicações em português, áudio e exercícios. Experimente as duas primeiras aulas de cada curso sem cartão.</p><h2 id="planos">A oferta de hoje</h2><p>Acesso aos cursos de idiomas, com explicações em português.</p><ul><li>Mensal: ${esc(PRECO_MENSAL)}, com renovação automática.</li><li>Três meses no Pix: ${esc(PRECO_TRIMESTRAL_PIX)}, pagamento único e 30% de desconto.</li><li>Anual: ${esc(PRECO_ANUAL)}, pagamento único.</li></ul><p>${a('/assinatura', 'Ver todos os detalhes da assinatura')} · ${a('/cursos', 'Experimentar duas aulas grátis')}</p>`; }
-    if (base === '/' && loc.codigo !== 'pt-BR') { const g = COMECAR[loc.codigo] ?? COMECAR['pt-BR']; corpo += `<h2>${esc(g.titulo)}</h2><p>${esc(g.lead)}</p><ol>${g.passos.map((x) => `<li><strong>${esc(x.t)}.</strong> ${esc(x.d)}</li>`).join('')}</ol><p>${esc(g.dica)}</p>`; }
+    if (base === '/' && loc.codigo !== 'pt-BR') { const g = COMECAR[loc.codigo] ?? COMECAR['pt-BR']; corpo += `<h2>${esc(g.titulo)}</h2><p>${esc(g.lead)}</p><ol>${g.passos.map((x) => `<li><strong>${esc(x.t)}.</strong> ${esc(x.d)}</li>`).join('')}</ol><p>${esc(g.dica)}</p>`; corpo += `<h2>Your learning has pages, too.</h2><p>${a('/livros/br', 'Brazilian Portuguese: practical grammar, from zero to A2')}. Read the first two chapters free, with audio.</p><p>${a('/materiais-gratuitos', 'Free materials: alphabet and pronunciation')}</p>`; }
   } else {
     const ml = base.match(/^\/livros\/([^/]+)$/), mcl = base.match(/^\/livros\/([^/]+)\/capitulo\/(\d+)$/);
-    if (base === '/livros') corpo = cabeca(m.titulo ?? '', m.descricao) + (loc.codigo === 'pt-BR' ? `<p>${esc(LIVROS_EM_PRODUCAO)}</p>` : '') + li(LIVROS_META.map((l) => `<a href="/livros/${l.id}">${esc(tituloLivro(l))}</a>`));
-    else if (ml && livroMeta(ml[1])) {
-      const l = livroMeta(ml[1])!; const lv = d?.livros[l.id];
+    const lx = LIVROS_SEO[loc.codigo];
+    if (base === '/livros') corpo = cabeca(m.titulo ?? '', m.descricao) + (loc.codigo === 'pt-BR' ? `<p>${esc(LIVROS_EM_PRODUCAO)}</p>` : '') + li(livrosDoSite(loc.codigo).map((l) => `<a href="/livros/${l.id}">${esc(tituloLivro(l))}</a>`));
+    else if (ml && livroDoSite(ml[1], loc.codigo)) {
+      const l = livroDoSite(ml[1], loc.codigo)!; const lv = d?.livros[l.id];
       const apresentacao = loc.codigo === 'pt-BR' ? APRESENTACOES_LIVRO[l.id] : undefined;
-      corpo = cabeca(tituloLivro(l), l.descricao) + `<p>Por ${AUTORES.map((a) => esc(a.nome)).join(' e ')}.</p>` + (apresentacao ? `<h2>${esc(apresentacao.titulo)}</h2>${apresentacao.paragrafos.map((p) => `<p>${esc(p)}</p>`).join('')}` : '') + `<h2>Sumário</h2><ol>${(lv?.sumario ?? []).map((x) => `<li>${lv?.caps[x.n] ? `<a href="/livros/${l.id}/capitulo/${x.n}">${esc(x.titulo)}</a>` : esc(x.titulo)}</li>`).join('')}</ol>`;
-    } else if (mcl && d?.livros[mcl[1]]?.caps[Number(mcl[2])]) {
+      corpo = cabeca(tituloLivro(l), l.descricao) + `<p>${lx.por} ${AUTORES.map((a) => esc(a.nome)).join(lx.e)}.</p>` + (apresentacao ? `<h2>${esc(apresentacao.titulo)}</h2>${apresentacao.paragrafos.map((p) => `<p>${esc(p)}</p>`).join('')}` : '') + `<h2>${lx.sumario}</h2><ol>${(lv?.sumario ?? []).map((x) => `<li>${lv?.caps[x.n] ? `<a href="/livros/${l.id}/capitulo/${x.n}">${esc(x.titulo)}</a>` : esc(x.titulo)}</li>`).join('')}</ol>`;
+    } else if (mcl && livroDoSite(mcl[1], loc.codigo) && d?.livros[mcl[1]]?.caps[Number(mcl[2])]) {
       const c = d.livros[mcl[1]].caps[Number(mcl[2])];
-      corpo = cabeca(`Capítulo ${c.n}: ${c.titulo}`, undefined) + `<p>${AUTORES.map((a) => esc(a.nome)).join(' e ')}</p>` + capituloParaHtml(c, livroMeta(mcl[1])?.lang ?? mcl[1]) + `<p><a href="/livros/${mcl[1]}">Voltar ao livro</a></p>`;
+      corpo = cabeca(`${lx.cap} ${c.n}: ${c.titulo}`, undefined) + `<p>${AUTORES.map((a) => esc(a.nome)).join(lx.e)}</p>` + capituloParaHtml(c, livroDoSite(mcl[1], loc.codigo)?.lang ?? mcl[1]) + `<p><a href="/livros/${mcl[1]}">${lx.voltar}</a></p>`;
     }
     // Materiais gratuitos: o texto inteiro do guia vai no HTML, para o Google e para quem não executa JavaScript.
     const ma = base.match(/^\/materiais-gratuitos\/([a-z-]+)$/);
-    if (base === CAMINHO_MATERIAIS) corpo = cabeca(m.titulo ?? '', m.descricao) + li(ALFABETOS.map((a) => `<a href="${caminhoAlfabeto(a.slug)}">${esc(a.titulo)}</a>`));
+    if (base === CAMINHO_MATERIAIS && loc.codigo === 'en') corpo = cabeca(HUB_EN.h1, HUB_EN.lead) + li(ALFABETOS.map((a) => `<a href="${caminhoAulaGratis(a.id)}">${esc(`${HUB_EN.idioma[a.id]} alphabet`)}</a>: ${esc(HUB_EN.sub)}`)) + `<h2>${esc(HUB_EN.conviteT)}</h2><p>${esc(HUB_EN.convite)}</p><p><a href="/cursos">${esc(HUB_EN.conviteCta)}</a></p>`;
+    else if (base === CAMINHO_MATERIAIS) corpo = cabeca(m.titulo ?? '', m.descricao) + li(ALFABETOS.map((a) => `<a href="${caminhoAlfabeto(a.slug)}">${esc(a.titulo)}</a>`));
     else if (ma && alfabetoPorSlug(ma[1])) {
       const a = alfabetoPorSlug(ma[1])!;
       corpo = cabeca(a.h1, a.lead) + alfabetoParaHtml(a) + `<p><a href="/curso/${a.id}">Conhecer o curso de ${esc(a.idioma)}</a> · <a href="/livros/${a.id}/capitulo/1">Ler o capítulo 1 do livro</a> · <a href="${CAMINHO_MATERIAIS}">Todos os materiais gratuitos</a></p>`;

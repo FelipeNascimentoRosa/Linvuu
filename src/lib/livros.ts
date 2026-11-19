@@ -21,8 +21,8 @@ export type BlocoLivro =
 export interface CapituloLivro { n: number; idioma: string; titulo: string; nivel: string; paginas: [number, number]; blocos: BlocoLivro[] }
 export interface ItemSumario { n: number; titulo: string; nivel: string; pagina: number | null }
 
-export interface MetaLivro { id: string; nome: string; saudacao: string; lang: string; descricao: string }
-/** Idiomas com capítulos de amostra publicados. */
+export interface MetaLivro { id: string; nome: string; saudacao: string; lang: string; descricao: string; /** nome curto para títulos de capítulo (faixa de 60 caracteres) */ curto?: string }
+/** Livros do .com.br (escritos em português, para quem fala português). Idiomas com capítulos de amostra publicados. */
 export const LIVROS_META: MetaLivro[] = [
   { id: 'en', nome: 'Inglês', saudacao: 'Hello', lang: 'en', descricao: 'Gramática do inglês para quem fala português, do zero ao A2 e os primeiros passos do B1. Cada capítulo parte de um hábito do português que o inglês não aceita.' },
   { id: 'es', nome: 'Espanhol', saudacao: 'Hola', lang: 'es', descricao: 'Gramática prática do espanhol para quem fala português, do zero ao A2. Cada capítulo parte de uma armadilha do português, dos falsos amigos ao ser e estar.' },
@@ -31,8 +31,18 @@ export const LIVROS_META: MetaLivro[] = [
   { id: 'ru', nome: 'Russo', saudacao: 'Привет', lang: 'ru', descricao: 'Gramática prática do russo para quem fala português, do alfabeto ao A2: gênero, casos, verbos e as armadilhas que o português cria, explicados em português.' },
   { id: 'it', nome: 'Italiano', saudacao: 'Ciao', lang: 'it', descricao: 'Gramática prática do italiano para quem fala português, do zero ao A2, com atenção às semelhanças que enganam e às diferenças que ninguém avisa.' },
 ];
+/** Livros do .com (escritos em inglês). Por enquanto só existe o de português para quem fala inglês: os livros em
+ * inglês para quem aprende alemão, espanhol, francês, italiano ou russo ainda não existem (docs/LIVROS-EM-INGLES.md). */
+export const LIVROS_META_EN: MetaLivro[] = [
+  { id: 'br', nome: 'Brazilian Portuguese', curto: 'Portuguese', saudacao: 'Olá', lang: 'pt-BR', descricao: 'Practical Brazilian Portuguese grammar for English speakers, from zero to A2: sounds, ser and estar, the two pasts and the mistakes English speakers make.' },
+];
+type CodigoSite = 'pt-BR' | 'en';
+/** Livros que o domínio mostra: .com.br só os em português; .com só os em inglês. O livro br nunca aparece no .com.br. */
+export const livrosDoSite = (codigo: CodigoSite): MetaLivro[] => (codigo === 'en' ? LIVROS_META_EN : LIVROS_META);
+export const livroDoSite = (id: string, codigo: CodigoSite) => livrosDoSite(codigo).find((l) => l.id === id);
+/** Livro em português (.com.br). Para a página servida, use livroDoSite com o idioma do domínio. */
 export const livroMeta = (id: string) => LIVROS_META.find((l) => l.id === id);
-export const tituloLivro = (m: MetaLivro) => `${m.nome}: gramática prática, do zero ao A2`;
+export const tituloLivro = (m: MetaLivro) => (LIVROS_META_EN.includes(m) ? `${m.nome}: practical grammar, zero to A2` : `${m.nome}: gramática prática, do zero ao A2`);
 export const caminhoLivro = (id: string) => `/livros/${id}`;
 export const caminhoCapitulo = (id: string, n: number) => `/livros/${id}/capitulo/${n}`;
 
@@ -78,7 +88,7 @@ export function itensDeAudio(c: CapituloLivro): { texto: string; voz: 'm' | 'f';
   }
   return out.filter((i) => i.texto);
 }
-export const ehTabelaDeFrases = (tituloSecao: string) => /frases de ouro|glossário/i.test(tituloSecao);
+export const ehTabelaDeFrases = (tituloSecao: string) => /frases de ouro|glossário|survival phrases|glossary/i.test(tituloSecao);
 
 /**
  * Garante um sumário de títulos sem saltos de nível (ex.: h2 seguido de h4).

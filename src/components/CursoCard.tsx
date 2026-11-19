@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Curso, coberturaNoSite, statusDoCurso } from '../lib/content';
+import { livroDoSite } from '../lib/livros';
 import { LOCALE, useT } from '../i18n';
 import { Capacitor } from '@capacitor/core';
 
@@ -23,7 +24,7 @@ export function CursoCard({ curso, nivel = 3, catalogoRascunho = false }: { curs
   const cobertura = t.card.cobertura(cob.traduzidas, cob.total);
   return (
     <Link to={`/curso/${curso.id}`} className="lv-card">
-      {catalogoRascunho && curso.id !== 'br' ? <span className={`catalogo-rabisco catalogo-rabisco-${curso.id}`} aria-hidden="true" /> : import.meta.env.VITE_ALVO !== 'apk' && !Capacitor.isNativePlatform() && LOCALE.codigo === 'pt-BR' && <img className="curso-card-capa" src={`/livros/${curso.id}-a1-a2-v1-600.webp`} alt={`Capa do livro de ${curso.nome.toLowerCase()} A1–A2, Coleção Linvuu`} width="600" height="800" loading="lazy" decoding="async" />}
+      {catalogoRascunho ? <span className={`catalogo-rabisco catalogo-rabisco-${curso.id}`} aria-hidden="true" /> : import.meta.env.VITE_ALVO !== 'apk' && !Capacitor.isNativePlatform() && LOCALE.codigo === 'pt-BR' && <img className="curso-card-capa" src={`/livros/${curso.id}-a1-a2-v1-600.webp`} alt={`Capa do livro de ${curso.nome.toLowerCase()} A1–A2, Coleção Linvuu`} width="600" height="800" loading="lazy" decoding="async" />}
       {SAUDACAO[curso.id] && <span className="lv-saud" lang={curso.id === 'br' ? 'pt-BR' : curso.id} aria-hidden="true">{SAUDACAO[curso.id]}</span>}
       <Titulo className="lv-card-t">{curso.nome}</Titulo>
       <span className="lv-nativo" lang={curso.id === 'br' ? 'pt-BR' : curso.id}>{curso.nomeNativo !== curso.nome ? curso.nomeNativo : ' '}</span>
@@ -31,4 +32,14 @@ export function CursoCard({ curso, nivel = 3, catalogoRascunho = false }: { curs
       <span className="lv-card-meta">{aulas > 0 ? t.card.noAr(aulas) : t.card.preparo}{!catalogoRascunho && <> · {t.card.ate}</>}{cobertura && <><br />{cobertura}</>}</span>
     </Link>
   );
+}
+
+/** Linha do livro sob o cartão do catálogo: só quando o domínio tem o livro do curso (.com.br: os livros em português;
+ * .com: só o de português para quem fala inglês). Nunca no APK. */
+export function LivroDoCurso({ curso }: { curso: Curso }) {
+  if (import.meta.env.VITE_ALVO === 'apk' || Capacitor.isNativePlatform()) return null;
+  const l = livroDoSite(curso.id, LOCALE.codigo);
+  if (!l) return null;
+  const en = LOCALE.codigo === 'en';
+  return <div className="catalogo-livro"><span>{en ? 'Book · 2 free chapters' : 'Livro · 2 capítulos grátis'}</span><Link to={`/livros/${curso.id}`}>{en ? `Open the ${l.nome} book` : `Abrir livro de ${curso.nome}`} <span aria-hidden="true">↗</span></Link></div>;
 }

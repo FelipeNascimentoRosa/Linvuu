@@ -1,11 +1,9 @@
 import { useMemo } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { CURSOS_ATIVOS as CURSOS, cursoComExplicacaoNoSite } from '../lib/content';
-import { CursoCard } from '../components/CursoCard';
+import { CursoCard, LivroDoCurso } from '../components/CursoCard';
 import { usePageTitle } from '../lib/usePageTitle';
 import { LOCALE, useT } from '../i18n';
-import { livroMeta } from '../lib/livros';
-import { Capacitor } from '@capacitor/core';
 import '../site-publico.css';
 
 const norm = (s: string) => s.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase();
@@ -40,13 +38,12 @@ export default function Cursos() {
       </div>
       {q && <p className="resultado" aria-live="polite">{t.cursosPagina.contagem(lista.length)}</p>}
       {lista.length > 0
-        ? <div className="curso-grid">{lista.map((c) => {
-          const livro = LOCALE.codigo === 'pt-BR' && import.meta.env.VITE_ALVO !== 'apk' && !Capacitor.isNativePlatform() && livroMeta(c.id);
-          return <div className="catalogo-idioma" key={c.id}>
+        ? <div className="curso-grid">{lista.map((c) => (
+          <div className="catalogo-idioma" key={c.id}>
             <CursoCard curso={c} nivel={2} catalogoRascunho />
-            {livro && <div className="catalogo-livro"><span>Livro · 2 capítulos grátis</span><Link to={`/livros/${c.id}`}>Abrir livro de {c.nome} <span aria-hidden="true">↗</span></Link></div>}
-          </div>;
-        })}</div>
+            <LivroDoCurso curso={c} />
+          </div>
+        ))}</div>
         : <p className="vazio">{t.cursosPagina.vazio(q)} <button type="button" className="link" onClick={() => setParams({}, { replace: true })}>{t.cursosPagina.limpar}</button>.</p>}
       {emBreve.length > 0 && !q && <p className="nota" data-em-breve>{t.cursosPagina.emBreve}: {emBreve.map((c) => c.nome).join(', ')}.</p>}
     </div>

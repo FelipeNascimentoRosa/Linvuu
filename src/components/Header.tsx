@@ -8,9 +8,11 @@ import '../site-publico.css';
 export function Header() {
   const t = useT();
   const brasileiro = LOCALE.codigo === 'pt-BR';
+  // Mesmo menu nos dois domínios (o .com espelha o .com.br desde 19/11/2026); no APK não há livros.
+  const apk = import.meta.env.VITE_ALVO === 'apk';
   const itens = [
-    [brasileiro && import.meta.env.VITE_ALVO !== 'apk' ? '/livros' : '/cursos', brasileiro && import.meta.env.VITE_ALVO !== 'apk' ? 'Livros' : t.nav.cursos],
-    brasileiro ? ['/materiais-gratuitos', 'Materiais gratuitos'] : ['/#experimente', 'Free practice'],
+    [apk ? '/cursos' : '/livros', apk ? t.nav.cursos : brasileiro ? 'Livros' : 'Books'],
+    ['/materiais-gratuitos', brasileiro ? 'Materiais gratuitos' : 'Free materials'],
     ['/por-que-linvuu', t.nav.metodo], ['/#planos', homeText('Planos')],
     ['/#avaliacoes', t.nav.avaliacoes], ['/#faq', t.nav.duvidas],
     ['/contato', brasileiro ? 'Fale conosco' : 'Contact us'],

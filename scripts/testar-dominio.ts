@@ -14,7 +14,7 @@ const casos: [string, string, string, string, string | null][] = [
   // [descrição, host, caminho, consulta, esperado]
   ['www do .com volta para a raiz do .com', `www.${GLOBAL}`, '/cursos', '', url(SITE_GLOBAL_URL, '/cursos')],
   ['www do .com.br volta para a raiz do .com.br', `www.${BR}`, '/assinatura', 'x=1', url(SITE_URL, '/assinatura') + '?x=1'],
-  ['/en/livros no .com.br vai direto ao destino final (.com.br), sem salto duplo', BR, '/en/livros', '', url(SITE_URL, '/livros')],
+  ['/en/livros no .com.br vai direto à coleção em inglês (.com), sem salto duplo', BR, '/en/livros', '', url(SITE_GLOBAL_URL, '/livros')],
   ['/es/ retirado em 06/11 vai para o inglês', BR, '/es/assinatura', '', url(SITE_GLOBAL_URL, '/assinatura')],
   ['/portugues no .com.br vai direto ao curso de português no .com (13/11/2026)', BR, '/portugues', '', url(SITE_GLOBAL_URL, '/curso/br')],
   ['/portugues no .com vira /curso/br (13/11/2026: as duas disputavam a mesma busca)', GLOBAL, '/portugues', '', url(SITE_GLOBAL_URL, '/curso/br')],
@@ -23,18 +23,19 @@ const casos: [string, string, string, string, string | null][] = [
   ['/en/ antigo no .com perde o prefixo', GLOBAL, '/en/cursos', '', url(SITE_GLOBAL_URL, '/cursos')],
   ['/ex-alunos-udemy no .com vai para o .com.br (página só em português)', GLOBAL, '/ex-alunos-udemy', '', url(SITE_URL, '/ex-alunos-udemy')],
   ['/es/ no .com perde o prefixo', GLOBAL, '/es/cursos', '', url(SITE_GLOBAL_URL, '/cursos')],
-  ['/es/livros no .com.br vai direto ao .com.br, num salto só', BR, '/es/livros', '', url(SITE_URL, '/livros')],
+  ['/es/livros no .com.br vai direto à coleção em inglês, num salto só', BR, '/es/livros', '', url(SITE_GLOBAL_URL, '/livros')],
   ['/en/livros no .com vai direto ao .com.br', GLOBAL, '/en/livros/ru', '', url(SITE_URL, '/livros/ru')],
   ['/es/portugues no .com.br não volta ao .br', BR, '/es/portugues', '', url(SITE_GLOBAL_URL, '/curso/br')],
-  // A correção desta branch: /livros é conteúdo em português e o .com é o site em inglês.
-  ['/livros no .com vai para o .com.br', GLOBAL, '/livros', '', url(SITE_URL, '/livros')],
-  ['/livros/ no .com vai para o .com.br', GLOBAL, '/livros/', '', url(SITE_URL, '/livros/')],
-  ['subpágina de /livros acompanha o redirecionamento', GLOBAL, '/livros/ru/cap-01', '', url(SITE_URL, '/livros/ru/cap-01')],
-  ['a consulta é preservada no redirecionamento de /livros', GLOBAL, '/livros', 'utm_source=x', url(SITE_URL, '/livros') + '?utm_source=x'],
+  // 19/11/2026 (Felipe): o .com espelha o .com.br e tem a própria coleção /livros, em inglês (só o livro br).
+  ['/livros no .com é a coleção em inglês', GLOBAL, '/livros', '', null],
+  ['/livros/br no .com é o livro de português para quem fala inglês', GLOBAL, '/livros/br/capitulo/1', '', null],
+  ['livro em português pedido no .com vai para o .com.br', GLOBAL, '/livros/ru/capitulo/1', '', url(SITE_URL, '/livros/ru/capitulo/1')],
+  ['a consulta é preservada no redirecionamento de um livro em português', GLOBAL, '/livros/de', 'utm_source=x', url(SITE_URL, '/livros/de') + '?utm_source=x'],
+  ['/livros/br no .com.br vai para o .com', BR, '/livros/br', '', url(SITE_GLOBAL_URL, '/livros/br')],
   // Controles: nada do que já funcionava pode passar a redirecionar.
   ['/livros no .com.br é a página normal', BR, '/livros', '', null],
   // Materiais gratuitos (alfabeto russo): escritos em português, moram no .com.br.
-  ['/materiais-gratuitos no .com vai para o .com.br', GLOBAL, '/materiais-gratuitos', '', url(SITE_URL, '/materiais-gratuitos')],
+  ['/materiais-gratuitos no .com é o hub em inglês', GLOBAL, '/materiais-gratuitos', '', null],
   ['um guia dos materiais gratuitos no .com acompanha o redirecionamento', GLOBAL, '/materiais-gratuitos/alfabeto-russo', 'utm_source=x', url(SITE_URL, '/materiais-gratuitos/alfabeto-russo') + '?utm_source=x'],
   ['/materiais-gratuitos no .com.br é a página normal', BR, '/materiais-gratuitos/alfabeto-russo', '', null],
   ['/livro (sem s) não é a coleção', GLOBAL, '/livro', '', null],
@@ -70,17 +71,18 @@ try {
     assert.equal(r.status, status, `${metodo} ${caminho} (${host})`);
     if (local !== undefined) assert.equal(r.headers.get('location'), local, `${metodo} ${caminho} (${host})`);
   };
-  await conferir('GET', '/livros', GLOBAL, 301, url(SITE_URL, '/livros'));
-  await conferir('GET', '/livros?utm_source=x', GLOBAL, 301, url(SITE_URL, '/livros') + '?utm_source=x');
-  await conferir('HEAD', '/livros', GLOBAL, 301, url(SITE_URL, '/livros'));
+  await conferir('GET', '/livros/ru', GLOBAL, 301, url(SITE_URL, '/livros/ru'));
+  await conferir('GET', '/livros/ru?utm_source=x', GLOBAL, 301, url(SITE_URL, '/livros/ru') + '?utm_source=x');
+  await conferir('HEAD', '/livros/ru', GLOBAL, 301, url(SITE_URL, '/livros/ru'));
+  await conferir('GET', '/livros', GLOBAL, 200);
   await conferir('GET', '/cursos', GLOBAL, 200);
   await conferir('GET', '/sobre', GLOBAL, 200);
   await conferir('GET', '/livros', BR, 200);
   // POST não é endereço de página: o middleware só trata GET e HEAD.
-  await conferir('POST', '/livros', GLOBAL, 200);
+  await conferir('POST', '/livros/ru', GLOBAL, 200);
   // A API nunca é redirecionada por causa do domínio.
   await conferir('GET', '/api/livros', GLOBAL, 200);
 } finally {
   await new Promise<void>((resolve, reject) => server.close(e => e ? reject(e) : resolve()));
 }
-console.log('HTTP real: /livros no .com responde 301 para o .com.br; .com.br, /sobre, POST e /api seguem intactos');
+console.log('HTTP real: livros em português no .com respondem 301 para o .com.br; /livros do .com é 200; .com.br, /sobre, POST e /api seguem intactos');

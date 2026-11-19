@@ -35,11 +35,12 @@ const alvoPadrao = (g) => {
 // com entrada própria. A assinatura é indexável nos três idiomas (página localizada genuína nas três —
 // sem noindex desde a correção de integridade hreflang), por isso entra com <loc> próprio em todas.
 grupos.push({ p: '/', em: todos() }, { p: '/cursos', em: todos(), anot: todos() }, { p: '/assinatura', em: todos(), anot: todos() });
-// Sobre, Por que Linvuu e Contato: em todas as línguas (texto próprio em cada uma — Contato passou a existir em inglês em 09/11/2026). Livros e Ex-alunos: só em português. Cada capítulo de amostra publicado (content/livros/<idioma>/cap-NN.json) entra no sitemap.
-grupos.push({ p: '/russo-online', em: ['pt-BR', 'en'], anot: ['pt-BR', 'en'] }, { p: '/sobre', em: todos(), anot: todos() }, { p: '/por-que-linvuu', em: todos(), anot: todos() }, { p: '/contato', em: todos(), anot: todos() }, { p: '/ex-alunos-udemy', em: ['pt-BR'] }, { p: '/livros', em: ['pt-BR'] });
+// Sobre, Por que Linvuu e Contato: em todas as línguas (texto próprio em cada uma — Contato passou a existir em inglês em 09/11/2026). Ex-alunos: só em português. /livros: nas duas (cada domínio lista os seus livros). Cada capítulo de amostra publicado (content/livros/<idioma>/cap-NN.json) entra no sitemap.
+grupos.push({ p: '/russo-online', em: ['pt-BR', 'en'], anot: ['pt-BR', 'en'] }, { p: '/sobre', em: todos(), anot: todos() }, { p: '/por-que-linvuu', em: todos(), anot: todos() }, { p: '/contato', em: todos(), anot: todos() }, { p: '/ex-alunos-udemy', em: ['pt-BR'] }, { p: '/livros', em: todos(), anot: todos() });
 // Materiais gratuitos (guias de alfabeto: russo, alemão, francês, italiano, espanhol), em português: só no .com.br.
 // Os slugs vêm de src/lib/alfabeto/<id>.ts (slug: "alfabeto-...").
-grupos.push({ p: '/materiais-gratuitos', em: ['pt-BR'] });
+// Desde 19/11/2026 o hub também existe no .com, em inglês (os guias continuam só em português, no .com.br).
+grupos.push({ p: '/materiais-gratuitos', em: todos(), anot: todos() });
 for (const f of fs.readdirSync(path.join(raiz, 'src', 'lib', 'alfabeto')).filter((x) => x !== 'base.ts').sort()) {
   const slug = fs.readFileSync(path.join(raiz, 'src', 'lib', 'alfabeto', f), 'utf8').match(/slug: "(alfabeto-[a-z]+)"/)?.[1];
   if (slug) grupos.push({ p: `/materiais-gratuitos/${slug}`, em: ['pt-BR'] });
@@ -53,8 +54,10 @@ if (fs.existsSync(dirLivros)) for (const id of fs.readdirSync(dirLivros).sort())
   // Apenas os capítulos de amostra: a presença de outro arquivo não o torna público.
   const caps = fs.readdirSync(path.join(dirLivros, id)).map((f) => f.match(/^cap-(\d+)\.json$/)?.[1]).filter(Boolean).map(Number).filter((n) => n === 1 || n === 2).sort((a, b) => a - b);
   if (!caps.length) continue;
-  grupos.push({ p: `/livros/${id}`, em: ['pt-BR'] });
-  for (const n of caps) grupos.push({ p: `/livros/${id}/capitulo/${n}`, em: ['pt-BR'] });
+  // O livro br (português para quem fala inglês) é escrito em inglês: mora só no .com. Os demais, só no .com.br.
+  const emLivro = id === 'br' ? ['en'] : ['pt-BR'];
+  grupos.push({ p: `/livros/${id}`, em: emLivro });
+  for (const n of caps) grupos.push({ p: `/livros/${id}/capitulo/${n}`, em: emLivro });
 }
 // Hub de curso, gramática e aulas grátis, derivados do modelo de indexação do servidor
 // (src/lib/metaRota.ts): hub e gramática são indexáveis em cada idioma em que o curso é

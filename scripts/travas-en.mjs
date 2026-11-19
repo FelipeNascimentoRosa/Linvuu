@@ -1,6 +1,7 @@
 // TRAVA do conteúdo em inglês do linvuu.com (ver docs/LEIA-ME-INTERNACIONAL.md).
 // Registra a impressão digital (sha256) de todo arquivo servido em inglês para quem fala inglês:
-// dias traduzidos content/idiomas/<id>/en/, o curso br (escrito em inglês), as gramáticas *.en.json e br.json.
+// dias traduzidos content/idiomas/<id>/en/, o curso br (escrito em inglês), as gramáticas *.en.json e br.json
+// e o livro «Olá Portuguese» (content/livros/br/, escrito em inglês, só no .com).
 //   node scripts/travas-en.mjs            confere: arquivo travado alterado ou apagado = erro (build/CI param)
 //   node scripts/travas-en.mjs --atualizar regrava content/travas-en.json (mudança DELIBERADA, aparece no diff do PR)
 // Arquivo novo (curso crescendo) não quebra a conferência, mas fica listado até ser travado.
@@ -23,6 +24,8 @@ function servidosEmIngles() {
   }
   const g = path.join(raiz, 'content', 'gramatica');
   for (const f of fs.readdirSync(g)) if (f.endsWith('.en.json') || f === 'br.json') out.push(path.join(g, f));
+  const livroBr = path.join(raiz, 'content', 'livros', 'br');
+  if (fs.existsSync(livroBr)) for (const f of fs.readdirSync(livroBr)) if (f.endsWith('.json')) out.push(path.join(livroBr, f));
   return out.sort();
 }
 

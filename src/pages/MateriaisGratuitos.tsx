@@ -5,7 +5,7 @@ import { LOCALE } from '../i18n';
 import { usePageTitle } from '../lib/usePageTitle';
 import { falar, parar } from '../lib/audio';
 import {
-  ALFABETOS, CAMINHO_HUB, DESCRICAO_HUB, LEAD_HUB, TITULO_HUB, alfabetoPorSlug, caminhoAlfabeto, palavrasDoGuia, audioVocabularioRusso,
+  ALFABETOS, CAMINHO_HUB, DESCRICAO_HUB, HUB_EN, LEAD_HUB, TITULO_HUB, alfabetoPorSlug, caminhoAlfabeto, caminhoAulaGratis, palavrasDoGuia, audioVocabularioRusso,
   type Alfabeto, type Bloco, type Cartao, type Exercicio, type Exemplo,
 } from '../lib/materiais';
 import { ac } from '../lib/alfabeto/base';
@@ -197,33 +197,33 @@ function VocabularioRusso({ a }: { a: Alfabeto }) {
   </section>;
 }
 
-/** /materiais-gratuitos */
+/** /materiais-gratuitos — mesmo desenho e mesmas imagens nos dois domínios; no .com o texto é inglês e o cartão leva à aula grátis. */
 export function MateriaisIndice() {
-  usePageTitle(TITULO_HUB, DESCRICAO_HUB, ['pt-BR'], nota);
+  const en = LOCALE.codigo === 'en';
+  usePageTitle(en ? HUB_EN.titulo : TITULO_HUB, en ? HUB_EN.descricao : DESCRICAO_HUB, ['pt-BR', 'en']);
   return (
     <div className="pagina mat">
       <header className="mat-topo">
-        <h1 className="pagina-h1">Materiais gratuitos</h1>
-        <p className="lead">{LEAD_HUB}</p>
-        <ParaPortugues />
+        <h1 className="pagina-h1">{en ? HUB_EN.h1 : 'Materiais gratuitos'}</h1>
+        <p className="lead">{en ? HUB_EN.lead : LEAD_HUB}</p>
       </header>
       <ul className="mat-grade">
         {ALFABETOS.map((a, n) => (
           <li key={a.id} className="mat-cartao" data-tom={['vermelho', 'ocre', 'verde'][n % 3]}>
-            <Link to={caminhoAlfabeto(a.slug)} className="mat-cartao-link">
+            <Link to={en ? caminhoAulaGratis(a.id) : caminhoAlfabeto(a.slug)} className="mat-cartao-link">
               <span className="mat-cartao-arte"><img src={`/assets/materiais/rabiscos/${a.id}.webp`} alt="" loading="lazy" /></span>
               <span className="mat-cartao-corpo">
-                <h2>Alfabeto {a.idioma.charAt(0).toUpperCase() + a.idioma.slice(1)}</h2>
-                <span className="mat-cartao-sub">Letras, sons e áudio em uma página</span>
-                <span className="mat-cartao-cta">Abrir o guia grátis <span aria-hidden="true">→</span></span>
+                <h2>{en ? `${HUB_EN.idioma[a.id]} alphabet` : `Alfabeto ${a.idioma.charAt(0).toUpperCase() + a.idioma.slice(1)}`}</h2>
+                <span className="mat-cartao-sub">{en ? HUB_EN.sub : 'Letras, sons e áudio em uma página'}</span>
+                <span className="mat-cartao-cta">{en ? HUB_EN.cta : 'Abrir o guia grátis'} <span aria-hidden="true">→</span></span>
               </span>
             </Link>
           </li>
         ))}
       </ul>
       <section className="mat-convite" aria-labelledby="mat-convite-t">
-        <div><h2 id="mat-convite-t">Do alfabeto à primeira conversa.</h2><p>As 2 primeiras aulas de cada curso são grátis, com explicação em português e áudio em cada frase.</p></div>
-        <Link to="/cursos" className="mat-convite-cta">Começar um curso grátis <span aria-hidden="true">→</span></Link>
+        <div><h2 id="mat-convite-t">{en ? HUB_EN.conviteT : 'Do alfabeto à primeira conversa.'}</h2><p>{en ? HUB_EN.convite : 'As 2 primeiras aulas de cada curso são grátis, com explicação em português e áudio em cada frase.'}</p></div>
+        <Link to="/cursos" className="mat-convite-cta">{en ? HUB_EN.conviteCta : 'Começar um curso grátis'} <span aria-hidden="true">→</span></Link>
       </section>
     </div>
   );
