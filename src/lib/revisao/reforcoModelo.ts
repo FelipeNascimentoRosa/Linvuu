@@ -2,9 +2,10 @@
 import { validarPratica } from './estudoModelo';
 import { pendentesRevisao, validarRevisao } from './revisaoModelo';
 import { situacaoEspacada, validarEspacado } from './espacadoModelo';
+import type { RegistroBloco } from './registroBloco';
 
 /** `erros`: ainda há questões erradas sem revisão certa. `espacado`: já corrigidas, voltando no intervalo. */
-export interface ItemReforco { dia: number; bloco: number; pendentes: number; em: string; tipo: 'erros' | 'espacado'; passo: number }
+export interface ItemReforco { dia: number; bloco: number; pendentes: number; em: string; tipo: 'erros' | 'espacado'; passo: number; /** só nos itens vindos de registros por bloco (Web e conta) */ aula?: number; sessao?: number }
 type Leitor = Pick<Storage, 'getItem' | 'key' | 'length'>;
 const PADRAO = /^linvuu:pratica-apk:v1:([^:]+):([a-z]{2,3}):(\d{1,3}):S(\d{1,2}):bloco:(\d{1,2})$/;
 const ler = (s: Leitor, k: string): unknown => { try { return JSON.parse(s.getItem(k) ?? 'null'); } catch { return null; } };
@@ -40,4 +41,24 @@ export function agendaReforco(idioma: string, dono: string, storage: Leitor, dia
 /** Blocos para rever agora, do mais antigo ao mais novo. `diaDe` converte aula+sessão no dia do percurso. */
 export function listarReforco(idioma: string, dono: string, storage: Leitor, diaDe: (aula: number, sessao: number) => number | null, agora = Date.now()): ItemReforco[] {
   return agendaReforco(idioma, dono, storage, diaDe, agora).itens;
+}
+
+/** Mesma agenda, lida dos registros por bloco (Web e conta) em vez do localStorage do APK. Modelo puro: cada registro é um bloco com erro;
+ *  `bloco` do registro começa em 1 (a posição do bloco na sessão + 1) e o item devolvido repete esse número. */
+export function agendaDeRegistros(registros: readonly RegistroBloco[], diaDe: (aula: number, sessao: number) => number | null, agora = Date.now()): { itens: ItemReforco[]; proxima: string | null } {
+  const itens: ItemReforco[] = [];
+  let proxima: string | null = null;
+  for (const r of registros) {
+    const dia = diaDe(r.aula, r.sessao);
+    if (!dia) continue;
+    const rev = r.revisao;
+    const pendentes = rev ? pendentesRevisao(rev).length : r.pratica.total - r.pratica.acertos;
+    if (pendentes > 0) { itens.push({ dia, bloco: r.bloco, pendentes, em: r.pratica.em, tipo: 'erros', passo: 0, aula: r.aula, sessao: r.sessao }); continue; }
+    if (!rev || !rev.fim) continue;
+    const s = situacaoEspacada(rev.em, r.espacado ?? null);
+    if (!s) continue;
+    if (Date.parse(s.proxima) <= agora) itens.push({ dia, bloco: r.bloco, pendentes: rev.origem.length, em: s.proxima, tipo: 'espacado', passo: s.passo, aula: r.aula, sessao: r.sessao });
+    else if (!proxima || s.proxima < proxima) proxima = s.proxima;
+  }
+  return { itens: itens.sort((a, b) => a.em.localeCompare(b.em) || a.dia - b.dia || a.bloco - b.bloco), proxima };
 }

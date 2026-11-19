@@ -173,3 +173,25 @@ main.site-camadas{min-height:100vh}
 .site-camadas .site-catalogo .catalogo-rabisco{display:none}
 .site-camadas .site-catalogo .lv-saud{position:relative;min-height:0;margin-bottom:18px;padding-right:0;max-width:none;font-size:clamp(28px,2.4vw,36px);white-space:nowrap;overflow-wrap:normal}
 @media(prefers-reduced-motion:reduce){.site-camadas .site-catalogo .catalogo-idioma:has(.catalogo-rabisco){transition:none}}
+
+/* Revisão espaçada no Web (tela /curso/:id/revisao e cartão de entrada): só tokens, sem hex. */
+.cartao-revisao{display:grid;gap:var(--s-1,.5rem);justify-items:start;margin:1rem 0;padding:1rem 1.25rem;border:1px solid var(--linha);border-radius:var(--r-card);background:var(--bg-elevado)}
+.cartao-revisao-titulo{margin:0;font-size:1.1rem}
+.cartao-revisao p,.cartao-revisao small{margin:0;color:var(--fg-2)}
+.revisao-pagina{display:grid;gap:1rem;max-width:var(--max-texto,44rem);margin-inline:auto;padding-block:1.5rem}
+.revisao-web{display:grid;gap:1rem}
+.revisao-web-topo h2{margin:0}
+.revisao-web-meta{margin:.25rem 0 0;color:var(--fg-2);font-variant-numeric:tabular-nums}
+.revisao-web-fim{display:grid;gap:.75rem}
+.revisao-notas{display:grid;gap:.6rem;padding-top:1rem;border-top:1px solid var(--linha)}
+.revisao-notas h3,.revisao-notas p{margin:0}
+.revisao-notas p{color:var(--fg-2)}
+.revisao-notas-botoes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.5rem}
+.revisao-notas-botoes .btn{display:grid;gap:.1rem;justify-items:center;min-height:3rem;padding:.5rem .25rem}
+.revisao-notas-botoes small{font-size:.9rem;font-variant-numeric:tabular-nums}
+.revisao-notas-botoes .btn:disabled{opacity:.55}
+.revisao-desempenho{display:grid;grid-template-columns:repeat(auto-fit,minmax(8rem,1fr));gap:.75rem;margin:0}
+.revisao-desempenho div{display:grid;gap:.1rem;padding:.6rem .8rem;border:1px solid var(--linha);border-radius:var(--r-control)}
+.revisao-desempenho dt{color:var(--fg-2)}
+.revisao-desempenho dd{margin:0;font-size:1.4rem;font-variant-numeric:tabular-nums}
+@media (max-width:360px){.revisao-notas-botoes{grid-template-columns:repeat(2,minmax(0,1fr))}}

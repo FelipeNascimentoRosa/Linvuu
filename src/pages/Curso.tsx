@@ -7,6 +7,7 @@ import { SITE_URL } from '../config/site';
 import { LOCALE, LOCALES, useT } from '../i18n';
 import { gratis } from '../config/planos';
 import { PerguntasCurso } from '../components/PerguntasCurso';
+import { CartaoRevisaoSite } from '../components/CartaoRevisaoSite';
 import { pontoDeRetomada, useDiasFeitos } from '../lib/retomar';
 import NaoEncontrada from './NaoEncontrada';
 import CursoBr from './CursoBr';
@@ -76,6 +77,7 @@ export default function Curso() {
             {curso.id === 'ru' && <Link to="/russo-online" className="link-gramatica">{LOCALE.codigo === 'pt-BR' ? 'Prefere aulas de russo ao vivo, com professor?' : 'Prefer live Russian lessons with a teacher?'}</Link>}
           </div>
           {website && retomar}
+          {website && <CartaoRevisaoSite idioma={curso.id} />}
 
         </div>
         {website && LOCALE.codigo === 'pt-BR' && livro?.capa && <figure className="curso-livro">

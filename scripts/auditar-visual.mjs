@@ -10,13 +10,16 @@
 // rótulos numerados contam só no formato «01», «02» (lista de aulas numeradas é sequência de verdade).
 // Saída: uma linha por regra com contagem e exemplos; total de ocorrências por página no fim.
 import { chromium } from 'playwright';
+import { pathToFileURL } from 'node:url';
 
 const local = process.env.LINVUU_HOST_LOCAL;
 const exe = process.env.CHROME_PATH;
-const urls = process.argv.slice(2);
-if (!urls.length) { console.error('uso: node scripts/auditar-visual.mjs <url>...'); process.exit(1); }
+// Importável: `regras` roda dentro da página (page.evaluate) e serve a testes que auditam estados da tela (scripts/testar-revisao-e2e.mjs).
+const principal = import.meta.url === pathToFileURL(process.argv[1] ?? '').href;
+const urls = principal ? process.argv.slice(2) : [];
+if (principal && !urls.length) { console.error('uso: node scripts/auditar-visual.mjs <url>...'); process.exit(1); }
 
-function regras() {
+export function regras() {
   const out = {};
   const add = (id, det) => { (out[id] ||= []).push(det); };
   const cs = (el) => getComputedStyle(el);
@@ -84,7 +87,7 @@ function regras() {
   return out;
 }
 
-const b = await chromium.launch({ executablePath: exe || undefined, args: ['--no-sandbox'] });
+const b = principal ? await chromium.launch({ executablePath: exe || undefined, args: ['--no-sandbox'] }) : null;
 let soma = 0;
 for (const url of urls) {
   for (const [w, h, nome] of [[1440, 900, 'desktop'], [390, 844, 'celular']]) {
@@ -100,5 +103,5 @@ for (const url of urls) {
     await c.close();
   }
 }
-console.log(`\nTOTAL: ${soma}`);
-await b.close();
+if (principal) console.log(`\nTOTAL: ${soma}`);
+await b?.close();

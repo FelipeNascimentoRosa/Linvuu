@@ -35,7 +35,7 @@
     "testar:regras": "npm --prefix scripts/regras ci && npx --yes firebase-tools@15.34.1 emulators:exec --only firestore --project demo-linvuu-regras \"node scripts/regras/testar-regras.mjs\"",
     "testar:exclusao": "node --import tsx scripts/testar-exclusao.ts",
     "testar:newsletter": "node --import tsx scripts/testar-newsletter.ts",
-    "testar:revisao": "node --import tsx scripts/testar-fsrs-dominio.ts && node --import tsx scripts/testar-registro-bloco.ts && node scripts/testar-isolamento-revisao.mjs",
+    "testar:revisao": "node --import tsx scripts/testar-fsrs-dominio.ts && node --import tsx scripts/testar-registro-bloco.ts && node --import tsx scripts/testar-revisao-web.ts && node scripts/testar-isolamento-revisao.mjs",
     "testar:revisao:rota": "npx --yes firebase-tools@15.34.1 emulators:exec --only firestore,auth --project demo-linvuu-revisao \"node --import tsx scripts/testar-revisao-rota.ts\"",
     "testar:newsletter:rota": "npx --yes firebase-tools@15.34.1 emulators:exec --only firestore --project demo-linvuu-newsletter \"node --import tsx scripts/testar-newsletter-rota.ts\"",
     "midia:carrossel": "node scripts/midia/gerar-carrossel.mjs",
