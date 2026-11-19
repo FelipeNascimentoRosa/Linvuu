@@ -107,6 +107,9 @@ for (const [cod, t] of Object.entries(L)) {
     const resumo = await p.locator('.revisao-resumo').innerText();
     assert.match(resumo, cod === 'en' ? /2 blocks reviewed/ : /2 blocos revisados/);
     assert.match(resumo, cod === 'en' ? /Next review/ : /Próxima revisão/);
+    // Uma nota «Bom» (volta em dias) e um bloco só com erros corrigidos: razão 1 de 1 e intervalo médio em dias.
+    assert.match(resumo, cod === 'en' ? /Recalled well: 100% \(1 of 1/ : /Lembrança boa: 100% \(1 de 1/);
+    assert.match(resumo, cod === 'en' ? /Average time until blocks come back: \d+ days?/ : /Intervalo médio até os blocos voltarem: \d+ dias?/);
     await auditar('resumo');
     assert.deepEqual(erros, [], `erros de página: ${erros.join(' | ')}`);
     // recarregar: nada volta como vencido, o estado persistiu

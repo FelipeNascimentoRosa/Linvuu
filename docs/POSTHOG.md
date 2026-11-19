@@ -19,8 +19,11 @@ O conector usa somente a API pública de captura, sem carregar SDK/script remoto
 - `lesson_started`: abertura da página de dia; não prova que o aluno estudou ou ouviu áudio.
 - `practice_completed`: conclusão da primeira correção da prática; não significa domínio do conteúdo.
 - `lesson_completed`: dia marcado concluído localmente; leituras vindas da conta não geram conclusão nova.
+- `review_started`: o aluno apertou «Começar a revisão» em `/curso/:id/revisao` (só web); propriedades `study_language` e `blocks` (quantos blocos na fila).
+- `review_rated`: nota Again/Hard/Good/Easy gravada com sucesso num bloco; propriedades `study_language` e `rating`. Não leva o bloco, a questão nem a resposta.
+- `review_completed`: a tela de resumo abriu depois de ao menos um bloco revisado; propriedades `study_language` e `blocks`.
 
-Propriedades controladas: `platform`, `environment`, `interface_language`, `version`, `page`, `study_language`, `lesson`. Não capturamos mensagens de erro livre, nem inventamos eventos de compra/áudio que ainda não foram ligados. Novas métricas só começam após publicação, aceitação e uso real. Recusas, bloqueadores e perdas de rede reduzem a amostra; não extrapolar para todos os visitantes.
+Propriedades controladas: `platform`, `environment`, `interface_language`, `version`, `page`, `study_language`, `lesson`, `rating` (lista fechada) e `blocks` (1 a 1000). Não capturamos mensagens de erro livre, nem inventamos eventos de compra/áudio que ainda não foram ligados. Novas métricas só começam após publicação, aceitação e uso real. Recusas, bloqueadores e perdas de rede reduzem a amostra; não extrapolar para todos os visitantes.
 
 ## Validação e publicação
 

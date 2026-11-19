@@ -2,7 +2,7 @@
 import { CTAS, type Cta } from '../config/ctas';
 export const ANALYTICS_CHOICE='linvuu:analytics:v1', ANALYTICS_ID='linvuu:analytics-id:v1';
 export type AnalyticsChoice='yes'|'no'|null;
-export type AnalyticsEvent='page_viewed'|'course_viewed'|'lesson_started'|'practice_completed'|'lesson_completed'|'checkout_started'|'checkout_returned'|'view_pricing'|'select_plan'|'signup_completed'|'cta_clicked';
+export type AnalyticsEvent='page_viewed'|'course_viewed'|'lesson_started'|'practice_completed'|'lesson_completed'|'checkout_started'|'checkout_returned'|'view_pricing'|'select_plan'|'signup_completed'|'cta_clicked'|'review_started'|'review_rated'|'review_completed';
 type Config={token:string;host:string;platform:'web'|'android';environment:'production'|'test';locale:string;version:string};
 type Store=Pick<Storage,'getItem'|'setItem'|'removeItem'>;
 export function criarAnalytics(config:Config,store:Store,pedir:typeof fetch=fetch){
@@ -12,13 +12,16 @@ export function criarAnalytics(config:Config,store:Store,pedir:typeof fetch=fetc
  const choose=(value:'yes'|'no')=>{try{store.setItem(ANALYTICS_CHOICE,value);if(value==='no'){store.removeItem(ANALYTICS_ID);for(const c of requests)c.abort();requests.clear();}}catch{/* sem persistência, não coletar */}};
  async function capture(event:AnalyticsEvent,props:Record<string,unknown>={}){
   if(!configured()||choice()!=='yes'||count>=120)return false;
-  if(!['page_viewed','course_viewed','lesson_started','practice_completed','lesson_completed','checkout_started','checkout_returned','view_pricing','select_plan','signup_completed','cta_clicked'].includes(event))return false;
+  if(!['page_viewed','course_viewed','lesson_started','practice_completed','lesson_completed','checkout_started','checkout_returned','view_pricing','select_plan','signup_completed','cta_clicked','review_started','review_rated','review_completed'].includes(event))return false;
   let id:string;try{id=store.getItem(ANALYTICS_ID)??'';if(!/^[a-f0-9-]{36}$/.test(id)){id=crypto.randomUUID();store.setItem(ANALYTICS_ID,id);}}catch{return false;}
   // Nunca aceitar URLs, texto livre, UIDs Firebase, respostas ou mensagens de erro.
   const properties:Record<string,unknown>={platform:config.platform,environment:config.environment,interface_language:typeof document==='undefined'?config.locale:document.documentElement.lang||config.locale,version:config.version,$process_person_profile:false,$geoip_disable:true};
   if(typeof props.page==='string'&&['home','courses','course','lesson','grammar','account','login','signup','plans','privacy','terms'].includes(props.page))properties.page=props.page;
   if(typeof props.study_language==='string'&&['en','es','fr','it','de','ru','br'].includes(props.study_language))properties.study_language=props.study_language;
   if(Number.isInteger(props.lesson)&&Number(props.lesson)>0&&Number(props.lesson)<=10000)properties.lesson=props.lesson;
+  // Revisão espaçada: só a nota da lista fechada (Again/Hard/Good/Easy) e quantos blocos; nunca o bloco, a questão ou a resposta.
+  if(typeof props.rating==='string'&&['again','hard','good','easy'].includes(props.rating))properties.rating=props.rating;
+  if(Number.isInteger(props.blocks)&&Number(props.blocks)>0&&Number(props.blocks)<=1000)properties.blocks=props.blocks;
   if(typeof props.billing_plan==='string'&&['mensal','trimestral','trimestral-pix','anual'].includes(props.billing_plan))properties.billing_plan=props.billing_plan;
   // Botão clicado: só o identificador da lista fechada (src/config/ctas.ts), nunca o rótulo nem o href.
   if(typeof props.cta==='string'&&(CTAS as readonly string[]).includes(props.cta))properties.cta=props.cta as Cta;

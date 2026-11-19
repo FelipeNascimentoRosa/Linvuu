@@ -38,6 +38,7 @@ const PT = {
   notaVolta: (r: string) => `volta em ${r}`, notaOk: (r: string) => `Registrado. Este bloco volta em ${r}.`, atalhos: 'Atalhos: Enter ou Espaço avançam, R repete o áudio, 1 a 4 escolhem a nota (Errei, Difícil, Bom, Fácil).',
   resumoTitulo: 'Revisão concluída', resumoBlocos: (n: number) => (n === 1 ? '1 bloco revisado' : `${n} blocos revisados`), resumoDesempenho: 'Desempenho',
   desempenho: { correcao: 'Erros corrigidos', again: 'Errei', hard: 'Difícil', good: 'Bom', easy: 'Fácil' } as Record<string, string>, resumoProxima: (d: string) => `Próxima revisão: ${d}`, resumoSem: 'Nenhuma revisão futura agendada.',
+  resumoAcerto: (bons: number, total: number, pct: number) => `Lembrança boa: ${pct}% (${bons} de ${total}, contando Bom e Fácil contra Errei)`, resumoIntervalo: (t: string) => `Intervalo médio até os blocos voltarem: ${t}`,
   cartaoHoje: (n: number) => (n === 1 ? '1 bloco para rever hoje' : `${n} blocos para rever hoje`), cartaoTexto: 'Revisar na hora certa fixa mais do que reler. Leva poucos minutos.', cartaoAcao: 'Rever agora', cartaoProxima: (d: string) => `Próxima revisão: ${d}`, cartaoRegiao: 'Revisão espaçada',
   falhaSalvar: 'Não foi possível salvar neste aparelho. Tente de novo.', erroCarregar: 'Não foi possível abrir este bloco. Tente de novo.', tentar: 'Tentar de novo',
 };
@@ -56,6 +57,7 @@ const EN: typeof PT = {
   notaVolta: (r) => `back in ${r}`, notaOk: (r) => `Saved. This block comes back in ${r}.`, atalhos: 'Shortcuts: Enter or Space move on, R repeats the audio, 1 to 4 pick the rating (Again, Hard, Good, Easy).',
   resumoTitulo: 'Review complete', resumoBlocos: (n) => (n === 1 ? '1 block reviewed' : `${n} blocks reviewed`), resumoDesempenho: 'Performance',
   desempenho: { correcao: 'Mistakes fixed', again: 'Again', hard: 'Hard', good: 'Good', easy: 'Easy' }, resumoProxima: (d) => `Next review: ${d}`, resumoSem: 'No future review scheduled.',
+  resumoAcerto: (bons, total, pct) => `Recalled well: ${pct}% (${bons} of ${total}, counting Good and Easy against Again)`, resumoIntervalo: (t) => `Average time until blocks come back: ${t}`,
   cartaoHoje: (n) => (n === 1 ? '1 block to review today' : `${n} blocks to review today`), cartaoTexto: 'Reviewing at the right time makes things stick better than rereading. It takes a few minutes.', cartaoAcao: 'Review now', cartaoProxima: (d) => `Next review: ${d}`, cartaoRegiao: 'Spaced review',
   falhaSalvar: 'Could not save on this device. Try again.', erroCarregar: 'Could not open this block. Try again.', tentar: 'Try again',
 };
