@@ -66,7 +66,7 @@ export const POR_QUE: Record<'pt-BR' | 'en', TextoPorQue> = {
   en: {
     titulo: 'Why study languages at Linvuu?',
     seoTitulo: 'Why study languages online · 2 free lessons',
-    seoDescricao: 'Online language courses without the fluff: immersion, grammar, exercises and conversation when they make sense. Audio in every sentence, 30-minute sessions and 2 free lessons.',
+    seoDescricao: 'Online language courses without the fluff: immersion, grammar, exercises and conversation when needed. Audio in every sentence and 2 free lessons.',
     descricao: 'Online language courses without the fluff: you study what you need, with audio in every sentence, exercises corrected on the spot, 30-minute sessions and the first 2 lessons free.',
     gancho: 'Marketing promises do not teach a language. Studying what you need, when you need it, does.',
     lead: 'Unlike other apps and sites that sell you marketing, Linvuu has no fluff: it is what you need to build a solid base and keep moving towards fluency.',
