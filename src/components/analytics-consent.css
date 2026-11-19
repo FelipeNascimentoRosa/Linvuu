@@ -38,3 +38,13 @@ html:not([data-plataforma="nativo"]) body{padding-bottom:var(--lv-consent-h,0px)
    cobria texto e capas (auditoria Impeccable C4); a faixa tem ~56px e o body já recebe padding com a altura dela. */
 @media (min-width:1024px){.analytics-consent.analytics-consent-bar{left:0;right:0;bottom:0;transform:none;width:100%;max-width:none;border-radius:0;border-inline:0;border-bottom:0;box-shadow:none;padding:.375rem max(var(--pad),calc((100vw - 1320px) / 2 + var(--pad)));flex-wrap:nowrap}
 .analytics-consent.analytics-consent-bar .analytics-consent-curto{flex:1 1 auto;max-width:none}}
+/* 18/11/2026 (Felipe): a faixa sumia no papel e os três botões tinham o mesmo peso. Agora é verde da marca, como o rodapé;
+   Aceitar e Recusar têm o mesmo tamanho (escolha livre, sem empurrar) e Detalhar vira link. */
+.analytics-consent.analytics-consent-bar{background:var(--verde-floresta);border-color:var(--verde-floresta);color:var(--papel-luz)}
+.analytics-consent.analytics-consent-bar .analytics-consent-curto{color:var(--papel-escuro)}
+.analytics-consent.analytics-consent-bar .analytics-actions .btn{border:1px solid var(--linha-sobre-marca-forte);background:transparent;color:var(--papel-luz);font-weight:700}
+.analytics-consent.analytics-consent-bar .analytics-actions .analytics-consent-aceitar{background:var(--papel-luz);border-color:var(--papel-luz);color:var(--verde-floresta)}
+.analytics-consent.analytics-consent-bar .analytics-actions .analytics-consent-aceitar:hover{background:var(--ocre-claro);border-color:var(--ocre-claro)}
+.analytics-consent.analytics-consent-bar .analytics-actions .analytics-consent-recusar:hover{border-color:var(--papel-luz)}
+.analytics-consent.analytics-consent-bar .analytics-actions .analytics-consent-detalhar{border:0;color:var(--papel-escuro);font-weight:600;text-decoration-color:var(--ocre-claro);text-underline-offset:4px}
+.analytics-consent.analytics-consent-bar .analytics-actions .btn:focus-visible{outline:3px solid var(--ocre-claro);outline-offset:2px}
