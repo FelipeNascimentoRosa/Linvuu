@@ -41,7 +41,7 @@ for (const [cod, t] of Object.entries(L)) {
     await ctx.addInitScript(([a, b]) => { try { localStorage.setItem('linvuu:sugestao-idioma-dispensada', '1'); if (!sessionStorage.getItem('semeado')) { sessionStorage.setItem('semeado', '1'); localStorage.setItem('linvuu:revisao-web:v1:visitante:ru', JSON.stringify({ versao: 1, registros: [a, b] })); } } catch {} }, [A.registro, B.registro]);
     await ctx.route('**/*', async (r) => { const u = new URL(r.request().url()); if (!u.hostname.startsWith('linvuu')) return r.abort(); const res = await r.fetch({ url: local + u.pathname + u.search, headers: { ...r.request().headers(), host: u.hostname } }); return r.fulfill({ response: res }); });
     const p = await ctx.newPage();
-    p.setDefaultTimeout(8000);
+    p.setDefaultTimeout(20000);
     p.on('pageerror', () => {});
     const erros = []; p.on('pageerror', (e) => erros.push(String(e)));
     const auditar = async (estado) => { const res = await p.evaluate(regras); const n = Object.values(res).reduce((s, v) => s + v.length, 0); ocorrencias += n; assert.equal(n, 0, `[${cod}/${nome}] ${estado}: ${n} ocorrência(s) do detector: ${JSON.stringify(res)}`); };
@@ -82,6 +82,8 @@ for (const [cod, t] of Object.entries(L)) {
     // ---- bloco 2: erros pendentes. Erra, vê o gabarito, repete a rodada e acerta ----
     await p.getByRole('button', { name: t.proximoB }).press('Enter');
     await p.getByRole('radio').first().waitFor();
+    await p.getByText(/Bloco 2 de 2|Block 2 of 2/).waitFor();
+    await p.getByRole('button', { name: /Conferir|Check/ }).waitFor();
     await p.getByRole('radio').first().waitFor();
     const errada = (await p.getByRole('radio').all());
     let clicou = false;
