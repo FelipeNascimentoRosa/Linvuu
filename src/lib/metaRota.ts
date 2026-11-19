@@ -555,8 +555,8 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
   if (base === '/por-que-linvuu') {
     // Texto inteiro na língua da página: é o que o Google lê sem executar JavaScript.
     const x = POR_QUE[loc.codigo];
-    corpo = cabeca(x.titulo, x.descricao) + `<p>${esc(x.lead)}</p>` + x.motivos.map((m) => `<h2 id="${m.id}">${esc(m.titulo)}</h2><p>${esc(m.texto)}</p>`).join('')
-      + `<h2>${esc(x.paraQuemTitulo)}</h2><p>${esc(x.paraQuem)}</p><h2>${esc(x.ctaTitulo)}</h2><p>`
+    corpo = cabeca(x.titulo, x.descricao) + `<p>${esc(x.gancho)}</p><p>${esc(x.lead)}</p><h2>${esc(x.necessarioTitulo)}</h2>` + x.necessario.map((m) => `<h3 id="${m.id}">${esc(m.titulo)}</h3><p>${esc(m.texto)}</p>`).join('') + x.motivos.map((m) => `<h2 id="${m.id}">${esc(m.titulo)}</h2><p>${esc(m.texto)}</p>`).join('')
+      + `<h2>${esc(x.ctaTitulo)}</h2><p>${a(x.ctaBotao.link, x.ctaBotao.texto)}</p><p>`
       + x.ctaSegmentos.map((s) => (s.link ? a(s.link, s.texto) : esc(s.texto))).join('') + '</p>';
   }
   if (base === '/contato') { const c = CONTATO[loc.codigo]; corpo = cabeca(c.titulo, c.descricao) + `<p>${esc(c.lead)}</p>` + li(contatos(loc.codigo).filter((x) => x.id !== 'linkedin').map((x) => `<a href="${esc(x.href)}">${esc(x.nome)}: ${esc(x.rotulo)}</a>`)) + `<h2 id="linkedin">LinkedIn</h2><p>${esc(c.autoresNota)}</p>` + li(AUTORES.map((x) => `<a href="${esc(x.links[0])}" rel="me">${esc(x.nome)}</a>`)); }
