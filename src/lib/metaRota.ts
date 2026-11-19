@@ -555,7 +555,7 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
   if (base === '/por-que-linvuu') {
     // Texto inteiro na língua da página: é o que o Google lê sem executar JavaScript.
     const x = POR_QUE[loc.codigo];
-    corpo = cabeca(x.titulo, x.descricao) + `<p>${esc(x.gancho)}</p><p>${esc(x.lead)}</p>` + x.motivos.map((m) => `<h2 id="${m.id}">${esc(m.titulo)}</h2><p>${esc(m.texto)}</p>`).join('')
+    corpo = cabeca(x.titulo, x.descricao) + `<p>${esc(x.gancho)}</p><p>${esc(x.lead)}</p><h2>${esc(x.necessarioTitulo)}</h2>` + x.necessario.map((m) => `<h3 id="${m.id}">${esc(m.titulo)}</h3><p>${esc(m.texto)}</p>`).join('') + x.motivos.map((m) => `<h2 id="${m.id}">${esc(m.titulo)}</h2><p>${esc(m.texto)}</p>`).join('')
       + `<h2>${esc(x.ctaTitulo)}</h2><p>${a(x.ctaBotao.link, x.ctaBotao.texto)}</p><p>`
       + x.ctaSegmentos.map((s) => (s.link ? a(s.link, s.texto) : esc(s.texto))).join('') + '</p>';
   }

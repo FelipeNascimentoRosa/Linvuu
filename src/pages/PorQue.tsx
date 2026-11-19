@@ -1,4 +1,3 @@
-import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import '../livros.css';
 import { SITE_URL } from '../config/site';
@@ -6,13 +5,7 @@ import { LOCALE } from '../i18n';
 import { usePageTitle } from '../lib/usePageTitle';
 import { POR_QUE } from '../lib/porQue';
 
-/** Põe em destaque os trechos do lead listados em `destaques` (o texto continua o mesmo que o Google lê). */
-function Destacado({ texto, destaques }: { texto: string; destaques: string[] }) {
-  const alvo = new RegExp(`(${destaques.map((d) => d.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'g');
-  return <>{texto.split(alvo).map((parte, i) => (i % 2 ? <strong key={i}>{parte}</strong> : <Fragment key={i}>{parte}</Fragment>))}</>;
-}
-
-/** "Por que estudar na Linvuu?": a promessa em uma frase e os motivos em fatos verificáveis. Existe em português (.com.br) e em inglês (.com). */
+/** "Por que estudar na Linvuu?": gancho, quatro quadrados coloridos (o que se estuda quando é necessário), seis motivos curtos e um CTA. pt-BR no .com.br, EN no .com. */
 export default function PorQue() {
   const x = POR_QUE[LOCALE.codigo];
   usePageTitle(x.seoTitulo ?? x.titulo, x.seoDescricao ?? x.descricao, ['pt-BR', 'en'], false);
@@ -21,16 +14,30 @@ export default function PorQue() {
       <header className="lvr-topo">
         <h1 className="pagina-h1">{x.titulo}</h1>
         <p className="pq-gancho">{x.gancho}</p>
-        <p className="lead pq-lead"><Destacado texto={x.lead} destaques={x.destaques} /></p>
+        <p className="lead pq-lead">{x.lead}</p>
       </header>
 
-      <section className="pq-motivos" aria-label={x.motivosRotulo}>
-        {x.motivos.map((m) => (
-          <article key={m.id} id={m.id} className="pq-motivo">
-            <h2>{m.titulo}</h2>
-            <p>{m.texto}</p>
-          </article>
-        ))}
+      <section className="pq-bloco" aria-labelledby="pq-nec-t">
+        <h2 id="pq-nec-t" className="pq-h2">{x.necessarioTitulo}</h2>
+        <ul className="pq-quadros">
+          {x.necessario.map((m) => (
+            <li key={m.id} id={m.id} className="pq-quadro">
+              <h3>{m.titulo}</h3>
+              <p>{m.texto}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="pq-bloco" aria-label={x.motivosRotulo}>
+        <ul className="pq-motivos">
+          {x.motivos.map((m) => (
+            <li key={m.id} id={m.id} className="pq-motivo">
+              <h2>{m.titulo}</h2>
+              <p>{m.texto}</p>
+            </li>
+          ))}
+        </ul>
       </section>
 
       <section className="pq-fim" aria-labelledby="pq-fim-t">
