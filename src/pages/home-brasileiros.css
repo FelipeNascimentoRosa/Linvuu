@@ -211,3 +211,19 @@
 .br-metricas dd{margin:0;font-family:var(--font-display);font-size:clamp(30px,3.2vw,44px);line-height:1;letter-spacing:-.02em;color:var(--papel);font-variant-numeric:tabular-nums}
 .br-metricas dt{font-size:15px;line-height:1.3;color:var(--papel-escuro);max-width:14ch}
 @media(max-width:700px){.br-hero-cta{width:100%;justify-content:center}.br-metricas{grid-template-columns:repeat(2,1fr);gap:20px 0}.br-metricas div:nth-child(odd){padding-left:0;border-left:0}.br-metricas div:nth-child(even){padding-left:20px}}
+
+/* Hero: linha fina de garantia sob o botão. */
+.br-hero-fino{margin:14px 0 0;font-size:15px;color:var(--papel-escuro)}
+/* "O que um aplicativo não explica": filete colorido por cartão (paleta --mat-*) e ação logo abaixo da grade. */
+.br-why .br-section-head p{max-width:52ch}
+.br-why-grid article[data-tom="vermelho"]{border-top-color:var(--mat-vermelho)}
+.br-why-grid article[data-tom="ocre"]{border-top-color:var(--mat-ocre)}
+.br-why-grid article[data-tom="verde"]{border-top-color:var(--mat-verde)}
+.br-why-grid article{border-top-width:4px}
+.br-why-acao{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin-top:40px}
+.br-why-acao span{color:var(--site-texto-secundario);font-size:16px}
+.br-why-cta{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 26px;border-radius:var(--r-pill);background:var(--verde-floresta);color:var(--papel-luz);font-size:17px;font-weight:700;text-decoration:none;transition:background-color .15s,transform .15s}
+.br-why-cta:hover{background:var(--mat-verde)}
+.br-why-cta:active{transform:scale(.98)}
+.br-why-cta:focus-visible{outline:3px solid var(--foco);outline-offset:3px}
+@media(max-width:700px){.br-why-cta{width:100%;justify-content:center}}
