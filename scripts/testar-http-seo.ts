@@ -52,7 +52,7 @@ try {
     while (cursor < alvos.length) {
       const { host, p, perfil, codigo } = alvos[cursor++];
       const r = await get(host, p);
-      if (perfil === 'br' && /^\/(?:curso\/br|portugues|gramatica\/br)(?:\/|$)/.test(p)) {
+      if (perfil === 'br' && /^\/(?:curso\/br|portugues|gramatica\/br|livros\/br)(?:\/|$)/.test(p)) {
         // no .com.br o português para estrangeiros (explicado em inglês) não existe: vai para o .com
         // (/portugues vai direto a /curso/br desde 13/11/2026, num salto só)
         assert.equal(r.status, 301, p);
@@ -64,9 +64,9 @@ try {
         assert.equal(r.headers.get('location'), 'https://linvuu.com/curso/br', `${host}${p}`);
         await r.arrayBuffer();
         redirecionados++;
-      } else if (perfil === 'global' && /^\/(?:livros|ex-alunos-udemy|livro\/gramatica-ru|materiais-gratuitos)(?:\/|$)/.test(p)) {
-        // no .com a coleção de livros de gramática e a página de ex-alunos da Udemy (só em português) não existem: vão para o .com.br.
-        // É o espelho da regra acima e o que scripts/seo.mjs já declara ({ p: '/livros', em: ['pt-BR'] }).
+      } else if (perfil === 'global' && /^\/(?:livros\/(?!br(?:\/|$))[^/]+|ex-alunos-udemy|livro\/gramatica-ru|materiais-gratuitos\/.+)(?:\/|$)/.test(p)) {
+        // no .com os livros em português, a página de ex-alunos da Udemy e os guias de alfabeto (explicados em português)
+        // não existem: vão para o .com.br. Desde 19/11/2026 /livros (com o livro br) e o hub /materiais-gratuitos existem no .com.
         assert.equal(r.status, 301, `${host}${p}`);
         assert.equal(r.headers.get('location'), 'https://linvuu.com.br' + p, `${host}${p}`);
         await r.arrayBuffer();

@@ -31,11 +31,13 @@ export function Footer({ semNovidades = false }: { semNovidades?: boolean }) {
         </div>
         <nav aria-label="Linvuu">
           <h2>Linvuu</h2>
-          {LOCALE.codigo !== 'pt-BR' && <Link to="/cursos">{t.nav.todos}</Link>}
-          {LOCALE.codigo !== 'pt-BR' && <Link to="/gramatica">{t.nav.gramatica}</Link>}
-          {LOCALE.codigo !== 'pt-BR' && <Link to="/curso/br">{t.rodape.portugues}</Link>}
-          {LOCALE.codigo === 'pt-BR' && <><Link to="/gramatica">{t.nav.gramatica}</Link><Link to="/livros">Livros</Link><Link to="/materiais-gratuitos">Materiais gratuitos</Link><Link to="/sobre">{t.rodape.sobre}</Link><Link to="/por-que-linvuu">{t.rodape.porQue}</Link><Link to="/ex-alunos-udemy">Ex-alunos da Udemy</Link></>}
-          {LOCALE.codigo !== 'pt-BR' && <><Link to="/sobre">{t.rodape.sobre}</Link><Link to="/por-que-linvuu">{t.rodape.porQue}</Link></>}
+          {/* Mesma lista nos dois domínios; «Ex-alunos da Udemy» só no .com.br (o curso da Udemy é para brasileiros). */}
+          <Link to="/gramatica">{t.nav.gramatica}</Link>
+          <Link to="/livros">{LOCALE.codigo === 'pt-BR' ? 'Livros' : 'Books'}</Link>
+          <Link to="/materiais-gratuitos">{LOCALE.codigo === 'pt-BR' ? 'Materiais gratuitos' : 'Free materials'}</Link>
+          <Link to="/sobre">{t.rodape.sobre}</Link>
+          <Link to="/por-que-linvuu">{t.rodape.porQue}</Link>
+          {LOCALE.codigo === 'pt-BR' && <Link to="/ex-alunos-udemy">Ex-alunos da Udemy</Link>}
           <Link to="/#avaliacoes">{t.nav.avaliacoes}</Link>
           <Link to="/#faq">{t.nav.duvidas}</Link>
           <Link to="/contato">{t.rodape.contato}</Link>

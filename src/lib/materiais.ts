@@ -20,6 +20,22 @@ export const CAMINHO_HUB = "/materiais-gratuitos";
 export const caminhoAlfabeto = (slug: string) => `${CAMINHO_HUB}/${slug}`;
 export const TITULO_HUB = "Materiais gratuitos: alfabeto e pronúncia";
 export const DESCRICAO_HUB = "Guias gratuitos de alfabeto e pronúncia da Linvuu, sem cadastro: russo, alemão, francês, italiano e espanhol, para quem fala português, com áudio.";
+/** Hub no .com (inglês, desde 19/11/2026, ordem do Felipe: o .com espelha o .com.br). Os guias de alfabeto são
+ * explicados em português e continuam só no .com.br; no .com cada cartão leva à primeira aula grátis do curso, que
+ * já apresenta o alfabeto e os sons explicados em inglês. Mesmas imagens e mesmo desenho do hub brasileiro. */
+export const HUB_EN = {
+  titulo: "Free materials: alphabet and pronunciation",
+  descricao: "Free alphabet and pronunciation lessons from Linvuu: Russian, German, French, Italian and Spanish, explained in English, with audio in every sentence.",
+  h1: "Free materials",
+  lead: "Short lessons to study for free. Each one opens a language with its alphabet and its sounds: the letters that look like English ones, the ones that trick you and the ones that are new.",
+  idioma: { ru: "Russian", de: "German", fr: "French", it: "Italian", es: "Spanish" } as Record<string, string>,
+  sub: "Letters, sounds and audio in the free first lesson",
+  cta: "Open the free lesson",
+  conviteT: "From the alphabet to your first conversation.",
+  convite: "The first 2 lessons of every course are free, explained in English, with audio in every sentence.",
+  conviteCta: "Start a course for free",
+};
+export const caminhoAulaGratis = (id: string) => `/curso/${id}/dia/1`;
 export const LEAD_HUB = "Guias curtos para estudar sem cadastro e sem pagar. Cada um reúne o alfabeto do idioma em uma página: as letras que parecem com as do português, as que enganam e as que são novas.";
 
 /** Todo texto falado (palavras em russo, alemão...) de um idioma, para conferir a cobertura de áudio. */

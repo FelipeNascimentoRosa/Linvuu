@@ -1,7 +1,7 @@
 import { perguntasHome as perguntas } from '../lib/perguntasHome';
 import { HomeCourseLink } from '../components/HomeCourseLink';
-import { CursoCard } from '../components/CursoCard';
-import { homeText as h, homeNotice } from '../i18n/home';
+import { CursoCard, LivroDoCurso } from '../components/CursoCard';
+import { homeText as h } from '../i18n/home';
 import { LOCALE } from '../i18n';
 import { useState } from 'react';
 import { OfertaAtual } from '../components/OfertaAtual';
@@ -10,6 +10,9 @@ import { Link } from 'react-router-dom';
 import { falar } from '../lib/audio';
 import { usePageTitle } from '../lib/usePageTitle';
 import { CURSOS_ATIVOS, cursoComExplicacaoNoSite, coberturaNoSite } from '../lib/content';
+
+// Catálogo da home, na mesma ordem nos dois domínios: no .com o português (br) ocupa o lugar do inglês.
+const CATALOGO = { 'pt-BR': ['en', 'es', 'de', 'fr', 'it', 'ru'], en: ['br', 'es', 'de', 'fr', 'it', 'ru'] } as const;
 import './home-brasileiros.css';
 import { Avaliacoes } from '../components/Avaliacoes';
 
@@ -33,7 +36,7 @@ export default function HomeBrasileiros() {
   const ehCom = LOCALE.codigo !== 'pt-BR';
   const completo = (id: string) => { const c = coberturaNoSite(id); return c.total > 0 && c.traduzidas >= c.total; };
   const principais = ehCom ? idiomas.filter((i) => completo(i.id)) : idiomas;
-  const emTraducao = ehCom ? idiomas.filter((i) => !completo(i.id)) : [];
+  const catalogo = CATALOGO[LOCALE.codigo].map((id) => CURSOS_ATIVOS.find((c) => c.id === id)).filter((c): c is (typeof CURSOS_ATIVOS)[number] => !!c && cursoComExplicacaoNoSite(c.id));
   usePageTitle(h(HOME_BR.tituloSeo), h(HOME_BR.descricao));
   const totalAulas = principais.reduce((n, i) => n + coberturaNoSite(i.id).total, 0);
   const [idioma, setIdioma] = useState(principais[0] ?? idiomas[0]);
@@ -53,7 +56,8 @@ export default function HomeBrasileiros() {
     catch { setErro(h('Não foi possível tocar o áudio. Tente novamente.')); }
     finally { setTocando(false); }
   };
-  return <div className={`br-home${!ehCom ? " br-home-leve" : ""}`}>
+  // Mesmo esqueleto e desenho nos dois domínios (Felipe, 19/11/2026: o .com espelha o .com.br); muda só a língua.
+  return <div className="br-home br-home-leve">
     <section className="br-hero" aria-labelledby="br-h1">
       <div className="br-hero-in">
         <div className="br-hero-topo br-hero-topo-simples">
@@ -100,11 +104,8 @@ export default function HomeBrasileiros() {
         <span>{h("Grátis, sem cartão, no seu ritmo.")}</span>
       </div>
     </section>
-    <section className="br-section br-motion-item" id="idiomas" aria-labelledby={ehCom ? undefined : "titulo-livros"}><span id="cursos" /><div className="br-section-head"><div><h2 id={ehCom ? undefined : "titulo-livros"}>{ehCom ? <>{h("Qual idioma você")}<br />{h("quer aprender hoje?")}</> : "Escolha seu idioma."}</h2></div>{ehCom ? <p>{h("Para viajar, se aproximar de outras culturas ou realizar um objetivo seu. Encontre um idioma para começar.")}</p> : <p>Cada curso tem livro de apoio, áudio em cada frase e as 2 primeiras aulas grátis.</p>}</div>{ehCom ? <div className="br-languages">{principais.map((i, n) => <HomeCourseLink cta="home_curso" key={i.id} to={`/curso/${i.id}`} className={`br-language br-language-${n}`}><span className="br-greeting" lang={i.lang}>{i.oi}{ehCom && <span aria-hidden="true">.</span>}</span><div><h3>{ehCom ? h(i.nome) : `Quero aprender ${i.nome.toLowerCase()}`}</h3><span aria-hidden="true">→</span></div></HomeCourseLink>)}</div> : <div className="site-publico site-catalogo"><div className="curso-grid">{['en', 'es', 'de', 'fr', 'it', 'ru'].map((id) => CURSOS_ATIVOS.find((curso) => curso.id === id)!).filter(Boolean).map((c) => <div className="catalogo-idioma" key={c.id}><CursoCard curso={c} nivel={3} catalogoRascunho /><div className="catalogo-livro"><span>Livro · 2 capítulos grátis</span><Link to={`/livros/${c.id}`}>Abrir livro de {c.nome} <span aria-hidden="true">↗</span></Link></div></div>)}</div></div>}{emTraducao.length > 0 && <div className="br-traducao"><p>The English explanations for these courses are being written lesson by lesson. You can already start with the lessons that are ready:</p><ul>{emTraducao.map((i) => { const c = coberturaNoSite(i.id); return <li key={i.id}><HomeCourseLink cta="home_curso" to={`/curso/${i.id}`}>{h(i.nome)}</HomeCourseLink><span>{c.traduzidas} of {c.total} lessons in English</span></li>; })}</ul></div>}</section>
-    {/* Os livros só existem em português (/livros no .com redireciona ao .com.br): no .com a seção prometia o que o visitante não lê. */}
-    {LOCALE.codigo === 'pt-BR' && (
-    <section className="br-book"><div><h2>Seu aprendizado também tem páginas.</h2><p>Explore os livros da Linvuu, leia com calma e volte aos assuntos que merecem mais atenção.</p></div><Link className="br-text-link" to="/livros">Conhecer a coleção <span aria-hidden="true">→</span></Link></section>
-    )}
+    <section className="br-section br-motion-item" id="idiomas" aria-labelledby="titulo-livros"><span id="cursos" /><div className="br-section-head"><div><h2 id="titulo-livros">{ehCom ? 'Choose your language.' : 'Escolha seu idioma.'}</h2></div><p>{ehCom ? 'Every course comes with audio in every sentence and the first 2 lessons free.' : 'Cada curso tem livro de apoio, áudio em cada frase e as 2 primeiras aulas grátis.'}</p></div><div className="site-publico site-catalogo"><div className="curso-grid">{catalogo.map((c) => <div className="catalogo-idioma" key={c.id}><CursoCard curso={c} nivel={3} catalogoRascunho /><LivroDoCurso curso={c} /></div>)}</div></div></section>
+    <section className="br-book"><div><h2>{ehCom ? 'Your learning has pages, too.' : 'Seu aprendizado também tem páginas.'}</h2><p>{ehCom ? 'Read Linvuu’s Brazilian Portuguese grammar calmly and come back to the topics that deserve more attention.' : 'Explore os livros da Linvuu, leia com calma e volte aos assuntos que merecem mais atenção.'}</p></div><Link className="br-text-link" to="/livros">{ehCom ? 'See the book' : 'Conhecer a coleção'} <span aria-hidden="true">→</span></Link></section>
     <OfertaAtual />
     <div className="br-section br-avaliacoes br-motion-item"><Avaliacoes vitrine /></div>
     <section className="br-section br-faq br-motion-item" id="faq"><div><h2>{h("Uma dúvida")}<br />{h("antes do primeiro passo?")}</h2><Link to="/contato" className="br-text-link">{h("Fale com a Linvuu")}</Link></div><div>{perguntas.map(([p,r]) => <details key={p}><summary>{h(p)}</summary><p>{h(r)}</p></details>)}</div></section>

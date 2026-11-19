@@ -113,3 +113,4 @@
 .contato-texto{display:flex;flex-direction:column;min-width:0}
 .contato-texto strong{font-size:17px}
 .contato-texto span{font-size:15px;color:var(--text-2,inherit);overflow-wrap:anywhere}
+.lvr > section > p,.lvr-direitos{max-width:70ch} /* medida de leitura (detector: linha ≤ 80 caracteres) */
