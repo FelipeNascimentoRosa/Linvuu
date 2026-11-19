@@ -22,6 +22,7 @@ export const CTAS = [
   'assinatura_anual',
   'assinatura_continuar',
   'assinatura_gerenciar',
+  'revisao_web',
 ] as const;
 export type Cta = (typeof CTAS)[number];
 export const ctaValido = (v: unknown): v is Cta => typeof v === 'string' && (CTAS as readonly string[]).includes(v);
