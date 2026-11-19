@@ -1,7 +1,7 @@
 import { perguntasHome } from './perguntasHome.ts';
 import { homeText } from '../i18n/home.ts';
 import { gerarPerguntasCurso } from './perguntasCurso.ts';
-import type { Graph, Thing, WithContext, Person, MerchantReturnPolicy } from 'schema-dts';
+import type { Article, Graph, ItemList, Offer, Thing, WithContext, Person, MerchantReturnPolicy } from 'schema-dts';
 import { AUTHOR_ID, ORGANIZATION_ID, grafoInstitucional } from './seo/schema-graph.ts';
 // Título, descrição e endereço de cada rota, para o servidor entregar o HTML já com as metatags certas
 // (o WhatsApp, o Facebook e outros robôs não executam JavaScript; sem isto, todo link mostraria o texto da página inicial).
@@ -247,7 +247,7 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
   const livroBase = { em: ['pt-BR'] as Locale['codigo'][], semIndice: loc.codigo !== 'pt-BR' ? true : undefined };
   if (p === '/sobre') { const s = SOBRE[loc.codigo]; return { status: 200, caminho: p, titulo: s.seoTitulo ?? s.titulo, descricao: s.seoDescricao ?? s.descricao, em: ['pt-BR', 'en'], jsonld: [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: s.titulo, url: `${SITE}/sobre`, inLanguage: loc.codigo, mainEntity: { '@id': ORG_ID } }, organizacao(SITE), ...AUTORES.map((a) => pessoa(a, SITE))] }; }
   // /por-que-linvuu existe nos dois idiomas desde 09/11/2026, como o /sobre — texto em src/lib/porQue.ts.
-  if (p === '/por-que-linvuu') { const x = POR_QUE[loc.codigo]; return { status: 200, caminho: p, titulo: x.seoTitulo ?? x.titulo, descricao: x.seoDescricao ?? x.descricao, em: ['pt-BR', 'en'], jsonld: [{ '@context': 'https://schema.org', '@type': 'WebPage', name: x.titulo, url: `${SITE}/por-que-linvuu`, inLanguage: loc.codigo, about: { '@id': ORG_ID } }, organizacao(SITE)] }; }
+  if (p === '/por-que-linvuu') { const x = POR_QUE[loc.codigo]; return { status: 200, caminho: p, titulo: x.seoTitulo ?? x.titulo, descricao: x.seoDescricao ?? x.descricao, em: ['pt-BR', 'en'], jsonld: [{ '@context': 'https://schema.org', '@type': 'WebPage', name: x.titulo, url: `${SITE}/por-que-linvuu`, inLanguage: loc.codigo, about: { '@id': ORG_ID } }, artigo({ url: `${SITE}/por-que-linvuu`, titulo: x.titulo, descricao: x.seoDescricao ?? x.descricao, codigo: loc.codigo, modificado: dataPagina(loc, p) }), organizacao(SITE)] }; }
   // /contato existe nos dois idiomas desde 09/11/2026: texto em src/lib/institucional.ts (CONTATO).
   // Era a última página de confiança em português no domínio inglês (F1 do EN_AUDIT.md).
   if (p === '/contato') { const c = CONTATO[loc.codigo]; return { status: 200, caminho: p, titulo: c.seoTitulo, descricao: c.seoDescricao, em: ['pt-BR', 'en'], jsonld: [{ '@context': 'https://schema.org', '@type': 'ContactPage', name: c.titulo, url: `${SITE}/contato`, inLanguage: loc.codigo, about: { '@id': ORG_ID } }, organizacao(SITE)] }; }
@@ -271,6 +271,7 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     const url = `${SITE}${p}`;
     return { status: 200, caminho: p, titulo: a.titulo, descricao: a.descricao, ...livroBase, jsonld: [
       { '@context': 'https://schema.org', '@type': 'LearningResource', '@id': `${url}#guia`, author: { '@id': AUTHOR_ID }, name: a.h1, description: a.descricao, url, inLanguage: 'pt-BR', isAccessibleForFree: true, learningResourceType: 'Guia de estudo', educationalLevel: 'Iniciante', teaches: a.ensina, timeRequired: `PT${a.minutos}M`, dateModified: dataDe(p), isPartOf: { '@type': 'CollectionPage', name: TITULO_MATERIAIS, url: `${SITE}${CAMINHO_MATERIAIS}` }, provider: { '@id': ORG_ID } },
+      artigo({ url, titulo: a.h1, descricao: a.descricao, codigo: 'pt-BR', modificado: dataPagina(loc, p) }),
       { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Materiais gratuitos', item: `${SITE}${CAMINHO_MATERIAIS}` }, { '@type': 'ListItem', position: 2, name: `Alfabeto ${a.idioma}`, item: url }] },
     ] };
   }
@@ -282,6 +283,8 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     const caps = Object.values(d?.livros[l.id]?.caps ?? {}).sort((a, b) => a.n - b.n);
     return { status: 200, caminho: p, titulo: tituloLivro(l), descricao: l.descricao, ...livroDominio, jsonld: [
       { '@context': 'https://schema.org', '@type': 'Book', '@id': `${url}#livro`, name: tituloLivro(l), url, inLanguage: loc.codigo, about: l.nome, image: `${SITE}/livros/${l.id}-a1-a2-v1-900.webp`, educationalLevel: 'A1–A2 (CEFR)', author: AUTORES.map((a) => ({ '@type': 'Person', '@id': a.id === 'felipe' ? AUTHOR_ID : `${SITE}/sobre#${a.id}`, name: a.nome, url: `${SITE}/sobre#${a.id}` })), publisher: { '@id': ORG_ID }, description: l.descricao, hasPart: caps.map((c) => ({ '@type': 'Chapter', name: `${ls.cap} ${c.n}: ${c.titulo}`, position: c.n, url: `${url}/capitulo/${c.n}`, isAccessibleForFree: true })) },
+      // Product: o livro completo vem com o plano pago (os capítulos 1 e 2 são grátis, já no Book/Chapter). Ofertas = as do plano, na moeda do domínio.
+      { '@context': 'https://schema.org', '@type': 'Product', '@id': `${url}#produto`, name: tituloLivro(l), description: l.descricao, url, image: `${SITE}/livros/${l.id}-a1-a2-v1-900.webp`, brand: { '@type': 'Brand', name: 'Linvuu' }, category: loc.codigo === 'en' ? 'Language learning book' : 'Livro de idiomas', offers: ofertasAssinatura(loc.codigo === 'en', SITE) },
       { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: ls.livros, item: `${SITE}/livros` }, { '@type': 'ListItem', position: 2, name: l.nome, item: url }] },
     ] };
   }
@@ -295,6 +298,7 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     // (AUDITORIA-SITE-2026-11-11 §5). O nível CEFR do capítulo entra no título: é o que a pessoa procura.
     return { status: 200, caminho: p, titulo: `${l.curto ?? l.nome}, ${ls.capAbrev} ${c.n}: ${c.titulo.split(':')[0]}${c.nivel ? ` (${c.nivel.toUpperCase()})` : ''}`, semMarca: true, descricao: descricaoCapitulo(l, c, loc.codigo === 'en'), ...livroDominio, jsonld: [
       { '@context': 'https://schema.org', '@type': 'Chapter', name: `${ls.cap} ${c.n}: ${c.titulo}`, position: c.n, url, inLanguage: loc.codigo, isAccessibleForFree: true, educationalLevel: c.nivel || undefined, timeRequired: `PT${minutosDeLeitura(c)}M`, dateModified: dataDe(`/livros/${l.id}/capitulo/${c.n}`), isPartOf: { '@type': 'Book', name: tituloLivro(l), url: `${SITE}/livros/${l.id}` }, author: AUTORES.map((a) => ({ '@type': 'Person', '@id': a.id === 'felipe' ? AUTHOR_ID : `${SITE}/sobre#${a.id}`, name: a.nome, url: `${SITE}/sobre#${a.id}` })), publisher: { '@id': ORG_ID } },
+      artigo({ url, titulo: `${ls.cap} ${c.n}: ${c.titulo}`, descricao: descricaoCapitulo(l, c, loc.codigo === 'en'), codigo: loc.codigo, modificado: dataPagina(loc, p) }),
       { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: ls.livros, item: `${SITE}/livros` }, { '@type': 'ListItem', position: 2, name: l.nome, item: `${SITE}/livros/${l.id}` }, { '@type': 'ListItem', position: 3, name: `${ls.cap} ${c.n}`, item: url }] },
     ] };
   }
@@ -321,7 +325,7 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     if (p === '/assinatura') {
       const en = loc.codigo === 'en';
       jsonld.push(
-        { '@context': 'https://schema.org', '@type': 'Product', name: en ? 'Linvuu Subscription' : 'Assinatura Linvuu', description: fixas[p].descricao, image: `${SITE}/brand/linvuu-logo.png`, brand: { '@type': 'Brand', name: 'Linvuu' }, ...trechoSchema(aprovadasPorDominio[en ? 'global' : 'br']), offers: (en ? [['Monthly', precoSchema(CENTAVOS_USD.mensal)], ['Annual', precoSchema(CENTAVOS_USD.anual)]] : [['Mensal', precoSchema(CENTAVOS.mensal)], ['Trimestral Pix', precoSchema(CENTAVOS['trimestral-pix'])], ['Trimestral cartão ou boleto', precoSchema(CENTAVOS.trimestral)], ['Anual', precoSchema(CENTAVOS.anual)]]).map(([name, price]) => ({ '@type': 'Offer', name, price, priceCurrency: en ? 'USD' : 'BRL', availability: 'https://schema.org/InStock', url: `${SITE}/assinatura`, hasMerchantReturnPolicy: politicaReembolso(en) })) },
+        { '@context': 'https://schema.org', '@type': 'Product', name: en ? 'Linvuu Subscription' : 'Assinatura Linvuu', description: fixas[p].descricao, image: `${SITE}/brand/linvuu-logo.png`, brand: { '@type': 'Brand', name: 'Linvuu' }, ...trechoSchema(aprovadasPorDominio[en ? 'global' : 'br']), offers: ofertasAssinatura(en, SITE) },
         { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: en
           ? [{ '@type': 'Question', name: 'Can I try it without a card?', acceptedAnswer: { '@type': 'Answer', text: 'The first two lessons of every course are free, with no card required.' } }, { '@type': 'Question', name: 'What currency are the prices in?', acceptedAnswer: { '@type': 'Answer', text: 'US dollars: US$19.99 a month or US$149 for 12 months, paid by card.' } }]
           : [{ '@type': 'Question', name: 'Posso experimentar sem cartão?', acceptedAnswer: { '@type': 'Answer', text: 'As duas primeiras aulas de cada curso são gratuitas, sem cartão.' } }, { '@type': 'Question', name: 'Qual é o desconto no Pix?', acceptedAnswer: { '@type': 'Answer', text: `O plano trimestral custa ${PRECO_TRIMESTRAL_PIX} no Pix, 30% de desconto sobre ${PRECO_TRIMESTRAL}.` } }] },
@@ -425,6 +429,10 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
       const tit = loc.codigo === 'en' ? SEO_EN.gramaticaT : SEO_BR.gramaticaT;
       const hubJson: (WithContext<Thing> | Graph)[] = [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: tit, url: urlAbsolutaEm(loc.codigo, p), inLanguage: loc.codigo, isPartOf: { '@id': ORG_ID } },
         { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: tx.inicio, item: urlAbsolutaEm(loc.codigo, '/') }, { '@type': 'ListItem', position: 2, name: tx.gram, item: urlAbsolutaEm(loc.codigo, p) }] }];
+      if (d) {
+        const gramaticas = d.cursos.filter((c) => c.id !== loc.cursoOculto && c.status !== 'em-breve' && gramaticaExisteEm(d, c.id, loc.explicacao));
+        if (gramaticas.length) hubJson.push(listaDeItens(`${urlAbsolutaEm(loc.codigo, p)}#lista`, tit, gramaticas.map((c) => ({ nome: TX[loc.codigo].gramC(c.nome), url: urlAbsolutaEm(loc.codigo, `/gramatica/${c.id}`) }))));
+      }
       return { status: 200, caminho: p, titulo: tit, descricao: loc.codigo === 'en' ? SEO_EN.gramaticaD : SEO_BR.gramaticaD, jsonld: hubJson };
     }
     const c = curso(m[1]);
@@ -449,6 +457,7 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
       jsonld: [
         // A página de gramática é o recurso de referência do curso: tópicos e tabelas cuja descrição nomeia a língua real das explicações.
         { '@context': 'https://schema.org', '@type': 'LearningResource', author: autoresSchema, name: titGram, description: descGram, url, inLanguage: loc.codigo, learningResourceType: 'Grammar reference', teaches: c.nome, dateModified: dataDe(loc.codigo === 'en' ? `/en${p}` : p), isPartOf: { '@type': 'Course', name: tx.cursoJ(c.nome), url: cursoUrl }, provider: { '@id': ORG_ID } },
+        artigo({ url, titulo: titGram, descricao: descGram, codigo: loc.codigo, modificado: dataPagina(loc, p) }),
         { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: tx.inicio, item: `${urlAbsolutaEm(loc.codigo, '/')}` }, { '@type': 'ListItem', position: 2, name: c.nome, item: cursoUrl }, { '@type': 'ListItem', position: 3, name: titGram, item: url }] },
       ],
     };
@@ -611,6 +620,27 @@ const SITE_BR = 'https://linvuu.com.br';
 // Produto digital: sem devolução física, por isso returnMethod fica de fora (e shippingDetails não se aplica).
 const PAISES_GLOBAL = ['US', 'GB', 'CA', 'AU', 'IE', 'NZ'];
 const politicaReembolso = (en: boolean): MerchantReturnPolicy => ({ '@type': 'MerchantReturnPolicy', applicableCountry: en ? PAISES_GLOBAL : 'BR', returnPolicyCountry: en ? PAISES_GLOBAL : 'BR', returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow', merchantReturnDays: 7, returnFees: 'https://schema.org/FreeReturn' });
+/** Ofertas do plano pago no domínio da página: moeda e preços do próprio domínio (BRL no .com.br, USD no .com), lidos de planos.ts.
+ *  A mesma lista serve ao Product de /assinatura e ao Product de cada livro (o livro inteiro vem com o plano). */
+const ofertasAssinatura = (en: boolean, site: string): Offer[] => (en
+  ? [['Monthly', precoSchema(CENTAVOS_USD.mensal)], ['Annual', precoSchema(CENTAVOS_USD.anual)]]
+  : [['Mensal', precoSchema(CENTAVOS.mensal)], ['Trimestral Pix', precoSchema(CENTAVOS['trimestral-pix'])], ['Trimestral cartão ou boleto', precoSchema(CENTAVOS.trimestral)], ['Anual', precoSchema(CENTAVOS.anual)]]
+).map(([name, price]) => ({ '@type': 'Offer' as const, name, price, priceCurrency: en ? 'USD' : 'BRL', availability: 'https://schema.org/InStock', url: `${site}/assinatura`, hasMerchantReturnPolicy: politicaReembolso(en) }));
+/** Article das páginas editoriais (gramática, capítulo de livro, guia de alfabeto, "por que estudar"). `dateModified` só com data
+ *  verificável (content/lastmod.json, gerado do git): sem data no manifesto, o campo some, nunca é inventado. */
+const artigo = (o: { url: string; titulo: string; descricao: string; codigo: string; modificado?: string }): WithContext<Article> => ({
+  '@context': 'https://schema.org', '@type': 'Article', '@id': `${o.url}#artigo`,
+  headline: o.titulo.length > 110 ? `${o.titulo.slice(0, 109)}…` : o.titulo, description: o.descricao,
+  author: [...autoresSchema], publisher: { '@id': ORGANIZATION_ID }, ...(o.modificado ? { dateModified: o.modificado } : {}),
+  mainEntityOfPage: { '@type': 'WebPage', '@id': o.url }, inLanguage: o.codigo,
+});
+/** ItemList com posição, nome e URL absoluta (do domínio da página) de cada item exibido, na ordem da tela. */
+const listaDeItens = (id: string, nome: string, itens: readonly { nome: string; url: string }[]): WithContext<ItemList> => ({
+  '@context': 'https://schema.org', '@type': 'ItemList', '@id': id, name: nome, numberOfItems: itens.length,
+  itemListElement: itens.map((i, k) => ({ '@type': 'ListItem' as const, position: k + 1, name: i.nome, url: i.url })),
+});
+/** Data da última mudança da página no domínio dela (o manifesto guarda o .com com o prefixo /en do esquema antigo). */
+const dataPagina = (loc: Locale, p: string) => dataDe(loc.codigo === 'en' ? `/en${p}` : p);
 const orgId = (_site: string) => ORGANIZATION_ID;
 const autoresSchema = [{ '@id': AUTHOR_ID }, { '@id': 'https://linvuu.com.br/sobre#luiza' }] as const;
 const organizacao = (_site: string) => grafoInstitucional();

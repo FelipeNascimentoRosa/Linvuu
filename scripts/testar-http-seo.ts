@@ -153,7 +153,30 @@ try {
     assert.equal(r.headers.get('location'), target, p);
     await r.arrayBuffer();
   }
-  console.log(JSON.stringify({ paginasHttp: verificados, redirecionados, aliases: 3, resultado: 'conforme' }));
+  // Dados estruturados de leitura por máquina: Product, Article e ItemList, por domínio, sem vazar idioma nem moeda.
+  const contagem: Record<Perfil, Record<string, number>> = { br: { Product: 0, Article: 0, ItemList: 0 }, global: { Product: 0, Article: 0, ItemList: 0 } };
+  for (const perfil of ['br', 'global'] as const) {
+    const host = HOST[perfil], moeda = perfil === 'br' ? 'BRL' : 'USD', lingua = perfil === 'br' ? 'pt-BR' : 'en';
+    const sm = await (await get(host, '/sitemap.xml')).text();
+    for (const [, loc] of sm.matchAll(/<loc>https:\/\/[^/]+([^<]*)<\/loc>/g)) {
+      const html = await (await get(host, loc || '/')).text();
+      const blocos = [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)].map(m => JSON.parse(m[1]));
+      const nos = blocos.flatMap(b => (b['@graph'] ?? [b]) as Record<string, any>[]);
+      const tipos = new Set(nos.map(n => n['@type']));
+      for (const t of ['Product', 'Article', 'ItemList']) if (tipos.has(t)) contagem[perfil][t]++;
+      for (const n of nos) {
+        if (n['@type'] === 'Article') {
+          assert.equal(n.inLanguage, lingua, `${host}${loc}: Article com idioma do domínio`);
+          assert.ok(n.headline && n.description && n.publisher && n.author?.length && n.mainEntityOfPage?.['@id']?.startsWith(`https://${host}`), `${host}${loc}: Article completo`);
+          if (n.dateModified) assert.match(n.dateModified, /^\d{4}-\d{2}-\d{2}$/, `${host}${loc}: dateModified válido`);
+        }
+        if (n['@type'] === 'Product') for (const o of n.offers) assert.equal(o.priceCurrency, moeda, `${host}${loc}: moeda do domínio`);
+        if (n['@type'] === 'ItemList') for (const it of n.itemListElement) assert.ok(String(it.url ?? it.item?.url).startsWith(`https://${host}`), `${host}${loc}: item da lista no domínio`);
+      }
+    }
+    assert.ok(contagem[perfil].Product >= 2 && contagem[perfil].Article >= 8 && contagem[perfil].ItemList >= 3, `${host}: Product/Article/ItemList presentes`);
+  }
+  console.log(JSON.stringify({ paginasHttp: verificados, redirecionados, aliases: 3, schemaPorDominio: contagem, resultado: 'conforme' }));
 } finally {
   child.kill();
 }
