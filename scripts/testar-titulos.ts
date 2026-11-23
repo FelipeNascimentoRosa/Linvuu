@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { carregarDadosMeta, metaDaRota } from '../src/lib/metaRota.ts';
 import { comPerfil } from '../src/i18n/locales.ts';
 import { SESSOES_GRATIS } from '../src/config/planos.ts';
+import { DUVIDAS, caminhoDuvida } from '../src/lib/duvidas.ts';
 
 // Títulos das páginas indexáveis (home, hubs, livros, capítulos e aulas grátis) ficam entre 30 e 60 caracteres,
 // como o Google os mostra, nos dois domínios. O limite de 30 faltava até 11/11/2026: `/livros/de/capitulo/1`
@@ -23,7 +24,7 @@ let total = 0;
 for (const perfil of ['br', 'global'] as const) {
   comPerfil(perfil, () => {
     const codigo = perfil === 'br' ? 'pt-BR' : 'en';
-    const caminhos: string[] = ['/', '/cursos', '/assinatura', '/termos', '/privacidade', '/portugues', '/russo-online', '/sobre', '/por-que-linvuu', '/contato', '/ex-alunos-udemy', '/livros', '/gramatica', '/excluir-conta', ...livrosIndexaveis()];
+    const caminhos: string[] = ['/', '/cursos', '/assinatura', '/termos', '/privacidade', '/portugues', '/russo-online', '/sobre', '/por-que-linvuu', '/contato', '/ex-alunos-udemy', '/livros', '/gramatica', '/excluir-conta', ...livrosIndexaveis(), ...DUVIDAS.map(caminhoDuvida)];
     for (const c of d.cursos) {
       caminhos.push('/curso/' + c.id, '/gramatica/' + c.id);
       for (const g of d.indice[c.id]?.grupos ?? []) for (let n = g.dias[0]; n <= Math.min(g.dias[1], SESSOES_GRATIS); n++) caminhos.push(`/curso/${c.id}/dia/${n}`);
@@ -51,7 +52,7 @@ let totalDesc = 0;
 for (const perfil of ['br', 'global'] as const) {
   comPerfil(perfil, () => {
     const codigo = perfil === 'br' ? 'pt-BR' : 'en';
-    const paginas = ['/', '/cursos', '/assinatura', '/termos', '/privacidade', '/portugues', '/russo-online', '/sobre', '/por-que-linvuu', '/contato', '/ex-alunos-udemy', '/livros', '/gramatica', '/excluir-conta', ...livrosIndexaveis()];
+    const paginas = ['/', '/cursos', '/assinatura', '/termos', '/privacidade', '/portugues', '/russo-online', '/sobre', '/por-que-linvuu', '/contato', '/ex-alunos-udemy', '/livros', '/gramatica', '/excluir-conta', ...livrosIndexaveis(), ...DUVIDAS.map(caminhoDuvida)];
     for (const c of d!.cursos) paginas.push('/curso/' + c.id, '/gramatica/' + c.id);
     for (const p of paginas) {
       const m = metaDaRota(p, d);

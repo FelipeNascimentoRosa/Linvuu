@@ -44,7 +44,12 @@ grupos.push({ p: '/materiais-gratuitos', em: todos(), anot: todos() });
 for (const f of fs.readdirSync(path.join(raiz, 'src', 'lib', 'alfabeto')).filter((x) => x !== 'base.ts').sort()) {
   const slug = fs.readFileSync(path.join(raiz, 'src', 'lib', 'alfabeto', f), 'utf8').match(/slug: "(alfabeto-[a-z]+)"/)?.[1];
   if (slug) grupos.push({ p: `/materiais-gratuitos/${slug}`, em: ['pt-BR'] });
-}// Hub da gramática: desde 12/11/2026 é uma página de verdade (src/pages/Gramatica.tsx sem id lista as gramáticas
+}
+// Páginas de dúvida (src/lib/duvidas.ts, 23/11/2026): uma pergunta por página, em português, só no .com.br e sem
+// hreflang (não existe versão em inglês). Lidas por expressão regular, como os guias de alfabeto acima.
+const DUVIDAS = [...fs.readFileSync(path.join(raiz, 'src', 'lib', 'duvidas.ts'), 'utf8').matchAll(/idioma: '([a-z]{2})',[\s\S]*?slug: '([a-z0-9-]+)',\s*titulo: '([^']+)'/g)].map(([, idioma, slug, titulo]) => ({ idioma, slug, titulo }));
+for (const x of DUVIDAS) grupos.push({ p: `/gramatica/${x.idioma}/${x.slug}`, em: ['pt-BR'] });
+// Hub da gramática: desde 12/11/2026 é uma página de verdade (src/pages/Gramatica.tsx sem id lista as gramáticas
 // do domínio), com o mesmo título no <head> e no <h1>; por isso entra no sitemap nas duas línguas.
 grupos.push({ p: '/gramatica', em: todos(), anot: todos() });
 // As páginas legais indexáveis existem nos dois idiomas; exclusão de conta fica fora do sitemap por política de robots.
@@ -149,6 +154,9 @@ ${cursosDe('pt-BR', SITE_BR, false).join('\n')}
 - ${md('Todos os cursos', `${SITE_BR}/cursos`)}
 - ${md('Gramáticas', `${SITE_BR}/gramatica`)}
 - ${md('Aulas de russo ao vivo, com professor', `${SITE_BR}/russo-online`)}
+
+## Dúvidas de gramática
+${DUVIDAS.map((x) => `- ${md(x.titulo, `${SITE_BR}/gramatica/${x.idioma}/${x.slug}`)}`).join('\n')}
 
 ## Livros de gramática
 - ${md('Catálogo dos livros', `${SITE_BR}/livros`)}: os capítulos 1 e 2 de cada livro são de leitura gratuita.

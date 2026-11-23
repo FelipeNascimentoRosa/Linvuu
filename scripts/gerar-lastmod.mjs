@@ -85,6 +85,7 @@ function fontesDaPagina(caminho, locale) {
   }
   if ((m = caminho.match(/^\/curso\/([a-z]{2})$/))) return ['content/cursos.json', 'content/indice.json', 'content/trilha.json', ...indiceL];
   if ((m = caminho.match(/^\/gramatica\/([a-z]{2})$/))) return [`content/gramatica/${m[1]}.json`, ...(L ? [`content/gramatica/${m[1]}.${L}.json`] : [])];
+  if ((m = caminho.match(/^\/gramatica\/([a-z]{2})\/[a-z0-9-]+$/))) return ['src/lib/duvidas.ts', 'src/pages/Duvida.tsx'];
   if ((m = caminho.match(/^\/livros\/([a-z]{2})\/capitulo\/(\d+)$/))) return [`content/livros/${m[1]}/cap-${pad(m[2], 2)}.json`];
   if ((m = caminho.match(/^\/livros\/([a-z]{2})$/))) return ['src/pages/Livros.tsx', `content/livros/${m[1]}/sumario.json`, `content/livros/${m[1]}/cap-01.json`, `content/livros/${m[1]}/cap-02.json`];
   if ((m = caminho.match(/^\/materiais-gratuitos\/alfabeto-(russo|alemao|frances|italiano|espanhol)$/))) return [`src/lib/alfabeto/${{ russo: 'ru', alemao: 'de', frances: 'fr', italiano: 'it', espanhol: 'es' }[m[1]]}.ts`, 'src/lib/alfabeto/base.ts'];

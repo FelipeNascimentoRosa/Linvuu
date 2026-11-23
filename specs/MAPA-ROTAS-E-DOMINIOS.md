@@ -65,8 +65,11 @@ Fonte da verdade: a tabela de cobertura abaixo (contagem de arquivos em `content
 | `/gramatica` | sim | sim | en ↔ pt-BR |
 | `/gramatica/br` | — | sim | — |
 | `/gramatica/de` | sim | sim | en ↔ pt-BR |
+| `/gramatica/de/der-die-das` | sim | — | — |
 | `/gramatica/en` | sim | — | — |
+| `/gramatica/en/present-perfect` | sim | — | — |
 | `/gramatica/es` | sim | sim | en ↔ pt-BR |
+| `/gramatica/es/falsos-amigos` | sim | — | — |
 | `/gramatica/fr` | sim | sim | en ↔ pt-BR |
 | `/gramatica/it` | sim | — | — |
 | `/gramatica/ru` | sim | sim | en ↔ pt-BR |

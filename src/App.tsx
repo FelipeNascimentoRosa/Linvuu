@@ -23,6 +23,8 @@ const AulasRusso = lazy(() => import('./pages/AulasRusso'));
 // Materiais gratuitos (guias de alfabeto): só existe no site, em português; no APK o módulo vira vazio (vite.config).
 const MateriaisIndice = lazy(() => import('./pages/MateriaisGratuitos').then((m) => ({ default: m.MateriaisIndice })));
 const AlfabetoPagina = lazy(() => import('./pages/MateriaisGratuitos').then((m) => ({ default: m.AlfabetoPagina })));
+// Páginas de dúvida (/gramatica/<idioma>/<slug>): só no site, em português; no APK o módulo vira vazio (vite.config).
+const Duvida = lazy(() => import('./pages/Duvida'));
 const PorQue = lazy(() => import('./pages/PorQue'));
 const Contato = lazy(() => import('./pages/Contato'));
 const ExAlunosUdemy = lazy(() => import('./pages/ExAlunosUdemy'));
@@ -79,6 +81,7 @@ export default function App() {
           <Route path="/cadastro" element={<Conta modo="cadastro" />} />
           <Route path="/gramatica" element={<Gramatica />} />
           <Route path="/gramatica/:id" element={<Gramatica />} />
+          <Route path="/gramatica/:id/:slug" element={NATIVO ? <Navigate to="/" replace /> : <Duvida />} />
           <Route path="/livro/gramatica-ru" element={<LivroGramatica />} />
           <Route path="/livros" element={<LivrosIndice />} />
           <Route path="/livros/:id" element={<LivroPagina />} />

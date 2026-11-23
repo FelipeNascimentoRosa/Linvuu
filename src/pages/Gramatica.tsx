@@ -11,6 +11,7 @@ import { Paywall } from '@plataforma/Bloqueio';
 import { api } from '../lib/api';
 import { carregarAuth } from '../lib/firebase';
 import { useAuth } from '../lib/AuthContext';
+import { caminhoDuvida, duvidasDoIdioma } from '../lib/duvidas';
 
 type Topico = Omit<Extract<Bloco, { tipo: 'gramatica' }>, 'tipo' | 'min' | 'tag'> & { id: string; categoria: string; aula: number; aulaTitulo: string; sessao: string; dia: number; /** língua do texto quando o tópico ainda não foi traduzido */ explicacaoEm?: string };
 interface Pacote { idioma: string; categorias: string[]; topicos: Topico[]; completo: boolean; bloqueados: number; semTraducao?: number }
@@ -92,6 +93,13 @@ export default function Gramatica() {
       <div className="chips" role="group" aria-label={g.idioma}>
         {IDIOMAS.map((k) => <Fragment key={k}>{linkGram(k, getCurso(k)?.nome, k === curso.id ? 'chip on' : 'chip', k === curso.id)}</Fragment>)}
       </div>
+      {/* Páginas de dúvida do idioma (src/lib/duvidas.ts): só em português, no .com.br. */}
+      {LOCALE.codigo === 'pt-BR' && duvidasDoIdioma(curso.id).length > 0 && (
+        <nav className="gram-duvidas" aria-labelledby="gram-duvidas-t">
+          <h2 id="gram-duvidas-t" className="pagina-h2">Dúvidas frequentes</h2>
+          <ul>{duvidasDoIdioma(curso.id).map((x) => <li key={x.slug}><Link to={caminhoDuvida(x)}>{x.h1}</Link></li>)}</ul>
+        </nav>
+      )}
       {/* Gramática sem tradução na língua do site: dizer antes de mostrar (D10 — título em inglês sobre miolo em português). */}
       {cob.traduzidas === 0 && <p className="nota">{g.semTraducaoTotal}</p>}
       {falhou && <p className="erro" role="alert">{g.erro}</p>}
