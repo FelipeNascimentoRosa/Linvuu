@@ -24,6 +24,7 @@ import { AUTORES, CAPITULOS_GRATIS, LIVROS_DESCRICAO, LIVROS_EM_PRODUCAO, LIVROS
 import { APRESENTACOES_CURSO, APRESENTACOES_LIVRO } from './apresentacoes.ts';
 import { AULAS_RUSSO } from '../config/aulas-russo';
 import { DESC_SEO_CURSO } from '../config/seoCurso.ts';
+import { duvidaPor, duvidaParaHtml, duvidasDoIdioma, caminhoDuvida } from './duvidas.ts';
 import { ALFABETOS, CAMINHO_HUB as CAMINHO_MATERIAIS, DESCRICAO_HUB as DESCRICAO_MATERIAIS, TITULO_HUB as TITULO_MATERIAIS, alfabetoPorSlug, alfabetoParaHtml, caminhoAlfabeto, caminhoAulaGratis, HUB_EN } from './materiais.ts';
 // Data da última mudança do conteúdo (a mesma do <lastmod> do sitemap, gerada por scripts/gerar-lastmod.mjs).
 // Vai como dateModified nos capítulos e gramáticas: os auditores claude-seo/GEO pediram data de atualização (13/11/2026).
@@ -275,6 +276,18 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
       { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Materiais gratuitos', item: `${SITE}${CAMINHO_MATERIAIS}` }, { '@type': 'ListItem', position: 2, name: `Alfabeto ${a.idioma}`, item: url }] },
     ] };
   }
+  // Páginas de dúvida (src/lib/duvidas.ts, 23/11/2026): em português, só no .com.br (no .com há 301 em server/dominio.ts),
+  // sem hreflang. Dados estruturados: Article e trilha, sem FAQPage (estratégia §5.7: o valor está no texto, não no rich result).
+  const dm = p.match(/^\/gramatica\/([a-z]{2})\/([a-z0-9-]+)$/);
+  if (dm) {
+    const x = duvidaPor(dm[1], dm[2]);
+    if (!x) return naoEncontrada(p, loc);
+    const url = `${SITE}${p}`;
+    return { status: 200, caminho: p, titulo: x.titulo, h1: x.h1, descricao: x.descricao, ...livroBase, jsonld: [
+      { ...artigo({ url, titulo: x.h1, descricao: x.descricao, codigo: 'pt-BR', modificado: dataDe(p) }), about: { '@type': 'Thing', name: `Gramática do ${x.nomeIdioma}` }, isAccessibleForFree: true },
+      { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: tx.inicio, item: `${SITE}/` }, { '@type': 'ListItem', position: 2, name: SEO_BR.gramT(x.nomeIdioma), item: `${SITE}/gramatica/${x.idioma}` }, { '@type': 'ListItem', position: 3, name: x.h1, item: url }] },
+    ] };
+  }
   let lm = p.match(/^\/livros\/([^/]+)$/);
   if (lm) {
     const l = livroDoSite(lm[1], loc.codigo);
@@ -523,7 +536,10 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
     else if (ma && alfabetoPorSlug(ma[1])) {
       const a = alfabetoPorSlug(ma[1])!;
       corpo = cabeca(a.h1, a.lead) + alfabetoParaHtml(a) + `<p><a href="/curso/${a.id}">Conhecer o curso de ${esc(a.idioma)}</a> · <a href="/livros/${a.id}/capitulo/1">Ler o capítulo 1 do livro</a> · <a href="${CAMINHO_MATERIAIS}">Todos os materiais gratuitos</a></p>`;
-    }    const mc = base.match(/^\/curso\/([^/]+)$/);
+    }
+    const md = base.match(/^\/gramatica\/([a-z]{2})\/([a-z0-9-]+)$/);
+    if (md && duvidaPor(md[1], md[2])) corpo = cabeca(m.h1 ?? m.titulo ?? '', undefined) + duvidaParaHtml(duvidaPor(md[1], md[2])!);
+    const mc = base.match(/^\/curso\/([^/]+)$/);
     const mg = base.match(/^\/gramatica\/([a-z]{2})$/);
     if (corpo) { /* livros */ } else if (mc) {
       const c = visiveis.find((x) => x.id === mc[1]);
@@ -544,7 +560,8 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
     } else if (mg && d) {
       // Só chega aqui o que é indexável (o topo da função devolve '' para noindex): a gramática existe na língua da página.
       const suf = (d.indice[mg[1]]?.fonte ?? 'pt') === loc.explicacao ? '' : loc.explicacao;
-      corpo = cabeca(m.h1 ?? m.titulo ?? '', m.descricao) + gramaticaGratisParaHtml(d, mg[1], suf) + `<p>${a(`/curso/${mg[1]}`, visiveis.find((x) => x.id === mg[1])?.nome ?? mg[1])}</p>`;
+      const duvidas = loc.codigo === 'pt-BR' ? duvidasDoIdioma(mg[1]) : [];
+      corpo = cabeca(m.h1 ?? m.titulo ?? '', m.descricao) + (duvidas.length ? `<h2>Dúvidas frequentes</h2>${li(duvidas.map((x) => a(caminhoDuvida(x), x.h1)))}` : '') + gramaticaGratisParaHtml(d, mg[1], suf) + `<p>${a(`/curso/${mg[1]}`, visiveis.find((x) => x.id === mg[1])?.nome ?? mg[1])}</p>`;
     } else if (m.titulo) {
       corpo = cabeca(m.h1 ?? m.titulo, m.descricao);
     }

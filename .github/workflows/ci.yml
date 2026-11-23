@@ -49,6 +49,8 @@ jobs:
         run: node --import tsx scripts/testar-prontidao.ts
       - name: Testar títulos das páginas indexáveis (até 60 caracteres)
         run: node --import tsx scripts/testar-titulos.ts
+      - name: Testar as páginas de dúvida (fidelidade ao conteúdo, formato e domínio)
+        run: node --import tsx scripts/testar-duvidas.ts
       - name: Testar a origem do áudio pago (repositório privado, v2 primeiro, nomes validados)
         run: node --import tsx scripts/testar-audio-privado.ts
       - name: Testar rota assetlinks (nunca publica fingerprint inventado)

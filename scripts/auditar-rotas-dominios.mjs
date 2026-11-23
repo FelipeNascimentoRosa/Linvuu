@@ -19,7 +19,9 @@ const DOMINIOS = {
 };
 // Páginas que citam o OUTRO idioma de propósito (curso/gramática DE inglês no .com.br tem frases em inglês; o português no .com
 // tem exemplos em português). Só entram aqui páginas de ensino do idioma, nunca texto de interface.
-const ISENTAS_IDIOMA = [/^\/curso\/(en|br)$/, /^\/gramatica\/(en|br)$/, /^\/livros(\/|$)/, /^\/materiais-gratuitos/, /^\/curso\/it$/];
+const ISENTAS_IDIOMA = [/^\/curso\/(en|br)$/, /^\/gramatica\/(en|br)$/, /^\/livros(\/|$)/, /^\/materiais-gratuitos/, /^\/curso\/it$/,
+  // Páginas de dúvida (23/11/2026): português com tabelas e exemplos na língua estudada (inglês, no present perfect).
+  /^\/gramatica\/[a-z]{2}\/[a-z0-9-]+$/];
 
 const ATUALIZAR_MAPA = process.argv.includes('--atualizar-mapa');
 const DOC = path.join(import.meta.dirname, '..', 'specs', 'MAPA-ROTAS-E-DOMINIOS.md');

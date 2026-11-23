@@ -3,6 +3,7 @@
 import type { Express, Request, Response, NextFunction } from 'express';
 import { SITE_URL, SITE_GLOBAL_URL } from '../src/config/site.ts';
 import { comPerfil, perfilDoHost, type Perfil } from '../src/i18n/locales.ts';
+import { DUVIDAS, caminhoDuvida } from '../src/lib/duvidas.ts';
 
 const HOST_BR = new URL(SITE_URL).hostname;
 const HOST_GLOBAL = new URL(SITE_GLOBAL_URL).hostname;
@@ -41,6 +42,8 @@ export function redirecionamentoDeDominio(host: string, caminho: string, consult
   // .com: o hub /materiais-gratuitos existe em inglês desde 19/11/2026; os guias de alfabeto (explicados em português)
   // continuam só no .com.br.
   if (h === HOST_GLOBAL && /^\/materiais-gratuitos\/.+/.test(caminho)) return `${SITE_URL}${caminho}${q}`;
+  // .com: as páginas de dúvida (src/lib/duvidas.ts) são escritas em português para quem fala português: moram no .com.br.
+  if (h === HOST_GLOBAL && DUVIDAS.some((x) => caminho.replace(/\/+$/, '') === caminhoDuvida(x))) return `${SITE_URL}${caminho}${q}`;
   // .com: a página para ex-alunos da Udemy existe só em português (o curso da Udemy é para brasileiros): mora no .com.br.
   if (h === HOST_GLOBAL && /^\/ex-alunos-udemy(\/|$)/.test(caminho)) return `${SITE_URL}${caminho}${q}`;
   // .com: o livro de gramática russa só existe em português (antes respondia 200 com título em PT no site em inglês).

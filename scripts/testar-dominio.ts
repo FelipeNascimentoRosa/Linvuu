@@ -42,6 +42,12 @@ const casos: [string, string, string, string, string | null][] = [
   ['/materiais-gratuitos no .com é o hub em inglês', GLOBAL, '/materiais-gratuitos', '', null],
   ['um guia dos materiais gratuitos no .com acompanha o redirecionamento', GLOBAL, '/materiais-gratuitos/alfabeto-russo', 'utm_source=x', url(SITE_URL, '/materiais-gratuitos/alfabeto-russo') + '?utm_source=x'],
   ['/materiais-gratuitos no .com.br é a página normal', BR, '/materiais-gratuitos/alfabeto-russo', '', null],
+  // Páginas de dúvida (23/11/2026): em português, só no .com.br.
+  ['página de dúvida de espanhol no .com vai para o .com.br', GLOBAL, '/gramatica/es/falsos-amigos', 'utm_source=x', url(SITE_URL, '/gramatica/es/falsos-amigos') + '?utm_source=x'],
+  ['página de dúvida de alemão no .com vai para o .com.br', GLOBAL, '/gramatica/de/der-die-das', '', url(SITE_URL, '/gramatica/de/der-die-das')],
+  ['página de dúvida de inglês no .com vai para o .com.br', GLOBAL, '/gramatica/en/present-perfect', '', url(SITE_URL, '/gramatica/en/present-perfect')],
+  ['página de dúvida no .com.br é a página normal', BR, '/gramatica/es/falsos-amigos', '', null],
+  ['a gramática de espanhol do .com continua no .com', GLOBAL, '/gramatica/es', '', null],
   ['/livro (sem s) não é a coleção', GLOBAL, '/livro', '', null],
   ['/curso/br segue no .com (explicação em inglês)', GLOBAL, '/curso/br', '', null],
   ['/curso/br no .com.br é tratado na rota, não aqui', BR, '/curso/br', '', null],

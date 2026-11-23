@@ -31,6 +31,7 @@
     "build:apk": "node scripts/build-plataforma.mjs apk",
     "testar:plataformas": "node scripts/testar-plataformas.mjs",
     "testar:dominio": "node --import tsx scripts/testar-dominio.ts",
+    "testar:duvidas": "node --import tsx scripts/testar-duvidas.ts",
     "lint:apk": "tsc --noEmit -p tsconfig.apk.json",
     "testar:regras": "npm --prefix scripts/regras ci && npx --yes firebase-tools@15.34.1 emulators:exec --only firestore --project demo-linvuu-regras \"node scripts/regras/testar-regras.mjs\"",
     "testar:exclusao": "node --import tsx scripts/testar-exclusao.ts",

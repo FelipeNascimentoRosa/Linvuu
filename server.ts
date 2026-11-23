@@ -211,6 +211,7 @@ registrarCtas(app); // POST /api/cta: clique de botão contado sem cookie e sem 
       [/^\/curso\/[a-z]{2}\/dia\/\d+$/, 'src/plataforma/website/Dia.tsx'],
       [/^\/assinatura$/, 'src/plataforma/website/Assinatura.tsx'],
       [/^\/gramatica(\/[a-z]{2})?$/, 'src/pages/Gramatica.tsx'],
+      [/^\/gramatica\/[a-z]{2}\/[a-z0-9-]+$/, 'src/pages/Duvida.tsx'],
       [/^\/livros(\/.*)?$/, 'src/pages/Livros.tsx'],
       [/^\/(termos|privacidade)$/, 'src/plataforma/website/Legal.tsx'],
       [/^\/sobre$/, 'src/pages/Sobre.tsx'], [/^\/por-que-linvuu$/, 'src/pages/PorQue.tsx'], [/^\/contato$/, 'src/pages/Contato.tsx'],
