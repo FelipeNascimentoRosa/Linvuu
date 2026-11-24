@@ -64,8 +64,8 @@ function chaveAssinatura(segredo: string, data: string): Buffer {
   return hmac(kServico, 'aws4_request');
 }
 
-function uriDoObjeto(chave: string): string {
-  return `/${chave.split('/').map(codificar).join('/')}`;
+function uriDoObjeto(bucket: string, chave: string): string {
+  return `/${codificar(bucket)}/${chave.split('/').map(codificar).join('/')}`;
 }
 
 /**
@@ -77,7 +77,7 @@ export function urlPreAssinadaR2(cfg: ConfigR2, chave: string, expiracaoSegundos
   const nomeHost = `${cfg.conta}.r2.cloudflarestorage.com`;
   const { data, carimbo } = dataAmz(agora);
   const ambito = `${data}/auto/s3/aws4_request`;
-  const uri = uriDoObjeto(chave);
+  const uri = uriDoObjeto(cfg.bucket, chave);
   const consulta: Record<string, string> = {
     'X-Amz-Algorithm': 'AWS4-HMAC-SHA256',
     'X-Amz-Credential': `${cfg.chaveAcesso}/${ambito}`,
@@ -107,7 +107,7 @@ export function pedidoAssinadoS3(
   const nomeHost = `${cfg.conta}.r2.cloudflarestorage.com`;
   const { data, carimbo } = dataAmz(opts.agora ?? new Date());
   const ambito = `${data}/auto/s3/aws4_request`;
-  const uri = uriDoObjeto(chave);
+  const uri = uriDoObjeto(cfg.bucket, chave);
   const consulta = Object.keys(opts.consulta ?? {}).sort().map((k) => `${codificar(k)}=${codificar(opts.consulta![k])}`).join('&');
   const extras = Object.fromEntries(
     Object.entries(opts.cabecalhos ?? {}).map(([k, v]) => [k.toLowerCase(), v.trim()]),

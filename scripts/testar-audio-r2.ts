@@ -36,7 +36,7 @@ t('chave v1', chaveAudioR2('v1', 'en', 'abcdef12.mp3') === 'audio-privado/en/abc
 // URL pré-assinada: estrutura + assinatura recalculada de forma independente
 const url = new URL(urlPreAssinadaR2(CFG, 'audio-privado-v2/ru/abcdef12.mp3', 60, AGORA));
 t('URL pré-assinada no host do R2', url.hostname === `${CFG.conta}.r2.cloudflarestorage.com`);
-t('URL pré-assinada com o caminho do objecto', url.pathname === '/audio-privado-v2/ru/abcdef12.mp3');
+t('URL pré-assinada com o bucket e caminho do objecto', url.pathname === '/linvuu-audio/audio-privado-v2/ru/abcdef12.mp3');
 t('parâmetros da assinatura', url.searchParams.get('X-Amz-Algorithm') === 'AWS4-HMAC-SHA256'
   && url.searchParams.get('X-Amz-Credential') === `${CFG.chaveAcesso}/20261124/auto/s3/aws4_request`
   && url.searchParams.get('X-Amz-Date') === '20261124T120000Z'
@@ -48,26 +48,26 @@ t('assinatura com 64 hex', /^[0-9a-f]{64}$/.test(url.searchParams.get('X-Amz-Sig
     .filter(([k]) => k !== 'X-Amz-Signature')
     .sort(([a], [b]) => (a < b ? -1 : 1))
     .map(([k, v]) => `${encodeURIComponent(k)}=${encodeURIComponent(v)}`).join('&');
-  const pedido = ['GET', '/audio-privado-v2/ru/abcdef12.mp3', canonica, `host:${CFG.conta}.r2.cloudflarestorage.com\n`, 'host', 'UNSIGNED-PAYLOAD'].join('\n');
+  const pedido = ['GET', '/linvuu-audio/audio-privado-v2/ru/abcdef12.mp3', canonica, `host:${CFG.conta}.r2.cloudflarestorage.com\n`, 'host', 'UNSIGNED-PAYLOAD'].join('\n');
   const esperada = hmac(chaveAssinatura(CFG.chaveSecreta, '20261124'), pedido).toString('hex');
   t('assinatura da URL pré-assinada confere', url.searchParams.get('X-Amz-Signature') === esperada);
 }
 
 // Pedido assinado por cabeçalho (HEAD): formato + assinatura recalculada
 const { url: urlHead, cabecalhos } = pedidoAssinadoS3(CFG, 'HEAD', 'audio-privado-v2/ru/abcdef12.mp3', { corpoHash: sha256Hex(''), agora: AGORA });
-t('HEAD na URL do objecto', urlHead === `https://${CFG.conta}.r2.cloudflarestorage.com/audio-privado-v2/ru/abcdef12.mp3`);
+t('HEAD na URL do objecto', urlHead === `https://${CFG.conta}.r2.cloudflarestorage.com/linvuu-audio/audio-privado-v2/ru/abcdef12.mp3`);
 t('HEAD com X-Amz-Date', cabecalhos['X-Amz-Date'] === '20261124T120000Z');
 {
   const auth = cabecalhos.Authorization ?? '';
   const assinatura = auth.match(/Signature=([0-9a-f]{64})$/)?.[1] ?? '';
-  const pedido = ['HEAD', '/audio-privado-v2/ru/abcdef12.mp3', '', `host:${CFG.conta}.r2.cloudflarestorage.com\nx-amz-date:20261124T120000Z\n`, 'host;x-amz-date', sha256Hex('')].join('\n');
+  const pedido = ['HEAD', '/linvuu-audio/audio-privado-v2/ru/abcdef12.mp3', '', `host:${CFG.conta}.r2.cloudflarestorage.com\nx-amz-date:20261124T120000Z\n`, 'host;x-amz-date', sha256Hex('')].join('\n');
   const esperada = hmac(chaveAssinatura(CFG.chaveSecreta, '20261124'), pedido).toString('hex');
   t('assinatura do HEAD confere', assinatura === esperada && auth.includes('SignedHeaders=host;x-amz-date'));
 }
 
 // urlDoAudioPrivadoR2 com fetch simulado
 const fetchFalso = (estado: Record<string, number>) => (async (u: string | URL, opts?: { method?: string }) => {
-  const chave = String(u).split('.com/')[1]?.split('?')[0] ?? '';
+  const chave = String(u).split('.com/linvuu-audio/')[1]?.split('?')[0] ?? '';
   const status = estado[chave] ?? 404;
   return { status, ok: status >= 200 && status < 300 } as Response;
 }) as unknown as typeof fetch;
