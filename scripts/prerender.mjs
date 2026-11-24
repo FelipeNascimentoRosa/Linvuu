@@ -49,6 +49,8 @@ for (const p of PERFIS) if (!urls.some((u) => u.perfil === p.perfil && u.caminho
 // Servidor de produção sem credenciais reais (mesmo modelo do Lighthouse): só visitante, nada pago.
 const env = { ...process.env, NODE_ENV: 'production', PORT: String(PORTA), DOTENV_PATH: path.join(raiz, '.lighthouseci', 'sem-credenciais.env') };
 for (const k of Object.keys(env)) if (/^(STRIPE_|FIREBASE_|GOOGLE_|REVENUECAT_|POSTHOG_|METRICAS_)/i.test(k)) env[k] = '';
+// The temporary build server reads dist/ before Vercel moves files for the function.
+delete env.VERCEL;
 const servidor = spawn(process.execPath, ['--import', 'tsx', 'server.ts'], { cwd: raiz, env, stdio: ['ignore', 'ignore', 'inherit'] });
 const encerrar = () => { if (servidor.exitCode === null) servidor.kill(); };
 process.on('exit', encerrar);
