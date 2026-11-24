@@ -7,6 +7,12 @@ import { SESSOES_GRATIS } from '../src/config/planos.ts';
 
 const d = carregarDadosMeta(process.cwd());
 assert.ok(d, 'metadados carregados');
+// Italiano tem a primeira aula em inglês, mesmo com o restante ainda em tradução.
+comPerfil('global', () => {
+  assert.ok(!metaDaRota('/curso/it/dia/1', d).semIndice, 'amostra traduzida em inglês deve ser indexável');
+  assert.ok(metaDaRota('/curso/it/dia/9', d).semIndice, 'sessão posterior não entra automaticamente no índice');
+  assert.ok(metaDaRota('/gramatica/it', d).semIndice, 'gramática parcialmente traduzida não é liberada por esta alteração');
+});
 const base = fs.readFileSync('index.html', 'utf8');
 const SITEMAP_BR = fs.readFileSync('public/sitemap.xml', 'utf8');
 const SITEMAP_GLOBAL = fs.readFileSync('public/sitemap-global.xml', 'utf8');
@@ -25,7 +31,7 @@ for (const [perfil, loc] of LOCALES_POR_PERFIL) comPerfil(perfil, () => {
       // Regra desde 11/11/2026: a sessão nunca é página de busca — a página de busca do curso é o hub (`/curso/<id>`).
       // A sessão continua servida a quem estuda (é a aula grátis que o hub anuncia), mas não recebe tráfego do Google.
       assert.equal(m.status, 200, p);
-      // Exceção de 13/11/2026: a sessão 1 é indexável exatamente onde o curso inteiro está explicado (e só ali está no sitemap).
+      // A sessão 1 é indexável onde a sua própria aula existe na língua do público.
       const noSitemap = (loc.codigo === 'en' ? SITEMAP_GLOBAL : SITEMAP_BR).includes(`${urlAbsolutaEm(loc.codigo, p)}</loc>`);
       if (n === 1) assert.equal(!m.semIndice, noSitemap, `sessão 1 indexável ⇔ no sitemap: ${p}`);
       else assert.ok(m.semIndice, `sessão fora do índice: ${p}`);
