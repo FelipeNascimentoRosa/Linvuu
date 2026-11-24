@@ -7,3 +7,7 @@ A mudança em andamento remove redirecionamentos automáticos entre domínios e 
 Lacunas observadas: livros, materiais e páginas de dúvida no .com sem material próprio para falantes de inglês; conteúdo de português para estrangeiros somente para público inglês; italiano no .com com duas aulas em inglês e gramática que registra 60 aulas sem versão inglesa. É necessária revisão pedagógica, não apenas tradução, e auditoria das demais áreas, áudios, conteúdo pago e fluxos autenticados.
 
 Verificado: testes pontuais HTTP locais para indisponibilidade por domínio, filtro da gramática italiana e aula sem versão inglesa. A suíte testar:dominio e os testes HTTP anteriores ainda esperam os redirecionamentos removidos e devem ser atualizados. npm run lint já falhava na base main por incompatibilidade de ts-fsrs. PR deve continuar em rascunho até corrigir os testes, validar navegador nos dois domínios e fluxos autenticados e obter checks verdes. Nada foi mesclado ou publicado.
+
+## Verifica??o adicional de isolamento
+
+A API seleciona a l?ngua pelo dom?nio p?blico inclusive quando o par?metro ? omitido e recusa solicita??es cruzadas. A origem do aplicativo nativo mant?m a escolha existente. Testes HTTP cobrem os dois dom?nios, chamadas do aplicativo, ?udio p?blico e bloqueio de aula e ?udio pagos sem credenciais; teste Chromium verifica links de livros e URLs indispon?veis. A valida??o autenticada de assinatura ativa e ?udio privado real continua pendente: n?o h? credenciais de teste dispon?veis neste ambiente.

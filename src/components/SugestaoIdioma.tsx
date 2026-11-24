@@ -9,8 +9,8 @@ import './sugestao-idioma.css';
 
 const CHAVE = 'linvuu:sugestao-idioma-dispensada';
 const TX: Record<CodigoLocale, { texto: string; ir: string; curto: string; fechar: string }> = {
-  en: { texto: 'Prefer English? Linvuu explains every course in English.', ir: 'Open Linvuu in English', curto: 'In English', fechar: 'Stay here' },
-  'pt-BR': { texto: 'Fala português? A Linvuu explica todos os cursos em português.', ir: 'Abrir a Linvuu em português', curto: 'Em português', fechar: 'Continuar aqui' },
+  en: { texto: 'Prefer English? Visit Linvuu for English speakers.', ir: 'Open Linvuu in English', curto: 'In English', fechar: 'Stay here' },
+  'pt-BR': { texto: 'Fala português? Visite a Linvuu para quem fala português.', ir: 'Abrir a Linvuu em português', curto: 'Em português', fechar: 'Continuar aqui' },
 };
 
 export function SugestaoIdioma() {

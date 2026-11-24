@@ -113,7 +113,7 @@ export const en: Dicionario = {
     aula: (n: number) => `Lesson ${n}`, sessoes: (a: number, b: number) => `Sessions ${a}–${b}`, depois: 'Coming next (planned)', trilha: 'The course, session by session', fase: (n: number) => `Stage ${n}`,
     sessaoDe: (k: number) => `Session ${k} of 4`, gratis: 'free', assinantes: 'subscribers', aulaTitulo: (a: number, t: string) => `lesson ${a}, ${t}`,
     explicadoEm: 'Explained in English',
-    cobertura: (a: number, b: number, l: string) => (a >= b ? 'Every lesson of this course is explained in English.' : `Explanations in English: ${a} of ${b} lessons so far. The other lessons are being translated and, until then, show their explanations in ${l}.`),
+    cobertura: (a: number, b: number, l: string) => (a >= b ? 'Every lesson of this course is explained in English.' : `Explanations for English speakers: ${a} of ${b} lessons are available. The remaining lessons are not yet available.`),
     naoParaVoce: (curso: string) => `This ${curso} course was written for Portuguese speakers.`,
   },
   nivel: {
@@ -170,8 +170,8 @@ export const en: Dicionario = {
     idioma: 'Language', categoria: 'Category', todas: 'All', erro: 'We could not load the grammar right now. Reload the page.',
     topicos: (n: number) => (n === 1 ? '1 topic' : `${n} topics`), aula: (n: number) => `Lesson ${n}`, praticar: (a: number, s: string) => `Practise it in lesson ${a}, session ${s}`,
     bloqueados: (n: number) => `These are the topics of the first 2 lessons. The other ${n} topics are for subscribers.`,
-    semTraducao: 'Some topics are still shown in Portuguese until their translation is ready.',
-    semTraducaoTotal: 'This grammar has not been translated into English yet: the topics below are explained in Portuguese. The examples and tables are the same.',
+    semTraducao: 'Only topics available for English speakers are shown.',
+    semTraducaoTotal: 'This grammar is not yet available for English speakers.',
   },
   assinatura: {
     titulo: 'Subscription', entreOu: ['To subscribe,', 'sign in', 'or', 'create your account'], gratis: (n: number) => `The first ${n} lessons of every course are free.`,

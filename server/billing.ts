@@ -137,13 +137,25 @@ export function registrarCobranca(app: Express, urlBase: (req: Request) => strin
     if (!u) { res.status(401).json({ error: 'Entre na sua conta.' }); return null; }
     return u;
   };
+  // O aplicativo nativo usa a mesma API e mantém sua escolha explícita de idioma.
+  // Nos sites públicos, o Host define o público também para chamadas diretas à API.
+  const linguaDaApi = (req: Request): string | null => {
+    const origemApp = ['https://localhost', 'http://localhost', 'capacitor://localhost'].includes(req.headers.origin ?? '');
+    const solicitada = String(req.query.l ?? '');
+    if (origemApp) return solicitada || (req.params.idioma === 'br' ? 'en' : 'pt');
+    const host = req.hostname.toLowerCase().replace(/^www\./, '');
+    const dominio = host === 'linvuu.com' ? 'en' : host === 'linvuu.com.br' ? 'pt' : '';
+    if (!dominio) return solicitada || 'pt';
+    return solicitada && solicitada !== dominio ? null : dominio;
+  };
 
   // Sessões depois da 8ª (as 2 primeiras aulas são grátis): só saem do servidor para quem tem assinatura ativa.
   app.get('/api/aula/:idioma/:n', async (req: Request, res: Response) => {
     const idioma = String(req.params.idioma), n = Number(req.params.n);
     if (!/^[a-z]{2}$/.test(idioma) || !Number.isInteger(n) || n < 1 || n > 999) { res.status(404).json({ error: 'Aula não encontrada.' }); return; }
     // ?l=en: a mesma sessão com a explicação traduzida (content/idiomas/<id>/<l>/dia-NNN.json), quando existir.
-    const l = String(req.query.l ?? '');
+    const l = linguaDaApi(req);
+    if (!l || (l === 'pt' && idioma === 'br')) { res.status(404).json({ error: 'Content unavailable for this audience.' }); return; }
     const nome = `dia-${String(n).padStart(3, '0')}.json`;
     const traduzido = /^en$/.test(l) ? path.join(process.cwd(), 'content', 'idiomas', idioma, l, nome) : '';
     if (traduzido && idioma !== 'br' && !fs.existsSync(traduzido)) { res.status(404).json({ error: 'Lesson unavailable in English.' }); return; }
@@ -163,7 +175,8 @@ export function registrarCobranca(app: Express, urlBase: (req: Request) => strin
   app.get('/api/gramatica/:idioma', async (req: Request, res: Response) => {
     const idioma = String(req.params.idioma);
     if (!/^[a-z]{2}$/.test(idioma)) { res.status(404).json({ error: 'Não encontrado.' }); return; }
-    const l = String(req.query.l ?? '');
+    const l = linguaDaApi(req);
+    if (!l || (l === 'pt' && idioma === 'br')) { res.status(404).json({ error: 'Content unavailable for this audience.' }); return; }
     const traduzida = /^en$/.test(l) ? path.join(process.cwd(), 'content', 'gramatica', `${idioma}.${l}.json`) : '';
     if (traduzida && idioma !== 'br' && !fs.existsSync(traduzida)) { res.status(404).json({ error: 'Grammar unavailable in English.' }); return; }
     const arq = traduzida && fs.existsSync(traduzida) ? traduzida : path.join(process.cwd(), 'content', 'gramatica', `${idioma}.json`);
