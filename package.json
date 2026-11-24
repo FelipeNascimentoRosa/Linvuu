@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tsx server.ts",
     "build": "node scripts/audio-privado.mjs && node scripts/conteudo.mjs --check && node scripts/travas-en.mjs && node scripts/seo.mjs && vite build && (npx playwright install chromium || true) && node scripts/prerender.mjs && node scripts/validar-prerender.mjs && node scripts/comprimir.mjs",
-    "build:vercel": "node scripts/validar-audio-privado.mjs && node scripts/conteudo.mjs --check && node scripts/travas-en.mjs && node scripts/seo.mjs && vite build && (npx playwright install chromium || true) && node scripts/prerender.mjs && node scripts/validar-prerender.mjs && node scripts/comprimir.mjs && node scripts/mover-arquivos-servidor.mjs",
+    "build:vercel": "node scripts/validar-audio-privado.mjs && node scripts/conteudo.mjs --check && node scripts/travas-en.mjs && node scripts/seo.mjs && vite build && (npx playwright install chromium || true) && node scripts/prerender.mjs && node scripts/validar-prerender.mjs && node scripts/comprimir.mjs && node scripts/mover-arquivos-servidor.mjs && npx esbuild server/vercel-entry.ts --bundle --platform=node --format=esm --packages=external --outfile=api/index.mjs",
     "audio:r2": "node --import tsx scripts/enviar-audio-r2.ts",
     "testar:audio-r2": "node --import tsx scripts/testar-audio-r2.ts",
     "start": "tsx server.ts",

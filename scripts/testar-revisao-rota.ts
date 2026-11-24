@@ -38,11 +38,11 @@ async function conta(email: string) {
 const ana = await conta('ana@exemplo.invalid');
 const bruno = await conta('bruno@exemplo.invalid');
 
-// O arranjo de produção: parser grande só na rota de revisão, antes do parser global de 10 kB (server.ts).
-const fonte = readFileSync(new URL('../server.ts', import.meta.url), 'utf8');
+// O arranjo de produção: parser grande só na rota de revisão, antes do parser global de 10 kB (server/app.ts).
+const fonte = readFileSync(new URL('../server/app.ts', import.meta.url), 'utf8');
 const iRev = fonte.indexOf("app.use('/api/progresso/revisao', express.json({ limit: LIMITE_CORPO_REVISAO }))"), iGlobal = fonte.indexOf("app.use(express.json({ limit: '10kb' }))");
-assert.ok(iRev > 0 && iGlobal > 0 && iRev < iGlobal, 'server.ts: o parser da revisão vem antes do global de 10 kB');
-assert.ok(fonte.includes('registrarRevisao(app)'), 'server.ts registra a rota');
+assert.ok(iRev > 0 && iGlobal > 0 && iRev < iGlobal, 'server/app.ts: o parser da revisão vem antes do global de 10 kB');
+assert.ok(fonte.includes('registrarRevisao(app)'), 'server/app.ts registra a rota');
 
 async function subir(comLimite: boolean) {
   const a = express();
