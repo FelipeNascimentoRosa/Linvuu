@@ -6,8 +6,8 @@ import { indisponivelNoDominio } from '../src/lib/disponibilidadeDominio.ts';
 const casos: [string, string, string, string | null][] = [
  ['www.linvuu.com','/cursos','x=1','https://linvuu.com/cursos?x=1'],
  ['www.linvuu.com.br','/cursos','','https://linvuu.com.br/cursos'],
- ['linvuu.com.br','/en/cursos','','https://linvuu.com.br/cursos'],
- ['linvuu.com.br','/es/assinatura','','https://linvuu.com.br/assinatura'],
+ ['linvuu.com.br','/en/cursos','',null],
+ ['linvuu.com.br','/es/assinatura','',null],
  ['linvuu.com','/en/cursos','','https://linvuu.com/cursos'],
  ['linvuu.com','/portugues','','https://linvuu.com/curso/br'],
  ['linvuu.com','/livros/ru','x=1',null], ['linvuu.com','/curso/en/dia/1','',null],

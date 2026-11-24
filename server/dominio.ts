@@ -24,11 +24,11 @@ export function redirecionamentoDeDominio(host: string, caminho: string, consult
   const q = consulta ? `?${consulta}` : '';
   if (h === `www.${HOST_GLOBAL}`) return `${SITE_GLOBAL_URL}${caminho}${q}`;
   if (h === `www.${HOST_BR}`) return `${SITE_URL}${caminho}${q}`;
-  // Prefixos antigos s?o normalizados no mesmo dom?nio, sem trocar a l?ngua do visitante.
-  const prefixo = caminho.match(/^\/(en|es)(?=\/|$)/)?.[1];
-  if (prefixo && (h === HOST_BR || h === HOST_GLOBAL)) {
+  // /en no .com é apenas o endereço antigo da mesma edição inglesa.
+  const prefixo = h === HOST_GLOBAL && caminho.match(/^\/(en)(?=\/|$)/)?.[1];
+  if (prefixo) {
     const resto = caminho.slice(3) || '/';
-    return `${h === HOST_BR ? SITE_URL : SITE_GLOBAL_URL}${resto}${q}`;
+    return `${SITE_GLOBAL_URL}${resto}${q}`;
   }
   if (h === HOST_GLOBAL && /^\/portugues\/?$/.test(caminho)) return `${SITE_GLOBAL_URL}/curso/br${q}`;
   return null;
