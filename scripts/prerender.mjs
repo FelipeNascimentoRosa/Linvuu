@@ -61,7 +61,10 @@ if (!pronto) falhar('servidor local não subiu.');
 
 let navegador;
 try {
-  navegador = await chromium.launch({ args: ['--no-proxy-server'] });
+  const opcoes = process.env.VERCEL === '1'
+    ? await import('@sparticuz/chromium').then(async ({ default: c }) => ({ executablePath: await c.executablePath(), args: [...c.args, '--no-proxy-server'] }))
+    : { args: ['--no-proxy-server'] };
+  navegador = await chromium.launch(opcoes);
 } catch (e) { encerrar(); falhar(`Chromium não abriu (${e.message}).`); }
 
 fs.rmSync(saida, { recursive: true, force: true });
