@@ -419,10 +419,10 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     // Exceção de 13/11/2026 (Felipe, depois da auditoria externa): a SESSÃO 1 de cada curso volta a ser indexável no idioma
     // em que a explicação dela existe — é a porta de entrada grátis e o Search Console já mostrava demanda nas sessões.
     // As sessões 2 em diante continuam noindex e fora do sitemap.
-    // A regra da amostra acompanha a tradução da própria aula e o sitemap, mesmo quando o curso está incompleto.
-    // A disponibilidade desta amostra é independente da tradução das aulas posteriores.
-    const primeira = n === 1 && temNo(loc);
-    const emPrimeira = (l: Locale) => temNo(l);
+    // 18/11/2026: só curso COMPLETO no idioma (mesma regra do hub e do sitemap — scripts/seo.mjs). Com a tradução parcial do
+    // italiano (aulas 1–2 em inglês) a regra antiga, por aula, deixava /curso/it/dia/1 indexável fora do sitemap e sob um hub noindex.
+    const primeira = n === 1 && temNo(loc) && explicacaoCompleta(d, c.id, loc.explicacao);
+    const emPrimeira = (l: Locale) => temNo(l) && explicacaoCompleta(d, c.id, l.explicacao);
     const titPrimeira = loc.codigo === 'en' ? `${t}: free ${nomeTitulo} lesson` : `${t}: aula grátis de ${nomeTitulo.toLowerCase()}`;
     return { status: 200, caminho: p, titulo: primeira && titPrimeira.length <= 60 ? titPrimeira : `${t} · ${nomeTitulo} · ${tx.dia(n)}`, semMarca: true, descricao: descAula, semIndice: primeira ? undefined : true,
       em: primeira ? LOCALES.filter(emPrimeira).map((l) => l.codigo) : undefined,

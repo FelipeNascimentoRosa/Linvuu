@@ -26,7 +26,7 @@ Sitemaps e llms.txt nascem de `scripts/seo.mjs`, das mesmas listas de `src/lib/m
 ## O que impede indexação prematura
 
 1. **`explicacaoCompleta` (`metaRota.ts`):** o hub `/curso/<id>` só é indexável, e só entra no sitemap, num idioma em que **todas** as sessões do curso estão explicadas nele. Curso parcial não ganha página indexável nem hreflang. É intencional.
-2. **Sessões `/curso/<id>/dia/N` são `noindex`**, exceto a sessão 1 quando a própria aula existe no idioma da página, mesmo que o restante do curso esteja em tradução.
+2. **Sessões `/curso/<id>/dia/N` são `noindex`** (decisão de 11/11/2026), **exceto a sessão 1** de curso completo no idioma da página; desde 18/11 o código exige `explicacaoCompleta` também na sessão 1.
 3. **Gramática** só existe no sitemap onde o arquivo dela existe naquele idioma (`content/gramatica/<id>.json` / `<id>.en.json`).
 4. **Italiano no .com:** só as aulas 1 e 2 (sessões 1–8) estão em inglês; as outras 60 estão em preparação (`PENDENCIAS.md`). Por isso `/curso/it` não está no sitemap do .com.
 5. `/excluir-conta` e rotas de conta são `noindex, nofollow`.
@@ -57,7 +57,7 @@ Fonte da verdade: a tabela de cobertura abaixo (contagem de arquivos em `content
 | `/curso/fr` | sim | sim | en ↔ pt-BR |
 | `/curso/fr/dia/1` | sim | sim | en ↔ pt-BR |
 | `/curso/it` | sim | — | — |
-| `/curso/it/dia/1` | sim | sim | en ↔ pt-BR |
+| `/curso/it/dia/1` | sim | — | — |
 | `/curso/ru` | sim | sim | en ↔ pt-BR |
 | `/curso/ru/dia/1` | sim | sim | en ↔ pt-BR |
 | `/cursos` | sim | sim | en ↔ pt-BR |

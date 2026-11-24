@@ -41,6 +41,7 @@ export default function Dia() {
   const [explicacao, setExplicacao] = useState<Explicacao>(() => explicacaoDoCurso(id ?? ''));
   useEffect(() => setExplicacao(explicacaoDoCurso(id ?? '')), [id]);
   const [erro, setErro] = useState(false);
+  const [indisponivelIdioma, setIndisponivelIdioma] = useState(false);
   const ass = useAssinatura();
   const bloqueado = !gratis(dia) && !ass.ativa && !import.meta.env.DEV;
   const decidindo = !gratis(dia) && ass.carregando && !import.meta.env.DEV;
@@ -48,10 +49,11 @@ export default function Dia() {
   useEffect(() => {
     if (!valido || bloqueado || decidindo) { setAula(null); return; }
     let cancelado = false;
-    setAula(null); setErro(false);
+    setAula(null); setErro(false); setIndisponivelIdioma(false);
     carregarAula(curso!.id, dia, explicacao).then((a) => { if (cancelado) return; try { sessionStorage.removeItem('linvuu:recarregou-aula'); } catch { /* ok */ } setAula(a); }).catch((e: unknown) => {
       if (cancelado) return;
 
+      if ((e as Error)?.message === 'EXPLICACAO_INDISPONIVEL') { setIndisponivelIdioma(true); return; }
       console.error('Falha ao carregar a aula', curso!.id, dia, e);
       // Arquivo de aula que não existe mais depois de uma publicação nova: uma recarga resolve. Só uma vez, para não entrar em laço.
       const msg = String((e as Error)?.message ?? e);
@@ -83,6 +85,7 @@ export default function Dia() {
       {decidindo && <Carregando />}
       {bloqueado && !decidindo && <Paywall idioma={curso!.id} curso={curso!.nome} indisponivel={ass.indisponivel} />}
       <ReportarProblema key={`${curso!.id}:${dia}`} idioma={curso!.id} dia={dia} />
+      {indisponivelIdioma && <p className="nota" role="status">{LOCALE.codigo === 'en' ? 'This lesson is not yet available for English speakers.' : 'Esta aula ainda não está disponível para falantes de português.'}</p>}
       {erro && (
         <div className="vazio">
           <p>{T.semAula}</p>
@@ -93,7 +96,7 @@ export default function Dia() {
           e o gémeo `decidindo` acima — que mostravam «Carregando...» sem
           esqueleto nem mascote na navegação interna curso → dia, porque a
           página já montou e este estado é local, fora do Suspense de App.tsx. */}
-      {!aula && !erro && !bloqueado && <Carregando />}
+      {!aula && !erro && !indisponivelIdioma && !bloqueado && <Carregando />}
 
       {aula && (
         <>

@@ -146,6 +146,7 @@ export function registrarCobranca(app: Express, urlBase: (req: Request) => strin
     const l = String(req.query.l ?? '');
     const nome = `dia-${String(n).padStart(3, '0')}.json`;
     const traduzido = /^en$/.test(l) ? path.join(process.cwd(), 'content', 'idiomas', idioma, l, nome) : '';
+    if (traduzido && idioma !== 'br' && !fs.existsSync(traduzido)) { res.status(404).json({ error: 'Lesson unavailable in English.' }); return; }
     const arq = traduzido && fs.existsSync(traduzido) ? traduzido : path.join(process.cwd(), 'content', 'idiomas', idioma, nome);
     if (!fs.existsSync(arq)) { res.status(404).json({ error: 'Aula não encontrada.' }); return; }
     const livre = n <= 8 || (process.env.NODE_ENV !== 'production' && !cobrancaConfigurada());
@@ -164,9 +165,10 @@ export function registrarCobranca(app: Express, urlBase: (req: Request) => strin
     if (!/^[a-z]{2}$/.test(idioma)) { res.status(404).json({ error: 'Não encontrado.' }); return; }
     const l = String(req.query.l ?? '');
     const traduzida = /^en$/.test(l) ? path.join(process.cwd(), 'content', 'gramatica', `${idioma}.${l}.json`) : '';
+    if (traduzida && idioma !== 'br' && !fs.existsSync(traduzida)) { res.status(404).json({ error: 'Grammar unavailable in English.' }); return; }
     const arq = traduzida && fs.existsSync(traduzida) ? traduzida : path.join(process.cwd(), 'content', 'gramatica', `${idioma}.json`);
     if (!fs.existsSync(arq)) { res.status(404).json({ error: 'Não encontrado.' }); return; }
-    let pacote: { categorias: string[]; topicos: { dia: number; categoria: string }[] };
+    let pacote: { categorias: string[]; topicos: { dia: number; categoria: string; explicacaoEm?: string }[] };
     try { pacote = JSON.parse(fs.readFileSync(arq, 'utf8')); } catch (e) { console.error('gramatica/leitura', e); res.status(500).json({ error: 'Não foi possível abrir a gramática.' }); return; }
     let completo = process.env.NODE_ENV !== 'production' && !cobrancaConfigurada();
     if (!completo) {
@@ -175,10 +177,11 @@ export function registrarCobranca(app: Express, urlBase: (req: Request) => strin
         try { completo = (await acesso(u)).ativa; } catch (e) { console.error('gramatica', e); }
       }
     }
-    const abertos = pacote.topicos.filter((t) => t.dia <= 8);
-    const topicos = completo ? pacote.topicos : abertos;
+    const disponiveis = l === 'en' ? pacote.topicos.filter((t) => !t.explicacaoEm || t.explicacaoEm === 'en') : pacote.topicos;
+    const abertos = disponiveis.filter((t) => t.dia <= 8);
+    const topicos = completo ? disponiveis : abertos;
     const categorias = pacote.categorias.filter((c) => topicos.some((t) => t.categoria === c));
-    res.set('Cache-Control', 'private, no-store').json({ ...pacote, categorias, topicos, completo, bloqueados: pacote.topicos.length - topicos.length });
+    res.set('Cache-Control', 'private, no-store').json({ ...pacote, categorias, topicos, completo, bloqueados: disponiveis.length - topicos.length });
   });
 
   // Áudio das sessões depois da 8ª: arquivos em server/audio-privado (fora de public/). Mesma regra do texto:

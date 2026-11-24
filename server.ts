@@ -22,7 +22,8 @@ import { fecharApi, registrarErros, registrarSeguranca } from './server/seguranc
 import { registrarProntidao } from './server/prontidao';
 import { registrarAssetLinks } from './server/assetlinks';
 import { aplicarMeta, carregarDadosMeta, metaDaRota, metaParaNavegador } from './src/lib/metaRota.ts';
-import { SITE_URL, SITE_GLOBAL_URL } from './src/config/site.ts';
+import { indisponivelNoDominio } from './src/lib/disponibilidadeDominio.ts';
+import { SITE_URL } from './src/config/site.ts';
 import { baseDaRequisicao, noPerfilDe, perfilDaRequisicao, registrarDominio } from './server/dominio';
 
 // Uma falha assíncrona esquecida não pode derrubar o site: registra e segue.
@@ -43,6 +44,13 @@ async function startServer() {
   registrarSeguranca(app, producao);
   // Domínios: www → apex, .com.br/en|es → .com, .com/en → raiz (antes de qualquer rota de página).
   registrarDominio(app);
+  app.use((req, res, next) => {
+    if ((req.method === 'GET' || req.method === 'HEAD') && indisponivelNoDominio(perfilDaRequisicao(req), req.path)) {
+      res.set('X-Robots-Tag', 'noindex').status(404).type('text/plain').send(perfilDaRequisicao(req) === 'global' ? 'This content is not available for English speakers.' : 'Este conteúdo não está disponível para falantes de português.');
+      return;
+    }
+    next();
+  });
   // HTML, JS, CSS e JSON comprimidos (o pacote principal cai para cerca de um quarto). MP3 já vem comprimido e fica de fora.
   app.use(compression({ filter: (req, res) => !/\.mp3$/.test(req.path) && compression.filter(req, res) }));
   registrarNotificacoesCobranca(app);
@@ -235,15 +243,11 @@ registrarCtas(app); // POST /api/cta: clique de botão contado sem cookie e sem 
     // Arquivo de /assets que não existe mais (aba aberta antes de um deploy) deve dar 404 de verdade, não o HTML do site.
     app.get('/assets/*arquivo', (_req: Request, res: Response) => { res.status(404).type('text/plain').send('Not found'); });
     // Endereços que mudaram de lugar: redirecionamento permanente (o Google transfere a relevância).
-    app.get(['/brazilian-portuguese', '/en/brazilian-portuguese', '/es/brazilian-portuguese'], (_req: Request, res: Response) => { res.redirect(301, `${SITE_GLOBAL_URL}/curso/br`); });
+    app.get(['/brazilian-portuguese', '/en/brazilian-portuguese', '/es/brazilian-portuguese'], (_req: Request, res: Response) => { res.redirect(301, '/curso/br'); });
     // Endereços antigos ou digitados à mão que davam 404.
     app.get('/metodo', (_req: Request, res: Response) => { res.redirect(301, '/#metodo'); });
     app.get('/preco', (_req: Request, res: Response) => { res.redirect(301, '/assinatura'); });
     // O curso de português para estrangeiros não existe no site em português: vai para a versão em inglês.
-    app.get(/^\/curso\/br(\/.*)?$/, (req: Request, res: Response, next) => {
-      if (perfilDaRequisicao(req) === 'global') { next(); return; } // no .com o curso de português para estrangeiros é uma página normal
-      res.redirect(301, `${SITE_GLOBAL_URL}${req.path}`);
-    });
     // Variante com barra no fim (/cursos/): redireciona para o endereço canônico em vez de servir uma cópia.
     app.get(/^\/.+\/$/, (req: Request, res: Response) => {
       const q = req.originalUrl.indexOf('?');

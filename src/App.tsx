@@ -33,7 +33,8 @@ import { Header, BarraInferior, Footer, PrimeiraAbertura } from '@plataforma/Chr
 import { SugestaoIdioma } from './components/SugestaoIdioma';
 import NaoEncontrada from './pages/NaoEncontrada';
 import Carregando from './components/Carregando';
-import { useT } from './i18n';
+import { LOCALE, useT } from './i18n';
+import { indisponivelNoDominio } from './lib/disponibilidadeDominio';
 
 function RolarAoTopo() {
   const { pathname, hash } = useLocation();
@@ -69,7 +70,7 @@ export default function App() {
       <Header />
       <main id="conteudo-principal" className={!NATIVO ? 'site-camadas' : undefined} tabIndex={-1}>
         <Suspense fallback={<Carregando />}>
-        <Routes>
+        {!NATIVO && indisponivelNoDominio(LOCALE.codigo === 'en' ? 'global' : 'br', pathname) ? <NaoEncontrada /> : <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cursos" element={<Cursos />} />
           <Route path="/portugues" element={<Navigate to={NATIVO ? '/' : '/curso/br'} replace />} />
@@ -99,7 +100,7 @@ export default function App() {
           <Route path="/termos" element={<Legal tipo="termos" />} />
           <Route path="/excluir-conta" element={NATIVO ? <Navigate to="/conta#excluir-conta" replace /> : <ExcluirConta />} />
           <Route path="*" element={<NaoEncontrada />} />
-        </Routes>
+        </Routes>}
         </Suspense>
       </main>
       <AnalyticsConsent />

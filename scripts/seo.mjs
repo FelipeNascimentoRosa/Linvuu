@@ -82,10 +82,9 @@ for (const c of cursos.filter((x) => x.status !== 'em-breve')) {
   const emGram = oferecidos.filter((l) => temGramatica(c.id, l)).map((l) => l.c);
   if (emHub.length) grupos.push({ p: `/curso/${c.id}`, em: emHub });
   if (emGram.length) grupos.push({ p: `/gramatica/${c.id}`, em: emGram });
-  // Sessão 1: basta que a própria aula esteja traduzida para o público do domínio.
-  const primeiraAula = indice[c.id]?.grupos?.find((g) => g.dias[0] <= 1 && g.dias[1] >= 1)?.aula;
-  const emPrimeira = oferecidos.filter((l) => primeiraAula && (fonte(c.id) === EXPLICACAO[l.c] || (tr[EXPLICACAO[l.c]]?.[c.id]?.aulas ?? []).includes(primeiraAula))).map((l) => l.c);
-  if (emPrimeira.length) grupos.push({ p: `/curso/${c.id}/dia/1`, em: emPrimeira });
+  // Sessão 1 (decisão de 13/11/2026): indexável onde o curso inteiro está explicado na língua da página (a sessão 1 é
+  // da aula 1; curso completo implica a aula 1 explicada). Mesma regra de metaRota.ts (temNo com n = 1).
+  if (emHub.length) grupos.push({ p: `/curso/${c.id}/dia/1`, em: emHub });
 }
 const url = (c, p) => { const l = LOCALES.find((x) => x.c === c); return `${l.site}${l.p ? (p === '/' ? l.p : l.p + p) : p}`; };
 // chave do manifesto de lastmod: o caminho no esquema antigo (/, /en, /es), único por idioma
