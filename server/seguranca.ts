@@ -1,9 +1,11 @@
 // Segurança do servidor Express: cabeçalhos HTTP, Content-Security-Policy, limite de requisições e tratamento de erros.
 // Sem dependência extra: cada peça é pequena e está coberta por scripts/testar-seguranca.mjs.
 import type { Express, NextFunction, Request, Response } from 'express';
+import { hostR2 } from './audio-r2';
 
 /** Política de conteúdo. Fontes e scripts são do próprio site; o resto é só o que o login (Firebase/Google) exige. */
-export function politicaCSP(extraMidia = ''): string {
+export function politicaCSP(...extraMidia: string[]): string {
+  const extras = extraMidia.filter(Boolean);
   const firebase = ['https://*.googleapis.com', 'https://*.firebaseio.com', 'wss://*.firebaseio.com', 'https://*.firebaseapp.com', 'https://*.google.com'];
   const d: Record<string, string[]> = {
     'default-src': ["'self'"],
@@ -12,9 +14,9 @@ export function politicaCSP(extraMidia = ''): string {
     'style-src-elem': ["'self'", "'sha256-4kzgBy+zsz5Dss9Gwj059V7MYYUJ3GYIpRQcTylPB9k='", "'sha256-7h6i3aENJQ7IjIdGXixt17Ys0XBUdeIdzxZyteT906w='"], // elementos <style>: so o bloco anti-CLS do index.html (os dois hashes da linha acima)
     'style-src-attr': ["'unsafe-inline'"], // atributos style="" do React (21 usos); nao carregam recursos externos
     'img-src': ["'self'", 'data:', 'blob:', 'https://*.googleusercontent.com', 'https://www.facebook.com', 'https://analytics.tiktok.com', 'https://*.clarity.ms', 'https://c.bing.com'],
-    'media-src': ["'self'", 'blob:', 'data:', ...(extraMidia ? [extraMidia] : [])],
+    'media-src': ["'self'", 'blob:', 'data:', ...extras],
     'font-src': ["'self'", 'data:'],
-    'connect-src': ["'self'", 'https://us.i.posthog.com', 'https://eu.i.posthog.com', 'https://www.facebook.com', 'https://analytics.tiktok.com', 'https://analytics-ipv6.tiktokw.us', 'https://*.clarity.ms', ...firebase, ...(extraMidia ? [extraMidia] : [])],
+    'connect-src': ["'self'", 'https://us.i.posthog.com', 'https://eu.i.posthog.com', 'https://www.facebook.com', 'https://analytics.tiktok.com', 'https://analytics-ipv6.tiktokw.us', 'https://*.clarity.ms', ...firebase, ...extras],
     'frame-src': ['https://*.firebaseapp.com', 'https://accounts.google.com', 'https://*.google.com'],
     'object-src': ["'none'"],
     'base-uri': ["'self'"],
@@ -28,7 +30,10 @@ export function cabecalhos(producao: boolean) {
   // CSP_MODO=report põe a política só em observação (sem bloquear), caso algum recurso novo seja barrado por engano.
   const nomeCSP = process.env.CSP_MODO === 'report' ? 'Content-Security-Policy-Report-Only' : 'Content-Security-Policy';
   const audioBase = (process.env.VITE_AUDIO_BASE_URL || '').match(/^https:\/\/[^/]+/)?.[0] ?? '';
-  const csp = politicaCSP(audioBase);
+  // O áudio pago vem do R2 por redirect: o <audio> carrega de lá, por isso a origem do R2
+  // tem de estar na CSP (media-src). Sem R2 configurado, a lista fica igual à de antes.
+  const r2 = process.env.R2_ACCOUNT_ID ? hostR2(process.env.R2_ACCOUNT_ID.trim()) : '';
+  const csp = politicaCSP(audioBase, r2);
   return (req: Request, res: Response, next: NextFunction) => {
     // Vale também para 401/403/404/429 e erros anteriores aos handlers.
     // A política da CDN não substitui a proteção no servidor e no navegador.
@@ -66,12 +71,27 @@ export function ehCloudflare(ip: string): boolean {
   }
   return CF_V6.some((p) => i.startsWith(p));
 }
+const ipValido = (s: string): boolean => /^[0-9a-f.:]+$/i.test(s);
 /** IP do visitante: com a Cloudflare na frente, req.ip é o da borda dela; o do visitante vem em CF-Connecting-IP. */
 export function ipDoVisitante(req: Request): string {
   const cf = req.headers['cf-connecting-ip'];
   const dele = typeof cf === 'string' ? cf.trim() : '';
+  // Na Vercel a função só recebe pedidos pela edge da Vercel, que põe o IP de quem se ligou
+  // a ela em x-vercel-forwarded-for (primeiro valor). Sem isto, o peer seria sempre a edge
+  // e o CF-Connecting-IP passaria a ser ignorado — o limite por IP deixava de distinguir
+  // visitantes. A cadeia de verificação é a mesma: o CF-Connecting-IP só vale se quem se
+  // ligou à edge for um IP da Cloudflare (proxy ligado); senão vale o IP da edge.
+  if (process.env.VERCEL) {
+    const vf = req.headers['x-vercel-forwarded-for'];
+    const hop = (typeof vf === 'string' ? vf.split(',')[0].trim() : '') || req.ip || '';
+    if (dele && ipValido(dele) && ehCloudflare(hop)) return dele;
+    const real = req.headers['x-real-ip'];
+    const realIp = typeof real === 'string' ? real.trim() : '';
+    if (realIp && ipValido(realIp)) return realIp;
+    return hop;
+  }
   const hop = req.ip ?? '';
-  return dele && /^[0-9a-f.:]+$/i.test(dele) && ehCloudflare(hop) ? dele : hop;
+  return dele && ipValido(dele) && ehCloudflare(hop) ? dele : hop;
 }
 
 export function limitar(grupo: string, max: number, janelaMs: number) {
@@ -111,7 +131,9 @@ export function cors(req: Request, res: Response, next: NextFunction) {
 
 export function registrarSeguranca(app: Express, producao: boolean) {
   app.disable('x-powered-by');
-  app.set('trust proxy', 1); // atrás do proxy do Render: req.ip passa a ser o do visitante
+  // Na Vercel a cadeia pode ter dois saltos (visitante → Cloudflare → edge Vercel → função);
+  // com 2, o req.ip continua a ser o do visitante nos dois casos (com e sem proxy). No Render é 1.
+  app.set('trust proxy', process.env.VERCEL ? 2 : 1);
   app.use(cabecalhos(producao));
   app.use('/api', cors);
   // Índices e MP3 gratuitos são carregados pelo app a partir de https://localhost.
