@@ -18,7 +18,7 @@ try {
     const context=await semSugestaoIdioma(browser,{viewport,reducedMotion:'reduce'});
     const page=await context.newPage();
     const errors=[];page.on('pageerror',e=>errors.push(e.message));
-    const rotas = [['/','home'],['/en','home-en'],['/es','home-es'],['/cursos','cursos'],...['en','es','fr','it','de','ru'].map(id=>[`/curso/${id}`,`curso-${id}`]),['/curso/en/dia/1','sessao-en'],['/curso/fr/dia/1','sessao-fr'],['/curso/ru/dia/1','sessao-ru'],['/curso/es/dia/1','sessao-es'],['/curso/it/dia/1','sessao-it'],['/curso/de/dia/1','sessao-de'],['/gramatica/en','gramatica'],['/livros','livros'],['/livros/en','livro-en'],['/livros/en/capitulo/1','capitulo'],['/sobre','sobre'],['/contato','contato'],['/por-que-linvuu','metodo'],['/privacidade','privacidade'],['/termos','termos'],['/entrar','entrar'],['/cadastro','cadastro'],['/assinatura','assinatura']];
+    const rotas = [['/','home'],['/cursos','cursos'],...['en','es','fr','it','de','ru'].map(id=>[`/curso/${id}`,`curso-${id}`]),['/curso/en/dia/1','sessao-en'],['/curso/fr/dia/1','sessao-fr'],['/curso/ru/dia/1','sessao-ru'],['/curso/es/dia/1','sessao-es'],['/curso/it/dia/1','sessao-it'],['/curso/de/dia/1','sessao-de'],['/gramatica/en','gramatica'],['/livros','livros'],['/livros/en','livro-en'],['/livros/en/capitulo/1','capitulo'],['/sobre','sobre'],['/contato','contato'],['/por-que-linvuu','metodo'],['/privacidade','privacidade'],['/termos','termos'],['/entrar','entrar'],['/cadastro','cadastro'],['/assinatura','assinatura']];
     for (const [rota,arquivo] of rotas) {
       await page.goto(base+rota);
       await page.getByRole('heading',{level:1}).waitFor();

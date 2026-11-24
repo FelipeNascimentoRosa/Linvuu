@@ -20,7 +20,7 @@ const base = global ? `http://${HOST}:${porta}` : origem;
 const SITE = global ? 'https://linvuu.com' : 'https://linvuu.com.br';
 const extras = global
   ? ['/curso/de', '/curso/de/dia/1', '/gramatica/de', '/curso/br', '/entrar', '/pagina-que-nao-existe']
-  : ['/en/curso/de', '/en/curso/de/dia/1', '/gramatica/de', '/curso/ru/dia/9', '/entrar', '/pagina-que-nao-existe', '/en/pagina-que-nao-existe'];
+  : ['/curso/de', '/curso/de/dia/1', '/gramatica/de', '/curso/ru/dia/9', '/entrar', '/pagina-que-nao-existe'];
 // fetch() ignora o cabeçalho Host; http.get o envia de verdade.
 const buscar = (p) => (!global ? fetch(origem + p).then((r) => r.text()) : new Promise((ok, erro) => {
   http.get({ host: '127.0.0.1', port: Number(porta), path: p, headers: { host: HOST } }, (res) => { const b = []; res.on('data', (x) => b.push(x)); res.on('end', () => ok(Buffer.concat(b).toString('utf8'))); }).on('error', erro);
@@ -89,7 +89,7 @@ await Promise.all(Array.from({ length: 4 }, async () => { for (let p; (p = fila.
 // Navegação SPA: abre uma página e segue um link interno real; o <head> resultante deve ser o do servidor para o destino.
 const percursos = global
   ? [['/', '/cursos'], ['/cursos', '/curso/ru'], ['/curso/ru', '/curso/ru/dia/1'], ['/cursos', '/curso/fr'], ['/curso/br', '/curso/br/dia/1']]
-  : [['/', '/cursos'], ['/cursos', '/curso/ru'], ['/curso/ru', '/curso/ru/dia/1'], ['/en', '/en/livros'], ['/en/cursos', '/en/curso/fr'], ['/en/curso/ru', '/en/curso/ru/dia/1']];
+  : [['/', '/cursos'], ['/cursos', '/curso/ru'], ['/curso/ru', '/curso/ru/dia/1'], ['/cursos', '/curso/fr']];
 for (const [de, para] of percursos) {
   const page = await ctx.newPage();
   await page.goto(base + de, { waitUntil: 'load' });
