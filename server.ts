@@ -27,13 +27,13 @@ import { SITE_URL } from './src/config/site.ts';
 import { baseDaRequisicao, noPerfilDe, perfilDaRequisicao, registrarDominio } from './server/dominio';
 
 // Uma falha assíncrona esquecida não pode derrubar o site: registra e segue.
-process.on('unhandledRejection', (e) => { console.error('[Linvuu] promessa rejeitada sem tratamento:', e instanceof Error ? e.message : e); });
+if (!process.env.VERCEL) process.on('unhandledRejection', (e) => { console.error('[Linvuu] promessa rejeitada sem tratamento:', e instanceof Error ? e.message : e); });
 // Depois de uma exceção não capturada o processo fica em estado incerto: registra e sai, e o Render sobe outro.
-process.on('uncaughtException', (e) => { console.error('[Linvuu] erro não capturado:', e.message); setTimeout(() => process.exit(1), 200).unref(); });
+if (!process.env.VERCEL) process.on('uncaughtException', (e) => { console.error('[Linvuu] erro não capturado:', e.message); setTimeout(() => process.exit(1), 200).unref(); });
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-async function startServer() {
+export async function createApp() {
   const app = express();
 
   // Porta: usa process.env.PORT (Render) ou 3000 em desenvolvimento
@@ -291,13 +291,15 @@ registrarCtas(app); // POST /api/cta: clique de botão contado sem cookie e sem 
 
   registrarErros(app);
 
-  app.listen(PORT, '0.0.0.0', () => {
-    console.log(`✅ [Linvuu Server] Porta ${PORT}`);
-    console.log(`🌐 Acesse o site em: http://localhost:${PORT}`);
-  });
+  return app;
 }
 
-startServer().catch((err) => {
-  console.error('Failed to start server:', err);
-  process.exit(1);
-});
+if (!process.env.VERCEL) {
+  createApp().then((app) => {
+    const port = Number(process.env.PORT || 3000);
+    app.listen(port, '0.0.0.0', () => console.log(`[Linvuu Server] Porta ${port}`));
+  }).catch((err) => {
+    console.error('Failed to start server:', err);
+    process.exit(1);
+  });
+}
