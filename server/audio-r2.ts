@@ -87,7 +87,8 @@ export function urlPreAssinadaR2(cfg: ConfigR2, chave: string, expiracaoSegundos
   };
   const canonica = Object.keys(consulta).sort().map((k) => `${codificar(k)}=${codificar(consulta[k])}`).join('&');
   const pedidoCanonico = ['GET', uri, canonica, `host:${nomeHost}\n`, 'host', 'UNSIGNED-PAYLOAD'].join('\n');
-  const assinatura = hmac(chaveAssinatura(cfg.chaveSecreta, data), pedidoCanonico).toString('hex');
+  const textoAssinar = ['AWS4-HMAC-SHA256', carimbo, ambito, sha256Hex(pedidoCanonico)].join('\n');
+  const assinatura = hmac(chaveAssinatura(cfg.chaveSecreta, data), textoAssinar).toString('hex');
   return `${host}${uri}?${canonica}&X-Amz-Signature=${assinatura}`;
 }
 
@@ -112,15 +113,17 @@ export function pedidoAssinadoS3(
   const extras = Object.fromEntries(
     Object.entries(opts.cabecalhos ?? {}).map(([k, v]) => [k.toLowerCase(), v.trim()]),
   );
-  const cabecalhosCanonicos: Record<string, string> = { host: nomeHost, 'x-amz-date': carimbo, ...extras };
+  const cabecalhosCanonicos: Record<string, string> = { host: nomeHost, 'x-amz-content-sha256': opts.corpoHash, 'x-amz-date': carimbo, ...extras };
   const assinados = Object.keys(cabecalhosCanonicos).sort();
   const canonicoCabecalhos = assinados.map((k) => `${k}:${cabecalhosCanonicos[k]}\n`).join('');
   const pedidoCanonico = [metodo, uri, consulta, canonicoCabecalhos, assinados.join(';'), opts.corpoHash].join('\n');
-  const assinatura = hmac(chaveAssinatura(cfg.chaveSecreta, data), pedidoCanonico).toString('hex');
+  const textoAssinar = ['AWS4-HMAC-SHA256', carimbo, ambito, sha256Hex(pedidoCanonico)].join('\n');
+  const assinatura = hmac(chaveAssinatura(cfg.chaveSecreta, data), textoAssinar).toString('hex');
   return {
     url: `${host}${uri}${consulta ? `?${consulta}` : ''}`,
     cabecalhos: {
       Authorization: `AWS4-HMAC-SHA256 Credential=${cfg.chaveAcesso}/${ambito}, SignedHeaders=${assinados.join(';')}, Signature=${assinatura}`,
+      'X-Amz-Content-Sha256': opts.corpoHash,
       'X-Amz-Date': carimbo,
       ...opts.cabecalhos,
     },

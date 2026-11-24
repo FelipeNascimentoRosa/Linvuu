@@ -49,7 +49,8 @@ t('assinatura com 64 hex', /^[0-9a-f]{64}$/.test(url.searchParams.get('X-Amz-Sig
     .sort(([a], [b]) => (a < b ? -1 : 1))
     .map(([k, v]) => `${encodeURIComponent(k)}=${encodeURIComponent(v)}`).join('&');
   const pedido = ['GET', '/linvuu-audio/audio-privado-v2/ru/abcdef12.mp3', canonica, `host:${CFG.conta}.r2.cloudflarestorage.com\n`, 'host', 'UNSIGNED-PAYLOAD'].join('\n');
-  const esperada = hmac(chaveAssinatura(CFG.chaveSecreta, '20261124'), pedido).toString('hex');
+  const texto = ['AWS4-HMAC-SHA256', '20261124T120000Z', '20261124/auto/s3/aws4_request', sha256Hex(pedido)].join('\n');
+  const esperada = hmac(chaveAssinatura(CFG.chaveSecreta, '20261124'), texto).toString('hex');
   t('assinatura da URL pré-assinada confere', url.searchParams.get('X-Amz-Signature') === esperada);
 }
 
@@ -60,9 +61,10 @@ t('HEAD com X-Amz-Date', cabecalhos['X-Amz-Date'] === '20261124T120000Z');
 {
   const auth = cabecalhos.Authorization ?? '';
   const assinatura = auth.match(/Signature=([0-9a-f]{64})$/)?.[1] ?? '';
-  const pedido = ['HEAD', '/linvuu-audio/audio-privado-v2/ru/abcdef12.mp3', '', `host:${CFG.conta}.r2.cloudflarestorage.com\nx-amz-date:20261124T120000Z\n`, 'host;x-amz-date', sha256Hex('')].join('\n');
-  const esperada = hmac(chaveAssinatura(CFG.chaveSecreta, '20261124'), pedido).toString('hex');
-  t('assinatura do HEAD confere', assinatura === esperada && auth.includes('SignedHeaders=host;x-amz-date'));
+  const pedido = ['HEAD', '/linvuu-audio/audio-privado-v2/ru/abcdef12.mp3', '', `host:${CFG.conta}.r2.cloudflarestorage.com\nx-amz-content-sha256:${sha256Hex('')}\nx-amz-date:20261124T120000Z\n`, 'host;x-amz-content-sha256;x-amz-date', sha256Hex('')].join('\n');
+  const texto = ['AWS4-HMAC-SHA256', '20261124T120000Z', '20261124/auto/s3/aws4_request', sha256Hex(pedido)].join('\n');
+  const esperada = hmac(chaveAssinatura(CFG.chaveSecreta, '20261124'), texto).toString('hex');
+  t('assinatura do HEAD confere', assinatura === esperada && auth.includes('SignedHeaders=host;x-amz-content-sha256;x-amz-date'));
 }
 
 // urlDoAudioPrivadoR2 com fetch simulado
