@@ -62,7 +62,7 @@ if (!pronto) falhar('servidor local não subiu.');
 let navegador;
 try {
   navegador = await chromium.launch({ args: ['--no-proxy-server'] });
-} catch (e) { encerrar(); falhar(`Chromium não abriu (${e.message.split('\n')[0]}).`); }
+} catch (e) { encerrar(); falhar(`Chromium não abriu (${e.message}).`); }
 
 fs.rmSync(saida, { recursive: true, force: true });
 let ok = 0;
