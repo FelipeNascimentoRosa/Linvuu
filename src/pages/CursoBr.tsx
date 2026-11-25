@@ -8,7 +8,6 @@ import { LOCALE, useT } from '../i18n';
 import { PerguntasCurso } from '../components/PerguntasCurso';
 import { emailOficial } from '../config/site';
 import { APRESENTACOES_CURSO_EN } from '../lib/apresentacoes';
-import { CreditoVitrine } from '../components/CreditoVitrine';
 
 /** Página do curso de português do Brasil para estrangeiros (explicado em inglês). */
 export default function CursoBr() {
@@ -35,7 +34,6 @@ export default function CursoBr() {
           </div>
         </div>
       </header>
-      <CreditoVitrine />
       <section aria-labelledby="course-introduction"><h2 id="course-introduction">{APRESENTACOES_CURSO_EN.br.titulo}</h2>{APRESENTACOES_CURSO_EN.br.paragrafos.map((p) => <p key={p}>{p}</p>)}</section>
       {cobertura && <p className="nota">{cobertura}</p>}
       {/* Desde 13/11/2026 /portugues redireciona para cá (as duas disputavam a mesma busca): os níveis e as respostas diretas vieram junto. */}

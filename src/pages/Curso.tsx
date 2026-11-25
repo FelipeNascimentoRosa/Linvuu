@@ -15,7 +15,6 @@ import '../site-publico.css';
 import { LIVROS } from '../config/livros';
 import { Capacitor } from '@capacitor/core';
 import { APRESENTACOES_CURSO, APRESENTACOES_CURSO_EN } from '../lib/apresentacoes';
-import { CreditoVitrine } from '../components/CreditoVitrine';
 import { DESC_SEO_CURSO } from '../config/seoCurso';
 
 export default function Curso() {
@@ -86,7 +85,6 @@ export default function Curso() {
           <figcaption><span>Coleção Linvuu · A1–A2</span><strong>Seu livro para ler, ouvir e voltar quando precisar.</strong><Link to={livro.link?.startsWith('/livros/') ? livro.link : '/livros'}>Ler 2 capítulos grátis</Link></figcaption>
         </figure>}
       </header>
-      {website && <CreditoVitrine />}
 
       {(website || LOCALE.codigo === 'pt-BR') && <nav className="site-course-nav" aria-label={LOCALE.codigo === 'pt-BR' ? 'Níveis e opções do curso' : 'Course levels and options'}>{Object.keys(aulasPorNivel).filter(Boolean).map(n => <a key={n} href={`#nivel-${n}`}>{NIVEL_LABEL[n] ?? n}</a>)}{website && LOCALE.codigo === 'pt-BR' && livro?.link?.startsWith('/livros/') && <Link to={livro.link}>Livro de {curso.nome}</Link>}<Link to="/#planos">{LOCALE.codigo === 'pt-BR' ? 'Comparar planos' : 'Compare plans'}</Link></nav>}
       {website && LOCALE.codigo === 'pt-BR' && APRESENTACOES_CURSO[curso.id] && <section aria-labelledby="curso-apresentacao" className="texto-legal">

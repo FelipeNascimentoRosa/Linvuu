@@ -1,6 +1,5 @@
 import { Fragment, useEffect, useMemo, useState, type ReactNode } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { CreditoVitrine } from '../components/CreditoVitrine';
 import { Navegacao } from '../components/Navegacao';
 import { Gramatica as BlocoGramatica } from '../components/Sessao';
 import { idiomasDeGramaticaNoSite, todosIdiomasDeGramatica, fonteDoCurso, explicacaoDoCurso, getCurso, coberturaNoSite } from '../lib/content';
@@ -69,7 +68,6 @@ export default function Gramatica() {
         <Navegacao pai="/" trilha={[{ rotulo: t.geral.inicio, para: '/' }, { rotulo: t.nav.gramatica }]} />
         <h1 className="pagina-h1">{x.h1}</h1>
         <p className="lead">{x.lead}</p>
-        <CreditoVitrine />
         <ul className="gram-hub">
           {IDIOMAS.map((k) => { const c = getCurso(k); if (!c) return null; return (
             <li key={k}>{linkGram(k, <><strong>{g.titulo(c.nome)}</strong><span>{x.item(c.nome)}</span></>)}</li>

@@ -606,7 +606,6 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
   if (base === '/contato') { const c = CONTATO[loc.codigo]; corpo = cabeca(c.titulo, c.descricao) + `<p>${esc(c.lead)}</p>` + li(contatos(loc.codigo).filter((x) => x.id !== 'linkedin').map((x) => `<a href="${esc(x.href)}">${esc(x.nome)}: ${esc(x.rotulo)}</a>`)) + `<h2 id="linkedin">LinkedIn</h2><p>${esc(c.autoresNota)}</p>` + li(AUTORES.map((x) => `<a href="${esc(x.links[0])}" rel="me">${esc(x.nome)}</a>`)); }
   if (base === '/ex-alunos-udemy') corpo = cabeca(EX_ALUNOS.titulo, EX_ALUNOS.descricao) + `<p>${esc(EX_ALUNOS.lead)}</p><h2>O que você encontra na Linvuu</h2>` + li(EX_ALUNOS.beneficios.map((x) => esc(x))) + `<h2>Como pedir sua condição especial</h2><ol>${EX_ALUNOS.passos.map((x) => `<li>${esc(x)}</li>`).join('')}</ol><p>${esc(EX_ALUNOS.aviso)}</p>` + `<h2>Perguntas frequentes</h2>` + EX_ALUNOS.perguntas.map((q) => `<h3>${esc(q.p)}</h3><p>${esc(q.r)}</p>`).join('');
   const menu = menuPreRender(loc);
-  if (corpo && (base === '/' || base === '/gramatica' || /^\/curso\/[a-z]{2}$/.test(base))) corpo += `<p>${loc.codigo === 'en' ? 'Content by Felipe and Luiza. ' : 'Conteúdo de Felipe e Luiza. '}${a('/sobre', loc.codigo === 'en' ? 'About the authors' : 'Conheça os autores')}</p>`;
   return corpo ? `<main data-prerender>${menu}${corpo}</main>` : '';
 }
 
