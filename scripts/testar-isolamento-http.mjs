@@ -16,8 +16,8 @@ const get=(host,path,headers={})=>new Promise((resolve,reject)=>{http.get({host:
 try {
  for(let i=0;i<100;i++){try{await get('linvuu.com','/healthz');break}catch{await new Promise(r=>setTimeout(r,100))}}
  for(const [host,path] of [['linvuu.com','/livros/ru'],['linvuu.com.br','/curso/br'],['linvuu.com','/materiais-gratuitos/alfabeto-russo'],['linvuu.com.br','/en/cursos'],['linvuu.com','/es/cursos']]){const r=await get(host,path);assert.equal(r.status,404,host+path);assert.equal(r.location,undefined)}
- const r=await get('linvuu.com','/api/gramatica/it?l=en');assert.equal(r.status,200);const j=JSON.parse(r.body);assert(j.topicos.length>0);assert(j.topicos.every(t=>!t.explicacaoEm||t.explicacaoEm==='en'));
- const g=await get('linvuu.com','/api/gramatica/it');assert.equal(g.status,200);assert(JSON.parse(g.body).topicos.every(t=>!t.explicacaoEm||t.explicacaoEm==='en'));
+ for(const id of ['it','br','es','ru','de','fr']) { const r=await get('linvuu.com',`/api/gramatica/${id}?l=en`);assert.equal(r.status,200);const j=JSON.parse(r.body);assert(j.topicos.length>0);assert(j.topicos.every(t=>t.explicacaoEm==='en')); }
+ const g=await get('linvuu.com','/api/gramatica/it');assert.equal(g.status,200);assert(JSON.parse(g.body).topicos.every(t=>t.explicacaoEm==='en'));
  assert.equal((await get('linvuu.com','/api/gramatica/it?l=pt')).status,404);
  assert.equal((await get('linvuu.com.br','/api/gramatica/it?l=en')).status,404);
  const missing=await get('linvuu.com','/api/aula/it/9?l=en');assert.equal(missing.status,404);

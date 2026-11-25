@@ -33,7 +33,7 @@ function montar(l) {
       const bo = original.sessoes[i].blocos[k];
       const cat = categoria(bo);
       if (traduzida && b.tag && b.tag !== bo.tag) (CATEGORIA_TRADUZIDA[l] ??= {})[cat] = b.tag;
-      topicos.push({ id: `a${a.aula}-${s.sessao.toLowerCase()}-${k}`, categoria: cat, aula: a.aula, aulaTitulo: a.titulo, sessao: s.sessao, dia: (a.aula - 1) * 4 + i + 1, ...(l && !traduzida ? { explicacaoEm: fonteDe(id) } : {}), ...resto });
+      topicos.push({ id: `a${a.aula}-${s.sessao.toLowerCase()}-${k}`, categoria: cat, aula: a.aula, aulaTitulo: a.titulo, sessao: s.sessao, dia: (a.aula - 1) * 4 + i + 1, explicacaoEm: traduzida ? l : fonteDe(id), ...resto });
     }));
   }
   // a categoria vem da etiqueta (tag) da aula; traduzida quando alguma aula traduzida já trouxe o nome no idioma

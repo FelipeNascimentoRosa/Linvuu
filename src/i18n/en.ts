@@ -33,7 +33,7 @@ export const en: Dicionario = {
     { t: '2 free lessons', d: 'No card and nothing to install. Try the method before you decide.' },
   ],
   provaRotulo: 'Why Linvuu',
-  explorar: { kicker: 'Explore', titulo: 'Choose what to learn', idiomasTexto: 'Brazilian Portuguese, Spanish, German, French, Italian and Russian. Every course starts from zero and goes up to B1.' },
+  explorar: { kicker: 'Explore', titulo: 'Choose what to learn', idiomasTexto: 'Brazilian Portuguese, Spanish, German, French and Russian. Courses start from zero; German continues through B1 with four additional B2-level lessons.' },
   metodo: {
     kicker: 'How it works', titulo: 'One session,', destaque: 'three steps',
     sub: 'Each session takes about 30 minutes and always follows the same order: listen, understand, practise. Every 4 sessions make a full lesson that ends with a review.',

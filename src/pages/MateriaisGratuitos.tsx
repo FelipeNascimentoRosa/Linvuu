@@ -5,7 +5,7 @@ import { LOCALE } from '../i18n';
 import { usePageTitle } from '../lib/usePageTitle';
 import { falar, parar } from '../lib/audio';
 import {
-  ALFABETOS, CAMINHO_HUB, DESCRICAO_HUB, HUB_EN, LEAD_HUB, TITULO_HUB, alfabetoPorSlug, caminhoAlfabeto, caminhoAulaGratis, palavrasDoGuia, audioVocabularioRusso,
+  ALFABETOS, CAMINHO_HUB, DESCRICAO_HUB, HUB_EN, MATERIAIS_EN, LEAD_HUB, TITULO_HUB, alfabetoPorSlug, caminhoAlfabeto, caminhoAulaGratis, palavrasDoGuia, audioVocabularioRusso,
   type Alfabeto, type Bloco, type Cartao, type Exercicio, type Exemplo,
 } from '../lib/materiais';
 import { ac } from '../lib/alfabeto/base';
@@ -208,12 +208,12 @@ export function MateriaisIndice() {
         <p className="lead">{en ? HUB_EN.lead : LEAD_HUB}</p>
       </header>
       <ul className="mat-grade">
-        {ALFABETOS.map((a, n) => (
+        {(en ? MATERIAIS_EN.map((id) => ALFABETOS.find((a) => a.id === id) ?? { id: 'br', slug: '', idioma: 'Portuguese' }) : ALFABETOS).map((a, n) => (
           <li key={a.id} className="mat-cartao" data-tom={['vermelho', 'ocre', 'verde'][n % 3]}>
             <Link to={en ? caminhoAulaGratis(a.id) : caminhoAlfabeto(a.slug)} className="mat-cartao-link">
-              <span className="mat-cartao-arte"><img src={`/assets/materiais/rabiscos/${a.id}.webp`} alt="" loading="lazy" /></span>
+              <span className="mat-cartao-arte"><img src={`/assets/materiais/rabiscos/${a.id === 'br' ? 'linvuu.png' : `${a.id}.webp`}`} alt="" loading="lazy" /></span>
               <span className="mat-cartao-corpo">
-                <h2>{en ? `${HUB_EN.idioma[a.id]} alphabet` : `Alfabeto ${a.idioma.charAt(0).toUpperCase() + a.idioma.slice(1)}`}</h2>
+                <h2>{en ? `${HUB_EN.idioma[a.id]} first session` : `Alfabeto ${a.idioma.charAt(0).toUpperCase() + a.idioma.slice(1)}`}</h2>
                 <span className="mat-cartao-sub">{en ? HUB_EN.sub : 'Letras, sons e áudio em uma página'}</span>
                 <span className="mat-cartao-cta">{en ? HUB_EN.cta : 'Abrir o guia grátis'} <span aria-hidden="true">→</span></span>
               </span>

@@ -193,7 +193,7 @@ export function registrarCobranca(app: Express, urlBase: (req: Request) => strin
         try { completo = (await acesso(u)).ativa; } catch (e) { console.error('gramatica', e); }
       }
     }
-    const disponiveis = l === 'en' ? pacote.topicos.filter((t) => !t.explicacaoEm || t.explicacaoEm === 'en') : pacote.topicos;
+    const disponiveis = l === 'en' ? pacote.topicos.filter((t) => t.explicacaoEm === 'en') : pacote.topicos;
     const abertos = disponiveis.filter((t) => t.dia <= 8);
     const topicos = completo ? disponiveis : abertos;
     const categorias = pacote.categorias.filter((c) => topicos.some((t) => t.categoria === c));
