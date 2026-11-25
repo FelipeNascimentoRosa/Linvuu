@@ -15,7 +15,8 @@ let total = 0;
 for (const { site, robots: arqRobots, sitemap } of dominios) {
   const robots = resolve(arqRobots);
   const robotsTxt = readFileSync(arqRobots, 'utf8');
-  assert(robotsTxt.includes(`Sitemap: ${site}/${sitemap.split('/').pop()}`), `${site}: robots aponta para o mapa exclusivo`);
+  const mapasDeclarados = [...robotsTxt.matchAll(/^Sitemap:\s*(\S+)/gim)].map((m) => m[1]);
+  assert.deepEqual(mapasDeclarados, [`${site}/sitemap.xml`], `${site}: robots aponta apenas para o sitemap canônico`);
   const xml = readFileSync(sitemap, 'utf8');
   assert(xml.includes('xmlns:xhtml='), `${site}: namespace de alternativos presente`);
   const urls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
