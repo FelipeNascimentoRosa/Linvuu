@@ -1,6 +1,6 @@
 ---
 name: linvuu-conventions
-description: Development conventions and patterns for Linvuu. TypeScript Vite project with mixed commits.
+description: "Convenções de desenvolvimento do repositório Linvuu (TypeScript, Vite, commits). Consulte ao começar tarefa de código."
 ---
 
 # Linvuu Conventions

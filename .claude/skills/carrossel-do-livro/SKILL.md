@@ -1,6 +1,6 @@
 ---
 name: carrossel-do-livro
-description: Transforma uma aula ou capítulo de content/ da Linvuu em especificação JSON de um carrossel de 8 slides (pt-BR e en) para o Felipe aprovar antes de virar arte.
+description: "Transforma aula ou capítulo de content/ da Linvuu em JSON de carrossel de 8 slides (pt-BR e en) para aprovação do Felipe antes da arte."
 ---
 
 # Carrossel do livro

@@ -2,16 +2,16 @@
 
 **OBRIGATÓRIO, nesta ordem**, antes de qualquer linha de código:
 
-1. [`PAINEL.md`](PAINEL.md) — memória do projeto. **Se a sua memória divergir do painel, o painel vence.** Se não está no painel, não existe.
+1. [`docs/linvuu-10-de-10/00-INDICE.md`](docs/linvuu-10-de-10/00-INDICE.md) — entrada única: estado real, trava ativa e roteamento. `PAINEL.md` é histórico datado (fala de Render): consulte só para métricas antigas, nunca como estado atual.
 2. [`AGENTS.md`](AGENTS.md) — fonte normativa comum a todos os agentes.
 3. [`docs/PROMPT-MESTRE-DEEPSEEK-v4.1.md`](docs/PROMPT-MESTRE-DEEPSEEK-v4.1.md) — o contrato dos 30 dias: as dez leis, o formato obrigatório de fim de sessão e o disparo de cada lote. É o contrato que vale quando este arquivo for omisso.
-4. [`docs/ESTADO-ATUAL.md`](docs/ESTADO-ATUAL.md) — snapshot **com data**, não sincronização permanente: reconfirme `main`, PRs e deploy.
+4. Só o manual do índice que cobre a tarefa. `docs/ESTADO-ATUAL.md` é snapshot datado: reconfirme `main`, PRs e deploy.
 
 Este arquivo é a entrada específica do DeepSeek e **não substitui** `AGENTS.md`. Mesmo padrão de `CLAUDE.md`, `GEMINI.md` e `.cursor/rules/linvuu.mdc`: aqui ficam só o protocolo de execução e o formato; política, produto e histórico ficam nos documentos compartilhados.
 
 ## Ritual de sessão
 
-- **Abrir** lendo o `PAINEL.md` inteiro e anunciando em 3 linhas: lote atual, tarefa atual, critério de pronto.
+- **Abrir** lendo o índice e anunciando em 3 linhas: lote atual, tarefa atual, critério de pronto.
 - **Durante:** uma tarefa por vez, um PR por tarefa. Commit pequeno a cada passo concluído, mensagem no imperativo. Antes de afirmar qualquer coisa sobre o site publicado, rode `npm run testar:dominio`.
 - **Fechar** no formato da seção 5 do contrato, com o `PAINEL.md` atualizado **no mesmo PR**. Sem comando e saída colados, não existe "pronto".
 - O agente escreve **"verificado pelo agente"**. "Verificado em produção" só existe com print fornecido pelo Felipe.
@@ -28,7 +28,7 @@ Este arquivo é a entrada específica do DeepSeek e **não substitui** `AGENTS.m
 - Domínios: `linvuu.com.br` (39 URLs no sitemap) e `linvuu.com` (15). Um idioma de interface por domínio; o site em espanhol foi retirado em 06/11/2026.
 - Home do `.com.br`: fora do índice do Google ("Descoberto — não indexado"). 25 rotas, 37 páginas no `.com.br` (32 indexáveis).
 - Catálogo: 7 cursos, 1.840 sessões de aula, 113 capítulos escritos, **12 publicados**. Assinantes: 0.
-- Vuu: **um só** — `public/assets/vuu/vuu.svg` (decisão de 08/11/2026, [`docs/VUU.md`](docs/VUU.md)). Versões antigas estão descartadas; não recriar.
+- Mascotes: **proibidos**; exclusão de todos autorizada pelo Felipe em 25/11/2026 (PR própria). [`docs/VUU.md`](docs/VUU.md) registra a retirada. Não recriar.
 
 ## Proibições que o repositório já pagou caro
 

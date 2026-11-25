@@ -1,10 +1,6 @@
 ---
 name: seo-geo
-description: >
-  Audit and improve content for AI Overviews and answer engines, including
-  citability, entity clarity, crawler access, brand signals, and passage
-  structure. Use when the user asks about AI Overviews, AI Mode, ChatGPT,
-  Perplexity or Gemini citations, GEO, or AI search visibility.
+description: "Otimiza conteúdo para AI Overviews e motores de resposta: citabilidade, entidades, acesso de crawlers. Use em pedidos de GEO, AEO ou citação por IA."
 user-invocable: true
 argument-hint: "[url]"
 license: MIT
