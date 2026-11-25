@@ -41,7 +41,9 @@ for (const a of aulas) {
     escrever(path.join(dirIdioma, `dia-${pad(dia)}.json`), {
       idioma: id, dia, fase: m.fase, nivel: a.nivel ?? m.nivel, status: a.status,
       titulo: `${a.titulo}: ${s.titulo}`,
-      objetivo: `Aula ${a.aula}, sessão ${i + 1} de ${a.sessoes.length} · ${s.duracaoMin} min`,
+      objetivo: id === 'br' && dia === 1
+        ? `Lesson ${a.aula}, session ${i + 1} of ${a.sessoes.length} · ${s.duracaoMin} min`
+        : `Aula ${a.aula}, sessão ${i + 1} de ${a.sessoes.length} · ${s.duracaoMin} min`,
       aula: { numero: a.aula, titulo: a.titulo, objetivo: a.objetivo, sessoes: a.sessoes.length, duracaoTotalMin: a.duracaoTotalMin, nivel: a.nivel },
       sessao: anotar(s),
       origem: `content/idiomas/${id}/aulas/${arquivos[a.aula - 1]}`,

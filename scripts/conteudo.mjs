@@ -147,7 +147,10 @@ function validarCatalogo() {
       const nivelEsp = a.nivel ?? trilha.dias[n - 1]?.nivel;
       if (nivelEsp !== undefined ? d.nivel !== nivelEsp : typeof d.nivel !== 'string' || !d.nivel) erros.push(`${onde}: nivel "${d.nivel}" ≠ "${nivelEsp}"`);
       if (d.titulo !== `${a.titulo}: ${s.titulo}`) erros.push(`${onde}: título não deriva da aula/sessão-fonte`);
-      if (d.objetivo !== `Aula ${na}, sessão ${si + 1} de ${a.sessoes.length} · ${s.duracaoMin} min`) erros.push(`${onde}: objectivo não deriva da aula/sessão-fonte`);
+      const objetivoEsperado = c.id === 'br' && n === 1
+        ? `Lesson ${na}, session ${si + 1} of ${a.sessoes.length} · ${s.duracaoMin} min`
+        : `Aula ${na}, sessão ${si + 1} de ${a.sessoes.length} · ${s.duracaoMin} min`;
+      if (d.objetivo !== objetivoEsperado) erros.push(`${onde}: objectivo não deriva da aula/sessão-fonte`);
       if (d.aula?.numero !== na || d.aula?.titulo !== a.titulo || d.aula?.objetivo !== a.objetivo || d.aula?.sessoes !== a.sessoes.length || d.aula?.duracaoTotalMin !== a.duracaoTotalMin || d.aula?.nivel !== a.nivel) erros.push(`${onde}: bloco "aula" não confere com a aula-fonte ${na}`);
       if (d.origem !== `content/idiomas/${c.id}/aulas/aula-${pad(na)}.json`) erros.push(`${onde}: origem "${d.origem}" não aponta para a aula-fonte`);
       if (d.sessao?.sessao !== `S${si + 1}`) erros.push(`${onde}: sessao.sessao="${d.sessao?.sessao}" (esperado "S${si + 1}")`);

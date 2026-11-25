@@ -16,6 +16,7 @@ export default function Cursos() {
 
   const emBreve = CURSOS.filter((c) => !cursoComExplicacaoNoSite(c.id));
   const lista = useMemo(() => CURSOS.filter((c) => {
+    if (LOCALE.codigo === 'en' && c.id === 'it') return false;
     if (!cursoComExplicacaoNoSite(c.id)) return false;
     if (!q) return true;
     return norm(`${c.nome} ${c.nomeNativo}`).includes(norm(q));

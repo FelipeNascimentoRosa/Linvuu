@@ -46,7 +46,7 @@ export const SOBRE: Record<'pt-BR' | 'en', TextoSobre> = {
     origem: 'A Linvuu nasceu da experiência de sala de aula dos autores, com alunos reais e os erros que se repetem de turma em turma. Essa experiência é a base dos livros e das aulas.',
     metodoTitulo: 'O método',
     metodo: [
-      { titulo: 'Parte do português.', texto: 'Cada capítulo começa por um hábito seu que o outro idioma não aceita, como dizer “tenho 30 anos” em inglês ou ler uma palavra francesa letra por letra. Quem sabe qual é o hábito corrige o erro em semanas, e não em anos.' },
+      { titulo: 'Parte do português.', texto: 'Cada capítulo começa por um hábito seu que o outro idioma não aceita, como dizer “tenho 30 anos” em inglês ou ler uma palavra francesa letra por letra. Identificar o hábito ajuda a perceber e praticar a diferença.' },
       { titulo: 'Explica na sua língua.', texto: 'A explicação é em português, com a regra completa, as exceções e o erro típico. O idioma estudado aparece em frases curtas, diálogos e tabelas.' },
       { titulo: 'Tem som em cada frase.', texto: 'Os diálogos, as frases prontas e o vocabulário têm áudio, para treinar a pronúncia desde o primeiro dia.' },
       { titulo: 'Revisto por quem fala o idioma.', texto: 'Os livros contaram com a colaboração de professores e falantes nativos dos idiomas ensinados.' },
@@ -73,7 +73,7 @@ export const SOBRE: Record<'pt-BR' | 'en', TextoSobre> = {
     origem: 'Linvuu grew out of the authors’ classroom experience, with real students and the mistakes that repeat from class to class. That experience is the basis of the books and the lessons.',
     metodoTitulo: 'The method',
     metodo: [
-      { titulo: 'It starts from how you already speak.', texto: 'Every chapter begins with a habit of yours that the new language does not accept, such as saying “eu sou trinta anos” when Brazilian Portuguese wants “eu tenho trinta anos”, or reading a French word letter by letter. Once you know which habit is in the way, you fix the mistake in weeks, not years.' },
+      { titulo: 'It starts from how you already speak.', texto: 'Every chapter begins with a habit of yours that the new language does not accept, such as saying “eu sou trinta anos” when Brazilian Portuguese wants “eu tenho trinta anos”, or reading a French word letter by letter. Recognising the habit helps you notice and practise the difference.' },
       { titulo: 'Explained in your language.', texto: 'The explanation is in English: the full rule, the exceptions and the typical mistake. The language you are learning appears in short sentences, dialogues and tables.' },
       { titulo: 'Every sentence has sound.', texto: 'Dialogues, set phrases and vocabulary come with audio, so you practice pronunciation from the first day.' },
       { titulo: 'Reviewed by speakers of the language.', texto: 'The books were written with the help of teachers and native speakers of the languages taught.' },

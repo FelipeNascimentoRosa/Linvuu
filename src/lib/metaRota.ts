@@ -21,11 +21,11 @@ import { POR_QUE } from './porQue.ts';
 import { EXCLUSAO } from './exclusaoConta.ts';
 import { contatos } from '../config/contato.ts';
 import { AUTORES, CAPITULOS_GRATIS, LIVROS_DESCRICAO, LIVROS_EM_PRODUCAO, LIVROS_META, LIVROS_META_EN, capituloParaHtml, livroDoSite, livrosDoSite, minutosDeLeitura, tituloLivro, type CapituloLivro, type ItemSumario, type MetaLivro } from './livros.ts';
-import { APRESENTACOES_CURSO, APRESENTACOES_LIVRO } from './apresentacoes.ts';
+import { APRESENTACOES_CURSO, APRESENTACOES_CURSO_EN, APRESENTACOES_LIVRO } from './apresentacoes.ts';
 import { AULAS_RUSSO } from '../config/aulas-russo';
 import { DESC_SEO_CURSO } from '../config/seoCurso.ts';
 import { duvidaPor, duvidaParaHtml, duvidasDoIdioma, caminhoDuvida } from './duvidas.ts';
-import { ALFABETOS, CAMINHO_HUB as CAMINHO_MATERIAIS, DESCRICAO_HUB as DESCRICAO_MATERIAIS, TITULO_HUB as TITULO_MATERIAIS, alfabetoPorSlug, alfabetoParaHtml, caminhoAlfabeto, caminhoAulaGratis, HUB_EN } from './materiais.ts';
+import { ALFABETOS, MATERIAIS_EN, CAMINHO_HUB as CAMINHO_MATERIAIS, DESCRICAO_HUB as DESCRICAO_MATERIAIS, TITULO_HUB as TITULO_MATERIAIS, alfabetoPorSlug, alfabetoParaHtml, caminhoAlfabeto, caminhoAulaGratis, HUB_EN } from './materiais.ts';
 // Data da última mudança do conteúdo (a mesma do <lastmod> do sitemap, gerada por scripts/gerar-lastmod.mjs).
 // Vai como dateModified nos capítulos e gramáticas: os auditores claude-seo/GEO pediram data de atualização (13/11/2026).
 let LASTMOD: Record<string, string> | null = null;
@@ -143,7 +143,7 @@ const SEO_EN = {
    * francês e português do Brasil (content/gramatica/<id>.en.json). Ao traduzir outra, atualize a frase aqui.
    */
   gramaticaT: 'Grammar guides explained in English',
-  gramaticaD: 'Grammar for Spanish, German, Russian, French and Brazilian Portuguese, explained in English with tables, examples and the mistakes each language hides.',
+  gramaticaD: 'Grammar for Spanish, German, Russian, French and Brazilian Portuguese: explanations in English, examples and common mistakes English speakers make.',
   entrarT: 'Sign in to your Linvuu account',
   entrarD: 'Sign in to your Linvuu account with e-mail or Google to pick up the course where you stopped, review your answers and keep your progress saved.',
   cadastroT: 'Create your Linvuu account',
@@ -260,7 +260,7 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
   // Materiais gratuitos: guias de alfabeto e pronúncia (russo, alemão, francês, italiano, espanhol), em português. Só no .com.br, como os livros.
   // .com (desde 19/11/2026): o hub existe em inglês, com os cartões levando à primeira aula grátis de cada curso.
   if (p === CAMINHO_MATERIAIS && loc.codigo === 'en') return { status: 200, caminho: p, titulo: HUB_EN.titulo, descricao: HUB_EN.descricao, em: ['pt-BR', 'en'], jsonld: [
-    { '@context': 'https://schema.org', '@type': 'CollectionPage', name: HUB_EN.titulo, url: `${SITE}${p}`, inLanguage: 'en', isPartOf: { '@id': ORG_ID }, mainEntity: { '@type': 'ItemList', itemListElement: ALFABETOS.map((a, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE}${caminhoAulaGratis(a.id)}`, name: `${HUB_EN.idioma[a.id]} alphabet` })) } },
+    { '@context': 'https://schema.org', '@type': 'CollectionPage', name: HUB_EN.titulo, url: `${SITE}${p}`, inLanguage: 'en', isPartOf: { '@id': ORG_ID }, mainEntity: { '@type': 'ItemList', itemListElement: MATERIAIS_EN.map((id, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE}${caminhoAulaGratis(id)}`, name: `${HUB_EN.idioma[id]} first session` })) } },
   ] };
   if (p === CAMINHO_MATERIAIS) return { status: 200, caminho: p, titulo: TITULO_MATERIAIS, descricao: DESCRICAO_MATERIAIS, em: ['pt-BR', 'en'], jsonld: [
     { '@context': 'https://schema.org', '@type': 'CollectionPage', name: TITULO_MATERIAIS, url: `${SITE}${p}`, inLanguage: 'pt-BR', isPartOf: { '@id': ORG_ID }, mainEntity: { '@type': 'ItemList', itemListElement: ALFABETOS.map((a, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE}${caminhoAlfabeto(a.slug)}`, name: a.titulo })) } },
@@ -510,7 +510,7 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
   const nome = (c: CursoMeta) => ({ ...c, ...(c.i18n?.[loc.codigo] ?? {}) });
   const visiveis = (d?.cursos ?? []).filter((c) => c.status !== 'em-breve' && c.id !== loc.cursoOculto).map(nome);
   // Vitrine do domínio: no .com só entram cursos com aulas explicadas em inglês (mesma regra do site em React: cursoComExplicacaoNoSite).
-  const vitrine = loc.codigo === 'pt-BR' ? visiveis : visiveis.filter((c) => (d?.indice[c.id]?.fonte ?? 'pt') === loc.explicacao || (d?.indice[c.id]?.tr?.[loc.explicacao]?.aulas?.length ?? 0) > 0);
+  const vitrine = loc.codigo === 'pt-BR' ? visiveis : visiveis.filter((c) => c.id !== 'it' && ((d?.indice[c.id]?.fonte ?? 'pt') === loc.explicacao || (d?.indice[c.id]?.tr?.[loc.explicacao]?.aulas?.length ?? 0) > 0));
   const base = semPrefixo(m.caminho);
   let corpo = '';
   if (base === '/' || base === '/cursos') {
@@ -532,7 +532,7 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
     }
     // Materiais gratuitos: o texto inteiro do guia vai no HTML, para o Google e para quem não executa JavaScript.
     const ma = base.match(/^\/materiais-gratuitos\/([a-z-]+)$/);
-    if (base === CAMINHO_MATERIAIS && loc.codigo === 'en') corpo = cabeca(HUB_EN.h1, HUB_EN.lead) + li(ALFABETOS.map((a) => `<a href="${caminhoAulaGratis(a.id)}">${esc(`${HUB_EN.idioma[a.id]} alphabet`)}</a>: ${esc(HUB_EN.sub)}`)) + `<h2>${esc(HUB_EN.conviteT)}</h2><p>${esc(HUB_EN.convite)}</p><p><a href="/cursos">${esc(HUB_EN.conviteCta)}</a></p>`;
+    if (base === CAMINHO_MATERIAIS && loc.codigo === 'en') corpo = cabeca(HUB_EN.h1, HUB_EN.lead) + li(MATERIAIS_EN.map((id) => `<a href="${caminhoAulaGratis(id)}">${esc(`${HUB_EN.idioma[id]} first session`)}</a>: ${esc(HUB_EN.sub)}`)) + `<h2>${esc(HUB_EN.conviteT)}</h2><p>${esc(HUB_EN.convite)}</p><p><a href="/cursos">${esc(HUB_EN.conviteCta)}</a></p>`;
     else if (base === CAMINHO_MATERIAIS) corpo = cabeca(m.titulo ?? '', m.descricao) + li(ALFABETOS.map((a) => `<a href="${caminhoAlfabeto(a.slug)}">${esc(a.titulo)}</a>`));
     else if (ma && alfabetoPorSlug(ma[1])) {
       const a = alfabetoPorSlug(ma[1])!;
@@ -549,7 +549,7 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
       const mesmo = (d?.indice[mc[1]]?.fonte ?? 'pt') === loc.explicacao;
       // Links estaticos para amostras publicas reais. O Google tambem pode descobrir URLs pelo JavaScript.
       const indexavel = (g: { aula: number; dias: [number, number] }) => g.dias[0] <= SESSOES_GRATIS && (mesmo || !!d?.indice[mc[1]]?.tr?.[loc.explicacao]?.aulas?.includes(g.aula));
-      const apresentacao = loc.codigo === 'pt-BR' ? APRESENTACOES_CURSO[mc[1]] : undefined;
+      const apresentacao = loc.codigo === 'pt-BR' ? APRESENTACOES_CURSO[mc[1]] : APRESENTACOES_CURSO_EN[mc[1]];
       corpo = cabeca(m.titulo ?? '', c?.descricao) + (apresentacao ? `<h2>${esc(apresentacao.titulo)}</h2>${apresentacao.paragrafos.map((p) => `<p>${esc(p)}</p>`).join('')}` : '') + li(grupos.filter(indexavel).flatMap((g) => {
         const rot = tx.aula(g.aula, mesmo ? g.titulo : tr?.[g.aula] ?? g.titulo, c?.nome ?? '').split(' · ')[0];
         return Array.from({ length: g.dias[1] - g.dias[0] + 1 }, (_, k) => g.dias[0] + k)
@@ -606,6 +606,7 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
   if (base === '/contato') { const c = CONTATO[loc.codigo]; corpo = cabeca(c.titulo, c.descricao) + `<p>${esc(c.lead)}</p>` + li(contatos(loc.codigo).filter((x) => x.id !== 'linkedin').map((x) => `<a href="${esc(x.href)}">${esc(x.nome)}: ${esc(x.rotulo)}</a>`)) + `<h2 id="linkedin">LinkedIn</h2><p>${esc(c.autoresNota)}</p>` + li(AUTORES.map((x) => `<a href="${esc(x.links[0])}" rel="me">${esc(x.nome)}</a>`)); }
   if (base === '/ex-alunos-udemy') corpo = cabeca(EX_ALUNOS.titulo, EX_ALUNOS.descricao) + `<p>${esc(EX_ALUNOS.lead)}</p><h2>O que você encontra na Linvuu</h2>` + li(EX_ALUNOS.beneficios.map((x) => esc(x))) + `<h2>Como pedir sua condição especial</h2><ol>${EX_ALUNOS.passos.map((x) => `<li>${esc(x)}</li>`).join('')}</ol><p>${esc(EX_ALUNOS.aviso)}</p>` + `<h2>Perguntas frequentes</h2>` + EX_ALUNOS.perguntas.map((q) => `<h3>${esc(q.p)}</h3><p>${esc(q.r)}</p>`).join('');
   const menu = menuPreRender(loc);
+  if (corpo && (base === '/' || base === '/gramatica' || /^\/curso\/[a-z]{2}$/.test(base))) corpo += `<p>${loc.codigo === 'en' ? 'Content by Felipe and Luiza. ' : 'Conteúdo de Felipe e Luiza. '}${a('/sobre', loc.codigo === 'en' ? 'About the authors' : 'Conheça os autores')}</p>`;
   return corpo ? `<main data-prerender>${menu}${corpo}</main>` : '';
 }
 

@@ -33,7 +33,7 @@ export const en: Dicionario = {
     { t: '2 free lessons', d: 'No card and nothing to install. Try the method before you decide.' },
   ],
   provaRotulo: 'Why Linvuu',
-  explorar: { kicker: 'Explore', titulo: 'Choose what to learn', idiomasTexto: 'Brazilian Portuguese, Spanish, German, French, Italian and Russian. Every course starts from zero and goes up to B1.' },
+  explorar: { kicker: 'Explore', titulo: 'Choose what to learn', idiomasTexto: 'Brazilian Portuguese, Spanish, German, French and Russian. Courses start from zero; German continues through B1 with four additional B2-level lessons.' },
   metodo: {
     kicker: 'How it works', titulo: 'One session,', destaque: 'three steps',
     sub: 'Each session takes about 30 minutes and always follows the same order: listen, understand, practise. Every 4 sessions make a full lesson that ends with a review.',
@@ -166,7 +166,7 @@ export const en: Dicionario = {
   },
   gramaticaPagina: {
     titulo: (nome: string) => `${nome} grammar`, tituloGeral: 'Grammar', descricao: (nome: string) => `${nome} grammar, topic by topic, with tables, examples and common mistakes.`,
-    lead: 'Every rule in short steps, with tables, examples and common mistakes. Where a topic has not been translated into English yet, it is shown in the course’s original language — and the page says so. Each topic links to the session where you practise it.',
+    lead: 'Each available topic explains a rule in English with examples and common mistakes. Follow the link to practise it in the course.',
     idioma: 'Language', categoria: 'Category', todas: 'All', erro: 'We could not load the grammar right now. Reload the page.',
     topicos: (n: number) => (n === 1 ? '1 topic' : `${n} topics`), aula: (n: number) => `Lesson ${n}`, praticar: (a: number, s: string) => `Practise it in lesson ${a}, session ${s}`,
     bloqueados: (n: number) => `These are the topics of the first 2 lessons. The other ${n} topics are for subscribers.`,

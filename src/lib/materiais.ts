@@ -25,16 +25,17 @@ export const DESCRICAO_HUB = "Guias gratuitos de alfabeto e pronúncia da Linvuu
  * já apresenta o alfabeto e os sons explicados em inglês. Mesmas imagens e mesmo desenho do hub brasileiro. */
 export const HUB_EN = {
   titulo: "Free materials: alphabet and pronunciation",
-  descricao: "Free alphabet and pronunciation lessons from Linvuu: Russian, German, French, Italian and Spanish, explained in English, with audio in every sentence.",
+  descricao: "Try free first sessions in Spanish, German, French, Russian and Brazilian Portuguese, explained in English with audio and practice exercises.",
   h1: "Free materials",
-  lead: "Short lessons to study for free. Each one opens a language with its alphabet and its sounds: the letters that look like English ones, the ones that trick you and the ones that are new.",
-  idioma: { ru: "Russian", de: "German", fr: "French", it: "Italian", es: "Spanish" } as Record<string, string>,
-  sub: "Letters, sounds and audio in the free first lesson",
+  lead: "Try the first session of a course, with explanations in English, audio and exercises.",
+  idioma: { ru: "Russian", de: "German", fr: "French", br: "Brazilian Portuguese", es: "Spanish" } as Record<string, string>,
+  sub: "First session, free",
   cta: "Open the free lesson",
   conviteT: "From the alphabet to your first conversation.",
-  convite: "The first 2 lessons of every course are free, explained in English, with audio in every sentence.",
+  convite: "The first 2 lessons of every complete course are free, explained in English, with audio and exercises.",
   conviteCta: "Start a course for free",
 };
+export const MATERIAIS_EN = ['ru', 'de', 'fr', 'es', 'br'] as const;
 export const caminhoAulaGratis = (id: string) => `/curso/${id}/dia/1`;
 export const LEAD_HUB = "Guias curtos para estudar sem cadastro e sem pagar. Cada um reúne o alfabeto do idioma em uma página: as letras que parecem com as do português, as que enganam e as que são novas.";
 

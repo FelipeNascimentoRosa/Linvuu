@@ -10,9 +10,10 @@ import { Link } from 'react-router-dom';
 import { falar } from '../lib/audio';
 import { usePageTitle } from '../lib/usePageTitle';
 import { CURSOS_ATIVOS, cursoComExplicacaoNoSite, coberturaNoSite } from '../lib/content';
+import { CreditoVitrine } from '../components/CreditoVitrine';
 
 // Catálogo da home, na mesma ordem nos dois domínios: no .com o português (br) ocupa o lugar do inglês.
-const CATALOGO = { 'pt-BR': ['en', 'es', 'de', 'fr', 'it', 'ru'], en: ['br', 'es', 'de', 'fr', 'it', 'ru'] } as const;
+const CATALOGO = { 'pt-BR': ['en', 'es', 'de', 'fr', 'it', 'ru'], en: ['br', 'es', 'de', 'fr', 'ru'] } as const;
 import './home-brasileiros.css';
 import { Avaliacoes } from '../components/Avaliacoes';
 
@@ -58,6 +59,7 @@ export default function HomeBrasileiros() {
   };
   // Mesmo esqueleto e desenho nos dois domínios (Felipe, 19/11/2026: o .com espelha o .com.br); muda só a língua.
   return <div className="br-home br-home-leve">
+    <CreditoVitrine />
     <section className="br-hero" aria-labelledby="br-h1">
       <div className="br-hero-in">
         <div className="br-hero-topo br-hero-topo-simples">
@@ -104,7 +106,7 @@ export default function HomeBrasileiros() {
         <span>{h("Grátis, sem cartão, no seu ritmo.")}</span>
       </div>
     </section>
-    <section className="br-section br-motion-item" id="idiomas" aria-labelledby="titulo-livros"><span id="cursos" /><div className="br-section-head"><div><h2 id="titulo-livros">{ehCom ? 'Choose your language.' : 'Escolha seu idioma.'}</h2></div><p>{ehCom ? 'Every course comes with audio in every sentence and the first 2 lessons free.' : 'Cada curso tem livro de apoio, áudio em cada frase e as 2 primeiras aulas grátis.'}</p></div><div className="site-publico site-catalogo"><div className="curso-grid">{catalogo.map((c) => <div className="catalogo-idioma" key={c.id}><CursoCard curso={c} nivel={3} catalogoRascunho /><LivroDoCurso curso={c} /></div>)}</div></div></section>
+    <section className="br-section br-motion-item" id="idiomas" aria-labelledby="titulo-livros"><span id="cursos" /><div className="br-section-head"><div><h2 id="titulo-livros">{ehCom ? 'Choose your language.' : 'Escolha seu idioma.'}</h2></div><p>{ehCom ? 'Courses include audio and exercises. The first 2 lessons are free.' : 'Os cursos incluem áudio e exercícios. As 2 primeiras aulas são grátis.'}</p></div><div className="site-publico site-catalogo"><div className="curso-grid">{catalogo.map((c) => <div className="catalogo-idioma" key={c.id}><CursoCard curso={c} nivel={3} catalogoRascunho /><LivroDoCurso curso={c} /></div>)}</div></div></section>
     <section className="br-book"><div><h2>{ehCom ? 'Your learning has pages, too.' : 'Seu aprendizado também tem páginas.'}</h2><p>{ehCom ? 'Read Linvuu’s Brazilian Portuguese grammar calmly and come back to the topics that deserve more attention.' : 'Explore os livros da Linvuu, leia com calma e volte aos assuntos que merecem mais atenção.'}</p></div><Link className="br-text-link" to="/livros">{ehCom ? 'See the book' : 'Conhecer a coleção'} <span aria-hidden="true">→</span></Link></section>
     <OfertaAtual />
     <div className="br-section br-avaliacoes br-motion-item"><Avaliacoes vitrine /></div>

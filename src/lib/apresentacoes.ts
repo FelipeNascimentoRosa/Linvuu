@@ -3,14 +3,14 @@ export const APRESENTACOES_CURSO: Record<string, { titulo: string; paragrafos: s
   de: {
     titulo: 'Por onde começar no alemão',
     paragrafos: [
-      'O curso começa pelos sons e avança em etapas, com explicações em português e exemplos de erros comuns. A trilha reúne gramática, diálogos e exercícios ao longo dos níveis A1, A2 e B1.',
+      'Em português dizemos «a menina»; em alemão, «das Mädchen» é neutro. O curso trabalha gênero, casos e ordem das palavras, do início ao B1, e inclui quatro aulas adicionais de nível B2.',
       'As duas primeiras aulas são gratuitas. Para complementar o estudo, o livro de alemão abre com sons e letras e segue para pronomes e presente.',
     ],
   },
   ru: {
     titulo: 'Por onde começar no russo',
     paragrafos: [
-      'O primeiro passo é conhecer o alfabeto cirílico e seus sons. A trilha segue com exemplos, diálogos e explicações dos casos gramaticais, organizados do A1 ao B1.',
+      'Em russo, «у меня есть книга» diz que tenho um livro; em «у меня нет книги», a palavra muda para o genitivo. O curso apresenta o cirílico e os casos com exemplos, do A1 ao B1.',
       'As duas primeiras aulas são gratuitas. Você pode conhecer o material antes de escolher uma assinatura e voltar à trilha para continuar estudando.',
     ],
   },
@@ -43,6 +43,14 @@ export const APRESENTACOES_CURSO: Record<string, { titulo: string; paragrafos: s
       'A trilha inclui situações do dia a dia (bar, viagem, trabalho, a burocracia de viver na Itália) e termina cada nível com revisão e simulado. As duas primeiras aulas são gratuitas.',
     ],
   },
+};
+
+export const APRESENTACOES_CURSO_EN: Record<string, { titulo: string; paragrafos: string[] }> = {
+  ru: { titulo: 'Where to start with Russian', paragrafos: ['Russian changes the form of a noun where English often relies on word order or a preposition. Compare «у меня есть книга» (I have a book) with «у меня нет книги» (I do not have a book): the second form is genitive.'] },
+  de: { titulo: 'Where to start with German', paragrafos: ['German word order can place the verb before the subject: «Heute lerne ich Deutsch» means “Today I am learning German”. The course also covers grammatical gender and cases through B1, with four additional B2-level lessons.'] },
+  es: { titulo: 'Where to start with Spanish', paragrafos: ['English uses “to be” in both “I am a doctor” and “I am tired”. Spanish commonly uses «soy médica» for a profession and «estoy cansada» for a temporary state.'] },
+  fr: { titulo: 'Where to start with French', paragrafos: ['French «tu» and «tout» have different vowels. The course introduces sounds and spelling before moving on to verbs, articles and sentence structure.'] },
+  br: { titulo: 'Where to start with Brazilian Portuguese', paragrafos: ['English says “I am 30”; Portuguese uses «tenho 30 anos», literally “I have 30 years”. The course introduces expressions like this alongside pronunciation and basic grammar.'] },
 };
 
 export const APRESENTACOES_LIVRO: Record<string, { titulo: string; paragrafos: string[] }> = {

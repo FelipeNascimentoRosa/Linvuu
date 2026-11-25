@@ -138,7 +138,8 @@ console.log(`sitemap .com.br: ${linhasBr.length} endereços (pt-BR) · sitemap .
     const n = nomes[c.id]?.[en ? 'en' : 'pt'] ?? c.id;
     const aulas = indice[c.id]?.grupos?.length;
     const gram = noSitemap(loc, `/gramatica/${c.id}`) ? ` · ${md(en ? `${n} grammar` : `Gramática de ${n.toLowerCase()}`, `${site}/gramatica/${c.id}`)}` : '';
-    return `- ${md(en ? `${n} course` : `Curso de ${n.toLowerCase()}`, `${site}/curso/${c.id}`)}${aulas ? (en ? ` (${aulas} lessons, A1 to B1)` : ` (${aulas} aulas, do A1 ao B1)`) : ''}: ${md(en ? 'free first lesson' : 'primeira aula grátis', `${site}/curso/${c.id}/dia/1`)}${gram}`;
+    const alcance = c.id === 'de' ? (en ? 'A1 to B1, plus four additional B2 lessons' : 'do A1 ao B1, mais quatro aulas de nível B2') : (en ? 'A1 to B1' : 'do A1 ao B1');
+    return `- ${md(en ? `${n} course` : `Curso de ${n.toLowerCase()}`, `${site}/curso/${c.id}`)}${aulas ? (en ? ` (${aulas} lessons, ${alcance})` : ` (${aulas} aulas, ${alcance})`) : ''}: ${md(en ? 'free first lesson' : 'primeira aula grátis', `${site}/curso/${c.id}/dia/1`)}${gram}`;
   });
   const br = `# Linvuu (Brasil)
 
