@@ -166,7 +166,7 @@ export const en: Dicionario = {
   },
   gramaticaPagina: {
     titulo: (nome: string) => `${nome} grammar`, tituloGeral: 'Grammar', descricao: (nome: string) => `${nome} grammar, topic by topic, with tables, examples and common mistakes.`,
-    lead: 'Every rule in short steps, with tables, examples and common mistakes. Where a topic has not been translated into English yet, it is shown in the course’s original language — and the page says so. Each topic links to the session where you practise it.',
+    lead: 'Each available topic explains a rule in English with examples and common mistakes. Follow the link to practise it in the course.',
     idioma: 'Language', categoria: 'Category', todas: 'All', erro: 'We could not load the grammar right now. Reload the page.',
     topicos: (n: number) => (n === 1 ? '1 topic' : `${n} topics`), aula: (n: number) => `Lesson ${n}`, praticar: (a: number, s: string) => `Practise it in lesson ${a}, session ${s}`,
     bloqueados: (n: number) => `These are the topics of the first 2 lessons. The other ${n} topics are for subscribers.`,
