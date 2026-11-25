@@ -1,0 +1,28 @@
+name: Monitorar producao (Vercel)
+
+# Verifica a producao nos dois dominios a cada 6 horas. So consulta URLs que respondem 200 OK:
+# /healthz, /readyz, /robots.txt, /sitemap.xml e /llms.txt (cada dominio com os seus).
+# Nao substitui monitoramento externo de disponibilidade; agendamentos do GitHub podem atrasar.
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+permissions: {}
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    strategy:
+      fail-fast: false
+      matrix:
+        dominio: [linvuu.com.br, linvuu.com]
+    steps:
+      - name: Verificar saude, robots, sitemap e llms.txt
+        env:
+          DOMINIO: ${{ matrix.dominio }}
+        run: |
+          for caminho in /healthz /readyz /robots.txt /sitemap.xml /llms.txt; do
+            codigo=$(curl -sS --max-time 90 --retry 2 --retry-delay 10 -o /dev/null -w '%{http_code}' "https://${DOMINIO}${caminho}")
+            echo "${DOMINIO}${caminho} -> ${codigo}"
+            [ "${codigo}" = "200" ] || exit 1
+          done

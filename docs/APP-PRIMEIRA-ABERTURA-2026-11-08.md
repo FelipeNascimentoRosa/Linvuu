@@ -10,7 +10,7 @@
 
 ## Decisões
 1. **Um app só** (`com.linvuu.app`) para os dois públicos. A escolha da língua materna substitui a escolha de domínio. Dois apps dividiriam avaliações, downloads e trabalho de loja.
-2. **Backend único:** o app continua falando com a API em `linvuu.com.br` (o mesmo serviço do Render atende `.com` e `.com.br`). Não muda nada de conta, progresso ou acesso conforme a língua escolhida.
+2. **Backend único:** o app continua falando com a API em `linvuu.com.br` (o mesmo serviço da Vercel atende `.com` e `.com.br`). Não muda nada de conta, progresso ou acesso conforme a língua escolhida.
 3. **Sem venda dentro do app nesta versão.** No Brasil, conteúdo digital vendido dentro do app precisa usar o Google Play Billing; pelas notícias de 2026, a abertura para outras formas de pagamento no resto do mundo está prevista para 30/09/2027 (conferir na política oficial antes de mudar). Até ligar o Play Billing (ver `docs/COBRANCA-APP.md`), o app não mostra preço nem link de compra.
 
 ## Próximos passos para a loja (não feitos aqui)

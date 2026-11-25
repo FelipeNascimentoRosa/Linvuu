@@ -36,7 +36,7 @@ Regra `explicacaoCompleta` (`server/metaRota.ts`): curso só entra no sitemap/hr
 ## 3. Trava do conteúdo em inglês (o que já foi traduzido não muda por acidente)
 
 - `content/travas-en.json` guarda o sha256 de **cada arquivo servido em inglês** (936 em 11/11/2026).
-- `node scripts/travas-en.mjs` confere; roda no **CI**, no `npm run content:check` e no **build do Render** (se falhar, o deploy para e o site anterior continua no ar).
+- `node scripts/travas-en.mjs` confere; roda no **CI**, no `npm run content:check` e no **build da Vercel** (se falhar, o deploy para e o site anterior continua no ar).
 - Arquivo travado **alterado ou apagado = erro**. Arquivo novo (curso crescendo) passa, mas é listado até ser travado.
 - Mudar conteúdo travado só de propósito: `npm run travas:en` no mesmo PR, dizendo no corpo do PR **o que** mudou e **por quê**. O diff de `travas-en.json` mostra exatamente quais arquivos foram destravados.
 - `ru/en` e `fr/en` (dias e gramáticas) são curados à mão: os mapas i18n deles são incompletos e **não podem regenerar** os arquivos servidos (guarda em `aulas.mjs`/`gramatica.mjs`, PR #590).

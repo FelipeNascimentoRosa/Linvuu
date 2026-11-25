@@ -6,7 +6,7 @@
 | Proteção | Onde | Como conferir |
 |---|---|---|
 | Cabeçalhos: HSTS, `nosniff`, `X-Frame-Options: DENY`, `Referrer-Policy`, `Permissions-Policy`, COOP/CORP; sem `X-Powered-By` | `server/seguranca.ts` | `npm run testar:seguranca` |
-| Content-Security-Policy (scripts só do próprio site e do login Google; sem `unsafe-inline` em scripts; sem frames de terceiros; `frame-ancestors 'none'`) | `server/seguranca.ts` | idem; se algo legítimo for bloqueado, defina `CSP_MODO=report` no Render (só observa) e ajuste a lista |
+| Content-Security-Policy (scripts só do próprio site e do login Google; sem `unsafe-inline` em scripts; sem frames de terceiros; `frame-ancestors 'none'`) | `server/seguranca.ts` | idem; se algo legítimo for bloqueado, defina `CSP_MODO=report` na Vercel (só observa) e ajuste a lista |
 | Limite de requisições por IP: cobrança 30/min, sessões 120/min, resto da API 300/min (resposta 429) | `server/seguranca.ts` | idem |
 | Corpo de requisição limitado a 10 KB; erros sem detalhes internos | `server.ts`, `server/seguranca.ts` | idem |
 | Rotas antigas do protótipo removidas (perfil falso em memória, download do projeto, análise por IA aberta que gastaria a chave do Gemini, webhook sem assinatura) | `server.ts` | `/api/*` desconhecido responde 404 JSON |

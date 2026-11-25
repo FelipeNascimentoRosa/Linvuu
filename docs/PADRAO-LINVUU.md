@@ -34,4 +34,4 @@ Hoje a explicação é em português do Brasil. No futuro o aluno escolherá a l
 - O código e todo o conteúdo ficam no GitHub (repositório `Linvuu`); a `main` só recebe alterações por pull request com CI verde.
 - Cópia fora do GitHub: fazer periodicamente `git clone --mirror` do repositório e guardar o resultado em outro lugar (um disco externo e um serviço de nuvem). Os áudios fazem parte do repositório.
 - Conta: verificação em duas etapas no GitHub, Render, Google e Registro.br; chaves de acesso do tipo «fine-grained», por repositório, com validade; nenhuma chave em texto de conversa ou de documento.
-- Variáveis secretas (Stripe, Firebase, Gemini) só no Render e no GitHub Secrets, nunca no código.
+- Variáveis secretas (Stripe, Firebase, Gemini) só na Vercel e no GitHub Secrets, nunca no código.

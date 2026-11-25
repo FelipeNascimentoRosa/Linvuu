@@ -1,6 +1,6 @@
 # EOL canônico dos arquivos gerados: LF.
 #
-# `scripts/seo.mjs` grava estes quatro arquivos com '\n' puro (o site é servido por Linux no Render,
+# `scripts/seo.mjs` grava estes quatro arquivos com '\n' puro (o site é servido por Linux na Vercel,
 # então o byte publicado precisa ser LF). No Windows, `core.autocrlf=true` fazia o checkout gravar
 # CRLF; a cada `npm run build` o gerador regravava LF e os dois sitemaps voltavam a aparecer como
 # modificados sem nenhuma diferença de conteúdo (`git diff` vazio, `git add` sem stage) — árvore

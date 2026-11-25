@@ -104,7 +104,7 @@ O app e o servidor já sabem vender e reconhecer a assinatura da Play. Nada liga
 - Biblioteca: RevenueCat Capacitor 13.7.4 → purchases-android 10.27.0 → Play Billing Library 8.3.0 (exigida desde 31/08/2026).
 
 **Servidor** (`server/play.ts`, `server/billing.ts`)
-- `acesso = Stripe ativo OU entitlement Play ativo`, consultando `GET https://api.revenuecat.com/v1/subscribers/{uid}` com `REVENUECAT_SECRET_KEY=sk_…` (só no Render, nunca no app).
+- `acesso = Stripe ativo OU entitlement Play ativo`, consultando `GET https://api.revenuecat.com/v1/subscribers/{uid}` com `REVENUECAT_SECRET_KEY=sk_…` (só na Vercel, nunca no app).
 - Entitlement: `REVENUECAT_ENTITLEMENT` (padrão `Premium`). Compras de testadores (sandbox) só liberam com `REVENUECAT_ACEITAR_SANDBOX=true` — ligue só durante o teste fechado.
 - Carência de pagamento da Play mantém acesso; reembolso e expiração tiram.
 

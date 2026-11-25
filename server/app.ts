@@ -1,6 +1,6 @@
 // Montagem do app Express da Linvuu, sem arranque.
 //
-// Este ficheiro é a única montagem do servidor: `server.ts` (longa duração, Render/local)
+// Este ficheiro é a única montagem do servidor: `server.ts` (longa duração, local)
 // arranca-o com `app.listen`, e `api/index.ts` (Vercel) exporta-o como handler da função.
 // Nada aqui faz `listen`, importa o Vite ou lê `process.env.PORT` para servir — o Vite só
 // existe no arranque de desenvolvimento (`server.ts`) e nunca é empacotado na função.
@@ -37,7 +37,7 @@ import { raizDoProjeto } from './caminhos';
 export function criarApp(): Express {
   const app = express();
 
-  // Porta: usa process.env.PORT (Render) ou 3000 em desenvolvimento. Na Vercel não tem efeito;
+  // Porta: usa process.env.PORT ou 3000 em desenvolvimento. Na Vercel não tem efeito;
   // só é usada aqui para a URL base de desenvolvimento no checkout.
   const PORT: number = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 
@@ -60,7 +60,7 @@ export function criarApp(): Express {
   app.use('/api/progresso/revisao', express.json({ limit: LIMITE_CORPO_REVISAO }));
   app.use(express.json({ limit: '10kb' }));
 
-  // Saúde do serviço (para o Render e para monitoramento).
+  // Saúde do serviço (para monitoramento).
   app.get('/healthz', (_req: Request, res: Response) => { res.json({ ok: true }); });
   registrarProntidao(app);
   registrarAssetLinks(app);
@@ -96,7 +96,7 @@ export function criarApp(): Express {
     // Na Vercel, os ficheiros por Host e os ficheiros internos não vivem em dist/ (o CDN
     // servi-los-ia antes da função — ver docs/infra/VERCEL.md): o passo de build
     // `scripts/mover-arquivos-servidor.mjs` move-os para `server-files/`, de onde a função
-    // os lê via `includeFiles`. No Render e no local continuam em dist/ — excepto depois
+    // os lê via `includeFiles`. No local continuam em dist/ — excepto depois
     // de um `build:vercel` local, em que o passo já os tirou de dist/; nesse caso o
     // servidor local também os lê de `server-files/` (é o layout que o build deixou).
     const dirServerFiles = path.resolve(raiz, 'server-files');

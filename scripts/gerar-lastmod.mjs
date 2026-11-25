@@ -7,7 +7,7 @@
 // que a compõe, não o modelo visual. Componentes React só contam nas páginas
 // estáticas, onde o texto vive dentro do componente.
 //
-// Como correr (exige um clone com o histórico completo; o build no Render não
+// Como correr (exige um clone com o histórico completo; o build na Vercel não
 // tem .git fiável, por isso o manifesto é versionado e o scripts/seo.mjs só o lê):
 //   node scripts/gerar-lastmod.mjs
 // Correr depois de merges com alterações de conteúdo e versionar o resultado

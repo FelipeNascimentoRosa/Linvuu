@@ -57,7 +57,7 @@ export function cabecalhos(producao: boolean) {
 }
 
 type Janela = { n: number; ate: number };
-/** Limite por IP e por grupo de rotas (memória do processo; o Render roda uma instância). */
+/** Limite por IP e por grupo de rotas (memória do processo; cada instância tem a sua memória). */
 // Faixas oficiais da Cloudflare (https://www.cloudflare.com/ips/). O cabeçalho CF-Connecting-IP só vale quando a conexão vem delas;
 // de outro jeito qualquer pessoa poderia forjá-lo para fugir do limite de requisições.
 const CF_V4 = ['173.245.48.0/20', '103.21.244.0/22', '103.22.200.0/22', '103.31.4.0/22', '141.101.64.0/18', '108.162.192.0/18', '190.93.240.0/20', '188.114.96.0/20', '197.234.240.0/22', '198.41.128.0/17', '162.158.0.0/15', '104.16.0.0/13', '104.24.0.0/14', '172.64.0.0/13', '131.0.72.0/22'];
@@ -133,7 +133,7 @@ export function cors(req: Request, res: Response, next: NextFunction) {
 export function registrarSeguranca(app: Express, producao: boolean) {
   app.disable('x-powered-by');
   // Na Vercel a cadeia pode ter dois saltos (visitante → Cloudflare → edge Vercel → função);
-  // com 2, o req.ip continua a ser o do visitante nos dois casos (com e sem proxy). No Render é 1.
+  // com 2, o req.ip continua a ser o do visitante nos dois casos (com e sem proxy). Localmente é 1.
   app.set('trust proxy', process.env.VERCEL ? 2 : 1);
   app.use(cabecalhos(producao));
   app.use('/api', cors);

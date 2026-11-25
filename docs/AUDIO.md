@@ -31,4 +31,4 @@ Grave, exporte em MP3 e salve com o **mesmo nome** (`<hash>.mp3`) em `public/aud
 - Para um serviço oficial, com as mesmas vozes e controle de pronúncia, use o **Azure AI Speech** (o Felipe planeja usá-lo para o russo). O ponto de troca é a função `sintetizar` em `scripts/gerar-audios.mjs`.
 - **Tamanho:** cada MP3 tem ~11 KB (uma palavra) a ~30 KB (uma frase longa). Os dois idiomas completos devem somar de 15 a 30 MB, muito abaixo do limite do GitHub (recomendação: repositório abaixo de 1 GB).
 - **Backup:** `git clone --mirror https://github.com/FelipeNascimentoRosa/Linvuu.git` guarda tudo (código, aulas e MP3) numa pasta que você copia para um HD externo.
-- **Migrar para Firebase Storage (se o tamanho crescer):** envie `public/audio/<idioma>/` para um bucket e aponte `VITE_AUDIO_BASE_URL` para ele no Render. Os nomes dos arquivos não mudam.
+- **Migrar para Firebase Storage (se o tamanho crescer):** envie `public/audio/<idioma>/` para um bucket e aponte `VITE_AUDIO_BASE_URL` para ele na Vercel. Os nomes dos arquivos não mudam.

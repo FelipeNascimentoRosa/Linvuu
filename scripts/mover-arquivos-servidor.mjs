@@ -1,7 +1,7 @@
 // Move os ficheiros por Host e os ficheiros internos de dist/ para server-files/.
 //
 // Só corre no build da Vercel (`npm run build:vercel`), DEPOIS de comprimir.mjs, e NUNCA
-// no build do Render (aí tudo continua em dist/, como hoje).
+// no build da Vercel (aí tudo continua em dist/, como hoje).
 //
 // Porquê: a Vercel serve tudo o que está em dist/ pelo CDN ANTES de qualquer rewrite —
 // um ficheiro estático existente ganha à função. Isso quebraria três comportamentos:

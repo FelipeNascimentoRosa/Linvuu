@@ -10,7 +10,7 @@ Resposta seca e técnica: sem preâmbulo, sem desculpa, sem elogio, sem narrar a
 1. É aprendizagem estrutural (alfabeto, fonética/IPA, morfologia, sintaxe, casos, conjugações, revisão espaçada) feita por professores, com engenharia, SEO internacional e segurança de produção. Não é clone do Duolingo nem MVP.
 2. **Proibido** stub, `mock`, "resto aqui", resumo raso ou devolver trabalho técnico ao Felipe. Entrega completa, tipada, testada, com o comando que provou e a saída real.
 3. **Proibido** instalar dependência que o PR não usa. Licença MIT/Apache-2.0/BSD/MPL-2.0 conferida e registro em `REPOS_FINAL.md`; GPL, AGPL e SSPL bloqueadas.
-4. Mídia de marketing só com frases, tabelas e exemplos reais de `content/` (`npm run midia:carrossel`, `npm run midia:video`). Motor de vídeo: HyperFrames (Apache-2.0). **Nunca Remotion.**
+4. Mídia de marketing só com frases, tabelas e exemplos reais de `content/` (`npm run midia:carrossel`; `npm run midia:instalar` e depois `npm run midia:video`, que exige Node >=24.12). Motor de vídeo: HyperFrames (Apache-2.0). **Nunca Remotion.**
 5. **Mascotes proibidos** em site, APK e marketing (Vuu, Pelmeni, qualquer outro). Todos foram excluídos em 25/11/2026; não reintroduzir (travas negativas em testes).
 
 ## Produto em 5 linhas

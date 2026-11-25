@@ -33,5 +33,5 @@ export function avisarSeSemAudioPrivado(env: NodeJS.ProcessEnv = process.env) {
   // Com o R2 configurado, o áudio pago vem do bucket privado e o disco não precisa dele.
   if (r2Configurado(env)) return;
   const existe = raizesDoAudioPrivado(env).some((r) => fs.existsSync(path.join(r, 'audio-privado-v2')) || fs.existsSync(path.join(r, 'audio-privado')));
-  if (!existe) console.error('[Linvuu] áudio pago ausente: configure o R2 (R2_ACCOUNT_ID, R2_BUCKET, R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY) ou defina AUDIO_REPO_TOKEN no build do Render (docs/infra/R2-AUDIO-PRIVADO.md)');
+  if (!existe) console.error('[Linvuu] áudio pago ausente: configure o R2 (R2_ACCOUNT_ID, R2_BUCKET, R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY) ou defina AUDIO_REPO_TOKEN no build da Vercel (docs/infra/R2-AUDIO-PRIVADO.md)');
 }
