@@ -21,10 +21,12 @@ export function SugestaoIdioma() {
     setAlvo(idiomaSugerido(navigator.languages?.length ? navigator.languages : [navigator.language], LOCALE.codigo));
   }, []);
   if (!alvo) return null;
-  const t = TX[alvo];
+  const t = LOCALE.codigo === 'en' && alvo === 'pt-BR'
+    ? { texto: 'Prefer Portuguese? Visit Linvuu for Portuguese speakers.', ir: 'Open Linvuu in Portuguese', curto: 'In Portuguese', fechar: 'Stay here' }
+    : TX[alvo];
   const fechar = () => { try { localStorage.setItem(CHAVE, '1'); } catch { /* fecha só agora */ } setAlvo(null); };
   return (
-    <aside className="sugestao-idioma" lang={alvo} aria-label={t.ir}>
+    <aside className="sugestao-idioma" lang={LOCALE.codigo === 'en' ? 'en' : alvo} aria-label={t.ir}>
       <p>{t.texto}</p>
       <a href={urlEm(alvo)} hrefLang={alvo} aria-label={t.ir} onClick={(e) => {
         try { localStorage.setItem(CHAVE, '1'); } catch { /* segue */ }

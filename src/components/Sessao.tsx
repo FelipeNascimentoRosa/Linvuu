@@ -270,7 +270,7 @@ export function Gramatica({ b, idioma, explicacao }: { b: Extract<Bloco, { tipo:
       {b.erros && (
         <div className="erros">
           <h4 className="bloco-sub">{T.erros}</h4>
-          <ul>{b.erros.map((e) => <li key={e.errado}><span className="errado" lang={idioma === 'br' ? 'pt-BR' : idioma}>✗ {e.errado}</span><span className="certo" lang={idioma === 'br' ? 'pt-BR' : idioma}>✓ {e.certo} <Audio texto={e.certo} idioma={idioma} /></span><small>{e.motivo}</small></li>)}</ul>
+          <ul>{b.erros.map((e) => <li key={e.errado}><span className="errado" lang={idioma === 'br' ? 'pt-BR' : idioma}>✗ {e.errado}</span><span className="certo" lang={idioma === 'br' ? 'pt-BR' : idioma}>✓ {e.certo} <Audio texto={e.audio ?? e.certo} idioma={idioma} /></span><small>{e.motivo}</small></li>)}</ul>
         </div>
       )}
     </section>

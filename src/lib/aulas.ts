@@ -7,7 +7,7 @@ export interface LinhaDialogo { personagem: string; ru: string; pt: string; audi
 export interface ExemploGramatica { ru: string; pt: string }
 export interface LinhaTabela { nominativo: string; acusativo: string; exemplo: string }
 export interface Pergunta { pergunta: string; resposta: string }
-export interface ErroComum { errado: string; certo: string; motivo: string }
+export interface ErroComum { errado: string; certo: string; motivo: string; audio?: string }
 export interface TabelaTitulada { titulo?: string; linhas: Record<string, string>[] }
 
 export type TipoExercicio = 'multiple-choice' | 'audio-recognition' | 'fill-gap' | 'sentence-ordering' | 'producao' | 'repeat';
