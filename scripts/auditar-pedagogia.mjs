@@ -40,9 +40,11 @@ const semCitacoes = (s) => s.replace(/«[^»]*»|"[^"]*"|“[^”]*”|‘[^’]
 const palavras = (s) => s.toLowerCase().match(/[\p{L}\p{M}'’-]+/gu) ?? [];
 const PT = new Set(['não', 'você', 'vocês', 'também', 'então', 'porque', 'são', 'está', 'estão', 'isso', 'isto', 'aqui', 'muito', 'pelo', 'pela', 'uma', 'dos', 'das', 'seu', 'sua', 'ao', 'às', 'nós', 'têm', 'há', 'será', 'língua', 'fala', 'falar', 'quando', 'depois', 'antes', 'ainda', 'só', 'mesmo', 'mesma', 'cada', 'sempre', 'nunca']);
 const EN = new Set(['the', 'and', 'is', 'are', 'you', 'with', 'which', 'this', 'that', 'your', 'from', 'not', 'for', 'of', 'to', 'in', 'it', 'be', 'can', 'will', 'when', 'before', 'after', 'only']);
-const REF_PT = /portugu[eê]s|brasileir|brazilian|portuguese/i;
+const PT_GLOSA = new Set([...PT].filter((p) => p !== 'são')); // «São Paulo» é nome próprio em inglês
+const REF_PT =/portugu[eê]s|brasileir|brazilian|portuguese/i;
 const ABSOLUTOS = /\b(nunca|sempre|jamais|qualquer|never|always|every|silent|mudas?)\b/gi;
-const PLACEHOLDER_MAIUSC = /\b(TODO|TBD|FIXME|XXX)\b/; // só maiúsculas: «todo» é palavra comum em português e espanhol
+// Marcador de pendência (TODO:, [TBD], FIXME), não a palavra TODO de ênfase em maiúsculas («nega TODO O RESTO»).
+const PLACEHOLDER_MAIUSC = /(^|[\s(\[])(TODO|TBD|FIXME|XXX)(?=\s*([:)\]]|$))/;
 const PLACEHOLDER_OUTROS = /\[\.\.\.\]|\[…\]|lorem ipsum|\{\{|\}\}|^\s*(undefined|NaN|null)\s*$/i;
 const CHAVES_EXPLICACAO = new Set(['explicacao', 'comparacao', 'motivo', 'texto', 'contexto', 'resposta']); // duplicação e absolutos só aqui
 const AUDIO_ERRADO = (id) => (id === 'fr' ? /\b(não|você)\b/i : /\b(ou|não|você)\b/i); // «ou» é palavra francesa válida
@@ -99,8 +101,8 @@ function auditarLado(id, lingua) {
   const arquivos = diasDe(dirDias).map((f) => ({ f, caminho: path.join(dirDias, f), tipo: 'dia' }));
   const gram = path.join(raiz, 'content', 'gramatica', lingua === 'en' ? `${id}.en.json` : `${id}.json`);
   if (existe(gram)) arquivos.push({ f: path.basename(gram), caminho: gram, tipo: 'gramatica' });
-  const r = { curso: id, lingua, sessoes: arquivos.filter((a) => a.tipo === 'dia').length, topicos: 0, vazamentos: 0, refsPt: 0, audioIdiomaErrado: 0, placeholders: 0, absolutos: 0, duplicadas: 0,
-    prof: { gramIni: [], gramFim: [], itensIni: [], itensFim: [] }, achados: { vazamento: [], refPt: [], placeholder: [], absoluto: [], duplicada: [], audioIdiomaErrado: [] }, rasos: [] };
+  const r = { curso: id, lingua, sessoes: arquivos.filter((a) => a.tipo === 'dia').length, topicos: 0, vazamentos: 0, refsPt: 0, audioIdiomaErrado: 0, placeholders: 0, glosasVazias: 0, glosasPt: 0, absolutos: 0, duplicadas: 0,
+    prof: { gramIni: [], gramFim: [], itensIni: [], itensFim: [] }, achados: { vazamento: [], refPt: [], glosaVazia: [], glosaPt: [], placeholder: [], absoluto: [], duplicada: [], audioIdiomaErrado: [] }, rasos: [] };
   const vistas = new Map(); // prosa longa -> arquivos
   for (const a of arquivos) {
     const d = ler(a.caminho);
@@ -110,8 +112,13 @@ function auditarLado(id, lingua) {
     // Língua esperada da explicação: o campo `explicacao` do dia (o curso `br` foi escrito em inglês) ou `explicacaoEm` do tópico.
     const esperadaDia = d.explicacao ?? (id === 'br' && lingua === 'pt' ? 'en' : lingua); // `br` na raiz foi escrito em inglês
     for (const { s, caminho, chave } of folhas(d)) {
-      if (PLACEHOLDER_MAIUSC.test(s) || PLACEHOLDER_OUTROS.test(s) || (s.trim() === '' && CHAVES_PROSA.has(chave))) { r.placeholders++; r.achados.placeholder.push({ arquivo: a.f, caminho, texto: s.slice(0, 80) }); }
+      // «null» é o zero em alemão; `nota` vazia é só célula de tabela sem observação.
+      if (PLACEHOLDER_MAIUSC.test(s) || (PLACEHOLDER_OUTROS.test(s) && !(id === 'de' && /^\s*null\s*$/i.test(s))) || (s.trim() === '' && CHAVES_PROSA.has(chave) && chave !== 'nota')) { r.placeholders++; r.achados.placeholder.push({ arquivo: a.f, caminho, texto: s.slice(0, 80) }); }
       if (chave === 'audio' && id !== 'br' && AUDIO_ERRADO(id).test(s)) { r.audioIdiomaErrado++; r.achados.audioIdiomaErrado.push({ arquivo: a.f, caminho, texto: s.slice(0, 80) }); }
+      // glosa em português num dia em inglês: o campo `pt` é a tradução mostrada ao aluno (em inglês no lado en)
+      const topicoG = a.tipo === 'gramatica' ? caminho.match(/^\.topicos\[(\d+)\]/)?.[1] : undefined;
+      const esperadaG = topicoG !== undefined ? (d.topicos[Number(topicoG)]?.explicacaoEm ?? lingua) : esperadaDia; // tópico ainda em português (explicacaoEm: pt) não é vazamento: é o que falta traduzir
+      if (chave === 'pt' && esperadaG === 'en' && lingua === 'en' && palavras(semCitacoes(s)).some((p) => PT_GLOSA.has(p))) { r.glosasPt++; r.achados.glosaPt.push({ arquivo: a.f, caminho, texto: s.slice(0, 80) }); }
       if (!CHAVES_PROSA.has(chave) || caminho.includes('.opcoes')) continue;
       const topico = a.tipo === 'gramatica' ? caminho.match(/^\.topicos\[(\d+)\]/)?.[1] : undefined;
       const esperada = topico !== undefined ? (d.topicos[Number(topico)]?.explicacaoEm ?? lingua) : esperadaDia;
@@ -119,7 +126,7 @@ function auditarLado(id, lingua) {
       const ptHit = new Set(pal.filter((p) => PT.has(p))), enHit = new Set(pal.filter((p) => EN.has(p)));
       // vazamento: prosa em português num lado em inglês (≥2 marcadores) ou em inglês num lado em português (≥5 marcadores)
       const vaza = esperada === 'en' ? ptHit.size >= 2 : enHit.size >= 5;
-      if (esperada === 'en' && id !== 'br' && REF_PT.test(limpo)) { r.refsPt++; r.achados.refPt.push({ arquivo: a.f, caminho, texto: s.slice(0, 110) }); }
+      if (esperada === 'en' && id !== 'br' && chave !== 'enunciado' && /portuguese|portugu[eê]s/i.test(limpo) && !/^\s*\(?portuguese\)?\s*$/i.test(limpo)) { r.refsPt++; r.achados.refPt.push({ arquivo: a.f, caminho, texto: s.slice(0, 110) }); }
       if (vaza) { r.vazamentos++; r.achados.vazamento.push({ arquivo: a.f, caminho, texto: s.slice(0, 110) }); }
       if (!CHAVES_EXPLICACAO.has(chave)) continue;
       for (const m of limpo.matchAll(ABSOLUTOS)) { r.absolutos++; if (r.achados.absoluto.length < 400) r.achados.absoluto.push({ arquivo: a.f, termo: m[0].toLowerCase(), texto: limpo.slice(Math.max(0, m.index - 30), m.index + 50) }); }
@@ -127,7 +134,11 @@ function auditarLado(id, lingua) {
     }
     if (a.tipo === 'dia') {
       for (const b of d.sessao?.blocos ?? []) {
-        const n = (b.itens?.length ?? 0) + (b.exemplos?.length ?? 0) + (b.linhas?.length ?? 0) + (b.perguntas?.length ?? 0); itens += n;
+        // itens = o que o aluno percorre: itens, exemplos, falas, perguntas e linhas de tabela (sessões de revisão têm só tabelas).
+        const tab = (b.tabela?.length ?? 0) + (b.tabelas ?? []).reduce((x, t) => x + (t.linhas?.length ?? 0), 0);
+        const n = (b.itens?.length ?? 0) + (b.exemplos?.length ?? 0) + (b.linhas?.length ?? 0) + (b.perguntas?.length ?? 0) + tab; itens += n;
+        // glosa vazia: a palavra aparece sem tradução ao lado (o campo `pt` é o que a tela mostra, em qualquer lado)
+        if (b.tipo === 'palavras') for (const i of b.itens ?? []) if (!String(i.pt ?? '').trim()) { r.glosasVazias++; if (r.achados.glosaVazia.length < 40) r.achados.glosaVazia.push({ arquivo: a.f, texto: String(i.ru ?? '') }); }
         if (b.tipo === 'gramatica') gramBlocos.push(palavras([b.explicacao, b.comparacao, ...(b.erros ?? []).map((e) => e.motivo)].filter(Boolean).join(' ')).length);
       }
       const alvoG = aula <= 20 ? r.prof.gramIni : aula >= 40 ? r.prof.gramFim : null;
@@ -165,10 +176,10 @@ if (jsonOpt) { const s = JSON.stringify(relatorio, null, 1) + '\n'; if (typeof j
 else {
   const pad = (x, n) => String(x).padEnd(n), padL = (x, n) => String(x).padStart(n);
   console.log(`Fonte do áudio: índices públicos (public/audio/<id>/index.json e v2) + ${privadoDisponivel ? `clone privado em ${dirPrivado}` : 'clone privado NÃO encontrado (use --audio-privado <dir>); botões pagos contam como sem MP3'}.`);
-  console.log(`${pad('Curso', 6)}${pad('Lado', 5)}${padL('Sess', 5)}${padL('Vaza', 6)}${padL('Gram ini→fim', 14)}${padL('Itens/dia ini→fim', 19)}${padL('Dup', 5)}${padL('Placeh', 7)}${padL('RefPT', 7)}${padL('Absol', 7)}${padL('AudErr', 7)}  Áudio (únicos: pub+priv / sem MP3)`);
+  console.log(`${pad('Curso', 6)}${pad('Lado', 5)}${padL('Sess', 5)}${padL('Vaza', 6)}${padL('Gram ini→fim', 14)}${padL('Itens/dia ini→fim', 19)}${padL('Dup', 5)}${padL('Placeh', 7)}${padL('RefPT', 7)}${padL('GlsVaz', 7)}${padL('GlsPT', 6)}${padL('Absol', 7)}${padL('AudErr', 7)}  Áudio (únicos: pub+priv / sem MP3)`);
   for (const l of lados) {
     const a = audio[l.curso]; const aud = l.lingua === 'pt' || soLingua ? `${a.textos}: ${a.comPublico}+${a.comPrivado} / ${a.semMp3} (grátis ${a.semMp3Gratis})` : '(igual ao lado pt)';
-    console.log(`${pad(l.curso, 6)}${pad(l.lingua, 5)}${padL(l.sessoes, 5)}${padL(l.vazamentos, 6)}${padL(`${f1(media(l.prof.gramIni))}→${f1(media(l.prof.gramFim))}`, 14)}${padL(`${f1(media(l.prof.itensIni))}→${f1(media(l.prof.itensFim))}`, 19)}${padL(l.duplicadas, 5)}${padL(l.placeholders, 7)}${padL(l.refsPt, 7)}${padL(l.absolutos, 7)}${padL(l.audioIdiomaErrado, 7)}  ${aud}`);
+    console.log(`${pad(l.curso, 6)}${pad(l.lingua, 5)}${padL(l.sessoes, 5)}${padL(l.vazamentos, 6)}${padL(`${f1(media(l.prof.gramIni))}→${f1(media(l.prof.gramFim))}`, 14)}${padL(`${f1(media(l.prof.itensIni))}→${f1(media(l.prof.itensFim))}`, 19)}${padL(l.duplicadas, 5)}${padL(l.placeholders, 7)}${padL(l.refsPt, 7)}${padL(l.glosasVazias, 7)}${padL(l.glosasPt, 6)}${padL(l.absolutos, 7)}${padL(l.audioIdiomaErrado, 7)}  ${aud}`);
   }
   console.log('\nMapa de tradução para inglês (explicações de aulas com mapa):');
   for (const [id, v] of Object.entries(i18n)) console.log(`  ${pad(id, 4)} aulas ${padL(v.aulas, 3)} | com mapa EN ${padL(v.aulasComMapaEn, 3)} | explicações traduzidas ${padL(v.explicacoesNoMapa, 5)} | sem tradução ${padL(v.explicacoesSemTraducao, 4)}`);
