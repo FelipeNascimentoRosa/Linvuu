@@ -17,7 +17,7 @@ função, num bucket **privado** do R2, e a função só emite URLs pré-assinad
 2. A função verifica o login (Firebase) e a assinatura activa (Stripe / RevenueCat).
 3. Só após a autorização verifica a existência no R2 (HEAD assinado; voz nova
    `audio-privado-v2/` primeiro, antiga `audio-privado/` como reserva).
-4. Responde **302** para uma URL pré-assinada do R2 (expira em ~60 s, `R2_URL_EXPIRACAO_SEGUNDOS`).
+4. Para a web, responde **302** para uma URL pré-assinada do R2 (expira em ~60 s, `R2_URL_EXPIRACAO_SEGUNDOS`).
    O leitor segue o redirect; os pedidos `Range` continuam a funcionar contra o R2.
 5. A CSP inclui a origem do R2 em `media-src` (`server/seguranca.ts`), senão o navegador
    bloqueava o áudio vindo de outro domínio.
@@ -79,6 +79,8 @@ verificada, além de avaliar a configuração de DNS e dos demais serviços.
   atrás de login + assinatura, por URL pré-assinada.
 - Nunca pôr as chaves do R2 no Git, em chat ou num ficheiro do repo.
 
-## CORS pendente em produ??o
+## CORS e APK
 
-A consulta ? configura??o CORS do bucket de produ??o retornou 404 (configura??o inexistente). O player usa `fetch` e segue o redirecionamento para a origem do R2; navegadores exigem CORS tamb?m para URLs pr?-assinadas. Preparar uma pol?tica restrita a `https://linvuu.com.br`, `https://linvuu.com` e `https://localhost` (origem configurada no APK), com GET/HEAD e os cabe?alhos necess?rios para Range. Confirmar a origem efetiva do APK e validar a reprodu??o autenticada antes de considerar a migra??o conclu?da. A aplica??o da pol?tica em produ??o depende da etapa de estabiliza??o aprovada. Refer?ncia: https://developers.cloudflare.com/r2/buckets/cors/
+A politica CORS do bucket foi configurada para os dominios de producao e `https://localhost`, com GET e HEAD, sem acesso publico ao bucket. O APK usa `fetch` da origem configurada `https://localhost` para a API; um redirect posterior ao R2 pode fazer o navegador enviar `Origin: null`. Por isso, para essa origem, a API transmite o MP3 do R2 apos verificar login e assinatura, sem redirect; repassa respostas 200/206 e o cabecalho Range. A origem efetiva e a reproducao ainda precisam ser confirmadas em aparelho real com assinante.
+
+Referencia: https://developers.cloudflare.com/r2/buckets/cors/
