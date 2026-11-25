@@ -34,6 +34,7 @@ export type TextoSobre = {
 export const SOBRE: Record<'pt-BR' | 'en', TextoSobre> = {
   'pt-BR': {
     titulo: 'Quem escreve a Linvuu',
+    seoTitulo: 'Quem escreve a Linvuu: autores e método',
     descricao: 'A Linvuu é feita por Felipe Nascimento Rosa e Luiza Nascimento Rosa, matemáticos com experiência em linguística e ensino de idiomas. Autoria, origem e método.',
     kicker: 'Sobre a Linvuu',
     h1: 'Quem escreve a Linvuu',

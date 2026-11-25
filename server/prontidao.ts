@@ -59,23 +59,51 @@ function verificacoesProducao(): Verificacao[] {
     { nome: 'stripe', verificar: async (signal) => {
       const chave = process.env.STRIPE_SECRET_KEY;
       const preco = process.env.STRIPE_PRICE_ID;
-      if (!chave || !preco || !/^price_[a-zA-Z0-9]+$/.test(preco)) throw new Error('configuracao');
+      if (!chave || !preco || !/^price_[a-zA-Z0-9]+$/.test(preco)) {
+        // Diagnóstico do log: só a categoria, nunca o valor da variável.
+        console.error(`[Linvuu] prontidao stripe etapa=config categoria=${!chave || !preco ? 'variavel-ausente' : 'formato-preco'}`);
+        throw new Error('configuracao');
+      }
       // Somente GET: verifica a chave e o preço configurado, sem criar cliente ou cobrança.
-      const r = await fetch(`https://api.stripe.com/v1/prices/${preco}`, { headers: { Authorization: `Bearer ${chave}` }, signal });
-      if (!r.ok) { await r.body?.cancel(); throw new Error('stripe'); }
-      const p = await r.json() as { active?: boolean; livemode?: boolean; type?: string; currency?: string; unit_amount?: number | null; recurring?: { interval?: string; interval_count?: number } | null };
-      if (!p.active || !p.livemode || p.type !== 'recurring' || p.currency !== 'brl') throw new Error('preco');
-      // O valor anunciado (src/config/planos.ts) tem de ser o cobrado: R$ 139 por mês, nem outro valor nem outro intervalo.
-      if (p.unit_amount !== CENTAVOS.mensal || p.recurring?.interval !== 'month' || (p.recurring?.interval_count ?? 1) !== 1) throw new Error('preco-divergente');
+      // O log regista só código HTTP, etapa, categoria sanitizada e duração — nunca credenciais,
+      // cabeçalhos Authorization, valores de preço ou o corpo da resposta do Stripe.
+      const consultar = async (id: string, etapa: string, moeda: string, centavos: number, erroPreco: string, erroDivergente: string) => {
+        const inicio = Date.now();
+        let r: Response;
+        try {
+          r = await fetch(`https://api.stripe.com/v1/prices/${id}`, { headers: { Authorization: `Bearer ${chave}` }, signal });
+        } catch {
+          console.error(`[Linvuu] prontidao stripe etapa=${etapa} categoria=${signal.aborted ? 'timeout' : 'rede'} ms=${Date.now() - inicio}`);
+          throw new Error('stripe');
+        }
+        const ms = Date.now() - inicio;
+        if (!r.ok) {
+          await r.body?.cancel();
+          console.error(`[Linvuu] prontidao stripe etapa=${etapa} http=${r.status} ms=${ms}`);
+          throw new Error('stripe');
+        }
+        const p = await r.json() as { active?: boolean; livemode?: boolean; type?: string; currency?: string; unit_amount?: number | null; recurring?: { interval?: string; interval_count?: number } | null };
+        const categoria = !p.active ? 'preco-inativo' : !p.livemode ? 'modo-teste' : p.type !== 'recurring' ? 'tipo' : p.currency !== moeda ? 'moeda' : null;
+        if (categoria) {
+          console.error(`[Linvuu] prontidao stripe etapa=${etapa} categoria=${categoria} ms=${ms}`);
+          throw new Error(erroPreco);
+        }
+        // O valor anunciado (src/config/planos.ts) tem de ser o cobrado: R$ 139 por mês, nem outro valor nem outro intervalo.
+        const divergente = p.unit_amount !== centavos ? 'valor' : p.recurring?.interval !== 'month' || (p.recurring?.interval_count ?? 1) !== 1 ? 'intervalo' : null;
+        if (divergente) {
+          console.error(`[Linvuu] prontidao stripe etapa=${etapa} categoria=${divergente} ms=${ms}`);
+          throw new Error(erroDivergente);
+        }
+      };
+      await consultar(preco, 'preco-brl', 'brl', CENTAVOS.mensal, 'preco', 'preco-divergente');
       // Preço mensal em dólares (linvuu.com): só confere se estiver configurado; sem ele o .com não vende a mensal (o checkout recusa).
       const usd = process.env.STRIPE_PRICE_ID_USD;
       if (usd) {
-        if (!/^price_[a-zA-Z0-9]+$/.test(usd)) throw new Error('configuracao');
-        const ru = await fetch(`https://api.stripe.com/v1/prices/${usd}`, { headers: { Authorization: `Bearer ${chave}` }, signal });
-        if (!ru.ok) { await ru.body?.cancel(); throw new Error('stripe'); }
-        const pu = await ru.json() as { active?: boolean; livemode?: boolean; type?: string; currency?: string; unit_amount?: number | null; recurring?: { interval?: string; interval_count?: number } | null };
-        if (!pu.active || !pu.livemode || pu.type !== 'recurring' || pu.currency !== 'usd') throw new Error('preco-usd');
-        if (pu.unit_amount !== CENTAVOS_USD.mensal || pu.recurring?.interval !== 'month' || (pu.recurring?.interval_count ?? 1) !== 1) throw new Error('preco-usd-divergente');
+        if (!/^price_[a-zA-Z0-9]+$/.test(usd)) {
+          console.error('[Linvuu] prontidao stripe etapa=config categoria=formato-preco');
+          throw new Error('configuracao');
+        }
+        await consultar(usd, 'preco-usd', 'usd', CENTAVOS_USD.mensal, 'preco-usd', 'preco-usd-divergente');
       }
     } },
   ];

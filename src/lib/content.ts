@@ -67,6 +67,7 @@ export const fonteDoCurso = (id: string): Explicacao => INDICE[id]?.fonte ?? 'pt
 export const explicacaoDoCurso = (id: string): Explicacao => {
   // No site cada domínio tem um só idioma de explicação (.com.br português, .com inglês): a escolha por curso existe só no app.
   if (import.meta.env.VITE_ALVO === 'apk') { try { const v = localStorage.getItem(chaveExplicacao(id)); if (explicacaoValida(v)) return v; } catch { /* sem armazenamento */ } }
+  if (import.meta.env.VITE_ALVO !== 'apk') return LOCALE.explicacao;
   return (TRADUCOES[LOCALE.explicacao]?.[id]?.aulas.length ?? 0) > 0 ? LOCALE.explicacao : fonteDoCurso(id);
 };
 const traducao = (id: string, explicacao = explicacaoDoCurso(id)): Traducao | undefined => fonteDoCurso(id) === explicacao ? undefined : TRADUCOES[explicacao]?.[id];
@@ -151,6 +152,7 @@ export const carregarAula = async (idioma: string, dia: number, explicacao = exp
   const pasta = fonteDoCurso(idioma) === explicacao ? '' : `${explicacao}/`;
   const grupo = INDICE[idioma]?.grupos?.find((g) => dia >= g.dias[0] && dia <= g.dias[1]);
   const traduzida = !pasta || (grupo ? aulaTraduzida(idioma, grupo.aula, explicacao) : false);
+  if (!traduzida && import.meta.env.VITE_ALVO !== 'apk') throw new Error('EXPLICACAO_INDISPONIVEL');
   const key = `../../content/idiomas/${idioma}/${traduzida ? pasta : ''}dia-${nnn}.json`;
   const marcar = (a: Aula) => ({ ...a, ...(!traduzida ? { semTraducao: fonteDoCurso(idioma) } : {}), idiomas: { interface: LOCALE.codigo, estudado: idioma, explicacaoSolicitada: explicacao, explicacaoEfetiva: resolverExplicacao(fonteDoCurso(idioma), explicacao, traduzida) } });
   if (aulas[key]) return marcar(await comNovaTentativa(() => aulas[key]()));
@@ -170,7 +172,7 @@ export const CURSOS_ATIVOS = CURSOS.filter((c) => c.id !== LOCALE.cursoOculto).s
 export const cursoComExplicacaoNoSite = (id: string) => LOCALE.codigo === 'pt-BR' || coberturaNoSite(id).traduzidas > 0;
 /** Cursos com aba de gramática que o site deste domínio oferece (no .com, só os explicados em inglês). */
 export const todosIdiomasDeGramatica = () => [...new Set([...CURSOS_ATIVOS.map((c) => c.id), ...IDIOMAS_GRAMATICA])];
-export const idiomasDeGramaticaNoSite = () => todosIdiomasDeGramatica().filter(cursoComExplicacaoNoSite);
+export const idiomasDeGramaticaNoSite = () => todosIdiomasDeGramatica().filter((id) => id !== LOCALE.cursoOculto && cursoComExplicacaoNoSite(id));
 /** O curso é para outro público (ex.: o curso de inglês, escrito para quem fala português, visto por quem escolheu o site em inglês). */
 export const cursoDeOutroPublico = (id: string) => id === LOCALE.cursoOculto;
 /** Cursos com a aba Gramática (gerada das aulas por scripts/gramatica.mjs). */

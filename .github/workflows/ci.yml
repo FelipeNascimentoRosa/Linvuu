@@ -53,6 +53,8 @@ jobs:
         run: node --import tsx scripts/testar-duvidas.ts
       - name: Testar a origem do áudio pago (repositório privado, v2 primeiro, nomes validados)
         run: node --import tsx scripts/testar-audio-privado.ts
+      - name: Testar autorização antes de consultar áudio privado e suporte a Range
+        run: node --import tsx scripts/testar-audio-autorizacao.ts
       - name: Testar rota assetlinks (nunca publica fingerprint inventado)
         run: node --import tsx scripts/testar-assetlinks.ts
       - name: Garantir que o checkout valida preços sem criar produtos no Stripe real
@@ -101,6 +103,11 @@ jobs:
       - name: Testar as regras do Firestore no emulador (duas contas fictícias e visitante)
         run: npm run testar:regras
       - run: npm run build:website
+      - name: Testar isolamento dos públicos nos domínios
+        run: |
+          node --import tsx scripts/testar-isolamento-dominios.ts
+          node scripts/testar-isolamento-http.mjs
+          node scripts/testar-isolamento-navegador.mjs
       - name: Testar politica publica de indexacao
         run: node --import tsx scripts/testar-seo-publico.ts
       - name: Verificar todas as sessoes e idiomas, canonical e destinos publicos

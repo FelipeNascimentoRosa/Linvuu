@@ -1,6 +1,9 @@
 node_modules/
 build/
 dist/
+# Ficheiros por Host movidos de dist/ no build da Vercel (scripts/mover-arquivos-servidor.mjs);
+# gerados em cada build, nunca versionados.
+server-files/
 coverage/
 .DS_Store
 *.log

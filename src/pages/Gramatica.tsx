@@ -1,5 +1,4 @@
 import { Fragment, useEffect, useMemo, useState, type ReactNode } from 'react';
-import { urlAbsolutaEm } from '../i18n/locales';
 import { Link, useParams } from 'react-router-dom';
 import { Navegacao } from '../components/Navegacao';
 import { Gramatica as BlocoGramatica } from '../components/Sessao';
@@ -59,9 +58,7 @@ export default function Gramatica() {
   usePageTitle(!hub ? g.titulo(curso.nome) : HUB[LOCALE.codigo === 'pt-BR' ? 'pt-BR' : 'en'].h1, !hub ? g.descricao(curso.nome) : undefined, undefined, !hub && (curso.id === LOCALE.cursoOculto || curso.status === 'em-breve'));
   // A gramática do curso de português para estrangeiros mora no .com: no .com.br o link vai direto para lá
   // (antes passava por um 301 a cada clique — auditoria seo-skills, 13/11/2026).
-  const linkGram = (k: string, conteudo: ReactNode, className?: string, atual?: boolean) => k === 'br' && LOCALE.codigo === 'pt-BR'
-    ? <a href={urlAbsolutaEm('en', '/gramatica/br')} hrefLang="en" className={className}>{conteudo}</a>
-    : <Link to={`/gramatica/${k}`} className={className} aria-current={atual ? 'page' : undefined}>{conteudo}</Link>;
+  const linkGram = (k: string, conteudo: ReactNode, className?: string, atual?: boolean) => <Link to={`/gramatica/${k}`} className={className} aria-current={atual ? 'page' : undefined}>{conteudo}</Link>;
   // Hub /gramatica (12/11/2026): página de verdade, indexável e no sitemap. Antes era um redirecionamento no cliente
   // para o primeiro idioma, e por isso ficava fora do sitemap (o <head> do servidor não batia com o DOM).
   if (hub) {

@@ -32,7 +32,8 @@ assert.ok(!/\b(13900|41700|29190|99900)\b/.test(source), 'billing.ts não repete
 const d = carregarDadosMeta(process.cwd());
 const ld = JSON.stringify(metaDaRota('/assinatura', d).jsonld);
 for (const c of Object.values(CENTAVOS)) assert.ok(ld.includes(`"price":"${(c / 100).toFixed(2)}"`), `JSON-LD com ${c}`);
-assert.ok(fs.readFileSync('server/prontidao.ts', 'utf8').includes('p.unit_amount !== CENTAVOS.mensal'), '/readyz confere o valor da mensal');
+const prontidao = fs.readFileSync('server/prontidao.ts', 'utf8');
+assert.ok(prontidao.includes('p.unit_amount !== centavos') && prontidao.includes("consultar(preco, 'preco-brl', 'brl', CENTAVOS.mensal"), '/readyz confere o valor da mensal');
 // A home é a mesma nos dois domínios: os preços vêm de precosDo(LOCALE) e nunca das constantes em reais (senão o .com mostra R$ e Pix).
 const oferta = fs.readFileSync('src/components/OfertaAtual.tsx', 'utf8');
 assert.ok(oferta.includes('precosDo(LOCALE.codigo)'), 'OfertaAtual usa os preços do domínio');

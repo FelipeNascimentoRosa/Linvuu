@@ -20,6 +20,9 @@ import { CENTAVOS, CENTAVOS_USD } from '../src/config/planos.ts';
 import { caminhoNoPerfil } from '../src/i18n/locales.ts';
 import { perfilDaRequisicao } from './dominio';
 import { arquivoDoAudioPrivado, avisarSeSemAudioPrivado } from './audio-privado';
+import { r2Configurado, urlDoAudioPrivadoR2 } from './audio-r2';
+import { criarRotaAudio } from './audio-rota';
+import { raizDoProjeto } from './caminhos';
 
 const chave = process.env.STRIPE_SECRET_KEY;
 const projeto = process.env.FIREBASE_PROJECT_ID || process.env.VITE_FIREBASE_PROJECT_ID;
@@ -137,15 +140,28 @@ export function registrarCobranca(app: Express, urlBase: (req: Request) => strin
     if (!u) { res.status(401).json({ error: 'Entre na sua conta.' }); return null; }
     return u;
   };
+  // O aplicativo nativo usa a mesma API e mantém sua escolha explícita de idioma.
+  // Nos sites públicos, o Host define o público também para chamadas diretas à API.
+  const linguaDaApi = (req: Request): string | null => {
+    const origemApp = ['https://localhost', 'http://localhost', 'capacitor://localhost'].includes(req.headers.origin ?? '');
+    const solicitada = String(req.query.l ?? '');
+    if (origemApp) return solicitada || (req.params.idioma === 'br' ? 'en' : 'pt');
+    const host = req.hostname.toLowerCase().replace(/^www\./, '');
+    const dominio = host === 'linvuu.com' ? 'en' : host === 'linvuu.com.br' ? 'pt' : '';
+    if (!dominio) return solicitada || 'pt';
+    return solicitada && solicitada !== dominio ? null : dominio;
+  };
 
   // Sessões depois da 8ª (as 2 primeiras aulas são grátis): só saem do servidor para quem tem assinatura ativa.
   app.get('/api/aula/:idioma/:n', async (req: Request, res: Response) => {
     const idioma = String(req.params.idioma), n = Number(req.params.n);
     if (!/^[a-z]{2}$/.test(idioma) || !Number.isInteger(n) || n < 1 || n > 999) { res.status(404).json({ error: 'Aula não encontrada.' }); return; }
     // ?l=en: a mesma sessão com a explicação traduzida (content/idiomas/<id>/<l>/dia-NNN.json), quando existir.
-    const l = String(req.query.l ?? '');
+    const l = linguaDaApi(req);
+    if (!l || (l === 'pt' && idioma === 'br')) { res.status(404).json({ error: 'Content unavailable for this audience.' }); return; }
     const nome = `dia-${String(n).padStart(3, '0')}.json`;
     const traduzido = /^en$/.test(l) ? path.join(process.cwd(), 'content', 'idiomas', idioma, l, nome) : '';
+    if (traduzido && idioma !== 'br' && !fs.existsSync(traduzido)) { res.status(404).json({ error: 'Lesson unavailable in English.' }); return; }
     const arq = traduzido && fs.existsSync(traduzido) ? traduzido : path.join(process.cwd(), 'content', 'idiomas', idioma, nome);
     if (!fs.existsSync(arq)) { res.status(404).json({ error: 'Aula não encontrada.' }); return; }
     const livre = n <= 8 || (process.env.NODE_ENV !== 'production' && !cobrancaConfigurada());
@@ -162,11 +178,13 @@ export function registrarCobranca(app: Express, urlBase: (req: Request) => strin
   app.get('/api/gramatica/:idioma', async (req: Request, res: Response) => {
     const idioma = String(req.params.idioma);
     if (!/^[a-z]{2}$/.test(idioma)) { res.status(404).json({ error: 'Não encontrado.' }); return; }
-    const l = String(req.query.l ?? '');
+    const l = linguaDaApi(req);
+    if (!l || (l === 'pt' && idioma === 'br')) { res.status(404).json({ error: 'Content unavailable for this audience.' }); return; }
     const traduzida = /^en$/.test(l) ? path.join(process.cwd(), 'content', 'gramatica', `${idioma}.${l}.json`) : '';
+    if (traduzida && idioma !== 'br' && !fs.existsSync(traduzida)) { res.status(404).json({ error: 'Grammar unavailable in English.' }); return; }
     const arq = traduzida && fs.existsSync(traduzida) ? traduzida : path.join(process.cwd(), 'content', 'gramatica', `${idioma}.json`);
     if (!fs.existsSync(arq)) { res.status(404).json({ error: 'Não encontrado.' }); return; }
-    let pacote: { categorias: string[]; topicos: { dia: number; categoria: string }[] };
+    let pacote: { categorias: string[]; topicos: { dia: number; categoria: string; explicacaoEm?: string }[] };
     try { pacote = JSON.parse(fs.readFileSync(arq, 'utf8')); } catch (e) { console.error('gramatica/leitura', e); res.status(500).json({ error: 'Não foi possível abrir a gramática.' }); return; }
     let completo = process.env.NODE_ENV !== 'production' && !cobrancaConfigurada();
     if (!completo) {
@@ -175,30 +193,31 @@ export function registrarCobranca(app: Express, urlBase: (req: Request) => strin
         try { completo = (await acesso(u)).ativa; } catch (e) { console.error('gramatica', e); }
       }
     }
-    const abertos = pacote.topicos.filter((t) => t.dia <= 8);
-    const topicos = completo ? pacote.topicos : abertos;
+    const disponiveis = l === 'en' ? pacote.topicos.filter((t) => !t.explicacaoEm || t.explicacaoEm === 'en') : pacote.topicos;
+    const abertos = disponiveis.filter((t) => t.dia <= 8);
+    const topicos = completo ? disponiveis : abertos;
     const categorias = pacote.categorias.filter((c) => topicos.some((t) => t.categoria === c));
-    res.set('Cache-Control', 'private, no-store').json({ ...pacote, categorias, topicos, completo, bloqueados: pacote.topicos.length - topicos.length });
+    res.set('Cache-Control', 'private, no-store').json({ ...pacote, categorias, topicos, completo, bloqueados: disponiveis.length - topicos.length });
   });
 
   // Áudio das sessões depois da 8ª: arquivos em server/audio-privado (fora de public/). Mesma regra do texto:
   // só sai para quem tem assinatura ativa. Em desenvolvimento sem cobrança configurada, libera para testar.
-  app.get('/api/audio/:idioma/:arquivo', async (req: Request, res: Response) => {
-    const idioma = String(req.params.idioma), arquivo = String(req.params.arquivo);
-    if (!/^[a-z]{2}$/.test(idioma) || !/^[0-9a-f]{8}\.mp3$/.test(arquivo)) { res.status(404).end(); return; }
-    // Voz nova (ElevenLabs) em audio-privado-v2; o que ainda não foi regravado cai no áudio antigo (Edge).
-    // Os arquivos vêm do repositório privado Linvuu-Audio (server/audio-privado.ts).
-    const arq = arquivoDoAudioPrivado(idioma, arquivo);
-    if (!arq) { res.status(404).end(); return; }
-    const livre = process.env.NODE_ENV !== 'production' && !cobrancaConfigurada();
-    if (!livre) {
-      const u = await guarda(req, res); if (!u) return;
+  // Na Vercel o áudio vem do R2 (bucket privado): a função verifica o acesso e responde 302 para uma
+  // URL pré-assinada (60 s); o leitor segue o redirect e os Range funcionam contra o R2. O MP3 nunca
+  // entra no pacote da função nem é servido estaticamente (server/audio-r2.ts).
+  app.get('/api/audio/:idioma/:arquivo', criarRotaAudio({
+    acessoLivreLocal: () => process.env.NODE_ENV !== 'production' && !cobrancaConfigurada(),
+    autorizar: async (req, res) => {
+      const u = await guarda(req, res); if (!u) return false;
       try {
-        if (!(await acesso(u)).ativa) { res.status(403).json({ error: 'Assinatura necessária.' }); return; }
-      } catch (e) { console.error('audio', e); res.status(500).json({ error: 'Não foi possível verificar a assinatura.' }); return; }
-    }
-    res.set('Cache-Control', 'private, no-store').type('audio/mpeg').sendFile(arq);
-  });
+        if (!(await acesso(u)).ativa) { res.status(403).json({ error: 'Assinatura necessária.' }); return false; }
+      } catch (e) { console.error('audio', e); res.status(500).json({ error: 'Não foi possível verificar a assinatura.' }); return false; }
+      return true;
+    },
+    r2Configurado,
+    buscarR2: urlDoAudioPrivadoR2,
+    buscarDisco: arquivoDoAudioPrivado,
+  }));
 
   app.get('/api/billing/status', async (req: Request, res: Response) => {
     const u = await guarda(req, res); if (!u) return;
@@ -297,7 +316,7 @@ export function registrarLivroProtegido(app: Express) {
     if (!a.ativa) { res.status(402).json({ error: 'Assinatura necessária.' }); return; }
     res.setHeader('Cache-Control', 'private, no-store');
     res.setHeader('X-Robots-Tag', 'noindex, nofollow');
-    try { res.type('html').send(fs.readFileSync(path.resolve(import.meta.dirname, 'conteudo', 'gramatica-ru.html'), 'utf8')); } catch (e) { console.error('livro/leitura', e); res.status(500).json({ error: 'Indisponível no momento.' }); }
+    try { res.type('html').send(fs.readFileSync(path.join(raizDoProjeto(), 'server', 'conteudo', 'gramatica-ru.html'), 'utf8')); } catch (e) { console.error('livro/leitura', e); res.status(500).json({ error: 'Indisponível no momento.' }); }
   });
 }
 

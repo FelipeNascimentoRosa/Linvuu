@@ -41,7 +41,7 @@ export const EXCLUSAO: Record<'pt-BR' | 'en', TextoExclusao> = {
   en: {
     titulo: 'Delete your Linvuu account and data',
     descricao: 'How to request deletion of your Linvuu account and associated data, on the website or in the Android app, and what happens to your progress and subscription.',
-    lead: 'This page covers the linvuu.com.br website and the Linvuu app on Google Play. You can request deletion here without signing in to the app or reinstalling it.',
+    lead: 'This page covers the linvuu.com website and the Linvuu app on Google Play. You can request deletion here without signing in to the app or reinstalling it.',
     secoes: [
       { titulo: 'How to request it', passos: [
         'If you have a subscription, cancel it first (see below). Deleting your account does not stop store or card charges.',
@@ -60,7 +60,7 @@ export const EXCLUSAO: Record<'pt-BR' | 'en', TextoExclusao> = {
       ] },
       { titulo: 'Cancel your subscription first', itens: [
         'Google Play subscription: on your phone, open Google Play › Payments & subscriptions › Subscriptions › Linvuu › Cancel.',
-        'Website subscription: sign in at linvuu.com.br/en/assinatura and use "Manage or cancel".',
+        'Website subscription: sign in at linvuu.com/assinatura and use "Manage or cancel".',
       ] },
       { titulo: 'Only clear this device', paragrafos: [
         'If you only want to delete progress saved on your phone, without deleting your account, use "Delete progress on this device" on the app’s Account screen.',

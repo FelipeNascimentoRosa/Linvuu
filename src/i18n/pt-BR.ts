@@ -111,7 +111,7 @@ export const ptBR = {
     aula: (n: number) => `Aula ${n}`, sessoes: (a: number, b: number) => `Sessões ${a}–${b}`, depois: 'O que vem depois (planejado)', trilha: 'A trilha, sessão por sessão', fase: (n: number) => `Fase ${n}`,
     sessaoDe: (k: number) => `Sessão ${k} de 4`, gratis: 'grátis', assinantes: 'assinantes', aulaTitulo: (a: number, t: string) => `aula ${a}, ${t}`,
     explicadoEm: 'Explicações em português',
-    cobertura: (a: number, b: number, l: string) => (a >= b ? '' : `Explicações em português: ${a} de ${b} aulas até agora. As outras estão sendo traduzidas e, até lá, aparecem em ${l}.`),
+    cobertura: (a: number, b: number, l: string) => (a >= b ? '' : `Explicações para falantes de português: ${a} de ${b} aulas disponíveis. As demais ainda não estão disponíveis.`),
     naoParaVoce: (curso: string) => `Este curso de ${curso} foi feito para quem fala português.`,
   },
   nivel: {

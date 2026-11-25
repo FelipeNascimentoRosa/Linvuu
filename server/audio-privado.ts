@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { r2Configurado } from './audio-r2';
 
 /**
  * Onde ficam os MP3 das sessões pagas. Eles NÃO vivem neste repositório (público): estão no repositório privado
@@ -26,9 +27,11 @@ export function arquivoDoAudioPrivado(idioma: string, arquivo: string, raizes: s
   return null;
 }
 
-/** Em produção, avisa no log se nenhuma raiz tem áudio: sem ele toda sessão paga ficaria sem som. */
+/** Em produção, avisa no log se nenhuma origem tem áudio: sem ele toda sessão paga ficaria sem som. */
 export function avisarSeSemAudioPrivado(env: NodeJS.ProcessEnv = process.env) {
   if (env.NODE_ENV !== 'production') return;
+  // Com o R2 configurado, o áudio pago vem do bucket privado e o disco não precisa dele.
+  if (r2Configurado(env)) return;
   const existe = raizesDoAudioPrivado(env).some((r) => fs.existsSync(path.join(r, 'audio-privado-v2')) || fs.existsSync(path.join(r, 'audio-privado')));
-  if (!existe) console.error('[Linvuu] áudio pago ausente: defina AUDIO_REPO_TOKEN no build do Render (docs/AUDIO-PRIVADO.md)');
+  if (!existe) console.error('[Linvuu] áudio pago ausente: configure o R2 (R2_ACCOUNT_ID, R2_BUCKET, R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY) ou defina AUDIO_REPO_TOKEN no build do Render (docs/infra/R2-AUDIO-PRIVADO.md)');
 }

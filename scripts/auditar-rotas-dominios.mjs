@@ -90,7 +90,7 @@ function abrirProxy(host) {
         if (typeof h.location === 'string') h.location = h.location.replace(/^https:\/\/linvuu\.com(\.br)?/, `http://127.0.0.1:${s.address().port}`);
         res.writeHead(r.statusCode, h); r.pipe(res);
       });
-      req.pipe(p); p.on('error', () => { res.writeHead(502); res.end(); });
+      req.pipe(p); p.on('error', () => { if (res.headersSent) res.destroy(); else { res.writeHead(502); res.end(); } });
     });
     s.listen(0, '127.0.0.1', () => { proxies.push(s); resolve(s.address().port); });
   });
