@@ -1,6 +1,6 @@
 ---
 name: accessibility
-description: Audit and improve web accessibility following WCAG 2.2 guidelines. Use when asked to "improve accessibility", "a11y audit", "WCAG compliance", "screen reader support", "keyboard navigation", or "make accessible".
+description: "Auditoria de acessibilidade WCAG 2.2: teclado, leitor de tela, contraste, foco. Use em pedidos de a11y, WCAG ou tornar a página acessível."
 license: MIT
 metadata:
   author: web-quality-skills

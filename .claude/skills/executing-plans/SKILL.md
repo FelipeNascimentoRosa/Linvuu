@@ -1,6 +1,6 @@
 ---
 name: executing-plans
-description: Use when executing an implementation plan in the current session as the implementer yourself — your human partner chose inline execution, or no subagent tool is available
+description: "Use ao executar um plano de implementação na sessão atual, como implementador, quando não há subagente ou o humano escolheu execução inline."
 ---
 
 # Executing Plans

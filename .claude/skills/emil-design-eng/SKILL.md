@@ -1,6 +1,6 @@
 ---
 name: emil-design-eng
-description: Emil Kowalski's design-engineering philosophy for UI polish, component design, animation decisions, and the invisible details that make software feel great. Use when building or reviewing a UI component's interactions and polish (press and hover states, popover origin, tooltip timing, transitions vs keyframes, clip-path techniques, drag details) and no narrower skill fits.
+description: "Filosofia de design-engineering de Emil Kowalski para polimento de UI: estados, transições, tooltips, animações. Use só quando nenhuma skill mais específica servir."
 ---
 
 # Design Engineering

@@ -1,6 +1,6 @@
 ---
 name: verificar-site
-description: Smoke único dos dois domínios da Linvuu (linvuu.com.br e linvuu.com): status, título no idioma do domínio, h1, JSON-LD e moeda do preço, local ou em produção. Use depois de um merge/deploy ou antes de pedir ordem de merge.
+description: "Smoke dos dois domínios da Linvuu: status, título no idioma, h1, JSON-LD e moeda, local ou produção. Use após merge/deploy ou antes de pedir ordem de merge."
 ---
 
 # Verificar site (smoke único)

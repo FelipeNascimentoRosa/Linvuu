@@ -1,10 +1,6 @@
 ---
 name: seo-technical
-description: >
-  Audit technical SEO across crawlability, indexability, security, URLs, mobile,
-  Core Web Vitals, rendering, structured data, and IndexNow. Use when the user
-  asks for a technical SEO audit or about crawling, indexing, rendering, or
-  site speed. Exclude content strategy and backlinks.
+description: "Auditoria de SEO técnico: rastreio, indexação, renderização, URLs, mobile, dados estruturados. Use em auditoria técnica; exclui estratégia de conteúdo e backlinks."
 user-invocable: true
 argument-hint: "[url]"
 license: MIT
