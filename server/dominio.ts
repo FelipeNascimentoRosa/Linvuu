@@ -22,8 +22,10 @@ export function baseDaRequisicao(req: Request, padrao: string): string {
 export function redirecionamentoDeDominio(host: string, caminho: string, consulta: string): string | null {
   const h = host.toLowerCase();
   const q = consulta ? `?${consulta}` : '';
-  if (h === `www.${HOST_GLOBAL}`) return `${SITE_GLOBAL_URL}${caminho}${q}`;
-  if (h === `www.${HOST_BR}`) return `${SITE_URL}${caminho}${q}`;
+  // www + barra final num só salto: vai direto ao endereço canônico (sem a cadeia www → apex → sem barra).
+  const semBarra = caminho.length > 1 ? caminho.replace(/\/+$/, '') || '/' : caminho;
+  if (h === `www.${HOST_GLOBAL}`) return `${SITE_GLOBAL_URL}${semBarra}${q}`;
+  if (h === `www.${HOST_BR}`) return `${SITE_URL}${semBarra}${q}`;
   // /en no .com é apenas o endereço antigo da mesma edição inglesa.
   const prefixo = h === HOST_GLOBAL && caminho.match(/^\/(en)(?=\/|$)/)?.[1];
   if (prefixo) {
