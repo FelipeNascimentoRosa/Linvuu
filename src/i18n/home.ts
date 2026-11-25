@@ -23,7 +23,6 @@ const copy: Record<string, readonly [string]> = {
   'Livro de alemão': ['German book'], 'Livro de espanhol': ['Spanish book'],
 
 
-  'VUU · UM GOSTINHO DO SEU PRÓXIMO IDIOMA': ['VUU · A TASTE OF YOUR NEXT LANGUAGE'],
   'A OFERTA DE HOJE': ['AVAILABLE TODAY'],
   'Seu ritmo.': ['Your pace.'], 'Seu próximo idioma.': ['Your next language.'],
   'Acesso aos cursos de idiomas, com explicações em português. Comece pelas duas primeiras aulas grátis, sem cartão.': ['All language courses included: Spanish, German, French, Russian and Brazilian Portuguese, fully in English. Start with two free lessons, no card required.'],

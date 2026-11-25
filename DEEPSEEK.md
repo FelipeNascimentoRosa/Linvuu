@@ -2,10 +2,9 @@
 
 **OBRIGATÓRIO, nesta ordem**, antes de qualquer linha de código:
 
-1. [`docs/linvuu-10-de-10/00-INDICE.md`](docs/linvuu-10-de-10/00-INDICE.md) — entrada única: estado real, trava ativa e roteamento. `PAINEL.md` é histórico datado (fala de Render): consulte só para métricas antigas, nunca como estado atual.
+1. [`docs/linvuu-10-de-10/00-INDICE.md`](docs/linvuu-10-de-10/00-INDICE.md) — entrada única: estado real, trava ativa e roteamento. `PAINEL.md` e os docs de Render foram removidos em 25/11/2026; use só o índice.
 2. [`AGENTS.md`](AGENTS.md) — fonte normativa comum a todos os agentes.
-3. [`docs/PROMPT-MESTRE-DEEPSEEK-v4.1.md`](docs/PROMPT-MESTRE-DEEPSEEK-v4.1.md) — o contrato dos 30 dias: as dez leis, o formato obrigatório de fim de sessão e o disparo de cada lote. É o contrato que vale quando este arquivo for omisso.
-4. Só o manual do índice que cobre a tarefa. `docs/ESTADO-ATUAL.md` é snapshot datado: reconfirme `main`, PRs e deploy.
+3. Só o manual do índice que cobre a tarefa. Reconfirme `main`, PRs e deploy.
 
 Este arquivo é a entrada específica do DeepSeek e **não substitui** `AGENTS.md`. Mesmo padrão de `CLAUDE.md`, `GEMINI.md` e `.cursor/rules/linvuu.mdc`: aqui ficam só o protocolo de execução e o formato; política, produto e histórico ficam nos documentos compartilhados.
 
@@ -13,14 +12,13 @@ Este arquivo é a entrada específica do DeepSeek e **não substitui** `AGENTS.m
 
 - **Abrir** lendo o índice e anunciando em 3 linhas: lote atual, tarefa atual, critério de pronto.
 - **Durante:** uma tarefa por vez, um PR por tarefa. Commit pequeno a cada passo concluído, mensagem no imperativo. Antes de afirmar qualquer coisa sobre o site publicado, rode `npm run testar:dominio`.
-- **Fechar** no formato da seção 5 do contrato, com o `PAINEL.md` atualizado **no mesmo PR**. Sem comando e saída colados, não existe "pronto".
+- **Fechar** com comando e saída reais, com o manual `06-operacao-pendencias.md` atualizado **no mesmo PR** quando a pendência mudar. Sem comando e saída colados, não existe "pronto".
 - O agente escreve **"verificado pelo agente"**. "Verificado em produção" só existe com print fornecido pelo Felipe.
 
 ## Fila, branch e conta de meta-trabalho
 
-- Limite: **3 PRs abertos + 3 rascunhos**. Achado fora do lote vai para `PENDENCIAS.md` e para o § 7 do PAINEL — não vira PR novo no meio do lote.
+- Limite: **3 PRs abertos + 3 rascunhos**. Achado fora do lote vai para `docs/linvuu-10-de-10/06-operacao-pendencias.md` — não vira PR novo no meio do lote.
 - Branch e PR por tarefa; **uma branch de escrita por agente**; nunca direto na `main`. Não sobrescreva trabalho de Claude, Codex ou Antigravity: confira `git log` e os PRs abertos antes de editar.
-- Antes de abrir PR de documento ou infra, mostre a conta **60/20/20** do § 9 do PAINEL. Sem saldo, não abre.
 - Verificador novo só se fundir ou aposentar um antigo no mesmo commit (teto de 75 scripts).
 
 ## Fatos já medidos — confira no painel, não rederive
@@ -28,7 +26,7 @@ Este arquivo é a entrada específica do DeepSeek e **não substitui** `AGENTS.m
 - Domínios: `linvuu.com.br` (39 URLs no sitemap) e `linvuu.com` (15). Um idioma de interface por domínio; o site em espanhol foi retirado em 06/11/2026.
 - Home do `.com.br`: fora do índice do Google ("Descoberto — não indexado"). 25 rotas, 37 páginas no `.com.br` (32 indexáveis).
 - Catálogo: 7 cursos, 1.840 sessões de aula, 113 capítulos escritos, **12 publicados**. Assinantes: 0.
-- Mascotes: **proibidos**; exclusão de todos autorizada pelo Felipe em 25/11/2026 (PR própria). [`docs/VUU.md`](docs/VUU.md) registra a retirada. Não recriar.
+- Mascotes: **proibidos**; todos excluídos em 25/11/2026. Não recriar (há travas negativas nos testes).
 
 ## Proibições que o repositório já pagou caro
 

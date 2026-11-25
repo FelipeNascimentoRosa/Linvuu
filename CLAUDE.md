@@ -1,6 +1,6 @@
 # CLAUDE.md — Linvuu
 
-> **Entrada única: [`docs/linvuu-10-de-10/00-INDICE.md`](docs/linvuu-10-de-10/00-INDICE.md)** (estado real, tabela "mexer em X → ler Y", 6 manuais). Este arquivo guarda só regras permanentes. Em conflito, **este arquivo manda nas regras; o índice e os manuais mandam nos fatos**. `PAINEL.md`, `docs/CONTINUIDADE-*`, `docs/ESTADO-ATUAL.md`, `docs/historico/` e `_para_apagar/` são histórico datado (falam de Render): não são estado atual.
+> **Entrada única: [`docs/linvuu-10-de-10/00-INDICE.md`](docs/linvuu-10-de-10/00-INDICE.md)** (estado real, tabela "mexer em X → ler Y", 6 manuais). Este arquivo guarda só regras permanentes. Em conflito, **este arquivo manda nas regras; o índice e os manuais mandam nos fatos**. `PAINEL.md`, `docs/CONTINUIDADE-*`, `docs/ESTADO-ATUAL.md`, `docs/historico/` e `_para_apagar/` foram removidos em 25/11/2026 (falavam de Render).
 > Regras por área carregam ao abrir os arquivos (`.claude/rules/`). Fluxos pesados vivem em `.claude/skills/` e só entram sob demanda.
 
 ## Economia de tokens (obrigatória)
@@ -11,7 +11,7 @@ Resposta seca e técnica: sem preâmbulo, sem desculpa, sem elogio, sem narrar a
 2. **Proibido** stub, `mock`, "resto aqui", resumo raso ou devolver trabalho técnico ao Felipe. Entrega completa, tipada, testada, com o comando que provou e a saída real.
 3. **Proibido** instalar dependência que o PR não usa. Licença MIT/Apache-2.0/BSD/MPL-2.0 conferida e registro em `REPOS_FINAL.md`; GPL, AGPL e SSPL bloqueadas.
 4. Mídia de marketing só com frases, tabelas e exemplos reais de `content/` (`npm run midia:carrossel`, `npm run midia:video`). Motor de vídeo: HyperFrames (Apache-2.0). **Nunca Remotion.**
-5. **Mascotes proibidos** em site, APK e marketing (Vuu, Pelmeni, qualquer outro). Exclusão total autorizada (25/11/2026), em PR própria; não usar nem reintroduzir.
+5. **Mascotes proibidos** em site, APK e marketing (Vuu, Pelmeni, qualquer outro). Todos foram excluídos em 25/11/2026; não reintroduzir (travas negativas em testes).
 
 ## Produto em 5 linhas
 - Cursos de idiomas (de, en, es, fr, it, br, ru), explicação na língua do aluno, **áudio sintetizado** por frase. 2 primeiras aulas grátis (sessões 1–8; paywall na 9).

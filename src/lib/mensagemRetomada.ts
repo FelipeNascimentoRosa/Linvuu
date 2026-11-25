@@ -1,4 +1,4 @@
-// Texto do Vuu na retomada. Só afirma o que o aluno marcou: sessão marcada não prova domínio,
+// Texto da retomada. Só afirma o que o aluno marcou: sessão marcada não prova domínio,
 // e não há sequência de dias, nível concluído nem promessa de resultado.
 export interface TextoRetomada { frase: string; contagem: string }
 

@@ -8,7 +8,7 @@ Este arquivo **não é uma ordem de instalação**. É o registro de quem pode e
 
 1. **Licença permissiva primeiro** (`AGENTS.md`): MIT, Apache-2.0, BSD-3. GPL, AGPL e SSPL não entram no site, nem como dependência de build, nem como ferramenta de serviço.
 2. **Instalar só o que a fase pede**, em diretório isolado (`scripts/*-tools/`), fora do bundle e do `dist/`. Texto revisado pode ser instalado; código externo não roda sem necessidade, e todo commit externo fica registrado.
-3. **Recusa registrada não se reabre sem dado novo.** Achado de última hora vai para `PENDENCIAS.md`, não para um PR novo no meio do lote.
+3. **Recusa registrada não se reabre sem dado novo.** Achado de última hora vai para `docs/linvuu-10-de-10/06-operacao-pendencias.md`, não para um PR novo no meio do lote.
 4. **"Verificar licença" já foi verificado.** A lista original pedia conferência em dois itens (SEO Prism, Tolgee); ambos estão no §4 com o resultado. Item sem `owner/repo` é tratado como não verificável e não entra.
 
 Bloco para colar no prompt de um agente:
@@ -17,7 +17,7 @@ Bloco para colar no prompt de um agente:
 Consulte REPOS_FINAL.md como fonte primária de ferramentas.
 Para cada fase, clone ou instale apenas os repositórios marcados como aprovados no §2 e
 nunca os do §4. Não use ferramenta copyleft (AGPL/GPL) sem registrar o impacto em
-NOTES.md e propor alternativa permissiva. O que já está no §1 não se instala de novo.
+o registro de recusas deste arquivo e propor alternativa permissiva. O que já está no §1 não se instala de novo.
 ```
 
 ## 1. Já em uso neste repositório (não instalar de novo)
@@ -27,8 +27,8 @@ NOTES.md e propor alternativa permissiva. O que já está no §1 não se instala
 | Harper (`harper.js`) | `scripts/en-tools/package.json` | 3.0.0 | Apache-2.0 | gramática e uso do inglês (`EN_AUDIT.md`) |
 | `retext` + `retext-english` + `retext-readability` | `scripts/en-tools/package.json` | 9.0.0 / 5.0.0 / 8.0.0 | MIT | Flesch Reading Ease (`METRICS_EN.md` §3.3) |
 | `@f-o-t/content-analysis` | `scripts/en-tools/package.json` | 1.0.7 | MIT | nota de SEO on-page, título, descrição, headings |
-| Lighthouse + `@lhci/cli` | `scripts/seo-tools/`, `lighthouserc.cjs`, `.github/workflows/qualidade-seo.yml` | 13.6.0 / 0.16.0 | Apache-2.0 | desempenho, SEO, acessibilidade, boas práticas (`METRICS.md` §1) |
-| axe-core | `scripts/seo-tools/node_modules/` (transitivo de `@lhci/cli`) | 4.14.0 | MPL-2.0 | violações WCAG 2.0/2.1/2.2 A e AA (`METRICS.md` §2) |
+| Lighthouse + `@lhci/cli` | `scripts/seo-tools/`, `lighthouserc.cjs`, `.github/workflows/qualidade-seo.yml` | 13.6.0 / 0.16.0 | Apache-2.0 | desempenho, SEO, acessibilidade, boas práticas |
+| axe-core | `scripts/seo-tools/node_modules/` (transitivo de `@lhci/cli`) | 4.14.0 | MPL-2.0 | violações WCAG 2.0/2.1/2.2 A e AA |
 | Playwright | `node_modules/` (instalado com `--no-save`, igual ao CI) | 1.64.1 | Apache-2.0 | render do React e contexto da página para o axe |
 
 Duas notas técnicas:
@@ -92,7 +92,7 @@ Contagem, item a item: **4 em uso** (6, 10, 20, 22) · **11 aprovados por licen�
 
 ### 4.1 Lingui e Paraglide — MIT, recusados por arquitetura
 
-`src/i18n/pt-BR.ts` e `src/i18n/en.ts` são objetos tipados, e `scripts/testar-paridade-meta.mjs` reprova o CI quando uma chave existe em um idioma e não no outro. A decisão está escrita em `NOTES.md` linha 17: *"We deliberately did not adopt Paraglide or i18next: the catalogue is two languages with full parity checks, and swapping the library would touch every screen for no conversion gain."* E em `PENDENCIAS.md` linha 7, como **não reabrir sem dado novo**.
+`src/i18n/pt-BR.ts` e `src/i18n/en.ts` são objetos tipados, e `scripts/testar-paridade-meta.mjs` reprova o CI quando uma chave existe em um idioma e não no outro. A decisão foi registrada em 2026 (NOTES.md, removido em 25/11/2026): *"We deliberately did not adopt Paraglide or i18next: the catalogue is two languages with full parity checks, and swapping the library would touch every screen for no conversion gain."* E em `PENDENCIAS.md` linha 7, como **não reabrir sem dado novo**.
 
 Trocar o catálogo por Lingui ou Paraglide mexeria em todas as telas para economizar kB de strings que já são poucas — e o modelo do site não é catálogo em runtime: é **um idioma de interface por domínio** (decisão de 29/10/2026, `docs/DECISAO-SITE-INTERNACIONAL.md`).
 
@@ -117,7 +117,7 @@ A licença permite uso comercial fechado, e isso está certo na lista. O que dec
 
 `gasserane/personal-skills` (3★), `Gingiris-1031/gingiris-opensource` (8★) e `niranjanbala/growth-marketing-experimentation` (3★) não têm licença. Sem licença, o padrão legal é reserva total de direitos: **não se copia texto nem se instala código**. Nada impede ler o guia de lançamento e escrever o nosso; o que não se faz é colar o texto deles no repositório.
 
-A metodologia que o `personal-skills` descreveria (REA com gradação de confiança) já está formalizada aqui em `METRICS.md` §5 e `NOTES.md` §9, com a régua de aceite e reversão.
+A metodologia que o `personal-skills` descreveria (REA com gradação de confiança) já está formalizada aqui no histórico do Git (`METRICS.md` e `NOTES.md`, removidos em 25/11/2026), com a régua de aceite e reversão.
 
 ### 4.6 marketingskills — MIT, mas não há o que instalar
 

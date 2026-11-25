@@ -6,7 +6,7 @@ import { DUVIDAS, caminhoDuvida } from '../src/lib/duvidas.ts';
 
 // Títulos das páginas indexáveis (home, hubs, livros, capítulos e aulas grátis) ficam entre 35 e 60 caracteres,
 // como o Google os mostra, nos dois domínios. O limite de 35 faltava até 11/11/2026: `/livros/de/capitulo/1`
-// saía com 29 e nenhuma régua olhava essa rota (AUDITORIA-SITE-2026-11-11 §5).
+// saía com 29 e nenhuma régua olhava essa rota (auditoria de 11/11/2026 §5).
 // A sessão paga não entra: desde 11/11/2026 toda sessão de aula é noindex e não vai ao sitemap.
 const d = carregarDadosMeta(process.cwd());
 assert.ok(d, 'dados de meta carregados');

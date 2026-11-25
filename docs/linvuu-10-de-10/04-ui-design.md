@@ -28,10 +28,10 @@ Leia antes de tocar CSS, componente, layout, cor, fonte, ícone ou tela do APK.
 Título que não carrega peso sozinho (rótulo em cima), listas "01/02/03" decorativas, cartões dentro de cartões, parágrafos com ar de template, gradientes e ícones genéricos sem função. Prefira tipografia e espaçamento dos tokens; imagem só se vier de `marca/` ou `content/`.
 
 ## 5. Mascotes — PROIBIÇÃO ABSOLUTA
-Decisão do Felipe (retirada em 15/11/2026, reforçada em 25/11/2026): **nenhum mascote** em site, APK ou marketing. Isto inclui o Vuu e o Pelmeni. `docs/VUU.md` registra a retirada.
-- **Autorização do Felipe (25/11/2026): todos os mascotes podem ser excluídos, literalmente todos** (código, CSS, texto, alt text, arte, testes e docs que os citem). Executar em **PR própria** de limpeza, fora da PR de docs, respeitando a trava de rotas/SEO e sem enfraquecer teste (ajustar asserção só para tirar o mascote, nunca para afrouxar).
+Decisão do Felipe (retirada em 15/11/2026, reforçada em 25/11/2026): **nenhum mascote** em site, APK ou marketing. Isto inclui o Vuu e o Pelmeni.
+- **Exclusão concluída em 25/11/2026** (PR `chore/faxina-mascotes-e-legado`): código, CSS, texto, tokens de marca e docs de mascote foram removidos. Restam apenas as **travas negativas** de teste (`scripts/testar-seo-publico.ts`: `!home.includes('Conheça o Vuu')`; `scripts/testar-seo-http.mjs`: `/assets/vuu/vuu.svg` deve responder 404). Não apague essas asserções.
 - Não criar, não reintroduzir, não "reaproveitar" arte, nome ou alt text.
-- Resíduos conhecidos na `main` (nomes/comentários legados; limpeza futura, **não** parte desta PR). Para listar: `rg -iw -e vuu -e pelmeni src server scripts public content marketing design`. Na verificação de 25/11/2026 apareceram arquivos como `src/components/Carregando.tsx`, `src/components/carregando.css`, `src/i18n/home.ts`, `src/lib/mensagemRetomada.ts`, `src/pages/home-brasileiros.css`, `src/styles.css`, `server/app.ts` e testes. Note: o `rg` sem `-w` casa com "Linvuu" e gera ruído.
+- Verificação: `rg -n -i -P "(?<![a-z])vuu|pelmeni|mascot" src server scripts public marca design marketing` deve listar só as duas travas acima (e "mascota", palavra espanhola de conteúdo didático).
 - `CLAUDE.md` e `DEEPSEEK.md` antigos ainda falavam do Vuu como marca presente: o `CLAUDE.md` novo não fala, e o `DEEPSEEK.md` aponta para esta regra.
 
 ## 6. APK

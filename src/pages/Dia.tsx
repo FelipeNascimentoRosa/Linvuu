@@ -95,7 +95,7 @@ export default function Dia() {
       )}
       {/* Espera do fetch dos dados da aula (carregarAula): era este <p> solto —
           e o gémeo `decidindo` acima — que mostravam «Carregando...» sem
-          esqueleto nem mascote na navegação interna curso → dia, porque a
+          esqueleto na navegação interna curso → dia, porque a
           página já montou e este estado é local, fora do Suspense de App.tsx. */}
       {!aula && !erro && !semEdicao && !indisponivelIdioma && !bloqueado && <Carregando />}
 
