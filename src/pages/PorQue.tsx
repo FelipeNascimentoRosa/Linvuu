@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import '../livros.css';
-import { SITE_URL } from '../config/site';
 import { LOCALE } from '../i18n';
 import { usePageTitle } from '../lib/usePageTitle';
 import { POR_QUE } from '../lib/porQue';
@@ -44,7 +43,7 @@ export default function PorQue() {
         <h2 id="pq-fim-t">{x.ctaTitulo}</h2>
         <Link className="pq-botao" to={x.ctaBotao.link}>{x.ctaBotao.texto} <span aria-hidden="true">→</span></Link>
         <p>
-          {x.ctaSegmentos.map((s, i) => (s.link === '/livros' && LOCALE.codigo === 'en' ? <a key={i} href={`${SITE_URL}/livros`}>{s.texto}</a> : s.link ? <Link key={i} to={s.link}>{s.texto}</Link> : <span key={i}>{s.texto}</span>))}
+          {x.ctaSegmentos.map((s, i) => (s.link ? <Link key={i} to={s.link}>{s.texto}</Link> : <span key={i}>{s.texto}</span>))}
         </p>
       </section>
     </div>

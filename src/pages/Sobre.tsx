@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import '../livros.css';
-import { emailOficial, SITE_URL } from '../config/site';
+import { emailOficial } from '../config/site';
 import { LOCALE } from '../i18n';
 import { usePageTitle } from '../lib/usePageTitle';
 import { AUTORES } from '../lib/livros';
@@ -42,7 +42,7 @@ export default function Sobre() {
         <p className="lvr-p">{s.audio}</p>
 
         <h2 className="lvr-h2">{s.ctaTitulo}</h2>
-        <p className="lvr-p">{LOCALE.codigo === 'en' ? <a href={`${SITE_URL}/livros`}>{s.ctaLivros}</a> : <Link to="/livros">{s.ctaLivros}</Link>}, <Link to="/cursos">{s.ctaCursos}</Link> {s.ctaOu} <a href={`mailto:${emailOficial()}`}>{emailOficial()}</a>.</p>
+        <p className="lvr-p"><Link to="/livros">{s.ctaLivros}</Link>, <Link to="/cursos">{s.ctaCursos}</Link> {s.ctaOu} <a href={`mailto:${emailOficial()}`}>{emailOficial()}</a>.</p>
       </section>
     </div>
   );
