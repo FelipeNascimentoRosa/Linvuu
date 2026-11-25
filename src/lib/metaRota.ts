@@ -136,10 +136,10 @@ const SEO_EN = {
   termosD: 'Rules for using the Linvuu site and courses: payment, cancellation, the 7-day refund and what we expect from each other. Brazilian law applies.',
   /**
    * Hub `/gramatica`. Até 11/11/2026 o título era só «Grammar · Linvuu» (16 caracteres, nenhum termo de busca)
-   * (AUDITORIA-SITE-2026-11-11 §4). O hub continua **fora do sitemap**: no React `/gramatica` é um alias que
+   * (auditoria de 11/11/2026 §4). O hub continua **fora do sitemap**: no React `/gramatica` é um alias que
    * redireciona para `/gramatica/<primeiro idioma>` (`src/pages/Gramatica.tsx`), e o check `paridade-head` do CI
    * reprova a divergência entre este `<head>` e o DOM. O texto abaixo fica pronto para quando houver página de hub
-   * (ver PENDENCIAS.md). A descrição nomeia as gramáticas que existem de fato em inglês: hoje espanhol, russo,
+   * (ver docs/linvuu-10-de-10/06-operacao-pendencias.md). A descrição nomeia as gramáticas que existem de fato em inglês: hoje espanhol, russo,
    * francês e português do Brasil (content/gramatica/<id>.en.json). Ao traduzir outra, atualize a frase aqui.
    */
   gramaticaT: 'Grammar guides explained in English',
@@ -173,10 +173,10 @@ const SEO_BR = {
   termosD: 'Regras de uso do site e dos cursos da Linvuu: planos e pagamento, cancelamento, reembolso em até 7 dias, conteúdo de terceiros e a lei brasileira aplicada.',
   /**
    * Hub `/gramatica`, a página de entrada da busca por gramática. Até 11/11/2026 servia «Gramática · Linvuu»
-   * (18 caracteres, sem termo de busca) (AUDITORIA-SITE-2026-11-11 §4). O hub continua **fora do sitemap**:
+   * (18 caracteres, sem termo de busca) (auditoria de 11/11/2026 §4). O hub continua **fora do sitemap**:
    * no React `/gramatica` é um alias que redireciona para `/gramatica/<primeiro idioma>` (`src/pages/Gramatica.tsx`)
    * e o check `paridade-head` do CI reprova a divergência entre este `<head>` e o DOM — o texto abaixo fica pronto
-   * para quando houver página de hub (ver PENDENCIAS.md). A descrição nomeia as seis gramáticas que existem em
+   * para quando houver página de hub (ver docs/linvuu-10-de-10/06-operacao-pendencias.md). A descrição nomeia as seis gramáticas que existem em
    * português (content/gramatica/<id>.json); ao publicar outra, atualize a frase aqui.
    */
   gramaticaT: 'Gramática de idiomas explicada em português',
@@ -209,7 +209,7 @@ const HOME = {
 /**
  * Descrição de capítulo de livro na faixa de 120–160 caracteres que o Google exibe. O título do capítulo entra
  * na frase e varia de 13 a 36 caracteres, então o fecho cresce quando ele é curto: com o fecho único antigo,
- * sete das doze descrições saíam entre 109 e 119 (AUDITORIA-SITE-2026-11-11 §5). Se um capítulo futuro tiver
+ * sete das doze descrições saíam entre 109 e 119 (auditoria de 11/11/2026 §5). Se um capítulo futuro tiver
  * título mais curto que os de hoje, `scripts/testar-titulos.ts` acusa em vez de o defeito passar calado.
  */
 const FECHOS_CAPITULO = [
@@ -308,7 +308,7 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     const url = `${SITE}/livros/${l.id}/capitulo/${c.n}`;
     // Título e descrição nas faixas que o Google exibe (30–60 e 120–160). Medição de 11/11/2026:
     // `/livros/de/capitulo/1` saía com 29 caracteres e sete das doze descrições com 109 a 119
-    // (AUDITORIA-SITE-2026-11-11 §5). O nível CEFR do capítulo entra no título: é o que a pessoa procura.
+    // (auditoria de 11/11/2026 §5). O nível CEFR do capítulo entra no título: é o que a pessoa procura.
     const tituloCapitulo = `${l.curto ?? l.nome}, ${ls.capAbrev} ${c.n}: ${c.titulo.split(':')[0]}${c.nivel ? ` (${c.nivel.toUpperCase()})` : ''}`;
     return { status: 200, caminho: p, titulo: tituloCapitulo.length < 35 ? `${tituloCapitulo} · Linvuu` : tituloCapitulo, semMarca: true, descricao: descricaoCapitulo(l, c, loc.codigo === 'en'), ...livroDominio, jsonld: [
       { '@context': 'https://schema.org', '@type': 'Chapter', name: `${ls.cap} ${c.n}: ${c.titulo}`, position: c.n, url, inLanguage: loc.codigo, isAccessibleForFree: true, educationalLevel: c.nivel || undefined, timeRequired: `PT${minutosDeLeitura(c)}M`, dateModified: dataDe(`/livros/${l.id}/capitulo/${c.n}`), isPartOf: { '@type': 'Book', name: tituloLivro(l), url: `${SITE}/livros/${l.id}` }, author: AUTORES.map((a) => ({ '@type': 'Person', '@id': a.id === 'felipe' ? AUTHOR_ID : `${SITE}/sobre#${a.id}`, name: a.nome, url: `${SITE}/sobre#${a.id}` })), publisher: { '@id': ORG_ID } },

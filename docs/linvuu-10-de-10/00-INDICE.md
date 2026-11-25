@@ -1,6 +1,6 @@
 # Linvuu 10/10 — índice, roteamento e prompt de ativação
 
-> Fonte única de entrada para qualquer IA ou conta (Claude, Codex, Gemini/Antigravity, DeepSeek). Substitui a leitura em cadeia de `PAINEL.md`, `docs/CONTINUIDADE-2026-10-27.md`, `docs/ESTADO-ATUAL.md` e `docs/COORDENACAO-IA.md`, que são **histórico datado** (falam de Render, que não hospeda mais nada). Base: `main` em `c1737c48` (PRs #643, #644, #645), 25/11/2026. Antes de afirmar estado, meça ao vivo.
+> Fonte única de entrada para qualquer IA ou conta (Claude, Codex, Gemini/Antigravity, DeepSeek). Substitui a leitura em cadeia de `PAINEL.md`, `CONTINUIDADE`, `ESTADO-ATUAL` e `COORDENACAO-IA`, **removidos em 25/11/2026** (falavam de Render; só o histórico do Git os guarda). Base: `main` em `c1737c48` (PRs #643, #644, #645), 25/11/2026. Antes de afirmar estado, meça ao vivo.
 
 ## 1. Estado real (verifique antes de repetir)
 
@@ -50,7 +50,7 @@ Testes manuais do Felipe (áudio de assinante em web, Safari e APK; entrega dos 
 ```text
 Você vai trabalhar no repositório FelipeNascimentoRosa/Linvuu (site de idiomas Linvuu, produção na Vercel, branch main). Antes de qualquer proposta ou edição:
 1. git fetch origin main e confirme que está trabalhando a partir de origin/main. Nunca trabalhe direto na main: branch + PR. Merge só com ordem expressa do Felipe.
-2. Leia docs/linvuu-10-de-10/00-INDICE.md (este arquivo) e SÓ o manual da tabela de roteamento que cobre a sua tarefa. Não leia docs/historico/, _para_apagar/, docs/CONTINUIDADE-*, docs/ESTADO-ATUAL.md nem PAINEL.md como estado atual: são arquivo datado (falam de Render, que não existe mais).
+2. Leia docs/linvuu-10-de-10/00-INDICE.md (este arquivo) e SÓ o manual da tabela de roteamento que cobre a sua tarefa. Documentos datados de estado (PAINEL, CONTINUIDADE, ESTADO-ATUAL) foram removidos; não os procure no histórico do Git como estado atual.
 3. Trava ativa: zero alteração em URLs, rotas, redirects, public/robots*.txt, public/sitemap*.xml, vercel.json, DNS, Cloudflare e R2 enquanto o Google Search Console valida. Nunca desabilite ou afrouxe teste de CI.
 4. Regras absolutas: sem mascotes em nenhum lugar; áudio é sintetizado (nunca prometa "gravado por nativos"); preços só em src/config/planos.ts; linvuu.com é só inglês; auth 401/403 antes de tocar no R2; nunca imprima valores de variáveis de ambiente ou segredos; conteúdo pedagógico novo exige revisão linguística humana e `node scripts/conteudo.mjs --check`.
 5. Economia de tokens: respostas secas e técnicas, sem preâmbulo. Use rg/grep antes de ler; nunca leia arquivo grande inteiro nem dia-*.json em lote; filtre saídas de terminal.

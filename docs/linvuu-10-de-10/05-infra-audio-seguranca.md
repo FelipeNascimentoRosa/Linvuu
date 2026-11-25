@@ -35,7 +35,7 @@ Checkout mensal USD depende de `STRIPE_PRICE_ID_USD`; se quebrar, cheque `/ready
 - `vercel.json` com `includeFiles` inválido e erro de TypeScript em `ts-fsrs` quebraram o build (#643; `ts-fsrs` 6 entrou na #639).
 - Rota de áudio consultando R2 antes de autenticar (#643).
 - Bucket planejado sem CORS e fluxo `https://localhost → API → 302 R2` com `Origin: null` (#643/#644).
-- `PAINEL.md` registra o repositório com MP3 pagos como público em 11/11/2026; o histórico do Git ainda guarda arquivos antigos. Reescrever histórico só com ordem expressa.
+- O registro de 11/11/2026 (removido em 25/11) apontava o repositório com MP3 pagos como público em 11/11/2026; o histórico do Git ainda guarda arquivos antigos. Reescrever histórico só com ordem expressa.
 
 ## 6. Critério de saída para 10/10
 Build Vercel sem aviso (hoje 7 avisos abertos); `npm run testar:seguranca`, `testar-audio-autorizacao.ts` e `gitleaks` verdes no CI; reprodução confirmada em web, Safari e APK por assinante real; 2FA ativo na Vercel e no Cloudflare; billing do Render conferido e encerrado; `/readyz` sem pendência.

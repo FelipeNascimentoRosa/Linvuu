@@ -28,12 +28,12 @@ Sitemaps e llms.txt nascem de `scripts/seo.mjs`, das mesmas listas de `src/lib/m
 1. **`explicacaoCompleta` (`metaRota.ts`):** o hub `/curso/<id>` só é indexável, e só entra no sitemap, num idioma em que **todas** as sessões do curso estão explicadas nele. Curso parcial não ganha página indexável nem hreflang. É intencional.
 2. **Sessões `/curso/<id>/dia/N` são `noindex`** (decisão de 11/11/2026), **exceto a sessão 1** de curso completo no idioma da página; desde 18/11 o código exige `explicacaoCompleta` também na sessão 1.
 3. **Gramática** só existe no sitemap onde o arquivo dela existe naquele idioma (`content/gramatica/<id>.json` / `<id>.en.json`).
-4. **Italiano no .com:** só as aulas 1 e 2 (sessões 1–8) estão em inglês; as outras 60 estão em preparação (`PENDENCIAS.md`). Por isso `/curso/it` não está no sitemap do .com.
+4. **Italiano no .com:** só as aulas 1 e 2 (sessões 1–8) estão em inglês; as outras 60 estão em preparação (`docs/linvuu-10-de-10/06-operacao-pendencias.md`). Por isso `/curso/it` não está no sitemap do .com.
 5. `/excluir-conta` e rotas de conta são `noindex, nofollow`.
 
 ## Idiomas: publicados × em preparação
 
-Fonte da verdade: a tabela de cobertura abaixo (contagem de arquivos em `content/idiomas/`). Em preparação = qualquer curso com explicação menor que o total no idioma do domínio; o plano e o texto-fonte pendente ficam em `PENDENCIAS.md`.
+Fonte da verdade: a tabela de cobertura abaixo (contagem de arquivos em `content/idiomas/`). Em preparação = qualquer curso com explicação menor que o total no idioma do domínio; o plano e o texto-fonte pendente ficam em `docs/linvuu-10-de-10/06-operacao-pendencias.md`.
 
 ## Matriz (gerada)
 

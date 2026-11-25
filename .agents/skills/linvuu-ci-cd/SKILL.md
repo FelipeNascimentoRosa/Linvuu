@@ -5,7 +5,7 @@ description: CI/CD, GitHub Actions, Render, qualidade e rollback na Linvuu, com 
 # CI/CD, GitHub Actions, Render, qualidade e rollback
 
 ## Contexto obrigatório
-Ler `AGENTS.md`, `PAINEL.md`, `docs/DOMINIOS.md` e `docs/COORDENACAO-IA.md`. Confirmar branch e deploy. Não assumir métricas históricas como atuais.
+Ler `AGENTS.md`, `docs/DOMINIOS.md` e `docs/linvuu-10-de-10/00-INDICE.md`. Confirmar branch e deploy. Não assumir métricas históricas como atuais.
 
 ## Arquivos do projeto
 .github/workflows/, package.json, scripts/

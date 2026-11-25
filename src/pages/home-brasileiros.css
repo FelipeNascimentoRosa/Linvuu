@@ -138,7 +138,6 @@
 .br-abas button:hover{border-color:var(--papel)}
 .br-abas button[aria-selected="true"]{background:var(--papel);color:var(--verde-floresta);border-color:var(--papel)}
 .br-frase-painel{position:relative;margin-top:28px;min-height:clamp(160px,16vw,220px)}
-.br-vuu-ouve{position:absolute;right:0;bottom:0;width:120px;height:auto;opacity:.95}
 .br-home .br-frase{font-size:clamp(40px,5.4vw,84px);line-height:1.02;letter-spacing:-.03em;font-weight:400;color:var(--papel);max-width:min(18ch,78%);overflow-wrap:anywhere}
 .br-home .br-frase:lang(ru){font-family:var(--font-display-cirilico)}
 .br-frase span{display:inline-block;animation:br-palavra .42s cubic-bezier(.2,.7,.1,1) both;animation-delay:calc(var(--n) * 55ms)}
@@ -160,7 +159,7 @@
 .br-hero .br-fine{color:var(--papel-escuro)}
 .br-hero .br-fine a{color:var(--papel-escuro);text-decoration:underline;text-underline-offset:3px}
 .br-hero :is(a,button):focus-visible{outline-color:var(--ocre-claro)}
-@media(max-width:900px){.br-hero-topo{grid-template-columns:1fr}.br-vuu-ouve{display:none}.br-home .br-frase{max-width:18ch}}
+@media(max-width:900px){.br-hero-topo{grid-template-columns:1fr}.br-home .br-frase{max-width:18ch}}
 @media(max-width:700px){.br-hero-in{padding:26px 20px 36px}.br-hero h1{font-size:32px}.br-lead{font-size:16px;line-height:1.5}.br-palco{margin-top:20px;padding-top:18px}.br-hero .br-pick{margin-bottom:10px}.br-abas{gap:6px}.br-abas button{padding:0 14px;font-size:15px}.br-frase-painel{margin-top:18px;min-height:0}.br-home .br-frase{font-size:38px}.br-nota{margin-top:6px;font-size:22px}.br-som{margin-top:14px}.br-som button{width:48px;height:48px}.br-cta-linha{margin-top:14px}
 .br-home .br-cta{width:100%;justify-content:center}.br-som-dica{display:none}}
 

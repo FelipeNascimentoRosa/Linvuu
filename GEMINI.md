@@ -1,6 +1,6 @@
 # Linvuu — instruções para Gemini / Google Antigravity
 
-**OBRIGATÓRIO:** antes de trabalhar, leia integralmente [AGENTS.md](AGENTS.md). Depois leia `docs/linvuu-10-de-10/00-INDICE.md` (entrada única) e só o manual da sua tarefa. Documentos datados (`docs/CONTINUIDADE-2026-10-27.md`, `PAINEL.md`, `docs/ESTADO-ATUAL.md`) são histórico, não estado atual.
+**OBRIGATÓRIO:** antes de trabalhar, leia integralmente [AGENTS.md](AGENTS.md). Depois leia `docs/linvuu-10-de-10/00-INDICE.md` (entrada única) e só o manual da sua tarefa. Documentos de estado datados (PAINEL, CONTINUIDADE, ESTADO-ATUAL) foram removidos em 25/11/2026.
 
 As regras de projeto são compartilhadas entre Claude, ChatGPT/Codex, Cursor e Antigravity.
 

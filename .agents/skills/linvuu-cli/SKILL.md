@@ -5,7 +5,7 @@ description: CLI e automação de manutenção na Linvuu, com testes e evidênci
 # CLI e automação de manutenção
 
 ## Contexto obrigatório
-Ler `AGENTS.md`, `PAINEL.md`, `docs/DOMINIOS.md` e `docs/COORDENACAO-IA.md`. Confirmar branch e deploy. Não assumir métricas históricas como atuais.
+Ler `AGENTS.md`, `docs/DOMINIOS.md` e `docs/linvuu-10-de-10/00-INDICE.md`. Confirmar branch e deploy. Não assumir métricas históricas como atuais.
 
 ## Arquivos do projeto
 scripts/, package.json, .github/

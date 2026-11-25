@@ -1,4 +1,4 @@
-// A mensagem do Vuu só descreve sessões marcadas; nunca domínio, sequência ou nível.
+// A mensagem de retomada só descreve sessões marcadas; nunca domínio, sequência ou nível.
 import assert from 'node:assert/strict';
 import { textoRetomada } from '../src/lib/mensagemRetomada';
 

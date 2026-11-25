@@ -2,7 +2,7 @@
 
 Plataforma **internacional** de ensino de idiomas (português, inglês e espanhol; ver [docs/DECISAO-SITE-INTERNACIONAL.md](docs/DECISAO-SITE-INTERNACIONAL.md)) com **frontend React + Vite + TypeScript**, servidor **Node.js/Express** e versões web e Android tratadas separadamente. Código no repositório público; site: https://linvuu.com.br.
 
-**O estado verificável fica em [docs/ESTADO-ATUAL.md](docs/ESTADO-ATUAL.md)**. Registros antigos, como `docs/historico/CONTEXTO.md`, não substituem o código, CI e as consultas de produção. Não tratar recursos em rascunho como lançados.
+**A entrada única é [docs/linvuu-10-de-10/00-INDICE.md](docs/linvuu-10-de-10/00-INDICE.md)**. Registros antigos não substituem o código, CI e as consultas de produção. Não tratar recursos em rascunho como lançados.
 
 ## Onde fica cada coisa (site × app)
 
@@ -53,11 +53,9 @@ Mais scripts e versões em [package.json](package.json). Testes da `main` só co
 ## Arquivos e instruções
 
 - [AGENTS.md](AGENTS.md): fonte comum para ChatGPT/Codex, Claude, Cursor, Antigravity e DeepSeek.
-- [PAINEL.md](PAINEL.md): o que está aberto, reprovado ou bloqueado hoje. Leia antes de escolher a tarefa.
 - [CLAUDE.md](CLAUDE.md): entrada de Claude e critério de evidência.
-- [DEEPSEEK.md](DEEPSEEK.md): entrada de DeepSeek v4.1; contrato em [docs/PROMPT-MESTRE-DEEPSEEK-v4.1.md](docs/PROMPT-MESTRE-DEEPSEEK-v4.1.md).
-- [docs/COORDENACAO-IA.md](docs/COORDENACAO-IA.md): coordenação entre agentes, com o estado dos PRs medido por API.
-- [docs/AUDITORIA-SITE-2026-11-11.md](docs/AUDITORIA-SITE-2026-11-11.md): o que está errado no site, medido em 11/11/2026 nos 54 URLs dos dois sitemaps e no Search Console (registro atribuído a DeepSeek v4.1 Flash).
+- [DEEPSEEK.md](DEEPSEEK.md): entrada de DeepSeek v4.1.
+- [docs/linvuu-10-de-10/00-INDICE.md](docs/linvuu-10-de-10/00-INDICE.md): estado real, trava ativa, tabela de roteamento e os 6 manuais.
 - [docs/conexao-firebase-github.md](docs/conexao-firebase-github.md): estado e limites da auditoria Firebase.
 - `firestore.rules` e `firebase.json`: regras versionadas e configuração do emulador. **Nenhum deploy Firestore automático é executado por este README.**
 

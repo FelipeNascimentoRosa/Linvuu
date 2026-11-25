@@ -3,7 +3,7 @@ description: "Instruções de trabalho e coordenação da Linvuu para todas as t
 alwaysApply: true
 ---
 # Linvuu — Cursor
-Primeira leitura antes de qualquer mudança: `docs/linvuu-10-de-10/00-INDICE.md` (entrada única: estado real, trava ativa, roteamento). `docs/CONTINUIDADE-2026-10-27.md` e `PAINEL.md` são histórico datado (falam de Render). Não presumir que Claude, ChatGPT, Gemini e Cursor tenham memória compartilhada; sincronizar via GitHub main/PRs/checks.
+Primeira leitura antes de qualquer mudança: `docs/linvuu-10-de-10/00-INDICE.md` (entrada única: estado real, trava ativa, roteamento). Os docs datados de Render (PAINEL, CONTINUIDADE) foram removidos em 25/11/2026. Não presumir que Claude, ChatGPT, Gemini e Cursor tenham memória compartilhada; sincronizar via GitHub main/PRs/checks.
 O documento normativo compartilhado é `AGENTS.md`. Leia-o por inteiro antes de propor ou alterar arquivos.
 Leia também as regras locais do diretório afetado (`.claude/rules/`).
 
@@ -16,6 +16,6 @@ Leia também as regras locais do diretório afetado (`.claude/rules/`).
 
 Se houver divergência entre este arquivo e `AGENTS.md`, mantenha `AGENTS.md` como fonte comum e proponha correção por PR.
 
-- **Material antigo não é fonte nem métrica (ordem do Felipe, 11/11/2026).** `_para_apagar/`, `docs/historico/` e relatórios datados (auditorias, snapshots, painéis de métricas antigos) são arquivo morto: não leia como estado atual, não cite número deles, não compare métricas com eles. Estado de indexação/SEO só vale se medido **ao vivo** na hora: `curl` no site, sitemap publicado, Search Console. Resultado do Google (`site:`) é cache do Google, não o estado do site — nunca reporte como fato atual sem dizer isso.
+- **Material antigo não é fonte nem métrica (ordem do Felipe, 11/11/2026).** Relatórios datados (auditorias, snapshots, painéis de métricas antigos) são arquivo morto: não leia como estado atual, não cite número deles, não compare métricas com eles. Estado de indexação/SEO só vale se medido **ao vivo** na hora: `curl` no site, sitemap publicado, Search Console. Resultado do Google (`site:`) é cache do Google, não o estado do site — nunca reporte como fato atual sem dizer isso.
 
 - **Mapa de idiomas (Felipe, 11/11/2026):** só linvuu.com.br (pt) e linvuu.com (EN); sem interface em espanhol; `/es/...` e `/en/...` de interface só redirecionam (301). Cobertura e regras: `docs/linvuu-10-de-10/01-seo-tecnico.md` e `02-pedagogia-qa.md`.

@@ -5,7 +5,7 @@ description: Qualidade editorial, idiomas e indexabilidade na Linvuu, com testes
 # Qualidade editorial, idiomas e indexabilidade
 
 ## Contexto obrigatório
-Ler `AGENTS.md`, `PAINEL.md`, `docs/DOMINIOS.md` e `docs/COORDENACAO-IA.md`. Confirmar branch e deploy. Não assumir métricas históricas como atuais.
+Ler `AGENTS.md`, `docs/DOMINIOS.md` e `docs/linvuu-10-de-10/00-INDICE.md`. Confirmar branch e deploy. Não assumir métricas históricas como atuais.
 
 ## Arquivos do projeto
 content/, src/i18n/, src/lib/metaRota.ts

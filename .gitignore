@@ -54,3 +54,6 @@ server/audio-privado-v2/
 
 # mídia gerada (carrosséis): sai de content/ com npm run midia:carrossel; não versionar PNG
 output/
+
+# artefato do tsc incremental
+*.tsbuildinfo

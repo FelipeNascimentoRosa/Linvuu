@@ -2,7 +2,7 @@
 
 ## 1. Fluxo de trabalho (inviolável)
 1. `git fetch origin main`; branch a partir de `origin/main`. **Nunca** trabalhar na `main`. (Cuidado: o clone antigo `C:\Users\felip\Linvuu` está na branch `vercel/migracao-total`, 1207 commits atrás; use worktree novo.)
-2. Fila máxima: 3 PRs abertos + 3 rascunhos. Achado fora do escopo vai para `PENDENCIAS.md`, não vira PR no meio do lote.
+2. Fila máxima: 3 PRs abertos + 3 rascunhos. Achado fora do escopo vai para a tabela §5 deste arquivo, não vira PR no meio do lote.
 3. **Merge só com ordem explícita do Felipe na conversa.** Não pagar plano, não mexer em billing do Stripe, não publicar `firestore.rules`, não apagar branch/arquivo/DNS pré-existente, não reescrever histórico.
 4. Estados distintos: **implementado → testado → mergeado → deploy → produção**. Só afirme o que verificou (CI verde, smoke, leitura ao vivo).
 5. Depois de deploy: skill `verificar-site` (smoke dos dois domínios).
@@ -49,9 +49,9 @@ npm run testar:seguranca
 | 7 | `www` + barra final em 2 saltos | IA (pós-trava) | 1 salto, testado por `testar-http-seo.ts` |
 | 8 | Auditoria pedagógica `dia/2`–`dia/312` | IA + revisor | relatório por curso, 0 alta aberta |
 | 9 | Italiano no .com (IT-EN 8/248) | Felipe + IA | 248/248, `travas-en.json` atualizado |
-| 10 | Excluir todos os mascotes (autorizado pelo Felipe em 25/11/2026), em PR própria | IA (PR separada) | `rg -iw -e vuu -e pelmeni` = 0 fora de histórico |
+| 10 | ~~Excluir todos os mascotes~~ **Concluído em 25/11/2026** (PR `chore/faxina-mascotes-e-legado`; travas negativas de teste preservadas) | IA | feito |
 | 11 | Apagar a branch remota `docs/linvuu-master-handoff` | Felipe | só **depois** do merge desta PR |
-| 12 | Repositório com MP3 pagos público + histórico (PAINEL 11/11) | Felipe | decisão expressa sobre visibilidade/histórico |
+| 12 | Repositório com MP3 pagos público + histórico (registro de 11/11) | Felipe | decisão expressa sobre visibilidade/histórico |
 
 ## 6. Roteiro executável até 10/10
 | Fase | Quando | Entregas | Critério de saída (mensurável) |
@@ -64,4 +64,4 @@ npm run testar:seguranca
 | **5 — Italiano e expansão do .com** | após 1 | IT-EN 248/248 e novos livros em inglês (`docs/LIVROS-EM-INGLES.md`) | `explicacaoCompleta` verdadeiro para `it`; sitemap do .com atualizado com ordem do Felipe |
 
 ## 7. O que NÃO fazer
-Alterar rota, redirect, `robots`, `sitemap`, `vercel.json`, DNS, Cloudflare ou R2 durante a trava; ler `docs/historico/`, `_para_apagar/` ou auditorias datadas como estado atual; reportar `site:` do Google como estado do site; editar só `dia-*.json` derivado; tocar `CLAUDE.md` no meio de sessão produtiva sem ordem; imprimir valor de variável ou segredo.
+Alterar rota, redirect, `robots`, `sitemap`, `vercel.json`, DNS, Cloudflare ou R2 durante a trava; ler auditorias datadas como estado atual; reportar `site:` do Google como estado do site; editar só `dia-*.json` derivado; tocar `CLAUDE.md` no meio de sessão produtiva sem ordem; imprimir valor de variável ou segredo.

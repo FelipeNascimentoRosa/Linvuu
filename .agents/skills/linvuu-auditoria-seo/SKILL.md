@@ -5,7 +5,7 @@ description: Audita os dois domínios da Linvuu, sitemaps, robots.txt, canonical
 # Linvuu · Skill de Auditoria de Código e SEO
 
 ## Escopo e precedência
-Leia `AGENTS.md`, `PAINEL.md`, `docs/DOMINIOS.md`, `docs/DECISAO-SITE-INTERNACIONAL.md` e `docs/COORDENACAO-IA.md`. O estado atual deve ser confirmado em GitHub, deploy e HTTP; relatórios antigos são apenas histórico. Dois domínios: `https://linvuu.com.br` (pt-BR) e `https://linvuu.com` (en). Não recriar `/en` ou `/es` como páginas de idioma.
+Leia `AGENTS.md`, `docs/DOMINIOS.md`, `docs/DECISAO-SITE-INTERNACIONAL.md` e `docs/linvuu-10-de-10/00-INDICE.md`. O estado atual deve ser confirmado em GitHub, deploy e HTTP; relatórios antigos são apenas histórico. Dois domínios: `https://linvuu.com.br` (pt-BR) e `https://linvuu.com` (en). Não recriar `/en` ou `/es` como páginas de idioma.
 
 ## Etapas obrigatórias
 1. Identificar SHA da `main`, PRs abertos e SHA implantado. Não confundir versão local, branch, deploy, Search Console e índice do Google.
@@ -18,7 +18,7 @@ Leia `AGENTS.md`, `PAINEL.md`, `docs/DOMINIOS.md`, `docs/DECISAO-SITE-INTERNACIO
 8. Consultar Search Console para ambas as propriedades se o conector tiver acesso: sitemaps enviados, data da última leitura, amostras de inspeção de URL, `googleCanonical`, exclusões e motivos. **Nunca** interpretar “0 indexadas” no contador de sitemap como prova de nenhuma URL indexada.
 9. Executar as validações já existentes `node scripts/seo.mjs`, `node --import tsx scripts/testar-inventario-seo.ts`, `node --import tsx scripts/testar-titulos.ts`, `npm run lint` e testes pertinentes, em branch isolada. Evitar executar scripts com efeito de escrita em produção.
 10. Segurança/qualidade: ESLint para JS/TS (se configurado), Semgrep e SonarQube onde disponíveis, Bandit apenas se houver Python; testar regras e configurações concretas. Não instalar nem copiar ferramenta de terceiros sem conferir licença. `google/robotstxt` para interpretação compatível com Google; LinkChecker/Scrapy para rastreamento; validador XML/XSD para sitemaps. Cada ferramenta tem uma finalidade distinta, não substituir evidência HTTP.
-11. Entregar tabela **domínio | URL | esperado | observado | prova | gravidade | correção**, separando defeito de código, problema de deploy e atraso do Google. Registrar riscos, testes, SHA, reversão e estado em `docs/COORDENACAO-IA.md` no PR de correção.
+11. Entregar tabela **domínio | URL | esperado | observado | prova | gravidade | correção**, separando defeito de código, problema de deploy e atraso do Google. Registrar riscos, testes, SHA, reversão e estado em `docs/linvuu-10-de-10/00-INDICE.md` no PR de correção.
 
 ## Gates de aprovação
 - Dois `/robots.txt` apontam para o `/sitemap.xml` do próprio host.
