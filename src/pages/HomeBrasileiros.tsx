@@ -10,7 +10,6 @@ import { Link } from 'react-router-dom';
 import { falar } from '../lib/audio';
 import { usePageTitle } from '../lib/usePageTitle';
 import { CURSOS_ATIVOS, cursoComExplicacaoNoSite, coberturaNoSite } from '../lib/content';
-import { CreditoVitrine } from '../components/CreditoVitrine';
 
 // Catálogo da home, na mesma ordem nos dois domínios: no .com o português (br) ocupa o lugar do inglês.
 const CATALOGO = { 'pt-BR': ['en', 'es', 'de', 'fr', 'it', 'ru'], en: ['br', 'es', 'de', 'fr', 'ru'] } as const;
@@ -59,7 +58,6 @@ export default function HomeBrasileiros() {
   };
   // Mesmo esqueleto e desenho nos dois domínios (Felipe, 19/11/2026: o .com espelha o .com.br); muda só a língua.
   return <div className="br-home br-home-leve">
-    <CreditoVitrine />
     <section className="br-hero" aria-labelledby="br-h1">
       <div className="br-hero-in">
         <div className="br-hero-topo br-hero-topo-simples">
