@@ -166,7 +166,9 @@ if (args.includes('--so-projeto')) process.exit(0);
 // ---------- render ----------
 const navegador = process.env.HYPERFRAMES_BROWSER_PATH;
 const saida = join(pasta, 'video.mp4');
-const r = spawnSync(join(RAIZ, 'node_modules', '.bin', 'hyperframes'), ['render', proj, '-o', saida, '--fps', '30', '--quality', 'delivery', '--refuse-outside-files', '--quiet'],
+const bin = join(RAIZ, 'scripts', 'midia', 'node_modules', '.bin', 'hyperframes');
+if (!existsSync(bin)) falhar('HyperFrames não instalado: rode `npm run midia:instalar` (exige Node >=24.12)');
+const r = spawnSync(bin, ['render', proj, '-o', saida, '--fps', '30', '--quality', 'delivery', '--refuse-outside-files', '--quiet'],
   { stdio: 'inherit', env: { ...process.env, HYPERFRAMES_TELEMETRY: '0', ...(navegador ? { PUPPETEER_EXECUTABLE_PATH: navegador } : {}) } });
 if (r.status !== 0 || !existsSync(saida)) falhar(`o render do HyperFrames falhou (código ${r.status})`);
 const sonda = JSON.parse(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'stream=codec_type,width,height:format=duration', '-of', 'json', saida]).toString());

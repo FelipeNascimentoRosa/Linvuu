@@ -7,7 +7,7 @@ import { comPerfil, perfilDoHost, type Perfil } from '../src/i18n/locales.ts';
 const HOST_BR = new URL(SITE_URL).hostname;
 const HOST_GLOBAL = new URL(SITE_GLOBAL_URL).hostname;
 
-/** Perfil de domínio da requisição. Hosts desconhecidos (onrender.com, localhost) seguem o perfil brasileiro, como sempre. */
+/** Perfil de domínio da requisição. Hosts desconhecidos (previews *.vercel.app, localhost) seguem o perfil brasileiro, como sempre. */
 export const perfilDaRequisicao = (req: Request): Perfil => perfilDoHost(req.hostname || '');
 /** Executa fn (síncrona) com o perfil do domínio da requisição. */
 export const noPerfilDe = <T>(req: Request, fn: () => T): T => comPerfil(perfilDaRequisicao(req), fn);

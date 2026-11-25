@@ -13,7 +13,7 @@
 - `.github/workflows/ci.yml`: `npm ci`; `travas-en`; testes unitários de `scripts/auditoria_firebase` (Python); `npm run lint && lint:apk`; dezenas de `testar-*` (cache, domínio, analytics, pixels, prontidão, **títulos**, dúvidas, **áudio privado e autorização**, assetlinks, billing, acesso, conversões, medição, correção, progresso, avaliações, newsletter, revisão, regras do Firestore); `build:website`; **isolamento dos públicos** (`testar-isolamento-dominios.ts`, `testar-isolamento-http.mjs`, `testar-isolamento-navegador.mjs`); **`testar-seo-publico.ts`**; **inventário, robots, `testar-http-seo.ts`, links públicos, `testar-seo-http.mjs`**; `npm run audit:rotas-dominios`; `build:apk`; `testar:plataformas`; **`npm run validar:design`**; `npm audit --omit=dev --audit-level=high`; `npm run testar:seguranca`.
 - `qualidade-seo.yml`: build do site, `testar-paridade-meta.mjs` (perfil brasileiro e `global`), Lighthouse CI (`lighthouserc.cjs`), `testar-robots-google.mjs`.
 - `seguranca.yml`: **gitleaks** (`detect --redact --exit-code 1`).
-- Outros: `analytics.yml`, `app-android.yml`, `audio.yml`, `auditoria-integral.yml`, `manter-acordado.yml`, `posthog-web.yml`, `revisao-apk.yml`, `revisao-publica.yml`, `revisao-web-e2e.yml`.
+- Outros: `analytics.yml`, `app-android.yml`, `audio.yml`, `auditoria-integral.yml`, `monitorar-producao.yml`, `posthog-web.yml`, `revisao-apk.yml`, `revisao-publica.yml`, `revisao-web-e2e.yml`.
 - **Regra:** nunca desligar, pular ou afrouxar teste para passar. Falha de infraestrutura se registra, não se esconde.
 
 ## 3. Comandos de verificação local (use filtros; não despeje saída longa)

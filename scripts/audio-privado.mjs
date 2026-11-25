@@ -1,10 +1,10 @@
-// Baixa o áudio pago (repositório privado Linvuu-Audio) para .audio-privado/ durante o build do Render.
+// Baixa o áudio pago (repositório privado Linvuu-Audio) para .audio-privado/ durante o build da Vercel.
 // Duas formas de autenticar (a chave SSH tem prioridade):
 //   AUDIO_DEPLOY_KEY  chave privada SSH em base64, de uma "deploy key" SOMENTE LEITURA cadastrada no repositório Linvuu-Audio
-//                     (não expira e só enxerga esse repositório). Fica no painel do Render, nunca no Git.
+//                     (não expira e só enxerga esse repositório). Fica no painel da Vercel, nunca no Git.
 //   AUDIO_REPO_TOKEN  token fine-grained só de leitura (Contents: Read) do Linvuu-Audio.
 // AUDIO_REPO (opcional): dono/nome; padrão FelipeNascimentoRosa/Linvuu-Audio.
-// Sem credencial: em desenvolvimento e no CI segue sem baixar; no Render só segue se ainda existir a origem antiga em server/.
+// Sem credencial: em desenvolvimento e no CI segue sem baixar; na Vercel só segue se ainda existir a origem antiga em server/.
 // Falha ao baixar: enquanto a origem antiga existir, só avisa (não trava o deploy); depois dela, interrompe o build.
 import { execFileSync } from 'node:child_process';
 import fs from 'node:fs';
@@ -26,7 +26,7 @@ function falha(msg) {
 
 if (!chave && !token) {
   if (noRender && !origemAntiga) {
-    console.error('audio-privado: AUDIO_DEPLOY_KEY/AUDIO_REPO_TOKEN ausentes e server/audio-privado* não existe mais. O build para aqui para não publicar um site sem o áudio pago (o deploy anterior continua no ar). Defina a variável no Render (docs/AUDIO-PRIVADO.md).');
+    console.error('audio-privado: AUDIO_DEPLOY_KEY/AUDIO_REPO_TOKEN ausentes e server/audio-privado* não existe mais. O build para aqui para não publicar um site sem o áudio pago (o deploy anterior continua no ar). Defina a variável na Vercel (docs/AUDIO-PRIVADO.md).');
     process.exit(1);
   }
   console.log('audio-privado: sem credencial; usando server/audio-privado* quando existir.');

@@ -14,7 +14,7 @@
 //   R2_URL_EXPIRACAO_SEGUNDOS (opcional, omissão 60)
 // O R2 ainda NÃO está activado na conta Cloudflare do Linvuu (docs/infra/PILOTO-R2-20261019.md):
 // sem a activação, este módulo fica desligado (`r2Configurado()` = false) e o áudio
-// continua a sair do disco (Render / desenvolvimento local).
+// continua a sair do disco (desenvolvimento local).
 import crypto from 'node:crypto';
 
 export type ConfigR2 = {

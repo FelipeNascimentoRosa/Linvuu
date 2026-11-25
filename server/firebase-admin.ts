@@ -1,8 +1,8 @@
 // Inicialização única do Firebase Admin (usado por billing.ts e progresso.ts).
 // Ordem da credencial:
 //   1. FIREBASE_SERVICE_ACCOUNT_JSON: o JSON da conta de serviço inteiro, numa variável de ambiente.
-//   2. GOOGLE_APPLICATION_CREDENTIALS: caminho de um arquivo JSON (Secret File no Render: /etc/secrets/...).
-// Sem nenhuma das duas, falha na hora com mensagem clara. Não tenta a credencial padrão do Google (ADC): no Render ela não
+//   2. GOOGLE_APPLICATION_CREDENTIALS: caminho de um arquivo JSON (Secret File na Vercel: /etc/secrets/...).
+// Sem nenhuma das duas, falha na hora com mensagem clara. Não tenta a credencial padrão do Google (ADC): na Vercel ela não
 // existe, a busca demora e o erro dela escapava do try/catch e derrubava o servidor inteiro.
 // A chave nunca é impressa nem enviada ao navegador.
 import fs from 'node:fs';

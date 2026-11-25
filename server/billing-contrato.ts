@@ -13,7 +13,7 @@ export function planoSiteValido(value: unknown): value is PlanoWeb {
 /** Preço mensal em dólares (linvuu.com): também é um ID já criado e revisado no Stripe, nunca criado pela rota. */
 export function precoMensalUsdObrigatorio(id: string | undefined): string {
   if (!id || !/^price_[A-Za-z0-9]+$/.test(id)) {
-    throw new Error('STRIPE_PRICE_ID_USD ausente ou inválido: o preço mensal em dólares precisa estar configurado no Render.');
+    throw new Error('STRIPE_PRICE_ID_USD ausente ou inválido: o preço mensal em dólares precisa estar configurado na Vercel.');
   }
   return id;
 }
@@ -21,7 +21,7 @@ export function precoMensalUsdObrigatorio(id: string | undefined): string {
 /** Em produção, ID criado e revisado no Stripe; a rota não pode criar preço novo silenciosamente. */
 export function precoMensalObrigatorio(id: string | undefined): string {
   if (!id || !/^price_[A-Za-z0-9]+$/.test(id)) {
-    throw new Error('STRIPE_PRICE_ID ausente ou inválido: confira configuração comercial no Render.');
+    throw new Error('STRIPE_PRICE_ID ausente ou inválido: confira configuração comercial na Vercel.');
   }
   return id;
 }

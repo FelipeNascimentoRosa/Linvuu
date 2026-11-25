@@ -7,7 +7,7 @@
 // leituras acontecem primeiro e capturam undefined quando o valor só existe no .env.
 // O sintoma era login funcionando no navegador e rotas do servidor respondendo
 // 401/503 como se não houvesse configuração — apenas em desenvolvimento local.
-// Na Render o defeito não aparecia porque as variáveis já estão no ambiente do
+// Na hospedagem anterior o defeito não aparecia porque as variáveis já estão no ambiente do
 // processo antes de qualquer import.
 //
 // A correção é este arquivo ser o PRIMEIRO import do server.ts. Não acrescente

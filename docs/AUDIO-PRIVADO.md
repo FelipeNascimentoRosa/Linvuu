@@ -2,12 +2,12 @@
 
 **Problema (auditoria de 09/11/2026):** `server/audio-privado/` e `server/audio-privado-v2/` (11.039 MP3, ~232 MB, o produto pago) estavam neste repositório, que é público. Qualquer pessoa podia baixá-los sem assinar.
 
-**Solução:** o áudio vive no repositório **privado** `FelipeNascimentoRosa/Linvuu-Audio`. O build do Render o baixa para `.audio-privado/` (`scripts/audio-privado.mjs`) e a rota `/api/audio` o serve só com assinatura ativa (`server/audio-privado.ts`). O v2 tem prioridade; o antigo é reserva.
+**Solução:** o áudio vive no repositório **privado** `FelipeNascimentoRosa/Linvuu-Audio`. O build da Vercel o baixa para `.audio-privado/` (`scripts/audio-privado.mjs`) e a rota `/api/audio` o serve só com assinatura ativa (`server/audio-privado.ts`). O v2 tem prioridade; o antigo é reserva.
 
 **Na Vercel o áudio não vem do disco:** o pacote da função não comporta os 232 MB. O áudio pago vive num bucket **privado** do Cloudflare R2 e a rota responde 302 para uma URL pré-assinada — ver `docs/infra/R2-AUDIO-PRIVADO.md` (activação, upload e variáveis). Sem as variáveis do R2, a rota cai para o disco, como aqui.
 
 ## Autenticação do build: chave SSH (feito em 09/11/2026) ou token
-O build baixa o repositório privado com uma **deploy key SSH somente leitura** (título "render-linvuu-audio (somente leitura)" em Linvuu-Audio → Settings → Deploy keys). A chave privada (base64) está na variável `AUDIO_DEPLOY_KEY` do Render. Ela não expira e só enxerga o `Linvuu-Audio`. Para trocar: gere outra com `ssh-keygen -t ed25519 -N ""`, cadastre a pública como deploy key somente leitura, ponha a privada em base64 no Render e remova a antiga. O token (`AUDIO_REPO_TOKEN`) continua aceito como alternativa.
+O build baixa o repositório privado com uma **deploy key SSH somente leitura** (título "render-linvuu-audio (somente leitura)" em Linvuu-Audio → Settings → Deploy keys). A chave privada (base64) está na variável `AUDIO_DEPLOY_KEY` da Vercel. Ela não expira e só enxerga o `Linvuu-Audio`. Para trocar: gere outra com `ssh-keygen -t ed25519 -N ""`, cadastre a pública como deploy key somente leitura, ponha a privada em base64 na Vercel e remova a antiga. O token (`AUDIO_REPO_TOKEN`) continua aceito como alternativa.
 
 ## Passo a passo com token (alternativa)
 1. **Token (você):** GitHub → Settings → Developer settings → Fine-grained tokens → só o repositório `Linvuu-Audio`, permissão **Contents: Read-only**, validade de 1 ano. Copie.
