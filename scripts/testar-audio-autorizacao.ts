@@ -41,6 +41,11 @@ try {
   const faixa = await fetch(base + '12345678.mp3', { headers: { ...auth, Range: 'bytes=2-5' } });
   assert.equal(faixa.status, 206); assert.match(faixa.headers.get('content-type') ?? '', /^audio\/mpeg/);
   assert.equal(await faixa.text(), '2345');
-  assert.equal(consultasR2, 3, 'somente assinante consultou armazenamento');
+  const apk = await fetch(base + '12345678.mp3', { headers: { ...auth, Origin: 'https://localhost', Range: 'bytes=2-5' }, redirect: 'manual' });
+  assert.equal(apk.status, 206, 'APK recebe ?udio pela API sem redirect entre origens');
+  assert.equal(apk.headers.get('content-range'), 'bytes 2-5/10');
+  assert.equal(apk.headers.get('cache-control'), 'private, no-store');
+  assert.equal(await apk.text(), '2345');
+  assert.equal(consultasR2, 4, 'somente assinante consultou armazenamento');
   console.log('Áudio: 401/403 antes do R2, 404 autorizado, 302 privado e Range 206 verificados.');
 } finally { servidor.close(); origem.close(); }
