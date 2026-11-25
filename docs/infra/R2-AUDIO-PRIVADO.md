@@ -1,10 +1,8 @@
 # Áudio pago no Cloudflare R2 (migração Vercel)
 
-**Estado: código pronto, R2 por activar.** A rota `/api/audio` já sabe servir o áudio do R2
-(`server/audio-r2.ts`), mas o R2 **não está activado** na conta Cloudflare do Linvuu
-(a API devolveu HTTP 403 / 10042 em 19/10/2026 — ver `docs/infra/PILOTO-R2-20261019.md`).
-Sem a activação, o R2 fica desligado e o áudio continua a sair do disco (Render).
-Nada disto mexe no áudio gratuito de `public/audio/`, que continua estático.
+**Estado em 25/11/2026:** bucket privado `linvuu-audio` ativado, com 11.033 objetos
+conferidos; a Vercel usa credencial de leitura. A reprodução por assinante real nos
+dois domínios e no APK ainda precisa de validação. O áudio gratuito continua em `public/audio/`.
 
 ## Porque o R2
 
@@ -16,10 +14,9 @@ função, num bucket **privado** do R2, e a função só emite URLs pré-assinad
 
 1. O leitor pede `GET /api/audio/:idioma/:hash.mp3` como sempre (o contrato da URL não
    muda — a web e o APK não mudam).
-2. A função verifica a existência do ficheiro no R2 (HEAD assinado; voz nova
-   `audio-privado-v2/` primeiro, antiga `audio-privado/` como reserva) — antes do login,
-   como hoje: ficheiro inexistente dá 404.
-3. Depois verifica o login (Firebase) e a assinatura activa (Stripe / RevenueCat).
+2. A função verifica o login (Firebase) e a assinatura activa (Stripe / RevenueCat).
+3. Só após a autorização verifica a existência no R2 (HEAD assinado; voz nova
+   `audio-privado-v2/` primeiro, antiga `audio-privado/` como reserva).
 4. Responde **302** para uma URL pré-assinada do R2 (expira em ~60 s, `R2_URL_EXPIRACAO_SEGUNDOS`).
    O leitor segue o redirect; os pedidos `Range` continuam a funcionar contra o R2.
 5. A CSP inclui a origem do R2 em `media-src` (`server/seguranca.ts`), senão o navegador
@@ -68,16 +65,20 @@ chaves é o mesmo do disco (`audio-privado-v2/<idioma>/<hash>.mp3`).
 2. Sem login: dá **401**.
 3. Com assinatura activa: dá **302** para `https://<conta>.r2.cloudflarestorage.com/audio-privado-v2/ru/<hash>.mp3?...`
    e o áudio toca. Abrir a URL pré-assinada directamente depois de 60 s dá 403 (expirou).
-4. Um hash que não existe dá **404** (antes do login).
+4. Um hash válido inexistente dá **401** sem login e **404** após autorização.
 
 ## Voltar atrás
 
-Se o R2 falhar, basta remover as variáveis `R2_*` da Vercel (ou apontar o DNS de volta
-para o Render): a rota volta a servir do disco. O bucket pode ficar — nada o lê sem as
-variáveis.
+Remover as variáveis `R2_*` não restaura o áudio na Vercel: a função de produção não
+inclui os arquivos privados no disco. A reversão exige uma origem anterior funcional e
+verificada, além de avaliar a configuração de DNS e dos demais serviços.
 
 ## O que NÃO fazer
 
 - Nunca tornar o bucket público nem ligar um domínio público a ele: o áudio pago só sai
   atrás de login + assinatura, por URL pré-assinada.
 - Nunca pôr as chaves do R2 no Git, em chat ou num ficheiro do repo.
+
+## CORS pendente em produ??o
+
+A consulta ? configura??o CORS do bucket de produ??o retornou 404 (configura??o inexistente). O player usa `fetch` e segue o redirecionamento para a origem do R2; navegadores exigem CORS tamb?m para URLs pr?-assinadas. Preparar uma pol?tica restrita a `https://linvuu.com.br`, `https://linvuu.com` e `https://localhost` (origem configurada no APK), com GET/HEAD e os cabe?alhos necess?rios para Range. Confirmar a origem efetiva do APK e validar a reprodu??o autenticada antes de considerar a migra??o conclu?da. A aplica??o da pol?tica em produ??o depende da etapa de estabiliza??o aprovada. Refer?ncia: https://developers.cloudflare.com/r2/buckets/cors/

@@ -21,6 +21,7 @@ import { caminhoNoPerfil } from '../src/i18n/locales.ts';
 import { perfilDaRequisicao } from './dominio';
 import { arquivoDoAudioPrivado, avisarSeSemAudioPrivado } from './audio-privado';
 import { r2Configurado, urlDoAudioPrivadoR2 } from './audio-r2';
+import { criarRotaAudio } from './audio-rota';
 import { raizDoProjeto } from './caminhos';
 
 const chave = process.env.STRIPE_SECRET_KEY;
@@ -204,33 +205,19 @@ export function registrarCobranca(app: Express, urlBase: (req: Request) => strin
   // Na Vercel o áudio vem do R2 (bucket privado): a função verifica o acesso e responde 302 para uma
   // URL pré-assinada (60 s); o leitor segue o redirect e os Range funcionam contra o R2. O MP3 nunca
   // entra no pacote da função nem é servido estaticamente (server/audio-r2.ts).
-  app.get('/api/audio/:idioma/:arquivo', async (req: Request, res: Response) => {
-    const idioma = String(req.params.idioma), arquivo = String(req.params.arquivo);
-    if (!/^[a-z]{2}$/.test(idioma) || !/^[0-9a-f]{8}\.mp3$/.test(arquivo)) { res.status(404).end(); return; }
-    const livre = process.env.NODE_ENV !== 'production' && !cobrancaConfigurada();
-    // Existência primeiro (antes do login), como antes: um ficheiro que não existe dá 404
-    // quer haja login quer não. No R2, a existência é um HEAD assinado (voz nova, depois antiga).
-    let urlR2: string | null = null;
-    let arqDisco: string | null = null;
-    if (r2Configurado()) {
-      try { urlR2 = await urlDoAudioPrivadoR2(idioma, arquivo); }
-      catch (e) { console.error('audio/r2', e); res.status(500).json({ error: 'Não foi possível abrir o áudio.' }); return; }
-      if (!urlR2) { res.status(404).end(); return; }
-    } else {
-      // Voz nova (ElevenLabs) em audio-privado-v2; o que ainda não foi regravado cai no áudio antigo (Edge).
-      // Os arquivos vêm do repositório privado Linvuu-Audio (server/audio-privado.ts).
-      arqDisco = arquivoDoAudioPrivado(idioma, arquivo);
-      if (!arqDisco) { res.status(404).end(); return; }
-    }
-    if (!livre) {
-      const u = await guarda(req, res); if (!u) return;
+  app.get('/api/audio/:idioma/:arquivo', criarRotaAudio({
+    acessoLivreLocal: () => process.env.NODE_ENV !== 'production' && !cobrancaConfigurada(),
+    autorizar: async (req, res) => {
+      const u = await guarda(req, res); if (!u) return false;
       try {
-        if (!(await acesso(u)).ativa) { res.status(403).json({ error: 'Assinatura necessária.' }); return; }
-      } catch (e) { console.error('audio', e); res.status(500).json({ error: 'Não foi possível verificar a assinatura.' }); return; }
-    }
-    if (urlR2) { res.set('Cache-Control', 'private, no-store').redirect(302, urlR2); return; }
-    res.set('Cache-Control', 'private, no-store').type('audio/mpeg').sendFile(arqDisco!);
-  });
+        if (!(await acesso(u)).ativa) { res.status(403).json({ error: 'Assinatura necessária.' }); return false; }
+      } catch (e) { console.error('audio', e); res.status(500).json({ error: 'Não foi possível verificar a assinatura.' }); return false; }
+      return true;
+    },
+    r2Configurado,
+    buscarR2: urlDoAudioPrivadoR2,
+    buscarDisco: arquivoDoAudioPrivado,
+  }));
 
   app.get('/api/billing/status', async (req: Request, res: Response) => {
     const u = await guarda(req, res); if (!u) return;

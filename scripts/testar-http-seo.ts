@@ -112,7 +112,8 @@ try {
     assert.match(legado.headers.get('content-type') ?? '', /application\/xml/);
     assert.equal(await legado.text(), sm, `${host}: sitemap historico e exclusivo identicos`);
     const rb = await (await get(host, '/robots.txt')).text();
-    assert.ok(rb.includes(`Sitemap: https://${host}/${nome}`), `${host}: robots aponta para o mapa correto`);
+    const mapasDeclarados = [...rb.matchAll(/^Sitemap:\s*(\S+)/gim)].map((m) => m[1]);
+    assert.deepEqual(mapasDeclarados, [`https://${host}/sitemap.xml`], `${host}: robots aponta apenas para o sitemap canônico`);
   }
   // llms.txt: cada domínio entrega o seu e só lista URLs do próprio domínio
   for (const [host, outro] of [['linvuu.com', 'linvuu.com.br'], ['linvuu.com.br', 'linvuu.com']]) {

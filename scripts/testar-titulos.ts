@@ -4,8 +4,8 @@ import { comPerfil } from '../src/i18n/locales.ts';
 import { SESSOES_GRATIS } from '../src/config/planos.ts';
 import { DUVIDAS, caminhoDuvida } from '../src/lib/duvidas.ts';
 
-// Títulos das páginas indexáveis (home, hubs, livros, capítulos e aulas grátis) ficam entre 30 e 60 caracteres,
-// como o Google os mostra, nos dois domínios. O limite de 30 faltava até 11/11/2026: `/livros/de/capitulo/1`
+// Títulos das páginas indexáveis (home, hubs, livros, capítulos e aulas grátis) ficam entre 35 e 60 caracteres,
+// como o Google os mostra, nos dois domínios. O limite de 35 faltava até 11/11/2026: `/livros/de/capitulo/1`
 // saía com 29 e nenhuma régua olhava essa rota (AUDITORIA-SITE-2026-11-11 §5).
 // A sessão paga não entra: desde 11/11/2026 toda sessão de aula é noindex e não vai ao sitemap.
 const d = carregarDadosMeta(process.cwd());
@@ -35,13 +35,13 @@ for (const perfil of ['br', 'global'] as const) {
       const titulo = m.semMarca ? m.titulo : `${m.titulo} · Linvuu`;
       total++;
       assert.ok(
-        titulo.length >= 30 && titulo.length <= 60,
+        titulo.length >= 35 && titulo.length <= 60,
         `${perfil} ${p}: título com ${titulo.length} caracteres (faixa 30–60): ${titulo}`,
       );
     }
   });
 }
-console.log(`OK: ${total} títulos indexáveis entre 30 e 60 caracteres nos dois domínios.`);
+console.log(`OK: ${total} títulos indexáveis entre 35 e 60 caracteres nos dois domínios.`);
 
 // Descrição de toda página indexável — fixas, cursos, gramáticas, livros e capítulos, nos dois domínios: de 120
 // a 160 caracteres, como o Google as exibe. Antes a guarda cobria só onze fixas do .com.br e por isso deixou
