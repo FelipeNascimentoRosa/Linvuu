@@ -113,7 +113,7 @@ fs.writeFileSync(path.join(raiz, 'public', 'sitemap-internacional.xml'), xml(lin
 const robots = (site) => {
   const agents = ['*', 'Googlebot', 'Bingbot', 'OAI-SearchBot', 'ChatGPT-User', 'GPTBot', 'ClaudeBot', 'Google-Extended', 'PerplexityBot'];
   const regras = 'Allow: /\nDisallow: /entrar\nDisallow: /cadastro\nDisallow: /conta$\nDisallow: /conta/\nDisallow: /conta?\nAllow: /api/gramatica/\nDisallow: /api/\nDisallow: /admin/';
-  return agents.map((agent) => `User-agent: ${agent}\n${regras}`).join('\n\n') + `\n\nSitemap: ${site}/sitemap.xml\nSitemap: ${site}/${site === SITE_BR ? 'sitemap-brasil.xml' : 'sitemap-internacional.xml'}\n`;
+  return agents.map((agent) => `User-agent: ${agent}\n${regras}`).join('\n\n') + `\n\nSitemap: ${site}/sitemap.xml\n`;
 };
 fs.writeFileSync(path.join(raiz, 'public', 'robots.txt'), robots(SITE_BR));
 fs.writeFileSync(path.join(raiz, 'public', 'robots-global.txt'), robots(SITE_GLOBAL));
