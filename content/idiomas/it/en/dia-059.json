@@ -1,0 +1,285 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 59,
+  "fase": 6,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Shopping, clothes, colours, questo and quello: Questo and quello",
+  "objetivo": "Lesson 15, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 15,
+    "titulo": "Shopping, clothes, colours, questo and quello",
+    "objetivo": "Name clothes and colours with the right agreement, ask about price and size, ask to try things on, and choose with «questo» and «quello». Avoid the English-speaker traps: putting the colour before the noun, «euros», and false friends such as «camerino» and «cappotto».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Questo and quello",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "dialogo",
+        "min": 5,
+        "titulo": "In negozio / In the shop",
+        "contexto": "A customer tries on a jacket. Listen for «quella giacca» (that jacket) and for the size and the price.",
+        "linhas": [
+          {
+            "personagem": "Commessa",
+            "ru": "— Buongiorno, posso aiutarLa?",
+            "pt": "— Good morning, may I help you?",
+            "audio": "Buongiorno, posso aiutarLa?"
+          },
+          {
+            "personagem": "Cliente",
+            "ru": "— Sì, vorrei provare quella giacca blu in vetrina.",
+            "pt": "— Yes, I'd like to try on that blue jacket in the window.",
+            "audio": "Sì, vorrei provare quella giacca blu in vetrina."
+          },
+          {
+            "personagem": "Commessa",
+            "ru": "— Certo. Che taglia porta?",
+            "pt": "— Of course. What size do you wear?",
+            "audio": "Certo. Che taglia porta?"
+          },
+          {
+            "personagem": "Cliente",
+            "ru": "— La quarantadue. Quanto costa?",
+            "pt": "— A forty-two. How much is it?",
+            "audio": "La quarantadue. Quanto costa?"
+          },
+          {
+            "personagem": "Commessa",
+            "ru": "— Costa centoventi euro. Il camerino è là in fondo.",
+            "pt": "— It's one hundred twenty euros. The fitting room is at the back.",
+            "audio": "Costa centoventi euro. Il camerino è là in fondo."
+          },
+          {
+            "personagem": "Cliente",
+            "ru": "— È un po' stretta. Ha una taglia più grande? Poi la prendo.",
+            "pt": "— It's a bit tight. Do you have a bigger size? Then I'll take it.",
+            "audio": "È un po' stretta. Ha una taglia più grande? Poi la prendo."
+          }
+        ]
+      },
+      {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "questo",
+            "translit": "KWEHS-toh",
+            "pt": "this",
+            "en": "",
+            "audio": "questo"
+          },
+          {
+            "ru": "quello",
+            "translit": "KWEHL-loh",
+            "pt": "that",
+            "en": "",
+            "audio": "quello"
+          },
+          {
+            "ru": "qui",
+            "translit": "kwee",
+            "pt": "here",
+            "en": "",
+            "audio": "qui"
+          },
+          {
+            "ru": "lì",
+            "translit": "lee",
+            "pt": "there",
+            "en": "",
+            "audio": "lì"
+          },
+          {
+            "ru": "più grande",
+            "translit": "pyoo GRAHN-deh",
+            "pt": "bigger",
+            "en": "",
+            "audio": "più grande"
+          },
+          {
+            "ru": "più piccolo",
+            "translit": "pyoo PEEK-koh-loh",
+            "pt": "smaller",
+            "en": "",
+            "audio": "più piccolo"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 11,
+        "titulo": "«Questo» and «quello»: this and that",
+        "explicacao": "STEP 1: English has two demonstratives, «this» (near) and «that» (far), and Italian has the same two: «questo» and «quello». STEP 2: «questo» has four forms like any adjective in «-o»: «questo, questa, questi, queste». STEP 3: «quello» changes like the definite article. Before most consonants: «quel» (masculine singular), «quei» (masculine plural). Before «z», «s» + consonant: «quello», «quegli». Before a vowel: «quell'», «quegli». Feminine: «quella», «quelle», and «quell'» before a vowel. STEP 4: so you can predict the form by thinking of the article: «il vestito» gives «quel vestito», «lo zaino» gives «quello zaino». STEP 5: «qui» and «lì» mean «here» and «there»: «Questa giacca qui, quella giacca lì». STEP 6: used alone, as pronouns, they have no noun: «Vorrei questo, non quello». STEP 7: «più grande» means «bigger» and «più piccolo» means «smaller»: they use «più», not an ending. STEP 8: in the shop dialogue, the customer says «quella giacca blu in vetrina»: «quella» is feminine because «giacca» is feminine.",
+        "comparacao": "English «this» and «that» do not change for gender, but Italian «questo» and «quello» do. The easy way is to link «quello» to the article: whatever form the article takes, «quello» follows. English comparatives use «-er» («bigger») or «more», but Italian uses «più» before the adjective.",
+        "exemplos": [
+          {
+            "ru": "Quel vestito costa cento euro",
+            "pt": "That dress costs a hundred euros"
+          },
+          {
+            "ru": "Posso provare questa giacca",
+            "pt": "May I try on this jacket"
+          },
+          {
+            "ru": "Sì, vorrei provare quella giacca blu in vetrina.",
+            "pt": "Yes, I'd like to try on that blue jacket in the window."
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "questo",
+            "forma": "questo · questa · questi · queste"
+          },
+          {
+            "tipo": "quello",
+            "forma": "quel · quello · quell' · quella · quei · quegli · quelle"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Quello vestito costa cento euro",
+            "certo": "Quel vestito costa cento euro",
+            "motivo": "Before «v», the form is «quel»."
+          },
+          {
+            "errado": "Posso provare questo giacca",
+            "certo": "Posso provare questa giacca",
+            "motivo": "«Giacca» is feminine."
+          },
+          {
+            "errado": "Sì, vorrei provare quel giacca blu in vetrina.",
+            "certo": "Sì, vorrei provare quella giacca blu in vetrina.",
+            "motivo": "«Giacca» is feminine: «quella»."
+          }
+        ],
+        "tag": "Shopping"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Sì, vorrei provare quella giacca blu in vetrina.",
+            "opcoes": [
+              "Sì, vorrei provare quella giacca blu in vetrina.",
+              "Sì, vorrei provare quel giacca blu in vetrina.",
+              "Sì, vorrei provare questa giacca blu in vetrina."
+            ],
+            "gabarito": "Sì, vorrei provare quella giacca blu in vetrina.",
+            "explicacao": "«Quella» agrees with «giacca».",
+            "id": "it-015-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Costa centoventi euro. Il camerino è là in fondo.",
+            "opcoes": [
+              "Costa centoventi euro. Il camerino è là in fondo.",
+              "Costa cento euro. Il camerino è là in fondo.",
+              "Costano centoventi euro. Il camerino è là in fondo."
+            ],
+            "gabarito": "Costa centoventi euro. Il camerino è là in fondo.",
+            "explicacao": "«Centoventi» is 120.",
+            "id": "it-015-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "La quarantadue. Quanto costa?",
+            "opcoes": [
+              "La quarantadue. Quanto costa?",
+              "La quarantatré. Quanto costa?",
+              "La quarantadue. Quanto costano?"
+            ],
+            "gabarito": "La quarantadue. Quanto costa?",
+            "explicacao": "Listen to «quarantadue».",
+            "id": "it-015-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "qui",
+            "opcoes": [
+              "qui",
+              "lì",
+              "quello"
+            ],
+            "gabarito": "qui",
+            "explicacao": "«Qui» is here.",
+            "id": "it-015-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which word for «that dress»?",
+            "opcoes": [
+              "quel vestito",
+              "quello vestito",
+              "questo vestito"
+            ],
+            "gabarito": "quel vestito",
+            "explicacao": "Before a simple consonant: «quel».",
+            "id": "it-015-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is «più grande»?",
+            "opcoes": [
+              "bigger",
+              "big",
+              "biggest"
+            ],
+            "gabarito": "bigger",
+            "explicacao": "«Più» + adjective.",
+            "id": "it-015-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Vorrei ___ giacca. (that)",
+            "opcoes": [
+              "quella",
+              "quel",
+              "quello"
+            ],
+            "gabarito": "quella",
+            "explicacao": "Feminine.",
+            "id": "it-015-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Posso provare questa giacca»",
+            "opcoes": [
+              "Posso",
+              "provare",
+              "questa",
+              "giacca"
+            ],
+            "gabarito": "Posso provare questa giacca",
+            "explicacao": "Modal + infinitive + object.",
+            "id": "it-015-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Describe two people's clothes aloud with colours and agreement, and use «questo» once and «quello» once."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say the forms of «quello» aloud and link each to its article."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-015.json",
+  "responsavel": null
+}

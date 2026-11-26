@@ -1,0 +1,241 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 49,
+  "fase": 5,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Volere, potere, dovere, sapere: Volere and vorrei",
+  "objetivo": "Lesson 13, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 13,
+    "titulo": "Volere, potere, dovere, sapere",
+    "objetivo": "Use the modal verbs «volere», «potere» and «dovere» with the infinitive, ask permission and make polite requests, and tell «sapere» (to know how, to know a fact) from «conoscere» (to be acquainted with). Avoid the English-speaker traps: «to» after a modal, «voglio» as a request, and one verb for «know».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Volere and vorrei",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "volere",
+            "translit": "voh-LEH-reh",
+            "pt": "to want",
+            "en": "",
+            "audio": "volere"
+          },
+          {
+            "ru": "vorrei",
+            "translit": "vohr-RAY",
+            "pt": "I would like",
+            "en": "",
+            "audio": "vorrei"
+          },
+          {
+            "ru": "avere voglia di",
+            "translit": "ah-VEH-reh VOH-lyah dee",
+            "pt": "to feel like (doing something)",
+            "en": "",
+            "audio": "avere voglia di"
+          },
+          {
+            "ru": "volentieri",
+            "translit": "voh-lehn-TYEH-ree",
+            "pt": "gladly, with pleasure",
+            "en": "",
+            "audio": "volentieri"
+          },
+          {
+            "ru": "adesso",
+            "translit": "ah-DEHS-soh",
+            "pt": "now",
+            "en": "",
+            "audio": "adesso"
+          },
+          {
+            "ru": "subito",
+            "translit": "SOO-bee-toh",
+            "pt": "right away",
+            "en": "",
+            "audio": "subito"
+          },
+          {
+            "ru": "insieme",
+            "translit": "een-SYEH-meh",
+            "pt": "together",
+            "en": "",
+            "audio": "insieme"
+          },
+          {
+            "ru": "presto",
+            "translit": "PREHS-toh",
+            "pt": "early, soon",
+            "en": "",
+            "audio": "presto"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 11,
+        "titulo": "«Volere» and the polite «vorrei»",
+        "explicacao": "STEP 1: «volere» means «to want». It is irregular: «voglio, vuoi, vuole, vogliamo, volete, vogliono». STEP 2: the «gli» in «voglio» is one sound, like «lli» in «million»: VOH-lyoh. STEP 3: «volere» is a modal verb, so another verb follows it in the infinitive, with nothing in between: «Voglio mangiare». English says «I want to eat», with «to»; Italian has no word for that «to». STEP 4: «volere» can also take a noun: «Voglio un caffè». STEP 5: «voglio» can sound blunt to a stranger, just as «I want a coffee» does in English. For requests, use «vorrei» (I would like): «Vorrei un caffè, per favore». STEP 6: to offer something to a friend, say «Vuoi…?»; to a stranger, say «Vuole…?». STEP 7: the negation goes before the modal: «Non voglio uscire». STEP 8: «avere voglia di» + infinitive means «to feel like doing something»: «Ho voglia di mangiare una pizza». It uses «avere», as with hunger and age, and it keeps the «di». STEP 9: «volentieri» is the answer when you accept an offer or an invitation: it means «gladly», and it is a good match for English «I'd love to».",
+        "comparacao": "English «I want» is also abrupt in a shop, so you already soften it with «I would like». Italian does the same with «vorrei», so the habit transfers. What does not transfer is the «to»: English needs it («want to go»), while Italian puts the infinitive right after the modal («voglio andare»). The one verb that keeps a preposition is «avere voglia di».",
+        "exemplos": [
+          {
+            "ru": "Vorrei un caffè, per favore",
+            "pt": "I would like a coffee, please"
+          },
+          {
+            "ru": "avere voglia di",
+            "pt": "to feel like"
+          },
+          {
+            "ru": "volentieri",
+            "pt": "gladly"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "volere",
+            "exemplo": "voglio · vuoi · vuole · vogliamo · volete · vogliono"
+          },
+          {
+            "tipo": "polite request",
+            "exemplo": "Vorrei un caffè, per favore"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Voglio un caffè, per favore",
+            "certo": "Vorrei un caffè, per favore",
+            "motivo": "It is understood, but «voglio» sounds blunt in a shop. Use «vorrei»."
+          },
+          {
+            "errado": "avere voglia a",
+            "certo": "avere voglia di",
+            "motivo": "The expression takes «di»."
+          },
+          {
+            "errado": "essere voglia di",
+            "certo": "avere voglia di",
+            "motivo": "This expression uses «avere», not «essere»."
+          }
+        ],
+        "tag": "Modal verbs"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 11,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Vorrei un caffè, per favore",
+            "opcoes": [
+              "Vorrei un caffè, per favore",
+              "Voglio un caffè, per favore",
+              "Vorrei un tè, per favore"
+            ],
+            "gabarito": "Vorrei un caffè, per favore",
+            "explicacao": "«Vorrei» is the polite form.",
+            "id": "it-013-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "volentieri",
+            "opcoes": [
+              "volentieri",
+              "volontario",
+              "volere"
+            ],
+            "gabarito": "volentieri",
+            "explicacao": "«Volentieri» means «gladly».",
+            "id": "it-013-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "avere voglia di",
+            "opcoes": [
+              "avere voglia di",
+              "avere voglio di",
+              "essere voglia di"
+            ],
+            "gabarito": "avere voglia di",
+            "explicacao": "The expression uses «avere».",
+            "id": "it-013-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which is the polite way to order a coffee?",
+            "opcoes": [
+              "Voglio un caffè.",
+              "Vorrei un caffè",
+              "Un caffè io voglio."
+            ],
+            "gabarito": "Vorrei un caffè",
+            "explicacao": "«Vorrei» softens the request.",
+            "id": "it-013-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I want to eat» in Italian?",
+            "opcoes": [
+              "Voglio mangiare",
+              "Voglio di mangiare",
+              "Voglio a mangiare"
+            ],
+            "gabarito": "Voglio mangiare",
+            "explicacao": "The infinitive follows the modal with no preposition.",
+            "id": "it-013-e05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tu ___ un caffè? (want)",
+            "opcoes": [
+              "vuoi",
+              "voglio",
+              "vuole"
+            ],
+            "gabarito": "vuoi",
+            "explicacao": "«Tu vuoi».",
+            "id": "it-013-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How does «gli» sound in «voglio»?",
+            "opcoes": [
+              "like «lli» in million",
+              "like «gl» in glad",
+              "like «g» + «i»"
+            ],
+            "gabarito": "like «lli» in million",
+            "explicacao": "One sound: VOH-lyoh.",
+            "id": "it-013-e07"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 1,
+        "enunciado": "Say aloud three things you want to do today with «voglio» and three polite requests with «vorrei»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say the six forms of «volere» aloud, then one sentence with «vorrei»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-013.json",
+  "responsavel": null
+}

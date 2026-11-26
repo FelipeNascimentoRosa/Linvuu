@@ -1,0 +1,255 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 65,
+  "fase": 7,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Passato prossimo with avere: Forming the passato prossimo",
+  "objetivo": "Lesson 17, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 17,
+    "titulo": "Passato prossimo with avere",
+    "objetivo": "Tell what happened in the recent past with the passato prossimo of verbs that use «avere», form the regular participles and the most common irregular ones, and use time markers and the adverbs «già», «ancora» and «mai». Avoid the English-speaker traps: choosing between simple past and present perfect, a helper in questions and negation, and the single negative.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Forming the passato prossimo",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "ieri",
+            "translit": "YEH-ree",
+            "pt": "yesterday",
+            "en": "",
+            "audio": "ieri"
+          },
+          {
+            "ru": "ieri sera",
+            "translit": "YEH-ree SEH-rah",
+            "pt": "last night",
+            "en": "",
+            "audio": "ieri sera"
+          },
+          {
+            "ru": "stamattina",
+            "translit": "stah-maht-TEE-nah",
+            "pt": "this morning",
+            "en": "",
+            "audio": "stamattina"
+          },
+          {
+            "ru": "la settimana scorsa",
+            "translit": "lah seht-tee-MAH-nah SKOR-sah",
+            "pt": "last week",
+            "en": "",
+            "audio": "la settimana scorsa"
+          },
+          {
+            "ru": "due giorni fa",
+            "translit": "DOO-eh JOR-nee fah",
+            "pt": "two days ago",
+            "en": "",
+            "audio": "due giorni fa"
+          },
+          {
+            "ru": "l'anno scorso",
+            "translit": "LAHN-noh SKOR-soh",
+            "pt": "last year",
+            "en": "",
+            "audio": "l'anno scorso"
+          },
+          {
+            "ru": "il fine settimana",
+            "translit": "eel FEE-neh seht-tee-MAH-nah",
+            "pt": "the weekend",
+            "en": "",
+            "audio": "il fine settimana"
+          },
+          {
+            "ru": "già",
+            "translit": "jah",
+            "pt": "already",
+            "en": "",
+            "audio": "già"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "The passato prossimo: «ho» + participle",
+        "explicacao": "STEP 1: the passato prossimo is the usual past tense in conversation. It has two parts: the present of an auxiliary verb («avere» here) and a past participle. STEP 2: English also has a two-part past, the present perfect: «I have eaten». The Italian one looks the same: «ho mangiato». STEP 3: the difference is how much ground it covers. In conversation, Italian uses the passato prossimo for both «I have eaten» and «I ate»: «Ieri ho mangiato la pizza» is «I ate pizza yesterday», where English uses the simple past. STEP 4: the auxiliary «avere» is «ho, hai, ha, abbiamo, avete, hanno». STEP 5: the regular participle replaces the ending of the infinitive: «-are» → «-ato» («parlare» → «parlato»), «-ere» → «-uto» («vendere» → «venduto»), «-ire» → «-ito» («finire» → «finito»). STEP 6: with «avere», the participle does not change with the subject: «Giulia ha mangiato», «Marco e Luca hanno mangiato». STEP 7: the time words are «ieri», «ieri sera», «stamattina», «la settimana scorsa», «due giorni fa», «l'anno scorso». «Fa» goes after the amount, as «ago» does in English. STEP 8: «già» (already) goes between the auxiliary and the participle: «Hai già mangiato». STEP 9: the usual order is subject, auxiliary, participle: «Ieri ho mangiato la pizza» or «Ho mangiato la pizza ieri». STEP 10: verbs of motion and some others use «essere» instead; that comes later in the course.",
+        "comparacao": "English tells finished past events with the simple past («I ate yesterday») and uses the present perfect («I have eaten») mainly when the time is not stated. Italian uses «ho mangiato» for both, so you cannot decide by looking for a simple past. If the event is finished and you are speaking, use the passato prossimo. The auxiliary is the same idea as English «have», but Italian has a second auxiliary, «essere», that English lacks.",
+        "exemplos": [
+          {
+            "ru": "Ieri ho mangiato la pizza",
+            "pt": "I ate pizza yesterday"
+          },
+          {
+            "ru": "Ho letto un libro",
+            "pt": "I read a book"
+          },
+          {
+            "ru": "Hai già mangiato",
+            "pt": "Have you already eaten"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "avere",
+            "forma": "ho · hai · ha · abbiamo · avete · hanno"
+          },
+          {
+            "tipo": "participles",
+            "forma": "-are → -ato · -ere → -uto · -ire → -ito"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ieri mangiato la pizza",
+            "certo": "Ieri ho mangiato la pizza",
+            "motivo": "The auxiliary is required."
+          },
+          {
+            "errado": "Ieri ho mangiare la pizza",
+            "certo": "Ieri ho mangiato la pizza",
+            "motivo": "After the auxiliary, use the participle, not the infinitive."
+          },
+          {
+            "errado": "Hai mangiato già",
+            "certo": "Hai già mangiato",
+            "motivo": "«Già» goes between the auxiliary and the participle."
+          }
+        ],
+        "tag": "Past tense"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 9,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ieri ho mangiato la pizza",
+            "opcoes": [
+              "Ieri ho mangiato la pizza",
+              "Ieri mangio la pizza",
+              "Ieri ho mangiare la pizza"
+            ],
+            "gabarito": "Ieri ho mangiato la pizza",
+            "explicacao": "Auxiliary and participle.",
+            "id": "it-017-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Hai già mangiato",
+            "opcoes": [
+              "Hai già mangiato",
+              "Hai mangiato già",
+              "Ha già mangiato"
+            ],
+            "gabarito": "Hai già mangiato",
+            "explicacao": "«Già» in the middle.",
+            "id": "it-017-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "due giorni fa",
+            "opcoes": [
+              "due giorni fa",
+              "fa due giorni",
+              "due giorni dopo"
+            ],
+            "gabarito": "due giorni fa",
+            "explicacao": "«Fa» after the amount.",
+            "id": "it-017-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "stamattina",
+            "opcoes": [
+              "stamattina",
+              "stasera",
+              "domattina"
+            ],
+            "gabarito": "stamattina",
+            "explicacao": "This morning.",
+            "id": "it-017-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I ate pizza yesterday»?",
+            "opcoes": [
+              "Ieri ho mangiato la pizza",
+              "Ieri mangiai la pizza",
+              "Ieri sono mangiato la pizza"
+            ],
+            "gabarito": "Ieri ho mangiato la pizza",
+            "explicacao": "Italian conversation uses the passato prossimo.",
+            "id": "it-017-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the participle of «finire»?",
+            "opcoes": [
+              "finito",
+              "finuto",
+              "finato"
+            ],
+            "gabarito": "finito",
+            "explicacao": "«-ire» → «-ito».",
+            "id": "it-017-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ieri io ___ molto. (studied)",
+            "opcoes": [
+              "ho studiato",
+              "studio",
+              "ho studiare"
+            ],
+            "gabarito": "ho studiato",
+            "explicacao": "Auxiliary + participle.",
+            "id": "it-017-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Ho letto un libro»",
+            "opcoes": [
+              "Ho",
+              "letto",
+              "un",
+              "libro"
+            ],
+            "gabarito": "Ho letto un libro",
+            "explicacao": "Auxiliary, participle, object.",
+            "id": "it-017-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 1,
+        "enunciado": "Say six sentences aloud about yesterday with the verbs parlare, mangiare, finire, dormire, ricevere and vendere."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say the participle of «parlare», «vendere» and «finire» aloud."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-017.json",
+  "responsavel": null
+}

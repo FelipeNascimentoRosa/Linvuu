@@ -1,0 +1,237 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 58,
+  "fase": 6,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Shopping, clothes, colours, questo and quello: Asking the price and size, and paying",
+  "objetivo": "Lesson 15, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 15,
+    "titulo": "Shopping, clothes, colours, questo and quello",
+    "objetivo": "Name clothes and colours with the right agreement, ask about price and size, ask to try things on, and choose with «questo» and «quello». Avoid the English-speaker traps: putting the colour before the noun, «euros», and false friends such as «camerino» and «cappotto».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Asking the price and size, and paying",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "il prezzo",
+            "translit": "eel PREHT-tsoh",
+            "pt": "the price",
+            "en": "",
+            "audio": "il prezzo"
+          },
+          {
+            "ru": "costare",
+            "translit": "kohs-TAH-reh",
+            "pt": "to cost",
+            "en": "",
+            "audio": "costare"
+          },
+          {
+            "ru": "la taglia",
+            "translit": "lah TAH-lyah",
+            "pt": "the size (clothes)",
+            "en": "",
+            "audio": "la taglia"
+          },
+          {
+            "ru": "il numero",
+            "translit": "eel NOO-meh-roh",
+            "pt": "the size (shoes)",
+            "en": "",
+            "audio": "il numero"
+          },
+          {
+            "ru": "provare",
+            "translit": "proh-VAH-reh",
+            "pt": "to try (on)",
+            "en": "",
+            "audio": "provare"
+          },
+          {
+            "ru": "il camerino",
+            "translit": "eel kah-meh-REE-noh",
+            "pt": "the fitting room (not a camera!)",
+            "en": "",
+            "audio": "il camerino"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "Price, size and paying",
+        "explicacao": "STEP 1: to ask the price of one item, say «Quanto costa?». For several items, say «Quanto costano?»: «Quanto costano queste scarpe». The verb agrees with the thing you buy, as «is» and «are» do in English. STEP 2: the answer repeats the verb: «Costa quaranta euro», «Costano settanta euro». The word «euro» does not take an «s» in Italian. STEP 3: numbers above 100: «cento», «duecento», «mille». STEP 4: for clothes, ask «Che taglia porta?» and answer «Porto la quarantadue». For shoes, use «numero»: «Che numero porta?». Italian sizes differ from US sizes, so check a size chart. STEP 5: to ask to try something on, say «Posso provare questa giacca?». The verb «provare» is «to try», and in a shop it also means «to try on». STEP 6: to say a garment is too big or too small: «È troppo grande», «È troppo piccola». «Troppo» goes before the adjective, as «too» does in English. STEP 7: for a different size, say «Vorrei una taglia più grande» (a bigger size) or «più piccola». The adjective comes after «taglia», and «più» goes before it. STEP 8: to pay, say «Pago con la carta» (by card) or «Pago in contanti» (in cash). STEP 9: «il camerino» is the fitting room. It looks like «camera», but it has nothing to do with a camera or a bedroom.",
+        "comparacao": "English asks «How much is it?» and «How much are they?», changing «is» to «are». Italian does the same with «costa» and «costano». The big differences are «euro» without «s», the size words («taglia» for clothes and «numero» for shoes) and the false friend «camerino».",
+        "exemplos": [
+          {
+            "ru": "Quanto costano queste scarpe",
+            "pt": "How much are these shoes"
+          },
+          {
+            "ru": "Posso provare questa giacca",
+            "pt": "May I try on this jacket"
+          },
+          {
+            "ru": "Vorrei una taglia più grande",
+            "pt": "I would like a bigger size"
+          },
+          {
+            "ru": "Pago con la carta",
+            "pt": "I pay by card"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "one item",
+            "forma": "Quanto costa?  Costa quaranta euro."
+          },
+          {
+            "tipo": "several items",
+            "forma": "Quanto costano?  Costano settanta euro."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Quanto costa queste scarpe",
+            "certo": "Quanto costano queste scarpe",
+            "motivo": "The plural «scarpe» needs the plural «costano»."
+          },
+          {
+            "errado": "Posso provare questo giacca",
+            "certo": "Posso provare questa giacca",
+            "motivo": "«Giacca» is feminine: «questa»."
+          },
+          {
+            "errado": "Pago per carta",
+            "certo": "Pago con la carta",
+            "motivo": "Use «con» and the article for the means of payment."
+          },
+          {
+            "errado": "Vorrei una grande taglia",
+            "certo": "Vorrei una taglia più grande",
+            "motivo": "The adjective follows the noun, with «più»."
+          }
+        ],
+        "tag": "Shopping"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 9,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Quanto costano queste scarpe",
+            "opcoes": [
+              "Quanto costano queste scarpe",
+              "Quanto costa queste scarpe",
+              "Quanto costano questa scarpa"
+            ],
+            "gabarito": "Quanto costano queste scarpe",
+            "explicacao": "Plural: «costano».",
+            "id": "it-015-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Posso provare questa giacca",
+            "opcoes": [
+              "Posso provare questa giacca",
+              "Posso provare questo giacca",
+              "Posso comprare questa giacca"
+            ],
+            "gabarito": "Posso provare questa giacca",
+            "explicacao": "Try on.",
+            "id": "it-015-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Vorrei una taglia più grande",
+            "opcoes": [
+              "Vorrei una taglia più grande",
+              "Vorrei una taglia più piccola",
+              "Vorrei un numero più grande"
+            ],
+            "gabarito": "Vorrei una taglia più grande",
+            "explicacao": "Listen to «grande».",
+            "id": "it-015-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Pago con la carta",
+            "opcoes": [
+              "Pago con la carta",
+              "Pago in contanti",
+              "Pago per carta"
+            ],
+            "gabarito": "Pago con la carta",
+            "explicacao": "«Con la carta».",
+            "id": "it-015-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which word is for shoe size?",
+            "opcoes": [
+              "numero",
+              "taglia",
+              "prezzo"
+            ],
+            "gabarito": "numero",
+            "explicacao": "Clothes use «taglia».",
+            "id": "it-015-e05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Sono tre ___ e cinquanta. (euros)",
+            "opcoes": [
+              "euro",
+              "euros",
+              "euri"
+            ],
+            "gabarito": "euro",
+            "explicacao": "«Euro» is invariable.",
+            "id": "it-015-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is «il camerino»?",
+            "opcoes": [
+              "the fitting room",
+              "the camera",
+              "the bedroom"
+            ],
+            "gabarito": "the fitting room",
+            "explicacao": "A false friend.",
+            "id": "it-015-e07"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Role-play a purchase aloud: ask a price, ask to try something on, ask for another size and say how you pay."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Explain aloud why «Quanto costa?» changes to «Quanto costano?»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-015.json",
+  "responsavel": null
+}

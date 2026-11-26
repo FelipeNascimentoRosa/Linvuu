@@ -1,0 +1,241 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 66,
+  "fase": 7,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Passato prossimo with avere: Irregular participles",
+  "objetivo": "Lesson 17, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 17,
+    "titulo": "Passato prossimo with avere",
+    "objetivo": "Tell what happened in the recent past with the passato prossimo of verbs that use «avere», form the regular participles and the most common irregular ones, and use time markers and the adverbs «già», «ancora» and «mai». Avoid the English-speaker traps: choosing between simple past and present perfect, a helper in questions and negation, and the single negative.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Irregular participles",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "fare, fatto",
+            "translit": "FAH-reh, FAHT-toh",
+            "pt": "to do, make; done, made",
+            "en": "",
+            "audio": "fare, fatto"
+          },
+          {
+            "ru": "dire, detto",
+            "translit": "DEE-reh, DEHT-toh",
+            "pt": "to say; said",
+            "en": "",
+            "audio": "dire, detto"
+          },
+          {
+            "ru": "leggere, letto",
+            "translit": "LEHD-jeh-reh, LEHT-toh",
+            "pt": "to read; read",
+            "en": "",
+            "audio": "leggere, letto"
+          },
+          {
+            "ru": "scrivere, scritto",
+            "translit": "SKREE-veh-reh, SKREET-toh",
+            "pt": "to write; written",
+            "en": "",
+            "audio": "scrivere, scritto"
+          },
+          {
+            "ru": "vedere, visto",
+            "translit": "veh-DEH-reh, VEES-toh",
+            "pt": "to see; seen",
+            "en": "",
+            "audio": "vedere, visto"
+          },
+          {
+            "ru": "prendere, preso",
+            "translit": "PREHN-deh-reh, PREH-zoh",
+            "pt": "to take; taken",
+            "en": "",
+            "audio": "prendere, preso"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "The most common irregular participles",
+        "explicacao": "STEP 1: English has irregular participles too: «done», «said», «written», «seen», «taken». Italian has similar groups. STEP 2: the «-tto» group: «fare → fatto», «dire → detto», «scrivere → scritto», «leggere → letto». STEP 3: the «-so» group: «prendere → preso», «mettere → messo», «chiudere → chiuso». STEP 4: the «-to» group: «vedere → visto», «aprire → aperto». STEP 5: several of these look like English participles, which helps: «written / scritto», «seen / visto». STEP 6: learn each one with the infinitive and, ideally, with a short sentence: «Ho letto un libro», «Abbiamo visto un film», «Ha preso il treno stamattina». STEP 7: «prendere» covers many English verbs: take, have (a coffee), catch. The participle «preso» does too: «Ho preso un caffè», «Ho preso il treno». STEP 8: the double consonant in «letto», «detto», «fatto» is long, as in «palla». STEP 9: with «avere», the participle does not agree with the subject: «Giulia ha fatto», «Marco e Luca hanno fatto». STEP 10: verbs made from the same root follow the base: «rifare → rifatto», «riscrivere → riscritto».",
+        "comparacao": "English has irregular participles, and so does Italian, but they are not the same words. They are close enough for «fatto» (made), «detto» (said), «scritto» (written), «visto» (seen), and these help you memorize. The risk is the English habit of using a different form for the simple past («saw») and for the participle («seen»): Italian uses the participle for both.",
+        "exemplos": [
+          {
+            "ru": "Ho letto un libro",
+            "pt": "I read a book"
+          },
+          {
+            "ru": "Abbiamo visto un film",
+            "pt": "We saw a movie"
+          },
+          {
+            "ru": "Ha preso il treno stamattina",
+            "pt": "He took the train this morning"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "-tto",
+            "forma": "fare → fatto · dire → detto · leggere → letto · scrivere → scritto"
+          },
+          {
+            "tipo": "-so / -to",
+            "forma": "prendere → preso · vedere → visto"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ho leggiuto un libro",
+            "certo": "Ho letto un libro",
+            "motivo": "«Leggere» has an irregular participle: «letto»."
+          },
+          {
+            "errado": "Abbiamo vedeto un film",
+            "certo": "Abbiamo visto un film",
+            "motivo": "«Vedere» → «visto»."
+          },
+          {
+            "errado": "Ha prendato il treno stamattina",
+            "certo": "Ha preso il treno stamattina",
+            "motivo": "«Prendere» → «preso»."
+          }
+        ],
+        "tag": "Past tense"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 9,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ho letto un libro",
+            "opcoes": [
+              "Ho letto un libro",
+              "Ho leggiuto un libro",
+              "Ho leggere un libro"
+            ],
+            "gabarito": "Ho letto un libro",
+            "explicacao": "Irregular participle.",
+            "id": "it-017-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Abbiamo visto un film",
+            "opcoes": [
+              "Abbiamo visto un film",
+              "Abbiamo vedeto un film",
+              "Abbiamo veduto un film"
+            ],
+            "gabarito": "Abbiamo visto un film",
+            "explicacao": "«Visto».",
+            "id": "it-017-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ha preso il treno stamattina",
+            "opcoes": [
+              "Ha preso il treno stamattina",
+              "Ha prendato il treno stamattina",
+              "Ha preso il treno stasera"
+            ],
+            "gabarito": "Ha preso il treno stamattina",
+            "explicacao": "«Preso».",
+            "id": "it-017-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "fare, fatto",
+            "opcoes": [
+              "fare, fatto",
+              "fare, fato",
+              "fare, fatuto"
+            ],
+            "gabarito": "fare, fatto",
+            "explicacao": "Double «t».",
+            "id": "it-017-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the participle of «scrivere»?",
+            "opcoes": [
+              "scritto",
+              "scrivuto",
+              "scrivato"
+            ],
+            "gabarito": "scritto",
+            "explicacao": "Irregular.",
+            "id": "it-017-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the participle of «dire»?",
+            "opcoes": [
+              "detto",
+              "dito",
+              "diciuto"
+            ],
+            "gabarito": "detto",
+            "explicacao": "Irregular.",
+            "id": "it-017-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Noi abbiamo ___ un film. (seen)",
+            "opcoes": [
+              "visto",
+              "vedeto",
+              "vedere"
+            ],
+            "gabarito": "visto",
+            "explicacao": "«Vedere» → «visto».",
+            "id": "it-017-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Abbiamo visto un film»",
+            "opcoes": [
+              "Abbiamo",
+              "visto",
+              "un",
+              "film"
+            ],
+            "gabarito": "Abbiamo visto un film",
+            "explicacao": "Auxiliary, participle, object.",
+            "id": "it-017-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Tell aloud what you did yesterday using at least five irregular participles: fatto, letto, visto, preso, scritto, detto."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud the participle of ten verbs: fare, dire, leggere, scrivere, vedere, prendere, aprire, chiudere, mettere, bere."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-017.json",
+  "responsavel": null
+}

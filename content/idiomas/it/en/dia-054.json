@@ -1,0 +1,236 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 54,
+  "fase": 6,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Daily routine and reflexive verbs: Your daily routine",
+  "objetivo": "Lesson 14, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 14,
+    "titulo": "Daily routine and reflexive verbs",
+    "objetivo": "Talk about your daily routine with reflexive verbs (mi alzo, mi lavo, mi vesto), adverbs of frequency and sequence words, and use «ci vediamo» and other reciprocal verbs. Avoid the English-speaker traps: dropping the reflexive pronoun, writing «my» before body parts, and avoiding the double negative.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Your daily routine",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "la mattina",
+            "translit": "lah maht-TEE-nah",
+            "pt": "the morning (in the morning)",
+            "en": "",
+            "audio": "la mattina"
+          },
+          {
+            "ru": "il pomeriggio",
+            "translit": "eel poh-meh-REED-joh",
+            "pt": "the afternoon",
+            "en": "",
+            "audio": "il pomeriggio"
+          },
+          {
+            "ru": "la sera",
+            "translit": "lah SEH-rah",
+            "pt": "the evening",
+            "en": "",
+            "audio": "la sera"
+          },
+          {
+            "ru": "la notte",
+            "translit": "lah NOHT-teh",
+            "pt": "the night",
+            "en": "",
+            "audio": "la notte"
+          },
+          {
+            "ru": "prima, poi, dopo",
+            "translit": "PREE-mah, poy, DOH-poh",
+            "pt": "first, then, after",
+            "en": "",
+            "audio": "prima, poi, dopo"
+          },
+          {
+            "ru": "andare a letto",
+            "translit": "ahn-DAH-reh ah LEHT-toh",
+            "pt": "to go to bed",
+            "en": "",
+            "audio": "andare a letto"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Order and frequency: «prima, poi, dopo», «mai», «di solito»",
+        "explicacao": "STEP 1: to put actions in order, use «prima» (first), «poi» (then), «dopo» (after, later) and «infine» (finally): «Prima mi lavo, poi mi vesto». STEP 2: English puts adverbs of frequency before the verb («I always get up», «I never get up early»). Italian usually puts them after it: «Mi alzo sempre alle sette». At the start of the sentence, «di solito» (usually) works well: «Di solito faccio colazione al bar». STEP 3: with «mai» (never), the negation has two parts. After the verb, «mai» needs «non» before the verb: «Non mi sveglio mai presto». English does not allow the double negative, but Italian requires it. STEP 4: to give the frequency per period, use «tutti i giorni», «ogni mattina», «due volte alla settimana». STEP 5: for parts of the day, Italian uses an article: «la mattina», «il pomeriggio», «la sera», «la notte»: «La mattina bevo un caffè». «La sera» can start at about sunset and goes on until bedtime, while «la notte» is the late night. STEP 6: «andare a letto» is «to go to bed», and it uses «a» (not «in»). STEP 7: use «prima di» + infinitive for «before doing»: «Prima di uscire mi lavo i denti» (Before going out I brush my teeth). English uses the «-ing» form there; Italian uses the infinitive.",
+        "comparacao": "English adverb order is strict (before the verb), Italian is more flexible, with the adverb usually after the verb. The double negative is the big new idea: «non… mai» is not an error, it is the standard way to say «never». And English «before going» is a gerund, while Italian says «prima di uscire», with the infinitive.",
+        "exemplos": [
+          {
+            "ru": "Di solito faccio colazione al bar",
+            "pt": "I usually have breakfast at the café"
+          },
+          {
+            "ru": "Non mi sveglio mai presto",
+            "pt": "I never wake up early"
+          },
+          {
+            "ru": "prima, poi, dopo",
+            "pt": "first, then, after"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "English order",
+            "forma": "I never wake up early."
+          },
+          {
+            "tipo": "Italian order",
+            "forma": "Non mi sveglio mai presto."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Mi sveglio mai presto",
+            "certo": "Non mi sveglio mai presto",
+            "motivo": "After the verb, «mai» needs «non» before the verb."
+          },
+          {
+            "errado": "prima, dopo, poi",
+            "certo": "prima, poi, dopo",
+            "motivo": "The usual order is «prima», «poi», «dopo»."
+          }
+        ],
+        "tag": "Daily routine"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 11,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Di solito faccio colazione al bar",
+            "opcoes": [
+              "Di solito faccio colazione al bar",
+              "Di solito faccio colazione a casa",
+              "Faccio colazione al bar"
+            ],
+            "gabarito": "Di solito faccio colazione al bar",
+            "explicacao": "«Di solito» is usually.",
+            "id": "it-014-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Non mi sveglio mai presto",
+            "opcoes": [
+              "Non mi sveglio mai presto",
+              "Mi sveglio sempre presto",
+              "Non mi sveglio presto"
+            ],
+            "gabarito": "Non mi sveglio mai presto",
+            "explicacao": "Double negative.",
+            "id": "it-014-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "prima, poi, dopo",
+            "opcoes": [
+              "prima, poi, dopo",
+              "prima, dopo, poi",
+              "poi, prima, dopo"
+            ],
+            "gabarito": "prima, poi, dopo",
+            "explicacao": "The order of events.",
+            "id": "it-014-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "andare a letto",
+            "opcoes": [
+              "andare a letto",
+              "andare in letto",
+              "andare al letto"
+            ],
+            "gabarito": "andare a letto",
+            "explicacao": "With «a».",
+            "id": "it-014-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Where does «mai» normally go?",
+            "opcoes": [
+              "after the verb, with «non» before it",
+              "before the verb, without «non»",
+              "at the end only"
+            ],
+            "gabarito": "after the verb, with «non» before it",
+            "explicacao": "«Non mi sveglio mai».",
+            "id": "it-014-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «prima di uscire» mean?",
+            "opcoes": [
+              "before going out",
+              "after going out",
+              "while going out"
+            ],
+            "gabarito": "before going out",
+            "explicacao": "The infinitive follows «prima di».",
+            "id": "it-014-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ mi lavo, poi mi vesto. (First)",
+            "opcoes": [
+              "Prima",
+              "Dopo",
+              "Infine"
+            ],
+            "gabarito": "Prima",
+            "explicacao": "First.",
+            "id": "it-014-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Mi alzo alle sette»",
+            "opcoes": [
+              "Mi",
+              "alzo",
+              "alle",
+              "sette"
+            ],
+            "gabarito": "Mi alzo alle sette",
+            "explicacao": "Reflexive pronoun, verb, time.",
+            "id": "it-014-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Tell aloud your morning with «prima, poi, dopo, infine» and at least three adverbs of frequency."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Explain aloud why the double negative «non… mai» is correct in Italian."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-014.json",
+  "responsavel": null
+}
