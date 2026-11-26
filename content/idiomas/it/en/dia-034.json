@@ -1,0 +1,290 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 34,
+  "fase": 4,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Time, days and months: The days of the week",
+  "objetivo": "Lesson 9, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 9,
+    "titulo": "Time, days and months",
+    "objetivo": "Tell the time with «è l'una» and «sono le…», say when with «alle», name the days and months in lowercase, and give the date with «il» and a normal number. Avoid the English-speaker traps: «o'clock», capitals and ordinals.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "The days of the week",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "dialogo",
+        "min": 6,
+        "titulo": "Quando studiamo? / When do we study?",
+        "contexto": "Two friends try to find a time to study Italian together. Listen for «il lunedì» (every Monday) and «giovedì» (this coming Thursday).",
+        "linhas": [
+          {
+            "personagem": "Marco",
+            "ru": "— Giulia, quando studiamo italiano insieme?",
+            "pt": "— Giulia, when do we study Italian together?",
+            "audio": "Giulia, quando studiamo italiano insieme?"
+          },
+          {
+            "personagem": "Giulia",
+            "ru": "— Il lunedì lavoro, e il martedì ho lezione.",
+            "pt": "— On Mondays I work, and on Tuesdays I have class.",
+            "audio": "Il lunedì lavoro, e il martedì ho lezione."
+          },
+          {
+            "personagem": "Marco",
+            "ru": "— E giovedì?",
+            "pt": "— And Thursday?",
+            "audio": "E giovedì?"
+          },
+          {
+            "personagem": "Giulia",
+            "ru": "— Giovedì va bene. A che ora?",
+            "pt": "— Thursday is fine. At what time?",
+            "audio": "Giovedì va bene. A che ora?"
+          },
+          {
+            "personagem": "Marco",
+            "ru": "— Alle sei e mezza di sera, al bar?",
+            "pt": "— At half past six in the evening, at the café?",
+            "audio": "Alle sei e mezza di sera, al bar?"
+          },
+          {
+            "personagem": "Giulia",
+            "ru": "— Perfetto! A giovedì!",
+            "pt": "— Perfect! See you Thursday!",
+            "audio": "Perfetto! A giovedì!"
+          }
+        ]
+      },
+      {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "lunedì",
+            "translit": "loo-neh-DEE",
+            "pt": "Monday",
+            "en": "",
+            "audio": "lunedì"
+          },
+          {
+            "ru": "martedì",
+            "translit": "mahr-teh-DEE",
+            "pt": "Tuesday",
+            "en": "",
+            "audio": "martedì"
+          },
+          {
+            "ru": "mercoledì",
+            "translit": "mehr-koh-leh-DEE",
+            "pt": "Wednesday",
+            "en": "",
+            "audio": "mercoledì"
+          },
+          {
+            "ru": "giovedì",
+            "translit": "joh-veh-DEE",
+            "pt": "Thursday",
+            "en": "",
+            "audio": "giovedì"
+          },
+          {
+            "ru": "venerdì",
+            "translit": "veh-nehr-DEE",
+            "pt": "Friday",
+            "en": "",
+            "audio": "venerdì"
+          },
+          {
+            "ru": "sabato",
+            "translit": "SAH-bah-toh",
+            "pt": "Saturday",
+            "en": "",
+            "audio": "sabato"
+          },
+          {
+            "ru": "domenica",
+            "translit": "doh-MEH-nee-kah",
+            "pt": "Sunday",
+            "en": "",
+            "audio": "domenica"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 9,
+        "titulo": "Days: no capital letters, a final accent and «il lunedì»",
+        "explicacao": "STEP 1: the days of the week are written in lowercase in Italian: «lunedì», not «Lunedì». English capitalizes them. STEP 2: the five weekdays end in «-dì» with a written accent, and the stress falls on the last syllable: «loo-neh-DEE». «Sabato» and «domenica» have no accent, and they are stressed earlier: «SAH-bah-toh», «doh-MEH-nee-kah». STEP 3: the week starts on Monday in Italy, so «lunedì» is the first day. STEP 4: without an article, the day means a specific one: «Giovedì va bene» means «Thursday is fine» (this coming Thursday). STEP 5: with the article «il» (or «la» for Sunday), the day means every one: «Il lunedì lavoro» is «On Mondays I work» or «I work every Monday». The same is true for «la domenica». STEP 6: to say «on» with a specific day, Italian uses nothing: «Giovedì ho lezione», not «a giovedì». STEP 7: «A giovedì!» is a farewell meaning «See you Thursday!»: it is a fixed expression with «a». STEP 8: «oggi» means «today», and «oggi è lunedì» means «today is Monday».",
+        "comparacao": "English needs «on» before a day («on Monday») and a plural for habit («on Mondays»). Italian uses no preposition for a specific day and the article «il» for a habit. That article is the shift: «lunedì» (this Monday) and «il lunedì» (every Monday) are two different meanings, which English tells apart with «on Monday» and «on Mondays».",
+        "exemplos": [
+          {
+            "ru": "Oggi è lunedì",
+            "pt": "Today is Monday"
+          },
+          {
+            "ru": "Giovedì va bene. A che ora?",
+            "pt": "Thursday is fine. At what time?"
+          },
+          {
+            "ru": "Il lunedì lavoro, e il martedì ho lezione.",
+            "pt": "On Mondays I work, and on Tuesdays I have class."
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "specific day",
+            "exemplo": "Giovedì va bene."
+          },
+          {
+            "tipo": "every week",
+            "exemplo": "Il lunedì lavoro."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Oggi è Lunedì",
+            "certo": "Oggi è lunedì",
+            "motivo": "Days are not capitalized in Italian."
+          },
+          {
+            "errado": "lunedi",
+            "certo": "lunedì",
+            "motivo": "The accent on the last vowel is part of the spelling."
+          },
+          {
+            "errado": "Perfetto! Su giovedì!",
+            "certo": "Perfetto! A giovedì!",
+            "motivo": "The farewell is «A giovedì!»."
+          }
+        ],
+        "tag": "Time"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 10,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "lunedì",
+            "opcoes": [
+              "lunedì",
+              "Lunedì",
+              "lunedi"
+            ],
+            "gabarito": "lunedì",
+            "explicacao": "Lowercase, with a final accent.",
+            "id": "it-009-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "martedì",
+            "opcoes": [
+              "martedì",
+              "mercoledì",
+              "giovedì"
+            ],
+            "gabarito": "martedì",
+            "explicacao": "Tuesday.",
+            "id": "it-009-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "sabato",
+            "opcoes": [
+              "sabato",
+              "domenica",
+              "venerdì"
+            ],
+            "gabarito": "sabato",
+            "explicacao": "Saturday.",
+            "id": "it-009-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «il lunedì» mean in a sentence?",
+            "opcoes": [
+              "every Monday",
+              "next Monday",
+              "last Monday"
+            ],
+            "gabarito": "every Monday",
+            "explicacao": "The article marks a habit.",
+            "id": "it-009-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you write «Tuesday»?",
+            "opcoes": [
+              "martedì",
+              "Martedì",
+              "martedi"
+            ],
+            "gabarito": "martedì",
+            "explicacao": "Lowercase, with the accent.",
+            "id": "it-009-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «A giovedì!» mean?",
+            "opcoes": [
+              "See you Thursday!",
+              "On Thursdays.",
+              "Thursday at last!"
+            ],
+            "gabarito": "See you Thursday!",
+            "explicacao": "A farewell with «a».",
+            "id": "it-009-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Oggi è ___. (Monday)",
+            "opcoes": [
+              "lunedì",
+              "Lunedì",
+              "lunedi"
+            ],
+            "gabarito": "lunedì",
+            "explicacao": "Lowercase with the accent.",
+            "id": "it-009-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Giovedì va bene.»",
+            "opcoes": [
+              "Giovedì",
+              "va",
+              "bene."
+            ],
+            "gabarito": "Giovedì va bene.",
+            "explicacao": "Day, verb, adverb.",
+            "id": "it-009-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 1,
+        "enunciado": "Say what you do on each day of your week, with «il lunedì…», «il martedì…»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Spell and say the seven days of the week aloud, marking the stress."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-009.json",
+  "responsavel": null
+}

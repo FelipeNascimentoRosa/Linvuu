@@ -1,0 +1,261 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 40,
+  "fase": 4,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Simple and articulated prepositions: Review and practice of lesson 10",
+  "objetivo": "Lesson 10, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 10,
+    "titulo": "Simple and articulated prepositions",
+    "objetivo": "Choose between «di», «a», «da» and «in», merge prepositions with articles («al», «nel», «sul», «dal», «del») and use «me» and «te» after prepositions. Avoid the English-speaker traps: word-for-word prepositions, «a il», and «in due ore».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 10",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 24,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Sono al bar",
+            "opcoes": [
+              "Sono al bar",
+              "Sono a il bar",
+              "Sono nel bar"
+            ],
+            "gabarito": "Sono al bar",
+            "explicacao": "«A» + «il» = «al».",
+            "id": "it-010-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Il libro è sul tavolo",
+            "opcoes": [
+              "Il libro è sul tavolo",
+              "Il libro è su il tavolo",
+              "Il libro è nel tavolo"
+            ],
+            "gabarito": "Il libro è sul tavolo",
+            "explicacao": "«Su» + «il» = «sul».",
+            "id": "it-010-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Un caffè per me",
+            "opcoes": [
+              "Un caffè per me",
+              "Un caffè per io",
+              "Un caffè con me"
+            ],
+            "gabarito": "Un caffè per me",
+            "explicacao": "«Per me».",
+            "id": "it-010-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Sono nella stazione",
+            "opcoes": [
+              "Sono nella stazione",
+              "Sono alla stazione",
+              "Sono in la stazione"
+            ],
+            "gabarito": "Sono nella stazione",
+            "explicacao": "«In» + «la».",
+            "id": "it-010-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Studio con te",
+            "opcoes": [
+              "Studio con te",
+              "Studio con tu",
+              "Studio per te"
+            ],
+            "gabarito": "Studio con te",
+            "explicacao": "After a preposition: «te».",
+            "id": "it-010-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Il libro del professore",
+            "opcoes": [
+              "Il libro del professore",
+              "Il libro al professore",
+              "Il libro dal professore"
+            ],
+            "gabarito": "Il libro del professore",
+            "explicacao": "Possession: «di» + article.",
+            "id": "it-010-e06"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Allora è nello zaino, con i quaderni.",
+            "opcoes": [
+              "Allora è nello zaino, con i quaderni.",
+              "Allora è nel zaino, con i quaderni.",
+              "Allora è sullo zaino, con i quaderni."
+            ],
+            "gabarito": "Allora è nello zaino, con i quaderni.",
+            "explicacao": "Before «z», «in» + «lo» = «nello».",
+            "id": "it-010-e07"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "È sul tavolo, vicino alla finestra.",
+            "opcoes": [
+              "È sul tavolo, vicino alla finestra.",
+              "È nel tavolo, vicino alla finestra.",
+              "È sul tavolo, vicino a la finestra."
+            ],
+            "gabarito": "È sul tavolo, vicino alla finestra.",
+            "explicacao": "Two merged forms.",
+            "id": "it-010-e08"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ecco, è qui! Grazie, Giulia.",
+            "opcoes": [
+              "Ecco, è qui! Grazie, Giulia.",
+              "Ecco, è lì! Grazie, Giulia.",
+              "Ecco, è qui! Prego, Giulia."
+            ],
+            "gabarito": "Ecco, è qui! Grazie, Giulia.",
+            "explicacao": "Listen to «qui».",
+            "id": "it-010-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is «tra due ore»?",
+            "opcoes": [
+              "in two hours",
+              "two hours ago",
+              "for two hours"
+            ],
+            "gabarito": "in two hours",
+            "explicacao": "Future: «tra».",
+            "id": "it-010-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which preposition marks possession?",
+            "opcoes": [
+              "di",
+              "a",
+              "in"
+            ],
+            "gabarito": "di",
+            "explicacao": "«Il libro del professore».",
+            "id": "it-010-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which of these is correct?",
+            "opcoes": [
+              "Vado a la stazione.",
+              "Vado alla stazione.",
+              "Vado al la stazione."
+            ],
+            "gabarito": "Vado alla stazione.",
+            "explicacao": "Merge.",
+            "id": "it-010-e12"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il libro è ___ zaino. (in the)",
+            "opcoes": [
+              "nello",
+              "nel",
+              "nella"
+            ],
+            "gabarito": "nello",
+            "explicacao": "«Zaino» starts with «z»: «nello».",
+            "id": "it-010-e13"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Un caffè ___ me. (for)",
+            "opcoes": [
+              "per",
+              "con",
+              "su"
+            ],
+            "gabarito": "per",
+            "explicacao": "A coffee for me.",
+            "id": "it-010-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Il libro è sul tavolo»",
+            "opcoes": [
+              "Il",
+              "libro",
+              "è",
+              "sul",
+              "tavolo"
+            ],
+            "gabarito": "Il libro è sul tavolo",
+            "explicacao": "Verb and merged preposition.",
+            "id": "it-010-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Studio con te»",
+            "opcoes": [
+              "Studio",
+              "con",
+              "te"
+            ],
+            "gabarito": "Studio con te",
+            "explicacao": "Verb, preposition, pronoun.",
+            "id": "it-010-e16"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud and then show the answer.",
+            "audio": "Prego! Ora c'è la lezione.",
+            "respostaEsperada": "Prego! Ora c'è la lezione.",
+            "explicacao": "You're welcome! Now it's time for class.",
+            "complemento": true,
+            "id": "it-010-r17"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Italian: I am at the station.",
+            "respostaEsperada": "Sono alla stazione",
+            "id": "it-010-e18"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Tell a short scene aloud: where you are, who you are with, what is on the table and who a present is for."
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "List the three habits from English to drop: translating prepositions word for word, writing «to the» as two words, and «in» + a future time."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-010.json",
+  "responsavel": null
+}

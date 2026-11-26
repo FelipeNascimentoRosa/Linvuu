@@ -1,0 +1,276 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 43,
+  "fase": 5,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Town, places and directions: Transport and distances",
+  "objetivo": "Lesson 11, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 11,
+    "titulo": "Town, places and directions",
+    "objetivo": "Name places in town, say where they are with «vicino a», «davanti a» and similar expressions, ask for and give directions with the formal imperative, and choose a means of transport. Avoid the English-speaker traps: leaving out «a» after «vicino», using one imperative for everyone, and «by bus» with «per».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Transport and distances",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "dialogo",
+        "min": 5,
+        "titulo": "Per andare in centro / Getting to the center",
+        "contexto": "A tourist asks a woman for directions near the station. Listen for «ci vuole» and «ci vogliono» (it takes).",
+        "linhas": [
+          {
+            "personagem": "Turista",
+            "ru": "— Scusi, signora, per andare in centro?",
+            "pt": "— Excuse me, madam, how do I get to the center?",
+            "audio": "Scusi, signora, per andare in centro?"
+          },
+          {
+            "personagem": "Signora",
+            "ru": "— Vada dritto fino al semaforo, poi giri a sinistra.",
+            "pt": "— Go straight to the traffic light, then turn left.",
+            "audio": "Vada dritto fino al semaforo, poi giri a sinistra."
+          },
+          {
+            "personagem": "Turista",
+            "ru": "— È lontano? Ci vuole molto a piedi?",
+            "pt": "— Is it far? Does it take long on foot?",
+            "audio": "È lontano? Ci vuole molto a piedi?"
+          },
+          {
+            "personagem": "Signora",
+            "ru": "— No, ci vogliono dieci minuti. La piazza è in fondo alla strada.",
+            "pt": "— No, it takes ten minutes. The square is at the end of the street.",
+            "audio": "No, ci vogliono dieci minuti. La piazza è in fondo alla strada."
+          },
+          {
+            "personagem": "Turista",
+            "ru": "— E c'è una farmacia vicino?",
+            "pt": "— And is there a pharmacy nearby?",
+            "audio": "E c'è una farmacia vicino?"
+          },
+          {
+            "personagem": "Signora",
+            "ru": "— Sì, è accanto alla chiesa, di fronte al museo.",
+            "pt": "— Yes, it's next to the church, opposite the museum.",
+            "audio": "Sì, è accanto alla chiesa, di fronte al museo."
+          }
+        ]
+      },
+      {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "l'autobus",
+            "translit": "LOW-toh-boos",
+            "pt": "the bus",
+            "en": "",
+            "audio": "l'autobus"
+          },
+          {
+            "ru": "la metropolitana, la metro",
+            "translit": "lah meh-troh-poh-lee-TAH-nah",
+            "pt": "the subway",
+            "en": "",
+            "audio": "la metropolitana, la metro"
+          },
+          {
+            "ru": "il treno",
+            "translit": "eel TREH-noh",
+            "pt": "the train",
+            "en": "",
+            "audio": "il treno"
+          },
+          {
+            "ru": "il biglietto",
+            "translit": "eel bee-LYEHT-toh",
+            "pt": "the ticket",
+            "en": "",
+            "audio": "il biglietto"
+          },
+          {
+            "ru": "la fermata",
+            "translit": "lah fehr-MAH-tah",
+            "pt": "the stop",
+            "en": "",
+            "audio": "la fermata"
+          },
+          {
+            "ru": "a piedi",
+            "translit": "ah PYEH-dee",
+            "pt": "on foot",
+            "en": "",
+            "audio": "a piedi"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Means of transport and «ci vuole»",
+        "explicacao": "STEP 1: with means of transport, Italian uses «in», without an article: «in autobus», «in treno», «in macchina». English says «by bus» or «on the bus». STEP 2: the exception is «a piedi» (on foot). STEP 3: you can also say «con l'autobus» to stress the means (with the bus), but «in autobus» is the neutral way. STEP 4: to say how long something takes, use «ci vuole» (singular) and «ci vogliono» (plural): «Ci vuole un'ora», «Ci vogliono dieci minuti». English says «It takes ten minutes». STEP 5: the verb agrees with what follows: one thing → «ci vuole», more than one → «ci vogliono». STEP 6: to ask, say «Quanto tempo ci vuole?». STEP 7: «È lontano?» asks if it is far. A short answer is «No, ci vogliono dieci minuti». STEP 8: «scendere» is to get off, «salire» is to get on: «Dove scendo?» means «Where do I get off?». STEP 9: be careful with «salire»: it means «to go up» or «to get on», not «to sail».",
+        "comparacao": "English «by bus», «by train», «by car» follows a pattern with «by». Italian follows the same pattern with «in»: «in autobus», «in treno», «in macchina». The odd one out is «on foot», in English and in Italian. For duration, English «It takes ten minutes» has a fixed «it takes». Italian has «ci vuole» and «ci vogliono», and the verb changes with the number.",
+        "exemplos": [
+          {
+            "ru": "Vado al lavoro in autobus",
+            "pt": "I go to work by bus"
+          },
+          {
+            "ru": "Ci vogliono dieci minuti",
+            "pt": "It takes ten minutes"
+          },
+          {
+            "ru": "È lontano? Ci vuole molto a piedi?",
+            "pt": "Is it far? Does it take long on foot?"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "by bus, train, car",
+            "exemplo": "in autobus · in treno · in macchina"
+          },
+          {
+            "tipo": "on foot",
+            "exemplo": "a piedi"
+          },
+          {
+            "tipo": "it takes",
+            "exemplo": "ci vuole (one) · ci vogliono (more)"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Vado al lavoro con autobus",
+            "certo": "Vado al lavoro in autobus",
+            "motivo": "Transport takes «in», with no article."
+          },
+          {
+            "errado": "Ci vuole dieci minuti",
+            "certo": "Ci vogliono dieci minuti",
+            "motivo": "A plural amount takes «ci vogliono»."
+          },
+          {
+            "errado": "Vado al lavoro per autobus",
+            "certo": "Vado al lavoro in autobus",
+            "motivo": "Transport takes «in», not «per»."
+          }
+        ],
+        "tag": "Directions"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 9,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Vado al lavoro in autobus",
+            "opcoes": [
+              "Vado al lavoro in autobus",
+              "Vado al lavoro con autobus",
+              "Vado al lavoro a autobus"
+            ],
+            "gabarito": "Vado al lavoro in autobus",
+            "explicacao": "Transport takes «in».",
+            "id": "it-011-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ci vogliono dieci minuti",
+            "opcoes": [
+              "Ci vogliono dieci minuti",
+              "Ci vuole dieci minuti",
+              "Ci vogliono due minuti"
+            ],
+            "gabarito": "Ci vogliono dieci minuti",
+            "explicacao": "Plural amount: «ci vogliono».",
+            "id": "it-011-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "il biglietto",
+            "opcoes": [
+              "il biglietto",
+              "il bigliatto",
+              "la biglietto"
+            ],
+            "gabarito": "il biglietto",
+            "explicacao": "The ticket.",
+            "id": "it-011-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «on foot»?",
+            "opcoes": [
+              "a piedi",
+              "in piedi",
+              "per piedi"
+            ],
+            "gabarito": "a piedi",
+            "explicacao": "The exception to «in».",
+            "id": "it-011-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which verb goes with «un'ora»?",
+            "opcoes": [
+              "ci vuole",
+              "ci vogliono",
+              "ci va"
+            ],
+            "gabarito": "ci vuole",
+            "explicacao": "One hour: singular.",
+            "id": "it-011-e05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Vado al lavoro ___ treno. (by)",
+            "opcoes": [
+              "in",
+              "con il",
+              "a"
+            ],
+            "gabarito": "in",
+            "explicacao": "«In treno».",
+            "id": "it-011-e06"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Ci vogliono dieci minuti»",
+            "opcoes": [
+              "Ci",
+              "vogliono",
+              "dieci",
+              "minuti"
+            ],
+            "gabarito": "Ci vogliono dieci minuti",
+            "explicacao": "The pattern is fixed.",
+            "id": "it-011-e07"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say how you get to three places and how long each takes: «Vado… in…, ci vogliono…»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Explain aloud why «ci vuole» and «ci vogliono» differ."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-011.json",
+  "responsavel": null
+}

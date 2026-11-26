@@ -1,0 +1,215 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 46,
+  "fase": 5,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Essential irregular verbs: Fare and stare",
+  "objetivo": "Lesson 12, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 12,
+    "titulo": "Essential irregular verbs",
+    "objetivo": "Conjugate the eight most frequent irregular verbs in the present tense (andare, venire, fare, stare, dare, dire, uscire, bere) and choose between «a», «in» and «da» with «andare». Avoid the English-speaker traps: one «to» for every destination, «have breakfast» and «I am well» with «essere».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Fare and stare",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "fare colazione",
+            "translit": "FAH-reh koh-lah-TSYOH-neh",
+            "pt": "to have breakfast",
+            "en": "",
+            "audio": "fare colazione"
+          },
+          {
+            "ru": "fare la spesa",
+            "translit": "FAH-reh lah SPEH-zah",
+            "pt": "to go grocery shopping",
+            "en": "",
+            "audio": "fare la spesa"
+          },
+          {
+            "ru": "fare una passeggiata",
+            "translit": "FAH-reh OO-nah pahs-sehd-JAH-tah",
+            "pt": "to take a walk",
+            "en": "",
+            "audio": "fare una passeggiata"
+          },
+          {
+            "ru": "fare sport",
+            "translit": "FAH-reh sport",
+            "pt": "to do sports, to exercise",
+            "en": "",
+            "audio": "fare sport"
+          },
+          {
+            "ru": "fare i compiti",
+            "translit": "FAH-reh ee KOHM-pee-tee",
+            "pt": "to do homework",
+            "en": "",
+            "audio": "fare i compiti"
+          },
+          {
+            "ru": "stare bene",
+            "translit": "STAH-reh BEH-neh",
+            "pt": "to be well",
+            "en": "",
+            "audio": "stare bene"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "«Fare» and «stare»: do, make and be well",
+        "explicacao": "STEP 1: «fare» means «to do» and «to make». Its forms: «faccio, fai, fa, facciamo, fate, fanno». STEP 2: «stare» means «to be» in some uses and «to stay». Its forms: «sto, stai, sta, stiamo, state, stanno». STEP 3: «fare» appears in many fixed phrases where English uses another verb: «fare colazione» (have breakfast), «fare la spesa» (do the shopping), «fare una passeggiata» (take a walk), «fare sport» (play sports), «fare i compiti» (do homework). Learn each as a block. STEP 4: for the weather: «fa caldo» (it is hot), «fa freddo» (it is cold). STEP 5: «stare» is used for health and mood: «Come stai?», «Sto bene». It also appears in «stare attento» (to pay attention) and «stare zitto» (to be quiet). STEP 6: do not use «stare» for identity or origin: «Sono Marco», not «sto Marco». STEP 7: «stare per» + infinitive means «to be about to»: «Sto per uscire» (I'm about to go out). STEP 8: pronunciation: «faccio» has a double «c» before «i», pronounced like a long «ch»: FAHT-choh.",
+        "comparacao": "English has one verb «to be» for everything: «I am well», «I am a student», «The book is on the table». Italian splits it between «essere» (who or what something is, and where) and «stare» (how someone is, and staying). The second source of mistakes is «fare»: English uses «have breakfast», «go shopping», «take a walk», «play sports», while Italian uses «fare» for all of them.",
+        "exemplos": [
+          {
+            "ru": "Faccio colazione alle sette",
+            "pt": "I have breakfast at seven"
+          },
+          {
+            "ru": "Come stai",
+            "pt": "How are you"
+          },
+          {
+            "ru": "Sto bene, grazie.",
+            "pt": "I'm fine, thank you."
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "fare",
+            "exemplo": "faccio · fai · fa · facciamo · fate · fanno"
+          },
+          {
+            "tipo": "stare",
+            "exemplo": "sto · stai · sta · stiamo · state · stanno"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ho colazione alle sette",
+            "certo": "Faccio colazione alle sette",
+            "motivo": "Italian says «do breakfast», not «have breakfast»."
+          },
+          {
+            "errado": "Sono bene, grazie.",
+            "certo": "Sto bene, grazie.",
+            "motivo": "Health and mood take «stare», not «essere»."
+          },
+          {
+            "errado": "Come sei",
+            "certo": "Come stai",
+            "motivo": "To ask how someone is, use «stare»."
+          }
+        ],
+        "tag": "Irregular verbs"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Faccio colazione alle sette",
+            "opcoes": [
+              "Faccio colazione alle sette",
+              "Ho colazione alle sette",
+              "Faccio colazione alle otto"
+            ],
+            "gabarito": "Faccio colazione alle sette",
+            "explicacao": "«Fare colazione».",
+            "id": "it-012-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Come stai",
+            "opcoes": [
+              "Come stai",
+              "Come sei",
+              "Come sta"
+            ],
+            "gabarito": "Come stai",
+            "explicacao": "«Stare» for health.",
+            "id": "it-012-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Sto bene, grazie.",
+            "opcoes": [
+              "Sto bene, grazie.",
+              "Sono bene, grazie.",
+              "Sta bene, grazie."
+            ],
+            "gabarito": "Sto bene, grazie.",
+            "explicacao": "«Sto».",
+            "id": "it-012-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which verb for «How are you?»",
+            "opcoes": [
+              "stare",
+              "essere",
+              "fare"
+            ],
+            "gabarito": "stare",
+            "explicacao": "«Come stai?».",
+            "id": "it-012-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «fare la spesa» mean?",
+            "opcoes": [
+              "to go grocery shopping",
+              "to make a spend",
+              "to do spending"
+            ],
+            "gabarito": "to go grocery shopping",
+            "explicacao": "A fixed phrase.",
+            "id": "it-012-e05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Noi ___ una passeggiata. (take)",
+            "opcoes": [
+              "facciamo",
+              "fiamo",
+              "fate"
+            ],
+            "gabarito": "facciamo",
+            "explicacao": "«Noi facciamo».",
+            "id": "it-012-e06"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say what you do in the morning, afternoon and evening, using «fare» at least five times. Then ask a friend «Come stai?» and answer."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Compare «essere» and «stare»: give one example of each."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-012.json",
+  "responsavel": null
+}

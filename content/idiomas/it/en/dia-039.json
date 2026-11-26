@@ -1,0 +1,245 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 39,
+  "fase": 4,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Simple and articulated prepositions: Con, per, tra and su, and pronouns after prepositions",
+  "objetivo": "Lesson 10, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 10,
+    "titulo": "Simple and articulated prepositions",
+    "objetivo": "Choose between «di», «a», «da» and «in», merge prepositions with articles («al», «nel», «sul», «dal», «del») and use «me» and «te» after prepositions. Avoid the English-speaker traps: word-for-word prepositions, «a il», and «in due ore».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Con, per, tra and su, and pronouns after prepositions",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "con te",
+            "translit": "kohn TEH",
+            "pt": "with you",
+            "en": "",
+            "audio": "con te"
+          },
+          {
+            "ru": "per te",
+            "translit": "pehr TEH",
+            "pt": "for you",
+            "en": "",
+            "audio": "per te"
+          },
+          {
+            "ru": "con me",
+            "translit": "kohn MEH",
+            "pt": "with me",
+            "en": "",
+            "audio": "con me"
+          },
+          {
+            "ru": "tra due ore",
+            "translit": "trah DOO-eh OH-reh",
+            "pt": "in two hours",
+            "en": "",
+            "audio": "tra due ore"
+          },
+          {
+            "ru": "insieme",
+            "translit": "een-SYEH-meh",
+            "pt": "together",
+            "en": "",
+            "audio": "insieme"
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "min": 6,
+        "titulo": "Una giornata di Giulia / A day in Giulia's life",
+        "ru": "Giulia è in ufficio. Lavora con due amici, Luca e Sara. All'una mangia un panino sul tavolo vicino alla finestra. Tra due ore ha lezione di italiano con la professoressa Bianchi, nell'aula tre. Dopo prende un caffè con Marco e ha un regalo per lui: un libro su Roma.",
+        "pt": "Giulia is at the office. She works with two friends, Luca and Sara. At one o'clock she eats a sandwich at the table near the window. In two hours she has an Italian class with Professor Bianchi, in room three. Afterwards she has a coffee with Marco and has a present for him: a book about Rome.",
+        "perguntas": [
+          {
+            "pergunta": "Who does Giulia work with?",
+            "resposta": "«Con due amici, Luca e Sara»: with two friends, Luca and Sara."
+          },
+          {
+            "pergunta": "When is her class?",
+            "resposta": "«Tra due ore»: in two hours."
+          },
+          {
+            "pergunta": "What is the present?",
+            "resposta": "«Un libro su Roma»: a book about Rome."
+          },
+          {
+            "pergunta": "Which preposition means «about» in the text?",
+            "resposta": "«Su»: «un libro su Roma»."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 9,
+        "titulo": "Pronouns after prepositions: «con me», «per te»",
+        "explicacao": "STEP 1: English changes «I» to «me» after a preposition: «with me», «for you». Italian does the same: after a preposition, the pronoun changes form. STEP 2: the forms are «me» (I), «te» (you), «lui» (he), «lei» (she), «Lei» (formal you), «noi» (we), «voi» (you plural), «loro» (they). Only «me» and «te» differ from the subject pronouns «io» and «tu». STEP 3: so Italian says «con me», «per te», «da me» (at my place), «di te» (about you). STEP 4: never use the subject form after a preposition: «con io» and «per tu» are wrong. STEP 5: «con» means «with», «per» means «for» (a recipient or a purpose), and «su» can mean «on» or «about»: «un libro su Roma». STEP 6: «tra» and «fra» mean «between» and also «in» for the future: «Tra due ore» is «In two hours». They are interchangeable: use whichever sounds better. STEP 7: English «in two hours» translates as «tra due ore», not «in due ore». STEP 8: «insieme» (together) can stand alone or be followed by «a»: «Studiamo insieme», «insieme a Marco».",
+        "comparacao": "English and Italian agree here: the pronoun changes after a preposition («with me», «for you»), and the forms for «him», «her», «us» and «them» match the subject forms in Italian. The one place to be careful is time: English says «in two hours», Italian says «tra due ore», because «in» in Italian does not mean «from now».",
+        "exemplos": [
+          {
+            "ru": "Studio con te",
+            "pt": "I study with you"
+          },
+          {
+            "ru": "Un caffè per me",
+            "pt": "A coffee for me"
+          },
+          {
+            "ru": "tra due ore",
+            "pt": "in two hours"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "subject → after a preposition",
+            "exemplo": "io → me, tu → te"
+          },
+          {
+            "tipo": "the others do not change",
+            "exemplo": "lui, lei, Lei, noi, voi, loro"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Studio con tu",
+            "certo": "Studio con te",
+            "motivo": "After a preposition use «te», not «tu»."
+          },
+          {
+            "errado": "Un caffè per io",
+            "certo": "Un caffè per me",
+            "motivo": "After a preposition use «me», not «io»."
+          },
+          {
+            "errado": "in due ore",
+            "certo": "tra due ore",
+            "motivo": "For a time in the future, use «tra» or «fra»."
+          }
+        ],
+        "tag": "Prepositions"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 9,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Studio con te",
+            "opcoes": [
+              "Studio con te",
+              "Studio con tu",
+              "Studio per te"
+            ],
+            "gabarito": "Studio con te",
+            "explicacao": "«Con te».",
+            "id": "it-010-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Un caffè per me",
+            "opcoes": [
+              "Un caffè per me",
+              "Un caffè per io",
+              "Un caffè con me"
+            ],
+            "gabarito": "Un caffè per me",
+            "explicacao": "«Per me».",
+            "id": "it-010-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "con",
+            "opcoes": [
+              "con",
+              "su",
+              "per"
+            ],
+            "gabarito": "con",
+            "explicacao": "«Con» means «with».",
+            "id": "it-010-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «in two hours»?",
+            "opcoes": [
+              "tra due ore",
+              "in due ore",
+              "a due ore"
+            ],
+            "gabarito": "tra due ore",
+            "explicacao": "Future time: «tra» or «fra».",
+            "id": "it-010-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «un libro su Roma» mean?",
+            "opcoes": [
+              "a book about Rome",
+              "a book on a table in Rome",
+              "a book for Rome"
+            ],
+            "gabarito": "a book about Rome",
+            "explicacao": "«Su» can mean «about».",
+            "id": "it-010-e05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Studio ___ me. (with)",
+            "opcoes": [
+              "con",
+              "su",
+              "tra"
+            ],
+            "gabarito": "con",
+            "explicacao": "«Con me».",
+            "id": "it-010-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Un caffè ___ te. (for)",
+            "opcoes": [
+              "per",
+              "con",
+              "tra"
+            ],
+            "gabarito": "per",
+            "explicacao": "«Per te».",
+            "id": "it-010-e07"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say four short sentences with a pronoun after a preposition: «con me», «per te», «da lui», «di noi»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Explain aloud the difference between «tra due ore» and «in due ore»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-010.json",
+  "responsavel": null
+}
