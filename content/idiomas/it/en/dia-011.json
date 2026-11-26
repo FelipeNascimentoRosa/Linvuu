@@ -151,7 +151,7 @@
         "tipo": "gramatica",
         "min": 9,
         "titulo": "Age with «avere», not «essere»",
-        "explicacao": "STEP 1: in English you «are» a number of years old. In Italian you «have» years: «Ho venti anni», literally «I have twenty years». STEP 2: the question is «Quanti anni hai?», literally «How many years do you have?». STEP 3: the verb is «avere» (to have): «io ho», «tu hai», «lui ha» or «lei ha». STEP 4: the word «anni» is always there. Do not drop it: «Ho venti» sounds incomplete, while «Ho venti anni» is the full sentence. STEP 5: numbers 11 to 16 are built from the unit plus «-dici»: «undici», «dodici», «tredici», «quattordici», «quindici», «sedici». STEP 6: from 17 to 19, the order is the opposite: ten comes first, «dici-», then the unit: «diciassette», «diciotto», «diciannove». STEP 7: then comes «venti» (20). STEP 8: «uno» changes in front of a noun («un anno», one year), but in a list it stays «uno». STEP 9: «ho» is pronounced «oh»: the letter «h» is silent in Italian, so «ho» and «hai» start with a vowel sound: «oh», «eye».",
+        "explicacao": "STEP 1: in English you «are» a number of years old. In Italian you «have» years: «Ho venti anni», literally «I have twenty years». STEP 2: the question is «Quanti anni hai?», literally «How many years do you have?». STEP 3: the verb is «avere» (to have): «io ho», «tu hai», «lui ha» or «lei ha». STEP 4: the word «anni» is normally there. Do not drop it: «Ho venti» is heard only as a quick reply, while «Ho venti anni» is the full sentence. STEP 5: numbers 11 to 16 are built from the unit plus «-dici»: «undici», «dodici», «tredici», «quattordici», «quindici», «sedici». STEP 6: from 17 to 19, the order is the opposite: ten comes first, «dici-», then the unit: «diciassette», «diciotto», «diciannove». STEP 7: then comes «venti» (20). STEP 8: «uno» changes in front of a noun («un anno», one year), but in a list it stays «uno». STEP 9: «ho» is pronounced «oh»: the letter «h» is silent in Italian, so «ho» and «hai» start with a vowel sound: «oh», «eye».",
         "comparacao": "English uses «to be» for age («I am twenty») and for feelings («I am hungry»). Italian uses «avere» (to have) for both: «ho venti anni», «ho fame». If you say «sono venti anni» you are saying «they are twenty years», not «I am twenty». The numbers 17 to 19 reverse the English order: «seventeen» puts the unit first, «diciassette» puts ten first.",
         "exemplos": [
           {
@@ -183,19 +183,19 @@
         ],
         "erros": [
           {
-            "errado": "Sono venti anni.",
-            "certo": "Ho venti anni.",
+            "errado": "Sono venti anni",
+            "certo": "Ho venti anni",
             "motivo": "Age uses «avere»: you «have» the years."
           },
           {
-            "errado": "Io sono venti.",
-            "certo": "Io ho venti anni.",
-            "motivo": "Use «avere» and keep the word «anni»."
+            "errado": "Marco, quanti anni sei?",
+            "certo": "Marco, quanti anni hai?",
+            "motivo": "The question uses «hai», not «sei»."
           },
           {
-            "errado": "Quanti anni sei?",
-            "certo": "Quanti anni hai?",
-            "motivo": "The question uses «hai», not «sei»."
+            "errado": "Lui è diciotto anni",
+            "certo": "Lui ha diciotto anni",
+            "motivo": "Age uses «avere» with every person."
           }
         ],
         "tag": "Numbers and age"

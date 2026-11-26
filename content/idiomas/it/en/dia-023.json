@@ -90,7 +90,7 @@
         "tipo": "gramatica",
         "min": 10,
         "titulo": "Feelings with «avere»: you «have» hunger",
-        "explicacao": "STEP 1: «avere» (to have) is irregular: «ho, hai, ha, abbiamo, avete, hanno». STEP 2: for physical states, English uses «to be» («I am hungry», «I am cold»). Italian uses «avere» and a noun: «ho fame» (I have hunger), «ho sete» (I have thirst), «ho sonno» (I have sleep), «ho freddo» (I have cold), «ho caldo» (I have heat). STEP 3: to say «very», use «molto» or «molta» before the noun and make it agree: «ho molta fame» (fame is feminine), «ho molto caldo» (caldo is masculine). «Very» does not work as an adverb here; Italian says «much hunger». STEP 4: do not use «essere»: «Sono fame» is wrong, and «Sono caldo» means «I am a hot person» in a very odd way. STEP 5: the «h» of «ho, hai, ha, hanno» is silent. It is there to separate them from words with the same sound: «o» (or), «ai» (to the), «a» (to), «anno» (year). STEP 6: the same verb gives other expressions: «ho fretta» (I am in a hurry), «ho ragione» (I am right), «ho paura» (I am afraid). STEP 7: «caldo» is a false friend of English «cold». It means hot: «ho caldo» is «I am hot», and «ho freddo» is «I am cold». Say them out loud together.",
+        "explicacao": "STEP 1: «avere» (to have) is irregular: «ho, hai, ha, abbiamo, avete, hanno». STEP 2: for physical states, English uses «to be» («I am hungry», «I am cold»). Italian uses «avere» and a noun: «ho fame» (I have hunger), «ho sete» (I have thirst), «ho sonno» (I have sleep), «ho freddo» (I have cold), «ho caldo» (I have heat). STEP 3: to say «very», use «molto» or «molta» before the noun and make it agree: «ho molta fame» (fame is feminine), «ho molto caldo» (caldo is masculine). «Very» does not work as an adverb here; Italian says «much hunger». STEP 4: do not use «essere»: «Sono fame» is wrong, and «Sono freddo» or «Sono caldo» do not say how you feel: they describe your character («cold-hearted», «hot-blooded»). STEP 5: the «h» of «ho, hai, ha, hanno» is silent. It is there to separate them from words with the same sound: «o» (or), «ai» (to the), «a» (to), «anno» (year). STEP 6: the same verb gives other expressions: «ho fretta» (I am in a hurry), «ho ragione» (I am right), «ho paura» (I am afraid). STEP 7: «caldo» is a false friend of English «cold». It means hot: «ho caldo» is «I am hot», and «ho freddo» is «I am cold». Say them out loud together.",
         "comparacao": "English uses «to be» for age, hunger, thirst, cold and heat. Italian uses «avere» for all of them: «ho venti anni», «ho fame», «ho freddo». That is the main habit to unlearn: when a state is physical, think «have», not «am». The false friend «caldo» is the second trap: it looks like «cold» and means «hot».",
         "exemplos": [
           {
@@ -114,19 +114,19 @@
         ],
         "erros": [
           {
-            "errado": "Sono fame.",
-            "certo": "Ho fame.",
+            "errado": "sono fame",
+            "certo": "ho fame",
             "motivo": "Physical states use «avere», not «essere»."
           },
           {
-            "errado": "Sono molto freddo.",
-            "certo": "Ho molto freddo.",
-            "motivo": "«Sono freddo» says you are a cold person. Use «ho freddo»."
+            "errado": "Sono freddo",
+            "certo": "Ho freddo",
+            "motivo": "«Sono freddo» describes your character («cold-hearted»), not how you feel. Use «ho freddo»."
           },
           {
-            "errado": "Ho caldo, metto il cappotto.",
-            "certo": "Ho freddo, metto il cappotto.",
-            "motivo": "«Caldo» is hot, not cold. Do not let the English «cold» pull you."
+            "errado": "Ho molto sete",
+            "certo": "Ho molta sete",
+            "motivo": "«Sete» is feminine: «molta»."
           }
         ],
         "tag": "Avere"

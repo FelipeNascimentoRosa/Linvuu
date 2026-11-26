@@ -86,8 +86,8 @@
         "tipo": "gramatica",
         "min": 10,
         "titulo": "Telling the time: «è l'una» and «sono le…»",
-        "explicacao": "STEP 1: ask «Che ora è?» or «Che ore sono?». Both mean «What time is it?». STEP 2: English says «It is» for every hour. Italian counts the hour as a thing: for one o'clock the verb is singular, «È l'una»; for every other hour it is plural, «Sono le tre», «Sono le quattro». STEP 3: the article is «le» (feminine plural) because the word «ore» (hours) is understood: «Sono le tre» is «It is the three (hours)». Only «l'una» takes «l'». STEP 4: noon and midnight are special words: «mezzogiorno» and «mezzanotte», used with «è»: «È mezzogiorno». STEP 5: minutes come after the hour with «e»: «Sono le quattro e dieci». STEP 6: English says «half past four» and «a quarter past four». Italian says «e mezza» («and a half») and «e un quarto» («and a quarter»): «Sono le quattro e mezza», «Sono le quattro e un quarto». STEP 7: for minutes before the hour, use «meno» (less): «Sono le cinque meno un quarto» is «a quarter to five». STEP 8: the 24-hour clock is common in writing and in announcements: «le diciotto» is six in the evening. STEP 9: «mezza» ends in «a» because it agrees with «ora» (hour, feminine); «e mezzo» is heard in casual speech, but «e mezza» is the standard form.",
-        "comparacao": "English hides the grammar of time under «it's»: «It's one», «It's three». Italian shows it: one is singular («è l'una») and the others are plural («sono le tre»). English adds «o'clock», but Italian never does. And «half past four» turns upside down: Italian says «four and a half». The cutoff for «a quarter to» is «meno» (minus).",
+        "explicacao": "STEP 1: ask «Che ora è?» or «Che ore sono?». Both mean «What time is it?». STEP 2: English says «It is» for every hour. Italian counts the hour as a thing: for one o'clock the verb is singular, «È l'una»; for every other hour it is plural, «Sono le tre», «Sono le quattro». STEP 3: the article is «le» (feminine plural) because the word «ore» (hours) is understood: «Sono le tre» is «It is the three (hours)». Only «l'una» takes «l'». STEP 4: noon and midnight are special words: «mezzogiorno» and «mezzanotte», used with «è»: «È mezzogiorno». STEP 5: minutes come after the hour with «e»: «Sono le quattro e dieci». STEP 6: English says «half past four» and «a quarter past four». Italian says «e mezza» («and a half») and «e un quarto» («and a quarter»): «Sono le quattro e mezza», «Sono le quattro e un quarto». STEP 7: for minutes before the hour, use «meno» (less): «Sono le cinque meno un quarto» is «a quarter to five». STEP 8: the 24-hour clock is common in writing and in announcements: «le diciotto» is six in the evening. STEP 9: «mezza» ends in «a» because it agrees with «ora» (hour, feminine); «e mezzo» is also heard and accepted, but «e mezza» is the form to learn.",
+        "comparacao": "English hides the grammar of time under «it's»: «It's one», «It's three». Italian shows it: one is singular («è l'una») and the others are plural («sono le tre»). English adds «o'clock», but Italian never does. And «half past four» is built differently: Italian says «four and a half». For «a quarter to», use «meno» (minus).",
         "exemplos": [
           {
             "ru": "Che ora è?",
@@ -132,9 +132,9 @@
             "motivo": "Every hour except one is plural: «sono le»."
           },
           {
-            "errado": "Sono le quattro e mezzo",
+            "errado": "Sono le quattro mezza",
             "certo": "Sono le quattro e mezza",
-            "motivo": "«Mezza» agrees with «ora» and ends in «a»."
+            "motivo": "Say «e» before «mezza»: the half hour is «and a half»."
           }
         ],
         "tag": "Time"
@@ -169,7 +169,7 @@
           {
             "errado": "A le otto di sera",
             "certo": "Alle otto di sera",
-            "motivo": "«A» + «le» always merges into «alle»."
+            "motivo": "«A» + «le» must merge into «alle» in modern Italian."
           },
           {
             "errado": "In otto di sera",
@@ -227,11 +227,11 @@
             "enunciado": "How do you say «half past four»?",
             "opcoes": [
               "Sono le quattro e mezza",
-              "Sono le quattro e mezzo",
+              "Sono le quattro e metà",
               "Sono le quattro mezza"
             ],
             "gabarito": "Sono le quattro e mezza",
-            "explicacao": "«E mezza» agrees with «ora».",
+            "explicacao": "Say «e mezza» for the half hour.",
             "id": "it-009-e04"
           },
           {
@@ -248,14 +248,14 @@
           },
           {
             "tipo": "fill-gap",
-            "enunciado": "___ le otto di sera. (At)",
+            "enunciado": "___ sei e mezza di sera. (At)",
             "opcoes": [
               "Alle",
               "A le",
               "Nelle"
             ],
             "gabarito": "Alle",
-            "explicacao": "«A» + «le» = «alle».",
+            "explicacao": "«A» + «le» = «alle»: «alle sei e mezza».",
             "id": "it-009-e06"
           }
         ]

@@ -100,7 +100,7 @@
         "tipo": "gramatica",
         "min": 10,
         "titulo": "Countries, nationalities and the article",
-        "explicacao": "STEP 1: most countries take a definite article in Italian: «il Brasile», «la Francia», «la Spagna», «gli Stati Uniti». English leaves it out («Brazil», «France»), except in a few cases like «the United States». STEP 2: the article changes with the gender and first sound of the country. After a vowel, it shrinks to «l'»: «l'Italia», «l'Inghilterra», «l'Argentina». STEP 3: nationalities are adjectives, and they are not written with a capital letter: «italiano», «francese». English capitalizes them («Italian», «French»); Italian does not. STEP 4: the adjective changes with the gender of the person: «italiano» (man), «italiana» (woman); «americano», «americana». STEP 5: adjectives ending in «-e» are the same for both: «francese», «inglese», «portoghese». STEP 6: to say where you are from, use «Sono» and the nationality: «Sono brasiliano» (a man), «Sono brasiliana» (a woman). STEP 7: pronunciation: «gn» in «Spagna» and «spagnolo» is like «ny» in «canyon». «Gli» in «gli Stati Uniti» is like «lli» in «million». In «Germania» and «Inghilterra», «g» before «e» and «i» sounds like «j»; «gh» in «Inghilterra» is a hard «g».",
+        "explicacao": "STEP 1: most countries take a definite article in Italian: «il Brasile», «la Francia», «la Spagna», «gli Stati Uniti». English leaves it out («Brazil», «France»), except in a few cases like «the United States». STEP 2: the article changes with the gender and first sound of the country. Before a vowel, it shrinks to «l'»: «l'Italia», «l'Inghilterra», «l'Argentina». STEP 3: nationalities are adjectives, and they are not written with a capital letter: «italiano», «francese». English capitalizes them («Italian», «French»); Italian does not. STEP 4: the adjective changes with the gender of the person: «italiano» (man), «italiana» (woman); «americano», «americana». STEP 5: adjectives ending in «-e» are the same for both: «francese», «inglese», «portoghese». STEP 6: to say where you are from, use «Sono» and the nationality: «Sono brasiliano» (a man), «Sono brasiliana» (a woman). STEP 7: pronunciation: «gn» in «Spagna» and «spagnolo» is like «ny» in «canyon». «Gli» in «gli Stati Uniti» is like «lli» in «million». In «Germania» and «Inghilterra», «g» before «e» and «i» sounds like «j»; «gh» in «Inghilterra» is a hard «g».",
         "comparacao": "English has no grammatical gender, so «American» is the same for a man and a woman. Italian marks the difference in the ending: «americano» and «americana». Capital letters work the other way round: English capitalizes nationalities and Italian does not. And the article before a country name is the third change: English says «I live in Italy», Italian often keeps the article in other sentences («l'Italia è bella»).",
         "exemplos": [
           {
@@ -124,19 +124,19 @@
         ],
         "erros": [
           {
-            "errado": "Sono Italiano.",
-            "certo": "Sono italiano.",
+            "errado": "l'Italia, Italiano",
+            "certo": "l'Italia, italiano",
             "motivo": "Nationalities are written in lowercase in Italian."
           },
           {
-            "errado": "Lei è americano.",
-            "certo": "Lei è americana.",
-            "motivo": "The adjective agrees with a woman: «americana»."
+            "errado": "la Francia, francesa",
+            "certo": "la Francia, francese",
+            "motivo": "Adjectives in «-e» have no form in «-a»."
           },
           {
-            "errado": "Sono francesa.",
-            "certo": "Sono francese.",
-            "motivo": "Adjectives in «-e» have no «-a» form."
+            "errado": "Italia, italiano",
+            "certo": "l'Italia, italiano",
+            "motivo": "As a bare name, most countries take the article: «l'Italia». After «in», it drops: «in Italia»."
           }
         ],
         "tag": "Countries"
@@ -177,7 +177,7 @@
             "opcoes": [
               "Spagnolo",
               "spagnolo",
-              "Spagnolo."
+              "spanyolo"
             ],
             "gabarito": "spagnolo",
             "explicacao": "Nationalities are lowercase in Italian, even though English capitalizes them.",
@@ -201,7 +201,7 @@
             "opcoes": [
               "francese",
               "francesa",
-              "francesse"
+              "francesi"
             ],
             "gabarito": "francese",
             "explicacao": "Adjectives in «-e» do not change between man and woman.",

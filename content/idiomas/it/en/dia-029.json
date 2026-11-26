@@ -86,7 +86,7 @@
         "tipo": "gramatica",
         "min": 10,
         "titulo": "Ordering with «vorrei»",
-        "explicacao": "STEP 1: in a café or shop, the polite way to ask for something is «vorrei», which means «I would like». «Vorrei un cappuccino» is what a native speaker says at the counter. STEP 2: English often says «Can I have…?» or «I'll have…». Italian can use «Vorrei…», or just name what you want and add «per favore»: «Il conto, per favore». STEP 3: «voglio» (I want) is correct, but it sounds blunt when you are asking a stranger. Keep it for friends. STEP 4: «vorrei» is followed directly by a noun, or by an infinitive: «Vorrei un cappuccino», «Vorrei un cappuccino e un cornetto, per favore.» STEP 5: in Italy, «un caffè» is an espresso: a small, strong coffee in a small cup. If you want something larger, ask for a «caffè lungo» or a «cappuccino». STEP 6: many bars treat «un cappuccino» as a morning drink and rarely serve it after a meal, but nobody will refuse you, so do not worry about that. STEP 7: the word «bar» is a false friend: in Italy it is a café where you drink coffee, eat a pastry and also have an aperitivo, not only a place for alcohol. STEP 8: «il conto» is the bill. You ask for it at the table with «Il conto, per favore».",
+        "explicacao": "STEP 1: in a café or shop, the polite way to ask for something is «vorrei», which means «I would like». «Vorrei un cappuccino» is what a native speaker says at the counter. STEP 2: English often says «Can I have…?» or «I'll have…». Italian can use «Vorrei…», or just name what you want and add «per favore»: «Il conto, per favore». STEP 3: «voglio» (I want) is correct, but it sounds blunt when you are asking a stranger. Save it for people you know well. STEP 4: «vorrei» is followed directly by a noun, or by an infinitive: «Vorrei un cappuccino», «Vorrei un cappuccino e un cornetto, per favore.» STEP 5: in Italy, «un caffè» is an espresso: a small, strong coffee in a small cup. If you want something larger, ask for a «caffè lungo» or a «cappuccino». STEP 6: many bars treat «un cappuccino» as a morning drink and rarely serve it after a meal, but nobody will refuse you, so do not worry about that. STEP 7: the word «bar» is a false friend: in Italy it is a café where you drink coffee, eat a pastry and also have an aperitivo, not only a place for alcohol. STEP 8: «il conto» is the bill. You ask for it at the table with «Il conto, per favore».",
         "comparacao": "English softens a request with «could I» or «I'd like». Italian does the same with one word, «vorrei», so you do not need a longer sentence. Keep «per favore» at the end, as in English «please». A word-by-word «Posso avere…?» (can I have) is understood, but «vorrei» is the natural choice.",
         "exemplos": [
           {
@@ -114,14 +114,14 @@
         ],
         "erros": [
           {
-            "errado": "Un cappuccino, prego.",
+            "errado": "Vorrei un cappuccino, prego.",
             "certo": "Vorrei un cappuccino",
-            "motivo": "«Prego» is «you're welcome» or «go ahead», not «please». Ask with «vorrei» or end with «per favore»."
+            "motivo": "«Prego» means «you're welcome» or «go ahead», not «please». «Vorrei un cappuccino» is already polite; to add «please», say «per favore»."
           },
           {
-            "errado": "Vorrei un cappuccino e un cornetto.",
-            "certo": "Vorrei un cappuccino e un cornetto, per favore.",
-            "motivo": "It is not wrong, but add «per favore» to sound polite."
+            "errado": "Il conto, prego",
+            "certo": "Il conto, per favore",
+            "motivo": "«Prego» is not «please». Ask with «per favore»."
           }
         ],
         "tag": "Ordering food"
@@ -227,10 +227,10 @@
             "enunciado": "What is the polite way to order?",
             "opcoes": [
               "Voglio un cappuccino.",
-              "Vorrei un cappuccino",
-              "Prendo un cappuccino, prego."
+              "Vorrei un cappuccino.",
+              "Dammi un cappuccino."
             ],
-            "gabarito": "Vorrei un cappuccino",
+            "gabarito": "Vorrei un cappuccino.",
             "explicacao": "«Vorrei» means «I would like».",
             "id": "it-008-e04"
           },
@@ -252,7 +252,7 @@
             "opcoes": [
               "Un'",
               "Un",
-              "Una"
+              "Uno"
             ],
             "gabarito": "Un'",
             "explicacao": "Feminine word starting with a vowel.",

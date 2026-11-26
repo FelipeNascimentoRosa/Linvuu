@@ -117,7 +117,7 @@
         "min": 11,
         "titulo": "Preposition + article: «al», «nel», «sul», «dal», «del»",
         "explicacao": "STEP 1: English keeps «to the», «in the» and «on the» as two words. Italian joins the preposition and the article into one word: «a» + «il» = «al», «in» + «la» = «nella», «su» + «il» = «sul», «da» + «il» = «dal», «di» + «il» = «del». STEP 2: the article decides the form. Before «il», the merged forms are «al», «nel», «sul», «dal», «del». Before «la»: «alla», «nella», «sulla», «dalla», «della». Before «lo» and «l'»: «allo», «nello», «sullo», «dallo», «dello»; «all'», «nell'», «sull'», «dall'», «dell'». STEP 3: the plurals are «ai», «nei», «sui», «dai», «dei», and «agli», «negli», «sugli», «dagli», «degli», and «alle», «nelle», «sulle», «dalle», «delle». STEP 4: «con», «per» and «tra» do not merge in ordinary writing: «con i quaderni», «per la lezione». STEP 5: there is no article with a person's name: «da Marco», «a Giulia». But with a title or a profession, the article returns: «dal dottore», «dalla professoressa». STEP 6: with general places and fixed expressions, there may be no article: «a casa», «in ufficio». STEP 7: pronunciation: in «alla», «nella», «sulla» the double «l» is long: «AHL-lah». The form «al» has a short «l».",
-        "comparacao": "English never merges: «to the», «in the», «on the». Italian always merges when the article is there, so you cannot say «a il bar» or «su il tavolo». Think of them as single words: «al», «nel», «sul». The merged forms are the reason Italian seems to have more prepositions, but they are only the same eight plus the article.",
+        "comparacao": "English never merges «to the», «in the» or «on the». Italian merges «a», «di», «da», «in» and «su» with the definite article, so you cannot say «a il bar» or «su il tavolo»: you say «al bar», «sul tavolo». The prepositions «con», «per» and «tra / fra» normally stay separate («con il», «per la»). Think of the merged forms as single words: «al», «nel», «sul», «dal», «del».",
         "exemplos": [
           {
             "ru": "al bar",
@@ -179,9 +179,9 @@
             "motivo": "Merge «in» + «la» into «nella»."
           },
           {
-            "errado": "Vado a la stazione",
+            "errado": "a la stazione",
             "certo": "alla stazione",
-            "motivo": "The merged form is required: «alla»."
+            "motivo": "The merged form is required: «a» + «la» = «alla»."
           }
         ],
         "tag": "Prepositions"
@@ -260,7 +260,7 @@
             "opcoes": [
               "Sono nella stazione",
               "Sono in la stazione",
-              "Sono alla in stazione"
+              "Sono a la stazione"
             ],
             "gabarito": "Sono nella stazione",
             "explicacao": "Merge the preposition with the article.",
