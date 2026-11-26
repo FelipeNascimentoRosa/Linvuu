@@ -10,7 +10,7 @@
   "aula": {
     "numero": 1,
     "titulo": "Sounds, alphabet and first words",
-    "objetivo": "Spell in Italian, read the letter combinations that change the sound (c, g, ch, gh, sc, gn, gli), hear double consonants and word stress, and make your first greetings, with «tu» and with «Lei».",
+    "objetivo": "Read the Italian alphabet aloud, pronounce the vowels purely, apply the soft and hard rules of «c», «g» and «sc», hear double consonants and stress, and greet people with the right form for a friend and for a stranger.",
     "sessoes": 4,
     "duracaoTotalMin": 120,
     "nivel": "a1"
@@ -23,13 +23,13 @@
       {
         "tipo": "dialogo",
         "min": 5,
-        "titulo": "Al bar / At the café",
-        "contexto": "In a café in Rome, signora Rossi meets Paolo, the barista, and young Luca. Listen first. Notice who says «Come sta?» and who says «Come stai?».",
+        "titulo": "Al caffè / At the café",
+        "contexto": "Paolo runs a café. Signora Rossi and her friend Luca drop by. Listen for the two ways of asking «How are you?»: «Come sta?» and «Come stai?».",
         "linhas": [
           {
             "personagem": "Paolo",
             "ru": "— Buongiorno, signora Rossi! Come sta?",
-            "pt": "— Good morning, signora Rossi! How are you?",
+            "pt": "— Good morning, Mrs Rossi! How are you?",
             "audio": "Buongiorno, signora Rossi! Come sta?"
           },
           {
@@ -41,19 +41,19 @@
           {
             "personagem": "Paolo",
             "ru": "— Bene, grazie. Ecco il caffè.",
-            "pt": "— Fine, thank you. Here is your coffee.",
+            "pt": "— Fine, thank you. Here's your coffee.",
             "audio": "Bene, grazie. Ecco il caffè."
           },
           {
             "personagem": "Signora Rossi",
             "ru": "— Grazie mille! Ah, ecco Luca! Ciao, Luca! Come stai?",
-            "pt": "— Thank you very much! Oh, here comes Luca! Hi, Luca! How are you?",
+            "pt": "— Thanks a lot! Ah, here is Luca! Hi, Luca! How are you?",
             "audio": "Grazie mille! Ah, ecco Luca! Ciao, Luca! Come stai?"
           },
           {
             "personagem": "Luca",
             "ru": "— Buongiorno, signora! Sto bene, grazie. E Lei?",
-            "pt": "— Good morning, signora! I'm fine, thank you. And you?",
+            "pt": "— Good morning, madam! I'm fine, thank you. And you?",
             "audio": "Buongiorno, signora! Sto bene, grazie. E Lei?"
           },
           {
@@ -71,7 +71,7 @@
           {
             "personagem": "Luca",
             "ru": "— Grazie, Paolo! Arrivederci, signora Rossi!",
-            "pt": "— Thanks, Paolo! Bye, signora Rossi!",
+            "pt": "— Thanks, Paolo! Goodbye, Mrs Rossi!",
             "audio": "Grazie, Paolo! Arrivederci, signora Rossi!"
           }
         ]
@@ -83,13 +83,13 @@
           {
             "ru": "caffè",
             "translit": "kahf-FEH",
-            "pt": "coffee",
+            "pt": "coffee; café",
             "en": "",
             "audio": "caffè"
           },
           {
             "ru": "Come stai?",
-            "translit": "KOH-meh STY",
+            "translit": "KOH-meh STAH-ee",
             "pt": "how are you? (informal)",
             "en": "",
             "audio": "Come stai?"
@@ -97,20 +97,20 @@
           {
             "ru": "Come sta?",
             "translit": "KOH-meh STAH",
-            "pt": "how are you? (formal, Lei)",
+            "pt": "how are you? (formal)",
             "en": "",
             "audio": "Come sta?"
           },
           {
             "ru": "Sto bene, grazie.",
-            "translit": "stoh BEH-neh GRAHT-see-eh",
-            "pt": "I'm fine, thank you",
+            "translit": "stoh BEH-neh GRAH-tsyeh",
+            "pt": "I'm fine, thank you.",
             "en": "",
             "audio": "Sto bene, grazie."
           },
           {
             "ru": "E Lei?",
-            "translit": "eh LAY",
+            "translit": "eh LEH-ee",
             "pt": "and you? (formal)",
             "en": "",
             "audio": "E Lei?"
@@ -118,7 +118,7 @@
           {
             "ru": "Piacere",
             "translit": "pyah-CHEH-reh",
-            "pt": "nice to meet you",
+            "pt": "pleased to meet you",
             "en": "",
             "audio": "Piacere"
           }
@@ -127,13 +127,13 @@
       {
         "tipo": "gramatica",
         "min": 5,
-        "titulo": "Full vowels and double consonants",
-        "explicacao": "STEP 1: Italian vowels are always clear and full. The final «e» of «bene», «latte» and «come» sounds «eh», never «ay» and never a weak «uh». The final «o» of «tavolo» and «otto» is a pure «oh», with no «w» glide at the end as in English «go». STEP 2: every double consonant is held longer. Make a tiny pause before it. Say «otto» as «OHT-toh». STEP 3: the double letter changes the meaning. «Pala» is a shovel, «palla» is a ball. «Caro» means dear, «carro» is a cart. «Nono» means ninth, «nonno» is grandfather. «Sete» is thirst, «sette» is the number seven. So listen carefully and write both letters.",
-        "comparacao": "in English, unstressed vowels shrink to a weak «uh» («banana» sounds «buh-NA-nuh»), and long vowels glide («go» sounds «goh-oo»). A double letter is not heard either: «summer» has one «m» sound. Italian keeps every vowel full and pure, and you really hear the double consonant, like the two «k» sounds in «bookcase».",
+        "titulo": "Five pure vowels, no glides",
+        "explicacao": "STEP 1: English vowels often glide into a second sound: «go» becomes «goh-oo», «day» becomes «deh-ee». Italian vowels do not. Say each one cleanly and hold it still. STEP 2: «a» is always «ah». «E» is «eh» as in «bed». «I» is «ee» as in «machine». «O» is «oh» as in «more». «U» is «oo» as in «food». STEP 3: the final vowel is always pronounced. «Bene» is not «been»: it is «BEH-neh», with two clear «eh» sounds. STEP 4: do not reduce unstressed vowels. English turns the last «a» of «pasta» into «uh», but Italian keeps «ah»: «PAH-stah». STEP 5: two vowels next to each other are usually pronounced separately, one after the other. «Paolo» is «PAH-oh-loh».",
+        "comparacao": "The biggest change for an English speaker is the unstressed vowel. English turns them into a quiet «uh» (the «a» in «banana»). In Italian every vowel is full, whether it is stressed or not. Practice by saying the words slowly and keeping the last vowel strong: «bene», «latte», «otto».",
         "exemplos": [
           {
             "ru": "bene",
-            "pt": "well, fine"
+            "pt": "well"
           },
           {
             "ru": "latte",
@@ -142,7 +142,39 @@
           {
             "ru": "otto",
             "pt": "eight"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "a · e · i · o · u",
+            "exemplo": "ah · eh · ee · oh · oo"
           },
+          {
+            "tipo": "final -e",
+            "exemplo": "bene (BEH-neh), latte (LAHT-teh)"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Been",
+            "certo": "bene",
+            "motivo": "The final «e» is pronounced «eh», it is not silent."
+          },
+          {
+            "errado": "Latt",
+            "certo": "latte",
+            "motivo": "The word ends in «e», and it is pronounced."
+          }
+        ],
+        "tag": "Pronunciation"
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Double consonants and where the stress falls",
+        "explicacao": "STEP 1: a doubled letter is pronounced longer, almost as if you hold the consonant for a beat before you release it. «Palla» (ball) is not «pala» (shovel). «Nonno» (grandfather) is not «nono» (ninth). STEP 2: English does not do this inside a word, but you can feel it if you say «book case» or «night time» slowly: the sound is held between the two words. Italian does it inside one word: «sette» is SEHT-teh, with a short pause on the «t». STEP 3: most Italian words are stressed on the second-to-last syllable: «ca-FFÈ» is the exception, because its final vowel carries an accent. Normal: «BEH-neh», «lah-TEH» is wrong, and «LAHT-teh» is right. STEP 4: an accent mark on the last vowel shows that the stress is on the final syllable: «città» (cheet-TAH), «perché» (pehr-KEH), «università» (oo-nee-vehr-see-TAH). STEP 5: «caffè» also has an accent: the stress is on the last «è». STEP 6: the accents are part of the spelling, so write them: «perché» and «perche» are not the same word on paper.",
+        "comparacao": "English stress is unpredictable: «PHOtograph», «phoTOgrapher». Italian stress is much more regular: nearly always the second-to-last syllable, unless the final vowel has an accent. The long consonants will feel strange, but they change meanings, so practice them with pairs: palla/pala, sette/sete.",
+        "exemplos": [
           {
             "ru": "palla",
             "pt": "ball"
@@ -152,37 +184,44 @@
             "pt": "grandfather"
           },
           {
-            "ru": "sette",
-            "pt": "seven"
+            "ru": "città",
+            "pt": "city"
+          },
+          {
+            "ru": "perché",
+            "pt": "why; because"
           }
         ],
         "tabela": [
           {
-            "padrao": "final vowel",
-            "como": "full and clear: e, o, a, i, u",
-            "exemplos": "bene, latte, tavolo, pasta, amici"
+            "tipo": "double consonants",
+            "exemplo": "palla, nonno, sette, quattro"
           },
           {
-            "padrao": "double consonant",
-            "como": "held longer, with a short pause before it",
-            "exemplos": "pala/palla, caro/carro, nono/nonno, sete/sette"
+            "tipo": "accent = stress on the end",
+            "exemplo": "città, perché, università"
           }
         ],
         "erros": [
           {
-            "errado": "reading «latte» as «LAH-tay»",
-            "certo": "LAHT-teh",
-            "motivo": "The final «e» is a short, clear «eh», never «ay» and never «uh»."
+            "errado": "Quatro",
+            "certo": "quattro",
+            "motivo": "The double «t» is long: KWAHT-troh."
           },
           {
-            "errado": "reading «palla» like «pala»",
-            "certo": "PAHL-lah (long consonant)",
-            "motivo": "The double letter changes the word: shovel or ball."
+            "errado": "Citta",
+            "certo": "città",
+            "motivo": "The accent on the last vowel is written and means the stress is there."
           },
           {
-            "errado": "writing «sete» for the number 7",
-            "certo": "sette",
-            "motivo": "The number has two «t». With only one, «sete» means thirst."
+            "errado": "Perche",
+            "certo": "perché",
+            "motivo": "The accent distinguishes «perché» from other readings."
+          },
+          {
+            "errado": "Nono",
+            "certo": "nonno",
+            "motivo": "«Nono» is a different word: keep the double «n»."
           }
         ],
         "tag": "Pronunciation"
@@ -190,99 +229,13 @@
       {
         "tipo": "gramatica",
         "min": 4,
-        "titulo": "Stress, h, qu and z",
-        "explicacao": "STEP 1: the strongest syllable of a word is almost always the second-to-last: «amíco», «mámma», «bélla». STEP 2: in some words it falls one syllable earlier: «télefono», «álbero». Listen to the audio and repeat. STEP 3: the written accent appears almost only at the end of a word, to mark the strong vowel: «città», «caffè», «perché», «università». STEP 4: in one-syllable words, the accent tells two words apart. «È», with an accent, is the verb «is». «E», without an accent, is «and». «Sì», with an accent, is «yes». «Là», with an accent, is «there». STEP 5: the «h» is never pronounced: «ho», «hotel», «hanno». STEP 6: «qu» sounds «kw», like in «quick», with the «u» heard: «quattro» (KWAHT-troh), «questo» (KWEH-stoh). STEP 7: «z» sounds «ts» or «dz», depending on the word: «grazie» (GRAHT-see-eh), «zucchero» (DZOOK-keh-roh). There is no simple rule. Learn it with the audio.",
-        "comparacao": "English also has a strong syllable in every word, but never marks it in writing. Italian marks it only when it falls on the last vowel. And unlike English, the Italian «h» is always silent, even in «hotel».",
+        "titulo": "«Come stai?» or «Come sta?»",
+        "explicacao": "STEP 1: English «How are you?» has one form. Italian has two, depending on who you are talking to. STEP 2: with a friend, a child or a person your age, say «Come stai?» (informal). STEP 3: with a stranger or an older person, say «Come sta?» (formal). The word «Lei» is the formal «you»: «E Lei?» means «And you?». STEP 4: the reply is «Sto bene, grazie» for both. For a friend, add «E tu?» (and you?); for a formal speaker, add «E Lei?». STEP 5: «bene, bene» repeated means «really fine, fine». STEP 6: «piacere» is said when you meet someone, and it also answers «Come sta?» when you meet that person for the first time.",
+        "comparacao": "English adjusts the tone but not the grammar: «Hey, how are you?» and «How do you do?» are the same verb. In Italian the verb changes: «stai» for a friend and «sta» for a formal speaker. Using the wrong one is not a disaster, but «sta» is safer when you are not sure.",
         "exemplos": [
-          {
-            "ru": "città",
-            "pt": "city"
-          },
-          {
-            "ru": "caffè",
-            "pt": "coffee"
-          },
-          {
-            "ru": "perché",
-            "pt": "why, because"
-          },
-          {
-            "ru": "università",
-            "pt": "university"
-          },
-          {
-            "ru": "quattro",
-            "pt": "four"
-          },
-          {
-            "ru": "hotel",
-            "pt": "hotel"
-          }
-        ],
-        "tabela": [
-          {
-            "padrao": "stressed syllable",
-            "como": "almost always the second-to-last syllable",
-            "exemplos": "amíco, mámma, bélla"
-          },
-          {
-            "padrao": "written accent",
-            "como": "at the end of the word",
-            "exemplos": "città, caffè, perché, università"
-          },
-          {
-            "padrao": "one-syllable words",
-            "como": "the accent tells two words apart",
-            "exemplos": "è/e, sì/si, là/la"
-          },
-          {
-            "padrao": "h",
-            "como": "never pronounced",
-            "exemplos": "ho, hotel, hanno"
-          },
-          {
-            "padrao": "qu",
-            "como": "kw, the u is heard",
-            "exemplos": "quattro, questo, quando"
-          }
-        ],
-        "erros": [
-          {
-            "errado": "writing «citta» without the accent",
-            "certo": "città",
-            "motivo": "The accent at the end of the word marks the strong syllable."
-          },
-          {
-            "errado": "reading «hotel» with an English h",
-            "certo": "oh-TEL",
-            "motivo": "The Italian «h» is silent."
-          },
-          {
-            "errado": "reading «quattro» as «KAHT-roh»",
-            "certo": "KWAHT-troh",
-            "motivo": "The «u» in «qu» is heard: «kw»."
-          }
-        ],
-        "tag": "Pronunciation"
-      },
-      {
-        "tipo": "gramatica",
-        "min": 3,
-        "titulo": "Tu or Lei",
-        "explicacao": "STEP 1: Italian has two ways of addressing a person. STEP 2: «tu» is for friends, family, children and young people. You ask «Come stai?». STEP 3: «Lei» is for strangers, older people and work situations. You ask «Come sta?». STEP 4: here, «Lei» does not mean «she». It is a form of respect, and the verb takes the «she» form: «sta». STEP 5: when in doubt, use «Lei». Nobody is offended because you are polite. Culture: if the other person wants, they will suggest it themselves: «Diamoci del tu», which means «let's use tu with each other».",
-        "comparacao": "English has only «you» for everyone. In Italian you choose between «tu» and «Lei» from the very first sentence, a bit like choosing between «Hi, Tom» and «Good morning, Mr Smith».",
-        "exemplos": [
-          {
-            "ru": "Come stai?",
-            "pt": "How are you? (to a friend)"
-          },
-          {
-            "ru": "Come sta?",
-            "pt": "How are you? (to a stranger, formal)"
-          },
           {
             "ru": "Sto bene, grazie. E tu?",
-            "pt": "I'm fine, thanks. And you?"
+            "pt": "I'm fine, thank you. And you?"
           },
           {
             "ru": "Sto bene, grazie. E Lei?",
@@ -291,31 +244,22 @@
         ],
         "tabela": [
           {
-            "situacao": "friend, family, young person",
-            "tratamento": "tu",
-            "pergunta": "Come stai?",
-            "resposta": "Sto bene, grazie. E tu?"
+            "tipo": "friends",
+            "exemplo": "Come stai?  Sto bene, grazie. E tu?"
           },
           {
-            "situacao": "stranger, older person, work",
-            "tratamento": "Lei",
-            "pergunta": "Come sta?",
-            "resposta": "Sto bene, grazie. E Lei?"
+            "tipo": "strangers, older people",
+            "exemplo": "Come sta?  Sto bene, grazie. E Lei?"
           }
         ],
         "erros": [
           {
-            "errado": "Come stai, signora Rossi?",
-            "certo": "Come sta, signora Rossi?",
-            "motivo": "With a lady you address formally, you use «Lei», so «sta»."
-          },
-          {
-            "errado": "Come sta? (to a childhood friend)",
-            "certo": "Come stai?",
-            "motivo": "Between friends, «Lei» sounds distant."
+            "errado": "Come ti chiama?",
+            "certo": "Come sta?",
+            "motivo": "Mixing the two forms: for health, use «Come sta?» (formal) or «Come stai?» (informal)."
           }
         ],
-        "tag": "Addressing people"
+        "tag": "Greetings"
       },
       {
         "tipo": "exercicios",
@@ -324,105 +268,77 @@
           {
             "tipo": "audio-recognition",
             "enunciado": "Listen and choose.",
-            "audio": "palla",
+            "audio": "bene",
             "opcoes": [
-              "pala",
-              "palla",
-              "balla"
+              "bene",
+              "been",
+              "ben"
             ],
-            "gabarito": "palla",
-            "explicacao": "Listen to the long consonant: «palla» has two «l» and means ball. «Pala» is a shovel, with a short «l».",
+            "gabarito": "bene",
+            "explicacao": "The final «e» is pronounced.",
             "id": "it-001-e01"
           },
           {
             "tipo": "audio-recognition",
             "enunciado": "Listen and choose.",
-            "audio": "nonno",
+            "audio": "quattro",
             "opcoes": [
-              "nono",
-              "nonno",
-              "nonna"
+              "quattro",
+              "quatro",
+              "cuatro"
             ],
-            "gabarito": "nonno",
-            "explicacao": "Listen to the long «nn» and the final «o». «Nonna» would end in «a» and mean grandmother.",
+            "gabarito": "quattro",
+            "explicacao": "The «tt» is double and long.",
             "id": "it-001-e02"
           },
           {
             "tipo": "audio-recognition",
             "enunciado": "Listen and choose.",
-            "audio": "Come sta?",
+            "audio": "città",
             "opcoes": [
-              "Come stai?",
-              "Come sta?",
-              "Chi è?"
+              "città",
+              "citta",
+              "cita"
             ],
-            "gabarito": "Come sta?",
-            "explicacao": "Listen to the ending: «sta» is the formal question, for someone you call «Lei». «Stai» ends in «i».",
+            "gabarito": "città",
+            "explicacao": "The accent on the last vowel marks the stress.",
             "id": "it-001-e03"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Listen and write.",
-            "audio": "sette",
-            "respostaEsperada": "sette",
-            "explicacao": "Write: sette. Listen to the long «tt»: there are two «t».",
+            "tipo": "multiple-choice",
+            "enunciado": "Which greeting do you use for a stranger?",
+            "opcoes": [
+              "Come stai?",
+              "Come sta?",
+              "Come ti chiami?"
+            ],
+            "gabarito": "Come sta?",
+            "explicacao": "Formal «Lei» takes «sta».",
             "id": "it-001-e04"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Listen and write.",
-            "audio": "Sto bene, grazie",
-            "respostaEsperada": "Sto bene, grazie",
-            "explicacao": "Write: Sto bene, grazie. Listen to the full «e» at the end of «bene» and the «tsee-eh» of «grazie».",
+            "tipo": "multiple-choice",
+            "enunciado": "How is the final «e» of «bene» pronounced?",
+            "opcoes": [
+              "silent",
+              "«eh»",
+              "«ay»"
+            ],
+            "gabarito": "«eh»",
+            "explicacao": "Italian vowels are always pronounced and pure.",
             "id": "it-001-e05"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "How does the final «e» of «bene» sound?",
-            "opcoes": [
-              "like «ay»",
-              "like «eh»",
-              "silent"
-            ],
-            "gabarito": "like «eh»",
-            "explicacao": "Italian vowels are clear and complete. The final «e» is always «eh».",
-            "id": "it-001-e06"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "Which word means «ball»?",
-            "opcoes": [
-              "pala",
-              "palla",
-              "pallo"
-            ],
-            "gabarito": "palla",
-            "explicacao": "The double consonant changes the meaning: «pala» is a shovel and «palla» is a ball.",
-            "id": "it-001-e07"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Put in order: «Piacere, come sta?»",
-            "opcoes": [
-              "Piacere,",
-              "come",
-              "sta?"
-            ],
-            "gabarito": "Piacere, come sta?",
-            "explicacao": "With «sta» the question is formal, for someone you call «Lei».",
-            "id": "it-001-e08"
           }
         ]
       },
       {
         "tipo": "producao",
-        "min": 3,
-        "enunciado": "Read out loud, with full vowels: «Buongiorno! Come sta? — Sto bene, grazie. E Lei?» Then, with a friend: «Ciao! Come stai? — Bene, grazie. E tu?»"
+        "min": 2,
+        "enunciado": "Greet a friend and then a shop owner, using «Come stai?» and «Come sta?». Answer each one with «Sto bene, grazie»."
       },
       {
         "tipo": "revisao",
-        "min": 2,
-        "enunciado": "Read out loud: cena, che, gente, spaghetti, scuola, gnocchi, famiglia. What is the sound of each letter group?"
+        "min": 1,
+        "enunciado": "Pronounce «palla» and «pala», «nonno» and «nono» aloud, and mark the doubled consonant."
       }
     ]
   },

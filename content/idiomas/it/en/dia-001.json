@@ -10,7 +10,7 @@
   "aula": {
     "numero": 1,
     "titulo": "Sounds, alphabet and first words",
-    "objetivo": "Spell in Italian, read the letter combinations that change the sound (c, g, ch, gh, sc, gn, gli), hear double consonants and word stress, and make your first greetings, with «tu» and with «Lei».",
+    "objetivo": "Read the Italian alphabet aloud, pronounce the vowels purely, apply the soft and hard rules of «c», «g» and «sc», hear double consonants and stress, and greet people with the right form for a friend and for a stranger.",
     "sessoes": 4,
     "duracaoTotalMin": 120,
     "nivel": "a1"
@@ -21,15 +21,10 @@
     "duracaoMin": 30,
     "blocos": [
       {
-        "tipo": "intro",
-        "min": 3,
-        "texto": "Picture the scene: you arrive in a square in Rome and two friends meet right next to you. In a few seconds you will hear Italian for the first time. You don't need to understand everything. Just listen to the melody. You already know a lot of Italian: pizza, pasta, espresso, cappuccino, gelato, piano, opera, ciao. Italian is written almost exactly as it is spoken, and that helps a lot. But some letter combinations follow sound rules, and that is what this lesson teaches. Next to the words there is an approximate pronunciation in English-style spelling. Capital letters mark the stressed syllable. «ch» is the sound in «church». «j» is the sound in «jet». «ny» is the sound in «canyon» and «ly» the sound in «million». «sh» is the sound in «shoe». «g» and «k» are always hard. Every vowel is pure: «ah», «eh», «ee», «oh», «oo», never glided. It is a guide, not a replacement for the audio: always listen before you repeat."
-      },
-      {
         "tipo": "dialogo",
-        "min": 5,
-        "titulo": "Ciao! Come stai? / Hi! How are you?",
-        "contexto": "Two friends, Marco and Giulia, meet in a square. Listen first, without looking at the translation. Notice the melody and the words you already know.",
+        "min": 4,
+        "titulo": "Ciao, a presto! / Hi, see you soon!",
+        "contexto": "Two friends greet each other and say goodbye. Listen once without reading: the same word, «ciao», opens and closes the conversation.",
         "linhas": [
           {
             "personagem": "Marco",
@@ -52,7 +47,7 @@
           {
             "personagem": "Giulia",
             "ru": "— Bene, bene, grazie!",
-            "pt": "— Fine, fine, thanks!",
+            "pt": "— Very well, thanks!",
             "audio": "Bene, bene, grazie!"
           },
           {
@@ -64,14 +59,14 @@
           {
             "personagem": "Giulia",
             "ru": "— A presto, Marco! Ciao, ciao!",
-            "pt": "— See you soon, Marco! Bye-bye!",
+            "pt": "— See you soon, Marco! Bye, bye!",
             "audio": "A presto, Marco! Ciao, ciao!"
           }
         ]
       },
       {
         "tipo": "alfabeto",
-        "min": 8,
+        "min": 7,
         "grupos": [
           {
             "nome": "Part 1 — A to G",
@@ -79,7 +74,7 @@
               {
                 "maiuscula": "A",
                 "minuscula": "a",
-                "som": "letter name: «ah»",
+                "som": "Name: «ah». Always «ah», as in «father», never «ay» or «uh».",
                 "ipa": "/a/",
                 "exemplo": "amico",
                 "exemploPt": "friend",
@@ -88,16 +83,16 @@
               {
                 "maiuscula": "B",
                 "minuscula": "b",
-                "som": "letter name: «bee»",
+                "som": "Name: «bee». Like English «b».",
                 "ipa": "/bi/",
                 "exemplo": "bene",
-                "exemploPt": "well, fine",
+                "exemploPt": "well",
                 "nome": "bi"
               },
               {
                 "maiuscula": "C",
                 "minuscula": "c",
-                "som": "letter name: «chee»",
+                "som": "Name: «chee». Sounds «k» before a, o, u (casa) and «ch» before e, i.",
                 "ipa": "/tʃi/",
                 "exemplo": "casa",
                 "exemploPt": "house",
@@ -106,7 +101,7 @@
               {
                 "maiuscula": "D",
                 "minuscula": "d",
-                "som": "letter name: «dee»",
+                "som": "Name: «dee». Like English «d», but with the tongue touching the teeth.",
                 "ipa": "/di/",
                 "exemplo": "dieci",
                 "exemploPt": "ten",
@@ -115,7 +110,7 @@
               {
                 "maiuscula": "E",
                 "minuscula": "e",
-                "som": "letter name: «eh»",
+                "som": "Name: «eh». A short «eh», as in «bed», with no glide to «ay».",
                 "ipa": "/e/",
                 "exemplo": "essere",
                 "exemploPt": "to be",
@@ -124,7 +119,7 @@
               {
                 "maiuscula": "F",
                 "minuscula": "f",
-                "som": "letter name: «EF-feh»",
+                "som": "Name: «EF-feh». Like English «f».",
                 "ipa": "/ˈɛffe/",
                 "exemplo": "fame",
                 "exemploPt": "hunger",
@@ -133,7 +128,7 @@
               {
                 "maiuscula": "G",
                 "minuscula": "g",
-                "som": "letter name: «jee»",
+                "som": "Name: «jee». Hard «g» before a, o, u (gatto); «j» before e, i.",
                 "ipa": "/dʒi/",
                 "exemplo": "gatto",
                 "exemploPt": "cat",
@@ -142,12 +137,12 @@
             ]
           },
           {
-            "nome": "Part 2 — H to P",
+            "nome": "Part 2 — H to O",
             "letras": [
               {
                 "maiuscula": "H",
                 "minuscula": "h",
-                "som": "letter name: «AHK-kah» (the h is never pronounced)",
+                "som": "Name: «AHK-kah». Always silent: «hotel» starts with «o».",
                 "ipa": "/ˈakka/",
                 "exemplo": "hotel",
                 "exemploPt": "hotel",
@@ -156,7 +151,7 @@
               {
                 "maiuscula": "I",
                 "minuscula": "i",
-                "som": "letter name: «ee»",
+                "som": "Name: «ee». Like «ee» in «machine».",
                 "ipa": "/i/",
                 "exemplo": "Italia",
                 "exemploPt": "Italy",
@@ -165,7 +160,7 @@
               {
                 "maiuscula": "L",
                 "minuscula": "l",
-                "som": "letter name: «EL-leh»",
+                "som": "Name: «EL-leh». A light «l» made with the tip of the tongue, never the dark English «l» of «full».",
                 "ipa": "/ˈɛlle/",
                 "exemplo": "latte",
                 "exemploPt": "milk",
@@ -174,16 +169,16 @@
               {
                 "maiuscula": "M",
                 "minuscula": "m",
-                "som": "letter name: «EM-meh»",
+                "som": "Name: «EM-meh». Like English «m».",
                 "ipa": "/ˈɛmme/",
                 "exemplo": "mamma",
-                "exemploPt": "mum, mom",
+                "exemploPt": "mum",
                 "nome": "émme"
               },
               {
                 "maiuscula": "N",
                 "minuscula": "n",
-                "som": "letter name: «EN-neh»",
+                "som": "Name: «EN-neh». Like English «n».",
                 "ipa": "/ˈɛnne/",
                 "exemplo": "notte",
                 "exemploPt": "night",
@@ -192,30 +187,30 @@
               {
                 "maiuscula": "O",
                 "minuscula": "o",
-                "som": "letter name: «oh»",
+                "som": "Name: «oh». A pure «oh», as in «more», with no glide to «w».",
                 "ipa": "/ɔ/",
                 "exemplo": "otto",
                 "exemploPt": "eight",
                 "nome": "ó"
-              },
-              {
-                "maiuscula": "P",
-                "minuscula": "p",
-                "som": "letter name: «pee»",
-                "ipa": "/pi/",
-                "exemplo": "pane",
-                "exemploPt": "bread",
-                "nome": "pi"
               }
             ]
           },
           {
-            "nome": "Part 3 — Q to Z",
+            "nome": "Part 3 — P to Z",
             "letras": [
+              {
+                "maiuscula": "P",
+                "minuscula": "p",
+                "som": "Name: «pee». Like English «p», but with no puff of air.",
+                "ipa": "/pi/",
+                "exemplo": "pane",
+                "exemploPt": "bread",
+                "nome": "pi"
+              },
               {
                 "maiuscula": "Q",
                 "minuscula": "q",
-                "som": "letter name: «koo»",
+                "som": "Name: «koo». Always followed by «u»: «qu» sounds «kw».",
                 "ipa": "/ku/",
                 "exemplo": "quattro",
                 "exemploPt": "four",
@@ -224,7 +219,7 @@
               {
                 "maiuscula": "R",
                 "minuscula": "r",
-                "som": "letter name: «ER-reh» (a rolled r, one tap or more)",
+                "som": "Name: «ER-reh». Tap the tongue once on the ridge behind the teeth; do not use the English «r».",
                 "ipa": "/ˈɛrre/",
                 "exemplo": "rosso",
                 "exemploPt": "red",
@@ -233,7 +228,7 @@
               {
                 "maiuscula": "S",
                 "minuscula": "s",
-                "som": "letter name: «ES-seh»",
+                "som": "Name: «ES-seh». Like English «s»; between vowels it is often «z».",
                 "ipa": "/ˈɛsse/",
                 "exemplo": "sole",
                 "exemploPt": "sun",
@@ -242,7 +237,7 @@
               {
                 "maiuscula": "T",
                 "minuscula": "t",
-                "som": "letter name: «tee»",
+                "som": "Name: «tee». Like English «t», but with the tongue touching the teeth and no puff.",
                 "ipa": "/ti/",
                 "exemplo": "tavolo",
                 "exemploPt": "table",
@@ -251,7 +246,7 @@
               {
                 "maiuscula": "U",
                 "minuscula": "u",
-                "som": "letter name: «oo»",
+                "som": "Name: «oo». Like «oo» in «food».",
                 "ipa": "/u/",
                 "exemplo": "uno",
                 "exemploPt": "one",
@@ -260,7 +255,7 @@
               {
                 "maiuscula": "V",
                 "minuscula": "v",
-                "som": "letter name: «voo»",
+                "som": "Name: «voo». Like English «v».",
                 "ipa": "/vu/",
                 "exemplo": "vino",
                 "exemploPt": "wine",
@@ -269,7 +264,7 @@
               {
                 "maiuscula": "Z",
                 "minuscula": "z",
-                "som": "letter name: «DZEH-tah»",
+                "som": "Name: «DZEH-tah». Sounds «ts» (as in «pizza») or «dz».",
                 "ipa": "/ˈdzɛta/",
                 "exemplo": "zucchero",
                 "exemploPt": "sugar",
@@ -278,12 +273,12 @@
             ]
           },
           {
-            "nome": "Letters from foreign words (J, K, W, X, Y)",
+            "nome": "Foreign letters — J K W X Y",
             "letras": [
               {
                 "maiuscula": "J",
                 "minuscula": "j",
-                "som": "letter name: «ee LOON-gah»",
+                "som": "Name: «ee LOON-gah». Only in borrowed words.",
                 "ipa": "/i ˈluŋga/",
                 "exemplo": "jeans",
                 "exemploPt": "jeans",
@@ -292,7 +287,7 @@
               {
                 "maiuscula": "K",
                 "minuscula": "k",
-                "som": "letter name: «KAHP-pah»",
+                "som": "Name: «KAHP-pah». Only in borrowed words; the «k» sound is usually written «c» or «ch».",
                 "ipa": "/ˈkappa/",
                 "exemplo": "kiwi",
                 "exemploPt": "kiwi",
@@ -301,7 +296,7 @@
               {
                 "maiuscula": "W",
                 "minuscula": "w",
-                "som": "letter name: «DOHP-pyah voo»",
+                "som": "Name: «DOHP-pyah voo». Only in borrowed words.",
                 "ipa": "/ˈdoppja vu/",
                 "exemplo": "weekend",
                 "exemploPt": "weekend",
@@ -310,7 +305,7 @@
               {
                 "maiuscula": "X",
                 "minuscula": "x",
-                "som": "letter name: «eeks»",
+                "som": "Name: «eeks». Only in borrowed words.",
                 "ipa": "/iks/",
                 "exemplo": "taxi",
                 "exemploPt": "taxi",
@@ -319,10 +314,10 @@
               {
                 "maiuscula": "Y",
                 "minuscula": "y",
-                "som": "letter name: «EEP-see-lon»",
+                "som": "Name: «EE-psee-lohn». Only in borrowed words.",
                 "ipa": "/ˈipsilon/",
                 "exemplo": "yogurt",
-                "exemploPt": "yoghurt",
+                "exemploPt": "yogurt",
                 "nome": "ípsilon"
               }
             ]
@@ -331,26 +326,26 @@
       },
       {
         "tipo": "palavras",
-        "min": 5,
+        "min": 3,
         "itens": [
           {
             "ru": "ciao",
             "translit": "chow",
-            "pt": "hi, bye (informal)",
+            "pt": "hello, goodbye (informal)",
             "en": "",
             "audio": "ciao"
           },
           {
             "ru": "buongiorno",
             "translit": "bwohn-JOR-noh",
-            "pt": "good morning",
+            "pt": "good morning, good day",
             "en": "",
             "audio": "buongiorno"
           },
           {
             "ru": "buonasera",
             "translit": "bwoh-nah-SEH-rah",
-            "pt": "good afternoon, good evening (when arriving)",
+            "pt": "good evening",
             "en": "",
             "audio": "buonasera"
           },
@@ -363,7 +358,7 @@
           },
           {
             "ru": "grazie",
-            "translit": "GRAHT-see-eh",
+            "translit": "GRAH-tsyeh",
             "pt": "thank you",
             "en": "",
             "audio": "grazie"
@@ -371,7 +366,7 @@
           {
             "ru": "prego",
             "translit": "PREH-goh",
-            "pt": "you're welcome; please, go ahead (when offering)",
+            "pt": "you're welcome; please, go ahead",
             "en": "",
             "audio": "prego"
           },
@@ -393,10 +388,10 @@
       },
       {
         "tipo": "gramatica",
-        "min": 5,
-        "titulo": "When to use each greeting",
-        "explicacao": "STEP 1: «ciao» is the greeting for friends and family. It means hi and also bye. STEP 2: «buongiorno» works in the morning and into the early afternoon. STEP 3: «buonasera» works from late afternoon onwards, when you arrive somewhere. STEP 4: to leave politely, say «arrivederci». It works with everyone. STEP 5: «grazie» says thank you and «prego» answers it. It means «you're welcome». When someone offers you something, «prego» also means «go ahead, help yourself». STEP 6: «scusi» asks a stranger for permission or says sorry. Between friends, you say «scusa». STEP 7: «per favore» is «please». Culture: in Italy, when you walk into a bar or a shop you say «buongiorno» to the people there. Walking in silently sounds rude.",
-        "comparacao": "in English «hi» and «bye» work with anyone. In Italian, «ciao» is only for people you know well. With strangers, use «buongiorno», «buonasera» and «arrivederci».",
+        "min": 7,
+        "titulo": "Which greeting for which person",
+        "explicacao": "STEP 1: «ciao» is for friends, family and people your own age. It means both «hello» and «goodbye», so Italians use it in both directions. STEP 2: with a stranger, an older person or in a shop, use «buongiorno» (from morning until the afternoon) and «buonasera» (from the afternoon on). English «good afternoon» does not exist as a separate greeting: Italian uses «buongiorno» for most of the day. STEP 3: to say goodbye politely, use «arrivederci». With friends, «ciao» or «a presto» (see you soon). STEP 4: «grazie» is thank you, and the answer is «prego». «Prego» also means «please, go ahead» when you hold a door open, so it covers «you're welcome» and «after you». STEP 5: «per favore» is «please», and «scusi» is «excuse me» or «sorry» to someone you address formally. With a friend, use «scusa». STEP 6: pronunciation: «grazie» has a «ts» sound in the middle: «GRAH-tsyeh», not «gray-zee». And «ciao» is one syllable, «chow», as in the English word «chow».",
+        "comparacao": "English speakers already know «ciao» as a casual word, but in Italian it is not for everyone: you do not say it to a stranger or a shop assistant. In English, «hi» and «hello» work with nearly everyone, while Italian splits the choice by relationship and time of day. «Prego» is the other surprise: it is not only «you are welcome», but also «please go ahead».",
         "exemplos": [
           {
             "ru": "Ciao, Marco!",
@@ -407,68 +402,164 @@
             "pt": "Good morning, madam!"
           },
           {
-            "ru": "Buonasera!",
-            "pt": "Good evening!"
-          },
-          {
             "ru": "Grazie! — Prego.",
             "pt": "Thank you! — You're welcome."
-          },
-          {
-            "ru": "Scusi, signora!",
-            "pt": "Excuse me, madam!"
-          },
-          {
-            "ru": "Arrivederci!",
-            "pt": "Bye, see you later!"
           }
         ],
         "tabela": [
           {
-            "situacao": "friend or family",
-            "diga": "ciao",
-            "exemplo": "Ciao, Giulia!"
+            "tipo": "friends and family",
+            "exemplo": "Ciao, Marco!"
           },
           {
-            "situacao": "stranger, in the morning",
-            "diga": "buongiorno",
-            "exemplo": "Buongiorno, signora!"
-          },
-          {
-            "situacao": "stranger, early evening",
-            "diga": "buonasera",
-            "exemplo": "Buonasera, signore!"
-          },
-          {
-            "situacao": "leaving, politely",
-            "diga": "arrivederci",
-            "exemplo": "Arrivederci, signora!"
+            "tipo": "strangers, shops, older people",
+            "exemplo": "Buongiorno, signora!  Buonasera!"
           }
         ],
         "erros": [
           {
-            "errado": "Ciao, signora Rossi!",
-            "certo": "Buongiorno, signora Rossi!",
-            "motivo": "«Ciao» is for people you know well. With a lady you don't know, use «buongiorno»."
+            "errado": "Ciao, signora!",
+            "certo": "Buongiorno, signora!",
+            "motivo": "To a woman you do not know well, use «buongiorno», not «ciao»."
           },
           {
-            "errado": "Prego! (to say thank you)",
-            "certo": "Grazie!",
-            "motivo": "The person who is thanking says «grazie». «Prego» is the reply."
+            "errado": "Scusa, signora!",
+            "certo": "Scusi, signora!",
+            "motivo": "Formal «you» takes «scusi»; «scusa» is for friends."
           },
           {
-            "errado": "Buongiorno! (at nine in the evening)",
+            "errado": "Buongiorno!",
             "certo": "Buonasera!",
-            "motivo": "From mid-afternoon on, «buongiorno» gives way to «buonasera»."
+            "motivo": "From the afternoon on, switch to «buonasera»."
           }
         ],
         "tag": "Greetings"
       },
       {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Italian spelling is almost phonetic",
+        "explicacao": "STEP 1: the Italian alphabet has 21 letters. The letters J, K, W, X and Y appear only in borrowed words such as «jeans», «kiwi», «weekend», «taxi» and «yogurt». STEP 2: unlike English, Italian spelling is a very good guide to sound. Almost every letter is pronounced, and each vowel has one clear sound. STEP 3: the vowels are «a» (ah), «e» (eh), «i» (ee), «o» (oh), «u» (oo). They do not glide: «o» is not «oh-oo», and «e» is not «ay-ee». STEP 4: «h» is silent. It never makes a sound by itself, so «hotel» is «oh-TEHL». STEP 5: «c» and «g» have two sounds each, depending on the next letter. You will practice this in the next session. STEP 6: double letters are doubled in sound too, as you will see in lesson 3 of this unit.",
+        "comparacao": "English spelling does not follow sound: «though», «through», «tough». Italian does. The price is that you must pronounce every letter and keep vowels pure. The one thing that does carry over from English is the alphabet shape: the same letters, but with the five foreign ones missing.",
+        "exemplos": [
+          {
+            "ru": "amico",
+            "pt": "friend"
+          },
+          {
+            "ru": "casa",
+            "pt": "house"
+          },
+          {
+            "ru": "gatto",
+            "pt": "cat"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "21 Italian letters",
+            "exemplo": "A B C D E F G H I L M N O P Q R S T U V Z"
+          },
+          {
+            "tipo": "only in borrowed words",
+            "exemplo": "J K W X Y"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Kasa",
+            "certo": "casa",
+            "motivo": "The sound «k» before «a» is written «c»; «k» is rare."
+          },
+          {
+            "errado": "Jelato",
+            "certo": "gelato",
+            "motivo": "The «j» sound before «e» and «i» is written «g», not «j»."
+          },
+          {
+            "errado": "Quatro",
+            "certo": "quattro",
+            "motivo": "Double consonants are real: «tt» is held longer."
+          }
+        ],
+        "tag": "Pronunciation"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 2,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "buongiorno",
+            "opcoes": [
+              "buongiorno",
+              "buonasera",
+              "arrivederci"
+            ],
+            "gabarito": "buongiorno",
+            "explicacao": "Listen to the start: «buon-» and the ending «-giorno» (day).",
+            "id": "it-001-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "arrivederci",
+            "opcoes": [
+              "arrivederci",
+              "ciao",
+              "grazie"
+            ],
+            "gabarito": "arrivederci",
+            "explicacao": "Four syllables: «ahr-ree-veh-DEHR-chee».",
+            "id": "it-001-e02"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What do you say to an older stranger on meeting?",
+            "opcoes": [
+              "Ciao!",
+              "Buongiorno!",
+              "Grazie!"
+            ],
+            "gabarito": "Buongiorno!",
+            "explicacao": "«Ciao» is for friends, family and people your own age.",
+            "id": "it-001-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you answer «Grazie»?",
+            "opcoes": [
+              "Prego",
+              "Scusi",
+              "Ciao"
+            ],
+            "gabarito": "Prego",
+            "explicacao": "«Prego» is «you are welcome».",
+            "id": "it-001-e04"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Ciao, Marco!»",
+            "opcoes": [
+              "Ciao,",
+              "Marco!"
+            ],
+            "gabarito": "Ciao, Marco!",
+            "explicacao": "Greeting, then the name.",
+            "id": "it-001-e05"
+          }
+        ]
+      },
+      {
         "tipo": "producao",
-        "min": 4,
-        "enunciado": "Spell your first name and your surname out loud. Then say: «Buongiorno! Grazie. Arrivederci.» Finally, greet a friend: «Ciao! Come stai?»",
-        "exemplo": "F-E-L-I-P-E: EF-feh, eh, EL-leh, ee, pee, eh"
+        "min": 1,
+        "enunciado": "Say the five basic greetings aloud and choose which one you would use for a friend and which for a shopkeeper."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say the alphabet aloud from A to Z and spell your own name in Italian letter names."
       }
     ]
   },

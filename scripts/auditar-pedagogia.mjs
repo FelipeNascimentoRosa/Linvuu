@@ -68,7 +68,7 @@ function botoesDoDia(d) {
     if (b.tipo === 'palavras' || b.tipo === 'vocabulario') (b.itens ?? []).forEach((i) => add(i.audio ?? i.ru));
     if (b.tipo === 'dialogo') (b.linhas ?? []).forEach((l) => add(l.audio ?? l.ru));
     if (b.tipo === 'texto') add(b.ru);
-    if (b.tipo === 'gramatica') { o = 'gramatica.exemplo'; (b.exemplos ?? []).forEach((e) => add(String(e.ru ?? '').replace(/s*(.*?)s*$/, ''))); o = 'gramatica.erro-certo'; (b.erros ?? []).forEach((e) => add(e.audio ?? e.certo)); }
+    if (b.tipo === 'gramatica') { o = 'gramatica.exemplo'; (b.exemplos ?? []).forEach((e) => add(String(e.ru ?? '').replace(/\s*\(.*?\)\s*$/, ''))); o = 'gramatica.erro-certo'; (b.erros ?? []).forEach((e) => add(e.audio ?? e.certo)); }
     if (b.tipo === 'exercicios') (b.itens ?? []).forEach((i) => add(i.audio));
   }
   return t;

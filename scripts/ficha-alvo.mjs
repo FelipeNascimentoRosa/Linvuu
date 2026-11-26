@@ -33,12 +33,13 @@ const titulos = titulosDe(id, 'en');
 const tituloEn = (t) => (typeof titulos[t] === 'string' && titulos[t] ? titulos[t] : null);
 
 // Mesmas regras de inventário de scripts/aulas.mjs: o que gera botão de áudio.
+const trilha = JSON.parse(fs.readFileSync(path.join(raiz, 'content', 'trilha.json'), 'utf8'));
 const item = (t, extra = {}) => (t ? { texto: textoParaAudio(t), hash: hash(t), ...extra } : null);
 const sessoes = aula.sessoes.map((s, i) => {
   const inv = [];
   const falantes = new Map();
   for (const b of s.blocos) {
-    if (b.tipo === 'alfabeto') b.grupos.forEach((g) => g.letras.forEach((l) => { inv.push(item(l.exemplo, { bloco: 'alfabeto' }), item(l.nome, { bloco: 'alfabeto' })); }));
+    if (b.tipo === 'alfabeto') b.grupos.forEach((g) => g.letras.forEach((l) => { const L = `${l.maiuscula ?? ''}${l.minuscula ?? ''}`; inv.push(item(l.exemplo, { bloco: 'alfabeto', letra: L, ipa: l.ipa }), item(l.nome, { bloco: 'alfabeto', letra: L, ipa: l.ipa })); }));
     if (b.tipo === 'palavras' || b.tipo === 'vocabulario') b.itens.forEach((x) => inv.push(item(x.audio ?? x.ru, { bloco: 'palavras' })));
     if (b.tipo === 'dialogo') b.linhas.forEach((l) => {
       if (!falantes.has(l.personagem)) falantes.set(l.personagem, `Speaker ${String.fromCharCode(65 + falantes.size)}`);
@@ -50,7 +51,8 @@ const sessoes = aula.sessoes.map((s, i) => {
   }
   const vistos = new Set();
   const unico = inv.filter((x) => x && !vistos.has(x.hash) && vistos.add(x.hash));
-  return { sessao: s.sessao, dia: (n - 1) * 4 + i + 1, titulo: tituloEn(s.titulo), inventario: unico };
+  const dia = (n - 1) * 4 + i + 1;
+  return { sessao: s.sessao, dia, fase: trilha.dias[dia - 1]?.fase ?? Math.ceil(dia / 10), nivel: aula.nivel ?? null, duracaoMin: s.duracaoMin, status: aula.status ?? null, titulo: tituloEn(s.titulo), inventario: unico };
 });
 const ficha = { curso: id, aula: n, nivel: aula.nivel ?? null, tituloEn: tituloEn(aula.titulo), dias: sessoes.map((s) => s.dia), sessoes };
 
@@ -58,8 +60,8 @@ const saida = json ? JSON.stringify(ficha, null, 1) : [
   `# Ficha-alvo — ${id} · aula ${n} · ${String(ficha.nivel ?? '').toUpperCase() || 'CEFR n/d'}`,
   `Title (English): ${ficha.tituloEn ?? '(none yet: write one in English)'}`,
   `Days: ${ficha.dias.join(', ')}. Write every explanation, comparison, error list, distractor and pronunciation note in English from an English speaker's grammar. Do not read the Portuguese course.`,
-  ...sessoes.flatMap((s) => ['', `## Day ${s.dia} (${s.sessao}) — ${s.titulo ?? '(write a title in English)'}`, `Audio inventory (${s.inventario.length}) — hash = MP3 name; keep every sentence below exactly as written:`,
-    ...s.inventario.map((x) => `- ${x.hash} · ${x.bloco}${x.falante ? ` · ${x.falante}/${x.voz}` : ''} · ${x.texto}`)]),
+  ...sessoes.flatMap((s) => ['', `## Day ${s.dia} (${s.sessao}) — ${s.titulo ?? '(write a title in English)'}`, `Metadata (copy as is): fase=${s.fase} nivel=${s.nivel} duracaoMin=${s.duracaoMin} status=${s.status}`, `Audio inventory (${s.inventario.length}) — hash = MP3 name; keep every sentence below exactly as written:`,
+    ...s.inventario.map((x) => `- ${x.hash} · ${x.bloco}${x.falante ? ` · ${x.falante}/${x.voz}` : ''}${x.letra ? ` · letter ${x.letra} ${x.ipa ?? ''}` : ''} · ${x.texto}`)]),
 ].join('\n');
 
 // Trava: nenhuma explicação em português pode ter vazado para a saída.

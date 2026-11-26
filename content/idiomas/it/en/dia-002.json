@@ -10,7 +10,7 @@
   "aula": {
     "numero": 1,
     "titulo": "Sounds, alphabet and first words",
-    "objetivo": "Spell in Italian, read the letter combinations that change the sound (c, g, ch, gh, sc, gn, gli), hear double consonants and word stress, and make your first greetings, with «tu» and with «Lei».",
+    "objetivo": "Read the Italian alphabet aloud, pronounce the vowels purely, apply the soft and hard rules of «c», «g» and «sc», hear double consonants and stress, and greet people with the right form for a friend and for a stranger.",
     "sessoes": 4,
     "duracaoTotalMin": 120,
     "nivel": "a1"
@@ -22,7 +22,7 @@
     "blocos": [
       {
         "tipo": "palavras",
-        "min": 6,
+        "min": 5,
         "itens": [
           {
             "ru": "cena",
@@ -61,7 +61,7 @@
           },
           {
             "ru": "spaghetti",
-            "translit": "spah-GHET-tee",
+            "translit": "spah-GHEHT-tee",
             "pt": "spaghetti",
             "en": "",
             "audio": "spaghetti"
@@ -89,7 +89,7 @@
           },
           {
             "ru": "figlio",
-            "translit": "FEEL-yoh",
+            "translit": "FEE-lyoh",
             "pt": "son",
             "en": "",
             "audio": "figlio"
@@ -98,26 +98,14 @@
       },
       {
         "tipo": "gramatica",
-        "min": 8,
-        "titulo": "The two sounds of c and g",
-        "explicacao": "You have just heard «cena», which sounds «CHEH-nah», and «chi», which sounds «kee». Both words start with «c», but the sound is different. Here is why. STEP 1: the letter «c» has two sounds. Before «a», «o» and «u», it is hard, like the «c» in «cat»: «casa», «come», «cura». STEP 2: before «e» and «i», «c» sounds «ch», as in «church»: «cena» (CHEH-nah), «cinema» (CHEE-neh-mah), «ciao» (chow). STEP 3: to keep the hard sound before «e» and «i», Italian writes «ch». The «h» is silent. It only protects the «c»: «che» (keh), «chi» (kee), «perché» (pehr-KEH), «chilo» (KEE-loh). STEP 4: the letter «g» works the same way. Before «a», «o» and «u», it is hard: «gatto», «gola», «gusto». STEP 5: before «e» and «i», «g» sounds «j», as in «jet»: «gente» (JEN-teh), «gita» (JEE-tah). STEP 6: for a hard «g» before «e» and «i», Italian writes «gh»: «spaghetti» (spah-GHET-tee), «ghiaccio» (GYAHT-choh). STEP 7: in «ciao», «giorno» and «arancia», the «i» is barely heard. It only signals that the «c» and the «g» are soft: «ciao» (chow), «giorno» (JOR-noh), «arancia» (ah-RAHN-chah).",
-        "comparacao": "English has the same two sounds for «c» and «g» («cat» and «city», «gold» and «gem»), but it does not always warn you which one comes («get» is hard, «gel» is soft). Italian is completely regular: before «e» and «i», «c» and «g» are soft unless an «h» is written. Careful: in Italian «ch» is always «k», never the «ch» of «church».",
+        "min": 9,
+        "titulo": "«C» and «g»: hard before a, o, u and soft before e, i",
+        "explicacao": "STEP 1: the letters «c» and «g» each have two sounds in Italian, and the next letter decides. STEP 2: before «a», «o», «u» or a consonant, «c» is hard, like English «k»: «casa» (KAH-zah). Before «e» or «i», it is soft, like English «ch»: «cena» (CHEH-nah), «amici» (ah-MEE-chee). STEP 3: the same applies to «g». Before «a», «o», «u», it is hard, as in «go»: «gatto» (GAHT-toh). Before «e» or «i», it is soft, like English «j»: «gelato» (jeh-LAH-toh), «gente» (JEHN-teh). STEP 4: English works the same way in «cat» and «city», «go» and «gem», but Italian is more regular, so you can trust the rule every time. STEP 5: to keep the hard sound before «e» or «i», Italian writes «ch» and «gh»: «chi» (kee, who), «spaghetti» (spah-GHEHT-tee). The «h» is silent, and only tells you to keep the hard sound. STEP 6: a silent «i» can soften the sound before «a», «o» or «u»: «ciao» (chow), «giorno» (JOR-noh). The «i» is not pronounced separately: you hear «ch» + «ow», not «chee-ow».",
+        "comparacao": "English has the same hard-soft split in «cat» and «city», but it is less reliable: «gift», «get» and «girl» are hard before «i» or «e», where Italian would make them soft. In Italian the rule has no exceptions at this level. The spelling «gh» in «spaghetti» is the same as in English, which helps. The Italian «ch» in «chi» is not English «ch»: it is a «k».",
         "exemplos": [
-          {
-            "ru": "cena",
-            "pt": "dinner"
-          },
-          {
-            "ru": "chi",
-            "pt": "who"
-          },
           {
             "ru": "gente",
             "pt": "people"
-          },
-          {
-            "ru": "spaghetti",
-            "pt": "spaghetti"
           },
           {
             "ru": "ciao",
@@ -130,142 +118,184 @@
         ],
         "tabela": [
           {
-            "grafia": "c + a, o, u",
-            "som": "k (hard)",
-            "exemplos": "casa, come, cura"
+            "tipo": "c + a, o, u → k",
+            "exemplo": "casa, come, cura"
           },
           {
-            "grafia": "c + e, i",
-            "som": "ch (as in «church»)",
-            "exemplos": "cena, cinema, ciao"
+            "tipo": "c + e, i → ch",
+            "exemplo": "cena, amici"
           },
           {
-            "grafia": "ch + e, i",
-            "som": "k (hard)",
-            "exemplos": "che, chi, perché"
+            "tipo": "ch + e, i → k",
+            "exemplo": "chi, che"
           },
           {
-            "grafia": "g + a, o, u",
-            "som": "g (hard)",
-            "exemplos": "gatto, gola, gusto"
+            "tipo": "g + a, o, u → g",
+            "exemplo": "gatto, gola"
           },
           {
-            "grafia": "g + e, i",
-            "som": "j (as in «jet»)",
-            "exemplos": "gente, gita, giorno"
+            "tipo": "g + e, i → j",
+            "exemplo": "gelato, gente"
           },
           {
-            "grafia": "gh + e, i",
-            "som": "g (hard)",
-            "exemplos": "spaghetti, ghiaccio"
+            "tipo": "gh + e, i → g",
+            "exemplo": "spaghetti, ghiaccio"
           }
         ],
         "erros": [
           {
-            "errado": "reading «che» as «cheh»",
-            "certo": "keh",
-            "motivo": "With «ch» the sound is hard. The «h» protects the «c»."
+            "errado": "Spageti",
+            "certo": "spaghetti",
+            "motivo": "You need «gh» to keep the hard «g» before «e» or «i», and the double «t»."
           },
           {
-            "errado": "reading «ciao» as «see-ow»",
-            "certo": "chow",
-            "motivo": "«c» before «i» sounds «ch», and the «i» is barely heard."
+            "errado": "Chena",
+            "certo": "cena",
+            "motivo": "«Ch» would make a «k» sound. For «ch» as in «cheese», write «c» before «e»."
           },
           {
-            "errado": "reading «spaghetti» as «spah-JET-tee»",
-            "certo": "spah-GHET-tee",
-            "motivo": "«gh» gives a hard «g». Without the «h», «ghe» would become «jeh»."
+            "errado": "Gato",
+            "certo": "gatto",
+            "motivo": "The double «t» is real: hold the sound longer."
           }
         ],
         "tag": "Pronunciation"
       },
       {
         "tipo": "gramatica",
-        "min": 7,
-        "titulo": "sc, gn, gli, and t and d",
-        "explicacao": "Now three combinations that English spells differently. STEP 1: «sc» before «e» and «i» sounds «sh», as in «shoe»: «scena» (SHEH-nah), «sci» (shee), «pesce» (PEH-sheh). STEP 2: before «a», «o» and «u», and also in «sch», «sc» sounds «sk»: «scuola» (SKWOH-lah), «scarpa» (SKAHR-pah), «schermo» (SKEHR-moh). STEP 3: «gn» sounds «ny», like the middle of «canyon»: «gnocchi» (NYOHK-kee), «signora» (see-NYOH-rah), «bagno» (BAH-nyoh). The «g» is never pronounced on its own. STEP 4: «gli» sounds «ly», like the «lli» in «million», said as one quick sound: «figlio» (FEEL-yoh), «famiglia» (fah-MEEL-yah), «aglio» (AHL-yoh). STEP 5: watch the vowels and the «t» and «d». The Italian «i» is always «ee»: «tipo» is «TEE-poh», never like English «type». The «t» and the «d» are made with the tongue against the back of the teeth, with no puff of air, and they never soften: «dito» keeps a clear «t», never the soft «d» of American «water».",
-        "comparacao": "English «sh» is written «sc» in Italian before «e» and «i». The «ny» of «canyon» and the «lli» of «million» are written «gn» and «gli». And the English habits of reading «i» as «eye» or softening a «t» between vowels do not exist in Italian.",
+        "min": 8,
+        "titulo": "«Sc», «gn» and «gli»: three sounds with no English letter",
+        "explicacao": "STEP 1: «sc» follows the same rule as «c». Before «a», «o», «u», it is «sk»: «scuola» (SKWOH-lah). Before «e», «i», it is «sh»: «pesce» (PEH-sheh), «scena». STEP 2: to keep «sk» before «e» or «i», write «sch»: «schema». STEP 3: «gn» is a single sound, like «ny» in «canyon»: «gnocchi» (NYOHK-kee), «Spagna». STEP 4: «gli» is a single sound too, like «lli» in «million»: «figlio» (FEE-lyoh), «famiglia» (fah-MEE-lyah). STEP 5: before the vowel «i», the «g» of «gli» is not pronounced separately: you do not say «gee-lee». STEP 6: the exception is a few words where «gli» is pronounced «g-l-i», such as «glicine», but you will not need them yet.",
+        "comparacao": "English has «sh» in «ship», but it spells it with «sh», not «sc». Italian reserves «sc» for it, so do not read «pesce» as «PESS-keh». «Gnocchi» is already on English menus, but many English speakers say it «NYOH-kee» or «NOH-kee»; the Italian sound starts with «ny». And «famiglia» has no «g» sound at all.",
         "exemplos": [
           {
             "ru": "scena",
-            "pt": "scene (in a play)"
-          },
-          {
-            "ru": "scuola",
-            "pt": "school"
-          },
-          {
-            "ru": "gnocchi",
-            "pt": "gnocchi"
+            "pt": "scene"
           },
           {
             "ru": "famiglia",
             "pt": "family"
           },
           {
-            "ru": "figlio",
-            "pt": "son"
-          },
-          {
             "ru": "tipo",
-            "pt": "kind, type"
+            "pt": "type"
           }
         ],
         "tabela": [
           {
-            "grafia": "sc + e, i",
-            "som": "sh (as in «shoe»)",
-            "exemplos": "scena, sci, pesce"
+            "tipo": "sc + a, o, u → sk",
+            "exemplo": "scuola, scala"
           },
           {
-            "grafia": "sc + a, o, u; sch",
-            "som": "sk",
-            "exemplos": "scuola, scala, schermo"
+            "tipo": "sc + e, i → sh",
+            "exemplo": "pesce, scena"
           },
           {
-            "grafia": "gn",
-            "som": "ny (as in «canyon»)",
-            "exemplos": "gnocchi, signora, bagno"
+            "tipo": "gn → ny",
+            "exemplo": "gnocchi, Spagna"
           },
           {
-            "grafia": "gli",
-            "som": "ly (as in «million»)",
-            "exemplos": "figlio, famiglia, aglio"
-          },
-          {
-            "grafia": "t, d (even before i)",
-            "som": "crisp t and d, tongue against the teeth",
-            "exemplos": "tipo, dire, dito"
+            "tipo": "gli → ly",
+            "exemplo": "figlio, famiglia"
           }
         ],
         "erros": [
           {
-            "errado": "reading «tipo» as «TIE-poh»",
-            "certo": "TEE-poh",
-            "motivo": "In Italian, «i» is always «ee»: «tipo» never sounds like English «type»."
+            "errado": "Pessce",
+            "certo": "pesce",
+            "motivo": "One «s» and «c»: «sc» before «e» makes the «sh» sound."
           },
           {
-            "errado": "reading «scuola» as «SHWOH-lah»",
-            "certo": "SKWOH-lah",
-            "motivo": "Before «u», «sc» sounds «sk»."
+            "errado": "Famila",
+            "certo": "famiglia",
+            "motivo": "«Gli» is the sound «ly»; do not drop the «g»."
           },
           {
-            "errado": "reading «famiglia» with a hard «g», as in «glee»",
-            "certo": "fah-MEEL-yah",
-            "motivo": "«gli» is a single sound, like the «lli» in «million»."
+            "errado": "Gnochi",
+            "certo": "gnocchi",
+            "motivo": "The «cc» is a double consonant."
           }
         ],
         "tag": "Pronunciation"
       },
       {
+        "tipo": "exercicios",
+        "min": 5,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "cena",
+            "opcoes": [
+              "cena",
+              "sena",
+              "chena"
+            ],
+            "gabarito": "cena",
+            "explicacao": "«Ce» sounds «cheh»: soft «c» before «e».",
+            "id": "it-001-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "chi",
+            "opcoes": [
+              "chi",
+              "ci",
+              "sci"
+            ],
+            "gabarito": "chi",
+            "explicacao": "«Chi» is «kee»: the «h» keeps the hard sound.",
+            "id": "it-001-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "pesce",
+            "opcoes": [
+              "pesce",
+              "pesche",
+              "pesse"
+            ],
+            "gabarito": "pesce",
+            "explicacao": "«Sce» is «sheh».",
+            "id": "it-001-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How does «gn» sound in «gnocchi»?",
+            "opcoes": [
+              "like «ny» in canyon",
+              "like «g» + «n»",
+              "like «n»"
+            ],
+            "gabarito": "like «ny» in canyon",
+            "explicacao": "One soft nasal sound: NYOHK-kee.",
+            "id": "it-001-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How does «gli» sound in «famiglia»?",
+            "opcoes": [
+              "like «lli» in million",
+              "like «gl» in «glad»",
+              "like «ly» only"
+            ],
+            "gabarito": "like «lli» in million",
+            "explicacao": "Listen: fah-MEE-lyah.",
+            "id": "it-001-e05"
+          }
+        ]
+      },
+      {
         "tipo": "producao",
-        "min": 6,
-        "enunciado": "Say it five times, slowly and then faster: «Che cena! Chi è Gianni? Il figlio di Giorgio mangia gli gnocchi.» Try not to say «ch» in «chi». Then read out loud, without looking at the pronunciation: cena, chi, gelato, gatto, scuola, gnocchi, figlio."
+        "min": 2,
+        "enunciado": "Say these words aloud twice: «cena, chi, gatto, gelato, scuola, pesce». For each one, say which rule you used."
       },
       {
         "tipo": "revisao",
-        "min": 3,
-        "enunciado": "Spell the name of your town in Italian and say «buongiorno», «grazie» and «arrivederci» without looking."
+        "min": 1,
+        "enunciado": "Explain aloud why «spaghetti» needs an «h» and why «ciao» has an «i» that you do not hear."
       }
     ]
   },
