@@ -20,6 +20,13 @@ Resposta seca e técnica: sem preâmbulo, sem desculpa, sem elogio, sem narrar a
 - Preços: só em `src/config/planos.ts`. Copy de venda: `src/config/oferta-publica.ts`.
 - Dono: Felipe Nascimento Rosa. Marca: verde #1E3B2F, papel #F3F2EE, grafite #1D1F1C, ocre #B7791F.
 
+## LEI DO .com — proibido traduzir pedagogia PT→EN (Felipe, 26/11/2026)
+- **Nunca** traduzir explicação, introdução, pronúncia, `comparacao`, `erros`, distratores ou enunciados do curso em português para o .com. Nem usar texto PT como rascunho.
+- Só é equivalência lexical: glossário (palavra-alvo → inglês natural) e o significado em inglês das falas/exemplos na língua-alvo. O resto nasce em inglês, da gramática do falante de inglês.
+- Compartilha-se só o inventário da língua-alvo (frases, vocabulário, hashes FNV-1a dos MP3 — nunca quebrar) e o tema/nível. A estrutura pedagógica é livre por L1. Insumo único: `node scripts/ficha-alvo.mjs <curso> <aula>`.
+- `ru/en`, `fr/en` e `it/en` são CURADOS (`scripts/i18n-aulas.mjs`): o `dia-NNN.json` em inglês é a fonte. `i18n/en/aula-NNN.json` (mapa 1:1) é legado congelado; não crie mapas novos.
+- Catraca: `node scripts/auditar-pedagogia.mjs --espelho` (CI) falha se um dia .com espelhar o PT-BR além de `content/espelho-baseline.json` (que só encolhe).
+
 ## TRAVA ATIVA (Search Console validando, desde 25/11/2026)
 **Zero alteração** em URLs, rotas, redirects, `public/robots*.txt`, `public/sitemap*.xml`, `vercel.json`, DNS, Cloudflare e R2 até o Felipe liberar. Nunca desligar ou afrouxar teste de CI (`testar-seo-publico.ts`, `testar-http-seo.ts`, `testar-isolamento-http.mjs`, `testar-titulos.ts`, `testar-paridade-meta.mjs`, `testar-audio-autorizacao.ts`, `validar:design`).
 

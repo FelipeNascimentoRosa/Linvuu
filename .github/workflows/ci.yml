@@ -31,6 +31,8 @@ jobs:
       - run: npm ci
       - name: Trava do conteúdo em inglês (docs/LEIA-ME-INTERNACIONAL.md)
         run: node scripts/travas-en.mjs
+      - name: Catraca anti-tradução 1:1 do .com (Lei do .com, CLAUDE.md)
+        run: npm run audit:espelho
       - name: Testar coletor e limites da auditoria Firebase sem acesso de produção
         run: python3 -m unittest discover -s scripts/auditoria_firebase -p 'test_*.py' -v
       - name: Verificar tipos TypeScript

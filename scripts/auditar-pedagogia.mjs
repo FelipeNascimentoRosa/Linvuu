@@ -6,6 +6,8 @@
 //   node scripts/auditar-pedagogia.mjs --detalhe             inclui amostras de cada achado
 //   node scripts/auditar-pedagogia.mjs --json [arquivo]      relatório completo em JSON (stdout ou arquivo)
 //   node scripts/auditar-pedagogia.mjs --audio-privado <dir> clone local do Linvuu-Audio (padrão: $AUDIO_PRIVADO_DIR ou .audio-privado)
+//   node scripts/auditar-pedagogia.mjs --espelho              catraca anti-tradução 1:1 (CI): falha se um dia .com espelhar o PT-BR além do baseline
+//   node scripts/auditar-pedagogia.mjs --atualizar-baseline  regrava content/espelho-baseline.json (só para REDUZIR; nunca para aceitar novo espelho)
 //   node scripts/auditar-pedagogia.mjs --falhar              sai com código 1 se houver placeholder ou botão sem MP3 (uso em CI de lote)
 //
 // Lados: `pt` = content/idiomas/<id>/dia-NNN.json + content/gramatica/<id>.json (explicação em português);
@@ -96,13 +98,16 @@ function auditarAudio(id) {
 // ── auditoria de um lado (curso × língua) ──────────────────────────────────────────────────────────────────────
 const media = (a) => (a.length ? a.reduce((x, y) => x + y, 0) / a.length : 0);
 const f1 = (x) => (Math.round(x * 10) / 10).toString();
+// Assinatura estrutural de um dia: sequência de blocos + contagem de itens, falas, exemplos, erros, perguntas e linhas de tabela.
+// Dois dias com a mesma assinatura têm o mesmo molde pedagógico; no .com (L1 inglesa) isso indica tradução 1:1 do curso brasileiro.
+const assinatura = (d) => (d.sessao?.blocos ?? []).map((b) => [b.tipo, b.itens?.length ?? 0, b.linhas?.length ?? 0, b.exemplos?.length ?? 0, b.erros?.length ?? 0, b.perguntas?.length ?? 0, (b.tabela?.length ?? 0) + (b.tabelas ?? []).reduce((x, t) => x + (t.linhas?.length ?? 0), 0)].join(':')).join('|');
 function auditarLado(id, lingua) {
   const dirDias = lingua === 'en' ? path.join(raiz, 'content', 'idiomas', id, 'en') : path.join(raiz, 'content', 'idiomas', id);
   const arquivos = diasDe(dirDias).map((f) => ({ f, caminho: path.join(dirDias, f), tipo: 'dia' }));
   const gram = path.join(raiz, 'content', 'gramatica', lingua === 'en' ? `${id}.en.json` : `${id}.json`);
   if (existe(gram)) arquivos.push({ f: path.basename(gram), caminho: gram, tipo: 'gramatica' });
-  const r = { curso: id, lingua, sessoes: arquivos.filter((a) => a.tipo === 'dia').length, topicos: 0, vazamentos: 0, refsPt: 0, audioIdiomaErrado: 0, placeholders: 0, glosasVazias: 0, glosasPt: 0, absolutos: 0, duplicadas: 0,
-    prof: { gramIni: [], gramFim: [], itensIni: [], itensFim: [] }, achados: { vazamento: [], refPt: [], glosaVazia: [], glosaPt: [], placeholder: [], absoluto: [], duplicada: [], audioIdiomaErrado: [] }, rasos: [] };
+  const r = { curso: id, lingua, sessoes: arquivos.filter((a) => a.tipo === 'dia').length, topicos: 0, vazamentos: 0, refsPt: 0, audioIdiomaErrado: 0, placeholders: 0, glosasVazias: 0, glosasPt: 0, absolutos: 0, duplicadas: 0, refsBr: 0, espelhoDias: [],
+    prof: { gramIni: [], gramFim: [], itensIni: [], itensFim: [] }, achados: { vazamento: [], refPt: [], glosaVazia: [], glosaPt: [], placeholder: [], absoluto: [], duplicada: [], audioIdiomaErrado: [], refBr: [] }, rasos: [] };
   const vistas = new Map(); // prosa longa -> arquivos
   for (const a of arquivos) {
     const d = ler(a.caminho);
@@ -129,10 +134,12 @@ function auditarLado(id, lingua) {
       if (esperada === 'en' && id !== 'br' && chave !== 'enunciado' && /portuguese|portugu[eê]s/i.test(limpo) && !/^\s*\(?portuguese\)?\s*$/i.test(limpo) && !/\b(speak|spoke|study|studying|learn|know)\b[^.?!]{0,40}portuguese/i.test(limpo)) { r.refsPt++; /* «Do you speak Portuguese?» traduz uma fala do diálogo italiano: conteúdo, não comparação */ r.achados.refPt.push({ arquivo: a.f, caminho, texto: s.slice(0, 110) }); }
       if (vaza) { r.vazamentos++; r.achados.vazamento.push({ arquivo: a.f, caminho, texto: s.slice(0, 110) }); }
       if (!CHAVES_EXPLICACAO.has(chave)) continue;
+      if (lingua === 'en' && id !== 'br' && a.tipo !== 'gramatica' || lingua === 'en' && id !== 'br' && esperada === 'en') { if (/brazil(ian)?s?/i.test(limpo)) { r.refsBr++; if (r.achados.refBr.length < 40) r.achados.refBr.push({ arquivo: a.f, caminho, texto: s.slice(0, 110) }); } }
       for (const m of limpo.matchAll(ABSOLUTOS)) { r.absolutos++; if (r.achados.absoluto.length < 400) r.achados.absoluto.push({ arquivo: a.f, termo: m[0].toLowerCase(), texto: limpo.slice(Math.max(0, m.index - 30), m.index + 50) }); }
       if (pal.length >= 12) { const k = limpo.toLowerCase().replace(/\s+/g, ' ').trim(); if (!vistas.has(k)) vistas.set(k, new Set()); vistas.get(k).add(a.f); }
     }
     if (a.tipo === 'dia') {
+      if (lingua === 'en' && id !== 'br') { const ptDia = path.join(raiz, 'content', 'idiomas', id, a.f); if (existe(ptDia) && assinatura(d) === assinatura(ler(ptDia))) r.espelhoDias.push(Number(a.f.match(/\d+/)[0])); }
       for (const b of d.sessao?.blocos ?? []) {
         // itens = o que o aluno percorre: itens, exemplos, falas, perguntas e linhas de tabela (sessões de revisão têm só tabelas).
         const tab = (b.tabela?.length ?? 0) + (b.tabelas ?? []).reduce((x, t) => x + (t.linhas?.length ?? 0), 0);
@@ -176,10 +183,10 @@ if (jsonOpt) { const s = JSON.stringify(relatorio, null, 1) + '\n'; if (typeof j
 else {
   const pad = (x, n) => String(x).padEnd(n), padL = (x, n) => String(x).padStart(n);
   console.log(`Fonte do áudio: índices públicos (public/audio/<id>/index.json e v2) + ${privadoDisponivel ? `clone privado em ${dirPrivado}` : 'clone privado NÃO encontrado (use --audio-privado <dir>); botões pagos contam como sem MP3'}.`);
-  console.log(`${pad('Curso', 6)}${pad('Lado', 5)}${padL('Sess', 5)}${padL('Vaza', 6)}${padL('Gram ini→fim', 14)}${padL('Itens/dia ini→fim', 19)}${padL('Dup', 5)}${padL('Placeh', 7)}${padL('RefPT', 7)}${padL('GlsVaz', 7)}${padL('GlsPT', 6)}${padL('Absol', 7)}${padL('AudErr', 7)}  Áudio (únicos: pub+priv / sem MP3)`);
+  console.log(`${pad('Curso', 6)}${pad('Lado', 5)}${padL('Sess', 5)}${padL('Vaza', 6)}${padL('Gram ini→fim', 14)}${padL('Itens/dia ini→fim', 19)}${padL('Dup', 5)}${padL('Placeh', 7)}${padL('RefPT', 7)}${padL('GlsVaz', 7)}${padL('GlsPT', 6)}${padL('Absol', 7)}${padL('AudErr', 7)}${padL('Espelho', 10)}${padL('BrRef', 6)}  Áudio (únicos: pub+priv / sem MP3)`);
   for (const l of lados) {
     const a = audio[l.curso]; const aud = l.lingua === 'pt' || soLingua ? `${a.textos}: ${a.comPublico}+${a.comPrivado} / ${a.semMp3} (grátis ${a.semMp3Gratis})` : '(igual ao lado pt)';
-    console.log(`${pad(l.curso, 6)}${pad(l.lingua, 5)}${padL(l.sessoes, 5)}${padL(l.vazamentos, 6)}${padL(`${f1(media(l.prof.gramIni))}→${f1(media(l.prof.gramFim))}`, 14)}${padL(`${f1(media(l.prof.itensIni))}→${f1(media(l.prof.itensFim))}`, 19)}${padL(l.duplicadas, 5)}${padL(l.placeholders, 7)}${padL(l.refsPt, 7)}${padL(l.glosasVazias, 7)}${padL(l.glosasPt, 6)}${padL(l.absolutos, 7)}${padL(l.audioIdiomaErrado, 7)}  ${aud}`);
+    console.log(`${pad(l.curso, 6)}${pad(l.lingua, 5)}${padL(l.sessoes, 5)}${padL(l.vazamentos, 6)}${padL(`${f1(media(l.prof.gramIni))}→${f1(media(l.prof.gramFim))}`, 14)}${padL(`${f1(media(l.prof.itensIni))}→${f1(media(l.prof.itensFim))}`, 19)}${padL(l.duplicadas, 5)}${padL(l.placeholders, 7)}${padL(l.refsPt, 7)}${padL(l.glosasVazias, 7)}${padL(l.glosasPt, 6)}${padL(l.absolutos, 7)}${padL(l.audioIdiomaErrado, 7)}${padL(l.lingua === 'en' && l.curso !== 'br' ? `${l.espelhoDias.length}/${l.sessoes}` : '—', 10)}${padL(l.lingua === 'en' && l.curso !== 'br' ? l.refsBr : '—', 6)}  ${aud}`);
   }
   console.log('\nMapa de tradução para inglês (explicações de aulas com mapa):');
   for (const [id, v] of Object.entries(i18n)) console.log(`  ${pad(id, 4)} aulas ${padL(v.aulas, 3)} | com mapa EN ${padL(v.aulasComMapaEn, 3)} | explicações traduzidas ${padL(v.explicacoesNoMapa, 5)} | sem tradução ${padL(v.explicacoesSemTraducao, 4)}`);
@@ -188,5 +195,30 @@ else {
   const semCsv = Object.entries(audio).filter(([, v]) => v.semMp3ForaDoCsv || v.csvHashRuim);
   for (const [id, v] of semCsv) console.log(`  aviso áudio ${id}: ${v.semMp3ForaDoCsv} texto(s) sem MP3 e fora do CSV de gravação; ${v.csvHashRuim} linha(s) do CSV com hash que não bate.`);
   if (detalhe) for (const l of lados) for (const [k, lista] of Object.entries(l.achados)) if (lista.length) { console.log(`\n[${l.curso}/${l.lingua}] ${k} (${lista.length}, mostrando 8):`); for (const x of lista.slice(0, 8)) console.log('  ' + JSON.stringify(x)); }
+}
+// ── catraca anti-tradução 1:1 (Lei do .com) ───────────────────────────────────────────────────────────────────
+// content/espelho-baseline.json guarda, por curso `<id>/en`, os dias que JÁ espelham o PT-BR (legado) e o nº de menções a Brazil na prosa.
+// Falha se: (a) um dia espelhado não está no baseline; (b) o nº de menções a Brazil/Brazilian cresceu; (c) it/en: qualquer dia ≥ 9 (aula ≥ 3)
+// espelha o PT-BR, com ou sem baseline. O baseline só pode ENCOLHER (--atualizar-baseline recusa crescer).
+const arqBase = path.join(raiz, 'content', 'espelho-baseline.json');
+const atuaisEn = lados.filter((l) => l.lingua === 'en' && l.curso !== 'br').map((l) => ({ chave: `${l.curso}/en`, dias: l.espelhoDias, refs: l.refsBr }));
+let violacoesEspelho = [];
+if (args.includes('--atualizar-baseline')) {
+  const velho = existe(arqBase) ? ler(arqBase) : null;
+  const novo = Object.fromEntries(atuaisEn.map((x) => [x.chave, { dias: x.dias, refsBrazil: x.refs }]));
+  if (velho) for (const [k, v] of Object.entries(novo)) { const o = velho[k]; if (o && (v.dias.some((d) => !o.dias.includes(d)) || v.refsBrazil > o.refsBrazil)) { console.error(`baseline recusado: ${k} cresceria (novo espelho ou mais menções a Brazil). A catraca só encolhe.`); process.exit(1); } }
+  fs.writeFileSync(arqBase, JSON.stringify(novo) + '\n'); console.log(`baseline gravado: ${path.relative(raiz, arqBase)}`);
+}
+if (args.includes('--espelho')) {
+  const base = existe(arqBase) ? ler(arqBase) : {};
+  for (const x of atuaisEn) {
+    const b = base[x.chave] ?? { dias: [], refsBrazil: 0 };
+    const novos = x.dias.filter((d) => !b.dias.includes(d));
+    if (novos.length) violacoesEspelho.push(`${x.chave}: ${novos.length} dia(s) novo(s) espelham o PT-BR 1:1 (ex.: dia ${novos[0]}). Escreva a aula em inglês a partir de scripts/ficha-alvo.mjs.`);
+    if (x.refs > b.refsBrazil) violacoesEspelho.push(`${x.chave}: ${x.refs} menções a Brazil/Brazilian na prosa (baseline ${b.refsBrazil}).`);
+    if (x.chave === 'it/en') { const tarde = x.dias.filter((d) => d >= 9); if (tarde.length) violacoesEspelho.push(`it/en: dia(s) ${tarde.slice(0, 5).join(', ')} (aula ≥ 3) espelham o PT-BR: proibido, mesmo com baseline.`); }
+  }
+  if (violacoesEspelho.length) { console.error('ESPELHO — catraca anti-tradução 1:1:\n' + violacoesEspelho.join('\n')); process.exit(1); }
+  console.log('espelho: ok (nenhum dia novo espelha o PT-BR; sem aumento de menções a Brazil)');
 }
 if (falhar && (lados.some((l) => l.placeholders) || Object.values(audio).some((v) => v.semMp3))) process.exit(1);

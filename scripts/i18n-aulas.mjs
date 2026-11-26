@@ -65,7 +65,15 @@ export function textosDaAula(aula) {
 export function mapaDa(id, l, n) {
   return { ...lerJson(path.join(dirI18n(id, l), 'titulos.json'), {}), ...lerJson(path.join(dirI18n(id, l), `aula-${pad(n)}.json`), {}) };
 }
-export const aulaTemTraducao = (id, l, n) => fs.existsSync(path.join(dirI18n(id, l), `aula-${pad(n)}.json`));
+/** Cursos .com escritos à mão em inglês (L1 inglesa): o dia servido em content/idiomas/<id>/<l>/dia-NNN.json é a FONTE, nunca regenerado
+ *  a partir do português. Não passam por mapa «texto PT → texto EN» (proibido: ver CLAUDE.md, «Lei do .com»). */
+export const CURADOS = new Set(['ru/en', 'fr/en', 'it/en']);
+export const ehCurado = (id, l) => CURADOS.has(`${id}/${l}`);
+const diaServido = (id, l, d) => fs.existsSync(path.join(raiz, 'content', 'idiomas', id, l, `dia-${pad(d)}.json`));
+/** Aula com explicação em `l`: curso curado = as 4 sessões existem em disco; os demais = existe o mapa i18n da aula. */
+export const aulaTemTraducao = (id, l, n) => (ehCurado(id, l)
+  ? [1, 2, 3, 4].every((i) => diaServido(id, l, (n - 1) * 4 + i))
+  : fs.existsSync(path.join(dirI18n(id, l), `aula-${pad(n)}.json`)));
 export const titulosDe = (id, l) => lerJson(path.join(dirI18n(id, l), 'titulos.json'), {});
 
 /** A aula com a explicação no idioma `l`. Devolve também os textos de explicação que ficaram sem tradução. */

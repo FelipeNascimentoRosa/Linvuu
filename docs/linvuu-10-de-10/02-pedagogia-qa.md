@@ -31,6 +31,13 @@ Leia antes de tocar aula, gramática, livro, exercício, botão de áudio de fra
 - Comandos: `npm run content` (gera), `npm run content:check` (= `conteudo.mjs --check && travas-en.mjs`), `node scripts/validar-aulas.mjs`, `npm run auditar` (auditoria de russo), `node scripts/auditar-cobertura-internacional.mjs`.
 - `npm run build` e `build:vercel` já rodam `conteudo.mjs --check` e `travas-en.mjs`.
 
+## 3b. Lei do .com: pedagogia nativa em inglês (26/11/2026)
+- **Proibido** traduzir pedagogia do curso PT-BR para o .com. O brasileiro parte do português (gênero, concordância, sujeito oculto); o anglófono parte do inglês (SVO, sem gênero, auxiliar `do`, sem dupla negação, sem `tu/vous`). Traduzir produz um curso pedagogicamente falso.
+- **Compartilhado:** inventário da língua-alvo, hashes FNV-1a dos MP3 e tema/nível. **Livre por L1:** quantidade e ordem de blocos, explicações, pronúncia, `comparacao`, `erros`, distratores.
+- **Fluxo:** `node scripts/ficha-alvo.mjs <curso> <aula>` → escrever `content/idiomas/<id>/en/dia-NNN.json` (CURADOS: `ru/en`, `fr/en`, `it/en`) → `npm run content` → `npm run content:check`. `i18n/en/aula-NNN.json` (mapa 1:1) é legado congelado.
+- **Guardas em CURADOS:** o índice em inglês deriva dos `dia-*.json` em disco; aula incompleta (≠ 4 sessões) ou índice listando mais aulas do que o disco **falha ruidosamente** (`conteudo.mjs`). A sequência de blocos do dia em inglês **não** precisa igualar a do PT.
+- **Critério de aceite:** nenhum erro/distrator vindo de interferência do português («Quanto custa?»); `comparacao` e `erros` citam o inglês; `auditar-pedagogia --espelho` verde. Legado ainda espelhado: `ru/en`, `fr/en`, `de/en`, `es/en` e `it/en` dias 1–8 (baseline), a refatorar.
+
 ## 4. Erros linguísticos já achados (checklist de regressão)
 Verifique estes pontos sempre que reeditar as aulas citadas e **procure o mesmo tipo de erro** nas demais:
 

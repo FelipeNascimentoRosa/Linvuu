@@ -6,7 +6,7 @@
 // (62–78 aulas × 4 sessões), mais os dias com explicação traduzida (en/es).
 import fs from 'node:fs';
 import path from 'node:path';
-import { LINGUAS, aulaTemTraducao, fonteDe, titulosDe, mapaDa } from './i18n-aulas.mjs';
+import { LINGUAS, aulaTemTraducao, ehCurado, fonteDe, titulosDe, mapaDa } from './i18n-aulas.mjs';
 
 const root = path.resolve(import.meta.dirname, '..', 'content');
 const trilha = JSON.parse(fs.readFileSync(path.join(root, 'trilha.json'), 'utf8'));
@@ -29,6 +29,17 @@ const check = process.argv.includes('--check');
       const dirL = path.join(root, 'idiomas', c.id, l);
       const emDisco = fs.existsSync(dirL) ? fs.readdirSync(dirL).filter((f) => /^dia-\d+\.json$/.test(f)).length : 0;
       if (!emDisco) continue;
+      if (ehCurado(c.id, l)) {
+        // CURADOS: o dia servido é a fonte (sem mapa i18n). Aula só vale com as 4 sessões; e o índice gravado nunca pode listar mais aulas do que há em disco.
+        const completas = fontes.reduce((n, a) => n + (aulaTemTraducao(c.id, l, a.aula) ? 1 : 0), 0);
+        if (emDisco !== completas * 4) violacoes.push(`${c.id}/${l}: ${emDisco} dias em disco formam ${completas} aula(s) completa(s) (4 sessões cada); há aula incompleta ou fora de ordem`);
+        const arqInd = path.join(root, `indice.${l}.json`);
+        let gravado = {};
+        if (fs.existsSync(arqInd)) { try { gravado = JSON.parse(fs.readFileSync(arqInd, 'utf8')); } catch { /* o --check reporta o JSON inválido */ } }
+        const listadas = (gravado[c.id]?.aulas ?? []).length;
+        if (listadas > completas) violacoes.push(`${c.id}/${l}: o índice lista ${listadas} aulas em inglês, mas só ${completas} existem em disco — perda silenciosa recusada`);
+        continue;
+      }
       const implicados = fontes.reduce((n, a) => n + (aulaTemTraducao(c.id, l, a.aula) ? a.sessoes.length : 0), 0);
       if (emDisco > implicados) violacoes.push(`${c.id}/${l}: ${emDisco} dias traduzidos em disco, mas os mapas i18n só implicam ${implicados}`);
     }
@@ -197,7 +208,7 @@ function validarCatalogo() {
           if (d.fase !== fi.fase) erros.push(`${onde}: fase difere do dia-fonte`);
           if (d.nivel !== fi.nivel) erros.push(`${onde}: nivel difere do dia-fonte`);
           if (d.sessao?.duracaoMin !== fi.duracaoMin) erros.push(`${onde}: duracaoMin difere do dia-fonte`);
-          if (JSON.stringify((d.sessao?.blocos ?? []).map((b) => b.tipo)) !== JSON.stringify(fi.tipos)) erros.push(`${onde}: sequência de blocos difere do dia-fonte`);
+          if (!ehCurado(c.id, l) && JSON.stringify((d.sessao?.blocos ?? []).map((b) => b.tipo)) !== JSON.stringify(fi.tipos)) erros.push(`${onde}: sequência de blocos difere do dia-fonte`); // CURADOS: estrutura pedagógica livre por L1
         }
         if (d.aula?.numero !== na) erros.push(`${onde}: aula.numero=${d.aula?.numero} (esperado ${na})`);
         if (a && (d.aula?.sessoes !== a.sessoes.length || d.aula?.duracaoTotalMin !== a.duracaoTotalMin || d.aula?.nivel !== a.nivel)) erros.push(`${onde}: bloco "aula" não confere com a aula-fonte ${na}`);
@@ -264,7 +275,15 @@ for (const c of cursos.filter((x) => x.area === 'idiomas')) {
     const t = { aulas: [], g: {}, s: {} };
     for (const a of fontes) {
       const mapa = aulaTemTraducao(c.id, l, a.aula) ? mapaDa(c.id, l, a.aula) : titulos;
-      if (aulaTemTraducao(c.id, l, a.aula)) t.aulas.push(a.aula);
+      if (aulaTemTraducao(c.id, l, a.aula)) {
+        t.aulas.push(a.aula);
+        if (ehCurado(c.id, l)) a.sessoes.forEach((s, i) => { // curso curado sem mapa: os títulos vêm do próprio dia em inglês
+          const f = path.join(root, 'idiomas', c.id, l, `dia-${pad((a.aula - 1) * 4 + i + 1)}.json`);
+          const d = JSON.parse(fs.readFileSync(f, 'utf8'));
+          if (!mapa[a.titulo] && d.aula?.titulo) mapa[a.titulo] = d.aula.titulo;
+          if (!mapa[s.titulo] && d.sessao?.titulo) mapa[s.titulo] = d.sessao.titulo;
+        });
+      }
       const ta = mapa[a.titulo];
       if (ta) t.g[a.aula] = ta;
       a.sessoes.forEach((s, i) => { const ts = mapa[s.titulo]; if (ta || ts) t.s[(a.aula - 1) * 4 + i + 1] = `${ta ?? a.titulo}: ${ts ?? s.titulo}`; });

@@ -23,7 +23,7 @@ try {
    await page.locator('main a[href="/livros"]').last().click();await page.waitForURL(`https://${host}/livros`);assert.equal(new URL(page.url()).hostname,host);
    const missing=await page.goto(`https://${host}${host.endsWith('.br')?'/curso/br':'/livros/ru'}`,{waitUntil:'domcontentloaded'});assert.equal(missing.status(),404);assert.equal(new URL(page.url()).hostname,host);
    if(host==='linvuu.com') {
-     await page.goto(`https://${host}/curso/it/dia/49`,{waitUntil:'domcontentloaded'});
+     await page.goto(`https://${host}/curso/it/dia/248`,{waitUntil:'domcontentloaded'});
      await page.getByText('This lesson is not yet available for English speakers.').waitFor({state:'visible',timeout:20000});
    }
    await page.close();

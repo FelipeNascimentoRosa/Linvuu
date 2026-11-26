@@ -3,7 +3,7 @@
 //   node scripts/aulas.mjs ru
 import fs from 'node:fs';
 import path from 'node:path';
-import { LINGUAS, aulaTemTraducao, fonteDe, titulosDe, traduzirAula } from './i18n-aulas.mjs';
+import { LINGUAS, aulaTemTraducao, ehCurado, fonteDe, titulosDe, traduzirAula } from './i18n-aulas.mjs';
 
 const id = process.argv[2] ?? 'ru';
 const raiz = path.resolve(import.meta.dirname, '..');
@@ -55,7 +55,6 @@ for (const a of aulas) {
 
 // 1b) as mesmas sessões com a explicação em inglês e espanhol (content/idiomas/<id>/<en|es>/dia-NNN.json), para as aulas já traduzidas.
 // Aulas sem tradução não geram arquivo: o site mostra a versão escrita e avisa o aluno.
-const CURADOS = new Set(['ru/en', 'fr/en']);
 const OBJETIVO = { en: (a, i, t, m) => `Lesson ${a}, session ${i} of ${t} · ${m} min`, es: (a, i, t, m) => `Lección ${a}, sesión ${i} de ${t} · ${m} min` };
 for (const l of LINGUAS) {
   if (fonteDe(id) === l) continue;
@@ -63,7 +62,7 @@ for (const l of LINGUAS) {
   // inglês (colunas de tabela em inglês, linhas de comparação com o inglês). Os mapas i18n deles são reconstrução
   // parcial (restaurar-mapas-i18n.mjs): regenerar trocaria colunas para «PORTUGUÊS/RUSSO/TRADUÇÃO» e glosas em
   // português — mistura de línguas na página. Os dias commitados são a fonte; só regenere com --forcar-curados.
-  if (CURADOS.has(`${id}/${l}`) && !process.argv.includes('--forcar-curados')) { console.log(`${id} → ${l}: curso curado — dias servidos mantidos (não regenerados)`); continue; }
+  if (ehCurado(id, l) && !process.argv.includes('--forcar-curados')) { console.log(`${id} → ${l}: curso curado — dias servidos mantidos (não regenerados)`); continue; }
   const dirL = path.join(dirIdioma, l);
   // GUARDA (2026-11-04): o passo seguinte apaga a pasta inteira e regenera só as aulas com mapa i18n.
   // Se houver mais dias em disco do que os mapas conseguem regenerar, são traduções servidas sem mapa —
