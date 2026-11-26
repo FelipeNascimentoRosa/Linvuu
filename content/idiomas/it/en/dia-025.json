@@ -1,0 +1,228 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 25,
+  "fase": 3,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Family and possessives: Family members",
+  "objetivo": "Lesson 7, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 7,
+    "titulo": "Family and possessives",
+    "objetivo": "Name your family members, use «mio», «tuo» and «suo» with the right gender and article, and describe who people are and what they do. Avoid the English-speaker traps: an article before a job, a missing article before a possessive, and «parenti» for «parents».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Family members",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "la famiglia",
+            "translit": "lah fah-MEE-lyah",
+            "pt": "the family",
+            "en": "",
+            "audio": "la famiglia"
+          },
+          {
+            "ru": "i genitori",
+            "translit": "ee jeh-nee-TOH-ree",
+            "pt": "the parents (not «relatives»!)",
+            "en": "",
+            "audio": "i genitori"
+          },
+          {
+            "ru": "la mamma",
+            "translit": "lah MAHM-mah",
+            "pt": "mum, mom",
+            "en": "",
+            "audio": "la mamma"
+          },
+          {
+            "ru": "il papà",
+            "translit": "eel pah-PAH",
+            "pt": "dad",
+            "en": "",
+            "audio": "il papà"
+          },
+          {
+            "ru": "il fratello",
+            "translit": "eel frah-TEHL-loh",
+            "pt": "the brother",
+            "en": "",
+            "audio": "il fratello"
+          },
+          {
+            "ru": "la sorella",
+            "translit": "lah soh-REHL-lah",
+            "pt": "the sister",
+            "en": "",
+            "audio": "la sorella"
+          },
+          {
+            "ru": "il nonno",
+            "translit": "eel NOHN-noh",
+            "pt": "the grandfather",
+            "en": "",
+            "audio": "il nonno"
+          },
+          {
+            "ru": "la nonna",
+            "translit": "lah NOHN-nah",
+            "pt": "the grandmother",
+            "en": "",
+            "audio": "la nonna"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Family words: gender pairs and a false friend",
+        "explicacao": "STEP 1: many family words come in masculine and feminine pairs that differ only in the ending: «il fratello» / «la sorella», «il nonno» / «la nonna», «lo zio» / «la zia», «il cugino» / «la cugina». STEP 2: the plural of a mixed pair is masculine: «i nonni» are grandparents (grandfather and grandmother, or both grandfathers), «i fratelli» are brothers or brother and sister. STEP 3: «i genitori» means «the parents». It does not mean «relatives»: for that, Italian uses «i parenti». English speakers mix the two because «parents» and «parenti» look alike. STEP 4: «la mamma» and «il papà» are the everyday words for mum and dad. «Il padre» and «la madre» are the formal or neutral ones: «mio padre è medico». STEP 5: stress: «il papà» has a written accent on the last vowel: «pah-PAH». «Mamma» has two «m» in the middle, so hold the sound a little longer: «MAHM-mah». STEP 6: «nonno» and «nonna» keep the double «n» in the middle: «NOHN-noh», «NOHN-nah». Do not read them as «nono», because that would be a different word: «nono» is «ninth». STEP 7: «famiglia» sounds «fah-MEE-lyah»: the «gli» is the same sound as «lli» in «million».",
+        "comparacao": "English has «grandparents», «siblings» and «parents» as ready-made group words; Italian builds the same ideas from the masculine plural («i nonni», «i fratelli») or uses «i genitori». The plural of a mixed group is masculine, which has no English counterpart. And the false friend is a real trap: «i parenti» are all your relatives (aunts, cousins and so on), not your parents.",
+        "exemplos": [
+          {
+            "ru": "i genitori",
+            "pt": "the parents"
+          },
+          {
+            "ru": "il papà",
+            "pt": "dad"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "masculine",
+            "forma": "il fratello · il nonno · lo zio · il cugino"
+          },
+          {
+            "tipo": "feminine",
+            "forma": "la sorella · la nonna · la zia · la cugina"
+          },
+          {
+            "tipo": "mixed plural",
+            "forma": "i fratelli · i nonni · gli zii · i cugini"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "I miei parenti sono Paolo e Anna.",
+            "certo": "I miei genitori sono Paolo e Anna.",
+            "motivo": "«Parenti» means relatives. Your parents are «i genitori»."
+          },
+          {
+            "errado": "Il nono è simpatico.",
+            "certo": "Il nonno è simpatico.",
+            "motivo": "«Nono» (ninth) is a different word: keep the double «n»."
+          },
+          {
+            "errado": "Le nonni sono simpatici.",
+            "certo": "I nonni sono simpatici.",
+            "motivo": "A group of grandfather and grandmother takes the masculine plural."
+          }
+        ],
+        "tag": "Family"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 12,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "la famiglia",
+            "opcoes": [
+              "la famiglia",
+              "la famiglio",
+              "le famiglie"
+            ],
+            "gabarito": "la famiglia",
+            "explicacao": "«Gli» sounds like «lly» in «million».",
+            "id": "it-007-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "i genitori",
+            "opcoes": [
+              "i genitori",
+              "i parenti",
+              "i fratelli"
+            ],
+            "gabarito": "i genitori",
+            "explicacao": "«Genitori» are your parents.",
+            "id": "it-007-e02"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «i genitori» mean?",
+            "opcoes": [
+              "the relatives",
+              "the parents",
+              "the cousins"
+            ],
+            "gabarito": "the parents",
+            "explicacao": "The false friend is «i parenti» (relatives).",
+            "id": "it-007-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the plural for a brother and a sister?",
+            "opcoes": [
+              "i fratelli",
+              "le fratelle",
+              "i sorelli"
+            ],
+            "gabarito": "i fratelli",
+            "explicacao": "A mixed group takes the masculine plural.",
+            "id": "it-007-e04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Mia ___ si chiama Anna. (mother)",
+            "opcoes": [
+              "madre",
+              "padre",
+              "sorella"
+            ],
+            "gabarito": "madre",
+            "explicacao": "«Madre» is mother.",
+            "id": "it-007-e05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il ___ è il padre di mio padre. (grandfather)",
+            "opcoes": [
+              "nonno",
+              "zio",
+              "cugino"
+            ],
+            "gabarito": "nonno",
+            "explicacao": "Father's father: «nonno».",
+            "id": "it-007-e06"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 1,
+        "enunciado": "Name five members of your family aloud, with the article: «il…», «la…»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Explain aloud the difference between «i genitori» and «i parenti»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-007.json",
+  "responsavel": null
+}

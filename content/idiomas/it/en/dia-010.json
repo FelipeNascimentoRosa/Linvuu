@@ -1,0 +1,238 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 10,
+  "fase": 1,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Introductions, countries, numbers 0 to 20 and age: Countries and nationalities",
+  "objetivo": "Lesson 3, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 3,
+    "titulo": "Introductions, countries, numbers 0 to 20 and age",
+    "objetivo": "Introduce yourself and others, name countries and nationalities, count from 0 to 20 and say your age with «avere». Choose between «tu» and «Lei», and avoid the three classic English-speaker traps: «sono bene», «sono venti anni» and a capital letter on nationalities.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Countries and nationalities",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "il Brasile, brasiliano",
+            "translit": "eel brah-ZEE-leh, brah-zee-LYAH-noh",
+            "pt": "Brazil, Brazilian",
+            "en": "",
+            "audio": "il Brasile, brasiliano"
+          },
+          {
+            "ru": "l'Italia, italiano",
+            "translit": "lee-TAH-lyah, ee-tah-LYAH-noh",
+            "pt": "Italy, Italian",
+            "en": "",
+            "audio": "l'Italia, italiano"
+          },
+          {
+            "ru": "il Portogallo, portoghese",
+            "translit": "eel por-toh-GAHL-loh, por-toh-GEH-zeh",
+            "pt": "Portugal, Portuguese",
+            "en": "",
+            "audio": "il Portogallo, portoghese"
+          },
+          {
+            "ru": "la Spagna, spagnolo",
+            "translit": "lah SPAH-nyah, spah-NYOH-loh",
+            "pt": "Spain, Spanish",
+            "en": "",
+            "audio": "la Spagna, spagnolo"
+          },
+          {
+            "ru": "la Francia, francese",
+            "translit": "lah FRAHN-chah, frahn-CHEH-zeh",
+            "pt": "France, French",
+            "en": "",
+            "audio": "la Francia, francese"
+          },
+          {
+            "ru": "la Germania, tedesco",
+            "translit": "lah jehr-MAH-nyah, teh-DEH-skoh",
+            "pt": "Germany, German",
+            "en": "",
+            "audio": "la Germania, tedesco"
+          },
+          {
+            "ru": "gli Stati Uniti, americano",
+            "translit": "lyee STAH-tee oo-NEE-tee, ah-meh-ree-KAH-noh",
+            "pt": "the United States, American",
+            "en": "",
+            "audio": "gli Stati Uniti, americano"
+          },
+          {
+            "ru": "l'Inghilterra, inglese",
+            "translit": "leen-gheel-TEHR-rah, een-GLEH-zeh",
+            "pt": "England, English",
+            "en": "",
+            "audio": "l'Inghilterra, inglese"
+          },
+          {
+            "ru": "l'Argentina, argentino",
+            "translit": "lahr-jehn-TEE-nah, ahr-jehn-TEE-noh",
+            "pt": "Argentina, Argentine",
+            "en": "",
+            "audio": "l'Argentina, argentino"
+          },
+          {
+            "ru": "la Svizzera, svizzero",
+            "translit": "lah ZVEET-tseh-rah, ZVEET-tseh-roh",
+            "pt": "Switzerland, Swiss",
+            "en": "",
+            "audio": "la Svizzera, svizzero"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Countries, nationalities and the article",
+        "explicacao": "STEP 1: most countries take a definite article in Italian: «il Brasile», «la Francia», «la Spagna», «gli Stati Uniti». English leaves it out («Brazil», «France»), except in a few cases like «the United States». STEP 2: the article changes with the gender and first sound of the country. After a vowel, it shrinks to «l'»: «l'Italia», «l'Inghilterra», «l'Argentina». STEP 3: nationalities are adjectives, and they are not written with a capital letter: «italiano», «francese». English capitalizes them («Italian», «French»); Italian does not. STEP 4: the adjective changes with the gender of the person: «italiano» (man), «italiana» (woman); «americano», «americana». STEP 5: adjectives ending in «-e» are the same for both: «francese», «inglese», «portoghese». STEP 6: to say where you are from, use «Sono» and the nationality: «Sono brasiliano» (a man), «Sono brasiliana» (a woman). STEP 7: pronunciation: «gn» in «Spagna» and «spagnolo» is like «ny» in «canyon». «Gli» in «gli Stati Uniti» is like «lli» in «million». In «Germania» and «Inghilterra», «g» before «e» and «i» sounds like «j»; «gh» in «Inghilterra» is a hard «g».",
+        "comparacao": "English has no grammatical gender, so «American» is the same for a man and a woman. Italian marks the difference in the ending: «americano» and «americana». Capital letters work the other way round: English capitalizes nationalities and Italian does not. And the article before a country name is the third change: English says «I live in Italy», Italian often keeps the article in other sentences («l'Italia è bella»).",
+        "exemplos": [
+          {
+            "ru": "l'Italia, italiano",
+            "pt": "Italy, Italian (m.)"
+          },
+          {
+            "ru": "la Svizzera, svizzero",
+            "pt": "Switzerland, Swiss (m.)"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "-o / -a (changes)",
+            "exemplo": "italiano / italiana, americano / americana"
+          },
+          {
+            "tipo": "-e (does not change)",
+            "exemplo": "francese, inglese, portoghese"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Sono Italiano.",
+            "certo": "Sono italiano.",
+            "motivo": "Nationalities are written in lowercase in Italian."
+          },
+          {
+            "errado": "Lei è americano.",
+            "certo": "Lei è americana.",
+            "motivo": "The adjective agrees with a woman: «americana»."
+          },
+          {
+            "errado": "Sono francesa.",
+            "certo": "Sono francese.",
+            "motivo": "Adjectives in «-e» have no «-a» form."
+          }
+        ],
+        "tag": "Countries"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "la Francia, francese",
+            "opcoes": [
+              "la Francia, francese",
+              "la Spagna, spagnolo",
+              "la Germania, tedesco"
+            ],
+            "gabarito": "la Francia, francese",
+            "explicacao": "Listen to the start: «Fran-» is France; the ending «-ese» is the nationality.",
+            "id": "it-003-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "l'Inghilterra, inglese",
+            "opcoes": [
+              "l'Inghilterra, inglese",
+              "l'Italia, italiano",
+              "l'Argentina, argentino"
+            ],
+            "gabarito": "l'Inghilterra, inglese",
+            "explicacao": "In «Inghilterra», «gh» is a hard «g», as in «get».",
+            "id": "it-003-e02"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which is the correct way to write «Spanish» in Italian?",
+            "opcoes": [
+              "Spagnolo",
+              "spagnolo",
+              "Spagnolo."
+            ],
+            "gabarito": "spagnolo",
+            "explicacao": "Nationalities are lowercase in Italian, even though English capitalizes them.",
+            "id": "it-003-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "A woman from Argentina says:",
+            "opcoes": [
+              "Sono argentino.",
+              "Sono argentina.",
+              "Sono argentine."
+            ],
+            "gabarito": "Sono argentina.",
+            "explicacao": "The ending «-a» marks a woman; «argentino» is for a man.",
+            "id": "it-003-e04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "La Francia: Sono ___. (a woman, French)",
+            "opcoes": [
+              "francese",
+              "francesa",
+              "francesse"
+            ],
+            "gabarito": "francese",
+            "explicacao": "Adjectives in «-e» do not change between man and woman.",
+            "id": "it-003-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How does «gn» sound in «la Spagna»?",
+            "opcoes": [
+              "like «ny» in canyon",
+              "like «n» + «g»",
+              "silent «g»"
+            ],
+            "gabarito": "like «ny» in canyon",
+            "explicacao": "Italian «gn» is one soft nasal sound: «SPAH-nyah».",
+            "id": "it-003-e06"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say where you are from, in Italian, using «Sono» and your nationality. If you are a woman, check the ending. Then say where a friend of yours is from."
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Say the ten countries and their adjectives aloud. Which of them end in «-e»? Which change between «-o» and «-a»?"
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-003.json",
+  "responsavel": null
+}

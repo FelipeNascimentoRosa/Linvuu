@@ -1,0 +1,294 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 9,
+  "fase": 1,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Introductions, countries, numbers 0 to 20 and age: Greetings and introductions",
+  "objetivo": "Lesson 3, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 3,
+    "titulo": "Introductions, countries, numbers 0 to 20 and age",
+    "objetivo": "Introduce yourself and others, name countries and nationalities, count from 0 to 20 and say your age with «avere». Choose between «tu» and «Lei», and avoid the three classic English-speaker traps: «sono bene», «sono venti anni» and a capital letter on nationalities.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Greetings and introductions",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "dialogo",
+        "min": 6,
+        "titulo": "Primo incontro / A first meeting",
+        "contexto": "Signora Rossi meets Ana at a course, and then Marco joins them. Listen once without reading. Notice that nobody says «is» or «name»: the Italian for «What is your name?» is built on a different verb.",
+        "linhas": [
+          {
+            "personagem": "Signora Rossi",
+            "ru": "— Buongiorno, mi chiamo Elena Rossi. Come si chiama?",
+            "pt": "— Good morning, my name is Elena Rossi. What is your name?",
+            "audio": "Buongiorno, mi chiamo Elena Rossi. Come si chiama?"
+          },
+          {
+            "personagem": "Ana",
+            "ru": "— Buongiorno, signora. Mi chiamo Ana. Piacere.",
+            "pt": "— Good morning, madam. My name is Ana. Pleased to meet you.",
+            "audio": "Buongiorno, signora. Mi chiamo Ana. Piacere."
+          },
+          {
+            "personagem": "Signora Rossi",
+            "ru": "— Piacere, Ana. Come sta?",
+            "pt": "— Pleased to meet you, Ana. How are you?",
+            "audio": "Piacere, Ana. Come sta?"
+          },
+          {
+            "personagem": "Ana",
+            "ru": "— Sto bene, grazie. E Lei?",
+            "pt": "— I'm fine, thank you. And you?",
+            "audio": "Sto bene, grazie. E Lei?"
+          },
+          {
+            "personagem": "Signora Rossi",
+            "ru": "— Molto bene, grazie. Questo è Marco.",
+            "pt": "— Very well, thank you. This is Marco.",
+            "audio": "Molto bene, grazie. Questo è Marco."
+          },
+          {
+            "personagem": "Marco",
+            "ru": "— Buongiorno, Ana. Piacere.",
+            "pt": "— Good morning, Ana. Pleased to meet you.",
+            "audio": "Buongiorno, Ana. Piacere."
+          }
+        ]
+      },
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "Mi chiamo",
+            "translit": "mee KYAH-moh",
+            "pt": "my name is (literally: I call myself)",
+            "en": "",
+            "audio": "Mi chiamo"
+          },
+          {
+            "ru": "Come ti chiami?",
+            "translit": "KOH-meh tee KYAH-mee",
+            "pt": "what is your name? (to a friend)",
+            "en": "",
+            "audio": "Come ti chiami?"
+          },
+          {
+            "ru": "Come si chiama?",
+            "translit": "KOH-meh see KYAH-mah",
+            "pt": "what is your name? (to a stranger)",
+            "en": "",
+            "audio": "Come si chiama?"
+          },
+          {
+            "ru": "Piacere",
+            "translit": "pyah-CHEH-reh",
+            "pt": "pleased to meet you (not «please»!)",
+            "en": "",
+            "audio": "Piacere"
+          },
+          {
+            "ru": "Questo è",
+            "translit": "KWEH-stoh EH",
+            "pt": "this is (a man or a masculine thing)",
+            "en": "",
+            "audio": "Questo è"
+          },
+          {
+            "ru": "Questa è",
+            "translit": "KWEH-stah EH",
+            "pt": "this is (a woman or a feminine thing)",
+            "en": "",
+            "audio": "Questa è"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 6,
+        "titulo": "Saying your name: «mi chiamo»",
+        "explicacao": "STEP 1: Italian does not say «my name is». It says «mi chiamo», which is literally «I call myself». STEP 2: the question follows the same logic: «Come ti chiami?» is literally «How do you call yourself?». There is no «is», no «your» and no word for «name». STEP 3: «mi» and «ti» are the small words that carry «myself» and «yourself». Without them the verb changes meaning: «chiamo» alone means «I call» someone, as in «I call a taxi». STEP 4: to answer, say «Mi chiamo» and your name, with no pronoun: «Mi chiamo Ana.» The word «io» is not needed, because the verb ending already tells you who is speaking. STEP 5: the stress falls on the middle syllable: «mee KYAH-moh». The «chi» is a hard «k»: «kya», as in «keen», not «chee».",
+        "comparacao": "English has a fixed frame: «My name is ___» and «What is your name?». Italian has no «name» and no «is» in either sentence. Do not translate word by word: learn «Mi chiamo…» and «Come ti chiami?» as two blocks. English speakers also tend to say «chi» like «chee» (as in «cheese»), but in «chiami» it is «kya».",
+        "exemplos": [
+          {
+            "ru": "Mi chiamo Ana",
+            "pt": "My name is Ana."
+          },
+          {
+            "ru": "Come ti chiami?",
+            "pt": "What is your name? (to a friend)"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "English",
+            "exemplo": "My name is Ana.  /  What is your name?"
+          },
+          {
+            "tipo": "Italian",
+            "exemplo": "Mi chiamo Ana.  /  Come ti chiami?"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Io chiamo Ana.",
+            "certo": "Mi chiamo Ana.",
+            "motivo": "Without «mi», «chiamo» means «I call (someone)». The «mi» is the «myself»."
+          },
+          {
+            "errado": "Come è il tuo nome?",
+            "certo": "Come ti chiami?",
+            "motivo": "A word-for-word copy of «What is your name?» is understood, but it sounds like a textbook. Use «Come ti chiami?»."
+          }
+        ],
+        "tag": "Introductions"
+      },
+      {
+        "tipo": "gramatica",
+        "min": 6,
+        "titulo": "«Tu» or «Lei»: two ways to say «you»",
+        "explicacao": "STEP 1: English has one «you» for everybody. Italian chooses between two forms, depending on the relationship. STEP 2: use the informal form («tu») with friends, family, children and people your own age in a relaxed setting: «Come ti chiami?», «Come stai?». STEP 3: use the formal form («Lei») with strangers, older people, and in shops, offices and hotels: «Come si chiama?», «Come sta?». STEP 4: with «Lei» the verb takes the form you would use for «she», and «Lei» is often written with a capital letter when it means «you»: «E Lei?». STEP 5: when in doubt, start formal. Italians will invite you to use «tu» when they are ready. STEP 6: «Piacere» is what you say when you meet someone: it means «pleased to meet you». It is not «please»; for «please» Italian says «per favore». STEP 7: «Sto bene» means «I am well». Use «stare» for how you feel, not «essere»: «Sto bene», not «Sono bene».",
+        "comparacao": "English «you» hides the difference that Italian makes visible, so the choice feels new. A useful parallel is the English jump between «Hey, how are you?» and «Good morning, madam, how do you do?»: Italian puts that switch into the grammar. Also watch the false friend «piacere»: it looks like «pleasure» and works as «pleased to meet you», but it never means «please».",
+        "exemplos": [
+          {
+            "ru": "Come si chiama?",
+            "pt": "What is your name? (formal)"
+          },
+          {
+            "ru": "Piacere",
+            "pt": "Pleased to meet you."
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "tu (informal)",
+            "exemplo": "Come ti chiami?  Come stai?"
+          },
+          {
+            "tipo": "Lei (formal)",
+            "exemplo": "Come si chiama?  Come sta?"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Come ti chiami, signora?",
+            "certo": "Come si chiama, signora?",
+            "motivo": "A stranger you call «signora» gets the formal form."
+          },
+          {
+            "errado": "Sono bene, grazie.",
+            "certo": "Sto bene, grazie.",
+            "motivo": "Health and mood use «stare», not «essere». English «I am well» is the trap."
+          },
+          {
+            "errado": "Piacere, per favore.",
+            "certo": "Piacere.",
+            "motivo": "«Piacere» already means «pleased to meet you»; it is not «please»."
+          }
+        ],
+        "tag": "Introductions"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 4,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Piacere",
+            "opcoes": [
+              "Piacere",
+              "Per favore",
+              "Prego"
+            ],
+            "gabarito": "Piacere",
+            "explicacao": "«Piacere» is what you say on meeting someone. «Per favore» is the real «please».",
+            "id": "it-003-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Mi chiamo",
+            "opcoes": [
+              "Mi chiamo",
+              "Ti chiami",
+              "Si chiama"
+            ],
+            "gabarito": "Mi chiamo",
+            "explicacao": "Listen to the first sound: «mi» is «I», while «ti» would be «you».",
+            "id": "it-003-e02"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence do you say to a stranger you call «signora»?",
+            "opcoes": [
+              "Come ti chiami?",
+              "Come si chiama?",
+              "Come stai?"
+            ],
+            "gabarito": "Come si chiama?",
+            "explicacao": "«Si chiama» is the formal form, used with «Lei».",
+            "id": "it-003-e03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Sto ___, grazie. (I am well)",
+            "opcoes": [
+              "bene",
+              "è bene",
+              "sono"
+            ],
+            "gabarito": "bene",
+            "explicacao": "Use «stare»: «Sto bene». English «I am well» does not become «sono bene».",
+            "id": "it-003-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «Piacere» mean when you meet someone?",
+            "opcoes": [
+              "Please",
+              "Pleased to meet you",
+              "You are welcome"
+            ],
+            "gabarito": "Pleased to meet you",
+            "explicacao": "It looks like «please», but «please» is «per favore».",
+            "id": "it-003-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Come si chiama?»",
+            "opcoes": [
+              "Come",
+              "si",
+              "chiama?"
+            ],
+            "gabarito": "Come si chiama?",
+            "explicacao": "Short and formal: there is no «your» and no «name» in Italian.",
+            "id": "it-003-e06"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Introduce yourself out loud as if you were meeting a stranger and then a friend: «Buongiorno, mi chiamo… Piacere.» Then ask the friend: «Come ti chiami?»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 2,
+        "enunciado": "Say the two questions for «What is your name?», formal and informal, and explain to yourself why neither contains the word «name»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-003.json",
+  "responsavel": null
+}

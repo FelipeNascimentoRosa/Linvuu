@@ -1,0 +1,246 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 28,
+  "fase": 3,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Family and possessives: Review and practice of lesson 7",
+  "objetivo": "Lesson 7, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 7,
+    "titulo": "Family and possessives",
+    "objetivo": "Name your family members, use «mio», «tuo» and «suo» with the right gender and article, and describe who people are and what they do. Avoid the English-speaker traps: an article before a job, a missing article before a possessive, and «parenti» for «parents».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 7",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 24,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "i miei genitori",
+            "opcoes": [
+              "i miei genitori",
+              "il mio genitore",
+              "le mie genitori"
+            ],
+            "gabarito": "i miei genitori",
+            "explicacao": "The plural masculine article: «i miei».",
+            "id": "it-007-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Mio padre è medico",
+            "opcoes": [
+              "Mio padre è medico",
+              "Il mio padre è un medico",
+              "Mia padre è medico"
+            ],
+            "gabarito": "Mio padre è medico",
+            "explicacao": "No article with «padre» and no article before the job.",
+            "id": "it-007-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Le mie sorelle sono simpatiche",
+            "opcoes": [
+              "Le mie sorelle sono simpatiche",
+              "La mia sorella è simpatica",
+              "Le mie sorelle è simpatiche"
+            ],
+            "gabarito": "Le mie sorelle sono simpatiche",
+            "explicacao": "Plural subject: «le mie sorelle sono».",
+            "id": "it-007-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Come si chiamano",
+            "opcoes": [
+              "Come si chiamano",
+              "Come si chiama",
+              "Come ti chiami"
+            ],
+            "gabarito": "Come si chiamano",
+            "explicacao": "The ending «-no» marks the plural.",
+            "id": "it-007-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Di chi è",
+            "opcoes": [
+              "Di chi è",
+              "Di chi sono",
+              "Chi è"
+            ],
+            "gabarito": "Di chi è",
+            "explicacao": "The question about owner: «Di chi è?».",
+            "id": "it-007-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "il mio libro",
+            "opcoes": [
+              "il mio libro",
+              "la mia libro",
+              "i miei libri"
+            ],
+            "gabarito": "il mio libro",
+            "explicacao": "Masculine singular: «il mio».",
+            "id": "it-007-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct for «my sister»?",
+            "opcoes": [
+              "la mia sorella",
+              "mia sorella",
+              "mio sorella"
+            ],
+            "gabarito": "mia sorella",
+            "explicacao": "Singular family member: no article.",
+            "id": "it-007-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which word means «relatives»?",
+            "opcoes": [
+              "i genitori",
+              "i parenti",
+              "i nonni"
+            ],
+            "gabarito": "i parenti",
+            "explicacao": "«Genitori» = parents.",
+            "id": "it-007-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Why can «sua madre» mean both «his» and «her mother»?",
+            "opcoes": [
+              "«suo» follows the thing, not the owner",
+              "Italian has no «her»",
+              "it is a spelling variant"
+            ],
+            "gabarito": "«suo» follows the thing, not the owner",
+            "explicacao": "Gender and number belong to the thing owned.",
+            "id": "it-007-e09"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ miei fratelli sono simpatici. (My brothers)",
+            "opcoes": [
+              "I",
+              "Il",
+              "Le"
+            ],
+            "gabarito": "I",
+            "explicacao": "Plural with «miei»: the article is «i».",
+            "id": "it-007-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Mia sorella ___ quindici anni. (is fifteen)",
+            "opcoes": [
+              "ha",
+              "è",
+              "hanno"
+            ],
+            "gabarito": "ha",
+            "explicacao": "Age uses «avere».",
+            "id": "it-007-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Mio padre è ___. (a doctor)",
+            "opcoes": [
+              "medico",
+              "un medico",
+              "il medico"
+            ],
+            "gabarito": "medico",
+            "explicacao": "No article before a job.",
+            "id": "it-007-e12"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Guarda, questa è la mia famiglia.»",
+            "opcoes": [
+              "Guarda,",
+              "questa",
+              "è",
+              "la",
+              "mia",
+              "famiglia."
+            ],
+            "gabarito": "Guarda, questa è la mia famiglia.",
+            "explicacao": "The possessive takes the article here: «la mia famiglia».",
+            "id": "it-007-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «La tua famiglia è grande!»",
+            "opcoes": [
+              "La",
+              "tua",
+              "famiglia",
+              "è",
+              "grande!"
+            ],
+            "gabarito": "La tua famiglia è grande!",
+            "explicacao": "Article + possessive + noun.",
+            "id": "it-007-e14"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud and then show the answer.",
+            "audio": "Guarda, questa è la mia famiglia.",
+            "respostaEsperada": "Guarda, questa è la mia famiglia.",
+            "explicacao": "Look, this is my family.",
+            "complemento": true,
+            "id": "it-007-r15"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud and then show the answer.",
+            "audio": "Sono i miei fratelli, Luca e Sara.",
+            "respostaEsperada": "Sono i miei fratelli, Luca e Sara.",
+            "explicacao": "They are my brothers, Luca and Sara.",
+            "complemento": true,
+            "id": "it-007-r16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Italian: My brother is twenty. My sisters are friendly.",
+            "respostaEsperada": "Mio fratello ha venti anni. Le mie sorelle sono simpatiche.",
+            "id": "it-007-e17"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Introduce your family aloud: who they are, their names, their ages and their jobs. Use «mio» and «mia» for the singular and «i miei» for the plural."
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "List the three differences between English and Italian in this lesson: possessives follow the thing, the article comes before them, and a job after «essere» has no article."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-007.json",
+  "responsavel": null
+}
