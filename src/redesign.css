@@ -437,7 +437,7 @@ html[data-tema-aluno="escuro"] .lv-tabbar{background:oklch(20% 0.014 155);border
 .lv-assinatura .lv-plano>.btn-primary{margin-top:auto}
 .lv-assinatura .lv-plano p{max-width:none}
 @media(max-width:900px){.lv-assinatura .lv-planos.lv-planos-3,.lv-assinatura .lv-planos.lv-planos-2{grid-template-columns:1fr}}
-.lv-meio{display:inline-flex;gap:4px;padding:4px;border:1px solid var(--linha-forte);border-radius:var(--r-pill)}
+.lv-meio{display:inline-flex;gap:4px;padding:4px;border:0;background:var(--papel);border-radius:var(--r-pill)} /* sem borda: o seletor Pix/cartão não vira caixa dentro do cartão do plano */
 .lv-meio button{min-height:44px;padding:0 14px;border:0;border-radius:var(--r-pill);background:transparent;color:var(--text);font:inherit;font-weight:600;font-size:14px;cursor:pointer}
 .lv-meio button.on{background:var(--verde-floresta);color:var(--papel-luz)}
 .lv-meio button:focus-visible{outline:3px solid var(--ocre);outline-offset:2px}

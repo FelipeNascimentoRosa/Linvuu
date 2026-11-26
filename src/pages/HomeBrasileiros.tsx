@@ -5,7 +5,7 @@ import { homeText as h } from '../i18n/home';
 import { LOCALE } from '../i18n';
 import { useState } from 'react';
 import { OfertaAtual } from '../components/OfertaAtual';
-import { HOME_BR } from '../config/oferta-publica';
+import { vitrineDo } from '../config/oferta-publica';
 import { Link } from 'react-router-dom';
 import { falar } from '../lib/audio';
 import { usePageTitle } from '../lib/usePageTitle';
@@ -37,8 +37,8 @@ export default function HomeBrasileiros() {
   const completo = (id: string) => { const c = coberturaNoSite(id); return c.total > 0 && c.traduzidas >= c.total; };
   const principais = ehCom ? idiomas.filter((i) => completo(i.id)) : idiomas;
   const catalogo = CATALOGO[LOCALE.codigo].map((id) => CURSOS_ATIVOS.find((c) => c.id === id)).filter((c): c is (typeof CURSOS_ATIVOS)[number] => !!c && cursoComExplicacaoNoSite(c.id));
-  usePageTitle(h(HOME_BR.tituloSeo), h(HOME_BR.descricao));
-  const totalAulas = principais.reduce((n, i) => n + coberturaNoSite(i.id).total, 0);
+  const V = vitrineDo(LOCALE.codigo); // copy da vitrine: src/config/oferta-publica.ts (a mesma que o HTML pré-renderizado usa)
+  usePageTitle(V.tituloSeo, V.descricao, ['pt-BR', 'en'], false, true); // título já traz a marca: sem « · Linvuu» repetido
   const [idioma, setIdioma] = useState(principais[0] ?? idiomas[0]);
   const [tocando, setTocando] = useState(false);
   const [erro, setErro] = useState('');
@@ -61,19 +61,13 @@ export default function HomeBrasileiros() {
     <section className="br-hero" aria-labelledby="br-h1">
       <div className="br-hero-in">
         <div className="br-hero-topo br-hero-topo-simples">
-          <h1 id="br-h1">{h("Idiomas explicados em português,")}<br /><em>{h("como um bom professor explicaria.")}</em></h1>
-          <p className="br-hero-sub">{h("Cada regra vem com o porquê. Cada frase vem com áudio. Você entende o que diz, em vez de decorar.")}</p>
+          <h1 id="br-h1">{V.titulo}</h1>
+          <p className="br-hero-sub">{V.lead}</p>
           <div className="br-hero-acoes">
-            <HomeCourseLink cta="home_comecar" to={`/curso/${idioma.id}`} className="br-hero-cta">{h("Começar grátis")} · {h(idioma.nome)} <span aria-hidden="true">→</span></HomeCourseLink>
+            <HomeCourseLink cta="home_comecar" to={`/curso/${idioma.id}`} className="br-hero-cta">{V.cta} <span aria-hidden="true">→</span></HomeCourseLink>
             <a className="br-hero-link" href="#idiomas">{h("Ver todos os cursos")}</a>
           </div>
-          <p className="br-hero-fino">{h("As 2 primeiras aulas são grátis. Sem cartão.")}</p>
-          <dl className="br-metricas">
-            <div><dt>{h("idiomas")}</dt><dd>{principais.length}</dd></div>
-            <div><dt>{h("aulas")}</dt><dd>{totalAulas}</dd></div>
-            <div><dt>{h("aulas grátis por curso")}</dt><dd>2</dd></div>
-            <div><dt>{h("em cada frase")}</dt><dd>{h("Áudio")}</dd></div>
-          </dl>
+          <p className="br-hero-fino">{V.ctaFino}</p>
         </div>
         <div className="br-palco" id="experimente">
           <p className="br-pick" id="br-pick-title">{h("Qual idioma você quer aprender?")}</p>
@@ -92,20 +86,23 @@ export default function HomeBrasileiros() {
       </div>
     </section>
     <section className="br-section br-why br-motion-item" id="por-que-online" aria-labelledby="br-why-title">
-      <div className="br-section-head"><div><h2 id="br-why-title">{h("O que um aplicativo não explica,")}<br />{h("a Linvuu explica.")}</h2></div><p>{h("Repetir frases sem saber por que elas são assim cansa e não fixa. Aqui, cada estrutura nova chega explicada, ouvida e praticada.")}</p></div>
+      <div className="br-section-head"><div><h2 id="br-why-title">{V.contrasteTitulo}</h2></div></div>
       <div className="br-why-grid">
-        <article data-tom="vermelho"><h3>{h("Escrito por professores.")}</h3><p>{h("Cada aula é escrita e revisada por quem ensina o idioma há anos, em linguagem clara.")}</p></article>
-        <article data-tom="ocre"><h3>{h("Baseado em livros de referência.")}</h3><p>{h("A gramática segue os livros didáticos de cada idioma, explicada em português.")}</p></article>
-        <article data-tom="verde"><h3>{h("Você ouve, entende e pratica.")}</h3><p>{h("Áudio em cada frase e exercícios com correção na hora.")}</p></article>
-        <article data-tom="vermelho"><h3>{h("Aula ao vivo, se quiser.")}</h3><p>{h("Aulas de russo por videochamada com professores.")}</p><Link className="br-text-link" to="/russo-online">{h("Ver aulas ao vivo")}</Link></article>
+        {V.contraste.map((c, i) => <article key={c.t} data-tom={['vermelho', 'ocre', 'verde'][i]}><h3>{c.t}</h3><p>{c.d}</p></article>)}
       </div>
       <div className="br-why-acao">
         <HomeCourseLink cta="home_comecar" to={`/curso/${idioma.id}`} className="br-why-cta">{h("Fazer a primeira aula de")} {ehCom ? h(idioma.nome) : idioma.nome.toLowerCase()} <span aria-hidden="true">→</span></HomeCourseLink>
         <span>{h("Grátis, sem cartão, no seu ritmo.")}</span>
+        <Link className="br-text-link" to="/russo-online">{h("Ver aulas ao vivo")}</Link>
       </div>
     </section>
     <section className="br-section br-motion-item" id="idiomas" aria-labelledby="titulo-livros"><span id="cursos" /><div className="br-section-head"><div><h2 id="titulo-livros">{ehCom ? 'Choose your language.' : 'Escolha seu idioma.'}</h2></div><p>{ehCom ? 'Courses include audio and exercises. The first 2 lessons are free.' : 'Os cursos incluem áudio e exercícios. As 2 primeiras aulas são grátis.'}</p></div><div className="site-publico site-catalogo"><div className="curso-grid">{catalogo.map((c) => <div className="catalogo-idioma" key={c.id}><CursoCard curso={c} nivel={3} catalogoRascunho /><LivroDoCurso curso={c} /></div>)}</div></div></section>
     <section className="br-book"><div><h2>{ehCom ? 'Your learning has pages, too.' : 'Seu aprendizado também tem páginas.'}</h2><p>{ehCom ? 'Read Linvuu’s Brazilian Portuguese grammar calmly and come back to the topics that deserve more attention.' : 'Explore os livros da Linvuu, leia com calma e volte aos assuntos que merecem mais atenção.'}</p></div><Link className="br-text-link" to="/livros">{ehCom ? 'See the book' : 'Conhecer a coleção'} <span aria-hidden="true">→</span></Link></section>
+    <section className="br-section br-autoria br-motion-item" id="autoria" aria-labelledby="br-autoria-title">
+      <div className="br-section-head"><div><h2 id="br-autoria-title">{V.autoriaTitulo}</h2></div><p>{V.autoriaLead}</p></div>
+      <ul className="br-autoria-lista">{V.autoria.map((i) => <li key={i.t}><h3>{i.t}</h3><p>{i.d}</p></li>)}</ul>
+      <Link className="br-text-link" to="/sobre">{V.autoriaLink} <span aria-hidden="true">→</span></Link>
+    </section>
     <OfertaAtual />
     <div className="br-section br-avaliacoes br-motion-item"><Avaliacoes vitrine /></div>
     <section className="br-section br-faq br-motion-item" id="faq"><div><h2>{h("Uma dúvida")}<br />{h("antes do primeiro passo?")}</h2><Link to="/contato" className="br-text-link">{h("Fale com a Linvuu")}</Link></div><div>{perguntas.map(([p,r]) => <details key={p}><summary>{h(p)}</summary><p>{h(r)}</p></details>)}</div></section>
