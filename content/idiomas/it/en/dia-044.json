@@ -31,7 +31,7 @@
             "opcoes": [
               "Dov'è la stazione",
               "Dove sono la stazione",
-              "Dove è la stazione"
+              "Dove sono le stazioni"
             ],
             "gabarito": "Dov'è la stazione",
             "explicacao": "One place.",
@@ -250,12 +250,12 @@
       {
         "tipo": "producao",
         "min": 3,
-        "enunciado": "Choose a place in your town and give directions aloud with «Lei» from a station, then say how long it takes and how you would go."
+        "enunciado": "Choose a place in your town and give directions to it aloud, using «Lei» and starting from the station. Then say how long it takes and how you would get there."
       },
       {
         "tipo": "revisao",
         "min": 3,
-        "enunciado": "List the three habits to drop from English: «near the», «Turn left» in one form for everyone, and «by bus» with «by»."
+        "enunciado": "List the three habits to drop from English: leaving out «a» after «vicino», using one imperative for everyone, and translating «by bus» word for word with «per»."
       }
     ]
   },

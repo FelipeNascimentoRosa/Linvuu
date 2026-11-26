@@ -86,8 +86,8 @@
         "tipo": "gramatica",
         "min": 10,
         "titulo": "Every noun has a gender, and «the» has four faces",
-        "explicacao": "STEP 1: English has one «the» for everything: «the book», «the pen», «the window». Italian has a different «the» depending on the gender of the noun (masculine or feminine) and on the first sound of the word. STEP 2: masculine singular: «il» before most consonants («il libro»), «lo» before «s» + consonant, «z», «gn» and «ps» («lo studente», «lo zaino»), and «l'» before a vowel («l'amico»). STEP 3: feminine singular: «la» before a consonant («la penna», «la finestra») and «l'» before a vowel («l'amica»). STEP 4: «l'» is the same for both genders, so the noun itself and the ending show which one it is: «l'amico» (male friend), «l'amica» (female friend). STEP 5: gender is a property of the word, not of the meaning. A book is not «male» in any real sense. Most nouns ending in «-o» are masculine and most nouns ending in «-a» are feminine: «il libro», «la penna». STEP 6: nouns ending in «-e» can be either: you must learn them with their article («il nome», «la notte»). STEP 7: learn each new noun with its article from the very start: not «libro» but «il libro». STEP 8: the indefinite articles follow the same logic: «un libro», «uno zaino», «una penna», «un'amica». «Uno» is used where «lo» is used.",
-        "comparacao": "English has no grammatical gender, so this is the first place where you cannot reuse your instincts. Do not try to guess the gender from the meaning: learn the article together with the word and let the ending help. Another English habit to drop: the article must be repeated in Italian lists («il libro, la penna e lo zaino»), but English lets you say «the book, pen and backpack».",
+        "explicacao": "STEP 1: English has one «the» for everything: «the book», «the pen», «the window». Italian has a different «the» depending on the gender of the noun (masculine or feminine) and on the first sound of the word. STEP 2: masculine singular: «il» before most consonants («il libro»), «lo» before «s» + consonant, «z», «gn», «ps» and a few other clusters («lo studente», «lo zaino»), and «l'» before a vowel («l'amico»). STEP 3: feminine singular: «la» before a consonant («la penna», «la finestra») and «l'» before a vowel («l'amica»). STEP 4: «l'» is the same for both genders, so the noun itself and the ending show which one it is: «l'amico» (male friend), «l'amica» (female friend). STEP 5: gender is a property of the word, not of the meaning. A book is not «male» in any real sense. Most nouns ending in «-o» are masculine and most nouns ending in «-a» are feminine: «il libro», «la penna». STEP 6: nouns ending in «-e» can be either: you must learn them with their article («il nome», «la notte»). STEP 7: learn each new noun with its article from the very start: not «libro» but «il libro». STEP 8: the indefinite articles follow the same logic: «un libro», «uno zaino», «una penna», «un'amica». «Uno» is used where «lo» is used.",
+        "comparacao": "English has no grammatical gender, so this is the first place where you cannot reuse your instincts. Do not try to guess the gender from the meaning: learn the article together with the word and let the ending help. Another English habit to drop: Italian normally repeats the article in lists («il libro, la penna e lo zaino»), while English lets you say «the book, pen and backpack».",
         "exemplos": [
           {
             "ru": "il libro",
@@ -136,7 +136,7 @@
         "tipo": "gramatica",
         "min": 5,
         "titulo": "False friends: «camera», «libro» and others",
-        "explicacao": "STEP 1: some Italian words look like English words and mean something else. «La camera» is a room, usually a bedroom: the device is «la macchina fotografica». STEP 2: «il libro» is a book, not a library: a library is «la biblioteca» and a bookshop is «la libreria». STEP 3: «la penna» is a pen. A pencil is «la matita». STEP 4: «lo studente» is a student of any age, school or university. STEP 5: «l'amico» is a friend. Keep a notebook of false friends, with the article, and add each new one when you meet it.",
+        "explicacao": "STEP 1: some Italian words look like English words and mean something else. «La camera» is a room, usually a bedroom: the device is «la macchina fotografica». STEP 2: «la libreria» looks like «library» but is a bookshop; a library is «la biblioteca». «Il libro» is simply the book. STEP 3: «la penna» is a pen. A pencil is «la matita». STEP 4: «lo studente» is a student of any age, school or university. STEP 5: «l'amico» is a friend. Keep a notebook of false friends, with the article, and add each new one when you meet it.",
         "comparacao": "«Camera» and «libreria» are two classic English-speaker mistakes. A «library» is not «la libreria»; it is «la biblioteca». And «la camera» is a room, not what you take photos with.",
         "exemplos": [
           {
@@ -152,9 +152,9 @@
         ],
         "erros": [
           {
-            "errado": "Prendo il libro alla libreria.",
-            "certo": "Prendo il libro alla biblioteca.",
-            "motivo": "«Libreria» is a shop that sells books; to borrow one, go to the «biblioteca»."
+            "errado": "il camera",
+            "certo": "la camera",
+            "motivo": "«Camera» is feminine: «la camera». Remember that it means «room»."
           }
         ],
         "tag": "Articles"

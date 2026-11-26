@@ -92,7 +92,7 @@
           {
             "ru": "Piacere",
             "translit": "pyah-CHEH-reh",
-            "pt": "pleased to meet you (not «please»!)",
+            "pt": "pleased to meet you (on its own, not «please»)",
             "en": "",
             "audio": "Piacere"
           },
@@ -116,7 +116,7 @@
         "tipo": "gramatica",
         "min": 6,
         "titulo": "Saying your name: «mi chiamo»",
-        "explicacao": "STEP 1: Italian does not say «my name is». It says «mi chiamo», which is literally «I call myself». STEP 2: the question follows the same logic: «Come ti chiami?» is literally «How do you call yourself?». There is no «is», no «your» and no word for «name». STEP 3: «mi» and «ti» are the small words that carry «myself» and «yourself». Without them the verb changes meaning: «chiamo» alone means «I call» someone, as in «I call a taxi». STEP 4: to answer, say «Mi chiamo» and your name, with no pronoun: «Mi chiamo Ana.» The word «io» is not needed, because the verb ending already tells you who is speaking. STEP 5: the stress falls on the middle syllable: «mee KYAH-moh». The «chi» is a hard «k»: «kya», as in «keen», not «chee».",
+        "explicacao": "STEP 1: Italian does not say «my name is». It says «mi chiamo», which is literally «I call myself». STEP 2: the question follows the same logic: «Come ti chiami?» is literally «How do you call yourself?». There is no «is», no «your» and no word for «name». STEP 3: «mi» and «ti» are the small words that carry «myself» and «yourself». Without them the verb changes meaning: «chiamo» alone means «I call» someone, as in «I call a taxi». STEP 4: to answer, say «Mi chiamo» and your name, with no pronoun: «Mi chiamo Ana.» The word «io» is not needed, because the verb ending already tells you who is speaking. STEP 5: the stress falls on the middle syllable: «mee KYAH-moh». The «chi» is a hard «k»: «kya», not «chee».",
         "comparacao": "English has a fixed frame: «My name is ___» and «What is your name?». Italian has no «name» and no «is» in either sentence. Do not translate word by word: learn «Mi chiamo…» and «Come ti chiami?» as two blocks. English speakers also tend to say «chi» like «chee» (as in «cheese»), but in «chiami» it is «kya».",
         "exemplos": [
           {
@@ -140,14 +140,14 @@
         ],
         "erros": [
           {
-            "errado": "Io chiamo Ana.",
-            "certo": "Mi chiamo Ana.",
+            "errado": "Io chiamo Ana",
+            "certo": "Mi chiamo Ana",
             "motivo": "Without «mi», «chiamo» means «I call (someone)». The «mi» is the «myself»."
           },
           {
             "errado": "Come è il tuo nome?",
             "certo": "Come ti chiami?",
-            "motivo": "A word-for-word copy of «What is your name?» is understood, but it sounds like a textbook. Use «Come ti chiami?»."
+            "motivo": "«Come è il tuo nome?» would mean «What is your name like?». Say «Come ti chiami?»."
           }
         ],
         "tag": "Introductions"
@@ -156,8 +156,8 @@
         "tipo": "gramatica",
         "min": 6,
         "titulo": "«Tu» or «Lei»: two ways to say «you»",
-        "explicacao": "STEP 1: English has one «you» for everybody. Italian chooses between two forms, depending on the relationship. STEP 2: use the informal form («tu») with friends, family, children and people your own age in a relaxed setting: «Come ti chiami?», «Come stai?». STEP 3: use the formal form («Lei») with strangers, older people, and in shops, offices and hotels: «Come si chiama?», «Come sta?». STEP 4: with «Lei» the verb takes the form you would use for «she», and «Lei» is often written with a capital letter when it means «you»: «E Lei?». STEP 5: when in doubt, start formal. Italians will invite you to use «tu» when they are ready. STEP 6: «Piacere» is what you say when you meet someone: it means «pleased to meet you». It is not «please»; for «please» Italian says «per favore». STEP 7: «Sto bene» means «I am well». Use «stare» for how you feel, not «essere»: «Sto bene», not «Sono bene».",
-        "comparacao": "English «you» hides the difference that Italian makes visible, so the choice feels new. A useful parallel is the English jump between «Hey, how are you?» and «Good morning, madam, how do you do?»: Italian puts that switch into the grammar. Also watch the false friend «piacere»: it looks like «pleasure» and works as «pleased to meet you», but it never means «please».",
+        "explicacao": "STEP 1: English has one «you» for everybody. Italian chooses between two forms, depending on the relationship. STEP 2: use the informal form («tu») with friends, family, children and people your own age in a relaxed setting: «Come ti chiami?», «Come stai?». STEP 3: use the formal form («Lei») with strangers, older people, and in shops, offices and hotels: «Come si chiama?», «Come sta?». STEP 4: with «Lei» the verb takes the form you would use for «she», and «Lei» is often written with a capital letter when it means «you»: «E Lei?». STEP 5: when in doubt, start formal. Italians will invite you to use «tu» when they are ready. STEP 6: «Piacere» is what you say when you meet someone: it means «pleased to meet you». On its own it is not «please»; for «please», say «per favore» (or «per piacere»). STEP 7: «Sto bene» means «I am well». Use «stare» for how you are doing, not «essere»: «Sto bene», not «Sono bene». (Feelings such as tired or happy still take «essere»: «Sono stanco».)",
+        "comparacao": "English «you» hides the difference that Italian makes visible, so the choice feels new. A useful parallel is the English jump between «Hey, how are you?» and «Good morning, madam, how do you do?»: Italian puts that switch into the grammar. Also watch the false friend «piacere»: it looks like «pleasure» and works as «pleased to meet you», but on its own it does not mean «please» (the phrase «per piacere» does).",
         "exemplos": [
           {
             "ru": "Come si chiama?",
@@ -180,19 +180,19 @@
         ],
         "erros": [
           {
-            "errado": "Come ti chiami, signora?",
-            "certo": "Come si chiama, signora?",
-            "motivo": "A stranger you call «signora» gets the formal form."
+            "errado": "Come ti chiama?",
+            "certo": "Come si chiama?",
+            "motivo": "To a stranger or an older person you address as «Lei», use the formal «Come si chiama?». Do not mix «ti» (informal) with «chiama» (formal)."
           },
           {
             "errado": "Sono bene, grazie.",
             "certo": "Sto bene, grazie.",
-            "motivo": "Health and mood use «stare», not «essere». English «I am well» is the trap."
+            "motivo": "Saying how you are doing uses «stare», not «essere». English «I am well» is the trap."
           },
           {
-            "errado": "Piacere, per favore.",
-            "certo": "Piacere.",
-            "motivo": "«Piacere» already means «pleased to meet you»; it is not «please»."
+            "errado": "Prego",
+            "certo": "per favore",
+            "motivo": "«Prego» answers «grazie» or invites someone to go ahead. To ask for something, say «per favore»."
           }
         ],
         "tag": "Introductions"
@@ -211,7 +211,7 @@
               "Prego"
             ],
             "gabarito": "Piacere",
-            "explicacao": "«Piacere» is what you say on meeting someone. «Per favore» is the real «please».",
+            "explicacao": "«Piacere» is what you say on meeting someone. «Per favore» is the usual «please».",
             "id": "it-003-e01"
           },
           {
@@ -260,7 +260,7 @@
               "You are welcome"
             ],
             "gabarito": "Pleased to meet you",
-            "explicacao": "It looks like «please», but «please» is «per favore».",
+            "explicacao": "It looks like «please», but the usual «please» is «per favore».",
             "id": "it-003-e05"
           },
           {

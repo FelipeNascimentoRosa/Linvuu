@@ -29,7 +29,7 @@
           {
             "personagem": "Paolo",
             "ru": "— Buongiorno, signora Rossi! Come sta?",
-            "pt": "— Good morning, Mrs Rossi! How are you?",
+            "pt": "— Good morning, Mrs. Rossi! How are you?",
             "audio": "Buongiorno, signora Rossi! Come sta?"
           },
           {
@@ -71,7 +71,7 @@
           {
             "personagem": "Luca",
             "ru": "— Grazie, Paolo! Arrivederci, signora Rossi!",
-            "pt": "— Thanks, Paolo! Goodbye, Mrs Rossi!",
+            "pt": "— Thanks, Paolo! Goodbye, Mrs. Rossi!",
             "audio": "Grazie, Paolo! Arrivederci, signora Rossi!"
           }
         ]
@@ -128,7 +128,7 @@
         "tipo": "gramatica",
         "min": 5,
         "titulo": "Five pure vowels, no glides",
-        "explicacao": "STEP 1: English vowels often glide into a second sound: «go» becomes «goh-oo», «day» becomes «deh-ee». Italian vowels do not. Say each one cleanly and hold it still. STEP 2: «a» is always «ah». «E» is «eh» as in «bed». «I» is «ee» as in «machine». «O» is «oh» as in «more». «U» is «oo» as in «food». STEP 3: the final vowel is always pronounced. «Bene» is not «been»: it is «BEH-neh», with two clear «eh» sounds. STEP 4: do not reduce unstressed vowels. English turns the last «a» of «pasta» into «uh», but Italian keeps «ah»: «PAH-stah». STEP 5: two vowels next to each other are usually pronounced separately, one after the other. «Paolo» is «PAH-oh-loh».",
+        "explicacao": "STEP 1: English vowels often glide into a second sound: «go» becomes «goh-oo», «day» becomes «deh-ee». Italian vowels do not. Say each one cleanly and hold it still. STEP 2: «a» is always «ah». «E» is «eh» as in «bed». «I» is «ee» as in «machine». «O» is «oh» as in «more». «U» is «oo» as in «food». STEP 3: the final vowel is always pronounced. «Bene» is not «been»: it is «BEH-neh», with two clear «eh» sounds. STEP 4: do not reduce unstressed vowels. English turns the last «a» of «pasta» into «uh», but Italian keeps «ah»: «PAH-stah». STEP 5: two strong vowels («a», «e», «o») next to each other are pronounced separately, one after the other. «Paolo» is «PAH-oh-loh».",
         "comparacao": "The biggest change for an English speaker is the unstressed vowel. English turns them into a quiet «uh» (the «a» in «banana»). In Italian every vowel is full, whether it is stressed or not. Practice by saying the words slowly and keeping the last vowel strong: «bene», «latte», «otto».",
         "exemplos": [
           {
@@ -172,8 +172,8 @@
         "tipo": "gramatica",
         "min": 5,
         "titulo": "Double consonants and where the stress falls",
-        "explicacao": "STEP 1: a doubled letter is pronounced longer, almost as if you hold the consonant for a beat before you release it. «Palla» (ball) is not «pala» (shovel). «Nonno» (grandfather) is not «nono» (ninth). STEP 2: English does not do this inside a word, but you can feel it if you say «book case» or «night time» slowly: the sound is held between the two words. Italian does it inside one word: «sette» is SEHT-teh, with a short pause on the «t». STEP 3: most Italian words are stressed on the second-to-last syllable: «ca-FFÈ» is the exception, because its final vowel carries an accent. Normal: «BEH-neh», «lah-TEH» is wrong, and «LAHT-teh» is right. STEP 4: an accent mark on the last vowel shows that the stress is on the final syllable: «città» (cheet-TAH), «perché» (pehr-KEH), «università» (oo-nee-vehr-see-TAH). STEP 5: «caffè» also has an accent: the stress is on the last «è». STEP 6: the accents are part of the spelling, so write them: «perché» and «perche» are not the same word on paper.",
-        "comparacao": "English stress is unpredictable: «PHOtograph», «phoTOgrapher». Italian stress is much more regular: nearly always the second-to-last syllable, unless the final vowel has an accent. The long consonants will feel strange, but they change meanings, so practice them with pairs: palla/pala, sette/sete.",
+        "explicacao": "STEP 1: a doubled letter is pronounced longer, almost as if you hold the consonant for a beat before you release it. «Palla» (ball) is not «pala» (shovel). «Nonno» (grandfather) is not «nono» (ninth). STEP 2: English does not do this inside a word, but you can feel it if you say «book case» or «night time» slowly: the sound is held between the two words. Italian does it inside one word: «sette» is SEHT-teh, with a short pause on the «t». STEP 3: most Italian words are stressed on the second-to-last syllable: «BEH-neh», «LAHT-teh», «PAH-stah». Saying «lah-TEH» would be wrong. STEP 4: an accent mark on the last vowel shows that the stress is on the final syllable: «città» (cheet-TAH), «perché» (pehr-KEH), «università» (oo-nee-vehr-see-TAH). STEP 5: «caffè» also has an accent: the stress is on the last «è». STEP 6: the accents are part of the spelling, so write them: «perche» without its accent is a misspelling, and «perchè» with the wrong accent is one too.",
+        "comparacao": "English stress is unpredictable: «PHOtograph», «phoTOgrapher». Italian stress is much more regular: most often the second-to-last syllable, unless the final vowel has an accent. A few words, like «TAH-voh-loh» (table), are stressed earlier, and you learn them one by one. The long consonants will feel strange, but they change meanings, so practice them with pairs: palla/pala, sette/sete.",
         "exemplos": [
           {
             "ru": "palla",
@@ -214,9 +214,9 @@
             "motivo": "The accent on the last vowel is written and means the stress is there."
           },
           {
-            "errado": "Perche",
+            "errado": "Perchè",
             "certo": "perché",
-            "motivo": "The accent distinguishes «perché» from other readings."
+            "motivo": "It takes an acute accent («é»), not a grave one: «pehr-KEH»."
           },
           {
             "errado": "Nono",
@@ -230,8 +230,8 @@
         "tipo": "gramatica",
         "min": 4,
         "titulo": "«Come stai?» or «Come sta?»",
-        "explicacao": "STEP 1: English «How are you?» has one form. Italian has two, depending on who you are talking to. STEP 2: with a friend, a child or a person your age, say «Come stai?» (informal). STEP 3: with a stranger or an older person, say «Come sta?» (formal). The word «Lei» is the formal «you»: «E Lei?» means «And you?». STEP 4: the reply is «Sto bene, grazie» for both. For a friend, add «E tu?» (and you?); for a formal speaker, add «E Lei?». STEP 5: «bene, bene» repeated means «really fine, fine». STEP 6: «piacere» is said when you meet someone, and it also answers «Come sta?» when you meet that person for the first time.",
-        "comparacao": "English adjusts the tone but not the grammar: «Hey, how are you?» and «How do you do?» are the same verb. In Italian the verb changes: «stai» for a friend and «sta» for a formal speaker. Using the wrong one is not a disaster, but «sta» is safer when you are not sure.",
+        "explicacao": "STEP 1: English «How are you?» has one form. Italian has two, depending on who you are talking to. STEP 2: with a friend, a child or a person your age, say «Come stai?» (informal). STEP 3: with a stranger or an older person, say «Come sta?» (formal). The word «Lei» is the formal «you»: «E Lei?» means «And you?». STEP 4: the reply is «Sto bene, grazie» for both. For a friend, add «E tu?» (and you?); for a formal speaker, add «E Lei?». STEP 5: repeating «bene, bene» just adds warmth, like English «fine, fine». STEP 6: «piacere» is what you say when you are introduced to someone; it does not answer «Come sta?».",
+        "comparacao": "English adjusts the tone but not the grammar: «Hey, how are you?» and «How are you doing?» use the same verb. In Italian the verb changes: «stai» for a friend and «sta» for a formal speaker. Using the wrong one is not a disaster, but «sta» is safer when you are not sure.",
         "exemplos": [
           {
             "ru": "Sto bene, grazie. E tu?",
@@ -254,9 +254,9 @@
         ],
         "erros": [
           {
-            "errado": "Come ti chiama?",
+            "errado": "Come sei?",
             "certo": "Come sta?",
-            "motivo": "Mixing the two forms: for health, use «Come sta?» (formal) or «Come stai?» (informal)."
+            "motivo": "«Come sei?» asks what you are like, not how you feel. For health, use «stare»: «Come sta?» (formal) or «Come stai?» (informal)."
           }
         ],
         "tag": "Greetings"
@@ -306,7 +306,7 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "Which greeting do you use for a stranger?",
+            "enunciado": "Which question asks a stranger how they are?",
             "opcoes": [
               "Come stai?",
               "Come sta?",

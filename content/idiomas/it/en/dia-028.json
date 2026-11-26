@@ -164,14 +164,14 @@
           },
           {
             "tipo": "fill-gap",
-            "enunciado": "Mio padre è ___. (a doctor)",
+            "enunciado": "Mio padre è ___. (a doctor, stated with no article)",
             "opcoes": [
               "medico",
               "un medico",
               "il medico"
             ],
             "gabarito": "medico",
-            "explicacao": "No article before a job.",
+            "explicacao": "A plain job takes no article.",
             "id": "it-007-e12"
           },
           {
@@ -217,7 +217,7 @@
             "enunciado": "Listen, repeat out loud and then show the answer.",
             "audio": "Sono i miei fratelli, Luca e Sara.",
             "respostaEsperada": "Sono i miei fratelli, Luca e Sara.",
-            "explicacao": "They are my brothers, Luca and Sara.",
+            "explicacao": "They are my siblings, Luca and Sara.",
             "complemento": true,
             "id": "it-007-r16"
           },
@@ -237,7 +237,7 @@
       {
         "tipo": "revisao",
         "min": 3,
-        "enunciado": "List the three differences between English and Italian in this lesson: possessives follow the thing, the article comes before them, and a job after «essere» has no article."
+        "enunciado": "List the three differences between English and Italian in this lesson: possessives follow the thing, the article comes before them, and a plain job after «essere» takes no article."
       }
     ]
   },

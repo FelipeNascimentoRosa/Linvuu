@@ -104,8 +104,8 @@
         "tipo": "gramatica",
         "min": 7,
         "titulo": "Question words: «chi», «dove», «come»",
-        "explicacao": "STEP 1: the three question words you need first are «chi» (who), «dove» (where) and «come» (how, or what something is like). STEP 2: the word order is the opposite of English: the question word comes first, then the verb, then the subject. «Chi è Giulia?» is «Who is Giulia?», «Dov'è Marco?» is «Where is Marco?», and «Com'è Marco?» is «What is Marco like?». STEP 3: when «dove» or «come» is followed by «è», they contract with an apostrophe: «dove è» becomes «dov'è», and «come è» becomes «com'è». STEP 4: «chi» is a hard «k» sound: «kee». It does not become «chee». STEP 5: with a plural subject, use «sono»: «Dove sono Luca e Sara?». STEP 6: «qui» (here) is «kwee», and «là» (there, with an accent) is «lah». STEP 7: «ma» (but) and «anche» (also, too) join sentences: «Sono stanco, ma contento». «Anche» is «AHN-keh», with a hard «k».",
-        "comparacao": "English uses «do» or an inverted verb in these questions («Where is Marco?»). Italian also puts the question word first, but it keeps the verb right after it and the subject last: «Dov'è Marco?». There is no «does» and no swapping. Take care with «chi»: English «ch» would make it «chee», but in Italian «chi» is «kee».",
+        "explicacao": "STEP 1: the three question words you need first are «chi» (who), «dove» (where) and «come» (how, or what something is like). STEP 2: the word order is the same as in English questions with «to be»: the question word comes first, then the verb, then the subject. «Chi è Giulia?» is «Who is Giulia?», «Dov'è Marco?» is «Where is Marco?», and «Com'è Marco?» is «What is Marco like?». STEP 3: when «dove» or «come» is followed by «è», they contract with an apostrophe: «dove è» becomes «dov'è», and «come è» becomes «com'è». STEP 4: «chi» is a hard «k» sound: «kee». It does not become «chee». STEP 5: with a plural subject, use «sono»: «Dove sono Luca e Sara?». STEP 6: «qui» (here) is «kwee», and «là» (there, with an accent) is «lah». STEP 7: «ma» (but) and «anche» (also, too) join sentences: «Sono stanco, ma contento». «Anche» is «AHN-keh», with a hard «k».",
+        "comparacao": "With «to be», English and Italian agree: question word, verb, subject («Where is Marco?», «Dov'è Marco?»). English needs «do» or «does» with other verbs, while Italian has no such word at all. The trap is keeping the statement order: «Dove Marco è?». Take care with «chi»: English «ch» would make it «chee», but in Italian «chi» is «kee».",
         "exemplos": [
           {
             "ru": "Chi è Giulia?",
@@ -166,7 +166,7 @@
         "tipo": "gramatica",
         "min": 5,
         "titulo": "The apostrophe in «dov'è» and the accent in «là»",
-        "explicacao": "STEP 1: Italian often drops a final vowel before a word that starts with a vowel, and writes an apostrophe where the vowel was. «Dove è» becomes «dov'è», and «come è» becomes «com'è». STEP 2: the apostrophe is not optional in writing. You say the two words as one: «dov'è» is «doh-VEH», with the stress on the last syllable. STEP 3: an accent mark can separate two words that look the same: «là» (there) and «la» (the, her); «è» (is) and «e» (and); «sì» (yes) and «si» (oneself). STEP 4: «qui» and «là» tell you where something is: «Sono qui», «Sono là». STEP 5: «qui» is close to the speaker, and «là» is farther away: «Marco è qui, con Giulia. Ecco, sono là!».",
+        "explicacao": "STEP 1: Italian often drops a final vowel before a word that starts with a vowel, and writes an apostrophe where the vowel was. «Dove è» becomes «dov'è», and «come è» becomes «com'è». STEP 2: in writing, «dov'è» and «com'è» are the normal forms. You say the two words as one: «dov'è» is «doh-VEH», with the stress on the last syllable. STEP 3: an accent mark can separate two words that look the same: «là» (there) and «la» (the, her); «è» (is) and «e» (and); «sì» (yes) and «si» (oneself). STEP 4: «qui» and «là» tell you where something is: «Sono qui», «Sono là». STEP 5: «qui» is close to the speaker, and «là» is farther away: «Marco è qui, con Giulia. Ecco, sono là!».",
         "comparacao": "English contractions drop letters too («it's», «he's», «where's»), but they are optional and used mostly in speech. Italian contractions are also spoken, and the apostrophe is standard in writing. The accent is the second new thing: English has no accent marks, so «la» and «là» are two different words in Italian.",
         "exemplos": [
           {
@@ -190,9 +190,9 @@
         ],
         "erros": [
           {
-            "errado": "Dove è Giulia?",
+            "errado": "Dove'è Giulia?",
             "certo": "Dov'è Giulia?",
-            "motivo": "The contraction is standard in writing and speech."
+            "motivo": "Drop the final «e» of «dove» and put the apostrophe in its place: «dov'è». «Dove'è» keeps both."
           }
         ],
         "tag": "Questions"
@@ -245,7 +245,7 @@
             "opcoes": [
               "Dove Marco è?",
               "Dov'è Marco?",
-              "Dove è Marco?"
+              "Dove sono Marco?"
             ],
             "gabarito": "Dov'è Marco?",
             "explicacao": "Question word first, then the verb, then the subject.",

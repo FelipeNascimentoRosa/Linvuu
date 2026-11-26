@@ -142,8 +142,8 @@
         "tipo": "gramatica",
         "min": 8,
         "titulo": "Gender: the adjective changes with the person",
-        "explicacao": "STEP 1: English adjectives never change: «tall» is the same for a man, a woman and a house. Italian adjectives change their ending to match the person or thing they describe. STEP 2: adjectives ending in «-o» are masculine: «Marco è alto». Replace «-o» with «-a» for the feminine: «Giulia è alta». STEP 3: adjectives ending in «-e» do not change in the singular, so one form serves both genders: «Marco è gentile», «Giulia è gentile». «Giovane» and «grande» work the same way. STEP 4: the adjective agrees with the person you describe, not with the pronoun you use. If you address a woman with formal «Lei», you still say «Lei è stanca?». STEP 5: «molto», before an adjective, means «very» and does not change: «molto stanca», «molto gentile». STEP 6: the adjective usually comes after the verb «essere» and agrees with the subject: «Giulia è alta». STEP 7: look out for look-alike words: «simpatico» means friendly or nice, not «sympathetic», and «contento» means pleased or happy, not «content» in the English sense of «satisfied». «Pronto» means ready.",
-        "comparacao": "This is the first big difference from English: every adjective has to agree with the noun. Speaking is where it shows. A woman says «sono stanca» and a man says «sono stanco», even though English says «I am tired» in both cases. The easy way out is the group of adjectives ending in «-e»: they do not change in the singular.",
+        "explicacao": "STEP 1: English adjectives never change: «tall» is the same for a man, a woman and a house. Italian adjectives change their ending to match the person or thing they describe. STEP 2: adjectives ending in «-o» are masculine: «Marco è alto». Replace «-o» with «-a» for the feminine: «Giulia è alta». STEP 3: adjectives ending in «-e» do not change in the singular, so one form serves both genders: «Marco è gentile», «Giulia è gentile». «Giovane» and «grande» work the same way. STEP 4: the adjective agrees with the person you describe, not with the pronoun you use. If you address a woman with formal «Lei», you still say «Lei è stanca?». STEP 5: «molto», before an adjective, means «very» and does not change: «molto stanca», «molto gentile». STEP 6: the adjective usually comes after the verb «essere» and agrees with the subject: «Giulia è alta». STEP 7: look out for look-alike words: «simpatico» means friendly or nice, not «sympathetic», and «contento» means pleased or glad. «Pronto» means ready.",
+        "comparacao": "This is the first big difference from English: nearly every adjective has to agree with the noun. Speaking is where it shows. A woman says «sono stanca» and a man says «sono stanco», even though English says «I am tired» in both cases. The easy way out is the group of adjectives ending in «-e»: they do not change in the singular.",
         "exemplos": [
           {
             "ru": "Marco è alto.",
@@ -187,9 +187,9 @@
             "motivo": "Feminine subject: the adjective ends in «-a»."
           },
           {
-            "errado": "Marco è gentila.",
+            "errado": "Marco è gentilo.",
             "certo": "Marco è gentile.",
-            "motivo": "Adjectives in «-e» have no form in «-a»."
+            "motivo": "Adjectives in «-e» have one form for both genders: there is no «gentilo» or «gentila»."
           },
           {
             "errado": "Lei è stanco?",
@@ -203,7 +203,7 @@
         "tipo": "gramatica",
         "min": 6,
         "titulo": "Number: plural adjectives",
-        "explicacao": "STEP 1: in the plural, «-o» becomes «-i» («alto» → «alti»), «-a» becomes «-e» («alta» → «alte»), and «-e» becomes «-i» («gentile» → «gentili»). STEP 2: Italian never makes a plural with «-s». STEP 3: English adjectives do not change, so the plural form is a new habit: «Marco e Luca sono alti», «Giulia e Sara sono alte». STEP 4: for a mixed group, use the masculine plural: «Marco e Giulia sono stanchi». STEP 5: in adjectives ending in «-co» and «-ca», an «h» is added to keep the hard sound: «stanco» → «stanchi», «stanca» → «stanche». STEP 6: after «essere», the adjective always agrees with the subject: «Voi siete gentili».",
+        "explicacao": "STEP 1: in the plural, «-o» becomes «-i» («alto» → «alti»), «-a» becomes «-e» («alta» → «alte»), and «-e» becomes «-i» («gentile» → «gentili»). STEP 2: Italian never makes a plural with «-s». STEP 3: English adjectives do not change, so the plural form is a new habit: «Marco e Luca sono alti», «Giulia e Sara sono alte». STEP 4: for a mixed group, use the masculine plural: «Marco e Giulia sono stanchi». STEP 5: adjectives in «-ca» add an «h» in the plural to keep the hard sound: «stanca» → «stanche». Many adjectives in «-co» do the same: «stanco» → «stanchi». Others do not: «simpatico» → «simpatici». STEP 6: after «essere», the adjective always agrees with the subject: «Voi siete gentili».",
         "comparacao": "English adds the «s» to the noun and leaves the adjective alone («tall people»). Italian changes the adjective itself: «alti», «alte». There is no «-s» anywhere. The mixed group rule has no English counterpart: one man in a group of women is enough to make the adjective masculine.",
         "exemplos": [
           {
@@ -317,7 +317,7 @@
             "opcoes": [
               "gentili",
               "gentile",
-              "gentilo"
+              "gentiles"
             ],
             "gabarito": "gentili",
             "explicacao": "An adjective in «-e» becomes «-i» in the plural.",

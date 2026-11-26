@@ -24,3 +24,12 @@ Complementa a «Lei do .com» do `CLAUDE.md`. Fluxo editorial de todo lote do `.
 ## Higiene
 - PDFs e `.md` de terceiros nunca entram no Git. Em cada pasta de fonte, um `LICENCA.txt` com título, autor, ano/ISBN, licença lida no PDF, URL e «Adaptado pela Linvuu».
 - Provas obrigatórias de cada PR de lote: `npm run audit:espelho` (Espelho e BrRef zerados), `auditar-pedagogia` (Vaza/RefPT/Placeh/GlsVaz/GlsPT = 0) e sitemaps em 57 e 30 URLs.
+
+## Bloqueios obrigatórios aprendidos na auditoria 001–048
+Valem para todo autor e todo revisor paralelo, em qualquer idioma do .com.
+- **Proibido marcar variante aceitável como erro.** Antes de rejeitar uma forma («dove è», «e mezzo», «con il», «anche io» na fala, «unico figlio» fora de expressão fixa), confirmar se é realmente agramatical ou só menos padrão/coloquial; se for só registro, dizer isso no `motivo` ou não usar como erro.
+- **Proibido inventar erro de digitação.** Os `erros` refletem interferência real de falante de inglês (artigo, ordem, auxiliar, preposição, calque), nunca erros artificiais («Pessce», «librs», «gentila», «ogni il giorno») nem palavras válidas do idioma usadas como «erradas» («quanto» no lugar de «quando»).
+- **Proibido contar sílabas no chute.** Separar as sílabas explicitamente antes de declarar a contagem (`ar-ri-ve-der-ci` = 5).
+- **Proibido distrator homófono em exercício de áudio** (o aluno não ouve maiúscula nem acento) e **proibido 2 respostas defensáveis** em múltipla escolha. O auditor acusa o primeiro caso (`opcao-homofona-audio`).
+- **Coerência entre dias da mesma trilha:** conferir que uma explicação não contradiz outro dia já escrito («stare» vs «Sono stanco», uso de «Prego», «di»/«da»).
+- **Ferramentas:** `node scripts/render-revisao.mjs <curso> <lingua> <de> <ate>` para ler em texto limpo e `node scripts/auditar-pedagogia.mjs --curso <id> --lingua en --rigor` antes de entregar. Revisão paralela: um revisor por 10–12 dias, todos lidos linha por linha.

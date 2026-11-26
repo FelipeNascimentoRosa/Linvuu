@@ -66,7 +66,7 @@
         "min": 6,
         "titulo": "Una giornata di Giulia / A day in Giulia's life",
         "ru": "Giulia è in ufficio. Lavora con due amici, Luca e Sara. All'una mangia un panino sul tavolo vicino alla finestra. Tra due ore ha lezione di italiano con la professoressa Bianchi, nell'aula tre. Dopo prende un caffè con Marco e ha un regalo per lui: un libro su Roma.",
-        "pt": "Giulia is at the office. She works with two friends, Luca and Sara. At one o'clock she eats a sandwich at the table near the window. In two hours she has an Italian class with Professor Bianchi, in room three. Afterwards she has a coffee with Marco and has a present for him: a book about Rome.",
+        "pt": "Giulia is at the office. She works with two friends, Luca and Sara. At one o'clock she eats a sandwich on the table near the window. In two hours she has an Italian class with Professor Bianchi, in room three. Afterwards she has a coffee with Marco and has a present for him: a book about Rome.",
         "perguntas": [
           {
             "pergunta": "Who does Giulia work with?",
@@ -90,7 +90,7 @@
         "tipo": "gramatica",
         "min": 9,
         "titulo": "Pronouns after prepositions: «con me», «per te»",
-        "explicacao": "STEP 1: English changes «I» to «me» after a preposition: «with me», «for you». Italian does the same: after a preposition, the pronoun changes form. STEP 2: the forms are «me» (I), «te» (you), «lui» (he), «lei» (she), «Lei» (formal you), «noi» (we), «voi» (you plural), «loro» (they). Only «me» and «te» differ from the subject pronouns «io» and «tu». STEP 3: so Italian says «con me», «per te», «da me» (at my place), «di te» (about you). STEP 4: never use the subject form after a preposition: «con io» and «per tu» are wrong. STEP 5: «con» means «with», «per» means «for» (a recipient or a purpose), and «su» can mean «on» or «about»: «un libro su Roma». STEP 6: «tra» and «fra» mean «between» and also «in» for the future: «Tra due ore» is «In two hours». They are interchangeable: use whichever sounds better. STEP 7: English «in two hours» translates as «tra due ore», not «in due ore». STEP 8: «insieme» (together) can stand alone or be followed by «a»: «Studiamo insieme», «insieme a Marco».",
+        "explicacao": "STEP 1: English changes «I» to «me» after a preposition: «with me», «for you». Italian does the same: after a preposition, the pronoun changes form. STEP 2: the forms are «me» (I), «te» (you), «lui» (he), «lei» (she), «Lei» (formal you), «noi» (we), «voi» (you plural), «loro» (they). Only «me» and «te» differ from the subject pronouns «io» and «tu». STEP 3: so Italian says «con me», «per te», «da me» (at my place), «di te» (about you). STEP 4: after these prepositions, do not use the subject form: «con io» and «per tu» are wrong. STEP 5: «con» means «with», «per» means «for» (a recipient or a purpose), and «su» can mean «on» or «about»: «un libro su Roma». STEP 6: «tra» and «fra» mean «between» and also «in» for the future: «Tra due ore» is «In two hours». They are interchangeable: use whichever sounds better. STEP 7: English «in two hours» (two hours from now) translates as «tra due ore», not «in due ore». Italian «in due ore» says how long something takes («Ho finito in due ore»: I finished in two hours), while «tra due ore» says when something will happen. STEP 8: «insieme» (together) can stand alone or be followed by «a»: «Studiamo insieme», «insieme a Marco».",
         "comparacao": "English and Italian agree here: the pronoun changes after a preposition («with me», «for you»), and the forms for «him», «her», «us» and «them» match the subject forms in Italian. The one place to be careful is time: English says «in two hours», Italian says «tra due ore», because «in» in Italian does not mean «from now».",
         "exemplos": [
           {
@@ -130,7 +130,7 @@
           {
             "errado": "in due ore",
             "certo": "tra due ore",
-            "motivo": "For a time in the future, use «tra» or «fra»."
+            "motivo": "For a time two hours from now, use «tra» or «fra»; «in due ore» only says how long something takes."
           }
         ],
         "tag": "Prepositions"
@@ -180,7 +180,7 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "How do you say «in two hours»?",
+            "enunciado": "How do you say «in two hours» (two hours from now)?",
             "opcoes": [
               "tra due ore",
               "in due ore",
@@ -195,7 +195,7 @@
             "enunciado": "What does «un libro su Roma» mean?",
             "opcoes": [
               "a book about Rome",
-              "a book on a table in Rome",
+              "a book from Rome",
               "a book for Rome"
             ],
             "gabarito": "a book about Rome",
