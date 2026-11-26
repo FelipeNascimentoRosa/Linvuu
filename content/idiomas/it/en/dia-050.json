@@ -73,7 +73,7 @@
         "min": 9,
         "titulo": "«Potere»: can, may and asking for a favor",
         "explicacao": "STEP 1: «potere» is irregular: «posso, puoi, può, possiamo, potete, possono». STEP 2: it covers two ideas that English splits into «can» and «may»: ability («Non posso venire», I can't come) and permission («Posso aprire la finestra?», May I open the window?). STEP 3: it is followed by the infinitive, with no preposition: «Posso entrare?». STEP 4: to ask for a favor, English says «Could you repeat that?». Italian uses «Può…?» with a stranger («Lei») and «Puoi…?» with a friend («tu»): «Può ripetere, per favore?». STEP 5: to refuse politely, put «non» before the modal: «Non posso venire stasera» (I can't come tonight). STEP 6: «può» is the same for «he», «she» and formal «you», so «Lei può» and «lui può» look alike. STEP 7: do not add «di» or «a» after «posso»: «Posso di entrare» is wrong.",
-        "comparacao": "English has two verbs, «can» and «may», and an extra «could» for politeness. Italian uses the one verb «potere» for all three, and the formal/informal choice replaces the English «could»: «Può…?» (formal) or «Puoi…?» (informal). The difficulty is not meaning but form: «posso» and «possono» are the same except for the ending, and «può» has an accent.",
+        "comparacao": "English has two verbs, «can» and «may», and an extra «could» for politeness. Italian uses the one verb «potere» for all three, and the formal/informal choice does the work of the English polite «could»: «Può…?» (formal) or «Puoi…?» (informal). Italian also has a conditional, «potrebbe», for extra politeness, but «Può ripetere?» is the everyday form. The difficulty is not meaning but form: «posso» and «possono» differ only in the ending, and «può» has an accent.",
         "exemplos": [
           {
             "ru": "Può ripetere, per favore",
@@ -117,8 +117,8 @@
         "tipo": "gramatica",
         "min": 9,
         "titulo": "«Dovere»: must and have to",
-        "explicacao": "STEP 1: «dovere» means «must» or «to have to». It is irregular: «devo, devi, deve, dobbiamo, dovete, devono». STEP 2: it is followed by the infinitive, with no preposition: «Devo studiare domani». English says «I have to study» with a «to», but Italian has none. STEP 3: «non devi» means «you must not» (a prohibition). To say «you don't have to», use «non c'è bisogno» or «non serve». This is a common source of misunderstanding for English speakers, because «don't have to» and «must not» are not the same thing in English either. STEP 4: with an object, «dovere» can mean «to owe»: «Quanto Le devo?» (How much do I owe you?). STEP 5: pronunciation: «dobbiamo» has a double «b» and the stress on the «a»: dob-BYAH-moh. STEP 6: «dovere» and «potere» both take «non» before the verb: «Non devo uscire». STEP 7: the more polite «dovrei» (I should) comes later, but for now use «devo» for real obligations.",
-        "comparacao": "English splits obligation into «must», «have to» and «should». Italian has «dovere» for all of them, and the strength comes from tone and context. English speakers often assume «non devi» is «you don't have to». It is not: it means «you must not». For «no need», use «non c'è bisogno».",
+        "explicacao": "STEP 1: «dovere» means «must» or «to have to». It is irregular: «devo, devi, deve, dobbiamo, dovete, devono». STEP 2: it is followed by the infinitive, with no preposition: «Devo studiare domani». English says «I have to study» with a «to», but Italian has none. STEP 3: «non devi» is ambiguous: with a prohibition in mind it means «you must not» («Non devi uscire»), but in a phrase like «Non devi preoccuparti» it means «you don't need to worry». To say «there is no need» without ambiguity, use «non c'è bisogno» or «non serve». STEP 4: with an object, «dovere» can mean «to owe»: «Quanto Le devo?» (How much do I owe you?). STEP 5: pronunciation: «dobbiamo» has a double «b» and the stress on the «a»: dob-BYAH-moh. STEP 6: «dovere» and «potere» both take «non» before the verb: «Non devo uscire». STEP 7: the more polite «dovrei» (I should) comes later, but for now use «devo» for real obligations.",
+        "comparacao": "English splits obligation into «must», «have to» and «should». Italian has «dovere» for all of them, and the strength comes from tone and context. Be careful with the negative: English «must not» (prohibition) and «don't have to» (no need) are different, and Italian «non devi» can carry either idea. For a clear «no need», use «non c'è bisogno».",
         "exemplos": [
           {
             "ru": "Devo studiare domani",
@@ -131,8 +131,8 @@
             "exemplo": "devo · devi · deve · dobbiamo · dovete · devono"
           },
           {
-            "tipo": "must not",
-            "exemplo": "Non devi uscire"
+            "tipo": "no need",
+            "exemplo": "Non c'è bisogno"
           }
         ],
         "erros": [
@@ -194,14 +194,14 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "What does «Non devi uscire» mean?",
+            "enunciado": "Which Italian verb covers both English «can» and «may»?",
             "opcoes": [
-              "You must not go out",
-              "You don't have to go out",
-              "You cannot go out"
+              "potere",
+              "dovere",
+              "volere"
             ],
-            "gabarito": "You must not go out",
-            "explicacao": "«Non devi» is a prohibition.",
+            "gabarito": "potere",
+            "explicacao": "«Potere» covers ability and permission.",
             "id": "it-013-e04"
           },
           {
@@ -226,7 +226,7 @@
       {
         "tipo": "revisao",
         "min": 1,
-        "enunciado": "Explain aloud the difference between «non devi» and «non c'è bisogno»."
+        "enunciado": "Say aloud a prohibition with «non devi» and a «no need» sentence with «non c'è bisogno»."
       }
     ]
   },

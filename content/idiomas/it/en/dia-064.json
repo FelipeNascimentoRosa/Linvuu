@@ -10,7 +10,7 @@
   "aula": {
     "numero": 16,
     "titulo": "Piacere and preferences",
-    "objetivo": "Say what you like and dislike with «mi piace» and «mi piacciono», agree and disagree with «anche a me», «a me no», and use «preferire» to compare preferences. Avoid the English-speaker traps: «I like» as the subject, «anche io» for «me too», and one verb «play» for sports and instruments.",
+    "objetivo": "Say what you like and dislike with «mi piace» and «mi piacciono», agree and disagree with «anche a me», «a me no», and use «preferire» to compare preferences. Avoid the English-speaker traps: «I like» as the subject, «anche io» instead of the standard «anche a me», and one verb «play» for sports and instruments.",
     "sessoes": 4,
     "duracaoTotalMin": 120,
     "nivel": "a1"
@@ -220,11 +220,11 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "How do you say «Me too»?",
+            "enunciado": "Which is the standard answer after «Mi piace il caffè» when you agree?",
             "opcoes": [
               "Anche a me",
-              "Anche io",
-              "Io anche"
+              "Anche mi",
+              "Anche tu"
             ],
             "gabarito": "Anche a me",
             "explicacao": "«A me».",
