@@ -1,0 +1,186 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 9,
+  "fase": 1,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Introductions, countries, numbers 0 to 20 and age: Greetings and introductions",
+  "objetivo": "Lesson 3, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 3,
+    "titulo": "Introductions, countries, numbers 0 to 20 and age",
+    "objetivo": "Introduce yourself and someone else, say where you are from and where you live, use «a» and «in» with cities and countries, and count from 0 to 20, including age with the verb «avere».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Greetings and introductions",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "Mi chiamo",
+            "translit": "mee KYAH-moh",
+            "pt": "my name is",
+            "en": "",
+            "audio": "Mi chiamo"
+          },
+          {
+            "ru": "Come ti chiami?",
+            "translit": "KOH-meh tee KYAH-mee",
+            "pt": "what's your name? (informal)",
+            "en": "",
+            "audio": "Come ti chiami?"
+          },
+          {
+            "ru": "Come si chiama?",
+            "translit": "KOH-meh see KYAH-mah",
+            "pt": "what's your name? (formal)",
+            "en": "",
+            "audio": "Come si chiama?"
+          },
+          {
+            "ru": "Piacere",
+            "translit": "pyah-CHEH-reh",
+            "pt": "nice to meet you",
+            "en": "",
+            "audio": "Piacere"
+          },
+          {
+            "ru": "Questo è",
+            "translit": "KWEH-stoh eh",
+            "pt": "this is (introducing a man)",
+            "en": "",
+            "audio": "Questo è"
+          },
+          {
+            "ru": "Questa è",
+            "translit": "KWEH-stah eh",
+            "pt": "this is (introducing a woman)",
+            "en": "",
+            "audio": "Questa è"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Introducing yourself and others",
+        "explicacao": "STEP 1: to say your name, use «Mi chiamo Ana.» Literally, «I call myself Ana.» English says «my name is», but Italian builds the sentence on a verb: «chiamarsi». You can also say «Sono Ana.» («I am Ana.») STEP 2: to ask someone's name: informal, «Come ti chiami?»; formal, «Come si chiama?», which uses the «Lei» form. STEP 3: «piacere» is what you say when you meet someone. It is the same for a man and a woman, and you can strengthen it: «Molto piacere.» STEP 4: to ask how someone is: informal, «Come stai?»; formal, «Come sta?». STEP 5: to introduce another person: «Questo è Luca.» (a man) or «Questa è Giulia.» (a woman). STEP 6: with strangers, use «Lei» and add «signora» or «signor» with the surname: «Buongiorno, signora Rossi.» STEP 7: if the other person suggests it, you switch to «tu». The one who suggests it is usually the older person or the one with higher status.",
+        "comparacao": "English has no equivalent of «mi chiamo»: you say «my name is» or «I'm…». Italian uses a reflexive verb, so the pronoun changes with the person: «mi chiamo», «ti chiami», «si chiama». «Piacere» never changes with the speaker, and English «you» becomes two forms: «tu» for friends and «Lei» for people you address formally, with «Lei» used for men and women alike.",
+        "tabela": [
+          {
+            "situacao": "say your name",
+            "informal": "Mi chiamo Ana.",
+            "formal": "Mi chiamo Ana Silva."
+          },
+          {
+            "situacao": "ask someone's name",
+            "informal": "Come ti chiami?",
+            "formal": "Come si chiama?"
+          },
+          {
+            "situacao": "ask how someone is",
+            "informal": "Come stai?",
+            "formal": "Come sta?"
+          },
+          {
+            "situacao": "reply",
+            "informal": "Sto bene, grazie. E tu?",
+            "formal": "Sto bene, grazie. E Lei?"
+          },
+          {
+            "situacao": "introduce someone",
+            "informal": "Questo è Luca.",
+            "formal": "Questa è la signora Rossi."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Io sono chiamo Ana.",
+            "certo": "Mi chiamo Ana.",
+            "motivo": "It is a reflexive verb: literally «I call myself»."
+          },
+          {
+            "errado": "Come chiami?",
+            "certo": "Come ti chiami?",
+            "motivo": "The pronoun «ti» (yourself) is missing."
+          },
+          {
+            "errado": "Come ti chiami? (to a woman you don't know)",
+            "certo": "Come si chiama?",
+            "motivo": "With strangers, use the «Lei» form."
+          },
+          {
+            "errado": "Questo è Giulia.",
+            "certo": "Questa è Giulia.",
+            "motivo": "«Questo» is masculine; for a woman, use «questa»."
+          }
+        ],
+        "tag": "Basic phrases"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 5,
+        "titulo": "First meeting",
+        "contexto": "Signora Rossi and Ana introduce themselves at a course.",
+        "linhas": [
+          {
+            "personagem": "Signora Rossi",
+            "ru": "— Buongiorno, mi chiamo Elena Rossi. Come si chiama?",
+            "pt": "— Good morning, my name is Elena Rossi. What's your name?",
+            "audio": "Buongiorno, mi chiamo Elena Rossi. Come si chiama?"
+          },
+          {
+            "personagem": "Ana",
+            "ru": "— Buongiorno, signora. Mi chiamo Ana. Piacere.",
+            "pt": "— Good morning, ma'am. My name is Ana. Nice to meet you.",
+            "audio": "Buongiorno, signora. Mi chiamo Ana. Piacere."
+          },
+          {
+            "personagem": "Signora Rossi",
+            "ru": "— Piacere, Ana. Come sta?",
+            "pt": "— Nice to meet you, Ana. How are you?",
+            "audio": "Piacere, Ana. Come sta?"
+          },
+          {
+            "personagem": "Ana",
+            "ru": "— Sto bene, grazie. E Lei?",
+            "pt": "— I'm fine, thank you. And you?",
+            "audio": "Sto bene, grazie. E Lei?"
+          },
+          {
+            "personagem": "Signora Rossi",
+            "ru": "— Molto bene, grazie. Questo è Marco.",
+            "pt": "— Very well, thank you. This is Marco.",
+            "audio": "Molto bene, grazie. Questo è Marco."
+          },
+          {
+            "personagem": "Marco",
+            "ru": "— Buongiorno, Ana. Piacere.",
+            "pt": "— Good morning, Ana. Nice to meet you.",
+            "audio": "Buongiorno, Ana. Piacere."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 4,
+        "enunciado": "Introduce yourself out loud: «Buongiorno, mi chiamo… Piacere.» Then introduce a friend: «Questo è…»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say out loud: «Sei stanco? Sei italiano? Dov'è Giulia?» Then conjugate «essere» from memory."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-003.json",
+  "responsavel": null
+}

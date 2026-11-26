@@ -20,7 +20,7 @@ try {
  const g=await get('linvuu.com','/api/gramatica/it');assert.equal(g.status,200);assert(JSON.parse(g.body).topicos.every(t=>t.explicacaoEm==='en'));
  assert.equal((await get('linvuu.com','/api/gramatica/it?l=pt')).status,404);
  assert.equal((await get('linvuu.com.br','/api/gramatica/it?l=en')).status,404);
- const missing=await get('linvuu.com','/api/aula/it/9?l=en');assert.equal(missing.status,404);
+ const missing=await get('linvuu.com','/api/aula/it/49?l=en');assert.equal(missing.status,404);
  const english=await get('linvuu.com','/api/aula/it/1');assert.equal(english.status,200);assert.equal(JSON.parse(english.body).explicacao,'en');
  const portuguese=await get('linvuu.com.br','/api/aula/it/1');assert.equal(portuguese.status,200);assert.match(JSON.parse(portuguese.body).titulo,/Sons/);
  assert.equal((await get('linvuu.com','/api/aula/it/1?l=pt')).status,404);

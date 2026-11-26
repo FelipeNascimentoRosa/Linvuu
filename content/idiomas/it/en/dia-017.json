@@ -1,0 +1,161 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 17,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Articles, plural and c'è / ci sono: Gender and singular articles",
+  "objetivo": "Lesson 5, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 5,
+    "titulo": "Articles, plural and c'è / ci sono",
+    "objetivo": "Choose the right definite and indefinite article (il, lo, l', la, un, uno, una, un'), form the plural of nouns, and say what exists in a place with «c'è» and «ci sono».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Gender and singular articles",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "il libro",
+            "translit": "eel LEE-broh",
+            "pt": "the book",
+            "en": "",
+            "audio": "il libro"
+          },
+          {
+            "ru": "la penna",
+            "translit": "lah PEHN-nah",
+            "pt": "the pen",
+            "en": "",
+            "audio": "la penna"
+          },
+          {
+            "ru": "lo zaino",
+            "translit": "loh DZAH-ee-noh",
+            "pt": "the backpack",
+            "en": "",
+            "audio": "lo zaino"
+          },
+          {
+            "ru": "lo studente",
+            "translit": "loh stoo-DEHN-teh",
+            "pt": "the student",
+            "en": "",
+            "audio": "lo studente"
+          },
+          {
+            "ru": "l'amico",
+            "translit": "lah-MEE-koh",
+            "pt": "the friend (male)",
+            "en": "",
+            "audio": "l'amico"
+          },
+          {
+            "ru": "l'amica",
+            "translit": "lah-MEE-kah",
+            "pt": "the friend (female)",
+            "en": "",
+            "audio": "l'amica"
+          },
+          {
+            "ru": "la finestra",
+            "translit": "lah fee-NEH-strah",
+            "pt": "the window",
+            "en": "",
+            "audio": "la finestra"
+          },
+          {
+            "ru": "la camera",
+            "translit": "lah KAH-meh-rah",
+            "pt": "the room (not a camera)",
+            "en": "",
+            "audio": "la camera"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Gender and articles: il, lo, l', la, un, uno, una, un'",
+        "explicacao": "STEP 1: every Italian noun is masculine or feminine, even a book or a window. In general, nouns ending in «-o» are masculine («libro») and those ending in «-a» are feminine («penna»); nouns ending in «-e» can be either («studente» is masculine; «notte» is feminine). Learn each word together with its article. STEP 2: there are common exceptions: words in «-ma» of Greek origin are masculine («il problema», «il programma»), and «turista» and «collega» work for both genders, only the article changes: «il turista» and «la turista». STEP 3: English has one definite article, «the», which never changes. Italian has four singular forms: «il» (masculine before a consonant: «il libro»); «lo» (masculine before «z», «s» + consonant, «gn», «ps», «x», «y»: «lo zaino», «lo studente»); «l'» (before a vowel, masculine or feminine: «l'amico», «l'amica»); «la» (feminine before a consonant: «la penna»). STEP 4: the indefinite article (a, an) follows the same logic: «un» (masculine: «un libro», «un amico»); «uno» (masculine before «z», «s» + consonant: «uno zaino», «uno studente»); «una» (feminine: «una penna»); «un'» (feminine before a vowel: «un'amica»). STEP 5: the article agrees with the first word after it, even if that word is an adjective: «un bravo studente», «uno studente bravo». STEP 6: no article after «essere» with a profession or a nationality: «Sono studente», «Lei è insegnante». English needs «a» («I am a student»); Italian leaves it out. With an article, a description comes in: «Lei è un'insegnante molto brava».",
+        "comparacao": "English «the» and «a / an» never change with the noun; the only choice is «a» or «an» before a vowel sound. Italian has more forms because the article changes both with gender and with the first letter of the next word (so «il libro», but «lo zaino» and «l'amico»). Notice that «un'amica» (with an apostrophe) is feminine, while «un amico» (no apostrophe) is masculine. English has no grammatical gender, so you simply have to learn each noun with its article.",
+        "tabela": [
+          {
+            "situacao": "masculine + consonant",
+            "definido": "il",
+            "indefinido": "un",
+            "exemplo": "il libro, un libro"
+          },
+          {
+            "situacao": "masculine + z, s + consonant, gn, ps",
+            "definido": "lo",
+            "indefinido": "uno",
+            "exemplo": "lo zaino, uno studente"
+          },
+          {
+            "situacao": "masculine + vowel",
+            "definido": "l'",
+            "indefinido": "un",
+            "exemplo": "l'amico, un amico"
+          },
+          {
+            "situacao": "feminine + consonant",
+            "definido": "la",
+            "indefinido": "una",
+            "exemplo": "la penna, una penna"
+          },
+          {
+            "situacao": "feminine + vowel",
+            "definido": "l'",
+            "indefinido": "un'",
+            "exemplo": "l'amica, un'amica"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "il zaino",
+            "certo": "lo zaino",
+            "motivo": "Before «z», the masculine article is «lo»."
+          },
+          {
+            "errado": "il studente",
+            "certo": "lo studente",
+            "motivo": "Before «s» + consonant, the masculine article is «lo»."
+          },
+          {
+            "errado": "un amica",
+            "certo": "un'amica",
+            "motivo": "A feminine noun takes «un'» (or «una»); «un» is masculine."
+          },
+          {
+            "errado": "la problema",
+            "certo": "il problema",
+            "motivo": "Words in «-ma» of Greek origin are masculine."
+          }
+        ],
+        "tag": "Articles"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Say out loud the definite and the indefinite article of each word: libro, penna, zaino, studente, amico, amica, finestra, camera."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Review lesson 4: say five sentences out loud with -are verbs, two of them negative. Ask one question with «dove» and one with «perché»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-005.json",
+  "responsavel": null
+}

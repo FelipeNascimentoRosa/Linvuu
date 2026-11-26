@@ -126,7 +126,7 @@ function auditarLado(id, lingua) {
       const ptHit = new Set(pal.filter((p) => PT.has(p))), enHit = new Set(pal.filter((p) => EN.has(p)));
       // vazamento: prosa em português num lado em inglês (≥2 marcadores) ou em inglês num lado em português (≥5 marcadores)
       const vaza = esperada === 'en' ? ptHit.size >= 2 : enHit.size >= 5;
-      if (esperada === 'en' && id !== 'br' && chave !== 'enunciado' && /portuguese|portugu[eê]s/i.test(limpo) && !/^\s*\(?portuguese\)?\s*$/i.test(limpo)) { r.refsPt++; r.achados.refPt.push({ arquivo: a.f, caminho, texto: s.slice(0, 110) }); }
+      if (esperada === 'en' && id !== 'br' && chave !== 'enunciado' && /portuguese|portugu[eê]s/i.test(limpo) && !/^\s*\(?portuguese\)?\s*$/i.test(limpo) && !/\b(speak|spoke|study|studying|learn|know)\b[^.?!]{0,40}portuguese/i.test(limpo)) { r.refsPt++; /* «Do you speak Portuguese?» traduz uma fala do diálogo italiano: conteúdo, não comparação */ r.achados.refPt.push({ arquivo: a.f, caminho, texto: s.slice(0, 110) }); }
       if (vaza) { r.vazamentos++; r.achados.vazamento.push({ arquivo: a.f, caminho, texto: s.slice(0, 110) }); }
       if (!CHAVES_EXPLICACAO.has(chave)) continue;
       for (const m of limpo.matchAll(ABSOLUTOS)) { r.absolutos++; if (r.achados.absoluto.length < 400) r.achados.absoluto.push({ arquivo: a.f, termo: m[0].toLowerCase(), texto: limpo.slice(Math.max(0, m.index - 30), m.index + 50) }); }

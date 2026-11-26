@@ -1,0 +1,513 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 32,
+  "fase": 4,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "The bar and food: vorrei, the partitive and numbers to 100: Review and practice of lesson 8",
+  "objetivo": "Lesson 8, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 8,
+    "titulo": "The bar and food: vorrei, the partitive and numbers to 100",
+    "objetivo": "Order politely at the bar with «vorrei», ask prices and pay, use the partitive (del, dello, della, dell', dei, degli, delle) and count from 21 to 100, including prices in euros.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 8",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Vorrei un cappuccino",
+            "opcoes": [
+              "Vorrei un cappuccino",
+              "Vorrei un caffè",
+              "Prendo un cappuccino"
+            ],
+            "gabarito": "Vorrei un cappuccino",
+            "explicacao": "Listen for «vorrei» and «cappuccino».",
+            "id": "it-008-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "trentotto",
+            "opcoes": [
+              "trentotto",
+              "trentuno",
+              "trentatré"
+            ],
+            "gabarito": "trentotto",
+            "explicacao": "Listen for how «trenta» joins with «otto».",
+            "id": "it-008-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Sono due euro e cinquanta",
+            "opcoes": [
+              "Sono due euro e cinquanta",
+              "Sono tre euro e cinquanta",
+              "Sono due euro e quaranta"
+            ],
+            "gabarito": "Sono due euro e cinquanta",
+            "explicacao": "Listen for the number before «euro».",
+            "id": "it-008-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Il conto, per favore",
+            "respostaEsperada": "Il conto, per favore",
+            "explicacao": "Write: Il conto, per favore.",
+            "id": "it-008-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Vorrei del pane",
+            "respostaEsperada": "Vorrei del pane",
+            "explicacao": "Write: Vorrei del pane.",
+            "id": "it-008-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «il latte» mean?",
+            "audio": "il latte",
+            "opcoes": [
+              "the cheese",
+              "one hundred",
+              "the milk",
+              "the check"
+            ],
+            "gabarito": "the milk",
+            "explicacao": "«il latte» = milk.",
+            "id": "it-008-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "ventuno",
+            "respostaEsperada": "ventuno",
+            "explicacao": "Write: ventuno.",
+            "id": "it-008-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then show the answer.",
+            "audio": "Vorrei un cappuccino e un cornetto, per favore.",
+            "respostaEsperada": "Vorrei un cappuccino e un cornetto, per favore.",
+            "explicacao": "I'd like a cappuccino and a croissant, please.",
+            "id": "it-008-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the polite way to ask for a coffee?",
+            "opcoes": [
+              "Vorrei un caffè, per favore.",
+              "Voglio un caffè.",
+              "Dammi un caffè."
+            ],
+            "gabarito": "Vorrei un caffè, per favore.",
+            "explicacao": "«Vorrei» + «per favore».",
+            "id": "it-008-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is «il burro»?",
+            "opcoes": [
+              "butter",
+              "the donkey (animal)",
+              "the cheese"
+            ],
+            "gabarito": "butter",
+            "explicacao": "False friend.",
+            "id": "it-008-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you write 23?",
+            "opcoes": [
+              "ventitré",
+              "ventitre",
+              "venti tre"
+            ],
+            "gabarito": "ventitré",
+            "explicacao": "«Tre» at the end of a compound takes an accent.",
+            "id": "it-008-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «il prosciutto» mean?",
+            "audio": "il prosciutto",
+            "opcoes": [
+              "the milk",
+              "a sandwich",
+              "an ice cream",
+              "the ham"
+            ],
+            "gabarito": "the ham",
+            "explicacao": "«il prosciutto» = ham.",
+            "id": "it-008-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the plural of «un euro»?",
+            "opcoes": [
+              "due euro",
+              "due euros",
+              "due eure"
+            ],
+            "gabarito": "due euro",
+            "explicacao": "«Euro» is invariable.",
+            "id": "it-008-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Vorrei ___ acqua. (some)",
+            "opcoes": [
+              "dell'",
+              "del",
+              "della"
+            ],
+            "gabarito": "dell'",
+            "explicacao": "Before a vowel: «dell'».",
+            "id": "it-008-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Compro ___ panini. (some)",
+            "opcoes": [
+              "dei",
+              "del",
+              "delle"
+            ],
+            "gabarito": "dei",
+            "explicacao": "Masculine plural: «dei».",
+            "id": "it-008-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then show the answer.",
+            "audio": "Sì, vorrei anche dell'acqua.",
+            "respostaEsperada": "Sì, vorrei anche dell'acqua.",
+            "explicacao": "Yes, I'd also like some water.",
+            "id": "it-008-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Non ho ___ . (milk)",
+            "opcoes": [
+              "latte",
+              "del latte",
+              "dello latte"
+            ],
+            "gabarito": "latte",
+            "explicacao": "Negative sentence: no partitive.",
+            "id": "it-008-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «settanta» mean?",
+            "audio": "settanta",
+            "opcoes": [
+              "thirty",
+              "seventy",
+              "the milk",
+              "an ice cream"
+            ],
+            "gabarito": "seventy",
+            "explicacao": "«settanta» = seventy.",
+            "id": "it-008-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Quant'___ ? (how much is it)",
+            "opcoes": [
+              "è",
+              "ha",
+              "sono"
+            ],
+            "gabarito": "è",
+            "explicacao": "«Quant'è?»",
+            "id": "it-008-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Vorrei un cappuccino, per favore.»",
+            "opcoes": [
+              "Vorrei",
+              "un",
+              "cappuccino,",
+              "per",
+              "favore"
+            ],
+            "gabarito": "Vorrei un cappuccino, per favore.",
+            "explicacao": "Polite request.",
+            "id": "it-008-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Sono tre euro e cinquanta.»",
+            "opcoes": [
+              "Sono",
+              "tre",
+              "euro",
+              "e",
+              "cinquanta"
+            ],
+            "gabarito": "Sono tre euro e cinquanta.",
+            "explicacao": "Price with «e».",
+            "id": "it-008-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Italian: I'd like a coffee and some water, please. How much is it?",
+            "respostaEsperada": "Vorrei un caffè e dell'acqua, per favore. Quant'è?",
+            "id": "it-008-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «un cappuccino» mean?",
+            "audio": "un cappuccino",
+            "opcoes": [
+              "a coffee (espresso)",
+              "one hundred",
+              "an ice cream",
+              "a cappuccino"
+            ],
+            "gabarito": "a cappuccino",
+            "explicacao": "«un cappuccino» = a cappuccino.",
+            "id": "it-008-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Vorrei ___ caffè, per favore. (a)",
+            "opcoes": [
+              "uno",
+              "un",
+              "una"
+            ],
+            "gabarito": "un",
+            "explicacao": "Before «caffè» (masculine, consonant) use «un».",
+            "id": "it-008-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then show the answer.",
+            "audio": "Sono tre euro e cinquanta.",
+            "respostaEsperada": "Sono tre euro e cinquanta.",
+            "explicacao": "That's three euros fifty.",
+            "id": "it-008-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Vorrei ___ zucchero. (some)",
+            "opcoes": [
+              "dello",
+              "del",
+              "della"
+            ],
+            "gabarito": "dello",
+            "explicacao": "«Di + lo» becomes «dello», before «z».",
+            "id": "it-008-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Compro ___ olive. (some)",
+            "opcoes": [
+              "dei",
+              "degli",
+              "delle"
+            ],
+            "gabarito": "delle",
+            "explicacao": "«Olive» is feminine plural: «delle».",
+            "id": "it-008-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Un cappuccino costa un euro e ___. (thirty)",
+            "opcoes": [
+              "tredici",
+              "trenta",
+              "trentuno"
+            ],
+            "gabarito": "trenta",
+            "explicacao": "«Trenta» is 30; «tredici» is 13.",
+            "id": "it-008-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «il formaggio» mean?",
+            "audio": "il formaggio",
+            "opcoes": [
+              "thirty",
+              "ninety",
+              "the cheese",
+              "the ham"
+            ],
+            "gabarito": "the cheese",
+            "explicacao": "«il formaggio» = cheese.",
+            "id": "it-008-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ho ___ anni. (28)",
+            "opcoes": [
+              "ventotto",
+              "ventiotto",
+              "ventoto"
+            ],
+            "gabarito": "ventotto",
+            "explicacao": "The ten loses its final vowel before «otto».",
+            "id": "it-008-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «Altro?» mean at the bar?",
+            "opcoes": [
+              "Quanto custa?",
+              "Mais alguma coisa?",
+              "The check, please."
+            ],
+            "gabarito": "Mais alguma coisa?",
+            "explicacao": "The server asks «Altro?» to find out whether you want anything else.",
+            "id": "it-008-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you write 41?",
+            "opcoes": [
+              "quarantuno",
+              "quarantauno",
+              "quarantaeuno"
+            ],
+            "gabarito": "quarantuno",
+            "explicacao": "The ten loses its final vowel before «uno».",
+            "id": "it-008-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then show the answer.",
+            "audio": "Ecco. Grazie, buona giornata!",
+            "respostaEsperada": "Ecco. Grazie, buona giornata!",
+            "explicacao": "Here you are. Thank you, have a good day!",
+            "id": "it-008-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the plural of «un tè»?",
+            "opcoes": [
+              "due tei",
+              "due tè",
+              "due tés"
+            ],
+            "gabarito": "due tè",
+            "explicacao": "Words with a final accent do not change in the plural.",
+            "id": "it-008-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «un tè» mean?",
+            "audio": "un tè",
+            "opcoes": [
+              "eighty",
+              "a tea",
+              "a coffee (espresso)",
+              "seventy"
+            ],
+            "gabarito": "a tea",
+            "explicacao": "«un tè» = a tea.",
+            "id": "it-008-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is «lo zucchero»?",
+            "opcoes": [
+              "the salt",
+              "butter",
+              "the sugar"
+            ],
+            "gabarito": "the sugar",
+            "explicacao": "«Zucchero» is sugar; before «z» the article is «lo».",
+            "id": "it-008-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Vorrei del formaggio e del pane.»",
+            "opcoes": [
+              "Vorrei",
+              "del",
+              "formaggio",
+              "e",
+              "del",
+              "pane."
+            ],
+            "gabarito": "Vorrei del formaggio e del pane.",
+            "explicacao": "Partitive: «del» before a masculine word that starts with a consonant.",
+            "id": "it-008-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Un cornetto costa un euro e trenta.»",
+            "opcoes": [
+              "Un",
+              "cornetto",
+              "costa",
+              "un",
+              "euro",
+              "e",
+              "trenta."
+            ],
+            "gabarito": "Un cornetto costa un euro e trenta.",
+            "explicacao": "The price is said with «euro e» + cents.",
+            "id": "it-008-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Italian: I'd like a tea and a croissant, please.",
+            "respostaEsperada": "Vorrei un tè e un cornetto, per favore.",
+            "id": "it-008-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Italian: How much is it? That's five euros twenty.",
+            "respostaEsperada": "Quant'è? Sono cinque euro e venti.",
+            "id": "it-008-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Count out loud from 30 to 100, in tens. Then say three prices: «un euro e venti», «quattro euro e cinquanta» and «diciotto euro»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Act out a complete bar scene out loud: order two things, say what else you want, ask the price, pay."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-008.json",
+  "responsavel": null
+}

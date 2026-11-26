@@ -1,0 +1,498 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 16,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Present tense in -are, negation and questions: Review and practice of lesson 4",
+  "objetivo": "Lesson 4, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 4,
+    "titulo": "Present tense in -are, negation and questions",
+    "objetivo": "Conjugate regular -are verbs in the present tense, spell verbs like «mangiare» and «cercare» correctly, negate with «non», use «mai», «sempre» and «spesso», and ask questions with «che cosa», «dove», «quando» and «perché».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 4",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Parliamo italiano",
+            "opcoes": [
+              "Parliamo italiano",
+              "Parlate italiano",
+              "Parlano italiano"
+            ],
+            "gabarito": "Parliamo italiano",
+            "explicacao": "Listen for the ending «-iamo» of «noi».",
+            "id": "it-004-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Non mangio mai la pasta",
+            "opcoes": [
+              "Non mangio mai la pasta",
+              "Mangio sempre la pasta",
+              "Non mangio la pasta"
+            ],
+            "gabarito": "Non mangio mai la pasta",
+            "explicacao": "Listen for «non» and «mai».",
+            "id": "it-004-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Dove abiti",
+            "opcoes": [
+              "Dove abiti",
+              "Dove abita",
+              "Dove abitate"
+            ],
+            "gabarito": "Dove abiti",
+            "explicacao": "Listen for the ending «-i» of «tu».",
+            "id": "it-004-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Non parlo tedesco",
+            "respostaEsperada": "Non parlo tedesco",
+            "explicacao": "Write: Non parlo tedesco.",
+            "id": "it-004-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Studiamo la sera",
+            "respostaEsperada": "Studiamo la sera",
+            "explicacao": "Write: Studiamo la sera.",
+            "id": "it-004-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Yes, but only a little. Do you speak Portuguese?»",
+            "opcoes": [
+              "po'.",
+              "un",
+              "parli",
+              "parlo",
+              "ma",
+              "tu",
+              "solo",
+              "E",
+              "Sì,",
+              "portoghese?"
+            ],
+            "gabarito": "Sì, ma parlo solo un po'. E tu parli portoghese?",
+            "explicacao": "Write: Sì, ma parlo solo un po'. E tu parli portoghese?",
+            "id": "it-004-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Perché studi italiano",
+            "respostaEsperada": "Perché studi italiano",
+            "explicacao": "Write: Perché studi italiano.",
+            "id": "it-004-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then show the answer.",
+            "audio": "Ciao, Ana! Parli italiano?",
+            "respostaEsperada": "Ciao, Ana! Parli italiano?",
+            "explicacao": "Hi, Ana! Do you speak Italian?",
+            "id": "it-004-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the «voi» form of «lavorare»?",
+            "opcoes": [
+              "lavorate",
+              "lavoriamo",
+              "lavorano"
+            ],
+            "gabarito": "lavorate",
+            "explicacao": "The ending for «voi» is «-ate».",
+            "id": "it-004-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I never eat meat»?",
+            "opcoes": [
+              "Non mangio mai la carne.",
+              "Mangio mai la carne.",
+              "Non mai mangio la carne."
+            ],
+            "gabarito": "Non mangio mai la carne.",
+            "explicacao": "«Non» before the verb and «mai» after it.",
+            "id": "it-004-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the «tu» form of «cercare»?",
+            "opcoes": [
+              "cerchi",
+              "cerci",
+              "cerchii"
+            ],
+            "gabarito": "cerchi",
+            "explicacao": "The «h» keeps the «c» hard before «i».",
+            "id": "it-004-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Sì, ma parlo solo un po'. E tu parli portoghese?",
+            "respostaEsperada": "Sì, ma parlo solo un po'. E tu parli portoghese?",
+            "explicacao": "Yes, but only a little. Do you speak Portuguese?",
+            "id": "it-004-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which question asks for a place?",
+            "opcoes": [
+              "Dove lavori?",
+              "Quando lavori?",
+              "Come lavori?"
+            ],
+            "gabarito": "Dove lavori?",
+            "explicacao": "«Dove» asks where.",
+            "id": "it-004-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Noi ___ a Roma. (we live)",
+            "opcoes": [
+              "abitiamo",
+              "abitate",
+              "abitano"
+            ],
+            "gabarito": "abitiamo",
+            "explicacao": "«noi abitiamo».",
+            "id": "it-004-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Giulia ___ italiano. (speaks)",
+            "opcoes": [
+              "he / she speaks, you speak (formal)",
+              "you speak",
+              "I speak"
+            ],
+            "gabarito": "he / she speaks, you speak (formal)",
+            "explicacao": "«lei parla».",
+            "id": "it-004-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then show the answer.",
+            "audio": "No, non parlo portoghese, ma studio spagnolo.",
+            "respostaEsperada": "No, non parlo portoghese, ma studio spagnolo.",
+            "explicacao": "No, I don't speak Portuguese, but I study Spanish.",
+            "id": "it-004-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Io ___ parlo tedesco. (not)",
+            "opcoes": [
+              "nohn",
+              "no",
+              "mai"
+            ],
+            "gabarito": "nohn",
+            "explicacao": "The negation is «non».",
+            "id": "it-004-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Thank you, you're very kind.»",
+            "opcoes": [
+              "Grazie,",
+              "gentile.",
+              "molto",
+              "sei"
+            ],
+            "gabarito": "Grazie, sei molto gentile.",
+            "explicacao": "Write: Grazie, sei molto gentile.",
+            "id": "it-004-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Loro ___ la radio. (listen to)",
+            "opcoes": [
+              "ascoltano",
+              "ascolta",
+              "ascoltate"
+            ],
+            "gabarito": "ascoltano",
+            "explicacao": "«loro ascoltano».",
+            "id": "it-004-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Non parlo mai tedesco.»",
+            "opcoes": [
+              "Non",
+              "parlo",
+              "mai",
+              "tedesco"
+            ],
+            "gabarito": "Non parlo mai tedesco.",
+            "explicacao": "Double negation.",
+            "id": "it-004-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Dove abita Marco?»",
+            "opcoes": [
+              "Dove",
+              "abita",
+              "Marco"
+            ],
+            "gabarito": "Dove abita Marco?",
+            "explicacao": "Question word at the beginning.",
+            "id": "it-004-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Italian: I live in Rome and I work in an office. I don't speak German.",
+            "respostaEsperada": "Abito a Roma e lavoro in un ufficio. Non parlo tedesco.",
+            "id": "it-004-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Grazie, sei molto gentile.",
+            "respostaEsperada": "Grazie, sei molto gentile.",
+            "explicacao": "Thank you, you're very kind.",
+            "id": "it-004-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tu ___ la radio. (you listen to)",
+            "opcoes": [
+              "ascolto",
+              "ascolta",
+              "ascolti"
+            ],
+            "gabarito": "ascolti",
+            "explicacao": "With «tu», the ending of -are verbs is «-i».",
+            "id": "it-004-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then show the answer.",
+            "audio": "Allora parliamo italiano, ma piano!",
+            "respostaEsperada": "Allora parliamo italiano, ma piano!",
+            "explicacao": "Then let's speak Italian, but slowly!",
+            "id": "it-004-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Noi ___ la pasta. (we eat)",
+            "opcoes": [
+              "mangiano",
+              "mangiamo",
+              "mangiate"
+            ],
+            "gabarito": "mangiamo",
+            "explicacao": "With «noi», the ending is «-iamo».",
+            "id": "it-004-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Loro ___ a Milano. (they work)",
+            "opcoes": [
+              "lavora",
+              "lavorano",
+              "lavorate"
+            ],
+            "gabarito": "lavorano",
+            "explicacao": "With «loro», the ending is «-ano».",
+            "id": "it-004-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Giulia ___ una pizza. (buys)",
+            "opcoes": [
+              "compra",
+              "compro",
+              "compri"
+            ],
+            "gabarito": "compra",
+            "explicacao": "With «lei», the ending is «-a».",
+            "id": "it-004-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «studiare» mean?",
+            "audio": "studiare",
+            "opcoes": [
+              "often",
+              "slowly, softly",
+              "to buy",
+              "to study"
+            ],
+            "gabarito": "to study",
+            "explicacao": "«studiare» = to study.",
+            "id": "it-004-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ studi italiano? (why)",
+            "opcoes": [
+              "Dove",
+              "Quando",
+              "Perché"
+            ],
+            "gabarito": "Perché",
+            "explicacao": "«Perché» means «why», and takes an acute accent.",
+            "id": "it-004-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the ending of «voi» in -are verbs?",
+            "opcoes": [
+              "-ano",
+              "-iamo",
+              "-ate"
+            ],
+            "gabarito": "-ate",
+            "explicacao": "«Voi parlate»: the ending is «-ate».",
+            "id": "it-004-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you ask «Who do you speak with?»",
+            "opcoes": [
+              "Chi con parli?",
+              "Con che parli?",
+              "Con chi parli?"
+            ],
+            "gabarito": "Con chi parli?",
+            "explicacao": "The preposition comes before the question word.",
+            "id": "it-004-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then show the answer.",
+            "audio": "Perfetto! Io parlo sempre piano con gli amici.",
+            "respostaEsperada": "Perfetto! Io parlo sempre piano con gli amici.",
+            "explicacao": "Perfect! I always speak slowly with my friends.",
+            "id": "it-004-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which verb means «to live (in a place)»?",
+            "opcoes": [
+              "abitare",
+              "lavorare",
+              "mangiare"
+            ],
+            "gabarito": "abitare",
+            "explicacao": "«Abitare» is to live; «lavorare» is to work.",
+            "id": "it-004-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «cantare» mean?",
+            "audio": "cantare",
+            "opcoes": [
+              "to buy",
+              "to study",
+              "to sing",
+              "always"
+            ],
+            "gabarito": "to sing",
+            "explicacao": "«cantare» = to sing.",
+            "id": "it-004-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I always study in the evening»?",
+            "opcoes": [
+              "Studia sempre la sera.",
+              "Studio sempre la sera.",
+              "Sempre studio no la sera."
+            ],
+            "gabarito": "Studio sempre la sera.",
+            "explicacao": "«Sempre» comes after the verb; with «io» the ending is «-o».",
+            "id": "it-004-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Io non ascolto mai la radio.»",
+            "opcoes": [
+              "Io",
+              "non",
+              "ascolto",
+              "mai",
+              "la",
+              "radio."
+            ],
+            "gabarito": "Io non ascolto mai la radio.",
+            "explicacao": "«Non» before the verb and «mai» after it, to say «never».",
+            "id": "it-004-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Perché studiate italiano?»",
+            "opcoes": [
+              "Perché",
+              "studiate",
+              "italiano?"
+            ],
+            "gabarito": "Perché studiate italiano?",
+            "explicacao": "The question word opens the sentence; «voi» takes «-ate».",
+            "id": "it-004-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Italian: I live in Milan and I work in an office.",
+            "respostaEsperada": "Abito a Milano e lavoro in un ufficio.",
+            "id": "it-004-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Italian: Do you speak English? I speak a little. (informal)",
+            "respostaEsperada": "Parli inglese? Parlo un po'.",
+            "id": "it-004-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Tell out loud about an ordinary day of an imaginary friend: where they live, where they work, what they study, what they eat and what they never do."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say out loud what you do every day and what you never do, with at least five -are verbs."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-004.json",
+  "responsavel": null
+}

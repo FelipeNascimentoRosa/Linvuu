@@ -1,0 +1,509 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 44,
+  "fase": 5,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Town, places and directions: Review and practice of lesson 11",
+  "objetivo": "Lesson 11, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 11,
+    "titulo": "Town, places and directions",
+    "objetivo": "Name places in the city, say where things are with «vicino a», «davanti a» and similar expressions, ask for and understand directions, and choose a means of transport.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 11",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Dov'è la stazione",
+            "opcoes": [
+              "Dov'è la stazione",
+              "Dove sono le stazioni",
+              "Dov'è la fermata"
+            ],
+            "gabarito": "Dov'è la stazione",
+            "explicacao": "Listen for «dov'è» and «stazione».",
+            "id": "it-011-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Giri a destra",
+            "opcoes": [
+              "Giri a destra",
+              "Gira a destra",
+              "Giri a sinistra"
+            ],
+            "gabarito": "Giri a destra",
+            "explicacao": "With «Lei», «giri».",
+            "id": "it-011-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ci vogliono dieci minuti",
+            "opcoes": [
+              "Ci vogliono dieci minuti",
+              "Ci vuole un minuto",
+              "Ci vuole dieci minuti"
+            ],
+            "gabarito": "Ci vogliono dieci minuti",
+            "explicacao": "Plural: «ci vogliono».",
+            "id": "it-011-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "La banca è vicino alla posta",
+            "respostaEsperada": "La banca è vicino alla posta",
+            "explicacao": "Write: La banca è vicino alla posta.",
+            "id": "it-011-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Vada dritto fino al semaforo",
+            "respostaEsperada": "Vada dritto fino al semaforo",
+            "explicacao": "Write: Vada dritto fino al semaforo.",
+            "id": "it-011-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Yes, it's next to the church, opposite the museum.»",
+            "opcoes": [
+              "è",
+              "Sì,",
+              "museo.",
+              "accanto",
+              "alla",
+              "chiesa,",
+              "al",
+              "fronte",
+              "di"
+            ],
+            "gabarito": "Sì, è accanto alla chiesa, di fronte al museo.",
+            "explicacao": "Write: Sì, è accanto alla chiesa, di fronte al museo.",
+            "id": "it-011-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Vado al lavoro in autobus",
+            "respostaEsperada": "Vado al lavoro in autobus",
+            "explicacao": "Write: Vado al lavoro in autobus.",
+            "id": "it-011-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then show the answer.",
+            "audio": "Scusi, signora, per andare in centro?",
+            "respostaEsperada": "Scusi, signora, per andare in centro?",
+            "explicacao": "Excuse me, ma'am, how do I get to the city center?",
+            "id": "it-011-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you ask where the station is?",
+            "opcoes": [
+              "Dov'è la stazione?",
+              "Dove sono la stazione?",
+              "Dov'è le stazione?"
+            ],
+            "gabarito": "Dov'è la stazione?",
+            "explicacao": "«Dov'è» in the singular.",
+            "id": "it-011-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «davanti a» mean?",
+            "opcoes": [
+              "in front of",
+              "behind",
+              "next to"
+            ],
+            "gabarito": "in front of",
+            "explicacao": "«Davanti» is in front.",
+            "id": "it-011-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence uses the transport correctly?",
+            "opcoes": [
+              "Vado in treno.",
+              "Vado a treno.",
+              "Vado in il treno."
+            ],
+            "gabarito": "Vado in treno.",
+            "explicacao": "«In» without an article.",
+            "id": "it-011-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Sì, è accanto alla chiesa, di fronte al museo.",
+            "respostaEsperada": "Sì, è accanto alla chiesa, di fronte al museo.",
+            "explicacao": "Yes, it's next to the church, opposite the museum.",
+            "id": "it-011-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How does a tourist get a woman's attention?",
+            "opcoes": [
+              "Scusi, signora.",
+              "Scusa, signora.",
+              "Scusate, signora."
+            ],
+            "gabarito": "Scusi, signora.",
+            "explicacao": "Polite: «scusi».",
+            "id": "it-011-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "La farmacia è ___ alla chiesa. (next to)",
+            "opcoes": [
+              "accanto",
+              "dietro",
+              "lontano"
+            ],
+            "gabarito": "accanto",
+            "explicacao": "«Accanto a» is next to.",
+            "id": "it-011-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il museo è ___ dal centro. (far)",
+            "opcoes": [
+              "lontano",
+              "vicino",
+              "davanti"
+            ],
+            "gabarito": "lontano",
+            "explicacao": "«Lontano da».",
+            "id": "it-011-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then show the answer.",
+            "audio": "Vada dritto fino al semaforo, poi giri a sinistra.",
+            "respostaEsperada": "Vada dritto fino al semaforo, poi giri a sinistra.",
+            "explicacao": "Go straight until the traffic light and then turn left.",
+            "id": "it-011-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ a sinistra al semaforo. (Lei)",
+            "opcoes": [
+              "Giri",
+              "Gira",
+              "Girare"
+            ],
+            "gabarito": "Giri",
+            "explicacao": "Polite imperative.",
+            "id": "it-011-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «la strada» mean?",
+            "audio": "la strada",
+            "opcoes": [
+              "on foot",
+              "the street, the road",
+              "the station",
+              "the hospital"
+            ],
+            "gabarito": "the street, the road",
+            "explicacao": "«la strada» = the street, the road.",
+            "id": "it-011-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ci ___ un'ora in treno.",
+            "opcoes": [
+              "vuole",
+              "vogliono",
+              "vuoi"
+            ],
+            "gabarito": "vuole",
+            "explicacao": "Singular: «un'ora».",
+            "id": "it-011-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Il bar è davanti al museo.»",
+            "opcoes": [
+              "Il",
+              "bar",
+              "è",
+              "davanti",
+              "al",
+              "museo"
+            ],
+            "gabarito": "Il bar è davanti al museo.",
+            "explicacao": "Subject, verb and place.",
+            "id": "it-011-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Scusi, dov'è la posta?»",
+            "opcoes": [
+              "Scusi,",
+              "dov'è",
+              "la",
+              "posta"
+            ],
+            "gabarito": "Scusi, dov'è la posta?",
+            "explicacao": "A polite question.",
+            "id": "it-011-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Italian: The pharmacy is opposite the museum. Go straight and turn left.",
+            "respostaEsperada": "La farmacia è di fronte al museo. Vada dritto e giri a sinistra.",
+            "id": "it-011-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «il biglietto» mean?",
+            "audio": "il biglietto",
+            "opcoes": [
+              "the station",
+              "the ticket",
+              "on foot",
+              "the post office"
+            ],
+            "gabarito": "the ticket",
+            "explicacao": "«il biglietto» = the ticket.",
+            "id": "it-011-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "La chiesa è ___ alla stazione. (behind)",
+            "opcoes": [
+              "davanti",
+              "dietro",
+              "accanto"
+            ],
+            "gabarito": "dietro",
+            "explicacao": "«Dietro a» means «behind».",
+            "id": "it-011-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then show the answer.",
+            "audio": "È lontano? Ci vuole molto a piedi?",
+            "respostaEsperada": "È lontano? Ci vuole molto a piedi?",
+            "explicacao": "Is it far? Does it take long on foot?",
+            "id": "it-011-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Vada ___ fino alla piazza. (straight ahead)",
+            "opcoes": [
+              "dritto",
+              "destra",
+              "sinistra"
+            ],
+            "gabarito": "dritto",
+            "explicacao": "«Vada dritto» is «go straight ahead».",
+            "id": "it-011-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Vado in centro in ___. (by subway)",
+            "opcoes": [
+              "il metro",
+              "la metro",
+              "metro"
+            ],
+            "gabarito": "metro",
+            "explicacao": "With transport use «in» without an article.",
+            "id": "it-011-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Vado a scuola ___ piedi. (on)",
+            "opcoes": [
+              "in",
+              "a",
+              "con"
+            ],
+            "gabarito": "a",
+            "explicacao": "The fixed expression is «a piedi».",
+            "id": "it-011-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «il centro» mean?",
+            "audio": "il centro",
+            "opcoes": [
+              "the center",
+              "the street, the road",
+              "the stop",
+              "the hospital"
+            ],
+            "gabarito": "the center",
+            "explicacao": "«il centro» = the center.",
+            "id": "it-011-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Dove ___ i bagni? (are)",
+            "opcoes": [
+              "è",
+              "sono",
+              "vuole"
+            ],
+            "gabarito": "sono",
+            "explicacao": "Plural: «dove sono».",
+            "id": "it-011-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «to the left»?",
+            "opcoes": [
+              "to the right",
+              "dritto",
+              "to the left"
+            ],
+            "gabarito": "to the left",
+            "explicacao": "«Sinistra» is left and «destra» is right.",
+            "id": "it-011-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is «l'incrocio»?",
+            "opcoes": [
+              "the intersection",
+              "the traffic light",
+              "the square"
+            ],
+            "gabarito": "the intersection",
+            "explicacao": "«Incrocio» is the intersection; «semaforo» is the traffic light.",
+            "id": "it-011-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then show the answer.",
+            "audio": "E c'è una farmacia vicino?",
+            "respostaEsperada": "E c'è una farmacia vicino?",
+            "explicacao": "And is there a pharmacy nearby?",
+            "id": "it-011-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you ask «How long does it take?»",
+            "opcoes": [
+              "Quanto tempo va?",
+              "Quanto tempo ci vuole?",
+              "Quanto tempo è?"
+            ],
+            "gabarito": "Quanto tempo ci vuole?",
+            "explicacao": "«Ci vuole» expresses the time needed.",
+            "id": "it-011-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «dritto, diritto» mean?",
+            "audio": "dritto, diritto",
+            "opcoes": [
+              "the stop",
+              "straight ahead",
+              "the hospital",
+              "the supermarket"
+            ],
+            "gabarito": "straight ahead",
+            "explicacao": "«dritto, diritto» = straight ahead.",
+            "id": "it-011-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say (formal) «Cross the square»?",
+            "opcoes": [
+              "Attraversa la piazza.",
+              "Attraversare la piazza.",
+              "Attraversi la piazza."
+            ],
+            "gabarito": "Attraversi la piazza.",
+            "explicacao": "The polite form (Lei) is «attraversi».",
+            "id": "it-011-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «La farmacia è accanto alla chiesa.»",
+            "opcoes": [
+              "La",
+              "farmacia",
+              "è",
+              "accanto",
+              "alla",
+              "chiesa."
+            ],
+            "gabarito": "La farmacia è accanto alla chiesa.",
+            "explicacao": "«Accanto a» + article: «alla».",
+            "id": "it-011-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Prenda la prima a destra.»",
+            "opcoes": [
+              "Prenda",
+              "la",
+              "prima",
+              "a",
+              "destra."
+            ],
+            "gabarito": "Prenda la prima a destra.",
+            "explicacao": "A ready-made direction block in the polite form.",
+            "id": "it-011-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Italian: Excuse me, where is the museum? Go straight ahead and turn left.",
+            "respostaEsperada": "Scusi, dov'è il museo? Vada dritto e giri a sinistra.",
+            "id": "it-011-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Italian: I go to work by subway. It takes me twenty minutes.",
+            "respostaEsperada": "Vado al lavoro in metro. Ci vogliono venti minuti.",
+            "id": "it-011-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Choose a place in your city and explain out loud, with «Lei», how to get there from a station."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say out loud how to get from your home to a place in the city, with three instructions and the means of transport."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-011.json",
+  "responsavel": null
+}

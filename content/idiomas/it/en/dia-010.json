@@ -1,0 +1,165 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 10,
+  "fase": 1,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Introductions, countries, numbers 0 to 20 and age: Countries and nationalities",
+  "objetivo": "Lesson 3, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 3,
+    "titulo": "Introductions, countries, numbers 0 to 20 and age",
+    "objetivo": "Introduce yourself and someone else, say where you are from and where you live, use «a» and «in» with cities and countries, and count from 0 to 20, including age with the verb «avere».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Countries and nationalities",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "il Brasile, brasiliano",
+            "translit": "eel brah-ZEE-leh, brah-zee-LYAH-noh",
+            "pt": "Brazil, Brazilian",
+            "en": "",
+            "audio": "il Brasile, brasiliano"
+          },
+          {
+            "ru": "l'Italia, italiano",
+            "translit": "lee-TAH-lyah, ee-tah-LYAH-noh",
+            "pt": "Italy, Italian",
+            "en": "",
+            "audio": "l'Italia, italiano"
+          },
+          {
+            "ru": "il Portogallo, portoghese",
+            "translit": "eel por-toh-GAHL-loh, por-toh-GEH-zeh",
+            "pt": "Portugal, Portuguese",
+            "en": "",
+            "audio": "il Portogallo, portoghese"
+          },
+          {
+            "ru": "la Spagna, spagnolo",
+            "translit": "lah SPAH-nyah, spah-NYOH-loh",
+            "pt": "Spain, Spanish",
+            "en": "",
+            "audio": "la Spagna, spagnolo"
+          },
+          {
+            "ru": "la Francia, francese",
+            "translit": "lah FRAHN-chah, frahn-CHEH-zeh",
+            "pt": "France, French",
+            "en": "",
+            "audio": "la Francia, francese"
+          },
+          {
+            "ru": "la Germania, tedesco",
+            "translit": "lah jer-MAH-nyah, teh-DEH-skoh",
+            "pt": "Germany, German",
+            "en": "",
+            "audio": "la Germania, tedesco"
+          },
+          {
+            "ru": "gli Stati Uniti, americano",
+            "translit": "lyee STAH-tee oo-NEE-tee, ah-meh-ree-KAH-noh",
+            "pt": "the United States, American",
+            "en": "",
+            "audio": "gli Stati Uniti, americano"
+          },
+          {
+            "ru": "l'Inghilterra, inglese",
+            "translit": "leen-geel-TEHR-rah, een-GLEH-zeh",
+            "pt": "England, English",
+            "en": "",
+            "audio": "l'Inghilterra, inglese"
+          },
+          {
+            "ru": "l'Argentina, argentino",
+            "translit": "lar-jen-TEE-nah, ar-jen-TEE-noh",
+            "pt": "Argentina, Argentinian",
+            "en": "",
+            "audio": "l'Argentina, argentino"
+          },
+          {
+            "ru": "la Svizzera, svizzero",
+            "translit": "lah ZVEET-tseh-rah, ZVEET-tseh-roh",
+            "pt": "Switzerland, Swiss",
+            "en": "",
+            "audio": "la Svizzera, svizzero"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Origin, nationality and where you live",
+        "explicacao": "STEP 1: to ask where someone is from: «Di dove sei?» (informal) or «Di dov'è?» (formal). To answer, use «sono di» + city: «Sono di Roma.» STEP 2: for nationality, use «essere» + adjective, which agrees with gender: «Sono brasiliano / brasiliana.» Adjectives in «-e» do not change for gender: «portoghese», «francese», «inglese». Nationality adjectives are written with a lowercase letter, just like «Brazilian» is capitalized in English but «brasiliano» is not. STEP 3: countries take an article: «l'Italia», «la Francia», «il Brasile», «il Portogallo», «gli Stati Uniti». The article is dropped after «in»: «in Italia». STEP 4: to say where you live, use «abitare» with the right preposition: «a» + city («Abito a Roma»); «in» + country («Abito in Italia», «in Brasile»); and «negli» + «Stati Uniti» («Abito negli Stati Uniti»). STEP 5: «abito» means «I live» and «abita» means «he or she lives»; the full conjugation of -are verbs comes in lesson 4. STEP 6: to ask where someone lives: «Dove abiti?» (informal) or «Dove abita?» (formal).",
+        "comparacao": "English uses «in» for both cities and countries («I live in Rome», «in Italy», «in the United States»). Italian splits them: «a» for cities and «in» for countries, with no article. The exception is «negli Stati Uniti», because the name is plural.",
+        "tabela": [
+          {
+            "tipo": "city",
+            "preposicao": "a",
+            "exemplo": "Abito a Roma."
+          },
+          {
+            "tipo": "country (singular)",
+            "preposicao": "in",
+            "exemplo": "Abito in Italia."
+          },
+          {
+            "tipo": "country (singular, masculine)",
+            "preposicao": "in",
+            "exemplo": "Abito in Brasile."
+          },
+          {
+            "tipo": "plural country",
+            "preposicao": "negli",
+            "exemplo": "Abito negli Stati Uniti."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Abito in Roma.",
+            "certo": "Abito a Roma.",
+            "motivo": "A city takes «a»."
+          },
+          {
+            "errado": "Abito a Brasile.",
+            "certo": "Abito in Brasile.",
+            "motivo": "A country takes «in»."
+          },
+          {
+            "errado": "Lei è italiano. (about a woman)",
+            "certo": "Lei è italiana.",
+            "motivo": "The adjective agrees with gender."
+          },
+          {
+            "errado": "Sono Brasiliano.",
+            "certo": "Sono brasiliano.",
+            "motivo": "A nationality (adjective) takes a lowercase letter."
+          }
+        ],
+        "tag": "Prepositions"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Say: «Sono… (nationality). Sono di… Abito a/in… Il mio amico è… Abita a/in…» Use three different countries. Then ask with «Lei»: «Di dov'è? Dove abita?»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Say out loud: «Mi chiamo… Sono… Piacere. E Lei?» and answer as if you were the other person."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-003.json",
+  "responsavel": null
+}

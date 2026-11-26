@@ -1,0 +1,505 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 48,
+  "fase": 5,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Essential irregular verbs: Review and practice of lesson 12",
+  "objetivo": "Lesson 12, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 12,
+    "titulo": "Essential irregular verbs",
+    "objetivo": "Conjugate the most used irregular verbs in the present tense (andare, venire, fare, stare, dare, dire, uscire, bere) and use them in everyday sentences.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 12",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Vado a scuola in autobus",
+            "opcoes": [
+              "Vado a scuola in autobus",
+              "Vado a casa in autobus",
+              "Vado a scuola in treno"
+            ],
+            "gabarito": "Vado a scuola in autobus",
+            "explicacao": "Listen for «vado».",
+            "id": "it-012-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Come stai",
+            "opcoes": [
+              "Come stai",
+              "Come sei",
+              "Come stanno"
+            ],
+            "gabarito": "Come stai",
+            "explicacao": "Listen for the «st».",
+            "id": "it-012-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Escono con gli amici",
+            "opcoes": [
+              "Escono con gli amici",
+              "Esce con gli amici",
+              "Usciamo con gli amici"
+            ],
+            "gabarito": "Escono con gli amici",
+            "explicacao": "Listen for the ending «-ono».",
+            "id": "it-012-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Faccio colazione alle sette",
+            "respostaEsperada": "Faccio colazione alle sette",
+            "explicacao": "Write: Faccio colazione alle sette.",
+            "id": "it-012-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Vengo da Roma",
+            "respostaEsperada": "Vengo da Roma",
+            "explicacao": "Write: Vengo da Roma.",
+            "id": "it-012-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «I'm going out with Chiara. We're going to the movies. Are you coming with us?»",
+            "opcoes": [
+              "Andiamo",
+              "con",
+              "con",
+              "al",
+              "cinema.",
+              "Vieni",
+              "Chiara.",
+              "noi?",
+              "Esco"
+            ],
+            "gabarito": "Esco con Chiara. Andiamo al cinema. Vieni con noi?",
+            "explicacao": "Write: Esco con Chiara. Andiamo al cinema. Vieni con noi?",
+            "id": "it-012-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Bevo un caffè",
+            "respostaEsperada": "Bevo un caffè",
+            "explicacao": "Write: Bevo un caffè.",
+            "id": "it-012-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then show the answer.",
+            "audio": "Ciao, Luca! Come stai?",
+            "respostaEsperada": "Ciao, Luca! Come stai?",
+            "explicacao": "Hi, Luca! How are you?",
+            "id": "it-012-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the «tu» form of the verb «andare»?",
+            "opcoes": [
+              "vai",
+              "vado",
+              "va"
+            ],
+            "gabarito": "vai",
+            "explicacao": "«Tu vai».",
+            "id": "it-012-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Vado dal dottore.",
+              "Vado al dottore.",
+              "Vado in dottore."
+            ],
+            "gabarito": "Vado dal dottore.",
+            "explicacao": "Going to a person: «da».",
+            "id": "it-012-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Oggi fa freddo.",
+              "Oggi è freddo.",
+              "Oggi sta freddo."
+            ],
+            "gabarito": "Oggi fa freddo.",
+            "explicacao": "Weather: «fare».",
+            "id": "it-012-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Esco con Chiara. Andiamo al cinema. Vieni con noi?",
+            "respostaEsperada": "Esco con Chiara. Andiamo al cinema. Vieni con noi?",
+            "explicacao": "I'm going out with Chiara. We're going to the movies. Are you coming with us?",
+            "id": "it-012-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Esco con gli amici.",
+              "Usco con gli amici.",
+              "Uscio con gli amici."
+            ],
+            "gabarito": "Esco con gli amici.",
+            "explicacao": "«Esco» is irregular.",
+            "id": "it-012-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Noi ___ a Roma. (andare)",
+            "opcoes": [
+              "andiamo",
+              "andate",
+              "vanno"
+            ],
+            "gabarito": "andiamo",
+            "explicacao": "«Noi andiamo».",
+            "id": "it-012-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Loro ___ dal Brasile. (venire)",
+            "opcoes": [
+              "vengono",
+              "viene",
+              "veniamo"
+            ],
+            "gabarito": "vengono",
+            "explicacao": "«Loro vengono».",
+            "id": "it-012-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then show the answer.",
+            "audio": "Sto bene, grazie. E tu? Cosa fai stasera?",
+            "respostaEsperada": "Sto bene, grazie. E tu? Cosa fai stasera?",
+            "explicacao": "I'm fine, thanks. And you? What are you doing tonight?",
+            "id": "it-012-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Luca ___ un libro a Giulia. (dare)",
+            "opcoes": [
+              "dà",
+              "da",
+              "dai"
+            ],
+            "gabarito": "dà",
+            "explicacao": "Third person with an accent.",
+            "id": "it-012-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Perfect! Will you help me choose the movie?»",
+            "opcoes": [
+              "film?",
+              "mano",
+              "a",
+              "il",
+              "dai",
+              "scegliere",
+              "Perfetto!",
+              "Mi",
+              "una"
+            ],
+            "gabarito": "Perfetto! Mi dai una mano a scegliere il film?",
+            "explicacao": "Write: Perfetto! Mi dai una mano a scegliere il film?",
+            "id": "it-012-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Io ___ un bicchiere d'acqua. (bere)",
+            "opcoes": [
+              "bevo",
+              "bevi",
+              "beve"
+            ],
+            "gabarito": "bevo",
+            "explicacao": "«Io bevo».",
+            "id": "it-012-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Cosa fai stasera?»",
+            "opcoes": [
+              "Cosa",
+              "fai",
+              "stasera"
+            ],
+            "gabarito": "Cosa fai stasera?",
+            "explicacao": "A question with «fare».",
+            "id": "it-012-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Vengo con voi al cinema.»",
+            "opcoes": [
+              "Vengo",
+              "con",
+              "voi",
+              "al",
+              "cinema"
+            ],
+            "gabarito": "Vengo con voi al cinema.",
+            "explicacao": "Verb, company, place.",
+            "id": "it-012-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Italian: I go out with my friends. We go to the movies and have a coffee.",
+            "respostaEsperada": "Esco con gli amici. Andiamo al cinema e beviamo un caffè.",
+            "id": "it-012-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Perfetto! Mi dai una mano a scegliere il film?",
+            "respostaEsperada": "Perfetto! Mi dai una mano a scegliere il film?",
+            "explicacao": "Perfect! Will you help me choose the movie?",
+            "id": "it-012-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Voi ___ in centro? (are going)",
+            "opcoes": [
+              "andate",
+              "andiamo",
+              "vanno"
+            ],
+            "gabarito": "andate",
+            "explicacao": "With «voi», «andare» is «andate».",
+            "id": "it-012-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then show the answer.",
+            "audio": "Sì, vengo volentieri. A che ora?",
+            "respostaEsperada": "Sì, vengo volentieri. A che ora?",
+            "explicacao": "Yes, I'd love to. What time?",
+            "id": "it-012-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Marco ___ la spesa. (does)",
+            "opcoes": [
+              "fai",
+              "fa",
+              "fanno"
+            ],
+            "gabarito": "fa",
+            "explicacao": "With «lui», «fare» is «fa».",
+            "id": "it-012-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Voi ___ a casa mia? (are coming)",
+            "opcoes": [
+              "veniamo",
+              "vengono",
+              "venite"
+            ],
+            "gabarito": "venite",
+            "explicacao": "With «voi», «venire» is «venite».",
+            "id": "it-012-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Stasera io ___ con Chiara. (I go out)",
+            "opcoes": [
+              "uscio",
+              "esco",
+              "esce"
+            ],
+            "gabarito": "esco",
+            "explicacao": "«Uscire» is irregular: «esco».",
+            "id": "it-012-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «l'ufficio» mean?",
+            "audio": "l'ufficio",
+            "opcoes": [
+              "the office",
+              "the evening, the night out",
+              "the cinema",
+              "to be well"
+            ],
+            "gabarito": "the office",
+            "explicacao": "«l'ufficio» = the office.",
+            "id": "it-012-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Loro ___ molta acqua. (drink)",
+            "opcoes": [
+              "beve",
+              "bevono",
+              "bevete"
+            ],
+            "gabarito": "bevono",
+            "explicacao": "With «loro», «bere» is «bevono».",
+            "id": "it-012-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the «tu» form of «uscire»?",
+            "opcoes": [
+              "esci",
+              "usci",
+              "esce"
+            ],
+            "gabarito": "esci",
+            "explicacao": "The stem changes: esco, esci, esce.",
+            "id": "it-012-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «It's hot»?",
+            "opcoes": [
+              "Ha caldo.",
+              "Fa caldo.",
+              "Fa calore."
+            ],
+            "gabarito": "Fa caldo.",
+            "explicacao": "The weather uses «fare»: «fa caldo», «fa freddo».",
+            "id": "it-012-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then show the answer.",
+            "audio": "Alle otto. Dopo il film beviamo qualcosa.",
+            "respostaEsperada": "Alle otto. Dopo il film beviamo qualcosa.",
+            "explicacao": "At eight. After the movie we'll have a drink.",
+            "id": "it-012-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you ask «How do you say «thank you»?»",
+            "opcoes": [
+              "Come si dice «obrigado»?",
+              "Come dice «obrigado»?",
+              "Come si fa «obrigado»?"
+            ],
+            "gabarito": "Come si dice «obrigado»?",
+            "explicacao": "The question uses «dire» with «si».",
+            "id": "it-012-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «arrivare» mean?",
+            "audio": "arrivare",
+            "opcoes": [
+              "the evening, the night out",
+              "to play sports, to exercise",
+              "to arrive",
+              "to have breakfast"
+            ],
+            "gabarito": "to arrive",
+            "explicacao": "«arrivare» = to arrive.",
+            "id": "it-012-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which preposition goes with «vado» + Marco (to his place)?",
+            "opcoes": [
+              "a",
+              "da",
+              "in"
+            ],
+            "gabarito": "da",
+            "explicacao": "With a person, use «da»: «vado da Marco».",
+            "id": "it-012-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Noi facciamo una passeggiata insieme.»",
+            "opcoes": [
+              "Noi",
+              "facciamo",
+              "una",
+              "passeggiata",
+              "insieme."
+            ],
+            "gabarito": "Noi facciamo una passeggiata insieme.",
+            "explicacao": "With «noi», «fare» is «facciamo».",
+            "id": "it-012-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Luca esce di casa alle otto.»",
+            "opcoes": [
+              "Luca",
+              "esce",
+              "di",
+              "casa",
+              "alle",
+              "otto."
+            ],
+            "gabarito": "Luca esce di casa alle otto.",
+            "explicacao": "«Uscire» takes «di casa».",
+            "id": "it-012-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Italian: I do the grocery shopping and then I go back home.",
+            "respostaEsperada": "Faccio la spesa e dopo torno a casa.",
+            "id": "it-012-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Italian: Today it's cold. How are you? I'm fine.",
+            "respostaEsperada": "Oggi fa freddo. Come stai? Sto bene.",
+            "id": "it-012-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Tell out loud about your ideal weekend, with at least four irregular verbs from this lesson."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say one sentence out loud with each of the eight verbs: andare, venire, fare, stare, dare, dire, uscire, bere."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-012.json",
+  "responsavel": null
+}
