@@ -1,0 +1,240 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 23,
+  "fase": 3,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Avere and -ere and -ire verbs: Avere: hungry, thirsty, sleepy, cold and hot",
+  "objetivo": "Lesson 6, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 6,
+    "titulo": "Avere and -ere and -ire verbs",
+    "objetivo": "Conjugate regular -ere and -ire verbs, including the -isc- group, and use «avere» for physical states and feelings: «ho fame», «ho freddo», «ho caldo». Watch for the false friend «caldo» (hot) and for «prendere», which covers have, take and catch.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Avere: hungry, thirsty, sleepy, cold and hot",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "ho fame",
+            "translit": "oh FAH-meh",
+            "pt": "I am hungry",
+            "en": "",
+            "audio": "ho fame"
+          },
+          {
+            "ru": "ho sete",
+            "translit": "oh SEH-teh",
+            "pt": "I am thirsty",
+            "en": "",
+            "audio": "ho sete"
+          },
+          {
+            "ru": "ho sonno",
+            "translit": "oh SOHN-noh",
+            "pt": "I am sleepy",
+            "en": "",
+            "audio": "ho sonno"
+          },
+          {
+            "ru": "ho freddo",
+            "translit": "oh FREHD-doh",
+            "pt": "I am cold",
+            "en": "",
+            "audio": "ho freddo"
+          },
+          {
+            "ru": "ho caldo",
+            "translit": "oh KAHL-doh",
+            "pt": "I am hot (careful: not «cold»!)",
+            "en": "",
+            "audio": "ho caldo"
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "min": 6,
+        "titulo": "Una giornata calda / A hot day",
+        "ru": "Oggi ho molto caldo e ho molta sete. Giulia ha fame. Noi prendiamo un'acqua fresca e un panino. Marco legge il giornale e scrive un messaggio. Poi partiamo: abbiamo fretta!",
+        "pt": "Today I am very hot and very thirsty. Giulia is hungry. We have a cool water and a sandwich. Marco reads the paper and writes a message. Then we leave: we are in a hurry!",
+        "perguntas": [
+          {
+            "pergunta": "Who is hungry?",
+            "resposta": "«Giulia ha fame.»: Giulia is hungry."
+          },
+          {
+            "pergunta": "What do they have to drink and eat?",
+            "resposta": "«Un'acqua fresca e un panino»: a cool water and a sandwich."
+          },
+          {
+            "pergunta": "Which verb does the sentence use for «we are in a hurry»?",
+            "resposta": "«Abbiamo fretta»: it uses «avere», literally «we have hurry»."
+          },
+          {
+            "pergunta": "What does Marco do?",
+            "resposta": "«Legge il giornale e scrive un messaggio.»: he reads the paper and writes a message."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Feelings with «avere»: you «have» hunger",
+        "explicacao": "STEP 1: «avere» (to have) is irregular: «ho, hai, ha, abbiamo, avete, hanno». STEP 2: for physical states, English uses «to be» («I am hungry», «I am cold»). Italian uses «avere» and a noun: «ho fame» (I have hunger), «ho sete» (I have thirst), «ho sonno» (I have sleep), «ho freddo» (I have cold), «ho caldo» (I have heat). STEP 3: to say «very», use «molto» or «molta» before the noun and make it agree: «ho molta fame» (fame is feminine), «ho molto caldo» (caldo is masculine). «Very» does not work as an adverb here; Italian says «much hunger». STEP 4: do not use «essere»: «Sono fame» is wrong, and «Sono caldo» means «I am a hot person» in a very odd way. STEP 5: the «h» of «ho, hai, ha, hanno» is silent. It is there to separate them from words with the same sound: «o» (or), «ai» (to the), «a» (to), «anno» (year). STEP 6: the same verb gives other expressions: «ho fretta» (I am in a hurry), «ho ragione» (I am right), «ho paura» (I am afraid). STEP 7: «caldo» is a false friend of English «cold». It means hot: «ho caldo» is «I am hot», and «ho freddo» is «I am cold». Say them out loud together.",
+        "comparacao": "English uses «to be» for age, hunger, thirst, cold and heat. Italian uses «avere» for all of them: «ho venti anni», «ho fame», «ho freddo». That is the main habit to unlearn: when a state is physical, think «have», not «am». The false friend «caldo» is the second trap: it looks like «cold» and means «hot».",
+        "exemplos": [
+          {
+            "ru": "Ho molta sete",
+            "pt": "I am very thirsty."
+          },
+          {
+            "ru": "Ho freddo",
+            "pt": "I am cold."
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "avere",
+            "forma": "ho · hai · ha · abbiamo · avete · hanno"
+          },
+          {
+            "tipo": "states",
+            "forma": "ho fame · ho sete · ho sonno · ho freddo · ho caldo"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Sono fame.",
+            "certo": "Ho fame.",
+            "motivo": "Physical states use «avere», not «essere»."
+          },
+          {
+            "errado": "Sono molto freddo.",
+            "certo": "Ho molto freddo.",
+            "motivo": "«Sono freddo» says you are a cold person. Use «ho freddo»."
+          },
+          {
+            "errado": "Ho caldo, metto il cappotto.",
+            "certo": "Ho freddo, metto il cappotto.",
+            "motivo": "«Caldo» is hot, not cold. Do not let the English «cold» pull you."
+          }
+        ],
+        "tag": "Avere"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ho molta sete",
+            "opcoes": [
+              "Ho molta sete",
+              "Ho molto sete",
+              "Ha molta sete"
+            ],
+            "gabarito": "Ho molta sete",
+            "explicacao": "«Sete» is feminine: «molta».",
+            "id": "it-06-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ho freddo",
+            "opcoes": [
+              "Ho freddo",
+              "Ho caldo",
+              "Ha freddo"
+            ],
+            "gabarito": "Ho freddo",
+            "explicacao": "Listen to «freddo» (cold), not «caldo» (hot).",
+            "id": "it-06-e02"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «Ho caldo» mean?",
+            "opcoes": [
+              "I am cold",
+              "I am hot",
+              "I am sleepy"
+            ],
+            "gabarito": "I am hot",
+            "explicacao": "«Caldo» looks like «cold» but means hot.",
+            "id": "it-06-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Sono fame.",
+              "Ho fame.",
+              "Ho sono fame."
+            ],
+            "gabarito": "Ho fame.",
+            "explicacao": "Physical states take «avere».",
+            "id": "it-06-e04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Noi ___ sete. (we are thirsty)",
+            "opcoes": [
+              "abbiamo",
+              "siamo",
+              "avete"
+            ],
+            "gabarito": "abbiamo",
+            "explicacao": "Use «avere»: «abbiamo».",
+            "id": "it-06-e05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Oggi ho molto ___. (hot)",
+            "opcoes": [
+              "caldo",
+              "fame",
+              "sete"
+            ],
+            "gabarito": "caldo",
+            "explicacao": "«Caldo» is masculine: «molto caldo».",
+            "id": "it-06-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Why does «ho» have an «h»?",
+            "opcoes": [
+              "The «h» is pronounced",
+              "It separates «ho» from «o» (or)",
+              "It marks a question"
+            ],
+            "gabarito": "It separates «ho» from «o» (or)",
+            "explicacao": "The «h» is silent and only keeps the spelling apart.",
+            "id": "it-06-e07"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say aloud five things you «have» right now: «Ho… Ho… Ho…». Use at least three of: fame, sete, sonno, freddo, caldo."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Compare «Ho venti anni» and «Ho fame». Which English verb do both avoid?"
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-006.json",
+  "responsavel": null
+}

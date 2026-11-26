@@ -1,0 +1,211 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 15,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Present tense in -are, negation and questions: Asking questions",
+  "objetivo": "Lesson 4, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 4,
+    "titulo": "Present tense in -are, negation and questions",
+    "objetivo": "Conjugate regular -are verbs in the present tense, spell verbs like «mangiare» and «cercare», make negative sentences with «non» (including the double negative «non… mai»), and ask questions without the English helper «do».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Asking questions",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "che cosa",
+            "translit": "keh KOH-zah",
+            "pt": "what",
+            "en": "",
+            "audio": "che cosa"
+          },
+          {
+            "ru": "quando",
+            "translit": "KWAHN-doh",
+            "pt": "when",
+            "en": "",
+            "audio": "quando"
+          },
+          {
+            "ru": "perché",
+            "translit": "pehr-KEH",
+            "pt": "why; because",
+            "en": "",
+            "audio": "perché"
+          },
+          {
+            "ru": "quanto",
+            "translit": "KWAHN-toh",
+            "pt": "how much, how many",
+            "en": "",
+            "audio": "quanto"
+          },
+          {
+            "ru": "piano",
+            "translit": "PYAH-noh",
+            "pt": "slowly; softly",
+            "en": "",
+            "audio": "piano"
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "min": 5,
+        "titulo": "Ana a Roma / Ana in Rome",
+        "ru": "Ana è brasiliana e abita a Roma. Lavora in un ufficio e studia italiano la sera. Parla portoghese, inglese e un po' di italiano. Non parla tedesco. Ascolta la radio ogni giorno e canta spesso in italiano. Ama Roma, ma parla ancora piano!",
+        "pt": "Ana is Brazilian and lives in Rome. She works in an office and studies Italian in the evening. She speaks Portuguese, English and a little Italian. She does not speak German. She listens to the radio every day and often sings in Italian. She loves Rome, but she still speaks slowly!",
+        "perguntas": [
+          {
+            "pergunta": "Where does Ana work, and when does she study?",
+            "resposta": "«Lavora in un ufficio e studia italiano la sera.»: she works in an office and studies in the evening."
+          },
+          {
+            "pergunta": "What does she do with the radio?",
+            "resposta": "«Ascolta la radio ogni giorno.»: she listens to it every day."
+          },
+          {
+            "pergunta": "Which verb shows that she does not speak German?",
+            "resposta": "«Non parla tedesco.»: «non» + verb, with no helper word."
+          },
+          {
+            "pergunta": "How does she speak Italian now?",
+            "resposta": "«Parla ancora piano.»: she still speaks slowly."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 9,
+        "titulo": "Questions without «do»",
+        "explicacao": "STEP 1: English makes questions by adding «do» or by swapping the subject and the verb («Do you speak Italian?», «Are you tired?»). Italian does neither. It keeps the same word order as the statement and changes only the intonation: «Parli italiano?». STEP 2: in speech, your voice rises at the end. In writing, the question mark does the job. STEP 3: if the subject matters, it goes at the end or right after the verb: «Parli tu italiano?» or «Tu parli italiano?». STEP 4: question words normally come first: «Che cosa mangi?», «Quando studi?», «Perché studi italiano?», «Dove abiti?». STEP 5: «dove» (where) is not in the list, but you will need it constantly: «Dove abiti?» is «Where do you live?». STEP 6: «perché» means both «why» and «because»: «Perché studi italiano?» «Perché amo l'Italia». STEP 7: the accent on «perché» is written, and it falls on the last syllable: «pehr-KEH». STEP 8: «quanto» agrees with the noun: «quanto caffè», «quanta pasta», «quanti libri», «quante penne». Before a verb, as in «Quanto costa?», it stays «quanto».",
+        "comparacao": "English questions need extra machinery: the helper «do», or a flipped order. Italian has none of it. You can turn any statement into a question by raising your voice: «Parli italiano» → «Parli italiano?». One word does double duty: «perché» is both «why» and «because», so the answer to «Perché?» can start with the same word.",
+        "exemplos": [
+          {
+            "ru": "Perché studi italiano",
+            "pt": "Why are you studying Italian?"
+          },
+          {
+            "ru": "Dove abiti",
+            "pt": "Where do you live?"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "English",
+            "forma": "Do you speak Italian?  Where do you live?"
+          },
+          {
+            "tipo": "Italian",
+            "forma": "Parli italiano?  Dove abiti?"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Fai tu parlare italiano?",
+            "certo": "Parli italiano?",
+            "motivo": "There is no «do» in Italian questions: keep the statement and raise your voice."
+          },
+          {
+            "errado": "Dove tu abiti?",
+            "certo": "Dove abiti?",
+            "motivo": "A question word is followed directly by the verb; the subject is hidden."
+          }
+        ],
+        "tag": "Questions"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 10,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Dove abiti",
+            "opcoes": [
+              "Dove abiti",
+              "Dove abito",
+              "Dove abita"
+            ],
+            "gabarito": "Dove abiti",
+            "explicacao": "Listen for «abiti»: the ending «-i» means «you».",
+            "id": "it-04-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Perché studi italiano",
+            "opcoes": [
+              "Perché studi italiano",
+              "Perché studio italiano",
+              "Perché studiamo italiano"
+            ],
+            "gabarito": "Perché studi italiano",
+            "explicacao": "«Studi» is the «you» form: a question to a friend.",
+            "id": "it-04-e02"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is a question in Italian?",
+            "opcoes": [
+              "Do parli italiano?",
+              "Parli italiano?",
+              "Fai parli italiano?"
+            ],
+            "gabarito": "Parli italiano?",
+            "explicacao": "No helper word is needed: only the question mark and the voice.",
+            "id": "it-04-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «perché» mean?",
+            "opcoes": [
+              "why",
+              "because",
+              "both why and because"
+            ],
+            "gabarito": "both why and because",
+            "explicacao": "It works as the question and as the answer.",
+            "id": "it-04-e04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ abiti? (Where do you live?)",
+            "opcoes": [
+              "Dove",
+              "Quando",
+              "Chi"
+            ],
+            "gabarito": "Dove",
+            "explicacao": "«Dove» means «where».",
+            "id": "it-04-e05"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Ask a friend three questions in Italian, using «Che cosa…?», «Quando…?» and «Perché…?». Answer each one aloud."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say a statement, then turn it into a question with your voice only. Do it with five verbs from lesson 4."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-004.json",
+  "responsavel": null
+}

@@ -1,0 +1,247 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 12,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Introductions, countries, numbers 0 to 20 and age: Review and practice of lesson 3",
+  "objetivo": "Lesson 3, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 3,
+    "titulo": "Introductions, countries, numbers 0 to 20 and age",
+    "objetivo": "Introduce yourself and others, name countries and nationalities, count from 0 to 20 and say your age with «avere». Choose between «tu» and «Lei», and avoid the three classic English-speaker traps: «sono bene», «sono venti anni» and a capital letter on nationalities.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 3",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 24,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ho venti anni",
+            "opcoes": [
+              "Ho venti anni",
+              "Ho quindici anni",
+              "Ha venti anni"
+            ],
+            "gabarito": "Ho venti anni",
+            "explicacao": "Listen for the verb («ho») and the number («venti»).",
+            "id": "it-03-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Abito in Italia",
+            "opcoes": [
+              "Abito in Italia",
+              "Abito a Roma",
+              "Abito negli Stati Uniti"
+            ],
+            "gabarito": "Abito in Italia",
+            "explicacao": "The preposition before a country is «in»; before a city, «a».",
+            "id": "it-03-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Come ti chiami",
+            "opcoes": [
+              "Come ti chiami",
+              "Come si chiama",
+              "Come stai"
+            ],
+            "gabarito": "Come ti chiami",
+            "explicacao": "Listen to «ti chiami»: informal. «Si chiama» would be formal.",
+            "id": "it-03-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Mi chiamo Ana",
+            "opcoes": [
+              "Mi chiamo Ana",
+              "Ti chiami Ana",
+              "Si chiama Ana"
+            ],
+            "gabarito": "Mi chiamo Ana",
+            "explicacao": "«Mi chiamo» is the answer: I call myself.",
+            "id": "it-03-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Abito a Roma",
+            "opcoes": [
+              "Abito a Roma",
+              "Abito in Roma",
+              "Abito Roma"
+            ],
+            "gabarito": "Abito a Roma",
+            "explicacao": "Before a city, Italian uses «a», not «in».",
+            "id": "it-03-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Lui ha diciotto anni",
+            "opcoes": [
+              "Lui ha diciotto anni",
+              "Lui ha diciassette anni",
+              "Lei ha diciotto anni"
+            ],
+            "gabarito": "Lui ha diciotto anni",
+            "explicacao": "Eighteen is «diciotto»: ten + eight.",
+            "id": "it-03-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Sono venti anni.",
+              "Ho venti anni.",
+              "Ho venti."
+            ],
+            "gabarito": "Ho venti anni.",
+            "explicacao": "Age uses «avere» and the word «anni».",
+            "id": "it-03-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "You meet your friend's grandmother. You ask her name with:",
+            "opcoes": [
+              "Come ti chiami?",
+              "Come si chiama?",
+              "Come è il nome?"
+            ],
+            "gabarito": "Come si chiama?",
+            "explicacao": "A person older than you, whom you do not know well, gets «Lei».",
+            "id": "it-03-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which nationality is correct for a woman from Italy?",
+            "opcoes": [
+              "italiano",
+              "italiana",
+              "Italiana"
+            ],
+            "gabarito": "italiana",
+            "explicacao": "Feminine ending «-a» and lowercase.",
+            "id": "it-03-e09"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Sto ___, grazie. (I am fine)",
+            "opcoes": [
+              "bene",
+              "è bene",
+              "sono"
+            ],
+            "gabarito": "bene",
+            "explicacao": "«Stare» is the verb for how you feel.",
+            "id": "it-03-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Io ___ venti anni. (I am twenty)",
+            "opcoes": [
+              "ho",
+              "sono",
+              "sei"
+            ],
+            "gabarito": "ho",
+            "explicacao": "Use «avere».",
+            "id": "it-03-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Mi ___ Ana. (My name is Ana)",
+            "opcoes": [
+              "chiamo",
+              "chiami",
+              "chiama"
+            ],
+            "gabarito": "chiamo",
+            "explicacao": "With «mi» (I) the verb ends in «-o».",
+            "id": "it-03-e12"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Mi chiamo Ana.»",
+            "opcoes": [
+              "Mi",
+              "chiamo",
+              "Ana."
+            ],
+            "gabarito": "Mi chiamo Ana.",
+            "explicacao": "Reflexive pronoun first, then the verb.",
+            "id": "it-03-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Quanti anni hai?»",
+            "opcoes": [
+              "Quanti",
+              "anni",
+              "hai?"
+            ],
+            "gabarito": "Quanti anni hai?",
+            "explicacao": "The question word comes first.",
+            "id": "it-03-e14"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud and then show the answer.",
+            "audio": "Buongiorno, signora. Mi chiamo Ana. Piacere.",
+            "respostaEsperada": "Buongiorno, signora. Mi chiamo Ana. Piacere.",
+            "explicacao": "Good morning, madam. My name is Ana. Pleased to meet you.",
+            "complemento": true,
+            "id": "it-03-r15"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud and then show the answer.",
+            "audio": "Molto bene, grazie. Questo è Marco.",
+            "respostaEsperada": "Molto bene, grazie. Questo è Marco.",
+            "explicacao": "Very well, thank you. This is Marco.",
+            "complemento": true,
+            "id": "it-03-r16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Italian: My name is Ana. I am twenty years old.",
+            "respostaEsperada": "Mi chiamo Ana. Ho venti anni.",
+            "id": "it-03-e17"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Italian: Good morning, madam. How are you?",
+            "respostaEsperada": "Buongiorno, signora. Come sta?",
+            "id": "it-03-e18"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Introduce yourself to a stranger in four sentences: name, country, age and how you are. Use «Lei» when you ask how they are."
+      },
+      {
+        "tipo": "revisao",
+        "min": 3,
+        "enunciado": "Explain aloud the three differences between English and Italian in this lesson: how you say your name, which verb you use for age, and when to use «tu» or «Lei»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-003.json",
+  "responsavel": null
+}

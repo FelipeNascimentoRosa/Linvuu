@@ -1,0 +1,216 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 19,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Articles, plural and c'è / ci sono: C'è and ci sono",
+  "objetivo": "Lesson 5, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 5,
+    "titulo": "Articles, plural and c'è / ci sono",
+    "objetivo": "Use the definite and indefinite articles with the right gender, form plurals by changing the vowel, and say what exists with «c'è» and «ci sono». Avoid the English-speaker traps: one «the» for every noun, plurals with «-s», and false friends such as «camera».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "C'è and ci sono",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "c'è",
+            "translit": "cheh",
+            "pt": "there is",
+            "en": "",
+            "audio": "c'è"
+          },
+          {
+            "ru": "ci sono",
+            "translit": "chee SOH-noh",
+            "pt": "there are",
+            "en": "",
+            "audio": "ci sono"
+          },
+          {
+            "ru": "non c'è",
+            "translit": "nohn CHEH",
+            "pt": "there is not",
+            "en": "",
+            "audio": "non c'è"
+          },
+          {
+            "ru": "vicino",
+            "translit": "vee-CHEE-noh",
+            "pt": "near, close",
+            "en": "",
+            "audio": "vicino"
+          },
+          {
+            "ru": "lontano",
+            "translit": "lohn-TAH-noh",
+            "pt": "far",
+            "en": "",
+            "audio": "lontano"
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "min": 6,
+        "titulo": "La casa di Giulia / Giulia's house",
+        "ru": "A casa di Giulia c'è una cucina piccola, un salotto e due camere. In salotto ci sono un tavolo, quattro sedie e una finestra grande. Non c'è un balcone, ma c'è un giardino piccolo. Vicino a casa ci sono due bar e una farmacia. La banca non è vicina: è lontana.",
+        "pt": "At Giulia's house there is a small kitchen, a living room and two bedrooms. In the living room there are a table, four chairs and a large window. There is no balcony, but there is a small garden. Near the house there are two cafés and a pharmacy. The bank is not near: it is far.",
+        "perguntas": [
+          {
+            "pergunta": "How many bedrooms does the house have?",
+            "resposta": "«Due camere»: two bedrooms."
+          },
+          {
+            "pergunta": "What is in the living room?",
+            "resposta": "«Un tavolo, quattro sedie e una finestra grande»: a table, four chairs and a large window."
+          },
+          {
+            "pergunta": "Is there a balcony?",
+            "resposta": "«Non c'è un balcone»: no, there is not a balcony."
+          },
+          {
+            "pergunta": "Which verb changes between «c'è» and «ci sono»?",
+            "resposta": "The same verb, «esserci», changes with the number: «c'è» for one thing and «ci sono» for more than one."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "«C'è» and «ci sono»: there is, there are",
+        "explicacao": "STEP 1: «c'è» means «there is» and «ci sono» means «there are». They are the same verb («esserci»), with «ci» (there) added to «è» and «sono». STEP 2: «c'è» goes with one thing: «C'è una farmacia». «Ci sono» goes with more than one: «Ci sono due bar». STEP 3: the verb agrees with what is there, not with the place. Put the thing after the verb: «In salotto ci sono quattro sedie». STEP 4: for the negative, put «non» in front: «Non c'è un balcone», «Non ci sono bar». STEP 5: for a question, raise your voice: «C'è una banca?» «Ci sono due bar?». STEP 6: do not confuse «c'è» with «è»: «La banca è lontana» says where it is or what it is like, while «C'è una banca» says that a bank exists. STEP 7: «vicino a» means «near» and «lontano da» means «far from»; the adjective forms «vicino/vicina» and «lontano/lontana» agree with the noun. STEP 8: pronunciation: «c'è» is «cheh» (like «chair» without the «r»). The apostrophe joins the word «ci» and «è».",
+        "comparacao": "English «there is / there are» has an extra word, «there», that is not the place. Italian has a similar helper, «ci», and writes it as one unit with the verb. The agreement works the same way as in English: «There is a bank» and «There are two banks». The new trap is not to say «è una banca»: that sentence means «it is a bank», not «there is a bank».",
+        "exemplos": [
+          {
+            "ru": "Ci sono due bar",
+            "pt": "There are two cafés."
+          },
+          {
+            "ru": "Non c'è una banca",
+            "pt": "There is no bank."
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "singular",
+            "forma": "C'è un bar.  Non c'è un bar."
+          },
+          {
+            "tipo": "plural",
+            "forma": "Ci sono due bar.  Non ci sono bar."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ci è un bar.",
+            "certo": "C'è un bar.",
+            "motivo": "«Ci è» contracts to «c'è»."
+          },
+          {
+            "errado": "Ci sono un bar.",
+            "certo": "C'è un bar.",
+            "motivo": "One thing: «c'è»."
+          },
+          {
+            "errado": "È una farmacia vicino a casa.",
+            "certo": "C'è una farmacia vicino a casa.",
+            "motivo": "«È» says what something is; «c'è» says it exists."
+          }
+        ],
+        "tag": "There is / there are"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ci sono due bar",
+            "opcoes": [
+              "Ci sono due bar",
+              "C'è un bar",
+              "Ci sono tre bar"
+            ],
+            "gabarito": "Ci sono due bar",
+            "explicacao": "«Ci sono» is for more than one thing.",
+            "id": "it-05-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Non c'è una banca",
+            "opcoes": [
+              "Non c'è una banca",
+              "C'è una banca",
+              "Non ci sono banche"
+            ],
+            "gabarito": "Non c'è una banca",
+            "explicacao": "«Non» before the verb makes it negative.",
+            "id": "it-05-e02"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence means «There are three books»?",
+            "opcoes": [
+              "Ci sono tre libri.",
+              "C'è tre libri.",
+              "È tre libri."
+            ],
+            "gabarito": "Ci sono tre libri.",
+            "explicacao": "Plural: «ci sono».",
+            "id": "it-05-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «È una banca» mean?",
+            "opcoes": [
+              "There is a bank.",
+              "It is a bank.",
+              "There are banks."
+            ],
+            "gabarito": "It is a bank.",
+            "explicacao": "«È» identifies; «c'è» says that something exists.",
+            "id": "it-05-e04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ una farmacia vicino. (There is)",
+            "opcoes": [
+              "C'è",
+              "Ci sono",
+              "È"
+            ],
+            "gabarito": "C'è",
+            "explicacao": "One thing: «c'è».",
+            "id": "it-05-e05"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Describe your room aloud with three sentences using «c'è» and «ci sono», and one with «non c'è»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Explain the difference between «È una banca» and «C'è una banca» using an example from your street."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-005.json",
+  "responsavel": null
+}

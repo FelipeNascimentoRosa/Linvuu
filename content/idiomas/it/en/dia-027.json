@@ -1,0 +1,228 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 27,
+  "fase": 3,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Family and possessives: Talking about your family",
+  "objetivo": "Lesson 7, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 7,
+    "titulo": "Family and possessives",
+    "objetivo": "Name your family members, use «mio», «tuo» and «suo» with the right gender and article, and describe who people are and what they do. Avoid the English-speaker traps: an article before a job, a missing article before a possessive, and «parenti» for «parents».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Talking about your family",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "lo zio",
+            "translit": "loh DZEE-oh",
+            "pt": "the uncle",
+            "en": "",
+            "audio": "lo zio"
+          },
+          {
+            "ru": "la zia",
+            "translit": "lah DZEE-ah",
+            "pt": "the aunt",
+            "en": "",
+            "audio": "la zia"
+          },
+          {
+            "ru": "il cugino",
+            "translit": "eel koo-JEE-noh",
+            "pt": "the cousin (m.)",
+            "en": "",
+            "audio": "il cugino"
+          },
+          {
+            "ru": "i parenti",
+            "translit": "ee pah-REHN-tee",
+            "pt": "the relatives",
+            "en": "",
+            "audio": "i parenti"
+          },
+          {
+            "ru": "figlio unico",
+            "translit": "FEE-lyoh OO-nee-koh",
+            "pt": "only child (boy)",
+            "en": "",
+            "audio": "figlio unico"
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "min": 5,
+        "titulo": "Una famiglia grande / A big family",
+        "ru": "Marco ha una famiglia grande. I suoi genitori si chiamano Paolo e Anna. Suo padre è medico e sua madre è insegnante. Marco ha una sorella, Sara, e un fratello, Luca. Sara ha quindici anni e Luca ha venti anni. I nonni abitano a Napoli. Gli zii e i cugini abitano a Milano. Domenica la famiglia è insieme.",
+        "pt": "Marco has a big family. His parents are called Paolo and Anna. His father is a doctor and his mother is a teacher. Marco has a sister, Sara, and a brother, Luca. Sara is fifteen and Luca is twenty. The grandparents live in Naples. The uncles and cousins live in Milan. On Sunday the family is together.",
+        "perguntas": [
+          {
+            "pergunta": "What do Marco's parents do?",
+            "resposta": "«Suo padre è medico e sua madre è insegnante.»: his father is a doctor and his mother is a teacher."
+          },
+          {
+            "pergunta": "How old are Sara and Luca?",
+            "resposta": "Sara has fifteen years and Luca twenty: «ha quindici anni», «ha venti anni»."
+          },
+          {
+            "pergunta": "Where do the grandparents live?",
+            "resposta": "«I nonni abitano a Napoli.»: in Naples."
+          },
+          {
+            "pergunta": "Which words show that «suo» agrees with the thing?",
+            "resposta": "«Suo padre» is masculine and «sua madre» is feminine, even though the owner is the same person, Marco."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "How to describe your family",
+        "explicacao": "STEP 1: use «avere» to say what family you have: «Ho una sorella e due fratelli.» Remember that age uses «avere» too: «Mia sorella ha quindici anni». STEP 2: the question «Quanti fratelli hai?» (How many brothers do you have?) has «fratelli» in the masculine plural, which may include sisters. STEP 3: the verb «chiamarsi» works as in lesson 3: «Si chiama Paolo» (he is called Paolo), «Si chiamano Paolo e Anna» (they are called Paolo and Anna). The «they» form is «si chiamano». STEP 4: for jobs, Italian does not use an article after «essere»: «Mio padre è medico», not «è un medico». English says «a doctor», Italian says «doctor». STEP 5: «figlio unico» means «only child». For a girl, «figlia unica». STEP 6: «i nonni» can live «a Napoli» (city) or «in Italia» (country). STEP 7: possessives with «loro» keep the article: «la loro casa». STEP 8: «i parenti» are your relatives in general, and «i cugini» are your cousins. STEP 9: «domenica» without an article means «on Sunday»: «Domenica la famiglia è insieme». With the article («la domenica»), it means «on Sundays».",
+        "comparacao": "English says «My father is a doctor», with an article. Italian drops it: «Mio padre è medico». The same happens with nationalities and other jobs. Also, English «they are called» uses the same helper as other questions; in Italian the verb itself carries the idea: «si chiamano». And while English possessives follow the owner, here you can see that «suo padre» and «sua madre» both belong to Marco.",
+        "exemplos": [
+          {
+            "ru": "Mio padre è medico",
+            "pt": "My father is a doctor."
+          },
+          {
+            "ru": "Come si chiamano",
+            "pt": "What are they called?"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "English",
+            "forma": "He is a doctor.  She is a teacher."
+          },
+          {
+            "tipo": "Italian",
+            "forma": "È medico.  È insegnante."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Mio padre è un medico.",
+            "certo": "Mio padre è medico.",
+            "motivo": "No article before a job after «essere»."
+          },
+          {
+            "errado": "Come si chiama i tuoi genitori?",
+            "certo": "Come si chiamano i tuoi genitori?",
+            "motivo": "The verb agrees with the plural: «si chiamano»."
+          },
+          {
+            "errado": "Ho una figlio unico.",
+            "certo": "Sono figlio unico.",
+            "motivo": "Say «sono figlio unico» (I am an only child)."
+          }
+        ],
+        "tag": "Family"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "i parenti",
+            "opcoes": [
+              "i parenti",
+              "i genitori",
+              "i fratelli"
+            ],
+            "gabarito": "i parenti",
+            "explicacao": "«Parenti» are relatives in general.",
+            "id": "it-07-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "figlio unico",
+            "opcoes": [
+              "figlio unico",
+              "figlia unica",
+              "figli unici"
+            ],
+            "gabarito": "figlio unico",
+            "explicacao": "Masculine singular: only son.",
+            "id": "it-07-e02"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Mio padre è un medico.",
+              "Mio padre è medico.",
+              "Mio padre ha medico."
+            ],
+            "gabarito": "Mio padre è medico.",
+            "explicacao": "No article before a job after «essere».",
+            "id": "it-07-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «Si chiamano Paolo e Anna» mean?",
+            "opcoes": [
+              "They are called Paolo and Anna",
+              "He is called Paolo and Anna",
+              "Paolo and Anna call him"
+            ],
+            "gabarito": "They are called Paolo and Anna",
+            "explicacao": "«Si chiamano» is the third person plural.",
+            "id": "it-07-e04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Come ___ i tuoi genitori? (are they called)",
+            "opcoes": [
+              "si chiamano",
+              "si chiama",
+              "ti chiamano"
+            ],
+            "gabarito": "si chiamano",
+            "explicacao": "The plural subject needs «chiamano».",
+            "id": "it-07-e05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Mio fratello ___ venti anni. (is twenty)",
+            "opcoes": [
+              "ha",
+              "è",
+              "hai"
+            ],
+            "gabarito": "ha",
+            "explicacao": "Age uses «avere».",
+            "id": "it-07-e06"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Present your family aloud in five sentences: how many people, their names, their ages and one job. Do not use an article before the job."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Explain why «Mio padre è medico» has no «un», and give two more examples with other jobs."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-007.json",
+  "responsavel": null
+}

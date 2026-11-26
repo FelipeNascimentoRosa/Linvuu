@@ -1,0 +1,270 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 14,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Present tense in -are, negation and questions: Negation and frequency",
+  "objetivo": "Lesson 4, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 4,
+    "titulo": "Present tense in -are, negation and questions",
+    "objetivo": "Conjugate regular -are verbs in the present tense, spell verbs like «mangiare» and «cercare», make negative sentences with «non» (including the double negative «non… mai»), and ask questions without the English helper «do».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Negation and frequency",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "dialogo",
+        "min": 6,
+        "titulo": "Parliamo piano / Let us speak slowly",
+        "contexto": "Ana and a classmate try out their Italian. Listen for where the little word «non» sits, and for how «sempre» is placed.",
+        "linhas": [
+          {
+            "personagem": "Marco",
+            "ru": "— Ciao, Ana! Parli italiano?",
+            "pt": "— Hi, Ana! Do you speak Italian?",
+            "audio": "Ciao, Ana! Parli italiano?"
+          },
+          {
+            "personagem": "Ana",
+            "ru": "— Sì, ma parlo solo un po'. E tu parli portoghese?",
+            "pt": "— Yes, but I only speak a little. And do you speak Portuguese?",
+            "audio": "Sì, ma parlo solo un po'. E tu parli portoghese?"
+          },
+          {
+            "personagem": "Marco",
+            "ru": "— No, non parlo portoghese, ma studio spagnolo.",
+            "pt": "— No, I don't speak Portuguese, but I study Spanish.",
+            "audio": "No, non parlo portoghese, ma studio spagnolo."
+          },
+          {
+            "personagem": "Ana",
+            "ru": "— Allora parliamo italiano, ma piano!",
+            "pt": "— Then let's speak Italian, but slowly!",
+            "audio": "Allora parliamo italiano, ma piano!"
+          },
+          {
+            "personagem": "Marco",
+            "ru": "— Perfetto! Io parlo sempre piano con gli amici.",
+            "pt": "— Perfect! I always speak slowly with my friends.",
+            "audio": "Perfetto! Io parlo sempre piano con gli amici."
+          },
+          {
+            "personagem": "Ana",
+            "ru": "— Grazie, sei molto gentile.",
+            "pt": "— Thank you, you're very kind.",
+            "audio": "Grazie, sei molto gentile."
+          }
+        ]
+      },
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "non",
+            "translit": "nohn",
+            "pt": "not",
+            "en": "",
+            "audio": "non"
+          },
+          {
+            "ru": "mai",
+            "translit": "my",
+            "pt": "never, ever",
+            "en": "",
+            "audio": "mai"
+          },
+          {
+            "ru": "sempre",
+            "translit": "SEHM-preh",
+            "pt": "always",
+            "en": "",
+            "audio": "sempre"
+          },
+          {
+            "ru": "spesso",
+            "translit": "SPEHS-soh",
+            "pt": "often",
+            "en": "",
+            "audio": "spesso"
+          },
+          {
+            "ru": "ogni giorno",
+            "translit": "OH-nyee JOR-noh",
+            "pt": "every day",
+            "en": "",
+            "audio": "ogni giorno"
+          },
+          {
+            "ru": "un po'",
+            "translit": "oon POH",
+            "pt": "a little",
+            "en": "",
+            "audio": "un po'"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Negation with «non» and the double negative",
+        "explicacao": "STEP 1: to make a sentence negative, put «non» directly before the verb: «Parlo tedesco» becomes «Non parlo tedesco». STEP 2: English needs the helper «do» («I do not speak»). Italian has no helper: just «non» + verb. STEP 3: the order is never «verb + not»: «Parlo non tedesco» is wrong. STEP 4: Italian requires a double negative. When a negative word like «mai» (never) comes after the verb, «non» must still stand before the verb: «Non mangio mai la pasta», literally «I do not eat never pasta». STEP 5: the same pattern works with «niente» (nothing) and «nessuno» (nobody): «Non mangio niente», «Non parlo con nessuno». STEP 6: if «mai» comes first, «non» disappears: «Mai mangio la pasta» is possible, but the version with «non» is more natural. STEP 7: the answer «No» alone is not enough: in a full answer, Italian says «No, non parlo…».",
+        "comparacao": "Standard English avoids double negatives: «I never eat pasta», not «I don't never eat pasta». Italian does the opposite: the second negative word needs the first one. Think of it as a frame: «non» + verb + negative word. This is not an error and does not turn the sentence positive, as it would in English.",
+        "exemplos": [
+          {
+            "ru": "Non parlo tedesco",
+            "pt": "I do not speak German."
+          },
+          {
+            "ru": "Non mangio mai la pasta",
+            "pt": "I never eat pasta."
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "Affirmative",
+            "forma": "Parlo tedesco."
+          },
+          {
+            "tipo": "Negative",
+            "forma": "Non parlo tedesco."
+          },
+          {
+            "tipo": "Double negative",
+            "forma": "Non mangio mai la pasta."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Parlo non tedesco.",
+            "certo": "Non parlo tedesco.",
+            "motivo": "«Non» goes before the verb, never after it."
+          },
+          {
+            "errado": "Mangio mai la pasta.",
+            "certo": "Non mangio mai la pasta.",
+            "motivo": "After the verb, «mai» needs «non» before the verb."
+          },
+          {
+            "errado": "No parlo tedesco.",
+            "certo": "Non parlo tedesco.",
+            "motivo": "«No» is the answer; «non» is the negation inside the sentence."
+          }
+        ],
+        "tag": "Negation"
+      },
+      {
+        "tipo": "gramatica",
+        "min": 6,
+        "titulo": "How often: «sempre», «spesso», «mai»",
+        "explicacao": "STEP 1: the adverbs of frequency are «sempre» (always), «spesso» (often), «mai» (never) and the phrase «ogni giorno» (every day). STEP 2: unlike English, which puts the adverb before the main verb («I always speak»), Italian usually puts it after the verb: «Parlo sempre piano». STEP 3: «ogni giorno» goes at the end or the beginning: «Studio ogni giorno» or «Ogni giorno studio». STEP 4: «un po'» means «a little» and has an apostrophe because it is short for «un poco»: «Parlo un po'». STEP 5: «mai» in a question means «ever»: «Mangi mai la pasta?» is «Do you ever eat pasta?».",
+        "comparacao": "English adverbs of frequency come before the verb («I always speak», «we often study»). Italian puts them after it. That is a small shift, and the easy way to remember it is to say the Italian sentence in this order: subject (hidden), verb, adverb.",
+        "exemplos": [
+          {
+            "ru": "Io parlo sempre piano con gli amici.",
+            "pt": "I always speak slowly with my friends."
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "English order",
+            "forma": "I always speak slowly."
+          },
+          {
+            "tipo": "Italian order",
+            "forma": "Parlo sempre piano."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Sempre parlo piano.",
+            "certo": "Parlo sempre piano.",
+            "motivo": "The adverb usually follows the verb in Italian."
+          },
+          {
+            "errado": "Studio ogni il giorno.",
+            "certo": "Studio ogni giorno.",
+            "motivo": "«Ogni» takes no article."
+          }
+        ],
+        "tag": "Frequency"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 2,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Non parlo tedesco",
+            "opcoes": [
+              "Non parlo tedesco",
+              "Parlo tedesco",
+              "Non parli tedesco"
+            ],
+            "gabarito": "Non parlo tedesco",
+            "explicacao": "Listen for the small word «non» at the start.",
+            "id": "it-04-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Non mangio mai la pasta",
+            "opcoes": [
+              "Non mangio mai la pasta",
+              "Mangio sempre la pasta",
+              "Non mangio la pasta"
+            ],
+            "gabarito": "Non mangio mai la pasta",
+            "explicacao": "«Non… mai» is the double negative: both words are needed.",
+            "id": "it-04-e02"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence means «I never eat pasta»?",
+            "opcoes": [
+              "Mangio mai la pasta.",
+              "Non mangio mai la pasta.",
+              "Non mangio sempre la pasta."
+            ],
+            "gabarito": "Non mangio mai la pasta.",
+            "explicacao": "After the verb, «mai» needs «non» in front of the verb.",
+            "id": "it-04-e03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ parlo tedesco. (I do not speak)",
+            "opcoes": [
+              "Non",
+              "No",
+              "Mai"
+            ],
+            "gabarito": "Non",
+            "explicacao": "«Non» is the negation inside a sentence.",
+            "id": "it-04-e04"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say aloud three things you do not do, with «non», and one thing you never do with «non… mai»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 2,
+        "enunciado": "Explain aloud, in English, why «Non mangio mai» is not a mistake. Where does the English «do» go in Italian?"
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-004.json",
+  "responsavel": null
+}
