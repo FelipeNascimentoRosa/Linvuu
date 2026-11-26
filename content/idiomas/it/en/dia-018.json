@@ -116,8 +116,8 @@
         "tipo": "gramatica",
         "min": 9,
         "titulo": "Plurals change the vowel, not add an «s»",
-        "explicacao": "STEP 1: English adds «-s» to make a plural. Italian changes the last vowel. STEP 2: masculine in «-o» becomes «-i»: «il libro» → «i libri». STEP 3: feminine in «-a» becomes «-e»: «la penna» → «le penne». STEP 4: nouns in «-e» (either gender) become «-i»: «lo studente» → «gli studenti». STEP 5: the article changes too. Masculine: «il» → «i»; «lo» and «l'» → «gli» (before vowel, «s» + consonant, «z»). Feminine: «la» and «l'» → «le». STEP 6: nouns ending in «-ca» keep the hard «k» sound by adding «h» in the plural: «l'amica» → «le amiche» (ah-MEE-keh, not «chee»). Masculine nouns in «-co» usually take a soft sound and no «h»: «l'amico» → «gli amici» (ah-MEE-chee). A few keep the hard sound and add «h»: «il fuoco» → «i fuochi». Listen to the audio each time. STEP 7: nouns with an accent on the last vowel («il caffè», «la città») do not change: «i caffè», «le città». STEP 8: sound: «gli» is like «lli» in «million»: «lyee». «Gli amici» is «lyee ah-MEE-chee».",
-        "comparacao": "English plurals add a sound at the end («book → books») and keep the article «the». Italian changes both the noun and the article, and the vowel is the signal: «-i» for masculine and for «-e» nouns, «-e» for feminine. That also means you hear the plural in the article before you hear the noun: «i», «gli», «le».",
+        "explicacao": "STEP 1: English adds «-s» to make a plural. Italian changes the last vowel. STEP 2: masculine in «-o» becomes «-i»: «il libro» → «i libri». STEP 3: feminine in «-a» becomes «-e»: «la penna» → «le penne». STEP 4: nouns in «-e» (either gender) become «-i»: «lo studente» → «gli studenti». STEP 5: the article changes too. Masculine: «il» → «i»; «lo» and «l'» → «gli» (before vowel, «s» + consonant, «z»). Feminine: «la» and «l'» → «le». STEP 6: nouns ending in «-ca» keep the hard «k» sound by adding «h» in the plural: «l'amica» → «le amiche» (ah-MEE-keh, not ah-MEE-cheh). Masculine nouns in «-co» go both ways: «l'amico» → «gli amici» (ah-MEE-chee, soft sound, no «h»), but «il fuoco» → «i fuochi» (hard sound, with «h»). Learn each plural with its word and listen to the audio. STEP 7: nouns with an accent on the last vowel («il caffè», «la città») do not change: «i caffè», «le città». STEP 8: sound: «gli» is like «lli» in «million»: «lyee». «Gli amici» is «lyee ah-MEE-chee».",
+        "comparacao": "English plurals add a sound at the end («book → books») and keep the article «the». Italian changes both the noun and the article, and the vowel is the signal: «-i» for masculine «-o» nouns and for «-e» nouns, «-e» for feminine «-a» nouns. That also means you hear the plural in the article before you hear the noun: «i», «gli», «le».",
         "exemplos": [
           {
             "ru": "i libri",
@@ -148,7 +148,7 @@
         ],
         "erros": [
           {
-            "errado": "i librs",
+            "errado": "i libris",
             "certo": "i libri",
             "motivo": "Italian does not add «s»; change the final vowel."
           },
@@ -214,7 +214,7 @@
             "opcoes": [
               "le penne",
               "i penni",
-              "la pennas"
+              "le pennas"
             ],
             "gabarito": "le penne",
             "explicacao": "Feminine: «-a» becomes «-e».",

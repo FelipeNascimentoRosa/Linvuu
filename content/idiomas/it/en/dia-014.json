@@ -116,7 +116,7 @@
         "tipo": "gramatica",
         "min": 8,
         "titulo": "Negation with «non» and the double negative",
-        "explicacao": "STEP 1: to make a sentence negative, put «non» directly before the verb: «Parlo tedesco» becomes «Non parlo tedesco». STEP 2: English needs the helper «do» («I do not speak»). Italian has no helper: just «non» + verb. STEP 3: the order is never «verb + not»: «Parlo non tedesco» is wrong. STEP 4: Italian requires a double negative. When a negative word like «mai» (never) comes after the verb, «non» must still stand before the verb: «Non mangio mai la pasta», literally «I do not eat never pasta». STEP 5: the same pattern works with «niente» (nothing) and «nessuno» (nobody): «Non mangio niente», «Non parlo con nessuno». STEP 6: if «mai» comes first, «non» disappears: «Mai mangio la pasta» is possible, but the version with «non» is more natural. STEP 7: the answer «No» alone is not enough: in a full answer, Italian says «No, non parlo…».",
+        "explicacao": "STEP 1: to make a sentence negative, put «non» directly before the verb: «Parlo tedesco» becomes «Non parlo tedesco». STEP 2: English needs the helper «do» («I do not speak»). Italian has no helper: just «non» + verb. STEP 3: the order is never «verb + not»: «Parlo non tedesco» is wrong. STEP 4: Italian requires a double negative. When a negative word like «mai» (never) comes after the verb, «non» must still stand before the verb: «Non mangio mai la pasta», literally «I do not eat never pasta». STEP 5: the same pattern works with «niente» (nothing) and «nessuno» (nobody): «Non mangio niente», «Non parlo con nessuno». STEP 6: if the negative word comes before the verb, «non» is dropped: «Nessuno parla tedesco» (nobody speaks German). With «mai» in first position («Mai mangio la pasta») it is possible but emphatic; in everyday speech, use «Non mangio mai la pasta». STEP 7: «No» answers the question and «non» negates the verb, so a full negative answer uses both: «No, non parlo tedesco».",
         "comparacao": "Standard English avoids double negatives: «I never eat pasta», not «I don't never eat pasta». Italian does the opposite: the second negative word needs the first one. Think of it as a frame: «non» + verb + negative word. This is not an error and does not turn the sentence positive, as it would in English.",
         "exemplos": [
           {
@@ -166,7 +166,7 @@
         "min": 6,
         "titulo": "How often: «sempre», «spesso», «mai»",
         "explicacao": "STEP 1: the adverbs of frequency are «sempre» (always), «spesso» (often), «mai» (never) and the phrase «ogni giorno» (every day). STEP 2: unlike English, which puts the adverb before the main verb («I always speak»), Italian usually puts it after the verb: «Parlo sempre piano». STEP 3: «ogni giorno» goes at the end or the beginning: «Studio ogni giorno» or «Ogni giorno studio». STEP 4: «un po'» means «a little» and has an apostrophe because it is short for «un poco»: «Parlo un po'». STEP 5: «mai» in a question means «ever»: «Mangi mai la pasta?» is «Do you ever eat pasta?».",
-        "comparacao": "English adverbs of frequency come before the verb («I always speak», «we often study»). Italian puts them after it. That is a small shift, and the easy way to remember it is to say the Italian sentence in this order: subject (hidden), verb, adverb.",
+        "comparacao": "English adverbs of frequency come before the verb («I always speak», «we often study»). Italian usually puts them after it. That is a small shift, and the easy way to remember it is to say the Italian sentence in this order: subject (hidden), verb, adverb.",
         "exemplos": [
           {
             "ru": "Perfetto! Io parlo sempre piano con gli amici.",
@@ -185,9 +185,9 @@
         ],
         "erros": [
           {
-            "errado": "ogni il giorno",
+            "errado": "ogni giorni",
             "certo": "ogni giorno",
-            "motivo": "«Ogni» takes no article."
+            "motivo": "«Ogni» always takes a singular noun, as English «every» does: «ogni giorno», never «ogni giorni»."
           }
         ],
         "tag": "Frequency"
@@ -240,7 +240,7 @@
             "opcoes": [
               "Non",
               "No",
-              "Mai"
+              "Nessuno"
             ],
             "gabarito": "Non",
             "explicacao": "«Non» is the negation inside a sentence.",

@@ -165,8 +165,8 @@
         "tipo": "gramatica",
         "min": 8,
         "titulo": "«Sc», «gn» and «gli»: three sounds with no English letter",
-        "explicacao": "STEP 1: «sc» follows the same rule as «c». Before «a», «o», «u», it is «sk»: «scuola» (SKWOH-lah). Before «e», «i», it is «sh»: «pesce» (PEH-sheh), «scena». STEP 2: to keep «sk» before «e» or «i», write «sch»: «schema». STEP 3: «gn» is a single sound, like «ny» in «canyon»: «gnocchi» (NYOHK-kee), «Spagna». STEP 4: «gli» is a single sound too, like «lli» in «million»: «figlio» (FEE-lyoh), «famiglia» (fah-MEE-lyah). STEP 5: before the vowel «i», the «g» of «gli» is not pronounced separately: you do not say «gee-lee». STEP 6: the exception is a few words where «gli» is pronounced «g-l-i», such as «glicine», but you will not need them yet.",
-        "comparacao": "English has «sh» in «ship», but it spells it with «sh», not «sc». Italian reserves «sc» for it, so do not read «pesce» as «PESS-keh». «Gnocchi» is already on English menus, but many English speakers say it «NYOH-kee» or «NOH-kee»; the Italian sound starts with «ny». And «famiglia» has no «g» sound at all.",
+        "explicacao": "STEP 1: «sc» follows the same rule as «c». Before «a», «o», «u», it is «sk»: «scuola» (SKWOH-lah). Before «e», «i», it is «sh»: «pesce» (PEH-sheh), «scena». STEP 2: to keep «sk» before «e» or «i», write «sch»: «schema». STEP 3: «gn» is a single sound, like «ny» in «canyon»: «gnocchi» (NYOHK-kee), «Spagna». STEP 4: «gli» is a single sound too, like «lli» in «million»: «figlio» (FEE-lyoh), «famiglia» (fah-MEE-lyah). STEP 5: the «g» of «gli» is not a separate sound: you do not say «gee-lee». STEP 6: the exception is a few words where «gli» is pronounced «g-l-i», such as «glicine», but you will not need them yet.",
+        "comparacao": "English has «sh» in «ship», but it spells it with «sh», not «sc». Italian reserves «sc» for it, so do not read «pesce» as «PESS-keh». «Gnocchi» is already on English menus, but many English speakers say it «NYOH-kee» or «NOH-kee»; the Italian word has a long «k» sound: «NYOHK-kee». And «famiglia» has no «g» sound at all.",
         "exemplos": [
           {
             "ru": "scena",
@@ -201,9 +201,9 @@
         ],
         "erros": [
           {
-            "errado": "Pessce",
+            "errado": "Peshe",
             "certo": "pesce",
-            "motivo": "One «s» and «c»: «sc» before «e» makes the «sh» sound."
+            "motivo": "Italian never spells the «sh» sound with «sh»: it writes «sc» before «e» or «i»."
           },
           {
             "errado": "Famila",
@@ -279,7 +279,7 @@
             "opcoes": [
               "like «lli» in million",
               "like «gl» in «glad»",
-              "like «ly» only"
+              "like a plain «l»"
             ],
             "gabarito": "like «lli» in million",
             "explicacao": "Listen: fah-MEE-lyah.",

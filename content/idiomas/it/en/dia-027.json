@@ -66,7 +66,7 @@
         "min": 5,
         "titulo": "Una famiglia grande / A big family",
         "ru": "Marco ha una famiglia grande. I suoi genitori si chiamano Paolo e Anna. Suo padre è medico e sua madre è insegnante. Marco ha una sorella, Sara, e un fratello, Luca. Sara ha quindici anni e Luca ha venti anni. I nonni abitano a Napoli. Gli zii e i cugini abitano a Milano. Domenica la famiglia è insieme.",
-        "pt": "Marco has a big family. His parents are called Paolo and Anna. His father is a doctor and his mother is a teacher. Marco has a sister, Sara, and a brother, Luca. Sara is fifteen and Luca is twenty. The grandparents live in Naples. The uncles and cousins live in Milan. On Sunday the family is together.",
+        "pt": "Marco has a big family. His parents are called Paolo and Anna. His father is a doctor and his mother is a teacher. Marco has a sister, Sara, and a brother, Luca. Sara is fifteen and Luca is twenty. The grandparents live in Naples. His aunts, uncles and cousins live in Milan. On Sunday the family is together.",
         "perguntas": [
           {
             "pergunta": "What do Marco's parents do?",
@@ -90,8 +90,8 @@
         "tipo": "gramatica",
         "min": 10,
         "titulo": "How to describe your family",
-        "explicacao": "STEP 1: use «avere» to say what family you have: «Ho una sorella e due fratelli.» Remember that age uses «avere» too: «Mia sorella ha quindici anni». STEP 2: the question «Quanti fratelli hai?» (How many brothers do you have?) has «fratelli» in the masculine plural, which may include sisters. STEP 3: the verb «chiamarsi» works as in lesson 3: «Si chiama Paolo» (he is called Paolo), «Si chiamano Paolo e Anna» (they are called Paolo and Anna). The «they» form is «si chiamano». STEP 4: for jobs, Italian does not use an article after «essere»: «Mio padre è medico», not «è un medico». English says «a doctor», Italian says «doctor». STEP 5: «figlio unico» means «only child». For a girl, «figlia unica». STEP 6: «i nonni» can live «a Napoli» (city) or «in Italia» (country). STEP 7: possessives with «loro» keep the article: «la loro casa». STEP 8: «i parenti» are your relatives in general, and «i cugini» are your cousins. STEP 9: «domenica» without an article means «on Sunday»: «Domenica la famiglia è insieme». With the article («la domenica»), it means «on Sundays».",
-        "comparacao": "English says «My father is a doctor», with an article. Italian drops it: «Mio padre è medico». The same happens with nationalities and other jobs. Also, English «they are called» uses the same helper as other questions; in Italian the verb itself carries the idea: «si chiamano». And while English possessives follow the owner, here you can see that «suo padre» and «sua madre» both belong to Marco.",
+        "explicacao": "STEP 1: use «avere» to say what family you have: «Ho una sorella e due fratelli.» Remember that age uses «avere» too: «Mia sorella ha quindici anni». STEP 2: the question «Quanti fratelli hai?» (How many brothers do you have?) has «fratelli» in the masculine plural, which may include sisters. STEP 3: the verb «chiamarsi» works as in lesson 3: «Si chiama Paolo» (he is called Paolo), «Si chiamano Paolo e Anna» (they are called Paolo and Anna). The «they» form is «si chiamano». STEP 4: when you simply state a job, Italian normally leaves out the article after «essere»: «Mio padre è medico» is the neutral way to say it. English says «a doctor», Italian says «doctor». The article returns when you add a description: «È un medico molto bravo». STEP 5: «figlio unico» means «only child». For a girl, «figlia unica». STEP 6: «i nonni» can live «a Napoli» (city) or «in Italia» (country). STEP 7: possessives with «loro» keep the article: «la loro casa». STEP 8: «i parenti» are your relatives in general, and «i cugini» are your cousins. STEP 9: «domenica» without an article means «on Sunday»: «Domenica la famiglia è insieme». With the article («la domenica»), it means «on Sundays».",
+        "comparacao": "English says «My father is a doctor», with an article. Italian drops it: «Mio padre è medico». The same happens with other jobs and, usually, with nationalities («Sono italiano»). Also, English says «they are called»; Italian uses the reflexive verb «chiamarsi» in the plural: «si chiamano». And while English possessives follow the owner, «suo padre» and «sua madre» both belong to Marco.",
         "exemplos": [
           {
             "ru": "Mio padre è medico",
@@ -114,14 +114,14 @@
         ],
         "erros": [
           {
-            "errado": "Mio padre è un medico",
-            "certo": "Mio padre è medico",
-            "motivo": "No article before a job after «essere»."
+            "errado": "i mio genitori",
+            "certo": "i miei genitori",
+            "motivo": "Plural: «miei», not «mio». «Genitori» is plural, so the possessive agrees."
           },
           {
-            "errado": "Come si chiama",
-            "certo": "Come si chiamano",
-            "motivo": "With a plural subject («i tuoi genitori»), the verb is «si chiamano»."
+            "errado": "unico figlio",
+            "certo": "figlio unico",
+            "motivo": "English puts «only» first: «only child». In Italian, «unico figlio» means the one and only son; the set phrase «only child» is «figlio unico»."
           }
         ],
         "tag": "Family"
@@ -158,14 +158,14 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "Which sentence is correct?",
+            "enunciado": "Which sentence states the job in the usual neutral way, with no article?",
             "opcoes": [
               "Mio padre è un medico.",
               "Mio padre è medico.",
               "Mio padre ha medico."
             ],
             "gabarito": "Mio padre è medico.",
-            "explicacao": "No article before a job after «essere».",
+            "explicacao": "A plain job after «essere» normally takes no article.",
             "id": "it-007-e03"
           },
           {

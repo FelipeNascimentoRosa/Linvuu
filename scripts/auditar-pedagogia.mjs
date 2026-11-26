@@ -100,6 +100,38 @@ function auditarAudio(id) {
   return { botoes, textos: alvo.size, comPublico, comPrivado, semMp3, semMp3ForaDoCsv: foraDoCsv, semMp3PorOrigem: porOrigem, semMp3Gratis: faltam.filter((x) => x.aula <= 2).length, csvLinhas: csv.length, csvHashRuim: hashRuim, faltam };
 }
 
+// ── rigor determinístico (nunca depender de olho humano): opções duplicadas, gabarito ausente, pares erro↔certo assimétricos,
+// respellings fonéticos ambíguos para falantes de inglês. Falha só com --rigor, e só em it/en (curso curado).
+const normOpc = (x) => String(x ?? '').normalize('NFC').replace(/\s+/g, ' ').replace(/[.!?¿¡\s]+$/u, '').trim();
+const nPal = (x) => String(x ?? '').trim().split(/\s+/).filter(Boolean).length;
+const RESPELL_AMBIGUO = new Set(['lia', 'lly', 'lye', 'che', 'chi', 'gli', 'gn']); // «par-LIA-mo», «ma-LLY», «KEH» escrito «che»: um anglófono lê outro som
+const TOKEN_RESPELL = /[A-Za-z]+(?:-[A-Za-z]+)+/g;
+function rigorDoDia(d) {
+  const out = [];
+  for (const b of d.sessao?.blocos ?? []) {
+    if (b.tipo === 'exercicios') for (const i of b.itens ?? []) {
+      if (!Array.isArray(i.opcoes)) continue;
+      const vistos = new Map();
+      for (const o of i.opcoes) { const k = normOpc(o); if (vistos.has(k)) out.push({ tipo: 'opcao-duplicada', id: i.id, texto: String(o) }); vistos.set(k, 1); }
+      if (i.tipo !== 'sentence-ordering' && i.gabarito !== undefined && !vistos.has(normOpc(i.gabarito))) out.push({ tipo: 'gabarito-ausente', id: i.id, texto: String(i.gabarito) });
+      if (i.opcoes.length < 2) out.push({ tipo: 'poucas-opcoes', id: i.id, texto: String(i.opcoes.length) });
+    }
+    if (b.tipo === 'gramatica') {
+      const vistosE = new Set();
+      for (const e of b.erros ?? []) {
+        const ne = normOpc(e.errado), nc = normOpc(e.certo);
+        if (!ne || !nc || ne === nc) out.push({ tipo: 'erro-igual-ao-certo', texto: `${e.errado} → ${e.certo}` });
+        if (vistosE.has(ne)) out.push({ tipo: 'erro-repetido', texto: String(e.errado) }); vistosE.add(ne);
+        if (Math.abs(nPal(e.errado) - nPal(e.certo)) > 2) out.push({ tipo: 'erro-assimetrico', texto: `${e.errado} → ${e.certo}` });
+      }
+    }
+    for (const { s } of folhas(b)) for (const m of s.matchAll(TOKEN_RESPELL)) if (m[0].split('-').some((p) => RESPELL_AMBIGUO.has(p.toLowerCase())) && /[A-Z]/.test(m[0]) && /[a-z]/.test(m[0])) out.push({ tipo: 'respelling-ambiguo', texto: m[0] });
+  }
+  return out;
+}
+const ABS_EN = /\b(always|never|every|only)\b/gi;
+const contarAbsolutos = (d) => { let n = 0; for (const b of d.sessao?.blocos ?? []) if (b.tipo === 'gramatica') for (const t of [b.explicacao, b.comparacao, ...(b.erros ?? []).map((e) => e.motivo)]) n += (semCitacoes(String(t ?? '')).match(ABS_EN) ?? []).length; return n; };
+
 // ── auditoria de um lado (curso × língua) ──────────────────────────────────────────────────────────────────────
 const media = (a) => (a.length ? a.reduce((x, y) => x + y, 0) / a.length : 0);
 const f1 = (x) => (Math.round(x * 10) / 10).toString();
@@ -111,8 +143,8 @@ function auditarLado(id, lingua) {
   const arquivos = diasDe(dirDias).map((f) => ({ f, caminho: path.join(dirDias, f), tipo: 'dia' }));
   const gram = path.join(raiz, 'content', 'gramatica', lingua === 'en' ? `${id}.en.json` : `${id}.json`);
   if (existe(gram)) arquivos.push({ f: path.basename(gram), caminho: gram, tipo: 'gramatica' });
-  const r = { curso: id, lingua, sessoes: arquivos.filter((a) => a.tipo === 'dia').length, topicos: 0, vazamentos: 0, refsPt: 0, audioIdiomaErrado: 0, placeholders: 0, glosasVazias: 0, glosasPt: 0, absolutos: 0, duplicadas: 0, refsBr: 0, espelhoDias: [],
-    prof: { gramIni: [], gramFim: [], itensIni: [], itensFim: [] }, achados: { vazamento: [], refPt: [], glosaVazia: [], glosaPt: [], placeholder: [], absoluto: [], duplicada: [], audioIdiomaErrado: [], refBr: [] }, rasos: [] };
+  const r = { curso: id, lingua, sessoes: arquivos.filter((a) => a.tipo === 'dia').length, topicos: 0, vazamentos: 0, refsPt: 0, audioIdiomaErrado: 0, placeholders: 0, glosasVazias: 0, glosasPt: 0, absolutos: 0, duplicadas: 0, refsBr: 0, espelhoDias: [], rigor: 0, absolutosPorDia: {},
+    prof: { gramIni: [], gramFim: [], itensIni: [], itensFim: [] }, achados: { vazamento: [], refPt: [], glosaVazia: [], glosaPt: [], placeholder: [], absoluto: [], duplicada: [], audioIdiomaErrado: [], refBr: [], rigor: [] }, rasos: [] };
   const vistas = new Map(); // prosa longa -> arquivos
   for (const a of arquivos) {
     const d = ler(a.caminho);
@@ -139,11 +171,13 @@ function auditarLado(id, lingua) {
       if (esperada === 'en' && id !== 'br' && chave !== 'enunciado' && /portuguese|portugu[eê]s/i.test(limpo) && !/^\s*\(?portuguese\)?\s*$/i.test(limpo) && !/\b(speak|spoke|study|studying|learn|know)\b[^.?!]{0,40}portuguese/i.test(limpo)) { r.refsPt++; /* «Do you speak Portuguese?» traduz uma fala do diálogo italiano: conteúdo, não comparação */ r.achados.refPt.push({ arquivo: a.f, caminho, texto: s.slice(0, 110) }); }
       if (vaza) { r.vazamentos++; r.achados.vazamento.push({ arquivo: a.f, caminho, texto: s.slice(0, 110) }); }
       if (!CHAVES_EXPLICACAO.has(chave)) continue;
-      if (lingua === 'en' && id !== 'br' && a.tipo !== 'gramatica' || lingua === 'en' && id !== 'br' && esperada === 'en') { if (/brazil(ian)?s?/i.test(limpo)) { r.refsBr++; if (r.achados.refBr.length < 40) r.achados.refBr.push({ arquivo: a.f, caminho, texto: s.slice(0, 110) }); } }
+      if (lingua === 'en' && id !== 'br' && a.tipo !== 'gramatica' || lingua === 'en' && id !== 'br' && esperada === 'en') { if (/\bbrazil(ian)?s?\b/i.test(limpo)) { r.refsBr++; if (r.achados.refBr.length < 40) r.achados.refBr.push({ arquivo: a.f, caminho, texto: s.slice(0, 110) }); } }
       for (const m of limpo.matchAll(ABSOLUTOS)) { r.absolutos++; if (r.achados.absoluto.length < 400) r.achados.absoluto.push({ arquivo: a.f, termo: m[0].toLowerCase(), texto: limpo.slice(Math.max(0, m.index - 30), m.index + 50) }); }
       if (pal.length >= 12) { const k = limpo.toLowerCase().replace(/\s+/g, ' ').trim(); if (!vistas.has(k)) vistas.set(k, new Set()); vistas.get(k).add(a.f); }
     }
     if (a.tipo === 'dia') {
+      for (const x of rigorDoDia(d)) { r.rigor++; if (r.achados.rigor.length < 200) r.achados.rigor.push({ arquivo: a.f, ...x }); }
+      if (lingua === 'en') { const n = contarAbsolutos(d); if (n) r.absolutosPorDia[a.f] = n; }
       if (lingua === 'en' && id !== 'br') { const ptDia = path.join(raiz, 'content', 'idiomas', id, a.f); if (existe(ptDia) && assinatura(d) === assinatura(ler(ptDia))) r.espelhoDias.push(Number(a.f.match(/\d+/)[0])); }
       for (const b of d.sessao?.blocos ?? []) {
         // itens = o que o aluno percorre: itens, exemplos, falas, perguntas e linhas de tabela (sessões de revisão têm só tabelas).
@@ -188,10 +222,10 @@ if (jsonOpt) { const s = JSON.stringify(relatorio, null, 1) + '\n'; if (typeof j
 else {
   const pad = (x, n) => String(x).padEnd(n), padL = (x, n) => String(x).padStart(n);
   console.log(`Fonte do áudio: índices públicos (public/audio/<id>/index.json e v2) + ${privadoDisponivel ? `clone privado em ${dirPrivado}` : usaManifesto ? `manifesto de hashes do áudio pago (content/audio-privado-manifesto.json: ${Object.values(manifesto.idiomas).reduce((n, h) => n + h.length, 0)} hashes)` : 'clone privado NÃO encontrado (use --audio-privado <dir>); botões pagos contam como sem MP3'}.`);
-  console.log(`${pad('Curso', 6)}${pad('Lado', 5)}${padL('Sess', 5)}${padL('Vaza', 6)}${padL('Gram ini→fim', 14)}${padL('Itens/dia ini→fim', 19)}${padL('Dup', 5)}${padL('Placeh', 7)}${padL('RefPT', 7)}${padL('GlsVaz', 7)}${padL('GlsPT', 6)}${padL('Absol', 7)}${padL('AudErr', 7)}${padL('Espelho', 10)}${padL('BrRef', 6)}  Áudio (únicos: pub+priv / sem MP3)`);
+  console.log(`${pad('Curso', 6)}${pad('Lado', 5)}${padL('Sess', 5)}${padL('Vaza', 6)}${padL('Gram ini→fim', 14)}${padL('Itens/dia ini→fim', 19)}${padL('Dup', 5)}${padL('Placeh', 7)}${padL('RefPT', 7)}${padL('GlsVaz', 7)}${padL('GlsPT', 6)}${padL('Absol', 7)}${padL('AudErr', 7)}${padL('Espelho', 10)}${padL('Rigor', 6)}${padL('BrRef', 6)}  Áudio (únicos: pub+priv / sem MP3)`);
   for (const l of lados) {
     const a = audio[l.curso]; const aud = l.lingua === 'pt' || soLingua ? `${a.textos}: ${a.comPublico}+${a.comPrivado} / ${a.semMp3} (grátis ${a.semMp3Gratis})` : '(igual ao lado pt)';
-    console.log(`${pad(l.curso, 6)}${pad(l.lingua, 5)}${padL(l.sessoes, 5)}${padL(l.vazamentos, 6)}${padL(`${f1(media(l.prof.gramIni))}→${f1(media(l.prof.gramFim))}`, 14)}${padL(`${f1(media(l.prof.itensIni))}→${f1(media(l.prof.itensFim))}`, 19)}${padL(l.duplicadas, 5)}${padL(l.placeholders, 7)}${padL(l.refsPt, 7)}${padL(l.glosasVazias, 7)}${padL(l.glosasPt, 6)}${padL(l.absolutos, 7)}${padL(l.audioIdiomaErrado, 7)}${padL(l.lingua === 'en' && l.curso !== 'br' ? `${l.espelhoDias.length}/${l.sessoes}` : '—', 10)}${padL(l.lingua === 'en' && l.curso !== 'br' ? l.refsBr : '—', 6)}  ${aud}`);
+    console.log(`${pad(l.curso, 6)}${pad(l.lingua, 5)}${padL(l.sessoes, 5)}${padL(l.vazamentos, 6)}${padL(`${f1(media(l.prof.gramIni))}→${f1(media(l.prof.gramFim))}`, 14)}${padL(`${f1(media(l.prof.itensIni))}→${f1(media(l.prof.itensFim))}`, 19)}${padL(l.duplicadas, 5)}${padL(l.placeholders, 7)}${padL(l.refsPt, 7)}${padL(l.glosasVazias, 7)}${padL(l.glosasPt, 6)}${padL(l.absolutos, 7)}${padL(l.audioIdiomaErrado, 7)}${padL(l.lingua === 'en' && l.curso !== 'br' ? `${l.espelhoDias.length}/${l.sessoes}` : '—', 10)}${padL(l.lingua === 'en' ? l.rigor : '—', 6)}${padL(l.lingua === 'en' && l.curso !== 'br' ? l.refsBr : '—', 6)}  ${aud}`);
   }
   console.log('\nMapa de tradução para inglês (explicações de aulas com mapa):');
   for (const [id, v] of Object.entries(i18n)) console.log(`  ${pad(id, 4)} aulas ${padL(v.aulas, 3)} | com mapa EN ${padL(v.aulasComMapaEn, 3)} | explicações traduzidas ${padL(v.explicacoesNoMapa, 5)} | sem tradução ${padL(v.explicacoesSemTraducao, 4)}`);
@@ -225,5 +259,12 @@ if (args.includes('--espelho')) {
   }
   if (violacoesEspelho.length) { console.error('ESPELHO — catraca anti-tradução 1:1:\n' + violacoesEspelho.join('\n')); process.exit(1); }
   console.log('espelho: ok (nenhum dia novo espelha o PT-BR; sem aumento de menções a Brazil)');
+}
+if (args.includes('--absolutos')) { for (const l of lados.filter((x) => x.lingua === 'en')) { const dias = Object.entries(l.absolutosPorDia); console.log(`
+Absolutos (always/never/every/only) na gramática, por dia — ${l.curso}/en: ${dias.length} dia(s)`); for (const [f, n] of dias) console.log(`  ${f}: ${n}`); } }
+if (args.includes('--rigor')) {
+  const ruins = lados.filter((l) => l.lingua === 'en' && ['it'].includes(l.curso) && l.rigor); // só cursos curados nativos; a lista cresce com cada curso refeito
+  if (ruins.length) { for (const l of ruins) for (const x of l.achados.rigor.slice(0, 60)) console.error(`RIGOR ${l.curso}/en ${x.arquivo} [${x.tipo}] ${x.id ?? ''} ${x.texto}`); console.error(`RIGOR: ${ruins.reduce((n, l) => n + l.rigor, 0)} achado(s) em curso nativo.`); process.exit(1); }
+  console.log('rigor: ok (0 opções duplicadas, 0 gabaritos ausentes, 0 pares assimétricos, 0 respellings ambíguos em it/en)');
 }
 if (falhar && (lados.some((l) => l.placeholders) || Object.values(audio).some((v) => v.semMp3))) process.exit(1);

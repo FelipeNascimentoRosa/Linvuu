@@ -53,7 +53,7 @@
           {
             "personagem": "Giulia",
             "ru": "— Sono i miei fratelli, Luca e Sara.",
-            "pt": "— They are my brothers, Luca and Sara.",
+            "pt": "— They are my siblings, Luca and Sara.",
             "audio": "Sono i miei fratelli, Luca e Sara."
           },
           {
@@ -116,7 +116,7 @@
         "tipo": "gramatica",
         "min": 9,
         "titulo": "Possessives agree with the thing, not the owner",
-        "explicacao": "STEP 1: the possessive adjectives are «mio, tuo, suo, nostro, vostro, loro». They agree in gender and number with the thing owned, not with the owner: «il mio libro», «la mia casa», «i miei amici», «le mie amiche». STEP 2: the forms of «mio»: «mio, mia, miei, mie». «Tuo» and «suo» work the same: «tuo, tua, tuoi, tue». STEP 3: unlike English, the possessive normally takes the definite article: «il mio libro», literally «the my book». STEP 4: the exception is the singular family noun without an adjective: no article, «mio padre», «mia madre», «tuo fratello», «sua sorella». But «la mia mamma» and «il mio papà» keep the article, and so does the plural: «i miei fratelli», «le mie sorelle». STEP 5: «loro» (their) never changes and always has the article, even for family: «la loro madre». STEP 6: «suo» means «his», «her» and «your (formal)»: it agrees with the thing, and the context tells you whose it is. «Marco ama sua madre» and «Giulia ama sua madre» are the same Italian sentence. STEP 7: «di chi è?» asks «whose is it?». The answer is «è mio» (it is mine) or «è di Marco» (it is Marco's). STEP 8: for «whose are they?», use «di chi sono?».",
+        "explicacao": "STEP 1: the possessive adjectives are «mio, tuo, suo, nostro, vostro, loro». All of them except «loro» agree in gender and number with the thing owned, not with the owner: «il mio libro», «la mia casa», «i miei amici», «le mie amiche». STEP 2: the forms of «mio»: «mio, mia, miei, mie». «Tuo» and «suo» work the same: «tuo, tua, tuoi, tue». STEP 3: unlike English, the possessive normally takes the definite article: «il mio libro», literally «the my book». STEP 4: the exception is the singular family noun without an adjective: no article, «mio padre», «mia madre», «tuo fratello», «sua sorella». But «la mia mamma» and «il mio papà» usually keep the article, and so does the plural: «i miei fratelli», «le mie sorelle». The article also returns when the noun has an adjective or an ending such as «-ina»: «il mio caro padre», «la mia sorellina». STEP 5: «loro» (their) never changes and always has the article, even for family: «la loro madre». STEP 6: «suo» means «his», «her» and «your (formal)»: it agrees with the thing, and the context tells you whose it is. «Marco ama sua madre» and «Giulia ama sua madre» are the same Italian sentence. STEP 7: «di chi è?» asks «whose is it?». The answer is «è mio» (it is mine) or «è di Marco» (it is Marco's). STEP 8: for «whose are they?», use «di chi sono?».",
         "comparacao": "English possessives follow the owner: «his sister», «her sister». Italian possessives follow the thing: «sua sorella» works for both. This means that two English sentences collapse into one Italian sentence: «his house» and «her house» are both «la sua casa». Also, remember the article: English says «my book», Italian says «the my book».",
         "exemplos": [
           {
@@ -205,7 +205,7 @@
             "opcoes": [
               "la mia sorella",
               "mia sorella",
-              "il mio sorella"
+              "mio sorella"
             ],
             "gabarito": "mia sorella",
             "explicacao": "No article with a singular family member.",
@@ -227,12 +227,12 @@
             "tipo": "multiple-choice",
             "enunciado": "«Sua madre» can mean:",
             "opcoes": [
-              "his mother only",
-              "her mother only",
-              "his, her or your (formal) mother"
+              "his mother, never hers",
+              "her mother, never his",
+              "his or her mother, by context"
             ],
-            "gabarito": "his, her or your (formal) mother",
-            "explicacao": "«Suo» follows the thing, not the owner.",
+            "gabarito": "his or her mother, by context",
+            "explicacao": "«Suo» follows the thing, not the owner: it can mean his, her or your (formal).",
             "id": "it-007-e05"
           },
           {

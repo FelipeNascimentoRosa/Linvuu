@@ -100,8 +100,8 @@
         "tipo": "gramatica",
         "min": 10,
         "titulo": "«Dov'è…?» and the words of place",
-        "explicacao": "STEP 1: to ask where something is, use «Dov'è…?» (where is) for one thing and «Dove sono…?» for several: «Dov'è la stazione?». STEP 2: the answer uses «essere» or «trovarsi»: «La banca è vicino alla posta». STEP 3: Italian place words usually carry a small preposition after them: «vicino a» (near), «lontano da» (far from), «davanti a» (in front of), «dietro a» (behind), «accanto a» (next to), «di fronte a» (opposite), «in fondo a» (at the end of). English says «near the station» with nothing between, but Italian needs the «a»: «vicino alla stazione». STEP 4: when an article follows, the preposition merges with it (lesson 10): «vicino alla posta», «davanti al museo». STEP 5: «in centro» (in the town center) has no article. «Il centro» means «the center»: «Vado in centro». STEP 6: false friends: «la posta» is the post office and the mail, not «the post»; «l'ospedale» is the hospital; «la farmacia» is the pharmacy; «il supermercato» is a supermarket; «la chiesa» is a church; «il museo» is a museum; «la piazza» is a square. STEP 7: «vicino» also works as an adverb, with no object: «C'è una farmacia vicino» (There is a pharmacy nearby).",
-        "comparacao": "English «near the post office» is three words; Italian «vicino alla posta» also has three, but the middle one is the preposition «a», merged with the article. The most common mistake is to forget it («vicino la posta»). Note also the false friend «posta»: it is the post office and the mail, not the person who delivers.",
+        "explicacao": "STEP 1: to ask where something is, use «Dov'è…?» (where is) for one thing and «Dove sono…?» for several: «Dov'è la stazione?». STEP 2: the answer uses «essere» or «trovarsi»: «La banca è vicino alla posta». STEP 3: Italian place words usually carry a small preposition after them: «vicino a» (near), «lontano da» (far from), «davanti a» (in front of), «dietro a» (behind), «accanto a» (next to), «di fronte a» (opposite), «in fondo a» (at the end of). English says «near the station» with nothing between, but standard Italian needs the «a»: «vicino alla stazione». STEP 4: when an article follows, the preposition merges with it (lesson 10): «vicino alla posta», «davanti al museo». STEP 5: «in centro» (in the town center) has no article. «Il centro» means «the center»: «Vado in centro». STEP 6: watch the false friend «la posta»: it is the post office and also the mail, not «the post». Most of the other words look like their English cousins («ospedale», «farmacia», «museo»), and «la piazza» is the open square at the heart of a town. STEP 7: «vicino» also works as an adverb, with no object: «C'è una farmacia vicino» (There is a pharmacy nearby).",
+        "comparacao": "English «near the post office» has no word between «near» and «the»; Italian «vicino alla posta» needs the preposition «a», merged with the article. The most common mistake is to forget it («vicino la posta»): you may hear that in casual speech, but standard Italian keeps the «a». Note also the false friend «posta»: it is the post office and the mail, not the person who delivers.",
         "exemplos": [
           {
             "ru": "Dov'è la stazione",
@@ -130,7 +130,7 @@
           {
             "errado": "La banca è vicino la posta",
             "certo": "La banca è vicino alla posta",
-            "motivo": "«Vicino» needs «a»: «vicino a» + article."
+            "motivo": "Standard Italian keeps the «a»: «vicino a» + article."
           },
           {
             "errado": "La banca è vicino a la posta",
@@ -138,9 +138,9 @@
             "motivo": "Merge «a» + «la» into «alla»."
           },
           {
-            "errado": "Dove è la stazione",
+            "errado": "Dove sono la stazione",
             "certo": "Dov'è la stazione",
-            "motivo": "«Dove è» becomes «dov'è»."
+            "motivo": "One place takes «dov'è»; «dove sono» is for several."
           }
         ],
         "tag": "Places"
@@ -181,7 +181,7 @@
             "audio": "Dov'è la stazione",
             "opcoes": [
               "Dov'è la stazione",
-              "Dove è la stazione",
+              "Dove sono le stazioni",
               "Dove sono la stazione"
             ],
             "gabarito": "Dov'è la stazione",
@@ -206,8 +206,8 @@
             "enunciado": "What is «il centro»?",
             "opcoes": [
               "the town center",
-              "the center of a circle only",
-              "a shopping center"
+              "a shopping mall",
+              "the central station"
             ],
             "gabarito": "the town center",
             "explicacao": "«In centro» means «downtown».",
@@ -215,7 +215,7 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "Which preposition goes with «vicino»?",
+            "enunciado": "Which preposition goes after «vicino» in «near the station»?",
             "opcoes": [
               "a",
               "da",

@@ -139,8 +139,8 @@
         "tipo": "gramatica",
         "min": 10,
         "titulo": "Saying the date: «il 15 maggio»",
-        "explicacao": "STEP 1: the date is written in the order day, month: «il 15 maggio». English can say «May 15th» or «15 May». STEP 2: the article «il» comes before the day number: «il 15 maggio», «il 7 ottobre». STEP 3: the day is a normal number, not an ordinal. English says «the fifteenth», but Italian says «il quindici». From the 2nd to the 31st, use the cardinal number: «il due maggio», «il venticinque maggio». The 1st is the exception: it takes the ordinal «primo», and you do not say «l'uno maggio»: «il primo maggio». STEP 4: months are written in lowercase: «maggio», not «Maggio». English capitalizes them. STEP 5: the preposition «di» is not needed: «il 15 maggio», not «il 15 di maggio» (although the long form exists, it is rare). STEP 6: to say a date in a sentence with the weekday, say «il 15 maggio è un giovedì». STEP 7: to say «in May», use «a maggio» or «in maggio»: both appear, but «a maggio» is more common in conversation. STEP 8: pronunciation: «maggio» is MAHD-joh, with a double «g» that sounds like «dj». «Agosto» has a hard «g». STEP 9: «gennaio» and «febbraio» are easy to mix up: «gennaio» has a double «n» and starts with «jehn».",
-        "comparacao": "English dates are full of ordinals («the fifteenth of May») and capital letters. Italian drops both: cardinal numbers and lowercase. The weekday is optional, and the article «il» must stay. That small «il» is the difference between «il 15 maggio» and the broken «15 maggio».",
+        "explicacao": "STEP 1: the date is written in the order day, month: «il 15 maggio». English can say «May 15th» or «15 May». STEP 2: the article «il» comes before the day number: «il 15 maggio», «il 7 ottobre». STEP 3: the day is a normal number, not an ordinal. English says «the fifteenth», but Italian says «il quindici». From the 2nd to the 31st, use the cardinal number: «il due maggio», «il venticinque maggio». The 1st is the exception: it takes the ordinal «primo», and you do not say «l'uno maggio»: «il primo maggio». STEP 4: months are written in lowercase: «maggio», not «Maggio». English capitalizes them. STEP 5: the preposition «di» is not needed: «il 15 maggio», not «il 15 di maggio» (although the long form exists, it is rare). STEP 6: to say a date in a sentence with the weekday, say «il 15 maggio è un giovedì». STEP 7: to say «in May», use «a maggio» or «in maggio»: both are correct. STEP 8: pronunciation: «maggio» is MAHD-joh, with a double «g» that sounds like «dj». «Agosto» has a hard «g». STEP 9: some months sound alike to English ears: «giugno» (JOON-nyoh) and «luglio» (LOO-lyoh), and «marzo» (MAHR-tsoh) and «maggio» (MAHD-joh). «Gennaio» (jehn-NAH-yoh) has a double «n».",
+        "comparacao": "English dates are full of ordinals («the fifteenth of May») and capital letters. Italian drops both: cardinal numbers (except «primo») and lowercase. The weekday is optional, and the article «il» must stay. In a sentence, that small «il» is what makes the date sound right: «è il 15 maggio».",
         "exemplos": [
           {
             "ru": "Il compleanno è il 15 maggio",
@@ -171,9 +171,9 @@
         ],
         "erros": [
           {
-            "errado": "Il compleanno è 15 maggio",
+            "errado": "Il compleanno è al 15 maggio",
             "certo": "Il compleanno è il 15 maggio",
-            "motivo": "The date needs the article «il»."
+            "motivo": "English «on» does not become «al» here: the date takes «il»."
           },
           {
             "errado": "Il compleanno è il 15 Maggio",
@@ -225,7 +225,7 @@
             "opcoes": [
               "agosto",
               "aprile",
-              "agosto."
+              "luglio"
             ],
             "gabarito": "agosto",
             "explicacao": "August: the «g» is hard.",
@@ -233,11 +233,11 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "How do you write «May»?",
+            "enunciado": "How do you write «May» in the middle of a sentence?",
             "opcoes": [
               "maggio",
               "Maggio",
-              "mayo"
+              "magio"
             ],
             "gabarito": "maggio",
             "explicacao": "Lowercase, with the double «g».",
@@ -247,11 +247,11 @@
             "tipo": "multiple-choice",
             "enunciado": "Which sentence is correct?",
             "opcoes": [
-              "Il compleanno è 15 maggio.",
-              "Il compleanno è il 15 maggio",
+              "Il compleanno è al 15 maggio.",
+              "Il compleanno è il 15 maggio.",
               "Il compleanno è il quindicesimo maggio."
             ],
-            "gabarito": "Il compleanno è il 15 maggio",
+            "gabarito": "Il compleanno è il 15 maggio.",
             "explicacao": "The date takes «il» and a normal number.",
             "id": "it-009-e05"
           },
@@ -272,8 +272,8 @@
             "enunciado": "What is the Italian for «the first of May»?",
             "opcoes": [
               "il primo maggio",
-              "il uno maggio",
-              "il primero maggio"
+              "l'uno maggio",
+              "il uno maggio"
             ],
             "gabarito": "il primo maggio",
             "explicacao": "The only ordinal is «primo».",
@@ -289,7 +289,7 @@
       {
         "tipo": "revisao",
         "min": 1,
-        "enunciado": "Say the twelve months aloud and mark the stress. Which two are easy to mix up?"
+        "enunciado": "Say the twelve months aloud and mark the stress. Which pairs of months sound alike to English ears?"
       }
     ]
   },
