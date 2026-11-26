@@ -114,19 +114,19 @@
         ],
         "erros": [
           {
-            "errado": "I miei parenti sono Paolo e Anna.",
-            "certo": "I miei genitori sono Paolo e Anna.",
+            "errado": "i miei parenti",
+            "certo": "i miei genitori",
             "motivo": "«Parenti» means relatives. Your parents are «i genitori»."
           },
           {
-            "errado": "Il nono è simpatico.",
-            "certo": "Il nonno è simpatico.",
+            "errado": "il nono",
+            "certo": "il nonno",
             "motivo": "«Nono» (ninth) is a different word: keep the double «n»."
           },
           {
-            "errado": "Le nonni sono simpatici.",
-            "certo": "I nonni sono simpatici.",
-            "motivo": "A group of grandfather and grandmother takes the masculine plural."
+            "errado": "il papa",
+            "certo": "il papà",
+            "motivo": "The accent on «papà» is part of the spelling; «papa» is the Pope."
           }
         ],
         "tag": "Family"
@@ -145,7 +145,7 @@
               "le famiglie"
             ],
             "gabarito": "la famiglia",
-            "explicacao": "«Gli» sounds like «lly» in «million».",
+            "explicacao": "«Gli» sounds like «lli» in «million».",
             "id": "it-007-e01"
           },
           {

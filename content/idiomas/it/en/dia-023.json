@@ -114,19 +114,19 @@
         ],
         "erros": [
           {
-            "errado": "Sono fame.",
-            "certo": "Ho fame.",
+            "errado": "sono fame",
+            "certo": "ho fame",
             "motivo": "Physical states use «avere», not «essere»."
           },
           {
-            "errado": "Sono molto freddo.",
-            "certo": "Ho molto freddo.",
+            "errado": "Sono freddo",
+            "certo": "Ho freddo",
             "motivo": "«Sono freddo» says you are a cold person. Use «ho freddo»."
           },
           {
-            "errado": "Ho caldo, metto il cappotto.",
-            "certo": "Ho freddo, metto il cappotto.",
-            "motivo": "«Caldo» is hot, not cold. Do not let the English «cold» pull you."
+            "errado": "Ho molto sete",
+            "certo": "Ho molta sete",
+            "motivo": "«Sete» is feminine: «molta»."
           }
         ],
         "tag": "Avere"

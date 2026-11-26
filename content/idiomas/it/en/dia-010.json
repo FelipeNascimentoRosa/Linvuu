@@ -124,19 +124,19 @@
         ],
         "erros": [
           {
-            "errado": "Sono Italiano.",
-            "certo": "Sono italiano.",
+            "errado": "l'Italia, Italiano",
+            "certo": "l'Italia, italiano",
             "motivo": "Nationalities are written in lowercase in Italian."
           },
           {
-            "errado": "Lei è americano.",
-            "certo": "Lei è americana.",
-            "motivo": "The adjective agrees with a woman: «americana»."
+            "errado": "la Francia, francesa",
+            "certo": "la Francia, francese",
+            "motivo": "Adjectives in «-e» have no form in «-a»."
           },
           {
-            "errado": "Sono francesa.",
-            "certo": "Sono francese.",
-            "motivo": "Adjectives in «-e» have no «-a» form."
+            "errado": "Italia, italiano",
+            "certo": "l'Italia, italiano",
+            "motivo": "As a bare name, most countries take the article: «l'Italia». After «in», it drops: «in Italia»."
           }
         ],
         "tag": "Countries"

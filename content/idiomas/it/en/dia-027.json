@@ -114,19 +114,14 @@
         ],
         "erros": [
           {
-            "errado": "Mio padre è un medico.",
-            "certo": "Mio padre è medico.",
+            "errado": "Mio padre è un medico",
+            "certo": "Mio padre è medico",
             "motivo": "No article before a job after «essere»."
           },
           {
-            "errado": "Come si chiama i tuoi genitori?",
-            "certo": "Come si chiamano i tuoi genitori?",
-            "motivo": "The verb agrees with the plural: «si chiamano»."
-          },
-          {
-            "errado": "Ho una figlio unico.",
-            "certo": "Sono figlio unico.",
-            "motivo": "Say «sono figlio unico» (I am an only child)."
+            "errado": "Come si chiama",
+            "certo": "Come si chiamano",
+            "motivo": "With a plural subject («i tuoi genitori»), the verb is «si chiamano»."
           }
         ],
         "tag": "Family"

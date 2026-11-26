@@ -126,19 +126,19 @@
         ],
         "erros": [
           {
-            "errado": "Io sono parlando italiano.",
-            "certo": "Parlo italiano.",
-            "motivo": "There is no «am + -ing» form to copy: the Italian present already means «I am speaking»."
+            "errado": "Siamo parlando italiano",
+            "certo": "Parliamo italiano",
+            "motivo": "There is no «are + -ing» form to copy: the Italian present already means «we are speaking»."
           },
           {
-            "errado": "Parlono italiano.",
-            "certo": "Parlano italiano.",
-            "motivo": "The «they» ending is «-ano», not «-ono», in verbs in «-are»."
-          },
-          {
-            "errado": "Parlamo italiano.",
-            "certo": "Parliamo italiano.",
+            "errado": "Parlamo italiano",
+            "certo": "Parliamo italiano",
             "motivo": "The «we» ending is «-iamo»."
+          },
+          {
+            "errado": "Studamo la sera",
+            "certo": "Studiamo la sera",
+            "motivo": "The stem of «studiare» keeps its «i»: «studi-» + «-amo»."
           }
         ],
         "tag": "Present tense"
@@ -171,19 +171,14 @@
         ],
         "erros": [
           {
-            "errado": "Mangii la pasta.",
-            "certo": "Mangi la pasta.",
-            "motivo": "Two «i» in a row are not needed: the «i» of the verb stem already softens the «g»."
+            "errado": "mangare",
+            "certo": "mangiare",
+            "motivo": "Keep the «i» in «mangiare»: it makes the «g» soft."
           },
           {
-            "errado": "Cerci un libro.",
-            "certo": "Cerchi un libro.",
-            "motivo": "Add «h» to keep the hard «k» sound before «i»."
-          },
-          {
-            "errado": "Ascolto a la radio.",
-            "certo": "Ascolto la radio.",
-            "motivo": "«Ascoltare» already includes the idea of «to»."
+            "errado": "studare",
+            "certo": "studiare",
+            "motivo": "The verb is spelled «studiare», with «i»."
           }
         ],
         "tag": "Present tense"

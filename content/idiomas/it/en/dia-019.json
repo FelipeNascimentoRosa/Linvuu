@@ -114,19 +114,19 @@
         ],
         "erros": [
           {
-            "errado": "Ci è un bar.",
-            "certo": "C'è un bar.",
-            "motivo": "«Ci è» contracts to «c'è»."
+            "errado": "ci è",
+            "certo": "c'è",
+            "motivo": "«Ci» + «è» contracts to «c'è»."
           },
           {
-            "errado": "Ci sono un bar.",
-            "certo": "C'è un bar.",
-            "motivo": "One thing: «c'è»."
+            "errado": "C'è due bar",
+            "certo": "Ci sono due bar",
+            "motivo": "More than one thing: «ci sono»."
           },
           {
-            "errado": "È una farmacia vicino a casa.",
-            "certo": "C'è una farmacia vicino a casa.",
-            "motivo": "«È» says what something is; «c'è» says it exists."
+            "errado": "Non è una banca",
+            "certo": "Non c'è una banca",
+            "motivo": "«Non è una banca» says it is not a bank; to say there is no bank, use «non c'è»."
           }
         ],
         "tag": "There is / there are"

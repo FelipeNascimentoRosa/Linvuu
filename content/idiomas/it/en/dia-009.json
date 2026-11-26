@@ -92,7 +92,7 @@
           {
             "ru": "Piacere",
             "translit": "pyah-CHEH-reh",
-            "pt": "pleased to meet you (not «please»!)",
+            "pt": "pleased to meet you (on its own, not «please»)",
             "en": "",
             "audio": "Piacere"
           },
@@ -140,8 +140,8 @@
         ],
         "erros": [
           {
-            "errado": "Io chiamo Ana.",
-            "certo": "Mi chiamo Ana.",
+            "errado": "Io chiamo Ana",
+            "certo": "Mi chiamo Ana",
             "motivo": "Without «mi», «chiamo» means «I call (someone)». The «mi» is the «myself»."
           },
           {
@@ -156,8 +156,8 @@
         "tipo": "gramatica",
         "min": 6,
         "titulo": "«Tu» or «Lei»: two ways to say «you»",
-        "explicacao": "STEP 1: English has one «you» for everybody. Italian chooses between two forms, depending on the relationship. STEP 2: use the informal form («tu») with friends, family, children and people your own age in a relaxed setting: «Come ti chiami?», «Come stai?». STEP 3: use the formal form («Lei») with strangers, older people, and in shops, offices and hotels: «Come si chiama?», «Come sta?». STEP 4: with «Lei» the verb takes the form you would use for «she», and «Lei» is often written with a capital letter when it means «you»: «E Lei?». STEP 5: when in doubt, start formal. Italians will invite you to use «tu» when they are ready. STEP 6: «Piacere» is what you say when you meet someone: it means «pleased to meet you». It is not «please»; for «please» Italian says «per favore». STEP 7: «Sto bene» means «I am well». Use «stare» for how you feel, not «essere»: «Sto bene», not «Sono bene».",
-        "comparacao": "English «you» hides the difference that Italian makes visible, so the choice feels new. A useful parallel is the English jump between «Hey, how are you?» and «Good morning, madam, how do you do?»: Italian puts that switch into the grammar. Also watch the false friend «piacere»: it looks like «pleasure» and works as «pleased to meet you», but it never means «please».",
+        "explicacao": "STEP 1: English has one «you» for everybody. Italian chooses between two forms, depending on the relationship. STEP 2: use the informal form («tu») with friends, family, children and people your own age in a relaxed setting: «Come ti chiami?», «Come stai?». STEP 3: use the formal form («Lei») with strangers, older people, and in shops, offices and hotels: «Come si chiama?», «Come sta?». STEP 4: with «Lei» the verb takes the form you would use for «she», and «Lei» is often written with a capital letter when it means «you»: «E Lei?». STEP 5: when in doubt, start formal. Italians will invite you to use «tu» when they are ready. STEP 6: «Piacere» is what you say when you meet someone: it means «pleased to meet you». On its own it is not «please»; for «please», say «per favore» (or «per piacere»). STEP 7: «Sto bene» means «I am well». Use «stare» for how you feel, not «essere»: «Sto bene», not «Sono bene».",
+        "comparacao": "English «you» hides the difference that Italian makes visible, so the choice feels new. A useful parallel is the English jump between «Hey, how are you?» and «Good morning, madam, how do you do?»: Italian puts that switch into the grammar. Also watch the false friend «piacere»: it looks like «pleasure» and works as «pleased to meet you», but on its own it does not mean «please» (the phrase «per piacere» does).",
         "exemplos": [
           {
             "ru": "Come si chiama?",
@@ -180,9 +180,9 @@
         ],
         "erros": [
           {
-            "errado": "Come ti chiami, signora?",
-            "certo": "Come si chiama, signora?",
-            "motivo": "A stranger you call «signora» gets the formal form."
+            "errado": "Come ti chiami?",
+            "certo": "Come si chiama?",
+            "motivo": "To a stranger or an older person you address as «Lei», use the formal question «Come si chiama?»."
           },
           {
             "errado": "Sono bene, grazie.",
@@ -190,9 +190,9 @@
             "motivo": "Health and mood use «stare», not «essere». English «I am well» is the trap."
           },
           {
-            "errado": "Piacere, per favore.",
-            "certo": "Piacere.",
-            "motivo": "«Piacere» already means «pleased to meet you»; it is not «please»."
+            "errado": "Prego",
+            "certo": "per favore",
+            "motivo": "«Prego» is «you are welcome» or «go ahead», not «please». For «please», say «per favore»."
           }
         ],
         "tag": "Introductions"
@@ -211,7 +211,7 @@
               "Prego"
             ],
             "gabarito": "Piacere",
-            "explicacao": "«Piacere» is what you say on meeting someone. «Per favore» is the real «please».",
+            "explicacao": "«Piacere» is what you say on meeting someone. «Per favore» is the usual «please».",
             "id": "it-003-e01"
           },
           {
@@ -260,7 +260,7 @@
               "You are welcome"
             ],
             "gabarito": "Pleased to meet you",
-            "explicacao": "It looks like «please», but «please» is «per favore».",
+            "explicacao": "It looks like «please», but the usual «please» is «per favore».",
             "id": "it-003-e05"
           },
           {

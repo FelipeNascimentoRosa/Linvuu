@@ -144,18 +144,18 @@
         ],
         "erros": [
           {
-            "errado": "Parlo non tedesco.",
-            "certo": "Non parlo tedesco.",
+            "errado": "Parlo non tedesco",
+            "certo": "Non parlo tedesco",
             "motivo": "«Non» goes before the verb, never after it."
           },
           {
-            "errado": "Mangio mai la pasta.",
-            "certo": "Non mangio mai la pasta.",
+            "errado": "Mangio mai la pasta",
+            "certo": "Non mangio mai la pasta",
             "motivo": "After the verb, «mai» needs «non» before the verb."
           },
           {
-            "errado": "No parlo tedesco.",
-            "certo": "Non parlo tedesco.",
+            "errado": "No parlo tedesco",
+            "certo": "Non parlo tedesco",
             "motivo": "«No» is the answer; «non» is the negation inside the sentence."
           }
         ],
@@ -185,13 +185,8 @@
         ],
         "erros": [
           {
-            "errado": "Sempre parlo piano.",
-            "certo": "Parlo sempre piano.",
-            "motivo": "The adverb usually follows the verb in Italian."
-          },
-          {
-            "errado": "Studio ogni il giorno.",
-            "certo": "Studio ogni giorno.",
+            "errado": "ogni il giorno",
+            "certo": "ogni giorno",
             "motivo": "«Ogni» takes no article."
           }
         ],
