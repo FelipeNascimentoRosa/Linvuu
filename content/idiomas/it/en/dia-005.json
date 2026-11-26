@@ -17,14 +17,14 @@
   },
   "sessao": {
     "sessao": "S1",
-    "titulo": "Essere: to be",
+    "titulo": "Essere: the verb «to be»",
     "duracaoMin": 30,
     "blocos": [
       {
         "tipo": "dialogo",
         "min": 5,
-        "titulo": "Siamo a Roma! / We're in Rome!",
-        "contexto": "Luca and Sara arrive in Rome and meet their friends Marco and Giulia. Listen first. Notice the word that keeps coming back: «sono», «sei», «è», «siamo», «siete».",
+        "titulo": "A Roma / In Rome",
+        "contexto": "Two friends, Giulia and Sara, meet in Rome and talk about how they feel. Listen for the verb «essere» in every line: «sono», «sei», «è», «siamo», «siete».",
         "linhas": [
           {
             "personagem": "Luca",
@@ -41,19 +41,19 @@
           {
             "personagem": "Luca",
             "ru": "— Un po' stanco, ma sono felice. Siamo a Roma!",
-            "pt": "— A little tired, but I'm happy. We're in Rome!",
+            "pt": "— A little tired, but I'm happy. We are in Rome!",
             "audio": "Un po' stanco, ma sono felice. Siamo a Roma!"
           },
           {
             "personagem": "Sara",
             "ru": "— Sì, siamo a Roma! E Marco? Dov'è?",
-            "pt": "— Yes, we're in Rome! And Marco? Where is he?",
+            "pt": "— Yes, we are in Rome! And Marco? Where is he?",
             "audio": "Sì, siamo a Roma! E Marco? Dov'è?"
           },
           {
             "personagem": "Luca",
             "ru": "— Lui è qui, con Giulia. Ecco, sono là!",
-            "pt": "— He's here, with Giulia. Look, they're over there!",
+            "pt": "— He is here, with Giulia. Look, they are over there!",
             "audio": "Lui è qui, con Giulia. Ecco, sono là!"
           },
           {
@@ -63,13 +63,13 @@
             "audio": "Ciao, Marco! Ciao, Giulia! Siete stanchi?"
           },
           {
-            "personagem": "Giulia",
+            "personagem": "Marco",
             "ru": "— Un po', ma siamo felici.",
             "pt": "— A little, but we're happy.",
             "audio": "Un po', ma siamo felici."
           },
           {
-            "personagem": "Marco",
+            "personagem": "Giulia",
             "ru": "— Roma è bella! Evviva!",
             "pt": "— Rome is beautiful! Hooray!",
             "audio": "Roma è bella! Evviva!"
@@ -78,7 +78,7 @@
       },
       {
         "tipo": "palavras",
-        "min": 5,
+        "min": 3,
         "itens": [
           {
             "ru": "stanco, stanca",
@@ -89,29 +89,29 @@
           },
           {
             "ru": "contento, contenta",
-            "translit": "kohn-TEN-toh, kohn-TEN-tah",
-            "pt": "pleased, happy",
+            "translit": "kohn-TEHN-toh, kohn-TEHN-tah",
+            "pt": "happy, pleased (m., f.)",
             "en": "",
             "audio": "contento, contenta"
           },
           {
             "ru": "felice",
             "translit": "feh-LEE-cheh",
-            "pt": "happy",
+            "pt": "happy (m. and f.)",
             "en": "",
             "audio": "felice"
           },
           {
             "ru": "simpatico, simpatica",
             "translit": "seem-PAH-tee-koh, seem-PAH-tee-kah",
-            "pt": "nice, friendly (m., f.)",
+            "pt": "nice, friendly (not «sympathetic»!)",
             "en": "",
             "audio": "simpatico, simpatica"
           },
           {
             "ru": "gentile",
-            "translit": "jen-TEE-leh",
-            "pt": "kind",
+            "translit": "jehn-TEE-leh",
+            "pt": "kind, polite (m. and f.)",
             "en": "",
             "audio": "gentile"
           },
@@ -124,8 +124,8 @@
           },
           {
             "ru": "bello, bella",
-            "translit": "BEL-loh, BEL-lah",
-            "pt": "beautiful, lovely (m., f.)",
+            "translit": "BEHL-loh, BEHL-lah",
+            "pt": "beautiful, handsome (m., f.)",
             "en": "",
             "audio": "bello, bella"
           },
@@ -140,88 +140,87 @@
       },
       {
         "tipo": "gramatica",
-        "min": 7,
-        "titulo": "Pronouns and the present tense of essere",
-        "explicacao": "You have just heard «sono», «sei», «è», «siamo» and «siete». They are forms of the same verb. STEP 1: like English «to be», Italian «essere» covers both who you are and how you are. «Sono italiano» means «I am Italian». «Sono stanco» means «I am tired». STEP 2: there are seven subject pronouns. «Io» is I. «Tu» is you, for someone close. «Lui» is he. «Lei» is she. «Noi» is we. «Voi» is you, for more than one person. «Loro» is they. STEP 3: the present tense of «essere» is irregular, so learn it by heart, just as you once learned «am, are, is». «Io sono». «Tu sei». «Lui è», «lei è». «Noi siamo». «Voi siete». «Loro sono». STEP 4: notice that «sono» works for «io» and for «loro». The context makes it clear. STEP 5: the «è» of the third person has an accent. Without the accent, «e» is just the word «and»: «Marco è alto e simpatico».",
-        "comparacao": "English also has a single verb, «to be», so this part is familiar: «sono italiano» is «I am Italian» and «sono stanco» is «I am tired». What changes is the number of forms: English has three in the present (am, are, is), Italian has six.",
+        "min": 9,
+        "titulo": "«Essere» and the subject pronouns",
+        "explicacao": "STEP 1: «essere» is Italian «to be». It is irregular, like English «am, are, is», so learn the six forms as one block: «io sono», «tu sei», «lui è» (or «lei è»), «noi siamo», «voi siete», «loro sono». STEP 2: English has one «you», but Italian has three: «tu» is one friend, «voi» is more than one person, and «Lei» is one person you address formally. «Lei» takes the same verb form as «lui» and «lei»: «Lei è stanca?». STEP 3: unlike English, the subject pronoun is usually dropped, because the verb ending shows the person. «Sono felice» means «I am happy», with no «io». Use the pronoun only to contrast or stress: «Io sono Marco, lui è Luca». STEP 4: «sono» is the same for «io» and «loro». Context tells you which: «Sono felice» is «I», «Sono amici» is «they». STEP 5: the third person is «è» for «he», «she» and formal «you», so Italian needs no separate «it». The thing you would call «it» in English has no pronoun: «È bella» (it is beautiful). STEP 6: one verb covers both who you are and how you are: «Sono Marco», «Sono stanco». But health and mood in the social sense take «stare» in «Come stai? Sto bene», so do not use «sono» there. STEP 7: the accent on «è» (is) separates it from «e» (and): «Marco è qui e Luca è là».",
+        "comparacao": "English «to be» changes in the same irregular way, so this is a familiar idea. The differences are three: (1) English needs the subject word «I», «you», «they», while Italian usually leaves it out; (2) Italian has three «you» pronouns; (3) Italian has no word for «it» as a subject: you just say «È bella».",
         "exemplos": [
           {
             "ru": "Io sono stanco.",
-            "pt": "I'm tired."
+            "pt": "I am tired."
           },
           {
             "ru": "Tu sei simpatico.",
-            "pt": "You're nice."
+            "pt": "You are friendly."
           },
           {
             "ru": "Lui è gentile.",
-            "pt": "He's kind."
+            "pt": "He is kind."
           },
           {
             "ru": "Noi siamo contenti.",
-            "pt": "We're happy."
+            "pt": "We are happy."
           },
           {
             "ru": "Voi siete felici.",
-            "pt": "You're all happy."
+            "pt": "You (plural) are happy."
           },
           {
             "ru": "Loro sono amici.",
-            "pt": "They're friends."
+            "pt": "They are friends."
           }
         ],
         "tabela": [
           {
-            "pronome": "io (I)",
-            "forma": "sono",
-            "exemplo": "Io sono stanco."
+            "tipo": "io",
+            "forma": "sono"
           },
           {
-            "pronome": "tu (you, someone close)",
-            "forma": "sei",
-            "exemplo": "Tu sei simpatico."
+            "tipo": "tu",
+            "forma": "sei"
           },
           {
-            "pronome": "lui (he), lei (she)",
-            "forma": "è",
-            "exemplo": "Lei è molto gentile."
+            "tipo": "lui / lei / Lei",
+            "forma": "è"
           },
           {
-            "pronome": "noi (we)",
-            "forma": "siamo",
-            "exemplo": "Noi siamo contenti."
+            "tipo": "noi",
+            "forma": "siamo"
           },
           {
-            "pronome": "voi (you, more than one)",
-            "forma": "siete",
-            "exemplo": "Voi siete giovani."
+            "tipo": "voi",
+            "forma": "siete"
           },
           {
-            "pronome": "loro (they)",
-            "forma": "sono",
-            "exemplo": "Loro sono amici."
+            "tipo": "loro",
+            "forma": "sono"
           }
         ],
         "erros": [
           {
             "errado": "Io è stanco.",
             "certo": "Io sono stanco.",
-            "motivo": "With «io», the verb is «sono»."
+            "motivo": "«Io» takes «sono», not «è»."
           },
           {
-            "errado": "Lui sono simpatico.",
-            "certo": "Lui è simpatico.",
-            "motivo": "With «lui» and «lei», the verb is «è»."
+            "errado": "Tu è simpatico.",
+            "certo": "Tu sei simpatico.",
+            "motivo": "«Tu» takes «sei»."
           },
           {
-            "errado": "Voi siamo amici.",
-            "certo": "Voi siete amici.",
-            "motivo": "«Siamo» goes with «noi». «Voi» needs «siete»."
+            "errado": "Noi sono contenti.",
+            "certo": "Noi siamo contenti.",
+            "motivo": "«Noi» takes «siamo»."
           },
           {
-            "errado": "Lei e stanca.",
-            "certo": "Lei è stanca.",
-            "motivo": "The verb has an accent. «E» without an accent means «and»."
+            "errado": "Lui sono gentile.",
+            "certo": "Lui è gentile.",
+            "motivo": "«Lui» takes «è»."
+          },
+          {
+            "errado": "Loro siamo amici.",
+            "certo": "Loro sono amici.",
+            "motivo": "«Loro» takes «sono»."
           }
         ],
         "tag": "The verb essere"
@@ -229,76 +228,140 @@
       {
         "tipo": "gramatica",
         "min": 5,
-        "titulo": "Tu, Lei and voi, and the pronoun that disappears",
-        "explicacao": "STEP 1: English says «you» to everyone. Italian has no single «you». STEP 2: with friends, family and young people, you use «tu». «Tu sei stanco?» STEP 3: with strangers, older people and at work, you use «Lei». You already saw this in lesson 1, in «Come sta?». The verb takes the «she» form: «Lei è stanco?», are you tired? (formal). STEP 4: to talk to several people, you use «voi», with friends and strangers alike, like «you all» or «you guys»: «Siete stanchi?» STEP 5: because the verb form already shows who is speaking, the pronoun usually disappears. You say «Sono stanco», not «Io sono stanco». STEP 6: the pronoun appears when you want to stress or contrast: «Io sono Marco, lui è Luca». Culture: if you are unsure between «tu» and «Lei», use «Lei». It is the safer choice.",
-        "comparacao": "English always needs the pronoun: «am tired» on its own is not a sentence. Italian is the opposite: «sono stanco» is complete, and adding «io» sounds emphatic, like stressing «I am tired».",
+        "titulo": "Questions and short answers with «essere»",
+        "explicacao": "STEP 1: English makes a question by swapping the verb and the subject: «You are tired» becomes «Are you tired?». Italian does not swap. It keeps the same order and changes the intonation: «Sei stanco?». STEP 2: the question mark is the only visual signal, so listen to the rising voice at the end. STEP 3: the answer repeats the verb: «Sei stanco?» «Sì, sono stanco». You can also drop «sì» and just answer with the verb: «Sono stanco». STEP 4: «Lei è stanca?» is the formal version: it asks a woman «Are you tired?». STEP 5: for a group, ask «Siete stanchi?». STEP 6: «sei» can also mean «six». The meaning comes from the context and from the pronoun («tu sei» or «sei persone»).",
+        "comparacao": "English asks a question with a different word order, and Italian does it with your voice. That makes Italian questions easy to produce: say the statement, then raise your pitch at the end. Be careful with «sei»: the same letters mean «you are» and «six», and only context tells them apart.",
         "exemplos": [
           {
             "ru": "Sei stanco?",
-            "pt": "Are you tired? (to a friend)"
+            "pt": "Are you tired?"
           },
           {
             "ru": "Lei è stanca?",
-            "pt": "Are you tired? (to a lady, formal)"
+            "pt": "Are you tired? (formal, to a woman)"
           },
           {
             "ru": "Siete stanchi?",
-            "pt": "Are you all tired?"
+            "pt": "Are you tired? (plural)"
           },
           {
             "ru": "Sono felice.",
-            "pt": "I'm happy."
-          },
-          {
-            "ru": "Io sono Marco, lui è Luca.",
-            "pt": "I'm Marco, he's Luca."
+            "pt": "I am happy."
           }
         ],
         "tabela": [
           {
-            "situacao": "a friend",
-            "pronome": "tu",
-            "exemplo": "Sei stanco?"
+            "tipo": "English",
+            "forma": "You are tired. → Are you tired?"
           },
           {
-            "situacao": "a stranger or an older person",
-            "pronome": "Lei",
-            "exemplo": "Lei è stanco?"
-          },
-          {
-            "situacao": "several people",
-            "pronome": "voi",
-            "exemplo": "Siete stanchi?"
+            "tipo": "Italian",
+            "forma": "Sei stanco. → Sei stanco?"
           }
         ],
         "erros": [
           {
-            "errado": "Lei sei stanco?",
-            "certo": "Lei è stanco?",
-            "motivo": "With «Lei», the verb is in the third person: «è»."
+            "errado": "Sei tu stanco?",
+            "certo": "Sei stanco?",
+            "motivo": "Do not swap «sei» and «tu». Keep the order and raise your voice."
           },
           {
-            "errado": "Voi è stanchi?",
-            "certo": "Voi siete stanchi?",
-            "motivo": "With «voi», the verb is «siete»."
-          },
-          {
-            "errado": "Io sono stanco, io sono felice, io sono pronto.",
-            "certo": "Sono stanco, felice e pronto.",
-            "motivo": "The pronoun is repeated only for emphasis. Normally it disappears."
+            "errado": "Siete voi stanchi?",
+            "certo": "Siete stanchi?",
+            "motivo": "The pronoun is not needed in the question either."
           }
         ],
         "tag": "The verb essere"
       },
       {
-        "tipo": "producao",
+        "tipo": "exercicios",
         "min": 5,
-        "enunciado": "Say four sentences about yourself out loud with «sono»: two with mood adjectives (stanco, contento, felice, pronto) and two with your name, as in «Sono Felipe». Then ask someone, with «Lei»: «Lei è stanco?»"
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Siete stanchi?",
+            "opcoes": [
+              "Siete stanchi?",
+              "Sei stanco?",
+              "Siamo stanchi?"
+            ],
+            "gabarito": "Siete stanchi?",
+            "explicacao": "Listen for «siete» (you, plural).",
+            "id": "it-002-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Sono felice.",
+            "opcoes": [
+              "Sono felice.",
+              "Sei felice.",
+              "Siamo felici."
+            ],
+            "gabarito": "Sono felice.",
+            "explicacao": "«Sono» means «I am» here.",
+            "id": "it-002-e02"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which pronoun goes with «sei»?",
+            "opcoes": [
+              "tu",
+              "lui",
+              "noi"
+            ],
+            "gabarito": "tu",
+            "explicacao": "«Tu sei».",
+            "id": "it-002-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Io è stanco.",
+              "Io sono stanco.",
+              "Io sei stanco."
+            ],
+            "gabarito": "Io sono stanco.",
+            "explicacao": "«Io» takes «sono».",
+            "id": "it-002-e04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Noi ___ contenti. (are)",
+            "opcoes": [
+              "siamo",
+              "sono",
+              "siete"
+            ],
+            "gabarito": "siamo",
+            "explicacao": "«Noi siamo».",
+            "id": "it-002-e05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Lei ___ stanca? (are you)",
+            "opcoes": [
+              "è",
+              "sei",
+              "sono"
+            ],
+            "gabarito": "è",
+            "explicacao": "«Lei» takes the third-person form: «è».",
+            "id": "it-002-e06"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Describe aloud how you feel, with «Sono…», and then ask a friend «Sei…?» with three different adjectives from the list."
       },
       {
         "tipo": "revisao",
-        "min": 3,
-        "enunciado": "Go back over lesson 1 out loud: «Buongiorno! Come sta?», «Ciao! Come stai?» and «Sto bene, grazie. E Lei?». Then spell «Italia». What is the difference between «tu» and «Lei»?"
+        "min": 1,
+        "enunciado": "Say the six forms of «essere» aloud and mark which two forms are identical."
       }
     ]
   },
