@@ -72,7 +72,7 @@
         "tipo": "gramatica",
         "min": 14,
         "titulo": "The most common irregular participles",
-        "explicacao": "STEP 1: English has irregular participles too: «done», «said», «written», «seen», «taken». Italian has similar groups. STEP 2: the «-tto» group: «fare → fatto», «dire → detto», «scrivere → scritto», «leggere → letto». STEP 3: the «-so» group: «prendere → preso», «mettere → messo», «chiudere → chiuso». STEP 4: the «-to» group: «vedere → visto», «aprire → aperto». STEP 5: several of these look like English participles, which helps: «written / scritto», «seen / visto». STEP 6: learn each one with the infinitive and, ideally, with a short sentence: «Ho letto un libro», «Abbiamo visto un film», «Ha preso il treno stamattina». STEP 7: «prendere» covers many English verbs: take, have (a coffee), catch. The participle «preso» does too: «Ho preso un caffè», «Ho preso il treno». STEP 8: the double consonant in «letto», «detto», «fatto» is long, as in «palla». STEP 9: with «avere», the participle does not agree with the subject: «Giulia ha fatto», «Marco e Luca hanno fatto». STEP 10: verbs made from the same root follow the base: «rifare → rifatto», «riscrivere → riscritto».",
+        "explicacao": "STEP 1: English has irregular participles too: «done», «said», «written», «seen», «taken». Italian has similar groups. STEP 2: the «-tto» group: «fare → fatto», «dire → detto», «scrivere → scritto», «leggere → letto». STEP 3: the «-so» group: «prendere → preso», «mettere → messo», «chiudere → chiuso». STEP 4: the «-to» group: «vedere → visto», «aprire → aperto». STEP 5: several of these look like English participles, which helps: «written / scritto», «seen / visto». STEP 6: learn each one with the infinitive and, ideally, with a short sentence: «Ho letto un libro», «Abbiamo visto un film», «Ha preso il treno stamattina». STEP 7: «prendere» covers many English verbs: take, have (a coffee), catch. The participle «preso» does too: «Ho preso un caffè», «Ho preso il treno». STEP 8: the double consonant in «letto», «detto», «fatto» is held longer, as in «palla» (ball). STEP 9: with «avere», the participle does not agree with the subject: «Giulia ha fatto», «Marco e Luca hanno fatto». STEP 10: verbs made from the same root follow the base: «rifare → rifatto», «riscrivere → riscritto». STEP 11: «bere» (to drink) keeps its old stem: «bere → bevuto», as in «Abbiamo bevuto un caffè».",
         "comparacao": "English has irregular participles, and so does Italian, but they are not the same words. They are close enough for «fatto» (made), «detto» (said), «scritto» (written), «visto» (seen), and these help you memorize. The risk is the English habit of using a different form for the simple past («saw») and for the participle («seen»): Italian uses the participle for both.",
         "exemplos": [
           {
@@ -100,12 +100,12 @@
         ],
         "erros": [
           {
-            "errado": "Ho leggiuto un libro",
+            "errado": "Ho leggato un libro",
             "certo": "Ho letto un libro",
             "motivo": "«Leggere» has an irregular participle: «letto»."
           },
           {
-            "errado": "Abbiamo vedeto un film",
+            "errado": "Abbiamo vedato un film",
             "certo": "Abbiamo visto un film",
             "motivo": "«Vedere» → «visto»."
           },
@@ -127,7 +127,7 @@
             "audio": "Ho letto un libro",
             "opcoes": [
               "Ho letto un libro",
-              "Ho leggiuto un libro",
+              "Ho leggato un libro",
               "Ho leggere un libro"
             ],
             "gabarito": "Ho letto un libro",
@@ -140,8 +140,8 @@
             "audio": "Abbiamo visto un film",
             "opcoes": [
               "Abbiamo visto un film",
-              "Abbiamo vedeto un film",
-              "Abbiamo veduto un film"
+              "Abbiamo vedato un film",
+              "Hanno visto un film"
             ],
             "gabarito": "Abbiamo visto un film",
             "explicacao": "«Visto».",
@@ -167,7 +167,7 @@
             "opcoes": [
               "fare, fatto",
               "fare, fato",
-              "fare, fatuto"
+              "fare, detto"
             ],
             "gabarito": "fare, fatto",
             "explicacao": "Double «t».",
@@ -202,7 +202,7 @@
             "enunciado": "Noi abbiamo ___ un film. (seen)",
             "opcoes": [
               "visto",
-              "vedeto",
+              "vedato",
               "vedere"
             ],
             "gabarito": "visto",

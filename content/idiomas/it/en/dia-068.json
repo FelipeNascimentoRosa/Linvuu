@@ -43,11 +43,11 @@
             "audio": "Non ho ancora finito",
             "opcoes": [
               "Non ho ancora finito",
-              "Ho non finito ancora",
-              "Non ho finito ancora"
+              "Ho non ancora finito",
+              "Non hai ancora finito"
             ],
             "gabarito": "Non ho ancora finito",
-            "explicacao": "Order.",
+            "explicacao": "Negation, auxiliary, «ancora», participle.",
             "id": "it-017-e02"
           },
           {
@@ -56,8 +56,8 @@
             "audio": "Abbiamo visto un film",
             "opcoes": [
               "Abbiamo visto un film",
-              "Abbiamo vedeto un film",
-              "Abbiamo veduto un film"
+              "Abbiamo vedato un film",
+              "Hanno visto un film"
             ],
             "gabarito": "Abbiamo visto un film",
             "explicacao": "«Visto».",
@@ -69,7 +69,7 @@
             "audio": "Ho letto un libro",
             "opcoes": [
               "Ho letto un libro",
-              "Ho leggiuto un libro",
+              "Ho leggato un libro",
               "Ho leggere un libro"
             ],
             "gabarito": "Ho letto un libro",
@@ -82,11 +82,11 @@
             "audio": "Hai già mangiato",
             "opcoes": [
               "Hai già mangiato",
-              "Hai mangiato già",
+              "Hai già mangiare",
               "Ha già mangiato"
             ],
             "gabarito": "Hai già mangiato",
-            "explicacao": "«Già».",
+            "explicacao": "«Già» after the auxiliary.",
             "id": "it-017-e05"
           },
           {
@@ -235,9 +235,9 @@
             "tipo": "multiple-choice",
             "enunciado": "Which sentence is correct?",
             "opcoes": [
-              "Ho non finito ancora.",
+              "Ho non ancora finito.",
               "Non ho ancora finito.",
-              "Non ancora ho finito."
+              "Non ho ancora finire."
             ],
             "gabarito": "Non ho ancora finito.",
             "explicacao": "Order.",
@@ -248,7 +248,7 @@
             "enunciado": "Noi abbiamo ___ un film. (seen)",
             "opcoes": [
               "visto",
-              "vedeto",
+              "vedato",
               "vedere"
             ],
             "gabarito": "visto",

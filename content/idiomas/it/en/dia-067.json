@@ -23,7 +23,7 @@
       {
         "tipo": "dialogo",
         "min": 5,
-        "titulo": "Cosa hai fatto ieri? / What did you do yesterday?",
+        "titulo": "Cosa hai fatto nel fine settimana? / What did you do over the weekend?",
         "contexto": "Elena and Giorgio talk on Monday about their weekend. Listen to the passato prossimo and to «già» and «non… ancora».",
         "linhas": [
           {
@@ -41,7 +41,7 @@
           {
             "personagem": "Elena",
             "ru": "— Bello! Che cosa avete mangiato?",
-            "pt": "— How nice! What did you eat?",
+            "pt": "— How nice! What did you all eat?",
             "audio": "Bello! Che cosa avete mangiato?"
           },
           {
@@ -116,8 +116,8 @@
         "tipo": "gramatica",
         "min": 10,
         "titulo": "Negative sentences, questions and adverbs in the past",
-        "explicacao": "STEP 1: the negation goes before the auxiliary: «Non ho mangiato», «Non abbiamo visto il film». English adds «didn't» or «haven't» before the verb; Italian adds only «non». STEP 2: for «not yet», use «non… ancora»: «Non ho ancora finito» (I haven't finished yet). The two parts stand on either side of the auxiliary. STEP 3: questions keep the statement order and use rising intonation: «Hai già mangiato?». STEP 4: English swaps the subject and the auxiliary («Have you eaten?»). Italian does not. STEP 5: question words come first: «Che cosa hai fatto?», «Dove hai mangiato?». STEP 6: «già» goes between the auxiliary and the participle: «Hai già visto il film?». STEP 7: «mai» in a question means «ever»: «Hai mai visto il mare?». With a negation, use «non… mai»: «Non ho mai visto il mare». English does not allow the double negative («I have never seen»), but Italian requires it. STEP 8: «sempre» and «appena» also go between the two parts: «Ho sempre studiato italiano», «Ho appena finito». STEP 9: short answers: «Sì, ho già mangiato», «No, non ancora».",
-        "comparacao": "English adds a helper to negate and to ask («didn't», «did you»). Italian keeps the verb as it is and moves nothing, except «non» in front. English puts «already», «ever» and «yet» in different places, but Italian has one usual place for the short adverbs, between the auxiliary and the participle. The only new idea is the pair «non… ancora», which has no direct English match.",
+        "explicacao": "STEP 1: the negation goes before the auxiliary: «Non ho mangiato», «Non abbiamo visto il film». English adds «didn't» or «haven't» before the verb; Italian adds only «non». STEP 2: for «not yet», use «non… ancora»: «Non ho ancora finito» (I haven't finished yet). The two parts usually stand on either side of the auxiliary. STEP 3: questions keep the statement order and use rising intonation: «Hai già mangiato?». STEP 4: English swaps the subject and the auxiliary («Have you eaten?»). Italian does not. STEP 5: question words come first: «Che cosa hai fatto?», «Dove hai mangiato?». STEP 6: «già» usually goes between the auxiliary and the participle: «Hai già visto il film?». STEP 7: «mai» in a question means «ever»: «Hai mai visto il mare?». With a negation, use «non… mai»: «Non ho mai visto il mare». English uses one negative word («I have never seen»), but when «mai» follows the verb, Italian needs «non» as well. STEP 8: «sempre» and «appena» usually go between the two parts: «Ho sempre studiato italiano», «Ho appena finito». STEP 9: short answers: «Sì, ho già mangiato», «No, non ancora».",
+        "comparacao": "English adds a helper to negate and to ask («didn't», «did you»). Italian keeps the verb as it is and moves nothing, except «non» in front. English puts «already», «ever» and «yet» in different places, but Italian has one usual place for the short adverbs, between the auxiliary and the participle. The only new idea is the pair «non… ancora», which matches English «not yet» but wraps around the auxiliary.",
         "exemplos": [
           {
             "ru": "Non ho ancora finito",
@@ -140,19 +140,19 @@
         ],
         "erros": [
           {
-            "errado": "Ho non finito ancora",
+            "errado": "Ho non ancora finito",
             "certo": "Non ho ancora finito",
             "motivo": "«Non» goes before the auxiliary."
           },
           {
-            "errado": "Non ancora ho finito",
+            "errado": "Non ho ancora finire",
             "certo": "Non ho ancora finito",
-            "motivo": "«Ancora» goes between the auxiliary and the participle."
+            "motivo": "After the auxiliary, use the participle «finito», not the infinitive."
           },
           {
-            "errado": "Hai mangiato già",
+            "errado": "Hai già mangiare",
             "certo": "Hai già mangiato",
-            "motivo": "«Già» goes in the middle."
+            "motivo": "After «hai» and «già», use the participle, not the infinitive."
           }
         ],
         "tag": "Past tense"
@@ -167,8 +167,8 @@
             "audio": "Non ho ancora finito",
             "opcoes": [
               "Non ho ancora finito",
-              "Ho non finito ancora",
-              "Non ho finito ancora"
+              "Ho non ancora finito",
+              "Non hai ancora finito"
             ],
             "gabarito": "Non ho ancora finito",
             "explicacao": "«Non» + auxiliary + «ancora».",
@@ -180,11 +180,11 @@
             "audio": "Hai già mangiato",
             "opcoes": [
               "Hai già mangiato",
-              "Hai mangiato già",
+              "Hai già mangiare",
               "Ha già mangiato"
             ],
             "gabarito": "Hai già mangiato",
-            "explicacao": "«Già» in the middle.",
+            "explicacao": "Auxiliary, then «già», then the participle.",
             "id": "it-017-e02"
           },
           {
@@ -218,11 +218,11 @@
             "enunciado": "How do you ask «Have you already eaten?»",
             "opcoes": [
               "Hai già mangiato?",
-              "Hai mangiato già?",
-              "Ha già mangiato?"
+              "Hai già mangiare?",
+              "Sei già mangiato?"
             ],
             "gabarito": "Hai già mangiato?",
-            "explicacao": "«Già» in the middle.",
+            "explicacao": "Auxiliary, then «già», then the participle.",
             "id": "it-017-e05"
           },
           {

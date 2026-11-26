@@ -86,8 +86,8 @@
         "tipo": "gramatica",
         "min": 14,
         "titulo": "The passato prossimo: «ho» + participle",
-        "explicacao": "STEP 1: the passato prossimo is the usual past tense in conversation. It has two parts: the present of an auxiliary verb («avere» here) and a past participle. STEP 2: English also has a two-part past, the present perfect: «I have eaten». The Italian one looks the same: «ho mangiato». STEP 3: the difference is how much ground it covers. In conversation, and in most of Italy, Italian uses the passato prossimo for both «I have eaten» and «I ate»: «Ieri ho mangiato la pizza» is «I ate pizza yesterday», where English uses the simple past. STEP 4: the auxiliary «avere» is «ho, hai, ha, abbiamo, avete, hanno». STEP 5: the regular participle replaces the ending of the infinitive: «-are» → «-ato» («parlare» → «parlato»), «-ere» → «-uto» («vendere» → «venduto»), «-ire» → «-ito» («finire» → «finito»). STEP 6: with «avere», the participle does not change with the subject: «Giulia ha mangiato», «Marco e Luca hanno mangiato». STEP 7: the time words are «ieri», «ieri sera», «stamattina», «la settimana scorsa», «due giorni fa», «l'anno scorso». «Fa» goes after the amount, as «ago» does in English. STEP 8: «già» (already) goes between the auxiliary and the participle: «Hai già mangiato». STEP 9: the usual order is subject, auxiliary, participle: «Ieri ho mangiato la pizza» or «Ho mangiato la pizza ieri». STEP 10: verbs of motion and some others use «essere» instead; that comes later in the course.",
-        "comparacao": "English tells finished past events with the simple past («I ate yesterday») and uses the present perfect («I have eaten») mainly when the time is not stated. Italian uses «ho mangiato» for both, so you cannot decide by looking for a simple past. If the event is finished and you are speaking, use the passato prossimo. The auxiliary is the same idea as English «have», but Italian has a second auxiliary, «essere», that English lacks.",
+        "explicacao": "STEP 1: the passato prossimo is the usual past tense in conversation. It has two parts: the present of an auxiliary verb («avere» here) and a past participle. STEP 2: English also has a two-part past, the present perfect: «I have eaten». The Italian one looks the same: «ho mangiato». STEP 3: the difference is how much ground it covers. In everyday conversation, Italian usually uses the passato prossimo for both «I have eaten» and «I ate»: «Ieri ho mangiato la pizza» is «I ate pizza yesterday», where English uses the simple past. STEP 4: the auxiliary «avere» is «ho, hai, ha, abbiamo, avete, hanno». STEP 5: the regular participle replaces the ending of the infinitive: «-are» → «-ato» («parlare» → «parlato»), «-ere» → «-uto» («vendere» → «venduto»), «-ire» → «-ito» («finire» → «finito»). STEP 6: with «avere», the participle does not change with the subject: «Giulia ha mangiato», «Marco e Luca hanno mangiato». STEP 7: the time words are «ieri», «ieri sera», «stamattina», «la settimana scorsa», «due giorni fa», «l'anno scorso». «Fa» goes after the amount, as «ago» does in English. STEP 8: «già» (already) usually goes between the auxiliary and the participle: «Hai già mangiato». You may also hear it after the participle («Hai mangiato già»), but start with the usual order. STEP 9: the usual order is subject, auxiliary, participle: «Ieri ho mangiato la pizza» or «Ho mangiato la pizza ieri». STEP 10: verbs of motion and some others use «essere» instead; that comes later in the course.",
+        "comparacao": "English tells finished past events with the simple past («I ate yesterday») and uses the present perfect («I have eaten») mainly when the time is not stated. In everyday speech Italian uses «ho mangiato» for both, so you cannot decide by looking for a simple past. As a default, if the event is finished and you are speaking, use the passato prossimo. The auxiliary is the same idea as English «have», but Italian has a second auxiliary, «essere», that English lacks.",
         "exemplos": [
           {
             "ru": "Ieri ho mangiato la pizza",
@@ -99,7 +99,7 @@
           },
           {
             "ru": "Hai già mangiato",
-            "pt": "Have you already eaten"
+            "pt": "Have you already eaten?"
           }
         ],
         "tabela": [
@@ -124,9 +124,9 @@
             "motivo": "After the auxiliary, use the participle, not the infinitive."
           },
           {
-            "errado": "Hai mangiato già",
+            "errado": "Hai già mangiare",
             "certo": "Hai già mangiato",
-            "motivo": "«Già» goes between the auxiliary and the participle."
+            "motivo": "After «hai», use the participle even with «già»: «mangiato»."
           }
         ],
         "tag": "Past tense"
@@ -154,11 +154,11 @@
             "audio": "Hai già mangiato",
             "opcoes": [
               "Hai già mangiato",
-              "Hai mangiato già",
+              "Hai già mangiare",
               "Ha già mangiato"
             ],
             "gabarito": "Hai già mangiato",
-            "explicacao": "«Già» in the middle.",
+            "explicacao": "Auxiliary, then «già», then the participle.",
             "id": "it-017-e02"
           },
           {
@@ -192,11 +192,11 @@
             "enunciado": "How do you say «I ate pizza yesterday»?",
             "opcoes": [
               "Ieri ho mangiato la pizza",
-              "Ieri mangiai la pizza",
+              "Ieri mangiato la pizza",
               "Ieri sono mangiato la pizza"
             ],
             "gabarito": "Ieri ho mangiato la pizza",
-            "explicacao": "Italian conversation uses the passato prossimo.",
+            "explicacao": "In everyday Italian conversation, use «ho» + participle.",
             "id": "it-017-e05"
           },
           {

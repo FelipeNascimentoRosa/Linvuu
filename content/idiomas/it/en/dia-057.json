@@ -87,7 +87,7 @@
         "min": 12,
         "titulo": "Colour adjectives come after the noun and agree with it",
         "explicacao": "STEP 1: English puts the colour before the noun and never changes it: «a red skirt», «two white shirts». Italian puts it after the noun and makes it agree in gender and number: «una gonna rossa», «due camicie bianche». STEP 2: colours ending in «-o» have four forms: «rosso, rossa, rossi, rosse». STEP 3: colours ending in «-e» have two: «verde, verdi», «marrone, marroni». STEP 4: some colours never change: «blu», «rosa» and «viola». Compound colours such as «verde scuro» do not change either. STEP 5: «azzurro» is light blue and changes like any «-o» colour (azzurro, azzurra, azzurri, azzurre); «blu» is dark blue and never changes. English «blue» splits into two Italian colours. STEP 6: the order is noun first, colour second: «una gonna rossa», not «una rossa gonna». STEP 7: «i pantaloni» is plural, like English «pants» or «trousers»: «I pantaloni sono neri». «Le scarpe» is plural too. STEP 8: to say what you are wearing, use «portare» or «indossare» («Oggi porto una giacca blu») or «mettersi» for putting on («Mi metto le scarpe nere»). STEP 9: «il cappotto» is a coat, not a cap, and «la camicia» is a shirt, not a camisole. STEP 10: «il vestito» can be a dress (for a woman) or a suit (for a man).",
-        "comparacao": "English adjectives come before the noun and do not change. Italian adjectives come after the noun and must agree. Two small shifts to retrain: the position («una gonna rossa», with the colour second) and the ending («rossa», «rosse»). The three invariable colours, «blu», «rosa» and «viola», are the easy ones because they behave like English.",
+        "comparacao": "English adjectives come before the noun and do not change. Italian colour adjectives come after the noun and must agree. Two small shifts to retrain: the position («una gonna rossa», with the colour second) and the ending («rossa», «rosse»). The three invariable colours, «blu», «rosa» and «viola», are the easy ones because they behave like English.",
         "exemplos": [
           {
             "ru": "Una gonna rossa",
@@ -125,7 +125,7 @@
           {
             "errado": "Una rossa gonna",
             "certo": "Una gonna rossa",
-            "motivo": "The normal order is noun first, then the colour."
+            "motivo": "Colours normally follow the noun; placed before it, the phrase sounds unnatural."
           }
         ],
         "tag": "Clothes and colours"
@@ -167,7 +167,7 @@
             "opcoes": [
               "la camicia",
               "il camicia",
-              "la camica"
+              "la camicetta"
             ],
             "gabarito": "la camicia",
             "explicacao": "Feminine.",
