@@ -1,0 +1,277 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 33,
+  "fase": 4,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Time, days and months: What time is it?",
+  "objetivo": "Lesson 9, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 9,
+    "titulo": "Time, days and months",
+    "objetivo": "Tell the time with «è l'una» and «sono le…», say when with «alle», name the days and months in lowercase, and give the date with «il» and a normal number. Avoid the English-speaker traps: «o'clock», capitals and ordinals.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "What time is it?",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "Che ora è?",
+            "translit": "keh OH-rah EH",
+            "pt": "what time is it?",
+            "en": "",
+            "audio": "Che ora è?"
+          },
+          {
+            "ru": "È l'una",
+            "translit": "EH LOO-nah",
+            "pt": "it's one o'clock",
+            "en": "",
+            "audio": "È l'una"
+          },
+          {
+            "ru": "Sono le tre",
+            "translit": "SOH-noh leh TREH",
+            "pt": "it's three o'clock",
+            "en": "",
+            "audio": "Sono le tre"
+          },
+          {
+            "ru": "mezzogiorno",
+            "translit": "mehd-dzoh-JOR-noh",
+            "pt": "noon",
+            "en": "",
+            "audio": "mezzogiorno"
+          },
+          {
+            "ru": "mezzanotte",
+            "translit": "mehd-dzah-NOHT-teh",
+            "pt": "midnight",
+            "en": "",
+            "audio": "mezzanotte"
+          },
+          {
+            "ru": "e un quarto",
+            "translit": "eh oon KWAR-toh",
+            "pt": "a quarter past",
+            "en": "",
+            "audio": "e un quarto"
+          },
+          {
+            "ru": "e mezza",
+            "translit": "eh MEHD-dzah",
+            "pt": "half past",
+            "en": "",
+            "audio": "e mezza"
+          },
+          {
+            "ru": "meno un quarto",
+            "translit": "MEH-noh oon KWAR-toh",
+            "pt": "a quarter to",
+            "en": "",
+            "audio": "meno un quarto"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Telling the time: «è l'una» and «sono le…»",
+        "explicacao": "STEP 1: ask «Che ora è?» or «Che ore sono?». Both mean «What time is it?». STEP 2: English says «It is» for every hour. Italian counts the hour as a thing: for one o'clock the verb is singular, «È l'una»; for every other hour it is plural, «Sono le tre», «Sono le quattro». STEP 3: the article is «le» (feminine plural) because the word «ore» (hours) is understood: «Sono le tre» is «It is the three (hours)». Only «l'una» takes «l'». STEP 4: noon and midnight are special words: «mezzogiorno» and «mezzanotte», used with «è»: «È mezzogiorno». STEP 5: minutes come after the hour with «e»: «Sono le quattro e dieci». STEP 6: English says «half past four» and «a quarter past four». Italian says «e mezza» («and a half») and «e un quarto» («and a quarter»): «Sono le quattro e mezza», «Sono le quattro e un quarto». STEP 7: for minutes before the hour, use «meno» (less): «Sono le cinque meno un quarto» is «a quarter to five». STEP 8: the 24-hour clock is common in writing and in announcements: «le diciotto» is six in the evening. STEP 9: «mezza» ends in «a» because it agrees with «ora» (hour, feminine); «e mezzo» is heard in casual speech, but «e mezza» is the standard form.",
+        "comparacao": "English hides the grammar of time under «it's»: «It's one», «It's three». Italian shows it: one is singular («è l'una») and the others are plural («sono le tre»). English adds «o'clock», but Italian never does. And «half past four» turns upside down: Italian says «four and a half». The cutoff for «a quarter to» is «meno» (minus).",
+        "exemplos": [
+          {
+            "ru": "Che ora è?",
+            "pt": "What time is it?"
+          },
+          {
+            "ru": "È l'una",
+            "pt": "It's one o'clock"
+          },
+          {
+            "ru": "Sono le tre",
+            "pt": "It's three o'clock"
+          },
+          {
+            "ru": "Sono le quattro e mezza",
+            "pt": "It's half past four"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "one o'clock",
+            "exemplo": "È l'una"
+          },
+          {
+            "tipo": "other hours",
+            "exemplo": "Sono le due, Sono le tre, Sono le quattro…"
+          },
+          {
+            "tipo": "noon, midnight",
+            "exemplo": "È mezzogiorno, È mezzanotte"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Sono l'una",
+            "certo": "È l'una",
+            "motivo": "One o'clock is singular: «è»."
+          },
+          {
+            "errado": "È le tre",
+            "certo": "Sono le tre",
+            "motivo": "Every hour except one is plural: «sono le»."
+          },
+          {
+            "errado": "Sono le quattro e mezzo",
+            "certo": "Sono le quattro e mezza",
+            "motivo": "«Mezza» agrees with «ora» and ends in «a»."
+          }
+        ],
+        "tag": "Time"
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "At what time? «alle» and «all'»",
+        "explicacao": "STEP 1: to say when something happens, English uses «at»: «at eight». Italian uses «a» + the article: «alle otto» (at eight), «all'una» (at one). STEP 2: «a» + «le» becomes «alle», and «a» + «l'» becomes «all'». STEP 3: add «di mattina», «di pomeriggio», «di sera» or «di notte» when you need to say which part of the day. English does it with «a.m.» and «p.m.», or «in the morning»: «alle otto di sera» is «at eight in the evening», or 8 p.m. STEP 4: to ask «At what time?», say «A che ora?». STEP 5: you may hear «verso le» (around) and «fino alle» (until). STEP 6: do not use «in» for time: «alle otto», not «in otto».",
+        "comparacao": "English «at eight» is one short word plus the number. Italian merges «a» with the article, so you hear «alle», not «a le». That contraction is not a choice: it is the standard way to write and say it. The parts of the day also work differently: English says «in the evening», Italian says «di sera».",
+        "exemplos": [
+          {
+            "ru": "Alle otto di sera",
+            "pt": "At eight in the evening"
+          },
+          {
+            "ru": "Alle sei e mezza di sera, al bar?",
+            "pt": "At half past six in the evening, at the café?"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "English",
+            "exemplo": "At eight in the evening"
+          },
+          {
+            "tipo": "Italian",
+            "exemplo": "Alle otto di sera"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "A le otto di sera",
+            "certo": "Alle otto di sera",
+            "motivo": "«A» + «le» always merges into «alle»."
+          },
+          {
+            "errado": "In otto di sera",
+            "certo": "Alle otto di sera",
+            "motivo": "Time takes «a» + article, not «in»."
+          }
+        ],
+        "tag": "Time"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 4,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Che ora è",
+            "opcoes": [
+              "Che ora è",
+              "Che ore sono",
+              "Che ora sono"
+            ],
+            "gabarito": "Che ora è",
+            "explicacao": "The singular verb goes with «ora».",
+            "id": "it-009-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "È l'una",
+            "opcoes": [
+              "È l'una",
+              "Sono le una",
+              "È le una"
+            ],
+            "gabarito": "È l'una",
+            "explicacao": "One o'clock is singular.",
+            "id": "it-009-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Sono le tre",
+            "opcoes": [
+              "Sono le tre",
+              "È le tre",
+              "Sono la tre"
+            ],
+            "gabarito": "Sono le tre",
+            "explicacao": "Plural hours.",
+            "id": "it-009-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «half past four»?",
+            "opcoes": [
+              "Sono le quattro e mezza",
+              "Sono le quattro e mezzo",
+              "Sono le quattro mezza"
+            ],
+            "gabarito": "Sono le quattro e mezza",
+            "explicacao": "«E mezza» agrees with «ora».",
+            "id": "it-009-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which verb goes with «l'una»?",
+            "opcoes": [
+              "è",
+              "sono",
+              "siamo"
+            ],
+            "gabarito": "è",
+            "explicacao": "One o'clock is singular.",
+            "id": "it-009-e05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ le otto di sera. (At)",
+            "opcoes": [
+              "Alle",
+              "A le",
+              "Nelle"
+            ],
+            "gabarito": "Alle",
+            "explicacao": "«A» + «le» = «alle».",
+            "id": "it-009-e06"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 1,
+        "enunciado": "Say the time aloud for six moments of your day, using «è l'una» for one o'clock and «sono le…» for the others."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Explain aloud why one o'clock is singular but three o'clock is plural."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-009.json",
+  "responsavel": null
+}

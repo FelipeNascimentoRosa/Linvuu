@@ -1,0 +1,215 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 42,
+  "fase": 5,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Town, places and directions: Asking for and giving directions",
+  "objetivo": "Lesson 11, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 11,
+    "titulo": "Town, places and directions",
+    "objetivo": "Name places in town, say where they are with «vicino a», «davanti a» and similar expressions, ask for and give directions with the formal imperative, and choose a means of transport. Avoid the English-speaker traps: leaving out «a» after «vicino», using one imperative for everyone, and «by bus» with «per».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Asking for and giving directions",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "a destra",
+            "translit": "ah DEHS-trah",
+            "pt": "to the right",
+            "en": "",
+            "audio": "a destra"
+          },
+          {
+            "ru": "a sinistra",
+            "translit": "ah see-NEE-strah",
+            "pt": "to the left",
+            "en": "",
+            "audio": "a sinistra"
+          },
+          {
+            "ru": "dritto, diritto",
+            "translit": "DREET-toh",
+            "pt": "straight ahead",
+            "en": "",
+            "audio": "dritto, diritto"
+          },
+          {
+            "ru": "l'incrocio",
+            "translit": "leen-KROH-choh",
+            "pt": "the intersection",
+            "en": "",
+            "audio": "l'incrocio"
+          },
+          {
+            "ru": "il semaforo",
+            "translit": "eel seh-MAH-foh-roh",
+            "pt": "the traffic light",
+            "en": "",
+            "audio": "il semaforo"
+          },
+          {
+            "ru": "la strada",
+            "translit": "lah STRAH-dah",
+            "pt": "the street, the road",
+            "en": "",
+            "audio": "la strada"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "Giving directions with the formal imperative",
+        "explicacao": "STEP 1: to attract someone's attention, say «Scusi» (formal) or «Scusa» (informal). English has only «excuse me». STEP 2: the useful question is «Scusi, per andare in centro?» (Excuse me, how do I get to the center?). STEP 3: the answer uses the formal «Lei» imperative: «Vada dritto» (go straight), «Giri a destra» (turn right), «Giri a sinistra» (turn left), «Attraversi la piazza» (cross the square), «Prenda la prima a destra» (take the first on the right). STEP 4: among friends, the informal imperative («tu») is used: «Vai dritto», «Gira a destra», «Prendi la seconda a sinistra». STEP 5: to say where to stop: «È in fondo alla strada», «È dopo il semaforo», «È prima dell'incrocio». STEP 6: pronunciation: «destra» is «DEHS-trah» and «sinistra» is «see-NEE-strah». «Dritto» and «diritto» are two spellings of the same word. STEP 7: «a destra» and «a sinistra» need «a»: they are fixed phrases: say «a» and no article. STEP 8: after «fino a», use the merged form: «fino al semaforo», «fino alla piazza».",
+        "comparacao": "English gives directions with a single form for everyone: «Turn left». Italian chooses between a formal and an informal imperative, depending on who you are speaking to: «Giri a sinistra» to a stranger, «Gira a sinistra» to a friend. The formal form looks like the third person («giri», «vada»), which is the form of «Lei». If you remember one rule, make it that.",
+        "exemplos": [
+          {
+            "ru": "Giri a destra",
+            "pt": "Turn right"
+          },
+          {
+            "ru": "Vada dritto fino al semaforo",
+            "pt": "Go straight to the traffic light"
+          },
+          {
+            "ru": "Scusi, signora, per andare in centro?",
+            "pt": "Excuse me, madam, how do I get to the center?"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "Lei (formal)",
+            "exemplo": "Vada dritto · Giri a destra · Attraversi la piazza"
+          },
+          {
+            "tipo": "tu (informal)",
+            "exemplo": "Vai dritto · Gira a destra · Attraversa la piazza"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Gira a destra, signora",
+            "certo": "Giri a destra",
+            "motivo": "To a stranger, use the formal imperative «giri»."
+          },
+          {
+            "errado": "Vada dritto a il semaforo",
+            "certo": "Vada dritto fino al semaforo",
+            "motivo": "«Fino a» + the merged article."
+          },
+          {
+            "errado": "Scusa, signora, per andare in centro?",
+            "certo": "Scusi, signora, per andare in centro?",
+            "motivo": "To a stranger, «scusi»."
+          }
+        ],
+        "tag": "Directions"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Giri a destra",
+            "opcoes": [
+              "Giri a destra",
+              "Gira a destra",
+              "Giro a destra"
+            ],
+            "gabarito": "Giri a destra",
+            "explicacao": "The formal imperative ends in «-i».",
+            "id": "it-011-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Vada dritto fino al semaforo",
+            "opcoes": [
+              "Vada dritto fino al semaforo",
+              "Vai dritto fino al semaforo",
+              "Vada dritto fino a il semaforo"
+            ],
+            "gabarito": "Vada dritto fino al semaforo",
+            "explicacao": "The formal «vada».",
+            "id": "it-011-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "la strada",
+            "opcoes": [
+              "la strada",
+              "il strada",
+              "lo strada"
+            ],
+            "gabarito": "la strada",
+            "explicacao": "«Strada» is feminine.",
+            "id": "it-011-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which phrase means «turn left»?",
+            "opcoes": [
+              "Giri a sinistra",
+              "Giri a destra",
+              "Vada dritto"
+            ],
+            "gabarito": "Giri a sinistra",
+            "explicacao": "«Sinistra» is left.",
+            "id": "it-011-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which imperative do you use with a stranger?",
+            "opcoes": [
+              "Lei (giri)",
+              "tu (gira)",
+              "voi (girate)"
+            ],
+            "gabarito": "Lei (giri)",
+            "explicacao": "Formal.",
+            "id": "it-011-e05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ a sinistra. (Turn, formal)",
+            "opcoes": [
+              "Giri",
+              "Gira",
+              "Giro"
+            ],
+            "gabarito": "Giri",
+            "explicacao": "Formal imperative.",
+            "id": "it-011-e06"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Play a tourist and a passer-by. The tourist asks how to get to the pharmacy; the passer-by gives three instructions with «Lei»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Explain aloud why English «Turn left» has two Italian versions."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-011.json",
+  "responsavel": null
+}

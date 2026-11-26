@@ -28,7 +28,7 @@ Sitemaps e llms.txt nascem de `scripts/seo.mjs`, das mesmas listas de `src/lib/m
 1. **`explicacaoCompleta` (`metaRota.ts`):** o hub `/curso/<id>` só é indexável, e só entra no sitemap, num idioma em que **todas** as sessões do curso estão explicadas nele. Curso parcial não ganha página indexável nem hreflang. É intencional.
 2. **Sessões `/curso/<id>/dia/N` são `noindex`** (decisão de 11/11/2026), **exceto a sessão 1** de curso completo no idioma da página; desde 18/11 o código exige `explicacaoCompleta` também na sessão 1.
 3. **Gramática** só existe no sitemap onde o arquivo dela existe naquele idioma (`content/gramatica/<id>.json` / `<id>.en.json`).
-4. **Italiano no .com:** só as aulas 1 a 7 (sessões 1–28) estão em inglês; as outras 55 estão em preparação (`docs/linvuu-10-de-10/06-operacao-pendencias.md`). Por isso `/curso/it` não está no sitemap do .com.
+4. **Italiano no .com:** só as aulas 1 a 12 (sessões 1–48) estão em inglês; as outras 50 estão em preparação (`docs/linvuu-10-de-10/06-operacao-pendencias.md`). Por isso `/curso/it` não está no sitemap do .com.
 5. `/excluir-conta` e rotas de conta são `noindex, nofollow`.
 
 ## Idiomas: publicados × em preparação
@@ -116,7 +116,7 @@ Fonte da verdade: a tabela de cobertura abaixo (contagem de arquivos em `content
 | en | 248 | 248/248 | 0/248 | não |
 | es | 248 | 248/248 | 248/248 | sim |
 | fr | 248 | 248/248 | 248/248 | sim |
-| it | 248 | 248/248 | 28/248 | não |
+| it | 248 | 248/248 | 48/248 | não |
 | ru | 312 | 312/312 | 312/312 | sim |
 
 <!-- MATRIZ:FIM -->
