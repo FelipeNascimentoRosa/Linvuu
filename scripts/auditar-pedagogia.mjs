@@ -114,6 +114,7 @@ function rigorDoDia(d) {
       const vistos = new Map();
       for (const o of i.opcoes) { const k = normOpc(o); if (vistos.has(k)) out.push({ tipo: 'opcao-duplicada', id: i.id, texto: String(o) }); vistos.set(k, 1); }
       if (i.tipo !== 'sentence-ordering' && i.gabarito !== undefined && !vistos.has(normOpc(i.gabarito))) out.push({ tipo: 'gabarito-ausente', id: i.id, texto: String(i.gabarito) });
+      if (i.tipo === 'audio-recognition') { const v2 = new Map(); for (const o of i.opcoes) { const k = normOpc(o).toLowerCase(); if (v2.has(k) && v2.get(k) !== String(o)) out.push({ tipo: 'opcao-homofona-audio', id: i.id, texto: `${v2.get(k)} / ${o}` }); v2.set(k, String(o)); } }
       if (i.opcoes.length < 2) out.push({ tipo: 'poucas-opcoes', id: i.id, texto: String(i.opcoes.length) });
     }
     if (b.tipo === 'gramatica') {
