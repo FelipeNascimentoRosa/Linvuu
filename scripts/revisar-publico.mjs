@@ -129,7 +129,7 @@ try {
       assert.equal(await page.locator('.lv-plano-escolhido').count(),1,'o plano selecionado é destacado');
     }
     await page.goto(base+'/assinatura#oferta-atual');
-    await page.getByRole('heading',{name:'Escolha seu plano',exact:true}).waitFor();
+    await page.getByRole('heading',{name:'Um único acesso para todos os idiomas. Sem pegadinha.',exact:true}).waitFor();
     await page.waitForFunction(()=>document.getElementById('oferta-atual')?.getBoundingClientRect().top < 300);
     assert.equal(errors.length,0,`${nome}: erros JS: ${errors.join('; ')}`);
     await context.close();

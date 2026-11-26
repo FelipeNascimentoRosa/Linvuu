@@ -30,3 +30,6 @@
 
 .site-catalogo .site-intro-cursos{display:block;margin-block:clamp(24px,4vw,48px) 18px}
 .site-catalogo .site-intro-cursos h1{margin:0}
+
+/* Notas de transparência abaixo dos planos em /assinatura. */
+.lv-notas-planos{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:8px;font-size:14px;line-height:1.6;color:var(--site-texto-secundario)}

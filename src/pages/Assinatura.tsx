@@ -1,4 +1,7 @@
 import { Autoria } from '../components/Autoria';
+import { vitrineDo } from '../config/oferta-publica';
+import { LIVROS_EM_PRODUCAO } from '../lib/livros';
+import { homeText } from '../i18n/home';
 import { useEffect, useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import type { Plano } from '../lib/assinatura';
@@ -16,6 +19,7 @@ import '../site-publico.css';
 export default function Assinatura() {
   const t = useT();
   const s = t.assinatura;
+  const V = vitrineDo(LOCALE.codigo);
   const P = precosDo(LOCALE.codigo); // reais no .com.br; dólares no .com (só mensal e anual)
   usePageTitle(LOCALE.codigo === 'pt-BR' ? 'Planos e preços' : 'Linvuu pricing', LOCALE.codigo === 'pt-BR' ? 'Aprenda idiomas com a Linvuu: planos mensal, trimestral com 30% OFF no Pix e anual. Experimente duas aulas grátis, sem cartão.' : undefined, ['pt-BR'], LOCALE.codigo !== 'pt-BR');
   const { usuario, carregando } = useAuth();
@@ -83,7 +87,8 @@ export default function Assinatura() {
                 {pt && <><tr><th scope="row">{s.pixBtn}</th><td>{P.trimestralPix}</td></tr><tr><th scope="row">{s.tresBtn}</th><td>{P.trimestral}</td></tr></>}
                 <tr><th scope="row">{s.dozeMeses}</th><td>{P.anual}</td></tr>
               </tbody></table></div>
-              <h2 className="pagina-h2">{pt ? 'Escolha seu plano' : 'Choose your plan'}</h2>
+              <h2 className="pagina-h2">{V.planosTitulo}</h2>
+              <p>{V.planosLead}</p>
               {/* Três cartões numa fileira só, de mesma altura, botão na base. O trimestral tem UM preço e UM botão:
                   Pix ou cartão/boleto é um seletor dentro do cartão (regra do CLAUDE.md; auditoria Impeccable C1). */}
               <div className={`lv-planos lv-planos-${P.moeda === 'BRL' ? 3 : 2}`}>
@@ -120,6 +125,7 @@ export default function Assinatura() {
                   <p className="lv-garantia"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 11V8a5 5 0 0 1 10 0v3M6 11h12v9H6z" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg><span>{s.garantiaUnico}</span></p>
                 </div>
               </div>
+              <ul className="lv-notas-planos">{[...V.planosNotas, ...(pt ? [homeText(LIVROS_EM_PRODUCAO)] : [])].map((n) => <li key={n}>{n}</li>)}</ul>
             </>
           )}
           {!a.ativa && (pt

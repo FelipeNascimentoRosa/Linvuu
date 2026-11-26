@@ -9,7 +9,7 @@ import { AUTHOR_ID, ORGANIZATION_ID, grafoInstitucional } from './seo/schema-gra
 import { aprovadasPorDominio, trechoSchema } from '../config/avaliacoes.ts';
 import { REDES } from '../config/social.ts';
 import { COMECAR } from './comecar.ts';
-import { HOME_BR } from '../config/oferta-publica.ts';
+import { HOME_BR, HOME_EN, vitrineDo, type Vitrine } from '../config/oferta-publica.ts';
 import fs from 'node:fs';
 import path from 'node:path';
 import { SESSOES_GRATIS, PRECO_MENSAL, PRECO_TRIMESTRAL, PRECO_TRIMESTRAL_PIX, PRECO_ANUAL, CENTAVOS, CENTAVOS_USD, PRECOS, precoSchema } from '../config/planos.ts';
@@ -203,8 +203,13 @@ const LINGUAS: Record<string, Record<string, string>> = {
 };
 const HOME = {
   'pt-BR': { titulo: HOME_BR.tituloSeo, descricao: HOME_BR.descricao },
-  en: { titulo: 'Online language courses for English speakers', descricao: 'Courses for English speakers: Spanish, German, French, Russian and Brazilian Portuguese, fully explained in English. Try 2 free lessons.' },
+  en: { titulo: HOME_EN.tituloSeo, descricao: HOME_EN.descricao },
 };
+
+/** Blocos da vitrine no HTML pré-renderizado (o texto que o Google lê antes do JavaScript): mesma fonte da home React. */
+const contrasteHtml = (V: Vitrine) => `<p>${esc(V.lead)}</p><p>${esc(V.ctaFino)}</p><h2>${esc(V.contrasteTitulo)}</h2><ul>${V.contraste.map((c) => `<li><strong>${esc(c.t)}.</strong> ${esc(c.d)}</li>`).join('')}</ul>`;
+const autoriaHtml = (V: Vitrine) => `<h2>${esc(V.autoriaTitulo)}</h2><p>${esc(V.autoriaLead)}</p><ul>${V.autoria.map((i) => `<li><strong>${esc(i.t)}.</strong> ${esc(i.d)}</li>`).join('')}</ul><p><a href="/sobre">${esc(V.autoriaLink)}</a></p>`;
+const planosNotasHtml = (V: Vitrine) => `<ul>${V.planosNotas.map((n) => `<li>${esc(n)}</li>`).join('')}</ul>`;
 
 /**
  * Descrição de capítulo de livro na faixa de 120–160 caracteres que o Google exibe. O título do capítulo entra
@@ -242,7 +247,7 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
   const ORG_ID = orgId(SITE);
   const tx = TX[loc.codigo];
   const ex = loc.explicacao;
-  if (p === '/') return { status: 200, caminho: '/', ...HOME[loc.codigo], jsonld: [organizacao(SITE), { '@context': 'https://schema.org', '@type': 'WebSite', name: 'Linvuu', url: SITE, inLanguage: loc.codigo }, { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: perguntasHome.map(([pergunta, resposta]) => ({ '@type': 'Question', name: homeText(pergunta, loc.codigo), acceptedAnswer: { '@type': 'Answer', text: homeText(resposta, loc.codigo) } })) }] };
+  if (p === '/') return { status: 200, caminho: '/', semMarca: true, ...HOME[loc.codigo], jsonld: [organizacao(SITE), { '@context': 'https://schema.org', '@type': 'WebSite', name: 'Linvuu', url: SITE, inLanguage: loc.codigo }, { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: perguntasHome.map(([pergunta, resposta]) => ({ '@type': 'Question', name: homeText(pergunta, loc.codigo), acceptedAnswer: { '@type': 'Answer', text: homeText(resposta, loc.codigo) } })) }] };
   // Livros: só em português (nos outros idiomas a página existe, mas não entra na busca).
   // /sobre existe nos dois idiomas desde 09/11/2026 — texto em src/lib/sobre.ts, indexável em pt-BR e em inglês.
   const livroBase = { em: ['pt-BR'] as Locale['codigo'][], semIndice: loc.codigo !== 'pt-BR' ? true : undefined };
@@ -515,9 +520,9 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
   let corpo = '';
   if (base === '/' || base === '/cursos') {
     const home = HOME[loc.codigo];
-    corpo = cabeca(base === '/' && loc.codigo === 'pt-BR' ? HOME_BR.titulo : (base === '/cursos' ? tx.cursos : home.titulo) ?? 'Linvuu · Idiomas para quem fala português', m.descricao ?? home.descricao ?? 'Cursos de inglês, espanhol, alemão, francês, italiano e russo para quem fala português.') + `<h2>${esc(tx.cursos)}</h2>` + li(vitrine.map((c) => `${a(`/curso/${c.id}`, c.nome)}: ${esc(c.descricao)} · ${a(`/gramatica/${c.id}`, tx.gramC(c.nome))}`))
-    if (base === '/' && loc.codigo === 'pt-BR') { corpo += `<p>${a('/curso/de', 'Conhecer o curso de alemão')} · ${a('/curso/ru', 'Conhecer o curso de russo')} · ${a('/livros/de', 'Livro de alemão')} · ${a('/livros/es', 'Livro de espanhol')}</p><p>${esc(LIVROS_EM_PRODUCAO)}</p><h2>Ouça, entenda e pratique</h2><p>Explicações em português, áudio e exercícios. Experimente as duas primeiras aulas de cada curso sem cartão.</p><h2 id="planos">A oferta de hoje</h2><p>Acesso aos cursos de idiomas, com explicações em português.</p><ul><li>Mensal: ${esc(PRECO_MENSAL)}, com renovação automática.</li><li>Três meses no Pix: ${esc(PRECO_TRIMESTRAL_PIX)}, pagamento único e 30% de desconto.</li><li>Anual: ${esc(PRECO_ANUAL)}, pagamento único.</li></ul><p>${a('/assinatura', 'Ver todos os detalhes da assinatura')} · ${a('/cursos', 'Experimentar duas aulas grátis')}</p>`; }
-    if (base === '/' && loc.codigo !== 'pt-BR') { const g = COMECAR[loc.codigo] ?? COMECAR['pt-BR']; corpo += `<h2>${esc(g.titulo)}</h2><p>${esc(g.lead)}</p><ol>${g.passos.map((x) => `<li><strong>${esc(x.t)}.</strong> ${esc(x.d)}</li>`).join('')}</ol><p>${esc(g.dica)}</p>`; corpo += `<h2>Your learning has pages, too.</h2><p>${a('/livros/br', 'Brazilian Portuguese: practical grammar, from zero to A2')}. Read the first two chapters free, with audio.</p><p>${a('/materiais-gratuitos', 'Free materials: alphabet and pronunciation')}</p>`; }
+    corpo = cabeca(base === '/' ? vitrineDo(loc.codigo).titulo : (base === '/cursos' ? tx.cursos : home.titulo) ?? 'Linvuu · Idiomas para quem fala português', m.descricao ?? home.descricao ?? 'Cursos de inglês, espanhol, alemão, francês, italiano e russo para quem fala português.') + `<h2>${esc(tx.cursos)}</h2>` + li(vitrine.map((c) => `${a(`/curso/${c.id}`, c.nome)}: ${esc(c.descricao)} · ${a(`/gramatica/${c.id}`, tx.gramC(c.nome))}`))
+    if (base === '/' && loc.codigo === 'pt-BR') { corpo += `<p>${a('/curso/de', 'Conhecer o curso de alemão')} · ${a('/curso/ru', 'Conhecer o curso de russo')} · ${a('/livros/de', 'Livro de alemão')} · ${a('/livros/es', 'Livro de espanhol')}</p><p>${esc(LIVROS_EM_PRODUCAO)}</p>${contrasteHtml(HOME_BR)}${autoriaHtml(HOME_BR)}<h2 id="planos">${esc(HOME_BR.planosTitulo)}</h2><p>${esc(HOME_BR.planosLead)}</p><ul><li>Mensal: ${esc(PRECO_MENSAL)}, com renovação automática.</li><li>Três meses no Pix: ${esc(PRECO_TRIMESTRAL_PIX)}, pagamento único e 30% de desconto.</li><li>Anual: ${esc(PRECO_ANUAL)}, pagamento único.</li></ul>${planosNotasHtml(HOME_BR)}<p>${a('/assinatura', 'Ver todos os detalhes da assinatura')} · ${a('/cursos', HOME_BR.cta)}</p>`; }
+    if (base === '/' && loc.codigo !== 'pt-BR') { const g = COMECAR[loc.codigo] ?? COMECAR['pt-BR']; corpo += `${contrasteHtml(HOME_EN)}${autoriaHtml(HOME_EN)}<h2 id="planos">${esc(HOME_EN.planosTitulo)}</h2><p>${esc(HOME_EN.planosLead)}</p><ul><li>Monthly: ${esc(PRECOS.en.mensal)}, automatic renewal.</li><li>Annual: ${esc(PRECOS.en.anual)}, one-time payment.</li></ul>${planosNotasHtml(HOME_EN)}<p>${a('/cursos', HOME_EN.cta)} · ${a('/assinatura', 'See subscription details')}</p><h2>${esc(g.titulo)}</h2><p>${esc(g.lead)}</p><ol>${g.passos.map((x) => `<li><strong>${esc(x.t)}.</strong> ${esc(x.d)}</li>`).join('')}</ol><p>${esc(g.dica)}</p>`; corpo += `<h2>Your learning has pages, too.</h2><p>${a('/livros/br', 'Brazilian Portuguese: practical grammar, from zero to A2')}. Read the first two chapters free, with audio.</p><p>${a('/materiais-gratuitos', 'Free materials: alphabet and pronunciation')}</p>`; }
   } else {
     const ml = base.match(/^\/livros\/([^/]+)$/), mcl = base.match(/^\/livros\/([^/]+)\/capitulo\/(\d+)$/);
     const lx = LIVROS_SEO[loc.codigo];
@@ -567,7 +572,7 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
       corpo = cabeca(m.h1 ?? m.titulo, m.descricao);
     }
   }
-  if (base === '/assinatura' && loc.codigo === 'pt-BR') corpo = cabeca(m.h1 ?? m.titulo ?? '', m.descricao) + `<h2 id="oferta-atual">Assinatura Linvuu</h2><p>Acesso a todos os cursos de idiomas.</p><ul><li>Mensal: ${esc(PRECO_MENSAL)}, com renovação automática.</li><li>3 meses: ${esc(PRECO_TRIMESTRAL_PIX)} no Pix (30% OFF) ou ${esc(PRECO_TRIMESTRAL)} no cartão ou boleto, pagamento único.</li><li>12 meses: ${esc(PRECO_ANUAL)}, pagamento único.</li></ul><h2>Posso experimentar sem cartão?</h2><p>As duas primeiras aulas de cada curso são gratuitas, sem cartão.</p><h2>Qual é o desconto no Pix?</h2><p>O plano trimestral custa ${esc(PRECO_TRIMESTRAL_PIX)} no Pix, 30% de desconto sobre ${esc(PRECO_TRIMESTRAL)}.</p><p>${a('/cursos', 'Testar 2 aulas grátis, sem cartão')} · ${a('/cadastro', 'Criar conta')} · ${a('/termos', 'Consultar termos e condições')}</p>`;
+  if (base === '/assinatura' && loc.codigo === 'pt-BR') corpo = cabeca(m.h1 ?? m.titulo ?? '', m.descricao) + `<h2 id="oferta-atual">Assinatura Linvuu</h2><p>Acesso a todos os cursos de idiomas.</p><ul><li>Mensal: ${esc(PRECO_MENSAL)}, com renovação automática.</li><li>3 meses: ${esc(PRECO_TRIMESTRAL_PIX)} no Pix (30% OFF) ou ${esc(PRECO_TRIMESTRAL)} no cartão ou boleto, pagamento único.</li><li>12 meses: ${esc(PRECO_ANUAL)}, pagamento único.</li></ul><h2>${esc(HOME_BR.planosTitulo)}</h2><p>${esc(HOME_BR.planosLead)}</p>${planosNotasHtml(HOME_BR)}<h2>Posso experimentar sem cartão?</h2><p>As duas primeiras aulas de cada curso são gratuitas, sem cartão.</p><h2>Qual é o desconto no Pix?</h2><p>O plano trimestral custa ${esc(PRECO_TRIMESTRAL_PIX)} no Pix, 30% de desconto sobre ${esc(PRECO_TRIMESTRAL)}.</p><p>${a('/cursos', 'Testar 2 aulas grátis, sem cartão')} · ${a('/cadastro', 'Criar conta')} · ${a('/termos', 'Consultar termos e condições')}</p>`;
   if (base === '/assinatura' && loc.codigo === 'en') corpo = cabeca(m.h1 ?? m.titulo ?? '', m.descricao) + `<h2 id="oferta-atual">Linvuu Subscription</h2><p>Access to every Linvuu course, with explanations in English.</p><ul><li>Monthly: ${esc(PRECOS.en.mensal)}, with automatic renewal.</li><li>12 months: ${esc(PRECOS.en.anual)}, one-time payment by card.</li></ul><h2>Can I try it without a card?</h2><p>The first two lessons of every course are free, with no card required.</p><h2>What currency are the prices in?</h2><p>Prices are in US dollars, paid by card (Apple Pay and Google Pay where your device supports them). Full refund within 7 days.</p><p>${a('/cursos', 'Try 2 free lessons, no card')} · ${a('/cadastro', 'Create account')} · ${a('/termos', 'Read the terms')}</p>`;
   if (base === '/excluir-conta') {
     // Sem JavaScript a página continua útil: texto completo e o endereço para o pedido.

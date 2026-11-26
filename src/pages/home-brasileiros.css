@@ -232,3 +232,21 @@
 .br-home-leve #idiomas .br-section-head{align-items:center;margin-bottom:0}
 .br-home-leve #idiomas .br-section-head>p{max-width:40ch;margin:0}
 .br-home-leve #idiomas .site-catalogo .curso-grid{margin-top:20px}
+
+/* Autoria e prova da vitrine: três colunas editoriais responsivas, sem cartões. */
+.br-autoria .br-section-head p{max-width:52ch}
+.br-autoria-lista{list-style:none;margin:0 0 28px;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:36px 40px}
+.br-autoria-lista li{border-top:2px solid var(--verde-floresta);padding-top:18px;display:flex;flex-direction:column;gap:10px}
+.br-autoria-lista h3{font-size:22px;line-height:1.2;color:var(--br-green)}
+.br-autoria-lista p{font-size:16px;line-height:1.55}
+/* Notas de transparência dos planos (sobre o fundo verde da seção). */
+.br-plan-notas{list-style:none;margin:24px 0 0;padding:0;display:grid;gap:8px;max-width:760px;font-size:14px;line-height:1.6;color:var(--site-texto-inverso)}
+
+/* Mobile (390×844): título, lead, ação principal, microcopy e seletor de idioma acima de 760 px; alvos de toque ≥ 44 px. */
+@media(max-width:700px){
+  .br-home-leve .br-hero-in{padding-top:20px;padding-bottom:28px;gap:20px}
+  .br-hero-sub{margin-top:14px;font-size:15px;line-height:1.45}
+  .br-hero-acoes{margin-top:18px;gap:2px 24px}
+  .br-hero-link{padding:10px 2px;font-size:15px;min-height:44px;display:inline-flex;align-items:center}
+  .br-hero-fino{margin-top:8px;font-size:14px;line-height:1.4}
+}

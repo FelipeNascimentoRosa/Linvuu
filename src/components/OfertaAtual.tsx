@@ -2,6 +2,8 @@ import { HomeCourseLink } from './HomeCourseLink';
 import { homeText as h } from '../i18n/home';
 import { precosDo, FUNDADORES } from '../config/planos';
 import { LOCALE } from '../i18n';
+import { vitrineDo } from '../config/oferta-publica';
+import { LIVROS_EM_PRODUCAO } from '../lib/livros';
 import { analytics } from '../lib/analytics';
 import { useEffect, useRef } from 'react';
 
@@ -18,6 +20,7 @@ export function OfertaAtual() {
     return () => observer.disconnect();
   }, []);
   // Reais no .com.br; dólares no .com, que só vende mensal e anual no cartão (sem Pix nem boleto). Mesma fonte da /assinatura.
+  const V = vitrineDo(LOCALE.codigo);
   const P = precosDo(LOCALE.codigo);
   const emReais = P.moeda === 'BRL';
   type Plano = { nome: string; preco: string; detalhe: string; id: string; equivMes?: string; destaque?: boolean };
@@ -28,8 +31,7 @@ export function OfertaAtual() {
   ];
   return <section ref={secao} className="br-plans-wrap br-live-plans br-motion-item" id="planos" aria-labelledby="oferta-titulo">
     <div className="br-section">
-      <div className="br-section-head"><div><h2 id="oferta-titulo">{h('Seu ritmo.')}<br />{h('Seu próximo idioma.')}</h2></div>
-      </div>
+      <div className="br-section-head"><div><h2 id="oferta-titulo">{V.planosTitulo}</h2></div><p>{V.planosLead}</p></div>
       <div className="br-plans">{planos.map(p => <article className={p.destaque ? 'br-plan br-plan-destaque' : 'br-plan'} key={p.id}>
         {p.destaque && <span className="br-plan-selo">{h('Menor preço por mês')}</span>}
         <span className="br-plan-name">{h(p.nome)}</span><h3>{p.preco}</h3><p>{h(p.detalhe)}</p>
@@ -37,6 +39,7 @@ export function OfertaAtual() {
         <HomeCourseLink cta="home_plano" to={`/assinatura?plano=${p.id}#oferta-atual`} className="br-button" onClick={() => { void analytics.capture('select_plan', { page: 'home', billing_plan: p.id }); }}>{h('Ver condições do plano')} <span aria-hidden="true">↗</span></HomeCourseLink>
       </article>)}</div>
       {emReais && FUNDADORES && <p className="br-plan-note">Ex-aluno da Udemy? Use o código <strong>{FUNDADORES.codigo}</strong> no pagamento do mensal: {FUNDADORES.precoMes} por mês, para sempre. Válido até {FUNDADORES.validade}.</p>}
+      <ul className="br-plan-notas">{[...V.planosNotas, h(LIVROS_EM_PRODUCAO)].map((n) => <li key={n}>{n}</li>)}</ul>
       <div className="br-current"><HomeCourseLink to="/cursos">{h('Experimentar duas aulas grátis')}</HomeCourseLink><HomeCourseLink to="/assinatura">{h('Ver todos os detalhes da assinatura')}</HomeCourseLink></div>
     </div>
   </section>;
