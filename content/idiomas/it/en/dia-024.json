@@ -1,0 +1,504 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 24,
+  "fase": 3,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Avere and -ere and -ire verbs: Review and practice of lesson 6",
+  "objetivo": "Lesson 6, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 6,
+    "titulo": "Avere and -ere and -ire verbs",
+    "objetivo": "Conjugate regular -ere and -ire verbs in the present tense (with and without -isc-), notice the sound change in «leggo / leggi» and «finisco / finisci», and use «avere» for hunger, thirst, sleepiness, cold and heat.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 6",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Leggo un libro",
+            "opcoes": [
+              "Leggo un libro",
+              "Leggi un libro",
+              "Legge un libro"
+            ],
+            "gabarito": "Leggo un libro",
+            "explicacao": "Listen for the hard «g» of «leggo».",
+            "id": "it-006-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Finisco la lezione",
+            "opcoes": [
+              "Finisco la lezione",
+              "Finiamo la lezione",
+              "Finiscono la lezione"
+            ],
+            "gabarito": "Finisco la lezione",
+            "explicacao": "Listen for the «sk» of «finisco».",
+            "id": "it-006-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ho molta sete",
+            "opcoes": [
+              "Ho molta sete",
+              "Ho molto sonno",
+              "Ho molta fame"
+            ],
+            "gabarito": "Ho molta sete",
+            "explicacao": "Listen for «sete» and «molta».",
+            "id": "it-006-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Non capisco",
+            "respostaEsperada": "Non capisco",
+            "explicacao": "Write: Non capisco.",
+            "id": "it-006-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Voi dormite molto",
+            "respostaEsperada": "Voi dormite molto",
+            "explicacao": "Write: Voi dormite molto.",
+            "id": "it-006-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Then you're very good at this!»",
+            "opcoes": [
+              "tu",
+              "brava!",
+              "molto",
+              "Allora",
+              "sei"
+            ],
+            "gabarito": "Allora tu sei molto brava!",
+            "explicacao": "Write: Allora tu sei molto brava!",
+            "id": "it-006-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Ho freddo",
+            "respostaEsperada": "Ho freddo",
+            "explicacao": "Write: Ho freddo.",
+            "id": "it-006-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then show the answer.",
+            "audio": "Marco, leggi il giornale ogni giorno?",
+            "respostaEsperada": "Marco, leggi il giornale ogni giorno?",
+            "explicacao": "Marco, do you read the newspaper every day?",
+            "id": "it-006-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the «voi» form of «scrivere»?",
+            "opcoes": [
+              "scrivete",
+              "scrivite",
+              "scrivate"
+            ],
+            "gabarito": "scrivete",
+            "explicacao": "«-ere» takes «-ete».",
+            "id": "it-006-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the «io» form of «capire»?",
+            "opcoes": [
+              "capisco",
+              "capo",
+              "capio"
+            ],
+            "gabarito": "capisco",
+            "explicacao": "A verb of the «-isc-» group.",
+            "id": "it-006-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How does «leggi» sound?",
+            "opcoes": [
+              "LEH-jee",
+              "LEHG-gee",
+              "LEH-gwee"
+            ],
+            "gabarito": "LEH-jee",
+            "explicacao": "«gg» before «i» sounds like «j».",
+            "id": "it-006-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Allora tu sei molto brava!",
+            "respostaEsperada": "Allora tu sei molto brava!",
+            "explicacao": "Then you're very good at this!",
+            "id": "it-006-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I'm hot»?",
+            "opcoes": [
+              "Ho caldo.",
+              "Sono caldo.",
+              "Ho brodo."
+            ],
+            "gabarito": "Ho caldo.",
+            "explicacao": "Sensations use «avere».",
+            "id": "it-006-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Noi ___ il giornale. (we read)",
+            "opcoes": [
+              "leggiamo",
+              "leggete",
+              "leggono"
+            ],
+            "gabarito": "leggiamo",
+            "explicacao": "«noi leggiamo».",
+            "id": "it-006-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Lei ___ la lezione. (finishes)",
+            "opcoes": [
+              "finisce",
+              "finisci",
+              "finiamo"
+            ],
+            "gabarito": "finisce",
+            "explicacao": "«-isc-» group: «lei finisce».",
+            "id": "it-006-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then show the answer.",
+            "audio": "Io preferisco leggere la mattina. Capisci tutto?",
+            "respostaEsperada": "Io preferisco leggere la mattina. Capisci tutto?",
+            "explicacao": "I prefer to read in the morning. Do you understand everything?",
+            "id": "it-006-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ho molta ___ . (thirst)",
+            "opcoes": [
+              "sete",
+              "sonno",
+              "caldo"
+            ],
+            "gabarito": "sete",
+            "explicacao": "«Sete» is feminine: «molta».",
+            "id": "it-006-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «sentire» mean?",
+            "audio": "sentire",
+            "opcoes": [
+              "to sleep",
+              "to open",
+              "to hear, to feel",
+              "to sell"
+            ],
+            "gabarito": "to hear, to feel",
+            "explicacao": "«sentire» = to hear, to feel.",
+            "id": "it-006-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Loro ___ molto. (sleep)",
+            "opcoes": [
+              "dormono",
+              "dormiamo",
+              "dormite"
+            ],
+            "gabarito": "dormono",
+            "explicacao": "«loro dormono».",
+            "id": "it-006-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Non capisco tutto, ma leggo ogni giorno.»",
+            "opcoes": [
+              "Non",
+              "capisco",
+              "tutto,",
+              "ma",
+              "leggo",
+              "ogni",
+              "giorno"
+            ],
+            "gabarito": "Non capisco tutto, ma leggo ogni giorno.",
+            "explicacao": "Two sentences joined by «ma».",
+            "id": "it-006-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Giulia ha molta fame.»",
+            "opcoes": [
+              "Giulia",
+              "ha",
+              "molta",
+              "fame"
+            ],
+            "gabarito": "Giulia ha molta fame.",
+            "explicacao": "A sensation with «avere».",
+            "id": "it-006-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Italian: I read the newspaper, I write messages and I am thirsty.",
+            "respostaEsperada": "Leggo il giornale, scrivo messaggi e ho sete.",
+            "id": "it-006-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «ho fame» mean?",
+            "audio": "ho fame",
+            "opcoes": [
+              "I'm hungry",
+              "to understand",
+              "I'm cold",
+              "to write"
+            ],
+            "gabarito": "I'm hungry",
+            "explicacao": "«ho fame» = I'm hungry.",
+            "id": "it-006-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Io ___ un messaggio. (write)",
+            "opcoes": [
+              "scrive",
+              "scrivo",
+              "scrivi"
+            ],
+            "gabarito": "scrivo",
+            "explicacao": "With «io» the ending is «-o».",
+            "id": "it-006-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then show the answer.",
+            "audio": "Non capisco tutto, ma finisco una pagina ogni giorno.",
+            "respostaEsperada": "Non capisco tutto, ma finisco una pagina ogni giorno.",
+            "explicacao": "I don't understand everything, but I finish one page a day.",
+            "id": "it-006-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Noi ___ il treno. (we take)",
+            "opcoes": [
+              "prendiamo",
+              "prendete",
+              "prendono"
+            ],
+            "gabarito": "prendiamo",
+            "explicacao": "With «noi» the ending is «-iamo».",
+            "id": "it-006-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Loro ___ la lezione. (finish)",
+            "opcoes": [
+              "finiamo",
+              "finiscono",
+              "finiscano"
+            ],
+            "gabarito": "finiscono",
+            "explicacao": "«Finire» takes «-isc-» with «loro» too.",
+            "id": "it-006-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tu ___ tutto? (understand)",
+            "opcoes": [
+              "capisci",
+              "capi",
+              "capiscono"
+            ],
+            "gabarito": "capisci",
+            "explicacao": "«Capire» takes «-isc-» with «tu»: «capisci».",
+            "id": "it-006-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «preferire» mean?",
+            "audio": "preferire",
+            "opcoes": [
+              "to hear, to feel",
+              "to take, to have (food or drink)",
+              "to prefer",
+              "to live"
+            ],
+            "gabarito": "to prefer",
+            "explicacao": "«preferire» = to prefer.",
+            "id": "it-006-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Hai ___? (cold)",
+            "opcoes": [
+              "caldo",
+              "fame",
+              "freddo"
+            ],
+            "gabarito": "freddo",
+            "explicacao": "Sensations are expressed with «avere»: «hai freddo».",
+            "id": "it-006-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I'm very hungry»?",
+            "opcoes": [
+              "Ho molta fame.",
+              "Ho molto fame.",
+              "Sono fame."
+            ],
+            "gabarito": "Ho molta fame.",
+            "explicacao": "«Fame» is feminine, so «molta»; and use «avere».",
+            "id": "it-006-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the «voi» form of «partire»?",
+            "opcoes": [
+              "partete",
+              "partite",
+              "partiscono"
+            ],
+            "gabarito": "partite",
+            "explicacao": "In «-ire» verbs the ending of «voi» is «-ite».",
+            "id": "it-006-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then show the answer.",
+            "audio": "Bravo! Io finisco un libro ogni mese.",
+            "respostaEsperada": "Bravo! Io finisco un libro ogni mese.",
+            "explicacao": "Very good! I finish one book a month.",
+            "id": "it-006-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which verb takes «-isc-» in the present?",
+            "opcoes": [
+              "dormire",
+              "aprire",
+              "preferire"
+            ],
+            "gabarito": "preferire",
+            "explicacao": "«Preferire» belongs to the «-isc-» group: «preferisco».",
+            "id": "it-006-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «dormire» mean?",
+            "audio": "dormire",
+            "opcoes": [
+              "I'm hungry",
+              "to sleep",
+              "to write",
+              "I'm thirsty"
+            ],
+            "gabarito": "to sleep",
+            "explicacao": "«dormire» = to sleep.",
+            "id": "it-006-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «Prendo un caffè» mean at the bar?",
+            "opcoes": [
+              "I sell a coffee.",
+              "I'm having a coffee.",
+              "I'm making a coffee."
+            ],
+            "gabarito": "I'm having a coffee.",
+            "explicacao": "«Prendere» also means to have a drink.",
+            "id": "it-006-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Noi preferiamo leggere la sera.»",
+            "opcoes": [
+              "Noi",
+              "preferiamo",
+              "leggere",
+              "la",
+              "sera."
+            ],
+            "gabarito": "Noi preferiamo leggere la sera.",
+            "explicacao": "«Preferire» with «noi» does not take «-isc-».",
+            "id": "it-006-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Marco apre la finestra.»",
+            "opcoes": [
+              "Marco",
+              "apre",
+              "la",
+              "finestra."
+            ],
+            "gabarito": "Marco apre la finestra.",
+            "explicacao": "«Aprire» with «lui» ends in «-e».",
+            "id": "it-006-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Italian: I understand everything, but I don't write much.",
+            "respostaEsperada": "Capisco tutto, ma non scrivo molto.",
+            "id": "it-006-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Italian: We are very cold and very sleepy.",
+            "respostaEsperada": "Abbiamo molto freddo e molto sonno.",
+            "id": "it-006-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Tell out loud what your Sunday is like: what you read, write, prefer, what you finish and how you feel (hunger, sleep, heat)."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Conjugate one verb from each group out loud (leggere, dormire, finire) and use each one in a negative sentence."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-006.json",
+  "responsavel": null
+}

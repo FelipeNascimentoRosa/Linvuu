@@ -1,0 +1,196 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 18,
+  "fase": 2,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Articles, plural and c'è / ci sono: The plural of nouns",
+  "objetivo": "Lesson 5, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 5,
+    "titulo": "Articles, plural and c'è / ci sono",
+    "objetivo": "Choose the right definite and indefinite article (il, lo, l', la, un, uno, una, un'), form the plural of nouns, and say what exists in a place with «c'è» and «ci sono».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "The plural of nouns",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "i libri",
+            "translit": "ee LEE-bree",
+            "pt": "the books",
+            "en": "",
+            "audio": "i libri"
+          },
+          {
+            "ru": "le penne",
+            "translit": "leh PEHN-neh",
+            "pt": "the pens",
+            "en": "",
+            "audio": "le penne"
+          },
+          {
+            "ru": "gli zaini",
+            "translit": "lyee DZAH-ee-nee",
+            "pt": "the backpacks",
+            "en": "",
+            "audio": "gli zaini"
+          },
+          {
+            "ru": "gli studenti",
+            "translit": "lyee stoo-DEHN-tee",
+            "pt": "the students",
+            "en": "",
+            "audio": "gli studenti"
+          },
+          {
+            "ru": "le amiche",
+            "translit": "leh ah-MEE-keh",
+            "pt": "the friends (female)",
+            "en": "",
+            "audio": "le amiche"
+          },
+          {
+            "ru": "i caffè",
+            "translit": "ee kahf-FEH",
+            "pt": "the coffees",
+            "en": "",
+            "audio": "i caffè"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Plural: -o → -i, -a → -e, -e → -i",
+        "explicacao": "STEP 1: the Italian plural changes the final vowel and adds no «s». Nouns in «-o» form the plural in «-i»: «libro» becomes «libri». Those in «-a» form the plural in «-e»: «penna» becomes «penne». Those in «-e» form the plural in «-i»: «studente» becomes «studenti». STEP 2: the articles have plurals too. The plural of «il» is «i» («i libri»). The plural of «lo» and masculine «l'» is «gli» («gli zaini», «gli amici»). The plural of «la» and feminine «l'» is «le» («le penne», «le amiche»). STEP 3: «-ca» and «-ga» become «-che» and «-ghe», keeping the hard sound: «amica» becomes «amiche», «riga» becomes «righe». STEP 4: «-co» and «-go» vary: «amico» becomes «amici»; «lago» becomes «laghi». Listen to the audio and learn word by word. STEP 5: these stay the same in the plural: words with a final accent («il caffè» and «i caffè», «la città» and «le città», «l'università» and «le università»), words ending in a consonant («il bar» and «i bar», «il film» and «i film») and shortened words («la foto» and «le foto»). STEP 6: some words in «-ma» form the plural in «-i»: «il problema» becomes «i problemi». Some change shape: «l'uomo» becomes «gli uomini». STEP 7: after a number, the noun goes into the plural: «due libri», «tre penne», «dieci studenti». STEP 8: the adjective agrees too: «gli amici simpatici», «le amiche simpatiche».",
+        "comparacao": "In English the plural almost always adds «-s» («book, books»). In Italian, «s» does not make a plural: you change the final vowel («libro, libri»). That is why «i libris» or «le penns» are wrong, and why a word like «caffè», which ends in an accent, does not change at all.",
+        "tabela": [
+          {
+            "tipo": "-o → -i",
+            "singular": "il libro",
+            "plural": "i libri"
+          },
+          {
+            "tipo": "-a → -e",
+            "singular": "la penna",
+            "plural": "le penne"
+          },
+          {
+            "tipo": "-e → -i",
+            "singular": "lo studente",
+            "plural": "gli studenti"
+          },
+          {
+            "tipo": "-ca → -che",
+            "singular": "l'amica",
+            "plural": "le amiche"
+          },
+          {
+            "tipo": "-co → -ci (varia)",
+            "singular": "l'amico",
+            "plural": "gli amici"
+          },
+          {
+            "tipo": "with an accent",
+            "singular": "il caffè",
+            "plural": "i caffè"
+          },
+          {
+            "tipo": "consonant",
+            "singular": "il bar",
+            "plural": "i bar"
+          },
+          {
+            "tipo": "-ma → -mi",
+            "singular": "il problema",
+            "plural": "i problemi"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "le amice",
+            "certo": "le amiche",
+            "motivo": "«-ca» becomes «-che» to keep the hard sound of «c»."
+          },
+          {
+            "errado": "i caffès",
+            "certo": "i caffè",
+            "motivo": "Words with a final accent do not change in the plural."
+          },
+          {
+            "errado": "i penne",
+            "certo": "le penne",
+            "motivo": "«Penna» is feminine; the plural of the article is «le»."
+          },
+          {
+            "errado": "i zaini",
+            "certo": "gli zaini",
+            "motivo": "«Lo zaino» takes «gli» in the plural."
+          }
+        ],
+        "tag": "Plural"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "Una penna per Marco / A pen for Marco",
+        "contexto": "Marco forgot his pen, and Giulia helps him.",
+        "linhas": [
+          {
+            "personagem": "Marco",
+            "ru": "— Giulia, ho un problema: non ho la penna!",
+            "pt": "— Giulia, I have a problem: I don't have my pen!",
+            "audio": "Giulia, ho un problema: non ho la penna!"
+          },
+          {
+            "personagem": "Giulia",
+            "ru": "— Nessun problema. Ho due penne.",
+            "pt": "— No problem. I have two pens.",
+            "audio": "Nessun problema. Ho due penne."
+          },
+          {
+            "personagem": "Marco",
+            "ru": "— Davvero? Grazie! Sei un'amica fantastica.",
+            "pt": "— Really? Thanks! You're a fantastic friend.",
+            "audio": "Davvero? Grazie! Sei un'amica fantastica."
+          },
+          {
+            "personagem": "Giulia",
+            "ru": "— Ecco, una penna blu. Hai anche i libri?",
+            "pt": "— Here, a blue pen. Do you have the books too?",
+            "audio": "Ecco, una penna blu. Hai anche i libri?"
+          },
+          {
+            "personagem": "Marco",
+            "ru": "— Sì, ho i libri e un quaderno.",
+            "pt": "— Yes, I have the books and a notebook.",
+            "audio": "Sì, ho i libri e un quaderno."
+          },
+          {
+            "personagem": "Giulia",
+            "ru": "— Allora siamo pronti per la lezione!",
+            "pt": "— Then we're ready for class!",
+            "audio": "Allora siamo pronti per la lezione!"
+          }
+        ]
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Give the definite and the indefinite article of five words. Which article is used before «zaino»? And before «amica»?"
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-005.json",
+  "responsavel": null
+}

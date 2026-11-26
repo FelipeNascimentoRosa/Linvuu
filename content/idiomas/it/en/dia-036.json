@@ -1,0 +1,505 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 36,
+  "fase": 4,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Time, days and months: Review and practice of lesson 9",
+  "objetivo": "Lesson 9, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 9,
+    "titulo": "Time, days and months",
+    "objetivo": "Ask and tell the time (including «e un quarto», «e mezza» and «meno»), arrange meetings with «a che ora», use the days of the week and the months, and give the date and your birthday.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 9",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Sono le quattro e mezza",
+            "opcoes": [
+              "Sono le quattro e mezza",
+              "Sono le quattro e un quarto",
+              "Sono le cinque meno un quarto"
+            ],
+            "gabarito": "Sono le quattro e mezza",
+            "explicacao": "Listen for «e mezza».",
+            "id": "it-009-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "È l'una",
+            "opcoes": [
+              "È l'una",
+              "Sono le due",
+              "È mezzogiorno"
+            ],
+            "gabarito": "È l'una",
+            "explicacao": "Listen for the singular «è».",
+            "id": "it-009-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Il compleanno è il 15 maggio",
+            "opcoes": [
+              "Il compleanno è il 15 maggio",
+              "Il compleanno è il 5 maggio",
+              "Il compleanno è il 15 marzo"
+            ],
+            "gabarito": "Il compleanno è il 15 maggio",
+            "explicacao": "Listen for «quindici» and «maggio».",
+            "id": "it-009-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Che ora è",
+            "respostaEsperada": "Che ora è",
+            "explicacao": "Write: Che ora è.",
+            "id": "it-009-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Alle otto di sera",
+            "respostaEsperada": "Alle otto di sera",
+            "explicacao": "Write: Alle otto di sera.",
+            "id": "it-009-e05"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Build the sentence: «Perfect! See you Thursday!»",
+            "opcoes": [
+              "giovedì!",
+              "A",
+              "Perfetto!"
+            ],
+            "gabarito": "Perfetto! A giovedì!",
+            "explicacao": "Write: Perfetto! A giovedì!",
+            "id": "it-009-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Oggi è lunedì",
+            "respostaEsperada": "Oggi è lunedì",
+            "explicacao": "Write: Oggi è lunedì.",
+            "id": "it-009-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then show the answer.",
+            "audio": "Giulia, quando studiamo italiano insieme?",
+            "respostaEsperada": "Giulia, quando studiamo italiano insieme?",
+            "explicacao": "Giulia, when do we study Italian together?",
+            "id": "it-009-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say 7:45?",
+            "opcoes": [
+              "Sono le otto meno un quarto.",
+              "Sono le sette e un quarto.",
+              "Sono le otto e un quarto."
+            ],
+            "gabarito": "Sono le otto meno un quarto.",
+            "explicacao": "After the half hour, you subtract from the next hour.",
+            "id": "it-009-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which form is correct for one o'clock?",
+            "opcoes": [
+              "È l'una.",
+              "Sono l'una.",
+              "È le una."
+            ],
+            "gabarito": "È l'una.",
+            "explicacao": "One o'clock is singular.",
+            "id": "it-009-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I work on Mondays»?",
+            "opcoes": [
+              "Il lunedì lavoro.",
+              "Lunedì lavoro.",
+              "Nel lunedì lavoro."
+            ],
+            "gabarito": "Il lunedì lavoro.",
+            "explicacao": "Habit: article.",
+            "id": "it-009-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and write.",
+            "audio": "Perfetto! A giovedì!",
+            "respostaEsperada": "Perfetto! A giovedì!",
+            "explicacao": "Perfect! See you Thursday!",
+            "id": "it-009-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «October 7th»?",
+            "opcoes": [
+              "il 7 ottobre",
+              "7 di ottobre",
+              "il sette di ottobre"
+            ],
+            "gabarito": "il 7 ottobre",
+            "explicacao": "Article + number + month.",
+            "id": "it-009-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ le tre. (it is)",
+            "opcoes": [
+              "Sono",
+              "È",
+              "Siamo"
+            ],
+            "gabarito": "Sono",
+            "explicacao": "More than one o'clock: «sono».",
+            "id": "it-009-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "A che ___ ? (time)",
+            "opcoes": [
+              "ora",
+              "ore",
+              "orario"
+            ],
+            "gabarito": "ora",
+            "explicacao": "«A che ora?»",
+            "id": "it-009-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then show the answer.",
+            "audio": "Il lunedì lavoro, e il martedì ho lezione.",
+            "respostaEsperada": "Il lunedì lavoro, e il martedì ho lezione.",
+            "explicacao": "On Mondays I work, and on Tuesdays I have class.",
+            "id": "it-009-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Oggi ___ venerdì. (is)",
+            "opcoes": [
+              "è",
+              "sono",
+              "ha"
+            ],
+            "gabarito": "è",
+            "explicacao": "A day of the week takes «è».",
+            "id": "it-009-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «novembre» mean?",
+            "audio": "novembre",
+            "opcoes": [
+              "November",
+              "half past",
+              "January",
+              "noon"
+            ],
+            "gabarito": "November",
+            "explicacao": "«novembre» = November.",
+            "id": "it-009-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Alle sei e ___ . (half)",
+            "opcoes": [
+              "mezza",
+              "mezzo giorno",
+              "quarto"
+            ],
+            "gabarito": "mezza",
+            "explicacao": "«E mezza».",
+            "id": "it-009-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Alle otto di sera.»",
+            "opcoes": [
+              "Alle",
+              "otto",
+              "di",
+              "sera"
+            ],
+            "gabarito": "Alle otto di sera.",
+            "explicacao": "Time with a part of the day.",
+            "id": "it-009-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Oggi è il 7 ottobre.»",
+            "opcoes": [
+              "Oggi",
+              "è",
+              "il",
+              "7",
+              "ottobre"
+            ],
+            "gabarito": "Oggi è il 7 ottobre.",
+            "explicacao": "Date with an article.",
+            "id": "it-009-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Italian: What time is it? It's a quarter past two. Today is Thursday, March 12th.",
+            "respostaEsperada": "Che ora è? Sono le due e un quarto. Oggi è giovedì 12 marzo.",
+            "id": "it-009-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «Sono le tre» mean?",
+            "audio": "Sono le tre",
+            "opcoes": [
+              "August",
+              "it's three o'clock",
+              "March",
+              "what time is it?"
+            ],
+            "gabarito": "it's three o'clock",
+            "explicacao": "«Sono le tre» = it's three o'clock.",
+            "id": "it-009-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "È ___. (noon)",
+            "opcoes": [
+              "mezzanotte",
+              "mezzogiorno",
+              "mezza"
+            ],
+            "gabarito": "mezzogiorno",
+            "explicacao": "«Mezzogiorno» is noon; «mezzanotte» is midnight.",
+            "id": "it-009-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then show the answer.",
+            "audio": "Giovedì va bene. A che ora?",
+            "respostaEsperada": "Giovedì va bene. A che ora?",
+            "explicacao": "Thursday is fine. What time?",
+            "id": "it-009-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Sono le sette e un ___. (fifteen minutes)",
+            "opcoes": [
+              "quarto",
+              "quarta",
+              "quattro"
+            ],
+            "gabarito": "quarto",
+            "explicacao": "Fifteen minutes is «un quarto».",
+            "id": "it-009-e19"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il ___ maggio è festa. (first)",
+            "opcoes": [
+              "uno",
+              "primo",
+              "prima"
+            ],
+            "gabarito": "primo",
+            "explicacao": "The 1st uses the ordinal: «il primo maggio».",
+            "id": "it-009-e20"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ domenica dormo molto. (on Sundays)",
+            "opcoes": [
+              "La",
+              "Il",
+              "Un"
+            ],
+            "gabarito": "La",
+            "explicacao": "«Domenica» is feminine; the article indicates habit.",
+            "id": "it-009-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «aprile» mean?",
+            "audio": "aprile",
+            "opcoes": [
+              "July",
+              "August",
+              "February",
+              "April"
+            ],
+            "gabarito": "April",
+            "explicacao": "«aprile» = April.",
+            "id": "it-009-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Alle sei ___ sera. (in the)",
+            "opcoes": [
+              "a",
+              "di",
+              "in"
+            ],
+            "gabarito": "di",
+            "explicacao": "You say «di sera» to indicate the period of the day.",
+            "id": "it-009-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say 1:30?",
+            "opcoes": [
+              "Sono l'una e mezza.",
+              "È l'una e mezza.",
+              "Sono le una e mezza."
+            ],
+            "gabarito": "È l'una e mezza.",
+            "explicacao": "For one o'clock use the singular verb: «è l'una».",
+            "id": "it-009-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which day comes after «martedì»?",
+            "opcoes": [
+              "giovedì",
+              "lunedì",
+              "mercoledì"
+            ],
+            "gabarito": "mercoledì",
+            "explicacao": "Tuesday (martedì), Wednesday (mercoledì).",
+            "id": "it-009-e24"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud, and then show the answer.",
+            "audio": "Alle sei e mezza di sera, al bar?",
+            "respostaEsperada": "Alle sei e mezza di sera, al bar?",
+            "explicacao": "At six thirty in the evening, at the bar?",
+            "id": "it-009-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «in March»?",
+            "opcoes": [
+              "in marzo",
+              "da marzo",
+              "su marzo"
+            ],
+            "gabarito": "in marzo",
+            "explicacao": "For months, «a» or «in» are used; here only «in» is among the options.",
+            "id": "it-009-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «agosto» mean?",
+            "audio": "agosto",
+            "opcoes": [
+              "January",
+              "Sunday",
+              "July",
+              "August"
+            ],
+            "gabarito": "August",
+            "explicacao": "«agosto» = August.",
+            "id": "it-009-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you write «Monday» in the middle of a sentence?",
+            "opcoes": [
+              "lunedì",
+              "Lunedì",
+              "lunedi"
+            ],
+            "gabarito": "lunedì",
+            "explicacao": "Days of the week go in lowercase and take a grave accent.",
+            "id": "it-009-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Sono le sei meno un quarto.»",
+            "opcoes": [
+              "Sono",
+              "le",
+              "sei",
+              "meno",
+              "un",
+              "quarto."
+            ],
+            "gabarito": "Sono le sei meno un quarto.",
+            "explicacao": "For 5:45, say «sei meno un quarto».",
+            "id": "it-009-e27"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Il compleanno di Marco è il primo maggio.»",
+            "opcoes": [
+              "Il",
+              "compleanno",
+              "di",
+              "Marco",
+              "è",
+              "il",
+              "primo",
+              "maggio."
+            ],
+            "gabarito": "Il compleanno di Marco è il primo maggio.",
+            "explicacao": "Dates take «il» and the 1st uses «primo».",
+            "id": "it-009-e28"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Italian: On Mondays I work; on Sundays I sleep.",
+            "respostaEsperada": "Il lunedì lavoro; la domenica dormo.",
+            "id": "it-009-e29"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Write in Italian: My birthday is on April 3rd.",
+            "respostaEsperada": "Il mio compleanno è il 3 aprile.",
+            "id": "it-009-e30"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Arrange a meeting with a friend out loud: day, time and place. Then confirm: «Allora, giovedì alle sei e mezza al bar. A giovedì!»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Say your week out loud: three work days with times, and your birthday."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-009.json",
+  "responsavel": null
+}

@@ -1,0 +1,180 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 41,
+  "fase": 5,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Town, places and directions: Places in town and where they are",
+  "objetivo": "Lesson 11, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 11,
+    "titulo": "Town, places and directions",
+    "objetivo": "Name places in the city, say where things are with «vicino a», «davanti a» and similar expressions, ask for and understand directions, and choose a means of transport.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Places in town and where they are",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "la stazione",
+            "translit": "lah stah-TSYOH-neh",
+            "pt": "the station",
+            "en": "",
+            "audio": "la stazione"
+          },
+          {
+            "ru": "la farmacia",
+            "translit": "lah far-mah-CHEE-ah",
+            "pt": "the pharmacy",
+            "en": "",
+            "audio": "la farmacia"
+          },
+          {
+            "ru": "la banca",
+            "translit": "lah BAHN-kah",
+            "pt": "the bank",
+            "en": "",
+            "audio": "la banca"
+          },
+          {
+            "ru": "la posta",
+            "translit": "lah POH-stah",
+            "pt": "the post office",
+            "en": "",
+            "audio": "la posta"
+          },
+          {
+            "ru": "il supermercato",
+            "translit": "eel soo-pehr-mehr-KAH-toh",
+            "pt": "the supermarket",
+            "en": "",
+            "audio": "il supermercato"
+          },
+          {
+            "ru": "la piazza",
+            "translit": "lah PYAHT-tsah",
+            "pt": "the square",
+            "en": "",
+            "audio": "la piazza"
+          },
+          {
+            "ru": "la chiesa",
+            "translit": "lah KYEH-zah",
+            "pt": "the church",
+            "en": "",
+            "audio": "la chiesa"
+          },
+          {
+            "ru": "l'ospedale",
+            "translit": "lohs-peh-DAH-leh",
+            "pt": "the hospital",
+            "en": "",
+            "audio": "l'ospedale"
+          },
+          {
+            "ru": "il museo",
+            "translit": "eel moo-ZEH-oh",
+            "pt": "the museum",
+            "en": "",
+            "audio": "il museo"
+          },
+          {
+            "ru": "il centro",
+            "translit": "eel CHEHN-troh",
+            "pt": "the center",
+            "en": "",
+            "audio": "il centro"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Where is it? Dov'è and the words of place",
+        "explicacao": "STEP 1: to ask where one thing is, use «Dov'è…?» (dove + è): «Dov'è la stazione?». For several things, «Dove sono…?»: «Dove sono i bagni?». STEP 2: to answer, use «essere» or «trovarsi»: «La stazione è in centro.» «Il museo si trova in via Roma.» STEP 3: the place words almost always come with a short preposition after them: «vicino a» (near), «lontano da» (far from), «davanti a» (in front of), «dietro a» (behind), «accanto a» (next to), «di fronte a» (opposite), «in fondo a» (at the end of). English says «near the station» with no extra word, but Italian adds a preposition: «vicino alla stazione». STEP 4: if a noun with an article follows, the preposition merges with the article (lesson 10): «vicino alla posta», «davanti al museo», «lontano dalla stazione». STEP 5: «tra» and «fra» (between) mean the same: «La banca è tra la posta e la farmacia.» STEP 6: «in» takes no article with many fixed words: «in centro», «in piazza», «in via Verdi». With «via» and «piazza» plus a proper name, use «in via…» and «in piazza…».",
+        "comparacao": "English says «near the post office» and «far from the hospital»; Italian adds a short preposition after the word: «a» after «vicino», «davanti», «dietro» and «accanto», and «da» only after «lontano». Watch the look-alike «davanti» (in front of) and «avanti» (forward, ahead).",
+        "tabela": [
+          {
+            "italiano": "vicino a",
+            "pt": "near",
+            "exemplo": "La farmacia è vicino alla stazione."
+          },
+          {
+            "italiano": "lontano da",
+            "pt": "far from",
+            "exemplo": "L'ospedale è lontano dal centro."
+          },
+          {
+            "italiano": "davanti a",
+            "pt": "in front of",
+            "exemplo": "Il bar è davanti al museo."
+          },
+          {
+            "italiano": "dietro a",
+            "pt": "behind",
+            "exemplo": "Il parcheggio è dietro alla chiesa."
+          },
+          {
+            "italiano": "accanto a",
+            "pt": "next to",
+            "exemplo": "La posta è accanto alla banca."
+          },
+          {
+            "italiano": "di fronte a",
+            "pt": "opposite",
+            "exemplo": "Il supermercato è di fronte alla piazza."
+          },
+          {
+            "italiano": "tra / fra",
+            "pt": "entre",
+            "exemplo": "La banca è tra la posta e il bar."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Dove è la stazione?",
+            "certo": "Dov'è la stazione?",
+            "motivo": "In speech and ordinary writing, «dove è» becomes «dov'è»."
+          },
+          {
+            "errado": "La banca è vicino la posta.",
+            "certo": "La banca è vicino alla posta.",
+            "motivo": "After «vicino» comes «a», which merges with the article."
+          },
+          {
+            "errado": "Dov'è i bagni?",
+            "certo": "Dove sono i bagni?",
+            "motivo": "A plural takes «dove sono»."
+          },
+          {
+            "errado": "Il museo è lontano a casa.",
+            "certo": "Il museo è lontano da casa.",
+            "motivo": "«Lontano» takes «da», not «a»."
+          }
+        ],
+        "tag": "Place"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Describe your street or your neighborhood out loud: «Vicino a casa mia c'è… Davanti a… c'è… Dietro… Lontano da casa mia c'è…»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Answer out loud: «Che ore sono? Che giorno è oggi? Com'è la tua giornata?» Then say one sentence with «nella», «al» or «dal» (the articulated prepositions of lesson 10)."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-011.json",
+  "responsavel": null
+}
