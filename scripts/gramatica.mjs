@@ -2,7 +2,7 @@
 //   node scripts/gramatica.mjs ru  →  content/gramatica/ru.json
 import fs from 'node:fs';
 import path from 'node:path';
-import { LINGUAS, aulaTemTraducao, fonteDe, traduzirAula } from './i18n-aulas.mjs';
+import { LINGUAS, aulaTemTraducao, ehCurado, fonteDe, traduzirAula } from './i18n-aulas.mjs';
 
 const id = process.argv[2] ?? 'ru';
 const raiz = path.resolve(import.meta.dirname, '..');
@@ -51,7 +51,7 @@ for (const l of LINGUAS) {
   const arq = path.join(raiz, 'content', 'gramatica', `${id}.${l}.json`);
   // GUARDA (2026-11-11): ru/en e fr/en são gramáticas curadas à mão para quem fala inglês (colunas ENGLISH/RUSSIAN/TRANSLATION,
   // correções #414/#422/#423). Regenerar pelos mapas reporia colunas «TRADUÇÃO/RUSSO/PORTUGUÊS». Só com --forcar-curados.
-  if (['ru/en', 'fr/en'].includes(`${id}/${l}`) && !process.argv.includes('--forcar-curados')) { console.log(`gramática (${id} → ${l}): curada — arquivo servido mantido`); continue; }
+  if (ehCurado(id, l) && !process.argv.includes('--forcar-curados')) { console.log(`gramática (${id} → ${l}): curada — arquivo servido mantido`); continue; }
   if (fonteDe(id) === l || !aulas.some((a) => aulaTemTraducao(id, l, a.aula))) { fs.rmSync(arq, { force: true }); continue; }
   const p = montar(l);
   fs.writeFileSync(arq, JSON.stringify(p) + '\n');

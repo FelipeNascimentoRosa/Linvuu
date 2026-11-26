@@ -1,0 +1,3 @@
+Arquivo congelado (legado): mapas «texto PT -> texto EN» do it/en, aulas 1 e 2.
+O it/en agora é CURADO (scripts/i18n-aulas.mjs, CURADOS): content/idiomas/it/en/dia-NNN.json é a fonte, escrita em inglês
+a partir de `node scripts/ficha-alvo.mjs it <aula>`. NÃO crie novos aula-NNN.json aqui nem gere aulas por mapa 1:1.
