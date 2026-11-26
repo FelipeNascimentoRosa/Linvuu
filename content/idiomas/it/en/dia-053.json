@@ -1,0 +1,279 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 53,
+  "fase": 6,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Daily routine and reflexive verbs: Reflexive verbs",
+  "objetivo": "Lesson 14, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 14,
+    "titulo": "Daily routine and reflexive verbs",
+    "objetivo": "Talk about your daily routine with reflexive verbs (mi alzo, mi lavo, mi vesto), adverbs of frequency and sequence words, and use «ci vediamo» and other reciprocal verbs. Avoid the English-speaker traps: dropping the reflexive pronoun, writing «my» before body parts, and shying away from the double negative.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Reflexive verbs",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "svegliarsi",
+            "translit": "zveh-LYAR-see",
+            "pt": "to wake up",
+            "en": "",
+            "audio": "svegliarsi"
+          },
+          {
+            "ru": "alzarsi",
+            "translit": "ahl-TSAR-see",
+            "pt": "to get up",
+            "en": "",
+            "audio": "alzarsi"
+          },
+          {
+            "ru": "lavarsi",
+            "translit": "lah-VAR-see",
+            "pt": "to wash (oneself)",
+            "en": "",
+            "audio": "lavarsi"
+          },
+          {
+            "ru": "vestirsi",
+            "translit": "vehs-TEER-see",
+            "pt": "to get dressed",
+            "en": "",
+            "audio": "vestirsi"
+          },
+          {
+            "ru": "prepararsi",
+            "translit": "preh-pah-RAR-see",
+            "pt": "to get ready",
+            "en": "",
+            "audio": "prepararsi"
+          },
+          {
+            "ru": "farsi la doccia",
+            "translit": "FAR-see lah DOH-chah",
+            "pt": "to take a shower",
+            "en": "",
+            "audio": "farsi la doccia"
+          },
+          {
+            "ru": "riposarsi",
+            "translit": "ree-poh-ZAR-see",
+            "pt": "to rest",
+            "en": "",
+            "audio": "riposarsi"
+          },
+          {
+            "ru": "addormentarsi",
+            "translit": "ahd-dor-mehn-TAR-see",
+            "pt": "to fall asleep",
+            "en": "",
+            "audio": "addormentarsi"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Reflexive verbs: the small pronoun is not optional",
+        "explicacao": "STEP 1: a reflexive verb is one where the action comes back to the person doing it. In the dictionary it ends in «-si»: «alzarsi», «lavarsi», «vestirsi». STEP 2: English often leaves the pronoun out: «I wash», «I get up», «I get dressed». Italian keeps it: «mi lavo», «mi alzo», «mi vesto». STEP 3: take the infinitive without «-si» («alzarsi» becomes «alzare»), conjugate the verb as usual and put the pronoun in front: «mi alzo, ti alzi, si alza, ci alziamo, vi alzate, si alzano». STEP 4: the pronouns are «mi, ti, si, ci, vi, si». STEP 5: the negation goes before the pronoun: «Non mi sveglio mai presto». STEP 6: questions keep the pronoun before the verb, with no helper word: «A che ora ti alzi?». STEP 7: with body parts and clothes, Italian uses the article, not «my»: «Mi lavo le mani» (I wash my hands). The pronoun «mi» already shows whose hands they are. STEP 8: some verbs are reflexive in Italian but not in English: «svegliarsi» (to wake up), «addormentarsi» (to fall asleep), «divertirsi» (to have fun). STEP 9: after «volere», «potere», «dovere» and «sapere», the pronoun can go before the modal or attach to the infinitive: «Mi devo alzare presto» or «Devo alzarmi presto».",
+        "comparacao": "English hides the reflexive: «I get up» does not say «myself». Italian keeps it: «mi alzo», literally «I raise myself». The «my» of body parts is the other loss: English says «I wash my hands», but Italian says «mi lavo le mani», and Italian does not add «mie». The listening trap is the little word «mi»: without it, the sentence can change meaning, as «lavo le mani» would sound like «I wash the hands (of someone else)».",
+        "exemplos": [
+          {
+            "ru": "Mi alzo alle sette",
+            "pt": "I get up at seven"
+          },
+          {
+            "ru": "Mi lavo le mani",
+            "pt": "I wash my hands"
+          },
+          {
+            "ru": "Si divertono molto",
+            "pt": "They have a lot of fun"
+          },
+          {
+            "ru": "Non mi sveglio mai presto",
+            "pt": "I never wake up early"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "io",
+            "forma": "mi alzo"
+          },
+          {
+            "tipo": "tu",
+            "forma": "ti alzi"
+          },
+          {
+            "tipo": "lui / lei / Lei",
+            "forma": "si alza"
+          },
+          {
+            "tipo": "noi",
+            "forma": "ci alziamo"
+          },
+          {
+            "tipo": "voi",
+            "forma": "vi alzate"
+          },
+          {
+            "tipo": "loro",
+            "forma": "si alzano"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Io alzo alle sette",
+            "certo": "Mi alzo alle sette",
+            "motivo": "The reflexive pronoun «mi» is required."
+          },
+          {
+            "errado": "Lavo le mani",
+            "certo": "Mi lavo le mani",
+            "motivo": "Without «mi» the sentence means you wash someone else's hands."
+          },
+          {
+            "errado": "Mi lavo le mie mani",
+            "certo": "Mi lavo le mani",
+            "motivo": "The article replaces «my»: «le mani». Adding «mie» sounds unnatural unless you stress whose hands."
+          },
+          {
+            "errado": "Divertono molto",
+            "certo": "Si divertono molto",
+            "motivo": "«Divertono» alone means «they amuse (others)»; to say «they have fun», use «si divertono»."
+          }
+        ],
+        "tag": "Reflexive verbs"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 13,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Mi alzo alle sette",
+            "opcoes": [
+              "Mi alzo alle sette",
+              "Ti alzi alle sette",
+              "Mi alzo alle sei"
+            ],
+            "gabarito": "Mi alzo alle sette",
+            "explicacao": "«Mi» marks the first person.",
+            "id": "it-014-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Mi lavo le mani",
+            "opcoes": [
+              "Mi lavo le mani",
+              "Lavo le mani",
+              "Mi lavo le mie mani"
+            ],
+            "gabarito": "Mi lavo le mani",
+            "explicacao": "The article replaces «my».",
+            "id": "it-014-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Si divertono molto",
+            "opcoes": [
+              "Si divertono molto",
+              "Si diverte molto",
+              "Divertono molto"
+            ],
+            "gabarito": "Si divertono molto",
+            "explicacao": "The «they» form ends in «-ono».",
+            "id": "it-014-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Non mi sveglio mai presto",
+            "opcoes": [
+              "Non mi sveglio mai presto",
+              "Mi sveglio mai presto",
+              "Non mi sveglio sempre presto"
+            ],
+            "gabarito": "Non mi sveglio mai presto",
+            "explicacao": "«Non… mai».",
+            "id": "it-014-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Io alzo alle sette",
+              "Mi alzo alle sette",
+              "Alzo mi alle sette"
+            ],
+            "gabarito": "Mi alzo alle sette",
+            "explicacao": "Pronoun before the verb.",
+            "id": "it-014-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «mi lavo le mani» mean?",
+            "opcoes": [
+              "I wash my hands",
+              "I wash their hands",
+              "I wash the hands"
+            ],
+            "gabarito": "I wash my hands",
+            "explicacao": "The pronoun «mi» shows whose hands.",
+            "id": "it-014-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Lui ___ alza presto. (himself)",
+            "opcoes": [
+              "si",
+              "mi",
+              "ti"
+            ],
+            "gabarito": "si",
+            "explicacao": "Third person: «si».",
+            "id": "it-014-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Where does «non» go in a reflexive sentence?",
+            "opcoes": [
+              "before the pronoun",
+              "after the pronoun",
+              "at the end"
+            ],
+            "gabarito": "before the pronoun",
+            "explicacao": "«Non mi sveglio».",
+            "id": "it-014-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 1,
+        "enunciado": "Tell aloud how you start your day: «Mi sveglio alle… Mi alzo… Mi lavo… Mi vesto…»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say the six forms of «alzarsi» aloud with their pronouns."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-014.json",
+  "responsavel": null
+}

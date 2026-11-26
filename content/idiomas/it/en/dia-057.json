@@ -1,0 +1,253 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 57,
+  "fase": 6,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Shopping, clothes, colours, questo and quello: Clothes and colours",
+  "objetivo": "Lesson 15, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 15,
+    "titulo": "Shopping, clothes, colours, questo and quello",
+    "objetivo": "Name clothes and colours with the right agreement, ask about price and size, ask to try things on, and choose with «questo» and «quello». Avoid the English-speaker traps: putting the colour before the noun, «euros», and false friends such as «camerino» and «cappotto».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Clothes and colours",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "la camicia",
+            "translit": "lah kah-MEE-chah",
+            "pt": "the shirt",
+            "en": "",
+            "audio": "la camicia"
+          },
+          {
+            "ru": "i pantaloni",
+            "translit": "ee pahn-tah-LOH-nee",
+            "pt": "the pants, the trousers",
+            "en": "",
+            "audio": "i pantaloni"
+          },
+          {
+            "ru": "la gonna",
+            "translit": "lah GOHN-nah",
+            "pt": "the skirt",
+            "en": "",
+            "audio": "la gonna"
+          },
+          {
+            "ru": "il vestito",
+            "translit": "eel vehs-TEE-toh",
+            "pt": "the dress, the suit",
+            "en": "",
+            "audio": "il vestito"
+          },
+          {
+            "ru": "la giacca",
+            "translit": "lah JAHK-kah",
+            "pt": "the jacket",
+            "en": "",
+            "audio": "la giacca"
+          },
+          {
+            "ru": "le scarpe",
+            "translit": "leh SKAR-peh",
+            "pt": "the shoes",
+            "en": "",
+            "audio": "le scarpe"
+          },
+          {
+            "ru": "la maglietta",
+            "translit": "lah mah-LYEHT-tah",
+            "pt": "the T-shirt",
+            "en": "",
+            "audio": "la maglietta"
+          },
+          {
+            "ru": "il cappotto",
+            "translit": "eel kahp-POHT-toh",
+            "pt": "the coat (not a cap!)",
+            "en": "",
+            "audio": "il cappotto"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Colour adjectives come after the noun and agree with it",
+        "explicacao": "STEP 1: English puts the colour before the noun and never changes it: «a red skirt», «two white shirts». Italian puts it after the noun and makes it agree in gender and number: «una gonna rossa», «due camicie bianche». STEP 2: colours ending in «-o» have four forms: «rosso, rossa, rossi, rosse». STEP 3: colours ending in «-e» have two: «verde, verdi», «marrone, marroni». STEP 4: some colours never change: «blu», «rosa» and «viola». Compound colours such as «verde scuro» do not change either. STEP 5: «azzurro» is light blue and changes like any «-o» colour (azzurro, azzurra, azzurri, azzurre); «blu» is dark blue and never changes. English «blue» splits into two Italian colours. STEP 6: the order is noun first, colour second: «una gonna rossa», not «una rossa gonna». STEP 7: «i pantaloni» is plural, like English «pants» or «trousers»: «I pantaloni sono neri». «Le scarpe» is plural too. STEP 8: to say what you are wearing, use «portare» or «indossare» («Oggi porto una giacca blu») or «mettersi» for putting on («Mi metto le scarpe nere»). STEP 9: «il cappotto» is a coat, not a cap, and «la camicia» is a shirt, not a camisole. STEP 10: «il vestito» can be a dress (for a woman) or a suit (for a man).",
+        "comparacao": "English adjectives come before the noun and do not change. Italian colour adjectives come after the noun and must agree. Two small shifts to retrain: the position («una gonna rossa», with the colour second) and the ending («rossa», «rosse»). The three invariable colours, «blu», «rosa» and «viola», are the easy ones because they behave like English.",
+        "exemplos": [
+          {
+            "ru": "Una gonna rossa",
+            "pt": "A red skirt"
+          },
+          {
+            "ru": "la camicia",
+            "pt": "the shirt"
+          },
+          {
+            "ru": "il vestito",
+            "pt": "the dress, the suit"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "-o / -a / -i / -e",
+            "forma": "rosso, rossa, rossi, rosse"
+          },
+          {
+            "tipo": "-e (two forms)",
+            "forma": "verde, verdi"
+          },
+          {
+            "tipo": "never change",
+            "forma": "blu, rosa, viola"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Una gonna rosso",
+            "certo": "Una gonna rossa",
+            "motivo": "The colour agrees with «gonna», which is feminine."
+          },
+          {
+            "errado": "Una rossa gonna",
+            "certo": "Una gonna rossa",
+            "motivo": "Colours normally follow the noun; placed before it, the phrase sounds unnatural."
+          }
+        ],
+        "tag": "Clothes and colours"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 10,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Una gonna rossa",
+            "opcoes": [
+              "Una gonna rossa",
+              "Una gonna rosso",
+              "Una rossa gonna"
+            ],
+            "gabarito": "Una gonna rossa",
+            "explicacao": "Noun first, then the agreeing colour.",
+            "id": "it-015-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "il vestito",
+            "opcoes": [
+              "il vestito",
+              "la vestito",
+              "lo vestito"
+            ],
+            "gabarito": "il vestito",
+            "explicacao": "Masculine.",
+            "id": "it-015-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "la camicia",
+            "opcoes": [
+              "la camicia",
+              "il camicia",
+              "la camicetta"
+            ],
+            "gabarito": "la camicia",
+            "explicacao": "Feminine.",
+            "id": "it-015-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Quel vestito costa cento euro",
+            "opcoes": [
+              "Quel vestito costa cento euro",
+              "Quel vestito costa duecento euro",
+              "Quella vestito costa cento euro"
+            ],
+            "gabarito": "Quel vestito costa cento euro",
+            "explicacao": "«Cento» is 100.",
+            "id": "it-015-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Where does the colour go?",
+            "opcoes": [
+              "after the noun",
+              "before the noun",
+              "either, with no change"
+            ],
+            "gabarito": "after the noun",
+            "explicacao": "«Una gonna rossa».",
+            "id": "it-015-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which colour does NOT change?",
+            "opcoes": [
+              "blu",
+              "rosso",
+              "bianco"
+            ],
+            "gabarito": "blu",
+            "explicacao": "«Blu», «rosa» and «viola» are invariable.",
+            "id": "it-015-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Due camicie ___. (white)",
+            "opcoes": [
+              "bianche",
+              "bianco",
+              "bianca"
+            ],
+            "gabarito": "bianche",
+            "explicacao": "Feminine plural.",
+            "id": "it-015-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is «il cappotto»?",
+            "opcoes": [
+              "a coat",
+              "a cap",
+              "a cup"
+            ],
+            "gabarito": "a coat",
+            "explicacao": "A false friend of «cap».",
+            "id": "it-015-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 1,
+        "enunciado": "Say aloud what you are wearing today, with colours: «Oggi porto… Le scarpe sono…»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say six clothing items with a colour each, with the right agreement."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-015.json",
+  "responsavel": null
+}

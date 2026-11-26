@@ -1,0 +1,248 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 62,
+  "fase": 7,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "Piacere and preferences: Agreeing, disagreeing and preferring",
+  "objetivo": "Lesson 16, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 16,
+    "titulo": "Piacere and preferences",
+    "objetivo": "Say what you like and dislike with «mi piace» and «mi piacciono», agree and disagree with «anche a me», «a me no», and use «preferire» to compare preferences. Avoid the English-speaker traps: «I like» as the subject, «anche io» instead of the standard «anche a me», and one verb «play» for sports and instruments.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Agreeing, disagreeing and preferring",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "anche",
+            "translit": "AHN-keh",
+            "pt": "also, too",
+            "en": "",
+            "audio": "anche"
+          },
+          {
+            "ru": "neanche",
+            "translit": "neh-AHN-keh",
+            "pt": "neither, not either",
+            "en": "",
+            "audio": "neanche"
+          },
+          {
+            "ru": "invece",
+            "translit": "een-VEH-cheh",
+            "pt": "on the other hand, whereas",
+            "en": "",
+            "audio": "invece"
+          },
+          {
+            "ru": "però",
+            "translit": "peh-ROH",
+            "pt": "but, however",
+            "en": "",
+            "audio": "però"
+          },
+          {
+            "ru": "secondo me",
+            "translit": "seh-KOHN-doh meh",
+            "pt": "in my opinion",
+            "en": "",
+            "audio": "secondo me"
+          },
+          {
+            "ru": "preferire",
+            "translit": "preh-feh-REE-reh",
+            "pt": "to prefer",
+            "en": "",
+            "audio": "preferire"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "Short answers: «anche a me», «neanche a me»",
+        "explicacao": "STEP 1: English answers «Me too» and «Me neither». After «piace», the standard Italian answer is «anche a me» and «neanche a me», because the person is the «to me» part of the sentence. You will also hear «anche io» in casual speech, and it is not a serious mistake, but «anche a me» is the standard answer after «piace». STEP 2: to agree with something positive, say «Anche a me»: «Mi piace il caffè.» — «Anche a me». STEP 3: to disagree, say «A me no» (I don't). STEP 4: to agree with something negative, say «Neanche a me»: «Non mi piace il caldo.» — «Neanche a me». STEP 5: to disagree with a negative, say «A me sì» (I do). STEP 6: for other people, use «a te», «a lui», «a lei», «a noi», «a voi», «a loro»: «A Marco piace il caffè, ma a Giulia no». STEP 7: «preferire» (to prefer) is an «-ire» verb with «-isc-» in most forms: «preferisco, preferisci, preferisce, preferiamo, preferite, preferiscono». STEP 8: use «preferire … a …» to compare: «Preferisco il caffè al tè». English says «prefer coffee to tea», and Italian says the same with «a». STEP 9: «secondo me» is a neutral way to give an opinion: «Secondo me, Roma è bellissima». STEP 10: «però» and «invece» both contrast, but «invece» means «on the other hand»: «Io preferisco il caffè, lei invece il tè».",
+        "comparacao": "English short answers are «Me too», «I do», «I don't». After «piace», Italian uses «a me» because the verb «piacere» is built around the person as an object. The comparison with «preferire» matches English («prefer A to B»), which makes it easy.",
+        "exemplos": [
+          {
+            "ru": "Anche a me",
+            "pt": "Me too"
+          },
+          {
+            "ru": "Preferisco il caffè al tè",
+            "pt": "I prefer coffee to tea"
+          },
+          {
+            "ru": "Neanche a mia sorella piace lo sport. Preferisce ascoltare la musica.",
+            "pt": "My sister doesn't like sports either. She prefers listening to music."
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "agree (positive)",
+            "forma": "Anche a me"
+          },
+          {
+            "tipo": "disagree (positive)",
+            "forma": "A me no"
+          },
+          {
+            "tipo": "agree (negative)",
+            "forma": "Neanche a me"
+          },
+          {
+            "tipo": "disagree (negative)",
+            "forma": "A me sì"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Anche mi",
+            "certo": "Anche a me",
+            "motivo": "After «piace», the answer needs the stressed form «a me». The short pronoun «mi» cannot follow «anche» on its own. (In casual speech you will also hear «anche io», but «anche a me» is the standard answer.)"
+          },
+          {
+            "errado": "Preferisco il caffè che il tè",
+            "certo": "Preferisco il caffè al tè",
+            "motivo": "Between two nouns, standard Italian uses «a» after «preferire», not «che»."
+          },
+          {
+            "errado": "Preferisco il caffè di tè",
+            "certo": "Preferisco il caffè al tè",
+            "motivo": "Do not use «di» to compare with «preferire»."
+          }
+        ],
+        "tag": "Likes and dislikes"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 9,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Anche a me",
+            "opcoes": [
+              "Anche a me",
+              "Anche io",
+              "Neanche a me"
+            ],
+            "gabarito": "Anche a me",
+            "explicacao": "«A me», not «io».",
+            "id": "it-016-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Preferisco il caffè al tè",
+            "opcoes": [
+              "Preferisco il caffè al tè",
+              "Preferisco il caffè che il tè",
+              "Preferisco il tè al caffè"
+            ],
+            "gabarito": "Preferisco il caffè al tè",
+            "explicacao": "Compare with «a».",
+            "id": "it-016-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Neanche a mia sorella piace lo sport. Preferisce ascoltare la musica.",
+            "opcoes": [
+              "Neanche a mia sorella piace lo sport. Preferisce ascoltare la musica.",
+              "Anche a mia sorella piace lo sport. Preferisce ascoltare la musica.",
+              "Neanche a mia sorella piacciono gli sport. Preferisce ascoltare la musica."
+            ],
+            "gabarito": "Neanche a mia sorella piace lo sport. Preferisce ascoltare la musica.",
+            "explicacao": "Listen to «neanche».",
+            "id": "it-016-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "invece",
+            "opcoes": [
+              "invece",
+              "anche",
+              "neanche"
+            ],
+            "gabarito": "invece",
+            "explicacao": "«Invece» is «on the other hand».",
+            "id": "it-016-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you answer «Non mi piace il caldo» when you agree?",
+            "opcoes": [
+              "Neanche a me",
+              "Anche a me",
+              "A me sì"
+            ],
+            "gabarito": "Neanche a me",
+            "explicacao": "Agreement with a negative.",
+            "id": "it-016-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which is the standard answer after «Mi piace il caffè» when you agree?",
+            "opcoes": [
+              "Anche a me",
+              "Anche mi",
+              "Anche tu"
+            ],
+            "gabarito": "Anche a me",
+            "explicacao": "The person is «a me».",
+            "id": "it-016-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Preferisco il caffè ___ tè. (to the)",
+            "opcoes": [
+              "al",
+              "del",
+              "che"
+            ],
+            "gabarito": "al",
+            "explicacao": "«A» + «il».",
+            "id": "it-016-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Anche a me»",
+            "opcoes": [
+              "Anche",
+              "a",
+              "me"
+            ],
+            "gabarito": "Anche a me",
+            "explicacao": "Short and fixed.",
+            "id": "it-016-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Have a short exchange aloud: say five likes and answer each with «anche a me», «a me no», «neanche a me» or «a me sì». Then say three preferences."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud the standard answers «anche a me», «a me no», «neanche a me» and «a me sì»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-016.json",
+  "responsavel": null
+}
