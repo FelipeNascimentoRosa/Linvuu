@@ -126,9 +126,9 @@
         ],
         "erros": [
           {
-            "errado": "Sono in bar",
+            "errado": "Sono a il bar",
             "certo": "Sono al bar",
-            "motivo": "A specific place with the article takes «a» + article: «al bar»."
+            "motivo": "Merge «a» + «il» into «al»."
           },
           {
             "errado": "Vengo di Roma",
@@ -141,9 +141,9 @@
             "motivo": "Transport takes «in» with no article."
           },
           {
-            "errado": "Il libro è professore",
+            "errado": "Il professore libro",
             "certo": "Il libro del professore",
-            "motivo": "Possession takes «di» + article."
+            "motivo": "English puts the owner first («the professor's book»). Italian puts the thing first and the owner after «di»."
           }
         ],
         "tag": "Prepositions"
@@ -219,8 +219,8 @@
             "enunciado": "Vado ___ dottore. (to the doctor's)",
             "opcoes": [
               "dal",
-              "al",
-              "nel"
+              "nel",
+              "sul"
             ],
             "gabarito": "dal",
             "explicacao": "At someone's place: «da».",
