@@ -18,6 +18,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { textosDaAula, mapaDa, aulaTemTraducao } from './i18n-aulas.mjs';
+import { lerManifesto } from './audio-manifesto.mjs';
 
 const raiz = path.resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);
@@ -74,15 +75,19 @@ function botoesDoDia(d) {
   return t;
 }
 const privadoDisponivel = existe(dirPrivado);
+// Sem o clone do Linvuu-Audio (CI), a cobertura do áudio pago vem do manifesto de hashes versionado (content/audio-privado-manifesto.json).
+const manifesto = lerManifesto();
+const usaManifesto = !privadoDisponivel && !!manifesto;
 function auditarAudio(id) {
   const alvo = new Map(); let botoes = 0; // texto -> aulas; botões = ocorrências nos dias servidos (pt e en)
   for (const sub of ['', 'en']) {
     const dd = path.join(raiz, 'content', 'idiomas', id, sub);
-    for (const f of diasDe(dd)) { const dia = ler(path.join(dd, f)); const aulaN = dia.aula?.numero ?? Math.ceil(Number(f.match(/d+/)[0]) / 4); for (const { texto: t, origem } of botoesDoDia(dia)) { botoes++; if (!alvo.has(t)) alvo.set(t, { aulas: new Set(), origem }); alvo.get(t).aulas.add(aulaN); } }
+    for (const f of diasDe(dd)) { const dia = ler(path.join(dd, f)); const aulaN = dia.aula?.numero ?? Math.ceil(Number(f.match(/\d+/)[0]) / 4); for (const { texto: t, origem } of botoesDoDia(dia)) { botoes++; if (!alvo.has(t)) alvo.set(t, { aulas: new Set(), origem }); alvo.get(t).aulas.add(aulaN); } }
   }
   const pub = new Set([...lerIndice(path.join(raiz, 'public', 'audio', id, 'index.json')), ...lerIndice(path.join(raiz, 'public', 'audio', 'v2', id, 'index.json'))]);
   const priv = new Set();
   if (privadoDisponivel) for (const d of ['audio-privado', 'audio-privado-v2']) { const p = path.join(dirPrivado, d, id); if (existe(p)) for (const f of fs.readdirSync(p)) if (f.endsWith('.mp3')) priv.add(f.slice(0, -4)); }
+  else if (usaManifesto) for (const h of manifesto.idiomas?.[id] ?? []) priv.add(h);
   const csv = lerCsv(path.join(raiz, 'content', 'audio', `${id}-gravar.csv`));
   const csvHashes = new Set(csv.map((r) => r.arquivo));
   const hashRuim = csv.filter((r) => hashTexto(r.texto) !== r.arquivo).length;
@@ -177,12 +182,12 @@ for (const id of cursos) {
   i18n[id] = { aulas: aulasN, aulasComMapaEn: comMapa, explicacoesNoMapa: totalExpl - faltamExpl, explicacoesSemTraducao: faltamExpl };
 }
 const rasos = lados.flatMap((l) => l.rasos).sort((a, b) => a.score - b.score).slice(0, 10);
-const relatorio = { geradoDe: 'content/idiomas/**, content/gramatica/**, public/audio/**/index.json' + (privadoDisponivel ? `, ${path.relative(raiz, dirPrivado) || dirPrivado}` : ''), audioPrivadoVerificado: privadoDisponivel, lados: lados.map(({ achados, rasos: _r, prof, ...x }) => ({ ...x, prof: { gramIni: f1(media(prof.gramIni)), gramFim: f1(media(prof.gramFim)), itensIni: f1(media(prof.itensIni)), itensFim: f1(media(prof.itensFim)) }, achados })), audio: Object.fromEntries(Object.entries(audio).map(([k, v]) => [k, { ...v, faltam: v.faltam.slice(0, 200) }])), i18nEn: i18n, maisRasos: rasos };
+const relatorio = { geradoDe: 'content/idiomas/**, content/gramatica/**, public/audio/**/index.json' + (privadoDisponivel ? `, ${path.relative(raiz, dirPrivado) || dirPrivado}` : usaManifesto ? ', content/audio-privado-manifesto.json' : ''), audioPrivadoVerificado: privadoDisponivel || usaManifesto, audioPrivadoFonte: privadoDisponivel ? 'clone' : usaManifesto ? 'manifesto' : 'nenhuma', lados: lados.map(({ achados, rasos: _r, prof, ...x }) => ({ ...x, prof: { gramIni: f1(media(prof.gramIni)), gramFim: f1(media(prof.gramFim)), itensIni: f1(media(prof.itensIni)), itensFim: f1(media(prof.itensFim)) }, achados })), audio: Object.fromEntries(Object.entries(audio).map(([k, v]) => [k, { ...v, faltam: v.faltam.slice(0, 200) }])), i18nEn: i18n, maisRasos: rasos };
 
 if (jsonOpt) { const s = JSON.stringify(relatorio, null, 1) + '\n'; if (typeof jsonOpt === 'string') fs.writeFileSync(path.resolve(jsonOpt), s); else process.stdout.write(s); }
 else {
   const pad = (x, n) => String(x).padEnd(n), padL = (x, n) => String(x).padStart(n);
-  console.log(`Fonte do áudio: índices públicos (public/audio/<id>/index.json e v2) + ${privadoDisponivel ? `clone privado em ${dirPrivado}` : 'clone privado NÃO encontrado (use --audio-privado <dir>); botões pagos contam como sem MP3'}.`);
+  console.log(`Fonte do áudio: índices públicos (public/audio/<id>/index.json e v2) + ${privadoDisponivel ? `clone privado em ${dirPrivado}` : usaManifesto ? `manifesto de hashes do áudio pago (content/audio-privado-manifesto.json: ${Object.values(manifesto.idiomas).reduce((n, h) => n + h.length, 0)} hashes)` : 'clone privado NÃO encontrado (use --audio-privado <dir>); botões pagos contam como sem MP3'}.`);
   console.log(`${pad('Curso', 6)}${pad('Lado', 5)}${padL('Sess', 5)}${padL('Vaza', 6)}${padL('Gram ini→fim', 14)}${padL('Itens/dia ini→fim', 19)}${padL('Dup', 5)}${padL('Placeh', 7)}${padL('RefPT', 7)}${padL('GlsVaz', 7)}${padL('GlsPT', 6)}${padL('Absol', 7)}${padL('AudErr', 7)}${padL('Espelho', 10)}${padL('BrRef', 6)}  Áudio (únicos: pub+priv / sem MP3)`);
   for (const l of lados) {
     const a = audio[l.curso]; const aud = l.lingua === 'pt' || soLingua ? `${a.textos}: ${a.comPublico}+${a.comPrivado} / ${a.semMp3} (grátis ${a.semMp3Gratis})` : '(igual ao lado pt)';

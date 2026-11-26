@@ -16,6 +16,7 @@
 // Nunca sobrescreve. Retomável: o que já existe em v2 é pulado. Falha de API não é repetida (só 429 e erro 5xx, uma vez).
 import fs from 'node:fs';
 import path from 'node:path';
+import { mesclarNoManifesto } from './audio-manifesto.mjs';
 
 const raiz = path.resolve(import.meta.dirname, '..');
 const args = Object.fromEntries(process.argv.slice(2).filter((a) => a.startsWith('--')).map((a) => { const [k, v = 'true'] = a.slice(2).split('='); return [k, v]; }));
@@ -133,7 +134,9 @@ async function main() {
   const manPub = lerJson(path.join(dirPub, 'manifest.json'), { modelo: MODELO, versao: 2, vozes: {}, arquivos: {} });
   const manPriv = lerJson(path.join(dirPriv, 'manifest.json'), { modelo: MODELO, versao: 2, vozes: {}, arquivos: {} });
   manPub.vozes = manPriv.vozes = { m: voz('m'), f: voz('f') };
+  const novosPagos = new Set(); // hashes dos MP3 pagos gerados nesta execução → manifesto content/audio-privado-manifesto.json
   const salvar = () => {
+    if (novosPagos.size) { mesclarNoManifesto(idioma, [...novosPagos]); novosPagos.clear(); }
     fs.writeFileSync(path.join(dirPub, 'manifest.json'), JSON.stringify(manPub, null, 1) + '\n');
     fs.writeFileSync(path.join(dirPriv, 'manifest.json'), JSON.stringify(manPriv, null, 1) + '\n');
     const pub = fs.readdirSync(dirPub).filter((f) => f.endsWith('.mp3')).map((f) => f.replace('.mp3', '')).sort();
@@ -155,6 +158,7 @@ async function main() {
         const seg = buf.length / 8000; const esperado = l.fala.length * 0.08;
         const sus = buf.length < 1500 || seg > esperado * 3 + 3 || seg < Math.min(0.25, esperado * 0.3);
         fs.writeFileSync(alvo, buf);
+        if (!l.publico) novosPagos.add(l.arquivo.replace('.mp3', ''));
         (l.publico ? manPub : manPriv).arquivos[l.arquivo.replace('.mp3', '')] = { voz: l.voz, chars: l.fala.length, creditos: cobrado, bytes: buf.length, seg: Number(seg.toFixed(2)) };
         ok++;
         if (sus) { suspeitos.push(`${l.arquivo} [${l.voz}] ${seg.toFixed(1)}s/${l.fala.length}c ${l.fala.slice(0, 40)}`); }
