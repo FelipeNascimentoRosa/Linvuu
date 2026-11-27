@@ -1,0 +1,301 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 116,
+  "fase": 12,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "The polite condizionale: Review and practice of lesson 29",
+  "objetivo": "Lesson 29, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 29,
+    "titulo": "The polite condizionale",
+    "objetivo": "Ask for things and help politely, say what you would like, and give advice with the conditional of «volere», «potere» and «dovere». Avoid the English-speaker traps: «parlarei» for «parlerei», regularising «avrei» and «andrei», and adding «di» or «a» before the infinitive.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 29",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Review: the polite condizionale",
+        "explicacao": "STEP 1: the condizionale is the future stem with the endings «-ei, -esti, -ebbe, -emmo, -este, -ebbero». STEP 2: the irregular stems are the same as in the future («sarei», «avrei», «andrei», «vorrei»). STEP 3: polite requests: «vorrei», «potrebbe», «avrei bisogno di», «mi piacerebbe». STEP 4: advice: «dovresti», «al tuo posto», «sarebbe meglio». STEP 5: after «dovresti», «potrebbe», «vorrei» and «mi piacerebbe» the infinitive follows directly, with no «di» or «a»; «avrei bisogno di» keeps its «di».",
+        "comparacao": "English splits the three ideas of should, could and would like into three words. Italian uses one ending for all: choose the verb («dovere», «potere», «volere»), then change the ending.",
+        "exemplos": [
+          {
+            "ru": "Vorrei un caffè, per favore",
+            "pt": "I would like a coffee, please"
+          },
+          {
+            "ru": "Dovresti riposare di più",
+            "pt": "You should rest more"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Avrei bisogno un'informazione",
+            "certo": "Avrei bisogno di un'informazione",
+            "motivo": "«Bisogno» is followed by «di»."
+          },
+          {
+            "errado": "Mi piacerebbe di viaggiare",
+            "certo": "Mi piacerebbe viaggiare",
+            "motivo": "No «di» after «mi piacerebbe»."
+          }
+        ],
+        "tag": "Review"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 22,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Vorrei un caffè, per favore",
+            "opcoes": [
+              "Vorrei un caffè, per favore",
+              "Vorrei un tè, per favore",
+              "Voglio un caffè, per favore"
+            ],
+            "gabarito": "Vorrei un caffè, per favore",
+            "explicacao": "Listen for «Vorrei» and «caffè».",
+            "id": "it-029-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Potrebbe aiutarmi?",
+            "opcoes": [
+              "Potrebbe aiutarmi?",
+              "Potrei aiutarla?",
+              "Può aiutarmi?"
+            ],
+            "gabarito": "Potrebbe aiutarmi?",
+            "explicacao": "Listen for «Potrebbe».",
+            "id": "it-029-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Al tuo posto andrei dal medico",
+            "opcoes": [
+              "Al tuo posto andrei dal medico",
+              "Al tuo posto andrei in banca",
+              "Al mio posto andrei dal medico"
+            ],
+            "gabarito": "Al tuo posto andrei dal medico",
+            "explicacao": "Listen for «tuo» and «medico».",
+            "id": "it-029-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Avrei bisogno di un'informazione",
+            "opcoes": [
+              "Avrei bisogno di un'informazione",
+              "Ho bisogno di un'informazione",
+              "Avrei bisogno di un caffè"
+            ],
+            "gabarito": "Avrei bisogno di un'informazione",
+            "explicacao": "Listen for «Avrei».",
+            "id": "it-029-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Mi piacerebbe viaggiare",
+            "opcoes": [
+              "Mi piacerebbe viaggiare",
+              "Mi piace viaggiare",
+              "Mi piacerebbe lavorare"
+            ],
+            "gabarito": "Mi piacerebbe viaggiare",
+            "explicacao": "Listen for «piacerebbe».",
+            "id": "it-029-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Dovresti riposare di più",
+            "opcoes": [
+              "Dovresti riposare di più",
+              "Dovresti mangiare di più",
+              "Devi riposare di più"
+            ],
+            "gabarito": "Dovresti riposare di più",
+            "explicacao": "Listen for «Dovresti».",
+            "id": "it-029-e06"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Buonasera. Un tavolo per due?",
+            "opcoes": [
+              "Buonasera. Un tavolo per due?",
+              "Buonasera. Un tavolo per tre?",
+              "Buongiorno. Un tavolo per due?"
+            ],
+            "gabarito": "Buonasera. Un tavolo per due?",
+            "explicacao": "Listen for «Buonasera».",
+            "id": "it-029-e07"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Certo, prego, da questa parte. Che cosa vi porto da bere?",
+            "opcoes": [
+              "Certo, prego, da questa parte. Che cosa vi porto da bere?",
+              "Certo, prego, da questa parte. Che cosa vi porto da mangiare?",
+              "Certo, prego, da quella parte. Che cosa vi porto da bere?"
+            ],
+            "gabarito": "Certo, prego, da questa parte. Che cosa vi porto da bere?",
+            "explicacao": "Listen for «bere».",
+            "id": "it-029-e08"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Sì, grazie. Potremmo avere un tavolo vicino alla finestra?",
+            "opcoes": [
+              "Sì, grazie. Potremmo avere un tavolo vicino alla finestra?",
+              "Sì, grazie. Potremmo avere un tavolo vicino alla porta?",
+              "Sì, grazie. Possiamo avere un tavolo vicino alla finestra?"
+            ],
+            "gabarito": "Sì, grazie. Potremmo avere un tavolo vicino alla finestra?",
+            "explicacao": "Listen for «finestra».",
+            "id": "it-029-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Vorremmo dell'acqua naturale. E potrebbe portarci il menu, per favore?",
+            "opcoes": [
+              "Vorremmo dell'acqua naturale. E potrebbe portarci il menu, per favore?",
+              "Vorremmo dell'acqua frizzante. E potrebbe portarci il menu, per favore?",
+              "Vorremmo dell'acqua naturale. E potrebbe portarci il conto, per favore?"
+            ],
+            "gabarito": "Vorremmo dell'acqua naturale. E potrebbe portarci il menu, per favore?",
+            "explicacao": "Listen for «naturale» and «menu».",
+            "id": "it-029-e10"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "avrei bisogno di",
+            "opcoes": [
+              "avrei bisogno di",
+              "avrei voglia di",
+              "ho bisogno di"
+            ],
+            "gabarito": "avrei bisogno di",
+            "explicacao": "Listen for «avrei bisogno».",
+            "id": "it-029-e11"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "se è possibile",
+            "opcoes": [
+              "se è possibile",
+              "se è necessario",
+              "se è difficile"
+            ],
+            "gabarito": "se è possibile",
+            "explicacao": "Listen for «possibile».",
+            "id": "it-029-e12"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Subito. Vi consiglio le tagliatelle: sono la specialità della casa.",
+            "opcoes": [
+              "Subito. Vi consiglio le tagliatelle: sono la specialità della casa.",
+              "Subito. Vi consiglio il pesce: è la specialità della casa.",
+              "Subito. Ti consiglio le tagliatelle: sono la specialità della casa."
+            ],
+            "gabarito": "Subito. Vi consiglio le tagliatelle: sono la specialità della casa.",
+            "explicacao": "Listen for «tagliatelle».",
+            "id": "it-029-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which is the conditional of «parlare» for «io» («I would speak»)?",
+            "opcoes": [
+              "parlerei",
+              "parlarei",
+              "parlerò"
+            ],
+            "gabarito": "parlerei",
+            "explicacao": "The «-a-» becomes «-e-».",
+            "id": "it-029-e14"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "You advise a friend: «If I were you, I would go to the doctor». What do you say?",
+            "opcoes": [
+              "Al tuo posto andrei dal medico",
+              "Al tuo posto vado dal medico",
+              "Al tuo posto andrerei dal medico"
+            ],
+            "gabarito": "Al tuo posto andrei dal medico",
+            "explicacao": "«Andare» has the stem «andr-».",
+            "id": "it-029-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Mi piacerebbe ___ in Italia. (to live)",
+            "opcoes": [
+              "vivere",
+              "di vivere",
+              "a vivere"
+            ],
+            "gabarito": "vivere",
+            "explicacao": "No preposition after «mi piacerebbe».",
+            "id": "it-029-e16"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Vorrei un caffè, per favore»",
+            "opcoes": [
+              "Vorrei",
+              "un",
+              "caffè,",
+              "per",
+              "favore"
+            ],
+            "gabarito": "Vorrei un caffè, per favore",
+            "explicacao": "«Vorrei», the object, then «per favore».",
+            "id": "it-029-e17"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud and then show the answer.",
+            "audio": "Potrebbe aiutarmi?",
+            "respostaEsperada": "Potrebbe aiutarmi?",
+            "explicacao": "Say the whole question aloud, then check the written text.",
+            "complemento": true,
+            "id": "it-029-r18"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say eight polite sentences aloud: two requests, two wishes, two pieces of advice and two with «avrei bisogno di»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud the three endings you add to the future stem for «io», «tu» and «lui/lei»: «-ei, -esti, -ebbe»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-029.json",
+  "responsavel": null
+}

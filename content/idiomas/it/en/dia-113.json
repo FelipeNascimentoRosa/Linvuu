@@ -1,0 +1,260 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 113,
+  "fase": 12,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "The polite condizionale: Asking politely: vorrei, potrebbe",
+  "objetivo": "Lesson 29, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 29,
+    "titulo": "The polite condizionale",
+    "objetivo": "Ask for things and help politely, say what you would like, and give advice with the conditional of «volere», «potere» and «dovere». Avoid the English-speaker traps: «parlarei» for «parlerei», regularising «avrei» and «andrei», and adding «di» or «a» before the infinitive.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Asking politely: vorrei, potrebbe",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "vorrei",
+            "translit": "vohr-RAY",
+            "pt": "I would like",
+            "en": "",
+            "audio": "vorrei"
+          },
+          {
+            "ru": "potrei",
+            "translit": "poh-TRAY",
+            "pt": "I could, could I",
+            "en": "",
+            "audio": "potrei"
+          },
+          {
+            "ru": "potrebbe",
+            "translit": "poh-TREHB-beh",
+            "pt": "could he/she/you (formal)",
+            "en": "",
+            "audio": "potrebbe"
+          },
+          {
+            "ru": "mi piacerebbe",
+            "translit": "mee pyah-cheh-REHB-beh",
+            "pt": "I would like (to)",
+            "en": "",
+            "audio": "mi piacerebbe"
+          },
+          {
+            "ru": "avrei bisogno di",
+            "translit": "ah-VRAY bee-ZOH-nyoh dee",
+            "pt": "I would need",
+            "en": "",
+            "audio": "avrei bisogno di"
+          },
+          {
+            "ru": "per favore",
+            "translit": "pehr fah-VOH-reh",
+            "pt": "please",
+            "en": "",
+            "audio": "per favore"
+          },
+          {
+            "ru": "mi dispiace",
+            "translit": "mee dee-SPYAH-cheh",
+            "pt": "I am sorry",
+            "en": "",
+            "audio": "mi dispiace"
+          },
+          {
+            "ru": "se è possibile",
+            "translit": "seh eh pohs-SEE-bee-leh",
+            "pt": "if it is possible",
+            "en": "",
+            "audio": "se è possibile"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 15,
+        "titulo": "Polite requests: «vorrei», «potrei», «mi piacerebbe»",
+        "explicacao": "STEP 1: you already know «vorrei» from lesson 8 and lesson 13: «Vorrei un caffè, per favore». It is the polite way to ask for something, and it means «I would like». «Voglio» («I want») is correct but sounds blunt when you ask a stranger for something. STEP 2: «vorrei» is followed by a noun («Vorrei un caffè») or by an infinitive («Vorrei prenotare un tavolo»). STEP 3: «potrei» means «could I» and «potrebbe» means «could you» (formal), «could he» or «could she»: «Potrebbe aiutarmi?» (Could you help me?). The pronoun joins the infinitive («aiutarmi») or goes before «potrebbe» («Mi potrebbe aiutare?»). STEP 4: «mi piacerebbe» + infinitive means «I would like to...»: «Mi piacerebbe viaggiare». It is used for wishes and dreams more than for orders. After «mi piacerebbe» there is no «di» and no «a». STEP 5: «avrei bisogno di» means «I would need». The «di» is required: «Avrei bisogno di un'informazione». STEP 6: polite extras: «per favore» (please), «se è possibile» (if it is possible), «mi dispiace» (I am sorry, to apologise or to sympathise). STEP 7: these forms belong to the «condizionale presente», which you will build tomorrow. For today, learn each one as a whole chunk.",
+        "comparacao": "English says «I would like...» and «Could you...?», so the idea is familiar. The difference is that Italian has no separate word for «would»: the ending «-ei» or «-ebbe» is added to the verb («vorrei» = «I would like»), and «could» is simply the same ending on «potere» («potrebbe»). English also has «I'd need» but often just says «I need...» even when it is polite; in Italian «ho bisogno di» sounds more direct than «avrei bisogno di». Choose «vorrei» with staff in shops, bars and offices.",
+        "exemplos": [
+          {
+            "ru": "Vorrei un caffè, per favore",
+            "pt": "I would like a coffee, please"
+          },
+          {
+            "ru": "Potrebbe aiutarmi?",
+            "pt": "Could you help me?"
+          },
+          {
+            "ru": "Mi piacerebbe viaggiare",
+            "pt": "I would like to travel"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "ask for something",
+            "forma": "Vorrei un caffè, per favore"
+          },
+          {
+            "tipo": "ask for help",
+            "forma": "Potrebbe aiutarmi?"
+          },
+          {
+            "tipo": "wish",
+            "forma": "Mi piacerebbe viaggiare"
+          },
+          {
+            "tipo": "need",
+            "forma": "Avrei bisogno di un'informazione"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Potrebbe mi aiutare?",
+            "certo": "Potrebbe aiutarmi?",
+            "motivo": "The pronoun cannot sit between «potrebbe» and the infinitive: it joins the infinitive («aiutarmi») or goes before «potrebbe» («Mi potrebbe aiutare?»)."
+          },
+          {
+            "errado": "Mi piacerebbe di viaggiare",
+            "certo": "Mi piacerebbe viaggiare",
+            "motivo": "«Mi piacerebbe» takes the infinitive directly, with no «di»."
+          },
+          {
+            "errado": "Avrei bisogno un'informazione",
+            "certo": "Avrei bisogno di un'informazione",
+            "motivo": "«Bisogno» is followed by «di». English «I would need information» has no preposition, but Italian does."
+          }
+        ],
+        "tag": "Polite requests"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "vorrei",
+            "opcoes": [
+              "vorrei",
+              "potrei",
+              "mi piacerebbe"
+            ],
+            "gabarito": "vorrei",
+            "explicacao": "Listen for «vorrei».",
+            "id": "it-029-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "potrebbe",
+            "opcoes": [
+              "potrebbe",
+              "potrei",
+              "vorrei"
+            ],
+            "gabarito": "potrebbe",
+            "explicacao": "Listen for «potrebbe».",
+            "id": "it-029-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "mi piacerebbe",
+            "opcoes": [
+              "mi piacerebbe",
+              "avrei bisogno di",
+              "mi dispiace"
+            ],
+            "gabarito": "mi piacerebbe",
+            "explicacao": "Listen for «piacerebbe».",
+            "id": "it-029-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which is the politest way to order a coffee in a café?",
+            "opcoes": [
+              "Vorrei un caffè, per favore",
+              "Voglio un caffè",
+              "Dammi un caffè"
+            ],
+            "gabarito": "Vorrei un caffè, per favore",
+            "explicacao": "«Vorrei» is the polite request to staff.",
+            "id": "it-029-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Avrei bisogno di un'informazione",
+              "Avrei bisogno un'informazione",
+              "Avrei bisogno a un'informazione"
+            ],
+            "gabarito": "Avrei bisogno di un'informazione",
+            "explicacao": "«Bisogno» is followed by «di».",
+            "id": "it-029-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «Potrebbe aiutarmi?» ask?",
+            "opcoes": [
+              "Could you help me?",
+              "Can I help you?",
+              "Do you help me?"
+            ],
+            "gabarito": "Could you help me?",
+            "explicacao": "«Potrebbe» is the polite «could».",
+            "id": "it-029-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Mi piacerebbe ___ in Italia. (to live)",
+            "opcoes": [
+              "vivere",
+              "di vivere",
+              "a vivere"
+            ],
+            "gabarito": "vivere",
+            "explicacao": "«Mi piacerebbe» takes the infinitive directly.",
+            "id": "it-029-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Potrebbe aiutarmi?»",
+            "opcoes": [
+              "Potrebbe",
+              "aiutarmi?"
+            ],
+            "gabarito": "Potrebbe aiutarmi?",
+            "explicacao": "«Potrebbe», then the infinitive with its pronoun.",
+            "id": "it-029-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 1,
+        "enunciado": "Say six polite requests aloud with «vorrei», «potrebbe» and «avrei bisogno di»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud the polite chunk for each idea: ask, ask for help, wish, need."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-029.json",
+  "responsavel": null
+}

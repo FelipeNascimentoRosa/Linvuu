@@ -1,0 +1,300 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 120,
+  "fase": 12,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Stare + gerundio, stare per, appena: Review and practice of lesson 30",
+  "objetivo": "Lesson 30, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 30,
+    "titulo": "Stare + gerundio, stare per, appena",
+    "objetivo": "Say what is happening now and what was in progress with «stare» and the gerundio, say what is about to happen with «stare per», and use «appena», «tra poco» and «da poco». Avoid the English-speaker traps: using «essere» instead of «stare», using the infinitive instead of the gerundio, and using the progressive for plans.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 30",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Review: stare + gerundio, stare per, appena",
+        "explicacao": "STEP 1: «sto + gerundio» says what is in progress now; «stavo + gerundio» says what was in progress. STEP 2: the regular gerundio ends in «-ando» for «-are» verbs and in «-endo» for «-ere» and «-ire» verbs; a few verbs are irregular, for example «fare» → «facendo», «dire» → «dicendo», «bere» → «bevendo». STEP 3: «stare per» + infinitive means «to be about to». STEP 4: «appena» usually goes between the auxiliary and the participle («ho appena finito»), and with a present or future verb it means «as soon as» («appena arrivo»). STEP 5: «tra poco» looks ahead, «da poco» looks back.",
+        "comparacao": "English uses «am/was» + «-ing» and «about to» with «be». Italian uses «stare» in each case: «sto leggendo», «stavo leggendo», «sto per uscire». One more difference: English also uses «am» + «-ing» for plans («I am leaving tomorrow»), but «sto + gerundio» is for what is going on at this moment, so Italian says «Parto domani».",
+        "exemplos": [
+          {
+            "ru": "Sto leggendo un libro",
+            "pt": "I am reading a book"
+          },
+          {
+            "ru": "Il treno sta per partire",
+            "pt": "The train is about to leave"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Sono mangiando",
+            "certo": "sto mangiando",
+            "motivo": "The progressive uses «stare», not «essere»."
+          },
+          {
+            "errado": "Ho appena arrivato",
+            "certo": "Sono appena arrivato",
+            "motivo": "«Arrivare» takes «essere»."
+          }
+        ],
+        "tag": "Review"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 22,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Sto leggendo un libro",
+            "opcoes": [
+              "Sto leggendo un libro",
+              "Sto scrivendo un libro",
+              "Ho letto un libro"
+            ],
+            "gabarito": "Sto leggendo un libro",
+            "explicacao": "Listen for «leggendo».",
+            "id": "it-030-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Sono appena arrivato",
+            "opcoes": [
+              "Sono appena arrivato",
+              "Sono arrivato da poco",
+              "Sto per arrivare"
+            ],
+            "gabarito": "Sono appena arrivato",
+            "explicacao": "Listen for «appena».",
+            "id": "it-030-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Il treno sta per partire",
+            "opcoes": [
+              "Il treno sta per partire",
+              "Il treno è appena partito",
+              "Il treno sta partendo"
+            ],
+            "gabarito": "Il treno sta per partire",
+            "explicacao": "Listen for «sta per».",
+            "id": "it-030-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Che cosa stai facendo",
+            "opcoes": [
+              "Che cosa stai facendo",
+              "Che cosa stavi facendo",
+              "Che cosa hai fatto"
+            ],
+            "gabarito": "Che cosa stai facendo",
+            "explicacao": "Listen for «stai».",
+            "id": "it-030-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ho appena finito",
+            "opcoes": [
+              "Ho appena finito",
+              "Ho già finito",
+              "Sto per finire"
+            ],
+            "gabarito": "Ho appena finito",
+            "explicacao": "Listen for «appena».",
+            "id": "it-030-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Stavo dormendo quando hai chiamato",
+            "opcoes": [
+              "Stavo dormendo quando hai chiamato",
+              "Dormivo quando hai chiamato",
+              "Stavo dormendo quando ho chiamato"
+            ],
+            "gabarito": "Stavo dormendo quando hai chiamato",
+            "explicacao": "Listen for «hai chiamato».",
+            "id": "it-030-e06"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Scusa, stavo facendo la doccia. E tu, dove sei?",
+            "opcoes": [
+              "Scusa, stavo facendo la doccia. E tu, dove sei?",
+              "Scusa, stavo facendo la spesa. E tu, dove sei?",
+              "Scusa, sto facendo la doccia. E tu, dove sei?"
+            ],
+            "gabarito": "Scusa, stavo facendo la doccia. E tu, dove sei?",
+            "explicacao": "Listen for «doccia».",
+            "id": "it-030-e07"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Silvia, ti ho telefonato due volte! Che cosa stavi facendo?",
+            "opcoes": [
+              "Silvia, ti ho telefonato due volte! Che cosa stavi facendo?",
+              "Silvia, ti ho telefonato tre volte! Che cosa stavi facendo?",
+              "Silvia, ti ho telefonato due volte! Che cosa stai facendo?"
+            ],
+            "gabarito": "Silvia, ti ho telefonato due volte! Che cosa stavi facendo?",
+            "explicacao": "Listen for «due volte».",
+            "id": "it-030-e08"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Sto uscendo dall'ufficio. Sto per prendere il treno.",
+            "opcoes": [
+              "Sto uscendo dall'ufficio. Sto per prendere il treno.",
+              "Sto uscendo dall'ufficio. Sto per prendere l'autobus.",
+              "Sono uscito dall'ufficio. Sto per prendere il treno."
+            ],
+            "gabarito": "Sto uscendo dall'ufficio. Sto per prendere il treno.",
+            "explicacao": "Listen for «treno».",
+            "id": "it-030-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Perfetto. Stavo pensando di fare la pasta: ti va?",
+            "opcoes": [
+              "Perfetto. Stavo pensando di fare la pasta: ti va?",
+              "Perfetto. Stavo pensando di fare la pizza: ti va?",
+              "Perfetto. Sto pensando di fare la pasta: ti va?"
+            ],
+            "gabarito": "Perfetto. Stavo pensando di fare la pasta: ti va?",
+            "explicacao": "Listen for «pasta».",
+            "id": "it-030-e10"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Allora ci vediamo tra poco: sto preparando la cena.",
+            "opcoes": [
+              "Allora ci vediamo tra poco: sto preparando la cena.",
+              "Allora ci vediamo da poco: sto preparando la cena.",
+              "Allora ci vediamo tra poco: sto preparando il pranzo."
+            ],
+            "gabarito": "Allora ci vediamo tra poco: sto preparando la cena.",
+            "explicacao": "Listen for «tra poco» and «cena».",
+            "id": "it-030-e11"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "sto parlando",
+            "opcoes": [
+              "sto parlando",
+              "sto leggendo",
+              "sto mangiando"
+            ],
+            "gabarito": "sto parlando",
+            "explicacao": "Listen for «parlando».",
+            "id": "it-030-e12"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ottimo! Appena arrivo, ti aiuto.",
+            "opcoes": [
+              "Ottimo! Appena arrivo, ti aiuto.",
+              "Ottimo! Appena arrivi, ti aiuto.",
+              "Ottimo! Appena arrivo, mi aiuti."
+            ],
+            "gabarito": "Ottimo! Appena arrivo, ti aiuto.",
+            "explicacao": "Listen for «arrivo» and «ti aiuto».",
+            "id": "it-030-e13"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "proprio adesso",
+            "opcoes": [
+              "proprio adesso",
+              "in questo momento",
+              "tra poco"
+            ],
+            "gabarito": "proprio adesso",
+            "explicacao": "Listen for «proprio».",
+            "id": "it-030-e14"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which is correct for «I was eating when he arrived»?",
+            "opcoes": [
+              "Stavo mangiando quando è arrivato",
+              "Ero mangiando quando è arrivato",
+              "Stavo mangiare quando è arrivato"
+            ],
+            "gabarito": "Stavo mangiando quando è arrivato",
+            "explicacao": "«Stavo» + gerundio.",
+            "id": "it-030-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Sono arrivato ___ poco. (a short time ago)",
+            "opcoes": [
+              "da",
+              "tra",
+              "per"
+            ],
+            "gabarito": "da",
+            "explicacao": "«Da poco» looks back.",
+            "id": "it-030-e16"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Ho appena finito»",
+            "opcoes": [
+              "Ho",
+              "appena",
+              "finito"
+            ],
+            "gabarito": "Ho appena finito",
+            "explicacao": "«Ho», «appena», participle.",
+            "id": "it-030-e17"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud and then show the answer.",
+            "audio": "Che cosa stai facendo",
+            "respostaEsperada": "Che cosa stai facendo",
+            "explicacao": "Say the whole question aloud, then check the written text.",
+            "complemento": true,
+            "id": "it-030-r18"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say eight sentences aloud: two with «sto + gerundio», two with «stavo + gerundio», two with «sto per» and two with «appena»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud the three forms built with «stare»: «sto leggendo», «stavo leggendo», «sto per leggere»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-030.json",
+  "responsavel": null
+}
