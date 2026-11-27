@@ -116,7 +116,7 @@ Fonte da verdade: a tabela de cobertura abaixo (contagem de arquivos em `content
 | en | 248 | 248/248 | 0/248 | não |
 | es | 248 | 248/248 | 248/248 | sim |
 | fr | 248 | 248/248 | 248/248 | sim |
-| it | 248 | 248/248 | 108/248 | não |
+| it | 248 | 248/248 | 120/248 | não |
 | ru | 312 | 312/312 | 312/312 | sim |
 
 <!-- MATRIZ:FIM -->

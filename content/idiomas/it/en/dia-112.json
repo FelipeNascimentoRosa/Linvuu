@@ -1,0 +1,312 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 112,
+  "fase": 12,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "The imperative: Review and practice of lesson 28",
+  "objetivo": "Lesson 28, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 28,
+    "titulo": "The imperative",
+    "objetivo": "Give commands to a friend, to several people, to yourself and your friends together («noi»), and to a stranger with «Lei». Avoid the English-speaker traps: using the dictionary form as a command, saying «non scrivi» for «don't write», and mixing «tu» and «Lei» in one sentence.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 28",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Review: the four commands",
+        "explicacao": "STEP 1: «tu», «-are» verbs: «-a» («aspetta»); «-ere» and «-ire» verbs: «-i» («scrivi», «apri»). STEP 2: «noi» and «voi» use the present forms («aspettiamo», «aspettate»). STEP 3: negative «tu»: «non» + the infinitive («Non dire niente»). STEP 4: «Lei» uses the opposite vowels: «-are» → «-i» («giri»), «-ere» and «-ire» → «-a» («scriva»). STEP 5: positive «tu» takes the pronoun after the verb («dammi»); «Lei» takes it before the verb («mi dica»).",
+        "comparacao": "English changes nothing when you move from a friend to a stranger. Italian changes the ending and the position of the pronoun, so decide first whom you are speaking to, then choose the form.",
+        "exemplos": [
+          {
+            "ru": "Aspetta un attimo",
+            "pt": "Wait a moment"
+          },
+          {
+            "ru": "Mi dica, signora",
+            "pt": "Tell me, madam"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Non parli così forte",
+            "certo": "Non parlare così forte",
+            "motivo": "To a friend, the negative command is «non» + infinitive. «Non parli» is the «Lei» form or the present."
+          },
+          {
+            "errado": "Dica mi, signora",
+            "certo": "Mi dica, signora",
+            "motivo": "With «Lei» the pronoun goes before the verb."
+          }
+        ],
+        "tag": "Review"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 22,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Aspetta un attimo",
+            "opcoes": [
+              "Aspetta un attimo",
+              "Aspetti un attimo",
+              "Aspettate un attimo"
+            ],
+            "gabarito": "Aspetta un attimo",
+            "explicacao": "Listen for the ending of «aspetta».",
+            "id": "it-028-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Non parlare così forte",
+            "opcoes": [
+              "Non parlare così forte",
+              "Non parla così forte",
+              "Non parlate così forte"
+            ],
+            "gabarito": "Non parlare così forte",
+            "explicacao": "Listen for the infinitive «parlare».",
+            "id": "it-028-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Mi dica, signora",
+            "opcoes": [
+              "Mi dica, signora",
+              "Dimmi, signora",
+              "Mi dice, signora"
+            ],
+            "gabarito": "Mi dica, signora",
+            "explicacao": "Listen for «Mi dica».",
+            "id": "it-028-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Dammi un caffè",
+            "opcoes": [
+              "Dammi un caffè",
+              "Dai un caffè",
+              "Mi dai un caffè"
+            ],
+            "gabarito": "Dammi un caffè",
+            "explicacao": "Listen for «dammi».",
+            "id": "it-028-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Vada dritto",
+            "opcoes": [
+              "Vada dritto",
+              "Vai dritto",
+              "Va' dritto"
+            ],
+            "gabarito": "Vada dritto",
+            "explicacao": "Listen for «vada».",
+            "id": "it-028-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Non dire niente",
+            "opcoes": [
+              "Non dire niente",
+              "Non dici niente",
+              "Non dite niente"
+            ],
+            "gabarito": "Non dire niente",
+            "explicacao": "Listen for «dire».",
+            "id": "it-028-e06"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Scusi, per andare alla stazione?",
+            "opcoes": [
+              "Scusi, per andare alla stazione?",
+              "Scusi, per andare alla piazza?",
+              "Scusi, per andare all'albergo?"
+            ],
+            "gabarito": "Scusi, per andare alla stazione?",
+            "explicacao": "Listen for «stazione».",
+            "id": "it-028-e07"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Grazie mille. Mi scusi ancora: dov'è la fermata dell'autobus?",
+            "opcoes": [
+              "Grazie mille. Mi scusi ancora: dov'è la fermata dell'autobus?",
+              "Grazie mille. Mi scusi ancora: dov'è la stazione?",
+              "Grazie mille. Scusa ancora: dov'è la fermata dell'autobus?"
+            ],
+            "gabarito": "Grazie mille. Mi scusi ancora: dov'è la fermata dell'autobus?",
+            "explicacao": "Listen for «fermata dell'autobus».",
+            "id": "it-028-e08"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Dopo la farmacia a sinistra. È lontano?",
+            "opcoes": [
+              "Dopo la farmacia a sinistra. È lontano?",
+              "Dopo la farmacia a destra. È lontano?",
+              "Dopo la piazza a sinistra. È lontano?"
+            ],
+            "gabarito": "Dopo la farmacia a sinistra. È lontano?",
+            "explicacao": "Listen for «farmacia» and «sinistra».",
+            "id": "it-028-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "È qui davanti. Si fermi lì e aspetti il numero undici.",
+            "opcoes": [
+              "È qui davanti. Si fermi lì e aspetti il numero undici.",
+              "È qui davanti. Si fermi lì e aspetti il numero dieci.",
+              "È qui davanti. Si ferma lì e aspetta il numero undici."
+            ],
+            "gabarito": "È qui davanti. Si fermi lì e aspetti il numero undici.",
+            "explicacao": "Listen for «undici».",
+            "id": "it-028-e10"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "vai! / va'!",
+            "opcoes": [
+              "vai! / va'!",
+              "fai! / fa'!",
+              "sii!"
+            ],
+            "gabarito": "vai! / va'!",
+            "explicacao": "Go!",
+            "id": "it-028-e11"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "guarda!",
+            "opcoes": [
+              "guarda!",
+              "ascolta!",
+              "aspetta!"
+            ],
+            "gabarito": "guarda!",
+            "explicacao": "Look!",
+            "id": "it-028-e12"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "fai! / fa'!",
+            "opcoes": [
+              "fai! / fa'!",
+              "vai! / va'!",
+              "di'!"
+            ],
+            "gabarito": "fai! / fa'!",
+            "explicacao": "Do! Make!",
+            "id": "it-028-e13"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "di'!",
+            "opcoes": [
+              "di'!",
+              "fai! / fa'!",
+              "vieni!"
+            ],
+            "gabarito": "di'!",
+            "explicacao": "Say! Tell!",
+            "id": "it-028-e14"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which is the right «Lei» command for «girare»?",
+            "opcoes": [
+              "Giri",
+              "Gira",
+              "Girare"
+            ],
+            "gabarito": "Giri",
+            "explicacao": "«-are» verbs end in «-i» for «Lei».",
+            "id": "it-028-e15"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "You tell a friend not to wait. What do you say?",
+            "opcoes": [
+              "Non aspettare",
+              "Non aspetti",
+              "Non aspetta"
+            ],
+            "gabarito": "Non aspettare",
+            "explicacao": "Negative «tu»: «non» + infinitive.",
+            "id": "it-028-e16"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ la porta! (close, voi)",
+            "opcoes": [
+              "Chiudete",
+              "Chiudi",
+              "Chiudiamo"
+            ],
+            "gabarito": "Chiudete",
+            "explicacao": "«Voi» uses the present «voi» form.",
+            "id": "it-028-e17"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Mi dica, signora»",
+            "opcoes": [
+              "Mi",
+              "dica,",
+              "signora"
+            ],
+            "gabarito": "Mi dica, signora",
+            "explicacao": "«Mi», «dica», then the person.",
+            "id": "it-028-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud and then show the answer.",
+            "audio": "Scusi, per andare alla stazione?",
+            "respostaEsperada": "Scusi, per andare alla stazione?",
+            "explicacao": "Say the whole question aloud, then check the written text.",
+            "complemento": true,
+            "id": "it-028-r19"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say eight commands aloud: two to a friend, two negative to a friend, two to several people and two to a stranger."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud the difference between «aspetta», «aspettate» and «aspetti»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-028.json",
+  "responsavel": null
+}
