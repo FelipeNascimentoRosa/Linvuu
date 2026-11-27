@@ -14,7 +14,7 @@ const copy: Record<string, readonly [string]> = {
   'Você marcou todas as sessões deste curso. Revisar o que quiser é sempre uma boa ideia.': ['You have marked every session in this course. Reviewing whatever you like is always a good idea.'],
   'Próxima:': ['Next:'],
   'Livro de': ['Book:'], 'Gramática de': ['Grammar:'],
-  'Livros A1–A2 em seis idiomas. Leia os dois primeiros capítulos grátis, com áudio.': ['A1–A2 books in six languages. Read the first two chapters free, with audio.'],
+  'Livros A1–A2 em seis idiomas. Leia os dois primeiros capítulos grátis.': ['A1–A2 books in six languages. Read the first two chapters free.'],
   'Escolher meu idioma': ['Choose my language'],
   'Ver o curso completo': ['See the full course'],
   'As duas primeiras aulas são grátis, sem cartão.': ['The first two lessons are free, no card needed.'],

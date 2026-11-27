@@ -21,7 +21,7 @@ export const COMECAR: Record<'pt-BR' | 'en', Comecar> = {
     mapa: [
       { id: 'cursos', t: 'Cursos', d: 'A trilha de aulas, da primeira à última, em sessões de 30 minutos.' },
       { id: 'gramatica', t: 'Gramática', d: 'Consulta por tópico, com tabelas, exemplos e áudio, para achar uma regra específica.' },
-      { id: 'livros', t: 'Livros', d: 'Capítulos para ler com calma. Os dois primeiros de cada livro são grátis, com áudio.', soPt: true },
+      { id: 'livros', t: 'Livros', d: 'Capítulos para ler com calma. Os dois primeiros de cada livro são grátis.', soPt: true },
       { id: 'duvidas', t: 'Dúvidas', d: 'Preço, cancelamento, reembolso e como o progresso é salvo.' },
     ],
     dica: 'Nunca estudou o idioma? Comece pela aula 1. Já estudou e trava em algum ponto? Procure o tópico na Gramática e depois pratique a sessão indicada.',
