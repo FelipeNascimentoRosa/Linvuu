@@ -12,6 +12,7 @@
 .site-camadas .site-curso .curso-topo:not(:has(.curso-livro)){grid-template-columns:minmax(0,1fr)}
 .site-camadas .curso-topo .pagina-h1 em{display:block;font-size:.46em;font-style:normal;letter-spacing:-.02em;margin-top:10px;color:var(--site-texto-contexto)}
 .site-camadas .curso-fatos{display:flex;flex-wrap:wrap;gap:12px 20px;margin-top:24px;font-size:13px;line-height:1.6}
+.site-camadas .curso-aovivo{margin:16px 0 0}
 .site-camadas .curso-fatos>span{padding-left:12px;border-left:1px solid var(--site-borda-controle)}
 .curso-livro{margin:0;display:grid;justify-items:center;gap:20px;min-width:0}
 .curso-livro>img{display:block;width:164px;max-width:100%;height:auto;border-radius:3px;box-shadow:var(--sombra-papel)}

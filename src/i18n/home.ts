@@ -34,7 +34,7 @@ const copy: Record<string, readonly [string]> = {
   'Menor preço por mês': ['Lowest price per month'],
   'por mês': ['per month'],
   'O plano de três meses também está disponível no cartão ou boleto. Consulte os valores e condições antes de contratar.': ['The three-month plan is also available by card or boleto. Review prices and terms before subscribing.'],
-  'Experimentar duas aulas grátis': ['Try two free lessons'],
+  'Experimentar duas aulas grátis': ['Try 2 lessons free'],
   'Ver todos os detalhes da assinatura': ['View subscription details'],
   'Quais cursos estão incluídos?': ['Which courses are included?'],
   'A assinatura atual dá acesso aos cursos da Linvuu. Antes de contratar, experimente as duas primeiras aulas de cada curso sem cartão.': ['The current subscription includes Linvuu courses. Try the first two lessons of each course without a card before subscribing.'],

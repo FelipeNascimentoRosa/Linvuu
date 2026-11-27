@@ -349,7 +349,7 @@ a.livro:focus-visible{outline:2px solid var(--ocre);outline-offset:6px}
 .news-linha input{flex:1;min-width:0;padding:13px 18px;border-radius:var(--r-pill);border:1.5px solid var(--linha-sobre-marca);background:var(--papel-claro);font-size:15px}
 .news-aceite{margin-top:10px;color:var(--fg-sobre-marca-2);font-size:13px}
 .news-aceite a{text-decoration:underline;color:var(--papel-claro);display:inline-block;min-height:24px;line-height:24px}
-.news-aceite input[type=checkbox]{width:24px;height:24px;margin:0;flex-shrink:0}
+.check.news-aceite input[type=checkbox]{width:24px;min-width:24px;height:24px;margin:0;flex-shrink:0}
 .news-ok{padding:14px 18px;border-radius:var(--r-sm);background:var(--ok-bg);color:var(--ok);font-weight:600}
 .news-nota a{text-decoration:underline;color:var(--papel-claro);font-weight:600}
 @media(max-width:760px){.news-linha{flex-direction:column}}
