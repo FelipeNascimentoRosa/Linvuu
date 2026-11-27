@@ -1,0 +1,259 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 91,
+  "fase": 10,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Direct object pronouns: Pronouns in conversation",
+  "objetivo": "Lesson 23, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 23,
+    "titulo": "Direct object pronouns",
+    "objetivo": "Replace a direct object with «lo, la, li, le» and the other direct object pronouns, put them in the right place and make the participle agree in the passato prossimo. Avoid the English-speaker traps: putting the pronoun after the verb, not agreeing the participle, and mixing direct and indirect pronouns.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Pronouns in conversation",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "conoscere",
+            "translit": "koh-NOH-sheh-reh",
+            "pt": "to know (a person), to meet",
+            "en": "",
+            "audio": "conoscere"
+          },
+          {
+            "ru": "portare",
+            "translit": "pohr-TAH-reh",
+            "pt": "to bring, to carry",
+            "en": "",
+            "audio": "portare"
+          },
+          {
+            "ru": "aspettare",
+            "translit": "ah-speht-TAH-reh",
+            "pt": "to wait for",
+            "en": "",
+            "audio": "aspettare"
+          },
+          {
+            "ru": "salutare",
+            "translit": "sah-loo-TAH-reh",
+            "pt": "to greet",
+            "en": "",
+            "audio": "salutare"
+          },
+          {
+            "ru": "prendere",
+            "translit": "PREHN-deh-reh",
+            "pt": "to take",
+            "en": "",
+            "audio": "prendere"
+          }
+        ]
+      },
+      {
+        "tipo": "dialogo",
+        "min": 6,
+        "titulo": "Planning the party",
+        "contexto": "Davide and a friend are organizing a dinner.",
+        "linhas": [
+          {
+            "personagem": "Friend",
+            "ru": "— Davide, hai invitato Paolo e Marta?",
+            "pt": "— Davide, did you invite Paolo and Marta?",
+            "audio": "Davide, hai invitato Paolo e Marta?"
+          },
+          {
+            "personagem": "Davide",
+            "ru": "— Sì, li ho invitati ieri. Ho anche chiamato i tuoi cugini.",
+            "pt": "— Yes, I invited them yesterday. I also called your cousins.",
+            "audio": "Sì, li ho invitati ieri. Ho anche chiamato i tuoi cugini."
+          },
+          {
+            "personagem": "Friend",
+            "ru": "— Bene. E la torta? L'hai ordinata?",
+            "pt": "— Good. And the cake? Did you order it?",
+            "audio": "Bene. E la torta? L'hai ordinata?"
+          },
+          {
+            "personagem": "Davide",
+            "ru": "— Non ancora, ma posso ordinarla domani mattina.",
+            "pt": "— Not yet, but I can order it tomorrow morning.",
+            "audio": "Non ancora, ma posso ordinarla domani mattina."
+          },
+          {
+            "personagem": "Friend",
+            "ru": "— Perfetto. E le bibite? Le compri tu?",
+            "pt": "— Perfect. And the drinks? Are you buying them?",
+            "audio": "Perfetto. E le bibite? Le compri tu?"
+          },
+          {
+            "personagem": "Davide",
+            "ru": "— Sì, le compro sabato. Ti chiamo dal supermercato.",
+            "pt": "— Yes, I will buy them on Saturday. I will call you from the supermarket.",
+            "audio": "Sì, le compro sabato. Ti chiamo dal supermercato."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "Answering with pronouns",
+        "explicacao": "STEP 1: in a conversation, the answer to a question with an object usually replaces that object with a pronoun: «Hai invitato Paolo e Marta?» → «Sì, li ho invitati». STEP 2: find the pronoun by asking what the object was: «Paolo e Marta» is a mixed group, and a mixed group takes the masculine plural, so «li». «La torta» is feminine singular, so «la», which shortens to «l'» before «hai»: «L'hai ordinata?». «Le bibite» is feminine plural, so «le»: «Le compri tu?». STEP 3: the participle agrees: «li ho invitati», «l'hai ordinata». STEP 4: «ordinarla» shows the pronoun after an infinitive: «posso ordinarla». STEP 5: «mi» and «ti» are also direct objects when they mean «me» and «you»: «Ti chiamo» (I will call you). STEP 6: do not use «gli» (to him) or the singular «le» (to her) here: they come in the next lesson and answer «to whom?». Do not mix that singular «le» up with the plural direct «le» («Le compro», I buy them), which you do use here. STEP 7: short answers: «Sì, lo conosco», «No, non la vedo», «Non ancora». STEP 8: when the answer is a whole idea, English says «it» and Italian uses «lo»: «Non lo so» (I do not know it), «Lo credo» (I believe it).",
+        "comparacao": "English often answers a question like this with just a helper: «Did you invite them? Yes, I did.» Italian usually repeats the verb and adds the pronoun, and the pronoun keeps the information about the object (gender and number), which then reaches the participle. This is why Italian answers can feel longer than English ones: the three words «li ho invitati» carry the answer, the object and its agreement.",
+        "exemplos": [
+          {
+            "ru": "Sì, li ho invitati ieri. Ho anche chiamato i tuoi cugini.",
+            "pt": "Yes, I invited them yesterday. I also called your cousins."
+          },
+          {
+            "ru": "Bene. E la torta? L'hai ordinata?",
+            "pt": "Good. And the cake? Did you order it?"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Gli conosco bene",
+            "certo": "Lo conosco bene",
+            "motivo": "«Gli» means «to him» (indirect). A direct object, «him», is «lo»."
+          },
+          {
+            "errado": "Gli ho comprati tutti",
+            "certo": "Li ho comprati tutti",
+            "motivo": "«Gli» is not the plural of «lo». The plural direct pronoun is «li»."
+          }
+        ],
+        "tag": "Pronouns"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 2,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "conoscere",
+            "opcoes": [
+              "conoscere",
+              "aiutare",
+              "chiamare"
+            ],
+            "gabarito": "conoscere",
+            "explicacao": "To know a person.",
+            "id": "it-023-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "aspettare",
+            "opcoes": [
+              "aspettare",
+              "ascoltare",
+              "salutare"
+            ],
+            "gabarito": "aspettare",
+            "explicacao": "To wait for.",
+            "id": "it-023-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "portare",
+            "opcoes": [
+              "portare",
+              "prendere",
+              "comprare"
+            ],
+            "gabarito": "portare",
+            "explicacao": "To bring.",
+            "id": "it-023-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Davide, hai invitato Paolo e Marta?",
+            "opcoes": [
+              "Davide, hai invitato Paolo e Marta?",
+              "Davide, hai chiamato Paolo e Marta?",
+              "Davide, hai invitato Paolo e Maria?"
+            ],
+            "gabarito": "Davide, hai invitato Paolo e Marta?",
+            "explicacao": "Listen for «invitato».",
+            "id": "it-023-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Hai ordinato la torta?» Which answer is correct?",
+            "opcoes": [
+              "Non ancora, ma posso ordinarla",
+              "Non ancora, ma posso ordinare la",
+              "Non ancora, ma posso la ordinare"
+            ],
+            "gabarito": "Non ancora, ma posso ordinarla",
+            "explicacao": "The pronoun is attached to the infinitive.",
+            "id": "it-023-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "You are buying «le bibite» (the drinks). Which is correct?",
+            "opcoes": [
+              "Le compro sabato",
+              "Gli compro sabato",
+              "Li compro sabato"
+            ],
+            "gabarito": "Le compro sabato",
+            "explicacao": "«Le bibite» is feminine plural.",
+            "id": "it-023-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Hai chiamato i tuoi cugini? Sì, ___ ho chiamati. (them)",
+            "opcoes": [
+              "li",
+              "le",
+              "gli"
+            ],
+            "gabarito": "li",
+            "explicacao": "Masculine plural.",
+            "id": "it-023-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Ti chiamo dal supermercato»",
+            "opcoes": [
+              "Ti",
+              "chiamo",
+              "dal",
+              "supermercato"
+            ],
+            "gabarito": "Ti chiamo dal supermercato",
+            "explicacao": "Pronoun, verb, place.",
+            "id": "it-023-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Ask and answer five questions aloud with objects, for example «Hai visto il film? Sì, l'ho visto»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud the question to ask yourself before answering: what was the object, and is it masculine or feminine, singular or plural?"
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-023.json",
+  "responsavel": null
+}

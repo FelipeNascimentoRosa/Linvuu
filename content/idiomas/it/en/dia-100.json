@@ -1,0 +1,299 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 100,
+  "fase": 10,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Ci and ne: Review and practice of lesson 25",
+  "objetivo": "Lesson 25, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 25,
+    "titulo": "Ci and ne",
+    "objetivo": "Use «ci» for a place already named and for an idea, use «ne» for quantity and topic, and use «ci vuole», «ci vogliono» and «metterci» to say how long something takes. Avoid the English-speaker traps: dropping the pronoun, leaving it after the verb, and leaving out «ne» when the noun is gone.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 25",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Review: ci and ne",
+        "explicacao": "STEP 1: «ci» replaces «a, in, su» + a place or an idea: «Ci vado», «Non ci credo». STEP 2: «ne» replaces «di» + a noun: a quantity («Ne ho mangiate due») or a topic («Che ne pensi?»). STEP 3: both go before the conjugated verb, after «non», and attached to the infinitive. STEP 4: «ci vuole / ci vogliono» agree with what comes after; «metterci» names who takes the time. STEP 5: «ci» + «lo, la, li, le» → «ce lo, ce la, ce li, ce le».",
+        "comparacao": "English has no single small word that does the job of «ci» and «ne»: it uses «there», «of it» and «about it» after the verb. In Italian, the small word comes before the verb, and it replaces a whole phrase.",
+        "exemplos": [
+          {
+            "ru": "Ci vado domani",
+            "pt": "I am going there tomorrow"
+          },
+          {
+            "ru": "Ne ho mangiate due",
+            "pt": "I ate two of them"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Vado ci domani",
+            "certo": "Ci vado domani",
+            "motivo": "The pronoun goes before the verb."
+          },
+          {
+            "errado": "Ho mangiate due",
+            "certo": "Ne ho mangiate due",
+            "motivo": "Without the noun, you need «ne»."
+          }
+        ],
+        "tag": "Review"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 22,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ci vado domani",
+            "opcoes": [
+              "Ci vado domani",
+              "Ci vado stasera",
+              "Ci vengo domani"
+            ],
+            "gabarito": "Ci vado domani",
+            "explicacao": "Listen for «vado».",
+            "id": "it-025-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ne ho mangiate due",
+            "opcoes": [
+              "Ne ho mangiate due",
+              "Ne ho mangiati due",
+              "Ne ho mangiate tre"
+            ],
+            "gabarito": "Ne ho mangiate due",
+            "explicacao": "Listen for «mangiate» and «due».",
+            "id": "it-025-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ci vogliono tre ore",
+            "opcoes": [
+              "Ci vogliono tre ore",
+              "Ci vuole tre ore",
+              "Ci vogliono due ore"
+            ],
+            "gabarito": "Ci vogliono tre ore",
+            "explicacao": "Listen for «vogliono» and «tre».",
+            "id": "it-025-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Non ci credo",
+            "opcoes": [
+              "Non ci credo",
+              "Non lo credo",
+              "Non ci vado"
+            ],
+            "gabarito": "Non ci credo",
+            "explicacao": "Listen for «non ci».",
+            "id": "it-025-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Che ne pensi",
+            "opcoes": [
+              "Che ne pensi",
+              "Che ne dici",
+              "Che ci pensi"
+            ],
+            "gabarito": "Che ne pensi",
+            "explicacao": "Listen for «pensi».",
+            "id": "it-025-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ne voglio un po'",
+            "opcoes": [
+              "Ne voglio un po'",
+              "Ne ho un po'",
+              "Ne voglio due"
+            ],
+            "gabarito": "Ne voglio un po'",
+            "explicacao": "Listen for «voglio».",
+            "id": "it-025-e06"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Fabio, quanto ci vuole per arrivare a Bologna?",
+            "opcoes": [
+              "Fabio, quanto ci vuole per arrivare a Bologna?",
+              "Fabio, quanto ci vuole per arrivare a Roma?",
+              "Fabio, quanto costa per arrivare a Bologna?"
+            ],
+            "gabarito": "Fabio, quanto ci vuole per arrivare a Bologna?",
+            "explicacao": "Listen for «Bologna».",
+            "id": "it-025-e07"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Perfetto, ci sto. Hai le mappe? Io non ce le ho.",
+            "opcoes": [
+              "Perfetto, ci sto. Hai le mappe? Io non ce le ho.",
+              "Perfetto, ci sto. Hai le mappe? Io ce le ho.",
+              "Perfetto, non ci sto. Hai le mappe? Io non ce le ho."
+            ],
+            "gabarito": "Perfetto, ci sto. Hai le mappe? Io non ce le ho.",
+            "explicacao": "Listen for «non ce le ho».",
+            "id": "it-025-e08"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Allora ci fermiamo per il pranzo. Che ne dici?",
+            "opcoes": [
+              "Allora ci fermiamo per il pranzo. Che ne dici?",
+              "Allora ci fermiamo per la cena. Che ne dici?",
+              "Allora ci fermiamo per il pranzo. Che ne pensi?"
+            ],
+            "gabarito": "Allora ci fermiamo per il pranzo. Che ne dici?",
+            "explicacao": "Listen for «pranzo» and «dici».",
+            "id": "it-025-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Sì, ce le ho nel telefono. Non ci mettiamo molto.",
+            "opcoes": [
+              "Sì, ce le ho nel telefono. Non ci mettiamo molto.",
+              "Sì, ce le ho nel telefono. Ci mettiamo molto.",
+              "Sì, ce le ho in macchina. Non ci mettiamo molto."
+            ],
+            "gabarito": "Sì, ce le ho nel telefono. Non ci mettiamo molto.",
+            "explicacao": "Listen for «telefono».",
+            "id": "it-025-e10"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "lì, là, qui",
+            "opcoes": [
+              "lì, là, qui",
+              "su, giù, qui",
+              "qui, qua, là"
+            ],
+            "gabarito": "lì, là, qui",
+            "explicacao": "There, over there, here.",
+            "id": "it-025-e11"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "pensarci",
+            "opcoes": [
+              "pensarci",
+              "pensarne",
+              "crederci"
+            ],
+            "gabarito": "pensarci",
+            "explicacao": "To think about it.",
+            "id": "it-025-e12"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "un po' di",
+            "opcoes": [
+              "un po' di",
+              "abbastanza",
+              "troppo"
+            ],
+            "gabarito": "un po' di",
+            "explicacao": "A little of.",
+            "id": "it-025-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which is correct?",
+            "opcoes": [
+              "Ci vogliono tre ore",
+              "Ci vuole tre ore",
+              "Ci prende tre ore"
+            ],
+            "gabarito": "Ci vogliono tre ore",
+            "explicacao": "Agreement with «tre ore».",
+            "id": "it-025-e14"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which is correct?",
+            "opcoes": [
+              "Ne ho mangiate due",
+              "Ho mangiate due",
+              "Ci ho mangiate due"
+            ],
+            "gabarito": "Ne ho mangiate due",
+            "explicacao": "The noun is replaced by «ne».",
+            "id": "it-025-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Vai a Roma? Sì, ___ vado domani. (there)",
+            "opcoes": [
+              "ci",
+              "ne",
+              "lo"
+            ],
+            "gabarito": "ci",
+            "explicacao": "«Ci» replaces «a Roma».",
+            "id": "it-025-e16"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Ci vado domani»",
+            "opcoes": [
+              "Ci",
+              "vado",
+              "domani"
+            ],
+            "gabarito": "Ci vado domani",
+            "explicacao": "«Ci», verb, time.",
+            "id": "it-025-e17"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud and then show the answer.",
+            "audio": "Non ci credo",
+            "respostaEsperada": "Non ci credo",
+            "explicacao": "I do not believe it.",
+            "complemento": true,
+            "id": "it-025-r18"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say eight sentences aloud with «ci», «ne», «ci vuole» and «ci metto»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud the one-line difference between «ci» and «ne»: place or idea, quantity or topic."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-025.json",
+  "responsavel": null
+}

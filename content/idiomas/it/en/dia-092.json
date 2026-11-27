@@ -1,0 +1,312 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 92,
+  "fase": 10,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Direct object pronouns: Review and practice of lesson 23",
+  "objetivo": "Lesson 23, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 23,
+    "titulo": "Direct object pronouns",
+    "objetivo": "Replace a direct object with «lo, la, li, le» and the other direct object pronouns, put them in the right place and make the participle agree in the passato prossimo. Avoid the English-speaker traps: putting the pronoun after the verb, not agreeing the participle, and mixing direct and indirect pronouns.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 23",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Review: direct object pronouns",
+        "explicacao": "STEP 1: forms: «mi, ti, lo/la, ci, vi, li/le». STEP 2: position: before the conjugated verb, after «non», attached to an infinitive and to «ecco». STEP 3: before a vowel, «lo» and «la» shorten to «l'». STEP 4: in the passato prossimo with «avere», the participle agrees with «lo, la, li, le». STEP 5: verbs such as «cercare», «ascoltare», «aspettare» and «chiamare» take a direct object.",
+        "comparacao": "The two big changes from English are word order and agreement. If you put the pronoun in the right place (before a conjugated verb, attached to an infinitive) and, in the passato prossimo, give the participle the ending of «lo, la, li, le», the sentence is right.",
+        "exemplos": [
+          {
+            "ru": "Lo conosco bene",
+            "pt": "I know him well"
+          },
+          {
+            "ru": "Li ho comprati tutti",
+            "pt": "I bought them all"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Conosco lo bene",
+            "certo": "Lo conosco bene",
+            "motivo": "The pronoun goes before the verb."
+          },
+          {
+            "errado": "Li ho comprato tutti",
+            "certo": "Li ho comprati tutti",
+            "motivo": "The participle agrees with «li»."
+          }
+        ],
+        "tag": "Review"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 22,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Lo conosco bene",
+            "opcoes": [
+              "Lo conosco bene",
+              "La conosco bene",
+              "Li conosco bene"
+            ],
+            "gabarito": "Lo conosco bene",
+            "explicacao": "Listen for «lo».",
+            "id": "it-023-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "L'ho vista ieri",
+            "opcoes": [
+              "L'ho vista ieri",
+              "L'ho visto ieri",
+              "Li ho visti ieri"
+            ],
+            "gabarito": "L'ho vista ieri",
+            "explicacao": "Feminine «vista».",
+            "id": "it-023-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Voglio chiamarla stasera",
+            "opcoes": [
+              "Voglio chiamarla stasera",
+              "Voglio chiamarlo stasera",
+              "Voglio chiamarli stasera"
+            ],
+            "gabarito": "Voglio chiamarla stasera",
+            "explicacao": "«-la» at the end.",
+            "id": "it-023-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Non lo so",
+            "opcoes": [
+              "Non lo so",
+              "Non la so",
+              "Non lo sai"
+            ],
+            "gabarito": "Non lo so",
+            "explicacao": "«Non lo so».",
+            "id": "it-023-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Li ho comprati tutti",
+            "opcoes": [
+              "Li ho comprati tutti",
+              "Le ho comprate tutte",
+              "Li ho comprato tutti"
+            ],
+            "gabarito": "Li ho comprati tutti",
+            "explicacao": "Masculine plural.",
+            "id": "it-023-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Eccolo",
+            "opcoes": [
+              "Eccolo",
+              "Eccola",
+              "Eccoli"
+            ],
+            "gabarito": "Eccolo",
+            "explicacao": "Here it is (masculine).",
+            "id": "it-023-e06"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Davide, hai invitato Paolo e Marta?",
+            "opcoes": [
+              "Davide, hai invitato Paolo e Marta?",
+              "Davide, hai chiamato Paolo e Marta?",
+              "Davide, hai invitato Paolo e Maria?"
+            ],
+            "gabarito": "Davide, hai invitato Paolo e Marta?",
+            "explicacao": "Listen for «invitato».",
+            "id": "it-023-e07"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Sì, li ho invitati ieri. Ho anche chiamato i tuoi cugini.",
+            "opcoes": [
+              "Sì, li ho invitati ieri. Ho anche chiamato i tuoi cugini.",
+              "Sì, li ho invitati ieri. Ho anche chiamato i tuoi amici.",
+              "Sì, le ho invitate ieri. Ho anche chiamato i tuoi cugini."
+            ],
+            "gabarito": "Sì, li ho invitati ieri. Ho anche chiamato i tuoi cugini.",
+            "explicacao": "Listen for «li» and «cugini».",
+            "id": "it-023-e08"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Bene. E la torta? L'hai ordinata?",
+            "opcoes": [
+              "Bene. E la torta? L'hai ordinata?",
+              "Bene. E la torta? L'hai ordinato?",
+              "Bene. E la torta? La ordini?"
+            ],
+            "gabarito": "Bene. E la torta? L'hai ordinata?",
+            "explicacao": "Listen for «ordinata».",
+            "id": "it-023-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Non ancora, ma posso ordinarla domani mattina.",
+            "opcoes": [
+              "Non ancora, ma posso ordinarla domani mattina.",
+              "Non ancora, ma posso ordinarla domani sera.",
+              "Non ancora, ma posso ordinarlo domani mattina."
+            ],
+            "gabarito": "Non ancora, ma posso ordinarla domani mattina.",
+            "explicacao": "Listen for «domani mattina».",
+            "id": "it-023-e10"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Perfetto. E le bibite? Le compri tu?",
+            "opcoes": [
+              "Perfetto. E le bibite? Le compri tu?",
+              "Perfetto. E le bibite? Le compro io?",
+              "Perfetto. E il vino? Lo compri tu?"
+            ],
+            "gabarito": "Perfetto. E le bibite? Le compri tu?",
+            "explicacao": "Listen for «le compri».",
+            "id": "it-023-e11"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Sì, le compro sabato. Ti chiamo dal supermercato.",
+            "opcoes": [
+              "Sì, le compro sabato. Ti chiamo dal supermercato.",
+              "Sì, le compro domenica. Ti chiamo dal supermercato.",
+              "Sì, le compro sabato. Ti chiamo dal negozio."
+            ],
+            "gabarito": "Sì, le compro sabato. Ti chiamo dal supermercato.",
+            "explicacao": "Listen for «sabato» and «supermercato».",
+            "id": "it-023-e12"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "ci, vi",
+            "opcoes": [
+              "ci, vi",
+              "mi, ti",
+              "lo, la"
+            ],
+            "gabarito": "ci, vi",
+            "explicacao": "Us, you (plural).",
+            "id": "it-023-e13"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "dimenticare",
+            "opcoes": [
+              "dimenticare",
+              "ricordare",
+              "incontrare"
+            ],
+            "gabarito": "dimenticare",
+            "explicacao": "To forget.",
+            "id": "it-023-e14"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which is correct?",
+            "opcoes": [
+              "Lo conosco bene",
+              "Conosco lo bene",
+              "Conosco bene lo"
+            ],
+            "gabarito": "Lo conosco bene",
+            "explicacao": "Pronoun before the verb.",
+            "id": "it-023-e15"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which pronoun replaces «la torta» in «L'hai ordinata?»",
+            "opcoes": [
+              "la",
+              "le",
+              "lo"
+            ],
+            "gabarito": "la",
+            "explicacao": "Feminine singular, shortened to «l'».",
+            "id": "it-023-e16"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Le mele? ___ ho comprate ieri. (them)",
+            "opcoes": [
+              "Le",
+              "Li",
+              "Gli"
+            ],
+            "gabarito": "Le",
+            "explicacao": "Feminine plural.",
+            "id": "it-023-e17"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Lo conosco bene»",
+            "opcoes": [
+              "Lo",
+              "conosco",
+              "bene"
+            ],
+            "gabarito": "Lo conosco bene",
+            "explicacao": "Pronoun, verb, adverb.",
+            "id": "it-023-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud and then show the answer.",
+            "audio": "Voglio chiamarla stasera",
+            "respostaEsperada": "Voglio chiamarla stasera",
+            "explicacao": "I want to call her tonight.",
+            "complemento": true,
+            "id": "it-023-r19"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say eight sentences aloud with a pronoun in the present, the passato prossimo and with an infinitive."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud the two changes from English: the pronoun goes before the verb, and the participle takes the pronoun's ending."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-023.json",
+  "responsavel": null
+}
