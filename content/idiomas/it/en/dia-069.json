@@ -1,0 +1,263 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 69,
+  "fase": 7,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "A1 mock test: The A1 map",
+  "objetivo": "Lesson 18, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 18,
+    "titulo": "A1 mock test",
+    "objetivo": "Review the whole A1 map, practise reading and listening in the A1 format, avoid the most frequent A1 mistakes that English speakers make, and take a closed mock test. No new grammar.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "The A1 map",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "ciao",
+            "translit": "chow",
+            "pt": "hi / bye (informal)",
+            "en": "",
+            "audio": "ciao"
+          },
+          {
+            "ru": "buongiorno",
+            "translit": "bwohn-JOR-noh",
+            "pt": "good morning, good day",
+            "en": "",
+            "audio": "buongiorno"
+          },
+          {
+            "ru": "grazie",
+            "translit": "GRAHT-tsyeh",
+            "pt": "thank you",
+            "en": "",
+            "audio": "grazie"
+          },
+          {
+            "ru": "per favore",
+            "translit": "pehr fah-VOH-reh",
+            "pt": "please",
+            "en": "",
+            "audio": "per favore"
+          },
+          {
+            "ru": "scusi",
+            "translit": "SKOO-zee",
+            "pt": "excuse me (formal)",
+            "en": "",
+            "audio": "scusi"
+          },
+          {
+            "ru": "arrivederci",
+            "translit": "ahr-ree-veh-DEHR-chee",
+            "pt": "goodbye",
+            "en": "",
+            "audio": "arrivederci"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 16,
+        "titulo": "What you can do at A1: the map",
+        "explicacao": "STEP 1: A1 is the first level of the European framework. It does not mean «knowing a lot of grammar»: it means doing a short list of real things. STEP 2: greet and be polite: «Buongiorno, signora!» (formal) and «ciao» (informal). STEP 3: say who you are and how old you are: «Mi chiamo Ana», «Ho venti anni». Remember that Italian says «I have twenty years», not «I am twenty». STEP 4: ask where something is and understand directions: «Dov'è la stazione», «Giri a destra», «Vada dritto fino al semaforo». STEP 5: order and ask for the bill: «Vorrei un cappuccino», «Il conto, per favore». STEP 6: say the time and the date: «Sono le tre», «Il compleanno è il 15 maggio». STEP 7: say what you want, can and must do: «Non posso venire stasera», «Devo studiare domani». STEP 8: say what you like and tell a simple past event: «Mi piace leggere», «Ho letto un libro». STEP 9: this is the whole map. In the next three sessions you read, listen, avoid the classic mistakes and take a mock test in the A1 format.",
+        "comparacao": "English speakers usually feel strongest on vocabulary, because many Italian words look like English ones. The map shows where the real work is: small structure words and verbs, not nouns. Age, hunger and cold use «avere», not «essere». Negation puts «non» before the verb. Possessives usually take an article (except with a singular family member: «mia sorella»). Prepositions merge with the article («alla stazione»). If you check these four things, most A1 sentences are right.",
+        "exemplos": [
+          {
+            "ru": "Buongiorno, signora!",
+            "pt": "Good morning, madam!"
+          },
+          {
+            "ru": "Ho venti anni",
+            "pt": "I am twenty years old"
+          },
+          {
+            "ru": "Vorrei un cappuccino",
+            "pt": "I would like a cappuccino"
+          },
+          {
+            "ru": "Sono le tre",
+            "pt": "It is three o'clock"
+          },
+          {
+            "ru": "Mi piace leggere",
+            "pt": "I like reading"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "Social",
+            "esempio": "Buongiorno, signora! · Come ti chiami?"
+          },
+          {
+            "tipo": "Facts",
+            "esempio": "Ho venti anni · Abito a Roma"
+          },
+          {
+            "tipo": "Places",
+            "esempio": "Dov'è la stazione · Giri a destra"
+          },
+          {
+            "tipo": "Shops",
+            "esempio": "Vorrei un cappuccino · Il conto, per favore"
+          },
+          {
+            "tipo": "Time",
+            "esempio": "Sono le tre · Oggi è lunedì"
+          },
+          {
+            "tipo": "Wishes",
+            "esempio": "Devo studiare domani · Mi piace leggere"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Sono venti anni",
+            "certo": "Ho venti anni",
+            "motivo": "Age uses «avere»: you «have» the years."
+          },
+          {
+            "errado": "Parlo non tedesco",
+            "certo": "Non parlo tedesco",
+            "motivo": "«Non» goes before the verb."
+          },
+          {
+            "errado": "Sono freddo",
+            "certo": "Ho freddo",
+            "motivo": "«Sono freddo» describes a cold person. Feeling cold uses «avere»."
+          }
+        ],
+        "tag": "Review"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "buongiorno",
+            "opcoes": [
+              "buongiorno",
+              "buonasera",
+              "arrivederci"
+            ],
+            "gabarito": "buongiorno",
+            "explicacao": "Good morning.",
+            "id": "it-018-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "per favore",
+            "opcoes": [
+              "per favore",
+              "prego",
+              "scusi"
+            ],
+            "gabarito": "per favore",
+            "explicacao": "Please.",
+            "id": "it-018-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "grazie",
+            "opcoes": [
+              "grazie",
+              "prego",
+              "ciao"
+            ],
+            "gabarito": "grazie",
+            "explicacao": "Thank you.",
+            "id": "it-018-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I am twenty years old»?",
+            "opcoes": [
+              "Ho venti anni",
+              "Sono venti anni",
+              "Sono venti"
+            ],
+            "gabarito": "Ho venti anni",
+            "explicacao": "Age uses «avere».",
+            "id": "it-018-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "You are cold. Which sentence is right?",
+            "opcoes": [
+              "Ho freddo",
+              "Sono freddo",
+              "Ho il freddo"
+            ],
+            "gabarito": "Ho freddo",
+            "explicacao": "Physical states use «avere».",
+            "id": "it-018-e05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Non ___ tedesco. (I do not speak)",
+            "opcoes": [
+              "parlo",
+              "parla",
+              "parlano"
+            ],
+            "gabarito": "parlo",
+            "explicacao": "«Non» + the «I» form.",
+            "id": "it-018-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which greeting do you use with a stranger or an older person?",
+            "opcoes": [
+              "Buongiorno, signora!",
+              "Ciao, signora!",
+              "Ciao, ciao!"
+            ],
+            "gabarito": "Buongiorno, signora!",
+            "explicacao": "«Buongiorno» is the polite choice.",
+            "id": "it-018-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Non parlo tedesco»",
+            "opcoes": [
+              "Non",
+              "parlo",
+              "tedesco"
+            ],
+            "gabarito": "Non parlo tedesco",
+            "explicacao": "«Non», verb, object.",
+            "id": "it-018-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 1,
+        "enunciado": "Say aloud one sentence for each part of the map: greeting, name, age, a place, an order, the time and something you like."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud the four traps for English speakers: «avere» for age, «non» before the verb, the article with possessives, and merged prepositions."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-018.json",
+  "responsavel": null
+}

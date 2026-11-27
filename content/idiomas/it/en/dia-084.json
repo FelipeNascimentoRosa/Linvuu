@@ -1,0 +1,301 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 84,
+  "fase": 9,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Imperfetto: Review and practice of lesson 21",
+  "objetivo": "Lesson 21, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 21,
+    "titulo": "Imperfetto",
+    "objetivo": "Form the imperfetto, use it for habits, descriptions, age, time, weather and states, and tell childhood memories with «da bambino/a», «mentre» and «c'era». Avoid the English-speaker traps: «would» as the conditional, «was» for age and weather, and the singular for the hours.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 21",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Review: forms and uses of the imperfetto",
+        "explicacao": "STEP 1: forms: «-vo, -vi, -va, -vamo, -vate, -vano» after the infinitive without «-re». STEP 2: old stems: «bevevo, dicevo, facevo». STEP 3: «essere»: «ero, eri, era, eravamo, eravate, erano». STEP 4: uses: habits, ongoing actions, age, time, weather, states and descriptions. STEP 5: «avevo dieci anni», «faceva freddo» and «erano le otto» are the three verbs behind English «was».",
+        "comparacao": "The imperfetto covers «used to», «would» (habit) and «was -ing». English needs three different structures, Italian uses one. The mistakes are in the choice of verb for age, weather and time, not in the form of the tense.",
+        "exemplos": [
+          {
+            "ru": "Da piccolo giocavo sempre fuori",
+            "pt": "As a child I always played outside"
+          },
+          {
+            "ru": "Faceva freddo e pioveva",
+            "pt": "It was cold and it was raining"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Era freddo e pioveva",
+            "certo": "Faceva freddo e pioveva",
+            "motivo": "Cold weather uses «fare»."
+          },
+          {
+            "errado": "Ero dieci anni",
+            "certo": "Avevo dieci anni",
+            "motivo": "Age uses «avere»."
+          }
+        ],
+        "tag": "Review"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 22,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Da piccolo giocavo sempre fuori",
+            "opcoes": [
+              "Da piccolo giocavo sempre fuori",
+              "Da piccolo giocavo spesso fuori",
+              "Da piccolo giocavo sempre dentro"
+            ],
+            "gabarito": "Da piccolo giocavo sempre fuori",
+            "explicacao": "Listen for «sempre» and «fuori».",
+            "id": "it-021-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Faceva freddo e pioveva",
+            "opcoes": [
+              "Faceva freddo e pioveva",
+              "Faceva caldo e pioveva",
+              "Faceva freddo e nevicava"
+            ],
+            "gabarito": "Faceva freddo e pioveva",
+            "explicacao": "Cold and rain.",
+            "id": "it-021-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Erano le otto di sera",
+            "opcoes": [
+              "Erano le otto di sera",
+              "Erano le nove di sera",
+              "Erano le otto di mattina"
+            ],
+            "gabarito": "Erano le otto di sera",
+            "explicacao": "Listen for «otto» and «sera».",
+            "id": "it-021-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Avevo dieci anni",
+            "opcoes": [
+              "Avevo dieci anni",
+              "Avevo venti anni",
+              "Ho dieci anni"
+            ],
+            "gabarito": "Avevo dieci anni",
+            "explicacao": "Age.",
+            "id": "it-021-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Mia nonna faceva il pane",
+            "opcoes": [
+              "Mia nonna faceva il pane",
+              "Mia nonna faceva la pasta",
+              "Mia nonna ha fatto il pane"
+            ],
+            "gabarito": "Mia nonna faceva il pane",
+            "explicacao": "The imperfetto of «fare».",
+            "id": "it-021-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "faceva freddo",
+            "opcoes": [
+              "faceva freddo",
+              "faceva caldo",
+              "pioveva"
+            ],
+            "gabarito": "faceva freddo",
+            "explicacao": "It was cold.",
+            "id": "it-021-e06"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Mentre studiavo, ascoltavo la radio",
+            "opcoes": [
+              "Mentre studiavo, ascoltavo la radio",
+              "Mentre studiavo, guardavo la tv",
+              "Mentre mangiavo, ascoltavo la radio"
+            ],
+            "gabarito": "Mentre studiavo, ascoltavo la radio",
+            "explicacao": "«Mentre studiavo».",
+            "id": "it-021-e07"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "da bambino, da bambina",
+            "opcoes": [
+              "da bambino, da bambina",
+              "da giovane",
+              "di solito"
+            ],
+            "gabarito": "da bambino, da bambina",
+            "explicacao": "As a child.",
+            "id": "it-021-e08"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "di solito",
+            "opcoes": [
+              "di solito",
+              "una volta",
+              "spesso"
+            ],
+            "gabarito": "di solito",
+            "explicacao": "Usually.",
+            "id": "it-021-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "avere fame, avere sonno",
+            "opcoes": [
+              "avere fame, avere sonno",
+              "avere freddo, avere caldo",
+              "avere sete, avere fretta"
+            ],
+            "gabarito": "avere fame, avere sonno",
+            "explicacao": "Hungry, sleepy.",
+            "id": "it-021-e10"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "avevo dieci anni",
+            "opcoes": [
+              "avevo dieci anni",
+              "avevo venti anni",
+              "avevo dieci euro"
+            ],
+            "gabarito": "avevo dieci anni",
+            "explicacao": "I was ten.",
+            "id": "it-021-e11"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "la scuola elementare",
+            "opcoes": [
+              "la scuola elementare",
+              "la scuola media",
+              "l'università"
+            ],
+            "gabarito": "la scuola elementare",
+            "explicacao": "Elementary school.",
+            "id": "it-021-e12"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "erano le otto",
+            "opcoes": [
+              "erano le otto",
+              "erano le sette",
+              "era l'una"
+            ],
+            "gabarito": "erano le otto",
+            "explicacao": "Eight o'clock.",
+            "id": "it-021-e13"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "giocare",
+            "opcoes": [
+              "giocare",
+              "giocato",
+              "giocavo"
+            ],
+            "gabarito": "giocare",
+            "explicacao": "The infinitive.",
+            "id": "it-021-e14"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence says that the weather was cold?",
+            "opcoes": [
+              "Faceva freddo",
+              "Era freddo",
+              "Aveva freddo"
+            ],
+            "gabarito": "Faceva freddo",
+            "explicacao": "Cold weather uses «fare» («Aveva freddo» means that a person felt cold).",
+            "id": "it-021-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Quando ___ piccola, abitavo a Roma. (I was)",
+            "opcoes": [
+              "ero",
+              "avevo",
+              "sono"
+            ],
+            "gabarito": "ero",
+            "explicacao": "Imperfetto of «essere».",
+            "id": "it-021-e16"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Faceva freddo e pioveva»",
+            "opcoes": [
+              "Faceva",
+              "freddo",
+              "e",
+              "pioveva"
+            ],
+            "gabarito": "Faceva freddo e pioveva",
+            "explicacao": "Two descriptions of the weather.",
+            "id": "it-021-e17"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud and then show the answer.",
+            "audio": "Avevo dieci anni",
+            "respostaEsperada": "Avevo dieci anni",
+            "explicacao": "I was ten years old.",
+            "complemento": true,
+            "id": "it-021-r18"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Tell aloud, in six sentences, how a typical day of your childhood went."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud the imperfetto of «parlare» from «parlavo» to «parlavano» and mark the stress in «parlavamo»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-021.json",
+  "responsavel": null
+}

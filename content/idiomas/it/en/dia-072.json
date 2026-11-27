@@ -1,0 +1,263 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 72,
+  "fase": 8,
+  "nivel": "a1",
+  "status": "publicada",
+  "titulo": "A1 mock test: A1 mock test",
+  "objetivo": "Lesson 18, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 18,
+    "titulo": "A1 mock test",
+    "objetivo": "Review the whole A1 map, practise reading and listening in the A1 format, avoid the most frequent A1 mistakes that English speakers make, and take a closed mock test. No new grammar.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "A1 mock test",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "How the A1 mock test works",
+        "explicacao": "STEP 1: the test has three parts: listening (choose what you hear), reading and grammar (choose the right answer) and speaking (repeat and answer aloud). STEP 2: do the listening items first, with the sound on. Do not look at the options until you have heard the sentence twice. STEP 3: in the grammar items, eliminate the options that copy English («Sono venti anni», «Parlo non») before choosing. STEP 4: in the speaking items, say the sentence aloud first, then check your answer. STEP 5: write down every item you missed. The same traps usually repeat.",
+        "comparacao": "An exam checks form more than meaning: an answer can be understood and still be marked wrong. The reverse is true in real life, where Italians will understand an imperfect sentence. Use the test to find your weak points, not to judge yourself.",
+        "exemplos": [
+          {
+            "ru": "Vorrei un caffè, per favore",
+            "pt": "I would like a coffee, please"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Vorrei un caffè, prego",
+            "certo": "Vorrei un caffè, per favore",
+            "motivo": "«Prego» means «you are welcome» or «go ahead», not «please»."
+          }
+        ],
+        "tag": "Mock test"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 22,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Lei non è contenta oggi",
+            "opcoes": [
+              "Lei non è contenta oggi",
+              "Lei non è contento oggi",
+              "Lei è contenta oggi"
+            ],
+            "gabarito": "Lei non è contenta oggi",
+            "explicacao": "«Non» and the feminine «contenta».",
+            "id": "it-018-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Vorrei un caffè, per favore",
+            "opcoes": [
+              "Vorrei un caffè, per favore",
+              "Vorrei un caffè, prego",
+              "Vorrei un tè, per favore"
+            ],
+            "gabarito": "Vorrei un caffè, per favore",
+            "explicacao": "Listen for «caffè» and «per favore».",
+            "id": "it-018-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Abito a Torino con mia sorella",
+            "opcoes": [
+              "Abito a Torino con mia sorella",
+              "Abito a Roma con mia sorella",
+              "Abito a Torino con mio fratello"
+            ],
+            "gabarito": "Abito a Torino con mia sorella",
+            "explicacao": "Listen for «Torino» and «sorella».",
+            "id": "it-018-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Oggi fa freddo e piove",
+            "opcoes": [
+              "Oggi fa freddo e piove",
+              "Oggi fa caldo e piove",
+              "Oggi fa freddo e c'è il sole"
+            ],
+            "gabarito": "Oggi fa freddo e piove",
+            "explicacao": "Cold and rain.",
+            "id": "it-018-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Grazie mille. Vengo domani mattina! Vuole venire con me?",
+            "opcoes": [
+              "Grazie mille. Vengo domani mattina! Vuole venire con me?",
+              "Grazie mille. Vengo domani sera! Vuole venire con me?",
+              "Grazie mille. Vengo domani mattina! Vuole venire con te?"
+            ],
+            "gabarito": "Grazie mille. Vengo domani mattina! Vuole venire con me?",
+            "explicacao": "Listen for «mattina» and «con me».",
+            "id": "it-018-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Lei non è contenta",
+              "Lei è non contenta",
+              "Lei no è contenta"
+            ],
+            "gabarito": "Lei non è contenta",
+            "explicacao": "«Non» goes before the verb.",
+            "id": "it-018-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you ask «What is your name?» to a stranger?",
+            "opcoes": [
+              "Come si chiama?",
+              "Come ti chiami?",
+              "Come è il tuo nome?"
+            ],
+            "gabarito": "Come si chiama?",
+            "explicacao": "The formal «Lei» form.",
+            "id": "it-018-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which is correct for «I am twenty-five»?",
+            "opcoes": [
+              "Ho venticinque anni",
+              "Sono venticinque anni",
+              "Ho venticinque"
+            ],
+            "gabarito": "Ho venticinque anni",
+            "explicacao": "Age uses «avere».",
+            "id": "it-018-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which preposition do you use for «in» a city, as in «I live in Turin»?",
+            "opcoes": [
+              "a Torino",
+              "in Torino",
+              "di Torino"
+            ],
+            "gabarito": "a Torino",
+            "explicacao": "«A» with a city.",
+            "id": "it-018-e09"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Oggi ___ freddo e piove. (it is)",
+            "opcoes": [
+              "fa",
+              "è",
+              "ha"
+            ],
+            "gabarito": "fa",
+            "explicacao": "Cold weather uses «fare».",
+            "id": "it-018-e10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Mi ___ molto il caffè. (I like)",
+            "opcoes": [
+              "piace",
+              "piaccio",
+              "piacciono"
+            ],
+            "gabarito": "piace",
+            "explicacao": "The coffee is what pleases: singular «piace».",
+            "id": "it-018-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which answer fits «Ha già visto il quartiere?»",
+            "opcoes": [
+              "Non ancora",
+              "Non mai",
+              "Non più ancora"
+            ],
+            "gabarito": "Non ancora",
+            "explicacao": "«Non ancora» means «not yet».",
+            "id": "it-018-e12"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Abito a Torino con mia sorella»",
+            "opcoes": [
+              "Abito",
+              "a",
+              "Torino",
+              "con",
+              "mia",
+              "sorella"
+            ],
+            "gabarito": "Abito a Torino con mia sorella",
+            "explicacao": "Verb, place, then «con» + person.",
+            "id": "it-018-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Grazie mille»",
+            "opcoes": [
+              "Grazie",
+              "mille"
+            ],
+            "gabarito": "Grazie mille",
+            "explicacao": "Thank you very much.",
+            "id": "it-018-e14"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud and then show the answer.",
+            "audio": "Vorrei un caffè, per favore",
+            "respostaEsperada": "Vorrei un caffè, per favore",
+            "explicacao": "I would like a coffee, please.",
+            "complemento": true,
+            "id": "it-018-r15"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud and then show the answer.",
+            "audio": "Oggi fa freddo e piove",
+            "respostaEsperada": "Oggi fa freddo e piove",
+            "explicacao": "It is cold and it is raining today.",
+            "complemento": true,
+            "id": "it-018-r16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Introduce yourself in three sentences: name, age and city.",
+            "respostaEsperada": "Mi chiamo… Ho… anni. Abito a…",
+            "id": "it-018-e17"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Count your correct answers. Then say aloud the three items you missed, correctly this time."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud one sentence for each part of the A1 map, from greeting to a past event."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-018.json",
+  "responsavel": null
+}

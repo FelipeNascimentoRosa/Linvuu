@@ -1,0 +1,297 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 80,
+  "fase": 8,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Irregular participles and telling about the weekend: Review and practice of lesson 20",
+  "objetivo": "Lesson 20, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 20,
+    "titulo": "Irregular participles and telling about the weekend",
+    "objetivo": "Use the most frequent irregular participles with «avere», choose between «avere» and «essere» for verbs like «finire» and «cominciare», and tell a weekend with the time markers «ieri», «scorso», «fa» and «da». Avoid the English-speaker traps: regularizing irregular participles, using one helper for every verb, and confusing «for» with «da» and «per».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 20",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Review: participles and time markers",
+        "explicacao": "STEP 1: irregular participles: «fatto, detto, preso, visto, letto, scritto, messo, aperto, chiesto, risposto, scelto, perso, vinto, bevuto». STEP 2: after «avere» the participle never changes: «io ho letto», «lei ha letto», «noi abbiamo letto» (the helper changes, but the participle does not agree with the subject). STEP 3: verbs like «finire», «cominciare», «cambiare» take «avere» with a direct object and «essere» without one. STEP 4: «fa» goes after the amount of time, «scorso» goes after the noun, and «da» + present says how long something has lasted.",
+        "comparacao": "Compare each verb in English with its Italian pair: «read, read, read», «see, saw, seen», «write, wrote, written». The English forms are also irregular, so you already know the idea. Practice the Italian pair as a single unit and the sentence will come out right.",
+        "exemplos": [
+          {
+            "ru": "Ho fatto la spesa ieri",
+            "pt": "I did the shopping yesterday"
+          },
+          {
+            "ru": "Il film è finito alle dieci",
+            "pt": "The film ended at ten"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Il film ha finito alle dieci",
+            "certo": "Il film è finito alle dieci",
+            "motivo": "The film does not finish anything: without a direct object, «finire» takes «essere»."
+          }
+        ],
+        "tag": "Review"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 22,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ho fatto la spesa ieri",
+            "opcoes": [
+              "Ho fatto la spesa ieri",
+              "Ho fatto la spesa oggi",
+              "Ho preso la spesa ieri"
+            ],
+            "gabarito": "Ho fatto la spesa ieri",
+            "explicacao": "Listen for «fatto» and «ieri».",
+            "id": "it-020-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Abbiamo visto un bel film",
+            "opcoes": [
+              "Abbiamo visto un bel film",
+              "Abbiamo letto un bel film",
+              "Abbiamo visto un brutto film"
+            ],
+            "gabarito": "Abbiamo visto un bel film",
+            "explicacao": "Listen for «visto» and «bel».",
+            "id": "it-020-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Sono arrivata due ore fa",
+            "opcoes": [
+              "Sono arrivata due ore fa",
+              "Sono arrivata tra due ore",
+              "Sono arrivata due giorni fa"
+            ],
+            "gabarito": "Sono arrivata due ore fa",
+            "explicacao": "Listen for «due ore» and «fa».",
+            "id": "it-020-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ho scritto una mail",
+            "opcoes": [
+              "Ho scritto una mail",
+              "Ho letto una mail",
+              "Ho aperto una mail"
+            ],
+            "gabarito": "Ho scritto una mail",
+            "explicacao": "Listen for «scritto».",
+            "id": "it-020-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "ieri",
+            "opcoes": [
+              "ieri",
+              "oggi",
+              "domani"
+            ],
+            "gabarito": "ieri",
+            "explicacao": "Yesterday.",
+            "id": "it-020-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Cosa hai detto",
+            "opcoes": [
+              "Cosa hai detto",
+              "Cosa hai fatto",
+              "Cosa hai preso"
+            ],
+            "gabarito": "Cosa hai detto",
+            "explicacao": "«Detto».",
+            "id": "it-020-e06"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Il film è finito alle dieci",
+            "opcoes": [
+              "Il film è finito alle dieci",
+              "Il film è finito alle nove",
+              "Il film è cominciato alle dieci"
+            ],
+            "gabarito": "Il film è finito alle dieci",
+            "explicacao": "«È finito».",
+            "id": "it-020-e07"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "vincere, vinto",
+            "opcoes": [
+              "vincere, vinto",
+              "perdere, perso",
+              "bere, bevuto"
+            ],
+            "gabarito": "vincere, vinto",
+            "explicacao": "To win.",
+            "id": "it-020-e08"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "due giorni fa",
+            "opcoes": [
+              "due giorni fa",
+              "tra due giorni",
+              "fa due giorni"
+            ],
+            "gabarito": "due giorni fa",
+            "explicacao": "Two days ago.",
+            "id": "it-020-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "scegliere, scelto",
+            "opcoes": [
+              "scegliere, scelto",
+              "chiedere, chiesto",
+              "perdere, perso"
+            ],
+            "gabarito": "scegliere, scelto",
+            "explicacao": "To choose.",
+            "id": "it-020-e10"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "vedere, visto",
+            "opcoes": [
+              "vedere, visto",
+              "leggere, letto",
+              "scrivere, scritto"
+            ],
+            "gabarito": "vedere, visto",
+            "explicacao": "To see.",
+            "id": "it-020-e11"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "leggere, letto",
+            "opcoes": [
+              "leggere, letto",
+              "scrivere, scritto",
+              "prendere, preso"
+            ],
+            "gabarito": "leggere, letto",
+            "explicacao": "To read.",
+            "id": "it-020-e12"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "il fine settimana",
+            "opcoes": [
+              "il fine settimana",
+              "la settimana scorsa",
+              "sabato scorso"
+            ],
+            "gabarito": "il fine settimana",
+            "explicacao": "The weekend.",
+            "id": "it-020-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which is correct?",
+            "opcoes": [
+              "Ho letto un libro",
+              "Ho leggere un libro",
+              "Sono letto un libro"
+            ],
+            "gabarito": "Ho letto un libro",
+            "explicacao": "Auxiliary + participle.",
+            "id": "it-020-e14"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which is correct for «The lesson began»?",
+            "opcoes": [
+              "La lezione è cominciata",
+              "La lezione ha cominciato",
+              "La lezione ha cominciata"
+            ],
+            "gabarito": "La lezione è cominciata",
+            "explicacao": "Without a direct object.",
+            "id": "it-020-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ieri sera ho ___ un tè. (I drank)",
+            "opcoes": [
+              "bevuto",
+              "bere",
+              "beve"
+            ],
+            "gabarito": "bevuto",
+            "explicacao": "The participle of «bere».",
+            "id": "it-020-e16"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Il film è finito alle dieci»",
+            "opcoes": [
+              "Il",
+              "film",
+              "è",
+              "finito",
+              "alle",
+              "dieci"
+            ],
+            "gabarito": "Il film è finito alle dieci",
+            "explicacao": "«Essere», participle, time.",
+            "id": "it-020-e17"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud and then show the answer.",
+            "audio": "Abbiamo visto un bel film",
+            "respostaEsperada": "Abbiamo visto un bel film",
+            "explicacao": "We saw a nice film.",
+            "complemento": true,
+            "id": "it-020-r18"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Tell aloud what you did last weekend in six sentences, with five different irregular participles and one «fa» marker."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud the five pairs you find hardest, with the helper."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-020.json",
+  "responsavel": null
+}

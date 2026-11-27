@@ -1,0 +1,313 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 88,
+  "fase": 9,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Passato prossimo × imperfetto: Review and practice of lesson 22",
+  "objetivo": "Lesson 22, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 22,
+    "titulo": "Passato prossimo × imperfetto",
+    "objetivo": "Choose between the passato prossimo and the imperfetto in a story: background and event, markers like «all'improvviso» and «mentre», and the verbs that change meaning. Avoid the English-speaker traps: choosing by «long» or «short» action, translating «was» with the wrong verb, and using «sapere» for people.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 22",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Review: choosing between imperfetto and passato prossimo",
+        "explicacao": "STEP 1: imperfetto: scene, weather, time, age, habit and a state or action in progress. STEP 2: passato prossimo: events, the beginning or the end, a sudden change, a series of completed actions and a finished period, even a long one. STEP 3: the two are often used together: «Pioveva quando sono uscito». STEP 4: «sapevo / ho saputo», «conoscevo / ho conosciuto», «potevo / ho potuto», «volevo / ho voluto» change meaning. STEP 5: the quick test: can I ask «what happened next?»",
+        "comparacao": "The choice between the two tenses takes practice for everyone, so do not expect to get it right at first. Start with the background-event pair and the verbs that change meaning, and you cover most of what you need for an A2 story.",
+        "exemplos": [
+          {
+            "ru": "Pioveva quando sono uscito",
+            "pt": "It was raining when I went out"
+          },
+          {
+            "ru": "Ho conosciuto Paolo a Roma",
+            "pt": "I met Paolo in Rome"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Pioveva quando ho uscito",
+            "certo": "Pioveva quando sono uscito",
+            "motivo": "Intransitive «uscire» (to go out) takes «essere»: the helper is «sono»."
+          },
+          {
+            "errado": "Era sera e era freddo",
+            "certo": "Era sera e faceva freddo",
+            "motivo": "Cold weather uses «fare»."
+          }
+        ],
+        "tag": "Review"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 22,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Pioveva quando sono uscito",
+            "opcoes": [
+              "Pioveva quando sono uscito",
+              "Pioveva quando sono arrivato",
+              "Piove quando sono uscito"
+            ],
+            "gabarito": "Pioveva quando sono uscito",
+            "explicacao": "Listen for «pioveva».",
+            "id": "it-022-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Dormivo quando ha suonato il telefono",
+            "opcoes": [
+              "Dormivo quando ha suonato il telefono",
+              "Dormivo quando ha suonato il campanello",
+              "Dormo quando ha suonato il telefono"
+            ],
+            "gabarito": "Dormivo quando ha suonato il telefono",
+            "explicacao": "Listen for «dormivo».",
+            "id": "it-022-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ho conosciuto Paolo a Roma",
+            "opcoes": [
+              "Ho conosciuto Paolo a Roma",
+              "Ho conosciuto Paolo a Milano",
+              "Conoscevo Paolo a Roma"
+            ],
+            "gabarito": "Ho conosciuto Paolo a Roma",
+            "explicacao": "Listen for «ho conosciuto».",
+            "id": "it-022-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Era sera e faceva freddo",
+            "opcoes": [
+              "Era sera e faceva freddo",
+              "Era mattina e faceva freddo",
+              "Era sera e faceva caldo"
+            ],
+            "gabarito": "Era sera e faceva freddo",
+            "explicacao": "Evening and cold.",
+            "id": "it-022-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "All'improvviso ho sentito un rumore",
+            "opcoes": [
+              "All'improvviso ho sentito un rumore",
+              "All'improvviso ho visto un rumore",
+              "All'improvviso ho sentito un odore"
+            ],
+            "gabarito": "All'improvviso ho sentito un rumore",
+            "explicacao": "Listen for «sentito».",
+            "id": "it-022-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Non ho potuto venire",
+            "opcoes": [
+              "Non ho potuto venire",
+              "Non ho voluto venire",
+              "Non posso venire"
+            ],
+            "gabarito": "Non ho potuto venire",
+            "explicacao": "Listen for «potuto».",
+            "id": "it-022-e06"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Sofia, ieri sera ti ho chiamata tre volte. Dov'eri?",
+            "opcoes": [
+              "Sofia, ieri sera ti ho chiamata tre volte. Dov'eri?",
+              "Sofia, ieri sera ti ho chiamata due volte. Dov'eri?",
+              "Sofia, ieri sera ti ho chiamata tre volte. Dov'è?"
+            ],
+            "gabarito": "Sofia, ieri sera ti ho chiamata tre volte. Dov'eri?",
+            "explicacao": "Listen for «tre volte».",
+            "id": "it-022-e07"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Che sfortuna! E che cosa hai fatto?",
+            "opcoes": [
+              "Che sfortuna! E che cosa hai fatto?",
+              "Che fortuna! E che cosa hai fatto?",
+              "Che sfortuna! E che cosa hai detto?"
+            ],
+            "gabarito": "Che sfortuna! E che cosa hai fatto?",
+            "explicacao": "Listen for «sfortuna».",
+            "id": "it-022-e08"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Alla fine come sei entrata?",
+            "opcoes": [
+              "Alla fine come sei entrata?",
+              "Alla fine come sei uscita?",
+              "Alla fine quando sei entrata?"
+            ],
+            "gabarito": "Alla fine come sei entrata?",
+            "explicacao": "Listen for «entrata».",
+            "id": "it-022-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ho chiamato la vicina. Non ha risposto subito, perché dormiva.",
+            "opcoes": [
+              "Ho chiamato la vicina. Non ha risposto subito, perché dormiva.",
+              "Ho chiamato la vicina. Non ha risposto subito, perché mangiava.",
+              "Ho chiamato la vicina. Ha risposto subito, perché dormiva."
+            ],
+            "gabarito": "Ho chiamato la vicina. Non ha risposto subito, perché dormiva.",
+            "explicacao": "Listen for «non ha risposto».",
+            "id": "it-022-e10"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "sapere, ho saputo",
+            "opcoes": [
+              "sapere, ho saputo",
+              "conoscere, ho conosciuto",
+              "volere, ho voluto"
+            ],
+            "gabarito": "sapere, ho saputo",
+            "explicacao": "To find out.",
+            "id": "it-022-e11"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "accorgersi",
+            "opcoes": [
+              "accorgersi",
+              "spaventarsi",
+              "incontrare"
+            ],
+            "gabarito": "accorgersi",
+            "explicacao": "To notice.",
+            "id": "it-022-e12"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "potere, ho potuto",
+            "opcoes": [
+              "potere, ho potuto",
+              "sapere, ho saputo",
+              "volere, ho voluto"
+            ],
+            "gabarito": "potere, ho potuto",
+            "explicacao": "To manage.",
+            "id": "it-022-e13"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "all'improvviso",
+            "opcoes": [
+              "all'improvviso",
+              "a un certo punto",
+              "intanto"
+            ],
+            "gabarito": "all'improvviso",
+            "explicacao": "Suddenly.",
+            "id": "it-022-e14"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which tense describes the background of a story?",
+            "opcoes": [
+              "imperfetto",
+              "passato prossimo",
+              "both equally"
+            ],
+            "gabarito": "imperfetto",
+            "explicacao": "The scene.",
+            "id": "it-022-e15"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which is correct for «I met Paolo»?",
+            "opcoes": [
+              "Ho conosciuto Paolo",
+              "Conoscevo Paolo",
+              "Ho saputo Paolo"
+            ],
+            "gabarito": "Ho conosciuto Paolo",
+            "explicacao": "Meeting = passato prossimo.",
+            "id": "it-022-e16"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Pioveva quando ___ uscito. (I went)",
+            "opcoes": [
+              "sono",
+              "ho",
+              "ero"
+            ],
+            "gabarito": "sono",
+            "explicacao": "«Uscire» takes «essere».",
+            "id": "it-022-e17"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Pioveva quando sono uscito»",
+            "opcoes": [
+              "Pioveva",
+              "quando",
+              "sono",
+              "uscito"
+            ],
+            "gabarito": "Pioveva quando sono uscito",
+            "explicacao": "Background, then event.",
+            "id": "it-022-e18"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud and then show the answer.",
+            "audio": "Era sera e faceva freddo",
+            "respostaEsperada": "Era sera e faceva freddo",
+            "explicacao": "It was evening and it was cold.",
+            "complemento": true,
+            "id": "it-022-r19"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Tell aloud one story of six sentences: scene, event and reaction, with at least one of the four verbs that change meaning."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud the pair «sapevo / ho saputo» with a sentence for each."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-022.json",
+  "responsavel": null
+}

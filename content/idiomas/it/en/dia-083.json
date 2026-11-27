@@ -1,0 +1,245 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 83,
+  "fase": 9,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Imperfetto: Childhood memories",
+  "objetivo": "Lesson 21, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 21,
+    "titulo": "Imperfetto",
+    "objetivo": "Form the imperfetto, use it for habits, descriptions, age, time, weather and states, and tell childhood memories with «da bambino/a», «mentre» and «c'era». Avoid the English-speaker traps: «would» as the conditional, «was» for age and weather, and the singular for the hours.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Childhood memories",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "i nonni",
+            "translit": "ee NOHN-nee",
+            "pt": "the grandparents",
+            "en": "",
+            "audio": "i nonni"
+          },
+          {
+            "ru": "il cortile",
+            "translit": "eel kor-TEE-leh",
+            "pt": "the courtyard, the yard",
+            "en": "",
+            "audio": "il cortile"
+          },
+          {
+            "ru": "giocare",
+            "translit": "joh-KAH-reh",
+            "pt": "to play",
+            "en": "",
+            "audio": "giocare"
+          },
+          {
+            "ru": "la scuola elementare",
+            "translit": "lah SKWOH-lah eh-leh-mehn-TAH-reh",
+            "pt": "the elementary school",
+            "en": "",
+            "audio": "la scuola elementare"
+          },
+          {
+            "ru": "la merenda",
+            "translit": "lah meh-REHN-dah",
+            "pt": "the afternoon snack",
+            "en": "",
+            "audio": "la merenda"
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "min": 5,
+        "titulo": "Summers at my grandparents'",
+        "ru": "Quando ero piccola, abitavo in una casa vecchia con un grande cortile. Ogni estate andavo dai nonni in campagna. Mio nonno si alzava presto e faceva il pane, mentre io e mia cugina giocavamo fuori. La nonna ci preparava la merenda e, la sera, tutti mangiavamo insieme sotto un albero. Non c'erano molti giochi, ma eravamo felici. Oggi quella casa non c'è più, però io ricordo ancora il profumo del pane.",
+        "pt": "When I was little, I lived in an old house with a big courtyard. Every summer I went to my grandparents' place in the country. My grandfather got up early and made bread, while my cousin and I played outside. My grandmother prepared our afternoon snack and, in the evening, we all ate together under a tree. There were not many toys, but we were happy. Today that house no longer exists, but I still remember the smell of the bread.",
+        "perguntas": [
+          {
+            "pergunta": "Where did the narrator live as a child?",
+            "resposta": "In an old house with a big courtyard."
+          },
+          {
+            "pergunta": "What did the grandfather do?",
+            "resposta": "He got up early and made bread."
+          },
+          {
+            "pergunta": "Where did they eat in the evening?",
+            "resposta": "Together, under a tree."
+          },
+          {
+            "pergunta": "What does the narrator remember today?",
+            "resposta": "The smell of the bread."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "Telling childhood memories: «c'era», «mentre» and «quando ero piccola»",
+        "explicacao": "STEP 1: a memory about a time of life starts with a time frame and goes on in the imperfetto: «Quando ero piccola, abitavo in una casa vecchia». STEP 2: «c'era» («there was») and «c'erano» («there were») are the imperfetto of «c'è» and «ci sono»: «Non c'erano molti giochi». STEP 3: «mentre» (while) joins two actions that go on at the same time. In a memory, both verbs are in the imperfetto: «Mio nonno faceva il pane, mentre io giocavo fuori». STEP 4: the imperfetto describes a habit with no fixed end: «Ogni estate andavo dai nonni». STEP 5: the same form covers English «used to» and «was playing». STEP 6: if you remember a single event with a clear boundary, the next lesson shows that the passato prossimo is needed. For now, the memory is the background of your childhood. STEP 7: «oggi» and «ancora» can bring the memory back to the present: «Oggi quella casa non c'è più».",
+        "comparacao": "English spreads a memory over several forms («used to», «would», «was»). Italian keeps the same imperfetto, so the whole paragraph of a childhood memory has the same verb pattern. Choose it once and keep it, until something happens that has a clear end: then you need another tense, which is the subject of the next lesson.",
+        "exemplos": [
+          {
+            "ru": "Mentre studiavo, ascoltavo la radio",
+            "pt": "While I was studying, I was listening to the radio"
+          },
+          {
+            "ru": "Da piccolo giocavo sempre fuori",
+            "pt": "As a child I always played outside"
+          },
+          {
+            "ru": "Avevo dieci anni",
+            "pt": "I was ten years old"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Mentre ero studiando, ascoltavo la radio",
+            "certo": "Mentre studiavo, ascoltavo la radio",
+            "motivo": "This is a calque of English «was studying». «Essere» + gerund does not exist in Italian, so «ero studiando» is never correct. Use the imperfetto «studiavo», which already means «was studying». (Italian does have a progressive form, but it uses «stare», never «essere».) Two actions that go on together both take the imperfetto."
+          },
+          {
+            "errado": "Ero dieci anni",
+            "certo": "Avevo dieci anni",
+            "motivo": "Age uses «avere», in the past too."
+          }
+        ],
+        "tag": "Imperfect"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 3,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "i nonni",
+            "opcoes": [
+              "i nonni",
+              "i genitori",
+              "i fratelli"
+            ],
+            "gabarito": "i nonni",
+            "explicacao": "The grandparents.",
+            "id": "it-021-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "il cortile",
+            "opcoes": [
+              "il cortile",
+              "il giardino",
+              "la cucina"
+            ],
+            "gabarito": "il cortile",
+            "explicacao": "The courtyard.",
+            "id": "it-021-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "la merenda",
+            "opcoes": [
+              "la merenda",
+              "la cena",
+              "la colazione"
+            ],
+            "gabarito": "la merenda",
+            "explicacao": "The snack.",
+            "id": "it-021-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Mentre studiavo, ascoltavo la radio",
+            "opcoes": [
+              "Mentre studiavo, ascoltavo la radio",
+              "Mentre studio, ascolto la radio",
+              "Mentre studiavo, ho ascoltato la radio"
+            ],
+            "gabarito": "Mentre studiavo, ascoltavo la radio",
+            "explicacao": "Two imperfetti.",
+            "id": "it-021-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What does «Ogni estate andavo dai nonni» describe?",
+            "opcoes": [
+              "It is a regular habit",
+              "It happened once",
+              "It is a future plan"
+            ],
+            "gabarito": "It is a regular habit",
+            "explicacao": "«Ogni estate andavo».",
+            "id": "it-021-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which is the imperfetto of «ci sono» (there are)?",
+            "opcoes": [
+              "c'erano",
+              "c'era",
+              "ci sono stati"
+            ],
+            "gabarito": "c'erano",
+            "explicacao": "Plural: «c'erano».",
+            "id": "it-021-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Mio nonno ___ il pane. (used to make)",
+            "opcoes": [
+              "faceva",
+              "fareva",
+              "faceva fare"
+            ],
+            "gabarito": "faceva",
+            "explicacao": "The old stem «fac-».",
+            "id": "it-021-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Mia nonna faceva il pane»",
+            "opcoes": [
+              "Mia",
+              "nonna",
+              "faceva",
+              "il",
+              "pane"
+            ],
+            "gabarito": "Mia nonna faceva il pane",
+            "explicacao": "Subject, verb, object.",
+            "id": "it-021-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Tell aloud a memory of your own childhood in eight sentences, with «quando ero piccolo/a», «mentre» and «c'era»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud the three jobs of the imperfetto in the text: habit, background and time frame."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-021.json",
+  "responsavel": null
+}
