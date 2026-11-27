@@ -74,9 +74,10 @@ export default function Curso() {
           <div className="curso-fatos">
             {t.cursoPagina.fatos.map((f) => <span key={f}>{f}</span>)}
             {stats && <span>{t.cursoPagina.noAr(stats.publicadas, stats.total)}</span>}
-            {curso.id === 'ru' && <Link to="/russo-online" className="link-gramatica">{LOCALE.codigo === 'pt-BR' ? 'Prefere aulas de russo ao vivo, com professor?' : 'Prefer live Russian lessons with a teacher?'}</Link>}
           </div>
           {website && retomar}
+          {/* Link secundário depois do botão principal: o primeiro passo (começar a aula grátis) sobe na dobra do celular. */}
+          {curso.id === 'ru' && <p className="curso-aovivo"><Link to="/russo-online" className="link-gramatica">{LOCALE.codigo === 'pt-BR' ? 'Prefere aulas de russo ao vivo, com professor?' : 'Prefer live Russian lessons with a teacher?'}</Link></p>}
           {website && <CartaoRevisaoSite idioma={curso.id} />}
 
         </div>
