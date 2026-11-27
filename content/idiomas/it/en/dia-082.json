@@ -1,0 +1,249 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 82,
+  "fase": 9,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Imperfetto: Describing people, places and states",
+  "objetivo": "Lesson 21, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 21,
+    "titulo": "Imperfetto",
+    "objetivo": "Form the imperfetto, use it for habits, descriptions, age, time, weather and states, and tell childhood memories with «da bambino/a», «mentre» and «c'era». Avoid the English-speaker traps: «would» as the conditional, «was» for age and weather, and the singular for the hours.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Describing people, places and states",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "piccolo, piccola",
+            "translit": "PEEK-koh-loh, PEEK-koh-lah",
+            "pt": "small, little",
+            "en": "",
+            "audio": "piccolo, piccola"
+          },
+          {
+            "ru": "avere fame, avere sonno",
+            "translit": "ah-VEH-reh FAH-meh, ah-VEH-reh SOHN-noh",
+            "pt": "to be hungry, to be sleepy",
+            "en": "",
+            "audio": "avere fame, avere sonno"
+          },
+          {
+            "ru": "faceva freddo",
+            "translit": "fah-CHEH-vah FREHD-doh",
+            "pt": "it was cold",
+            "en": "",
+            "audio": "faceva freddo"
+          },
+          {
+            "ru": "pioveva",
+            "translit": "pyoh-VEH-vah",
+            "pt": "it was raining",
+            "en": "",
+            "audio": "pioveva"
+          },
+          {
+            "ru": "erano le otto",
+            "translit": "EH-rah-noh leh OHT-toh",
+            "pt": "it was eight o'clock",
+            "en": "",
+            "audio": "erano le otto"
+          },
+          {
+            "ru": "avevo dieci anni",
+            "translit": "ah-VEH-voh DYEH-chee AHN-nee",
+            "pt": "I was ten years old",
+            "en": "",
+            "audio": "avevo dieci anni"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 16,
+        "titulo": "The imperfetto of description: age, time, weather and states",
+        "explicacao": "STEP 1: the imperfetto is the tense of the scene: it says what things were like, not what happened. STEP 2: age: «avevo dieci anni». Italian says «I had ten years», in the past as in the present, so never «ero dieci anni». STEP 3: time: «erano le otto di sera». With the hours, the verb is plural («erano») because the subject is «le otto». For one o'clock, the verb is singular: «era l'una». STEP 4: weather: «faceva freddo», «faceva caldo», «pioveva», «nevicava». Cold and hot weather use «fare»: never «era freddo». STEP 5: many physical states use «avere»: «avevo fame», «avevo sonno», «avevo freddo» (but «ero stanco» and «ero malato» use «essere»). STEP 6: description of people and places uses «essere»: «Era una casa piccola», «Ero molto contento». STEP 7: in a story, these descriptions set the scene before something happens: «Erano le otto di sera e faceva freddo». STEP 8: a state in the past with no clear end, such as «ero stanco» or «avevo paura», is also the imperfetto.",
+        "comparacao": "English uses «was» and «were» for age, weather and time: «I was ten», «It was cold», «It was eight o'clock». Italian uses three different verbs for these three: «avevo», «faceva», «erano». Each English «was» needs a small decision. Time of day is the easiest to forget: «erano le otto» is plural, but «era l'una» is singular. If you remember only one thing, remember that hot and cold weather is «fare», not «essere».",
+        "exemplos": [
+          {
+            "ru": "Faceva freddo e pioveva",
+            "pt": "It was cold and it was raining"
+          },
+          {
+            "ru": "Erano le otto di sera",
+            "pt": "It was eight in the evening"
+          },
+          {
+            "ru": "Avevo dieci anni",
+            "pt": "I was ten years old"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "age",
+            "forma": "avevo dieci anni"
+          },
+          {
+            "tipo": "time",
+            "forma": "erano le otto · era l'una"
+          },
+          {
+            "tipo": "weather",
+            "forma": "faceva freddo · pioveva"
+          },
+          {
+            "tipo": "states",
+            "forma": "avevo fame · ero contento"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ero dieci anni",
+            "certo": "Avevo dieci anni",
+            "motivo": "Age uses «avere», in the past too."
+          },
+          {
+            "errado": "Era freddo e pioveva",
+            "certo": "Faceva freddo e pioveva",
+            "motivo": "Cold weather uses «fare»: «faceva freddo», not «era freddo»."
+          },
+          {
+            "errado": "Era le otto di sera",
+            "certo": "Erano le otto di sera",
+            "motivo": "With the hours, the verb is plural: «erano le otto»."
+          }
+        ],
+        "tag": "Imperfect"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "piccolo, piccola",
+            "opcoes": [
+              "piccolo, piccola",
+              "alto, alta",
+              "vecchio, vecchia"
+            ],
+            "gabarito": "piccolo, piccola",
+            "explicacao": "Small.",
+            "id": "it-021-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "faceva freddo",
+            "opcoes": [
+              "faceva freddo",
+              "faceva caldo",
+              "pioveva"
+            ],
+            "gabarito": "faceva freddo",
+            "explicacao": "It was cold.",
+            "id": "it-021-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "pioveva",
+            "opcoes": [
+              "pioveva",
+              "faceva freddo",
+              "nevicava"
+            ],
+            "gabarito": "pioveva",
+            "explicacao": "It was raining.",
+            "id": "it-021-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "avevo dieci anni",
+            "opcoes": [
+              "avevo dieci anni",
+              "avevo venti anni",
+              "ho dieci anni"
+            ],
+            "gabarito": "avevo dieci anni",
+            "explicacao": "I was ten.",
+            "id": "it-021-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "erano le otto",
+            "opcoes": [
+              "erano le otto",
+              "era l'una",
+              "sono le otto"
+            ],
+            "gabarito": "erano le otto",
+            "explicacao": "Eight o'clock.",
+            "id": "it-021-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «I was ten years old»?",
+            "opcoes": [
+              "Avevo dieci anni",
+              "Ero dieci anni",
+              "Ho avuto dieci anni"
+            ],
+            "gabarito": "Avevo dieci anni",
+            "explicacao": "Age uses «avere».",
+            "id": "it-021-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence says that the weather was cold?",
+            "opcoes": [
+              "Faceva freddo",
+              "Era freddo",
+              "Aveva freddo"
+            ],
+            "gabarito": "Faceva freddo",
+            "explicacao": "Cold weather uses «fare» («Aveva freddo» means that a person felt cold).",
+            "id": "it-021-e07"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ le otto di sera. (It was)",
+            "opcoes": [
+              "Erano",
+              "Era",
+              "Sono"
+            ],
+            "gabarito": "Erano",
+            "explicacao": "Plural, because of «le otto».",
+            "id": "it-021-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Describe aloud, in six sentences, a place you remember: the age you were, the time, the weather and how you felt."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud the three verbs behind English «was»: «avevo» for age, «faceva» for weather, «erano» for the hours."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-021.json",
+  "responsavel": null
+}

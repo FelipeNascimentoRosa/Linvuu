@@ -1,0 +1,273 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 76,
+  "fase": 8,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Passato prossimo with essere: Review and practice of lesson 19",
+  "objetivo": "Lesson 19, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 19,
+    "titulo": "Passato prossimo with essere",
+    "objetivo": "Form the passato prossimo of verbs that take «essere»: movement, change of state and reflexive verbs. Make the participle agree with the subject and place «già», «non… ancora», «mai» and «appena». Avoid the English-speaker traps: one helper for every verb, no agreement, and dropping the reflexive pronoun.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 19",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Review: essere, avere and agreement",
+        "explicacao": "STEP 1: reflexive verbs, movement to a place, and changes of state take «essere». The participle agrees with the subject: «-o, -a, -i, -e». STEP 2: most other verbs and any non-reflexive verb with a direct object take «avere», and the participle does not change with the subject. STEP 3: «già», «mai» and «appena» go between the auxiliary and the participle. STEP 4: «non… ancora» wraps the auxiliary. STEP 5: «stato» is the participle of «essere» and also of «stare».",
+        "comparacao": "The English helper «have» is easier but gives you no clue. In Italian, choosing the helper is part of the meaning, and agreement is part of the spelling. If you doubt a participle, say the sentence aloud with the right ending: the sound usually tells you.",
+        "exemplos": [
+          {
+            "ru": "Sono andata al mercato",
+            "pt": "I went to the market (a woman speaks)"
+          },
+          {
+            "ru": "Non sono mai stato a Roma",
+            "pt": "I have never been to Rome"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Non ho mai stato a Roma",
+            "certo": "Non sono mai stato a Roma",
+            "motivo": "«Essere» takes «essere» in the passato prossimo."
+          },
+          {
+            "errado": "Siamo alzati presto",
+            "certo": "Ci siamo alzati presto",
+            "motivo": "A reflexive verb needs the pronoun «ci»."
+          }
+        ],
+        "tag": "Review"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 22,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Sono andata al mercato",
+            "opcoes": [
+              "Sono andata al mercato",
+              "Sono andato al mercato",
+              "Siamo andate al mercato"
+            ],
+            "gabarito": "Sono andata al mercato",
+            "explicacao": "Feminine singular.",
+            "id": "it-019-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ci siamo alzati presto",
+            "opcoes": [
+              "Ci siamo alzati presto",
+              "Mi sono alzato presto",
+              "Ci siamo alzate presto"
+            ],
+            "gabarito": "Ci siamo alzati presto",
+            "explicacao": "«Ci siamo» and «alzati».",
+            "id": "it-019-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Non sono mai stato a Roma",
+            "opcoes": [
+              "Non sono mai stato a Roma",
+              "Non sono ancora stato a Roma",
+              "Sono già stato a Roma"
+            ],
+            "gabarito": "Non sono mai stato a Roma",
+            "explicacao": "«Mai» = never.",
+            "id": "it-019-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Sono arrivato alle otto",
+            "opcoes": [
+              "Sono arrivato alle otto",
+              "Sono arrivato alle nove",
+              "Sono partito alle otto"
+            ],
+            "gabarito": "Sono arrivato alle otto",
+            "explicacao": "Listen for «arrivato» and «otto».",
+            "id": "it-019-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "arrivare, arrivato",
+            "opcoes": [
+              "arrivare, arrivato",
+              "partire, partito",
+              "andare, andato"
+            ],
+            "gabarito": "arrivare, arrivato",
+            "explicacao": "To arrive.",
+            "id": "it-019-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Maria si è svegliata tardi",
+            "opcoes": [
+              "Maria si è svegliata tardi",
+              "Maria si è svegliato tardi",
+              "Maria è svegliata tardi"
+            ],
+            "gabarito": "Maria si è svegliata tardi",
+            "explicacao": "The pronoun «si» is needed.",
+            "id": "it-019-e06"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Siamo già usciti",
+            "opcoes": [
+              "Siamo già usciti",
+              "Siamo già uscite",
+              "Siamo ancora usciti"
+            ],
+            "gabarito": "Siamo già usciti",
+            "explicacao": "«Già» between the auxiliary and the participle.",
+            "id": "it-019-e07"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "appena",
+            "opcoes": [
+              "appena",
+              "sempre",
+              "mai"
+            ],
+            "gabarito": "appena",
+            "explicacao": "Just.",
+            "id": "it-019-e08"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ciao Marco, dove sei? Sei già tornato a casa?",
+            "opcoes": [
+              "Ciao Marco, dove sei? Sei già tornato a casa?",
+              "Ciao Marco, dove sei? Sei già arrivato a casa?",
+              "Ciao Marco, dove sei? Sei ancora a casa?"
+            ],
+            "gabarito": "Ciao Marco, dove sei? Sei già tornato a casa?",
+            "explicacao": "Listen for «già tornato».",
+            "id": "it-019-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Beata te! Ti sei divertita oggi?",
+            "opcoes": [
+              "Beata te! Ti sei divertita oggi?",
+              "Beata te! Ti sei divertito oggi?",
+              "Beata te! Ti sei divertita ieri?"
+            ],
+            "gabarito": "Beata te! Ti sei divertita oggi?",
+            "explicacao": "Feminine «divertita».",
+            "id": "it-019-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which is correct for «We have already gone out»?",
+            "opcoes": [
+              "Siamo già usciti",
+              "Abbiamo già usciti",
+              "Siamo già uscito"
+            ],
+            "gabarito": "Siamo già usciti",
+            "explicacao": "Auxiliary and agreement.",
+            "id": "it-019-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which auxiliary goes with «alzarsi»?",
+            "opcoes": [
+              "essere",
+              "avere",
+              "both are equally normal"
+            ],
+            "gabarito": "essere",
+            "explicacao": "Reflexive verbs take «essere».",
+            "id": "it-019-e12"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Marco e Luca ___ andati a casa. (are)",
+            "opcoes": [
+              "sono",
+              "hanno",
+              "è"
+            ],
+            "gabarito": "sono",
+            "explicacao": "«Andare» takes «essere».",
+            "id": "it-019-e13"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Maria ___ è svegliata tardi. (herself)",
+            "opcoes": [
+              "si",
+              "ci",
+              "ti"
+            ],
+            "gabarito": "si",
+            "explicacao": "Third person: «si».",
+            "id": "it-019-e14"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Sono arrivato alle otto»",
+            "opcoes": [
+              "Sono",
+              "arrivato",
+              "alle",
+              "otto"
+            ],
+            "gabarito": "Sono arrivato alle otto",
+            "explicacao": "«Essere», participle, time.",
+            "id": "it-019-e15"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud and then show the answer.",
+            "audio": "Siamo già usciti",
+            "respostaEsperada": "Siamo già usciti",
+            "explicacao": "We have already gone out.",
+            "complemento": true,
+            "id": "it-019-r16"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Tell aloud your last evening in six sentences with at least two verbs with «essere» and one reflexive verb."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud the checklist: reflexive, movement or change, direct object."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-019.json",
+  "responsavel": null
+}

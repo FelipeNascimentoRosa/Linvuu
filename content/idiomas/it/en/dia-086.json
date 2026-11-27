@@ -1,0 +1,227 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 86,
+  "fase": 9,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Passato prossimo × imperfetto: The structure of a story",
+  "objetivo": "Lesson 22, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 22,
+    "titulo": "Passato prossimo × imperfetto",
+    "objetivo": "Choose between the passato prossimo and the imperfetto in a story: background and event, markers like «all'improvviso» and «mentre», and the verbs that change meaning. Avoid the English-speaker traps: choosing by «long» or «short» action, translating «was» with the wrong verb, and using «sapere» for people.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "The structure of a story",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "incontrare",
+            "translit": "een-kohn-TRAH-reh",
+            "pt": "to meet, to run into",
+            "en": "",
+            "audio": "incontrare"
+          },
+          {
+            "ru": "accorgersi",
+            "translit": "ahk-KOR-jehr-see",
+            "pt": "to notice, to realize",
+            "en": "",
+            "audio": "accorgersi"
+          },
+          {
+            "ru": "perdere",
+            "translit": "PEHR-deh-reh",
+            "pt": "to lose",
+            "en": "",
+            "audio": "perdere"
+          },
+          {
+            "ru": "cadere",
+            "translit": "kah-DEH-reh",
+            "pt": "to fall",
+            "en": "",
+            "audio": "cadere"
+          },
+          {
+            "ru": "gridare",
+            "translit": "gree-DAH-reh",
+            "pt": "to shout",
+            "en": "",
+            "audio": "gridare"
+          },
+          {
+            "ru": "spaventarsi",
+            "translit": "spah-vehn-TAHR-see",
+            "pt": "to get scared",
+            "en": "",
+            "audio": "spaventarsi"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 16,
+        "titulo": "The shape of a story: scene, event, reaction",
+        "explicacao": "STEP 1: a short story has three parts. The scene (imperfetto): «Era sera e faceva freddo». The event (passato prossimo): «All'improvviso ho sentito un rumore». The reaction (passato prossimo): «Mi sono spaventato e ho gridato». STEP 2: the six verbs of this session are typical story verbs. «Incontrare» (to meet), «perdere» (to lose), «gridare» (to shout) take «avere»: «ho incontrato», «ho perso», «ho gridato». STEP 3: «cadere» (to fall) takes «essere»: «è caduto», «sono caduto». STEP 4: «accorgersi» and «spaventarsi» are reflexive, so they take «essere»: «mi sono accorto», «mi sono spaventato». STEP 5: «accorgersi» is followed by «di»: «mi sono accorto di avere perso le chiavi». STEP 6: «mentre» and «intanto» keep the background going while the event happens: «Mentre camminavo, ho incontrato un amico». STEP 7: «poi» and «dopo» move to the next event: «Ho incontrato un amico, poi siamo andati al bar». STEP 8: choose the tense of each verb by its job: scene or event, background or step in the sequence. STEP 9: markers help the reader: «all'improvviso» and «un giorno» announce a new event, so the verb after them is usually the passato prossimo.",
+        "comparacao": "English stories mix «was walking», «walked» and «used to». The Italian version has the same two jobs, a scene tense and an event tense, and the English «was walking» and «walked» line up with the imperfetto and the passato prossimo in most cases. The line falls where you decide it: a finished period, even a long one, is told with the event tense («ho vissuto a Roma per dieci anni»). Tell your first story as a list of three things: where, what happened, what you did.",
+        "exemplos": [
+          {
+            "ru": "Era sera e faceva freddo",
+            "pt": "It was evening and it was cold"
+          },
+          {
+            "ru": "All'improvviso ho sentito un rumore",
+            "pt": "Suddenly I heard a noise"
+          },
+          {
+            "ru": "Dormivo quando ha suonato il telefono",
+            "pt": "I was sleeping when the phone rang"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "All'improvviso ho sentire un rumore",
+            "certo": "All'improvviso ho sentito un rumore",
+            "motivo": "After the auxiliary, use the participle, not the infinitive."
+          },
+          {
+            "errado": "Dormivo quando ha suonare il telefono",
+            "certo": "Dormivo quando ha suonato il telefono",
+            "motivo": "Use the participle after «ha»: «ha suonato»."
+          }
+        ],
+        "tag": "Imperfect"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 6,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "incontrare",
+            "opcoes": [
+              "incontrare",
+              "perdere",
+              "cadere"
+            ],
+            "gabarito": "incontrare",
+            "explicacao": "To meet.",
+            "id": "it-022-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "accorgersi",
+            "opcoes": [
+              "accorgersi",
+              "spaventarsi",
+              "incontrare"
+            ],
+            "gabarito": "accorgersi",
+            "explicacao": "To notice.",
+            "id": "it-022-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "perdere",
+            "opcoes": [
+              "perdere",
+              "cadere",
+              "gridare"
+            ],
+            "gabarito": "perdere",
+            "explicacao": "To lose.",
+            "id": "it-022-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "cadere",
+            "opcoes": [
+              "cadere",
+              "perdere",
+              "incontrare"
+            ],
+            "gabarito": "cadere",
+            "explicacao": "To fall.",
+            "id": "it-022-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "gridare",
+            "opcoes": [
+              "gridare",
+              "cadere",
+              "accorgersi"
+            ],
+            "gabarito": "gridare",
+            "explicacao": "To shout.",
+            "id": "it-022-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "spaventarsi",
+            "opcoes": [
+              "spaventarsi",
+              "accorgersi",
+              "incontrare"
+            ],
+            "gabarito": "spaventarsi",
+            "explicacao": "To get scared.",
+            "id": "it-022-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which helper does «spaventarsi» take in the passato prossimo?",
+            "opcoes": [
+              "essere",
+              "avere",
+              "both are equally normal"
+            ],
+            "gabarito": "essere",
+            "explicacao": "It is reflexive.",
+            "id": "it-022-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which is the scene in «Era sera e faceva freddo. All'improvviso ho sentito un rumore»?",
+            "opcoes": [
+              "Era sera e faceva freddo",
+              "ho sentito un rumore",
+              "all'improvviso"
+            ],
+            "gabarito": "Era sera e faceva freddo",
+            "explicacao": "The scene is in the imperfetto.",
+            "id": "it-022-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Tell aloud a short story of your own in six sentences: two for the scene, two for the event and two for the reaction."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say the three parts of a story aloud: scene, event, reaction, with one example verb for each."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-022.json",
+  "responsavel": null
+}

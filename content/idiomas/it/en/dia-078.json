@@ -1,0 +1,239 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 78,
+  "fase": 8,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Irregular participles and telling about the weekend: More irregulars and verbs with both auxiliaries",
+  "objetivo": "Lesson 20, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 20,
+    "titulo": "Irregular participles and telling about the weekend",
+    "objetivo": "Use the most frequent irregular participles with «avere», choose between «avere» and «essere» for verbs like «finire» and «cominciare», and tell a weekend with the time markers «ieri», «scorso», «fa» and «da». Avoid the English-speaker traps: regularizing irregular participles, using one helper for every verb, and confusing «for» with «da» and «per».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "More irregulars and verbs with both auxiliaries",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "chiedere, chiesto",
+            "translit": "KYEH-deh-reh, KYEH-stoh",
+            "pt": "to ask; asked",
+            "en": "",
+            "audio": "chiedere, chiesto"
+          },
+          {
+            "ru": "rispondere, risposto",
+            "translit": "ree-SPOHN-deh-reh, ree-SPOH-stoh",
+            "pt": "to answer; answered",
+            "en": "",
+            "audio": "rispondere, risposto"
+          },
+          {
+            "ru": "scegliere, scelto",
+            "translit": "SHEH-lyeh-reh, SHEHL-toh",
+            "pt": "to choose; chosen",
+            "en": "",
+            "audio": "scegliere, scelto"
+          },
+          {
+            "ru": "perdere, perso",
+            "translit": "PEHR-deh-reh, PEHR-soh",
+            "pt": "to lose; lost",
+            "en": "",
+            "audio": "perdere, perso"
+          },
+          {
+            "ru": "vincere, vinto",
+            "translit": "VEEN-cheh-reh, VEEN-toh",
+            "pt": "to win; won",
+            "en": "",
+            "audio": "vincere, vinto"
+          },
+          {
+            "ru": "bere, bevuto",
+            "translit": "BEH-reh, beh-VOO-toh",
+            "pt": "to drink; drunk",
+            "en": "",
+            "audio": "bere, bevuto"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 16,
+        "titulo": "More irregular participles, and verbs that take both auxiliaries",
+        "explicacao": "STEP 1: six more irregular participles: «chiedere → chiesto», «rispondere → risposto», «scegliere → scelto», «perdere → perso», «vincere → vinto», «bere → bevuto». STEP 2: «bere» is a special case: its participle «bevuto» is regular in form but uses the old stem «bev-». STEP 3: all six take «avere»: «Ho scelto», «Abbiamo vinto», «Hanno bevuto un tè». STEP 4: some verbs can take either helper. The deciding question is whether there is a direct object. STEP 5: with a direct object, the verb takes «avere»: «Ho finito il lavoro» (I finished the work), «Ho cominciato la lezione», «Ho cambiato casa», «Ho salito le scale». STEP 6: without a direct object, when the subject is the thing that simply begins, ends or changes by itself, the verb takes «essere»: «Il film è finito alle dieci», «La lezione è cominciata», «Il tempo è cambiato». With «salire» and «scendere», a person who moves without an object also takes «essere»: «Sono salito al secondo piano». STEP 7: «passare» works the same: «Ho passato un’ora lì» (with an object) and «È passata un’ora» (it elapsed). STEP 8: do not say that these verbs «only» take one helper: they take both, depending on the sentence. STEP 9: when the subject is a person who does the finishing but the object is not mentioned, «avere» is normal: «Non ho ancora finito» (I haven't finished yet).",
+        "comparacao": "English has no such choice: «I finished the work» and «The film finished» use the same «have» («has finished», «have finished»). Italian cares whether someone acts on something. If a person does it to an object, think «avere»; if the thing happens by itself, think «essere». English separates the two ideas too («I finished it», «it finished») but never in the helper; Italian does.",
+        "exemplos": [
+          {
+            "ru": "Il film è finito alle dieci",
+            "pt": "The film ended at ten"
+          },
+          {
+            "ru": "Non ho ancora finito",
+            "pt": "I have not finished yet"
+          },
+          {
+            "ru": "Abbiamo visto un film",
+            "pt": "We saw a film"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "with an object",
+            "forma": "Ho finito il lavoro → avere"
+          },
+          {
+            "tipo": "without an object",
+            "forma": "Il film è finito → essere"
+          },
+          {
+            "tipo": "with an object",
+            "forma": "Ho cambiato casa → avere"
+          },
+          {
+            "tipo": "without an object",
+            "forma": "Il tempo è cambiato → essere"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Il film ha finito alle dieci",
+            "certo": "Il film è finito alle dieci",
+            "motivo": "The film does not finish something. Nobody acts on an object, so standard Italian uses «essere» with «finire»."
+          }
+        ],
+        "tag": "Past tense"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "chiedere, chiesto",
+            "opcoes": [
+              "chiedere, chiesto",
+              "rispondere, risposto",
+              "scegliere, scelto"
+            ],
+            "gabarito": "chiedere, chiesto",
+            "explicacao": "To ask.",
+            "id": "it-020-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "perdere, perso",
+            "opcoes": [
+              "perdere, perso",
+              "vincere, vinto",
+              "bere, bevuto"
+            ],
+            "gabarito": "perdere, perso",
+            "explicacao": "To lose.",
+            "id": "it-020-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "vincere, vinto",
+            "opcoes": [
+              "vincere, vinto",
+              "perdere, perso",
+              "scegliere, scelto"
+            ],
+            "gabarito": "vincere, vinto",
+            "explicacao": "To win.",
+            "id": "it-020-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Il film è finito alle dieci",
+            "opcoes": [
+              "Il film è finito alle dieci",
+              "Il film è finito alle nove",
+              "Il film ha finito alle dieci"
+            ],
+            "gabarito": "Il film è finito alle dieci",
+            "explicacao": "Listen for «è finito».",
+            "id": "it-020-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct in standard Italian?",
+            "opcoes": [
+              "Ho finito il lavoro",
+              "Sono finito il lavoro",
+              "Ho finito lavoro"
+            ],
+            "gabarito": "Ho finito il lavoro",
+            "explicacao": "With a direct object, «finire» takes «avere».",
+            "id": "it-020-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct in standard Italian?",
+            "opcoes": [
+              "Il film è finito",
+              "Il film ha finito",
+              "Il film hanno finito"
+            ],
+            "gabarito": "Il film è finito",
+            "explicacao": "Without a direct object, «essere».",
+            "id": "it-020-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il tempo ___ cambiato. (has)",
+            "opcoes": [
+              "è",
+              "ha",
+              "sono"
+            ],
+            "gabarito": "è",
+            "explicacao": "The weather changes by itself: «essere».",
+            "id": "it-020-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Non ho ancora finito»",
+            "opcoes": [
+              "Non",
+              "ho",
+              "ancora",
+              "finito"
+            ],
+            "gabarito": "Non ho ancora finito",
+            "explicacao": "«Non», auxiliary, «ancora», participle.",
+            "id": "it-020-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say six sentences aloud with «finire», «cominciare» and «cambiare», three with an object («ho») and three without («è»)."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say the six new pairs aloud, from «chiedere, chiesto» to «bere, bevuto»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-020.json",
+  "responsavel": null
+}
