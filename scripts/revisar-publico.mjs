@@ -164,9 +164,13 @@ try {
   const sugestao = await global.newPage();
   await sugestao.addInitScript(() => { localStorage.removeItem('linvuu:sugestao-idioma-dispensada'); Object.defineProperty(navigator, 'languages', {get: () => ['pt-BR', 'pt']}); });
   await sugestao.goto('https://linvuu.com/');
+  // Na primeira visita o aviso de cookies tem a vez: a sugestão só aparece depois da escolha (faixa fixa na base, fora do fluxo).
+  const barraCookies = sugestao.locator('.analytics-consent-bar .analytics-consent-recusar');
+  if (await barraCookies.count()) await barraCookies.click();
   await sugestao.locator('.sugestao-idioma').waitFor();
-  const posicoes = await sugestao.evaluate(() => ({ sugestao: document.querySelector('.sugestao-idioma').getBoundingClientRect().bottom, cabecalho: document.querySelector('.lv-head').getBoundingClientRect().top }));
-  assert.ok(posicoes.sugestao <= posicoes.cabecalho, 'a sugestão de idioma não encobre o cabeçalho');
+  const posicoes = await sugestao.evaluate(() => ({ sugestaoTopo: document.querySelector('.sugestao-idioma').getBoundingClientRect().top, cabecalhoFundo: document.querySelector('.lv-head').getBoundingClientRect().bottom, posicao: getComputedStyle(document.querySelector('.sugestao-idioma')).position }));
+  assert.ok(posicoes.sugestaoTopo >= posicoes.cabecalhoFundo, 'a sugestão de idioma não encobre o cabeçalho');
+  assert.equal(posicoes.posicao, 'fixed', 'a sugestão de idioma não entra no fluxo (sem deslocamento de layout)');
   await sugestao.close();
   await global.close();
   console.log('Revisão pública: desktop, 390px, 320px e paridade do .com passaram.');
