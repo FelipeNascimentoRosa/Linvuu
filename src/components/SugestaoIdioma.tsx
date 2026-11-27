@@ -5,6 +5,8 @@ import { useEffect, useState } from 'react';
 import { LOCALE, urlEm } from '../i18n';
 import type { CodigoLocale } from '../i18n/locales';
 import { idiomaSugerido } from '../lib/sugestaoIdioma';
+import { analytics, EVENTO_CONSENTIMENTO } from '../lib/analytics';
+import { metaPixel } from '../lib/metaPixel';
 import './sugestao-idioma.css';
 
 const CHAVE = 'linvuu:sugestao-idioma-dispensada';
@@ -18,7 +20,12 @@ export function SugestaoIdioma() {
   useEffect(() => {
     try { if (localStorage.getItem(CHAVE) === '1') return; } catch { /* sem armazenamento: mostra */ }
     if (/bot|crawl|spider|lighthouse/i.test(navigator.userAgent)) return;
-    setAlvo(idiomaSugerido(navigator.languages?.length ? navigator.languages : [navigator.language], LOCALE.codigo));
+    // Primeira visita: o aviso de cookies tem a vez. A sugestão só aparece depois da escolha, para as duas faixas não dividirem a primeira tela.
+    const pendente = () => (analytics.configured() && analytics.choice() === null) || metaPixel.choice() === null;
+    const avaliar = () => { if (!pendente()) setAlvo(idiomaSugerido(navigator.languages?.length ? navigator.languages : [navigator.language], LOCALE.codigo)); };
+    avaliar();
+    window.addEventListener(EVENTO_CONSENTIMENTO, avaliar);
+    return () => window.removeEventListener(EVENTO_CONSENTIMENTO, avaliar);
   }, []);
   if (!alvo) return null;
   const t = LOCALE.codigo === 'en' && alvo === 'pt-BR'

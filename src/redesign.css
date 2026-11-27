@@ -100,7 +100,7 @@ h1,h2,h3,h4{font-family:var(--font-display);font-variation-settings:var(--fraunc
 @media(max-width:800px){.lv-foot-news-in,.lv-foot-in{grid-template-columns:1fr}}
 .lv-foot .redes a{background:transparent;color:var(--papel);border:1px solid var(--linha-sobre-marca-forte)}
 .lv-foot .redes a:hover{background:var(--papel);color:var(--verde-floresta);text-decoration:none}
-.lv-foot .news-aceite a{text-decoration:underline}
+.lv-foot .news-aceite a{text-decoration:underline;display:inline-block;min-height:24px;line-height:24px}
 
 /* Calor: saudação nos cartões, exercício, fotos, carta */
 .lv-saud{font-family:var(--font-display);font-variation-settings:var(--fraunces-display);font-size:44px;line-height:1.05;font-weight:600;color:var(--verde-floresta);display:block;margin-bottom:4px}
@@ -206,7 +206,7 @@ a.livro:focus-visible{outline:2px solid var(--verde,#1E3B2F);outline-offset:4px}
 .aa-tema button[aria-pressed="true"]{color:var(--sem-acao-texto)}
 .aa-sons{justify-self:start;font-size:13px;font-weight:600;color:var(--sem-texto-2);background:none;border:1px solid var(--sem-borda);border-radius:999px;padding:5px 12px;cursor:pointer}
 .aa-sons[aria-pressed="true"]{color:var(--sem-texto);border-color:var(--sem-destaque)}
-.aa-gramatica{font-size:14px;font-weight:600;color:var(--sem-texto);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--sem-destaque)}
+.aa-gramatica{display:inline-block;min-height:24px;line-height:24px;font-size:14px;font-weight:600;color:var(--sem-texto);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--sem-destaque)}
 /* Alvos de toque de pelo menos 44 px em telas de toque (WCAG 2.5.5). No desktop o visual segue o mesmo. */
 @media (pointer:coarse){
   .area-aluno .aa-tema button,.area-aluno .aa-sons,.area-aluno .aa-recolher{min-height:44px}

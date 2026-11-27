@@ -1,5 +1,7 @@
-/* A sugestão ocupa sua própria faixa para não encobrir a navegação. */
-.sugestao-idioma{position:relative;z-index:1;min-height:44px;padding:0 var(--pad);display:flex;align-items:center;justify-content:center;gap:14px;background:var(--papel);color:var(--text);font-size:13px}
+/* Faixa fixa na base: não entra no fluxo (não empurra o cabeçalho nem gera deslocamento de layout) e só aparece depois do aviso de cookies.
+   O corpo ganha a mesma altura de respiro embaixo, para o rodapé nunca ficar escondido atrás dela. */
+.sugestao-idioma{position:fixed;inset-inline:0;bottom:0;z-index:900;min-height:44px;padding:0 var(--pad);border-top:1px solid var(--border);display:flex;align-items:center;justify-content:center;gap:14px;background:var(--papel);color:var(--text);font-size:13px}
+html:has(.sugestao-idioma) body{padding-bottom:calc(var(--lv-consent-h,0px) + 44px)}
 .sugestao-idioma p{margin:0;color:var(--muted)}
 .sugestao-idioma a{color:var(--verde-floresta);font-weight:700;text-decoration:underline;text-underline-offset:3px;display:inline-flex;align-items:center;min-height:44px}
 .sugestao-idioma button{min-width:44px;min-height:44px;padding:0 10px;border:1px solid var(--border);border-radius:var(--r-control);background:transparent;color:var(--text);font:inherit;cursor:pointer}

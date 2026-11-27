@@ -1,5 +1,7 @@
 // Eventos explícitos via API pública de captura. Sem SDK, autocapture ou replay.
 import { CTAS, type Cta } from '../config/ctas';
+/** Disparado quando alguém escolhe no aviso de cookies; outras faixas (ex.: sugestão de idioma) esperam por ele para não competir com o aviso. */
+export const EVENTO_CONSENTIMENTO='linvuu:consentimento';
 export const ANALYTICS_CHOICE='linvuu:analytics:v1', ANALYTICS_ID='linvuu:analytics-id:v1';
 export type AnalyticsChoice='yes'|'no'|null;
 export type AnalyticsEvent='page_viewed'|'course_viewed'|'lesson_started'|'practice_completed'|'lesson_completed'|'checkout_started'|'checkout_returned'|'view_pricing'|'select_plan'|'signup_completed'|'cta_clicked'|'review_started'|'review_rated'|'review_completed';
