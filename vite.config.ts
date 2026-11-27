@@ -27,7 +27,10 @@ function fontesDoSite(preload: boolean) {
       handler(html: string, ctx: { bundle?: Record<string, { fileName: string }> }) {
         if (!preload || !ctx.bundle) return html;
         const arquivos = Object.values(ctx.bundle).map((x) => x.fileName).filter((f) => /assets\/(?:newsreader-latin-opsz-normal|source-sans-3-latin-wght-normal)-[\w-]+\.woff2$/.test(f));
-        const links = arquivos.map((f) => `<link rel="preload" href="/${f}" as="font" type="font/woff2" crossorigin>`).join('\n    ');
+        const fontes = arquivos.map((f) => `<link rel="preload" href="/${f}" as="font" type="font/woff2" crossorigin>`);
+        // Catálogo de aulas: carregado por import() em main.tsx; o modulepreload faz o navegador buscá-lo junto com o pacote principal.
+        const catalogo = Object.values(ctx.bundle).map((x) => x.fileName).filter((f) => /^assets\/indice-[\w-]+\.js$/.test(f)).map((f) => `<link rel="modulepreload" crossorigin href="/${f}">`);
+        const links = [...fontes, ...catalogo].join('\n    ');
         return links ? html.replace('</head>', `    ${links}\n  </head>`) : html;
       },
     },
@@ -67,7 +70,8 @@ export default defineConfig(({ mode }) => {
   define: { 'import.meta.env.VITE_ALVO': JSON.stringify(alvo) },
   resolve: { alias: { '@plataforma': path.resolve('src/plataforma', alvo) } },
   // manifest (só no site): o servidor usa para pedir antecipadamente os módulos da página aberta (modulepreload por rota).
-  build: { outDir: apk ? 'dist-apk' : 'dist', copyPublicDir: !apk, manifest: !apk },
+  // React e o roteador mudam raramente: em um pacote próprio ficam no cache do navegador entre deploys, e o index-*.js (código do site) fica pequeno.
+  build: { outDir: apk ? 'dist-apk' : 'dist', copyPublicDir: !apk, manifest: !apk, rollupOptions: { output: { manualChunks(id: string) { if (/node_modules[\/](?:react|react-dom|scheduler|react-router|react-router-dom|@remix-run)[\/]/.test(id)) return 'vendor-react'; } } } },
   plugins: [react(), fontesDoSite(!apk), ...(apk ? [{
     name: 'publico-apk-sem-audio',
     enforce: 'pre' as const,

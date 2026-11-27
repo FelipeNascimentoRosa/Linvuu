@@ -2,7 +2,6 @@ import { SESSOES_GRATIS } from '../config/planos';
 import { carregarAuth } from './firebase';
 import trilhaJson from '../../content/trilha.json';
 import cursosJson from '../../content/cursos.json';
-import indiceJson from '../../content/indice.json';
 import type { InfoAula, SessaoAula } from './aulas';
 import { api } from './api';
 import { LOCALE, T } from '../i18n';
@@ -55,11 +54,19 @@ export function carregarTraducao(l: Explicacao): Promise<void> {
 /** Antes de abrir o site: só o índice da língua de explicação desta versão (nenhum na versão em português, ~40 KB a menos
  * no caminho crítico). Os outros vêm depois, sem pressa, para quem troca a língua da explicação numa aula. */
 export async function carregarTraducoes() {
-  await carregarTraducao(LOCALE.explicacao);
+  await Promise.all([carregarIndice(), carregarTraducao(LOCALE.explicacao)]);
   const depois = () => { void carregarTraducao('en'); };
   if (typeof window !== 'undefined' && 'requestIdleCallback' in window) window.requestIdleCallback(depois, { timeout: 4000 }); else setTimeout(depois, 2000);
 }
-const INDICE = indiceJson.cursos as unknown as Record<string, { total: number; publicadas: number; emProducao: number; planejadas: number; status: StatusAula[]; sobrescritos: Record<string, { t: string; o: string }>; grupos?: { aula: number; titulo: string; objetivo?: string; nivel?: string; dias: [number, number] }[]; fonte?: Explicacao; amostra?: { min: number; blocos: [string, number][] } }>;
+type IndiceCursos = Record<string, { total: number; publicadas: number; emProducao: number; planejadas: number; status: StatusAula[]; sobrescritos: Record<string, { t: string; o: string }>; grupos?: { aula: number; titulo: string; objetivo?: string; nivel?: string; dias: [number, number] }[]; fonte?: Explicacao; amostra?: { min: number; blocos: [string, number][] } }>;
+// O catálogo completo (~365 KB) fica em um arquivo próprio, baixado em paralelo ao pacote principal e antes da primeira tela (carregarTraducoes).
+// Ele só muda quando o conteúdo muda, então o navegador o reaproveita entre deploys de código. As funções abaixo só são chamadas depois do carregamento.
+let INDICE: IndiceCursos = {};
+let carregandoIndice: Promise<void> | undefined;
+export function carregarIndice(): Promise<void> {
+  carregandoIndice ??= import('../../content/indice.json').then((m) => { INDICE = m.default.cursos as unknown as IndiceCursos; });
+  return carregandoIndice;
+}
 
 /** Língua em que as explicações do curso foram escritas (o curso de português para estrangeiros foi escrito em inglês). */
 export const fonteDoCurso = (id: string): Explicacao => INDICE[id]?.fonte ?? 'pt';

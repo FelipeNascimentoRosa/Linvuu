@@ -23,7 +23,7 @@
     "auditar": "node scripts/auditar-aulas.mjs ru --md",
     "complementos": "node scripts/aplicar-complementos.mjs",
     "testar:medicao": "node --import tsx scripts/testar-medicao.ts",
-    "testar:seguranca": "node scripts/testar-seguranca.mjs && node --import tsx scripts/testar-ip.ts",
+    "testar:seguranca": "node scripts/testar-seguranca.mjs && node --import tsx scripts/testar-ip.ts && node scripts/testar-erro-cliente.mjs",
     "validar:design": "node scripts/validar-design.mjs",
     "mapa:site": "node --import tsx scripts/mapa-site.ts",
     "medir:baseline": "node scripts/medir-baseline.mjs",
