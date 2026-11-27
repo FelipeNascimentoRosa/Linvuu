@@ -139,6 +139,8 @@ export const en: Dicionario = {
     perguntas: 'Questions', blocosSessao: 'Session blocks', voltar: 'Back', continuar: 'Continue', concluir: 'Finish session', concluida: 'Session complete',
     concluidaNav: 'Session completed in this browser.', proxSessao: 'Go to the next session',
     provisorio: "Temporary audio: this passage uses your browser's voice. The recording is coming soon.",
+    provisorioFalha: "The recording didn't load just now, so this passage uses your browser's voice.",
+    somErro: "Couldn't play the audio right now.",
     semVoz: (idioma: string) => `Your browser has no ${idioma} voice installed, so some audio buttons may be silent. Install the voice in your device settings.`,
     acertou: (c: number, t: number) => `You got ${c} of ${t} right`, bloco: (i: number, t: number, m: number) => `Block ${i} of ${t} · ~${m} min`,
     exercicio: (i: number, t: number) => `Exercise ${i} of ${t}`, teclado: (n: number) => `Keyboard: press 1 to ${n} to choose and Enter to check.`,

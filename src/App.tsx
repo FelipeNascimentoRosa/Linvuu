@@ -1,12 +1,11 @@
 import { lazy, Suspense, useEffect } from 'react';
 import { APK } from './plataforma';
+import { AnalyticsConsent } from './components/AnalyticsConsent';
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 
 import Home from '@plataforma/Home';
 import Cursos from '@plataforma/Cursos';
 // Portugues, Sobre, PorQue, Contato e ExcluirConta só existem no site: no build do APK o vite.config troca esses módulos por um vazio.
-// Aviso de cookies e pixels: fora do pacote inicial, entra logo depois da primeira pintura.
-const AnalyticsConsent = lazy(() => import('./components/AnalyticsConsent').then((m) => ({ default: m.AnalyticsConsent })));
 const Curso = lazy(() => import('@plataforma/Curso'));
 const Dia = lazy(() => import('@plataforma/Dia'));
 const Conta = lazy(() => import('./pages/Conta'));
@@ -104,7 +103,7 @@ export default function App() {
         </Routes>}
         </Suspense>
       </main>
-      <Suspense fallback={null}><AnalyticsConsent /></Suspense>
+      <AnalyticsConsent />
       {!AREA_ALUNO.test(pathname) && !NATIVO && <Footer />}
       {NATIVO && !AREA_ALUNO.test(pathname) && <BarraInferior />}
       {NATIVO && <PrimeiraAbertura />}

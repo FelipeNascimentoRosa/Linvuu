@@ -4,6 +4,7 @@ import { Bloco, Exercicio, Palavra, SessaoAula } from '../lib/aulas';
 import { corrigirResposta, resumirExercicios, normalizarResposta as norm } from '../lib/correcaoExercicios';
 import { consentimento, definirConsentimento, registrar } from '../lib/medicao';
 import { falar, falarLista, falarTrechos, parar, temVoz } from '../lib/audio';
+
 import { trechos } from '../lib/narracao';
 import { textos } from '../lib/textos';
 import { chaveSessao, lerSessao, salvarSessao } from '../lib/progresso';
@@ -24,12 +25,30 @@ const humanizar = (c: string) => c.charAt(0).toUpperCase() + c.slice(1).replace(
 /** Cabeçalho de coluna no idioma do site; chaves que são palavras do idioma estudado (ex.: «haben», «parlare») aparecem como estão. */
 const rotuloColuna = (c: string, explicacao: string) => (explicacao === 'pt' ? ROTULO_COLUNA[c] : COLUNAS[explicacao]?.[c]) ?? humanizar(c);
 
+type EstadoSom = 'parado' | 'carregando' | 'tocando' | 'erro';
+/** Botão de áudio de uma frase. Estados visíveis e anunciados: carregando (aria-busy), tocando (aria-pressed) e erro (aviso em role=status). */
 function Audio({ texto, idioma, rotulo }: { texto: string; idioma: string; rotulo?: string }) {
-  rotulo = rotulo ?? textos(idioma).ouvir;
+  const T = textos(idioma);
+  rotulo = rotulo ?? T.ouvir;
+  const [estado, setEstado] = useState<EstadoSom>('parado');
+  const vivo = useRef(true);
+  const pedido = useRef(0);
+  useEffect(() => { vivo.current = true; return () => { vivo.current = false; }; }, []);
+  const clicar = async () => {
+    if (estado === 'tocando' || estado === 'carregando') { pedido.current++; parar(); setEstado('parado'); return; }
+    const meu = ++pedido.current;
+    setEstado('carregando');
+    const r = await falar(texto, idioma, () => { if (vivo.current && meu === pedido.current) setEstado('tocando'); });
+    if (!vivo.current || meu !== pedido.current) return;
+    if (r === 'erro') { setEstado('erro'); window.setTimeout(() => { if (vivo.current && meu === pedido.current) setEstado('parado'); }, 4000); } else setEstado('parado');
+  };
   return (
-    <button type="button" className="som" aria-label={`${rotulo}: ${texto}`} onClick={() => falar(texto, idioma)}>
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z" /><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13" /></svg>
-    </button>
+    <>
+      <button type="button" className="som" data-estado={estado} aria-label={`${rotulo}: ${texto}`} aria-busy={estado === 'carregando' ? 'true' : undefined} aria-pressed={estado === 'tocando'} onClick={clicar}>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z" /><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13" /></svg>
+      </button>
+      <span className="sr-only" role="status">{estado === 'erro' ? T.somErro : ''}</span>
+    </>
   );
 }
 
@@ -349,7 +368,7 @@ export function Sessao({ sessao, idioma, aula, dia, proximo, nomeIdioma, explica
   const [idx, setIdx] = useState(() => Math.min(lerSessao(chave)?.bloco ?? 0, total - 1));
   const [completa, setCompleta] = useState(() => lerSessao(chave)?.completa ?? false);
   const [voz, setVoz] = useState<boolean | null>(null);
-  const [provisorio, setProvisorio] = useState(false);
+  const [provisorio, setProvisorio] = useState<'ausente' | 'falha' | null>(null);
   const b = sessao.blocos[idx];
   const tituloEtapa = useRef<HTMLHeadingElement>(null);
   const primeiraEtapa = useRef(true);
@@ -360,7 +379,7 @@ export function Sessao({ sessao, idioma, aula, dia, proximo, nomeIdioma, explica
 
   useEffect(() => { temVoz(idioma).then(setVoz); return () => parar(); }, [idioma]);
   useEffect(() => {
-    const ouvir = (e: Event) => setProvisorio((e as CustomEvent<string>).detail === 'voz-do-navegador');
+    const ouvir = (e: Event) => { const f = (e as CustomEvent<string>).detail; setProvisorio(f === 'voz-do-navegador' ? 'ausente' : f === 'voz-por-falha' ? 'falha' : null); };
     window.addEventListener('linvuu:fonte-audio', ouvir);
     return () => window.removeEventListener('linvuu:fonte-audio', ouvir);
   }, []);
@@ -378,7 +397,7 @@ export function Sessao({ sessao, idioma, aula, dia, proximo, nomeIdioma, explica
     <div className={`sessao${compacta ? " app-sessao" : ""}`}>
       {compacta && <div className="app-etapa-progresso"><span>{T.bloco(idx + 1, total, b.min)}</span><strong>{completa ? total : idx + 1}/{total}</strong><progress max={total} value={completa ? total : idx} aria-label={T.blocosSessao} /></div>}
       {voz === false && <p className="nota">{T.semVoz(nomeIdioma ?? idioma)}</p>}
-      {provisorio && <p className="nota nota-audio" role="status">{T.provisorio}</p>}
+      <div role="status">{provisorio && <p className="nota nota-audio">{provisorio === 'falha' ? T.provisorioFalha : T.provisorio}</p>}</div>
       {compacta ? <details className="app-navegador-etapas"><summary><span>{T.blocosSessao}</span><span>{idx + 1}/{total} <span aria-hidden="true">⌄</span></span></summary>{etapas}</details> : etapas}
       <div className="bloco">
         <div className="bloco-topo"><h2 ref={tituloEtapa} className={compacta ? "app-etapa-titulo" : undefined} tabIndex={-1}>{T.rotuloBloco[b.tipo]}</h2><span>{T.bloco(idx + 1, total, b.min)}</span></div>

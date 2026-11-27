@@ -1,7 +1,7 @@
 import {useCallback,useEffect,useState} from 'react';
 import {Link,useLocation} from 'react-router-dom';
 import {LOCALE} from '../i18n';
-import {analytics,rotaAnalytics,type AnalyticsChoice} from '../lib/analytics';
+import {analytics,rotaAnalytics,EVENTO_CONSENTIMENTO,type AnalyticsChoice} from '../lib/analytics';
 import {metaPixel} from '../lib/metaPixel';
 import {tiktokPixel} from '../lib/tiktokPixel';
 import {clarity} from '../lib/clarity';
@@ -38,8 +38,9 @@ export function AnalyticsConsent(){
  const pendente=(analytics.configured()&&choice===null)||(!APK&&adChoice===null);
  // Site: escolha feita = painel fora da página (não ocupa texto nem espaço; nada se desloca). O app mantém o painel no fluxo.
  if(!APK&&!pendente&&!aberto){document.documentElement.style.removeProperty('--lv-consent-h');return (choice||adChoice)?<span className="sr-only" role="status">{t.saved}</span>:null;}
- const choose=(v:'yes'|'no')=>{analytics.choose(v);setChoice(analytics.choice());};
- const chooseAd=(v:'yes'|'no')=>{metaPixel.choose(v);tiktokPixel.choose(v);setAdChoice(metaPixel.choice());};
+ const avisarEscolha=()=>window.dispatchEvent(new Event(EVENTO_CONSENTIMENTO));
+ const choose=(v:'yes'|'no')=>{analytics.choose(v);setChoice(analytics.choice());avisarEscolha();};
+ const chooseAd=(v:'yes'|'no')=>{metaPixel.choose(v);tiktokPixel.choose(v);setAdChoice(metaPixel.choice());avisarEscolha();};
  // Primeira visita: uma linha só, dois botões, um clique. O detalhe por finalidade fica em "Detalhar".
  const tudo=(v:'yes'|'no')=>{choose(v);chooseAd(v);};
  if(!APK&&pendente&&!aberto)return <aside ref={medir} className="analytics-consent analytics-consent-bar" data-flutuante="true" aria-label={t.title}>

@@ -262,6 +262,14 @@ a.livro:focus-visible{outline:2px solid var(--ocre);outline-offset:6px}
 .callout .link{margin-top:6px}
 .som{flex-shrink:0;width:38px;height:38px;border-radius:50%;border:1.5px solid var(--text);background:var(--papel-claro);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;padding:0}
 .som:hover{background:var(--text);color:var(--papel-claro)}
+/* Estados do botão de áudio (Sessao.tsx → data-estado): carregando = borda tracejada (sinal que não depende de movimento) + pulso leve; tocando = invertido; erro = tijolo. */
+.som{transition:background-color var(--dur-1) var(--ease),color var(--dur-1) var(--ease),border-color var(--dur-1) var(--ease)}
+.som[aria-pressed=true]{background:var(--text);color:var(--papel-claro)}
+.som[data-estado=carregando]{border-style:dashed;border-color:var(--muted);background:var(--papel-claro);color:var(--muted);cursor:progress}
+.som[data-estado=carregando] svg{animation:som-pulso 800ms var(--ease) infinite alternate}
+.som[data-estado=erro]{border-color:var(--tijolo);background:var(--tijolo-claro);color:var(--tijolo)}
+@keyframes som-pulso{from{opacity:1}to{opacity:.4}}
+@media(prefers-reduced-motion:reduce){.som[data-estado=carregando] svg{animation:none}}
 .palavras{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
 .palavras .palavra-item{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;border:1.5px solid var(--border);border-radius:var(--r-sm)}
 .palavras strong{font-size:22px;display:block}
@@ -295,11 +303,19 @@ a.livro:focus-visible{outline:2px solid var(--ocre);outline-offset:6px}
 .ex-audio{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:14px}
 .ex-opcoes{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 .ex-op{padding:11px 20px;border-radius:var(--r-pill);border:1.5px solid var(--border-strong);background:var(--papel-claro);font-size:17px;font-weight:600;cursor:pointer}
+.ex-op{transition:transform var(--dur-1) var(--ease),border-color var(--dur-1) var(--ease),background-color var(--dur-1) var(--ease),color var(--dur-1) var(--ease)}
 .ex-op:hover:not(:disabled){border-color:var(--text);transform:translateY(-2px)}
+.ex-op:active:not(:disabled){transform:scale(.98)}
 .ex-op.on{border-color:var(--text);background:var(--surface)}
 .ex-op.certa{border-color:var(--ok);background:var(--ok-bg);color:var(--ok)}
 .ex-op.errada{border-color:var(--tijolo);background:var(--tijolo-claro);color:var(--tijolo)}
 .ex-op:disabled{cursor:default}
+/* Resposta: acerto assenta com um leve crescimento; erro treme 3 px, uma vez (200 ms, MARCA §5). Sem movimento quando o aparelho pede. */
+.ex-op.certa{animation:ex-acerto var(--dur-2) var(--ease)}
+.ex-op.errada{animation:ex-erro var(--dur-2) var(--ease)}
+@keyframes ex-acerto{from{transform:scale(.97)}60%{transform:scale(1.02)}to{transform:scale(1)}}
+@keyframes ex-erro{0%,100%{transform:translateX(0)}30%{transform:translateX(-3px)}65%{transform:translateX(3px)}}
+@media(prefers-reduced-motion:reduce){.ex-op.certa,.ex-op.errada{animation:none}.ex-op:hover:not(:disabled),.ex-op:active:not(:disabled){transform:none}}
 .ex-montada{min-height:48px;padding:12px 16px;border:1.5px dashed var(--border-strong);border-radius:var(--r-sm);font-size:18px}
 .ex-texto{width:100%;padding:12px 16px;border:1.5px solid var(--border-strong);border-radius:var(--r-sm);font-size:17px}
 .ex-feedback{padding:12px 16px;border-radius:var(--r-sm);font-size:15px}
@@ -332,7 +348,8 @@ a.livro:focus-visible{outline:2px solid var(--ocre);outline-offset:6px}
 .news-linha{display:flex;gap:10px}
 .news-linha input{flex:1;min-width:0;padding:13px 18px;border-radius:var(--r-pill);border:1.5px solid var(--linha-sobre-marca);background:var(--papel-claro);font-size:15px}
 .news-aceite{margin-top:10px;color:var(--fg-sobre-marca-2);font-size:13px}
-.news-aceite a{text-decoration:underline;color:var(--papel-claro)}
+.news-aceite a{text-decoration:underline;color:var(--papel-claro);display:inline-block;min-height:24px;line-height:24px}
+.news-aceite input[type=checkbox]{width:24px;height:24px;margin:0;flex-shrink:0}
 .news-ok{padding:14px 18px;border-radius:var(--r-sm);background:var(--ok-bg);color:var(--ok);font-weight:600}
 .news-nota a{text-decoration:underline;color:var(--papel-claro);font-weight:600}
 @media(max-width:760px){.news-linha{flex-direction:column}}

@@ -15,7 +15,11 @@ export const hashTexto = (t: string) => {
   return h.toString(16).padStart(8, '0');
 };
 
-export type FonteAudio = 'gravacao' | 'voz-do-navegador';
+export type FonteAudio = 'gravacao' | 'voz-do-navegador' | 'voz-por-falha';
+/** Como terminou um pedido de áudio: tocou, não havia como tocar, ou outro pedido tomou o lugar. */
+export type ResultadoAudio = 'ok' | 'erro' | 'cancelado';
+/** Fonte que de fato começou a tocar; o botão usa para passar de «carregando» a «tocando». */
+export type AoComecar = (fonte: 'gravacao' | 'voz-do-navegador') => void;
 const avisar = (fonte: FonteAudio) => { if (typeof window !== 'undefined') window.dispatchEvent(new CustomEvent<FonteAudio>('linvuu:fonte-audio', { detail: fonte })); };
 
 const indices = new Map<string, Promise<Set<string>>>();
@@ -51,8 +55,9 @@ export const parar = () => {
 
 // Referência viva da fala: no Chrome, uma fala sem referência pode ser coletada e nunca disparar onend.
 let falaAtual: SpeechSynthesisUtterance | null = null;
-const vozDoNavegador = (texto: string, idioma: string) => new Promise<void>((ok) => {
-  if (typeof speechSynthesis === 'undefined') return ok();
+/** true = a voz falou (ou o tempo-limite chegou); false = o navegador não tem voz ou recusou a fala. */
+const vozDoNavegador = (texto: string, idioma: string) => new Promise<boolean>((ok) => {
+  if (typeof speechSynthesis === 'undefined') return ok(false);
   const limpo = textoParaAudio(texto).replace(/[—…]/g, ' ');
   const u = new SpeechSynthesisUtterance(limpo);
   u.lang = LANG[idioma] ?? idioma; u.rate = 0.85;
@@ -61,9 +66,9 @@ const vozDoNavegador = (texto: string, idioma: string) => new Promise<void>((ok)
   // Alguns navegadores não avisam o fim (sem voz do idioma, aba em segundo plano, fala cancelada).
   // Teto de tempo proporcional ao texto: quem espera esta promessa (botão "Ouvindo…") nunca fica preso.
   let feito = false;
-  const fim = () => { if (feito) return; feito = true; clearTimeout(teto); if (falaAtual === u) falaAtual = null; ok(); };
-  const teto = setTimeout(fim, Math.min(20000, 2500 + limpo.length * 110));
-  u.onend = fim; u.onerror = fim;
+  const fim = (falou = true) => { if (feito) return; feito = true; clearTimeout(teto); if (falaAtual === u) falaAtual = null; ok(falou); };
+  const teto = setTimeout(() => fim(), Math.min(20000, 2500 + limpo.length * 110));
+  u.onend = () => fim(); u.onerror = (e) => fim(e.error === 'canceled' || e.error === 'interrupted');
   falaAtual = u;
   speechSynthesis.speak(u);
 });
@@ -110,16 +115,17 @@ const audioPrivado = (idioma: string, h: string): Promise<string | null> => {
 };
 
 /** Toca um texto com o token `minha` (se `parar()` for chamado, o token muda e a fala é abandonada). */
-async function tocar(texto: string, idioma: string, minha: number) {
+async function tocar(texto: string, idioma: string, minha: number, aoComecar?: AoComecar): Promise<ResultadoAudio> {
   const h = hashTexto(texto);
   const novo = (await indiceV2(idioma)).has(h);
   const publico = novo || (await indice(idioma)).has(h);
-  if (minha !== cancelar) return;
+  if (minha !== cancelar) return 'cancelado';
   const especial = pronunciaEspecial(idioma, h);
   const origem = especial
     ? `${BASE}${especial}`
     : publico ? `${BASE}/${novo ? 'v2/' : ''}${idioma}/${h}.mp3` : await audioPrivado(idioma, h);
-  if (minha !== cancelar) return;
+  if (minha !== cancelar) return 'cancelado';
+  let falhouGravacao = false;
   if (origem) {
     try {
       const a = new Audio(origem);
@@ -134,18 +140,20 @@ async function tocar(texto: string, idioma: string, minha: number) {
         a.onended = () => { clearTimeout(naoComecou); ok(); };
         a.onpause = () => { clearTimeout(naoComecou); ok(); };
         a.onerror = () => { clearTimeout(naoComecou); erro(new Error('sem arquivo')); };
-        a.play().then(() => avisar('gravacao')).catch((e) => { clearTimeout(naoComecou); erro(e); });
+        a.play().then(() => { avisar('gravacao'); aoComecar?.('gravacao'); }).catch((e) => { clearTimeout(naoComecou); erro(e); });
       });
-      return;
-    } catch { if (minha !== cancelar) return; }
+      return 'ok';
+    } catch { if (minha !== cancelar) return 'cancelado'; falhouGravacao = true; }
   }
-  avisar('voz-do-navegador');
-  await vozDoNavegador(texto, idioma);
+  avisar(falhouGravacao ? 'voz-por-falha' : 'voz-do-navegador');
+  aoComecar?.('voz-do-navegador');
+  const falou = await vozDoNavegador(texto, idioma);
+  return minha !== cancelar ? 'cancelado' : falou ? 'ok' : 'erro';
 }
 
-export async function falar(texto: string, idioma = 'ru'): Promise<void> {
+export async function falar(texto: string, idioma = 'ru', aoComecar?: AoComecar): Promise<ResultadoAudio> {
   parar();
-  await tocar(texto, idioma, cancelar);
+  return tocar(texto, idioma, cancelar, aoComecar);
 }
 
 export async function falarLista(textos: string[], idioma = 'ru') {

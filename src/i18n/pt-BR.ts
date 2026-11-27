@@ -137,6 +137,8 @@ export const ptBR = {
     perguntas: 'Perguntas', blocosSessao: 'Blocos da sessão', voltar: 'Voltar', continuar: 'Continuar', concluir: 'Concluir sessão', concluida: 'Sessão concluída',
     concluidaNav: 'Sessão concluída neste navegador.', proxSessao: 'Ir para a próxima sessão',
     provisorio: 'Áudio provisório: este trecho usa a voz do seu navegador. A gravação chega em breve.',
+    provisorioFalha: 'A gravação não carregou agora, então este trecho usa a voz do seu navegador.',
+    somErro: 'Não foi possível tocar o áudio agora.',
     semVoz: (idioma: string) => `Seu navegador não tem voz em ${idioma} instalada, então alguns botões de áudio podem ficar mudos. Instale a voz do idioma nas configurações do aparelho.`,
     acertou: (c: number, t: number) => `Você acertou ${c} de ${t}`, bloco: (i: number, t: number, m: number) => `Bloco ${i} de ${t} · ~${m} min`,
     exercicio: (i: number, t: number) => `Exercício ${i} de ${t}`, teclado: (n: number) => `Teclado: tecle 1 a ${n} para escolher e Enter para verificar.`,
