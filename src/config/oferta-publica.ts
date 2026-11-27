@@ -52,7 +52,7 @@ export const HOME_EN: Vitrine = {
   contrasteTitulo: 'What gamified apps hide, Linvuu explains',
   contraste: [
     { t: 'Built for English speakers', d: 'English speakers hit predictable walls — grammatical gender, verb aspect, cases, and false friends. Every lesson addresses those exact friction points in plain English.' },
-    { t: 'Complete A1–A2 structure', d: 'You do not guess rules from random phrases. You learn the sound system, full grammar tables, real exceptions and sentence-level audio from day one through A2.' },
+    { t: 'Complete A1–A2 structure', d: 'You don’t guess rules from random phrases. You learn the sound system, full grammar tables, real exceptions and sentence-level audio from day one through A2.' },
     { t: 'Spaced repetition without gimmicks', d: 'No hearts, no streak anxiety. Our spaced-repetition engine tracks what is fading and brings the exact structure back right before you forget it.' },
   ],
   autoriaTitulo: 'Written by teachers, not engagement algorithms',

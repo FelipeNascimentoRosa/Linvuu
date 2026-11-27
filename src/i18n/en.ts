@@ -138,7 +138,7 @@ export const en: Dicionario = {
     esconder: 'Hide example', ouvirExplicacao: 'Listen to the explanation', ouvirDialogo: 'Listen to the whole dialogue', parar: 'Stop', mostrarTrad: 'Show translation', ouvirTexto: 'Listen to the text',
     perguntas: 'Questions', blocosSessao: 'Session blocks', voltar: 'Back', continuar: 'Continue', concluir: 'Finish session', concluida: 'Session complete',
     concluidaNav: 'Session completed in this browser.', proxSessao: 'Go to the next session',
-    provisorio: "Temporary audio: this passage uses your browser's voice. Linvuu's own audio for it is coming soon.",
+    provisorio: "Temporary audio: this passage uses your browser's voice. Linvuu audio for this passage is coming soon.",
     provisorioFalha: "The audio didn't load just now, so this passage uses your browser's voice.",
     somErro: "Couldn't play the audio right now.",
     semVoz: (idioma: string) => `Your browser has no ${idioma} voice installed, so some audio buttons may be silent. Install the voice in your device settings.`,
