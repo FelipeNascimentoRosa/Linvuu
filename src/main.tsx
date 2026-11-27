@@ -21,6 +21,10 @@ window.addEventListener('vite:preloadError', (e) => {
 import { useAuth, AuthProvider } from './lib/AuthContext';
 import { LOCALE, localeLembrado, urlEm } from './i18n';
 import { carregarTraducoes } from './lib/content';
+import { ErroGeral } from './components/ErroGeral';
+import { iniciarCapturaDeErros } from './lib/erros';
+
+iniciarCapturaDeErros();
 
 // Quem já escolheu outro idioma na barra do topo volta a ele ao abrir um endereço sem prefixo (ex.: um link compartilhado).
 const lembrado = localeLembrado();
@@ -40,9 +44,11 @@ function AplicacaoDaConta() {
 
 // Em inglês os títulos traduzidos das aulas chegam antes da primeira tela (um arquivo pequeno, só do idioma escolhido).
 carregarTraducoes().finally(() => createRoot(document.getElementById('root')!).render(
-  <BrowserRouter basename={LOCALE.prefixo || undefined}>
-    <AuthProvider>
-      <AplicacaoDaConta />
-    </AuthProvider>
-  </BrowserRouter>
+  <ErroGeral>
+    <BrowserRouter basename={LOCALE.prefixo || undefined}>
+      <AuthProvider>
+        <AplicacaoDaConta />
+      </AuthProvider>
+    </BrowserRouter>
+  </ErroGeral>
 ));

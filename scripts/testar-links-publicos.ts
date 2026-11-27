@@ -8,6 +8,8 @@ import { createServer } from 'vite';
 (globalThis as any).window = { history: { state: { idx: 0 } }, location: { pathname: '/', origin: 'http://localhost' }, innerWidth: 1200 };
 const vite = await createServer({ server: { middlewareMode: true }, appType: 'custom' });
 try {
+  // No navegador o catálogo de aulas é carregado antes da primeira tela (main.tsx → carregarTraducoes); aqui faz o mesmo antes de renderizar.
+  await (await vite.ssrLoadModule('/src/lib/content.ts')).carregarIndice();
   const { AuthProvider } = await vite.ssrLoadModule('/src/lib/AuthContext.tsx');
   const { default: Curso } = await vite.ssrLoadModule('/src/pages/Curso.tsx');
   const { default: Dia } = await vite.ssrLoadModule('/src/pages/Dia.tsx');

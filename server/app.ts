@@ -23,6 +23,7 @@ import { registrarCtas } from './ctas';
 import { registrarNewsletter } from './newsletter';
 import { registrarAvaliacoes } from './avaliacoes';
 import { registrarExclusao } from './exclusao';
+import { registrarErroCliente } from './erro-cliente';
 import { credencialConfigurada } from './firebase-admin';
 import { fecharApi, registrarErros, registrarSeguranca } from './seguranca';
 import { registrarProntidao } from './prontidao';
@@ -58,6 +59,8 @@ export function criarApp(): Express {
   registrarNotificacoesCobranca(app);
   // Só a revisão aceita corpo grande (lote de até 50 blocos); o resto da API continua em 10 kB. Este parser vem antes do global.
   app.use('/api/progresso/revisao', express.json({ limit: LIMITE_CORPO_REVISAO }));
+  // Relatório de erro do navegador: corpo de no máximo 4 kB, parser próprio antes do global.
+  app.use('/api/erro', express.json({ limit: '4kb' }));
   app.use(express.json({ limit: '10kb' }));
 
   // Saúde do serviço (para monitoramento).
@@ -76,6 +79,7 @@ export function criarApp(): Express {
   registrarNewsletter(app);
   registrarAvaliacoes(app);
   registrarExclusao(app);
+  registrarErroCliente(app); // POST /api/erro: erro do navegador vira uma linha de log, sem PII
   // Metadados de cada rota (título, descrição, hreflang, conteúdo pré-renderizado): a mesma fonte para o HTML e para /api/meta.
   const raiz = raizDoProjeto();
   const dadosMeta = process.env.NODE_ENV === 'production' ? carregarDadosMeta(raiz) : null;

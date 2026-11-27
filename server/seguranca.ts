@@ -44,7 +44,7 @@ export function cabecalhos(producao: boolean) {
     res.setHeader('X-Content-Type-Options', 'nosniff');
     res.setHeader('X-Frame-Options', 'DENY');
     res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
-    res.setHeader('Permissions-Policy', 'camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()');
+    res.setHeader('Permissions-Policy', 'camera=(), microphone=(), geolocation=(), payment=(), usb=()');
     res.setHeader('Cross-Origin-Opener-Policy', 'same-origin-allow-popups'); // o login com Google abre uma janela
     res.setHeader('Cross-Origin-Resource-Policy', 'same-site');
     res.setHeader('X-Permitted-Cross-Domain-Policies', 'none');
@@ -146,6 +146,7 @@ export function registrarSeguranca(app: Express, producao: boolean) {
   app.post('/api/avaliacoes', limitar('avaliacoes', 5, 60_000));
   app.use('/api/conta', limitar('conta', 5, 60_000));
   app.use('/api/progresso/revisao', limitar('revisao', 60, 60_000));
+  app.use('/api/erro', limitar('erro', 10, 60_000));
   app.use('/api/audio', limitar('audio', 600, 60_000));
   app.use('/api', limitar('api', 300, 60_000));
 }
