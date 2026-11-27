@@ -1,0 +1,244 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 142,
+  "fase": 15,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Phone calls, invitations and arranging to meet: Inviting, accepting and declining",
+  "objetivo": "Lesson 36, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 36,
+    "titulo": "Phone calls, invitations and arranging to meet",
+    "objetivo": "Answer and make a phone call, invite someone, accept or decline politely, and agree on a time and a place. Say «Sono» and your name on the phone, use «di» before a verb in «Ti va di…?» and «Non vedo l'ora di…», and add the article in «verso le otto». Avoid the English-speaker traps: «Questo è» on the phone, «Chi parli?» and «Ti va uscire?».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Inviting, accepting and declining",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "Ti va di uscire?",
+            "translit": "tee vah dee oo-SHEE-reh",
+            "pt": "Do you feel like going out?",
+            "en": "",
+            "audio": "Ti va di uscire?"
+          },
+          {
+            "ru": "Che ne dici di…?",
+            "translit": "keh neh DEE-chee dee",
+            "pt": "How about…?",
+            "en": "",
+            "audio": "Che ne dici di…?"
+          },
+          {
+            "ru": "volentieri",
+            "translit": "voh-lehn-TYEH-ree",
+            "pt": "gladly, with pleasure",
+            "en": "",
+            "audio": "volentieri"
+          },
+          {
+            "ru": "ho un impegno",
+            "translit": "oh oon eem-PEH-nyoh",
+            "pt": "I have other plans",
+            "en": "",
+            "audio": "ho un impegno"
+          },
+          {
+            "ru": "con piacere",
+            "translit": "kohn pyah-CHEH-reh",
+            "pt": "with pleasure",
+            "en": "",
+            "audio": "con piacere"
+          },
+          {
+            "ru": "un'altra volta",
+            "translit": "oon-AHL-trah VOHL-tah",
+            "pt": "another time",
+            "en": "",
+            "audio": "un'altra volta"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 16,
+        "titulo": "Inviting: «Ti va di…?», «volentieri» and «un'altra volta»",
+        "explicacao": "STEP 1: «Ti va di uscire?» (Do you feel like going out?) is the usual friendly invitation. Before a verb it needs «di»: «Ti va di uscire?», «Ti va di andare al cinema?». STEP 2: before a noun the «di» disappears, as in «Ti va un caffè?» (Do you fancy a coffee?). STEP 3: with an infinitive or a singular noun the verb is «va», and it does not change with the person. So «Ti vai di andare al cinema?» is wrong. STEP 4: «Che ne dici di…?» (What do you say to…?) is another way to suggest something. «Ne» means «about it» here. STEP 5: to accept, say «Volentieri!» or «Con piacere!». STEP 6: to decline politely, say «Mi dispiace, ho un impegno» (I am sorry, I have other plans) or «Un'altra volta». STEP 7: the standard spelling is «un'altra volta», with «una» shortened before a vowel: «un'altra», «un'amica». A masculine «un altro giorno» has no apostrophe.",
+        "comparacao": "English says «Would you like to go out?», with «to» before the verb, so English speakers put the verb straight after «va»: «Ti va uscire?». Italian needs «di» in between. English «another» is one word, so learners write «un altra volta» without the apostrophe. In Italian «un'altra» is «una altra» shortened before a vowel.",
+        "exemplos": [
+          {
+            "ru": "Ti va di andare al cinema?",
+            "pt": "Do you feel like going to the cinema?"
+          },
+          {
+            "ru": "un'altra volta",
+            "pt": "another time"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "invitation + verb",
+            "forma": "Ti va di uscire?"
+          },
+          {
+            "tipo": "invitation + noun",
+            "forma": "Ti va un caffè?"
+          },
+          {
+            "tipo": "accepting",
+            "forma": "Volentieri! · Con piacere!"
+          },
+          {
+            "tipo": "declining",
+            "forma": "Mi dispiace, ho un impegno · un'altra volta"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ti va uscire?",
+            "certo": "Ti va di uscire?",
+            "motivo": "Before an infinitive, «Ti va» needs «di»."
+          },
+          {
+            "errado": "Ti vai di andare al cinema?",
+            "certo": "Ti va di andare al cinema?",
+            "motivo": "The verb stays «va»: it does not change with «tu»."
+          },
+          {
+            "errado": "un altra volta",
+            "certo": "un'altra volta",
+            "motivo": "«Una» is shortened before a vowel, so the apostrophe is needed: «un'altra»."
+          }
+        ],
+        "tag": "Phone"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "volentieri",
+            "opcoes": [
+              "volentieri",
+              "con piacere",
+              "un'altra volta"
+            ],
+            "gabarito": "volentieri",
+            "explicacao": "Listen for «volentieri».",
+            "id": "it-036-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "con piacere",
+            "opcoes": [
+              "con piacere",
+              "ho un impegno",
+              "volentieri"
+            ],
+            "gabarito": "con piacere",
+            "explicacao": "Listen for «piacere».",
+            "id": "it-036-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "un'altra volta",
+            "opcoes": [
+              "un'altra volta",
+              "con piacere",
+              "ho un impegno"
+            ],
+            "gabarito": "un'altra volta",
+            "explicacao": "Listen for «altra».",
+            "id": "it-036-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence invites a friend to go out?",
+            "opcoes": [
+              "Ti va di uscire?",
+              "Ti va uscire?",
+              "Ti vai di uscire?"
+            ],
+            "gabarito": "Ti va di uscire?",
+            "explicacao": "«Ti va» needs «di» before an infinitive and the verb stays «va».",
+            "id": "it-036-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which reply declines an invitation politely?",
+            "opcoes": [
+              "Mi dispiace, ho un impegno",
+              "Volentieri!",
+              "Con piacere!"
+            ],
+            "gabarito": "Mi dispiace, ho un impegno",
+            "explicacao": "The other two are ways of accepting.",
+            "id": "it-036-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which phrase is spelled correctly?",
+            "opcoes": [
+              "un'altra volta",
+              "un altra volta",
+              "uno altra volta"
+            ],
+            "gabarito": "un'altra volta",
+            "explicacao": "«Una» is shortened before a vowel and takes an apostrophe.",
+            "id": "it-036-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ti va ___ andare al cinema? (to)",
+            "opcoes": [
+              "di",
+              "a",
+              "per"
+            ],
+            "gabarito": "di",
+            "explicacao": "«Ti va di» + an infinitive.",
+            "id": "it-036-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Ti va di uscire?»",
+            "opcoes": [
+              "Ti",
+              "va",
+              "di",
+              "uscire?"
+            ],
+            "gabarito": "Ti va di uscire?",
+            "explicacao": "«Ti va» and then «di uscire».",
+            "id": "it-036-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say six sentences aloud: invite a friend with «Ti va di…?», accept with «Volentieri» and decline politely with «Mi dispiace, ho un impegno» and «un'altra volta»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud the invitation «Ti va di uscire?», one way to accept and one way to decline."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-036.json",
+  "responsavel": null
+}

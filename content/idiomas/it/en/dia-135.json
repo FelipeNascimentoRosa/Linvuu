@@ -1,0 +1,253 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 135,
+  "fase": 14,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Travel: airport, train, hotel: At the hotel",
+  "objetivo": "Lesson 34, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 34,
+    "titulo": "Travel: airport, train, hotel",
+    "objetivo": "Buy a train ticket and ask about platforms and delays, handle check-in and luggage at the airport, book a hotel room, and describe a short trip in the past. Use «da» for where a train leaves from and «per» for where a ticket goes, say «in ritardo» for a delay, and choose «essere» or «avere» in the passato prossimo. Avoid the English-speaker traps: «tardi» for a late train, «a» for the destination of a ticket, and «avere» with verbs of movement.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "At the hotel",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "la camera",
+            "translit": "lah KAH-meh-rah",
+            "pt": "the room",
+            "en": "",
+            "audio": "la camera"
+          },
+          {
+            "ru": "la prenotazione",
+            "translit": "lah preh-noh-tah-TSYOH-neh",
+            "pt": "the reservation",
+            "en": "",
+            "audio": "la prenotazione"
+          },
+          {
+            "ru": "camera matrimoniale",
+            "translit": "KAH-meh-rah mah-tree-moh-NYAH-leh",
+            "pt": "double room (with a double bed)",
+            "en": "",
+            "audio": "camera matrimoniale"
+          },
+          {
+            "ru": "la colazione",
+            "translit": "lah koh-lah-TSYOH-neh",
+            "pt": "breakfast",
+            "en": "",
+            "audio": "la colazione"
+          },
+          {
+            "ru": "la chiave",
+            "translit": "lah KYAH-veh",
+            "pt": "the key",
+            "en": "",
+            "audio": "la chiave"
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "min": 6,
+        "titulo": "Un weekend a Venezia / A weekend in Venice",
+        "ru": "Sabato scorso sono andata a Venezia in treno. Il Frecciarossa parte da Milano alle nove e ci vogliono circa due ore e mezza. Ho comprato il biglietto online, quindi non ho dovuto fare la fila in stazione. L'hotel era piccolo ma carino: la camera matrimoniale aveva una finestra sul canale e la colazione era inclusa. Purtroppo il treno del ritorno era in ritardo di venti minuti, ma sono arrivata a casa prima di mezzanotte.",
+        "pt": "Last Saturday I went to Venice by train. The Frecciarossa leaves from Milan at nine and it takes about two and a half hours. I bought the ticket online, so I did not have to wait in line at the station. The hotel was small but lovely: the double room had a window overlooking the canal and breakfast was included. Unfortunately the return train was twenty minutes late, but I got home before midnight.",
+        "perguntas": [
+          {
+            "pergunta": "How did the writer travel to Venice, and from which city?",
+            "resposta": "By train, on the «Frecciarossa» from Milan."
+          },
+          {
+            "pergunta": "How long does the trip take?",
+            "resposta": "«Circa due ore e mezza»: about two and a half hours."
+          },
+          {
+            "pergunta": "Was breakfast included?",
+            "resposta": "Yes: «la colazione era inclusa»."
+          },
+          {
+            "pergunta": "What went wrong on the way back?",
+            "resposta": "The train was twenty minutes late: «era in ritardo di venti minuti»."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 15,
+        "titulo": "At the hotel: «essere» in the passato prossimo and «ci vogliono»",
+        "explicacao": "STEP 1: hotel words: «la camera» is the room and «camera matrimoniale» is a room with a double bed. A «camera doppia» can have two single beds. STEP 2: to describe a trip, use the passato prossimo for finished actions: «sono andata», «ho comprato», «non ho dovuto», «sono arrivata». Use the imperfetto for the scene and for descriptions: «era piccolo», «aveva una finestra», «era inclusa», «era in ritardo». STEP 3: verbs of movement such as «andare» and «arrivare» take «essere», and the participle agrees with the subject. The writer is a woman, so she says «sono andata» and «sono arrivata»; a man says «sono andato» and «sono arrivato». STEP 4: «comprare» takes «avere»: «ho comprato». STEP 5: to say how long a trip takes, use «ci vuole» for one unit and «ci vogliono» for more than one: «Ci vuole un'ora», «Ci vogliono due ore». STEP 6: after «in» there is no article: «in treno». «Con il treno» is also correct, but not «con treno». «Fare la fila» is to wait in line.",
+        "comparacao": "English says «I went» (simple past), and Italian uses the passato prossimo for this: «sono andata». English «I have gone» always uses «have», so English speakers use «avere» everywhere and say «Ho andato a Venezia». With verbs of movement Italian uses «essere». English also says «it takes two hours» with «it takes», and Italian says «ci vogliono due ore», where the verb agrees with «due ore» and is plural.",
+        "exemplos": [
+          {
+            "ru": "Ci vogliono due ore",
+            "pt": "It takes two hours"
+          },
+          {
+            "ru": "La colazione è inclusa",
+            "pt": "Breakfast is included"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "finished actions",
+            "forma": "passato prossimo: sono andata · ho comprato · sono arrivata"
+          },
+          {
+            "tipo": "scene and description",
+            "forma": "imperfetto: era piccolo · aveva una finestra"
+          },
+          {
+            "tipo": "how long it takes",
+            "forma": "ci vuole un'ora · ci vogliono due ore"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ci vuole due ore",
+            "certo": "Ci vogliono due ore",
+            "motivo": "«Due ore» is plural, so the verb is «ci vogliono»."
+          },
+          {
+            "errado": "La colazione è incluso",
+            "certo": "La colazione è inclusa",
+            "motivo": "«Colazione» is feminine, so the adjective is «inclusa»."
+          }
+        ],
+        "tag": "Travel"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 2,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "la chiave",
+            "opcoes": [
+              "la chiave",
+              "la camera",
+              "la colazione"
+            ],
+            "gabarito": "la chiave",
+            "explicacao": "Listen for «chiave».",
+            "id": "it-034-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "la colazione",
+            "opcoes": [
+              "la colazione",
+              "la prenotazione",
+              "la chiave"
+            ],
+            "gabarito": "la colazione",
+            "explicacao": "Listen for «colazione».",
+            "id": "it-034-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "camera matrimoniale",
+            "opcoes": [
+              "camera matrimoniale",
+              "la colazione",
+              "la chiave"
+            ],
+            "gabarito": "camera matrimoniale",
+            "explicacao": "Listen for «matrimoniale».",
+            "id": "it-034-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "A woman says that she went to Venice. Which sentence is correct?",
+            "opcoes": [
+              "Sono andata a Venezia",
+              "Ho andata a Venezia",
+              "Sono andato a Venezia"
+            ],
+            "gabarito": "Sono andata a Venezia",
+            "explicacao": "«Andare» takes «essere», and the participle agrees with a female subject: «andata».",
+            "id": "it-034-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which form completes «___ due ore» to say how long a trip takes?",
+            "opcoes": [
+              "ci vogliono",
+              "ci vuole",
+              "ci vuoi"
+            ],
+            "gabarito": "ci vogliono",
+            "explicacao": "«Due ore» is plural.",
+            "id": "it-034-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "The text says «L'hotel era piccolo ma carino». Which tense is «era»?",
+            "opcoes": [
+              "imperfetto",
+              "passato prossimo",
+              "futuro"
+            ],
+            "gabarito": "imperfetto",
+            "explicacao": "The imperfetto describes the scene.",
+            "id": "it-034-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "La camera matrimoniale ___ una finestra. (had, imperfetto)",
+            "opcoes": [
+              "aveva",
+              "ha avuto",
+              "avrà"
+            ],
+            "gabarito": "aveva",
+            "explicacao": "The imperfetto describes how the room was.",
+            "id": "it-034-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Ci vogliono due ore»",
+            "opcoes": [
+              "Ci",
+              "vogliono",
+              "due",
+              "ore"
+            ],
+            "gabarito": "Ci vogliono due ore",
+            "explicacao": "«Ci vogliono» and then the length of time.",
+            "id": "it-034-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say six sentences aloud about a trip you made: where you went, how you got there, how long it took and what the hotel was like. Use the passato prossimo for what happened and the imperfetto for the scene."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud «sono andata» (a woman) and «sono andato» (a man), then «ci vuole un'ora» and «ci vogliono due ore»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-034.json",
+  "responsavel": null
+}

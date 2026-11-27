@@ -1,0 +1,251 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 137,
+  "fase": 14,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Work and introducing yourself professionally: Jobs and the workplace",
+  "objetivo": "Lesson 35, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 35,
+    "titulo": "Work and introducing yourself professionally",
+    "objetivo": "Name jobs and workplaces, say what you do, and handle a short job interview in the formal «Lei» way of speaking. Leave out the article in «Sono insegnante», use the reflexive «mi occupo di» and «mi sono laureata», and use «da» + the present for a job that is still going on, but «per» + the passato prossimo for a job that has ended. Avoid the English-speaker traps: «per» after «cercare» and «ho» with a reflexive verb.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Jobs and the workplace",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "l'ingegnere",
+            "translit": "lin-jeh-NYEH-reh",
+            "pt": "the engineer",
+            "en": "",
+            "audio": "l'ingegnere"
+          },
+          {
+            "ru": "l'insegnante",
+            "translit": "lin-seh-NYAHN-teh",
+            "pt": "the teacher",
+            "en": "",
+            "audio": "l'insegnante"
+          },
+          {
+            "ru": "l'infermiere",
+            "translit": "lin-fehr-MYEH-reh",
+            "pt": "the nurse (male)",
+            "en": "",
+            "audio": "l'infermiere"
+          },
+          {
+            "ru": "il cuoco",
+            "translit": "eel KWOH-koh",
+            "pt": "the cook, the chef",
+            "en": "",
+            "audio": "il cuoco"
+          },
+          {
+            "ru": "l'avvocato",
+            "translit": "lahv-voh-KAH-toh",
+            "pt": "the lawyer",
+            "en": "",
+            "audio": "l'avvocato"
+          },
+          {
+            "ru": "l'impiegato",
+            "translit": "lim-pyeh-GAH-toh",
+            "pt": "the office worker, the clerk",
+            "en": "",
+            "audio": "l'impiegato"
+          },
+          {
+            "ru": "la ditta",
+            "translit": "lah DEET-tah",
+            "pt": "the firm, the company",
+            "en": "",
+            "audio": "la ditta"
+          },
+          {
+            "ru": "l'ufficio",
+            "translit": "loof-FEE-choh",
+            "pt": "the office",
+            "en": "",
+            "audio": "l'ufficio"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 15,
+        "titulo": "Jobs: no article after «sono» and the elision «l'»",
+        "explicacao": "STEP 1: to say what your job is, Italian usually leaves out the indefinite article: «Sono insegnante» (I am a teacher). STEP 2: with an adjective the article comes back: «Sono un bravo insegnante» (I am a good teacher). «Sono un insegnante» is also correct, so do not treat it as a mistake. STEP 3: «l'insegnante» ends in «-ante» and does not change in the singular, for a man and for a woman: «Sono insegnante». STEP 4: other jobs have a masculine and a feminine form: «l'infermiere» and «l'infermiera», «il cuoco» and «la cuoca», «l'impiegato» and «l'impiegata». STEP 5: «l'ingegnere» and «l'avvocato» also have modern feminine forms: «l'ingegnera» and «l'avvocata». STEP 6: the article «il» becomes «l'» before a vowel: «l'ufficio» (the office), never «il ufficio». STEP 7: «la ditta» is a firm, a business, and «l'ufficio» is the room or the place where people work.",
+        "comparacao": "English needs «a»: «I am a teacher». Italian usually leaves the article out for a plain statement of a job, although «un» is not wrong. Learners also confuse «la ditta» (the company) with «l'ufficio» (the office, the place). English nouns for jobs hardly ever change for gender, while Italian often does.",
+        "exemplos": [
+          {
+            "ru": "Sono insegnante",
+            "pt": "I am a teacher"
+          },
+          {
+            "ru": "l'ufficio",
+            "pt": "the office"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "job, no article",
+            "forma": "Sono insegnante"
+          },
+          {
+            "tipo": "article back with an adjective",
+            "forma": "Sono un bravo insegnante"
+          },
+          {
+            "tipo": "before a vowel",
+            "forma": "l'ufficio · l'impiegato · l'ingegnere"
+          },
+          {
+            "tipo": "company and place",
+            "forma": "la ditta · l'ufficio"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Sono insegnanta",
+            "certo": "Sono insegnante",
+            "motivo": "Nouns in «-ante» such as «insegnante» do not change in the singular, for a man or a woman."
+          },
+          {
+            "errado": "il ufficio",
+            "certo": "l'ufficio",
+            "motivo": "The article is elided before a vowel: «l'ufficio»."
+          }
+        ],
+        "tag": "Work"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "l'ingegnere",
+            "opcoes": [
+              "l'ingegnere",
+              "l'infermiere",
+              "l'impiegato"
+            ],
+            "gabarito": "l'ingegnere",
+            "explicacao": "Listen for «ingegnere».",
+            "id": "it-035-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "l'insegnante",
+            "opcoes": [
+              "l'insegnante",
+              "l'infermiere",
+              "l'avvocato"
+            ],
+            "gabarito": "l'insegnante",
+            "explicacao": "Listen for «insegnante».",
+            "id": "it-035-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "la ditta",
+            "opcoes": [
+              "la ditta",
+              "l'ufficio",
+              "il cuoco"
+            ],
+            "gabarito": "la ditta",
+            "explicacao": "Listen for «ditta».",
+            "id": "it-035-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence says «I am a teacher» in a neutral way?",
+            "opcoes": [
+              "Sono insegnante",
+              "Sono insegnanta",
+              "Sono la insegnante"
+            ],
+            "gabarito": "Sono insegnante",
+            "explicacao": "Nouns in «-ante» do not change in the singular, and the article is left out.",
+            "id": "it-035-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which word means «the company, the firm»?",
+            "opcoes": [
+              "la ditta",
+              "l'ufficio",
+              "il cuoco"
+            ],
+            "gabarito": "la ditta",
+            "explicacao": "«La ditta» is the company; «l'ufficio» is the office, the place.",
+            "id": "it-035-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which phrase is correct?",
+            "opcoes": [
+              "l'ufficio",
+              "il ufficio",
+              "lo ufficio"
+            ],
+            "gabarito": "l'ufficio",
+            "explicacao": "The article is elided before a vowel.",
+            "id": "it-035-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ ufficio è grande. (the)",
+            "opcoes": [
+              "L'",
+              "Il",
+              "Lo"
+            ],
+            "gabarito": "L'",
+            "explicacao": "«Ufficio» begins with a vowel, so the article is «l'».",
+            "id": "it-035-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Sono insegnante»",
+            "opcoes": [
+              "Sono",
+              "insegnante"
+            ],
+            "gabarito": "Sono insegnante",
+            "explicacao": "«Sono» and then the job, with no article.",
+            "id": "it-035-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 1,
+        "enunciado": "Say six sentences aloud about jobs: your own job without an article, a friend's job and a place where a person works."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud «Sono insegnante» and «l'ufficio», and notice that «l'» replaces «il» before a vowel."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-035.json",
+  "responsavel": null
+}

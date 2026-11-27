@@ -1,0 +1,289 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 136,
+  "fase": 14,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Travel: airport, train, hotel: Review and practice of lesson 34",
+  "objetivo": "Lesson 34, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 34,
+    "titulo": "Travel: airport, train, hotel",
+    "objetivo": "Buy a train ticket and ask about platforms and delays, handle check-in and luggage at the airport, book a hotel room, and describe a short trip in the past. Use «da» for where a train leaves from and «per» for where a ticket goes, say «in ritardo» for a delay, and choose «essere» or «avere» in the passato prossimo. Avoid the English-speaker traps: «tardi» for a late train, «a» for the destination of a ticket, and «avere» with verbs of movement.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 34",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Review: trains, airports and hotels",
+        "explicacao": "STEP 1: a ticket goes «per» a place, and a train leaves «da» a platform or a city: «Un biglietto per Roma, andata e ritorno», «Da quale binario parte il treno?». STEP 2: a train or a flight behind schedule is «in ritardo», never «tardi»: «Il volo è in ritardo». STEP 3: «il bagaglio a mano» is a fixed phrase with «a». STEP 4: «Vorrei una camera matrimoniale» means «I would like a double room». Learn «vorrei» as a fixed phrase for polite requests. STEP 5: to describe a trip, use the passato prossimo with «essere» for movement («sono andata», «sono arrivata») and the imperfetto for the scene. STEP 6: use «ci vogliono» with a plural length of time: «Ci vogliono due ore».",
+        "comparacao": "English uses «to» and «from» for a ticket and for the platform, and «late» for a delay. Italian uses «per», «da» and «in ritardo». English also tells a trip with the simple past and «have», while Italian chooses «essere» for verbs of movement and agrees the participle.",
+        "exemplos": [
+          {
+            "ru": "Un biglietto per Roma, andata e ritorno",
+            "pt": "A return ticket to Rome"
+          },
+          {
+            "ru": "La colazione è inclusa",
+            "pt": "Breakfast is included"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Di quale binario parte il treno",
+            "certo": "Da quale binario parte il treno",
+            "motivo": "The starting point of a train uses «da», not «di»."
+          },
+          {
+            "errado": "Il volo è tardi",
+            "certo": "Il volo è in ritardo",
+            "motivo": "A flight behind schedule is «in ritardo»."
+          }
+        ],
+        "tag": "Review"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 22,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Da quale binario parte il treno",
+            "opcoes": [
+              "Da quale binario parte il treno",
+              "Da quale binario arriva il treno",
+              "Da quale stazione parte il treno"
+            ],
+            "gabarito": "Da quale binario parte il treno",
+            "explicacao": "Listen for «parte».",
+            "id": "it-034-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ci vogliono due ore",
+            "opcoes": [
+              "Ci vogliono due ore",
+              "Ci vogliono tre ore",
+              "Ci vuole un'ora"
+            ],
+            "gabarito": "Ci vogliono due ore",
+            "explicacao": "Listen for «due».",
+            "id": "it-034-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Vorrei una camera matrimoniale",
+            "opcoes": [
+              "Vorrei una camera matrimoniale",
+              "Vorrei una camera singola",
+              "Vorrei una colazione matrimoniale"
+            ],
+            "gabarito": "Vorrei una camera matrimoniale",
+            "explicacao": "Listen for «matrimoniale».",
+            "id": "it-034-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Un biglietto per Roma, andata e ritorno",
+            "opcoes": [
+              "Un biglietto per Roma, andata e ritorno",
+              "Un biglietto per Roma, solo andata",
+              "Un biglietto per Milano, andata e ritorno"
+            ],
+            "gabarito": "Un biglietto per Roma, andata e ritorno",
+            "explicacao": "Listen for «Roma» and «ritorno».",
+            "id": "it-034-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "la colazione",
+            "opcoes": [
+              "la colazione",
+              "la prenotazione",
+              "la chiave"
+            ],
+            "gabarito": "la colazione",
+            "explicacao": "Listen for «colazione».",
+            "id": "it-034-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Il volo è in ritardo",
+            "opcoes": [
+              "Il volo è in ritardo",
+              "Il volo è in orario",
+              "Il treno è in ritardo"
+            ],
+            "gabarito": "Il volo è in ritardo",
+            "explicacao": "Listen for «volo» and «ritardo».",
+            "id": "it-034-e06"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "La colazione è inclusa",
+            "opcoes": [
+              "La colazione è inclusa",
+              "La colazione è finita",
+              "La camera è inclusa"
+            ],
+            "gabarito": "La colazione è inclusa",
+            "explicacao": "Listen for «colazione» and «inclusa».",
+            "id": "it-034-e07"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "il passaporto",
+            "opcoes": [
+              "il passaporto",
+              "il bagaglio a mano",
+              "il biglietto"
+            ],
+            "gabarito": "il passaporto",
+            "explicacao": "Listen for «passaporto».",
+            "id": "it-034-e08"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "andata e ritorno",
+            "opcoes": [
+              "andata e ritorno",
+              "la fermata",
+              "la partenza"
+            ],
+            "gabarito": "andata e ritorno",
+            "explicacao": "Listen for «andata».",
+            "id": "it-034-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "la carta d'imbarco",
+            "opcoes": [
+              "la carta d'imbarco",
+              "la valigia",
+              "il volo"
+            ],
+            "gabarito": "la carta d'imbarco",
+            "explicacao": "Listen for «imbarco».",
+            "id": "it-034-e10"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "la fermata",
+            "opcoes": [
+              "la fermata",
+              "la stazione",
+              "il binario"
+            ],
+            "gabarito": "la fermata",
+            "explicacao": "Listen for «fermata».",
+            "id": "it-034-e11"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "l'arrivo",
+            "opcoes": [
+              "l'arrivo",
+              "la partenza",
+              "il ritardo"
+            ],
+            "gabarito": "l'arrivo",
+            "explicacao": "Listen for «arrivo».",
+            "id": "it-034-e12"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "il ritardo",
+            "opcoes": [
+              "il ritardo",
+              "l'arrivo",
+              "il biglietto"
+            ],
+            "gabarito": "il ritardo",
+            "explicacao": "Listen for «ritardo».",
+            "id": "it-034-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence says that a woman went to Venice by train?",
+            "opcoes": [
+              "Sono andata a Venezia in treno",
+              "Ho andata a Venezia in treno",
+              "Sono andata a Venezia con treno"
+            ],
+            "gabarito": "Sono andata a Venezia in treno",
+            "explicacao": "«Andare» takes «essere» and the participle agrees with the subject. After «in» there is no article, and «con treno» without the article is wrong.",
+            "id": "it-034-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Un biglietto ___ Roma. (to)",
+            "opcoes": [
+              "per",
+              "a",
+              "di"
+            ],
+            "gabarito": "per",
+            "explicacao": "The destination of a ticket uses «per».",
+            "id": "it-034-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Il volo è in ritardo»",
+            "opcoes": [
+              "Il",
+              "volo",
+              "è",
+              "in",
+              "ritardo"
+            ],
+            "gabarito": "Il volo è in ritardo",
+            "explicacao": "The flight, «è» and «in ritardo».",
+            "id": "it-034-e16"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud and then show the answer.",
+            "audio": "il bagaglio a mano",
+            "respostaEsperada": "il bagaglio a mano",
+            "explicacao": "Say the phrase aloud, then check the written text.",
+            "complemento": true,
+            "id": "it-034-r17"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say eight sentences aloud: two at a ticket office with «per» and «da», two about a delay with «in ritardo», two at a hotel, and two describing a trip in the passato prossimo."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud the three key phrases of the lesson: «da» (where from), «per» (where a ticket goes) and «in ritardo» (delayed)."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-034.json",
+  "responsavel": null
+}

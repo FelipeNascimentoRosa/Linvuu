@@ -1,0 +1,236 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 134,
+  "fase": 14,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Travel: airport, train, hotel: At the airport",
+  "objetivo": "Lesson 34, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 34,
+    "titulo": "Travel: airport, train, hotel",
+    "objetivo": "Buy a train ticket and ask about platforms and delays, handle check-in and luggage at the airport, book a hotel room, and describe a short trip in the past. Use «da» for where a train leaves from and «per» for where a ticket goes, say «in ritardo» for a delay, and choose «essere» or «avere» in the passato prossimo. Avoid the English-speaker traps: «tardi» for a late train, «a» for the destination of a ticket, and «avere» with verbs of movement.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "At the airport",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "il volo",
+            "translit": "eel VOH-loh",
+            "pt": "the flight",
+            "en": "",
+            "audio": "il volo"
+          },
+          {
+            "ru": "l'imbarco",
+            "translit": "lim-BAHR-koh",
+            "pt": "boarding",
+            "en": "",
+            "audio": "l'imbarco"
+          },
+          {
+            "ru": "la carta d'imbarco",
+            "translit": "lah KAHR-tah dim-BAHR-koh",
+            "pt": "the boarding pass",
+            "en": "",
+            "audio": "la carta d'imbarco"
+          },
+          {
+            "ru": "il bagaglio a mano",
+            "translit": "eel bah-GAH-lyoh ah MAH-noh",
+            "pt": "the hand luggage, the carry-on",
+            "en": "",
+            "audio": "il bagaglio a mano"
+          },
+          {
+            "ru": "la valigia",
+            "translit": "lah vah-LEE-jah",
+            "pt": "the suitcase",
+            "en": "",
+            "audio": "la valigia"
+          },
+          {
+            "ru": "il passaporto",
+            "translit": "eel pahs-sah-POHR-toh",
+            "pt": "the passport",
+            "en": "",
+            "audio": "il passaporto"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 16,
+        "titulo": "At the airport: fixed phrases and «in ritardo»",
+        "explicacao": "STEP 1: «il volo» is the flight, and a delayed flight is «in ritardo», like a train: «Il volo è in ritardo» (The flight is delayed). STEP 2: «la carta d'imbarco» is the boarding pass. In «d'imbarco» the «i» of «di» drops before a vowel. STEP 3: «l'imbarco» (boarding) is masculine, and its article becomes «l'» before a vowel. STEP 4: «il bagaglio a mano» is a fixed phrase and it keeps «a». English «luggage» cannot be counted, but «il bagaglio» can: «un bagaglio», «due bagagli». STEP 5: «la valigia» is the suitcase and «il passaporto» is the passport.",
+        "comparacao": "English says «hand luggage» and «carry-on», and English joins the two words directly («hand luggage»), so there is no preposition to copy. Learners tend to reach for «di» and say «bagaglio di mano». Italian uses the fixed phrase «bagaglio a mano», and the «a» cannot be replaced. English also says «the flight is late», but the Italian for a delay is «in ritardo», as for trains.",
+        "exemplos": [
+          {
+            "ru": "Il volo è in ritardo",
+            "pt": "The flight is delayed"
+          },
+          {
+            "ru": "il bagaglio a mano",
+            "pt": "the hand luggage"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "flight and boarding",
+            "forma": "il volo · l'imbarco · la carta d'imbarco"
+          },
+          {
+            "tipo": "luggage",
+            "forma": "il bagaglio a mano · la valigia"
+          },
+          {
+            "tipo": "delay",
+            "forma": "in ritardo"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "il bagaglio di mano",
+            "certo": "il bagaglio a mano",
+            "motivo": "The fixed phrase uses «a»: «bagaglio a mano»."
+          },
+          {
+            "errado": "Il volo è tardi",
+            "certo": "Il volo è in ritardo",
+            "motivo": "With «essere», a flight that is behind schedule is «in ritardo», not «tardi»."
+          }
+        ],
+        "tag": "Travel"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "il volo",
+            "opcoes": [
+              "il volo",
+              "la valigia",
+              "il passaporto"
+            ],
+            "gabarito": "il volo",
+            "explicacao": "Listen for «volo».",
+            "id": "it-034-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "la valigia",
+            "opcoes": [
+              "la valigia",
+              "la carta d'imbarco",
+              "il volo"
+            ],
+            "gabarito": "la valigia",
+            "explicacao": "Listen for «valigia».",
+            "id": "it-034-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "il passaporto",
+            "opcoes": [
+              "il passaporto",
+              "l'imbarco",
+              "il bagaglio a mano"
+            ],
+            "gabarito": "il passaporto",
+            "explicacao": "Listen for «passaporto».",
+            "id": "it-034-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What do you show to board a plane?",
+            "opcoes": [
+              "la carta d'imbarco",
+              "il ritardo",
+              "la stazione"
+            ],
+            "gabarito": "la carta d'imbarco",
+            "explicacao": "«La carta d'imbarco» is the boarding pass.",
+            "id": "it-034-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which phrase means «carry-on luggage»?",
+            "opcoes": [
+              "il bagaglio a mano",
+              "il bagaglio di mano",
+              "il bagaglio con mano"
+            ],
+            "gabarito": "il bagaglio a mano",
+            "explicacao": "The fixed phrase uses «a».",
+            "id": "it-034-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «The flight is delayed»?",
+            "opcoes": [
+              "Il volo è in ritardo",
+              "Il volo è tardi",
+              "Il volo è un ritardo"
+            ],
+            "gabarito": "Il volo è in ritardo",
+            "explicacao": "A delay is «in ritardo».",
+            "id": "it-034-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il bagaglio ___ mano è piccolo. (The carry-on bag is small.)",
+            "opcoes": [
+              "a",
+              "di",
+              "da"
+            ],
+            "gabarito": "a",
+            "explicacao": "The fixed phrase is «bagaglio a mano».",
+            "id": "it-034-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Il volo è in ritardo»",
+            "opcoes": [
+              "Il",
+              "volo",
+              "è",
+              "in",
+              "ritardo"
+            ],
+            "gabarito": "Il volo è in ritardo",
+            "explicacao": "The flight, «è» and «in ritardo».",
+            "id": "it-034-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say six sentences aloud at an airport: name your luggage, show your passport and boarding pass, and say that a flight is «in ritardo»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud the fixed phrase «il bagaglio a mano» and the sentence «Il volo è in ritardo»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-034.json",
+  "responsavel": null
+}

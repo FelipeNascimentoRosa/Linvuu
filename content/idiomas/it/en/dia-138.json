@@ -1,0 +1,244 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 138,
+  "fase": 14,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Work and introducing yourself professionally: Describing what you do",
+  "objetivo": "Lesson 35, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 35,
+    "titulo": "Work and introducing yourself professionally",
+    "objetivo": "Name jobs and workplaces, say what you do, and handle a short job interview in the formal «Lei» way of speaking. Leave out the article in «Sono insegnante», use the reflexive «mi occupo di» and «mi sono laureata», and use «da» + the present for a job that is still going on, but «per» + the passato prossimo for a job that has ended. Avoid the English-speaker traps: «per» after «cercare» and «ho» with a reflexive verb.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Describing what you do",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "occuparsi di",
+            "translit": "ohk-koo-PAHR-see dee",
+            "pt": "to deal with, to be in charge of",
+            "en": "",
+            "audio": "occuparsi di"
+          },
+          {
+            "ru": "il capo",
+            "translit": "eel KAH-poh",
+            "pt": "the boss",
+            "en": "",
+            "audio": "il capo"
+          },
+          {
+            "ru": "il collega",
+            "translit": "eel kohl-LEH-gah",
+            "pt": "the colleague",
+            "en": "",
+            "audio": "il collega"
+          },
+          {
+            "ru": "la riunione",
+            "translit": "lah ryoo-NYOH-neh",
+            "pt": "the meeting",
+            "en": "",
+            "audio": "la riunione"
+          },
+          {
+            "ru": "lo stipendio",
+            "translit": "loh stee-PEHN-dyoh",
+            "pt": "the salary",
+            "en": "",
+            "audio": "lo stipendio"
+          },
+          {
+            "ru": "l'orario",
+            "translit": "loh-RAH-ryoh",
+            "pt": "the schedule, the working hours",
+            "en": "",
+            "audio": "l'orario"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 16,
+        "titulo": "What you do: «mi occupo di», «lo stipendio» and «il collega»",
+        "explicacao": "STEP 1: «occuparsi di» is a reflexive verb followed by «di»: «Mi occupo di vendite» (I deal with sales). STEP 2: a reflexive verb always needs its pronoun: «mi occupo», «ti occupi», «si occupa». The sentence «Occupo di vendite» is missing the «mi». STEP 3: «lo stipendio» takes «lo» because «st-» is «s» + a consonant. STEP 4: «il collega» ends in «-a» but it is masculine. For a woman it is «la collega». The plural is «i colleghi» for men and «le colleghe» for women. STEP 5: «il capo» is the boss. STEP 6: «la riunione» is a meeting at work, and it is feminine. STEP 7: «lo stipendio» is a salary. It looks like «stipend», but a stipend is usually a small fixed allowance.",
+        "comparacao": "English says «I deal with sales» or «I work in sales», and an English speaker may drop the «mi» and say «occupo di vendite». Italian needs the reflexive pronoun. English also has no gender for «colleague», and it tells a man from a woman only by context. In Italian the same noun «collega» is shared by both, with «il» or «la» showing the gender, and an English speaker may turn «collega» into «collego» because most masculine nouns end in «-o».",
+        "exemplos": [
+          {
+            "ru": "Mi occupo di vendite",
+            "pt": "I deal with sales"
+          },
+          {
+            "ru": "il collega",
+            "pt": "the colleague (male)"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "reflexive with «di»",
+            "forma": "mi occupo di vendite"
+          },
+          {
+            "tipo": "masculine noun in «-a»",
+            "forma": "il collega · i colleghi"
+          },
+          {
+            "tipo": "feminine",
+            "forma": "la collega · le colleghe"
+          },
+          {
+            "tipo": "«lo» before «s» + consonant",
+            "forma": "lo stipendio"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "il stipendio",
+            "certo": "lo stipendio",
+            "motivo": "Before «s» + a consonant the article is «lo»: «lo stipendio»."
+          },
+          {
+            "errado": "il collego",
+            "certo": "il collega",
+            "motivo": "«Collega» is a masculine noun that ends in «-a», so it does not change to «-o»."
+          },
+          {
+            "errado": "Occupo di vendite",
+            "certo": "Mi occupo di vendite",
+            "motivo": "«Occuparsi» is reflexive and needs the pronoun «mi»."
+          }
+        ],
+        "tag": "Work"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "il capo",
+            "opcoes": [
+              "il capo",
+              "il collega",
+              "la riunione"
+            ],
+            "gabarito": "il capo",
+            "explicacao": "Listen for «capo».",
+            "id": "it-035-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "la riunione",
+            "opcoes": [
+              "la riunione",
+              "l'orario",
+              "lo stipendio"
+            ],
+            "gabarito": "la riunione",
+            "explicacao": "Listen for «riunione».",
+            "id": "it-035-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "lo stipendio",
+            "opcoes": [
+              "lo stipendio",
+              "l'orario",
+              "il capo"
+            ],
+            "gabarito": "lo stipendio",
+            "explicacao": "Listen for «stipendio».",
+            "id": "it-035-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence says that you deal with sales?",
+            "opcoes": [
+              "Mi occupo di vendite",
+              "Occupo di vendite",
+              "Mi occupo vendite"
+            ],
+            "gabarito": "Mi occupo di vendite",
+            "explicacao": "The reflexive pronoun «mi» and the preposition «di» are both needed.",
+            "id": "it-035-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which article goes with «stipendio»?",
+            "opcoes": [
+              "lo stipendio",
+              "il stipendio",
+              "l'stipendio"
+            ],
+            "gabarito": "lo stipendio",
+            "explicacao": "«St-» is «s» + a consonant, so the article is «lo».",
+            "id": "it-035-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is a male colleague called?",
+            "opcoes": [
+              "il collega",
+              "il collego",
+              "lo collega"
+            ],
+            "gabarito": "il collega",
+            "explicacao": "«Collega» is masculine even though it ends in «-a».",
+            "id": "it-035-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Mi ___ di vendite. (I deal)",
+            "opcoes": [
+              "occupo",
+              "occupa",
+              "occupi"
+            ],
+            "gabarito": "occupo",
+            "explicacao": "With «mi» the verb is in the first person: «mi occupo».",
+            "id": "it-035-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Mi occupo di vendite»",
+            "opcoes": [
+              "Mi",
+              "occupo",
+              "di",
+              "vendite"
+            ],
+            "gabarito": "Mi occupo di vendite",
+            "explicacao": "«Mi occupo» and then «di vendite».",
+            "id": "it-035-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say six sentences aloud about your work: what you deal with, who your boss and colleagues are, and when your meetings are."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud the phrase «mi occupo di» and the three words «lo stipendio», «il collega» and «la collega»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-035.json",
+  "responsavel": null
+}

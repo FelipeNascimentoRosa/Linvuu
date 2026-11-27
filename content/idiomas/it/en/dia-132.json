@@ -1,0 +1,303 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 132,
+  "fase": 14,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Health: the doctor and the pharmacy: Review and practice of lesson 33",
+  "objetivo": "Lesson 33, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 33,
+    "titulo": "Health: the doctor and the pharmacy",
+    "objetivo": "Name parts of the body and common symptoms, say what hurts with «fare male» and «avere», talk to a doctor and a pharmacist with the polite «Lei» and the formal imperative, and use «da» for how long a symptom has lasted. Avoid the English-speaker traps: a possessive with body parts, «per» for something that is still going on, and «tu» forms with a doctor.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 33",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Review: the body, «Lei» and «da»",
+        "explicacao": "STEP 1: body parts take the definite article, and «lo» goes before «s» + consonant: «lo stomaco», «lo sciroppo». STEP 2: to say what hurts, use «mal di» or «fare male»: «Ho mal di gola», «Mi fa male la testa». STEP 3: a doctor or pharmacist speaks to you with «Lei»: «Ha anche la febbre?». STEP 4: formal commands: «Prenda questa compressa», «Beva molta acqua». STEP 5: «da» + present is for what is still going on: «Ho la tosse da tre giorni». STEP 6: «servire» agrees with what is needed: «Serve la ricetta?».",
+        "comparacao": "English has the same «you» for a doctor and for a friend, and it says «my head hurts». Italian needs «Lei» with the doctor («Ha», not «hai»), the definite article with body parts («la testa», not «la mia testa»), and «da» + present for something that is still going on.",
+        "exemplos": [
+          {
+            "ru": "Mi fa male la testa",
+            "pt": "My head hurts"
+          },
+          {
+            "ru": "Ho la tosse da tre giorni",
+            "pt": "I have had a cough for three days"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "il stomaco",
+            "certo": "lo stomaco",
+            "motivo": "«Stomaco» begins with «s» + consonant, so the article is «lo»."
+          },
+          {
+            "errado": "Hai anche la febbre?",
+            "certo": "Ha anche la febbre?",
+            "motivo": "A doctor speaking to an adult patient uses «Lei», so the verb is «ha»."
+          }
+        ],
+        "tag": "Review"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 22,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Mi fa male la testa",
+            "opcoes": [
+              "Mi fa male la testa",
+              "Mi fa male la schiena",
+              "Mi fa male lo stomaco"
+            ],
+            "gabarito": "Mi fa male la testa",
+            "explicacao": "Listen for «testa».",
+            "id": "it-033-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Prenda questa compressa",
+            "opcoes": [
+              "Prenda questa compressa",
+              "Prenda questa pomata",
+              "Prenda questo sciroppo"
+            ],
+            "gabarito": "Prenda questa compressa",
+            "explicacao": "Listen for «compressa».",
+            "id": "it-033-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ho la tosse da tre giorni",
+            "opcoes": [
+              "Ho la tosse da tre giorni",
+              "Ho la tosse da due giorni",
+              "Ho il raffreddore da tre giorni"
+            ],
+            "gabarito": "Ho la tosse da tre giorni",
+            "explicacao": "Listen for «tosse» and «tre».",
+            "id": "it-033-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ho mal di gola",
+            "opcoes": [
+              "Ho mal di gola",
+              "Ho mal di testa",
+              "Ho mal di schiena"
+            ],
+            "gabarito": "Ho mal di gola",
+            "explicacao": "Listen for «gola».",
+            "id": "it-033-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Beva molta acqua",
+            "opcoes": [
+              "Beva molta acqua",
+              "Beva poca acqua",
+              "Prenda molta acqua"
+            ],
+            "gabarito": "Beva molta acqua",
+            "explicacao": "Listen for «beva» and «molta».",
+            "id": "it-033-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Serve la ricetta",
+            "opcoes": [
+              "Serve la ricetta",
+              "Serve la visita",
+              "Serve la tessera sanitaria"
+            ],
+            "gabarito": "Serve la ricetta",
+            "explicacao": "Listen for «ricetta».",
+            "id": "it-033-e06"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ha anche la febbre?",
+            "opcoes": [
+              "Ha anche la febbre?",
+              "Ha anche la tosse?",
+              "Ha anche il raffreddore?"
+            ],
+            "gabarito": "Ha anche la febbre?",
+            "explicacao": "Listen for «febbre».",
+            "id": "it-033-e07"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Serve la ricetta?",
+            "opcoes": [
+              "Serve la ricetta?",
+              "Serve la medicina?",
+              "Serve la visita?"
+            ],
+            "gabarito": "Serve la ricetta?",
+            "explicacao": "Listen for «ricetta».",
+            "id": "it-033-e08"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "No, la febbre no. Ma mi sento stanco.",
+            "opcoes": [
+              "No, la febbre no. Ma mi sento stanco.",
+              "No, la tosse no. Ma mi sento stanco.",
+              "No, la febbre no. Ma mi sento stanca."
+            ],
+            "gabarito": "No, la febbre no. Ma mi sento stanco.",
+            "explicacao": "Listen for «febbre» and «stanco».",
+            "id": "it-033-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "la visita",
+            "opcoes": [
+              "la visita",
+              "la ricetta",
+              "il medico"
+            ],
+            "gabarito": "la visita",
+            "explicacao": "Listen for «visita».",
+            "id": "it-033-e10"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "la febbre",
+            "opcoes": [
+              "la febbre",
+              "la tosse",
+              "la gola"
+            ],
+            "gabarito": "la febbre",
+            "explicacao": "Listen for «febbre».",
+            "id": "it-033-e11"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "il mal di testa",
+            "opcoes": [
+              "il mal di testa",
+              "il raffreddore",
+              "la schiena"
+            ],
+            "gabarito": "il mal di testa",
+            "explicacao": "Listen for «mal di testa».",
+            "id": "it-033-e12"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "la farmacia",
+            "opcoes": [
+              "la farmacia",
+              "la pomata",
+              "la medicina"
+            ],
+            "gabarito": "la farmacia",
+            "explicacao": "Listen for «farmacia».",
+            "id": "it-033-e13"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "il pronto soccorso",
+            "opcoes": [
+              "il pronto soccorso",
+              "la tessera sanitaria",
+              "il medico"
+            ],
+            "gabarito": "il pronto soccorso",
+            "explicacao": "Listen for «pronto soccorso».",
+            "id": "it-033-e14"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is a polite instruction from a pharmacist to an adult customer?",
+            "opcoes": [
+              "Prenda questa compressa",
+              "Prendi questa compressa",
+              "Prendere questa compressa"
+            ],
+            "gabarito": "Prenda questa compressa",
+            "explicacao": "With «Lei» the imperative of «prendere» is «prenda».",
+            "id": "it-033-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Mi ___ male la testa.",
+            "opcoes": [
+              "fa",
+              "fanno",
+              "faccio"
+            ],
+            "gabarito": "fa",
+            "explicacao": "The verb agrees with «la testa», which is singular.",
+            "id": "it-033-e16"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Ho la tosse da tre giorni»",
+            "opcoes": [
+              "Ho",
+              "la",
+              "tosse",
+              "da",
+              "tre",
+              "giorni"
+            ],
+            "gabarito": "Ho la tosse da tre giorni",
+            "explicacao": "«Ho», the noun, and then «da» + time.",
+            "id": "it-033-e17"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud and then show the answer.",
+            "audio": "lo sciroppo",
+            "respostaEsperada": "lo sciroppo",
+            "explicacao": "Say the word aloud, then check the written text.",
+            "complemento": true,
+            "id": "it-033-r18"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say eight sentences aloud: two about what hurts, two with «da» and a length of time, two questions a doctor would ask with «Lei», and two commands with «prenda» or «beva»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud the three forms that change with «Lei»: «ha» (not «hai»), «prenda» (not «prendi») and «beva» (not «bevi»)."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-033.json",
+  "responsavel": null
+}

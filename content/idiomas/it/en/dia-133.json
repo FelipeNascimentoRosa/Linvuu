@@ -1,0 +1,255 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 133,
+  "fase": 14,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Travel: airport, train, hotel: By train: tickets, timetables and platforms",
+  "objetivo": "Lesson 34, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 34,
+    "titulo": "Travel: airport, train, hotel",
+    "objetivo": "Buy a train ticket and ask about platforms and delays, handle check-in and luggage at the airport, book a hotel room, and describe a short trip in the past. Use «da» for where a train leaves from and «per» for where a ticket goes, say «in ritardo» for a delay, and choose «essere» or «avere» in the passato prossimo. Avoid the English-speaker traps: «tardi» for a late train, «a» for the destination of a ticket, and «avere» with verbs of movement.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "By train: tickets, timetables and platforms",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "il biglietto",
+            "translit": "eel beel-LYEHT-toh",
+            "pt": "the ticket",
+            "en": "",
+            "audio": "il biglietto"
+          },
+          {
+            "ru": "andata e ritorno",
+            "translit": "ahn-DAH-tah eh ree-TOHR-noh",
+            "pt": "round trip, return",
+            "en": "",
+            "audio": "andata e ritorno"
+          },
+          {
+            "ru": "il binario",
+            "translit": "eel bee-NAH-ryoh",
+            "pt": "the platform, the track",
+            "en": "",
+            "audio": "il binario"
+          },
+          {
+            "ru": "la partenza",
+            "translit": "lah pahr-TEHN-tsah",
+            "pt": "the departure",
+            "en": "",
+            "audio": "la partenza"
+          },
+          {
+            "ru": "l'arrivo",
+            "translit": "lahr-REE-voh",
+            "pt": "the arrival",
+            "en": "",
+            "audio": "l'arrivo"
+          },
+          {
+            "ru": "il ritardo",
+            "translit": "eel ree-TAHR-doh",
+            "pt": "the delay",
+            "en": "",
+            "audio": "il ritardo"
+          },
+          {
+            "ru": "la stazione",
+            "translit": "lah stah-TSYOH-neh",
+            "pt": "the station",
+            "en": "",
+            "audio": "la stazione"
+          },
+          {
+            "ru": "la fermata",
+            "translit": "lah fehr-MAH-tah",
+            "pt": "the stop",
+            "en": "",
+            "audio": "la fermata"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 15,
+        "titulo": "At the station: «da», «per» and «in ritardo»",
+        "explicacao": "STEP 1: for a ticket, the destination comes with «per»: «Un biglietto per Roma, andata e ritorno» (A return ticket to Rome). «Solo andata» means one way. STEP 2: the starting point of a train uses «da»: «Da quale binario parte il treno?» (From which platform does the train leave?), «Il treno parte da Milano». STEP 3: «la stazione» is a train station. «La fermata» is a stop for a bus, a tram or the metro. STEP 4: «il binario» is the platform, and the board shows «la partenza» (departure) and «l'arrivo» (arrival). STEP 5: a train that is behind schedule is «in ritardo»: «Il treno è in ritardo» (The train is late). STEP 6: «È tardi» means «It is late» in the day. With «essere», a train or a flight that is behind schedule is «in ritardo», not «tardi».",
+        "comparacao": "English uses «from» and «to»: «from which platform» and «a ticket to Rome». Learners often reach for «di», which can stand for both «of» and «from». Italian needs two different words: «da» for the starting point and «per» for the destination of a ticket. English speakers often translate «to» as «a» and say «un biglietto a Roma». English also says «the train is late», and an English speaker may translate it as «il treno è tardi». Italian says «in ritardo» for a delay and keeps «tardi» for the time of the day.",
+        "exemplos": [
+          {
+            "ru": "Da quale binario parte il treno",
+            "pt": "From which platform does the train leave"
+          },
+          {
+            "ru": "Un biglietto per Roma, andata e ritorno",
+            "pt": "A return ticket to Rome"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "destination of a ticket",
+            "forma": "un biglietto per Roma"
+          },
+          {
+            "tipo": "starting point",
+            "forma": "parte da Milano · da quale binario"
+          },
+          {
+            "tipo": "station and stop",
+            "forma": "la stazione · la fermata"
+          },
+          {
+            "tipo": "delay",
+            "forma": "in ritardo (not «tardi»)"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Di quale binario parte il treno",
+            "certo": "Da quale binario parte il treno",
+            "motivo": "The starting point of a train uses «da» («from»), not «di»."
+          },
+          {
+            "errado": "Un biglietto a Roma, andata e ritorno",
+            "certo": "Un biglietto per Roma, andata e ritorno",
+            "motivo": "A ticket to a place takes «per»: «un biglietto per Roma». «A» is for «Vado a Roma» and «Vivo a Roma», not for the destination of a ticket."
+          }
+        ],
+        "tag": "Travel"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "il biglietto",
+            "opcoes": [
+              "il biglietto",
+              "il binario",
+              "la stazione"
+            ],
+            "gabarito": "il biglietto",
+            "explicacao": "Listen for «biglietto».",
+            "id": "it-034-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "il ritardo",
+            "opcoes": [
+              "il ritardo",
+              "l'arrivo",
+              "la partenza"
+            ],
+            "gabarito": "il ritardo",
+            "explicacao": "Listen for «ritardo».",
+            "id": "it-034-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "andata e ritorno",
+            "opcoes": [
+              "andata e ritorno",
+              "la fermata",
+              "la partenza"
+            ],
+            "gabarito": "andata e ritorno",
+            "explicacao": "Listen for «andata».",
+            "id": "it-034-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the platform called?",
+            "opcoes": [
+              "il binario",
+              "la fermata",
+              "il ritardo"
+            ],
+            "gabarito": "il binario",
+            "explicacao": "«Il binario» is the platform or track.",
+            "id": "it-034-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which question asks which platform the train leaves from?",
+            "opcoes": [
+              "Da quale binario parte il treno?",
+              "Di quale binario parte il treno?",
+              "Per quale binario parte il treno?"
+            ],
+            "gabarito": "Da quale binario parte il treno?",
+            "explicacao": "The starting point uses «da».",
+            "id": "it-034-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "How do you say «The train is late»?",
+            "opcoes": [
+              "Il treno è in ritardo",
+              "Il treno è tardi",
+              "Il treno è ritardo"
+            ],
+            "gabarito": "Il treno è in ritardo",
+            "explicacao": "A delay is «in ritardo»; «tardi» is a time of the day.",
+            "id": "it-034-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Un biglietto ___ Roma, andata e ritorno. (to)",
+            "opcoes": [
+              "per",
+              "a",
+              "da"
+            ],
+            "gabarito": "per",
+            "explicacao": "The destination of a ticket uses «per».",
+            "id": "it-034-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Da quale binario parte il treno»",
+            "opcoes": [
+              "Da",
+              "quale",
+              "binario",
+              "parte",
+              "il",
+              "treno"
+            ],
+            "gabarito": "Da quale binario parte il treno",
+            "explicacao": "«Da quale binario» and then the verb.",
+            "id": "it-034-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 1,
+        "enunciado": "Say six sentences aloud at a ticket office: ask for a ticket with «per», ask about the platform with «da quale binario» and say that a train is «in ritardo»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud each pair: «parte da Milano» (where the train leaves from) and «un biglietto per Roma» (where the ticket goes)."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-034.json",
+  "responsavel": null
+}
