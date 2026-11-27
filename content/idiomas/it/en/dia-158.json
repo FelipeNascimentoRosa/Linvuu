@@ -1,0 +1,247 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 158,
+  "fase": 16,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Passato remoto (for reading): The most common irregular verbs",
+  "objetivo": "Lesson 40, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 40,
+    "titulo": "Passato remoto (for reading)",
+    "objetivo": "Recognise and read the passato remoto, the tense of stories, history books, biographies and novels. Learn the regular endings, especially the third person singular and plural, the most common irregular verbs, and the use of «nel» with a year. Avoid the English-speaker traps: leaving out the accent in «chiamò» and «partì», using the singular ending with «loro», and «in» before a year.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "The most common irregular verbs",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "un giorno",
+            "translit": "oon JOHR-noh",
+            "pt": "one day",
+            "en": "",
+            "audio": "un giorno"
+          },
+          {
+            "ru": "nel 1492",
+            "translit": "nehl MEEL-leh kwah-troh-CHEHN-toh noh-vahn-TAH-doo-eh",
+            "pt": "in 1492",
+            "en": "",
+            "audio": "nel 1492"
+          },
+          {
+            "ru": "la guerra",
+            "translit": "lah GWEHR-rah",
+            "pt": "the war",
+            "en": "",
+            "audio": "la guerra"
+          },
+          {
+            "ru": "la regina",
+            "translit": "lah reh-JEE-nah",
+            "pt": "the queen",
+            "en": "",
+            "audio": "la regina"
+          },
+          {
+            "ru": "il cavaliere",
+            "translit": "eel kah-vah-LYEH-reh",
+            "pt": "the knight",
+            "en": "",
+            "audio": "il cavaliere"
+          },
+          {
+            "ru": "morire",
+            "translit": "moh-REE-reh",
+            "pt": "to die",
+            "en": "",
+            "audio": "morire"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 16,
+        "titulo": "Irregular verbs: «nacque», «vide», «prese» and «nel» + year",
+        "explicacao": "STEP 1: many common verbs are irregular in the passato remoto, but the irregularity follows a pattern: only three persons change. They are «io» (ending «-i»), «lui» and «lei» (ending «-e») and «loro» (ending «-ero»). STEP 2: the other persons («tu», «noi» and «voi») keep the regular stem: «vedesti», «vedemmo», «vedeste». So «vedere» gives «vidi, vedesti, vide, vedemmo, vedeste, videro». STEP 3: the verbs you will read most often are «nascere» → «nacque», «vedere» → «vide», «prendere» → «prese», «dire» → «disse», «fare» → «fece», «venire» → «venne» and «avere» → «ebbe». STEP 4: «essere» is a special case: «fui, fosti, fu, fummo, foste, furono». STEP 4b: «stare» gives «stetti» and «dare» gives «diedi» or «detti» in the first person. STEP 5: dates need «nel» before a year: «nel 1492», «nel 1265». The form «in 1265» is wrong. STEP 6: «morire» is regular in the passato remoto: «morì». Its participle «morto» is irregular, but that is a different form. STEP 7: learn the common forms («nacque», «vide», «prese») as words; the pattern tells you which persons to expect.",
+        "comparacao": "English uses «in» before a year, as in «in 1492», and an English speaker says «in 1265» in Italian. Italian uses «nel», which is «in» + «il». English also has irregular verbs («saw», «took», «said»), but Italian irregulars follow the three-person pattern, so once you know «vide» you can recognise «videro» in a text. An English speaker may add the regular ending to an irregular verb and write «nascì» or «vedì».",
+        "exemplos": [
+          {
+            "ru": "Dante nacque a Firenze nel 1265",
+            "pt": "Dante was born in Florence in 1265"
+          },
+          {
+            "ru": "Il re vide una luce nel bosco",
+            "pt": "The king saw a light in the wood"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "irregular only in io, lui/lei, loro",
+            "forma": "vidi · vide · videro"
+          },
+          {
+            "tipo": "common irregular verbs",
+            "forma": "nacque · vide · prese · disse · fece · venne"
+          },
+          {
+            "tipo": "year",
+            "forma": "nel 1492 (not «in 1492»)"
+          },
+          {
+            "tipo": "regular in the passato remoto",
+            "forma": "morì"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Dante nascì a Firenze nel 1265",
+            "certo": "Dante nacque a Firenze nel 1265",
+            "motivo": "«Nascere» is irregular in the passato remoto: «nacque»."
+          },
+          {
+            "errado": "Il re vedì una luce nel bosco",
+            "certo": "Il re vide una luce nel bosco",
+            "motivo": "«Vedere» is irregular in the passato remoto: «vide»."
+          },
+          {
+            "errado": "Dante nacque a Firenze in 1265",
+            "certo": "Dante nacque a Firenze nel 1265",
+            "motivo": "A year needs «nel», which is «in» + «il»."
+          }
+        ],
+        "tag": "Past"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "un giorno",
+            "opcoes": [
+              "un giorno",
+              "una guerra",
+              "un tempo"
+            ],
+            "gabarito": "un giorno",
+            "explicacao": "Listen for «giorno».",
+            "id": "it-040-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "la regina",
+            "opcoes": [
+              "la regina",
+              "la guerra",
+              "il cavaliere"
+            ],
+            "gabarito": "la regina",
+            "explicacao": "Listen for «regina».",
+            "id": "it-040-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "morire",
+            "opcoes": [
+              "morire",
+              "partire",
+              "uscire"
+            ],
+            "gabarito": "morire",
+            "explicacao": "Listen for «morire».",
+            "id": "it-040-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence says that Dante was born in Florence in 1265?",
+            "opcoes": [
+              "Dante nacque a Firenze nel 1265",
+              "Dante nascì a Firenze nel 1265",
+              "Dante nacque a Firenze in 1265"
+            ],
+            "gabarito": "Dante nacque a Firenze nel 1265",
+            "explicacao": "«Nacque» is irregular and the year takes «nel».",
+            "id": "it-040-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which form is the passato remoto of «vedere» for «il re»?",
+            "opcoes": [
+              "vide",
+              "vedì",
+              "vedò"
+            ],
+            "gabarito": "vide",
+            "explicacao": "The irregular third person singular is «vide».",
+            "id": "it-040-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "In the passato remoto of «vedere», which persons are irregular?",
+            "opcoes": [
+              "io, lui/lei, loro",
+              "tu, noi, voi",
+              "all of them"
+            ],
+            "gabarito": "io, lui/lei, loro",
+            "explicacao": "The other three persons keep the regular stem.",
+            "id": "it-040-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Dante nacque a Firenze ___ 1265. (in the)",
+            "opcoes": [
+              "nel",
+              "in",
+              "al"
+            ],
+            "gabarito": "nel",
+            "explicacao": "A year needs «nel».",
+            "id": "it-040-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Il re vide una luce nel bosco»",
+            "opcoes": [
+              "Il",
+              "re",
+              "vide",
+              "una",
+              "luce",
+              "nel",
+              "bosco"
+            ],
+            "gabarito": "Il re vide una luce nel bosco",
+            "explicacao": "The subject, the verb and then the place.",
+            "id": "it-040-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say six sentences aloud about historical events with «nel» + a year and three irregular verbs: «nacque», «vide» and «prese»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud the three irregular forms «nacque», «vide» and «prese» and one date with «nel»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-040.json",
+  "responsavel": null
+}

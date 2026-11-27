@@ -1,0 +1,238 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 154,
+  "fase": 16,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Trapassato prossimo: Ordering the events of a story",
+  "objetivo": "Lesson 39, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 39,
+    "titulo": "Trapassato prossimo",
+    "objetivo": "Say that something had already happened before another event in the past, using «avevo» or «ero» + the participle. Choose between «avere» and «essere» as you do in the passato prossimo, and put the events of a story in order with «il giorno prima», «due giorni prima» and «dopo aver + participle». Avoid the English-speaker traps: «ero» with a verb that takes «avere», «aveva» with a verb of movement and «dopo» + the gerund.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Ordering the events of a story",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "il giorno prima",
+            "translit": "eel JOHR-noh PREE-mah",
+            "pt": "the day before",
+            "en": "",
+            "audio": "il giorno prima"
+          },
+          {
+            "ru": "il giorno dopo",
+            "translit": "eel JOHR-noh DOH-poh",
+            "pt": "the next day",
+            "en": "",
+            "audio": "il giorno dopo"
+          },
+          {
+            "ru": "due giorni prima",
+            "translit": "DOO-eh JOHR-nee PREE-mah",
+            "pt": "two days earlier",
+            "en": "",
+            "audio": "due giorni prima"
+          },
+          {
+            "ru": "una settimana dopo",
+            "translit": "OO-nah seht-tee-MAH-nah DOH-poh",
+            "pt": "a week later",
+            "en": "",
+            "audio": "una settimana dopo"
+          },
+          {
+            "ru": "l'anno precedente",
+            "translit": "LAHN-noh preh-cheh-DEHN-teh",
+            "pt": "the previous year",
+            "en": "",
+            "audio": "l'anno precedente"
+          },
+          {
+            "ru": "infine",
+            "translit": "een-FEE-neh",
+            "pt": "finally, in the end",
+            "en": "",
+            "audio": "infine"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 16,
+        "titulo": "Ordering a story: «il giorno prima» and «due giorni prima»",
+        "explicacao": "STEP 1: when you tell a story in the past, use time words that are measured from a point in the past, not from now. «Ieri» (yesterday) is measured from today, but «il giorno prima» (the day before) is measured from a moment in the story. STEP 2: in the same way, «il giorno dopo» (the next day) corresponds to «domani», and «due giorni prima» (two days earlier) corresponds to «due giorni fa». STEP 3: the amount comes first: «due giorni prima», «una settimana dopo». STEP 4: you can also say «dopo una settimana», which is equally correct, as in English «after a week». STEP 5: «l'anno precedente» is «the year before». «Infine» is «in the end» and is used to close a list of events. STEP 6: these words go with the trapassato prossimo for what happened earlier: «Il giorno prima avevo perso le chiavi» (The day before, I had lost my keys). STEP 7: «perdere» is transitive, so the auxiliary is «avere»: «avevo perso». The alternative participle «perduto» also exists, but «perso» is the usual one.",
+        "comparacao": "In a story English also says «the day before», «two days earlier» and «the next day», but learners often slip back into «yesterday» and «two days ago». Italian keeps the two sets apart: «ieri» and «due giorni fa» are measured from today, «il giorno prima» and «due giorni prima» from a moment in the story. The word order matches English: the amount comes first.",
+        "exemplos": [
+          {
+            "ru": "Il giorno prima avevo perso le chiavi",
+            "pt": "The day before, I had lost my keys"
+          },
+          {
+            "ru": "due giorni prima",
+            "pt": "two days earlier"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "from now",
+            "forma": "ieri · domani · due giorni fa"
+          },
+          {
+            "tipo": "from a point in the story",
+            "forma": "il giorno prima · il giorno dopo · due giorni prima"
+          },
+          {
+            "tipo": "amount first",
+            "forma": "una settimana dopo · due giorni prima"
+          },
+          {
+            "tipo": "closing",
+            "forma": "infine"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Il giorno prima ero perso le chiavi",
+            "certo": "Il giorno prima avevo perso le chiavi",
+            "motivo": "«Perdere» is transitive and takes «avere»: «avevo perso»."
+          },
+          {
+            "errado": "prima due giorni",
+            "certo": "due giorni prima",
+            "motivo": "The amount comes first, as in English: «due giorni prima»."
+          }
+        ],
+        "tag": "Past"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "il giorno prima",
+            "opcoes": [
+              "il giorno prima",
+              "il giorno dopo",
+              "l'anno precedente"
+            ],
+            "gabarito": "il giorno prima",
+            "explicacao": "Listen for «prima».",
+            "id": "it-039-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "una settimana dopo",
+            "opcoes": [
+              "una settimana dopo",
+              "due giorni prima",
+              "il giorno dopo"
+            ],
+            "gabarito": "una settimana dopo",
+            "explicacao": "Listen for «settimana».",
+            "id": "it-039-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "infine",
+            "opcoes": [
+              "infine",
+              "appena",
+              "ormai"
+            ],
+            "gabarito": "infine",
+            "explicacao": "Listen for «infine».",
+            "id": "it-039-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which expression is measured from a point in the story, not from today?",
+            "opcoes": [
+              "il giorno prima",
+              "ieri",
+              "due giorni fa"
+            ],
+            "gabarito": "il giorno prima",
+            "explicacao": "«Il giorno prima» looks back from a moment in the story.",
+            "id": "it-039-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which expression means «two days earlier»?",
+            "opcoes": [
+              "due giorni prima",
+              "due giorni fa",
+              "due giorni dopo"
+            ],
+            "gabarito": "due giorni prima",
+            "explicacao": "The amount comes first.",
+            "id": "it-039-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence says that the writer had lost the keys the day before?",
+            "opcoes": [
+              "Il giorno prima avevo perso le chiavi",
+              "Il giorno prima ero perso le chiavi",
+              "Il giorno prima ho perso le chiavi"
+            ],
+            "gabarito": "Il giorno prima avevo perso le chiavi",
+            "explicacao": "«Perdere» takes «avere», and the earlier event uses the trapassato.",
+            "id": "it-039-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il giorno prima ___ perso le chiavi. (I had)",
+            "opcoes": [
+              "avevo",
+              "ero",
+              "ho"
+            ],
+            "gabarito": "avevo",
+            "explicacao": "«Perdere» is transitive, so the auxiliary is «avere».",
+            "id": "it-039-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «due giorni prima»",
+            "opcoes": [
+              "due",
+              "giorni",
+              "prima"
+            ],
+            "gabarito": "due giorni prima",
+            "explicacao": "The amount first, then «prima».",
+            "id": "it-039-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Tell a short story aloud in six sentences. Use «il giorno prima», «il giorno dopo» and «due giorni prima», and close it with «infine»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud «il giorno prima», «il giorno dopo» and «due giorni prima» and say what each one is measured from."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-039.json",
+  "responsavel": null
+}

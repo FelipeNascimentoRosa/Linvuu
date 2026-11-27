@@ -1,0 +1,243 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 166,
+  "fase": 17,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Futuro anteriore and the future of probability: It must be, it must have been: the future of probability",
+  "objetivo": "Lesson 42, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 42,
+    "titulo": "Futuro anteriore and the future of probability",
+    "objetivo": "Say what will have happened by a deadline or before another future event with the futuro anteriore, and make guesses about the present and the past with the future tense. Use «entro» for a deadline, choose «avere» or «essere» as in the passato prossimo, and use «avranno fame» for «they must be hungry». Avoid the English-speaker traps: «da» for a deadline, the infinitive instead of the participle and «saranno fame».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "It must be, it must have been: the future of probability",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "forse",
+            "translit": "FOHR-seh",
+            "pt": "maybe, perhaps",
+            "en": "",
+            "audio": "forse"
+          },
+          {
+            "ru": "probabilmente",
+            "translit": "proh-bah-beel-MEHN-teh",
+            "pt": "probably",
+            "en": "",
+            "audio": "probabilmente"
+          },
+          {
+            "ru": "chissà",
+            "translit": "kees-SAH",
+            "pt": "who knows, I wonder",
+            "en": "",
+            "audio": "chissà"
+          },
+          {
+            "ru": "può darsi",
+            "translit": "pwoh DAHR-see",
+            "pt": "it may be, maybe",
+            "en": "",
+            "audio": "può darsi"
+          },
+          {
+            "ru": "sicuramente",
+            "translit": "see-koo-rah-MEHN-teh",
+            "pt": "surely, certainly",
+            "en": "",
+            "audio": "sicuramente"
+          },
+          {
+            "ru": "saranno le tre",
+            "translit": "sah-RAHN-noh leh TREH",
+            "pt": "it must be about three o'clock",
+            "en": "",
+            "audio": "saranno le tre"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 16,
+        "titulo": "The future of probability: «saranno le tre», «avrà perso il treno»",
+        "explicacao": "STEP 1: Italian often uses the future tense to make a guess, where English says «must be» or «probably». STEP 2: a guess about the present uses the futuro semplice: «Saranno le tre» (It must be about three), «Dove sarà?» (Where can she be?), «Chissà dove sarà» (Who knows where she is). STEP 3: a guess about the past uses the futuro anteriore: «Sarà già uscito» (He must have already gone out), «Avrà perso il treno» (He or she must have missed the train). STEP 4: the auxiliary follows the usual rule: «uscire» takes «essere», and «perdere» takes «avere». STEP 5: hours are plural from two o'clock on, so the verb is plural: «Saranno le tre». For one o'clock it is singular: «Sarà l'una». Noon and midnight are singular too: «Sarà mezzogiorno». STEP 6: words that go with a guess: «forse», «probabilmente», «chissà», «può darsi», «sicuramente». STEP 7: other ways to guess are also correct: «Deve essere già uscito» and «Forse ha perso il treno» are both natural.",
+        "comparacao": "English says «It must be three o'clock» or «He has probably missed the train», with «must» or an adverb, and an English speaker keeps these in Italian. English can also guess with the future («That'll be Anna», «It'll be about three»), but Italian does it all the time: the future tense itself carries the guess, without «must». An English speaker may use «sarà» with a plural time: «Sarà le tre». Italian makes the verb plural: «Saranno le tre».",
+        "exemplos": [
+          {
+            "ru": "Saranno le tre",
+            "pt": "It must be about three o'clock"
+          },
+          {
+            "ru": "Avrà perso il treno",
+            "pt": "She must have missed the train"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "guess about the present",
+            "forma": "saranno le tre · dove sarà?"
+          },
+          {
+            "tipo": "guess about the past",
+            "forma": "sarà già uscito · avrà perso il treno"
+          },
+          {
+            "tipo": "words of doubt",
+            "forma": "forse · probabilmente · chissà · può darsi"
+          },
+          {
+            "tipo": "other ways",
+            "forma": "deve essere già uscito · forse ha perso il treno"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Avrà già uscito",
+            "certo": "Sarà già uscito",
+            "motivo": "«Uscire» takes «essere»: «sarà uscito»."
+          },
+          {
+            "errado": "Sarà le tre",
+            "certo": "Saranno le tre",
+            "motivo": "The hours from two o'clock are plural, so the verb is «saranno»."
+          },
+          {
+            "errado": "Sarà perso il treno",
+            "certo": "Avrà perso il treno",
+            "motivo": "«Perdere» is transitive and takes «avere»: «avrà perso»."
+          }
+        ],
+        "tag": "Future"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "forse",
+            "opcoes": [
+              "forse",
+              "sicuramente",
+              "probabilmente"
+            ],
+            "gabarito": "forse",
+            "explicacao": "Listen for «forse».",
+            "id": "it-042-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "chissà",
+            "opcoes": [
+              "chissà",
+              "può darsi",
+              "forse"
+            ],
+            "gabarito": "chissà",
+            "explicacao": "Listen for «chissà».",
+            "id": "it-042-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "saranno le tre",
+            "opcoes": [
+              "saranno le tre",
+              "sarà l'una",
+              "sono le tre"
+            ],
+            "gabarito": "saranno le tre",
+            "explicacao": "Listen for «saranno».",
+            "id": "it-042-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence means «It must be about three o'clock»?",
+            "opcoes": [
+              "Saranno le tre",
+              "Sarà le tre",
+              "Sarebbero le tre"
+            ],
+            "gabarito": "Saranno le tre",
+            "explicacao": "The hours from two o'clock are plural.",
+            "id": "it-042-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence means «He must have already gone out»?",
+            "opcoes": [
+              "Sarà già uscito",
+              "Avrà già uscito",
+              "Sarà già uscire"
+            ],
+            "gabarito": "Sarà già uscito",
+            "explicacao": "«Uscire» takes «essere».",
+            "id": "it-042-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence means «She must have missed the train»?",
+            "opcoes": [
+              "Avrà perso il treno",
+              "Sarà perso il treno",
+              "Avrà perdere il treno"
+            ],
+            "gabarito": "Avrà perso il treno",
+            "explicacao": "«Perdere» takes «avere».",
+            "id": "it-042-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ le tre. (It must be about three.)",
+            "opcoes": [
+              "Saranno",
+              "Sarà",
+              "Sono"
+            ],
+            "gabarito": "Saranno",
+            "explicacao": "The hours from two o'clock are plural.",
+            "id": "it-042-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Chissà dove sarà»",
+            "opcoes": [
+              "Chissà",
+              "dove",
+              "sarà"
+            ],
+            "gabarito": "Chissà dove sarà",
+            "explicacao": "«Chissà» first, then the guess.",
+            "id": "it-042-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say six guesses aloud: two about what time it is, two about where someone is now, and two about what someone must have done. Use «forse» or «chissà» in some of them."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud «saranno le tre», «sarà già uscito» and «avrà perso il treno», and say which one is about the present and which ones are about the past."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-042.json",
+  "responsavel": null
+}

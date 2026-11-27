@@ -1,0 +1,259 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 152,
+  "fase": 16,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "A2 mock test: A2 mock test",
+  "objetivo": "Lesson 38, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 38,
+    "titulo": "A2 mock test",
+    "objetivo": "Check what you can do at the end of level A2: say how long something has lasted with «da» and the present, answer a call, accept an invitation, make a polite request, tell a short story in the past and talk about plans. Use «non» with «mai» after the verb, «di» in «credo di sì», and «essere» in «sono arrivato». Avoid the English-speaker traps: «per» for a situation that goes on, «Questo è» on the phone and «ho» with a verb of movement.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "A2 mock test",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Mock test: what to check in each answer",
+        "explicacao": "STEP 1: listen to each sentence and choose the one you hear. STEP 2: check the tense: the passato prossimo for an event, the imperfetto for a scene, the present with «da» for what goes on, the future for a plan. STEP 3: check the auxiliary of a verb of movement: «Quando sono arrivato, pioveva». STEP 4: check «non» with «mai»: «Non mangio mai carne». STEP 5: check «di» and the infinitive: «credo di sì» takes «di», «Vorrei prenotare» does not. STEP 6: check the polite request: «Mi manderesti l'indirizzo?».",
+        "comparacao": "English uses «for» for a situation that goes on, «this is» on the phone and the verb «have» for its perfect tenses. Italian uses «da» + the present, «sono» and a name, and «essere» for verbs of movement.",
+        "exemplos": [
+          {
+            "ru": "Quando sono arrivato, pioveva",
+            "pt": "When I arrived, it was raining"
+          },
+          {
+            "ru": "Vorrei prenotare una camera",
+            "pt": "I would like to book a room"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Quando ho arrivato, pioveva",
+            "certo": "Quando sono arrivato, pioveva",
+            "motivo": "«Arrivare» takes «essere»."
+          },
+          {
+            "errado": "Abito qui per due anni",
+            "certo": "Abito qui da due anni",
+            "motivo": "A situation that goes on uses «da» + the present."
+          }
+        ],
+        "tag": "Review"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 22,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Quando sono arrivato, pioveva",
+            "opcoes": [
+              "Quando sono arrivato, pioveva",
+              "Quando sono arrivato, pioverà",
+              "Quando ero arrivato, pioveva"
+            ],
+            "gabarito": "Quando sono arrivato, pioveva",
+            "explicacao": "Listen for «pioveva».",
+            "id": "it-038-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Abito qui da due anni",
+            "opcoes": [
+              "Abito qui da due anni",
+              "Abito qui da tre anni",
+              "Abitavo qui da due anni"
+            ],
+            "gabarito": "Abito qui da due anni",
+            "explicacao": "Listen for «Abito» and «due».",
+            "id": "it-038-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Pronto, Giulia? Sono Carlos. Sei libera sabato sera?",
+            "opcoes": [
+              "Pronto, Giulia? Sono Carlos. Sei libera sabato sera?",
+              "Pronto, Giulia? Sono Carlos. Sei libera sabato mattina?",
+              "Pronto, Elena? Sono Carlos. Sei libera sabato sera?"
+            ],
+            "gabarito": "Pronto, Giulia? Sono Carlos. Sei libera sabato sera?",
+            "explicacao": "Listen for «Giulia» and «sera».",
+            "id": "it-038-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Sì, credo di sì. Perché?",
+            "opcoes": [
+              "Sì, credo di sì. Perché?",
+              "Sì, credo di no. Perché?",
+              "Sì, penso di sì. Perché?"
+            ],
+            "gabarito": "Sì, credo di sì. Perché?",
+            "explicacao": "Listen for «credo di sì».",
+            "id": "it-038-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Vorrei prenotare una camera",
+            "opcoes": [
+              "Vorrei prenotare una camera",
+              "Vorrei prenotare una cena",
+              "Vorrei prenotare un taxi"
+            ],
+            "gabarito": "Vorrei prenotare una camera",
+            "explicacao": "Listen for «camera».",
+            "id": "it-038-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Non mangio mai carne",
+            "opcoes": [
+              "Non mangio mai carne",
+              "Non mangio mai pesce",
+              "Mangio sempre carne"
+            ],
+            "gabarito": "Non mangio mai carne",
+            "explicacao": "Listen for «carne».",
+            "id": "it-038-e06"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Volentieri! A che ora?",
+            "opcoes": [
+              "Volentieri! A che ora?",
+              "Volentieri! Dove?",
+              "Volentieri! Con chi?"
+            ],
+            "gabarito": "Volentieri! A che ora?",
+            "explicacao": "Listen for «A che ora».",
+            "id": "it-038-e07"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "No, sarò puntuale. Mi manderesti l'indirizzo?",
+            "opcoes": [
+              "No, sarò puntuale. Mi manderesti l'indirizzo?",
+              "No, sarò in ritardo. Mi manderesti l'indirizzo?",
+              "No, sarò puntuale. Mi manderesti il numero?"
+            ],
+            "gabarito": "No, sarò puntuale. Mi manderesti l'indirizzo?",
+            "explicacao": "Listen for «puntuale».",
+            "id": "it-038-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Quando sono arrivato, pioveva",
+              "Quando ho arrivato, pioveva",
+              "Quando sono arrivato, pioverà"
+            ],
+            "gabarito": "Quando sono arrivato, pioveva",
+            "explicacao": "A verb of movement takes «essere», and the scene is in the imperfetto.",
+            "id": "it-038-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence says that you still live here and have done so for two years?",
+            "opcoes": [
+              "Abito qui da due anni",
+              "Abito qui per due anni",
+              "Ho abitato qui due anni"
+            ],
+            "gabarito": "Abito qui da due anni",
+            "explicacao": "The present with «da» says that it goes on.",
+            "id": "it-038-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is a polite request for an address?",
+            "opcoes": [
+              "Mi manderesti l'indirizzo?",
+              "Mi manderebbi l'indirizzo?",
+              "Mi mandare l'indirizzo?"
+            ],
+            "gabarito": "Mi manderesti l'indirizzo?",
+            "explicacao": "The conditional makes the request polite.",
+            "id": "it-038-e11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Sì, credo ___ sì. (I think so)",
+            "opcoes": [
+              "di",
+              "per",
+              "a"
+            ],
+            "gabarito": "di",
+            "explicacao": "After «credo» the answer «sì» needs «di».",
+            "id": "it-038-e12"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ mangio mai carne. (I do not)",
+            "opcoes": [
+              "Non",
+              "No",
+              "Mai"
+            ],
+            "gabarito": "Non",
+            "explicacao": "«Mai» after the verb needs «non» before the verb.",
+            "id": "it-038-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Vorrei prenotare una camera»",
+            "opcoes": [
+              "Vorrei",
+              "prenotare",
+              "una",
+              "camera"
+            ],
+            "gabarito": "Vorrei prenotare una camera",
+            "explicacao": "«Vorrei» joined directly to the infinitive.",
+            "id": "it-038-e14"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud and then show the answer.",
+            "audio": "Non mangio mai carne",
+            "respostaEsperada": "Non mangio mai carne",
+            "explicacao": "Say the sentence aloud, then check the written text.",
+            "complemento": true,
+            "id": "it-038-r15"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say eight sentences aloud as a final check of level A2: where you live and for how long, what you never do, what happened when you arrived somewhere, a polite request and a plan for next weekend."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say three sentences of your own aloud: one with «da», one with «non… mai» and one with «sono arrivato»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-038.json",
+  "responsavel": null
+}

@@ -1,0 +1,257 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 153,
+  "fase": 16,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Trapassato prossimo: Forming the trapassato prossimo",
+  "objetivo": "Lesson 39, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 39,
+    "titulo": "Trapassato prossimo",
+    "objetivo": "Say that something had already happened before another event in the past, using «avevo» or «ero» + the participle. Choose between «avere» and «essere» as you do in the passato prossimo, and put the events of a story in order with «il giorno prima», «due giorni prima» and «dopo aver + participle». Avoid the English-speaker traps: «ero» with a verb that takes «avere», «aveva» with a verb of movement and «dopo» + the gerund.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Forming the trapassato prossimo",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "già",
+            "translit": "jah",
+            "pt": "already",
+            "en": "",
+            "audio": "già"
+          },
+          {
+            "ru": "non… ancora",
+            "translit": "nohn ahn-KOH-rah",
+            "pt": "not yet",
+            "en": "",
+            "audio": "non… ancora"
+          },
+          {
+            "ru": "prima",
+            "translit": "PREE-mah",
+            "pt": "before, earlier",
+            "en": "",
+            "audio": "prima"
+          },
+          {
+            "ru": "dopo che",
+            "translit": "DOH-poh keh",
+            "pt": "after (a clause follows)",
+            "en": "",
+            "audio": "dopo che"
+          },
+          {
+            "ru": "appena",
+            "translit": "ahp-PEH-nah",
+            "pt": "just, as soon as",
+            "en": "",
+            "audio": "appena"
+          },
+          {
+            "ru": "ormai",
+            "translit": "ohr-MAH-ee",
+            "pt": "by now, by then",
+            "en": "",
+            "audio": "ormai"
+          },
+          {
+            "ru": "fino ad allora",
+            "translit": "FEE-noh ahd ahl-LOH-rah",
+            "pt": "until then",
+            "en": "",
+            "audio": "fino ad allora"
+          },
+          {
+            "ru": "quel giorno",
+            "translit": "kwehl JOHR-noh",
+            "pt": "that day",
+            "en": "",
+            "audio": "quel giorno"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 15,
+        "titulo": "Forming the trapassato prossimo: «avevo mangiato», «ero partita»",
+        "explicacao": "STEP 1: the trapassato prossimo says that something had already happened before another moment in the past. It matches the English past perfect: «I had eaten», «she had already left». STEP 2: form it with the imperfetto of the auxiliary + the past participle. With «avere»: «avevo, avevi, aveva, avevamo, avevate, avevano» + participle: «Avevo già mangiato». With «essere»: «ero, eri, era, eravamo, eravate, erano» + participle: «Lei era già partita». STEP 3: the choice between «avere» and «essere» is exactly the one you know from the passato prossimo. Transitive verbs such as «mangiare» take «avere», and verbs of movement such as «partire» and «arrivare» take «essere». STEP 4: with «essere» the participle agrees with the subject: «Lei era già partita» (feminine), «Loro erano già partiti» (masculine plural). STEP 5: «già» (already) usually goes between the auxiliary and the participle: «Avevo già mangiato». «Appena» (just) goes in the same place. STEP 6: useful time words for telling a story: «già» (already), «non… ancora» (not yet), «ormai» (by now), «fino ad allora» (until then), «quel giorno» (that day), «dopo che» (after). STEP 7: the sentence «Avevo mangiato già» is also possible in speech, but «Avevo già mangiato» is the neutral order.",
+        "comparacao": "English has only one auxiliary, «had», so English speakers tend to use «avere» for every verb and say «Lei aveva già partito». Italian chooses the auxiliary verb by verb, and after «essere» the participle agrees with the subject, which English never does.",
+        "exemplos": [
+          {
+            "ru": "Avevo già mangiato",
+            "pt": "I had already eaten"
+          },
+          {
+            "ru": "Lei era già partita",
+            "pt": "She had already left"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "transitive verb",
+            "forma": "avevo già mangiato"
+          },
+          {
+            "tipo": "verb of movement",
+            "forma": "lei era già partita"
+          },
+          {
+            "tipo": "participle agrees with «essere»",
+            "forma": "era partita · erano partiti"
+          },
+          {
+            "tipo": "useful words",
+            "forma": "già · appena · ormai · fino ad allora"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ero già mangiato",
+            "certo": "Avevo già mangiato",
+            "motivo": "«Mangiare» is a transitive verb and takes «avere»: «avevo mangiato»."
+          },
+          {
+            "errado": "Lei aveva già partito",
+            "certo": "Lei era già partita",
+            "motivo": "«Partire» is a verb of movement and takes «essere», and the participle agrees: «era partita»."
+          },
+          {
+            "errado": "Quando ho arrivato, il film era già cominciato",
+            "certo": "Quando sono arrivato, il film era già cominciato",
+            "motivo": "«Arrivare» takes «essere» in the passato prossimo too: «sono arrivato»."
+          }
+        ],
+        "tag": "Past"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "già",
+            "opcoes": [
+              "già",
+              "ormai",
+              "appena"
+            ],
+            "gabarito": "già",
+            "explicacao": "Listen for «già».",
+            "id": "it-039-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "appena",
+            "opcoes": [
+              "appena",
+              "ancora",
+              "prima"
+            ],
+            "gabarito": "appena",
+            "explicacao": "Listen for «appena».",
+            "id": "it-039-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "quel giorno",
+            "opcoes": [
+              "quel giorno",
+              "fino ad allora",
+              "dopo che"
+            ],
+            "gabarito": "quel giorno",
+            "explicacao": "Listen for «quel giorno».",
+            "id": "it-039-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence means «I had already eaten»?",
+            "opcoes": [
+              "Avevo già mangiato",
+              "Ero già mangiato",
+              "Avevo già mangiare"
+            ],
+            "gabarito": "Avevo già mangiato",
+            "explicacao": "«Mangiare» takes «avere» and the participle is «mangiato».",
+            "id": "it-039-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "A woman had already left. Which sentence is correct?",
+            "opcoes": [
+              "Lei era già partita",
+              "Lei aveva già partito",
+              "Lei era già partito"
+            ],
+            "gabarito": "Lei era già partita",
+            "explicacao": "«Partire» takes «essere» and the participle agrees with «lei».",
+            "id": "it-039-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence says that the film had already started when you arrived?",
+            "opcoes": [
+              "Quando sono arrivato, il film era già cominciato",
+              "Quando ho arrivato, il film era già cominciato",
+              "Quando sono arrivato, il film era già cominciare"
+            ],
+            "gabarito": "Quando sono arrivato, il film era già cominciato",
+            "explicacao": "The earlier event uses the trapassato, and «arrivare» takes «essere».",
+            "id": "it-039-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Lei ___ già partita. (She had already left.)",
+            "opcoes": [
+              "era",
+              "aveva",
+              "è"
+            ],
+            "gabarito": "era",
+            "explicacao": "«Partire» takes «essere», so the auxiliary is «era».",
+            "id": "it-039-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Avevo già mangiato»",
+            "opcoes": [
+              "Avevo",
+              "già",
+              "mangiato"
+            ],
+            "gabarito": "Avevo già mangiato",
+            "explicacao": "The auxiliary, «già» and then the participle.",
+            "id": "it-039-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 1,
+        "enunciado": "Say four sentences aloud about what you had already done before a given moment yesterday: use «avevo già» with two transitive verbs and «ero già» with two verbs of movement."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud «avevo già mangiato» and «lei era già partita», and say which auxiliary each one uses."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-039.json",
+  "responsavel": null
+}

@@ -1,0 +1,192 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 149,
+  "fase": 15,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "A2 mock test: The A2 map",
+  "objetivo": "Lesson 38, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 38,
+    "titulo": "A2 mock test",
+    "objetivo": "Check what you can do at the end of level A2: say how long something has lasted with «da» and the present, answer a call, accept an invitation, make a polite request, tell a short story in the past and talk about plans. Use «non» with «mai» after the verb, «di» in «credo di sì», and «essere» in «sono arrivato». Avoid the English-speaker traps: «per» for a situation that goes on, «Questo è» on the phone and «ho» with a verb of movement.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "The A2 map",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 15,
+        "titulo": "The A2 map: what you can now say",
+        "explicacao": "STEP 1: this lesson is a mock test, and the first session is a map of what you have learned. Each point below is tested in the sessions that follow. STEP 2: how long something has lasted: a situation that goes on now uses the present with «da»: «Abito qui da due anni» (I have lived here for two years, and I still do). «Per» is for a period seen as complete, as in «Ho abitato qui per due anni». STEP 3: negation: when «mai» comes after the verb, «non» goes before the verb: «Non mangio mai carne» (I never eat meat). STEP 4: the past: use the passato prossimo for what happened and the imperfetto for the scene: «Quando sono arrivato, pioveva» (When I arrived, it was raining). «Arrivare» and many other verbs of movement take «essere». STEP 5: polite requests: «Vorrei prenotare una camera» (I would like to book a room) and «Mi manderesti l'indirizzo?» (Would you send me the address?). STEP 6: the future: «sarò puntuale» (I will be on time). STEP 7: you will also hear all these sentences as audio in the next sessions, so listen for each one.",
+        "comparacao": "English uses «for» for both a situation that goes on and one that is over, so English speakers say «per due anni» for both. Italian uses «da» + the present when it goes on. English says «I never eat meat» with no second negative word, and an English speaker may drop the «non» and say «Mangio mai carne». Italian needs «non» before the verb when «mai» follows it.",
+        "exemplos": [
+          {
+            "ru": "Abito qui da due anni",
+            "pt": "I have lived here for two years"
+          },
+          {
+            "ru": "Non mangio mai carne",
+            "pt": "I never eat meat"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "still going on",
+            "forma": "abito qui da due anni"
+          },
+          {
+            "tipo": "«mai» after the verb",
+            "forma": "non mangio mai carne"
+          },
+          {
+            "tipo": "story: event and scene",
+            "forma": "sono arrivato · pioveva"
+          },
+          {
+            "tipo": "polite request",
+            "forma": "vorrei prenotare una camera"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Abito qui per due anni",
+            "certo": "Abito qui da due anni",
+            "motivo": "A situation that still goes on uses the present with «da». «Per» is used for a period seen as complete."
+          },
+          {
+            "errado": "Mangio mai carne",
+            "certo": "Non mangio mai carne",
+            "motivo": "When «mai» comes after the verb, «non» is needed before the verb."
+          }
+        ],
+        "tag": "Review"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Abito qui da due anni",
+            "opcoes": [
+              "Abito qui da due anni",
+              "Abito qui da due mesi",
+              "Abitavo qui da due anni"
+            ],
+            "gabarito": "Abito qui da due anni",
+            "explicacao": "Listen for «due anni».",
+            "id": "it-038-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Non mangio mai carne",
+            "opcoes": [
+              "Non mangio mai carne",
+              "Non mangio più carne",
+              "Mangio sempre carne"
+            ],
+            "gabarito": "Non mangio mai carne",
+            "explicacao": "Listen for «mai».",
+            "id": "it-038-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Quando sono arrivato, pioveva",
+            "opcoes": [
+              "Quando sono arrivato, pioveva",
+              "Quando sono arrivato, piove",
+              "Quando arrivavo, pioveva"
+            ],
+            "gabarito": "Quando sono arrivato, pioveva",
+            "explicacao": "Listen for «sono arrivato».",
+            "id": "it-038-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Vorrei prenotare una camera",
+            "opcoes": [
+              "Vorrei prenotare una camera",
+              "Vorrei prenotare un tavolo",
+              "Vorrei cambiare una camera"
+            ],
+            "gabarito": "Vorrei prenotare una camera",
+            "explicacao": "Listen for «camera».",
+            "id": "it-038-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence says that you still live here and have done so for two years?",
+            "opcoes": [
+              "Abito qui da due anni",
+              "Ho abitato qui per due anni",
+              "Abito qui per due anni"
+            ],
+            "gabarito": "Abito qui da due anni",
+            "explicacao": "A situation that goes on uses the present with «da».",
+            "id": "it-038-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence says «I never eat meat»?",
+            "opcoes": [
+              "Non mangio mai carne",
+              "Mangio mai carne",
+              "Non mangio carne mai non"
+            ],
+            "gabarito": "Non mangio mai carne",
+            "explicacao": "«Mai» after the verb needs «non» before it.",
+            "id": "it-038-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Abito qui ___ due anni. (for, still going on)",
+            "opcoes": [
+              "da",
+              "per",
+              "di"
+            ],
+            "gabarito": "da",
+            "explicacao": "The present with «da» says that it still goes on.",
+            "id": "it-038-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Non mangio mai carne»",
+            "opcoes": [
+              "Non",
+              "mangio",
+              "mai",
+              "carne"
+            ],
+            "gabarito": "Non mangio mai carne",
+            "explicacao": "«Non» first, then the verb and «mai».",
+            "id": "it-038-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 1,
+        "enunciado": "Say at least three sentences aloud about yourself: where you live and for how long with «da», something you never do with «non… mai», and one request with «Vorrei»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud «Abito qui da due anni» and «Non mangio mai carne», and notice the small words «da» and «non»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-038.json",
+  "responsavel": null
+}

@@ -1,0 +1,289 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 168,
+  "fase": 17,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Futuro anteriore and the future of probability: Review and practice of lesson 42",
+  "objetivo": "Lesson 42, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 42,
+    "titulo": "Futuro anteriore and the future of probability",
+    "objetivo": "Say what will have happened by a deadline or before another future event with the futuro anteriore, and make guesses about the present and the past with the future tense. Use «entro» for a deadline, choose «avere» or «essere» as in the passato prossimo, and use «avranno fame» for «they must be hungry». Avoid the English-speaker traps: «da» for a deadline, the infinitive instead of the participle and «saranno fame».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 42",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Review: the futuro anteriore and the future of probability",
+        "explicacao": "STEP 1: the futuro anteriore is the future of «avere» or «essere» + the participle, and it follows the same auxiliary rules as the passato prossimo. STEP 2: use it for a deadline («Entro venerdì avrò finito il progetto») and for an action that comes before another future action («Quando avrai finito, ti chiamerò»). STEP 3: the futuro semplice can also guess about the present: «Saranno le tre», «Chissà dove sarà». STEP 4: the futuro anteriore can guess about the past: «Sarà già uscito», «Avrà perso il treno». STEP 5: «Avranno fame tutti» is the guess «They must all be hungry». STEP 6: in informal speech the present can replace both futures: «Quando finisci, ti chiamo».",
+        "comparacao": "English guesses with «must» and uses the present after «when» and «as soon as». Italian guesses with the future and marks the earlier action with the futuro anteriore.",
+        "exemplos": [
+          {
+            "ru": "Quando avrai finito, ti chiamerò",
+            "pt": "When you have finished, I'll call you"
+          },
+          {
+            "ru": "Saranno le tre",
+            "pt": "It must be about three o'clock"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Avrà già uscito",
+            "certo": "Sarà già uscito",
+            "motivo": "«Uscire» takes «essere»."
+          },
+          {
+            "errado": "Sarà le tre",
+            "certo": "Saranno le tre",
+            "motivo": "The hours from two o'clock are plural."
+          }
+        ],
+        "tag": "Review"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 22,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Quando avrai finito, ti chiamerò",
+            "opcoes": [
+              "Quando avrai finito, ti chiamerò",
+              "Quando avrai finito, ti chiamo",
+              "Quando avrò finito, ti chiamerò"
+            ],
+            "gabarito": "Quando avrai finito, ti chiamerò",
+            "explicacao": "Listen for «avrai finito».",
+            "id": "it-042-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Sarà già uscito",
+            "opcoes": [
+              "Sarà già uscito",
+              "Sarà già uscita",
+              "Sarà già arrivato"
+            ],
+            "gabarito": "Sarà già uscito",
+            "explicacao": "Listen for «uscito».",
+            "id": "it-042-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Saranno le tre",
+            "opcoes": [
+              "Saranno le tre",
+              "Saranno le due",
+              "Sono le tre"
+            ],
+            "gabarito": "Saranno le tre",
+            "explicacao": "Listen for «tre».",
+            "id": "it-042-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Entro venerdì avrò finito il progetto",
+            "opcoes": [
+              "Entro venerdì avrò finito il progetto",
+              "Entro sabato avrò finito il progetto",
+              "Entro venerdì avrò finito il lavoro"
+            ],
+            "gabarito": "Entro venerdì avrò finito il progetto",
+            "explicacao": "Listen for «venerdì».",
+            "id": "it-042-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Chissà dove sarà",
+            "opcoes": [
+              "Chissà dove sarà",
+              "Chissà dove è stato",
+              "Chissà dove andrà"
+            ],
+            "gabarito": "Chissà dove sarà",
+            "explicacao": "Listen for «sarà».",
+            "id": "it-042-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Avrà perso il treno",
+            "opcoes": [
+              "Avrà perso il treno",
+              "Ha perso il treno",
+              "Avrà preso il treno"
+            ],
+            "gabarito": "Avrà perso il treno",
+            "explicacao": "Listen for «perso».",
+            "id": "it-042-e06"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Probabilmente sì. Quando avrà caricato il telefono, ci chiamerà.",
+            "opcoes": [
+              "Probabilmente sì. Quando avrà caricato il telefono, ci chiamerà.",
+              "Probabilmente no. Quando avrà caricato il telefono, ci chiamerà.",
+              "Probabilmente sì. Quando avrà caricato il telefono, ci scriverà."
+            ],
+            "gabarito": "Probabilmente sì. Quando avrà caricato il telefono, ci chiamerà.",
+            "explicacao": "Listen for «caricato» and «chiamerà».",
+            "id": "it-042-e07"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Sarà rimasta bloccata nel traffico. Di sabato sera è sempre così.",
+            "opcoes": [
+              "Sarà rimasta bloccata nel traffico. Di sabato sera è sempre così.",
+              "Sarà rimasta bloccata nel traffico. Di domenica sera è sempre così.",
+              "Sarà rimasto bloccato nel traffico. Di sabato sera è sempre così."
+            ],
+            "gabarito": "Sarà rimasta bloccata nel traffico. Di sabato sera è sempre così.",
+            "explicacao": "Listen for «rimasta» and «sabato».",
+            "id": "it-042-e08"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Speriamo. Intanto cominciamo a mangiare? Avranno fame tutti.",
+            "opcoes": [
+              "Speriamo. Intanto cominciamo a mangiare? Avranno fame tutti.",
+              "Speriamo. Intanto cominciamo a mangiare? Avranno sete tutti.",
+              "Speriamo. Intanto cominciamo a bere? Avranno fame tutti."
+            ],
+            "gabarito": "Speriamo. Intanto cominciamo a mangiare? Avranno fame tutti.",
+            "explicacao": "Listen for «mangiare» and «fame».",
+            "id": "it-042-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ecco, il telefono squilla: è lei! Dice che sta salendo.",
+            "opcoes": [
+              "Ecco, il telefono squilla: è lei! Dice che sta salendo.",
+              "Ecco, il telefono squilla: è lui! Dice che sta salendo.",
+              "Ecco, il telefono squilla: è lei! Dice che sta scendendo."
+            ],
+            "gabarito": "Ecco, il telefono squilla: è lei! Dice che sta salendo.",
+            "explicacao": "Listen for «lei» and «salendo».",
+            "id": "it-042-e10"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Va bene. Appena sarà arrivata, brinderemo tutti insieme.",
+            "opcoes": [
+              "Va bene. Appena sarà arrivata, brinderemo tutti insieme.",
+              "Va bene. Appena sarà arrivata, mangeremo tutti insieme.",
+              "Va bene. Appena è arrivata, brinderemo tutti insieme."
+            ],
+            "gabarito": "Va bene. Appena sarà arrivata, brinderemo tutti insieme.",
+            "explicacao": "Listen for «brinderemo».",
+            "id": "it-042-e11"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Sarà una bella storia, vedrai.",
+            "opcoes": [
+              "Sarà una bella storia, vedrai.",
+              "Sarà una brutta storia, vedrai.",
+              "È una bella storia, vedrai."
+            ],
+            "gabarito": "Sarà una bella storia, vedrai.",
+            "explicacao": "Listen for «bella».",
+            "id": "it-042-e12"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Quando avrai finito, ti chiamerò",
+              "Quando avrai finire, ti chiamerò",
+              "Da venerdì avrò finito il progetto"
+            ],
+            "gabarito": "Quando avrai finito, ti chiamerò",
+            "explicacao": "The futuro anteriore needs the participle.",
+            "id": "it-042-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence means «It must be about three o'clock»?",
+            "opcoes": [
+              "Saranno le tre",
+              "Sarà le tre",
+              "Avranno le tre"
+            ],
+            "gabarito": "Saranno le tre",
+            "explicacao": "The hours from two o'clock are plural.",
+            "id": "it-042-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ già uscito. (He must have gone out already.)",
+            "opcoes": [
+              "Sarà",
+              "Avrà",
+              "Sarebbe"
+            ],
+            "gabarito": "Sarà",
+            "explicacao": "«Uscire» takes «essere».",
+            "id": "it-042-e15"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Entro venerdì avrò finito il progetto»",
+            "opcoes": [
+              "Entro",
+              "venerdì",
+              "avrò",
+              "finito",
+              "il",
+              "progetto"
+            ],
+            "gabarito": "Entro venerdì avrò finito il progetto",
+            "explicacao": "The deadline first, then the futuro anteriore.",
+            "id": "it-042-e16"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud and then show the answer.",
+            "audio": "Chissà dove sarà",
+            "respostaEsperada": "Chissà dove sarà",
+            "explicacao": "Say the sentence aloud, then check the written text.",
+            "complemento": true,
+            "id": "it-042-r17"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say eight sentences aloud: two with a deadline and «entro», two with «quando» or «appena» and two futures, and four guesses about what time it is or what someone must have done."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say three sentences aloud: one with a deadline, one guessing about the present and one guessing about the past."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-042.json",
+  "responsavel": null
+}

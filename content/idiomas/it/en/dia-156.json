@@ -1,0 +1,303 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 156,
+  "fase": 16,
+  "nivel": "b1",
+  "status": "publicada",
+  "titulo": "Trapassato prossimo: Review and practice of lesson 39",
+  "objetivo": "Lesson 39, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 39,
+    "titulo": "Trapassato prossimo",
+    "objetivo": "Say that something had already happened before another event in the past, using «avevo» or «ero» + the participle. Choose between «avere» and «essere» as you do in the passato prossimo, and put the events of a story in order with «il giorno prima», «due giorni prima» and «dopo aver + participle». Avoid the English-speaker traps: «ero» with a verb that takes «avere», «aveva» with a verb of movement and «dopo» + the gerund.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "b1"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 39",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Review: the trapassato prossimo",
+        "explicacao": "STEP 1: the trapassato prossimo is «avevo» or «ero» + the participle, and it says what had happened before another moment in the past: «Avevo già mangiato», «Lei era già partita». STEP 2: the auxiliary follows the same rule as in the passato prossimo: «avere» for transitive verbs, «essere» for verbs of movement and for reflexive verbs. STEP 3: with «essere» the participle agrees with the subject. STEP 4: use «il giorno prima», «due giorni prima», «una settimana dopo» and «l'anno precedente» to place events in a story. STEP 5: after «dopo», use the past infinitive: «Dopo aver mangiato, sono uscito». STEP 6: «per fortuna» and «fino ad allora» help to tell the story.",
+        "comparacao": "English has one «had» for every verb and never changes the participle. Italian chooses the auxiliary for each verb and agrees the participle with «essere». English says «After eating», and Italian says «Dopo aver mangiato».",
+        "exemplos": [
+          {
+            "ru": "Avevo già mangiato",
+            "pt": "I had already eaten"
+          },
+          {
+            "ru": "Il giorno prima avevo perso le chiavi",
+            "pt": "The day before, I had lost my keys"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ero già mangiato",
+            "certo": "Avevo già mangiato",
+            "motivo": "«Mangiare» takes «avere»."
+          },
+          {
+            "errado": "Dopo mangiando, sono uscito",
+            "certo": "Dopo aver mangiato, sono uscito",
+            "motivo": "After «dopo» use the past infinitive."
+          }
+        ],
+        "tag": "Review"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 22,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Quando sono arrivato, il film era già cominciato",
+            "opcoes": [
+              "Quando sono arrivato, il film era già cominciato",
+              "Quando sono arrivato, il film era già cominciare",
+              "Quando sono arrivata, il film era già cominciato"
+            ],
+            "gabarito": "Quando sono arrivato, il film era già cominciato",
+            "explicacao": "Listen for «era già».",
+            "id": "it-039-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Avevo già mangiato",
+            "opcoes": [
+              "Avevo già mangiato",
+              "Ho già mangiato",
+              "Avevo appena mangiato"
+            ],
+            "gabarito": "Avevo già mangiato",
+            "explicacao": "Listen for «Avevo».",
+            "id": "it-039-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Dopo aver mangiato, sono uscito",
+            "opcoes": [
+              "Dopo aver mangiato, sono uscito",
+              "Dopo aver mangiato, sono uscita",
+              "Dopo aver bevuto, sono uscito"
+            ],
+            "gabarito": "Dopo aver mangiato, sono uscito",
+            "explicacao": "Listen for «mangiato».",
+            "id": "it-039-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Il giorno prima avevo perso le chiavi",
+            "opcoes": [
+              "Il giorno prima avevo perso le chiavi",
+              "Il giorno dopo avevo perso le chiavi",
+              "Il giorno prima avevo perso il treno"
+            ],
+            "gabarito": "Il giorno prima avevo perso le chiavi",
+            "explicacao": "Listen for «prima» and «chiavi».",
+            "id": "it-039-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Lei era già partita",
+            "opcoes": [
+              "Lei era già partita",
+              "Lei era già arrivata",
+              "Lui era già partito"
+            ],
+            "gabarito": "Lei era già partita",
+            "explicacao": "Listen for «partita».",
+            "id": "it-039-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "l'anno precedente",
+            "opcoes": [
+              "l'anno precedente",
+              "l'anno scorso",
+              "il giorno prima"
+            ],
+            "gabarito": "l'anno precedente",
+            "explicacao": "Listen for «precedente».",
+            "id": "it-039-e06"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Per fortuna mi ha perdonato",
+            "opcoes": [
+              "Per fortuna mi ha perdonato",
+              "Per fortuna mi ha chiamato",
+              "Per fortuna mi ha aspettato"
+            ],
+            "gabarito": "Per fortuna mi ha perdonato",
+            "explicacao": "Listen for «perdonato».",
+            "id": "it-039-e07"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "fino ad allora",
+            "opcoes": [
+              "fino ad allora",
+              "fino a ieri",
+              "da allora"
+            ],
+            "gabarito": "fino ad allora",
+            "explicacao": "Listen for «allora».",
+            "id": "it-039-e08"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "per fortuna",
+            "opcoes": [
+              "per fortuna",
+              "per favore",
+              "per ora"
+            ],
+            "gabarito": "per fortuna",
+            "explicacao": "Listen for «fortuna».",
+            "id": "it-039-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "il giorno prima",
+            "opcoes": [
+              "il giorno prima",
+              "il giorno dopo",
+              "due giorni prima"
+            ],
+            "gabarito": "il giorno prima",
+            "explicacao": "Listen for «prima».",
+            "id": "it-039-e10"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "la sveglia",
+            "opcoes": [
+              "la sveglia",
+              "la sera",
+              "la serata"
+            ],
+            "gabarito": "la sveglia",
+            "explicacao": "Listen for «sveglia».",
+            "id": "it-039-e11"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "dopo che",
+            "opcoes": [
+              "dopo che",
+              "dopo di",
+              "prima che"
+            ],
+            "gabarito": "dopo che",
+            "explicacao": "Listen for «dopo».",
+            "id": "it-039-e12"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "due giorni prima",
+            "opcoes": [
+              "due giorni prima",
+              "due giorni dopo",
+              "tre giorni prima"
+            ],
+            "gabarito": "due giorni prima",
+            "explicacao": "Listen for «due».",
+            "id": "it-039-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is correct?",
+            "opcoes": [
+              "Avevo già mangiato",
+              "Ero già mangiato",
+              "Avevo già mangiare"
+            ],
+            "gabarito": "Avevo già mangiato",
+            "explicacao": "«Mangiare» takes «avere».",
+            "id": "it-039-e14"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence says «After eating, I went out»?",
+            "opcoes": [
+              "Dopo aver mangiato, sono uscito",
+              "Dopo mangiando, sono uscito",
+              "Dopo mangiare, sono uscito"
+            ],
+            "gabarito": "Dopo aver mangiato, sono uscito",
+            "explicacao": "After «dopo» use the past infinitive.",
+            "id": "it-039-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Lei ___ già partita. (She had already left.)",
+            "opcoes": [
+              "era",
+              "aveva",
+              "ha"
+            ],
+            "gabarito": "era",
+            "explicacao": "«Partire» takes «essere».",
+            "id": "it-039-e16"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Il giorno prima avevo perso le chiavi»",
+            "opcoes": [
+              "Il",
+              "giorno",
+              "prima",
+              "avevo",
+              "perso",
+              "le",
+              "chiavi"
+            ],
+            "gabarito": "Il giorno prima avevo perso le chiavi",
+            "explicacao": "The time expression, then the trapassato.",
+            "id": "it-039-e17"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud and then show the answer.",
+            "audio": "il giorno dopo",
+            "respostaEsperada": "il giorno dopo",
+            "explicacao": "Say the phrase aloud, then check the written text.",
+            "complemento": true,
+            "id": "it-039-r18"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say eight sentences aloud about a day when things went wrong. Use at least three trapassato sentences, one «dopo aver» and one expression such as «il giorno prima»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud the three key points of the lesson: «avevo» or «ero» + participle, the right auxiliary, and «dopo aver»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-039.json",
+  "responsavel": null
+}

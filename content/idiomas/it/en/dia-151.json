@@ -1,0 +1,191 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 151,
+  "fase": 16,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "A2 mock test: The most common A2 mistakes and writing",
+  "objetivo": "Lesson 38, session 3 of 4 · 30 min",
+  "aula": {
+    "numero": 38,
+    "titulo": "A2 mock test",
+    "objetivo": "Check what you can do at the end of level A2: say how long something has lasted with «da» and the present, answer a call, accept an invitation, make a polite request, tell a short story in the past and talk about plans. Use «non» with «mai» after the verb, «di» in «credo di sì», and «essere» in «sono arrivato». Avoid the English-speaker traps: «per» for a situation that goes on, «Questo è» on the phone and «ho» with a verb of movement.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "The most common A2 mistakes and writing",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 15,
+        "titulo": "The most common A2 mistakes: «sono arrivato» and «Sono Carlos»",
+        "explicacao": "STEP 1: verbs of movement such as «arrivare» take «essere» in the passato prossimo, and the participle agrees with the subject: «Quando sono arrivato, pioveva» (a man) and «sono arrivata» (a woman). «Ho arrivato» is a typical mistake. STEP 2: use the passato prossimo for the event («sono arrivato») and the imperfetto for the scene («pioveva»). STEP 3: on the phone, say who you are with «Sono» and your name: «Pronto, Giulia? Sono Carlos. Sei libera sabato sera?». «Questo è Carlos» is a copy of the English «This is Carlos». STEP 4: for something that still goes on, use «da» + the present: «Abito qui da due anni». STEP 5: with «mai» after the verb, keep «non» before it: «Non mangio mai carne». STEP 6: the same pattern works with «nessuno»: «Non conosco nessuno». STEP 7: when you write, read your sentence aloud and check the three small things in this order: the auxiliary, the tense and the negative word.",
+        "comparacao": "English uses «have» for the present perfect, and an English speaker says «Ho arrivato» as if it were «I have arrived». Italian uses «essere» with «arrivare» and many other verbs of movement. English says «This is Carlos» on the phone, and Italian says «Sono Carlos». English says «I know nobody» with one negative, while Italian needs «non» too: «Non conosco nessuno».",
+        "exemplos": [
+          {
+            "ru": "Quando sono arrivato, pioveva",
+            "pt": "When I arrived, it was raining"
+          },
+          {
+            "ru": "Pronto, Giulia? Sono Carlos. Sei libera sabato sera?",
+            "pt": "Hello, Giulia? It's Carlos. Are you free on Saturday evening?"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "movement + essere",
+            "forma": "sono arrivato · sono arrivata"
+          },
+          {
+            "tipo": "on the phone",
+            "forma": "Sono Carlos (not «Questo è»)"
+          },
+          {
+            "tipo": "still going on",
+            "forma": "da + present"
+          },
+          {
+            "tipo": "double negative",
+            "forma": "non… mai · non… nessuno"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Quando ho arrivato, pioveva",
+            "certo": "Quando sono arrivato, pioveva",
+            "motivo": "«Arrivare» is a verb of movement and takes «essere»."
+          },
+          {
+            "errado": "Pronto, Giulia? Questo è Carlos. Sei libera sabato sera?",
+            "certo": "Pronto, Giulia? Sono Carlos. Sei libera sabato sera?",
+            "motivo": "On the phone Italians say «Sono» and the name. «Questo è» is a copy of the English «This is»."
+          }
+        ],
+        "tag": "Review"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 2,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Quando sono arrivato, pioveva",
+            "opcoes": [
+              "Quando sono arrivato, pioveva",
+              "Quando sono arrivata, pioveva",
+              "Quando arrivo, piove"
+            ],
+            "gabarito": "Quando sono arrivato, pioveva",
+            "explicacao": "Listen for «sono arrivato».",
+            "id": "it-038-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Pronto, Giulia? Sono Carlos. Sei libera sabato sera?",
+            "opcoes": [
+              "Pronto, Giulia? Sono Carlos. Sei libera sabato sera?",
+              "Pronto, Giulia? Sono Carlos. Sei libera domani sera?",
+              "Pronto, Giulia? Sono Carlos. Sei libero sabato sera?"
+            ],
+            "gabarito": "Pronto, Giulia? Sono Carlos. Sei libera sabato sera?",
+            "explicacao": "Listen for «libera» and «sabato».",
+            "id": "it-038-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Abito qui da due anni",
+            "opcoes": [
+              "Abito qui da due anni",
+              "Abito qui da tre anni",
+              "Ho abitato qui due anni"
+            ],
+            "gabarito": "Abito qui da due anni",
+            "explicacao": "Listen for «due anni».",
+            "id": "it-038-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "A woman says that she arrived. Which sentence is correct?",
+            "opcoes": [
+              "Sono arrivata",
+              "Ho arrivata",
+              "Sono arrivato"
+            ],
+            "gabarito": "Sono arrivata",
+            "explicacao": "A verb of movement takes «essere», and the participle agrees with a woman.",
+            "id": "it-038-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence is a natural way to say who is calling?",
+            "opcoes": [
+              "Pronto, Giulia? Sono Carlos.",
+              "Pronto, Giulia? Questo è Carlos.",
+              "Pronto, Giulia? Io sono qui Carlos."
+            ],
+            "gabarito": "Pronto, Giulia? Sono Carlos.",
+            "explicacao": "On the phone Italians say «Sono» and the name.",
+            "id": "it-038-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which sentence says «I don't know anyone»?",
+            "opcoes": [
+              "Non conosco nessuno",
+              "Conosco nessuno",
+              "Non conosco nessuno non"
+            ],
+            "gabarito": "Non conosco nessuno",
+            "explicacao": "«Nessuno» after the verb needs «non» before it.",
+            "id": "it-038-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Quando ___ arrivato, pioveva. (I, a man)",
+            "opcoes": [
+              "sono",
+              "ho",
+              "ha"
+            ],
+            "gabarito": "sono",
+            "explicacao": "«Arrivare» takes «essere».",
+            "id": "it-038-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Quando sono arrivato, pioveva»",
+            "opcoes": [
+              "Quando",
+              "sono",
+              "arrivato,",
+              "pioveva"
+            ],
+            "gabarito": "Quando sono arrivato, pioveva",
+            "explicacao": "The time clause first, then the scene.",
+            "id": "it-038-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Write four short sentences about a trip: when you arrived (passato prossimo), what the weather was like (imperfetto), how long you have lived there (da + present) and what you never do (non… mai). Then read them aloud."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud «sono arrivato», «Sono Carlos» and «non… mai», and say which small word makes each one correct."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-038.json",
+  "responsavel": null
+}
