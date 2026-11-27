@@ -1,0 +1,244 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 90,
+  "fase": 9,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Direct object pronouns: Pronouns and compound tenses",
+  "objetivo": "Lesson 23, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 23,
+    "titulo": "Direct object pronouns",
+    "objetivo": "Replace a direct object with «lo, la, li, le» and the other direct object pronouns, put them in the right place and make the participle agree in the passato prossimo. Avoid the English-speaker traps: putting the pronoun after the verb, not agreeing the participle, and mixing direct and indirect pronouns.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Pronouns and compound tenses",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "invitare",
+            "translit": "een-vee-TAH-reh",
+            "pt": "to invite",
+            "en": "",
+            "audio": "invitare"
+          },
+          {
+            "ru": "chiamare",
+            "translit": "kyah-MAH-reh",
+            "pt": "to call",
+            "en": "",
+            "audio": "chiamare"
+          },
+          {
+            "ru": "cercare",
+            "translit": "chehr-KAH-reh",
+            "pt": "to look for",
+            "en": "",
+            "audio": "cercare"
+          },
+          {
+            "ru": "incontrare",
+            "translit": "een-kohn-TRAH-reh",
+            "pt": "to meet, to run into",
+            "en": "",
+            "audio": "incontrare"
+          },
+          {
+            "ru": "dimenticare",
+            "translit": "dee-mehn-tee-KAH-reh",
+            "pt": "to forget",
+            "en": "",
+            "audio": "dimenticare"
+          },
+          {
+            "ru": "ascoltare",
+            "translit": "ah-skohl-TAH-reh",
+            "pt": "to listen to",
+            "en": "",
+            "audio": "ascoltare"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 16,
+        "titulo": "Direct object pronouns in the passato prossimo",
+        "explicacao": "STEP 1: in the passato prossimo with «avere», the pronoun goes before the auxiliary: «L'ho vista ieri», «Li ho comprati tutti». STEP 2: the past participle agrees in gender and number with «lo, la, li, le»: «lo» → «-o», «la» → «-a», «li» → «-i», «le» → «-e». «L'ho vista» means «I saw her» (a woman); «L'ho visto» means «I saw him». STEP 3: with «mi, ti, ci, vi» the agreement is optional: «Mi ha visto» and «Mi ha vista» are both found, and the first is more common in speech. STEP 4: the agreement is the biggest change from lessons 17 and 20, where the participle after «avere» did not change (it did not agree with the subject, and it does not agree with a noun that follows the verb). It changes when «lo, la, li, le» comes before the verb. Next lesson you will see «ne» do the same. STEP 5: some Italian verbs take a direct object where English uses a preposition: «cercare» (look for), «ascoltare» (listen to), «aspettare» (wait for), «guardare» (look at): «La cerco», «Lo ascolto». Here the pronoun is direct. STEP 6: «chiamare» (to call) also takes a direct object: «La chiamo» (I call her). STEP 7: with «ecco», the pronoun is attached: «Eccolo», «Eccoli». STEP 8: with the infinitive after a modal verb, you choose between «La devo chiamare» and «Devo chiamarla». Both are right.",
+        "comparacao": "English never changes the participle for the object: «I have seen her», «I have seen him», «I have seen them». Italian does, as soon as «lo, la, li» or «le» stands before the verb. The rule looks hard but the test is simple: ask what the pronoun stands for, find its ending («-a» for «la», «-i» for «li»), and put that ending on the participle. If the object stays a noun after the verb («Ho comprato i libri»), the participle does not change.",
+        "exemplos": [
+          {
+            "ru": "L'ho vista ieri",
+            "pt": "I saw her yesterday"
+          },
+          {
+            "ru": "Li ho comprati tutti",
+            "pt": "I bought them all"
+          },
+          {
+            "ru": "Eccolo",
+            "pt": "Here it is"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "lo",
+            "forma": "L'ho visto"
+          },
+          {
+            "tipo": "la",
+            "forma": "L'ho vista"
+          },
+          {
+            "tipo": "li",
+            "forma": "Li ho visti"
+          },
+          {
+            "tipo": "le",
+            "forma": "Le ho viste"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Li ho comprato tutti",
+            "certo": "Li ho comprati tutti",
+            "motivo": "The participle agrees with «li»: masculine plural, «comprati»."
+          },
+          {
+            "errado": "Ecco lo",
+            "certo": "Eccolo",
+            "motivo": "«Ecco» and the pronoun are written as one word: «eccolo»."
+          }
+        ],
+        "tag": "Pronouns"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "invitare",
+            "opcoes": [
+              "invitare",
+              "incontrare",
+              "chiamare"
+            ],
+            "gabarito": "invitare",
+            "explicacao": "To invite.",
+            "id": "it-023-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "cercare",
+            "opcoes": [
+              "cercare",
+              "comprare",
+              "chiamare"
+            ],
+            "gabarito": "cercare",
+            "explicacao": "To look for.",
+            "id": "it-023-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "dimenticare",
+            "opcoes": [
+              "dimenticare",
+              "ricordare",
+              "incontrare"
+            ],
+            "gabarito": "dimenticare",
+            "explicacao": "To forget.",
+            "id": "it-023-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "L'ho vista ieri",
+            "opcoes": [
+              "L'ho vista ieri",
+              "L'ho visto ieri",
+              "Li ho visti ieri"
+            ],
+            "gabarito": "L'ho vista ieri",
+            "explicacao": "Listen for the feminine «-a».",
+            "id": "it-023-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Li ho comprati tutti",
+            "opcoes": [
+              "Li ho comprati tutti",
+              "Le ho comprate tutte",
+              "Li ho comprato tutti"
+            ],
+            "gabarito": "Li ho comprati tutti",
+            "explicacao": "Masculine plural.",
+            "id": "it-023-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "You bought «le mele». What do you say?",
+            "opcoes": [
+              "Le ho comprate",
+              "Le ho comprato",
+              "Li ho comprati"
+            ],
+            "gabarito": "Le ho comprate",
+            "explicacao": "«Le» is feminine plural: «comprate».",
+            "id": "it-023-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which verb takes a direct object in Italian but a preposition in English?",
+            "opcoes": [
+              "cercare («look for»)",
+              "telefonare («phone»)",
+              "rispondere («answer»)"
+            ],
+            "gabarito": "cercare («look for»)",
+            "explicacao": "«La cerco» (I look for her).",
+            "id": "it-023-e07"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Incontro Anna e ___ saluto. (I greet her)",
+            "opcoes": [
+              "la",
+              "le",
+              "lo"
+            ],
+            "gabarito": "la",
+            "explicacao": "Direct object, feminine singular.",
+            "id": "it-023-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say six sentences aloud with a pronoun and the passato prossimo, for example «Hai visto Maria? Sì, l'ho vista ieri»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say the four endings aloud: «lo → -o, la → -a, li → -i, le → -e»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-023.json",
+  "responsavel": null
+}

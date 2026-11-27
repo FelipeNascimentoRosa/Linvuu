@@ -1,0 +1,231 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 98,
+  "fase": 10,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Ci and ne: Ne: quantity and topic",
+  "objetivo": "Lesson 25, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 25,
+    "titulo": "Ci and ne",
+    "objetivo": "Use «ci» for a place already named and for an idea, use «ne» for quantity and topic, and put both pronouns in the right place. Avoid the English-speaker traps: dropping the pronoun, leaving it after the verb, and leaving out «ne» when the noun is gone.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Ne: quantity and topic",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "un po' di",
+            "translit": "oon poh dee",
+            "pt": "a little of",
+            "en": "",
+            "audio": "un po' di"
+          },
+          {
+            "ru": "abbastanza",
+            "translit": "ahb-bah-STAHN-tsah",
+            "pt": "enough, quite",
+            "en": "",
+            "audio": "abbastanza"
+          },
+          {
+            "ru": "troppo",
+            "translit": "TROHP-poh",
+            "pt": "too much, too many",
+            "en": "",
+            "audio": "troppo"
+          },
+          {
+            "ru": "parlarne",
+            "translit": "pahr-LAHR-neh",
+            "pt": "to talk about it",
+            "en": "",
+            "audio": "parlarne"
+          },
+          {
+            "ru": "pensarne",
+            "translit": "pehn-SAHR-neh",
+            "pt": "to think of it (to have an opinion)",
+            "en": "",
+            "audio": "pensarne"
+          },
+          {
+            "ru": "averne abbastanza",
+            "translit": "ah-VEHR-neh ahb-bah-STAHN-tsah",
+            "pt": "to have had enough",
+            "en": "",
+            "audio": "averne abbastanza"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 16,
+        "titulo": "The particle «ne»: «of it», «of them»",
+        "explicacao": "STEP 1: «ne» means «of it» or «of them». It replaces «di» + a noun, and it is mostly used for quantities. STEP 2: quantity: «Hai mangiato due mele? Sì, ne ho mangiate due» (I ate two of them). The noun disappears, but the number stays. In English you can drop the noun: «I ate two». In Italian you cannot drop it without «ne». STEP 3: «un po' di» also needs «ne»: «Vuoi del caffè? Sì, ne voglio un po'» (I want a little). STEP 4: in the passato prossimo, the participle agrees with the thing counted: «Ne ho mangiate due» (le mele), «Ne ho comprati tre» (i libri). STEP 5: topic: «di» + a subject: «parlare di» → «parlarne» (to talk about it), «pensare di» → «pensarne» (to have an opinion of it): «Che ne pensi?» means «What do you think of it?». STEP 6: «pensarci» and «pensarne» are different. «Ci penso» means «I am thinking about it» (it is on my mind), and «Che ne pensi?» asks for an opinion. STEP 7: «averne abbastanza» means «to have had enough»: «Ne ho abbastanza». STEP 8: «ne» goes in the same place as other pronouns: before the verb, after «non», and attached to the infinitive.",
+        "comparacao": "English leaves the noun out when the quantity is clear: «I ate two», «I want a little», «How many do you have? Three». Italian does not allow the bare number after a verb: you must say «Ne ho mangiate due», «Ne voglio un po'», «Quanti ne hai? Ne ho tre». If you hear a small «ne» in a sentence with a number, it stands for the missing noun. For opinions, English uses «think of» and «think about» almost interchangeably. Italian separates the two ideas: «pensarci» (to have something on your mind) and «pensarne» (to have an opinion).",
+        "exemplos": [
+          {
+            "ru": "Ne ho mangiate due",
+            "pt": "I ate two (of them)"
+          },
+          {
+            "ru": "Ne voglio un po'",
+            "pt": "I want a little (of it)"
+          },
+          {
+            "ru": "Che ne pensi",
+            "pt": "What do you think of it"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ho mangiato due",
+            "certo": "Ne ho mangiate due",
+            "motivo": "The noun is gone, so you need «ne» to carry it, and the participle then agrees with the thing counted: «ne ho mangiate due»."
+          },
+          {
+            "errado": "Voglio un po'",
+            "certo": "Ne voglio un po'",
+            "motivo": "Without the noun, «un po'» needs «ne»: «ne voglio un po'»."
+          },
+          {
+            "errado": "Che pensi ne",
+            "certo": "Che ne pensi",
+            "motivo": "«Ne» goes before the verb."
+          }
+        ],
+        "tag": "Pronouns"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "un po' di",
+            "opcoes": [
+              "un po' di",
+              "abbastanza",
+              "troppo"
+            ],
+            "gabarito": "un po' di",
+            "explicacao": "A little of.",
+            "id": "it-025-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "abbastanza",
+            "opcoes": [
+              "abbastanza",
+              "troppo",
+              "molto"
+            ],
+            "gabarito": "abbastanza",
+            "explicacao": "Enough.",
+            "id": "it-025-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "parlarne",
+            "opcoes": [
+              "parlarne",
+              "pensarne",
+              "parlarci"
+            ],
+            "gabarito": "parlarne",
+            "explicacao": "To talk about it.",
+            "id": "it-025-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ne ho mangiate due",
+            "opcoes": [
+              "Ne ho mangiate due",
+              "Ne ho mangiati due",
+              "Ne ho mangiate tre"
+            ],
+            "gabarito": "Ne ho mangiate due",
+            "explicacao": "Listen for «mangiate» and «due».",
+            "id": "it-025-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«How many apples did you eat?» «I ate two.» In Italian:",
+            "opcoes": [
+              "Ne ho mangiate due",
+              "Ho mangiate due",
+              "Ci ho mangiate due"
+            ],
+            "gabarito": "Ne ho mangiate due",
+            "explicacao": "«Ne» carries the missing noun.",
+            "id": "it-025-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which asks for an opinion?",
+            "opcoes": [
+              "Che ne pensi?",
+              "Ci pensi?",
+              "Che pensi ne?"
+            ],
+            "gabarito": "Che ne pensi?",
+            "explicacao": "«Pensarne» = to have an opinion of it.",
+            "id": "it-025-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Vuoi del pane? Sì, ___ voglio un po'. (of it)",
+            "opcoes": [
+              "ne",
+              "ci",
+              "lo"
+            ],
+            "gabarito": "ne",
+            "explicacao": "«Ne» replaces «di» + noun.",
+            "id": "it-025-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Ne voglio un po'»",
+            "opcoes": [
+              "Ne",
+              "voglio",
+              "un",
+              "po'"
+            ],
+            "gabarito": "Ne voglio un po'",
+            "explicacao": "«Ne», verb, quantity.",
+            "id": "it-025-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Answer six questions aloud with «ne» and a quantity, for example «Quanti libri hai? Ne ho tre»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud the difference between «Ci penso» and «Che ne pensi?»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-025.json",
+  "responsavel": null
+}

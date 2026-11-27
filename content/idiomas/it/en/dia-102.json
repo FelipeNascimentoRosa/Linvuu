@@ -1,0 +1,222 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 102,
+  "fase": 11,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Comparatives and superlatives: Equality and the superlative",
+  "objetivo": "Lesson 26, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 26,
+    "titulo": "Comparatives and superlatives",
+    "objetivo": "Compare with «più» and «meno» using «di» or «che», say that two things are equal, form the superlative with «il più» and «-issimo», and tell «migliore» from «meglio». Avoid the English-speaker traps: using «che» for every «than», leaving out the article of the superlative, and building «più bene».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Equality and the superlative",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "tanto… quanto",
+            "translit": "TAHN-toh KWAHN-toh",
+            "pt": "as much… as",
+            "en": "",
+            "audio": "tanto… quanto"
+          },
+          {
+            "ru": "così… come",
+            "translit": "koh-ZEE KOH-meh",
+            "pt": "as… as",
+            "en": "",
+            "audio": "così… come"
+          },
+          {
+            "ru": "il più",
+            "translit": "eel pyoo",
+            "pt": "the most",
+            "en": "",
+            "audio": "il più"
+          },
+          {
+            "ru": "il meno",
+            "translit": "eel MEH-noh",
+            "pt": "the least",
+            "en": "",
+            "audio": "il meno"
+          },
+          {
+            "ru": "bellissimo",
+            "translit": "behl-LEES-see-moh",
+            "pt": "very beautiful",
+            "en": "",
+            "audio": "bellissimo"
+          },
+          {
+            "ru": "molto bello",
+            "translit": "MOHL-toh BEHL-loh",
+            "pt": "very beautiful",
+            "en": "",
+            "audio": "molto bello"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 16,
+        "titulo": "As… as, the most, and «-issimo»",
+        "explicacao": "STEP 1: to say that two things are equal, use «così… come» with an adjective or adverb («Marco è così alto come Luca») and «tanto… quanto» with a noun or a verb («Ho tanti libri quanti amici»). In speech, the first word is often dropped: «Marco è alto come Luca». STEP 2: the relative superlative («the tallest», «the most interesting») is formed with the definite article + «più» or «meno» + the adjective: «il più alto», «la più simpatica», «i meno cari». STEP 3: after the superlative, English says «of» or «in». Italian says «di» and merges it with the article: «il ragazzo più simpatico della classe» (of the class). STEP 4: the article before «più» agrees with the noun: «È il ragazzo più simpatico», «È la ragazza più simpatica». STEP 5: the absolute superlative («very beautiful») is formed with «-issimo» added to the adjective without its final vowel: «bello» → «bellissimo», «alto» → «altissimo». It agrees: «bellissima», «bellissimi». STEP 6: «molto bello» also means «very beautiful», and is just as common in everyday speech. The two are different grammar, but the same meaning: use one or the other, never both. STEP 7: stress: «bel-LIS-si-mo», always on the syllable before «-simo».",
+        "comparacao": "English says «as tall as» with the same word twice, and «the tallest», with a single ending. Italian needs «più» in the superlative (no «-est»), and the article too: «il più alto». A typical mistake for English speakers is leaving the article out («Marco è più alto della classe»), which only gives you a comparative. The other one is doubling the intensity: «molto bellissimo» is like «very most beautiful».",
+        "exemplos": [
+          {
+            "ru": "È il ragazzo più simpatico della classe",
+            "pt": "He is the nicest boy in the class"
+          },
+          {
+            "ru": "Il film è bellissimo",
+            "pt": "The film is very beautiful"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "È il ragazzo più simpatico di la classe",
+            "certo": "È il ragazzo più simpatico della classe",
+            "motivo": "«Di» and the article merge: «di» + «la» = «della»."
+          },
+          {
+            "errado": "Il film è molto bellissimo",
+            "certo": "Il film è bellissimo",
+            "motivo": "«-issimo» already means «very»: do not add «molto»."
+          }
+        ],
+        "tag": "Comparatives"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "così… come",
+            "opcoes": [
+              "così… come",
+              "tanto… quanto",
+              "più… di"
+            ],
+            "gabarito": "così… come",
+            "explicacao": "As… as.",
+            "id": "it-026-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "il più",
+            "opcoes": [
+              "il più",
+              "il meno",
+              "più"
+            ],
+            "gabarito": "il più",
+            "explicacao": "The most.",
+            "id": "it-026-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "bellissimo",
+            "opcoes": [
+              "bellissimo",
+              "molto bello",
+              "bellino"
+            ],
+            "gabarito": "bellissimo",
+            "explicacao": "Listen for «-issimo».",
+            "id": "it-026-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "È il ragazzo più simpatico della classe",
+            "opcoes": [
+              "È il ragazzo più simpatico della classe",
+              "È il ragazzo più simpatico della scuola",
+              "È la ragazza più simpatica della classe"
+            ],
+            "gabarito": "È il ragazzo più simpatico della classe",
+            "explicacao": "Listen for «ragazzo» and «classe».",
+            "id": "it-026-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«The nicest girl in the class» in Italian:",
+            "opcoes": [
+              "La ragazza più simpatica della classe",
+              "Ragazza più simpatica della classe",
+              "La più ragazza simpatica della classe"
+            ],
+            "gabarito": "La ragazza più simpatica della classe",
+            "explicacao": "Article + «più» + adjective.",
+            "id": "it-026-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which is correct?",
+            "opcoes": [
+              "Il film è bellissimo",
+              "Il film è molto bellissimo",
+              "Il film è più bellissimo"
+            ],
+            "gabarito": "Il film è bellissimo",
+            "explicacao": "«-issimo» already means «very».",
+            "id": "it-026-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Marco è ___ alto come Luca. (as)",
+            "opcoes": [
+              "così",
+              "più",
+              "meno"
+            ],
+            "gabarito": "così",
+            "explicacao": "«Così… come».",
+            "id": "it-026-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Il film è bellissimo»",
+            "opcoes": [
+              "Il",
+              "film",
+              "è",
+              "bellissimo"
+            ],
+            "gabarito": "Il film è bellissimo",
+            "explicacao": "Subject, verb, superlative.",
+            "id": "it-026-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say six sentences aloud: two with «così… come», two with «il più» and two with «-issimo»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud the four forms of «bellissimo»: «bellissimo, bellissima, bellissimi, bellissime»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-026.json",
+  "responsavel": null
+}

@@ -1,0 +1,222 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 94,
+  "fase": 10,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Indirect object pronouns: Verbs with an indirect object",
+  "objetivo": "Lesson 24, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 24,
+    "titulo": "Indirect object pronouns",
+    "objetivo": "Replace «a» + a person with «mi, ti, gli, le» and the other indirect object pronouns, tell direct from indirect, and use «servire» to say what you need. Avoid the English-speaker traps: hiding the «to», using «la» for «telefonare», and making the participle agree.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Verbs with an indirect object",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "spiegare",
+            "translit": "spyeh-GAH-reh",
+            "pt": "to explain",
+            "en": "",
+            "audio": "spiegare"
+          },
+          {
+            "ru": "offrire",
+            "translit": "ohf-FREE-reh",
+            "pt": "to offer",
+            "en": "",
+            "audio": "offrire"
+          },
+          {
+            "ru": "prestare",
+            "translit": "preh-STAH-reh",
+            "pt": "to lend",
+            "en": "",
+            "audio": "prestare"
+          },
+          {
+            "ru": "restituire",
+            "translit": "reh-stee-too-EE-reh",
+            "pt": "to give back",
+            "en": "",
+            "audio": "restituire"
+          },
+          {
+            "ru": "mostrare",
+            "translit": "moh-STRAH-reh",
+            "pt": "to show",
+            "en": "",
+            "audio": "mostrare"
+          },
+          {
+            "ru": "servire",
+            "translit": "sehr-VEE-reh",
+            "pt": "to be needed, to serve",
+            "en": "",
+            "audio": "servire"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 16,
+        "titulo": "More verbs with an indirect object, and «servire»",
+        "explicacao": "STEP 1: «spiegare», «offrire», «prestare», «restituire» and «mostrare» all have two objects: the thing (direct) and the person (indirect). «Spiego la regola a Marco» becomes «Gli spiego la regola». STEP 2: if you replace the thing too, you use two pronouns at once (next lessons). For now, practice the person: «Mi presti un libro?», «Le offro un caffè». STEP 3: «servire» can mean «to serve», but in the sense of need it works like «piacere»: the thing needed is the subject, and the person is the indirect pronoun. «Mi serve un consiglio» means «I need advice», literally «advice is needed to me». STEP 4: so «servire» agrees with the thing: «Mi serve una penna», «Mi servono due penne». STEP 5: in the passato prossimo, the participle does not agree with an indirect pronoun: «Le ho chiesto un favore», not «chiesta». Compare «L'ho chiesta» (a direct pronoun, the thing asked: agrees). STEP 6: with «dire» («Ti dico»), «dare» («Mi dai»), the same rules apply. STEP 7: the pronoun can also be attached to an imperative or an infinitive: «Dimmi» (tell me), «Devo spiegarti». STEP 8: remember that «Le» with a capital letter is the formal «to you», and «le» is «to her». The meaning comes from the context.",
+        "comparacao": "English gives you two ways to say the same thing: «I lent him a book» and «I lent a book to him». Italian has only the second form, with «a» or its pronoun: «Gli ho prestato un libro». The idea of «need» is the biggest surprise: English says «I need advice» with «I» as the subject. Italian says that advice «is needed to me». If you say «Io servo un consiglio», you have said «I serve advice».",
+        "exemplos": [
+          {
+            "ru": "Le ho chiesto un favore",
+            "pt": "I asked her a favor"
+          },
+          {
+            "ru": "Mi serve un consiglio",
+            "pt": "I need advice"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Le ho chiesta un favore",
+            "certo": "Le ho chiesto un favore",
+            "motivo": "With an indirect object, the participle does not agree: «chiesto»."
+          },
+          {
+            "errado": "Io servo un consiglio",
+            "certo": "Mi serve un consiglio",
+            "motivo": "«Io servo un consiglio» would mean «I serve advice». To say «I need advice», «servire» works like «piacere»: the thing is the subject and the person is «mi»."
+          }
+        ],
+        "tag": "Pronouns"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "spiegare",
+            "opcoes": [
+              "spiegare",
+              "mostrare",
+              "offrire"
+            ],
+            "gabarito": "spiegare",
+            "explicacao": "To explain.",
+            "id": "it-024-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "prestare",
+            "opcoes": [
+              "prestare",
+              "restituire",
+              "regalare"
+            ],
+            "gabarito": "prestare",
+            "explicacao": "To lend.",
+            "id": "it-024-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "servire",
+            "opcoes": [
+              "servire",
+              "sentire",
+              "spiegare"
+            ],
+            "gabarito": "servire",
+            "explicacao": "To be needed.",
+            "id": "it-024-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Mi serve un consiglio",
+            "opcoes": [
+              "Mi serve un consiglio",
+              "Mi servono due consigli",
+              "Ti serve un consiglio"
+            ],
+            "gabarito": "Mi serve un consiglio",
+            "explicacao": "Listen for «mi» and singular «serve».",
+            "id": "it-024-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Le ho chiesto un favore",
+            "opcoes": [
+              "Le ho chiesto un favore",
+              "Gli ho chiesto un favore",
+              "Le ho dato un favore"
+            ],
+            "gabarito": "Le ho chiesto un favore",
+            "explicacao": "Listen for «le» and «chiesto».",
+            "id": "it-024-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«I need two pens» in Italian is…",
+            "opcoes": [
+              "Mi servono due penne",
+              "Mi serve due penne",
+              "Io servo due penne"
+            ],
+            "gabarito": "Mi servono due penne",
+            "explicacao": "«Servire» agrees with the thing needed.",
+            "id": "it-024-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which participle goes with «Le ho ___ un favore»?",
+            "opcoes": [
+              "chiesto",
+              "chiesta",
+              "chiesti"
+            ],
+            "gabarito": "chiesto",
+            "explicacao": "It does not agree with an indirect pronoun.",
+            "id": "it-024-e07"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Mi ___ una penna. (I need)",
+            "opcoes": [
+              "serve",
+              "servo",
+              "servono"
+            ],
+            "gabarito": "serve",
+            "explicacao": "Singular thing, singular verb.",
+            "id": "it-024-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say six sentences aloud with «mi serve» and «mi servono», and four with «Le ho chiesto…», «Gli ho spiegato…»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud the rule: with «to whom?» (an indirect pronoun) the participle stays the same; with «lo, la, li, le» it takes their ending."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-024.json",
+  "responsavel": null
+}

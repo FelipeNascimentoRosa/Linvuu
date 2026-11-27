@@ -1,0 +1,301 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 104,
+  "fase": 11,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Comparatives and superlatives: Review and practice of lesson 26",
+  "objetivo": "Lesson 26, session 4 of 4 · 30 min",
+  "aula": {
+    "numero": 26,
+    "titulo": "Comparatives and superlatives",
+    "objetivo": "Compare with «più» and «meno» using «di» or «che», say that two things are equal, form the superlative with «il più» and «-issimo», and tell «migliore» from «meglio». Avoid the English-speaker traps: using «che» for every «than», leaving out the article of the superlative, and building «più bene».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Review and practice of lesson 26",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Review: comparatives and superlatives",
+        "explicacao": "STEP 1: comparative: «più / meno» + adjective + «di» (two people or things) or «che» (two nouns, adjectives or verbs). STEP 2: equality: «così… come» and «tanto… quanto». STEP 3: relative superlative: article + «più» + adjective + «di» merged with the article. STEP 4: absolute superlative: «-issimo» or «molto» + adjective, never both. STEP 5: «migliore» / «peggiore» are adjectives, «meglio» / «peggio» are adverbs.",
+        "comparacao": "The two decisions that English does not ask are «di» or «che», and «migliore» or «meglio». Practice them as pairs and the rest of the lesson follows.",
+        "exemplos": [
+          {
+            "ru": "Marco è più alto di Luca",
+            "pt": "Marco is taller than Luca"
+          },
+          {
+            "ru": "Ho più libri che amici",
+            "pt": "I have more books than friends"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Marco è più alto che Luca",
+            "certo": "Marco è più alto di Luca",
+            "motivo": "Two people compared on one quality: «di»."
+          },
+          {
+            "errado": "Sto molto più bene oggi",
+            "certo": "Sto molto meglio oggi",
+            "motivo": "The comparative of «bene» is «meglio»."
+          }
+        ],
+        "tag": "Review"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 22,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Marco è più alto di Luca",
+            "opcoes": [
+              "Marco è più alto di Luca",
+              "Marco è meno alto di Luca",
+              "Marco è più alto di Paolo"
+            ],
+            "gabarito": "Marco è più alto di Luca",
+            "explicacao": "Listen for «più» and «Luca».",
+            "id": "it-026-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "È il ragazzo più simpatico della classe",
+            "opcoes": [
+              "È il ragazzo più simpatico della classe",
+              "È il ragazzo più simpatico della scuola",
+              "È la ragazza più simpatica della classe"
+            ],
+            "gabarito": "È il ragazzo più simpatico della classe",
+            "explicacao": "Listen for «ragazzo».",
+            "id": "it-026-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Sto molto meglio oggi",
+            "opcoes": [
+              "Sto molto meglio oggi",
+              "Sto molto peggio oggi",
+              "Sto molto bene oggi"
+            ],
+            "gabarito": "Sto molto meglio oggi",
+            "explicacao": "Listen for «meglio».",
+            "id": "it-026-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Il film è bellissimo",
+            "opcoes": [
+              "Il film è bellissimo",
+              "Il film è bellino",
+              "Il film è bruttissimo"
+            ],
+            "gabarito": "Il film è bellissimo",
+            "explicacao": "Listen for «bellissimo».",
+            "id": "it-026-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Ho più libri che amici",
+            "opcoes": [
+              "Ho più libri che amici",
+              "Ho meno libri che amici",
+              "Ho più libri che amiche"
+            ],
+            "gabarito": "Ho più libri che amici",
+            "explicacao": "Listen for «più» and «che».",
+            "id": "it-026-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Sei più veloce di me",
+            "opcoes": [
+              "Sei più veloce di me",
+              "Sei più lento di me",
+              "Sono più veloce di te"
+            ],
+            "gabarito": "Sei più veloce di me",
+            "explicacao": "Listen for «veloce» and «di me».",
+            "id": "it-026-e06"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Sì, ma è anche più caro e più lontano dal centro.",
+            "opcoes": [
+              "Sì, ma è anche più caro e più lontano dal centro.",
+              "Sì, ma è anche meno caro e più lontano dal centro.",
+              "Sì, ma è anche più caro e più vicino al centro."
+            ],
+            "gabarito": "Sì, ma è anche più caro e più lontano dal centro.",
+            "explicacao": "Listen for «più caro».",
+            "id": "it-026-e07"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Allora è meglio visitare ancora il primo prima di decidere.",
+            "opcoes": [
+              "Allora è meglio visitare ancora il primo prima di decidere.",
+              "Allora è meglio visitare ancora il secondo prima di decidere.",
+              "Allora è meglio visitare ancora il primo dopo aver deciso."
+            ],
+            "gabarito": "Allora è meglio visitare ancora il primo prima di decidere.",
+            "explicacao": "Listen for «primo».",
+            "id": "it-026-e08"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "D'accordo. Domani ci andiamo con calma.",
+            "opcoes": [
+              "D'accordo. Domani ci andiamo con calma.",
+              "D'accordo. Oggi ci andiamo con calma.",
+              "D'accordo. Domani ci andiamo in fretta."
+            ],
+            "gabarito": "D'accordo. Domani ci andiamo con calma.",
+            "explicacao": "Listen for «con calma».",
+            "id": "it-026-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "così… come",
+            "opcoes": [
+              "così… come",
+              "tanto… quanto",
+              "più… di"
+            ],
+            "gabarito": "così… come",
+            "explicacao": "As… as.",
+            "id": "it-026-e10"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "giovane, vecchio",
+            "opcoes": [
+              "giovane, vecchio",
+              "alto, basso",
+              "veloce, lento"
+            ],
+            "gabarito": "giovane, vecchio",
+            "explicacao": "Young, old.",
+            "id": "it-026-e11"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "pesante, leggero",
+            "opcoes": [
+              "pesante, leggero",
+              "caro, economico",
+              "comodo, scomodo"
+            ],
+            "gabarito": "pesante, leggero",
+            "explicacao": "Heavy, light.",
+            "id": "it-026-e12"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "meno",
+            "opcoes": [
+              "meno",
+              "più",
+              "molto"
+            ],
+            "gabarito": "meno",
+            "explicacao": "Less.",
+            "id": "it-026-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which is correct?",
+            "opcoes": [
+              "Marco è più alto di Luca",
+              "Marco è più alto che Luca",
+              "Marco è più alto da Luca"
+            ],
+            "gabarito": "Marco è più alto di Luca",
+            "explicacao": "Two people: «di».",
+            "id": "it-026-e14"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which is correct for «the best apartment»?",
+            "opcoes": [
+              "l'appartamento migliore",
+              "l'appartamento meglio",
+              "l'appartamento più bene"
+            ],
+            "gabarito": "l'appartamento migliore",
+            "explicacao": "A noun: the adjective.",
+            "id": "it-026-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il film è ___. (very beautiful)",
+            "opcoes": [
+              "bellissimo",
+              "molto bellissimo",
+              "più bello"
+            ],
+            "gabarito": "bellissimo",
+            "explicacao": "«-issimo» already means «very».",
+            "id": "it-026-e16"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Sei più veloce di me»",
+            "opcoes": [
+              "Sei",
+              "più",
+              "veloce",
+              "di",
+              "me"
+            ],
+            "gabarito": "Sei più veloce di me",
+            "explicacao": "Verb, «più», adjective, «di me».",
+            "id": "it-026-e17"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Listen, repeat out loud and then show the answer.",
+            "audio": "Ho più libri che amici",
+            "respostaEsperada": "Ho più libri che amici",
+            "explicacao": "I have more books than friends.",
+            "complemento": true,
+            "id": "it-026-r18"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Compare yourself with three people you know aloud, with «di» and «che»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud the six forms you need: «più, meno, il più, bellissimo, migliore, meglio»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-026.json",
+  "responsavel": null
+}

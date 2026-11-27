@@ -1,0 +1,235 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 106,
+  "fase": 11,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Futuro semplice: Irregular verbs and uses",
+  "objetivo": "Lesson 27, session 2 of 4 · 30 min",
+  "aula": {
+    "numero": 27,
+    "titulo": "Futuro semplice",
+    "objetivo": "Form the futuro semplice, spell the verbs in «-care», «-gare», «-ciare» and «-giare», use the irregular stems, and talk about plans, promises and conditions with «tra», «se» and «quando». Avoid the English-speaker traps: the «-are» vowel («parlarò»), the missing «h» in «cercherò», regularizing irregular verbs, and «in» for «in a week».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Irregular verbs and uses",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "sarò",
+            "translit": "sah-ROH",
+            "pt": "I will be",
+            "en": "",
+            "audio": "sarò"
+          },
+          {
+            "ru": "avrò",
+            "translit": "ah-VROH",
+            "pt": "I will have",
+            "en": "",
+            "audio": "avrò"
+          },
+          {
+            "ru": "andrò",
+            "translit": "ahn-DROH",
+            "pt": "I will go",
+            "en": "",
+            "audio": "andrò"
+          },
+          {
+            "ru": "verrò",
+            "translit": "vehr-ROH",
+            "pt": "I will come",
+            "en": "",
+            "audio": "verrò"
+          },
+          {
+            "ru": "farò",
+            "translit": "fah-ROH",
+            "pt": "I will do, make",
+            "en": "",
+            "audio": "farò"
+          },
+          {
+            "ru": "vedrò",
+            "translit": "veh-DROH",
+            "pt": "I will see",
+            "en": "",
+            "audio": "vedrò"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 16,
+        "titulo": "Irregular stems in the future, and what the future is used for",
+        "explicacao": "STEP 1: some common verbs have an irregular stem in the future, but the endings are always the same: «-ò, -ai, -à, -emo, -ete, -anno». STEP 2: the main ones: «essere» → «sar-» (sarò), «avere» → «avr-» (avrò), «andare» → «andr-» (andrò), «venire» → «verr-» (verrò), «fare» → «far-» (farò), «vedere» → «vedr-» (vedrò). STEP 3: also: «dare» → «dar-», «stare» → «star-», «dire» → «dir-», «potere» → «potr-», «dovere» → «dovr-», «sapere» → «sapr-», «volere» → «vorr-», «bere» → «berr-», «rimanere» → «rimarr-», «vivere» → «vivr-». STEP 4: do not apply the regular rule to the verbs that change their stem. «Andare» gives «andrò», never «anderò». «Fare», «dare» and «stare» keep the «-a-»: «farò», «darò», «starò», never «ferò». STEP 5: uses: a plan or prediction («Domani andrò a Roma»), a promise («Ti chiamerò»), and a guess about the present: «Sarà a casa» (He is probably at home). STEP 6: Italian does not use the future for a habit. English «He will sit for hours» (a habit) is «Si siede per ore», in the present. STEP 7: for an immediate decision or an arrangement already made, the present is common: «Domani vado a Roma». STEP 8: the weather: «Domani pioverà» (it will rain tomorrow), «Domani farà freddo».",
+        "comparacao": "English «will» has many uses: prediction, promise, decision, request and habit («He will sit for hours»). Italian uses the future for prediction, promise and plan, and for a guess about now, which English expresses with «probably» or «must be»: «Sarà in ufficio» (He must be in the office). The irregular stems are few and come back all the time, so learn them as a group of about sixteen. A typical mistake is to apply the regular rule to an irregular verb: «anderò».",
+        "exemplos": [
+          {
+            "ru": "Domani andrò a Roma",
+            "pt": "Tomorrow I will go to Rome"
+          },
+          {
+            "ru": "Domani pioverà",
+            "pt": "It will rain tomorrow"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "essere",
+            "forma": "sarò · sarai · sarà · saremo · sarete · saranno"
+          },
+          {
+            "tipo": "avere",
+            "forma": "avrò · avrai · avrà · avremo · avrete · avranno"
+          },
+          {
+            "tipo": "andare",
+            "forma": "andrò · andrai · andrà · andremo · andrete · andranno"
+          },
+          {
+            "tipo": "venire",
+            "forma": "verrò · verrai · verrà · verremo · verrete · verranno"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Domani anderò a Roma",
+            "certo": "Domani andrò a Roma",
+            "motivo": "«Andare» has an irregular future stem: «andr-», not «ander-»."
+          }
+        ],
+        "tag": "Future"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "sarò",
+            "opcoes": [
+              "sarò",
+              "avrò",
+              "andrò"
+            ],
+            "gabarito": "sarò",
+            "explicacao": "I will be.",
+            "id": "it-027-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "verrò",
+            "opcoes": [
+              "verrò",
+              "vedrò",
+              "farò"
+            ],
+            "gabarito": "verrò",
+            "explicacao": "I will come.",
+            "id": "it-027-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "andrò",
+            "opcoes": [
+              "andrò",
+              "avrò",
+              "verrò"
+            ],
+            "gabarito": "andrò",
+            "explicacao": "I will go.",
+            "id": "it-027-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Domani andrò a Roma",
+            "opcoes": [
+              "Domani andrò a Roma",
+              "Domani vado a Roma",
+              "Domani andrò a Milano"
+            ],
+            "gabarito": "Domani andrò a Roma",
+            "explicacao": "Listen for «andrò».",
+            "id": "it-027-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Domani pioverà",
+            "opcoes": [
+              "Domani pioverà",
+              "Domani pioveva",
+              "Domani piove"
+            ],
+            "gabarito": "Domani pioverà",
+            "explicacao": "Listen for «pioverà».",
+            "id": "it-027-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the future of «andare» for «io»?",
+            "opcoes": [
+              "andrò",
+              "anderò",
+              "andarò"
+            ],
+            "gabarito": "andrò",
+            "explicacao": "Irregular stem «andr-».",
+            "id": "it-027-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What is the future of «fare» for «io»?",
+            "opcoes": [
+              "farò",
+              "ferò",
+              "farrò"
+            ],
+            "gabarito": "farò",
+            "explicacao": "Stem «far-».",
+            "id": "it-027-e07"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Domani ___ a casa tutto il giorno. (I will be)",
+            "opcoes": [
+              "sarò",
+              "avrò",
+              "andrò"
+            ],
+            "gabarito": "sarò",
+            "explicacao": "The future of «essere».",
+            "id": "it-027-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
+        "enunciado": "Say six sentences aloud about next year with «sarò», «avrò», «andrò», «verrò», «farò» and «vedrò»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud the twelve most common irregular stems as a list: «sar-, avr-, andr-, verr-, far-, vedr-, dar-, star-, dir-, potr-, dovr-, sapr-»."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-027.json",
+  "responsavel": null
+}

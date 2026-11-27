@@ -1,0 +1,261 @@
+{
+  "idioma": "it",
+  "explicacao": "en",
+  "dia": 101,
+  "fase": 11,
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Comparatives and superlatives: Più and meno: di or che",
+  "objetivo": "Lesson 26, session 1 of 4 · 30 min",
+  "aula": {
+    "numero": 26,
+    "titulo": "Comparatives and superlatives",
+    "objetivo": "Compare with «più» and «meno» using «di» or «che», say that two things are equal, form the superlative with «il più» and «-issimo», and tell «migliore» from «meglio». Avoid the English-speaker traps: using «che» for every «than», leaving out the article of the superlative, and building «più bene».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
+  },
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Più and meno: di or che",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "più",
+            "translit": "pyoo",
+            "pt": "more",
+            "en": "",
+            "audio": "più"
+          },
+          {
+            "ru": "meno",
+            "translit": "MEH-noh",
+            "pt": "less, fewer",
+            "en": "",
+            "audio": "meno"
+          },
+          {
+            "ru": "alto, basso",
+            "translit": "AHL-toh, BAHS-soh",
+            "pt": "tall, short",
+            "en": "",
+            "audio": "alto, basso"
+          },
+          {
+            "ru": "giovane, vecchio",
+            "translit": "JOH-vah-neh, VEHK-kyoh",
+            "pt": "young, old",
+            "en": "",
+            "audio": "giovane, vecchio"
+          },
+          {
+            "ru": "veloce, lento",
+            "translit": "veh-LOH-cheh, LEHN-toh",
+            "pt": "fast, slow",
+            "en": "",
+            "audio": "veloce, lento"
+          },
+          {
+            "ru": "caro, economico",
+            "translit": "KAH-roh, eh-koh-NOH-mee-koh",
+            "pt": "expensive, cheap",
+            "en": "",
+            "audio": "caro, economico"
+          },
+          {
+            "ru": "pesante, leggero",
+            "translit": "peh-ZAHN-teh, lehd-JEH-roh",
+            "pt": "heavy, light",
+            "en": "",
+            "audio": "pesante, leggero"
+          },
+          {
+            "ru": "comodo, scomodo",
+            "translit": "KOH-moh-doh, SKOH-moh-doh",
+            "pt": "comfortable, uncomfortable",
+            "en": "",
+            "audio": "comodo, scomodo"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 15,
+        "titulo": "Comparing: «più … di» and «più … che»",
+        "explicacao": "STEP 1: to compare, put «più» (more) or «meno» (less) before the adjective: «alto» → «più alto», «caro» → «meno caro». The adjective does not change except for its normal gender and number: «Marco è più alto», «Anna è più alta». STEP 2: English says «than». Italian has two words for it: «di» and «che». STEP 3: use «di» when you compare two people or things for one quality, and the second one is a noun or a pronoun: «Marco è più alto di Luca». STEP 4: after «di», a pronoun is «me, te, lui, lei», not «io, tu»: «Sei più veloce di me». STEP 5: use «che» when you compare two nouns (quantities), two adjectives, two verbs or two adverbs, or when a preposition follows: «Ho più libri che amici» (nouns), «È più facile parlare che scrivere» (verbs), «È più bella che simpatica» (adjectives), «Lavoro più a casa che in ufficio» (places). STEP 6: before a number, use «di»: «più di tre ore». STEP 7: for most adjectives, «più» and «meno» are all you need: there is no ending like English «-er». A few adjectives have their own forms (next session). STEP 8: when you compare two people for one quality, do not use «che»: «più alto di Luca» is right, «più alto che Luca» is not.",
+        "comparacao": "English has two ways to make a comparative («taller», «more beautiful») and always one word for «than». Italian has one regular way to make the comparative («più alto», «più bello») and two words for «than». The choice between «di» and «che» is the main difficulty, and the English speaker is tempted to use «che» for everything, because English has only one «than». Memorize this: «di» before a noun or pronoun when you compare two people or things for one quality; «che» when you compare two words of the same kind (two nouns, adjectives, verbs or adverbs).",
+        "exemplos": [
+          {
+            "ru": "Marco è più alto di Luca",
+            "pt": "Marco is taller than Luca"
+          },
+          {
+            "ru": "Ho più libri che amici",
+            "pt": "I have more books than friends"
+          },
+          {
+            "ru": "Sei più veloce di me",
+            "pt": "You are faster than me"
+          }
+        ],
+        "tabela": [
+          {
+            "tipo": "di",
+            "forma": "two people or things, one quality: più alto di Luca"
+          },
+          {
+            "tipo": "che",
+            "forma": "two nouns, adjectives or verbs: più libri che amici"
+          },
+          {
+            "tipo": "di + number",
+            "forma": "più di tre ore"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Marco è più alto che Luca",
+            "certo": "Marco è più alto di Luca",
+            "motivo": "Comparing two people for one quality uses «di»."
+          },
+          {
+            "errado": "Ho più libri di amici",
+            "certo": "Ho più libri che amici",
+            "motivo": "Comparing two quantities of nouns uses «che»."
+          },
+          {
+            "errado": "Sei più veloce di io",
+            "certo": "Sei più veloce di me",
+            "motivo": "After «di», a pronoun is «me», not «io»."
+          }
+        ],
+        "tag": "Comparatives"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "più",
+            "opcoes": [
+              "più",
+              "meno",
+              "poco"
+            ],
+            "gabarito": "più",
+            "explicacao": "More.",
+            "id": "it-026-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "meno",
+            "opcoes": [
+              "meno",
+              "più",
+              "molto"
+            ],
+            "gabarito": "meno",
+            "explicacao": "Less.",
+            "id": "it-026-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "alto, basso",
+            "opcoes": [
+              "alto, basso",
+              "giovane, vecchio",
+              "veloce, lento"
+            ],
+            "gabarito": "alto, basso",
+            "explicacao": "Tall, short.",
+            "id": "it-026-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Listen and choose.",
+            "audio": "Marco è più alto di Luca",
+            "opcoes": [
+              "Marco è più alto di Luca",
+              "Marco è meno alto di Luca",
+              "Marco è più alto di Paolo"
+            ],
+            "gabarito": "Marco è più alto di Luca",
+            "explicacao": "Listen for «più» and «Luca».",
+            "id": "it-026-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which is correct?",
+            "opcoes": [
+              "Sei più veloce di me",
+              "Sei più veloce che me",
+              "Sei più veloce di io"
+            ],
+            "gabarito": "Sei più veloce di me",
+            "explicacao": "«Di» before a pronoun, and «me».",
+            "id": "it-026-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Which is correct?",
+            "opcoes": [
+              "Ho più libri che amici",
+              "Ho più libri di amici",
+              "Ho più libri da amici"
+            ],
+            "gabarito": "Ho più libri che amici",
+            "explicacao": "Two nouns of quantity: «che».",
+            "id": "it-026-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "È più facile parlare ___ scrivere. (than)",
+            "opcoes": [
+              "che",
+              "di",
+              "da"
+            ],
+            "gabarito": "che",
+            "explicacao": "Two verbs: «che».",
+            "id": "it-026-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Put in order: «Marco è più alto di Luca»",
+            "opcoes": [
+              "Marco",
+              "è",
+              "più",
+              "alto",
+              "di",
+              "Luca"
+            ],
+            "gabarito": "Marco è più alto di Luca",
+            "explicacao": "Subject, «più», adjective, «di», second term.",
+            "id": "it-026-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 1,
+        "enunciado": "Say six comparisons aloud: three with «di» and three with «che»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 1,
+        "enunciado": "Say aloud the rule: «di» for two people or things compared on one quality, «che» for two nouns, adjectives or verbs."
+      }
+    ]
+  },
+  "origem": "content/idiomas/it/aulas/aula-026.json",
+  "responsavel": null
+}
